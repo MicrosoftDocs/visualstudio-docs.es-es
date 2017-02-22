@@ -1,0 +1,42 @@
+---
+title: "C&#243;mo: Configurar las reglas de rendimiento de las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.performance.ruleseditor"
+ms.assetid: a148b468-b849-4858-880a-808a6b47e596
+caps.latest.revision: 14
+caps.handback.revision: 14
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+---
+# C&#243;mo: Configurar las reglas de rendimiento de las herramientas de generaci&#243;n de perfiles
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Las advertencias de rendimiento de las Herramientas de generación de perfiles de Visual Studio indican problemas en una aplicación para la que se han generado perfiles que pueden ralentizar la ejecución de programas.  Las advertencias también pueden indicar que puede ser necesario cambiar los métodos de recolección para recopilar datos más útiles.  Las advertencias de rendimiento se generan automáticamente en una sesión de generación de perfiles y aparecen en la ventana **Lista de errores** cuando se abre un archivo de datos de generación de perfiles en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  Es posible que determinadas advertencias no sean de aplicación en los escenarios que le interesan y que otras se produzcan de manera inexacta.  Puede configurar las advertencias de rendimiento para mostrar u ocultar advertencias concretas.  
+  
+### Para configurar las advertencias de rendimiento del generador de perfiles  
+  
+1.  En el menú **Herramientas**, haga clic en **Opciones**.  
+  
+2.  Expanda **Herramientas de rendimiento** y, a continuación, haga clic en **Reglas**.  
+  
+3.  Para habilitar o deshabilitar una advertencia, active o desactive la casilla situada junto al **Id.** y nombre de la advertencia.  
+  
+4.  Para especificar el nivel de advertencia de una regla, haga clic en la celda **Acción** situada junto a la regla y, a continuación, haga clic en el nivel de advertencia.  
+  
+    -   **Deshabilitado**: deshabilita la regla \(es igual que desactivar la casilla situada junto al identificador de la regla\).  
+  
+    -   **Advertencia**: la regla se muestra como una advertencia.  
+  
+    -   **Error**: detiene la ejecución de la generación de perfiles y muestra la regla como un error.  
+  
+    -   **Información**: la regla se muestra solo como información.

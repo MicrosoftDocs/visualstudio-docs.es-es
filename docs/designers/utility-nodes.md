@@ -1,0 +1,34 @@
+---
+title: "Nodos de utilidad | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/05/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
+caps.latest.revision: 11
+caps.handback.revision: 11
+author: "BrianPeek"
+ms.author: "brpeek"
+manager: "ghogen"
+---
+# Nodos de utilidad
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+En el Diseñador de sombras, los nodos de utilidad representan cálculos comunes y útiles que no se adaptan a la perfección en las otras categorías.  Algunos nodos de utilidades realizan operaciones simples, como sumar vectores o elegir resultados de forma condicional, y otros realizan operaciones complejas, como el cálculo de contribuciones de la iluminación de acuerdo con modelos de iluminación populares.  
+  
+## Referencia de nodo de utilidad  
+  
+|Nodo|Detalles|Propiedades|  
+|----------|--------------|-----------------|  
+|**Anexar vector**|Crea un vector anexando las entradas especificadas entre sí.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float`, `float2` o `float3`<br /> Valores que se van a anexar.<br /><br /> `Value to Append`: `float`<br /> Valor que se va a anexar.<br /><br /> **Resultado:**<br /><br /> `Output`: `float2`, `float3` o `float4` en función del tipo de entrada `Vector`<br /> El nuevo vector.|None|  
+|**Fresnel**|Calcula la reducción de Fresnel según el normal de superficie especificado.<br /><br /> El valor de dicha reducción expresa en qué medida coincide el valor normal de superficie del píxel actual con el vector de visualización.  Cuando los vectores se alinean, el resultado de la función es 0; el resultado se incrementa a medida que los vectores son menos similares y alcanza su valor máximo cuando los vectores son ortogonales.  Puede usarlo para hacer que un efecto sea más o menos aparente en función de la relación entre la orientación del píxel actual y la cámara.<br /><br /> **Entrada:**<br /><br /> `Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio de la tangente del píxel actual.  Puede utilizar esto para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> **Resultado:**<br /><br /> `Output`: `float`<br /> Capacidad de reflexión del píxel actual.|**Exponente**<br /> Exponente que se usa para calcular la reducción de Fresnel.|  
+|**Si**|Elige condicionalmente uno de los tres resultados posibles por componente.  La condición está definida por la relación entre otras dos entradas especificadas.<br /><br /> Para cada componente del resultado, se elige el componente correspondiente de uno de los tres resultados potenciales en función de la relación entre los componentes correspondientes de las dos primeras entradas.<br /><br /> **Entrada:**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> El valor del lado izquierdo a comparar.<br /><br /> `Y`: el mismo tipo que la entrada `X`<br /> El valor del lado derecho a comparar.<br /><br /> `X > Y`: el mismo tipo que la entrada `X`<br /> Los valores que se eligen cuando `X` es mayor que `Y`.<br /><br /> `X = Y`: el mismo tipo que la entrada `X`<br /> Los valores que se eligen cuando `X` es igual a `Y`.<br /><br /> `X < Y`: el mismo tipo que la entrada `X`<br /> Los valores que se eligen cuando `X` es menor que `Y`.<br /><br /> **Resultado:**<br /><br /> `Output`: `float3`<br /> El resultado elegido, por componente.|None|  
+|**Lambert**|Calcula el color del píxel actual según el modelo de iluminación Lambert, usando el normal de superficie especificado.<br /><br /> Este color base es la suma de las contribuciones del color ambiental y la iluminación difusa bajo iluminación directa.  El color ambiental se aproxima a la contribución total de iluminación indirecta, pero tiene un aspecto plano y apagado sin ayuda de iluminación adicional.  La iluminación difusa ayuda a agregar forma y profundidad a un objeto.<br /><br /> **Entrada:**<br /><br /> `Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio de la tangente del píxel actual.  Puede utilizar esto para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> `Diffuse Color`: `float3`<br /> El color difuso de píxel actual, normalmente el **punto Color**.  Si no se proporciona ninguna entrada, el valor predeterminado es blanco.<br /><br /> **Resultado:**<br /><br /> `Output`: `float3`<br /> Color difuso del píxel actual.|None|  
+|**Vector de máscara**|Enmascara los componentes de vector especificado.<br /><br /> Se puede usar para quitar canales de color específicos de un valor de color o bien para evitar que determinados componentes afecten a cálculos subsiguientes.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float4`<br /> Vector que se va a enmascarar.<br /><br /> **Resultado:**<br /><br /> `Output`: `float4`<br /> El vector enmascarado.|**Rojo \/ X**<br /> **False** para desenmascarar el componente rojo \(x\); de lo contrario, **True**.<br /><br /> **Verde \/ Y**<br /> **False** para desenmascarar el componente verde \(y\); de lo contrario, **True**.<br /><br /> **Azul \/ Z**<br /> **False** para desenmascarar el componente azul \(z\); de lo contrario, **True**.<br /><br /> **Alfa \/ W**<br /> **False** para desenmascarar el componente alfa \(w\); de lo contrario, **True**.|  
+|**Vector de reflexión**|Calcula el vector de la reflexión del píxel actual en el espacio tangente en función de la posición de la cámara.<br /><br /> Se puede usar para calcular reflexiones, coordenadas de mapa de cubo y contribuciones de la iluminación especular<br /><br /> **Entrada:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio de la tangente del píxel actual.  Puede utilizar esto para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> **Resultado:**<br /><br /> `Output`: `float3`<br /> El vector de reflexión.|None|  
+|**Especular**|Calcula la contribución de iluminación especular según el modelo de iluminación de Phong, usando el normal de superficie especificado.<br /><br /> La iluminación especular proporciona una apariencia reluciente y reflectante a un objeto, por ejemplo, agua, plástico o metales.<br /><br /> **Entrada:**<br /><br /> `Surface Normal`: `float3`<br /> La normal de superficie del píxel actual, definida en el espacio de la tangente del píxel actual.  Puede utilizar esto para alterar la normal de superficie aparente, como en la asignación normal.<br /><br /> **Resultado:**<br /><br /> `Output`: `float3`<br /> Contribución de color de los reflejos especulares.|None|
