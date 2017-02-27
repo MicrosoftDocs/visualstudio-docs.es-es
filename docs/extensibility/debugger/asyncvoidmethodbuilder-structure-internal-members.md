@@ -1,8 +1,7 @@
 ---
 title: "Estructura de AsyncVoidMethodBuilder - miembros internos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Estructura de AsyncVoidMethodBuilder [motores de depuración de .NET Framework]"
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Estructura de AsyncVoidMethodBuilder - miembros internos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

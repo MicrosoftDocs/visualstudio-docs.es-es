@@ -1,8 +1,7 @@
 ---
 title: "GETNAME_TYPE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración GETNAME_TYPE"
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

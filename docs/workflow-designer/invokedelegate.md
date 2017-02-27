@@ -1,8 +1,7 @@
 ---
 title: "InvokeDelegate | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,9 +11,9 @@ f1_keywords:
   - "System.Activities.Statements.InvokeDelegate.UI"
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # InvokeDelegate
 El diseñador de **InvokeDelegate** se usa para crear y configurar una actividad <xref:System.Activities.Statements.InvokeDelegate>.  

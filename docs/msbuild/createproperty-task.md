@@ -1,8 +1,7 @@
 ---
 title: "CreateProperty (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "MSBuild, CreateProperty (tarea)"
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # CreateProperty (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

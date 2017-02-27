@@ -1,8 +1,7 @@
 ---
 title: "IEEVisualizerService::GetCustomViewerCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEEVisualizerService::GetCustomViewerCount (método)"
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEEVisualizerService::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

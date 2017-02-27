@@ -1,8 +1,7 @@
 ---
 title: "DA0011: CompareTo consume muchos recursos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ f1_keywords:
   - "vs.performance.rules.DA0011"
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # DA0011: CompareTo consume muchos recursos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

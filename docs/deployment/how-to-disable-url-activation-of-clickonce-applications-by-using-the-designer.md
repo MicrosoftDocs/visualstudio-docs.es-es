@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Deshabilitar la activaci&#243;n de direcciones URL de aplicaciones ClickOnce mediante el dise&#241;ador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "activación de direcciones URL, aplicaciones ClickOnce"
 ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # C&#243;mo: Deshabilitar la activaci&#243;n de direcciones URL de aplicaciones ClickOnce mediante el dise&#241;ador
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

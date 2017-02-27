@@ -1,8 +1,7 @@
 ---
 title: "Gu&#237;a de pruebas para los complementos de Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "origen control complementos, Guía de prueba"
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 26
-caps.handback.revision: 26
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Gu&#237;a de pruebas para los complementos de Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

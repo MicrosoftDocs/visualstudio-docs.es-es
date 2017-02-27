@@ -1,8 +1,7 @@
 ---
 title: "GenerateTrustInfo (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "MSBuild, GenerateTrustInfo (tarea)"
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # GenerateTrustInfo (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgramPublisher2::SetDebuggerPresent"
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugProgramPublisher2::SetDebuggerPresent
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

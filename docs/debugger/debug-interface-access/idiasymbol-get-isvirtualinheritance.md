@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_isVirtualInheritance | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 72906b92-dd4a-42e3-9b24-b77628fa48c1
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_isVirtualInheritance
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

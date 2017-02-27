@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: utilizar el registro de actividad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "VSPackages, solución de problemas"
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # C&#243;mo: utilizar el registro de actividad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

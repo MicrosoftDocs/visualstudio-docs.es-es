@@ -1,8 +1,7 @@
 ---
 title: "Asociar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Asociar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

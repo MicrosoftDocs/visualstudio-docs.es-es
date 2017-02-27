@@ -1,8 +1,7 @@
 ---
 title: "IDebugBoundBreakpoint2::Enable | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDebugBoundBreakpoint2::Enable (método)"
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugBoundBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

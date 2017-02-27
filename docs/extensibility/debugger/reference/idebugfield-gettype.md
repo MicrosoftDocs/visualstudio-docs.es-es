@@ -1,8 +1,7 @@
 ---
 title: "IDebugField::GetType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugField::GetType (método)"
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugField::GetType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

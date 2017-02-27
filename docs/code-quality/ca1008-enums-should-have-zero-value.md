@@ -1,8 +1,7 @@
 ---
 title: "CA1008: Las enumeraciones deben tener un valor igual a cero | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "EnumsShouldHaveZeroValue"
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # CA1008: Las enumeraciones deben tener un valor igual a cero
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

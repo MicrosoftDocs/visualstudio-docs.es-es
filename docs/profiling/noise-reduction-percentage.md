@@ -1,8 +1,7 @@
 ---
 title: "Porcentaje de reducci&#243;n de ruido | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Visualizador de simultaneidad, Porcentaje de reducción de ruido"
 ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Porcentaje de reducci&#243;n de ruido
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

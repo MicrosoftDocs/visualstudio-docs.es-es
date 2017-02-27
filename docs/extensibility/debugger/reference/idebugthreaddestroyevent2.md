@@ -1,8 +1,7 @@
 ---
 title: "IDebugThreadDestroyEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugThreadDestroyEvent2"
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugThreadDestroyEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

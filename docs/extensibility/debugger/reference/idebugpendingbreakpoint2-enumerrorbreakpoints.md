@@ -1,8 +1,7 @@
 ---
 title: "IDebugPendingBreakpoint2::EnumErrorBreakpoints | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "EnumErrorBreakpoints (método)"
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

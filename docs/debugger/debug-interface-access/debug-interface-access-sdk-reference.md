@@ -1,8 +1,7 @@
 ---
 title: "Referencia de Debug Interface Access SDK | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Kit de desarrollo DIA, referencia"
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Referencia de Debug Interface Access SDK
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

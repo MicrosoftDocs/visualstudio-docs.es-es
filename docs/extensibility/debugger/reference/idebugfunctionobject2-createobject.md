@@ -1,8 +1,7 @@
 ---
 title: "IDebugFunctionObject2::CreateObject | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "CreateObject"
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugFunctionObject2::CreateObject
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

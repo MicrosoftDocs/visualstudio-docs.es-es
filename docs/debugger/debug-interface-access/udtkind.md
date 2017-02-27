@@ -1,8 +1,7 @@
 ---
 title: "UdtKind | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "UdtKind (enumeración)"
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # UdtKind
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

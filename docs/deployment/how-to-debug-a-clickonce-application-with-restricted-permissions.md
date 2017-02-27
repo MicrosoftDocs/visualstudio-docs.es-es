@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Depurar una aplicaci&#243;n ClickOnce con permisos restringidos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "aplicaciones ClickOnce, depuración"
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Depurar una aplicaci&#243;n ClickOnce con permisos restringidos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

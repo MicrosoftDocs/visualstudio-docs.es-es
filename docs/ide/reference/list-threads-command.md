@@ -1,8 +1,7 @@
 ---
 title: "Mostrar subprocesos (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListThreads (comando)"
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Mostrar subprocesos (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

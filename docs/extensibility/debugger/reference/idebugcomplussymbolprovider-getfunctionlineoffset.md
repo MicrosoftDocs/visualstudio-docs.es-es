@@ -1,8 +1,7 @@
 ---
 title: "IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "GetFunctionLineOffset"
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugComPlusSymbolProvider::GetFunctionLineOffset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

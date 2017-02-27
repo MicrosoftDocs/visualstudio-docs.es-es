@@ -1,8 +1,7 @@
 ---
 title: "IDebugProcessSecurity | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugProcessSecurity"
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

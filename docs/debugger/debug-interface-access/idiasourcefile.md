@@ -1,8 +1,7 @@
 ---
 title: "IDiaSourceFile | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSourceFile (interfaz)"
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSourceFile
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

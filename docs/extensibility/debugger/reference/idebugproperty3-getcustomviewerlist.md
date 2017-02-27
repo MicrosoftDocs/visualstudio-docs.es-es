@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty3::GetCustomViewerList | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty3::GetCustomViewerList"
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugProperty3::GetCustomViewerList
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

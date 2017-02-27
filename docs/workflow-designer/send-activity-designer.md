@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividad Sent | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.Send.UI"
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Dise&#241;ador de actividad Sent
 El diseñador de actividades **Send** se utiliza para crear y configurar una actividad <xref:System.ServiceModel.Activities.Send>.  

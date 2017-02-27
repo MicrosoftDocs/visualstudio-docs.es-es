@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumLineNumbers | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumLineNumbers (interfaz)"
 ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

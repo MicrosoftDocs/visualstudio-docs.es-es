@@ -1,8 +1,7 @@
 ---
 title: "&#193;rea de prueba 3: Comprobaci&#243;n de out-Deshacer desprotecci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Deshacer desprotección de control [Visual Studio SDK], de origen"
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # &#193;rea de prueba 3: Desproteger o deshacer desprotecci&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

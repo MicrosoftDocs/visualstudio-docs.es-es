@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugAddresses::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugAddresses::Next (método)"
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IEnumDebugAddresses::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

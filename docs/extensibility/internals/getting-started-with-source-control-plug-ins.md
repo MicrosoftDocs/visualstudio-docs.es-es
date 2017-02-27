@@ -1,8 +1,7 @@
 ---
 title: "Introducci&#243;n a los complementos de Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "obtener iniciado, origen control complementos"
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Introducci&#243;n a los complementos de Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

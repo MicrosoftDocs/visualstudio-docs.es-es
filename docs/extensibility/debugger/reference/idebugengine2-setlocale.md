@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::SetLocale | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::SetLocale"
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::SetLocale
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

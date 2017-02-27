@@ -1,8 +1,7 @@
 ---
 title: "IDebugField::GetExtendedInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugField::GetExtendedInfo (método)"
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

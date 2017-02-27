@@ -1,8 +1,7 @@
 ---
 title: "CONTEXT_INFO_FIELDS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración CONTEXT_INFO_FIELDS"
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

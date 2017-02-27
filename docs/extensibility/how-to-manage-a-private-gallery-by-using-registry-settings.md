@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: administrar una galer&#237;a privada mediante la configuraci&#243;n del registro | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Administrar galerías privadas de VSIX"
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # C&#243;mo: administrar una galer&#237;a privada mediante la configuraci&#243;n del registro
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

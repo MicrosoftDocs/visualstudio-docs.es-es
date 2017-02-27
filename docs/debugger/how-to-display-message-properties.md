@@ -1,8 +1,7 @@
 ---
 title: "How to: Display Message Properties | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "message properties in SpyHelp"
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # How to: Display Message Properties
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

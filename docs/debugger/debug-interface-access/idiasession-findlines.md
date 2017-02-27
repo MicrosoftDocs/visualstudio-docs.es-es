@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::findLines | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::findLines (método)"
 ms.assetid: d6e84916-fd55-457e-b057-57f97b51fe73
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSession::findLines
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugExpressionEvaluator::SetRegistryRoot (método)"
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugExpressionEvaluator::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

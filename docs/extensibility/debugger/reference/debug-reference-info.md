@@ -1,8 +1,7 @@
 ---
 title: "DEBUG_REFERENCE_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura DEBUG_REFERENCE_INFO"
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

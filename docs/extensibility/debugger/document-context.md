@@ -1,8 +1,7 @@
 ---
 title: "Contexto de documento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración] y contextos"
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Contexto de documento
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

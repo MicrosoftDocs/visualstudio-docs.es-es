@@ -1,8 +1,7 @@
 ---
 title: "Agregar y quitar elementos del proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ f1_keywords:
   - "vs.addexistingproject"
 ms.assetid: 4b6db52f-4352-4313-8f4f-50a451fd12f7
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Agregar y quitar elementos del proyecto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

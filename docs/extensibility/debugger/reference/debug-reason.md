@@ -1,8 +1,7 @@
 ---
 title: "DEBUG_REASON | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración DEBUG_REASON"
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

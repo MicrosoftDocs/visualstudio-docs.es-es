@@ -1,8 +1,7 @@
 ---
 title: "Iconos de la Vista de clases y del Examinador de objetos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Examinador de objetos, iconos de la Vista de clases"
 ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Iconos de la Vista de clases y del Examinador de objetos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

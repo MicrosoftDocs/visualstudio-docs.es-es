@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_hasSEH | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasSEH (método)"
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

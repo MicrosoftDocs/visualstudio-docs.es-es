@@ -1,8 +1,7 @@
 ---
 title: "Comandos del men&#250; Ayuda | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Comandos del menú Ayuda"
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Comandos del men&#250; Ayuda
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

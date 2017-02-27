@@ -1,8 +1,7 @@
 ---
 title: "CA2135: Los ensamblados de nivel 2 no deben contener LinkDemands | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "CA2135"
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 10
 ---
 # CA2135: Los ensamblados de nivel 2 no deben contener LinkDemands
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

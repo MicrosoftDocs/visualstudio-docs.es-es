@@ -1,8 +1,7 @@
 ---
 title: "Constantes de COM en c&#243;digo administrado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "VSPackages administrado, COM constantes y macros"
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Constantes de COM en c&#243;digo administrado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

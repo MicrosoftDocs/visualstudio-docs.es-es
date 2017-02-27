@@ -1,8 +1,7 @@
 ---
 title: "IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IPropertyProxyProvider::GetPropertyProxy"
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # IPropertyProxyProvider::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

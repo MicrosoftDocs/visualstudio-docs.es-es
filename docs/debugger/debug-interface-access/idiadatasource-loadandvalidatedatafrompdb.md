@@ -1,8 +1,7 @@
 ---
 title: "IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaDataSource::loadAndValidateDataFromPdb (método)"
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaDataSource::loadAndValidateDataFromPdb
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

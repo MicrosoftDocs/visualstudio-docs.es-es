@@ -1,8 +1,7 @@
 ---
 title: "IDebugMemoryContext2::Add | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Add (método)"
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugMemoryContext2::Add
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

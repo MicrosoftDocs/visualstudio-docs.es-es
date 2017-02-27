@@ -1,8 +1,7 @@
 ---
 title: "Conjunto de reglas Reglas recomendadas nativas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d845b5a-1b75-4e9d-861a-7c59cb7752af
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 3
 ---
 # Conjunto de reglas Reglas recomendadas nativas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

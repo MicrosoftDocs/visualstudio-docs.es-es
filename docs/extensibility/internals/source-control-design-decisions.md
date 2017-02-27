@@ -1,8 +1,7 @@
 ---
 title: "Decisiones de dise&#241;o del Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "control de código fuente [Visual Studio SDK], las decisiones de diseño"
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Decisiones de dise&#241;o del Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

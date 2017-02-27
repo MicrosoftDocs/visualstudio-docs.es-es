@@ -1,8 +1,7 @@
 ---
 title: "Procedimientos recomendados para las pruebas de IU codificadas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "pruebas de interfaz de usuario codificadas, procedimientos recomendados"
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 39
 ---
 # Procedimientos recomendados para las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

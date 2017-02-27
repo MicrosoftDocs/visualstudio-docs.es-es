@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Personalizar men&#250;s y barras de herramientas en Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,10 +29,10 @@ helpviewer_keywords:
   - "barras de herramientas [Visual Studio], personalizar en el IDE"
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # C&#243;mo: Personalizar men&#250;s y barras de herramientas en Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

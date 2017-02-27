@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Volver a firmar manifiestos de aplicaci&#243;n e implementaci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "desarrollo de Office en Visual Studio, firmar manifiestos"
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # C&#243;mo: Volver a firmar manifiestos de aplicaci&#243;n e implementaci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades FlowSwitch&lt;T&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ f1_keywords:
   - "System.Activities.Core.Presentation.FlowSwitchLinkIdentifier.UI"
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 4
 ---
 # Dise&#241;ador de actividades FlowSwitch&lt;T&gt;
 La actividad <xref:System.Activities.Statements.FlowSwitch%601> es un nodo condicional que proporciona capacidad de bifurcación para el flujo de control según criterios de coincidencia cuando se necesitan más de dos bifurcaciones alternativas.Si la bifurcación del flujo requiere dos rutas de acceso, utilice la actividad <xref:System.Activities.Statements.FlowDecision> en su lugar.  

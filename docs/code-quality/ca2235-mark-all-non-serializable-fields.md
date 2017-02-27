@@ -1,8 +1,7 @@
 ---
 title: "CA2235: Marcar todos los campos no serializables | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "MarkAllNonSerializableFields"
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA2235: Marcar todos los campos no serializables
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

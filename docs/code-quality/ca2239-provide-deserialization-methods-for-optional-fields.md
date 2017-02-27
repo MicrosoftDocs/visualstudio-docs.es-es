@@ -1,8 +1,7 @@
 ---
 title: "CA2239: Proporcionar m&#233;todos de deserializaci&#243;n para campos opcionales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ProvideDeserializationMethodsForOptionalFields"
 ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA2239: Proporcionar m&#233;todos de deserializaci&#243;n para campos opcionales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

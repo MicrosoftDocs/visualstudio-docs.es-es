@@ -1,8 +1,7 @@
 ---
 title: "CA1725: Los nombres de par&#225;metro deber&#237;an coincidir con la declaraci&#243;n base | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ParameterNamesShouldMatchBaseDeclaration"
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # CA1725: Los nombres de par&#225;metro deber&#237;an coincidir con la declaraci&#243;n base
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

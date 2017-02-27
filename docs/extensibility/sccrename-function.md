@@ -1,8 +1,7 @@
 ---
 title: "SccRename (funci&#243;n) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccRename (función)"
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # SccRename (funci&#243;n)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDebugBoundBreakpoint2::SetHitCount (método)"
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

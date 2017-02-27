@@ -1,8 +1,7 @@
 ---
 title: "s_taskIdCounter campo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "campo m_taskIdCounter, clase de tarea [motores de depuración de .NET Framework]"
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # s_taskIdCounter campo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

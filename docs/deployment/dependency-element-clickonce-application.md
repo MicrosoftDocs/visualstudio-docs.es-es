@@ -1,8 +1,7 @@
 ---
 title: "Elemento &lt;dependency&gt; (Aplicaci&#243;n ClickOnce) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,10 +28,10 @@ helpviewer_keywords:
   - "manifiestos [ClickOnce], dependency (elemento)"
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 34
-caps.handback.revision: 34
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 34
 ---
 # Elemento &lt;dependency&gt; (Aplicaci&#243;n ClickOnce)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

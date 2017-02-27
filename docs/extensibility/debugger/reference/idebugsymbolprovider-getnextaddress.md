@@ -1,8 +1,7 @@
 ---
 title: "IDebugSymbolProvider::GetNextAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugSymbolProvider::GetNextAddress (método)"
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

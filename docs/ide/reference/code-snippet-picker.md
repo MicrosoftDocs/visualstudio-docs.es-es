@@ -1,8 +1,7 @@
 ---
 title: "Selector de fragmentos de c&#243;digo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "fragmentos de código de IntelliSense, Selector de fragmentos de código"
 ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Selector de fragmentos de c&#243;digo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

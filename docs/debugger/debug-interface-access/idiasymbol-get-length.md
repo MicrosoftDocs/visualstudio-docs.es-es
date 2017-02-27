@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_length | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_length (método)"
 ms.assetid: cc62f028-d195-4fbf-93bc-10b08bef52d2
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

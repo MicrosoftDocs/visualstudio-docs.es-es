@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Establecer opciones de accesibilidad de IDE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "accesibilidad [Visual Studio]"
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # C&#243;mo: Establecer opciones de accesibilidad de IDE
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

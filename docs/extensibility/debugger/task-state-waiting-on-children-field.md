@@ -1,8 +1,7 @@
 ---
 title: "Campo TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Campo TASK_STATE_WAITING_ON_CHILDREN, clase de tarea [motores de depuración de .NET Framework]"
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Campo TASK_STATE_WAITING_ON_CHILDREN
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

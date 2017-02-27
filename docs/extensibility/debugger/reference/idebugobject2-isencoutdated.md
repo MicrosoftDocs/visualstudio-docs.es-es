@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject2::IsEncOutdated | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject2::IsEncOutdated (método)"
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugObject2::IsEncOutdated
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

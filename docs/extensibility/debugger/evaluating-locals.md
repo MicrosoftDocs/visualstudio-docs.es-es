@@ -1,8 +1,7 @@
 ---
 title: "Evaluar las variables locales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, evaluar las variables locales"
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Evaluar las variables locales
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

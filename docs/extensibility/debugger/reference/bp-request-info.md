@@ -1,8 +1,7 @@
 ---
 title: "BP_REQUEST_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura BP_REQUEST_INFO"
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # BP_REQUEST_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

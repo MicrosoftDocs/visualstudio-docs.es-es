@@ -1,8 +1,7 @@
 ---
 title: "SccDiff (funci&#243;n) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccDiff (función)"
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # SccDiff (funci&#243;n)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

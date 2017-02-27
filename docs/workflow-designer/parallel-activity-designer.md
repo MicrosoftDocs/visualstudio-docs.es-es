@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades Parallel | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.Parallel.UI"
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 10
 ---
 # Dise&#241;ador de actividades Parallel
 La actividad de la clase <xref:System.Activities.Statements.Parallel> ejecuta una colección de actividades secundarias simultáneamente.  

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_targetVirtualAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_targetVirtualAddress (método)"
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSymbol::get_targetVirtualAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

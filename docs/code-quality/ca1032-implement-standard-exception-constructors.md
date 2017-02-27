@@ -1,8 +1,7 @@
 ---
 title: "CA1032: Implementar constructores de excepci&#243;n est&#225;ndar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ImplementStandardExceptionConstructors"
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1032: Implementar constructores de excepci&#243;n est&#225;ndar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

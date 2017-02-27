@@ -1,8 +1,7 @@
 ---
 title: "CA2243: Los literales de cadena de atributo se deben analizar correctamente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA2243"
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 10
 ---
 # CA2243: Los literales de cadena de atributo se deben analizar correctamente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

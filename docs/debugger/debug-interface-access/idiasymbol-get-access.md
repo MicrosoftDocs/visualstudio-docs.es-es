@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_access | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_access (método)"
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

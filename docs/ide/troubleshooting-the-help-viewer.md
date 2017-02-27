@@ -1,8 +1,7 @@
 ---
 title: "Soluci&#243;n de problemas del Visor de Ayuda | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "solución de problemas [Visor de Ayuda 2.0]"
 ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Soluci&#243;n de problemas del Visor de Ayuda
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

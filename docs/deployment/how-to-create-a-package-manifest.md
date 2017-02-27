@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un manifiesto de paquete | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "requisitos previos, paquete de arranque personalizado"
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # C&#243;mo: Crear un manifiesto de paquete
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

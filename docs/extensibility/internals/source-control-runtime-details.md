@@ -1,8 +1,7 @@
 ---
 title: "Detalles de tiempo de ejecuci&#243;n del Control de origen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "control de código fuente [Visual Studio SDK], detalles de tiempo de ejecución"
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Detalles de tiempo de ejecuci&#243;n del Control de origen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

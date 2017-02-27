@@ -1,8 +1,7 @@
 ---
 title: "CATID para los objetos que se utilizan normalmente para extender proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "CATID para VSPackages"
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # CATID para los objetos que se utilizan normalmente para extender proyectos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

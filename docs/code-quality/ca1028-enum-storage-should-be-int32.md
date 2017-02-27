@@ -1,8 +1,7 @@
 ---
 title: "CA1028: El almacenamiento de la enumeraci&#243;n debe ser de tipo Int32 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "EnumStorageShouldBeInt32"
 ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA1028: El almacenamiento de la enumeraci&#243;n debe ser de tipo Int32
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

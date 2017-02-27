@@ -1,8 +1,7 @@
 ---
 title: "IDebugBinder::GetMemoryContext | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugBinder::GetMemoryContext (método)"
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugBinder::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

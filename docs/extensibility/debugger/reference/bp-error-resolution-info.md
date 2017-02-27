@@ -1,8 +1,7 @@
 ---
 title: "BP_ERROR_RESOLUTION_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura BP_ERROR_RESOLUTION_INFO"
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # BP_ERROR_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

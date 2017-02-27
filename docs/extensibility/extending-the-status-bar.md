@@ -1,8 +1,7 @@
 ---
 title: "Ampliaci&#243;n de la barra de estado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "barras de estado, información general"
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 23
-caps.handback.revision: 23
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Ampliaci&#243;n de la barra de estado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

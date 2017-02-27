@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un manifiesto de producto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "archivos de producto [Windows Installer]"
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Crear un manifiesto de producto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

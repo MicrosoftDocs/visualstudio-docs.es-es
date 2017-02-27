@@ -1,8 +1,7 @@
 ---
 title: "DA0010: GetHashCode consume muchos recursos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ f1_keywords:
   - "vs.performance.10"
 ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # DA0010: GetHashCode consume muchos recursos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CompilandDetails | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "CompilandDetails (símbolo)"
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # CompilandDetails
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Agregar elementos a la para agregar elementos nuevos cuadros de di&#225;logo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Agregar cuadro de diálogo nuevo elemento, agregar elementos"
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Agregar elementos a la para agregar elementos nuevos cuadros de di&#225;logo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

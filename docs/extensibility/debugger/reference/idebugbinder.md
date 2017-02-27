@@ -1,8 +1,7 @@
 ---
 title: "IDebugBinder | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugBinder"
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # IDebugBinder
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

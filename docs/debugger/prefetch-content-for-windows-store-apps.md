@@ -1,8 +1,7 @@
 ---
 title: "Precargar contenido para aplicaciones de la Tienda Windows | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "C++"
 ms.assetid: b4481fef-3ebf-4f7d-9748-d43821a0ebac
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Precargar contenido para aplicaciones de la Tienda Windows
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

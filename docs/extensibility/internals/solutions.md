@@ -1,8 +1,7 @@
 ---
 title: "Soluciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "VSPackages, soluciones"
 ms.assetid: 78c6ac4b-6817-4bf3-ae2f-053e4ff96d17
 caps.latest.revision: 19
-caps.handback.revision: 19
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Soluciones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

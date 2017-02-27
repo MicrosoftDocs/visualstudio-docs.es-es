@@ -1,17 +1,16 @@
 ---
 title: "Definir y consumir delegados de actividad en el Dise&#241;ador de flujo de trabajo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Definir y consumir delegados de actividad en el Dise&#241;ador de flujo de trabajo
 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] incluye un nuevo diseñador estándar para la actividad <xref:System.Activities.Statements.InvokeDelegate>.Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.  

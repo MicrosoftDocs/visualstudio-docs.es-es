@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::CreatePendingBreakpoint"
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

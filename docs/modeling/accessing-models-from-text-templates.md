@@ -1,8 +1,7 @@
 ---
 title: "Acceso a modelos a partir de plantillas de texto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "plantillas de texto, acceso a modelos"
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 33
-caps.handback.revision: 33
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 33
 ---
 # Acceso a modelos a partir de plantillas de texto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

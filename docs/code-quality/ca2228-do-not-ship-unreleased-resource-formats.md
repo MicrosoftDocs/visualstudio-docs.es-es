@@ -1,8 +1,7 @@
 ---
 title: "CA2228: No enviar formatos de recursos no lanzados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotShipUnreleasedResourceFormats"
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA2228: No enviar formatos de recursos no lanzados
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

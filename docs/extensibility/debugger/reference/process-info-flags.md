@@ -1,8 +1,7 @@
 ---
 title: "PROCESS_INFO_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración PROCESS_INFO_FLAGS"
 ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

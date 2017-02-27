@@ -1,8 +1,7 @@
 ---
 title: "Escribir en el almac&#233;n de configuraci&#243;n de usuario | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Escribir en el almac&#233;n de configuraci&#243;n de usuario
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

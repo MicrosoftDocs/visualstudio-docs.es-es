@@ -1,8 +1,7 @@
 ---
 title: "Tipos de evento compatible | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], admite eventos"
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Tipos de evento compatible
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

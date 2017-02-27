@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgram2::GetProcess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgram2::GetProcess"
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugProgram2::GetProcess
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

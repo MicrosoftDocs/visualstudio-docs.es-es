@@ -1,8 +1,7 @@
 ---
 title: "DEBUG_ADDRESS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura DEBUG_ADDRESS"
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

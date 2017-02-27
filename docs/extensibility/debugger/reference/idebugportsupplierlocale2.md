@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplierLocale2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugPortSupplierLocale2"
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # IDebugPortSupplierLocale2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

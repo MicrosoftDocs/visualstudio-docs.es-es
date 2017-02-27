@@ -1,8 +1,7 @@
 ---
 title: "Mostrar c&#243;digo fuente (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListSource (comando)"
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Mostrar c&#243;digo fuente (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

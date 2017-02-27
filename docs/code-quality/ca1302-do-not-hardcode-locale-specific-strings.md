@@ -1,8 +1,7 @@
 ---
 title: "CA1302: No codificar las cadenas espec&#237;ficas de configuraci&#243;n regional | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1302"
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # CA1302: No codificar las cadenas espec&#237;ficas de configuraci&#243;n regional
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

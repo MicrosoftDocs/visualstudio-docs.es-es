@@ -1,8 +1,7 @@
 ---
 title: "&lt;InstallChecks&gt; (Elemento, Arranque) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "<InstallChecks> (elemento) [arranque]"
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 23
 ---
 # &lt;InstallChecks&gt; (Elemento, Arranque)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

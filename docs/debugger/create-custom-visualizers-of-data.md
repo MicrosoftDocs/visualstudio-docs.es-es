@@ -1,8 +1,7 @@
 ---
 title: "Visualizadores | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "visualizadores"
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Visualizadores
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

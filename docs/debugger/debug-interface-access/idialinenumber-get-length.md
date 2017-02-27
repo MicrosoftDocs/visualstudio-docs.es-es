@@ -1,8 +1,7 @@
 ---
 title: "IDiaLineNumber::get_length | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLineNumber::get_length (método)"
 ms.assetid: 2c55a6f7-4ef5-45fb-9fd1-d72deaaa2829
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLineNumber::get_length
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

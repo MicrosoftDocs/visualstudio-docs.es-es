@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar eventos de compilaci&#243;n (C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "eventos anteriores a la compilación"
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # C&#243;mo: Especificar eventos de compilaci&#243;n (C#)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

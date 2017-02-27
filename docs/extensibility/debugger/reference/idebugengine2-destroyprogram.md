@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::DestroyProgram | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::DestroyProgram"
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::DestroyProgram
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

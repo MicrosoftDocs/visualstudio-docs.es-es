@@ -1,8 +1,7 @@
 ---
 title: "Obtener acceso a la configuraci&#243;n de Color y fuente almacenado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "colores, obtener acceso a la configuración almacenada"
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 26
-caps.handback.revision: 26
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Obtener acceso a la configuraci&#243;n de Color y fuente almacenado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

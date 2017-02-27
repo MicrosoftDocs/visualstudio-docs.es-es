@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Sincronizar conjuntos de reglas del proyecto de c&#243;digo con la directiva de protecci&#243;n del proyecto de equipo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "vs.codeanalysis.selecttfsruleset"
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # C&#243;mo: Sincronizar conjuntos de reglas del proyecto de c&#243;digo con la directiva de protecci&#243;n del proyecto de equipo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

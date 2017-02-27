@@ -1,8 +1,7 @@
 ---
 title: "Conjunto de reglas Reglas m&#237;nimas mixtas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 4
 ---
 # Conjunto de reglas Reglas m&#237;nimas mixtas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

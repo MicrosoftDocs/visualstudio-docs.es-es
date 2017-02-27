@@ -1,8 +1,7 @@
 ---
 title: "IDebugErrorBreakpoint2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugErrorBreakpoint2"
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugErrorBreakpoint2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

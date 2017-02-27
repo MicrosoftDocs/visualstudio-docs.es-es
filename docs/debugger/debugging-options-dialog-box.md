@@ -1,8 +1,7 @@
 ---
 title: "Depuraci&#243;n, Opciones (Cuadro de di&#225;logo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,10 +26,10 @@ helpviewer_keywords:
   - "depuración [Visual Studio], configuración y preparativos"
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Depuraci&#243;n, Opciones (Cuadro de di&#225;logo)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

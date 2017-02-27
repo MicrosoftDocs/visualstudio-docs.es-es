@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramProvider2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugProgramProvider2"
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # IDebugProgramProvider2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

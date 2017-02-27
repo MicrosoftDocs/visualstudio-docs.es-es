@@ -1,8 +1,7 @@
 ---
 title: "Propiedades de las formas de puerto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Lenguaje específico de dominio, forma de puerto"
 ms.assetid: 9d69c4c1-4f72-4876-96b6-9b846e0495a4
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 21
 ---
 # Propiedades de las formas de puerto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

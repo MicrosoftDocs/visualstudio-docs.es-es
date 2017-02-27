@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_noStackOrdering | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_noStackOrdering (método)"
 ms.assetid: a1753917-705b-4165-9880-d05e91e6dcb4
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaSymbol::get_noStackOrdering
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

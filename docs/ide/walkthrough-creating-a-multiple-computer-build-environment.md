@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Crear un entorno de compilaci&#243;n para varios equipos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "MSBuild, compilar en varios equipos"
 ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Tutorial: Crear un entorno de compilaci&#243;n para varios equipos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

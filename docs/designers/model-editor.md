@@ -1,8 +1,7 @@
 ---
 title: "Editor de modelos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ f1_keywords:
   - "vs.graphics.modelviewer"
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 caps.latest.revision: 36
-caps.handback.revision: 36
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 36
 ---
 # Editor de modelos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

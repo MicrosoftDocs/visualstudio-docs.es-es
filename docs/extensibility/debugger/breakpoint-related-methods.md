@@ -1,8 +1,7 @@
 ---
 title: "M&#233;todos relacionados con el punto de interrupci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "puntos de interrupción, métodos"
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # M&#233;todos relacionados con el punto de interrupci&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

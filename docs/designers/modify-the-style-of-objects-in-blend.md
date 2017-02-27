@@ -1,8 +1,7 @@
 ---
 title: "Modificar el estilo de objetos en Blend | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Modificar el estilo de objetos en Blend
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Selecci&#243;n y moneda en el IDE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDE, moneda"
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Selecci&#243;n y moneda en el IDE
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

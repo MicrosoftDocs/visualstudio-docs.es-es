@@ -1,8 +1,7 @@
 ---
 title: "Iniciar un programa | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "programas, iniciar"
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Iniciar un programa
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

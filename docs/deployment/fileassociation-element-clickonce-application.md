@@ -1,8 +1,7 @@
 ---
 title: "&lt;fileAssociation&gt; (Elemento) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "manifiestos [ClickOnce], fileAssociation (elemento)"
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # &lt;fileAssociation&gt; (Elemento)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

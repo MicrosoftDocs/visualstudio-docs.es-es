@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngineLaunch2::ResumeProcess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngineLaunch2::ResumeProcess"
 ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugEngineLaunch2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

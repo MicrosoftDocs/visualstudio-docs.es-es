@@ -1,8 +1,7 @@
 ---
 title: "IDebugCoreServer3::QueryIsLocal | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCoreServer3::QueryIsLocal"
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IDebugCoreServer3::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

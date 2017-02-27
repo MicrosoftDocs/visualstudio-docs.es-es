@@ -1,8 +1,7 @@
 ---
 title: "Consideraciones para descargar y volver a cargar proyectos anidados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "proyectos [Visual Studio SDK], descarga y carga anidados"
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Consideraciones para descargar y volver a cargar proyectos anidados
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

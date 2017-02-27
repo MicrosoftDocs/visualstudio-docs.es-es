@@ -1,8 +1,7 @@
 ---
 title: "IDebugField::GetKind | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugField::GetKind (método)"
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugField::GetKind
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

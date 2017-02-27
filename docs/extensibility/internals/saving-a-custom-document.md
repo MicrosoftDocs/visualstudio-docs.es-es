@@ -1,8 +1,7 @@
 ---
 title: "Guardar un documento personalizado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK], guardar documentos personalizados"
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Guardar un documento personalizado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

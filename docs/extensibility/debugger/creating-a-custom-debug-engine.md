@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de un motor de depuraci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], motores de depuración personalizados"
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Creaci&#243;n de un motor de depuraci&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

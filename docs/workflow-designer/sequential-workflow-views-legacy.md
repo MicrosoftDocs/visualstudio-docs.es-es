@@ -1,8 +1,7 @@
 ---
 title: "Vistas de flujos de trabajo secuenciales (Heredado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "flujos de trabajo secuenciales, vistas"
 ms.assetid: 135f24b9-1b37-442b-9ef8-f0f2108a3212
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Vistas de flujos de trabajo secuenciales (Heredado)
 [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] proporciona [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado que se puede usar para tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

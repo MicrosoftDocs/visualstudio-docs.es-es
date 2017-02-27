@@ -1,8 +1,7 @@
 ---
 title: "Registro y la selecci&#243;n (VSPackage de Control de c&#243;digo fuente) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "paquetes de control de código fuente, registro"
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 34
-caps.handback.revision: 34
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 34
 ---
 # Registro y la selecci&#243;n (VSPackage de Control de c&#243;digo fuente)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

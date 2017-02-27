@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugThreads2::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugThreads2::Reset"
 ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEnumDebugThreads2::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

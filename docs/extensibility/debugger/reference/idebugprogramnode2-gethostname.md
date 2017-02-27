@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramNode2::GetHostName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgramNode2::GetHostName"
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugProgramNode2::GetHostName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

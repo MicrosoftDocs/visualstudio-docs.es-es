@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject::IsEqual | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject::IsEqual (método)"
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugObject::IsEqual
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

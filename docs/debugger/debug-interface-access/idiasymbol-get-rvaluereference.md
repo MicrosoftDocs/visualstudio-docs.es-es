@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_RValueReference | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_RValueReference (método)"
 ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IDiaSymbol::get_RValueReference
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

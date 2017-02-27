@@ -1,8 +1,7 @@
 ---
 title: "Ampliaci&#243;n de la ventana de salida | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Ventana de resultados, acerca de la ventana de salida"
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Ampliaci&#243;n de la ventana de salida
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

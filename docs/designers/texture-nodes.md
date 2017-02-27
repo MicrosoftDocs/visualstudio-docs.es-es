@@ -1,8 +1,7 @@
 ---
 title: "Nodos de textura | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Nodos de textura
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "METADATA_TYPE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura METADATA_TYPE"
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

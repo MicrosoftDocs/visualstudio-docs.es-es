@@ -1,8 +1,7 @@
 ---
 title: "Paso 6: Agregar un problema de resta | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Paso 6: Agregar un problema de resta
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

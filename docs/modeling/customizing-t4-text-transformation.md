@@ -1,8 +1,7 @@
 ---
 title: "Customizing T4 Text Transformation | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "text templates, custom hosts"
 ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 28
 ---
 # Customizing T4 Text Transformation
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

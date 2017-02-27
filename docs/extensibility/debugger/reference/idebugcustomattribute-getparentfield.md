@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomAttribute::GetParentField | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCustomAttribute::GetParentField"
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCustomAttribute::GetParentField
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

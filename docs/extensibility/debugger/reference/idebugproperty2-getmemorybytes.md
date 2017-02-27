@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty2::GetMemoryBytes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty2::GetMemoryBytes"
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugProperty2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear plantillas de proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "plantillas de Visual Studio, plantillas de proyecto"
 ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # C&#243;mo: Crear plantillas de proyectos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

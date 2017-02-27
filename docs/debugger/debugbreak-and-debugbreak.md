@@ -1,8 +1,7 @@
 ---
 title: "DebugBreak y __debugbreak | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "depurar [C++], DebugBreak (función)"
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # DebugBreak y __debugbreak
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

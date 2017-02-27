@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_isSdl | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 6aa0e116-da75-4643-a4d7-d8e142231e21
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_isSdl
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

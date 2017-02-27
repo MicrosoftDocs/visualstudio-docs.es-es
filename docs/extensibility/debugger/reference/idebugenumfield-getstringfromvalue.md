@@ -1,8 +1,7 @@
 ---
 title: "IDebugEnumField::GetStringFromValue | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEnumField::GetStringFromValue (método)"
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # IDebugEnumField::GetStringFromValue
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

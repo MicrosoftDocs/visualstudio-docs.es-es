@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: instalar un complemento de Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "origen control complementos, instalar"
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # C&#243;mo: instalar un complemento de Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

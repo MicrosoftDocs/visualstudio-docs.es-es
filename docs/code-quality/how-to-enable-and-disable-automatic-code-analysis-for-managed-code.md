@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Habilitar y deshabilitar el an&#225;lisis de c&#243;digo autom&#225;tico para c&#243;digo administrado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7c22d194-5fea-4f23-b02d-19344fa64a64
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # C&#243;mo: Habilitar y deshabilitar el an&#225;lisis de c&#243;digo autom&#225;tico para c&#243;digo administrado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

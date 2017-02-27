@@ -1,8 +1,7 @@
 ---
 title: "CA2233: Las operaciones no deben desbordarse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "OperationsShouldNotOverflow"
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA2233: Las operaciones no deben desbordarse
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

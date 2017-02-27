@@ -1,8 +1,7 @@
 ---
 title: "IDebugFunctionObject2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugFunctionObject2"
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugFunctionObject2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

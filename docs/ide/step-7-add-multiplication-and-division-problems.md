@@ -1,8 +1,7 @@
 ---
 title: "Paso 7: Agregar problemas de multiplicaci&#243;n y divisi&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Paso 7: Agregar problemas de multiplicaci&#243;n y divisi&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

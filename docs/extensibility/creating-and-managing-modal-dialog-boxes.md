@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n y administraci&#243;n de cuadros de di&#225;logo modales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "cuadros de diálogo, administrar en Visual Studio"
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Creaci&#243;n y administraci&#243;n de cuadros de di&#225;logo modales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

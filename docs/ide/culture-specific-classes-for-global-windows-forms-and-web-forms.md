@@ -1,53 +1,36 @@
 ---
-title: "Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- globalization [Windows Forms], classes
-- Web applications [.NET Framework], globalization
-- culture, culture-specific classes
-- numbers, international
-- localization [Windows Forms], classes
-- globalization [Visual Studio], culture-specific classes
-- Windows Forms, localization
-- international applications [Visual Studio], data formats
-- time [Visual Studio], international
-- dates [Visual Studio], international
-- culture
-- international characters
-- currency formats
-- ASP.NET, globalization
-- classes [Visual Studio], culture-specific
-- localization [Visual Studio], culture-specific classes
+title: "Clases espec&#237;ficas de las referencias culturales para Windows Forms y formularios Web Forms globales | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "globalización [Windows Forms], clases"
+  - "aplicaciones web [.NET Framework], globalización"
+  - "referencia cultural, clases específicas de referencias culturales"
+  - "números, internacional"
+  - "localización [Windows Forms], clases"
+  - "globalización [Visual Studio], clases específicas de referencias culturales"
+  - "Windows Forms, localización"
+  - "aplicaciones internacionales [Visual Studio], formatos de datos"
+  - "horas [Visual Studio], internacional"
+  - "fechas [Visual Studio], internacional"
+  - "referencia cultural"
+  - "caracteres internacionales"
+  - "formatos de moneda"
+  - "ASP.NET, globalización"
+  - "clases [Visual Studio], específicas de referencias culturales"
+  - "localización [Visual Studio], clases específicas de referencias culturales"
 ms.assetid: 0d06a0a4-f887-4f7c-bde7-1d543c06f803
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 3fb3b66548077a2f92289f1a2f02cc8ae77544cc
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 Cada referencia cultural tiene distintas convenciones para mostrar fechas, horas, números, moneda y otra información. El espacio de nombres <xref:System.Globalization> contiene clases que pueden usarse para modificar el modo en que se muestran los valores específicos de referencias culturales, como <xref:System.Globalization.DateTimeFormatInfo>, **Calendario** y <xref:System.Globalization.NumberFormatInfo>.  

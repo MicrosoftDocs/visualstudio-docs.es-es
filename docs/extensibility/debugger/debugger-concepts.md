@@ -1,8 +1,7 @@
 ---
 title: "Conceptos del depurador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración]"
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Conceptos del depurador
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

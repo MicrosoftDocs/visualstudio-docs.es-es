@@ -1,8 +1,7 @@
 ---
 title: "Compatibilidad con la ventana autom&#225;tico en un servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Ventana automático, auxiliares en servicios de lenguaje [managed package framework]"
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Compatibilidad con la ventana autom&#225;tico en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

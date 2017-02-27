@@ -1,18 +1,17 @@
 ---
 title: "Depurar XAML con el Dise&#241;ador de flujo de trabajo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 8
 ---
 # Depurar XAML con el Dise&#241;ador de flujo de trabajo
 Los flujos de trabajo se definen en términos de código XAML.La representación de la interfaz de usuario de flujo de trabajo se compila sobre el árbol XAML que define el flujo de trabajo.La experiencia de depuración es similar a la depuración de flujos de trabajo en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].Por ejemplo, mientras se depura el código XAML, la ventanas de valores locales, de inspección y de subprocesos se comportan de la misma forma que la depuración de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].Además, la vista de pila de llamadas durante la depuración de código XAML es una vista jerárquica basada en líneas del flujo de ejecución para el flujo de trabajo.  

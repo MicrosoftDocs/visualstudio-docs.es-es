@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramDestroyEventFlags2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugProgramDestroyEventFlags2"
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

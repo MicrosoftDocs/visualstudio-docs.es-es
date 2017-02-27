@@ -1,8 +1,7 @@
 ---
 title: "CvWriteFlag (Funci&#243;n) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "CvWriteFlagExVW (método)"
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # CvWriteFlag (Funci&#243;n)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

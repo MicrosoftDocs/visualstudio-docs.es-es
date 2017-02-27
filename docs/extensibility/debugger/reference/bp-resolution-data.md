@@ -1,8 +1,7 @@
 ---
 title: "BP_RESOLUTION_DATA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura BP_RESOLUTION_DATA"
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # BP_RESOLUTION_DATA
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

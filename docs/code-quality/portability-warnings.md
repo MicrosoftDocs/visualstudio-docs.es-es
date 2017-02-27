@@ -1,8 +1,7 @@
 ---
 title: "Advertencias de portabilidad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "advertencias, portabilidad"
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # Advertencias de portabilidad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

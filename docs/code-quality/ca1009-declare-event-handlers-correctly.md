@@ -1,8 +1,7 @@
 ---
 title: "CA1009: Declare los controladores de evento correctamente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DeclareEventHandlersCorrectly"
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA1009: Declare los controladores de evento correctamente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Funciones intr&#237;nsecas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ f1_keywords:
   - "_Inexpressible_"
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Funciones intr&#237;nsecas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

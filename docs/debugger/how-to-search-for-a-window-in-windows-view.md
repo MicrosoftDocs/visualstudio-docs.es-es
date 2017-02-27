@@ -1,8 +1,7 @@
 ---
 title: "How to: Search for a Window in Windows View | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "windows, searching in Windows view"
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # How to: Search for a Window in Windows View
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

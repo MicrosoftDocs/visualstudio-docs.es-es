@@ -1,8 +1,7 @@
 ---
 title: "IDebugProcess2::GetName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProcess2::GetName"
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugProcess2::GetName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Especificar eventos de compilaci&#243;n personalizados en Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "eventos de compilación, personalizar"
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Especificar eventos de compilaci&#243;n personalizados en Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

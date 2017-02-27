@@ -1,8 +1,7 @@
 ---
 title: "IDebugQueryEngine2::GetEngineInterface | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugQueryEngine2::GetEngineInterface"
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugQueryEngine2::GetEngineInterface
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

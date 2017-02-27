@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty2::SetValueAsReference | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty2::SetValueAsReference (método)"
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

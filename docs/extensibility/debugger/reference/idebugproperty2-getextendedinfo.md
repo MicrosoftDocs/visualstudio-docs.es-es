@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty2::GetExtendedInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty2::GetExtendedInfo"
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

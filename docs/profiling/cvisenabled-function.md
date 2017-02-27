@@ -1,8 +1,7 @@
 ---
 title: "CvIsEnabled (Funci&#243;n) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CvIsEnabledEx (método)"
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # CvIsEnabled (Funci&#243;n)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

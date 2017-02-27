@@ -1,8 +1,7 @@
 ---
 title: "Elemento CommandName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Elementos de esquema XML VSCT, CommandName"
 ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Elemento CommandName
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

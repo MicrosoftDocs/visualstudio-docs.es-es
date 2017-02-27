@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSymbolsByAddr::Clone | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSymbolsByAddr::Clone (método)"
 ms.assetid: f4582c69-bc3f-4a26-bcca-b641102b85fe
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSymbolsByAddr::Clone
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

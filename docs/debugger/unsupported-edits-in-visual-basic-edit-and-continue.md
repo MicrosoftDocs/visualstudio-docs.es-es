@@ -1,8 +1,7 @@
 ---
 title: "Ediciones no compatibles en Editar y continuar de Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Editar y continuar [Visual Basic], tareas de edición del cuerpo de métodos y propiedades no compatibles"
 ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Ediciones no compatibles en Editar y continuar de Visual Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "XmlPoke (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "XmlPoke (tarea) [MSBuild]"
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # XmlPoke (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

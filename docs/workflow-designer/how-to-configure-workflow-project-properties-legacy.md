@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Configurar las propiedades de proyectos de flujo de trabajo (Heredado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "proyectos de flujo de trabajo, configurar propiedades"
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # C&#243;mo: Configurar las propiedades de proyectos de flujo de trabajo (Heredado)
 Siga estos pasos para ver o modificar las propiedades asociadas a proyectos de flujo de trabajo.  

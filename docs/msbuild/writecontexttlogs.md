@@ -1,8 +1,7 @@
 ---
 title: "WriteContextTLogs | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "WriteContextTLogs"
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # WriteContextTLogs
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

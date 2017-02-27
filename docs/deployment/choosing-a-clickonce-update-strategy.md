@@ -1,8 +1,7 @@
 ---
 title: "Elegir una estrategia de actualizaci&#243;n de ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "actualizaciones, ClickOnce"
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 23
 ---
 # Elegir una estrategia de actualizaci&#243;n de ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::frameForVA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper2::frameForVA (método)"
 ms.assetid: f35fc61b-f8dd-473a-b583-82c304059422
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaStackWalkHelper::frameForVA
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

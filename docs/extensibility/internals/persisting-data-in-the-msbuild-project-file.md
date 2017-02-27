@@ -1,8 +1,7 @@
 ---
 title: "Conservar los datos en el archivo de proyecto de MSBuild | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "archivos de proyecto, conservar los datos en"
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Conservar los datos en el archivo de proyecto de MSBuild
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

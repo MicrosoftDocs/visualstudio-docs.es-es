@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumInjectedSources::Item | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumInjectedSources::Item (método)"
 ms.assetid: 14846955-7270-451d-91d2-9cb34bb65187
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumInjectedSources::Item
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

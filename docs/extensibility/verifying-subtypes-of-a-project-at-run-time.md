@@ -1,8 +1,7 @@
 ---
 title: "Comprobar los subtipos de un proyecto en tiempo de ejecuci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Compruebe los subtipos"
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Comprobar los subtipos de un proyecto en tiempo de ejecuci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

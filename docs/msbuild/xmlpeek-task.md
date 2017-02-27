@@ -1,8 +1,7 @@
 ---
 title: "XmlPeek (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "XmlPeek (tarea) [MSBuild]"
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # XmlPeek (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

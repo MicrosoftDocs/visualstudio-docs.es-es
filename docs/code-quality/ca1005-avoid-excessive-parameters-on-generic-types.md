@@ -1,8 +1,7 @@
 ---
 title: "CA1005: Evite par&#225;metros excesivos en tipos gen&#233;ricos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1005"
 ms.assetid: 372b2f28-5c59-4815-9753-6c65b2bb3589
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # CA1005: Evite par&#225;metros excesivos en tipos gen&#233;ricos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

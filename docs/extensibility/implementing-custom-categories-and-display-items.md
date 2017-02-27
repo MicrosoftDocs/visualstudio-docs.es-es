@@ -1,8 +1,7 @@
 ---
 title: "Implementaci&#243;n de categor&#237;as personalizadas y mostrar los elementos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "categorías personalizadas"
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Implementaci&#243;n de categor&#237;as personalizadas y mostrar los elementos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

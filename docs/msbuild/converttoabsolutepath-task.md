@@ -1,8 +1,7 @@
 ---
 title: "ConvertToAbsolutePath (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "MSBuild, ConvertToAbsolutePath (tarea)"
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # ConvertToAbsolutePath (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

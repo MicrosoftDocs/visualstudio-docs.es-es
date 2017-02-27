@@ -1,8 +1,7 @@
 ---
 title: "Depuraci&#243;n y proceso host | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "proceso de alojamiento"
 ms.assetid: d0f0b9a6-2a6e-463d-b6ea-9518ee727933
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Depuraci&#243;n y proceso host
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackFrame::get_functionStart | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackFrame::get_functionStart"
 ms.assetid: e3e6e88b-0594-4d82-9457-480239a2e85a
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaStackFrame::get_functionStart
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaLineNumber::get_columnNumber | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLineNumber::get_columnNumber (método)"
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

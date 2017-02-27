@@ -1,8 +1,7 @@
 ---
 title: "Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "prueba de IU codificada, Editor de pruebas de IU codificadas"
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 40
-caps.handback.revision: 40
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 40
 ---
 # Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

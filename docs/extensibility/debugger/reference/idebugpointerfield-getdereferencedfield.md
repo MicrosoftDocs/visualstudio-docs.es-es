@@ -1,8 +1,7 @@
 ---
 title: "IDebugPointerField::GetDereferencedField | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugPointerField::GetDereferencedField (método)"
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugPointerField::GetDereferencedField
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

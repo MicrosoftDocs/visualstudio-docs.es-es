@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Recopilar datos de muestreo en el nivel de l&#237;nea | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, muestreo de nivel de línea"
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # C&#243;mo: Recopilar datos de muestreo en el nivel de l&#237;nea
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Registrar extensiones de nombre de archivo para las implementaciones en paralelo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "extensiones de archivo, registro de side-by-side"
 ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Registrar extensiones de nombre de archivo para las implementaciones en paralelo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

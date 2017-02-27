@@ -1,8 +1,7 @@
 ---
 title: "DA0039: Tasa muy alta de contenciones de bloqueo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.rules.DA0039"
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # DA0039: Tasa muy alta de contenciones de bloqueo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

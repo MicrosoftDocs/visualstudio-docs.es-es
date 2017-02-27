@@ -1,8 +1,7 @@
 ---
 title: "P&#225;gina de propiedades, JavaScript | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ f1_keywords:
   - "javascript.project.property.debugging.allowlocalnetworkloopback"
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # P&#225;gina de propiedades, JavaScript
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

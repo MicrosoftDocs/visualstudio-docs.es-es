@@ -1,37 +1,19 @@
 ---
-title: "Paso 6: Asignar un nombre a los controles de botón | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Paso 6: Asignar un nombre a los controles de bot&#243;n | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 29
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 09ce424d13fd6fa2e6e511370f509dd54a7c1a1e
-ms.openlocfilehash: 9af9f76e799c39533785f9230be867ace4dbee6a
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 29
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay una casilla, denominada **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.  

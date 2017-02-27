@@ -1,8 +1,7 @@
 ---
 title: "PublicSymbol | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "funciones globales [C++], como símbolos públicos"
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # PublicSymbol
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

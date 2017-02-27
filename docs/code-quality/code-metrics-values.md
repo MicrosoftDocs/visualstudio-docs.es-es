@@ -1,8 +1,7 @@
 ---
 title: "Valores de m&#233;trica de c&#243;digo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "medir la calidad del código"
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "erickson-doug"
 ms.author: "douge"
 manager: "douge"
+caps.handback.revision: 20
 ---
 # Valores de m&#233;trica de c&#243;digo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

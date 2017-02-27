@@ -1,8 +1,7 @@
 ---
 title: "Introducci&#243;n a PTVS: Editar c&#243;digo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b412c87c-2f09-4e25-9cc8-ab54f4c44412
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kraigb"
 ms.author: "kraigb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Introducci&#243;n a PTVS: Editar c&#243;digo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

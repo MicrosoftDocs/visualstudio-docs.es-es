@@ -1,8 +1,7 @@
 ---
 title: "FRAMEINFO_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración FRAMEINFO_FLAGS"
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

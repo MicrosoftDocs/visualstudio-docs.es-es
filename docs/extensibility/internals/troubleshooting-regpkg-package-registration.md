@@ -1,8 +1,7 @@
 ---
 title: "Registro del paquete de RegPkg de soluci&#243;n de problemas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "RegPkg"
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Registro del paquete de RegPkg de soluci&#243;n de problemas
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

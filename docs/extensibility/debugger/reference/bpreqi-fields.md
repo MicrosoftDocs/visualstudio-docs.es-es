@@ -1,8 +1,7 @@
 ---
 title: "BPREQI_FIELDS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración BPREQI_FIELDS"
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # BPREQI_FIELDS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

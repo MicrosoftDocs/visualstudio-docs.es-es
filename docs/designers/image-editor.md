@@ -1,8 +1,7 @@
 ---
 title: "Editor de im&#225;genes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ f1_keywords:
   - "vs.graphics.imageeditor"
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 45
-caps.handback.revision: 45
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 45
 ---
 # Editor de im&#225;genes
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

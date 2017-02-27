@@ -1,8 +1,7 @@
 ---
 title: "Preparaci&#243;n de la depuraci&#243;n: proyectos de consola | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "depurar aplicaciones de consola"
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Preparaci&#243;n de la depuraci&#243;n: proyectos de consola
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

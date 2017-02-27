@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_noInline | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_noInline (método)"
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

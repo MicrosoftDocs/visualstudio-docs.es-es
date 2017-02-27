@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # C&#243;mo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

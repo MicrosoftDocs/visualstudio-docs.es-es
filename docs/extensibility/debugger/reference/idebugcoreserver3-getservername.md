@@ -1,8 +1,7 @@
 ---
 title: "IDebugCoreServer3::GetServerName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCoreServer3::GetServerName"
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

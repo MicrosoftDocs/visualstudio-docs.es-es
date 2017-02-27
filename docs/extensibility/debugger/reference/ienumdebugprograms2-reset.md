@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPrograms2::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPrograms2::Reset"
 ms.assetid: b289242b-24ea-4df3-a811-20b0c8a903d6
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEnumDebugPrograms2::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Crear proyectos de flujo de trabajo heredados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "flujos de trabajo, crear proyectos"
 ms.assetid: 572d5c32-59ef-49d8-a24c-e180fe9f7a11
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Crear proyectos de flujo de trabajo heredados
 En esta sección se describe cómo crear proyectos de flujo de trabajo con [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado proporcionado por vs2010.El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].Contiene información sobre cómo usar las plantillas del proyecto de flujo de trabajo que aparecen en la tabla siguiente.  

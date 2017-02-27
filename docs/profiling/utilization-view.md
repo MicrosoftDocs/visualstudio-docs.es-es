@@ -1,8 +1,7 @@
 ---
 title: "Vista de utilizaci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Visualizador de simultaneidad, vista de utilización de la CPU"
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Vista de utilizaci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugArrayField::GetRank | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugArrayField::GetRank (método)"
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

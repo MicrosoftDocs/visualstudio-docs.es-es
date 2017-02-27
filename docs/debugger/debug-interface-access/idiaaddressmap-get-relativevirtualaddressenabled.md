@@ -1,8 +1,7 @@
 ---
 title: "IDiaAddressMap::get_relativeVirtualAddressEnabled | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaAddressMap::get_relativeVirtualAddressEnabled (método)"
 ms.assetid: 4c48af81-7148-4d9a-818e-dbe62cbfc638
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaAddressMap::get_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugGenericFieldDefinition::GetFormalTypeParams"
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugGenericFieldDefinition::GetFormalTypeParams
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

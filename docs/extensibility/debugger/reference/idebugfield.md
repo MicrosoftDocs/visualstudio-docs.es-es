@@ -1,8 +1,7 @@
 ---
 title: "IDebugField | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugField"
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugField
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

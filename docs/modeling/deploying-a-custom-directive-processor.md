@@ -1,8 +1,7 @@
 ---
 title: "Deploying a Custom Directive Processor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "text templates, custom directive processors"
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 18
 ---
 # Deploying a Custom Directive Processor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

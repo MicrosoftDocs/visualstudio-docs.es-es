@@ -1,8 +1,7 @@
 ---
 title: "Vbc (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Vbc (tarea) [MSBuild]"
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Vbc (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

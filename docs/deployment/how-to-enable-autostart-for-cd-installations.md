@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Habilitar AutoStart para instalaciones con CD | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "implementar aplicaciones [ClickOnce], instalación en CD o DVD"
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # C&#243;mo: Habilitar AutoStart para instalaciones con CD
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

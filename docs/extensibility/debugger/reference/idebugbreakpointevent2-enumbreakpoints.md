@@ -1,8 +1,7 @@
 ---
 title: "IDebugBreakpointEvent2::EnumBreakpoints | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugBreakpointEvent2:::EnumBreakpoints"
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugBreakpointEvent2::EnumBreakpoints
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

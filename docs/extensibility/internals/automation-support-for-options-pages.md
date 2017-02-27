@@ -1,8 +1,7 @@
 ---
 title: "Compatibilidad de automatizaci&#243;n para las p&#225;ginas de opciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "automatización [Visual Studio SDK], crear páginas de opciones de herramientas"
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Compatibilidad de automatizaci&#243;n para las p&#225;ginas de opciones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

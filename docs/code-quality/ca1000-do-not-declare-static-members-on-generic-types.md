@@ -1,8 +1,7 @@
 ---
 title: "CA1000: No declarar miembros est&#225;ticos en tipos gen&#233;ricos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotDeclareStaticMembersOnGenericTypes"
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # CA1000: No declarar miembros est&#225;ticos en tipos gen&#233;ricos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

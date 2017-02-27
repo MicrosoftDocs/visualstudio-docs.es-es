@@ -1,8 +1,7 @@
 ---
 title: "CA1804: Quitar variables locales no utilizadas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1804"
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # CA1804: Quitar variables locales no utilizadas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA2111: Los punteros no deber&#237;an estar visibles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "PointersShouldNotBeVisible"
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA2111: Los punteros no deber&#237;an estar visibles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

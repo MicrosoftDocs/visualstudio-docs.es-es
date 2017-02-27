@@ -1,8 +1,7 @@
 ---
 title: "POPLISTFUNC | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Función de devolución de llamada POPLISTFUNC"
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # POPLISTFUNC
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

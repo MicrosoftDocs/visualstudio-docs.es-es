@@ -1,8 +1,7 @@
 ---
 title: "Informaci&#243;n general (Debug Interface Access SDK) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "imágenes ejecutables"
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Informaci&#243;n general (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

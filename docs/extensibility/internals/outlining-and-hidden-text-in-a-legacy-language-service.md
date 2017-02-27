@@ -1,8 +1,7 @@
 ---
 title: "Esquematizaci&#243;n y ocultado el texto de un servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "la esquematización, la compatibilidad en código nativo"
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Esquematizaci&#243;n y ocultado el texto de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

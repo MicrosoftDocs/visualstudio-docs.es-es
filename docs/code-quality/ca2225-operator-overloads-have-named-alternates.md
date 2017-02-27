@@ -1,8 +1,7 @@
 ---
 title: "CA2225: Las sobrecargas del operador tienen alternativas con nombre | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "OperatorOverloadsHaveNamedAlternates"
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA2225: Las sobrecargas del operador tienen alternativas con nombre
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

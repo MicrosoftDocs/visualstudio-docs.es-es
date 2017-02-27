@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_hasSecurityChecks | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasSecurityChecks (método)"
 ms.assetid: 4bb51f62-8645-41a4-bc44-1451010623fd
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaSymbol::get_hasSecurityChecks
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

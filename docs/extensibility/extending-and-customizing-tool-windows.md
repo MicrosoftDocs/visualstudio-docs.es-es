@@ -1,8 +1,7 @@
 ---
 title: "Ampliaci&#243;n y personalizaci&#243;n de ventanas de herramientas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "herramienta estándar de windows,"
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Ampliaci&#243;n y personalizaci&#243;n de ventanas de herramientas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

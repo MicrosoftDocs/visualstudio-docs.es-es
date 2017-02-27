@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_sizeInUdt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_sizeInUdt
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

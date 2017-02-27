@@ -1,8 +1,7 @@
 ---
 title: "Generador de perfiles XSLT | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

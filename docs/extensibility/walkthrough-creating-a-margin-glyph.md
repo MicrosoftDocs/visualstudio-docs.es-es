@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Crear un glifo de margen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] glifo de margen nuevo:"
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Tutorial: Crear un glifo de margen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

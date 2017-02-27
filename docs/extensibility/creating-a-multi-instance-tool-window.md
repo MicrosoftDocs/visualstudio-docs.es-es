@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de una ventana de herramienta de instancias m&#250;ltiples | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "ventanas de herramientas"
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Creaci&#243;n de una ventana de herramienta de instancias m&#250;ltiples
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

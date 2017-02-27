@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::findInlineeLines | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 56ba4bc0-8f96-47c2-8b18-332b4e7c2d91
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::findInlineeLines
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Administrar propiedades de soluciones y proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Administrar propiedades de soluciones y proyectos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

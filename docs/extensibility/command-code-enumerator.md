@@ -1,8 +1,7 @@
 ---
 title: "Enumerador de c&#243;digo de comando | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "origen control complementos, enumeración de código de comando"
 ms.assetid: 5d2c360c-59e4-4da8-bcb4-dd07c7441e40
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Enumerador de c&#243;digo de comando
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

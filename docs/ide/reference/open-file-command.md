@@ -1,8 +1,7 @@
 ---
 title: "Abrir archivo (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Abrir archivo (comando)"
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Abrir archivo (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

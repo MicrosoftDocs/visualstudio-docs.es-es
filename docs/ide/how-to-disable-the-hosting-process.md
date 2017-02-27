@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Deshabilitar el proceso de alojamiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "vshost.exe, deshabilitar el proceso de alojamiento"
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Deshabilitar el proceso de alojamiento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

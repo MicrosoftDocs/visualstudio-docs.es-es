@@ -1,8 +1,7 @@
 ---
 title: "Modo de interrupci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], modo de interrupción"
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Modo de interrupci&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

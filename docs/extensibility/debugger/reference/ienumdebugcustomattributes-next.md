@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugCustomAttributes::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugCustomAttributes::Next"
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEnumDebugCustomAttributes::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

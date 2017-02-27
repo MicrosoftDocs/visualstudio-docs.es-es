@@ -1,18 +1,17 @@
 ---
 title: "Propiedades de los roles de dominio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 9
 ---
 # Propiedades de los roles de dominio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

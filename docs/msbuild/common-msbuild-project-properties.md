@@ -1,8 +1,7 @@
 ---
 title: "Propiedades comunes de proyectos de MSBuild | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "propiedades archivo de proyecto (MSBuild)"
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 36
-caps.handback.revision: 36
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 36
 ---
 # Propiedades comunes de proyectos de MSBuild
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

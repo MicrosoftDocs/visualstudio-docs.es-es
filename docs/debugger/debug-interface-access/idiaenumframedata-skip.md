@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumFrameData::Skip | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumFrameData::Skip (método)"
 ms.assetid: 67140b4c-7125-4895-932d-42412326da29
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

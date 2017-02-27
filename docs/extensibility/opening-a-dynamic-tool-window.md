@@ -1,8 +1,7 @@
 ---
 title: "Abrir una ventana de herramientas din&#225;mica | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "ventanas de herramientas, de forma dinámicas"
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 21
-caps.handback.revision: 19
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Abrir una ventana de herramientas din&#225;mica
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

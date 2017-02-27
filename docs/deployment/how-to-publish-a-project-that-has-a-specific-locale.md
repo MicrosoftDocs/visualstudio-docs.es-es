@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Publicar un proyecto que tiene una configuraci&#243;n regional espec&#237;fica | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "publicar, proyectos adaptados"
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # C&#243;mo: Publicar un proyecto que tiene una configuraci&#243;n regional espec&#237;fica
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

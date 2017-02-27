@@ -1,8 +1,7 @@
 ---
 title: "FunctionArgType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "FunctionArgType (símbolo)"
 ms.assetid: 9f072fd3-0b99-405c-af99-fd44cd56fd73
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # FunctionArgType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

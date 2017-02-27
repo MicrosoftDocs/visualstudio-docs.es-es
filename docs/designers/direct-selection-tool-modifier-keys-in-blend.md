@@ -1,8 +1,7 @@
 ---
 title: "Teclas modificadoras de la herramienta Selecci&#243;n directa en Blend | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Teclas modificadoras de la herramienta Selecci&#243;n directa en Blend
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades CorrelationScope | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.CorrelationScope.UI"
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Dise&#241;ador de actividades CorrelationScope
 El diseñador de actividades **CorrelationScope** se utiliza para crear y configurar una actividad <xref:System.ServiceModel.Activities.CorrelationScope> que proporciona administración implícita de actividades de mensajería secundarias mediante el uso de un objeto <xref:System.ServiceModel.Activities.CorrelationHandle>.  

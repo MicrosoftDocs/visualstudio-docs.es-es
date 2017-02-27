@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty3::DestroyObjectID | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty3::DestroyObjectID"
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Jerarqu&#237;a de clases de tipos de s&#237;mbolos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "símbolos [SDK de DIA], jerarquías de clase"
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Jerarqu&#237;a de clases de tipos de s&#237;mbolos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Elemento &lt;customErrorReporting&gt; (Implementaci&#243;n ClickOnce) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "<customErrorReporting> (elemento) [manifiesto de implementación ClickOnce]"
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 6
 ---
 # Elemento &lt;customErrorReporting&gt; (Implementaci&#243;n ClickOnce)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

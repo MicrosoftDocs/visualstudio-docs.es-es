@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPrograms2::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPrograms2::Next"
 ms.assetid: 9120e263-e97c-4a40-ab2c-e9264ce3d6c4
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IEnumDebugPrograms2::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

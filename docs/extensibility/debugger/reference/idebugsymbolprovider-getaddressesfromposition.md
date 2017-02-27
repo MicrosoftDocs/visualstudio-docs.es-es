@@ -1,8 +1,7 @@
 ---
 title: "IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugSymbolProvider::GetAddressesFromPosition (método)"
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugSymbolProvider::GetAddressesFromPosition
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

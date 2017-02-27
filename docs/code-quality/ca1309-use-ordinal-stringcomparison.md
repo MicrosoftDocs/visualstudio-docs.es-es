@@ -1,8 +1,7 @@
 ---
 title: "CA1309: Utilizar StringComparison ordinal | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1309"
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1309: Utilizar StringComparison ordinal
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

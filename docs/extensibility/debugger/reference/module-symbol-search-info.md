@@ -1,8 +1,7 @@
 ---
 title: "MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura MODULE_SYMBOL_SEARCH_INFO"
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # MODULE_SYMBOL_SEARCH_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

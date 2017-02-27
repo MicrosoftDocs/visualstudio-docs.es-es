@@ -1,8 +1,7 @@
 ---
 title: "CA1704: Los identificadores deber&#237;an tener la ortograf&#237;a correcta | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "IdentifiersShouldBeSpelledCorrectly"
 ms.assetid: f2c7a44d-1690-44ca-9cd0-681b04b12b2a
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 25
 ---
 # CA1704: Los identificadores deber&#237;an tener la ortograf&#237;a correcta
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

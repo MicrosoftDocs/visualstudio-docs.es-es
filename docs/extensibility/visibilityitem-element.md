@@ -1,8 +1,7 @@
 ---
 title: "Elemento VisibilityItem | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Elementos de esquema XML VSCT, VisibilityItem"
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Elemento VisibilityItem
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

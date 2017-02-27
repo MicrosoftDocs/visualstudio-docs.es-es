@@ -1,8 +1,7 @@
 ---
 title: "Validaci&#243;n de puntos de interrupci&#243;n en un servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Servicios de lenguaje [managed package framework], validación de punto de interrupción"
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Validaci&#243;n de puntos de interrupci&#243;n en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

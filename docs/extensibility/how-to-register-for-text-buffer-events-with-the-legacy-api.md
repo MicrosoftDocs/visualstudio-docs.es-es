@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: registrar eventos del b&#250;fer de texto con la API heredada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - registrarse para eventos del búfer de texto"
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # C&#243;mo: registrar eventos del b&#250;fer de texto con la API heredada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugErrorBreakpoints2::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugErrorBreakpoints2::Reset"
 ms.assetid: d5b04bba-a8b9-4141-94fb-250c77f0534c
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEnumDebugErrorBreakpoints2::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

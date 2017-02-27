@@ -1,8 +1,7 @@
 ---
 title: "IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugStackFrame3::GetUnwindCodeContext (método)"
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IDebugStackFrame3::GetUnwindCodeContext
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

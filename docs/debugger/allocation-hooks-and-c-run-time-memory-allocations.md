@@ -1,8 +1,7 @@
 ---
 title: "Enlaces de asignaci&#243;n y asignaciones de memoria en tiempo de ejecuci&#243;n de C | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "asignación de memoria, solucionar problemas de enlaces de asignaciones"
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Enlaces de asignaci&#243;n y asignaciones de memoria en tiempo de ejecuci&#243;n de C
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

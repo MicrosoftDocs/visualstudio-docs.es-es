@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::symbolForVA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper::symbolForVA (método)"
 ms.assetid: 8dd9455d-d44c-4dd6-a0aa-31131cbea2aa
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaStackWalkHelper::symbolForVA
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

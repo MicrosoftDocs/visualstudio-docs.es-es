@@ -1,8 +1,7 @@
 ---
 title: "MODULE_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura MODULE_INFO"
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # MODULE_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

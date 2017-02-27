@@ -1,8 +1,7 @@
 ---
 title: "CA1033: Los tipos secundarios deber&#237;an poder llamar a los m&#233;todos de interfaz | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "InterfaceMethodsShouldBeCallableByChildTypes"
 ms.assetid: 9f171497-a5e3-4769-a77b-7aed755b2662
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # CA1033: Los tipos secundarios deber&#237;an poder llamar a los m&#233;todos de interfaz
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

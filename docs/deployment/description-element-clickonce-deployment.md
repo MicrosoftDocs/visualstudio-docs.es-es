@@ -1,8 +1,7 @@
 ---
 title: "&lt;description&gt; (Elemento) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "<description> (elemento) [manifiesto de implementación ClickOnce]"
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # &lt;description&gt; (Elemento)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

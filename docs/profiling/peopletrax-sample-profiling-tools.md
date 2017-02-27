@@ -1,8 +1,7 @@
 ---
 title: "Ejemplo PeopleTrax (Herramientas de generaci&#243;n de perfiles) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "rendimiento, ejemplos"
 ms.assetid: 86d7f8f7-d812-4e76-bed1-e66d81709c15
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Ejemplo PeopleTrax (Herramientas de generaci&#243;n de perfiles)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

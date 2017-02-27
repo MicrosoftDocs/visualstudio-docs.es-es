@@ -1,8 +1,7 @@
 ---
 title: "Ventana de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Modo Marcar de la ventana Comandos"
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Ventana de comandos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

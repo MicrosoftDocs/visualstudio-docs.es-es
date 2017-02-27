@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSectionContribs::Skip | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSectionContribs::Skip (método)"
 ms.assetid: 7471a178-5134-41b2-80a6-51ff96abe916
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaEnumSectionContribs::Skip
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

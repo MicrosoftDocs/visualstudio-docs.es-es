@@ -1,8 +1,7 @@
 ---
 title: "How to: View Inheritance Between Types (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "types [Visual Studio], derived"
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # How to: View Inheritance Between Types (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

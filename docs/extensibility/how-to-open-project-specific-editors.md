@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: abrir editores espec&#237;ficos del proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "proyectos [Visual Studio SDK], abrir carpetas"
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # C&#243;mo: abrir editores espec&#237;ficos del proyecto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

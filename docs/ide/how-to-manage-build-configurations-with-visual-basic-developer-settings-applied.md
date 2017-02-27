@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Administrar configuraciones de compilaci&#243;n a las que se han aplicado opciones del desarrollador de Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Visual Studio, compilar con opciones de Visual Basic"
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # C&#243;mo: Administrar configuraciones de compilaci&#243;n a las que se han aplicado opciones del desarrollador de Visual Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

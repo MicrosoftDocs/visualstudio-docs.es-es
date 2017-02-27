@@ -1,43 +1,25 @@
 ---
-title: "Fragmentos de código de Visual C# | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- snippets [C#], default snippets
-- snippets [C#], Code Snippet Inserter
-- Code Snippet Inserter [J#]
-- Code Snippet Inserter [C#]
-- Visual C#, default snippets
+title: "Fragmentos de c&#243;digo de Visual C# | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "fragmentos de código [C#], fragmentos de código predeterminados"
+  - "fragmentos de código [C#], herramienta de inserción de fragmento de código"
+  - "herramienta de inserción de fragmento de código [J#]"
+  - "herramienta de inserción de fragmento de código [C#]"
+  - "Visual C#, fragmentos de código predeterminados"
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 33
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 0e1c37c0ce85cc44f7d43d895f3b4a4615539e3e
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 33
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C#
 Los fragmentos de código están listos para usar y puede insertarlos rápidamente en el código. Por ejemplo, el fragmento de código `for` crea un bucle `for` vacío. Algunos fragmentos de código son envolventes, lo que permite seleccionar líneas de código y después elegir un fragmento de código que incorpore las líneas de código seleccionadas. Por ejemplo, al seleccionar líneas de código y activar después el fragmento de código `for`, se creará un bucle `for` que incluirá dichas líneas en su bloque. De este modo, los fragmentos de código hacen de la escritura de código de programación un proceso más rápido, sencillo y fiable.  

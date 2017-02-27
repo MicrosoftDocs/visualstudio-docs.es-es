@@ -1,8 +1,7 @@
 ---
 title: "Determinar el estado de comandos mediante el uso de ensamblados de interoperabilidad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "control con ensamblados de interoperabilidad, estado de comandos"
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Determinar el estado de comandos mediante el uso de ensamblados de interoperabilidad
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

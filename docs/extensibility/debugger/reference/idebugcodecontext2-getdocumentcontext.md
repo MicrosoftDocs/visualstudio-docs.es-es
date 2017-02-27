@@ -1,8 +1,7 @@
 ---
 title: "IDebugCodeContext2::GetDocumentContext | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCodeContext2::GetDocumentContext"
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCodeContext2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

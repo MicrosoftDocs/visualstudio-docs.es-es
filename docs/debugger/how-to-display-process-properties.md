@@ -1,8 +1,7 @@
 ---
 title: "How to: Display Process Properties | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Process properties"
 ms.assetid: 5d9eb6e9-2e47-40f2-bf9c-464caa703dc9
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # How to: Display Process Properties
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

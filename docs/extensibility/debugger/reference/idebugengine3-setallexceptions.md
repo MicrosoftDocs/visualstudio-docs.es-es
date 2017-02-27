@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine3::SetAllExceptions | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine3::SetAllExceptions"
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty2::GetSize | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty2::GetSize"
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEEVisualizerDataProvider::GetNewObjectForVisualizer (método)"
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IEEVisualizerDataProvider::GetNewObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

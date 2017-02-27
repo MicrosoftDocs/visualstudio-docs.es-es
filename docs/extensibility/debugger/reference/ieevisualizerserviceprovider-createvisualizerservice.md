@@ -1,8 +1,7 @@
 ---
 title: "IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEEVisualizerServiceProvider::CreateVisualizerService (método)"
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEEVisualizerServiceProvider::CreateVisualizerService
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

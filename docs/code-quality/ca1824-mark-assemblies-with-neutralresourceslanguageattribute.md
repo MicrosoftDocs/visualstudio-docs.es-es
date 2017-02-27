@@ -1,8 +1,7 @@
 ---
 title: "CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1824"
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

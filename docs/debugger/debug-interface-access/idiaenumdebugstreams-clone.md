@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumDebugStreams::Clone | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumDebugStreams::Clone (método)"
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaEnumDebugStreams::Clone
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

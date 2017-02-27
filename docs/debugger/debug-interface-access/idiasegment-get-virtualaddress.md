@@ -1,8 +1,7 @@
 ---
 title: "IDiaSegment::get_virtualAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSegment::get_virtualAddress (método)"
 ms.assetid: 30073dd0-c864-4c4a-8863-80f243419f6c
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSegment::get_virtualAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

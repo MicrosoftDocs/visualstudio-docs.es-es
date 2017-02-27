@@ -1,8 +1,7 @@
 ---
 title: "CA2201: No provocar tipos de excepci&#243;n reservados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotRaiseReservedExceptionTypes"
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA2201: No provocar tipos de excepci&#243;n reservados
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

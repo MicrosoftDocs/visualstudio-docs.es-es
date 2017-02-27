@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Crear un instalador personalizado para una aplicaci&#243;n ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "instalador [ClickOnce], personalizado"
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 34
-caps.handback.revision: 34
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 34
 ---
 # Tutorial: Crear un instalador personalizado para una aplicaci&#243;n ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

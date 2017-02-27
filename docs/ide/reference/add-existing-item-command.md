@@ -1,8 +1,7 @@
 ---
 title: "Agregar elemento existente (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "File.AddExistingItem (comando)"
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Agregar elemento existente (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

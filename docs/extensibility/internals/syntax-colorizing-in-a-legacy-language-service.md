@@ -1,8 +1,7 @@
 ---
 title: "Coloreado de sintaxis en un servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Servicios de lenguaje [managed package framework], colores"
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 28
-caps.handback.revision: 28
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Coloreado de sintaxis en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

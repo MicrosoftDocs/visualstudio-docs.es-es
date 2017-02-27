@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_isSplitted | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_isSplitted (método)"
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_isSplitted
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

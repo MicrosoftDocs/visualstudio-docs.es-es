@@ -1,8 +1,7 @@
 ---
 title: "StartProfile | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "StartProfile"
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # StartProfile
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

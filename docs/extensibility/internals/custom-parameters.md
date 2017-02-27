@@ -1,8 +1,7 @@
 ---
 title: "Par&#225;metros personalizados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "parámetros personalizados"
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Par&#225;metros personalizados
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

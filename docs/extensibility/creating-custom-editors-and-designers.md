@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de dise&#241;adores y editores personalizados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK], personalizados"
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 31
-caps.handback.revision: 31
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 31
 ---
 # Creaci&#243;n de dise&#241;adores y editores personalizados
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

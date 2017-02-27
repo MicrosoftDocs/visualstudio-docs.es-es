@@ -1,8 +1,7 @@
 ---
 title: "IDebugLoadCompleteEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugLoadCompleteEvent2"
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugLoadCompleteEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

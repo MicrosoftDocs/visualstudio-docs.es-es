@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::EnumPrograms | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::EnumPrograms"
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::EnumPrograms
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

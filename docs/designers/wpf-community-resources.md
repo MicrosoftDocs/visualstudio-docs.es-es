@@ -1,8 +1,7 @@
 ---
 title: "Recursos de la comunidad de WPF | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 89604bcf-da25-4180-a1d2-c5f22ab67bb6
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Recursos de la comunidad de WPF
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

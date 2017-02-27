@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomViewer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugCustomViewer"
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

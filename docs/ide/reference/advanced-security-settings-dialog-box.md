@@ -1,8 +1,7 @@
 ---
 title: "Configuraci&#243;n de seguridad avanzada (Cuadro de di&#225;logo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Cuadro de diálogo Configuración de seguridad avanzada"
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Configuraci&#243;n de seguridad avanzada (Cuadro de di&#225;logo)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

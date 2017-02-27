@@ -1,8 +1,7 @@
 ---
 title: "EVALFLAGS90 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "EVALFLAGS90 (enumeración)"
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # EVALFLAGS90
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

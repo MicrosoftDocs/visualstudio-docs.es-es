@@ -1,8 +1,7 @@
 ---
 title: "Referencia de plantillas de Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "plantillas de Visual Studio, referencia"
 ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Referencia de plantillas de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

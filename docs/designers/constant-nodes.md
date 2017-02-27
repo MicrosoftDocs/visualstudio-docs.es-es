@@ -1,8 +1,7 @@
 ---
 title: "Nodos de constante | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Nodos de constante
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

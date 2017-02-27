@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Buscar temas en la tabla de contenido | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "filtrado de la tabla de contenido [Visor de Ayuda 2.0]"
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # C&#243;mo: Buscar temas en la tabla de contenido
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

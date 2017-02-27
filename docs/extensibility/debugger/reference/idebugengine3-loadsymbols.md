@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine3::LoadSymbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine3::LoadSymbols"
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugEngine3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

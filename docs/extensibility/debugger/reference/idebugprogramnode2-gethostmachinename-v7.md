@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName"
 ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

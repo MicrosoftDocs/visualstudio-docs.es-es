@@ -1,8 +1,7 @@
 ---
 title: "IDebugAddress::GetAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugAddress:GetAddress (método)"
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IDebugAddress::GetAddress
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

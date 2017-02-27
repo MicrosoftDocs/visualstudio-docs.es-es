@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramNodeAttach2::OnAttach | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgramNodeAttach2::OnAttach"
 ms.assetid: 5fe52761-a508-4ab5-abdb-334fb6590334
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDebugProgramNodeAttach2::OnAttach
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

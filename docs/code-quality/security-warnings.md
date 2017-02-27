@@ -1,8 +1,7 @@
 ---
 title: "Advertencias de seguridad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "advertencias, seguridad"
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 28
 ---
 # Advertencias de seguridad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

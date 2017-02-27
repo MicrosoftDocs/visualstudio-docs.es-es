@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPropertyInfo2::Clone | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPropertyInfo2::Clone"
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEnumDebugPropertyInfo2::Clone
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

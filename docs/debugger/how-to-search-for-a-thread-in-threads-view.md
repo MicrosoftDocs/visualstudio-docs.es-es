@@ -1,8 +1,7 @@
 ---
 title: "How to: Search for a Thread in Threads View | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "threads, searching"
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # How to: Search for a Thread in Threads View
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

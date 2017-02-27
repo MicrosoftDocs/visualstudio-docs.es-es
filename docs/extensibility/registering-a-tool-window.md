@@ -1,8 +1,7 @@
 ---
 title: "Registrar una ventana de herramientas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "ventanas de herramientas, registrar"
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Registrar una ventana de herramientas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Suscribirse a un evento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "tabla de documento ejecución (RDT) para suscribirse a eventos"
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 35
-caps.handback.revision: 33
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 35
 ---
 # Suscribirse a un evento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

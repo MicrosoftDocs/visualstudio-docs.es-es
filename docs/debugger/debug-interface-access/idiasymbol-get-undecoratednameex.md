@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_undecoratedNameEx | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_undecoratedNameEx (método)"
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugPortSupplier3::EnumPersistedPorts"
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

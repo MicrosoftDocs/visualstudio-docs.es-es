@@ -1,8 +1,7 @@
 ---
 title: "Preparaci&#243;n y configuraci&#243;n de la depuraci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "depurador, establecer opciones"
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 37
-caps.handback.revision: 37
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 37
 ---
 # Preparaci&#243;n y configuraci&#243;n de la depuraci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

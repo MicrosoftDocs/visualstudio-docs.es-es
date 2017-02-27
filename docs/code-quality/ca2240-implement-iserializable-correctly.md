@@ -1,8 +1,7 @@
 ---
 title: "CA2240: Implementar ISerializable correctamente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ImplementISerializableCorrectly"
 ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # CA2240: Implementar ISerializable correctamente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

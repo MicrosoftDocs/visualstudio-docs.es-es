@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::RemoveAllSetExceptions"
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::RemoveAllSetExceptions
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

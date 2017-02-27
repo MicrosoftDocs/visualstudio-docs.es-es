@@ -1,8 +1,7 @@
 ---
-title: "Caracter&#237;sticas del servicio de lenguaje heredado | Microsoft Docs"
+title: "Incluye&amp;2; del servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK], ayudas de desarrollo de código"
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Caracter&#237;sticas del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

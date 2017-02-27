@@ -1,8 +1,7 @@
 ---
 title: "Elija el directorio de instalaci&#243;n de un paquete VSPackage | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "VSPackages, directorio de instalación"
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Elija el directorio de instalaci&#243;n de un paquete VSPackage
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de carpetas de contenedor primario para soluciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "origen control complementos, crear contenedores de primario"
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Creaci&#243;n de carpetas de contenedor primario para soluciones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

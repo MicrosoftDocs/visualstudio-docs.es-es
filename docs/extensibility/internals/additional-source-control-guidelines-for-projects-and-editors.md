@@ -1,8 +1,7 @@
 ---
 title: "Instrucciones de Control de origen adicionales para los proyectos y editores | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "control de código fuente [Visual Studio SDK], directrices para proyectos y editores"
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Instrucciones de Control de origen adicionales para los proyectos y editores
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

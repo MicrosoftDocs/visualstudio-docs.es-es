@@ -1,8 +1,7 @@
 ---
 title: "CA1023: Los indizadores no deben ser multidimensionales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "IndexersShouldNotBeMultidimensional"
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA1023: Los indizadores no deben ser multidimensionales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1307: Especificar StringComparison | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "SpecifyStringComparison"
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # CA1307: Especificar StringComparison
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Evaluar instrucci&#243;n (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Evaluar instrucción (comando)"
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Evaluar instrucci&#243;n (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

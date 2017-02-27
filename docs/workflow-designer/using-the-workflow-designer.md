@@ -1,8 +1,7 @@
 ---
 title: "Utilizar el Dise&#241;ador de flujo de trabajo | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Diseñador de flujo de trabajo [WFD], using"
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 13
 ---
 # Utilizar el Dise&#241;ador de flujo de trabajo
 En esta sección se ofrecen detalles sobre cómo crear actividades y proyectos de flujo de trabajo nuevos mediante diseñadores integrados y el editor de expresiones que hospedan algunos de los diseñadores de actividades.  

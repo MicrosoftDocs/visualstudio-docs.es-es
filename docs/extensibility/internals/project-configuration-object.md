@@ -1,8 +1,7 @@
 ---
 title: "Objeto de configuraci&#243;n de proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "objetos de configuración de proyecto"
 ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Objeto de configuraci&#243;n de proyecto
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

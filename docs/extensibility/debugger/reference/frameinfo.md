@@ -1,8 +1,7 @@
 ---
 title: "FRAMEINFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura FRAMEINFO"
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # FRAMEINFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

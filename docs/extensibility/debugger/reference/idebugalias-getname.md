@@ -1,8 +1,7 @@
 ---
 title: "IDebugAlias::GetName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugAlias::GetName (método)"
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

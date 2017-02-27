@@ -1,8 +1,7 @@
 ---
 title: "CA2124: Incluir cl&#225;usulas Finally vulnerables en un bloque Try externo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "WrapVulnerableFinallyClausesInOuterTry"
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA2124: Incluir cl&#225;usulas Finally vulnerables en un bloque Try externo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

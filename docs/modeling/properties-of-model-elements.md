@@ -1,18 +1,17 @@
 ---
 title: "Propiedades de los elementos del modelo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 884d66aa-cb2d-4be0-ae45-8360a01f1c7d
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 6
 ---
 # Propiedades de los elementos del modelo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

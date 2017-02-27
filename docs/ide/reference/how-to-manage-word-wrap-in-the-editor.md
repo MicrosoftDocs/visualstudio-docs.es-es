@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Administrar el ajuste de l&#237;nea en el editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "ajuste de línea"
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # C&#243;mo: Administrar el ajuste de l&#237;nea en el editor
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

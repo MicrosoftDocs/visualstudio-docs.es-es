@@ -1,8 +1,7 @@
 ---
 title: "CA2224: Reemplazar Equals al sobrecargar operadores de igualdad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "OverrideEqualsOnOverloadingOperatorEquals"
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA2224: Reemplazar Equals al sobrecargar operadores de igualdad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Informaci&#243;n general de Visual Studio Tools para Unity | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 4
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
 caps.handback.revision: 4
-ms.author: "crdun"
-manager: "crdun"
 ---
 # Informaci&#243;n general de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

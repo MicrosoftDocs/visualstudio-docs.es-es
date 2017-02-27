@@ -1,8 +1,7 @@
 ---
 title: "Construcciones condicionales de MSBuild | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "When (elemento) [MSBuild]"
 ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Construcciones condicionales de MSBuild
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

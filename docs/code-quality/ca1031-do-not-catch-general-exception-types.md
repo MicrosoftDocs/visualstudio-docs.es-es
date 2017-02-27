@@ -1,8 +1,7 @@
 ---
 title: "CA1031: No capturar los tipos de excepci&#243;n general | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotCatchGeneralExceptionTypes"
 ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA1031: No capturar los tipos de excepci&#243;n general
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

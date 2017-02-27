@@ -1,8 +1,7 @@
 ---
 title: "Automatizaci&#243;n de c&#243;digo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "CodeModel (objeto)"
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Automatizaci&#243;n de c&#243;digo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

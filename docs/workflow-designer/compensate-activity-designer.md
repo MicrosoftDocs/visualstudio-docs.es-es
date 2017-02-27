@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades Compensate | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.Compensate.UI"
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Dise&#241;ador de actividades Compensate
 El diseñador de actividades **Compensate** se utiliza para crear y configurar una actividad <xref:System.Activities.Statements.Compensate>.  

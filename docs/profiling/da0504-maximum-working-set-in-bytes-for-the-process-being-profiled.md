@@ -1,8 +1,7 @@
 ---
 title: "DA0504: Conjunto de trabajo m&#225;ximo en bytes para el proceso que se va a perfilar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.rules.DA0504"
 ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # DA0504: Conjunto de trabajo m&#225;ximo en bytes para el proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

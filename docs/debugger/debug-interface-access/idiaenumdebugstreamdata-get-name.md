@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumDebugStreamData::get_name | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumDebugStreamData::get_Name (método)"
 ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumDebugStreamData::get_name
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

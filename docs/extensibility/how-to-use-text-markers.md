@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: utilizar marcadores de texto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - uso de marcadores de texto"
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # C&#243;mo: utilizar marcadores de texto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

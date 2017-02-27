@@ -1,8 +1,7 @@
 ---
 title: "IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "IDebugSettingsCallback2::GetEEMetricGuid"
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugSettingsCallback2::GetEEMetricGuid
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

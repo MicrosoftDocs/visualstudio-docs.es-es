@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugProcesses2::GetCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugProcesses2::GetCount"
 ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IEnumDebugProcesses2::GetCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

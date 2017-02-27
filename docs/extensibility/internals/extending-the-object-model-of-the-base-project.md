@@ -1,8 +1,7 @@
 ---
 title: "Extender el modelo de objetos del proyecto de Base | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "modelo de objetos de automatización"
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Extender el modelo de objetos del proyecto de Base
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,39 +1,22 @@
 ---
-title: "Agregar referencias usando NuGet en lugar de un SDK de extensión | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.toolsoptionspages.nuget_package_manager.general
-- vs.toolsoptionspages.nuget_package_manager.package_sources
+title: "Agregar referencias usando NuGet en lugar de un SDK de extensi&#243;n | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.toolsoptionspages.nuget_package_manager.general"
+  - "vs.toolsoptionspages.nuget_package_manager.package_sources"
 ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: 21
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f4740d442a7ef24803d6360cdcc480d9d6fca84
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 Puede proporcionar un paquete para el consumo en proyectos de Visual Studio mediante la extensión NuGet para Visual Studio o un kit de desarrollo de software (SDK). Este tema puede ayudarle a elegir el mejor método para su tarea, ya que describe las similitudes y las diferencias entre los dos mecanismos.  

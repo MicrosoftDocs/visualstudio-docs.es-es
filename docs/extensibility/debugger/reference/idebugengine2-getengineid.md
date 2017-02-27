@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::GetEngineID | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::GetEngineID"
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::GetEngineID
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

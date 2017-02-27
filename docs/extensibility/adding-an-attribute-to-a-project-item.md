@@ -1,8 +1,7 @@
 ---
 title: "Agrega un atributo a un elemento de proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "atributos [Visual Studio], agregar a un elemento de proyecto"
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Agrega un atributo a un elemento de proyecto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

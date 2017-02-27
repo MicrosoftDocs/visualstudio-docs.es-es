@@ -1,8 +1,7 @@
 ---
 title: "IDebugParsedExpression::EvaluateSync | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugParsedExpression::EvaluateSync (método)"
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugParsedExpression::EvaluateSync
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

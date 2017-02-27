@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgram2::GetProgramId | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgram2::GetProgramId"
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugProgram2::GetProgramId
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

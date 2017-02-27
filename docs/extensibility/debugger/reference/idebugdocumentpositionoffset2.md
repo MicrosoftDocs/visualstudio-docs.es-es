@@ -1,8 +1,7 @@
 ---
 title: "IDebugDocumentPositionOffset2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugDocumentPositionOffset2"
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugDocumentPositionOffset2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

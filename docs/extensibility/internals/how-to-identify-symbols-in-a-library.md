@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: identificar s&#237;mbolos en una biblioteca | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Herramienta de explorador de llamadas"
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # C&#243;mo: identificar s&#237;mbolos en una biblioteca
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

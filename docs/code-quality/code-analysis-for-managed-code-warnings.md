@@ -1,8 +1,7 @@
 ---
 title: "An&#225;lisis de c&#243;digo de las advertencias de c&#243;digo administrado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "advertencias, análisis de código administrado"
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # An&#225;lisis de c&#243;digo de las advertencias de c&#243;digo administrado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

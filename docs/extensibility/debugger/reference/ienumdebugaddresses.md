@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugAddresses | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IEnumDebugAddresses"
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IEnumDebugAddresses
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

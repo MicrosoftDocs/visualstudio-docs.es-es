@@ -1,17 +1,18 @@
 ---
 title: "Visual Studio Tools para Apache Cordova | Microsoft Docs"
+redirect_url: http://taco.visualstudio.com
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 21dcf46e-5d6d-439c-90e3-3d678e50c5a6
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Visual Studio Tools para Apache Cordova
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

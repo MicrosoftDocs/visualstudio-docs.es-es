@@ -1,8 +1,7 @@
 ---
 title: "Crear una extensi&#243;n con una ventana de herramientas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Crear una extensi&#243;n con una ventana de herramientas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

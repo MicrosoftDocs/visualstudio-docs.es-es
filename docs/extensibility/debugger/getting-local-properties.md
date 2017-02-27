@@ -1,8 +1,7 @@
 ---
 title: "Obtener las propiedades locales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "evaluación de expresiones de propiedades local"
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Obtener las propiedades locales
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

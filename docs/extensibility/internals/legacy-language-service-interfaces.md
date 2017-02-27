@@ -1,8 +1,7 @@
 ---
 title: "Interfaces de servicio de lenguaje heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Servicios de lenguaje, objetos"
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 24
-caps.handback.revision: 24
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Interfaces de servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

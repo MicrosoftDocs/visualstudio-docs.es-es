@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCustomAttributeQuery2::GetCustomAttributeByName"
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCustomAttributeQuery2::GetCustomAttributeByName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

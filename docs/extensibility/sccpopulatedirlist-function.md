@@ -1,8 +1,7 @@
 ---
 title: "SccPopulateDirList (funci&#243;n) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccPopulateDirList (función)"
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # SccPopulateDirList (funci&#243;n)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

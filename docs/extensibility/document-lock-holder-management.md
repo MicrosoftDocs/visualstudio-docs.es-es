@@ -1,8 +1,7 @@
 ---
 title: "Administraci&#243;n de propietario de bloqueo de documento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] personalizados - bloqueo de documentos"
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Administraci&#243;n de propietario de bloqueo de documento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

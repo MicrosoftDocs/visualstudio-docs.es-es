@@ -1,8 +1,7 @@
 ---
 title: "marker_series::write_flag (M&#233;todo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Concurrency::diagnostic::marker_series::write_flag (método)"
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # marker_series::write_flag (M&#233;todo)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

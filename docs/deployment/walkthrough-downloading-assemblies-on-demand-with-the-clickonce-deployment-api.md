@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Descargar ensamblados a petici&#243;n con la API de implementaci&#243;n de ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "ensamblados a petición, ClickOnce"
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # Tutorial: Descargar ensamblados a petici&#243;n con la API de implementaci&#243;n de ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

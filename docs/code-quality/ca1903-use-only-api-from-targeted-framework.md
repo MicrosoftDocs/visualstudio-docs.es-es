@@ -1,8 +1,7 @@
 ---
 title: "CA1903: Usar solo API de la versi&#243;n de .NET Framework de destino | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "UseOnlyApiFromTargetedFramework"
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # CA1903: Usar solo API de la versi&#243;n de .NET Framework de destino
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Ejemplo de implementaci&#243;n de evaluaci&#243;n de expresiones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, ejemplos"
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Ejemplo de implementaci&#243;n de evaluaci&#243;n de expresiones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

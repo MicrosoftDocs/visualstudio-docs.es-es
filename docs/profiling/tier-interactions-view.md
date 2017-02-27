@@ -1,8 +1,7 @@
 ---
 title: "Interacciones de capas (Vista) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Interacciones de capas (vista)"
 ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Interacciones de capas (Vista)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugInterceptExceptionCompleteEvent2"
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugInterceptExceptionCompleteEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

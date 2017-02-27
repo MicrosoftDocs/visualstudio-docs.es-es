@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngineProgram2::WatchForThreadStep"
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

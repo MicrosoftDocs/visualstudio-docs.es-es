@@ -1,8 +1,7 @@
 ---
 title: "IDebugComPlusSymbolProvider::UnloadSymbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugComPlusSymbolProvider::UnloadSymbols"
 ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugComPlusSymbolProvider::UnloadSymbols
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

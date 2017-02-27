@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Agregar caracter&#237;sticas a un Editor personalizado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] personalizados - agregan características"
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 38
-caps.handback.revision: 38
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 38
 ---
 # Tutorial: Agregar caracter&#237;sticas a un Editor personalizado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Interfaz de usuario personalizada (VSPackage del Control de c&#243;digo fuente) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "paquetes de control de código fuente, interfaz de usuario"
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 28
-caps.handback.revision: 28
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Interfaz de usuario personalizada (VSPackage del Control de c&#243;digo fuente)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

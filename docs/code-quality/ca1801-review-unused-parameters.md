@@ -1,8 +1,7 @@
 ---
 title: "CA1801: Revisar par&#225;metros sin utilizar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "ReviewUnusedParameters"
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 30
 ---
 # CA1801: Revisar par&#225;metros sin utilizar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

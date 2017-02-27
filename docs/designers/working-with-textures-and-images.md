@@ -1,8 +1,7 @@
 ---
 title: "Trabajar con texturas e im&#225;genes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Trabajar con texturas e im&#225;genes
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

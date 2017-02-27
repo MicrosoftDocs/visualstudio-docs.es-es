@@ -1,8 +1,7 @@
 ---
 title: "LAUNCH_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración LAUNCH_FLAGS"
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

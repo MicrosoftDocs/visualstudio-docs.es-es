@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar d&#243;nde Visual Studio copia los archivos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "publicar, especificar ubicación"
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # C&#243;mo: Especificar d&#243;nde Visual Studio copia los archivos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

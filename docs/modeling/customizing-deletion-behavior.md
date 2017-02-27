@@ -1,8 +1,7 @@
 ---
 title: "Personalizar el comportamiento de eliminaci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Lenguaje específico de dominio, eliminación"
 ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 23
 ---
 # Personalizar el comportamiento de eliminaci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

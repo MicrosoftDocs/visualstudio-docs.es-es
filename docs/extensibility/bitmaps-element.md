@@ -1,8 +1,7 @@
 ---
 title: "Elemento de mapas de bits | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Elemento de mapas de bits (esquema VSCT XML)"
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Elemento de mapas de bits
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

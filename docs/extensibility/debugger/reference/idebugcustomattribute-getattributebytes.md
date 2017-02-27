@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCustomAttribute::GetAttributeBytes"
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCustomAttribute::GetAttributeBytes
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

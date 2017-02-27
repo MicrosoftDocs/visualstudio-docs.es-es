@@ -1,8 +1,7 @@
 ---
 title: "IDebugCoreServer3::EnableAutoAttach | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCoreServer3::EnableAutoAttach"
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCoreServer3::EnableAutoAttach
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

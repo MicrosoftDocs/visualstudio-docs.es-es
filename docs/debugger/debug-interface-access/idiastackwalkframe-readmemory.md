@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkFrame::readMemory | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkFrame::readMemory (método)"
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDiaStackWalkFrame::readMemory
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

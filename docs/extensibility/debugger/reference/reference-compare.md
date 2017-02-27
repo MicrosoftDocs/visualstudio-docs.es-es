@@ -1,8 +1,7 @@
 ---
 title: "REFERENCE_COMPARE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración REFERENCE_COMPARE"
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

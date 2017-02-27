@@ -1,8 +1,7 @@
 ---
 title: "Ventana Explorador de rendimiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, Explorador de rendimiento"
 ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Ventana Explorador de rendimiento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Advertencia: Depuraci&#243;n de script deshabilitada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ dev_langs:
   - "C++"
 ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Advertencia: Depuraci&#243;n de script deshabilitada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

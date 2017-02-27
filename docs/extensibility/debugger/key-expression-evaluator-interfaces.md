@@ -1,8 +1,7 @@
 ---
 title: "Interfaces de evaluador de expresi&#243;n de clave | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, interfaces"
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Interfaces de evaluador de expresi&#243;n de clave
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

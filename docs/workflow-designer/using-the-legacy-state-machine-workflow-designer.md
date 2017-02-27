@@ -1,8 +1,7 @@
 ---
 title: "Usar el dise&#241;ador de flujo de trabajo de m&#225;quina de estados heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Actividad StateInitializationActivity"
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Usar el dise&#241;ador de flujo de trabajo de m&#225;quina de estados heredado
 Cuando crea un nuevo proyecto de flujo de trabajo de máquina de estados en [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], puede optar por usar las plantillas de proyecto **Aplicación de consola de flujos de trabajo de equipo de estado** o **Biblioteca de flujos de trabajo de equipo de estado** heredadas.Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada.Para obtener información sobre las plantillas de proyecto de máquina de estados heredadas, vea [Cómo: Crear aplicaciones de consola de flujos de trabajo de equipo de estado \(Heredado\)](../Topic/How%20to:%20Create%20State%20Machine%20Workflow%20Console%20Applications%20\(Legacy\).md) y [Cómo: Crear un biblioteca de flujos de trabajo de equipo de estado \(Heredado\)](../Topic/How%20to:%20Create%20a%20State%20Machine%20Workflow%20Library%20\(Legacy\).md).  

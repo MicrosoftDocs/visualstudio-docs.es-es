@@ -1,8 +1,7 @@
 ---
 title: "Pesta&#241;as y ventanas, Entorno, Opciones (Cuadro de di&#225;logo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "VS.ToolsOptionsPages.Environment.TabsAndWindows"
 ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Pesta&#241;as y ventanas, Entorno, Opciones (Cuadro de di&#225;logo)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

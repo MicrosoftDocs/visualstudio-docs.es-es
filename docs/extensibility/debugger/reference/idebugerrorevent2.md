@@ -1,8 +1,7 @@
 ---
 title: "IDebugErrorEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugErrorEvent2"
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugErrorEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1809: Evitar el exceso de variables locales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1809"
 ms.assetid: 5c81ea43-cb49-448f-980f-a1dd9764043c
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA1809: Evitar el exceso de variables locales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

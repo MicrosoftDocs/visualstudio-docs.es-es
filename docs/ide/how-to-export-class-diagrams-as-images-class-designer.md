@@ -1,8 +1,7 @@
 ---
 title: "How to: Export Class Diagrams As Images (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "class diagrams, exporting as images"
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # How to: Export Class Diagrams As Images (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

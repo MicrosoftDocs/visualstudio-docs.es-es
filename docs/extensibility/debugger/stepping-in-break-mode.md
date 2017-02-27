@@ -1,8 +1,7 @@
 ---
 title: "Ejecuci&#243;n paso a paso en modo de interrupci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], la ejecución paso a paso en modo de interrupción"
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Ejecuci&#243;n paso a paso en modo de interrupci&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

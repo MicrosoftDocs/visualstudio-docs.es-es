@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPortSuppliers2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPortSuppliers2"
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IEnumDebugPortSuppliers2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

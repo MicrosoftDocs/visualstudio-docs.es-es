@@ -1,8 +1,7 @@
 ---
 title: "Instrucciones de selecci&#243;n de ubicaci&#243;n de comando | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "conjuntos de comandos"
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 caps.latest.revision: 28
-caps.handback.revision: 28
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Instrucciones de selecci&#243;n de ubicaci&#243;n de comando
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

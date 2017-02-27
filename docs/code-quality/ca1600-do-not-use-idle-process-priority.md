@@ -1,8 +1,7 @@
 ---
 title: "CA1600: No utilizar la prioridad del proceso inactiva | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotUseIdleProcessPriority"
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1600: No utilizar la prioridad del proceso inactiva
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ar advertencias | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "advertencias, diseño"
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 25
 ---
 # Dise&#241;ar advertencias
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_baseDataOffset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_baseDataOffset
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

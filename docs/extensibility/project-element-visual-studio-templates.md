@@ -1,8 +1,7 @@
 ---
 title: "Project (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Project (elemento) [plantillas de Visual Studio]"
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Project (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "ASSEMBLYLOCRESOLUTION | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración ASSEMBLYLOCRESOLUTION"
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: "CA3076: Ejecuci&#243;n del script XSLT no segura | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 5
 ---
 # CA3076: Ejecuci&#243;n del script XSLT no segura
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

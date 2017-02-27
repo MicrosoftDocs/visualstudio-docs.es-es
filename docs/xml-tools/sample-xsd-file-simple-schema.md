@@ -1,8 +1,7 @@
 ---
 title: "Ejemplo de archivo XSD: esquema simple | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Ejemplo de archivo XSD: esquema simple
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

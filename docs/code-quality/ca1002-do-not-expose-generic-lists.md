@@ -1,8 +1,7 @@
 ---
 title: "CA1002: No exponer listas gen&#233;ricas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotExposeGenericLists"
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA1002: No exponer listas gen&#233;ricas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

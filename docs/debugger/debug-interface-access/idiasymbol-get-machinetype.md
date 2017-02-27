@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_machineType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_machineType (método)"
 ms.assetid: 30870b10-6f32-45c6-a0d7-020dea707710
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_machineType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

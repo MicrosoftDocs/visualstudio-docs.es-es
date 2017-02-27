@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty3::CreateObjectID | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty3::CreateObjectID"
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

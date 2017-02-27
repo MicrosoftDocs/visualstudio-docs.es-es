@@ -1,8 +1,7 @@
 ---
 title: "Adaptar el c&#243;digo heredado en el Editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - adaptadores"
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Adaptar el c&#243;digo heredado en el Editor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

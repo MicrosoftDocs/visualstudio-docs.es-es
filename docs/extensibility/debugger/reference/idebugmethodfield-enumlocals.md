@@ -1,8 +1,7 @@
 ---
 title: "IDebugMethodField::EnumLocals | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugMethodField::EnumLocals (método)"
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugMethodField::EnumLocals
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

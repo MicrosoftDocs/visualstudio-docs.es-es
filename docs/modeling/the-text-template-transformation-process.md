@@ -1,8 +1,7 @@
 ---
 title: "The Text Template Transformation Process | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "text templates, transformation process"
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 30
 ---
 # The Text Template Transformation Process
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

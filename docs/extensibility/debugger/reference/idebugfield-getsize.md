@@ -1,8 +1,7 @@
 ---
 title: "IDebugField::GetSize | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugField::GetSize (método)"
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugField::GetSize
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

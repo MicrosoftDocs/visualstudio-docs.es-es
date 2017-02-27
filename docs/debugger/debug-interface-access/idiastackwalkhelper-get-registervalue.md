@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::get_registerValue | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper2::get_registerValue (método)"
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaStackWalkHelper::get_registerValue
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

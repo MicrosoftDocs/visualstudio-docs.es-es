@@ -1,8 +1,7 @@
 ---
 title: "Interfaz de muestra del Communicator de Excel | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/09/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 11
 ---
 # Interfaz de muestra del Communicator de Excel
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

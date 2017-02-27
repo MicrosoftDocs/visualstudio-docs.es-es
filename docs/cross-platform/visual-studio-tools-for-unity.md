@@ -1,8 +1,7 @@
 ---
 title: "Visual Studio Tools para Unity | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 4
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
 caps.handback.revision: 4
-ms.author: "crdun"
-manager: "crdun"
 ---
 # Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1007: Utilizar valores gen&#233;ricos cuando sea posible | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "UseGenericsWhereAppropriate"
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA1007: Utilizar valores gen&#233;ricos cuando sea posible
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

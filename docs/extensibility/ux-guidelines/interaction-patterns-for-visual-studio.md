@@ -1,8 +1,7 @@
 ---
 title: "Patrones de interacci&#243;n para Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Patrones de interacci&#243;n para Visual Studio
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

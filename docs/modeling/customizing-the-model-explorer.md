@@ -1,8 +1,7 @@
 ---
 title: "Personalizar el Explorador de modelos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Herramientas de lenguajes específicos de dominio, Explorador de lenguajes específicos de dominio"
 ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 20
 ---
 # Personalizar el Explorador de modelos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

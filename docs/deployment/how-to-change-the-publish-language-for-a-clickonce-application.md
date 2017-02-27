@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Cambiar el idioma de publicaci&#243;n de una aplicaci&#243;n ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "publicar, ClickOnce"
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # C&#243;mo: Cambiar el idioma de publicaci&#243;n de una aplicaci&#243;n ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

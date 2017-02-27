@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::get_loadAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::get_loadAddress (método)"
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSession::get_loadAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgram2::GetDisassemblyStream | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgram2::GetDisassemblyStream"
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugProgram2::GetDisassemblyStream
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,18 +1,17 @@
 ---
 title: "Integrar modelos utilizando Modelbus de Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2ff722f3-21d6-44e2-9efd-f6694aee9987
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 26
 ---
 # Integrar modelos utilizando Modelbus de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

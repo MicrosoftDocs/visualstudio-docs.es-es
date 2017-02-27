@@ -1,8 +1,7 @@
 ---
 title: "Cuadros de di&#225;logo Agregar par&#225;metros y Agregar argumentos | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/02/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,9 +10,9 @@ f1_keywords:
   - "AddParameters.UI"
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Cuadros de di&#225;logo Agregar par&#225;metros y Agregar argumentos
 En la tabla siguiente se describen los elementos de la interfaz de usuario del cuadro de diálogo **Agregar parámetros** que usa el diseñador de <xref:System.Activities.Statements.InvokeMethod>.  

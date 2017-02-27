@@ -1,8 +1,7 @@
 ---
 title: "Jerarqu&#237;a l&#233;xica de tipos de s&#237;mbolos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "símbolos [SDK de DIA], jerarquías de tipo"
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Jerarqu&#237;a l&#233;xica de tipos de s&#237;mbolos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

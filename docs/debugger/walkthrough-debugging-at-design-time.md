@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Depurar en tiempo de dise&#241;o | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Inmediato (ventana), depuración en tiempo de diseño"
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Tutorial: Depurar en tiempo de dise&#241;o
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

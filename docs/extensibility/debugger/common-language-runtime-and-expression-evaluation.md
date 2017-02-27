@@ -1,8 +1,7 @@
 ---
 title: "Common Language Runtime y la evaluaci&#243;n de expresiones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluación de expresiones y common language runtime"
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Common Language Runtime y la evaluaci&#243;n de expresiones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

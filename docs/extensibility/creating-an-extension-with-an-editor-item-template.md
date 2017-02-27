@@ -1,8 +1,7 @@
 ---
 title: "Crear una extensi&#243;n con una plantilla de elemento de Editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] nuevos - extensiones"
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Crear una extensi&#243;n con una plantilla de elemento de Editor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

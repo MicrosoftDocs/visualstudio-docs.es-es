@@ -1,8 +1,7 @@
 ---
 title: "CA2141: Los m&#233;todos transparentes no deben satisfacer LinkDemands | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "CA2141"
 ms.assetid: 2957f5f7-c511-4180-ba80-752034f10a77
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA2141: Los m&#233;todos transparentes no deben satisfacer LinkDemands
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

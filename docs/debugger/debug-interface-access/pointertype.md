@@ -1,8 +1,7 @@
 ---
 title: "PointerType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "PointerType (símbolo)"
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # PointerType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaAddressMap::set_addressMap | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaAddressMap::set_addressMap (método)"
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaAddressMap::set_addressMap
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1821: Quitar los finalizadores vac&#237;os | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "CA1821"
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA1821: Quitar los finalizadores vac&#237;os
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Modelo de paquetes de Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "control [Visual Studio SDK], modelo de origen"
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Modelo de paquetes de Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalker::getEnumFrames2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalker2::getEnumFrames2 (método)"
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDiaStackWalker::getEnumFrames2
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugCustomAttributes::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugCustomAttributes::Reset"
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IEnumDebugCustomAttributes::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

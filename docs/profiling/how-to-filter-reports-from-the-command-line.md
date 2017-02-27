@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Filtrar informes desde la l&#237;nea de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # C&#243;mo: Filtrar informes desde la l&#237;nea de comandos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

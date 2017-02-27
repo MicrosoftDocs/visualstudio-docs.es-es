@@ -1,8 +1,7 @@
 ---
 title: "CONTEXT_INFO | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura CONTEXT_INFO"
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

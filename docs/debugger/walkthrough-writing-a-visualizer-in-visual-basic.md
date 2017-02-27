@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Escribir un visualizador en Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "tutoriales [Visual Studio], visualizadores"
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Tutorial: Escribir un visualizador en Visual Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

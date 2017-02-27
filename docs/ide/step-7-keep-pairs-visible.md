@@ -1,8 +1,7 @@
 ---
 title: "Paso 7: Mantener visibles los pares | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Paso 7: Mantener visibles los pares
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

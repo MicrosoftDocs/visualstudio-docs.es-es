@@ -1,8 +1,7 @@
 ---
 title: "IDebugGenericFieldDefinition | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugGenericFieldDefinition"
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

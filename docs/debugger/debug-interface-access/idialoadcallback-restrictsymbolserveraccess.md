@@ -1,8 +1,7 @@
 ---
 title: "IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLoadCallback::RestrictSymbolServerAccess (método)"
 ms.assetid: db37ad9f-f75e-4f0c-83bf-21a6e66ba859
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLoadCallback::RestrictSymbolServerAccess
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

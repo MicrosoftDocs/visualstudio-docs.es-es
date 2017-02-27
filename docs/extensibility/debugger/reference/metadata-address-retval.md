@@ -1,8 +1,7 @@
 ---
 title: "METADATA_ADDRESS_RETVAL | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura METADATA_ADDRESS_RETVAL"
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

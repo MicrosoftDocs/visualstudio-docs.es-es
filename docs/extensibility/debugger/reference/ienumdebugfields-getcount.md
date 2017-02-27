@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugFields::GetCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugFields::GetCount (método)"
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IEnumDebugFields::GetCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "RemoveDir (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "RemoveDir (tarea) [MSBuild]"
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # RemoveDir (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

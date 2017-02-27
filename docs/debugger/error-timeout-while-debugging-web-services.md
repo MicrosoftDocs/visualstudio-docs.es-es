@@ -1,8 +1,7 @@
 ---
 title: "Error: Se excedi&#243; el tiempo de espera de depuraci&#243;n de servicios Web | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "servicios Web XML, tiempo de espera agotado durante la depuración"
 ms.assetid: 4b7df112-788a-4429-9a0c-4c6dac4fb609
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Error: Se excedi&#243; el tiempo de espera de depuraci&#243;n de servicios Web
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

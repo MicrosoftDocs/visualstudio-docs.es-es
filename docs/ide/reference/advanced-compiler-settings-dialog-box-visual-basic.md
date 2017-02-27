@@ -1,8 +1,7 @@
 ---
 title: "Configuraci&#243;n de compilador avanzada (Cuadro de di&#225;logo, Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Cuadro de diálogo Configuración de compilador avanzada"
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 caps.latest.revision: 46
-caps.handback.revision: 46
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 46
 ---
 # Configuraci&#243;n de compilador avanzada (Cuadro de di&#225;logo, Visual Basic)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

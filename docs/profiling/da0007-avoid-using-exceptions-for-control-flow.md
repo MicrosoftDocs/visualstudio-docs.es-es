@@ -1,8 +1,7 @@
 ---
 title: "DA0007: Evite utilizar excepciones para el flujo de control | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ f1_keywords:
   - "vs.performance.DA0007"
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # DA0007: Evite utilizar excepciones para el flujo de control
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

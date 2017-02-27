@@ -1,8 +1,7 @@
 ---
 title: "Ejecutar aplicaciones de la Tienda desde Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "C++"
 ms.assetid: 98358355-e5e6-47e9-a4b6-cd559208e43c
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Ejecutar aplicaciones de la Tienda desde Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::symsAreEquiv | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::symsAreEquiv (método)"
 ms.assetid: 9941d520-e203-46c0-83c3-b3a967f4fc59
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSession::symsAreEquiv
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "JMC_CODE_SPEC | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura JMC_CODE_SPEC"
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

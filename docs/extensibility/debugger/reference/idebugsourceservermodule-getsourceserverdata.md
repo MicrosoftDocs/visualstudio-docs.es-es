@@ -1,8 +1,7 @@
 ---
 title: "IDebugSourceServerModule::GetSourceServerData | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "IDebugSourceServerModule::GetSourceServerData"
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugSourceServerModule::GetSourceServerData
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

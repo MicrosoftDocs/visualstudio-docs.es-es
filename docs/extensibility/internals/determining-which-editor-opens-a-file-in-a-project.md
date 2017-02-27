@@ -1,8 +1,7 @@
 ---
 title: "Determinar qu&#233; Editor se abre un archivo en un proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "persistencia, determinar qué editor abre un archivo"
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Determinar qu&#233; Editor se abre un archivo en un proyecto
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

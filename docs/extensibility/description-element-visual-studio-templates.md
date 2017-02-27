@@ -1,8 +1,7 @@
 ---
 title: "Description (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Description (elemento) [plantillas de proyecto de Visual Studio]"
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Description (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

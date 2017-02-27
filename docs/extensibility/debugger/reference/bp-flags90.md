@@ -1,8 +1,7 @@
 ---
 title: "BP_FLAGS90 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "BP_FLAGS90 (enumeración)"
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # BP_FLAGS90
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1053: Los tipos titulares est&#225;ticos no deben tener constructores | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "StaticHolderTypesShouldNotHaveConstructors"
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1053: Los tipos titulares est&#225;ticos no deben tener constructores
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

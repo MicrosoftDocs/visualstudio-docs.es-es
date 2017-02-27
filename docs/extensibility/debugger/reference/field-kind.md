@@ -1,8 +1,7 @@
 ---
 title: "FIELD_KIND | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración FIELD_KIND"
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # FIELD_KIND
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

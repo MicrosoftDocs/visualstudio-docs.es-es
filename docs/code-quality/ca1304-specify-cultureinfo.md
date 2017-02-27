@@ -1,8 +1,7 @@
 ---
 title: "CA1304: Especificar CultureInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1304"
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA1304: Especificar CultureInfo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

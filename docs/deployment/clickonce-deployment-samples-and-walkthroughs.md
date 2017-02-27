@@ -1,8 +1,7 @@
 ---
 title: "Ejemplos y tutoriales de implementaci&#243;n de ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Visual Studio, tutoriales"
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 6
 ---
 # Ejemplos y tutoriales de implementaci&#243;n de ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

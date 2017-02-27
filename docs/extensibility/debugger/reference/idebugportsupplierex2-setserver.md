@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplierEx2::SetServer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "IDebugPortSupplierEx2::SetServer"
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # IDebugPortSupplierEx2::SetServer
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

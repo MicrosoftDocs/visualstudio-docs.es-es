@@ -1,8 +1,7 @@
 ---
 title: "CustomParameter (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "CustomParameters (elemento) [plantillas de proyecto de Visual Studio]"
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # CustomParameter (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

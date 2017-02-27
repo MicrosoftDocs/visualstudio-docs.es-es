@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCustomAttributeQuery2::EnumCustomAttributes"
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCustomAttributeQuery2::EnumCustomAttributes
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

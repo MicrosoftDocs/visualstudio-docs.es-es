@@ -1,8 +1,7 @@
 ---
 title: "DOCCONTEXT_COMPARE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración DOCCONTEXT_COMPARE"
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # DOCCONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

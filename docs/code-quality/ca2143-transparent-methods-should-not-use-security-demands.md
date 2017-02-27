@@ -1,8 +1,7 @@
 ---
 title: "CA2143: Los m&#233;todos transparentes no deben usar peticiones de seguridad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "CA2143"
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # CA2143: Los m&#233;todos transparentes no deben usar peticiones de seguridad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

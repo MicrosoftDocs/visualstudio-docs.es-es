@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_compilerGenerated | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_compilerGenerated (método)"
 ms.assetid: 864d9249-f0c8-4a34-b391-eb785f7e8865
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Designing and Viewing Classes and Types | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "class designer"
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Designing and Viewing Classes and Types
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

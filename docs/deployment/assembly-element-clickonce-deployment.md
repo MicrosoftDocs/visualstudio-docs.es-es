@@ -1,8 +1,7 @@
 ---
 title: "&lt;assembly&gt; (Elemento) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "<assembly> (elemento) [manifiesto de implementación ClickOnce]"
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # &lt;assembly&gt; (Elemento)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

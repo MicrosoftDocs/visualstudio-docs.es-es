@@ -1,8 +1,7 @@
 ---
 title: "Introducci&#243;n a los m&#233;todos de generaci&#243;n de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Herramientas de generación de perfiles, métodos de generación de perfiles"
 ms.assetid: ea4881fd-bd04-4875-9b7b-28490d6706f9
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Introducci&#243;n a los m&#233;todos de generaci&#243;n de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

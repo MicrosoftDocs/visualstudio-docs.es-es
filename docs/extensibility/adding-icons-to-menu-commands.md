@@ -1,8 +1,7 @@
 ---
 title: "Agregar iconos a los comandos de men&#250; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Agregar iconos de comandos [Visual Studio]"
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Agregar iconos a los comandos de men&#250;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "How to: Customize Class Diagrams (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "class diagrams, removing type shapes"
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 caps.latest.revision: 29
-caps.handback.revision: 29
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # How to: Customize Class Diagrams (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

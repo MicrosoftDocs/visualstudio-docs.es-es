@@ -1,8 +1,7 @@
 ---
 title: "Implementar y registrar un proveedor de puerto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "proveedores de puertos, registrar"
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Implementar y registrar un proveedor de puerto
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

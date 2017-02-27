@@ -1,8 +1,7 @@
 ---
 title: "Walkthrough: Creating a Custom Text Template Host | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "text templates, custom host walkthrough"
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 51
-caps.handback.revision: 51
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 51
 ---
 # Walkthrough: Creating a Custom Text Template Host
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

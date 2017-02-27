@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un informe de seguimiento de llamadas de las Herramientas de generaci&#243;n de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, ver datos ETW"
 ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # C&#243;mo: Crear un informe de seguimiento de llamadas de las Herramientas de generaci&#243;n de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

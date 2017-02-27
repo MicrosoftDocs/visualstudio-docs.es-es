@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Mostrar informaci&#243;n sobre herramientas de QuickInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] nuevos - información rápida"
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 27
-caps.handback.revision: 27
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Tutorial: Mostrar informaci&#243;n sobre herramientas de QuickInfo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

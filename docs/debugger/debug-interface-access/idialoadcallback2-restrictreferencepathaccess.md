@@ -1,8 +1,7 @@
 ---
 title: "IDiaLoadCallback2::RestrictReferencePathAccess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLoadCallback2::RestrictReferencePathAccess (método)"
 ms.assetid: e20cb45c-0360-4ff0-a92c-b1b6f76d6e85
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaLoadCallback2::RestrictReferencePathAccess
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

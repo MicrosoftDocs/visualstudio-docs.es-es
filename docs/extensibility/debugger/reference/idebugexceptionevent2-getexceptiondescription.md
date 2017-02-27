@@ -1,8 +1,7 @@
 ---
 title: "IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugExceptionEvent2::GetExceptionDescription"
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugExceptionEvent2::GetExceptionDescription
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

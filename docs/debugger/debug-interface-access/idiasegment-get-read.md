@@ -1,8 +1,7 @@
 ---
 title: "IDiaSegment::get_read | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSegment::get_read (método)"
 ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSegment::get_read
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

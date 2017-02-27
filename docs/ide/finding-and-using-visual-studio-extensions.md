@@ -1,43 +1,25 @@
 ---
-title: Buscar y usar extensiones de Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.ExtensionManager
-helpviewer_keywords:
-- install extensions
-- install packages
-- managing extensions visual studio
+title: "Buscar y usar extensiones de Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.ExtensionManager"
+helpviewer_keywords: 
+  - "instalar las extensiones"
+  - "instalar paquetes"
+  - "administrar las extensiones de Visual Studio"
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 42
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 55c2e1936b0c2f117b1bda1fb0c92c0dd5659a07
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 40
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro de Visual Studio y que ofrecen características nuevas o mejoradas de Visual Studio. Encontrará más información sobre las extensiones de Visual Studio aquí: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  

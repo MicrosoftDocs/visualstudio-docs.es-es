@@ -1,18 +1,17 @@
 ---
 title: "Varios DSL en una soluci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 3
 ---
 # Varios DSL en una soluci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

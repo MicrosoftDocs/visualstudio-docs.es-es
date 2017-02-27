@@ -1,8 +1,7 @@
 ---
 title: "Funciones de elementos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "msbuild, funciones de elementos"
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Funciones de elementos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

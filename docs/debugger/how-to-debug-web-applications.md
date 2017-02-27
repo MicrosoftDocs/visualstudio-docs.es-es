@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Depurar aplicaciones web | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "servicios Web, depurar"
 ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 37
-caps.handback.revision: 37
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 37
 ---
 # C&#243;mo: Depurar aplicaciones web
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar un v&#237;nculo para soporte t&#233;cnico | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "sitios web, crear soporte para ClickOnce"
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # C&#243;mo: Especificar un v&#237;nculo para soporte t&#233;cnico
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

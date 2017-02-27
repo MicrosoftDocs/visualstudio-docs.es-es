@@ -1,8 +1,7 @@
 ---
 title: "m_stateFlags campo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "campo m_stateFlags, clase de tarea [motores de depuración de .NET Framework]"
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # m_stateFlags campo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

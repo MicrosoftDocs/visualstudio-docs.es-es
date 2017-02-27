@@ -1,8 +1,7 @@
 ---
 title: "IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "SetIDebugIDECallback"
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugExpressionEvaluator2::SetIDebugIDECallback
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

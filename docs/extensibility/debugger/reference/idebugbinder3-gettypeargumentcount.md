@@ -1,8 +1,7 @@
 ---
 title: "IDebugBinder3::GetTypeArgumentCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugBinder3::GetTypeArgumentCount (método)"
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugBinder3::GetTypeArgumentCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

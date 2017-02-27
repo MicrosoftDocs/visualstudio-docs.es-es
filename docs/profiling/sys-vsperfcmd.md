@@ -1,8 +1,7 @@
 ---
 title: "Sys (VSPerfCmd) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Sys (VSPerfCmd)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

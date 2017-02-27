@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Comparar archivos de datos del generador de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "herramientas de generación de perfiles, cómo comparar archivos de resultados del generador de perfiles"
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # C&#243;mo: Comparar archivos de datos del generador de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

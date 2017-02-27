@@ -1,8 +1,7 @@
 ---
 title: "marker_series (Clase) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Concurrency::diagnostic::marker_series (clase)"
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # marker_series (Clase)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

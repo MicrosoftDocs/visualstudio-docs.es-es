@@ -1,8 +1,7 @@
 ---
 title: "Generar perfiles y seguridad en Windows Vista | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/09/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Herramientas de rendimiento, seguridad"
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Generar perfiles y seguridad en Windows Vista
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugDocumentText2::GetText | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugDocumentText2::GetText"
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugDocumentText2::GetText
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

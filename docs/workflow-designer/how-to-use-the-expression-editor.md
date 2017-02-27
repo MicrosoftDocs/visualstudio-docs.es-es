@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Utilizar el Editor de expresiones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Presentation.View.ExpressionTextBox.UI"
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 13
 ---
 # C&#243;mo: Utilizar el Editor de expresiones
 El Editor de expresiones es un control de [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] que se utiliza en muchas actividades de flujo de trabajo como un medio para especificar y evaluar estas expresiones.  El Editor de expresiones proporciona una experiencia de edición IDE completa, que incluye IntelliSense, el uso de distintos colores, ParamInfo y subrayados ondulados de errores, entre otras características.  El compilador valida la expresión una vez se ha escrito.  Si la expresión no es válida, se muestra un icono de error.  El editor también se puede abrir como cuadro de diálogo **Editor de expresiones**.  

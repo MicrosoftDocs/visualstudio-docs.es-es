@@ -1,8 +1,7 @@
 ---
 title: "Agregar una mayor&#237;a recientemente usados para un submen&#250; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "usados más recientemente"
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 46
-caps.handback.revision: 46
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 46
 ---
 # Agregar una mayor&#237;a recientemente usados para un submen&#250;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

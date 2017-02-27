@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugAddresses::Skip | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugAddresses::Skip (método)"
 ms.assetid: ed9a8e71-30ef-414b-9da5-c9a2a251b84e
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IEnumDebugAddresses::Skip
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "RequiresFramework35SP1Assembly (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "RequiresFramework35SP1Assembly (tarea) [MSBuild]"
 ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # RequiresFramework35SP1Assembly (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

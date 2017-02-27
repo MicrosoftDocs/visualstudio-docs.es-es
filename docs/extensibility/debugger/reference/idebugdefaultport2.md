@@ -1,8 +1,7 @@
 ---
 title: "IDebugDefaultPort2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugDefaultPort2"
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugDefaultPort2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

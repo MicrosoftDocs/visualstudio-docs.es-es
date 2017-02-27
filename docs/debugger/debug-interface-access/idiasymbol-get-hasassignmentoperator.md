@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_hasAssignmentOperator | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hasAssignmentOperator (método)"
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_hasAssignmentOperator
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

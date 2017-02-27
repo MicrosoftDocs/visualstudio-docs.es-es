@@ -1,8 +1,7 @@
 ---
 title: "IDebugSymbolProvider::GetContainerField | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugSymbolProvider::GetContainerField (método)"
 ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugSymbolProvider::GetContainerField
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "AssignTargetPath (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "jsharp"
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # AssignTargetPath (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

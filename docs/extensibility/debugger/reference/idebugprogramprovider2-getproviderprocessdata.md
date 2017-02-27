@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgramProvider2::GetProviderProcessData"
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugProgramProvider2::GetProviderProcessData
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

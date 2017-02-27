@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_numberOfColumns | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 64834351-e2c9-4f1c-9dc0-2abb5478bc63
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_numberOfColumns
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

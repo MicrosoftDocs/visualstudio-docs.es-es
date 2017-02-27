@@ -1,8 +1,7 @@
 ---
 title: "Conjunto de reglas Reglas de correcci&#243;n b&#225;sicas para c&#243;digo administrado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # Conjunto de reglas Reglas de correcci&#243;n b&#225;sicas para c&#243;digo administrado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

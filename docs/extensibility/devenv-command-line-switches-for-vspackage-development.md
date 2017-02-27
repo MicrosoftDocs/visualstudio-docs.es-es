@@ -1,8 +1,7 @@
 ---
 title: "Modificadores de l&#237;nea de comandos devenv para el desarrollo de VSPackage | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,9 +19,9 @@ helpviewer_keywords:
   - "SDK de Visual Studio, los modificadores de línea de comandos"
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Modificadores de l&#237;nea de comandos devenv para el desarrollo de VSPackage
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

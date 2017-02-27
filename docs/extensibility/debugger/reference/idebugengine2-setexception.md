@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::SetException | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::SetException"
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngine2::SetException
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

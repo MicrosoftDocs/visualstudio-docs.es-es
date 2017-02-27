@@ -1,8 +1,7 @@
 ---
 title: "IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCoreServer3::CreateInstanceInServer"
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugCoreServer3::CreateInstanceInServer
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

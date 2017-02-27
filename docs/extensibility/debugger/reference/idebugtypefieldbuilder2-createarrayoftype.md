@@ -1,8 +1,7 @@
 ---
 title: "IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "CreateArrayOfType"
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugTypeFieldBuilder2::CreateArrayOfType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

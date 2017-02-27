@@ -1,8 +1,7 @@
 ---
 title: "Mostrar memoria (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListMemory (comando)"
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Mostrar memoria (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

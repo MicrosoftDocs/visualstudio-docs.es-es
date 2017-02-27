@@ -1,8 +1,7 @@
 ---
 title: "BP_ERROR_TYPE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración BP_ERROR_TYPE"
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # BP_ERROR_TYPE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

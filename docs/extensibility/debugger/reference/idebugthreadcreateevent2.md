@@ -1,8 +1,7 @@
 ---
 title: "IDebugThreadCreateEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugThreadCreateEvent2"
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugThreadCreateEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

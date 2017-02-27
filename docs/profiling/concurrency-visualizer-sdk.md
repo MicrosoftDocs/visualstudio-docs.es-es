@@ -1,8 +1,7 @@
 ---
 title: "SDK del Visualizador de simultaneidad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "vs.cv.sdk.about"
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # SDK del Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

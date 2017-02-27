@@ -1,8 +1,7 @@
 ---
 title: "Proyecto de archivos varios | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "archivos, abrir con el proyecto de archivos varios"
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Proyecto de archivos varios
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugExpressionEvaluator::GetMethodLocationProperty (método)"
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

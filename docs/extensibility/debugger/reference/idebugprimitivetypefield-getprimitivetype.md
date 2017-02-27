@@ -1,8 +1,7 @@
 ---
 title: "IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugPrimitiveTypeField::GetPrimitiveType"
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugPrimitiveTypeField::GetPrimitiveType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

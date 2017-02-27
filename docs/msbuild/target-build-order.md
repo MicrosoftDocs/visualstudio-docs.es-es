@@ -1,8 +1,7 @@
 ---
 title: "Orden de compilaci&#243;n de destinos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "msbuild, orden de compilación"
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Orden de compilaci&#243;n de destinos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

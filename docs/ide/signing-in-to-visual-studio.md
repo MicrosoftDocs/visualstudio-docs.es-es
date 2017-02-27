@@ -1,37 +1,19 @@
 ---
-title: "Iniciar sesión en Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 01/23/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Iniciar sesi&#243;n en Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/23/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 30
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
-ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 28
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio estableciendo la cuenta de personalización e iniciando sesión en el IDE.  

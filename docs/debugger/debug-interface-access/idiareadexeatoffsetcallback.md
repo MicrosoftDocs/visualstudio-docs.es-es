@@ -1,8 +1,7 @@
 ---
 title: "IDiaReadExeAtOffsetCallback | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaReadExeAtOffsetCallback (interfaz)"
 ms.assetid: 3c961641-3ce3-4bc3-bd6e-a802fa3bec49
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaReadExeAtOffsetCallback
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaLineNumber::get_addressSection | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLineNumber::get_addressSection (método)"
 ms.assetid: a01c1bae-04b2-4c30-8621-60939a3124c2
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

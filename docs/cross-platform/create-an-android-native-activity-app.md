@@ -1,8 +1,7 @@
 ---
 title: "Crear una aplicaci&#243;n de Android Native Activity | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Crear una aplicaci&#243;n de Android Native Activity
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

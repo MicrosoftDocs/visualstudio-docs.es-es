@@ -1,8 +1,7 @@
 ---
 title: "STEPUNIT | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración STEPUNIT"
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # STEPUNIT
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

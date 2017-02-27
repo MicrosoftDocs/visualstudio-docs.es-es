@@ -1,8 +1,7 @@
 ---
 title: "CA2219: No producir excepciones en cl&#225;usulas de excepci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotRaiseExceptionsInExceptionClauses"
 ms.assetid: 7b9b0bee-4e8e-49a4-8c40-52142b49061f
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 5
 ---
 # CA2219: No producir excepciones en cl&#225;usulas de excepci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

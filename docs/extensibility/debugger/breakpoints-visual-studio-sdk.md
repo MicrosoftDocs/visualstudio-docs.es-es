@@ -1,8 +1,7 @@
 ---
 title: "Puntos de interrupci&#243;n (SDK de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "puntos de interrupción"
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Puntos de interrupci&#243;n (SDK de Visual Studio)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugSettingsCallback2::GetMetricString | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "GetMetricString"
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugSettingsCallback2::GetMetricString
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

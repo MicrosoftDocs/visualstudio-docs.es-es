@@ -1,8 +1,7 @@
 ---
 title: "Mostrar registros (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListRegisters (comando)"
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Mostrar registros (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_virtualBaseTableType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_virtualBaseTableType (método)"
 ms.assetid: e0581c4f-0343-49b5-9754-a48477460e9f
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaSymbol::get_virtualBaseTableType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

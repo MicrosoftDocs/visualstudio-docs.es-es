@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine3::SetJustMyCodeState | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine3::SetJustMyCodeState"
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugEngine3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

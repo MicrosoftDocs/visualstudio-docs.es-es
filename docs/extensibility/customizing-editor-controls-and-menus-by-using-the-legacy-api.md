@@ -1,8 +1,7 @@
 ---
 title: "Personalizar men&#250;s y controles de Editor utilizando la API heredada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - menús y controles"
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Personalizar men&#250;s y controles de Editor utilizando la API heredada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

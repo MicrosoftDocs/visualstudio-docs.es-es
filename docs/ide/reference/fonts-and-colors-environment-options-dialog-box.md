@@ -1,8 +1,7 @@
 ---
 title: "Fuentes y colores, Entorno, Opciones (Cuadro de di&#225;logo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,10 +28,10 @@ helpviewer_keywords:
   - "impresoras, personalizar"
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 27
-caps.handback.revision: 27
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Fuentes y colores, Entorno, Opciones (Cuadro de di&#225;logo)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

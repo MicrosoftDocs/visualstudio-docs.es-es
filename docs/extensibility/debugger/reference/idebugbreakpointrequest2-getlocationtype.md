@@ -1,8 +1,7 @@
 ---
 title: "IDebugBreakpointRequest2::GetLocationType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugBreakpointRequest2::GetLocationType"
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugBreakpointRequest2::GetLocationType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

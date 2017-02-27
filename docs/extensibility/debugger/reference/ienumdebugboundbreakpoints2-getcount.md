@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugBoundBreakpoints2::GetCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugBoundBreakpoints2::GetCount"
 ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IEnumDebugBoundBreakpoints2::GetCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

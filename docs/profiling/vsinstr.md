@@ -1,8 +1,7 @@
 ---
 title: "VSInstr | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, herramienta VSInstr"
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 44
-caps.handback.revision: 44
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 44
 ---
 # VSInstr
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

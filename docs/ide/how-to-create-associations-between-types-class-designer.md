@@ -1,8 +1,7 @@
 ---
 title: "How to: Create Associations Between Types (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "association lines"
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # How to: Create Associations Between Types (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

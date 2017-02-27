@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Editar archivos XML | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # C&#243;mo: Editar archivos XML
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA2151: Los campos con tipos cr&#237;ticos deben ser cr&#237;ticos para la seguridad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 4
 ---
 # CA2151: Los campos con tipos cr&#237;ticos deben ser cr&#237;ticos para la seguridad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

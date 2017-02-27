@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugFrameInfo2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugFrameInfo2"
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IEnumDebugFrameInfo2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

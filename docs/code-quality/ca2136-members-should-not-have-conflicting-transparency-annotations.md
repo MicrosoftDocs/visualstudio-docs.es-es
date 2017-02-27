@@ -1,8 +1,7 @@
 ---
 title: "CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "SecurityTransparentAssembliesShouldNotContainSecurityCriticalCode"
 ms.assetid: ff5a1d18-7c52-4da5-8990-60be83a8ea81
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

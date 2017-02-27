@@ -1,8 +1,7 @@
 ---
 title: "IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugModule2::ReloadSymbols (método)"
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugModule2::ReloadSymbols_Deprecated
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

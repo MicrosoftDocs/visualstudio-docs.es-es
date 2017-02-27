@@ -1,8 +1,7 @@
 ---
 title: "Administraci&#243;n de componentes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "instalación [Visual Studio SDK], administración de archivos"
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Administraci&#243;n de componentes
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

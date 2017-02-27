@@ -1,8 +1,7 @@
 ---
 title: "Obtenci&#243;n de valores locales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, obtención de valores locales"
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Obtenci&#243;n de valores locales
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

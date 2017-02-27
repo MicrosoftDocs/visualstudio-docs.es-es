@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngineCreateEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugEngineCreateEvent2"
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugEngineCreateEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

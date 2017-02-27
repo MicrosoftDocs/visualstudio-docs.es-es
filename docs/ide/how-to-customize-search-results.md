@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Personalizar los resultados de la b&#250;squeda | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "personalizar los resultados de la búsqueda [Visor de Ayuda 2.0]"
 ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # C&#243;mo: Personalizar los resultados de la b&#250;squeda
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugAddresses::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugAddresses::Reset (método)"
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # IEnumDebugAddresses::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

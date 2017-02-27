@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un informe de comparaci&#243;n del generador de perfiles desde un s&#237;mbolo del sistema | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Crear un informe de comparaci&#243;n del generador de perfiles desde un s&#237;mbolo del sistema
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

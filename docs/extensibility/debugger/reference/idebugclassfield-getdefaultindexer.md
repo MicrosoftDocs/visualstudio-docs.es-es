@@ -1,8 +1,7 @@
 ---
 title: "IDebugClassField::GetDefaultIndexer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugClassField::GetDefaultIndexer (método)"
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

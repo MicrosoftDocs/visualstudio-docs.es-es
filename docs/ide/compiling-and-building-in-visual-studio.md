@@ -1,39 +1,22 @@
 ---
-title: Compilar y generar en Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- builds [Visual Studio], about building in Visual Studio
-- custom build steps, types of builds
+title: "Compilar y generar en Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "compilaciones [Visual Studio], acerca de cómo compilar en Visual Studio"
+  - "pasos de compilación personalizada, tipos de compilaciones"
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 28
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 828c61720161b63d19451e32134b2a4765fdfd8d
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 28
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensamblados y programas ejecutables con frecuencia durante un ciclo de desarrollo. Al compilar el código con frecuencia, se pueden identificar antes errores en tiempo de compilación como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  

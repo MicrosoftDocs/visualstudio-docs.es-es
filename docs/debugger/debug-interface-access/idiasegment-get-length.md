@@ -1,8 +1,7 @@
 ---
 title: "IDiaSegment::get_length | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSegment::get_length (método)"
 ms.assetid: 5d92e394-649b-49f2-bce7-12dd9d666d85
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSegment::get_length
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

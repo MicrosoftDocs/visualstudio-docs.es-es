@@ -1,8 +1,7 @@
 ---
 title: "Tiempo de suspensi&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Visualizador de simultaneidad, Tiempo de suspensión"
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Tiempo de suspensi&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
