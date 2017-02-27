@@ -1,18 +1,17 @@
 ---
 title: "C&#243;mo notificar un problema con Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "TerryGLee"
 ms.author: "tglee"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # C&#243;mo notificar un problema con Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

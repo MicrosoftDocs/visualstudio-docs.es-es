@@ -1,8 +1,7 @@
 ---
 title: "IEEDataStorage::GetSize | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEEDataStorage::GetSize"
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IEEDataStorage::GetSize
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

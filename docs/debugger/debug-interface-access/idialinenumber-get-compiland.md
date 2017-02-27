@@ -1,8 +1,7 @@
 ---
 title: "IDiaLineNumber::get_compiland | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLineNumber::get_compiland (método)"
 ms.assetid: c476d0b8-c473-47eb-96f5-c4e8f577b1c9
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaLineNumber::get_compiland
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

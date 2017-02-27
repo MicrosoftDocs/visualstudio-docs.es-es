@@ -1,8 +1,7 @@
 ---
 title: "Usar la memoria de forma eficaz al compilar grandes proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "msbuild, uso eficaz de la memoria al compilar árboles grandes"
 ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Usar la memoria de forma eficaz al compilar grandes proyectos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

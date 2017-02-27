@@ -1,8 +1,7 @@
 ---
 title: "IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProgramDestroyEvent2::GetExitCode"
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugProgramDestroyEvent2::GetExitCode
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

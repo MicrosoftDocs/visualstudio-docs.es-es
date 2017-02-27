@@ -1,8 +1,7 @@
 ---
 title: "BP_RES_DATA_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración BP_RES_DATA_FLAGS"
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

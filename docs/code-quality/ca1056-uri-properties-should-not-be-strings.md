@@ -1,8 +1,7 @@
 ---
 title: "CA1056: Las propiedades URI no deben ser cadenas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "UriPropertiesShouldNotBeStrings"
 ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # CA1056: Las propiedades URI no deben ser cadenas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

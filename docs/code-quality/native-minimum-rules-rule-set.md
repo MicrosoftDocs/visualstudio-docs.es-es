@@ -1,8 +1,7 @@
 ---
 title: "Conjunto de reglas Reglas m&#237;nimas nativas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 3
 ---
 # Conjunto de reglas Reglas m&#237;nimas nativas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Text Template Utility Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "text templates, utility methods"
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
 caps.latest.revision: 50
-caps.handback.revision: 50
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 50
 ---
 # Text Template Utility Methods
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

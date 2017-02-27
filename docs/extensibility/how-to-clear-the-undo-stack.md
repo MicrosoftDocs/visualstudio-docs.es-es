@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: borrar la pila de deshacer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - borrar la pila de deshacer"
 ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # C&#243;mo: borrar la pila de deshacer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

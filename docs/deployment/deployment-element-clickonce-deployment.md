@@ -1,8 +1,7 @@
 ---
 title: "&lt;dependency&gt; (Elemento) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "<deployment> (elemento) [manifiesto de implementación ClickOnce]"
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 30
 ---
 # &lt;dependency&gt; (Elemento)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

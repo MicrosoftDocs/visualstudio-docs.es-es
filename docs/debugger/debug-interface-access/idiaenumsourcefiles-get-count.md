@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSourceFiles::get_Count | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSourceFiles::get_Count (método)"
 ms.assetid: 04083b97-e1ac-4baf-bf5a-50a4dc1c6f27
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSourceFiles::get_Count
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

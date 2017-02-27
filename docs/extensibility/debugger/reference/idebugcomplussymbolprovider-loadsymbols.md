@@ -1,8 +1,7 @@
 ---
 title: "IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugComPlusSymbolProvider::LoadSymbols"
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugComPlusSymbolProvider::LoadSymbols
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

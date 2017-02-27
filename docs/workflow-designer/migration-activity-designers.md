@@ -1,18 +1,17 @@
 ---
 title: "Dise&#241;adores de actividades de migraciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Dise&#241;adores de actividades de migraciones
 Los diseñadores de actividades de migraciones se utilizan para llamar a las actividades de flujo de trabajo 3.0\/3.5 desde un flujo de trabajo destinado a [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)].Los temas que se incluyen en esta sección ofrecen una orientación sobre cómo utilizar los diseñadores de actividades de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  

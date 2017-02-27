@@ -1,18 +1,17 @@
 ---
 title: "API Reference for T4 Text Templates | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 63279da9-69ac-49ad-ac7d-43957c45e0ce
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 6
 ---
 # API Reference for T4 Text Templates
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

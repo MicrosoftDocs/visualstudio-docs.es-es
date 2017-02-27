@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Depurar c&#243;digo insertado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,10 +27,10 @@ helpviewer_keywords:
   - "Mostrar código fuente (comando) [depurador]"
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # C&#243;mo: Depurar c&#243;digo insertado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

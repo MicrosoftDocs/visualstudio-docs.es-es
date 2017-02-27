@@ -1,8 +1,7 @@
 ---
 title: "Utilizar el dise&#241;ador de importaciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Presentation.View.ImportDesigner.UI"
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 10
 ---
 # Utilizar el dise&#241;ador de importaciones
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones.Como sucede en gran medida con las palabras clave **Imports** o **using** en Visual Basic .NET y C\#, la especificación de espacios de nombres en el diseñador de importaciones le permite escribir simplemente un nombre de tipo en su expresión en lugar de un nombre de tipo de versión completo.  

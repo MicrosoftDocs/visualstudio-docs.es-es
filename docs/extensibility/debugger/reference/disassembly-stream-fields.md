@@ -1,8 +1,7 @@
 ---
 title: "DISASSEMBLY_STREAM_FIELDS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración DISASSEMBLY_STREAM_FIELDS"
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

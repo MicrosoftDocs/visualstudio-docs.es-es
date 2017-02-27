@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: abrir editores est&#225;ndares | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "proyectos [Visual Studio SDK], abrir editores estándares"
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # C&#243;mo: abrir editores est&#225;ndares
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

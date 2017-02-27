@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Usar una tecla de m&#233;todo abreviado con una extensi&#243;n del Editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] nuevo: vínculo pulsaciones de teclas a comandos"
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # Tutorial: Usar una tecla de m&#233;todo abreviado con una extensi&#243;n del Editor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

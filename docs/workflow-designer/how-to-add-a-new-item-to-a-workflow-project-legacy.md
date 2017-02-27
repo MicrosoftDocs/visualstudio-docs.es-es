@@ -1,8 +1,7 @@
 ---
 title: "Agregar un nuevo elemento a un proyecto de flujo de trabajo (Heredado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "flujos de trabajo, agregar elementos nuevos"
 ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Agregar un nuevo elemento a un proyecto de flujo de trabajo (Heredado)
 Después de haber creado un proyecto de flujo de trabajo usando [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], puede agregar elementos de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] y otros elementos conocidos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] al proyecto.  

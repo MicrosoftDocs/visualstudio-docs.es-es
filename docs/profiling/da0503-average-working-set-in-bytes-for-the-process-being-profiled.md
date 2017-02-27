@@ -1,8 +1,7 @@
 ---
 title: "DA0503: Promedio de conjuntos de trabajo en bytes para el proceso que se va a perfilar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.rules.DA0503"
 ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # DA0503: Promedio de conjuntos de trabajo en bytes para el proceso que se va a perfilar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

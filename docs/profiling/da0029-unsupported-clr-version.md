@@ -1,8 +1,7 @@
 ---
 title: "DA0029: Versi&#243;n de CLR incompatible | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "vs.performance.rules.DA0029"
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # DA0029: Versi&#243;n de CLR incompatible
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

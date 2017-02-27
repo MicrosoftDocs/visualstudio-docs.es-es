@@ -1,8 +1,7 @@
 ---
 title: "IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugComPlusSymbolProvider::UpdateSymbols"
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugComPlusSymbolProvider::UpdateSymbols
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

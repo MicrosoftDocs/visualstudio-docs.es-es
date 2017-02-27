@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject::SetValue | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject::SetValue (método)"
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

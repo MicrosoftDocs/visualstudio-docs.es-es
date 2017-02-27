@@ -1,8 +1,7 @@
 ---
 title: "How to: Create Types by using Class Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "attributes [Visual Studio], applying custom"
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 41
-caps.handback.revision: 41
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 41
 ---
 # How to: Create Types by using Class Designer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

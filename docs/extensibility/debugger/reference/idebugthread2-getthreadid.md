@@ -1,8 +1,7 @@
 ---
 title: "IDebugThread2::GetThreadId | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugThread2::GetThreadId"
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugThread2::GetThreadId
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

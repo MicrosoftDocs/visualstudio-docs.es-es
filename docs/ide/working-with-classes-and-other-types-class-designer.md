@@ -1,8 +1,7 @@
 ---
 title: "Working with Classes and Other Types (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,10 +26,10 @@ helpviewer_keywords:
   - "Class Designer [Visual Studio], about"
 ms.assetid: 4909e38d-2ea8-4caf-92b1-857bd162ab7c
 caps.latest.revision: 32
-caps.handback.revision: 32
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # Working with Classes and Other Types (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

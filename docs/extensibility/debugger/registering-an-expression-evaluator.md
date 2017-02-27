@@ -1,8 +1,7 @@
 ---
 title: "Registrar un evaluador de expresiones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluadores de expresión, registrar"
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Registrar un evaluador de expresiones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Mostrar la finalizaci&#243;n de instrucciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] nuevos - finalización de instrucciones"
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 36
-caps.handback.revision: 36
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 36
 ---
 # Tutorial: Mostrar la finalizaci&#243;n de instrucciones
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

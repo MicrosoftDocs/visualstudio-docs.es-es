@@ -1,8 +1,7 @@
 ---
 title: "Detectar los requisitos del sistema | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "condiciones de inicio"
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 50
-caps.handback.revision: 50
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 50
 ---
 # Detectar los requisitos del sistema
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

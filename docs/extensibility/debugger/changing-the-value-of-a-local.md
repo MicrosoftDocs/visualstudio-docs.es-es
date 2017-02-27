@@ -1,8 +1,7 @@
 ---
 title: "Cambiar el valor de una variable Local | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, cambiar los valores mediante programación"
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Cambiar el valor de una variable Local
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

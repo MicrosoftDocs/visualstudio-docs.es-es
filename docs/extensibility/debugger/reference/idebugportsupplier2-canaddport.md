@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplier2::CanAddPort | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugPortSupplier2::CanAddPort"
 ms.assetid: 41f69e0a-e82c-473d-8b7a-0c40fc5730fc
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugPortSupplier2::CanAddPort
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

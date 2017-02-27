@@ -1,17 +1,17 @@
 ---
 title: "Depurar o deshabilitar el c&#243;digo del proyecto en el Dise&#241;ador XAML | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Depurar o deshabilitar el c&#243;digo del proyecto en el Dise&#241;ador XAML
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1038: Los enumeradores deben estar fuertemente tipados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "EnumeratorsShouldBeStronglyTyped"
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1038: Los enumeradores deben estar fuertemente tipados
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

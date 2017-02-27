@@ -1,15 +1,15 @@
 ---
 title: "C&#243;mo: utilizar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 7
-caps.handback.revision: 6
 ms.author: "gregvanl"
+caps.handback.revision: 7
 ---
 # C&#243;mo: utilizar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Implementar p&#225;ginas de inicio personalizado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "implementar la página de inicio"
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Implementar p&#225;ginas de inicio personalizado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

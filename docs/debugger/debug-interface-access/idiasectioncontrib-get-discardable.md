@@ -1,8 +1,7 @@
 ---
 title: "IDiaSectionContrib::get_discardable | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_discardable (método)"
 ms.assetid: 30ca88d4-3198-4b0f-b30e-2e54b3607fe9
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSectionContrib::get_discardable
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de una p&#225;gina de opciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "páginas de opciones de herramientas [SDK de Visual Studio], crear"
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 62
-caps.handback.revision: 62
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 62
 ---
 # Creaci&#243;n de una p&#225;gina de opciones
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

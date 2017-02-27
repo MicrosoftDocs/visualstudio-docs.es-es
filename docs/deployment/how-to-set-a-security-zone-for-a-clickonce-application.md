@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Establecer una zona de seguridad para una aplicaci&#243;n ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "zonas de seguridad, aplicaciones ClickOnce"
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # C&#243;mo: Establecer una zona de seguridad para una aplicaci&#243;n ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

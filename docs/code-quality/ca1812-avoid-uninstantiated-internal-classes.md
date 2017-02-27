@@ -1,8 +1,7 @@
 ---
 title: "CA1812: Evitar las clases internas sin instancia | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1812"
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 26
 ---
 # CA1812: Evitar las clases internas sin instancia
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

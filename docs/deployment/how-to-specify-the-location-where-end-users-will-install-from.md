@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar la ubicaci&#243;n desde la que instalar&#225;n los usuarios finales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "direcciones URL, especificar instalación de URL"
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 9
 ---
 # C&#243;mo: Especificar la ubicaci&#243;n desde la que instalar&#225;n los usuarios finales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

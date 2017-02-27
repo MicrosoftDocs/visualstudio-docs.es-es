@@ -1,8 +1,7 @@
 ---
 title: "How to: Control Messages View | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Messages view, controlling"
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # How to: Control Messages View
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

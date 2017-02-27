@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplier2::EnumPorts | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugPortSupplier2::EnumPorts"
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugPortSupplier2::EnumPorts
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

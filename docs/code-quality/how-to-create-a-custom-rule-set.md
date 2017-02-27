@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un conjunto de reglas personalizadas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Development Edition, conjuntos de reglas"
 ms.assetid: bcc42508-9592-4802-9f66-a50111641d73
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # C&#243;mo: Crear un conjunto de reglas personalizadas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

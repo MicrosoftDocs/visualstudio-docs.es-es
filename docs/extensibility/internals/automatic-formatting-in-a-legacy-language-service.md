@@ -1,8 +1,7 @@
 ---
 title: "Formato de un servicio de lenguaje heredado autom&#225;tico | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "formato de los servicios de lenguaje, automático"
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Formato de un servicio de lenguaje heredado autom&#225;tico
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

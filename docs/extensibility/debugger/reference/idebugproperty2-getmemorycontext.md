@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty2::GetMemoryContext | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty2::GetMemoryContext"
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugProperty2::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

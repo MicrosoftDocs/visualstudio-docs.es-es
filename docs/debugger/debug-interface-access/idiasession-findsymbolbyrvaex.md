@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::findSymbolByRVAEx | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::findSymbolByRVAEx (método)"
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSession::findSymbolByRVAEx
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSourceFiles::Clone | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSourceFiles::Clone (método)"
 ms.assetid: 87a9a9b6-3927-4131-927c-ad95f8f098b9
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSourceFiles::Clone
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

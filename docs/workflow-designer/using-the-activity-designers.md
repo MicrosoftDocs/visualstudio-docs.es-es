@@ -1,8 +1,7 @@
 ---
 title: "Utilizar los dise&#241;adores de actividades | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Diseñador de flujo de trabajo [WFD], diseñador de actividades"
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 9
 ---
 # Utilizar los dise&#241;adores de actividades
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree actividades y flujos de trabajo.En esta sección se describen las categorías de las actividades proporcionadas por el sistema y los diseñadores correspondientes que están disponibles.Los temas de las actividades individuales y sus diseñadores respectivos dentro de cada una de estas categorías describen lo que hacen estas actividades y proporcionan orientación sobre cómo utilizarlas.  

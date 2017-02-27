@@ -1,8 +1,7 @@
 ---
 title: "StopTrackingAndCleanup | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "StopTrackingAndCleanup"
 ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # StopTrackingAndCleanup
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

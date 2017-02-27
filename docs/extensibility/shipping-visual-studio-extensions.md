@@ -1,8 +1,7 @@
 ---
 title: "Env&#237;o de extensiones de Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "archivos DLL satélite, en paquetes VSIX"
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 26
-caps.handback.revision: 26
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Env&#237;o de extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

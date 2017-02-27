@@ -1,8 +1,7 @@
 ---
 title: "Control de errores y valores devueltos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "valores devueltos"
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Control de errores y valores devueltos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

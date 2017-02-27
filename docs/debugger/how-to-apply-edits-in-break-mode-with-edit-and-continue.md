@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Aplicar tareas de edici&#243;n en modo de interrupci&#243;n con Editar y continuar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,10 +25,10 @@ helpviewer_keywords:
   - "editar, modo de interrupción"
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 30
 ---
 # C&#243;mo: Aplicar tareas de edici&#243;n en modo de interrupci&#243;n con Editar y continuar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

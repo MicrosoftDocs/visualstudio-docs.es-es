@@ -1,8 +1,7 @@
 ---
 title: "Run-Time Text Generation with T4 Text Templates | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "text templates, generating files at run time"
 ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 22
 ---
 # Run-Time Text Generation with T4 Text Templates
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

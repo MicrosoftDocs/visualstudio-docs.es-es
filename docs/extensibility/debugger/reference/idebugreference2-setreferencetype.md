@@ -1,8 +1,7 @@
 ---
 title: "IDebugReference2::SetReferenceType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugReference2::SetReferenceType"
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugReference2::SetReferenceType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

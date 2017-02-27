@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSymbolsByAddr::symbolByVA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSymbolsByAddr::symbolByVA (método)"
 ms.assetid: ac84339f-70c6-48ed-85d0-6d7d1b5194e8
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaEnumSymbolsByAddr::symbolByVA
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

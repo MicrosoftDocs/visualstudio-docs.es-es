@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugCodeContexts2::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugCodeContexts2::Next"
 ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IEnumDebugCodeContexts2::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

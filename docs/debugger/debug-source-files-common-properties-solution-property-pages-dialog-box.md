@@ -1,8 +1,7 @@
 ---
 title: "Depurar archivos de c&#243;digo fuente, Propiedades comunes, P&#225;ginas de propiedades de Soluci&#243;n (Cuadro de di&#225;logo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,10 +27,10 @@ helpviewer_keywords:
   - "depurador, archivos de origen"
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Depurar archivos de c&#243;digo fuente, Propiedades comunes, P&#225;ginas de propiedades de Soluci&#243;n (Cuadro de di&#225;logo)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

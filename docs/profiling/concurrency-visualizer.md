@@ -1,8 +1,7 @@
 ---
 title: "Visualizador de simultaneidad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Visualizador de simultaneidad, Visualizador de simultaneidad"
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 caps.latest.revision: 31
-caps.handback.revision: 31
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 31
 ---
 # Visualizador de simultaneidad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

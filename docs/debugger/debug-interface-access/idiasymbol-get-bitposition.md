@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_bitPosition | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_bitPosition (método)"
 ms.assetid: b0059407-8655-497b-81ca-025595989371
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSymbol::get_bitPosition
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

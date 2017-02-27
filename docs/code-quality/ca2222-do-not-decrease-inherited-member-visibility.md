@@ -1,8 +1,7 @@
 ---
 title: "CA2222: No reducir la visibilidad del miembro heredado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotDecreaseInheritedMemberVisibility"
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA2222: No reducir la visibilidad del miembro heredado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

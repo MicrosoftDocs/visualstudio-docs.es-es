@@ -1,8 +1,7 @@
 ---
 title: "IDebugCoreServer2::GetMachineInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugCoreServer2::GetInfo"
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugCoreServer2::GetMachineInfo
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

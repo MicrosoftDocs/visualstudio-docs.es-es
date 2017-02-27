@@ -1,8 +1,7 @@
 ---
 title: "IDebugCodeContext2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugCodeContext2"
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugCodeContext2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

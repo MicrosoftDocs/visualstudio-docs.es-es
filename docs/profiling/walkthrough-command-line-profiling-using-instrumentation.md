@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Generar perfiles utilizando la instrumentaci&#243;n en la l&#237;nea de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, herramientas de línea de comandos"
 ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Tutorial: Generar perfiles utilizando la instrumentaci&#243;n en la l&#237;nea de comandos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

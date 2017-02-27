@@ -1,18 +1,17 @@
 ---
 title: "Personalizar comportamiento de copia | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 16
 ---
 # Personalizar comportamiento de copia
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

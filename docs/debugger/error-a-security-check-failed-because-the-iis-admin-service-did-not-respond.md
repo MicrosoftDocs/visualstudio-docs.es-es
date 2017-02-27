@@ -1,8 +1,7 @@
 ---
 title: "Error: Una comprobaci&#243;n de seguridad produjo un error porque el servicio de administraci&#243;n de IIS no respondi&#243; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "depurador, errores de aplicación Web"
 ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Error: Una comprobaci&#243;n de seguridad produjo un error porque el servicio de administraci&#243;n de IIS no respondi&#243;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

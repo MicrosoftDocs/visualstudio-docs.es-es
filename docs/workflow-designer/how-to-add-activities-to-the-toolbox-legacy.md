@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Agregar actividades al cuadro de herramientas (Heredado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Cuadro de herramientas, agregar actividades"
 ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # C&#243;mo: Agregar actividades al cuadro de herramientas (Heredado)
 Cuando se compila una solución de flujo de trabajo con [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], se pueden agregar actividades personalizadas al proyecto de flujo de trabajo y a sus diseñadores colocados en el **Cuadro de herramientas** para facilitar el acceso.También puede agregar directamente al **Cuadro de herramientas** las actividades de una biblioteca de vínculos dinámicos \(DLL\).  

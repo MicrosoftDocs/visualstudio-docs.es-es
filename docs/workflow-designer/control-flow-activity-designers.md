@@ -1,18 +1,17 @@
 ---
 title: "Dise&#241;adores de actividades de flujos de control | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Dise&#241;adores de actividades de flujos de control
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo.En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo.Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.  

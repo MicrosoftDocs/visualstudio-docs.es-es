@@ -1,8 +1,7 @@
 ---
 title: "IDebugSymbolProvider::GetLanguage | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugSymbolProvider::GetLanguage (método)"
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

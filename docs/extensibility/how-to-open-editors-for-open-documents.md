@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: abrir editores para los documentos abiertos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK], abrir para abrir documentos"
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # C&#243;mo: abrir editores para los documentos abiertos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

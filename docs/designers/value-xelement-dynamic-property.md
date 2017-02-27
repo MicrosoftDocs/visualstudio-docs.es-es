@@ -1,8 +1,7 @@
 ---
 title: "Value (Propiedad din&#225;mica XElement) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b30e770d-9646-4632-9738-cc9f51bb2343
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Value (Propiedad din&#225;mica XElement)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

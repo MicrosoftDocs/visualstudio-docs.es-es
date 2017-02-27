@@ -1,8 +1,7 @@
 ---
 title: "IDiaImageData::get_virtualAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaImageData::get_virtualAddress (método)"
 ms.assetid: 67ecdc8c-d342-4d0b-b02a-c6b88e22fd02
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaImageData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

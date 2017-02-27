@@ -1,8 +1,7 @@
 ---
 title: "CV_CPU_TYPE_e | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "CV_CPU_TYPE_e (enumeración)"
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

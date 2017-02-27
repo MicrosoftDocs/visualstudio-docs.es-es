@@ -1,8 +1,7 @@
 ---
 title: "DEBUGREF_INFO_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración DEBUGREF_INFO_FLAGS"
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

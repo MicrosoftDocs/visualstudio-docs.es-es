@@ -1,8 +1,7 @@
 ---
 title: "Enviar eventos de inicio despu&#233;s de un lanzamiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], eventos de inicio"
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Enviar eventos de inicio despu&#233;s de un lanzamiento
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

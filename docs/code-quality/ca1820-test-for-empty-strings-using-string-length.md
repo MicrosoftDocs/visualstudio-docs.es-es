@@ -1,8 +1,7 @@
 ---
 title: "CA1820: Comprobar si las cadenas est&#225;n vac&#237;as mediante la longitud de cadena | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1820"
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # CA1820: Comprobar si las cadenas est&#225;n vac&#237;as mediante la longitud de cadena
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

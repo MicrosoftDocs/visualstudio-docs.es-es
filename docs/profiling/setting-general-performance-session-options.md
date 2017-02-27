@@ -1,8 +1,7 @@
 ---
 title: "Establecer opciones generales de sesi&#243;n de rendimiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "vs.performance.property.general"
 ms.assetid: 6b60bd1b-2198-4261-b84e-9b2d8494a992
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Establecer opciones generales de sesi&#243;n de rendimiento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

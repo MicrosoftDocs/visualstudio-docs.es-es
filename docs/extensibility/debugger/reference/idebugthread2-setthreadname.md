@@ -1,8 +1,7 @@
 ---
 title: "IDebugThread2::SetThreadName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugThread2::SetThreadName"
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugThread2::SetThreadName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "PROGRAM_NODE_ARRAY | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura PROGRAM_NODE_ARRAY"
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # PROGRAM_NODE_ARRAY
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

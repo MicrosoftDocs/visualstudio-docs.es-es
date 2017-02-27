@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::imageForVA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper::imageForVA (método)"
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

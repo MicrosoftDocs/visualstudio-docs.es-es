@@ -1,8 +1,7 @@
 ---
 title: "IDebugModuleLoadEvent2::GetModule | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugModuleLoadEvent2::GetModule"
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugModuleLoadEvent2::GetModule
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

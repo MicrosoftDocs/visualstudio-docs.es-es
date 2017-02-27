@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades TransactionScope | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.TransactionScope.UI"
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 8
 ---
 # Dise&#241;ador de actividades TransactionScope
 El diseñador de actividades **TransactionScope** se utiliza para crear y configurar una actividad <xref:System.Activities.Statements.TransactionScope>.  

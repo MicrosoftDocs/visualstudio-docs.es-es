@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugBoundBreakpoints2::Skip"
 ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IEnumDebugBoundBreakpoints2::Skip
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

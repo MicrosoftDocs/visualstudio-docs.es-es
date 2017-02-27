@@ -1,8 +1,7 @@
 ---
 title: "Element (Propiedad din&#225;mica XElement) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ apiname:
 apitype: "Assembly"
 ms.assetid: c6c25b8d-a1da-41ff-aeff-867ff1dcf749
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Element (Propiedad din&#225;mica XElement)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

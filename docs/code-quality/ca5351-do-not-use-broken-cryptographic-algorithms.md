@@ -1,7 +1,7 @@
 ---
 title: "CA5351 No use algoritmos criptogr&#225;ficos rotos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # CA5351 No use algoritmos criptogr&#225;ficos rotos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

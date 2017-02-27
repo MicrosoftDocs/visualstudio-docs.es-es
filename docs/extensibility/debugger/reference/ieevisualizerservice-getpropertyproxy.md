@@ -1,8 +1,7 @@
 ---
 title: "IEEVisualizerService::GetPropertyProxy | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEEVisualizerService::GetPropertyProxy (método)"
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IEEVisualizerService::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

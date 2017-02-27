@@ -1,8 +1,7 @@
 ---
 title: "Trabajar con activos 3D para juegos y aplicaciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "vs.graphics"
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Trabajar con activos 3D para juegos y aplicaciones
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

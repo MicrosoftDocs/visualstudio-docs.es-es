@@ -1,8 +1,7 @@
 ---
 title: "CA2133: Los delegados deben enlazarse a m&#233;todos con una transparencia coherente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ f1_keywords:
   - "CA2133"
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # CA2133: Los delegados deben enlazarse a m&#233;todos con una transparencia coherente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

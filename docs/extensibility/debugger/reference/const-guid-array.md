@@ -1,8 +1,7 @@
 ---
 title: "CONST_GUID_ARRAY | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura CONST_GUID_ARRAY"
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

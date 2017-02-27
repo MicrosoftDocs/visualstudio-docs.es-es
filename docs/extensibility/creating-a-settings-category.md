@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de una categor&#237;a de configuraci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "configuración del perfil, crear categorías"
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 39
 ---
 # Creaci&#243;n de una categor&#237;a de configuraci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

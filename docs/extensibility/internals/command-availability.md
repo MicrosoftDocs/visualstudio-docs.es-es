@@ -1,8 +1,7 @@
 ---
 title: "Disponibilidad de los comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "elementos de menú, contextos de visibilidad"
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 34
-caps.handback.revision: 34
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 34
 ---
 # Disponibilidad de los comandos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

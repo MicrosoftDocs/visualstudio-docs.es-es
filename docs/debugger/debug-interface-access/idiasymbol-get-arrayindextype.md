@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_arrayIndexType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_arrayIndexType (método)"
 ms.assetid: cd63b9ec-9694-406c-b37f-bde6bd5fcbf2
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA1716: Los identificadores no deber&#237;an coincidir con palabras clave | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1716"
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # CA1716: Los identificadores no deber&#237;an coincidir con palabras clave
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

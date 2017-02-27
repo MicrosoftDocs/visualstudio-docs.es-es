@@ -1,8 +1,7 @@
 ---
 title: "Introducci&#243;n a la extensibilidad del depurador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SDK de depuración, introducción"
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Introducci&#243;n a la extensibilidad del depurador
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

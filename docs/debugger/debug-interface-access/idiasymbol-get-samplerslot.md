@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_samplerSlot | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ dev_langs:
   - "C++"
 ms.assetid: 41c751ba-81be-4bd3-838f-8373fc146157
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # IDiaSymbol::get_samplerSlot
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

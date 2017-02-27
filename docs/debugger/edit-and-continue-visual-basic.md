@@ -1,8 +1,7 @@
 ---
 title: "Editar y continuar (Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Visual Basic, Editar y continuar"
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 40
-caps.handback.revision: 40
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 40
 ---
 # Editar y continuar (Visual Basic)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

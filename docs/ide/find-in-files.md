@@ -1,8 +1,7 @@
 ---
 title: "Buscar en archivos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Pestaña Buscar en archivos, ventana Buscar y reemplazar"
 ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
 caps.latest.revision: 41
-caps.handback.revision: 41
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 41
 ---
 # Buscar en archivos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

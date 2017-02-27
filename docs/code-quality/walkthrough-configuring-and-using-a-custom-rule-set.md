@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Configurar y utilizar un conjunto de reglas personalizado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "análisis de código, conjuntos de reglas"
 ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
 caps.latest.revision: 40
-caps.handback.revision: 40
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 40
 ---
 # Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

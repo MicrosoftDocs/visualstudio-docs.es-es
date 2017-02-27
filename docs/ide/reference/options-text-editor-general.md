@@ -1,8 +1,7 @@
 ---
 title: "Opciones, editor de texto, general | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -50,10 +49,10 @@ helpviewer_keywords:
   - "editores, configuración global"
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 29
-caps.handback.revision: 29
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Opciones, editor de texto, general
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

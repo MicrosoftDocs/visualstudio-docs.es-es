@@ -1,8 +1,7 @@
 ---
 title: "FunctionType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "FunctionType (símbolo)"
 ms.assetid: 646a07e7-9d4f-4e21-95e3-3e403cdd4843
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # FunctionType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

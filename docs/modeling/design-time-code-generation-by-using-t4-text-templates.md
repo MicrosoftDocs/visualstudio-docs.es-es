@@ -1,8 +1,7 @@
 ---
 title: "Design-Time Code Generation by using T4 Text Templates | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "text templates, generating code for your application"
 ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 38
-caps.handback.revision: 38
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 38
 ---
 # Design-Time Code Generation by using T4 Text Templates
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

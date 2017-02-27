@@ -1,8 +1,7 @@
 ---
 title: "Agregar un submen&#250; a un men&#250; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "menús, crear submenús en cascada"
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 43
-caps.handback.revision: 43
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 43
 ---
 # Agregar un submen&#250; a un men&#250;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

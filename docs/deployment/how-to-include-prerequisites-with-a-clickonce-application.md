@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Incluir requisitos previos mediante una aplicaci&#243;n ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # C&#243;mo: Incluir requisitos previos mediante una aplicaci&#243;n ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

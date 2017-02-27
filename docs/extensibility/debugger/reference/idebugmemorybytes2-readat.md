@@ -1,8 +1,7 @@
 ---
 title: "IDebugMemoryBytes2::ReadAt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "ReadAt (método)"
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugMemoryBytes2::ReadAt
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

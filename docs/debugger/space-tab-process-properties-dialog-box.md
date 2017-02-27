@@ -1,8 +1,7 @@
 ---
 title: "Pesta&#241;a Espacio (Cuadro de di&#225;logo Propiedades del proceso) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Propiedades de procesos para Windows NT"
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Pesta&#241;a Espacio (Cuadro de di&#225;logo Propiedades del proceso)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

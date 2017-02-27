@@ -1,8 +1,7 @@
 ---
 title: "IDiaDataSource::loadDataForExe | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaDataSource::loadDataForExe (método)"
 ms.assetid: d94a1068-f53f-44b5-b6fb-00dec361a7f2
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDiaDataSource::loadDataForExe
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

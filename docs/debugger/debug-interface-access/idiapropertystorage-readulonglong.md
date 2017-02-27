@@ -1,8 +1,7 @@
 ---
 title: "IDiaPropertyStorage::ReadULONGLONG | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaPropertyStorage::ReadULONGLONG"
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaPropertyStorage::ReadULONGLONG
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

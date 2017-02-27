@@ -1,8 +1,7 @@
 ---
 title: "Utilizar y proporcionar servicios | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "servicios"
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 41
-caps.handback.revision: 41
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 41
 ---
 # Utilizar y proporcionar servicios
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

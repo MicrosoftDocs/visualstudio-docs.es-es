@@ -1,18 +1,17 @@
 ---
 title: "Dise&#241;adores de actividades de mensajer&#237;a | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Dise&#241;adores de actividades de mensajer&#237;a
 Los diseñadores de actividades de mensajería se utilizan para crear y configurar actividades de mensajería que envían y reciben mensajes de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] desde una aplicación [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)].[!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] presenta cinco actividades de mensajería y [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] proporciona dos nuevos diseñadores de plantillas que le permiten administrar la mensajería desde un flujo de trabajo.Los temas que se incluyen en esta sección y que se enumeran en la siguiente tabla ofrecen indicaciones sobre cómo usar los diseñadores de actividades y de plantillas del [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  

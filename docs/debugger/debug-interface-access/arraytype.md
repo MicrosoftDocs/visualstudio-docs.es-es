@@ -1,8 +1,7 @@
 ---
 title: "ArrayType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "ArrayType (símbolo)"
 ms.assetid: 1d973a3a-2bde-46df-8625-85d519bb3cc9
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # ArrayType
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

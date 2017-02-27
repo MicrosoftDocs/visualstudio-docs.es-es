@@ -1,8 +1,7 @@
 ---
 title: "Herramientas de depuraci&#243;n COM | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "visores"
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Herramientas de depuraci&#243;n COM
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

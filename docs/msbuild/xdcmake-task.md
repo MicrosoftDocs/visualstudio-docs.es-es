@@ -1,8 +1,7 @@
 ---
 title: "XDCMake (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "XDCMake (tarea) (MSBuild (Visual C++))"
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # XDCMake (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

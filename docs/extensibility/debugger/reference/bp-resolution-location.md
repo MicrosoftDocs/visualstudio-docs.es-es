@@ -1,8 +1,7 @@
 ---
 title: "BP_RESOLUTION_LOCATION | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura BP_RESOLUTION_LOCATION"
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

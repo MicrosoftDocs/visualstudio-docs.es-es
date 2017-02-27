@@ -1,8 +1,7 @@
 ---
 title: "IDebugStopCompleteEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugStopCompleteEvent2"
 ms.assetid: ff3e89f4-61bb-489d-901c-447260100218
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # IDebugStopCompleteEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "BP_LOCATION_CODE_STRING | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura BP_LOCATION_CODE_STRING"
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

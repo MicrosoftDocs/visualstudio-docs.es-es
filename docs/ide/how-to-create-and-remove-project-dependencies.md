@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear y quitar dependencias del proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "vs.build.projectdependencies"
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # C&#243;mo: Crear y quitar dependencias del proyecto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

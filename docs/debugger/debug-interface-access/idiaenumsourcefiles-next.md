@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSourceFiles::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSourceFiles::Next (método)"
 ms.assetid: 83bf6317-ff39-4c5c-8987-cba34e7a6983
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSourceFiles::Next
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

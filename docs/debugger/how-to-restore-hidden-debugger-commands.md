@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Restaurar los comandos ocultos del depurador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "depurar [Visual Studio], restaurar comandos"
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # C&#243;mo: Restaurar los comandos ocultos del depurador
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Anatom&#237;a de una prueba de IU codificada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "pruebas de interfaz de usuario codificadas"
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 23
-caps.handback.revision: 23
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 23
 ---
 # Anatom&#237;a de una prueba de IU codificada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject2::GetAlias | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject2::GetAlias (método)"
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

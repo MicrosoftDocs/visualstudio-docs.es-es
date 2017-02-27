@@ -1,18 +1,17 @@
 ---
 title: "Invocar el depurador de flujo de trabajo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 34c592af-f4f6-4d02-99f6-63a94698e48b
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 9
 ---
 # Invocar el depurador de flujo de trabajo
 Generalmente, los flujos de trabajo se depuran de la misma manera que los programas escritos en otros lenguajes de programación de Visual Studio.Puede iniciar el depurador de flujo de trabajo de las siguientes maneras:  

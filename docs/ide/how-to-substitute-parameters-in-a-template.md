@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Sustituir par&#225;metros en una plantilla | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "plantillas de Visual Studio, utilizar parámetros"
 ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # C&#243;mo: Sustituir par&#225;metros en una plantilla
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

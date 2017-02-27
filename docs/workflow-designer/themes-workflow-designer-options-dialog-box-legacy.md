@@ -1,8 +1,7 @@
 ---
 title: "Temas, Dise&#241;ador de flujo de trabajo, Opciones (Cuadro de di&#225;logo) (Heredado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "temas, opciones"
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Temas, Dise&#241;ador de flujo de trabajo, Opciones (Cuadro de di&#225;logo) (Heredado)
 En este tema se describe cómo usar el cuadro de diálogo **Temas, Diseñador de flujo de trabajo, Opciones** en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado.Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

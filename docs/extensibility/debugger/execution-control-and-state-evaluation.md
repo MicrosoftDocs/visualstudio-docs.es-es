@@ -1,8 +1,7 @@
 ---
 title: "Control de la ejecuci&#243;n y evaluaci&#243;n de estado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, control de ejecución"
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Control de la ejecuci&#243;n y evaluaci&#243;n de estado
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

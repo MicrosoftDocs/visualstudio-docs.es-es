@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_value | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_value (método)"
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

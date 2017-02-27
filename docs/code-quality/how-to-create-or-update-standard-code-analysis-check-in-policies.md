@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear o actualizar directivas de protecci&#243;n de an&#225;lisis de c&#243;digo est&#225;ndar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "análisis de código, migrar directiva de protección"
 ms.assetid: 458eb3b8-bb5e-4056-82b7-7079ce9c4089
 caps.latest.revision: 29
-caps.handback.revision: 29
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 29
 ---
 # C&#243;mo: Crear o actualizar directivas de protecci&#243;n de an&#225;lisis de c&#243;digo est&#225;ndar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

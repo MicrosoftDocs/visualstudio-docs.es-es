@@ -1,8 +1,7 @@
 ---
 title: "Admite el Asistente para proyectos anidados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Asistente para nuevo proyecto"
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Admite el Asistente para proyectos anidados
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

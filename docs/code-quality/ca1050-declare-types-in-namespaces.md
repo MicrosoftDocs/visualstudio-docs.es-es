@@ -1,8 +1,7 @@
 ---
 title: "CA1050: Declare tipos en espacios de nombres | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DeclareTypesInNamespaces"
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1050: Declare tipos en espacios de nombres
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

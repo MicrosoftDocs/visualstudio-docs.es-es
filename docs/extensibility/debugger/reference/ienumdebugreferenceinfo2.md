@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugReferenceInfo2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugReferenceInfo2"
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IEnumDebugReferenceInfo2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

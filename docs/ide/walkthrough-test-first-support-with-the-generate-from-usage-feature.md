@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la caracter&#237;stica de generaci&#243;n a partir del uso | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Desarrollo basado en pruebas"
 ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
 caps.latest.revision: 63
-caps.handback.revision: 63
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 63
 ---
 # Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la caracter&#237;stica de generaci&#243;n a partir del uso
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

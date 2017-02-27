@@ -1,18 +1,17 @@
 ---
 title: "Definir una directiva de bloqueo para crear segmentos de solo lectura | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 12
 ---
 # Definir una directiva de bloqueo para crear segmentos de solo lectura
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

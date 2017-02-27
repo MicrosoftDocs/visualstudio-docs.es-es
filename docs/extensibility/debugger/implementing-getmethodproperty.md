@@ -1,8 +1,7 @@
 ---
 title: "Implementaci&#243;n GetMethodProperty | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Propiedad IDebugExpressionEvaluator2"
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Implementaci&#243;n GetMethodProperty
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

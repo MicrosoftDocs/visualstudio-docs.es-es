@@ -1,8 +1,7 @@
 ---
 title: "Compilar aplicaciones ClickOnce desde la l&#237;nea de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "publicar, ClickOnce"
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 23
 ---
 # Compilar aplicaciones ClickOnce desde la l&#237;nea de comandos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

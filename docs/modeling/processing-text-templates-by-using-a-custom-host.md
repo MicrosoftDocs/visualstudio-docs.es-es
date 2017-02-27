@@ -1,8 +1,7 @@
 ---
 title: "Processing Text Templates by using a Custom Host | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "text templates, custom directive hosts"
 ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 33
-caps.handback.revision: 33
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 33
 ---
 # Processing Text Templates by using a Custom Host
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

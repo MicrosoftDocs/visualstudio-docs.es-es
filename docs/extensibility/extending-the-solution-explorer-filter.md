@@ -1,8 +1,7 @@
 ---
 title: "Extender el filtro del explorador de soluciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "extensibilidad [Visual Studio], proyectos y soluciones"
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Extender el filtro del explorador de soluciones
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

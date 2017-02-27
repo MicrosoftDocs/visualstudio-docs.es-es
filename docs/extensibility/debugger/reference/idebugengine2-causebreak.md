@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngine2::CauseBreak | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngine2::CauseBreak"
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugEngine2::CauseBreak
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

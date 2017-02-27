@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Exportar un sombreador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # C&#243;mo: Exportar un sombreador
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

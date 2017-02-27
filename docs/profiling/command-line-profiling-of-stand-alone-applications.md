@@ -1,8 +1,7 @@
 ---
 title: "Generaci&#243;n de perfiles de aplicaciones independientes en la l&#237;nea de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "generar perfiles para aplicaciones independientes"
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Generaci&#243;n de perfiles de aplicaciones independientes en la l&#237;nea de comandos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "P&#225;gina Compilaci&#243;n, Dise&#241;ador de proyectos (Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Página Compilar del Diseñador de proyectos"
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 60
-caps.handback.revision: 60
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 60
 ---
 # P&#225;gina Compilaci&#243;n, Dise&#241;ador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

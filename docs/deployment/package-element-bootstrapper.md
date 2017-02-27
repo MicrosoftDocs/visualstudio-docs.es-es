@@ -1,8 +1,7 @@
 ---
 title: "&lt;Package&gt; (Elemento, Arranque) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "<package> (elemento) [arranque]"
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 9
 ---
 # &lt;Package&gt; (Elemento, Arranque)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

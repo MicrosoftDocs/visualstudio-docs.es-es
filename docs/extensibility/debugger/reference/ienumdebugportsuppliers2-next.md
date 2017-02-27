@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPortSuppliers2::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPortSuppliers2::Next"
 ms.assetid: e2a2d226-e70b-42c2-bf00-a936517940c8
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IEnumDebugPortSuppliers2::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

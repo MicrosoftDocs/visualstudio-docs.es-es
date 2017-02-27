@@ -1,8 +1,7 @@
 ---
 title: "Valores de datos de asignaci&#243;n de memoria y de duraci&#243;n de objetos en las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "herramientas de generación de perfiles, método de memoria .NET"
 ms.assetid: a22445b3-39a6-4919-8506-2b5b0ceaf77e
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Valores de datos de asignaci&#243;n de memoria y de duraci&#243;n de objetos en las herramientas de generaci&#243;n de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

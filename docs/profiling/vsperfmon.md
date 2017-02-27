@@ -1,8 +1,7 @@
 ---
 title: "VSPerfMon | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "herramientas de generación de perfiles, VSPerfCmd"
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 30
 ---
 # VSPerfMon
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

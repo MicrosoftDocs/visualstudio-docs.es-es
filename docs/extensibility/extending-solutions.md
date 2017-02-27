@@ -1,8 +1,7 @@
 ---
 title: "Soluciones de extensi&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 caps.latest.revision: 2
-caps.handback.revision: 2
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Soluciones de extensi&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

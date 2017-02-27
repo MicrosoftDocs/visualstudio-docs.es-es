@@ -1,8 +1,7 @@
 ---
 title: "DEBUG_CUSTOM_VIEWER | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura DEBUG_CUSTOM_VIEWER"
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # DEBUG_CUSTOM_VIEWER
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

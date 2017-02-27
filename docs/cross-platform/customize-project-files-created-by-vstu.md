@@ -1,8 +1,7 @@
 ---
 title: "Personalizar archivos de proyecto creados por VSTU | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 2
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
 caps.handback.revision: 2
-ms.author: "crdun"
-manager: "crdun"
 ---
 # Personalizar archivos de proyecto creados por VSTU
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

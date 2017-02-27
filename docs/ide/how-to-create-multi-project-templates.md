@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear plantillas de varios proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "plantillas de Visual Studio, crear plantillas de varios proyectos"
 ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # C&#243;mo: Crear plantillas de varios proyectos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

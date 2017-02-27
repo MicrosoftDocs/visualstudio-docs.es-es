@@ -1,8 +1,7 @@
 ---
 title: "PROGRAM_DESTROY_FLAGS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Enumeración PROGRAM_DESTROY_FLAGS"
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

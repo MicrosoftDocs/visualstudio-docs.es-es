@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Personalizar la vista de texto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] nuevos - personalizar la vista"
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 22
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Tutorial: Personalizar la vista de texto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Algoritmo de enrutamiento de comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "enrutamiento de comandos"
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Algoritmo de enrutamiento de comandos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

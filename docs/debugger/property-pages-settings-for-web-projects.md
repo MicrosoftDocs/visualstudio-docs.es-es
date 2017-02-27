@@ -1,8 +1,7 @@
 ---
 title: "Configuraci&#243;n de p&#225;ginas de propiedades para proyectos web | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "proyectos [Visual Studio], configuraciones de depuración"
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Configuraci&#243;n de p&#225;ginas de propiedades para proyectos web
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

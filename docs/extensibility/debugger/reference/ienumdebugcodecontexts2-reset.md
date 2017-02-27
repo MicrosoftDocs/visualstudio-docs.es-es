@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugCodeContexts2::Reset | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugCodeContexts2::Reset"
 ms.assetid: df6cf1e3-2ef8-4d38-81a0-8e9adf151884
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IEnumDebugCodeContexts2::Reset
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

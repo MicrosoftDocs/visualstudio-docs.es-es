@@ -1,8 +1,7 @@
 ---
 title: "Lista de servicios disponibles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Servicios de Visual Studio"
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 49
-caps.handback.revision: 49
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 49
 ---
 # Lista de servicios disponibles
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

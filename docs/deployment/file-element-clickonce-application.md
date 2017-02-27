@@ -1,8 +1,7 @@
 ---
 title: "Elemento &lt;file&gt; (Aplicaci&#243;n ClickOnce) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "manifiestos [ClickOnce], elemento de archivo"
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # Elemento &lt;file&gt; (Aplicaci&#243;n ClickOnce)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

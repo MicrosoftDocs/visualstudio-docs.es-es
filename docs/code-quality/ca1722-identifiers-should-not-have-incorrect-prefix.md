@@ -1,8 +1,7 @@
 ---
 title: "CA1722: Los identificadores no deber&#237;an tener el prefijo incorrecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "IdentifiersShouldNotHaveIncorrectPrefix"
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1722: Los identificadores no deber&#237;an tener el prefijo incorrecto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

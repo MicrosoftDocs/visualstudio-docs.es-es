@@ -1,8 +1,7 @@
 ---
 title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugArrayObject::GetDimensions (método)"
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: "CA2153: Evitar el control de excepciones de estado da&#241;adas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 5
 ---
 # CA2153: Evitar el control de excepciones de estado da&#241;adas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

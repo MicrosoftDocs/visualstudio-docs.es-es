@@ -1,8 +1,7 @@
 ---
 title: "CA1811: Evitar c&#243;digo privado al que no se llama | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "AvoidUncalledPrivateCode"
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA1811: Evitar c&#243;digo privado al que no se llama
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

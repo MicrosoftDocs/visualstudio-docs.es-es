@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortSupplier3 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugPortSupplier3"
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

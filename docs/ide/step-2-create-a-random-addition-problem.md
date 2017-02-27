@@ -1,8 +1,7 @@
 ---
 title: "Paso 2: Crear un problema de suma aleatoria | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 caps.latest.revision: 27
-caps.handback.revision: 27
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Paso 2: Crear un problema de suma aleatoria
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

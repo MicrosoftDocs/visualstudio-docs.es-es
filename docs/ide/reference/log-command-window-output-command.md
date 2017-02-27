@@ -1,8 +1,7 @@
 ---
 title: "Registrar resultados de la ventana de comandos (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "View.LogCommandWindowOutput (comando)"
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Registrar resultados de la ventana de comandos (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

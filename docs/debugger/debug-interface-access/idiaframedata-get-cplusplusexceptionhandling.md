@@ -1,8 +1,7 @@
 ---
 title: "IDiaFrameData::get_cplusplusExceptionHandling | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaFrameData::get_cplusplusExceptionHandling (método)"
 ms.assetid: 54ee9cde-ce8e-45f1-809c-6fbad800d850
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

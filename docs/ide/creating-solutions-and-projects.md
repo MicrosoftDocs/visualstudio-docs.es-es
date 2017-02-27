@@ -1,46 +1,28 @@
 ---
-title: Crear soluciones y proyectos | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.openprojectfromweb
-- vs.newproject
-- VS.ToolsOptionsPages.Projects.General
-- SolutionItemsProject
-helpviewer_keywords:
-- solutions [Visual Studio], deleting
-- solutions [Visual Studio], creating
-- projects [Visual Studio], creating
+title: "Crear soluciones y proyectos | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.openprojectfromweb"
+  - "vs.newproject"
+  - "VS.ToolsOptionsPages.Projects.General"
+  - "SolutionItemsProject"
+helpviewer_keywords: 
+  - "soluciones [Visual Studio], eliminar"
+  - "soluciones [Visual Studio], crear"
+  - "proyectos [Visual Studio], crear"
 ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 46
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b36d04886bddba926ab3def55244410b8ff4c61e
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 43
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 Los proyectos son los contenedores lógicos de todo lo necesario para compilar la aplicación. Cuando se crea un proyecto eligiendo **Archivo &#124; Nuevo &#124; Proyecto** desde el menú principal, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea una solución que lo contiene. Después puede agregar otros proyectos nuevos o existentes a la solución si fuese necesario. Puede crear proyectos a partir de archivos de código existentes, así como proyectos temporales (solo .NET) que se eliminarán cuando ya no los necesite.  

@@ -1,8 +1,7 @@
 ---
 title: "Advertencias de rendimiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "advertencias de análisis de código administrado, advertencias de rendimiento"
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 22
 ---
 # Advertencias de rendimiento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

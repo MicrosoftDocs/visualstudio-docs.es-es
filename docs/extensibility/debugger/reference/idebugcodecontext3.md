@@ -1,8 +1,7 @@
 ---
 title: "IDebugCodeContext3 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugCodeContext3"
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

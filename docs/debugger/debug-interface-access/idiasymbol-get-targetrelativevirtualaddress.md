@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_targetRelativeVirtualAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_targetRelativeVirtualAddress (método)"
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSymbol::get_targetRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

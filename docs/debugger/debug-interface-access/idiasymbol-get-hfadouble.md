@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_hfaDouble | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_hfaDouble (método)"
 ms.assetid: efc247b9-c16e-4fa3-89b0-901caf7b74c3
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # IDiaSymbol::get_hfaDouble
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

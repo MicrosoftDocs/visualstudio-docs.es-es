@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de plantillas ReceiveAndSendReply | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.SendReply.UI"
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Dise&#241;ador de plantillas ReceiveAndSendReply
 La plantilla **ReceiveAndSendReply** se utiliza para crear una pareja con las actividades <xref:System.ServiceModel.Activities.SendReply> y <xref:System.ServiceModel.Activities.Receive> configuradas previamente dentro de una actividad <xref:System.Activities.Statements.Sequence> y que se correlacionan como parte de un modelo de intercambio de mensajes solicitud\/respuesta en el servidor.  

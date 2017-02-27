@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Seleccionar los esquemas XML que se van a usar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # C&#243;mo: Seleccionar los esquemas XML que se van a usar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

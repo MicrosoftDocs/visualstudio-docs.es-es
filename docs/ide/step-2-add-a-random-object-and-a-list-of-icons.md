@@ -1,8 +1,7 @@
 ---
 title: "Paso 2: Agregar un objeto aleatorio y una lista de iconos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Paso 2: Agregar un objeto aleatorio y una lista de iconos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

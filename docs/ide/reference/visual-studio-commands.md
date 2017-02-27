@@ -1,8 +1,7 @@
 ---
 title: "Comandos de Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "sintaxis de comandos"
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Comandos de Visual Studio
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

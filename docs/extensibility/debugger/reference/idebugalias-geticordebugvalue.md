@@ -1,8 +1,7 @@
 ---
 title: "IDebugAlias::GetICorDebugValue | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugAlias::GetICorDebugValue (método)"
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugAlias::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

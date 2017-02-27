@@ -1,8 +1,7 @@
 ---
 title: "IDiaSectionContrib::get_notPaged | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_notPaged (método)"
 ms.assetid: bb6baa40-fece-4a4c-aba9-f4b41f418f8b
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSectionContrib::get_notPaged
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

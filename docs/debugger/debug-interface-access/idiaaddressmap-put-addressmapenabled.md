@@ -1,8 +1,7 @@
 ---
 title: "IDiaAddressMap::put_addressMapEnabled | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaAddressMap::put_addressMapEnabled (método)"
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaAddressMap::put_addressMapEnabled
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

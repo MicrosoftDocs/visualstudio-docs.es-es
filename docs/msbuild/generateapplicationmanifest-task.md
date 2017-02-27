@@ -1,8 +1,7 @@
 ---
 title: "GenerateApplicationManifest (Tarea) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "MSBuild, GenerateApplicationManifest (tarea)"
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # GenerateApplicationManifest (Tarea)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

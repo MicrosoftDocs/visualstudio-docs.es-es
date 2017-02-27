@@ -1,8 +1,7 @@
 ---
 title: "IDiaFrameData::get_functionStart | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaFrameData::get_functionStart (método)"
 ms.assetid: 49fd24fb-65c2-4812-8303-56a968353e1b
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaFrameData::get_functionStart
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

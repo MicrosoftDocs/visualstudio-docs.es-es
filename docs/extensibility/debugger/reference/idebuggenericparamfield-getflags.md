@@ -1,8 +1,7 @@
 ---
 title: "IDebugGenericParamField::GetFlags | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugGenericParamField::GetFlags"
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugGenericParamField::GetFlags
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

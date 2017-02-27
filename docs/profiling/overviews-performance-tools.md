@@ -1,8 +1,7 @@
 ---
 title: "Informaci&#243;n general (Herramientas de generaci&#243;n de perfiles) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Informaci&#243;n general (Herramientas de generaci&#243;n de perfiles)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CONSTRUCTOR_ENUM | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración CONSTRUCTOR_ENUM"
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

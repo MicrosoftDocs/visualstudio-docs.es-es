@@ -1,8 +1,7 @@
 ---
 title: "LPTEXTOUTPROC | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,9 +18,9 @@ helpviewer_keywords:
   - "SccMsgDataOnAfterGetFile (estructura)"
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

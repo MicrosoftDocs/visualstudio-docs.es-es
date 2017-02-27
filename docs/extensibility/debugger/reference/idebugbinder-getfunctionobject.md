@@ -1,8 +1,7 @@
 ---
 title: "IDebugBinder::GetFunctionObject | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugBinder::GetFunctionObject (método)"
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

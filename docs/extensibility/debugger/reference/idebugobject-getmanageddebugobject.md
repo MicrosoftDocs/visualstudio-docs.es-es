@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject::GetManagedDebugObject | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject::GetManagedDebugObject (método)"
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugObject::GetManagedDebugObject
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

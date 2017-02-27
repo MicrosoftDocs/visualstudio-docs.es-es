@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Compilar varias configuraciones simult&#225;neamente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Compilar varias configuraciones simult&#225;neamente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

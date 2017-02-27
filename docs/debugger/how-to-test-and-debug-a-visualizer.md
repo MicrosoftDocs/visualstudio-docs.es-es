@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Comprobar y depurar un visualizador | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "visualizadores, pruebas"
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # C&#243;mo: Comprobar y depurar un visualizador
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

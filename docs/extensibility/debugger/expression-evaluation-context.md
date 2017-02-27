@@ -1,8 +1,7 @@
 ---
 title: "Contexto de evaluaci&#243;n de expresi&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "evaluación de expresiones, contexto"
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Contexto de evaluaci&#243;n de expresi&#243;n
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

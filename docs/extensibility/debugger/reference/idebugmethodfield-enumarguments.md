@@ -1,8 +1,7 @@
 ---
 title: "IDebugMethodField::EnumArguments | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugMethodField::EnumArguments (método)"
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugMethodField::EnumArguments
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

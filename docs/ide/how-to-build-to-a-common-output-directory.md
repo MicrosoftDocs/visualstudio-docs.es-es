@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Compilar en un directorio de resultados com&#250;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "directorio de resultados"
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # C&#243;mo: Compilar en un directorio de resultados com&#250;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

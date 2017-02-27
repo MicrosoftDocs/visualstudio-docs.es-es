@@ -1,18 +1,17 @@
 ---
 title: "T4 Assembly Directive | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 4
 ---
 # T4 Assembly Directive
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

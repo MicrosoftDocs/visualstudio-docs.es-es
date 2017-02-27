@@ -1,8 +1,7 @@
 ---
 title: "Generar pruebas unitarias para el c&#243;digo con IntelliTest | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "2015-10-05"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ f1_keywords:
   - "vs.UnitTest.CreateIntelliTest"
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 33
-caps.handback.revision: 33
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 33
 ---
 # Generar pruebas unitarias para el c&#243;digo con IntelliTest
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Conceptos b&#225;sicos de prueba unitaria | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "2016-01-07"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ f1_keywords:
   - "vs.UnitTest.CreateUnitTest"
 ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 27
-caps.handback.revision: 27
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 27
 ---
 # Conceptos b&#225;sicos de prueba unitaria
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Iniciar una sesi&#243;n de depuraci&#243;n para aplicaciones de la Tienda en Visual Studio (JavaScript) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ dev_langs:
   - "C++"
 ms.assetid: fb91203f-2cf4-44d3-8ed9-93bc5aaa50b8
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Iniciar una sesi&#243;n de depuraci&#243;n para aplicaciones de la Tienda en Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

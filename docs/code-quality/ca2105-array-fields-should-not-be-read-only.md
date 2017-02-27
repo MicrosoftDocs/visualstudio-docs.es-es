@@ -1,8 +1,7 @@
 ---
 title: "CA2105: Los campos de matrices no deber&#237;an ser de solo lectura | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA2105"
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA2105: Los campos de matrices no deber&#237;an ser de solo lectura
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

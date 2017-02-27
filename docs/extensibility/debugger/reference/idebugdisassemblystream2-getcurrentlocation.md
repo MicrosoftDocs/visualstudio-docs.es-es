@@ -1,8 +1,7 @@
 ---
 title: "IDebugDisassemblyStream2::GetCurrentLocation | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugDisassemblyStream2::GetCurrentLocation"
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugDisassemblyStream2::GetCurrentLocation
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

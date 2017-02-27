@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Depurar c&#243;digo optimizado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "código optimizado, depurar"
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # C&#243;mo: Depurar c&#243;digo optimizado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

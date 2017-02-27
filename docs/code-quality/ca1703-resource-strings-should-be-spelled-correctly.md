@@ -1,8 +1,7 @@
 ---
 title: "CA1703: Las cadenas de recursos deber&#237;an tener la ortograf&#237;a correcta | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ResourceStringsShouldBeSpelledCorrectly"
 ms.assetid: 693f4970-f512-40cb-ae3b-a0f3a5c6d6f1
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1703: Las cadenas de recursos deber&#237;an tener la ortograf&#237;a correcta
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

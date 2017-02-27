@@ -1,8 +1,7 @@
 ---
 title: "Cuadro de di&#225;logo Opciones, Proyectos y soluciones, Compilar y ejecutar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "depurador, opciones de ejecución"
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Cuadro de di&#225;logo Opciones, Proyectos y soluciones, Compilar y ejecutar
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

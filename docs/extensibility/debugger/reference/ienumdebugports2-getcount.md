@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPorts2::GetCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPorts2::GetCount"
 ms.assetid: d714455c-e4fc-48dc-a6d4-7e8b5d7c1bce
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IEnumDebugPorts2::GetCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

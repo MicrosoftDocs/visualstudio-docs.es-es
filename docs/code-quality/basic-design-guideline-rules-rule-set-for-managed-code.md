@@ -1,8 +1,7 @@
 ---
 title: "Conjunto de reglas Reglas de directrices de dise&#241;o b&#225;sicas para c&#243;digo administrado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # Conjunto de reglas Reglas de directrices de dise&#241;o b&#225;sicas para c&#243;digo administrado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

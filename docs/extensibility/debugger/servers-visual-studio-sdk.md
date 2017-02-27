@@ -1,8 +1,7 @@
 ---
 title: "Servidores (SDK de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], servidores"
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Servidores (SDK de Visual Studio)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

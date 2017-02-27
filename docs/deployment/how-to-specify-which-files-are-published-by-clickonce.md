@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar los archivos que se van a publicar mediante ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "archivos, publicar mediante ClickOnce"
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # C&#243;mo: Especificar los archivos que se van a publicar mediante ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Paso 1: Crear un proyecto de aplicaci&#243;n de Windows Forms | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Paso 1: Crear un proyecto de aplicaci&#243;n de Windows Forms
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

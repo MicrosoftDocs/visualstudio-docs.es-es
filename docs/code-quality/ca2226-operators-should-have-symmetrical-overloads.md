@@ -1,8 +1,7 @@
 ---
 title: "CA2226: Los operadores deben tener sobrecargar sim&#233;tricas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "OperatorsShouldHaveSymmetricalOverloads"
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA2226: Los operadores deben tener sobrecargar sim&#233;tricas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Crear paquetes de arranque | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "lista redistribuible"
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 45
-caps.handback.revision: 45
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 45
 ---
 # Crear paquetes de arranque
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

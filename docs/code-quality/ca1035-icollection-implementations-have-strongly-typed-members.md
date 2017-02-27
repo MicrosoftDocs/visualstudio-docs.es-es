@@ -1,8 +1,7 @@
 ---
 title: "CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ICollectionImplementationsHaveStronglyTypedMembers"
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

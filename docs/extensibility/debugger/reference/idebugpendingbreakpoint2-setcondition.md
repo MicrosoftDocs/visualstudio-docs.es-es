@@ -1,8 +1,7 @@
 ---
 title: "IDebugPendingBreakpoint2::SetCondition | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDebugPendingBreakpoint2::SetCondition (método)"
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugPendingBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

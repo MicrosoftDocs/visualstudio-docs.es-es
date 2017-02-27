@@ -1,8 +1,7 @@
 ---
 title: "Desinstalaci&#243;n de un paquete VSPackage con Windows Installer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "desinstalación de VSPackages"
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Desinstalaci&#243;n de un paquete VSPackage con Windows Installer
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

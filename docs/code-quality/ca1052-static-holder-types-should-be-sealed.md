@@ -1,8 +1,7 @@
 ---
 title: "CA1052: Los tipos titulares est&#225;ticos deben ser sealed | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "StaticHolderTypesShouldBeSealed"
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA1052: Los tipos titulares est&#225;ticos deben ser sealed
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

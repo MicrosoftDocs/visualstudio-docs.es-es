@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Publicar una aplicaci&#243;n ClickOnce sin usar el Asistente para publicaci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "aplicaciones Windows, implementaciones ClickOnce"
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 25
 ---
 # C&#243;mo: Publicar una aplicaci&#243;n ClickOnce sin usar el Asistente para publicaci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

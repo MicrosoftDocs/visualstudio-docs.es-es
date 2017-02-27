@@ -1,8 +1,7 @@
 ---
 title: "Implementar aplicaciones de la Tienda Windows desde Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "C++"
 ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Implementar aplicaciones de la Tienda Windows desde Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

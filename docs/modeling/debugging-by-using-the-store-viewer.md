@@ -1,8 +1,7 @@
 ---
 title: "Depurar con el visor de almac&#233;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Lenguaje específico de dominio, visor de almacén"
 ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 17
 ---
 # Depurar con el visor de almac&#233;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

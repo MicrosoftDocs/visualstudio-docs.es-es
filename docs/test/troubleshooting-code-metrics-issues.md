@@ -1,8 +1,7 @@
 ---
 title: "Solucionar problemas de m&#233;tricas de c&#243;digo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "erickson-doug"
 ms.author: "douge"
 manager: "douge"
+caps.handback.revision: 4
 ---
 # Solucionar problemas de m&#233;tricas de c&#243;digo
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

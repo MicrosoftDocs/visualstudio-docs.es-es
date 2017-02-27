@@ -1,8 +1,7 @@
 ---
 title: "CA1502: Evite la excesiva complejidad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "AvoidExcessiveComplexity"
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 30
 ---
 # CA1502: Evite la excesiva complejidad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

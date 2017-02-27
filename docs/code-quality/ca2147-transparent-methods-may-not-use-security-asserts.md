@@ -1,8 +1,7 @@
 ---
 title: "CA2147: Los m&#233;todos transparentes no pueden usar aserciones de seguridad | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "SecurityTransparentCodeShouldNotAssert"
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # CA2147: Los m&#233;todos transparentes no pueden usar aserciones de seguridad
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

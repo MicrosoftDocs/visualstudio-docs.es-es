@@ -1,8 +1,7 @@
 ---
 title: "Agregar una barra de herramientas a una ventana de herramientas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "barras de herramientas [Visual Studio], agregar a las ventanas de herramientas"
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 48
-caps.handback.revision: 46
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 48
 ---
 # Agregar una barra de herramientas a una ventana de herramientas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

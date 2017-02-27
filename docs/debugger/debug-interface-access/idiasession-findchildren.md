@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::findChildren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::findChildren (método)"
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

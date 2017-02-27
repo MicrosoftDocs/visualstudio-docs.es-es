@@ -1,8 +1,7 @@
 ---
 title: "IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugTypeFieldBuilder::CreatePointerToType"
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugTypeFieldBuilder::CreatePointerToType
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

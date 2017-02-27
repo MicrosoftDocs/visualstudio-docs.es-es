@@ -1,8 +1,7 @@
 ---
 title: "Campo TASK_STATE_EXECUTED | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Campo TASK_STATE_EXECUTED, clase de tarea [motores de depuración de .NET Framework]"
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Campo TASK_STATE_EXECUTED
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

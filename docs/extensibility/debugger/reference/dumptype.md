@@ -1,8 +1,7 @@
 ---
 title: "DUMPTYPE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración DUMPTYPE"
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # DUMPTYPE
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

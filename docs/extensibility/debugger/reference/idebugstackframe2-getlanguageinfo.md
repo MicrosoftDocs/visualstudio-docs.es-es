@@ -1,8 +1,7 @@
 ---
 title: "IDebugStackFrame2::GetLanguageInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugStackFrame2::GetLanguageInfo"
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

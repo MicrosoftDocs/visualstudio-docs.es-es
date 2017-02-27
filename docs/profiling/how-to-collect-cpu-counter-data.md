@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Recopilar datos de los contadores de CPU mediante el m&#233;todo de instrumentaci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "herramientas de rendimiento, uso de contadores de CPU portátiles"
 ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # C&#243;mo: Recopilar datos de los contadores de CPU mediante el m&#233;todo de instrumentaci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

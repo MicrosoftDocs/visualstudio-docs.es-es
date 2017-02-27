@@ -1,8 +1,7 @@
 ---
 title: "CA1901: Las declaraciones P/Invoke deben ser port&#225;tiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "PInvokeDeclarationsShouldBePortable"
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 23
 ---
 # CA1901: Las declaraciones P/Invoke deben ser port&#225;tiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

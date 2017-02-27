@@ -1,37 +1,19 @@
 ---
-title: Hable con nosotros | Microsoft Docs
-ms.custom: 
-ms.date: 01/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- product support [Visual Studio]
-- Help [Visual Studio], product support
+title: "Hable con nosotros | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/10/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "soporte técnico [Visual Studio]"
+  - "Ayuda [Visual Studio], soporte técnico"
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 34cc8dad76b93ee5a8d5b8f544e29f46aa5b6438
-ms.openlocfilehash: 604c1baf9424b63f3c0b8597e9ddb0adb686c33e
-
+author: "TerryGLee"
+ms.author: "tglee"
+manager: "ghogen"
+caps.handback.revision: 31
 ---
 # <a name="talk-to-us"></a>Talk to Us
 Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.  

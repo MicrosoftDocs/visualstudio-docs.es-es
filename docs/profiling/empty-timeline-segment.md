@@ -1,8 +1,7 @@
 ---
 title: "Segmento de escala de tiempo vac&#237;o | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Visualizador de simultaneidad, segmento de escala de tiempo vacío"
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Segmento de escala de tiempo vac&#237;o
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

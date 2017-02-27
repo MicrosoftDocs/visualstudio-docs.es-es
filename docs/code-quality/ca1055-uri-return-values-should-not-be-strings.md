@@ -1,8 +1,7 @@
 ---
 title: "CA1055: Los valores devueltos URI no deben ser cadenas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "UriReturnValuesShouldNotBeStrings"
 ms.assetid: 40e39873-7872-4988-8195-9eb0ade9ece0
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA1055: Los valores devueltos URI no deben ser cadenas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

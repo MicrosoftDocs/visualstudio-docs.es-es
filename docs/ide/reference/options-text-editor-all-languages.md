@@ -1,8 +1,7 @@
 ---
 title: "Opciones, Editor de texto, Todos los lenguajes | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "espacio virtual"
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Opciones, Editor de texto, Todos los lenguajes
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

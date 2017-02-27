@@ -1,8 +1,7 @@
 ---
 title: "Recopilar datos de rendimiento adicionales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8c0ea5c6-74a4-4a23-89ca-8d589364079f
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Recopilar datos de rendimiento adicionales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

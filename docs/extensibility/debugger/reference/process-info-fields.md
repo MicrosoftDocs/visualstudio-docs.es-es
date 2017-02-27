@@ -1,8 +1,7 @@
 ---
 title: "PROCESS_INFO_FIELDS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Enumeración PROCESS_INFO_FIELDS"
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

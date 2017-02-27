@@ -1,8 +1,7 @@
 ---
 title: "Ejecutar una prueba unitaria como un proceso de 64 bits | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "pruebas unitarias, ejecutar"
 ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 25
 ---
 # Ejecutar una prueba unitaria como un proceso de 64 bits
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

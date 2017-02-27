@@ -1,18 +1,17 @@
 ---
 title: "Accessing Visual Studio or other Hosts from a Text Template | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 5
 ---
 # Accessing Visual Studio or other Hosts from a Text Template
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

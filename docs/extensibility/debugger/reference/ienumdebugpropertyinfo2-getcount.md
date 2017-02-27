@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugPropertyInfo2::GetCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugPropertyInfo2::GetCount"
 ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IEnumDebugPropertyInfo2::GetCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "implementar aplicaciones [ClickOnce], mensaje relativo a la confianza"
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # C&#243;mo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

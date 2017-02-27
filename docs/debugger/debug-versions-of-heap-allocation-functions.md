@@ -1,8 +1,7 @@
 ---
 title: "Versiones de depuraci&#243;n de las funciones de asignaci&#243;n del mont&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,10 +26,10 @@ helpviewer_keywords:
   - "pérdidas de memoria, funciones de la biblioteca de depuración de CRT"
 ms.assetid: 91748bdc-f4cd-4d8b-ab98-0493dab7ed0d
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Versiones de depuraci&#243;n de las funciones de asignaci&#243;n del mont&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

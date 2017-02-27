@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Incrementar autom&#225;ticamente la versi&#243;n de publicaci&#243;n de ClickOnce | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "publicar, ClickOnce"
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 9
 ---
 # C&#243;mo: Incrementar autom&#225;ticamente la versi&#243;n de publicaci&#243;n de ClickOnce
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

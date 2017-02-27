@@ -1,8 +1,7 @@
 ---
 title: "Glosario de complemento de Control de c&#243;digo fuente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "los complementos de control de código fuente, el glosario"
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Glosario de complemento de Control de c&#243;digo fuente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

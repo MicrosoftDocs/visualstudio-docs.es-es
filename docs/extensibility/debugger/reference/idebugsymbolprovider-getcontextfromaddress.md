@@ -1,8 +1,7 @@
 ---
 title: "IDebugSymbolProvider::GetContextFromAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugSymbolProvider::GetContextFromAddress (método)"
 ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugSymbolProvider::GetContextFromAddress
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

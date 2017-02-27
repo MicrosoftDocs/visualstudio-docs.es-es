@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::put_registerValue | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper2::put_registerValue (método)"
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaStackWalkHelper::put_registerValue
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

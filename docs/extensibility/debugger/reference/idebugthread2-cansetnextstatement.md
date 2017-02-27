@@ -1,8 +1,7 @@
 ---
 title: "IDebugThread2::CanSetNextStatement | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugThread2::CanSetNextStatement"
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDebugThread2::CanSetNextStatement
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

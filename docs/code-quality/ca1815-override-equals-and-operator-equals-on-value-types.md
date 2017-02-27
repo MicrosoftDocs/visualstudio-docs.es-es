@@ -1,8 +1,7 @@
 ---
 title: "CA1815: Reemplazar Equals y el operador Equals en los tipos de valor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1815"
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # CA1815: Reemplazar Equals y el operador Equals en los tipos de valor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

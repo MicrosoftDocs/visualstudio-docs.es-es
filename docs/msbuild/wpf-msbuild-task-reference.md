@@ -1,8 +1,7 @@
 ---
 title: "Referencia de tareas de MSBuild para WPF | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "referencia de tareas de MSBuild para WPF [WPF MSBuild], tabla de términos y definiciones"
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Referencia de tareas de MSBuild para WPF
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

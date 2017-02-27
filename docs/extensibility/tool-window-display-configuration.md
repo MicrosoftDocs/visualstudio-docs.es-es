@@ -1,8 +1,7 @@
 ---
 title: "Configuraci&#243;n de pantalla de ventana de herramienta | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "ventanas de herramientas, apariencia"
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Configuraci&#243;n de pantalla de ventana de herramienta
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

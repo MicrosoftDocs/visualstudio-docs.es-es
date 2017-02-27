@@ -1,8 +1,7 @@
 ---
 title: "IDiaStackWalkHelper::pdataForVA | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaStackWalkHelper2::pdataByVA (método)"
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

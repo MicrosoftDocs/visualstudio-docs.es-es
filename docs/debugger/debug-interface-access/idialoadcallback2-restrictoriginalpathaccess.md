@@ -1,8 +1,7 @@
 ---
 title: "IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLoadCallback2::RestrictOriginalPathAccess (método)"
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLoadCallback2::RestrictOriginalPathAccess
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

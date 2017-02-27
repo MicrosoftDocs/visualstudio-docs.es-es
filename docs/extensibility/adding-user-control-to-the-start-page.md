@@ -1,8 +1,7 @@
 ---
 title: "Agregar Control de usuario a la p&#225;gina de inicio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "ensamblado de la página de inicio"
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Agregar Control de usuario a la p&#225;gina de inicio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

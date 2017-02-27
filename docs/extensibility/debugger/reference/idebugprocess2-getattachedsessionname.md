@@ -1,8 +1,7 @@
 ---
 title: "IDebugProcess2::GetAttachedSessionName | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProcess2::GetAttachedSessionName"
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugProcess2::GetAttachedSessionName
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

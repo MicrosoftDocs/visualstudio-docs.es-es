@@ -1,8 +1,7 @@
 ---
 title: "Clase ContingentProperties - miembros internos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "motores de depuración, ContingentProperties (clase) [.NET Framework]"
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Clase ContingentProperties - miembros internos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

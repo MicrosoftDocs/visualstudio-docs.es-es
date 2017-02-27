@@ -1,8 +1,7 @@
 ---
 title: "Agregar un comando a la barra de herramientas del explorador de soluciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Explorador de soluciones, agregar botones"
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 39
 ---
 # Agregar un comando a la barra de herramientas del explorador de soluciones
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

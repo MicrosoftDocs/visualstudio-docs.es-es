@@ -1,8 +1,7 @@
 ---
 title: "Sugerencias para la b&#250;squeda en el &#237;ndice | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "sugerencias para la búsqueda en el índice [Visor de Ayuda 2.0]"
 ms.assetid: f9ffa8e9-3ece-419d-a465-f9c2c21fd4ba
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Sugerencias para la b&#250;squeda en el &#237;ndice
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

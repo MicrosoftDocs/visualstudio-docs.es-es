@@ -1,8 +1,7 @@
 ---
 title: "M&#233;todos abreviados de teclado de enlace a elementos de men&#250; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "elementos de menú"
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # M&#233;todos abreviados de teclado de enlace a elementos de men&#250;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

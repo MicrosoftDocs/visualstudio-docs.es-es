@@ -1,8 +1,7 @@
 ---
 title: "IDiaAddressMap::set_imageHeaders | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaAddressMap::set_imageHeaders (método)"
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

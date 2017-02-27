@@ -1,8 +1,7 @@
 ---
 title: "Plantillas predeterminadas XSLT | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Plantillas predeterminadas XSLT
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

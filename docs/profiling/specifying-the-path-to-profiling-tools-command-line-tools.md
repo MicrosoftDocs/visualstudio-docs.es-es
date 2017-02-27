@@ -1,8 +1,7 @@
 ---
 title: "Especificar la ruta de acceso a las herramientas de l&#237;nea de comandos de Herramientas de generaci&#243;n de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Especificar la ruta de acceso a las herramientas de l&#237;nea de comandos de Herramientas de generaci&#243;n de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

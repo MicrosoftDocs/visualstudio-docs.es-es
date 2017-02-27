@@ -1,8 +1,7 @@
 ---
 title: "IDebugModule3::GetSymbolInfo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "IDebugModule3::GetSymbolInfo (método)"
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

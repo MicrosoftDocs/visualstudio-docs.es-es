@@ -1,8 +1,7 @@
 ---
 title: "CA1601: No utilizar temporizadores que impidan los cambios de estado de energ&#237;a | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotUseTimersThatPreventPowerStateChanges"
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1601: No utilizar temporizadores que impidan los cambios de estado de energ&#237;a
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

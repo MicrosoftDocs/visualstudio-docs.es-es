@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: adjuntar vistas de datos de documentos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] personalizados - adjuntar vistas a los datos de documentos"
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # C&#243;mo: adjuntar vistas de datos de documentos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

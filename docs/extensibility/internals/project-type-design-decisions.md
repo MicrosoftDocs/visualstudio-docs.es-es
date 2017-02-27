@@ -1,8 +1,7 @@
 ---
 title: "Decisiones de dise&#241;o del tipo de proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "tipos de proyecto, las decisiones de diseño"
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Decisiones de dise&#241;o del tipo de proyecto
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Creaci&#243;n de un paquete de Windows Installer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "archivos MSI, VSPackages"
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Creaci&#243;n de un paquete de Windows Installer
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

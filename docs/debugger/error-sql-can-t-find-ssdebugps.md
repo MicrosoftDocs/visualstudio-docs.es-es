@@ -1,8 +1,7 @@
 ---
 title: "Error: SQL no encuentra SSDEBUGPS | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ dev_langs:
   - "SQL"
 ms.assetid: 596425c8-14c7-4c05-8823-e1c52f420f5e
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Error: SQL no encuentra SSDEBUGPS
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

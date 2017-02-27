@@ -1,8 +1,7 @@
 ---
 title: "IDiaDataSource::loadDataFromPdb | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaDataSource::loadDataFromPdb (método)"
 ms.assetid: 02159073-8144-47f8-a0b0-aa0edcb92b5b
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaDataSource::loadDataFromPdb
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

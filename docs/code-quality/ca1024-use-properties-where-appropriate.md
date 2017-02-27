@@ -1,8 +1,7 @@
 ---
 title: "CA1024: Utilizar las propiedades donde corresponda | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "UsePropertiesWhereAppropriate"
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # CA1024: Utilizar las propiedades donde corresponda
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

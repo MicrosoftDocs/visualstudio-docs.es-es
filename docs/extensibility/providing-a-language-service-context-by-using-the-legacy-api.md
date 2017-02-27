@@ -1,8 +1,7 @@
 ---
 title: "Proporcionar un contexto de servicio de lenguaje a trav&#233;s de la API heredada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - el contexto del servicio de lenguaje"
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Proporcionar un contexto de servicio de lenguaje a trav&#233;s de la API heredada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSectionContrib::get_execute | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_execute (método)"
 ms.assetid: 66eb38ce-a5e1-467e-b845-b3dc433eda91
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSectionContrib::get_execute
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

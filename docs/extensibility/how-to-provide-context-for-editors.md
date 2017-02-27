@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: proporcionar contexto para los editores | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - proporcionan contexto"
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # C&#243;mo: proporcionar contexto para los editores
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

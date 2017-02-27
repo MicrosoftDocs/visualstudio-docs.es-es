@@ -1,8 +1,7 @@
 ---
 title: "Eventos del b&#250;fer de texto en la API heredada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados - eventos del búfer de texto"
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Eventos del b&#250;fer de texto en la API heredada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

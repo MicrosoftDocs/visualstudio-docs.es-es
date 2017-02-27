@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un modelo 3D b&#225;sico | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # C&#243;mo: Crear un modelo 3D b&#225;sico
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_types | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_types (método)"
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

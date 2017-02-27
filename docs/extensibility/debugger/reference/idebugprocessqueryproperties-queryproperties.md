@@ -1,8 +1,7 @@
 ---
 title: "IDebugProcessQueryProperties::QueryProperties | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "IDebugProcessQueryProperties::QueryProperties"
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # IDebugProcessQueryProperties::QueryProperties
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

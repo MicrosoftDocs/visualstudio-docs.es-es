@@ -1,8 +1,7 @@
 ---
 title: "CA1306: Establecer configuraci&#243;n regional para tipos de datos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "SetLocaleForDataTypes"
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # CA1306: Establecer configuraci&#243;n regional para tipos de datos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

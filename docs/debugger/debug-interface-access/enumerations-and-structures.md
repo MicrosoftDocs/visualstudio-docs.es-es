@@ -1,8 +1,7 @@
 ---
 title: "Enumeraciones y estructuras | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Kit de desarrollo DIA (SDK), estructuras"
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Enumeraciones y estructuras
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

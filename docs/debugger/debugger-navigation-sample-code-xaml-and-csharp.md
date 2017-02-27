@@ -1,8 +1,7 @@
 ---
 title: "C&#243;digo de ejemplo de navegaci&#243;n del depurador (Xaml y C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "C++"
 ms.assetid: 8f4266bc-4597-43ab-b620-8b08ea988a8e
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # C&#243;digo de ejemplo de navegaci&#243;n del depurador (Xaml y C#)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::findFileById | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::findFileById (método)"
 ms.assetid: 710efe04-78b5-4f3e-a1d8-f9b069063503
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSession::findFileById
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Crear p&#225;ginas de opciones | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Páginas de opciones de herramientas [Visual Studio SDK], crear mediante administra el marco de trabajo de paquete"
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Crear p&#225;ginas de opciones
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

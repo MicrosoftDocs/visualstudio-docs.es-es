@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Mostrar los n&#250;meros de l&#237;nea en el editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "código, presentación de números de línea"
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # C&#243;mo: Mostrar los n&#250;meros de l&#237;nea en el editor
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

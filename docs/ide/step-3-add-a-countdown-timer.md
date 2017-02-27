@@ -1,8 +1,7 @@
 ---
 title: "Paso 3: Agregar un temporizador de cuenta atr&#225;s | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Paso 3: Agregar un temporizador de cuenta atr&#225;s
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

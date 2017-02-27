@@ -1,8 +1,7 @@
 ---
 title: "Visual Studio Shell (integrado) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Características del modo integrado el shell [Visual Studio]"
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
-caps.handback.revision: 26
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Visual Studio Shell (integrado)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

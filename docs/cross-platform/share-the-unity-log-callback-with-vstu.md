@@ -1,8 +1,7 @@
 ---
 title: "Compartir la devoluci&#243;n de llamada de registro de Unity con VSTU | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
 caps.latest.revision: 2
+author: "ghogen"
+ms.author: "ghogen"
+manager: "ghogen"
 caps.handback.revision: 2
-ms.author: "crdun"
-manager: "crdun"
 ---
 # Compartir la devoluci&#243;n de llamada de registro de Unity con VSTU
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

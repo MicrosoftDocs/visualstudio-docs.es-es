@@ -1,8 +1,7 @@
 ---
 title: "IDiaTable::get__NewEnum | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaTable::get__NewEnum (método)"
 ms.assetid: ee89bba8-5d5c-4a0b-aa0d-1aad56baa380
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaTable::get__NewEnum
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

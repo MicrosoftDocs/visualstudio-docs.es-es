@@ -1,8 +1,7 @@
 ---
 title: "Opciones, editor de texto, extensi&#243;n de archivo | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Editor asociado, seleccionar"
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Opciones, editor de texto, extensi&#243;n de archivo
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

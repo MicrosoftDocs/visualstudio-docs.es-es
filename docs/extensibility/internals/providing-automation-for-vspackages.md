@@ -1,8 +1,7 @@
 ---
 title: "Automatizaci&#243;n de VSPackages | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "automatización [Visual Studio SDK] VSPackages"
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Automatizaci&#243;n de VSPackages
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Instalaci&#243;n de una aplicaci&#243;n de Shell aislado | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Shell de Visual Studio, implementar aplicaciones basadas en shell"
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 40
-caps.handback.revision: 40
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 40
 ---
 # Instalaci&#243;n de una aplicaci&#243;n de Shell aislado
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

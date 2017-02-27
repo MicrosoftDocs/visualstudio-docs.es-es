@@ -1,8 +1,7 @@
 ---
 title: "Guardar un documento est&#225;ndar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "persistencia, guardar documentos estándares"
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Guardar un documento est&#225;ndar
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

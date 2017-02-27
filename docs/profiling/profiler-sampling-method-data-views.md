@@ -1,8 +1,7 @@
 ---
 title: "Vistas de datos del m&#233;todo de muestreo del generador de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "vistas de datos de muestreo"
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Vistas de datos del m&#233;todo de muestreo del generador de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Marcar y quitar marcadores de subprocesos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "subprocesos, cambiar [depuración]"
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 caps.latest.revision: 33
-caps.handback.revision: 33
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 33
 ---
 # C&#243;mo: Marcar y quitar marcadores de subprocesos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

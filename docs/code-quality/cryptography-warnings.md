@@ -1,7 +1,7 @@
 ---
 title: "Advertencias de criptograf&#237;a | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 7
 ---
 # Advertencias de criptograf&#237;a
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugCustomAttribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugCustomAttribute"
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

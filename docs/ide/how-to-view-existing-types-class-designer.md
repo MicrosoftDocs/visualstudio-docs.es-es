@@ -1,8 +1,7 @@
 ---
 title: "How to: View Existing Types (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "class diagrams, types"
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 caps.latest.revision: 27
-caps.handback.revision: 27
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # How to: View Existing Types (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

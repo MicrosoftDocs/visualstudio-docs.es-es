@@ -1,8 +1,7 @@
 ---
 title: "IDebugPortPicker | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Interfaz IDebugPortPicker"
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugPortPicker
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

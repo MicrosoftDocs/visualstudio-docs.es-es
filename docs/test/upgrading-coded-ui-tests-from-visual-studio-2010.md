@@ -1,8 +1,7 @@
 ---
 title: "Actualizar pruebas de IU codificadas desde Visual Studio 2010 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 33
-caps.handback.revision: 33
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 33
 ---
 # Actualizar pruebas de IU codificadas desde Visual Studio 2010
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

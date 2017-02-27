@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSymbols::get_Count | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSymbols::get_Count (método)"
 ms.assetid: fdaae6d7-e67b-4262-84c9-fbae381e8297
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSymbols::get_Count
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

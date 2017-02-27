@@ -1,8 +1,7 @@
 ---
 title: "Enumerador de c&#243;digo de estado de directorio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "origen control complementos, enumeración del estado de directorio"
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Enumerador de c&#243;digo de estado de directorio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

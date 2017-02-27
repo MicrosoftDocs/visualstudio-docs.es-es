@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSegments::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSegments::Next (método)"
 ms.assetid: 53f61874-d821-47ab-a1f5-27e982804a6a
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumSegments::Next
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Proyectos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "tipos de proyecto [Visual Studio SDK]"
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 43
-caps.handback.revision: 40
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 43
 ---
 # Proyectos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

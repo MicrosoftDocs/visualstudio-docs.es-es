@@ -1,8 +1,7 @@
 ---
 title: "IDiaSymbol::get_customCallingConvention | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSymbol::get_customCallingConvention (método)"
 ms.assetid: 0aa97951-f7e1-4fa5-a87f-2920460c122d
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

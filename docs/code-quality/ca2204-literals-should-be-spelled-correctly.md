@@ -1,8 +1,7 @@
 ---
 title: "CA2204: Debe escribir correctamente los literales | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA2204"
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # CA2204: Debe escribir correctamente los literales
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

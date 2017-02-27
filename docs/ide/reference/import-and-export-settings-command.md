@@ -1,8 +1,7 @@
 ---
 title: "Importar y exportar configuraci&#243;n (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "comando para importar y exportar configuraciones"
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Importar y exportar configuraci&#243;n (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

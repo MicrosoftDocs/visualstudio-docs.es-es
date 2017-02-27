@@ -1,8 +1,7 @@
 ---
 title: "IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugGenericFieldInstance::TypeArgumentCount"
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDebugGenericFieldInstance::TypeArgumentCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

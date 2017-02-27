@@ -1,8 +1,7 @@
 ---
 title: "Crear un sistema de proyectos b&#225;sico, parte 1 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "tutorial"
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 47
-caps.handback.revision: 47
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 47
 ---
 # Crear un sistema de proyectos b&#225;sico, parte 1
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

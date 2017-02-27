@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Especificar informaci&#243;n de c&#243;digo adicional mediante __analysis_assume | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "__analysis_assume"
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # C&#243;mo: Especificar informaci&#243;n de c&#243;digo adicional mediante __analysis_assume
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

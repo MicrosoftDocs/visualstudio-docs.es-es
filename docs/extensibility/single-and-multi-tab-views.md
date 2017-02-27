@@ -1,8 +1,7 @@
 ---
 title: "&#218;nicas y ficha m&#250;ltiples vistas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] personalizados - únicos y ficha múltiples vistas"
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # &#218;nicas y ficha m&#250;ltiples vistas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Introducci&#243;n a la plantilla de proyecto VSIX | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "SDK de Visual Studio, la plantilla de proyecto de VSIX"
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Introducci&#243;n a la plantilla de proyecto VSIX
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Crear plantillas para proyectos y elementos en Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "plantillas de Visual Studio, proyecto"
 ms.assetid: a6ce501a-699b-4e3e-ade8-c81895645c20
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Crear plantillas para proyectos y elementos en Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

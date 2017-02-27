@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear plantillas web manualmente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "plantillas web [Visual Studio]"
 ms.assetid: 731c4027-a152-48c5-bfc4-93490bf1949f
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # C&#243;mo: Crear plantillas web manualmente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

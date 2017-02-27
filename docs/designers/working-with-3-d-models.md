@@ -1,8 +1,7 @@
 ---
 title: "Trabajar con modelos 3D | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Trabajar con modelos 3D
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

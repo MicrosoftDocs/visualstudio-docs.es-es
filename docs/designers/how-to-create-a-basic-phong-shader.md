@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Crear un sombreador Phong b&#225;sico | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # C&#243;mo: Crear un sombreador Phong b&#225;sico
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

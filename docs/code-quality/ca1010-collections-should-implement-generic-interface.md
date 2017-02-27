@@ -1,8 +1,7 @@
 ---
 title: "CA1010: Las colecciones deben implementar la interfaz gen&#233;rica | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CollectionsShouldImplementGenericInterface"
 ms.assetid: c7d7126f-fa70-40be-8f93-3243e1760dc5
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # CA1010: Las colecciones deben implementar la interfaz gen&#233;rica
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

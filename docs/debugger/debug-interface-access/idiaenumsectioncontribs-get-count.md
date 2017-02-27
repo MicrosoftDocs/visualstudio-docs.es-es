@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumSectionContribs::get_Count | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumSectionContribs::get_Count (interfaz)"
 ms.assetid: 94f11de3-9393-4a5c-9814-2e6bdb597f70
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaEnumSectionContribs::get_Count
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

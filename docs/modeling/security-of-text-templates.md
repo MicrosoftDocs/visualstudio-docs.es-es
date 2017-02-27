@@ -1,8 +1,7 @@
 ---
 title: "Security of Text Templates | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "text templates, security"
 ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 23
 ---
 # Security of Text Templates
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

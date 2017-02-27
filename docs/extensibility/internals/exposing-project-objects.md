@@ -1,8 +1,7 @@
 ---
 title: "Exponer objetos de proyecto | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "objetos de proyectos de extensibilidad"
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Exponer objetos de proyecto
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

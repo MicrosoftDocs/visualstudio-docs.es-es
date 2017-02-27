@@ -1,8 +1,7 @@
 ---
 title: "Obtener acceso a las capas de texto mediante la API heredada | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "editores [Visual Studio SDK] heredados: capas de texto"
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Obtener acceso a las capas de texto mediante la API heredada
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

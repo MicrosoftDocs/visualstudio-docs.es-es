@@ -1,8 +1,7 @@
 ---
 title: "How to: Create Inheritance Between Types (Class Designer) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "relationships, defining inheritance"
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 30
 ---
 # How to: Create Inheritance Between Types (Class Designer)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

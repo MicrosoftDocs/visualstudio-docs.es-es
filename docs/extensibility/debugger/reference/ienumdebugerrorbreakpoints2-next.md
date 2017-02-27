@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugErrorBreakpoints2::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugErrorBreakpoints2::Next"
 ms.assetid: 6a3dee11-5267-4d77-9e28-6a38413ba70b
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IEnumDebugErrorBreakpoints2::Next
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

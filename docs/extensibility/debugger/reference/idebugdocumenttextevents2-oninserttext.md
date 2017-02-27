@@ -1,8 +1,7 @@
 ---
 title: "IDebugDocumentTextEvents2::onInsertText | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugDocumentTextEvents2::onInsertText"
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugDocumentTextEvents2::onInsertText
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

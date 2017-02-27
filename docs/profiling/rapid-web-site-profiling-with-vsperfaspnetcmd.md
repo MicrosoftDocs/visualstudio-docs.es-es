@@ -1,8 +1,7 @@
 ---
 title: "Generaci&#243;n r&#225;pida de perfiles de sitio web con VSPerfASPNETCmd | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "VSPerfASPNETCmd"
 ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Generaci&#243;n r&#225;pida de perfiles de sitio web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

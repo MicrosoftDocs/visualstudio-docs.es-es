@@ -1,8 +1,7 @@
 ---
 title: "Error: La ejecuci&#243;n de Transact-SQL finaliz&#243; sin depuraci&#243;n | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ dev_langs:
   - "SQL"
 ms.assetid: 7a4d4999-3973-4339-ba6a-f0d19bcb1d4a
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Error: La ejecuci&#243;n de Transact-SQL finaliz&#243; sin depuraci&#243;n
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

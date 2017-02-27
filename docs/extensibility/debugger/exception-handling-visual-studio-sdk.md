@@ -1,8 +1,7 @@
 ---
 title: "Excepciones (SDK de Visual Studio) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "depurar [SDK de depuración], control de excepciones"
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Excepciones (SDK de Visual Studio)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

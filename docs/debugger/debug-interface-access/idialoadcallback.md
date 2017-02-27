@@ -1,8 +1,7 @@
 ---
 title: "IDiaLoadCallback | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaLoadCallback (interfaz)"
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IDiaLoadCallback
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

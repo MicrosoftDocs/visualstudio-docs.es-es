@@ -1,8 +1,7 @@
 ---
 title: "Crear una extensi&#243;n con un comando de men&#250; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "paquete de Visual studio"
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 56
-caps.handback.revision: 56
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 56
 ---
 # Crear una extensi&#243;n con un comando de men&#250;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

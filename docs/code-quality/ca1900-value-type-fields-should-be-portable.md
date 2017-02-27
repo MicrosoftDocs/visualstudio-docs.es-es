@@ -1,8 +1,7 @@
 ---
 title: "CA1900: Los campos de tipos de valor deber&#237;an ser port&#225;tiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1900"
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # CA1900: Los campos de tipos de valor deber&#237;an ser port&#225;tiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

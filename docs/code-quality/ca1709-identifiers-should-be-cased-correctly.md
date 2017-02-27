@@ -1,8 +1,7 @@
 ---
 title: "CA1709: Los identificadores deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "IdentifiersShouldBeCasedCorrectly"
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 caps.latest.revision: 29
-caps.handback.revision: 29
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 29
 ---
 # CA1709: Los identificadores deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

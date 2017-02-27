@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Depurar un formulario Web Forms | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "sitios Web [.NET Framework], depurar"
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 caps.latest.revision: 31
-caps.handback.revision: 31
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 31
 ---
 # Tutorial: Depurar un formulario Web Forms
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

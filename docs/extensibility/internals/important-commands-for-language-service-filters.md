@@ -1,8 +1,7 @@
 ---
 title: "Comandos importantes para los filtros de servicio de lenguaje | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Servicios de lenguaje de comandos para admitir"
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Comandos importantes para los filtros de servicio de lenguaje
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

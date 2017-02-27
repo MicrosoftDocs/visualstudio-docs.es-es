@@ -1,8 +1,7 @@
 ---
 title: "IDebugEngineLaunch2::TerminateProcess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugEngineLaunch2::TerminateProcess"
 ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # IDebugEngineLaunch2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

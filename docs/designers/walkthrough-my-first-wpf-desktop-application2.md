@@ -1,8 +1,7 @@
 ---
 title: "Tutorial: Mi primera aplicaci&#243;n de escritorio WPF | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Tutorial: Mi primera aplicaci&#243;n de escritorio WPF
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Mostrar pila de llamadas (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "mostrar pila de llamadas (comando)"
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Mostrar pila de llamadas (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

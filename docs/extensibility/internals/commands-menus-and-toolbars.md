@@ -1,8 +1,7 @@
 ---
 title: "Barras de herramientas, men&#250;s y comandos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "barras de herramientas [Visual Studio], comandos"
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 60
-caps.handback.revision: 60
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 60
 ---
 # Barras de herramientas, men&#250;s y comandos
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

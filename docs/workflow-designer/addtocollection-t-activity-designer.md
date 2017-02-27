@@ -1,8 +1,7 @@
 ---
 title: "Dise&#241;ador de actividades AddToCollection&lt;T&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.AddToCollection`1.UI"
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Dise&#241;ador de actividades AddToCollection&lt;T&gt;
 El diseñador de actividades **AddToCollection\<T\>** se utiliza para crear y configurar una actividad <xref:System.Activities.Statements.AddToCollection%601>.  

@@ -1,8 +1,7 @@
 ---
 title: "UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura UNMANAGED_ADDRESS_PHYSICAL"
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # UNMANAGED_ADDRESS_PHYSICAL
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

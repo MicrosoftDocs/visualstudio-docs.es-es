@@ -1,8 +1,7 @@
 ---
 title: "Ruta de acceso de s&#237;mbolos (Comando) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "SymbolPath (comando)"
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Ruta de acceso de s&#237;mbolos (Comando)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

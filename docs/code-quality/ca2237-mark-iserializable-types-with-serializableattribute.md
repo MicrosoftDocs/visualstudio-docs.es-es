@@ -1,8 +1,7 @@
 ---
 title: "CA2237: Marcar los tipos ISerializable con SerializableAttribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "MarkISerializableTypesWithSerializable"
 ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA2237: Marcar los tipos ISerializable con SerializableAttribute
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

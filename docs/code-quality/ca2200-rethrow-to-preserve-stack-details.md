@@ -1,8 +1,7 @@
 ---
 title: "CA2200: Iniciar de nuevo para preservar los detalles de la pila | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "RethrowToPreserveStackDetails"
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # CA2200: Iniciar de nuevo para preservar los detalles de la pila
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

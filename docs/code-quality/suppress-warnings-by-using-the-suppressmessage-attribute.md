@@ -1,8 +1,7 @@
 ---
 title: "Suprimir advertencias mediante el atributo SuppressMessage | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "SuppressMessage (atributo)"
 ms.assetid: a38c57a2-d29d-43c0-84ff-3308b2484ce6
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # Suprimir advertencias mediante el atributo SuppressMessage
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

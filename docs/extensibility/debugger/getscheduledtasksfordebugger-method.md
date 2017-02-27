@@ -1,8 +1,7 @@
 ---
 title: "GetScheduledTasksForDebugger (m&#233;todo) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Método GetScheduledTasksForDebugger, clase de TaskScheduler [motores de depuración de .NET Framework]"
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # GetScheduledTasksForDebugger (m&#233;todo)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

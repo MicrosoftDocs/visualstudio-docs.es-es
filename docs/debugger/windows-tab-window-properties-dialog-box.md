@@ -1,8 +1,7 @@
 ---
 title: "Pesta&#241;a Ventanas (Cuadro de di&#225;logo Propiedades de la ventana) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Cuadro de diálogo Propiedades de la ventana, pestaña Ventanas"
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Pesta&#241;a Ventanas (Cuadro de di&#225;logo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

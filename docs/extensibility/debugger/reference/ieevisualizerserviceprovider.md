@@ -1,8 +1,7 @@
 ---
 title: "IEEVisualizerServiceProvider | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IEEVisualizerServiceProvider"
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 caps.latest.revision: 17
-caps.handback.revision: 17
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # IEEVisualizerServiceProvider
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

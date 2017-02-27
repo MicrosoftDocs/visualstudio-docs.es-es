@@ -1,8 +1,7 @@
 ---
 title: "METADATA_ADDRESS_LOCAL | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Estructura METADATA_ADDRESS_LOCAL"
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # METADATA_ADDRESS_LOCAL
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

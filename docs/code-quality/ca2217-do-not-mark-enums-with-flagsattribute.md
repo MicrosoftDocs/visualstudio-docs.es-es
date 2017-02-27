@@ -1,8 +1,7 @@
 ---
 title: "CA2217: No marcar enumeraciones con FlagsAttribute | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotMarkEnumsWithFlags"
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 20
 ---
 # CA2217: No marcar enumeraciones con FlagsAttribute
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

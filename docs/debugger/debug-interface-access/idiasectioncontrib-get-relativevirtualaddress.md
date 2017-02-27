@@ -1,8 +1,7 @@
 ---
 title: "IDiaSectionContrib::get_relativeVirtualAddress | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSectionContrib::get_relativeVirtualAddress (método)"
 ms.assetid: 32f9674d-94f1-4590-99de-a2eb60da4af8
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSectionContrib::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,8 @@
 ---
+redirect_url: /visualstudio/csharp-ide/refactoring-csharp
 title: "C&#243;mo: Restaurar miniprogramas de refactorizaci&#243;n de C# | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +14,10 @@ helpviewer_keywords:
   - "expansión no segura"
 ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
 caps.latest.revision: 20
-caps.handback.revision: 20
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # C&#243;mo: Restaurar miniprogramas de refactorizaci&#243;n de C# #
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

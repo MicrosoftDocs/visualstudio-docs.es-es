@@ -1,8 +1,7 @@
 ---
 title: "IDebugObject2::GetBackingFieldForProperty | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugObject2::GetBackingFieldForProperty (método)"
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

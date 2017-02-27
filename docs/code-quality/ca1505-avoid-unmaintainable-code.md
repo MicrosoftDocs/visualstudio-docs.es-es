@@ -1,8 +1,7 @@
 ---
 title: "CA1505: Evitar el c&#243;digo dif&#237;cil de mantener | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1505"
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 14
 ---
 # CA1505: Evitar el c&#243;digo dif&#237;cil de mantener
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

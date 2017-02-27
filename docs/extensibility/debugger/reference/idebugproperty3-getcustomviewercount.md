@@ -1,8 +1,7 @@
 ---
 title: "IDebugProperty3::GetCustomViewerCount | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugProperty3::GetCustomViewerCount"
 ms.assetid: dc5bb3e4-dc85-46e4-98fa-c6be8583b985
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugProperty3::GetCustomViewerCount
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "IDebugDocumentText2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Interfaz IDebugDocumentText2"
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

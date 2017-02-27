@@ -1,41 +1,23 @@
 ---
-title: "Guía del administrador de Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 01/12/2017
-ms.prod: visual-studio-dev15
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- network installation, Visual Studio
-- administrator guide, Visual Studio
-- installing Visual Studio, administrator guide
+title: "Gu&#237;a del administrador de Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/12/2017"
+ms.prod: "visual-studio-dev15"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-install"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "instalación de red, Visual Studio"
+  - "Guía del administrador, Visual Studio"
+  - "instalación de Visual Studio, guía del administrador"
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5e1ab0284a11fb9ecf30694d22b8bb5dc7a52a6d
-ms.openlocfilehash: 91fb897e0bf124234484c3aada08ac57c4be1923
-
+author: "TerryGLee"
+ms.author: "tglee"
+manager: "ghogen"
+caps.handback.revision: 68
 ---
 # <a name="visual-studio-administrator-guide-for-visual-studio-2017-rc"></a>Guía del administrador de Visual Studio para Visual Studio 2017 RC
 

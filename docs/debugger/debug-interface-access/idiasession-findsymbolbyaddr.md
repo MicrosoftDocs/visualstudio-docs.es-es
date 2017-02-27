@@ -1,8 +1,7 @@
 ---
 title: "IDiaSession::findSymbolByAddr | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaSession::findSymbolByAddr (método)"
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # IDiaSession::findSymbolByAddr
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

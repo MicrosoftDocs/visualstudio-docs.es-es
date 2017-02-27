@@ -1,8 +1,7 @@
 ---
 title: "Informaci&#243;n general sobre la ventana Propiedades | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Propiedades (ventana)"
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Informaci&#243;n general sobre la ventana Propiedades
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

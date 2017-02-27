@@ -1,8 +1,7 @@
 ---
 title: "IEnumDebugCustomAttributes::Clone | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IEnumDebugCustomAttributes::Clone"
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # IEnumDebugCustomAttributes::Clone
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

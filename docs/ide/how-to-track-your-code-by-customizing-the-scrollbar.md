@@ -1,8 +1,7 @@
 ---
 title: "C&#243;mo: Hacer un seguimiento del c&#243;digo personalizando la barra de desplazamiento | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # C&#243;mo: Hacer un seguimiento del c&#243;digo personalizando la barra de desplazamiento
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

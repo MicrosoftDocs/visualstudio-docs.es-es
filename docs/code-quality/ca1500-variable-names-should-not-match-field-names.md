@@ -1,8 +1,7 @@
 ---
 title: "CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "CA1500"
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 24
 ---
 # CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

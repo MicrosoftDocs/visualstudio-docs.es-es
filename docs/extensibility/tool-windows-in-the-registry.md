@@ -1,8 +1,7 @@
 ---
 title: "Ventanas de herramientas en el registro | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "ventanas de herramientas, registrar"
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Ventanas de herramientas en el registro
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

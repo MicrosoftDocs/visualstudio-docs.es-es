@@ -1,8 +1,7 @@
 ---
 title: "Recopilar datos de simultaneidad para un servicio utilizando la l&#237;nea de comandos del generador de perfiles | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Recopilar datos de simultaneidad para un servicio utilizando la l&#237;nea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

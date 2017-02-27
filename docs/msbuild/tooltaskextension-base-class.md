@@ -1,8 +1,7 @@
 ---
 title: "ToolTaskExtension (Clase base) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ dev_langs:
   - "jsharp"
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # ToolTaskExtension (Clase base)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

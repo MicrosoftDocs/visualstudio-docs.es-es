@@ -1,8 +1,7 @@
 ---
 title: "IDiaEnumDebugStreamData::Next | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IDiaEnumDebugStreamData::Next (método)"
 ms.assetid: 114171dd-38fd-4bd7-a702-8ff887ffc99b
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # IDiaEnumDebugStreamData::Next
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
