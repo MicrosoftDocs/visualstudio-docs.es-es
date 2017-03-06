@@ -28,9 +28,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 09f14e5b28a506d4f2112f82ee4fd6b0855a8f93
-ms.openlocfilehash: 67e143e1b95a0e4d881d7d6bccae0d7445897aa2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
+ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017
@@ -76,6 +76,8 @@ Para actualizar las referencias de NuGet para Microsoft.VSSDK.BuildTools:
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Realice los cambios en el manifiesto de la extensión VSIX
 
 Para asegurarse de que la instalación del usuario de Visual Studio tiene todos los ensamblados necesarios para ejecutar la extensión, especifique todos los componentes de requisitos previos o paquetes en el archivo de manifiesto de la extensión. Cuando un usuario intenta instalar la extensión, el VSIXInstaller comprobará para ver si están instalados todos los requisitos previos. Si faltan algunos, le pedirá al usuario para instalar los componentes que faltan como parte del proceso de instalación de extensión.
+
+>**Nota:** como mínimo, todas las extensiones deben especificar el componente de editor principal de Visual Studio como un requisito previo.
 
 * Edite el archivo de manifiesto de extensión (normalmente denominada source.extension.vsixmanifest).
 * Asegúrese de `InstallationTarget` incluye 15.0.
@@ -215,3 +217,4 @@ Ejemplos:
 
 * Si tiene una extensión depuradora y sabe que el proyecto tiene una referencia a VSDebugEng.dll y VSDebug.dll, haga clic en el botón de filtro en el **archivos binarios y nombres de archivos** encabezado.  Busque "VSDebugEng.dll" y haga clic en Aceptar.  A continuación, haga clic en el botón de filtro en el **archivos binarios y nombres de archivos** encabezado nuevo y busque "VSDebug.dll".  Seleccione la casilla de verificación "Agregar la selección actual al filtro" y haga clic en Aceptar.  Ahora examine el **nombre de componente** para encontrar un componente más relacionadas con el tipo de extensión. En este ejemplo, se eligió Just-In-Time del depurador y agregarlo a su vsixmanifest.
 * Si sabe que el proyecto se trata con elementos del depurador, puede buscar en "debugger" en el cuadro de búsqueda del filtro para ver qué componentes contienen a depurador en su nombre.
+
