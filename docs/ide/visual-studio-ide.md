@@ -1,17 +1,36 @@
 ---
-title: "IDE de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/17/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: IDE de Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 01/17/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 10db0535b950f1a1525bab89a6df25e4e3f40012
+ms.lasthandoff: 03/03/2017
+
 ---
 # <a name="visual-studio-ide"></a>IDE de Visual Studio
 Microsoft Visual Studio 2017 RC es un conjunto de herramientas para crear software, desde la fase de planificación pasando por la fases de diseño de la interfaz de usuario, codificación, pruebas, depuración, análisis de la calidad y el rendimiento del código, implementación en los clientes y recopilación de telemetría de uso. Estas herramientas están diseñadas para trabajar juntas de la forma más eficiente posible y todas se exponen a través del Entorno de desarrollo integrado (IDE) de Visual Studio.  
@@ -202,11 +221,6 @@ Para obtener información sobre las nuevas características de Visual Studio 201
  [Instalar Visual Studio 2017 RC](../install/install-visual-studio.md)   
  [Edición del código](https://www.visualstudio.com/features/ide-vs)   
  [Novedades en Visual Studio 2017 RC](../ide/whats-new-in-visual-studio.md)   
- [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
+ [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Hable con nosotros](../ide/talk-to-us.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
