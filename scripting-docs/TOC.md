@@ -1,4 +1,4 @@
-# [JavaScript](javascript\TOC.md)
-# [JavaScript y Windows Runtime](jswinrt\TOC.md)
-# [Tiempo de ejecución de JavaScript](chakra-hosting\TOC.md)
-# [Windows Script](winscript\TOC.md)
+# [Referencia del lenguaje JavaScript](javascript/javascript-language-reference.md)
+# [Uso de Windows Runtime en JavaScript](jswinrt/using-the-windows-runtime-in-javascript.md)
+# [Hospedaje de tiempo de ejecución de JavaScript](chakra-hosting/javascript-runtime-hosting.md)
+# [Windows Script (Interfaces)](winscript/windows-script-interfaces.md)
