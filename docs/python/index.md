@@ -1,12 +1,8 @@
 ---
-redirect_url: /visualstudio/python/getting-started-with-python
+redirect_url: /visualstudio/python/python-in-visual-studio
 translationtype: Human Translation
-ms.sourcegitcommit: ecde7a4a12265f3cc656cb56259848e7246df2fd
-ms.openlocfilehash: e4f5f84c55aea8b9bac95bb2e7c086462ca73eb9
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 539ef7e353320665bcb6d76cce0ab8036c3b9cc2
+ms.lasthandoff: 03/07/2017
 
 ---
-
-
-<!--HONumber=Feb17_HO4-->
-
-
