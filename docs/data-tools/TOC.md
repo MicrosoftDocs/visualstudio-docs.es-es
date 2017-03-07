@@ -64,7 +64,6 @@
 #### [No se puede eliminar la propiedad <property name> porque participa en la asociación <association name>](the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 #### [No se puede eliminar la propiedad <property name>](the-property-property-name-cannot-be-deleted.md)
 #### [Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación](the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)
-<!--#### [You have selected a database object from an unsupported database provider](you-have-selected-a-database-object-from-an-unsupported-database-provider.md)-->
 #### [No se puede crear una asociación <association name>; los tipos de propiedad no coinciden](cannot-create-an-association-association-name-property-types-do-not-match.md)
 #### [Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado](warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
 #### [Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación](this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
@@ -99,7 +98,7 @@
 ### [Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos](customize-how-visual-studio-creates-captions-for-data-bound-controls.md)
 ## [Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio](windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 ### [Cómo: Conectarse a los datos en un servicio](how-to-connect-to-data-in-a-service.md)
-### [Tutorial: Crear un servicio WCF sencillo en Windows Forms](walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+### [Tutorial: Crear un servicio WCF en Windows Forms](walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
 ### [Tutorial: Crear un servicio de datos de WCF con WPF y Entity Framework](walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)
 ### [Trabajar con un modelo conceptual (Servicios de datos de WCF)](working-with-a-conceptual-model-wcf-data-services.md)
 ### [Solucionar problemas de referencias de servicio](troubleshooting-service-references.md)
