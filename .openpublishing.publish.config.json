@@ -27,6 +27,15 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.es-es",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+       "path_to_root": "_repo.en-us",
+       "url": "https://github.com/Microsoft/vsdocs",
+       "branch": "master",
+       "branch_mapping": {
+         "master": "master",
+         "live": "live"
+       }
     }
   ]
 }
