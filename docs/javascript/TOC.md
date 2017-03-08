@@ -1,1 +1,1 @@
-# [JavaScript en Visual Studio](javascript-in-visual-studio.md)
+# [JavaScript en Visual Studio](/scripting/javascript/index.md)
