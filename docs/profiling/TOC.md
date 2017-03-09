@@ -1,4 +1,4 @@
-# [Herramientas de generación de perfiles](index.md)
+# [Herramientas de generación de perfiles](profiling-tools.md)
 ## [Guía de características de generación de perfiles](profiling-feature-tour.md)
 ## [Guía básica para la generación de perfiles de rendimiento](beginners-guide-to-performance-profiling.md)
 ## [Novedades de las herramientas de generación de perfiles](what-s-new-in-profiling-tools.md)
