@@ -57,7 +57,7 @@
             "searchScope": ["VS IDE"]},
     "fileMetadata": {},
     "template": [],
-    "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
+    "xref": ["../_repo.en-us/docs/msdn.4.5.2.zip", "../_repo.en-us/docs/namespaces.4.5.2.zip", "../_repo.en-us/docs/vs.110.zip", "../_repo.en-us/docs/vs.140.zip", "../_repo.en-us/docs/office15.zip"],
     "dest": "vsdocsdocs"
   }
 }
