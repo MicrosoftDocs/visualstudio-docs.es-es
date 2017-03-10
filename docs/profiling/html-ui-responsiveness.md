@@ -1,35 +1,51 @@
 ---
-title: "Capacidad de respuesta de la interfaz de usuario HTML | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "rendimiento, JavaScript [aplicaciones de la Tienda Windows]"
-  - "herramientas de rendimiento, JavaScript [aplicaciones de la Tienda Windows]"
-  - "generador de perfiles de la capacidad de respuesta de interfaz de usuario [JavaScript]"
-  - "generador de perfiles, capacidad de respuesta de la interfaz de usuario [JavaScript]"
-  - "generador de perfiles, JavaScript [aplicaciones de la Tienda Windows]"
+title: Capacidad de respuesta de la interfaz de usuario HTML | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- performance, JavaScript [Windows Store apps]
+- performance tools, JavaScript [Windows Store apps]
+- UI Responsiveness Profiler [JavaScript]
+- profiler, UI responsiveness [JavaScript]
+- profiler, JavaScript [Windows Store apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: 47
-caps.handback.revision: 47
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Capacidad de respuesta de la interfaz de usuario HTML
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
+ms.openlocfilehash: 1d230cb011c93ce48a855e86355d4a6ccdf55a29
+ms.lasthandoff: 02/22/2017
 
+---
+# <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
 En este tema se describe cómo aislar los problemas de rendimiento en sus aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
   
  El generador de perfiles de la capacidad de respuesta de la IU puede ayudarle a aislar los problemas, como los relacionados con la respuesta de la IU, o los efectos secundarios de la plataforma que aparecen normalmente con estos síntomas:  
@@ -38,18 +54,18 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
 -   Tiempo de carga lento de la aplicación o de una página. Esto suele deberse a que se emplea demasiado tiempo en cargar los recursos.  
   
--   Las actualizaciones visuales son menos frecuentes de lo esperado. Esto ocurre si el subproceso de interfaz de usuario está demasiado ocupado para mantener una velocidad de fotogramas suave. Por ejemplo, si el subproceso de interfaz de usuario está ocupado, es posible que se pierdan fotogramas. Ciertos trabajos no relacionados con el subproceso de interfaz de usuario, como las solicitudes de red, la descodificación de imágenes y las operaciones de pintura, también pueden limitar la frecuencia de las actualizaciones visuales. \(No todas las operaciones de pintura se realizan en el subproceso de interfaz de usuario\).  
+-   Las actualizaciones visuales son menos frecuentes de lo esperado. Esto ocurre si el subproceso de interfaz de usuario está demasiado ocupado para mantener una velocidad de fotogramas suave. Por ejemplo, si el subproceso de interfaz de usuario está ocupado, es posible que se pierdan fotogramas. Ciertos trabajos no relacionados con el subproceso de interfaz de usuario, como las solicitudes de red, la descodificación de imágenes y las operaciones de pintura, también pueden limitar la frecuencia de las actualizaciones visuales. (No todas las operaciones de pintura se realizan en el subproceso de interfaz de usuario).  
   
 ##  <a name="RunningProfiler"></a> Ejecutar la herramienta de capacidad de respuesta de la interfaz de usuario HTML  
  Puede usar la herramienta de capacidad de respuesta de la interfaz de usuario HTML si tiene una aplicación universal de Windows o de la Tienda Windows abierta en Visual Studio o instalada en un equipo que ejecuta Windows 8 o una versión posterior.  
   
-1.  Si estás ejecutando la aplicación desde Visual Studio, en la barra de herramientas **Estándar**, en la lista **Iniciar depuración**, elige un destino de implementación, como uno de los emuladores de Windows Phone, **Equipo local**, **Simulador** o **Equipo remoto**.  
+1.  Si estás ejecutando la aplicación desde Visual Studio, en la barra de herramientas **Estándar** , en la lista **Iniciar depuración** , elige un destino de implementación, como uno de los emuladores de Windows Phone, **Equipo local**, **Simulador**o **Equipo remoto**.  
   
-2.  En el menú **Depurar**, elija **Performance Profiler...** \(Generador de perfiles de rendimiento...\).  
+2.  En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
   
-     Si quiere cambiar el destino del análisis del generador de perfiles, elija **Cambiar destino**.  
+     Si quiere cambiar el destino del análisis del generador de perfiles, elija**Cambiar destino**.  
   
-     ![Cambiar destino de análisis](../profiling/media/js_tools_target.png "JS\_Tools\_Target")  
+     ![Cambiar destino de análisis](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      Tienes las siguientes opciones disponibles para el destino de análisis:  
   
@@ -63,29 +79,29 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
          Puedes usar esta opción para analizar el rendimiento de las aplicaciones que has instalado en el equipo cuando no tienes acceso al código fuente. Esta opción también es útil cuando solo deseas analizar el rendimiento de cualquier aplicación que no forma parte de tu trabajo de desarrollo de aplicaciones.  
   
-3.  En **Herramientas disponibles**, selecciona **Capacidad de respuesta de la IU de HTML** y elige **Iniciar**.  
+3.  En **Herramientas disponibles**, selecciona **Capacidad de respuesta de la IU de HTML**y elige **Iniciar**.  
   
 4.  Al iniciar el generador de perfiles de la capacidad de respuesta de la IU, puede aparecer una ventana de Control de cuentas de usuario que solicite tu permiso para ejecutar Visual Studio ETW Collector.exe. Elija **Sí**.  
   
-     Interactúa con la aplicación para probar el escenario de rendimiento pertinente. Para obtener un flujo de trabajo detallado, consulte [Aislar un problema de capacidad de respuesta de la IU](#Workflow) y [Aislar un problema de rendimiento visual](#IsolateVisualThroughput).  
+     Interactúa con la aplicación para probar el escenario de rendimiento pertinente. Para obtener un flujo de trabajo detallado, consulte [Aislar un problema de capacidad de respuesta de la IU](#Workflow) y [Isolate a visual throughput problem](#IsolateVisualThroughput).  
   
-5.  Cambia a Visual Studio presionando Alt\+Tab.  
+5.  Cambia a Visual Studio presionando Alt+Tab.  
   
 6.  Para detener la generación de perfiles de la aplicación y ver los datos recopilados por el generador de perfiles, elige **Detener colección**.  
   
 ##  <a name="IsolateAnIssue"></a> Aislar un problema  
- En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Si lo que necesitas es una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de pruebas de rendimiento de ejemplo, consulta [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario \(HTML\)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de prueba de rendimiento de ejemplo, consulte [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU  
  Estos pasos proporcionan un flujo de trabajo sugerido que puede ayudarte a utilizar el generador de perfiles de la capacidad de respuesta de la IU de forma más eficaz:  
   
 1.  Abre la aplicación en Visual Studio.  
   
-2.  Prueba la aplicación para detectar problemas de capacidad de respuesta de la IU. \(Presiona Ctrl\+F5 para iniciar la aplicación sin depurar\).  
+2.  Prueba la aplicación para detectar problemas de capacidad de respuesta de la IU. (Presiona Ctrl+F5 para iniciar la aplicación sin depurar).  
   
      Si encuentras algún problema, sigue probando para intentar restringir el intervalo de tiempo en que este se produce o identificar los desencadenadores que causan dicho comportamiento.  
   
-3.  Cambia a Visual Studio \(presiona Alt\+Tab\) y detén la aplicación \(Mayús\+F5\).  
+3.  Cambia a Visual Studio (presiona Alt+Tab) y detén la aplicación (Mayús+F5).  
   
 4.  Opcionalmente, agregue marcas de usuario al código mediante [Marcar código para el análisis](#ProfileMark).  
   
@@ -96,11 +112,11 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
 6.  Pon la aplicación en el estado que da como resultado un problema de capacidad de respuesta de la IU.  
   
-7.  Cambia a Visual Studio \(presiona Alt\+Tab\) y elige **Detener colección** en la pestaña del generador de perfiles de la capacidad de respuesta de la IU.  
+7.  Cambia a Visual Studio (presiona Alt+Tab) y elige **Detener colección** en la pestaña del generador de perfiles de la capacidad de respuesta de la IU.  
   
 8.  Si ha agregado marcas de usuario, estas aparecerán en la [Ver la escala de tiempo de la sesión de diagnóstico](#Ruler) del generador de perfiles. En la ilustración siguiente se muestra una marca de usuario única que se usa para especificar una operación determinada en el código.  
   
-     ![Regla de diagnósticos que muestra una marca de usuario](../profiling/media/js_htmlvizprofiler_usermark.png "JS\_HTMLVizProfiler\_UserMark")  
+     ![Regla de diagnósticos que muestra una marca de usuario](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. Identifica un área de interés en la escala de tiempo y los gráficos del generador de perfiles mediante marcas de usuario, eventos del ciclo de vida de la aplicación o datos visibles en los gráficos. A continuación se ofrecen algunas instrucciones para ayudarte a analizar y usar los datos en los gráficos:  
   
@@ -110,13 +126,13 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
     -   Si está desarrollando un juego o una aplicación multimedia compleja, use el [Ver el rendimiento visual (FPS)](#VisualThroughput) para identificar los períodos de tiempo en los que disminuyó la velocidad de los fotogramas.  
   
-10. Selecciona el área de interés en uno de los gráficos haciendo clic en una parte del gráfico y arrastrando el puntero para realizar una selección \(o usando la tecla TAB y las teclas de dirección\). Al seleccionar un período de tiempo de esta manera, el gráfico de detalles de la escala de tiempo situado en el panel inferior del generador de perfiles cambia para mostrar solo el período de tiempo seleccionado.  
+10. Selecciona el área de interés en uno de los gráficos haciendo clic en una parte del gráfico y arrastrando el puntero para realizar una selección (o usando la tecla TAB y las teclas de dirección). Al seleccionar un período de tiempo de esta manera, el gráfico de detalles de la escala de tiempo situado en el panel inferior del generador de perfiles cambia para mostrar solo el período de tiempo seleccionado.  
   
      En la ilustración siguiente se muestra el gráfico de uso de CPU con un área de interés resaltada.  
   
-     ![Gráfico de uso de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS\_HTMLVizProf\_CPU\_Util")  
+     ![Gráfico de utilización de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
-11. Use el [Ver detalles de la escala de tiempo](#TimelineDetails) para obtener información detallada sobre los eventos que se ejecutan con demasiada frecuencia o tardan demasiado en completarse. Por ejemplo, busca lo siguiente:  
+11. Use la [Ver detalles de la escala de tiempo](#TimelineDetails) para obtener información detallada sobre los eventos que se ejecutan con demasiada frecuencia o tardan demasiado en completarse. Por ejemplo, busca lo siguiente:  
   
     -   Agentes de escucha de eventos, temporizadores y devoluciones de llamada de fotogramas de animación. En función del evento concreto, los datos que se ofrecen pueden incluir el id. de los elementos DOM modificados, el nombre de las propiedades CSS modificadas, un vínculo a la ubicación de origen y el nombre del evento asociado o de la función de devolución de llamada.  
   
@@ -124,12 +140,12 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
     -   Páginas o recursos de direcciones URL cargados por la aplicación, como evaluaciones de script de eventos de análisis de HTML. Se proporciona el nombre de archivo o recurso.  
   
-    -   Otros eventos especificados en [Referencia de eventos del generador de perfiles](#ProfilerEvents).  
+    -   Otros eventos especificados en [Profiler event reference](#ProfilerEvents).  
   
     > [!TIP]
     >  La mayor parte de la información útil del generador de perfiles aparece en el gráfico de detalles de la escala de tiempo.  
   
-12. Selecciona un área en el gráfico de uso de CPU o de rendimiento visual \(FPS\) y elige **Acercar** \(el botón o menú contextual\) para obtener información más detallada. La escala de tiempo para el gráfico cambia para mostrar solo el período de tiempo seleccionado.  
+12. Selecciona un área en el gráfico de uso de CPU o de rendimiento visual (FPS) y elige **Acercar** (el botón o menú contextual) para obtener información más detallada. La escala de tiempo para el gráfico cambia para mostrar solo el período de tiempo seleccionado.  
   
 13. Una vez hayas acercado la imagen, selecciona una parte del gráfico de uso de CPU o de rendimiento visual. Al realizar una selección, el gráfico de detalles de la escala de tiempo situado en el panel inferior del generador de perfiles cambia para mostrar solo el período de tiempo seleccionado.  
   
@@ -139,7 +155,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
  Para aislar un problema de rendimiento visual, sigue los pasos descritos en la sección anterior, pero usa el gráfico de rendimiento visual como uno de los puntos de datos clave.  
   
 ###  <a name="ProfileMark"></a> Marcar código para el análisis  
- Para poder aislar una sección del código de la aplicación que esté asociada con los datos que aparecen en los gráficos, puedes agregar a la aplicación una llamada a una función que indique al generador de perfiles que debe insertar una marca de usuario \(triángulo invertido\) en la escala de tiempo en el momento en que la función se ejecute. Las marcas de usuario agregadas aparecen en la escala de tiempo de los gráficos de uso de CPU, de rendimiento visual y de detalles de la escala de tiempo.  
+ Para poder aislar una sección del código de la aplicación que esté asociada con los datos que aparecen en los gráficos, puedes agregar a la aplicación una llamada a una función que indique al generador de perfiles que debe insertar una marca de usuario (triángulo invertido) en la escala de tiempo en el momento en que la función se ejecute. Las marcas de usuario agregadas aparecen en la escala de tiempo de los gráficos de uso de CPU, de rendimiento visual y de detalles de la escala de tiempo.  
   
  Para agregar una marca de usuario, agrega el código siguiente a la aplicación. En este ejemplo se usa "getting data" como descripción del evento.  
   
@@ -157,9 +173,9 @@ if (performance && performance.mark) {
   
  En la ilustración siguiente se muestra la regla de diagnósticos con una única marca de usuario y la información sobre herramientas.  
   
- ![Regla de diagnósticos que muestra una marca de usuario](../profiling/media/js_htmlvizprofiler_usermark.png "JS\_HTMLVizProfiler\_UserMark")  
+ ![Regla de diagnósticos que muestra una marca de usuario](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
- También puede crear eventos generados por la herramienta en la vista de detalles de la escala de tiempo para mostrar el período de tiempo existente entre dos marcas de usuario. El código siguiente agrega una segunda marca de usuario y una medida del tiempo transcurrido entre la ejecución de las dos marcas de usuario \(el código anterior muestra la primera marca de usuario\).  
+ También puede crear eventos generados por la herramienta en la vista de detalles de la escala de tiempo para mostrar el período de tiempo existente entre dos marcas de usuario. El código siguiente agrega una segunda marca de usuario y una medida del tiempo transcurrido entre la ejecución de las dos marcas de usuario (el código anterior muestra la primera marca de usuario).  
   
 ```javascript  
 if (performance.mark && performance.measure) {  
@@ -172,7 +188,7 @@ if (performance.mark && performance.measure) {
   
  La medida de la duración aparece como un evento de **medida de usuario** en la vista de detalles de la escala de tiempo y muestra información detallada cuando se selecciona.  
   
- ![Utilizar el evento de medición en la vista de detalles de la escala de tiempo](../profiling/media/js_htmlvizprofiler_user_measure.png "JS\_HTMLVizProfiler\_User\_Measure")  
+ ![Utilizar el evento de medición en la vista de detalles de la escala de tiempo](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ##  <a name="AnalyzeData"></a> Analizar datos  
  En las secciones siguientes se proporciona información para ayudar a interpretar los datos que aparecen en el generador de perfiles.  
@@ -182,9 +198,9 @@ if (performance.mark && performance.measure) {
   
  Este es el aspecto de la escala de tiempo de la sesión de diagnóstico al mostrar información sobre herramientas para varios eventos del ciclo de vida de la aplicación:  
   
- ![Regla de sesión de diagnóstico](../profiling/media/js_htmlvizprof_ruler.png "JS\_HTMLVizProf\_Ruler")  
+ ![Regla de sesión de diagnóstico](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
- La escala de tiempo muestra cuándo se producen los eventos del ciclo de vida de la aplicación, como el evento de activación, y muestra marcas de usuario \(triángulos de marca de usuario\) que puedes agregar al código. Puede seleccionar los eventos para mostrar información sobre herramientas con más información. Para obtener más información sobre las marcas de usuario, consulte [Marcar código para el análisis](#ProfileMark) en este tema.  
+ La escala de tiempo muestra cuándo se producen los eventos del ciclo de vida de la aplicación, como el evento de activación, y muestra marcas de usuario (triángulos de marca de usuario) que puedes agregar al código. Puede seleccionar los eventos para mostrar información sobre herramientas con más información. Para obtener más información sobre las marcas de usuario, consulte [Marcar código para el análisis](#ProfileMark) en este tema.  
   
  Los eventos del ciclo de vida de la aplicación aparecen como símbolos con forma de diamante. Estos son eventos DOM, entre los que se incluyen:  
   
@@ -193,7 +209,7 @@ if (performance.mark && performance.measure) {
 -   Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.  
   
 ###  <a name="CPUUtilization"></a> Ver uso de CPU  
- El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados \(**GC**\), **Aplicación de estilos**, **Representación** y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Referencia de eventos del generador de perfiles](#ProfilerEvents) en este tema.  
+ El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
   
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.  
   
@@ -202,7 +218,7 @@ if (performance.mark && performance.measure) {
   
  En este ejemplo se muestra el aspecto del gráfico de uso de CPU:  
   
- ![Gráfico de uso de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS\_HTMLVizProf\_CPU\_Util")  
+ ![Gráfico de utilización de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Utiliza este gráfico para:  
   
@@ -210,12 +226,12 @@ if (performance.mark && performance.measure) {
   
 -   Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
   
--   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar**.  
+-   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
   
- Para obtener más información sobre el uso del gráfico, consulte [Aislar un problema de capacidad de respuesta de la IU](#Workflow) en este tema.  
+ Para obtener más información sobre el uso del gráfico, consulte [Isolate a UI responsiveness problem](#Workflow) en este tema.  
   
-###  <a name="VisualThroughput"></a> Ver el rendimiento visual \(FPS\)  
- El gráfico de rendimiento visual te permite identificar los períodos de tiempo en los que disminuyó la velocidad de fotogramas. Muestra los fotogramas por segundo \(FPS\) para la aplicación. Este gráfico es muy útil para el desarrollo de juegos y aplicaciones multimedia complejas.  
+###  <a name="VisualThroughput"></a> Ver el rendimiento visual (FPS)  
+ El gráfico de rendimiento visual te permite identificar los períodos de tiempo en los que disminuyó la velocidad de fotogramas. Muestra los fotogramas por segundo (FPS) para la aplicación. Este gráfico es muy útil para el desarrollo de juegos y aplicaciones multimedia complejas.  
   
  Es posible que el valor de FPS mostrado difiera de la velocidad de fotogramas real. Ten esto en cuenta al examinar los datos de este gráfico:  
   
@@ -227,7 +243,7 @@ if (performance.mark && performance.measure) {
   
  En este ejemplo se muestra el aspecto del gráfico de rendimiento visual:  
   
- ![Gráfico de rendimiento visual](../profiling/media/js_htmlvizprof_vizthru.png "JS\_HTMLVizProf\_VizThru")  
+ ![Gráfico de rendimiento Visual](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
  Utiliza el gráfico de rendimiento visual para:  
   
@@ -235,25 +251,25 @@ if (performance.mark && performance.measure) {
   
 -   Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
   
--   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar**.  
+-   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
   
 ###  <a name="TimelineDetails"></a> Ver detalles de la escala de tiempo  
  El gráfico de detalles de la escala de tiempo aparece en el panel inferior del generador de perfiles de la capacidad de respuesta de la IU. Este proporciona información secuencial y jerárquica sobre los eventos que consumieron la mayor cantidad de tiempo de CPU durante períodos de tiempo seleccionados. Este gráfico puede ayudarte a determinar qué desencadenó un evento concreto y, en algunos casos, cómo se corresponde el evento con el código fuente. Además, también te permite determinar el tiempo necesario para pintar actualizaciones visuales de la pantalla.  
   
- El gráfico muestra el trabajo del subproceso de interfaz de usuario y el trabajo en subprocesos de segundo plano que pueden acarrear actualizaciones visuales lentas. El gráfico no muestra el trabajo de JavaScript JIT, el trabajo asincrónico de GPU, el trabajo realizado fuera del proceso de host \(como el trabajo de RuntimeBroker.exe y dwm.exe\) ni el trabajo de las áreas de Windows en tiempo de ejecución que aún no se han instrumentado para la generación de perfiles \(como la E\/S de disco\).  
+ El gráfico muestra el trabajo del subproceso de interfaz de usuario y el trabajo en subprocesos de segundo plano que pueden acarrear actualizaciones visuales lentas. El gráfico no muestra el trabajo de JavaScript JIT, el trabajo asincrónico de GPU, el trabajo realizado fuera del proceso de host (como el trabajo de RuntimeBroker.exe y dwm.exe) ni el trabajo de las áreas de Windows en tiempo de ejecución que aún no se han instrumentado para la generación de perfiles (como la E/S de disco).  
   
 > [!TIP]
 >  Cuando se produce un evento en un subproceso de segundo plano, el identificador del subproceso aparece entre corchetes junto al nombre del evento.  
   
  En este ejemplo se muestra el aspecto del gráfico de detalles de la escala de tiempo cuando se selecciona el agente de escucha de eventos para un evento clic de DOM:  
   
- ![Gráfico de detalles de la escala de tiempo](../profiling/media/js_htmlvizprof_timelinedet.png "JS\_HTMLVizProf\_TimelineDet")  
+ ![Gráfico de detalles de escala de tiempo](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  En esta ilustración, el controlador de eventos **spinAction** en la columna **Nombre del evento** es un vínculo que, cuando se selecciona, te permite acceder al controlador de eventos en el código fuente. En el panel derecho, la propiedad **Función de devolución de llamada** ofrece el mismo vínculo al código fuente. Otras propiedades también proporcionan información sobre el evento, como el elemento DOM asociado.  
   
- Si seleccionas una parte de la escala de tiempo para el gráfico de uso de CPU y de rendimiento visual \(FPS\), el gráfico de detalles de la escala de tiempo muestra información detallada para el período de tiempo seleccionado.  
+ Si seleccionas una parte de la escala de tiempo para el gráfico de uso de CPU y de rendimiento visual (FPS), el gráfico de detalles de la escala de tiempo muestra información detallada para el período de tiempo seleccionado.  
   
- Los eventos del gráfico de detalles de la escala de tiempo están codificados por colores para representar las mismas categorías de trabajo que se muestran en el gráfico de uso de CPU. Para obtener más información sobre las categorías de eventos y los eventos específicos, consulte [Referencia de eventos del generador de perfiles](#ProfilerEvents) en este tema.  
+ Los eventos del gráfico de detalles de la escala de tiempo están codificados por colores para representar las mismas categorías de trabajo que se muestran en el gráfico de uso de CPU. Para obtener más información sobre las categorías de eventos y los eventos específicos, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
   
  Utiliza el gráfico de detalles de la escala de tiempo para:  
   
@@ -265,13 +281,13 @@ if (performance.mark && performance.measure) {
   
 -   Expandir un evento en la jerarquía para ver sus elementos secundarios. Los elementos secundarios del evento son otros eventos generados por el evento primario. Por ejemplo, un evento DOM puede tener agentes de escucha de eventos que aparecen como elementos secundarios. Un agente de escucha de eventos puede tener otros eventos resultantes, como un evento de presentación.  
   
--   Ordenar eventos por hora de inicio \(valor predeterminado\) o duración. Utiliza la lista **Ordenar por** para seleccionar un método de ordenación.  
+-   Ordenar eventos por hora de inicio (valor predeterminado) o duración. Utiliza la lista **Ordenar por** para seleccionar un método de ordenación.  
   
--   Puedes ver los detalles de cada evento en el panel de detalles \(panel derecho\). Las propiedades varían en función de cada evento, como muestran estos ejemplos:  
+-   Puedes ver los detalles de cada evento en el panel de detalles (panel derecho). Las propiedades varían en función de cada evento, como muestran estos ejemplos:  
   
-    -   Para los temporizadores, los agentes de escucha de eventos \(eventos DOM\) y las devoluciones de llamada de fotogramas de animación, la propiedad **Función de devolución de llamada** incluye un vínculo a la ubicación del código fuente, así como el nombre del controlador de eventos o de la función de devolución de llamada.  
+    -   Para los temporizadores, los agentes de escucha de eventos (eventos DOM) y las devoluciones de llamada de fotogramas de animación, la propiedad **Función de devolución de llamada** incluye un vínculo a la ubicación del código fuente, así como el nombre del controlador de eventos o de la función de devolución de llamada.  
   
-    -   Para los temporizadores, los agentes de escucha de eventos \(eventos DOM\), los eventos de diseño y las devoluciones de llamada de fotogramas de animación, aparece un resumen codificado por colores del evento seleccionado y todos sus elementos secundarios en la sección **Resumen de tiempo inclusivo** \(el anillo codificado por colores\). Cada segmento codificado por colores de la imagen representa un tipo de evento. La información sobre herramientas proporciona el nombre del tipo de evento.  
+    -   Para los temporizadores, los agentes de escucha de eventos (eventos DOM), los eventos de diseño y las devoluciones de llamada de fotogramas de animación, aparece un resumen codificado por colores del evento seleccionado y todos sus elementos secundarios en la sección **Resumen de tiempo inclusivo** (el anillo codificado por colores). Cada segmento codificado por colores de la imagen representa un tipo de evento. La información sobre herramientas proporciona el nombre del tipo de evento.  
   
     > [!TIP]
     >  El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.  
@@ -279,32 +295,32 @@ if (performance.mark && performance.measure) {
 ###  <a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo  
  Puedes filtrar la vista de detalles de escala de tiempo de un evento concreto si seleccionas **Filtro para evento** en el menú contextual de ese evento. Cuando eliges esta opción, el ámbito de la escala de tiempo y la cuadrícula se ajusta al evento seleccionado. La selección del gráfico de uso de CPU también limita su ámbito a ese evento específico.  
   
- ![Filtrar la escala de tiempo a un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS\_HTMLVizProfiler\_FilterToEvent")  
+ ![Filtrado de escala de tiempo para un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ###  <a name="FilterEvents"></a> Filtrar eventos  
  Puedes filtrar algunos eventos del gráfico de detalles de la escala de tiempo para reducir el ruido de los datos o para eliminar datos que no sean de interés para el escenario de rendimiento. Puede filtrar por nombre o duración del evento, o bien por los filtros específicos descritos aquí.  
   
  Para filtrar los eventos de descodificación de imágenes, descarga especulativa y GC, desactive la opción **Actividad en segundo plano** en el icono de filtro del panel inferior. Estos eventos están ocultos de manera predeterminada debido a que no son muy procesables.  
   
- ![Filtrar eventos de la escala de tiempo](../profiling/media/js_htmlvizprofiler_event_filter.png "JS\_HTMLVizProfiler\_Event\_Filter")  
+ ![Filtrado de eventos en la escala de tiempo](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Para filtrar los eventos de solicitud HTTP, desactive la opción **Tráfico de red** en el icono de filtro del panel inferior. De manera predeterminada, estos eventos se muestran en el gráfico de detalles de la escala de tiempo.  
   
- Para filtrar la actividad de subproceso de la interfaz de usuario, desactive la opción **Actividad de IU**.  
+ Para filtrar la actividad de subproceso de la interfaz de usuario, desactive la opción **Actividad de IU** .  
   
 > [!TIP]
 >  Desactive esta opción y seleccione la opción Tráfico de red para investigar los problemas relacionados con la latencia de red.  
   
- Para filtrar las medidas de usuario, desactive la opción **Medidas de usuario**. Las medidas de usuario son eventos de nivel superior sin elementos secundarios.  
+ Para filtrar las medidas de usuario, desactive la opción **Medidas de usuario** . Las medidas de usuario son eventos de nivel superior sin elementos secundarios.  
   
 ###  <a name="GroupFrames"></a> Agrupar eventos por fotograma  
  Puede agrupar eventos que aparecen en la vista de detalles de la escala de tiempo en fotogramas individuales. Estos eventos de fotogramas son eventos generados por la herramienta y representan contenedores de eventos de nivel superior para todo el trabajo del subproceso de interfaz de usuario que tiene lugar entre eventos de pintar. Para habilitar esta vista, seleccione **Agrupar eventos de nivel superior por fotogramas**.  
   
- ![Agrupar los eventos principales por marco](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS\_HTMLVizProfiler\_Frame\_Grouping\_Button")  
+ ![Agrupar eventos de nivel superior por fotogramas](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Al agrupar eventos por fotogramas, cada evento de nivel superior de la vista de detalles de la escala de tiempo representa un fotograma.  
   
- ![Eventos de la escala de tiempo agrupados por marco](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS\_HTMLVizProfiler\_Frame\_Grouping")  
+ ![Eventos de escala de tiempo agrupados por fotograma](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
 ##  <a name="SaveSession"></a> Guardar una sesión de diagnóstico  
  En Visual Studio, puedes guardar una sesión de diagnóstico al cerrar la pestaña asociada con dicha sesión. Las sesiones guardadas se pueden volver a abrir en otro momento.  
@@ -312,7 +328,7 @@ if (performance.mark && performance.measure) {
 ##  <a name="ProfilerEvents"></a> Referencia de eventos del generador de perfiles  
  Los eventos del generador de perfiles están clasificados por categorías y codificados por colores en el generador de perfiles de la capacidad de respuesta de la IU. Estas son las categorías de eventos:  
   
--   **Cargando.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
+-   **Carga.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
   
 -   **Scripting.** Indica el tiempo invertido en analizar y ejecutar JavaScript. Esto incluye eventos DOM, temporizadores, evaluación de scripts y trabajo de fotogramas de animación. Incluye código de usuario y código de biblioteca.  
   
@@ -324,35 +340,35 @@ if (performance.mark && performance.measure) {
   
 -   **Descodificación de imágenes.** Indica el tiempo invertido en descomprimir y descodificar imágenes.  
   
- En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulta [Analizar los datos de control de tiempo de función de JavaScript](../Topic/Analyze%20JavaScript%20Function%20Timing%20data.md).  
+ En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulte [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
  En las otras categorías de eventos, es posible que puedas identificar efectos secundarios de la plataforma que son el resultado de agregar características a la aplicación, pero en estos casos no está garantizado que puedas resolver los problemas de rendimiento específicos mediante el generador de perfiles de la capacidad de respuesta de la IU.  
   
  En esta tabla se muestran los eventos y sus descripciones:  
   
 |Evento|Categoría de eventos|Se produce cuando|  
-|------------|--------------------------|-----------------------|  
-|Análisis de CSS|Cargando|Se encontró nuevo contenido de CSS y se intentó analizarlo.|  
-|Análisis de HTML|Cargando|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|  
-|Solicitud HTTP|Cargando|Se encontró un recurso remoto en el DOM, o se creó un objeto XMLHttpRequest que produjo una solicitud HTTP.|  
-|Descarga especulativa|Cargando|Se buscaron los recursos necesarios en el contenido HTML de la página para poder programar las solicitudes HTTP subsiguientes de estos lo más rápidamente posible.|  
+|-----------|--------------------|-----------------|  
+|Análisis de CSS|Carga|Se encontró nuevo contenido de CSS y se intentó analizarlo.|  
+|Análisis de HTML|Carga|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|  
+|Solicitud HTTP|Carga|Se encontró un recurso remoto en el DOM, o se creó un objeto XMLHttpRequest que produjo una solicitud HTTP.|  
+|Descarga especulativa|Carga|Se buscaron los recursos necesarios en el contenido HTML de la página para poder programar las solicitudes HTTP subsiguientes de estos lo más rápidamente posible.|  
 |Función de devolución de llamada de fotograma de animación|Scripting|El explorador iba a presentar otro fotograma, y esto desencadenó una función de devolución de llamada proporcionada por la aplicación.|  
-|Evento del DOM|Scripting|Se produjo un evento del DOM y se ejecutó.<br /><br /> La propiedad `context` para el evento del DOM, como `DOMContentLoaded` o `click`, se muestra entre paréntesis.|  
+|Evento del DOM|Scripting|Se produjo un evento del DOM y se ejecutó.<br /><br /> La propiedad `context` para el evento del DOM, como  `DOMContentLoaded` o `click`, se muestra entre paréntesis.|  
 |Agente de escucha de eventos|Scripting|Se llamó y ejecutó un agente de escucha de eventos.|  
 |Agente de escucha de eventos|Scripting|Se invalida una consulta de medios registrada, lo que produce la ejecución de los agentes de escucha asociados.|  
 |Observador de mutaciones|Scripting|Se modifican uno o varios elementos DOM observados, lo que da como resultado la ejecución de una devolución de llamada asociada de MutationObserver.|  
 |Evaluación de script|Scripting|Se encontró un nuevo elemento SCRIPT en el DOM, y se intentó analizar y ejecutar el script.|  
 |Temporizador|Scripting|Terminó un temporizador programado, lo que resultó en la ejecución de la función de devolución de llamada asociada a este.|  
-|Función de devolución de llamada asincrónica de Windows en tiempo de ejecución|Scripting|Un objeto de Windows en tiempo de ejecución completó una operación asincrónica que desencadenó una función de devolución de llamada `Promise`.|  
+|Función de devolución de llamada asincrónica de Windows en tiempo de ejecución|Scripting|Un objeto de Windows en tiempo de ejecución completó una operación asincrónica que desencadenó una función de devolución de llamada `Promise` .|  
 |Evento de Windows en tiempo de ejecución|Scripting|Un evento producido en un objeto de Windows en tiempo de ejecución desencadenó un agente de escucha registrado.|  
 |Recolección de elementos no utilizados|GC|Tiempo invertido en recopilar memoria para objetos que ya no se usan.|  
 |Cálculo de CSS|Aplicación de estilos|Se realizaron cambios en el DOM que requerían volver a calcular las propiedades de estilo de todos los elementos afectados.|  
 |Diseño|Aplicación de estilos|Se realizaron cambios en el DOM que requerían volver a calcular el tamaño o la posición de todos los elementos afectados.|  
 |Pintar|Representación|Se realizaron cambios visuales en el elemento DOM y se intentó volver a presentar partes de la página.|  
-|Capa de presentación|Representación|Se realizaron cambios visuales en un fragmento del DOM presentado de forma independiente \(denominado capa\) que requerían volver a presentar una parte de la página.|  
+|Capa de presentación|Representación|Se realizaron cambios visuales en un fragmento del DOM presentado de forma independiente (denominado capa) que requerían volver a presentar una parte de la página.|  
 |Descodificación de imágenes|Descodificación de imágenes|Se incluyó una imagen en el DOM, y se intentó descomprimirla y descodificarla desde su formato original a un mapa de bits.|  
-|Fotograma|N\/D|Se realizan cambios visuales al DOM que requieren una nueva representación de todas las partes afectadas de la página. Se trata de un evento generado por la herramienta que se utiliza para la agrupación.|  
-|Medida de usuario|N\/D|Se ha medido un escenario específico de la aplicación con el método `performance.measure`. Se trata de un evento generado por la herramienta que se utiliza para el análisis del código.|  
+|Fotograma|N/D|Se realizan cambios visuales al DOM que requieren una nueva representación de todas las partes afectadas de la página. Se trata de un evento generado por la herramienta que se utiliza para la agrupación.|  
+|medida de usuario|N/D|Se ha medido un escenario específico de la aplicación con el método `performance.measure` . Se trata de un evento generado por la herramienta que se utiliza para el análisis del código.|  
   
 ##  <a name="Tips"></a> Información adicional  
   
@@ -362,5 +378,5 @@ if (performance.mark && performance.measure) {
   
 -   Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## Vea también  
- [Analizar el rendimiento de las aplicaciones](../Topic/Analyze%20the%20performance%20of%20Windows%20Store%20apps%20using%20Visual%20Studio%20diagnostic%20tools.md)
+## <a name="see-also"></a>Vea también  
+ [Herramientas de generación de perfiles](../profiling/profiling-tools.md)

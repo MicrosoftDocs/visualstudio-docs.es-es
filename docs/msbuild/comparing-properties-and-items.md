@@ -1,39 +1,54 @@
 ---
-title: "Comparar propiedades y elementos | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, propiedades de msbuild"
+title: Comparar propiedades y elementos | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Comparar propiedades y elementos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
+ms.lasthandoff: 02/22/2017
 
-Elementos y propiedades de MSBuild se usan para pasar información a tareas, evaluar condiciones y almacenar valores que se pueden hacer referencia en el archivo del proyecto.  
+---
+# <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
+Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  
   
--   Propiedades son pares de nombre y valor. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+-   Las propiedades son pares de nombre-valor. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
--   Los elementos son objetos que representan normalmente archivos. Objetos de elemento pueden tener asociadas colecciones de metadatos. Metadatos son pares de nombre y valor. Para obtener más información, consulte [elementos](../msbuild/msbuild-items.md).  
+-   Los elementos son objetos que normalmente representan archivos. Los objetos de elemento pueden tener asociadas colecciones de metadatos. Los metadatos son pares de nombre-valor. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Escalares y vectores  
- Dado que las propiedades de MSBuild son pares nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Dado que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, propiedades pueden representar varios valores y tipos de elemento pueden tener cero o uno de los elementos.  
+ Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.  
   
-### <a name="target-dependency-injection"></a>Inyección de dependencia de destino  
+### <a name="target-dependency-injection"></a>Inserción de dependencia de destino  
  Para ver cómo las propiedades pueden representar varios valores, considere la posibilidad de un patrón de uso común para agregar un destino a una lista de destinos que se crea. Esta lista normalmente se representa mediante un valor de propiedad, con los nombres de destino separados por punto y coma.  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         BeforeBuild;  
@@ -43,9 +58,9 @@ Elementos y propiedades de MSBuild se usan para pasar información a tareas, eva
 </PropertyGroup>  
 ```  
   
- El `BuildDependsOn` propiedad se utiliza normalmente como argumento de un destino `DependsOnTargets` atributo, convirtiéndolo de hecho en una lista de elementos. Esta propiedad se puede invalidar para agregar un destino o para cambiar el orden de ejecución de destino. Por ejemplo,  
+ La propiedad `BuildDependsOn` se utiliza normalmente como argumento de un atributo `DependsOnTargets` de destino, que lo convierte de hecho en una lista de elementos. Esta propiedad se puede invalidar para agregar un destino o para cambiar el orden de ejecución de destino. Por ejemplo,  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         $(BuildDependsOn);  
@@ -54,14 +69,14 @@ Elementos y propiedades de MSBuild se usan para pasar información a tareas, eva
 </PropertyGroup>  
 ```  
   
- Agrega el destino CustomBuild a la lista de destino, lo que proporciona `BuildDependsOn` el valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
+ agrega el destino CustomBuild a la lista de destino, lo que proporciona a `BuildDependsOn` el valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir de MSBuild 4.0, la inyección de dependencia de destino está en desuso. Utilice la `AfterTargets` y `BeforeTargets` atributos en su lugar. Para obtener más información, consulte [orden de generación de destino](../msbuild/target-build-order.md).  
+ A partir de MSBuild 4.0, la inserción de dependencia de destino está en desuso. Utilice los atributos `AfterTargets` y `BeforeTargets` en su lugar. Para obtener más información, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversiones entre cadenas y listas de elementos  
  MSBuild realiza conversiones de tipos de elemento y valores de cadena según sea necesario. Para ver cómo una lista de elementos puede convertirse en un valor de cadena, considere lo que sucede cuando un tipo de elemento se utiliza como el valor de una propiedad de MSBuild:  
   
-```  
+```xml  
 <ItemGroup>  
     <OutputDir Include="KeyFiles\;Certificates\" />  
   </ItemGroup>  
@@ -70,46 +85,46 @@ Elementos y propiedades de MSBuild se usan para pasar información a tareas, eva
 </PropertyGroup>  
 ```  
   
- El tipo de elemento OutputDir tiene un `Include` atributo con el valor "archivo de clave\\; Certificados\\". MSBuild analiza esta cadena en dos elementos: KeyFiles\ y certificados\\. Cuando se utiliza el tipo de elemento OutputDir como el valor de la propiedad OutputDirList, MSBuild convierte o el tipo de elemento en la cadena separada por punto y coma "aplana" "archivo de clave\\; Certificados\\".  
+ El tipo de elemento OutputDir tiene un atributo `Include` con el valor "KeyFiles\\;Certificates\\". MSBuild analiza esta cadena en dos elementos: KeyFiles\ y Certificates\\. Cuando se utiliza el tipo de elemento OutputDir como el valor de la propiedad OutputDirList, MSBuild convierte o "reduce" el tipo de elemento en la cadena separada por punto y coma "KeyFiles\\;Certificates\\".  
   
 ## <a name="properties-and-items-in-tasks"></a>Propiedades y elementos en tareas  
- Propiedades y elementos se utilizan como entradas y salidas a las tareas de MSBuild. Para obtener más información, consulte [tareas](../msbuild/msbuild-tasks.md).  
+ Las propiedades y los elementos se utilizan como entradas y salidas de las tareas de MSBuild. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
   
- Propiedades se pasan a las tareas como atributos. Dentro de la tarea, una propiedad de MSBuild está representada por un tipo de propiedad cuyo valor se puede convertir a y desde una cadena. Los tipos de propiedad admitidos incluyen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string`, y cualquier tipo que <xref:System.Convert.ChangeType%2A> puede controlar.  
+ Las propiedades se pasan a las tareas como atributos. Dentro de la tarea, una propiedad de MSBuild está representada por un tipo de propiedad cuyo valor se puede convertir a una cadena y desde una cadena. Los tipos de propiedad admitidos incluyen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` y cualquier tipo que <xref:System.Convert.ChangeType%2A> pueda controlar.  
   
- Los elementos se pasan a las tareas como <xref:Microsoft.Build.Framework.ITaskItem> objetos. Dentro de la tarea, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> representa el valor del elemento y <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> recupera sus metadatos.  
+ Los elementos se pasan a las tareas como objetos <xref:Microsoft.Build.Framework.ITaskItem>. Dentro de la tarea, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> representa el valor del elemento y <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> recupera sus metadatos.  
   
- La lista de elementos de un tipo de elemento se puede pasar como una matriz de `ITaskItem` objetos. A partir de .NET Framework 3.5, pueden quitarse elementos de una lista de elementos en un destino mediante el uso de la `Remove` atributo. Dado que pueden quitarse los elementos de una lista de elementos, es posible para un tipo de elemento tener cero elementos. Si se pasa una lista de elementos a una tarea, el código de la tarea debe comprobar esta posibilidad.  
+ La lista de elementos de un tipo de elemento se puede pasar como una matriz de objetos `ITaskItem`. Desde la versión .NET Framework 3.5, puede usarse el atributo `Remove` para quitar elementos de una lista en un destino. Dado que pueden quitarse los elementos de una lista de elementos, es posible que un tipo de elemento no tenga ningún elemento. Si se pasa una lista de elementos a una tarea, el código de la tarea debe comprobar esta posibilidad.  
   
-## <a name="property-and-item-evaluation-order"></a>Propiedad y orden de evaluación del producto  
- Durante la fase de evaluación de una compilación, los archivos importados se incorporan a la compilación en el orden en que aparecen. Propiedades y elementos se definen en tres pasos en el orden siguiente:  
+## <a name="property-and-item-evaluation-order"></a>Orden de evaluación de propiedades y elementos  
+ Durante la fase de evaluación de una compilación, los archivos importados se incorporan a la compilación en el orden en que aparecen. Las propiedades y los elementos se definen en tres pasos en el orden siguiente:  
   
--   Propiedades se definen y modifican en el orden en que aparecen.  
+-   Las propiedades se definen y modifican en el orden en que aparecen.  
   
--   Definiciones de elementos se definen y modifican en el orden en que aparecen.  
+-   Las definiciones de elementos se definen y modifican en el orden en que aparecen.  
   
 -   Los elementos se definen y modifican en el orden en que aparecen.  
   
- Durante la fase de ejecución de una compilación, propiedades y elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.  
+ Durante la fase de ejecución de una compilación, las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.  
   
- Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de elemento o un elemento, se evalúa su valor. El evaluador de expresiones expande la cadena que especifica el valor. La expansión de la cadena depende de la fase de compilación. Este es un orden de evaluación de propiedades y elementos más detallado:  
+ Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de propiedad o un elemento, se evalúa su valor. El evaluador de expresiones expande la cadena que especifica el valor. La expansión de la cadena depende de la fase de compilación. Este es un orden de evaluación de propiedades y elementos más detallado:  
   
 -   Durante la fase de evaluación de una compilación:  
   
-    -   Propiedades se definen y modifican en el orden en que aparecen. Funciones de propiedad se ejecutan. Valores de propiedad en los $ (nombreDePropiedad) formulario se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
+    -   Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
   
-    -   Definiciones de elementos se definen y modifican en el orden en que aparecen. Funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
+    -   Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
   
-    -   Tipos de elemento se definen y modifican en el orden en que aparecen. Valores del formulario de elemento @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Valores y funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de elemento de lista y los metadatos se establecen en las expresiones expandidas.  
+    -   Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.  
   
 -   Durante la fase de ejecución de una compilación:  
   
-    -   Propiedades y elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, los valores de tipo de elemento y los valores de metadatos se establecen en las expresiones expandidas.  
+    -   Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efectos sutiles del orden de evaluación  
- En la fase de evaluación de una compilación, la evaluación de propiedades precede a evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere la siguiente secuencia de comandos.  
+ En la fase de evaluación de una compilación, la evaluación de propiedades precede a la evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere el script siguiente.  
   
-```  
+```xml  
 <ItemGroup>  
     <KeyFile Include="KeyFile.cs">  
         <Version>1.0.0.3</Version>  
@@ -123,21 +138,21 @@ Elementos y propiedades de MSBuild se usan para pasar información a tareas, eva
 </Target>  
 ```  
   
- Ejecutar la tarea Message muestra este mensaje:  
+ Al ejecutar la tarea Message se muestra este mensaje:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
- Esto es porque el valor de `KeyFileVersion` es realmente la cadena "@(KeyFile->'%(Version)')". elemento y las transformaciones de elemento no se expandieron cuando la propiedad se definió en primer lugar, por lo que la `KeyFileVersion` propiedad se asignó el valor de la cadena sin expandir.  
+ Esto es porque el valor de `KeyFileVersion` es realmente la cadena "@(KeyFile->'%(Version)')". El elemento y las transformaciones de elemento no se expandieron cuando la propiedad se definió por primera vez, por lo que el valor de la cadena sin expandir se asignó a la propiedad `KeyFileVersion`.  
   
  Durante la fase de ejecución de la compilación, cuando procesa la tarea Message, MSBuild expande la cadena "@(KeyFile->'%(Version)')" para producir "1.0.0.3".  
   
- Observe que aparecería el mismo mensaje incluso si los grupos de propiedades y elementos se han revertido en orden.  
+ Observe que aparecería el mismo mensaje incluso si el orden de los grupos de propiedades y elementos se ha revertido.  
   
  Como segundo ejemplo, tenga en cuenta qué puede ocurrir cuando los grupos de propiedades y elementos se encuentran dentro de los destinos:  
   
-```  
+```xml  
 <Target Name="AfterBuild">  
     <PropertyGroup>  
         <KeyFileVersion>@(KeyFile->'%(Version)')</KeyFileVersion>  
@@ -157,11 +172,11 @@ KeyFileVersion: 1.0.0.3
 KeyFileVersion:   
 ```  
   
- Esto es porque durante la fase de ejecución de la compilación, grupos de propiedades y elementos definidos dentro de los destinos se evalúan de arriba a abajo al mismo tiempo. Cuando `KeyFileVersion` está definido, `KeyFile` es desconocido. Por lo tanto, la transformación de elemento se expande a una cadena vacía.  
+ Esto es porque durante la fase de ejecución de la compilación, los grupos de propiedades y elementos definidos dentro de los destinos se evalúan de arriba abajo al mismo tiempo. Cuando `KeyFileVersion` se define, `KeyFile` es desconocido. Por lo tanto, la transformación de elemento se expande a una cadena vacía.  
   
- En este caso, invirtiendo el orden de los grupos de propiedades y elementos restaura el mensaje original:  
+ En este caso, al invertir el orden de los grupos de propiedades y elementos, se restaura el mensaje original:  
   
-```  
+```xml  
 <Target Name="AfterBuild">  
     <ItemGroup>  
         <KeyFile Include="KeyFile.cs">  
@@ -175,7 +190,7 @@ KeyFileVersion:
 </Target>  
 ```  
   
- El valor de `KeyFileVersion` se establece en "1.0.0.3" y no a "@(KeyFile->'%(Version)')". tarea el mensaje muestra este mensaje:  
+ El valor de `KeyFileVersion` se establece en "1.0.0.3" y no en "@(KeyFile->'%(Version)')". La tarea Message muestra este mensaje:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
