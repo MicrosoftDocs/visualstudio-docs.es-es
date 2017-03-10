@@ -2,14 +2,14 @@
 layout: LandingPage
 title: Scripting
 translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 80f0cce45d48813010f9a0b3450c8b8d2378165f
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
+ms.openlocfilehash: 7a3352e08f0e8912939c305de483fe8efd15bd75
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="scripting-technologies"></a>Tecnologías de scripting
 
-En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecnologías relacionadas.
+En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecnologías basadas en ECMAScript.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -31,7 +31,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/script/javascript">
+        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -49,7 +49,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/script/chakra-hosting/javascript-runtime-hosting">
+        <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -67,7 +67,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/script/winscript/windows-script-interfaces">
+        <a href="https://docs.microsoft.com/scripting/winscript/windows-script-interfaces">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -85,7 +85,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/d1et7k7c(v=vs.84).aspx">
+        <a href="https://msdn.microsoft.com/library/d1et7k7c(v=vs.84).aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -95,7 +95,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>JScript y VBScript (heredado)</h3>
+                        <h3>JScript y VBScript (archivo)</h3>
                     </div>
                 </div>
             </div>
