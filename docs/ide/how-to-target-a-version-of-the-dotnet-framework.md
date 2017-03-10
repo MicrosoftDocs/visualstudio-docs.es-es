@@ -1,31 +1,46 @@
 ---
-title: "C&#243;mo: Usar como destino una versi&#243;n de .NET Framework | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "especificar versión de .NET Framework [Visual Studio]"
-  - "versiones [Visual Studio], especificar versión de .NET Framework"
+title: "Cómo: Usar como destino una versión de .NET Framework | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- targeting .NET Framework version [Visual Studio]
+- versions [Visual Studio], targeting .NET Framework version
 ms.assetid: dea62d25-3d1b-492e-a6cc-b5154489800a
 caps.latest.revision: 50
-caps.handback.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# C&#243;mo: Usar como destino una versi&#243;n de .NET Framework
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 7ebf1dfaa3753f1a1908b0327e8ed938115f1f13
+ms.lasthandoff: 02/22/2017
 
-En este documento se describe cómo se crea un proyecto que tiene como destino una versión de .NET Framework y cómo se modifica la versión de destino en un proyecto de Visual Basic, Visual C\# o Visual F\# existente.  
+---
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Cómo: Usar como destino una versión de .NET Framework
+En este documento se describe cómo se crea un proyecto que tiene como destino una versión de .NET Framework y cómo se modifica la versión de destino en un proyecto de Visual Basic, Visual C# o Visual F# existente.  
   
 > [!IMPORTANT]
->  Para obtener información acerca de cómo cambiar la versión de destino para los proyectos de C\+\+, vea [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](../Topic/How%20to:%20Modify%20the%20Target%20Framework%20and%20Platform%20Toolset.md).  
+>  Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **En este tema**  
   
@@ -39,52 +54,52 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
 > [!NOTE]
 >  En las ediciones Express de Visual Studio, debe crear primero el proyecto y después cambiar el destino, como se describe más adelante en [Cambiar la versión de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) en este tema.  
   
-#### Para especificar una versión de destino al crear un proyecto  
+#### <a name="to-target-a-version-when-you-create-a-project"></a>Para especificar una versión de destino al crear un proyecto  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-2.  En la lista situada en la parte superior del cuadro de diálogo **Nuevo proyecto**, elija la versión de .NET Framework de destino que desea especificar para el proyecto.  
+2.  En la lista situada en la parte superior del cuadro de diálogo **Nuevo proyecto**, elija la versión de .NET Framework de destino que quiera especificar para el proyecto.  
   
     > [!NOTE]
-    >  Normalmente, solo se instala una versión de .NET Framework junto con Visual Studio.  Si desea establecer como destino otra versión, primero debe asegurarse de que está instalada.  Vea [Información general sobre la compatibilidad con múltiples versiones \(multi\-targeting\) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md).  
+    >  Normalmente, solo se instala una versión de .NET Framework junto con Visual Studio. Si desea establecer como destino otra versión, primero debe asegurarse de que está instalada. Consulte [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md).  
   
-3.  En la lista de plantillas instaladas, elija el tipo de proyecto que desea crear, asigne un nombre al proyecto y después elija el botón **Aceptar**.  
+3.  En la lista de plantillas instaladas, elija el tipo de proyecto que quiere crear, asigne un nombre al proyecto y después elija el botón **Aceptar**.  
   
      La lista de plantillas muestra únicamente los proyectos que son compatibles con la versión de .NET Framework que ha elegido.  
   
 ##  <a name="bkmk_existing"></a> Cambiar la versión de destino  
- Puede cambiar la versión de .NET Framework de destino en un proyecto de Visual Basic, Visual C\# o Visual F\# siguiendo este procedimiento.  
+ Puede cambiar la versión de .NET Framework de destino en un proyecto de Visual Basic, Visual C# o Visual F# si sigue este procedimiento.  
   
-#### Para cambiar la versión de destino  
+#### <a name="to-change-the-targeted-version"></a>Para cambiar la versión de destino  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto que desea cambiar y, a continuación, elija **Propiedades**.  
+1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto que quiere cambiar y después elija **Propiedades**.  
   
-     ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs\_slnExplorer\_Properties")  
+     ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  Para obtener información acerca de cómo cambiar la versión de destino para los proyectos de C\+\+, vea [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](../Topic/How%20to:%20Modify%20the%20Target%20Framework%20and%20Platform%20Toolset.md).  
+    >  Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2.  En la columna izquierda de la ventana Propiedades, elija la pestaña **Aplicación**.  
   
-     ![Propiedades de aplicación de Visual Studio, pestaña Aplicación](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs\_slnExplorer\_Properties\_ApplicationTab")  
+     ![Propiedades de aplicación de Visual Studio, pestaña Aplicación](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
     >  Después de crear una aplicación de la Tienda Windows, no puede cambiar la versión de destino de Windows ni de .NET Framework.  
   
-3.  En la lista **Versión de .NET Framework de destino**, elija la versión que desee.  
+3.  En la lista **Plataforma de destino**, elija la versión que quiera.  
   
 4.  En el cuadro de diálogo de comprobación que aparece, elija el botón **Sí**.  
   
-     Se descarga el proyecto.  Cuando se vuelva a cargar, la versión de .NET Framework de destino será la que acaba de elegir.  
+     Se descarga el proyecto. Cuando se vuelva a cargar, la versión de .NET Framework de destino será la que acaba de elegir.  
   
     > [!NOTE]
-    >  Si el código contiene referencias a una versión de .NET Framework distinta de la que indicó, pueden aparecer mensajes de error al compilar o ejecutar el código.  Para resolver estos errores, deberá modificar las referencias.  Vea [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
+    >  Si el código contiene referencias a una versión de .NET Framework distinta de la que indicó, pueden aparecer mensajes de error al compilar o ejecutar el código. Para resolver estos errores, deberá modificar las referencias. Consulte [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
-## Vea también  
- [Información general sobre la compatibilidad con múltiples versiones \(multi\-targeting\) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
- [.NET Framework Multi\-Targeting for ASP.NET Web Projects](../Topic/.NET%20Framework%20Multi-Targeting%20for%20ASP.NET%20Web%20Projects.md)   
+## <a name="see-also"></a>Vea también  
+ [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
+ [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
- [Página de aplicación, Diseñador de proyectos \(C\#\)](../ide/reference/application-page-project-designer-csharp.md)   
- [Aplicación \(Página, Diseñador de proyectos\) \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Configurar proyectos](../Topic/Configuring%20Projects%20\(F%23\).md)   
- [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](../Topic/How%20to:%20Modify%20the%20Target%20Framework%20and%20Platform%20Toolset.md)
+ [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
+ [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
+ [Configurar proyectos](http://msdn.microsoft.com/Library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

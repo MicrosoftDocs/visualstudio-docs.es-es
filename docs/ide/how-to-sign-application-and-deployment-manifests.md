@@ -1,115 +1,130 @@
 ---
-title: "C&#243;mo: Firmar aplicaciones y manifiestos de implementaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "manifiestos de aplicación [Visual Studio]"
-  - "ensamblados [Visual Studio], firmar"
-  - "implementación ClickOnce [Visual Studio], firmar ensamblados"
-  - "firma de código [Visual Studio], Authenticode"
-  - "manifiestos de implementación [Visual Studio]"
-  - "archivos clave [Visual Studio]"
-  - "manifiestos [Visual Studio]"
-  - "firmar manifiestos [Visual Studio]"
+title: "Cómo: Firmar manifiestos de aplicación e implementación | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- manifests [Visual Studio]
+- code signing [Visual Studio], Authenticode
+- deployment manifests [Visual Studio]
+- signing manifests [Visual Studio]
+- application manifests [Visual Studio]
+- ClickOnce deployment [Visual Studio], signing assemblies
+- key files [Visual Studio]
+- assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 caps.latest.revision: 58
-caps.handback.revision: 58
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# C&#243;mo: Firmar aplicaciones y manifiestos de implementaci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
+ms.lasthandoff: 02/22/2017
 
-Si desea publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves privada y pública y mediante la tecnología Authenticode.  Puede firmar los manifiestos utilizando un certificado del almacén de certificados de Windows o un archivo de clave.  
+---
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Cómo: Firmar aplicaciones y manifiestos de implementación
+Si quiere publicar una aplicación mediante la implementación ClickOnce, los manifiestos de aplicación e implementación deben estar firmados con un par de claves pública y privada mediante la tecnología Authenticode. Puede firmar los manifiestos con un certificado del almacén de certificados de Windows o un archivo de clave.  
   
- Para obtener más información sobre la implementación de ClickOnce, vea [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+ Para obtener más información sobre la implementación ClickOnce, consulte [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
- La firma de los manifiestos de ClickOnce es opcional para las aplicaciones basadas en .exe.  Para obtener más información, vea la sección "Generar un manifiesto sin firmar" de este documento.  
+ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en .exe. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.  
   
- Para obtener información sobre cómo crear los archivos de clave, consulte [Cómo: Crear un par de claves privada y pública](../Topic/How%20to:%20Create%20a%20Public-Private%20Key%20Pair.md).  
+ Para obtener información sobre la creación de archivos de claves, consulte [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite únicamente archivos de clave de intercambio de información personal \(PFX\) que tengan la extensión .pfx.  Sin embargo, puede seleccionar otros tipos de certificados del almacén de certificados de Windows del usuario actual haciendo clic en **Seleccionar del almacén** en la página **Firma** de propiedades de proyecto.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión .pfx. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.  
   
-### Para firmar los manifiestos de aplicación y de implementación mediante un certificado  
+### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para firmar manifiestos de aplicación e implementación con un certificado  
   
-1.  Vaya a la ventana de propiedades del proyecto \(haga clic con el botón secundario en el proyecto en **Explorador de soluciones** y seleccione **Propiedades**, o escriba propiedades del proyecto en la ventana de **Inicio rápido**, o presione ALT\+INTRO en la ventana de **Explorador de soluciones**\).  En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.  
+1.  Vaya a la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba **propiedades del proyecto** en la ventana **Inicio rápido** o pulse ALT + ENTRAR en la ventana **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.  
   
 2.  Haga clic en el botón **Seleccionar del almacén**.  
   
-     El cuadro de diálogo **Seleccionar un certificado** aparece y muestra el contenido del almacén de certificados de Windows.  
+     Aparece el cuadro de diálogo **Seleccionar un certificado** y se muestra el contenido del almacén de certificados de Windows.  
   
     > [!TIP]
-    >  Si hace clic en **Haga clic aquí para ver las propiedades del certificado**, el cuadro de diálogo **Detalles del certificado** aparece.  Este cuadro de diálogo incluye información detallada sobre el certificado e incluye opciones adicionales.  Puede hacer clic en **certificados** para ver información adicional de ayuda.  
+    >  Si hace clic en **Haga clic aquí para ver las propiedades del certificado**, aparece el cuadro de diálogo **Detalles del certificado**. Este cuadro de diálogo incluye información detallada sobre el certificado y opciones adicionales. Puede hacer clic en **certificados** para ver información adicional de la Ayuda.  
   
-3.  Seleccione el certificado que desea utilizar para firmar los manifiestos.  
+3.  Seleccione el certificado que quiera usar para firmar los manifiestos.  
   
-4.  Asimismo, puede especificar la dirección de un servidor de marca de tiempo en el cuadro de texto **Dirección URL del servidor de marca de tiempo**.  Es un servidor que proporciona una marca de tiempo que especifica cuando se firmó el manifiesto.  
+4.  Además, puede especificar la dirección de un servidor de marca de tiempo en el cuadro de texto **Dirección URL del servidor de marca de tiempo**. Se trata de un servidor que proporciona una marca de tiempo que especifica cuándo se ha firmado el manifiesto.  
   
-### Para firmar manifiestos de aplicación y de implementación mediante un archivo de clave existente  
+### <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Para firmar manifiestos de aplicación e implementación con un archivo de claves existente  
   
 1.  En la página **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.  
   
-2.  Haga clic en el botón **Seleccionar del archivo**.  
+2.  Haga clic en el botón **Seleccionar de archivo**.  
   
-     Aparecerá el cuadro de diálogo **Seleccionar archivo**.  
+     Aparece el cuadro de diálogo **Seleccionar archivo**.  
   
-3.  Cuando aparezca el cuadro de diálogo **Seleccionar archivo**, desplácese a la ubicación del archivo de clave \(.pfx\) que desee utilizar y haga clic en **Abrir**.  
+3.  En el cuadro de diálogo **Seleccionar archivo**, vaya a la ubicación del archivo de claves (.pfx) que quiere usar y después haga clic en **Abrir**.  
   
     > [!NOTE]
-    >  Esta opción sólo admite archivos que tengan la extensión .pfx.  Si tiene un archivo de clave o un certificado en otro formato, almacénelo en el almacén de certificados de Windows y seleccione el certificado como se describe en el procedimiento anterior.  El propósito del certificado seleccionado debería incluir la firma de código.  
+    >  Esta opción solo admite archivos que tengan la extensión .pfx. Si tiene un archivo de claves o un certificado en otro formato, almacénelo en el almacén de certificados de Windows y seleccione el certificado como se describe en el procedimiento anterior. El propósito del certificado seleccionado debe incluir firma de código.  
   
-     El cuadro de diálogo de **Escribir la contraseña para abrir el archivo** aparece. \(Si el archivo .pfx ya está almacenado en el almacén de certificados de Windows, o no está protegido por contraseña, no se le pedirá que escriba una contraseña.\)  
+     Aparece el cuadro de diálogo **Escribir la contraseña para abrir el archivo**. (Si el archivo .pfx ya está almacenado en el almacén de certificados de Windows o no está protegido por contraseña, no se le pedirá que escriba una contraseña).  
   
-4.  Escriba la contraseña para tener acceso al archivo de clave y presione ENTRAR.  
+4.  Escriba la contraseña para acceder al archivo de claves y pulse ENTRAR.  
   
-### Para firmar los manifiestos de aplicación y de implementación mediante un certificado de prueba  
+### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Para firmar manifiestos de aplicación e implementación con un certificado de prueba  
   
 1.  En la página **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.  
   
-2.  Para crear un nuevo certificado con fines de pruebas, haga clic en el botón **Crear certificado de prueba**.  
+2.  Para crear un certificado de prueba, haga clic en el botón **Crear certificado de prueba**.  
   
-3.  En el cuadro de diálogo de **Crear certificado de prueba**, escriba una contraseña para ayudar a proteger el certificado de prueba.  
+3.  En el cuadro de diálogo **Crear certificado de prueba**, escriba una contraseña para ayudar a proteger el certificado de prueba.  
   
-## Generar un manifiesto sin firmar  
- La firma de los manifiestos de ClickOnce es opcional para las aplicaciones basadas en .exe.  Los procedimientos siguientes muestran cómo generar manifiestos sin firmar de ClickOnce.  
+## <a name="generating-unsigned-manifests"></a>Generar manifiestos sin firmar  
+ Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en .exe. En los procedimientos siguientes, se muestra cómo generar manifiestos sin firmar de ClickOnce.  
   
 > [!IMPORTANT]
->  Los manifiestos sin firmar pueden simplificar el desarrollo y las pruebas de la aplicación.  Sin embargo, los manifiestos sin firmar son una oportunidad de riesgos para la seguridad sustanciales en un entorno de producción.  Considere el uso de manifiestos sin firmar únicamente si la aplicación de ClickOnce se ejecuta en equipos dentro de una intranet que está completamente aislada de Internet y otros orígenes de código malintencionado.  
+>  Los manifiestos sin firmar pueden simplificar el desarrollo y las pruebas de la aplicación. En cambio, los manifiestos sin firmar introducen riesgos de seguridad considerables en un entorno de producción. Considere solo el uso de manifiestos sin firmar si la aplicación ClickOnce se ejecuta en equipos de una intranet que está completamente aislada de Internet u otros orígenes de código malintencionado.  
   
- De forma predeterminada, ClickOnce genera automáticamente manifiestos firmados a menos que se excluyan de forma específica uno o varios archivos del código hash generado.  Es decir, con la publicación de la aplicación se generan manifiestos firmados si todos los archivos se incluyen en el código hash, aun cuando la casilla **Firmar los manifiestos de ClickOnce** esté desactivada.  
+ De manera predeterminada, ClickOnce genera de forma automática manifiestos firmados a menos que se excluyan de forma específica uno o varios archivos del código hash generado. En otras palabras, si se incluyen todos los archivos en el código hash, la aplicación se publica con manifiestos firmados, incluso si la casilla **Firmar los manifiestos de ClickOnce** está desactivada.  
   
-#### Para generar manifiestos sin firmar e incluir todos los archivos en el código hash generado  
+#### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Para generar manifiestos sin firmar e incluir todos los archivos en el código hash generado  
   
-1.  Para generar manifiestos sin firmar que incluyan todos los archivos en el código hash, debe publicar primero la aplicación junto con los manifiestos firmados.  Por consiguiente, firme primero los manifiestos de ClickOnce siguiendo uno de los procedimientos anteriores y, a continuación, publique la aplicación.  
+1.  Para generar manifiestos sin firmar que incluyan todos los archivos en el código hash, primero debe publicar la aplicación junto con los manifiestos firmados. Por tanto, firme primero los manifiestos de ClickOnce mediante uno de los procedimientos anteriores y después publique la aplicación.  
   
 2.  En la página **Firma**, desactive la casilla **Firmar los manifiestos de ClickOnce**.  
   
-3.  Restablezca la versión de publicación de forma que solo haya disponible una versión de la aplicación.  De manera predeterminada, Visual Studio incrementa automáticamente el número de revisión de la versión de publicación cada vez que se publica una aplicación.  Para obtener más información, vea [Cómo: Establecer la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Restablezca la versión de publicación para que solo esté disponible una versión de la aplicación. De manera predeterminada, Visual Studio incrementa de forma automática el número de revisión de la versión de publicación cada vez que se publica una aplicación. Para obtener más información, consulte [Cómo: Establecer la versión de publicación de ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
-4.  Publique la aplicación  
+4.  Publique la aplicación.  
   
-#### Para generar manifiestos sin firmar y excluir uno o más archivos del código hash generado  
+#### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Para generar manifiestos sin firmar y excluir uno o varios archivos del código hash generado  
   
 1.  En la página **Firma**, desactive la casilla **Firmar los manifiestos de ClickOnce**.  
   
-2.  Abra el cuadro de diálogo **Archivos de aplicación** y establezca **Hash** en **Excluir** para los archivos que desea excluir del código hash generado.  
+2.  Abra el cuadro de diálogo **Archivos de aplicación** y establezca **Hash** en **Excluir** para los archivos que quiera excluir del código hash generado.  
   
     > [!NOTE]
-    >  Al excluir un archivo del código hash se configura ClickOnce para deshabilitar la firma automática de los manifiestos, por lo que no es necesario publicar primero con los manifiestos firmados como se muestra en el procedimiento anterior.  
+    >  Excluir un archivo del código hash configura ClickOnce para que deshabilite la firma automática de los manifiestos, por lo que no tiene que publicar primero con manifiestos firmados como se muestra en el procedimiento anterior.  
   
-3.  Publique la aplicación  
+3.  Publique la aplicación.  
   
-## Vea también  
- [Ensamblados con nombre seguro](../Topic/Strong-Named%20Assemblies.md)   
- [Cómo: Crear un par de claves privada y pública](../Topic/How%20to:%20Create%20a%20Public-Private%20Key%20Pair.md)   
+## <a name="see-also"></a>Vea también  
+ [Ensamblados con nombre seguro](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)   
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

@@ -1,54 +1,69 @@
 ---
-title: "Localizar aplicaciones | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "aplicaciones [Visual Studio], adaptar"
-  - "globalización [Visual Studio], adaptar aplicaciones"
-  - "localización [.NET Framework], aplicaciones"
-  - "código de Visual Basic, aplicaciones internacionales"
-  - "Visual C#, aplicaciones internacionales"
+title: Localizar aplicaciones | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Basic code, international applications
+- globalization [Visual Studio], localizing applications
+- Visual C#, international applications
+- applications [Visual Studio], localizing
+- localization [.NET Framework], applications
 ms.assetid: 879c20e0-8301-4f44-b520-97283848c965
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Localizar aplicaciones
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 47cc71da3637ae7f3bdb7ff4b09451a87d546bff
+ms.lasthandoff: 02/22/2017
 
-*Localización* es el proceso de personalización de la aplicación para una referencia cultural o configuración regional.  La localización consiste principalmente en la traducción de la interfaz de usuario.  
+---
+# <a name="localizing-applications"></a>Localizar aplicaciones
+*Localización* es el proceso de personalizar la aplicación para una determinada referencia cultural o configuración regional. La localización consiste principalmente en traducir la interfaz de usuario.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md)  
- Describe cómo se almacenan los recursos adaptados y se obtiene acceso a ellos en Visual Studio.  
+ Explica cómo se almacenan los recursos localizados y cómo se accede a ellos en Visual Studio.  
   
  [Seguridad y ensamblados satélite localizados](../ide/security-and-localized-satellite-assemblies.md)  
  Describe la firma de ensamblados satélite con pares de claves pública y privada.  
   
  [Número de versión de los ensamblados principales y los ensamblados satélite localizados](../ide/version-numbers-for-main-and-localized-satellite-assemblies.md)  
- Presenta la clase <xref:System.Resources.SatelliteContractVersionAttribute>, que determina los ensamblado satélite que funcionan con el ensamblado principal de una aplicación.  
+ Presenta la clase <xref:System.Resources.SatelliteContractVersionAttribute>, que determina qué ensamblados satélite funcionan con el ensamblado principal de una aplicación.  
   
  [Idiomas de los recursos neutros para la localización](../ide/neutral-resources-languages-for-localization.md)  
- Presenta la clase <xref:System.Resources.NeutralResourcesLanguageAttribute>, que especifica la referencia cultural de los recursos incluidos en el ensamblado principal de la aplicación.  
+ Presenta la clase <xref:System.Resources.NeutralResourcesLanguageAttribute>, que especifica la referencia cultural de los recursos incluidos en el ensamblado principal de una aplicación.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Describe los conceptos relacionados con el desarrollo de software para el mercado internacional mediante la utilización de Visual Basic o Visual C\#.  
+ Trata de los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Basic o Visual C#.  
   
- [Globalizing Windows Forms](../Topic/Globalizing%20Windows%20Forms.md)  
- Proporciona vínculos a páginas sobre la creación de aplicaciones para Windows que admiten varias referencias culturales.  
+ [Globalizar Windows Forms](http://msdn.microsoft.com/Library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ Proporciona vínculos a páginas sobre la creación de aplicaciones Windows que admiten varias referencias culturales.  
   
- [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md)  
- Proporciona vínculos a páginas sobre la creación de aplicaciones Web que admiten varias referencias culturales.  
+ [Globalización y localización](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ Proporciona vínculos a páginas sobre la creación de aplicaciones web que admiten varias referencias culturales.  
   
- [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](../Topic/Best%20Practices%20for%20Developing%20World-Ready%20Applications.md)  
- Proporciona información sobre programación para usuarios internacionales, como asuntos de diseño y terminología.
+ [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ Proporciona información sobre programación para usuarios internacionales, por ejemplo, problemas de diseño y terminología.

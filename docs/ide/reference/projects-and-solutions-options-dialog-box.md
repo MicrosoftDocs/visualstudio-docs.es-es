@@ -1,67 +1,82 @@
 ---
-title: "Proyectos y soluciones, Cuadro de di&#225;logo Opciones | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Proyectos y soluciones, Cuadro de diálogo Opciones"
-  - "Cuadro de diálogo Opciones, Proyectos y soluciones"
+title: "Proyectos y soluciones, Cuadro de diálogo Opciones | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Projects and Solutions Options dialog box
+- Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Proyectos y soluciones, Cuadro de di&#225;logo Opciones
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 5c6c36ca969d5ca9ca3957a886ce45597159bc5c
+ms.lasthandoff: 02/22/2017
 
-Establece la ruta de acceso predeterminada de las carpetas del proyecto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y determina el comportamiento predeterminado de la ventana **Salida**, **Lista de tareas** y el **Explorador de soluciones** conforme se desarrollan y generan los proyectos.  Para obtener acceso a este cuadro de diálogo, haga clic en **Herramientas \/ Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.  
+---
+# <a name="projects-and-solutions-options-dialog-box"></a>Proyectos y soluciones, Cuadro de diálogo Opciones
+Establece la ruta de acceso predeterminada de las carpetas de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y determina el comportamiento predeterminado de la ventana **Salida**, **Lista de tareas** y el **Explorador de soluciones** mientras se desarrollan y compilan proyectos. Para acceder a este cuadro de diálogo, haga clic en **Herramientas/Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.  
   
 > [!NOTE]
->  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos.  Esta página de Ayuda se redactó teniendo en cuenta la **Configuración general de desarrollo**.  Para ver o cambiar su configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas**.  Para obtener más información, consulte [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de la Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-## Configuración  
+## <a name="settings"></a>Configuración  
  **Ubicación de proyectos**  
- Establece la ubicación predeterminada donde se crean las nuevas carpetas y directorios de proyectos y soluciones.  Varios cuadros de diálogo también usan la ubicación establecida en esta opción para los puntos iniciales de las carpetas.  Por ejemplo, el cuadro de diálogo Abrir proyecto usa esta ubicación para el acceso directo Mis proyectos.  
+ Establece la ubicación predeterminada donde se crean las nuevas carpetas y directorios de proyectos y soluciones. Varios cuadros de diálogo también usan la ubicación establecida en esta opción para los puntos iniciales de las carpetas. Por ejemplo, el cuadro de diálogo Abrir proyecto usa esta ubicación para el acceso directo Mis proyectos.  
   
  **Ubicación de plantillas de proyecto de usuario**  
- Establece la ubicación predeterminada que usa el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**.  Para obtener más información, consulte [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Establece la ubicación predeterminada usada por el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**. Para más información, vea [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Ubicación de plantillas de elemento de usuario**  
- Establece la ubicación predeterminada que usa el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**.  Para obtener más información, consulte [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Establece la ubicación predeterminada usada por el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**. Para más información, vea [Cómo: Localizar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
- **Mostrar siempre lista de errores si la compilación termina con errores**  
- Abre la ventana **Lista de errores** cuando termina la compilación, solo si no se pudo compilar un proyecto.  Se muestran los errores que se producen durante el proceso de compilación.  Cuando esta opción está desactivada, se siguen produciendo errores, pero no se abre la ventana una vez finalizada la compilación.  Esta opción está habilitada de forma predeterminada.  
+ **Mostrar lista de errores si la compilación termina con errores**  
+ Abre la ventana **Lista de errores** al terminar la compilación solo si no se ha podido compilar un proyecto. Se muestran los errores que se producen durante el proceso de compilación. Cuando esta opción está desactivada, se siguen produciendo errores, pero no se abre la ventana una vez finalizada la compilación. Esta opción está habilitada de forma predeterminada.  
   
  **Realizar seguimiento del elemento activo en el Explorador de soluciones**  
- Cuando se selecciona, el **Explorador de soluciones** se abre automáticamente y se selecciona el elemento activo.  El elemento seleccionado cambia conforme trabaja con distintos archivos de un proyecto o solución o con distintos componentes de un diseñador.  Cuando esta opción está desactivada, la selección del **Explorador de soluciones** no cambia automáticamente.  Esta opción está habilitada de forma predeterminada.  
+ Si esta opción está activada, el **Explorador de soluciones** se abre automáticamente y se selecciona el elemento activo. El elemento seleccionado cambia conforme trabaja con distintos archivos de un proyecto o solución o con distintos componentes de un diseñador. Si esta opción está desactivada, la selección del **Explorador de soluciones** no cambia automáticamente. Esta opción está habilitada de forma predeterminada.  
   
  **Mostrar configuraciones de compilación avanzadas**  
- Cuando se selecciona, las opciones de configuración de compilación aparecen en el cuadro de diálogo **Páginas de propiedades del proyecto** y el cuadro de diálogo **Páginas de propiedades de la solución**.  Cuando está desactivada, las opciones de configuración de compilación no aparecen en el cuadro de diálogo **Páginas de propiedades del proyecto** y el cuadro de diálogo **Páginas de propiedades de la solución** para los proyectos [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] que contienen una configuración o las dos configuraciones de depuración y liberación.  Si un proyecto tiene una configuración definida por el usuario, se muestran las opciones de configuración de compilación.  
+ Si está activada, las opciones de configuración de compilación aparecen en los cuadros de diálogo **Páginas de propiedades del proyecto** y **Páginas de propiedades de la solución**. Si está desactivada, las opciones de configuración de compilación no aparecen en los cuadros de diálogo **Páginas de propiedades del proyecto** y **Páginas de propiedades de la solución** de los proyectos de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] que contienen una o las dos configuraciones de depuración y publicación. Si un proyecto tiene una configuración definida por el usuario, se muestran las opciones de configuración de compilación.  
   
- Si no está seleccionada, los comandos del menú **Compilar**, como **Compilar solución**, **Recompilar solución** y **Limpiar solución** se ejecutan en la configuración Liberar, mientras que los comandos del menú **Depurar**, como **Iniciar depuración** e **Iniciar sin depurar** se ejecutan en la configuración Depurar.  
+ Si no está activada, los comandos del menú **Compilar**, como **Compilar solución**, **Recompilar solución** y **Limpiar solución**, se ejecutan en la configuración de publicación, mientras que los comandos del menú **Depurar**, como **Iniciar depuración** e **Iniciar sin depurar**, se ejecutan en la configuración de depuración.  
   
  **Mostrar solución siempre**  
- Cuando se selecciona, la solución y todos los comandos que se aplican a soluciones siempre se muestran en el IDE.  Cuando está desactivada, todos los proyectos se crean como proyectos independientes y no ve la solución en el Explorador de soluciones ni en los comandos que se aplican a las soluciones en el IDE si la solución solo contiene un proyecto.  
+ Cuando se selecciona, la solución y todos los comandos que se aplican a soluciones siempre se muestran en el IDE. Cuando está desactivada, todos los proyectos se crean como proyectos independientes y no ve la solución en el Explorador de soluciones ni en los comandos que se aplican a las soluciones en el IDE si la solución solo contiene un proyecto.  
   
  **Guardar nuevos proyectos al crearlos**  
- Cuando se selecciona, puede especificar una ubicación para el proyecto en el cuadro de diálogo **Nuevo proyecto**.  Cuando está desactivada, todos los proyectos nuevos se crean como proyectos temporales.  Cuando se trabaja con proyectos temporales, puede crear y experimentar con un proyecto sin tener que especificar una ubicación de disco.  
+ Si está activada, puede especificar una ubicación para el proyecto en el cuadro de diálogo **Nuevo proyecto**. Cuando está desactivada, todos los proyectos nuevos se crean como proyectos temporales. Cuando se trabaja con proyectos temporales, puede crear y experimentar con un proyecto sin tener que especificar una ubicación de disco.  
   
  **Advertir al usuario cuando la ubicación del proyecto no sea de confianza**  
- Si intenta crear un nuevo proyecto o abrir un proyecto existente en una ubicación que no sea de plena confianza \(por ejemplo, en una ruta de acceso UNC o HTTP\), se muestra un mensaje.  Use esta opción para especificar si el mensaje se muestra cada vez que intente crear o abrir un proyecto en una ubicación que no sea de plena confianza.  
+ Si intenta crear un nuevo proyecto o abrir un proyecto existente en una ubicación que no sea de plena confianza (por ejemplo, en una ruta de acceso UNC o HTTP), se muestra un mensaje. Use esta opción para especificar si el mensaje se muestra cada vez que intente crear o abrir un proyecto en una ubicación que no sea de plena confianza.  
   
  **Mostrar ventana de salida cuando empiece la compilación**  
- Muestra automáticamente la ventana de salida en el IDE al empezar la compilación de la solución.  Para obtener más información, consulte [Cómo: Controlar la ventana Resultados](../Topic/How%20to:%20Control%20the%20Output%20Window.md).  Esta opción está habilitada de forma predeterminada.  
+ Muestra automáticamente la ventana de salida en el IDE al empezar la compilación de la solución. Para más información, vea [Cómo: Controlar la ventana Resultados](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Esta opción está habilitada de forma predeterminada.  
   
  **Solicitar cambio de nombre simbólico al cambiar el nombre de los archivos**  
  Cuando se selecciona, muestra un cuadro de mensaje que pregunta si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe cambiar o no el nombre de todas las referencias del proyecto al elemento de código.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

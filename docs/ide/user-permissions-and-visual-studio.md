@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 9c25532605613b34ded15a4bd6a533e589b7fce2
-ms.openlocfilehash: 8bb4a33b0cb9957850e45f0d9d735cb0c2862f51
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 480be03d8ca431ff90ff00881a29daeaecfbec1b
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
@@ -86,5 +86,5 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.  
   
 ## <a name="see-also"></a>Vea también  
- [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
+ [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Instalar Visual Studio](../install/install-visual-studio.md)
