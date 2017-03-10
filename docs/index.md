@@ -4,9 +4,9 @@ hide_bc: true
 title: "Documentación de Visual Studio"
 description: "Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas."
 translationtype: Human Translation
-ms.sourcegitcommit: c1eb1e58e423ff79928708c1fd83a4342eec489d
-ms.openlocfilehash: 030d9cf3f28bf03afba94638da7929105e5746db
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 2a782993b8e2787c99c384c6df9c72316fe11521
+ms.lasthandoff: 03/07/2017
 
 ---
 <div id="main" class="v2">
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/22/2017
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/get-started-with-visual-studio">
+                <a href="/visualstudio/ide/visual-studio-ide">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/22/2017
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Novedades en Visual Studio 2017 RC</h3>
+                                    <h3>Novedades de Visual Studio 2017</h3>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python</h3>
+                                                    <h3>Python (versión preliminar)</h3>
                                                     <p>Desarrollo interactivo para aplicaciones de Python, con marcos familiares como Django y Flask.</p>
                                                 </div>
                                             </div>
@@ -246,26 +246,7 @@ ms.lasthandoff: 02/22/2017
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Aplicaciones analíticas y de ciencia de datos</h3>
-                                                    <p>Lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python, R y F#.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                            
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
@@ -444,7 +425,7 @@ ms.lasthandoff: 02/22/2017
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833076">
+                                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/index-writing-code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -732,7 +713,7 @@ ms.lasthandoff: 02/22/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python</h3>
+                                                    <h3>Python (versión preliminar)</h3>
                                                     <p>Un lenguaje de programación orientado a objetos dinámico y de alto nivel que a menudo se usa para el desarrollo rápido de aplicaciones.</p>
                                                 </a>
                                             </div>
@@ -786,3 +767,4 @@ ms.lasthandoff: 02/22/2017
         </ul>
     </div>
 </div>
+

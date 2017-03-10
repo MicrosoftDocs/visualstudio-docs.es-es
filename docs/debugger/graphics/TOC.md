@@ -12,12 +12,14 @@
 ## [Variante de generación Mip-map](mip-map-generation-variant.md)
 ## [Variante de dimensiones de textura Mitad/cuarto](half-quarter-texture-dimensions-variant.md)
 ## [Variante de compresión de textura BC](bc-texture-compression-variant.md)
-# [Lista de eventos gráficos](graphics-event-list.md)
-# [Estado de gráficos](graphics-state.md)
-# [Etapas de canalización de gráficos](graphics-pipeline-stages.md)
-# [Pila de llamadas de eventos gráficos](graphics-event-call-stack.md)
-# [Historial de píxeles de gráfico](graphics-pixel-history.md)
-# [Tabla de objetos gráficos](graphics-object-table.md)
+# [Lista de eventos](graphics-event-list.md)
+# [Estado](graphics-state.md)
+# [Etapas de canalización](graphics-pipeline-stages.md)
+# [Pila de llamadas de eventos](graphics-event-call-stack.md)
+# [Historial de píxeles](graphics-pixel-history.md)
+# [Tabla de objetos](graphics-object-table.md)
+# [Estadísticas de API y memoria](graphics-api-and-memory-statistics.md)
+# [Validación de marcos](graphics-frame-validation.md)
 # [Depurador de sombreador HLSL](hlsl-shader-debugger.md)
 # [Herramienta de captura de línea de comandos](command-line-capture-tool.md)
 # [Ejemplos de diagnóstico de gráficos](graphics-diagnostics-examples.md)
@@ -45,8 +47,3 @@
 ## [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)
 ## [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)
 ## [VSG_NODEFAULT_INSTANCE](vsg-nodefault-instance.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -88,6 +88,7 @@
 ### [Cuadro de herramientas, Componentes (Pestaña)](toolbox-components-tab.md)
 ### [Cuadro de herramientas, Datos (Pestaña)](toolbox-data-tab.md)
 ### [Cuadro de herramientas, HTML (Pestaña)](toolbox-html-tab.md)
+## [Página de opciones del Diseñador XAML](xaml-designer.md)
 # [Modificadores de línea de comandos para Devenv](devenv-command-line-switches.md)
 ## [-? (devenv.exe)](q-devenv-exe.md)
 ## [-Build (devenv.exe)](build-devenv-exe.md)
@@ -162,8 +163,3 @@
 ## [Servicios y productos de Microsoft para mejorar la accesibilidad](accessibility-products-and-services-from-microsoft.md)
 ## [Recursos para diseñar aplicaciones accesibles](resources-for-designing-accessible-applications.md)
 ## [Se necesita autorización de proxy](proxy-authorization-required.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

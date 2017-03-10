@@ -271,11 +271,11 @@
 ### [Inicio rápido: Análisis de código para C/C++](quick-start-code-analysis-for-c-cpp.md)
 ### [Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 ### [Usar los comprobadores de directrices principales de C++](using-the-cpp-core-guidelines-checkers.md)
-### [Análisis de código para obtener información general de C/C++](code-analysis-for-c-cpp-overview.md)
+### [Información general del análisis de código de C/C++](code-analysis-for-c-cpp-overview.md)
 ### [Cómo: Establecer propiedades de análisis de código para proyectos de C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md)
 ### [Tutorial: Analizar código de C/C++ en previsión de defectos](walkthrough-analyzing-c-cpp-code-for-defects.md)
 #### [Ejemplo de demostración](demo-sample.md)
-### [Usar anotaciones SAL para reducir defectos de código de C/C++](using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+### [Uso de anotaciones SAL para reducir defectos de código de C/C++](using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 #### [Introducción a SAL](understanding-sal.md)
 #### [Anotar parámetros de función y valores devueltos](annotating-function-parameters-and-return-values.md)
 #### [Anotar el comportamiento de funciones](annotating-function-behavior.md)
@@ -285,7 +285,7 @@
 #### [Funciones intrínsecas](intrinsic-functions.md)
 #### [Procedimientos recomendados y ejemplos (SAL)](best-practices-and-examples-sal.md)
 ### [Cómo: Especificar información de código adicional mediante __analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
-### [Advertencias de análisis de código de C/C++](code-analysis-for-c-cpp-warnings.md)
+### [Análisis de código para advertencias de C/C++](code-analysis-for-c-cpp-warnings.md)
 #### [C1250](c1250.md)
 #### [C1251](c1251.md)
 #### [C1252](c1252.md)
@@ -609,8 +609,3 @@
 # [Solucionar problemas de las herramientas de calidad](troubleshooting-quality-tools.md)
 ## [Solucionar problemas de análisis de código](troubleshooting-code-analysis-issues.md)
 ## [Solucionar problemas de métricas de código](troubleshooting-code-metrics-issues.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
