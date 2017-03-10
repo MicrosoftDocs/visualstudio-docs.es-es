@@ -13,7 +13,7 @@
 ## [Variante de dimensiones de textura Mitad/cuarto](half-quarter-texture-dimensions-variant.md)
 ## [Variante de compresión de textura BC](bc-texture-compression-variant.md)
 # [Lista de eventos](graphics-event-list.md)
-# [Estado](graphics-state.md)
+# [Estado de gráficos](graphics-state.md)
 # [Etapas de canalización](graphics-pipeline-stages.md)
 # [Pila de llamadas de eventos](graphics-event-call-stack.md)
 # [Historial de píxeles](graphics-pixel-history.md)
