@@ -1,72 +1,87 @@
 ---
-title: "Procedimientos recomendados para usar fragmentos de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fragmentos de código, procedimientos recomendados"
-  - "fragmentos de código, seguridad"
+title: "Procedimientos recomendados para usar fragmentos de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets, best practices
+- code snippets, security
 ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
 caps.latest.revision: 22
-caps.handback.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Procedimientos recomendados para usar fragmentos de c&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 954bd5e0ba38d7a538700cba175933cc8303c863
+ms.lasthandoff: 02/22/2017
 
-El código de un fragmento de código muestra sólo la manera más básica de hacer algo.  Para la mayoría de las aplicaciones, el código debe modificarse para ajustarse a la aplicación.  
+---
+# <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
+El código de un fragmento de código muestra solo la forma más sencilla de hacer algo. Para la mayoría de las aplicaciones, el código debe modificarse para adaptarlo a la aplicación.  
   
-## Controlar las excepciones  
- Normalmente, los bloques try\-catch de fragmentos de código… detectan y volver a producir todas las excepciones.  Es posible que no sea la elección más adecuada para su proyecto.  Existen varias formas de responder a cada excepción.  Para obtener ejemplos, vea [Cómo: Controlar una excepción mediante Try y Catch](../Topic/How%20to:%20Handle%20an%20Exception%20Using%20try-catch%20\(C%23%20Programming%20Guide\).md) y [Try...Catch...Finally \(Instrucción\)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
+## <a name="handling-exceptions"></a>Controlar las excepciones  
+ Normalmente, el fragmento de código Try... Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](http://msdn.microsoft.com/Library/ca8e3773-980e-4767-8633-7408540e9818) y [Try...Catch...Finally (instrucción)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
   
-## Ubicaciones de archivos  
- Cuando adapte las ubicaciones del archivo a la aplicación, debe considerar lo siguiente:  
+## <a name="file-locations"></a>Ubicaciones de archivos  
+ Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:  
   
--   Encontrar una ubicación accesible.  Los usuarios no pueden obtener acceso a la carpeta Archivos de programa del equipo, de modo que almacenar los archivos con los archivos de aplicación no funcione.  
+-   Encontrar una ubicación accesible. Es posible que los usuarios no tengan acceso a la carpeta Archivos de programa del equipo, por lo que puede que no sirva almacenar archivos con los archivos de aplicación.  
   
--   Encontrar una ubicación segura.  Los archivos almacenados en la carpeta raíz \(C:\\\) no es seguro.  Para los datos de la aplicación, recomendamos la carpeta \\Datos de programa.  Para los datos de cada usuario, la aplicación puede crear un archivo en la carpeta \\Mis documentos.  
+-   Encontrar una ubicación segura. Almacenar archivos en la carpeta raíz (C:\\) no es seguro. Para datos de aplicaciones, le recomendamos la carpeta \Application Data. Para los datos de los usuarios, la aplicación puede crear un archivo para cada usuario en la carpeta \Mis documentos.  
   
--   Utilizar un nombre de archivo válido.  Puede utilizar los controles de <xref:System.Windows.Forms.OpenFileDialog> y de <xref:System.Windows.Forms.SaveFileDialog> para reducir la probabilidad de nombres de archivo no válidos.  Tenga en cuenta que en el período comprendido entre el momento en que el usuario selecciona el archivo y el momento en que el código manipula el archivo, este archivo puede eliminarse.  Además, es posible que el usuario no tenga los permisos para escribir en el archivo.  
+-   Usar un nombre de archivo válido. Puede usar los controles <xref:System.Windows.Forms.OpenFileDialog> y <xref:System.Windows.Forms.SaveFileDialog> para reducir la probabilidad de nombres de archivo no válidos. Tenga en cuenta que, entre el momento en que el usuario selecciona un archivo y el tiempo que el código manipula el archivo, se puede eliminar el archivo. Además, es posible que el usuario no tenga permisos para escribir en el archivo.  
   
-## Seguridad  
- Lo seguro que sea un miniprograma depende de en qué parte del código fuente se utilice y de cómo se modifique una vez que está en el código.  La lista siguiente contiene algunas de las áreas que deben tenerse en cuenta.  
+## <a name="security"></a>Seguridad  
+ El nivel de seguridad de un fragmento de código depende de dónde se usa en el código fuente y cómo se modifica una vez que está en el código. La lista siguiente contiene algunas de las áreas que deben tenerse en cuenta.  
   
--   Acceso a archivos y bases de datos  
+-   Acceso de base de datos y archivo  
   
 -   Seguridad de acceso del código  
   
--   Protección de recursos \(como registros de eventos, Registro\)  
+-   Protección de recursos (como registros de eventos, Registro)  
   
 -   Almacenamiento de secretos  
   
 -   Comprobación de entradas  
   
--   Transferencia de datos a tecnologías de scripting  
+-   Paso de datos a tecnologías de scripting  
   
- Para obtener más información, vea [Proteger aplicaciones](../ide/securing-applications.md).  
+ Para obtener más información, consulte [Proteger aplicaciones](../ide/securing-applications.md).  
   
-## fragmentos de código descargado  
- Los fragmentos de código de IntelliSense instalados por Visual Studio no están en ellos mismos un riesgo de seguridad.  Sin embargo, pueden generar riesgos para la seguridad en la aplicación.  Los fragmentos de código descargados de internet se deben tratar como cualquier otro contenido descargado \- con extrema precaución.  
+## <a name="downloaded-code-snippets"></a>Fragmentos de código descargados  
+ Los fragmentos de código de IntelliSense instalados por Visual Studio no constituyen por sí mismos un peligro para la seguridad. En cambio, pueden crear riesgos de seguridad en la aplicación. Los fragmentos de código descargados de Internet deben tratarse como cualquier otro contenido descargado: con extrema precaución.  
   
--   Los fragmentos de descarga desde sitios de confianza, y usan software antivirus actualizado.  
+-   Descargue fragmentos solo de sitios de confianza y use software antivirus actualizado.  
   
--   Abra todos los archivos descargados de fragmentos de código en el Bloc de notas o el Editor XML de Visual Studio y los revise cuidadosamente antes de instalarlos.  busque los problemas siguientes:  
+-   Abra todos los archivos de fragmento de código descargados en el Bloc de notas o el editor XML de Visual Studio y examínelos detenidamente antes de instalarlos. Busque los siguientes problemas:  
   
-    -   El código del miniprograma podría dañar el sistema si lo ejecuta.  lea el código fuente cuidadosamente antes de ejecutarlo.  
+    -   El fragmento de código podría dañar el sistema si lo ejecuta. Lea detenidamente el código fuente antes de ejecutarlo.  
   
-    -   El bloque de la dirección URL de la Ayuda del archivo del miniprograma puede contener las direcciones URL que ejecutan un archivo de script malintencionado o muestran un sitio Web ofensivo.  
+    -   El bloque Dirección URL de la Ayuda del archivo de fragmento de código puede contener direcciones URL que ejecuten un archivo de script malintencionado o muestren un sitio web ofensivo.  
   
-    -   El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y se puede cargar desde cualquier parte del sistema.  Estas referencias se pueden haber descargado en su equipo desde el sitio del que descargó el fragmento de código.  El fragmento de código puede realizar a continuación una llamada a un método de la referencia que ejecuta el código malintencionado.  Para protegerse contra este tipo de ataque, revise los bloques imports y referencias de archivo snippet.  
+    -   El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
  [Proteger aplicaciones](../ide/securing-applications.md)   
  [Fragmentos de código](../ide/code-snippets.md)

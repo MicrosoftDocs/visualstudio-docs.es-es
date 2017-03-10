@@ -1,84 +1,99 @@
 ---
-title: "Informaci&#243;n general sobre la compatibilidad con m&#250;ltiples versiones (multi-targeting) en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "destinos múltiples [Visual Studio]"
-  - "destinos múltiples [Visual Studio]"
-  - "especificar versión de .NET Framework [Visual Studio]"
-  - "versiones [Visual Studio], especificar versión de .NET Framework"
+title: "Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- targeting .NET Framework version [Visual Studio]
+- versions [Visual Studio], targeting .NET Framework version
+- multi-targeting [Visual Studio]
+- multitargeting [Visual Studio]
 ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 36
-caps.handback.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Informaci&#243;n general sobre la compatibilidad con m&#250;ltiples versiones (multi-targeting) en Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 1a1b6d341325477c39ea3cb1faee029f78069325
+ms.lasthandoff: 02/22/2017
 
-En esta versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede especificar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] necesaria para la aplicación.  Por tanto, si desea usar esta versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para continuar desarrollando un proyecto que empezó en una versión anterior, no tiene que cambiar el destino del marco.  También podría crear una solución que contenga proyectos destinados a versiones diferentes del framework.  El marco de trabajo que tiene como destino también ayuda garantiza que la aplicación utilice solo la funcionalidad disponible en la versión especificada del marco de trabajo.  
+---
+# <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
+En esta versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede especificar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que se requiere para la aplicación. Por tanto, si quiere usar esta versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para seguir desarrollando un proyecto que ha iniciado en una versión anterior, no tiene que cambiar el marco de destino. También podría crear una solución que contenga proyectos destinados a versiones diferentes del marco. La elección del marco de destino ayuda también a garantizar que la aplicación use solo la funcionalidad que está disponible en la versión especificada del marco.  
   
 > [!TIP]
->  También puede tener como destino aplicaciones para distintas plataformas.  Para obtener más información, vea [Compatibilidad con múltiples versiones \(multi\-targeting\)](../msbuild/msbuild-multitargeting-overview.md)  
+>  También puede dirigir aplicaciones a distintas plataformas. Para obtener más información, consulte [Multitargeting](../msbuild/msbuild-multitargeting-overview.md) [Compatibilidad con múltiples versiones (multi-targeting)]  
   
-## Características de establecimiento de destino de marco de trabajo  
- El establecimiento de destinos de marco de trabajo incluye las siguientes características:  
+## <a name="framework-targeting-features"></a>Características de la elección del marco de destino  
+ La elección del marco de destino incluye las siguientes características:  
   
--   Al abrir un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] puede actualizarlo automáticamente o dejar el destino como está.  
+-   Si abre un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] puede actualizarlo de forma automática o mantener el destino tal cual.  
   
--   Al crear un proyecto, puede especificar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a la que desea destinarlo.  
+-   Al crear un proyecto, puede especificar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que quiere usar como destino.  
   
--   Puede cambiar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a la que está destinado un proyecto existente.  
+-   Puede cambiar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que tiene como destino un proyecto existente.  
   
--   Puede establecer como destino una versión distinta de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en cada proyecto de la misma solución.  
+-   Puede elegir como destino una versión diferente de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en varios proyectos en la misma solución.  
   
--   Cuando se cambia la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que un proyecto usa como destino, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] realiza los cambios necesarios en las referencias y los archivos de configuración.  
+-   Si cambia la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino de un proyecto, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] realiza los cambios necesarios en las referencias y archivos de configuración.  
   
- Cuando trabaje en un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio realiza dinámicamente modificaciones en el entorno de desarrollo, como se indica a continuación:  
+ Si trabaja en un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio cambia de forma dinámica el entorno de desarrollo, de la siguiente forma:  
   
--   Filtrará los elementos de los cuadros de diálogo **Nuevo proyecto**, **Agregar nuevo elemento**, **Agregar nueva referencia** y **Agregar referencia de servicio** para omitir las opciones que no están disponibles en la versión de destino.  
+-   Filtra los elementos de los cuadros de diálogo **Nuevo proyecto**, **Agregar nuevo elemento**, **Agregar nueva referencia** y **Agregar referencia de servicio** para omitir las opciones que no están disponibles en la versión de destino.  
   
--   Filtrará los controles personalizados del **Cuadro de herramientas** para quitar aquellos que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios controles disponibles.  
+-   Filtra los controles personalizados del **Cuadro de herramientas** para quitar los que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios disponibles.  
   
 -   Filtra IntelliSense para omitir características de lenguaje que no están disponibles en la versión de destino.  
   
--   Filtrará las propiedades de la ventana **Propiedades** para omitir las que no están disponibles en la versión de destino.  
+-   Filtra las propiedades de la ventana **Propiedades** para omitir las que no están disponibles en la versión de destino.  
   
--   Filtrará las opciones de menú para omitir las que no están disponibles en la versión de destino.  
+-   Filtra las opciones del menú para omitir aquellas que no están disponibles en la versión de destino.  
   
--   Para compilaciones, utiliza la versión del compilador y las opciones del compilador adecuadas para la versión de destino.  
-  
-> [!NOTE]
->  El establecimiento de destino de marco de trabajo no garantiza que la aplicación se ejecutará correctamente.  Debe probar la aplicación para asegurarse de que se ejecuta correctamente en la versión de destino.  No puede especificar versiones de .NET Framework de destino anteriores a .NET Framework 2.0.  
-  
-## Seleccionar una versión de .NET Framework de destino  
- Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**.  La lista de plantillas de proyecto disponibles se filtra en función de lo que se seleccione.  En un proyecto existente, puede cambiar la versión o perfil de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino en el cuadro de diálogo de propiedades del proyecto.  Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+-   Para las compilaciones, usa la versión y las opciones del compilador que son adecuadas para la versión de destino.  
   
 > [!NOTE]
->  En las ediciones Express de Visual Studio, no puede establecer el marco de destino en el cuadro **Nuevo proyecto**.  
+>  La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino. No puede elegir como destino versiones de .NET Framework anteriores a la versión 2.0.  
   
-## Resolver las referencias de los ensamblados del sistema y de usuarios  
- Para establecer como destino una versión de .NET Framework, debe instalar primero las referencias de ensamblado adecuadas.  Las referencias de ensamblado para las versiones 2.0, 3.0, y 3.5 de .NET Framework se incluyen en .NET Framework 3.5 SP1. Podrá descargar dichas referencias desde el sitio web [Centro de descarga de Microsoft, Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602).  Las referencias de ensamblado para .NET Framework Client Profile 3.5, .NET Framework 4, .NET Framework Client Profile 4 y Silverlight también están disponibles en el sitio web [Descargas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).  
+## <a name="selecting-a-target-framework-version"></a>Seleccionar una versión de .NET Framework de destino  
+ Al crear un proyecto, seleccione la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino en el cuadro de diálogo **Nuevo proyecto**. La lista de plantillas de proyecto disponibles se filtra según la selección. En un proyecto existente, puede cambiar la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 > [!NOTE]
->  Un perfil de cliente de .NET Framework es un subconjunto de .NET Framework que proporciona un conjunto limitado de bibliotecas y características.  Para obtener más información acerca de los perfiles de cliente, vea [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+>  En las ediciones Express de Visual Studio, no se puede establecer el marco de destino en el cuadro de diálogo **Nuevo proyecto**.  
   
- El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados de sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino de modo que no se puedan agregar a un proyecto accidentalmente. \(Los ensamblados del sistema son archivos .dll que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\). Las referencias que pertenecen a una versión de.NET Framework posterior a la versión de destino no se resolverán y los controles que dependan de este tipo de referencia no puede agregarse.  Si desea habilitar este tipo de referencia, restaure el destino de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] del proyecto en uno que incluya la referencia. Para obtener más información, vea [Introduction to the Project Designer](http://msdn.microsoft.com/es-es/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+## <a name="resolving-system-and-user-assembly-references"></a>Resolver referencias de ensamblado de usuario y sistema  
+ Para elegir como destino una versión de .NET Framework, primero debe instalar las referencias de ensamblado adecuadas. Las referencias de ensamblado de las versiones de .NET Framework 2.0, 3.0 y 3.5 se incluyen en .NET Framework 3.5 SP1, que puede descargar desde el [Centro de descarga de Microsoft, en el sitio web de Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602). Las referencias de ensamblado de .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile y Silverlight también están disponibles en el sitio web [Descargas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).  
   
- Para obtener más información sobre referencias de ensamblados, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).  
+> [!NOTE]
+>  Un perfil de cliente de .NET Framework es un subconjunto de .NET Framework que proporciona un conjunto limitado de bibliotecas y características. Para obtener más información sobre perfiles de cliente, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
-## Habilitar LINQ  
- Cuando el destino es .NET Framework 3.5 o versiones posteriores, automáticamente se agrega una referencia a System.Core y una importación de nivel de proyecto para System.Linq \(solo en Visual Basic\).  Si desea utilizar características de LINQ, también debe activar Option Infer \(solo en Visual Basic\).  La referencia y la importación se quitan automáticamente si cambia la versión de destino a una versión anterior de .NET Framework.  Para obtener más información, vea [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+ El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos .dll que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]). No se resolverán las referencias que pertenezcan a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino del proyecto a otro que incluya la referencia.  Para obtener más información, consulte [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
-## Vea también  
- [Compatibilidad con múltiples versiones \(multi\-targeting\)](../msbuild/msbuild-multitargeting-overview.md)   
- [.NET Framework Multi\-Targeting for ASP.NET Web Projects](../Topic/.NET%20Framework%20Multi-Targeting%20for%20ASP.NET%20Web%20Projects.md)   
- [Compatibilidad de la plataforma y requisitos del sistema](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+ Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).  
+  
+## <a name="enabling-linq"></a>Habilitar LINQ  
+ Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, consulte [Cómo: Crear un proyecto de LINQ](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+  
+## <a name="see-also"></a>Vea también  
+ [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)  [Compatibilidad con múltiples versiones (multi-targeting)]  
+ [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [Platform compatibility and system requirements](http://www.microsoft.com/visualstudio/eng/products/compatibility) (Compatibilidad de plataformas y requisitos del sistema)

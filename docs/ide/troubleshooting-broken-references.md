@@ -1,96 +1,111 @@
 ---
-title: "Solucionar problemas de referencias rotas | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "hacer referencia a componentes, solucionar problemas"
-  - "hacer referencia a archivos desde proyectos"
-  - "solución de problemas de referencias"
-  - "proyectos de Visual Basic, referencias"
-  - "proyectos de Visual C#, referencias"
+title: Solucionar problemas de referencias rotas | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual C# projects, references
+- Visual Basic projects, references
+- troubleshooting references
+- referencing files from projects
+- referencing components, troubleshooting
 ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
 caps.latest.revision: 15
-caps.handback.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Solucionar problemas de referencias rotas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: f11ccab05613e35991b7f1dee0932009f5ab49b7
+ms.lasthandoff: 02/22/2017
 
-Si la aplicación intenta utilizar una referencia rota, se generará un error de excepción.  La incapacidad para encontrar el componente al que se hace referencia es el desencadenador principal del error, pero hay varias situaciones en las cuales una referencia puede considerarse rota.  La lista siguiente muestra estas circunstancias:  
+---
+# <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
+Si la aplicación intenta usar una referencia rota, se genera un error de excepción. La incapacidad de encontrar el componente al que se hace referencia es el desencadenador principal del error, pero hay varias situaciones en las que se puede considerar una referencia como rota. Estas instancias se muestran en la siguiente lista:  
   
--   La ruta de acceso a la referencia del proyecto es incorrecta o está incompleta.  
+-   La ruta de acceso de referencia del proyecto es incorrecta o está incompleta.  
   
--   El archivo al que se hace referencia se eliminó.  
+-   Se ha eliminado el archivo al que se hace referencia.  
   
--   El archivo al que se hace referencia cambió de nombre.  
+-   Se ha cambiado el nombre del archivo al que se hace referencia.  
   
--   Se ha producido un error de autenticación o conexión de red.  
+-   Se ha producido un error en la conexión de red o en la autenticación.  
   
--   Se ha realizado una referencia a un componente COM que no está instalado en equipo.  
+-   Se hace referencia a un componente COM que no está instalado en el equipo.  
   
- A continuación se indican las soluciones para estos problemas.  
+ A continuación se ofrecen soluciones a estos problemas.  
   
 > [!NOTE]
->  Se hace referencia a los archivos de los ensamblados mediante rutas absolutas en el archivo de proyectos.  Por ello, los usuarios pueden trabajar en un entorno de varios programadores al que le falte un ensamblado en su entorno local.  Para evitar estos errores, en estos casos, es preferible agregar referencias entre proyectos.  Para obtener más información, consulte [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/es-es/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) y [Programar con ensamblados](../Topic/Programming%20with%20Assemblies.md).  
+>  Se hace referencia a los archivos de los ensamblados mediante rutas de acceso absolutas en el archivo del proyecto. Por tanto, es posible que a los usuarios que trabajan en un entorno de varios desarrolladores les falte un ensamblado al que se hace referencia en su entorno local. Para evitar estos errores, en estos casos es mejor agregar referencias entre proyectos. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) y [Programar con ensamblados](http://msdn.microsoft.com/Library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
-## La ruta de acceso de referencia es incorrecta  
- Si se comparten los proyectos en equipos diferentes, es posible que no se encuentren algunas referencias, cuando un componente esté ubicado en un directorio diferente en cada equipo.  Las referencias se almacenan bajo el nombre del archivo de componente \(por ejemplo, MiComponente\).  Cuando se agrega una referencia a un proyecto, la ubicación de la carpeta del archivo de componentes \(por ejemplo, C:\\MisComponentes\\\) se agrega a la propiedad de proyecto **ReferencePath**.  
+## <a name="reference-path-is-incorrect"></a>La ruta de acceso de referencia es incorrecta  
+ Si los proyectos se comparten en equipos diferentes, es posible que no se encuentren algunas referencias cuando un componente se encuentra en un directorio diferente en cada equipo. Las referencias se almacenan con el nombre del archivo de componente (por ejemplo, MyComponent). Cuando se agrega una referencia a un proyecto, la ubicación de la carpeta del archivo de componente (por ejemplo, C:\MyComponents\\) se anexa a la propiedad del proyecto **ReferencePath**.  
   
- Cuando se abre el proyecto, intenta encontrar estos archivos de componente a los que se hace referencia; buscando en los directorios de la ruta de acceso de referencia.  Si se abre en un equipo que almacene el componente en un directorio diferente, tal como D:\\MisComponentes\\, no podrá encontrarse la referencia y aparecerá un error en la Lista de tareas.  
+ Cuando se abre el proyecto, intenta encontrar estos archivos de componente a los que se hace referencia mediante una búsqueda en los directorios de la ruta de acceso de referencia. Si el proyecto se abre en un equipo que almacena el componente en otro directorio, por ejemplo, D:\MyComponents\\, no se puede encontrar la referencia y aparece un error en la lista de tareas.  
   
- Para solucionar este problema, puede eliminar la referencia rota y, a continuación, reemplazarla mediante el cuadro de diálogo Agregar referencia.  Otra solución consiste en utilizar el elemento **Ruta de acceso de referencias** en las páginas de propiedades del proyecto y modificar las carpetas de la lista para que apunten a las ubicaciones correctas.  La propiedad **Ruta de acceso de referencias** se conserva para cada usuario en cada equipo.  Por consiguiente, modificar la ruta de acceso de referencias no afecta a los demás usuarios del proyecto.  
+ Para corregir este problema, puede eliminar la referencia rota y después reemplazarla mediante el cuadro de diálogo Agregar referencia. Otra solución es usar el elemento **Reference Path** (Ruta de acceso de referencia) en las páginas de propiedades del proyecto y modificar las carpetas de la lista para que apunten a las ubicaciones correctas. La propiedad **Reference Path** se guarda para cada usuario en cada equipo. Por tanto, si modifica la ruta de acceso de referencia, esto no afecta a otros usuarios del proyecto.  
   
 > [!TIP]
->  Las referencias entre proyectos no tienen estos problemas.  Por este motivo, se recomienda utilizarlas en lugar las referencias a archivos, siempre que sea posible.  
+>  Las referencias entre proyectos no tienen estos problemas. Por este motivo, úselas en lugar de las referencias de archivo, si es posible.  
   
-#### Para reparar una referencia del proyecto rota mediante la corrección de la ruta de acceso de referencias  
+#### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Para reparar una referencia de proyecto rota mediante la corrección de la ruta de acceso de referencia  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón secundario del mouse en el nodo del proyecto y, a continuación, haga clic en **Propiedades**.  
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y haga clic en **Propiedades**.  
   
 2.  Aparece el **Diseñador de proyectos**.  
   
-3.  Si está utilizando Visual Basic, selecciona la página **Referencias** y haga clic en el botón **Rutas de acceso de referencia**.  En el cuadro de diálogo **Rutas de referencia de acceso**, escriba la ruta de acceso de la carpeta que contiene el elemento al que desee hacer referencia en el campo **Carpeta** y haga clic en el botón **Agregar carpeta**.  
+3.  Si usa Visual Basic, seleccione la página **Referencias** y haga clic en el botón **Rutas de acceso de referencia**. En el cuadro de diálogo **Rutas de acceso de referencia**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia en el campo **Carpeta** y luego haga clic en el botón **Agregar carpeta**.  
   
      O bien  
   
-     Si está utilizando Visual C\#, seleccione la página **Rutas de acceso de referencia**.  En el campo **Carpeta**, escriba la ruta de acceso de la carpeta que contiene el elemento al que desea hacer referencia y, a continuación, haga clic en el botón **Agregar carpeta**.  
+     Si usa Visual C#, seleccione la página **Rutas de acceso de referencia**. En el campo **Carpeta**, escriba la ruta de acceso de la carpeta que contiene el elemento al que quiere hacer referencia y luego haga clic en el botón **Agregar carpeta**.  
   
-## El archivo al que se hace referencia se eliminó  
+## <a name="referenced-file-has-been-deleted"></a>Se ha eliminado el archivo al que se hace referencia  
  Es posible que el archivo al que se hace referencia se haya eliminado y ya no exista en la unidad.  
   
-#### Para reparar una referencia de proyecto rota a un archivo que ya no exista en la unidad  
+#### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Para reparar una referencia de proyecto rota de un archivo que ya no existe en la unidad  
   
 -   Elimine la referencia.  
   
--   Si existe la referencia en otra ubicación del equipo, léala en esa ubicación.  
+-   Si la referencia existe en otra ubicación del equipo, léala desde esa ubicación.  
   
--   Para obtener más información, consulte [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/es-es/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
-## El archivo al que se hace referencia cambió de nombre  
- Es posible que el archivo al que se hace referencia haya cambiado de nombre.  
+## <a name="referenced-file-has-been-renamed"></a>Se ha cambiado el nombre del archivo al que se hace referencia  
+ Es posible que se haya cambiado el nombre del archivo al que se hace referencia.  
   
-#### Para reparar una referencia rota de un archivo que cambió de nombre  
+#### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Para reparar una referencia rota de un archivo al que se le ha cambiado el nombre  
   
--   Elimine la referencia y, a continuación, agregue una referencia al archivo que ha cambiado de nombre.  
+-   Elimine la referencia y después agregue una referencia al archivo al que se le ha cambiado el nombre.  
   
--   Si existe la referencia en otra ubicación del equipo, deberá leerla de esa ubicación.  Para obtener más información, consulte [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/es-es/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+-   Si la referencia existe en otra ubicación del equipo, tiene que leerla desde esa ubicación. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
-## Se ha producido un error de autenticación o conexión de red  
- Hay muchas causas posibles por las que no se pueda tener acceso a un archivo: un error en la conexión de red o una autenticación incorrecta, por ejemplo.  Cada causa puede tener un único medio de recuperación; por ejemplo, puede que tenga que ponerse en contacto con el administrador local para tener acceso a los recursos necesarios.  Sin embargo, siempre es una opción eliminar la referencia y reparar el código que la utilizaba.  Para obtener más información, consulte [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/es-es/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+## <a name="network-connection-or-authentication-has-failed"></a>Se ha producido un error en la conexión de red o en la autenticación  
+ Puede haber varias causas por las que no se pueda tener acceso a los archivos, por ejemplo, una conexión de red o una autenticación incorrectas. Cada causa puede tener un único medio de recuperación; por ejemplo, es posible que tenga que ponerse en contacto con el administrador local para acceder a los recursos necesarios. No obstante, siempre hay la opción de eliminar la referencia y corregir el código en el que se usaba esa referencia. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
-## El componente COM no está instalado en el equipo  
- Si un usuario ha agregado una referencia a un componente COM y un segundo usuario intenta ejecutar el código en un equipo que no tenga este componente instalado, el segundo usuario recibirá un error indicando que la referencia está rota.  El error se corregirá instalando el componente en el segundo equipo.  Para obtener más información sobre cómo utilizar las referencias a los componentes COM en los proyectos, consulte [Interoperabilidad COM en aplicaciones .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
+## <a name="com-component-is-not-installed-on-computer"></a>No se ha instalado el componente COM en el equipo  
+ Si un usuario ha agregado una referencia a un componente COM y un segundo usuario intenta ejecutar el código en un equipo que no tenga este componente instalado, el segundo usuario recibirá un error que indica que la referencia está rota. Si se instala el componente en el segundo equipo, se corregirá el error. Para obtener más información sobre cómo usar referencias a componentes COM en los proyectos, consulte [Interoperabilidad COM en aplicaciones .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).  
   
-## Vea también  
- [Introduction to the Project Designer](http://msdn.microsoft.com/es-es/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
- [Página Referencias, Diseñador de proyectos \(Visual Basic\)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](http://msdn.microsoft.com/es-es/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+## <a name="see-also"></a>Vea también  
+ [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Página Referencias, Diseñador de proyectos (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
+ [Cómo: Agregar o quitar referencias con el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

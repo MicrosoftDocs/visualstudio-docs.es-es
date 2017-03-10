@@ -1,32 +1,47 @@
 ---
-title: "P&#225;gina de opciones, Propiedades de nodo Fuentes y colores | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Configuración de opciones de herramientas, Propiedades del nodo Fuentes y colores"
-  - "automatización [Visual Studio], controlar opciones de herramientas"
+title: "Página de opciones, Propiedades de nodo Fuentes y colores | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Tools Options settings, Fonts and Colors node properties
+- automation [Visual Studio], controlling Tools Options
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 caps.latest.revision: 8
-caps.handback.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# P&#225;gina de opciones, Propiedades de nodo Fuentes y colores
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: b54f38aa51904ca502ab7298359fdc7124a807a9
+ms.lasthandoff: 02/22/2017
 
-En este documento se describen las propiedades de fuente y color de una ventana de herramientas que ya está registrada para que aparezca bajo **Fuentes y colores** en la categoría **Entorno** del cuadro de diálogo **Opciones**.  Este método es compatible con la naturaleza dinámica de los grupos de elementos que se pueden colorear, los cuales pueden cambiar si se instalan o desinstalan VSPackages.  
+---
+# <a name="options-page-fonts-and-colors-node-properties"></a>Página de opciones, Propiedades de nodo Fuentes y colores
+En este documento se describen las propiedades de fuente y color de una ventana de herramientas registrada para aparecer en **Fuentes y colores** en la categoría **Entorno** del cuadro de diálogo **Opciones**. Esto apoya la naturaleza dinámica de los grupos de elementos coloreables, que pueden cambiar si se instalan o desinstalan VSPackages.  
   
- En la sección siguiente se muestra un ejemplo de un tipo de ventana registrada y las propiedades disponibles en cada ventana.  
+ En la siguiente sección se muestran un ejemplo de un tipo de ventana registrada y las propiedades que están disponibles para cada ventana.  
   
-## Editor de texto, impresora o cuadros de diálogos y ventanas de herramientas  
+## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Editor de texto o Impresora o Cuadros de diálogo y Ventanas de herramientas  
  `DTE.Properties("FontsAndColors", "TextEditor")`  
   
  O bien  
@@ -38,13 +53,13 @@ En este documento se describen las propiedades de fuente y color de una ventana 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
 |Nombre de elemento de propiedad|Valor|Descripción|  
-|-------------------------------------|-----------|-----------------|  
-|FontFamily|Get\/Set \(String\)|El nombre de fuente que se utilizará, por ejemplo, "Courier New".|  
-|FontCharacterSet|Get\/Set \(<xref:EnvDTE.vsFontCharSet>\)|Valor <xref:EnvDTE.vsFontCharSet> que especifica el tipo de juego de caracteres que se utilizará, por ejemplo, hebreo o ruso.|  
-|FontSize|Get\/Set \(Short\)|El tamaño de fuente que se utilizará, en puntos.  Por ejemplo, 10 o 12.|  
+|------------------------|-----------|-----------------|  
+|FontFamily|Get/Set (String)|Nombre de la fuente que se va a usar, por ejemplo, "Courier New".|  
+|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valor <xref:EnvDTE.vsFontCharSet> que especifica el tipo de juego de caracteres que se va a usar, como hebreo o ruso.|  
+|FontSize|Get/Set (Short)|Tamaño de fuente que se va a usar, en puntos. Por ejemplo, 10 o 12.|  
   
-## Vea también  
- [Controlar la configuración de opciones](../Topic/Controlling%20Options%20Settings.md)   
- [Determinar los nombres de los elementos de propiedades en las páginas de opciones](../Topic/Determining%20the%20Names%20of%20Property%20Items%20on%20Options%20Pages.md)   
+## <a name="see-also"></a>Vea también  
+ [Controlar la configuración de opciones](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Determinar los nombres de los elementos de propiedades en las páginas de opciones](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Página de opciones, Propiedades de nodo Entorno](../../ide/reference/options-page-environment-node-properties.md)   
  [Página de opciones, Propiedades de nodo Editor de texto](../../ide/reference/options-page-text-editor-node-properties.md)

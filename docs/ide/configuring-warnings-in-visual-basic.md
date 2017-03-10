@@ -1,129 +1,143 @@
 ---
-title: "Configurar advertencias en Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "errores [Visual Basic], advertencias"
-  - "errores en tiempo de ejecución, advertencias"
-  - "advertencias, configurar"
+title: Configurar advertencias en Visual Basic | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- errors [Visual Basic], warnings
+- run-time errors, warnings
+- warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 caps.latest.revision: 35
-caps.handback.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Configurar advertencias en Visual Basic
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 6de96c79f998cc53fe4230e902fc927b72745d3f
+ms.openlocfilehash: 79391c494271c55a677dc5071139d27c473a6e88
+ms.lasthandoff: 02/22/2017
 
-El compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye un conjunto de advertencias sobre código que puede producir errores en tiempo de ejecución.  Puede utilizar esta información para escribir código más limpio, rápido y mejor con menos errores.  Por ejemplo, el compilador muestra una advertencia cuando el usuario intenta invocar un miembro de una variable de objeto sin asignar, volver de una función sin establecer el valor devuelto o ejecutar un bloque `Try` con errores en la lógica para detectar excepciones.  
+---
+# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye un conjunto de advertencias sobre código susceptible de provocar errores en tiempo de ejecución. Puede usar esa información para escribir un código mejor, más limpio y rápido con menos errores. Por ejemplo, el compilador generará una advertencia cuando el usuario intente invocar un miembro de una variable de objeto sin asignar, volver de una función sin establecer el valor devuelto, o ejecutar un bloque `Try` con errores en la lógica para detectar excepciones.  
   
- En ocasiones, el compilador proporciona lógica adicional en nombre del usuario para que éste pueda centrarse en la tarea actual en lugar de dedicarse a anticipar posibles errores.  En versiones anteriores de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], se utilizaba `Option Strict` para limitar la lógica adicional que proporciona el compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  La configuración de las advertencias permite limitar esta lógica de una manera más específica, en el nivel de las advertencias individuales.  
+ En ocasiones, el compilador proporciona lógica adicional en nombre del usuario para que este pueda centrarse en la tarea en cuestión, en lugar de anticipar posibles errores. En versiones anteriores de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `Option Strict` se usaba para limitar la lógica adicional que proporciona el compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Configurar advertencias le permite limitar esta lógica de una forma más pormenorizada, en el nivel de las advertencias individuales.  
   
- Puede personalizar su proyecto y desactivar algunas advertencias que no afectan a su aplicación o convertir otras advertencias en errores.  Esta página explica cómo activar y desactivar las advertencias individuales.  
+ Es posible que quiera personalizar el proyecto y desactivar algunas advertencias que no afectan a su aplicación, así como convertir otras advertencias en errores. En esta página se explica cómo activar y desactivar las advertencias individuales.  
   
-## Activar y desactivar advertencias  
- Existen cuatro formas diferentes de configurar advertencias: puede configurarlas con el **Diseñador de proyectos** o puede utilizar las opciones de compilador **\/warnaserror** y **\/nowarn**.  
+## <a name="turning-warnings-off-and-on"></a>Activar y desactivar las advertencias  
+ Hay dos formas diferentes de configurar advertencias: puede configurarlas mediante el **Diseñador de proyectos** o puede usar las opciones del compilador **/warnaserror** y **/nowarn**.  
   
- La ficha **Compilar** de la página **Diseñador de proyectos** permite activar y desactivar las advertencias.  Active la casilla **Deshabilitar todas las advertencias** para deshabilitar todas las advertencias; active **Considerar todas las advertencias como errores** para tratar todas las advertencias como errores.  Algunas advertencias individuales se pueden alternar como errores o advertencias en la tabla mostrada.  
+ En la pestaña **Compilar** de la página **Diseñador de proyectos**, puede activar y desactivar las advertencias. Seleccione la casilla **Deshabilitar todas las advertencias** para deshabilitar todas las advertencias; seleccione **Tratar todas las advertencias como errores** para tratar todas las advertencias como errores. Algunas advertencias individuales se pueden alternar como errores o advertencias en la tabla mostrada.  
   
- Cuando **Option Strict** se establece como **Off**, las advertencias relacionadas con **Option Strict** no se pueden tratar como independientes entre sí.  Cuando **Option Strict** se establece como **On**, las advertencias asociadas se tratan como errores, independientemente de su estado.  Si **Option Strict** se establece como **Custom** mediante la especificación de `/optionstrict:custom` en el compilador de la línea de comandos, las advertencias de **Option Strict** se pueden activar y desactivar de manera independiente.  
+ Si **Option Strict** está establecido en **Desactivado**, las advertencias relacionadas con **Option Strict** no se pueden tratar independientemente unas de otras. Si **Option Strict** está establecido en **Activado**, las advertencias asociadas se tratan como errores, no importa cuál sea su estado. Si **Option Strict** está establecido en **Personalizado** al especificar `/optionstrict:custom` en el compilador de línea de comandos, las advertencias de **Option Strict** se pueden activar o desactivar por separado.  
   
- También se puede utilizar la opción de la línea de comandos **\/warnaserror** del compilador para especificar si las advertencias se tratan como errores.  Puede agregar una lista delimitada por comas a esta opción para especificar qué advertencias se deben tratar como errores o advertencias, utilizando \+ o \-.  En la tabla siguiente se especifican las opciones posibles.  
+ La opción de línea de comandos **/warnaserror** del compilador también se puede usar para especificar si las advertencias se tratan como errores. Puede agregar una lista delimitada por comas a esta opción para especificar qué advertencias se deben tratar como errores o advertencias usando + o -. En la siguiente tabla, se detallan las posibles opciones.  
   
 |Opción de la línea de comandos|Especifica|  
-|------------------------------------|----------------|  
-|`/warnaserror+`|Tratar todas las advertencias como errores|  
-|`/warnsaserror`\-|No tratar las advertencias como errores.  Éste es el valor predeterminado.|  
-|`/warnaserror+:<warning list` `>`|Tratar advertencias concretas como errores, indicadas por su número de identificador de error en una lista delimitada por comas.|  
-|`/warnaserror-:<warning list>`|No tratar advertencias concretas como errores, indicadas por su número de identificador de error en una lista delimitada por comas.|  
-|`/nowarn`|No indicar advertencias.|  
-|`/nowarn:<warning list>`|No indicar advertencias concretas, indicadas por su número de identificador de error en una lista delimitada por comas.|  
+|--------------------------|---------------|  
+|`/warnaserror+`|Se tratan todas las advertencias como errores.|  
+|`/warnsaserror`-|No se tratan las advertencias como errores. Este es el valor predeterminado.|  
+|`/warnaserror+:<warning list` `>`|Se tratan las advertencias específicas como errores, enumeradas por su número de identificación de error en una lista delimitada por comas.|  
+|`/warnaserror-:<warning list>`|No se tratan las advertencias específicas como errores, enumeradas por su número de identificación de error en una lista delimitada por comas.|  
+|`/nowarn`|No se notifican las advertencias.|  
+|`/nowarn:<warning list>`|No se notifican las advertencias específicas, enumeradas por su número de identificación de error en una lista delimitada por comas.|  
   
- La lista de advertencias contiene el número de identificador de error de las advertencias que deben tratarse como errores, que se puede utilizar en las opciones de la línea de comandos para activar o desactivar advertencias concretas.  Si la lista de advertencias contiene un número no válido, se muestra un error.  
+ La lista de advertencias contiene los números de identificación de error de las advertencias que deben tratarse como errores, que se pueden usar con las opciones de línea de comandos para activar o desactivar advertencias específicas. Si la lista de advertencias contiene un número no válido, se notifica un error.  
   
-## Ejemplos  
- Esta tabla de ejemplos de argumentos de la línea de comandos describe qué hace cada argumento.  
+## <a name="examples"></a>Ejemplos  
+ En esta tabla de ejemplos de argumentos de línea de comandos se describe qué hace cada argumento.  
   
 |Argumento|Descripción|  
-|---------------|-----------------|  
+|--------------|-----------------|  
 |`vbc /warnaserror`|Especifica que todas las advertencias se deben tratar como errores.|  
 |`vbc /warnaserror:42024`|Especifica que la advertencia 42024 se debe tratar como un error.|  
 |`vbc /warnaserror:42024,42025`|Especifica que las advertencias 42024 y 42025 se deben tratar como errores.|  
-|`vbc /nowarn`|Especifica que no se deben indicar advertencias.|  
-|`vbc /nowarn:42024`|Especifica que no se debe indicar la advertencia 42024.|  
-|`vbc /nowarn:42024,42025`|Especifica que no se deben indicar las advertencias 42024 y 42025.|  
+|`vbc /nowarn`|Especifica que no se debe notificar ninguna advertencia.|  
+|`vbc /nowarn:42024`|Especifica que no se debe notificar la advertencia 42024.|  
+|`vbc /nowarn:42024,42025`|Especifica que no se deben notificar las advertencias 42024 y 42025.|  
   
-## Tipos de advertencias  
- A continuación se muestra una lista de advertencias que podría tratar como errores.  
+## <a name="types-of-warnings"></a>Tipos de advertencias  
+ Esta es una lista de advertencias que es posible que quiera tratar como errores.  
   
-### Advertencia de conversión implícita  
- Se genera para las instancias de conversión implícita.  No incluyen las conversiones implícitas de un tipo numérico intrínseco a una cadena cuando se utiliza el operador `&`.  Deshabilitado de forma predeterminada para nuevos proyectos.  
+### <a name="implicit-conversion-warning"></a>Advertencia de conversión implícita  
+ Se genera para instancias de conversión implícita. No incluyen las conversiones implícitas de un tipo numérico intrínseco a una cadena cuando se usa el operador `&`. De manera predeterminada, está desactivada para nuevos proyectos.  
   
- ID: 42016  
+ Id.: 42016  
   
-### Advertencia de invocación de métodos enlazados en tiempo de ejecución y de resolución de sobrecarga  
- Se genera para las instancias de enlace en tiempo de ejecución.  Deshabilitado de forma predeterminada para nuevos proyectos.  
+### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Advertencia de resolución de sobrecarga e invocación de método enlazada en tiempo de ejecución  
+ Se genera para instancias de enlace en tiempo de ejecución. De manera predeterminada, está desactivada para nuevos proyectos.  
   
- ID: 42017  
+ Id.: 42017  
   
-### Advertencia de operandos de tipo Object  
- Se genera cuando se producen operandos de tipo `Object` que crearían un error con `Option Strict On`.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="operands-of-type-object-warnings"></a>Advertencias de operandos de tipo Object  
+ Se generan cuando se producen operandos de tipo `Object` que crearían un error con `Option Strict On`. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42018 y 42019  
+ Id.: 42018 y 42019  
   
-### Advertencia de declaraciones que requieren la cláusula 'As'  
- Se genera cuando una declaración de variable, función o propiedad a la que le falta una cláusula `As` habría creado un error con `Option Strict On`.  Se supone que las variables que no tienen un tipo asignado son del tipo `Object`.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="declarations-require-as-clause-warnings"></a>Advertencias de declaraciones que requieren la cláusula "As"  
+ Se generan cuando una declaración de propiedad, función o variable a la que le falta una cláusula `As` habría creado un error con `Option Strict On`. Las variables que no tienen un tipo asignado se supone que son de tipo `Object`. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42020 \(declaración de variable\), 42021 \(declaración de función\) y 42022 \(declaración de propiedad\).  
+ Id.: 42020 (declaración de variable), 42021 (declaración de función) y 42022 (declaración de propiedad).  
   
-### Advertencia de posible excepción de referencia NULL  
- Se genera cuando se utiliza una variable antes de ser asignada a un valor.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="possible-null-reference-exception-warnings"></a>Advertencias de excepción de referencia nula posible  
+ Se generan cuando se usa una variable antes de que se le asigne un valor. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42104, 42030  
+ Id.: 42104, 42030  
   
-### Advertencia de variable local no usada  
- Se genera cuando se declara una variable local pero no se hace referencia a ella.  Habilitado de forma predeterminada.  
+### <a name="unused-local-variable-warning"></a>Advertencia de variable local sin usar  
+ Se genera cuando se declara una variable local pero nunca se hace referencia a ella. De manera predeterminada, está activada.  
   
- ID: 42024  
+ Id.: 42024  
   
-### Advertencia de acceso a miembro Shared mediante una variable de instancia  
- Se genera cuando el acceso a un miembro Shared desde una instancia puede tener efectos secundarios o cuando el acceso a un miembro Shared desde una vista de instancia no constituye la parte derecha de una expresión o se pasa como un parámetro.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="access-of-shared-member-through-instance-variable-warning"></a>Advertencia de acceso de miembro compartido mediante una variable de instancia  
+ Se genera cuando el acceso a un miembro compartido mediante una instancia puede tener efectos secundarios o cuando el acceso a un miembro compartido mediante una variable de instancia no es el lado derecho de una expresión o se pasa como un parámetro. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42025  
+ Id.: 42025  
   
-### Advertencia de acceso recursivo a un operador o una propiedad  
- Se genera cuando el cuerpo de una rutina usa el mismo operador o propiedad donde se ha definido.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="recursive-operator-or-property-access-warnings"></a>Advertencias de acceso a la propiedad u operador de forma recursiva  
+ Se genera cuando el cuerpo de una rutina usa el mismo operador o propiedad en que se define. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42004 \(operador\), 42026 \(propiedad\)  
+ Id.: 42004 (operador), 42026 (propiedad)  
   
-### Advertencia de función u operador sin valor devuelto  
- Se genera cuando la función o el operador no tiene un valor devuelto especificado.  Incluye la omisión de `Set` en la variable local implícita con el mismo nombre que la función.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="function-or-operator-without-return-value-warning"></a>Advertencia de función u operador sin valor devuelto  
+ Se genera cuando la función u operador no tiene un valor devuelto especificado. Esto incluye la omisión de un `Set` a la variable local implícita con el mismo nombre que la función. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42105 \(función\), 42016 \(operador\)  
+ Id.: 42105 (función), 42016 (operador)  
   
-### Advertencia de modificador Overloads utilizado en un módulo  
- Se genera cuando se utiliza `Overloads` en un objeto `Module`.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="overloads-modifier-used-in-a-module-warning"></a>Advertencia de modificador Overloads usado en un módulo  
+ Se genera cuando `Overloads` se usa en un `Module`. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42028  
+ Id.: 42028  
   
-### Advertencia de bloques Catch duplicados o superpuestos  
- Se genera cuando no se alcanza un bloque `Catch` debido a su relación con otros bloques `Catch` definidos.  Habilitado de forma predeterminada para nuevos proyectos.  
+### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Advertencias de bloques Catch duplicados o superpuestos  
+ Se genera cuando un bloque `Catch` nunca se alcanza debido a su relación con otros bloques `Catch` que se han definido. De manera predeterminada, está activada para nuevos proyectos.  
   
- ID: 42029, 42031  
+ Id.: 42029, 42031  
   
-## Vea también  
- [Asistente de excepciones \(Cuadro de diálogo\)](../debugger/exception-assistant-dialog-box.md)   
+## <a name="see-also"></a>Vea también  
  [Tipos de error](/dotnet/visual-basic/programming-guide/language-features/error-types)   
- [Try...Catch...Finally \(Instrucción\)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [\/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
- [\/warnaserror](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
- [Página Compilación, Diseñador de proyectos \(Visual Basic\)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+ [Try...Catch...Finally (instrucción)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
+ [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
+ [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
+ [Página Compilación, Diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Advertencias del compilador desactivadas de forma predeterminada](/visual-cpp/preprocessor/compiler-warnings-that-are-off-by-default)
