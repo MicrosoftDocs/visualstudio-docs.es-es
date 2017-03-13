@@ -145,7 +145,7 @@ JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayor
 
 <p><ul class="panelContent cardsW">
     <li>
-        <a href="https://docs.microsoft.com/scripting/javascript">
+        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
