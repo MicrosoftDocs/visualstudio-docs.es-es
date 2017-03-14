@@ -1,7 +1,7 @@
 ---
 title: Administrar la firma de ensamblados y manifiestos | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 85474fe229980aac7c57205f111656d4264045d1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
+ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
@@ -46,6 +46,9 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
  Para obtener información sobre cómo firmar ensamblados en proyectos de Visual Basic y C#, consulte [Crear y utilizar ensamblados con nombre seguro](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
  Para obtener información sobre cómo firmar ensamblados en proyectos de Visual C++, consulte [Ensamblados de nombre seguro (Firma de ensamblados) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+
+> [!NOTE]
+>  La firma de nombre seguro no protege contra la ingeniería inversa del ensamblado.  Para protegerse contra las técnicas de ingeniería inversa, consulte [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
   
 ## <a name="asset-types-and-signing"></a>Tipos de recursos y firma  
  Puede firmar manifiestos de aplicación y ensamblados .NET. Entre ellas se incluyen las siguientes:  
