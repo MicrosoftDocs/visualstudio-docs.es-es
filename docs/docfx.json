@@ -3,12 +3,24 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
           "vsdocsdocs/**",
-          "**/includes/**"
+          "**/includes/**",
+			"code-quality/**",
+			"csharp-ide/**",
+			"data-tools/**",
+			"debugger/**",
+			"deployment/**",
+			"extensibility/**",
+			"misc/**",
+			"modeling/**",
+			"vb-ide/**",
+			"workflow-designer/**",
+			"xml-tools/**"
         ]
       }
     ],
@@ -16,7 +28,9 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,9 +41,23 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "ROBOTS": "INDEX,FOLLOW",
+            "author": "",
+            "ms.author": "",
+            "manager": "ghogen",
+            "ms.date": "11/16/2016",
+            "ms.topic": "article",
+            "audience": "developer",
+            "ms.reviewer": "",
+            "ms.prod": "visual-studio-dev15",
+            "ms.technology": "vs-ide-general",
+            "ms.tgt_pltfrm": "dotnet",
+            "searchScope": ["VS IDE"]},
     "fileMetadata": {},
     "template": [],
+    "xref": ["../_repo.en-us/docs/msdn.4.5.2.zip", "../_repo.en-us/docs/namespaces.4.5.2.zip", "../_repo.en-us/docs/vs.110.zip", "../_repo.en-us/docs/vs.140.zip", "../_repo.en-us/docs/office15.zip"],
     "dest": "vsdocsdocs"
   }
 }

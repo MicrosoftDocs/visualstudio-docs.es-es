@@ -1,0 +1,52 @@
+---
+title: "C&#243;mo depurar una infracci&#243;n de acceso | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/05/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.debug.access"
+dev_langs: 
+  - "FSharp"
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "C++"
+helpviewer_keywords: 
+  - "depuración de infracción de acceso"
+  - "depurar [Visual Studio], infracciones de acceso"
+ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
+caps.latest.revision: 18
+caps.handback.revision: 18
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+---
+# C&#243;mo depurar una infracci&#243;n de acceso
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+## Descripción del problema  
+ El programa produce una infracción de acceso. ¿Cómo se puede depurar este error?  
+  
+## Solución  
+ Si se produce una infracción de acceso en una línea de código que desreferencia varios punteros, puede ser difícil averiguar qué puntero produjo la infracción de acceso. A partir de Visual Studio 2015 Update 1, el cuadro de diálogo de excepción ahora indica explícitamente el puntero que produjo la infracción de acceso.  
+  
+ Por ejemplo, con el siguiente código, debería obtener una infracción de acceso:  
+  
+```cpp  
+#include <iostream> using namespace std; class ClassB { public: ClassC* C; ClassB() { C = new ClassC(); } void printHello() { cout << "hello world"; } }; class ClassA { public: ClassB* B; ClassA() { B = nullptr; } }; int main() { ClassA* A = new ClassA(); A->B->printHello(); }  
+```  
+  
+ Si ejecuta este código en Visual Studio 2015 Update 1, verá el cuadro de diálogo de excepción siguiente:  
+  
+ ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
+  
+ Si no puede determinar por qué el puntero ha provocado una infracción de acceso, realice el seguimiento del código para asegurarse de que el puntero que causa el problema se ha asignado correctamente.  Si se pasa como parámetro, asegúrese de que se pasa correctamente y que no está creando accidentalmente una [copia superficial](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). A continuación, compruebe que los valores no se cambian involuntariamente en algún lugar del programa mediante la creación de un punto de interrupción de datos para el puntero en cuestión, para asegurarse de que no se esté modificando en otra parte del programa. Para obtener más información sobre los puntos de interrupción de datos, vea la sección sobre los puntos de interrupción de datos en [Usar puntos de interrupción](../debugger/using-breakpoints.md).  
+  
+## Vea también  
+ [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)

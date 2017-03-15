@@ -1,0 +1,81 @@
+---
+title: "Registrar generadores de un solo archivo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "registro de las herramientas personalizadas"
+  - "herramientas personalizadas, definir la configuración del registro"
+ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
+caps.latest.revision: 16
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 16
+---
+# Registrar generadores de un solo archivo
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+Para disponer de una herramienta personalizada en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe registrar lo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede crear instancias de él y lo asocia con un tipo de proyecto determinado.  
+  
+### Para registrar una herramienta personalizada  
+  
+1.  Registrar la DLL de la herramienta personalizada o en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registro local o en el registro del sistema, en HKEY\_CLASSES\_ROOT.  
+  
+     Por ejemplo, esta es la información de registro para la herramienta personalizada de MSDataSetGenerator administrada, que se incluye con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
+  
+    ```  
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]  
+    @="COM+ class: Microsoft.VSDesigner.CodeGenerator.TypedDataSourceGenerator.DataSourceGeneratorWrapper"  
+    "InprocServer32"="C:\\WINDOWS\\system32\\mscoree.dll"  
+    "ThreadingModel"="Both"  
+    "Class"="Microsoft.VSDesigner.CodeGenerator.TypedDataSourceGenerator.DataSourceGeneratorWrapper"  
+    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+    ```  
+  
+2.  Crear una clave del registro en el que desee [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive en Generators\\*GUID* donde *GUID* es el GUID definido por el sistema de proyecto o el servicio de lenguaje específico. El nombre de la clave se convierte en el nombre de la programación de la herramienta personalizada. La clave de la herramienta personalizada tiene los siguientes valores:  
+  
+    -   \(Predeterminado\)  
+  
+         Opcional. Proporciona una descripción fácil de usar de la herramienta personalizada. Este parámetro es opcional pero recomendado.  
+  
+    -   CLSID  
+  
+         Obligatorio. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+  
+    -   GeneratesDesignTimeSource  
+  
+         Obligatorio. Indica si los tipos de archivos generados por esta herramienta personalizada estarán disponibles para los diseñadores visuales. El valor de este parámetro debe ser \(cero\) 0 para tipos no está disponibles para los diseñadores visuales o 1 \(uno\) para los tipos disponibles para los diseñadores visuales.  
+  
+    > [!NOTE]
+    >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.  
+  
+     Por ejemplo, el MSDataSetGenerator registra a sí mismo una vez para cada idioma:  
+  
+    ```  
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]  
+    @="Microsoft VB Code Generator for XSD"  
+    "CLSID"="{E76D53CC-3D4F-40a2-BD4D-4F3419755476}"  
+    "GeneratesDesignTimeSource"=dword:00000001  
+  
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{fae04ec1-301f-11d3-bf4b-00c04f79efbc}\MSDataSetGenerator]  
+    @="Microsoft C# Code Generator for XSD"  
+    "CLSID"="{E76D53CC-3D4F-40a2-BD4D-4F3419755476}"  
+    "GeneratesDesignTimeSource"=dword:00000001  
+  
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{e6fdf8b0-f3d1-11d4-8576-0002a516ece8}\MSDataSetGenerator]  
+    @="Microsoft J# Code Generator for XSD"  
+    "CLSID"="{E76D53CC-3D4F-40a2-BD4D-4F3419755476}"  
+    "GeneratesDesignTimeSource"=dword:00000001  
+    ```  
+  
+## Vea también  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
+ [Implementar generadores de un solo archivo](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Determinación del espacio de nombres predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
+ [Exponer tipos de diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [Introducción al objeto BuildManager](http://msdn.microsoft.com/es-es/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
