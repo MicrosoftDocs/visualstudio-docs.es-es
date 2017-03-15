@@ -1,7 +1,7 @@
 ---
 title: "Mejorar la calidad del código"
 ms.custom: na
-ms.date: 10/14/2016
+ms.date: 02/17/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 93f70de0acfa8b5efcfe141a1f8060061a4ba15d
-ms.openlocfilehash: 0c439304b8a23166293fc4cc6d984947fd51f133
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
+ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="improve-code-quality"></a>Mejorar la calidad del código
@@ -50,8 +50,6 @@ ms.lasthandoff: 02/22/2017
 |[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|El Explorador de pruebas facilita la integración de las pruebas unitarias en la práctica de desarrollo. Puede usar el marco de pruebas unitarias de Microsoft o uno de los marcos de terceros y de código abierto.|  
 |[Analizar la calidad de la aplicación](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Las herramientas de análisis de código estáticas encuentran problemas de diseño, uso, mantenimiento y estilo en C++ y en código administrado. Muchos de estos problemas pueden provocar errores que son difíciles de reproducir en entornos de prueba estándar.|  
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Las métricas incluyen un índice de mantenimiento para funciones y clases, complejidad ciclomática de funciones, la profundidad de herencia de clases y la cantidad de vinculación entre clases.|  
-|[PreEmptive Analytics para Team Foundation Server](http://msdn.microsoft.com/library/hh973124.aspx)|PreEmptive Analytics para TFS CE ayuda a integrar procesos de desarrollo orientados a los comentarios en el flujo de trabajo de desarrollo. Las aplicaciones enviarán automáticamente datos de informe de excepciones al servicio de PreEmptive Analytics cuando se produzcan errores durante su ejecución. El servicio, a continuación, crea o actualiza los elementos de trabajo en Microsoft Team Foundation Server en función de las reglas y umbrales que defina.|  
-|[PreEmptive Dotfuscator y Analytics CE](assetId:///25d195d4-9f76-4dcc-9fbb-eeb9bdca9a3f)|PreEmptive Dotfuscator es un compactador y un motor de ofuscación .NET que ayuda a proteger los programas contra la ingeniería inversa al tiempo que consigue reducir su tamaño y aumentar su eficiencia.|  
   
 ## <a name="related-scenarios"></a>Escenarios relacionados  
  [Adoptar Visual Studio y Team Foundation Server para Application Lifecycle Management](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
@@ -62,6 +60,9 @@ ms.lasthandoff: 02/22/2017
   
  [Probar la aplicación](https://www.visualstudio.com/docs/test/overview)  
  Puede usar [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] y [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] para ser más productivo a lo largo del ciclo de vida de las pruebas. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] o [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] permiten planear el trabajo de pruebas. Puede crear, administrar, editar y ejecutar pruebas manuales y automatizadas. También puede revisar el progreso de las pruebas en función del plan.  
+  
+ [Proteger la aplicación con PreEmptive Protection - Dotfuscator](../ide/dotfuscator/index.md)  
+ Puede usar la versión gratuita Dotfuscator Community Edition para ayudar a salvaguardar secretos comerciales y propiedad intelectual de otra índole, reducir la piratería y la falsificación, y proteger contra la manipulación y la depuración no autorizada.  Dotfuscator protege y consolida los ensamblados compilados sin necesidad de programación adicional ni de obtener acceso al código fuente.
   
  [Compilar la aplicación](https://www.visualstudio.com/docs/build/overview)  
  Puede utilizar [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] para crear y administrar compilaciones automatizadas del código. [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] permite crear servidores paralelos para implementar compilaciones. Además, se pueden analizar las tendencias de compilación.  
