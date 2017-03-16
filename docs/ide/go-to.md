@@ -27,16 +27,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b259c5d02a452bfaa3bd59f2096b43ee1c1c5942
-ms.openlocfilehash: 352de7f71f8a6c16439061c9815219e5f2b3840a
+ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
+ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
+ms.lasthandoff: 03/01/2017
 
 ---
 
 # <a name="go-to"></a>Ir a
 Existen muchas maneras de navegar fácilmente por el código dentro del IDE de Visual Studio, tanto con el teclado como con el mouse.
 
+<!-- VERSIONLESS -->
 ## <a name="go-to-all"></a>Ir a todo
-Navegue por su código para buscar los elementos específicos que está buscando.  Puede buscar un archivo, símbolo, tipo o una línea específica, entre otros, desde una interfaz sencilla.
+Esta característica existe en Visual Studio 2017 y versiones posteriores.  Le permite navegar por su código para encontrar los elementos específicos que busca.  Puede buscar una línea, tipo, símbolo o archivo específicos, entre otros, desde una interfaz sencilla y unificada.
 
 ### <a name="how-to-use"></a>Cómo se usa
 * **Teclado**
@@ -81,6 +83,7 @@ Configuración | Descripción
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
 Mostrar detalles    | Mostrar la información de resumen, línea, archivo y proyecto de los comentarios de documentación en la ventana
 Centrar ventana   | Mover esta ventana al centro del IDE en lugar de a la parte superior derecha
+<!-- END VERSIONLESS -->
 
 ## <a name="go-to-definition"></a>Ir a definición
 Vaya al origen de un tipo y abra el resultado en una pestaña nueva:
@@ -125,8 +128,3 @@ Entrada        | Función
 **Ctrl+Mayús+-**    | Navegar hacia delante en la pila
 
 También puede usar los elementos de menú **Ver > Navegar hacia atrás** y **Ver > Navegar hacia delante**.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

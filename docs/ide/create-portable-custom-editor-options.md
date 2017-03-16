@@ -1,7 +1,7 @@
 ---
 title: "Crear opciones de configuración del editor personalizadas y portátiles | Microsoft Docs"
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,8 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
+ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
+ms.openlocfilehash: 70f3c6c7e4356a698aa6c1dd265f6c79c662673e
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="create-portable-custom-editor-settings"></a>Crear opciones de configuración del editor personalizadas y portátiles
@@ -86,8 +87,15 @@ Ahora, cuando presiona la tecla TAB, obtiene caracteres de tabulación en lugar 
 > [!NOTE]
 >  Agregar un archivo .editorconfig en su proyecto o código base no convertirá los estilos existentes en los nuevos, solo se aplicará a las líneas que se agreguen a partir de ese momento. Si quita un archivo .editorconfig de su proyecto o código base, debe volver a cargar los archivos de código para que la configuración del editor vuelva a la configuración global. Cualquier error en los archivos .editorconfig se notifica en la ventana de error de Visual Studio.
 
+## <a name="support-editorconfig-for-your-language-service"></a>Compatibilidad de EditorConfig con el servicio de lenguaje
 
+En la mayoría de los casos, cuando se implementa un servicio de lenguaje de Visual Studio, no es necesario llevar a cabo ninguna tarea adicional para admitir las propiedades universales de EditorConfig. El editor principal detecta automáticamente y lee el archivo .editorconfig cuando los usuarios abren archivos, y establece el búfer de texto y las opciones de visualización adecuados. A pesar de ello, algunos servicios de lenguaje optan por usar una opción de visualización de texto contextual adecuada en vez de usar la configuración global para elementos como tabulaciones y espacios cuando un usuario edita un texto o le da formato. En estos casos, el servicio de lenguaje debe actualizarse para que admita archivos EditorConfig.
 
-<!--HONumber=Feb17_HO4-->
+En la tabla siguiente se enumeran los cambios necesarios para actualizar un servicio de lenguaje de modo que admita archivos EditorConfig.
 
+| Opción global en desuso específica del lenguaje | Opción contextual que la reemplaza |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) o !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) o textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) o textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
 
