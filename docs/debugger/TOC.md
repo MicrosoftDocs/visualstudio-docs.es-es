@@ -1,5 +1,4 @@
-# [Depurar en Visual Studio](debugging-in-visual-studio.md)
-# [Guía de características del depurador](debugger-feature-tour.md)
+# [Guía de características de depuración](debugger-feature-tour.md)
 # [Novedades del depurador de Visual Studio](what-s-new-for-the-debugger-in-visual-studio.md)
 # [Conceptos básicos del depurador](debugger-basics.md)
 ## [Introducción al depurador](getting-started-with-the-debugger.md)
