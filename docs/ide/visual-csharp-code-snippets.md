@@ -1,25 +1,44 @@
 ---
-title: "Fragmentos de c&#243;digo de Visual C# | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fragmentos de código [C#], fragmentos de código predeterminados"
-  - "fragmentos de código [C#], herramienta de inserción de fragmento de código"
-  - "herramienta de inserción de fragmento de código [J#]"
-  - "herramienta de inserción de fragmento de código [C#]"
-  - "Visual C#, fragmentos de código predeterminados"
+title: "Fragmentos de código de Visual C# | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- snippets [C#], default snippets
+- snippets [C#], Code Snippet Inserter
+- Code Snippet Inserter [J#]
+- Code Snippet Inserter [C#]
+- Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 01c13c4e0c9107f07580fb1701f81eac74a5022f
+ms.lasthandoff: 03/22/2017
+
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C#
 Los fragmentos de código están listos para usar y puede insertarlos rápidamente en el código. Por ejemplo, el fragmento de código `for` crea un bucle `for` vacío. Algunos fragmentos de código son envolventes, lo que permite seleccionar líneas de código y después elegir un fragmento de código que incorpore las líneas de código seleccionadas. Por ejemplo, al seleccionar líneas de código y activar después el fragmento de código `for`, se creará un bucle `for` que incluirá dichas líneas en su bloque. De este modo, los fragmentos de código hacen de la escritura de código de programación un proceso más rápido, sencillo y fiable.  
@@ -59,7 +78,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 |mbox|Crea una llamada a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Puede que tenga que agregar una referencia a System.Windows.Forms.dll.|Dentro de un método, un indexador, un descriptor de acceso a propiedad o un descriptor de acceso a evento.|  
 |namespace|Crea una declaración [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de un espacio de nombres (incluido el espacio de nombres global).|  
 |prop|Crea una declaración de [propiedad autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dentro de una clase o un struct.|  
-ropfull|Crea una declaración de propiedad con descriptores de acceso get y set.|Dentro de una clase o un struct.|  
+propfull|Crea una declaración de propiedad con descriptores de acceso get y set.|Dentro de una clase o un struct.|  
 |propg|Crea una [propiedad autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) de solo lectura con un descriptor de acceso "set" privado.|Dentro de una clase o un struct.|  
 |sim|Crea una declaración de método Main [static](/dotnet/csharp/language-reference/keywords/static)[int](/dotnet/csharp/language-reference/keywords/int).|Dentro de una clase o un struct.|  
 |struct|Crea una declaración [struct](/dotnet/csharp/language-reference/keywords/struct).|Dentro de un espacio de nombres (incluido el espacio de nombres global), una clase o un struct.|  
@@ -79,8 +98,4 @@ ropfull|Crea una declaración de propiedad con descriptores de acceso get y set.
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Cómo: Usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)   
  
-
-
-<!--HONumber=Feb17_HO4-->
-
 
