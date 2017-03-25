@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 60898d7cace1c10006436a8d98cbd7f7628cf972
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 3da360fc4df5516f5d976f807319c07b49d8c4e8
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Novedades en el SDK de Visual Studio 2017
-
->**Nota:** esta documentación es preliminar y se basa en la versión de Visual Studio 2017 RC.
 
 El SDK de Visual Studio tiene las siguientes características nuevas y actualizadas de 2017 de Visual Studio.
 

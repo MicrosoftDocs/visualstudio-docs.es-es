@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 081a569fc7e38fecc8cc1ae5b0f8138ae8f25521
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 2e6e4b3d9d1528d57fe181b3765e1ce3624bebad
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio de 2017
-
->**Nota:** esta documentación es preliminar y se basa en la versión de Visual Studio 2017 RC.
 
 Con Visual Studio de 2017, le ofrecemos un [más rápido y ligero experiencia de instalación de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) que reduce el impacto de Visual Studio en los sistemas de usuario, mientras se brinda a los usuarios mayor variedad de cargas de trabajo y características instalados. Para admitir estas mejoras, ha realizado cambios en el modelo de extensibilidad y ha realizado algunos cambios importantes a la extensibilidad de Visual Studio. Este documento describe los detalles técnicos de estos cambios y qué se puede hacer para solucionarlos. Tenga en cuenta que algunos datos se detalles de implementación en un momento y se pueden cambiar más adelante.
 
@@ -46,7 +44,7 @@ Estamos introduciendo el v3 VSIX formato (versión 3) para admitir la experienci
 Cambios en el formato VSIX incluyen:
 
 * Declaración de requisitos previos de instalación. Para entregar la promesa de una ligera, rápida o instalar Visual Studio, el programa de instalación ahora ofrece más opciones de configuración a los usuarios. Como resultado, para asegurarse de que se instalan las características y los componentes requeridos por una extensión, las extensiones deberá declarar sus dependencias.
-  * Con el lanzamiento de RC, el instalador de Visual Studio de 2017 ofrecerá automáticamente adquirir e instalar los componentes necesarios para el usuario como parte de la instalación de la extensión.
+  * El instalador de Visual Studio de 2017 automáticamente ofrecerá a adquirir e instalar los componentes necesarios para el usuario como parte de la instalación de la extensión.
   * Los usuarios también le avisará cuando intenta instalar una extensión que no se ha creado con el nuevo formato VSIX v3, incluso si se han marcado en su manifiesto como objetivo versión 15.0.
 * Capacidades mejoradas para el formato VSIX. Para entregar en un [instalación de bajo impacto](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) de Visual Studio que también es compatible con instalaciones en paralelo, ya no guardar la mayoría de los datos de configuración en el registro del sistema y ha movido los ensamblados de la GAC específico de Visual Studio. También aumentamos las capacidades del formato VSIX y motor de instalación de VSIX, que permite usar en lugar de un MSI o EXE para instalar las extensiones para algunos tipos de instalación.
 

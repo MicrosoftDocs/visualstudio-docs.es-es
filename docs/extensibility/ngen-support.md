@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 42ab3add7d1d070e82565dd70fbfabac27713d3a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 46b6f4d13b4c1938797dbe6cf6023e3c8c42d1ed
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
-
->**Nota:** esta documentación es preliminar y se basa en la versión de Visual Studio 2017 RC.
 
 Con Visual Studio de 2017 y el nuevo v3 VSIX extensión (versión 3) manifiesto formato, ahora los desarrolladores pueden extensión "ngen" sus ensamblados en tiempo de instalación.
 
@@ -57,7 +55,7 @@ Hay 4 propiedades que se pueden establecer:
 
 1. **Ngen** (booleano): si es true, el programa de instalación de Visual Studio le "ngen" del ensamblado.
 2. **Aplicación de Ngen** (cadena) – Ngen proporciona la oportunidad de utilizar el archivo app.config de la aplicación para resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuyo app.config que desea usar (relativa al directorio de instalación de Visual Studio).
-3. **Arquitectura de Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todas
+3. **Arquitectura de Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todo
 4. **Prioridad de Ngen** (número entero entre 1 y 3) – nivel de la prioridad de Ngen se documenta en [niveles de prioridad de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
 Este es un vistazo a la **propiedades** ventana en acción:

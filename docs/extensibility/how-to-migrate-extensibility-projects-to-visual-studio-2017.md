@@ -28,18 +28,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
-ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: efd17a3317302fedcb9bd42aded7a38adee2f75f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017
 
->**Nota:** esta documentación es preliminar y se basa en la versión de Visual Studio 2017 RC.
-
 Este documento explica cómo actualizar proyectos de extensibilidad a 2017 de Visual Studio. Además de describir cómo actualizar los archivos de proyecto, también se describe cómo actualizar desde la versión del manifiesto de extensión (VSIX v2) de 2 a la nueva versión 3 manifiesto formato VSIX (VSIX v3).
 
-## <a name="install-visual-studio-2017-rc-with-required-workloads"></a>Instalar Visual Studio 2017 RC con cargas de trabajo necesarios
+## <a name="install-visual-studio-2017-with-required-workloads"></a>Instale Visual Studio de 2017 con cargas de trabajo necesarios
 
 Asegúrese de que la instalación incluye las cargas de trabajo siguientes:
 
@@ -57,21 +55,18 @@ Se actualizará el archivo de proyecto (por ejemplo, *.csproj):
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Actualización del paquete Microsoft.VSSDK.BuildTools NuGet
 
->**Nota:** si la solución no hace referencia el paquete Microsoft.VSSDK.BuildTools NuGet, puede omitir este paso.
+>**Nota:** si el paquete Microsoft.VSSDK.BuildTools NuGet no hace referencia a la solución, puede omitir este paso.
 
-Para compilar la extensión en el nuevo v3 VSIX formato (versión 3), la solución se debe compilarse con las nuevas herramientas de compilación VSSDK. Se instala con Visual Studio 2017 RC, pero la extensión de v2 VSIX puede contener una referencia a una versión anterior a través de NuGet. Si es así, debe instalar manualmente una actualización del paquete Microsoft.VSSDK.BuildTools NuGet para su solución. En el momento de la versión RC, este paquete estará en estado de "Versión preliminar".
+Para compilar la extensión en el nuevo v3 VSIX formato (versión 3), la solución se debe compilarse con las nuevas herramientas de compilación VSSDK. Se instala con Visual Studio de 2017, pero la extensión de v2 VSIX puede contener una referencia a una versión anterior a través de NuGet. Si es así, debe instalar manualmente una actualización del paquete Microsoft.VSSDK.BuildTools NuGet para su solución.
 
 Para actualizar las referencias de NuGet para Microsoft.VSSDK.BuildTools:
 
 * Haga doble clic en la solución y elija **administrar paquetes de NuGet para solución...**
 * Navegue hasta la **actualizaciones** ficha.
-* Active la casilla para **incluir versión preliminar**.
 * Seleccione Microsoft.VSSDK.BuildTools (última versión).
 * Presione **actualización**.
 
 ![Herramientas de generación VSSDK](media/vssdk-build-tools.png)
-
->**Nota:** la captura de pantalla muestra una versión diferente de la BuildTools. Seleccione la versión RC.
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Realice los cambios en el manifiesto de la extensión VSIX
 
@@ -161,7 +156,7 @@ Compruebe que la extensión VSIX se instala correctamente en un equipo con todos
 
 Ha intentado instalar la extensión:
 
-* En Visual Studio 2017 RC
+* En Visual Studio de 2017
 
 ![Instalador VSIX en Visual Studio de 2017](media/vsixinstaller-vs-2017.png)
 
@@ -170,19 +165,19 @@ Ha intentado instalar la extensión:
   * Debería funcionar para Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Opcional: Compruebe que el Comprobador de versión del instalador de VSIX ofrece una opción de versiones.
   * Incluye las versiones anteriores de Visual Studio (si está instalado).
-  * Incluye Visual Studio 2017 RC.
+  * Incluye 2017 de Visual Studio.
 
 Si Visual Studio se ha abierto recientemente, podría ver un cuadro de diálogo similar al siguiente:
 
 ![frente a procesos en ejecución](media/vs-running-processes.png)
 
-Espere a que los procesos que se va a cerrar o finalizar manualmente las tareas. Puede encontrar los procesos por el nombre, o con el PID aparece entre paréntesis.
+Espere a que los procesos que se va a cerrar o finalizar manualmente las tareas. Puede encontrar los procesos por el nombre o con el PID aparece entre paréntesis.
 
 >**Nota:** estos procesos no apagará automáticamente mientras se ejecuta una instancia de Visual Studio. Asegúrese de que cerró todas las instancias de Visual Studio en el equipo, los de otros usuarios, incluidos entonces seguirá intentando.
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Compruebe si faltan los requisitos previos necesarios
 
-* Intente instalar la extensión en un equipo con Visual Studio 2017 RC que no contienen todos los componentes definidos en los requisitos previos (arriba).
+* Intente instalar la extensión en un equipo con Visual Studio 2017 que no contienen todos los componentes definidos en los requisitos previos (arriba).
 * Compruebe que la instalación identifica el componente que falta/s y muestra como un requisito previo en el VSIXInstaller.
 * Nota: Se requiere elevación si los requisitos previos deben instalarse con la extensión.
 
@@ -196,7 +191,7 @@ Para proporcionar más orientación, hemos identificado algunos tipos comunes de
 
 Tipo de extensión | Nombre para mostrar |    Id.
 --- | --- | ---
-Editor | Editor de Visual Studio core    | Microsoft.VisualStudio.CoreEditor
+Editor | Editor de Visual Studio core    | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Núcleo de la carga de trabajo de escritorio administrado | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Depurador | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
