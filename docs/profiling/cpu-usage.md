@@ -1,6 +1,6 @@
 ---
-title: Uso de CPU | Microsoft Docs
-ms.custom: 
+title: "Análisis del uso de CPU en Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3c6e60d0ea85d93281764ec3a3435538b9baa0
-ms.openlocfilehash: d89f4c4bf3d1d4230592896be14dd7d64d90825f
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: bb13868209d29ee88aaca25d37bbe0041f49961b
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="cpu-usage"></a>Uso de CPU
+# <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra el punto en que la CPU dedica tiempo a ejecutar el código Visual C++, Visual C#/Visual Basic y JavaScript. A partir de Visual Studio 2015 Update 1, puede ver un desglose por función del uso de CPU sin salir del depurador. Puede activar y desactivar la generación de perfiles de CPU durante la depuración y ver los resultados cuando se detiene la ejecución, por ejemplo, en un punto de interrupción.  
   
 Tiene varias opciones para ejecutar y administrar la sesión de diagnóstico. Por ejemplo, puede ejecutar la herramienta **Uso de CPU** en equipos locales o remotos o en un simulador o emulador. Puede analizar el rendimiento de un proyecto abierto en Visual Studio, conectado a una aplicación en ejecución, o iniciar una aplicación que se instala desde la tienda Windows. Para obtener más información, consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para un tutorial que analiza el rendimiento de una aplicación de la Tienda Windows, consulte [Analizar el uso de CPU en aplicaciones de la Tienda](https://msdn.microsoft.com/en-us/library/windows/apps/dn641982.aspx). 

@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
-ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 2fa87621ed76fb93a9e92d558be5519d783274c5
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="improve-code-quality"></a>Mejorar la calidad del código
@@ -48,6 +48,7 @@ ms.lasthandoff: 03/01/2017
 |||  
 |-|-|  
 |[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|El Explorador de pruebas facilita la integración de las pruebas unitarias en la práctica de desarrollo. Puede usar el marco de pruebas unitarias de Microsoft o uno de los marcos de terceros y de código abierto.|  
+|[Live Unit Testing con Visual Studio](../test/live-unit-testing.md)|Live Unit Testing ejecuta automáticamente pruebas unitarias en segundo plano y muestra una representación gráfica de los resultados de la prueba y la cobertura de código en el editor de código de Visual Studio.|  
 |[Analizar la calidad de la aplicación](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Las herramientas de análisis de código estáticas encuentran problemas de diseño, uso, mantenimiento y estilo en C++ y en código administrado. Muchos de estos problemas pueden provocar errores que son difíciles de reproducir en entornos de prueba estándar.|  
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Las métricas incluyen un índice de mantenimiento para funciones y clases, complejidad ciclomática de funciones, la profundidad de herencia de clases y la cantidad de vinculación entre clases.|  
   

@@ -28,9 +28,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: dd88409bb0774342e0a9f50178e1204cabf72e46
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 76721dbf816cf7b7b8691efc10d22aac6b69cb05
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
@@ -98,7 +98,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
         3.  En el menú contextual para una prueba, elija **Depurar prueba seleccionada** para ejecutar la prueba en el depurador.  
   
-##  <a name="a-namewalkthrougha-walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Tutorial: Desarrollar una DLL no administrada con el Explorador de pruebas  
+##  <a name="walkthrough"></a> Tutorial: Desarrollar una DLL no administrada con el Explorador de pruebas  
  Puede adaptar este tutorial para desarrollar su propio archivo DLL. Los principales pasos son los siguientes:  
   
 1.  [Crear un proyecto de prueba nativo](#unitTestProject). Las pruebas se crean en un proyecto independiente del archivo DLL que se está desarrollando.  
@@ -117,7 +117,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
 8.  [Aislar las unidades de los recursos externos](https://msdn.microsoft.com/library/hh549174.aspx). Normalmente, un archivo DLL depende de otros componentes del sistema que está desarrollando, como otros archivos DLL, bases de datos o subsistemas remotos. Es útil probar cada unidad aislada de sus dependencias. Los componentes externos pueden ralentizar las pruebas. Durante el desarrollo, los demás componentes podrían no estar completos.  
   
-###  <a name="a-nameunittestprojecta-create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Crear un proyecto de prueba unitaria nativo  
+###  <a name="unitTestProject"></a> Crear un proyecto de prueba unitaria nativo  
   
 1.  En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
   
@@ -166,7 +166,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
          ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="a-namecreatedllprojecta-create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Crear un proyecto de DLL no administrado  
+###  <a name="createDllProject"></a> Crear un proyecto de DLL no administrado  
   
 1.  Cree un proyecto de **Visual C++** usando la plantilla **Proyecto Win32** .  
   
@@ -196,7 +196,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     }  
     ```  
   
-###  <a name="a-namecoupleprojectsa-couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Acoplar el proyecto de prueba al proyecto DLL  
+###  <a name="coupleProjects"></a> Acoplar el proyecto de prueba al proyecto DLL  
   
 1.  Agregue el proyecto DLL a las referencias del proyecto de prueba:  
   
@@ -246,7 +246,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
  Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.  
   
-###  <a name="a-nameiteratea-iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
+###  <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
   
 1.  Agregue una nueva prueba:  
   
@@ -304,7 +304,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     > [!TIP]
     >  Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
   
-###  <a name="a-namedebuga-debug-a-failing-test"></a><a name="debug"></a> Depurar una prueba fallida  
+###  <a name="debug"></a> Depurar una prueba fallida  
   
 1.  Agregue otra prueba:  
   
@@ -379,7 +379,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 > [!TIP]
 >  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
   
-###  <a name="a-namerefactora-refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refactorizar el código sin cambiar las pruebas  
+###  <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas  
   
 1.  Simplifique el cálculo central en la función SquareRoot:  
   

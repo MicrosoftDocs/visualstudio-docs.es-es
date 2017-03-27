@@ -1,6 +1,6 @@
 ---
-title: "Escala de tiempo de aplicación | Microsoft Docs"
-ms.custom: 
+title: "Análisis del consumo de recursos en aplicaciones XAML en Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: 03ac5f6c12163ff56f0a77a4922cc4366d463e07
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 5455d9a16004fef1aec02fbaf856f336c67dfb05
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="application-timeline"></a>Escala de tiempo de la aplicación
+# <a name="analyze-resource-consumption-and-ui-thread-acitivity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  
   
  **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Debug / Performance Profiler...**.  
@@ -56,7 +56,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 > [!NOTE]
 >  Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="a-namebkmkcollecttimelinedataforyourappa-collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a> Recopilar datos de la escala de tiempo de aplicación  
+##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Recopilar datos de la escala de tiempo de aplicación  
  Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -81,34 +81,34 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
      ![Informe del generador de perfiles de la escala de tiempo](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="a-namebkmkanalyzetimelineprofilingdataa-analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizar datos de generación de perfiles de escala de tiempo  
+##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizar datos de generación de perfiles de escala de tiempo  
  Después de obtener los datos de la generación de perfiles, puede seguir estos pasos para iniciar el análisis:  
   
 1.  Examine la información de los gráficos **Utilización del subproceso de IU** y **Rendimiento visual (FPS)** y, a continuación, use las barras de navegación de la escala de tiempo para seleccionar el intervalo de tiempo que desea analizar.  
   
 2.  Con la información de los gráficos **Utilización del subproceso de IU** o **Rendimiento visual (FPS)** , examine los detalles de la vista **Detalles de la escala de tiempo** para detectar las posibles causas de cualquier falta de capacidad de respuesta.  
   
-###  <a name="a-namebkmkreportscenarioscategoriesandeventsa-report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a> Informes de escenarios, categorías y eventos  
+###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Informes de escenarios, categorías y eventos  
  La herramienta **Escala de tiempo de aplicación** muestra datos de tiempo para escenarios, categorías y eventos relacionados con el rendimiento de XAML.  
   
-###  <a name="a-namebkmkdiagnosticsessiontimelinea-diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a> Escala de tiempo de la sesión de diagnóstico  
+###  <a name="BKMK_Diagnostic_session_timeline"></a> Escala de tiempo de la sesión de diagnóstico  
  ![Escala de tiempo de rendimiento y diagnósticos](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  La regla que aparece en la parte superior de la página muestra la escala de tiempo para la información cuyo perfil se ha generado. Esta escala de tiempo se aplica a los gráficos **Utilización del subproceso de IU** y **Rendimiento visual** . Puedes restringir el ámbito del informe arrastrando las barras de navegación en la escala de tiempo para seleccionar un segmento de esta.  
   
  La escala de tiempo también muestra cualquier marca de usuario que haya insertado, así como los eventos del ciclo de vida de activación de la aplicación.  
   
-###  <a name="a-namebkmkuithreadutilizationgrapha-ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilización del subproceso de IU  
+###  <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilización del subproceso de IU  
  ![Gráfico de utilización de CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")  
   
  El gráfico **Utilización del subproceso de UI (%)** es un gráfico de barras que muestra la cantidad relativa de tiempo empleado en una categoría durante un intervalo de la colección.  
   
-###  <a name="a-namebkmkvisualthroughputfpsgrapha-visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de rendimiento visual (FPS)  
+###  <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de rendimiento visual (FPS)  
  ![Gráfico de rendimiento visual](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")  
   
  El gráfico de líneas **Rendimiento visual (FPS)** muestra los fotogramas por segundo (FPS) en el subproceso de interfaz de usuario y de composición de la aplicación.  
   
-###  <a name="a-namebkmktimelinedetailsa-timeline-details"></a><a name="BKMK_Timeline_details_"></a> Detalles de la escala de tiempo  
+###  <a name="BKMK_Timeline_details_"></a> Detalles de la escala de tiempo  
  En la vista de detalles es donde pasará la mayor parte del tiempo analizando el informe. Muestra una vista detallada del uso de CPU de la aplicación en dos categorías, el subsistema Marco de trabajo de la interfaz de usuario y el componente del sistema que consumía la CPU.  
   
  Se admiten los siguientes eventos:  
@@ -125,7 +125,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 > [!TIP]
 >  Elija la herramienta **Uso de CPU** junto con la herramienta **Escala de tiempo de aplicación** al comenzar a generar perfiles para ver los métodos de aplicación que se ejecutan en el subproceso de UI. Mover el código de la aplicación de larga duración a un subproceso en segundo plano puede mejorar la capacidad de respuesta de la UI.  
   
-####  <a name="a-namebkmkcustomizingtimelinedetailsa-customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personalizar detalles de la escala de tiempo  
+####  <a name="BKMK_Customizing_Timeline_details_"></a> Personalizar detalles de la escala de tiempo  
  Utilice la barra de herramientas **Detalles de la escala de tiempo** para ordenar, filtrar y especificar las anotaciones de las entradas de la vista **Detalles de la escala de tiempo** .  
   
 |||  

@@ -1,6 +1,6 @@
 ---
-title: Uso de memoria | Microsoft Docs
-ms.custom: 
+title: "Análisis del uso de memoria en Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3c6e60d0ea85d93281764ec3a3435538b9baa0
-ms.openlocfilehash: b81ce391ad842085f95ff0a4a6e906036406230a
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 6f77b935309f5b0877fdeb9794a29fed3f0df9c0
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="memory-usage"></a>Uso de memoria
+# <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  
   
 -   Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  

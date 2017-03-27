@@ -1,5 +1,5 @@
 ---
-title: "Herramientas de generación de perfiles | Microsoft Docs"
+title: "Herramientas de generación de perfiles en Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
-ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: e8fc38b16d5e73ca47f5c59bb6b236a2dd682c4e
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="profiling-tools"></a>Herramientas de generación de perfiles
@@ -62,12 +62,12 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="gpu-usage"></a>Uso de GPU  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
   
- Use la herramienta [GPU Usage](../debugger/gpu-usage.md) para comprender mejor el uso de hardware de alto nivel de la aplicación Direct3D. Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, pero no con aplicaciones ASP.NET. La herramienta **Uso de GPU** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento... **).  
+ Use la herramienta [GPU Usage](../debugger/gpu-usage.md) para comprender mejor el uso de hardware de alto nivel de la aplicación Direct3D. Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, pero no con aplicaciones ASP.NET. La herramienta **Uso de GPU** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento...**).  
   
 ## <a name="application-timeline"></a>Escala de tiempo de la aplicación  
  ![DiagAppTimeline](../profiling/media/diagapptimeline.png "DiagAppTimeline")  
   
- La herramienta [Application Timeline](../profiling/application-timeline.md) le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos. Puede usar la **Escala de tiempo de la aplicación** con aplicaciones de escritorio y aplicaciones universales de Windows, pero no con aplicaciones ASP.NET. La herramienta **Escala de tiempo de la aplicación** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento... **).
+ La herramienta [Application Timeline](../profiling/application-timeline.md) le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos. Puede usar la **Escala de tiempo de la aplicación** con aplicaciones de escritorio y aplicaciones universales de Windows, pero no con aplicaciones ASP.NET. La herramienta **Escala de tiempo de la aplicación** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento...**).
   
 ## <a name="perftips"></a>Sugerencias de rendimiento  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
@@ -85,12 +85,12 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="javascript-memory"></a>Memoria de JavaScript  
  ![DiagJSMemory](../profiling/media/diagjsmemory.png "DiagJSMemory")  
   
- La herramienta [Memoria de JavaScript](../profiling/javascript-memory.md) permite buscar pérdidas de memoria y el uso de memoria ineficaz en las aplicaciones. La herramienta le permite hacer instantáneas del montón de JavaScript. Puede usar esta herramienta con aplicaciones HTML universales de Windows. La herramienta **Memoria de JavaScript** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento... **).  
+ La herramienta [Memoria de JavaScript](../profiling/javascript-memory.md) permite buscar pérdidas de memoria y el uso de memoria ineficaz en las aplicaciones. La herramienta le permite hacer instantáneas del montón de JavaScript. Puede usar esta herramienta con aplicaciones HTML universales de Windows. La herramienta **Memoria de JavaScript** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento...**).  
   
 ## <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML  
  ![DiagHTMLResp](../profiling/media/diaghtmlresp.png "DiagHTMLResp")  
   
- La herramienta [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) le ayuda a aislar problemas de rendimiento de las aplicaciones, incluida la falta de capacidad de respuesta, tiempos de carga lentos y actualizaciones visuales menos frecuentes de lo esperado. Puede usar esta herramienta con aplicaciones HTML universales de Windows. La herramienta **Capacidad de respuesta de la UI HTML** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento... **).  
+ La herramienta [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) le ayuda a aislar problemas de rendimiento de las aplicaciones, incluida la falta de capacidad de respuesta, tiempos de carga lentos y actualizaciones visuales menos frecuentes de lo esperado. Puede usar esta herramienta con aplicaciones HTML universales de Windows. La herramienta **Capacidad de respuesta de la UI HTML** se puede ejecutar fuera del depurador (**Depurar / Generador de perfiles de rendimiento...**).  
   
 ## <a name="intellitrace"></a>IntelliTrace  
  ![DiagIntelliTrace](../profiling/media/diagintellitrace.png "DiagIntelliTrace")  
