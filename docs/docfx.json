@@ -42,7 +42,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
+            "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
             "ms.author": "",
