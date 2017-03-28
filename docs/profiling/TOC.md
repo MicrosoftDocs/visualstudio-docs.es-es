@@ -7,6 +7,7 @@
 ### [Uso de memoria sin depuración](memory-usage-without-debugging2.md)
 ## [Uso de CPU](cpu-usage.md)
 ### [Analizar el uso de CPU en una aplicación universal de Windows](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Uso de GPU](gpu-usage.md)
 ## [Escala de tiempo de la aplicación](application-timeline.md)
 ## [Sugerencias de rendimiento](perftips.md)
 ## [Memoria de JavaScript](javascript-memory.md)
