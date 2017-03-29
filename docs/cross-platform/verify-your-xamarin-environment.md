@@ -71,7 +71,7 @@ Una vez completados los instaladores (vea [Configuración e instalación](../cro
   
              ![Seleccionar el emulador de Visual Studio para Android como destino de depuración](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
   
-             Nota: Si no ve la opción de menú **Herramientas > Emulador de Visual Studio para Android... **, puede que no tenga instalado el propio emulador. Vaya a **Panel de Control > Programas y características**, seleccione **Microsoft Visual Studio** y haga clic en **Cambiar** para volver a ejecutar el programa de instalación. Haga clic en **Modificar** en el programa de instalación, active la casilla **Desarrollo móvil multiplataforma > Emulador de Microsoft Visual Studio para Android** y haga clic en **Actualizar**.  
+             Nota: Si no ve la opción de menú **Herramientas > Emulador de Visual Studio para Android...**, puede que no tenga instalado el propio emulador. Vaya a **Panel de Control > Programas y características**, seleccione **Microsoft Visual Studio** y haga clic en **Cambiar** para volver a ejecutar el programa de instalación. Haga clic en **Modificar** en el programa de instalación, active la casilla **Desarrollo móvil multiplataforma > Emulador de Microsoft Visual Studio para Android** y haga clic en **Actualizar**.  
   
         -   Para Windows 7 y versiones anteriores: seleccione Xamarin Player para Android en el menú desplegable y presione F5 para ejecutarlo. Para obtener detalles sobre Xamarin Player, su administrador de dispositivos y sugerencias para la solución de problemas, lea [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
   
@@ -121,7 +121,7 @@ Una vez completados los instaladores (vea [Configuración e instalación](../cro
   
         -   En las propiedades de iOS, en la pestaña de firmas de agrupaciones de iOS, compruebe que el campo de derecho personalizado esté vacío para la configuración de depuración activa.  Nota: Solo debe intentar quitar esta configuración si ha aparecido el mensaje de error anterior.  
   
-##  <a name="a-namemissinga-are-the-xamarin-project-templates-missing-try-this"></a><a name="missing"></a> ¿Faltan las plantillas de proyecto de Xamarin? Pruebe esto  
+##  <a name="missing"></a> ¿Faltan las plantillas de proyecto de Xamarin? Pruebe esto  
  Es posible que falten plantillas si instala Xamarin directamente desde el sitio web de Xamarin y tiene Visual Studio 2013 y Visual Studio 2015 instalados al mismo tiempo. Se corrige fácilmente: habilite la característica **Xamarin para Visual Studio 2015** en el programa de instalación de Xamarin.  
   
 1.  En el Panel de Control, abra **Programas y características**, elija el elemento **Xamarin** y, después, haga clic en **Cambiar**.  

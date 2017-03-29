@@ -261,7 +261,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
     -   **UpOnly** - **/DRIVER:UPONLY**  
   
-    -   **WDM** -  ** /DRIVER: WDM**  
+    -   **WDM** -  **/DRIVER: WDM**  
   
      Para obtener más información, consulte [/DRIVER (Controlador de modo kernel de Windows NT)](/visual-cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
   

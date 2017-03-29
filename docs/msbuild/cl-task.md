@@ -202,7 +202,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **Safe** - **/clr:safe**  
   
-    -   **OldSyntax** -  ** /CLR: oldSyntax**  
+    -   **OldSyntax** -  **/CLR: oldSyntax**  
   
      Para obtener más información, consulte [/clr (Compilación de Common Language Runtime)](/visual-cpp/build/reference/clr-common-language-runtime-compilation).  
   
@@ -224,9 +224,9 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **OldStyle** - **/Z7**  
   
-    -   **ProgramDatabase** -  ** /Zi**  
+    -   **ProgramDatabase** -  **/Zi**  
   
-    -   **EditAndContinue** -  ** /Zi**  
+    -   **EditAndContinue** -  **/Zi**  
   
      Para obtener más información, consulte [/Z7, /Zi, /ZI (Formato de la información de depuración)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format).  
   
