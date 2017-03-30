@@ -1,8 +1,8 @@
 ---
-title: "Crear una instalación sin conexión de Visual Studio 2017 RC | Microsoft Docs"
-description: "Obtenga información sobre cómo crear una instalación sin conexión de Visual Studio."
+title: "Creación de un instalador sin conexión para Visual Studio 2017 | Microsoft Docs"
+description: "Obtenga información sobre cómo crear un instalador sin conexión de Visual Studio."
 ms.custom: 
-ms.date: 02/14/2017
+ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -12,6 +12,7 @@ ms.topic: article
 f1_keywords:
 - offline installation [Visual Studio]
 - offline install [Visual Studio]
+- offline installer [Visual Studio]
 - ISO [Visual Studio]
 ms.assetid: 7bd7e724-7bfd-43f1-9935-981919be5a00
 author: TerryGLee
@@ -33,102 +34,83 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: d4d1bd45ce697017480b3f63d0c7feb5ab20d2d6
-ms.openlocfilehash: 33e765d205aa7ad8a3d8c5b871863ab659092a77
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
+ms.lasthandoff: 03/22/2017
 
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017-rc"></a>Crear una instalación sin conexión de Visual Studio 2017 RC
+# <a name="create-an-offline-installer-for-visual-studio-2017"></a>Creación de un instalador sin conexión para Visual Studio 2017
+Sabemos que muchos clientes desean disponer de un instalador sin conexión para [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=844067). A pesar de no ofrecemos una imagen ISO, es fácil crear una carpeta que puede usar para una instalación sin conexión.
 
-## <a name="create-a-layout"></a>Crear un diseño
-Si quiere instalar [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/) en otro equipo que no tenga acceso a Internet, puede hacerlo creando primero un diseño de instalación sin conexión que contenga todos los archivos y componentes de Visual Studio que necesita.
+Esta es la manera de hacerlo.
 
-Después, puede instalar Visual Studio en el equipo de destino con el diseño de instalación sin conexión que ha creado.     
+## <a name="download-the-setup-file-you-want"></a>Descargue el archivo de configuración que desee.
+**[Descargue](https://www.visualstudio.com/downloads?utm_source=mscom&utm_campaign=msdocs)** la edición de Visual Studio que desee. Asegúrese de hacer clic en **Guardar** y, a continuación, haga clic en **Abrir carpeta**.
 
-> [!WARNING]
-> Actualmente, el SDK de Android no admite una experiencia de instalación sin conexión. Si instala elementos de la instalación del SDK de Android en un equipo que no está conectado a Internet, es posible que se produzca un error en la instalación. Para obtener más información sobre esto, vaya a la sección [Solucionar los problemas de una instalación sin conexión](#tshootofflineinstall) de este tema.
+El archivo de instalación&mdash;o para ser más específico, un archivo de programa previo&mdash;coincidirá con uno de los siguientes.
 
+|Edición | Archivo|  
+|-------------|-----------------------|  
+|Visual Studio Enterprise |**vs_enterprise.exe**|  
+|Visual Studio Professional |**vs_professional.exe**|  
+|Comunidad de Visual Studio |**vs_community.exe**|
 
-#### <a name="to-create-an-offline-installation-layout-of-visual-studio"></a>Para crear un diseño de instalación sin conexión de Visual Studio
-1. Descargue el archivo ejecutable de instalación de Visual Studio en una unidad de su equipo local.
-  Por ejemplo, [descargue el archivo vs_enterprise.exe](https://www.visualstudio.com/vs/visual-studio-2017-rc/).
-2. Ejecute `vs_enterprise.exe` con los siguientes argumentos (modificadores) desde un símbolo del sistema:
+Otros programas previos admitidos incluyen vs_buildtools.exe, vs_feedbackclient.exe, vs_teamexplorer.exe, vs_testagent.exe, vs_testcontroller.exe y vs_testprofessional.exe.
 
-   a. Agregue `--layout <path>`, donde `<path>` es la ubicación en la que quiere que se descargue el diseño. Tenga en cuenta que las rutas de acceso relativas (por ejemplo, `..\vs2017`) no se admiten en este momento. De manera predeterminada, se descargan todos los idiomas. (Vea el ejemplo A).
+## <a name="create-an-offline-installation-folder"></a>Creación de una carpeta de instalación sin conexión
+Para crear una instalación sin conexión con todos los lenguajes y todas las características, utilice uno de los comandos de los ejemplos siguientes.
 
-   b. Restrinja la descarga a un subconjunto de los idiomas disponibles proporcionando el argumento `--lang <language>`, donde `<language>` es una o más de las configuraciones regionales de idioma.  (Vea el ejemplo B y el C).
+(Asegúrese de ejecutar el comando desde el directorio de descarga. Normalmente, es `C:\Users\<username>\Downloads` en un equipo que ejecuta Windows 10).
 
-   c. Restrinja la descarga a un subconjunto de cargas de trabajo y componentes proporcionando el argumento `--add <package ID>`. Esto descargará solo las cargas de trabajo y los componentes (y sus dependencias) que especifique. (Vea el ejemplo D y el E).
+- Para Visual Studio Enterprise, ejecute: <br>  ```vs_enterprise.exe --layout c:\vs2017offline```
+- Para Visual Studio Professional, ejecute: <br> ```vs_professional.exe --layout c:\vs2017offline```
+- Para Visual Studio Community, ejecute: <br> ```vs_community.exe --layout c:\vs2017offline```
 
-   Para obtener una lista completa de los id. de componente y carga de trabajo ordenados por producto de Visual Studio, vea nuestra página [Visual Studio 2017 Workload and Component IDs](https://aka.ms/vs2017componentids) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
+Para obtener más ejemplos, vea la sección [Personalización del instalador sin conexión](#how-to-customize-your-offline- installer) de esta página.
 
-### <a name="examples"></a>Ejemplos
-**Ejemplo A**: Descarga todas las cargas de trabajo y los componentes para todos los idiomas
-  > ```vs_enterprise.exe --layout C:\vs2017```
+## <a name="install-from-the-offline-installation-folder"></a>Instalación desde la carpeta de instalación sin conexión
+Ejecute la instalación sin conexión ahora o más tarde; la decisión le corresponde a usted. Sin embargo, cuando lo haga, siga estos pasos.
 
-**Ejemplo B**: Descarga todas las cargas de trabajo y los componentes para un idioma  
-  > ```vs_enterprise.exe --layout C:\vs2017 --lang en-US```
+  1. Instale los certificados (están en la carpeta de certificados, que se encuentra en la carpeta de diseño. Basta con hacer clic derecho en cada una de ellos para instalarlos).
 
-**Ejemplo C**: Descarga todas las cargas de trabajo y los componentes para varios idiomas
-  > ```vs_enterprise.exe --layout C:\vs2017 --lang en-US de-DE ja-JP```
+  2. Ejecute el archivo de instalación. Por ejemplo, ejecute: <br> ```c:\vs2017offline\vs_enterprise.exe```
 
-**Ejemplo D**: Descarga una carga de trabajo para todos los idiomas
-  > ```vs_enterprise.exe --layout C:\vs2017 --add Microsoft.VisualStudio.Workload.Azure ```
+## <a name="additional-tips-for-offline-installers"></a>Sugerencias adicionales para instaladores sin conexión
+Es fácil personalizar o actualizar su instalador sin conexión; le mostraremos cómo hacerlo. Y si algo va mal con el instalador sin conexión, tenemos a su disposición información de solución de problemas y soporte técnico.
 
-**Ejemplo E**: Descarga dos cargas de trabajo y un componente opcional para tres idiomas
-  > ```vs_enterprise.exe --layout C:\vs2017 --add Microsoft.VisualStudio.Workload.Azure Microsoft.VisualStudio.Workload.ManagedDesktop Component.GitHub.VisualStudio --lang en-US de-DE ja-JP ```
+### <a name="how-to-customize-your-offline-installer"></a>Personalización del instalador sin conexión
+Hay muchas opciones que puede utilizar para personalizar el instalador sin conexión. Estos son algunos ejemplos de cómo se personaliza por [configuración regional de idioma](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
-  > [!WARNING]
-  > El parámetro --layout producirá un error si el nombre de archivo .exe de instalación incluye números. Para evitar este problema, debe quitar los números del nombre de archivo; por ejemplo, cambie el nombre *vs_community__198521760.1486960229.exe* por ***vs_community.exe***.
-
-### <a name="language-locales"></a>Configuraciones regionales de idioma
-
-| Idioma-configuración regional | Lenguaje |
-| -----   | ----- |
-| cs-CZ    | Checo |
-| de-DE    | Alemán |
-| en-US    | Inglés |
-| es-ES    | Español |
-| fr-FR    | Francés |
-| it-IT    | Italiano |
-| ja-JP    | Japonés |
-| ko-KR    | Coreano |
-| pl-PL    | Polaco |
-| pt-BR    | Portugués (Brasil) |
-| ru-RU    | Ruso |
-| tr-TR    | Turco |
-| zh-CN    | Chino (simplificado) |
-| zh-TW    | Chino (tradicional) |
+ - Para descargar todas las cargas de trabajo y los componentes para un solo idioma, ejecute: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
+ - Para descargar todas las cargas de trabajo y los componentes para varios idiomas, ejecute: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
+ - Para descargar una carga de trabajo para todos los idiomas, ejecute: <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure ```
+ - Para descargar dos cargas de trabajo y un componente opcional para tres idiomas, ejecute: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure Microsoft.VisualStudio.Workload.ManagedDesktop Component.GitHub.VisualStudio --lang en-US de-DE ja-JP ``` Para obtener más información acerca de las opciones que puede utilizar para personalizar la instalación, consulte nuestra página [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
 
 
-## <a name="install-from-a-layout"></a>Instalar desde un diseño
-#### <a name="to-install-visual-studio-from-an-offline-installation-layout"></a>Para instalar Visual Studio desde un diseño de instalación sin conexión
-1. En el equipo de destino, vaya a la carpeta **Certificados**, que se encuentra en la carpeta Diseño.
-2. Haga clic con el botón derecho e instale cada certificado en la carpeta **Certificados**.
+### <a name="how-to-update-an-offline-installer"></a>Actualización de un instalador sin conexión
+Quizá prefiera actualizar el instalador sin conexión en un momento posterior. Esta es la manera de hacerlo.
+* Para actualizar una instancia de Visual Studio que ha instalado desde una carpeta de instalación sin conexión, ejecute el instalador de Visual Studio y, a continuación, haga clic en **Actualizar**.
+* Para actualizar la carpeta de instalación sin conexión para que incluya las actualizaciones más recientes, ejecute el comando ```--layout``` de nuevo. Asegúrese de que señale a la misma carpeta que utilizó anteriormente; de este modo, solo se descargarán los componentes que se hayan actualizado desde la última ejecución de ```--layout```.
 
-  (Si se le pide una contraseña después de instalar un certificado, haga clic en **Continuar**).  
-3. Ejecute `vs_enterprise.exe` desde la carpeta **Diseño**.
 
-Nota: Si está instalando desde un diseño parcial y selecciona cargas de trabajo, componentes o idiomas que no están disponibles en el diseño, la configuración intentará descargarlos.  Si no tiene acceso a Internet, esos elementos no se podrán instalar.
+### <a name="how-to-troubleshoot-an-offline-installer"></a>Solución de problemas de un instalador sin conexión
+En ocasiones, algo no sale según lo previsto. Aquí presentamos una tabla de problemas conocidos y algunas soluciones que le pueden ayudar.
 
-> [!CAUTION]
-> El diseño de instalación sin conexión crea actualmente algunos archivos con permisos restringidos (ACL) que impiden el acceso de todos los usuarios.  Asegúrese de que ajusta los permisos (ACL) de manera que concedan acceso de lectura a otros usuarios *antes* de que comparta la instalación sin conexión.
+| Problema       | Elemento                   | Solución |
+| ----------- | ---------------------- | -------- |
+| Recibe un mensaje de advertencia acerca de que no se pueden instalar algunos componentes y paquetes.  | Programa de instalación de Android SDK (nivel de API) | Si desea incluir paquetes de Android SDK (nivel de API), debe tener una conexión a Internet cuando se crea el instalador sin conexión. Si está en una red restringida, debe permitir el acceso a las siguientes direcciones URL: <br><br> - http://dl.google.com:443 <br> - http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Para obtener información sobre cómo resolver posibles problemas con la configuración de proxy, vea la publicación del blog [Visual Studio install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Errores de instalación de Visual Studio [Instalación de Android SDK] detrás de un proxy).  |  
+| Los usuarios no tienen acceso a los archivos. | permisos (ACL) | Asegúrese de que ajusta los permisos (ACL) de manera que concedan acceso de lectura a otros usuarios *antes* de compartir la instalación sin conexión. |
+| Las nuevas cargas de trabajo, componentes o idiomas no se instalarán.  | `--layout`  | Asegúrese de que tiene acceso a Internet si instala desde un diseño parcial y selecciona cargas de trabajo, componentes o idiomas que no están disponibles en el diseño anterior. |
 
-## <a name="update-an-installation-layout"></a>Actualizar un diseño de instalación
-A medida que haya actualizaciones disponibles para Visual Studio 2017 RC, puede ejecutar el comando `--layout` de nuevo, que apunta a la misma carpeta de diseño, para asegurarse de que la carpeta contiene los últimos componentes. Solo se descargarán los componentes que se hayan actualizado desde la última vez que se ejecutó `--layout`.
+### <a name="how-to-get-support-for-your-offline-installer"></a>Obtención de soporte técnico para el instalador sin conexión
+Si experimenta un problema con la instalación sin conexión, queremos saberlo. La mejor manera para hacérnoslo saber es utilizar la herramienta [Notificar un problema	](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Con esta herramienta puede enviarnos la telemetría y los registros que necesitamos para ayudarnos a diagnosticar y corregir el problema.
 
-## <a id="tshootofflineinstall"> </a>Solucionar los problemas de un diseño de instalación
-Al instalar sin conexión desde la caché de instalación sin conexión, es posible que aparezcan mensajes de advertencia sobre la imposibilidad de instalar algunos componentes y paquetes. En la siguiente tabla se incluyen posibles soluciones para estos escenarios.
+Tenemos también otras opciones de soporte técnico disponibles. Para ver un listado, consulte la página [Hable con nosotros](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
-| Componente o paquete | Solución |
-| -------------------- | -------- |
-|Programa de instalación de Android SDK (nivel de API)| Debe tener una conexión a Internet para instalar paquetes de Android SDK (nivel de API). Si está en una red restringida, debe permitir el acceso a las siguientes direcciones URL cuando instale Visual Studio: <br><br> - http://dl.google.com:443 <br>- http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Para obtener información sobre cómo resolver posibles problemas con la configuración de proxy, vea la publicación del blog [Visual Studio install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Errores de instalación de Visual Studio [Instalación de Android SDK] detrás de un proxy).  |  
 
- > [!IMPORTANT]
- > A pesar de que, en general, se admite el uso de Visual Studio 2017 RC en un entorno de producción, las cargas de trabajo y los componentes que aparecen marcados como "Versión preliminar" en la interfaz de usuario de instalación no son compatibles para usarlos en un entorno de producción.
-
- ## <a name="see-also"></a>Vea también
- * [Instalar Visual Studio](install-visual-studio.md)
- * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
- * [Notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+## <a name="see-also"></a>Vea también
+* [Instalar Visual Studio](install-visual-studio.md)
+* [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
+* [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
 
