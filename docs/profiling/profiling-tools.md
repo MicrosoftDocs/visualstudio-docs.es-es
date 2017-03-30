@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: e8fc38b16d5e73ca47f5c59bb6b236a2dd682c4e
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
+ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
+ms.lasthandoff: 03/20/2017
 
 ---
 # <a name="profiling-tools"></a>Herramientas de generación de perfiles
@@ -103,15 +103,16 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="which-tool-should-i-use"></a>¿Qué herramienta debo usar?  
  En esta tabla se muestra una lista de las distintas herramientas que ofrece Visual Studio y los tipos de proyecto con los que las puede usar:  
   
-|Herramienta de rendimiento|Escritorio de Windows|Universales de Windows o de la Tienda|ASP.NET|  
+|Herramienta de rendimiento|Escritorio de Windows|Universales de Windows o de la Tienda|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|  
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no|  
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|no|  
-|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|no|  
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí|  
-|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|  
+|[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|  
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí (no para el núcleo de ASP.NET)|  
+|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
+|[Uso de red](../profiling/network-usage.md)|no|sí|no| 
 |[Capacidad de respuesta de la IU HTML](../profiling/html-ui-responsiveness.md)|no|sí para HTML, no para XAML|no|  
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|no|sí para HTML, no para XAML|no|  
   
