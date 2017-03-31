@@ -33,25 +33,24 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 480be03d8ca431ff90ff00881a29daeaecfbec1b
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: dc32236dad42ec169fc1c7a243b7c67fd5a8dbf3
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal siempre que sea posible.  
-  
+
 > [!WARNING]
 >  También debe asegurarse de no compilar, iniciar ni depurar ninguna solución de Visual Studio que no proceda de una persona o una ubicación de confianza.  
-  
+
  Puede hacer casi todo en el IDE de Visual Studio como un usuario normal, pero, se necesitan permisos de administrador para completar las tareas siguientes:  
-  
+
 |Área|Tarea|Para obtener más información|  
 |----------|----------|--------------------------|  
 |Instalación|Instalar Visual Studio.|[Instalar Visual Studio](../install/install-visual-studio.md)|  
-||Actualizar desde una edición de evaluación de Visual Studio.|[Cómo: Actualizar desde una edición de prueba de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|  
 ||Instalar, actualizar o quitar contenido de la Ayuda local.|[Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)|  
-|Tipos de aplicación|Desarrollar soluciones para SharePoint 2010.|[Requisitos para desarrollar soluciones de SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
+|Tipos de aplicación|Desarrollar soluciones para SharePoint.|[Requisitos para desarrollar soluciones de SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Adquirir una licencia de desarrollador para la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Obtener una licencia de desarrollador (aplicaciones de la Tienda Windows)](http://go.microsoft.com/fwlink/?LinkID=241313)|  
 |Cuadro de herramientas|Agregar controles COM clásicos al **Cuadro de herramientas**.|[Usar el cuadro de herramientas](../ide/using-the-toolbox.md)|  
 |Complementos|Instalar y usar complementos escritos mediante COM clásico en el IDE.|[Crear complementos y asistentes](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
@@ -61,30 +60,30 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 ||Depurar aplicaciones que se ejecutan bajo una cuenta de usuario diferente, como sitios web ASP.NET.|[Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
 ||Depuración en zona para Aplicaciones XAML del explorador (XBAP).|[WPF Host (PresentationHost.exe)](http://msdn.microsoft.com/Library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
 ||Usar el emulador para depurar proyectos de servicios en la nube para Microsoft Azure.|[Depurar un servicio en la nube en Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
-||Configurar un firewall para depuración remota.|[Configurar las herramientas remotas en el dispositivo](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)|  
+||Configurar un firewall para depuración remota.|[Depuración remota](../debugger/remote-debugging.md)|  
 |Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|  
-|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Implementar una aplicación web ASP.NET en un proveedor de host mediante Visual Studio o Visual Web Developer: implementar en IIS como entorno de prueba)|  
-|Proporcionar comentarios a Microsoft|Cambiar cómo participar en el Programa para la mejora de la experiencia del usuario de Visual Studio.|[Cómo: Enviar comentarios](../misc/how-to-send-feedback-about-visual-studio.md)|  
-  
+|Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Implementar una aplicación web ASP.NET en un proveedor de host mediante Visual Studio o Visual Web Developer: implementar en IIS como entorno de prueba)|
+
 ## <a name="running-visual-studio-as-an-administrator"></a>Ejecutar Visual Studio como administrador  
  Puede iniciar Visual Studio con permisos administrativos cada vez que inicie el IDE o puede modificar el acceso directo de la aplicación para que se ejecute siempre con permisos administrativos. Para obtener más información, vea la Ayuda de Windows.  
-  
+
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] o [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
-  
+
 1.  En la pantalla **Inicio**, escriba **Visual Studio**. Debe ver la versión o las versiones de Visual Studio que ha instalado.  
-  
+
 2.  Seleccione la versión de Visual Studio que desea iniciar y, a continuación, abra el menú contextual (aparece en la parte inferior de la pantalla). Elija **Ejecutar como administrador**.  
-  
+
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.  
-  
+
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
-  
+
 1.  En el menú **Inicio**, elija **Todos los programas**.  
-  
+
 2.  En la carpeta **Microsoft Visual Studio** *versión*, seleccione **Visual Studio** *versión*, abra el menú contextual y después elija **Ejecutar como administrador**.  
-  
+
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.  
-  
+
 ## <a name="see-also"></a>Vea también  
  [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Instalar Visual Studio](../install/install-visual-studio.md)
+

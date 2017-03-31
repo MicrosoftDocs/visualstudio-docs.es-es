@@ -1,25 +1,44 @@
 ---
-title: "Hable con nosotros | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/10/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "soporte técnico [Visual Studio]"
-  - "Ayuda [Visual Studio], soporte técnico"
+title: Hable con nosotros | Microsoft Docs
+ms.custom: 
+ms.date: 03/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- product support [Visual Studio]
+- Help [Visual Studio], product support
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
-author: "TerryGLee"
-ms.author: "tglee"
-manager: "ghogen"
-caps.handback.revision: 31
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: d580064a03291aad49134674bd42413ae05e3e72
+ms.lasthandoff: 03/07/2017
+
 ---
 # <a name="talk-to-us"></a>Talk to Us
 Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.  
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Quiero notificar un problema con Visual Studio  
- Si tiene problemas con Visual Studio, como bloqueos, un rendimiento bajo o un comportamiento inesperado, entre otros, notifíquenos el problema. Para hacerlo, use la herramienta **Notificar un problema**. Simplemente haga clic en el icono de comentarios situado junto al **Inicio rápido** o pulse **Ayuda &#124; Enviar comentarios &#124; Notificar un problema** desde el menú principal. Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017 RC](how-to-report-a-problem-with-visual-studio-2017.md).  
+ Si tiene problemas con Visual Studio, como bloqueos, un rendimiento bajo o un comportamiento inesperado, entre otros, notifíquenos el problema. Para hacerlo, use la herramienta **Notificar un problema**. Simplemente haga clic en el icono de comentarios situado junto al **Inicio rápido** o pulse **Ayuda &#124; Enviar comentarios &#124; Notificar un problema** desde el menú principal. Para obtener más información, consulte [Notificación de un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).  
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quiero hacer una sugerencia relacionada con las características de Visual Studio  
  Si hay algo que podamos mejorar, háganoslo saber. Elija **Ofrecer una sugerencia** para sugerir una característica o cambiar al equipo de Visual Studio. Su sugerencia se publicará automáticamente en [UserVoice](https://visualstudio.uservoice.com) y otros usuarios podrán votarla.  
@@ -28,7 +47,7 @@ Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, 
  Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que le permite enviar comentarios sobre la calidad de la compilación que está ejecutando. No verá esta opción en versiones publicadas del producto.  
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Quiero ponerme en contacto el soporte técnico de Microsoft  
-Para consultar las opciones de soporte técnico de Visual Studio, vea nuestra página de [Soporte técnico](http://www.visualstudio.com/support/support-overview-vs).
+Para consultar las opciones de soporte técnico de Visual Studio, vea nuestra página de [Soporte técnico](https://www.visualstudio.com/vs/support/).
 
 Para otros servicios y productos de Microsoft, vea [Soporte técnico de Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) para obtener ayuda en línea.
 
@@ -49,9 +68,4 @@ Los servicios de soporte técnico de Microsoft están sujetos a los precios, té
 
 ## <a name="see-also"></a>Vea también  
  [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

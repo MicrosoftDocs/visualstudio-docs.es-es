@@ -18,9 +18,9 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 translationtype: Human Translation
-ms.sourcegitcommit: ba88bad0753653dcde8a4d28b4dd1c71522d6506
-ms.openlocfilehash: 435197f1536dc9006691c0f2e58fafd0fcf27718
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 27a265dbbb1f9426ba2dd254095c84239bbd0db7
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
@@ -28,7 +28,7 @@ Lo ideal es que Visual Studio se inicie siempre lo antes posible. En cambio, las
 
 ## <a name="control-startup-behavior"></a>Controlar el comportamiento de inicio
 
-Para evitar extender demasiado el tiempo de inicio, Visual Studio 2017 RC impide la carga de extensiones durante el inicio mediante un enfoque de carga a petición. Esto significa que las extensiones no se abren inmediatamente después de que Visual Studio se inicie, sino que se abren asincrónicamente según sea necesario después del inicio. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
+Para evitar extender demasiado el tiempo de inicio, Visual Studio 2017 impide la carga de extensiones durante el inicio mediante un enfoque de carga a petición. Esto significa que las extensiones no se abren inmediatamente después de que Visual Studio se inicie, sino que se abren asincrónicamente según sea necesario después del inicio. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
 
 Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje también proporciona un vínculo en el cuadro de diálogo **Administrar el rendimiento de Visual Studio**, donde se enumeran las extensiones y las ventanas de herramientas que afectan al rendimiento de inicio. Este cuadro de diálogo le permite cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
 
@@ -55,7 +55,7 @@ Si cambia de idea más tarde, puede revertir cualquiera de estas opciones en el 
 
 ## <a name="speed-up-solution-load"></a>Acelerar la carga de la solución
 
-Visual Studio 2017 RC presenta una nueva característica denominada **Carga de solución ligera** que reduce la cantidad de tiempo y memoria necesaria para cargar soluciones grandes en el IDE. Si tiene una solución grande que contiene muchos proyectos de C#, VB o C++, probablemente verá una ventaja de rendimiento sustancial si habilita la carga de solución ligera.
+Visual Studio 2017 presenta una nueva característica denominada **Carga de solución ligera** que reduce la cantidad de tiempo y memoria necesarias para cargar soluciones grandes en el IDE. Si tiene una solución grande que contiene muchos proyectos de C#, VB o C++, probablemente verá una ventaja de rendimiento sustancial si habilita la carga de solución ligera.
 
 Como algunas de las características del IDE no están completamente disponibles cuando la carga de solución ligera está habilitada, la característica está desactivada de manera predeterminada. Las siguientes secciones le ayudarán a decidir si habilitar esta característica o no.
 
@@ -77,7 +77,7 @@ Cuando cambia la configuración de la carga de solución ligera, el cambio surte
 
 ### <a name="automatically-enable-lightweight-solution-load"></a>Habilitar la carga de solución ligera automáticamente
 
-Cuando abra una solución grande en Visual Studio 2017 RC, puede ver un mensaje emergente que le ofrece habilitar la carga de solución ligera. El mensaje solo aparece para las soluciones que contengan muchos proyectos de C#, VB o C++. Seleccionar el comando **enable** habilitará la carga de solución ligera solo para esa solución. La configuración del IDE no cambiará.
+Cuando abra una solución grande en Visual Studio 2017, puede ver un mensaje emergente que le ofrece habilitar la carga de solución ligera. El mensaje solo aparece para las soluciones que contengan muchos proyectos de C#, VB o C++. Seleccionar el comando **enable** habilitará la carga de solución ligera solo para esa solución. La configuración del IDE no cambiará.
 
 ![Ventana emergente](../ide/media/VSIDE_LSL Popup.png)
 
