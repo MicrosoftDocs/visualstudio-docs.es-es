@@ -34,8 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a1edc88394193474b273968d8435e8df06415044
-ms.openlocfilehash: 6169b6d1805808c96647425706bf555e379679a8
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
@@ -139,7 +140,10 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.  
   
  Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/visual-cpp/preprocessor/phases-of-translation).  
-  
+
+ **Punto a flecha en lista de miembros**  
+ Reemplaza "." por "->" si corresponde en la lista de miembros.
+
  **Deshabilitar lista de miembros absoluta**  
  La lista de miembros no aparece mientras escribe el nombre de un tipo o una variable. La lista aparece solo después de que escriba uno de los caracteres de confirmación, según lo definido en la opción **Caracteres de confirmación de las listas de miembros**.  
   
@@ -169,12 +173,14 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Ocultar elementos no confirmados en los resultados de "Buscar todas las referencias". Si no establece la opción "Deshabilitar resolución", puede usar esta opción para ocultar los elementos no confirmados en los resultados.  
   
  **Deshabilitar resaltado de referencia**  
+
+ ## <a name="text-editor"></a>Editor de texto
+ **Habilitar Expandir ámbitos**  
+ Si esta opción está habilitada, se puede encerrar el texto seleccionado entre llaves al escribir "{" en el editor de texto.  
+  
+ **Habilitar Expandir precedencia**  
+ Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.  
   
 ## <a name="see-also"></a>Vea también  
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
