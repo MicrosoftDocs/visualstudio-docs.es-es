@@ -1,14 +1,10 @@
 ---
-title:
-- Identificadores de componente y carga de trabajo de Visual Studio 2017 | Microsoft Docs
+title: Identificadores de componente y carga de trabajo de Visual Studio 2017 | Microsoft Docs
 description: "Utilice la carga de trabajo y los identificadores de componente para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX."
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:
