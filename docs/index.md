@@ -4,9 +4,9 @@ hide_bc: true
 title: "Documentación de Visual Studio"
 description: "Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas."
 translationtype: Human Translation
-ms.sourcegitcommit: 371d314bfb81e47a13e7f00d4d4269313477ecf9
-ms.openlocfilehash: c00f51ce4662806d4c7112a3bd7a5e531e3ba521
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: 5a8448dff45473fa40892fb07604759a9d015021
+ms.lasthandoff: 03/31/2017
 
 ---
 <div id="main" class="v2">
@@ -287,7 +287,7 @@ ms.lasthandoff: 03/23/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Desarrollo móvil para .NET</h3>
+                                                    <h3>Desarrollo móvil con .NET</h3>
                                                     <p>Cree aplicaciones multiplataforma para iOS, Android y Windows con Xamarin.</p>
                                                 </div>
                                             </div>
@@ -785,3 +785,4 @@ ms.lasthandoff: 03/23/2017
         </ul>
     </div>
 </div>
+
