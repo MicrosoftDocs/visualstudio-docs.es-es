@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -70,3 +70,4 @@ ms.lasthandoff: 03/07/2017
   
  [Seguimiento del trabajo mediante Visual Studio Online o Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Puede utilizar [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] para planear y realizar el seguimiento de los proyectos, tanto si usa el proceso rápido, el proceso formal o una variación de esos procesos. Si planea los proyectos, realiza el seguimiento del progreso con respecto al el plan y realiza los ajustes necesarios, puede reducir los riesgos, evitar las sorpresas desagradables y administrar el costo de los proyectos.
+

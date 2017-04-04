@@ -14,7 +14,7 @@ helpviewer_keywords:
 - testing code, automated tests
 ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 62
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -102,3 +102,4 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="see-also"></a>Vea también  
  [Mejorar la calidad del código](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)   
  [Probar la aplicación](/devops-test-docs/test/test-apps-early-and-often)
+

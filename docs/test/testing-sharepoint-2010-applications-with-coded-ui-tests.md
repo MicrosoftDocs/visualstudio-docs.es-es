@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 30
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -166,3 +166,4 @@ uiGridKeyboardInputEdit.Text=value;
  [Comprobar y depurar código de SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
  [Compilar y depurar soluciones de SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
  [Generar perfiles de rendimiento de aplicaciones de SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+
