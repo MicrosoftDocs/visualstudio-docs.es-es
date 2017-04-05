@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6fd4350f2e11f95f77cd592f91c1467ddada293d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 6cbb3f36dd2ffc0e075b2d79753b1e0e96a8f810
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Elementos generales de la interfaz de usuario (Visual Studio)
@@ -72,6 +72,9 @@ En esta sección se describen algunos elementos de la interfaz de usuario del en
   
  [Opciones, editor de texto, C/C++, avanzado](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
  Permite especificar opciones avanzadas para archivos de C o C++.  
+
+[Opciones, editor de texto, C/C++, avanzado](../../ide/reference/options-text-editor-c-cpp-experimental.md)  
+ Permite especificar opciones experimentales para archivos de C o C++. Estas opciones se ofrecen para que las pruebe y proporcione comentarios sobre ellas. Puede quitarlas del producto en una fecha posterior, o bien incorporarlas en el producto con otro nombre. 
   
  [Opciones, editor de texto, C#, formato](../../ide/reference/options-text-editor-csharp-formatting.md)  
  Permite especificar opciones de formato para archivos de C#.  
