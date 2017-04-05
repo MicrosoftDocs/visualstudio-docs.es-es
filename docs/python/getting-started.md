@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 0b87d25195b8e288252e6c53279897d1edff93bd
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -230,6 +230,8 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
     > if __name__ == "__main__":  
     >     sys.exit(int(main() or 0))      
     > ```
+    > 
+    > Como alternativa, si alguna vez se producen situaciones en las que la ventana de salida se cierra automáticamente cuando no le interesa que esto suceda, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, elija la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Esto hará que el intérprete entre en modo interactivo una vez que haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse Ctrl+Z, ENTRAR para salir.
 
 1. Establezca un punto de interrupción en la primera línea de la función `main`; para ello, haga clic en el margen gris de la izquierda de dicha línea, o bien coloque el operador exponencial en dicha línea y use el comando *Depurar > Alternar puntos de interrupción** (F9). Aparecerá un punto rojo en el margen gris para indicar el punto de interrupción (como indica la flecha azul a continuación):
 

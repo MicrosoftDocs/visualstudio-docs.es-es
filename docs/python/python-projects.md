@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 8ae79f6b8e7eb87c0138b0152d8f9ce46eac9a69
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: fb8cb89d6d369a3e8460c2bcf1e65e88ba44b104
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -71,7 +71,10 @@ Consulte también el vídeo de youtube.com (8 minutos y 55 segundos) [Deep Dive:
 
 Al desarrollar la aplicación, normalmente necesitará agregar nuevos archivos de distintos tipos al proyecto. Esto se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar > Elemento existente...**, lo que le permitirá buscar un archivo que desea agregar, o mediante **Agregar > Nuevo elemento... **, que abre un cuadro de diálogo con numerosas plantillas de elementos que incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Le recomendamos que explore estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
-Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el Explorador de soluciones. Se trata del archivo que se ejecuta al iniciar la depuración (F5 o **Depurar > Iniciar depuración**); también puede ejecutar el proyecto en la ventana interactiva (Alt+Mayús+F5 o **Depurar > Execute Project in Python Interactive** (Ejecutar proyecto en ventana interactiva de Python)). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el Explorador de soluciones. Se trata del archivo que se ejecuta al iniciar la depuración (F5 o **Depurar > Iniciar depuración**) o que ejecuta el proyecto en la ventana interactiva (Alt+Mayús+F5 o **Depurar > Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+
+> [!Tip]
+> Si quita de un proyecto el archivo de inicio seleccionado y no selecciona uno nuevo, cuando intente ejecutar el proyecto aparecerá una ventana de salida de Python que desaparecerá casi de inmediato. Si se produce este comportamiento, compruebe que tiene un archivo de inicio asignado. Además, para mantener abierta la ventana de salida en estos casos, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, seleccione la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Esto hará que el intérprete entre en modo interactivo una vez que haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse Ctrl+Z, ENTRAR para salir.
 
 Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que desee y seleccione **Activate Environment** (Activar entorno) tal como se muestra a continuación. Para más información, consulte [Entornos de Python](python-environments.md#project-specific-environments).
 
@@ -97,6 +100,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | IronPython Silverlight Web Page (Página web de Silverlight en IronPython) | Proyecto de IronPython que se ejecuta en un explorador mediante Silverlight. El código Python de la aplicación se incluye en la página web como un script. Una etiqueta de script reutilizable extrae código de JavaScript que inicializa IronPython ejecutándose dentro de Silverlight, desde donde el código Python puede interactuar con DOM. |
 | IronPython Windows Forms Application (Aplicación de Windows Forms en IronPython) | Estructura de proyecto que utiliza IronPython con una interfaz de usuario creada mediante código con Windows Forms. La aplicación se ejecuta sin mostrar una consola. |
 | Background Application (IoT) (Aplicación en segundo plano (IoT)) | Admite la implementación de proyectos de Python para que se ejecuten como servicios en segundo plano en dispositivos. Visite el [Centro de desarrollo de Windows IoT](https://dev.windows.com/en-us/iot) para más información. |
+| Módulo de extensión de Python | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo Python** con la carga de trabajo de Python en Visual Studio 2017 Preview (vea [Instalación](installation.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creating a C++ Extension for Python](cpp-and-python.md) (Crear una extensión de C++ para Python). |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Creación de un proyecto a partir de archivos existentes
