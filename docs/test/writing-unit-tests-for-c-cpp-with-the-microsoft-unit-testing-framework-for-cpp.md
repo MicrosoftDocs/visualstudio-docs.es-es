@@ -28,9 +28,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 76721dbf816cf7b7b8691efc10d22aac6b69cb05
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
@@ -48,7 +48,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
     -   Use `#include` para agregar un archivo `.h` que contiene declaraciones de las funciones del archivo DLL accesibles externamente.  
   
-         El archivo `.h` debería contener declaraciones de función marcadas con `_declspec(dllimport)`. Como alternativa, puede exportar los métodos mediante un archivo DEF. Para obtener más información, consulte [Importar y exportar](/visual-cpp/build/importing-and-exporting).  
+         El archivo `.h` debería contener declaraciones de función marcadas con `_declspec(dllimport)`. Como alternativa, puede exportar los métodos mediante un archivo DEF. Para obtener más información, consulte [Importar y exportar](/cpp/build/importing-and-exporting).  
   
          Las pruebas unitarias pueden acceder solo a las funciones que se exportan desde la DLL de prueba.  
   
@@ -184,7 +184,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
      ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png "UteCpp07")  
   
-     El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/visual-cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
+     El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
   
 4.  En el archivo .cpp principal, agregue un cuerpo mínimo para la función:  
   
@@ -414,5 +414,5 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
  [Información general sobre la interoperabilidad de código administrado y no administrado](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
  [Tutorial: Crear y utilizar una biblioteca de vínculos dinámicos (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importar y exportar](/visual-cpp/build/importing-and-exporting)
+ [Importar y exportar](/cpp/build/importing-and-exporting)
 
