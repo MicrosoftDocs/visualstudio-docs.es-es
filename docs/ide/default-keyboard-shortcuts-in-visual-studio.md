@@ -1,25 +1,44 @@
 ---
-title: "M&#233;todos abreviados de teclado predeterminados de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ayuda [Visual Studio], teclas de método abreviado"
-  - "esquemas de enlace del teclado [Visual Studio]"
-  - "métodos abreviados de teclado"
-  - "métodos abreviados de teclado [Visual Studio], esquemas de enlace del teclado"
-  - "teclas de método abreviado [Visual Studio], esquemas de enlace del teclado"
+title: "Métodos abreviados de teclado predeterminados de Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- shortcut keys [Visual Studio], keyboard binding schemes
+- keyboard binding schemes [Visual Studio]
+- Help [Visual Studio], shortcut keys
+- keyboard shortcuts [Visual Studio], keyboard binding schemes
+- keyboard shortcuts
 ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
 caps.latest.revision: 55
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 230e641befbfbbb722c3f6ca21f5aab73322e61c
+ms.lasthandoff: 04/05/2017
+
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Studio eligiendo el método abreviado de teclado correspondiente. En este tema se indican los métodos abreviados predeterminados para el perfil Desarrollo general, que tal vez haya elegido cuando instaló Visual Studio. Independientemente del perfil que haya elegido, puede identificar el método abreviado de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y, después, pulsando **Teclado**. También puede personalizar los métodos abreviados de teclado asignando un método abreviado diferente a un determinado comando.  
@@ -55,22 +74,22 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |[Vista de diseño del editor HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Diseñador de informes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Editor de aceleradores VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Editor XML (texto)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[Vista de código fuente del editor HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagrama de secuencia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Editor de cuadros de diálogo VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Diseñador de esquemas XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
   
-##  <a name="a-namebkmkglobala-global"></a><a name="bkmk_global"></a> Global  
+##  <a name="bkmk_global"></a> Global  
   
-###  <a name="a-namebkmkanalyzea-analyze"></a><a name="bkmk_analyze"></a> Analizar  
+###  <a name="bkmk_analyze"></a> Analizar  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Mayús+Alt+3|  
 |Analyze.NavigateForward|Mayús+Alt+4|  
   
-###  <a name="a-namebkmkarchitecturea-architecture"></a><a name="bkmk_architecture"></a> Arquitectura  
+###  <a name="bkmk_architecture"></a> Arquitectura  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
   
-###  <a name="a-namebkmkbuilda-build"></a><a name="bkmk_build"></a> Compilación  
+###  <a name="bkmk_build"></a> Compilación  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -79,13 +98,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|Alt+F11|  
   
-###  <a name="a-namebkmkclassviewa-class-view-context-menus"></a><a name="bkmk_classview"></a> Menús contextuales de vistas de clases  
+###  <a name="bkmk_classview"></a> Menús contextuales de vistas de clases  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Entrar|  
   
-###  <a name="a-namebkmkdebuga-debug"></a><a name="bkmk_debug"></a> Depurar  
+###  <a name="bkmk_debug"></a> Depurar  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -153,7 +172,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Debug.Watch3|Ctrl+Alt+W, 3|  
 |Debug.Watch4|Ctrl+Alt+W, 4|  
   
-###  <a name="a-namebkmkdebuggera-debugger-context-menus"></a><a name="bkmk_debugger"></a> Menús contextuales del depurador  
+###  <a name="bkmk_debugger"></a> Menús contextuales del depurador  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -161,13 +180,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
   
-###  <a name="a-namebkmkdiagnosticsa-diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Concentrador de diagnósticos  
+###  <a name="bkmk_diagnostics"></a> Concentrador de diagnósticos  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
   
-###  <a name="a-namebkmkedita-edit"></a><a name="bkmk_edit"></a> Editar  
+###  <a name="bkmk_edit"></a> Editar  
   
 |Comandos||  
 |--------------|-|  
@@ -226,7 +245,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> o<br /><br /> Alt+Retroceso|  
   
-###  <a name="a-namebkmkeditorcontexta-editor-context-menus"></a><a name="bkmk_editorContext"></a> Menús contextuales del editor  
+###  <a name="bkmk_editorContext"></a> Menús contextuales del editor  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -237,7 +256,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> o<br /><br /> Ctrl+K, T|  
   
-###  <a name="a-namebkmkfilea-file"></a><a name="bkmk_file"></a> Archivo  
+###  <a name="bkmk_file"></a> Archivo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -253,7 +272,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Mayús+W|  
   
-###  <a name="a-namebkmkhelpa-help"></a><a name="bkmk_help"></a> Ayuda  
+###  <a name="bkmk_help"></a> Ayuda  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -262,19 +281,19 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Mayús+F1|  
   
-###  <a name="a-namebkmkloadtesta-load-test"></a><a name="bkmk_loadtest"></a> Prueba de carga  
+###  <a name="bkmk_loadtest"></a> Prueba de carga  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|  
   
-###  <a name="a-namebkmkothercontexta-other-context-menus"></a><a name="bkmk_otherContext"></a> Otros menús contextuales  
+###  <a name="bkmk_otherContext"></a> Otros menús contextuales  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insertar|  
   
-###  <a name="a-namebkmkprojecta-project"></a><a name="bkmk_project"></a> Proyecto  
+###  <a name="bkmk_project"></a> Proyecto  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -286,14 +305,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Project.Publishselectedfiles|Alt+;, Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
   
-###  <a name="a-namebkmkprojectcontexta-project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones  
+###  <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Flecha abajo|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Flecha arriba|  
   
-###  <a name="a-namebkmkrefactora-refactor"></a><a name="bkmk_refactor"></a> Refactorizar  
+###  <a name="bkmk_refactor"></a> Refactorizar  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -304,7 +323,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Refactor.Rename|Ctrl+R, Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
   
-###  <a name="a-namebkmksolutionexplorerglobala-solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Explorador de soluciones  
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> Explorador de soluciones  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -312,7 +331,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> o<br /><br /> Ctrl+[, Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> o<br /><br /> Ctrl+[, Ctrl+S|  
   
-###  <a name="a-namebkmkteama-team"></a><a name="bkmk_team"></a> Equipo  
+###  <a name="bkmk_team"></a> Equipo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -321,7 +340,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> o<br /><br /> Ctrl+0, O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
   
-###  <a name="a-namebkmktfcontexta-team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menús contextuales de Team Foundation  
+###  <a name="bkmk_TFcontext"></a> Menús contextuales de Team Foundation  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -336,14 +355,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> o<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> o<br /><br /> Ctrl+0, W|  
   
-###  <a name="a-namebkmktesta-test"></a><a name="bkmk_test"></a> Prueba  
+###  <a name="bkmk_test"></a> Prueba  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
   
-###  <a name="a-namebkmktestexplorerglobala-test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a> Explorador de pruebas  
+###  <a name="bkmk_testexplorerGLOBAL"></a> Explorador de pruebas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -353,7 +372,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TestExplorer.RunAllTests|Ctrl+R, A|  
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|  
   
-###  <a name="a-namebkmktoolsa-tools"></a><a name="bkmk_tools"></a> Herramientas  
+###  <a name="bkmk_tools"></a> Herramientas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -362,7 +381,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Tools.ForceGC|Ctrl+Mayús+Alt+F12, Ctrl+Mayús+Alt+F12|  
 |Tools.GoToCommandLine|Ctrl+/|  
   
-###  <a name="a-namebkmkviewa-view"></a><a name="bkmk_view"></a> Vista  
+###  <a name="bkmk_view"></a> Vista  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -411,7 +430,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |View.ZoomIn|Ctrl+Mayús+.|  
 |View.ZoomOut|Ctrl+Mayús+,|  
   
-###  <a name="a-namebkmkwindowa-window"></a><a name="bkmk_window"></a> Ventana  
+###  <a name="bkmk_window"></a> Ventana  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -442,14 +461,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Window.SolutionExplorerSearch|Ctrl+;|  
 |Window.WindowSearch|Alt+`|  
   
-###  <a name="a-namebkmkwindowsazurea-azure"></a><a name="bkmk_windowsazure"></a> Azure  
+###  <a name="bkmk_windowsazure"></a> Azure  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Núm *, Ctrl+R|  
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Núm *, Ctrl+D|  
   
-##  <a name="a-namebkmkadoneta-adonet-entity-data-model-designer"></a><a name="bkmk_ADONET"></a> ADO.NET Entity Data Model Designer  
+##  <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model Designer  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -464,7 +483,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |View.EntityDataModelBrowser|Ctrl+1|  
 |View.EntityDataModelMappingDetails|Ctrl+2|  
   
-##  <a name="a-namebkmkclassdiagrama-class-diagram"></a><a name="bkmk_classDiagram"></a> Diagrama de clases  
+##  <a name="bkmk_classDiagram"></a> Diagrama de clases  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -476,7 +495,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.RemovefromDiagram|Eliminar|  
 |View.ViewCode|Entrar|  
   
-##  <a name="a-namebkmkcodeduitesta-coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a> Editor de pruebas de IU codificadas  
+##  <a name="bkmk_codedUItest"></a> Editor de pruebas de IU codificadas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -487,14 +506,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|  
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Mayús+T|  
   
-##  <a name="a-namebkmkdataseta-dataset-editor"></a><a name="bkmk_dataset"></a> Editor de DataSet  
+##  <a name="bkmk_dataset"></a> Editor de DataSet  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |OtherContextMenus.ColumnContext.InsertColumn|Insertar|  
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|  
   
-##  <a name="a-namebkmkdiffa-difference-viewer"></a><a name="bkmk_diff"></a> Visor de diferencias  
+##  <a name="bkmk_diff"></a> Visor de diferencias  
   
 |||  
 |-|-|  
@@ -511,7 +530,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Mayús+K|  
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Mayús+P|  
   
-##  <a name="a-namebkmkdoma-dom-explorer"></a><a name="bkmk_DOM"></a> Explorador DOM  
+##  <a name="bkmk_DOM"></a> Explorador DOM  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -519,13 +538,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |DOMExplorer.SelectElement|Ctrl+B|  
 |DOMExplorer.ShowLayout|Ctrl+Mayús+I|  
   
-##  <a name="a-namebkmkfsharpa-f-interactive"></a><a name="bkmk_FSharp"></a> F# Interactive  
+##  <a name="bkmk_FSharp"></a> F# Interactive  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Inter|  
   
-##  <a name="a-namebkmkgraphdoca-graph-document-editor"></a><a name="bkmk_graphDoc"></a> Editor de documentos de gráfico  
+##  <a name="bkmk_graphDoc"></a> Editor de documentos de gráfico  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -537,7 +556,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Eliminar|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|  
   
-##  <a name="a-namebkmkgraphicsdebuggera-graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a> Diagnóstico de gráficos  
+##  <a name="bkmk_graphicsDebugger"></a> Diagnóstico de gráficos  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -547,17 +566,17 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Graphics.MovePixelSelectionRight|Mayús+Alt+Flecha derecha|  
 |Graphics.MovePixelSelectionUp|Mayús+Alt+Flecha arriba|  
 |Graphics.ZoomToActualSize|Mayús+Alt+0|  
-|Graphics.ZoomToFitInWindow|Mayús + Alt +&9;|  
+|Graphics.ZoomToFitInWindow|Mayús + Alt + 9|  
 |Graphics.ZoomIn|Mayús+Alt+=|  
 |Graphics.ZoomOut|Mayús+Alt+-|  
   
-##  <a name="a-namebkmkhtmleditora-html-editor"></a><a name="bkmk_HTMLeditor"></a> Editor de HTML  
+##  <a name="bkmk_HTMLeditor"></a> Editor de HTML  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|  
   
-##  <a name="a-namebkmkhtmleditordesigna-html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a> Vista de diseño del editor HTML  
+##  <a name="bkmk_HTMLeditorDesign"></a> Vista de diseño del editor HTML  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -580,7 +599,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |View.ViewMarkup|Mayús+F7|  
 |Window.PreviousTab|Ctrl+RePág|  
   
-##  <a name="a-namebkmkhtmleditorsourcea-html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a> Vista de código fuente del editor de HTML  
+##  <a name="bkmk_HTMLeditorSource"></a> Vista de código fuente del editor de HTML  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -590,13 +609,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |View.ViewDesigner|Mayús+F7|  
 |Window.PreviousTab|Ctrl+RePág|  
   
-##  <a name="a-namebkmklayerdiagrama-layer-diagram"></a><a name="bkmk_layerDiagram"></a> Diagrama de capas  
+##  <a name="bkmk_layerDiagram"></a> Diagrama de capas  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.Delete|Mayús+Supr|  
   
-##  <a name="a-namebkmkmanagedresourcesa-managed-resources-editor"></a><a name="bkmk_managedResources"></a> Editor de recursos administrados  
+##  <a name="bkmk_managedResources"></a> Editor de recursos administrados  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -611,7 +630,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Resources.Other|Ctrl+6|  
 |Resources.Strings|Ctrl+1|  
   
-##  <a name="a-namebkmkmergeeditora-merge-editor-window"></a><a name="bkmk_MergeEditor"></a> Combinar ventana del editor  
+##  <a name="bkmk_MergeEditor"></a> Combinar ventana del editor  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -619,7 +638,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|  
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|  
   
-##  <a name="a-namebkmkschemacomparea-microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, Comparación de esquemas  
+##  <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, Comparación de esquemas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -630,7 +649,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |SQL.SSDTSchemaCompareStop|Alt+Inter|  
 |SQL.SSDTSchemaCompareWriteUpdates|Mayús+Alt+U|  
   
-##  <a name="a-namebkmktabledesignera-microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Diseñador de tablas  
+##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Diseñador de tablas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -641,7 +660,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |SQL.Rename|F2<br /><br /> o<br /><br /> Ctrl+R, R<br /><br /> o<br /><br /> Ctrl+R, Ctrl+R|  
 |ViewFileInScriptPanel|Mayús+Alt+AvPág|  
   
-##  <a name="a-namebkmktsqleditora-microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Editor de T-SQL  
+##  <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Editor de T-SQL  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -662,7 +681,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Mayús+Alt+AvPág|  
   
-##  <a name="a-namebkmklinkfixa-microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, T-SQL PDW Editor  
+##  <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, T-SQL PDW Editor  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -677,13 +696,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Mayús+Alt+AvPág|  
   
-##  <a name="a-namebkmkpageinspectora-page-inspector"></a><a name="bkmk_PageInspector"></a> Inspector de página  
+##  <a name="bkmk_PageInspector"></a> Inspector de página  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |PageInspector.Minimize|F12|  
   
-##  <a name="a-namebkmkquerydesignera-query-designer"></a><a name="bkmk_QueryDesigner"></a> Diseñador de consultas  
+##  <a name="bkmk_QueryDesigner"></a> Diseñador de consultas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -696,7 +715,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
   
-##  <a name="a-namebkmkqueryresultsa-query-results"></a><a name="bkmk_QueryResults"></a> Resultados de la consulta  
+##  <a name="bkmk_QueryResults"></a> Resultados de la consulta  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -704,7 +723,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |SQL.QueryResultsRefresh|Mayús+Alt+R|  
 |SQL.QueryResultsStop|Alt+Inter|  
   
-##  <a name="a-namebkmkreportdesignera-report-designer"></a><a name="bkmk_ReportDesigner"></a> Diseñador de informes  
+##  <a name="bkmk_ReportDesigner"></a> Diseñador de informes  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -730,14 +749,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.TabLeft|Mayús+Tab|  
 |View.ReportData|Ctrl+Alt+D|  
   
-##  <a name="a-namebkmksequencediagrama-sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a> Diagrama de secuencia  
+##  <a name="bkmk_SequenceDiagram"></a> Diagrama de secuencia  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|  
 |Edit.Delete|Mayús+Supr|  
   
-##  <a name="a-namebkmksettingsdesignera-settings-designer"></a><a name="bkmk_SettingsDesigner"></a> Diseñador de configuración  
+##  <a name="bkmk_SettingsDesigner"></a> Diseñador de configuración  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -746,13 +765,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.SelectionCancel|Esc|  
 |View.ViewCode|F7|  
   
-##  <a name="a-namebkmksolutionexplorera-solution-explorer"></a><a name="bkmk_SolutionExplorer"></a> Explorador de soluciones  
+##  <a name="bkmk_SolutionExplorer"></a> Explorador de soluciones  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|  
   
-##  <a name="a-namebkmkteamexplorera-team-explorer"></a><a name="bkmk_TeamExplorer"></a> Team Explorer  
+##  <a name="bkmk_TeamExplorer"></a> Team Explorer  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
@@ -777,19 +796,19 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Mayús+Alt+L|  
 |View.Refresh|F5|  
   
-##  <a name="a-namebkmktfbuilda-team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a> Editor de detalles de Team Foundation Build  
+##  <a name="bkmk_TFBuild"></a> Editor de detalles de Team Foundation Build  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |View.Refresh|F5|  
   
-##  <a name="a-namebkmktestexplorera-test-explorer"></a><a name="bkmk_TestExplorer"></a> Explorador de pruebas  
+##  <a name="bkmk_TestExplorer"></a> Explorador de pruebas  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |TestExplorer.OpenTest|F12|  
   
-##  <a name="a-namebkmktexteditora-text-editor"></a><a name="bkmk_TextEditor"></a> Editor de texto  
+##  <a name="bkmk_TextEditor"></a> Editor de texto  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -899,38 +918,38 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+RePág|  
   
-##  <a name="a-namebkmkumlactivitydiagrama-uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a> Diagrama de actividades UML  
+##  <a name="bkmk_UMLactivityDiagram"></a> Diagrama de actividades UML  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.Delete|Mayús+Supr|  
   
-##  <a name="a-namebkmkumlclassdiagrama-uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a> Diagrama de clases UML  
+##  <a name="bkmk_UMLclassDiagram"></a> Diagrama de clases UML  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Mayús+Supr|  
   
-##  <a name="a-namebkmkumlcomponentdiagrama-uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a> Diagrama de componentes UML  
+##  <a name="bkmk_UMLcomponentDiagram"></a> Diagrama de componentes UML  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Mayús+Supr|  
   
-##  <a name="a-namebkmkumlusecasediagrama-uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a> Diagrama de casos de uso UML  
+##  <a name="bkmk_UMLusecaseDiagram"></a> Diagrama de casos de uso UML  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Mayús+Supr|  
   
-##  <a name="a-namebkmkvcacceleratora-vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a> Editor de aceleradores VC  
+##  <a name="bkmk_vcaccelerator"></a> Editor de aceleradores VC  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |Edit.NewAccelerator|Insertar|  
 |Edit.NextKeyTyped|Ctrl+W|  
   
-##  <a name="a-namebkmkvcdialogeditora-vc-dialog-editor"></a><a name="bkmk_vcdialogeditor"></a> Editor de cuadros de diálogo VC  
+##  <a name="bkmk_vcdialogeditor"></a> Editor de cuadros de diálogo VC  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -964,7 +983,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Format.TestDialog|Ctrl+T|  
 |Format.ToggleGuides|Ctrl+G|  
   
-##  <a name="a-namebkmkvcimageeditora-vc-image-editor"></a><a name="bkmk_vcimageeditor"></a> Editor de imágenes VC  
+##  <a name="bkmk_vcimageeditor"></a> Editor de imágenes VC  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1006,13 +1025,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Image.ZoomIn|Ctrl+Mayús+.<br /><br /> o<br /><br /> Ctrl+Flecha arriba|  
 |Image.ZoomOut|Ctrl+Mayús+,<br /><br /> o<br /><br /> Ctrl+Flecha abajo|  
   
-##  <a name="a-namebkmkvcstringeditora-vc-string-editor"></a><a name="bkmk_vcstringeditor"></a> Editor de cadenas VC  
+##  <a name="bkmk_vcstringeditor"></a> Editor de cadenas VC  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |Edit.NewString|Insertar|  
   
-##  <a name="a-namebkmkviewdesignera-view-designer"></a><a name="bkmk_viewDesigner"></a> Diseñador de vistas  
+##  <a name="bkmk_viewDesigner"></a> Diseñador de vistas  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1025,13 +1044,13 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
   
-##  <a name="a-namebkmkvisualstudioa-visual-studio"></a><a name="bkmk_visualstudio"></a> Visual Studio  
+##  <a name="bkmk_visualstudio"></a> Visual Studio  
   
 |Comando|Método abreviado de teclado|  
 |-------------|-----------------------|  
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|  
   
-##  <a name="a-namebkmkwfdesignera-windows-forms-designer"></a><a name="bkmk_wfdesigner"></a> Diseñador de Windows Forms  
+##  <a name="bkmk_wfdesigner"></a> Diseñador de Windows Forms  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1060,7 +1079,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.SizeControlUp|Ctrl+Mayús+Flecha arriba|  
 |Edit.TabLeft|Mayús+Tab|  
   
-##  <a name="a-namebkmkworkitemeditora-work-item-editor"></a><a name="bkmk_workItemEditor"></a> Editor de elementos de trabajo  
+##  <a name="bkmk_workItemEditor"></a> Editor de elementos de trabajo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1068,7 +1087,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Edit.RefreshWorkItem|F5|  
 |Team.NewLinkedWorkItem|Mayús+Alt+L|  
   
-##  <a name="a-namebkmkwiqueryviewa-work-item-query-view"></a><a name="bkmk_WIqueryview"></a> Vista de consulta de elementos de trabajo  
+##  <a name="bkmk_WIqueryview"></a> Vista de consulta de elementos de trabajo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1079,7 +1098,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Team.Refresh|F5|  
 |Window.Toggle|Mayús+Alt+V|  
   
-##  <a name="a-namebkmkwiresultsviewa-work-item-results-view"></a><a name="bkmk_WIresultsview"></a> Vista de resultados de elementos de trabajo  
+##  <a name="bkmk_WIresultsview"></a> Vista de resultados de elementos de trabajo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1092,7 +1111,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |Team.Refresh|F5|  
 |Window.Toggle|Mayús+Alt+V|  
   
-##  <a name="a-namebkmkworkflowdesignera-workflow-designer"></a><a name="bkmk_workflowdesigner"></a> Diseñador de flujo de trabajo  
+##  <a name="bkmk_workflowdesigner"></a> Diseñador de flujo de trabajo  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1120,7 +1139,7 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |WorkflowDesigner.ZoomIn|Ctrl+Núm +|  
 |WorkflowDesigner.ZoomOut|Ctrl+Núm -|  
   
-##  <a name="a-namebkmkxamluidesignera-xaml-ui-designer"></a><a name="bkmk_xamluidesigner"></a> Diseñador de IU XAML  
+##  <a name="bkmk_xamluidesigner"></a> Diseñador de IU XAML  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1136,14 +1155,14 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |View.EdgeRightMoveRight|Ctrl+Mayús+Alt+.|  
 |Ejecutar código del proyecto|Ctrl+F9|  
   
-##  <a name="a-namebkmkxmltexteditora-xml-text-editor"></a><a name="bkmk_xmlTextEditor"></a> Editor XML (texto)  
+##  <a name="bkmk_xmlTextEditor"></a> Editor XML (texto)  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
 |XML.StartXSLTDebugging|Alt+F5|  
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|  
   
-##  <a name="a-namebkmkxmlschemadesignera-xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a> Diseñador de esquemas XML  
+##  <a name="bkmk_xmlSchemaDesigner"></a> Diseñador de esquemas XML  
   
 |Comandos|Métodos abreviados de teclado|  
 |--------------|------------------------|  
@@ -1157,10 +1176,5 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |XsdDesigner.ShowStartView|Ctrl+1|  
   
 ## <a name="see-also"></a>Vea también  
- [Editor de imágenes para iconos](/visual-cpp/windows/image-editor-for-icons)   
+ [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)   
  [Usar IntelliSense](../ide/using-intellisense.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

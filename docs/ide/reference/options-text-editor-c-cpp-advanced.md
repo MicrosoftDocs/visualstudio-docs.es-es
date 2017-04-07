@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
@@ -139,7 +139,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  **Unidades máximas de traducción en caché**  
  Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.  
   
- Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/visual-cpp/preprocessor/phases-of-translation).  
+ Para obtener más información sobre unidades de traducción, vea [Fases de traducción](/cpp/preprocessor/phases-of-translation).  
 
  **Punto a flecha en lista de miembros**  
  Reemplaza "." por "->" si corresponde en la lista de miembros.

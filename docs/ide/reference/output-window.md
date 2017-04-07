@@ -36,9 +36,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 118223d1a5c07188b8f8d8c7b6990792dcd94ff5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 989bc338e0cb8c49a2342d998e1e09e8f6b0eb9f
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="output-window"></a>Resultados (Ventana)
@@ -76,7 +76,7 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
   
  También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para ello, use miembros de las clases <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- En [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](/visual-cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
+ En [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
   
 ## <a name="scrolling-behavior"></a>Comportamiento de desplazamiento  
  Si usa el desplazamiento automático en la ventana de salida y después se desplaza mediante las teclas de dirección o el mouse, el desplazamiento automático se detiene. Para reanudar el desplazamiento automático, pulse CTRL + Fin.  

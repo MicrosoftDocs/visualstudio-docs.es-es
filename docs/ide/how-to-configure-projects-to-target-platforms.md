@@ -37,9 +37,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 773a59069649a82ea50f1a854b23a860d27ed777
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: c9ab9bf094a57baf4a309e3064cfcea9180dfebc
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Cómo: Configurar proyectos para plataformas de destino
@@ -76,10 +76,10 @@ ms.lasthandoff: 02/22/2017
   
 -   Para proyectos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Para proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vea [/clr (Compilación de Common Language Runtime)](/visual-cpp/build/reference/clr-common-language-runtime-compilation).  
+-   Para proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vea [/clr (Compilación de Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
 ## <a name="see-also"></a>Vea también  
  [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)   
  [/platform (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
- [Aplicaciones de&64; bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

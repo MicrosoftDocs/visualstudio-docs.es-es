@@ -42,14 +42,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: c576d025bef7ee5013ae8f3b561502fd89251a4e
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 85a03270b20b050cc5ca96f57311c98c0d9b53d1
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 Los archivos de recursos son archivos que forman parte de una aplicación, pero no se compilan. Un ejemplo de estos archivos son los  archivos de icono de ejemplo o los archivos de audio. Puesto que estos archivos no forman parte del proceso de compilación, se pueden cambiar sin tener que volver a compilar los archivos binarios. Si piensa localizar la aplicación, debe usar los archivos de recursos para todas las cadenas y los demás recursos que deben cambiarse al localizar la aplicación.  
   
- Para obtener más información sobre los recursos de aplicaciones de escritorio .NET, vea [Recursos de aplicaciones de escritorio](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890). Para obtener más información sobre los recursos de aplicaciones de escritorio C++, vea [Working with Resource Files](/visual-cpp/windows/working-with-resource-files) (Trabajar con archivos de recursos).  
+ Para obtener más información sobre los recursos de aplicaciones de escritorio .NET, vea [Recursos de aplicaciones de escritorio](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890). Para obtener más información sobre los recursos de aplicaciones de escritorio C++, vea [Working with Resource Files](/cpp/windows/working-with-resource-files) (Trabajar con archivos de recursos).  
   
  Las aplicaciones de la Tienda Windows usan un modelo de recursos distinto al de las aplicaciones de escritorio. Para obtener información sobre los recursos de las aplicaciones de la Tienda Windows, vea [Definición de recursos de aplicaciones](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx) en el sitio web del Centro de desarrollo de Windows.  
   
@@ -57,8 +58,3 @@ Los archivos de recursos son archivos que forman parte de una aplicación, pero 
  En un proyecto de código administrado, abra la ventana de propiedades del proyecto (haga clic en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**o escriba las **propiedades del proyecto** en la ventana **Inicio rápido** , o bien presione ALT + ENTRAR en la ventana **Explorador de soluciones** ). Seleccione la pestaña **Recursos** . Puede agregar un archivo .resx si el proyecto no contiene uno ya y, a continuación, agregar y eliminar diferentes tipos de recursos y modificar los recursos existentes.  
   
  Para obtener información sobre cómo trabajar con recursos en proyectos de C++, vea [How to: Create a Resource](http://msdn.microsoft.com/Library/aad44914-9145-45a3-a7d8-9de89b366716) (Cómo: Crear un recurso).
-
-
-<!--HONumber=Feb17_HO4-->
-
-
