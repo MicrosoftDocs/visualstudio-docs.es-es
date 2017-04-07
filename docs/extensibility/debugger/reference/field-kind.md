@@ -1,241 +1,257 @@
 ---
-title: "FIELD_KIND | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "FIELD_KIND"
-helpviewer_keywords: 
-  - "Enumeración FIELD_KIND"
+title: FIELD_KIND | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- FIELD_KIND
+helpviewer_keywords:
+- FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# FIELD_KIND
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: f92dc8a17024e9189255156e1e23dabb1ab5ba62
+ms.lasthandoff: 04/05/2017
 
-Especifica el tipo de campo contenida en un objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
+---
+# <a name="fieldkind"></a>FIELD_KIND
+Especifica el tipo de campo de un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp#  
-enum enum_FIELD_KIND {   
-   FIELD_KIND_NONE       = 0x00000000,  
+enum enum_FIELD_KIND {   
+   FIELD_KIND_NONE       = 0x00000000,  
   
-   // Type of field  
-   FIELD_KIND_TYPE       = 0x00000001,  
-   FIELD_KIND_SYMBOL     = 0x00000002,  
+   // Type of field  
+   FIELD_KIND_TYPE       = 0x00000001,  
+   FIELD_KIND_SYMBOL     = 0x00000002,  
   
-   // Storage type of the field  
-   FIELD_TYPE_PRIMITIVE  = 0x00000010,  
-   FIELD_TYPE_STRUCT     = 0x00000020,  
-   FIELD_TYPE_CLASS      = 0x00000040,  
-   FIELD_TYPE_INTERFACE  = 0x00000080,  
-   FIELD_TYPE_UNION      = 0x00000100,  
-   FIELD_TYPE_ARRAY      = 0x00000200,  
-   FIELD_TYPE_METHOD     = 0x00000400,  
-   FIELD_TYPE_BLOCK      = 0x00000800,  
-   FIELD_TYPE_POINTER    = 0x00001000,  
-   FIELD_TYPE_ENUM       = 0x00002000,  
-   FIELD_TYPE_LABEL      = 0x00004000,  
-   FIELD_TYPE_TYPEDEF    = 0x00008000,  
-   FIELD_TYPE_BITFIELD   = 0x00010000,  
-   FIELD_TYPE_NAMESPACE  = 0x00020000,  
-   FIELD_TYPE_MODULE     = 0x00040000,  
-   FIELD_TYPE_DYNAMIC    = 0x00080000,  
-   FIELD_TYPE_PROP       = 0x00100000,  
-   FIELD_TYPE_INNERCLASS = 0x00200000,  
-   FIELD_TYPE_REFERENCE  = 0x00400000,  
-   FIELD_TYPE_EXTENDED   = 0x00800000,  
+   // Storage type of the field  
+   FIELD_TYPE_PRIMITIVE  = 0x00000010,  
+   FIELD_TYPE_STRUCT     = 0x00000020,  
+   FIELD_TYPE_CLASS      = 0x00000040,  
+   FIELD_TYPE_INTERFACE  = 0x00000080,  
+   FIELD_TYPE_UNION      = 0x00000100,  
+   FIELD_TYPE_ARRAY      = 0x00000200,  
+   FIELD_TYPE_METHOD     = 0x00000400,  
+   FIELD_TYPE_BLOCK      = 0x00000800,  
+   FIELD_TYPE_POINTER    = 0x00001000,  
+   FIELD_TYPE_ENUM       = 0x00002000,  
+   FIELD_TYPE_LABEL      = 0x00004000,  
+   FIELD_TYPE_TYPEDEF    = 0x00008000,  
+   FIELD_TYPE_BITFIELD   = 0x00010000,  
+   FIELD_TYPE_NAMESPACE  = 0x00020000,  
+   FIELD_TYPE_MODULE     = 0x00040000,  
+   FIELD_TYPE_DYNAMIC    = 0x00080000,  
+   FIELD_TYPE_PROP       = 0x00100000,  
+   FIELD_TYPE_INNERCLASS = 0x00200000,  
+   FIELD_TYPE_REFERENCE  = 0x00400000,  
+   FIELD_TYPE_EXTENDED   = 0x00800000,  
   
-   // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
-   FIELD_SYM_LOCAL       = 0x02000000,  
-   FIELD_SYM_PARAM       = 0x04000000,  
-   FIELD_SYM_THIS        = 0x08000000,  
-   FIELD_SYM_GLOBAL      = 0x10000000,  
-   FIELD_SYM_PROP_GETTER = 0x20000000,  
-   FIELD_SYM_PROP_SETTER = 0x40000000,  
-   FIELD_SYM_EXTENDED    = 0x80000000,  
+   // Specific information about symbols  
+   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_LOCAL       = 0x02000000,  
+   FIELD_SYM_PARAM       = 0x04000000,  
+   FIELD_SYM_THIS        = 0x08000000,  
+   FIELD_SYM_GLOBAL      = 0x10000000,  
+   FIELD_SYM_PROP_GETTER = 0x20000000,  
+   FIELD_SYM_PROP_SETTER = 0x40000000,  
+   FIELD_SYM_EXTENDED    = 0x80000000,  
   
-   FIELD_KIND_MASK       = 0x0000000f,  
-   FIELD_TYPE_MASK       = 0x00fffff0,  
-   FIELD_SYM_MASK        = 0xff000000,  
+   FIELD_KIND_MASK       = 0x0000000f,  
+   FIELD_TYPE_MASK       = 0x00fffff0,  
+   FIELD_SYM_MASK        = 0xff000000,  
   
-   FIELD_KIND_ALL        = 0xffffffff  
+   FIELD_KIND_ALL        = 0xffffffff  
 };  
 typedef DWORD FIELD_KIND;  
 ```  
   
 ```c#  
 public enum enum_FIELD_KIND {  
-   FIELD_KIND_NONE       = 0x00000000,  
+   FIELD_KIND_NONE       = 0x00000000,  
   
-   // Type of field  
-   FIELD_KIND_TYPE       = 0x00000001,  
-   FIELD_KIND_SYMBOL     = 0x00000002,  
+   // Type of field  
+   FIELD_KIND_TYPE       = 0x00000001,  
+   FIELD_KIND_SYMBOL     = 0x00000002,  
   
-   // Storage type of the field  
-   FIELD_TYPE_PRIMITIVE  = 0x00000010,  
-   FIELD_TYPE_STRUCT     = 0x00000020,  
-   FIELD_TYPE_CLASS      = 0x00000040,  
-   FIELD_TYPE_INTERFACE  = 0x00000080,  
-   FIELD_TYPE_UNION      = 0x00000100,  
-   FIELD_TYPE_ARRAY      = 0x00000200,  
-   FIELD_TYPE_METHOD     = 0x00000400,  
-   FIELD_TYPE_BLOCK      = 0x00000800,  
-   FIELD_TYPE_POINTER    = 0x00001000,  
-   FIELD_TYPE_ENUM       = 0x00002000,  
-   FIELD_TYPE_LABEL      = 0x00004000,  
-   FIELD_TYPE_TYPEDEF    = 0x00008000,  
-   FIELD_TYPE_BITFIELD   = 0x00010000,  
-   FIELD_TYPE_NAMESPACE  = 0x00020000,  
-   FIELD_TYPE_MODULE     = 0x00040000,  
-   FIELD_TYPE_DYNAMIC    = 0x00080000,  
-   FIELD_TYPE_PROP       = 0x00100000,  
-   FIELD_TYPE_INNERCLASS = 0x00200000,  
-   FIELD_TYPE_REFERENCE  = 0x00400000,  
-   FIELD_TYPE_EXTENDED   = 0x00800000,  
+   // Storage type of the field  
+   FIELD_TYPE_PRIMITIVE  = 0x00000010,  
+   FIELD_TYPE_STRUCT     = 0x00000020,  
+   FIELD_TYPE_CLASS      = 0x00000040,  
+   FIELD_TYPE_INTERFACE  = 0x00000080,  
+   FIELD_TYPE_UNION      = 0x00000100,  
+   FIELD_TYPE_ARRAY      = 0x00000200,  
+   FIELD_TYPE_METHOD     = 0x00000400,  
+   FIELD_TYPE_BLOCK      = 0x00000800,  
+   FIELD_TYPE_POINTER    = 0x00001000,  
+   FIELD_TYPE_ENUM       = 0x00002000,  
+   FIELD_TYPE_LABEL      = 0x00004000,  
+   FIELD_TYPE_TYPEDEF    = 0x00008000,  
+   FIELD_TYPE_BITFIELD   = 0x00010000,  
+   FIELD_TYPE_NAMESPACE  = 0x00020000,  
+   FIELD_TYPE_MODULE     = 0x00040000,  
+   FIELD_TYPE_DYNAMIC    = 0x00080000,  
+   FIELD_TYPE_PROP       = 0x00100000,  
+   FIELD_TYPE_INNERCLASS = 0x00200000,  
+   FIELD_TYPE_REFERENCE  = 0x00400000,  
+   FIELD_TYPE_EXTENDED   = 0x00800000,  
   
-   // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
-   FIELD_SYM_LOCAL       = 0x02000000,  
-   FIELD_SYM_PARAM       = 0x04000000,  
-   FIELD_SYM_THIS        = 0x08000000,  
-   FIELD_SYM_GLOBAL      = 0x10000000,  
-   FIELD_SYM_PROP_GETTER = 0x20000000,  
-   FIELD_SYM_PROP_SETTER = 0x40000000,  
-   FIELD_SYM_EXTENDED    = 0x80000000,  
+   // Specific information about symbols  
+   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_LOCAL       = 0x02000000,  
+   FIELD_SYM_PARAM       = 0x04000000,  
+   FIELD_SYM_THIS        = 0x08000000,  
+   FIELD_SYM_GLOBAL      = 0x10000000,  
+   FIELD_SYM_PROP_GETTER = 0x20000000,  
+   FIELD_SYM_PROP_SETTER = 0x40000000,  
+   FIELD_SYM_EXTENDED    = 0x80000000,  
   
-   FIELD_KIND_MASK       = 0x0000000f,  
-   FIELD_TYPE_MASK       = 0x00fffff0,  
-   FIELD_SYM_MASK        = 0xff000000,  
+   FIELD_KIND_MASK       = 0x0000000f,  
+   FIELD_TYPE_MASK       = 0x00fffff0,  
+   FIELD_SYM_MASK        = 0xff000000,  
   
-   FIELD_KIND_ALL        = 0xffffffff  
+   FIELD_KIND_ALL        = 0xffffffff  
 };  
 ```  
   
-## Members  
- FIELD\_KIND\_TYPE  
- Indica que el campo es un tipo.  
+## <a name="members"></a>Miembros  
+ FIELD_KIND_TYPE  
+ Indica que el campo es solo un tipo.  
   
- FIELD\_KIND\_SYMBOL  
- Indica que el campo es un símbolo, con el tipo, nombre, y otra información.  
+ FIELD_KIND_SYMBOL  
+ Indica que el campo es un símbolo con tipo, nombre y otra información.  
   
- FIELD\_TYPE\_PRIMITIVE  
- indica que el campo es un tipo de datos primitivo.  
+ FIELD_TYPE_PRIMITIVE  
+ Indica que el campo es un tipo de datos primitivo.  
   
- FIELD\_TYPE\_STRUCT  
- indica que el campo es una estructura.  
+ FIELD_TYPE_STRUCT  
+ Indica que el campo es una estructura.  
   
- FIELD\_TYPE\_CLASS  
- indica que el campo es una clase.  
+ FIELD_TYPE_CLASS  
+ Indica que el campo es una clase.  
   
- FIELD\_TYPE\_INTERFACE  
- indica que el campo es una interfaz.  
+ FIELD_TYPE_INTERFACE  
+ Indica que el campo es una interfaz.  
   
- FIELD\_TYPE\_UNION  
- indica que el campo es una unión.  
+ FIELD_TYPE_UNION  
+ Indica que el campo es una unión.  
   
- FIELD\_TYPE\_ARRAY  
+ FIELD_TYPE_ARRAY  
  Indica que el campo es una matriz.  
   
- FIELD\_TYPE\_METHOD  
- indica que el campo es un método.  
+ FIELD_TYPE_METHOD  
+ Indica que el campo es un método.  
   
- FIELD\_TYPE\_BLOCK  
- indica que el campo es un bloque.  
+ FIELD_TYPE_BLOCK  
+ Indica que el campo es un bloque.  
   
- FIELD\_TYPE\_POINTER  
+ FIELD_TYPE_POINTER  
  Indica que el campo es un puntero.  
   
- FIELD\_TYPE\_ENUM  
- indica que el campo es un tipo de datos enumerado.  
+ FIELD_TYPE_ENUM  
+ Indica que el campo es un tipo de datos enumerado.  
   
- FIELD\_TYPE\_LABEL  
- indica que el campo es una etiqueta.  
+ FIELD_TYPE_LABEL  
+ Indica que el campo es una etiqueta.  
   
- FIELD\_TYPE\_TYPEDEF  
- Indica que el campo es un tipo typedef.  
+ FIELD_TYPE_TYPEDEF  
+ Indica que el campo es una definición de tipo.  
   
- FIELD\_TYPE\_BITFIELD  
- indica que el campo es un campo de bits.  
+ FIELD_TYPE_BITFIELD  
+ Indica que el campo es un campo de bits.  
   
- FIELD\_TYPE\_NAMESPACE  
- indica que el campo es un espacio de nombres.  
+ FIELD_TYPE_NAMESPACE  
+ Indica que el campo es un espacio de nombres.  
   
- FIELD\_TYPE\_MODULE  
- indica que el campo es un módulo.  
+ FIELD_TYPE_MODULE  
+ Indica que el campo es un módulo.  
   
- FIELD\_TYPE\_DYNAMIC  
- indica que el campo es dinámico.  
+ FIELD_TYPE_DYNAMIC  
+ Indica que el campo es dinámico.  
   
- FIELD\_TYPE\_PROP  
- indica que el campo es una propiedad.  
+ FIELD_TYPE_PROP  
+ Indica que el campo es una propiedad.  
   
- FIELD\_TYPE\_INNERCLASS  
- indica que el campo es una clase interna.  
+ FIELD_TYPE_INNERCLASS  
+ Indica que el campo es una clase interna.  
   
- FIELD\_TYPE\_REFERENCE  
- indica que el campo es una referencia.  
+ FIELD_TYPE_REFERENCE  
+ Indica que el campo es una referencia.  
   
- FIELD\_TYPE\_EXTENDED  
+ FIELD_TYPE_EXTENDED  
  Reservado para un uso futuro.  
   
- FIELD\_SYM\_MEMBER  
- Indica que el campo es miembro.  
+ FIELD_SYM_MEMBER  
+ Indica que el campo es un miembro.  
   
- FIELD\_SYM\_LOCAL  
- indica que el campo es local.  
+ FIELD_SYM_LOCAL  
+ Indica que el campo es local.  
   
- FIELD\_SYM\_PARAMETER  
- indica que el campo es un parámetro.  
+ FIELD_SYM_PARAMETER  
+ Indica que el campo es un parámetro.  
   
- FIELD\_SYM\_THIS  
- Indica que el campo es el puntero “this”.  
+ FIELD_SYM_THIS  
+ Indica que el campo es el puntero "this".  
   
- FIELD\_SYM\_GLOBAL  
- indica que el campo es global.  
+ FIELD_SYM_GLOBAL  
+ Indica que el campo es global.  
   
- FIELD\_SYM\_PROP\_GETTER  
- indica que el campo recupera propiedades.  
+ FIELD_SYM_PROP_GETTER  
+ Indica que el campo recupera las propiedades.  
   
- FIELD\_SYM\_PROP\_SETTER  
- indica que las propiedades de los conjuntos de campos.  
+ FIELD_SYM_PROP_SETTER  
+ Indica que el campo de conjuntos de propiedades.  
   
- FIELD\_SYM\_EXTENDED  
+ FIELD_SYM_EXTENDED  
  Reservado para un uso futuro.  
   
- FIELD\_KIND\_MASK  
- Indica una máscara para las clases de campo.  
+ FIELD_KIND_MASK  
+ Indica una máscara para los tipos de campo.  
   
- FIELD\_TYPE\_MASK  
- indica una máscara para los tipos de campo.  
+ FIELD_TYPE_MASK  
+ Indica una máscara para los tipos de campo.  
   
- FIELD\_SYM\_MASK  
+ FIELD_SYM_MASK  
  Indica una máscara para la información de símbolos.  
   
-## Comentarios  
- Devueltos de una llamada al método de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .  
+## <a name="remarks"></a>Comentarios  
+ Devuelve una llamada a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método.  
   
- En función del tipo de campo, [QueryInterface](/visual-cpp/atl/queryinterface) se puede llamar en la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para un formulario más específico de interfaz.  Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, puede llamar a `QueryInterface` en I`DebugField` para obtener la interfaz de [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .  
+ Según el tipo de campo, [QueryInterface](/cpp/atl/queryinterface) puede llamarse en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz para una forma más específica de la interfaz. Por ejemplo, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) devuelve `FIELD_TYPE_METHOD`, a continuación, puede llamar a `QueryInterface` en I`DebugField` para obtener la [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaz.  
   
-## Requisitos  
- encabezado: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
+ [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
