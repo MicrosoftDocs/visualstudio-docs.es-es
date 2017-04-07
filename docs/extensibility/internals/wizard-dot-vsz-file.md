@@ -1,32 +1,47 @@
 ---
-title: "Asistente (. Archivo vsz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - ".vsz (archivos)"
-  - "vsz (archivos)"
-  - "asistentes, archivos"
+title: Asistente (. Archivo vsz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- .vsz files
+- vsz files
+- wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 9
-caps.handback.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
----
-# Asistente (. Archivo vsz)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 3b1ee351d5fbe66a5d74c07c0a7e5a60661d7fcb
+ms.lasthandoff: 04/05/2017
 
-El entorno \(IDE\) de desarrollo integrado utiliza archivos .vsz para iniciar asistentes.  Estos archivos .vsz contienen información que usa el IDE para determinar qué asistente a llamar y qué información al asistente.  
+---
+# <a name="wizard-vsz-file"></a>Asistente (. Archivo vsz)
+El entorno de desarrollo integrado (IDE) utiliza archivos .vsz para iniciar a asistentes. Estos archivos .vsz contienen información que el IDE se usa para determinar qué asistente al que llamar y qué información va a pasar al asistente.  
   
- Un archivo .vsz es una versión de un archivo de texto de .ini\-formatted que no tiene ninguna sección.  Información conocida al IDE se almacena al principio del archivo.  Esto proporciona un vínculo entre el asistente que las llamadas del IDE y parámetros que están en el archivo .vsz que se pasará al IDE.  El resto del archivo proporciona los parámetros que son específicos del asistente y que deben recolectarse por el IDE y pasar el asistente concreto.  
+ Un archivo .vsz es una versión de un archivo de texto con formato .ini que tiene secciones. Se almacena información conocida por el IDE al principio del archivo. Esto proporciona un vínculo entre el Asistente para la que llama el IDE y los parámetros que se encuentran en el archivo .vsz va a pasar al IDE. El resto del archivo proporciona los parámetros que son específicos para el asistente y que se sea recopilado por el IDE y se pasa al Asistente específico.  
   
- El ejemplo siguiente muestra el contenido de un archivo .vsz.  
+ En el ejemplo siguiente se muestra el contenido de un archivo .vsz.  
   
 ```  
 VSWizard 8.0  
@@ -35,19 +50,19 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"  
 ```  
   
- Los siguientes son las partes en el archivo .vsz.  
+ A continuación se indican los componentes en el archivo .vsz.  
   
 |Parte|Descripción|  
-|-----------|-----------------|  
-|VSWizard|El primer parámetro del archivo es el número de versión del formato de archivo de plantilla.  El número de versión debe ser 6,0, 7,0, 7,1, 8,0.  Otros números no pueden ser encendidos y producir un error de formato de Invalid.|  
-|Wizard|Este campo contiene ProgID OLE del asistente, o también una representación de cadena GUID del CLSID del asistente que cocreated por el IDE.|  
-|Param|Estas partes son opcionales.  Puede agregar tanto como sea necesario.|  
+|----------|-----------------|  
+|VSWizard|El primer parámetro en el archivo es el número de versión del formato del archivo de plantilla. Este número de versión debe ser 6.0, 7.0, 7.1 o 8.0. El resto de números no se puede iniciar y producirá un error de formato no válido.|  
+|Asistente|Este campo contiene el ProgID de OLE del asistente, o también una representación de cadena GUID del CLSID del asistente que le por el IDE.|  
+|Parám|Estas partes son opcionales. Puede agregar tantas como sea necesario.|  
   
- Los parámetros permiten el archivo .vsz pase parámetros personalizados adicionales al asistente.  Cada valor se pasa como elemento de cadena en una matriz de variantes el asistente.  Para obtener más información, vea [Parámetros personalizados](../../extensibility/internals/custom-parameters.md).  Para obtener información sobre cómo utilizar un archivo .vsz en el desarrollo de asistentes personalizados, vea [Archivo .vsz \(Control del proyecto\)](/visual-cpp/ide/dot-vsz-file-project-control)  
+ Los parámetros permiten al archivo .vsz pasar parámetros personalizados adicionales al asistente. Cada valor se pasa como un elemento de cadena en una matriz de elementos Variant en el asistente. Para obtener más información, consulte [Custom Parameters](../../extensibility/internals/custom-parameters.md). Para obtener información sobre cómo usar un archivo .vsz en el desarrollo de asistentes personalizados, consulte [. Archivo vsz (Control del proyecto)](/cpp/ide/dot-vsz-file-project-control)  
   
- Para agregar un identificador de configuración regional predeterminado en el archivo .vsz, especifique el \=xxxx de `FALLBACK_LCID`, donde es el identificador de configuración regional xxxx, por ejemplo, 1033 para inglés.  Cuando el parámetro de `FALLBACK_LCID` está definido, el asistente utiliza el identificador de configuración regional proporcionado de reserva si el identificador actual no se encuentra.  
+ Para agregar un identificador de configuración regional predeterminada para el archivo .vsz, especifique `FALLBACK_LCID`= xxxx, donde xxxx es el identificador de configuración regional, por ejemplo, 1033 para inglés. Cuando `FALLBACK_LCID` se define el parámetro, el asistente utiliza el identificador de configuración regional de reserva proporcionado si no se encuentra el Id. actual.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)   
  [Asistentes](../../extensibility/internals/wizards.md)   
- [Descripción del directorio de plantilla \(. Archivos VSDir\)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+ [Archivos de descripción del directorio de plantilla (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

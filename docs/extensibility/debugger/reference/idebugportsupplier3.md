@@ -1,60 +1,76 @@
 ---
-title: "IDebugPortSupplier3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier3"
-helpviewer_keywords: 
-  - "Interfaz IDebugPortSupplier3"
+title: IDebugPortSupplier3 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortSupplier3
+helpviewer_keywords:
+- IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugPortSupplier3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 0eb7cf542fa61d53220cd10f54e3fbd7c6165bf4
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz permite a un llamador determinar si un proveedor de puerto puede conservar puertos \(escribiéndolos en disco\) entre las invocaciones del depurador y obtener una lista de los puertos conservar.  
+---
+# <a name="idebugportsupplier3"></a>IDebugPortSupplier3
+Esta interfaz permite que un autor de llamada determinar si un proveedor de puerto puede conservar los puertos (de escribirlos en disco) entre las distintas invocaciones del depurador y, a continuación, obtener una lista de esos puertos conservados.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugPortSupplier3 : IDebugPortSupplier2  
 ```  
   
-## Notas para los implementadores  
- Un proveedor de puerto implementa esta interfaz para admitir la persistencia o guardar información de puerto en el disco.  esta interfaz se debe implementar en el mismo objeto que la interfaz de [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un proveedor de puerto personalizado implementa esta interfaz para admitir conservar o guardar la información de puerto en el disco. Esta interfaz debe implementarse en el mismo objeto que la [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz.  
   
-## Notas para los llamadores  
- Llame a [QueryInterface](/visual-cpp/atl/queryinterface) en la interfaz de `IDebugPortSupplier2` para obtener esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Llame a [QueryInterface](/cpp/atl/queryinterface) en el `IDebugPortSupplier2` interfaz para obtener esta interfaz.  
   
-## métodos en el orden de Vtable  
- Además de los métodos heredados de la interfaz de [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) , esta interfaz admite lo siguiente:  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Además de los métodos heredados de la [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interfaz, esta interfaz es compatible con lo siguiente:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Devuelve si el proveedor de puerto puede conservar los puertos \(escribiéndolos en disco\) entre las invocaciones del depurador.|  
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Devuelve un objeto que se puede usar para enumerar en todos los puertos que se escriben en el disco por este proveedor de puerto.|  
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Devuelve si el proveedor del puerto puede conservar puertos (de escribirlos en disco) entre las distintas invocaciones del depurador.|  
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Devuelve un objeto que puede utilizar para enumerar a través de todos los puertos que se escribieron en el disco por este proveedor del puerto.|  
   
-## Comentarios  
- Si un proveedor de puerto puede conservar los puertos a través de invocación, debe implementar esta interfaz.  Los puertos deben cargarse cuando el proveedor de puerto se crea instancias, y se escribe en el disco cuando se destruye el proveedor de puerto.  
+## <a name="remarks"></a>Comentarios  
+ Si un proveedor de puerto puede persistir puertos a través de invocaciones, deben implementar esta interfaz. Puertos deben cargarse cuando el proveedor del puerto se crea y se escriben en el disco cuando se destruye el proveedor del puerto.  
   
- Un motor de depuración no interactúa normalmente con un proveedor de puerto y no tendrá ningún uso en esta interfaz.  
+ Normalmente, un motor de depuración no interactúa con un proveedor de puerto y no tendrá ningún uso para esta interfaz.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
