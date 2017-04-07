@@ -13,7 +13,7 @@ helpviewer_keywords:
 - unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 30
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -150,3 +150,4 @@ namespace BankAccountNS
  [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
  [Tutorial: Ejecutar pruebas y ver cobertura de código.](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+

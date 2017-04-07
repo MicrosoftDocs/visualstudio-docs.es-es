@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6d5f17d6485a6662c5fdc1cbf245ac4fdf5515ac
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: dcabdd5ca1381ec15e66637a35044c456411c8c7
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
@@ -68,11 +68,11 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
   
 -   [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/Library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [Runtime de simultaneidad](/visual-cpp/parallel/concrt/concurrency-runtime)  
+-   [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)  
   
 -   [Compatibilidad con marcadores de escenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/visual-cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+-   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
  Puede utilizar la pestaña Marcadores en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar si los marcadores de diversos orígenes se muestran en el visualizador de simultaneidad y puede filtrar por marcadores según la importancia y la categoría.  
   

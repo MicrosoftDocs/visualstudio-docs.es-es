@@ -1,7 +1,7 @@
 ---
-title: "Opciones, Diseñador XAML | Microsoft Docs"
+title: "Página de opciones del Diseñador XAML | Microsoft Docs"
 ms.custom: 
-ms.date: 01/17/2017
+ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,12 +30,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7c944afe8c89b8a5e30bf1e5937e848e078954ac
-ms.openlocfilehash: f4a4832e5659a46b236cdcf9ff2eecdc3cabf57d
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: d23a47b708754248cd5c3fb8d86510a0c96491fa
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="options-xaml-designer"></a>Opciones, Diseñador XAML
-Use la página de propiedades de **Diseñador XAML** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, pulse el menú **Herramientas** y, después, pulse **Opciones**. Para tener acceso a la página de propiedades **Diseñador XAML**, pulse el nodo **Diseñador XAML**. La configuración para el diseñador XAML se aplica cuando abre el documento. De esta manera, si realiza cambios en la configuración, necesita cerrar y volver a abrir Visual Studio para ver los cambios.
+# <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
+Use la página de opciones del **Diseñador XAML** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir esta página, seleccione pulse el menú **Herramientas** y, después, elija **Opciones**. Para tener acceso a la página de propiedades **Diseñador XAML**, pulse el nodo **Diseñador XAML**. La configuración para el diseñador XAML se aplica cuando abre el documento. De esta manera, si realiza cambios en la configuración, necesita cerrar y volver a abrir Visual Studio para ver los cambios.
 
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -118,9 +119,4 @@ Use esta configuración para determinar si los efectos se representan al editar 
  [XAML en WPF](http://msdn.microsoft.com/Library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
  [Cómo: Cambiar la configuración de la vista XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Tutoriales para el uso de XAML y código](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

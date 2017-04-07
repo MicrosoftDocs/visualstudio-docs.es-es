@@ -30,15 +30,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 2db52ef9381f74896969e693467166aaecb8db55
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 8cc8cb349901c7a2b0c94875d29e602c33baa5bf
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.  
   
- Para obtener información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp).  
+ Para obtener información sobre cómo crear un archivo del proyecto para un proyecto de C++, consulte [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  Este tutorial muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto. El tutorial sigue estos pasos:  
   

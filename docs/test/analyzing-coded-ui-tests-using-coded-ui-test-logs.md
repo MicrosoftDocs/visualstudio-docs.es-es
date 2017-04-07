@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 13
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -125,3 +125,4 @@ Los registros de pruebas de IU programadas filtran y guardan información import
 ## <a name="see-also"></a>Vea también  
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Cómo: Ejecutar pruebas desde Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+

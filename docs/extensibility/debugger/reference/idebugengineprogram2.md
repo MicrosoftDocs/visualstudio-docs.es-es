@@ -1,58 +1,74 @@
 ---
-title: "IDebugEngineProgram2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2"
-helpviewer_keywords: 
-  - "Interfaz IDebugEngineProgram2"
+title: IDebugEngineProgram2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngineProgram2
+helpviewer_keywords:
+- IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugEngineProgram2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 2897213b9c94a2c8a140c12bfdbc3d4deb29052e
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz proporciona compatibilidad multiproceso de depuración.  
+---
+# <a name="idebugengineprogram2"></a>IDebugEngineProgram2
+Esta interfaz proporciona compatibilidad con la depuración multiproceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugEngineProgram2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Un motor de depuración implementa esta interfaz para admitir la depuración simultánea de varios subprocesos.  esta interfaz se implementa en el mismo objeto que implementa la interfaz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un motor de depuración implementa esta interfaz para admitir la depuración simultánea de varios subprocesos. Esta interfaz se implementa en el mismo objeto que implementa el [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz.  
   
-## Notas para los llamadores  
- utilice [QueryInterface](/visual-cpp/atl/queryinterface) para obtener esta interfaz de una interfaz de `IDebugProgram2` .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Use [QueryInterface](/cpp/atl/queryinterface) para obtener esta interfaz desde un `IDebugProgram2` interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugEngineProgram2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugEngineProgram2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Detiene todos los subprocesos ejecutándose en este programa.|  
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Observe que la ejecución \(o detención que observa para la ejecución\) aparezcan en el subproceso especificado.|  
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite o deniega\) la evaluación de la expresión aparece en el subproceso especificado, incluso si se detiene el programa.|  
+|[Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Detiene todos los subprocesos que se ejecutan en este programa.|  
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Supervisa la ejecución (o detener ver ejecución) que se produzca en el subproceso especificado.|  
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Permite la evaluación de expresiones que se produzca en el subproceso determinado, incluso si se detiene el programa (o no permite).|  
   
-## Comentarios  
- Visual Studio llama a esta interfaz en respuesta a un evento de [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) y establecer “reloj para el paso del subproceso” y “reloj para la evaluación de expresiones en los estados del subproceso” del programa.  Se llama[Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) siempre que el programa debe detener; este método da al programa una oportunidad de finalizar todos los subprocesos.  
+## <a name="remarks"></a>Comentarios  
+ Visual Studio llama a esta interfaz en respuesta a una [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventos y establecer los Estados "Inspección de paso de subproceso" y "Inspección para la expresión de evaluación en subproceso" del programa. [Detener](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) se llama cada vez que el programa se va a detener; este método da al programa la oportunidad de terminar todos los subprocesos.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

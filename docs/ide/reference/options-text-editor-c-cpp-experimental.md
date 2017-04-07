@@ -31,43 +31,29 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a1edc88394193474b273968d8435e8df06415044
-ms.openlocfilehash: a3fcafe5c191987668dc6e0dce8835d748742ed7
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 780c643c25f0d43ec0564e43bc50d2f36f1aee79
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
-Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++.  
+Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++. Estas características son experimentales y se pueden modificar o quitar de Visual Studio en una versión futura.  
   
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones** , en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++**y luego haga clic en **Experimental**.  
-  
- Estas características están disponibles en una instalación de Visual Studio 2015 Update 1 RC.  
+
+ Estas características están disponibles en una instalación de Visual Studio 2017.  
   
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-## <a name="browsingnavigation"></a>Exploración o navegación  
- **Habilitar nuevo motor de base de datos**  
- Esto debe acelerar automáticamente el rellenado de la base de datos y realizar todas las operaciones de base de datos más rápido (sin pérdida de precisión) para operaciones tales como **Ir a definición** y **Buscar todas las referencias**. (Para aplicar los cambios, solo cierre y vuelva a abrir la solución; no es necesario reiniciar Visual Studio).  
-  
-## <a name="intellisense"></a>IntelliSense  
- **Punto a flecha en lista de miembros**  
- Reemplaza "." por "->" si corresponde en la lista de miembros.  
-  
-## <a name="refactoring"></a>Refactorización  
- **Habilitar Extraer función**  
- Permite extraer el código seleccionado a su propia función y reemplazar el código por una llamada a la nueva función. Para obtener acceso a esta característica, haga clic con el botón derecho en el código seleccionado y seleccione **Acciones rápidas**o simplemente presione el método abreviado de teclado predeterminado Ctrl+punto [Ctrl+.].  
-  
- **Habilitar Cambiar firma**  
- Permite agregar, cambiar el orden y eliminar parámetros de una función y propagar los cambios a todos los sitios de llamada. Para obtener acceso a esta característica, haga clic con el botón derecho en cualquier uso de la función y seleccione **Acciones rápidas**o simplemente presione el método abreviado predeterminado Ctrl+punto [Ctrl+.].  
-  
-## <a name="text-editor"></a>Editor de texto  
- **Habilitar Expandir ámbitos**  
- Si esta opción está habilitada, se puede encerrar el texto seleccionado entre llaves al escribir "{" en el editor de texto.  
-  
- **Habilitar Expandir precedencia**  
- Si esta opción está habilitada, se puede encerrar el texto seleccionado entre paréntesis al escribir "(" en el editor de texto.  
-  
- Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](http://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:  
+## <a name="enable-predictive-intellisense"></a>Habilitar Intellisense predictivo
+IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe <code>int x =</code> e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
+
+## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida
+Esta opción habilita la característica conocida como "carga de solución ligera". Cuando la carga de solución ligera está habilitada, Visual Studio no carga totalmente los proyectos hasta que son realmente necesarios. Muchas tareas comunes, como navegar por el código base, editar código y compilar proyectos, no requieren que se cargue el proyecto. Cuando esta opción está habilitada, puede empezar a realizar estas tareas comunes más rápidamente, sin tener que esperar a que se cargue el proyecto.  
+
+## <a name="additional-features-in-the-visual-studio-gallery"></a>Características adicionales de la Galería de Visual Studio
+Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](http://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:  
   
 -   **Agregar #include faltante** : sugiere las directivas #include pertinentes para símbolos desconocidos en el código  
   
@@ -82,9 +68,4 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 ## <a name="see-also"></a>Vea también  
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)   
  [Refactorización en C++ (Blog de VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

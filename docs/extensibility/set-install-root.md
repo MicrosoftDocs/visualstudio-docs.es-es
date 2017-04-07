@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4e8ceb1c988f639d0ea18b94e206ddec2d3e764c
-ms.openlocfilehash: 5c103b5f038260a17f64af56f78f0b3f37e3bb32
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 6d87c86d0a7793f661c6a3b28e95340f3a28c616
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Instalación fuera de la carpeta de extensiones
-
->**Nota:** esta documentación es preliminar y se basa en la versión de Visual Studio 2017 RC.
 
 A partir de Visual Studio de 2017 y VSIX v3 (versión 3), ahora existe compatibilidad para la instalación de los activos de extensión fuera de la carpeta de extensiones. Actualmente, se habilitan las siguientes ubicaciones como ubicaciones de instalación válida (donde [installdir] está asignada al directorio de instalación de la instancia de Visual Studio):
 

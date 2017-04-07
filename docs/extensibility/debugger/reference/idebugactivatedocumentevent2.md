@@ -1,59 +1,75 @@
 ---
-title: "IDebugActivateDocumentEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugActivateDocumentEvent2"
-helpviewer_keywords: 
-  - "Interfaz IDebugActivateDocumentEvent2"
+title: IDebugActivateDocumentEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugActivateDocumentEvent2
+helpviewer_keywords:
+- IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugActivateDocumentEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 673ead5a81cf0037d794f315ac7731e2500b8fe3
+ms.lasthandoff: 04/05/2017
 
-El motor de depuración \(DE\) utiliza esta interfaz para solicitar un documento que se va a cargar.  
+---
+# <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
+El motor de depuración (Alemania) usa esta interfaz para solicitar un documento que se va a cargar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugActivateDocumentEvent2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El OF implementa esta interfaz cuando necesita un archivo de código fuente abrir.  Esta interfaz se implementa únicamente los motores de depuración que ejecutan o es una parte de intérpretes de script.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz \(el SDM utiliza [QueryInterface](/visual-cpp/atl/queryinterface) para tener acceso a la interfaz de `IDebugEvent2` \).  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ La DE implementa esta interfaz cuando es necesario un archivo de código fuente que se abran. Esta interfaz se implementa únicamente por los motores de depuración que funcionan con o que forman parte de los intérpretes de secuencias de comandos. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz (usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz).  
   
-## Notas para los llamadores  
- El OF crea y envía este objeto event cuando necesita tener un archivo de código fuente abierto.  El evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El DIS crean y envía este objeto de evento cuando debe tener un archivo de origen abierto. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugActivateDocumentEvent2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugActivateDocumentEvent2`.  
   
 |Métodos|Descripción|  
 |-------------|-----------------|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Obtiene el documento para activar.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Obtiene el documento que se va a activar.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Obtiene el contexto del documento que describe la posición dentro del documento.|  
   
-## Comentarios  
- Un escenario típico donde se utiliza esta interfaz es si se produce un error de análisis en script en una página HTML, el script OF envía esta interfaz al SDM para poder mostrar el documento con el error de análisis.  
+## <a name="remarks"></a>Comentarios  
+ Un escenario típico en el que se usa esta interfaz es que si se produce un error de análisis de código de script en una página HTML, la secuencia de comandos DE envía esta interfaz a la SDM, por lo que se puede mostrar el documento con el error de análisis.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

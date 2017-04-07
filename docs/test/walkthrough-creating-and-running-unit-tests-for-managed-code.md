@@ -16,7 +16,7 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 83
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -72,7 +72,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   
 -   El proyecto del banco. Consulte [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="a-namebkmkpreparethewalkthrougha-prepare-the-walkthrough"></a><a name="BKMK_Prepare_the_walkthrough"></a> Preparar el tutorial  
+##  <a name="BKMK_Prepare_the_walkthrough"></a> Preparar el tutorial  
   
 1.  Abra Visual Studio.  
   
@@ -123,7 +123,7 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="a-namebkmkcreateaunittestprojecta-create-a-unit-test-project"></a><a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria  
+##  <a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria  
  **Requisito previo**: siga los pasos del procedimiento [Preparar el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria  
@@ -144,7 +144,7 @@ public void Debit(double amount)
   
 6.  En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .  
   
-##  <a name="a-namebkmkcreatethetestclassa-create-the-test-class"></a><a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba  
+##  <a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba  
  Se necesita una clase de prueba para comprobar la clase `BankAccount` . Se puede utilizar UnitTest1.cs, generado por la plantilla de proyecto, pero se debe asignar al archivo y a la clase nombres más descriptivos. Podemos hacer esto en un solo paso cambiando el nombre del archivo en el Explorador de soluciones.  
   
  **Cambiar el nombre de un archivo de clase**  
@@ -179,7 +179,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="a-namebkmktestclassrequirementsa-test-class-requirements"></a><a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba  
+###  <a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba  
  Los requisitos mínimos para una clase de prueba son los siguientes:  
   
 -   El atributo `[TestClass]` se requiere en el marco de pruebas unitarias para código administrado de Microsoft para cualquier clase que contenga métodos de prueba unitaria que desee ejecutar en el Explorador de pruebas.  
@@ -188,7 +188,7 @@ using BankAccountNS;
   
  Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]` . Puede utilizar estos otros métodos y clases en sus métodos de prueba.  
   
-##  <a name="a-namebkmkcreatethefirsttestmethoda-create-the-first-test-method"></a><a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba  
+##  <a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba  
  En este procedimiento, se escribirán métodos de prueba unitaria para comprobar el comportamiento del método `Debit` de la clase `BankAccount` . El método se muestra más arriba.  
   
  Al analizar el método en pruebas, se determina que hay al menos tres comportamientos que deben comprobarse:  
@@ -229,7 +229,7 @@ using BankAccountNS;
   
  El método es bastante sencillo. Se configura un nuevo objeto `BankAccount` con un saldo inicial y después se retira una cantidad válida. Se utiliza el marco de pruebas unitarias de Microsoft para el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> de código administrado, para comprobar que el saldo de cierre es el esperado.  
   
-###  <a name="a-namebkmktestmethodrequirementsa-test-method-requirements"></a><a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba  
+###  <a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba  
  Un método de prueba debe cumplir los siguientes requisitos:  
   
 -   El método se debe señalar con el atributo `[TestMethod]` .  
@@ -238,7 +238,7 @@ using BankAccountNS;
   
 -   El método no puede tener parámetros.  
   
-##  <a name="a-namebkmkbuildandrunthetesta-build-and-run-the-test"></a><a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba  
+##  <a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba  
   
 #### <a name="to-build-and-run-the-test"></a>Para compilar y ejecutar la prueba  
   
@@ -250,10 +250,10 @@ using BankAccountNS;
   
 3.  En este caso, la prueba no se completa correctamente. El método de prueba se mueve al grupo **Pruebas no superadas** . Seleccione el método en el Explorador de pruebas para ver los detalles en la parte inferior de la ventana.  
   
-##  <a name="a-namebkmkfixyourcodeandrerunyourtestsa-fix-your-code-and-rerun-your-tests"></a><a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corregir el código y volver a ejecutar las pruebas  
+##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corregir el código y volver a ejecutar las pruebas  
  **Analizar los resultados de pruebas**  
   
- El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*XXX*>**) y lo que se recibió realmente (el parámetro **Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
+ El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*XXX*>**) y lo que se recibió realmente (el parámetro**Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
   
  Un nuevo examen del código Debit muestra que la prueba unitaria ha logrado encontrar un error. La cantidad retirada se agrega al saldo de cuenta en lugar de ser restarse.  
   
@@ -275,7 +275,7 @@ m_balance -= amount;
   
  En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde y la prueba se mueve al grupo de **Pruebas superadas** .  
   
-##  <a name="a-namebkmkuseunitteststoimproveyourcodea-use-unit-tests-to-improve-your-code"></a><a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilizar pruebas unitarias para mejorar el código  
+##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilizar pruebas unitarias para mejorar el código  
  En esta sección se describe cómo un proceso iterativo de análisis, el desarrollo de pruebas unitarias y la refactorización pueden servirle de ayuda para que el código de producción sea más compacto y eficaz.  
   
  **Analizar los problemas**  
@@ -434,3 +434,4 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  En esta sección final, el trabajo que se hizo al mejorar el código de prueba condujo a métodos de prueba más eficaces e informativos. Pero, lo que es más importante, el análisis adicional también condujo a mejoras en el código del proyecto en pruebas.
+

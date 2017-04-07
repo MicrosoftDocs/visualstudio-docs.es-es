@@ -1,52 +1,68 @@
 ---
-title: "IDebugEntryPointEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEntryPointEvent2"
-helpviewer_keywords: 
-  - "Interfaz IDebugEntryPointEvent2"
+title: IDebugEntryPointEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEntryPointEvent2
+helpviewer_keywords:
+- IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugEntryPointEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 194db40a0f73d998d5bf944fde42f09cd7f97b7d
+ms.lasthandoff: 04/05/2017
 
-El motor de depuración \(DE\) envía esta interfaz al administrador \(SDM\) de depuración de la sesión cuando el programa es de ejecutar la primera instrucción del código de usuario.  
+---
+# <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
+El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) cuando el programa se va a ejecutar la primera instrucción de código de usuario.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugEntryPointEvent2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El OF implementa esta interfaz como parte de las operaciones normales.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz.  El SDM utiliza [QueryInterface](/visual-cpp/atl/queryinterface) para tener acceso a la interfaz de `IDebugEvent2` .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ La DE implementa esta interfaz como parte de sus operaciones normales. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz. Usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.  
   
-## Notas para los llamadores  
- El OF crea y envía este objeto event cuando el programa que se depura ha cargado y está listo para ejecutar la primera instrucción del código de usuario.  El evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El DIS crean y envía este objeto event cuando el programa que se está depurando se ha cargado y esté listo para ejecutar la primera instrucción de código de usuario. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## Comentarios  
- Se envía[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) cuando el programa es de ejecutar la primera instrucción.  Por ejemplo, se envía `IDebugEntryPoint2` cuando el programa va a ejecutar la función de `main` de usuario.  
+## <a name="remarks"></a>Comentarios  
+ [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) se envía cuando el programa está a punto de ejecutar la primera instrucción. Por ejemplo, `IDebugEntryPoint2` se envía cuando el programa está a punto de ejecutar el usuario `main` función.  
   
- Cuando el OF envía `IDebugEntryPointEvent2`, la posición actual de código debe estar en la primera instrucción del código de usuario, como `main`.  
+ Cuando se envía el Alemania `IDebugEntryPointEvent2`, debe ser la actual posición de código en la primera instrucción del código de usuario, como `main`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)

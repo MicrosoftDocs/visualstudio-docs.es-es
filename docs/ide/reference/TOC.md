@@ -153,7 +153,7 @@
 ## [Alternar puntos de interrupción (comando)](toggle-breakpoint-command.md)
 ## [Inspección (Comando)](watch-command.md)
 # [Herramientas XML en Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
-# [MSBuild](../../msbuild/msbuild1.md)
+# [MSBuild](../../msbuild/msbuild.md)
 # [Accesibilidad para personas con discapacidades](accessibility-for-people-with-disabilities.md)
 ## [Características de accesibilidad de Visual Studio](accessibility-features-of-visual-studio.md)
 ### [Cómo: Establecer opciones de accesibilidad de IDE](how-to-set-ide-accessibility-options.md)

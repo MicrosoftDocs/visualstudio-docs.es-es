@@ -1,7 +1,7 @@
 ---
-title: "Crear opciones de configuración del editor personalizadas y portátiles | Microsoft Docs"
+title: "Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig | Microsoft Docs"
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,11 +33,12 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
+ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
+ms.openlocfilehash: f377ada139d9c0e8b01b640cf603cf349dc1c3c3
+ms.lasthandoff: 03/27/2017
 
 ---
-# <a name="create-portable-custom-editor-settings"></a>Crear opciones de configuración del editor personalizadas y portátiles
+# <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 Las opciones de configuración del editor de texto en Visual Studio se aplican a todos los proyectos de un tipo determinado. Por ejemplo, si cambia una opción de configuración del editor de texto de C#, esa opción se aplica a *todos* los proyectos de C# en Visual Studio. En cambio, en algunos casos, puede que necesite usar convenciones que difieran de sus propias preferencias personales del editor. Los archivos [EditorConfig](http://editorconfig.org/) le permiten realizar esto proporcionando opciones comunes de editor de texto por proyecto. Las opciones de configuración EditorConfig, que se incluyen en un archivo .editorconfig que se ha agregado a su código base, sustituyen las opciones globales del editor de texto de Visual Studio. Esto significa que puede adaptar cada código base para que use las opciones del editor de texto que prefiera. No se necesita ningún complemento para usar esta función en Visual Studio.
 
 ## <a name="coding-consistency"></a>Coherencia del código
@@ -86,8 +87,17 @@ Ahora, cuando presiona la tecla TAB, obtiene caracteres de tabulación en lugar 
 > [!NOTE]
 >  Agregar un archivo .editorconfig en su proyecto o código base no convertirá los estilos existentes en los nuevos, solo se aplicará a las líneas que se agreguen a partir de ese momento. Si quita un archivo .editorconfig de su proyecto o código base, debe volver a cargar los archivos de código para que la configuración del editor vuelva a la configuración global. Cualquier error en los archivos .editorconfig se notifica en la ventana de error de Visual Studio.
 
+## <a name="support-editorconfig-for-your-language-service"></a>Compatibilidad de EditorConfig con el servicio de lenguaje
 
+En la mayoría de los casos, cuando se implementa un servicio de lenguaje de Visual Studio, no es necesario llevar a cabo ninguna tarea adicional para admitir las propiedades universales de EditorConfig. El editor principal detecta automáticamente y lee el archivo .editorconfig cuando los usuarios abren archivos, y establece el búfer de texto y las opciones de visualización adecuados. A pesar de ello, algunos servicios de lenguaje optan por usar una opción de visualización de texto contextual adecuada en vez de usar la configuración global para elementos como tabulaciones y espacios cuando un usuario edita un texto o le da formato. En estos casos, el servicio de lenguaje debe actualizarse para que admita archivos EditorConfig.
 
-<!--HONumber=Feb17_HO4-->
+En la tabla siguiente se enumeran los cambios necesarios para actualizar un servicio de lenguaje de modo que admita archivos EditorConfig.
 
+| Opción global en desuso específica del lenguaje | Opción contextual que la reemplaza |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) o !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) o textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize o Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) o textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
 
+# <a name="see-also"></a>Vea también
+[Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig](create-portable-custom-editor-options.md)

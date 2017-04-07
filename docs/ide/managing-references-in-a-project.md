@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b82b8583ec54af9eee383255d20b40674e7c2c1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 8c478c49ee429e0c5d96dc60f035fcb460b902c8
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
@@ -72,7 +72,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ### <a name="project-references"></a>Referencias del proyecto  
  Los proyectos de la Plataforma universal de Windows (UWP) que tienen como destino Windows 10 pueden crear referencias a otros proyectos UWP de la solución, o a los archivos binarios o los proyectos de la Tienda Windows que tengan como destino [!INCLUDE[win81](../debugger/includes/win81_md.md)], siempre que estos proyectos no usen las API que han quedado obsoletas en Windows 10. Para más información, vea [Migración Windows Runtime 8 a UWP](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx).  
 
- Si decide redirigir los proyectos de [!INCLUDE[win81](../debugger/includes/win81_md.md)] a Windows 10, consulte [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
+ Si decide redirigir los proyectos de [!INCLUDE[win81](../debugger/includes/win81_md.md)] a Windows 10, consulte [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
 
 ### <a name="extension-sdk-references"></a>Referencias del SDK de extensión  
  Los proyectos de la Tienda Windows en Visual Basic, C#, C++ y JavaScript que tienen como destino la Plataforma universal de Windows (UWP) pueden hacer referencia a los SDK de extensiones que tienen como destino [!INCLUDE[win81](../debugger/includes/win81_md.md)], siempre que estos SDK de extensiones no usen las API que han quedado obsoletas en Windows 10. Consulte el sitio del proveedor del SDK de extensión para determinar si se puede hacer referencia a él en proyectos de la Tienda Windows que tengan como destino UWP.  
@@ -124,7 +124,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 ## <a name="project-to-project-references"></a>Referencias entre proyectos  
  Las referencias entre proyectos son referencias a proyectos que contienen ensamblados. Puede crearlas en la pestaña **Proyecto** . Visual Studio puede encontrar un ensamblado cuando se le proporciona una ruta de acceso al proyecto.  
 
- Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá un mensaje como "Advertencia: la dependencia 'archivo' del proyecto 'proyecto' no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia 'archivo'". Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
 
 > [!NOTE]
 >  Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.  

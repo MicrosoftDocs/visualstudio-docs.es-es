@@ -1,6 +1,6 @@
 ---
-title: Uso de red | Microsoft Docs
-ms.custom: 
+title: "Análisis del uso de la red en aplicaciones UWP en Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4eb45e8e0548ead5d99c441abcfa7baf3ffde4f
-ms.openlocfilehash: 1e345367473f72c0b83c3bc7e4ede393c1bc56ec
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 60d05761993a4bd7547d83274e103de1b5c30b34
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="network-usage"></a>Uso de red
+# <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
   
  La herramienta de red admite solo las aplicaciones de plataforma universal de Windows. En este momento no se admiten otras plataformas.  

@@ -1,7 +1,7 @@
 ---
-title: "Guía para principiantes para el muestreo de la CPU | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
+title: "Guía básica para el muestreo de la CPU en Visual Studio | Microsoft Docs"
+ms.custom: H1Hack27Feb2017
+ms.date: 03/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
-ms.openlocfilehash: 072783e138fcc20d80ccbe8ec8b66905778cf67d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
@@ -54,7 +54,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
 > [!TIP]
 >  Si se generan perfiles de código que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="a-namestep1a-create-and-run-a-performance-session"></a><a name="Step1"></a> Crear y ejecutar una sesión de rendimiento  
+##  <a name="Step1"></a> Crear y ejecutar una sesión de rendimiento  
  Para obtener los datos que necesita analizar, debe crear una sesión de rendimiento y luego ejecutar la sesión. El **Asistente de rendimiento** le permite hacer ambas cosas.  
   
  Si no está generando perfiles para una aplicación de escritorio de Windows o una aplicación ASP.NET, debe utilizar una de las otras herramientas de generación de perfiles. Consulte [Herramientas de generación de perfiles](../profiling/profiling-tools.md).  
@@ -66,7 +66,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
     > [!IMPORTANT]
     >  Si no es administrador en el equipo que está usando, debería ejecutar Visual Studio como administrador mientras usa el generador de perfiles. (Haga clic con el botón secundario en el icono de la aplicación de Visual Studio y luego haga clic en **Ejecutar como administrador**.  
   
-2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento**.  
+2.  En el menú **Depurar**, seleccione **Generador de perfiles** y, a continuación, seleccione **Performance Profiler** (Generador de perfiles de rendimiento).  
   
 3.  Marque la opción **Asistente de rendimiento** y haga clic en **Iniciar**.  
   
@@ -80,7 +80,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
      Cuando termine de ejecutar la aplicación, la vista **Resumen** de los datos de generación de perfiles aparece en la ventana principal de Visual Studio y se muestra un icono para la nueva sesión en la ventana **Explorador de rendimiento**.  
   
-##  <a name="a-namestep2a-step-2-analyze-sampling-data"></a><a name="Step2"></a> Paso 2: Analizar los datos de muestreo  
+##  <a name="Step2"></a> Paso 2: Analizar los datos de muestreo  
  Cuando termine de ejecutar una sesión de rendimiento, la vista **Resumen** del informe de generación de perfiles se muestra en la ventana principal de Visual Studio.  
   
  Se recomienda empezar a analizar los datos examinando la **ruta de acceso activa** y, después, la lista de funciones que realizan la mayor parte del trabajo. Para acabar, céntrese en otras funciones mediante la **escala de tiempo de resumen**. También puede ver sugerencias y advertencias sobre la generación de perfiles en la ventana **Lista de errores**.  
@@ -125,7 +125,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
     -   Para ver información detallada sobre la advertencia, haga clic con el botón secundario en el error y, luego, haga clic en **Ayuda para Mostrar mensaje**  
   
-##  <a name="a-namestep3a-step-3-revise-code-and-rerun-a-session"></a><a name="Step3"></a> Paso 3: Revise el código y vuelva a ejecutar una sesión  
+##  <a name="Step3"></a> Paso 3: Revise el código y vuelva a ejecutar una sesión  
  Después de encontrar y optimizar una o más funciones, puede repetir la ejecución de generación de perfiles y comparar los datos para ver qué diferencia han supuesto los cambios para el rendimiento de la aplicación.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Revisar el código y volver a ejecutar el generador de perfiles  

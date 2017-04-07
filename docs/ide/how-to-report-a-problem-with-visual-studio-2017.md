@@ -1,7 +1,7 @@
 ---
 title: "Cómo notificar un problema con Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 2016-10-05
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,11 +13,12 @@ ms.author: tglee
 manager: ghogen
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: b81a082de053b11e8dbe05317f69d4bcb603f4de
-ms.openlocfilehash: 5aac18786f3952648eeea4e7d0258a5e59c497c2
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 2220a1c2def8fd831f3adba1f3b02e03efe47fe9
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="how-to-report-a-problem-with-visual-studio-2017-rc"></a>Cómo notificar un problema con Visual Studio 2017 RC
+# <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Notificación de un problema con Visual Studio 2017
 Si se produce un problema con Visual Studio, queremos saberlo para poder diagnosticarlo y corregirlo.  La herramienta **Notificar un problema** le permite recopilar información detallada sobre el problema y enviarla a Microsoft con unos pocos clics de botón.  
 
  Microsoft respeta su privacidad. Para obtener información sobre cómo se tratan los datos que nos envía, vea la [Declaración de privacidad de la familia de productos de Microsoft Visual Studio](https://www.visualstudio.com/en-us/dn948229).  
@@ -27,13 +28,22 @@ Si se produce un problema con Visual Studio, queremos saberlo para poder diagnos
 
  ![Elemento de menú Notificar un problema](../ide/media/report-a-problem-menu-item.png "Elemento de menú Notificar un problema")  
 
+## <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
+ Si aún no lo ha hecho, deberá iniciar sesión Visual Studio a fin de notificar un problema. De este modo, no solo podrá notificar un problema que esté experimentando, sino que también podrá votar o comentar cualquier otro problema que vea publicado.
+
+  1. Haga clic en **Iniciar sesión** en la parte izquierda de la herramienta, como se muestra en la siguiente captura de pantalla.
+  2. Siga las instrucciones en pantalla para iniciar sesión.
+
+  ![Iniciar sesión para notificar un problema](../ide/media/vs2017-report-a-problem-sign-in.png "Iniciar sesión para notificar un problema")
+
+
 ## <a name="search-and-vote-for-similar-problems"></a>Buscar y votar problemas similares  
 ###  <a name="search_and_vote"></a>  
 
 1.  Busque el problema y vea si otros usuarios ya lo han notificado.
 2.  Si alguien lo ha notificado, "vótelo" para indicárnoslo.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/feedbacktool-searchforsimilarreportedproblems.png "Buscar y votar problemas similares")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Buscar y votar problemas similares")
 
 
 ## <a name="report-a-new-problem"></a>Notificar un problema nuevo
@@ -68,9 +78,4 @@ Los archivos de volcado de seguimiento y montón son muy útiles para ayudarnos 
 
 ## <a name="see-also"></a>Vea también  
  [Hable con nosotros](../ide/talk-to-us.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

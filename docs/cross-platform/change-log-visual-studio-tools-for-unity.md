@@ -29,13 +29,18 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 28eaaaff0c69ab9588a9d1351aee595abf957e2e
-ms.openlocfilehash: d8c8a0908e7ddd630cfac7b879fae0521acd6944
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
+ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
 Registro de cambios de Visual Studio Tools para Unity.  
+
+## <a name="3001"></a>3.0.0.1
+ Publicado el 07-03-2017
+
+### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Esta versión incluye todas las nuevas características y correcciones de errores que se introdujeron en la serie 2.8.x.
 
 ## <a name="282-30-preview-3"></a>2.8.2 (3.0 versión preliminar 3)
  Lanzamiento 25-01-2017

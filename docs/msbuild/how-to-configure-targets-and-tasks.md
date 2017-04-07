@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: ac979e7287046164db37848778f648656f7230a6
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
+ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
+ms.lasthandoff: 03/28/2017
 
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
@@ -113,17 +113,18 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
       <SimpleTask MSBuildRuntime="$(FrameworkVerion)" MSBuildArchitecture= "x86"/>  
    </Target>  
 </Project>  
-```xml  
+```  
   
- Unlike other task parameters, `MSBuildRuntime` and `MSBuildArchitecture` are not apparent to the task itself.  To write a task that is aware of the context in which it runs, you must either test the context by calling the .NET Framework, or use build properties to pass the context information through other task parameters.  
-  
-> [!NOTE]
->  `UsingTask` attributes can be set from toolset and environment properties.  
-  
- The `MSBuildRuntime` and `MSBuildArchitecture` parameters provide the most flexible way to set the target context, but also the most limited in scope.  On the one hand, because they are set on the task instance itself and are not evaluated until the task is about to run, they can derive their value from the full scope of properties available at both evaluation-time and build-time.  On the other hand, these parameters only apply to a particular instance of a task in a particular target.  
+ A diferencia de otros parámetros de tarea, `MSBuildRuntime` y `MSBuildArchitecture` no son evidentes para la propia tarea.  Para escribir una tarea que tenga en cuenta el contexto en el que se ejecuta, debe probar el contexto mediante una llamada a .NET Framework o bien debe usar propiedades de compilación para pasar información de contexto a través de otros parámetros de tarea.  
   
 > [!NOTE]
->  Task parameters are evaluated in the context of the parent node, not in the context of the task host.Environment variables that are runtime- or architecture- dependent (such as the Program files location) will evaluate to the value that matches the parent node.  However, if the same environment variable is read directly by the task, it will correctly be evaluated in the context of the task host.  
+> Es posible establecer atributos  `UsingTask` desde las propiedades del conjunto de herramientas y del entorno.  
   
-## See Also  
- [Configuring Targets and Tasks](../msbuild/configuring-targets-and-tasks.md)
+ Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera más flexible de establecer el contexto de destino, pero también la manera más limitada en cuanto al ámbito.  Por un lado, dado que se establecen en la propia instancia de tarea y no se evalúan hasta que la tarea está a punto de ejecutarse, pueden derivar su valor del ámbito completo de propiedades disponibles en tiempo de evaluación y tiempo de compilación.  Por otro lado, estos parámetros solo se aplican a una instancia determinada de una tarea en un destino determinado.  
+  
+> [!NOTE]
+>  Los parámetros de tarea se evalúan en el contexto del nodo primario, no en el contexto del host de la tarea. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación de Archivos de programa) se evaluarán como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
+  
+## <a name="see-also"></a>Vea también  
+ [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
+

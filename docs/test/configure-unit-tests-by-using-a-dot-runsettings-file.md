@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 25
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -59,7 +59,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
   
  ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="a-nameexamplea-copy-this-example-runsettings-file"></a><a name="example"></a> Copiar este archivo de ejemplo .runsettings  
+##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
  A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
   
 ```xml  
@@ -181,3 +181,4 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 ## <a name="see-also"></a>Vea también  
  [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)   
  [Especificar la configuración de pruebas para las pruebas en Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+

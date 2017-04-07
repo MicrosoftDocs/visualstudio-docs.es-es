@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: d014b703c491603c86fcd6a89c1dc17f35b0deae
-ms.openlocfilehash: 99850b840fbda9f7e7674d926822ff461e69da17
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 79d77230e46bade8e89d4503dbf95b1f1831e464
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="msbuild"></a>MSBuild
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/22/2017
   
  Visual Studio utiliza MSBuild para cargar y compilar proyectos administrados. Los archivos de proyecto de Visual Studio (.csproj, .vbproj, vcxproj, etc.) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Los proyectos de Visual Studio importan todos los valores y procesos de compilación necesarios para realizar el trabajo de desarrollo típico, pero se pueden extender o modificar dentro de Visual Studio o mediante un editor XML.  
   
- Para obtener información sobre MSBuild para C++, consulte [MSBuild (Visual C++)](/visual-cpp/build/msbuild-visual-cpp).  
+ Para obtener información sobre MSBuild para C++, consulte [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).  
   
  En los ejemplos siguientes se muestra cuándo pueden ejecutarse las compilaciones mediante una línea de comandos de MSBuild en lugar de usar el IDE de Visual Studio.  
   

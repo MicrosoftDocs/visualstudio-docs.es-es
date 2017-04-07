@@ -4,9 +4,9 @@ hide_bc: true
 title: "Documentación de Visual Studio"
 description: "Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas."
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 2a782993b8e2787c99c384c6df9c72316fe11521
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: 5a8448dff45473fa40892fb07604759a9d015021
+ms.lasthandoff: 03/31/2017
 
 ---
 <div id="main" class="v2">
@@ -287,7 +287,7 @@ ms.lasthandoff: 03/07/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Desarrollo móvil para .NET</h3>
+                                                    <h3>Desarrollo móvil con .NET</h3>
                                                     <p>Cree aplicaciones multiplataforma para iOS, Android y Windows con Xamarin.</p>
                                                 </div>
                                             </div>
@@ -570,8 +570,26 @@ ms.lasthandoff: 03/07/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Ampliar</h3>
-                                                    <p>Agregue características propias al IDE de Visual Studio para mejorar la experiencia de desarrollo.
-                                                    </p>
+                                                    <p>Agregue características propias al IDE de Visual Studio para mejorar la experiencia de desarrollo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/visualstudio/data-tools/accessing-data-in-visual-studio">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/vs_features-9.svg" src="./images/vs_features-9.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Datos</h3>
+                                                    <p>Cree aplicaciones que se conecten a los datos de prácticamente cualquier producto o servicio de base de datos, en cualquier formato y en cualquier lugar: máquinas locales, redes de área local o nubes públicas, privadas o híbridas.</p>
                                                 </div>
                                             </div>
                                         </div>

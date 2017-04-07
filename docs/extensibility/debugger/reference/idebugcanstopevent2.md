@@ -1,62 +1,78 @@
 ---
-title: "IDebugCanStopEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2"
-helpviewer_keywords: 
-  - "Interfaz IDebugBreakpointRequest2"
+title: IDebugCanStopEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCanStopEvent2
+helpviewer_keywords:
+- IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugCanStopEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 00cfe8409762119c15cbe188b1a20b7a6466ea4a
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz se utiliza para preguntar al administrador \(SDM\) de depuración de la sesión si detener en la ubicación actual del código.  
+---
+# <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
+Esta interfaz se usa para solicitar al administrador de sesión de depuración (SDM) si se detiene en la ubicación actual del código.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugCanStopEvent2 : IUknown  
 ```  
   
-## Notas para los implementadores  
- El motor de depuración \(DE\) implementa esta interfaz para admitir el recorrido por código fuente.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz \(el SDM utiliza [QueryInterface](/visual-cpp/atl/queryinterface) para tener acceso a la interfaz de `IDebugEvent2` \).  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El motor de depuración (Alemania) implementa esta interfaz para admitir la ejecución paso a paso por el código fuente. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz (usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz).  
   
- La implementación de esta interfaz debe comunicar la llamada de SDM de [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) al motor de depuración.  Por ejemplo, esto se puede hacer con un mensaje enviado al subproceso del control de mensajes del motor de depuración o el objeto que implementa esta interfaz puede contener una referencia al motor y llamar de depuración de nuevo con el motor de depuración con el marcador pasado en `IDebugCanStopEvent2::CanStop`.  
+ La implementación de esta interfaz debe comunicar llamada de SDM de [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para el motor de depuración. Por ejemplo, esto puede hacerse con un mensaje que se publican en el subproceso de control de mensajes del motor de depuración o podría mantener una referencia al motor de depuración y se devuelva la llamada al motor de depuración con el indicador que se pasan en el objeto que implementa esta interfaz `IDebugCanStopEvent2::CanStop`.  
   
-## Notas para los llamadores  
- El OF puede enviar este método cada vez que el OF está ordenada para continuar la ejecución y el OF está recorriendo el código.  Este evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Puede enviar la DE este método cada vez que se solicita el Alemania para continuar la ejecución y la DE está recorriendo el código. Este evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugCanStopEvent2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugCanStopEvent2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|Obtiene el motivo de este evento.|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Especifica si el programa que se depura debe detener en la ubicación de este evento \(y enviar un evento que describe el motivo de detener\) o simplemente continuar la ejecución.|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|Especifica si el programa que se está depurando debe detenerse en la ubicación de este evento (y enviar un evento que describe la razón de detención) o simplemente continuar la ejecución.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Obtiene el contexto del documento que describe la ubicación de este evento.|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Obtiene el contexto del código que describe la ubicación de este evento.|  
   
-## Comentarios  
- El OF envía esta interfaz si el usuario en una función y el OF no se encuentra ninguna información de depuración allí o existe información de depuración pero el OF no sabe si el origen se puede mostrar en esa ubicación.  
+## <a name="remarks"></a>Comentarios  
+ La DE envía esta interfaz si no encuentra que los pasos de usuario en una función y la DE ninguna información de depuración no existe o existe información de depuración pero la DE no sabe si el código fuente se puede mostrar para esa ubicación.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,5 +1,5 @@
 ---
-title: "Novedades de las herramientas de generación de perfiles | Microsoft Docs"
+title: "Novedades de la generación de perfiles | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 1dae0fddd8f3608089b67f571e152ed5a0f56c61
-ms.openlocfilehash: 888c5c996df6558fc4c409704ad003f9c25a733b
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
+ms.openlocfilehash: f93c61e084378cd702ea8f190e1661c03bbc9c51
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades de las herramientas de generación de perfiles en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]

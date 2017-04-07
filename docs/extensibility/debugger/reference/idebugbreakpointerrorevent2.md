@@ -1,60 +1,76 @@
 ---
-title: "IDebugBreakpointErrorEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointErrorEvent2"
-helpviewer_keywords: 
-  - "IDebugBreakpointErrorEvent2"
+title: IDebugBreakpointErrorEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBreakpointErrorEvent2
+helpviewer_keywords:
+- IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugBreakpointErrorEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 94ab4dfbe72d28f52767c6dde259483d6905e401
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz indica al administrador de depuración de la sesión \(SDM\) que un punto de interrupción pendiente no se puede enlazar a un programa carga, debido a una advertencia o un error.  
+---
+# <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
+Esta interfaz indica que el Administrador de sesión de depuración (SDM) que un punto de interrupción pendiente no se pudo enlazar a un programa cargado, ya sea debido a una advertencia o un error.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugBreakpointErrorEvent2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El OF implementa esta interfaz como parte de su compatibilidad para los puntos de interrupción.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz \(el SDM utiliza [QueryInterface](/visual-cpp/atl/queryinterface) para tener acceso a la interfaz de `IDebugEvent2` \).  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ La DE implementa esta interfaz como parte de su compatibilidad con los puntos de interrupción. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz (usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz).  
   
-## Notas para los llamadores  
- El OF crea y envía este objeto event cuando un punto de interrupción pendiente no se puede enlazar al programa que se depura.  El evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El DIS crean y envía este objeto de evento cuando no se puede enlazar a un punto de interrupción pendiente al programa que se está depurando. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugBreakpointErrorEvent2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugBreakpointErrorEvent2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtiene la interfaz de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) que describe la advertencia o error.|  
+|[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Obtiene el [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaz que describe la advertencia o error.|  
   
-## Comentarios  
- Siempre que se enlaza un punto de interrupción, un evento se envía al SDM.  Si el punto de interrupción no puede estar enlazado, se envía `IDebugBreakpointErrorEvent2` ; si no, se envía [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .  
+## <a name="remarks"></a>Comentarios  
+ Cada vez que se enlaza a un punto de interrupción, se envía un evento para el SDM. Si no se puede enlazar el punto de interrupción, un `IDebugBreakpointErrorEvent2` se envían; de lo contrario, un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) se envía.  
   
- Por ejemplo, cuando la condición asociada al punto de interrupción pendiente no puede analizar o para evaluar, se envía una advertencia que el punto de interrupción pendiente no se puede enlazar en este momento.  Esto puede ocurrir si el código para el punto de interrupción no ha cargado todavía.  
+ Por ejemplo, cuando no se puede analizar o evaluar la condición asociada con el punto de interrupción pendiente, se envía una advertencia que no se puede enlazar el punto de interrupción pendiente en este momento. Esto puede ocurrir si el código para el punto de interrupción no ha cargado todavía.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
