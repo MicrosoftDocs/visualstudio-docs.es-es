@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
-ms.openlocfilehash: 06ed56b985123bf0af56377d271d5d33f6c37d0e
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 75653527b2724658af33b3046cd077858c8a7d1b
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -58,21 +58,22 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Name | Tipo de dependencia
---- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | Obligatorio
+Id. de componente | Nombre | Versión | Tipo de dependencia
+--- | --- | --- | ---
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | 15.0.26208.0 | Obligatorio
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | Name
---- | ---
-no disponible | no disponible
+Id. de componente | Nombre | Versión
+--- | --- | ---
+no disponible | no disponible | no disponible
 
 ## <a name="see-also"></a>Vea también
 
 * [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
 * [Crear una instalación sin conexión de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 
