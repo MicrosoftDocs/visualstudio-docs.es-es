@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -105,7 +105,7 @@ Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el
 
 ### <a name="inspecting-and-modifying-values"></a>Inspección y modificación de valores
 
-Cuando el depurador se detiene, puede inspeccionar y modificar los valores de variables. También puede utilizar la ventana Inspección para supervisar las variables individuales y las expresiones personalizadas. Vea [Inspect Variables](../debugger/getting-started-with-the-debugger.md#BKMK_Inspect_Variables) (Inspección de variables) para obtener información general.
+Cuando el depurador se detiene, puede inspeccionar y modificar los valores de variables. También puede utilizar la ventana Inspección para supervisar las variables individuales y las expresiones personalizadas. Vea [Inspect Variables](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) (Inspección de variables) para obtener información general.
 
 Para ver un valor con Información sobre datos, solo tiene que mover el puntero sobre cualquier variable en el editor. Puede hacer clic en el valor para cambiarlo:
 

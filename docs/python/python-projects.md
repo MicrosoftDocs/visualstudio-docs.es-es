@@ -1,7 +1,7 @@
 ---
 title: Proyectos de Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: fb8cb89d6d369a3e8460c2bcf1e65e88ba44b104
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: eb3abd0f37e52f2b1db3793a5471b74a5e0c37ff
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -47,7 +47,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 En este tema:
 
-- [Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos](#adding-file-assigning-a-startup-file-and-setting-environments)
+- [Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos](#adding-files-assigning-a-startup-file-and-setting-environments)
 - [Plantillas de proyecto](#project-templates)
 - [Archivos vinculados](#linked-files)
 - [Referencias](#references)
