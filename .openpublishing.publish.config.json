@@ -8,13 +8,43 @@
       "build_source_folder": "docs",
       "build_output_subfolder": "vsdocsdocs",
       "locale": "es-es",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "scripting-docs",
+      "build_source_folder": "scripting-docs",
+      "build_output_subfolder": "scripting-docs",
+      "locale": "es-es",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "mac",
+      "build_source_folder": "mac",
+      "build_output_subfolder": "mac",
+      "locale": "es-es",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
@@ -29,13 +59,14 @@
       "branch_mapping": {}
     },
     {
-       "path_to_root": "_repo.en-us",
-       "url": "https://github.com/Microsoft/vsdocs",
-       "branch": "master",
-       "branch_mapping": {
-         "master": "master",
-         "live": "live"
-       }
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/Microsoft/vsdocs",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
-  ]
+  ],
+  "need_generate_pdf_url_template": false
 }
