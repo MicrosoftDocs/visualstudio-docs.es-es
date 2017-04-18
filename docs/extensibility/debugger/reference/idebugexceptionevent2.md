@@ -1,61 +1,77 @@
 ---
-title: "IDebugExceptionEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2"
-helpviewer_keywords: 
-  - "Interfaz IDebugExceptionEvent2"
+title: IDebugExceptionEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExceptionEvent2
+helpviewer_keywords:
+- IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugExceptionEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: c9817ca386846833ab022c5dbca3d3807bd38ef6
+ms.lasthandoff: 04/05/2017
 
-El motor de depuración \(DE\) envía esta interfaz al administrador \(SDM\) de depuración de la sesión cuando se produce una excepción en el programa que se está ejecutando actualmente.  
+---
+# <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
+El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugExceptionEvent2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El OF implementa esta interfaz para indicar que se ha producido una excepción en el programa que se depura.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz.  El SDM utiliza [QueryInterface](/visual-cpp/atl/queryinterface) para tener acceso a la interfaz de `IDebugEvent2` .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ La DE implementa esta interfaz para informes que se ha producido una excepción en el programa que se está depurando. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz. Usa el SDM [QueryInterface](/cpp/atl/queryinterface) para tener acceso a la `IDebugEvent2` interfaz.  
   
-## Notas para los llamadores  
- El OF crea y envía este objeto event para señalar una excepción.  El evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El DIS crean y envía este objeto de evento para informar de una excepción. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugExceptionEvent2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugExceptionEvent2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Recopila información detallada sobre la excepción que desencadenó este evento.|  
-|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Obtiene una descripción legible de la excepción que desencadenó este evento.|  
-|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Determina si el motor de depuración \(DE\) admite la opción de pasar esta excepción al programa que se está depurando cuando la ejecución se reanuda.|  
-|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Especifica si la excepción se debe pasar al programa que se está depurando cuando la ejecución se reanuda, o si se descarta la excepción.|  
+|[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|Obtiene información detallada sobre la excepción que se desencadenó este evento.|  
+|[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|Obtiene una descripción legible de la excepción que se desencadenó este evento.|  
+|[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|Determina si se permite o no el motor de depuración (Alemania) es compatible con la opción de pasar esta excepción al programa que se está depurando cuando se reanuda la ejecución.|  
+|[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|Especifica si la excepción se debería pasar al programa que se está depurando cuando se reanuda la ejecución, o si se debería descartar la excepción.|  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Comentarios  
- Antes de enviar el evento, las comprobaciones de para ver si este evento de excepción se ha señalado una oportunidad o una excepción de segunda oportunidad por una llamada anterior a [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md).  Si se ha señalado sea una excepción de primera oportunidad, el evento de `IDebugExceptionEvent2` se envía al SDM.  Si no, el OF da a la aplicación la oportunidad de controlar la excepción.  Si no se proporciona ningún controlador de excepciones, y si la excepción se ha designado como una excepción de segunda mano, el evento de `IDebugExceptionEvent2` se envía al SDM.  Si no, el OF reanuda la ejecución del programa, y el sistema operativo o el tiempo de ejecución controla la excepción.  
+## <a name="remarks"></a>Comentarios  
+ Antes de enviar el evento, la DE comprueba para ver si se ha designado una excepción de primera oportunidad o segunda oportunidad a este evento de excepción por una llamada anterior a [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md). Si se ha designado como una excepción de primera oportunidad, la `IDebugExceptionEvent2` evento se envía a la SDM. De lo contrario, ofrece a la DE la aplicación una oportunidad para controlar la excepción. Si no se proporciona ningún controlador de excepción, y si la excepción se ha designado como una excepción de segunda oportunidad, la `IDebugExceptionEvent2` evento se envía a la SDM. En caso contrario, la DE reanuda la ejecución del programa y el sistema operativo o en tiempo de ejecución controla la excepción.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

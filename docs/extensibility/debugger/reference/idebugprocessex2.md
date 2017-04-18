@@ -1,66 +1,82 @@
 ---
-title: "IDebugProcessEx2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2"
-helpviewer_keywords: 
-  - "Interfaz IDebugProcessEx2"
+title: IDebugProcessEx2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcessEx2
+helpviewer_keywords:
+- IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# IDebugProcessEx2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 56483c55810f75042184439be9f0d7bcfb2d6836
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz permite al administrador \(SDM\) de depuración de sesión notificar a un proceso que se está asociando a o se desasociando de proceso.  
+---
+# <a name="idebugprocessex2"></a>IDebugProcessEx2
+Esta interfaz permite a la sesión de administrador de depuración (SDM) notificar a un proceso que se adjunte a o desasociar del proceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugProcessEx2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Un proveedor de puerto implementa esta interfaz en el mismo objeto que la interfaz de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) para:  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un proveedor de puerto personalizado implementa esta interfaz en el mismo objeto que la [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) con el fin de la interfaz:  
   
--   Admiten el seguimiento de las sesiones conectadas a un proceso  
+-   Compatibilidad con seguimiento de las sesiones conectadas a un proceso  
   
--   Asociación automática admiten a través de los motores varias de depuración  
+-   Compatibilidad con la asociación automática a través de varios motores de depuración  
   
- El proveedor de puerto puede implementar esta interfaz si elige.  
+ El proveedor del puerto personalizado puede implementar esta interfaz si así lo decide.  
   
-## Notas para los llamadores  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
   
--   El SDM llama [QueryInterface](/visual-cpp/atl/queryinterface) en una interfaz de `IDebugProcess2` para obtener esta interfaz.  
+-   Las llamadas SDM [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProcess2` interfaz para obtener esta interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugProcessEx2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugProcessEx2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informa al proceso que una sesión ahora está depurando el proceso.|  
-|[Desasociar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informa al proceso que una sesión está depurando no más el proceso.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Agrega los nodos del programa para una lista de los motores de depuración.|  
+|[Asociar](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Indica que el proceso que una sesión es ahora el proceso de depuración.|  
+|[Desasociar](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Indica que el proceso que una sesión ya no está depurando el proceso.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Agrega nodos de programa para obtener una lista de motores de depuración.|  
   
-## Comentarios  
- esta interfaz es privada entre el SDM y el proceso.  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz es privada entre el SDM y el proceso.  
   
-## Requisitos  
- encabezado: Portpriv.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Portpriv.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

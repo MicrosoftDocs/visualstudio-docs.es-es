@@ -1,22 +1,40 @@
 ---
-title: "Compilar y generar en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "compilaciones [Visual Studio], acerca de cómo compilar en Visual Studio"
-  - "pasos de compilación personalizada, tipos de compilaciones"
+title: Compilar y generar en Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- builds [Visual Studio], about building in Visual Studio
+- custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
+ms.openlocfilehash: f4ae98f4e9b7dbf4b1066120316ee5a167ae78f2
+ms.lasthandoff: 04/04/2017
+
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensamblados y programas ejecutables con frecuencia durante un ciclo de desarrollo. Al compilar el código con frecuencia, se pueden identificar antes errores en tiempo de compilación como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
@@ -29,7 +47,7 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 |Método de compilación|Ventajas|Para obtener más información|  
 |------------------|--------------|--------------------------|  
 |Uso de el IDE|- Puede crear compilaciones más fácilmente y ejecutarlas de forma inmediata.<br />- Puede ejecutar compilaciones multiprocesador para proyectos de C# y C++.<br />- Puede personalizar algunos aspectos del sistema de compilación.|[Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|  
-|Ejecutar una línea de comandos de MSBuild|- Puede compilar proyectos sin instalar Visual Studio.<br />- Puede ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Puede personalizar la mayoría de las áreas del sistema de compilación.|[MSBuild](../msbuild/msbuild1.md)|  
+|Ejecutar una línea de comandos de MSBuild|- Puede compilar proyectos sin instalar Visual Studio.<br />- Puede ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Puede personalizar la mayoría de las áreas del sistema de compilación.|[MSBuild](../msbuild/msbuild.md)|  
 |Usar Team Foundation Build|- Puede automatizar el proceso de compilación. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. También puede compilar proyectos en servidores de compilación compartidos en lugar de hacerlo en el equipo de desarrollo.<br />- Puede especificar rápidamente el código que quiere compilar, las pruebas que quiere ejecutar y otras opciones frecuentes.<br />- Puede modificar el flujo de trabajo de compilación y, si es necesario, crear actividades de compilación para realizar tareas muy personalizadas.|[Compilar la aplicación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
   
 ## <a name="building-from-the-ide"></a>Compilar desde el IDE  
@@ -55,8 +73,3 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
  [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)   
  [Generar sitios web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
  [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

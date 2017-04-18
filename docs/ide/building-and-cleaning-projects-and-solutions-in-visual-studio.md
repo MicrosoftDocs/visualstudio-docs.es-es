@@ -1,119 +1,136 @@
 ---
-title: "Compilar y limpiar proyectos y soluciones en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.BuildProjectPicker"
-  - "vs.batchbuild"
-helpviewer_keywords: 
-  - "Limpiar solución (comando)"
-  - "compilaciones [Visual Studio], administración"
-  - "configuraciones de compilación de la solución, inicio"
-  - "Compilar solución (comando)"
-  - "configuraciones de compilación del proyecto, inicio"
-  - "configuraciones de compilación, inicio"
-  - "configuraciones de compilación del proyecto, dependencias"
-  - "Recompilar solución (comando)"
-  - "configuraciones de compilación de la solución, orden de compilación"
-  - "compilaciones [Visual Studio], preparación"
+title: Compilar y limpiar proyectos y soluciones en Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.BuildProjectPicker
+- vs.batchbuild
+helpviewer_keywords:
+- Clean Solution command
+- builds [Visual Studio], managing
+- solution build configurations, starting
+- Build Solution command
+- project build configurations, starting
+- build configurations, starting
+- project build configurations, dependencies
+- Rebuild Solution command
+- solution build configurations, build order
+- builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
----
-# Compilar y limpiar proyectos y soluciones en Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: ce6f346f77217e61d93879118610934422cdc642
+ms.lasthandoff: 04/05/2017
 
-Mediante los procedimientos de este tema, puede compilar, recompilar, o limpiar todos los o algunos proyectos o elementos de proyecto en una solución.  Para un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
+---
+# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
+Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
->  La interfaz de usuario en Visual Studio podría diferir de lo que describe este tema, dependiendo de los valores de configuración activos.  Para cambiar la configuración, abra el menú **herramientas**, y elija **Importar y exportar configuraciones**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-### Para compilar, recompilar o limpiar una solución completa  
+### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución  
   
-1.  En **Explorador de soluciones**, elija o abra la solución.  
+1.  En el **Explorador de soluciones**, seleccione o abra la solución.  
   
-2.  En la barra de menú, elija **Compilación**, y elija uno de los siguientes comandos:  
+2.  En la barra de menús, seleccione **Compilar** y, después, elija uno de los comandos siguientes:  
   
-    -   Elija **Compilación** o **Generar solución** para compilar sólo los archivos y componentes del proyecto que han cambiado desde la compilación más reciente.  
+    -   Seleccione **Compilar** o **Compilar solución** para compilar solo los archivos de proyecto y los componentes que han cambiado desde la compilación más reciente.  
   
         > [!NOTE]
-        >  El comando **Compilar** cambia a **Compilar solución** cuando una solución incluye más de un proyecto.  
+        >  El comando **Compilar** se convierte en **Compilar solución** cuando una solución incluye más de un proyecto.  
   
-    -   Elija **Recompilar solución** para “limpiar” la solución y luego compilar todos los archivos y componentes del proyecto.  
+    -   Seleccione **Recompilar solución** para "limpiar" la solución y, después, compilar todos los archivos de proyecto y los componentes.  
   
-    -   Elija **Limpiar solución** para eliminar los archivos intermedios y de salida.  Con sólo los archivos del proyecto y componentes que quedan, las nuevas instancias de archivos intermedios y de salida pueden compilar.  
+    -   Seleccione **Limpiar solución** para eliminar los archivos intermedios y de salida. Cuando solo quedan los archivos de proyecto y componente, se pueden compilar nuevas instancias de archivos intermedios y de salida.  
   
-### Para compilar o recompilar un solo proyecto  
+### <a name="to-build-or-rebuild-a-single-project"></a>Para compilar o recompilar un solo proyecto  
   
-1.  En **Explorador de soluciones**, elija o abra el proyecto.  
+1.  En el **Explorador de soluciones**, seleccione o abra el proyecto.  
   
-2.  En la barra de menú, elija **Compilación**, y elija **Compilación***ProjectName* o **Volver a generar***ProjectName*.  
+2.  En la barra de menús, seleccione **Compilar** y, después, elija **Compilar***NombreDelProyecto* o **Recompilar***NombreDelProyecto*.  
   
-    -   Elija **Compilación***ProjectName* para compilar sólo los componentes del proyecto que han cambiado desde la compilación más reciente.  
+    -   Seleccione **Compilar***NombreDelProyecto* para compilar solo los componentes del proyecto que han cambiado desde la compilación más reciente.  
   
-    -   Elija **Volver a generar***ProjectName* para “limpiar” el proyecto y después se compilan los archivos de proyecto y todos los componentes del proyecto.  
+    -   Seleccione **Recompilar***NombreDelProyecto* para "limpiar" el proyecto y, después, compilar los archivos de proyecto y todos los componentes del proyecto.  
   
-### Para compilar sólo el proyecto inicial y sus dependencias  
+### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias  
   
-1.  En la barra de menú, elija **herramientas**, **opciones**.  
+1.  En la barra de menús, elija **Herramientas**, **Opciones**.  
   
-2.  En el cuadro de diálogo **opciones**, expanda el nodo **Proyectos y soluciones** y, a continuación la página **Generar y ejecutar**.  
+2.  En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.  
   
-     El cuadro de diálogo **Compilar y ejecutar, proyectos y Soluciones, opciones** se abre.  
+     Se abre el cuadro de diálogo **Compilar y ejecutar, Proyectos y soluciones, Opciones**.  
   
-3.  Active la casilla **Generar proyectos de inicio y dependencias únicamente al ejecutar**.  
+3.  Active la casilla **Compilar proyectos de inicio y dependencias únicamente al ejecutar**.  
   
-     Cuando se selecciona esta casilla, se compilan sólo el proyecto de inicio actual y sus dependencias al realizar cualquiera de los pasos siguientes:  
+     Cuando activa esta casilla, solo se compilan el proyecto inicial actual y sus dependencias cuando se lleva a cabo alguno de los pasos siguientes:  
   
-    -   En la barra de menú, elija **debug**, **Inicio** \(F5\).  
+    -   En la barra de menús, seleccione **Depurar**, **Iniciar** (F5).  
   
-    -   En la barra de menú, elija **Compilación**, **Generar solución** \(CTRL\+MAYÚS\+B\).  
+    -   En la barra de menús, seleccione **Compilar**, **Compilar solución** (Ctrl+Mayús+B).  
   
-     Si se desactiva esta casilla, se compilan todos los proyectos, sus dependencias, y los archivos de solución al ejecutar cualquiera de los comandos anteriores.  Esta casilla se encuentra desactivada de forma predeterminada.  
+     Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.  
   
-### Para compilar sólo el proyecto seleccionado de Visual C\+\+  
+### <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar solo el proyecto de Visual C++ seleccionado  
   
-1.  Elija un proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] y, a continuación, en la barra de menú, elija **Compilación**, **Sólo proyecto**; uno de los siguientes comandos:  
+1.  Seleccione un proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] y, después, en la barra de menús, elija **Compilar**, **Solo el proyecto** y uno de los comandos siguientes:  
   
-    -   **Compilación solo** *ProjectName*  
+    -   **Compilar solo** *NombreDelProyecto*  
   
-    -   **Recompile sólo** *ProjectName*  
+    -   **Recompilar solo** *NombreDelProyecto*  
   
-    -   **Limpiar sólo** *ProjectName*  
+    -   **Limpiar solo** *NombreDelProyecto*  
   
-    -   **Vínculo solo** *ProjectName*  
+    -   **Vincular solo** *NombreDelProyecto*  
   
-     Estos comandos solo se aplican al proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] elegida, sin compilar, recompilar, limpiar, o vincular ninguna dependencia del proyecto o archivo de solución.  Dependiendo de la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], el submenú **Sólo proyecto** puede contener varios comandos.  
+     Estos comandos solo se aplican al proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que elija, sin compilar, recompilar, limpiar o vincular dependencias del proyecto o archivos de solución. En función de la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que tenga, el submenú **Solo el proyecto** podría contener más comandos.  
   
-### Para compilar varios elementos de proyecto de C\+\+  
+### <a name="to-compile-multiple-c-project-items"></a>Para compilar varios elementos de proyecto de C++  
   
-1.  En **Explorador de soluciones**, elija varios archivos que tienen pueden ser acciones de compilación, abra el menú contextual para uno de dichos archivos, y después elija **Compilar**.  
+1.  En el **Explorador de soluciones**, seleccione varios archivos, que pueden ser acciones compiladas, abra el menú contextual de uno de esos archivos y, después, seleccione **Compilar**.  
   
-     Si los archivos tienen dependencias, los archivos se compilarán en orden de dependencia.  La operación de compilación generará un error si los archivos requieren un encabezado precompilado que no está disponible cuando se compila.  La operación de compilación utiliza la configuración de soluciones activa.  
+     Si los archivos tienen dependencias, se compilarán en orden de dependencia. Se producirá un error en la operación de compilación si los archivos requieren un encabezado precompilado que no está disponible al compilar. La operación de compilación usa la configuración de la solución activa actual.  
   
-### Para detener una compilación  
+### <a name="to-stop-a-build"></a>Para detener una compilación  
   
 1.  Realice uno de estos pasos:  
   
-    -   En la barra de menú, elija **Compilación**, **cancelar**.  
+    -   En la barra de menús, seleccione **Compilar**, **Cancelar**.  
   
-    -   Elija las teclas Ctrl \+ de interrupción.  
+    -   Presione las teclas Ctrl+Interrumpir.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)   
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Compilar aplicaciones en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)   
+ [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Debug and Release Project Configurations](http://msdn.microsoft.com/es-es/0440b300-0614-4511-901a-105b771b236e)   
- [Referencia de compilación de C\/C\+\+](/visual-cpp/build/reference/c-cpp-building-reference)   
+ [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+ [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)   
  [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

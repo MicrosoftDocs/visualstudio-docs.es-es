@@ -1,59 +1,75 @@
 ---
-title: "IPropertyProxyProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyProvider"
-helpviewer_keywords: 
-  - "Interfaz IPropertyProxyProvider"
+title: IPropertyProxyProvider | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyProvider
+helpviewer_keywords:
+- IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IPropertyProxyProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 73a1a1a189e4922d662081a92738b1c35c6bb291
+ms.lasthandoff: 04/05/2017
 
-Fuentes de esta interfaz una interfaz de proxy para ver y cambiar los datos de un objeto.  
+---
+# <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
+Esta interfaz proporciona una interfaz de proxy para ver y cambiar los datos de un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IPropertyProxyProvider : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El evaluador de \(EE\) expresiones implementa esta interfaz en el mismo objeto que implementa la interfaz de [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) como parte de la compatibilidad de aa de visualizadores escritos.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El evaluador de expresiones (EE) implementa esta interfaz en el mismo objeto que implementa el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz como parte de la compatibilidad de los EE de visualizadores de tipo.  
   
-## Notas para los llamadores  
- Llame a [QueryInterface](/visual-cpp/atl/queryinterface) en una interfaz de `IDebugProperty3` para obtener esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Llame a [QueryInterface](/cpp/atl/queryinterface) en un `IDebugProperty3` interfaz para obtener esta interfaz.  
   
-## métodos en el orden de Vtable  
- la interfaz de `IPropertyProxyProvider` implementa el método siguiente:  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ El `IPropertyProxyProvider` interfaz implementa el método siguiente:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera una interfaz de proxy de propiedad para ver datos de un objeto.|  
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera una interfaz de proxy de la propiedad para ver los datos en un objeto.|  
   
-## Comentarios  
- Aunque aa implementa esta interfaz, la implementación de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) controla normalmente por [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md).  Vea [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener detalles sobre la obtención de la interfaz de IEEVisualizerService.  
+## <a name="remarks"></a>Comentarios  
+ Aunque el EE implementa esta interfaz, la implementación de [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) normalmente se controla por [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Vea [Visualizing y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información acerca de cómo obtener la interfaz IEEVisualizerService.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
  [Visualizador de tipo y el visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
- [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [Visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)

@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a9af3991247abfe2750dac4042adf7755bfe2e3d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: ba87dedcedace72a2d4fc47f894337ce69fbfc7e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="securing-applications"></a>Proteger aplicaciones
@@ -42,7 +42,7 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
 ## <a name="general-security-considerations"></a>Consideraciones generales de seguridad  
  Cada idioma tiene sus propias consideraciones y desafíos de seguridad.  
   
- [Procedimientos recomendados para la seguridad](/visual-cpp/top/security-best-practices-for-cpp)  
+ [Procedimientos recomendados para la seguridad](/cpp/top/security-best-practices-for-cpp)  
  Proporciona información sobre las características y las prácticas de seguridad disponibles al trabajar con Visual C++.  
   
  [NO INCLUIDO EN COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/en-us/227e2863-cf09-4c28-9611-bcd82be5e994)  

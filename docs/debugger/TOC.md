@@ -97,6 +97,7 @@
 ## [Depuración remota de ASP.NET en un equipo de IIS](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 ## [Depuración remota de un proyecto de C#](remote-debugging-csharp.md)
 ## [Depuración remota de un proyecto de C++](remote-debugging-cpp.md)
+## [Depuración remota de ASP.NET en Azure](remote-debugging-azure.md)
 ## [Configurar el Firewall de Windows para la depuración remota](configure-the-windows-firewall-for-remote-debugging.md)
 ## [Asignaciones de puertos del depurador remoto](remote-debugger-port-assignments.md)
 ## [Errores de la depuración remota y sus soluciones](remote-debugging-errors-and-troubleshooting.md)

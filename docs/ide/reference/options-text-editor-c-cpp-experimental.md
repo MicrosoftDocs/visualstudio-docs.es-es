@@ -31,15 +31,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 780c643c25f0d43ec0564e43bc50d2f36f1aee79
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
-Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++. Estas características son experimentales y se pueden modificar o quitar de Visual Studio en una versión futura.  
+Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++. Estas características son experimentales y se pueden modificar o quitar de Visual Studio en una versión futura. En este tema se describen las opciones de Visual Studio 2017. En el caso de Visual Studio 2015, consulte [Opciones, editor de texto, C/C++, Experimental](https://msdn.microsoft.com/library/mt591979.aspx). 
   
- Para tener acceso a esta página, en el cuadro de diálogo **Opciones** , en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++**y luego haga clic en **Experimental**.  
+ Para acceder a esta página de propiedades, pulse **Ctrl+Q** para activar `Quick Launch` y, después, escriba "experimental". La función Inicio rápido encontrará la página después de las primeras letras. También puede acceder a ella eligiendo **Herramientas | Opciones** y expandiendo **Editor de texto**. Después, elija **C/C++** y **Experimental**.  
 
  Estas características están disponibles en una instalación de Visual Studio 2017.  
   
@@ -50,7 +50,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe <code>int x =</code> e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
 
 ## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida
-Esta opción habilita la característica conocida como "carga de solución ligera". Cuando la carga de solución ligera está habilitada, Visual Studio no carga totalmente los proyectos hasta que son realmente necesarios. Muchas tareas comunes, como navegar por el código base, editar código y compilar proyectos, no requieren que se cargue el proyecto. Cuando esta opción está habilitada, puede empezar a realizar estas tareas comunes más rápidamente, sin tener que esperar a que se cargue el proyecto.  
+Esta opción permite que Visual Studio copie en caché los datos de un proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Características adicionales de la Galería de Visual Studio
 Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](http://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:  

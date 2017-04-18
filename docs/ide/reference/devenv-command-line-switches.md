@@ -1,31 +1,50 @@
 ---
-title: "Modificadores de l&#237;nea de comandos para Devenv | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "aplicaciones [Visual Studio], ejecutar"
-  - "compilaciones [Team System], línea de comandos"
-  - "línea de comandos [Visual Studio], modificadores"
-  - "modificadores de la línea de comandos, Devenv"
-  - "compiladores, comandos Devenv"
-  - "compilar código fuente, Devenv"
-  - "Devenv"
-  - "Devenv, sintaxis y lista de modificadores"
-  - "entorno, comandos Devenv"
-  - "modificadores"
-  - "modificadores, Devenv"
+title: "Modificadores de línea de comandos para Devenv | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- switches, Devenv
+- builds [Team System], command-line
+- applications [Visual Studio], executing
+- compiling source code, Devenv
+- command-line switches, Devenv
+- command line [Visual Studio], switches
+- Devenv
+- environment, Devenv commands
+- compilers, Devenv commands
+- switches
+- Devenv, syntax and list of switches
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5666566315e94f109c5ca214dcf5b2a539911203
+ms.lasthandoff: 04/05/2017
+
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 Devenv permite establecer diversas opciones para el entorno de desarrollo integrado (IDE), así como compilar, depurar e implementar proyectos, desde la línea de comandos. Utilice estos modificadores para ejecutar el IDE desde un script o un archivo .bat (por ejemplo, un script de compilación nocturna) o para iniciar el IDE con una configuración determinada.  
@@ -73,7 +92,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y registra toda la actividad en el archivo de registro.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) o `/r`|Compila y ejecuta la solución especificada.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compila y ejecuta la solución especificada, minimiza el IDE cuando se ejecuta la solución y cierra el IDE una vez finalizada la ejecución de la solución.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](/visual-cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Abre los archivos especificados en una instancia en ejecución de esta aplicación. Si no hay ninguna instancia en ejecución, iniciará una nueva instancia con un diseño de ventanas simplificado.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Inicia una instancia del IDE de Visual Studio sin cargar el complemento especificado.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en modo seguro y solo carga el entorno y los servicios predeterminados, así como las versiones de paquetes de terceros suministradas.|  
@@ -100,8 +119,3 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
   
 ## <a name="see-also"></a>Vea también  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

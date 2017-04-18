@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
-ms.openlocfilehash: 3a4dda7736409ce60d6f1a1aa42b820978d63074
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 3aa97878f868f59d0e5dbdb6eb1eac7268e9efd3
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -62,5 +62,7 @@ Si cambia de idea más tarde y quiere volver a instalar Visual Studio 2017, simp
 
 ## <a name="see-also"></a>Vea también  
 * [Instalar Visual Studio](install-visual-studio.md)
+* [Modificación de Visual Studio 2017](modify-visual-studio.md)
+* [Actualizar Visual Studio](update-visual-studio.md)
 * [Cómo notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

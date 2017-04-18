@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
-ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: a990441ed4ef551a0fc6defcda45d51ff0c0d209
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
@@ -45,7 +45,7 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
   
  Para obtener información sobre cómo firmar ensamblados en proyectos de Visual Basic y C#, consulte [Crear y utilizar ensamblados con nombre seguro](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Para obtener información sobre cómo firmar ensamblados en proyectos de Visual C++, consulte [Ensamblados de nombre seguro (Firma de ensamblados) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+ Para obtener información sobre cómo firmar ensamblados en proyectos de Visual C++, consulte [Ensamblados de nombre seguro (Firma de ensamblados) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
 
 > [!NOTE]
 >  La firma de nombre seguro no protege contra la ingeniería inversa del ensamblado.  Para protegerse contra las técnicas de ingeniería inversa, consulte [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
@@ -87,4 +87,4 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
   
 ## <a name="see-also"></a>Vea también  
  [Ensamblados con nombre seguro](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Ensamblados de nombre seguro (Firma de ensamblados) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Ensamblados de nombre seguro (Firma de ensamblados) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

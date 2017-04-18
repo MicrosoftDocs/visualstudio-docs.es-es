@@ -35,9 +35,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: f70339a150a53d346ab9a6f59b4b1634263f5b9e
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
@@ -81,16 +81,16 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  Cuando se coloca un archivo en el editor de texto, se puede habilitar la característica de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se habilita al abrir un archivo.  
   
  **Esquematizar automáticamente bloques de regiones pragma**  
- Cuando esta opción está seleccionada, se habilita la esquematización automática de las [directivas pragma](/visual-cpp/preprocessor/pragma-directives-and-the-pragma-keyword). Esto permite expandir o contraer bloques de región pragma en modo de esquematización.  
+ Cuando esta opción está seleccionada, se habilita la esquematización automática de las [directivas pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword). Esto permite expandir o contraer bloques de región pragma en modo de esquematización.  
   
  **Esquematizar automáticamente bloques de instrucciones**  
  Al seleccionar esta opción, se habilita la esquematización automática de las construcciones de instrucción siguientes:  
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [switch (Instrucción) (C++)](/visual-cpp/cpp/switch-statement-cpp)  
+-   [switch (Instrucción) (C++)](/cpp/cpp/switch-statement-cpp)  
   
--   [while (Instrucción) (C++)](/visual-cpp/cpp/while-statement-cpp)  
+-   [while (Instrucción) (C++)](/cpp/cpp/while-statement-cpp)  
   
 ## <a name="see-also"></a>Vea también  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   

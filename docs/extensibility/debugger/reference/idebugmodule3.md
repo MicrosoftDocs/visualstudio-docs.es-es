@@ -1,61 +1,77 @@
 ---
-title: "IDebugModule3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule3"
-helpviewer_keywords: 
-  - "Interfaz IDebugModule3"
+title: IDebugModule3 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModule3
+helpviewer_keywords:
+- IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugModule3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 8d06621cc46499d763fd16797813d9dd71e9fdfb
+ms.lasthandoff: 04/05/2017
 
-Esta interfaz representa un módulo que admite ubicaciones alternativas de símbolos y de los estados de JustMyCode.  
+---
+# <a name="idebugmodule3"></a>IDebugModule3
+Esta interfaz representa un módulo que admite las ubicaciones alternativas de símbolos y Estados de JustMyCode.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugModule3 : IDebugModule2  
 ```  
   
-## Notas para los implementadores  
- El motor de depuración \(DE\) implementa esta interfaz para admitir ubicaciones alternativas de símbolos y para trabajar con los estados de JustMyCode \(vea [Glosario del depurador de Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) para una definición de “JustMyCode”\).  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El motor de depuración (Alemania) implementa esta interfaz para admitir las ubicaciones alternativas de símbolos y para trabajar con los Estados de JustMyCode (vea la [Glosario de depurador de Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) para una definición de "JustMyCode").  
   
-## Notas para los llamadores  
- una llamada a [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) devuelve esta interfaz.  El OF envía la interfaz de [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) el administrador de depuración de sesión \(SDM\) mediante el método de [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .  Además, una llamada a [QueryInterface](/visual-cpp/atl/queryinterface) en una interfaz de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) devuelve esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Una llamada a [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) devuelve esta interfaz. Los envíos DE la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) de la interfaz para el Administrador de depuración de sesión (SDM) mediante el [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método. Además, una llamada a [QueryInterface](/cpp/atl/queryinterface) en un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interfaz devuelve esta interfaz.  
   
-## métodos en el orden de Vtable  
- Además de los métodos de la interfaz de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , esta interfaz implementa los siguientes métodos:  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Además de los métodos en el [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interfaz, esta interfaz implementa los métodos siguientes:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Devuelve una lista de rutas de búsqueda para los símbolos y los resultados de búsqueda cada ruta.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Las cargas y se inicializan los símbolos del módulo actual.|  
-|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Devuelve la marca que especifica si el módulo representa el código de usuario.|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Especifica si el módulo debe considerarse código de usuario o no.|  
+|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Devuelve una lista de rutas de acceso que se buscan los símbolos y los resultados de búsqueda de cada ruta de acceso.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Carga e inicializa los símbolos del módulo actual.|  
+|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Devuelve marca especifica si el módulo representa el código de usuario.|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Especifica si el módulo se debe considerar el código de usuario o no.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Visual Studio es el consumidor típico de esta interfaz.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)   

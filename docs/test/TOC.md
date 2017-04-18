@@ -35,7 +35,7 @@
 ### [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.md)
 ## [Usar Automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 ### [Tutorial: Crear, modificar y mantener una prueba de IU codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-### [Probar aplicaciones de la Tienda Windows 8.1 con pruebas de IU codificadas](test-windows-store-8-1-apps-with-coded-ui-tests.md)
+### [Probar aplicaciones de la Tienda Windows 8.1 con pruebas de interfaz de usuario codificadas](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 ### [Probar aplicaciones de Windows Phone 8.1 con pruebas de IU codificadas](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 ### [Establecer una propiedad de Automatización única para la prueba de controles de la Tienda Windows](set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
 ### [Usar controles HTML5 en pruebas de IU codificada](using-html5-controls-in-coded-ui-tests.md)

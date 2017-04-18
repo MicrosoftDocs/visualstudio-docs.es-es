@@ -76,9 +76,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: c36d97b83aa0892235c8f196cf6af63520b3547c
-ms.openlocfilehash: a31b90643e3707348595fce02ec37a1c02a97195
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 07dfd26933090708cf40adff5f7ceb4785686245
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
@@ -87,11 +87,11 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Herramientas disponibles en el menú Herramientas de Visual Studio
  El **Herramientas** menú contiene varios comandos integrados, como:
 
-*  **Extensiones y actualizaciones ** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
-*  **Administrador de fragmentos de código... ** para [organizar fragmentos de código](code-snippets.md#code-snippet-manager)
+*  **Extensiones y actualizaciones** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
+*  **Administrador de fragmentos de código...** para [organizar fragmentos de código](code-snippets.md#code-snippet-manager)
 *  **PreEmptive Protection - Dotfuscator** para iniciar [Dotfuscator Community Edition (CE)](dotfuscator/index.md) si está [instalado](dotfuscator/install.md)
 *  **Personalizar...** para personalizar [menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio)
-*  **Opciones... ** para [establecer numerosas opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
+*  **Opciones...** para [establecer numerosas opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Agregar nuevas herramientas al menú Herramientas 
  Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **Herramientas externas..**, haga clic en **Agregar** y rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:  
@@ -127,5 +127,5 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|  
 
 ## <a name="see-also"></a>Vea también  
- [Herramientas de compilación de C/C++](/visual-cpp/build/reference/c-cpp-build-tools)
+ [Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)
 
