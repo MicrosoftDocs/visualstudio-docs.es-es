@@ -2,7 +2,7 @@
 title: "Creación de un instalador sin conexión para Visual Studio 2017 | Microsoft Docs"
 description: "Obtenga información sobre cómo crear un instalador sin conexión de Visual Studio."
 ms.custom: 
-ms.date: 03/21/2017
+ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
+ms.openlocfilehash: fda1a4fbfebd856312174fe24ff161b0e9d04bb9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="create-an-offline-installer-for-visual-studio-2017"></a>Creación de un instalador sin conexión para Visual Studio 2017
@@ -66,7 +66,7 @@ Para crear una instalación sin conexión con todos los lenguajes y todas las ca
 - Para Visual Studio Professional, ejecute: <br> ```vs_professional.exe --layout c:\vs2017offline```
 - Para Visual Studio Community, ejecute: <br> ```vs_community.exe --layout c:\vs2017offline```
 
-Para obtener más ejemplos, vea la sección [Personalización del instalador sin conexión](#how-to-customize-your-offline- installer) de esta página.
+Para obtener más ejemplos, vea la sección [Personalización del instalador sin conexión](#how-to-customize-your-offline-installer) de esta página.
 
 ## <a name="install-from-the-offline-installation-folder"></a>Instalación desde la carpeta de instalación sin conexión
 Ejecute la instalación sin conexión ahora o más tarde; la decisión le corresponde a usted. Sin embargo, cuando lo haga, siga estos pasos.
@@ -98,6 +98,7 @@ En ocasiones, algo no sale según lo previsto. Aquí presentamos una tabla de pr
 
 | Problema       | Elemento                   | Solución |
 | ----------- | ---------------------- | -------- |
+| Recibirá un mensaje de error del instalador de Visual Studio con el texto "Setup completed with warning" (Instalación completada con advertencia) y se producirá un error en la instalación del emulador de Windows. | Emulador de Windows 10 | Abra la carpeta de instalación sin conexión de Visual Studio, vaya a la subcarpeta "Win10_Emulator_10.0.15063,version=10.0.15063.12,chip=x64" y ejecute EmulatorSetup.exe para instalar el emulador de Windows. |
 | Recibe un mensaje de advertencia acerca de que no se pueden instalar algunos componentes y paquetes.  | Programa de instalación de Android SDK (nivel de API) | Si desea incluir paquetes de Android SDK (nivel de API), debe tener una conexión a Internet cuando se crea el instalador sin conexión. Si está en una red restringida, debe permitir el acceso a las siguientes direcciones URL: <br><br> - http://dl.google.com:443 <br> - http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Para obtener información sobre cómo resolver posibles problemas con la configuración de proxy, vea la publicación del blog [Visual Studio install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Errores de instalación de Visual Studio [Instalación de Android SDK] detrás de un proxy).  |  
 | Los usuarios no tienen acceso a los archivos. | permisos (ACL) | Asegúrese de que ajusta los permisos (ACL) de manera que concedan acceso de lectura a otros usuarios *antes* de compartir la instalación sin conexión. |
 | Las nuevas cargas de trabajo, componentes o idiomas no se instalarán.  | `--layout`  | Asegúrese de que tiene acceso a Internet si instala desde un diseño parcial y selecciona cargas de trabajo, componentes o idiomas que no están disponibles en el diseño anterior. |
