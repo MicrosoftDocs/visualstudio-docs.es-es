@@ -1,7 +1,7 @@
 ---
 title: Novedades de Visual Studio 2017 | Microsoft Docs
 ms.custom: 
-ms.date: 04/04/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b19199274d116e20af4c415673ebbeded95859d9
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: ddc84f3b92d8e0febaea3d23b415bd6e703cc530
+ms.openlocfilehash: e04b972187b7b7ec225b48cc9b8904d804399ff8
+ms.lasthandoff: 04/07/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
@@ -130,11 +130,11 @@ Para más información, vea la entrada de blog [Live Unit Testing in Visual Stud
 Para ampliar las funcionalidades de DevOps para el desarrollo de bases de datos de SQL Server, Redgate Data Tools ahora está disponible en las siguientes ediciones de Visual Studio 2017.
 
 Incluido con Visual Studio 2017 Enterprise:
-- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=relnotes0317) le ayuda a desarrollar scripts de migración, administrar cambios en la base de datos a través del control de código fuente y automatizar de forma segura implementaciones de cambios en la base de datos de SQL Server junto con cambios en las aplicaciones.
-- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=relnotes0317) le ayuda a escribir SQL con más rapidez y exactitud con la ayuda de la finalización de código inteligente. SQL Prompt completa automáticamente los objetos de base de datos y del sistema, así como las palabras clave, y ofrece sugerencias de columna a medida que escribe. Esto da como resultado un código más limpio con menos errores porque no es necesario recordar cada nombre o alias de columna.
+- [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) le ayuda a desarrollar scripts de migración, administrar cambios en la base de datos a través del control de código fuente y automatizar de forma segura implementaciones de cambios en la base de datos de SQL Server junto con cambios en las aplicaciones.
+- [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) le ayuda a escribir SQL con más rapidez y exactitud con la ayuda de la finalización de código inteligente. SQL Prompt completa automáticamente los objetos de base de datos y del sistema, así como las palabras clave, y ofrece sugerencias de columna a medida que escribe. Esto da como resultado un código más limpio con menos errores porque no es necesario recordar cada nombre o alias de columna.
 
 Incluido con todas las ediciones de Visual Studio 2017:
-- [Búsqueda de SQL de Redgate](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=relnotes0317) aumenta la productividad al permitir encontrar rápidamente fragmentos y objetos de SQL en varias bases de datos.
+- [Búsqueda de SQL de Redgate](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) aumenta la productividad al permitir encontrar rápidamente fragmentos y objetos de SQL en varias bases de datos.
 
 Para obtener más información, vea la entrada de blog [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Redgate Data Tools en Visual Studio 2017).
 
