@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 69740c73cc133e08254fc546d2b59885270725f2
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
+ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
+ms.lasthandoff: 03/30/2017
 
 ---
 
@@ -89,6 +89,11 @@ En el ejemplo anterior, tenemos Python 3.4 (CPython de 32 bits) instalado junto 
 >
 > ![Vista de la ventana Python Environments (Entornos de Python) expandida](media/environments-expanded-view.png)
 
+> [!Note]
+> Aunque Visual Studio respeta la opción de paquetes de sitio de sistema, no ofrece una forma de cambiarla desde dentro de Visual Studio.
+
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>Creación de un entorno para un intérprete existente
+
 Visual Studio normalmente localiza un intérprete de Python instalado comprobando el registro, pero puede no encontrarlo si el intérprete está instalado de un modo no estándar. En tales casos, puede apuntar Visual Studio directamente al intérprete de la siguiente manera:
 
 1. Seleccione **+Personalizado...** en la ventana Python Environments (Entornos de Python) para crear un nuevo entorno y abrir la pestaña [**Configurar**](#configure-tab) que se describe a continuación.
@@ -100,9 +105,6 @@ Visual Studio normalmente localiza un intérprete de Python instalado comproband
 1. Seleccione **Detección automática** para que Visual Studio complete los campos restantes o complételos manualmente.
 1. Seleccione **Aplicar** para guardar el entorno.
 1. Si necesita quitar el entorno, seleccione el comando **Quitar** en la pestaña **Configurar**.
-
-> [!Note]
-> Aunque Visual Studio respeta la opción de paquetes de sitio de sistema, no ofrece una forma de cambiarla desde dentro de Visual Studio.
 
 ### <a name="overview-tab"></a>Pestaña Información general
 

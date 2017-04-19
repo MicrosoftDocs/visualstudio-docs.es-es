@@ -1,35 +1,51 @@
 ---
-title: "Usar correcciones de compatibilidad (shim) para aislar la aplicaci&#243;n de otros ensamblados para las pruebas unitarias | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 12
-ms.author: "mlearned"
-manager: "douge"
-caps.handback.revision: 12
----
-# Usar correcciones de compatibilidad (shim) para aislar la aplicaci&#243;n de otros ensamblados para las pruebas unitarias
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: 6dfb5758833d9ecda1a6ac378eb3f5069cc80561
+ms.lasthandoff: 04/04/2017
 
-Los **tipos de correcciones de compatibilidad \(shim\)** son una de las tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando.  Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba.  Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada.  De esta forma, es mucho más fácil escribir las pruebas.  
+---
+# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
+Los **tipos de correcciones de compatibilidad (shim)** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando. Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. De esta forma, es mucho más fácil escribir las pruebas.  
   
- Utilice las correcciones de compatibilidad para aislar el código de los ensamblados que no forman parte de la solución.  Para aislar los componentes de la solución, se recomienda que use códigos auxiliares.  
+ Utilice las correcciones de compatibilidad para aislar el código de los ensamblados que no forman parte de la solución. Para aislar los componentes de la solución, se recomienda que use códigos auxiliares.  
   
- Para obtener una visión general y una guía de inicio rápido, consulte [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ Para obtener una visión general y una guía de inicio rápido, vea [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
  **Requisitos**  
   
 -   Visual Studio Enterprise  
   
- Vea en el vídeo [Vídeo \(1h 16m\): Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+ Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)  
   
-## En este tema  
+## <a name="in-this-topic"></a>En este tema  
  En este tema aprenderá lo siguiente:  
   
  [Ejemplo: El error Y2K](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
@@ -40,7 +56,7 @@ Los **tipos de correcciones de compatibilidad \(shim\)** son una de las tecnolog
   
 -   [Usar ShimsContext](#ShimsContext)  
   
--   [Escribir pruebas con correcciones de compatibilidad](#WriteTests)  
+-   [Escribir pruebas con correcciones de compatibilidad (shim)](#WriteTests)  
   
  [Correcciones de compatibilidad (shim) para los diferentes tipos de métodos](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
   
@@ -68,7 +84,7 @@ Los **tipos de correcciones de compatibilidad \(shim\)** son una de las tecnolog
   
  [Simultaneidad](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
   
- [Llamar al método original desde el método de la corrección de compatibilidad](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
+ [Llamar al método original desde el método de la corrección de compatibilidad (shim)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
   
  [Limitaciones](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
@@ -86,9 +102,9 @@ public static class Y2KChecker {
   
 ```  
   
- Comprobar este método es especialmente problemático, ya que el programa depende de `DateTime.Now`, un método que depende del reloj del equipo, un método dependiente del entorno y no determinista.  Además, `DateTime.Now` es una propiedad estática, por lo que no se puede usar aquí un tipo de código auxiliar.  Este problema es síntoma de un problema de aislamiento en las pruebas unitarias: es difícil realizar pruebas unitarias con programas que llaman directamente a las API de base de datos, se comunican directamente con los servicios web y similares, porque su lógica depende del entorno.  
+ Comprobar este método es especialmente problemático, ya que el programa depende de `DateTime.Now`, un método que depende del reloj del equipo, un método dependiente del entorno y no determinista. Además, `DateTime.Now` es una propiedad estática, por lo que no se puede usar aquí un tipo de código auxiliar. Este problema es síntoma de un problema de aislamiento en las pruebas unitarias: es difícil realizar pruebas unitarias con programas que llaman directamente a las API de base de datos, se comunican directamente con los servicios web y similares, porque su lógica depende del entorno.  
   
- En estos casos es donde se deben usar tipos de corrección de compatibilidad.  Los tipos de corrección de compatibilidad proporcionan un mecanismo para desviar cualquier método .NET a un delegado definido por el usuario.  Los tipos de corrección de compatibilidad se generan por código mediante el generador de Fakes y usan delegados, lo que llamamos tipos de corrección de compatibilidad, para especificar nuevas implementaciones del método.  
+ En estos casos es donde se deben usar tipos de corrección de compatibilidad. Los tipos de corrección de compatibilidad proporcionan un mecanismo para desviar cualquier método .NET a un delegado definido por el usuario. Los tipos de corrección de compatibilidad se generan por código mediante el generador de Fakes y usan delegados, lo que llamamos tipos de corrección de compatibilidad, para especificar nuevas implementaciones del método.  
   
  Las siguientes pruebas muestran cómo usar el tipo de corrección de compatibilidad, `ShimDateTime`, para proporcionar una implementación personalizada de DateTime.Now:  
   
@@ -104,7 +120,7 @@ using (ShimsContext.Create()
   
 ```  
   
-##  <a name="BKMK_Fakes_requirements"></a> Usar correcciones de compatibilidad \(shim\)  
+##  <a name="BKMK_Fakes_requirements"></a> Cómo usar correcciones de compatibilidad (shim)  
   
 ###  <a name="AddFakes"></a> Agregar ensamblados de Fakes  
   
@@ -112,12 +128,12 @@ using (ShimsContext.Create()
   
     -   Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones para ver la lista de referencias.  
   
-2.  Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad.  Por ejemplo, si desea realizar una corrección de compatibilidad para DateTime, seleccione System.dll  
+2.  Seleccione el ensamblado que contiene las definiciones de clases para las que desea crear las correcciones de compatibilidad. Por ejemplo, si desea realizar una corrección de compatibilidad para DateTime, seleccione System.dll  
   
-3.  En el menú contextual, elija **Agregar ensamblado de Fakes**.  
+3.  En el menú contextual, seleccione **Agregar ensamblado de Fakes**.  
   
 ###  <a name="ShimsContext"></a> Usar ShimsContext  
- Al utilizar tipos de corrección de compatibilidad en un marco de pruebas unitarias, debe contener el código de prueba en un `ShimsContext` para controlar la duración de las correcciones de compatibilidad.  Si no incluyéramos este requisito, sus correcciones de compatibilidad durarían hasta el cierre de AppDomain.  La manera más fácil de crear un `ShimsContext` es usar el método estático `Create()`, tal como se muestra en el código siguiente:  
+ Al utilizar tipos de corrección de compatibilidad en un marco de pruebas unitarias, debe contener el código de prueba en un `ShimsContext` para controlar la duración de las correcciones de compatibilidad. Si no incluyéramos este requisito, sus correcciones de compatibilidad durarían hasta el cierre de AppDomain. La manera más fácil de crear un `ShimsContext` es usar el método estático `Create()`, tal como se muestra en el código siguiente:  
   
 ```c#  
 //unit test code  
@@ -130,10 +146,10 @@ public void Y2kCheckerTest() {
   
 ```  
   
- Esto es fundamental para eliminar correctamente el contexto de cada corrección de compatibilidad.  Como regla general, llame siempre a `ShimsContext.Create` dentro de una instrucción `using` para asegurarse de borrar correctamente las correcciones de compatibilidad registradas.  Por ejemplo, puede registrar una corrección de compatibilidad para un método de prueba que reemplaza el método `DateTime.Now` con un delegado que siempre devuelve el uno de enero de 2000.  Si se olvida de borrar la corrección de compatibilidad registrada en el método de prueba, el resto de la ejecución de prueba devolverá siempre el uno de enero de 2000 como valor de DateTime.Now.  Esto puede tener efectos inesperados y sorprendentes.  
+ Esto es fundamental para eliminar correctamente el contexto de cada corrección de compatibilidad. Como regla general, llame siempre a `ShimsContext.Create` dentro de una instrucción `using` para asegurarse de borrar correctamente las correcciones de compatibilidad registradas. Por ejemplo, puede registrar una corrección de compatibilidad para un método de prueba que reemplaza el método `DateTime.Now` con un delegado que siempre devuelve el uno de enero de 2000. Si se olvida de borrar la corrección de compatibilidad registrada en el método de prueba, el resto de la ejecución de prueba devolverá siempre el uno de enero de 2000 como valor de DateTime.Now. Esto puede tener efectos inesperados y sorprendentes.  
   
-###  <a name="WriteShims"></a> Escribir una prueba con shims  
- En el código de prueba, inserte un *desvío* para el método que desee imitar.  Por ejemplo:  
+###  <a name="WriteShims"></a> Escribir pruebas con correcciones de compatibilidad (shim)  
+ En el código de prueba, inserte un *desvío* para el método que quiera imitar. Por ejemplo:  
   
 ```c#  
 [TestClass]  
@@ -195,17 +211,17 @@ End Class
   
  Los nombres de clase Shim se componen anteponiendo `Fakes.Shim` al nombre de tipo original.  
   
- Las correcciones de compatibilidad funcionan insertando *desvíos* en el código de la aplicación sometida a prueba.  Siempre que se produce una llamada al método original, el sistema de Fakes realiza un desvío para que, en lugar de llamar al método real, se llame al código de la corrección de compatibilidad.  
+ Las correcciones de compatibilidad funcionan mediante la inserción de *desvíos* en el código de la aplicación sometida a prueba. Siempre que se produce una llamada al método original, el sistema de Fakes realiza un desvío para que, en lugar de llamar al método real, se llame al código de la corrección de compatibilidad.  
   
- Observe que los desvíos se crean y se eliminan en tiempo de ejecución.  Siempre debe crear un desvío durante la vida de un `ShimsContext`.  Cuando se elimina, se quitan las correcciones de compatibilidad que creó mientras estaba activo.  La mejor manera de hacerlo es dentro de una instrucción `using`.  
+ Observe que los desvíos se crean y se eliminan en tiempo de ejecución. Siempre debe crear un desvío durante la vida de un `ShimsContext`. Cuando se elimina, se quitan las correcciones de compatibilidad que creó mientras estaba activo. La mejor manera de hacerlo es dentro de una instrucción `using`.  
   
- Es posible que vea un error de compilación que indica que el espacio de nombres de Fakes no existe.  Este error puede aparecer cuando hay otros errores de compilación.  Corrija los demás errores y desaparecerá.  
+ Es posible que vea un error de compilación que indica que el espacio de nombres de Fakes no existe. Este error puede aparecer cuando hay otros errores de compilación. Corrija los demás errores y desaparecerá.  
   
-##  <a name="BKMK_Shim_basics"></a> Correcciones de compatibilidad \(shim\) para los diferentes tipos de métodos  
+##  <a name="BKMK_Shim_basics"></a> Correcciones de compatibilidad (shim) para los diferentes tipos de métodos  
  Los tipos de corrección de compatibilidad le permiten reemplazar cualquier método .NET, incluidos los métodos estáticos y los métodos no virtuales, con sus propios delegados.  
   
 ###  <a name="BKMK_Static_methods"></a> Métodos estáticos  
- Las propiedades para asociar las correcciones de compatibilidad a métodos estáticos se colocan en un tipo de corrección de compatibilidad.  Cada propiedad tiene un solo establecedor que puede utilizarse para adjuntar un delegado al método de destino.  Por ejemplo, dada una clase `MyClass` con un método estático `MyMethod`:  
+ Las propiedades para asociar las correcciones de compatibilidad a métodos estáticos se colocan en un tipo de corrección de compatibilidad. Cada propiedad tiene un solo establecedor que puede utilizarse para adjuntar un delegado al método de destino. Por ejemplo, dada una clase `MyClass` con un método estático `MyMethod`:  
   
 ```c#  
 //code under test  
@@ -223,8 +239,8 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;  
 ```  
   
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Métodos de instancia \(para todas las instancias\)  
- Al igual que con los métodos estáticos, es posible corregir la compatibilidad de los métodos de instancia para todas las instancias.  Las propiedades para asociar estas correcciones de compatibilidad se colocan en un tipo anidado denominado AllInstances para evitar la confusión.  Por ejemplo, dada una clase `MyClass` con un método de instancia `MyMethod`:  
+###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Métodos de instancia (para todas las instancias)  
+ Al igual que con los métodos estáticos, es posible corregir la compatibilidad de los métodos de instancia para todas las instancias. Las propiedades para asociar estas correcciones de compatibilidad se colocan en un tipo anidado denominado AllInstances para evitar la confusión. Por ejemplo, dada una clase `MyClass` con un método de instancia `MyMethod`:  
   
 ```c#  
 // code under test  
@@ -259,8 +275,8 @@ public class ShimMyClass : ShimBase<MyClass> {
   
  Observe que, en este caso, Fakes pasa la instancia en tiempo de ejecución como primer argumento del delegado.  
   
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Métodos de instancia \(para una instancia en tiempo de ejecución\)  
- También se puede corregir la compatibilidad de los métodos de instancia por medio de diferentes delegados que se basan en el receptor de la llamada.  Esto permite que el mismo método de instancia tenga distintos comportamientos para cada instancia del tipo.  Las propiedades para configurar estas correcciones de compatibilidad son métodos de instancia del propio tipo de corrección de compatibilidad.  Cada instancia del tipo de corrección de compatibilidad está también asociada con una instancia sin procesar de un tipo corregido para compatibilidad.  
+###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Métodos de instancia (para una instancia en tiempo de ejecución)  
+ También se puede corregir la compatibilidad de los métodos de instancia por medio de diferentes delegados que se basan en el receptor de la llamada. Esto permite que el mismo método de instancia tenga distintos comportamientos para cada instancia del tipo. Las propiedades para configurar estas correcciones de compatibilidad son métodos de instancia del propio tipo de corrección de compatibilidad. Cada instancia del tipo de corrección de compatibilidad está también asociada con una instancia sin procesar de un tipo corregido para compatibilidad.  
   
  Por ejemplo, dada una clase `MyClass` con un método de instancia `MyMethod`:  
   
@@ -320,7 +336,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
 ```  
   
 ###  <a name="BKMK_Constructors"></a> Constructores  
- También es posible corregir para compatibilidad los constructores con el fin de adjuntar tipos de correcciones de compatibilidad para futuros objetos.  Cada constructor se expone como un método estático Constructor en el tipo de corrección de compatibilidad.  Por ejemplo, dada una clase `MyClass` con un constructor que toma un entero:  
+ También es posible corregir para compatibilidad los constructores con el fin de adjuntar tipos de correcciones de compatibilidad para futuros objetos. Cada constructor se expone como un método estático Constructor en el tipo de corrección de compatibilidad. Por ejemplo, dada una clase `MyClass` con un constructor que toma un entero:  
   
 ```c#  
 // code under test  
@@ -332,7 +348,7 @@ public class MyClass {
 }  
 ```  
   
- Establecemos el tipo de corrección de compatibilidad del constructor para que todas las instancias futuras devuelvan \-5 cuando se invoque el captador Value, independientemente del valor que exista en el constructor:  
+ Establecemos el tipo de corrección de compatibilidad del constructor para que todas las instancias futuras devuelvan -5 cuando se invoque el captador Value, independientemente del valor que exista en el constructor:  
   
 ```c#  
 // unit test code  
@@ -343,7 +359,7 @@ ShimMyClass.ConstructorInt32 = (@this, value) => {
 };  
 ```  
   
- Tenga en cuenta que cada tipo de corrección de compatibilidad expone dos constructores.  El constructor predeterminado debe utilizarse cuando se necesita una nueva instancia, mientras el constructor que toma una instancia corregida para compatibilidad como argumento debe utilizarse únicamente en correcciones de compatibilidad de constructor:  
+ Tenga en cuenta que cada tipo de corrección de compatibilidad expone dos constructores. El constructor predeterminado debe utilizarse cuando se necesita una nueva instancia, mientras el constructor que toma una instancia corregida para compatibilidad como argumento debe utilizarse únicamente en correcciones de compatibilidad de constructor:  
   
 ```c#  
 // unit test code  
@@ -413,13 +429,13 @@ public class ShimMyBase : ShimBase<MyBase> {
 ```  
   
 ###  <a name="BKMK_Static_constructors"></a> Constructores estáticos  
- Los tipos de corrección de compatibilidad exponen un método estático `StaticConstructor` realizar correcciones de compatibilidad del constructor estático de un tipo.  Dado que los constructores estáticos se ejecutan una sola vez, debe asegurarse de que la corrección de compatibilidad esté configurada antes de que se tenga acceso a cualquier miembro del tipo.  
+ Los tipos de corrección de compatibilidad exponen un método estático `StaticConstructor` realizar correcciones de compatibilidad del constructor estático de un tipo. Dado que los constructores estáticos se ejecutan una sola vez, debe asegurarse de que la corrección de compatibilidad esté configurada antes de que se tenga acceso a cualquier miembro del tipo.  
   
 ###  <a name="BKMK_Finalizers"></a> Finalizadores  
  Los finalizadores no se admiten en Fakes.  
   
 ###  <a name="BKMK_Private_methods"></a> Métodos privados  
- El generador de código de Fakes creará las propiedades de corrección de compatibilidad para los métodos privados que sólo tienen tipos visibles en la firma, es decir,  tipos de parámetros y tipo de valor devuelto visibles.  
+ El generador de código de Fakes creará las propiedades de corrección de compatibilidad para los métodos privados que sólo tienen tipos visibles en la firma, es decir, tipos de parámetros y tipo de valor devuelto visibles.  
   
 ###  <a name="BKMK_Binding_interfaces"></a> Interfaces de enlace  
  Cuando un tipo corregido para compatibilidad implementa una interfaz, el generador de código emite un método que le permite enlazar a la vez todos los miembros de esa interfaz.  
@@ -458,11 +474,11 @@ public class ShimMyClass : ShimBase<MyClass> {
 ```  
   
 ##  <a name="BKMK_Changing_the_default_behavior"></a> Cambiar el comportamiento predeterminado  
- Cada tipo de corrección de compatibilidad generado contiene una instancia de la interfaz `IShimBehavior` mediante la propiedad `ShimBase<T>.InstanceBehavior`.  El comportamiento se usa siempre que un cliente llama a un miembro de instancia que no se ha corregido para compatibilidad explícitamente.  
+ Cada tipo de corrección de compatibilidad generado contiene una instancia de la interfaz `IShimBehavior` mediante la propiedad `ShimBase<T>.InstanceBehavior`. El comportamiento se usa siempre que un cliente llama a un miembro de instancia que no se ha corregido para compatibilidad explícitamente.  
   
- Si el comportamiento no se ha establecido, se utiliza la instancia devuelta por la propiedad estática `ShimsBehaviors.Current`.  De forma predeterminada, esta propiedad devuelve un comportamiento que genera una excepción `NotImplementedException`.  
+ Si el comportamiento no se ha establecido, se utiliza la instancia devuelta por la propiedad estática `ShimsBehaviors.Current`. De forma predeterminada, esta propiedad devuelve un comportamiento que genera una excepción `NotImplementedException`.  
   
- Se puede cambiar en cualquier momento este comportamiento estableciendo la propiedad `InstanceBehavior` en cualquier instancia de corrección de compatibilidad.  Por ejemplo, el siguiente fragmento cambia la corrección de compatibilidad a un comportamiento que no hace nada o devuelve el valor predeterminado del tipo de valor devuelto, es decir, default\(T\):  
+ Se puede cambiar en cualquier momento este comportamiento estableciendo la propiedad `InstanceBehavior` en cualquier instancia de corrección de compatibilidad. Por ejemplo, el siguiente fragmento cambia la corrección de compatibilidad a un comportamiento que no hace nada o devuelve el valor predeterminado del tipo de valor devuelto, es decir, default(T):  
   
 ```c#  
 // unit test code  
@@ -496,10 +512,10 @@ ShimMyClass.BehaveAsNotImplemented();
 ```  
   
 ##  <a name="BKMK_Concurrency"></a> Simultaneidad  
- Los tipos de corrección de compatibilidad se aplican a todos los subprocesos en AppDomain y no tienen afinidad de subprocesos.  Este hecho es importante si piensa utilizar un ejecutor de pruebas que admita la simultaneidad: las pruebas de tipos de corrección de compatibilidad no se pueden ejecutar simultáneamente.  El tiempo de ejecución de Fakes no impone esta propiedad.  
+ Los tipos de corrección de compatibilidad se aplican a todos los subprocesos en AppDomain y no tienen afinidad de subprocesos. Este hecho es importante si piensa utilizar un ejecutor de pruebas que admita la simultaneidad: las pruebas de tipos de corrección de compatibilidad no se pueden ejecutar simultáneamente. El tiempo de ejecución de Fakes no impone esta propiedad.  
   
-##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Llamar al método original desde el método de la corrección de compatibilidad  
- Imagine que quisiéramos escribir el texto en el sistema de archivos después de validar el nombre de archivo que se ha pasado al método.  En ese caso, querríamos llamar al método original mientras seguimos en el método de corrección de compatibilidad.  
+##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Llamar al método original desde el método de la corrección de compatibilidad (shim)  
+ Imagine que quisiéramos escribir el texto en el sistema de archivos después de validar el nombre de archivo que se ha pasado al método. En ese caso, querríamos llamar al método original mientras seguimos en el método de corrección de compatibilidad.  
   
  El primer enfoque para solucionar este problema consiste en encapsular una llamada al método original mediante un delegado y `ShimsContext.ExecuteWithoutShims()`, como en el código siguiente:  
   
@@ -541,14 +557,15 @@ ShimFile.WriteAllTextStringString = shim;
 ```  
   
 ##  <a name="BKMK_Limitations"></a> Limitaciones  
- Las correcciones de compatibilidad no se puede usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System**.  
+ Las correcciones de compatibilidad (shim) no se pueden usar en todos los tipos de las bibliotecas de clases base de .NET **mscorlib** y **System**.  
   
-## Recursos externos  
+## <a name="external-resources"></a>Recursos externos  
   
-### Orientación  
- [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Orientación  
+ [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## Vea también  
- [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Blog de Peter Provost: Correcciones de compatibilidad \(shim\) en Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Vídeo \(1h 16m\): Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+## <a name="see-also"></a>Vea también  
+ [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
+ [Blog de Peter Provost sobre correcciones de compatibilidad (shim) de Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)
+
