@@ -1,7 +1,7 @@
 ---
 title: Plantilla de proyectos de servicios en la nube de Azure para Python | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 10ea76d474d96ba4b5aa95584fd1893abe05d991
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 5dd1c40c925327c9494e3a334cdf348692a4981d
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicios en la nube de Azure para Python
 
-Herramientas de Python para Visual Studio (PTVS) proporciona plantillas para ayudarle a empezar a crear servicios en la nube de Azure con Python.
+Visual Studio proporciona plantillas para ayudarle a empezar a crear Azure Cloud Services con Python.
 
 Un [servicio en la nube](http://go.microsoft.com/fwlink/?LinkId=306052) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, cualquier marco web que admita WSGI se puede utilizar para escribir este tipo de aplicación (tal como admite la [plantilla de proyecto Web](template-web.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Dichos usuarios normalmente usan las bibliotecas de [datos](http://go.microsoft.com/fwlink/?LinkId=401571) y del [servicio de aplicaciones](http://go.microsoft.com/fwlink/?LinkId=401572), que se pueden instalar con `pip install`&nbsp;[`azure`](http://pypi.org/project/azure).
 
@@ -58,7 +58,7 @@ Este tema contiene detalles sobre la plantilla de proyecto y otra compatibilidad
 
 1. Después de agregar un nuevo rol al proyecto, verá algunas instrucciones de configuración. Estas son normalmente innecesarias, pero pueden resultar útiles para futuras personalización de los proyectos. Tenga en cuenta que al agregar varios roles al mismo tiempo, solo permanecerán abiertas las instrucciones para el último rol. Sin embargo, puede encontrar las instrucciones y sugerencias para solucionar problemas en sus archivos `readme.mht` correspondientes, que se encuentran en la raíz del rol o en la carpeta `bin`.
 
-1. Una carpeta `bin` de proyecto también contiene uno o dos scripts de PowerShell que se usan para configurar la máquina virtual remota, incluida la instalación de Python, cualquier archivo [requirements.txt](#requirementstxt) del proyecto y la configuración de IIS si es necesario. Puede editar estos archivos como desee para la implementación, aunque las opciones más comunes se pueden administrar de otras maneras (vea [Configuración de la implementación de roles](#configuring-role-deployment) a continuación). No se recomienda quitar estos archivos, ya que, en su lugar, se utilizará un script de configuración heredado si no están disponibles.
+1. Una carpeta `bin` de proyecto también contiene uno o dos scripts de PowerShell que se usan para configurar la máquina virtual remota, incluida la instalación de Python, cualquier archivo [requirements.txt](#dependencies) del proyecto y la configuración de IIS si es necesario. Puede editar estos archivos como desee para la implementación, aunque las opciones más comunes se pueden administrar de otras maneras (vea [Configuración de la implementación de roles](#configuring-role-deployment) a continuación). No se recomienda quitar estos archivos, ya que, en su lugar, se utilizará un script de configuración heredado si no están disponibles.
 
     ![Archivos de compatibilidad de rol de trabajo](media/template-azure-cloud-service-worker-role-support-files.png)
 

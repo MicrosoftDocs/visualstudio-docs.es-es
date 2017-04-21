@@ -29,13 +29,42 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
 Registro de cambios de Visual Studio Tools para Unity.  
+
+## <a name="3100"></a>3.1.0.0
+ Lanzamiento 07-04-2017
+
+### <a name="new-features"></a>Características nuevas  
+  
+-   **Depurador:**  
+
+    -   Se ha agregado compatibilidad con el nuevo tiempo de ejecución de Unity (con compatibilidad con .NET 4.6 o C# 6).
+        
+-   **Generación de proyectos:**  
+
+    -   Se ha agregado compatibilidad con el perfil de .NET 4.6.
+    
+    -   Se ha agregado compatibilidad con los archivos mcs.rsp.
+    
+    -   Habilite siempre el modificador de compilación no seguro cuando se use Unity 5.6.
+    
+    -   Se ha agregado compatibilidad para la generación de proyectos "Player" cuando se usa la plataforma Tienda Windows y el back-end il2cpp.
+   
+### <a name="bug-fixes"></a>Correcciones de errores  
+  
+-   **Editor de código:**  
+
+    -   Se ha corregido la posición del acento circunflejo después de insertar métodos con finalización automática.
+  
+-   **Generación de proyectos:**  
+  
+    -   Se ha quitado el procesamiento posterior a la versión de ensamblado.
 
 ## <a name="3001"></a>3.0.0.1
  Publicado el 07-03-2017
@@ -78,7 +107,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     
     -   Se cambió a https para tener como destino la documentación remota de Unity.
 
-## <a name="28-30-preview"></a>2.8 (versión preliminar&3;.0)
+## <a name="28-30-preview"></a>2.8 (versión preliminar 3.0)
  Lanzamiento 17-11-2016
 
 ### <a name="new-features"></a>Características nuevas  
@@ -372,7 +401,7 @@ Registro de cambios de Visual Studio Tools para Unity.
   
 -   **UI:** compatible con temas de Visual Studio para iconos y menú contextual.  
   
-## <a name="198-20-preview"></a>1.9.8 (versión preliminar&2;.0)
+## <a name="198-20-preview"></a>1.9.8 (versión preliminar 2.0)
  Lanzamiento 12-11-2014  
   
 ### <a name="new-features"></a>Características nuevas  

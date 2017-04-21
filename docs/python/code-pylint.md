@@ -1,7 +1,7 @@
 ---
-title: Uso de PyLint en Herramientas de Python Tools para Visual Studio | Microsoft Docs
+title: Uso de PyLint en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 23650ba24f127b93dc52a3a93aa1126d67e5cf3e
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: c8bfaf9f20e7fecb3633ca101170b0f3e686aa53
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="using-pylint-to-check-python-code"></a>Uso de PyLint para comprobar el código de Python
 
-[PyLint](https://www.pylint.org/), una herramienta ampliamente usada que busca errores en el código de Python y promueve buenos patrones de codificación en Python, se integra en proyectos de Visual Studio para Python.
+[PyLint](https://www.pylint.org/), una herramienta ampliamente usada que busca errores en el código de Python y promueve patrones correctos de codificación en Python, se integra en proyectos de Visual Studio para Python.
 
 Simplemente haga clic con el botón derecho en un proyecto de Python en el Explorador de soluciones y seleccione **Python > Run PyLint... (Ejecutar PyLint...)**:
 

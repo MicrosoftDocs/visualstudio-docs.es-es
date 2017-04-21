@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 746dd25dde790d5e262e25a3702b49721edc3510
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 06f5b9d2223ccb9cbbbff8f2960d89c8efbf05b2
+ms.openlocfilehash: 83a676c5f2f838b6920c5fafbe78dc9b49fbb4cb
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/22/2017
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
-Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para Python a través de la carga de trabajo de Python (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y anterior). 
+Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través de la carga de trabajo de Python (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y anterior). 
 
 Siga nuestras [instrucciones de instalación](installation.md) para configurar la carga de trabajo de Python y, luego, use los vínculos siguientes para obtener más información sobre características relacionadas con Python así como las funcionalidades de Visual Studio.
 
@@ -57,9 +57,19 @@ Siga nuestras [instrucciones de instalación](installation.md) para configurar l
 
 La carga de trabajo de Python también incluye el [SDK de Azure para Python](azure-sdk-for-python.md), lo que simplifica el consumo de servicios de Azure, con compatibilidad para Windows, Mac OS X y Linux.
 
-Consulte también nuestra serie de [introducción y vídeos de análisis detallado](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) en YouTube, que proporciona información general de las principales características.
+Nuestra serie de [vídeos de introducción y análisis detallado](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) en YouTube proporciona información general de las principales características.
 
 [![Vídeos de herramientas de Python](media/video-general.png)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+
+## <a name="questions-and-answers"></a>Preguntas y respuestas
+
+**P. ¿Qué puedo usar para generar la interfaz de usuario con Python?**
+
+Un archivo . La oferta principal en este área es [Qt Project](https://www.qt.io/qt-for-application-development/), con enlaces para Python denominados [PySide (el enlace oficial)](http://wiki.qt.io/PySide) (vea también las [descargas de PySide](https://download.qt.io/official_releases/pyside/.)) y [PyQt](https://wiki.python.org/moin/PyQt). En la actualidad, la compatibilidad con Python en Visual Studio no incluye herramientas específicas para el desarrollo de la interfaz de usuario.
+
+**P. ¿Un proyecto de Python puede producir un archivo ejecutable independiente?**
+
+Un archivo . Por lo general, Python es un lenguaje interpretado, con código que se ejecuta bajo demanda en un entorno compatible con Python adecuado como Visual Studio y servidores web. En la actualidad, Visual Studio no proporciona por sí mismo los medios para crear un archivo ejecutable independiente, lo que significa básicamente un programa con un intérprete de Python insertado. Pero hay varias formas dentro de la comunidad de Python para hacerlo, como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
 
 ## <a name="features-matrix"></a>Matriz de características
 
@@ -68,8 +78,8 @@ La compatibilidad de Python se puede instalar en las siguientes ediciones de Vis
 - [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview)
 - [Visual Studio 2015 (todas las ediciones)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
 - [Visual Studio 2013 Community Edition] (https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
-- [Visual Studio 2013 Express para Web, Update 2 o una versión posterior](http://www.microsoft.com/en-us/download/details.aspx?id=40747)
-- [Visual Studio 2013 Express para escritorio, Update 2 o una versión posterior](http://www.microsoft.com/en-us/download/details.aspx?id=40787)
+- [Visual Studio 2013 Express para Web, Update 2 o una versión posterior](https://www.microsoft.com/en-us/download/details.aspx?id=44912)
+- [Visual Studio 2013 Express para escritorio, Update 2 o una versión posterior](https://www.microsoft.com/en-US/download/details.aspx?id=44914)
 - Visual Studio 2013 (edición Pro o una versión posterior)
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
