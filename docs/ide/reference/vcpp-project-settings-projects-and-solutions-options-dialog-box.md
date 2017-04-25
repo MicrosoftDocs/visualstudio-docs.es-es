@@ -41,7 +41,7 @@ translation.priority.mt:
 translationtype: Human Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: fbe834e4e8178a129f68cec1c4a78ffea3c9fd7c
-ms.lasthandoff: 04/05/2017
+ms.lasthandoff: 04/25/2017
 
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
