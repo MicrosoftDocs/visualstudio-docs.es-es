@@ -1,7 +1,7 @@
 ---
 title: "Usar parámetros de la línea de comandos para instalar Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,16 +32,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: e8ddcebccc5a8a949c75a33de6732d42134e6445
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 09c6971e21e48d250e3a9869860459fd8cbbb50f
+ms.lasthandoff: 04/10/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
-Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos puede hacer lo siguiente:
-- Iniciar la instalación con determinadas opciones preseleccionadas. 
+Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
+- Iniciar la instalación con determinadas opciones preseleccionadas.
 - Automatizar el proceso de instalación.
-- Crear una caché (diseño) de los archivos de instalación para su uso posterior. 
+- Crear una caché (diseño) de los archivos de instalación para su uso posterior.
 
 Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de aproximadamente 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Mediante estos vínculos puede ir directamente a la versión más reciente del programa previo para la edición del producto que está instalando:
 
@@ -54,11 +54,12 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 
 >  Sintaxis: `vs_enterprise.exe [command] <options>...`
 
-(Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando).
+(Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando. Para obtener ejemplos, consulte la página [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)).
+
 
 | **Comando** | **Descripción** |
-| ----------------------- | --------------- | 
-| (en blanco) | Instala el producto. | 
+| ----------------------- | --------------- |
+| (en blanco) | Instala el producto. |
 | ```modify``` | Modifica un producto instalado. |
 | ```update``` | Actualiza un producto instalado. |
 | ```repair``` | Repara un producto instalado. |
@@ -108,7 +109,6 @@ Para obtener una lista de los identificadores de componente y carga de trabajo o
 | de-DE | Alemán |
 | en-US | Inglés |
 | es-ES | Español |
-| cs-CZ | Checo |
 | fr-FR | Francés |
 | it-IT | Italiano |
 | ja-JP | Japonés |
@@ -123,17 +123,19 @@ Para obtener una lista de los identificadores de componente y carga de trabajo o
 
 ## <a name="error-codes"></a>Códigos de error
 En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establecerá en uno de los valores siguientes:
+
 | **Valor** | **Resultado** |
 | --------- | ---------- |
 | 0 | Operación completada correctamente |
 | 3010 | Operación completada correctamente, pero la instalación requiere reiniciar el equipo para que se pueda usar |
 | Otros | Condición de error: consulte los registros para obtener más información |
 
-Cada operación generará varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente. 
+Cada operación generará varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente.
 
 ## <a name="see-also"></a>Vea también
 
- * [Instalar Visual Studio](install-visual-studio.md)
+ * [Instalación de Visual Studio 2017](install-visual-studio.md)
  * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+ * [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
+ * [Notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
