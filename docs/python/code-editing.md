@@ -1,7 +1,7 @@
 ---
-title: "Edición de código en Herramientas de Python para Visual Studio | Microsoft Docs"
+title: "Edición de código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 79d7c18b672119b745258feee0f646dff96c1922
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="editing-python-code"></a>Edición de código de Python
 
-Los desarrolladores invierten gran cantidad de su tiempo en el editor de código; por ello, las Herramientas de Python para Visual Studio (PTVS) ponen a su disposición diferentes funcionalidades que les ayudarán a ser más productivos, como el resaltado de sintaxis de IntelliSense, la finalización automática, la ayuda para la firma, los reemplazos de método y la búsqueda y exploración. 
+Los desarrolladores invierten gran cantidad de su tiempo en el editor de código, de modo que la compatibilidad con Python en Visual Studio proporciona características que le ayudarán a ser más productivo, como el resaltado de sintaxis de IntelliSense, la finalización automática, la ayuda para la firma, los reemplazos de método y la búsqueda y exploración. 
 
 En este tema:
 
@@ -45,9 +45,9 @@ En este tema:
 - [Fragmentos de código](#code-snippets)
 - [Navegación por el código](#navigating-your-code)
 
-Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código. PTVS admite el uso del Examinador de objetos de Visual Studio (**Ver > Otras ventanas > Examinador de objetos** o Ctrl+W,J) para inspeccionar las clases definidas en cada módulo y las funciones definidas en esas clases. 
+Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código. La compatibilidad con Python incluye el uso del Examinador de objetos de Visual Studio (**Ver > Otras ventanas > Examinador de objetos** o Ctrl+W,J) para inspeccionar las clases definidas en cada módulo y las funciones definidas en esas clases. 
 
-Para obtener una introducción a la edición de código Python, consulte el vídeo de youtube.com (3 minutos y 48 segundos)[Getting Started with PTVS, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a PTVS, parte 3: edición):
+Para obtener una introducción a la edición de código de Python, vea el vídeo de youtube.com (3 minutos y 48 segundos) [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a Python en Visual Studio, parte 3: edición):
 
 > [!VÍDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
@@ -136,12 +136,12 @@ Puede ver los fragmentos de código disponibles en el Administrador de fragmento
 Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
 Los fragmentos de código se pueden personalizar al [crear un fragmento de código](https://msdn.microsoft.com/en-us/library/ms165394.aspx) e importándolos a través de 
 
-Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Quizá podamos incluirlo en una futura versión de PTVS.
+Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
 
 
 ## <a name="navigating-your-code"></a>Navegación por el código
 
-PTVS proporciona varios medios para desplazarse rápidamente dentro del código, incluidas las bibliotecas para las que hay código fuente disponible: la [barra de navegación](#navigation-bar), [Ir a definición](#go-to-definition), [Navegar a](#navigate-to), [Buscar todas las referencias](#find-all-references) y el [Examinador de objetos](#object-browser).
+La compatibilidad con Python en Visual Studio proporciona varios medios para desplazarse rápidamente dentro del código, incluidas las bibliotecas para las que hay código fuente disponible: la [barra de navegación](#navigation-bar), [Ir a definición](#go-to-definition), [Navegar a](#navigate-to) y [Buscar todas las referencias](#find-all-references), como se describe a continuación. También se puede usar el [Examinador de objetos](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
 
 ### <a name="navigation-bar"></a>Barra de navegación
 

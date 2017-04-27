@@ -1,7 +1,7 @@
 ---
-title: "Formato de código en Herramientas de Python para Visual Studio | Microsoft Docs"
+title: "Formato del código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,22 +29,22 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: c1d7a19438b796c5666daecef33052e43d1f720f
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="formatting-python-code"></a>Formato de código de Python
 
-El formato de código en Herramientas de Python para Visual Studio (PTVS) versión 2.0 y posterior le permite volver a aplicar formato rápidamente al código para que coincida con las opciones de formato configuradas previamente.
+Visual Studio permite volver a aplicar formato rápidamente al código para que coincida con las opciones de formato configuradas previamente.
 
 - Para aplicar formato a una selección: seleccione **Edit > Advanced > Format Selection** (Editar > Opciones avanzadas > Aplicar formato a selección) o presione Ctrl+E,F.
 - Para aplicar formato a todo el archivo: seleccione **Edit > Advanced > Format Document** (Editar > Opciones avanzadas > Aplicar formato a documento) o presione Ctrl+E,D.
 
 Las opciones se establecen mediante **Tools > Options > Text Editor > Python > Formatting** (Herramientas > Opciones > Editor de texto > Python > Aplicar formato) y sus pestañas secundarias; de forma predeterminada, se configuran para que coincidan con un superconjunto de la [guía de estilo de PEP 8](http://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; las otras tres subpáginas se definen en las secciones siguientes.
 
-PTVS también agrega el práctico comando [Fill Comment Paragraph](#fill-comment-paragraph) (Rellenar párrafo de comentarios) al menú **Edit > Advanced** (Editar > Opciones avanzadas), como se describe a continuación.
+La compatibilidad con Python en Visual Studio también agrega el práctico comando [Rellenar párrafo del comentario](#fill-comment-paragraph-command) al menú **Editar > Opciones avanzadas**, como se describe a continuación.
 
 ## <a name="spacing"></a>Espaciado
 
@@ -109,7 +109,7 @@ Las **instrucciones** controlan la reescritura automática de diversas instrucci
 
 ## <a name="wrapping"></a>Ajuste
 
-El **ajuste** permite establecer el **ancho máximo del comentario** (el valor predeterminado es 80), de modo que si la opción **Wrap comments that are too wide** (Incluir comentarios que son demasiado anchos) está activada, PTVS volverá a formatear los comentarios para no superar ese ancho.
+El **ajuste** permite establecer el **ancho máximo del comentario** (el valor predeterminado es 80), de modo que si la opción **Ajustar comentarios que son demasiado anchos** está activada, Visual Studio volverá a aplicar formato a los comentarios para no superar ese ancho.
 
 ```python
 # Wrapped to 40 columns
