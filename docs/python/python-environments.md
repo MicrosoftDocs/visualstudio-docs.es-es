@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1f8f68e36f94aaf253d304edaa2360333b261be3
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -96,7 +96,7 @@ En el ejemplo anterior, tenemos Python 3.4 (CPython de 32 bits) instalado junto 
 
 Visual Studio normalmente localiza un intérprete de Python instalado comprobando el registro, pero puede no encontrarlo si el intérprete está instalado de un modo no estándar. En tales casos, puede apuntar Visual Studio directamente al intérprete de la siguiente manera:
 
-1. Seleccione **+Personalizado...** en la ventana Python Environments (Entornos de Python) para crear un nuevo entorno y abrir la pestaña [**Configurar**](#configure-tab) que se describe a continuación.
+1. Seleccione **+Personalizado...**  en la ventana Python Environments (Entornos de Python) para crear un nuevo entorno y abrir la pestaña [**Configurar**](#configure-tab) que se describe a continuación.
 
     ![Vista predeterminada para un nuevo entorno personalizado](media/environments-custom-1.png)
 
@@ -172,7 +172,7 @@ En el Explorador de soluciones, también puede expandir el entorno para mostrar 
 
 ![Paquetes de Python para un entorno en el Explorador de soluciones](media/environments-installed-packages.png)
 
-Para instalar nuevos paquetes, haga clic con el botón derecho en el entorno, seleccione **Install Python Package…** (Instalar paquete de Python...) y escriba el nombre del paquete deseado. Los paquetes (y las dependencias) se descargan desde [Python Package Index (PyPI)](https://pypi.python.org/pypi), donde también puede buscar paquetes disponibles. La barra de estado de Visual Studio y la ventana de salida muestran información sobre la instalación. Para desinstalar un paquete, haga clic con el botón derecho en él y seleccione **Quitar**.
+Para instalar nuevos paquetes, haga clic con el botón derecho en el entorno, seleccione **Install Python Package…**  (Instalar paquete de Python...) y escriba el nombre del paquete deseado. Los paquetes (y las dependencias) se descargan desde [Python Package Index (PyPI)](https://pypi.python.org/pypi), donde también puede buscar paquetes disponibles. La barra de estado de Visual Studio y la ventana de salida muestran información sobre la instalación. Para desinstalar un paquete, haga clic con el botón derecho en él y seleccione **Quitar**.
 
 > [!Note]
 > El equipo de desarrollo principal de Python está actualmente trabajando en la compatibilidad con la administración de paquetes de Python. Las entradas mostradas puede que no sean siempre precisas, y la instalación y desinstalación pueden no ser confiables o estar disponibles. Visual Studio usa el administrador de paquetes de pip si está disponible y lo descargará e instalará cuando sea necesario. Visual Studio también puede usar el administrador de paquetes de easy_install. También se muestran los paquetes instalados con pip o easy_install desde la línea de comandos.
@@ -231,7 +231,7 @@ Cuando se agrega un nuevo entorno virtual, si existe un archivo ` requirements.t
 
 ![Creación de un entorno virtual con requirements.txt](media/environments-requirements-txt.png)
 
-Si un paquete no se puede instalar mediante pip y aparece en un archivo `requirements.txt`, toda la instalación da un error. En este caso, edite manualmente el archivo para excluir este paquete o para usar [opciones de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para hacer referencia a una versión instalable del paquete. Por ejemplo, puede ser preferible usar [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar una dependencia y agregar la opción `--find-links <path>` a su `requirements.txt`:
+Si un paquete no se puede instalar mediante pip y aparece en un archivo `requirements.txt`, toda la instalación dará un error. En este caso, edite manualmente el archivo para excluir este paquete o para usar [opciones de pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) para hacer referencia a una versión instalable del paquete. Por ejemplo, puede ser preferible usar [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) para compilar una dependencia y agregar la opción `--find-links <path>` a su `requirements.txt`:
 
 ```output
 C:\Project>pip wheel azure
