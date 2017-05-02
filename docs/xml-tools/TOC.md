@@ -60,8 +60,3 @@
 ### [Plantillas predeterminadas XSLT](xslt-default-templates.md)
 ### [Interfaz de usuario del depurador (XSLT)](debugger-user-interface-xslt.md)
 ### [Generador de perfiles XSLT](xslt-profiler.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

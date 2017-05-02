@@ -129,8 +129,3 @@
 ##### [Cuadro de diálogo Seleccionar conjunto de reglas (heredado)](select-rule-set-dialog-box-legacy.md)
 ##### [Cuadro de diálogo Configuración de tema (heredado)](theme-configuration-dialog-box-legacy.md)
 ##### [Temas, Diseñador de flujo de trabajo, cuadro de diálogo Opciones (heredado)](themes-workflow-designer-options-dialog-box-legacy.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
