@@ -1,0 +1,1 @@
+modo estándar de Internet Explorer 9, modo estándar de Internet Explorer 10, modo estándar de Internet Explorer 11 y aplicaciones de la Tienda Windows
