@@ -22,7 +22,7 @@ caps.handback.revision: 8
 Puede utilizar casi todos los elementos de la API de Windows en tiempo de ejecución en JavaScript.  Sin embargo, hay algunos aspectos de la representación JavaScript de elementos de Windows en tiempo de ejecución que se deben tener en cuenta.  
   
 > [!IMPORTANT]
->  Para obtener información sobre cómo crear componentes de Windows en tiempo de ejecución en C\+\+, C\# o Visual Basic y consumirlos en JavaScript, vea [Crear componentes de Windows en tiempo de ejecución en](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+>  Para obtener información sobre cómo crear componentes de Windows en tiempo de ejecución en C\+\+, C\# o Visual Basic y consumirlos en JavaScript, vea [Crear componentes de Windows en tiempo de ejecución en](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Casos especiales en representación de JavaScript de tipos de Windows en tiempo de ejecución  
   

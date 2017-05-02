@@ -30,7 +30,7 @@ Si usa JavaScript para escribir una aplicación de la [!INCLUDE[win8_appname_lon
  Para obtener información de referencia sobre la documentación, vea [Windows Runtime reference](http://msdn.microsoft.com/es-es/8fe97dbf-8cd4-435f-b481-9e83d0519f9e).  Hay disponibles ejemplos de código en JavaScript y también en C\+\+, C\# y Visual Basic.  
   
 ## Escritura de componentes de Windows en tiempo de ejecución en C\+\+, C\# o Visual Basic  
- Si desea instrucciones para la escritura de componentes de Windows en tiempo de ejecución que se pueden usar en JavaScript, vea [Crear componentes de Windows en tiempo de ejecución en](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+ Si desea instrucciones para la escritura de componentes de Windows en tiempo de ejecución que se pueden usar en JavaScript, vea [Crear componentes de Windows en tiempo de ejecución en](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Convenciones sobre el uso de mayúsculas con características de Windows en tiempo de ejecución  
  Las convenciones sobre el uso de mayúsculas en características de Windows en tiempo de ejecución en JavaScript son ligeramente distintas de las de otros lenguajes:  

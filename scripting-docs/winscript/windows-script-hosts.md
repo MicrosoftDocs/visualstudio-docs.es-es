@@ -37,4 +37,4 @@ Al implementar el host de script de Microsoft Windows, puede suponer con segurid
  Ninguna de estas restricciones se aplican a un host que elija para implementar una interfaz libre\- escribir de [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) y un modelo de objetos libre\- con.  Un host puede utilizar la interfaz de [IActiveScript](../winscript/reference/iactivescript.md) de cualquier subproceso, sin restricciones.  
   
 ## Vea también  
- [Interfaces de script de Microsoft Windows: Introducción](../Topic/%3CPAVE%20OVER%3E%20Microsoft%20Windows%20Script%20Interfaces%20-%20Introduction.md)
+ [Interfaces de script de Microsoft Windows: Introducción](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
