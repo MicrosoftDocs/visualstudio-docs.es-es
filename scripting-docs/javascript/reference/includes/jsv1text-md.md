@@ -1,0 +1,1 @@
+Internet Explorer anterior a Internet Explorer 6
