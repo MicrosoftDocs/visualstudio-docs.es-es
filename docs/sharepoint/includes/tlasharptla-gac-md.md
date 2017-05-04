@@ -1,0 +1,1 @@
+caché global de ensamblados (GAC)

@@ -1,0 +1,3 @@
+  **Aplicación:** la información de este tema se aplica a los proyectos de nivel de documento y los proyectos de complemento de VSTO para las siguientes aplicaciones: Excel; InfoPath 2013 e InfoPath 2010; Outlook; PowerPoint; Project; Visio; Word. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../../vsto/features-available-by-office-application-and-project-type.md).
+
+  
