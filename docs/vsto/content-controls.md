@@ -155,7 +155,7 @@ caps.handback.revision: 64
  Para obtener información general sobre cómo enlazar a datos los controles host en las soluciones de Office, consulte [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### Usar el modelo de enlace de datos de Windows Forms  
- La mayor parte de los controles de contenido admite el modelo simple de enlace de datos que usa Windows Forms.  Un enlace de datos simple significa que un control se enlaza a un único elemento de datos, como un valor de una columna de una tabla de datos.  Para obtener más información, vea el artículo sobre [Enlace de datos y formularios Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ La mayor parte de los controles de contenido admite el modelo simple de enlace de datos que usa Windows Forms.  Un enlace de datos simple significa que un control se enlaza a un único elemento de datos, como un valor de una columna de una tabla de datos.  Para obtener más información, vea el artículo sobre [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  En los proyectos de nivel de documento, puede enlazar datos a controles de contenido en la ventana **Orígenes de datos** de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Para obtener más información sobre cómo agregar controles de contenido enlazados a datos a los documentos, consulte [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md) y [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   

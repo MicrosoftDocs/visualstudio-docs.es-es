@@ -38,7 +38,7 @@ caps.handback.revision: 38
   
 1.  Abra un proyecto de nivel de documento de Excel en Visual Studio, con la hoja de cálculo abierta en el diseñador.  
   
-2.  Abra la ventana **Orígenes de datos** y cree un origen de datos para el proyecto.  Para obtener más información, vea [Cómo: Conectarse a los datos de una base de datos](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Abra la ventana **Orígenes de datos** y cree un origen de datos para el proyecto.  Para obtener más información, vea [Cómo: Conectarse a los datos de una base de datos](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Arrastre el campo o la tabla que desee desde la ventana **Orígenes de datos** a la hoja de cálculo.  
   
@@ -55,11 +55,11 @@ caps.handback.revision: 38
   
 -   Un conjunto de datos con tipo que encapsula las tablas de datos que haya conectado con la base de datos.  Para obtener más información, vea [Trabajar con los conjuntos de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Un objeto <xref:System.Windows.Forms.BindingSource> que conecta el control con el conjunto de datos con tipo.  Para obtener más información, vea [Información general sobre el componente BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+-   Un objeto <xref:System.Windows.Forms.BindingSource> que conecta el control con el conjunto de datos con tipo.  Para obtener más información, vea [Información general sobre el componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Un objeto TableAdapter que conecta el conjunto de datos con tipo a la base de datos.  Para obtener más información, vea [Información general sobre TableAdapter](/visual-studio/data-tools/tableadapter-overview).  
   
--   Un objeto TableAdapterManager, que se utiliza para coordinar los adaptadores de la tabla del conjunto de datos para habilitar las actualizaciones jerárquicas.  Para obtener más información, vea [Actualización jerárquica](../data-tools/hierarchical-update.md) y [Información general sobre TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Un objeto TableAdapterManager, que se utiliza para coordinar los adaptadores de la tabla del conjunto de datos para habilitar las actualizaciones jerárquicas.  Para obtener más información, vea [Actualización jerárquica](../data-tools/hierarchical-update.md) y [Información general sobre TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Cuando se ejecuta el proyecto, el control muestra el primer registro del origen de datos.  Puede utilizar <xref:System.Windows.Forms.BindingSource> para permitirles a los usuarios desplazarse por los registros.  
   

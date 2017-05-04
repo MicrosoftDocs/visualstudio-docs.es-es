@@ -60,7 +60,7 @@ caps.handback.revision: 23
 ## Accesibilidad en tiempo de ejecución  
   
 ### Controles de formularios Windows Forms en documentos de Office  
- Los controles de formularios Windows Forms exponen las propiedades de accesibilidad para proporcionar información sobre el control a los dispositivos de ayuda de accesibilidad, como los lectores de pantalla.  Puede utilizar estas propiedades de accesibilidad cuando los controles están en un documento de Office en una personalización de nivel de documento.  Para obtener más información, vea [Proporcionar información de accesibilidad de controles en Windows Forms](../Topic/Providing%20Accessibility%20Information%20for%20Controls%20on%20a%20Windows%20Form.md).  
+ Los controles de formularios Windows Forms exponen las propiedades de accesibilidad para proporcionar información sobre el control a los dispositivos de ayuda de accesibilidad, como los lectores de pantalla.  Puede utilizar estas propiedades de accesibilidad cuando los controles están en un documento de Office en una personalización de nivel de documento.  Para obtener más información, vea [Proporcionar información de accesibilidad de controles en Windows Forms](http://msdn.microsoft.com/library/887dee6f-5059-4d57-957d-7c6fcd4acb10).  
   
  Sin embargo, existen algunas limitaciones de accesibilidad en tiempo de ejecución cuando los controles de formularios Windows Forms están hospedados en un libro de Excel o en un documento de Word:  
   

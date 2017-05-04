@@ -28,12 +28,12 @@ caps.handback.revision: 40
   
 |Elemento|Descripción|Atributos|  
 |--------------|-----------------|---------------|  
-|[&#60;assembly&#62; &#40;Elemento&#41;](../Topic/%3Cassembly%3E%20Element%20(ClickOnce%20Application).md)|Requerido. Elemento de nivel superior.|`manifestVersion`|  
-|[Elemento &#60;assemblyIdentity&#62; &#40;Aplicación ClickOnce&#41;](../Topic/%3CassemblyIdentity%3E%20Element%20(ClickOnce%20Application).md)|Obligatorio. Identifica el ensamblado principal de la aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[&#60;trustInfo&#62; &#40;Elemento&#41;](../Topic/%3CtrustInfo%3E%20Element%20(ClickOnce%20Application).md)|Identifica los requisitos de seguridad de la aplicación.|Ninguno|  
-|[Elemento &#60;entryPoint&#62; &#40;Aplicación ClickOnce&#41;](../Topic/%3CentryPoint%3E%20Element%20(ClickOnce%20Application).md)|Obligatorio. Identifica el punto de entrada del código de aplicación para la ejecución.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
-|[Elemento &#60;dependency&#62; &#40;Aplicación ClickOnce&#41;](../Topic/%3Cdependency%3E%20Element%20(ClickOnce%20Application).md)|Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguno|  
-|[Elemento &#60;file&#62; &#40;Aplicación ClickOnce&#41;](../Topic/%3Cfile%3E%20Element%20(ClickOnce%20Application).md)|Obligatorio. Identifica cada archivo que no es de ensamblado y que se usa por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes \(COM\) asociados al archivo.|`name`<br /><br /> `size`|  
+|[&#60;assembly&#62; &#40;Elemento&#41;](~/deployment/assembly-element-clickonce-application.md)|Requerido. Elemento de nivel superior.|`manifestVersion`|  
+|[Elemento &#60;assemblyIdentity&#62; &#40;Aplicación ClickOnce&#41;](~/deployment/assemblyidentity-element-clickonce-application.md)|Obligatorio. Identifica el ensamblado principal de la aplicación [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[&#60;trustInfo&#62; &#40;Elemento&#41;](~/deployment/trustinfo-element-clickonce-application.md)|Identifica los requisitos de seguridad de la aplicación.|Ninguno|  
+|[Elemento &#60;entryPoint&#62; &#40;Aplicación ClickOnce&#41;](~/deployment/entrypoint-element-clickonce-application.md)|Obligatorio. Identifica el punto de entrada del código de aplicación para la ejecución.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
+|[Elemento &#60;dependency&#62; &#40;Aplicación ClickOnce&#41;](~/deployment/dependency-element-clickonce-application.md)|Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguno|  
+|[Elemento &#60;file&#62; &#40;Aplicación ClickOnce&#41;](~/deployment/file-element-clickonce-application.md)|Obligatorio. Identifica cada archivo que no es de ensamblado y que se usa por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes \(COM\) asociados al archivo.|`name`<br /><br /> `size`|  
   
  Los manifiestos de aplicación para soluciones de Office tienen el siguiente elemento en el espacio de nombres `co.v1`.  
   
@@ -70,7 +70,7 @@ caps.handback.revision: 40
 |[Elemento &#60;vstoRuntime&#62; &#40;desarrollo de Office en Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Obligatorio. Describe una versión específica del tiempo de ejecución de Visual Studio Tools para Office admitida con la solución de Office.|`release`<br /><br /> `version`<br /><br /> `supportUrl`|  
   
 ## Comentarios  
- Puede editar manualmente manifiestos de implementación y aplicación en soluciones de Office. Después, debe volver a firmar la aplicación y los manifiestos de implementación mediante la generación de manifiestos y la herramienta de edición \(mage.exe y mageui.exe\). Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Puede editar manualmente manifiestos de implementación y aplicación en soluciones de Office. Después, debe volver a firmar la aplicación y los manifiestos de implementación mediante la generación de manifiestos y la herramienta de edición \(mage.exe y mageui.exe\). Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Ubicación del archivo  
  Un manifiesto de aplicación es específico de una versión única de una solución. Por este motivo, los manifiestos de aplicación deben almacenarse por separado de los manifiestos de implementación.[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] coloca los archivos específicos de la versión en un subdirectorio con nombre tras la versión asociada del subdirectorio **Archivos de aplicación** de la carpeta de publicación.  

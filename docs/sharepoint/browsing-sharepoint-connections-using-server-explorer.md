@@ -54,7 +54,7 @@ caps.handback.revision: 19
 |[Cómo: Agregar o quitar conexiones de SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Describe los pasos que se requieren para agregar un nuevo sitio de SharePoint al nodo **Conexiones de SharePoint** en el **Explorador de servidores**.|  
   
 ## Vea también  
- [Server Explorer](../Topic/Server%20Explorer.md)   
+ [Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)   
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

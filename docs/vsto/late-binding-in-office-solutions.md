@@ -68,7 +68,7 @@ caps.handback.revision: 48
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Uso de tipo dinámico &#40;Guía de programación de C&#35;&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict &#40;Instrucción&#41;](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Reflexión &#40;C&#35; y Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)   
+ [Reflexión &#40;C&#35; y Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

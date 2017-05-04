@@ -28,7 +28,7 @@ caps.handback.revision: 17
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si modifica manualmente los manifiestos de aplicación e implementación utilizando la herramienta de generación y edición de manifiestos \(mage.exe y mageui.exe\), debe volver a firmar los manifiestos antes de poder utilizarlos.  Para obtener más información, vea [Cómo: Volver a firmar manifiestos de aplicación e implementación](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Si modifica manualmente los manifiestos de aplicación e implementación utilizando la herramienta de generación y edición de manifiestos \(mage.exe y mageui.exe\), debe volver a firmar los manifiestos antes de poder utilizarlos.  Para obtener más información, vea [Cómo: Volver a firmar manifiestos de aplicación e implementación](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Firmar mediante un certificado  
  Un certificado es un archivo que contiene una clave única y la identidad del editor de la solución.  Puede adquirir certificados de una entidad de certificación o crear su propio certificado y hacer que una entidad de certificación lo firme.  

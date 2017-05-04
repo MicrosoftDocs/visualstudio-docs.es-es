@@ -34,7 +34,7 @@ caps.handback.revision: 69
   
  Los controles host extienden objetos que están en los modelos de objetos de Word y Excel, como los controles de contenido de Word y los intervalos con nombre en Excel. Para obtener más información, consulta [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md).  
   
- Los controles de Windows Forms y host utilizan el modelo de enlace de datos de Windows Forms, que admite tanto *enlace de datos simple* como *enlace de datos complejo* a orígenes de datos como conjuntos de datos y tablas de datos. Para obtener información completa sobre el modelo de enlace de datos en Windows Forms, consulte [Enlace de datos y formularios Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Los controles de Windows Forms y host utilizan el modelo de enlace de datos de Windows Forms, que admite tanto *enlace de datos simple* como *enlace de datos complejo* a orígenes de datos como conjuntos de datos y tablas de datos. Para obtener información completa sobre el modelo de enlace de datos en Windows Forms, consulte [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: consumir datos de bases de datos en Excel](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 69
 ## Enlace de datos complejo  
  El enlace de datos complejo existe cuando una propiedad de control está enlazada a más de un elemento de datos, como varias columnas de una tabla de datos. El control <xref:Microsoft.Office.Tools.Excel.ListObject> para Excel es el único control host que admite enlace de datos complejo. También hay muchos controles de Windows Forms que admiten enlace de datos complejo, como el control <xref:System.Windows.Forms.DataGridView>.  
   
- Para realizar el enlace de datos complejo, establezca la propiedad DataSource del control a un objeto de origen de datos que sea compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea [Orígenes de datos compatibles con formularios Windows Forms](../Topic/Data%20Sources%20Supported%20by%20Windows%20Forms.md).  
+ Para realizar el enlace de datos complejo, establezca la propiedad DataSource del control a un objeto de origen de datos que sea compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea [Orígenes de datos compatibles con formularios Windows Forms](http://msdn.microsoft.com/library/3d2c43f6-462b-4d35-9c86-13e9afe012e1).  
   
  En el ejemplo de código siguiente se crea un elemento <xref:System.Data.DataSet> con dos objetos <xref:System.Data.DataTable> y se rellena una de las tablas con datos. El código enlaza después el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> a la tabla que contiene datos. Este ejemplo es para un proyecto de nivel de documento de Excel.  
   
@@ -63,7 +63,7 @@ caps.handback.revision: 69
  Para ver tutoriales que muestran el enlace de datos complejo, consulte [Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) para obtener un proyecto de nivel de documento y [Tutorial: enlace de datos complejos en el proyecto de complemento de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) para ver un proyecto de complemento VSTO.  
   
 ## Visualización de datos en documentos y libros  
- En los proyectos de nivel de documento, puede utilizar la ventana **Orígenes de datos** para agregar controles enlazados a datos a los documentos o libros con facilidad, del mismo modo que los usa para Windows Forms. Para más información sobre el uso de la ventana **Orígenes de datos**, consulte [Enlazar controles de Windows Forms a datos en Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) y [Orígenes de datos &#40;ventana&#41;](../Topic/Data%20Sources%20Window.md).  
+ En los proyectos de nivel de documento, puede utilizar la ventana **Orígenes de datos** para agregar controles enlazados a datos a los documentos o libros con facilidad, del mismo modo que los usa para Windows Forms. Para más información sobre el uso de la ventana **Orígenes de datos**, consulte [Enlazar controles de Windows Forms a datos en Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) y [Orígenes de datos &#40;ventana&#41;](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 ### Arrastrar controles desde la ventana Orígenes de datos  
  Cuando se arrastra un objeto a un documento desde la ventana **Orígenes de datos**, se crea un control en el documento . El tipo de control que se crea depende de si se enlaza una única columna de datos o varias.  
@@ -103,8 +103,8 @@ caps.handback.revision: 69
   
 ## Vea también  
  [Cómo: consumir datos de bases de datos en Excel](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Enlace de datos y formularios Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md)   
- [Cómo: Crear un control con enlace simple en Windows Forms](../Topic/How%20to:%20Create%20a%20Simple-Bound%20Control%20on%20a%20Windows%20Form.md)   
+ [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27)   
+ [Cómo: Crear un control con enlace simple en Windows Forms](http://msdn.microsoft.com/library/3bcaded8-0f1a-4cc0-8830-f59be253bf4e)   
  [Enlazar controles de Windows Forms a datos en Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
  [Guardar los datos en conjuntos de datos](../Topic/Saving%20data%20back%20to%20the%20database.md)   
  [Cómo: Actualizar datos utilizando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

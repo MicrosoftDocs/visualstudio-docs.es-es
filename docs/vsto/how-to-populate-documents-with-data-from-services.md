@@ -34,7 +34,7 @@ caps.handback.revision: 39
   
 ### Rellenar un proyecto de nivel de documento con los datos de un servicio web  
   
-1.  Abra la ventana **Orígenes de datos** y cree un origen de datos de servicio para el proyecto. Para obtener más información, consulta [Cómo: Conectarse a los datos en un servicio](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Service.md).  
+1.  Abra la ventana **Orígenes de datos** y cree un origen de datos de servicio para el proyecto. Para obtener más información, consulta [Cómo: Conectarse a los datos en un servicio](~/data-tools/how-to-connect-to-data-in-a-service.md).  
   
 2.  Arrastre el campo o la tabla que desee desde la ventana **Orígenes de datos** al documento.  
   

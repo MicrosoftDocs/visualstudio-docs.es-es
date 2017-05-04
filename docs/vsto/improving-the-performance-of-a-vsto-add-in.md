@@ -77,9 +77,9 @@ caps.handback.revision: 13
   
     ```  
   
-     Para obtener información sobre la creación de eventos posteriores a la compilación en un proyecto de C\#, vea [Cómo: Especificar eventos de compilación &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Para obtener información sobre la creación de eventos posteriores a la compilación en un proyecto de C\#, vea [Cómo: Especificar eventos de compilación &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
-     Para obtener información sobre la creación de eventos posteriores a la compilación en un proyecto de Visual Basic, vea [Cómo: Especificar eventos de compilación &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Para obtener información sobre la creación de eventos posteriores a la compilación en un proyecto de Visual Basic, vea [Cómo: Especificar eventos de compilación &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
 ##  <a name="Publish"></a> Publicar soluciones de Office mediante Windows Installer  
  Si publica la solución mediante Windows Installer, el Visual Studio 2010 Tools para Office Runtime omite los pasos siguientes al cargar el complemento de VSTO.  

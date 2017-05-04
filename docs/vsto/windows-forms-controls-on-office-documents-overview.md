@@ -152,7 +152,7 @@ caps.handback.revision: 75
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
  [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
- [Controles de Windows Forms](../Topic/Windows%20Forms%20Controls.md)   
+ [Controles de Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)   
  [Limitaciones de los controles de formularios Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Cómo: Agregar controles de Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Cómo: Cambiar el tamaño de controles en celdas de hojas de cálculo](../vsto/how-to-resize-controls-within-worksheet-cells.md)   

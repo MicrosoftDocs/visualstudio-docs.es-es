@@ -44,7 +44,7 @@ caps.handback.revision: 95
      Aparecerá el cuadro de diálogo **Nuevo proyecto**.  
   
     > [!NOTE]  
-    >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Para obtener más información, vea el artículo de [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Para obtener más información, vea el artículo de [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  En el panel de plantillas, debajo del nodo del lenguaje que desee usar, expanda **Office\/SharePoint**.  
   
@@ -95,7 +95,7 @@ caps.handback.revision: 95
      Aparecerá el cuadro de diálogo **Nuevo proyecto**.  
   
     > [!NOTE]  
-    >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Para obtener más información, vea el artículo de [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  De forma predeterminada, los proyectos de Office tienen como destino [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)].  Para obtener más información, vea el artículo de [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  En el panel de plantillas, debajo del nodo del lenguaje que desee usar, expanda **Office\/SharePoint**.  
   

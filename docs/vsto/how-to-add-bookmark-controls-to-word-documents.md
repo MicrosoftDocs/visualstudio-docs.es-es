@@ -53,7 +53,7 @@ caps.handback.revision: 51
   
 -   Desde la ventana **Orígenes de datos**.  
   
-     Puede arrastrar el control <xref:Microsoft.Office.Tools.Word.Bookmark> a su documento desde la ventana **Orígenes de datos**. Esto es útil cuando se desea enlazar el control a los datos al mismo tiempo. Puede agregar el control host de la misma manera que agregaría un control de Windows Forms desde la ventana **Orígenes de datos**. Para obtener más información, consulta [Enlace de datos y formularios Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+     Puede arrastrar el control <xref:Microsoft.Office.Tools.Word.Bookmark> a su documento desde la ventana **Orígenes de datos**. Esto es útil cuando se desea enlazar el control a los datos al mismo tiempo. Puede agregar el control host de la misma manera que agregaría un control de Windows Forms desde la ventana **Orígenes de datos**. Para obtener más información, consulta [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   

@@ -291,7 +291,7 @@ caps.handback.revision: 50
 ## Vea también  
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)   
- [Language\-Integrated Query \(LINQ\)](../Topic/LINQ%20(Language-Integrated%20Query).md)   
+ [Language\-Integrated Query \(LINQ\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)   
  [Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

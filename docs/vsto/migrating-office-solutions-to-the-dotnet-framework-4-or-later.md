@@ -40,7 +40,7 @@ caps.handback.revision: 54
   
 ## Vea también  
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
- [Cómo: Usar como destino una versión de .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md)   
+ [Cómo: Usar como destino una versión de .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [Solucionar problemas de errores de las soluciones de Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Soporte técnico adicional para errores de soluciones de Office](../vsto/additional-support-for-errors-in-office-solutions.md)  
   

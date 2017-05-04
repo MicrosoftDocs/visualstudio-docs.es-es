@@ -44,6 +44,6 @@ caps.handback.revision: 47
  [Cómo: Usar cuadros de diálogo integrados en Word mediante programación](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Información general acerca del modelo de objetos de Word](../vsto/word-object-model-overview.md)   
  [Enlace en tiempo de ejecución en las soluciones de Office](../vsto/late-binding-in-office-solutions.md)   
- [Reflexión &#40;C&#35; y Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)  
+ [Reflexión &#40;C&#35; y Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
   
   

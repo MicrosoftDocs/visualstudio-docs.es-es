@@ -30,7 +30,7 @@ caps.handback.revision: 21
   
 1.  Cree un proyecto de biblioteca de clases con la siguiente configuración:  
   
-    -   Tiene por destino .NET Framework 3.5.  Para obtener más información sobre cómo seleccionar la versión de .NET Framework de destino, vea [Cómo: Usar como destino una versión de .NET Framework](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    -   Tiene por destino .NET Framework 3.5.  Para obtener más información sobre cómo seleccionar la versión de .NET Framework de destino, vea [Cómo: Usar como destino una versión de .NET Framework](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   Tiene por destino AnyCPU o x64.  De forma predeterminada, la plataforma de destino para los proyectos de biblioteca de clases es AnyCPU.  Para obtener más información sobre cómo seleccionar la plataforma de destino, vea [NIB: How to: Optimize an Application for a Specific CPU Type](http://msdn.microsoft.com/es-es/294a75d2-4279-4b72-8298-2bea05be907a).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 21
   
     -   Puede tener un valor devuelto, pero es opcional.  
   
-    -   El segundo parámetro y el valor devuelto deben ser un tipo que WCF \(Windows Communication Foundation\) pueda serializar.  Para obtener más información, vea [Tipos admitidos por el serializador de contrato de datos](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md) y [Utilización de la clase XmlSerializer](../Topic/Using%20the%20XmlSerializer%20Class.md).  
+    -   El segundo parámetro y el valor devuelto deben ser un tipo que WCF \(Windows Communication Foundation\) pueda serializar.  Para obtener más información, vea [Tipos admitidos por el serializador de contrato de datos](http://msdn.microsoft.com/library/7381b200-437a-4506-9556-d77bf1bc3f34) y [Utilización de la clase XmlSerializer](http://msdn.microsoft.com/library/c680602d-39d3-44f1-bf22-8e6654ad5069).  
   
     -   El método puede tener cualquier visibilidad \(**public**, **internal** o **private**\) y puede ser estático o no estático.  
   

@@ -135,7 +135,7 @@ caps.handback.revision: 41
   
  Para controlar eventos en un proyecto de Visual Basic, seleccione un evento en la lista de nombres de métodos en la parte superior del Editor de código.  
   
- Para controlar eventos en un proyecto de C\#, suscríbase a los eventos de control en el método <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Para obtener más información, consulte [Cómo: Suscribir y cancelar la suscripción a eventos &#40;Guía de programación de C&#35;&#41;](../Topic/How%20to:%20Subscribe%20to%20and%20Unsubscribe%20from%20Events%20(C%23%20Programming%20Guide).md).  
+ Para controlar eventos en un proyecto de C\#, suscríbase a los eventos de control en el método <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Para obtener más información, consulte [Cómo: Suscribir y cancelar la suscripción a eventos &#40;Guía de programación de C&#35;&#41;](http://msdn.microsoft.com/library/6319f39f-282c-4173-8a62-6c4657cf51cd).  
   
  Puede cambiar las propiedades del área de formulario en el método `InitializeManifest` de la clase de generador de áreas de formulario.  
   

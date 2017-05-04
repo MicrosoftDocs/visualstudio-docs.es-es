@@ -41,12 +41,12 @@ caps.handback.revision: 33
   
 5.  Haga clic en **Agregar**.  
   
-6.  Cree su archivo de configuración de acuerdo con el esquema del archivo de configuración de la aplicación.  Para obtener más información, vea [Esquema de los archivos de configuración de .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md).  
+6.  Cree su archivo de configuración de acuerdo con el esquema del archivo de configuración de la aplicación.  Para obtener más información, vea [Esquema de los archivos de configuración de .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
   
  No hay ninguna consideración especial para usar archivos de configuración con proyectos de Office.  
   
 ## Vea también  
- [Esquema de los archivos de configuración de .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md)   
+ [Esquema de los archivos de configuración de .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
   

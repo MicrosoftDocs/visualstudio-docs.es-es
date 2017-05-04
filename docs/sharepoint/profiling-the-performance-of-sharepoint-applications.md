@@ -66,7 +66,7 @@ caps.handback.revision: 17
   
 ## Vea también  
  [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Probar la aplicación](../Topic/Test%20apps%20early%20and%20often.md)   
+ [Probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Mejorar la calidad del código](../test/improve-code-quality.md)  
   
   

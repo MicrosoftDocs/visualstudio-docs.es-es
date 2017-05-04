@@ -77,7 +77,7 @@ caps.handback.revision: 38
   
 4.  Si ya tiene una conexión a la base de datos `AdventureWorksLT`, elija esa conexión y haga clic en **Siguiente**.  
   
-     De lo contrario, haga clic en **Nueva conexión** y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulta [Cómo: Conectarse a los datos de una base de datos](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+     De lo contrario, haga clic en **Nueva conexión** y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulta [Cómo: Conectarse a los datos de una base de datos](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 5.  En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación**, haga clic en **Siguiente**.  
   
@@ -164,6 +164,6 @@ caps.handback.revision: 38
  [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Información general sobre el uso de archivos de bases de datos locales en soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Conectar a los datos en aplicaciones de Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Información general sobre el componente BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Información general sobre el componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

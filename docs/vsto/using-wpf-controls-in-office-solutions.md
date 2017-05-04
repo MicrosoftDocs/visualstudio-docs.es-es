@@ -22,7 +22,7 @@ manager: "ghogen"
 caps.handback.revision: 24
 ---
 # Usar controles de WPF en soluciones de Office
-  Aunque las soluciones creadas con las herramientas de desarrollo de Visual Studio para Office están diseñadas para funcionar directamente con controles de Windows Forms, también puede usar controles WPF en sus soluciones.  Windows Presentation Foundation \(WPF\) es una alternativa a los formularios Windows Forms para diseñar interfaces de usuario.  WPF utiliza un lenguaje de marcado denominado lenguaje XAML que proporciona nuevas técnicas con el fin de incorporar interfaces de usuario, multimedia y documentos.  Par más información, consulte [Introducción a WPF en Visual Studio de 2015](../Topic/Introduction%20to%20WPF%20in%20Visual%20Studio%202015.md).  
+  Aunque las soluciones creadas con las herramientas de desarrollo de Visual Studio para Office están diseñadas para funcionar directamente con controles de Windows Forms, también puede usar controles WPF en sus soluciones.  Windows Presentation Foundation \(WPF\) es una alternativa a los formularios Windows Forms para diseñar interfaces de usuario.  WPF utiliza un lenguaje de marcado denominado lenguaje XAML que proporciona nuevas técnicas con el fin de incorporar interfaces de usuario, multimedia y documentos.  Par más información, consulte [Introducción a WPF en Visual Studio de 2015](http://msdn.microsoft.com/library/582a314e-e23d-4144-b45b-acbbd5579252).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -98,21 +98,21 @@ caps.handback.revision: 24
 ## Recursos de WPF  
  Para obtener más información sobre los problemas de arquitectura y diseño relacionados con el hospedaje de controles de WPF en controles de formularios y formularios Windows Forms, vea los temas siguientes:  
   
--   [Arquitectura de entrada de interoperabilidad entre formularios Windows Forms y WPF](../Topic/Windows%20Forms%20and%20WPF%20Interoperability%20Input%20Architecture.md)  
+-   [Arquitectura de entrada de interoperabilidad entre formularios Windows Forms y WPF](http://msdn.microsoft.com/library/0eb6f137-f088-4c5e-9e37-f96afd28f235)  
   
--   [Asignación de propiedades en formularios Windows Forms y WPF](../Topic/Windows%20Forms%20and%20WPF%20Property%20Mapping.md)  
+-   [Asignación de propiedades en formularios Windows Forms y WPF](http://msdn.microsoft.com/library/999d8298-9c04-467d-a453-86e41002057d)  
   
--   [Interoperabilidad entre Windows Forms y WPF](../Topic/WPF%20and%20Windows%20Forms%20Interoperation.md)  
+-   [Interoperabilidad entre Windows Forms y WPF](http://msdn.microsoft.com/library/9e8aa6b6-112c-4579-98d1-c974917df499)  
   
--   [Controles de formularios Windows Forms y controles equivalentes de WPF](../Topic/Windows%20Forms%20Controls%20and%20Equivalent%20WPF%20Controls.md)  
+-   [Controles de formularios Windows Forms y controles equivalentes de WPF](http://msdn.microsoft.com/library/8a157e6b-8054-46db-a5cf-a78966acc7a1)  
   
  Para obtener más información sobre cómo agregar controles de WPF a los controles de formularios y formularios Windows Forms en Visual Studio en tiempo de diseño, vea los temas siguientes:  
   
--   [Tutorial: Crear nuevo contenido de WPF en Windows Forms en tiempo de diseño](../Topic/Walkthrough:%20Creating%20New%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md).  
+-   [Tutorial: Crear nuevo contenido de WPF en Windows Forms en tiempo de diseño](http://msdn.microsoft.com/library/2e92d8e8-f0e4-4df7-9f07-2acf35cd798c).  
   
--   [Tutorial: Organizar el contenido de WPF en Windows Forms en tiempo de diseño](../Topic/Walkthrough:%20Arranging%20WPF%20Content%20on%20Windows%20Forms%20at%20Design%20Time.md).  
+-   [Tutorial: Organizar el contenido de WPF en Windows Forms en tiempo de diseño](http://msdn.microsoft.com/library/5efb1c53-1484-43d6-aa8a-f4861b99bb8a).  
   
--   [Tutorial: Aplicar estilos al contenido de WPF](../Topic/Walkthrough:%20Styling%20WPF%20Content.md)  
+-   [Tutorial: Aplicar estilos al contenido de WPF](http://msdn.microsoft.com/library/e574aac7-7ea4-4cdb-8034-bab541f000df)  
   
 ## Vea también  
  [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   

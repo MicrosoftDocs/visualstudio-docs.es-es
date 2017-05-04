@@ -42,7 +42,7 @@ caps.handback.revision: 32
   
 -   Cálculo de referencias  
   
- Para obtener información general acerca de multithreading, vea [Multithreading in Components](../Topic/Multithreading%20in%20Components.md).  
+ Para obtener información general acerca de multithreading, vea [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779).  
   
  Office se ejecuta en el STA principal.  Entender las implicaciones que esto conlleva permite entender cómo utilizar varios subprocesos con Office.  
   
@@ -68,16 +68,16 @@ caps.handback.revision: 32
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
   
- Para obtener más información, vea [Managed Threading Best Practices](../Topic/Managed%20Threading%20Best%20Practices.md).  
+ Para obtener más información, vea [Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557).  
   
 ## Formularios no modales  
  Un formulario no modal permite cierto tipo de interacción con la aplicación mientras se muestra el formulario.  El usuario interactúa con el formulario y el formulario interactúa con la aplicación sin cerrarse.  El modelo de objetos de Office admite el uso de formularios no modales administrados; sin embargo, no se deben usar en un subproceso de fondo.  
   
 ## Vea también  
- [Multithreading in Components](../Topic/Multithreading%20in%20Components.md)   
- [Managed Threading](../Topic/Managed%20Threading.md)   
- [Subprocesamiento &#40;C&#35; y Visual Basic&#41;](../Topic/Threading%20(C%23%20and%20Visual%20Basic).md)   
- [Using Threads and Threading](../Topic/Using%20Threads%20and%20Threading.md)   
+ [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
+ [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
+ [Subprocesamiento &#40;C&#35; y Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
+ [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -191,7 +191,7 @@ caps.handback.revision: 57
   
 -   Enlazar celdas a varias columnas de una tabla, en lugar de a un campo.  Para obtener más información, vea [Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Utilizar un control <xref:System.Windows.Forms.BindingNavigator> para desplazarse por los registros.  Para obtener más información, vea [Cómo: Explorar datos con el control BindingNavigator de formularios Windows Forms](../Topic/How%20to:%20Navigate%20Data%20with%20the%20Windows%20Forms%20BindingNavigator%20Control.md).  
+-   Utilizar un control <xref:System.Windows.Forms.BindingNavigator> para desplazarse por los registros.  Para obtener más información, vea [Cómo: Explorar datos con el control BindingNavigator de formularios Windows Forms](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb).  
   
 ## Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   

@@ -206,7 +206,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  "No se pudo cargar la personalización porque no se pudo crear el dominio de la aplicación".  
   
- Visual Studio usa Fusion, el cargador de ensamblados de .NET Framework, para almacenar en caché los ensamblados antes de cargar las soluciones de Office.  Asegúrese de que Visual Studio puede escribir en la caché de Fusion e inténtelo de nuevo.  Para obtener más información, consulte [Copias sombra de ensamblados](../Topic/Shadow%20Copying%20Assemblies.md).  
+ Visual Studio usa Fusion, el cargador de ensamblados de .NET Framework, para almacenar en caché los ensamblados antes de cargar las soluciones de Office.  Asegúrese de que Visual Studio puede escribir en la caché de Fusion e inténtelo de nuevo.  Para obtener más información, consulte [Copias sombra de ensamblados](http://msdn.microsoft.com/library/de8b8759-fca7-4260-896b-5a4973157672).  
   
 ### Error al detener el depurador en un proyecto de nivel de documento después de usar Editar y Continuar  
  Si usa Editar y Continuar para realizar cambios en el código de un proyecto de nivel de documento para Excel o Word mientras el proyecto está en modo de interrupción, podría ver un cuadro de diálogo con el siguiente mensaje de error si el depurador se detiene posteriormente.  

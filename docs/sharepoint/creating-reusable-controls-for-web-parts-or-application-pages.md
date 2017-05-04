@@ -25,7 +25,7 @@ manager: "ghogen"
 caps.handback.revision: 19
 ---
 # Crear controles reutilizables para elementos web o p&#225;ginas de aplicaci&#243;n
-  En Visual Studio, puede crear una personalizada, controles reutilizables que pueden usar las páginas de la aplicación y los elementos web que se ejecutan en SharePoint.  Estos controles se denominan controles de usuario.  Para obtener más información acerca de los controles de usuario, vea [ASP.NET User Controls](../Topic/ASP.NET%20User%20Controls.md).  
+  En Visual Studio, puede crear una personalizada, controles reutilizables que pueden usar las páginas de la aplicación y los elementos web que se ejecutan en SharePoint.  Estos controles se denominan controles de usuario.  Para obtener más información acerca de los controles de usuario, vea [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
   
 ## Crear un control de usuario  
  Para crear un control de usuario, agregue un **Control de usuario** a un **Proyecto de SharePoint vacío**.  Para obtener más información, vea [Cómo: Crear un control de usuario para una página de aplicación o elemento web de SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
@@ -44,7 +44,7 @@ caps.handback.revision: 19
 ## Utilizar el control de usuario  
  Los controles de usuario no aparecen en SharePoint hasta que no se incluyen en una página de aplicación o en un elemento web.  
   
- Para incluir un control de usuario en una página de aplicación, agregue una directiva [@ Register](http://msdn.microsoft.com/es-es/66f34922-be41-4e36-9dc8-1774d85311d1) a la página de aplicación y, a continuación, declare el control de usuario dentro de uno o más marcadores de posición de contenido en la página.  Para obtener un ejemplo de cómo lograr esta tarea en una página web ASP.NET estándar, vea [How to: Include a User Control in an ASP.NET Web Page](../Topic/How%20to:%20Include%20a%20User%20Control%20in%20an%20ASP.NET%20Web%20Page.md).  
+ Para incluir un control de usuario en una página de aplicación, agregue una directiva [@ Register](http://msdn.microsoft.com/es-es/66f34922-be41-4e36-9dc8-1774d85311d1) a la página de aplicación y, a continuación, declare el control de usuario dentro de uno o más marcadores de posición de contenido en la página.  Para obtener un ejemplo de cómo lograr esta tarea en una página web ASP.NET estándar, vea [How to: Include a User Control in an ASP.NET Web Page](http://msdn.microsoft.com/library/7c3bfd74-846c-4b88-b1ef-45d75860af92).  
   
  Para incluir un control de usuario en un elemento web, agréguelo a la colección <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> del archivo de código del elemento web.  En el ejemplo siguiente se muestra cómo agregar el control de usuario a la colección <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> de un elemento web.  
   

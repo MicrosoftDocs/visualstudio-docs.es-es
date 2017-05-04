@@ -39,7 +39,7 @@ caps.handback.revision: 47
   
 1.  Abra un proyecto de nivel de documento de Word en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], con el documento abierto en el diseñador.  
   
-2.  Abra la ventana **Orígenes de datos** y cree un origen de datos desde una base de datos.  Para obtener más información, consulte [Cómo: Conectarse a los datos de una base de datos](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Abra la ventana **Orígenes de datos** y cree un origen de datos desde una base de datos.  Para obtener más información, consulte [Cómo: Conectarse a los datos de una base de datos](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Arrastre el campo que quiera de la ventana **Orígenes de datos** hasta su documento.  
   
@@ -52,11 +52,11 @@ caps.handback.revision: 47
   
 -   Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado.  Para obtener más información, vea [Trabajar con los conjuntos de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) .  
   
--   Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo.  Para obtener más información, consulte [Información general sobre el componente BindingSource](../Topic/BindingSource%20Component%20Overview.md).  
+-   Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo.  Para obtener más información, consulte [Información general sobre el componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Un TableAdapter que conecta el conjunto de datos con tipo a la base de datos.  Para obtener más información, vea [Información general sobre TableAdapter](/visual-studio/data-tools/tableadapter-overview).  
   
--   Un TableAdapterManager, que se usa para coordinar los adaptadores de tablas del conjunto de datos para habilitar las actualizaciones jerárquicas.  Para obtener más información, consulte [Actualización jerárquica](../data-tools/hierarchical-update.md) e [Información general sobre TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Un TableAdapterManager, que se usa para coordinar los adaptadores de tablas del conjunto de datos para habilitar las actualizaciones jerárquicas.  Para obtener más información, consulte [Actualización jerárquica](../data-tools/hierarchical-update.md) e [Información general sobre TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Al ejecutar el proyecto, el control muestra el primer registro del origen de datos.  Puede usar el <xref:System.Windows.Forms.BindingSource> para permitir a los usuarios desplazarse por los registros.  
   
@@ -74,6 +74,6 @@ caps.handback.revision: 47
  [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Información general sobre el uso de archivos de bases de datos locales en soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Conectar a los datos en aplicaciones de Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Información general sobre el componente BindingSource](../Topic/BindingSource%20Component%20Overview.md)  
+ [Información general sobre el componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

@@ -31,7 +31,7 @@ caps.handback.revision: 55
  El orden de pila de los controles dependerá de si el panel de acciones está acoplado vertical u horizontalmente.  
   
 > [!NOTE]  
->  Es posible configurar los controles para cambiar de tamaño con el panel de acciones en caso de que el usuario decida cambiarlo en tiempo de ejecución.  Para ello, se puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de formularios Windows Forms para acoplar los controles al panel de acciones.  Para obtener más información, vea [Cómo: Delimitar controles en formularios Windows Forms](../Topic/How%20to:%20Anchor%20Controls%20on%20Windows%20Forms.md).  
+>  Es posible configurar los controles para cambiar de tamaño con el panel de acciones en caso de que el usuario decida cambiarlo en tiempo de ejecución.  Para ello, se puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de formularios Windows Forms para acoplar los controles al panel de acciones.  Para obtener más información, vea [Cómo: Delimitar controles en formularios Windows Forms](http://msdn.microsoft.com/library/59ea914f-fbd3-427a-80fe-decd02f7ae6d).  
   
 > [!NOTE]  
 >  Es posible que su equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones.  La edición de Visual Studio que tenga y la configuración que esté usando determinan estos elementos.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

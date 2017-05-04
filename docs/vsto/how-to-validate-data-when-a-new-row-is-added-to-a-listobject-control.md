@@ -32,7 +32,7 @@ caps.handback.revision: 42
  Cada vez que se agrega una fila a un <xref:Microsoft.Office.Tools.Excel.ListObject> que está enlazado a datos, se produce el evento <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>. Puede controlar este evento para realizar la validación de datos. Por ejemplo, si la aplicación requiere que solo los empleados de edades comprendidas entre 18 y 65 puedan agregarse al origen de datos, puede comprobar que la edad escrita se encuentra dentro de ese intervalo antes de agregar la fila.  
   
 > [!NOTE]  
->  Debe comprobar siempre las entradas de los usuarios en el servidor, además del cliente. Para obtener más información, consulta [Aplicaciones cliente seguras](../Topic/Secure%20Client%20Applications.md).  
+>  Debe comprobar siempre las entradas de los usuarios en el servidor, además del cliente. Para obtener más información, consulta [Aplicaciones cliente seguras](http://msdn.microsoft.com/library/6239592e-fa7d-4dea-9f00-d296d0048b01).  
   
 #### Para validar datos cuando se agrega una fila nueva a un control ListObject enlazado a datos  
   

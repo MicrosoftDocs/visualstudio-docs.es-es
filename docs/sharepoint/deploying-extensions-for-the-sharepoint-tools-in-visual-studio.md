@@ -220,7 +220,7 @@ caps.handback.revision: 39
 ## Crear paquetes VSIX de forma manual  
  Si desea crear el paquete VSIX para su extensión de herramientas de SharePoint de forma manual, siga estos pasos:  
   
-1.  Cree el archivo extension.vsixmanifest, el archivo \[Content\_Types\].xml y el archivo de paquete VSIX \(archivo .vsix\).  Para obtener más información, vea [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md) y [Procedimiento: empaquetar manualmente una extensión &#40;implementación VSIX&#41;](../Topic/How%20to:%20Manually%20Package%20an%20Extension%20(VSIX%20Deployment).md).  
+1.  Cree el archivo extension.vsixmanifest, el archivo \[Content\_Types\].xml y el archivo de paquete VSIX \(archivo .vsix\).  Para obtener más información, vea [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md) y [Procedimiento: empaquetar manualmente una extensión &#40;implementación VSIX&#41;](~/misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
 2.  Agregue el ensamblado de la extensión al paquete VSIX.  Si la extensión incluye un comando de SharePoint, agregue también el ensamblado que lo implementa al paquete VSIX.  
   

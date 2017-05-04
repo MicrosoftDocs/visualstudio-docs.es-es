@@ -35,7 +35,7 @@ caps.handback.revision: 32
   
 1.  Abra un proyecto de aplicación de Excel en Visual Studio.  
   
-2.  Abra la ventana **Orígenes de datos** y cree un origen de datos a partir de la base de datos.  Para obtener más información, vea [Cómo: Conectarse a los datos de una base de datos](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Abra la ventana **Orígenes de datos** y cree un origen de datos a partir de la base de datos.  Para obtener más información, vea [Cómo: Conectarse a los datos de una base de datos](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Expanda la tabla que contiene los datos que desea mostrar y seleccione la columna concreta.  
   
@@ -43,7 +43,7 @@ caps.handback.revision: 32
   
 5.  Arrastre el control <xref:Microsoft.Office.Tools.Excel.NamedRange> a la celda donde desea que aparezcan los datos.  
   
-6.  En la ficha **Formularios Windows Forms** del **Cuadro de herramientas**, agregue un control <xref:System.Windows.Forms.BindingNavigator> a la hoja de cálculo y configure los controles que desea utilizar.  Para obtener más información, vea [Información general sobre el control BindingNavigator &#40;formularios Windows Forms&#41;](../Topic/BindingNavigator%20Control%20Overview%20(Windows%20Forms).md).  
+6.  En la ficha **Formularios Windows Forms** del **Cuadro de herramientas**, agregue un control <xref:System.Windows.Forms.BindingNavigator> a la hoja de cálculo y configure los controles que desea utilizar.  Para obtener más información, vea [Información general sobre el control BindingNavigator &#40;formularios Windows Forms&#41;](http://msdn.microsoft.com/library/4423eede-f8d1-4d02-822f-5bf8432680d0).  
   
 ## Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)  

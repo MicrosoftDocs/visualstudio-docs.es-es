@@ -98,7 +98,7 @@ caps.handback.revision: 100
  También puede escribir código para responder a los eventos de cualquier objeto, incluyendo eventos de control host, aplicación o documento.  Para obtener más información, consulte [Tutorial: Programar basándose en los eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 ## Enlazar datos a controles en el panel de acciones  
- Los controles del panel de acciones tienen las mismas capacidades de enlace de datos que los controles de Windows Forms.  Puede enlazar los controles a orígenes de datos, como conjuntos de datos, conjuntos de datos con tipo y XML.  Para obtener más información, consulte [Enlace de datos y formularios Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Los controles del panel de acciones tienen las mismas capacidades de enlace de datos que los controles de Windows Forms.  Puede enlazar los controles a orígenes de datos, como conjuntos de datos, conjuntos de datos con tipo y XML.  Para obtener más información, consulte [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  Puede enlazar controles en el panel de acciones y controles en el documento al mismo conjunto de datos.  Por ejemplo, puede crear una relación maestro y detalles entre los controles del panel de acciones y los controles de la hoja de cálculo.  Para obtener más información, consulte [Tutorial: Enlazar datos a controles en un panel de acciones de Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
@@ -124,7 +124,7 @@ caps.handback.revision: 100
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/VB/ThisWorkbook.vb#10)]  
   
 ## Anclar controles  
- Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, el tamaño de los controles podría cambiar junto con el panel de acciones.  Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones.  También puede anclar de la misma manera los controles de Windows Forms al control de usuario.  Para obtener más información, consulte [Cómo: Delimitar controles en formularios Windows Forms](../Topic/How%20to:%20Anchor%20Controls%20on%20Windows%20Forms.md).  
+ Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, el tamaño de los controles podría cambiar junto con el panel de acciones.  Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones.  También puede anclar de la misma manera los controles de Windows Forms al control de usuario.  Para obtener más información, consulte [Cómo: Delimitar controles en formularios Windows Forms](http://msdn.microsoft.com/library/59ea914f-fbd3-427a-80fe-decd02f7ae6d).  
   
 ## Cambiar el tamaño del panel de acciones  
  No puede cambiar directamente el tamaño de un <xref:Microsoft.Office.Tools.ActionsPane> porque <xref:Microsoft.Office.Tools.ActionsPane> está incrustado en el panel de tareas.  Sin embargo, puede cambiar el ancho del panel de tareas mediante programación estableciendo la propiedad <xref:Microsoft.Office.Core.CommandBar.Width%2A> de la <xref:Microsoft.Office.Core.CommandBar> que representa el panel de tareas.  Puede cambiar la altura del panel de tareas si está acoplado horizontalmente o si está flotando.  

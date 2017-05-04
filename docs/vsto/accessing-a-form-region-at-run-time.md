@@ -71,7 +71,7 @@ caps.handback.revision: 22
   
  Para habilitar el acceso a un control desde fuera del archivo de código del área del formulario, cree una propiedad en el archivo de código del área del formulario que devuelva dicho control.  
   
- Para más información sobre cómo crear propiedades en C\#, consulte [Cómo: Declarar y usar propiedades de lectura y escritura &#40;Guía de programación de C&#35;&#41;](../Topic/How%20to:%20Declare%20and%20Use%20Read%20Write%20Properties%20(C%23%20Programming%20Guide).md).  
+ Para más información sobre cómo crear propiedades en C\#, consulte [Cómo: Declarar y usar propiedades de lectura y escritura &#40;Guía de programación de C&#35;&#41;](http://msdn.microsoft.com/library/a4962fef-af7e-4c4b-a929-4ae4d646ab8a).  
   
  Para más información sobre cómo crear propiedades en Visual Basic, consulte [NO EN LA COMPILACIÓN: Cómo: Agregar campos y propiedades a una clase](http://msdn.microsoft.com/es-es/ae53f61b-3abc-413e-8931-703c5f5e8fc2).  
   
