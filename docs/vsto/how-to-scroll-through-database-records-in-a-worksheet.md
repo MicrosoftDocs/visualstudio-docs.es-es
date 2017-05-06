@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Desplazarse por los registros de una base de datos en una hoja de c&#225;lculo | Microsoft Docs"
+title: "C&#243;mo: Desplazarse por los registros de una base de datos en una hoja de c&#225;lculo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

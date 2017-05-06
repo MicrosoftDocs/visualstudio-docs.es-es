@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the SharePoint Project Service | Microsoft Docs"
+title: "How to: Retrieve the SharePoint Project Service"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

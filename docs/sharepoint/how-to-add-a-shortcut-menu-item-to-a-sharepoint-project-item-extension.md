@@ -1,5 +1,5 @@
 ---
-title: "How to: Add a Shortcut Menu Item to a SharePoint Project Item Extension | Microsoft Docs"
+title: "How to: Add a Shortcut Menu Item to a SharePoint Project Item Extension"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

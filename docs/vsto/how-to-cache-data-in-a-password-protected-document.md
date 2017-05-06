@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Almacenar datos en cach&#233; en un documento protegido por contrase&#241;a | Microsoft Docs"
+title: "C&#243;mo: Almacenar datos en cach&#233; en un documento protegido por contrase&#241;a"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

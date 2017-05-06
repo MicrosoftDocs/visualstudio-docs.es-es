@@ -1,5 +1,5 @@
 ---
-title: "Protecci&#243;n mediante contrase&#241;a en documentos de Office | Microsoft Docs"
+title: "Protecci&#243;n mediante contrase&#241;a en documentos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

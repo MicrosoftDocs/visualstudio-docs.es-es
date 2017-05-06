@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar controles XMLNodes a documentos de Word | Microsoft Docs"
+title: "C&#243;mo: Agregar controles XMLNodes a documentos de Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

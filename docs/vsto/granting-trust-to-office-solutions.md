@@ -1,5 +1,5 @@
 ---
-title: "Otorgar confianza a las soluciones de Office | Microsoft Docs"
+title: "Otorgar confianza a las soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

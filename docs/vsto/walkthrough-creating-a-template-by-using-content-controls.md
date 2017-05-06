@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una plantilla mediante controles de contenido | Microsoft Docs"
+title: "Tutorial: Crear una plantilla mediante controles de contenido"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

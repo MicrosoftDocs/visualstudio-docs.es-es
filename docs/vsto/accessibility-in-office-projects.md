@@ -1,5 +1,5 @@
 ---
-title: "Accesibilidad en proyectos de Office | Microsoft Docs"
+title: "Accesibilidad en proyectos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

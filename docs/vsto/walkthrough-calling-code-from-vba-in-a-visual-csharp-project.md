@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: llamar a c&#243;digo desde VBA en un proyecto de Visual C# | Microsoft Docs"
+title: "Tutorial: llamar a c&#243;digo desde VBA en un proyecto de Visual C#"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

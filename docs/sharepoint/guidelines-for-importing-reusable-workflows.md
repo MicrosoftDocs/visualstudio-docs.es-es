@@ -1,5 +1,5 @@
 ---
-title: "Pautas para importar flujos de trabajo reutilizables | Microsoft Docs"
+title: "Pautas para importar flujos de trabajo reutilizables"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

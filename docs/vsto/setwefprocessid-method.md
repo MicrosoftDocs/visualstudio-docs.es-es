@@ -1,5 +1,5 @@
 ---
-title: "SetWefProcessId (M&#233;todo) | Microsoft Docs"
+title: "SetWefProcessId (M&#233;todo)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Configurar un equipo para desarrollar soluciones de Office | Microsoft Docs"
+title: "Configurar un equipo para desarrollar soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

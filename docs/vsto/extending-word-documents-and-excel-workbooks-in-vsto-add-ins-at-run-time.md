@@ -1,5 +1,5 @@
 ---
-title: "Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecuci&#243;n | Microsoft Docs"
+title: "Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecuci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Otorgar confianza a los documentos | Microsoft Docs"
+title: "Otorgar confianza a los documentos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

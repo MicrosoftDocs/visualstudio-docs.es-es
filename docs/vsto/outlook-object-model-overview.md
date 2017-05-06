@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el modelo de objetos de Outlook | Microsoft Docs"
+title: "Informaci&#243;n general sobre el modelo de objetos de Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

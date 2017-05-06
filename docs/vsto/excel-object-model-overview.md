@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el modelo de objetos de Excel | Microsoft Docs"
+title: "Informaci&#243;n general sobre el modelo de objetos de Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

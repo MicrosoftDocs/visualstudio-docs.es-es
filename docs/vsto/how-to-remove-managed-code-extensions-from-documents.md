@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Quitar extensiones de c&#243;digo administrado de documentos | Microsoft Docs"
+title: "C&#243;mo: Quitar extensiones de c&#243;digo administrado de documentos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

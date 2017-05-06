@@ -1,5 +1,5 @@
 ---
-title: "Crear p&#225;ginas para SharePoint | Microsoft Docs"
+title: "Crear p&#225;ginas para SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

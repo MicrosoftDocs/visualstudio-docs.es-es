@@ -1,5 +1,5 @@
 ---
-title: "Compatibilidad con formularios en los flujos de trabajo | Microsoft Docs"
+title: "Compatibilidad con formularios en los flujos de trabajo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

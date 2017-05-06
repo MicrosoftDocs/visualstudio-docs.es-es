@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear controladores de eventos en proyectos de Office | Microsoft Docs"
+title: "C&#243;mo: Crear controladores de eventos en proyectos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

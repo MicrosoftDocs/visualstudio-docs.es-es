@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Personalizar un paquete de soluci&#243;n de SharePoint con los destinos de MSBuild | Microsoft Docs"
+title: "C&#243;mo: Personalizar un paquete de soluci&#243;n de SharePoint con los destinos de MSBuild"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

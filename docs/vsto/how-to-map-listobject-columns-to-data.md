@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Asignar columnas ListObject a datos | Microsoft Docs"
+title: "C&#243;mo: Asignar columnas ListObject a datos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

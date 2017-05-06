@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Importar un tema o p&#225;gina maestra | Microsoft Docs"
+title: "C&#243;mo: Importar un tema o p&#225;gina maestra"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

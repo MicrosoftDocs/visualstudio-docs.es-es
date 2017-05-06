@@ -1,5 +1,5 @@
 ---
-title: "Crear controles reutilizables para elementos web o p&#225;ginas de aplicaci&#243;n | Microsoft Docs"
+title: "Crear controles reutilizables para elementos web o p&#225;ginas de aplicaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

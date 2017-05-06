@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una pesta&#241;a personalizada usando XML de la cinta de opciones | Microsoft Docs"
+title: "Tutorial: Crear una pesta&#241;a personalizada usando XML de la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

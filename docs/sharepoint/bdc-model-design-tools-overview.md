@@ -1,5 +1,5 @@
 ---
-title: "Introducci&#243;n general a las herramientas de dise&#241;o del modelo BDC | Microsoft Docs"
+title: "Introducci&#243;n general a las herramientas de dise&#241;o del modelo BDC"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

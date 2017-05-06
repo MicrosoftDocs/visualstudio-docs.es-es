@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar un par&#225;metro a un m&#233;todo | Microsoft Docs"
+title: "C&#243;mo: Agregar un par&#225;metro a un m&#233;todo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

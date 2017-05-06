@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Cambiar el formato de un documento utilizando controles CheckBox | Microsoft Docs"
+title: "Tutorial: Cambiar el formato de un documento utilizando controles CheckBox"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

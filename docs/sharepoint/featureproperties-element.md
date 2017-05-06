@@ -1,5 +1,5 @@
 ---
-title: "FeatureProperties Element | Microsoft Docs"
+title: "FeatureProperties Element"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

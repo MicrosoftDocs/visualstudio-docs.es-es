@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Importar un &#225;rea de formulario dise&#241;ada en Outlook | Microsoft Docs"
+title: "Tutorial: Importar un &#225;rea de formulario dise&#241;ada en Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

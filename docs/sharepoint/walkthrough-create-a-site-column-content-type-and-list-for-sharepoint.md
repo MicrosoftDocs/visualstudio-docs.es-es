@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint | Microsoft Docs"
+title: "Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

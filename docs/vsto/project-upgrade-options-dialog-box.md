@@ -1,5 +1,5 @@
 ---
-title: "Actualizaci&#243;n de proyecto, cuadro de di&#225;logo Opciones | Microsoft Docs"
+title: "Actualizaci&#243;n de proyecto, cuadro de di&#225;logo Opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

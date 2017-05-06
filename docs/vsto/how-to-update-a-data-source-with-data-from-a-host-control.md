@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Actualizar un origen de datos con datos de un control Host | Microsoft Docs"
+title: "C&#243;mo: Actualizar un origen de datos con datos de un control Host"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

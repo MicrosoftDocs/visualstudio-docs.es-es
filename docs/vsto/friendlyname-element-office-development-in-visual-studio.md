@@ -1,5 +1,5 @@
 ---
-title: "&lt;friendlyName&gt; (elemento) (desarrollo de Office en Visual Studio) | Microsoft Docs"
+title: "&lt;friendlyName&gt; (elemento) (desarrollo de Office en Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

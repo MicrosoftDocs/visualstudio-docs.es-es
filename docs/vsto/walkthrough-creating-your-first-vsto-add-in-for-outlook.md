@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear el primer complemento de VSTO para Outlook | Microsoft Docs"
+title: "Tutorial: Crear el primer complemento de VSTO para Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

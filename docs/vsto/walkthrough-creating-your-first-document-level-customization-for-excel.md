@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear la primera personalizaci&#243;n en el nivel del documento para Excel | Microsoft Docs"
+title: "Tutorial: Crear la primera personalizaci&#243;n en el nivel del documento para Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

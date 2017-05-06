@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Impedir que Outlook muestre un &#225;rea de formulario | Microsoft Docs"
+title: "C&#243;mo: Impedir que Outlook muestre un &#225;rea de formulario"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

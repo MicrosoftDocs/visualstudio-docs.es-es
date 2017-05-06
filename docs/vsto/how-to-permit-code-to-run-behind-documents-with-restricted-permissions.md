@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Permitir que el c&#243;digo se ejecute en documentos con permisos restringidos | Microsoft Docs"
+title: "C&#243;mo: Permitir que el c&#243;digo se ejecute en documentos con permisos restringidos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

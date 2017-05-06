@@ -1,5 +1,5 @@
 ---
-title: "IManagedAddin::Unload | Microsoft Docs"
+title: "IManagedAddin::Unload"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

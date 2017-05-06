@@ -1,5 +1,5 @@
 ---
-title: "Ejemplos y tutoriales de desarrollo de SharePoint | Microsoft Docs"
+title: "Ejemplos y tutoriales de desarrollo de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

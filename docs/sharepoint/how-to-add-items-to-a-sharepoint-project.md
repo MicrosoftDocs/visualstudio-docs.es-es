@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar elementos a un proyecto de SharePoint | Microsoft Docs"
+title: "C&#243;mo: Agregar elementos a un proyecto de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

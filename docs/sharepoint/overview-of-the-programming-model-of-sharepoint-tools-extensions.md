@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Programming Model of SharePoint Tools Extensions | Microsoft Docs"
+title: "Overview of the Programming Model of SharePoint Tools Extensions"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Crea un modelo de conectividad a datos profesionales | Microsoft Docs"
+title: "Crea un modelo de conectividad a datos profesionales"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

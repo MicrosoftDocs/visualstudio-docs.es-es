@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Enlazar datos a controles en un panel de acciones de Excel | Microsoft Docs"
+title: "Tutorial: Enlazar datos a controles en un panel de acciones de Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

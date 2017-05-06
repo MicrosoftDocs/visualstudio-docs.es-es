@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a SharePoint Project Extension | Microsoft Docs"
+title: "Walkthrough: Creating a SharePoint Project Extension"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

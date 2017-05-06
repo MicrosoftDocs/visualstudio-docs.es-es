@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Validar datos cuando se agrega una fila nueva a un control ListObject | Microsoft Docs"
+title: "C&#243;mo: Validar datos cuando se agrega una fila nueva a un control ListObject"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

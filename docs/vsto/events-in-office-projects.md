@@ -1,5 +1,5 @@
 ---
-title: "Eventos de los proyectos de Office | Microsoft Docs"
+title: "Eventos de los proyectos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

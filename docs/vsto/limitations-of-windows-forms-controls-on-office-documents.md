@@ -1,5 +1,5 @@
 ---
-title: "Limitaciones de los controles de formularios Windows Forms en los documentos de Office | Microsoft Docs"
+title: "Limitaciones de los controles de formularios Windows Forms en los documentos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

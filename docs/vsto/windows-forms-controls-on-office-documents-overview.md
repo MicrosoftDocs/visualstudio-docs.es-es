@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre controles de formularios Windows Forms en documentos de Office | Microsoft Docs"
+title: "Informaci&#243;n general sobre controles de formularios Windows Forms en documentos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

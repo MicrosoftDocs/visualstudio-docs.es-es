@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electr&#243;nico en Outlook | Microsoft Docs"
+title: "Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electr&#243;nico en Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

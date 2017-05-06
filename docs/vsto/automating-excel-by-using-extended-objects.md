@@ -1,5 +1,5 @@
 ---
-title: "Automatizar Excel usando objetos extendidos | Microsoft Docs"
+title: "Automatizar Excel usando objetos extendidos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Leer y escribir en propiedades de un documento | Microsoft Docs"
+title: "C&#243;mo: Leer y escribir en propiedades de un documento"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Project Item Schema Reference | Microsoft Docs"
+title: "SharePoint Project Item Schema Reference"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

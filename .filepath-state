@@ -4270,5 +4270,149 @@
   ],
   "76cd87df75d6a82211c5058108f8fa4eed42c9bd": [
     "docs\\vsto\\how-to-programmatically-copy-data-and-formatting-across-worksheets.md"
+  ],
+  "252876765740f201a172ad0f730e9e08682b4d29": [
+    "docs\\vsto\\xmlnodes-control.md"
+  ],
+  "2d0ff7ffd759fe32172fd7622831701b8492fccf": [
+    "docs\\vsto\\how-to-programmatically-create-appointments.md"
+  ],
+  "36d434bac6bdf3fc771236ea13cddce690b45f64": [
+    "docs\\vsto\\how-to-programmatically-run-excel-calculations-programmatically.md"
+  ],
+  "771338443b5a9e1f430ed18060073d2e883c0a05": [
+    "docs\\vsto\\how-to-programmatically-attach-files-to-outlook-e-mail-items.md"
+  ],
+  "22f5cf80de6cac41f1ed44c743241664a2d65d61": [
+    "docs\\vsto\\how-to-set-up-configuration-information-for-an-office-solution.md"
+  ],
+  "725a92305664945586587d444bf86152537392d5": [
+    "docs\\vsto\\user-interface-reference-office-development-in-visual-studio.md"
+  ],
+  "46263d009442e70ce4653f5a96f4be71b2de3c69": [
+    "docs\\sharepoint\\extending-the-sharepoint-project-system.md"
+  ],
+  "562c248405ef524b9b11fd1f94b8e4ecc15201d5": [
+    "docs\\vsto\\how-to-programmatically-create-a-custom-calendar.md"
+  ],
+  "b193316441b4375dd980f6f4a8a1dc880812f877": [
+    "docs\\vsto\\how-to-programmatically-restore-selections-after-searches.md"
+  ],
+  "bef69f0a6a3c13f945b44859c12efefc2af36e7a": [
+    "docs\\vsto\\how-to-cache-data-in-a-password-protected-document.md"
+  ],
+  "90448030f8fa8481da92889190dd909cdac7300f": [
+    "docs\\sharepoint\\how-to-add-items-to-a-sharepoint-project.md"
+  ],
+  "002011bfd418b95f7e5d9189d4b63977e83b39a0": [
+    "docs\\sharepoint\\reference-sharepoint-tools-extensibility.md"
+  ],
+  "2935ffad28f0dece0d51cc2cf713fb4029b4a303": [
+    "docs\\vsto\\how-to-programmatically-cache-a-data-source-in-an-office-document.md"
+  ],
+  "473c865e42dbc3333c1584a8c77f4d7257cfda2a": [
+    "docs\\sharepoint\\how-to-add-a-feature-to-sharepoint-solutions.md"
+  ],
+  "59d664b2012ebc8e387afd37fe5009130c79b572": [
+    "docs\\sharepoint\\how-to-add-a-filter-descriptor-to-a-finder-method.md"
+  ],
+  "ae1798294879e39da36abef7bfc59339c3207310": [
+    "docs\\vsto\\error-messages-office-development-in-visual-studio.md"
+  ],
+  "8b6d040bc097774cf119a1638ff0c61236040bd9": [
+    "docs\\vsto\\how-to-programmatically-delete-outlook-contacts.md"
+  ],
+  "b3ed8d310ddb4e3b157452754e74bb1d020e66a4": [
+    "docs\\vsto\\how-to-prevent-outlook-from-displaying-a-form-region.md"
+  ],
+  "3b636460c1977fbe7549b03ea1c2bb0af59c7e50": [
+    "docs\\vsto\\how-to-hide-controls-on-worksheets-when-printing.md"
+  ],
+  "a749a4699bde5f84541e8734d9835c165e59d21c": [
+    "docs\\sharepoint\\how-to-build-sharepoint-solutions.md"
+  ],
+  "769f9efd3e3ee20f646f35466e7b9b89f50c0f57": [
+    "docs\\vsto\\how-to-open-office-solutions-without-running-code.md"
+  ],
+  "f376bfd8cd1c3fa0f30fc104a5272181648f37b0": [
+    "docs\\vsto\\how-to-programmatically-add-an-entry-to-outlook-contacts.md"
+  ],
+  "056b78874a69f8022d665cd17e58b0f7da76c618": [
+    "docs\\sharepoint\\creating-reusable-controls-for-web-parts-or-application-pages.md"
+  ],
+  "076b975be9a32cf49fd78fd14ff0edc3a55ae4e5": [
+    "docs\\vsto\\how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md"
+  ],
+  "f377e0cb01ffb8ee8a0de5d7ad435f68f74b25fc": [
+    "docs\\sharepoint\\how-to-add-and-remove-feature-dependencies.md"
+  ],
+  "2b2f24346dae498f4ff18cf967b887b8eec51e05": [
+    "docs\\vsto\\how-to-programmatically-search-for-a-specific-contact.md"
+  ],
+  "8e42f3b6e58a3842c3113cab1ca8e1cf6743803c": [
+    "docs\\vsto\\how-to-programmatically-delete-appointments.md"
+  ],
+  "2754da267810e352ffee7d16a77d8e1d430559bf": [
+    "docs\\vsto\\how-to-programmatically-create-custom-folder-items.md"
+  ],
+  "5341065928bfb6f934147091e7a310cb2fb17971": [
+    "docs\\vsto\\how-to-programmatically-refer-to-worksheet-ranges-in-code.md"
+  ],
+  "49b96341264185dc4b8469dab0d9e805fedce3be": [
+    "docs\\vsto\\how-to-programmatically-list-recently-used-workbook-files.md"
+  ],
+  "9662290af471bb859eecca21bce078f2e197079f": [
+    "docs\\sharepoint\\programming-concepts-and-features-for-sharepoint-tools-extensions.md"
+  ],
+  "5ea467a8d3b2528e3df26ccf18a5e60a6f0342e5": [
+    "docs\\vsto\\how-to-programmatically-open-workbooks.md"
+  ],
+  "b217664335c36bf3d64aa0be2da7127c2ffbc175": [
+    "docs\\sharepoint\\how-to-define-a-method-instance.md"
+  ],
+  "105908b4128bc41dfe9c22ad389ff24e3eb314ee": [
+    "docs\\vsto\\how-to-add-xmlmappedrange-controls-to-worksheets.md"
+  ],
+  "8fb900d459d396eab73a5863df3fb4ca344ca0ca": [
+    "docs\\sharepoint\\how-to-add-a-deleter-method.md"
+  ],
+  "fc1d41437338ddf0b241a3c80b912a3806ce9cde": [
+    "docs\\vsto\\how-to-programmatically-retrieve-a-folder-by-name.md"
+  ],
+  "6ed2a1f3debf87006bcc942116d474acba3dcf19": [
+    "docs\\vsto\\how-to-programmatically-copy-data-and-formatting-across-worksheets.md"
+  ],
+  "68db952567af865afa028d81274cc4380d20b0fd": [
+    "docs\\vsto\\how-to-programmatically-add-shapes-to-a-visio-document.md"
+  ],
+  "bfa3f934ed116e17d357ddc67231bb7c7df7ff5a": [
+    "docs\\sharepoint\\sharepoint-development-samples.md"
+  ],
+  "5db3c3253edc0733a392f16adb5581cf712fc399": [
+    "docs\\vsto\\how-to-programmatically-print-visio-documents.md"
+  ],
+  "cf8484e4a0dcdf49e83b9132d995bab66c1e24b3": [
+    "docs\\sharepoint\\how-to-add-a-parameter-to-a-method.md"
+  ],
+  "335ef343308af6b78b45e47ff7c0eeaba332898b": [
+    "docs\\vsto\\update-element-office-development-in-visual-studio.md"
+  ],
+  "d268502c6a05bd4ec5922b5827b99d2cf20f6e72": [
+    "docs\\vsto\\working-with-calendar-items.md"
+  ],
+  "619e5782ea73dedcefa738e57efc5152c805f958": [
+    "docs\\sharepoint\\how-to-add-a-finder-method.md"
+  ],
+  "fa21d5486cb3d053cf231ba4c69b136a2ffce207": [
+    "docs\\vsto\\how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md"
+  ],
+  "b7f697c6e3bad82ca9846ba23e72587f01cfa343": [
+    "docs\\vsto\\how-to-programmatically-check-spelling-in-documents.md"
+  ],
+  "6a7ceda9237bdaecd41dadb8ff1692f3bb9affc5": [
+    "docs\\vsto\\working-with-folders.md"
+  ],
+  "d60990fa7942109f390f15f6e04dab52ecfc38ea": [
+    "docs\\vsto\\how-to-programmatically-create-a-meeting-request.md"
   ]
 }

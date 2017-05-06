@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el modelo de objetos para la cinta de opciones | Microsoft Docs"
+title: "Informaci&#243;n general sobre el modelo de objetos para la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

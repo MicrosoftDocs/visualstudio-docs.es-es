@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Depurar una aplicaci&#243;n de SharePoint mediante IntelliTrace | Microsoft Docs"
+title: "Tutorial: Depurar una aplicaci&#243;n de SharePoint mediante IntelliTrace"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

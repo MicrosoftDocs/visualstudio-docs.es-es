@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear un proyecto de definici&#243;n de sitio b&#225;sico | Microsoft Docs"
+title: "Tutorial: Crear un proyecto de definici&#243;n de sitio b&#225;sico"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

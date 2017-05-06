@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre paneles de acciones | Microsoft Docs"
+title: "Informaci&#243;n general sobre paneles de acciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

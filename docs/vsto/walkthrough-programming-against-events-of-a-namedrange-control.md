@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Programar bas&#225;ndose en los eventos de un control NamedRange | Microsoft Docs"
+title: "Tutorial: Programar bas&#225;ndose en los eventos de un control NamedRange"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

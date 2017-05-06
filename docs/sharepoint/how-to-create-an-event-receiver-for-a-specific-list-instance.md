@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear un receptor de eventos para una instancia de lista gen&#233;rica | Microsoft Docs"
+title: "C&#243;mo: Crear un receptor de eventos para una instancia de lista gen&#233;rica"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

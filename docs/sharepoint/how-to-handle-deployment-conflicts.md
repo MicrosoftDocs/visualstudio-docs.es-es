@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle Deployment Conflicts | Microsoft Docs"
+title: "How to: Handle Deployment Conflicts"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

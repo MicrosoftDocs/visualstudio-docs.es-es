@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint | Microsoft Docs"
+title: "Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

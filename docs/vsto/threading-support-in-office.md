@@ -1,5 +1,5 @@
 ---
-title: "Compatibilidad del subprocesamiento en Office | Microsoft Docs"
+title: "Compatibilidad del subprocesamiento en Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

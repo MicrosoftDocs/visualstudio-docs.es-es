@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Almacenar datos en la memoria cach&#233; para el uso sin conexi&#243;n o en un servidor | Microsoft Docs"
+title: "C&#243;mo: Almacenar datos en la memoria cach&#233; para el uso sin conexi&#243;n o en un servidor"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

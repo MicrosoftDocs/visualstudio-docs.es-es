@@ -1,5 +1,5 @@
 ---
-title: "Consideraciones sobre las soluciones en espacio aislado | Microsoft Docs"
+title: "Consideraciones sobre las soluciones en espacio aislado"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

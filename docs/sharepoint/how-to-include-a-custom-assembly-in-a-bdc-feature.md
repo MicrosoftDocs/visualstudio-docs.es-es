@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Incluir un ensamblado personalizado en una caracter&#237;stica de BDC | Microsoft Docs"
+title: "C&#243;mo: Incluir un ensamblado personalizado en una caracter&#237;stica de BDC"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

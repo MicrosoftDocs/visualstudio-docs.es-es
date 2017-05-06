@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Dise&#241;ar un &#225;rea de formulario de Outlook | Microsoft Docs"
+title: "Tutorial: Dise&#241;ar un &#225;rea de formulario de Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

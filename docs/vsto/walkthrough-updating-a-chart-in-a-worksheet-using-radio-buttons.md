@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Actualizar un gr&#225;fico en una hoja de c&#225;lculo utilizando botones de radio | Microsoft Docs"
+title: "Tutorial: Actualizar un gr&#225;fico en una hoja de c&#225;lculo utilizando botones de radio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

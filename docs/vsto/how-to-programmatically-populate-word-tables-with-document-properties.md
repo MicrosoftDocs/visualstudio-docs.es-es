@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Rellenar tablas de Word con propiedades de documento mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Rellenar tablas de Word con propiedades de documento mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

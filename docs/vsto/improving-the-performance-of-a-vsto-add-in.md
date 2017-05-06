@@ -1,5 +1,5 @@
 ---
-title: "Mejorar el rendimiento de un complemento de VSTO | Microsoft Docs"
+title: "Mejorar el rendimiento de un complemento de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

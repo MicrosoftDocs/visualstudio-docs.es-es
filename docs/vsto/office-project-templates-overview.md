@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre las plantillas de Office Project | Microsoft Docs"
+title: "Informaci&#243;n general sobre las plantillas de Office Project"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

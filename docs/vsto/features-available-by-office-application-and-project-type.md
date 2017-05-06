@@ -1,5 +1,5 @@
 ---
-title: "Caracter&#237;sticas disponibles por aplicaci&#243;n y tipo de proyecto de Office | Microsoft Docs"
+title: "Caracter&#237;sticas disponibles por aplicaci&#243;n y tipo de proyecto de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

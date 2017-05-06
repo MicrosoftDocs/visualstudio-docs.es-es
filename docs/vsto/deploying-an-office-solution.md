@@ -1,5 +1,5 @@
 ---
-title: "Implementar una soluci&#243;n de Office | Microsoft Docs"
+title: "Implementar una soluci&#243;n de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

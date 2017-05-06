@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear men&#250;s de acceso directo para marcadores | Microsoft Docs"
+title: "Tutorial: Crear men&#250;s de acceso directo para marcadores"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

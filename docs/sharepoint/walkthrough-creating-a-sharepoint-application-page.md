@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una p&#225;gina de una aplicaci&#243;n de SharePoint | Microsoft Docs"
+title: "Tutorial: Crear una p&#225;gina de una aplicaci&#243;n de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

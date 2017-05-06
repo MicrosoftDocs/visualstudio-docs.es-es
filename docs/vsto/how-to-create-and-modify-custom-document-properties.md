@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear y modificar propiedades personalizadas para documentos | Microsoft Docs"
+title: "C&#243;mo: Crear y modificar propiedades personalizadas para documentos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

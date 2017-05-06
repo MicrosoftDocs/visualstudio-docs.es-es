@@ -1,5 +1,5 @@
 ---
-title: "Selector de URL (cuadro de di&#225;logo) (desarrollo de SharePoint en Visual Studio) | Microsoft Docs"
+title: "Selector de URL (cuadro de di&#225;logo) (desarrollo de SharePoint en Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

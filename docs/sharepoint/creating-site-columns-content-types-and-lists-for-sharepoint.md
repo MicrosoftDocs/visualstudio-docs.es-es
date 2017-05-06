@@ -1,5 +1,5 @@
 ---
-title: "Crear listas, tipos de contenido y columnas de sitio para SharePoint | Microsoft Docs"
+title: "Crear listas, tipos de contenido y columnas de sitio para SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una lista externa en SharePoint con datos profesionales | Microsoft Docs"
+title: "Tutorial: Crear una lista externa en SharePoint con datos profesionales"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

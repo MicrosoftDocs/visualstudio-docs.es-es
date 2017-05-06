@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear un flujo de trabajo con formularios de asociaci&#243;n y de iniciaci&#243;n | Microsoft Docs"
+title: "Tutorial: Crear un flujo de trabajo con formularios de asociaci&#243;n y de iniciaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

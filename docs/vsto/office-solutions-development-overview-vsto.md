@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el desarrollo de soluciones de Office (VSTO) | Microsoft Docs"
+title: "Informaci&#243;n general sobre el desarrollo de soluciones de Office (VSTO)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

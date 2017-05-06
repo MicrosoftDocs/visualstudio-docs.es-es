@@ -1,5 +1,5 @@
 ---
-title: "How to: Define the Type Descriptor of a Parameter | Microsoft Docs"
+title: "How to: Define the Type Descriptor of a Parameter"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

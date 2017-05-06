@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar un selector de cuadro de di&#225;logo a un grupo de la cinta de opciones | Microsoft Docs"
+title: "C&#243;mo: Agregar un selector de cuadro de di&#225;logo a un grupo de la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

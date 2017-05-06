@@ -1,5 +1,5 @@
 ---
-title: "Extending the SharePoint Connections Node in Server Explorer | Microsoft Docs"
+title: "Extending the SharePoint Connections Node in Server Explorer"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

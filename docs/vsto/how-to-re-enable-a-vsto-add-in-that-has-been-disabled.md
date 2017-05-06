@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Volver a habilitar un complemento de VSTO que se ha deshabilitado | Microsoft Docs"
+title: "C&#243;mo: Volver a habilitar un complemento de VSTO que se ha deshabilitado"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Enlace en tiempo de ejecuci&#243;n en las soluciones de Office | Microsoft Docs"
+title: "Enlace en tiempo de ejecuci&#243;n en las soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

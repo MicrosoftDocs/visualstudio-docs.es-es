@@ -1,5 +1,5 @@
 ---
-title: "Personalizar una cinta de opciones para Outlook | Microsoft Docs"
+title: "Personalizar una cinta de opciones para Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

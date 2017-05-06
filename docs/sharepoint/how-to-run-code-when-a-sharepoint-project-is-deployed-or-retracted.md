@@ -1,5 +1,5 @@
 ---
-title: "How to: Run Code When a SharePoint Project is Deployed or Retracted | Microsoft Docs"
+title: "How to: Run Code When a SharePoint Project is Deployed or Retracted"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

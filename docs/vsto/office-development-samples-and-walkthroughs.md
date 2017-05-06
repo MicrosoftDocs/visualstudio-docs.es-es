@@ -1,5 +1,5 @@
 ---
-title: "Ejemplos y tutoriales del desarrollo de Office | Microsoft Docs"
+title: "Ejemplos y tutoriales del desarrollo de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

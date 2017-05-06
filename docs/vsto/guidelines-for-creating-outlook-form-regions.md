@@ -1,5 +1,5 @@
 ---
-title: "Instrucciones para crear &#225;reas de formulario de Outlook | Microsoft Docs"
+title: "Instrucciones para crear &#225;reas de formulario de Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

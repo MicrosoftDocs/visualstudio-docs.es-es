@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar un m&#233;todo Creator | Microsoft Docs"
+title: "C&#243;mo: Agregar un m&#233;todo Creator"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

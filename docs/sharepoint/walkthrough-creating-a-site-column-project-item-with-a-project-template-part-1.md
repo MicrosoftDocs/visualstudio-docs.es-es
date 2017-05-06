@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1 | Microsoft Docs"
+title: "Tutorial: Crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Limitaciones de programaci&#243;n de elementos y controles Host | Microsoft Docs"
+title: "Limitaciones de programaci&#243;n de elementos y controles Host"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

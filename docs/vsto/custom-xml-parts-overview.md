@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre los elementos XML personalizados | Microsoft Docs"
+title: "Informaci&#243;n general sobre los elementos XML personalizados"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

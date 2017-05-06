@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1 | Microsoft Docs"
+title: "Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

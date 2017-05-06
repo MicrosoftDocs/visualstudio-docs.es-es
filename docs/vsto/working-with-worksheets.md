@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con hojas de c&#225;lculo | Microsoft Docs"
+title: "Trabajar con hojas de c&#225;lculo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

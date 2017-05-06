@@ -1,5 +1,5 @@
 ---
-title: "API Reference (SharePoint Tools Extensibility) | Microsoft Docs"
+title: "API Reference (SharePoint Tools Extensibility)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

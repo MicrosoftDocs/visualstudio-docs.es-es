@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una relaci&#243;n principal-detalle utilizando un conjunto de datos almacenado en cach&#233; | Microsoft Docs"
+title: "Tutorial: Crear una relaci&#243;n principal-detalle utilizando un conjunto de datos almacenado en cach&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

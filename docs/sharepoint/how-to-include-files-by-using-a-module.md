@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Incluir archivos mediante un m&#243;dulo | Microsoft Docs"
+title: "C&#243;mo: Incluir archivos mediante un m&#243;dulo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

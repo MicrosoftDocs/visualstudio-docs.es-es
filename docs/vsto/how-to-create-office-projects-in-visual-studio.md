@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear proyectos de Office en Visual Studio | Microsoft Docs"
+title: "C&#243;mo: Crear proyectos de Office en Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

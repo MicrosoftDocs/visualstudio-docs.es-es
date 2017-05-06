@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con rangos | Microsoft Docs"
+title: "Trabajar con rangos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

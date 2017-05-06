@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear un control de usuario para una p&#225;gina de aplicaci&#243;n o elemento web de SharePoint | Microsoft Docs"
+title: "C&#243;mo: Crear un control de usuario para una p&#225;gina de aplicaci&#243;n o elemento web de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

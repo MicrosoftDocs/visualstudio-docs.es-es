@@ -1,5 +1,5 @@
 ---
-title: "Create VSTO Add-ins for Office by using Visual Studio | Microsoft Docs"
+title: "Create VSTO Add-ins for Office by using Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

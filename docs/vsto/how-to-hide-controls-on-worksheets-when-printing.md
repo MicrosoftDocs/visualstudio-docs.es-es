@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Ocultar controles en hojas de c&#225;lculo al imprimir | Microsoft Docs"
+title: "C&#243;mo: Ocultar controles en hojas de c&#225;lculo al imprimir"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Llamar a c&#243;digo de VBA en un proyecto de Visual Basic | Microsoft Docs"
+title: "Tutorial: Llamar a c&#243;digo de VBA en un proyecto de Visual Basic"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

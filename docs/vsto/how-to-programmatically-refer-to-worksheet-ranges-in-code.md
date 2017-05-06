@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Hacer referencia a rangos de hojas de c&#225;lculo en el c&#243;digo mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Hacer referencia a rangos de hojas de c&#225;lculo en el c&#243;digo mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

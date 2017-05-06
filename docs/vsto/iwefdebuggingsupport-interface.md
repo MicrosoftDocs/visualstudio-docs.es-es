@@ -1,5 +1,5 @@
 ---
-title: "IWefDebuggingSupport (Interfaz) | Microsoft Docs"
+title: "IWefDebuggingSupport (Interfaz)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

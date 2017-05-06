@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Sincronizar un panel de tareas personalizado con un bot&#243;n de la cinta de opciones | Microsoft Docs"
+title: "Tutorial: Sincronizar un panel de tareas personalizado con un bot&#243;n de la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

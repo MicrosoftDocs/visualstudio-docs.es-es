@@ -1,5 +1,5 @@
 ---
-title: "Propiedades de MSBuild compatibles con SharePoint | Microsoft Docs"
+title: "Propiedades de MSBuild compatibles con SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

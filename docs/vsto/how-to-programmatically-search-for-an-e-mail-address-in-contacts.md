@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Buscar una direcci&#243;n de correo electr&#243;nico en los contactos mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Buscar una direcci&#243;n de correo electr&#243;nico en los contactos mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

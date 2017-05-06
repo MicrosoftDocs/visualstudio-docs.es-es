@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el Motor en tiempo de ejecuci&#243;n de Microsoft Visual Studio Tools para Office | Microsoft Docs"
+title: "Informaci&#243;n general sobre el Motor en tiempo de ejecuci&#243;n de Microsoft Visual Studio Tools para Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

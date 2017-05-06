@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Marcar los controles como seguros | Microsoft Docs"
+title: "C&#243;mo: Marcar los controles como seguros"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

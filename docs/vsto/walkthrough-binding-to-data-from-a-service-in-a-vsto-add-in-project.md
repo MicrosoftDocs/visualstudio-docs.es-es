@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Establecer enlaces a datos de un servicio en un proyecto de complemento VSTO | Microsoft Docs"
+title: "Tutorial: Establecer enlaces a datos de un servicio en un proyecto de complemento VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

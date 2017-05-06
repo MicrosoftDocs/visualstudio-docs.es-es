@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un bot&#243;n | Microsoft Docs"
+title: "Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un bot&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Los datos en los tutoriales de soluciones de Office | Microsoft Docs"
+title: "Los datos en los tutoriales de soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre el uso de archivos de bases de datos locales en soluciones de Office | Microsoft Docs"
+title: "Informaci&#243;n general sobre el uso de archivos de bases de datos locales en soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

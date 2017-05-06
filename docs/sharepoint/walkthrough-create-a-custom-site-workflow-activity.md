@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear una actividad de flujo de trabajo personalizada | Microsoft Docs"
+title: "Tutorial: Crear una actividad de flujo de trabajo personalizada"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Implementar, publicar y actualizar una soluci&#243;n de SharePoint en un servidor remoto | Microsoft Docs"
+title: "C&#243;mo: Implementar, publicar y actualizar una soluci&#243;n de SharePoint en un servidor remoto"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

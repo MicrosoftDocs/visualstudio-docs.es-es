@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar controles en la vista Backstage | Microsoft Docs"
+title: "C&#243;mo: Agregar controles en la vista Backstage"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

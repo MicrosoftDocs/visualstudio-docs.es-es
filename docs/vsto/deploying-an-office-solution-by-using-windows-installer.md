@@ -1,5 +1,5 @@
 ---
-title: "Implementar una soluci&#243;n de Office mediante Windows Installer | Microsoft Docs"
+title: "Implementar una soluci&#243;n de Office mediante Windows Installer"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

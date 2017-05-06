@@ -1,5 +1,5 @@
 ---
-title: "SafeControl Element | Microsoft Docs"
+title: "SafeControl Element"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

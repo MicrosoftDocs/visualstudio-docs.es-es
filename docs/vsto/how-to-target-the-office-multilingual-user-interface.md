@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Apuntar a MUI (Multilingual User Interface, Interfaz de usuario multiling&#252;e) de Office | Microsoft Docs"
+title: "C&#243;mo: Apuntar a MUI (Multilingual User Interface, Interfaz de usuario multiling&#252;e) de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

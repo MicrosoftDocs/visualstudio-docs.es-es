@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar y quitar ensamblados adicionales | Microsoft Docs"
+title: "C&#243;mo: Agregar y quitar ensamblados adicionales"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

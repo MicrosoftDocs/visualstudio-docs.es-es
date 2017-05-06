@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar o quitar conexiones de SharePoint | Microsoft Docs"
+title: "C&#243;mo: Agregar o quitar conexiones de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

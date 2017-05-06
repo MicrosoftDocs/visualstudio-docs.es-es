@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Mostrar documentos en Vista previa de impresi&#243;n mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Mostrar documentos en Vista previa de impresi&#243;n mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

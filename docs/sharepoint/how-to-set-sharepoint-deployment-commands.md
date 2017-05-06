@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Establecer comandos de implementaci&#243;n de SharePoint | Microsoft Docs"
+title: "C&#243;mo: Establecer comandos de implementaci&#243;n de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

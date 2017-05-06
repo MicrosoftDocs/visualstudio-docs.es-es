@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear el primer complemento de VSTO para Project | Microsoft Docs"
+title: "Tutorial: Crear el primer complemento de VSTO para Project"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

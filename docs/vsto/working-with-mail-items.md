@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con elementos de correo | Microsoft Docs"
+title: "Trabajar con elementos de correo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

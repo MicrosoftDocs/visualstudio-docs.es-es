@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Agregar una p&#225;gina de aplicaci&#243;n a un flujo de trabajo | Microsoft Docs"
+title: "Tutorial: Agregar una p&#225;gina de aplicaci&#243;n a un flujo de trabajo"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

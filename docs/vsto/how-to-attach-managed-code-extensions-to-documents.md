@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Adjuntar extensiones de c&#243;digo administrado a documentos | Microsoft Docs"
+title: "C&#243;mo: Adjuntar extensiones de c&#243;digo administrado a documentos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

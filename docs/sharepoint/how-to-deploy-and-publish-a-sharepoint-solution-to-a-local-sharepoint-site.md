@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Implementar y publicar una soluci&#243;n de SharePoint en un sitio de SharePoint local | Microsoft Docs"
+title: "C&#243;mo: Implementar y publicar una soluci&#243;n de SharePoint en un sitio de SharePoint local"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

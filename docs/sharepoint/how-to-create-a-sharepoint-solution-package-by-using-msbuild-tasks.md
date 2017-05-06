@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Crear un paquete de soluci&#243;n de SharePoint con las tareas de MSBuild | Microsoft Docs"
+title: "C&#243;mo: Crear un paquete de soluci&#243;n de SharePoint con las tareas de MSBuild"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

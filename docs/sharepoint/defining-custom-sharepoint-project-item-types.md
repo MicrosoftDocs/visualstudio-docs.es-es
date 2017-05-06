@@ -1,5 +1,5 @@
 ---
-title: "Defining Custom SharePoint Project Item Types | Microsoft Docs"
+title: "Defining Custom SharePoint Project Item Types"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

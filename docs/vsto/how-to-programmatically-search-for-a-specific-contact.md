@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Buscar un contacto espec&#237;fico mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Buscar un contacto espec&#237;fico mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

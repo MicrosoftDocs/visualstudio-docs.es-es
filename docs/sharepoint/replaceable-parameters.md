@@ -1,5 +1,5 @@
 ---
-title: "Par&#225;metros reemplazables | Microsoft Docs"
+title: "Par&#225;metros reemplazables"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

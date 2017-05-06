@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con tablas | Microsoft Docs"
+title: "Trabajar con tablas"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

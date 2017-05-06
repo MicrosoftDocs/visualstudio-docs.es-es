@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Extending Server Explorer to Display Web Parts | Microsoft Docs"
+title: "Walkthrough: Extending Server Explorer to Display Web Parts"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Generar perfiles de rendimiento de aplicaciones de SharePoint | Microsoft Docs"
+title: "Generar perfiles de rendimiento de aplicaciones de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

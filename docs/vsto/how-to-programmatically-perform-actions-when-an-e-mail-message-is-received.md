@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Realizar acciones al recibir un mensaje de correo electr&#243;nico mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Realizar acciones al recibir un mensaje de correo electr&#243;nico mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Agregar receptores de eventos de caracter&#237;sticas | Microsoft Docs"
+title: "Tutorial: Agregar receptores de eventos de caracter&#237;sticas"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

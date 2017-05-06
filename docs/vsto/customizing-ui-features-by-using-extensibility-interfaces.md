@@ -1,5 +1,5 @@
 ---
-title: "Personalizar caracter&#237;sticas de la interfaz de usuario mediante interfaces de extensibilidad | Microsoft Docs"
+title: "Personalizar caracter&#237;sticas de la interfaz de usuario mediante interfaces de extensibilidad"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

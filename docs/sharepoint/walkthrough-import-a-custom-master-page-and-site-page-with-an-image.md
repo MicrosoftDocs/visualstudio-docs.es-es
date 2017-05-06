@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Importar una p&#225;gina maestra personalizada y una p&#225;gina de sitio con una imagen | Microsoft Docs"
+title: "Tutorial: Importar una p&#225;gina maestra personalizada y una p&#225;gina de sitio con una imagen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

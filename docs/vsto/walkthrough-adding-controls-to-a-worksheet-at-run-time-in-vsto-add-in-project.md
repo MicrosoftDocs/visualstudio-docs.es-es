@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Agregar controles a una hoja de c&#225;lculo en tiempo de ejecuci&#243;n en un proyecto de complemento de VSTO | Microsoft Docs"
+title: "Tutorial: Agregar controles a una hoja de c&#225;lculo en tiempo de ejecuci&#243;n en un proyecto de complemento de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

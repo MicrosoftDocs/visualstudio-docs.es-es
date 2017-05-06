@@ -1,5 +1,5 @@
 ---
-title: "Almacenar datos en cach&#233; | Microsoft Docs"
+title: "Almacenar datos en cach&#233;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

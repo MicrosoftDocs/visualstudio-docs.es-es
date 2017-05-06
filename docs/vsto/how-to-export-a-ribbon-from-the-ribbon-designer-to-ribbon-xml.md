@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Exportar una cinta de opciones del dise&#241;ador de la cinta de opciones a XML de la cinta de opciones | Microsoft Docs"
+title: "C&#243;mo: Exportar una cinta de opciones del dise&#241;ador de la cinta de opciones a XML de la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

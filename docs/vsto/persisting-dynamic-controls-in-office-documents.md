@@ -1,5 +1,5 @@
 ---
-title: "Guardar controles din&#225;micos en documentos de Office | Microsoft Docs"
+title: "Guardar controles din&#225;micos en documentos de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

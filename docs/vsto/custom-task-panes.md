@@ -1,5 +1,5 @@
 ---
-title: "Paneles de tareas personalizados | Microsoft Docs"
+title: "Paneles de tareas personalizados"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

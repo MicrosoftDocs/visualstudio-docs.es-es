@@ -1,5 +1,5 @@
 ---
-title: "Programar complementos de VSTO | Microsoft Docs"
+title: "Programar complementos de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

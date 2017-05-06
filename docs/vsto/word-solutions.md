@@ -1,5 +1,5 @@
 ---
-title: "Soluciones de Word | Microsoft Docs"
+title: "Soluciones de Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

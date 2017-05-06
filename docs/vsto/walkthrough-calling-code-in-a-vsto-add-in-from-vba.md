@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Llamar a c&#243;digo en un complemento de VSTO desde VBA | Microsoft Docs"
+title: "Tutorial: Llamar a c&#243;digo en un complemento de VSTO desde VBA"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

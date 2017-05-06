@@ -1,5 +1,5 @@
 ---
-title: "Agregar controles a documentos de Office en tiempo de ejecuci&#243;n | Microsoft Docs"
+title: "Agregar controles a documentos de Office en tiempo de ejecuci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Usar controles de formularios Windows Forms en hojas de c&#225;lculo de Excel | Microsoft Docs"
+title: "Usar controles de formularios Windows Forms en hojas de c&#225;lculo de Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

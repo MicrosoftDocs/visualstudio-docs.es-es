@@ -1,5 +1,5 @@
 ---
-title: "Plantillas de proyecto y de elementos de proyecto de SharePoint | Microsoft Docs"
+title: "Plantillas de proyecto y de elementos de proyecto de SharePoint"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

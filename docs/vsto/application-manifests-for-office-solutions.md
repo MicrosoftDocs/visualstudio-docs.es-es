@@ -1,5 +1,5 @@
 ---
-title: "Manifiestos de aplicaci&#243;n para soluciones de Office | Microsoft Docs"
+title: "Manifiestos de aplicaci&#243;n para soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

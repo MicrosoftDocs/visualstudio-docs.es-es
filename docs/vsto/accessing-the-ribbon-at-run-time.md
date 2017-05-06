@@ -1,5 +1,5 @@
 ---
-title: "Obtener acceso a la cinta de opciones en tiempo de ejecuci&#243;n | Microsoft Docs"
+title: "Obtener acceso a la cinta de opciones en tiempo de ejecuci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "&lt;entryPoints&gt; (elemento, Desarrollo de Office en Visual Studio) | Microsoft Docs"
+title: "&lt;entryPoints&gt; (elemento, Desarrollo de Office en Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

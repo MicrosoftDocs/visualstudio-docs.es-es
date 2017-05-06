@@ -1,5 +1,5 @@
 ---
-title: "Personalizar una Cinta para InfoPath | Microsoft Docs"
+title: "Personalizar una Cinta para InfoPath"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

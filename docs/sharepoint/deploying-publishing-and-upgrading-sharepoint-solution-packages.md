@@ -1,6 +1,6 @@
 ---
 title: "Implementar, publicar y actualizar paquetes de soluciones de
-SharePoint | Microsoft Docs"
+SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

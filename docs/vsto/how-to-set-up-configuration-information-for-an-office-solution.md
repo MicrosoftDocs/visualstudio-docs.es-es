@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Establecer la informaci&#243;n de configuraci&#243;n para una soluci&#243;n de Office | Microsoft Docs"
+title: "C&#243;mo: Establecer la informaci&#243;n de configuraci&#243;n para una soluci&#243;n de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Implementar una definici&#243;n de lista de tareas de proyecto | Microsoft Docs"
+title: "Tutorial: Implementar una definici&#243;n de lista de tareas de proyecto"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

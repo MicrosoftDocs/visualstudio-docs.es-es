@@ -1,5 +1,5 @@
 ---
-title: "Introducci&#243;n a la programaci&#243;n de personalizaciones de nivel de documento para Word | Microsoft Docs"
+title: "Introducci&#243;n a la programaci&#243;n de personalizaciones de nivel de documento para Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

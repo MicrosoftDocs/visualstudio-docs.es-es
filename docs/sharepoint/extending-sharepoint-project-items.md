@@ -1,5 +1,5 @@
 ---
-title: "Extending SharePoint Project Items | Microsoft Docs"
+title: "Extending SharePoint Project Items"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con documentos de Visio | Microsoft Docs"
+title: "Trabajar con documentos de Visio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

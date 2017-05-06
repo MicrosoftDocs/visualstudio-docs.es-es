@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar un panel de acciones a documentos de Word o libros de Excel | Microsoft Docs"
+title: "C&#243;mo: Agregar un panel de acciones a documentos de Word o libros de Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

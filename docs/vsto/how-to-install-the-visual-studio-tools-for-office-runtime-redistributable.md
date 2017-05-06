@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Instalar el Motor en tiempo de ejecuci&#243;n de Microsoft Visual Studio Tools para Office redistribuible | Microsoft Docs"
+title: "C&#243;mo: Instalar el Motor en tiempo de ejecuci&#243;n de Microsoft Visual Studio Tools para Office redistribuible"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

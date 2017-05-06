@@ -1,5 +1,5 @@
 ---
-title: "Dise&#241;ador de la cinta de opciones | Microsoft Docs"
+title: "Dise&#241;ador de la cinta de opciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

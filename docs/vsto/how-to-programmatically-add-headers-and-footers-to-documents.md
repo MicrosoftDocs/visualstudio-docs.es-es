@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar encabezados y pies de p&#225;gina a documentos mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Agregar encabezados y pies de p&#225;gina a documentos mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

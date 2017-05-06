@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general sobre la administraci&#243;n de permisos sobre la informaci&#243;n y las extensiones de c&#243;digo administrado | Microsoft Docs"
+title: "Informaci&#243;n general sobre la administraci&#243;n de permisos sobre la informaci&#243;n y las extensiones de c&#243;digo administrado"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

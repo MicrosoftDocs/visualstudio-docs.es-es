@@ -1,5 +1,5 @@
 ---
-title: "Saving Data in Extensions of the SharePoint Project System | Microsoft Docs"
+title: "Saving Data in Extensions of the SharePoint Project System"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

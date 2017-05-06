@@ -1,5 +1,5 @@
 ---
-title: "Tutoriales de personalizaci&#243;n de la interfaz de usuario de Office | Microsoft Docs"
+title: "Tutoriales de personalizaci&#243;n de la interfaz de usuario de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

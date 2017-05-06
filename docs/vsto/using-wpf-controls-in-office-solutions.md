@@ -1,5 +1,5 @@
 ---
-title: "Usar controles de WPF en soluciones de Office | Microsoft Docs"
+title: "Usar controles de WPF en soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

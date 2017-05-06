@@ -1,5 +1,5 @@
 ---
-title: "Calling into the SharePoint Object Models | Microsoft Docs"
+title: "Calling into the SharePoint Object Models"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

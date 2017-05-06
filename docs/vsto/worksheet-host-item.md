@@ -1,5 +1,5 @@
 ---
-title: "Elemento host Worksheet | Microsoft Docs"
+title: "Elemento host Worksheet"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

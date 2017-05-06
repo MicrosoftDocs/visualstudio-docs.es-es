@@ -1,5 +1,5 @@
 ---
-title: "Diferencias entre soluciones en espacio aislado y soluciones de granja | Microsoft Docs"
+title: "Diferencias entre soluciones en espacio aislado y soluciones de granja"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

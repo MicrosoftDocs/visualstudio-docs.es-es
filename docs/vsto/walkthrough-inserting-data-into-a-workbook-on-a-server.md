@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Insertar datos en un libro de trabajo de un servidor | Microsoft Docs"
+title: "Tutorial: Insertar datos en un libro de trabajo de un servidor"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

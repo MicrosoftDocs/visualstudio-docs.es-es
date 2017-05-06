@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Almacenar en memoria cach&#233; un origen de datos de un documento de Office mediante programaci&#243;n | Microsoft Docs"
+title: "C&#243;mo: Almacenar en memoria cach&#233; un origen de datos de un documento de Office mediante programaci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Examinar las conexiones de SharePoint utilizando el Explorador de servidores | Microsoft Docs"
+title: "Examinar las conexiones de SharePoint utilizando el Explorador de servidores"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Obtener acceso a un &#225;rea de formulario en tiempo de ejecuci&#243;n | Microsoft Docs"
+title: "Obtener acceso a un &#225;rea de formulario en tiempo de ejecuci&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

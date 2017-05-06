@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO | Microsoft Docs"
+title: "Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

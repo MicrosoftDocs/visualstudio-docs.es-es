@@ -1,5 +1,5 @@
 ---
-title: "Soluciones de PowerPoint | Microsoft Docs"
+title: "Soluciones de PowerPoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

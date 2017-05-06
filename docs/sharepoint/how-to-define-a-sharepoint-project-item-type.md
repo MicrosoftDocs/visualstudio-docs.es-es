@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a SharePoint Project Item Type | Microsoft Docs"
+title: "How to: Define a SharePoint Project Item Type"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

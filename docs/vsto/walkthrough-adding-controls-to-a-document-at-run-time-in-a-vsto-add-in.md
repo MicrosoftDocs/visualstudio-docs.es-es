@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Agregar controles a un documento en tiempo de ejecuci&#243;n en un complemento de VSTO | Microsoft Docs"
+title: "Tutorial: Agregar controles a un documento en tiempo de ejecuci&#243;n en un complemento de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Controles de contenido | Microsoft Docs"
+title: "Controles de contenido"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

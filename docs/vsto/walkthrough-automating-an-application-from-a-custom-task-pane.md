@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Automatizar una aplicaci&#243;n desde un panel de tareas personalizado | Microsoft Docs"
+title: "Tutorial: Automatizar una aplicaci&#243;n desde un panel de tareas personalizado"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

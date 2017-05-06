@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Profiling a SharePoint Application | Microsoft Docs"
+title: "Walkthrough: Profiling a SharePoint Application"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

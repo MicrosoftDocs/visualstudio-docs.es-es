@@ -1,5 +1,5 @@
 ---
-title: "Combinar XML en manifiestos de la caracter&#237;stica y el paquete | Microsoft Docs"
+title: "Combinar XML en manifiestos de la caracter&#237;stica y el paquete"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

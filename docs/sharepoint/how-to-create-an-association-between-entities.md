@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo crear una asociaci&#243;n entre entidades | Microsoft Docs"
+title: "C&#243;mo crear una asociaci&#243;n entre entidades"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Implementaci&#243;n segura | Microsoft Docs"
+title: "Implementaci&#243;n segura"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

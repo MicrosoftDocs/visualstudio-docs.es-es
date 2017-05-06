@@ -1,5 +1,5 @@
 ---
-title: "Implementar una soluci&#243;n de Office mediante ClickOnce | Microsoft Docs"
+title: "Implementar una soluci&#243;n de Office mediante ClickOnce"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Importar elementos de un sitio de SharePoint existente | Microsoft Docs"
+title: "Importar elementos de un sitio de SharePoint existente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

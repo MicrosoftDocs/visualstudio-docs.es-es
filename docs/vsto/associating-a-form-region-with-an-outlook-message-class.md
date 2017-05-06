@@ -1,5 +1,5 @@
 ---
-title: "Asociar un &#225;rea de formulario a una clase de mensaje de Outlook | Microsoft Docs"
+title: "Asociar un &#225;rea de formulario a una clase de mensaje de Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

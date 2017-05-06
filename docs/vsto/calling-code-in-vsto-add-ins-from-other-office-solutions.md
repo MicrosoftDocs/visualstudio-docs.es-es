@@ -1,5 +1,5 @@
 ---
-title: "Llamar a c&#243;digo en complementos de VSTO desde otras soluciones de Office | Microsoft Docs"
+title: "Llamar a c&#243;digo en complementos de VSTO desde otras soluciones de Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

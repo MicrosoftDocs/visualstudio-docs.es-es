@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO | Microsoft Docs"
+title: "C&#243;mo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Comprobar y depurar c&#243;digo de SharePoint | Microsoft Docs"
+title: "Comprobar y depurar c&#243;digo de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

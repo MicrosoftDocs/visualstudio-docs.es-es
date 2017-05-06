@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Cambiar los datos almacenados en cach&#233; de un libro de trabajo de un servidor | Microsoft Docs"
+title: "Tutorial: Cambiar los datos almacenados en cach&#233; de un libro de trabajo de un servidor"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

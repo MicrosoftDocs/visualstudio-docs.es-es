@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear y depurar una soluci&#243;n de flujo de trabajo de SharePoint | Microsoft Docs"
+title: "Tutorial: Crear y depurar una soluci&#243;n de flujo de trabajo de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

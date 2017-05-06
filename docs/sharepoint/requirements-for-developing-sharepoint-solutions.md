@@ -1,5 +1,5 @@
 ---
-title: "Requisitos para desarrollar soluciones de SharePoint | Microsoft Docs"
+title: "Requisitos para desarrollar soluciones de SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

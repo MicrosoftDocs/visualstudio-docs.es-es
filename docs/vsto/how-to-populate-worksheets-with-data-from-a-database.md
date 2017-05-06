@@ -1,5 +1,5 @@
 ---
-title: "C&#243;mo: Rellenar hojas de c&#225;lculo con datos de una base de datos | Microsoft Docs"
+title: "C&#243;mo: Rellenar hojas de c&#225;lculo con datos de una base de datos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

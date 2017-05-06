@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Insertar texto en un documento de un panel de acciones | Microsoft Docs"
+title: "Tutorial: Insertar texto en un documento de un panel de acciones"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

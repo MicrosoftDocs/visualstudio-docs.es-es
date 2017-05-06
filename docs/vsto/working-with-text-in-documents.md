@@ -1,5 +1,5 @@
 ---
-title: "Trabajar con texto en documentos | Microsoft Docs"
+title: "Trabajar con texto en documentos"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

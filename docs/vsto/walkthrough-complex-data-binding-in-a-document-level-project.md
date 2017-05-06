@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento | Microsoft Docs"
+title: "Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

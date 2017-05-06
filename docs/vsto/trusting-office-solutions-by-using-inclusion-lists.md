@@ -1,5 +1,5 @@
 ---
-title: "Otorgar confianza a las soluciones de Office mediante listas de inclusi&#243;n | Microsoft Docs"
+title: "Otorgar confianza a las soluciones de Office mediante listas de inclusi&#243;n"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Datos almacenados en cach&#233; en las personalizaciones de nivel de documento | Microsoft Docs"
+title: "Datos almacenados en cach&#233; en las personalizaciones de nivel de documento"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

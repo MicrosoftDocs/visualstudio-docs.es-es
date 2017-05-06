@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Recopilar datos con Windows Forms | Microsoft Docs"
+title: "Tutorial: Recopilar datos con Windows Forms"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

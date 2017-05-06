@@ -1,5 +1,5 @@
 ---
-title: "Proporcionar informaci&#243;n de empaquetado e implementaci&#243;n en los elementos del proyecto | Microsoft Docs"
+title: "Proporcionar informaci&#243;n de empaquetado e implementaci&#243;n en los elementos del proyecto"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

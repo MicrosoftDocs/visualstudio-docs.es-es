@@ -1,5 +1,5 @@
 ---
-title: "Informaci&#243;n general acerca del modelo de objetos de Word | Microsoft Docs"
+title: "Informaci&#243;n general acerca del modelo de objetos de Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"
