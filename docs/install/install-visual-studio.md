@@ -36,18 +36,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
 ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.contentlocale: es-es
 ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Instalación de Visual Studio 2017
-Le presentamos una nueva manera de instalar Visual Studio. En nuestra última versión, hemos facilitado la selección e instalación de las características que necesita, y hemos reducido el espacio mínimo de Visual Studio para que instale más rápidamente y con menor impacto en el sistema que antes.  
+Le presentamos una nueva manera de instalar Visual Studio. En nuestra última versión, hemos facilitado la selección e instalación de las características que necesita, y hemos reducido el espacio mínimo de Visual Studio para que instale más rápidamente y con menor impacto en el sistema que antes.
 
  ¿Quiere saber más sobre otras novedades? Vea nuestras [notas de la versión](https://www.visualstudio.com/news/releasenotes/vs15-relnotes). Y para obtener información más detallada sobre cómo hemos rediseñado la experiencia de instalación, vea nuestras publicaciones del blog "[Faster and leaner Visual Studio installer](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/)" (Instalador de Visual Studio más rápido y eficaz) y "[Anatomy of a low-impact Visual Studio installation](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/)" (Anatomía de la instalación de bajo impacto de Visual Studio).  
 
- ¿Está listo para instalarlo? Le guiaremos paso a paso. Comencemos.  
+ ¿Está listo para instalarlo? Le guiaremos paso a paso. Comencemos.
 
 ## <a name="install-the-installer"></a>Instalar el instalador  
  Cuando descargue Visual Studio 2017, obtendrá un archivo de programa previo que a su vez instala nuestro nuevo instalador ligero. Este nuevo instalador incluye todo lo que necesita para personalizar su instalación.  
