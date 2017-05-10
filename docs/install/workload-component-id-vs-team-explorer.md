@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 04/06/2017
+ms.date: 05/10/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -31,9 +31,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 293d694cfff4c375b342d8322483c84fbbeb446c
 ms.openlocfilehash: 7a4538f04e18630da5adeb8189716a5ac34f3c47
+ms.contentlocale: es-es
 ms.lasthandoff: 04/07/2017
 
 ---
