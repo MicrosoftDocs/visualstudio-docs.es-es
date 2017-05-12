@@ -1,417 +1,398 @@
 ---
-title: "Im&#225;genes e iconos para Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Imágenes e iconos para Visual Studio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 04/26/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Im&#225;genes e iconos para Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
+ms.openlocfilehash: 1cec02ea12da168f067d750344c58215e90fd993
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
-##  <a name="a-namebkmkimageuseinvisualstudioa-image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso de imágenes en Visual Studio  
- Antes de crear la ilustración, considere la posibilidad de hacer uso de las imágenes de más de 1.000 en la [biblioteca de imágenes de Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).  
+---
+# <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
+##  <a name="BKMK_ImageUseInVisualStudio"></a>Uso de imágenes en Visual Studio  
+ Antes de crear el material gráfico, considere la posibilidad de hacer que el uso de las imágenes de más de 1.000 en el [biblioteca de imágenes de Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).  
   
 ### <a name="types-of-images"></a>Tipos de imágenes  
   
 -   **Iconos**. Imágenes pequeñas que aparecen en los comandos, las jerarquías, plantillas y así sucesivamente. El tamaño de icono predeterminado utilizado en Visual Studio es un archivo PNG de 16 x 16. Generado automáticamente por el servicio de imágenes de iconos generan el formato XAML para la compatibilidad con HDPI.  
   
-     **NOTA:** mientras que las imágenes se utilizan en el sistema de menús, no debería crear un icono para cada comando. Consulte [menús y comandos de Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) para ver si el comando debería obtener un icono.  
+     **Nota:** mientras que las imágenes se utilizan en el sistema de menús, no debería crear un icono para cada comando. Consulte [menús y comandos de Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) para ver si el comando debería obtener un icono.  
   
--   **Vistas en miniatura.** Imágenes utilizadas en el área de vista previa de un cuadro de diálogo, como el cuadro de diálogo nuevo proyecto.  
+-   **Vistas en miniatura.** Imágenes que se utilizan en el área de vista previa de un cuadro de diálogo, por ejemplo, el cuadro de diálogo nuevo proyecto.  
   
--   **Imágenes del cuadro de diálogo.** Imágenes que aparecen en los cuadros de diálogo o asistentes, como gráficos descriptivos o indicadores de mensaje. Utilice con poca frecuencia y sólo cuando sea necesario para ilustrar un concepto difícil u obtener la atención del usuario (alerta de advertencia).  
+-   **Imágenes del cuadro de diálogo.** Imágenes que aparecen en los cuadros de diálogo o asistentes, como gráficos descriptivos o indicadores de mensaje. Usar con poca frecuencia y solo cuando sea necesario ilustrar un concepto difícil o conseguir la atención del usuario (advertencia de alerta,).  
   
 -   **Imágenes animadas.** Se utiliza en los indicadores de progreso, barras de estado y los cuadros de diálogo de la operación.  
   
--   **Cursores.** Utilizado para indicar si una operación está permitida con el mouse, donde se puede colocar un objeto y así sucesivamente.  
+-   **Cursores.** Utilizado para indicar si se permite una operación mediante el mouse, donde se puede colocar un objeto y así sucesivamente.  
   
-##  <a name="a-namebkmkicondesigna-icon-design"></a><a name="BKMK_IconDesign"></a> Diseño de los iconos  
+##  <a name="BKMK_IconDesign"></a>Diseño de los iconos  
   
 ### <a name="overview"></a>Información general  
- Visual Studio utiliza los iconos de estilo moderno, que tienen un saldo 50/50 positivo o negativo (claro/oscuro) y geometría limpia y utilizar metáforas directas y comprensibles. Diseño de icono crucial puntos giran en torno claridad, la simplificación y el contexto.  
+ Visual Studio usa iconos de estilo moderno, que tienen geometry limpia y un equilibrio entre 50/50 positivo o negativo (claro/oscuro) y usar metáforas directa y comprensibles. Diseño de los iconos fundamental apunta giran en torno claridad, simplificación y contexto.  
   
--   **Claridad:** centrarse en la metáfora de núcleo que proporciona un icono de su significado y la personalidad.  
+-   **Claridad:** centrarse en la metáfora de núcleo que proporciona un icono de su significado y personalidad.  
   
--   **Simplificación:** reducir el icono a su significado core: transmitir el tema con sólo los elementos necesarios y no frills.  
+-   **Simplificación:** reducir el icono a su significado principal: obtener el tema a través con solo los elementos necesarios y no frills.  
   
--   **Contexto:** tener en cuenta todos los aspectos de la función de un icono durante el desarrollo del concepto, que es fundamental a la hora de decidir qué elementos constituyen la metáfora del núcleo del icono.  
+-   **Contexto:** tenga en cuenta todos los aspectos del rol de un icono durante el desarrollo del concepto, que es fundamental a la hora de decidir qué elementos constituyen la metáfora del núcleo del icono.  
   
  Con iconos, hay un número de puntos de diseño para evitar:  
   
--   No utilice los iconos que indican los elementos de interfaz de Usuario excepto cuando sea adecuado. Elegir un enfoque más abstracto o simbólico cuando el elemento de interfaz de Usuario común, evidente, ni único.  
+-   No use los iconos que indican elementos de interfaz de usuario excepto cuando corresponda. Elegir un enfoque más abstracto o simbólico cuando el elemento de interfaz de usuario no es común, evidente, ni único.  
   
--   No abusar de los elementos comunes como documentos, carpetas, flechas y la Lupa. Use estos elementos solo cuando es esencial para el significado del icono. Por ejemplo, la lupa hacia la derecha debe indicar sólo buscar, examinar y buscar.  
+-   No uso excesivo de elementos comunes como documentos, carpetas, flechas y la Lupa. Use estos elementos solo cuando es esencial para el significado del icono. Por ejemplo, la lupa hacia la derecha debe indicar sólo buscar, examinar y buscar.  
   
--   Aunque algunos elementos de icono heredado mantienen el uso de perspectiva, no cree nuevos iconos con una perspectiva a menos que el elemento no tiene una mayor claridad sin él.  
+-   Aunque algunos elementos de icono heredado mantienen el uso de perspectiva, no se crean nuevos iconos con una perspectiva a menos que el elemento no tiene una mayor claridad sin él.  
   
--   No verter hasta demasiada información en un icono. Una imagen sencilla que puede reconoce fácilmente o adquirida como un símbolo reconocible es mucho más útil que una imagen demasiado compleja. Un icono no muestra todo el panorama.  
+-   No cram demasiada información en un icono. Una imagen sencilla que se puede fácilmente reconoce o aprendida como un símbolo reconocible es mucho más útil que una imagen demasiado compleja. Un icono no muestra todo el panorama.  
   
 ### <a name="icon-creation"></a>Creación de icono  
   
 #### <a name="concept-development"></a>Desarrollo del concepto  
- Visual Studio tiene dentro de su interfaz de Usuario una gran variedad de tipos de icono. Considere cuidadosamente el tipo de icono durante el desarrollo. No utilice objetos de interfaz de Usuario es confuso o poco comunes para los elementos de icono. Elegir el vínculo simbólico en estos casos, como con el icono de etiqueta inteligente. Tenga en cuenta que el significado de la etiqueta abstracta a la izquierda es más obvio que la versión imprecisa y de interfaz de Usuario de la derecha:  
+ Visual Studio en su interfaz de usuario tiene una amplia variedad de tipos de icono. Tenga en cuenta el tipo de icono durante el desarrollo. No use claros o poco habituales de los objetos de interfaz de usuario para los elementos de icono. Optar por simbólico en estos casos, como con el icono de etiqueta inteligente. Tenga en cuenta que el significado de la etiqueta abstracta de la izquierda es más evidente que la versión imprecisa, basado en la interfaz de usuario de la derecha:  
   
 |||  
 |-|-|  
 |**Uso correcto de imágenes simbólico**|**Uso incorrecto de imágenes simbólico**|  
-|![Icono de etiqueta inteligente correcta](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404-01_SmartTagCorrect")|![Icono de etiqueta inteligente incorrecta](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|  
+|![Icono de etiqueta inteligente correcta](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "01_SmartTagCorrect 0404")|![Icono de etiqueta inteligente incorrecta](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "02_SmartTagIncorrect 0404")|  
   
- Hay casos en que los elementos de interfaz de Usuario estándares, fácilmente reconocibles funcionan bien para iconos. Agregar que ventana es un ejemplo:  
-  
-|||  
-|-|-|  
-|**Elemento de interfaz de Usuario correcto en un icono**|**Elemento de interfaz de Usuario incorrecto en un icono**|  
-|![Icono de agregar ventana correcto](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "0404-03_AddWindowCorrect")|![Icono de agregar ventana incorrecto](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "0404-04_AddWindowIncorrect")|  
-  
- No use un documento como un elemento base a menos que sea esencial para el significado del icono. Sin el documento de elemento en Agregar documento (el significado a continuación) se pierde, mientras que actualice el elemento de documento no es necesario comunicar el significado.  
+ Hay casos en que los elementos de interfaz de usuario estándar y fácil de reconocer funciona bien para iconos. Agregar que ventana es un ejemplo:  
   
 |||  
 |-|-|  
-|**Uso correcto del icono de documento**|**Uso incorrecto del icono de documento**|  
-|![Icono de documento correcto](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "0404-05_DocumentIconCorrect")|![Icono de documento incorrecto](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "0404-06_DocumentIconIncorrect")|  
+|**Elemento de interfaz de usuario correcto en un icono**|**Elemento de interfaz de usuario incorrecto en un icono**|  
+|![Icono Agregar ventana correcto](../../extensibility/ux-guidelines/media/0404-03_addwindowcorrect.png "03_AddWindowCorrect 0404")|![Icono Agregar ventana incorrecto](../../extensibility/ux-guidelines/media/0404-04_addwindowincorrect.png "04_AddWindowIncorrect 0404")|  
   
- El concepto de "show" se debe representar mediante el icono que mejor ilustra lo que se muestra, tal como en el ejemplo de mostrar todos los archivos. Puede utilizarse una metáfora de la lente para indicar el concepto de "vista" si es necesario, como en el ejemplo de la vista de recursos.  
+ No use un documento como un elemento base a menos que sea esencial para el significado del icono. Sin el documento de elemento en el documento de agregar (el significado a continuación) se pierde, mientras que con la actualización es necesario comunicar el significado del elemento de documento.  
+  
+|||  
+|-|-|  
+|**Uso correcto de icono de documento**|**Uso incorrecto del icono de documento**|  
+|![Icono de documento correcto](../../extensibility/ux-guidelines/media/0404-05_documenticoncorrect.png "05_DocumentIconCorrect 0404")|![Icono de documento incorrecto](../../extensibility/ux-guidelines/media/0404-06_documenticonincorrect.png "06_DocumentIconIncorrect 0404")|  
+  
+ El concepto de "Mostrar" debe estar representado por el icono que ilustra mejor lo que se está mostrando, por ejemplo, al igual que con el ejemplo de mostrar todos los archivos. Una metáfora de la lente puede utilizarse para indicar el concepto de "vista" si es necesario, como con el ejemplo de vista de recursos.  
   
 |||  
 |-|-|  
 |**"Mostrar"**|**"Vista"**|  
-|![Icono Mostrar](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![Icono Vista](../../extensibility/ux-guidelines/media/0404-08_view.png "0404-08_View")|  
+|![Mostrar icono de](../../extensibility/ux-guidelines/media/0404-07_show.png "07_Show 0404")|![Icono de vista](../../extensibility/ux-guidelines/media/0404-08_view.png "08_View 0404")|  
   
- El hacia la derecha lupa icono debe representan sólo buscar, buscar y examinar. La variante hacia la izquierda con el signo más o un signo menos debe representar solo el zoom para acercar, Alejar.  
+ El hacia la derecha lupa icono de debe representan sólo buscar, buscar y examinar. La variante hacia la izquierda con el signo más o un signo menos debe representan sola zoom para acercar / alejar.  
   
 |||  
 |-|-|  
 |**"Búsqueda"**|**"Zoom"**|  
-|![Icono Búsqueda](../../extensibility/ux-guidelines/media/0404-09_search.png "0404-09_Search")|![Icono Zoom](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404-10_Zoom")|  
+|![Icono de búsqueda](../../extensibility/ux-guidelines/media/0404-09_search.png "09_Search 0404")|![Icono de zoom](../../extensibility/ux-guidelines/media/0404-10_zoom.png "10_Zoom 0404")|  
   
  En las vistas de árbol, no utilice el icono de carpeta y un modificador. Cuando esté disponible, use sólo el modificador.  
   
 |||  
 |-|-|  
-|**Iconos de la vista de árbol correcto**|**Iconos de la vista de árbol incorrecto**|  
-|![Icono de vista de árbol correcta &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404-11_TreeViewCorrect1") ![Icono de vista de árbol correcta &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404-12_TreeViewCorrect2")|![Icono de vista de árbol incorrecta &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404-13_TreeViewIncorrect1") ![Icono de vista de árbol incorrecta &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404-14_TreeViewIncorrect2")|  
+|**Iconos de la vista de árbol correcto**|**Iconos de la vista de árbol incorrecta**|  
+|![Icono de vista de árbol correcta &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-11_treeviewcorrect1.png "0404 11_TreeViewCorrect1") ![corregir el icono de vista de árbol &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-12_treeviewcorrect2.png "0404 12_TreeViewCorrect2")|![Icono de vista de árbol incorrecta &#40; 1 &#41; ] (../../extensibility/ux-guidelines/media/0404-13_treeviewincorrect1.png "0404 13_TreeViewIncorrect1") ![incorrecta icono de vista de árbol &#40; 2 &#41;] (../../extensibility/ux-guidelines/media/0404-14_treeviewincorrect2.png "0404 14_TreeViewIncorrect2")|  
   
 ### <a name="style-details"></a>Detalles de estilo  
   
 #### <a name="layout"></a>Diseño  
- Elementos de la pila que se muestra para los iconos de 16 x 16 estándar:  
+ Elementos de la pila como se muestra para los iconos de 16 x 16 estándar:  
   
- ![Pila de diseño para los iconos de 16 x 16](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")  
+ ![Pila de diseño para iconos 16 x 16](../../extensibility/ux-guidelines/media/0404-15_layoutstack.png "0404-15_LayoutStack")<br />Pila de diseño para los iconos de 16 x 16
   
- **Pila de diseño para los iconos de 16 x 16**  
+ Elementos de notificación de estado son más usados como iconos independiente. Hay contextos, sin embargo, en el que una notificación debe ser apilada en el elemento base, como con el icono de la tarea completada:  
   
- Elementos de notificación de estado son más usados como iconos independiente. Hay contextos, sin embargo, en el que una notificación debe ser apilada del elemento base, como con el icono de la tarea completada:  
+ ![Notificaciones independientes en Visual Studio](../../extensibility/ux-guidelines/media/0404-16_standalonenotificationicons.png "0404-16_StandaloneNotificationIcons")<br />Iconos de notificación independiente
   
- ![Notificaciones independientes en Visual Studio](../../extensibility/ux-guidelines/media/0404-16_standalonenotificationicons.png "0404-16_StandaloneNotificationIcons")  
+ ![Icono de tarea completa](../../extensibility/ux-guidelines/media/0404-17_taskcomplete.png "0404-17_TaskComplete")<br />Icono de tarea completa
   
- **Iconos de notificación independiente**  
+ Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. Iconos de 16 x 16 mayoría contienen los mismos elementos. Las versiones de 32 x 32 tengan más detalles, incluido el tipo de proyecto cuando sea aplicable.  
   
- ![Icono de tarea completa](../../extensibility/ux-guidelines/media/0404-17_taskcomplete.png "0404-17_TaskComplete")  
+ ![Iconos de proyecto en Visual Studio](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")<br />Iconos de proyecto de biblioteca de controles de Windows de VB, 16 x 16 y 32 x 32 
   
- **Icono de tarea completa**  
+ Centro de un icono en el fotograma de píxeles. Si esto no es posible, alinear el icono a la parte superior o derecha del marco.  
   
- Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. La mayoría de los iconos de 16 x 16 contienen los mismos elementos. Las versiones de 32 x 32 tienen más detalles, incluidos el tipo de proyecto cuando sea aplicable.  
+ ![Icono centrado en el fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-19_iconcentered.png "0404-19_IconCentered")<br />Icono centrado en el fotograma de píxeles
   
- ![Iconos de proyecto en Visual Studio](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")  
+ ![Icono alineado para parte superior derecha del fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-20_icontopright.png "0404-20_IconTopRight")<br />Icono alineado en la parte superior derecha del fotograma
   
- **Iconos de proyecto de biblioteca de controles de Windows de VB, 16 x 16 y 32 x 32**  
+ ![Icono centrado y alineado en la parte superior del fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-21_icontopalign.png "0404-21_IconTopAlign")<br />Icono centrado y alineado en la parte superior del marco
   
- Centro de un icono dentro de su marco de píxel. Si esto no es posible, alinear el icono en la parte superior o derecha del marco.  
-  
- ![Icono centrado en el fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-19_iconcentered.png "0404-19_IconCentered")  
-  
- **Icono centrado en el fotograma de píxeles**  
-  
- ![Icono alineado en la parte superior derecha del fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-20_icontopright.png "0404-20_IconTopRight")  
-  
- **Icono alineado en la parte superior derecha del marco**  
-  
- ![Icono centrado y alineado en la parte superior del fotograma de píxeles](../../extensibility/ux-guidelines/media/0404-21_icontopalign.png "0404-21_IconTopAlign")  
-  
- **Icono centrado y alineado en la parte superior del marco**  
-  
- Para lograr el equilibrio y alineación ideal, evite obstrucción de elemento de base del icono con los glifos de acción. Coloque el glifo en la parte superior izquierdo del elemento base. Cuando se agrega un elemento adicional, considere la posibilidad de la alineación y el saldo del icono.  
+ Para lograr equilibrio y alineación ideal, no dificultar el elemento de base del icono con los glifos de acción. Coloque el glifo en la parte superior izquierdo del elemento base. Cuando se agrega un elemento adicional, considere la posibilidad de la alineación y el saldo del icono.  
   
 |||  
 |-|-|  
-|**Equilibrio y alineación correcta**|**Equilibrio y alineación incorrecta**|  
-|![Equilibrio y alineación correctos de los iconos](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "0404-22_AlignBalanceCorrect")|![Equilibrio y alineación incorrectos de los iconos](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "0404-23_AlignBalanceIncorrect")|  
+|**Equilibrio y alineación correcto**|**Equilibrio y alineación incorrecta**|  
+|![Corregir icono equilibrio y alineación](../../extensibility/ux-guidelines/media/0404-22_alignbalancecorrect.png "22_AlignBalanceCorrect 0404")|![Icono incorrecto equilibrio y alineación](../../extensibility/ux-guidelines/media/0404-23_alignbalanceincorrect.png "23_AlignBalanceIncorrect 0404")|  
   
  Asegúrese de paridad de tamaño de los iconos que comparten elementos y se utilizan en conjuntos. Tenga en cuenta que en el emparejamiento incorrecto, el círculo y flecha son demasiado grandes y no coinciden.  
   
 |||  
 |-|-|  
-|**Paridad del tamaño correcto**|**Paridad de tamaño incorrecto**|  
-|![Tamaño y paridad correctos de los iconos](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "0404-24_SizeParityCorrect")|![Tamaño y paridad incorrectos de los iconos](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "0404-25_SizeParityIncorrect")|  
+|**Paridad de tamaño correcto**|**Paridad de tamaño incorrecto**|  
+|![Corregir el tamaño de icono y paridad](../../extensibility/ux-guidelines/media/0404-24_sizeparitycorrect.png "24_SizeParityCorrect 0404")|![Tamaño de icono incorrecto y paridad](../../extensibility/ux-guidelines/media/0404-25_sizeparityincorrect.png "25_SizeParityIncorrect 0404")|  
   
- Usar línea coherente y pesos visuales. Evaluar cómo compara el icono que se va a compilar otros iconos utilizando una comparación en paralelo. Nunca utilice todo el fotograma de 16 x 16, utilice 15 x 15 o más pequeño. La proporción de positivo a negativo (oscuro a luz) debe ser de 50/50.  
+ Usar línea coherente y pesos visuales. Evaluar cómo compara el icono que se va a compilar otros iconos mediante el uso de una comparación en paralelo. Nunca utilice todo el fotograma de 16 x 16, utilice 15 x 15 o más pequeño. La proporción de positivo a negativo (dark-a-light) debe ser 50/50.  
   
 |||  
 |-|-|  
-|**Proporción de positivo a negativo correcta**|**Proporción de positivo a negativo incorrecta**|  
-|![Corregir el grosor visual para los iconos &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![Corregir el grosor visual para los iconos &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![Corregir el grosor visual para los iconos &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![Grosor visual incorrecto para iconos](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "0404-29_VisualWeightIncorrect")|  
+|**Relación de positivo a negativo correcta**|**Proporción de positivo a negativo incorrecto**|  
+|![Corregir grosor visual para iconos &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-26_visualweightcorrect1.png "0404-26_VisualWeightCorrect1")<br /><br /> ![Corregir grosor visual para iconos &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-27_visualweightcorrect2.png "0404-27_VisualWeightCorrect2")<br /><br /> ![Corregir grosor visual para iconos &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-28_visualweightcorrect3.png "0404-28_VisualWeightCorrect3")|![Grosor visual incorrecto para iconos](../../extensibility/ux-guidelines/media/0404-29_visualweightincorrect.png "29_VisualWeightIncorrect 0404")|  
   
- Usar formas simples, comparables y ángulos complementario para crear los elementos sin sacrificar la integridad del elemento. Utilice los ángulos de 45° o 90° siempre que sea posible.  
+ Usar formas simples, de forma similares y ángulos complementario para compilar sus elementos sin sacrificar la integridad del elemento. Usar ángulos de 45° o 90 º siempre que sea posible.  
   
- ![Ángulos de icono correctos](../../extensibility/ux-guidelines/media/0404-30_iconanglescorrect.png "0404-30_IconAnglesCorrect")  
+ ![Corregir ángulos de icono](../../extensibility/ux-guidelines/media/0404-30_iconanglescorrect.png "30_IconAnglesCorrect 0404")  
   
 #### <a name="perspective"></a>Perspectiva  
- Mantenga el icono claro y comprensible. Perspectiva de uso y una fuente de luz sólo cuando sea necesario. Aunque con perspectiva en elementos de icono, se debe evitar algunos elementos están irreconocibles sin él. En estos casos, una perspectiva ESTILIZADA comunica la claridad del elemento.  
+ Mantenga el icono claro y comprensible. Perspectiva de uso y una fuente de luz solo cuando sea necesario. Aunque la utilización de una perspectiva en elementos de icono, se debe evitar algunos elementos están irreconocibles sin él. En tales casos, una perspectiva ESTILIZADA comunica claridad del elemento.  
   
- ![3 &#45; punto de perspectiva](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")  
+ ![perspectiva de 3 puntos](../../extensibility/ux-guidelines/media/0404-31_3pointperspective.png "0404-31_3PointPerspective")<br />Perspectiva de 3 puntos
   
- **perspectiva de 3 puntos**  
+ ![perspectiva de 1 punto](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")<br />Perspectiva de 1 punto
   
- ![1 &#45; punto de perspectiva](../../extensibility/ux-guidelines/media/0404-32_1pointperspective.png "0404-32_1PointPerspective")  
+ Mayoría de los elementos debe ser accesibles desde o en ángulo a la derecha:  
   
- **perspectiva de 1 punto**  
+ ![Iconos en ángulo derecho](../../extensibility/ux-guidelines/media/0404-33_angledright.png "33_AngledRight 0404")  
   
- La mayoría de los elementos deben ser accesibles desde o en ángulo a la derecha.  
-  
- ![Iconos en ángulo derecho](../../extensibility/ux-guidelines/media/0404-33_angledright.png "0404-33_AngledRight")  
-  
- Usar fuentes de luz sólo cuando agrega claridad necesaria a un objeto.  
+ Usar fuentes de luz sólo al agregar claridad necesaria a un objeto.  
   
 |||  
 |-|-|  
-|**Fuente de luz correcta**|**Fuente de luz incorrecta**|  
-|![Fuentes de luz correctas para iconos](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "0404-34_LightSourcesCorrect")|![Fuentes de luz incorrectas para iconos](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "0404-35_LightSourcesIncorrect")|  
+|**Origen de luz correcta**|**Origen de luz incorrecta**|  
+|![Corregir las fuentes de luz para iconos](../../extensibility/ux-guidelines/media/0404-34_lightsourcescorrect.png "34_LightSourcesCorrect 0404")|![Fuentes de luz incorrectas para iconos](../../extensibility/ux-guidelines/media/0404-35_lightsourcesincorrect.png "35_LightSourcesIncorrect 0404")|  
   
- Utilizar esquemas sólo para mejorar la legibilidad o para comunicar mejor la metáfora. El saldo de negativo positivo (dark luz) debe ser de 50/50.  
+ Use contornos solo para mejorar la legibilidad o para comunicar mejor la metáfora de. El saldo de negativo positivo (dark-light) debe ser 50/50.  
   
 |||  
 |-|-|  
-|**Uso correcto de contornos**|**Uso incorrecto de contornos**|  
-|![Contornos correctos](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "0404-36_OutlinesCorrect")|![Contornos incorrectos](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "0404-37_OutlinesIncorrect")|  
+|**Uso correcto de esquemas**|**Uso incorrecto de esquemas**|  
+|![Corregir contornos](../../extensibility/ux-guidelines/media/0404-36_outlinescorrect.png "36_OutlinesCorrect 0404")|![Contornos incorrectos](../../extensibility/ux-guidelines/media/0404-37_outlinesincorrect.png "37_OutlinesIncorrect 0404")|  
   
 #### <a name="icon-types"></a>Tipos de icono  
- **La barra de comandos y shell** iconos constan de no más de tres de los siguientes elementos: una base, un modificador, una acción o estado.  
+ **Barra de comandos y shell** iconos consisten en no más de tres de los siguientes elementos: una base, un modificador, una acción o un estado.  
   
- ![Iconos de barra de comandos y shell](../../extensibility/ux-guidelines/media/0404-38_shellicons.png "0404-38_ShellIcons")  
+ ![Ejemplos de iconos de barra de comandos y shell](../../extensibility/ux-guidelines/media/0404-38_shellicons.png "0404-38_ShellIcons")<br />Ejemplos de iconos de barra de comandos y shell
   
- **Ejemplos de iconos de barra de comandos y shell**  
+ **Barra de comandos de ventana de herramienta** iconos consisten en no más de tres de los siguientes elementos: una base, un modificador, una acción o un estado.  
   
- **Barra de comandos de ventana de herramienta** iconos constan de no más de tres de los siguientes elementos: una base, un modificador, una acción o estado.  
+ ![Ejemplos de iconos de barra de comandos de ventana de herramienta](../../extensibility/ux-guidelines/media/0404-39_toolwindowcommandbaricons.png "0404-39_ToolWindowCommandBarIcons")<br />Ejemplos de iconos de barra de comandos de ventana de herramienta
   
- ![Iconos de barra de comandos de ventana de herramientas](../../extensibility/ux-guidelines/media/0404-39_toolwindowcommandbaricons.png "0404-39_ToolWindowCommandBarIcons")  
+ **Desambiguador de vista de árbol** iconos consisten en no más de tres de los siguientes elementos: una base, un modificador, una acción o un estado.  
   
- **Ejemplos de iconos de barra de comandos de ventana de herramienta**  
+ ![Ejemplos de árbol ver iconos de eliminar la ambigüedad](../../extensibility/ux-guidelines/media/0404-40_treeviewicons.png "0404-40_TreeViewIcons")<br />Ejemplos de árbol ver iconos de eliminar la ambigüedad
   
- **Para eliminar la ambigüedad vista árbol** iconos constan de no más de tres de los siguientes elementos: una base, un modificador, una acción o estado.  
+ **Taxonomía basado en estado valor** iconos existen en los siguientes estados: activo y active deshabilitado, deshabilitado inactiva.  
   
- ![Iconos para eliminar la ambigüedad de la vista de árbol](../../extensibility/ux-guidelines/media/0404-40_treeviewicons.png "0404-40_TreeViewIcons")  
+ ![Ejemplos de iconos de taxonomía basado en estado valor](../../extensibility/ux-guidelines/media/0404-41_statebasedtaxonomy.png "0404-41_StateBasedTaxonomy")<br />Ejemplos de iconos de taxonomía basado en estado valor
   
- **Ejemplos de árbol de la vista iconos para eliminar la ambigüedad**  
+ **IntelliSense** iconos consisten en no más de tres de los siguientes elementos: una base, un modificador y estado.  
   
- **Taxonomía de valor basado en estado** iconos existen en los siguientes estados: activo, activo deshabilitado y deshabilitado inactiva.  
-  
- ![Estado &#45; iconos de valor de taxonomía basado en](../../extensibility/ux-guidelines/media/0404-41_statebasedtaxonomy.png "0404-41_StateBasedTaxonomy")  
-  
- **Ejemplos de iconos de taxonomía basado en estado de valor**  
-  
- **IntelliSense** iconos constan de no más de tres de los siguientes elementos: una base, un modificador y estado.  
-  
- ![Iconos de IntelliSense](../../extensibility/ux-guidelines/media/0404-42_intellisenseicons.png "0404-42_IntelliSenseIcons")  
-  
- **Ejemplos de iconos de IntelliSense**  
+ ![Ejemplos de iconos de IntelliSense](../../extensibility/ux-guidelines/media/0404-42_intellisenseicons.png "0404-42_IntelliSenseIcons")<br />Ejemplos de iconos de IntelliSense
   
  **Pequeño (16 x 16) proyecto** iconos deben tener no más de dos elementos: una base y un modificador.  
   
- ![icono de proyecto de 16 x 16 &#40; 1 &#41;](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404-43_16x16Project1") ![icono de proyecto de 16 x 16 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404-44_16x16Project2") ![icono de proyecto de 16 x 16 &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404-45_16x16Project3")  
+ ![Ejemplos de pequeño (16 x 16) del proyecto iconos](../../extensibility/ux-guidelines/media/0404-43_16x16project1.png "0404-43_16x16Project1") ![el icono de proyecto de 16 x 16 &#40; 2 &#41;](../../extensibility/ux-guidelines/media/0404-44_16x16project2.png "0404-44_16x16Project2") ![el icono de proyecto de 16 x 16 &#40; 3 &#41;](../../extensibility/ux-guidelines/media/0404-45_16x16project3.png "0404-45_16x16Project3")<br />Ejemplos de iconos pequeños de proyecto (16 x 16)
   
- **Ejemplos de iconos pequeños de proyecto (16 x 16)**  
+ **Proyecto (32 x 32) grande** iconos consisten en no más de cuatro de los siguientes elementos: una base, modificadores de uno o dos y un idioma de superposición.  
   
- **Proyecto de gran tamaño (32 x 32)** iconos consisten en no más de cuatro de los siguientes elementos: una base, uno o dos modificadores y un lenguaje de superposición.  
-  
- ![Iconos de proyecto de 32 x 32](../../extensibility/ux-guidelines/media/0404-46_32x32project.png "0404-46_32x32Project")  
-  
- **Ejemplos de iconos grandes de proyecto (32 x 32)**  
+ ![Ejemplos de iconos grandes de proyecto (32 x 32)](../../extensibility/ux-guidelines/media/0404-46_32x32project.png "0404-46_32x32Project")<br />Ejemplos de iconos grandes de proyecto (32 x 32)
   
 ### <a name="production-details"></a>Detalles de la producción  
- Todos los nuevos elementos de interfaz de Usuario se deben crear con Windows Presentation Foundation (WPF) y todos los nuevos iconos para WPF deben estar en formato PNG de 32 bits. El PNG de 24 bits es un formato heredado que no admiten la transparencia y, por tanto, no se recomienda para los iconos.  
+ Todos los nuevos elementos de interfaz de usuario deben crearse mediante Windows Presentation Foundation (WPF) y todos los nuevos iconos para WPF deben estar en formato PNG de 32 bits. El PNG de 24 bits es un formato heredado que no admiten la transparencia y, por tanto, no se recomienda para los iconos.  
   
  Guarde la resolución a 96 PPP.  
   
 #### <a name="file-types"></a>Tipos de archivo  
   
--   **PNG de 32 bits:** el formato preferido para los iconos. Formato de archivo de compresión sin pérdida de datos que puede almacenar una imagen de mapa de bits única (píxeles). archivos PNG de 32 bits compatible con la transparencia del canal alfa, la corrección gamma y entrelazado.  
+-   **PNG de 32 bits:** el formato preferido para iconos. Un formato de archivo de compresión sin pérdida de datos que puede almacenar una imagen de mapa de bits única (píxeles). archivos PNG de 32 bits compatible con transparencia del canal alfa, la corrección gamma y entrelazado.  
   
--   **BMP de 32 bits:** para los controles de WPF no. También se denomina XP o color de alta densidad, 32 bits BMP es un formato de imagen RGB o A una imagen de color verdadero con una transparencia del canal alfa. El canal alfa es un nivel de transparencia designado en Adobe Photoshop y que, a continuación, se guarda en el mapa de bits como un adicional (cuarto) canal de color. Se agrega un fondo negro durante la producción de material gráfico a todos los archivos BMP de 32 bits para proporcionar una indicación visual rápida acerca de la profundidad de color. Este fondo negro representa el área que se enmascaran en la interfaz de Usuario.  
+-   **BMP de 32 bits:** para los controles no son de WPF. También se denomina XP o color de alta densidad, BMP de 32 bits es un formato de imagen RGB/A, una imagen de color verdadero con una transparencia del canal alfa. El canal alfa es un nivel de transparencia designado de Adobe Photoshop que, a continuación, se guarda en el mapa de bits como un adicional (cuarto) canal de color. Se agrega un fondo negro durante la producción de material gráfico a todos los archivos BMP de 32 bits para proporcionar una indicación visual rápida acerca de la profundidad de color. Este fondo negro representa el área que se enmascaran en la interfaz de usuario.  
   
--   **ICO de 32 bits:** para los iconos de proyecto y agregar elemento. Todos los archivos ICO son true color de 32 bits con transparencia del canal alfa (RGB/A). Como los archivos ICO pueden almacenar distintos tamaños y profundidades de color, iconos de Vista suelen en formato ICO que contiene 16 x 16, 32 x 32, 48 x 48 y tamaños de imagen de 256 x 256. Para poder mostrar correctamente en el Explorador de Windows, archivos ICO se deben guardar profundidad profundidades de color de 24 bits y 8 bits para cada tamaño de la imagen.  
+-   **ICO de 32 bits:** como iconos de proyecto y agregar elemento. Todos los archivos ICO están color verdadero de 32 bits con transparencia del canal alfa (RGB/A). Dado que pueden almacenar archivos ICO varios tamaños y profundidades de color, iconos de Vista a menudo tienen un formato ICO que contiene 16 x 16, 32 x 32, 48 x 48 y tamaños de imagen de 256 x 256. Para que se muestren correctamente en el Explorador de Windows, archivos ICO se deben guardar profundidad profundidades de color de 24 bits y 8 bits para cada tamaño de la imagen.  
   
--   **XAML:** para superficies de diseño y los controles Adorner de Windows. Iconos XAML son los archivos de imagen basada en vectores que admiten escalar, girar, archivado y transparencia. Hoy en día no son comunes en Visual Studio, pero son cada vez más populares debido a su flexibilidad.  
+-   **XAML:** para superficies de diseño y los controles Adorner de Windows. Los iconos XAML son archivos de imagen basada en vectores que admiten ajuste de escala, rotación, archivado y transparencia. Hoy en día no son comunes en Visual Studio, pero son cada vez más populares debido a su flexibilidad.  
   
 -   **SVG**  
   
--   **24 bits BMP:** de la barra de comandos de Visual Studio. Un formato de imágenes de color verdadero RGB de 24 bits BMP es una convención de icono que crea una capa de transparencia mediante magenta (R = 255, G = 0, B = 255) como clave de color de una capa de transparencia fuera de realizar. En 24 bits BMP, todas las superficies magenta se muestran con el color de fondo.  
+-   **24 bits BMP:** para la barra de comandos de Visual Studio. Un formato de imagen de color verdadero RGB, BMP de 24 bits es una convención de icono que se crea una capa de transparencia mediante fucsia (R = 255, G = 0, B = 255) como una clave de color de una capa de transparencia de knock horizontal. En un archivo de 24 bits BMP, todas las superficies magenta se muestran con el color de fondo.  
   
--   **24 bits GIF:** de la barra de comandos de Visual Studio. Formato de imagen RGB de color verdadero que admite la transparencia. GIF (archivos) a menudo se utilizan en animaciones GIF e ilustraciones de asistente.  
+-   **24 bits GIF:** para la barra de comandos de Visual Studio. Formato de imagen RGB de color verdadero que admite la transparencia. GIF (archivos) a menudo se utilizan en animaciones GIF e ilustraciones de asistente.  
   
 ### <a name="icon-construction"></a>Construcción de icono  
- El tamaño más pequeño de icono en Visual Studio es 16 x 16. El mayor en común uso es 32 x 32. Tenga en cuenta que no se llenará todo el fotograma de 16 x 16, 24 x 24 o 32 x 32 al diseñar un icono. Construcción de icono legibles y uniforme es esencial para el reconocimiento de usuarios. Respetar los siguientes puntos al crear iconos.  
+ El tamaño más pequeño de icono en Visual Studio es 16 x 16. El mayor en común uso es 32 x 32. Tenga en cuenta que no para ocupar todo el fotograma de 16 x 16, 24 x 24 o 32 x 32 al diseñar un icono. Construcción de icono legibles, uniforme es esencial para el reconocimiento de usuario. Cumplir los siguientes puntos al crear iconos.  
   
--   Iconos deben ser clara, comprensible y coherente.  
+-   Iconos deben ser claros, comprender y coherente.  
   
--   Es mejor utilizar los elementos de notificación de estado como iconos únicos y no a apilar encima de un elemento base del icono. En ciertos contextos, la interfaz de Usuario podría requerir el elemento de estado para emparejarse con un elemento base.  
+-   Es mejor utilizar los elementos de notificación de estado como iconos únicos y no a ellos se apilan uno sobre un elemento de base de icono. En algunos contextos, la interfaz de usuario podría requerir el elemento de estado para emparejarse con un elemento base.  
   
--   Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. Se actualizan los iconos 16 x 16, 24 x 24 y 32 x 32. La mayoría de los iconos de 16 x 16 y 24 x 24 contendrá los mismos elementos. Los iconos de 32 x 32 contienen más detalles, incluido el tipo de lenguaje del proyecto cuando sea aplicable.  
+-   Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. Se están actualizando los iconos 16 x 16, 24 x 24 y 32 x 32. La mayoría de los iconos de 16 x 16 y 24 x 24 contendrá los mismos elementos. Los iconos de 32 x 32 contienen más detalles, incluido el tipo de lenguaje del proyecto cuando sea aplicable.  
   
--   Para los iconos de 32 x 32, los elementos base generalmente tienen un grosor de línea de 2 píxeles. Un grosor de línea de 1 o 2 píxeles puede usarse para los elementos de detalle. Utilice su criterio para determinar cuál es el más adecuado.  
+-   Para los iconos de 32 x 32, los elementos base normalmente tienen un grosor de línea de 2 píxeles. Un grosor de línea de 1 o 2 píxeles puede usarse para los elementos de detalle. Utilice su criterio para determinar cuál es la más adecuada.  
   
--   Tiene al menos un espacio de 1 píxel entre iconos de 24 x 24 y elementos de 16 x 16. Para los iconos de 32 x 32, utilice 2 píxeles espaciado entre los elementos y entre el modificador y el elemento base.  
+-   Tener al menos un espaciado 1 píxel entre iconos de 24 x 24 y elementos de 16 x 16. Para los iconos de 32 x 32, use 2 píxeles espaciado entre los elementos y entre el modificador y el elemento base.  
   
- ![Espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32](../../extensibility/ux-guidelines/media/0404-47_elementspacing.png "0404-47_ElementSpacing")  
-  
- **Espaciado de elementos para iconos de tamaño de 16 x 16, 24 x 24 y 32 x 32**  
+ ![Tamaño de espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32](../../extensibility/ux-guidelines/media/0404-47_elementspacing.png "0404-47_ElementSpacing")<br />Tamaño de espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32
   
 #### <a name="color-and-accessibility"></a>Color y accesibilidad  
- Directrices de compatibilidad de Visual Studio requieren que todos los iconos en el producto pasan los requisitos de accesibilidad para el color y el contraste. Esto se logra a través de la inversión de icono y al diseñar, debe tener en cuenta que se invierte mediante programación en el producto.  
+ Directrices de cumplimiento de normas de Visual Studio requieren que todos los iconos en el producto pasan los requisitos de accesibilidad para el color y el contraste. Esto se logra a través de la inversión de icono y la hora de diseñar, debe ser consciente de que se invierte mediante programación en el producto.  
   
- Para obtener más información sobre el uso de color en los iconos de Visual Studio, consulte [con color en imágenes](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).  
+ Para obtener más información sobre el uso de color en iconos de Visual Studio, vea [con color en imágenes](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).  
   
-##  <a name="a-namebkmkusingcolorinimagesa-using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Uso de color en imágenes  
+##  <a name="BKMK_UsingColorInImages"></a>Usar color de imágenes  
   
 ### <a name="overview"></a>Información general  
- Los iconos de Visual Studio son principalmente monocromáticos. Color está reservado para transmitir información específica y nunca para la decoración. Se utiliza el color:  
+ Iconos en Visual Studio son principalmente monocroma. Color se reserva para transmitir información específica y nunca para la decoración. Se utiliza el color:  
   
 -   para indicar una acción  
   
--   para avisar al usuario una notificación de estado  
+-   para avisar al usuario a una notificación de estado  
   
--   Para designar la afiliación de lenguaje  
+-   Para designar la afiliación de un idioma  
   
 -   para diferenciar los elementos dentro de IntelliSense  
   
 ### <a name="accessibility"></a>Accesibilidad  
- Directrices de compatibilidad de Visual Studio requieren que todos los iconos comprueban en la fase de producto de color y contraste los requisitos de accesibilidad. Colores de la paleta de lenguaje visual se han probado y cumplan estos requisitos.  
+ Directrices de cumplimiento de normas de Visual Studio requieren que todos los iconos de los elementos verificados a la fase de producto los requisitos de accesibilidad para el color y el contraste. Colores de la paleta del lenguaje visual se han comprobado y cumplan estos requisitos.  
   
-#### <a name="color-inversion-for-dark-themes"></a>Inversión de colores para temas oscuros  
- Para poder crear iconos aparecen con la relación de contraste correcto en el tema oscuro de Visual Studio, una inversión se aplica mediante programación. Los colores en esta guía se han elegido en parte para que invierte correctamente. Restringir el uso de color de esta paleta u obtendrá resultados imprevisibles cuando se aplica la inversión.  
+#### <a name="color-inversion-for-dark-themes"></a>Inversión de color para los temas oscuros  
+ Para realizar iconos aparecen con la relación de contraste correcto en el tema oscuro de Visual Studio, una inversión se aplica mediante programación. Los colores en esta guía se han elegido en parte para que invierte correctamente. Restringir el uso de color a esta paleta, o se producirán resultados imprevisibles cuando se aplica la inversión.  
   
- ![Ejemplos de iconos cuyos colores se han invertido](../../extensibility/ux-guidelines/media/0405-01_darkthemeinversion.png "0405-01_DarkThemeInversion")  
-  
- **Ejemplos de iconos que han tenido los colores invertidos**  
+ ![Ejemplos de iconos que han tenido sus colores invertidos](../../extensibility/ux-guidelines/media/0405-01_darkthemeinversion.png "0405-01_DarkThemeInversion")<br />Ejemplos de iconos que han tenido sus colores invertidos
   
 ### <a name="base-palette"></a>Paleta básica  
- Todos los iconos estándares contienen tres colores bases. Iconos no contienen degradados o sombras paralelas, con una o dos excepciones para los iconos de herramienta 3D.  
+ Todos los iconos estándares contienen tres colores base. Iconos no contienen degradados o las sombras paralelas, con una o dos excepciones para iconos de herramienta 3D.  
   
-|Uso|Nombre|Valor (tema claro)|Muestra|Ejemplo|  
+|Uso|Name|Valor (el tema claro)|Muestra|Ejemplo|  
 |-----------|----------|---------------------------|------------|-------------|  
-|Fondo/oscuro|VS BG|424242 / 66,66,66|![Muestra 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Ejemplo de paleta básica](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|  
-|Primer plano o ligeros|FG DE VS|F0EFF1 / 240,239,241|![Muestra F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Segundo plano/oscuro|VS BG|424242 / 66,66,66|![Muestrario 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Ejemplo de paleta básica](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "02_BasePaletteExample 0405")|  
+|Primer plano/ligero|FG DE VS|F0EFF1 / 240,239,241|![Muestra F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
 |Esquema|FRENTE a|F6F6F6 / 246,246,246|![Muestra F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
- Además de los colores bases, cada icono puede contener adicionales a un color de la paleta extendido.  
+ Además de los colores base, cada icono puede contener adicionales a un color de la paleta extendido.  
   
 ### <a name="extended-palette"></a>Paleta extendido  
   
 #### <a name="action-modifiers"></a>Modificadores de acción  
- Los cuatro colores a continuación indican los tipos de acciones requeridas por los modificadores de acción:  
+ Los cuatro colores a continuación indican los tipos de acciones requeridas por modificadores de acción:  
   
-|Uso|Nombre|Valor (todos los temas)|Muestra|  
+|Uso|Name|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
-|Positivo|Verde de la acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Negativo|VS acción rojo|A1260D / 161,38,13|![Muestra A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|Neutral|Azul de la acción de VS|C 00539 / 0,83,156|![Muestra 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Crear nuevo|Naranja de la acción de VS|C27D1A / 194,156,26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|Positivo|Verde de acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Negativo|Rojo de la acción de VS|A1260D / 161,38,13|![Muestra A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
+|Neutral|Azul de la acción de VS|00539C / 0,83,156|![Muestra 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Crear nuevo|VS acción naranja|C27D1A / 194,156,26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>Ejemplos  
- Verde se utiliza para los modificadores de acción positiva como "Add", "Run", "Reproducir" y "Validar".  
+ Verde se utiliza para los modificadores de acción positiva como "Agregar", "Ejecutar", "Reproducción" y "Validación".  
   
 |||||  
 |-|-|-|-|  
-|![Icono de ejecución de](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun") **Ejecutar**|![Icono de consulta ejecutar](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery") **Ejecutar consulta**|![Icono reproducir todos los pasos](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps") **reproducir todos los pasos**|![Icono de control de agregar](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl") **Agregar Control**|  
+|![Icono de ejecución](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Run|![Icono Ejecutar consulta](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405-04_ExecuteQuery")<br />Ejecutar consulta|![Icono reproducir todos los pasos](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405-05_PlayAllSteps")<br />Reproducir todos los pasos|![Icono Agregar control](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405-06_AddControl")<br />Agregar control|  
   
- Rojo se usa para modificadores de acción negativo como "Delete," "Stop", "Cancelar" y "Cerrar".  
-  
-|||||  
-|-|-|-|-|  
-|![Icono Eliminar relación](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship") **Eliminar relación**|![Icono Eliminar columna](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn") **Eliminar columna**|![Icono de detención consulta](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery") **Detener consulta**|![Icono sin conexión](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline") **conexión sin conexión**|  
-  
- Azul se aplica a la acción neutro modificadores normalmente representan como flechas, como "Abierto" "Siguiente", "Anterior", "Importación" y "Exportación".  
+ Color rojo se usa para los modificadores de acción negativo como "Delete", "Stop", "Cancelar" y "Cierre".  
   
 |||||  
 |-|-|-|-|  
-|![Vaya al icono del campo](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField") **Ir al campo**|![Por lotes comprobación &#45; icono](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn") **por lotes de protección**|![Icono de editor de direcciones](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor") **Editor de direcciones**|![Icono de editor de asociación](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor") **Editor de asociaciones**|  
+|![Icono Eliminar relación](../../extensibility/ux-guidelines/media/0405-07_deleterelationship.png "0405-07_DeleteRelationship")<br />Eliminar relación|![Icono Eliminar columna](../../extensibility/ux-guidelines/media/0405-08_deletecolumn.png "0405-08_DeleteColumn")<br />Eliminar columna|![Icono Detener consulta](../../extensibility/ux-guidelines/media/0405-09_stopquery.png "0405-09_StopQuery")<br />Detener consulta|![Icono sin conexión](../../extensibility/ux-guidelines/media/0405-10_connectionoffline.png "0405-10_ConnectionOffline")<br />No está conectado|  
+  
+ Azul se aplica a la acción neutro modificadores normalmente representan como flechas, como "Abrir," "Siguiente", "Anterior", "Importación" y "Exportación".  
+  
+|||||  
+|-|-|-|-|  
+|![Icono ir al campo](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")<br />Ir al campo|![Procesar por lotes comprobación &#45; en el icono](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")<br />Por lotes en el repositorio|![Icono de editor de direcciones](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")<br />Editor de direcciones|![Icono de editor de asociación](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")<br />Editor de asociaciones|  
   
  Oro oscuro se utiliza principalmente para el modificador "Nuevo".  
   
 |||||  
 |-|-|-|-|  
-|![Icono de proyecto nuevo](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject") **nuevo proyecto**|![Crear nuevo icono de gráfico](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph") **crear un nuevo gráfico**|![Icono nueva prueba unitaria](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest") **nueva prueba de unidad**|![Icono de elemento de lista nuevo](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem") **nuevo elemento de lista**|  
+|![Icono de proyecto nuevo](../../extensibility/ux-guidelines/media/0405-15_newproject.png "0405-15_NewProject")<br />Nuevo proyecto|![Icono Crear nuevo gráfico](../../extensibility/ux-guidelines/media/0405-16_createnewgraph.png "0405-16_CreateNewGraph")<br />Crear un nuevo gráfico|![Icono nueva prueba unitaria](../../extensibility/ux-guidelines/media/0405-17_newunittest.png "0405-17_NewUnitTest")<br />Nueva prueba unitaria|![Icono de elemento de lista nuevo](../../extensibility/ux-guidelines/media/0405-18_newlistitem.png "0405-18_NewListItem")<br />Nuevo elemento de lista|  
   
 #### <a name="special-cases"></a>Casos especiales  
- En casos especiales, un modificador de acción color se puede utilizar independientemente como un icono independiente. El color usado para el icono refleja las acciones que está asociado el icono. Este uso se limita a un pequeño subconjunto de iconos, incluidos:  
+ En casos especiales, un modificador de acción color puede usarse de forma independiente como un icono independiente. El color usado para el icono refleja las acciones que está asociado el icono. Este uso está limitado a un pequeño subconjunto de iconos, incluidos:  
   
 ||||||  
 |-|-|-|-|-|  
-|![Icono de ejecución de](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun") **Ejecutar**|![Icono de detención](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop") **Detener**|![Icono Eliminar](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete") **Eliminar**|![Icono Guardar](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save") **Guardar**|![Icono de atrás Navigate](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack") **desplazarse hacia atrás**|  
+|![Icono de ejecución](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Run|![Icono de detención](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Detener|![Icono Eliminar](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")<br />Eliminar|![Icono Guardar](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")<br />Save|![Icono navegar hacia atrás](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")<br />Navegar hacia atrás|  
   
 ### <a name="code-hierarchy-palette"></a>Paleta de jerarquía de código  
   
 #### <a name="folder"></a>Carpeta  
   
-|Uso|Nombre|Valor (todos los temas)|Muestra|Ejemplo|  
+|Uso|Name|Valor (todos los temas)|Muestra|Ejemplo|  
 |-----------|----------|--------------------------|------------|-------------|  
-|Carpetas|Carpeta|DCB67A / 220,182,122|![Muestra DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icono Carpeta de color](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|  
+|Carpetas|Carpeta|DCB67A / 220,182,122|![Muestra DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icono carpeta de color](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "23_FolderColor 0405")|  
   
 #### <a name="visual-studio-languages"></a>Lenguajes de Visual Studio  
- Cada uno de los lenguajes común o plataformas disponibles en Visual Studio tiene un color asociado. Estos colores se utilizan en el icono de base, o acerca de los modificadores de lenguaje que aparecen en la esquina superior derecha de los iconos compuestas.  
+ Cada uno de los lenguajes comunes o de plataformas disponibles en Visual Studio tiene un color asociado. Estos colores se utilizan en el icono de base, o acerca de los modificadores de lenguaje que aparecen en la esquina superior derecha de los iconos compuestas.  
   
-|Uso|Nombre|Valor (todos los temas)|Muestra|  
+|Uso|Name|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
-|ASP, HTML, WPF|ASP HTML WPF azul|7 0095D / 0,149,215|![Muestra 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
+|ASP, HTML, WPF|ASP HTML WPF azul|0095D 7 / 0,149,215|![Muestra 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP púrpura|9B4F96 / 155,79,150|![Muestra 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |C#|CS verde (VS acción verde)|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |CSS|Rojo CSS|BD1E2D / 189,30,45|![Muestra BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|Púrpura de FS|672878 / 103,40,120|![Muestra 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|F#|FS púrpura|672878 / 103,40,120|![Muestrario 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
 |JavaScript|JS naranja|F16421 / 241,100,33|![Muestra F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB azul (VS acción azul)|C 00539 / 0,83,156|![Muestra 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|TypeScript|Naranja de TS|E04C06 / 224,76,6|![Muestra E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
-|Python|PY verde|879636 / 135,150,54|![Muestra 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
+|VB|VB azul (Blue acción de VS)|00539C / 0,83,156|![Muestra 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|TypeScript|TS naranja|E04C06 / 224,76,6|![Muestra E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
+|Python|Copiar verde|879636 / 135,150,54|![Muestrario 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Ejemplos de iconos con modificadores de lenguaje  
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Icono de Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB") **VB**|![C &#35; icono](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp") **C#**|![C &#43; &#43; icono](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus") **C++**|![F &#35; icono](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp") **F #**|![Icono de JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript") **JavaScript**|![Icono de Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python") **Python**|  
-|![Icono de HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML") **HTML**|![Icono WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF") **WPF**|![Icono de ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP") **ASP**|![Icono de CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS") **CSS**|![Icono de typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript") **TypeScript**||  
+|![Icono de Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![C &#35; icono](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C &#43; &#43; icono](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F &#35; icono](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Icono de JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Icono de Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405-30_Python")<br />Python|  
+|![Icono HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405-31_HTML")<br />HTML|![Icono WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Icono ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![Icono CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![Icono de typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
- Iconos de IntelliSense utilizan una paleta de colores exclusivo. Estos colores se utilizan para ayudar a los usuarios a distinguir rápidamente entre los distintos elementos de la lista emergente de IntelliSense.  
+ Iconos de IntelliSense utilizan una paleta de colores exclusivo. Estos colores se usan para ayudar a los usuarios distinguir rápidamente entre los distintos elementos de la lista emergente de IntelliSense.  
   
-|Uso|Nombre|Valor (todos los temas)|Muestra|  
+|Uso|Name|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
-|Clase de evento|Naranja de la acción de VS|C27D1A / 194,125,26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Método de extensión, método, módulo, delegado|Púrpura de acción de VS|652 90 D / 101,45,144|![Muestra 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|Campo, elemento de enumeración, macros, estructura, tipo de valor de unión, operador, interfaz|Azul de la acción de VS|C 00539 / 0,83,156|![Muestra 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Objeto|Verde de la acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Constante, excepción, el elemento de enumeración, mapa, elemento de mapa, espacio de nombres de plantilla, una definición de tipo|Fondo (VS BG)|424242 / 66,66,66|![Muestra 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
+|Clase de evento|VS acción naranja|C27D1A / 194,125,26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
+|Método de extensión, método, módulo, delegado|Púrpura de acción de VS|652 90 D / 101,45,144|![Muestra 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Campo, elemento de enumeración, Macro, estructura, tipo de valor de unión, operador, interfaz|Azul de la acción de VS|00539C / 0,83,156|![Muestra 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Objeto|Verde de acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Constante, excepción, el elemento de enumeración, mapa, elemento de mapa, Namespace, plantilla, una definición de tipo|Fondo (VS BG)|424242 / 66,66,66|![Muestrario 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Ejemplos de iconos de IntelliSense  
   
 ||||||  
 |-|-|-|-|-|  
-|![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass") **(clase)**|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent") **evento privado**|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate") **delegar**|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend") **Friend (método)**|![Icono del campo](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field") **campo**|  
-|![IntelliSense protegido icono de elemento de enumeración](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem") **elemento de enumeración protegida**|![Icono de objeto de IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject") **objeto**|![Icono de plantilla de IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate") **plantilla**|![Icono de acceso directo de IntelliSense excepción](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut") **acceso directo (excepción)**||  
+|![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")<br />Clase|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")<br />Evento privado|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")<br />delegado|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")<br />Friend (método)|![Icono de campo](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")<br />Campo|  
+|![Icono de elemento de enumeración protegida de IntelliSense](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405-41_IntelliSenseProtectedEnumItem")<br />Elemento de enumeración protegido|![Icono de objeto de IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405-42_IntelliSenseObject")<br />Objeto|![Icono de plantilla de IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405-43_IntelliSenseTemplate")<br />Plantilla|![Icono de acceso directo de excepción de IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405-44_IntelliSenseExceptionShortcut")<br />Acceso directo de la excepción||  
   
 ### <a name="notifications"></a>Notificaciones  
- Notificaciones en Visual Studio se utilizan para indicar el estado. La paleta de notificación utiliza los siguientes cuatro colores, así como opciones de relleno de primer plano blanco o negro para definir notificaciones con los siguientes niveles de estado.  
+ Las notificaciones en Visual Studio se utilizan para indicar el estado. La paleta de notificación usa los siguientes cuatro colores, así como opciones de relleno de primer plano o negro, para definir notificaciones con los siguientes niveles de estado.  
   
-|Uso|Nombre|Valor (todos los temas)|Muestra|  
+|Uso|Name|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
 |Estado: neutro|Notificación azul (VS azul)|1BA1E2 / 27,161,226|![Muestra 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|Estado: positivo|Notificación verde (VS verde)|339933 / 51,153,51|![Muestra 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|Estado: positivo|Notificación verde (VS verde)|339933 / 51,153,51|![Muestrario 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |Estado: negativo|Notificación rojo (VS rojo)|E51400 / 229,20,0|![Muestra E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
 |Estado: advertencia|Notificación amarillo (VS naranja)|FFCC00 / 255,204,0|![Muestra FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
 |Relleno de primer plano|Notificación negro (negro)|000000 / 0,0,0|![Muestrario &#35; 000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
@@ -421,19 +402,19 @@ caps.handback.revision: 11
   
 |||||  
 |-|-|-|-|  
-|![Icono de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert") **alerta**|![Icono de advertencia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning") **Advertencia**|![Icono de completado](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete") **completado**|![Icono de detención](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop") **Detener**|  
+|![Icono de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")<br />Alerta|![Icono de advertencia](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")<br />Advertencia|![Icono completa](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")<br />Completado|![Icono de detención](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")<br />Detener|  
   
 ### <a name="visual-studio-online"></a>Visual Studio Online  
- En general, Visual Studio Online consta de características que se hospeda en un explorador. Varía el color en entornos diferentes, pero el estilo sigue siendo la misma.  
+ En general, Visual Studio Online consta de características que se hospedan en un explorador. El color varía en entornos diferentes, pero el estilo sigue siendo el mismo.  
   
-|Agrupar|Uso|Nombre|Valor (todos los temas)|Muestra|  
+|Agrupar|Uso|Name|Valor (todos los temas)|Muestra|  
 |-----------|-----------|----------|--------------------------|------------|  
-|TFS|Fondo|TFSO BG|656565/ 101, 101, 101|![Muestra 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
+|TFS|Fondo|TFSO BG|656565/ 101, 101, 101|![Muestrario 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Esquema|TFSO OUT|FFFFFF / 255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Napa|Fondo|Blanco|FFFFFF / 255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Mónaco|Fondo|Blanco|FFFFFF / 255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Fondo|Blanco|FFFFFF / 255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|Normal|Grey_Primary de F12|555555 / 85, 85, 85|![Muestra 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
+|F12|Normal|Grey_Primary de F12|555555 / 85, 85, 85|![Muestrario 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
 |F12|Al mantener el puntero|Blue_Hover de F12|2279BF / 34,121,191|![Muestra 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
 |F12|Deshabilitado|LtGrey_Disabled de F12|ABABAC / 171,171,172|![Muestra ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
 |F12|Segundo plano al mantener el mouse|Al mantener el mouse bg|D9EBF7 / 217,235,247|![Muestra D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
@@ -451,16 +432,16 @@ caps.handback.revision: 11
   
 |TFS en línea||||  
 |----------------|-|-|-|  
-|![Icono de equipo de TFS en línea](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam") **equipo Online**|![Icono de información de TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405-50_TFSInformation") **información**|![Icono de historial TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405-51_TFSHistory") **historial**|![Icono de bifurcación TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch") **sucursales**|  
+|![Icono de equipo de TFS en línea](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Equipo en línea|![Icono de información de TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405-50_TFSInformation")<br />Información|![Icono de historial TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405-51_TFSHistory")<br />Historial|![Icono de bifurcación TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch")<br />Rama|  
   
 |Napa||||  
 |----------|-|-|-|  
-|![Icono de contenido de Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405-53_NapaContent") **contenido**|![Icono de correo electrónico de office de Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405-54_NapaOfficeMail") **correo electrónico de Office**|![Icono de SharePoint de Napa](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint") **SharePoint**|![Icono de panel de tareas de Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405-56_NapaTaskPane") **panel de tareas**|  
+|![Icono de contenido de Napa](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405-53_NapaContent")<br />Contenido|![Icono de correo electrónico de office de Napa](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405-54_NapaOfficeMail")<br />Correo electrónico de Office|![Icono de SharePoint de Napa](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405-55_NapaSharePoint")<br />SharePoint|![Icono de panel de tareas de Napa](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405-56_NapaTaskPane")<br />Panel de tareas|  
   
 |Mónaco||||  
 |------------|-|-|-|  
-|![Icono de Mónaco archivos](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405-57_MonacoFiles") **archivos**|![Icono de Git de Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit") **Git**|![Icono de búsqueda de Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405-59_MonacoSearch") **búsqueda**|![Icono de texto de Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText") **texto**|  
+|![Icono de archivos de Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405-57_MonacoFiles")<br />Archivos|![Icono de Git de Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Icono de búsqueda de Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405-59_MonacoSearch")<br />Buscar|![Icono de texto de Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Texto|  
   
-|F12||||  
-|---------|-|-|-|  
-|![Icono de F12 bastante](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode") **bastante código**|![Icono de advertencia de F12](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning") **Advertencia**|![Icono emular de F12](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate") **emular**|
+|F12|||  
+|---------|-|-|  
+|![Icono de resaltada de F12](../../extensibility/ux-guidelines/media/0405-61_f12prettycode.png "0405-61_F12PrettyCode")<br />Resaltada|![Icono de advertencia de F12](../../extensibility/ux-guidelines/media/0405-62_f12warning.png "0405-62_F12Warning")<br />Advertencia|![Icono de emular F12](../../extensibility/ux-guidelines/media/0405-63_f12emulate.png "0405-63_F12Emulate")<br />Emular|
