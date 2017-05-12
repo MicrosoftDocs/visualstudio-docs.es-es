@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.contentlocale: es-es
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
@@ -230,9 +231,11 @@ Puede hacer varias cosas para recopilar registros más detallados:
 
 - Establezca la variable de entorno de usuario `LiveUnitTesting_BuildLog` en el nombre del archivo que desea utilizar para capturar el registro de MSBuild. A continuación, a partir de ese archivo, se pueden recuperar los mensajes de registro de MSBuild detallados procedentes de las compilaciones de Live Unit Testing.
 
+- Establezca la variable de entorno de usuario `LiveUnitTesting_TestPlatformLog` en `1` para capturar el registro de la plataforma de prueba. A continuación, a partir de `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]`, se pueden recuperar los mensajes de registro detallados de la plataforma de prueba procedentes de las ejecuciones de Live Unit Testing.
+
 - Cree una variable de entorno de usuario denominada `VS_UTE_DIAGNOSTICS` y establézcala en 1 (o en cualquier valor) y reinicie Visual Studio. Ahora debería ver una gran cantidad de información de registro en la pestaña **Salida - Pruebas** en Visual Studio. 
  
 ## <a name="see-also"></a>Vea también
 
-[Pruebas unitarias en vivo](live-unit-testing.md)
+[Live Unit Testing ](live-unit-testing.md)
  

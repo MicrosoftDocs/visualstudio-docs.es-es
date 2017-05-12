@@ -1,7 +1,7 @@
 ---
-title: Plantilla de proyecto web en Herramientas de Python para Visual Studio | Microsoft Docs
+title: Plantilla de proyecto web para Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,18 +28,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 2375c0c3b1a692d03d8790e400e3fea606355831
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 20edb7a53adf400fba94556e659b4215a0060c1b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="python-web-project-templates"></a>Plantillas de proyecto web de Python
 
-Herramientas de Python para Visual Studio (PTVS) incluye compatibilidad para desarrollar proyectos web en marcos como Bottle, Django y Flask. Esto incluye plantillas de proyecto y un iniciador de depuración que se puede configurar para controlar diferentes marcos. Sin embargo, PTVS no incluye los propios marcos, que debe instalarlos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework… (Instalar o actualizar marco…)**.
+Python en Visual Studio incluye compatibilidad para desarrollar proyectos web en marcos como Bottle, Django y Flask. Esto incluye plantillas de proyecto y un iniciador de depuración que se puede configurar para controlar diferentes marcos. Sin embargo, Visual Studio no incluye los propios marcos, que debe instalarlos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework… (Instalar o actualizar marco…)**.
 
-Cada plantilla (a la que se accede a través de **Archivo > Nuevo > Proyecto...**) inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en [Microsoft Azure](http://www.azure.com). Las plantillas se proporcionan para Bottle, Flask y Django, y puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
+Cada plantilla (a la que se accede a través de **Archivo > Nuevo > Proyecto...** ) inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en [Microsoft Azure](http://www.azure.com). Las plantillas se proporcionan para Bottle, Flask y Django, y puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
 
 ![Nuevas plantillas de proyecto web](media/template-web-new-project.png)
 
@@ -59,7 +60,7 @@ Para una introducción a los proyectos web de Python, consulte el vídeo de yout
 
 ## <a name="debugging"></a>Depuración
 
-Cuando se inicie un proyecto web para la depuración, PTVS iniciará el servidor web localmente y abrirá el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y seleccione la pestaña **Iniciador web**:
+Cuando se inicie un proyecto web para la depuración, Visual Studio iniciará el servidor web localmente y abrirá el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y seleccione la pestaña **Iniciador web**:
 
   ![Propiedades del iniciador web de la plantilla web genérica](media/template-web-launcher-properties.png)
 
@@ -67,7 +68,7 @@ En el grupo **Depurar**:
 
 - **Rutas de acceso de búsqueda**, **Argumentos de script**, **Interpreter Arguments (Argumentos del intérprete)** e **Interpreter Path (Ruta de acceso del intérprete)**: Son los mismos que para la [depuración normal](debugging.md).
 - **Iniciar URL**: Especifica la dirección URL que se abrirá en el explorador. El valor predeterminado es `localhost`.
-- **Número de puerto**: Puerto que se utilizará si no se especifica ninguno en la dirección URL (PTVS selecciona uno automáticamente de forma predeterminada). Esto le permite invalidar el valor predeterminado de la variable de entorno `SERVER_PORT`, que lo utilizan las plantillas para configurar el puerto en el que escucha el servidor de depuración local.
+- **Número de puerto**: Puerto que se utilizará si no se especifica ninguno en la dirección URL (Visual Studio selecciona uno automáticamente de forma predeterminada). Esto le permite invalidar el valor predeterminado de la variable de entorno `SERVER_PORT`, que lo utilizan las plantillas para configurar el puerto en el que escucha el servidor de depuración local.
 
 Las propiedades de los grupos **Run Server Command** (Comando de servidor de ejecución) y **Debug Server Command (Comando de servidor de depuración)** (este último está por debajo de lo que es visible en la imagen) determinan cómo se inicia el servidor web. Dado que muchos marcos requieren el uso de un script fuera del proyecto actual, se puede configurar aquí el script y el nombre del módulo de inicio se puede pasar como parámetro.
 
@@ -94,7 +95,7 @@ La plantilla de proyecto web de Bottle incluye código reutilizable que realiza 
     - **Comando**: `bottle` (módulo)
     - **Argumentos** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-La opción `--reload` no se recomienda cuando se usa PTVS para la depuración.
+La opción `--reload` no se recomienda cuando se usa Visual Studio para la depuración.
 
 ### <a name="sample-pyramid-configuration"></a>Configuración de Pyramid de ejemplo
 

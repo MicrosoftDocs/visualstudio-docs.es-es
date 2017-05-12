@@ -1,7 +1,7 @@
 ---
-title: Pruebas unitarias en Herramientas de Python para Visual Studio | Microsoft Docs
+title: Pruebas unitarias para Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 878bd0baaa0e08a31274645213b222bf6faeb412
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -39,13 +40,13 @@ ms.lasthandoff: 04/10/2017
 
 Las pruebas unitarias son fragmentos de código que prueban otras unidades de código de una aplicación, normalmente funciones aisladas, clases, etc. Cuando una aplicación supera todas sus pruebas unitarias, al menos puede confiar en que su funcionalidad de bajo nivel es correcta.
 
-Python utiliza pruebas unitarias ampliamente para validar escenarios durante el diseño de un programa. Herramientas de Python para Visual Studio (PTVS) incluye compatibilidad para descubrir, ejecutar y depurar pruebas unitarias dentro del contexto de su proceso de desarrollo, en lugar de tener que ejecutarlas independientemente.
+Python utiliza pruebas unitarias ampliamente para validar escenarios durante el diseño de un programa. La compatibilidad de Python en Visual Studio incluye características para descubrir, ejecutar y depurar pruebas unitarias dentro del contexto de su proceso de desarrollo, en lugar de tener que ejecutarlas independientemente.
 
 En este tema se proporciona una descripción breve de las funcionalidades de las pruebas unitarias en Visual Studio con Python. Para más información sobre las pruebas unitarias en general, consulte [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).
 
 ## <a name="discovering-and-viewing-tests"></a>Detección y visualización de pruebas
 
-Por convención, PTVS identificará las pruebas como métodos cuyos nombres empiezan por "test". Para comprender esto, lleve a cabo las acciones siguientes:
+Por convención, Visual Studio identifica las pruebas como métodos cuyos nombres empiezan por "test". Para comprender esto, lleve a cabo las acciones siguientes:
 
 1. Abra un [proyecto Python](python-projects.md) cargado en Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevo elemento...** y luego seleccione **Python Unit Test** (Prueba unitaria de Python) y **Agregar**.
 
@@ -81,7 +82,7 @@ Para más detalles sobre el módulo `unittest` y las pruebas de escritura, consu
 En el Explorador de pruebas puede ejecutar pruebas de varias maneras:
 
 - **Ejecutar todas** claramente ejecuta todas las pruebas mostradas (sujeto a filtros).
-- El menú **Ejecutar...** proporciona comandos para ejecutar pruebas con error, superadas o no ejecutadas como un grupo.
+- El menú **Ejecutar...**  proporciona comandos para ejecutar pruebas con error, superadas o no ejecutadas como un grupo.
 - Puede seleccionar una o varias pruebas, hacer clic con el botón derecho y seleccionar **Ejecutar pruebas seleccionadas**.
 
 Las pruebas se ejecutan en segundo plano y el Explorador de pruebas actualiza el estado de todas las pruebas a medida que se completan:
@@ -98,13 +99,13 @@ Las pruebas se ejecutan en segundo plano y el Explorador de pruebas actualiza el
 
 ## <a name="debugging-tests"></a>Depuración de pruebas
 
-Dado que las pruebas unitarias son fragmentos de código, están sujetas a errores como cualquier otro código y, en ciertas ocasiones, necesitan ejecutarse en un depurador, donde puede establecer puntos de interrupción, examinar variables y recorrer el código. PTVS también proporciona herramientas de diagnóstico.
+Dado que las pruebas unitarias son fragmentos de código, están sujetas a errores como cualquier otro código y, en ciertas ocasiones, necesitan ejecutarse en un depurador, donde puede establecer puntos de interrupción, examinar variables y recorrer el código. Visual Studio también proporciona herramientas de diagnóstico
 
 Para iniciar la depuración, establezca un punto de interrupción inicial en el código y luego haga clic con el botón derecho en la prueba (o una selección) en el Explorador de pruebas y seleccione **Depurar pruebas seleccionadas**. Visual Studio iniciará al depurador de Python como lo haría para el código de la aplicación.
 
 ![Depuración de una prueba](media/unit-test-debugging.png)
 
-También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de PTVS (consulte la [Matriz de características](python-in-visual-studio.md#features-matrix)).
+También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](python-in-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Problemas conocidos
 
