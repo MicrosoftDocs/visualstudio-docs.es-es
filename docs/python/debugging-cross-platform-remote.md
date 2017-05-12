@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: df4d74d9fe884f3aff1998f4b0b38dbff6d1359f
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: fa3d69cbb34a61a327d0b4c27430ff04b670a568
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -111,7 +112,10 @@ En estos pasos, estableceremos un punto de interrupción simple para detener el 
 
 1. En el cuadro de diálogo **Asociar al proceso** que aparece, establezca **Tipo de conexión** en **Depuración remota de Python (ptvsd)**. (En versiones anteriores de Visual Studio estas se denominaban **Transporte** y **Depuración remota de Python**).
 
-1. En el campo **Destino de la conexión** (**Calificador** en versiones anteriores), escriba `tcp://<secret>@<ip_address>:5678`, donde `<secret>` es la cadena pasada `enable_attach` en el código Python, `<ip_address>` es la del equipo remoto (que puede ser una dirección explícita o un nombre como myvm.cloudapp.net), y `:5678` es el número de puerto de depuración remota. 
+1. En el campo **Destino de la conexión** (**Calificador** en versiones anteriores), escriba `tcp://<secret>@<ip_address>:5678`, donde `<secret>` es la cadena pasada `enable_attach` en el código Python, `<ip_address>` es la del equipo remoto (que puede ser una dirección explícita o un nombre como myvm.cloudapp.net), y `:5678` es el número de puerto de depuración remota.
+
+    > [!Warning]
+    > Si está realizando una conexión a través de una conexión pública a Internet, debería utilizar `tcps` en su lugar y seguir las instrucciones siguientes para la [Protección de la conexión del depurador con SSL](#securing-the-debugger-connection-with-ssl).
 
 1. Presione ENTRAR para rellenar la lista de procesos de ptvsd disponibles en el equipo:
 
@@ -194,5 +198,5 @@ Visual Studio le avisará sobre posibles problemas de certificado cuando se cone
     ![Advertencia de nombre de host de certificado SSL](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
-> En la actualidad, Visual Studio 2017 Preview se bloqueará cuando se omiten estas advertencias. Asegúrese de corregir todos los problemas antes de intentar conectarse.
+> En la actualidad, Visual Studio 2017 se bloquea cuando omite estas advertencias. Asegúrese de corregir todos los problemas antes de intentar conectarse.
 

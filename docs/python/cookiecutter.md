@@ -1,7 +1,7 @@
 ---
-title: "Extensión de Cookiecutter con Herramientas de Python para Visual Studio | Microsoft Docs"
+title: "Extensión CookieCutter para Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: e9a822b98d4cbcf2fd52d96a199e596cec4e2c3b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 44aa74104cbb27de62fe739dbdd8f269fbf42c53
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Análisis del uso de memoria en Visual Studio | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 697b8f5517ad9a953a04f920be39c9ef2cfa2558
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 137f6faa156d188afb99cafb2b1e9dbababdeb4f
+ms.openlocfilehash: a7de37fd82f94fdcef6f839884ea30c5c77061e5
+ms.contentlocale: es-es
+ms.lasthandoff: 04/28/2017
 
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
@@ -47,7 +48,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
   
  Aunque puede recopilar instantáneas de memoria en cualquier momento en la herramienta **Uso de memoria** , puede usar el depurador de Visual Studio para controlar cómo se ejecuta la aplicación mientras investiga los problemas de rendimiento. Las acciones del depurador como establecer puntos de interrupción, ejecutar paso a paso e interrumpir todos, entre otras, pueden ayudarle a centrarse en las investigaciones de rendimiento en las rutas de acceso de código que son más importantes. Si realiza esas acciones mientras la aplicación se ejecuta, puede eliminar el ruido del código que no le interesa y reducir considerablemente la cantidad de tiempo necesario para diagnosticar un problema.  
   
- También puede usar la herramienta de memoria fuera del depurador. Vea [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md) (Uso de memoria sin depuración).  
+ También puede usar la herramienta de memoria fuera del depurador. Vea [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
   
 > [!NOTE]
 >  **Compatibilidad con el asignador personalizado** El generador de perfiles de memoria nativa funciona mediante la recopilación de datos de asignación de eventos de [ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803\(v=vs.85\).aspx) que se emiten en tiempo de ejecución.  Los asignadores de CRT y Windows SDK se han anotado en el nivel de origen para que se pueden capturar los datos de asignación.  Si escribe sus propios asignadores, las funciones que devuelven un puntero a la memoria de montón recientemente asignada se pueden decorar con [__declspec](/cpp/cpp/declspec)(allocator), tal como se muestra en este ejemplo para myMalloc:  
@@ -89,7 +90,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
     ![Tomar instantánea](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
-     >  -   Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
+     >  Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
 
 6.  Ejecute el escenario que hará que se alcance el primer punto de interrupción.
 
@@ -113,17 +114,15 @@ Las filas de la tabla de resumen Uso de memoria enumeran las instantáneas que s
 -   La columna **Tamaño de montón (dif.)** muestra el número de bytes en los montones .NET y nativos. 
 
 Cuando se toman varias instantáneas, las celdas de la tabla de resumen incluyen el cambio de valor entre la instantánea de la fila y la instantánea anterior.  
-  
-![Celda de tabla de resumen de memoria](../profiling/media/dbgdiag_mem_summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
 
 Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un informe detallado del uso de memoria:  
 
 -   Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio a la izquierda de la flecha (![Aumento del uso de memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento del uso de memoria")). Una flecha roja indica un aumento en el uso de memoria, mientras que una flecha verde indica una disminución.
 
     > [!TIP]
-    >  Para ayudar a identificar problemas de memoria más rápidamente, los informes de diferencias se ordenan por tipos de objeto que más aumentaron en número total (vínculo de cambio en la columna **Objetos (dif.)**) o que más aumentaron en el tamaño total del montón (vínculo de cambio en la columna **Tamaño de montón (dif.)**).
+    >  Para ayudar a identificar problemas de memoria más rápidamente, los informes de diferencias se ordenan por tipos de objeto que más aumentaron en número total (haga clic en el vínculo de cambio en la columna **Objetos (dif.)**) o que más aumentaron en el tamaño total del montón (haga clic en el vínculo de cambio en la columna **Tamaño de montón (dif.)**).
 
--   Para ver los detalles únicamente de la instantánea seleccionada, elija el vínculo de no cambio. 
+-   Para ver los detalles únicamente de la instantánea seleccionada, haga clic en el vínculo de no cambio. 
   
  El informe aparece en una ventana separada.   
   
@@ -178,7 +177,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
  ![Vista de diferencias de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs y vídeos  
- [Ventana del depurador de Herramientas de diagnóstico en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Ventana del depurador Herramientas de diagnóstico en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Blog: herramienta de uso de memoria durante la depuración en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   

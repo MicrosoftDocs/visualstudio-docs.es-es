@@ -28,14 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 002c77b27f7283ecd28d7ec5470b0ed44b2bb7a4
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
-# <a name="creating-a-c-extension-for-python"></a>Crear una extensión de C++ para Python
+# <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
 Los módulos escritos en C++ (o C) se suelen usar para ampliar las capacidades de un intérprete de Python y para permitir el acceso a funciones de bajo nivel del sistema operativo. Hay tres tipos principales de módulos:
 
@@ -49,11 +50,14 @@ El enfoque adoptado aquí es el de las extensiones de CPython estándar que se d
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Este tutorial se ha escrito para Visual Studio 2017 Preview con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** con sus opciones predeterminadas (como Python 3.6 como intérprete predeterminado). En la carga de trabajo **Desarrollo de Python**, active también la casilla de la derecha de **Herramientas de desarrollo nativo Python**, que establecerá la mayoría de las opciones descritas en este tema. (Esta opción también incluirá la carga de trabajo de C++ automáticamente).
+Este tutorial se ha escrito para Visual Studio 2017 con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** con sus opciones predeterminadas (como Python 3.6 como intérprete predeterminado). En la carga de trabajo **Desarrollo de Python**, active también la casilla de la derecha de **Herramientas de desarrollo nativo Python**, que establecerá la mayoría de las opciones descritas en este tema. (Esta opción también incluirá la carga de trabajo de C++ automáticamente). 
 
 ![Selección de la opción Herramientas de desarrollo nativo Python](media/cpp-install-native.png)
 
 Para obtener más información, vea [Installing Python Support for Visual Studio](installation.md) (Instalación de la compatibilidad de Python para Visual Studio), incluido el uso de otras versiones de Visual Studio. Si instala Python por separado, asegúrese de seleccionar **Download debugging symbols** (Descargar símbolos de depuración) y **Download debug binaries** (Descargar archivos binarios de depuración) en **Opciones avanzadas** en el programa de instalación. Esto garantiza que tenga disponibles las bibliotecas de depuración necesarias si decide realizar una compilación de depuración.
+
+> [!Note]
+> Python también está disponible a través de la carga de trabajo **Aplicaciones analíticas y de ciencia de datos**, que incluye Anaconda 3 de 64 bits (con la versión más reciente de CPython) y la opción **Herramientas de desarrollo nativo de Python** predeterminada.
 
 ## <a name="create-the-python-application"></a>Crear la aplicación de Python
 
@@ -265,7 +269,7 @@ Ahora puede llamar al código de `tanh` y comparar su rendimiento con la impleme
 
 ## <a name="debug-the-c-code"></a>Depurar el código de C++
 
-La compatibilidad con Python en Visual Studio incluye la capacidad de [depurar código de Python y de C++ al mismo tiempo](debugging-mixed-mode.md). Para experimentarlo, haga lo siguiente:
+La [compatibilidad con Python en Visual Studio](installation.md) incluye la capacidad de [depurar código de Python y de C++ al mismo tiempo](debugging-mixed-mode.md). Para experimentarlo, haga lo siguiente:
 
 1. Haga clic con el botón derecho en el proyecto de Python en el Explorador de soluciones, seleccione **Propiedades**, elija la pestaña **Depurar** y, después, seleccione la opción **Depurar > Habilitar depuración de código nativo**.
 

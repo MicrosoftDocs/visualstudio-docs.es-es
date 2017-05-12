@@ -1,7 +1,7 @@
 ---
-title: Plantilla de proyecto web de Django en Herramientas de Python para Visual Studio | Microsoft Docs
+title: Plantilla de proyecto web de Django para Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,18 +28,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7f65641fbf15edfe16931badc19602a0fc773bff
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 4a5db2deb3633e8305dbf83cbe6ba8c0e3344c72
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
 
-[Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. Herramientas de Python para Visual Studio (PTVS) proporciona una plantilla de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar la plantilla en Visual Studio, seleccione **Archivo > Nuevo > Proyecto**, busque "Django" y seleccione la plantilla "Django Web Project" (Proyecto web de Django). El proyecto resultante incluirá código reutilizable, así como una base de datos de SQLite predeterminada. La plantilla "Blank Django Web Project" (Proyecto web de Django en blanco) es similar, pero no incluye la base de datos.
+[Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. La compatibilidad de Python en Visual Studio proporciona una plantilla de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar la plantilla en Visual Studio, seleccione **Archivo > Nuevo > Proyecto**, busque "Django" y seleccione la plantilla "Django Web Project" (Proyecto web de Django). El proyecto resultante incluirá código reutilizable, así como una base de datos de SQLite predeterminada. La plantilla "Blank Django Web Project" (Proyecto web de Django en blanco) es similar, pero no incluye la base de datos.
 
-PTVS proporciona IntelliSense al completo para proyectos de Django:
+Visual Studio proporciona IntelliSense al completo para proyectos de Django:
 
 - Variables de contexto que se pasan en la plantilla:
 
@@ -56,7 +57,7 @@ PTVS proporciona IntelliSense al completo para proyectos de Django:
     ![IntelliSense para JavaScript](media/template-django-intellisense-js.png)
 
 
-PTVS también proporciona [compatibilidad con la depuración](debugging.md) completa para los proyectos de Django: 
+Visual Studio también proporciona [compatibilidad con la depuración](debugging.md) completa para los proyectos de Django: 
 
 ![Puntos de interrupción](media/template-django-debugging.png)
 
