@@ -30,17 +30,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ddc84f3b92d8e0febaea3d23b415bd6e703cc530
-ms.openlocfilehash: e04b972187b7b7ec225b48cc9b8904d804399ff8
-ms.lasthandoff: 04/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: edc126208bb401c8dba9a6be722cbd0dbda21caf
+ms.openlocfilehash: 720048b861bfb208489a62340efca28ae88d1951
+ms.contentlocale: es-es
+ms.lasthandoff: 04/22/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 Productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta nueva versión.
 
 > [!NOTE]
-> Para obtener una lista completa de las nuevas funciones y características en Visual Studio 2017, vea las [Notas de la versión](https://www.visualstudio.com/news/vs2015-vs).
+> Para obtener una lista completa de las nuevas funciones y características en Visual Studio 2017, vea las [Notas de la versión](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
 Aquí se muestra un resumen de alto nivel de los cambios que hemos realizado:
 

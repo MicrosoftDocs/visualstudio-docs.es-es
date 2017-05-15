@@ -27,9 +27,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
 ms.openlocfilehash: b7cb109d11669f411b5ca3bdf3c4c32a63ac53a1
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -100,11 +101,11 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
  Para probar un caso de uso como el de agregar un elemento al pedido, un método de prueba podría incluir código similar a este:  
   
 ```  
-Order order = … ; // set up an order  
+Order order = ... ; // set up an order  
 // Store prior state:  
 int countBefore = order.MenuItems.Count;   
 // Perform use case:  
-MenuItem chosenItem = …; // choose an item  
+MenuItem chosenItem = ...; // choose an item  
 AddItemToOrder (chosenItem, order);   
 // Verify part of postcondition:  
 int countAfter = order.MenuItems.Count;  
@@ -145,7 +146,7 @@ Assert (countAfter == countBefore = 1);
   
  Desde el punto de vista de las pruebas, un modelo de requisitos puede considerarse como una forma abreviada de realizar pruebas. Por ello, es importante mantener la relación entre las pruebas y el modelo a lo largo del proyecto.  
   
-##  <a name="a-nameattachinga-attaching-test-cases-to-model-elements"></a><a name="Attaching"></a>Adjuntar casos de prueba a elementos del modelo  
+##  <a name="Attaching"></a>Adjuntar casos de prueba a elementos del modelo  
  Si el proyecto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.  
   
  Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:  

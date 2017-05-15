@@ -25,9 +25,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
 ms.openlocfilehash: 0120e0adfed2c27ebd17d446f2f0e5c808acff92
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -40,7 +41,7 @@ Si está escribiendo una extensión de Visual Studio como un comando de menú o 
 using Microsoft.VisualStudio.TextTemplating;  
 using Microsoft.VisualStudio.TextTemplating.VSHost;  
 ...  
-// Get a service provider – how you do this depends on the context:  
+// Get a service provider - how you do this depends on the context:  
 IServiceProvider serviceProvider = ...; // An instance of EnvDTE, for example   
   
 // Get the text template service:  
@@ -64,7 +65,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 using Microsoft.VisualStudio.TextTemplating;  
 using Microsoft.VisualStudio.TextTemplating.VSHost;  
 ...  
-// Get a service provider – how you do this depends on the context:  
+// Get a service provider - how you do this depends on the context:  
 IServiceProvider serviceProvider = dte;   
   
 // Get the text template service:  
