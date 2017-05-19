@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: b71d44150662c97f355c9b0c14a7888baf6c0683
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="editing-python-code"></a>Edición de código de Python
 
-Los desarrolladores invierten gran cantidad de su tiempo en el editor de código, de modo que la compatibilidad con Python en Visual Studio proporciona características que le ayudarán a ser más productivo, como el resaltado de sintaxis de IntelliSense, la finalización automática, la ayuda para la firma, los reemplazos de método y la búsqueda y exploración. 
+Los desarrolladores invierten gran cantidad de su tiempo en el editor de código, de modo que la [compatibilidad con Python en Visual Studio](installation.md) proporciona características que le ayudarán a ser más productivo, como el resaltado de sintaxis de IntelliSense, la finalización automática, la ayuda para la firma, los reemplazos de método y la búsqueda y exploración. 
 
 En este tema:
 
@@ -160,7 +161,7 @@ La barra de navegación se muestra en la parte superior de cada ventana del edit
 
 ### <a name="navigate-to"></a>Navegar a
 
-El comando **Editar > Navegar a...** (Ctrl-coma) muestra un cuadro de búsqueda en el editor donde puede escribir cualquier cadena y consultar las posibles coincidencias en el código que define una función, una clase o una variable que contiene la cadena. Esto proporciona una funcionalidad similar a **Ir a definición**, pero sin tener que buscar un uso de un identificador.
+El comando **Editar > Navegar a...**  (Ctrl-coma) muestra un cuadro de búsqueda en el editor donde puede escribir cualquier cadena y consultar las posibles coincidencias en el código que define una función, una clase o una variable que contiene la cadena. Esto proporciona una funcionalidad similar a **Ir a definición**, pero sin tener que buscar un uso de un identificador.
 
 Haga doble clic en cualquier nombre, o seleccione con teclas de dirección y Entrar, para navegar a la definición de ese identificador.
 

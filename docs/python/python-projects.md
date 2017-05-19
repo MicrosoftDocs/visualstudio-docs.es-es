@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: eb3abd0f37e52f2b1db3793a5471b74a5e0c37ff
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 3190be68fbba464a84a7a25b2d829979944bdb1f
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -69,7 +70,7 @@ Consulte también el vídeo de youtube.com (8 minutos y 55 segundos) [Deep Dive:
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
-Al desarrollar la aplicación, normalmente necesitará agregar nuevos archivos de distintos tipos al proyecto. Esto se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar > Elemento existente...**, lo que le permitirá buscar un archivo que desea agregar, o mediante **Agregar > Nuevo elemento... **, que abre un cuadro de diálogo con numerosas plantillas de elementos que incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Le recomendamos que explore estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
+Al desarrollar la aplicación, normalmente necesitará agregar nuevos archivos de distintos tipos al proyecto. Esto se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar > Elemento existente...** , lo que le permitirá buscar un archivo que desea agregar, o mediante **Agregar > Nuevo elemento... **, que abre un cuadro de diálogo con numerosas plantillas de elementos que incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Le recomendamos que explore estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
 Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el Explorador de soluciones. Se trata del archivo que se ejecuta al iniciar la depuración (F5 o **Depurar > Iniciar depuración**) o que ejecuta el proyecto en la ventana interactiva (Alt+Mayús+F5 o **Depurar > Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
 
@@ -83,7 +84,7 @@ Un proyecto nuevo siempre está asociado al entorno de Python global predetermin
 <a name="project-types"</a>
 ## <a name="project-templates"></a>Plantillas de proyecto
 
-Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde cero o a partir de código existente. Para usar una plantilla, seleccione el comando de menú **Archivo > Nuevo > Proyecto...** o haga clic con el botón secundario en la solución en el Explorador de soluciones y seleccione **Agregar > Nuevo proyecto... **. Ambas acciones abrirán el cuadro de diálogo **Nuevo proyecto** que se muestra a continuación. Para ver plantillas específicas de Python, busque "Python" o seleccione el nodo **Plantillas > Other Languages (Otros lenguajes) > Python**:
+Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde cero o a partir de código existente. Para usar una plantilla, seleccione el comando de menú **Archivo > Nuevo > Proyecto...**  o haga clic con el botón secundario en la solución en el Explorador de soluciones y seleccione **Agregar > Nuevo proyecto... **. Ambas acciones abrirán el cuadro de diálogo **Nuevo proyecto** que se muestra a continuación. Para ver plantillas específicas de Python, busque "Python" o seleccione el nodo **Plantillas > Other Languages (Otros lenguajes) > Python**:
 
 ![Cuadro de diálogo Nuevo proyecto con plantillas de Python](media/projects-new-project-dialog.png)
 
@@ -100,12 +101,12 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | IronPython Silverlight Web Page (Página web de Silverlight en IronPython) | Proyecto de IronPython que se ejecuta en un explorador mediante Silverlight. El código Python de la aplicación se incluye en la página web como un script. Una etiqueta de script reutilizable extrae código de JavaScript que inicializa IronPython ejecutándose dentro de Silverlight, desde donde el código Python puede interactuar con DOM. |
 | IronPython Windows Forms Application (Aplicación de Windows Forms en IronPython) | Estructura de proyecto que utiliza IronPython con una interfaz de usuario creada mediante código con Windows Forms. La aplicación se ejecuta sin mostrar una consola. |
 | Background Application (IoT) (Aplicación en segundo plano (IoT)) | Admite la implementación de proyectos de Python para que se ejecuten como servicios en segundo plano en dispositivos. Visite el [Centro de desarrollo de Windows IoT](https://dev.windows.com/en-us/iot) para más información. |
-| Módulo de extensión de Python | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo Python** con la carga de trabajo de Python en Visual Studio 2017 Preview (vea [Instalación](installation.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creating a C++ Extension for Python](cpp-and-python.md) (Crear una extensión de C++ para Python). |
+| Módulo de extensión de Python | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo de Python** con la carga de trabajo de Python en Visual Studio 2017 (consulte [Instalación](installation.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creating a C++ Extension for Python](cpp-and-python.md) (Crear una extensión de C++ para Python). |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Creación de un proyecto a partir de archivos existentes
 
-1. Seleccione el menú **Archivo > Nuevo > Proyecto...** y luego seleccione la plantilla **From Existing Python Code** (A partir de código Python existente).
+1. Seleccione el menú **Archivo > Nuevo > Proyecto...**  y luego seleccione la plantilla **From Existing Python Code** (A partir de código Python existente).
 1. En el cuadro de diálogo siguiente, establezca la ruta de acceso al código existente, un filtro para tipos de archivo y cualquier ruta de acceso de búsqueda que requiera el proyecto. Por último, seleccione **Siguiente**:
 
     ![Nuevo proyecto a partir de código existente, paso uno](media/projects-from-existing-1.png)
@@ -141,7 +142,7 @@ Los archivos vinculados se omitirán en cualquiera de las condiciones siguientes
 
 ### <a name="working-with-linked-files"></a>Trabajo con archivos vinculados
 
-Para agregar un elemento existente como un vínculo, haga clic con el botón derecho en la carpeta en el proyecto donde desea agregar el archivo, seleccione **Agregar > Elemento existente...**. En el cuadro de diálogo que aparece, seleccione un archivo y elija **Agregar como vínculo** en la lista desplegable del botón **Agregar**. Siempre que no haya ningún archivo en conflicto, esta acción creará un vínculo en la carpeta seleccionada. Sin embargo, el vínculo no se agrega si ya existe un archivo con el mismo nombre o ya existe un vínculo a ese archivo en el proyecto.
+Para agregar un elemento existente como un vínculo, haga clic con el botón derecho en la carpeta en el proyecto donde desea agregar el archivo, seleccione **Agregar > Elemento existente...** . En el cuadro de diálogo que aparece, seleccione un archivo y elija **Agregar como vínculo** en la lista desplegable del botón **Agregar**. Siempre que no haya ningún archivo en conflicto, esta acción creará un vínculo en la carpeta seleccionada. Sin embargo, el vínculo no se agrega si ya existe un archivo con el mismo nombre o ya existe un vínculo a ese archivo en el proyecto.
 
 Si intenta establecer el vínculo a un archivo que ya existe en las carpetas de proyecto, se agregará como un archivo normal y no como un vínculo. Para convertir un archivo en un vínculo, seleccione **Archivo > Guardar como** para guardar el archivo en una ubicación fuera de la jerarquía del proyecto; Visual Studio lo convertirá automáticamente en un vínculo. De forma similar, se puede convertir un vínculo usando **Archivo > Guardar como** para guardar el archivo en alguna parte dentro de la jerarquía del proyecto. 
 
