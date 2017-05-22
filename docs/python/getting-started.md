@@ -1,7 +1,7 @@
 ---
 title: "Introducción a Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/1/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 8001036077b8b14af80fabceafad5d3aff9b25f4
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="getting-started-with-python-in-visual-studio"></a>Introducción a Python en Visual Studio
 
-Después de haber instalado Visual Studio con la carga de trabajo de Python (Visual Studio 2017) o con las Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores), ya puede explorar la experiencia de desarrollo con Python.
+Después de haber instalado Visual Studio con la carga de trabajo de Python (Visual Studio 2017) o con las Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores), ya puede explorar la experiencia de desarrollo con Python. (Consulte [Instalación](installation.md) si es necesario).
 
 En este tutorial, va a crear una nueva aplicación Python vacía, luego va a elegir un entorno Python con el que desea trabajar y, por último, va a empezar a escribir algo de código para ver IntelliSense en funcionamiento. A continuación, trabajará con la ventana interactiva de REPL durante poco tiempo para crear más código, luego completará el programa y lo ejecutará manualmente o en el depurador.
 
@@ -271,4 +272,5 @@ Además de los vínculos proporcionados anteriormente en la sección "Mayor prof
 - Visual Studio ofrece la posibilidad de depurar aplicaciones en servidores remotos, como se describe en [Cross-platform Remote Debugging](debugging-cross-platform-remote.md) (Depuración remota multiplataforma) y [Azure Remote Debugging](debugging-azure-remote.md) (Depuración remota en Azure).
 - Puede evaluar el rendimiento del código Python según se describe en [Visual Studio Profiling](profiling.md) (Generación de perfiles en Visual Studio).
 - Las pruebas unitarias escritas en Python se integran directamente con el Explorador de pruebas de Visual Studio, como se describe en [Unit Testing](unit-testing.md) (Pruebas unitarias).
+- [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 

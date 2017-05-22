@@ -1,8 +1,8 @@
 ---
 title: "Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 04/05/2017
-ms.reviewer: 
+ms.date: 05/06/2017
+ms.reviewer: tims
 ms.suite: 
 ms.technology:
 - vs-ide-install
@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
-ms.openlocfilehash: ff67313f350264b39151bc0e2f7191ab16300f24
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 0f07824b29e7851e353d472838a897853e227d6c
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017
@@ -41,65 +42,63 @@ En cada uno de los ejemplos, `vs_enterprise.exe`, `vs_professional.exe` y `vs_co
 > [!NOTE]
 > Todos los comandos requieren de elevación administrativa, y se mostrará un mensaje de Control de cuentas de usuario si el proceso no se inicia desde un símbolo del sistema con privilegios elevados.
 
+> [!NOTE]
+>  Puede usar el carácter `^` al final de una línea de comandos para concatenar varias líneas en un solo comando. Como alternativa, puede simplemente colocar estas líneas juntas en una sola fila. En PowerShell, el equivalente es el carácter de comilla simple (`` ` ``). 
+
 * Instale una instancia mínima de Visual Studio, en la que no hay solicitudes interactivas pero se muestra el progreso:
-```cmd
+```
 vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
 
 * Instale una instancia de escritorio de Visual Studio en modo silencioso, con el paquete de idioma francés, que solo se devuelve cuando el producto está instalado.
-```cmd
+```
 vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
-   --quiet --wait
+   --includeRecommended --quiet --wait
 ```
 
-  > [!NOTE]
-  >  El parámetro `--wait` está diseñado para su uso en un archivo por lotes. En un archivo por lotes, la ejecución del comando siguiente no continuará hasta que se haya completado la instalación. La variable de entorno `%ERRORLEVEL%` contendrá el valor devuelto del comando, como se indica en la página [Usar parámetros de la línea de comandos para instalar Visual Studio ](use-command-line-parameters-to-install-visual-studio.md).
+> [!NOTE]
+>  El parámetro `--wait` está diseñado para su uso en un archivo por lotes. En un archivo por lotes, la ejecución del comando siguiente no continuará hasta que se haya completado la instalación. La variable de entorno `%ERRORLEVEL%` contendrá el valor devuelto del comando, como se indica en la página [Usar parámetros de la línea de comandos para instalar Visual Studio ](use-command-line-parameters-to-install-visual-studio.md).
 
-* Descargue las cargas de trabajo de escritorio de .NET y web de .NET junto con todos los componentes recomendados y la extensión de GitHub. Incluya solo el paquete de idioma inglés:
+* Descargue el editor principal de Visual Studio (la configuración mínima de Visual Studio). Incluya solo el paquete de idioma inglés:
+
 ```cmd
 vs_community.exe --layout C:\VS2017
    --lang en-US ^
-   --add Microsoft.VisualStudio.Workload.CoreEditor ^
-   --add Microsoft.VisualStudio.Workload.NetWeb ^
-   --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
-   --add Microsoft.Net.ComponentGroup.TargetingPacks.Common ^
-   --add Microsoft.ComponentGroup.Blend ^
-   --add Microsoft.VisualStudio.Component.EntityFramework ^
-   --add Microsoft.VisualStudio.Component.DiagnosticTools ^
-   --add Microsoft.VisualStudio.Component.DockerTools ^
-   --add Microsoft.VisualStudio.Component.CloudExplorer ^
-   --add Microsoft.VisualStudio.Component.Wcf.Tooling ^
-   --add Component.GitHub.VisualStudio
+   --add Microsoft.VisualStudio.Workload.CoreEditor
 ```
 
-   >[!NOTE]
-   La edición Enterprise contiene más componentes recomendados que los incluidos aquí. Vea [Directorio de componentes de Visual Studio Enterprise 2017](workload-component-id-vs-enterprise.md) para obtener una lista de todos los componentes recomendados disponibles en Visual Studio Enterprise.
+* Descargue las cargas de trabajo de escritorio de .NET y web de .NET junto con todos los componentes recomendados y la extensión de GitHub. Incluya solo el paquete de idioma inglés:
+```
+vs_community.exe --layout C:\VS2017 ^
+   --lang en-US ^
+   --add Microsoft.VisualStudio.Workload.NetWeb ^
+   --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
+   --add Component.GitHub.VisualStudio ^
+   --includeRecommended
+```
 
 * Inicie una instalación interactiva de todas las cargas de trabajo y los componentes que están disponibles en Visual Studio 2017 Enterprise Edition:
-```cmd
+```
 vs_enterprise.exe --all --includeRecommended --includeOptional
 ```
 
 * Instale una segunda instancia con nombre de Visual Studio 2017 Professional en un equipo con Visual Studio 2017 Community Edition ya instalado, con compatibilidad con el desarrollo de Node.js:
-```cmd
+```
 vs_professional.exe --installPath C:\VSforNode ^
-   --add Microsoft.VisualStudio.Workload.Node --nickname VSforNode
+   --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
 ```
 
 * Quite de la instancia predeterminada de Visual Studio instalada el componente Herramientas de generación de perfiles:
-```cmd
+```
 vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
 ```
-
-  > [!NOTE]
-  >  Puede usar el carácter `^` al final de una línea de comandos para concatenar varias líneas en un solo comando. Como alternativa, puede simplemente colocar estas líneas juntas en una sola fila.
 
 ## <a name="see-also"></a>Vea también
 
