@@ -32,9 +32,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: c45571132fb06a63a8193d21941bbd50ccad4f42
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -43,7 +44,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
   
 -   El gráfico de barras **Distribución del costo** representa las relaciones entre la función seleccionada y las funciones de llamada que la han ejecutado. También indica las relaciones entre la función seleccionada y aquellas a las que llamó.  
   
--   La tabla **Detalles de rendimiento de la función	**, que muestra de manera resumida los datos de generación de perfiles para la función que especifique.  
+-   La tabla **Detalles de rendimiento de la función**, que muestra de manera resumida los datos de generación de perfiles para la función que especifique.  
   
 -   La ventana **Vista de código de función**, que muestra el código de función cuando el código está disponible.  
   
