@@ -32,9 +32,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 9e2c533f31c0fd0e73e990a747491ffd1d6cb267
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -45,7 +46,7 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Cree una **Sesión de rendimiento** ejecutando el **Asistente de rendimiento** o creando manualmente una sesión. La **Sesión de rendimiento** se muestra en el **Explorador de rendimiento** después de que se haya creado****.  
+ Cree una **Sesión de rendimiento** ejecutando el **Asistente de rendimiento** o creando manualmente una sesión. La **Sesión de rendimiento** se muestra en el **Explorador de rendimiento** después de la **Sesión de rendimiento** se haya creado.  
   
  Para ver las propiedades de la **Sesión de rendimiento**, seleccione el nombre de la sesión en **Explorador de rendimiento**, haga clic con el botón derecho en ella y después seleccione **Propiedades**.  
   

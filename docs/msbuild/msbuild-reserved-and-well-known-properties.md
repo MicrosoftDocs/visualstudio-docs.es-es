@@ -34,9 +34,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 078576d6e1988bf1cefbb09646ea44f61085f5cf
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -50,7 +51,7 @@ ms.lasthandoff: 02/22/2017
   
 |Propiedad|Descripción|Reservadas o conocidas|  
 |--------------|-----------------|-----------------------------|  
-|`MSBuildBinPath`|Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se están utilizando actualmente (por ejemplo, C:\Windows\Microsoft.Net\Framework\\\*versionNumber*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Reservada|  
+|`MSBuildBinPath`|Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se están utilizando actualmente (por ejemplo, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Reservada|  
 |`MSBuildExtensionsPath`|Introducida en .NET Framework 4: no hay ninguna diferencia entre los valores predeterminados de `MSBuildExtensionsPath` y de `MSBuildExtensionsPath32`. Puede establecer la variable de entorno `MSBUILDLEGACYEXTENSIONSPATH` en un valor distinto de null para habilitar el comportamiento del valor predeterminado de `MSBuildExtensionsPath` en versiones anteriores.<br /><br /> En .NET Framework 3.5 y en versiones anteriores, el valor predeterminado de `MSBuildExtensionsPath` apunta a la ruta de la subcarpeta de MSBuild bajo la carpeta \Archivos de programa\ o \Archivos de programa (x86), según el valor de bits del proceso actual. Por ejemplo, para un proceso de 32 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa (x86). Para un proceso de 64 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.<br /><br /> Esta ubicación es un lugar útil para colocar archivos de destino personalizados. Por ejemplo, podría instalar archivos de destino en \Archivos de programa\MSBuild\MisArchivos\Northwind.targets y, a continuación, importarlos en archivos de proyecto con este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Conocida|  
 |`MSBuildExtensionsPath32`|Ruta de acceso de la subcarpeta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bajo la carpeta \Archivos de programa\ o \Archivos de programa (x86). Esta ruta de acceso siempre apunta a la carpeta \Archivos de programa de 32 bits en un equipo de 32 bits y a \Archivos de programa (x86) en un equipo de 64 bits. Vea también `MSBuildExtensionsPath` y `MSBuildExtensionsPath64`.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Conocida|  
 `MSBuildExtensionsPath64`|Ruta de acceso de la subcarpeta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en la carpeta \Archivos de programa. Para un equipo de 64 bits, esta ruta de acceso apunta siempre a la carpeta \Archivos de programa. Para un equipo de 32 bits, esta ruta de acceso está en blanco. Vea también `MSBuildExtensionsPath` y `MSBuildExtensionsPath32`.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Conocida|  
