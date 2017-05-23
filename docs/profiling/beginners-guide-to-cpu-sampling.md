@@ -1,7 +1,7 @@
 ---
 title: "Guía básica para el muestreo de la CPU en Visual Studio | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
-ms.date: 03/06/2017
+ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -33,9 +33,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.contentlocale: es-es
 ms.lasthandoff: 03/07/2017
 
 ---
