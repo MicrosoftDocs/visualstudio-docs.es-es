@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: bf50213627703ac18257e3f0ec44c20cc7bb2cc9
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba de IU codificada
@@ -73,7 +74,7 @@ using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
 using MouseButtons = System.Windows.Forms.MouseButtons;  
 ```  
   
- El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> se incluye para una interfaz de usuario de Windows. Para una interfaz de usuario de página web, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>. Para una interfaz de usuario de Windows Presentation Foundation, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.  
+ Para una interfaz de usuario (UI) de Windows, se incluye el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>. Para la interfaz de usuario de una página web, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>. Para una interfaz de usuario de Windows Presentation Foundation, el espacio de nombres sería <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.  
   
 ####  <a name="UIMapClass"></a> Clase UIMap  
  La siguiente sección del archivo es la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.  
@@ -94,7 +95,7 @@ public void VerifyTotal()
 public void CleanUp()  
 ```  
   
- Este componente de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> también incluye el código generado para las distintas propiedades que los métodos requieren.  
+ Esta parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> también incluye el código generado para las distintas propiedades que requieren los métodos.  
   
 ```  
 public virtual LaunchCalculatorParams LaunchCalculatorParams  
@@ -155,7 +156,7 @@ Assert.AreEqual(
     uIItemEdit.Text);  
 ```  
   
- El nombre del cuadro de texto se define como desconocido porque el desarrollador de la aplicación Calculadora de Windows no ha proporcionado un nombre disponible públicamente para el control. Se produce un error en el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> cuando el valor real no es igual que el valor esperado, lo que produce un error en la prueba. Observe también que el valor esperado incluye un separador decimal seguido de un espacio. Si alguna vez tiene que modificar la funcionalidad de esta prueba concreta, deberá permitir este separador decimal y el espacio.  
+ El nombre del cuadro de texto se define como desconocido porque el desarrollador de la aplicación Calculadora de Windows no ha proporcionado un nombre disponible públicamente para el control. El método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> genera un error cuando el valor real no es igual al valor esperado. En este caso, la prueba podría generar errores. Observe también que el valor esperado incluye un separador decimal seguido de un espacio. Si alguna vez tiene que modificar la funcionalidad de esta prueba concreta, deberá permitir este separador decimal y el espacio.  
   
 #####  <a name="UIMapProperties"></a> Propiedades de UIMap  
  También se usa un código muy estandarizado para cada propiedad a través de la clase. El código siguiente para la propiedad `AddItemsParams` se usa en el método `AddItems()`.  
@@ -273,7 +274,7 @@ public void MyTestCleanup()
 }  
 ```  
   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> se ha aplicado al método `MyTestInitialize()`, lo que indica al marco de pruebas que debe llamar a este método antes que a ningún otro método de prueba. Del mismo modo, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> se aplicó al método `MyTestCleanup()`, lo que indica al marco de pruebas que debe llamar a este método después de que se haya llamado a todos los métodos de prueba restantes. El uso de estos métodos es opcional. Para esta prueba, puede llamarse al método `UIMap.LaunchCalculator()` desde `MyTestInitialize()`, y al método `UIMap.CloseCalculator()` desde `MyTestCleanup()` (en lugar de desde `CodedUITest1Method1()`).  
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> se ha aplicado al método `MyTestInitialize()`, lo que indica al marco de pruebas que debe llamar a este método antes que a ningún otro método de prueba. Del mismo modo, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> se ha aplicado al método `MyTestCleanup()`, lo que indica al marco de pruebas que debe llamar a este método después de que se haya llamado a todos los métodos de prueba restantes. El uso de estos métodos es opcional. Para esta prueba, puede llamarse al método `UIMap.LaunchCalculator()` desde `MyTestInitialize()`, y al método `UIMap.CloseCalculator()` desde `MyTestCleanup()` (en lugar de desde `CodedUITest1Method1()`).  
   
  Si agrega más métodos a esta clase con <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute>, el marco de pruebas llamará a cada uno de ellos como parte de la prueba.  
   

@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 444f6bf46c3eac65a2771655616fd67d8ed83b32
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
@@ -60,7 +61,7 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
   
 -   Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.  
   
--   Cree un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> independiente para cada módulo de la aplicación sometida a prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).  
+-   Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).  
   
 -   En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.  
   
@@ -70,7 +71,7 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
   
  Las pruebas de IU codificadas se adaptan automáticamente a los numerosos cambios en la interfaz de usuario. Si, por ejemplo, un elemento de la IU ha cambiado de posición o color, la prueba de IU codificada seguirá encontrando el elemento correcto, por lo general.  
   
- Durante una serie de pruebas, el marco de pruebas encuentra los controles de la IU mediante un conjunto de propiedades de búsqueda que se aplican a cada clase de control de las definiciones creadas por el **Generador de pruebas automatizadas de IU** en el archivo `UIMap.Designer.cs`. Las propiedades de búsqueda contienen pares nombre-valor de nombres y valores de propiedades que pueden usarse para identificar el control, como las propiedades <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> del control. Si se modifican las propiedades de búsqueda, la prueba de IU codificada encontrará correctamente el control en la IU. Si se cambian las propiedades de búsqueda, las pruebas de IU codificadas tienen un algoritmo de coincidencia inteligente que aplica la heurística para buscar ventanas y controles en la IU. Cuando haya cambiado la interfaz de usuario, debe poder modificar las propiedades de búsqueda de elementos identificados anteriormente para asegurarse de que se encuentran correctamente.  
+ Durante una serie de pruebas, el marco de pruebas encuentra los controles de la IU mediante un conjunto de propiedades de búsqueda que se aplican a cada clase de control de las definiciones creadas por el **Generador de pruebas automatizadas de IU** en el archivo `UIMap.Designer.cs`. Las propiedades de búsqueda contienen pares nombre-valor de los nombres de propiedad y los valores de propiedad que pueden utilizarse para identificar el control, como las propiedades <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> del control. Si se modifican las propiedades de búsqueda, la prueba de IU codificada encontrará correctamente el control en la IU. Si se cambian las propiedades de búsqueda, las pruebas de IU codificadas tienen un algoritmo de coincidencia inteligente que aplica la heurística para buscar ventanas y controles en la IU. Cuando haya cambiado la interfaz de usuario, debe poder modificar las propiedades de búsqueda de elementos identificados anteriormente para asegurarse de que se encuentran correctamente.  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>Qué hacer si cambia la interfaz de usuario  
  Las interfaces de usuario cambian frecuentemente durante el desarrollo. Estas son algunas maneras de reducir el impacto de estos cambios:  
@@ -88,7 +89,7 @@ En este tema se describen los procedimientos recomendados para desarrollar prueb
  Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).  
   
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Qué hacer si se debe completar un proceso en segundo plano antes de continuar con la prueba  
- Tal vez tenga que esperar a que finalice un proceso antes de continuar con la siguiente acción de la interfaz de usuario. Para ello puede usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar antes de que la prueba continúe como en el ejemplo siguiente.  
+ Tal vez tenga que esperar a que finalice un proceso antes de continuar con la siguiente acción de la interfaz de usuario. Para ello, puede usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar antes de que continúe la prueba, como en el ejemplo siguiente.  
   
 ```  
 // Set the playback to wait for all threads to finish  
