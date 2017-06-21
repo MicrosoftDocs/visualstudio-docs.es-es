@@ -126,8 +126,6 @@ Tutoriales, vídeos y otra documentación muestran formas de crear código y apl
         </div>
         </a>
     </li>
-</ul>
-<ul class="panelContent cardsFTitle">    
     <li>
         <a href="https://mva.microsoft.com/product-training/visual-studio-courses">
         <div class="cardSize">
