@@ -44,7 +44,7 @@ ms.lasthandoff: 03/03/2017
 # <a name="convert-dialog-box"></a>Convertir (Cuadro de diálogo)
 El cuadro de diálogo **Convertir** le permite seleccionar una herramienta de conversión para crear un proyecto a partir de uno anterior, como cuando se crea un proyecto de [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] a partir de un proyecto de Visual Basic 6. También puede usar el [Convertidor de proyectos de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), disponible en el sitio web de CodePlex, para actualizar los proyectos creados en versiones anteriores de Visual Studio.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)].  
+ [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="opening-the-convert-dialog-box"></a>Abrir el cuadro de diálogo Convertir  
   
