@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 22eb436711a7539a63f0d4198b4cd176890af3d0
-ms.openlocfilehash: 6871e525345ae5c1ffc79e0126e47176bedbe110
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 28a8636db753eb71a90cb89f921f58b97aabdc59
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizar el uso de energía en las aplicaciones de la Tienda
@@ -62,14 +63,14 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
   
  Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificación de escenarios con marcas de usuario  
+##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificar escenarios con marcas de usuario  
  Puedes agregar *marcas de usuario* a los datos de generación de perfiles para ayudar a identificar áreas en la regla de escala de tiempo.  
   
  ![Marcas de usuario en la escala de tiempo](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  La marca aparece como un triángulo naranja en la escala de tiempo en el momento de la ejecución del método. El mensaje y el tiempo se muestran como información sobre herramientas al mantener el mouse sobre la marca. Si dos o más marcas de usuario están muy próximas, se combinan dichas marcas y los datos sobre herramientas. Puedes acercar la escala de tiempo para separar las marcas.  
   
- **Adición de marcas a código de C#, Visual Basic y C++**  
+ **Agregar marcas a código de C#, Visual Basic y C++**  
   
  Para agregar una marca de usuario a código de C#, Visual Basic y C++, cree primero un objeto [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Después, inserte llamadas a métodos [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) en los puntos del código que quiera marcar. Use [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) en las llamadas.  
   
@@ -81,7 +82,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
   
  Consulte el [ejemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) en el Windows SDK.  
   
- **Adición de marcas a código de JavaScript**  
+ **Agregar marcas a código de JavaScript**  
   
  Para agregar marcas de usuario, agrega el código siguiente en los puntos del código que desees marcar:  
   
@@ -93,15 +94,15 @@ if (performance && performance.mark) {
   
  *markDescription* es una cadena que contiene el mensaje que se va a mostrar en la información sobre herramientas de la marca de usuario.  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Configuración del entorno para la generación de perfiles  
+##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurar el entorno para la generación de perfiles  
  Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Consulte [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para obtener más información.  
   
 > [!TIP]
->  -   No te recomendamos la generación de perfiles de energía en el simulador de la Tienda Windows ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
+>  -   No le recomendamos la generación de perfiles de energía en el simulador de la Tienda Windows ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
 > -   Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.  
 > -   Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Recopilación de datos del perfil de energía para la aplicación  
+##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Recopilar datos del perfil de energía para la aplicación  
   
 1.  En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.  
   
@@ -120,7 +121,7 @@ if (performance && performance.mark) {
   
      Visual Studio analiza los datos recopilados y muestra los resultados.  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Recopilación dedatos del perfil de energía para una aplicación instalada  
+##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Recopilar datos del perfil de energía para una aplicación instalada  
  La herramienta Consumo de energía solo puede ejecutarse en aplicaciones de la Tienda en Windows 8.1 que se inicien desde una solución de Visual Studio o se instalen desde la Tienda Windows. Cuando una solución se abre en Visual Studio, el destino predeterminado es el **Proyecto de inicio**. Para establecer el destino de una aplicación instalada:  
   
 1.  Elija **Cambiar destino** y, a continuación, **Aplicación instalada**.  
@@ -133,7 +134,7 @@ if (performance && performance.mark) {
   
  Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a> Análisis de datos de perfil de energía  
+##  <a name="BKMK_Analyze_energy_profile_data"></a> Analizar datos de perfil de energía  
  Los datos de perfil de energía se muestran en la ventana de documento de Visual Studio:  
   
  ![Página de informe del generador de perfiles de energía](../profiling/media/energyprof_all.png "ENERGYPROF_All")  
@@ -151,7 +152,7 @@ if (performance && performance.mark) {
   
  Busca un área donde la potencia del recurso presente un pico de actividad. Establezca una relación entre el área del pico con la funcionalidad de la aplicación. A continuación, use las barras de control de la escala de tiempo para acercarse a dicha área. Si deseas centrarte en el uso de la red, expande el nodo **Red** del gráfico **Recursos (activados/desactivados)**  para comparar el tiempo que estuvo abierta la conexión de red con el tiempo que la aplicación estuvo recibiendo o transfiriendo datos en la conexión. Reducir el tiempo que la red está abierta innecesariamente es un método de optimización muy eficaz.  
   
-##  <a name="BKMK_Optimize_energy_use"></a> Optimización del uso de energía  
+##  <a name="BKMK_Optimize_energy_use"></a> Optimizar el uso de energía  
  Además de transmitir datos, las conexiones de red incurren en ciertos costos de energía para inicializar, mantener y cerrar la conexión. Algunas redes mantienen la conexión durante un período de tiempo después de que los datos se hayan enviado o recibido para permitir que se transmitan más datos en una única conexión. Puedes utilizar el panel **Recursos (activados/desactivados)** para examinar la manera en que la aplicación interactúa con la conexión.  
   
  ![Panel recursos &#40;activados&#47;desactivados&#41;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")  
@@ -166,6 +167,6 @@ if (performance && performance.mark) {
   
 -   Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) y [JavaScript y HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) en el Centro de desarrollo de Windows describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.  
   
-     El simulador de Visual Studio para la Tienda Windows te permite simular las propiedades de la conexión de datos de las API de información de red. Consulte [Ejecutar aplicaciones de la Tienda Windows en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).  
+     El simulador de Visual Studio para la Tienda Windows te permite simular las propiedades de la conexión de datos de las API de información de red. Consulta [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
 -   Las herramientas **Control de tiempo de función de JavaScript** y **Uso de CPU** pueden ayudarle a reducir la carga de la CPU siempre que esté causada por funciones ineficaces Vea [Analizar el uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).

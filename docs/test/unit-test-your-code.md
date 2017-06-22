@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 91b3f224d92b9ace5df34cc74c8d7616b8458d6c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1a47ab6e11e4c67713961078f125bb7abca23bb9
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
@@ -88,7 +89,7 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Channel 9: Unit testing your Windows Store apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)  
+ [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foros  
  [Prueba unitaria de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  

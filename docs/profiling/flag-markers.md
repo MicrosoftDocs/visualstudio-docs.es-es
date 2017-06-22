@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2ed718f0cd308293dae0b5e2409b421c4529d09b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="flag-markers"></a>Marcadores de marca

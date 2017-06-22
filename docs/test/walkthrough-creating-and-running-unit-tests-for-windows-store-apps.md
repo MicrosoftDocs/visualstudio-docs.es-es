@@ -32,17 +32,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 8ce2ccc55a53d03b72f0d1d81c206b2b9a980eed
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 11ae1d653bc34ccb9c8fd8834d134b7212bc4f9a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Tutorial: Creación y ejecución de pruebas unitarias para aplicaciones de la Tienda Windows.
 Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaciones [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] administradas e incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
   
 > [!TIP]
->  Para obtener más información sobre cómo desarrollar aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], consulte [Introducción a las aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/?LinkID=241410).  
+>  Para obtener más información sobre cómo desarrollar aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , consulte [Introducción a las aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio proporciona la siguiente funcionalidad de pruebas unitarias:  
   
@@ -72,7 +73,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
     > [!NOTE]
     >  Visual Studio incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
   
-3.  (Opcional) En el cuadro de texto **Nombre**, escriba el nombre que desee usar para el proyecto de prueba unitaria de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].  
+3.  (Opcional) En el cuadro de texto **Nombre** , escriba el nombre que desee usar para el proyecto de prueba unitaria de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].  
   
 4.  (Opcional) Modifique la ruta de acceso donde desee crear el proyecto escribiéndola en el cuadro de texto **Ubicación** o eligiendo el botón **Examinar** .  
   
@@ -91,7 +92,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
   
 #### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>Para editar el archivo de manifiesto de la aplicación de la Tienda Windows del proyecto de prueba unitaria  
   
-1.  En el Explorador de soluciones, en el nuevo proyecto de prueba unitaria de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], haga clic con el botón derecho en el archivo Package.appxmanifest y elija **Abrir**.  
+1.  En el Explorador de soluciones, en el nuevo proyecto de prueba unitaria de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , haga clic con el botón secundario en el archivo de Package.appxmanifest y elija **Abrir**.  
   
      Aparece el diseñador de manifiestos para la edición.  
   
@@ -155,13 +156,13 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Channel 9: Unit testing your Windows Store apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)  
+ [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Foros  
  [Prueba unitaria de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="msdn-library"></a>MSDN Library  
- [MSDN Library – Crear y ejecutar pruebas unitarias para código existente (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
+ [MSDN Library: Crear y ejecutar pruebas unitarias para código existente (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>Vea también  
  [Probar aplicaciones de la Tienda con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   

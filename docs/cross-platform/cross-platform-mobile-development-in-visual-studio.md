@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
-ms.openlocfilehash: 7ceaa18fa104d8131ad415a890cd15baf3efcacb
-ms.lasthandoff: 03/08/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f01484e64f8d8c90cd38fbcdcb934ef43cfe3390
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
@@ -80,7 +81,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  Xamarin expone la funcionalidad nativa de Android, iOS y Windows como objetos .NET. Por tanto, las aplicaciones tienen acceso total a las API nativas y a los controles de usuario nativos, y tienen la misma capacidad de respuesta que las aplicaciones escritas en los lenguajes nativos de la plataforma.
 
- Después de crear un proyecto, podrá aprovechar todas las características de productividad de Visual Studio. Por ejemplo, podrá usar un diseñador para crear páginas y usar IntelliSense para explorar las API nativas de las plataformas móviles. Cuando esté listo para ejecutar la aplicación y ver su aspecto, puede usar el emulador de Visual Studio para Android o el emulador del SDK de Android que elija, ejecutar aplicaciones Windows de forma nativa o ejecutar aplicaciones Windows en el emulador de Windows Phone. También puede usar directamente dispositivos Android y Windows anclados a red. Para los proyectos de iOS, conéctese a un Mac en red e inicie el emulador de Mac desde Visual Studio, o conéctese a un dispositivo anclado a red.
+ Después de crear un proyecto, podrá aprovechar todas las características de productividad de Visual Studio. Por ejemplo, podrá usar un diseñador para crear páginas y usar IntelliSense para explorar las API nativas de las plataformas móviles. Cuando esté listo para ejecutar la aplicación y ver su aspecto, puede usar el emulador de Visual Studio para Android o el emulador del SDK de Android que seleccione, ejecutar aplicaciones Windows de manera nativa o ejecutar aplicaciones Windows en el emulador de Windows Phone. También puede usar directamente dispositivos Android y Windows anclados a red. Para los proyectos de iOS, conéctese a un Mac en red e inicie el emulador de Mac desde Visual Studio, o conéctese a un dispositivo anclado a red.
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Diseñar un conjunto de páginas que se representan en todos los dispositivos mediante Xamarin.Forms
  Según la complejidad del diseño de las aplicaciones, puede considerar la posibilidad de compilarlas usando plantillas *Xamarin.Forms* en el grupo **Aplicaciones móviles** de plantillas de proyecto. Xamarin.Forms es un kit de herramientas de interfaz de usuario que permite crear una única interfaz de usuario que puede compartir entre Android, iOS y Windows.  Al compilar una solución Xamarin.Forms, obtendrá una aplicación Android, una aplicación iOS y una aplicación Windows. Para obtener más detalles, vea [Más información sobre el desarrollo móvil con Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md).
@@ -101,9 +102,9 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  Si quiere crear una única aplicación que tenga como destino la gran variedad de dispositivos de Windows 10, cree una aplicación de Windows universal. Podrá diseñar la aplicación usando un solo proyecto y las páginas se representarán correctamente en cualquier dispositivo que se use para verlas.
 
- Comience con una plantilla de proyecto de aplicación de Windows universal. Diseñe visualmente las páginas y, después, ábralas en una ventana de vista previa para ver cómo se ven en diversos tipos de dispositivos. Si no le gusta cómo se muestra una página en un dispositivo, puede optimizar la página para ajustarla mejor al tamaño de pantalla, la resolución o las distintas orientaciones, como el modo vertical o el horizontal. Puede hacer todo eso con opciones de menú de fácil acceso y ventanas de herramientas intuitivas en Visual Studio. Cuando esté listo para ejecutar la aplicación y recorrer el código, encontrará todos los emuladores de dispositivos y los simuladores de diferentes tipos de dispositivos en una lista desplegable que se encuentra en la barra de herramientas **Estándar** .
+ Comience con una plantilla de proyecto de aplicación de Windows universal. Diseñe visualmente las páginas y, después, ábralas en una ventana de vista previa para ver cómo se ven en diversos tipos de dispositivos. Si no le gusta cómo se muestra una página en un dispositivo, puede optimizar la página para ajustarla mejor al tamaño de pantalla, la resolución o las distintas orientaciones, como el modo vertical o el horizontal. Puede hacer todo eso con opciones de menú de fácil acceso y ventanas de herramientas intuitivas en Visual Studio. Cuando esté listo para ejecutar la aplicación y recorrer el código, encontrará todos los emuladores de dispositivos y los simuladores de diferentes tipos de dispositivos en una lista desplegable que se encuentra en la barra de herramientas **Estándar**.
 
- Windows 10 es bastante nuevo, por lo que también encontrará plantillas de proyecto que tienen como destino Windows 8.1. Puede usar esas plantillas de proyecto también y la aplicación se ejecutará en teléfonos, tabletas y equipos de Windows 10. Sin embargo, todos los dispositivos que ejecutan Windows 8.1 recibirán una actualización automática Windows 10, así que, a menos que tenga razones específicas para elegir Windows 8.1 como destino, se recomienda que use las plantillas de proyecto para Windows 10.
+ Windows 10 es bastante nuevo, por lo que también encontrará plantillas de proyecto que tienen como destino Windows 8.1. Puede usar esas plantillas de proyecto también y la aplicación se ejecutará en teléfonos, tabletas y equipos de Windows 10. En cambio, todos los dispositivos que ejecutan Windows 8.1 recibirán una actualización automática Windows 10, así que, a menos que tenga razones específicas para elegir Windows 8.1 como destino, se recomienda que use las plantillas de proyecto para Windows 10.
 
 |**Más información**|
 |--------------------|
@@ -119,7 +120,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
  Apache Cordova es un marco que incluye un modelo de complementos. Este modelo de complementos proporciona una única API de JavaScript que puede usar para tener acceso a las características de dispositivo nativas de las tres plataformas (Android, iOS y Windows).
 
- Como estas API son multiplataforma, puede compartir la mayor parte de lo que escriba entre las tres plataformas. Esto reduce los costos de desarrollo y mantenimiento. Además, no es necesario empezar desde cero. Si creó otros tipos de aplicaciones web, puede compartir esos archivos con la aplicación Cordova sin tener que modificarlas ni rediseñarlas de forma alguna.
+ Como estas API son multiplataforma, puede compartir la mayor parte de lo que escriba entre las tres plataformas. Esto reduce los costos de desarrollo y mantenimiento. Además, no es necesario empezar desde cero. Si creó otros tipos de aplicaciones web, puede compartir esos archivos con la aplicación Cordova sin tener que modificarlas ni rediseñarlas de manera alguna.
 
  ![Aplicaciones híbridas multidispositivo](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
@@ -160,9 +161,9 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
 |**Más información**|
 |--------------------|
-|[Descargue Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Instale las herramientas de Visual C++ para desarrollo móvil multiplataforma.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
-|[Obtenga información sobre cómo usar C++ para múltiples plataformas de destino.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Descargar Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Instalar Visual C++ para obtener herramientas de desarrollo móvil multiplataforma.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
+|[Obtener información acerca de cómo usar C++ para múltiples plataformas de destino.](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Instalar lo necesario y crear una aplicación de actividad nativa para Android](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN Library)|
 |[Obtener información acerca del emulador de Visual Studio para Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 |[Más información sobre cómo compartir código de C++ con aplicaciones Android y Windows](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
@@ -180,7 +181,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
 |**Más información**|
 |--------------------|
-|[Más información sobre la compilación de juegos de Unity con Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[Obtener información acerca de la compilación de juegos Unity con Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
 |[Obtener más información sobre Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md) (MSDN Library)|
 |[Comenzar a usar Visual Studio Tools para Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) (MSDN Library)|
 |[Obtener más información acerca de las mejoras más recientes de Visual Studio Tools para Unity 2.0 Preview](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) (blog de Visual Studio)|

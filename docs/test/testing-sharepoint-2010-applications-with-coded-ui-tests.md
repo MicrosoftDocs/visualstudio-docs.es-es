@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b55b2ffdc3c5bd0ec0fb1b1b556a8f343aab1844
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7ab8ce7199fec306a0f50344619200266a2261b8
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
@@ -41,7 +42,7 @@ Incluir pruebas de IU codificadas en una aplicación de SharePoint permite compr
 -   Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>¿Qué más debería saber sobre las pruebas de IU codificadas?  
- Para más información sobre las ventajas de usar pruebas de IU codificadas, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md) y [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema).  
+ Para obtener más información sobre las ventajas de usar pruebas de IU codificadas, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md) y [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Notas**  
   
@@ -76,7 +77,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;  
 ```  
   
- Si graba acciones en una celda que no está vacía, la grabación será un poco más complicada, porque en cuanto agregue texto a una celda, se agregará un nuevo control \<div> como elemento secundario de la celda. El nuevo control \<div> contiene el texto que acaba de especificar. La grabadora necesita grabar acciones en el nuevo control \<div>, pero no puede porque el nuevo control \<div> no existirá hasta que se introduzca la prueba. Tendrá que realizar los siguientes cambios en el código manualmente para acabar con este problema.  
+ Si graba acciones en una celda que no está vacía, la grabación será un poco más complicada, porque en cuanto agregue texto a una celda, se agregará un nuevo control \<div> como elemento secundario de la celda. El nuevo control \<div> contiene el texto que acaba de especificar. La grabadora necesita grabar acciones en el nuevo control \<div>, pero no puede porque el nuevo control \<div> no existirá hasta que se especifique la prueba. Tendrá que realizar los siguientes cambios en el código manualmente para acabar con este problema.  
   
 1.  Vaya a la inicialización de la celda y establezca `RowIndex` y `ColumnIndex` como propiedades principales:  
   
@@ -154,7 +155,7 @@ uiGridKeyboardInputEdit.Text=value;
  [Índice de contenido para la prueba de IU codificada](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
   
 ### <a name="guidance"></a>Orientación  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema)  
+ [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="forum"></a>Foro  
  [Blog de Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)  

@@ -28,14 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2496311ad47149cc7d4ba62c54dbf5db98b8c3c6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2b73f62b59c2106cdda090133013603e3dc887c6
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
-Este tema contiene información para ayudarle a resolver problemas que puede experimentar cuando utiliza el Emulador de Visual Studio para Android.  
+Este tema contiene información para ayudarle a resolver problemas que puede experimentar cuando usa el Emulador de Visual Studio para Android.  
   
 > [!WARNING]
 >  Cuando se instala el emulador, el programa de instalación comprueba los requisitos previos para ejecutar el software. Si estos requisitos no se cumplen se muestra una serie de advertencias, pero no se solicita su instalación.  
@@ -54,7 +55,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 -   [El emulador no se inicia](#NoStart2)  
   
--   [El emulador no se inicia (primer uso)](#NoStart)  
+-   [Emulator fails to start (first use)](#NoStart)  
   
 -   [El equipo no arranca después de instalar el emulador](#NoBoot)  
   
@@ -66,7 +67,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 -   [El emulador no puede ejecutar la aplicación que usa Google Play Services](#GooglePlay)  
   
--   [La función de arrastrar y colocar un archivo, un archivo APK o un archivo zip compatible con flash no funciona](#DragAndDrop)  
+-   [La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona](#DragAndDrop)  
   
 -   [La resolución de captura de pantalla es incorrecta](#Resolution)  
   
@@ -76,12 +77,12 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 -   [Recursos de soporte técnico](#Support)  
   
-##  <a name="a-namebeforeyoustarta-before-you-start"></a><a name="BeforeYouStart"></a> Antes de empezar  
+##  <a name="BeforeYouStart"></a> Antes de empezar  
  Antes de empezar a solucionar problemas, puede ser útil revisar los temas siguientes:  
   
--   [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="a-namenoinstalla-emulator-fails-to-install"></a><a name="NoInstall"></a> El emulador no se instala  
+##  <a name="NoInstall"></a> El emulador no se instala  
  Si no tiene instalado Hyper-V, verá el siguiente mensaje cuando intente instalar el emulador. Debe tener una máquina que admita Hyper-v y debe estar habilitada.  
   
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
@@ -89,16 +90,16 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 > [!NOTE]
 >  Este mensaje se aplica al emulador de Visual Studio para Android y al emulador de Windows Phone. Windows 8.1 y Windows 10 son compatibles con el emulador.  
   
- Si ve este mensaje, consulte los [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) para ver si puede ejecutar el emulador.  
+ Si ve este mensaje, consulte [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) para ver si puede ejecutar el emulador.  
   
-##  <a name="a-namedomainnetworka-cannot-connect-to-network-destinations-on-a-domain-or-corporate-network"></a><a name="DomainNetwork"></a> No se puede conectar a destinos de red en un dominio o una red corporativa  
+##  <a name="DomainNetwork"></a> No se puede conectar a destinos de red en un dominio o una red corporativa  
  El Emulador de Visual Studio para Android aparece en la red como un dispositivo independiente, con su propia dirección IP. No se ha unido a un dominio de Windows y no comparte las credenciales de dominio o grupo de trabajo con el equipo host.  
   
  Si la red requiere autorización de dominio o grupo de trabajo para disfrutar de una conectividad básica, póngase en contacto con el administrador de TI para pedir una excepción. Esta excepción permite a su equipo de desarrollo actuar como máquina de frontera y aceptar conexiones de dispositivos de red que no estén unidos al dominio, como el emulador.  
   
  El Emulador de Visual Studio para Android también usa su propio conjunto de direcciones MAC. Si no puede acceder a recursos de red o de Internet desde el emulador, consulte con el administrador de TI para asegurarse de que las direcciones MAC del emulador están autorizadas en la red.  
   
-#### <a name="to-view-the-emulators-mac-addresses"></a>Para ver las direcciones MAC del emulador:  
+#### <a name="to-view-the-emulators-mac-addresses"></a>Para ver las direcciones MAC del emulador  
   
 1.  Inicie el emulador.  
   
@@ -108,7 +109,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 4.  En la página Red, busque las entradas de Dirección física.  
   
-##  <a name="a-namemanualnetworkconfiga-cannot-connect-to-network-destinations-when-network-settings-require-manual-configuration"></a><a name="ManualNetworkConfig"></a> No se puede conectar a destinos de red cuando la configuración de red requiere configuración manual  
+##  <a name="ManualNetworkConfig"></a> No se puede conectar a destinos de red cuando la configuración de red requiere configuración manual  
  Para conectarse a destinos de red desde el emulador, la red debe cumplir los siguientes requisitos:  
   
 -   DHCP. El emulador requiere DHCP porque se configura automáticamente como un dispositivo independiente en la red, con su propia dirección IP.  
@@ -117,7 +118,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
  Si la red requiere una configuración manual, consulte al administrador de TI para determinar cómo se puede habilitar la conectividad de red para el emulador.  
   
-##  <a name="a-nameslowstarta-emulator-starts-slowly-fails-to-start-due-to-a-timeout-or-app-deployment-fails"></a><a name="SlowStart"></a> El emulador se inicia lentamente, no puede iniciarse por excederse el tiempo de espera o se produce un error de implementación de aplicaciones  
+##  <a name="SlowStart"></a> El emulador se inicia lentamente, no puede iniciarse por excederse el tiempo de espera o se produce un error de implementación de aplicaciones  
  En ciertas condiciones, el emulador tarda varios minutos en iniciarse o no se puede iniciar por exceder el tiempo de espera. Si el emulador no se puede iniciar, verá el mensaje siguiente: `App deployment failed. Please try again`. Las condiciones siguientes pueden producir este error.  
   
 -   Ejecutar el Emulador de Visual Studio para Android desde un VHD de arranque. Esta configuración no se admite.  
@@ -132,7 +133,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 -   En general, cualquier factor que contribuya a un rendimiento deficiente del sistema. Empiece a solucionar problemas con el componente que tenga la puntuación más baja en la evaluación de la experiencia de Windows. Puede ver este valor en la página Información de rendimiento y herramientas del Panel de control.  
   
-##  <a name="a-namenostart2a-emulator-fails-to-start"></a><a name="NoStart2"></a> El emulador no se inicia  
+##  <a name="NoStart2"></a> El emulador no se inicia  
  Si el emulador estaba funcionando, pero ahora no funciona, debe realizar las siguientes tareas. Si está usando el emulador por primera vez, consulte [Emulator fails to start (first use)](#NoStart) antes de seguir estos pasos.  
   
 -   Quite cualquier otra instancia de Hyper-V del emulador.  
@@ -155,7 +156,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 -   Si estos pasos no resuelven el problema, consulte [Emulator fails to start (first use)](#NoStart) para obtener información sobre software de terceros que puede interferir con el emulador.  
   
-##  <a name="a-namenostarta-emulator-fails-to-start-first-use"></a><a name="NoStart"></a> El emulador no se inicia (primer uso)  
+##  <a name="NoStart"></a> Emulator fails to start (first use)  
  Si el emulador no se inicia, realice los siguientes procedimientos para identificar y solucionar el problema.  
   
 -   Asegúrese de que se cumplen los requisitos mínimos de hardware y de que la configuración de la BIOS es correcta.  
@@ -262,7 +263,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
      Ahora, inicie el emulador. Debería funcionar.  
   
-##  <a name="a-namenoboota-computer-fails-to-boot-after-installing-the-emulator"></a><a name="NoBoot"></a> El equipo no arranca después de instalar el emulador  
+##  <a name="NoBoot"></a> El equipo no arranca después de instalar el emulador  
  Este problema puede ocurrir cuando las condiciones siguientes son ciertas:  
   
 -   El equipo tiene una placa base Gigabyte.  
@@ -273,7 +274,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
  Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/en-us/kb/2693144).  
   
-##  <a name="a-nameadba-visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.  
+##  <a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.  
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:  
   
 -   Abra el Editor del registro seleccionando **Ejecutar** en el menú contextual de los botones de Inicio. Luego, escriba `regedit` en el cuadro de diálogo y elija **Aceptar**.  
@@ -284,8 +285,8 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
  Reinicie el emulador; ahora debería verlo conectado a ADB y a las herramientas Android asociadas.  
   
-##  <a name="a-namexamarinplayera-emulator-hangs-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a> El emulador deja de responder porque no pudo configurar el puerto UDP.  
- Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "The emulator is unable to connect to the device operating system: Couldn’t set up the UDP port.  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:  
+##  <a name="XamarinPlayer"></a> El emulador deja de responder porque no pudo configurar el puerto UDP.  
+ Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "El emulador no puede conectarse al sistema operativo del dispositivo: No se pudo configurar el puerto UDP".  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:  
   
 1.  Desinstale Xamarin Player.  
   
@@ -295,7 +296,7 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 4.  Puede intentar desinstalar o volver a instalar Hyper-V después de quitar los adaptadores de red no físicos.  
   
-##  <a name="a-nameskylakea-cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a> No se puede conectar el depurador a un proyecto Xamarin  
+##  <a name="Skylake"></a> No se puede conectar el depurador a un proyecto Xamarin  
  Si está ejecutando Windows 10 con procesadores Skylake de Intel, es posible que las aplicaciones de Xamarin no se ejecuten en el emulador o que el depurador de Visual Studio no pueda conectarse a ellas. Esto es debido a un problema con Hyper-V y los procesadores Skylake. Realice los pasos siguientes para solucionar este problema.  
   
 1.  Abra el Administrador de Hyper-V y seleccione la máquina virtual del perfil de emulador que está usando.  
@@ -310,22 +311,22 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
   
 6.  Reinicie el servicio (en **Acciones**) e inténtelo de nuevo.  
   
-##  <a name="a-namegoogleplaya-emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services  
+##  <a name="GooglePlay"></a> El emulador no puede ejecutar la aplicación que usa Google Play Services  
  El emulador no se distribuye con las bibliotecas de los servicios de Google Play. Sin embargo, el emulador no admite la instalación de archivos zip con memoria Flash mediante arrastrar y soltar.  
   
-##  <a name="a-namedraganddropa-drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> La función de arrastrar y colocar un archivo, un archivo APK o un archivo zip compatible con flash no funciona  
+##  <a name="DragAndDrop"></a> La función de arrastrar y soltar un archivo, un archivo APK o un archivo zip con memoria Flash no funciona  
  El emulador utiliza ADB.exe para facilitar la transferencia de archivos cuando arrastra y coloca un archivo en la pantalla. Si se produce un error al intentar arrastrar y colocar un archivo, probablemente se debe a que el emulador no está conectado a ADB.exe. Para resolverlo, siga los pasos descritos en [Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.](#ADB).  
   
-##  <a name="a-nameresolutiona-resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> La resolución de captura de pantalla es incorrecta  
+##  <a name="Resolution"></a> La resolución de captura de pantalla es incorrecta  
  Si realiza una captura mediante la pestaña Captura de pantalla de la ventana **Herramientas adicionales** y la imagen resultante tiene un tamaño inesperado, puede que necesite ajustar el nivel de zoom de la pantalla antes de elegir **Capturar**. El emulador realiza capturas de pantalla con la resolución del monitor de su equipo host.  
   
-##  <a name="a-nameopengla-emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> El emulador no representa el contenido OpenGL  
+##  <a name="OpenGL"></a> El emulador no representa el contenido OpenGL  
  El emulador representa el contenido OpenGL con la GPU de su equipo host y usa el proyecto ANGLE para convertir estas llamadas a y desde DirectX. Si la aplicación se representa correctamente en un dispositivo pero de forma incorrecta en el emulador, es probable que el dispositivo esté realizando una llamada OpenGL incorrecta (por ejemplo, usando variables de sombreador que no coincidan).  
   
-##  <a name="a-namemultitoucha-emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> El emulador no responde a los movimientos multitáctiles  
+##  <a name="Multitouch"></a> El emulador no responde a los movimientos multitáctiles  
  En algunos casos, el emulador se inicia y no responde al movimiento multitáctil, ni por interacción directa con la pantalla táctil, ni al usar la herramienta multitáctil de la barra de herramientas del emulador. En este caso elija el botón **Girar** de la barra de herramientas del emulador e intente usar de nuevo el movimiento multitáctil. Si el problema persiste, consulte [El emulador no representa el contenido OpenGL](#OpenGL) .  
   
-##  <a name="a-namesupporta-support-resources"></a><a name="Support"></a> Recursos de soporte técnico  
+##  <a name="Support"></a> Recursos de soporte técnico  
  Si el equipo host cumple los requisitos del sistema y detecta un problema que no se trata en esta guía de solución de problemas:  
   
 -   Formule una pregunta en StackOverflow con las etiquetas [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) y visual-studio.  

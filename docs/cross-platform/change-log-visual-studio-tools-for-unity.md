@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7aa8de1116409f30cf1a0cd2fd689c03c2242724
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
@@ -760,7 +761,7 @@ Registro de cambios de Visual Studio Tools para Unity.
   
 -   Se corrigió el error UVS-11: variables locales en las corrutinas.  
   
-## <a name="11--beta-release"></a>1.1 – versión beta  
+## <a name="11---beta-release"></a>1.1 – versión beta  
  Lanzamiento 09-10-2014  
   
 ## <a name="1013"></a>1.0.13  
@@ -963,6 +964,6 @@ Registro de cambios de Visual Studio Tools para Unity.
   
 -   Se ha corregido la finalización de archivos .dll dentro de la carpeta de activos para UnityScript y Boo.  
   
-## <a name="10--initial-release"></a>1.0 – versión inicial  
+## <a name="10---initial-release"></a>1.0 – versión inicial  
  Lanzamiento 22-08-2012
 

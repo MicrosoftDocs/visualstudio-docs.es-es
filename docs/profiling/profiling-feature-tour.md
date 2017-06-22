@@ -1,7 +1,7 @@
 ---
 title: "Guía de características de generación de perfiles | Microsoft Docs"
-ms.custom: 
-ms.date: 02/03/2016
+ms.custom: H1HackMay2017
+ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,13 +30,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 2beee9df6c4897d1fa7d55502a7ed277a1eb6046
-ms.openlocfilehash: 4a64d7385009b6d502fc20acfbead4b49323fa4f
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: a219a09f96b34a434a3bf1103e560104c294eb96
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 ---
-# <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
+# <a name="feature-tour-of-profiling-in-visual-studio"></a>Paseo por las características de perfiles en Visual Studio
 
 Visual Studio proporciona una variedad de herramientas de generación de perfiles que le ayudarán a diagnosticar diferentes tipos de problemas de rendimiento según el tipo de aplicación.
 
@@ -176,7 +177,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí (no para el núcleo de ASP.NET)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
 |[Uso de red](../profiling/network-usage.md)|no|sí|no| 
-|[Capacidad de respuesta de la IU HTML](../profiling/html-ui-responsiveness.md)|no|sí para HTML, no para XAML|no|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|sí para HTML, no para XAML|no|  
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|no|sí para HTML, no para XAML|no|  
 
 ## <a name="see-also"></a>Vea también  

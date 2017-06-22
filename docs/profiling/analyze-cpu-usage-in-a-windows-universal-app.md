@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: c0fa199f2ccbdc7b4e60b4295645ccf83792d435
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8e829f0c69a777dcdcda75aa9305b9202748f23e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Análisis del uso de CPU en una aplicación universal de Windows
@@ -88,7 +89,7 @@ ms.lasthandoff: 03/07/2017
 ###  <a name="BKMK_CPU_utilization_timeline_graph"></a> Gráfico de escala de tiempo de utilización de CPU  
  ![Gráfico de escala de tiempo (%) de CpuUtilization](../profiling/media/cpu_use_wt_timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
- El gráfico Uso de CPU muestra la actividad de CPU de la aplicación como un porcentaje del tiempo total de CPU de todos los núcleos de procesador del dispositivo. Los datos de este informe se recopilaron en un equipo de doble núcleo. Los dos grandes picos representan la actividad de CPU de los dos clic de botón. `GetMaxNumberButton_Click` se ejecuta de forma síncrona en un único núcleo, así que tiene sentido que la altura del gráfico del método nunca supere el 50 %. `GetMaxNumberAsycButton_Click` se ejecuta de forma asíncrona en ambos núcleos, así que una vez más parece correcto que el pico se acerque a la utilización de todos los recursos de la CPU en ambos núcleos.  
+ El gráfico Uso de CPU muestra la actividad de CPU de la aplicación como un porcentaje del tiempo total de CPU de todos los núcleos de procesador del dispositivo. Los datos de este informe se recopilaron en un equipo de doble núcleo. Los dos grandes picos representan la actividad de CPU de los dos clic de botón. `GetMaxNumberButton_Click` se ejecuta de manera sincrónica en un único núcleo, así que tiene sentido que la altura del gráfico del método nunca supere el 50 %. `GetMaxNumberAsycButton_Click` se ejecuta de forma asíncrona en ambos núcleos, así que una vez más parece correcto que el pico se acerque a la utilización de todos los recursos de la CPU en ambos núcleos.  
   
 ####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Seleccione segmentos de la escala de tiempo para ver detalles  
  Utilice las barras de selección de la escala de tiempo de **Sesión de diagnóstico** para centrarse en los datos de GetMaxNumberButton_Click:  
@@ -117,7 +118,7 @@ ms.lasthandoff: 03/07/2017
 |![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|  
   
 ####  <a name="BKMK_External_Code"></a> Código externo  
- El código externo son funciones de los componentes del sistema y del marco que ejecuta el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]** .  
+ El código externo son funciones de los componentes del sistema y del marco que ejecuta el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.  
   
  Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 03/07/2017
 |**CPU total (%)**|![Porcentaje de ecuación de datos total](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función y las funciones llamadas por la función. Tenga en cuenta que esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU** , que compara la actividad total de la aplicación en un intervalo de tiempo con la capacidad total de CPU disponible.|  
 |**Solo CPU (%)**|![Porcentaje de autoecuación](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función, excluidas la actividad de las funciones llamadas por la función.|  
 |**CPU total (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
-|**Solo CPU (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
+|**Propia CPU (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
 |**Módulo**|El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funciones asincrónicas en el árbol de llamadas de Uso de CPU  
@@ -165,7 +166,7 @@ ms.lasthandoff: 03/07/2017
   
 -   A los usuarios no les suele preocupar el rendimiento real de la aplicación; les importa su rendimiento y capacidad de respuesta percibidos. La herramienta Capacidad de respuesta de la IU de XAML muestra detalles de actividad en el subproceso de la IU que afecta a la capacidad de respuesta percibida.  
   
-     Cree una nueva sesión en el hub Rendimiento y diagnósticos y agregue las herramientas Capacidad de respuesta de la IU de XAML y Uso de CPU. Ejecute el escenario de colecciones. Si ha leído hasta aquí, el informe probablemente no le diga nada que ya no haya descubierto, pero las diferencias en el gráfico de escala de tiempo de **utilización del subproceso de IU** de los dos métodos son impactantes. En aplicaciones complejas del mundo real, la combinación de herramientas puede resultar muy útil.  
+     Cree una nueva sesión en el hub Rendimiento y diagnósticos y agregue las herramientas Capacidad de respuesta de la IU de XAML y Uso de CPU. Ejecute el escenario de colecciones. Si ha leído hasta aquí, el informe probablemente no le diga nada que no haya descubierto ya, pero las diferencias en el gráfico de escala de tiempo de **uso del subproceso de IU** de los dos métodos son impactantes. En aplicaciones complejas del mundo real, la combinación de herramientas puede resultar muy útil.  
   
 ##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   

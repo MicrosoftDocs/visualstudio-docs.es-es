@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
-ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: e59263c352084107d9849ab656b8b7d034337c53
 ms.contentlocale: es-es
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
@@ -89,7 +89,7 @@ Por ejemplo, puede haber un destino que genere paquetes NuGet durante una compil
 
 ## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>Mensajes de error con &lt;OutputPath&gt; o &lt;OutDir&gt;
 
-**¿Por qué aparece el siguiente error cuando Live Unit Testing intenta compilar mi solución: “...appears to unconditionally set `<OutputPath>` or `<OutDir>`. Live Unit Testing will not execute tests from the output assembly” (...parece que establece incondicionalmente... Live Unit Testing no ejecutará pruebas desde el ensamblado de salida)?**
+**¿Por qué aparece el siguiente error cuando Live Unit Testing intenta compilar mi solución: "...appears to unconditionally set `<OutputPath>` or `<OutDir>`. Live Unit Testing will not execute tests from the output assembly"?** (...parece que establece incondicionalmente... o Live Unit Testing no ejecutará pruebas desde el ensamblado de salida?)
 
 **Respuesta:**
 

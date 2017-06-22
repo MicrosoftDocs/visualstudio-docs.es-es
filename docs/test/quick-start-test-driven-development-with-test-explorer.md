@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: e5e0d87e05a5900d335670cf9dcb79d58839892e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2efe98a5b421fbffbe2a39cc69a5e0acf06af7db
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
@@ -83,7 +84,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 > [!NOTE]
 >  Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, consulte [Usar diferentes marcos de prueba con el Explorador de pruebas](#frameworks).  
   
-##  <a name="walkthrough"></a> Tutorial: Usar pruebas unitarias para desarrollar un método  
+##  <a name="walkthrough"></a> Tutorial: utilizar pruebas unitarias para desarrollar un método  
  En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, vea [Usar diferentes marcos de prueba](#frameworks).  
   
 #### <a name="creating-the-test-and-method"></a>Crear la prueba y el método  
@@ -168,7 +169,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 1.  Para mejorar su confianza en que el código funcione en todos los casos, agregue pruebas para in intervalo más amplio de valores de entrada.  
   
     > [!TIP]
-    >  Evite modificar las pruebas existentes que se completan correctamente. En su lugar, agregue nuevas pruebas. Cambie las pruebas existentes solo si cambian los requisitos de usuario. Esta directiva ayuda a garantizar que no se pierda la funcionalidad existente mientras se trabaja para ampliar el código.  
+    >  Evite modificar las pruebas existentes que se completan correctamente. En su lugar, agregue nuevas pruebas. Cambie las pruebas existentes solo si cambian los requisitos de usuario. Esta directiva ayuda a garantizar que no se pierda la función existente mientras se trabaja para ampliar el código.  
   
      En la clase de prueba, agregue la siguiente prueba para un intervalo de valores de entrada:  
   

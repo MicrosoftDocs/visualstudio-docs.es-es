@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 1694abeb37e7fa0e5766dfda16a05bd5e7895885
-ms.openlocfilehash: 7d8f95b62fcf7f32b972e0d9b64a0175f7d1f47c
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 969024cd3e3db42d05e2b163b3d8a674493d8aba
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y Windows Phone 8.1 con pruebas automatizadas de IU
@@ -105,7 +106,7 @@ Use este tutorial para crear pruebas de IU para aplicaciones para UWP que se eje
   
      ![Genere la prueba de IU codificada mediante la herramienta de selección precisa.](../test/media/cuit_phone_howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Utilice la herramienta de selección precisa para seleccionar la aplicación y luego copie el valor de la propiedad **AutomationId** de la aplicación, que se usará después para iniciar la aplicación en la prueba.  
+3.  Use la herramienta de selección precisa para seleccionar la aplicación y luego copie el valor de la propiedad **AutomationId** de la aplicación, que se usará después para iniciar la aplicación en la prueba.  
   
      ![Copie el valor AutomationId de la aplicación](../test/media/cuit_phone_getautomationid.png "CUIT_Phone_GetAutomationId")  
   
@@ -334,7 +335,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>P: ¿Tengo que implementar la aplicación de Windows Phone en el emulador para asignar los controles de interfaz de usuario?  
  **R**: Sí. El generador de pruebas de interfaz de usuario codificadas exige que se esté ejecutando un emulador y que la aplicación esté implementada en él. De lo contrario, mostrará un mensaje de error que indicará que no se encuentra ningún emulador en ejecución.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> P: ¿Se pueden ejecutar las pruebas solo en el emulador o puedo también usar un dispositivo físico?  
+###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> P: ¿Se puede ejecutar las pruebas solo en el emulador o puedo también usar un dispositivo físico?  
  **R**: Se admiten ambas opciones. El destino de la ejecución de prueba se selecciona cambiando el tipo de emulador o seleccionando el dispositivo en la barra de herramientas del dispositivo. Si se seleccionó Dispositivo, tiene que haber un dispositivo Phone Blue conectado a uno de los puertos USB de la máquina.  
   
  ![Seleccione la versión del emulador o dispositivo físico](../test/media/cuit_phone_testtarget.png "CUIT_Phone_TestTarget")  
@@ -370,7 +371,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>P: ¿Puedo ejecutar una prueba de interfaz de usuario codificada en mi aplicación de Windows Phone desde la línea de comandos?  
  **R**: Sí. Use un archivo runsettings para especificar el dispositivo de destino para la ejecución de prueba. Por ejemplo:  
   
- **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
+ **vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**  
   
  Archivo de ejemplo runsettings:  
   
@@ -391,12 +392,12 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Característica|Aplicaciones de la Tienda Windows|Aplicaciones de Windows Phone|  
 |-------------|------------------------|------------------------|  
-|Destino para ejecutar las pruebas|Equipo local o remoto. Se pueden especificar equipos remotos cuando use un caso de prueba automatizado para ejecutar las pruebas. Consulte [Automatizar un caso de prueba en Microsoft Test Manager](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Emulador o dispositivo. Vea [P: ¿Se puede ejecutar las pruebas solo en el emulador o puedo también usar un dispositivo físico?](#TestingPhoneAppsCodedUI_EmulatorDevice) en este tema.|  
+|Destino para ejecutar las pruebas|Equipo local o remoto. Se pueden especificar equipos remotos cuando use un caso de prueba automatizado para ejecutar las pruebas. Vea [Automatizar un caso de prueba en Microsoft Test Manager](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Emulador o dispositivo. Vea [P: ¿Se puede ejecutar las pruebas solo en el emulador o puedo también usar un dispositivo físico?](#TestingPhoneAppsCodedUI_EmulatorDevice) en este tema.|  
 |Ejecutar desde la línea de comandos|El archivo de configuración no es necesario para especificar el destino.|El archivo Runsettings es necesario para especificar el destino.|  
 |Clases especializadas para controles de shell|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
-|Control WebView en una aplicación XAML|Admitido si usa clases Html* especializadas para interactuar con elementos HTML. Consulte <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|No se admite.|  
+|Control WebView en una aplicación XAML|Admitido si usa clases Html* especializadas para interactuar con elementos HTML. Vea <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|No se admite.|  
 |Ejecutar pruebas automatizadas desde MTM|Se admite.|No se admite.|  
-|Pruebas controladas por datos|Consulte [Pruebas controladas por datos](../test/creating-a-data-driven-coded-ui-test.md) para obtener información sobre el uso de orígenes de datos externos y el uso del atributo DataSource en un método de prueba.|Los datos se especifican en línea, con el atributo DataRow en un método de prueba. Vea [Usar pruebas de interfaz de usuario codificadas controladas por datos en las aplicaciones de Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) en este tema.|  
+|Pruebas controladas por datos|Vea [Pruebas controladas por datos](../test/creating-a-data-driven-coded-ui-test.md) para información sobre el uso de orígenes de datos externos y el uso del atributo DataSource en un método de prueba.|Los datos se especifican en línea, con el atributo DataRow en un método de prueba. Vea [Usar pruebas de interfaz de usuario codificadas controladas por datos en las aplicaciones de Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) en este tema.|  
   
  Para obtener información sobre las pruebas automatizadas de IU para aplicaciones de la Tienda Windows, vea [Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
   

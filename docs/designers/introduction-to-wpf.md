@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 855dbb26932fbd1f5594c2b8714eac873d6f0408
 ms.openlocfilehash: cc55f091d91e98d82a9b4f2b51d2ff4da1936a9b
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="introduction-to-wpf"></a>Introducción a WPF
@@ -43,8 +44,8 @@ Windows Presentation Foundation (WPF) le permite crear aplicaciones de cliente d
   
  Esta introducción está dirigida a personas que aún no conocen WPF, y en ella se abordan sus conceptos y capacidades principales.  
   
-##  <a name="Programming_with_WPF"></a> Programación con WPF  
- WPF consiste en un subconjunto de tipos de .NET Framework en su mayoría ubicados en el espacio de nombres <xref:System.Windows>. Si ha compilado previamente aplicaciones con .NET Framework mediante tecnologías administradas como ASP.NET y Windows Forms, los conceptos básicos de la programación en WPF deben resultarle familiares; creará instancias de clases, definirá propiedades, llamará a métodos y controlará eventos con el lenguaje de programación de .NET Framework que prefiera, como C# o Visual Basic.  
+##  <a name="Programming_with_WPF"></a> Programar con WPF  
+ WPF consisten en un subconjunto de tipos de .NET Framework en su mayoría ubicados en el espacio de nombres <xref:System.Windows>. Si ha compilado previamente aplicaciones con .NET Framework mediante tecnologías administradas como ASP.NET y Windows Forms, los conceptos básicos de la programación en WPF deben resultarle familiares; creará instancias de clases, definirá propiedades, llamará a métodos y controlará eventos con el lenguaje de programación de .NET Framework que prefiera, como C# o Visual Basic.  
   
  WPF incluye construcciones de programación adicionales que mejoran las propiedades y los eventos: las [propiedades de dependencia](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) y los [eventos enrutados](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx).  
   
@@ -171,9 +172,9 @@ End Namespace
   
 -   **Presentación de datos**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView> y <xref:System.Windows.Controls.TreeView>.  
   
--   **Presentación y selección de fechas:**: <xref:System.Windows.Controls.Calendar> y <xref:System.Windows.Controls.DatePicker>.  
+-   **Presentación y selección de fechas**: <xref:System.Windows.Controls.Calendar> y <xref:System.Windows.Controls.DatePicker>.  
   
--   **Cuadros de diálogo:**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog> y <xref:Microsoft.Win32.SaveFileDialog>.  
+-   **Cuadros de diálogo**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog> y <xref:Microsoft.Win32.SaveFileDialog>.  
   
 -   **Entrada de lápiz digital**: <xref:System.Windows.Controls.InkCanvas> y <xref:System.Windows.Controls.InkPresenter>.  
   
@@ -191,7 +192,7 @@ End Namespace
   
 -   **Selección**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton> y <xref:System.Windows.Controls.Slider>.  
   
--   **Información del usuario**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, and <xref:System.Windows.Controls.ToolTip>.  
+-   **Información del usuario**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock> y <xref:System.Windows.Controls.ToolTip>.  
   
 ##  <a name="Input_And_Commanding"></a> Acciones del usuario y comandos  
  Los controles casi siempre detectan las acciones del usuario y responden a ellas. El [sistema de entrada de WPF](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) usa eventos directos y enrutados para admitir la entrada de texto, la administración del enfoque y la posición del mouse.  
@@ -213,7 +214,7 @@ End Namespace
   
 -   <xref:System.Windows.Controls.StackPanel>: los controles secundarios se apilan vertical u horizontalmente.  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>: los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o vertical.  
+-   <xref:System.Windows.Controls.VirtualizingStackPanel>: los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o verticalmente.  
   
 -   <xref:System.Windows.Controls.WrapPanel>: los controles secundarios se sitúan en orden de izquierda a derecha y se ajustan a la línea siguiente cuando hay más controles de los que caben en la línea actual.  
   
@@ -243,8 +244,7 @@ End Namespace
   
  En el ejemplo siguiente se muestra cómo enlazar un control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado. La implementación de `Person` se muestra en el código siguiente.  
   
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../designers/codesnippet/VisualBasic/introduction-to-wpf_2.vb)]
- [!code-cs[SimpleDataBindingSnippets#PersonClassCODE](../designers/codesnippet/CSharp/introduction-to-wpf_2.cs)]  
+ [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../designers/codesnippet/VisualBasic/introduction-to-wpf_2.vb)] [!code-cs[SimpleDataBindingSnippets#PersonClassCODE](../designers/codesnippet/CSharp/introduction-to-wpf_2.cs)]  
   
  El siguiente marcado enlaza el control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado.  
   
@@ -252,8 +252,7 @@ End Namespace
 [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_4.xaml)]  
 [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../designers/codesnippet/Xaml/introduction-to-wpf_5.xaml)]  
   
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
- [!code-cs[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]  
+ [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)] [!code-cs[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]  
   
  En este ejemplo, se crea una instancia de la clase `Person` en el código subyacente y se establece como el contexto de datos para `DataBindingWindow`. En el marcado, la propiedad <xref:System.Windows.Controls.TextBox.Text%2A> de <xref:System.Windows.Controls.TextBox> se enlaza a la propiedad `Person.Name` (mediante la sintaxis "`{Binding ... }`" de XAML). Este código XAML indica a WPF que enlace el control <xref:System.Windows.Controls.TextBox> al objeto `Person` almacenado en la propiedad <xref:System.Windows.FrameworkElement.DataContext%2A> de la ventana.  
   
@@ -272,17 +271,16 @@ End Namespace
   
 -   **Aceleración de hardware**. El sistema de gráficos de WPF saca partido del hardware de gráficos para minimizar el uso de la CPU.  
   
-### <a name="2-d-shapes"></a>Formas&2;D  
+### <a name="2-d-shapes"></a>Formas 2D  
  WPF proporciona una biblioteca de formas 2D comunes dibujadas mediante vectores, como los rectángulos y las elipses que se muestran en la ilustración siguiente.  
   
  ![Elipses y rectángulos](../designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
   
- Una función interesante de las formas es que no sirven únicamente para su presentación; las formas implementan muchas de las características que cabe esperar de los controles, incluida la entrada de datos desde el teclado y el mouse. En el ejemplo siguiente se muestra el evento <xref:System.Windows.UIElement.MouseUp> que se controla con la forma <xref:System.Windows.Shapes.Ellipse>.  
+ Una función interesante de las formas es que no sirven únicamente para su presentación; las formas implementan muchas de las características que cabe esperar de los controles, incluida la entrada de datos desde el teclado y el mouse. El ejemplo siguiente se muestra el evento <xref:System.Windows.UIElement.MouseUp> que se controla con la forma <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-xml[IntroToWPFSnippets#HandleEllipseMouseUpEventMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_7.xaml)]  
   
- [!code-vb[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_8.vb)]
- [!code-cs[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_8.cs)]  
+ [!code-vb[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_8.vb)] [!code-cs[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_8.cs)]  
   
  La siguiente ilustración muestra lo que genera el código anterior.  
   
@@ -290,7 +288,7 @@ End Namespace
   
  Para obtener más información, consulte [Información general sobre formas y dibujo básico en WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
   
-### <a name="2-d-geometries"></a>Geometrías&2;D  
+### <a name="2-d-geometries"></a>Geometrías 2D  
  Las formas 2D que proporciona WPF abarcan el conjunto estándar de formas básicas. Pero tal vez sea necesario crear formas personalizadas para facilitar el diseño de una interfaz de usuario personalizada. Para ello, WPF proporciona las geometrías. En la siguiente ilustración se muestra el uso de geometrías para crear una forma personalizada que se puede dibujar directamente, usar como un pincel o usar para recortar otras formas y controles.  
   
  Los objetos <xref:System.Windows.Shapes.Path> se pueden usar para dibujar formas cerradas o abiertas, varias formas o incluso formas curvas.  
@@ -301,19 +299,19 @@ End Namespace
   
  Para obtener más información, consulte [Información general sobre geometría](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx)  
   
-### <a name="2-d-effects"></a>Efectos&2;D  
+### <a name="2-d-effects"></a>Efectos 2D  
  Un subconjunto de funciones 2D de WPF incluye los efectos visuales, tales como degradados, mapas de bits, dibujos, pintar con vídeos, rotación, escala y sesgado. Todos ellos se realizan con pinceles. En la siguiente ilustración se muestran algunos ejemplos.  
   
  ![Ilustración de diferentes pinceles](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
  Para obtener más información, consulte [Información general sobre pinceles de WPF](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
   
-### <a name="3-d-rendering"></a>Representación&3;D  
+### <a name="3-d-rendering"></a>Representación 3D  
  WPF también incluye funciones de representación 3D que se integran con los gráficos 2D para permitir la creación de interfaces de usuario más atractivas e interesantes. Por ejemplo, la siguiente ilustración muestra imágenes 2D representadas en en formas 3D.  
   
  ![Captura de pantalla de ejemplo de Visual3D](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- Para obtener más información, consulte [Información general sobre gráficos&3;D](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
+ Para obtener más información, consulte [Información general sobre gráficos 3D](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
   
 ##  <a name="Animation"></a> Animación  
  El soporte de animación de WPF permite hacer que los controles crezcan, tiemblen, giren o se desvanezcan, crear transiciones de página interesantes y mucho más. Se puede animar la mayoría de las clases de WPF, incluso las clases personalizadas. En la siguiente ilustración se muestra una animación simple en acción.  
@@ -337,7 +335,7 @@ End Namespace
   
  [!code-xml[IntroToWPFSnippets#MediaElementMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_9.xaml)]  
   
- La ventana de la ilustración siguiente muestra el control <xref:System.Windows.Controls.MediaElement> en acción.  
+ La ventana en la siguiente figura muestra el control <xref:System.Windows.Controls.MediaElement> en acción.  
   
  ![Control MediaElement con audio y vídeo](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
@@ -362,7 +360,7 @@ End Namespace
   
  Para obtener más información, consulte [Tipografía en Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Customization"></a> Personalización de las aplicaciones WPF  
+##  <a name="WPF_Customization"></a> Personalizar las aplicaciones WPF  
  Hasta este punto, hemos estudiado los bloques de creación de WPF fundamentales para desarrollar aplicaciones. El modelo de aplicación se usa para hospedar y distribuir el contenido de las aplicaciones, que está compuesto principalmente de controles. Para simplificar la organización de los controles de una interfaz de usuario y asegurarse de que la organización se conserve aunque se modifiquen el tamaño de la ventana y la configuración de pantalla, se usa el sistema de diseño de WPF. Debido a que la mayoría de las aplicaciones permiten a los usuarios interactuar con los datos, se usa el enlace de datos para reducir el trabajo de la integración de la interfaz de usuario con los datos. Para mejorar la apariencia visual de la aplicación, se usa la amplia gama de gráficos, animación y multimedia compatibilidad que proporciona WPF.  
   
  Sin embargo, a menudo los conceptos básicos no bastan para crear y administrar realmente una experiencia del usuario diferenciada y visualmente impactante. Puede que los controles de WPF no se integren con la apariencia deseada de la aplicación. Es posible que los datos no se muestren del modo más eficaz. La apariencia y el funcionamiento predeterminados de los temas de Windows pueden no ser adecuados para proporcionar la experiencia global del usuario con respecto a la aplicación. En muchos aspectos, una tecnología de presentación requiere de extensibilidad visual tanto como cualquier otro tipo de extensibilidad.  
@@ -404,8 +402,7 @@ End Namespace
   
  [!code-xml[IntroToWPFSnippets#ButtonControlTemplateWindowMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_16.xaml)]  
   
- [!code-cs[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_17.cs)]
- [!code-vb[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_17.vb)]  
+ [!code-cs[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_17.cs)] [!code-vb[IntroToWPFSnippets#ButtonControlTemplateWindowCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_17.vb)]  
   
  En este ejemplo, la interfaz de usuario del botón predeterminado se ha reemplazado por una forma <xref:System.Windows.Shapes.Ellipse> que tiene un borde azul marino y se rellena mediante <xref:System.Windows.Media.RadialGradientBrush>. El control <xref:System.Windows.Controls.ContentPresenter> muestra el contenido de <xref:System.Windows.Controls.Button>, "Click Me!". Cuando se hace clic en <xref:System.Windows.Controls.Button>, el evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> todavía se provoca como parte del comportamiento predeterminado del control <xref:System.Windows.Controls.Button>. El resultado se muestra en la ilustración siguiente.  
   
@@ -416,7 +413,7 @@ End Namespace
   
  ![Cuadro de lista con el aspecto predeterminado](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
   
- La apariencia predeterminada es lo que cabría esperar de un control <xref:System.Windows.Controls.ListBox>. Sin embargo, la apariencia predeterminada de cada tarea contiene únicamente el nombre de tarea. Para mostrar el nombre de la tarea, la descripción y la prioridad, la apariencia predeterminada de los elementos de lista enlazados al control <xref:System.Windows.Controls.ListBox> se debe modificar mediante una plantilla de datos <xref:System.Windows.DataTemplate>. En el código XAML siguiente se define tal plantilla de datos <xref:System.Windows.DataTemplate>, que se aplica a cada tarea mediante el atributo <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
+ La apariencia predeterminada es la que cabría esperar de un control <xref:System.Windows.Controls.ListBox>. Sin embargo, la apariencia predeterminada de cada tarea contiene únicamente el nombre de tarea. Para mostrar el nombre de la tarea, la descripción y la prioridad, la apariencia predeterminada de los elementos de lista enlazados al control <xref:System.Windows.Controls.ListBox> se debe modificar mediante una plantilla de datos <xref:System.Windows.DataTemplate>. En el código XAML siguiente se define la plantilla de datos <xref:System.Windows.DataTemplate>, que se aplica a cada tarea mediante el atributo <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.  
   
  [!code-xml[IntroToWPFSnippets#DataTemplateMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_18.xaml)]  
 [!code-xml[IntroToWPFSnippets#DataTemplateMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_19.xaml)]  
@@ -427,7 +424,7 @@ End Namespace
   
  ![Cuadro de lista que usa una plantilla de datos](../designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
   
- Observe que el control <xref:System.Windows.Controls.ListBox> conserva su comportamiento y apariencia general; solo se modificó la apariencia del contenido mostrado por el cuadro de lista.  
+ Observe que el control <xref:System.Windows.Controls.ListBox> conserva su comportamiento y apariencia general; sólo se modificó la apariencia del contenido mostrado por el cuadro de lista.  
   
  Para obtener más información, consulte [Información general sobre plantillas de datos](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx).  
   
@@ -464,7 +461,7 @@ End Namespace
   
  La variedad de ámbitos aporta flexibilidad al desarrollador con respecto a la manera de definir y compartir los recursos.  
   
- Como alternativa para asociar directamente los recursos a un ámbito determinado, se puede empaquetar uno o varios recursos mediante un <xref:System.Windows.ResourceDictionary> independiente al que se puede hacer referencia en otras partes de una aplicación. En el ejemplo siguiente se define un color de fondo predeterminado en un diccionario de recursos.  
+ Como alternativa para asociar directamente los recursos a un ámbito determinado, se puede empaquetar uno o varios recursos mediante un <xref:System.Windows.ResourceDictionary> independiente al que puede hacer referencia en otras partes de una aplicación. En el ejemplo siguiente se define un color de fondo predeterminado en un diccionario de recursos.  
   
  [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_29.xaml)]  
 [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../designers/codesnippet/Xaml/introduction-to-wpf_30.xaml)]  
@@ -489,7 +486,7 @@ End Namespace
   
 -   **Modelo de control de usuario**. El control personalizado se deriva de <xref:System.Windows.Controls.UserControl> y se crea a partir de uno o varios controles.  
   
--   **Modelo de control**. El control personalizado se deriva de <xref:System.Windows.Controls.Control> y se usa para crear implementaciones que separan su comportamiento de su apariencia mediante plantillas, de un modo muy similar a la mayoría de los controles de WPF. Al derivarse de <xref:System.Windows.Controls.Control>, le concede mayor libertad para la creación de una IU personalizada que los controles de usuario, pero puede requerir más esfuerzo.  
+-   **Modelo de control**. El control personalizado se deriva de <xref:System.Windows.Controls.Control> y se usa para crear implementaciones que separan su comportamiento de su apariencia mediante plantillas, de un modo muy similar a la mayoría de los controles de WPF. Al derivarse de <xref:System.Windows.Controls.Control>, permite mayor libertad para la creación de una UI personalizada que los controles de usuario, pero puede requerir más esfuerzo.  
   
 -   **Modelo de elemento de marco de trabajo**. Un control personalizado se deriva de <xref:System.Windows.FrameworkElement> cuando su apariencia se define mediante la lógica de representación personalizada (no mediante plantillas).  
   
@@ -497,8 +494,7 @@ End Namespace
   
  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]  
   
- [!code-cs[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]  
+ [!code-cs[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)] [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]  
   
  En el ejemplo siguiente se muestra el código XAML necesario para incorporar el control de usuario a una ventana (<xref:System.Windows.Window>).  
   
@@ -517,9 +513,9 @@ End Namespace
   
 -   [Información general sobre la globalización y la localización de WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
   
--   [Optimizar el rendimiento de la aplicación WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [Optimizar WPF: Rendimiento de aplicaciones](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
   
--   [Seguridad (WPF)](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Seguridad de Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
   
 ##  <a name="Summary"></a> Resumen  
  WPF es una tecnología integral de presentación que permite compilar gran variedad de aplicaciones cliente impactantes desde el punto de vista visual. En esta introducción ofrecimos una introducción general a las principales características de WPF.  

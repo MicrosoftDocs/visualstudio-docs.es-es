@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 82335c611d4904188de6acc4a3a9496156eba4b5
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 59c18804574725c584b1b06df8f1ba8a5cf37824
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
@@ -93,10 +94,10 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 4.  Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.  
   
 > [!NOTE]
->  Este tema comienza con el ejemplo de accesibilidad de <xref:System.Windows.Forms.AccessibleObject> de este procedimiento y, después, se basa en este para los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Tendrá que agregar referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Debe cambiar **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.  
+>  Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> en este procedimiento y, a continuación, se basa en este para los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Tendrá que agregar referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Debe cambiar **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.  
   
 ##  <a name="customproprties"></a> Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades  
- Una vez que haya implementado la compatibilidad básica para grabar, reproducir y validar propiedades, puede poner las propiedades personalizadas del control a disposición de las pruebas automatizadas de IU mediante la implementación de un complemento <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por ejemplo, el procedimiento siguiente crea un proveedor de propiedades que permite que las pruebas de IU codificadas tengan acceso a la propiedad State de los controles secundarios CurveLegend del control chart.  
+ Una vez que haya implementado la compatibilidad básica para grabar, reproducir y validar propiedades, puede poner las propiedades personalizadas del control a disposición de las pruebas de IU codificadas mediante la implementación de un complemento <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por ejemplo, el procedimiento siguiente crea un proveedor de propiedades que permite que las pruebas de IU codificadas tengan acceso a la propiedad State de los controles secundarios CurveLegend del control chart.  
   
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
@@ -113,8 +114,8 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
         {  
             get  
             {  
-                // Add “;” and the state value to the end  
-                // of the curve legend’s description  
+                // Add ";" and the state value to the end  
+                // of the curve legend's description  
                 return "CurveLegend; " + State.ToString();  
             }  
         }  
@@ -142,7 +143,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
     }  
     ```  
   
-4.  Implemente el proveedor de propiedades mediante la colocación de nombres y descriptores de propiedad en un objeto <xref:System.Collections.Generic.Dictionary%602>.  
+4.  Implemente el proveedor de propiedades colocando nombres y descriptores de propiedad en un objeto <xref:System.Collections.Generic.Dictionary%602>.  
   
 <CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
 5.  Reemplace <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> para indicar que el ensamblado proporciona compatibilidad específica del control tanto para el control como para sus elementos secundarios.  
@@ -166,10 +167,10 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 11. Compile los binarios y cópielos en **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Este paquete de extensión se aplicará a cualquier control de tipo “Text”. Si está probando varios controles del mismo tipo, tendrá que probarlos por separado y administrar los paquetes de la extensión que se implementan al registrar las pruebas.  
+>  Este paquete de extensión se aplicará a cualquier control de tipo "Text". Si está probando varios controles del mismo tipo, tendrá que probarlos por separado y administrar los paquetes de la extensión que se implementan al registrar las pruebas.  
   
 ##  <a name="codegeneration"></a> Admitir la generación de código al implementar una clase para obtener acceso a propiedades personalizadas  
- Cuando el generador de pruebas automatizadas de IU genera código a partir de una grabación de sesión, usa la clase <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> para obtener acceso a los controles.  
+ Cuando el generador de pruebas de IU codificadas genera código desde una grabación de sesión, este usa la clase <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> para obtener acceso a los controles.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
  Si ha implementado un proveedor de propiedades para proporcionar acceso a las propiedades personalizadas del control, puede agregar una clase especializada que se usa para obtener acceso a esas propiedades para simplificar el código generado.  
@@ -196,7 +197,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales  
  ![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
   
-1.  Implemente una clase de filtro de acción que se derive de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> y que reemplace a las propiedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> y <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
+1.  Implemente una clase de filtro de acción que se derive de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, reemplazando las propiedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> y <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   
 <CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
 2.  Reemplace <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. En este ejemplo se reemplaza una acción de doble clic por una acción de un solo clic.  
@@ -236,5 +237,5 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Windows.Forms.AccessibleObject>   
- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+ [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)
 

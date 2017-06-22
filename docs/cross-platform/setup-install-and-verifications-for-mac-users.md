@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: b01ab828f06a13f3f8e4c7b9c72e2f05da409840
-ms.openlocfilehash: 49baa370a6d6258f2435b80adb504d78f922b8e8
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b3c999f9b960e6d220fcf9e4715393dd27e5fe73
 ms.contentlocale: es-es
-ms.lasthandoff: 04/14/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configuración, instalación y comprobaciones para usuarios de Mac
@@ -122,16 +122,16 @@ Este tema está destinado a los desarrolladores que trabajan principalmente con 
 
 2.  Valide la creación de un proyecto de iOS siguiendo las instrucciones de [Create an iOS Project](http://developer.xamarin.com/recipes/ios/general/projects/create_an_ios_project/) (Crear un proyecto de iOS) en xamarin.com.
 
-3.  Valide el diseñador del guión gráfico: en el proyecto de iOS en el Explorador de soluciones, abra el archivo **MainStoryboard.storyboard** . En este caso, Visual Studio hospeda el diseñador que se ejecuta de forma remota en el Mac.
+3.  Valide el diseñador del guión gráfico: en el proyecto de iOS en el Explorador de soluciones, abra el archivo **MainStoryboard.storyboard** . En este caso, Visual Studio hospeda el diseñador que se ejecuta de manera remota en el dispositivo Mac.
 
 4.  Valide la compilación y la depuración:
 
     1.  Haga clic con el botón derecho en el proyecto de iOS en el Explorador de soluciones y seleccione **Establecer como proyecto de inicio**.
 
-    2.  Seleccione el destino **iPhoneSimulator** del menú desplegable de la compilación de Visual Studio, como se muestra a continuación. Si no aparece ningún simulador, inicie Xcode en el Mac, seleccione **Xcode -> Preferencias** y haga clic en **Descargar**. Bajo **Componentes** debería ver las versiones del simulador que están disponibles para descargar. Encontrará instrucciones adicionales para la depuración en la página [Depuración](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (Depuración) de Xamarin en xamarin.com.
+    2.  Seleccione el destino **iPhoneSimulator** del menú desplegable de la compilación de Visual Studio, como se muestra a continuación. Si no aparece ningún simulador, inicie Xcode en el Mac, seleccione **Xcode -> Preferencias** y haga clic en **Descargar**. Bajo **Componentes** debería ver las versiones del simulador que están disponibles para descargar. Encontrará instrucciones adicionales para la depuración en la página [Depuración](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) de Xamarin en xamarin.com.
 
          ![Seleccionar el destino de compilación iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
-    3.  Seleccione un destino de iPhone del menú desplegable de depuración de Visual Studio, tal como se muestra a continuación y presione F5 para iniciar el depurador. Se inicia el simulador en el Mac, donde podrá interactuar con la aplicación mientras se lleva a cabo la depuración en Visual Studio.
+    3.  Seleccione un destino de iPhone del menú desplegable de depuración de Visual Studio, tal como se muestra a continuación y presione F5 para iniciar el depurador. Se inicia el simulador en el Mac, donde podrá interactuar con la aplicación mientras se realiza la depuración en Visual Studio.
 
          ![Seleccionar un destino de depuración iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")

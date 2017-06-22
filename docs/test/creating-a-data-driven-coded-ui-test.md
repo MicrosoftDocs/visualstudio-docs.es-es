@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9885f3cff76b9c5e1d053550be80c4b68cf9de1b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 2c4cb515c4442b3c48c42f47f9116e9ff536a5f4
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
@@ -78,7 +79,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      El resultado que indica si se ha superado la prueba se muestra en la ventana del Explorador de pruebas. Para abrir la ventana del Explorador de pruebas, en el menú **PRUEBA**, elija **Windows** y después **Explorador de pruebas**.  
   
-6.  Como un origen de datos puede utilizarse también para los valores de parámetro de aserción (los cuales utiliza la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.  
+6.  Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.  
   
      Asigne el control de texto de la calculadora que muestre la suma.  
   
@@ -107,7 +108,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).  
   
-     En este momento, todos los valores de parámetro se definen en sus métodos como constantes. A continuación, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.  
+     En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.  
   
 #### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos  
   
@@ -127,7 +128,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      ![Rellene el archivo .CSV con datos](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, elija **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.  
+3.  Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.  
   
 4.  El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.  
   
@@ -135,7 +136,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      Ahora que hemos creado el conjunto de datos, vamos a enlazar los datos a la prueba.  
   
-#### <a name="step-3--add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos  
+#### <a name="step-3---add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos  
   
 1.  Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.  
   
@@ -161,9 +162,9 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      Tenga en cuenta que la prueba se ejecuta a través de tres iteraciones. Esto se debe a que el origen de datos que se enlazó contiene tres filas de datos. Sin embargo, también observará que la prueba sigue utilizando los valores de parámetro constantes y que suma 1 + 2, lo que genera cada vez un resultado de 3.  
   
-     A continuación, configuraremos la prueba para utilizar los valores del archivo de origen de datos.  
+     Después, configuraremos la prueba para usar los valores del archivo de origen de datos.  
   
-#### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>Paso 4: utilizar los datos de la prueba de IU codificada  
+#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Paso 4: usar los datos de la prueba de IU codificada  
   
 1.  Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo CodedUITest.cs:  
   
@@ -212,7 +213,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 3.  Guarde la solución.  
   
-#### <a name="step-5--run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos  
+#### <a name="step-5---run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos  
   
 1.  Compruebe que la prueba está ahora controlada por datos ejecutándola de nuevo.  
   
@@ -220,7 +221,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
  **Orientación**  
   
- Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ Para obtener más información, vea [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   

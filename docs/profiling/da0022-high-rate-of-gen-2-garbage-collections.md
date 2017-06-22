@@ -1,54 +1,72 @@
 ---
-title: "DA0022: Alta frecuencia de recolecci&#243;n de elementos no utilizados de gen 2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0022"
-  - "vs.performance.rules.DA0022"
-  - "vs.performance.22"
+title: "DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0022
+- vs.performance.rules.DA0022
+- vs.performance.22
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# DA0022: Alta frecuencia de recolecci&#243;n de elementos no utilizados de gen 2
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0bab264151049d595959a439a9659224b01c6cda
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
+---
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2
 |||  
 |-|-|  
 |Identificador de regla|DA0022|  
 |Categoría|Uso de .NET Framework|  
-|Método de generación de perfiles|Todos|  
-|Mensaje|Hay una frecuencia relativamente alta de recolección de elementos no utilizados de gen. 2.  Si, por diseño, la mayor parte de las estructuras de datos del programa se asignan y persisten durante mucho tiempo, no suele ser un problema.  Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos.  Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de la duración de los objetos para entender el modelo de asignación de memoria que su aplicación utiliza.|  
+|Método de generación de perfiles|Todas|  
+|Mensaje|Se está produciendo una frecuencia relativamente alta de recolección de elementos no utilizados de gen 2. Si, por diseño, la mayoría de las estructuras de datos del programa se asignan y se conservan durante mucho tiempo, esto no es normalmente un problema. Sin embargo, si este comportamiento no es intencionado, su aplicación puede estar anclando objetos. Si no está seguro, puede recopilar datos de asignación de memoria de .NET e información de duración de objetos para entender el patrón de asignación de memoria que la aplicación utiliza.|  
 |Tipo de regla|Advertencia|  
   
- Cuando genere perfiles usando métodos de muestreo, memoria de .NET o contención de recursos, debe recopilar al menos 10 muestras para desencadenar esta regla.  
+ Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## Motivo  
- Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que se recuperó una proporción considerable de la memoria de los objetos de .NET Framework en la recolección de elementos no utilizados de la generación 2 en comparación con la recolección de elementos no utilizados de la generación 0 y la 1.  
+## <a name="cause"></a>Motivo  
+ Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que se recuperó una proporción considerable de la memoria para los objetos de .NET Framework en la generación 2 de recolección de elementos no utilizados en comparación con la recolección de elementos no utilizados de las generaciones 0 y 1.  
   
-## Descripción de la regla  
- Common Language Runtime \(CLR\) de Microsoft .NET proporciona un mecanismo de administración automática de la memoria que usa un recolector de elementos no utilizados para reclamar la memoria de los objetos que la aplicación ya no utiliza.  El recolector de elementos no utilizados está orientado a la generación y se basa en la suposición de que muchas asignaciones son de corta duración.  Las variables locales, por ejemplo, deben ser de corta duración.  Los objetos recién creados comienzan en la generación 0 \(gen 0\), progresan a la generación 1 cuando sobreviven a una ejecución de la recolección de elementos no utilizados y, finalmente, pasan a la generación 2 si la aplicación todavía los usa.  
+## <a name="rule-description"></a>Descripción de la regla  
+ El Common Language Run-time (CLR) de Microsoft .NET proporciona un mecanismo de administración de memoria automática que utiliza un recolector de elementos no utilizados para reclamar memoria de los objetos que la aplicación ya no utiliza. El recolector de elementos no utilizados está orientado a la generación, según la suposición de que muchas asignaciones son de corta duración. Las variables locales, por ejemplo, deben ser de corta duración. Los objetos recién creados comienzan en la generación 0 (gen 0), a continuación avanzan hacia la generación 1 cuando sobreviven a una ejecución de recopilación de elementos no utilizados y, finalmente, hacen una transición a la generación 2 si la aplicación todavía los utiliza.  
   
- Los objetos de la generación 0 se recopilan con frecuencia y, normalmente, de manera muy eficiente.  Los objetos de la generación 1 se recopilan con menos frecuencia y de manera menos eficiente.  Por último, los objetos de larga duración de la generación 2 se deben recopilar con menos frecuencia.  La recolección de generación 2, que es una ejecución completa de la recolección de elementos no utilizados, es también la operación más costosa.  
+ Los objetos de la generación 0 se recopilan con frecuencia y, normalmente, de una manera muy eficaz. Los objetos de la generación 1 se recopilan con menos frecuencia y, normalmente, de una manera menos eficaz. Por último, los objetos de larga duración de la generación 2 se deben recopilar incluso con menos frecuencia. La colección de la generación 2, que es una ejecución de recolección de elementos no utilizados completa, es también la operación más costosa.  
   
- Esta regla se desencadena cuando proporcionalmente se producen demasiadas recolecciones de elementos no utilizados de generación 2.  Las aplicaciones .NET Framework con buen comportamiento tendrán cinco veces más recolecciones de elementos no utilizados de generación 1 que de generación 2. \(Lo ideal probablemente sea un factor 10\).  
+ Esta regla se desencadena cuando se ha producido proporcionalmente demasiada recolección de elementos no utilizados de la generación 2. En las aplicaciones .NET Framework que exhiben un buen comportamiento, la recolección de elementos no utilizados de la generación 1 se producirá 5 veces más que la colección de la generación 2. (Un factor 10x es probablemente ideal).  
   
-## Cómo investigar una advertencia  
- Haga doble clic en el mensaje en la ventana Lista de errores para navegar a [Vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque las columnas **Memoria de .NET CLR\\Número de colecciones de gen. 0** y **Memoria de .NET CLR\\Número de colecciones de gen. 1**.  Determine si hay fases concretas de ejecución de programas en las que la recolección de elementos no utilizados se está produciendo con más frecuencia.  Compare estos valores con la columna **% de tiempo del GC** para ver si el modelo de asignaciones de memoria administradas está provocando una sobrecarga excesiva de administración de memoria.  
+## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
+ Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque las columnas **Memoria CLR de .NET\\N.º de colecciones de gen. 0** y **Memoria CLR de .NET\\N.º de colecciones de gen. 1**. Determine si hay fases concretas de ejecución del programa en que la recolección de datos no utilizados se produzca con mayor frecuencia. Compare estos valores con la columna **Porcentaje de tiempo del GC** para ver si el patrón de las asignaciones de memoria administrada está provocando una sobrecarga de administración de memoria excesiva.  
   
- Una proporción alta de recolecciones de elementos no utilizados de generación 2 no siempre supone un problema.  Podría ser por diseño.  Una aplicación que asigne estructuras de datos grandes que deban permanecer activas durante largos períodos durante la ejecución puede desencadenar esta regla.  Cuando una aplicación de este tipo está bajo presión de memoria, podría verse obligada a realizar recolecciones de elementos no utilizados frecuentes.  Si las recolecciones de elementos no utilizados de generación 0 y 1 que consumen menos recursos pueden reclamar solo una cantidad pequeña de memoria administrada, se programarán recolecciones de elementos no utilizados de generación 2 más frecuentes.  
+ Una proporción alta de recolección de elementos no utilizados de la generación 2 no siempre es un problema. Podría ser por diseño. Una aplicación que asigne estructuras de datos grandes que deban permanecer activas durante largos períodos durante la ejecución puede desencadenar esta regla. Cuando este tipo de aplicación está bajo presión de memoria, podría verse obligada a realizar con frecuencia la recolección de elementos no utilizados. Si la recolección de elementos no utilizados de las generaciones 0 y 1, menos costosa, puede reclamar solo una pequeña cantidad de memoria administrada, se programará con mayor frecuencia la recolección de elementos no utilizados de la generación 2.  
   
- En la vista Marcas hay columnas Memoria .NET CLR adicionales que pueden ayudarle a identificar problemas de recolección de elementos no utilizados.  La columna **% de tiempo del GC** le ayuda a entender cuánta sobrecarga de administración de memoria se está produciendo.  Si su aplicación normalmente utiliza un número bastante pequeño de objetos grandes aunque persistentes, las recolecciones de generación 2 no deberían consumir cantidades excesivas de tiempo de la CPU.  Si la aplicación está bajo presión de memoria porque se necesita más memoria física \(RAM\), las reglas relacionadas que evalúan los valores de la columna **Memoria\\Páginas por segundo** también pueden desencadenarse.  
+ Hay columnas de memoria de .NET CLR adicionales en la vista Marcas que pueden ayudarlo a identificar los problemas de la recolección de elementos no utilizados. La columna **% de tiempo del GC** lo ayudará a comprender cuánta sobrecarga de administración de memoria se está produciendo. Si su aplicación normalmente utiliza un número bastante pequeño de objetos grandes, pero persistentes, las colecciones de la generación 2 frecuentes no deberían consumir cantidades excesivas de tiempo de CPU. Si la aplicación está bajo presión de memoria porque se requiere más memoria física (RAM), las reglas relacionadas que evalúan los valores de la columna **Memory\Pages/sec** también se pueden desencadenar.  
   
- Para entender el modelo de utilización de memoria administrada de la aplicación, vuelva a generar sus perfiles ejecutando una generación de perfiles de asignación de memoria de .NET y seleccione la opción de generación de perfiles Duración del objeto.  
+ Para entender el patrón de uso de memoria administrada de la aplicación, vuelva a generar perfiles de la aplicación mediante una ejecución de generación de perfiles de asignación de memoria de .NET y seleccione la opción de generación de perfiles de la vigencia del objeto.  
   
- Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, vea [Recolector de elementos no utilizados Basics y sugerencias de rendimiento](http://go.microsoft.com/fwlink/?LinkId=148226) en el sitio web de Microsoft.  Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, vea [Montón de objetos grandes destapada](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Para obtener información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=148226) en el sitio web de MSDN. Para obtener información sobre la sobrecarga de recolección de elementos no utilizados automática, consulte [Montón de objeto grande al descubierto](http://go.microsoft.com/fwlink/?LinkId=177836).

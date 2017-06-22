@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 2aff9b2c34bf8897adc7edee3a1205317258fc0f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5acc74abd56b128bf9df708ab7c0f3451c6eb270
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
@@ -40,15 +41,32 @@ En este tema se describen opciones y problemas de generación y compilación de 
 -   Visual Studio Enterprise  
   
 ##  <a name="BKMK_In_this_topic"></a> En este tema  
- [Generación y compilación de código](#BKMK_Code_generation_and_compilation)  
   
--   [Configuración de generación de código de stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrado de tipos](#BKMK_Type_filtering) • [Procesamiento con stubs de clases concretas y métodos virtuales](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Tipos internos](#BKMK_Internal_types) • [Optimización del tiempo de compilación](#BKMK_Optimizing_build_times) • [Prevención de conflictos de nombre de ensamblado](#BKMK_Avoiding_assembly_name_clashing)  
+-   [Generación y compilación de código](#BKMK_Code_generation_and_compilation)  
   
- [Convenciones de nomenclatura de Fakes](#BKMK_Fakes_naming_conventions)  
+-   [Configuración de generación de código de stubs](#BKMK_Configuring_code_generation_of_stubs)
   
--   [Convenciones de nomenclatura del tipo de correcciones de compatibilidad y del tipo de stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Convenciones de nomenclatura del tipo de parámetro](#BKMK_Parameter_type_naming_conventions) • [Reglas recursivas](#BKMK_Recursive_rules)  
+-   [Filtrado de tipos](#BKMK_Type_filtering)
   
- [Recursos externos](#BKMK_External_resources)  
+-   [Procesamiento con stubs de clases concretas y métodos virtuales](#BKMK_Stubbing_concrete_classes_and_virtual_methods)
+  
+-   [Tipos internos.](#BKMK_Internal_types)
+  
+-   [Optimización del tiempo de compilación](#BKMK_Optimizing_build_times)
+  
+-   [Prevención de conflictos de nombre de ensamblado](#BKMK_Avoiding_assembly_name_clashing)  
+  
+-   [Convenciones de nomenclatura de Fakes](#BKMK_Fakes_naming_conventions)  
+  
+-   [Convenciones de nomenclatura del tipo de correcciones de compatibilidad y del tipo de stub](#BKMK_Shim_type_and_stub_type_naming_conventions)
+  
+-   [Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions)
+  
+-   [Convenciones de nomenclatura del tipo de parámetro](#BKMK_Parameter_type_naming_conventions)
+  
+-   [Reglas recursivas](#BKMK_Recursive_rules)  
+  
+-   [Recursos externos](#BKMK_External_resources)  
   
 -   [Orientación](#BKMK_Guidance)  
   
@@ -285,7 +303,7 @@ attribute of the Assembly element in the .fakes:
 |Un **tipo de matriz**`T[]`|`TArray`|  
 |Un tipo de **matriz multidimensional**`T[ , , ]`|`T3`|  
 |Un tipo de **puntero**`T*`|`TPtr`|  
-|Un **tipo genérico**`T<R1, …>`|`TOfR1`|  
+|Un **tipo genérico**`T<R1, ...>`|`TOfR1`|  
 |Un **argumento de tipo genérico**`!i` del tipo`C<TType>`|`Ti`|  
 |Un **argumento de método genérico**`!!i` del método`M<MMethod>`|`Mi`|  
 |Un **tipo anidado**`N.T`|Se anexa `N` y después `T`.|  

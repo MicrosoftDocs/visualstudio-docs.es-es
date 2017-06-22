@@ -42,10 +42,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: e4be61999c3530698f90ea5381b980223791325f
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
@@ -69,9 +70,9 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  [Ejecutar el analizador de memoria de JavaScript](#Run)   
  [Comprobar el uso de la memoria](#Check)   
- [Aislar una pérdida de memoria](#Isolate)   
+ [Isolate a memory leak](#Isolate)   
  [Ver el resumen de uso de memoria activo](#LiveMemory)   
- [Ver un resumen de la instantánea](#SnapshotSummary)   
+ [View a snapshot summary](#SnapshotSummary)   
  [Ver detalles de la instantánea](#SnapshotDetails)   
  [Ver una diferencia de instantánea](#SnapshotDiff)   
  [Ver objetos por dominador](#FoldObjects)   
@@ -80,7 +81,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
  [Ver referencias de objeto compartidas](#References)   
  [Mostrar objetos integrados](#BuiltInValues)   
  [Guardar archivos de sesión de diagnóstico](#Save)   
- [Asociar código fuente con los datos de uso de memoria](#JSConsoleCommands)   
+ [Associate source code with memory usage data](#JSConsoleCommands)   
  [Sugerencias para identificar problemas de memoria](#Tips)  
   
 ##  <a name="Run"></a> Ejecutar el analizador de memoria de JavaScript  
@@ -141,7 +142,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 -   [Ver una diferencia de instantánea](#SnapshotDiff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.  
   
-##  <a name="Isolate"></a> Aislar una pérdida de memoria  
+##  <a name="Isolate"></a> Isolate a memory leak  
  Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1.  Abre la aplicación en Visual Studio.  
@@ -192,7 +193,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
     -   **Objetos dejados de la instantánea n.º 2**.  
   
-    -   **Objetos agregados entre la segunda y tercera instantánea**  
+    -   **Objetos agregados entre las instantáneas n.º 2 y 3**  
   
     > [!TIP]
     >  Usa la vista filtrada de objetos dejados desde la instantánea anterior para investigar pérdidas de memoria. Por ejemplo, si el recuento diferencial de objetos es de +205/-195, esta vista mostrará los 10 objetos dejados, que son probables candidatos para las pérdidas de memoria.  
@@ -218,7 +219,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  Parte de la memoria mostrada en el gráfico de memoria está asignada por el runtime de JavaScript. No puedes controlar este uso de memoria en tu aplicación. El uso de memoria que se muestra en el gráfico aumenta cuando tomas la primera instantánea y, a continuación, aumenta más despacio para cada instantánea adicional.  
   
-##  <a name="SnapshotSummary"></a> Ver un resumen de la instantánea  
+##  <a name="SnapshotSummary"></a> View a snapshot summary  
  Para tomar una instantánea del estado actual del uso de memoria de la aplicación, elige **Tomar instantánea de montón** en el gráfico de memoria. Un mosaico de resumen de instantánea, que aparece en el resumen de uso de memoria activo (mientras se ejecuta la aplicación) y en el resumen de instantánea (cuando se detiene la aplicación), proporciona información sobre la pila de JavaScript y vínculos a información más detallada. Si tomas dos o más instantáneas, una instantánea proporciona información adicional comparando sus datos con los de la instantánea anterior.  
   
 > [!NOTE]
@@ -347,7 +348,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 ##  <a name="Save"></a> Guardar archivos de sesión de diagnóstico  
  Los resúmenes de instantánea de diagnóstico y sus vistas de detalles asociadas se guardan como archivos .diagsession. El**Explorador de soluciones** muestra las sesiones de diagnóstico anteriores en la carpeta Diagnostic Sessions. En el **Explorador de soluciones**, puedes abrir sesiones anteriores o quitar o cambiar el nombre de archivos.  
   
-##  <a name="JSConsoleCommands"></a> Asociar código fuente con los datos de uso de memoria  
+##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
  Para ayudar a aislar la sección de código que tienes problemas de memoria, usa los siguientes métodos:  
   
 -   Busca nombres de clase e identificadores de elementos DOM en las vistas de detalles y de diferencias.  
@@ -360,7 +361,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  Puedes usar los comandos siguientes en el código fuente:  
   
--   `console.takeHeapSnapshot` toma una instantánea de montón que aparece en el analizador de memoria de JavaScript. Este comando es uno de los [Comandos de la consola de JavaScript](../debugger/javascript-console-commands.md).  
+-   `console.takeHeapSnapshot` toma una instantánea de montón que aparece en el analizador de memoria de JavaScript. Este comando es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
 -   `performance.mark` establece una marca de usuario (el triángulo invertido) que aparece en la escala de tiempo del gráfico de memoria en la vista de resumen mientras se ejecuta la aplicación. Este comando toma un argumento de cadena que describe el evento y aparece como información sobre herramientas en el gráfico de memoria. Esta descripción no debe tener más de 100 caracteres.  
   
@@ -402,7 +403,7 @@ if (performance && performance.mark) {
   
     -   Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si llama al método `createFiltered` de la lista y luego sale de una página.  
   
-    -   Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulte [Ver agentes de escucha de eventos DOM](../debugger/view-dom-event-listeners.md).  
+    -   Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 -   Mira la última parte de [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
   

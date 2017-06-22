@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: edb6c75d35f89df363a07eb24ba31e203bc6672e
-ms.openlocfilehash: 30261d8b75029bac15c9ab881d9f43c1a717d8cd
-ms.lasthandoff: 03/15/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b699132bf1a31d3ef9dc3ba5af3f99c22890c632
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 
@@ -102,7 +103,7 @@ Live Unit Testing puede pausarse temporalmente o detenerse por completo en cualq
 
 ##    <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Presentación de la visualización de la cobertura en el editor a medida que escribe
 
-Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con un símbolo "🞩" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo “” azul no están cubiertas por ninguna prueba.
+Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con un símbolo "🞩" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "" azul no están cubiertas por ninguna prueba.
 
   ![Imagen](./media/lut-codewindow.png)
 

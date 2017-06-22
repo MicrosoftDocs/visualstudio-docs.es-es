@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4c744284c198a645440494ee79ee0e722904fda5
-ms.openlocfilehash: b6fd9ebbd931604b12c772f4e2514c86f5c9dd70
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
 ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)

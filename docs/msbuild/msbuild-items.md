@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: cba81e0eee6a0ce278c65e8952e75b23a6ebf3cc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 754cec0effaaa0cf68cf1a4bbc4d536dbdcf0298
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
@@ -138,7 +139,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 </ItemGroup>  
 ```  
   
- El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo Form1.cs, que se agregó en el elemento de elemento anterior.  
+ El atributo `Exclude` solamente afecta a los elementos agregados por el atributo `Include` en el elemento de elemento que contiene ambos. En el ejemplo siguiente no se excluiría el archivo Form1.cs, que se ha agregado en el elemento de elemento anterior.  
   
 ```xml  
 <Compile Include="*.cs" />  

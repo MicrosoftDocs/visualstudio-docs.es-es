@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: acc2f3de7000e438829486b23b9652cb8d34db26
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3941968fa0e2e6205c94076f555c8366f009d4c0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Aislar el código probado con Microsoft Fakes
@@ -58,7 +59,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
  **Métodos estáticos, tipos sellados.** Solo se puede utilizar código auxiliar para implementar interfaces. Por consiguiente, los tipos de código auxiliar no pueden utilizarse para los métodos estáticos, métodos no virtuales, métodos virtuales sellados, métodos de tipos sellados, etcétera.  
   
- **Tipos internos.** El código auxiliar y las correcciones de compatibilidad (shim) se pueden usar con los tipos internos que se hacen accesibles mediante el atributo de ensamblado <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
+ **Tipos internos.** El código auxiliar y las correcciones de compatibilidad (shims) se pueden usar con los tipos internos que se hacen accesibles mediante el atributo de ensamblado <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
  **Métodos privados.** Las correcciones de compatibilidad (shims) pueden reemplazar llamadas a métodos privados si todos los tipos en la firma de método están visibles. El código auxiliar solo puede reemplazar métodos visibles.  
   
@@ -176,11 +177,11 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
  Durante las pruebas, desea aplicar una corrección de compatibilidad (shim) a la propiedad `Now` porque la versión real devuelve de forma inapropiada un valor diferente en cada llamada.  
   
- Para utilizar correcciones de compatibilidad (shims) no tiene que modificar el código de aplicación o escribirlo de una forma determinada.  
+ Para usar correcciones de compatibilidad (shims) no tiene que modificar el código de aplicación o escribirlo de una manera determinada.  
   
 1.  **Agregar un ensamblado de Fakes**  
   
-     En el Explorador de soluciones, abra las referencias del proyecto de prueba unitaria y seleccione la referencia al ensamblado que contiene el método que desee imitar. En este ejemplo, la clase `DateTime` está en **System.dll**.  Para ver las referencias en un proyecto de Visual Basic, seleccione **Mostrar todos los archivos**.  
+     En el Explorador de soluciones, abra las referencias del proyecto de prueba unitaria y seleccione la referencia al ensamblado que contiene el método que quiera imitar. En este ejemplo, la clase `DateTime` está en **System.dll**.  Para ver las referencias en un proyecto de Visual Basic, seleccione **Mostrar todos los archivos**.  
   
      Seleccione **Agregar ensamblado de Fakes**.  
   
@@ -253,7 +254,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
   
- (No hay ningún ensamblado 'System.IO.Fakes' al que hacer referencia. El espacio de nombres lo genera el proceso de creación de correcciones de compatibilidad (shim), pero puede usar 'using' o 'Import' de la manera habitual).  
+ (No hay ningún ensamblado "System.IO.Fakes" al que hacer referencia. El espacio de nombres lo genera el proceso de creación de correcciones de compatibilidad (shim), pero puede usar "using" o "Import" de la manera habitual).  
   
  También puede crear correcciones de compatibilidad (shims) para instancias concretas, para constructores y para propiedades. Para más información, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   

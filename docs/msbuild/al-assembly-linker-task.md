@@ -37,10 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: f3f7d61bf46f318249dd3b54caee27998d7fd105
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3184299feb0834dc7e3b6980f4f3fed87b99092c
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker, Tarea)
@@ -69,7 +70,7 @@ La tarea AL contiene AL.exe, una herramienta que se distribuye con [!INCLUDE[win
 |`KeyFile`|Parámetro `String` opcional.<br /><br /> Especifica un archivo que contiene un par de claves o simplemente una clave pública para firmar un ensamblado. El compilador inserta la clave pública en el manifiesto del ensamblado y firma después el ensamblado final con la clave privada. Para obtener más información, consulte la documentación sobre la opción `/keyf[ile]` en [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`LinkResources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Vincula los archivos de recursos especificados a un ensamblado. El recurso pasa a formar parte del ensamblado, pero el archivo no se copia. Los elementos pasados a este parámetro pueden tener metadatos opcionales adjuntos a los mismos denominados `LogicalName`, `Target` y `Access`. Los metadatos `LogicalName` se utilizan para especificar el identificador interno del recurso. Los metadatos `Target` pueden especificar el nombre de archivo y la ruta de acceso donde la tarea copia el archivo, tras lo cual compila este nuevo archivo en el ensamblado. Los metadatos `Access` se pueden establecer en `private` para que el recurso no sea visible para otros ensamblados. Para obtener más información, consulte la documentación sobre la opción `/link[resource]` en [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`MainEntryPoint`|Parámetro `String` opcional.<br /><br /> Especifica el nombre completo (*class.method*) del método que se utilizará como punto de entrada al convertir un módulo en un archivo ejecutable. Este parámetro corresponde a la opción `/main` de [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
-|`OutputAssembly`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el nombre del archivo generado por esta tarea. Este parámetro corresponde a la opción `/out` de [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
+|`OutputAssembly`|Parámetro de salida obligatorio de tipo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Especifica el nombre del archivo generado por esta tarea. Este parámetro corresponde a la opción `/out` de [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Platform`|Parámetro `String` opcional.<br /><br /> Limita en qué plataforma se puede ejecutar este código; debe ser `x86`, `Itanium`, `x64` o `anycpu`. De manera predeterminada, es `anycpu`. Este parámetro corresponde a la opción `/platform` de [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`ProductName`|Parámetro `String` opcional.<br /><br /> Especifica una cadena para el campo `Product` del ensamblado. Para obtener más información, consulte la documentación sobre la opción `/prod[uct]` en [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`ProductVersion`|Parámetro `String` opcional.<br /><br /> Especifica una cadena para el campo `ProductVersion` del ensamblado. Para obtener más información, consulte la documentación sobre la opción `/productv[ersion]` en [Al.exe (Assembly Linker)](http://msdn.microsoft.com/Library/b5382965-0053-47cf-b92f-862860275a01).|  

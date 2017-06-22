@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 60d05761993a4bd7547d83274e103de1b5c30b34
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 44110390bcddc67d86dcfcc81c2d5961e346ccf7
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
@@ -40,7 +41,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
  La herramienta de red admite solo las aplicaciones de plataforma universal de Windows. En este momento no se admiten otras plataformas.  
   
 > [!NOTE]
->  Para obtener una descripción más completa de la herramienta Red, consulte [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+>  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
@@ -92,4 +93,4 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="see-also"></a>Vea también  
  [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
  [Blog de Visual Studio: presentación del inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

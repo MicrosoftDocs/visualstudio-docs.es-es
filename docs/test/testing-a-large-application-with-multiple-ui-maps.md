@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 846860b7d61d9fbda6ca10793420b66fdab4a01f
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
@@ -42,7 +43,7 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
   
 -   Visual Studio Enterprise  
   
- Al crear una nueva prueba automatizada de IU, el marco de pruebas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera de forma predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).  
+ Al crear una nueva prueba de IU codificada, el marco de pruebas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).  
   
  El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.  
   

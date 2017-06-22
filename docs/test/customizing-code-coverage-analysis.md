@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 5778e6b7c4a93c2d03ff00fcaaaf5a25807b0a00
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: 01dc224a571144744028e98153df1c525c461156
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
@@ -284,7 +285,7 @@ Included items must then not match any entries in the exclude list to remain inc
             <!-- Match attributes on any code element: -->  
             <Attributes>  
               <Exclude>  
-                <!—Don't forget "Attribute" at the end of the name -->  
+                <!-- Don't forget "Attribute" at the end of the name -->  
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>  
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>  
                 <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>  
