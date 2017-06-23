@@ -29,9 +29,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
 ms.openlocfilehash: ecfd08a410983561f3c1e761eb25302b6d9281c4
+ms.contentlocale: es-es
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -377,7 +378,7 @@ $(PropertyName)
 @(ItemType, Separator)  
 ```  
   
- Cambie la tarea Message para utilizar retornos de carro y saltos de línea (%&0;A%0D) con el fin de mostrar los elementos Compile uno por línea.  
+ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A%0D) con el fin de mostrar los elementos Compile uno por línea.  
   
 #### <a name="to-display-item-type-values-one-per-line"></a>Para mostrar los valores de tipo de elemento uno por línea  
   
