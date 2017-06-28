@@ -9,7 +9,7 @@
       "build_output_subfolder": "vsdocsdocs",
       "locale": "es-es",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -23,7 +23,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "es-es",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -38,7 +38,7 @@
       "build_output_subfolder": "mac",
       "locale": "es-es",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -68,5 +68,7 @@
       }
     }
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.es-es", 
+ "git_repository_branch_open_to_public_contributors": "live", 
   "need_generate_pdf_url_template": false
 }
