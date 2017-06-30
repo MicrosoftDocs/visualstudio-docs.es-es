@@ -60,7 +60,7 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/Microsoft/vsdocs",
+      "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
