@@ -34,18 +34,21 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6d5beadf7ee6812a3318166adabbbe8e90716341
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 409becfa400b7275da07fd8ac0035660f8b941eb
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="globalizing-and-localizing-applications"></a>Globalizar y localizar aplicaciones
+# Globalizar y localizar aplicaciones
+<a id="globalizing-and-localizing-applications" class="xliff"></a>
 Si planea distribuir la aplicación a un público internacional, deberá tener varios aspectos en cuenta durante las fases de diseño y desarrollo. Incluso si no tiene esos planes, un pequeño esfuerzo previo puede facilitar considerablemente las cosas en caso de que sus planes cambien en futuras versiones de la aplicación. Los servicios integrados en [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] facilitan el desarrollo de una única aplicación que se puede adaptar a distintas configuraciones regionales mediante el desarrollo administrado con Visual Studio.  
   
  Visual Studio se ha diseñado desde el principio para facilitar el desarrollo para un público internacional al aprovechar los servicios integrados en [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. En las páginas siguientes, se le presentarán las características de internacionalización integradas en Visual Studio.  
   
-## <a name="in-this-section"></a>En esta sección  
+## En esta sección
+<a id="in-this-section" class="xliff"></a>  
  [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Introduce los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Studio y [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -55,7 +58,8 @@ Si planea distribuir la aplicación a un público internacional, deberá tener v
  [Globalizar aplicaciones](../ide/globalizing-applications.md)  
  Proporciona vínculos a páginas sobre la creación de aplicaciones que admiten varias referencias culturales.  
   
-## <a name="related-sections"></a>Secciones relacionadas  
+## Secciones relacionadas
+<a id="related-sections" class="xliff"></a>  
  [Globalizar la aplicación (aplicaciones de la Tienda Windows con JavaScript y HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
  Contiene temas de procedimientos y directrices para ayudarle a globalizar y localizar su aplicación de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] compilada con JavaScript y HTML.  
   
@@ -65,7 +69,7 @@ Si planea distribuir la aplicación a un público internacional, deberá tener v
  [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Proporciona información general sobre la programación para un público internacional.  
   
- [Información general de la biblioteca de clases](http://msdn.microsoft.com/Library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Información general de la biblioteca de clases](/dotnet/standard/class-library-overview)  
  Introduce las clases, interfaces y tipos de valor que agilizan y optimizan el proceso de desarrollo y proporcionan acceso a las funciones del sistema.  
   
  <xref:System.Globalization>  

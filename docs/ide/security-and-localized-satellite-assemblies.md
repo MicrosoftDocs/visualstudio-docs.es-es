@@ -36,20 +36,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 587b403257a5fadefd32e57ecdd9914bd60a9e26
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 2bac6b9d00c52e782cf2993ce70c3bd3466aba55
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="security-and-localized-satellite-assemblies"></a>Seguridad y ensamblados satélite localizados
-Si el ensamblado principal usa nombres seguros, los ensamblados satélite deben firmarse con la misma clave privada que el ensamblado principal. Si el par de clave pública y privada de los ensamblados principal y satélite no coincide, los recursos no se cargarán. Para más información sobre la firma de ensamblados, vea [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+# Seguridad y ensamblados satélite localizados
+<a id="security-and-localized-satellite-assemblies" class="xliff"></a>
+Si el ensamblado principal usa nombres seguros, los ensamblados satélite deben firmarse con la misma clave privada que el ensamblado principal. Si el par de clave pública y privada de los ensamblados principal y satélite no coincide, los recursos no se cargarán. Para más información sobre la firma de ensamblados, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
- En general, es posible que necesite el grupo de firmas de su organización o la firma de una organización de firmas externa con la clave privada. Esto es debido a la naturaleza confidencial de la clave privada: el acceso suele estar restringido a unas pocas personas. Puede retrasar la firma durante el desarrollo. Para más información, vea [Retrasar la firma de un ensamblado](http://msdn.microsoft.com/Library/9d300e17-5bf1-4360-97da-2aa55efd9070).  
+ En general, es posible que necesite el grupo de firmas de su organización o la firma de una organización de firmas externa con la clave privada. Esto es debido a la naturaleza confidencial de la clave privada: el acceso suele estar restringido a unas pocas personas. Puede retrasar la firma durante el desarrollo. Para más información, vea [Retrasar la firma de un ensamblado](/dotnet/framework/app-domains/delay-sign-assembly).  
   
-## <a name="see-also"></a>Vea también  
- [Consideraciones de seguridad sobre ensamblados](http://msdn.microsoft.com/Library/1b5439c1-f3d5-4529-bd69-01814703d067)   
- [Conceptos clave de seguridad](http://msdn.microsoft.com/Library/3cfced4f-ea02-4e66-ae98-d69286363e98)   
+## Vea también
+<a id="see-also" class="xliff"></a>  
+ [Consideraciones de seguridad sobre ensamblados](/dotnet/framework/app-domains/assembly-security-considerations)   
+ [Conceptos clave de seguridad](/dotnet/standard/security/key-security-concepts)   
  [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [Localizar aplicaciones](../ide/localizing-applications.md)   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

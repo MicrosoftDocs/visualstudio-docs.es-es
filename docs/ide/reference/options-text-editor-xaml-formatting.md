@@ -49,19 +49,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7c944afe8c89b8a5e30bf1e5937e848e078954ac
-ms.openlocfilehash: 6594d739b29dcd8a8296f5650fc364f5179bbd98
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 0d087d735f3db1f1d8fa7f37f049b6208e5242c0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
+# Opciones, editor de texto, XAML, formato
+<a id="options-text-editor-xaml-formatting" class="xliff"></a>
 Use la página de propiedades **Formato** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la propiedad **Formato**, expanda el nodo **Editor de texto**, **XAML**, **Formato**.  
 
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="auto-formatting-events"></a>Eventos de formato automático  
+## Eventos de formato automático
+<a id="auto-formatting-events" class="xliff"></a>  
  El formato automático puede producirse al detectarse cualquiera de los siguientes eventos.  
 
 -   Al finalizar una etiqueta de cierre o sencilla.  
@@ -80,7 +83,8 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Al finalizar la etiqueta inicial**|El formato automático se produce cuando termina de escribir una etiqueta de inicio.|  
 |**Al pegar del Portapapeles**|El formato automático se produce al pegar XAML desde el Portapapeles en la vista XAML.|  
 
-## <a name="quotation-mark-style"></a>Estilo de comillas  
+## Estilo de comillas
+<a id="quotation-mark-style" class="xliff"></a>  
  Esta opción indica si los valores de atributo están entre comillas simples o dobles. El formato automático y la finalización automática de IntelliSense usan esta opción.  
 
  Una vez establecida esta opción, solo afecta a aquellos atributos agregados posteriormente mediante el diseñador o manualmente en la vista XAML.  
@@ -90,7 +94,8 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Comillas dobles (")**|Los valores de atributo están entre comillas dobles.<br /><br /> `<Button Name="button1">Hello</Button>`|  
 |**Comillas simples (')**|Los valores de atributo están entre comillas simples.<br /><br /> `<Button Name='button1'>Hello</Button>`|  
 
-## <a name="tag-wrapping"></a>Ajuste de etiquetas  
+## Ajuste de etiquetas
+<a id="tag-wrapping" class="xliff"></a>  
  Puede especificar una longitud de línea para el ajuste de etiquetas. Cuando el ajuste de etiquetas está habilitado, cualquier elemento XAML agregado posteriormente mediante el diseñador se ajusta correctamente.  
 
 |||  
@@ -98,7 +103,8 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Ajustar etiquetas que superen la longitud especificada**|Especifica si las líneas se ajustan a la longitud de línea especificada por **Longitud**.|  
 |**Longitud**|Número de caracteres que puede contener una línea. Si es necesario, algunas líneas XAML podrían superar la longitud de línea especificada.|  
 
-## <a name="attribute-spacing"></a>Espaciado de atributos  
+## Espaciado de atributos
+<a id="attribute-spacing" class="xliff"></a>  
  Use esta opción para controlar cómo se organizan los atributos en el documento XAML  
 
 |||  
@@ -108,7 +114,8 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Poner cada atributo en una línea diferente**|Cada atributo ocupa su propia línea. Esto resulta útil si hay muchos atributos.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 |**Poner el primer atributo en la misma línea que la etiqueta inicial**|Cuando esta opción está activada, el primer atributo aparece en la misma línea que la etiqueta inicial del elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 
-## <a name="element-spacing"></a>Espaciado de elementos  
+## Espaciado de elementos
+<a id="element-spacing" class="xliff"></a>  
  Use esta opción para controlar cómo se organizan los elementos en el documento XAML  
 
 |||  
@@ -117,7 +124,8 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Contraer varias líneas vacías del contenido en una sola línea**|Las líneas vacías del contenido del elemento se contraen en una sola línea.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
 |**Quitar líneas vacías del contenido**|Se quitan todas las líneas vacías del contenido del elemento.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
 
-## <a name="miscellaneous-section-auto-insert"></a>Sección Varios, Inserción automática  
+## Sección Varios, Inserción automática
+<a id="miscellaneous-section-auto-insert" class="xliff"></a>  
  Use esta opción para controlar cuándo se generan automáticamente etiquetas y comillas.  
 
 |||  
@@ -127,8 +135,9 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 |**Llaves de cierre para MarkupExtensions**|Especifica si la llave de cierre (}) de una extensión de marcado se genera automáticamente cuando se escribe el carácter de llave de apertura ({).|  
 |**Comas para separar parámetros de MarkupExtension**|Especifica si se generan comas al escribir más de un parámetro en una extensión de marcado.|  
 
-## <a name="see-also"></a>Vea también  
- [XAML en WPF](http://msdn.microsoft.com/Library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+## Vea también
+<a id="see-also" class="xliff"></a>  
+ [XAML en WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [Cómo: Cambiar la configuración de la vista XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Tutoriales para el uso de XAML y código](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
 

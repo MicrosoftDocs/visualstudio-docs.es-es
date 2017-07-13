@@ -28,13 +28,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 4d3dde251368507690faa54f94138872b16b9b44
-ms.openlocfilehash: cce6943062bd05c5141cd6edb54fb29cae608e2b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
+ms.openlocfilehash: 952414b5e6e683242a2e71bcba9c37471a6219bc
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
-# <a name="refactoring-in-visual-studio"></a>Refactorización en Visual Studio
+# Refactorización en Visual Studio
+<a id="refactoring-in-visual-studio" class="xliff"></a>
 La refactorización es el proceso que consiste en modificar el código sin que cambie su comportamiento para que sea más fácil de mantener, entender y ampliar. Algunas *refactorizaciones* comunes son:  
   
 1.  dividir las funciones largas en otras más pequeñas  
@@ -47,19 +49,24 @@ La refactorización es el proceso que consiste en modificar el código sin que c
   
  Dado que la lógica de refactorización está estrechamente relacionada con la sintaxis del lenguaje, cada servicio de lenguaje de Visual Studio proporciona sus propias funciones de refactorización. Para obtener más información, consulte las siguientes páginas:  
   
-### <a name="refactoring-in-c"></a>Refactorización en C# #
+### Refactorización en C#
+<a id="refactoring-in-c" class="xliff"></a> #
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)  
   
-### <a name="refactoring-in-visual-basic"></a>Refactorización en Visual Basic  
+### Refactorización en Visual Basic
+<a id="refactoring-in-visual-basic" class="xliff"></a>  
  [Refactorización (Visual Basic)](../vb-ide/refactoring-vb.md)  
   
-### <a name="refactoring-in-c"></a>Refactorización en C++  
+### Refactorización en C++
+<a id="refactoring-in-c" class="xliff"></a>  
  [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
   
-### <a name="refactoring-in-f"></a>Refactorización en F# #
+### Refactorización en F#
+<a id="refactoring-in-f" class="xliff"></a> #
  [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), una extensión de Visual Studio de terceros, proporciona compatibilidad de refactorización con F#.  
   
-## <a name="see-also"></a>Vea también  
+## Vea también
+<a id="see-also" class="xliff"></a>  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)   
  [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)  
  [Vista previa de cambios](../ide/preview-changes.md)

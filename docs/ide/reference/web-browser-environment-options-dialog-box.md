@@ -42,17 +42,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 50f1d083b54ecc8418cac66086b40de8e3c69b73
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
+# Explorador web, Entorno, Opciones (Cuadro de diálogo)
+<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!IMPORTANT]
 >  Al abrir determinados archivos o componentes de la Web, se puede ejecutar código en el equipo.  
@@ -78,7 +80,8 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
 > [!NOTE]
 >  Use el cuadro de diálogo Explorar con para reemplazar el explorador web interno de Visual Studio, que es una versión de Internet Explorer, por otro explorador web externo.  
   
-## <a name="see-also"></a>Vea también  
+## Vea también
+<a id="see-also" class="xliff"></a>  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)   
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   
  [Diseñador HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

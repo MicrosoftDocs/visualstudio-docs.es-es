@@ -34,25 +34,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 41cca3051eaf1bfdc90f6616900699b8996033b0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
+# Opciones, editor de texto, C/C++, formato
+<a id="options-text-editor-cc-formatting" class="xliff"></a>
 Permite cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.  
   
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.  
   
 > [!NOTE]
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="cc-options"></a>Opciones de C/C++  
+## Opciones de C/C++
+<a id="cc-options" class="xliff"></a>  
  **Habilitar información rápida sobre herramientas automática**  
  Habilita o deshabilita la característica de IntelliSense Información rápida.  
   
-## <a name="inactive-code"></a>Código inactivo  
+## Código inactivo
+<a id="inactive-code" class="xliff"></a>  
  **Mostrar bloques de código inactivos**  
  El código que está inactivo debido a las declaraciones `#ifdef` aparece con un color diferente para facilitar su identificación.  
   
@@ -62,21 +66,24 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  **Porcentaje de opacidad del código inactivo**  
  Se puede personalizar el grado de opacidad de los bloques de código inactivos.  
   
-## <a name="indentation"></a>Sangría  
+## Sangría
+<a id="indentation" class="xliff"></a>  
  **Aplicar sangría a las llaves**  
  Puede configurar cómo se alinean las llaves cuando se presiona ENTRAR después de comenzar un bloque de código, por ejemplo, una función o un bucle `for`. Las llaves pueden estar alineadas con el primer carácter del bloque de código o con sangría.  
   
  **Sangría automática con tecla TAB**  
  Puede configurar lo que ocurre en la línea de código actual al presionar TAB. Se aplica sangría a la línea o bien se inserta un carácter de tabulación.  
   
-## <a name="miscellaneous"></a>Varios  
+## Varios
+<a id="miscellaneous" class="xliff"></a>  
  **Enumerar comentarios en la ventana Lista de tareas**  
  El editor puede analizar archivos de código fuente abiertos para buscar palabras preestablecidas en los comentarios. Crea una entrada en la ventana **Lista de tareas** para todas las palabras clave que encuentra.  
   
  **Resaltar tokens de emparejamiento**  
  Cuando se coloca el cursor junto a una llave, el editor puede resaltar la llave correspondiente de modo que pueda ver el código incluido entre llaves más fácilmente.  
   
-## <a name="outlining"></a>Esquematización  
+## Esquematización
+<a id="outlining" class="xliff"></a>  
  **Especificar el modo de esquematización al abrir los archivos**  
  Cuando se coloca un archivo en el editor de texto, se puede habilitar la característica de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se habilita al abrir un archivo.  
   
@@ -92,6 +99,7 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
   
 -   [while (Instrucción) (C++)](/cpp/cpp/while-statement-cpp)  
   
-## <a name="see-also"></a>Vea también  
+## Vea también
+<a id="see-also" class="xliff"></a>  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   
  [Usar IntelliSense](../../ide/using-intellisense.md)

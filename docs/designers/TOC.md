@@ -1,87 +1,164 @@
 # [Diseño de interfaces de usuario](designing-user-interfaces.md)
+
 ## [Diseño de XAML en Visual Studio](designing-xaml-in-visual-studio.md)
+
 ### [Crear una IU con el Diseñador XAML en Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+
 #### [Trabajar con elementos en el Diseñador XAML](working-with-elements-in-xaml-designer.md)
+
 #### [Organizar objetos en contenedores de diseño en el Diseñador XAML](organize-objects-into-layout-containers-in-xaml-designer.md)
+
 #### [Cómo crear y aplicar un recurso](how-to-create-and-apply-a-resource.md)
+
 #### [Tutorial: Enlazar a datos en el Diseñador XAML](walkthrough-binding-to-data-in-xaml-designer.md)
+
 ### [Crear una IU con Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
+
 #### [Insertar controles y modificar su comportamiento en el Diseñador XAML](insert-controls-and-modify-their-behavior-in-xaml-designer.md)
+
 #### [Insertar imágenes, vídeos y clips de audio en el Diseñador XAML](insert-images-videos-and-audio-clips-in-xaml-designer.md)
+
 #### [Dibujar formas y trazados](draw-shapes-and-paths.md)
+
 #### [Modificar el estilo de objetos en Blend](modify-the-style-of-objects-in-blend.md)
+
 #### [Animar objetos en el Diseñador XAML](animate-objects-in-xaml-designer.md)
+
 #### [Mostrar datos en Blend](display-data-in-blend.md)
+
 #### [Métodos abreviados de teclado y teclas modificadoras en Blend](keyboard-shortcuts-and-modifier-keys-in-blend.md)
+
 ##### [Métodos abreviados de teclado en Blend](keyboard-shortcuts-in-blend.md)
+
 ##### [Teclas modificadoras de la mesa de trabajo en Blend](artboard-modifier-keys-in-blend.md)
+
 ##### [Teclas modificadoras de la herramienta Pluma en Blend](pen-tool-modifier-keys-in-blend.md)
+
 ##### [Teclas modificadoras de la herramienta Selección directa en Blend](direct-selection-tool-modifier-keys-in-blend.md)
+
 #### [Productos y servicios de accesibilidad (Blend)](accessibility-products-and-services-blend.md)
+
 ### [Métodos abreviados de teclado para el Diseñador XAML](keyboard-shortcuts-for-xaml-designer.md)
+
 ### [Depurar o deshabilitar el código del proyecto en el Diseñador XAML](debugging-or-disabling-project-code-in-xaml-designer.md)
+
 ## [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
 ### [Introducción a WPF](getting-started-with-wpf.md)
+
 #### [Introducción a WPF](introduction-to-wpf.md)
-#### [Tutorial: Mi primera aplicación de escritorio WPF&2;](walkthrough-my-first-wpf-desktop-application2.md)
+
+#### [Tutorial: Mi primera aplicación de escritorio WPF 2](walkthrough-my-first-wpf-desktop-application2.md)
+
 #### [Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure](walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)
+
 #### [Recursos de la comunidad de WPF](wpf-community-resources.md)
+
 #### [Enlace de datos WPF con LINQ to XML](wpf-data-binding-with-linq-to-xml.md)
+
 ##### [Información general de enlace de datos WPF con LINQ to XML](wpf-data-binding-with-linq-to-xml-overview.md)
+
 ##### [Propiedades dinámicas de LINQ to XML](linq-to-xml-dynamic-properties.md)
+
 ###### [Propiedades dinámicas de la clase XAttribute](xattribute-class-dynamic-properties.md)
+
 ####### [Value (propiedad dinámica de XAttribute)](value-xattribute-dynamic-property.md)
+
 ###### [Propiedades dinámicas de la clase XElement](xelement-class-dynamic-properties.md)
+
 ####### [Attribute (propiedad dinámica de XElement)](attribute-xelement-dynamic-property.md)
+
 ####### [Element (propiedad dinámica de XElement)](element-xelement-dynamic-property.md)
+
 ####### [Elements (propiedad dinámica de XElement)](elements-xelement-dynamic-property.md)
+
 ####### [Descendants (propiedad dinámica de XElement)](descendants-xelement-dynamic-property.md)
+
 ####### [Value (propiedad dinámica de XElement)](value-xelement-dynamic-property.md)
+
 ####### [Xml (propiedad dinámica de XElement)](xml-xelement-dynamic-property.md)
+
 ##### [Ejemplo de enlace de datos WPF mediante LINQ to XML](wpf-data-binding-using-linq-to-xml-example.md)
+
 ###### [Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding](how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+
 ###### [Tutorial: Ejemplo de LinqToXmlDataBinding](walkthrough-linqtoxmldatabinding-example.md)
+
 ####### [Código fuente de L2DBForm.xaml](l2dbform-xaml-source-code.md)
+
 ####### [Código fuente de L2DBForm.xaml.cs](l2dbform-xaml-cs-source-code.md)
+
 ## [Trabajar con activos 3D para juegos y aplicaciones](working-with-3-d-assets-for-games-and-apps.md)
+
 ### [Trabajar con texturas e imágenes](working-with-textures-and-images.md)
+
 #### [Editor de imágenes](image-editor.md)
+
 #### [Ejemplos del Editor de imágenes](image-editor-examples.md)
+
 ##### [Cómo: Crear una textura básica](how-to-create-a-basic-texture.md)
+
 ##### [Cómo: Crear y modificar niveles de MIP](how-to-create-and-modify-mip-levels.md)
+
 ### [Trabajar con modelos 3D](working-with-3-d-models.md)
+
 #### [Editor de modelos](model-editor.md)
+
 #### [Ejemplos del Editor de modelos](model-editor-examples.md)
+
 ##### [Cómo: Crear un modelo 3D básico](how-to-create-a-basic-3-d-model.md)
+
 ##### [Cómo: Modificar el punto de pivote de un modelo 3D](how-to-modify-the-pivot-point-of-a-3-d-model.md)
+
 ##### [Cómo: Modelar un terreno en 3D](how-to-model-3-d-terrain.md)
+
 ##### [Cómo: Aplicar un sombreador a un modelo 3D](how-to-apply-a-shader-to-a-3-d-model.md)
+
 ### [Trabajar con sombreadores](working-with-shaders.md)
+
 #### [Diseñador de sombras](shader-designer.md)
+
 #### [Nodos del Diseñador de sombras](shader-designer-nodes.md)
+
 ##### [Nodos de constante](constant-nodes.md)
+
 ##### [Nodos de parámetros](parameter-nodes.md)
+
 ##### [Nodos de textura](texture-nodes.md)
+
 ##### [Nodos matemáticos](math-nodes.md)
+
 ##### [Nodos de utilidad](utility-nodes.md)
+
 ##### [Nodos de filtro](filter-nodes.md)
+
 #### [Ejemplos del Diseñador de sombras](shader-designer-examples.md)
+
 ##### [Cómo: Crear un sombreador de color básico](how-to-create-a-basic-color-shader.md)
+
 ##### [Cómo: Crear un sombreador Lambert básico](how-to-create-a-basic-lambert-shader.md)
+
 ##### [Cómo: Crear un sombreador Phong básico](how-to-create-a-basic-phong-shader.md)
+
 ##### [Cómo: Crear un sombreador de textura básico](how-to-create-a-basic-texture-shader.md)
+
 ##### [Cómo: Crear un sombreador de textura de escala de grises](how-to-create-a-grayscale-texture-shader.md)
+
 ##### [Cómo: Crear un sombreador de gradiente basado en geometría](how-to-create-a-geometry-based-gradient-shader.md)
+
 ##### [Tutorial: Crear una bola de billar 3D realista](walkthrough-creating-a-realistic-3-d-billiard-ball.md)
+
 ##### [Cómo: Exportar un sombreador](how-to-export-a-shader.md)
+
 ### [Usar activos 3D en un juego o una aplicación](using-3-d-assets-in-your-game-or-app.md)
+
 #### [Cómo: Exportar una textura que contiene mapas MIP](how-to-export-a-texture-that-contains-mipmaps.md)
+
 #### [Cómo: Exportar una textura que tiene alfa premultiplicado](how-to-export-a-texture-that-has-premultiplied-alpha.md)
+
 #### [Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascript](how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)
+
 ## [Biblioteca de imágenes de Visual Studio](the-visual-studio-image-library.md)
-# [Desarrollar aplicaciones con el Diseñador de flujo de trabajo](~/workflow-designer)
 
-
-<!--HONumber=Feb17_HO4-->
-
+# [Desarrollar aplicaciones con el Diseñador de flujo de trabajo](../workflow-designer/developing-applications-with-the-workflow-designer.md)
 
