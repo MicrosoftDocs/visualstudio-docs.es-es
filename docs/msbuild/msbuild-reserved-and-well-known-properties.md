@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
 ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
 ms.contentlocale: es-es
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/14/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
@@ -77,5 +77,4 @@ ms.lasthandoff: 05/11/2017
 |`MSBuildToolsVersion`|Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).|Reservada|  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
- [Propiedades de MSBuild](../msbuild/msbuild-properties.md)
+ [Referencia de MSBuild](../msbuild/msbuild-reference.md) [Propiedades de MSBuild](../msbuild/msbuild-properties.md)
