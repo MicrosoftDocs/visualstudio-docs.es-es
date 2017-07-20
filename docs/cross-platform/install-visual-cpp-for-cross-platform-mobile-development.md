@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bfe3001ddefaba1220174fecbf8e484fe4987efd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: d284309b0243f8d551d06c53d50d5df5de8f3f3c
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
@@ -42,10 +43,10 @@ ms.lasthandoff: 02/22/2017
  [Requisitos](#Requirements)   
  [Obtener las herramientas](#GetTheTools)   
  [Instalar las herramientas](#InstallTheTools)   
- [Instalar las herramientas para iOS](#InstallForiOS)   
+ [Install tools for iOS](#InstallForiOS)   
  [Instalar o actualizar manualmente las dependencias](#ThirdParty)  
   
-##  <a name="a-namerequirementsa-requirements"></a><a name="Requirements"></a> Requisitos  
+##  <a name="Requirements"></a> Requisitos  
   
 -   Para obtener información sobre los requisitos de instalación, vea [Requisitos de sistema de Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -60,10 +61,10 @@ ms.lasthandoff: 02/22/2017
   
 -   La compilación de código para iOS requiere un ID de Apple, una cuenta del programa de desarrolladores de iOS y un equipo Mac que permita la ejecución de [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) o una versión posterior en OS X Mavericks o versiones posteriores. Para obtener pasos de instalación sencillos, vea [Install tools for iOS](#InstallForiOS).  
   
-##  <a name="a-namegetthetoolsa-get-the-tools"></a><a name="GetTheTools"></a> Obtener las herramientas  
+##  <a name="GetTheTools"></a> Obtener las herramientas  
  Visual C++ para desarrollo móvil multiplataforma es un componente instalable incluido en las ediciones Professional y Enterprise de Visual Studio Community. Para obtener Visual Studio, vaya a la página [Descargas de Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) y descargue Visual Studio 2015 con la actualización 2 o una versión posterior.  
   
-##  <a name="a-nameinstallthetoolsa-install-the-tools"></a><a name="InstallTheTools"></a> Instalar las herramientas  
+##  <a name="InstallTheTools"></a> Instalar las herramientas  
  El instalador de Visual Studio 2015 incluye una opción para instalar Visual C++ para el desarrollo móvil multiplataforma. Esto instala las herramientas, plantillas y componentes del lenguaje C++ requeridos para Visual Studio, los conjuntos de herramientas de GCC y Clang necesarios para las compilaciones y depuraciones en Android, y los componentes para la comunicación con un equipo Mac para el desarrollo de iOS. También instala todas las herramientas de terceros y los kits de desarrollo de software necesarios para admitir el desarrollo de aplicaciones iOS y Android. La mayoría de estas herramientas de terceros son aplicaciones de código abierto necesarias para la compatibilidad con la plataforma Android.  
   
 -   El kit de desarrollo nativo de Android (NDK) es necesario para compilar el código de C++ destinado a la plataforma Android.  
@@ -100,10 +101,10 @@ ms.lasthandoff: 02/22/2017
   
 5.  Abra Visual Studio. Si es la primera vez que ejecuta Visual Studio, puede tardar algún tiempo en configurar e iniciar sesión. Cuando Visual Studio esté listo, en el menú **Herramientas** , seleccione **Extensiones y actualizaciones**, **Actualizaciones**. Si hay actualizaciones disponibles de Visual Studio para Visual C++ para el desarrollo móvil multiplataforma o para el Emulador de Microsoft Visual Studio para Android, instálelas.  
   
-##  <a name="a-nameinstallforiosa-install-tools-for-ios"></a><a name="InstallForiOS"></a> Instalar las herramientas para iOS  
- Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto en el equipo Mac. Para obtener instrucciones de instalación detalladas, información sobre opciones de configuración y requisitos previos, vea [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si no va a compilar aplicaciones para iOS, puede omitir este paso.  
+##  <a name="InstallForiOS"></a> Install tools for iOS  
+ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto en el equipo Mac. Para obtener instrucciones de instalación detalladas, información sobre opciones de configuración y requisitos previos, vea [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si no va a compilar aplicaciones para iOS, puede omitir este paso.  
   
-##  <a name="a-namethirdpartya-install-or-update-dependencies-manually"></a><a name="ThirdParty"></a> Instalar o actualizar manualmente las dependencias  
+##  <a name="ThirdParty"></a> Instalar o actualizar manualmente las dependencias  
  Si decide no instalar una o más dependencias de terceros mediante el instalador de Visual Studio al instalar la opción de desarrollo móvil de Visual C++, puede instalarlas más adelante siguiendo los pasos que se describen en [Install the tools](#InstallTheTools). También puede instalarlas o actualizarlas independientemente de Visual Studio.  
   
 > [!CAUTION]
@@ -115,7 +116,7 @@ ms.lasthandoff: 02/22/2017
   
      De manera predeterminada, el instalador coloca las herramientas de Java en C:\Archivos de programa (x86)\Java.  
   
--   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
+-   [SDK de Android](https://developer.android.com/sdk/index.html#Other)  
   
      Durante la instalación, actualice las API según se recomienda. Asegúrese de que esté instalado por lo menos el SDK para Android 5.0 Lollipop (nivel de API 21). De manera predeterminada, el instalador coloca el SDK de Android en C:\Archivos de programa (x86)\Android\android-sdk.  
   

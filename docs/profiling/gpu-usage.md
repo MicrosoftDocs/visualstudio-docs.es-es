@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 1613943840c79028e3c60db0f54a73243eb3948c
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a2958c20bbfbd9f4f3d03946dbe230326894b1c1
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="gpu-usage"></a>Uso de GPU
@@ -57,7 +58,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 1.  En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
   
-2.  En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
+2.  En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de manera simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
   
      ![Elija las herramientas de diagnóstico que quiere usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
@@ -84,7 +85,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
      ![Después de la recopilación, seleccione un intervalo para ver los detalles](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (… haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
+3.  Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (…haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
   
      ![Después de la recopilación, con el intervalo seleccionado](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
@@ -108,7 +109,7 @@ A partir de Visual Studio 2017, estos datos se pueden abrir con [GPUView](https:
   
  Si se selecciona uno de los eventos de la parte inferior del informe, se situará un marcador en los eventos correspondientes de las escalas de tiempo relevantes (por lo general, un evento en un subproceso de CPU que representa la llamada API, y otro evento en una de las escalas de tiempo de GPU que representa el momento en que la GPU ha completado la tarea). Del mismo modo, si se selecciona uno de los eventos en una escala de tiempo, se resaltará el evento correspondiente en la parte inferior del informe. En la medida en que se vaya alejando de las escalas de tiempo de la parte superior del informe, solo permanecerán visibles los eventos que precisen más tiempo. Para ver los eventos de menor duración, acérquese a las escalas de tiempo con Ctrl + rueda (del dispositivo señalador), o con el control de escalado de la esquina inferior izquierda del panel superior. También puede arrastrar el contenido del panel de la escala de tiempo para desplazarse por los eventos registrados.  
   
- Para encontrar los elementos que busca con mayor facilidad, puede filtrar el informe de uso de la GPU por nombre de proceso, identificador de subproceso y nombre de evento. Además, puede elegir la frecuencia de actualización de la pantalla que determinará las líneas de vysnc y ordenar los eventos jerárquicamente (si la aplicación usa la interfaz de ID3DUserDefinedAnnotation para comandos de representación de grupos).  
+ Para encontrar los elementos que busca con mayor facilidad, puede filtrar el informe de uso de la GPU por nombre de proceso, identificador de subproceso y nombre de evento. Además, puede elegir la frecuencia de actualización de la pantalla que determinará las líneas de vysnc y ordenar los eventos jerárquicamente si la aplicación usa la interfaz de ID3DUserDefinedAnnotation para comandos de representación de grupos.  
   
  Más información:  
   

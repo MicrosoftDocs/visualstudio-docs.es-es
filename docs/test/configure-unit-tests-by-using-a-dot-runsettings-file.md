@@ -27,14 +27,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 04c981d458912aaf3802e727369893759faab3a5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
-Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo *.runsettings. (El nombre de archivo no importa, siempre que use la extensión “.runsettings”). Por ejemplo, puede cambiar el .NET Framework en el que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.  
+Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo *.runsettings. (El nombre de archivo no importa, siempre que use la extensión ".runsettings"). Por ejemplo, puede cambiar el .NET Framework en el que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.  
   
  Si no quiere realizar ninguna configuración especial, no necesita un archivo *.runsettings. El uso más frecuente es personalizar [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
   
@@ -149,7 +150,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 |`MaxCpuCount`|1|Esto controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante núcleos disponibles en el equipo.  El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con pruebas que se deben ejecutar, como por ejemplo un ensamblado, un archivo DLL o un artefacto relevante.  El contenedor de pruebas es la unidad de programación.  En cada contenedor, las pruebas se ejecutan según el marco de pruebas.  Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br /> El valor de MaxCpuCount puede ser:<br /><br /> n, donde 1 <= n <= número de núcleos: se iniciarán hasta n procesos<br /><br /> n, donde n = cualquier otro valor: el número de procesos que se iniciarán será como máximo el número de núcleos disponibles en la máquina|  
   
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)  
- El elemento `DataCollectors` especifica la configuración de los adaptadores de datos de diagnóstico. Los adaptadores de datos de diagnóstico se utilizan para recopilar información adicional sobre el entorno y la aplicación en pruebas. Cada adaptador tiene una configuración predeterminada, por lo que solo tiene que proporcionar valores si no desea utilizar los predeterminados.  
+ El elemento `DataCollectors` especifica la configuración de los adaptadores de datos de diagnóstico. Los adaptadores de datos de diagnóstico se utilizan para recopilar información adicional sobre el entorno y la aplicación en pruebas. Cada adaptador tiene una configuración predeterminada, por lo que solo tiene que proporcionar valores si no quiere usar los predeterminados.  
   
 #### <a name="code-coverage-adapter"></a>Adaptador de cobertura de código  
  El recopilador de datos de cobertura de código crea un registro de las partes del código de aplicación que se han empleado en las pruebas. Para obtener más información sobre la personalización de los valores de cobertura de código, vea [Personalizar el análisis de la cobertura de código](../test/customizing-code-coverage-analysis.md).  

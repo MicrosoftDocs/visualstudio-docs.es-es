@@ -36,17 +36,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: f3ddafbe0dd5c0fcec9a2c092b50ad3538c11361
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 23510bfb61028db6d62912066bc6f4756e8ec37e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
 En este tema se describen los errores de MSBuild que pueden producirse debido a problemas de referencia y cómo pueden resolverse esos errores.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ha hecho referencia a un proyecto o ensamblado que tiene como destino una versión diferente de .NET Framework  
- Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Por ejemplo, puede crear una aplicación destinada al perfil de cliente para [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] pero que hace referencia a un ensamblado destinado a .NET Framework 2.0. Sin embargo, si crea un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], no puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado al propio perfil de cliente de [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para resolver el error, asegúrese de que la aplicación tiene como destino un perfil o perfiles que sean compatibles con el perfil al que se destinan los proyectos o ensamblados a los que la aplicación hace referencia.  
+ Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Por ejemplo, puede crear una aplicación destinada al perfil de cliente para [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] pero que hace referencia a un ensamblado destinado a .NET Framework 2.0. Pero si crea un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], no puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado al propio perfil de cliente de [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para resolver el error, asegúrese de que la aplicación tiene como destino un perfil o perfiles que sean compatibles con el perfil al que se destinan los proyectos o ensamblados a los que la aplicación hace referencia.  
   
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Ha cambiado el destino de un proyecto a una versión diferente de .NET Framework  
  Si cambia la versión de destino de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para la aplicación, Visual Studio cambiará algunas de las referencias, pero es posible que deba actualizar algunas referencias manualmente. Por ejemplo, podría ocurrir uno de los errores anteriormente mencionados si cambia una aplicación para que se destine a [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)] y la aplicación tiene recursos o valores que se basan en el perfil de cliente para [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)].  

@@ -44,13 +44,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 35ad2826fb25557d05be3548351aabd27e005cba
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 759ffc281b8c673f5987afc6512b225434b69dec
+ms.contentlocale: es-es
+ms.lasthandoff: 07/11/2017
 
 ---
-# <a name="javascript-intellisense"></a>IntelliSense para JavaScript
+# IntelliSense para JavaScript
+<a id="javascript-intellisense" class="xliff"></a>
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] proporciona una experiencia eficaz de edición de JavaScript lista para usar. Con tecnología de un servicio de lenguaje basado en TypeScript, Visual Studio proporciona IntelliSense con más funcionalidades, compatibilidad con características modernas de JavaScript y características de productividad mejoradas, como Ir a definición, la refactorización y mucho más.
 
 > [!NOTE]
@@ -58,7 +60,8 @@ ms.lasthandoff: 04/10/2017
 
 Para obtener más información sobre la funcionalidad general de IntelliSense de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], consulte [Using IntelliSense](../ide/using-intellisense.md) (Usar IntelliSense). 
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades de JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## Novedades de JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+<a id="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd" class="xliff"></a>
 
 JavaScript IntelliSense en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] mostrará ahora mucha más información sobre las listas de parámetros y miembros.
 Esta nueva información la proporciona el servicio de lenguaje TypeScript, que usa el análisis estático en segundo plano para comprender mejor el código.
@@ -130,7 +133,7 @@ Consulte [este documento](https://github.com/Microsoft/TypeScript/wiki/JsDoc-sup
 
 ### <a name="TsDeclFiles"></a> IntelliSense basado en archivos de declaración de TypeScript
 
-Dado que TypeScript y JavaScript se basan ahora en el mismo servicio de lenguaje, pueden interactuar de manera más completa. Por ejemplo, se puede proporcionar IntelliSense para JavaScript para valores declarados en un archivo `.d.ts` ([más información](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Writing%20Definition%20Files.md)), y los tipos como interfaces y clases que se declaran en TypeScript están disponibles para su uso como tipos en comentarios de JsDoc. 
+Dado que TypeScript y JavaScript se basan ahora en el mismo servicio de lenguaje, pueden interactuar de manera más completa. Por ejemplo, se puede proporcionar IntelliSense para JavaScript para valores declarados en un archivo `.d.ts` ([más información](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), y los tipos como interfaces y clases que se declaran en TypeScript están disponibles para su uso como tipos en comentarios de JsDoc. 
 
 A continuación, se muestra un ejemplo sencillo de un archivo de definición de TypeScript que proporciona esa información de tipo (a través de una interfaz) a un archivo JavaScript en el mismo proyecto (con una etiqueta de JsDoc).
 

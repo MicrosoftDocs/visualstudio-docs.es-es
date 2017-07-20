@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 137f6faa156d188afb99cafb2b1e9dbababdeb4f
-ms.openlocfilehash: a7de37fd82f94fdcef6f839884ea30c5c77061e5
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b2308ef41ea8068c153d286f58dcf8ac4c581ddd
 ms.contentlocale: es-es
-ms.lasthandoff: 04/28/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria

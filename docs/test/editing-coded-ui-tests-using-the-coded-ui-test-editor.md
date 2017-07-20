@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 398ea8d18a2aa6de572d83a1c9c96dc7361598d5
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 55fd09e8c704152b1c88050adc567f28f37a7047
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
@@ -45,7 +46,7 @@ el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo d
 -   Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>¿Por qué debo hacerlo?  
- El uso del editor de pruebas de IU codificadas es más rápido y eficaz que editar el código en los métodos de pruebas de IU codificadas con el editor de código. Con el editor de pruebas de IU codificadas puede usar la barra de herramientas y los menús contextuales para ubicar y modificar rápidamente los valores de propiedad asociados a acciones y controles de la interfaz de usuario. Por ejemplo, puede usar la barra de herramientas del editor de pruebas de IU codificadas para llevar a cabo los siguientes comandos:  
+ El uso del editor de pruebas de IU codificadas es más rápido y eficaz que editar el código en los métodos de pruebas de IU codificadas con el editor de código. Con el editor de pruebas de IU codificadas puede usar la barra de herramientas y los menús contextuales para ubicar y modificar rápidamente los valores de propiedad asociados a acciones y controles de la interfaz de usuario. Por ejemplo, puede usar la barra de herramientas del editor de pruebas de IU codificadas para ejecutar los siguientes comandos:  
   
  ![Editor de pruebas de IU](../test/media/uitesteditor.png "UITestEditor")  
   
@@ -91,7 +92,7 @@ Editar propiedades de acción de IU
   
  Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.  
   
- Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "http://Contoso1/default.aspx"**, puede cambiar la dirección URL por `‘http://Contoso2/default.aspx’`.  
+ Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "http://Contoso1/default.aspx"**, puede cambiar la dirección URL por `'http://Contoso2/default.aspx'`.  
   
  ![Propiedades del control](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar las propiedades de los controles  
@@ -100,7 +101,7 @@ Editar las propiedades de los controles
   
  Por ejemplo, un desarrollador puede haber cambiado la propiedad **(ID)** en un control de botón en el código fuente de la aplicación que se prueba de "idSubmit" a "idLogin". Con la propiedad **(ID)** cambiada en la aplicación, la prueba de IU codificada no encontrará el control de botón y se producirá un error. En este caso, el evaluador puede abrir la colección **Propiedades de búsqueda** y cambiar la propiedad **Id** para que coincida con el valor nuevo usado por el programador en la aplicación. El evaluador también podría cambiar el valor de la propiedad **Nombre descriptivo** de "Enviar" a "Iniciar sesión". Si realiza este cambio, la acción de la interfaz de usuario asociada en el editor de pruebas de IU codificadas se actualiza de "Elegir el botón 'Enviar'" a "Elegir el botón 'Iniciar sesión'".  
   
- Tras completar las modificaciones, guarde los cambios en el archivo UIMap.Designer. Para ello, haga clic en **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Tras completar las modificaciones, guarde los cambios en el archivo UIMap.Designer eligiendo **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
  *¿Qué más debería saber?*  
  **Sugerencias**  
@@ -131,7 +132,7 @@ Editar las propiedades de los controles
   
  En el panel **Acción de IU** , expanda el método de prueba que quiere dividir en dos métodos independientes y seleccione la acción de la interfaz de usuario donde quiere que comience el nuevo método de prueba. Abra el menú contextual de la acción de la interfaz de usuario y, después, elija **Dividir en un nuevo método**o elija el botón **Dividir en un nuevo método** en la barra de herramientas del editor de pruebas de IU codificadas. El nuevo método de prueba aparece en el panel Acciones de la interfaz de usuario. Contiene las acciones de la interfaz de usuario de la acción en la que especificó la división.  
   
- Una vez que haya acabado de dividir el método, guarde los cambios en el archivo UIMap.Designer. Para ello, haga clic en **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Una vez que haya acabado de dividir el método, guarde los cambios en el archivo UIMap.Designer eligiendo **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
  *¿Qué más debería saber?*  
  **Problemas importantes**  
@@ -153,9 +154,9 @@ Editar las propiedades de los controles
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Mover un método de prueba al archivo UIMap para facilitar la personalización  
  Si determina que uno de los métodos de prueba de la prueba de la interfaz de usuario codificada requiere un código personalizado, debe moverlo al archivo UIMap.cs o UIMap.vb. De lo contrario, el código se sobrescribirá cada vez que se vuelva a compilar la prueba de IU codificada. Si no mueve el método, el código personalizado se sobrescribirá cada vez que se vuelva a compilar la prueba.  
   
- En el panel **Acción de IU** , seleccione el método de prueba que quiere mover al archivo UIMap.cs o UIMap.vb para facilitar la funcionalidad de código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba. Después, elija el botón **Mover código** , situado en la barra de herramientas del editor de pruebas de IU codificadas, o abra el menú contextual del método de prueba y elija **Mover código**. El método de prueba se quita del archivo UIMap.uitest y ya no se muestra en el panel de acciones de la interfaz de usuario. Para editar el archivo de prueba que ha movido, abra el archivo UIMap.cs o UIMap.vb desde el Explorador de soluciones.  
+ En el panel **Acción de IU** , seleccione el método de prueba que quiere mover al archivo UIMap.cs o UIMap.vb para facilitar la función de código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba. Después, elija el botón **Mover código** , situado en la barra de herramientas del editor de pruebas de IU codificadas, o abra el menú contextual del método de prueba y elija **Mover código**. El método de prueba se quita del archivo UIMap.uitest y ya no se muestra en el panel de acciones de la interfaz de usuario. Para editar el archivo de prueba que ha movido, abra el archivo UIMap.cs o UIMap.vb desde el Explorador de soluciones.  
   
- Una vez que haya terminado de mover el método, guarde los cambios en el archivo UIMap.Designer. Para ello, haga clic en **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Una vez que haya terminado de mover el método, guarde los cambios en el archivo UIMap.Designer eligiendo **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
  *¿Qué más debería saber?*  
  **Problemas importantes**  
@@ -166,7 +167,7 @@ Editar las propiedades de los controles
   
 -   ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer el movimiento, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z. Después también debe quitar el código manualmente desde el archivo UIMap.cs o UIMap.vb.  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Buscar un control de interfaz de usuario en la aplicación sometida a prueba  
+##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test  
  En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. También se puede usar la característica **Buscar control de IU** de la aplicación sometida a prueba para comprobar las modificaciones de propiedades de búsqueda que haya efectuado en un control.  
   
  ![Buscar control de IU](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -191,7 +192,7 @@ Editar las propiedades de los controles
   
  ![Todos los controles encontrados](../test/media/codeduilocateall2.png "CodedUILocateAll2")  
   
- En el panel **Asignación de controles de IU** , seleccione el control de contenedor que quiera buscar y del que quiera ver todos los descendientes. Después, abra el menú contextual del control y elija **Buscar todos**. El control contenedor y sus controles descendiente están marcados en el editor de pruebas de IU codificadas con una marca de verificación verde o una 'X' roja. Estas marcas le permiten saber si los controles se han localizado correctamente en la aplicación sometida a prueba.  
+ En el panel **Asignación de controles de IU** , seleccione el control de contenedor que quiera buscar y del que quiera ver todos los descendientes. Después, abra el menú contextual del control y elija **Buscar todos**. El control contenedor y sus controles descendiente están marcados en el editor de pruebas de IU codificadas con una marca de verificación verde o una "X" roja. Estas marcas le permiten saber si los controles se han localizado correctamente en la aplicación sometida a prueba.  
   
  *¿Qué más debería saber?*  
  **Problemas importantes**  
@@ -207,7 +208,7 @@ Editar las propiedades de los controles
   
  En el panel **Acción de IU** , expanda el método de prueba que contiene la acción de la interfaz de usuario antes de la que quiere insertar un retraso. Seleccione la acción de IU. Después, abra el menú contextual de la acción de la interfaz de usuario y elija **Insertar retraso antes**. Se inserta un retraso y se resalta antes de la acción de la interfaz de usuario seleccionada con el siguiente texto: **Esperar durante 1 segundos al retraso del usuario entre acciones**. En la ventana Propiedades, cambie el valor de la propiedad **Retraso** con el número deseado de milisegundos.  
   
- Una vez que haya insertado el retraso, guarde los cambios en el archivo UIMap.Designer. Para ello, haga clic en **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Una vez que haya insertado el retraso, guarde los cambios en el archivo UIMap.Designer eligiendo **Guardar** en la barra de herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
   
  *¿Qué más debería saber?*  
  **Notas**  

@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: b40df6e53321efa72081166a1c77d0f3accf914e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 806c1b22718a26e02916ada853372df4f11fb6cd
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU
@@ -311,7 +312,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   
-#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: ¿Por qué no veo la opción para registrar la prueba automatizada de IU en la opción Generar código de un cuadro de diálogo Prueba automatizada de IU?**  
+#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: ¿Por qué no veo la opción para registrar la prueba de IU codificada en la opción Generar código de un cuadro de diálogo Prueba de IU codificada?**  
   
 **R**: La opción para registrar no se admite en las aplicaciones de la Tienda Windows.  
   

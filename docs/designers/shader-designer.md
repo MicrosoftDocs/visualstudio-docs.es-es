@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ff6e473c6e5b2d7a24a4e906d2f592742e3c2d14
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: af7472d5152babe2088ae3cc49caaf718a539878
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
@@ -131,7 +132,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 -   En la barra de herramientas **Modos del Diseñador de sombras**, seleccione la forma que quiera.  
   
-####  <a name="a-namewwsmaterialparametersa-textures-and-material-parameters"></a><a name="WWS_MaterialParameters"></a> Texturas y parámetros de material  
+####  <a name="WWS_MaterialParameters"></a> Texturas y parámetros de material  
  Muchos sombreadores dependen de texturas y propiedades de material para producir una apariencia única para cada tipo de objeto en la aplicación. Para ver qué aspecto tendrá el sombreador en la aplicación, puede establecer las texturas y las propiedades de material que se usan para representar la vista previa para que coincida con las texturas y los parámetros que es posible que use en la aplicación.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Para enlazar una textura distinta a un registro de textura o para modificar otros parámetros de material  
@@ -144,7 +145,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 |Parámetro|Propiedades|  
 |---------------|----------------|  
-|**Textura 1** – **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: la ruta de acceso completa del archivo de textura asociado al registro de textura.|  
+|**Textura 1** - **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: la ruta de acceso completa del archivo de textura asociado al registro de textura.|  
 |**Color ambiental de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: el color difuso del píxel actual debido a la iluminación indirecta o ambiente.|  
 |**Color difuso de material**|**Acceso**: **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: un color que describe cómo difumina la iluminación directa el píxel actual.|  
 |**Color emisor de luz de material**|**Acceso**:                              **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: la contribución de color del píxel actual debida a la iluminación propia proporcionada.|  

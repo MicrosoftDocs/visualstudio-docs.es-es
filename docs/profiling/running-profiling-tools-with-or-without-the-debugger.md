@@ -13,10 +13,11 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2cfcc962e41d67995f1e1e04b787a49edfbbfbf6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8d0cc37019b04d6f734d6bd604c0ddd948b6dc9f
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
@@ -37,9 +38,9 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
 3.  ¿Es necesario medir con precisión el rendimiento o se acepta un número aproximado?  
   
-     Las compilaciones de depuración carecen de ciertas optimizaciones que proporcionan las versiones de lanzamiento, por ejemplo la inclusión de llamadas a funciones y constantes, la eliminación de rutas de acceso a código sin usar y el almacenaje de las variables de manera que no las pueda utilizar el depurador. El propio depurador cambia los tiempos de rendimiento porque realiza ciertas operaciones que son necesarios para la depuración (por ejemplo, interceptar excepciones y eventos del módulo de carga). Por lo tanto, los números de rendimiento en las herramientas integradas en el depurador solo tienen una precisión de decenas de milisegundos. Los números de rendimiento para las configuraciones de lanzamiento con las herramientas sin depurador son mucho más precisos.  
+     Las compilaciones de depuración carecen de ciertas optimizaciones que proporcionan las versiones de lanzamiento, por ejemplo la inclusión de llamadas a funciones y constantes, la eliminación de rutas de acceso a código sin usar y el almacenaje de las variables de manera que no las pueda usar el depurador. El propio depurador cambia los tiempos de rendimiento porque realiza ciertas operaciones que son necesarios para la depuración (por ejemplo, interceptar excepciones y eventos del módulo de carga). Por lo tanto, los números de rendimiento en las herramientas integradas en el depurador solo tienen una precisión de decenas de milisegundos. Los números de rendimiento para las configuraciones de lanzamiento con las herramientas sin depurador son mucho más precisos.  
   
-##  <a name="a-namebkmkquickstartcollectdiagnosticdataa-collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración  
  La siguiente sección trata la depuración local. En secciones posteriores puede encontrar información sobre la depuración en un dispositivo y la depuración remota.  
   
 1.  Abra el proyecto que quiere depurar y luego haga clic en **Depurar / Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  

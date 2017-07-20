@@ -27,14 +27,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 20e3ac96d5b12002b11a9e93b413c48738f57153
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>Extensión de Excel de muestra: ExtensionPackage (Clase)
-Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>, y proporciona el punto de entrada para una prueba de IU codificada que realiza pruebas de una hoja de cálculo de [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
+Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> y proporciona el punto de entrada para una prueba de IU codificada que está probando una hoja de cálculo [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
   
 ## <a name="assembly-attribute"></a>Assembly (Atributo)  
  El archivo comienza con un atributo Assembly que identifica el ensamblado como una extensión de prueba de interfaz de usuario.  
@@ -52,7 +53,7 @@ Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
  Esta clase tiene propiedades que proporcionan valores que usa el marco de pruebas de IU codificadas para identificar y describir el ensamblado y la extensión. Para obtener más información, vea los comentarios del código.  
   
 ## <a name="getservice-method"></a>GetService (Método)  
- El método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> es el único punto de entrada utilizado por el marco de pruebas de IU codificadas para acceder al administrador de tecnología, el proveedor de propiedades y el filtro de acción, identificado por la clase base para cada objeto.  
+ El método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> es el único punto de entrada usado por el marco de pruebas de IU codificadas para acceder al administrador de tecnología, el proveedor de propiedades y el filtro de acción, identificado por la clase base para cada objeto.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   

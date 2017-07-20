@@ -36,16 +36,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 753a39940ba32052cff14460f007a8f8a2d191dd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0719aac1c8a0b59b34234aeeee8ec0a3ce418168
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 Las pruebas automatizadas que controlan la aplicación a través de la interfaz de usuario se conocen como *pruebas de IU codificadas* (CUIT). Estas pruebas incluyen unas pruebas funcionales de los controles de la interfaz de usuario. Permiten comprobar si toda la aplicación, incluida la interfaz de usuario, funciona correctamente. Las pruebas de IU codificadas son especialmente útiles donde haya una validación o cualquier otra lógica en la interfaz de usuario, por ejemplo, en una página web. También se suelen usar para automatizar una prueba manual existente.  
   
- Como se muestra en la ilustración siguiente, una experiencia típica de desarrollo podría ser aquella donde, inicialmente, el usuario se limite a compilar la aplicación (F5) y a hacer clic en los controles de la interfaz de usuario a fin de comprobar que todo funciona correctamente. Después, puede decidir crear una prueba codificada de forma que no sea necesario seguir probando la aplicación manualmente. Dependiendo de la funcionalidad concreta que se prueba en la aplicación, puede escribir código para una prueba funcional o bien una prueba de integración que puede que incluya o no la realización de pruebas en el nivel de interfaz de usuario. Si simplemente desea tener acceso directamente a alguna lógica de negocios, puede codificar una prueba unitaria. Sin embargo, en algunas circunstancias, puede ser beneficioso incluir pruebas de los diversos controles de IU en la aplicación. Una prueba de IU codificada puede automatizar el escenario inicial (F5), comprobando que la renovación de código no afecte a la funcionalidad de la aplicación.  
+ Como se muestra en la ilustración siguiente, una experiencia típica de desarrollo podría ser aquella donde, inicialmente, el usuario se limite a compilar la aplicación (F5) y a hacer clic en los controles de la interfaz de usuario a fin de comprobar que todo funciona correctamente. Después, puede decidir crear una prueba codificada de manera que no sea necesario seguir probando la aplicación manualmente. Dependiendo de la funcionalidad concreta que se prueba en la aplicación, puede escribir código para una prueba funcional o bien una prueba de integración que puede que incluya o no la realización de pruebas en el nivel de interfaz de usuario. Si simplemente desea tener acceso directamente a alguna lógica de negocios, puede codificar una prueba unitaria. Sin embargo, en algunas circunstancias, puede ser beneficioso incluir pruebas de los diversos controles de IU en la aplicación. Una prueba de IU codificada puede automatizar el escenario inicial (F5), comprobando que la renovación de código no afecte a la funcionalidad de la aplicación.  
   
  ![Pruebas durante el desarrollo de la aplicación](../test/media/cuit_overview.png "CUIT_Overview")  
   
@@ -87,7 +88,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
   
      Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto** y seleccione **Visual Basic** o **Visual C#**. A continuación, elija **Pruebas**, **Prueba de IU codificada**.  
   
-    -   *No se ven las plantillas de proyecto**Prueba de IU codificada**.*  
+    -   *No se ven las plantillas de proyecto **Prueba de IU codificada**.*  
   
          Puede que esté usando una versión de Visual Studio que no es compatible con pruebas de IU programadas. Para crear pruebas de IU codificadas, debe usar Visual Studio Enterprise.  
   
@@ -166,14 +167,14 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
   
 8.  **Ejecute la prueba**.  
   
-     Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, consulte [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#VerifyCodeUsingCUITWhatsNext) al final de este tema.  
+     Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#VerifyCodeUsingCUITWhatsNext) al final de este tema.  
   
  Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.  
   
  Para obtener un ejemplo detallado, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.  
   
 ###  <a name="starting"></a> Iniciar y detener la aplicación sometida a pruebas  
- *No deseo iniciar y detener la aplicación, explorador o base de datos por separado para cada prueba. ¿Cómo puedo evitarlo?*  
+ *No quiero iniciar y detener la aplicación, explorador o base de datos por separado para cada prueba. ¿Cómo puedo evitarlo?*  
   
 -   ![Requisito previo](../test/media/prereq.png "Prereq") Si no desea grabar las acciones de inicio de la aplicación en pruebas, debe iniciar su aplicación antes de elegir el icono **Grabar**.  
   
@@ -184,7 +185,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
 -   ![Requisito previo](../test/media/prereq.png "Prereq") Puede agregar un método de limpieza de pruebas, identificado mediante un atributo [TestCleanup], que ejecute código al final de cada método de prueba. Por ejemplo, el método para cerrar la aplicación podría invocarse desde el método TestCleanup.  
   
 ###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Validar las propiedades de los controles de IU  
- Puede utilizar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para la prueba o generar código para un método de validación que utiliza una aserción para un control de IU.  
+ Puede usar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para la prueba o generar código para un método de validación que usa una aserción para un control de IU.  
   
  Para generar aserciones para los controles de IU, elija la herramienta **Agregar aserciones** del generador de pruebas de IU codificadas y arrástrela al control de la aplicación en pruebas que desea comprobar si es correcto. Cuando el cuadro rodee el control, suelte el mouse. El código de clase de control se crea inmediatamente en el archivo `UIMap.Designer.cs`.  
   
@@ -251,7 +252,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
  *No puedo grabar un movimiento del mouse sobre un control. ¿Existe alguna forma de hacerlo?*  
  **Grabar manualmente eventos de mantenimiento del mouse**  
   
- En algunas circunstancias, un control determinado que se usa en una prueba de IU programada podría requerir que se utilice el teclado para grabar manualmente eventos de mantener el mouse. Por ejemplo, cuando se prueba un Windows Form o una aplicación de Windows Presentation Foundation (WPF), puede haber código personalizado. O podría haber un comportamiento especial definido para mantener el mouse sobre un control, como un nodo de árbol que se expande cuando un usuario mantiene el mouse sobre él. Para probar circunstancias como estas, hay que notificar manualmente al generador de pruebas de IU codificadas que mantiene el mouse sobre el control presionando las teclas del teclado predefinidas.  
+ En algunas circunstancias, un control determinado que se usa en una prueba de IU programada podría requerir que se use el teclado para grabar manualmente eventos de mantener el mouse. Por ejemplo, cuando se prueba un Windows Form o una aplicación de Windows Presentation Foundation (WPF), puede haber código personalizado. O podría haber un comportamiento especial definido para mantener el mouse sobre un control, como un nodo de árbol que se expande cuando un usuario mantiene el mouse sobre él. Para probar circunstancias como estas, hay que notificar manualmente al generador de pruebas de IU codificadas que mantiene el mouse sobre el control presionando las teclas del teclado predefinidas.  
   
  Al realizar la prueba de IU codificada, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas Ctrl, Mayús y R del teclado al mismo tiempo. Suelte las teclas. El generador de pruebas de IU codificadas graba un evento de mantenimiento del mouse.  
   
@@ -381,7 +382,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     public partial class UIMap // Same partial class  
     {  
       /// <summary>  
-      /// Add two numbers – parameterized version  
+      /// Add two numbers - parameterized version  
       /// </summary>  
       public void AddTwoNumbers(int firstNumber, int secondNumber)  
       { ...   // Code modified to use parameters.  
@@ -408,21 +409,21 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  **Obtener acceso a las acciones de un control de prueba de IU**  
   
- Para realizar acciones en los controles de prueba de interfaz de usuario, como clics del mouse o acciones del teclado, use los métodos de las clases <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> y <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>:  
+ Para realizar acciones en los controles de prueba de IU, como clics del mouse o acciones del teclado, use los métodos de las clases <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> y <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>:  
   
--   Para realizar una acción orientada al mouse, como un clic del mouse, en una interfaz de usuario de control de prueba, utilice <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
+-   Para realizar una acción orientada al mouse, como un clic del mouse, en un control de prueba de IU, utilice el método <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
   
      `Mouse.Click(buttonCancel);`  
   
--   Para realizar una acción orientada al teclado, como un clic del mouse, como escribir en un control de edición, utilice <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
+-   Para realizar una acción orientada al teclado, como escribir en un control de edición, utilice el método <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
   
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`  
   
  **Obtener acceso a las propiedades de un control de prueba de IU**  
   
- Para obtener y establecer valores de propiedad específicos de control de IU, puede obtener o establecer los valores de las propiedades de un control directamente, o puede usar los métodos <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> con el nombre de la propiedad específica que desea obtener o establecer.  
+ Para obtener y establecer los valores de propiedad específicos del control de IU, puede obtener o establecer directamente los valores de las propiedades de un control o puede usar los métodos <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> con el nombre de la propiedad específica que desea obtener o establecer.  
   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve un objeto que después se puede convertir en el correspondiente <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> acepta un objeto para el valor de la propiedad.  
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve un objeto que puede a su vez convertirse en el objeto <xref:System.Type> apropiado. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> acepta un objeto para el valor de la propiedad.  
   
 ##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Para obtener o establecer las propiedades directamente desde los controles de prueba de IU  
   
@@ -435,11 +436,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ##### <a name="to-get-properties-from-ui-test-controls"></a>Para obtener las propiedades de los controles de prueba de IU  
   
--   Para obtener un valor de propiedad de un control, utilice <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
+-   Para obtener un valor de propiedad de un control, use el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
 -   Para especificar la propiedad del control que se va a obtener, use la cadena adecuada de la clase `PropertyNames` en cada control como parámetro de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve el tipo de datos adecuado, pero este valor devuelto se convierte como un <xref:System.Object>. A continuación, el <xref:System.Object> devuelto debe convertirse en el tipo apropiado.  
+-   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve el tipo de datos adecuado, pero este valor devuelto se convierte en <xref:System.Object>. A continuación, el elemento <xref:System.Object> devuelto debe convertirse en el tipo apropiado.  
   
      Ejemplo:  
   
@@ -447,9 +448,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ##### <a name="to-set-properties-for-ui-test-controls"></a>Para establecer las propiedades de los controles de prueba de IU  
   
--   Para establecer una propiedad en un control, utilice <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
+-   Para establecer una propiedad de un control, utilice el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
   
--   Para especificar la propiedad del control que se va a obtener, establezca la cadena adecuada de la clase `PropertyNames` como el primer parámetro de  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, con el valor de propiedad como el segundo parámetro.  
+-   Para especificar la propiedad del control que se va a establecer, use la cadena adecuada de la clase `PropertyNames` en cada control como primer parámetro de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> y el valor de propiedad como segundo parámetro.  
   
      Ejemplo:  
   
@@ -481,19 +482,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener orientación adicional, consulte el [capítulo 5 sobre automatización de las pruebas del sistema en la guía sobre pruebas para entrega continua con Visual Studio 2012 (en inglés)](http://go.microsoft.com/fwlink/?LinkID=255196). Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
+ Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener orientación adicional, vea el [capítulo 5 sobre automatización de las pruebas del sistema en la guía sobre pruebas para entrega continua con Visual Studio 2012 (en inglés)](http://go.microsoft.com/fwlink/?LinkID=255196). Para obtener más información acerca de las pruebas manuales, consulte [[retirado] Crear casos de prueba manuales mediante Microsoft Test Manager](/devops-test-docs/test_notintoc/creating-manual-test-cases-using-microsoft-test-manager). Para obtener más información sobre las pruebas del sistema automatizadas, consulte [Crear pruebas automatizadas mediante Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Orientación  
  [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5 Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>Preguntas más frecuentes  
  [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Preguntas más frecuentes sobre las pruebas de IU codificadas -&2;](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Foro  
  [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  

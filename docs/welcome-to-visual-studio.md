@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7ec312bf7c85759fef700f0746c0981f263d46e2
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 362a756e434f93eb39776c76382d059cc2744cae
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="welcome-to-visual-studio-2017"></a>¡Le damos la bienvenida a Visual Studio 2017!
@@ -90,7 +91,7 @@ Además, puede integrar las API de REST de Office 365 en su aplicación para con
  Use [Visual Studio Team Services](https://www.visualstudio.com/team-services/) para almacenar el código en la nube sin necesidad de mantener un servidor local. Use [Team Foundation Server](https://www.visualstudio.com/tfs/) si quiere tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información sobre qué sistema de control de versiones es más adecuado para sus necesidades: [Choosing the right version control for your project](https://www.visualstudio.com/en-us/docs/tfvc/comparison-git-tfvc) (Elegir el control de versiones adecuado para el proyecto).  
 
 ### <a name="build-your-app"></a>Compilar la aplicación  
- Puede [compilar la aplicación localmente](ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. Después, use las [herramientas de depuración](debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Vea [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview) (Integración continua en cualquier plataforma) para más información.
+ También puede [compilar la aplicación localmente](ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. A continuación, use las [herramientas de depuración](debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Vea [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview) (Integración continua en cualquier plataforma) para más información.
 
 ### <a name="test-and-improve-your-app"></a>Probar y mejorar la aplicación  
 [Cree pruebas unitarias](test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.  
@@ -100,7 +101,7 @@ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los pl
 Diagnostique el uso de CPU y memoria, y otros problemas de nivel de aplicación. Para más información, vea [Herramientas de generación de perfiles](profiling/profiling-tools.md).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez  
- Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview) para obtener más detalles.  
+ Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Consulte [DevOps y administración del ciclo de vida de las aplicaciones](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview) para obtener más detalles.  
 
 ## <a name="whats-new"></a>Novedades  
 Obtenga información sobre las novedades de Visual Studio.
@@ -114,7 +115,7 @@ Obtenga información sobre las novedades de Visual Studio.
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio  
 Agregue su propia extensión de Visual Studio para incluir una herramienta o script que usa con frecuencia al codificar. Puede crear elementos de menú y ventanas de herramientas personalizados para integrar sus propias herramientas en el IDE de Visual Studio. Puede ampliar el editor de Visual Studio para analizar y corregir el código, o agregar un nuevo tipo de proyecto para incluir exactamente lo que necesita.  
 
-Para obtener la versión más reciente de las herramientas de extensibilidad de Visual Studio (SDK de VS), vea [Visual Studio SDK (Kit de desarrollo de software (SDK) de Visual Studio)](extensibility/visual-studio-sdk.md).  
+Para obtener la versión más reciente de las herramientas de extensibilidad de Visual Studio (SDK de VS), vea [Kit de desarrollo de software (SDK) de Visual Studio](extensibility/visual-studio-sdk.md).  
 
 Puede usar .NET Compiler Platform (Roslyn) para escribir sus propios analizadores de código y generadores de código. Encuentre todo lo que necesita en [Roslyn](https://github.com/dotnet/Roslyn).  
 

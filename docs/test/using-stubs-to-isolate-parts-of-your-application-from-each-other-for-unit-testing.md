@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: a4c6024c6e35e8e88ce04b607a784e4adfa87d61
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: d9588eff64ef29c757b6d4224c17975e6ee9d0ee
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
@@ -190,7 +191,7 @@ analyzer = new StockAnalyzer(new StockFeed())
  Hay maneras más flexibles de realizar esta conexión. Por ejemplo, StockAnalyzer podría aceptar un objeto generador que puede crear instancias de distintas implementaciones de IStockFeed en condiciones diferentes.  
   
 ###  <a name="GeneratingStubs"></a> Generar código auxiliar  
- Ha desacoplado la clase que desea probar de los componentes que utiliza. Además de conseguir que la aplicación sea más sólida y flexible, el desacoplamiento permite conectar el componente en prueba a las implementaciones de código auxiliar de las interfaces con fines de evaluación.  
+ Ha desacoplado la clase que quiere probar de los componentes que usa. Además de conseguir que la aplicación sea más sólida y flexible, el desacoplamiento permite conectar el componente en prueba a las implementaciones de código auxiliar de las interfaces con fines de evaluación.  
   
  Simplemente podría escribir el código auxiliar como clases de la forma habitual. Sin embargo, Microsoft Fakes proporciona una manera más dinámica de crear el código auxiliar más adecuado para cada prueba.  
   
@@ -475,7 +476,7 @@ public void TestGetValue()
 // unit test code  
 var stub = new Fakes.MyClass();  
 stub.CallBase = false;  
-// No delegate set – default delegate:  
+// No delegate set - default delegate:  
 Assert.AreEqual(0, stub.DoVirtual(1));  
   
 stub.CallBase = true;  
@@ -488,7 +489,7 @@ Assert.AreEqual(43,stub.DoVirtual(1));
   
 ##  <a name="BKMK_Stub_limitation"></a> Limitaciones del código auxiliar  
   
-1.  No se admiten las signaturas de método con punteros.  
+1.  No se admiten las firmas de método con punteros.  
   
 2.  Las clases o métodos estáticos sellados no pueden procesarse con stub porque los tipos de código auxiliar dependen del envío del método virtual. En estos casos, use los tipos de correcciones de compatibilidad (shim) como se describe en [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   

@@ -26,14 +26,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 060dc127a1cc08dcf28a59feaa774b0094e42d56
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3be7ff30658fc7e0de4cf04cab71fdae44b1b15e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción
-En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para obtener un ejemplo de una prueba de UI codificada que espera a que se habilite un control con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consulte [Tutorial: Crear, editar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
+En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para ver un ejemplo de una prueba de IU codificada que espera a que un control se habilite con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vea [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Requisitos**  
   
@@ -109,11 +110,11 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  Los métodos devuelven true si la espera es correcta y false si se produjo un error.  
   
- La propiedad <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> especifica el tiempo de expiración implícito de la operación de espera. El valor predeterminado de esta propiedad es 60000 milisegundos (un minuto).  
+ El tiempo de espera implícito de la operación de espera se especifica mediante la propiedad <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A>. El valor predeterminado de esta propiedad es 60000 milisegundos (un minuto).  
   
  Los métodos tienen una sobrecarga para tener el tiempo de espera explícito en milisegundos. Sin embargo, cuando la operación de espera da como resultado una búsqueda implícita del control, o si la aplicación está ocupada, el tiempo de espera real podría ser mayor que el tiempo de espera especificado.  
   
- Las funciones anteriores son eficaces y flexibles y deberían satisfacer casi todas las condiciones. Sin embargo, en caso de que estos métodos no satisfagan sus necesidades y tenga que programar <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> o un <xref:System.Threading.Thread.Sleep%2A> en su código, le recomendamos que use Playback.Wait() en lugar de la API Thread.Sleep(). Las razones para esto son las siguientes:  
+ Las funciones anteriores son eficaces y flexibles y deberían satisfacer casi todas las condiciones. Sin embargo, en caso de que estos métodos no satisfagan sus necesidades y tenga que codificar <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> o <xref:System.Threading.Thread.Sleep%2A> en su código, le recomendamos que use Playback.Wait() en lugar de la API Thread.Sleep(). Las razones para esto son las siguientes:  
   
  Puede usar la propiedad <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> para modificar la duración de la suspensión. Esta variable es 1 de forma predeterminada, pero puede aumentarla o disminuirla para cambiar el tiempo de espera de todo el código. Por ejemplo, si está realizando pruebas expresamente en una red lenta o algún otro caso de bajo rendimiento, puede cambiar esta variable a un valor de 1,5 en un solo lugar (o incluso en el archivo de configuración) para incorporar un 50 % de espera extra en todos los lugares.  
   
@@ -124,7 +125,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
   
  **Orientación**  
   
- Para obtener información adicional, consulte [Pruebas para entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ Para obtener información adicional, vea [Pruebas para entrega continua con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
 ## <a name="see-also"></a>Vea también  
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   

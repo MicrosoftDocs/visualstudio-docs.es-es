@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 46e8adfd4e4b66e743af8a0db5aecd3f40eb2de7
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Extensión de muestra para probar la IU codificada para Excel
@@ -45,10 +46,10 @@ Arquitectura de extensión para Excel
  Estas clases representan los puntos de extensión que se implementan en el ejemplo para habilitar la prueba de IU codificada para [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  
   
 ### <a name="extensionpackage"></a>ExtensionPackage  
- Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>, éste es el punto de entrada para la extensión de prueba de IU codificada. Implementar esta clase abstracta proporciona al marco de prueba de IU codificada acceso interno al administrador de tecnología de prueba de interfaz de usuario personalizado, al proveedor de propiedades de prueba de IU y al filtro de acción de prueba de IU para probar la nueva interfaz de usuario de prueba de IU codificada. Para obtener más información, consulte [ExtensionPackage (Clase)](../test/sample-excel-extension-extensionpackage-class.md).  
+ Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>, este es el punto de entrada para la extensión de prueba de IU codificada. Implementar esta clase abstracta proporciona al marco de prueba de IU codificada acceso interno al administrador de tecnología de prueba de interfaz de usuario personalizado, al proveedor de propiedades de prueba de IU y al filtro de acción de prueba de IU para probar la nueva interfaz de usuario de prueba de IU codificada. Para obtener más información, consulte [ExtensionPackage (Clase)](../test/sample-excel-extension-extensionpackage-class.md).  
   
 ### <a name="technologymanager"></a>TechnologyManager  
- Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>, esta clase proporciona un administrador de tecnología de reproducción y grabación de pruebas. Para obtener más información, consulte [TechnologyManager (Clase)](../test/sample-excel-extension-technologymanager-class.md).  
+ Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>, esta clase proporciona un administrador de tecnología para la grabación de pruebas y reproducción. Para obtener más información, consulte [TechnologyManager (Clase)](../test/sample-excel-extension-technologymanager-class.md).  
   
 ### <a name="actionfilter"></a>ActionFilter  
  Heredada de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, esta clase proporciona una clase base para la agregación de resultados de la acción de prueba similares en un resultado de prueba única. Para obtener más información, consulte [ActionFilter (Clase)](../test/sample-excel-extension-actionfilter-class.md).  

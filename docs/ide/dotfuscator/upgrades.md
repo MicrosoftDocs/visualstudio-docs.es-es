@@ -39,28 +39,32 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 507ff049dae50698d86e1536ed21ab982da1af85
-ms.openlocfilehash: eeabf6db465f57ab373c592b01a682ed6442800f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
+ms.contentlocale: es-es
+ms.lasthandoff: 06/23/2017
 
 ---
 
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Actualizar Dotfuscator Community Edition (CE)
+# Actualizar Dotfuscator Community Edition (CE)
+<a id="upgrade-dotfuscator-community-edition-ce" class="xliff"></a>
 
 Dotfuscator Community Edition (Dotfuscator CE) ofrece muchas características de protección de aplicaciones de forma inmediata a todos los desarrolladores que usan Microsoft Visual Studio.
 En cambio, hay más características disponibles para los usuarios que actualicen su versión de Dotfuscator.
 
-## <a name="registering-dotfuscator-ce"></a>Registrar Dotfuscator CE
+## Registrar Dotfuscator CE
+<a id="registering-dotfuscator-ce" class="xliff"></a>
 
 Los usuarios registrados de Dotfuscator CE obtienen acceso a características adicionales, como [compatibilidad de línea de comandos][cli], lo que facilita la integración de Dotfuscator CE en el proceso de compilación automatizado.
 
 El registro es rápido, sencillo y gratuito.
 Para registrar Dotfuscator CE, consulte [la sección Registering Dotfuscator CE (Registrar Dotfuscator CE) en la página de introducción de la Guía de usuario completa de Dotfuscator CE][register-ce].
 
-## <a name="dotfuscator-professional"></a>Dotfuscator Professional
+## Dotfuscator Professional
+<a id="dotfuscator-professional" class="xliff"></a>
 
-Mientras que Dotfuscator Community Edition proporciona un nivel básico de protección, ***PreEmptive Protection - Dotfuscator* Professional Edition** incluye transformaciones de ofuscación y capacidades de protección mejoradas.
+Mientras que Dotfuscator Community Edition proporciona un nivel básico de protección, **_PreEmptive Protection - Dotfuscator_ Professional Edition** incluye transformaciones de ofuscación y capacidades de protección mejoradas.
 Se incluyen los siguientes:
 
 * *Protección de la propiedad intelectual*
@@ -91,7 +95,8 @@ Además, Dotfuscator Professional ofrece una mayor integración con Visual Studi
 Para obtener más información sobre las características avanzadas de protección de aplicaciones que ofrece Dotfuscator Professional, visite la [página de información general de Dotfuscator][product-about] de PreEmptive Solutions y [compárelo con Community Edition][product-compare].
 [En preemptive.com puede solicitar versiones de evaluación totalmente compatibles][eval].
 
-## <a name="see-also"></a>Vea también
+## Vea también
+<a id="see-also" class="xliff"></a>
 
 [Este tema en la guía de usuario completa de Dotfuscator CE][full]
 
@@ -112,7 +117,8 @@ Para obtener más información sobre las características avanzadas de protecci�
 [product-about]: https://www.preemptive.com/products/dotfuscator/overview
 [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
 
-[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_cli.html
-[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/gui_getstarted.html#register
+[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_upgrades.html
+[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+

@@ -27,9 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 9226dacfa63287857c09e5c6945363ccafadc2c7
+ms.contentlocale: es-es
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="getting-started-with-debugging-in-visual-studio"></a>Introducción a la depuración en Visual Studio
@@ -47,7 +49,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  ![Botón de compilación de depuración de Visual Studio](../ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
- También puede especificar una plataforma de compilación de destino específica, como **x86** (CPU Intel de&32; bits), **x64** (CPU Intel de&64; bits) y **ARM** (CPU ARM; solo se admite para ciertos tipos de aplicación). El valor predeterminado es **x86** para proyectos administrados y nativos. Para cambiarlo, haga clic en la lista desplegable de plataforma de compilación y seleccione una plataforma diferente o **Administrador de configuración...**  
+ También puede especificar una plataforma de compilación de destino específica, como **x86** (CPU Intel de 32 bits), **x64** (CPU Intel de 64 bits) y **ARM** (CPU ARM; solo se admite para ciertos tipos de aplicación). El valor predeterminado es **x86** para proyectos administrados y nativos. Para cambiarlo, haga clic en la lista desplegable de plataforma de compilación y seleccione una plataforma diferente o **Administrador de configuración...**  
 
  ![Ventana del Administrador de archivos de configuración de Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
@@ -208,9 +210,4 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

@@ -39,10 +39,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 618aaec3a0ae735560d14bea43cc2b08bd9e5445
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
@@ -149,7 +150,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
 13. Una vez hayas acercado la imagen, selecciona una parte del gráfico de uso de CPU o de rendimiento visual. Al realizar una selección, el gráfico de detalles de la escala de tiempo situado en el panel inferior del generador de perfiles cambia para mostrar solo el período de tiempo seleccionado.  
   
-###  <a name="IsolateVisualThroughput"></a> Aislar un problema de rendimiento visual  
+###  <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
  Los períodos de utilización excesiva de CPU pueden dar lugar a velocidades de fotogramas bajas o irregulares. Si desarrollas juegos y aplicaciones multimedia complejas, el gráfico de rendimiento visual puede proporcionar datos más importantes que el de uso de la CPU.  
   
  Para aislar un problema de rendimiento visual, sigue los pasos descritos en la sección anterior, pero usa el gráfico de rendimiento visual como uno de los puntos de datos clave.  
@@ -204,7 +205,7 @@ if (performance.mark && performance.measure) {
   
  Los eventos del ciclo de vida de la aplicación aparecen como símbolos con forma de diamante. Estos son eventos DOM, entre los que se incluyen:  
   
--   Eventos `DOMContentLoaded` y `Load`, que aparecen normalmente en el controlador de eventos activado en el código. La información sobre herramientas del evento muestra el evento específico y la dirección URL.  
+-   Eventos`DOMContentLoaded` y `Load` events, which typically occur in the activated event hyler in your code. La información sobre herramientas del evento muestra el evento específico y la dirección URL.  
   
 -   Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.  
   
@@ -325,10 +326,10 @@ if (performance.mark && performance.measure) {
 ##  <a name="SaveSession"></a> Guardar una sesión de diagnóstico  
  En Visual Studio, puedes guardar una sesión de diagnóstico al cerrar la pestaña asociada con dicha sesión. Las sesiones guardadas se pueden volver a abrir en otro momento.  
   
-##  <a name="ProfilerEvents"></a> Referencia de eventos del generador de perfiles  
+##  <a name="ProfilerEvents"></a> Profiler event reference  
  Los eventos del generador de perfiles están clasificados por categorías y codificados por colores en el generador de perfiles de la capacidad de respuesta de la IU. Estas son las categorías de eventos:  
   
--   **Carga.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
+-   **Cargando.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
   
 -   **Scripting.** Indica el tiempo invertido en analizar y ejecutar JavaScript. Esto incluye eventos DOM, temporizadores, evaluación de scripts y trabajo de fotogramas de animación. Incluye código de usuario y código de biblioteca.  
   

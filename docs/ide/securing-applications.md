@@ -30,16 +30,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: ba87dedcedace72a2d4fc47f894337ce69fbfc7e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: ac6d4b23723842266dbdad13dcd69042357af9ab
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="securing-applications"></a>Proteger aplicaciones
+# Proteger aplicaciones
+<a id="securing-applications" class="xliff"></a>
 Aunque la mayoría de las aplicaciones presentan desafíos en relación con la seguridad, cada dominio de aplicación tiene también sus propios desafíos.  
   
-## <a name="general-security-considerations"></a>Consideraciones generales de seguridad  
+## Consideraciones generales de seguridad
+<a id="general-security-considerations" class="xliff"></a>  
  Cada idioma tiene sus propias consideraciones y desafíos de seguridad.  
   
  [Procedimientos recomendados para la seguridad](/cpp/top/security-best-practices-for-cpp)  
@@ -48,7 +51,8 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [NO INCLUIDO EN COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/en-us/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Proporciona información sobre los tres aspectos relacionados con la seguridad que más preocupan a los desarrolladores de Visual Basic y C#: privilegios, aplicaciones web e instalación de Visual Studio.  
   
-## <a name="securing-mobile-applications"></a>Proteger aplicaciones móviles  
+## Proteger aplicaciones móviles
+<a id="securing-mobile-applications" class="xliff"></a>  
  A medida que aumenta la popularidad de los dispositivos móviles, la seguridad de la información y de los datos en estos dispositivos se está convirtiendo en una cuestión de mayor importancia.  
   
  [Consideraciones de seguridad para dispositivos](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
@@ -60,7 +64,8 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Diseñar páginas seguras de formularios Mobile Web Forms](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
  Explica la seguridad en el planeamiento, implementación y compatibilidad de dispositivos móviles y redes inalámbricas.  
   
-## <a name="securing-web-applications"></a>Proteger aplicaciones Web  
+## Proteger aplicaciones Web
+<a id="securing-web-applications" class="xliff"></a>  
  Una página Web mal escrita puede comprometer la integridad y la seguridad de todo el servidor y, potencialmente, de toda la red. Por lo tanto, debe revisar las consideraciones de seguridad que hay que tener en cuenta al diseñar la aplicación Web.  
   
  [Arquitectura de seguridad de ASP.NET](http://msdn.microsoft.com/Library/c34d6f4f-f64d-4697-bd32-02dd2ddf726f)  
@@ -75,11 +80,13 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Cómo utilizar seguridad de transporte](http://msdn.microsoft.com/en-us/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Describe cómo usar la seguridad de transporte para la autenticación cuando se establece conexión con un servicio WCF.  
   
-## <a name="securing-desktop-applications"></a>Proteger aplicaciones de escritorio  
+## Proteger aplicaciones de escritorio
+<a id="securing-desktop-applications" class="xliff"></a>  
  El diseño del sistema de seguridad de las aplicaciones de escritorio es una fase esencial del desarrollo de una aplicación.  
   
- [Windows Forms Security](http://msdn.microsoft.com/Library/932d438a-5285-46d8-a958-8c93d0ad6cae)  
+ [Windows Forms Security](/dotnet/framework/winforms/windows-forms-security)  
  Proporciona una descripción general de la implementación de seguridad en formularios Windows Forms.  
   
-## <a name="see-also"></a>Vea también  
+## Vea también
+<a id="see-also" class="xliff"></a>  
  [Seguridad](../ide/security-in-visual-studio.md)

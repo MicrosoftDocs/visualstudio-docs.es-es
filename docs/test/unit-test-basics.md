@@ -29,14 +29,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 8d08dc2578390db8dedd535cfb27261ea71d73cc
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 67f42e3a79d30254d3f5942b3fc9938957d5ff99
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de prueba unitaria
-Compruebe que el código funciona correctamente; para ello, cree y ejecute pruebas unitarias. Se llaman pruebas unitarias porque descomponen las funciones del programa en comportamientos comprobables discretos que se pueden probar como *unidades*individuales. El Explorador de pruebas de Visual Studio proporciona una forma flexible y eficaz de ejecutar las pruebas unitarias y ver los resultados en Visual Studio. Visual Studio instala los marcos de pruebas unitarias de Microsoft para el código administrado y nativo. Use un *marco de pruebas unitarias* para crear pruebas unitarias, ejecutarlas y notificar los resultados correspondientes. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa Visual Studio Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.  
+Compruebe que el código funciona correctamente; para ello, cree y ejecute pruebas unitarias. Se llaman pruebas unitarias porque descomponen las funciones del programa en comportamientos comprobables discretos que se pueden probar como *unidades* individuales. El Explorador de pruebas de Visual Studio proporciona una forma flexible y eficaz de ejecutar las pruebas unitarias y ver los resultados en Visual Studio. Visual Studio instala los marcos de pruebas unitarias de Microsoft para el código administrado y nativo. Use un *marco de pruebas unitarias* para crear pruebas unitarias, ejecutarlas y notificar los resultados correspondientes. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa Visual Studio Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.  
   
  Las pruebas unitarias tienen el mayor efecto en la calidad del código cuando son parte integral del flujo de trabajo de desarrollo de software. En cuanto escriba una función u otro bloque de código de aplicación, cree pruebas unitarias que comprueben el comportamiento del código en respuesta a casos estándar, límite e incorrectos de datos de entrada, así como cualquier suposición explícita o implícita creada por el código. En el *desarrollo controlado por pruebas*, las pruebas unitarias se crean antes de escribir el código, de modo que se usan como documentación de diseño y como especificaciones de las funciones.  
   
@@ -52,7 +53,7 @@ Compruebe que el código funciona correctamente; para ello, cree y ejecute prueb
   
 -   [Escribir las pruebas](#BKMK_Writing_your_tests)  
   
--   [Ejecutar pruebas en el Explorador de pruebas](#BKMK_Running_tests_in_Test_Explorer)  
+-   [Ejecutar pruebas en Explorador de pruebas](#BKMK_Running_tests_in_Test_Explorer)  
   
 -   [Ejecutar y ver las pruebas](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
@@ -154,9 +155,9 @@ public void Withdraw(double amount)
   
  Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:  
   
--   La clase `AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `BankAccount`.  
+-   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `BankAccount` .  
   
--   La clase `CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount`.  
+-   La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .  
   
 ##  <a name="BKMK_Writing_your_tests"></a> Escribir las pruebas  
  El marco de pruebas unitarias que use y Visual Studio IntelliSense le guiarán en la escritura del código de las pruebas unitarias para un proyecto de código. Para ejecutar en el Explorador de pruebas, la mayoría de los marcos requieren que se agreguen atributos específicos para identificar métodos de prueba unitaria. Los marcos también ofrecen una manera (normalmente a través de instrucciones assert o atributos method) de indicar si el método de prueba se ha superado o no. Otros atributos identifican métodos de configuración opcionales que están en la inicialización de la clase y antes de cada método de prueba y métodos de destrucción que se ejecutan después de cada método de prueba y antes de que la clase se destruya.  
@@ -233,7 +234,7 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en el Explorador de pruebas  
+##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en Explorador de pruebas  
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.  
   
  ![Explorador de pruebas unitarias](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
@@ -283,7 +284,7 @@ public void My_Test ()
   
 2.  En el Explorador de pruebas, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.  
   
- Obtenga más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).  
+ Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).  
   
  **P: Si uso TDD, ¿cómo puedo generar el código a partir de las pruebas?**  
   
@@ -296,11 +297,11 @@ public void My_Test ()
  **R:** Sí. Los*métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .  
   
 > [!NOTE]
->  Estos procedimientos se aplican solamente a los métodos de prueba que se escriben usando el marco de pruebas unitarias de Microsoft para código administrado. Si usa otro marco, consulte una funcionalidad equivalente en la documentación correspondiente.  
+>  Estos procedimientos se aplican solamente a los métodos de prueba que se escriben usando el marco de pruebas unitarias de Microsoft para código administrado. Si usa otro marco, consulte una función equivalente en la documentación correspondiente.  
   
  Por ejemplo, suponga que se agrega un método innecesario a la clase `CheckingAccount` denominado `AddIntegerHelper`. `AddIntegerHelper` agrega dos enteros.  
   
- Para crear una prueba controlada por datos para el método `AddIntegerHelper`, en primer lugar se crea una base de datos de Access denominada `AccountsTest.accdb` y una tabla denominada `AddIntegerHelperData`. La tabla `AddIntegerHelperData` define las columnas para especificar el primer y segundo operando de la suma y una columna para especificar el resultado esperado. Rellenamos varias filas con los valores adecuados.  
+ Para crear una prueba controlada por datos para el método `AddIntegerHelper` , en primer lugar se crea una base de datos de Access denominada `AccountsTest.accdb` y una tabla denominada `AddIntegerHelperData`. La tabla `AddIntegerHelperData` define las columnas para especificar el primer y segundo operando de la suma y una columna para especificar el resultado esperado. Rellenamos varias filas con los valores adecuados.  
   
 ```c#  
   
@@ -323,7 +324,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  El método con el atributo se ejecuta una vez para cada fila de la tabla. El Explorador de pruebas notifica un error de prueba para el método si alguna de las iteraciones no se supera. El panel de detalles de los resultados de las pruebas para el método muestra el método de estado de éxito/error para cada fila de datos.  
   
- Obtenga más información sobre las [pruebas unitarias controladas por datos](../test/how-to-create-a-data-driven-unit-test.md).  
+ Más información sobre [pruebas unitarias controladas por datos](../test/how-to-create-a-data-driven-unit-test.md).  
   
  **P: ¿Puedo ver la cantidad de código probado en las pruebas unitarias?**  
   
@@ -351,11 +352,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.  
   
- Obtenga más información sobre cómo [aislar métodos de prueba unitaria con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
  **P: ¿Puedo usar otros marcos de pruebas unitarias para crear pruebas unitarias?**  
   
- **R:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:  
+ **A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:  
   
  ![Selección de otro marco de pruebas unitarias instalado](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   

@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: cfa8cfb699ae20e1ae5e563545959b16802540ea
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Enlace de datos WPF con LINQ to XML

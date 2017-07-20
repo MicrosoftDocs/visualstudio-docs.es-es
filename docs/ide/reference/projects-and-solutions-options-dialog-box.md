@@ -30,19 +30,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5c6c36ca969d5ca9ca3957a886ce45597159bc5c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: a41015624d9c64e053770707bf09b73d8606cb03
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Proyectos y soluciones, Cuadro de diálogo Opciones
+# Proyectos y soluciones, Cuadro de diálogo Opciones
+<a id="projects-and-solutions-options-dialog-box" class="xliff"></a>
 Establece la ruta de acceso predeterminada de las carpetas de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y determina el comportamiento predeterminado de la ventana **Salida**, **Lista de tareas** y el **Explorador de soluciones** mientras se desarrollan y compilan proyectos. Para acceder a este cuadro de diálogo, haga clic en **Herramientas/Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.  
   
 > [!NOTE]
->  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de la Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de la Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="settings"></a>Configuración  
+## Configuración
+<a id="settings" class="xliff"></a>  
  **Ubicación de proyectos**  
  Establece la ubicación predeterminada donde se crean las nuevas carpetas y directorios de proyectos y soluciones. Varios cuadros de diálogo también usan la ubicación establecida en esta opción para los puntos iniciales de las carpetas. Por ejemplo, el cuadro de diálogo Abrir proyecto usa esta ubicación para el acceso directo Mis proyectos.  
   
@@ -78,5 +81,6 @@ Establece la ruta de acceso predeterminada de las carpetas de proyecto de [!INCL
  **Solicitar cambio de nombre simbólico al cambiar el nombre de los archivos**  
  Cuando se selecciona, muestra un cuadro de mensaje que pregunta si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe cambiar o no el nombre de todas las referencias del proyecto al elemento de código.  
   
-## <a name="see-also"></a>Vea también  
+## Vea también
+<a id="see-also" class="xliff"></a>  
  [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

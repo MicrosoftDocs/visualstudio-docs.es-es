@@ -32,16 +32,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6b0b95bfd2112383229c6a36ee7b9c6cdab827eb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 83faa2ad32073c4133295953afa6259e88eee2d5
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Cómo: Guardar y abrir archivos con codificación
+# Cómo: Guardar y abrir archivos con codificación
+<a id="how-to-save-and-open-files-with-encoding" class="xliff"></a>
 Puede guardar archivos con codificación de caracteres específicos para admitir lenguajes bidireccionales. Además puede especificar una codificación al abrir un archivo para que Visual Studio lo muestre correctamente.  
   
-### <a name="to-save-a-file-with-encoding"></a>Para guardar un archivo con codificación  
+### Para guardar un archivo con codificación
+<a id="to-save-a-file-with-encoding" class="xliff"></a>  
   
 1.  En el menú **Archivo**, elija **Guardar archivo como** y luego haga clic en el botón desplegable situado junto al botón **Guardar**.  
   
@@ -55,7 +58,8 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
   
      Si quiere trabajar con un archivo que sabe que está codificado de una forma concreta, puede indicar a Visual Studio que use esa codificación al abrirlo. El método que use depende de si el archivo forma parte del proyecto.  
   
-### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Para abrir un archivo codificado que forma parte de un proyecto  
+### Para abrir un archivo codificado que forma parte de un proyecto
+<a id="to-open-an-encoded-file-that-is-part-of-a-project" class="xliff"></a>  
   
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo y elija **Abrir con**.  
   
@@ -65,7 +69,8 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
   
 3.  En el cuadro de diálogo **Codificación**, seleccione la codificación que debe usar el editor.  
   
-### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Para abrir un archivo codificado que no forma parte de un proyecto  
+### Para abrir un archivo codificado que no forma parte de un proyecto
+<a id="to-open-an-encoded-file-that-is-not-part-of-a-project" class="xliff"></a>  
   
 1.  En el menú **Archivo**, seleccione **Abrir**, **Archivo** o **Archivo de Web** y luego seleccione el archivo que quiere abrir.  
   
@@ -73,6 +78,7 @@ Puede guardar archivos con codificación de caracteres específicos para admitir
   
 3.  Siga los pasos 2 y 3 del procedimiento anterior.  
   
-## <a name="see-also"></a>Vea también  
- [Codificación y globalización de Windows Forms](http://msdn.microsoft.com/Library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+## Vea también
+<a id="see-also" class="xliff"></a>  
+ [Codificación y globalización de Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)

@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: bcfa2bb3a1841f2d960580506b638edcf650ca9e
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b6b865f51ca12312ad439d059097c328576dfa4e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
@@ -41,7 +42,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 ##  <a name="BKMK_Contents"></a> Contenido  
  [Marcos de pruebas unitarias y proyectos de prueba](#BKMK_Unit_test_frameworks_and_test_projects)  
   
- [Ejecutar pruebas en el Explorador de pruebas](#BKMK_Run_tests_in_Test_Explorer)  
+ [Ejecutar pruebas en Explorador de pruebas](#BKMK_Run_tests_in_Test_Explorer)  
   
  [Ver los resultados de las pruebas](#BKMK_View_test_results)  
   

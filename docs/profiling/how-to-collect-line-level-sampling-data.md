@@ -1,36 +1,54 @@
 ---
-title: "C&#243;mo: Recopilar datos de muestreo en el nivel de l&#237;nea | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "herramientas de rendimiento, muestreo de nivel de línea"
+title: "Cómo: Recopilar datos de muestreo en el nivel de línea | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# C&#243;mo: Recopilar datos de muestreo en el nivel de l&#237;nea
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 779171013514e67e5d7516521d136fa17adff06b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
-El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar a qué parte del código de una función que utiliza el procesador de forma intensiva, como una función con ejemplos muy exclusivos, el procesador debe dedicar la mayor parte del tiempo.  
+---
+# <a name="how-to-collect-line-level-sampling-data"></a>Cómo: Recopilar datos de muestreo en el nivel de línea
+El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar en qué punto del código de una función de uso intensivo del procesador, como una función con muestras muy exclusivas, el procesador tiene que dedicar más tiempo.  
   
-## Información general  
- Para el muestreo en el nivel de línea, el generador de perfiles recorre la pila de llamadas del programa a intervalos establecidos y agrega esos resultados.  Estos resultados muestran qué instrucciones ejecutaba el procesador cuando se tomaron los ejemplos.  A continuación, se analizan los datos recopilados sobre ejemplos exclusivos para identificar las líneas de código y el puntero de instrucciones.  
+## <a name="overview"></a>Información general  
+ Para el muestreo en el nivel de línea, el generador de perfiles recorre la pila de llamadas del programa a intervalos establecidos y agrega los resultados. Estos resultados muestran qué instrucciones ejecutaba el procesador cuando se tomaron las muestras. Después se analizan los datos recopilados sobre muestras exclusivas para identificar las líneas de código y el puntero de instrucción (IP).  
   
- El muestreo en el nivel de línea sirve tanto para el código administrado como para el nativo.  Los informes de rendimiento que muestran estos datos incluyen la vista Líneas y la vista Módulos.  
+ El muestreo en el nivel de línea funciona para código administrado y nativo. Los informes de rendimiento que muestran estos datos incluyen la vista Líneas y la vista Módulos.  
   
- La información sobre el inicio y el fin de los caracteres no está disponible para el código nativo.  Para las instrucciones multilínea, la información sobre el inicio de las líneas no está disponible para el código nativo; solo está disponible la información sobre el fin de las líneas.  
+ La información de inicio y fin de caracteres no está disponible para el código nativo. Para las instrucciones multilínea, la información de inicio de línea no está disponible para código nativo, solo está disponible la información de final de línea.  
   
-### Datos disponibles  
- Los datos disponibles sobre el muestreo en el nivel de línea incluyen la información siguiente:  
+### <a name="available-data"></a>Datos disponibles  
+ Los datos de muestreo en el nivel de la línea disponibles incluyen la siguiente información:  
   
 -   Nombre de la función.  
   
@@ -38,25 +56,25 @@ El muestreo en el nivel de línea es la capacidad del generador de perfiles para
   
 -   Inicio de línea: número de línea del código muestreado.  
   
--   Final de línea: número de la línea final del código fuente.  Generalmente coincide con los datos de "Inicio de línea", excepto cuando una sola instrucción de programa abarca varias líneas de código fuente.  
+-   Final de línea: número de la línea final del código fuente. Este suele ser el mismo que los datos de "Inicio de línea", excepto cuando una sola instrucción de programa abarca varias líneas de código fuente.  
   
--   Inicio de carácter: columna inicial del ejemplo agregado.  Generalmente es 0, salvo cuando una sola línea contiene varias instrucciones de programa.  
+-   Inicio de carácter: columna inicial de la muestra agregada. Generalmente es 0, salvo cuando una sola línea contiene varias instrucciones de programa.  
   
--   Final de carácter: columna final del ejemplo agregado.  
+-   Final de carácter: columna final de la muestra agregada.  
   
--   IP: dirección donde se tomó el ejemplo agregado \(vista de IP únicamente\).  
+-   Dirección IP: dirección donde se ha tomado la muestra agregada (solo para la vista IP).  
   
- En la vista **Módulos**, si una función tiene estadísticas en el nivel de línea, éstas se anidan bajo cada función.  Además, se presentan las estadísticas en el nivel de IP anidadas bajo cada línea.  
+ En la vista **Módulos**, si una función tiene estadísticas de nivel de línea, las estadísticas se anidan bajo cada función. Además, se presentan las estadísticas de nivel de IP anidadas bajo cada línea.  
   
-### Desactivar el muestreo en el nivel de línea para código administrado  
- De forma predeterminada, el muestreo en el nivel de línea está activado.  Puede desactivar la recolección de datos en el nivel de línea para código administrado; para ello, siga uno de estos procedimientos:  
+### <a name="turn-off-line-level-sampling-for-managed-code"></a>Desactivar el muestreo en el nivel de línea para código administrado  
+ De forma predeterminada, el muestreo en el nivel de línea está activado. Puede desactivar la recolección de datos en el nivel de línea de código administrado mediante uno de los siguientes procedimientos:  
   
--   Antes de generar los perfiles, escriba VSPerfCLREnv \/samplelineoff.  Esto afecta a las aplicaciones y a los servicios.  
+-   Antes de la generación de perfiles, escriba **VSPerfCLREnv /samplelineoff**. Esto afecta a aplicaciones y servicios.  
   
-     O bien  
+     o  
   
--   Al iniciar una aplicación, escriba VSPerfCmd \/lineoff \<otros argumentos\>.  
+-   Al iniciar una aplicación, escriba **VSPerfCmd /lineoff \<other arguments>**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Analizar los datos de las Herramientas de generación de perfiles](../profiling/analyzing-performance-tools-data.md)
+ [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Cómo: Crear una prueba unitaria controlada por datos
@@ -67,7 +68,7 @@ Mediante el marco de pruebas unitarias de Microsoft para código administrado, p
   
 3.  Cree un método de prueba unitaria y agréguele un atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
-4.  Utilice la propiedad de indizador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar los valores que se utilizan en una prueba.  
+4.  Use la propiedad de indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar los valores que se usan en una prueba.  
   
 ##  <a name="BKMK_The_method_under_test"></a> El método sometido a prueba  
  Por ejemplo, supongamos que hemos creado:  

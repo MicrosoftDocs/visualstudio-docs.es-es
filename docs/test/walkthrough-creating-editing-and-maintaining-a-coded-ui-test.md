@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 75dc59de6446e4de3f1fa0522150eabcf800b24b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b7ef6829b8fca9f08b9c1fc526c975dad54f24d2
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
@@ -160,7 +161,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
      Para obtener más información acerca de las opciones del cuadro de diálogo, vea [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
-8.  Elija **Iniciar grabación** en UIMap – Generador de pruebas de IU codificadas.  
+8.  Seleccione **Iniciar grabación** en UIMap – Generador de pruebas de IU codificadas.  
   
      ![Iniciar la grabación](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
@@ -226,7 +227,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
      La prueba de IU codificada se abre en el editor. Ahora puede ver y modificar la prueba de IU codificada.  
   
-6.  En el panel **Acción de UI**, seleccione el método de prueba (SimpleAppTest) que quiera mover al archivo UIMap.cs o UIMap.vb para facilitar la funcionalidad de código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba.  
+6.  En el panel de **acciones de la interfaz de usuario**, seleccione el método de prueba (SimpleAppTest) que quiera mover al archivo UIMap.cs o UIMap.vb para facilitar la función de código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba.  
   
 7.  Elija el botón **Mover código** de la barra de herramientas del Editor de pruebas de IU codificadas.  
   
@@ -306,7 +307,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
      Observe que la línea de código anterior en este procedimiento está utilizando `UiStartButton`, que es el nombre de UIMap antes de refactorizarse.  
   
-     Para corregir el problema, puede agregar el control refactorizado a UIMap utilizando el Generador de pruebas de IU codificadas. Puede actualizar el código de la prueba para utilizar el código, tal y como se muestra en el procedimiento siguiente.  
+     Para corregir el problema, puede agregar el control refactorizado a UIMap utilizando el Generador de pruebas de IU codificadas. Puede actualizar el código de la prueba para usar el código, tal y como se muestra en el procedimiento siguiente.  
   
 ### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Asignar control refactorizado, y editar y volver a ejecutar la prueba de IU codificada  
   
@@ -396,7 +397,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 ### <a name="faq"></a>Preguntas más frecuentes  
  [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Preguntas más frecuentes sobre las pruebas de IU codificadas -&2;](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Foro  
  [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  

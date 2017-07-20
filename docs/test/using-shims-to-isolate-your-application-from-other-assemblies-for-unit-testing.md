@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 6dfb5758833d9ecda1a6ac378eb3f5069cc80561
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1d64aafdb107e0398c25f6efed7203524c111f18
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
@@ -46,7 +47,7 @@ Los **tipos de correcciones de compatibilidad (shim)** son una de las dos tecnol
  Vea un [vídeo (1 h 16 min): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (Comprobación de código difícil de comprobar con Fakes en Visual Studio 2012)  
   
 ## <a name="in-this-topic"></a>En este tema  
- En este tema aprenderá lo siguiente:  
+ En este tema obtendrá información sobre lo siguiente:  
   
  [Ejemplo: El error Y2K](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
   
@@ -539,7 +540,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 ShimsDelegates.Action<string, string> shim = null;  
 shim = (fileName, content) => {  
   try {  
-    Console.WriteLine("enter”);  
+    Console.WriteLine("enter");  
     // remove shim in order to call original method  
     ShimFile.WriteAllTextStringString = null;  
     File.WriteAllText(fileName, content);  

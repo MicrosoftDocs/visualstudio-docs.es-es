@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f69134d056015f0208e7f5f8d0c7121bd0060223
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: afbc73dbeda9d8201d1ed0cfccdf80025fc82306
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
@@ -51,11 +52,11 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
   
  El directorio de trabajo en el que se ejecutan los comandos depende del sistema operativo en el que se ejecuta [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] y de la plataforma de destino de la aplicación de la que se generan perfiles.  
   
- **Equipos de&32; bits**  
+ **Equipos de 32 bits**  
   
  En los equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es Unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **Equipos de&64; bits**  
+ **Equipos de 64 bits**  
   
  En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil:  
   

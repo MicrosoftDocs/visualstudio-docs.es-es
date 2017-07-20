@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b25d326d103c5da3b09b79d3a574734debed071
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
@@ -79,7 +80,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
   
  En el campo Nombre, escriba un nombre que describa los tipos de eventos que genera el proveedor.  En el campo GUID, escriba el GUID asociado a este proveedor (se asocia un GUID a cada proveedor de ETW).  
   
- Opcionalmente, puede especificar el filtrado de eventos desde este proveedor en función de la categoría o del nivel de importancia.  Además, puede utilizar el campo Categoría como filtro basándose en las categorías del SDK del Visualizador de simultaneidad.  Para ello, escriba una cadena separada por comas de las categorías o de los intervalos de categorías.  De este modo, se especifican las categorías de eventos en el proveedor actual que se van a mostrar.  Si se agrega un proveedor <xref:System.Diagnostics.Tracing.EventSource> , puede utilizar el campo Categoría para filtrar por palabra clave de ETW.  Dado que la palabra clave es una máscara de bits, puede utilizar una cadena delimitada por comas de números enteros para especificar los bits de la máscara que se establecen. Por ejemplo, "1,2" establece el primer y segundo bit, y esto se convierte en 6 en decimal.  
+ Opcionalmente, puede especificar el filtrado de eventos desde este proveedor en función de la categoría o del nivel de importancia.  Además, puede utilizar el campo Categoría como filtro basándose en las categorías del SDK del Visualizador de simultaneidad.  Para ello, escriba una cadena separada por comas de las categorías o de los intervalos de categorías.  De este modo, se especifican las categorías de eventos en el proveedor actual que se van a mostrar.  Si se agrega un proveedor <xref:System.Diagnostics.Tracing.EventSource>, puede usar el campo Categoría para filtrar por palabra clave de ETW.  Dado que la palabra clave es una máscara de bits, puede utilizar una cadena delimitada por comas de números enteros para especificar los bits de la máscara que se establecen. Por ejemplo, "1,2" establece el primer y segundo bit, y esto se convierte en 6 en decimal.  
   
  Puede utilizar la lista del nivel de importancia para filtrar los eventos que tienen una relevancia o nivel de ETW que sea menor que el valor especificado.  
   
@@ -87,7 +88,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
  Para modificar los valores asociados a un proveedor existente, selecciónelo en la lista y, después, elija el botón **Editar proveedor**.  Puede cambiar el nombre, el GUID y las opciones de filtrado.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Eliminación de los datos de marcador de filtro de los informes del Visualizador de simultaneidad  
- Si no desea que los datos de un proveedor determinado aparezcan en seguimientos futuros, desactive la casilla situada junto al proveedor que desea quitar.  
+ Si no quiere que los datos de un proveedor determinado aparezcan en seguimientos futuros, desactive la casilla situada junto al proveedor que quiere quitar.  
   
 ## <a name="files"></a>Archivos  
  En la pestaña **Archivos**, puede especificar el directorio en el que se almacenan los archivos de seguimiento cada vez que se recopila un seguimiento.  El Visualizador de simultaneidad genera cuatro archivos para cada seguimiento que recopila:  
