@@ -1,53 +1,28 @@
 # [Python en Visual Studio](python-in-visual-studio.md)
-
 ## [Instalación](installation.md)
-
 ### [Entornos de Python](python-environments.md)
-
+### [Administrar Python en Azure App Service](managing-python-on-azure-app-service.md)
 ### [Azure SDK para Python](azure-sdk-for-python.md)
-
 ## [Introducción a Python](getting-started.md)
-
 ### [Publicación en Azure](publishing-to-azure.md)
-
 ### [Crear una extensión de C++ para Python](cpp-and-python.md)
-
 ## [Proyectos de Python](python-projects.md)
-
 ### [Plantillas de proyecto web](template-web.md)
-
 ### [Plantilla de proyecto web de Django](template-django.md)
-
 ### [Plantilla de servicio de nube de Azure](template-azure-cloud-service.md)
-
 ## [Edición de código](code-editing.md)
-
 ### [Formato de código](code-formatting.md)
-
 ### [Refactorización de código](code-refactoring.md)
-
 ### [Uso de PyLint](code-pylint.md)
-
 ## [Python interactivo (REPL)](interactive-repl.md)
-
 ### [Usar REPL de IPython](interactive-repl-ipython.md)
-
 ## [Depuración](debugging.md)
-
 ### [Depuración remota de Azure](debugging-azure-remote.md)
-
 ### [Solución de problemas de depuración remota de Azure](debugging-azure-remote-troubleshooting.md)
-
 ### [Depuración remota entre plataformas](debugging-cross-platform-remote.md)
-
 ### [Depuración en modo mixto Python/C++](debugging-mixed-mode.md)
-
 ### [Símbolos de depuración en modo mixto](debugging-symbols-for-mixed-mode.md)
-
 ## [Opciones](options.md)
-
 ## [Generación de perfiles](profiling.md)
-
 ## [Pruebas unitarias](unit-testing.md)
-
 ## [Uso de la extensión Cookiecutter](cookiecutter.md)
