@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 203cc6111870cbf3342fd84c5931a0dadc2bdde0
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: c7d4f4f00d8d89b77f18b2a1b355a445c05dfb6b
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
@@ -414,6 +414,6 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
  [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Información general sobre la interoperabilidad de código administrado y no administrado](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
- [Tutorial: Crear y utilizar una biblioteca de vínculos dinámicos (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Tutorial: Crear y utilizar una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)   
  [Importar y exportar](/cpp/build/importing-and-exporting)
 

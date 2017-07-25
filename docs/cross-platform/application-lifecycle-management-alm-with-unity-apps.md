@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e95cec543216f13de06d2c2b86bc08040d1a7fb
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
@@ -77,7 +77,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |-------------|--------------------------|-------------------------|  
 |[Use Team Foundation Version Control (Usar el control de versiones de Team Foundation)](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o Visual Studio Team Services|Sí|Los proyectos de Unity son simplemente una colección de archivos que se pueden colocar en sistemas de control de versiones como cualquier otro proyecto, pero después de esta tabla se describen algunas consideraciones especiales.|  
 |[Getting started with Git in Team Services (Introducción a Git en Team Services)](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sí|Vea las notas después de la tabla.|  
-|[Análisis de código y mejorar la calidad del código (referencias, cambios sugeridos, etc.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Sí||  
+|[Mejorar la calidad del código](/visualstudio/test/improve-code-quality)|Sí||  
 |[Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)|Sí||  
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||  
   
@@ -113,7 +113,7 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|  
   
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código  
- Vínculo de referencia: **[Mejorar la calidad del código](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Vínculo de referencia: **[Mejorar la calidad del código](/visualstudio/test/improve-code-quality)**  
   
 |Característica|Compatible con Unity|Comentarios adicionales|  
 |-------------|--------------------------|-------------------------|  
