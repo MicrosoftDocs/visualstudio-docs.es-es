@@ -1,7 +1,7 @@
 ---
 title: "Métodos abreviados de teclado predeterminados de Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 05/02/2017
+ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -35,16 +35,18 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4c744284c198a645440494ee79ee0e722904fda5
-ms.openlocfilehash: c3686170b93717c1e55d209a3f8bc8d2725c265d
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: b94ea904245695667a72eeaec251b3e85d37f691
 ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
-Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Studio eligiendo el método abreviado de teclado correspondiente. En este tema se indican los métodos abreviados predeterminados para el perfil Desarrollo general, que tal vez haya elegido cuando instaló Visual Studio. Independientemente del perfil que haya elegido, puede identificar el método abreviado de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y, después, pulsando **Teclado**. También puede personalizar los métodos abreviados de teclado asignando un método abreviado diferente a un determinado comando.  
+Para obtener más información sobre la accesibilidad del teclado, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
- Para obtener una lista de los métodos abreviados de teclado comunes y otra información de productividad, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md) y [Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md).  
+Puede acceder a una serie de comandos y ventanas en Visual Studio eligiendo el método abreviado de teclado correspondiente. En este tema se indican los métodos abreviados predeterminados para el perfil Desarrollo general, que tal vez haya elegido al instalar Visual Studio. Independientemente del perfil que haya elegido, puede identificar el método abreviado de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y, después, pulsando **Teclado**. También puede personalizar los métodos abreviados de teclado asignando un método abreviado diferente a un determinado comando.
+
+ Para obtener una lista de los métodos abreviados de teclado comunes y otra información de productividad, vea [Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Sugerencias y trucos](../ide/tips-and-tricks-for-visual-studio.md) y [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md).
 
  Las secciones de la siguiente tabla incluyen comandos que son globales en el sentido de que puede acceder a ellos desde cualquier parte de Visual Studio mediante métodos abreviados de teclado:  
 

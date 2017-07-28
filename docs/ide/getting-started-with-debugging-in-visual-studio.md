@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9226dacfa63287857c09e5c6945363ccafadc2c7
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: fa857220def2da9b05f1bbed70e906034727b8af
 ms.contentlocale: es-es
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="getting-started-with-debugging-in-visual-studio"></a>Introducción a la depuración en Visual Studio
@@ -53,11 +53,11 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  ![Ventana del Administrador de archivos de configuración de Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
- Puede especificar la configuración de compilación de destino mediante el **Administrador de configuración**. Inícielo, haga clic en la lista desplegable **Configuración** o **CPU** y seleccione **Nueva...** para crear una nueva compilación o plataforma.  
+ Puede especificar la configuración de compilación de destino mediante el **Administrador de configuración**. Inícielo, haga clic en la lista desplegable **Configuración** o **CPU** y seleccione **Nuevo...** para crear una nueva compilación o plataforma.  
 
  ![Ventana del Administrador de configuración de Visual Studio](../ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
 
- Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y elija una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).  
+ Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y pulse una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).  
 
  Nota: al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.  
 
@@ -87,7 +87,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Use Ctrl+G para ir directamente al número de línea donde se ha producido el error.  
 
- El error se identifica con un subrayado ondulado rojo. Mantenga el mouse sobre él para obtener más información. Al corregirlo desaparecerá, aunque pueda insertar un nuevo error con la corrección. (Esto se denomina "regresión").  
+ El error se identifica con un "subrayado ondulado" rojo. Mantenga el mouse sobre él para obtener más información. Al corregirlo desaparecerá, aunque pueda insertar un nuevo error con la corrección. (Esto se denomina "regresión").  
 
  ![Error de Visual Studio al mantener el mouse](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
@@ -151,7 +151,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Puede detener la aplicación presionando Mayús+F5 o haciendo clic en el botón **Detener**. O bien, simplemente cierre la ventana principal de la aplicación (o el cuadro de diálogo de línea de comandos).  
 
- Si el código se ejecuta perfectamente y tal y como se esperaba, ¡enhorabuena! Cambie la configuración de compilación a **Versión** y recompílela para su implementación. (Los profesionales quizás quieran pasar a las pruebas unitarias al final). Sin embargo, si dejó de responder o se bloqueó, o dio resultados extraños, necesitará encontrar el origen de esos problemas y corregir los errores.  
+ Si el código se ejecuta perfectamente y tal y como se esperaba, ¡enhorabuena! Cambie la configuración de compilación a **Versión** y recompílela para su implementación. (Los profesionales quizás quieran pasar a las pruebas unitarias al final). En cambio, si ha dejado de responder o se ha bloqueado, o dio resultados extraños, necesitará encontrar el origen de esos problemas y corregir los errores.  
 
 ### <a name="setting-simple-breakpoints"></a>Establecer puntos de interrupción simples  
  Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. No es necesario recompilar un proyecto después de establecer y quitar puntos de interrupción.  
@@ -160,7 +160,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  ![Punto de interrupción de Visual Studio](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
 
- Cuando el código se interrumpe, la línea de código marcada no se ha ejecutado aún. En este momento, quizás quiera ejecutar las instrucciones de la línea de código marcada por el punto de interrupción e inspeccionar los valores cambiados. Esto se denomina "ejecutar paso a paso" el código. Si el código marcado es una llamada a método, para ejecutarlo paso a paso presione F11. También puede "saltarse" la línea de código presionando F10. Para obtener más información sobre las acciones de los puntos de interrupción, vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).  
+ Cuando el código se interrumpe, la línea de código marcada no se ha ejecutado aún. En este momento, quizás quiera ejecutar las instrucciones de la línea de código marcada por el punto de interrupción e inspeccionar los valores cambiados. Esto se denomina "ejecutar paso a paso" el código. Si el código marcado es una llamada a método, para ejecutarlo paso a paso presione F11. También puede "saltarse" la línea de código presionando F10. Para obtener más información sobre la ejecución paso a paso del código, vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).  
 
  Entre los usos habituales de los puntos de interrupción se incluyen:  
 
@@ -206,7 +206,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
  Para obtener más información sobre las pruebas unitarias en Visual Studio y cómo pueden ayudarle a crear código de mejor calidad, lea [Conceptos básicos de las pruebas unitarias](../test/unit-test-basics.md).  
 
 ## <a name="see-also"></a>Vea también  
- [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
+ [Guía de características del depurador](../debugger/debugger-feature-tour.md)   
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
