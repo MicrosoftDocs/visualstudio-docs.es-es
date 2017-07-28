@@ -1,60 +1,78 @@
 ---
-title: "C&#243;mo: Crear plantillas de proyectos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ExportTemplateWizard"
-helpviewer_keywords: 
-  - "plantillas de proyecto, crear"
-  - "plantillas de proyecto, ubicaciones de plantillas personalizadas"
-  - "plantillas de proyecto, archivos de metadatos"
-  - "plantillas de Visual Studio, crear plantillas de proyecto"
-  - "plantillas de Visual Studio, plantillas de proyecto"
+title: "Cómo: Crear plantillas de proyectos | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ExportTemplateWizard
+helpviewer_keywords:
+- Visual Studio templates, creating project templates
+- project templates, metadata files
+- Visual Studio templates, project templates
+- project templates, custom template locations
+- project templates, creating
 ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# C&#243;mo: Crear plantillas de proyectos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 279a123088308a54dccfa9abe0bfbcdb18e5aaf1
+ms.contentlocale: es-es
+ms.lasthandoff: 05/31/2017
 
-Este procedimiento permite crear una plantilla mediante el **Asistente para exportar plantillas**, que empaqueta la plantilla en un archivo .zip.  También puede crear plantillas con el formato de archivo VSIX para la implementación mejorada mediante la extensión del asistente para Exportar plantillas, o con las plantillas incluidas en [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)], o puede crear plantillas manualmente.  
+---
+# <a name="how-to-create-project-templates"></a>Cómo: Crear plantillas de proyectos
+Este procedimiento le permite crear una plantilla con el Asistente **Exportar plantilla**, que empaqueta su plantilla en un archivo .zip. También puede crear plantillas en el formato de archivo VSIX para obtener una implementación mejorada con la extensión del Asistente Exportar plantilla, o con las plantillas que se incluyen en [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)], o puede crear plantillas manualmente.  
   
-### Para crear una plantilla de proyecto personalizada con el Asistente para exportar plantillas estándar  
+### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Para crear una plantilla de proyecto personalizada con el Asistente Exportar plantilla estándar  
   
 1.  Cree un proyecto.  
   
     > [!NOTE]
-    >  Cuando asigne un nombre a un proyecto que será el origen de una plantilla, use únicamente caracteres de identificador válidos.  Una plantilla exportada desde un proyecto cuyo nombre contenga caracteres no válidos puede producir errores de compilación en proyectos futuros que se basen en la plantilla.  Para obtener más información sobre los caracteres de identificador válidos, vea [Nombres de elementos declarados](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
+    >  Use solo caracteres de identificador válidos al asignar un nombre al proyecto que será el origen de una plantilla. Una plantilla exportada desde un proyecto denominado con caracteres no válidos puede provocar errores de compilación en futuros proyectos basados en la plantilla. Para obtener más información sobre los caracteres de identificador válidos, vea [Nombres de elementos declarados](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
   
-2.  Edite el proyecto hasta que esté listo para ser exportado como una plantilla.  
+2.  Modifique el proyecto hasta que esté listo para exportarse como una plantilla.  
   
-3.  Según corresponda, edite los archivos de código para indicar dónde debería tener lugar la sustitución del parámetro.  Para obtener más información sobre la sustitución del parámetro, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
+3.  Modifique los archivos de código según corresponda para indicar dónde debe aplicarse el reemplazo de parámetros. Para obtener más información sobre el reemplazo de parámetros, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  En el menú **Archivo**, haga clic en **Exportar plantilla**.  Se abrirá el **Asistente para exportar plantillas**.  
+4.  En el menú **Proyecto**, haga clic en **Exportar plantilla**. Se abre el Asistente **Exportar plantilla**.  
   
 5.  Haga clic en **Plantilla de proyecto**.  
   
-6.  Si tiene más de un proyecto en la solución actual, seleccione los proyectos que desee exportar a una plantilla.  
+6.  Si tiene más de un proyecto en su solución actual, seleccione los proyectos que quiere exportar a una plantilla.  
   
 7.  Haga clic en **Siguiente**.  
   
-8.  Seleccione un icono y una imagen de vista previa para su plantilla.  Éstos aparecerán en el cuadro de diálogo **Nuevo proyecto**.  
+8.  Seleccione un icono y una imagen de vista previa para su plantilla. Estos aparecerán en el cuadro de diálogo **Nuevo proyecto**.  
   
-9. Escriba un nombre y una descripción de la plantilla.  
+9. Escriba un nombre de plantilla y una descripción.  
   
-10. Haga clic en **Finalizar**.  El proyecto se exporta a un archivo .zip y se coloca en la ubicación de salida especificada; además, si se ha seleccionado, se importa a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+10. Haga clic en **Finalizar**. Su proyecto se exporta en un archivo .zip y se coloca en la ubicación de salida especificada, y, si se selecciona, se importa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     Si tiene [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalado, puede encapsular la plantilla acabada en un archivo .vsix para la implementación utilizando la plantilla **Proyecto VSIX**.  Para obtener más información, vea [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).  
+     Si tiene [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalado, puede ajustar la plantilla terminada en un archivo .vsix para su implementación con la plantilla **Proyecto VSIX**. Para obtener más información, vea [Introducción a la plantilla de proyecto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
+

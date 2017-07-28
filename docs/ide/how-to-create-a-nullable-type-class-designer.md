@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5b55bd1c7b6be5c8fabafded8cd3a658ec9602d8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 001e8d8c1a6371d76b1a52826da16d471f07c1ba
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)
@@ -87,5 +88,5 @@ Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. E
  <xref:System.Nullable%601>   
  [Tipos que aceptan valores NULL](/dotnet/csharp/programming-guide/nullable-types/index)   
  [Utilizar tipos que aceptan valores NULL](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)   
- [Cómo: Identificar tipos que aceptan valores NULL](http://msdn.microsoft.com/Library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Cómo: Identificar tipos que aceptan valores NULL](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)   
  [Tipos de valor que aceptan valores NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

@@ -7,7 +7,9 @@ Para obtener más información, vea las [preguntas más frecuentes del código d
 
 Inicio Este repositorio contiene archivos de código fuente de la documentación técnica en curso de Visual Studio 2017. Los temas están publicados en el [sitio de documentación de Visual Studio](https://docs.microsoft.com/visualstudio).
 
-La documentación de Visual Basic y Visual C# se encuentra en un repositorio independiente en [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), mientras que la documentación de Visual C++ se encuentra en el repositorio ubicado en [http://github.com/Microsoft/cpp-docs](http://github.com/Microsoft/cpp-docs).
+Este repositorio se ha movido el 23 de junio de 2017 de https://github.com/Microsoft/vsdocs. El tráfico a las direcciones URL anteriores se redirige aquí.
+
+La documentación de Visual Basic y Visual C# se encuentra en un repositorio independiente en [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), mientras que la documentación de Visual C++ se encuentra en el repositorio ubicado en [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs).
 
 ## <a name="contributing-to-the-documentation"></a>Contribuir a la documentación
 
@@ -17,4 +19,4 @@ Le agradecemos sus contribuciones para ayudarnos a mejorar la documentación de 
 Varias áreas de características de Visual Studio tienen sus propias carpetas en este repositorio, como **debugger** para temas de depuración, **ide** para temas del entorno de desarrollo interactivo (IDE) de Visual Studio, etc. La subcarpeta **/media** de cada carpeta contiene archivos de imágenes prediseñadas para los temas. En la [guía de contribución](CONTRIBUTING.md) encontrará más información.
 
 Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para obtener más información, vea las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene otras preguntas o comentarios.
-# <a name="officedev-reference"></a>officedev-reference
+

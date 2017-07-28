@@ -1,25 +1,45 @@
 ---
-title: "Application Page, Project Designer (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesApplicationWPF"
-  - "vb.ProjectPropertiesApplication"
-helpviewer_keywords: 
-  - "Diseñador de proyectos, página de aplicación"
-  - "Aplicación (página del Diseñador de proyectos)"
+title: "Página Aplicación, Diseñador de proyectos (Visual Basic) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vb.ProjectPropertiesApplicationWPF
+- vb.ProjectPropertiesApplication
+helpviewer_keywords:
+- Project Designer, Application page
+- Application page in Project Designer
 ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 64
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 64
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 4be8a1f36d81e2cb36d9daab9817f04d18ecb94a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/26/2017
+
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 Use la página **Aplicación** del Diseñador de proyectos para especificar la configuración de la aplicación y las propiedades de un proyecto.  
@@ -63,14 +83,14 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
   
  Para un proyecto de aplicación web, debe especificar **Biblioteca de clases**.  
   
- Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede usar la opción **Archivo WinMD** para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
+ Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede usar la opción **Archivo WinMD** para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
 > [!NOTE]
 >  Windows Runtime puede proyectar tipos, de manera que aparezcan como objetos nativos en cualquier lenguaje que los use. Por ejemplo, las aplicaciones de JavaScript que interactúan con Windows Runtime lo usan como un conjunto de objetos JavaScript y las aplicaciones de C# usan la biblioteca como una colección de objetos. NET. Al empaquetar la salida del proyecto como un archivo WinMD, puede aprovechar la misma tecnología que usa Windows Runtime.  
   
  Para obtener más información sobre la propiedad **Tipo de aplicación**, vea [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Para obtener información sobre cómo tener acceso a esa propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
- **Icono**  
+ **Iconos**  
  Establece el archivo .ico que quiere usar como su icono del programa. Seleccione **\<Examinar...>** para buscar un gráfico existente. Para obtener más información, vea [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (o [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Formulario de inicio / Objeto de inicio / URI de inicio**  
@@ -78,7 +98,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
   
  Si **Habilitar marco de trabajo de la aplicación** está seleccionado (valor predeterminado), esta lista se titula **Formulario de inicio** y muestra solo formularios, ya que el marco de trabajo de la aplicación admite solo formularios de inicio, no objetos.  
   
- Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, vea <xref:System.Windows.Application.StartupUri%2A>.  
+ Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, consulta <xref:System.Windows.Application.StartupUri%2A>.  
   
  Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.  
   
@@ -145,7 +165,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
   
  Seleccione **Al cerrar la ventana principal** para especificar que se salga de la aplicación cuando la ventana principal se cierre o cuando llame a <xref:System.Windows.Application.Shutdown%2A> explícitamente.  
   
- Para obtener información sobre el uso de esta configuración, vea <xref:System.Windows.Application.Shutdown%2A>.  
+ Para obtener más información sobre el uso de esta opción, vea <xref:System.Windows.Application.Shutdown%2A>.  
   
  **Editar XAML**  
  Haga clic en este botón para abrir y modificar el archivo de definición de aplicación (Application.xaml) en el editor XAML. Cuando hace clic en este botón, Application.xaml se abre en el nodo de definición de aplicación. Puede que tenga que editar este archivo para realizar determinadas tareas, como la definición de recursos. Si el archivo de definición de aplicación no existe, el Diseñador de proyectos crea uno.  
@@ -158,8 +178,3 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
 ## <a name="see-also"></a>Vea también  
 [Administrar las propiedades de la aplicación](../../ide/application-properties.md)
  [Escribir código en soluciones de Office](/office-dev/office-dev/writing-code-in-office-solutions)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

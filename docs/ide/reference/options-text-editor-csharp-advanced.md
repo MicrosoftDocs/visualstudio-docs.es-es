@@ -1,46 +1,63 @@
 ---
-title: "Opciones, editor de texto, C#, avanzado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced"
-helpviewer_keywords: 
-  - "comentarios XML"
-  - "documentación XML, generar"
-  - "opciones de esquematización [C#]"
-  - "opciones de esquematización [J#]"
-  - "documentación XML, crear"
+title: Opciones, editor de texto, C#, avanzado | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
+helpviewer_keywords:
+- XML comments
+- XML documentation, generating
+- outlining options [C#]
+- outlining options [J#]
+- XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Opciones, editor de texto, C#, avanzado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-Utilice este cuadro de diálogo para modificar la configuración de la asignación de formato del editor, la refactorización de código y los comentarios de la documentación XML de Visual C\#.  Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto**, expanda **C\#**y, a continuación, haga clic en **Avanzadas**.  
+---
+# <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
+Use este cuadro de diálogo para modificar la configuración del formato del editor, la refactorización de código y los comentarios de documentación XML para Visual C#. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto**, expanda **C#** y, después, haga clic en **Opciones avanzadas**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Esquematización  
+## <a name="outlining"></a>esquematizar  
  Especificar el modo de esquematización al abrir los archivos  
- Cuando se selecciona, esquematiza automáticamente el archivo de código, que crea bloques de código plegables.  La primera vez que se abre un archivo, se contraen los bloques \#region y los bloques de código inactivos.  
+ Cuando está seleccionada, esquematiza automáticamente el archivo de código, lo que crea bloques contraíbles de código. La primera vez que se abre un archivo, los bloques #regions y los bloques de código inactivos se contraen.  
   
-## Ayuda del editor  
+## <a name="editor-help"></a>Ayuda del editor  
  Subrayar errores en el editor  
- Identifica errores de compilación en el código.  Cuando se selecciona esta opción, los subrayados ondulados aparecen en colores que tienen significados concretos:  
+ Identifica errores de compilación en el código. Cuando esta opción está seleccionada, aparecen subrayados ondulados de colores que tienen significados específicos:  
   
 -   Los errores de análisis son rojos.  
   
@@ -48,36 +65,36 @@ Utilice este cuadro de diálogo para modificar la configuración de la asignaci�
   
 -   Las advertencias de compilación son verdes.  
   
--   Las ediciones [Editar y continuar](../../debugger/edit-and-continue.md) no válidas son de color púrpura.  
+-   Las ediciones [Editar y continuar](../../debugger/edit-and-continue.md) no válidas son moradas.  
   
- Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas acerca del error.  
+ Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas con información sobre el error.  
   
  Mostrar errores semánticos activos  
- Identifica algunos errores de compilación sin compilación explícita, por ejemplo, declarar y utilizar un tipo desconocido o hacer referencia a una propiedad desconocida.  
+ Identifica determinados errores de compilación sin una compilación explícita, por ejemplo, mediante la declaración y el uso de un tipo desconocido o haciendo referencia a una propiedad desconocida.  
   
  Resaltar referencias al símbolo bajo el cursor  
- Cuando el cursor se coloca dentro de un símbolo, o al hacer clic en un símbolo, todas las instancias de dicho símbolo en el archivo de código se resaltan.  
+ Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.  
   
-## Refactorización  
- Compruebe los resultados de la refactorización  
- Muestra el cuadro de diálogo **Resultados de la comprobación** cuando se intenta refactorizar código que contiene errores de compilación, o cuando la refactorización causa que una referencia de código se enlace a otro objeto distinto de su enlace original.  
+## <a name="refactoring"></a>Refactorización  
+ Comprobar resultados de refactorización  
+ El cuadro de diálogo **Resultados de la comprobación** se muestra cuando intenta refactorizar código que contiene errores de compilación, o cuando la refactorización provocará que una referencia de código se enlace a algo diferente a su enlace original.  
   
  Advertir si hay miembros con referencias generadas por el compilador  
- Muestra un diálogo con la advertencia al intentar refactorizar un miembro que tiene el mismo nombre que una referencia generada por un compilador.  
+ Se muestra un cuadro de diálogo de advertencia cuando intenta refactorizar un miembro que tiene el mismo nombre que una referencia generada por el compilador.  
   
-## Comentarios de la documentación XML  
- Generar comentarios de documentación XML para \/\/\/  
- Cuando se selecciona, inserta automáticamente las etiquetas de inicio y cierre \<summary\> de los comentarios de documentación XML después de que se escriba la introducción del comentario \/\/\/.  Para obtener más información acerca de la documentación XML, vea [Comentarios de documentación XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
+## <a name="xml-documentation-comments"></a>Comentarios de la documentación XML  
+ Generar comentarios de documentación XML para ///  
+ Cuando está seleccionada, inserta las etiquetas de inicio y final \<summary> automáticamente para los comentarios de documentación XML después de que escriba la introducción de comentario ///. Para obtener más información sobre la documentación XML, vea [Comentarios de documentación XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
   
-## Implementar interfaz  
- Delimitar el código generado con \#region  
- Inserta un bloque \#region \<*nombreInterfaz*\> Miembro alrededor de los métodos cuando se utiliza la opción Implementar interfaz o Implementar interfaz explícitamente.  
+## <a name="implement-interface"></a>Implementar interfaz  
+ Delimitar el código generado con #region  
+ Inserta un miembro \<*nombre de interfaz*> #region alrededor de los métodos cuando se usa Implementar interfaz o Implementar interfaz explícitamente.  
   
-## Organizar Usings  
- Aplicar primero directivas 'System' al ordenar usos  
- Cuando se selecciona, las directivas que utiliza `System` aparecen antes de otras directivas que se estén utilizando.  Para obtener más información, vea [Ordenar usos](../../misc/sort-usings.md).  
+## <a name="organize-usings"></a>Organizar instrucciones Using  
+ Aplicar primero directivas "System" al ordenar instrucciones Using  
+ Cuando está seleccionada, las directivas Using `System` aparecen antes que otras directivas Using. Para obtener más información, vea Organizar instrucciones Using en [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)   
- [IntelliSense para Visual C\#](../../ide/visual-csharp-intellisense.md)
+ [IntelliSense para Visual C#](../../ide/visual-csharp-intellisense.md)

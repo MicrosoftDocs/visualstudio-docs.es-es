@@ -1,70 +1,87 @@
 ---
-title: "Opciones, editor de texto, todos los lenguajes, pesta&#241;as | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs"
-  - "VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs"
-  - "VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs"
-helpviewer_keywords: 
-  - "sangrías, Editor de código"
-  - "Editor de código, comportamiento predeterminado"
-  - "pestañas, configuración en el Editor de código"
-  - "Todos los lenguajes, Editor de texto, Opciones (cuadro de diálogo)"
-  - "editores, Editor de código"
-  - "Editor de código, aplicar sangría"
-  - "Editor de código, pestañas"
+title: "Opciones, editor de texto, todos los lenguajes, pestañas | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs
+helpviewer_keywords:
+- indents, Code Editor
+- Code Editor, default behavior
+- tabs, setting in Code Editor
+- All Languages Text Editor Options dialog box
+- editors, Code Editor
+- Code Editor, indenting
+- Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Opciones, editor de texto, todos los lenguajes, pesta&#241;as
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 872d13ccc28f71e1bdff76e54e1c8d5baf949f27
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-En este cuadro de diálogo se puede cambiar el comportamiento predeterminado del Editor de código.  Esta configuración también afecta a los demás editores basados en el Editor de código, como la vista Código fuente del Diseñador HTML.  Para mostrar estas opciones, seleccione **Opciones** en el menú **Herramientas**.  Dentro de la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, a continuación, elija **Tabulaciones**.  
+---
+# <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
+Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del Editor de código. Estas opciones también se aplican a otros editores basados en el Editor de código, como la vista de origen del diseñador HTML. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, después, pulse **Pestañas**.  
   
 > [!CAUTION]
->  En esta página se establecen opciones predeterminadas para todos los lenguajes de programación.  Recuerde que si se restablece una opción en este cuadro de diálogo, se restablecerán las opciones Tabulaciones para todos los lenguajes según las opciones aquí seleccionadas.  Para cambiar las opciones del Editor de texto para un lenguaje solamente, expanda la subcarpeta de dicho lenguaje y seleccione su página de opciones.  
+>  Esta página establece las opciones predeterminadas de todos los lenguajes de desarrollo. Recuerde que restablecer una opción en este cuadro de diálogo restablecerá las opciones de pestañas de todos los lenguajes para cualquier elección seleccionada aquí. Para cambiar las opciones del Editor de texto solo de un lenguaje, expanda la subcarpeta de ese lenguaje y seleccione sus páginas de opciones.  
   
- Si se han seleccionado configuraciones diferentes para lenguajes de programación concretos en las páginas de opciones Tabulaciones, se mostrará el mensaje "Los valores de la sangría para formatos de texto individuales están en conflicto entre sí" cuando difieran las opciones de **Sangría**; y el mensaje "Los valores del tabulador para formatos de texto individuales están en conflicto entre sí" cuando difieran las opciones de **Tabulación**.  Por ejemplo, se mostrará este mensaje si se selecciona la opción **Sangría automática** para Visual Basic y la opción **Bloquear sangría** para Visual C\+\+.  
+ Si están seleccionadas diferentes opciones en las páginas de opciones de pestañas para lenguajes de programación determinados, entonces el mensaje "Los valores de la sangría para formatos de texto individuales están en conflicto entre sí" se muestra para las distintas opciones de **sangría**; y se muestra el mensaje "Los valores del tabulador para formatos de texto individuales están en conflicto entre sí" para las distintas opciones del **tabulador**. Por ejemplo, este recordatorio se muestra si la opción **Sangría inteligente** está seleccionada para Visual Basic, pero **Sangría de bloques** está seleccionada para Visual C++.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Sangría  
- None  
- Cuando está seleccionada, no se aplica sangría a las nuevas líneas.  El punto de inserción se coloca en la primera columna de una nueva línea.  
+## <a name="indenting"></a>Aplicar sangría  
+ Ninguna  
+ Si está seleccionada esta opción, no se aplicará ninguna sangría a las líneas nuevas. El punto de inserción se coloca en la primera columna de una nueva línea.  
   
  Bloque  
- Cuando está seleccionada, se aplica sangría automáticamente a las nuevas líneas.  El punto de inserción se coloca en el mismo punto inicial que la línea anterior.  
+ Si está seleccionada esta opción, se aplicará una sangría automáticamente a las líneas nuevas. El punto de inserción se coloca en el mismo punto inicial que la línea anterior.  
   
- Automática  
- Cuando está seleccionada, las nuevas líneas se ajustan al contexto del código, de acuerdo con otras configuraciones de formato de código y convenciones de IntelliSense para el lenguaje de programación correspondiente.  Esta opción no está disponible para todos los lenguajes de programación.  
+ Inteligente  
+ Cuando está seleccionada, se colocan nuevas líneas para ajustarse al contexto de código, por otras opciones de formato de código y convenciones de IntelliSense para el lenguaje de desarrollo. Esta opción no está disponible para todos los lenguajes de desarrollo.  
   
- Por ejemplo, a las líneas incluidas entre una llave de apertura \( { \) y otra de cierre \( } \) se les puede aplicar automáticamente una sangría de una tabulación adicional a partir de la posición de las llaves alineadas.  
+ Por ejemplo, a las líneas que aparecen entre una llave inicial ( { ) y una llave de cierre ( } ) se les puede aplicar automáticamente una sangría equivalente a una posición de tabulación adicional con respecto a la posición de las llaves alineadas.  
   
-## Tabulaciones  
+## <a name="tabs"></a>Tabulaciones  
  Tamaño de tabulación  
- Establece la distancia en espacios entre las tabulaciones.  El valor predeterminado es cuatro espacios.  
+ Establece la distancia en espacios entre las tabulaciones. El valor predeterminado es de cuatro espacios.  
   
  Tamaño de sangría  
- Establece el tamaño en espacios de una sangría automática.  El valor predeterminado es cuatro espacios.  Se insertan caracteres de tabulación, caracteres de espacio o ambos, para llenar el tamaño especificado.  
+ Define el tamaño, en espacios, para aplicar una sangría automática. El valor predeterminado es de cuatro espacios. Se insertan caracteres de tabulación, caracteres de espacio o ambos, para llenar el tamaño especificado.  
   
  Insertar espacios  
- Cuando está seleccionada, las operaciones de sangría insertarán sólo caracteres de espacio, no caracteres de tabulación.  Si el **Tamaño de sangría** se establece en 5, se insertarán cinco caracteres de espacio siempre que presione la tecla TAB o haga clic en el botón **Aumentar sangría** de la barra de herramientas **Formato**.  
+ Si está activada, las operaciones de sangría insertan únicamente caracteres de espacio, no de tabulación. Si el **Tamaño de sangría** se establece en 5, por ejemplo, se insertarán cinco caracteres de espacio cada vez que se presione la tecla TAB o el botón **Aumentar sangría** en la barra de herramientas **Formato**.  
   
  Mantener tabulaciones  
- Cuando está seleccionada, las operaciones de sangría insertarán tantos caracteres de tabulación como sea posible.  Cada carácter TAB rellena el número de espacios especificado en la opción **Tamaño de tabulación**.  Si el **Tamaño de sangría** no es un múltiplo par del **Tamaño de tabulación**, se agregan caracteres de espacio en blanco para igualar la diferencia.  
+ Cuando esta opción está seleccionada, las operaciones de sangría insertan tantos caracteres de tabulación como sea posible. Cada carácter de tabulación rellena el número de espacios especificado en **Tamaño de tabulación**. Si el **Tamaño de sangría** no es un múltiplo par del **Tamaño de tabulación**, se agregan caracteres de espacio en blanco para igualar la diferencia.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Opciones, Editor de texto, Todos los lenguajes](../../ide/reference/options-text-editor-all-languages.md)   
- [General, Entorno, Opciones \(Cuadro de diálogo\)](../../ide/reference/general-environment-options-dialog-box.md)
+ [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

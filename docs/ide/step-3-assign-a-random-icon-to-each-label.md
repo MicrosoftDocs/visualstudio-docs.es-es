@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
 ms.openlocfilehash: 75c899caa3b620899bb2bd8107c63386dd4f40d9
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Paso 3: Asignar un icono aleatorio a cada etiqueta
@@ -40,15 +41,13 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
   
 1.  Antes de agregar el siguiente código, considere cómo funciona el método. Hay una nueva palabra clave: `foreach` en Visual C# y `For Each` en Visual Basic. (Una de las líneas está comentada intencionadamente; se explica al final de este procedimiento).  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]  
   
 2.  Agregue el método `AssignIconsToSquares()` tal como se indica en el paso anterior. Puede colocarlo justo debajo del código que ha agregado en [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Como se ha mencionado previamente, hay una novedad en el método `AssignIconsToSquares()`: un bucle `foreach` en Visual C# y `For Each` en Visual Basic. Se puede usar un bucle `For Each` siempre que se desee realizar la misma acción una y otra vez. En este caso, conviene ejecutar las mismas instrucciones para cada etiqueta de TableLayoutPanel, tal y como se observa en el siguiente código. La primera línea crea una variable denominada `control` que almacena un solo control cada vez mientras dicho control tiene las instrucciones del bucle que se ejecutan en él.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]  
   
     > [!NOTE]
     >  Se usan los nombres "iconLabel" y"control" porque son descriptivos. Se pueden reemplazar por cualquier nombre sin que ello repercuta en el funcionamiento del código, siempre y cuando se cambie el nombre en cada instrucción del bucle.  
@@ -57,8 +56,7 @@ Si los iconos aparecen en las mismas celdas en todas las partidas, el juego no p
   
      Examine más detenidamente el código que se ejecuta en el bucle `foreach` o `For Each`. Este código se reproduce aquí.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]  
   
      La primera línea convierte la variable `control` en una etiqueta denominada `iconLabel`. La línea siguiente es una instrucción `if` que comprueba que la conversión ha funcionado. Si la conversión funciona, se ejecutan las instrucciones de la instrucción `if`. (Es posible que recuerde de los tutoriales anteriores que la instrucción `if` se utiliza para evaluar cualquier condición que se especifique.) La primera línea de la instrucción `if` crea una variable denominada `randomNumber` que contiene un número aleatorio que se corresponde con uno de los elementos de la lista de iconos. Para ello, utiliza el método `Next` del objeto de `Random` que creó anteriormente. El método `Next` devuelve el número aleatorio. Esta línea también utiliza la propiedad `Count` de la lista `icons` para determinar el intervalo en el que se elige el número aleatorio. La línea siguiente asigna uno de los elementos de la lista de iconos a la propiedad `Text` de la etiqueta. La línea comentada se explica más adelante en este tema. Finalmente, la última línea de la instrucción `if` quita de la lista el icono agregado al formulario.  
   
@@ -90,8 +88,7 @@ Juego de formar parejas con iconos aleatorios
   
 6.  Para ocultar los iconos, detenga el programa y quite las marcas de comentario de la línea de código comentada dentro del bucle `For Each`.  
   
-     [!code-cs[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]
-     [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]  
   
 7.  En la barra de menús, elija el botón **Guardar todo** para guardar el programa y luego ejecútelo. Parece que los iconos han desaparecido (únicamente se muestra un fondo azul). Sin embargo, los iconos se asignan aleatoriamente y siguen ahí. Dado que los iconos son del mismo color que el fondo, quedan ocultos al jugador. Después de todo, no sería un juego muy desafiante si se vieran todos los iconos desde el comienzo.  
   

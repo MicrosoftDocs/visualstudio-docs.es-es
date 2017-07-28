@@ -1,95 +1,112 @@
 ---
-title: "Reemplazar en archivos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.findreplace.replaceinfiles"
-  - "vs.replaceinfiles"
-helpviewer_keywords: 
-  - "búsquedas de texto, reemplazar texto"
-  - "Ventana Buscar y reemplazar, pestaña Reemplazar en archivos"
-  - "Pestaña Reemplazar en archivos, ventana Buscar y reemplazar"
+title: Reemplazar en archivos | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.findreplace.replaceinfiles
+- vs.replaceinfiles
+helpviewer_keywords:
+- text searches, replacing text
+- Find and Replace window, Replace in Files tab
+- Replace in Files tab, Find and Replace window
 ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
----
-# Reemplazar en archivos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 79206d09446dcd76654c3c24976fab3fe65e4f83
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-**Reemplazar en archivos** permite buscar una cadena o expresión en el código de un conjunto de archivos especificado, así como cambiar algunas o todas las coincidencias encontradas.  Estas coincidencias y las acciones emprendidas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultado**.  
+---
+# <a name="replace-in-files"></a>Reemplazar en archivos
+**Reemplazar en archivos** le permite buscar el código de un conjunto de archivos especificado para una cadena o expresión, y cambiar algunas o todas las coincidencias que ha detectado. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar su configuración, elija Importar y exportar configuraciones en el menú Herramientas.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Puede utilizar cualquiera de los métodos siguientes para que se muestre la opción **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
+ Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en archivos** en la ventana **Buscar y reemplazar**.  
   
-### Para mostrar Reemplazar en archivos  
+### <a name="to-display-replace-in-files"></a>Para mostrar Reemplazar en archivos  
   
-1.  En el menú **Editar**, expanda **Buscar y reemplazar**.  
+1.  En el menú **Edición**, expanda **Buscar y reemplazar**.  
   
-2.  Elija **Reemplazar en archivos**  
+2.  Pulse **Reemplazar en archivos**.  
   
-     \-O bien\-  
+     o  
   
-     Si el  **Buscar y reemplazar** ventana ya está abierta, en la barra de herramientas, elija  **Reemplazar en archivos**.  
+     Si la ventana **Buscar y reemplazar** ya está abierta, en la barra de herramientas, pulse **Reemplazar en archivos**.  
   
-## Buscar  
- Para buscar una nueva cadena de texto o expresión, especifique en el cuadro.  Para buscar cualquiera de las cadenas de 20 que ha buscado más recientemente, abra la lista y seleccione la cadena para el que desea buscar.  Elija el adyacentes  **Generador de expresiones** botón si desea utilizar una o varias expresiones regulares en la cadena de búsqueda.  Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+## <a name="find-what"></a>Buscar  
+ Para buscar una nueva cadena de texto o expresión, especifíquela en el cuadro. Para buscar cualquiera de las 20 cadenas que buscó más recientemente, abra la lista y elija la cadena que desea buscar. Pulse el botón **Generador de expresiones** adyacente si quiere usar una o varias expresiones regulares en la cadena de búsqueda. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
-## Reemplazar con  
- Para reemplazar las instancias de la cadena en el  **Buscar** con otra cadena, escriba la cadena de reemplazo en el  **Reemplazar por** cuadro.  Para eliminar las instancias de la cadena en el  **Buscar** cuadro de diálogo, deje este campo en blanco.  Abra la lista para mostrar las cadenas de 20 por el que busca más recientemente.  Elija el adyacentes  **Generador de expresiones** botón si desea utilizar una o varias expresiones regulares en la cadena de reemplazo.  Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+## <a name="replace-with"></a>Reemplazar por  
+ Para reemplazar instancias de la cadena en el cuadro **Buscar** por otra cadena, escriba la cadena de reemplazo en el cuadro **Reemplazar por**. Para eliminar instancias de la cadena en el cuadro **Buscar**, deje este campo en blanco. Abra la lista para mostrar las 20 cadenas que ha buscado más recientemente. Pulse el botón **Generador de expresiones** adyacente si quiere usar una o varias expresiones regulares en la cadena de reemplazo. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
-## Buscar en  
- La opción elegida en la lista desplegable **Buscar en** determina si **Reemplazar en archivos** busca sólo en los archivos activos actualmente o en todos los archivos almacenados en algunas carpetas.  Seleccione un ámbito de búsqueda en la lista, escriba una ruta de carpeta o haga clic en el  **Examinar \(...\)** botón para mostrar la  **Elegir las carpetas de búsqueda** diálogo cuadro y elija un conjunto de carpetas para buscar.  También se puede escribir una ruta de acceso directamente en el cuadro **Buscar en**.  
+## <a name="look-in"></a>Buscar en  
+ La opción elegida en la lista desplegable **Buscar en** determina si **Reemplazar en archivos** solo busca en los archivos activos actualmente o en todos los archivos almacenados en algunas carpetas. Seleccione un ámbito de búsqueda en la lista, escriba una ruta de carpeta o haga clic en el botón **Examinar (...)** para mostrar el cuadro de diálogo **Elegir carpetas de búsqueda** y seleccionar un conjunto de carpetas para buscar. También puede escribir una ruta directamente en el cuadro **Buscar en**.  
   
 > [!NOTE]
->  Si la opción **Buscar en** seleccionada provoca una búsqueda en un archivo que ha desprotegido del control de código fuente, sólo se buscará en la versión de ese archivo que se haya descargado en su equipo local.  
+>  Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.  
   
-## Opciones de búsqueda  
- Puede expandir o contraer la sección **Opciones de búsqueda**.  Las siguientes opciones pueden activarse o desactivarse:  
+## <a name="find-options"></a>Opciones de búsqueda  
+ Puede expandir o contraer la sección **Opciones de búsqueda**. Se pueden activar o desactivar las opciones siguientes:  
   
  Coincidir mayúsculas y minúsculas  
- Cuando está seleccionada, las ventanas **Resultados de la búsqueda** sólo muestran las repeticiones de la cadena **Buscar** que coincidan tanto en contenido como en uso de mayúsculas y minúsculas.  Por ejemplo, una búsqueda de "MiObjeto" con la opción **Coincidir mayúsculas y minúsculas** seleccionada devolverá "MiObjeto" pero no "miobjeto" ni "MIOBJETO".  
+ Cuando está seleccionada, las ventanas **Resultados de búsqueda** solo mostrarán instancias de la cadena **Buscar** que coinciden en contenido y en mayúsculas y minúsculas. Por ejemplo, una búsqueda de "MiObjeto" con la opción **Coincidir mayúsculas y minúsculas** seleccionada, devolverá "MiObjeto" pero no "miobjeto" o "MIOBJETO".  
   
- Sólo palabras completas  
- Cuando está seleccionada, las ventanas **Resultados de la búsqueda** sólo muestran las repeticiones de la cadena **Buscar** que coincidan con palabras completas.  Por ejemplo, una búsqueda de "MiObjeto" devolverá "MiObjeto" pero no "CMiObjeto."  
+ Solo palabras completas  
+ Cuando está seleccionada, las ventanas **Resultados de búsqueda** solo mostrarán instancias de la cadena **Buscar** que coinciden en palabras completas. Por ejemplo, una búsqueda de "MiObjeto" devolverá "MiObjeto" pero no "CMiObjeto" o "MiObjetoC".  
   
- Utilizar expresiones regulares  
- Cuando esta casilla de verificación está activada, puede utilizar las notaciones especiales para definir los patrones de texto en el  **Buscar** o  **Reemplazar con** cuadros de texto.  Para obtener una lista de estas notaciones, consulte [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+ Usar expresiones regulares  
+ Cuando esta casilla está seleccionada, puede usar las notaciones especiales para definir los patrones de texto en los cuadros de texto **Buscar** o **Reemplazar con**. Para obtener una lista de estas notaciones, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
  Buscar en estos tipos de archivo  
- Esta lista indica los tipos de archivo en los que buscar en los directorios de **Buscar en**.  Si este campo está en blanco, se buscará en todos los archivos existentes en los directorios de esta opción.  
+ Esta lista indica los tipos de archivos en los que se va a buscar en los directorios **Buscar en**. Si este campo se ha dejado en blanco, se buscará en todos los archivos de los directorios **Buscar en**.  
   
- Seleccione cualquier elemento de la lista para escribir una cadena de búsqueda preconfigurada que buscará en los archivos de esos tipos determinados.  
+ Seleccione cualquier elemento de la lista para escribir una cadena de búsqueda preconfigurada que buscará archivos de esos tipos determinados.  
   
-## Opciones de resultados  
- Puede expandir o contraer la sección **Opciones de resultados**.  Las siguientes opciones pueden activarse o desactivarse:  
+## <a name="result-options"></a>Opciones de resultados  
+ Puede expandir o contraer la sección **Opciones de resultados**. Se pueden activar o desactivar las opciones siguientes:  
   
  Ventana Resultados de la búsqueda 1  
- Cuando se selecciona esta opción, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 1**.  Esta ventana se abre de forma automática para mostrar los resultados.  Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Ver** y elija **Resultados de la búsqueda 1**.  
+ Cuando se selecciona, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 1**. Esta ventana se abre automáticamente para mostrar los resultados de la búsqueda. Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Vista** y pulse **Resultados de la búsqueda 1**.  
   
  Ventana Resultados de la búsqueda 2  
- Cuando se selecciona esta opción, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 2**.  Esta ventana se abre de forma automática para mostrar los resultados.  Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Ver** y elija **Resultados de la búsqueda 2**.  
+ Cuando se selecciona, los resultados de la búsqueda actual reemplazarán el contenido de la ventana **Resultados de la búsqueda 2**. Esta ventana se abre automáticamente para mostrar los resultados de la búsqueda. Para abrir esta ventana manualmente, seleccione **Otras ventanas** en el menú **Vista** y pulse **Resultados de la búsqueda 2**.  
   
- Mostrar sólo nombres de archivo  
- Cuando esta casilla de verificación está activada, las ventanas de resultados de la búsqueda indican los nombres completos y rutas de acceso para todos los archivos que contienen la cadena de búsqueda.  No obstante, los resultados no incluyen la línea de código donde aparece la cadena.  Esta casilla de verificación sólo está disponible para buscar en archivos.  
+ Mostrar solo nombres de archivo  
+ Cuando esta casilla está seleccionada, las ventanas Resultados de la búsqueda muestran los nombres completos y las rutas de acceso de todos los archivos que contienen la cadena de búsqueda. En cambio, los resultados no incluyen la línea de código donde aparece la cadena. Esta casilla está disponible solo para Buscar en archivos.  
   
- Mantener los archivos modificados abiertos después de reemplazar todo  
- Cuando se selecciona, deja abiertos todos los archivos en los que se realizaron reemplazos; por tanto, puede deshacer o guardar los cambios.  Es posible que las restricciones de memoria limiten el número de archivos que pueden permanecer abiertos tras una operación de reemplazo.  
+ Mantener los archivos modificados abiertos después de Reemplazar todo  
+ Cuando está seleccionada, deja abiertos todos los archivos en los que se han realizado reemplazos, de manera que pueda deshacer o guardar los cambios. Las restricciones de memoria pueden limitar el número de archivos que pueden seguir abiertos después de una operación de reemplazo.  
   
 > [!CAUTION]
->  Sólo puede utilizar **Deshacer** en archivos que permanecen abiertos para su edición.  Si esta opción no está seleccionada, los archivos que no estaban ya abiertos para su edición permanecerán cerrados y no habrá ninguna opción **Deshacer** disponible en esos archivos.  
+>  Puede usar **Deshacer** solo en los archivos que siguen abiertos para su edición. Si esta opción no está seleccionada, los archivos que todavía no se han abierto para su edición seguirán cerrados, y ninguna opción **Deshacer** estará disponible en esos archivos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)   
  [Buscar en archivos](../ide/find-in-files.md)   
  [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md)

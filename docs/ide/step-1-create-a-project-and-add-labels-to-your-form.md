@@ -1,35 +1,53 @@
 ---
-title: "Paso 1: Crear un proyecto y agregar etiquetas al formulario | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Paso 1: Crear un proyecto y agregar etiquetas al formulario
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 79222e6c9cf609e617bd3cfd49d31be4f9c7c30e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
-Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario.  También establecerá las propiedades de cada control que agregue.  El proyecto contendrá el formulario, los controles y \(más adelante en el tutorial\) el código.  El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.  
+---
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
+Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.  
   
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.  Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### Para crear un proyecto y establecer las propiedades de un formulario  
+### <a name="to-create-a-project-and-and-set-properties-for-a-form"></a>Para crear un proyecto y establecer las propiedades de un formulario  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-2.  En la lista **Plantillas instaladas**, elija **C\#** o **Visual Basic**.  
+2.  En la lista **Plantillas instaladas**, pulse **C#** o **Visual Basic**.  
   
-3.  En la lista de plantillas, elija la plantilla **Aplicación de Windows Forms**, denomínela Prueba matemática y elija el botón **Aceptar**.  
+3.  En la lista de plantillas, pulse la plantilla **Aplicación de Windows Forms**, denomínela **Prueba matemática** y, después, pulse el botón **Aceptar**.  
   
      Aparecerá un formulario denominado **Form1.cs** o **Form1.vb**, según el lenguaje de programación elegido.  
   
@@ -39,15 +57,15 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
   
 5.  Cambie el tamaño del formulario a 500 píxeles de ancho por 400 píxeles de alto.  
   
-     Puede cambiar el tamaño del formulario arrastrando los bordes hasta que aparezca el tamaño correcto en la esquina inferior izquierda del entorno de desarrollo integrado \(IDE\).  Si lo desea, también puede cambiar los valores de la propiedad **Size**.  
+     Puede cambiar el tamaño del formulario arrastrando los bordes hasta que aparezca el tamaño correcto en la esquina inferior izquierda del entorno de desarrollo integrado (IDE). Si quiere, también puede cambiar los valores de la propiedad **Size**.  
   
 6.  Cambie el valor de la propiedad **FormBorderStyle** a **Fixed3D** y establezca la propiedad **MaximizeBox** en **False**.  
   
      Estos valores impiden que los jugadores cambien el tamaño del formulario.  
   
-### Para crear el cuadro Tiempo restante  
+### <a name="to-create-the-time-remaining-box"></a>Para crear el cuadro Tiempo restante  
   
-1.  Agregue un control **Label** desde el Cuadro de herramientas y establezca el valor de la propiedad **\(Name\)** en `timeLabel`.  
+1.  Agregue un control **Label** desde el cuadro de herramientas y establezca el valor de la propiedad **(Name)** en `timeLabel`.  
   
      Esta etiqueta se convertirá en un cuadro que aparecerá en la esquina superior derecha en el que se mostrará el número de segundos que quedan para la prueba.  
   
@@ -61,24 +79,24 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
   
      Estas líneas le ayudan a alinear los controles en el formulario.  
   
-6.  En la ventana **Propiedades**, elija la propiedad **Text** y elija la tecla Retroceso para borrar el valor.  
+6.  En la ventana **Propiedades**, elija la propiedad **Text** y, después, pulse la tecla Retroceso para borrar el valor.  
   
-7.  Elija el signo más \(\+\) situado junto a la propiedad **Font** y después cambie el valor de la propiedad **Size** a 15,75.  
+7.  Seleccione el signo más (+) situado junto a la propiedad **Font** y, después, cambie el valor de la propiedad **Size** a **15,75**.  
   
      Puede cambiar varias propiedades de fuente, tal y como se muestra en la imagen siguiente.  
   
-     ![Ventana Propiedades mostrando el tamaño de fuente](../ide/media/express_setfontsize.png "Express\_setFontSize")  
-Ventana Propiedades con el tamaño de fuente  
+     ![Ventana Propiedades que muestra el tamaño de fuente](../ide/media/express_setfontsize.png "Express_setFontSize")  
+Ventana Propiedades mostrando el tamaño de fuente  
   
-8.  Agregue otro control **Label** desde el Cuadro de herramientas y establezca el tamaño de fuente en 15,75.  
+8.  Agregue otro control **Label** desde el cuadro de herramientas y establezca el tamaño de fuente en **15,75**.  
   
 9. Establezca la propiedad **Text** en **Tiempo restante**.  
   
 10. Mueva la etiqueta para que se alinee inmediatamente a la izquierda de la etiqueta **timeLabel**.  
   
-### Para agregar controles para los problemas de suma  
+### <a name="to-add-controls-for-the-addition-problems"></a>Para agregar controles para los problemas de suma  
   
-1.  Agregue un control **Label** desde el Cuadro de herramientas y, a continuación, establezca la propiedad **Text** en **?** \(signo de interrogación\).  
+1.  Agregue un control **Label** desde el cuadro de herramientas y, después, establezca la propiedad **Text** en **?** (signo de interrogación).  
   
 2.  Establezca la propiedad **AutoSize** en **False**.  
   
@@ -90,38 +108,38 @@ Ventana Propiedades con el tamaño de fuente
   
 6.  Establezca la propiedad **Location** en **50, 75** para colocar el control en el formulario.  
   
-7.  Establezca la propiedad **\(Name\)** en **plusLeftLabel**.  
+7.  Establezca la propiedad **(Name)** en **plusLeftLabel**.  
   
-8.  Elija la etiqueta **plusLeftLabel** y elija las teclas Ctrl\+C o la opción **Copiar** del menú **Edición**.  
+8.  Seleccione la etiqueta **plusLeftLabel** y, después, pulse las teclas Ctrl+C o la opción **Copiar** del menú **Edición**.  
   
-9. Pegue la etiqueta tres veces utilizando las teclas Ctrl\+V o la opción **Pegar** del menú **Edición**.  
+9. Pegue la etiqueta tres veces mediante las teclas Ctrl+V o la opción **Pegar** del menú **Edición**.  
   
 10. Organice las tres nuevas etiquetas para que estén en fila a la derecha de la etiqueta **plusLeftLabel**.  
   
      Puede utilizar las líneas de separación para separarlas y alinearlas.  
   
-11. Establezca el valor de la propiedad **Text** de la segunda etiqueta en **\+** \(signo más\).  
+11. Establezca el valor de la propiedad **Text** de la segunda etiqueta en **+** (signo más).  
   
-12. Establezca el valor de la propiedad **\(Name\)** de la tercera etiqueta en **plusRightLabel**.  
+12. Establezca el valor de la propiedad **(Name)** de la tercera etiqueta en **plusRightLabel**.  
   
-13. Establezca el valor de la propiedad **Text** de la cuarta etiqueta en **\=** \(signo igual\).  
+13. Establezca el valor de la propiedad **Text** de la cuarta etiqueta en **=** (signo igual).  
   
-14. Agregue un control **NumericUpDown** desde el Cuadro de herramientas, establezca el tamaño de fuente en **18** y establezca el ancho en **100**.  
+14. Agregue un control **NumericUpDown** desde el cuadro de herramientas, establezca el tamaño de fuente en **18** y establezca el ancho en **100**.  
   
      Obtendrá más información sobre este tipo de control más adelante.  
   
 15. Alinee el control **NumericUpDown** con los controles de etiqueta para el problema de suma.  
   
-16. Cambie el valor de la propiedad **\(Name\)** del control **NumericUpDown** a **suma**.  
+16. Cambie el valor de la propiedad **(Name)** del control **NumericUpDown** a **suma**.  
   
      Ha creado la primera fila, como se muestra en la imagen siguiente.  
   
-     ![Primera fila de prueba matemática](../ide/media/express_firstrow.png "Express\_firstRow")  
-Primera fila de la prueba matemática  
+     ![Primera fila de prueba matemática](../ide/media/express_firstrow.png "Express_firstRow")  
+Primera fila de prueba matemática  
   
-### Si desea agregar controles para los problemas de resta, multiplicación y división  
+### <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Si desea agregar controles para los problemas de resta, multiplicación y división  
   
-1.  Copie los cinco controles del problema de suma \(los cuatro controles Label y el control NumericUpDown\) y péguelos.  
+1.  Copie los cinco controles del problema de suma (los cuatro controles Label y el control NumericUpDown) y péguelos.  
   
      El formulario contiene cinco nuevos controles, que todavía están seleccionados.  
   
@@ -129,7 +147,7 @@ Primera fila de la prueba matemática
   
      Puede usar las líneas de separación para proporcionar una distancia suficiente entre las dos filas.  
   
-3.  Cambie el valor de la propiedad **Text** de la segunda etiqueta a **–** \(signo menos\).  
+3.  Cambie el valor de la propiedad **Text** de la segunda etiqueta a **-** (signo menos).  
   
 4.  Cambie el nombre de la primera etiqueta del signo de interrogación a **minusLeftLabel**.  
   
@@ -139,16 +157,16 @@ Primera fila de la prueba matemática
   
 7.  Pegue los cinco controles dos veces más.  
   
-8.  Para la tercera fila, cambie el nombre de la primera etiqueta a **timesLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **×** \(signo de multiplicación\), cambie el nombre de la tercera etiqueta a **timesRightLabel** y cambie el nombre del control NumericUpDown a **producto**.  
+8.  Para la tercera fila, cambie el nombre de la primera etiqueta a **timesLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **×** (signo de multiplicación), cambie el nombre de la tercera etiqueta a **timesRightLabel** y cambie el nombre del control NumericUpDown a **producto**.  
   
-9. Para la cuarta fila, cambie el nombre de la primera etiqueta a **dividedLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **÷** \(signo de división\), cambie el nombre de la tercera etiqueta a **dividedRightLabel** y cambie el nombre del control NumericUpDown a **cociente**.  
+9. Para la cuarta fila, cambie el nombre de la primera etiqueta a **dividedLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **÷** (signo de división), cambie el nombre de la tercera etiqueta a **dividedRightLabel** y cambie el nombre del control NumericUpDown a **cociente**.  
   
     > [!NOTE]
     >  Puede copiar el signo de multiplicación × y el signo de división ÷ de este tutorial y pegarlos en el formulario.  
   
-### Para agregar un botón Iniciar y establecer el orden del índice de tabulación  
+### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Para agregar un botón Iniciar y establecer el orden del índice de tabulación  
   
-1.  Agregue un control **Button** desde el Cuadro de herramientas y establezca su propiedad **\(Name\)** en **startButton**.  
+1.  Agregue un control **Button** desde el cuadro de herramientas y establezca su propiedad **(Name)** en **startButton**.  
   
 2.  Establezca la propiedad **Text** en **Iniciar la prueba**.  
   
@@ -161,19 +179,19 @@ Primera fila de la prueba matemática
 6.  Establezca el valor de la propiedad **TabIndex** del control **startButton** en **1**.  
   
     > [!NOTE]
-    >  La propiedad **TabIndex** establece el orden de los controles cuando el jugador elige la tecla TAB.  Para ver cómo funciona, abra cualquier cuadro de diálogo \(por ejemplo, en la barra de menús, elija **Archivo**, **Abrir**\) y elija la tecla TAB varias veces.  Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla TAB.  Un programador decidió el orden al crear el formulario.  
+    >  La propiedad **TabIndex** establece el orden de los controles cuando el usuario pulsa la tecla TAB. Para ver cómo funciona, abra cualquier cuadro de diálogo (por ejemplo, en la barra de menús, pulse **Archivo**, **Abrir**) y pulse la tecla TAB varias veces. Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla TAB. Un programador decidió el orden al crear el formulario.  
   
 7.  Establezca el valor de la propiedad **TabIndex** del control de suma NumericUpDown en **2**, del control de diferencia en **3**, del control de producto en **4** y del control de cociente en **5**.  
   
      El formulario debería tener el mismo aspecto que la ilustración siguiente.  
   
-     ![Formulario de prueba matemática inicial](../ide/media/express_formlaidout.png "Express\_FormLaidOut")  
-Formulario inicial de una prueba matemática  
+     ![Formulario de prueba matemática inicial](../ide/media/express_formlaidout.png "Express_FormLaidOut")  
+Formulario de prueba matemática inicial  
   
-8.  Para comprobar si la propiedad **TabIndex** funciona tal como se esperaba, guarde y ejecute el programa; para ello, elija la tecla F5 o elija **Depurar**, **Iniciar depuración** en la barra de menús y, a continuación, elija la tecla TAB varias veces.  
+8.  Para comprobar si la propiedad **TabIndex** funciona tal como se esperaba, guarde y ejecute el programa; para ello, pulse la tecla F5 o seleccione **Depurar**, **Iniciar depuración** en la barra de menús y, después, pulse la tecla TAB varias veces.  
   
-### Para continuar o revisar  
+### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
 -   Para ir al siguiente paso del tutorial, vea [Paso 2: Crear un problema de suma aleatoria](../ide/step-2-create-a-random-addition-problem.md).  
   
--   Para volver al tema de la información general, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Para volver al tema de información general, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).

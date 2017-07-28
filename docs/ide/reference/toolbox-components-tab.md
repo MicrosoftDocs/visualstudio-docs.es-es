@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a267468b7b23dd0d2ed6c43df6c63c78d862ddbb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 3a1ae20e3aca94339621546ac69bbfffd3a75ab3
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, Componentes (Pestaña)
@@ -80,7 +81,7 @@ Muestra los componentes que puede agregar a diseñadores de [!INCLUDE[vbprvb](..
  Crea una instancia del componente <xref:System.ServiceProcess.ServiceController> que puede usar para manipular servicios existentes, como iniciar y detener servicios y enviarles comandos. Para obtener más información, consulte [Supervisar servicios de Windows](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
  **Temporizador**  
- Crea una instancia del componente <xref:System.Windows.Forms.Timer> que se puede usar para agregar funcionalidad basada en tiempo a las aplicaciones basadas en Windows. Para obtener más información, consulte [Timer (Componente)](http://msdn.microsoft.com/Library/6700e534-6382-43d5-98ed-14205435fff7).  
+ Crea una instancia del componente <xref:System.Windows.Forms.Timer> que se puede usar para agregar funciones basadas en tiempo a las aplicaciones basadas en Windows. Para obtener más información, consulte [Timer (Componente)](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]
 >  También hay un componente <xref:System.Timers.Timer> basado en el sistema que se puede agregar al **Cuadro de herramientas**. Este componente <xref:System.Timers.Timer> está optimizado para aplicaciones de servidor, mientras que el componente <xref:System.Windows.Forms.Timer> de Windows Forms es más adecuado para su uso en Windows Forms.  

@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2587e4a10a4caa1192a0efc31448078db553dfb4
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: dc9e7534160b244850a94285587eab56d7805c10
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
@@ -389,7 +390,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
          por  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
          La nomenclatura anterior se basa en el almacenamiento de los ensamblados en la GAC.  
   
@@ -399,9 +400,9 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
          por  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
-4.  Cree un archivo .props (por ejemplo, Partner.AutoImports.props) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos .props y .targets que dependen de las configuraciones del Registro. Puesto no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a Partner.AutoImports.props:  
+4.  Cree un archivo .props (por ejemplo, Partner.AutoImports.props) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos .props y .targets que dependen de las configuraciones del Registro. Puesto que no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a Partner.AutoImports.props:  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -424,7 +425,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
     </Project>  
     ```  
   
-5.  En cada uno de los archivos de proyecto, agregue la siguiente línea al principio, después de la línea `<Project Default Targets…>`.  
+5.  En cada uno de los archivos de proyecto, agregue la siguiente línea al principio, después de la línea `<Project Default Targets...>`.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  

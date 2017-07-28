@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 1a1b6d341325477c39ea3cb1faee029f78069325
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 93e0c6676d48a0164dcf3b184bcb886934372787
+ms.contentlocale: es-es
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
@@ -84,16 +85,15 @@ En esta versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], p
  Para elegir como destino una versión de .NET Framework, primero debe instalar las referencias de ensamblado adecuadas. Las referencias de ensamblado de las versiones de .NET Framework 2.0, 3.0 y 3.5 se incluyen en .NET Framework 3.5 SP1, que puede descargar desde el [Centro de descarga de Microsoft, en el sitio web de Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602). Las referencias de ensamblado de .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile y Silverlight también están disponibles en el sitio web [Descargas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).  
   
 > [!NOTE]
->  Un perfil de cliente de .NET Framework es un subconjunto de .NET Framework que proporciona un conjunto limitado de bibliotecas y características. Para obtener más información sobre perfiles de cliente, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).  
+>  Un perfil de cliente de .NET Framework es un subconjunto de .NET Framework que proporciona un conjunto limitado de bibliotecas y características. Para obtener más información sobre perfiles de cliente, consulte [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).  
   
- El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos .dll que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]). No se resolverán las referencias que pertenezcan a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino del proyecto a otro que incluya la referencia.  Para obtener más información, consulte [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ El cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos .dll que se incluyen en una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]). No se resolverán las referencias que pertenezcan a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino del proyecto a otro que incluya la referencia.  Para obtener más información, consulte [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
  Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).  
   
 ## <a name="enabling-linq"></a>Habilitar LINQ  
- Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, consulte [Cómo: Crear un proyecto de LINQ](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  
+ Si elige como destino .NET Framework 3.5 o una versión posterior, se agregan de forma automática una referencia a System.Core y una importación de nivel de proyecto para System.Linq (solo en Visual Basic). Si quiere usar características de LINQ, también debe activar Option Infer (solo en Visual Basic). La referencia y la importación se quitan de forma automática si cambia el destino a una versión anterior de .NET Framework. Para obtener más información, vea [Trabajar con LINQ](/dotnet/csharp/tutorials/working-with-linq).  
   
 ## <a name="see-also"></a>Vea también  
  [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)  [Compatibilidad con múltiples versiones (multi-targeting)]  
- [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Platform compatibility and system requirements](http://www.microsoft.com/visualstudio/eng/products/compatibility) (Compatibilidad de plataformas y requisitos del sistema)

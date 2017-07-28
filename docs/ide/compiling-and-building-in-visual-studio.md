@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: f4ae98f4e9b7dbf4b1066120316ee5a167ae78f2
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
+ms.openlocfilehash: aa3d791afc574200157104145617ff6ad6139b68
+ms.contentlocale: es-es
+ms.lasthandoff: 06/22/2017
 
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
@@ -51,7 +52,7 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 |Usar Team Foundation Build|- Puede automatizar el proceso de compilación. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. También puede compilar proyectos en servidores de compilación compartidos en lugar de hacerlo en el equipo de desarrollo.<br />- Puede especificar rápidamente el código que quiere compilar, las pruebas que quiere ejecutar y otras opciones frecuentes.<br />- Puede modificar el flujo de trabajo de compilación y, si es necesario, crear actividades de compilación para realizar tareas muy personalizadas.|[Compilar la aplicación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
   
 ## <a name="building-from-the-ide"></a>Compilar desde el IDE  
- Al crear un proyecto, se definen las configuraciones de compilación predeterminadas para el mismo y se le asigna una configuración de compilación de soluciones para proporcionar contexto para las compilaciones. Las configuraciones de soluciones definen cómo se compilan y se implementan los proyectos de las soluciones. Las configuraciones de proyecto son un conjunto de propiedades de proyecto que son únicas para una plataforma y un tipo de compilación (por ejemplo, Versión Win32). Es posible editar estas configuraciones predeterminadas y crear sus propias configuraciones. Para obtener más información, vea [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) y [Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
+ Al crear un proyecto, se definen las configuraciones de compilación predeterminadas para el mismo y se le asigna una configuración de compilación de soluciones para proporcionar contexto para las compilaciones. Las configuraciones de soluciones definen cómo se compilan y se implementan los proyectos de las soluciones. Las configuraciones de proyecto son un conjunto de propiedades de proyecto que son únicas para una plataforma y un tipo de compilación (por ejemplo, Versión Win32). Es posible editar estas configuraciones predeterminadas y crear sus propias configuraciones. Para obtener más información, vea [Administrar propiedades de soluciones y proyectos](managing-project-and-solution-properties.md).  
   
  Desde el IDE se pueden realizar las siguientes tareas adicionales:  
   

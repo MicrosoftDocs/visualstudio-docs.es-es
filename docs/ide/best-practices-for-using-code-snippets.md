@@ -30,17 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 954bd5e0ba38d7a538700cba175933cc8303c863
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 165fe357bd9849ca2588542614449558eae52740
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 El código de un fragmento de código muestra solo la forma más sencilla de hacer algo. Para la mayoría de las aplicaciones, el código debe modificarse para adaptarlo a la aplicación.  
   
 ## <a name="handling-exceptions"></a>Controlar las excepciones  
- Normalmente, el fragmento de código Try... Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](http://msdn.microsoft.com/Library/ca8e3773-980e-4767-8633-7408540e9818) y [Try...Catch...Finally (instrucción)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
+ Normalmente, el fragmento de código Try...Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) y [Try...Catch...Finally (instrucción)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
   
 ## <a name="file-locations"></a>Ubicaciones de archivos  
  Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:  

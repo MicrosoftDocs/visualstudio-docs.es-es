@@ -1,7 +1,7 @@
 ---
 title: Procedimiento para agregar o quitar referencias mediante el Administrador de referencias | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -42,10 +42,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1e73cc14de8a94b2e2ce631834e36b6bc30fa7a6
+ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
+ms.openlocfilehash: b2141a16d27725c54b3407e92151e0ed7afd745e
 ms.contentlocale: es-es
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento para agregar o quitar referencias mediante el Administrador de referencias
@@ -70,7 +70,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 -   Examinar, con el subgrupo Recientes.  
 
 ## <a name="assemblies-tab"></a>Pestaña Ensamblados  
- En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](http://go.microsoft.com/fwlink/?LinkId=238512).  
+ En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de Copia local. Para más información, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md).  
 
  Al agregar manualmente una referencia a cualquiera de los espacios de nombres EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a o EnvDTE100), establezca la propiedad Incrustar tipos de interoperabilidad de la referencia en False en la ventana Propiedades. Si establece esta propiedad en True, se pueden producir problemas de compilación debido a ciertas propiedades EnvDTE que no se pueden insertar.  
 
@@ -84,7 +84,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 
     -   Los ensamblados anunciados están en la versión completa de .NET Framework y se muestran en la lista .NET Framework cuando el proyecto tiene como destino un perfil de la versión de .NET Framework de destino. Los ensamblados anunciados son grises para diferenciarlos de los ensamblados que existen en el perfil de proyecto de la versión de .NET Framework de destino. Por ejemplo, si un proyecto tiene como destino .NET Framework 4 Client, en .NET Framework se muestran los ensamblados anunciados de .NET Framework 4. Cuando un usuario agrega un ensamblado anunciado, se indica al usuario que, cuando cierre el cuadro de diálogo **Administrador de referencias**, la versión de destino del proyecto cambiará a .NET Framework 4 y se agregará el ensamblado anunciado.  
 
-    -   Los proyectos de las aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] contienen referencias a todos los ensamblados de la versión de [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino de forma predeterminada cuando se crea un proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa de .NET Framework. Por consiguiente, la pestaña .NET Framework no mostrará ninguno de los ensamblados de .NET Framework y en su lugar mostrará el siguiente mensaje: “Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para ver las referencias de .NET Framework”. Para los proyectos de escritorio, la pestaña .NET Framework muestra los ensamblados de la versión de .NET Framework de destino, y el usuario debe agregar las referencias que requiera la aplicación.  
+    -   Los proyectos de las aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] contienen referencias a todos los ensamblados de la versión de [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino de forma predeterminada cuando se crea un proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa de .NET Framework. Por consiguiente, la pestaña .NET Framework no mostrará ninguno de los ensamblados de .NET Framework y en su lugar mostrará el siguiente mensaje: "Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para ver las referencias de .NET Framework". Para los proyectos de escritorio, la pestaña .NET Framework muestra los ensamblados de la versión de .NET Framework de destino, y el usuario debe agregar las referencias que requiera la aplicación.  
 
 2.  Las extensiones muestran todos los ensamblados que los proveedores externos de componentes y controles han desarrollado para ampliar la versión de .NET Framework de destino. Dependiendo del propósito de la aplicación del usuario, puede que se necesiten estos ensamblados.  
 
@@ -121,7 +121,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 
 -   Desplace o copie el ensamblado en una de las ubicaciones siguientes:  
 
-    -   Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar**).  
+    -   Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)  
 
     -   Otros directorios del proyecto de la misma solución. (Puede buscar estos ensamblados mediante la pestaña **Proyectos**).  
 
@@ -157,7 +157,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ## <a name="solution-tab"></a>Pestaña Solución  
  La pestaña Solución muestra todos los proyectos compatibles de la solución actual, en la subpestaña Proyectos.  
 
- Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para más información, vea [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
+ Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. En cambio, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
 
  Un proyecto que tenga como destino [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] es incompatible con un proyecto que tenga como destino [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].  
 
@@ -170,7 +170,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 
  Puede generar un archivo WinMD en Visual Studio de dos maneras:  
 
--   **Proyectos administrados de aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]**: los proyectos de aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] pueden generar archivos binarios WinMD al establecer Tipo de salida en Archivo WinMD en las propiedades del proyecto. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres A.B y A.B.C, los nombres posibles para sus archivos WinMD resultantes son A.winmd y A.B.winmd. Si un usuario especifica un valor en Propiedades del proyecto &#124; Nombre del ensamblado o Propiedades del proyecto &#124; Espacio de nombres que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: ''A.winmd'' no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es “CSWSClassLibrary1”. Un proyecto de escritorio de Visual Basic o Visual C# solo puede utilizar archivos WinMD que hayan sido generados mediante los SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)], denominados archivos WinMD propios, y no puede generar archivos WinMD.  
+-   **Proyectos administrados de aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]**: los proyectos de aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] pueden generar archivos binarios WinMD al establecer Tipo de salida en Archivo WinMD en las propiedades del proyecto. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres A.B y A.B.C, los nombres posibles para sus archivos WinMD resultantes son A.winmd y A.B.winmd. Si un usuario especifica un valor en Propiedades del proyecto &#124; Nombre del ensamblado o Propiedades del proyecto &#124; Espacio de nombres que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: "A.winmd" no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es “CSWSClassLibrary1”. Un proyecto de escritorio de Visual Basic o Visual C# solo puede usar archivos WinMD que hayan sido generados mediante los SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)], denominados archivos WinMD propios, y no puede generar archivos WinMD.  
 
 -   **Proyectos nativos de aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]**: un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.  
 
@@ -179,9 +179,9 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ### <a name="core-subgroup"></a>Subgrupo Principal  
  El subgrupo Principal muestra todos los archivos WinMD (para los elementos de Windows en tiempo de ejecución) del SDK de la versión de Windows de destino.  
 
- Los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] contienen referencias a todos los archivos WinMD del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)] de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)]. Por tanto, el subgrupo Principal del Administrador de referencias no mostrará los ensamblados del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)], y en su lugar mostrará un mensaje: “Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".  
+ Los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] contienen referencias a todos los archivos WinMD del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)] de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta Referencias del **Explorador de soluciones** indica la referencia a la versión completa del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)]. Por tanto, el subgrupo Principal del Administrador de referencias no mostrará los ensamblados del SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)], y en su lugar mostrará un mensaje: "Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".  
 
- En los proyectos de escritorio, el subgrupo Principal no aparece de forma predeterminada. Puede agregar Windows Runtime si abre el menú contextual del nodo del proyecto, elige **Descargar el proyecto**, agrega el siguiente fragmento de código y vuelve a abrir el proyecto (en el nodo del proyecto, elija **Volver a cargar el proyecto**). Cuando se invoca el cuadro de diálogo **Administrador de referencias**, aparece el subgrupo Principal.  
+ En los proyectos de escritorio, el subgrupo Principal no aparece de manera predeterminada. Puede agregar Windows Runtime si abre el menú contextual del nodo del proyecto, elige **Descargar el proyecto**, agrega el siguiente fragmento de código y vuelve a abrir el proyecto (en el nodo del proyecto, elija **Volver a cargar el proyecto**). Cuando se invoca el cuadro de diálogo **Administrador de referencias**, aparece el subgrupo Principal.  
 
 ```  
 <PropertyGroup>  
@@ -194,10 +194,10 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 ### <a name="extensions-subgroup"></a>Subgrupo Extensiones  
  El subgrupo Extensiones muestra los SDK del usuario que amplían la plataforma Windows de destino. Esta pestaña aparece únicamente para los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Los proyectos de escritorio no mostrarán esta pestaña porque solo pueden usar archivos .winmd propios.  
 
- Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña Extensiones, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo utiliza Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado. Para más información sobre cómo mostrar el SDK en la pestaña Extensiones, vea [Crear un Kit de desarrollo de Software](../extensibility/creating-a-software-development-kit.md).  
+ Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña Extensiones, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo usa Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado. Para más información sobre cómo mostrar el SDK en la pestaña Extensiones, vea [Crear un Kit de desarrollo de Software](../extensibility/creating-a-software-development-kit.md).  
 
 > [!NOTE]
->  Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no utilizará el segundo SDK a menos que el usuario agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** le ayuda a identificar las dependencias del SDK al mostrar no solo el nombre y la versión del SDK sino también el nombre de todas las dependencias del SDK en el panel de detalles. Si un usuario se olvida de las dependencias y solo agrega ese SDK, MSBuild pedirá al usuario que agregue las dependencias.  
+>  Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no usará el segundo SDK a menos que el usuario agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** le ayuda a identificar las dependencias del SDK al mostrar no solo el nombre y la versión del SDK sino también el nombre de todas las dependencias del SDK en el panel de detalles. Si un usuario se olvida de las dependencias y solo agrega ese SDK, MSBuild pedirá al usuario que agregue las dependencias.  
 
  Si un tipo de proyecto no admite **Extensiones**, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.  
 
@@ -229,9 +229,8 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
  Los grupos Ensamblados, COM, Windows y Examinar tienen cada uno una pestaña Recientes, que muestra una lista de los componentes que se agregaron recientemente a proyectos.  
 
 ## <a name="search"></a>Buscar  
- La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe “System” en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga “system”.  
+ La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe "System" en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga "System".  
 
 ## <a name="see-also"></a>Vea también  
- [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
 

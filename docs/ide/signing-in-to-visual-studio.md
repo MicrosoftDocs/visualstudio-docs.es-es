@@ -1,19 +1,39 @@
 ---
-title: "Iniciar sesi&#243;n en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/23/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Iniciar sesión en Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 01/23/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8b1f56944190c60795d5bbd726388309caca7070
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
+
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio estableciendo la cuenta de personalización e iniciando sesión en el IDE.  
@@ -23,13 +43,13 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
 -   **Concede acceso a una amplia gama de ventajas** desde el programa Visual Studio Dev Essentials, como el software gratuito, el aprendizaje, el soporte técnico y mucho más Consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) para obtener más información  
 
--   **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
+-   **Sincroniza la configuración de Visual Studio**: la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
 
--   **Desbloquea permanentemente Visual Studio Express Edition** : puede usar cualquier edición de Visual Studio Express todo el tiempo que desee, en lugar de tener un período de prueba limitado de 30 días.  
+-   **Desbloquea permanentemente Visual Studio Express Edition**: puede usar cualquier edición de Visual Studio Express todo el tiempo que quiera, en lugar de tener un período de prueba limitado de 30 días.  
 
 -   **Desbloquea Visual Studio Community Edition** en lugar de tener el período de prueba limitado de 30 días.  
 
--   **Extiende el período de prueba de Visual Studio** : puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días.  
+-   **Extiende el período de prueba de Visual Studio**: puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días.  
 
 -   **Desbloquea Visual Studio si usa una cuenta asociada con una suscripción a MSDN o a VSO**. Vea [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md).  
 
@@ -58,9 +78,4 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 4.  Cambie los valores que desee.  
 
 5.  Cuando haya terminado, elija el botón **Guardar cambios** .
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

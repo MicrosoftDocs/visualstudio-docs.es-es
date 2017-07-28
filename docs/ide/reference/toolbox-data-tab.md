@@ -1,50 +1,65 @@
 ---
-title: "Cuadro de herramientas, Datos (Pesta&#241;a) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Cuadro de herramientas, pestaña Datos"
-  - "Pestaña Datos, cuadro de herramientas"
-  - "datos [Visual Studio], cuadro de herramientas"
+title: "Cuadro de herramientas, pestaña Datos | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Toolbox, Data tab
+- Data tab, Toolbox
+- data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# Cuadro de herramientas, Datos (Pesta&#241;a)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: bfe6b74b10829ac06d07b3e22b969b8ed6357972
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
-Muestra objetos de datos que puede agregar a formularios y componentes.  La ficha **Datos** del **Cuadro de herramientas** aparece cuando se crean proyectos que tienen asociados un diseñador.  El **Cuadro de herramientas** aparece de forma predeterminada en el entorno de desarrollo integrado de Visual Studio; si debe mostrar el **Cuadro de herramientas**, seleccione la opción **Cuadro de herramientas** del menú **Ver**.  
+---
+# <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
+Muestra objetos de datos que puede agregar a formularios y componentes. La pestaña **Datos** del **Cuadro de herramientas** aparece cuando crea un proyecto que tiene un diseñador asociado. El **Cuadro de herramientas** aparece de manera predeterminada en el entorno de desarrollo integrado de Visual Studio; si necesita mostrar el **Cuadro de herramientas**, seleccione **Cuadro de herramientas** del menú **Ver**.  
   
 > [!TIP]
->  La ejecución del Asistente para la configuración de orígenes de datos creará y configurará automáticamente la mayoría de los elementos de datos.  Para obtener más información, vea [Creating Data Applications with Visual Studio](http://msdn.microsoft.com/es-es/28edce21-220a-484c-b461-a75b0232d293).  
+>  Al ejecutar el Asistente para configuración de orígenes de datos se crearán y configurarán automáticamente la mayoría de elementos de datos. Para obtener más información, vea [Agregar nuevos orígenes de datos](../../data-tools/add-new-data-sources.md).  
   
-## Lista de elementos de la interfaz de usuario  
- Para ver directamente la página de referencia de .NET Framework de un componente, presione **F1** en el elemento del **Cuadro de herramientas** o en el elemento del componente de la bandeja del diseñador.  
+## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario  
+ Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.  
   
-|Nombre|Descripción|  
-|------------|-----------------|  
-|<xref:System.Data.DataSet>|Agrega al formulario o componente una instancia del conjunto de datos con tipo o sin tipo.  Cuando se arrastra este objeto al diseñador, aparece un cuadro de diálogo que permite seleccionar una clase de conjunto de datos con tipo existente o especificar que se desea crear un conjunto de datos nuevo, en blanco y sin tipo. **Note:**  No utilice el objeto <xref:System.Data.DataSet> del **Cuadro de herramientas** para crear el esquema y la clase de un nuevo conjunto de datos con tipo.  Para obtener más información, vea [Cómo: Crear un conjunto de datos con tipo](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|Name|Descripción|  
+|----------|-----------------|  
+|<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:** No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Proporciona una forma eficaz y flexible de mostrar datos en formato de tabla.|  
 |<xref:System.Windows.Forms.BindingSource>|Simplifica el proceso de enlazar controles a un origen de datos subyacente.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Representa la interfaz de usuario de navegación y manipulación para los controles de un formulario que están enlazados a datos.|  
   
-## Vea también  
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Información general de las aplicaciones de datos en Visual Studio](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../../data-tools/fetching-data-into-your-application.md)   
+## <a name="see-also"></a>Vea también  
+ [Obtener acceso a los datos en Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)   
+ [Visual Studio Data Tools para .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)   
+ [Herramientas de conjuntos de datos en Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)   
  [Enlazar controles a los datos en Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
+ [Enlazar controles de Windows Forms a datos en Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Editar datos en conjuntos de datos](../../data-tools/edit-data-in-datasets.md)   
+ [Validar los datos en conjuntos de datos](../../data-tools/validate-data-in-datasets.md)   
  [Guardar datos](../../data-tools/saving-data.md)

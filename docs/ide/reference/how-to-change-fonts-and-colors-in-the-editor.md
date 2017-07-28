@@ -1,59 +1,76 @@
 ---
-title: "C&#243;mo: Cambiar las fuentes y los colores del editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores, fuentes"
-  - "editores, color del texto"
-  - "texto, colores"
-  - "texto, personalizar en editores"
-  - "texto, fuentes"
+title: "Cómo: Cambiar las fuentes y los colores del editor | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors, fonts
+- text, color
+- text, customizing in editors
+- text, fonts
+- editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# C&#243;mo: Cambiar las fuentes y los colores del editor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 7ee0bae36003baff806dc010082668bec019a837
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño y cambiar los colores de primer plano y de fondo de los distintos texto mediante la opción **Mostrar los elementos** del editor de código.  Al cambiar la configuración de fuente tenga en cuenta la información siguiente:  
+---
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
+Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:  
   
--   La configuración de **Fuente** y **Tamaño** se aplica a todos los elementos de texto de todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+-   La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   Los nombres de fuentes de ancho fijo se muestran en negrita.  
+-   Los nombres de las fuentes con ancho fijo se enumeran en negrita.  
   
--   El valor de las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** se puede establecer para cada tipo de elemento de texto.  Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, no se verán afectados los demás tipos de los elementos de texto.  
+-   Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven podrían variar con respecto a los descritos en la **Ayuda** en función de su edición o configuración activa.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-### Para cambiar el nombre, el tamaño y los colores de fuente predeterminados  
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Para cambiar el nombre de fuente predeterminado, el tamaño y los colores  
   
-1.  Seleccione el comando **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.  
+1.  Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.  
   
-     Se abre [Fuentes y colores, Entorno, Opciones \(Cuadro de diálogo\)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+     Se abre [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
-2.  En **Mostrar valores para**, seleccione **Editor de texto**.  
+2.  En **Mostrar configuración para**, seleccione **Editor de texto**.  
   
-3.  Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre y el tamaño de fuente de todos los elementos de texto de todos los editores.  
+3.  Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.  
   
-4.  Seleccione el elemento adecuado en **Mostrar los elementos** y, a continuación, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.  
+4.  Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.  
   
     > [!TIP]
-    >  Haga clic en **Usar predeterminados** para restablecer la configuración predeterminada.  
+    >  Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.  
   
 5.  Haga clic en **Aceptar**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../../ide/customizing-the-editor.md)   
- [Opciones del editor de texto \(Cuadro de diálogo\)](../../ide/reference/text-editor-options-dialog-box.md)   
+ [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)   
  [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

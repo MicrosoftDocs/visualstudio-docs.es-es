@@ -1,88 +1,112 @@
 ---
-title: "C&#243;mo: moverse por el IDE de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "documentos [Visual Studio], navegar"
-  - "entornos [Visual Studio], navegación"
-  - "archivos [Visual Studio], navegar entre"
-  - "explorador del IDE"
-  - "IDE, navegación"
-  - "navegación [Visual Studio]"
-  - "Window.NextDocumentWindowNav"
-  - "ventanas [Visual Studio], navegar"
+title: "Cómo: moverse por el IDE de Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- environments [Visual Studio], navigation
+- documents [Visual Studio], navigating
+- IDE, navigation
+- navigation [Visual Studio]
+- files [Visual Studio], navigating between
+- windows [Visual Studio], navigating
+- Window.NextDocumentWindowNav
+- IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# C&#243;mo: moverse por el IDE de Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 9ca6b957f3ebc2770bed91e5ca27ec3f95715aa9
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-El entorno de desarrollo integrado \(IDE\) está diseñado para permitirle desplazarse de ventana en ventana y de archivo en archivo de varias maneras diferentes, dependiendo de sus preferencias o de los requisitos del proyecto.  Puede decidir recorrer en ciclo los archivos abiertos en el editor o todas las ventanas de herramientas activas en el IDE.  También puede cambiar directamente a cualquier archivo que esté abierto en el editor, sin tener en cuenta el orden en que se tuvo acceso en último lugar.  Estas características pueden ayudar a aumentar la productividad mientras se trabaja en el IDE.  
+---
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
+El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimiento entre ventanas y archivos de varias maneras, dependiendo de los requisitos del proyecto o de sus preferencias. Puede desplazarse por los archivos abiertos en el editor o desplazarse por todas las ventanas de las herramientas activas en el IDE. También puede cambiar directamente a cualquier archivo abierto en el editor, sin tener en cuenta el orden en el que se accedió por última vez. Estas características pueden ayudar a aumentar la productividad al trabajar en el IDE.  
   
 > [!NOTE]
->  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos.  Esta página de Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Navegar entre archivos en el editor  
- Puede utilizar varios métodos para desplazarse por los archivos abiertos en el editor.  Puede desplazarse entre los archivos según el orden en el que tenga acceso a ella, utiliza el navegador del IDE para buscar rápidamente cualquier archivo abierto, o archivos favoritos del punto de conexión a la pestaña bien de modo que siempre estén visibles.  
+## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
+ Prácticamente cualquier comando de menú en Visual Studio tiene un método abreviado de teclado. También puede crear sus propias combinaciones de teclas personalizadas. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
- Puede navegar hacia atrás y hacia delante por los archivos abiertos en el editor basándose en el orden en el que se obtuvo acceso a ellos, como si usara los botones Atrás y Adelante para ver el historial en Microsoft Internet Explorer.  
+## <a name="navigating-among-files-in-the-editor"></a>Navegar entre archivos en el Editor  
+ Puede utilizar varios métodos para desplazarse por los archivos abiertos en el editor. Puede moverse entre los archivos en el orden en el que accedió a ellos: utilice el navegador del IDE para encontrar rápidamente cualquier archivo abierto o para anclar archivos favoritos a la pestaña para que siempre estén visibles.  
   
-#### Para desplazarse por los archivos abiertos por orden de uso  
+ Puede navegar hacia atrás y hacia delante por los archivos abiertos en el editor según el orden en el que se accedió a ellos; se parece a las opciones Atrás y Adelante que se utilizan para ver el historial de Microsoft Internet Explorer.  
   
--   Para activar los documentos abiertos en el orden de acceso más reciente, presione CTRL \+ ﻿SIGNO MENOS.  
+#### <a name="to-move-through-open-files-in-order-of-use"></a>Para desplazarse por los archivos abiertos por orden de uso  
   
--   Para activar los documentos abiertos en el orden inverso, presione CTRL \+ MAYÚS \+ ﻿SIGNO MENOS.  
+-   Para activar los documentos abiertos en el orden de acceso más reciente, presione CTRL + signo menos.  
+  
+-   Para activar los documentos abiertos en el orden inverso, presione CTRL + MAYÚS + signo menos.  
   
     > [!NOTE]
-    >  **Navegar hacia atrás** y **Navegar hacia delante** también se encuentran en el menú **Ver**.  
+    >  **Navegar hacia atrás** y **Navegar hacia delante** también se pueden encontrar en el menú **Ver**.  
   
- También puede cambiar a un archivo concreto abierto en el editor, sin tener en cuenta la última vez que se obtuvo acceso al archivo, mediante el **Navegador del IDE**, la lista **Archivos activos** del editor o el cuadro de diálogo **Windows**.  
+ También puede cambiar a un archivo concreto abierto en el editor sin tener en cuenta el último acceso al archivo mediante el **Navegador del IDE**, la lista de **Archivos activos** en el editor o el cuadro de diálogo **Windows**.  
   
- El **Navegador del IDE** funciona de una forma muy parecida al conmutador de aplicaciones para Windows.  No está disponible en los menús y sólo se obtiene acceso a él por medio de teclas de método abreviado.  Existen dos comandos para obtener acceso al **Navegador del IDE** para recorrer en ciclo los archivos, y el más apropiado depende del orden en que desee recorrerlos.  `Window.PreviousDocumentWindowNav` permite desplazarse al archivo más reciente al que se obtuvo acceso y `Window.NextDocumentWindowNav` permite desplazarse en orden inverso.  Configuración general de desarrollo asigna CTRL \+ MAYÚS \+ TAB a `Window.PreviousDocumentWindowNav` y CTRL \+ TAB a `Window.NextDocumentWindowNav`.  
+ El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.  
   
-> [!NOTE]
->  Si en la combinación de valores de configuración que está utilizando aún no se ha asignado una combinación de teclas de método abreviado a este comando, puede asignar su propio comando personalizado en la página **Teclado** del cuadro de diálogo **Opciones**.  Para obtener más información, consulte [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ ![Navegador del IDE de Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
-#### Para cambiar a archivos concretos en el editor  
-  
--   Presione CTRL \+ TAB para mostrar el **Navegador del IDE**.  Mantenga presionada la tecla CTRL y presione repetidamente TAB hasta que esté seleccionado el archivo al que piense cambiar.  
-  
-    > [!TIP]
-    >  Para invertir el orden en el que se recorre la lista **Archivos activos**, mantenga presionadas las teclas CTRL \+ MAYÚS y presione TAB.  
-  
-     \-O bien\-  
-  
--   En la esquina superior derecha del editor, elija el botón de **Archivos activos** , y seleccione un archivo de la lista para cambiar.  
-  
-     \-O bien\-  
-  
--   En la barra de menú, elija **Ventana**, **Ventanas**.  
-  
--   En la lista, seleccione el archivo que desee ver y elegir **Activar**.  
-  
-## Navegar entre las ventanas de herramientas en el IDE  
- El **Navegador del IDE** también le permite recorrer en ciclo las ventanas de herramientas que estén abiertas en el IDE.  Existen dos comandos para obtener acceso al **Navegador del IDE** para recorrer en ciclo las ventanas de herramientas, y el más apropiado depende del orden en que desee recorrerlas.  `Window.PreviousToolWindowNav` permite desplazarse al archivo más reciente al que se obtuvo acceso y `Window.NextToolWindowNav` permite desplazarse en orden inverso.  Configuración general de desarrollo asigna MAYÚS \+ ALT \+ F7 a `Window.PreviousDocumentWindowNav` y ALT \+ F7 a `Window.NextDocumentWindowNav`.  
+ `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna CTRL + MAYÚS + TAB a `Window.PreviousDocumentWindowNav` y CTRL + TAB a `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
->  Si en la combinación de valores de configuración que está utilizando aún no se ha asignado una combinación de teclas de método abreviado a este comando, puede asignar su propio comando personalizado en la página **Teclado** del cuadro de diálogo **Opciones**.  Para obtener más información, consulte [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+>  Si está usando un combinación de opciones que aún no tiene una combinación de teclas de método abreviado asignada, puede asignar su propio comando personalizado con la página **Teclado** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-#### Para cambiar a una ventana de herramientas concreta en el IDE  
+#### <a name="to-switch-to-specific-files-in-the-editor"></a>Para cambiar a archivos concretos en el editor  
   
--   Presione ALT\+F7 para mostrar el **Navegador del IDE**.  Mantenga presionada la tecla ALT y presione repetidamente F7 hasta que esté seleccionada la ventana a la que piense cambiar.  
+-   Presione CTRL + TAB para mostrar el **Navegador del IDE**. Mantenga presionada la tecla CTRL y presione la tecla TAB varias veces hasta que seleccione el archivo al que desea cambiar.  
   
     > [!TIP]
-    >  Para invertir el orden en que se recorre la lista **Ventanas de herramientas activas**, mantenga presionadas las teclas MAYÚS \+ ALT y presione F7.  
+    >  Para invertir el orden por el que se desplaza por la lista **Archivos activos**, mantenga presionadas las teclas CTRL + MAYÚS y presione la tecla TAB.  
   
-## Vea también  
+     \- o -  
+  
+-   En la esquina superior derecha del editor, pulse el botón **Archivos activos** y, después, seleccione en la lista un archivo al que cambiar.  
+  
+     \- o -  
+  
+-   En la barra de menús, pulse **Ventana**, **Windows**.  
+  
+-   En la lista, seleccione el archivo que quiere ver y, después, pulse **Activar**.  
+  
+## <a name="navigating-among-tool-windows-in-the-ide"></a>Navegar entre las ventanas de herramientas en el IDE  
+ El **Navegador del IDE** también permite recorrer las ventanas de herramientas que se encuentren abiertas en el IDE. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** y desplazarse por las ventanas de herramientas, dependiendo del orden en el que quiere recorrerlos. `Window.PreviousToolWindowNav` le permite moverse al último archivo abierto y `Window.NextToolWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna MAYÚS + ALT + F7 a `Window.PreviousDocumentWindowNav` y ALT + F7 a `Window.NextDocumentWindowNav`.  
+  
+> [!NOTE]
+>  Si está usando un combinación de opciones que aún no tiene una combinación de teclas de método abreviado asignada, puede asignar su propio comando personalizado con la página **Teclado** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
+#### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Para cambiar a una ventana de herramientas específica en el IDE  
+  
+-   Presione ALT + F7 para mostrar el **Navegador del IDE**. Mantenga presionada la tecla ALT y presione la tecla F7 varias veces hasta que seleccione la ventana a la que desea cambiar.  
+  
+    > [!TIP]
+    >  Para invertir el orden por el que se desplaza por la lista de **Ventanas de herramientas activas**, mantenga presionadas las teclas MAYÚS + ALT y presione la tecla F7.  
+  
+## <a name="see-also"></a>Vea también  
  [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md)   
  [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md)

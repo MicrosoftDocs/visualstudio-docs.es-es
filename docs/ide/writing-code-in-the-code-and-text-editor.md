@@ -79,10 +79,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: c5e8972cf5efb5596f7649df2c622e802803319f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7b3cc733a1a808f60a27332024bcfff1dd9e670b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="write-code-in-the-code-editor"></a>Escribir código en el editor de código
@@ -101,8 +102,8 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 
 |||  
 |-|-|  
-|Colores de la sintaxis|Algunos elementos de la sintaxis de los archivos de código y marcado están coloreados de forma distinta para distinguirlos. Por ejemplo, las palabras clave (como `using` en C# y `Imports` en Visual Basic) son de un color, pero los tipos (como `Console` y `Uri`) son de otro. También se colorean otros elementos de la sintaxis, como los comentarios y los literales de cadena. C++ utiliza el color para diferenciar entre tipos, enumeraciones y macros, entre otros tokens.<br /><br /> Puede ver el color predeterminado para cada tipo y puede cambiar el color de cualquier elemento específico de la sintaxis en [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que puede abrir desde el menú **Herramientas**.|  
-|Marcas de errores y advertencias|Al agregar código y compilar su solución, puede que vea (a) que aparecen subrayados ondulados de diferentes colores o (b) bombillas en el código. Los subrayados ondulados rojos indican errores de sintaxis, los subrayados ondulados azules indican errores del compilador, los subrayados ondulados verdes indican advertencias y los subrayados ondulados púrpura, otros tipos de errores. Las [bombillas](../ide/perform-quick-actions-with-light-bulbs.md) sugieren correcciones para problemas y facilitan la aplicación de la corrección.<br /><br /> Puede ver el color predeterminado de cada subrayado ondulado de error y advertencia en el cuadro de diálogo **Herramientas/Opciones/Entorno/Fuentes y colores** . Busque **Error de sintaxis**, **Error del compilador**, **Advertencia**y **Otro Error**.|  
+|Colores de la sintaxis|Algunos elementos de la sintaxis de los archivos de código y marcado están coloreados de forma distinta para distinguirlos. Por ejemplo, las palabras clave (como `using` en C# y `Imports` en Visual Basic) son de un color, pero los tipos (como `Console` y `Uri`) son de otro. También se colorean otros elementos de la sintaxis, como los comentarios y los literales de cadena. C++ utiliza el color para diferenciar entre tipos, enumeraciones y macros, entre otros tokens.<br /><br /> Puede ver el color predeterminado para cada tipo y puede cambiar el color de cualquier elemento específico de la sintaxis en [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que puede abrir desde el menú **Herramientas** .|  
+|Marcas de errores y advertencias|Al agregar código y compilar su solución, puede que vea (a) que aparecen subrayados ondulados de diferentes colores o (b) bombillas en el código. Los subrayados ondulados rojos indican errores de sintaxis, los subrayados ondulados azules indican errores del compilador, los subrayados ondulados verdes indican advertencias y los subrayados ondulados púrpura, otros tipos de errores. Las[bombillas](../ide/perform-quick-actions-with-light-bulbs.md) sugieren correcciones para problemas y facilitan la aplicación de la corrección.<br /><br /> Puede ver el color predeterminado de cada subrayado ondulado de error y advertencia en el cuadro de diálogo **Herramientas/Opciones/Entorno/Fuentes y colores** . Busque **Error de sintaxis**, **Error del compilador**, **Advertencia**y **Otro Error**.|  
 |Coincidencia de llaves|Cuando el punto de inserción se coloca en una llave de apertura en un archivo de código, tanto esta como la llave de cierre se resaltan. Esta característica le permite saber inmediatamente si faltan llaves o si estas están mal colocadas. Puede activar o desactivar la coincidencia de llaves mediante el ajuste **Resaltar con el delimitador automático** (**Herramientas/Opciones/Editor de texto**). Puede cambiar el color de resaltado en el ajuste **Fuentes y colores** (**Herramientas/Opciones/Entorno**). Busque **Coincidencia de llaves (resaltar)** o **Coincidencia de llaves (rectángulo)**.|  
 |Visualizador de estructura|Las líneas de puntos conectan las llaves que coinciden en los archivos de código, lo que hace que sea más fácil ver los pares de llaves de apertura y cierre. Esto puede ayudarle a encontrar código en el código base más rápidamente. Puede activar o desactivar estas líneas con **Mostrar líneas guía de estructura** en la sección **Mostrar** de la página **Herramientas/Opciones/Editor de texto/General**.|
 |Números de línea|Se pueden mostrar números de línea en el margen izquierdo de la ventana de código. No se muestran de forma predeterminada. Puede activar esta opción en la configuración de **Editor de texto Todos los lenguajes** (**Herramientas/Opciones/Editor de texto/Todos los lenguajes**). Puede mostrar los números de línea de los lenguajes de programación individuales cambiando la configuración de esos lenguajes (**Herramientas/Opciones/Editor de texto/\<lenguaje>**). Si desea que se impriman los números de línea, seleccione Incluir números de línea en el cuadro de diálogo **Imprimir** .|  
@@ -121,7 +122,7 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 |Dar formato al documento|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas del documento.|  
 |Dar formato a la selección|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas de la selección.|  
 |Aplicar tabulación a las líneas seleccionadas|Cambia los espacios iniciales por tabulaciones en los casos que sea apropiado.|  
-|No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comyos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` commys. Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana Acceso rápido o la ventana Comandos.|  
+|No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comandos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` . Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana Acceso rápido o la ventana Comandos.|  
 |Poner en mayúsculas|Cambia todos los caracteres de la selección a mayúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a mayúsculas.|  
 |Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas.|  
 |Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: Alt + flecha arriba.|
@@ -148,7 +149,7 @@ La característica de visualizador de estructura en el editor de código muestra
 
 Para deshabilitar las líneas guía de estructura, vaya a **Herramientas**, **Opciones**, **Editor de texto**, **General** y desactive el cuadro **Mostrar líneas guía de estructura**.
 
-También puede utilizar la barra de desplazamiento mejorada en una ventana de código para obtener una visión global de su código. En el modo de asignación, puede obtener vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento. Para obtener más información, vea [Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+También puede usar la barra de desplazamiento mejorada en una ventana de código para obtener una visión global de su código. En el modo de asignación, puede obtener vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento. Para obtener más información, vea [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
 Los siguientes comandos son métodos específicos para navegar por código :  
 

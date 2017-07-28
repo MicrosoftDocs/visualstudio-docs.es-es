@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: d797017eb46f38a81f4d5ba6f1999457aa816d1c
-ms.openlocfilehash: 69cc33533afd449e50bfc3ecbc8384359253fabb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 102091f8214b822a5b6be1c93f913d6ddbcd8d9b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
@@ -74,5 +75,5 @@ Hay varias formas predeterminadas de personalizar la página principal de Visual
 >  Si un error de una página principal personalizada hace que Visual Studio se bloquee, inicie Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
 
 ## <a name="see-also"></a>Vea también  
- [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)   
 

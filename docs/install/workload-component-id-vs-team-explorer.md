@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 293d694cfff4c375b342d8322483c84fbbeb446c
-ms.openlocfilehash: 7a4538f04e18630da5adeb8189716a5ac34f3c47
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b253c07b8d9798128f918463e6a3a47692ee231b
 ms.contentlocale: es-es
-ms.lasthandoff: 04/07/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 

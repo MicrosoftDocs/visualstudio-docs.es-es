@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 989bc338e0cb8c49a2342d998e1e09e8f6b0eb9f
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 60636023fc506df5ed6e57d4f4d9c90e680ab607
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="output-window"></a>Resultados (Ventana)
@@ -74,7 +75,7 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
   
  Hay determinados comandos y características del IDE que se invocan en la [ventana Comandos](../../ide/reference/command-window.md) que mandan su salida a la ventana de **salida**. La salida de herramientas externas como los archivos .bat y .com, que se muestra normalmente en la ventana de símbolo del sistema, se enruta a un panel de **salida** al seleccionar la opción **Usar ventana de salida** de [Managing External Tools](../../ide/managing-external-tools.md) (Administrar herramientas externas). Se pueden mostrar muchos otros tipos de mensajes los paneles de **salida**. Por ejemplo, cuando se comprueba la sintaxis de Transact-SQL en un procedimiento almacenado con una base de datos de destino, los resultados se muestran en la ventana de **salida**.  
   
- También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para ello, use miembros de las clases <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).  
+ También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para hacer esto, use los miembros de la clase <xref:System.Diagnostics.Debug> o de la clase <xref:System.Diagnostics.Trace> en el espacio de nombres <xref:System.Diagnostics> de la biblioteca de clases de .NET Framework. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, consulte [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
  En [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al pulsar F1 en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, consulte [Dar formato a la presentación de un paso de compilación personalizada o un evento de compilación](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
   
@@ -86,4 +87,4 @@ La Ventana de **salida** puede mostrar mensajes de estado de diversas caracterí
  [Cómo: Controlar la ventana Resultados](http://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../../ide/understanding-build-configurations.md)   
- [Información general de la biblioteca de clases](http://msdn.microsoft.com/Library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Información general de la biblioteca de clases](/dotnet/standard/class-library-overview)

@@ -1,55 +1,72 @@
 ---
-title: "C&#243;mo: Mostrar las direcciones URL como v&#237;nculos en el editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editor de código, mostrar direcciones URL"
-  - "editores, mostrar direcciones URL"
-  - "direcciones URL, abrir"
+title: "Cómo: Mostrar las direcciones URL como vínculos en el editor | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- URLs, opening
+- Code Editor, displaying URLs
+- editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# C&#243;mo: Mostrar las direcciones URL como v&#237;nculos en el editor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 47b609a3138dff39db7b817ce320a0a46665127a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-Puede elegir que el editor de código trate los Localizadores de recursos universal \(direcciones URL\) del código como vínculos activos.  Cuando se utiliza esta característica, las direcciones URL:  
+---
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Cómo: Mostrar las direcciones URL como vínculos en el editor
+Puede elegir que el editor de código trate los localizadores uniformes de recursos (direcciones URL) en el código como vínculos activos. Cuando use esta característica, las direcciones URL:  
   
 -   Aparecen subrayadas.  
   
--   Muestran **Información sobre herramientas** al desplazar el puntero sobre ellas.  
+-   Muestran **información sobre herramientas** cuando pasa el puntero sobre ellas.  
   
--   Intentan abrir el sitio Web indicado si se mantiene presionada la tecla **CTRL** mientras se hace clic en el vínculo.  De forma predeterminada, el sitio Web se muestra en el explorador web interno.  
+-   Intentan abrir el sitio web indicado cuando presiona **CTRL** y hace clic con el botón izquierdo en el vínculo. De manera predeterminada, el sitio web se muestra en el explorador web interno.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Procedimiento  
+## <a name="procedure"></a>Procedimiento  
   
-#### Para mostrar las direcciones URL como vínculos  
+#### <a name="to-display-urls-as-links"></a>Para mostrar las direcciones URL como vínculos  
   
-1.  En el menú **Herramientas**, haga clic en **Opciones**.  
+1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
 2.  Haga clic en **Editor de texto**.  
   
-3.  Para cambiar la opción de un solo lenguaje, expanda la carpeta de ese lenguaje y elija **General**.  
+3.  Para cambiar la opción de un único lenguaje, expanda la carpeta para ese lenguaje y pulse **General**.  
   
-     \-O bien\-  
+     -O bien-  
   
-     Para cambiar la opción de todos los lenguajes, expanda la carpeta **Todos los lenguajes** y, a continuación, elija **General**.  
+     Para cambiar la opción de todos los lenguajes, expanda la carpeta **Todos los lenguajes** y pulse **General**.  
   
 4.  En **Mostrar**, seleccione **Habilitar navegación a direcciones URL con un solo clic**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../../ide/customizing-the-editor.md)   
- [Opciones del editor de texto \(Cuadro de diálogo\)](../../ide/reference/text-editor-options-dialog-box.md)   
+ [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)

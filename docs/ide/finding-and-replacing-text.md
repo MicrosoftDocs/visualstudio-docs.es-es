@@ -1,82 +1,99 @@
 ---
-title: "Buscar y reemplazar texto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.find"
-  - "vs.findreplacecontrol"
-  - "vs.findreplace.findsymbol"
-  - "vs.findreplace.symbol"
-  - "findresultswindow"
-  - "vs.findreplace.quickreplace"
-  - "vs.findsymbol"
-  - "vs.findinfiles"
-  - "vs.findresults1"
-  - "vs,findsymbolwindow"
-  - "vs.findreplace.quickfind"
-  - "vs.lookin"
-  - "vs.replace"
-helpviewer_keywords: 
-  - "find"
-  - "buscar y reemplazar"
-  - "Buscar en archivos (cuadro de diálogo)"
-  - "buscar texto"
-  - "find, symbol"
-  - "find, texto"
-  - "replace"
-  - "Reemplazar (cuadro de diálogo)"
-  - "Reemplazar en archivos (cuadro de diálogo)"
-  - "reemplazar texto"
-  - "búsquedas de texto"
-  - "búsquedas de texto, buscar y reemplazar texto"
-  - "texto, buscar y reemplazar"
+title: Buscar y reemplazar texto | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.find
+- vs.findreplacecontrol
+- vs.findreplace.findsymbol
+- vs.findreplace.symbol
+- findresultswindow
+- vs.findreplace.quickreplace
+- vs.findsymbol
+- vs.findinfiles
+- vs.findresults1
+- vs,findsymbolwindow
+- vs.findreplace.quickfind
+- vs.lookin
+- vs.replace
+helpviewer_keywords:
+- text searches
+- Replace in Files dialog box
+- find, text
+- Find in Files dialog box
+- find
+- text searches, finding and replacing text
+- Replace dialog box
+- text, finding and replacing
+- find, symbol
+- find and replace
+- replace
+- find text
+- replacing text
 ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 31
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 31
----
-# Buscar y reemplazar texto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7e63a74cbc1155cb81bc3f726506a2374b9ee72d
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
-Puede buscar y reemplazar texto en el editor de código de Visual Studio, y determinadas ventanas de resultados basadas en texto como las ventanas **Resultados de la búsqueda**, utilizando el control **Buscar y reemplazar** o **Buscar\/reemplazar en archivos**.  También puede buscar y reemplazar en algunas ventanas del diseñador, como el diseñador XAML y el diseñador de Windows Forms, y ventanas de herramientas  
+---
+# <a name="finding-and-replacing-text"></a>Finding and Replacing Text
+Puede buscar y reemplazar texto en el editor de código de Visual Studio y en determinadas ventanas de salida basadas en texto como las ventanas **Resultados de la búsqueda**, con el control **Buscar y reemplazar** o **Buscar y reemplazar en archivos**. También puede buscar y reemplazar en algunas ventanas del diseñador, como el diseñador XAML y el diseñador de Windows Forms, y las ventanas de herramientas.  
   
- Puede establecer el ámbito de las búsquedas al documento actual, la solución actual o a un conjunto personalizado de carpetas.  También puede especificar un conjunto de extensiones de nombre de archivo para las búsquedas de varios archivos.  Puede personalizar la sintaxis de búsqueda con expresiones regulares .NET.  
+ Puede definir el ámbito de las búsquedas en el documento actual, en la solución actual o en un conjunto personalizado de carpetas. También puede especificar un conjunto de extensiones de nombre de archivo para búsquedas de varios archivos. Puede personalizar la sintaxis de búsqueda mediante expresiones regulares .NET.  
   
  Para buscar y reemplazar expresiones regulares, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
 > [!TIP]
->  La casilla **Buscar\/Comando** aún está disponible como control de barra de herramientas, pero ya no es visible de manera predeterminada.  Puede mostrar el cuadro **Buscar\/Comando** eligiendo **Agregar o quitar botones** en la barra de herramientas **Estándar** y eligiendo **Buscar**.  Para obtener más información, vea [Cuadro Buscar\/Comando](../ide/find-command-box.md).  
+>  El cuadro **Comando/Buscar** todavía está disponible como un control de la barra de herramientas, pero ya está visible de manera predeterminada. Puede mostrar el cuadro **Comando/Buscar** pulsando **Agregar o quitar botones** en la barra de herramientas **Estándar** y, después, pulsar **Buscar**. Para obtener más información, vea [Cuadro Comando/Buscar](../ide/find-command-box.md).  
   
-## Control Buscar y reemplazar  
- El control **Buscar y reemplazar** aparece en la esquina superior derecha de la ventana Editor de código.  El control **Buscar y reemplazar** resalta inmediatamente cada aparición de la cadena de búsqueda especificada en el documento actual.  Puede navegar de una aparición a otra eligiendo el botón **Buscar siguiente** o el botón **Buscar anterior** en el control de búsqueda.  
+## <a name="find-and-replace-control"></a>Control Buscar y reemplazar  
+ El control **Buscar y reemplazar** aparece en la esquina superior derecha de la ventana del editor de código. El control **Buscar y reemplazar** resalta inmediatamente cada aparición de la cadena de búsqueda determinada en el documento actual. Puede ir de una aparición a otra pulsando el botón **Buscar siguiente** o en el botón **Buscar anterior** en el control de búsqueda.  
   
- Puede tener acceso a opciones de reemplazo eligiendo el botón situado junto al cuadro de texto **Buscar**.  Para realizar un reemplazo cada vez, elija el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**.  Para reemplazar todas las coincidencias, elija el botón **Reemplazar todo**.  
+ Puede tener acceso a las opciones de reemplazo pulsando el botón siguiente al cuadro de texto **Buscar**. Para realizar un reemplazo puntual, pulse el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**. Para reemplazar todas las coincidencias, pulse el botón **Reemplazar todo**.  
   
- Para cambiar el color de resaltado de las coincidencias, elija el menú **Herramientas**, seleccione **Opciones**, elija **Entorno** y seleccione **Fuentes y colores**.  En la lista **Mostrar valores para**, seleccione **Editor de texto** y, en la lista **Mostrar los elementos**, seleccione **Buscar elementos resaltados \(extensión\)**.  
+ Para cambiar el color de resaltado de las coincidencias, pulse el menú **Herramientas**, seleccione **Opciones** y, después, pulse **Entorno** y **Fuentes y colores**. En la lista **Mostrar configuración para**, seleccione **Editor de texto** y, después, en la lista **Mostrar elementos**, seleccione **Buscar resaltado (Extensión)**.  
   
-### Buscar ventanas de herramientas  
- Puede utilizar el control **Buscar** en ventanas de código o texto, como las ventanas **Salida** y las ventanas **Resultados de la búsqueda**, eligiendo **Buscar y reemplazar** en el menú **Editar** o \(Ctrl\+F\).  
+### <a name="searching-tool-windows"></a>Buscar ventanas de herramientas  
+ Puede usar el control **Buscar** en ventanas de texto o código, como ventanas de **salida** y ventanas **Resultados de la búsqueda**, al pulsar **Buscar y reemplazar** en el menú **Edición** o (CTRL+F).  
   
- También encontrará una versión del control Find en algunas ventanas de herramientas.  Por ejemplo, puede filtrar la lista de controles en la ventana **Cuadro de herramientas** especificando texto en el cuadro de búsqueda.  Otras ventanas de herramientas que ahora permiten buscar en su contenido incluyen **Explorador de soluciones**, la ventana **Propiedades** y **Team Explorer**, entre otras.  
+ También está disponible una versión del control Buscar en algunas ventanas de herramientas. Por ejemplo, ahora puede filtrar la lista de controles en la ventana **Cuadro de herramientas** escribiendo texto en el cuadro de búsqueda. Otras ventanas de herramientas que ahora le permiten buscar su contenido incluyen **Explorador de soluciones**, la ventana **Propiedades** y **Team Explorer**, entre otras.  
   
-## Buscar\/reemplazar en archivos  
- **Buscar y reemplazar en archivos** funciona como el control **Buscar y reemplazar**, salvo que puede definir un ámbito para la búsqueda.  No solo puede buscar en el archivo abierto en el editor, sino que también puede buscar en todos los documentos abiertos, en toda la solución, en el proyecto actual y en los conjuntos de carpeta seleccionados.  También puede buscar por la extensión de nombre de archivo.  Para tener acceso al cuadro de diálogo **Buscar y reemplazar en archivos**, elija **Buscar y reemplazar** en el menú **Editar** \(o CTRL\+MAYÚS\+F\).  
+## <a name="findreplace-in-files"></a>Buscar y reemplazar en archivos  
+ **Buscar y reemplazar en archivos** funciona como el control **Buscar y reemplazar**, excepto que puede definir un ámbito para la búsqueda. No solo puede buscar el archivo abierto actual en el editor, sino que también puede buscar todos los documentos abiertos, la solución completa, el proyecto actual y los conjuntos de carpetas seleccionados. También puede buscar mediante la extensión del nombre de archivo. Para tener acceso al cuadro de diálogo **Buscar y reemplazar en archivos**, pulse **Buscar y reemplazar** en el menú **Edición** (o CTRL+SHIFT+F).  
   
- Cuando elija **Buscar todos**, aparecerá una ventana **Resultados de la búsqueda** en la que se mostrarán las coincidencias de la búsqueda.  Seleccionar un resultado en la lista muestra el archivo asociado y resalta la coincidencia.  Si el archivo no está abierto para editarlo, este se abrirá en una pestaña de vista previa a la derecha del cuadro de la pestaña.  Puede utilizar el control **Buscar** para buscar a través de la lista **Resultados de la búsqueda**.  
+ Cuando pulse **Buscar todo**, se abre una ventana **Buscar resultados** y se muestran las coincidencias de la búsqueda. Al seleccionar un resultado en la lista se muestra el archivo asociado y se resalta la coincidencia. Si el archivo todavía no está abierto para su edición, se abre en una pestaña de vista previa en el lateral derecho de la pestaña también. Puede usar el control **Buscar** para buscar en la lista **Resultados de la búsqueda**.  
   
-### Creación de conjuntos de carpeta de búsqueda personalizados  
- Puede definir un ámbito de búsqueda eligiendo el botón **Elegir carpetas de búsqueda** \(parece **…**\) situado junto al cuadro **Buscar en**.  En el cuadro **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en las que buscar y puede guardar la especificación para poder reutilizarla posteriormente.  Puede especificar carpetas en un equipo remoto solo si ha asignado su unidad al equipo local.  
+### <a name="creating-custom-search-folder-sets"></a>Creación de conjuntos de carpetas de búsqueda personalizados  
+ Puede definir un ámbito de búsqueda pulsando el botón **Elegir carpetas de búsqueda** (parecido a **...**) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde. Puede especificar carpetas de un equipo remoto solo si ha asignado su unidad al equipo local.  
   
-### Creación de conjuntos de componentes personalizados  
- Puede definir conjuntos de componentes como su ámbito de búsqueda eligiendo el botón **Editar conjunto de componentes personalizado** que se encuentra junto al cuadro **Buscar en**.  Puede especificar componentes de .NET o COM instalados, proyectos de Visual Studio incluidos en su solución o cualquier ensamblado o biblioteca de tipos \(.dll, .tlb, .olb, .exe u .ocx\).  Para buscar referencias, active la casilla **Buscar en referencias**.  
+### <a name="creating-custom-component-sets"></a>Creación de conjuntos de componentes personalizados  
+ Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos (.dll, .tlb, .olb, .exe o .ocx). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)

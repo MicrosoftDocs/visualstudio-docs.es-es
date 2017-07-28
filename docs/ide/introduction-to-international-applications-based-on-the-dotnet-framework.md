@@ -44,10 +44,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 5d04af26004b5915fcd373fda154ac79816e475c
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introducción a aplicaciones internacionales basadas en .NET Framework
@@ -61,7 +62,7 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hay dos partes par
   
  El sistema del proyecto de Windows Forms y formularios Web Forms le permite compilar archivos de recursos mediante una plantilla de archivo de recursos de ensamblado, acceder a los recursos y compilar el proyecto. Los ensamblados satélite se crearán junto con el ensamblado principal.  
   
- Cuando se ejecuta una aplicación localizada, dos valores de referencia cultural determinan su apariencia. (Una *referencia cultural* es un conjunto de información de preferencia del usuario relacionada con el idioma, el entorno y las convenciones culturales del usuario). La configuración del idioma de interfaz de usuario determina qué recursos se cargarán. El idioma de interfaz de usuario se establece como `UICulture` en las directivas de página y los archivos Web.config y como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> en el código de Visual Basic o Visual C#. La configuración de referencia cultural determina el formato de valores como fechas, números, moneda, etc. La referencia cultural se establece como `Culture` en las directivas de página y los archivos Web.config y como <xref:System.Globalization.CultureInfo.CurrentCulture%2A> en el código de Visual Basic o Visual C#.  
+ Cuando se ejecuta una aplicación localizada, dos valores de referencia cultural determinan su apariencia. (Una *referencia cultural* es un conjunto de información de preferencia del usuario relacionada con el idioma, el entorno y las convenciones culturales del usuario). La configuración del idioma de interfaz de usuario determina qué recursos se cargarán. El idioma de interfaz de usuario se establece como `UICulture` en las directivas de página y los archivos Web.config y como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> en el código de Visual Basic o Visual C#. La configuración de referencia cultural determina el formato de valores como fechas, números, moneda, etc. La referencia cultural se establece como `Culture` en las directivas de página y los archivos Web.config, <xref:System.Globalization.CultureInfo.CurrentCulture%2A> en el código de Visual Basic o Visual C#.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Globalization>   
