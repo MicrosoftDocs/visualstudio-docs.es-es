@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 83fbf12dce91f79d537b574ea9903af5d6e61d1f
-ms.openlocfilehash: 0cc24f68ddef374f539c299d87cede8a13fac1a2
-ms.lasthandoff: 02/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: afc044be4d63b7a292a6d94e360366913bd28883
+ms.contentlocale: es-es
+ms.lasthandoff: 06/23/2017
 
 ---
 
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
-Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668(v=vs.85).aspx) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
+Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
 
 Hay muchos casos en los que podría interesarle usar su propio montón personalizado y evitar la sobrecarga de asignación del montón estándar.  Por ejemplo, puede usar [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) para asignar una gran cantidad de memoria cuando se inicia la aplicación o el juego y, después, administrar sus propios bloques dentro de esa lista.  En este escenario, la herramienta de generador de perfiles de memoria solo vería esa asignación inicial y no la administración personalizada realizada dentro del bloque de memoria.  En cambio, mediante el uso del proveedor ETW de montón nativo personalizado, puede dejar que la herramienta conozca las asignaciones que realiza fuera del montón estándar.
 

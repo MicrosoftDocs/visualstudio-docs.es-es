@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 362a756e434f93eb39776c76382d059cc2744cae
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 2cf7d1e79ccf79b652dbb730e7ac7fd6a9c984b5
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="welcome-to-visual-studio-2017"></a>¡Le damos la bienvenida a Visual Studio 2017!
@@ -109,7 +109,7 @@ Obtenga información sobre las novedades de Visual Studio.
 |||  
 |-|-|  
 |[Novedades de Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-|[Novedades de Visual C#](/dotnet/articles/csharp/csharp-7)|
+|[Novedades de Visual C#](/dotnet/csharp/csharp-7)|
 
 
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio  

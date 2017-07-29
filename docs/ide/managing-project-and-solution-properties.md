@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 332ef0d4534d8f607a1b5d92038855ebd247657f
-ms.lasthandoff: 04/05/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 481153e7f3d609c56f313ff5ee9f3f1b511dc5ef
+ms.contentlocale: es-es
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="managing-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
@@ -38,7 +39,7 @@ Los proyectos tienen propiedades que controlan muchos aspectos de la compilació
   
  ![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")  
   
- Los proyectos de .NET también tienen un nodo de propiedades en el propio árbol del proyecto.  
+ Los proyectos de .NET también pueden tener un nodo de propiedades en el propio árbol del proyecto.  
   
  ![Nodo de propiedades en el árbol del Explorador de soluciones](../ide/media/vs2015_props_se.png "VS2015_Props_SE")  
   
@@ -48,8 +49,8 @@ Los proyectos tienen propiedades que controlan muchos aspectos de la compilació
 ## <a name="project-properties"></a>Propiedades del proyecto  
  Las propiedades del proyecto se organizan en grupos. Cada grupo tiene su propia página de propiedades y las páginas pueden ser diferentes según el lenguaje y el tipo de proyecto.  
   
-### <a name="c-and-visual-basic-projects"></a>Proyectos de C# y Visual Basic  
- En los proyectos de C# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página Propiedad de compilación de un proyecto de WPF en C#:  
+### <a name="c-visual-basic-and-f-projects"></a>Proyectos de C#, Visual Basic y F#  
+ En los proyectos de C#, F# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página Propiedad de compilación de un proyecto de WPF en C#:  
   
  ![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")  
   
@@ -67,3 +68,4 @@ Los proyectos tienen propiedades que controlan muchos aspectos de la compilació
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+

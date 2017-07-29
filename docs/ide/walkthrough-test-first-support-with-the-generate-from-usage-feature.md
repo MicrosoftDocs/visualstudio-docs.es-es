@@ -31,14 +31,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 349cf26923ebee02162b6a113b39393aea01c58f
-ms.lasthandoff: 03/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
-En este tema se muestra cómo usar la característica [Generar a partir del uso](../misc/generate-from-usage.md) que admite el desarrollo de prueba previa.  
+En este tema se muestra cómo usar la característica [Generar a partir del uso](../ide/visual-csharp-intellisense.md#generate-from-usage) que admite el desarrollo de prueba previa.  
   
  El*desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.  
   
@@ -68,7 +69,7 @@ Cuadro de diálogo Nuevo proyecto
 2.  Busque la declaración de la clase `UnitTest1` y cambie su nombre a `AutomobileTest`. En C#, si un constructor `UnitTest1()` está presente, cambie su nombre a `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de IntelliSense, puede presionar CTRL+ALT+BARRA ESPACIADORA para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.  
+    >  IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de IntelliSense, puede presionar CTRL+ALT+BARRA ESPACIADORA para alternar entre el modo de finalización y el modo de sugerencia. Vea [Using IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.  
   
 3.  Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una nueva instancia de una clase denominada `Automobile`, como se muestra en las siguientes ilustraciones. Aparece un subrayado ondulado que indica un error en tiempo de compilación y aparece una etiqueta inteligente bajo el nombre de tipo. La ubicación exacta de la etiqueta inteligente varía en función de si usa [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
@@ -88,7 +89,7 @@ Visual C#
   
 5.  Ahora tiene dos opciones. Puede hacer clic en **Generar 'Class Automobile'** para crear un nuevo archivo en el proyecto de prueba y rellenarlo con una clase vacía denominada `Automobile`. Se trata de una forma rápida de crear una nueva clase en un nuevo archivo que tiene los modificadores de acceso predeterminados en el proyecto actual. También puede hacer clic en **Generar nuevo tipo** para abrir el cuadro de diálogo **Generar nuevo tipo** . Esto proporciona opciones que incluyen colocar la clase en un archivo existente y agregar el archivo a otro proyecto.  
   
-     Haga clic en **Generar nuevo tipo** para abrir el cuadro de diálogo **Generar nuevo tipo** que se muestra en la siguiente ilustración. En la lista **Proyecto**, haga clic en **GFUDemo_VB** o **GFUDemo_CS** para indicar a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que agregue el archivo al proyecto de código fuente en lugar de al proyecto de prueba.  
+     Haga clic en **Generar nuevo tipo** para abrir el cuadro de diálogo **Generar nuevo tipo** que se muestra en la siguiente ilustración. En la lista **Proyecto** , haga clic en **GFUDemo_VB** o **GFUDemo_CS** para indicar a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que agregue el archivo al proyecto de código fuente en lugar del proyecto de prueba.  
   
      ![Cuadro de diálogo Generar nuevo tipo](../ide/media/genotherdialog.png "GenOtherDialog")  
 Cuadro de diálogo Generar nuevo tipo  
@@ -103,8 +104,7 @@ Cuadro de diálogo Generar nuevo tipo
   
      Agregue la siguiente línea de código a `DefaultAutomobileIsInitializedCorrectly`.  
   
-     [!code-cs[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
+     [!code-cs[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]  [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
   
      Dado que el código hace referencia a dos propiedades no definidas en `Automobile`, aparece una etiqueta inteligente. Haga clic en la etiqueta inteligente para `Model` y, a continuación, haga clic en **Generar código auxiliar de propiedad**. Genere código auxiliar de propiedad también para la propiedad `TopSpeed` .  
   
@@ -135,10 +135,9 @@ Ventana Navegar a
   
 1.  En este método de prueba, generará código auxiliar de constructor que inicializará las propiedades `Model` y `TopSpeed` para que tengan los valores que especifique. Más adelante, agregará más código para completar la prueba. Agregue el siguiente método de prueba adicional a su clase `AutomobileTest` .  
   
-     [!code-cs[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
+     [!code-cs[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]  [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
   
-2.  Haga clic en la etiqueta inteligente bajo el nuevo constructor de clase y, a continuación, haga clic en **Generar código auxiliar de constructor**. En el archivo de clase `Automobile` , observe que el nuevo constructor ha examinado los nombres de las variables locales que se usan en la llamada al constructor, ha encontrado propiedades que tienen los mismos nombres en la clase `Automobile` y el código proporcionado en el cuerpo del constructor para almacenar los valores de argumento en las propiedades `Model` y `TopSpeed` . (En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], los campos `_model` y `_topSpeed` en el nuevo constructor son los campos de copia de seguridad definidos de manera implícita para las propiedades `Model` y `TopSpeed`).  
+2.  Haga clic en la etiqueta inteligente bajo el nuevo constructor de clase y, a continuación, haga clic en **Generar código auxiliar de constructor**. En el archivo de clase `Automobile` , observe que el nuevo constructor ha examinado los nombres de las variables locales que se usan en la llamada al constructor, ha encontrado propiedades que tienen los mismos nombres en la clase `Automobile` y el código proporcionado en el cuerpo del constructor para almacenar los valores de argumento en las propiedades `Model` y `TopSpeed` . (En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], los campos `_model` y `_topSpeed` en el nuevo constructor son los campos de copia de seguridad definidos de forma implícita para las propiedades `Model` y `TopSpeed` ).  
   
 3.  Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la etiqueta inteligente y, a continuación, haga clic en **Generar código auxiliar de constructor**.  
   
@@ -146,15 +145,13 @@ Ventana Navegar a
   
 1.  Suponga que la especificación indica que un nuevo `Automobile` se puede poner en estado en ejecución si sus propiedades `Model` y `TopSpeed` se establecen en un valor distinto de los valores predeterminados. Agregue las líneas siguientes al método `AutomobileWithModelNameCanStart` .  
   
-     [!code-cs[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
+     [!code-cs[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]  [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
   
 2.  Haga clic en la etiqueta inteligente para la llamada de método `myAuto.Start` y, a continuación, haga clic en **Generar código auxiliar del método**.  
   
 3.  Haga clic en la etiqueta inteligente para la propiedad `IsRunning` y, a continuación, haga clic en **Generar código auxiliar del método**. La clase `Automobile` contiene ahora el código siguiente.  
   
-     [!code-cs[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]
-     [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
+     [!code-cs[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]  [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
   
 ### <a name="to-run-the-tests"></a>Para ejecutar las pruebas  
   
@@ -173,13 +170,11 @@ Resultados de pruebas (ventana)
   
 1.  Agregue el siguiente código al constructor predeterminado hasta que las propiedades `Model`, `TopSpeed` y `IsRunning` se inicialicen con sus valores predeterminados correctos de `"Not specified"`, `-1`y `True` (`true`).  
   
-     [!code-cs[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
+     [!code-cs[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]  [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
   
 2.  Cuando se llama al método `Start` , se debe establecer la marca `IsRunning` en true solo si las propiedades `Model` o `TopSpeed` se establecen en un valor distinto de su valor predeterminado. Quite `NotImplementedException` del cuerpo del método y agregue el código siguiente.  
   
-     [!code-cs[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
+     [!code-cs[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]  [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
   
 ### <a name="to-run-the-tests-again"></a>Para ejecutar las pruebas de nuevo  
   
@@ -189,7 +184,7 @@ Resultados de pruebas (ventana)
 Resultados de pruebas (ventana)  
   
 ## <a name="see-also"></a>Vea también  
- [Generar a partir del uso](../misc/generate-from-usage.md)   
+ [Generar a partir del uso](../ide/visual-csharp-intellisense.md#generate-from-usage)   
  [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Usar IntelliSense](../ide/using-intellisense.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

@@ -1,19 +1,39 @@
 ---
-title: "C&#243;mo desbloquear Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/23/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo desbloquear Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 01/23/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 4a1e79dbceb4c0cfd02dab4b3132190e44ac3273
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
+
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
 Visual Studio se puede probar de forma gratuita durante 30 días. Si desea extender el período de prueba a 90 días, puede hacerlo al iniciar sesión en el IDE. Para seguir usando Visual Studio, desbloquee el IDE mediante  
@@ -25,7 +45,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear Visual Studio con una suscripción en línea  
  Para desbloquear Visual Studio mediante una suscripción en línea a Visual Studio o a MSDN que esté asociada con una cuenta Microsoft o con una cuenta profesional o educativa:  
   
-1.  Haga clic en el botón “Iniciar sesión” en la esquina superior derecha del IDE (o vaya a Archivo > Configuración de la cuenta para abrir el cuadro de diálogo Configuración de la cuenta y haga clic en el botón “Iniciar sesión”).  
+1.  Haga clic en el botón "Iniciar sesión" en la esquina superior derecha del IDE (o vaya a Archivo > Configuración de la cuenta para abrir el cuadro de diálogo Configuración de la cuenta y haga clic en el botón "Iniciar sesión").  
   
 2.  Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio encontrará la suscripción a MSDN o a Visual Studio Team Services que está asociada con su cuenta.  
   
@@ -66,13 +86,8 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
   
 1.  Renovar su suscripción. Para obtener más información sobre su licencia actual, vaya a Archivo > Configuración de la cuenta y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo.  
   
-2.  Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo “Agregar una cuenta...” .  
+2.  Si tiene otra suscripción asociada con una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo "Agregar una cuenta...".  
   
 ## <a name="see-also"></a>Vea también  
  [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

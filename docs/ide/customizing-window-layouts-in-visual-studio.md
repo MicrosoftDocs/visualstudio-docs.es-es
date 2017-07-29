@@ -1,34 +1,54 @@
 ---
-title: "Personalizar los dise&#241;os de ventana de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/23/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.windows"
-  - "vs.environment"
-helpviewer_keywords: 
-  - "Ocultar automáticamente (ventanas)"
-  - "diseños personalizados"
-  - "configuraciones de ventanas personalizadas"
-  - "modo de depuración"
-  - "ventanas de documento [Visual Studio]"
-  - "modos de interfaz"
-  - "diseño [Visual Studio], administración de ventanas"
-  - "MDI, modos de interfaz de ventana"
-  - "varios monitores"
-  - "modo Organización por fichas"
-  - "ventanas [Visual Studio], administrar"
+title: "Personalizar los diseños de ventana de Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 01/23/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.windows
+- vs.environment
+helpviewer_keywords:
+- windows [Visual Studio], managing
+- custom window configurations
+- layout [Visual Studio], window management
+- document windows [Visual Studio]
+- interface modes
+- AutoHide windows
+- MDI, window interface modes
+- multiple monitors
+- Tabbed Document mode
+- debug mode
+- custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 27
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
+
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 En Visual Studio puede personalizar la posición, el tamaño y el comportamiento de las ventanas para crear los diseños de ventana que mejor funcionen con los distintos flujos de trabajo de desarrollo. Al personalizar el diseño, el IDE lo recuerda. Por ejemplo, si cambia la ubicación de acoplamiento del **Explorador de soluciones** y después cierra Visual Studio, la próxima vez que lo inicie, incluso si lo hace en otro equipo, el **Explorador de soluciones** estará acoplado en la misma ubicación. También puede dar un nombre al diseño personalizado, guardarlo y luego cambiar entre los diseños con un solo comando. Por ejemplo, puede crear un diseño para la edición y otro para la depuración, y cambiar entre ellos mediante el comando de menú **Ventana &#124; Aplicar diseño de ventana**.  
@@ -46,14 +66,14 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 ### <a name="tab-groups"></a>Grupos de pestañas  
  Los grupos de pestañas mejoran su capacidad de administrar un área de trabajo reducida mientras trabaja con dos o más documentos abiertos en el IDE. Puede organizar varias ventanas de documento y ventanas de herramientas en grupos de pestañas horizontales o verticales e intercambiar documentos de un grupo a otro.  
 
-### <a name="split-windows"></a>Dividir ventanas  
+### <a name="split-windows"></a>Ventanas divisoras  
  Cuando tiene que ver o editar dos ubicaciones a la vez en un documento, puede dividir las ventanas. Para dividir el documento en dos secciones con desplazamiento independiente, haga clic en **Dividir** en el menú **Ventana** . Haga clic en **Quitar división** en el menú **Ventana** para restaurar la vista única.  
 
 ### <a name="toolbars"></a>Barras de herramientas  
  Se pueden organizar las barras de herramientas arrastrando o utilizando el cuadro de diálogo **Personalizar** . Para obtener más información sobre cómo ubicar y personalizar las barras de herramientas, vea [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).  
 
 ## <a name="arrange-and-dock-windows"></a>Ordenar y acoplar las ventanas  
- Tanto las ventanas de documento como las ventanas de herramientas se pueden *acoplar*para que ocupen una posición dentro del marco de ventana del IDE o floten como una ventana independiente del IDE. Las ventanas de herramientas se pueden acoplar en cualquier lugar dentro del marco del IDE; algunas ventanas de herramientas se pueden acoplar como ventanas con fichas en el marco del editor. Las ventanas de documento se pueden acoplar dentro del marco del editor y se pueden anclar en su posición actual en el orden de tabulación. Puede acoplar varias ventanas flotantes juntas para que compartan espacio sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.  
+ Tanto las ventanas de documento como las ventanas de herramientas se pueden *acoplar*para que ocupen una posición dentro del marco de ventana del IDE o floten como una ventana independiente del IDE. Las ventanas de herramientas se pueden acoplar en cualquier lugar dentro del marco del IDE; algunas ventanas de herramientas se pueden acoplar como ventanas con fichas en el marco del editor. Las ventanas de documento se pueden acoplar dentro del marco del editor y se pueden anclar en su posición actual en el orden de tabulación. Puede acoplar varias ventanas flotantes juntas para que compartan "espacio" sobre el IDE o fuera de él. Las ventanas de herramientas también se pueden ocultar o minimizar.  
 
  Puede organizar las ventanas de la siguiente manera:  
 
@@ -74,7 +94,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
  Las ventanas de herramientas y de documento se pueden organizar arrastrándolas, mediante los comandos del menú **Ventana** y haciendo clic con el botón derecho en la barra de título de la ventana que se desea organizar.  
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
 
 ### <a name="dock-windows"></a>Acoplar ventanas  
  Al hacer clic y arrastrar la barra de título de una ventana de herramientas o la pestaña de una ventana de documento, aparece un rombo de guía. Durante la operación de arrastre, cuando el cursor del ratón se encuentra sobre una de las flechas del rombo, aparece un área sombreada que muestra dónde se acoplará la ventana al soltar el botón del ratón.  
@@ -103,13 +123,13 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
  ![Ocultar automáticamente](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
->  Para establecer si Ocultar automáticamente se aplica a las ventanas de herramientas por separado o como grupos acoplados, active o desactive la opción **El botón Ocultar automáticamente afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones** . Para obtener más información, vea [General, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/general-environment-options-dialog-box.md).  
+>  Para establecer si Ocultar automáticamente se aplica a las ventanas de herramientas por separado o como grupos acoplados, active o desactive la opción **El botón Ocultar automáticamente afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones** . Para obtener más información, consulta [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  
 
 > [!NOTE]
 >  Las ventanas de herramientas que tienen habilitada la opción Ocultar automáticamente pueden deslizarse temporalmente en la vista cuando la ventana tiene el foco. Para volver a ocultar la ventana, seleccione un elemento fuera de la ventana actual. Cuando la ventana pierde el foco, vuelve a desaparecer.  
 
 ### <a name="specifying-a-second-monitor"></a>Especificar un segundo monitor  
- Si tiene un segundo monitor y su sistema operativo lo admite, puede elegir qué monitor muestra una ventana. Incluso puede agrupar varias ventanas en pilas en otros monitores.  
+ Si tiene un segundo monitor y su sistema operativo lo admite, puede elegir qué monitor muestra una ventana. Incluso puede agrupar varias ventanas en "pilas" en otros monitores.  
 
 > [!TIP]
 >  Puede crear varias instancias del **Explorador de soluciones** y moverlas a otro monitor. Haga clic con el botón derecho en la ventana y elija **Nueva vista del explorador de soluciones**. Puede devolver todas las ventanas al monitor original haciendo doble clic mientras presiona la tecla Ctrl.  
@@ -175,9 +195,4 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 ## <a name="related-topics"></a>Temas relacionados  
 
 [Cómo: moverse por el IDE de Visual Studio](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

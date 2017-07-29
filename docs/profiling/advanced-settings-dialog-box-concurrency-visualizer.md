@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: ae3359dc390dc5486d7de93a4b745f44fe7c0ae6
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
@@ -61,7 +61,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
  De forma predeterminada, los eventos de CLR se recopilan solo cuando se genera el perfil de un proceso administrado, porque normalmente son innecesarios para procesos nativos.  En algunos casos (por ejemplo, cuando un proceso nativo hospeda CLR), es posible que tenga que recopilar los eventos de CLR para un proceso nativo.  Si es así, seleccione la casilla **Recopilar procesos nativos**.  
   
 ### <a name="disable-rundown-events"></a>Deshabilitación de eventos de detención  
- CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [CLR ETW Providers](http://msdn.microsoft.com/Library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Proveedores de ETW de CLR).  
+ CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [CLR ETW Providers](/dotnet/framework/performance/clr-etw-providers) (Proveedores de ETW de CLR).  
   
 ### <a name="sample-events"></a>Eventos de muestras  
  Puede usar eventos de ejemplo para recopilar pilas de llamadas que están asociadas a la ejecución de subprocesos. Estos eventos se recopilan aproximadamente una vez por milisegundo para los subprocesos que se ejecutan en el proceso actual. Si deshabilita la recopilación de eventos de ejemplo, se reduce el tamaño del seguimiento recopilado, pero no se podrán ver las pilas de llamadas que están asociadas a la ejecución de subprocesos.  

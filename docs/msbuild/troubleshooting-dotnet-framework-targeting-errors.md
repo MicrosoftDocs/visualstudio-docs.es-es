@@ -37,10 +37,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 23510bfb61028db6d62912066bc6f4756e8ec37e
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 0fb16d2625bde02a6370a1f06483d7b486c46f4a
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
@@ -74,6 +74,6 @@ En este tema se describen los errores de MSBuild que pueden producirse debido a 
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1)  (Perfil de cliente de .NET Framework)  
+ [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)  (Perfil de cliente de .NET Framework)  
  [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)

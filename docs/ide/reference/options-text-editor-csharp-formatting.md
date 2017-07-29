@@ -1,61 +1,78 @@
 ---
-title: "Opciones, editor de texto, C#, formato | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.General"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Indentation"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.NewLines"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Indentation"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Wrapping"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Spacing"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting"
-helpviewer_keywords: 
-  - "aplicar formato [C#]"
-  - "aplicar formato [J#]"
-  - "Cuadro de diálogo Opciones del Editor de texto, formato"
+title: Opciones, editor de texto, C#, formato | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Indentation
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.NewLines
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Indentation
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Wrapping
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Wrapping
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting
+helpviewer_keywords:
+- formatting [C#]
+- formatting [J#]
+- Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
----
-# Opciones, editor de texto, C#, formato
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: a157bb6b5e29bb90fcd033f58657887f610b4835
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-El cuadro de diálogo de página de propiedades **Formato** se utiliza para establecer las opciones de formato del código en el Editor de código.  Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda **Editor de texto**, expanda **C\#**y, a continuación, haga clic en **Formato**.  
+---
+# <a name="options-text-editor-c-formatting"></a>Opciones, editor de texto, C#, formato
+Use el cuadro de diálogo de la página de propiedades **Formato** para establecer las opciones para proporcionar formato al código en el Editor de código. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda **Editor de texto**, expanda **C#** y, después, haga clic en **Formato**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Configuración general  
- La configuración general afecta a cómo el Editor de código aplica las opciones de formato al código.  
+## <a name="general-settings"></a>Configuración general  
+ La configuración general afecta a la manera en que el Editor de código aplica las opciones de formato al código.  
   
-## Lista de UIElement  
+## <a name="uielement-list"></a>Lista de UIElement  
   
 |Etiqueta|Descripción|  
-|--------------|-----------------|  
-|**Formato completado automáticamente de la instrucción ;**|Cuando está activada, da formato al acabar a las instrucciones de acuerdo con las opciones de formato seleccionadas para el Editor de código.  Desactive esta casilla si no desea que el Editor de código modifique las instrucciones.|  
-|**Formato completado automáticamente del bloque }**|Cuando está activada, da formato a los bloques de código tan pronto como éstos finalizan, de acuerdo con las opciones de formato seleccionadas para el Editor de código.  Desactive esta casilla si no desea que el Editor de código modifique los bloques.|  
-|**Ajustar sangría al pegar**|Cuando está activada, da formato a texto pegado en el Editor de código de forma que se ajuste a las opciones de formato seleccionadas para el Editor de código.  Desactive esta casilla si no desea modificar el texto pegado.|  
+|-----------|-----------------|  
+|**Dar formato automáticamente a la instrucción completada al introducir ;**|Cuando está seleccionada, da formato a las instrucciones a su finalización según las opciones de formato seleccionadas para el Editor de código. Desactive esta casilla si no quiere que el Editor de código modifique las instrucciones.|  
+|**Dar formato automáticamente al bloque completado al introducir }**|Cuando está seleccionada, da formato a los bloques de código según las opciones de formato seleccionadas para el Editor de código tan pronto como complete el bloque de código. Desactive esta casilla si no quiere que el Editor de código modifique los bloques.|  
+|**Ajustar sangría al pegar**|Cuando está seleccionada, da formato al texto pegado en el Editor de código para que se adapte a las opciones de formato seleccionadas para el Editor de código. Desactive esta casilla si no quiere que se modifique el texto pegado.|  
   
-## Vista previa \(ventana\)  
- Los paneles **Sangría**, **Nuevas líneas**, **Espaciado** y **Ajuste** presentan una ventana de vista previa.  La ventana de vista previa muestra el efecto de cada opción.  Para utilizar la ventana de vista previa, seleccione una opción de formato.  La ventana de vista previa muestra un ejemplo de la opción seleccionada.  Cuando modifica los valores, por ejemplo, al activar o desactivar una casilla para modificar la configuración, se actualiza la ventana de vista previa para mostrar el efecto de esta nueva configuración.  
+## <a name="preview-window"></a>Ventana Vista previa  
+ Los panales de opciones **Sangría**, **Nuevas líneas**, **Espaciado** y **Ajuste** muestran una ventana de vista previa. La ventana de vista previa muestra el efecto de cada opción. Para usar la ventana de vista previa, seleccione una opción de formato. La ventana de vista previa muestra un ejemplo de la opción seleccionada. Cuando cambia la configuración, por ejemplo, cuando activa o desactiva una casilla, la ventana de vista previa se actualiza para mostrar el efecto de la nueva configuración.  
   
-## Comentarios  
- Las opciones de sangría de las páginas **Tabulaciones** de cada idioma determinan únicamente dónde se situará el cursor en el Editor de código cuando se presione ENTRAR al final de una línea.  Las opciones de sangría de **Formato** se aplican cuando se aplica el formato al código automáticamente, por ejemplo, cuando se pega el código en el archivo con la opción **Ajustar sangría al pegar** activada, y también cuando se escribe manualmente el bloque al que se aplica el formato.  
+## <a name="remarks"></a>Comentarios  
+ Las opciones de sangría de las páginas **Pestañas** para cada idioma solo determinan dónde coloca el cursor el Editor de código cuando presiona ENTRAR al final de una línea. Las opciones de sangría en **Formato** se aplican cuando se aplica formato al código automáticamente, por ejemplo, cuando pega código en el archivo mientras la opción **Ajustar sangría al pegar** está seleccionada, y cuando el bloque al que se está dando formato se escribe manualmente.  
   
-## Vea también  
- [General, Entorno, Opciones \(Cuadro de diálogo\)](../../ide/reference/general-environment-options-dialog-box.md)
+## <a name="see-also"></a>Vea también  
+ [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)

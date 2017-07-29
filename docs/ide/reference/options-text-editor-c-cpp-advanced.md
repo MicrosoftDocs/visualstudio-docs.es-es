@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: aecc19cb20592940ab773322764e5383365b3865
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
@@ -45,7 +46,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.  
   
 > [!NOTE]
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="browsingnavigation"></a>Exploración o navegación  
  Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.  
@@ -60,7 +61,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  La base de datos de exploración de código no se actualizará automáticamente cuando se modifiquen los archivos de código fuente. En cambio, si abre el **Explorador de soluciones**, abre el menú contextual del proyecto y, después, pulsa **Volver a examinar la solución**, todos los archivos obsoletos se comprobarán y la base de datos se actualizará.  
   
  **Deshabilitar los archivos implícitos**  
- La base de datos de exploración de código no recopila datos para los archivos que no se especifican en un proyecto. Un proyecto contiene archivos de origen y archivos de encabezado que se especifican explícitamente. Los archivos implícitos se incluyen mediante archivos explícitos (por ejemplo, afxwin.h, windows.h y atlbase.h). Normalmente, el sistema busca estos archivos y también los indexa para diferentes características de exploración (incluida Navegar a). Si elige esta opción, esos archivos no se indexan y algunas características no están disponibles para ellos. Si elige esta opción, "Deshabilitar limpieza implícita" y "Deshabilitar carpetas de dependencias externas" también se eligen de manera implícita.  
+ La base de datos de exploración de código no recopila datos para los archivos que no se especifican en un proyecto. Un proyecto contiene archivos de origen y archivos de encabezado que se especifican explícitamente. Los archivos implícitos se incluyen mediante archivos explícitos (por ejemplo, afxwin.h, windows.h y atlbase.h). Normalmente, el sistema busca estos archivos y también los indexa para diferentes características de exploración (incluida Navegar a). Si elige esta opción, esos archivos no se indexan y algunas características no están disponibles para ellos. Si selecciona esta opción, "Deshabilitar limpieza implícita" y "Deshabilitar carpetas de dependencias externas" también se seleccionan de manera implícita.  
   
  **Deshabilitar limpieza implícita**  
  La base de datos de exploración de código no limpia archivos implícitos a los que ya no se hace referencia. Esta opción impide que los archivos implícitos se quiten de la base de datos cuando ya no se usan. Por ejemplo, si agrega una directiva `#include` que hace referencia a mapi.h en uno de los archivos de origen, mapi.h se encontrará e indexará. Si después quita #include y no se hace referencia al archivo en ningún lugar, la información sobre este se quitará finalmente a menos que elija esta opción. (Vea la opción **Intervalo para volver a examinar la solución**). Esta opción se ignora cuando vuelve a examinar la solución explícitamente.  
@@ -122,10 +123,10 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Deshabilita todas las características de IntelliSense. El IDE no crea procesos VCPkgSrv.exe para atender las solicitudes de IntelliSense, y ninguna característica de IntelliSense funcionará (Información rápida, Lista de miembros, Autocompletar, Ayuda de Parám). La coloración semántica y el resaltado de referencias también están deshabilitados. Esta opción no deshabilita las características de exploración que se basan únicamente en la base de datos (incluida la barra de navegación, ClassView y la ventana Propiedades).  
   
  **Deshabilitar actualización automática**  
- La actualización de IntelliSense se retrasa hasta que se realice una solicitud real de IntelliSense. Este retraso puede provocar un tiempo de ejecución mayor de la primera operación de IntelliSense en un archivo, pero puede resultar útil para establecer esta opción en equipos con recursos limitados o muy lentos. Si elige esta opción, también elige implícitamente las opciones "Deshabilitar informe de errores" y "Deshabilitar subrayados ondulados".  
+ La actualización de IntelliSense se retrasa hasta que se realice una solicitud real de IntelliSense. Este retraso puede provocar un tiempo de ejecución mayor de la primera operación de IntelliSense en un archivo, pero puede resultar útil para establecer esta opción en equipos con recursos limitados o muy lentos. Si selecciona esta opción, también selecciona implícitamente las opciones "Deshabilitar informe de errores" y "Deshabilitar subrayados ondulados".  
   
  **Deshabilitar informe de errores**  
- Deshabilita los informes de errores de IntelliSense con subrayados ondulados y la ventana Lista de errores. También deshabilita el análisis en segundo plano asociado con los informes de errores. Si elige esta opción, también elige implícitamente la opción "Deshabilitar subrayados ondulados".  
+ Deshabilita los informes de errores de IntelliSense con subrayados ondulados y la ventana Lista de errores. También deshabilita el análisis en segundo plano asociado con los informes de errores. Si selecciona esta opción, también selecciona implícitamente la opción "Deshabilitar subrayados ondulados".  
   
  **Deshabilitar subrayados ondulados**  
  Deshabilita los subrayados ondulados de errores de IntelliSense. Los "subrayados ondulados" rojos no se muestran en la ventana del editor, pero el error seguirá apareciendo en la ventana Lista de errores.  
@@ -134,7 +135,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Deshabilita el autocompletado de instrucciones `#include`.  
   
  **Usar barra diagonal en autocompletado #include**  
- Desencadena el autocompletado de instrucciones `#include` cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\". El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.  
+ Desencadena el autocompletado de instrucciones `#include` cuando se usa "/". El delimitador predeterminado es la barra diagonal inversa "\'. El compilador puede aceptar cualquiera, por lo que use esta opción para especificar la que usa su código base.  
   
  **Unidades máximas de traducción en caché**  
  Número máximo de unidades de traducción que se mantendrán activas al mismo tiempo para solicitudes de IntelliSense. Debe especificar un valor entre 2 y 15. Este número se relaciona directamente con el número máximo de procesos VCPkgSrv.exe que se ejecutarán (para una instancia determinada de Visual Studio). El valor predeterminado es 2, pero si tiene memoria disponible, puede aumentar este valor y posiblemente conseguir un rendimiento ligeramente mejor en IntelliSense.  

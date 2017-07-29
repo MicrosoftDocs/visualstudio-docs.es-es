@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 47cc71da3637ae7f3bdb7ff4b09451a87d546bff
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: e165ec6487a17819313dacd819ca1147b9953339
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="localizing-applications"></a>Localizar aplicaciones
@@ -59,7 +60,7 @@ ms.lasthandoff: 02/22/2017
  [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Trata de los conceptos relacionados con el desarrollo de software para un mercado internacional mediante Visual Basic o Visual C#.  
   
- [Globalizar Windows Forms](http://msdn.microsoft.com/Library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizar Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Proporciona vínculos a páginas sobre la creación de aplicaciones Windows que admiten varias referencias culturales.  
   
  [Globalización y localización](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  

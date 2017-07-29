@@ -28,13 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: c0966f42efc54452d0f7cd11e19c6f82f7686474
-ms.openlocfilehash: 079c15ffcc9b51fc1f4630051c561f9f8ff7fb87
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
-Tras completar este tutorial, estará familiarizado con muchas de las herramientas y cuadros de diálogo que puede utilizar para desarrollar aplicaciones con Visual Studio. Creará una aplicación sencilla de estilo "Hola a todos" mientras aprende más sobre cómo trabajar en el entorno de desarrollo integrado (IDE).  
+Tras completar este tutorial, estará familiarizado con muchas de las herramientas y cuadros de diálogo que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación sencilla de estilo "Hola a todos" mientras aprende más sobre cómo trabajar en el entorno de desarrollo integrado (IDE).  
   
  Este tema contiene las siguientes secciones:  
   
@@ -48,8 +50,8 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  [Compilar una versión de lanzamiento de la aplicación](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
   
-##  <a name="a-namebkmkconfigurea-sign-in-to-visual-studio"></a><a name="BKMK_Configure"></a> Iniciar sesión en Visual Studio  
- Al iniciar Visual Studio por primera vez, tendrá la oportunidad de iniciar sesión con una cuenta de Microsoft como Live o Outlook. El inicio de sesión permite sincronizar su configuración en todos los dispositivos. Para obtener más información, vea [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md).  
+##  <a name="BKMK_Configure"></a> Iniciar sesión en Visual Studio  
+ Al iniciar Visual Studio por primera vez, tendrá la oportunidad de iniciar sesión con una cuenta de Microsoft como Live o Outlook. El inicio de sesión permite sincronizar su configuración en todos los dispositivos. Para obtener más información, vea [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)  
   
  Figura 1: IDE de Visual Studio  
   
@@ -57,7 +59,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  Después de abrir Visual Studio, puede ver las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. El centro de la ventana de la aplicación contiene la **Página principal**. Cuando se abre una solución o un proyecto, los editores y diseñadores aparecen en este espacio. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.  
   
-##  <a name="a-namebkmkcreateappa-create-a-simple-application"></a><a name="BKMK_CreateApp"></a> Crear una aplicación sencilla  
+##  <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla  
  Cuando cree una aplicación en Visual Studio, cree primero un proyecto y una solución. Para este ejemplo, creará una aplicación de consola de Windows.  
   
 #### <a name="to-create-a-console-app"></a>Para crear una aplicación de consola  
@@ -81,10 +83,10 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  ![Archivos para la solución en el Explorador de soluciones](../ide/media/c--ide_solutioncontents.png "C++IDE_SolutionContents")  
   
-##  <a name="a-namebkmkaddcodea-add-code-to-the-application"></a><a name="BKMK_AddCode"></a> Agregar código a la aplicación  
+##  <a name="BKMK_AddCode"></a> Agregar código a la aplicación  
  A continuación, agregará código para mostrar la palabra "Hola" en la ventana de la consola.  
   
-#### <a name="to-display-hello-in-the-console-window"></a>Para mostrar “Hola” en la ventana de la consola  
+#### <a name="to-display-hello-in-the-console-window"></a>Para mostrar "Hola" en la ventana de la consola  
   
 1.  En el archivo GreetingsConsoleApp.cpp, escriba una línea en blanco antes de la línea `return 0;` y, después, escriba el código siguiente:  
   
@@ -107,7 +109,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
     using namespace std;  
     ```  
   
-     Probablemente ha observado que, al escribir código, apareció un cuadro que proporciona sugerencias para los caracteres escritos. Este cuadro forma parte de IntelliSense de C++, que proporciona indicaciones de codificación, incluida información sobre miembros de interfaz o clase y parámetros. También puede usar fragmentos de código, que son bloques de código predefinidos. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md) y [Fragmentos de código](../ide/code-snippets.md).  
+     Probablemente ha observado que, al escribir código, apareció un cuadro que proporciona sugerencias para los caracteres escritos. Este cuadro forma parte de IntelliSense de C++, que proporciona indicaciones de codificación, incluida información sobre miembros de interfaz o clase y parámetros. También puede usar fragmentos de código, que son bloques de código predefinidos. Para obtener más información, vea [Using IntelliSense](../ide/using-intellisense.md) y [Code Snippets](../ide/code-snippets.md).  
   
      La línea ondulada roja bajo `cout` desaparece cuando se corrige el error.  
   
@@ -115,7 +117,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
      ![Código que corrige un error de cout](../ide/media/c--ide_coutfix.png "C++IDE_CoutFix")  
   
-##  <a name="a-namebkmkdebugtesta-debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> Depurar y probar la aplicación  
+##  <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación  
  Puede depurar GreetingsConsoleApp para ver si aparece la palabra "Hola" en la ventana de consola.  
   
 #### <a name="to-debug-the-application"></a>Para depurar la aplicación  
@@ -144,7 +146,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  Para obtener más información, vea [Preparación de la depuración: proyectos de consola](../debugger/debugging-preparation-console-projects.md).  
   
-##  <a name="a-namebkmkbuildreleasea-build-a-release-version-of-the-app"></a><a name="BKMK_BuildRelease"></a> Compilar una versión de lanzamiento de la aplicación  
+##  <a name="BKMK_BuildRelease"></a> Compilar una versión de lanzamiento de la aplicación  
  Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzamiento de la aplicación.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Para limpiar los archivos de solución y crear una versión de lanzamiento  
@@ -169,8 +171,3 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
  [Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md)   
  [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)   
  [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

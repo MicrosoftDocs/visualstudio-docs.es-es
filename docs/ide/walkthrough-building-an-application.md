@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 4f237be3ffdfe2bca52e885822a9fbfbbf97ba6a
-ms.openlocfilehash: 738e8c25509253872274a49303b2b02a8f7ba1a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="walkthrough-building-an-application"></a>Tutorial: Compilar una aplicación
@@ -108,7 +109,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 4.  En la lista **Plataforma de soluciones activas**, elija **Nueva**.  
   
-5.  En el cuadro de diálogo **Nueva plataforma de solución**, elija **x64** y no copie valores de la plataforma x86.  
+5.  En el cuadro de diálogo **Nueva plataforma de solución**, pulse **x64** y no copie valores de la plataforma x86.  
   
      ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -123,7 +124,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
  ![Opción Configuración de soluciones de la barra de herramientas Estándar](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> Compilar la aplicación  
- A continuación, compilará la solución con la configuración de compilación personalizada.  
+ Después, compilará la solución con la configuración de compilación personalizada.  
   
 #### <a name="to-build-the-solution"></a>Para compilar la solución  
   
@@ -237,7 +238,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
      Por ejemplo, puede especificar \\\miServidor\compilaciones.  
   
     > [!IMPORTANT]
-    >  Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, elija el botón **Aceptar** en el cuadro de mensaje.  
+    >  Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, pulse el botón **Aceptar** en el cuadro de mensaje.  
   
 6.  Compile la aplicación.  
   
@@ -260,7 +261,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
      Por ejemplo, puede especificar \\\miServidor\compilaciones.  
   
     > [!IMPORTANT]
-    >  Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, elija el botón **Aceptar** en el cuadro de mensaje.  
+    >  Puede aparecer un cuadro de mensaje advirtiéndole que el recurso compartido de red que ha especificado puede no ser una ubicación de confianza. Si confía en la ubicación que ha especificado, pulse el botón **Aceptar** en el cuadro de mensaje.  
   
 6.  Compile la aplicación.  
   
@@ -268,10 +269,10 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
  El archivo ejecutable se copia a la ruta de acceso de red especificada. Su ruta de acceso sería \\\miServidor\compilaciones\\*NombreDeArchivo*.exe.  
   
- Enhorabuena: ha completado correctamente este tutorial.  
+ Ha completado correctamente este tutorial.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Compilar un proyecto (C++)](http://msdn.microsoft.com/Library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [Tutorial: Compilar un proyecto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)
 

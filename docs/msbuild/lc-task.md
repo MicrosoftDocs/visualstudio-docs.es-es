@@ -37,14 +37,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 7b4ae3bba069cb1218b4ff1cf0b78877d10dfd34
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: ef360d3cd27cff60ff030a33a73a4c38957caf14
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="lc-task"></a>LC (Tarea)
-Ajusta LC.exe, que genera un archivo .license de un archivo .licx. Para obtener más información sobre LC.exe, vea [Lc.exe (License Compiler)](http://msdn.microsoft.com/Library/2de803b8-495e-4982-b209-19a72aba0460).  
+Ajusta LC.exe, que genera un archivo .license de un archivo .licx. Para obtener más información sobre LC.exe, vea [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).  
   
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `LC`.  
@@ -57,7 +58,7 @@ Ajusta LC.exe, que genera un archivo .license de un archivo .licx. Para obtener 
 |`OutputLicense`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica el nombre de los archivos .license. Si no especifica un nombre, se utiliza el nombre del archivo .licx y el archivo .licenses se coloca en el directorio que contiene el archivo .licx.|  
 |`ReferencedAssemblies`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los componentes a los que se hace referencia que se cargarán al generar el archivo .license.|  
 |`SdkToolsPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a las herramientas del SDK, tales como resgen.exe.|  
-|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que contienen los componentes con licencia que se incluirán en el archivo .licenses. Para obtener más información, consulte la documentación sobre el modificador `/complist` en [Lc.exe (License Compiler)](http://msdn.microsoft.com/Library/2de803b8-495e-4982-b209-19a72aba0460).|  
+|`Sources`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los elementos que contienen los componentes con licencia que se incluirán en el archivo .licenses. Para obtener más información, consulte la documentación sobre el modificador `/complist` en [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).|  
   
  Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
   

@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
@@ -44,7 +45,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Estas características están disponibles en una instalación de Visual Studio 2017.  
   
 > [!NOTE]
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="enable-predictive-intellisense"></a>Habilitar Intellisense predictivo
 IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe <code>int x =</code> e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
@@ -59,7 +60,7 @@ Para conocer las características adicionales del editor de texto de la Galería
   
 -   **Agregar mediante espacio de nombres o símbolo completo** : similar al elemento anterior, pero para espacios de nombres  
   
--   **Agregar el punto y coma que falta**  
+-   **Agregar punto y coma faltante**  
   
 -   **Ayuda de MSDN** : buscar en MSDN los mensajes de error  
   

@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: d5369897f905889b45d079a9da3ee772acae6a2a
-ms.openlocfilehash: 6d097a34e0346c1f27ed6debb49f0ee83a509e14
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 562b3eb92d35b00a136b19c3e659468cadcefba5
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="visual-studio-notifications"></a>Notificaciones de Visual Studio
@@ -39,7 +40,7 @@ Visual Studio tiene un sistema de notificación que le avisa de diversos eventos
 - Hay disponible una actualización de Visual Studio o de un componente de Visual Studio.  
 - Se ha producido un evento de entorno que podría interesarle.  
   
- Visual Studio le avisa cuando hay una actualización disponible para Visual Studio o para cualquiera de los componentes instalados. También proporciona notificaciones sobre determinados tipos de eventos que se producen en el entorno de Visual Studio. El icono de notificación es una marca situada en la esquina superior derecha de la barra de título de Visual Studio; cuando el icono está en rojo, significa que hay un problema con la licencia. Cuando está en amarillo, hay una actualización de producto de Visual Studio disponible para instalarla. Cuando está «normal» o en negro, verá los mensajes informativos u opcionales (por ejemplo, bloqueos para los que tal vez desee buscar una solución alternativa. Puede hacer clic en el icono para abrir el **Centro de notificaciones** y elegir en las que quiera intervenir. Puede optar por descartar una vez una notificación o ignorarla siempre (desplazando el puntero sobre ella); así, Visual Studio no le volverá a mostrar más ese mensaje.  
+ Visual Studio le avisa cuando hay una actualización disponible para Visual Studio o para cualquiera de los componentes instalados. También proporciona notificaciones sobre determinados tipos de eventos que se producen en el entorno de Visual Studio. El icono de notificación es una marca situada en la esquina superior derecha de la barra de título de Visual Studio; cuando el icono está en rojo, significa que hay un problema con la licencia. Cuando está en amarillo, hay una actualización de producto de Visual Studio disponible para instalarla. Cuando está "normal" o en negro, verá los mensajes informativos u opcionales, por ejemplo, bloqueos para los que tal vez quiera buscar una solución alternativa. Puede hacer clic en el icono para abrir el **Centro de notificaciones** y elegir en las que quiera intervenir. Puede optar por descartar una vez una notificación o ignorarla siempre (desplazando el puntero sobre ella); así, Visual Studio no le volverá a mostrar más ese mensaje.  
   
  Si elige ignorar siempre una notificación, Visual Studio dejará de mostrarla. Puede restablecer la lista de notificaciones omitidas en el [cuadro de diálogo Notificaciones, Entorno, Opciones](../ide/reference/notifications-environment-options-dialog-box.md).  
   

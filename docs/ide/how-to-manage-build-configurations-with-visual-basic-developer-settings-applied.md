@@ -1,51 +1,68 @@
 ---
-title: "C&#243;mo: Administrar configuraciones de compilaci&#243;n a las que se han aplicado opciones del desarrollador de Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "configuraciones de compilación avanzadas"
-  - "compilar con opciones del desarrollador de Visual Basic"
-  - "compilaciones de depuración"
-  - "MSBuild, versión de depuración"
-  - "MSBuild, versión de lanzamiento"
-  - "versiones de lanzamiento"
-  - "Visual Studio, compilar con opciones de Visual Basic"
+title: "Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio, building with Visual Basic settings
+- MSBuild, debug build
+- advanced build configurations
+- building with Visual Basic developer settings
+- debug builds
+- MSBuild, release build
+- release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# C&#243;mo: Administrar configuraciones de compilaci&#243;n a las que se han aplicado opciones del desarrollador de Visual Basic
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 782d860d94cd9e7d4967076a5ea0d3fe86b29400
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-De manera predeterminada, todas las opciones de configuración de compilación avanzadas se ocultan si se aplica la configuración de desarrollador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  En este tema se explica cómo habilitar manualmente esta configuración.  
+---
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
+De manera predeterminada, todas las opciones de configuración de compilación avanzadas están ocultas con las opciones del desarrollador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aplicadas. En este tema se explica cómo habilitar manualmente estas opciones.  
   
-## Habilitar configuraciones de compilación avanzadas  
- De forma predeterminada, la configuración de desarrollador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oculta la opción para abrir el cuadro de diálogo **Administrador de configuración** y las listas **Configuración** y **Plataforma** del [Diseñador de proyectos](http://msdn.microsoft.com/es-es/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+## <a name="enabling-advanced-build-configurations"></a>Habilitar las configuraciones de compilación avanzadas  
+ De manera predeterminada, las opciones del desarrollador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ocultan la opción para abrir el cuadro de diálogo **Administrador de configuración** y las listas **Configuración** y **Plataforma** en el [Diseñador de proyectos](..//ide/reference/application-page-project-designer-visual-basic.md).  
   
-#### Para habilitar las configuraciones de compilación avanzadas  
+#### <a name="to-enable-advanced-build-configurations"></a>Para habilitar las configuraciones de compilación avanzadas  
   
-1.  En el menú **Herramientas**, haga clic en **Opciones**.  
+1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
 2.  Expanda **Proyectos y soluciones** y haga clic en **General**.  
   
     > [!NOTE]
-    >  El nodo **General** es visible incluso si está desactivada la opción **Mostrar todas las configuraciones**.  Si desea ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.  
+    >  El nodo **General** es visible incluso si la opción **Mostrar todas las configuraciones** no está activada. Si quiere ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.  
   
 3.  Haga clic en **Mostrar configuraciones de compilación avanzadas**.  
   
 4.  Haga clic en **Aceptar**.  
   
-     En el menú **Compilar**, ahora está disponible el **Administrador de configuración** y las listas **Configuración** y **Plataforma** están visibles en el Diseñador de proyectos.  
+     En el menú **Compilar**, **Administrador de configuración** ahora está disponible y las listas **Configuración** y **Plataforma** están visibles en el Diseñador de proyectos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Compilar aplicaciones en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
+ [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)

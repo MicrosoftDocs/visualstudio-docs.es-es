@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 15f7678c7d0cba1afaa71e0443efc756880d99cc
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 078619c93e18fd25dfbc728d75835f5af58988fe
+ms.contentlocale: es-es
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="get-started-with-visual-studio"></a>Introducción a Visual Studio
@@ -55,7 +56,7 @@ Algunos tipos de soluciones pueden incluir ventanas denominadas *formularios*, c
 
 ### <a name="solution-explorer"></a>Explorador de soluciones
 
-Una ventana de herramientas denominada **Explorador de soluciones** enumera todos los archivos de código. El Explorador de soluciones puede ayudar a organizar el código agrupando sus archivos en soluciones y proyectos. El proyecto en negrita se denomina *proyecto de inicio*. es el primer código que se ejecuta cuando inicia la solución y, si lo desea, puede cambiarlo. Para obtener más información, vea el vídeo [Introducción a Visual Studio: Crear bloques del IDE](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
+Una ventana de herramientas denominada **Explorador de soluciones** enumera todos los archivos de código. El Explorador de soluciones puede ayudar a organizar el código agrupando sus archivos en soluciones y proyectos. El proyecto en negrita se denomina *proyecto de inicio*. Es el primer código que se ejecuta cuando inicia la solución. y, si lo desea, puede cambiarlo. Para obtener más información, vea el vídeo [Introducción a Visual Studio: Crear bloques del IDE](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK).
 
 ![Nodos contraídos del Explorador de soluciones](../ide/media/VSIDE_SolutionExplorer2_callouts.png)
 

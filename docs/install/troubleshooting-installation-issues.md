@@ -1,6 +1,6 @@
 ---
 title: "Solución de problemas de instalación | Microsoft Docs"
-description: "{{MARCADOR DE POSICIÓN}}"
+description: "En ocasiones, algo no sale según lo previsto. Si se produce un error en la actualización o instalación de Visual Studio, esta página puede ayudarle."
 ms.date: 04/14/2017
 ms.reviewer: 
 ms.suite: 
@@ -31,13 +31,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: d8125873ab5a92d9af26c556cb2f953a606c28d9
+ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
+ms.openlocfilehash: e6c301a7b784c5966d4f7216e67067ef6ce3ed70
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-failures"></a>Solución de problemas de instalación de Visual Studio 2017 y errores de actualización
+# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio 2017
 
 ## <a name="symptoms"></a>Síntomas
 Cuando intenta instalar o actualizar Microsoft Visual Studio 2017, la operación da error.
@@ -58,7 +58,7 @@ El programa previo del instalador de Visual Studio es un ejecutable mínimo de p
 2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es C:\Archivos de programa (x86)\Microsoft Visual Studio\Installer.
 3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón ```vs_[Visual Studio edition]__*.exe```. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/) y haga clic en **Descargar** en su edición de Visual Studio. Ejecute este ejecutable para restablecer sus metadatos de instalación.
 4. Intente instalar o actualizar de nuevo Visual Studio. Si el programa de instalación sigue dando error, vaya inmediatamente al paso 4 a continuación.
-<br/>**Nota:** Este paso reinstala los archivos de Visual Studio y restablece los metadatos de instalación. 
+<br/>**Nota:** Este paso reinstala los archivos de Visual Studio y restablece los metadatos de instalación.
 
 ### <a name="step-4---report-a-problem"></a>Paso 4: Notificación de un problema
 En algunas situaciones, como las relacionadas con los archivos dañados, los problemas se pueden examinar caso por caso:
@@ -92,6 +92,4 @@ Esta es una tabla de problemas conocidos y algunas soluciones que podrían servi
 | ----------- | ---------------------- | -------- |
 | Los usuarios no tienen acceso a los archivos. | permisos (ACL) | Asegúrese de que ajusta los permisos (ACL) de manera que concedan acceso de lectura a otros usuarios *antes* de compartir la instalación sin conexión. |
 | Las nuevas cargas de trabajo, componentes o idiomas no se instalarán.  | `--layout`  | Asegúrese de que tiene acceso a Internet si instala desde un diseño parcial y selecciona cargas de trabajo, componentes o idiomas que no están disponibles en el diseño anterior. |
-
-
 

@@ -3,15 +3,14 @@ layout: LandingPage
 title: "Generación de perfiles de aplicaciones con Visual Studio"
 description: "Aprenda a usar Visual Studio 2017 para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección."
 ms.technology: vs-ide-debug
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 6b54253dadb80dd6881ba366b5bb466f4eae7706
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: e90fc5b4997acd7a9228e8132eb00f6f32ed2d3d
 ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 
 ---
-# Generación de perfiles en Visual Studio
-<a id="profiling-in-visual-studio" class="xliff"></a>
+# <a name="profiling-in-visual-studio"></a>Generación de perfiles en Visual Studio
 
 La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular datos (como valores de variables, llamadas a funciones y eventos) durante el tiempo que se ejecute la aplicación en el depurador. Puede ver el estado de su aplicación en distintos momentos de la ejecución del código. 
 
@@ -53,7 +52,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
         </a>
     </li>
     <li>
-        <a href="https://www.youtube.com/watch?v=e-3txyAFzmw">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/beginners-guide-to-performance-profiling.md#video">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -63,7 +62,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vídeo sobre las herramientas de diagnóstico (VS 2015)</h3>
+                        <h3>Vídeo sobre las herramientas de diagnóstico</h3>
                     </div>
                 </div>
             </div>

@@ -1,19 +1,39 @@
 ---
-title: "Paso 6: Asignar un nombre a los controles de bot&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Paso 6: Asignar un nombre a los controles de botón | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 09ce424d13fd6fa2e6e511370f509dd54a7c1a1e
+ms.openlocfilehash: 9af9f76e799c39533785f9230be867ace4dbee6a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/19/2017
+
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay una casilla, denominada **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.  
@@ -33,7 +53,7 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
 Ventana Propiedades mostrando el nombre closeButton  
   
     > [!NOTE]
-    >  Si intenta cambiar el nombre del botón por **closeButton**, con un espacio entre las palabras Botón y Cerrar, el IDE muestra el mensaje de error: "El valor de propiedad no es válido". En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).  
+    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).  
   
 2.  Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton**y **showButton**. Puede comprobar los nombres eligiendo la lista desplegable de selección de controles de la ventana **Propiedades** . Aparecerán los nuevos nombres de los botones.  
   
@@ -44,8 +64,7 @@ Pestaña Form1.cs con código de Visual C#
   
 4.  Céntrese en esta parte del código. (Si utiliza Visual Basic, elija la pestaña **VB** que se muestra a continuación para ver la versión de Visual Basic del código).  
   
-     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
-     [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]  [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
   
      Se trata de código denominado `showButton_Click()`. El IDE lo agregó al código del formulario cuando abrió el archivo de código del botón **showButton** . En tiempo de diseño, cuando abra el archivo de código de un control de un formulario, se generará el código del control si este aún no existe. Este código, conocido como *método*, se ejecuta a la vez que el programa y elige el control (en este caso, el botón **Mostrar una imagen** ).  
   
@@ -61,8 +80,7 @@ Pestaña Form1.cs con código de Visual C#
   
      A continuación se muestra el nuevo código que aparece en el editor de código.  
   
-     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
-     [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]  [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
   
      Los cinco métodos que ha agregado se denominan *controladores de eventos*, porque el programa los llama cada vez que se produce un evento (por ejemplo, cuando un usuario elige un botón o activa una casilla).  
   
@@ -77,8 +95,3 @@ Pestaña Form1.cs con código de Visual C#
 -   Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

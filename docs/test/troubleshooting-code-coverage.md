@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e2d04ac6463143efacf4fe4967d9e555aed84d05
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: c435bb9e490e9a3c59de78f383632552c0ca4641
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="troubleshooting-code-coverage"></a>Solucionar problemas de cobertura de código
@@ -106,7 +106,7 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
  Compruebe que el ensamblado no se carga desde la memoria caché de imágenes nativas.  
   
  Explicación  
- Por razones de rendimiento, no se analizan ensamblados de imágenes nativas. Para obtener más información, vea el artículo sobre [Ngen.exe (generador de imágenes nativas)](http://msdn.microsoft.com/Library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Por razones de rendimiento, no se analizan ensamblados de imágenes nativas. Para obtener más información, vea el artículo sobre [Ngen.exe (generador de imágenes nativas)](/dotnet/framework/tools/ngen-exe-native-image-generator).  
   
  Resolución  
  Use una versión MSIL del ensamblado. No lo procese con NGen.  

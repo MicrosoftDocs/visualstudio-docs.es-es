@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f4740d442a7ef24803d6360cdcc480d9d6fca84
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5b67a4c254e2410302997dee5ec36a2243c6ed11
+ms.openlocfilehash: 29db26d6c885b297ff3b8c39776c9fe59ca3ea05
+ms.contentlocale: es-es
+ms.lasthandoff: 06/10/2017
 
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 Puede proporcionar un paquete para el consumo en proyectos de Visual Studio mediante la extensión NuGet para Visual Studio o un kit de desarrollo de software (SDK). Este tema puede ayudarle a elegir el mejor método para su tarea, ya que describe las similitudes y las diferencias entre los dos mecanismos.  
   
--   NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](http://go.microsoft.com/fwlink/?LinkId=254877) (Introducción a NuGet).  
+-   NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea la [documentación de NuGet](http://docs.microsoft.com/nuget).  
   
 -   Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra el cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).  
   

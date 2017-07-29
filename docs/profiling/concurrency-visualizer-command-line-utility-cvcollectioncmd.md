@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: da79533a7a40b6e1b79c66f023beba2c1162bd08
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: f219ae7937ea3810b58faa34f6320a627ede99ae
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
@@ -60,7 +60,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
   
 |Opción|Descripción|Parámetros|Valores devueltos|  
 |------------|-----------------|----------------|-------------------|  
-|Consulta|Devuelve si la recolección se puede iniciar.|Ninguna|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](http://msdn.microsoft.com/Library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
+|Consulta|Devuelve si la recolección se puede iniciar.|Ninguna|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](/dotnet/framework/wcf/samples/etw-tracing) necesarias ya están habilitadas.|  
 |Launch|Ejecuta el proceso especificado en el Visualizador de simultaneidad.|Ruta de acceso del archivo ejecutable.|0 si la ejecución se realizó correctamente.<br /><br /> 1 si se ha producido un error en la ejecución porque no se pudo iniciar la aplicación de destino.<br /><br /> 13 si se produjo un error en la ejecución porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Attach|Comienza a recopilar un seguimiento de todo el sistema; de lo contrario, se asocia a un proceso si se ha especificado uno.|Ninguno.|0 si la asociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la asociación porque el proceso especificado no era válido o era ambiguo.<br /><br /> 13 si se produjo un error en la asociación porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Desasociar|Detiene la recolección.|Ninguno.|0 si la desasociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la desasociación porque la recolección no estaba actualmente en curso.<br /><br /> 2 si se produjo un error en la desasociación porque no se pudo detener la recolección.|  
@@ -170,3 +170,4 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 </LocalConfig>  
   
 ```
+

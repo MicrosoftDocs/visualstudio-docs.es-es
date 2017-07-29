@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9b29250916c91c98176585bbdb8c5a4018dbd6c7
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.contentlocale: es-es
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
@@ -43,7 +44,7 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
 
  El asistente hace gran parte del trabajo de creación de la plantilla básica, pero en muchos casos deberá modificar manualmente el archivo .vstemplate después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de aplicación de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], tendrá que efectuar unos pasos adicionales. El [segundo procedimiento](../ide/how-to-create-item-templates.md#modify_template) de este tema le ayudará a realizar dicha tarea.  
 
- Para especificar que la plantilla solo debe aparecer para ciertos subtipos de proyecto, como Office, base de datos o web, vea [esta sección](../ide/how-to-create-multi-file-item-templates.md#enable_templates).  
+ Para especificar que la plantilla solo debe aparecer para ciertos subtipos de proyecto, como Office, base de datos o web, vea [esta sección](#enable_templates).  
 
  En algunos casos es posible que quiera o deba crear una plantilla de elementos manualmente desde cero. En el [tercer procedimiento](../ide/how-to-create-item-templates.md#create_template) se muestra cómo hacerlo.  
 
@@ -80,11 +81,13 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
 
 3.  Abra el archivo .vstemplate en Visual Studio.  
 
-4.  Para un proyecto de C# de tienda Windows 8.1, en el archivo .vstemplate, agregue el siguiente XML entre las etiquetas de apertura y de cierre `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4.  Para un proyecto de C# de Windows universal, en el archivo .vstemplate, agregue el siguiente XML entre la etiqueta `<TemplateData>` de apertura: `<TemplateID>Microsoft.CSharp.Class</TemplateID>`. 
 
-     Un proyecto de tienda Windows 8.1 de C++ usa un valor de `WinRT-Native-6.3`. Para tipos de proyecto de Windows 10 y otros, vea [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Para un proyecto de C# de tienda Windows 8.1, en el archivo .vstemplate, agregue el siguiente XML entre las etiquetas de apertura y de cierre `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
 
-     El ejemplo siguiente muestra el contenido completo de un archivo .vstemplate después de agregar la línea de código XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Este ejemplo es específico de los proyectos de C#. Puede modificar los elementos <ProjectTpe> y \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> para especificar otros tipos de lenguaje y proyecto.  
+    Un proyecto de tienda Windows 8.1 de C++ usa un valor de `WinRT-Native-6.3`. Para tipos de proyecto de Windows 10 y otros, vea [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+
+    El ejemplo siguiente muestra el contenido completo de un archivo .vstemplate después de agregar la línea de código XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Este ejemplo es específico de los proyectos de C#. Puede modificar los elementos <ProjectTpe> y \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> para especificar otros tipos de lenguaje y proyecto.  
 
     ```xml  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
@@ -116,8 +119,9 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
  Ahora puede agregar un elemento basado en esta plantilla a un proyecto de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] mediante el cuadro de diálogo **Agregar nuevo elemento**.  
 
  Para más información sobre los nombres de parámetro, vea [Parámetros de plantilla](../ide/template-parameters.md).  
-
-### <a name="to-enable-templates-for-specific-project-sub-types"></a>Para habilitar las plantillas para subtipos de proyecto específicos  
+  
+ 
+### <a name="enable_templates"></a> Para habilitar las plantillas para subtipos de proyecto específicos  
 
 1.  El entorno de desarrollo le permite disponer de elementos de proyecto desde el cuadro de diálogo Agregar elemento de determinados proyectos. Use este procedimiento para disponer de elementos personalizados para proyectos de Windows, Web, Office o proyectos de bases de datos.  
 

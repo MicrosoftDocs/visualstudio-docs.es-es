@@ -1,25 +1,45 @@
 ---
-title: "P&#225;gina de aplicaci&#243;n, Dise&#241;ador de proyectos (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cs.ProjectPropertiesApplicationWPF"
-  - "cs.ProjectPropertiesApplication"
-helpviewer_keywords: 
-  - "Diseñador de proyectos, página de aplicación"
-  - "Aplicación (página del Diseñador de proyectos)"
+title: "Página de aplicación, Diseñador de proyectos (C#) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cs.ProjectPropertiesApplicationWPF
+- cs.ProjectPropertiesApplication
+helpviewer_keywords:
+- Project Designer, Application page
+- Application page in Project Designer
 ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 56
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 56
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 3f0056a62dc11c5584e38e9912ccd94f5b9e9b0e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/26/2017
+
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 Use la página **Aplicación** del **Diseñador de proyectos** para especificar la configuración de la aplicación y las propiedades del proyecto.  
@@ -56,7 +76,7 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
   
  Para un proyecto de aplicación web, debe especificar **Biblioteca de clases**.  
   
- Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede especificar esta opción para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
+ Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede especificar esta opción para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
 > [!NOTE]
 >  Windows Runtime puede proyectar tipos, de manera que aparezcan como objetos nativos en cualquier lenguaje que los use. Por ejemplo, las aplicaciones de JavaScript que interactúan con Windows Runtime lo usan como un conjunto de objetos JavaScript y las aplicaciones de C# usan la biblioteca como una colección de objetos. NET. Al empaquetar la salida del proyecto como un archivo WinMD, puede aprovechar la misma tecnología que usa Windows Runtime.  
@@ -82,7 +102,7 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
  **Icono**  
  Establece el archivo .ico que quiere usar como su icono del programa. Haga clic en el botón de puntos suspensivos para buscar un gráfico existente o escriba el nombre del archivo que quiera. Para obtener más información, vea [/win32icon (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
- **Manifiesto**  
+ **Manifest**  
  Selecciona una opción de generación de manifiesto cuando la aplicación se ejecuta en Windows Vista en el Control de cuentas de usuario (UAC). Esta opción puede tener los valores siguientes:  
   
 -   **Incrustar manifiesto con la configuración predeterminada**. Admite la manera típica en la que funciona Visual Studio en Windows Vista, que consiste en insertar información de seguridad en el archivo ejecutable de la aplicación al especificar que `requestedExecutionLevel` sea `AsInvoker`. Ésta es la opción predeterminada.  
@@ -99,8 +119,3 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
 ## <a name="see-also"></a>Vea también  
 [Administrar las propiedades de la aplicación](../../ide/application-properties.md)  
  [Escribir código en soluciones de Office](/office-dev/office-dev/writing-code-in-office-solutions)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

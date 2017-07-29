@@ -23,8 +23,7 @@ ms.lasthandoff: 07/12/2017
 
 ---
 
-# Trabajo con R en Visual Studio
-<a id="working-with-r-in-visual-studio" class="xliff"></a>
+# <a name="working-with-r-in-visual-studio"></a>Trabajo con R en Visual Studio
 
 R es un entorno y lenguaje muy extensible para cálculos estadísticos y gráficos. Se distribuye de forma gratuita bajo la Licencia para el Público en General GNU, cuenta con soporte técnico de la comunidad seguro y se conoce por su capacidad para generar gráficos con calidad de publicación, como fórmulas y símbolos matemáticos. Puede obtener más información sobre R en [r project.org](https://www.r-project.org/about.html) y [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html) (Introducción a R).
 
@@ -53,8 +52,7 @@ El vídeo siguiente también proporciona un informe (5 minutos y 48 segundos) de
 
 > [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
 
-## Preguntas más frecuentes
-<a id="frequently-asked-questions" class="xliff"></a>
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 **P. ¿Funciona RTVS con las ediciones de Express de Visual Studio?**
 
@@ -122,8 +120,7 @@ Un archivo . Github mantiene un repositorio principal de los archivos de `.gitig
 
 Un archivo . No, Visual Studio no es compatible con la carga de proyectos de un recurso compartido de red.
 
-## Envíenos sus comentarios.
-<a id="send-us-your-feedback" class="xliff"></a>
+## <a name="send-us-your-feedback"></a>Envíenos sus comentarios.
 
 1. **Problemas de Github**: la mejor forma de ponerse en contacto con el equipo de RTVS es [archivando un problema en GitHub](https://github.com/Microsoft/RTVS/issues), o mediante el menú **R Tools > Comentarios** menú.
 
