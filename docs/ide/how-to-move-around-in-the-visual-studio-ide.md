@@ -70,7 +70,7 @@ El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimi
   
  El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.  
   
- ![Navegador del IDE de Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
+ ![Navegador del IDE de Visual Studio](~/docs/ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
  `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna CTRL + MAYÚS + TAB a `Window.PreviousDocumentWindowNav` y CTRL + TAB a `Window.NextDocumentWindowNav`.  
   

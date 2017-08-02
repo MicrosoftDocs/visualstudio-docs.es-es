@@ -48,11 +48,11 @@ Este tema contiene detalles sobre la plantilla de proyecto y otra compatibilidad
 1. Instale el [SDK de .NET de Azure para Visual Studio](https://www.visualstudio.com/vs/azure-tools/), que se necesita para usar la plantilla de servicios en la nube.
 1. En Visual Studio, seleccione **Archivo > Nuevo > Proyecto...**, busque "Azure Python" y seleccione **Servicio en la nube Azure** en la lista:
 
-    ![Plantilla de proyectos en la nube de Azure para Python](media/template-azure-cloud-project.png)
+    ![Plantilla de proyectos en la nube de Azure para Python](~/docs/python/media/template-azure-cloud-project.png)
 
 1. Seleccione uno o varios roles para incluir. Los proyectos en la nube pueden combinar roles escritos en diferentes lenguajes, por lo que puede escribir fácilmente cada parte de la aplicación en el lenguaje más adecuado. Para agregar nuevos roles al proyecto después de completar este cuadro de diálogo, haga clic con el botón derecho en **Roles** en el Explorador de soluciones y seleccione uno de los elementos bajo **Agregar**.
 
-    ![Incorporación de roles en la plantilla de proyectos en la nube de Azure](media/template-azure-cloud-service-project-wizard.png)
+    ![Incorporación de roles en la plantilla de proyectos en la nube de Azure](~/docs/python/media/template-azure-cloud-service-project-wizard.png)
 
 1. Cuando se crean los proyectos de rol individuales, es posible que se le pida instalar paquetes de Python adicionales, como los marcos de Django, Bottle o Flask si ha seleccionado un rol que utiliza uno de ellos.
 
@@ -60,7 +60,7 @@ Este tema contiene detalles sobre la plantilla de proyecto y otra compatibilidad
 
 1. Una carpeta `bin` de proyecto también contiene uno o dos scripts de PowerShell que se usan para configurar la máquina virtual remota, incluida la instalación de Python, cualquier archivo [requirements.txt](#dependencies) del proyecto y la configuración de IIS si es necesario. Puede editar estos archivos como desee para la implementación, aunque las opciones más comunes se pueden administrar de otras maneras (vea [Configuración de la implementación de roles](#configuring-role-deployment) a continuación). No se recomienda quitar estos archivos, ya que, en su lugar, se utilizará un script de configuración heredado si no están disponibles.
 
-    ![Archivos de compatibilidad de rol de trabajo](media/template-azure-cloud-service-worker-role-support-files.png)
+    ![Archivos de compatibilidad de rol de trabajo](~/docs/python/media/template-azure-cloud-service-worker-role-support-files.png)
 
     Para agregar estos scripts de configuración a un nuevo proyecto, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevo elemento...** y seleccione **Web Role Support Files** (Archivos de compatibilidad de rol web) o **Worker Role Support Files** (Archivos de compatibilidad de rol de trabajo).
    

@@ -21,7 +21,7 @@ manager: "douge"
 # Analizar la calidad del c&#243;digo de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el an&#225;lisis de c&#243;digo est&#225;tico de Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  La herramienta de análisis de código de Visual Studio Express examina el código para detectar una serie de defectos comunes e infracciones de las prácticas recomendadas de programación.  Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque la herramienta de análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código.  El análisis de código también puede encontrar defectos del código que son difíciles de detectar al hacer las pruebas.  Ejecutar la herramienta de análisis de código a intervalos regulares durante el proceso de desarrollo puede mejorar la calidad de la aplicación final.  
   
@@ -63,7 +63,7 @@ manager: "douge"
   
  Cuando se expande una advertencia, la línea de código que ha causado la advertencia se resalta en el editor de código de Visual Studio.  
   
- ![Resaltado de texto de análisis de código](../test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
+ ![Resaltado de texto de análisis de código](~/docs/test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
   
  Cuando hayas entendido el problema, podrás resolverlo en el código.  Después, ejecuta otra vez el análisis de código, para asegurarte de que no vuelve a aparecer en la ventana Análisis de código y de que la corrección no generó otras advertencias.  
   

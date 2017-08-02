@@ -33,7 +33,7 @@ caps.handback.revision: 41
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: crear un complemento para Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: crear un complemento para Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## Automatizar PowerPoint usando el modelo de objetos de PowerPoint  
  El modelo de objetos de PowerPoint expone muchos tipos que puede usar para automatizar PowerPoint. Estos tipos le permiten escribir código para llevar a cabo tareas comunes:  

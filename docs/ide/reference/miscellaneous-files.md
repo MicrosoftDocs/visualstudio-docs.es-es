@@ -34,7 +34,7 @@ Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../code-quality/includes
   
  Hay un gran número de razones por las que resulta de utilidad abrir archivos independientemente de un contenedor.  Puede darse el caso de que desee ver un archivo mientras desarrolla una solución basada en un proyecto, pero que dicho archivo no sea fundamental para el desarrollo de la solución.  Este es el caso de las notas o instrucciones de programación, los esquemas de base de datos y los fragmentos de código.  Además, es posible que desee crear un archivo independiente.  
   
- ![Proyectos de soluciones](../../ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
+ ![Proyectos de soluciones](~/docs/ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
   
  El Explorador de soluciones puede mostrar una carpeta Archivos varios para los archivos si las opciones de la carpeta se encuentran habilitadas.  Las opciones se pueden establecer en el [Documentos, Entorno, Opciones \(Cuadro de diálogo\)](../../ide/reference/documents-environment-options-dialog-box.md).  Después de haber cerrado uno de estos archivos, éste no se asociará a ninguna solución ni proyecto en particular a menos que haya una opción habilitada también para esto.  
   

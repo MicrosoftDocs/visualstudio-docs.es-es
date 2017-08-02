@@ -71,7 +71,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
 12. Seleccione el control Checkbox. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.  
   
-     ![Aplicación de WPF sencilla](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
+     ![Aplicación de WPF sencilla](~/docs/test/media/codedui_wpfapp.png "CodedUI_WPFApp")  
   
 13. Haga doble clic en el control de botón para agregar un controlador de evento Click.  
   
@@ -163,11 +163,11 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
 8.  Seleccione **Iniciar grabación** en UIMap – Generador de pruebas de IU codificadas.  
   
-     ![Iniciar la grabación](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
+     ![Iniciar la grabación](~/docs/test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
      Puede pausar la grabación si es necesario, por ejemplo, si tiene que encargarse del correo entrante.  
   
-     ![Pausar la grabación](../test/media/cuit_.png "CUIT_")  
+     ![Pausar la grabación](~/docs/test/media/cuit_.png "CUIT_")  
   
     > [!WARNING]
     >  Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.  
@@ -385,11 +385,11 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+ ![vínculo al vídeo](~/docs/data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+ ![vínculo al vídeo](~/docs/data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+ ![vínculo al vídeo](~/docs/data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>Laboratorio de prácticas  
  [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  

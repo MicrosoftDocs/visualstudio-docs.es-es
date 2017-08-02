@@ -124,7 +124,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 -   Inicie el depurador.  
   
-     ![Comando Iniciar depuración del menú Depurar](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![Comando Iniciar depuración del menú Depurar](~/docs/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      El depurador inicia y ejecuta el código. La ventana de consola (una ventana independiente que se parece a un símbolo del sistema) aparece durante unos segundos, pero se cierra rápidamente cuando el depurador deja de ejecutarse. Para ver el texto, deberá establecer un punto de interrupción para detener la ejecución del programa.  
   
@@ -157,7 +157,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 2.  Cambie la configuración de compilación para GreetingsConsoleApp de **Depurar** a **Versión**.  
   
-     ![Compilar una versión de lanzamiento de la aplicación](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+     ![Compilar una versión de lanzamiento de la aplicación](~/docs/ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
 3.  Compile la solución.  
   

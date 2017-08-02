@@ -57,15 +57,15 @@ Vea también los temas en [IntelliSense](code-intellisense.md), [fragmentos de c
 
 Además de colorear diferentes partes del código, como cadenas, comentarios y palabras clave, RTVS también resalta y permite vínculos en comentarios:
 
-![Color de sintaxis para código de R](media/editing-syntax-colors.png)
+![Color de sintaxis para código de R](~/docs/rtvs/media/editing-syntax-colors.png)
 
 Para personalizar las fuentes y determinados colores de resaltado, seleccione el comando **Herramientas > Opciones**, vaya a **Entorno > Fuentes y colores** y después cambie la configuración de elementos relacionados con R en el cuadro **Mostrar elementos**:
 
-![Opciones de color y fuentes para el código de R](media/editing-syntax-colors-options.png)
+![Opciones de color y fuentes para el código de R](~/docs/rtvs/media/editing-syntax-colors-options.png)
 
 Visual Studio también subraya los errores de sintaxis en el editor:
 
-![Resaltado de errores de sintaxis en código de R](media/editing-syntax-error.png)
+![Resaltado de errores de sintaxis en código de R](~/docs/rtvs/media/editing-syntax-error.png)
 
 Para cambiar este comportamiento, consulte la configuración **Avanzadas > Comprobación de sintaxis** en [Opciones del editor](#editor-options).
 
@@ -73,11 +73,11 @@ Para cambiar este comportamiento, consulte la configuración **Avanzadas > Compr
 
 Mientras escribe código, RTVS proporciona finalización automática, como se describe en la página [IntelliSense](code-intellisense.md). También realiza formato automático como la finalización de paréntesis y llaves: 
 
-![Animación de formato en línea](media/editing-inline-formatting.gif)
+![Animación de formato en línea](~/docs/rtvs/media/editing-inline-formatting.gif)
 
 Si al escribir se llama a funciones que tienen muchos parámetros, a menudo querrá alinear los parámetros para que el código sea más fácil de leer. RTVS recuerda la sangría establecida para los parámetros y la aplica automáticamente a las líneas siguientes:
 
-![Animación de sangría automática](media/editing-auto-indentation.gif)
+![Animación de sangría automática](~/docs/rtvs/media/editing-auto-indentation.gif)
 
 Para cambiar este comportamiento, consulte las [Opciones del editor](#editor-options) bajo el grupo **Pestañas**.
 
@@ -85,7 +85,7 @@ Las regiones de código contraíbles le permiten ocultar temporalmente parte del
 
 Para crear una región propia, rodee el código que quiera con comentarios que terminen con `---`. Los pequeños controles +/- a la izquierda del código permiten expandir y contraer las regiones:
 
-![Creación de una región contraíble con comentarios](media/editing-collapsible-regions.gif)
+![Creación de una región contraíble con comentarios](~/docs/rtvs/media/editing-collapsible-regions.gif)
  
 De forma predeterminada, Visual Studio inserta espacios al presionar la tecla Tab. De nuevo, puede cambiar este comportamiento como se describe en [Opciones, Editor de texto, Todos los lenguajes](../ide/reference/options-text-editor-all-languages.md).
 
@@ -99,7 +99,7 @@ De este modo, se abre una nueva ventana del editor que contiene el código fuent
 
 **Ver la definición**, invocado desde el menú contextual o Alt+F12, inserta una región desplazable de solo lectura que contiene el código fuente de la función bajo la llamada de función:
 
-![Animación de Ver la definición](media/editing-peek-definition.gif)
+![Animación de Ver la definición](~/docs/rtvs/media/editing-peek-definition.gif)
 
 ## <a name="sending-code-to-the-interactive-window"></a>Envío de código a la ventana interactiva
 
@@ -131,7 +131,7 @@ Las opciones de formato (incluida la desactivación del formato) se establecen a
 
 RTVS proporciona un acceso directo para generar comentarios [Roxygen](http://roxygen.org/) con los nombres de parámetro de una función. Solo tiene que escribir `###` en una línea en blanco encima de la definición de función:
 
-![Animación de la inserción de un comentario Roxygen](media/editing-roxygen-comments.gif)
+![Animación de la inserción de un comentario Roxygen](~/docs/rtvs/media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>Opciones del editor
 

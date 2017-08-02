@@ -136,11 +136,11 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
   
      De forma predeterminada, en el mapa solo se muestra su código. Para ver el código externo, actívelo en la **pila de llamadas** ventana:  
   
-     ![Mostrar código externo mediante la ventana Pila de llamadas](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
+     ![Mostrar código externo mediante la ventana Pila de llamadas](~/docs/debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
   
      o desactivar **habilitar solo mi código** en Visual Studio, opciones de depuración:  
   
-     ![Mostrar código externo mediante el cuadro de diálogo Opciones](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
+     ![Mostrar código externo mediante el cuadro de diálogo Opciones](~/docs/debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
   
 -   **¿Cambiar el mapa afecta el código?**  
   
@@ -168,7 +168,7 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
   
 -   **Cómo detener la asignación de agregación automática de nuevas pilas de llamadas**  
   
-     Elija ![botón para mostrar la pila de llamadas en el código de mapa automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
+     Elija ![botón para mostrar la pila de llamadas en el código de mapa automáticamente](~/docs/debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
   
      El mapa continuará resaltando las pilas de llamadas existentes mientras se está depurando.  
   

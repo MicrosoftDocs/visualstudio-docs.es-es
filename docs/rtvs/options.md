@@ -45,7 +45,7 @@ ms.lasthandoff: 05/12/2017
  
 Se accede a la configuración a través del menú **R Tools > Opciones** o a través de **Herramientas > Opciones** y desplazándose hasta  **R Tools**:
  
-  ![Cuadro de diálogo Opciones de R Tools](media/options-dialog.png)
+  ![Cuadro de diálogo Opciones de R Tools](~/docs/rtvs/media/options-dialog.png)
 
 En las secciones siguientes, se describen las distintas opciones disponibles en esta página.
 
@@ -56,7 +56,7 @@ En las secciones siguientes, se describen las distintas opciones disponibles en 
 
 También hay un elemento de menú especial **Herramientas de R > Configuración de ciencia de datos** que configura el IDE de Visual Studio con un diseño que está optimizado para las necesidades de los científicos de datos. En concreto, esta opción abre las ventanas [Interactivo](interactive-repl.md), [Explorador de variables](variable-explorer.md) y [Áreas de trabajo](workspaces.md):
 
-![Diseño de la ventana para científicos de datos en Visual Studio](media/installation-data-scientist-layout-result.png)
+![Diseño de la ventana para científicos de datos en Visual Studio](~/docs/rtvs/media/installation-data-scientist-layout-result.png)
 
 > [!Important]      
 > Para revertir a otra configuración de Visual Studio más adelante, use el comando **Herramientas > Importar y exportar configuraciones**, seleccione **Exportar la configuración de entorno seleccionada** y especifique un nombre de archivo. Para restaurar esa configuración, use el mismo comando y seleccione **Importar la configuración de entorno seleccionada**. También puede usar los mismos comandos si quiere cambiar el diseño de científico de datos y volver a él más adelante, en lugar de usar el comando **Configuración de ciencia de datos** directamente.

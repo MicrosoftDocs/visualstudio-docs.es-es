@@ -105,13 +105,13 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 3.  En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de depuración existente y luego elija el botón **Aceptar**.  
   
-     ![Cuadro de diálogo Nueva configuración de la solución](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+     ![Cuadro de diálogo Nueva configuración de la solución](~/docs/ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
 4.  En la lista **Plataforma de soluciones activas**, elija **Nueva**.  
   
 5.  En el cuadro de diálogo **Nueva plataforma de solución**, pulse **x64** y no copie valores de la plataforma x86.  
   
-     ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+     ![Cuadro de diálogo Nueva plataforma de solución](~/docs/ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
 6.  Elija el botón **Aceptar** .  
   
@@ -134,7 +134,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
  Figura 1: advertencias de Visual Basic  
   
- ![Ventana de salida de Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
+ ![Ventana de salida de Visual Basic](~/docs/ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
  Figura 2: advertencias de Visual C#  
   
@@ -181,7 +181,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
  La ventana **Salida** solo muestra información de resumen de la compilación.  
   
- ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
+ ![Ventana de salida, advertencias de compilación de Visual Basic](~/docs/ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
  Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).  
   

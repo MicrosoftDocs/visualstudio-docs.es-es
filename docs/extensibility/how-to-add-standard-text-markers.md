@@ -39,7 +39,7 @@ Utilice el siguiente procedimiento para crear uno de los tipos predeterminados d
   
      Por ejemplo, los comandos punto de interrupción\-específicos en el menú contextual incluyen **quite el punto de interrupción** con **Nuevo punto de interrupción**, como se muestra en la captura de pantalla siguiente.  
   
-     ![Marcador del menú contextual](../extensibility/media/vsmarkercontextmenu.png "vsMarkercontextmenu")  
+     ![Marcador del menú contextual](~/docs/extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
 2.  Pase el nuevo texto que identifica el nombre del comando personalizado.  Por ejemplo, **quite el punto de interrupción** podría ser un comando personalizado si el entorno no lo proporcionó ya.  También pasa la devuelve si el comando es compatible, disponibles y habilitado, y\/o una alternancia encendido\-apagado.  El entorno utiliza esta información para mostrar el comando personalizado en el menú contextual de la manera correcta.  
   

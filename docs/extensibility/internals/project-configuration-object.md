@@ -22,7 +22,7 @@ caps.handback.revision: 11
 
 El objeto de configuración de proyecto administra la presentación de información de configuración de la interfaz de usuario.  
   
- ![Configuración de proyectos de Visual Studio](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
+ ![Configuración de proyectos de Visual Studio](~/docs/extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
 Páginas de propiedades de configuración de proyecto  
   
  El proveedor de configuración de proyecto administra las configuraciones del proyecto. El entorno y otros paquetes, para obtener acceso y recuperar información acerca de las configuraciones de un proyecto, llame a las interfaces que se adjunta al objeto de proveedor de configuración de proyecto.  

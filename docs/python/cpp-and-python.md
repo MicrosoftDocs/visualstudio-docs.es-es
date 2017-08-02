@@ -52,7 +52,7 @@ El enfoque adoptado aquí es el de las extensiones de CPython estándar que se d
 
 Este tutorial se ha escrito para Visual Studio 2017 con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** con sus opciones predeterminadas (como Python 3.6 como intérprete predeterminado). En la carga de trabajo **Desarrollo de Python**, active también la casilla de la derecha de **Herramientas de desarrollo nativo Python**, que establecerá la mayoría de las opciones descritas en este tema. (Esta opción también incluirá la carga de trabajo de C++ automáticamente). 
 
-![Selección de la opción Herramientas de desarrollo nativo Python](media/cpp-install-native.png)
+![Selección de la opción Herramientas de desarrollo nativo Python](~/docs/python/media/cpp-install-native.png)
 
 Para obtener más información, vea [Installing Python Support for Visual Studio](installation.md) (Instalación de la compatibilidad de Python para Visual Studio), incluido el uso de otras versiones de Visual Studio. Si instala Python por separado, asegúrese de seleccionar **Download debugging symbols** (Descargar símbolos de depuración) y **Download debug binaries** (Descargar archivos binarios de depuración) en **Opciones avanzadas** en el programa de instalación. Esto garantiza que tenga disponibles las bibliotecas de depuración necesarias si decide realizar una compilación de depuración.
 
@@ -278,7 +278,7 @@ La [compatibilidad con Python en Visual Studio](installation.md) incluye la capa
 
 1. En el código de C++, establezca un punto de interrupción en la primera línea del método `tanh` y, después, inicie el depurador. Verá que el depurador se detiene cuando se llama a este código:
 
-    ![Detener en un punto de interrupción en el código de C++](media/cpp-debugging.png)
+    ![Detener en un punto de interrupción en el código de C++](~/docs/python/media/cpp-debugging.png)
 
 1. En este momento puede recorrer el código de C++, examinar variables, etc., como se detalla en [Debugging C++ and Python Together](debugging-mixed-mode.md) (Depurar C++ y Python juntos).
 

@@ -44,7 +44,7 @@ Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o p
 
 Una vez instalado, seleccione **View > Cookicutter Explorer** (Ver > Explorador de Cookicutter) para abrir la ventana:
 
-![Ventana principal de Cookiecutter](media/cookiecutter-overview.png)
+![Ventana principal de Cookiecutter](~/docs/python/media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Flujo de trabajo Cookiecutter
 
@@ -76,7 +76,7 @@ Si selecciona una plantilla del grupo **Instalado** o escribe una ruta de acceso
 
 Después de que la plantilla está instalada localmente, Cookiecutter muestra una página de opciones donde puede especificar, entre otras opciones, dónde desea que Cookiecutter genere los archivos:
 
-![Página de opciones de Cookiecutter](media/cookiecutter-template-options.png)
+![Página de opciones de Cookiecutter](~/docs/python/media/cookiecutter-template-options.png)
 
 Cada plantilla de Cookiecutter define su propio conjunto de opciones y especifica un valor predeterminado para cada una (se muestra como el texto sugerido en cada campo de entrada). Un valor predeterminado puede ser un fragmento de código, normalmente cuando es un valor dinámico que usa otras opciones. 
 
@@ -90,13 +90,13 @@ Una vez configuradas las opciones, seleccione **Crear** para generar el código.
 
 Después de que los archivos se crean correctamente, Cookiecutter proporciona una opción para abrirlos en el **Explorador de soluciones**:
 
-![Cookiecutter que muestra el comando Solution Explorer](media/cookiecutter-files-created.png)
+![Cookiecutter que muestra el comando Solution Explorer](~/docs/python/media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Opciones de Cookiecutter
 
 Las opciones de Cookiecutter están disponibles en **Tools > Options > Cookiecutter** (Herramientas > Opciones > Cookiecutter):
 
-![Opciones de Cookiecutter](media/cookiecutter-tools-options.png)
+![Opciones de Cookiecutter](~/docs/python/media/cookiecutter-tools-options.png)
 
 | Opción | Descripción |
 | --- | --- |

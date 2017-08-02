@@ -34,7 +34,7 @@ Para evitar extender demasiado el tiempo de inicio, Visual Studio 2017 impide la
 
 Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje también proporciona un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**, que también se puede abrir con el comando de menú **Ayuda > Administrar el rendimiento de Visual Studio**.
 
-![Administrar el rendimiento Visual Studio: mensaje emergente en el que se lee "Se ha detectado que la extensión... está ralentizando Visual Studio"](../ide/media/vside_perfdialog_popup.png)
+![Administrar el rendimiento Visual Studio: mensaje emergente en el que se lee "Se ha detectado que la extensión... está ralentizando Visual Studio"](~/docs/ide/media/vside_perfdialog_popup.PNG)
 
 En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones que afectan negativamente al rendimiento de inicio. Este cuadro de diálogo le permite cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
 
@@ -42,7 +42,7 @@ En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones 
 
 Si una extensión está ralentizando el inicio de Visual Studio, esta aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** cuando selecciona uno de los tipos de extensión. En el cuadro de diálogo se muestra qué extensión afecta al rendimiento de inicio, cuándo se carga una solución y cuándo se escribe en el editor.
 
-![Administrar el rendimiento Visual Studio: vista de extensiones](../ide/media/vside_perfdialog_extensions.png)
+![Administrar el rendimiento Visual Studio: vista de extensiones](~/docs/ide/media/vside_perfdialog_extensions.PNG)
 
 Si el impacto en el tiempo de inicio, de carga de soluciones o de escritura en el editor resulta excesivamente alto, deshabilite la extensión para dicho escenario; para ello, seleccione **Deshabilitar**. Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo Administrador de extensiones o Administrar el rendimiento de Visual Studio.
 
@@ -53,7 +53,7 @@ Si una ventana de herramientas está ralentizando el inicio de Visual Studio y d
 - **No mostrar ventana al inicio:** la ventana de herramientas especificada siempre estará cerrada la próxima vez que abra Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Puede abrir la ventana de herramientas desde el menú correspondiente.
 - **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Se trata de una buena opción si usa una ventana de herramientas frecuentemente, porque esta todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
 
-![Administrar el rendimiento Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
+![Administrar el rendimiento Visual Studio: vista de ventanas de herramientas](~/docs/ide/media/vside_perfdialog_toolwindows.PNG)
 
 Siempre puede volver a este cuadro de diálogo en cualquier momento para cambiar la configuración de una ventana de herramientas concreta.
 
@@ -69,7 +69,7 @@ Puede habilitar la carga de solución ligera para el IDE como un conjunto o para
 
 Para cambiar la carga de solución ligera en la configuración de todos los proyectos y soluciones, vaya a **Herramientas > Opciones > Proyectos y soluciones > General** y seleccione una de las tres opciones de carga:
 
-![Cuadro de diálogo Opciones de herramientas](../ide/media/VSIDE_LightweightSolutionLoad.png)
+![Cuadro de diálogo Opciones de herramientas](~/docs/ide/media/VSIDE_LightweightSolutionLoad.png)
 
 - **Permitir que Visual Studio elija lo mejor para mi solución**: Visual Studio determina si se debe aplicar la carga de solución ligera al analizar cada solución cuando se abre. 
 - **Habilitar:** se habilita la carga de solución ligera para esta solución, con independencia de la configuración del IDE.
@@ -77,7 +77,7 @@ Para cambiar la carga de solución ligera en la configuración de todos los proy
 
 Para habilitar la carga de solución ligera en una solución individual, seleccione el nodo de solución de nivel superior en el Explorador de soluciones. En la ventana **Propiedades**, seleccione **Predeterminada**, **Habilitada** o **Deshabilitada** para la propiedad **Carga ligera**.
 
-![Explorador de soluciones](../ide/media/VSIDE_LSL Solution Setting.png)
+![Explorador de soluciones](~/docs/ide/media/VSIDE_LSL Solution Setting.png)
 
 También puede hacer clic con el botón derecho en el nodo de solución de nivel superior en el Explorador de soluciones y seleccionar **Habilitar la carga de solución ligera** (si la característica está deshabilitada actualmente) o **Deshabilitar la carga de solución ligera** (si la característica está habilitada actualmente):
 
@@ -87,7 +87,7 @@ Cuando cambia la configuración de la carga de solución ligera, el cambio surte
 
 Cuando abra una solución grande en Visual Studio 2017, puede ver un mensaje emergente que le ofrece habilitar la carga de solución ligera. El mensaje aparece solo para las soluciones que contienen muchos proyectos de C#, VB o C++. Al seleccionar **Habilitar**, se activa la carga de solución ligera solo para dicha solución. La configuración del IDE no varía.
 
-![Ventana emergente](../ide/media/VSIDE_LSL Popup.png)
+![Ventana emergente](~/docs/ide/media/VSIDE_LSL Popup.png)
 
 Puede deshabilitar la carga de solución ligera más tarde en la ventana **Propiedades** de la solución.
 

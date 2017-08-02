@@ -109,7 +109,7 @@ static void Main(string[] args) { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; in
 ## Barra de herramientas Ubicación de depuración  
  Puede usar la barra de herramientas **Ubicación de depuración** para seleccionar la función, el subproceso o el programa que desee. Establezca un punto de interrupción e inicie la depuración. \(Si no ve esta barra de herramientas, puede habilitarla haciendo clic en una parte vacía del área de la barra de herramientas. Se mostrará una lista de barras de herramientas. Seleccione **Ubicación de depuración**\). Cuando se alcanza el punto de interrupción, se detiene la ejecución y se puede ver la barra de herramientas de ubicación de depuración, situada en la fila inferior de la ilustración siguiente:  
   
- ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
+ ![DebugLocationToolbar](~/docs/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
  También puede cambiar el contexto de llamadas, subprocesos o procesos a funciones diferentes si hace doble clic en el elemento de las ventanas **Pila de llamadas**, **Subprocesos** o **Procesos**, respectivamente.  
   

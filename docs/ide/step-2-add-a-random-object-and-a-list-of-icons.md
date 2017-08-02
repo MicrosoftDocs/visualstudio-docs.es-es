@@ -35,7 +35,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
   
 3.  Al agregar el objeto `List`, observe que se abre la ventana **IntelliSense**.  El ejemplo siguiente corresponde a Visual C\#, pero aparece un texto similar cuando se agrega una lista en Visual Basic.  
   
-     ![Ventana Propiedades mostrando el evento Click](../ide/media/express_listintellisense.png "Express\_ListIntellisense")  
+     ![Ventana Propiedades mostrando el evento Click](~/docs/ide/media/express_listintellisense.png "Express\_ListIntellisense")  
 Ventana IntelliSense  
   
     > [!NOTE]

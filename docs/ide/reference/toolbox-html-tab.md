@@ -53,12 +53,12 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Las siguientes herramientas están disponibles de manera predeterminada en la pestaña HTML.  
 
  **Pointer**  
- ![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif "vxPointer")  
+ ![Puntero de página HTML del Diseñador de ASP.NET Mobile](~/docs/ide/reference/media/vxpointer.gif "vxPointer")  
 
  Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, vea [Usar el cuadro de herramientas](../../ide/using-the-toolbox.md).  
 
  **Input (Button)**  
- ![Botón de página web HTML](../../ide/reference/media/vxbutton.gif "vxButton")  
+ ![Botón de página web HTML](~/docs/ide/reference/media/vxbutton.gif "vxButton")  
 
  Inserta un elemento `input` de `type="button"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Button1"` para el primer botón, `id="Button2"` para el segundo y así sucesivamente.  
 
@@ -69,7 +69,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Input (Reset)**  
- ![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")  
+ ![Captura de pantalla de HTMLpageResetButton](~/docs/ide/reference/media/vxreset.gif "vxReset")  
 
  Inserta un elemento `input` de `type="reset"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Reset1"` para el primer botón de reinicio, `id="Reset2"` para el segundo y así sucesivamente.  
 
@@ -80,7 +80,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Input (Submit)**  
- ![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
+ ![Captura de pantalla de HTMLpageToolbarSubmitButton](~/docs/ide/reference/media/vxsubmit.gif "vxSubmit")  
 
  Inserta un elemento `input` de `type="submit"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Submit1"` para el primer botón de envío, `id="Submit2"` para el segundo y así sucesivamente.  
 
@@ -91,7 +91,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Input (Text)**  
- ![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
+ ![Captura de pantalla de HTMLpageToolbarTextField](~/docs/ide/reference/media/vxtextfield.gif "vxTextfield")  
 
  Inserta un elemento `input` de `type="text"` en el documento. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="Text1"` para el primer campo de texto, `id="Text2"` para el segundo y así sucesivamente.  
 
@@ -105,7 +105,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (File)**  
- ![Campo Archivo de página HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
+ ![Campo Archivo de página HTML](~/docs/ide/reference/media/vxfilefield.gif "vxFilefield")  
 
  Inserta un elemento `input` de `type="file"` en el documento. De manera predeterminada, se inserta `id="File1"` para el primer campo de archivo, `id="File2"` para el segundo y así sucesivamente.  
 
@@ -119,7 +119,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (Password)**  
- ![Campo de contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
+ ![Campo de contraseña de Visual Studio](~/docs/ide/reference/media/vxpassword.gif "vxPassword")  
 
  Inserta un elemento `input` de `type="password"`. De manera predeterminada, se inserta `id="Password1"` para el primer campo de contraseña, `id="Password2"` para el segundo y así sucesivamente.  
 
@@ -133,7 +133,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 >  Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (Check box)**  
- ![Opción de casilla del cuadro de herramientas de página web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
+ ![Opción de casilla del cuadro de herramientas de página web HTML](~/docs/ide/reference/media/vxcheckbox.gif "vxCheckbox")  
 
  Inserta un elemento `input` de `type="checkbox"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Checkbox1"` para la primera casilla, `id="Checkbox2"` para la segunda y así sucesivamente.  
 
@@ -144,7 +144,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Input (Radio)**  
- ![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")  
+ ![Captura de pantalla de VisualStudioHTMLpageRadioButton](~/docs/ide/reference/media/vxradio.gif "vxRadio")  
 
  Inserta un elemento `input` de `type="radio"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Radio1"` para el primer botón de selección, `id="Radio2"` para el segundo y así sucesivamente.  
 
@@ -155,7 +155,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Input (Hidden)**  
- ![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif "vxhidden")  
+ ![Elemento oculto de página HTML](~/docs/ide/reference/media/vxhidden.gif "vxhidden")  
 
  Inserta un elemento `input` de `type="hidden"`. De manera predeterminada, se inserta `id="Hidden1"` para el primer campo oculto, `id="Hidden2"` para el segundo y así sucesivamente.  
 
@@ -166,7 +166,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Textarea**  
- ![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
+ ![Área de texto de la barra de herramientas de la página HTML](~/docs/ide/reference/media/vxtextarea.gif "vxTextarea")  
 
  Inserta un elemento `textarea`. Puede cambiar el tamaño del área de texto o usar las barras de desplazamiento para ver el texto que se extiende más allá del área de visualización. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="textarea1"` para la primera área de texto, `id=" textarea 2"` para la segunda y así sucesivamente.  
 
@@ -180,7 +180,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Table**  
- ![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  
+ ![Captura de pantalla de HTMLpageToolbarTable](~/docs/ide/reference/media/vxtable.gif "vxTable")  
 
  Inserta un elemento `table`.  
 
@@ -191,7 +191,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
 **Image**  
- ![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif "vxImage")  
+ ![Elemento de imagen de página HTML](~/docs/ide/reference/media/vximage.gif "vxImage")  
 
  Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.  
 
@@ -202,7 +202,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Seleccionar**  
- ![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
+ ![Cuadro de herramientas desplegable de la página HTML](~/docs/ide/reference/media/vxdropdown.gif "vxDropdown")  
 
  Inserta un elemento `select` desplegable (sin atributo `size`). De manera predeterminada, se inserta `id="select1"` para el primer cuadro de lista, `id="select2"` para el segundo y así sucesivamente.  
 
@@ -215,7 +215,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para crear un elemento `select` multilínea, aumente el valor de la propiedad Size.  
 
  **Horizontal Rule**  
- ![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
+ ![Elemento de regla horizontal de página HTML](~/docs/ide/reference/media/vxhorizontal.gif "vxHorizontal")  
 
  Inserta un elemento `hr`. Para aumentar el grosor de la línea, modifique el atributo `size`.  
 
@@ -226,7 +226,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ```  
 
  **Div**  
- ![Etiqueta de página HTML](../../ide/reference/media/vxlabel.gif "vxLabel")  
+ ![Etiqueta de página HTML](~/docs/ide/reference/media/vxlabel.gif "vxLabel")  
 
  Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.  
 

@@ -38,7 +38,7 @@ ms.openlocfilehash: eb49815ed120ee4ff65dfc04764282f1ac6d1ff8
 
 Visual Studio incluye varias herramientas de *Acciones rápidas* o *Refactorización* que permiten obtener una vista previa de los cambios que se van a realizar en el proyecto antes de aceptarlos.  Esto tiene lugar en la ventana **Vista previa de los cambios**.  Por ejemplo, aquí en la ventana **Vista previa de los cambios** se muestra qué se cambiará durante una refactorización de cambio de nombre en un proyecto de C#:
 
-![Vista previa de cambios](media/previewchanges.png)
+![Vista previa de cambios](~/docs/ide/media/previewchanges.png)
 
 En la mitad superior de la ventana se muestran las líneas específicas que se cambiarán, cada una con una casilla.  Puede activar o desactivar cada casilla si quiere aplicar de manera selectiva la refactorización solo en líneas específicas.
 

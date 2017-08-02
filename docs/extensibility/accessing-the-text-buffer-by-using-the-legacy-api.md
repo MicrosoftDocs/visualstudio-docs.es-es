@@ -24,7 +24,7 @@ El texto es responsable de administrar secuencias de texto y la persistencia del
 ## Sistemas de coordenadas uno y la Dos\-Dimensión  
  Una posición coordinada unidimensional se basa respecto a una posición de carácter del primer carácter en el búfer, como 147.  Se utiliza la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> para tener acceso a una ubicación unidimensional en el búfer.  Un sistema de coordenadas bidimensional se basa en pares de línea y el índice.  Por ejemplo, un carácter en el búfer en 43, 5 estaría en la línea 43, cinco caracteres a la derecha del primer carácter en esa línea.  Tiene acceso a una ubicación bidimensional en el búfer mediante la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> .  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y las interfaces de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> son implementados por el objeto de búfer de texto \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>\) y se puede tener acceso entre sí mediante `QueryInterface`.  El diagrama siguiente muestra estas y otras interfaces de la clave de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- ![Objeto de búfer de texto](../extensibility/media/vstextbuffer.png "vsTextBuffer")  
+ ![Objeto de búfer de texto](~/docs/extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 Objeto de búfer de texto  
   
  Aunque cualquier sistema de coordenadas funcione en el búfer de texto, se optimiza para utilizar coordenadas bidimensionales.  Un sistema de coordenadas unidimensional puede crear sobrecarga de rendimiento.  Por ello, el sistema de coordenadas bidimensional siempre que sea posible.  

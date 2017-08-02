@@ -32,7 +32,7 @@ Los usuarios pueden ver y cambiar el proyecto configuración\-dependiente y \- p
   
  Hay dos tipos generales de cuadros de diálogo de **proyectoPáginas de propiedades** disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  En el primero, para los proyectos de Visual Basic, por ejemplo, las páginas de propiedades se muestran con un formato de campo, como se muestra en el captura de pantalla siguiente.  En el segundo, que se muestra más adelante en esta sección, los hosts de la página de propiedades una cuadrícula de propiedades similar a la que se encuentra en la ventana Propiedades.  
   
- ![Página Propiedades de Visual Basic](../../extensibility/internals/media/vsvbproppages.png "vsVBPropPages")  
+ ![Página Propiedades de Visual Basic](~/docs/extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
 Cuadro de diálogo páginas de propiedades del proyecto con formato de campo y la estructura de árbol  
   
  La estructura de árbol en el cuadro de diálogo páginas de propiedades no se compila utilizando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>.  El entorno, basándose en el nombre nivel pasado al <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> y las interfaces de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> , compilarlo.  
@@ -57,7 +57,7 @@ Cuadro de diálogo páginas de propiedades del proyecto con formato de campo y l
   
  El segundo tipo de páginas de propiedades se muestran en los hosts de los ejemplos un formulario de la cuadrícula de propiedades, como se muestra en el captura de pantalla siguiente.  
   
- ![Páginas de propiedades de VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+ ![Páginas de propiedades de VC](~/docs/extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
 Cuadro de diálogo páginas de propiedades con la cuadrícula de propiedades  
   
  Las interfaces `IVSMDPropertyBrowser` y `IVSMDPropertyGrid` \(declarados en vsmanaged.h\) se utilizan para crear y rellenar la cuadrícula de propiedades dentro de un cuadro de diálogo o ventana.  

@@ -59,7 +59,7 @@ caps.handback.revision: 58
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo usar paneles de tareas en Outlook](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo usar paneles de tareas en Outlook](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## Crear el proyecto  
  Los paneles de tareas personalizados se implementan en complementos de VSTO. Empiece por crear un proyecto de complemento de VSTO para Outlook.  

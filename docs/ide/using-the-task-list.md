@@ -97,7 +97,7 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
   
      Se muestra [Lista de tareas, Entorno, Opciones \(Cuadro de diálogo\)](../ide/reference/task-list-environment-options-dialog-box.md).  
   
-     ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png "vs2015\_task\_list\_options")  
+     ![Lista de tareas de Visual Studio](~/docs/ide/media/vs2015_task_list_options.png "vs2015\_task\_list\_options")  
   
 3.  En la categoría **Tokens**, en el cuadro de texto **Nombre**, escriba el nombre del token; por ejemplo, "BUG".  
   

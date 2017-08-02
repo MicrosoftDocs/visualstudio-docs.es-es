@@ -21,7 +21,7 @@ caps.handback.revision: 13
 
 El modelo siguiente representa un ejemplo de una implementación del control de código fuente.  En el modelo, ve las interfaces que debe implementar y los servicios del entorno que debe llamar.  Como todos los servicios, se llama realmente los métodos de una interfaz concreta que obtenga el servicio.  Los nombres de las clases se identifican para que sea más fácil ver cómo se realiza el control de código fuente.  
   
- ![Ejemplos SCC&#95;TUP](../../extensibility/internals/media/scc_tup.png "SCC\_TUP")  
+ ![Ejemplos SCC&#95;TUP](~/docs/extensibility/internals/media/scc_tup.gif "SCC\_TUP")  
 Proyecto de control de código fuente de ejemplo  
   
 ## Interfaces  

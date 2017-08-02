@@ -37,7 +37,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
 En este paso, agregará un control `TableLayoutPanel` al formulario. El control TableLayoutPanel ayuda a alinear correctamente los controles del formulario que se agregarán posteriormente.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205211) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo al vídeo](~/docs/data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205211) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para diseñar el formulario con un control TableLayoutPanel  
   
@@ -58,7 +58,7 @@ Control TableLayoutPanel
   
      Observe que el Cuadro de herramientas se expande para abarcar el formulario cuando se elige su pestaña, y se cierra cuando se hace clic fuera de él. Se trata de la característica Ocultar automáticamente del IDE. Puede activarlo o desactivarlo en cualquiera de las ventanas eligiendo el marcador de la esquina superior derecha de la ventana para hacer que se oculte automáticamente y que quede bloqueado en su lugar. El icono del pin tiene este aspecto.  
   
-     ![Icono de pin](../ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
+     ![Icono de pin](~/docs/ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
 Icono de pin  
   
 4.  Pulse **TableLayoutPanel** para asegurarse de que está seleccionado. Puede comprobar qué control está seleccionado examinando la lista desplegable de la parte superior de la ventana **Propiedades**, como se muestra en la siguiente imagen.  
@@ -82,14 +82,14 @@ Ventana Propiedades con la opción Rellenar seleccionada
   
 8.  Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Tenemos que cambiar su tamaño de modo que la fila superior y la columna derecha sean mucho mayores. En el Diseñador de Windows Forms, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.  
   
-     ![Botón Triángulo](../ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
+     ![Botón Triángulo](~/docs/ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
 Botón Triángulo  
   
      Este botón indica que el control tiene tareas que le ayudan a establecer sus propiedades automáticamente.  
   
 9. Elija el triángulo para mostrar la lista de tareas del control, tal y como se muestra en la siguiente imagen.  
   
-     ![Tareas de TableLayoutPanel](../ide/media/express_tablepanel.png "Express_TablePanel")  
+     ![Tareas de TableLayoutPanel](~/docs/ide/media/express_tablepanel.png "Express_TablePanel")  
 Tareas de TableLayoutPanel  
   
 10. Pulse la tarea **Editar filas y columnas** para abrir la ventana **Estilos de columna y fila**. Pulse **Column1** y establezca su tamaño en el 15 por ciento; para ello, asegúrese de que el botón **Porcentaje** está seleccionado y escriba `15` en el cuadro **Porcentaje**. (Se trata de un control `NumericUpDown`, que usará en un tutorial posterior). Pulse **Column2** y establézcala en el 85 por ciento. No pulse todavía el botón **Aceptar**, ya que se cerraría la ventana. (Si lo hace, puede volver a abrirla mediante la lista de tareas.)  

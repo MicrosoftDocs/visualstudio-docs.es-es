@@ -66,7 +66,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificar escenarios con marcas de usuario  
  Puedes agregar *marcas de usuario* a los datos de generación de perfiles para ayudar a identificar áreas en la regla de escala de tiempo.  
   
- ![Marcas de usuario en la escala de tiempo](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![Marcas de usuario en la escala de tiempo](~/docs/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  La marca aparece como un triángulo naranja en la escala de tiempo en el momento de la ejecución del método. El mensaje y el tiempo se muestran como información sobre herramientas al mantener el mouse sobre la marca. Si dos o más marcas de usuario están muy próximas, se combinan dichas marcas y los datos sobre herramientas. Puedes acercar la escala de tiempo para separar las marcas.  
   
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
 4.  Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
   
-     ![Detener la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
+     ![Detener la recopilación de datos](~/docs/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analiza los datos recopilados y muestra los resultados.  
   
@@ -141,12 +141,12 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|  
-|![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
-|![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|  
-|![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|El gráfico **Uso de potencia** es un gráfico de varias líneas que muestra los cambios producidos en la potencia de salida por un recurso de dispositivo durante una sesión de generación de perfiles. El generador de perfiles Consumo de energía hace un seguimiento de la potencia utilizada por la CPU, la actividad de red y la presentación en pantalla.|  
-|![Paso 5](../profiling/media/procguid_6.png "ProcGuid_6")|El gráfico **Recursos (activados/desactivados)**  proporciona detalles sobre los costos energéticos de red. La barra **Red** representa el tiempo que estuvo abierta la conexión de red. La barra secundaria **Transferencia de datos** es el tiempo que la aplicación estuvo recibiendo o enviando datos a través de la red.|  
-|![Paso 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|El **Resumen de uso de energía** muestra la cantidad proporcional de la energía total utilizada en la escala de tiempo seleccionada por la CPU, la actividad de red y la presentación en pantalla.|  
+|![Paso 1](~/docs/profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|  
+|![Paso 2](~/docs/profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
+|![Paso 3](~/docs/profiling/media/procguid_3.png "ProcGuid_3")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|  
+|![Paso 4](~/docs/profiling/media/procguid_4.png "ProcGuid_4")|El gráfico **Uso de potencia** es un gráfico de varias líneas que muestra los cambios producidos en la potencia de salida por un recurso de dispositivo durante una sesión de generación de perfiles. El generador de perfiles Consumo de energía hace un seguimiento de la potencia utilizada por la CPU, la actividad de red y la presentación en pantalla.|  
+|![Paso 5](~/docs/profiling/media/procguid_6.png "ProcGuid_6")|El gráfico **Recursos (activados/desactivados)**  proporciona detalles sobre los costos energéticos de red. La barra **Red** representa el tiempo que estuvo abierta la conexión de red. La barra secundaria **Transferencia de datos** es el tiempo que la aplicación estuvo recibiendo o enviando datos a través de la red.|  
+|![Paso 6](~/docs/profiling/media/procguid_6a.png "ProcGuid_6a")|El **Resumen de uso de energía** muestra la cantidad proporcional de la energía total utilizada en la escala de tiempo seleccionada por la CPU, la actividad de red y la presentación en pantalla.|  
   
  **Para analizar los datos de perfil de energía**  
   

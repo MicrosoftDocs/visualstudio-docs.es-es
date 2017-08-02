@@ -300,11 +300,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="testing-the-environment-font"></a>Probar la fuente del entorno  
  Para asegurarse de que la interfaz de usuario está usando la fuente del entorno y respeta la configuración de tamaño, abra **Herramientas > Opciones > entorno > fuentes y colores** y seleccione "Fuente del entorno" en la "Mostrar valores para:" menú desplegable.  
   
- ![Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones
+ ![Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones](~/docs/extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones
   
  Establezca la fuente en algo muy diferente al predeterminado. Para que sea obvio que no actualiza la interfaz de usuario, elija una fuente con gracias (por ejemplo, "Times New Roman") y establezca un tamaño muy grande. A continuación, pruebe la interfaz de usuario para asegurarse de que respeta el entorno. Este es un ejemplo de cómo utilizar el cuadro de diálogo de licencia:  
   
- ![Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno
+ ![Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno](~/docs/extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno
   
  En este caso, "Información de usuario" e "Información de producto" no respetan la fuente. En algunos casos esto podría ser una opción de diseño explícito, pero puede ser un error si la fuente explícita no se especifica como parte de las especificaciones de límite.  
   
@@ -443,7 +443,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Section títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Uso:**<br /><br /> -Section títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](~/docs/extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
 #### <a name="133-environment-font"></a>Fuente del entorno 133%  
   

@@ -23,7 +23,7 @@ caps.handback.revision: 12
 
 El entorno controla **Save**, **Save As**, y los comandos de **Save All** .  Cuando un usuario hace clic en **Guardar**, **Guardar como**, **o Guardar Todo** en el menú de **Archivo** o cierre la solución, lo que da como resultado un Guardar Todo, el proceso siguiente aparece.  
   
- ![Guardar Editor de clientes](../../extensibility/internals/media/private.gif "Private")  
+ ![Guardar Editor de clientes](~/docs/extensibility/internals/media/private.gif "Private")  
 Guarde, Guardar como, y un comando de Guardar Todo que administra para un editor personalizado  
   
  este proceso se detalla en los pasos siguientes:  

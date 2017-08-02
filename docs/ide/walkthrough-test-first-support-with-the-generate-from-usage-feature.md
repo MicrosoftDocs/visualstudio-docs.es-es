@@ -73,10 +73,10 @@ Cuadro de diálogo Nuevo proyecto
   
 3.  Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una nueva instancia de una clase denominada `Automobile`, como se muestra en las siguientes ilustraciones. Aparece un subrayado ondulado que indica un error en tiempo de compilación y aparece una etiqueta inteligente bajo el nombre de tipo. La ubicación exacta de la etiqueta inteligente varía en función de si usa [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Subrayado de etiqueta inteligente en Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Subrayado de etiqueta inteligente en Visual Basic](~/docs/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Subrayado de etiqueta inteligente en C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Subrayado de etiqueta inteligente en C&#35;](~/docs/ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Sitúe el puntero del mouse sobre la etiqueta inteligente para ver un mensaje de error que indica que ningún tipo denominado `Automobile` se ha definido todavía. Haga clic en la etiqueta inteligente o presione CTRL +. (CTRL+punto) para abrir el menú contextual Generar a partir del uso, como se muestra en las ilustraciones siguientes.  
@@ -112,10 +112,10 @@ Cuadro de diálogo Generar nuevo tipo
   
      En la siguiente ilustración se muestra el menú contextual de la etiqueta inteligente.  
   
-     ![Menú contextual Generar propiedad en Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Menú contextual Generar propiedad en Visual Basic](~/docs/ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Menú contextual Generar propiedad en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Menú contextual Generar propiedad en C&#35;](~/docs/ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>Para buscar el código fuente  
@@ -161,7 +161,7 @@ Ventana Navegar a
   
      La ventana **Navegar a** se muestra en la siguiente ilustración.  
   
-     ![Resultados de pruebas con error](../ide/media/testsfailed.png "TestsFailed")  
+     ![Resultados de pruebas con error](~/docs/ide/media/testsfailed.png "TestsFailed")  
 Resultados de pruebas (ventana)  
   
 2.  En la ventana **Resultados de pruebas** , haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada error de prueba.  

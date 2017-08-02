@@ -42,11 +42,11 @@ Visual Studio admite la generación de perfiles de una aplicación Python cuando
 
 La generación de perfiles se inicia a través del comando de menú **Analizar > Launch Python Profiling (Iniciar generación de perfiles de Python)**, que abre un cuadro de diálogo de configuración:
 
-![Cuadro de diálogo de configuración de generación de perfiles](media/profiling-start.png)
+![Cuadro de diálogo de configuración de generación de perfiles](~/docs/python/media/profiling-start.png)
 
 Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un informe de rendimiento a través del cual puede explorar cómo se emplea el tiempo en la aplicación:
 
-![Informe de rendimiento de generación de perfiles](media/profiling-results.png)
+![Informe de rendimiento de generación de perfiles](~/docs/python/media/profiling-results.png)
 
 Para información general, consulte lo siguiente:
 

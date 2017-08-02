@@ -48,7 +48,7 @@ Puede tener acceso a cualquier ventana de herramientas de Visual Studio. Este tu
   
 3.  Arrastre un **TextBox**, un **botón**, y un **ListBox** al lienzo. Organice los elementos para que el cuadro de texto y el botón se encuentran en el mismo nivel y ListBox rellena el resto de la ventana por debajo de ellas, como se muestra en la siguiente imagen.  
   
-     ![Ventana de herramientas terminada](../extensibility/media/t5-toolwindow.png "T5\-ToolWindow")  
+     ![Ventana de herramientas terminada](~/docs/extensibility/media/t5-toolwindow.png "T5\-ToolWindow")  
   
 4.  En el panel XAML, busque el botón y establezca su propiedad de contenido en **Agregar**. Vuelva a conectar el controlador de eventos de botón en el control de botón agregando un `Click="button1_Click"` atributo. El bloque de lienzo debería tener este aspecto:  
   
@@ -136,7 +136,7 @@ Puede tener acceso a cualquier ventana de herramientas de Visual Studio. Este tu
   
      Cuando un usuario abre la página de opciones, debe ser similar a la siguiente imagen.  
   
-     ![Página de opciones](../extensibility/media/t5optionspage.png "T5OptionsPage")  
+     ![Página de opciones](~/docs/extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
      Observe la categoría **ToDo** y la subcategoría **General**.  
   
@@ -149,7 +149,7 @@ Puede tener acceso a cualquier ventana de herramientas de Visual Studio. Este tu
   
      Para que los datos disponibles en el **propiedades** ventana, convertir los datos en las propiedades públicas que tienen dos atributos especiales, `Description` y `Category`.`Description` es el texto que aparece en la parte inferior de la **propiedades** ventana.`Category` determina dónde debe aparecer la propiedad cuando la **propiedades** ventana se muestra en el **por categorías** vista. En la siguiente imagen, el **propiedades** ventana de **por categorías** vista, la **nombre** propiedad en el **ToDo Fields** categoría está seleccionada y la descripción de la **nombre** propiedad se muestra en la parte inferior de la ventana.  
   
-     ![Ventana Propiedades](../extensibility/media/t5properties.png "T5Properties")  
+     ![Ventana Propiedades](~/docs/extensibility/media/t5properties.png "T5Properties")  
   
 2.  Agregue las siguientes instrucciones using el archivo TodoItem.cs.  
   

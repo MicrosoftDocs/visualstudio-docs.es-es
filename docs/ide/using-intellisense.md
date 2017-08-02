@@ -58,7 +58,7 @@ IntelliSense es el término general que se usa para describir varias caracterís
   
  El parámetro en negrita indica el siguiente parámetro requerido a medida que escribe la función.  En el caso de funciones sobrecargadas, se puede utilizar las teclas de flecha ARRIBA y ABAJO para ver información de parámetros alternativos para las sobrecargas de funciones.  
   
- ![Información de parámetros](../ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
+ ![Información de parámetros](~/docs/ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
   
  Cuando se agregan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros.  Para obtener más información, consulte [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).  
   
@@ -67,11 +67,11 @@ IntelliSense es el término general que se usa para describir varias caracterís
 ## Información rápida  
  La opción Información rápida muestra la declaración completa de cualquier identificador del código.  
   
- ![Información rápida de Visual Studio](../ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
+ ![Información rápida de Visual Studio](~/docs/ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
   
  Cuando se selecciona un miembro en el cuadro **Lista de miembros**, también aparece la Información rápida.  
   
- ![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
+ ![Información de parámetros en un archivo de código de C&#35;](~/docs/ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
   
  Para invocar manualmente la información rápida, haga clic en **Editar\/IntelliSense\/Información rápida**, presione CTRL\+I o haga clic en el botón **Información rápida** de la barra de herramientas del editor.  
   

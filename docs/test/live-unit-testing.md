@@ -76,7 +76,7 @@ En algunos casos, es posible que tenga que restaurar explícitamente los paquete
 
 Puede configurar Live Unit Testing seleccionando **Herramientas**, **Opciones** en el menú de Visual Studio de nivel superior y luego seleccionando **Live Unit Testing** en el panel izquierdo del cuadro de diálogo **Opciones**. La figura siguiente muestra las opciones de configuración Live Unit Testing disponibles en el cuadro de diálogo.
 
-  ![Imagen](./media/lut-options.png)
+  ![Imagen](~/docs/test/media/lut-options.png)
 
 A continuación se indican las opciones que se pueden configurar:
 
@@ -105,21 +105,21 @@ Live Unit Testing puede pausarse temporalmente o detenerse por completo en cualq
 
 Cuando ya se ha habilitado, Live Unit Testing actualiza cada línea de código en el editor de Visual Studio para mostrar si el código que está escribiendo está cubierto por las pruebas unitarias y si las pruebas que cubre se superan.  La siguiente figura muestra líneas de código tanto con pruebas que se superan como con pruebas con error, así como líneas de código que no están cubiertas por las pruebas. Las líneas representadas con un símbolo "✓" de color verde solo están cubiertas por pruebas superadas, las líneas representadas con un símbolo "🞩" de color rojo están cubiertas por una o varias pruebas con error y las líneas representadas con un símbolo "" azul no están cubiertas por ninguna prueba.
 
-  ![Imagen](./media/lut-codewindow.png)
+  ![Imagen](~/docs/ide/media/lut-codewindow.png)
 
 La visualización de cobertura de Live Unit Testing se actualiza inmediatamente a medida que modifica el editor de código. Al procesar las ediciones, la visualización cambia para indicar que los datos no están actualizados agregando una imagen de cronómetro redondo debajo de los símbolos de superación, error y sin cubrir, como se muestra en la figura siguiente.
 
-  ![Imagen](./media/lut-codeupdating.png)
+  ![Imagen](~/docs/test/media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Obtención de información sobre las pruebas superadas o con error
 
 Al mantener el puntero sobre el símbolo de operación correcta o con error en la ventana de código, puede ver cuántas pruebas alcanzan esa línea. Si hace clic en el símbolo, puede ver el estado de las pruebas individuales, como se muestra en la figura siguiente.
  
-  ![Imagen](./media/lut-failedinfo.png) 
+  ![Imagen](~/docs/test/media/lut-failedinfo.png) 
 
 Cuando mantiene el puntero sobre la prueba con error en la información sobre herramientas, se expande para proporcionar información adicional sobre el error, como se muestra en la imagen siguiente. Si hace clic en la prueba con error en la información sobre herramientas, puede navegar directamente a ella.
 
-  ![Imagen](./media/lut-failedmsg.png) 
+  ![Imagen](~/docs/test/media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnóstico y corrección de pruebas con error
 

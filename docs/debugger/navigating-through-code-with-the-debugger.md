@@ -77,7 +77,7 @@ Hay muchas maneras de desplazarse por el código en el depurador: recorrer o dep
   
      Para establecer un punto de interrupción simple en el código, abra el archivo de código fuente en el editor de Visual Studio. Establezca el cursor en la línea de código en la que desea interrumpir y elija **Punto de interrupción**, **Insertar punto de interrupción** en el menú contextual \(teclado: **F9**\). El depurador interrumpe la ejecución inmediatamente antes de que se ejecute la línea.  
   
-     ![Establecer un punto de interrupción](../debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+     ![Establecer un punto de interrupción](~/docs/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
   
      Los puntos de interrupción proporcionan un amplio conjunto de funcionalidades adicionales en Visual Studio, como los puntos de interrupción condicionales y de seguimiento. Vea [Usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
@@ -121,7 +121,7 @@ Hay muchas maneras de desplazarse por el código en el depurador: recorrer o dep
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Establecer la siguiente instrucción que se debe ejecutar  
  Después de interrumpir el depurador, puede mover el punto de ejecución para establecer la siguiente instrucción de código que se debe ejecutar. Una flecha amarilla en el margen de una ventana de código fuente o de la ventana Desensamblado indica la ubicación de la siguiente instrucción que se debe ejecutar. Moviendo esta flecha, puede saltarse una parte del código o volver a una línea previamente ejecutada. Puede utilizar esto en situaciones como la omisión de una sección de código que contiene un error conocido.  
   
- ![Example2](../debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
+ ![Example2](~/docs/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
   
  Para establecer la siguiente instrucción que se debe ejecutar, siga uno de estos procedimientos:  
   

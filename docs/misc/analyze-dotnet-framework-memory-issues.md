@@ -44,7 +44,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  Para cada aplicación, el recolector de elementos no utilizados mantiene un árbol de referencias que realiza un seguimiento de los objetos a los que hace referencia la aplicación.  El *árbol de referencia* tiene un conjunto de raíces que incluye objetos globales y estáticos, así como pilas de subprocesos asociados y objetos de los que se crean instancias dinámicamente.  Un objeto se considera raíz si tiene al menos un objeto primario que contiene una referencia a este.  El recolector de elementos no utilizados puede reclamar la memoria de un objeto solamente cuando ningún otro objeto o variable de la aplicación haga referencia a él.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificar un problema de memoria en una aplicación  
  El síntoma más visible de los problemas de memoria es el rendimiento de la aplicación, especialmente si empeora con el tiempo.  La degradación del rendimiento de otras aplicaciones mientras se ejecuta la aplicación también puede indicar un problema de memoria.  Si sospecha de la existencia de un problema de memoria, use una herramienta como el Administrador de tareas o el [Monitor de rendimiento de Windows](http://technet.microsoft.com/library/cc749249.aspx) para investigar en profundidad.  Por ejemplo, busque un incremento del tamaño total de la memoria que no se pueda explicar como posible origen de pérdidas de memoria:  
@@ -73,7 +73,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  Para analizar el incremento de uso de la memoria de una aplicación, recopile dos archivos de volcado de memoria de una sola instancia de la aplicación.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analizar el uso de la memoria  
  [Filtrar la lista de objetos](#BKMK_Filter_the_list_of_objects) **&#124;** [Analizar los datos de memoria de una sola instantánea](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Comparar dos instantáneas de memoria](#BKMK_Compare_two_memory_snapshots)  
@@ -88,7 +88,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  El analizador de memoria inicia una sesión de depuración para analizar el archivo y muestra los resultados en la página Vista del montón:  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrar la lista de objetos  
  De forma predeterminada, el analizador de memoria filtra la lista de objetos de una instantánea de memoria para mostrar solo los tipos e instancias que son código de usuario, así como para mostrar solo aquellos tipos cuyo tamaño inclusivo total supera un porcentaje del umbral del tamaño total del montón.  Puede cambiar estas opciones en la lista **Configuración de vista**:  
@@ -100,14 +100,14 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  Para filtrar la lista de tipos, también puede escribir una cadena en el cuadro **Buscar**.  La lista muestra solo aquellos tipos cuyos nombres contienen la cadena.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analizar los datos de memoria de una sola instantánea  
  Visual Studio inicia una nueva sesión de depuración para analizar el archivo y muestra los datos de memoria en la ventana Vista del montón.  
   
  ![Lista Tipo de objeto](../misc/media/dbg_mma_objecttypelist.png "DBG\_MMA\_ObjectTypeList")  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 #### Tabla Tipo de objeto  
  En la tabla superior se muestran los tipos de objetos que se mantienen en la memoria.  
@@ -118,7 +118,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
 -   **Tamaño inclusivo \(bytes\)** incluye los tamaños de los objetos a los que se hace referencia.  
   
- Puede elegir el icono de instancias \(![Icono de instancia en la columna Tipo de objeto](../misc/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) en la columna **Tipo de objeto** para ver una lista de las instancias del tipo.  
+ Puede elegir el icono de instancias \(![Icono de instancia en la columna Tipo de objeto](~/docs/profiling/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) en la columna **Tipo de objeto** para ver una lista de las instancias del tipo.  
   
 #### Tabla Instancia  
  ![Tabla de instancias](../misc/media/dbg_mma_instancestable.png "DBG\_MMA\_InstancesTable")  
@@ -181,7 +181,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  También se agrega una columna **Diferencia de recuento de referencias** a la tabla **Rutas de acceso al nodo raíz**.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## Vea también  
  [Blog de TFS VS ALM: Usar Visual Studio 2013 para diagnosticar problemas de memoria de .NET en producción](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

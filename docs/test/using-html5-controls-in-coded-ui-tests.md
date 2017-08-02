@@ -59,7 +59,7 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Control de audio  
  **Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.  
   
- ![Control de audio de HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Control de audio de HTML5](~/docs/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Acción|Grabando|Código generado|  
 |------------|---------------|--------------------|  
@@ -102,7 +102,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Control de vídeo  
  **Control de vídeo:** las acciones en el control de vídeo de HTML5 se graban y se reproducen correctamente.  
   
- ![Control de vídeo de HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Control de vídeo de HTML5](~/docs/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Acción|Grabando|Código generado|  
 |------------|---------------|--------------------|  
@@ -132,7 +132,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Control deslizante  
  **Control deslizante:** las acciones en el control deslizante de HTML5 se graban y se reproducen correctamente.  
   
- ![Control deslizante de HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Control deslizante de HTML5](~/docs/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Acción|Grabando|Código generado|  
 |------------|---------------|--------------------|  
@@ -152,7 +152,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Barra de progreso  
  **Control de barra de progreso:** la barra de progreso es un control con el que no se puede interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control.  
   
- ![Control de barra de progreso de HTML5](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Control de barra de progreso de HTML5](~/docs/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Vea también  
  [Elementos HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   

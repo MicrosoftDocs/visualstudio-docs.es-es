@@ -41,7 +41,7 @@ A continuación, agregará un control **Temporizador** al juego de formar pareja
   
 1.  En el cuadro de herramientas del Diseñador de Windows Forms, pulse **Temporizador** (en la categoría **Componentes**) y, después, la tecla Entrar o haga doble clic en el temporizador para agregar un control de temporizador al formulario. El icono del temporizador, denominado **Temporizador1**, debe aparecer en un espacio bajo el formulario, como se muestra en la siguiente imagen.  
   
-     ![Temporizador](../ide/media/express_timer.png "Express_Timer")  
+     ![Temporizador](~/docs/ide/media/express_timer.png "Express_Timer")  
 Temporizador  
   
     > [!NOTE]

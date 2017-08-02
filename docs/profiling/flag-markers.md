@@ -43,19 +43,19 @@ Un marcador de marca representa algo que se ha producido en un momento determina
 ## <a name="flag-importance"></a>Importancia de la marca  
  Las marcas se muestran en diferentes tamaños según su importancia. Al igual que cualquier marcador, la importancia puede ser baja, normal, alta o crítica.  En esta ilustración se muestra el aspecto de los marcadores por nivel de importancia:  
   
- ![Marcadores de importancia baja, normal, alta y crítica](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![Marcadores de importancia baja, normal, alta y crítica](~/docs/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 Marcadores que muestran la importancia de la marca  
   
 ## <a name="flag-category"></a>Categoría de la marca  
  Una marca se muestra en uno de cinco colores diferentes, según su categoría. Los colores se reutilizan si hay más de cinco categorías. No puede elegir el color. Al igual que cualquier marcador, la categoría puede ser cualquier número entero. En la ilustración siguiente se muestran los colores de las cinco primeras categorías.  
   
- ![Los cinco colores de los marcadores de categoría](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![Los cinco colores de los marcadores de categoría](~/docs/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 Marcadores que muestran categorías  
   
 ## <a name="alerts"></a>Alertas  
  Una alerta es una marca de color rojo que representa un evento de aplicación crítico, como una excepción.  Esta es una alerta:  
   
- ![El marcador de alerta del visualizador de simultaneidad](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![El marcador de alerta del visualizador de simultaneidad](~/docs/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Un marcador de alerta  
   
 ## <a name="aggregation-flags"></a>Marcas de agregación  
@@ -63,7 +63,7 @@ Un marcador de alerta
   
  Las marcas de agregación se dibujan en diferentes tamaños. El tamaño depende del nivel de importancia de la marca más importante en la agregación. En la ilustración siguiente se muestran las marcas de agregación en orden creciente de importancia.  
   
- ![Agregar marcas que muestren cuatro niveles de importancia](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Agregar marcas que muestren cuatro niveles de importancia](~/docs/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Marcas de agregación por nivel de importancia  
   
 ## <a name="see-also"></a>Vea también  

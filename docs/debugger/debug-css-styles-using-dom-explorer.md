@@ -29,7 +29,7 @@ caps.handback.revision: 44
 # Depurar estilos de CSS mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Al depurar aplicaciones de la Tienda Windows, aplicaciones de la Tienda de Windows Phone y aplicaciones creadas con Visual Studio Tools para Apache Cordova, puede ver y cambiar las reglas de CSS de los elementos DOM seleccionados y sus elementos secundarios.  
   
@@ -47,7 +47,7 @@ caps.handback.revision: 44
 -   Use la pestaña **Cambios** \(solo aplicaciones de la Tienda Windows y aplicaciones de la Tienda de Windows Phone\) para identificar y realizar un seguimiento de los estilos CSS que ha cambiado durante una sesión de depuración.  
   
 > [!TIP]
->  Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para modificar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualice la aplicación con el ![Botón Actualizar aplicación de Windows](../debugger/media/js_refresh.png "JS\_Refresh") botón \(**Actualizar aplicación de Windows**\) en la barra de herramientas **Depurar** \(solo aplicaciones de la Tienda Windows y aplicaciones de la Tienda de Windows Phone\). Para obtener más información, consulta [Actualizar una aplicación \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
+>  Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para modificar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualice la aplicación con el ![Botón Actualizar aplicación de Windows](~/docs/debugger/media/js_refresh.png "JS\_Refresh") botón \(**Actualizar aplicación de Windows**\) en la barra de herramientas **Depurar** \(solo aplicaciones de la Tienda Windows y aplicaciones de la Tienda de Windows Phone\). Para obtener más información, consulta [Actualizar una aplicación \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
   
 ## Ejemplo de corrección de una regla de CSS  
  En este ejemplo se muestra cómo inspeccionar las reglas CSS y depurar un problema de estilo. En este ejemplo, digamos que quiere cambiar el color de una fuente utilizada para mostrar títulos de grupo en la plantilla Aplicación dividida de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].  
@@ -140,7 +140,7 @@ caps.handback.revision: 44
   
 15. Use el teclado para modificar este valor. Cámbielo a `rgb(255, 255, 0, 0.87)` y, a continuación, presione Intro. Los colores de todos los títulos de elemento del simulador cambiarán a amarillo.  
   
-16. Para realizar cambios en el archivo CSS de origen, haga clic en el vínculo **items.css** de la pestaña **Estilos**. De este modo se abre items.css, donde puede cambiar el valor de estilo de `color` en el código de la aplicación. Para actualizar la aplicación sin detener y reiniciar el depurador, haga clic en el botón ![Botón Actualizar aplicación de Windows](../debugger/media/js_refresh.png "JS\_Refresh") \(**Actualizar aplicación de Windows**\) en la barra de herramientas **Depurar**.  
+16. Para realizar cambios en el archivo CSS de origen, haga clic en el vínculo **items.css** de la pestaña **Estilos**. De este modo se abre items.css, donde puede cambiar el valor de estilo de `color` en el código de la aplicación. Para actualizar la aplicación sin detener y reiniciar el depurador, haga clic en el botón ![Botón Actualizar aplicación de Windows](~/docs/debugger/media/js_refresh.png "JS\_Refresh") \(**Actualizar aplicación de Windows**\) en la barra de herramientas **Depurar**.  
   
 ## Vea también  
  [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   

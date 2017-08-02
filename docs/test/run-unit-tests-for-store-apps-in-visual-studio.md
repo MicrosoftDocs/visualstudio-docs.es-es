@@ -70,7 +70,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en el Explorador de pruebas  
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.  
   
- ![Explorador de pruebas unitarias](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Explorador de pruebas unitarias](~/docs/ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos predeterminados de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Puede cambiar la manera en que el Explorador de pruebas agrupa las pruebas.  
   
@@ -119,7 +119,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
   
 |||  
 |-|-|  
-|![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|  
+|![Botón de grupo Explorador de pruebas](~/docs/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por el tiempo necesario para ejecutarlas, abra la lista **Agrupar por** y elija **Duración**. Elija **Resultado de la prueba** para volver a la agrupación original.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Buscar y filtrar la lista de pruebas  
  Si tiene muchas pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Puede restringir el filtro a tipos específicos de cadenas seleccionando uno en la lista de filtros antes de introducir la cadena de búsqueda.  

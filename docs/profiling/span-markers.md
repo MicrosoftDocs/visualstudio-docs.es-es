@@ -52,7 +52,7 @@ Los colores de las cinco primeras categorías de intervalo
 ## <a name="span-aggregation-markers"></a>Marcadores de agregación de intervalo  
  En ocasiones los marcadores de intervalo se producen tan cerca de otros en el visualizador de simultaneidad que no se pueden dibujar individualmente. Cuando esto ocurre, se muestra un *marcador de agregación de intervalo* gris que representa los intervalos subyacentes. Cuando coloca el puntero en uno de estos iconos, una información sobre herramientas muestra el número de intervalos subyacentes que se representan. Amplíe para ver los intervalos. Si amplía completamente y sigue recibiendo un marcador de agregación de intervalo, puede ver los marcadores de intervalo subyacentes en el [Informe de marcadores](../profiling/markers-report.md). Esta ilustración muestra un marcador de agregación de intervalo:  
   
- ![Marcador de intervalo agregado en el visualizador de simultaneidad](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+ ![Marcador de intervalo agregado en el visualizador de simultaneidad](~/docs/profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Un marcador de agregación de intervalo  
   
 ## <a name="see-also"></a>Vea también  

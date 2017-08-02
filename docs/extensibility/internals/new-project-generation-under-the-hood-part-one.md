@@ -37,7 +37,7 @@ caps.handback.revision: 29
 ## El cuadro de diálogo nuevo proyecto  
  Todo comienza cuando se selecciona un tipo de proyecto para un proyecto nuevo. Empecemos haciendo clic en **nuevo proyecto** en el **archivo** menú. El **nuevo proyecto** aparece el cuadro de diálogo, aspecto algo parecido a esto:  
   
- ![Cuadro de diálogo Nuevo proyecto](../../extensibility/internals/media/newproject.png "NewProject")  
+ ![Cuadro de diálogo Nuevo proyecto](~/docs/extensibility/internals/media/newproject.gif "NewProject")  
   
  Echemos un vistazo. El **tipos de proyecto** los distintos tipos de proyecto, puede crear listas de árbol. Al seleccionar un tipo de proyecto como **Windows de Visual C\#**, verá una lista de plantillas de aplicación para que pueda comenzar.**Plantillas instaladas de visual Studio** se instalan con Visual Studio y están disponibles para cualquier usuario del equipo. Se pueden agregar plantillas nuevas que cree o recopilar a **Mis plantillas** y están disponibles sólo para usted.  
   
@@ -107,11 +107,11 @@ devenv /installvstemplates
   
  Para Visual Studio con opciones del desarrollador de C\#, el **tipos de proyecto** árbol parecido al siguiente:  
   
- ![Tipos de proyecto](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
+ ![Tipos de proyecto](~/docs/extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
  La carpeta ProjectTemplates correspondiente tiene este aspecto:  
   
- ![Plantillas de proyecto](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Plantillas de proyecto](~/docs/extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  Cuando el **nuevo proyecto** se abre el cuadro de diálogo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recorre la carpeta ProjectTemplates y vuelve a crear su estructura en el **tipos de proyecto** árbol con algunos cambios:  
   
@@ -209,7 +209,7 @@ devenv /installvstemplates
   
 1.  Abra la **nuevo proyecto** diálogo cuadro y expanda el **Visual C\#** nodo del proyecto.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+ ![MyProjectNode](~/docs/extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
  **MyProjectNode** aparece como un nodo secundario de Visual C\# sólo bajo el nodo de Windows.  
   

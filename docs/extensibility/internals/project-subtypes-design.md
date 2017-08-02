@@ -52,7 +52,7 @@ Los subtipos de proyecto permiten a VSPackages extender proyectos basados en Mic
   
  La ilustración siguiente muestra una representación esquemática de una agregación de varios niveles de subtipo del proyecto.  
   
- ![Gráfico Visual Studio multilevel projectflavor](../../extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
+ ![Gráfico Visual Studio multilevel projectflavor](~/docs/extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
 Subtipo de varios niveles de proyecto  
   
  Una agregación de varios niveles de subtipo de proyecto consta de tres niveles, un proyecto base, incluido entre un subtipo del proyecto, después agregado aún más por un subtipo avanzadas del proyecto.  En la ilustración se centra en algunas de las interfaces que admiten que se proporcionan como parte de la arquitectura de subtipo del proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  
@@ -62,7 +62,7 @@ Subtipo de varios niveles de proyecto
   
  La ilustración siguiente se centra en la implementación de extensores de automatización, el objeto de exploración de la configuración de proyecto en particular, utilizado por subtipos de proyecto para extender el sistema de proyectos base.  
   
- ![Gráfico VS Project Project Auto Extender](../../extensibility/internals/media/vs_projectflavorautoextender.png "VS\_ProjectFlavorAutoExtender")  
+ ![Gráfico VS Project Project Auto Extender](~/docs/extensibility/internals/media/vs_projectflavorautoextender.gif "VS\_ProjectFlavorAutoExtender")  
 Extensor de automatización del subtipo del proyecto.  
   
  Los subtipos de proyecto pueden extender aún más el sistema de proyectos base ampliar el modelo de objetos de automatización.  Éstos se definen como parte del objeto de automatización DTE y se utilizan para extender el objeto de proyecto, el objeto de `ProjectItem` y el objeto de `Configuration` .  Para obtener más información, vea [Extender el modelo de objetos del proyecto de Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

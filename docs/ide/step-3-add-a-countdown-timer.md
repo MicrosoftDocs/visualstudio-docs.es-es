@@ -115,7 +115,7 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
   
      El temporizador iniciará la cuenta atrás. Cuando se agota el tiempo, la prueba finaliza y se muestra la respuesta. En la ilustración siguiente se muestra la prueba en curso.  
   
-     ![Prueba matemática en curso](../ide/media/express_addcountdown.png "Express_AddCountdown")  
+     ![Prueba matemática en curso](~/docs/ide/media/express_addcountdown.png "Express_AddCountdown")  
 Prueba matemática en curso  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  

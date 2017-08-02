@@ -51,7 +51,7 @@ caps.handback.revision: 78
 > [!NOTE]  
 >  Hay algunas tareas que no puede realizar con el diseñador de la cinta de opciones.  Para obtener más información sobre estas tareas y cómo puede llevarlas a cabo, vea [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
 ## Agregar un elemento Cinta \(diseñador visual\) a un proyecto  
  Para utilizar el diseñador de la cinta de opciones, agregue un nuevo elemento **Cinta \(diseñador visual\)** al proyecto.  Para obtener más información, vea [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
@@ -109,7 +109,7 @@ caps.handback.revision: 78
   
 -   Abra el **Editor de la colección de fichas** y, a continuación, haga clic en **Agregar**.  
   
-     Para abrir el **Editor de la colección de fichas**, en la ventana **Propiedades**, seleccione la propiedad **Fichas** y, a continuación, haga clic en el botón de puntos suspensivos ![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile").  
+     Para abrir el **Editor de la colección de fichas**, en la ventana **Propiedades**, seleccione la propiedad **Fichas** y, a continuación, haga clic en el botón de puntos suspensivos ![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile").  
   
  Después de agregar una ficha, puede agregar grupos para contener controles.  
   

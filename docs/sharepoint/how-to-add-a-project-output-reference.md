@@ -36,7 +36,7 @@ caps.handback.revision: 14
   
 2.  En **Explorador de soluciones**, elija un elemento del nodo de proyecto de SharePoint.  
   
-3.  En la ventana de **Propiedades** , elija la propiedad de **Referencias de salida del proyecto** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a.  
+3.  En la ventana de **Propiedades** , elija la propiedad de **Referencias de salida del proyecto** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a.  
   
 4.  En el cuadro de diálogo de **Referencias de salida del proyecto** , elija el botón de **Add** .  
   

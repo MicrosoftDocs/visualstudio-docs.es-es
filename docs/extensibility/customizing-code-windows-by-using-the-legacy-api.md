@@ -25,7 +25,7 @@ Una ventana de código es un objeto de ventana de documento que admite una o var
   
  Una ventana de código es un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que tiene una vista de texto y los elementos gráficos ubicados en el objeto. Al crear la ventana de código durante la creación de instancias del núcleo del editor, el servicio de lenguaje puede adjuntar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> a la ventana de código, como se muestra en la siguiente ilustración.  
   
- ![Gráfico CodeWindow](../extensibility/media/vscodewindow.png "vscodewindow")  
+ ![Gráfico CodeWindow](~/docs/extensibility/media/vscodewindow.gif "vscodewindow")  
 Ventana Código  
   
  El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos, como una barra de la lista desplegable. La ventana de código llama el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> durante la inicialización de la ventana de código. Cuando se realiza esta llamada, el servicio de lenguaje puede agregar una barra de la lista desplegable o una barra de botones \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>\) en la ventana de código.  

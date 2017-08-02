@@ -30,7 +30,7 @@ caps.handback.revision: 101
 # Inicio r&#225;pido: Depurar HTML y CSS
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características son compatibles con las aplicaciones [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 101
   
      En la siguiente ilustración se muestra lo que queremos ver al ejecutar esta aplicación en el emulador de Windows Phone \(es parecido en el simulador\). En cambio, para que la aplicación tenga este estado, primero tenemos que corregir algunos errores.  
   
-     ![Aplicación FlipView con los resultados esperados](../debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
+     ![Aplicación FlipView con los resultados esperados](~/docs/debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
   
 7.  Elige **Simulador** o **Emulator 8.1 WVGA 512MB\(ES\)** en la lista desplegable situada junto al botón **Iniciar depuración** de la barra de herramientas **Depurar**:  
   
@@ -193,7 +193,7 @@ caps.handback.revision: 101
   
 2.  Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.  
   
-3.  Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar \(o presiona F4\). El botón tiene el siguiente aspecto: ![Botón Actualizar aplicación de Windows](../debugger/media/js_refresh.png "JS\_Refresh").  
+3.  Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar \(o presiona F4\). El botón tiene el siguiente aspecto: ![Botón Actualizar aplicación de Windows](~/docs/debugger/media/js_refresh.png "JS\_Refresh").  
   
      Se recargan las páginas de la aplicación y el simulador o el emulador de Windows Phone vuelven al primer plano.  
   
@@ -216,7 +216,7 @@ caps.handback.revision: 101
   
  Antes de elegir **Seleccionar elemento**, puede especificar si desea resaltar los elementos de la aplicación en ejecución mediante la alternancia del botón **Mostrar cuadros de resaltado de página web para el elemento seleccionado en el árbol DOM**. En la siguiente ilustración se muestra este botón. Los elementos resaltados se muestran de forma predeterminada.  
   
- ![Botón Mostrar aspectos destacados de página web](../debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
+ ![Botón Mostrar aspectos destacados de página web](~/docs/debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
   
  Al elegir que se resalten los elementos, se resaltan aquellos sobre los que se mantiene el mouse en el simulador. Los colores de los elementos resaltados coinciden con el modelo de cuadro que aparece en la pestaña **Diseño** del Explorador DOM.  
   

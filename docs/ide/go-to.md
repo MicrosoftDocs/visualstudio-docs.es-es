@@ -48,35 +48,35 @@ Esta característica existe en Visual Studio 2017 y versiones posteriores.  Le p
 
 Esto mostrará una ventana pequeña en la parte superior derecha de su IDE, de manera predeterminada.
 
-![Ir a todo](media/gotoall.png)
+![Ir a todo](~/docs/ide/media/gotoall.png)
 
 Desde aquí, existen varias maneras de continuar:
 * Escriba texto sin un prefijo para buscar con los [iconos de filtrado](#filtered-searches) seleccionados debajo del cuadro de texto.
 * Escriba un [prefijo](#filtered-searches) seguido del texto que se va a buscar.
 * Escriba un signo de interrogación (?) para obtener ayuda adicional.
-  ![Ayuda de Ir a todo](media/gotoall_help.png)
+  ![Ayuda de Ir a todo](~/docs/ide/media/gotoall_help.png)
 
 ### <a name="filtered-searches"></a>Búsquedas filtradas
 Para restringir la búsqueda a un tipo específico, puede usar un prefijo al escribir o usar los iconos debajo de la ventana de búsqueda como se muestra a continuación.
 
 Prefijo | Iconos | Acceso directo | Descripción
 :----: | ---- | -------- | ---
-#      | ![Icono de símbolo](media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Buscar símbolos coincidentes
-f      | ![Icono de archivo](media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Buscar nombres de archivo coincidentes
-m      | ![Icono de miembro](media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Buscar miembros coincidentes
-m      | ![Icono de tipo](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Buscar tipos coincidentes
-:      | ![Icono de línea](media/gotoall_lineicon.png)     | Ctrl+G         | Ir al número de línea que se ha especificado
+#      | ![Icono de símbolo](~/docs/ide/media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Buscar símbolos coincidentes
+f      | ![Icono de archivo](~/docs/ide/media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Buscar nombres de archivo coincidentes
+m      | ![Icono de miembro](~/docs/ide/media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Buscar miembros coincidentes
+m      | ![Icono de tipo](~/docs/ide/media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Buscar tipos coincidentes
+:      | ![Icono de línea](~/docs/ide/media/gotoall_lineicon.png)     | Ctrl+G         | Ir al número de línea que se ha especificado
 
 ### <a name="search-locations"></a>Ubicaciones de búsqueda
 Para restringir la búsqueda a ubicaciones específicas, use los dos iconos de documento.
 
 Iconos | Descripción
 ---- | ---
-![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
-![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
+![Documento actual](~/docs/ide/media/gotoall_currentdocument.png) | Buscar solo en el documento actual
+![Documentos externos](~/docs/ide/media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
 
 ### <a name="settings"></a>Configuración
-Hacer clic en el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) en la parte inferior derecha le permite cambiar el funcionamiento de esta característica.
+Hacer clic en el icono de engranaje ![Icono de engranaje](~/docs/ide/media/gotoall_gear.png) en la parte inferior derecha le permite cambiar el funcionamiento de esta característica.
 
 Configuración | Descripción
 ------- | ---

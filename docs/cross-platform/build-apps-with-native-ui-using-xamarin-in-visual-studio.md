@@ -38,7 +38,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup-and-install.md) y [Comprobar el entorno de Xamarin](../cross-platform/verify-your-xamarin-environment.md), este tutorial le muestra cómo compilar una aplicación de Xamarin básica (mostrada a continuación) con capas de interfaz de usuario nativa. Con la interfaz de usuario nativa, el código compartido reside en una biblioteca de clases portable (PCL) y los proyectos de plataforma individuales contienen las definiciones de interfaz de usuario.  
   
- ![Aplicación Xamarin en Android y Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")  
+ ![Aplicación Xamarin en Android y Windows Phone](~/docs/cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")  
   
  Deberá llevar a cabo estas operaciones para compilarla:  
   
@@ -468,7 +468,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
   
 13. Guarde el archivo y cambie a la vista **Diseño**. Su IU aparecerá de la siguiente forma:  
   
-     ![Interfaz de usuario de la aplicación Android](../cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
+     ![Interfaz de usuario de la aplicación Android](~/docs/cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
   
 14. Abra **MainActivity.cs** y elimine las líneas del método *OnCreate* que hacen referencia al botón predeterminado que se quitó anteriormente. Cuando termine, el código tendrá este aspecto:  
   
@@ -597,13 +597,13 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
   
  En la vista del diseño, su IU debe aparecer de esta manera:  
   
- ![Interfaz de usuario de la aplicación de Windows Phone ](../cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
+ ![Interfaz de usuario de la aplicación de Windows Phone ](~/docs/cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
   
 ### <a name="consume-your-shared-code"></a>Use su código compartido  
   
 1.  En el diseñador, seleccione el botón **Obtener el tiempo** .  
   
-2.  En la ventana **Propiedades**, elija el botón de controlador de eventos (![Icono Controladores de eventos en Visual Studio](../cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
+2.  En la ventana **Propiedades**, elija el botón de controlador de eventos (![Icono Controladores de eventos en Visual Studio](~/docs/cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
   
      Este icono aparece en la esquina superior de la ventana **Propiedades** .  
   

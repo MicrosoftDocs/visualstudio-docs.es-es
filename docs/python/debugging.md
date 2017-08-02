@@ -77,7 +77,7 @@ Puede iniciar una sesión de depuración con el comando **Depurar > Iniciar depu
 
 Los puntos de interrupción detienen la ejecución del código en un punto especificado, a fin de poder inspeccionar el estado del programa. Para establecerlos, haga clic en el margen izquierdo del Editor de código o haga clic con el botón derecho en una línea de código y seleccione **Punto de interrupción > Insertar punto de interrupción**. En cada línea con un punto de interrupción, aparece un punto rojo.
 
-![Puntos de interrupción en Visual Studio](media/debugging-breakpoints.png)
+![Puntos de interrupción en Visual Studio](~/docs/python/media/debugging-breakpoints.png)
 
 Para eliminar un punto de interrupción, haga clic en el punto rojo o haga clic con el botón derecho en la línea de código y seleccione **Punto de interrupción > Eliminar punto de interrupción**. También puede deshabilitarlo sin quitarlo; para ello, use el comando **Punto de interrupción > Deshabilitar punto de interrupción**.
 
@@ -88,7 +88,7 @@ Puede personalizar las condiciones en que se desencadena un punto de interrupci�
 
 Al definir las condiciones, también puede completar el campo **Acción** y crear un mensaje para registrarlo en la ventana de salida, con la opción de que la ejecución continúe automáticamente. Con esta operación, se crea un *punto de seguimiento* sin tener que especificar código de registro directamente en la aplicación:
 
-![Creación de un punto de seguimiento con un punto de interrupción](media/debugging-tracepoint.png)
+![Creación de un punto de seguimiento con un punto de interrupción](~/docs/python/media/debugging-tracepoint.png)
 
 ### <a name="stepping-through-code"></a>Ejecución paso a paso del código
 
@@ -110,27 +110,27 @@ Cuando el depurador se detiene, puede inspeccionar y modificar los valores de va
 
 Para ver un valor con Información sobre datos, solo tiene que mover el puntero sobre cualquier variable en el editor. Puede hacer clic en el valor para cambiarlo:
 
-![Información sobre datos del depurador](media/debugging-quick-tips.png)
+![Información sobre datos del depurador](~/docs/python/media/debugging-quick-tips.png)
 
 La ventana Automático (**Depurar > Ventanas > Automático**) contiene las variables y expresiones que están cerca de la instrucción actual. Puede hacer doble clic en la columna de valor o seleccionar y presionar F2 para modificar el valor:
 
-![Ventana Automático en el depurador](media/debugging-autos-window.png)
+![Ventana Automático en el depurador](~/docs/python/media/debugging-autos-window.png)
 
 La ventana Variables locales (**Depurar > Ventanas > Variables locales**) muestra todas las variables que se encuentran en el ámbito actual, que se pueden volver a modificar:
 
-![Ventana Variables locales en el depurador](media/debugging-locals-window.png)
+![Ventana Variables locales en el depurador](~/docs/python/media/debugging-locals-window.png)
 
 Para obtener más información sobre el uso de las ventanas Automático y Variables locales, vea [Inspecting Variables in the Autos and Locals Windows](../debugger/autos-and-locals-windows.md) (Inspección de variables en las ventanas Automático y Variables locales).
 
 Las ventanas Inspección (**Depurar > Ventanas > Inspección > Inspección 1-4**) permiten especificar expresiones arbitrarias de Python y ver los resultados. Las expresiones se vuelven a evaluar para cada paso:
 
-![Ventana Inspección en el depurador](media/debugging-watch-window.png)
+![Ventana Inspección en el depurador](~/docs/python/media/debugging-watch-window.png)
 
 Para obtener más información sobre el uso de Inspección, vea [Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio](../debugger/watch-and-quickwatch-windows.md) (Establecimiento de una ventana Inspección en variables que usan las ventanas Inspección e Inspección rápida en Visual Studio).
 
 Al inspeccionar un valor de cadena (`str`, `unicode`, `bytes` y `bytearray` se consideran cadenas para este propósito), verá un icono de lupa a la derecha del valor. Al hacer clic en él, se muestra el valor de cadena sin comillas en un cuadro de diálogo emergente, con las opciones de ajuste y desplazamiento, que resultan útiles para cadenas largas. Además, al hacer clic en la flecha desplegable en el icono, puede seleccionar texto sin formato y visualizaciones HTML, XML y JSON:
 
-![Visualizadores de cadena](media/debugging-string-visualizers.png)
+![Visualizadores de cadena](~/docs/python/media/debugging-string-visualizers.png)
 
 Las visualizaciones HTML, XML y JSON aparecen en ventanas emergentes independientes con resaltado de sintaxis y vistas de árbol.
 
@@ -138,13 +138,13 @@ Las visualizaciones HTML, XML y JSON aparecen en ventanas emergentes independien
 
 Si se produce algún error mientras se depura el programa y no dispone de un controlador de excepciones para él, el depurador se interrumpe en el punto de la excepción:
 
-![Cuadro emergente de excepciones](media/debugging-exception-popup.png)
+![Cuadro emergente de excepciones](~/docs/python/media/debugging-exception-popup.png)
 
 En este punto puede inspeccionar el estado del programa, incluida la pila de llamadas. Sin embargo, si intenta recorrer el código, la excepción continuará produciéndose hasta que se gestione o hasta que el programa se cierre.
 
 El comando de menú **Depurar > Ventanas > Configuración de excepciones** abre una ventana en la que puede expandir **Excepciones de Python**:
 
-![Ventana de excepciones](media/debugging-exception-settings.png)
+![Ventana de excepciones](~/docs/python/media/debugging-exception-settings.png)
 
 La casilla de cada excepción controla si el depurador *siempre* se interrumpe cuando se produce la excepción. Debe activar esta casilla si desea que las interrupciones sean más frecuentes para una excepción concreta.
 
@@ -156,7 +156,7 @@ Para configurar una excepción que no aparece en esta lista, haga clic en el bot
 
 De forma predeterminada, el depurador inicia el programa con el selector de Python estándar, sin argumentos de línea de comandos ni otras rutas de acceso o condiciones especiales. Estos pueden cambiarse mediante las propiedades de depuración del proyecto; para acceder a ellas, haga clic con el botón derecho en el Explorador de soluciones, seleccione **Propiedades** y después la pestaña **Depurar**.
 
-![Propiedades de depuración de proyectos](media/debugging-project-properties.png)
+![Propiedades de depuración de proyectos](~/docs/python/media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Opciones de Modo de inicio
 
@@ -188,7 +188,7 @@ La ventana Inmediato (**Depurar > Ventanas > Inmediato**) se utiliza para la eva
 
 La ventana interactiva de depuración de Python (**Depurar > Ventanas > Depuración de Python interactiva**) está más enriquecida, ya que habilita la experiencia de [REPL interactivo](interactive-repl.md) completa durante la depuración, incluido el código de escritura y ejecución. Se conecta automáticamente a cualquier proceso iniciado en el depurador mediante el selector de Python estándar (incluidos los procesos asociados a través de **Depurar > Asociar al proceso*). No obstante, no está disponible si se usa la depuración en modo mixto de C/C++.
 
-![Ventana Depuración de Python interactiva](media/debugging-interactive.png)
+![Ventana Depuración de Python interactiva](~/docs/python/media/debugging-interactive.png)
 
 La ventana Depuración interactiva admite metacomandos especiales además de los [comandos estándar de REPL](interactive-repl.md#meta-commands):
 
@@ -215,4 +215,4 @@ Tenga en cuenta que las ventanas del depurador estándar, como Procesos, Subproc
 
 La ventana Depuración interactiva tiene su propio conjunto de opciones, a las que puede acceder en **Herramientas > Opciones > Herramientas de Python > Ventana Depuración interactiva**. A diferencia de la ventana interactiva de Python habitual, que tiene una instancia independiente para cada entorno Python, solo haya una ventana Depuración interactiva, que siempre usa el intérprete de Python para el proceso que se depura.
 
-![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
+![Opciones de la ventana Depuración interactiva](~/docs/python/media/debugging-interactive-options.png)

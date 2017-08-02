@@ -36,7 +36,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
   
  En este escenario, cuando se ejecute la aplicación para probarla, el fondo se representará de la manera prevista, pero no aparecerá uno de los objetos. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene este aspecto en la aplicación:  
   
- ![No se puede ver el objeto.](../debugger/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
+ ![No se puede ver el objeto.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
   
 ## Investigación  
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el archivo de registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  
@@ -80,19 +80,19 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
   
 3.  La primera vez que se modifique el valor de `output`, se escribe en el miembro `worldPos`.  
   
-     ![El valor de "output.worldPos" parece razonable](../debugger/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
+     ![El valor de "output.worldPos" parece razonable](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
   
      Como su valor parece razonable, continúe recorriendo el código hasta la siguiente línea que modifique el valor de `output`.  
   
 4.  La siguiente vez que se modifica el valor de `output`, se escribe en el miembro `pos`.  
   
-     ![El valor de "output.pos" se ha establecido en cero](../debugger/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
+     ![El valor de "output.pos" se ha establecido en cero](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
   
      Esta vez, el valor del miembro `pos` \(todo ceros\) parece sospechoso. A continuación, querrá determinar cómo es posible que el valor de `output.pos` solo incluya ceros.  
   
 5.  Observe que `output.pos` toma su valor de una variable denominada `temp`. En la línea anterior, verá que el valor de `temp` es el resultado de multiplicar su valor anterior por una constante denominada `projection`. Sospechará que el valor sospechoso de `temp` es el resultado de esta multiplicación. Cuando sitúe el puntero en `projection`, verá que su valor también contiene solo ceros.  
   
-     ![La matriz de proyección incluye una transformación errónea](../debugger/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
+     ![La matriz de proyección incluye una transformación errónea](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
   
      En este escenario, el examen revela que el valor sospechoso de `temp` probablemente se debe a la multiplicación por `projection`, y como `projection` es una constante que está pensada para contener una matriz de proyección, sabrá que no debe contener solamente ceros.  
   
@@ -104,7 +104,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
   
 2.  Suba por la pila de llamadas hasta llegar al código fuente de la aplicación. En la ventana **Pila de llamadas de eventos de gráficos**, elija la llamada superior para ver si el búfer de constantes se llena ahí. Si no es así, siga subiendo por la pila de llamadas hasta que encuentre dónde se llena. En este escenario, detectará que el búfer de constantes se llena \(mediante la API de Direct3D `UpdateSubresource`\) más arriba en la pila de llamadas, en una función que se denomina `MarbleMaze::Render` y cuyo valor procede de un objeto de búfer de constantes que se denomina `m_marbleConstantBufferData`:  
   
-     ![Código que establece el búfer de constantes del objeto](../debugger/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
+     ![Código que establece el búfer de constantes del objeto](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
   
     > [!TIP]
     >  Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.  
@@ -119,12 +119,12 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
   
  Después de encontrar la ubicación donde se establece `m_marbleConstantBufferData.projection`, puede examinar el código fuente de alrededor para determinar el origen del valor incorrecto. En este escenario, detectará que el valor de `m_marbleConstantBufferData.projection` se establece en una variable local denominada `projection` antes de que se haya inicializado en un valor que proporciona el código `m_camera->GetProjection(&projection);` en la línea siguiente.  
   
- ![La proyección de Marble se establece antes de la inicialización](../debugger/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
+ ![La proyección de Marble se establece antes de la inicialización](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
   
  Para corregir el problema, mueva la línea de código que establece el valor de `m_marbleConstantBufferData.projection` después de la línea que inicializa el valor de la variable local `projection`.  
   
- ![Código fuente de C&#43;&#43; corregido](../debugger/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
+ ![Código fuente de C&#43;&#43; corregido](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
   
  Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se ha resuelto el problema de representación:  
   
- ![Ahora se muestra el objeto.](../debugger/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")
+ ![Ahora se muestra el objeto.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")

@@ -37,7 +37,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
   
  Los pasos siguientes muestran cómo crear una textura que representa un destino de “diana”. Cuando termine, textura debe parecerse a la siguiente imagen.  Para mostrar mejor la transparencia de textura, se ha configurado el editor de Imágenes utilizar un verde, modelo de cuadros para mostrarlo.  
   
- ![Destino de "Bullseye" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit\-Bullseye\-Texture\-In\-Editor")  
+ ![Destino de "Bullseye" con transparencia mostrado en verde](~/docs/designers/media/digit-bullseye-texture-in-editor.png "Digit\-Bullseye\-Texture\-In\-Editor")  
   
  Antes de empezar, asegúrese de que la ventana de **Propiedades** está visible.  Utilice la ventana de **Propiedades** para establecer el tamaño de la imagen, cambia las propiedades de la herramienta, y especificar colores mientras trabaja.  
   
@@ -85,7 +85,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
   
  Se completa la textura de destino de “diana”.  A continuación se muestra la imagen final, que se muestra con la transparencia.  
   
- ![La textura de destino "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png "gfx\_image\_demo\_bullseye")  
+ ![La textura de destino "bullseye" completa](~/docs/designers/media/gfx_image_demo_bullseye.png "gfx\_image\_demo\_bullseye")  
   
  Como paso siguiente, puede generar los niveles MIP para esta textura.  Para obtener más información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   

@@ -50,7 +50,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:  
   
-     ![Cuadro de diálogo Crear recurso](../designers/media/xaml_create_resource.png "xaml_create_resource")  
+     ![Cuadro de diálogo Crear recurso](~/docs/designers/media/xaml_create_resource.png "xaml_create_resource")  
   
 3.  En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.  
   

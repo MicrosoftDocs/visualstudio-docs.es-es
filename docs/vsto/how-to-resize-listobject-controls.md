@@ -39,7 +39,7 @@ caps.handback.revision: 46
   
  Para obtener más información sobre los controles <xref:Microsoft.Office.Tools.Excel.ListObject>, consulte [ListObject &#40;Control&#41;](../vsto/listobject-control.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Cambiar el tamaño de un control ListObject en tiempo de diseño  
  Para cambiar el tamaño de una lista, puede hacer clic y arrastrar uno de los controladores de tamaño, o puede volver a definir su tamaño en el cuadro de diálogo **Cambiar el tamaño de la lista**.  

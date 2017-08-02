@@ -44,7 +44,7 @@ manager: "ghogen"
 # Iniciar una sesi&#243;n de depuraci&#243;n para aplicaciones de la Tienda en Visual Studio (VB, C#, C++ y XAML)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  En este tema se describe cómo iniciar una sesión de depuración para aplicaciones de la Tienda escritas en XAML y Visual C\+\+, Visual C\# o Visual Basic. Para depurar una aplicación, hay que configurar la sesión de depuración y elegir la manera de iniciar la aplicación.  
   
@@ -104,11 +104,11 @@ manager: "ghogen"
   
     -   Para aplicaciones de Visual C\# y Visual Basic, elige **Depurar**.  
   
-         ![Página de propiedades de depuración del proyecto de C&#35;&#47;VB](../debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
+         ![Página de propiedades de depuración del proyecto de C&#35;&#47;VB](~/docs/debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
   
     -   Para aplicaciones de Visual C\+\+, expande el nodo **Propiedades de configuración** y, después, elige **Depuración**.  
   
-         ![Página de propiedades de depuración de la aplicación de la Tienda Windows de C&#43;&#43;](../debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
+         ![Página de propiedades de depuración de la aplicación de la Tienda Windows de C&#43;&#43;](~/docs/debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
   
 ###  <a name="BKMK_Choose_the_build_configuration_options"></a> Elegir las opciones de configuración de compilación  
   
@@ -117,7 +117,7 @@ manager: "ghogen"
 2.  En la lista **Plataforma** elige la plataforma de destino para la que se va a compilar. En la mayoría de los casos la mejor opción es **Cualquier CPU** \(**Todas las plataformas** en Visual C\+\+\).  
   
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Elegir el destino de implementación  
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Puede implementar y depurar una aplicación de la Tienda Windows en el equipo de Visual Studio, en el simulador de Visual Studio del equipo local o en un dispositivo remoto.  
   
@@ -154,7 +154,7 @@ manager: "ghogen"
     > [!NOTE]
     >  El cuadro de diálogo **Seleccionar conexión del depurador remoto** muestra los equipos que están en la subred local y los que están conectados directamente con el equipo de Visual Studio mediante un cable Ethernet. Para especificar otro equipo, escribe su nombre en el cuadro **Nombre de equipo**.  
   
- ![Se aplica solo a Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Se aplica solo a Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Puede implementar y depurar una aplicación de la Tienda de Windows Phone en un dispositivo o en uno de los emuladores de teléfono de Visual Studio. Seleccione el dispositivo o emulador en la lista **Dispositivo de destino**.  
   
@@ -177,7 +177,7 @@ manager: "ghogen"
 |**Mixto \(administrado y nativo\)**|Depura el código de C\/C\+\+ nativo y el código administrado de la aplicación. Se omite el código de JavaScript.|  
 |**Solo GPU**|Depura el código de C\+\+ nativo que se ejecuta en una unidad de procesamiento gráfico \(GPU\).|  
   
- ![Se aplica solo a Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Se aplica solo a Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Para aplicaciones de la Tienda de Windows Phone, además puede elegir el depurador que va a usar para los procesos en segundo plano desde **Proceso de tarea en segundo plano**.  
   
@@ -191,7 +191,7 @@ manager: "ghogen"
 -   Para aplicaciones de Visual C\+\+, elige **Sí** en la lista **Iniciar aplicación** de la página de propiedades de **Depuración**.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Opcional\) Deshabilitar bucles invertidos de red  
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Por razones de seguridad, a las aplicaciones de la Tienda Windows instaladas de la manera estándar en un dispositivo no se les permite realizar llamadas de red a ese dispositivo. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar tu aplicación a la Tienda Windows, debes probarla sin la exención.  
   
@@ -205,7 +205,7 @@ manager: "ghogen"
  Para diagnosticar problemas con la instalación y la configuración inicial de tu aplicación de Visual C\# o Visual Basic, elige **Desinstalar y volver a instalar mi paquete** en la página de propiedades de **Depurar** para volver a crear una instalación original al iniciar la depuración. Esta opción no está disponible para los proyectos de Visual C\+\+.  
   
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> \(Opcional\) Deshabilitar el requisito de autenticación para iniciar el depurador remoto  
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  De forma predeterminada, debes proporcionar credenciales para ejecutar el depurador remoto.  
   

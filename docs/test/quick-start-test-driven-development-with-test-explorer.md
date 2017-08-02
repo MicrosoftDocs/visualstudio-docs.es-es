@@ -46,7 +46,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 -   Ver en una ventana toda la información necesaria.  
   
 ## <a name="using-test-explorer"></a>Usar el Explorador de pruebas  
- ![Explorador de pruebas unitarias con el botón Ejecutar todas](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+ ![Explorador de pruebas unitarias con el botón Ejecutar todas](~/docs/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas  
   

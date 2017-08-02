@@ -49,13 +49,13 @@ Algunos ejemplos sencillos:
 
 Los fragmentos de código pueden ser mucho más que una simple finalización de caracteres. Por ejemplo, puede evitarle tener que recordar los nombres de parámetros en una llamada de función compleja, por ejemplo, este fragmento de código para leer un archivo CSV con la función `read.csv`:
 
-![Animación del uso de un fragmento de código para insertar una llamada a read.csv](media/code-snippet-expansion.gif)
+![Animación del uso de un fragmento de código para insertar una llamada a read.csv](~/docs/rtvs/media/code-snippet-expansion.gif)
 
 En este caso, a medida que escribe `readc`, IntelliSense muestra una lista de finalización. Si selecciona esa finalización en la lista desplegable y presiona Tab, se selecciona `readc` y, si vuelve a presionar Tab, se expande el fragmento de código. (Por esta razón, la expansión de fragmentos de código se suele considerar como "escriba el fragmento de código y presione la tecla Tab dos veces"). En la mayoría de los casos, la primera vez que se presiona Tab, se completa la selección de IntelliSense y, la segunda vez que se presiona Tab, se desencadena la expansión.
 
 Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo **Herramientas > Administrador de fragmentos de código...** (Ctrl+K,B) y seleccione **R** en **Lenguaje**. Expanda los grupos y seleccione fragmentos de código individuales para ver una descripción y el texto del acceso directo:
 
-![Cuadro de diálogo Fragmentos de código de R](media/code-snippet-dialog.png)
+![Cuadro de diálogo Fragmentos de código de R](~/docs/rtvs/media/code-snippet-dialog.png)
 
 Para crear fragmentos de código personalizados, siga las instrucciones en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente es el fragmento de código de la operación de canalización (acceso directo `>`)
 

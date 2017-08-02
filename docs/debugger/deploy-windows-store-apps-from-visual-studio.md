@@ -23,7 +23,7 @@ caps.handback.revision: 14
 # Implementar aplicaciones de la Tienda Windows desde Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  La funcionalidad de implementación de Visual Studio crea y registra aplicaciones de la Tienda Windows creadas con Visual Studio en un dispositivo de destino. El modo en que se registra la aplicación depende de si el dispositivo de destino es local o remoto.  
   

@@ -29,7 +29,7 @@ caps.handback.revision: 7
 # Inicio r&#225;pido: Depurar JavaScript mediante la consola
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones de la Tienda Windows creadas con JavaScript. Estas características son compatibles con las aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [Comandos de la Consola JavaScript](../debugger/javascript-console-commands.md).  
   

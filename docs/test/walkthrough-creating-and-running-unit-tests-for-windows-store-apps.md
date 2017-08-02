@@ -147,7 +147,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
     >   
     >  Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba**y usar la opción **Propiedades** .  
     >   
-    >  ![Explorador de pruebas unitarias&#45; menú de contexto de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
+    >  ![Explorador de pruebas unitarias&#45; menú de contexto de pruebas unitarias](~/docs/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
   
      La prueba unitaria se ejecuta. Al finalizar, el Explorador de pruebas muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.  
   

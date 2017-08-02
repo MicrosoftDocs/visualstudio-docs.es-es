@@ -301,7 +301,7 @@ Matices para cada uno de los nombres de token que se permiten en una superficie 
   
 Ejemplos de la superficie del editor en el tema azul:  
   
-![Editor en el tema azul](../../extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Editor en el tema azul
+![Editor en el tema azul](~/docs/extensibility/ux-guidelines/media/030303-c_editorblue.png "030303-c_EditorBlue")<br />Editor en el tema azul
   
 ![Editor en el tema de alto contraste nº 1](../../extensibility/ux-guidelines/media/030303-d_editorhc1.png "030303-d_EditorHC1")<br />Editor en el tema de alto contraste nº 1
   
@@ -725,11 +725,11 @@ Los desencadenadores de host de Visual Studio complemento el tema de cambios cua
   
 **Tema de color:**  
   
-![Cambios de tema de color](../../extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Cambios de tema de color  
+![Cambios de tema de color](~/docs/extensibility/ux-guidelines/media/0305-a_colortheme.png "0305-a_ColorTheme")<br />Cambios de tema de color  
   
 **Tema del entorno:**  
   
-![Cambios de tema del entorno](../../extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Cambios de tema del entorno  
+![Cambios de tema del entorno](~/docs/extensibility/ux-guidelines/media/0305-b_environmenttheme.png "0305-b_EnvironmentTheme")<br />Cambios de tema del entorno  
   
 **Tema del sistema operativo** (sólo al cambiar a y desde el contraste alto):  
   

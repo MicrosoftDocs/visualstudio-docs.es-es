@@ -39,7 +39,7 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propiedades** 
   
  El **propiedades** ventana, que se puede abrir presionando F4 del teclado o seleccionando **ventana propiedades** en el **vista** menú, se utiliza para ver y editar propiedades de tiempo de diseño independientes de la configuración y los eventos de los objetos seleccionados. Propiedades dependientes de la configuración, asociados con soluciones y proyectos, se muestran en [páginas de propiedades](../../extensibility/internals/property-pages.md). Para obtener más información, consulte [propiedades del proyecto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [opciones de configuración de administración de](../../extensibility/internals/managing-configuration-options.md), y [NIB: Item Management in Projects](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
- ![Información general sobre la ventana de propiedades](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
+ ![Información general sobre la ventana de propiedades](~/docs/extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Propiedades (ventana)  
   
  Esta sección proporciona información detallada que se relaciona con las áreas individuales de la **propiedades** ventana y las interfaces que debe implementar y llamada a rellenar la ventana.  

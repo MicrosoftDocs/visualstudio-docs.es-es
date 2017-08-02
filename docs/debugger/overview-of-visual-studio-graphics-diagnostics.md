@@ -77,7 +77,7 @@ manager: "ghogen"
 ### Barra de herramientas Gráficos \(Analizador de gráficos\)  
  La barra de herramientas Gráficos proporciona acceso directo a las ventanas del Analizador de gráficos.  
   
- ![Barra de herramientas de gráficos en el modo de diagnóstico de gráficos](../debugger/media/vsg_toolbar.png "vsg\_toolbar")  
+ ![Barra de herramientas de gráficos en el modo de diagnóstico de gráficos](~/docs/debugger/graphics/media/vsg_toolbar.png "vsg\_toolbar")  
   
 ### Documento de registro de gráficos  
  En el Analizador de gráficos, el documento de registro de gráficos es la ventana de herramientas más destacada.  Esta ventana representa todos los fotogramas capturados mediante la ejecución de la aplicación en Diagnóstico de gráficos.  Desde aquí, puede seleccionar el fotograma que desea examinar o seleccionar un píxel concreto para examinarlo con la herramienta Historial de píxeles.  La imagen del búfer de fotogramas que muestra este documento cambia para reflejar el evento seleccionado, de forma que pueda ver cómo cambia el búfer de fotogramas con el tiempo.  

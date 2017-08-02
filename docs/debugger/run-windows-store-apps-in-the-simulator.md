@@ -42,9 +42,9 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> Elegir el modo de interacción  
  Puede elegir los siguientes modos de interacción:  
   
--   ![Botón de modo del mouse](../debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Modo del mouse: establece el modo de interacción en los gestos del mouse. Los gestos del mouse son los clics, los doble clics y arrastrar.  
+-   ![Botón de modo del mouse](~/docs/debugger/media/simulator_mousemodebtn.png "SIMULATOR\_MouseModeBtn") Modo del mouse: establece el modo de interacción en los gestos del mouse. Los gestos del mouse son los clics, los doble clics y arrastrar.  
   
--   ![Botón Iniciar emulación táctil](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Iniciar emulación táctil: establece el modo de interacción en gestos de toque con un solo dedo. Los eventos de un solo dedo son pulsar, arrastrar y deslizar rápidamente.  
+-   ![Botón Iniciar emulación táctil](~/docs/debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR\_StartTouchEmulationBtn") Iniciar emulación táctil: establece el modo de interacción en gestos de toque con un solo dedo. Los eventos de un solo dedo son pulsar, arrastrar y deslizar rápidamente.  
   
      ![Simulator one finger target](../debugger/media/simulator_onefinger.png "SIMULATOR\_OneFinger") El icono de destino único indica la ubicación de los eventos en el simulador. Usa el mouse para colocar el puntero.  
   
@@ -108,7 +108,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
 -   Para configurar la ubicación donde se encuentran las capturas de pantalla, seleccione el botón **Configuración de captura de pantalla** y elija la ubicación en el menú contextual.  
   
-     ![Menú contextual de la configuración de captura de pantalla](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
+     ![Menú contextual de la configuración de captura de pantalla](~/docs/debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR\_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
  Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  

@@ -41,7 +41,7 @@ ms.lasthandoff: 05/12/2017
 
 El trazado es una parte fundamental del flujo de trabajo de un científico de datos. En las herramientas de R para Visual Studio (RTVS), toda la actividad de trazado se centra en una o más ventanas de trazado, que están diseñadas para mejorar la productividad de esta actividad principal.
 
-![Imagen prominente del trazado](media/plotting-hero-image.png)
+![Imagen prominente del trazado](~/docs/rtvs/media/plotting-hero-image.png)
 
 En este tema:
 
@@ -58,7 +58,7 @@ En el siguiente vídeo (2m 02s) se proporciona un breve paseo introductorio por 
 
 Una ventana de trazado contiene una serie de trazados, donde cada uno de ellos se genera mediante un comando `plot`. Por ejemplo, al usar `plot(1:100)` se crea una nueva ventana de trazado si ninguna está disponible:
 
-![Trazado lineal de 1 a 100](media/plotting-1-to-100.png)
+![Trazado lineal de 1 a 100](~/docs/rtvs/media/plotting-1-to-100.png)
 
 Técnicamente hablando, los comandos `plot` de R representan su resultado en un dispositivo de gráficos de R; una ventana de trazado representa el contenido de un dispositivo de gráficos de R, que es el motivo por el que a cada ventana de trazado se le proporciona un número de dispositivo.
 
@@ -76,16 +76,16 @@ La barra de herramientas de la ventana de trazado incluye comandos aplicables, l
 
 | Botón | Comando | Descripción | 
 | --- | --- | --- |
-| ![Botón Nueva ventana de trazado](media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
-| ![Botón Activar ventana de trazado](media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |
-| ![Botón Ventana del historial de trazado](media/plotting-toolbar-03-plot-history.png) | Ventana del historial de trazado | Abre una ventana con todos los trazados del historial que se muestran como miniaturas. Vea [Historial de trazados](#plot-history). |
-| ![Botones del historial de trazados](media/plotting-toolbar-04-plot-history-arrows.png) | Trazado siguiente o anterior |  Se dirige al trazado siguiente o anterior del historial. También puede ir al historial presionando Ctrl+Alt+F11 (anterior) y Ctrl+Alt+F12 (siguiente). Vea [Historial de trazados](#plot-history). |
-| ![Botón Guardar como imagen](media/plotting-toolbar-05-save-as-image.png)| Guardar como imagen | Solicita un nombre de archivo y guarda el trazado actual (el contenido de la ventana, en el tamaño de la ventana) en un archivo de imagen. Los formatos disponibles son `.png`, `.jpg`, `.bmp` y `.tif`. |
-| ![Botón Guardar como PDF](media/plotting-toolbar-06-save-as-pdf.png)| Guardar como PDF | Guarda el trazado actual en un archivo PDF con el tamaño de ventana actual. El trazado se volverá a representar si se escala el PDF. |
-| ![Botón Copiar como mapa de bits](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como mapa de bits | Copia el trazado al Portapapeles como un mapa de bits de trama, con el tamaño de ventana actual. | 
-| ![Botón Copiar como metarchivo](media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarchivo | Copia el trazado al Portapapeles como un [metarchivo de Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
-| ![Botón Quitar trazado](media/plotting-toolbar-09-remove-plot.png)| Quitar trazado | Quita el trazado actual del historial. |
-| ![Botón Borrar todos los trazados](media/plotting-toolbar-10-clear-all-plots.png) | Borrar todos los trazados | Quita todos los trazados del historial (solicita confirmación). |
+| ![Botón Nueva ventana de trazado](~/docs/rtvs/media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
+| ![Botón Activar ventana de trazado](~/docs/rtvs/media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |
+| ![Botón Ventana del historial de trazado](~/docs/rtvs/media/plotting-toolbar-03-plot-history.png) | Ventana del historial de trazado | Abre una ventana con todos los trazados del historial que se muestran como miniaturas. Vea [Historial de trazados](#plot-history). |
+| ![Botones del historial de trazados](~/docs/rtvs/media/plotting-toolbar-04-plot-history-arrows.png) | Trazado siguiente o anterior |  Se dirige al trazado siguiente o anterior del historial. También puede ir al historial presionando Ctrl+Alt+F11 (anterior) y Ctrl+Alt+F12 (siguiente). Vea [Historial de trazados](#plot-history). |
+| ![Botón Guardar como imagen](~/docs/rtvs/media/plotting-toolbar-05-save-as-image.png)| Guardar como imagen | Solicita un nombre de archivo y guarda el trazado actual (el contenido de la ventana, en el tamaño de la ventana) en un archivo de imagen. Los formatos disponibles son `.png`, `.jpg`, `.bmp` y `.tif`. |
+| ![Botón Guardar como PDF](~/docs/rtvs/media/plotting-toolbar-06-save-as-pdf.png)| Guardar como PDF | Guarda el trazado actual en un archivo PDF con el tamaño de ventana actual. El trazado se volverá a representar si se escala el PDF. |
+| ![Botón Copiar como mapa de bits](~/docs/rtvs/media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como mapa de bits | Copia el trazado al Portapapeles como un mapa de bits de trama, con el tamaño de ventana actual. | 
+| ![Botón Copiar como metarchivo](~/docs/rtvs/media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarchivo | Copia el trazado al Portapapeles como un [metarchivo de Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Botón Quitar trazado](~/docs/rtvs/media/plotting-toolbar-09-remove-plot.png)| Quitar trazado | Quita el trazado actual del historial. |
+| ![Botón Borrar todos los trazados](~/docs/rtvs/media/plotting-toolbar-10-clear-all-plots.png) | Borrar todos los trazados | Quita todos los trazados del historial (solicita confirmación). |
 
 ## <a name="multiple-plot-windows"></a>Varias ventanas de trazado
 
@@ -104,7 +104,7 @@ Los comandos de trazado se conservan en un historial de trazados para cada venta
 Para ver la colección completa de trazados, abra la ventana del historial de trazados con el botón de la barra de herramientas o **Herramientas de R > Trazados > Ventana del historial de trazados**.
 Esto le proporciona una lista de miniaturas para los trazados que se han mostrado en esa ventana, agrupados por diferentes ventanas de trazado (o dispositivos). Con los botones de zoom de la barra de herramientas se cambia el tamaño de las miniaturas.
 
-![Ventana del historial de trazado](media/plotting-plot-history-window.png)
+![Ventana del historial de trazado](~/docs/rtvs/media/plotting-plot-history-window.png)
 
 Para abrir un trazado en su ventana asociada, haga doble clic en ese trazado, selecciónelo y, después, seleccione el botón de la barra de herramientas **Mostrar trazado**, o haga doble clic con el botón derecho y seleccione **Mostrar trazado**. También puede seleccionar un trazado individual y copiar, cortar o eliminar desde el menú contextual o desde los menús **Editar**.
 

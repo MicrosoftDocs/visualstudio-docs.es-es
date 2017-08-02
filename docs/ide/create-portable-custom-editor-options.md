@@ -51,7 +51,7 @@ Como las opciones de configuración se incluyen en un archivo del código base, 
 ## <a name="override-editorconfig-settings"></a>Invalidar la configuración de EditorConfig
 Cuando agrega un archivo .editorconfig a una carpeta en su jerarquía de archivos, su configuración se aplica en todos los archivos aplicables de ese nivel y los posteriores. Para invalidar las opciones de configuración de EditorConfig para un código base o un proyecto determinado y usar valores de invalidación o diferentes a los del archivo .editorconfig de nivel superior, simplemente agregue un archivo .editorconfig al nivel que quiera cambiar.
 
-![Jerarquía de EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
+![Jerarquía de EditorConfig](~/docs/ide/media/vside_editorconfig_hierarchy.png)
 
 La nueva configuración del archivo .editorconfig se aplicará al nivel en el que se encuentra y en todos sus archivos secundarios.
 
@@ -70,19 +70,19 @@ Las opciones de configuración de EditorConfig se admiten en todos los lenguajes
 ## <a name="example"></a>Ejemplo
 Este es un ejemplo que muestra el estado de la sangría de un fragmento de código de C# antes y después de agregar un archivo .editorconfig al proyecto. La configuración **Tabulaciones** del cuadro de diálogo **Opciones** del editor de texto de Visual Studio se establece para producir caracteres de espacio al presionar la tecla TAB en su código.
 
-![Configuración de tabulaciones en el editor de texto](../ide/media/vside_editorconfig_tabsetting.png)
+![Configuración de tabulaciones en el editor de texto](~/docs/ide/media/vside_editorconfig_tabsetting.png)
 
 Como se esperaba, al presionar la tecla TAB en la línea siguiente, se aplica la sangría en la línea agregando cuatro caracteres de espacio en blanco adicionales.
 
-![Código antes de usar EditorConfig](../ide/media/vside_editorconfig_before.png)
+![Código antes de usar EditorConfig](~/docs/ide/media/vside_editorconfig_before.png)
 
 Agregaremos lo siguiente en un nuevo archivo denominado .editorconfig al proyecto. (El valor `[*.cs]` significa que este cambio se aplicará solo en archivos .cs en este proyecto).
 
-![Archivo .editorconfig agregado al proyecto](../ide/media/vside_editorconfig_addconfig.png)
+![Archivo .editorconfig agregado al proyecto](~/docs/ide/media/vside_editorconfig_addconfig.png)
 
 Ahora, cuando presiona la tecla TAB, obtiene caracteres de tabulación en lugar de espacios.
 
-![TAB agrega caracteres de tabulación](../ide/media/vside_editorconfig_tab.png)
+![TAB agrega caracteres de tabulación](~/docs/ide/media/vside_editorconfig_tab.png)
 
 > [!NOTE]
 >  Agregar un archivo .editorconfig en su proyecto o código base no convertirá los estilos existentes en los nuevos, solo se aplicará a las líneas que se agreguen a partir de ese momento. Si quita un archivo .editorconfig de su proyecto o código base, debe volver a cargar los archivos de código para que la configuración del editor vuelva a la configuración global. Cualquier error en los archivos .editorconfig se notifica en la ventana de error de Visual Studio.

@@ -34,7 +34,7 @@ caps.handback.revision: 25
   
 3.  Haga clic con el botón secundario en el diseñador de la cinta de opciones y, a continuación, haga clic en **Propiedades**.  
   
-4.  En la ventana **Propiedades**, seleccione la propiedad **Fichas** y, a continuación, haga clic en el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\).  
+4.  En la ventana **Propiedades**, seleccione la propiedad **Fichas** y, a continuación, haga clic en el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
   
      Aparecerá el **Editor de la colección de fichas**.  
   

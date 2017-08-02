@@ -37,7 +37,7 @@ En este documento se muestra cómo utilizar el editor del modelo para crear un m
   
  Cuando termine, el modelo debe tener este aspecto:  
   
- ![El modelo completado de la casa simplificada](../designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
+ ![El modelo completado de la casa simplificada](~/docs/designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
   
  Antes de empezar, asegúrese de que la ventana y **Cuadro de herramientas** de **Propiedades** se muestren.  
   
@@ -51,27 +51,27 @@ En este documento se muestra cómo utilizar el editor del modelo para crear un m
   
 4.  Subdivida la parte superior del cubo.  En modo de selección de nombre, elija el cubo una vez para fin de la selección, y elija la parte superior del cubo para seleccionar la cara superior.  En la barra de herramientas del editor, elija **Subdivida la cara**.  Esto agrega nuevos vértices a la parte superior del cubo que división él en cuatro particiones igualmente ordenadas.  
   
-     ![La parte superior del cubo se ha subdividido](../designers/media/gfx_model_demo_house_subdiv.png "gfx\_model\_demo\_house\_subdiv")  
+     ![La parte superior del cubo se ha subdividido](~/docs/designers/media/gfx_model_demo_house_subdiv.png "gfx\_model\_demo\_house\_subdiv")  
   
 5.  Si dos lados adyacentes de cubo\- para el ejemplo, el principio y los lados derechos del cubo.  En modo de selección de nombre, elija el cubo una vez para activarlo para la selección y elegir un lado del cubo.  Presione y mantenga presionada la tecla CONTROL, elija otro lado del cubo que sea adyacente al lado que seleccionó primero y, en la barra de herramientas del editor, elija **Muestra el nombre**.  
   
-     ![Los lados del cubo se han extruido.](../designers/media/gfx_model_demo_house_extrude.png "gfx\_model\_demo\_house\_extrude")  
+     ![Los lados del cubo se han extruido.](~/docs/designers/media/gfx_model_demo_house_extrude.png "gfx\_model\_demo\_house\_extrude")  
   
 6.  Extiende una de las extrusiones.  Elija uno de hace nuevo que acaba de extruido y, a continuación, en la barra de herramientas del editor, elija la herramienta de **Traducir** y mueve el manipulador de traducción en la misma dirección que la extrusión.  
   
-     ![Un lado del cubo se ha extruido aún más.](../designers/media/gfx_model_demo_house_extend.png "gfx\_model\_demo\_house\_extend")  
+     ![Un lado del cubo se ha extruido aún más.](~/docs/designers/media/gfx_model_demo_house_extend.png "gfx\_model\_demo\_house\_extend")  
   
 7.  Triangulate el modelo.  En la barra de herramientas del editor, elija **opciones avanzadas**, **Herramientas**, **Triangular**.  
   
 8.  Cree el mosaico de inicio.  Cambie al modo de la perímetro\- selección eligiendo **Seleccionar borde** en la barra de herramientas del editor, y elija el cubo para activarla.  Presione y mantenga presionada la tecla CONTROL como selecciona los bordes que se muestran aquí:  
   
-     ![Los bordes que formarán el pico del tejado](../designers/media/gfx_model_demo_house_edges.png "gfx\_model\_demo\_house\_edges")  
+     ![Los bordes que formarán el pico del tejado](~/docs/designers/media/gfx_model_demo_house_edges.png "gfx\_model\_demo\_house\_edges")  
   
      Cuando los bordes seleccionados, en la barra de herramientas del editor, elija la herramienta de **Traducir** y después mueva el manipulador de traducción arriba para crear el diseño de inicio.  
   
  Se completa el modelo simplificado de inicio.  A continuación se muestra el modelo final de nuevo, con sombreado plano aplicado:  
   
- ![El modelo completado de la casa simplificada](../designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
+ ![El modelo completado de la casa simplificada](~/docs/designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
   
  Como paso siguiente, puede aplicar un sombreador de este modelo 3D.  Para obtener más información, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

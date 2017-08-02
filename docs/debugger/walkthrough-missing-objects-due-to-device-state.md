@@ -107,4 +107,4 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
  Después de determinar que la causa del problema de representación podría ser una función de profundidad mal configurada, puede usar esta información junto con su conocimiento del código para buscar el lugar en que se estableció incorrectamente la función de profundidad y, a continuación, corregirlo. Si no está familiarizado con el código, podría buscar el problema siguiendo las pistas que ha recopilado mientras depuraba; por ejemplo, basándose en la **Descripción de la galería de símbolos de profundidad** de este escenario, puede buscar en el código palabras como "depth" o "GREATER". Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación:  
   
- ![Aplicación después de corregirse el problema](../debugger/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")
+ ![Aplicación después de corregirse el problema](~/docs/debugger/graphics/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")

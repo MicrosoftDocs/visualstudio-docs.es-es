@@ -43,7 +43,7 @@ caps.handback.revision: 21
   
      Aparecerá el cuadro de diálogo **Agregar ensamblado existente**.  
   
-4.  Elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) y después elija el ensamblado que desee agregar.  Por motivos de portabilidad, se recomienda utilizar una ruta de acceso relativa al ensamblado seleccionado.  
+4.  Elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) y después elija el ensamblado que desee agregar.  Por motivos de portabilidad, se recomienda utilizar una ruta de acceso relativa al ensamblado seleccionado.  
   
 5.  Para el **Destino de la implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 21
   
 2.  En el panel **Recursos de clase**, elija el botón **Haga clic aquí para agregar un nuevo elemento**.  
   
-3.  En la columna **Nombre de archivo**, elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) y elija el recurso de clase que desee agregar.  
+3.  En la columna **Nombre de archivo**, elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) y elija el recurso de clase que desee agregar.  
   
 ## Eliminar ensamblados personalizados  
  Puede eliminar los ensamblados de un paquete de SharePoint o eliminar los controles seguros y los recursos de clase de los ensamblados existentes.  

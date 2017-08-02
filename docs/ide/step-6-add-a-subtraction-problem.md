@@ -51,12 +51,12 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
   
      Puede llamar de varias maneras al método `Next()` de la clase `Random`, que denominamos “randomizer” anteriormente en este tutorial.  Los métodos a los que se pueden llamar de varias maneras se denominan métodos sobrecargados. Puede utilizar IntelliSense para explorarlos.  Fijémonos de nuevo en la información sobre herramientas de la ventana IntelliSense del método `Next()`.  
   
-     ![Información sobre herramientas de la ventana IntelliSense](../ide/media/express_overloads.png "Express\_Overloads")  
+     ![Información sobre herramientas de la ventana IntelliSense](~/docs/ide/media/express_overloads.png "Express\_Overloads")  
 Información sobre herramientas de la ventana Intellisense  
   
      En la información sobre herramientas se muestra **\(\+ 2 sobrecargas\)**, lo que significa que se puede llamar al método `Next()` de dos formas.  Las sobrecargas contienen diferentes números o tipos de argumentos, por lo que funcionan de forma ligeramente distinta una de otra.  Por ejemplo, un método puede tomar solamente un argumento entero, mientras que una de las sobrecargas puede tomar un entero y una cadena.  Elija la sobrecarga adecuada en función de lo que desee hacer.  Cuando agregue código al método `StartTheQuiz()`, aparecerá más información en la ventana de Intellisense en cuanto escriba `randomizer.Next(`.  Elija las teclas Flecha arriba y Flecha abajo para recorrer cíclicamente las sobrecargas, tal y como se muestra en la ilustración siguiente.  
   
-     ![Sobrecarga del método Next&#40;&#41; en IntelliSense](../ide/media/express_nextoverload.png "Express\_NextOverload")  
+     ![Sobrecarga del método Next&#40;&#41; en IntelliSense](~/docs/ide/media/express_nextoverload.png "Express\_NextOverload")  
 Sobrecarga del método Next\(\) en IntelliSense  
   
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.  

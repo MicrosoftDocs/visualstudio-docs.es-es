@@ -24,7 +24,7 @@ La barra desplegable se proporciona en la parte superior de la ventana de códig
 ## Interfaces desplegables de barra  
  En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], por ejemplo, la barra desplegable contiene las listas de elementos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] y el miembro de los elementos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] funciona, como se muestra en la siguiente imagen.  
   
- ![Barras desplegables](../extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
+ ![Barras desplegables](~/docs/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
 barra desplegable  
   
  Al implementar una barra desplegable, hay cuatro interfaces de importancia principal:  

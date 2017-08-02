@@ -32,7 +32,7 @@ caps.handback.revision: 32
 > [!NOTE]  
 >  La personalización no se cargará si el código espera controles que el documento especificado no tiene.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para obtener una demostración en vídeo relacionada con este tema, vea [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para obtener una demostración en vídeo relacionada con este tema, vea [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### Para asociar extensiones de código administrado a un documento  
   

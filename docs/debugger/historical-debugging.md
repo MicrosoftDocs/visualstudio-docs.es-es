@@ -25,7 +25,7 @@ Depuración histórica es un modo de depuración que depende de la información 
 ## ¿Por qué usar Depuración histórica?  
  Establecer puntos de interrupción para encontrar errores puede ser cuestión de suerte.  Establezca un punto de interrupción cerca del lugar en el código donde sospecha que está el error y luego ejecute la aplicación en el depurador. Con suerte, se alcanzará el punto de interrupción en un lugar que revele el origen del error.  De lo contrario, tendrá que establecer un punto de interrupción en otro lugar del código y volver a ejecutar el depurador, y así una y otra vez hasta que encuentre el problema.  
   
- ![establecer un punto de interrupción](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![establecer un punto de interrupción](~/docs/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
  Puede usar IntelliTrace y Depuración histórica para recorrer la aplicación e inspeccionar su estado \(pila de llamadas y variables locales\) sin tener que establecer puntos de interrupción, reiniciar la depuración y repetir los pasos de prueba.  Esto puede ahorrarle mucho tiempo, especialmente cuando el error se encuentra escondido en un escenario de prueba que se tarda en ejecutar.  
   
@@ -71,7 +71,7 @@ private static int AddInt(int add)
   
 4.  Abra la ventana **Herramientas de diagnóstico** \(**Depurar \/ Mostrar herramientas de diagnóstico**\).  La ventana de código debe ser similar a la que se muestra a continuación:  
   
-     ![Ventana de código en el punto de interrupción](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Ventana de código en el punto de interrupción](~/docs/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
 5.  Debería ver una flecha doble junto al margen izquierdo, justo encima del punto de interrupción.  Esta área se denomina medianil de navegación y se utiliza para Depuración histórica.  Haga clic en la flecha.  
   
@@ -79,7 +79,7 @@ private static int AddInt(int add)
   
      La ventana de código ahora tiene el siguiente aspecto:  
   
-     ![ventana de código en modo de depuración histórico](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![ventana de código en modo de depuración histórico](~/docs/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
 6.  Ahora puede depurar paso a paso por instrucciones el método `AddAll()` \(**F11**, o el botón **Paso a paso por instrucciones** en el medianil de navegación.  Avanzar paso a paso \(**F10**, o **Ir a llamada siguiente** en el medianil de navegación.  La línea rosa se encuentra ahora en la línea `j = AddInt(j);`.  En este caso, **F10** no avanza a la siguiente línea de código.  sino a la siguiente llamada de función.  Depuración histórica va de una llamada a otra y omite las líneas de código que no incluyen una llamada de función.  
   

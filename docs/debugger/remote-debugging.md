@@ -92,7 +92,7 @@ Puede depurar una aplicación de Visual Studio que se ha implementado en un equi
   
 6.  Cuando se completa la configuración, aparecerá la ventana del depurador remoto.  
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
+     ![RemoteDebuggerWindow](~/docs/debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
  Puede detener el depurador remoto haciendo clic en **Archivo \/ Salir** en la ventana. Puede reiniciarlo desde el menú **Inicio** o desde la línea de comandos:  
   

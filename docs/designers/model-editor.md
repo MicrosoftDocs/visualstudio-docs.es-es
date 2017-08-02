@@ -91,7 +91,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  Esta es la barra de herramientas del **Editor de modelos**:  
   
- ![Barra de herramientas del visor de modelo](../designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
+ ![Barra de herramientas del visor de modelo](~/docs/designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
   
  En la tabla siguiente se describen los elementos de la barra de herramientas del **Editor de modelos**, en el orden en que aparecen de arriba abajo.  
   

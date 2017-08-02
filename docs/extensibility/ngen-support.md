@@ -45,7 +45,7 @@ A continuación se muestra un extracto de MSDN que explica qué "ngen" hace:
 
 Para "ngen", un ensamblado, VSIX debe estar instalada "por instancia por equipo". Esto se puede habilitar activando la casilla "todos los usuarios" en el diseñador extension.vsixmanifest:
 
-![Compruebe todos los usuarios](media/check-all-users.png)
+![Compruebe todos los usuarios](~/docs/extensibility/media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Cómo habilitar Ngen
 
@@ -60,7 +60,7 @@ Hay 4 propiedades que se pueden establecer:
 
 Este es un vistazo a la **propiedades** ventana en acción:
 
-![Ngen en Propiedades](media/ngen-in-properties.png)
+![Ngen en Propiedades](~/docs/extensibility/media/ngen-in-properties.png)
 
 Esto agregará los metadatos para la referencia de proyecto dentro de archivo .csproj del proyecto VSIX:
 

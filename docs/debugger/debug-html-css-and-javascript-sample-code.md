@@ -23,7 +23,7 @@ caps.handback.revision: 13
 # Depurar c&#243;digo de ejemplo HTML, CSS y JavaScript
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  El código de este tema es el archivo de ejemplo para [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   

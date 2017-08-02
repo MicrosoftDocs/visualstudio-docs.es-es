@@ -98,7 +98,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |Decida si va compartir el código mediante proyectos compartidos, proyectos de Biblioteca de clases portable o ambos<br /><br /> [Compartir código entre plataformas](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog de .NET Framework)<br /><br /> [Sharing Code Options (Opciones de uso compartido de código)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opciones de uso compartido de código con .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ###  <a name="WindowsHTML"></a> Tener como destino dispositivos Windows 10
- ![Dispositivos Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Dispositivos Windows](~/docs/cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Si quiere crear una única aplicación que tenga como destino la gran variedad de dispositivos de Windows 10, cree una aplicación de Windows universal. Podrá diseñar la aplicación usando un solo proyecto y las páginas se representarán correctamente en cualquier dispositivo que se use para verlas.
 
@@ -139,7 +139,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Obtener información acerca del emulador de Visual Studio para Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Compilar una aplicación para Android y Windows (C++)
- ![Usar C++ para compilación para Windows, iOS y Android](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![Usar C++ para compilación para Windows, iOS y Android](~/docs/cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  En primer lugar, instale Visual Studio 2015 y las herramientas de Visual C++ para desarrollo móvil multiplataforma. Después, puede compilar una aplicación de actividad nativa para Android o una aplicación que tenga como destino Windows. Todavía no están disponibles las plantillas de C++ que tienen como destino iOS. Puede tener como destino Android y Windows en la misma solución si quiere y, después, compartir código entre ellos mediante una biblioteca compartida estática o dinámica multiplataforma.
 
@@ -173,7 +173,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 ##  <a name="Unity"></a> Compilar un juego multiplataforma para Android, iOS y Windows con Visual Studio Tools para Unity
  Visual Studio Tools para Unity es una extensión gratuita para Visual Studio que integra las eficaces herramientas de edición de código, productividad y depuración de Visual Studio con *Unity*, el popular motor y entorno de desarrollo multiplataforma de juegos y gráficos para aplicaciones inmersivas destinadas a Windows, iOS, Android y otras plataformas, incluida la Web.
 
- ![Entorno de desarrollo de VSTU](../cross-platform/media/vstu_overview.png "VSTU_Overview")
+ ![Entorno de desarrollo de VSTU](~/docs/cross-platform/media/vstu_overview.png "VSTU_Overview")
 
  Con Visual Studio Tools para Unity (VSTU), puede usar Visual Studio para escribir scripts de editor y juegos en C# y, a continuación, usar su eficaz depurador para buscar y corregir errores. La versión más reciente de VSTU aporta compatibilidad con Unity 5 e incluye colores de sintaxis del lenguaje de sombreado de ShaderLab de Unity, una mejor sincronización con Unity, una depuración más completa y una generación de código mejorada para el asistente de MonoBehavior. VSTU también integra los archivos de proyecto de Unity, los mensajes de la consola y la capacidad de iniciar el juego en Visual Studio, de modo que pueda dedicar menos tiempo a conmutar con el editor de Unity al escribir código.
 

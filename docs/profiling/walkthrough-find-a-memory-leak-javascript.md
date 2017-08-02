@@ -42,7 +42,7 @@ ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar fugas de memoria (JavaScript)
-![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Se aplica a Windows y Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Este tutorial te guía por el proceso de identificar y corregir un problema simple de memoria con el analizador de memoria de JavaScript. El analizador de memoria de JavaScript está disponible en Visual Studio para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. En este escenario, crearás una aplicación que conserva incorrectamente elementos DOM en memoria en lugar de eliminarlos a la misma velocidad a la que se crearon.  
   
@@ -227,7 +227,7 @@ ms.lasthandoff: 02/22/2017
   
 15. Abre el objeto HTMLDivElement en la parte superior del árbol de objetos, mostrado aquí.  
   
-     ![Vista de diferencias del recuento de objetos del montón](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Vista de diferencias del recuento de objetos del montón](~/docs/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Esta vista muestra información útil sobre la pérdida de memoria, como la siguiente:  
   
