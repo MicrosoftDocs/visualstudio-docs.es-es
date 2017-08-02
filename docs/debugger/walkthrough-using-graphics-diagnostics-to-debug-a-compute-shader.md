@@ -32,7 +32,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
 ## Escenario  
  En este escenario se ha escrito una simulación de dinámica de fluidos en la que se usa DirectCompute para realizar el trabajo de cálculo más intensivo en la actualización de la simulación.  Cuando se ejecuta la aplicación, la representación del conjunto de datos y de la interfaz de usuario parece correcta, pero la simulación no se comporta de la manera esperada.  Con el diagnóstico de gráficos puede capturar el problema en un registro de gráficos de modo que pueda depurar la aplicación.  El problema tiene este aspecto en la aplicación:  
   
- ![El fluido simulado se comporta de forma incorrecta.](../debugger/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
+ ![El fluido simulado se comporta de forma incorrecta.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
   
  Para obtener información sobre cómo capturar los problemas de gráficos en un registro de gráficos, vea [Capturar información de gráficos](../debugger/capturing-graphics-information.md).  
   
@@ -89,7 +89,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
 3.  Examine el código fuente del sombreador de cálculo en el paso de integración y busque el origen del error.  Cuando use el diagnóstico de gráficos para depurar el código del sombreador de cálculo de HLSL, puede ejecutar el código paso a paso y usar otras herramientas de depuración conocidas como las ventanas Inspección.  En este escenario, no parece que haya un error en el sombreador de cálculo que realiza el paso de integración.  
   
-     ![Depuración del sombreador de cálculo IntegrateCS.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
+     ![Depuración del sombreador de cálculo IntegrateCS.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
   
 4.  Para detener la depuración del sombreador de cálculo, en la barra de herramientas **Depurar**, elija **Detener depuración** \(teclado: Mayús\+F5\).  
   
@@ -101,12 +101,12 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
 6.  Examine el código fuente del sombreador de cálculo en el paso de cálculo de fuerza.  En este caso, se determina que aquí está el origen del error.  
   
-     ![Depuración del sombreador de cálculo ForceCS&#95;Simple.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
+     ![Depuración del sombreador de cálculo ForceCS&#95;Simple.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
   
  Después de determinar la ubicación del error, puede detener la depuración y modificar el código fuente de sombreador de cálculo para calcular correctamente la distancia entre las partículas interactivas.  En este escenario, simplemente se cambia la línea de `float2 diff = N_position + P_position;` a `float2 diff = N_position - P_position;`:  
   
- ![Código del sombreador de cálculo corregido.](../debugger/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
+ ![Código del sombreador de cálculo corregido.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
   
  En este escenario, dado que los sombreadores de cálculo se compilan en tiempo de ejecución, reinicie la aplicación después de realizar los cambios para observar cómo afectan a la simulación.  No es necesario que vuelva a compilar la aplicación.  Cuando ejecute la aplicación, verá que la simulación se comporta ahora correctamente.  
   
- ![El fluido simulado se comporta de forma correcta.](../debugger/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")
+ ![El fluido simulado se comporta de forma correcta.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")

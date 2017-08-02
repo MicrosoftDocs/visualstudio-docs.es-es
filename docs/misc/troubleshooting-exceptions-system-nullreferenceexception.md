@@ -50,7 +50,7 @@ Public Class Automobile Public Property Engine As EngineInfo End Class Public Cl
   
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Common_causes_of_NullReferenceExceptions"></a> Causas habituales de excepciones NullReferenceException  
  Cualquier variable de tipo de referencia puede ser NULL. Las variables locales, las propiedades de una clase, los parámetros de método y los valores devueltos de los métodos pueden contener una referencia nula. Si se llama a métodos o propiedades de estas variables cuando son NULL se genera una excepción NullReferenceException. Casos específicos:  
@@ -88,9 +88,9 @@ public void NullReferencFromUninitializedLocalVariable() { EngineInfo engine; Co
 Public Sub NullReferencFromUninitializedLocalVariable() Dim engine As EngineInfo Console.WriteLine(engine.ToString()) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_A_property_or_field_is_null"></a> Una propiedad o un campo es NULL.  
  Los campos y las propiedades de una clase se inicializan automáticamente con su [valor predeterminado](../Topic/Data%20Member%20Default%20Values.md) cuando se crea la clase. El valor predeterminado de un tipo de referencia es `null` \(`Nothing` en Visual Basic\). Las llamadas a métodos de miembro en un campo o una propiedad de una clase principal cuando el campo o la propiedad es NULL generan una excepción NullReferenceException.  
@@ -105,9 +105,9 @@ public void NullReferenceFromProperty() { var car = new Automobile(); Console.Wr
 Public Sub NullReferenceFromProperty() Dim car = New Automobile() Console.WriteLine(car.Engine.ToString()) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_A_method_parameter_is_null"></a> Un parámetro de método es NULL.  
  Un parámetro de método que es un tipo de referencia puede ser `null` \(`Nothing` en Visual Basic\). Las llamadas a métodos o propiedades de miembro en un valor de parámetro NULL generan una excepción NullReferenceException.  
@@ -123,9 +123,9 @@ public void BadEngineInfoPassedToMethod() { EngineInfo eng = null; NullReference
 Public Sub BadParameterPassedToMethod() As EngineInfo Dim eng As EngineInfo = Nothing NullReferenceFromMethodParameter(eng) End Sub Public Sub NullReferenceFromMethodParameter(engine As EngineInfo) Console.WriteLine(engine.ToString()) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_The_return_value_of_a_method_is_null"></a> El valor devuelto de un método es NULL.  
  Un método que devuelve un tipo de referencia puede devolver `null` \(`Nothing` en Visual Basic\). Las llamadas a métodos o propiedades del tipo de referencia devuelto generan una excepción NullReferenceException si la referencia es NULL.  
@@ -141,9 +141,9 @@ Public Function BadGetEngineInfo() As EngineInfo Dim engine As EngineInfo = Noth
   
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_An_object_in_a_collection_or_array_is_null"></a> Un objeto de una colección o una matriz es NULL.  
  Una lista o matriz de tipos de referencia puede contener un elemento que sea NULL. Las llamadas a métodos o propiedades de un elemento de lista que es NULL generan una excepción NullReferenceException.  
@@ -158,9 +158,9 @@ public Automobile[] BadGetCarList() { var autos = new Automobile[10]; for (int i
 Public Function BadGetCarList() As Automobile() Dim autos = New Automobile(10) {} For i As Integer = 0 To 9 If i <> 6 Then autos(i) = New Automobile() End If Next Return autos End Function Public Sub NullReferenceFromListItem() Dim cars = BadGetCarList() For Each car As Automobile In cars Console.WriteLine(car.ToString()) Next End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_An_object_is_not_created_because_of_a_condition"></a> Un objeto no se crea como consecuencia de una condición existente.  
  Si se inicializa un tipo de referencia en un bloque condicional, el objeto no se crea si la condición es FALSE.  
@@ -175,9 +175,9 @@ public bool DetermineTheCondition() { return false; } public void NullReferenceF
 Public Function DetermineTheCondition() As Boolean Return False End Function Public Sub NullReferenceFromConditionalCreation() Dim engine As EngineInfo = Nothing Dim condition = DetermineTheCondition() If condition Then engine = New EngineInfo() engine.Power = "Diesel" engine.Size = 2.4 End If Console.WriteLine(engine.Size) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ### La propiedad de un objeto que se pasa a un método está establecida en NULL.  
  Cuando un objeto se pasa como parámetro a un método con su valor \(sin usar la palabra clave `ref` o `out` en C\# o la palabra clave `ByRef` en Visual Basic\), el método no puede cambiar la ubicación en memoria del parámetro \(a qué apunta el parámetro\), pero puede cambiar las propiedades del objeto.  
@@ -193,9 +193,9 @@ public void BadSwapCarEngine(Automobile car) { car.Engine = null; } public void 
 Public Sub BadSwapCarEngine(car As Automobile) car.Engine = Nothing End Sub Public Sub NullPropertyReferenceFromPassToMethod() Dim car As New Automobile() car.Engine = New EngineInfo("GAS", 1.5) BadSwapCarEngine(car) Console.WriteLine(car.Engine.ToString()) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_An_object_passed_by_reference_to_a_method_is_set_to_null"></a> Un objeto que se pasa por referencia a un método está establecido en NULL.  
  Si se pasa un tipo de referencia como parámetro a un método por referencia \(mediante la palabra clave `ref` o `out` en C\#, o la palabra clave `ByRef` en Visual Basic\), se puede cambiar la ubicación de memoria a la que señala el parámetro.  
@@ -213,9 +213,9 @@ Public Sub BadSwapEngineByRef(ByRef engine As EngineInfo) engine = Nothing End S
   
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Causas habituales de excepciones NullReferenceException](#BKMK_Common_causes_of_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Find_the_source_of_a_null_reference_exception_during_development"></a> Buscar el origen de una excepción de referencia nula durante el desarrollo  
  [Usar informaciones sobre datos, la ventana Variables locales y las ventanas Inspección para ver los valores de las variables](#BKMK_Use_data_tips_the_Locals_window_and_watch_windows_to_see_variables_values)  
@@ -232,23 +232,23 @@ Public Sub BadSwapEngineByRef(ByRef engine As EngineInfo) engine = Nothing End S
   
 -   Use una [ventana de inspección](../debugger/watch-and-quickwatch-windows.md) para centrarse en los cambios de una variable al ir avanzando por el código.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Walk_the_call_stack_to_find_where_a_type_reference_is_not_initialized_or_set_to_null_"></a> Recorrer la pila de llamadas para buscar el lugar en el que una variable de referencia no se inicializa o está establecida en NULL  
  La [ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md) de Visual Studio muestra una lista con los nombres de los métodos que no se han finalizado cuando el depurador se detiene en una excepción o un punto de interrupción. Puede seleccionar un nombre de la ventana **Pila de llamadas** y elegir **Cambiar a marco** para cambiar el contexto de ejecución del método y examinar sus variables.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Set_conditional_breakpoints_to_stop_debugging_when_an_object_is_null_Nothing_in_Visual_Basic_"></a> Establecer puntos de interrupción condicionales para detener la depuración si un objeto es NULL \(Nothing en Visual Basic\)  
  Puede establecer un [punto de interrupción condicional](http://msdn.microsoft.com/library/5557y8b4.aspx#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para interrumpir cuando una variable es null. Los puntos de interrupción condicionales pueden ser útiles cuando la referencia nula no es muy frecuente: por ejemplo, cuando un elemento de una colección es NULL solo de vez en cuando. Otra ventaja de los puntos de interrupción condicionales es que le permiten depurar un problema antes de confirmar una rutina de control concreta.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Buscar el origen de una excepción de referencia nula durante el desarrollo](#BKMK_Find_the_source_of_a_null_reference_exception_during_development)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ##  <a name="BKMK_Avoid_NullReferenceExceptions"></a> Evitar excepciones NullReferenceException  
  [Usar Debug.Assert para confirmar una invariable](#BKMK_Use_Debug_Assert_to_confirm_an_invariant)  
@@ -270,9 +270,9 @@ private void TheOnlyCallerOfMakeEngineFaster() { var engine = new EngineInfo(); 
 Public Sub TheOnlyCallerOfMakeEngineFaster() Dim engine As New EngineInfo engine.Power = "GAS" engine.Size = 1.5 MakeEngineFaster(engine) End Sub Private Sub MakeEngineFaster(engine As EngineInfo) System.Diagnostics.Debug.Assert(engine IsNot Nothing, "Assert: engine IsNot Nothing") engine.Size = engine.Size * 2 Console.WriteLine("The engine is twice as fast") End Sub Public Sub BadNewCallerOfMakeEngineFaster() Dim engine As EngineInfo = Nothing MakeEngineFaster(engine) End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Evitar excepciones NullReferenceException](#BKMK_Avoid_NullReferenceExceptions)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Evitar excepciones NullReferenceException](#BKMK_Avoid_NullReferenceExceptions)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Fully_initialize_reference_types"></a> Inicializar totalmente tipos de referencia  
  Para evitar muchas excepciones NullReferenceException, inicialice totalmente los tipos de referencia tan pronto como sea posible después de crearlos.  
@@ -328,9 +328,9 @@ public EngineInfo BadGetEngineInfo() { EngineInfo engine = null; return engine; 
 public EngineInfo BadGetEngineInfo() { EngineInfo engine = null; return engine; } Public Sub CheckForNullReferenceFromMethodReturnValue() Dim engine = BadGetEngineInfo() If (engine IsNot Nothing) Then ' modify the info engine.Power = "DIESEL" engine.Size = 2.4 Else ' report the error Console.WriteLine("BadGetEngineInfo returned Nothing") End If End Sub  
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Controlar excepciones NullReferenceException en código de versión de lanzamiento](#BKMK_Handle_NullReferenceExceptions_in_release_code)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Controlar excepciones NullReferenceException en código de versión de lanzamiento](#BKMK_Handle_NullReferenceExceptions_in_release_code)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ###  <a name="BKMK_Use_try_catch_finally_Try_Catch_Finally_in_Visual_Basic_to_handle_the_exception"></a> Usar try\-catch\-finally \(Try\-Catch\-Finally en Visual Basic\) para controlar la excepción  
  Usar las construcciones integradas de control de excepciones \([try, catch y finally](/dotnet/csharp/language-reference/keywords/exception-handling-statements) en C\# y [Try, Catch y Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement) en Visual Basic\) ofrece más opciones para controlar excepciones NullReferenceException que comprobar si un objeto no es NULL.  
@@ -347,9 +347,9 @@ Public Sub RarelyBadSwapCarEngine(car As Automobile) If (New Random()).Next = 42
   
 ```  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Controlar excepciones NullReferenceException en código de versión de lanzamiento](#BKMK_Handle_NullReferenceExceptions_in_release_code)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Controlar excepciones NullReferenceException en código de versión de lanzamiento](#BKMK_Handle_NullReferenceExceptions_in_release_code)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)  
   
 ## Artículos relacionados  
  [Instrucciones de diseño de excepciones \(Instrucciones de diseño de .NET Framework\)](http://msdn.microsoft.com/library/ms229014)  
@@ -382,4 +382,4 @@ Public Sub RarelyBadSwapCarEngine(car As Automobile) If (New Random()).Next = 42
   
  [Control de excepciones en aplicaciones de red \(XAML\) \(Windows\)](http://msdn.microsoft.com/library/Dn263240)  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Secciones de este artículo](#BKMK_Contents)

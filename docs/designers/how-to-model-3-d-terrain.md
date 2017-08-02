@@ -37,7 +37,7 @@ En este documento se muestra cómo utilizar el editor del modelo para crear un m
   
  Cuando termine, el modelo debe tener este aspecto:  
   
- ![Escena 3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Escena 3D que muestra un modelo de terreno](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Antes de empezar, asegúrese de que la ventana y **Cuadro de herramientas** de **Propiedades** se muestren.  
   
@@ -65,7 +65,7 @@ En este documento se muestra cómo utilizar el editor del modelo para crear un m
   
  Se completa el modelo de terreno.  A continuación se muestra el modelo final de nuevo, con el sombreado de Phong aplicado:  
   
- ![Escena 3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
+ ![Escena 3D que muestra un modelo de terreno](~/designers/media/digit-terrain-model.png "Digit\-Terrain\-Model")  
   
  Puede utilizar este modelo de terreno para demostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de gradiente basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   

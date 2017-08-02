@@ -67,7 +67,7 @@ Todas las entradas y salidas anteriores de REPL son de solo lectura y no se pued
 
 Es decir, al empezar a escribir una instrucción y presionar Entrar, RTVS sabe cuándo debe continuarse la instrucción y se pone en modo de varias líneas con un símbolo del sistema + a la izquierda y la sangría adecuada. RTVS también completa paréntesis, corchetes y llaves:
 
-![Entrada de instrucción de varias líneas en la ventana R interactivo](media/repl-multiline-entry.png)
+![Entrada de instrucción de varias líneas en la ventana R interactivo](~/rtvs/media/repl-multiline-entry.png)
 
 En este modo de varias líneas, la tecla Entrar ejecuta el bloque de código solo cuando está al final del bloque, de lo contrario inserta una nueva línea. Pero puede presionar Ctrl+Entrar en cualquier posición para ejecutar ese bloque de código de inmediato.
 
@@ -75,23 +75,23 @@ En este modo de varias líneas, la tecla Entrar ejecuta el bloque de código sol
 
 A continuación se muestra la ventana R interactivo con su barra de herramientas:
 
-![Ventana R interactivo con barra de herramientas](media/repl-window.png)
+![Ventana R interactivo con barra de herramientas](~/rtvs/media/repl-window.png)
 
 Los comandos de la barra de herramientas son los siguientes, la mayoría de los cuales tiene equivalentes de teclado y también está disponible en los menús **Herramientas de R > Sesión** y **Herramientas de R > Directorio de trabajo** (o como se indica):
 
 | Botón | Comando | Combinación de teclas | Descripción | 
 | --- | --- | --- | --- |
-| ![Botón Restablecer](media/repl-toolbar-01-reset.png) | Restablecer | Ctrl+Mayús+F10 | Restablece la sesión de la ventana R interactivo y borra todas las variables y el historial. |
-| ![Botón Borrar](media/repl-toolbar-02-clear.png) | Clear | Ctrl+L | Borra la salida mostrada en la ventana R interactivo; no afecta a las variables de la sesión ni al historial. |
-| ![Botones Historial](media/repl-toolbar-03-history.png) | Comando Historial anterior<br/>Comando Historial siguiente | Arriba, Abajo<br/>Alt+Arriba/Alt+Abajo | Se desplaza por el historial, con determinados comportamientos para los bloques de código de varias líneas. Vea [Historial](#history). |
-| ![Botón Cargar área de trabajo](media/repl-toolbar-04-load-workspace.png) | Cargar área de trabajo | no disponible | Carga un área de trabajo guardada anteriormente (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
-| ![Botón Guardar área de trabajo como](media/repl-toolbar-05-save-workspace-as.png)| Guardar área de trabajo como | no disponible | Guarda el estado actual de la sesión como un área de trabajo (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
-| ![Botón Script de R de origen](media/repl-toolbar-06-source-r-script.png) | Script de R de origen | Ctrl+Mayús+S | Llama a `source` con el script de R activo en el editor de Visual Studio, que ejecuta el código.  Este botón solo aparece cuando hay un archivo de R abierto en el editor de Visual Studio. | 
-| ![Botón Script de R de origen con eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script de R de origen con eco | Ctrl+Mayús+Intro | Es igual que Script de R de origen, pero muestra el contenido del script en la ventana R interactivo. | 
-| ![Botón Interrumpir R](media/repl-toolbar-08-interrupt-r.png)| Interrumpir R | Esc | Detiene cualquier código en ejecución en la ventana R interactivo, como el bucle `while` de la captura de pantalla anterior. |
-| ![Botón Asociar depurador](media/repl-toolbar-09b-attach-debugger.png)| Asociar depurador | no disponible | También disponible mediante el comando **Depurar > Adjuntar en R interactivo**. | 
-| ![Botón Establecer el directorio de trabajo en la ubicación del archivo de origen](media/repl-toolbar-10-set-working-directory-source.png)| Establecer el directorio de trabajo en la ubicación del archivo de origen | Ctrl+Mayús+E | Establece el directorio de trabajo en el archivo obtenido más recientemente cargado en la ventana R interactivo (mediante `source`). Vea [Directorio de trabajo](#working-directory). |
-| ![Botón Establecer el directorio de trabajo en la ubicación del proyecto](media/repl-toolbar-11-set-working-directory-to-project.png) | Establecer el directorio de trabajo en la ubicación del proyecto | Ctrl+Mayús+P | Establece el directorio de trabajo en la raíz del proyecto cargado en Visual Studio. Vea [Directorio de trabajo](#working-directory). |
+| ![Botón Restablecer](~/rtvs/media/repl-toolbar-01-reset.png) | Restablecer | Ctrl+Mayús+F10 | Restablece la sesión de la ventana R interactivo y borra todas las variables y el historial. |
+| ![Botón Borrar](~/rtvs/media/repl-toolbar-02-clear.png) | Clear | Ctrl+L | Borra la salida mostrada en la ventana R interactivo; no afecta a las variables de la sesión ni al historial. |
+| ![Botones Historial](~/rtvs/media/repl-toolbar-03-history.png) | Comando Historial anterior<br/>Comando Historial siguiente | Arriba, Abajo<br/>Alt+Arriba/Alt+Abajo | Se desplaza por el historial, con determinados comportamientos para los bloques de código de varias líneas. Vea [Historial](#history). |
+| ![Botón Cargar área de trabajo](~/rtvs/media/repl-toolbar-04-load-workspace.png) | Cargar área de trabajo | no disponible | Carga un área de trabajo guardada anteriormente (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
+| ![Botón Guardar área de trabajo como](~/rtvs/media/repl-toolbar-05-save-workspace-as.png)| Guardar área de trabajo como | no disponible | Guarda el estado actual de la sesión como un área de trabajo (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
+| ![Botón Script de R de origen](~/rtvs/media/repl-toolbar-06-source-r-script.png) | Script de R de origen | Ctrl+Mayús+S | Llama a `source` con el script de R activo en el editor de Visual Studio, que ejecuta el código.  Este botón solo aparece cuando hay un archivo de R abierto en el editor de Visual Studio. | 
+| ![Botón Script de R de origen con eco](~/rtvs/media/repl-toolbar-07-source-r-script-with-echo.png) | Script de R de origen con eco | Ctrl+Mayús+Intro | Es igual que Script de R de origen, pero muestra el contenido del script en la ventana R interactivo. | 
+| ![Botón Interrumpir R](~/rtvs/media/repl-toolbar-08-interrupt-r.png)| Interrumpir R | Esc | Detiene cualquier código en ejecución en la ventana R interactivo, como el bucle `while` de la captura de pantalla anterior. |
+| ![Botón Asociar depurador](~/rtvs/media/repl-toolbar-09b-attach-debugger.png)| Asociar depurador | no disponible | También disponible mediante el comando **Depurar > Adjuntar en R interactivo**. | 
+| ![Botón Establecer el directorio de trabajo en la ubicación del archivo de origen](~/rtvs/media/repl-toolbar-10-set-working-directory-source.png)| Establecer el directorio de trabajo en la ubicación del archivo de origen | Ctrl+Mayús+E | Establece el directorio de trabajo en el archivo obtenido más recientemente cargado en la ventana R interactivo (mediante `source`). Vea [Directorio de trabajo](#working-directory). |
+| ![Botón Establecer el directorio de trabajo en la ubicación del proyecto](~/rtvs/media/repl-toolbar-11-set-working-directory-to-project.png) | Establecer el directorio de trabajo en la ubicación del proyecto | Ctrl+Mayús+P | Establece el directorio de trabajo en la raíz del proyecto cargado en Visual Studio. Vea [Directorio de trabajo](#working-directory). |
 | (Campo de texto) | Seleccionar directorio de trabajo | no disponible | Campo de entrada directa para el directorio de trabajo. Vea [Directorio de trabajo](#working-directory). |
 
 

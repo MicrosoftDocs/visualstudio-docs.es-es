@@ -79,11 +79,11 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  Cuando aparezca la ventana, haga clic un par de veces en el botón **Agregar elemento**.  Verá algo parecido a esto:  
   
- ![Ventana principal de la aplicación](../debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
+ ![Ventana principal de la aplicación](~/debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
   
  Abra la ventana **Live Visual Tree** \(**Depurar \/ Ventanas \/ Live Visual Tree** o búsquela en el lado izquierdo del IDE\).  Arrástrela de su posición de acoplamiento, de modo que podamos ver esta ventana junto con la ventana **Live Properties**.  En la ventana **Live Visual Tree**, expanda el nodo **ContentPresenter**.  Debe contener nodos para el botón y el cuadro de lista.  Expanda el cuadro de lista \(y luego **ScrollContentPresenter** e **ItemsPresenter**\) para buscar los elementos del cuadro de lista.  La ventana debe ser similar a la que se muestra a continuación:  
   
- ![ListBoxItems en el Árbol visual dinámico](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
+ ![ListBoxItems en el Árbol visual dinámico](~/debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
   
  Vuelva a la ventana de la aplicación y agregue algunos elementos más.  Debería ver más elementos del cuadro de lista en **Live Visual Tree**.  
   
@@ -95,7 +95,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **Mostrar adornos de diseño en la aplicación en ejecución**.  Puede habilitar este modo al seleccionar el botón que está justo a la derecha del botón Habilitar selección.  Cuando la opción **Mostrar adornos de diseño** está activada, la ventana de la aplicación muestra líneas horizontales y verticales a lo largo de los límites del objeto seleccionado para que pueda ver lo que alinea, así como rectángulos que muestran los márgenes.  Por ejemplo, active las opciones **Habilitar selección** y **Mostrar adornos de diseño** y seleccione el bloque de texto **Agregar elemento** en la aplicación.  Debería ver el nodo del bloque de texto en **Live Visual Tree** y las propiedades del bloque de texto en **Live Property Viewer**, así como las líneas horizontales y verticales en los límites del bloque de texto.  
   
- ![LivePropertyViewer en DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
+ ![LivePropertyViewer en DisplayLayout](~/debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
   
  **Obtener una vista previa de la selección**.  Puede habilitar este modo seleccionando el tercer botón de la izquierda en la barra de herramientas de Live Visual Tree.  Este modo muestra el XAML donde se ha declarado el elemento, siempre y cuando tenga acceso al código fuente de la aplicación.  Seleccione **Habilitar selección** y **Obtener una vista previa de la selección** y, luego, seleccione el botón de nuestra aplicación de prueba.  Se abre el archivo MainWindow.xaml en Visual Studio y se coloca el cursor en la línea en la que se define el botón.  
   

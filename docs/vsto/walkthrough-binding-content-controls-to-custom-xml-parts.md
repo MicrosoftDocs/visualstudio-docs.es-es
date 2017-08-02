@@ -89,15 +89,15 @@ caps.handback.revision: 50
     > [!NOTE]  
     >  Si la pestaña **Programador** no está visible, debe mostrarla primero.  Para obtener más información, consulte [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  En el grupo **Controles**, elija el botón de **Texto** ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
+6.  En el grupo **Controles**, elija el botón de **Texto** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
   
 7.  En la segunda columna de la tabla, elija la segunda fila \(junto a **Fecha de contratación**\).  
   
-8.  En el grupo **Controles**, elija el botón de **Selector de fecha** ![DatePickerContentControl](../vsto/media/datepicker.png "DatePickerContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
+8.  En el grupo **Controles**, elija el botón de **Selector de fecha** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
   
 9. En la segunda columna de la tabla, elija la tercera fila \(junto a **Título**\).  
   
-10. En el grupo **Controles**, elija el botón de **Lista desplegable** ![DropDownListContentControl](../vsto/media/dropdownlist.png "DropDownListContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la última celda.  
+10. En el grupo **Controles**, elija el botón de **Lista desplegable** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la última celda.  
   
  Esa es la interfaz de usuario completa para este proyecto.  Si ejecuta ahora el proyecto, puede escribir texto en la primera fila y seleccionar una fecha en la segunda.  El siguiente paso consiste en asociar los datos que desea mostrar al documento en un archivo XML.  
   

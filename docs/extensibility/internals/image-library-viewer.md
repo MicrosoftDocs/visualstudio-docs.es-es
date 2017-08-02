@@ -199,7 +199,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
   
  La información mostrada para cada origen de imagen incluye qué tipo de fondo para mostrar en, si se puede aplicar un tema o admite el contraste alto, ¿qué es válida para los tamaños o si es independiente del tamaño y si la imagen procede de un ensamblado nativo.  
   
- ![Tema del visor de la biblioteca de imágenes](../../extensibility/internals/media/image-library-viewer-can-theme.png "Image Library Viewer Can Theme")  
+ ![Tema del visor de la biblioteca de imágenes](~/extensibility/internals/media/image-library-viewer-can-theme.png "Image Library Viewer Can Theme")  
   
  Cuando se valida un manifiesto de imagen, se recomienda que implemente el manifiesto y el archivo DLL en sus ubicaciones reales de la imagen. Comprobará que las rutas de acceso relativas funcionan correctamente y que la biblioteca de imágenes puede buscar y cargar el manifiesto y el archivo DLL de la imagen.  
   

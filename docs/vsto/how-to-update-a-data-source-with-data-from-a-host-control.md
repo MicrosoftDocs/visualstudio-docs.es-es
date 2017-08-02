@@ -78,7 +78,7 @@ caps.handback.revision: 52
   
 3.  En la ventana **Propiedades**, expanda la propiedad **\(DataBindings\)**.  
   
-4.  Junto a la propiedad **\(Avanzado\)**, haga clic en el botón de puntos suspensivos \(![Captura de pantalla de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "Captura de pantalla de VisualStudioEllipsesButton")\).  
+4.  Junto a la propiedad **\(Avanzado\)**, haga clic en el botón de puntos suspensivos \(![Captura de pantalla de VisualStudioEllipsesButton](~/vsto/media/vbellipsesbutton.png "Captura de pantalla de VisualStudioEllipsesButton")\).  
   
 5.  En el cuadro de diálogo **Formato y enlace de datos avanzado**, haga clic en la lista desplegable **Modo de actualización del origen de datos** y seleccione uno de los siguientes valores:  
   

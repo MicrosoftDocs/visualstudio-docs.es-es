@@ -43,7 +43,7 @@ En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:
   
  El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla TAB para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205215) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo al vídeo](~/data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205215) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen  
   
@@ -56,7 +56,7 @@ IntelliSense con código de Visual C#
   
 3.  La ventana **IntelliSense** debe mostrar resaltada la palabra **if**. (De lo contrario, escriba una `f` minúscula, y lo hará). Observe cómo un pequeño cuadro de *información sobre herramientas* situado junto a la ventana **IntelliSense** aparece con la descripción, **Fragmento de código para la instrucción if**. (En Visual Basic, la información sobre herramientas dice también que se trata de un fragmento de código, pero con una redacción ligeramente diferente.) Como quiere usar ese fragmento, pulse la tecla TAB para insertar **if** en el código. Pulse de nuevo la tecla TAB para usar el fragmento de código **if**. (Si ha hecho clic en alguna otra parte y ha desaparecido la ventana **IntelliSense**, borre la **i** con la tecla de retroceso y vuelva a escribirla; se volverá a abrir la ventana **IntelliSense**).  
   
-     ![Código de Visual C&#35;](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Código de Visual C&#35;](~/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Código de Visual C#  
   
 4.  A continuación, use IntelliSense para escribir más código y abrir un cuadro de diálogo **Abrir archivo**. Si el usuario selecciona el botón **Aceptar**, el control PictureBox cargará el archivo seleccionado por el usuario. En los siguientes pasos se muestra cómo escribir el código. Aunque los pasos son muchos, solamente habrá que presionar unas cuantas teclas:  
@@ -72,13 +72,13 @@ Código de Visual C#
         > [!NOTE]
         >  La ventana **IntelliSense** puede mostrar propiedades y métodos. Para determinar qué se está mostrando, fíjese en el icono del lado izquierdo de cada elemento de la ventana **IntelliSense**. Se muestra una imagen de un bloque junto a cada método y una imagen de una llave inglesa (o fija) junto a cada propiedad. Además, aparece un icono de rayo junto a cada evento. Estas imágenes se muestran como sigue.  
   
-         ![Icono de método](../ide/media/express_iconmethod.png "Express_IconMethod")  
+         ![Icono de método](~/ide/media/express_iconmethod.png "Express_IconMethod")  
 Icono de método  
   
-         ![Icono de propiedad](../ide/media/express_iconproperty.png "Express_IconProperty")  
+         ![Icono de propiedad](~/ide/media/express_iconproperty.png "Express_IconProperty")  
 Icono de propiedad  
   
-         ![Icono de evento](../ide/media/express_iconevent.png "Express_IconEvent")  
+         ![Icono de evento](~/ide/media/express_iconevent.png "Express_IconEvent")  
 Icono de evento  
   
     4.  Empiece a escribir `ShowDialog` (el uso de mayúsculas o minúsculas no es significativo en IntelliSense). El método `ShowDialog()` mostrará el cuadro de diálogo **Abrir archivo**. Cuando la ventana haya resaltado **ShowDialog**, pulse la tecla TAB. También puede resaltar "ShowDialog" y pulsar la tecla F1 para obtener ayuda sobre ella.  

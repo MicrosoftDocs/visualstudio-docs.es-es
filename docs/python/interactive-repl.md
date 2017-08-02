@@ -39,7 +39,7 @@ ms.lasthandoff: 04/10/2017
 
 Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL) para cada entorno de Python, que ofrece mejoras con respecto al REPL obtenido con la línea de comandos `python.exe`. La ventana interactiva (que se abre con los comandos de menú **Ver > Otras ventanas > &lt;Entorno&gt; interactivo**) permite escribir código Python arbitrario y ver resultados inmediatos, que ayudan a aprender y experimentar con API, así como a desarrollar de forma interactiva código de trabajo para incluirlo en los proyectos.
 
-![Ventana interactiva de Python](media/interactive-window.png)
+![Ventana interactiva de Python](~/python/media/interactive-window.png)
 
 Visual Studio tiene una serie de modos de REPL de Python entre los que se puede elegir:
 
@@ -62,15 +62,15 @@ Hay varias maneras de abrir la ventana interactiva de un entorno.
 
 En primer lugar, cambie a la ventana Python Environments (Entornos de Python); para ello seleccione (**Ver > Otras ventanas > Entornos de Python** o presione Ctrl-K,Ctrl-`) y seleccione el comando o botón **Open Interactive Window** (Abrir ventana interactiva) de un entorno concreto.
 
-![Vínculo a una ventana interactiva en la ventana Python Environments (Entornos de Python)](media/interactive-window-opening.png)
+![Vínculo a una ventana interactiva en la ventana Python Environments (Entornos de Python)](~/python/media/interactive-window-opening.png)
 
 En segundo lugar, en **Ver > Otras ventanas**, hay comandos de **Interactivo** para cada entorno, que suelen encontrarse cerca de la parte inferior del menú:
 
-![Elementos de menú de la ventana interactiva en Ver > Otras ventanas](media/interactive-window-menu.png)
+![Elementos de menú de la ventana interactiva en Ver > Otras ventanas](~/python/media/interactive-window-menu.png)
 
 En tercer lugar, puede abrir una ventana interactiva en el archivo de inicio del proyecto o en un archivo independiente; para ello, seleccione el comando de menú **Depurar > Ejecutar [Proyecto | Archivo] en la ventana interactiva de Python** (Mayús+Alt+F5):
 
-![Menú Execute Project in Python Interactive (Ejecutar proyecto en la ventana interactiva de Python)](media/interactive-execute-project.png)
+![Menú Execute Project in Python Interactive (Ejecutar proyecto en la ventana interactiva de Python)](~/python/media/interactive-execute-project.png)
 
 Por último, puede seleccionar código en el archivo y usar el comando [send code to interactive command](#send-code-to-interactive-command) (enviar código a comando interactivo) descrito a continuación.
 
@@ -88,7 +88,7 @@ Tenga en cuenta que también hay un conjunto independiente de opciones para la *
 
 Cuando la ventana interactiva está abierta, puede empezar a escribir código línea por línea donde aparece el símbolo `>>>`. La ventana interactiva ejecuta cada línea según la escribe, lo que incluye importar módulos, definir variables, etc. Puede ver esto en las primeras dos líneas que aparecen en el gráfico siguiente:
 
-![Ventana interactiva de Python](media/interactive-window.png)
+![Ventana interactiva de Python](~/python/media/interactive-window.png)
 
 Se produce una excepción cuando una instrucción termina con dos puntos, como en el caso de la instrucción `for` anterior, porque la ventana interactiva sabe que necesita líneas de código adicionales para poder ejecutar correctamente el bloque de códigos. En este caso, el símbolo de la línea cambia a `...`, lo que indica que necesita escribir líneas adicionales para el bloque, tal como se muestra en las líneas cuarta y quinta del gráfico anterior. Si presiona Entrar en una línea en blanco, la ventana interactiva cierra el bloque y lo ejecuta en el intérprete.
 
@@ -116,20 +116,20 @@ Los comandos también son extensibles mediante MEF (Managed Extensibility Framew
 
 De forma predeterminada, la ventana interactiva de un proyecto se limita al archivo de inicio del proyecto, como si lo ejecutara desde el símbolo del sistema. Para un archivo independiente, se limita a dicho archivo. No obstante, el menú desplegable de la parte superior de la ventana interactiva permite cambiar en cualquier momento el ámbito durante la sesión de REPL:
 
-![Ámbitos de la ventana interactiva](media/interactive-scopes.png)
+![Ámbitos de la ventana interactiva](~/python/media/interactive-scopes.png)
 
 Después de importar un módulo, como escribir `import os`, verá opciones en el menú desplegable para cambiar a cualquier ámbito en dicho módulo. También verá un mensaje en la ventana interactiva que indica el nuevo ámbito, para que pueda realizar un seguimiento de cómo ha adoptado un estado determinado durante la sesión.
 
 Al escribir `dir()` en un ámbito, se muestran identificadores válidos en dicho ámbito, como nombres de funciones, clases y variables. Por ejemplo, con `$mod importlib` seguido de `dir()`, se muestra lo siguiente:
 
-![Ventana interactiva en el ámbito importlib](media/interactive-importlib-scope.png)
+![Ventana interactiva en el ámbito importlib](~/python/media/interactive-importlib-scope.png)
 
 <a name="sending-code-to-interactive"</a>
 ## <a name="send-code-to-interactive-command"></a>Comando Enviar código a Interactive
 
 Además de trabajar directamente en la ventana interactiva, puede seleccionar código en el editor, hacer clic con el botón derecho y seleccionar **Enviar a Interactive**:
 
-![Comando de menú Enviar a Interactive](media/interactive-send-to.png)
+![Comando de menú Enviar a Interactive](~/python/media/interactive-send-to.png)
 
 Resulta útil para el desarrollo de código iterativo o evolutivo, incluido probar el código a medida que se desarrolla. Por ejemplo, después de enviar una porción de código a la ventana interactiva y ver la salida, puede presionar la flecha arriba para volver a ver el código, modificarlo y probarlo rápidamente si presiona las teclas Ctrl+Entrar. (Si presiona Entrar al final de la entrada, la ejecuta, pero, si presiona Entrar en el medio de la entrada, inserta una nueva línea). Cuando tenga el código que desea, puede volver a copiarlo con facilidad en el archivo del proyecto.
 

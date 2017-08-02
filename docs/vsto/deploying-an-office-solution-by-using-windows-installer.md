@@ -132,7 +132,7 @@ Configure el proyecto **OfficeAddInSetup** para incluir el resultado del proyect
 2. En la barra de menús, elija **Ver**, **Abrir**.  
   
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación**, como se muestra en la siguiente ilustración.  
-    ![Botón Archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")  
+    ![Botón Archivos de aplicación.](~/vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")  
   
 4. En la página de **Archivos de aplicación**, elija el botón **Agregar resultados del proyecto**.  
   
@@ -267,7 +267,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
     En la barra de menús, elija **Ver**, **Abrir**.  
   
 2. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Application Registry** (Registro de aplicaciones), como se muestra en la siguiente ilustración.  
-    ![Botón Registro de aplicaciones.](../vsto/media/installshield-applicationregistry.png "Botón Registro de aplicaciones.")  
+    ![Botón Registro de aplicaciones.](~/vsto/media/installshield-applicationregistry.gif "Botón Registro de aplicaciones.")  
   
     Aparece la página **Application Registry** (Registro de aplicaciones).  
   
@@ -385,7 +385,7 @@ Para modificar las propiedades personalizadas, se crea un programa para quitar l
 2. En la barra de menús, elija **Ver**, **Abrir**.  
   
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación**, como se muestra en la siguiente ilustración.  
-    ![Botón Archivos de aplicación.](../vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")  
+    ![Botón Archivos de aplicación.](~/vsto/media/installshield-applicationfiles.png "Botón Archivos de aplicación.")  
   
 4. En la página de **Archivos de aplicación**, elija el botón **Agregar resultados del proyecto**.  
     Aparece el cuadro de diálogo del **selector de resultados de Visual Studio**.  

@@ -166,7 +166,7 @@ caps.handback.revision: 33
   
 2.  En el cuadro de diálogo de **Publicar** , elija el botón de opción de **Publicar en el sistema de archivos** .  
   
-     Puede cambiar la ubicación de destino en el cuadro de diálogo de **Publicar** eligiendo el botón de puntos ![Icono Puntos suspensivos](../sharepoint/media/ellipsisicon.png "Icono Puntos suspensivos") suspensivos y después navegar a otra ubicación.  
+     Puede cambiar la ubicación de destino en el cuadro de diálogo de **Publicar** eligiendo el botón de puntos ![Icono Puntos suspensivos](~/sharepoint/media/ellipsisicon.gif "Icono Puntos suspensivos") suspensivos y después navegar a otra ubicación.  
   
 3.  Elija el botón de **Publicar** .  
   

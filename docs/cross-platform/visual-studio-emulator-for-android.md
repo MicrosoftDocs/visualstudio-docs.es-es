@@ -100,7 +100,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  En Visual Studio 2015 puede instalar, desinstalar e iniciar perfiles de dispositivo mediante el Administrador del emulador. Puede acceder al Administrador del emulador eligiendo **Herramientas** y **Emulador de Visual Studio para Android**.  
   
- ![Administrador del Emulador de Visual Studio para Android](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
+ ![Administrador del Emulador de Visual Studio para Android](~/cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
   
  De forma predeterminada, existen cuatro perfiles de dispositivo preinstalados (configuraciones KitKat y de círculo para teléfonos de 5 pulgadas y tabletas de 7 pulgadas), como se indica en el texto en blanco y los iconos. Los demás perfiles de la lista aparecerán en gris hasta que use el botón **Instalar perfil** y complete su instalación. Puede filtrar la lista por nivel de API y hacer clic en la flecha de detalles, en el lado inferior derecho de un perfil, para ver sus detalles completos de configuración.  
   

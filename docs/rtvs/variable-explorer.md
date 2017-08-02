@@ -49,11 +49,11 @@ n <- c(1,2,3,5,8,13)
  
 Después, la ventana Explorador de variables aparece de la manera siguiente:
 
-![Ventana Explorador de variables en Visual Studio](media/variable-explorer-window.png)
+![Ventana Explorador de variables en Visual Studio](~/rtvs/media/variable-explorer-window.png)
 
 Si tiene un marco de datos de R más complejo definido en la sesión, puede navegar por los datos. Por ejemplo, después de ejecutar `cars <- mtcars`, puede navegar por el conjunto de datos expandiendo los diferentes nodos del Explorador de variables:
  
-![Vista expandida del Explorador de variables](media/variable-explorer-expanded-results.png)
+![Vista expandida del Explorador de variables](~/rtvs/media/variable-explorer-expanded-results.png)
  
 Para eliminar variables, haga clic con el botón derecho y seleccione **Eliminar** o seleccione la variable y presione la tecla Eliminar.
 
@@ -63,29 +63,29 @@ También puede buscar una observación del marco de datos con la búsqueda incre
 
 Como a menudo los datos son tabulares, puede ver cualquier tipo de datos complejo como una tabla independiente seleccionando el icono de lupa o haciendo clic con el botón derecho y seleccionando **Mostrar detalles**. 
 
-![Vista de la tabla Explorador de variables](media/variable-explorer-table-view.png)
+![Vista de la tabla Explorador de variables](~/rtvs/media/variable-explorer-table-view.png)
 
 Al hacer clic en un encabezado de columna se ordenan los datos por columna (alternando entre ascendente y descendente). Manteniendo presionada la tecla Mayús y haciendo clic en las columnas adicionales se agregan también a la ordenación. Al hacer clic en una columna sin la tecla Mayús se vuelve a una ordenación de columna única.
 
 La secuencia en la que hace clic en los encabezados de columna determina el orden en que se realiza la ordenación. Por ejemplo, al hacer clic con Mayús en la columna **cyl** y, después, hacer clic con Mayús en la columna **mpg** dos veces, se ordena la lista de cilindros ascendentes y millas por galón descendentes:
 
-![Vista de tabla de ordenación de datos en dos columnas.](media/variable-explorer-table-view-sorting.png)
+![Vista de tabla de ordenación de datos en dos columnas.](~/rtvs/media/variable-explorer-table-view-sorting.png)
 
 Como el Explorador de variables y las vistas de tabla están en ventanas de Visual Studio independientes, puede organizarlas como quiera para el trabajo en paralelo. Vea [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) para obtener instrucciones generales.
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Abrir en Excel (o en otra aplicación compatible con CSV)
 
-Para obtener una mayor manipulación y análisis, a menudo es útil exportar variables de sesión en CSV, que se realiza con el icono pequeño de Excel (![icono de exportación de Excel](media/variable-explorer-excel-icon.png)) junto a cada nodo del Explorador de variables o haciendo clic en el botón derecho sobre un elemento y seleccionando **Abrir en la aplicación de CSV**. Al seleccionar el icono se escriben los datos en un nuevo archivo CSV de la carpeta `%userprofile%\Documents\RTVS_CSV_Exports` y, después, se inicia ese archivo, que se abre en cualquier aplicación asociada a la extensión `.csv`.
+Para obtener una mayor manipulación y análisis, a menudo es útil exportar variables de sesión en CSV, que se realiza con el icono pequeño de Excel (![icono de exportación de Excel](~/rtvs/media/variable-explorer-excel-icon.png)) junto a cada nodo del Explorador de variables o haciendo clic en el botón derecho sobre un elemento y seleccionando **Abrir en la aplicación de CSV**. Al seleccionar el icono se escriben los datos en un nuevo archivo CSV de la carpeta `%userprofile%\Documents\RTVS_CSV_Exports` y, después, se inicia ese archivo, que se abre en cualquier aplicación asociada a la extensión `.csv`.
 
 ## <a name="scopes"></a>Ámbitos
 
 De manera predeterminada, el Explorador de variables se abre en el ámbito global. Puede cambiar a un ámbito de paquete seleccionando un paquete del menú desplegable en la parte superior de la ventana.
 
-![Explorador de variables que muestra un ámbito de paquete](media/variable-explorer-package-scopes.png)
+![Explorador de variables que muestra un ámbito de paquete](~/rtvs/media/variable-explorer-package-scopes.png)
 
 También puede cambiar a un ámbito de función cuando está en un punto de interrupción del depurador (tenga en cuenta que el Explorador de variables no cambia automáticamente al ámbito de función del código que se está depurando):
 
-![Explorador de variables que muestra un marco de datos durante la depuración](media/variable-explorer-as-locals-window.png)
+![Explorador de variables que muestra un marco de datos durante la depuración](~/rtvs/media/variable-explorer-as-locals-window.png)
 
 El Explorador de variables cambia automáticamente el ámbito de función a medida que avanza por el código en el depurador, como mostrar variables locales en una función.
 
@@ -96,5 +96,5 @@ Dos comandos de la barra de herramientas del Explorador de variables, que tambi�
 
 Una vez que haya identificado el archivo CSV que se va a importar, las herramientas de R para Visual Studio muestran un cuadro de diálogo **Importar conjunto de datos**, en el que tiene opciones para controlar cómo se analiza ese archivo de datos (es decir, cuál es el separador de campos y cómo controlar las comillas) y puede ver una vista previa del marco de datos importado y del archivo de datos original:
 
-![Cuadro de diálogo Importar conjunto de datos](media/variable-explorer-import-dataset-dialog.png)
+![Cuadro de diálogo Importar conjunto de datos](~/rtvs/media/variable-explorer-import-dataset-dialog.png)
 

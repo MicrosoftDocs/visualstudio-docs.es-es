@@ -46,7 +46,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
   
 4.  [Admitir acciones intencionales al implementar un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")  
+ ![CUIT&#95;Full](~/test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad  
  El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas de IU codificadas capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emitirá esos clics del mouse en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar esa acción en el control. Esto puede producir errores si la prueba se reproduce en configuraciones de pantalla diferentes, en entornos distintos o después de haberse realizado cambios en el diseño de la interfaz de usuario.  
@@ -60,7 +60,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para admitir la grabación y reproducción, la validación de propiedades y la navegación de un control de Windows Forms  
  Implemente la accesibilidad para el control como se indica en el procedimiento siguiente, que se explica en detalle en <xref:System.Windows.Forms.AccessibleObject>.  
   
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")  
+ ![CUIT&#95;Accessible](~/test/media/cuit_accessible.png "CUIT_Accessible")  
   
 1.  Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.  
   
@@ -102,7 +102,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
 ### <a name="to-support-custom-property-validation"></a>Para admitir la validación de propiedades personalizada  
- ![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")  
+ ![CUIT&#95;Props](~/test/media/cuit_props.png "CUIT_Props")  
   
 1.  Reemplace la propiedad <xref:System.Windows.Forms.AccessibleObject.Description%2A> del objeto accesible CurveLegend para pasar valores de propiedades enriquecidos en la cadena de descripción, separada de la descripción principal (y de otras, si se implementan varias propiedades) por punto y coma (;).  
   
@@ -177,7 +177,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
   
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para agregar una clase especializada para obtener acceso al control  
- ![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
+ ![CUIT&#95;CodeGen](~/test/media/cuit_codegen.png "CUIT_CodeGen")  
   
 1.  Implemente una clase que se derive de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> y agregue el tipo del control a la colección de propiedades de búsqueda en el constructor.  
   
@@ -195,7 +195,7 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
  Cuando Visual Studio registra una prueba, captura cada evento del mouse y del teclado. Sin embargo, en algunos casos, la intención de la acción se puede perder en la serie de eventos del mouse y del teclado. Por ejemplo, si el control admite autocompletar, el mismo conjunto de eventos del mouse y del teclado puede dar lugar a un valor diferente cuando la prueba se reproduce en un entorno distinto. Puede agregar un complemento de filtro de acciones que reemplace la serie de eventos del mouse y del teclado por una sola acción. De esta manera, puede reemplazar la serie de eventos del mouse y del teclado que da lugar a la selección de un valor por una única acción que establece el valor. De esta forma, se protegen las pruebas de IU codificadas de las diferencias de autocompletar de un entorno a otro.  
   
 ### <a name="to-support-intent-aware-actions"></a>Para admitir acciones intencionales  
- ![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
+ ![CUIT&#95;Actions](~/test/media/cuit_actions.png "CUIT_Actions")  
   
 1.  Implemente una clase de filtro de acción que se derive de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, reemplazando las propiedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> y <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   

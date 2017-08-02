@@ -257,7 +257,7 @@ ms.lasthandoff: 05/13/2017
   
      La ilustración siguiente muestra la aplicación con los botones de la ventana de navegación.  
   
-     ![Captura de pantalla de ejemplo ExpenseIt](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
+     ![Captura de pantalla de ejemplo ExpenseIt](~/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
 6.  Cierre la aplicación para volver al modo de diseño.  
   
@@ -313,7 +313,7 @@ ms.lasthandoff: 05/13/2017
   
 3.  Compile y ejecute la aplicación. La siguiente ilustración muestra el aspecto de tiempo de ejecución de los controles creados por el código XAML en este procedimiento.  
   
-     ![Captura de pantalla de ejemplo ExpenseIt](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Captura de pantalla de ejemplo ExpenseIt](~/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
 4.  Cierre la aplicación para volver al modo de diseño.  
   
@@ -480,7 +480,7 @@ ms.lasthandoff: 05/13/2017
   
 6.  Si compila y ejecuta la aplicación en este punto, debería ser similar a la siguiente ilustración:  
   
-     ![Captura de pantalla de ejemplo ExpenseIt](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
+     ![Captura de pantalla de ejemplo ExpenseIt](~/designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
 #### <a name="to-add-code-to-the-button"></a>Para agregar el código al botón  
   

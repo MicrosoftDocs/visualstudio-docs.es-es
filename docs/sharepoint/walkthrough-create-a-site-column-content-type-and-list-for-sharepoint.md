@@ -200,7 +200,7 @@ caps.handback.revision: 53
   
     -   Comentarios  
   
-14. En la lista de **Propiedades** , elija la propiedad de **Ordenar y agrupar** , y elija los puntos suspensivos ![Icono Puntos suspensivos](../sharepoint/media/ellipsisicon.png "Icono Puntos suspensivos") para mostrar el cuadro de diálogo de **Ordenar y agrupar** .  
+14. En la lista de **Propiedades** , elija la propiedad de **Ordenar y agrupar** , y elija los puntos suspensivos ![Icono Puntos suspensivos](~/sharepoint/media/ellipsisicon.gif "Icono Puntos suspensivos") para mostrar el cuadro de diálogo de **Ordenar y agrupar** .  
   
 15. En la lista de **Nombre de columna** , elija **Nombre paciente**, asegúrese de que la columna de **Ordenar** está establecida en **Ascendente**, y después elija el botón de **Aceptar** .  
   

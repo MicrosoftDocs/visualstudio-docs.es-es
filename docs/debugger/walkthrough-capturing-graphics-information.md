@@ -48,7 +48,7 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
   
 #### Cómo capturar información de gráficos  
   
--   En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar**.![Icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+-   En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar**.![Icono de botón de captura de gráficos](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
      O bien  
   

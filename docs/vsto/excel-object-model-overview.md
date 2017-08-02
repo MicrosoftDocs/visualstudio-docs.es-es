@@ -47,7 +47,7 @@ caps.handback.revision: 65
   
  En este tema se proporciona una breve introducción del modelo de objetos de Excel.  Para conocer los recursos donde puede obtener más información sobre el modelo de objetos de Excel completo, vea [Usar la documentación del modelo de objetos de Excel](#ExcelOMDocumentation).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Puede ver una demostración en vídeo relacionada en estas dos páginas sobre [cómo usar los controladores de eventos en un complemento de Excel 2007](http://go.microsoft.com/fwlink/?LinkID=130291) y [cómo usar las formas para crear un gráfico de burbujas en Excel](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Puede ver una demostración en vídeo relacionada en estas dos páginas sobre [cómo usar los controladores de eventos en un complemento de Excel 2007](http://go.microsoft.com/fwlink/?LinkID=130291) y [cómo usar las formas para crear un gráfico de burbujas en Excel](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## Acceso a los objetos de un proyecto de Excel  
  Cuando se crea un nuevo proyecto de complemento de VSTO para Excel, Visual Studio crea automáticamente un archivo de código ThisAddIn.vb o ThisAddIn.cs.  Puede obtener acceso al objeto Application mediante `Me.Application` o `this.Application`.  

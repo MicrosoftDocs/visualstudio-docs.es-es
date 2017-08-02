@@ -93,7 +93,7 @@ Este documento se describe cómo ejecutar el editor de [!INCLUDE[vsprvs](../code
   
  A continuación, se muestra la barra de herramientas del **Modo editor de imágenes**:  
   
- ![Barra de herramientas modal del Editor de imágenes.](../designers/media/digit-tre-modal-toolbar.png "Digit\-TRE\-Modal\-Toolbar")  
+ ![Barra de herramientas modal del Editor de imágenes.](~/designers/media/digit-tre-modal-toolbar.png "Digit\-TRE\-Modal\-Toolbar")  
   
  En esta tabla se describen los elementos de la barra de herramientas del **Modo del editor de imágenes**; se muestran en el orden en que aparecen de izquierda a derecha.  
   
@@ -117,7 +117,7 @@ Este documento se describe cómo ejecutar el editor de [!INCLUDE[vsprvs](../code
   
  Esta es la barra de herramientas del **Editor de imágenes**.  
   
- ![Barra de herramientas del Editor de imágenes](../designers/media/digit-tre-toolbar.png "Digit\-TRE\-Toolbar")  
+ ![Barra de herramientas del Editor de imágenes](~/designers/media/digit-tre-toolbar.png "Digit\-TRE\-Toolbar")  
   
  La tabla siguiente describe los elementos de la barra de herramientas del **Editor de imágenes**, que se muestran en el orden en que aparecen de arriba abajo.  
   

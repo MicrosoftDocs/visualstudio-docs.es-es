@@ -35,7 +35,7 @@ Las interfaces e implementaciones de todos los proyectos de [!INCLUDE[vsprvs](..
   
  La ilustración siguiente se muestran las interfaces primarias, servicios, los objetos que componen una ejecución de proyecto típica.  Puede utilizar la aplicación auxiliar de la aplicación, HierUtil7, crear los objetos subyacentes y otra plancha de caldera de programación.  Para obtener más información sobre la aplicación auxiliar de la aplicación HierUtil7, vea [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/es-es/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Gráfico del modelo de proyectos de Visual Studio](../../extensibility/internals/media/vsprojectmodel.png "vsProjectModel")  
+ ![Gráfico del modelo de proyectos de Visual Studio](~/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 modelo de proyecto  
   
  Para obtener más información sobre las interfaces y los servicios mostrados en el diagrama anterior, y otras interfaces opcionales no incluidos en el diagrama, vea [Componentes principales de modelo de proyecto](../../extensibility/internals/project-model-core-components.md).  

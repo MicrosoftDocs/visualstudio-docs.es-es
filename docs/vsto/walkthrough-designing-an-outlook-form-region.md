@@ -48,7 +48,7 @@ caps.handback.revision: 40
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una versión en vídeo de este tema, consulte el vídeo sobre cómo [Diseñar un área de formulario de Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una versión en vídeo de este tema, consulte el vídeo sobre cómo [Diseñar un área de formulario de Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## Crear un proyecto de complemento de VSTO de Outlook  
  En primer lugar, cree un proyecto básico de complemento de VSTO.  

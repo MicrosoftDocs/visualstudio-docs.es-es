@@ -22,7 +22,7 @@ caps.handback.revision: 9
 
 Se puede utilizar el Navegador de utilización en el Visualizador de simultaneidad para seleccionar un intervalo de tiempo en un seguimiento.  El Visualizador de simultaneidad muestra la utilización de núcleos de CPU del proceso de destino a lo largo del tiempo.  Esto facilita examinar las pautas de utilización de la CPU y permite también comparar los datos de uso y los datos en otras vistas.  El Navegador de utilización aparece en la parte superior de cada vista del Visualizador de simultaneidad.  La siguiente ilustración muestra el Navegador de utilización.  
   
- ![Navegador de uso que muestra el marco de tiempo seleccionado](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+ ![Navegador de uso que muestra el marco de tiempo seleccionado](~/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
 El Navegador de utilización y un período de tiempo seleccionado  
   
  En la ilustración, el intervalo seleccionado está definido por un rectángulo rojo, conocido como *miniatura*.  

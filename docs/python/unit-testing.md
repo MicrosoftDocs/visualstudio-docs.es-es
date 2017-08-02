@@ -67,11 +67,11 @@ Por convención, Visual Studio identifica las pruebas como métodos cuyos nombre
 
 1. El Explorador de pruebas buscará las pruebas en el proyecto y las mostrará como se indica a continuación. Haga doble clic en una prueba para abrir su archivo de origen.
 
-    ![Explorador de pruebas en el que se muestra la prueba test_A predeterminada](media/unit-test-A.png)
+    ![Explorador de pruebas en el que se muestra la prueba test_A predeterminada](~/python/media/unit-test-A.png)
 
 1. A medida que agrega más pruebas para el proyecto, puede organizar la vista en el Explorador de pruebas mediante el grupo de menú en la barra de herramientas:
 
-    ![Grupo del Explorador de pruebas mediante el menú de la barra de herramientas](media/unit-test-group-menu.png)
+    ![Grupo del Explorador de pruebas mediante el menú de la barra de herramientas](~/python/media/unit-test-group-menu.png)
 
 1. También puede escribir texto en el campo de búsqueda para filtrar pruebas por nombre.
 
@@ -89,13 +89,13 @@ Las pruebas se ejecutan en segundo plano y el Explorador de pruebas actualiza el
 
 - Las pruebas superadas muestran una marca de verificación verde y el tiempo dedicado a ejecutar la prueba:
 
-    ![Estado de la prueba test_A superada](media/unit-test-A-pass.png)
+    ![Estado de la prueba test_A superada](~/python/media/unit-test-A-pass.png)
 
 - Las pruebas con error muestran una cruz roja con un vínculo **Salida** que muestra la salida de la consola y la salida `unittest` de la serie de pruebas:
 
-    ![Estado de la prueba test_A con error](media/unit-test-A-fail.png)
+    ![Estado de la prueba test_A con error](~/python/media/unit-test-A-fail.png)
 
-    ![test_A con error y un motivo](media/unit-test-A-fail-reason.png)
+    ![test_A con error y un motivo](~/python/media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>Depuración de pruebas
 
@@ -103,7 +103,7 @@ Dado que las pruebas unitarias son fragmentos de código, están sujetas a error
 
 Para iniciar la depuración, establezca un punto de interrupción inicial en el código y luego haga clic con el botón derecho en la prueba (o una selección) en el Explorador de pruebas y seleccione **Depurar pruebas seleccionadas**. Visual Studio iniciará al depurador de Python como lo haría para el código de la aplicación.
 
-![Depuración de una prueba](media/unit-test-debugging.png)
+![Depuración de una prueba](~/python/media/unit-test-debugging.png)
 
 También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](python-in-visual-studio.md#features-matrix)).
 

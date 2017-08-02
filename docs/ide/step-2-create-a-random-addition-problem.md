@@ -59,7 +59,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
   
      Observe que cuando escribe el punto \(.\) después de randomizer en el código, se abre una ventana de IntelliSense en la que se muestran todos los métodos del objeto `Random` a los que se puede llamar.  Por ejemplo, Intellisense muestra el método `Next()` de la forma siguiente.  
   
-     ![Método Next](../ide/media/express_randomwhite.png "Express\_RandomWhite")  
+     ![Método Next](~/ide/media/express_randomwhite.png "Express\_RandomWhite")  
 Método Next  
   
      Cuando escribe un punto después de un objeto, IntelliSense muestra una lista de los miembros del objeto, como las propiedades, métodos y eventos.  

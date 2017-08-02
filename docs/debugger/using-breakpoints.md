@@ -56,11 +56,11 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ##  <a name="BKMK_Overview"></a> Establecer un punto de interrupción de función en código fuente  
  Para establecer un punto de interrupción de función, haga clic en el margen izquierdo de un archivo de código fuente o coloque el cursor en una línea de código y presione F9. El punto de interrupción aparece como un punto rojo en el margen izquierdo y la línea de código se muestra coloreada:  
   
- ![Establecer un punto de interrupción](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Establecer un punto de interrupción](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
  Cuando se ejecuta este código en el depurador, la ejecución se detiene al alcanzar el punto de interrupción y antes de ejecutarse el código de esa línea. La línea de código fuente aparece coloreada de amarillo:  
   
- ![Ejecución de punto de interrupción detenida](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Ejecución de punto de interrupción detenida](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
   
  En este punto, el valor de `testInt` sigue siendo 1.  
   

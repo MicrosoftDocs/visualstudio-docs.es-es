@@ -38,7 +38,7 @@ caps.handback.revision: 46
   
 -   [Exponer código que no se encuentra en una clase de elemento host](#NonHostItem)  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Exponer código en una clase de elemento host  
  Para permitir que el código de VBA llame al código de Visual Basic en una clase de elemento host, establezca la propiedad **EnableVbaCallers** del elemento host en **True**.  

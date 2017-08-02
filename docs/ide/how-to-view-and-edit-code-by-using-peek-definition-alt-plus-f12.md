@@ -50,7 +50,7 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
   
      En esta ilustración se muestra la ventana **Ver la definición** para un método denominado `Print()`:  
   
-     ![Ventana de Peek](../ide/media/peekwindow.png "PeekWindow")  
+     ![Ventana de Peek](~/ide/media/peekwindow.png "PeekWindow")  
   
      La ventana de definición aparece debajo de la línea `printer.Print("Hello World!")` en el archivo original. La ventana no oculta ningún código del archivo original. Las líneas que siguen a la llamada `printer.Print("Hello World!")` aparecen bajo la ventana de definición.  
   
@@ -64,13 +64,13 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
   
 -   Si ya tiene abierta una ventana **Ver la definición**, puede llamar a **Ver la definición** de nuevo en el código de esa ventana. Se abre otra ventana de definición. Aparece un conjunto de puntos de ruta de navegación junto a la pestaña de la ventana de definición, que se puede utilizar para navegar entre las ventanas de definición. La información sobre herramientas de cada punto muestra el nombre de archivo y la ruta acceso del archivo de definición que el punto representa.  
   
-     ![Ventana de Peek dentro de una ventana de Peek](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
+     ![Ventana de Peek dentro de una ventana de Peek](~/ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Para usar Ver la definición con varios resultados  
   
 -   Si usa **Ver la definición** en código que tiene varias definiciones (por ejemplo, clases parciales), aparece una lista de resultados a la derecha de la vista de definición de código. Puede elegir cualquier resultado de la lista para mostrar su definición.  
   
-     ![Ventana de Peek de varios resultados](../ide/media/peekmultiple.png "PeekMultiple")  
+     ![Ventana de Peek de varios resultados](~/ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Para editar dentro de la ventana Ver la definición  
   

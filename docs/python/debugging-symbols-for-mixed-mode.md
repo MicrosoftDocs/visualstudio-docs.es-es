@@ -46,13 +46,13 @@ Es posible que Visual Studio le solicite los símbolos cuando los necesite, norm
 - **Abrir cuadro de diálogo de configuración de símbolos** abre el cuadro de diálogo **Opciones** en la pestaña **Depuración > Símbolos**.
 - **Descargar símbolos para el intérprete** abre esta página de documentación actual, en cuyo caso, seleccione **Herramientas > Opciones** y navegue hasta la pestaña **Depuración > Símbolos** para continuar.
 
-    ![Solicitud de símbolos del depurador en modo mixto](media/mixed-mode-debugging-symbols-required.png)
+    ![Solicitud de símbolos del depurador en modo mixto](~/python/media/mixed-mode-debugging-symbols-required.png)
 
 ## <a name="downloading-symbols"></a>Descargar símbolos
 
 - Python 3.5 y versiones posteriores: adquiera los símbolos de depuración a través del programa de instalación de Python. Seleccione **Instalación personalizada**, haga clic en **Siguiente** para acceder a **Opciones avanzadas** y después active las casillas **Download debugging symbols** (Descargar símbolos de depuración) y **Download debug binaries** (Descargar archivos binarios de depuración):
 
-    ![Instalador de Python 3.x que incluye símbolos de depuración](media/mixed-mode-debugging-symbols-installer35.png)
+    ![Instalador de Python 3.x que incluye símbolos de depuración](~/python/media/mixed-mode-debugging-symbols-installer35.png)
 
     Los archivos de símbolos (`.pdb`) se encuentran en la carpeta raíz de la instalación (los archivos de símbolos para módulos individuales también se encuentran en la carpeta `DLLs`). Por este motivo, Visual Studio los encontrará automáticamente y no se necesita realizar ningún paso adicional.
 
@@ -71,7 +71,7 @@ Si ha descargado los símbolos por separado, siga estos pasos para hacer que Vis
     
 1. Haga clic en el botón Agregar de la barra de herramientas (descrito a continuación), escriba la carpeta donde ha expandido los símbolos descargados (que es donde se encuentra `python.pdb`, por ejemplo `c:\python34\Symbols`, como se muestra a continuación) y haga clic en **Aceptar**. 
 
-    ![Opciones de símbolos para el depurador en modo mixto](media/mixed-mode-debugging-symbols.png)
+    ![Opciones de símbolos para el depurador en modo mixto](~/python/media/mixed-mode-debugging-symbols.png)
 
 1. Durante una sesión de depuración, es posible que Visual Studio también le pida la ubicación de un archivo de origen para el intérprete de Python. Si por ejemplo los ha descargado desde [python.org/downloads](https://www.python.org/downloads), entonces también puede apuntar hacia ellos.
 

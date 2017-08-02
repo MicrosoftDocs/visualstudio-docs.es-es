@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  En la tabla siguiente se muestra ejemplos de cómo se deben escalar imágenes a PPP correspondiente factores de escala. Las imágenes en verde indican nuestra recomendación a partir de Visual Studio 2013 \(ajuste de PPP de 100 a 200%\):  
   
- ![Escalado de problemas de PPP](../extensibility/media/dpi-issues-scaling.png "DPI Issues Scaling")  
+ ![Escalado de problemas de PPP](~/extensibility/media/dpi-issues-scaling.png "DPI Issues Scaling")  
   
 ## Problemas de diseño  
  Problemas comunes de diseño pueden evitarse principalmente manteniendo puntos en la escala de la interfaz de usuario y relativos a otro, en lugar de mediante ubicaciones absolutas \(específicamente, en unidades de píxeles\). Por ejemplo:  

@@ -41,7 +41,7 @@ El modelo de automatización consta de un conjunto de objetos en la que puede es
 ## <a name="objects-in-the-automation-model"></a>Objetos del modelo de automatización  
  El modelo de automatización consta de grupos de objetos que controlan aspectos principales del entorno común relacionados. El siguiente es un diagrama que muestra el amplio conjunto de objetos que constituyen el modelo de automatización.  
   
- ![Gráfico de objetos de automatización de Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
+ ![Gráfico de objetos de automatización de Visual Studio](~/extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Objetos de automatización de Visual Studio  
   
  Para obtener más información, consulte [ampliar el entorno de Visual Studio](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  

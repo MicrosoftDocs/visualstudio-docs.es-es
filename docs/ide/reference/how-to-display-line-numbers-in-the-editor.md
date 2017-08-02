@@ -56,7 +56,7 @@ Puede mostrar u ocultar la numeración de las líneas del código.
   
 1.  En la barra de menús, elija **Herramientas**, **Opciones**. Expanda el nodo de **Editor de texto** y, después, seleccione el nodo del lenguaje que use o **Todos los lenguajes** para activar los números de línea en todos los lenguajes. También puede escribir el **número de línea** en el cuadro **Inicio rápido**.  
   
-2.  ![Opciones para mostrar números de línea en el editor](../../ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")  
+2.  ![Opciones para mostrar números de línea en el editor](~/ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
 >  Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.  

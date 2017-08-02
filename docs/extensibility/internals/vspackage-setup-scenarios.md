@@ -38,7 +38,7 @@ Es importante diseñar al instalador de VSPackage flexibilidad. Por ejemplo, deb
 ## Escenario 1: Compartir VSPackage  
  En este escenario, un VSPackage compartido \(binario único que admite varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\) se incluye en un paquete de Windows Installer. Registrar con cada versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se controla mediante las características seleccionables por el usuario. También significa que cuando se asigna para separar las características, cada componente se puede seleccionar individualmente para la instalación o desinstalación, colocar el usuario en el control de integrar VSPackage en diferentes versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. \(Consulte [características de Windows Installer](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) para obtener más información sobre el uso de características de paquetes de Windows Installer.\)  
   
- ![Gráfico VS Shared VSPackage](../../extensibility/internals/media/vs_sharedpackage.png "VS\_SharedPackage")  
+ ![Gráfico VS Shared VSPackage](~/extensibility/internals/media/vs_sharedpackage.gif "VS\_SharedPackage")  
 Instalador de VSPackage compartido  
   
  Como se muestra en la ilustración, los componentes compartidos se convierten en parte de la característica Feat\_Common, que siempre está instalada. Hacer visible las características Feat\_VS2002 y Feat\_VS2003, los usuarios pueden elegir durante la instalación en las versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que desean integrar VSPackage. Los usuarios también pueden utilizar el modo de mantenimiento de Windows Installer para agregar o quitar características, que en este caso se agrega o quita la información de registro de VSPackage de diferentes versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -52,7 +52,7 @@ Instalador de VSPackage compartido
 > [!CAUTION]
 >  Cada vez que un paquete VSPackage se comparte entre varias versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], es esencial que las versiones posteriores de VSPackage mantengan la compatibilidad con versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Cuando no se puede mantener la compatibilidad con versiones anteriores, debe utilizar VSPackages side\-by\-side y privada. Para obtener más información, consulta [Compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
- ![Imagen VS Shared VS Package Update](../../extensibility/internals/media/vs_sharedpackageupdate.png "VS\_SharedPackageUpdate")  
+ ![Imagen VS Shared VS Package Update](~/extensibility/internals/media/vs_sharedpackageupdate.gif "VS\_SharedPackageUpdate")  
 Compartir el instalador de actualización de VSPackage  
   
  Este escenario presenta a un nuevo instalador de VSPackage, aprovechando de soporte técnico de Windows Installer para actualizaciones menores. Los usuarios simplemente instalen la versión 1.1 y actualiza la versión 1.0. Sin embargo, no es necesario tener la versión 1.0 en el sistema. El mismo programa de instalación instalará la versión 1.1 en un sistema sin versión 1.0. La ventaja de proporcionar actualizaciones menores de esta manera es que no es necesario completar el trabajo de desarrollo de un instalador de actualización y un producto completo. Un instalador realiza dos tareas. Una revisión de seguridad o un service pack es posible que en su lugar, aprovechar las revisiones de Windows Installer. Para obtener más información, consulte [aplicación de revisiones y actualizaciones](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
@@ -60,7 +60,7 @@ Compartir el instalador de actualización de VSPackage
 ## Escenario 3: Side\-by\-Side VSPackage  
  Este escenario presenta dos instaladores de VSPackage, uno para cada versión de Visual Studio .NET 2003 y [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Cada instalador instala un side\-by\-side o privado, VSPackage \(uno específicamente creado e instalado en una versión determinada de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\). Cada paquete VSPackage que se encuentra en su propio componente. Por consiguiente, cada uno puede servicio individualmente con revisiones o mantenimiento libera. Dado que la DLL de VSPackage ahora es específica de la versión, es seguro incluir su información de registro en el mismo componente como el archivo DLL.  
   
- ![Gráfico VS Side&#45;by&#45;Side VS Package](../../extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
+ ![Gráfico VS Side&#45;by&#45;Side VS Package](~/extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
 Instalador de VSPackage Side\-by\-side  
   
  Cada instalador también incluye código que se comparte entre los dos instaladores. Si está instalado el código compartido en una ubicación común, instalar ambos archivos .msi se instalará el código compartido sólo una vez. El segundo instalador acaba incrementa un recuento de referencias en el componente. El recuento de referencias garantiza que si uno de los VSPackages se desinstala, el código compartido permanecerá para otro VSPackage. Si el segundo VSPackage se desinstala también se quitará el código compartido.  
@@ -70,7 +70,7 @@ Instalador de VSPackage Side\-by\-side
   
  En este caso, el VSPackage es un VSPackage administrado instalado en la caché de ensamblados global \(GAC\). Cuando se regenera, que incluye la revisión de seguridad, debe cambiar la parte del número de revisión del número de versión del ensamblado. La información de registro para el nuevo número de versión de ensamblado sobrescribe la versión anterior, causando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para cargar el ensamblado fijo.  
   
- ![Gráfico VS Side&#45;by&#45;Side VS Package Update](../../extensibility/internals/media/vs_sbys_packageupdate.png "VS\_SbyS\_PackageUpdate")  
+ ![Gráfico VS Side&#45;by&#45;Side VS Package Update](~/extensibility/internals/media/vs_sbys_packageupdate.gif "VS\_SbyS\_PackageUpdate")  
 Instalador de actualización de VSPackage Side\-by\-side  
   
  **Nota** para obtener más información sobre la implementación de ensamblados en paralelo, vea [simplifica la implementación y resolver infierno de DLL con .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).  

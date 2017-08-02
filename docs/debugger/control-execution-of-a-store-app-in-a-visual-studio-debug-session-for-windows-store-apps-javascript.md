@@ -85,7 +85,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Establezca un punto de interrupción.** Configure un punto de interrupción en la instrucción `callTrack = "module function";` que se produce justo después de la llamada a `app.start()`. Seleccione la línea en el medianil sombreado del editor de código fuente \(teclado: sitúe el cursor en la línea y presione la tecla **F9**\).  
   
-     ![Establecer un punto de interrupción en example1](../debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
+     ![Establecer un punto de interrupción en example1](~/debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
   
      El icono de punto de interrupción aparece en el medianil.  
   
@@ -93,13 +93,13 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
      La aplicación comienza a ejecutarse y suspende la ejecución inmediatamente antes de la instrucción donde configuró el punto de interrupción. El icono de la línea actual que aparece en el margen identifica su ubicación. La instrucción actual se resalta.  
   
-     ![Ejecutar hasta el punto de interrupción](../debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
+     ![Ejecutar hasta el punto de interrupción](~/debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
   
      Ahora controla la ejecución de la aplicación y puede examinar el estado del programa a medida que recorre paso a paso sus instrucciones.  
   
 3.  **Depure paso a paso por instrucciones la función.** En el menú **Depurar**, seleccione **Paso a paso por instrucciones** \(teclado: **F11**\).  
   
-     ![Ir a una línea de código](../debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
+     ![Ir a una línea de código](~/debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
   
      Observe que el depurador se mueve a la siguiente línea, que es una llamada a la función `example1`. Seleccione **Depurar paso a paso** de nuevo. El depurador se mueve a la primera línea de código de la función `example1`. La línea resaltada no se ha ejecutado, pero la función se ha cargado en la pila de llamadas y se ha asignado la memoria para las variables locales.  
   
@@ -113,7 +113,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 5.  **Vea los valores de la variable en la información sobre datos.** Siga con la depuración paso a paso por las instrucciones de `example1` hasta que haya alcanzado el punto de salida. El depurador resalta la llave de cierre de la función. Al pausar el mouse en un nombre de variable, el nombre y el valor de la variable se muestran en la información sobre datos.  
   
-     ![Ver valores variables en la información sobre datos](../debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
+     ![Ver valores variables en la información sobre datos](~/debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
   
 6.  **Agregue una inspección para la variable callTrack.** La variable `callTrack` se usa en esta guía de inicio rápido para mostrar las funciones a las que se llama en los ejemplos. Para facilitar la visualización del valor de la variable, es necesario que se agregue a una ventana Inspección. Seleccione el nombre de la variable en el editor y luego elija **Agregar inspección** en el menú contextual.  
   
@@ -139,7 +139,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Llame a la función example2 de la función de módulo.** Edite la función `module` y reemplace la línea siguiente a `var callTrack = "module function"` por `example2();`.  
   
-     ![Llamar a la función example2](../debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
+     ![Llamar a la función example2](~/debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
   
 2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** \(teclado: F5\). El depurador suspende la ejecución en el punto de interrupción.  
   
@@ -147,7 +147,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 4.  **Depure paso a paso por instrucciones example2 y example2\_a.** Seleccione la tecla **F11** para depurar paso a paso por la función `example2`. Siga con la depuración paso a paso por las instrucciones `example2` hasta llegar a la línea `var x = example2_a();`. De nuevo, depure paso a paso por esta línea para desplazarse al punto de entrada de `example2_a`. Continúe con la depuración paso a paso por instrucciones de cada instrucción de `example2_a` hasta volver a `example2`.  
   
-     ![Saltar una función](../debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
+     ![Saltar una función](~/debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
   
 5.  **epure una función paso a paso por procedimientos.** Tenga en cuenta que la siguiente línea de `example2`, `var y = example2_a();` es básicamente la misma que la línea anterior. Puede depurarla paso a paso por procedimientos sin ningún problema. Seleccione la tecla **F10** para pasar de la reanudación de `example2` a esta segunda llamada a `example2_a`. Tenga en cuenta que la cadena `callTrack` indica que la función `example2_a` se ejecutó dos veces.  
   
@@ -167,7 +167,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Llame a la función example3 de la función de módulo.** Edite la función `module` y reemplace la línea siguiente a `var callTrack = "module function";` por la línea `example3();`.  
   
-     ![Llamada de example3](../debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
+     ![Llamada de example3](~/debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
   
 2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración seleccionando **Iniciar depuración** en el menú **Depurar** \(teclado: **F5**\). El depurador suspende la ejecución en el punto de interrupción de la función `module`.  
   
@@ -177,7 +177,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
      Seleccione la casilla **Condición** y escriba `i == 500;` en el cuadro de texto. Seleccione la opción **Es true** y seleccione **Aceptar**. El punto de interrupción permite comprobar el valor en la iteración número 500 del bucle `for`. El aspa blanca le permite distinguir el icono de un punto de interrupción condicional.  
   
-     ![Icono de punto de interrupción condicional](../debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
+     ![Icono de punto de interrupción condicional](~/debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
   
 5.  **Ejecute hasta el punto de interrupción.** En el menú **Depurar**, seleccione **Continuar** \(teclado: **F5**\). Pause en `i` para confirmar que el valor actual de `i` es 500. Tenga en cuenta también que la variable `s` se representa como una línea única y que es mucho más larga que la ventana de información sobre datos.  
   
@@ -211,7 +211,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Agregue un objeto de matriz a la función de módulo.** Edite la función `module` y reemplace la línea siguiente a `var callTrack = "module function"` por `var myArray = new Array(1, 2, 3);`  
   
-     ![Definición de myArray](../debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
+     ![Definición de myArray](~/debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
   
 2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración seleccionando **Iniciar depuración** en el menú **Depurar** \(teclado: **F5**\). El depurador suspende la ejecución en el punto de interrupción. Depure paso a paso por instrucciones hasta la línea.  
   
@@ -248,7 +248,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Llame a la función example4 desde la función de módulo.** Edite la función `module` y reemplace la línea siguiente a `var callTrack = "module function"` por `example4()`:  
   
-     ![Llamada de example4](../debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
+     ![Llamada de example4](~/debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
   
 2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración seleccionando **Iniciar depuración** en el menú **Depurar** \(teclado: **F5**\). El depurador suspende la ejecución en el punto de interrupción.  
   
@@ -284,7 +284,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
 1.  **Llame a la función example5 de la función de módulo.** Edite la función `module` y reemplace la línea siguiente a `var callTrack = "module function";` por la línea `example5();`.  
   
-     ![Llamada de example5](../debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
+     ![Llamada de example5](~/debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
   
 2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración seleccionando **Iniciar depuración** en el menú **Depurar** \(teclado: **F5**\). El depurador suspende la ejecución en el punto de interrupción de la función de módulo.  
   

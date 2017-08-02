@@ -26,7 +26,7 @@ caps.handback.revision: 24
 # Iniciar una sesi&#243;n de depuraci&#243;n para aplicaciones de la Tienda en Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  En este tema se describe cómo iniciar una sesión de depuración para las aplicaciones de la Tienda Windows compiladas en JavaScript y HTML5. Puede iniciar la depuración presionando una sola tecla o puede configurar la sesión de depuración para situaciones concretas y eligir la forma de iniciar la aplicación.  
   
@@ -67,7 +67,7 @@ caps.handback.revision: 24
 -   [Asociar el depurador](#BKMK_Attach_the_debugger)  
   
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a> Iniciar la depuración de manera sencilla  
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
 1.  Abrir la solución de la aplicación en Visual Studio.  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 24
   
 3.  Presione F5.  
   
- ![Se aplica solo a Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Se aplica solo a Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Visual Studio compila e inicia la aplicación con el depurador adjunto. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza. Para obtener más información, consulte [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
@@ -97,7 +97,7 @@ caps.handback.revision: 24
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Elegir el destino de implementación  
  Puede implementar y depurar una aplicación en el equipo de Visual Studio, en el simulador de Visual Studio de la máquina local o en una máquina remota. Elija el destino de la lista **Depurador para iniciar** en la página de propiedades **Depuración** del proyecto.  
   
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Para las aplicaciones de la Tienda Windows, elija una de estas opciones de la lista **Dispositivo de destino**:  
   
@@ -118,7 +118,7 @@ caps.handback.revision: 24
     > [!NOTE]
     >  El cuadro de diálogo Seleccionar conexión del depurador remoto muestra las máquinas que están en la subred local y las que están conectadas directamente a la máquina de Visual Studio mediante un cable Ethernet. Para especificar otra máquina, escriba el nombre en el cuadro **Nombre de la máquina**.  
   
- ![Se aplica solo a Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Se aplica solo a Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Para las aplicaciones de la Tienda Windows, elija **Dispositivo** o uno de los emuladores de la lista **Dispositivo de destino**.  
   
@@ -145,7 +145,7 @@ caps.handback.revision: 24
 -   Elija **Sí** para iniciar la aplicación inmediatamente.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Opcional\) Deshabilitar bucles invertidos de red  
- ![Se aplica solo a Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Se aplica solo a Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Por motivos de seguridad, las aplicaciones de la Tienda Windows instaladas de forma estándar no pueden realizar llamadas de red al dispositivo en las que están instaladas. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar la aplicación a la Tienda Windows, debe probar la aplicación sin la exención.  
   

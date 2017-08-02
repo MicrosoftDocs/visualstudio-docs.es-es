@@ -44,7 +44,7 @@ caps.handback.revision: 101
   
 -   [Agregar controles de formularios Windows Forms a documentos](#WindowsForms).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Procedimiento: agregar controles a una superficie de documento en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Procedimiento: agregar controles a una superficie de documento en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="ControlsCollection"></a> Administrar controles en tiempo de ejecución mediante las colecciones de controles  
  Para agregar, obtener o quitar controles en tiempo de ejecución, use los métodos auxiliares de los objetos <xref:Microsoft.Office.Tools.Excel.ControlCollection> y <xref:Microsoft.Office.Tools.Word.ControlCollection>.  

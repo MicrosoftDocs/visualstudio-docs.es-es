@@ -35,7 +35,7 @@ Puede proporcionar más de una vista de un documento creando datos de documento 
 ## Determinar datos de Si es Abrir de Already  
  La tabla en el documento \(RDT\) de la pista \(IDE\) de ayuda del entorno de desarrollo integrado si los datos del documento está abierto, como se muestra en el siguiente diagrama.  
   
- ![Gráfico DocDataView](../extensibility/media/docdataview.png "Docdataview")  
+ ![Gráfico DocDataView](~/extensibility/media/docdataview.gif "Docdataview")  
 Varias vistas  
   
  De forma predeterminada, cada vista \(objeto de vista del documento\) se contiene en su propio marco de ventana \(<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>\).  Como se indicó ya, sin embargo, datos de documento puede aparecer en varias vistas.  Para habilitar esto, Visual Studio comprueba el RDT para determinar si el documento en cuestión ya está abierto en un editor.  Si el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> para crear el editor, un valor devuelto no NULL en el parámetro de `punkDocDataExisting` indica que el documento está abierto en otro editor.  Para obtener más información sobre cómo funciona el RDT, vea [Tabla de documentos de ejecución](../extensibility/internals/running-document-table.md).  

@@ -70,24 +70,24 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 
 4.  Elija **Uso de memoria** con la opción **Seleccionar herramientas** en la barra de herramientas.
 
-     ![Mostrar herramientas de diagnóstico](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Mostrar herramientas de diagnóstico](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
 5.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
-     ![Pestaña Resumen de herramientas de diagnóstico de](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Pestaña Resumen de herramientas de diagnóstico de](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Dado que la recopilación de datos de memoria puede afectar al rendimiento de depuración de las aplicaciones nativas o de modo mixto, las instantáneas de memoria están deshabilitadas de forma predeterminada. Para habilitar las instantáneas en aplicaciones nativas o de modo mixto, inicie una sesión de depuración (tecla de método abreviado: **F5**). Cuando aparezca la ventana **Herramientas de diagnóstico** , seleccione la pestaña Uso de memoria y luego elija **Generación de perfiles de montón**.  
      >   
-     >  ![Habilitar las instantáneas](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+     >  ![Habilitar las instantáneas](~/profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
      >  Detenga la depuración (tecla de método abreviado: **Mayús + F5**) y reiníciela.  
 
 6.  Para tomar una instantánea al comienzo de la sesión de depuración, elija **Instantánea** en la barra de herramientas reducida **Uso de memoria**. (Puede ser útil para establecer un punto de interrupción aquí también.)
 
-    ![Tomar instantánea](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
+    ![Tomar instantánea](~/profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
      >  Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
@@ -105,7 +105,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 ## <a name="analyze-memory-usage-data"></a>Analizar el uso de memoria
 Las filas de la tabla de resumen Uso de memoria enumeran las instantáneas que se tomaron durante la sesión de depuración y proporcionan vínculos a vistas más detalladas.
 
-![Tabla de resumen de memoria](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tabla de resumen de memoria](~/profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  El nombre de las columnas dependen del modo de depuración seleccionado en las propiedades del proyecto: .NET, nativo o mixto (.NET y nativo).  
   
@@ -117,7 +117,7 @@ Cuando se toman varias instantáneas, las celdas de la tabla de resumen incluyen
 
 Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un informe detallado del uso de memoria:  
 
--   Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio a la izquierda de la flecha (![Aumento del uso de memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento del uso de memoria")). Una flecha roja indica un aumento en el uso de memoria, mientras que una flecha verde indica una disminución.
+-   Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio a la izquierda de la flecha (![Aumento del uso de memoria](~/profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento del uso de memoria")). Una flecha roja indica un aumento en el uso de memoria, mientras que una flecha verde indica una disminución.
 
     > [!TIP]
     >  Para ayudar a identificar problemas de memoria más rápidamente, los informes de diferencias se ordenan por tipos de objeto que más aumentaron en número total (haga clic en el vínculo de cambio en la columna **Objetos (dif.)**) o que más aumentaron en el tamaño total del montón (haga clic en el vínculo de cambio en la columna **Tamaño de montón (dif.)**).
@@ -139,7 +139,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
   
  ![Vista de informe de tipos de referencia administrados](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- Para mostrar las instancias de un tipo seleccionado en el panel superior, seleccione el icono ![Icono de instancia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
+ Para mostrar las instancias de un tipo seleccionado en el panel superior, seleccione el icono ![Icono de instancia](~/profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
   
  ![Vista de instancias](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
@@ -152,7 +152,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
   
  La **Vista de tipos** muestra el número y el tamaño de los tipos de la instantánea.  
   
--   Elija el icono de instancias (![icono de instancia en la columna Tipo de objeto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) de un tipo seleccionado para mostrar información sobre los objetos del tipo seleccionado en la instantánea.  
+-   Elija el icono de instancias (![icono de instancia en la columna Tipo de objeto](~/profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) de un tipo seleccionado para mostrar información sobre los objetos del tipo seleccionado en la instantánea.  
   
      La vista **Instancias** muestra cada instancia del tipo seleccionado. Al seleccionar una instancia se muestra la pila de llamadas que produjo la creación de la instancia en el panel **Pila de llamadas de asignación** .  
   
@@ -170,7 +170,7 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
   
 -   Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.  
   
-     ![Elegir una instantánea en la lista Comparar con](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+     ![Elegir una instantánea en la lista Comparar con](~/profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
  El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:  
   

@@ -58,7 +58,7 @@ caps.handback.revision: 64
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Enlazar datos a los controles de contenido de Word 2007 mediante Visual Studio Tools para el sistema Office \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Enlazar datos a los controles de contenido de Word 2007 mediante Visual Studio Tools para el sistema Office \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Información general sobre los controles de contenido  
  Los controles de contenido proporcionan una interfaz de usuario que está optimizada para la entrada e impresión de datos.  Cuando se agrega un control de contenido a un documento, este control se identifica por un borde, un título o un texto provisional que puede proporcionar instrucciones al usuario.  El borde y el título del control no aparecen en las versiones impresas del documento.  

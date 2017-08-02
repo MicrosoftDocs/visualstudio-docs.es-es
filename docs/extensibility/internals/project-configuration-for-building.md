@@ -31,7 +31,7 @@ La lista de configuraciones de soluciones de una solución dada se administra me
   
  Cuando el usuario selecciona el **selección múltiple** elemento en la lista desplegable de configuración, el entorno muestra un cuadro de diálogo que proporciona la lista de las configuraciones disponibles.  
   
- ![Varias configuraciones](../../extensibility/internals/media/vsmultiplecfgs.png "vsMultipleCfgs")  
+ ![Varias configuraciones](~/extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Varias configuraciones  
   
  En este cuadro de diálogo, el usuario puede seleccionar una o varias configuraciones. Una vez seleccionado, los valores de propiedad que se muestra en el cuadro de diálogo páginas de propiedades reflejan la intersección de los valores de las configuraciones seleccionadas.  
@@ -40,7 +40,7 @@ Varias configuraciones
   
  Dependencias del proyecto y el orden de compilación son independientes de configuración de soluciones: es decir, sólo puede establecer el árbol de una dependencia para todos los proyectos de la solución. Con el botón secundario en la solución o proyecto y seleccionando el **dependencias del proyecto** o **orden de generación del proyecto** opción abre la **dependencias del proyecto** cuadro de diálogo. También se puede abrir desde el **proyecto** menú.  
   
- ![Dependencias del proyecto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
+ ![Dependencias del proyecto](~/extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Dependencias del proyecto  
   
  Dependencias del proyecto determinan el orden en que se generan los proyectos. Utilice la ficha orden de generación en el cuadro de diálogo para ver el orden exacto en el que compilar proyectos en una solución y use la ficha dependencias para modificar el orden de generación.  

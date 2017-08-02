@@ -111,7 +111,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
   
  Los elementos `DisplayString` y `ArrayItems` se usan en la vista predeterminada y en la vista simple, mientras que los elementos `[size]` y `[capacity]` están excluidos de la vista simple. Puede usar el especificador de formato **,view** para especificar una vista alternativa. En la ventana **Inspección**, especifique la vista simple como **vec,view\(simple\)**:  
   
- ![Ventana Inspección con vista sencilla](../debugger/media/watch-simpleview.png "Watch\-SimpleView")  
+ ![Ventana Inspección con vista sencilla](~/debugger/media/watch-simpleview.png "Watch\-SimpleView")  
   
 ##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnosticar errores de Natvis  
  Puede usar los diagnósticos de Natvis para solucionar problemas de sintaxis y errores de análisis. Cuando el depurador detecta errores en una entrada de visualización, omite los errores y muestra el tipo en formato sin procesar o elige otra visualización adecuada. Para comprender el motivo por el que se omite una determinada entrada de visualización y para ver cuáles son los errores subyacentes, puede activar la opción de diagnósticos de Natvis en **Herramientas \/ Opciones \/ Depuración \/ Ventana Salida \/ Mensajes de diagnóstico de Natvis \(solo en C\+\+\)**. Los errores se muestran en la ventana **Salida**.  

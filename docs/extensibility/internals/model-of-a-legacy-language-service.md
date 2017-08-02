@@ -32,7 +32,7 @@ Un servicio de lenguaje define elementos y características para un idioma concr
   
  El gráfico conceptual siguiente muestra un modelo de un servicio de básico.  
   
- ![Gráfico del modelo de servicio de lenguaje](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Gráfico del modelo de servicio de lenguaje](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Modelo básico del servicio de lenguaje  
   
  Los hosts de la ventana de documento *la vista del documento* del editor, en cuyo caso el publicador de la base de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  La vista del documento y el búfer de texto pertenecen al editor.  Estos objetos ejecutan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de una ventana de documento especializada denominada *una ventana de código*.  La ventana de códigos se contiene en un objeto de<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> creado y controla el IDE.  

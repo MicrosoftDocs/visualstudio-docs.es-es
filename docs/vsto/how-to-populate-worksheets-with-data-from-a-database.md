@@ -30,7 +30,7 @@ caps.handback.revision: 38
   
  En el ejemplo siguiente se muestra cómo agregar controles enlazados a datos a proyectos en el nivel del documento utilizando un diseñador.  Para obtener un ejemplo que muestra cómo agregar controles enlazados a datos a proyectos de nivel de aplicación en tiempo de ejecución, vea [Tutorial: enlace de datos complejos en el proyecto de complemento de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Transfer Data Into an Excel Worksheet?](http://go.microsoft.com/fwlink/?LinkID=130277) y [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Transfer Data Into an Excel Worksheet?](http://go.microsoft.com/fwlink/?LinkID=130277) y [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## Agregar un control enlazado a datos a una hoja de cálculo en tiempo de diseño  
   

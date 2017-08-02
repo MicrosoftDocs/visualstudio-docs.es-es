@@ -105,22 +105,22 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
  La siguiente ilustración muestra el rombo de guía para las ventanas de documento que solo se pueden acoplar dentro del marco de edición:  
 
- ![Rombo de guía de ventana del documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![Rombo de guía de ventana del documento](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  Las ventanas de herramientas se pueden fijar a un lado de un marco del IDE o en el marco de edición. Cuando se arrastra una ventana de herramientas a otra ubicación, aparece un rombo de guía para ayudarle a volver a acoplar la ventana.  
 
  Rombo de guía para las ventanas de herramientas  
 
- ![Rombos de guía de ventanas de herramientas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![Rombos de guía de ventanas de herramientas](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  La siguiente ilustración muestra como se acopla el Explorador de soluciones en una nueva ubicación, lo que se muestra en el área sombreada azul:  
 
- ![Acoplar el Explorador de soluciones en una nueva posición](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
+ ![Acoplar el Explorador de soluciones en una nueva posición](~/ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Cerrar y ocultar automáticamente las ventanas de herramientas  
  Puede cerrar una ventana de herramientas haciendo clic en la X situada en la esquina superior derecha de la barra de título. Para volver a abrir la ventana, utilice su comando de menú o un método abreviado de teclado. Las ventanas de herramientas admiten una característica denominada Ocultar automáticamente, lo que hace que una ventana se deslice fuera de la vista cuando se utiliza una ventana diferente. Cuando una ventana se oculta automáticamente, su nombre aparece en una pestaña situada en el borde del IDE. Para utilizar la ventana de nuevo, haga clic sobre la pestaña para que vuelva a aparecer la ventana.  
 
- ![Ocultar automáticamente](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
+ ![Ocultar automáticamente](~/ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
 >  Para establecer si Ocultar automáticamente se aplica a las ventanas de herramientas por separado o como grupos acoplados, active o desactive la opción **El botón Ocultar automáticamente afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones** . Para obtener más información, consulta [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  
@@ -186,7 +186,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 1.  Puede quitar, cambiar el nombre o reordenar el diseño personalizado pulsando **Ventana > Administrar diseños de ventana**. Si mueve un diseño, el enlace de teclado se ajusta automáticamente para reflejar la nueva posición en la lista. Los enlaces no se pueden modificar de otra forma, por lo que se puede almacenar un máximo de 10 diseños a la vez.  
 
-     ![Administrar diseños de ventana](../ide/media/managewindowlayouts.png "ManageWindowLayouts")  
+     ![Administrar diseños de ventana](~/ide/media/managewindowlayouts.png "ManageWindowLayouts")  
 
      Para recordar el método abreviado de teclado que está asignado a cada diseño, pulse **Ventana > Aplicar diseño de ventana**.  
 

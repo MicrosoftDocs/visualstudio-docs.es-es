@@ -58,17 +58,17 @@ La ventana interactiva de Visual Studio en modo de IPython es un entorno de desa
 
 1. Si todo está configurado correctamente, debería ver algo parecido a esto:
 
-    ![Salida de la configuración de IPython ](media/ipython-repl-01.png)
+    ![Salida de la configuración de IPython ](~/python/media/ipython-repl-01.png)
 
 1. Abra Visual Studio, cambie a la ventana Python Environments (Entornos de Python), en **View > Other Windows > Python Environments** (Ver > Otras ventanas > Entornos de Python), y después seleccione el entorno de Python.
 1. Consulte la pestaña **pip**, donde deben aparecer `IPython` y `matplotlib`. De lo contrario, instálelos.
 1. Seleccione la pestaña **Overview** (Información general) y **Configure interactive options** (Configurar opciones interactivas), defina la opción **Interactive Mode** (Modo interactivo) en IPython y seleccione **OK** (Aceptar):
 
-    ![Establecimiento del modo interactivo en IPython](media/ipython-repl-02.png)
+    ![Establecimiento del modo interactivo en IPython](~/python/media/ipython-repl-02.png)
 
 1. Seleccione **Open interactive window** (Abrir ventana interactiva) para que aparezca la ventana interactiva en modo de IPython con PyLab. Puede ser necesario restablecer la ventana si ha cambiado el modo interactivo:
 
-    ![Ventana interactiva en modo de IPython](media/ipython-repl-03.png)
+    ![Ventana interactiva en modo de IPython](~/python/media/ipython-repl-03.png)
 
 1. Escriba el siguiente código:
 
@@ -80,7 +80,7 @@ La ventana interactiva de Visual Studio en modo de IPython es un entorno de desa
 
 1. Después de escribir la última línea, debe aparecer un gráfico insertado, cuyo tamaño puede modificar si arrastra la esquina inferior derecha.
 
-    ![Gráfico incorporado en la ventana interactiva](media/ipython-repl-04.png)
+    ![Gráfico incorporado en la ventana interactiva](~/python/media/ipython-repl-04.png)
 
 1. En lugar de escribir en el REPL, puede escribir código en el editor, seleccionarlo, hacer clic con el botón derecho y seleccionar el comando **Enviar a Interactive** (Ctrl-E, E). Intente pegar el código siguiente en el editor; selecciónelo con Ctrl-A y envíelo a la ventana interactiva. (Tenga en cuenta que, cuando Visual Studio envía el código a la ventana interactiva, lo hace como una unidad, a fin de evitar que se representen gráficos intermedios o parciales).
 
@@ -105,15 +105,15 @@ La ventana interactiva de Visual Studio en modo de IPython es un entorno de desa
     plt.show()
     ```
 
-    ![Envío de código desde el editor a la ventana interactiva](media/ipython-repl-05.png)
+    ![Envío de código desde el editor a la ventana interactiva](~/python/media/ipython-repl-05.png)
 
 1. Para ver los gráficos fuera de la ventana interactiva, ejecute el código en lugar de utilizar el comando **Depurar > Iniciar sin depurar**.
     
 1. IPython tiene una serie de características útiles, como el escape al shell del sistema, la sustitución de variables, la captura de salidas, etc. Consulte la guía de referencia de IPython para obtener más información:
 
-    ![Escape al shell del sistema](media/ipython-repl-06.png)
+    ![Escape al shell del sistema](~/python/media/ipython-repl-06.png)
 
 1. También puede usar IPython en modo "cuaderno", donde puede utilizar como lienzo cualquier explorador de cualquier sistema operativo. El motor de IPython de back-end puede ser local en el equipo o remoto. Azure admite la ejecución de [IPython en una VM Linux o Windows](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook). Vea también la [versión preliminar de Azure Notebooks](https://notebooks.azure.com) para la aplicación gratuita Jupyter Notebook como servicio en Azure:
 
-    ![Modo cuaderno de IPython](media/ipython-repl-07.png)
+    ![Modo cuaderno de IPython](~/python/media/ipython-repl-07.png)
 

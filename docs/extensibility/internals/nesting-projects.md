@@ -31,7 +31,7 @@ Los desarrolladores de aplicaciones empresariales que utilizan el paquete de VS 
  Puede encontrar un ejemplo de proyectos anidados en el proyecto Example.Nested de C\# de ejemplo.  
   
 ## Ejemplo de proyectos anidados  
- ![Solución de proyectos anidados](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
+ ![Solución de proyectos anidados](~/extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Ejemplo de proyectos anidados  
   
 ## Vea también  

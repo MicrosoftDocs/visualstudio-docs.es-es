@@ -93,7 +93,7 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
      Este es el aspecto de la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
-     ![El emulador ejecutando la aplicación](../cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
+     ![El emulador ejecutando la aplicación](~/cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
   
      Visual Studio inicia el emulador, que tarda unos segundos en cargarse e implementar el código. Cuando la aplicación se inicia, puede establecer puntos de interrupción y usar el depurador para ver el código, examinar los locales e inspeccionar los valores.  
   

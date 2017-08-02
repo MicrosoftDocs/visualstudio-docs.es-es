@@ -88,7 +88,7 @@ Ventanas de herramientas de Visual Studio tienen distintos Estados, algunos de l
   
 -   **Fichas** las ventanas de herramientas se pueden acoplar dentro del documento también. Esto es útil para las ventanas de herramientas de gran tamaño, como el Explorador de objetos, que necesitan más inmobiliaria de acoplamiento con los bordes del marco que permite.  
   
-![Estados de la ventana de herramientas en Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Estados de la ventana de herramientas en Visual Studio
+![Estados de la ventana de herramientas en Visual Studio](~/extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Estados de la ventana de herramientas en Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>Instancia única y varias instancias  
 Las ventanas de herramientas son la única instancia o varias instancias. Algunas ventanas de herramientas de instancia única podrían estar asociados con la ventana de documento activo, mientras que las ventanas de herramientas de varias instancias pueden no tenerlos. Ventanas de herramientas de varias instancias responden a la **ventana &gt; nueva ventana** comando mediante la creación de una nueva instancia de la ventana. La siguiente imagen ilustra una ventana de herramienta que permite el comando nueva ventana cuando se active una instancia de la ventana:  
@@ -339,7 +339,7 @@ En el caso más sencillo, el mecanismo para cambiar entre las agrupaciones es un
   
 El **herramientas &gt; opciones** cuadro de diálogo es un ejemplo de un cuadro de diálogo en capas con un árbol incrustado:  
   
-![Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.
+![Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.](~/extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.
   
 ####  <a name="BKMK_Wizards"></a>Asistentes  
 Asistentes son útiles para dirigir al usuario a través de una secuencia lógica de pasos en la realización de una tarea. Se ofrecen una serie de opciones en paneles secuenciales y el usuario debe seguir a través de cada paso antes de continuar con la siguiente. Una vez que existen suficientes valores predeterminados, el **finalizar** botón está habilitado.  

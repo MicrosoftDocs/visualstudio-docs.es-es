@@ -74,7 +74,7 @@ caps.handback.revision: 30
   
  Para obtener información general sobre cómo funcionan los complementos VSTO, consulte [Arquitectura de complementos de VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada con el tema, consulte [Cómo automatizar PowerPoint desde un complemento de Excel](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada con el tema, consulte [Cómo automatizar PowerPoint desde un complemento de Excel](http://go.microsoft.com/fwlink/?LinkID=130300).  
   
 ### Modelo de programación de complementos de Excel  
  Al crear un proyecto de complemento VSTO de Excel, Visual Studio crea una clase denominada `ThisAddIn`, que es la base de la solución. Esta clase proporciona un punto de partida para escribir el código y expone el modelo de objetos de Excel en el complemento VSTO.  

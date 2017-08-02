@@ -37,7 +37,7 @@ caps.handback.revision: 9
   
 2.  En la barra de menús, elija **Ver** y después elija **Ventana Propiedades**.  
   
-3.  En la ventana de **Propiedades** , elija la propiedad de **Propiedades personalizadas** , y elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\).  
+3.  En la ventana de **Propiedades** , elija la propiedad de **Propiedades personalizadas** , y elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
   
      Aparecerá el cuadro de diálogo **Editor de propiedades**.  
   

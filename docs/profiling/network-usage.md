@@ -58,7 +58,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
  La ventana del informe debería tener un aspecto similar a este:  
   
- ![La ventana Red](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+ ![La ventana Red](~/profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analizando datos  
  Puede analizar el tráfico HTTP capturado mientras se ejecuta la aplicación, o incluso después de cerrarla, seleccionando cualquiera de las operaciones de red que se muestran en la vista de resumen.  

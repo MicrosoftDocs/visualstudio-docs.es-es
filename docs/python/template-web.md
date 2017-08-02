@@ -42,13 +42,13 @@ Python en Visual Studio incluye compatibilidad para desarrollar proyectos web en
 
 Cada plantilla (a la que se accede a través de **Archivo > Nuevo > Proyecto...** ) inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en [Microsoft Azure](http://www.azure.com). Las plantillas se proporcionan para Bottle, Flask y Django, y puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
 
-![Nuevas plantillas de proyecto web](media/template-web-new-project.png)
+![Nuevas plantillas de proyecto web](~/python/media/template-web-new-project.png)
 
 Las plantillas Bottle, Flask y Django incluyen un sitio de inicio con algunas páginas y archivos estáticos. Este código es suficiente para ejecutar y depurar el servidor localmente (donde es necesario obtener algunas configuraciones del entorno) y para implementar en Microsoft Azure (donde se debe proporcionar un objeto de [aplicación WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
 Al crear un proyecto a partir de una plantilla específica del marco, aparecerá un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](python-environments.md#virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
 
-![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](media/template-web-requirements-txt-wizard.png)
+![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](~/python/media/template-web-requirements-txt-wizard.png)
 
 Cuando implemente Microsoft Azure App Service, necesitará seleccionar una versión de Python como una [extensión del sitio](https://aka.ms/PythonOnAppService) e instalar los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo `requirements.txt` cuando se implementa desde Visual Studio, siga los detalles de configuración que se encuentran en [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
@@ -62,7 +62,7 @@ Para una introducción a los proyectos web de Python, consulte el vídeo de yout
 
 Cuando se inicie un proyecto web para la depuración, Visual Studio iniciará el servidor web localmente y abrirá el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y seleccione la pestaña **Iniciador web**:
 
-  ![Propiedades del iniciador web de la plantilla web genérica](media/template-web-launcher-properties.png)
+  ![Propiedades del iniciador web de la plantilla web genérica](~/python/media/template-web-launcher-properties.png)
 
 En el grupo **Depurar**:
 
@@ -124,7 +124,7 @@ Si tiene una configuración para otro marco que desea compartir, o si desea soli
 
 Hay dos formas principales de publicar en Azure App Service. En primer lugar, la implementación a partir del control de código fuente se puede utilizar de la misma manera que para otros lenguajes, como se describe en la [documentación de Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Para publicar directamente desde Visual Studio, haga clic con el botón derecho en el proyecto y seleccione **Publicar**:
 
-![Comando Publicar en el menú contextual de un proyecto](media/template-web-publish-command.png)
+![Comando Publicar en el menú contextual de un proyecto](~/python/media/template-web-publish-command.png)
 
 Después de seleccionar el comando, un asistente le guiará para crear un sitio web o importar la configuración de publicación, obtener una vista previa de archivos modificados y publicar en un servidor remoto.
 
@@ -134,7 +134,7 @@ Para instalar Python en App Service, se recomienda utilizar las [extensiones de 
 
 Una extensión de sitio se puede implementar a través de [Azure Portal](https://portal.azure.com/) mediante la hoja **Herramientas de desarrollo > Extensiones** de su App Service, seleccionando **Agregar** y recorriendo la lista para buscar las correspondientes a Python:
 
-![Agregar la extensión de sitio en Azure Portal](media/template-web-site-extensions.png)
+![Agregar la extensión de sitio en Azure Portal](~/python/media/template-web-site-extensions.png)
 
 Si usa plantillas de implementación de JSON, puede especificar la extensión de sitio como un recurso del sitio:
 
@@ -173,7 +173,7 @@ c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 Cuando se implemente en Azure App Service, el sitio se ejecutará detrás de Microsoft IIS. Para habilitar el sitio para trabajar con IIS, deberá agregar al menos un archivo `web.config`. Hay plantillas disponibles para algunos destinos de implementación comunes que puede obtener haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar > Nuevo elemento... " (consulte el cuadro de diálogo siguiente). Además, se pueden modificar fácilmente para otros usos. Consulte [IIS Configuration Reference](https://www.iis.net/configreference) (Referencia de configuración de IIS) para obtener información sobre la configuración disponible.
 
-![Plantillas de elementos de Azure](media/template-web-azure-items.png)
+![Plantillas de elementos de Azure](~/python/media/template-web-azure-items.png)
 
 Los elementos disponibles incluyen:
 
@@ -186,9 +186,9 @@ Los elementos disponibles incluyen:
 
 Si agrega la plantilla `web.config` de depuración al proyecto y pretende usar la depuración remota de Python, debe publicar el sitio en la configuración "Depurar". Esta configuración es independiente de la configuración de la solución activa actual y siempre tiene como valor predeterminado "Liberar". Para cambiarlo, abra la pestaña **Configuración** y use el cuadro combinado **Configuración** del asistente para publicación (consulte la [documentación de Azure](https://azure.microsoft.com/develop/python/) para más información sobre la creación e implementación en Azure Web Apps):
 
-![Cambio de la configuración de publicación](media/template-web-publish-config.png)
+![Cambio de la configuración de publicación](~/python/media/template-web-publish-config.png)
 
 El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agregará un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Debe utilizar el comando **Publicar** en el proyecto en la nube para implementar en el servicio en la nube; el comando **Publicar** del proyecto de Python seguirá implementando en Web Sites. Consulte [Azure Cloud Service Projects](template-azure-cloud-service.md) (Proyectos de servicio en la nube de Azure) para detalles.
 
-![Convertir en proyecto de servicio de nube de Microsoft Azure, comando](media/template-web-convert-menu.png)
+![Convertir en proyecto de servicio de nube de Microsoft Azure, comando](~/python/media/template-web-convert-menu.png)
 

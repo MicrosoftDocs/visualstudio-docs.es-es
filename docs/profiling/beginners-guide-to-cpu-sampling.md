@@ -90,7 +90,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
  Cada área numerada de la ilustración se corresponde con un paso del procedimiento.  
   
- ![Vista de informe de resumen de muestreo](../profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Vista de informe de resumen de muestreo](~/profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Para analizar datos de muestreo:  
   

@@ -56,7 +56,7 @@ JavaScript no permite explícita escribiendo para las declaraciones de variables
   
  **Opciones de finalización de un objeto que no se puede identificar**  
   
- ![IntelliSense para JavaScript para identificadores](../ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
+ ![IntelliSense para JavaScript para identificadores](~/ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
   
  Puede reemplazar la lista de finalización de un objeto mediante el uso de comentarios de documentación XML o las características de extensibilidad de IntelliSense de JavaScript.  Con estas características, puede proporcionar información de tipo e información de IntelliSense más descriptiva cuando no es posible que de lo contrario disponerse.  Para obtener más información, vea [Extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md) y [Cómo: Crear comentarios de documentación XML de JavaScript](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
   

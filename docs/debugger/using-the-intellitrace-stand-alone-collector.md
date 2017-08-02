@@ -146,7 +146,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
   
 1.  En el servidor de la aplicación, asegúrese de que PowerShell está habilitado. En la mayoría de las versiones de Windows Server, esta característica se puede agregar en la herramienta administrativa **Administrador del servidor**.  
   
-     ![Agregar PowerShell mediante el Administrador de servidores](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
+     ![Agregar PowerShell mediante el Administrador de servidores](~/debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
   
 2.  Instale los cmdlets de PowerShell de IntelliTrace.  
   

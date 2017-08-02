@@ -33,7 +33,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
  La experiencia de instalación de Visual Studio de 2015 ha sido dividida en componentes para que solo tenga que instalar los elementos que necesita. Esto acelera la instalación de muchos escenarios comunes en el desarrollo .NET o Web. Si realiza otro tipo de desarrollo, como desarrollo móvil multiplataforma, o si trabaja en C\+\+ o F\#, elija la instalación **Personalizada** y seleccione los componentes y los SDK opcionales de terceros que necesite. También puede instalar cualquiera de los componentes personalizados más adelante. Por ejemplo, si elige la instalación básica y, a continuación, intente crear un nuevo proyecto de C\+\+, se le pedirá que descargue las herramientas de desarrollo de C\+\+.  
   
- ![Cuadro de diálogo del programa de instalación de Visual Studio de 2015](../ide/media/vs2015_setup_screen.png "VS2015\_Setup\_screen")  
+ ![Cuadro de diálogo del programa de instalación de Visual Studio de 2015](~/ide/media/vs2015_setup_screen.png "VS2015\_Setup\_screen")  
   
 ## Iniciar sesión en varias cuentas  
  Con Visual Studio 2015, la nueva experiencia de inicio de sesión simplificada se diseñó para simplificar en gran medida su acceso a recursos en línea, incluso si tiene varias cuentas de Visual Studio. Al iniciar sesión en Visual Studio, automáticamente se inicia su sesión en todas las instancias de Visual Studio 2015 y Blend en su máquina. Al iniciar sesión, la configuración empieza a transmitirse automáticamente. En Visual Studio 2015, su cuenta se comparte entre funciones para que, siempre que tenga un buen token, pueda obtener acceso a sus cuentas de Visual Studio Team Services desde **Team Explorer** y a recursos y sitios web desde su suscripción de Microsoft Azure desde el Explorador de servidores. Además, podrá ver sus recursos de Azure en el cuadro de diálogo Nuevo proyecto del proyecto para Application Insights y sus cuentas de Azure Mobile, Almacenamiento de Azure, [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) y [desarrollador de Saleforce.com](https://developer.salesforce.com/) en el nuevo cuadro de diálogo **Agregar un servicio conectado**.  
@@ -64,7 +64,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
 ### Aplicaciones Windows universales para cualquier dispositivo con Windows 10  
  Con la Plataforma universal de Windows y nuestro núcleo de Windows, puede ejecutar la misma aplicación de Windows 10 en cualquier dispositivo, desde teléfonos a equipos de escritorio. Cree estas aplicaciones con Visual Studio 2015 y las herramientas de desarrollo de aplicaciones Windows universales.  
   
- ![Plataforma universal de Windows](../cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
+ ![Plataforma universal de Windows](~/cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
   
  Ejecute su aplicación en un teléfono con Windows 10, un equipo de escritorio con Windows 10 o una Xbox. Es el mismo paquete de aplicaciones. Con la introducción del núcleo unificado de Windows 10, un mismo paquete de la aplicación puede ejecutarse en todas las plataformas. Varias plataformas tienen SDK de extensión que puede agregar a su aplicación para aprovechar los comportamientos específicos de cada plataforma. Por ejemplo, un SDK de extensión para móvil controla la pulsación del botón atrás en un teléfono Windows. Si hace referencia a un SDK de extensión en su proyecto, solo tiene que agregar comprobaciones en tiempo de ejecución para comprobar que ese SDK se encuentre disponible en esa plataforma. Así es cómo puede tener el mismo paquete de aplicaciones para todas las plataformas.  
   
@@ -95,7 +95,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
 ## Barra de menús de la Vista previa del dispositivo  
  En los proyectos de la Plataforma universal de Windows, la barra de menús de la vista previa del dispositivo permite comprobar cómo se verá la interfaz de usuario XAML en diversos tamaños de pantalla.  
   
- ![Menú de vista previa del dispositivo](../ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
+ ![Menú de vista previa del dispositivo](~/ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
   
 ## Diagnóstico de gráficos de Visual Studio  
  A partir de Visual Studio 2013, el diagnóstico de gráficos de Visual Studio ha agregado muchas características nuevas, como el análisis de fotogramas, la compatibilidad con Windows Phone, la edición y aplicación del sombreador, y las herramientas de captura de línea de comandos. También ha agregado compatibilidad para poder depurar aplicaciones de DirectX12. Para obtener más información, vea [Diagnóstico de gráficos de Visual Studio](../debugger/visual-studio-graphics-diagnostics.md).  
@@ -113,7 +113,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
  Se agregarán servicios nuevos continuamente. Estos se pueden consultar haciendo clic en el vínculo "Buscar servicios nuevos" del asistente.  
   
- ![Cuadro de diálogo Agregar servicios conectados](../ide/media/vs2015_addconnectedservicedialog.png "VS2015\_AddConnectedServiceDialog")  
+ ![Cuadro de diálogo Agregar servicios conectados](~/ide/media/vs2015_addconnectedservicedialog.png "VS2015\_AddConnectedServiceDialog")  
   
 ## Diseñar su UI  
  La experiencia de Blend para diseñar interfaces de usuario de XAML se ha mejorado de forma notable. Blend se ha rediseñado totalmente para ofrecer una IU más intuitiva, capacidades de edición de XAML más potentes \(incluido IntelliSense\) y una mejor integración con Visual Studio. Para obtener más información, consulta [Designing XAML in Visual Studio and Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
@@ -168,7 +168,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
 ### Imágenes de alta resolución y compatibilidad táctil  
  Ahora, el IDE de Visual Studio tiene imágenes de verdadera alta resolución en pantallas más densas \(en áreas como menús, menús contextuales, barras de comando de ventanas de herramientas y en algunos proyectos del Explorador de soluciones\). Y en una pantalla táctil de la ventana del editor de código de Visual Studio, ahora puede usar gestos, como tocar y mantener presionado, reducir, puntear, etc., para acercarse, desplazarse, seleccionar texto e invocar menús contextuales.  
   
- ![Compatibilidad táctil en el editor](../ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
+ ![Compatibilidad táctil en el editor](~/ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
   
 ### Diseños personalizados  
  Puede crear, almacenar y transmitir diseños de ventana personalizados. Por ejemplo, puede definir un diseño preferido para usarlo en su máquina de escritorio y un diseño diferente para usarlo en un equipo portátil o un dispositivo de pantalla pequeña. O quizás prefiera un diseño para un proyecto de UI y otro para un proyecto de base de datos. Los enlaces de teclado le permiten cambiar rápidamente entre distintos diseños. Estos diseños están disponibles en cualquier instancia de Visual Studio cuando tiene iniciada la sesión. Para obtener más información, consulte [Crear diseños de ventana personalizados](../misc/create-custom-window-layouts.md).  
@@ -189,7 +189,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
 -   Ver un gráfico que muestra las personas que cambiaron el código. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.  
   
-     ![CodeLens: Ver el historial de cambios de código como un gráfico](../ide/media/codelens.png "CodeLens")  
+     ![CodeLens: Ver el historial de cambios de código como un gráfico](~/ide/media/codelens.png "CodeLens")  
   
 -   Ver fácilmente cuándo se cambió el código por última vez.  
   
@@ -204,7 +204,7 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
  En esta versión, los menús contextuales de vínculos y elementos de código son mucho más fáciles de usar porque los comandos están agrupados en secciones relacionadas con la selección, edición y administración de grupos, y el cambio de diseño del contenido del grupo. Observe también que los proyectos de prueba se muestran en un estilo diferente al de otros proyectos, y que se han actualizado los iconos de elementos del mapa a una versión más apropiada.  
   
- ![Mostrar los elementos seleccionados en un nuevo mapa de código](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+ ![Mostrar los elementos seleccionados en un nuevo mapa de código](~/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
  Otras mejoras:  
   

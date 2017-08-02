@@ -46,14 +46,14 @@ Incluir pruebas de IU codificadas en una aplicación de SharePoint permite compr
   
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Prereq") Las pruebas de IU codificadas para las aplicaciones de SharePoint solo son compatibles con SharePoint 2010.  
+-   ![Requisito previo](~/test/media/prereq.png "Prereq") Las pruebas de IU codificadas para las aplicaciones de SharePoint solo son compatibles con SharePoint 2010.  
   
--   ![Requisito previo](../test/media/prereq.png "Prereq") No se pueden usar controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.  
+-   ![Requisito previo](~/test/media/prereq.png "Prereq") No se pueden usar controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Crear una prueba de IU codificada para la aplicación de SharePoint  
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.  
   
- ![Elementos web de SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
+ ![Elementos web de SharePoint](~/test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
 >  Si se graba una acción, validar las acciones antes de generar código. Como hay varios comportamientos asociados con el desplazamiento del mouse, esta característica está activada de manera predeterminada. Tenga cuidado al quitar desplazamientos redundantes de las pruebas de IU codificadas. Puede hacerlo modificando el código de la prueba o usando el [editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  

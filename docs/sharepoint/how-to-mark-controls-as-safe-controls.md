@@ -41,7 +41,7 @@ caps.handback.revision: 15
   
 2.  Agregue dos controles al elemento web: un cuadro de texto y un botón.  Deje los nombres en sus valores predeterminados, TextBox1 y Button1, respectivamente.  
   
-3.  Agregue dos entradas a la propiedad **Safe Control Entries** del elemento web.  Para ello, elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a la propiedad de **Entradas de controles seguros** en la ventana de **Propiedades** .  
+3.  Agregue dos entradas a la propiedad **Safe Control Entries** del elemento web.  Para ello, elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a la propiedad de **Entradas de controles seguros** en la ventana de **Propiedades** .  
   
      Se abrirá el cuadro de diálogo **Entradas de controles seguros**.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 15
   
 7.  En **Ensamblados adicionales**, elija el botón de **Add** , y elija **Agregar ensamblado existente** de la lista.  
   
-8.  En el cuadro de diálogo de **Agregar ensamblado existente** , elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a **Ruta de acceso de origen**.  
+8.  En el cuadro de diálogo de **Agregar ensamblado existente** , elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a **Ruta de acceso de origen**.  
   
 9. Elija el ensamblado de la solución de SharePoint que creó en el paso 1, y elija el botón de **Abierta** .  
   

@@ -30,7 +30,7 @@ caps.handback.revision: 39
   
  En el ejemplo siguiente se muestra cómo agregar controles que están enlazados a los datos, a documentos en tiempo de diseño. Para obtener un ejemplo que muestre cómo agregar controles que están enlazados a los datos a complementos VSTO en tiempo de ejecución, consulte [Tutorial: Establecer enlaces a datos de un servicio en un proyecto de complemento VSTO](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Dispone de una demostración en vídeo relacionada con este tema en [Cómo puedo interactuar con los servicios web de Microsoft Excel](http://go.microsoft.com/fwlink/?LinkID=130284).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Dispone de una demostración en vídeo relacionada con este tema en [Cómo puedo interactuar con los servicios web de Microsoft Excel](http://go.microsoft.com/fwlink/?LinkID=130284).  
   
 ### Rellenar un proyecto de nivel de documento con los datos de un servicio web  
   

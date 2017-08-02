@@ -38,7 +38,7 @@ A diferencia de un lenguaje de uso general como C\# o UML, un lenguaje específi
   
  La ilustración siguiente muestra un modelo en ADSL en forma de diagrama:  
   
- ![Modelo de árbol de familia Tudor](../modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Modelo de árbol de familia Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
   
 ## Qué se puede hacer con el dominio \(ADSL\)  
  Una aplicación típica ADSL es generar código de programa u otros artefactos.  Cuando se define un DSL, puede definir *las plantillas de texto* que leen un modelo ADSL y generan archivos de texto.  

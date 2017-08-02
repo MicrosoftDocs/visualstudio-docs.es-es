@@ -33,7 +33,7 @@ caps.handback.revision: 47
 > [!NOTE]  
 >  La búsqueda del método <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> vuelve al principio del rango de búsqueda una vez que ha llegado al final del rango.  El código debe garantizar que la búsqueda no entre en un bucle infinito.  El procedimiento del ejemplo muestra una forma de tratar este caso usando la propiedad <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Use the Find Method in an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Dispone de una demostración en vídeo relacionada en [How Do I: Use the Find Method in an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ### Para buscar texto en un rango de hoja de cálculo  
   

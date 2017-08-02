@@ -44,11 +44,11 @@ Para obtener más información, consulte las [Notas de la versión de [!include[
 
 Se ha agregado una pestaña **Resumen** a las herramientas que le ayudan a centrarse en áreas clave para el análisis de rendimiento. Esta pestaña muestra cuántos eventos se han producido, le permite tomar instantáneas del montón y le permite habilitar rápidamente la recopilación de datos de uso de CPU. Esta vista muestra cualquier evento de [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) o de [Análisis de la interfaz de usuario](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#UIAnalysis). Además, para Visual Studio Enterprise, esta vista también muestra los eventos de IntelliTrace.
 
-![Pestaña Resumen de herramientas de diagnóstico de](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Pestaña Resumen de herramientas de diagnóstico de](~/profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 
 La herramienta de uso de CPU tiene [nuevas visualizaciones](../profiling/Beginners-Guide-to-Performance-Profiling.md) para ayudarle a identificar las funciones que tienen más probabilidades de estar causando problemas de rendimiento. La nueva vista **Llamador y destinatario** que le permite investigar costos de las llamadas de funciones realizadas a y desde una función seleccionada.
 
-![Herramientas de diagnóstico para la vista Llamador y destinatario](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Herramientas de diagnóstico para la vista Llamador y destinatario](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
   
 ## <a name="see-also"></a>Vea también  
  [Herramientas de generación de perfiles](../profiling/profiling-tools.md)

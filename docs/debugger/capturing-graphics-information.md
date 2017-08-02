@@ -38,7 +38,7 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
   
 #### Para capturar un fotograma  
   
--   En Visual Studio, en la barra de herramientas **Gráficos**, elija el botón **Capturar fotograma**![Icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+-   En Visual Studio, en la barra de herramientas **Gráficos**, elija el botón **Capturar fotograma**![Icono de botón de captura de gráficos](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
 -   En el teclado, presione Imprimir pantalla.  
   

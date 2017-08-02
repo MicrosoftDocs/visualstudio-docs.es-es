@@ -27,7 +27,7 @@ caps.handback.revision: 53
 # C&#243;mo: Leer y escribir en propiedades de un documento
   Puede almacenar propiedades de documento junto con un documento. Las aplicaciones de Office proporcionan una serie de propiedades integradas, como author, title y subject. En este tema se muestra cómo establecer las propiedades de documento en Microsoft Office Excel y Microsoft Office Word.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.png "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo obtener acceso a las propiedades personalizadas de un documento y manipularlas en Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo obtener acceso a las propiedades personalizadas de un documento y manipularlas en Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   

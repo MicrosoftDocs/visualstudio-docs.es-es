@@ -32,7 +32,7 @@ Si la vista del editor hospeda ActiveX u otros controles activos, debe implement
 ## Objetos e interfaces usados  
  En la siguiente ilustración, se muestran los objetos usados para crear la activación en contexto.  
   
- ![Editor de activación en contexto](../misc/media/vsinplaceactivationeditor.png "vsInPlaceActivationEditor")  
+ ![Editor de activación en contexto](~/extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Editor de activación en contexto  
   
 > [!NOTE]

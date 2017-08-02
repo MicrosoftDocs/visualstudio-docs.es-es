@@ -97,7 +97,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
  Por ejemplo, suponga que al ejecutar una prueba con la entrada “2", se detecta que el 50 % de una determinada función está cubierto. Al ejecutar la prueba una segunda vez con la entrada “-2" se observa en la vista de color de destino que el otro 50 % de la función está cubierto. Ahora se fusionan mediante combinación los resultados de las dos series de pruebas y tanto el informe como la vista de color de cobertura muestran que el 100 % de la función se ha analizado.  
   
- Utilice ![icono para el botón Combinar en la ventana de cobertura de código](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**combinar resultados de la cobertura de código** para ello. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.  
+ Utilice ![icono para el botón Combinar en la ventana de cobertura de código](~/test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**combinar resultados de la cobertura de código** para ello. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.  
   
  Utilice **Exportar resultados de la cobertura de código** para guardar los resultados de una operación Merge.  
   

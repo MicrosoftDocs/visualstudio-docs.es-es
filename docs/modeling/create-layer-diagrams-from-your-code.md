@@ -39,7 +39,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia desde el código
 Para visualizar la arquitectura de alto nivel, la lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que su código sea coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para proyectos de Visual C# .NET y Visual Basic. NET. Para ver qué versiones de Visual Studio admiten esta característica, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
- ![Crear un diagrama de dependencia](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
+ ![Crear un diagrama de dependencia](~/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
  Un diagrama de dependencia permite organizar los elementos de la solución de Visual Studio en grupos lógicos abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.  
   
@@ -88,7 +88,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 
 7. Esto muestra la arquitectura de aplicación actual. Decidir lo que desea que la arquitectura sea y modificar el diagrama de dependencia en consecuencia.
 
-![Diagrama de dependencias generado a partir de un mapa de código](media/dependency-validation-01.png)
+![Diagrama de dependencias generado a partir de un mapa de código](~/modeling/media/dependency-validation-01.png)
   
 ##  <a name="a-namecreatelayersa-create-layers-from-artifacts"></a><a name="CreateLayers"></a>Creación de capas desde artefactos  
  Puede crear capas a partir de elementos de una solución de Visual Studio, como proyectos, archivos de código, espacios de nombres, clases y métodos. Esto crea automáticamente vínculos entre las capas y los elementos, que se incluyen en el proceso de validación de capas.  

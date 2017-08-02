@@ -27,7 +27,7 @@ manager: "ghogen"
 # Ver agentes de escucha de eventos DOM
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  La pestaña **Eventos** del Explorador DOM muestra los eventos que están asociados a un elemento DOM. Cada nodo de la pestaña **Eventos** representa un evento que tiene suscriptores activos. El nodo superior contiene subnodos que representan a los agentes de escucha registrados para el evento específico. Además de para ver los agentes de escucha de eventos, puedes utilizar esta pestaña para navegar a la ubicación del agente de escucha de eventos en el código de JavaScript. La información de este tema se aplica a las aplicaciones de la Tienda compiladas mediante HTML y JavaScript.  
   
@@ -71,7 +71,7 @@ manager: "ghogen"
   
 11. Para identificar rápidamente agentes de escucha de eventos para elementos principales de la jerarquía DOM, elija un elemento principal en la lista de jerarquías situada en la parte inferior del Explorador DOM.  
   
-     ![Seleccionar elementos primarios en la jerarquía DOM](../debugger/media/js_dom_breadcrumbs.png "JS\_DOM\_Breadcrumbs")  
+     ![Seleccionar elementos primarios en la jerarquía DOM](~/debugger/media/js_dom_breadcrumbs.png "JS\_DOM\_Breadcrumbs")  
   
      La pestaña **Eventos** muestra agentes de escucha de eventos para cualquier elemento que elija en la lista de jerarquías.  
   

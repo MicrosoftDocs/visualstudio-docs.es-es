@@ -243,7 +243,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
 5.  En el Explorador de pruebas, elija **Ejecutar todas**.  
   
-     ![Explorador de pruebas unitarias: prueba básica superada](../test/media/utecpp10.png "UteCpp10")  
+     ![Explorador de pruebas unitarias: prueba básica superada](~/test/media/utecpp10.png "UteCpp10")  
   
  Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.  
   

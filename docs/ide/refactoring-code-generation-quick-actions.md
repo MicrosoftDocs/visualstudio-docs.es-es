@@ -51,7 +51,7 @@ Visual Studio puede ayudarle a generar partes de código fuente, lo que le permi
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>Acciones rápidas
-Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción.  Se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o mediante **Ctrl + .** cuando el cursor esté en la línea de código adecuada.
+Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción.  Se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o mediante **Ctrl + .** cuando el cursor esté en la línea de código adecuada.
 
 * [Acciones rápidas](quick-actions.md)
 * [Estilos de código y acciones rápidas](code-styles-and-quick-actions.md)

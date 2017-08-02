@@ -55,7 +55,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
  Los volcados de memoria se utilizan principalmente para problemas de depuración que suceden en equipos a los que el desarrollador no tiene acceso.  Por ejemplo, puede utilizar un archivo de volcado de memoria desde el equipo de un cliente cuando no pueda reproducir el bloqueo del cliente en su equipo.  Los evaluadores también crean volcados de memoria para guardar datos sobre bloqueos y, de este modo, usar la máquina de pruebas para realizar más pruebas.  El depurador de Visual Studio puede guardar archivos de volcado de memoria de código administrado o nativo.  El depurador puede cargar archivos de volcado de memoria creados por Visual Studio u otros programas que guardan archivos en formato de *minivolcado*.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria, con o sin montones  
  Puede crear archivos de volcado de memoria con o sin información del montón.  
@@ -64,7 +64,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 -   **Los archivos de volcado de memoria sin montones** tienen un tamaño mucho menor que los archivos de volcado de memoria con información de montón.  Sin embargo, el depurador debe cargar los archivos binarios de aplicación para encontrar la información de símbolos.  Los archivos binarios deben coincidir exactamente con los archivos binarios que se usaron al crear el volcado de memoria.  Solo los valores de las variables de pila se guardan en los archivos de volcado de memoria sin datos de montón.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Requirements_and_limitations"></a> Requisitos y limitaciones  
   
@@ -82,7 +82,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 -   Para depurar con [SOS.dll \(SOS Debugging Extension\)](../Topic/SOS.dll%20\(SOS%20Debugging%20Extension\).md) en Visual Studio, debe instalar las herramientas de depuración para Windows que forman parte del Kit para controladores de Windows \(WDK\).  Consulte [Windows 8.1 Preview: Descargar kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_a_dump_file"></a> Crear un archivo de volcado de memoria  
  Para crear un archivo de volcado de memoria con Visual Studio:  
@@ -93,7 +93,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
  También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows.  Por ejemplo, la utilidad de línea de comandos **Procdump** de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de memoria correspondientes a bloqueos de procesos basados en desencadenadores o a petición.  Vea [Requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) en este tema para obtener información adicional sobre cómo usar otras herramientas para crear archivos de volcado de memoria.  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria  
   
@@ -136,7 +136,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
  Si Visual Studio no puede encontrar los archivos necesarios para depurar un módulo en el volcado de memoria, mostrará la página correspondiente \(**No se encontró ningún binario**, **No se encontraron símbolos** o **No se encontró ningún origen**\).  Estas páginas ofrecen información detallada acerca de la causa del problema y proporcionan vínculos de acción que pueden ayudarle a identificar la ubicación correcta de los archivos.  Consulte [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- ![Volver al principio](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## Vea también  
  [Depuración Just\-In\-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   

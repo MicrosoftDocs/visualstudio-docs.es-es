@@ -27,7 +27,7 @@ caps.handback.revision: 14
 # Selector de URL (cuadro de di&#225;logo) (desarrollo de SharePoint en Visual Studio)
   En el cuadro de diálogo del selector de direcciones URL, puede elegir los archivos como archivos o archivos de imagen de página maestra que se establecen en el proyecto o en el servidor local que ejecuta SharePoint.  
   
- Este cuadro de diálogo aparece cuando tiene la opción de elegir un archivo para establecer una propiedad.  Puede abrir este cuadro de diálogo elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a diversas propiedades en la ventana de **Propiedades** .  El botón de puntos suspensivos también aparece como un mensaje de IntelliSense cuando se asignan valores a ciertos atributos en la vista **Código fuente** del diseñador.  
+ Este cuadro de diálogo aparece cuando tiene la opción de elegir un archivo para establecer una propiedad.  Puede abrir este cuadro de diálogo elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a diversas propiedades en la ventana de **Propiedades** .  El botón de puntos suspensivos también aparece como un mensaje de IntelliSense cuando se asignan valores a ciertos atributos en la vista **Código fuente** del diseñador.  
   
 ## Lista de UIElement  
  **Carpetas de proyecto**  

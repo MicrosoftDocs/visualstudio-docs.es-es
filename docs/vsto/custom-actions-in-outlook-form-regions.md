@@ -30,7 +30,7 @@ caps.handback.revision: 22
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## Agregar acciones personalizadas a un área de formulario  
- Para agregar una acción personalizada a un área de formulario, utilice el cuadro de diálogo **Acciones personalizadas**.  Puede abrir el cuadro de diálogo **Acciones personalizadas** en **Explorador de soluciones** expandiendo el nodo **Manifiesto** , seleccione la propiedad **CustomActions** , haga clic en los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.png "Elipse del Diseñador de ASP.NET Mobile")\).  
+ Para agregar una acción personalizada a un área de formulario, utilice el cuadro de diálogo **Acciones personalizadas**.  Puede abrir el cuadro de diálogo **Acciones personalizadas** en **Explorador de soluciones** expandiendo el nodo **Manifiesto** , seleccione la propiedad **CustomActions** , haga clic en los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
   
  Puede utilizar el cuadro de diálogo **Acciones personalizadas** para especificar un *formulario de destino*.  Un formulario de destino es el formulario que aparece cuando el usuario ejecuta la acción personalizada.  
   

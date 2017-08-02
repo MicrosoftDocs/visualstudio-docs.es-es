@@ -36,7 +36,7 @@ ms.lasthandoff: 04/04/2017
 
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
-![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Se aplica a Windows y Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  La herramienta de análisis de código de las versiones de Visual Studio Express Edition examina el código para detectar una serie de problemas comunes e infracciones de las prácticas recomendadas de programación. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque el análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código. El análisis de código también puede encontrar defectos del código que son difíciles de detectar al hacer las pruebas. Ejecutar la herramienta de análisis de código a intervalos regulares durante el proceso de desarrollo puede mejorar la calidad de la aplicación final.  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/04/2017
   
  Cuando se expande una advertencia, las líneas de código que han causado la advertencia se resaltan en el editor de código de Visual Studio.  
   
- ![Código fuente resaltado](../test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![Código fuente resaltado](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  Cuando haya entendido el problema, podrá resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
   

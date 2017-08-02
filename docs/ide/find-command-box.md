@@ -28,7 +28,7 @@ Puede buscar los comandos de Visual Studio de texto y ejecución de casilla **Fi
   
  El cuadro **Buscar\/Comando** recuerda los últimos 20 elementos escritos y los muestra en la lista desplegable.  Puede navegar por la lista eligiendo las teclas de dirección.  
   
- ![Cuadro Buscar&#47;Comando](../ide/media/findcommandbox.png "FindCommandBox")  
+ ![Cuadro Buscar&#47;Comando](~/ide/media/findcommandbox.png "FindCommandBox")  
 Buscar\/Comando \(Cuadro\)  
   
 ## Buscar texto  

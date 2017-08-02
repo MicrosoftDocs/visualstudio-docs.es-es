@@ -79,7 +79,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
  Esta es la barra de herramientas **Modo Diseñador de sombras**:  
   
- ![La barra de herramientas Modo Diseñador de sombras.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
+ ![La barra de herramientas Modo Diseñador de sombras.](~/designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:  
   

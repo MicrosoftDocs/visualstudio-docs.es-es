@@ -117,17 +117,17 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  *¿Qué más debería saber?*  
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
+-   ![Requisito previo](~/test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
+-   ![Requisito previo](~/test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
   
      Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
+-   ![Requisito previo](~/test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
   
  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
+-   ![Sugerencia](~/test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   

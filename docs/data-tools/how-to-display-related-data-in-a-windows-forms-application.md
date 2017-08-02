@@ -36,7 +36,7 @@ Es posible mostrar los datos relacionados arrastrando elementos que comparten el
  ![Ventana Orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif "DataSources2")  
 Crear controles enlazados a datos que muestren los registros relacionados  
   
- ![vínculo a vídeo](../data-tools/media/playvideo.png "PlayVideo") Para obtener una versión en vídeo de este tema, vea [cómo actualizar tablas relacionadas](http://go.microsoft.com/fwlink/?LinkId=143527).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea [cómo actualizar tablas relacionadas](http://go.microsoft.com/fwlink/?LinkId=143527).  
   
 ### Para crear controles que muestren los registros relacionados  
   
