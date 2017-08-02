@@ -21,7 +21,7 @@ caps.handback.revision: 16
 
 La incrustación simplificada está habilitada en un editor cuando el objeto de vista del documento \(es decir, se crea un elemento secundario de\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]relacionada con, y la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> se implementa para controlar los comandos de la ventana.  Simplificado insertar editores no puede hospedar controles activos del host.  Los objetos utilizados para crear un editor con la incrustación simplificada se muestran en la siguiente ilustración.  
   
- ![Gráfico del Editor de elementos incrustado simplificado](~/docs/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+ ![Gráfico del Editor de elementos incrustado simplificado](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
 editor con la incrustación simplificada  
   
 > [!NOTE]

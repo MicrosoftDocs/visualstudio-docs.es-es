@@ -36,7 +36,7 @@ caps.handback.revision: 69
   
  Los controles de Windows Forms y host utilizan el modelo de enlace de datos de Windows Forms, que admite tanto *enlace de datos simple* como *enlace de datos complejo* a orígenes de datos como conjuntos de datos y tablas de datos. Para obtener información completa sobre el modelo de enlace de datos en Windows Forms, consulte [Enlace de datos y formularios Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: consumir datos de bases de datos en Excel](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: consumir datos de bases de datos en Excel](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## Enlace de datos simple  
  Un enlace de datos simple existe si un control de propiedad se enlaza a un único elemento de datos, como un valor de una tabla de datos. Por ejemplo, el control <xref:Microsoft.Office.Tools.Excel.NamedRange> tiene una propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> que se puede enlazar a un campo de un conjunto de datos. Cuando se cambia el campo del conjunto de datos, también cambia el valor del intervalo con nombre. Todos los controles host, excepto el control <xref:Microsoft.Office.Tools.Word.XMLNodes>, admiten el enlace de datos simple. El control <xref:Microsoft.Office.Tools.Word.XMLNodes> es una colección y, por tanto, no admite el enlace de datos.  

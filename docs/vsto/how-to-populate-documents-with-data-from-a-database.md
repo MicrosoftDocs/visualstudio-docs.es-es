@@ -31,7 +31,7 @@ caps.handback.revision: 47
   
  En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en proyectos de nivel de documento usando un diseñador.  Para ver un ejemplo de cómo agregar controles enlazados a datos en proyectos de complemento de VSTO en tiempo de ejecución, consulte [Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Enlazar datos a controles de contenido de Word 2007 mediante Visual Studio Tools para el sistema Office \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Enlazar datos a controles de contenido de Word 2007 mediante Visual Studio Tools para el sistema Office \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Agregar un control a un documento en tiempo de diseño  
   

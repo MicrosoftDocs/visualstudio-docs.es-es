@@ -43,7 +43,7 @@ Herramientas de R para Visual Studio (RTVS) se integra con la experiencia de dep
 
 Iniciar el depurador para el archivo de inicio de R en un proyecto de R es igual que para otros tipos de proyectos: use **Depurar > Iniciar depuración**, la tecla F5 o el comando **Source startup file** (Archivo de inicio de origen) en la barra de herramientas de depuración que se muestra a continuación. Para cambiar el archivo de inicio, haga clic con el botón derecho en un archivo en el Explorador de soluciones y seleccione **Establecer como script R de inicio**.
 
-![Botón de inicio del depurador de R](~/docs/rtvs/media/debugger-start-button.png)
+![Botón de inicio del depurador de R](~/rtvs/media/debugger-start-button.png)
 
 En todos los casos, al iniciar el depurador, se "obtiene" el archivo en la ventana interactiva, es decir, lo carga y lo ejecuta allí. De hecho, al iniciar la depuración, verá un resultado como el siguiente en la ventana interactiva:
 
@@ -85,5 +85,5 @@ El Explorador de entorno admite una serie de comandos especiales:
 | ayuda | mostrar ayuda: muestra los comandos disponibles en la ventana interactiva. |
 | &lt;expr&gt; | evalúa la expresión en *expr*. |
 
-![Explorador de entorno en la ventana interactiva](~/docs/rtvs/media/debugger-environment-browser.png)
+![Explorador de entorno en la ventana interactiva](~/rtvs/media/debugger-environment-browser.png)
 

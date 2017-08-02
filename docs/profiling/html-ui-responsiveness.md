@@ -317,7 +317,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Agrupar eventos por fotograma  
  Puede agrupar eventos que aparecen en la vista de detalles de la escala de tiempo en fotogramas individuales. Estos eventos de fotogramas son eventos generados por la herramienta y representan contenedores de eventos de nivel superior para todo el trabajo del subproceso de interfaz de usuario que tiene lugar entre eventos de pintar. Para habilitar esta vista, seleccione **Agrupar eventos de nivel superior por fotogramas**.  
   
- ![Agrupar eventos de nivel superior por fotogramas](~/docs/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Agrupar eventos de nivel superior por fotogramas](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Al agrupar eventos por fotogramas, cada evento de nivel superior de la vista de detalles de la escala de tiempo representa un fotograma.  
   

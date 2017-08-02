@@ -37,7 +37,7 @@ caps.handback.revision: 16
   
 2.  En el menú **Ver**, haga clic en la **Ventana Propiedades**.  
   
-3.  En la ventana de **Propiedades** , elija la propiedad de **Ensamblados** y, a continuación los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
+3.  En la ventana de **Propiedades** , elija la propiedad de **Ensamblados** y, a continuación los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
   
      Aparecerá el cuadro de diálogo **Asignar a LobSystems ensamblados a los que se hace referencia**.  
   

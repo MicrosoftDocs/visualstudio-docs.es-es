@@ -139,7 +139,7 @@ caps.handback.revision: 51
   
 -   [Word, InfoPath y PowerPoint](#WordAndInfoPath)  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Administrar paneles de tareas en complementos de VSTO de Word](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Administrar paneles de tareas en complementos de VSTO de Word](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Cuando se crea un panel de tareas personalizado para Outlook, se asocia a una ventana específica del Explorador o el Inspector.  Los exploradores son ventanas que muestran el contenido de una carpeta y los inspectores son ventanas que muestran un elemento como un mensaje de correo electrónico o una tarea.  

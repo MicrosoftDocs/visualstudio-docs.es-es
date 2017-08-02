@@ -54,9 +54,9 @@ La ventana **Pilas paralelas** es útil cuando se depuran aplicaciones multithre
 |||  
 |-|-|  
 |Icono|Descripción|  
-|![Flecha amarilla de pilas paralelas](~/docs/debugger/media/icon_parallelyellowarrow.gif "Icon\_ParallelYellowArrow")|Indica que el contexto del método contiene el marco de pila activo del subproceso actual.|  
-|![Icono de subprocesos de pilas paralelas](~/docs/debugger/media/icon_parallelthreads.gif "Icon\_ParallelThreads")|Indica que el contexto del método contiene el marco de pila activo de un subproceso que no es el actual.|  
-|![Flecha verde de pilas paralelas](~/docs/debugger/media/icon_parallelgreenarrow.gif "Icon\_ParallelGreenArrow")|Indica que el contexto del método contiene el marco de pila actual.  Ese nombre de método está negrita en todos los nodos en los que aparece.|  
+|![Flecha amarilla de pilas paralelas](~/debugger/media/icon_parallelyellowarrow.gif "Icon\_ParallelYellowArrow")|Indica que el contexto del método contiene el marco de pila activo del subproceso actual.|  
+|![Icono de subprocesos de pilas paralelas](~/debugger/media/icon_parallelthreads.gif "Icon\_ParallelThreads")|Indica que el contexto del método contiene el marco de pila activo de un subproceso que no es el actual.|  
+|![Flecha verde de pilas paralelas](~/debugger/media/icon_parallelgreenarrow.gif "Icon\_ParallelGreenArrow")|Indica que el contexto del método contiene el marco de pila actual.  Ese nombre de método está negrita en todos los nodos en los que aparece.|  
   
 ## Controles de la barra de herramientas  
  En la siguiente ilustración y tabla se describen los controles que están disponibles en la barra de herramientas Pilas paralelas.  

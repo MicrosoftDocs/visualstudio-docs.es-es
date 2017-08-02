@@ -34,7 +34,7 @@ Cada configuración puede admitir un conjunto de procesos de compilación que ge
   
  Grupos también pueden tener una salida de clave que permite accesos directos de empaquetado para que apunte a algo significativo. Cualquier grupo puede estar vacío en una configuración determinada, por lo que debe hacer ninguna suposición sobre el tamaño de un grupo. El tamaño \(número de salidas\) de cada grupo en ninguna otra configuración puede ser diferente del tamaño de otro grupo en la misma configuración. También puede ser diferente del tamaño del mismo grupo en otra configuración.  
   
- ![Gráfico de grupos de resultados](~/docs/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![Gráfico de grupos de resultados](~/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Grupos de resultados  
   
  El uso principal de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> interfaz es proporcionar acceso para compilar, implementar y depurar objetos de administración y permitir la libertad de salidas del grupo de proyectos. Para obtener más información sobre el uso de esta interfaz, vea [Objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md).  

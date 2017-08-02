@@ -36,7 +36,7 @@ El juego de formar parejas funciona como sigue:
   
 3.  Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**.  Desplácese hacia abajo hasta el evento **Click** y escriba label\_Click en el cuadro, como se muestra en la siguiente ilustración.  
   
-     ![Ventana Propiedades mostrando el evento Click](~/docs/ide/media/express_labelclick.png "Express\_labelClick")  
+     ![Ventana Propiedades mostrando el evento Click](~/ide/media/express_labelclick.png "Express\_labelClick")  
 Ventana Propiedades con el evento Click  
   
 4.  Elija la tecla Entrar.  El IDE agrega al código un controlador de eventos Click denominado `label_Click()` y lo enlaza a cada una de las etiquetas del formulario.  

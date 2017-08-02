@@ -67,7 +67,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Establezca un punto de interrupción.** Establezca un punto de interrupción en la instrucción `methodTrack = "Main Page";` del constructor MainPage. Seleccione la línea en el margen interno sombreado del editor de código fuente \(teclado: sitúe el cursor en la línea y presione la tecla F9\).  
   
- ![Paso a paso por instrucciones](~/docs/debugger/media/dbg_basics_stepinto.png "DBG\_Basics\_StepInto")  
+ ![Paso a paso por instrucciones](~/debugger/media/dbg_basics_stepinto.png "DBG\_Basics\_StepInto")  
   
  El icono de punto de interrupción aparece en el medianil.  
   
@@ -75,13 +75,13 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  La aplicación comienza a ejecutarse y suspende la ejecución inmediatamente antes de la instrucción donde configuró el punto de interrupción. El icono de la línea actual que aparece en el margen identifica su ubicación. La instrucción actual se resalta.  
   
- ![Establecer un punto de interrupción](~/docs/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+ ![Establecer un punto de interrupción](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
   
  Ahora controla la ejecución de la aplicación y puede examinar el estado del programa a medida que recorre paso a paso sus instrucciones.  
   
  **Depure el método paso a paso.** En el menú **Depurar**, seleccione **Paso a paso por instrucciones** \(teclado: F11\).  
   
- ![Línea actual](~/docs/debugger/media/dbg_basics_currentline.png "DBG\_Basics\_CurrentLine")  
+ ![Línea actual](~/debugger/media/dbg_basics_currentline.png "DBG\_Basics\_CurrentLine")  
   
  Tenga en cuenta que el depurador se desplaza a la siguiente línea, que es una llamada al método Example1. Seleccione Paso a paso por instrucciones de nuevo. El depurador se mueve al punto de entrada del método Example1. Esto indica que el método se ha cargado en la pila de llamadas y se ha asignado la memoria para las variables locales.  
   
@@ -95,7 +95,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Examine los valores de las variables en las sugerencias de datos.** Al mantener el ratón sobre un nombre de variable, la sugerencia de datos muestra el nombre, el valor y el tipo de la variable.  
   
- ![Sugerencia de datos del depurador](~/docs/debugger/media/dbg_basics_datatip.png "DBG\_Basics\_DataTip")  
+ ![Sugerencia de datos del depurador](~/debugger/media/dbg_basics_datatip.png "DBG\_Basics\_DataTip")  
   
  Mantenga el ratón sobre la variable `a`. Observe su nombre, valor y tipo de datos. Mantenga el ratón sobre la variable `methodTrack`. Apunte de nuevo el nombre, el valor y el tipo de datos.  
   
@@ -127,7 +127,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Llame al método Example2 del constructor MainPage.** Edite el constructor MainPage y reemplace la línea que aparece después de `methodTrack = String.Empty;` con `Example2();`.  
   
- ![Método de llamada de Example2 del método de demostración](~/docs/debugger/media/dbg_basics_callexample2.png "DBG\_Basics\_CallExample2")  
+ ![Método de llamada de Example2 del método de demostración](~/debugger/media/dbg_basics_callexample2.png "DBG\_Basics\_CallExample2")  
   
  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** \(teclado: F5\). El depurador suspende la ejecución en el punto de interrupción.  
   
@@ -135,7 +135,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Depure paso a paso por instrucciones Example2 y Example2\_A.** Presione la tecla F11 para depurar paso a paso por instrucciones el método Example2. Siga depurando paso a paso las instrucciones de Example2 hasta llegar a la línea `int x = Example2_A();`. De nuevo, depure paso a paso por instrucciones esta línea hasta alcanzar el punto de entrada de Example2\_A. Continúe la depuración paso a paso por instrucciones en cada instrucción de Ejemplo2\_A hasta volver a Ejemplo2.  
   
- ![Example2](~/docs/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
+ ![Example2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
   
  **epure una función paso a paso por procedimientos.** Observe que la línea siguiente de Example2, `int y = Example2_A();`, es básicamente igual que la anterior. Puede depurarla paso a paso por procedimientos sin ningún problema. Presione la tecla F10 para pasar de la reanudación de Example2 a esta segunda llamada a Example2\_A. Presione F10 para depurar este método paso a paso por procedimientos. Observe que la cadena `methodTrack` indica que el método Example2\_A se ejecuta dos veces. También observará que el depurador pasa inmediatamente a la línea siguiente. No suspende la ejecución en el punto donde se reanuda Example2.  
   
@@ -155,7 +155,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Llame al método Example3 del constructor MainPage.** Edite el constructor MainPage y reemplace la línea que aparece después de `methodTrack = String.Empty;` con la línea `Example3();`.  
   
- ![Método de llamada de Example3 del método de demostración](~/docs/debugger/media/dbg_basics_callexample3.png "DBG\_Basics\_CallExample3")  
+ ![Método de llamada de Example3 del método de demostración](~/debugger/media/dbg_basics_callexample3.png "DBG\_Basics\_CallExample3")  
   
  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** \(teclado: F5\). El depurador suspende la ejecución en el punto de interrupción del método MainPage.  
   
@@ -167,7 +167,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  El aspa blanca le permite distinguir el icono de un punto de interrupción condicional.  
   
- ![Punto de interrupción condicional](~/docs/debugger/media/dbg_basics_conditionalbreakpoint.png "DBG\_Basics\_ConditionalBreakpoint")  
+ ![Punto de interrupción condicional](~/debugger/media/dbg_basics_conditionalbreakpoint.png "DBG\_Basics\_ConditionalBreakpoint")  
   
  **Ejecute hasta el punto de interrupción.** En el menú Depurar, seleccione Continuar \(teclado: F5\). En la ventana Variables locales, confirme que el valor actual de `i` es 500. Observe que la variable `s` está representada como una línea y es mucho más larga que la ventana.  
   
@@ -191,7 +191,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Llame al método Example4 del constructor MainPage.** Edite el constructor MainPage\(\) y reemplace la línea que aparece después de `methodTrack = String.Empty;` con la línea `Example4();`.  
   
- ![Método de llamada de Example4 del método de demostración](~/docs/debugger/media/dbg_basics_callexample4.png "DBG\_Basics\_CallExample4")  
+ ![Método de llamada de Example4 del método de demostración](~/debugger/media/dbg_basics_callexample4.png "DBG\_Basics\_CallExample4")  
   
  **Ejecute hasta la excepción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** \(teclado: F5\). Presione F5 de nuevo para reanudar la ejecución. El depurador suspende la ejecución en la excepción del método Example4 y muestra un cuadro de diálogo de excepción.  
   

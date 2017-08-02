@@ -43,7 +43,7 @@ Hay dos opciones para que un servicio de proporcionar contexto de usuario median
   
  El diagrama siguiente se muestra cómo el contexto se proporciona para un servicio de lenguaje que implemente `IVsLanguageContextProvider`.  
   
- ![Gráfico LangServiceImplementation2](~/docs/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+ ![Gráfico LangServiceImplementation2](~/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
 Contexto para un servicio de lenguaje  
   
  Como puede ver en el diagrama, el editor de texto básico de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tiene un contenedor de contexto asociado al.  Puntos de este contenedor de contexto a tres bolsas independientes de subcontext: servicio de lenguaje, editor predeterminado, y marcador de texto.  Los bolsas de subcontext de marcador del servicio de lenguaje y de texto contienen atributos y palabras clave para el servicio de lenguaje si se implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> , y marcadores de texto si se implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> .  Si no implementa ninguna de estas interfaces, el editor proporciona el contexto para la palabra clave en el cursor en el contenedor de subcontext de editor predeterminado.  

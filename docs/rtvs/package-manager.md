@@ -48,15 +48,15 @@ El administrador de paquetes tiene tres pestañas como se describe a continuaci�
 
 - **Disponible** le permite examinar paquetes que se van a instalar. Si el paquete ya está instalado, el botón **Instalar** de la derecha cambiará a **Desinstalar**.
 
-    ![Pestaña paquetes disponibles en las herramientas de R para el administrador de paquetes de Visual Studio](~/docs/rtvs/media/package-manager-available.png)
+    ![Pestaña paquetes disponibles en las herramientas de R para el administrador de paquetes de Visual Studio](~/rtvs/media/package-manager-available.png)
 
 - **Instalado** muestra todos los paquetes instalados y cargados. Un punto verde junto a un paquete indica que está cargado en la sesión de R. Para desinstalar el paquete se pueden usar el icono de la X roja de la lista izquierda o el botón **Desinstalar** situado a la derecha. Una flecha azul hacia arriba situada a la derecha de un paquete instalado actualiza el paquete si existe una versión más reciente.
 
-    ![Pestaña paquetes instalados en las herramientas de R para el administrador de paquetes de Visual Studio](~/docs/rtvs/media/package-manager-installed.png)
+    ![Pestaña paquetes instalados en las herramientas de R para el administrador de paquetes de Visual Studio](~/rtvs/media/package-manager-installed.png)
 
 - **Cargado** muestra solo los paquetes que están cargados en la sesión de R y, por lo tanto, aparecerán con un punto verde. También puede desinstalar y actualizar paquetes aquí.
 
-    ![Pestaña paquetes cargados en las herramientas de R para el administrador de paquetes de Visual Studio](~/docs/rtvs/media/package-manager-loaded.png)
+    ![Pestaña paquetes cargados en las herramientas de R para el administrador de paquetes de Visual Studio](~/rtvs/media/package-manager-loaded.png)
 
 ## <a name="package-locations"></a>Ubicaciones de los paquetes
 

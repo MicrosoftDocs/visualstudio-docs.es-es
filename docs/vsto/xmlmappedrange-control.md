@@ -28,7 +28,7 @@ caps.handback.revision: 39
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para obtener una demostración en vídeo relacionada, vea [How Do I: Use XML Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para obtener una demostración en vídeo relacionada, vea [How Do I: Use XML Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## Enlazar datos al control  
  Un control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> admite el enlace a un campo de datos único \(enlace de datos simple\).  El control <xref:Microsoft.Office.Tools.Excel.ListObject> puede admitir enlaces de datos complejos y se crea automáticamente cuando se asigna a una celda un elemento de esquema de repetición.  Para obtener más información, vea [ListObject &#40;Control&#41;](../vsto/listobject-control.md).  

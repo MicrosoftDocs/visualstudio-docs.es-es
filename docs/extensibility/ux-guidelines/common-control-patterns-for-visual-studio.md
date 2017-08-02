@@ -104,7 +104,7 @@ Para el comportamiento de interacción típica, siga el [directrices de escritor
 #### <a name="layout"></a>Diseño  
 Cuadros combinados y listas desplegables deben ajustarse para adaptarlos al contenido, no para ajustarse al ancho de la ventana en la que se muestran ni arbitrariamente coincide con la longitud de un campo largo, como una ruta de acceso.  
   
-![Correcto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.](~/docs/extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Correcto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
+![Correcto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.](~/extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />Correcto: el ancho de la lista desplegable es demasiado largo para el contenido que se mostrará.
   
 ![Correcto: la lista desplegable cambiará de tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas.](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707-04_CorrectDropDownLayout")<br />Correcto: la lista desplegable cambiará de tamaño para permitir el crecimiento de traducción, pero no innecesariamente largas. 
   
@@ -160,11 +160,11 @@ Hay dos formas para mostrar información de texto estático.
 
 Puede ser texto estático en su propia en un cuadro de diálogo sin cualquier contención cuando no haya ningún conflicto de agrupación. Decidir si las líneas adicionales de un cuadro son realmente necesarias. Un ejemplo es la presentación de una ruta de acceso de directorio en una sección creada por una línea de grupo, tal y como se muestra a continuación:  
 
-![Información de texto estático en los controles de texto](~/docs/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Información de texto estático en los controles de texto
+![Información de texto estático en los controles de texto](~/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Información de texto estático en los controles de texto
 
 En un cuadro de diálogo donde existen otras áreas agrupadas y contención de la información contribuye a mejorar la legibilidad, y cuándo se puede ocultar o se muestra una sección (como en el **ventana propiedades** panel de descripción) o desea ser coherente con la interfaz de usuario similar, coloque el texto estático dentro de un cuadro. Este cuadro de grupo debe ser una sola regla y coloreadas con el `ButtonShadow`:
 
-![Texto estático en la ventana Propiedades](~/docs/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texto estático en la ventana Propiedades
+![Texto estático en la ventana Propiedades](~/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Texto estático en la ventana Propiedades
 
 ### <a name="read-only-text-box"></a>Cuadro de texto de solo lectura
 
@@ -172,7 +172,7 @@ Esto permite al usuario seleccionar el texto dentro del campo, pero no editarlo.
 
 Un cuadro de texto puede activarse (editable) cuando un usuario modifica un control asociado, como activando/desactivando una casilla de verificación o un botón de opción de seleccionar o deseleccionar. Por ejemplo, en la **herramientas &gt; opciones** página se muestra a continuación, el **página principal** cuadro de texto se convierte en activa cuando la **usar predeterminada** casilla de verificación está desactivada.
 
-![Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos](~/docs/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos
+![Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos](~/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Cuadro de texto de solo lectura, que muestra los Estados inactivos y activos
 
 ### <a name="using-text-in-dialogs"></a>Uso de texto en los cuadros de diálogo
 
@@ -219,7 +219,7 @@ Los cuadros de diálogo beneficiarán de las directrices de marca de agua ligera
 
 -   Marcas de agua se centra o alineación a la izquierda. Al tomar decisiones de alineación se aplican las reglas de diseño estándar. No se puede seleccionar la marca de agua en el fondo.
 
-![Ejemplo de texto de marca de agua](~/docs/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Ejemplo de texto de marca de agua
+![Ejemplo de texto de marca de agua](~/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Ejemplo de texto de marca de agua
 
 ### <a name="context-specific-dynamic-text"></a>Texto de específicas del contexto (dinámico)
 
@@ -319,12 +319,12 @@ Algunos botones deben siempre utilizar una imagen gráfica y no incluya nunca te
 | Función | Botón |  
 | --- | --- |  
 | Add | ![Botón gráfico de "Agregar"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
-| Quitar | ![Botón gráfico "Quitar"](~/docs/extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
+| Quitar | ![Botón gráfico "Quitar"](~/extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | Agregar todos | ![Botón gráfico "Agregar todo"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
 | Quitar todo | ![Botón gráfico "Quitar todo"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
 | Subir | ![Botón gráfico "Subir"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
-| Bajar | ![Botón gráfico "Bajar"](~/docs/extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| Eliminar | ![Botón gráfico "Eliminar"](~/docs/extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
+| Bajar | ![Botón gráfico "Bajar"](~/extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
+| Eliminar | ![Botón gráfico "Eliminar"](~/extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
   
 ##### <a name="sizing-and-spacing"></a>Ajuste de tamaño y el espaciado  
 Ajustar el tamaño de botones gráficos es el mismo que para la versión abreviada de la **[Examinar...]**  botón (26 x 23 píxeles):  
@@ -371,7 +371,7 @@ Iconos sólo deben usarse en los controles de vista de árbol si sirven de ayuda
 #### <a name="scroll-bars"></a>Barras de desplazamiento  
 Barras de desplazamiento siempre deben estar oculta si el contenido se ajusta dentro del control de vista de árbol. Es aceptable para las barras de desplazamiento estar ocultas o semitransparentes en una ventana desplazable y aparecen cuando la ventana que contiene la vista de árbol tiene el foco o al mantener el mouse del árbol ver propio.  
   
-![Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.](~/docs/extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.
+![Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.](~/extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705-4_Scrollbars")<br />Se muestran las barras de desplazamiento vertical y horizontal porque el contenido ha superado los límites del control de vista de árbol.
   
 ###  <a name="BKMK_TreeViewInteractions"></a>Interacciones de vista de árbol  
   

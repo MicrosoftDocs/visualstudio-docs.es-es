@@ -20,7 +20,7 @@ caps.handback.revision: 18
 
 A continuación, se utiliza la ventana **Propiedades** para cambiar la apariencia del formulario.  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic \(vídeo 1\)](http://go.microsoft.com/fwlink/?LinkId=205209) o el [Tutorial 1: Crear un visor de imágenes en C\# \(vídeo 1\)](http://go.microsoft.com/fwlink/?LinkId=205199).  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario.  Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic \(vídeo 1\)](http://go.microsoft.com/fwlink/?LinkId=205209) o el [Tutorial 1: Crear un visor de imágenes en C\# \(vídeo 1\)](http://go.microsoft.com/fwlink/?LinkId=205199).  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario.  Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### Para establecer las propiedades del formulario  
   
@@ -41,7 +41,7 @@ Ventana Propiedades
   
 4.  Vuelva al Diseñador de Windows Forms.  Elija el controlador de arrastre inferior derecho del formulario, que es el cuadradito blanco que aparece en el vértice inferior derecho del formulario y tiene el siguiente aspecto.  
   
-     ![Controlador de arrastre](~/docs/ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
+     ![Controlador de arrastre](~/ide/media/express_bottomrt_drag.png "Express\_BottomRT\_Drag")  
 Controlador de arrastre  
   
      Arrastre el controlador para cambiar el tamaño del formulario de modo que resulte más ancho y un poco más alto.  

@@ -24,7 +24,7 @@ Una vista de texto es una presentación de texto que se almacena en un búfer de
 ## objeto de vista de texto  
  Cada vista es asociado al propio búfer de texto, y la vista es una ventana en los datos en el búfer.  El diagrama siguiente muestra las interfaces principales del objeto de vista de texto, representado por <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.  
   
- ![Objeto de vista de texto de Visual Studio](~/docs/extensibility/media/vstextview.gif "vstextview")  
+ ![Objeto de vista de texto de Visual Studio](~/extensibility/media/vstextview.gif "vstextview")  
 objeto de vista de texto  
   
  La vista es una manera de mostrar texto en el búfer.  Incluye características como ajuste de línea, y la esquematización, de modo que se ven en la vista no es una representación exacta de texto en el búfer.  

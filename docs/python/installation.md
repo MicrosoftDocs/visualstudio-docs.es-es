@@ -57,14 +57,14 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 1. En el instalador de Visual Studio, seleccione la carga de trabajo **Web y nube > Desarrollo de Python**.
 
-    ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](~/docs/python/media/installation-python-workload.png)
+    ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](~/python/media/installation-python-workload.png)
 
     > [!Note]
     > Python también se incluye en la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**.
 
 1. En el lado derecho del instalador, seleccione los intérpretes de Python y otras herramientas relacionadas que desee incluir. Por ejemplo, si va a desarrollar extensiones de C++ para Python, incluya la opción **Herramientas de desarrollo nativo Python**.
 
-    ![Opciones de desarrollo de Python en el instalador de Visual Studio](~/docs/python/media/installation-python-options.png)
+    ![Opciones de desarrollo de Python en el instalador de Visual Studio](~/python/media/installation-python-options.png)
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,7 +74,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 1. Seleccione **Lenguajes de programación > Herramientas de Python para Visual Studio** y luego haga clic en **Siguiente**:
 
-    ![Opción de PTVS en el instalador de Visual Studio 2015](~/docs/python/media/installation-vs2015.png)    
+    ![Opción de PTVS en el instalador de Visual Studio 2015](~/python/media/installation-vs2015.png)    
 
 1. Una vez completada la instalación de Visual Studio, [instale un intérprete de Python de su elección](python-environments.md#selecting-and-installing-python-interpreters).
 

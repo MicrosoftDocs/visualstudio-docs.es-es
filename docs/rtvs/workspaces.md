@@ -43,7 +43,7 @@ Un área de trabajo de Herramientas de R para Visual Studio (RTVS) le permite co
 
 Para abrir la ventana **Áreas de trabajo**, use el comando **Herramientas de R > Ventanas > Áreas de trabajo** o presione Ctrl+9.
 
-![Ventana Áreas de trabajo en Herramientas de R para Visual Studio (VS2017)](~/docs/rtvs/media/workspaces-window.png)
+![Ventana Áreas de trabajo en Herramientas de R para Visual Studio (VS2017)](~/rtvs/media/workspaces-window.png)
 
 En esta ventana, la marca de verificación verde indica el área de trabajo activa a la que está enlazado RTVS. Al seleccionar una flecha azul, se establece el área de trabajo activa. El icono de configuración (engranaje) a la derecha de cada área de trabajo le permite cambiar sus argumentos de línea de comandos, ubicación y nombre. La X roja quita un área de trabajo agregada manualmente.
 
@@ -76,7 +76,7 @@ RTVS podría no detectar un intérprete de R que se instale de forma no estánda
 1. Escriba la ruta de acceso a la carpeta raíz de R, que es la que contiene la carpeta `bin` con el intérprete y los argumentos de línea de comandos opcionales para pasar al intérprete cuando se inicia RTVS.
 1. Seleccione **Guardar** cuando haya terminado.
 
-![Agregar una nueva área de trabajo](~/docs/rtvs/media/workspaces-add-new.png)
+![Agregar una nueva área de trabajo](~/rtvs/media/workspaces-add-new.png)
 
 ## <a name="remote-workspaces"></a>Áreas de trabajo remotas
 
@@ -102,7 +102,7 @@ Para cambiar el área de trabajo activa, seleccione la flecha azul situada al la
 
 Si intenta cambiar a un área de trabajo local que se ha desinstalado o un área de trabajo remota que no está disponible, podría encontrarse con situaciones donde un proyecto de RTVS no está enlazado a ninguna área de trabajo. Como resultado, es posible que aparezca un error como el siguiente al escribir código en la ventana interactiva o, de lo contrario, intentar ejecutar código. Para corregir este problema, cambie simplemente a otra área de trabajo en la ventana Áreas de trabajo. Si no hay ninguna disponible, deberá instalar un intérprete de R. También puede intentar reiniciar Visual Studio si ha instalado un intérprete con Visual Studio en ejecución.
 
-![Error cuando no hay ninguna área de trabajo enlazada a RTVS](~/docs/rtvs/media/workspaces-disconnected-interactive-window.png)
+![Error cuando no hay ninguna área de trabajo enlazada a RTVS](~/rtvs/media/workspaces-disconnected-interactive-window.png)
 
 ### <a name="switching-to-a-remote-workspace"></a>Cambiar a un área de trabajo remota
 
@@ -110,7 +110,7 @@ RTVS le pide las credenciales al conectarse por primera vez a un área de trabaj
 
 Según la configuración del servidor, puede ver una advertencia de certificado al conectarse: "El certificado de seguridad presentado por los servicios remotos de R no nos permite comprobar que se está conectando de verdad a la máquina (nombre)".
 
-![Advertencia de certificado autofirmado al conectarse a un área de trabajo remota](~/docs/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
+![Advertencia de certificado autofirmado al conectarse a un área de trabajo remota](~/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
 
 El certificado es un documento que presenta a RTVS la máquina a la que está intentando conectarse, que contiene un campo que identifica el URI de la máquina. La advertencia aparece cuando RTVS detecta una discrepancia entre el URI del certificado y el URI usado para conectarse a la máquina, lo que indica que es posible que se haya comprometido la seguridad del servidor.
 
@@ -145,7 +145,7 @@ Los archivos se copian en el servidor remoto de la siguiente forma:
 
 Si RTVS copia archivos cuando un proyecto está en ejecución (y exactamente qué archivos se copian) se controla a través de las [propiedades del proyecto](projects.md#project-properties). Para abrir esta página, seleccione el comando de menú **Proyecto > Propiedades de (nombre)** o haga clic con el botón derecho en el Explorador de soluciones y seleccione **Propiedades...**
 
-![Pestaña Ejecutar de las propiedades del proyecto con configuración de transferencia de archivos](~/docs/rtvs/media/workspaces-remote-file-transfer-filter-settings.png)
+![Pestaña Ejecutar de las propiedades del proyecto con configuración de transferencia de archivos](~/rtvs/media/workspaces-remote-file-transfer-filter-settings.png)
 
 Aquí, **Transfer files on run** (Transferir archivos en ejecución) determina si RTVS copia automáticamente los archivos del proyecto. Después, el valor **Files to transfer** (Archivos que se transferirán) filtra exactamente qué archivos se transfieren. El valor predeterminado es copiar solo archivos `.R`, `.Rmd`, `.sql`, `.md` y `.cpp`. Esto se hace para evitar copiar de forma involuntaria grandes archivos de datos en el servidor con cada ejecución. 
 

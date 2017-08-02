@@ -96,7 +96,7 @@ caps.handback.revision: 87
   
  Aquí tiene un ejemplo de lo que puede hacer un complemento de VSTO. Este complemento de VSTO agrega controles de la Cinta, un panel de tareas personalizado y un cuadro de diálogo a PowerPoint.  
   
- ![Solución de complemento para PowerPoint](~/docs/vsto/media/powerpointaddin.png "Solución de complemento para PowerPoint")  
+ ![Solución de complemento para PowerPoint](~/vsto/media/powerpointaddin.png "Solución de complemento para PowerPoint")  
   
  **Más información**  
   

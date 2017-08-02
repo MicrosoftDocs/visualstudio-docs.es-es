@@ -29,7 +29,7 @@ caps.handback.revision: 29
   
  Para quitar el ensamblado de personalización, se puede usar uno de los métodos RemoveCustomization proporcionados por el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  El método que use depende de si desea quitar la personalización en tiempo de ejecución \(es decir, ejecutando el código de la personalización mientras está abierto el documento de Word o el libro de Excel\) o de si desea quitarla de un documento cerrado o un documento que está en un servidor que no tiene instalado Microsoft Office.  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para obtener una demostración en vídeo relacionada con este tema, vea [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para obtener una demostración en vídeo relacionada con este tema, vea [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### Para quitar el ensamblado de personalización en tiempo de ejecución  
   

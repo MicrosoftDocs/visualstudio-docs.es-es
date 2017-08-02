@@ -70,7 +70,7 @@ En comparación con un certificado de una entidad de confianza, un certificado a
 
 Por este motivo, RTVS emite siempre la siguiente advertencia cuando se conecta a un servidor con un certificado autofirmado:
 
-![Cuadro de diálogo de advertencia de certificado autofirmado](~/docs/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
+![Cuadro de diálogo de advertencia de certificado autofirmado](~/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
 
 Para emitir un certificado autofirmado:
 
@@ -93,7 +93,7 @@ Para obtener información, vea [certificados autofirmados](https://en.wikipedia.
 
 Para instalar el certificado en el equipo remoto, ejecute `certlm.msc` (el administrador de certificados) desde un símbolo del sistema. Haga clic con el botón derecho en la carpeta **Personal** y seleccione el comando **Todas las tareas > Importar**:
 
-![Comando de importación de certificado](~/docs/rtvs/media/workspaces-remote-certificate-import.png)
+![Comando de importación de certificado](~/rtvs/media/workspaces-remote-certificate-import.png)
 
 
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Conceder permisos para leer la clave privada del certificado SSL
@@ -105,7 +105,7 @@ Una vez que se ha importado el certificado, conceda a la cuenta `NETWORK SERVICE
 1. Haga clic con el botón derecho en el certificado y seleccione el comando Administrar claves privadas en Todas las tareas
 1. En el cuadro de diálogo que aparece, seleccione **Agregar** y escriba `NETWORK SERVICE` como nombre de cuenta:
 
-    ![Cuadro de diálogo Administrar claves privadas, agregando NETWORK_SERVICE](~/docs/rtvs/media/workspaces-remote-manage-private-key-dialog.png)
+    ![Cuadro de diálogo Administrar claves privadas, agregando NETWORK_SERVICE](~/rtvs/media/workspaces-remote-manage-private-key-dialog.png)
 
 1. Seleccione **Aceptar** dos veces para cerrar los cuadros de diálogo y confirmar los cambios.
 

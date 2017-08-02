@@ -29,7 +29,7 @@ La característica de extensibilidad de JavaScript IntelliSense permite personal
   
  El servicio de lenguaje JavaScript proporciona las características de IntelliSense para las bibliotecas de otros fabricantes JavaScript que se agregan a un proyecto.  Para la mayoría de las bibliotecas, finalización de instrucciones proporcionan automáticamente el servicio de lenguaje.  La ilustración siguiente se muestra un ejemplo de la finalización de instrucciones:  
   
- ![Ejemplo de finalización de instrucciones](~/docs/ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
+ ![Ejemplo de finalización de instrucciones](~/ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
   
  Si la biblioteca contiene descripciones de variables, funciones, y de objetos de etiquetas estándar de comentario JavaScript \(\/\), se automáticamente se beneficia, de forma predeterminada, las características de extensibilidad de IntelliSense, que proporcionan información descriptiva en un cuadro móvil que aparece a la derecha de los elementos de una lista de finalización, o al escribir el paréntesis de apertura en una llamada de función.  Los comentarios del cuadro móvil contienen la descripción del miembro.  El ejemplo siguiente se muestra el cuadro móvil para una lista de finalización.  
   
@@ -315,7 +315,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  En appCode.js, escriba el código siguiente.  Cuando escribe, verá los comentarios estándar en la extensión mostrada como información de IntelliSense Quick.  
   
-     ![Ejemplo que muestra el uso de intellisense.annotate](~/docs/ide/media/js_intellisense_annotations.png "js\_intellisense\_annotations")  
+     ![Ejemplo que muestra el uso de intellisense.annotate](~/ide/media/js_intellisense_annotations.png "js\_intellisense\_annotations")  
   
 ###  <a name="Logging"></a> Envío de mensajes a la ventana de resultados  
  El procedimiento siguiente muestra cómo enviar mensajes a la ventana de salida.  Puede enviar mensajes para ayudar a depurar extensiones de IntelliSense.  
@@ -488,7 +488,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 4.  En appCode.js, escriba el código siguiente.  Cuando escribe, verá que el icono del espacio de nombres ha cambiado “{}”, como se utiliza en C\#.  
   
-     ![Ejemplo que muestra el uso de la propiedad Glyph](~/docs/ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
+     ![Ejemplo que muestra el uso de la propiedad Glyph](~/ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
   
 5.  En appCode.js, escriba el código siguiente.  Cuando escribe, verá un nuevo icono de enumeración para el miembro Enum1, y un nuevo icono de clase para el miembro SomeClass1.  
   
@@ -530,7 +530,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 3.  En appCode.js, escriba el código siguiente.  La lista de identificador en lugar de IntelliSense porque la función ajustada nunca se llama, lo que significa que la función de `throttled` no devuelve ningún resultado.  
   
-     ![Ejemplo de invalidación de los resultados de IntelliSense](~/docs/ide/media/js_intellisense_override.png "js\_intellisense\_override")  
+     ![Ejemplo de invalidación de los resultados de IntelliSense](~/ide/media/js_intellisense_override.png "js\_intellisense\_override")  
   
 4.  Agregue el código siguiente a exampleLib.intellisense.js.  Esto cambiará el comportamiento en tiempo de diseño para mostrar IntelliSense para la función ajustada, tal y como se esperaba.  
   
@@ -543,7 +543,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  En appCode.js, pruebe los resultados escribiendo el mismo código que especificó.  Esta vez, IntelliSense proporciona información deseada.  
   
-     ![Ejemplo de invalidación de los resultados de IntelliSense](~/docs/ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
+     ![Ejemplo de invalidación de los resultados de IntelliSense](~/ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
   
 ## Vea también  
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)   

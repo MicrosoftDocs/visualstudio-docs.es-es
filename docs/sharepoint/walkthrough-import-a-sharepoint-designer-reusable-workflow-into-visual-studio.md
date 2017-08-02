@@ -194,7 +194,7 @@ caps.handback.revision: 34
   
     1.  En **Explorador de soluciones**, elija el nodo de **SPD\_Workflow\_TestFT** .  
   
-    2.  Elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a una de las propiedades de la lista, como la propiedad de **Lista de destino** .  
+    2.  Elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a una de las propiedades de la lista, como la propiedad de **Lista de destino** .  
   
     3.  Rellene los valores que faltan en el Asistente para la personalización de SharePoint, y después elija el botón de **Finalizar** .  
   

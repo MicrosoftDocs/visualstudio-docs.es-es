@@ -60,17 +60,17 @@ Aquí le mostramos cómo recopilar y analizar el uso de CPU con compilaciones de
   
 3.  Elija **Uso de CPU** y luego elija **Iniciar**.  
   
-     ![Elegir el uso de CPU](~/docs/profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+     ![Elegir el uso de CPU](~/profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
 4.  Cuando se inicie la aplicación, haga clic en **Obtener número máximo**. Espere aproximadamente un segundo después de que se muestre el resultado y elija **Obtener async del número máximo**. Esperar entre los clics de botón hace que resulte más fácil aislar las rutinas de clic de botón en el informe de diagnóstico.  
   
 5.  Cuando aparezca la segunda línea de resultados, elija **Detener recolección** en el hub Rendimiento y diagnósticos.  
   
- ![Detener la recolección de datos de CpuUsage](~/docs/profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+ ![Detener la recolección de datos de CpuUsage](~/profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
  La herramienta Uso de CPU analiza y muestra el informe.  
   
- ![Informe de CpuUsage](~/docs/profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+ ![Informe de CpuUsage](~/profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analizar el informe de Uso de CPU  
   
@@ -78,36 +78,36 @@ Aquí le mostramos cómo recopilar y analizar el uso de CPU con compilaciones de
  Para comenzar a comprender la información del árbol de llamadas, vuelva a seleccionar el segmento `GetMaxNumberButton_Click` y vea los detalles del árbol de llamadas.  
   
 ####  <a name="BKMK_Call_tree_structure"></a> Estructura del árbol de llamadas  
- ![Árbol de llamadas GetMaxNumberButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![Árbol de llamadas GetMaxNumberButton_Click](~/profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
-|![Paso 1](~/docs/profiling/media/procguid_1.png "ProcGuid_1")|El nodo de nivel superior de los árboles de llamadas de Uso de CPU es un pseudonodo|  
-|![Paso 2](~/docs/profiling/media/procguid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, si la opción **Mostrar código externo** está deshabilitada, el nodo de segundo nivel es un nodo **[Código externo]** que contiene el código del sistema y Framework que inicia y detiene la aplicación, dibuja la IU, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|  
-|![Paso 3](~/docs/profiling/media/procguid_3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|  
-|![Paso 4](~/docs/profiling/media/procguid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|  
+|![Paso 1](~/profiling/media/procguid_1.png "ProcGuid_1")|El nodo de nivel superior de los árboles de llamadas de Uso de CPU es un pseudonodo|  
+|![Paso 2](~/profiling/media/procguid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, si la opción **Mostrar código externo** está deshabilitada, el nodo de segundo nivel es un nodo **[Código externo]** que contiene el código del sistema y Framework que inicia y detiene la aplicación, dibuja la IU, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|  
+|![Paso 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|  
+|![Paso 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|  
   
 ####  <a name="BKMK_External_Code"></a> Código externo  
  Código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.  
   
  Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
   
- ![Elegir la vista Filtro y, después, Mostrar código externo](~/docs/profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
+ ![Elegir la vista Filtro y, después, Mostrar código externo](~/profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
  Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]**:  
   
- ![Código externo anidado en el árbol de llamadas](~/docs/profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![Código externo anidado en el árbol de llamadas](~/profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
  Use el cuadro de búsqueda para localizar un nodo que esté buscando y luego use la barra de desplazamiento horizontal para visualizar los datos:  
   
- ![Buscar código externo anidado](~/docs/profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![Buscar código externo anidado](~/profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
 ###  <a name="BKMK_Call_tree_data_columns"></a> Columnas de datos del árbol de llamadas  
   
 |||  
 |-|-|  
-|**CPU total (%)**|![Porcentaje de ecuación de datos total](~/docs/profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función y las funciones llamadas por la función. Tenga en cuenta que esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU** , que compara la actividad total de la aplicación en un intervalo de tiempo con la capacidad total de CPU disponible.|  
-|**Solo CPU (%)**|![Porcentaje de autoecuación](~/docs/profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función, excluidas la actividad de las funciones llamadas por la función.|  
+|**CPU total (%)**|![Porcentaje de ecuación de datos total](~/profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función y las funciones llamadas por la función. Tenga en cuenta que esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU** , que compara la actividad total de la aplicación en un intervalo de tiempo con la capacidad total de CPU disponible.|  
+|**Solo CPU (%)**|![Porcentaje de autoecuación](~/profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> El porcentaje de actividad de la CPU de la aplicación en el intervalo de tiempo seleccionado que usaron las llamadas a la función, excluidas la actividad de las funciones llamadas por la función.|  
 |**CPU total (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
 |**Propia CPU (ms)**|El número de milisegundos empleado en llamadas a la función en el intervalo de tiempo seleccionado y las funciones que fueron llamadas por la función.|  
 |**Módulo**|El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].|  
@@ -117,11 +117,11 @@ Aquí le mostramos cómo recopilar y analizar el uso de CPU con compilaciones de
   
  Para verlo en el ejemplo, vuelva a seleccionar el segmento `GetMaxNumberAsyncButton_Click` en la escala de tiempo.  
   
- ![Selección de informes GetMaxNumberAsyncButton_Click](~/docs/profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Selección de informes GetMaxNumberAsyncButton_Click](~/profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  Los dos primeros nodos bajo **[Código externo]** son los métodos generados por el compilador de la clase de la máquina de estados. El tercero es la llamada al método original. Al expandir los métodos generados se muestra lo que está sucediendo.  
   
- ![Árbol de llamadas GetMaxNumberAsyncButton_Click expandido](~/docs/profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Árbol de llamadas GetMaxNumberAsyncButton_Click expandido](~/profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
 -   `MainPage::GetMaxNumberAsyncButton_Click` hace poca cosa; administra una lista de valores de la tarea, calcula el valor máximo de los resultados y muestra el resultado.  
   

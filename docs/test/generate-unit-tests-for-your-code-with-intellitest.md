@@ -92,7 +92,7 @@ Los comandos de menú **Crear IntelliTest** y **Ejecutar IntelliTest**:
   
      Vea las advertencias para decidir qué quiere hacer.  
   
-     ![Vea las advertencias](~/docs/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![Vea las advertencias](~/test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  Tras investigar el código e identificar qué desea probar, puede corregir la advertencia para elegir las clases con las que se debe probar la interfaz.  
   

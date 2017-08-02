@@ -23,7 +23,7 @@ caps.handback.revision: 43
 # Ejecutar aplicaciones de la Tienda Windows en un equipo remoto
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
+![Se aplica solo a Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  La aplicación Herramientas remotas para Visual Studio permite ejecutar, depurar, generar perfiles y probar una aplicación de la Tienda Windows que se ejecuta en un dispositivo desde un segundo equipo que ejecuta Visual Studio. La ejecución en un dispositivo remoto es muy eficaz cuando el equipo de Visual Studio no admite la funcionalidad específica de las aplicaciones de la Tienda Windows, como la entrada táctil, la ubicación geográfica y la orientación física. En este tema se describen los procedimientos para configurar e iniciar una sesión remota.  
   

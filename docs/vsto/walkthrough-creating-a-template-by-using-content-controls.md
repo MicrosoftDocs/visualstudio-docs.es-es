@@ -87,19 +87,19 @@ caps.handback.revision: 42
     > [!NOTE]  
     >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla.  Para obtener más información, consulte [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  En el grupo **Controles**, haga clic en el botón **Texto** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
+6.  En el grupo **Controles**, haga clic en el botón **Texto** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
   
 7.  Haga clic en la segunda celda de la segunda columna \(junto a **Fecha de contratación**\).  
   
-8.  En el grupo **Controles**, haga clic en el botón **Selector de fecha** ![DatePickerContentControl](~/docs/vsto/media/datepicker.gif "DatePickerContentControl") para agregar <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
+8.  En el grupo **Controles**, haga clic en el botón **Selector de fecha** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl") para agregar <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
   
 9. Haga clic en la tercera celda de la segunda columna \(junto a **Puesto**\).  
   
-10. En el grupo **Controles**, haga clic en el botón **Cuadro combinado** ![ComboBoxContentControl](~/docs/vsto/media/combobox.gif "ComboBoxContentControl") para agregar <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a la tercera celda.  
+10. En el grupo **Controles**, haga clic en el botón **Cuadro combinado** ![ComboBoxContentControl](~/vsto/media/combobox.gif "ComboBoxContentControl") para agregar <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a la tercera celda.  
   
 11. Haga clic en la última celda de la segunda columna \(junto a **Imagen**\).  
   
-12. En el grupo **Controles**, haga clic en el botón **Control de contenido de imagen** ![PictureContentControl](~/docs/vsto/media/pictcontentcontrol.gif "PictureContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PictureContentControl> a la última celda.  
+12. En el grupo **Controles**, haga clic en el botón **Control de contenido de imagen** ![PictureContentControl](~/vsto/media/pictcontentcontrol.gif "PictureContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PictureContentControl> a la última celda.  
   
 ## Crear la tabla de comentarios de clientes  
  Cree una tabla que contenga tres tipos diferentes de controles de contenido donde el usuario pueda escribir información sobre los comentarios de los clientes.  
@@ -124,15 +124,15 @@ caps.handback.revision: 42
   
 6.  En la cinta de opciones, haga clic en la pestaña **Desarrollador**.  
   
-7.  En el grupo **Controles**, haga clic en el botón **Texto** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
+7.  En el grupo **Controles**, haga clic en el botón **Texto** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> a la primera celda.  
   
 8.  Haga clic en la segunda celda de la segunda columna \(junto a **Grado de satisfacción**\).  
   
-9. En el grupo **Controles**, haga clic en el botón **Lista desplegable** ![DropDownListContentControl](~/docs/vsto/media/dropdownlist.gif "DropDownListContentControl") para agregar <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la segunda celda.  
+9. En el grupo **Controles**, haga clic en el botón **Lista desplegable** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl") para agregar <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la segunda celda.  
   
 10. Haga clic en la última celda de la segunda columna \(junto a **Comentarios**\).  
   
-11. En el grupo **Controles**, haga clic en el botón **Texto enriquecido** ![RichTextContentControl](~/docs/vsto/media/richtextcontrol.gif "RichTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a la última celda.  
+11. En el grupo **Controles**, haga clic en el botón **Texto enriquecido** ![RichTextContentControl](~/vsto/media/richtextcontrol.gif "RichTextContentControl") para agregar <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a la última celda.  
   
 ## Rellenar el cuadro combinado y la lista desplegable mediante programación  
  Puede inicializar los controles de contenido en tiempo de diseño mediante la ventana **Propiedades** en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  También puede inicializarlos en tiempo de ejecución, lo que le permite establecer sus estados iniciales dinámicamente.  En este tutorial, use código para rellenar las entradas de <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> y <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> en tiempo de ejecución para poder ver cómo funcionan estos objetos.  

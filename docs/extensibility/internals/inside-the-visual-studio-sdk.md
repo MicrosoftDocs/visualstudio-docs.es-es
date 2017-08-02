@@ -42,7 +42,7 @@ Esta sección proporciona información detallada acerca de las extensiones de Vi
 ## <a name="extensibility-architecture"></a>Arquitectura de extensibilidad  
  En la siguiente ilustración muestra la arquitectura de extensibilidad de Visual Studio. VSPackages proporcionan funcionalidad de la aplicación, que se comparte entre el IDE como servicios. El IDE estándar también ofrece una amplia gama de servicios, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que proporcionan acceso a las funciones de ventana del IDE.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
   
- ![Gráfico de arquitectura de entorno](~/docs/extensibility/internals/media/environment.gif "environment")  
+ ![Gráfico de arquitectura de entorno](~/extensibility/internals/media/environment.gif "environment")  
 Vista generalizada de la arquitectura de Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -75,7 +75,7 @@ Vista generalizada de la arquitectura de Visual Studio
   
  Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas.  
   
- ![Captura de pantalla](~/docs/extensibility/internals/media/t1gui.png "T1gui")  
+ ![Captura de pantalla](~/extensibility/internals/media/t1gui.png "T1gui")  
   
  Algunas de las ventanas de herramientas se acoplan entre sí en un solo panel que muestra la ventana de herramientas del explorador de soluciones y oculta las otras ventanas de herramientas, pero hace que estén disponibles, haga clic en las pestañas. La imagen muestran dos ventanas de herramientas, el **lista de errores** y **salida** ventana, acoplada juntas en un único panel.  
   

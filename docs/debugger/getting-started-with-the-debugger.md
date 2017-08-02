@@ -47,7 +47,7 @@ static void Main(string[] args)
   
  Puede detener la ejecución el tiempo suficiente para ver la ventana de consola estableciendo un punto de interrupción y ejecutando después paso a paso.  Para establecer un punto de interrupción, coloque el cursor en la línea `Console.WriteLine` y haga clic en **Depurar \/ Nuevo punto de interrupción \/ Punto de interrupción de función**, o bien haga clic en el margen izquierdo en la misma línea.  El punto de interrupción debe tener un aspecto similar a este:  
   
- ![Establecer un punto de interrupción](~/docs/debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
+ ![Establecer un punto de interrupción](~/debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
  Para obtener más información sobre puntos de interrupción, consulte [Usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
@@ -55,7 +55,7 @@ static void Main(string[] args)
   
  Ahora veamos los valores de las variables.  Justo debajo de la ventana de código debería ver las ventanas **Automático**, **Locales** e **Inspección**.  Estas ventanas muestran los valores actuales de las variables en tiempo de ejecución.  Las ventanas **Automático** y **Locales** muestran testInt con un valor de **10**.  
   
- ![Ventana de Automático al depurar](~/docs/debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![Ventana de Automático al depurar](~/debugger/media/getstartedwindows.png "GetStartedWindows")  
   
  Para obtener más información sobre las ventanas **Automático** y **Locales**, vea [Ventanas de variables](../Topic/Variable%20Windows.md).  
   
@@ -79,7 +79,7 @@ private static void Method1()
   
  Establezca un punto de interrupción en la llamada `Method1();` del método Principal e inicie la depuración.  Cuando la ejecución se interrumpa, haga clic en **Depurar \/ Paso a paso por instrucciones** \(o **Paso a paso por instrucciones** en la barra de herramientas, o **F11**\).  La ejecución vuelve a interrumpirse en la primera llave de Method1\(\):  
   
- ![Depurar paso a paso el código](~/docs/debugger/media/getstartedstepinto.png "GetStartedStepInto")  
+ ![Depurar paso a paso el código](~/debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
  Detenga la depuración e iníciela de nuevo y, cuando la ejecución se detenga en el punto de interrupción, haga clic en **Depurar \/ Paso a paso por procedimientos**  \(o **Paso a paso por procedimientos** en la barra de herramientas, o **F10**\).  La ejecución se interrumpe nuevamente en `Console.WriteLine("end");`.  
   

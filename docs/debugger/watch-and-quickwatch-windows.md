@@ -84,11 +84,11 @@ static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i =
   
  Por ejemplo, si el código aparece en la sección anterior, puede obtener el promedio de los tres valores como se indica a continuación:  
   
- ![WatchExpression](~/docs/debugger/media/watchexpression.png "WatchExpression")  
+ ![WatchExpression](~/debugger/media/watchexpression.png "WatchExpression")  
   
  En general, las reglas de evaluación de expresiones de la ventana **Inspección** son las mismas que las reglas de evaluación de expresiones en el lenguaje de programación. Si la expresión tiene un error de sintaxis, puede esperar el mismo error del compilador que se produciría en el editor de código. A continuación se ofrece un ejemplo:  
   
- ![WatchExpressionError](~/docs/debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![WatchExpressionError](~/debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Actualizar valores de Inspección que no están actualizados  
  En determinadas circunstancias, es posible que aparezca un icono de actualización \(un círculo con dos flechas o un círculo con dos líneas onduladas\) cuando se evalúa una expresión en la ventana **Inspección**.  Por ejemplo, si tiene desactivada la evaluación de propiedades \(**Herramientas \/ Opciones \/ Depuración \/ Habilitar evaluación de propiedades y otras llamadas a función implícitas**\) y tiene el siguiente código:  

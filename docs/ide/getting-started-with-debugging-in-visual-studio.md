@@ -47,15 +47,15 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  La configuración de compilación predeterminada es **Depuración**.  
 
- ![Botón de compilación de depuración de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
+ ![Botón de compilación de depuración de Visual Studio](~/ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
  También puede especificar una plataforma de compilación de destino específica, como **x86** (CPU Intel de 32 bits), **x64** (CPU Intel de 64 bits) y **ARM** (CPU ARM; solo se admite para ciertos tipos de aplicación). El valor predeterminado es **x86** para proyectos administrados y nativos. Para cambiarlo, haga clic en la lista desplegable de plataforma de compilación y seleccione una plataforma diferente o **Administrador de configuración...**  
 
- ![Ventana del Administrador de archivos de configuración de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
+ ![Ventana del Administrador de archivos de configuración de Visual Studio](~/ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
  Puede especificar la configuración de compilación de destino mediante el **Administrador de configuración**. Inícielo, haga clic en la lista desplegable **Configuración** o **CPU** y seleccione **Nuevo...** para crear una nueva compilación o plataforma.  
 
- ![Ventana del Administrador de configuración de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
+ ![Ventana del Administrador de configuración de Visual Studio](~/ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
 
  Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y pulse una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).  
 
@@ -64,7 +64,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 ### <a name="building-your-code"></a>Compilar el código  
  Una vez configurada la compilación, es el momento de compilar el proyecto. La manera más sencilla de hacerlo es presionar F7, pero también puede iniciar la compilación seleccionando **Compilar->Compilar solución** en el menú principal.  
 
- ![Selección del menú del proyecto de compilación de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
+ ![Selección del menú del proyecto de compilación de Visual Studio](~/ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
 
  Puede observar el proceso de compilación en la ventana de estado **Salida**, en la parte inferior de la interfaz de usuario de Visual Studio. Aquí se muestran los errores, las advertencias y las operaciones de compilación. Si tiene errores (o advertencias por encima de un nivel configurado), se producirá un error de compilación. Puede hacer clic en los errores y advertencias para ir a la línea donde se produjeron. Recompile el proyecto presionando **F7** de nuevo (para recompilar solo los archivos con errores) o **Ctrl+Alt+F7** (para realizar una recompilación limpia y completa).  
 
@@ -72,33 +72,33 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Cuando se realiza correctamente, verá resultados como estos en la ventana **Salida**.  
 
- ![Salida de compilación correcta de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
+ ![Salida de compilación correcta de Visual Studio](~/ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
 
 ### <a name="reviewing-the-error-list"></a>Revisar la lista de errores  
  Salvo que no haya realizado ninguna modificación en un código que ya se haya compilado correctamente, es probable que tenga un error. Si no está familiarizado con la codificación, probablemente tenga muchos. Los errores a veces son obvios, como un simple error de sintaxis o nombre de variable incorrecto, y a veces son difíciles de entender solo con un código críptico como guía. Para obtener una vista más clara de los problemas, vaya a la parte inferior de la ventana **Salida** de la compilación y haga clic en la pestaña **Lista de errores**. Se mostrará una vista más organizada de los errores y advertencias del proyecto, que ofrece también algunas opciones adicionales.  
 
- ![Lista de errores y salida de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
+ ![Lista de errores y salida de Visual Studio](~/ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
  Haga clic en la línea del error en la ventana **Lista de errores** para ir a la línea donde se ha producido el error. (O active los números de línea; para ello, haga clic en la barra **Inicio rápido** en la parte superior derecha, escriba "números de línea" y presione Entrar. Esta es la forma más rápida de acceder a la entrada de la ventana **Opciones** donde puede activar los números de línea. Obtenga información sobre cómo usar la barra **Inicio rápido** y ahórrese muchos clics en la interfaz de usuario).  
 
- ![Editor de Visual Studio con números de línea](~/docs/ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
+ ![Editor de Visual Studio con números de línea](~/ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
- ![Opción de números de línea de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
+ ![Opción de números de línea de Visual Studio](~/ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
 
  Use Ctrl+G para ir directamente al número de línea donde se ha producido el error.  
 
  El error se identifica con un "subrayado ondulado" rojo. Mantenga el mouse sobre él para obtener más información. Al corregirlo desaparecerá, aunque pueda insertar un nuevo error con la corrección. (Esto se denomina "regresión").  
 
- ![Error de Visual Studio al mantener el mouse](~/docs/ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
+ ![Error de Visual Studio al mantener el mouse](~/ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
  Recorra la lista de errores y soluciónelos todos en el código.  
 
- ![Ventana de errores de depuración de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
+ ![Ventana de errores de depuración de Visual Studio](~/ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
 
 ### <a name="reviewing-errors-in-detail"></a>Revisar los errores con detalle  
  Puede que muchos errores no tengan ningún sentido expresados como están en los términos del compilador. En esos casos, necesitará información adicional. En la ventana **Lista de errores**, puede hacer una búsqueda automática con Bing para obtener más información sobre el error (o advertencia); para ello, haga clic con el botón derecho en la línea de entrada correspondiente y seleccione **Ayuda para Mostrar mensaje** en el menú contextual.  
 
- ![Búsqueda en Bing de lista de errores de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
+ ![Búsqueda en Bing de lista de errores de Visual Studio](~/ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
 
  Se abre una pestaña en Visual Studio que hospeda los resultados de una búsqueda de Bing para el código y el texto del error. Los resultados provienen de muchos orígenes diferentes en Internet y puede que no todos sean útiles.  
 
@@ -109,28 +109,28 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Presione Alt+F11 (o seleccione **Analizar->Ejecutar análisis de código en la solución** en el menú superior) para iniciar el análisis estático de código. Puede llevar algún tiempo si tiene mucho código.  
 
- ![Elemento de menú de análisis de código en Visual Studio](~/docs/ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
+ ![Elemento de menú de análisis de código en Visual Studio](~/ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
 
  Las advertencias nuevas o actualizadas se mostrarán en la pestaña **Lista de errores**, en la parte inferior del IDE. Haga clic en las advertencias para ir directamente a ellas.  
 
- ![Lista de errores de Visual Studio con advertencias](~/docs/ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
+ ![Lista de errores de Visual Studio con advertencias](~/ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
 
  Las advertencias se identifican por un subrayado ondulado de verde amarillento brillante en lugar de un subrayado rojo. Mantenga el mouse sobre ellas para obtener más información y haga clic con el botón secundario en ellas para obtener un menú contextual con opciones de corrección o refactorización.  
 
- ![Advertencia de análisis de código de Visual Studio al mantener el mouse](~/docs/ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
+ ![Advertencia de análisis de código de Visual Studio al mantener el mouse](~/ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
 ### <a name="using-light-bulbs-to-fix-or-refactor-code"></a>Usar bombillas para corregir o refactorizar código  
  Las bombillas son una característica nueva de Visual Studio que permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz. Para acceder a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia (o presione Ctrl+. manteniendo el mouse sobre la línea ondulada) y, después, seleccione **Acciones rápidas**.  
 
- ![Opciones rápidas de bombilla de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Opciones rápidas de bombilla de Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.  
 
- ![Vista previa de bombilla de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Vista previa de bombilla de Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
  Las bombillas puede usarse siempre que los analizadores de código determinan que hay una posibilidad de corregir, refactorizar o mejorar el código. Haga clic en cualquier línea de código, haga clic con el botón derecho para abrir el menú contextual y seleccione **Opciones rápidas** (o bien, si prefiere la eficacia, presione Ctrl+.). Si hay disponibles opciones de refactorización o mejora de área, se mostrarán; de lo contrario, se mostrará el mensaje `No quick options available here` en la esquina inferior izquierda del IDE.  
 
- ![Texto "no opción" de bombilla de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Texto "no opción" de bombilla de Visual Studio](~/ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
  Con experiencia, puede usar rápidamente las teclas de dirección y Ctrl+. para comprobar si hay posibilidades de refactorización con las opciones rápidas y limpiar el código.  
 
@@ -139,15 +139,15 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 ### <a name="debugging-your-running-code"></a>Depurar el código en ejecución  
  Ahora que ha compilado el código correctamente y ha realizado un poco de limpieza, ejecútelo presionando F5 o seleccionando **Depuración->Iniciar depuración**. La aplicación se iniciará en un entorno de depuración para que pueda observar su comportamiento con detalle. El IDE de Visual Studio cambia mientras la aplicación se está ejecutando: la ventana **Salida** se sustituye por dos nuevas (en la configuración de ventanas predeterminada), que son la ventana con pestañas **Automático/Variables locales/Módulos/Inspección** y la ventana con pestañas **Pila de llamadas/Puntos de interrupción/Configuración de excepciones/Salida**. Estas ventanas tienen varias pestañas que permiten inspeccionar y evaluar las variables, los subprocesos, las pilas de llamadas y otros comportamientos de la aplicación mientras se ejecuta.  
 
- ![Ventanas automáticas y de pila de llamadas de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
+ ![Ventanas automáticas y de pila de llamadas de Visual Studio](~/ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
 
  Pruebe distintas acciones con la aplicación y observe los cambios. Si algo parece anómalo, pause la aplicación presionando Ctrl+Alt+Interrumpir (o haga clic en el botón **Pausar**).  
 
- ![Botón Interrumpir todo de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
+ ![Botón Interrumpir todo de Visual Studio](~/ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
 
  Presione F5 para continuar la ejecución de la aplicación (o haga clic en el botón **Continuar**).  
 
- ![Botón Continuar depuración de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
+ ![Botón Continuar depuración de Visual Studio](~/ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
 
  Puede detener la aplicación presionando Mayús+F5 o haciendo clic en el botón **Detener**. O bien, simplemente cierre la ventana principal de la aplicación (o el cuadro de diálogo de línea de comandos).  
 
@@ -158,7 +158,7 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Para establecer un punto de interrupción, haga clic en el margen más alejado de la línea en la que quiere que se produzca la interrupción, o seleccione la línea de código y presione F9. Al ejecutar el código, se detendrá antes de que se ejecuten las instrucciones de esta línea de código.  
 
- ![Punto de interrupción de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
+ ![Punto de interrupción de Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
 
  Cuando el código se interrumpe, la línea de código marcada no se ha ejecutado aún. En este momento, quizás quiera ejecutar las instrucciones de la línea de código marcada por el punto de interrupción e inspeccionar los valores cambiados. Esto se denomina "ejecutar paso a paso" el código. Si el código marcado es una llamada a método, para ejecutarlo paso a paso presione F11. También puede "saltarse" la línea de código presionando F10. Para obtener más información sobre la ejecución paso a paso del código, vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).  
 
@@ -179,24 +179,24 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
 
  Para establecer un punto de interrupción condicional y suspender el código cuando una variable se establezca en un determinado valor o supere un umbral determinado, haga clic en el margen para establecer un punto de interrupción y, después, seleccione el "engranaje" en el menú de desplazamiento que aparece.  
 
- ![Configuración de los puntos de interrupción de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
+ ![Configuración de los puntos de interrupción de Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
 
  Verá un cuadro de diálogo con este aspecto, donde puede establecer las condiciones específicas para que se produzca la interrupción.  
 
- ![Punto de interrupción condicional de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
+ ![Punto de interrupción condicional de Visual Studio](~/ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
 
  Para obtener más información sobre cómo declarar las expresiones que se han usado para evaluar los puntos de interrupción condicionales, vea el vídeo de Channel9 [Breakpoint Configuration Experience in Visual Studio](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiencia de configuración de puntos de interrupción en Visual Studio).  
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspeccionar el código en tiempo de ejecución  
  Cuando el código en ejecución alcanza un punto de interrupción y se detiene, puede inspeccionar las variables y las pilas de llamadas para determinar qué está sucediendo. ¿Los valores están dentro de los intervalos que esperaba? ¿Las llamadas se están realizando en el orden correcto?  
 
- ![Inspección del valor de tiempo de ejecución de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Inspección del valor de tiempo de ejecución de Visual Studio](~/ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
  Mantenga el mouse sobre una variable para ver los valores y las referencias que contiene actualmente. Si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o en las líneas de código que realizan la llamada. Suba los puntos de interrupción o agregue condiciones a los puntos de interrupción existentes para restringir aún más la búsqueda.  
 
  Además, Visual Studio muestra la ventana Herramientas de diagnóstico, donde puede observar el uso que hace la aplicación de la memoria y la CPU con el tiempo. Puede usarlas para buscar un uso intensivo de la CPU o una asignación de memoria imprevistos. Úsela con la ventana **Inspección** y con puntos de interrupción para determinar qué está causando un uso intensivo o problemas de liberación de recursos inesperados.  
 
- ![Ventana de herramientas de diagnóstico de Visual Studio](~/docs/ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
+ ![Ventana de herramientas de diagnóstico de Visual Studio](~/ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
 
 ### <a name="running-unit-tests"></a>Ejecutar pruebas unitarias  
  Las pruebas unitarias son programas que actúan sobre rutas de acceso a código en su aplicación o servicio. Visual Studio instala los marcos de pruebas unitarias de Microsoft tanto para código administrado como nativo. Use un entorno de pruebas unitarias para crear pruebas unitarias, ejecutarlas y notificar los resultados de las mismas. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa la edición de Visual Studio Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.  

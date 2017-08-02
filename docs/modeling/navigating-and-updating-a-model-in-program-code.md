@@ -74,7 +74,7 @@ Puede escribir código para crear y eliminar elementos del modelo, establecer su
   
  Este modelo es una instancia de este DSL:  
   
- ![Modelo de árbol de familia Tudor](~/docs/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![Modelo de árbol de familia Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ### <a name="references-and-namespaces"></a>Espacios de nombres y referencias  
  Para ejecutar el código de este tema, se debe hacer referencia:  

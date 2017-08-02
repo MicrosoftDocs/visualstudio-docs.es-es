@@ -41,23 +41,23 @@ ms.lasthandoff: 05/12/2017
 
 Visual Studio IntelliSense muestra información sobre las funciones que puede llamar, miembros de objetos, argumentos de función y [fragmentos de código](code-snippets.md) directamente en su campo visual al escribir código. También muestra posibles finalizaciones mientras escribe y las completa al presionar las teclas Tab o Entrar (consulte [Opciones del editor](code-editing.md#editor-options) de la pestaña **Avanzadas**). IntelliSense está disponible en el editor y en la [ventana interactiva](interactive-repl.md).
 
-![IntelliSense muestra una signatura de función](~/docs/rtvs/media/intellisense-function-signature.png) 
+![IntelliSense muestra una signatura de función](~/rtvs/media/intellisense-function-signature.png) 
 
 Al escribir una función o cualquier otra instrucción, IntelliSense proporciona un menú de finalización automática (que distingue mayúsculas de minúsculas) filtrado por lo que ya ha escrito:
 
-![Menú de finalización automática de IntelliSense](~/docs/rtvs/media/intellisense-auto-complete-menu.png)
+![Menú de finalización automática de IntelliSense](~/rtvs/media/intellisense-auto-complete-menu.png)
 
 Si presiona Tab (o bien Entrar o la barra espaciadora, según cómo estén configuradas las opciones), se inserta el elemento seleccionado en la lista desplegable. Puede cambiar la selección con las teclas de dirección. 
 
 IntelliSense también proporciona sugerencias para miembros de objetos de R:
  
-![Sugerencias de IntelliSense para miembros de objeto](~/docs/rtvs/media/intellisense-auto-complete-r-objects.png)
+![Sugerencias de IntelliSense para miembros de objeto](~/rtvs/media/intellisense-auto-complete-r-objects.png)
  
 Si presiona ESC, se descarta el menú. Puede hacer que vuelva a aparecer con Ctrl+Barra espaciadora.
 
 Si escribe el `(` de apertura de una llamada de función, se inserta el `)` de cierre y se muestra la ayuda de signatura como se ha mostrado anteriormente:
 
-![Ayuda de signatura de IntelliSense para una función](~/docs/rtvs/media/intellisense-function-signature.png)
+![Ayuda de signatura de IntelliSense para una función](~/rtvs/media/intellisense-function-signature.png)
 
 De nuevo, al presionar ESC se cierra la ventana emergente; para signaturas de función, puede hacer que aparezca de nuevo con Ctrl+Mayús+Barra espaciadora.
 
@@ -68,13 +68,13 @@ De nuevo, al presionar ESC se cierra la ventana emergente; para signaturas de fu
 
 IntelliSense se aplica a funciones definidas por el usuario en el mismo archivo, incluida la finalización del nombre de parámetro:
 
-![IntelliSense para funciones definidas por el usuario](~/docs/rtvs/media/intellisense-same-file-functions.png)
+![IntelliSense para funciones definidas por el usuario](~/rtvs/media/intellisense-same-file-functions.png)
 
-![Finalización de parámetro de IntelliSense para funciones definidas por el usuario](~/docs/rtvs/media/intellisense-parameter-completion.png)
+![Finalización de parámetro de IntelliSense para funciones definidas por el usuario](~/rtvs/media/intellisense-parameter-completion.png)
 
 IntelliSense también se aplica a variables en el mismo archivo y en la sesión actual:
 
-![Finalización de variables de IntelliSense](~/docs/rtvs/media/intellisense-variable-completion.png)
+![Finalización de variables de IntelliSense](~/rtvs/media/intellisense-variable-completion.png)
 
 > [!Note]
 > En la ventana interactiva, IntelliSense analiza solo nombres de la sesión actual de R y omite los archivos del proyecto.
@@ -83,5 +83,5 @@ IntelliSense también se aplica a variables en el mismo archivo y en la sesión 
 
 Cuando aparece una bombilla (denominada etiqueta inteligente) en el margen, Visual Studio sugiere que hay disponible un acceso directo para una acción de uso frecuente. Por ejemplo, mantenga el puntero sobre una línea que contenga la instrucción `library` en el editor y verá una bombilla. Si selecciona la bombilla, se muestran las opciones disponibles:
 
-![Etiquetas inteligentes para R en el editor](~/docs/rtvs/media/intellisense-smart-tags.png)
+![Etiquetas inteligentes para R en el editor](~/rtvs/media/intellisense-smart-tags.png)
 

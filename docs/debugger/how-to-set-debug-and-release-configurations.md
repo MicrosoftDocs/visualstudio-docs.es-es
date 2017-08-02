@@ -60,7 +60,7 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
   
 2.  En la barra de herramientas, elija **Depurar** o **Versión** en el cuadro de lista **Configuraciones de soluciones**.  
   
-     ![configuración de la compilación de la barra de herramientas](~/docs/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![configuración de la compilación de la barra de herramientas](~/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
      Esta barra de herramientas no está disponible en las ediciones Express.  Puede utilizar los elementos de menú **Compilar solución F6** e **Iniciar depuración F5** para elegir la configuración.  
   

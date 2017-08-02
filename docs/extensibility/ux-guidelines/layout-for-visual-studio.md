@@ -143,7 +143,7 @@ La mayoría de los cuadros de diálogo de Visual Studio son [Diseño del cuadro 
   
  **Figura 08.01\-h: Cuadro de diálogo con temas**  
   
- ![Themed dialog dimensions](~/docs/extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
+ ![Themed dialog dimensions](~/extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801\-i\_ThemedDialogDimensions")  
   
  **Figura 08.01\-i: Cuadro de diálogo con temas: dimensiones**  
   
@@ -151,7 +151,7 @@ La mayoría de los cuadros de diálogo de Visual Studio son [Diseño del cuadro 
   
  **Figura 08.01\-j: Cuadro de diálogo con temas: fuentes**  
   
- ![Themed dialog colors](~/docs/extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
+ ![Themed dialog colors](~/extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801\-k\_ThemedDialogColors")  
   
  **Figura 08.01\-k: Cuadro de diálogo con temas: colores**  
   

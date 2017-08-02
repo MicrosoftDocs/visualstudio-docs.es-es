@@ -92,9 +92,9 @@ Puede mostrar rápida y fácilmente los datos de un archivo de base de datos loc
   
 2.  Para ejecutar la aplicación y mostrar los datos que agregó en el tutorial anterior, elija la tecla F5.  
   
-3.  Elija el icono amarillo de suma \(![Botón Agregar en Windows Forms](~/docs/data-tools/media/addrecord.png "AddRecord")\), agregue un registro de cliente y seleccione el icono de disco \(![Botón Guardar en Windows Forms](~/docs/data-tools/media/saveinwf.png "SaveInWF")\) para guardar los cambios.  
+3.  Elija el icono amarillo de suma \(![Botón Agregar en Windows Forms](~/data-tools/media/addrecord.png "AddRecord")\), agregue un registro de cliente y seleccione el icono de disco \(![Botón Guardar en Windows Forms](~/data-tools/media/saveinwf.png "SaveInWF")\) para guardar los cambios.  
   
-4.  Elimine el registro que acaba de crear. Para ello, elíjalo y seleccione el icono de eliminación de color rojo \(![Botón Eliminar en Windows Forms](~/docs/data-tools/media/deleterecord.png "DeleteRecord")\).  
+4.  Elimine el registro que acaba de crear. Para ello, elíjalo y seleccione el icono de eliminación de color rojo \(![Botón Eliminar en Windows Forms](~/data-tools/media/deleterecord.png "DeleteRecord")\).  
   
 ## Pasos siguientes  
  Si quiere crear o modificar objetos en el conjunto de datos, abra el origen de datos en el [Crear y editar conjuntos de datos con tipo](../data-tools/creating-and-editing-typed-datasets.md).  También puede agregar lógica de validación a los eventos <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> de las tablas de datos en el conjunto de datos.  Vea [Validar los datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  

@@ -75,7 +75,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 3.  Hacer que el icono distintivo. Este icono aparecerá en el **nuevo proyecto** cuadro de diálogo más adelante en el tutorial.  
   
-     ![Icono de proyecto simple](~/docs/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+     ![Icono de proyecto simple](~/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4.  El icono Guardar y cerrar el editor de iconos.  
   
@@ -471,7 +471,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 2.  En el **propiedades** windows, reducir el mapa de bits de 16 por 16 píxeles. Hacer que el mapa de bits distintivo.  
   
-     ![Comando de proyecto simple](~/docs/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+     ![Comando de proyecto simple](~/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3.  En el **propiedades** ventana, cambiar la **acción de compilación** del mapa de bits para **recurso incrustado**.  
   
@@ -546,7 +546,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 2.  En el proyecto recién creado, observe que SimpleProjectNode.bmp se utiliza como el icono de nodo de proyecto.  
   
-     ![Nodo Nuevo proyecto Proyecto simple](~/docs/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Nodo Nuevo proyecto Proyecto simple](~/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
 3.  Abra Program.cs en el editor de código. Debería ver el código fuente que es similar al código siguiente.  
   
@@ -649,6 +649,6 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
   
 6.  Empezar a depurar el proyecto. El nuevo proyecto debe compilar, ejecutar y mostrar "Hello VSX\!\!\!" en la ventana de consola.  
   
-     ![Comando de proyecto simple](~/docs/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+     ![Comando de proyecto simple](~/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
  ¡Enhorabuena\! Ha implementado un sistema de proyecto administrado básico.

@@ -23,7 +23,7 @@ caps.handback.revision: 8
 
 El entorno administra el Guardar, Guardar como, y los comandos de Guardar Todo.  Cuando un usuario selecciona **Guardar**, **Guardar como**, o **Guardar todos** de menú de **Archivo** o cierre la solución, por lo que **Guardar todos**, el proceso siguiente aparece.  
   
- ![Editor estándar](~/docs/extensibility/internals/media/public.gif "Public")  
+ ![Editor estándar](~/extensibility/internals/media/public.gif "Public")  
 Guarde, Guardar como, y un comando de Guardar Todo que administra para un editor estándar  
   
  este proceso se detalla en los pasos siguientes:  

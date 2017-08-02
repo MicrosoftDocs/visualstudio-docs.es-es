@@ -64,7 +64,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
  Para ver el código de referencia, mueva el ratón sobre la referencia:  
   
- ![CodeLens &#45; Ver la referencia](~/docs/ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+ ![CodeLens &#45; Ver la referencia](~/ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
  Para abrir el archivo que contiene la referencia, haga doble clic en la referencia.  
   
@@ -85,34 +85,34 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
  Para el código de Visual C# .NET o Visual Basic .NET que está almacenado con control de versiones de Team Foundation (TFVC) o Git, los detalles de CodeLens se obtienen en los niveles de clase y método (indicadores*code-element-level* ). Si el repositorio Git está hospedado en TfGit, también obtendrá vínculos a elementos de trabajo TFS.  
   
- ![Elemento de código&#45;indicadores de nivel](~/docs/ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+ ![Elemento de código&#45;indicadores de nivel](~/ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
  Para los demás tipos de archivos que se pueden abrir en el editor de Visual Studio, los detalles de CodeLens se obtienen para todo el archivo en un mismo lugar, en la parte inferior de la ventana (indicadores de*nivel de archivo* ).  
   
- ![Archivo&#45;indicadores de nivel de CodeLens](~/docs/ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+ ![Archivo&#45;indicadores de nivel de CodeLens](~/ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
  Para seleccionar los indicadores con el teclado, mantenga pulsada la tecla **ALT** para mostrar las teclas numéricas relacionadas.  
   
- ![Presione ALT para ver los números de acceso del teclado](~/docs/ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+ ![Presione ALT para ver los números de acceso del teclado](~/ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Buscar cambios en el código  
  Vea quién modificó su código C# o Visual Basic, así como los cambios que se realizaron, en los indicadores de nivel de elemento de código. Esto es lo que se ve cuando se usa el control de versiones de Team Foundation (TFVC) en Team Foundation Server o Visual Studio Team Services.  
   
- ![CodeLens: Obtener el historial de cambios del código de TFVC](~/docs/ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens: Obtener el historial de cambios del código de TFVC](~/ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
  El período de tiempo predeterminado son los últimos 12 meses. Para cambiar el código si se almacena en Team Foundation Server, ejecute el [comando TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) junto con el comando [CodeIndex](../ide/codeindex-command.md) y la marca **/indexHistoryPeriod** .  
   
  Para ver un historial detallado de todos los cambios, incluidos los de hace más de un año, elija **Mostrar todos los cambios de archivo**.  
   
- ![Mostrar todos los cambios de código](~/docs/ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
+ ![Mostrar todos los cambios de código](~/ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
   
  Esto abre la ventana Historial para los conjuntos de cambios.  
   
- ![Ventana Historial de todos los cambios de código](~/docs/ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
+ ![Ventana Historial de todos los cambios de código](~/ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
   
  Esto es lo que se ve cuando los archivos están en un repositorio Git y se elige el indicador de cambios en el nivel de elemento de código.  
   
- ![CodeLens: Obtener el historial de cambios del código de Git](~/docs/ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens: Obtener el historial de cambios del código de Git](~/ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  Busque los cambios realizados en todo un archivo (salvo en archivos de C# y Visual Basic) en los indicadores de nivel de archivo de la parte inferior de la ventana.  
   
@@ -122,7 +122,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
  También puede ver quién cambió el código a lo largo del tiempo. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.  
   
- ![CodeLens: Ver el historial de cambios de código como un gráfico](~/docs/ide/media/codelens.png "CodeLens")  
+ ![CodeLens: Ver el historial de cambios de código como un gráfico](~/ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Buscar cambios en la bifurcación actual  
  Suponga que su equipo tiene varias bifurcaciones, una bifurcación Main y una Development secundaria, para reducir el riesgo de que el código estable se interrumpa:  
@@ -139,7 +139,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
  ![CodeLens: Buscar el lugar donde se ha bifurcado el código](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>Buscar cambios entrantes de otras bifurcaciones  
- ![CodeLens: Buscar cambios de código en otras bifurcaciones](~/docs/ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens: Buscar cambios de código en otras bifurcaciones](~/ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  …como esta corrección de errores en la bifurcación Dev que se muestra aquí:  
   
@@ -167,14 +167,14 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
 |**Iconos**|**¿De dónde procede el cambio?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens: Icono de Cambiar desde bifurcación actual](~/docs/ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La bifurcación actual|  
-|![CodeLens &#45; Icono de Cambiar desde bifurcación primaria](~/docs/ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|La bifurcación primaria|  
-|![CodeLens: Icono de Cambiar desde bifurcación secundaria](~/docs/ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Una bifurcación secundaria|  
-|![CodeLens &#45; Icono de Cambiar desde bifurcación del mismo nivel](~/docs/ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Una bifurcación del mismo nivel|  
-|![CodeLens &#45; Icono de Cambiar desde bifurcación más alejada](~/docs/ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Una bifurcación más alejada que una primaria, secundaria o del mismo nivel|  
-|![CodeLens: Icono de Combinar desde primario](~/docs/ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Una combinación de la bifurcación primaria y una bifurcación secundaria|  
-|![CodeLens: Icono Combinar desde bifurcación secundaria](~/docs/ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Una combinación de una bifurcación secundaria con la bifurcación secundaria|  
-|![CodeLens: Icono de Combinar desde bifurcación no relacionada](~/docs/ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Una combinación de una bifurcación no relacionada (combinación sin base)|  
+|![CodeLens: Icono de Cambiar desde bifurcación actual](~/ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|La bifurcación actual|  
+|![CodeLens &#45; Icono de Cambiar desde bifurcación primaria](~/ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|La bifurcación primaria|  
+|![CodeLens: Icono de Cambiar desde bifurcación secundaria](~/ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Una bifurcación secundaria|  
+|![CodeLens &#45; Icono de Cambiar desde bifurcación del mismo nivel](~/ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Una bifurcación del mismo nivel|  
+|![CodeLens &#45; Icono de Cambiar desde bifurcación más alejada](~/ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Una bifurcación más alejada que una primaria, secundaria o del mismo nivel|  
+|![CodeLens: Icono de Combinar desde primario](~/ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Una combinación de la bifurcación primaria y una bifurcación secundaria|  
+|![CodeLens: Icono Combinar desde bifurcación secundaria](~/ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Una combinación de una bifurcación secundaria con la bifurcación secundaria|  
+|![CodeLens: Icono de Combinar desde bifurcación no relacionada](~/ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Una combinación de una bifurcación no relacionada (combinación sin base)|  
   
 ### <a name="find-linked-work-items"></a>Buscar elementos de trabajo vinculados  
  ![CodeLens &#45; Buscar elementos de trabajo para un código específico](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -186,11 +186,11 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
  ![CodeLens &#45; Buscar errores vinculados a los conjuntos de cambios](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")  
   
 ### <a name="contact-the-owner-of-an-item"></a>Ponerse en contacto con el propietario de un elemento  
- ![Ponerse en contacto con el propietario de un elemento](~/docs/ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
+ ![Ponerse en contacto con el propietario de un elemento](~/ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
   
  Abra el menú contextual de un elemento para ver las opciones de contacto. Si tiene Lync o Skype Empresarial instalado, verá estas opciones:  
   
- ![Opciones de contacto de un elemento](~/docs/ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
+ ![Opciones de contacto de un elemento](~/ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
 ##  <a name="FindRunUnitTests"></a> Buscar pruebas unitarias para el código  
  Obtenga más información sobre las pruebas unitarias que existen para el código sin tener que abrir el Explorador de pruebas. Necesitará:  
@@ -207,7 +207,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
      ![CodeLens &#45; Elegir el estado de prueba en el editor de código](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  Si ve un icono de advertencia ![CodeLens &#45; Pruebas unitarias que todavía no ejecutan la advertencia](~/docs/ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), ejecute las pruebas.  
+3.  Si ve un icono de advertencia ![CodeLens &#45; Pruebas unitarias que todavía no ejecutan la advertencia](~/ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon"), ejecute las pruebas.  
   
      ![CodeLens &#45; Ver pruebas unitarias que todavía no se ejecutan](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
@@ -215,7 +215,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
      ![CodeLens &#45; Ir a la definición de prueba unitaria](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  Revise los resultados de la prueba. Pulse el indicador de estado de la prueba (![CodeLens &#45; icono de prueba unitaria con error](~/docs/ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") o ![CodeLens &#45; icono de prueba unitaria correcta](~/docs/ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), o presione **Alt + 1**.  
+5.  Revise los resultados de la prueba. Pulse el indicador de estado de la prueba (![CodeLens &#45; icono de prueba unitaria con error](~/ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") o ![CodeLens &#45; icono de prueba unitaria correcta](~/ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")), o presione **Alt + 1**.  
   
      ![CodeLens &#45; Ver el resultado de la prueba unitaria](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
@@ -232,7 +232,7 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
   
  Active o desactive los indicadores de nivel de archivo de CodeLens con los iconos de botón de contenido adicional de la parte inferior de la ventana del editor.  
   
- ![Activar o desactivar los indicadores de nivel de archivo](~/docs/ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
+ ![Activar o desactivar los indicadores de nivel de archivo](~/ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
 ###  <a name="NoIndicators"></a> P: ¿Dónde está CodeLens?  
  **R:** CodeLens aparece en el código de Visual C# .NET y Visual Basic .NET, en el nivel de método, de clase, de indexador y de propiedad. CodeLens aparece en el nivel de archivo para todos los demás tipos de archivos.  
@@ -277,11 +277,11 @@ Averigüe qué ocurrió con el código mientras sigue centrado en su trabajo sin
 4.  Presione **TAB** para ir a la lista **Mostrar valores para** y, a continuación, presione **Flecha abajo** para seleccionar **CodeLens**.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: ¿Se puede mover la pantalla de aviso de CodeLens?  
- **A:** Sí, seleccione ![CodeLens &#45; Acoplar como una ventana](~/docs/ide/media/codelensdockwindow.png "CodeLensDockWindow") para acoplar CodeLens como una ventana.  
+ **A:** Sí, seleccione ![CodeLens &#45; Acoplar como una ventana](~/ide/media/codelensdockwindow.png "CodeLensDockWindow") para acoplar CodeLens como una ventana.  
   
- ![Acoplar la ventana del indicador de CodeLens](~/docs/ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
+ ![Acoplar la ventana del indicador de CodeLens](~/ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
- ![La ventana de referencias de CodeLens acoplada](~/docs/ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
+ ![La ventana de referencias de CodeLens acoplada](~/ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
   
 ### <a name="q-how-do-i-refresh-the-indicators"></a>P: ¿Cómo se actualizan los indicadores?  
  **R:** Esto depende del indicador:  

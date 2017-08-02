@@ -65,7 +65,7 @@ caps.handback.revision: 22
   
 1.  En el proyecto que creó anteriormente, elija una carpeta asignada.  
   
-2.  En la ventana de **Propiedades** , elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) de la propiedad de **Deployment location** .  
+2.  En la ventana de **Propiedades** , elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) de la propiedad de **Deployment location** .  
   
 3.  En el cuadro de diálogo de **Agregar carpeta asignada de SharePoint** , vaya a la carpeta que desea que la carpeta asignada para los informes.  
   

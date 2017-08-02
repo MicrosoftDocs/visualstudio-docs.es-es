@@ -27,7 +27,7 @@ caps.handback.revision: 35
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo: crear una lista de Excel conectada a una lista de SharePoint](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para una demostración en vídeo relacionada, vea [Cómo: crear una lista de Excel conectada a una lista de SharePoint](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## Asignar columnas  
   

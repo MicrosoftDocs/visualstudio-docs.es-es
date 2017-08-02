@@ -37,7 +37,7 @@ Implementan como VSPackage y administra el depurador de [!INCLUDE[vsprvs](../../
   
  El siguiente diagrama muestra la relación entre estos elementos del depurador de Visual Studio.  
   
- ![Información general sobre componentes de depuración](~/docs/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+ ![Información general sobre componentes de depuración](~/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## En esta sección  
  [Depurar paquete](../../extensibility/debugger/debug-package.md)  

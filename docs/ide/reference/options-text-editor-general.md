@@ -98,7 +98,7 @@ Este cuadro de diálogo le permite cambiar la configuración global del editor d
   
 |Margen de selección activado|Margen de selección desactivado|  
 |-------------------------|--------------------------|  
-|![Captura de pantalla de HTMLpageSelectionMarginOn](~/docs/ide/reference/media/vxselmaron.gif "vxSelmaron")|![Captura de pantalla de HTMLpageSelectionMarginOff](~/docs/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![Captura de pantalla de HTMLpageSelectionMarginOn](~/ide/reference/media/vxselmaron.gif "vxSelmaron")|![Captura de pantalla de HTMLpageSelectionMarginOff](~/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Margen del indicador  
  Cuando está seleccionada, muestra un margen vertical fuera del borde izquierdo del área de texto del editor. Cuando hace clic en este margen, aparecen un icono e información sobre herramientas relacionados con el texto. Por ejemplo, aparecen puntos de interrupción o accesos directos a la lista de tareas en el margen del indicador. La información del margen del indicador no se imprime.  

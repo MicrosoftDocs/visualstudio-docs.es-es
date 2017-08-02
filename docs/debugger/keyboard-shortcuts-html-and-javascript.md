@@ -23,7 +23,7 @@ caps.handback.revision: 5
 # M&#233;todos abreviados de teclado (HTML y JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Métodos abreviados de teclado de Visual Studio para depurar aplicaciones de la Tienda con HTML y JavaScript.  
   

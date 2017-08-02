@@ -65,7 +65,7 @@ caps.handback.revision: 2
   
  **Texto complementario en Visual Studio**  
   
- ![Supplemental text in Visual Studio](~/docs/extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
+ ![Supplemental text in Visual Studio](~/extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601\-c\_SupplementalText2")  
   
  **Texto complementario en Visual Studio**  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 2
   
 -   Al iniciar los cuadros de diálogo, mantener los estándares para los puntos suspensivos: no hay puntos suspensivos para la exploración, elipses, si la tarea requiere la interfaz de usuario adicional.  
   
-     ![Help link in Visual Studio](~/docs/extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
+     ![Help link in Visual Studio](~/extensibility/ux-guidelines/media/0601-e_helplink.png "0601\-e\_HelpLink")  
   
      **Puntos suspensivos \(...\) en la Ayuda de un vínculo indica que la tarea requiere la interfaz de usuario adicional.**  
   
@@ -260,7 +260,7 @@ caps.handback.revision: 2
   
 |Bueno|Incorrecta|  
 |-----------|----------------|  
-|"El número marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-   "Error \(449\): número no válido"<br />-   "Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Bad error message in Visual Studio](~/docs/extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
+|"El número marcado ya no está en servicio. Compruebe el número y vuelva a marcar o marcar 0 para el operador."|-   "Error \(449\): número no válido"<br />-   "Este error de excepción no controlada indica que la operación se completó correctamente".<br /><br /> ![Bad error message in Visual Studio](~/extensibility/ux-guidelines/media/0602-a_errordialog.png "0602\-a\_ErrorDialog")|  
   
 ## Acceso a la Ayuda  
   

@@ -44,17 +44,17 @@ ms.lasthandoff: 02/22/2017
 Eliminación de dependencias no deseadas es una parte importante de la administración de su deuda técnica.
 Validación en vivo de las dependencias es ahora incluye, proporcionar información precisa acerca de los problemas y beneficiarse plenamente de las nuevas características de la lista de errores y el editor.
 
-![Validación de dependencias en vivo en acción](~/docs/modeling/media/dep-validation-whatsnew-01.png)
+![Validación de dependencias en vivo en acción](~/modeling/media/dep-validation-whatsnew-01.png)
 
 Ha cambiado la experiencia de creación para realizar la validación de dependencias más reconocible y sea más accesible cambiando la terminología de "Diagrama de capas" a "Diagrama de dependencia".
 
 El **arquitectura** menú contiene ahora un comando para crear directamente un diagrama de dependencia:
 
-![Elemento de dependencia en directo en el menú de arquitectura](~/docs/modeling/media/dep-validation-whatsnew-02.png)
+![Elemento de dependencia en directo en el menú de arquitectura](~/modeling/media/dep-validation-whatsnew-02.png)
 
 … y se han cambiado los nombres de propiedad de una capa en un diagrama de dependencia y sus descripciones, para que sean más significativos:
 
-![Nombres de propiedad de dependencia en vivo actualizado](~/docs/modeling/media/dep-validation-whatsnew-03.png)
+![Nombres de propiedad de dependencia en vivo actualizado](~/modeling/media/dep-validation-whatsnew-03.png)
 
 Ahora verá el impacto de los cambios inmediatamente en los resultados del análisis para el código de la solución actual cada vez que guarde el diagrama. No tendrá que esperar más tiempo para la finalización del comando "Validar dependencias".
 

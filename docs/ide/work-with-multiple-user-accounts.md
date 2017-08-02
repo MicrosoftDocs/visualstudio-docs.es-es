@@ -31,11 +31,11 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 ### <a name="access-your-azure-account-in-server-explorer"></a>Obtener acceso a su cuenta de Azure en el Explorador de servidores  
  Presione **Ctrl + Alt + S** para abrir **Explorador de servidores**. Pulse el icono de Azure y, cuando se expanda, debería ver los recursos disponibles en la cuenta de Azure que está asociada con el identificador que ha usado para iniciar sesión en Visual Studio. Debe aparecer algo parecido a lo que se muestra a continuación (con la excepción de que verá sus propios recursos).
 
- ![El Explorador de servidores mostrando el nodo de Azure Tools expandido](~/docs/ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")  
+ ![El Explorador de servidores mostrando el nodo de Azure Tools expandido](~/ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")  
 
  La primera vez que use Visual Studio en cualquier dispositivo específico, el cuadro de diálogo solo mostrará las suscripciones registradas en el Id. con el que ha iniciado sesión en el IDE. Puede acceder a los recursos de cualquiera de las demás cuentas directamente desde el **Explorador de servidores** : haga clic con el botón secundario en el nodo de Azure, elija **Administrar y filtrar suscripciones** y, luego, agregue las cuentas desde el control de selector de cuenta. Si lo desea, después puede elegir otra cuenta haciendo clic en la flecha hacia abajo y eligiendo en la lista de cuentas. Después de elegir la cuenta, puede indicar qué suscripciones de esa cuenta desea mostrar en el Explorador de servidores.  
 
- ![Administrar el cuadro de diálogo Suscripciones de Azure](~/docs/ide/media/vs2015_manage_subs.png "vs2015_manage_subs")  
+ ![Administrar el cuadro de diálogo Suscripciones de Azure](~/ide/media/vs2015_manage_subs.png "vs2015_manage_subs")  
 
  La próxima vez que abra el Explorador de servidores, se mostrarán los recursos de esas suscripciones.  
 
@@ -51,7 +51,7 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 ###  <a name="a-nameaccessazurea-access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Obtener acceso a Azure Active Directory en un proyecto web  
  Azure AD ofrece compatibilidad para el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios web de API. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar sus cuentas de Azure AD existentes para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio. Para ver esto en funcionamiento, cree una aplicación web (**Archivo, Nuevo proyecto, C#, Nube, Aplicación web ASP.NET**). En el cuadro de diálogo Nuevo proyecto ASP.NET, elija **Cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.  
 
- ![Cuadro de diálogo Cambiar autenticación para ASP.NET](~/docs/ide/media/vs2015_change_authentication.png "VS2015_change_authentication")  
+ ![Cuadro de diálogo Cambiar autenticación para ASP.NET](~/ide/media/vs2015_change_authentication.png "VS2015_change_authentication")  
 
  Para obtener más información sobre los diferentes tipos de autenticación en ASP.NET, vea [Creating ASP.NET Web Projects in Visual Studio 2013 (Crear proyectos web de ASP.NET en Visual Studio 2013)](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (la información sobre autenticación sigue siendo pertinente para las versiones actuales de Visual Studio).  
 
@@ -61,7 +61,7 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Agregar una segunda cuenta de usuario a Visual Studio  
  Haga clic en la flecha hacia abajo que hay al lado de su nombre de usuario en la esquina superior de Visual Studio. Luego, pulse el elemento de menú **Configuración de la cuenta**. Aparece el cuadro de diálogo **Administrador de cuentas** y muestra la cuenta con la que inició sesión. Pulse el vínculo **Agregar una cuenta** en la esquina inferior del cuadro de diálogo para agregar una cuenta de Microsoft o una cuenta profesional o educativa nuevas.  
 
- ![Selector de cuentas de Visual Studio](~/docs/ide/media/vs2015_acct_picker.png "VS2015_acct_picker")  
+ ![Selector de cuentas de Visual Studio](~/ide/media/vs2015_acct_picker.png "VS2015_acct_picker")  
 
  Siga los avisos para escribir las credenciales de la cuenta nueva. La ilustración siguiente muestra el Administrador de cuentas después de que un usuario haya agregado su cuenta profesional de Contoso.com.  
 

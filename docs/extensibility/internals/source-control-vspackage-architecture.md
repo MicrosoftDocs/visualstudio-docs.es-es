@@ -40,7 +40,7 @@ Un paquete de control de código fuente es un Paquete que usa los servicios que 
   
  Cuando un paquete de control de código fuente es el paquete activo, por otra parte, el código auxiliar de control de código fuente se comunica directamente con el paquete mediante interfaces de paquete de control de código fuente de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .  El paquete de control de código fuente es responsable de hospedar su propia interfaz de usuario del control de código fuente.  
   
- ![Gráfico de la arquitectura de control de código fuente](~/docs/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+ ![Gráfico de la arquitectura de control de código fuente](~/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
  Para un paquete de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no proporciona código de control de código fuente o API para la integración.  Compárelo con el enfoque antes en [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md) donde el complemento de control de código fuente tiene que implementar un conjunto estrictamente de funciones y de devoluciones de llamada.  
   

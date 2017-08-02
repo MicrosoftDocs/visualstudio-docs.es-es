@@ -275,15 +275,15 @@ caps.handback.revision: 37
   
 6.  En la ventana **Propiedades**, especifique un valor de *taskToken* para la propiedad **CorrelationToken**.  
   
-7.  Expanda la propiedad de **CorrelationToken** eligiendo el signo más \(![Signo más de TreeView](~/docs/sharepoint/media/plus.gif "Signo más de TreeView")\) situado al lado.  
+7.  Expanda la propiedad de **CorrelationToken** eligiendo el signo más \(![Signo más de TreeView](~/sharepoint/media/plus.gif "Signo más de TreeView")\) situado al lado.  
   
 8.  Elija la flecha de lista desplegable en la propiedad del método de **OwnerActivityName** , y establezca el valor de *Workflow1* .  
   
-9. Elija la propiedad de **TaskId** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) para mostrar el cuadro de diálogo de **Propiedad de enlace** .  
+9. Elija la propiedad de **TaskId** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) para mostrar el cuadro de diálogo de **Propiedad de enlace** .  
   
 10. Elija la ficha de **Enlace a un nuevo miembro** , elija el botón de opción de **Cree el campo** , y elija el botón de **Aceptar** .  
   
-11. elija la propiedad de **TaskProperties** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/docs/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) para mostrar el cuadro de diálogo de **Propiedad de enlace** .  
+11. elija la propiedad de **TaskProperties** , y elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) para mostrar el cuadro de diálogo de **Propiedad de enlace** .  
   
 12. Elija la ficha de **Enlace a un nuevo miembro** , elija el botón de opción de **Cree el campo** , y elija el botón de **Aceptar** .  
   
@@ -363,7 +363,7 @@ caps.handback.revision: 37
   
 5.  En la ventana de **Propiedades** , elija la flecha de lista desplegable de la propiedad de **Condición** , y establezca el valor de *Code Condition* .  
   
-6.  Expanda la propiedad de **Condición** eligiendo el signo más \(![Signo más de TreeView](~/docs/sharepoint/media/plus.gif "Signo más de TreeView")\) situado junto a él, y establezca su valor en *checkApprovalNeeded*.  
+6.  Expanda la propiedad de **Condición** eligiendo el signo más \(![Signo más de TreeView](~/sharepoint/media/plus.gif "Signo más de TreeView")\) situado junto a él, y establezca su valor en *checkApprovalNeeded*.  
   
 7.  En el diseñador de flujo de trabajo, abra el menú contextual de la actividad de **logToHistoryListActivity1** y, a continuación **Generar controladores** para generar un método vacío para el evento de `MethodInvoking` .  
   

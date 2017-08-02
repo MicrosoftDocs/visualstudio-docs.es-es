@@ -27,7 +27,7 @@ caps.handback.revision: 33
 # Depurar el dise&#241;o mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  La pestaña **Diseño** del explorador DOM muestra el [Modelo de cuadros CSS](http://go.microsoft.com/fwlink/?LinkID=238778) para el elemento seleccionado en una aplicación de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], una aplicación de la Tienda de Windows Phone o una aplicación creada con Visual Studio Tools para Apache Cordova. Puedes utilizar esta representación visual del modelo de cuadros para identificar y modificar los valores relacionados con el diseño que afectan a la apariencia de los elementos.  
   

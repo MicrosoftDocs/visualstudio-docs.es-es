@@ -23,7 +23,7 @@ caps.handback.revision: 15
 # Ejecutar aplicaciones de la Tienda Windows en el equipo local
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica solo a Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
+![Se aplica solo a Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Para depurar, realizar pruebas o ejecutar análisis de rendimiento en una aplicación de la Tienda Windows, puede ejecutar la aplicación en el mismo equipo en el que se encuentre Visual Studio.  Si la pantalla del dispositivo permite los toques, puede probar todas las funciones de la aplicación. De lo contrario, solo podrá usar gestos de mouse y teclado.  
   

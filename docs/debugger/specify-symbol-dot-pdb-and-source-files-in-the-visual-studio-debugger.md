@@ -65,7 +65,7 @@ Un archivo de base de datos de programa \(.pdb\), también denominado archivo de
   
      ![Herramientas &#45; Opciones &#45; Depuración &#45; Página Símbolos](../debugger/media/dbg_tools_options_symbols.png "DBG\_Tools\_Options\_Symbols")  
   
-2.  Elija el icono de carpeta ![Herramientas&#47;Opciones&#47;Depuración&#47;Icono de carpeta Symbols](~/docs/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). En el cuadro **Ubicaciones del archivo de símbolos \(.pdb\)**, aparece texto modificable.  
+2.  Elija el icono de carpeta ![Herramientas&#47;Opciones&#47;Depuración&#47;Icono de carpeta Symbols](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). En el cuadro **Ubicaciones del archivo de símbolos \(.pdb\)**, aparece texto modificable.  
   
 3.  Escriba la dirección URL o la ruta de acceso del directorio del servidor de símbolos o de la ubicación del símbolo. La finalización de instrucciones le será de ayuda para especificar el formato correcto.  
   
@@ -214,7 +214,7 @@ Un archivo de base de datos de programa \(.pdb\), también denominado archivo de
   
 2.  Bajo el nodo **Propiedades comunes**, elija **Depurar archivos de código fuente**.  
   
-3.  Haga clic en el icono de carpeta ![Herramientas&#47;Opciones&#47;Depuración&#47;Icono de carpeta Symbols](~/docs/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). En la lista **Directorios que contienen código fuente**, aparece texto modificable.  
+3.  Haga clic en el icono de carpeta ![Herramientas&#47;Opciones&#47;Depuración&#47;Icono de carpeta Symbols](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). En la lista **Directorios que contienen código fuente**, aparece texto modificable.  
   
 4.  Agregue la ruta de acceso que desee buscar.  
   

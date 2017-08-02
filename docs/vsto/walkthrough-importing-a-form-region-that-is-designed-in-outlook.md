@@ -47,7 +47,7 @@ caps.handback.revision: 31
 > [!NOTE]  
 >  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Puede ver una demostración en vídeo relacionada en [Cómo: crear áreas de formulario de Outlook mediante Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Puede ver una demostración en vídeo relacionada en [Cómo: crear áreas de formulario de Outlook mediante Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
 ## Diseñar un área de formulario mediante el Diseñador de áreas de formulario de Outlook  
  En este paso diseñará un área de formulario en Outlook. A continuación, guardará el área de formulario en una ubicación fácil de encontrar para que pueda importar a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

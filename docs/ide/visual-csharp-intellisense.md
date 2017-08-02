@@ -108,7 +108,7 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   
  Para iniciar la operación Agregar using, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y, después, agregar `XmlTextReader` al cuerpo del método `Main`, aparecerá una etiqueta inteligente bajo el carácter situado en el extremo derecho de `XmlTextReader`, dado que aparece como una referencia de tipo que no se puede resolver.  
   
- ![Imagen de la etiqueta inteligente Agregar using](~/docs/ide/media/addusesmart.gif "AddUseSmart")  
+ ![Imagen de la etiqueta inteligente Agregar using](~/ide/media/addusesmart.gif "AddUseSmart")  
   
  Después, puede invocar Agregar using seleccionándola en el submenú **Resolver** del menú **IntelliSense** o el menú contextual, o invocando Agregar using mediante la etiqueta inteligente. La etiqueta inteligente sólo está visible cuando el cursor se coloca encima del tipo sin enlazar o junto a él.  
   

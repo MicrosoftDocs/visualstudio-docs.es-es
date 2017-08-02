@@ -141,11 +141,11 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 ## <a name="navigate-and-find-code"></a>Desplazarse y buscar código  
 Puede moverse por un documento de varias maneras diferentes. Además de las operaciones estándar, puede usar los botones **Navegar hacia atrás** (Ctrl + signo menos) y **Navegar hacia delante** (Ctrl + Mayús + signo menos) de la barra de herramientas para mover el punto de inserción a ubicaciones anteriores o para volver a ubicaciones más recientes en el documento activo. Estos botones retienen las últimas 20 ubicaciones del punto de inserción.
 
-![Botones de navegación hacia adelante y atrás](~/docs/ide/media/vs2017_nav_buttons.png)
+![Botones de navegación hacia adelante y atrás](~/ide/media/vs2017_nav_buttons.png)
 
 La característica de visualizador de estructura en el editor de código muestra *líneas guía de estructura*, es decir, líneas discontinuas verticales que indican las llaves coincidentes en el código base. Esto hace que sea más fácil ver dónde empiezan y acaban los bloques lógicos.
 
-![Visualizador de estructura](~/docs/ide/media/vside_structure_visualizer.png)
+![Visualizador de estructura](~/ide/media/vside_structure_visualizer.png)
 
 Para deshabilitar las líneas guía de estructura, vaya a **Herramientas**, **Opciones**, **Editor de texto**, **General** y desactive el cuadro **Mostrar líneas guía de estructura**.
 
@@ -167,7 +167,7 @@ Los siguientes comandos son métodos específicos para navegar por código :
 
  También puede usar la **barra de navegación** (los cuadros desplegables situados en la parte superior de la ventana de código) para buscar código en un código base. Puede elegir un tipo o un miembro para ir directamente a él. La barra de navegación aparece cuando se edita código en un código base de Visual Basic, C# o C++.
 
- ![Barra de navegación por el código](~/docs/ide/media/vside_navigation_bar.png)
+ ![Barra de navegación por el código](~/ide/media/vside_navigation_bar.png)
 
  Para ocultar la barra de navegación, cambie la opción **Barra de navegación** en la configuración Todos los lenguajes del editor de texto (**Herramientas**, **Opciones**, **Editor de texto**, **Todos los lenguajes**, o bien puede cambiar la configuración de lenguajes individuales). Puede navegar por los cuadros desplegables tal como se indica a continuación:  
 
@@ -194,7 +194,7 @@ Los comandos **Ir a** de Visual Studio realiza una búsqueda centrada en su cód
 1. En el menú principal, seleccione **Editar**, **Ir a**. Aparece un pequeño cuadro de texto en la esquina superior del editor de código.
 1. En el cuadro de texto, escriba el nombre del elemento de código que quiere buscar.
 
-    ![Ventana Navegar a](~/docs/ide/media/vside_navigatetowindow.png "Ventana Navegar a")
+    ![Ventana Navegar a](~/ide/media/vside_navigatetowindow.png "Ventana Navegar a")
 
     A medida que escribe, los resultados aparecen en una lista desplegable debajo del cuadro de texto.
 1. Para ir a un elemento, púlselo en la lista.
@@ -217,11 +217,11 @@ Por ejemplo, para limitar la búsqueda a solo símbolos de código, abra el cuad
 
 Además, puede cambiar rápidamente el filtro de búsqueda si selecciona los botones de la barra de herramientas del cuadro de diálogo Ir a. Los botones que cambian los filtros se encuentran a la izquierda y los botones que cambian el ámbito de la búsqueda se encuentran a la derecha.
 
-![](~/docs/ide/media/vside_navigation_toolbar.png)
+![](~/ide/media/vside_navigation_toolbar.png)
 
 Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el código, puede buscar elementos de código más rápido al escribir solo las letras en mayúscula del nombre del elemento de código. Por ejemplo, si el código tiene un tipo denominado `CredentialViewModel`, puede limitar la búsqueda si selecciona el filtro de tipo ("t") y escribe solo las letras mayúsculas del nombre (`CVM`) en el cuadro de diálogo Ir a.
 
-![Ventana Navegar a: buscar con mayúsculas](~/docs/ide/media/vside_capitalsearch.png)
+![Ventana Navegar a: buscar con mayúsculas](~/ide/media/vside_capitalsearch.png)
 
 Esta característica es útil si el código tiene nombres largos.
 
@@ -239,7 +239,7 @@ Los resultados aparecen en una ventana de herramientas denominada **'*{element}*
 
 También puede mantener el puntero sobre cualquier resultado de la búsqueda para obtener una vista previa del elemento devuelto.
 
-![Ventana de herramientas Buscar todas las referencias](~/docs/ide/media/vside_findallreferences.png)
+![Ventana de herramientas Buscar todas las referencias](~/ide/media/vside_findallreferences.png)
 
 Para conservar los resultados de la búsqueda, haga clic en el botón **Mantener resultados**. Al hacer clic en este botón, los resultados de la búsqueda actual permanecen en esta ventana y los resultados de la búsqueda nueva aparecen en una ventana de herramientas nueva.
 

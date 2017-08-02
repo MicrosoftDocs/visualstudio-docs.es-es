@@ -67,7 +67,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 En una instantánea de la herramienta [Uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) sin el seguimiento del montón personalizado, solo se mostraría la asignación de 8192 bytes y ninguna de las asignaciones personalizadas realizadas por el grupo:
 
-![Asignación del montón de Windows](~/docs/profiling/media/heap-example-windows-heap.png)
+![Asignación del montón de Windows](~/profiling/media/heap-example-windows-heap.png)
 
 Mediante los pasos siguientes, podemos usar esta misma herramienta para realizar un seguimiento del uso de memoria en el montón personalizado.
 
@@ -158,17 +158,17 @@ Esta biblioteca se puede usar fácilmente en C y C++.
 ## <a name="tracking-memory-usage"></a>Seguimiento del uso de la memoria
 Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado. 
 
-![Habilitar la generación de perfiles de montón](~/docs/profiling/media/heap-enable-heap.png)
+![Habilitar la generación de perfiles de montón](~/profiling/media/heap-enable-heap.png)
 
 Para ver el seguimiento del montón personalizado, use la lista desplegable **Montón** situada en la esquina superior derecha de la ventana **Instantánea** para cambiar la vista del *Montón de NT* a su propio montón, con el nombre que le ha asignado anteriormente.
 
-![Selección del montón](~/docs/profiling/media/heap-example-custom-heap.png)
+![Selección del montón](~/profiling/media/heap-example-custom-heap.png)
 
 Mediante el ejemplo de código anterior, en el que `MemoryPool` crea un objeto `VSHeapTracker::CHeapTracker`, y nuestro propio método `allocate` que llama al método `AllocateEvent`, ahora puede ver el resultado de esa asignación personalizada, que muestra tres instancias con un total de 24 bytes, todas de tipo `Foo`.
 
 El montón predeterminado *Montón de NT* tiene el mismo aspecto que antes, pero se le ha agregado el objeto `CHeapTracker`.
 
-![Montón de NT con el rastreador](~/docs/profiling/media/heap-example-windows-heap.png)
+![Montón de NT con el rastreador](~/profiling/media/heap-example-windows-heap.png)
 
 Al igual que en el montón de Windows estándar, también puede usar esta herramienta para comparar instantáneas y buscar fugas y daños en el montón personalizado. Esto se describe en la documentación principal sobre el [uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage).
 

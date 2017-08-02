@@ -48,7 +48,7 @@ Visual Studio y Blend para Visual Studio proporcionan tanto herramientas visuale
   
 -   **Una interfaz de usuario coherente:** puede diseñar sus aplicaciones en el contexto familiar de la interfaz de usuario de Visual Studio, que permite cambiar entre los IDE de manera más agradable y productiva. Blend para Visual Studio usa el tema oscuro de Visual Studio, lo que le ayuda a centrarse en el contenido que está diseñando, ya que mejora el contraste entre el contenido y la interfaz de usuario. Vea [Creating a UI by using XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md) (Crear una IU con el Diseñador XAML en Visual Studio).  
   
-     ![Blend para IDE de Visual Studio](~/docs/designers/media/blendide.png "BlendIDE")  
+     ![Blend para IDE de Visual Studio](~/designers/media/blendide.png "BlendIDE")  
   
 -   **IntelliSense en XAML:** ambos IDE admiten todas las funcionalidades comunes que cabe esperar de IntelliSense, incluida la finalización de instrucciones, la compatibilidad con operaciones comunes de editor, como comentar y dar formato al código, y la navegación a los recursos, los enlaces y el código.  
   

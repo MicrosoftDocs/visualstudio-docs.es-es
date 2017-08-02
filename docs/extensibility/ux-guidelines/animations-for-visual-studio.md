@@ -328,7 +328,7 @@ Como una transición animada cuando un elemento de interfaz de usuario cambia el
 #### <a name="x-y-position-change"></a>Cambio de posición de X-Y  
 Con este modelo, un elemento de interfaz de usuario cambia su posición X o Y o ambos.  
   
-![Animación de cambio de posición de X-Y](~/docs/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animación de cambio de posición de X-Y  
+![Animación de cambio de posición de X-Y](~/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animación de cambio de posición de X-Y  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Como una transición animada cuando un elemento de interfaz de usuario cambia de posición de un contexto a otro.  
@@ -351,7 +351,7 @@ Reordenación de pestaña
 #### <a name="rotate"></a>Girar  
 Con este modelo, se gira el elemento de interfaz de usuario.  
   
-![Animación de giro del elemento de interfaz de usuario](~/docs/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animación de giro del elemento de interfaz de usuario  
+![Animación de giro del elemento de interfaz de usuario](~/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animación de giro del elemento de interfaz de usuario  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Solo para el indicador de progreso de giro indeterminado.  

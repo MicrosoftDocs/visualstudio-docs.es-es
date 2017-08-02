@@ -31,7 +31,7 @@ Los editores de Visual Studio suelen ser asociado a un servicio de lenguaje.  En
   
  Un servicio de básico se muestra en la ilustración siguiente.  
   
- ![Gráfico del modelo de servicio de lenguaje](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Gráfico del modelo de servicio de lenguaje](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Objetos de servicio básicos del publicador y del lenguaje  
   
  El objeto del documento para el editor básico se denomina un búfer de texto y está representado por el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> .  El objeto de vista del documento se denomina una vista de texto y está representado por el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> .  Estos dos objetos trabajan juntos con el servicio de lenguaje para proporcionar una vista unificada de editor básico.  La información del búfer de texto y muestra de la vista de texto en una ventana de documento a una ventana de código.  El documento de la ventana de código es administrado por un administrador de ventana de código.  

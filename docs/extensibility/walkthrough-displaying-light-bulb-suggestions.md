@@ -29,7 +29,7 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
   
  Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C\#, un subrayado ondulado de color rojo aparece bajo un nombre de variable cuando no es válido. Cuando desplaza el mouse sobre el identificador no válido, se muestra una bombilla cerca del cursor.  
   
- ![light bulb](~/docs/extensibility/media/lightbulb.png "LightBulb")  
+ ![light bulb](~/extensibility/media/lightbulb.png "LightBulb")  
   
  Si hace clic en la flecha hacia abajo por la bombilla, se muestra un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios que se realizaron en el código si se ejecuta la acción.  
   
@@ -361,6 +361,6 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
   
 5.  Al hacer clic en la bombilla, deberían mostrarse dos acciones sugeridas, junto con la vista previa de la acción seleccionada.  
   
-     ![test light bulb, expanded](~/docs/extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![test light bulb, expanded](~/extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.

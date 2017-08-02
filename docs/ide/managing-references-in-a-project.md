@@ -53,7 +53,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 
  Para agregar una referencia, haga clic con el botón derecho en el nodo Referencias del Explorador de soluciones y elija **Agregar referencia**. Para obtener más información, consulte [Cómo: Agregar o quitar referencias usando el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
 
- ![Agregar una referencia en Visual C&#43;&#43;](~/docs/ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
+ ![Agregar una referencia en Visual C&#43;&#43;](~/ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
 
  Puede hacer referencia a los siguientes tipos de componentes/servicios:  
 

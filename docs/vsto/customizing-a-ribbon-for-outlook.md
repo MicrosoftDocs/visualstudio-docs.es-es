@@ -28,7 +28,7 @@ caps.handback.revision: 41
 # Personalizar una cinta de opciones para Outlook
   Al personalizar la cinta en Microsoft Office Outlook, debe tener en cuenta dónde aparecerá la cinta personalizada en la aplicación.  Outlook muestra la cinta en la interfaz de usuario \(UI\) de la aplicación principal y en las ventanas que se abren cuando los usuarios realizan ciertas tareas, como crear mensajes de correo electrónico.  Estas ventanas de la aplicación se denominan inspectores.  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Usar diseñador de la cinta para personalizar la cinta en Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Usar diseñador de la cinta para personalizar la cinta en Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   

@@ -40,7 +40,7 @@ ms.lasthandoff: 05/12/2017
 
 Gracias por instalar Herramientas de R para Visual Studio (RTVS). Pruébelo y díganos qué opina mediante los vínculos de [Recursos](#resources), a continuación.
 
-![Captura de pantalla de RTVS](~/docs/rtvs/media/installer-screenshot.png)
+![Captura de pantalla de RTVS](~/rtvs/media/installer-screenshot.png)
 
 ## <a name="resources"></a>Recursos
 

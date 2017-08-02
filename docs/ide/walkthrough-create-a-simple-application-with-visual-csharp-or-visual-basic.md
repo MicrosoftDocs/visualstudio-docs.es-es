@@ -99,7 +99,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
      También puede escribir **Nuevo proyecto** en el cuadro **Inicio rápido** para hacer lo mismo.  
   
-     ![En el cuadro Inicio rápido, especifique el nuevo proyecto](~/docs/ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
+     ![En el cuadro Inicio rápido, especifique el nuevo proyecto](~/ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")  
   
 2.  Para elegir la plantilla Aplicación WPF de Visual C# o Visual Basic, elija en el panel izquierdo **Instaladas**, **Plantillas**, **Visual C#**, **Windows**, por ejemplo y, después, elija Aplicación WPF en el panel central.  Asigne al proyecto el nombre HelloWPFApp en la parte inferior del cuadro de diálogo Nuevo proyecto.  
   
@@ -113,7 +113,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
  Figura 5: Elementos del proyecto  
   
- ![Explorador de soluciones con los archivos HelloWPFApp cargados](~/docs/ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+ ![Explorador de soluciones con los archivos HelloWPFApp cargados](~/ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
  Después de crear el proyecto, puede personalizarlo. Mediante la ventana **Propiedades** , (que se encuentra en el menú **Ver** ), puede mostrar y cambiar las opciones de los elementos de proyecto, controles y otros elementos de una aplicación. Mediante las propiedades del proyecto y las páginas de propiedades, puede mostrar y cambiar las opciones de proyectos y soluciones.  
   
@@ -121,7 +121,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 1.  En el siguiente procedimiento, se asignará un nombre más específico a MainWindow. En el **Explorador de soluciones**, seleccione MainWindow.xaml. Debería ver la ventana **Propiedades**, pero, si no es así, pulse el menú **Ver** y el elemento **Ventana de propiedades**. Cambie la propiedad **Nombre de archivo** a `Greetings.xaml`.  
   
-     ![Ventana Propiedades con Nombre de archivo resaltado](~/docs/ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
+     ![Ventana Propiedades con Nombre de archivo resaltado](~/ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")  
   
      El**Explorador de soluciones** muestra que el nombre del archivo es ahora Greetings.xaml y, si expande el nodo MainWindow.xaml (poniendo el foco en el nodo y presionando la tecla flecha derecha), verá que el nombre de MainWindow.xaml.vb o MainWindow.xaml.cs es ahora Greetings.xaml.vb o Greetings.xaml.cs. Este archivo de código está anidado bajo el nodo del archivo .xaml para mostrar que están muy relacionados entre sí.  
   
@@ -274,7 +274,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 1.  Inicie el depurador seleccionando **Depurar**y después **Iniciar depuración**.  
   
-     ![Comando Iniciar depuración del menú Depurar](~/docs/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![Comando Iniciar depuración del menú Depurar](~/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      Aparece un cuadro de diálogo que indica que se ha producido una excepción IOException: No se encuentra el recurso "mainwindow.xaml".  
   
@@ -340,7 +340,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 2.  Cambie la configuración de compilación de HelloWPFApp de **Depurar** a **Liberar** mediante el control de lista desplegable en la barra de herramientas (dice "Depurar" actualmente).  
   
-     ![Barra de herramientas estándar con la versión seleccionada](~/docs/ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
+     ![Barra de herramientas estándar con la versión seleccionada](~/ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
   
 3.  Compile la solución con **Compilar**, **Compilar solución** o presione la tecla F6.  
   

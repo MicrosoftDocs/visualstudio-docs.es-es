@@ -44,7 +44,7 @@ A continuación, se agrega un comentario al código.  Un comentario es una nota 
   
      Las instrucciones son lo que permite que el programa haga cosas.  En Visual C\#, una instrucción finaliza siempre en un signo de punto y coma.  En Visual Basic, el final de una línea es el final de una instrucción. \(No se necesita indicar el signo de punto y coma en Visual Basic.\) La instrucción anterior ordena al control `PictureBox` que cargue el archivo que el usuario seleccionó con el componente **OpenFileDialog**.  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic \(vídeo 5\)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C\# \(vídeo 5\)](http://go.microsoft.com/fwlink/?LinkId=205206).  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario.  Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "PlayVideo") Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic \(vídeo 5\)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C\# \(vídeo 5\)](http://go.microsoft.com/fwlink/?LinkId=205206).  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario.  Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### Para agregar comentarios  
   
@@ -65,7 +65,7 @@ A continuación, se agrega un comentario al código.  Un comentario es una nota 
   
 2.  Antes de ejecutar el programa, guárdelo utilizando el botón de la barra de herramientas **Guardar todo**, que se muestra a continuación.  
   
-     ![Botón de la barra de herramientas Guardar todo](~/docs/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Botón de la barra de herramientas Guardar todo](~/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Botón Guardar todo  
   
      Si lo desea, también puede elegir en la barra de menús **Archivo**, **Guardar todo** para guardar su programa.  El procedimiento recomendado consiste en guardar desde el principio y a menudo.  

@@ -36,7 +36,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  En este escenario, cuando se ejecute la aplicación para probarla, se representará el fondo de la manera prevista, pero no aparecerá uno de los objetos. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene este aspecto en la aplicación:  
   
- ![No se puede ver el objeto](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
+ ![No se puede ver el objeto](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
   
 ## Investigación  
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el documento del registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  
@@ -100,7 +100,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader`.  
   
- ![Código fuente de C&#43;&#43; corregido](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
+ ![Código fuente de C&#43;&#43; corregido](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
   
  Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:  
   

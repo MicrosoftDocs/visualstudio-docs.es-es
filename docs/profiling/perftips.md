@@ -42,7 +42,7 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 ## <a name="perftips"></a>Sugerencias de rendimiento  
  Cuando el depurador detiene la ejecución en un punto de interrupción o en una operación de ejecución paso a paso, el tiempo transcurrido entre la interrupción y el punto de interrupción anterior aparece como una sugerencia en la ventana del editor. Para obtener más información, vea [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![Sugerencia de rendimiento](~/docs/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Sugerencia de rendimiento](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Ventana Herramientas de diagnóstico  
  Los puntos de interrupción y datos de tiempo asociados se registran en la ventana Herramientas de diagnóstico.  

@@ -169,7 +169,7 @@ Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz
   
 2.  "Más" no es el texto adecuado para un vínculo a un tema conceptual. Objetivo del usuario no es más, es para entender las implicaciones de su elección.  
   
- ![Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.](~/docs/extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.  
+ ![Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.](~/extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.  
   
  **Una mejor solución:** suponer la pregunta ¿se pregunte al usuario, haga clic en el vínculo.  
   

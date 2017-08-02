@@ -34,7 +34,7 @@ caps.handback.revision: 100
 > [!NOTE]  
 >  El panel de acciones difiere de los paneles de tareas personalizados.  Los paneles de tareas personalizados están asociados a la aplicación, no a un documento específico.  Puede crear paneles de tareas personalizados en complementos de VSTO para algunas aplicaciones de Microsoft Office.  Para obtener más información, vea [Paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Usar controles WPF dentro de un panel de acciones de Excel](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Usar controles WPF dentro de un panel de acciones de Excel](http://go.microsoft.com/fwlink/?LinkId=132763).  
   
 ## Mostrar el panel de acciones  
  El panel de acciones se representa mediante la clase <xref:Microsoft.Office.Tools.ActionsPane>.  Cuando crea un proyecto de nivel de documento, una instancia de esta clase está disponible para el código mediante el uso del campo `ActionsPane` de la clase `ThisWorkbook` \(para Excel\) o `ThisDocument` \(para Word\) en el proyecto.  Para mostrar el panel de acciones, agregue un control de Windows Forms a la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> del campo `ActionsPane`.  En el siguiente ejemplo de código se agrega un control denominado `actions` al panel de acciones.  

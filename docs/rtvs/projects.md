@@ -49,11 +49,11 @@ Los proyectos se administran siempre dentro de una *solución* de Visual Studio,
 1. Seleccione **Archivo > Nuevo > Proyecto...** (Ctrl+Mayús+N)
 1. Seleccione "Proyecto de R" en **Plantillas > R**, asigne un nombre y una ubicación al proyecto y seleccione **Aceptar**:
 
-    ![Cuadro de diálogo Nuevo proyecto de R en Visual Studio (RTVS en VS2017)](~/docs/rtvs/media/getting-started-01-new-project.png)
+    ![Cuadro de diálogo Nuevo proyecto de R en Visual Studio (RTVS en VS2017)](~/rtvs/media/getting-started-01-new-project.png)
 
 Esto creará un proyecto con un archivo `script.R` vacío abierto en el editor. Tenga en cuenta también que en el **Explorador de soluciones** hay otros dos archivos en el proyecto:
 
-![Contenido de un proyecto de R creado a partir de la plantilla](~/docs/rtvs/media/projects-template-results.png)
+![Contenido de un proyecto de R creado a partir de la plantilla](~/rtvs/media/projects-template-results.png)
 
 `.Rhistory` registra todos los comandos que escriba en la ventana [R interactivo](interactive-repl.md). Puede abrir una ventana del historial dedicada con el comando **Herramientas de R > Ventanas > Historial**; esa ventana tiene un botón de la barra de herramientas y elementos de menú contextual para borrar el contenido del historial.
 
@@ -133,7 +133,7 @@ Soluciones de Visual Studio proporciona un lugar cómodo para recopilar y admini
 
 En el ejemplo siguiente, la solución contiene un proyecto de R con un modelo compilado mediante R y Azure Machine Learning, un proyecto de Python/scikit-learn, un proyecto de C++ que contiene módulos de trabajo de cálculo intensivo, un proyecto de SQL para la administración de datos y un proyecto de Python/Bottle para el sitio web que publica el resultado:
 
-![Explorador de soluciones de Visual Studio con varios proyectos relacionados en una solución](~/docs/rtvs/media/projects-polyglot.png)
+![Explorador de soluciones de Visual Studio con varios proyectos relacionados en una solución](~/rtvs/media/projects-polyglot.png)
 
 El proyecto resaltado en negrita es el proyecto de "inicio" de la solución; para cambiarlo, haga clic con el botón derecho en otro proyecto y seleccione **Establecer como proyecto de inicio**.
 

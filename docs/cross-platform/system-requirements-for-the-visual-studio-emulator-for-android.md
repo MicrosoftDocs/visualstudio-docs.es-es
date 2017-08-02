@@ -101,7 +101,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
   
  Para comprobar los requisitos de RAM y de Windows, vaya al Panel de control, elija Sistema y seguridad y, a continuación, elija Sistema.  
   
- ![Comprobar los requisitos del sistema](~/docs/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Comprobar los requisitos del sistema](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Requisitos de red  
  La red debe cumplir los siguientes requisitos:  
@@ -147,7 +147,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 > [!IMPORTANT]
 >  Después de unirse al grupo, cierre la sesión o reinicie el equipo para que el cambio surta efecto.  
   
- ![Unirse al grupo de seguridad Administradores de Hyper-V](~/docs/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Unirse al grupo de seguridad Administradores de Hyper-V](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Para agregarse a un grupo manualmente, abra el complemento Grupos y usuarios locales. Para obtener más información, vea [Agregar una cuenta de usuario a un grupo](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Este tema de Windows 7 también es aplicable a Windows 8).  
   

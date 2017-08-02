@@ -67,11 +67,11 @@ Para crear un sitio temporal en Azure App Service sin necesidad de una suscripci
 
 1. Cuando se le solicite que instale paquetes externos, seleccione **Install into a virtual environment** (Instalar en un entorno virtual). Tenga en cuenta el control **Show required packages** (Mostrar paquetes necesarios) que aparece en la parte inferior del cuadro de diálogo, que le mostrará qué paquetes se instalarán:
 
-  ![Instalación de los paquetes necesarios](~/docs/python/media/tutorials-common-external-packages.png)
+  ![Instalación de los paquetes necesarios](~/python/media/tutorials-common-external-packages.png)
 
 1. Seleccione el intérprete base preferido para el entorno virtual (por ejemplo, **Python 2.7** o **Python 3.4**) y haga clic en **Crear**:
 
-  ![Incorporación de un entorno virtual al crear un proyecto](~/docs/python/media/tutorials-common-add-virtual-environment.png)
+  ![Incorporación de un entorno virtual al crear un proyecto](~/python/media/tutorials-common-add-virtual-environment.png)
 
 1. Una vez creado el proyecto, pruébelo localmente seleccionando **Depurar > Iniciar depuración** o presionando F5. De forma predeterminada, la aplicación utiliza un repositorio en memoria que no requiere ninguna configuración. Todos los datos se pierden cuando el servidor web se detiene.
 
@@ -85,7 +85,7 @@ Para crear un sitio temporal en Azure App Service sin necesidad de una suscripci
 
 1. En el cuadro de diálogo **Publicar**, seleccione **Microsoft Azure App Service**:
 
-  ![Publicar en Azure - Paso 1](~/docs/python/media/tutorials-common-publish-1.png)
+  ![Publicar en Azure - Paso 1](~/python/media/tutorials-common-publish-1.png)
 
 1. Seleccione un destino:
 
@@ -94,7 +94,7 @@ Para crear un sitio temporal en Azure App Service sin necesidad de una suscripci
 
 1. Los detalles de App Service aparecen en la pestaña **Conexión** del cuadro de diálogo **Publicar** que se muestra a continuación.
 
-  ![Publicar en Azure - Paso 2](~/docs/python/media/tutorials-common-publish-2.png)
+  ![Publicar en Azure - Paso 2](~/python/media/tutorials-common-publish-2.png)
 
 1. Seleccione **siguiente >** según sea necesario para revisar la configuración adicional. Si pretende [depurar de forma remota el código Python en Azure](debugging-azure-remote.md), debe establecer **Configuración** en **Depurar**.
 1. Seleccione **Publicar**. Una vez implementada la aplicación en Azure, se abre el explorador predeterminado en ese sitio. 

@@ -34,7 +34,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
  En este escenario, ha agregado recientemente un objeto a la aplicación, junto con el nuevo vértice y los sombreadores de píxeles para transformar el objeto y darle una apariencia única. Cuando se ejecuta la aplicación durante una prueba, el objeto se representa en negro sólido. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene este aspecto en la aplicación:  
   
- ![El objeto se presenta con colores incorrectos.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_problem.png "gfx\_diag\_demo\_render\_error\_shader\_problem")  
+ ![El objeto se presenta con colores incorrectos.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_problem.png "gfx\_diag\_demo\_render\_error\_shader\_problem")  
   
 ## Investigación  
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el documento del registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  
@@ -73,7 +73,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
 3.  Sitúe el puntero en `input.color`. Observe que su valor es negro completamente opaco \(0, 0, 0, 1\).  
   
-     ![El miembro "color" de "input" es negro.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_5.png "gfx\_diag\_demo\_render\_error\_shader\_step\_5")  
+     ![El miembro "color" de "input" es negro.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_5.png "gfx\_diag\_demo\_render\_error\_shader\_step\_5")  
   
      En este escenario, el examen revela que el color incorrecto es probablemente el resultado de un sombreador de vértices que no proporciona la información de color correcta para que el sombreador de píxeles funcione bien.  
   
@@ -87,7 +87,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
 3.  Confirme que el miembro de color nunca se copia de la estructura de entrada. Como el valor de `output.color` se establece en negro totalmente opaco justo antes de que se devuelva la estructura `output`, es buena idea asegurarse de que el valor de `output` no se inicializara correctamente en una línea anterior. Recorra el código del sombreador de vértices hasta llegar a la línea que establece `output.color` en negro mientras comprueba el valor de `output.color`. Observe que el valor de `output.color` no se inicializa hasta que se establece en negro. Esto confirma que la línea de código que establece `output.color` en negro debe modificarse, en lugar de eliminarse.  
   
-     ![El valor de "output.color" es negro.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_7.png "gfx\_diag\_demo\_render\_error\_shader\_step\_7")  
+     ![El valor de "output.color" es negro.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_7.png "gfx\_diag\_demo\_render\_error\_shader\_step\_7")  
   
  Después de determinar que la causa del problema de representación es que el sombreador de vértices no proporciona el valor de color correcto al sombreador de píxeles, puede utilizar esta información para solucionar el problema. En este escenario, se puede corregir cambiando el código siguiente del sombreador de vértices  
   
@@ -103,8 +103,8 @@ output.color = input.color;
   
  Este código simplemente pasa el color de vértice de los vértices del objeto sin modificaciones \(los sombreadores de vértices más complejos podrían modificar el color antes de pasarlo\). El código del sombreador de vértices corregido debería parecerse a lo siguiente:  
   
- ![Código del sombreador de vértices corregido.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_8.png "gfx\_diag\_demo\_render\_error\_shader\_step\_8")  
+ ![Código del sombreador de vértices corregido.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_step_8.png "gfx\_diag\_demo\_render\_error\_shader\_step\_8")  
   
  Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación.  
   
- ![El objeto se presenta con los colores correctos.](~/docs/debugger/graphics/media/gfx_diag_demo_render_error_shader_resolution.png "gfx\_diag\_demo\_render\_error\_shader\_resolution")
+ ![El objeto se presenta con los colores correctos.](~/debugger/graphics/media/gfx_diag_demo_render_error_shader_resolution.png "gfx\_diag\_demo\_render\_error\_shader\_resolution")

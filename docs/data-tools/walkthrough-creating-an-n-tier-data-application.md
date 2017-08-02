@@ -49,7 +49,7 @@ Las aplicaciones de datos con *n niveles* son aplicaciones que tienen acceso a d
   
 -   Escribir código para rellenar las tablas de datos.  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "PlayVideo") Para ver una versión en vídeo de este tema, vea el vídeo sobre [cómo crear una aplicación de datos con n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "PlayVideo") Para ver una versión en vídeo de este tema, vea el vídeo sobre [cómo crear una aplicación de datos con n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## Requisitos previos  
  Para completar este tutorial, necesita lo siguiente:  

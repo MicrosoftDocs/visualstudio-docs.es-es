@@ -134,7 +134,7 @@ namespace Simple
   
  La estructura de carpetas de aplicación de Windows resultante tiene el siguiente aspecto:  
   
- ![SimpleSolution](~/docs/extensibility/internals/media/simplesolution.png "SimpleSolution")  
+ ![SimpleSolution](~/extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
  El primer y único \<proyecto > etiqueta en las lecturas de plantilla:  
   

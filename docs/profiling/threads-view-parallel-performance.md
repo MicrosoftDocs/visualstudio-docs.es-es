@@ -85,7 +85,7 @@ Vista de subprocesos es la vista más detallada y con más características del 
   
  Aquí tiene una ilustración de la vista de subprocesos:  
   
- ![Vista de subprocesos](~/docs/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Vista de subprocesos](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Vista de subprocesos  
   
  Inicialmente, los subprocesos se ordenan en el orden en que se crean, por lo que el subproceso de aplicación principal es el primero. Puede utilizar la opción de ordenación en la esquina superior izquierda de la vista para ordenar los subprocesos por otro criterio (por ejemplo, por la mayor parte de trabajo de ejecución realizado).  

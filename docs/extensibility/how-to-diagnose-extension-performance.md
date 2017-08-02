@@ -41,7 +41,7 @@ Según los comentarios recibidos, una de las áreas de enfoque de la versión de
 
 Para ayudar a los usuarios a entender este impacto, hemos agregado una nueva característica de Visual Studio para notificar a los usuarios de extensiones lentas. Cuando Visual Studio detecta una nueva extensión que tiene lenta de inicio o de carga de la solución, los usuarios verán una notificación en el IDE que les dirija al nuevo cuadro de diálogo ""Administrar Visual Studio rendimiento. Este cuadro de diálogo también puede tener acceso al menú de ayuda para buscar extensiones detectadas previamente.
 
-![administrar el rendimiento de Visual Studio](~/docs/extensibility/media/manage-performance.png)
+![administrar el rendimiento de Visual Studio](~/extensibility/media/manage-performance.png)
 
 Este documento pretende ayudar a los desarrolladores de extensiones que describen cómo se calcula el impacto de la extensión y cómo pueden analizarse localmente para probar si una extensión puede mostrarse como un rendimiento que afectan a la extensión.
 
@@ -143,7 +143,7 @@ private void DoMoreWork()
 
 Una vez que configure el entorno de Visual Studio con la extensión instalada, puede grabar una traza de inicio, abra PerfView y cuadro de diálogo recopilar desde el menú "Reunir".
 
-![menú de recopilar perfview](~/docs/extensibility/media/perfview-collect-menu.png)
+![menú de recopilar perfview](~/extensibility/media/perfview-collect-menu.png)
 
 Las opciones predeterminadas proporcionará las pilas de llamadas para el consumo de CPU, pero puesto que estamos interesados en tiempo de bloqueo, también debe habilitar pilas de "Tiempo de subproceso". Una vez que la configuración esté preparada puede haga clic en "Iniciar colección" e iniciar Visual Studio cuando se inicia la grabación.
 
@@ -155,7 +155,7 @@ Una vez completada la grabación PerfView será abrir el seguimiento automática
 
 Para los fines de este ejemplo, estamos interesados principalmente en la vista "De subprocesos de pilas de tiempo" que encontrará en "Advanced Group". Esta vista mostrará el tiempo total invertido en un subproceso por un método incluido el tiempo de CPU y el tiempo de bloqueo, como la E/S de disco o espera en identificadores.
 
- ![tiempo pilas de subprocesos](~/docs/extensibility/media/perfview-thread-time-stacks.png)
+ ![tiempo pilas de subprocesos](~/extensibility/media/perfview-thread-time-stacks.png)
 
  Al abrir la vista "De subprocesos de pilas de tiempo", debe elegir el proceso "devenv" para iniciar el análisis.
 
@@ -170,11 +170,11 @@ Para el ejemplo anterior, algunos interesante llamada pilas sería:
 
 1. E/S usando las clases de System.IO: aunque inclusivo costo de estos marcos no puede ser muy costoso en el seguimiento, son una posible causa de un problema ya que la velocidad de E/S de archivo variará de un equipo a otro.
 
-  ![marcos de e/s del sistema](~/docs/extensibility/media/perfview-system-io-frames.png)
+  ![marcos de e/s del sistema](~/extensibility/media/perfview-system-io-frames.png)
 
 2. Bloqueo de llamadas en espera en otro trabajo asincrónico: en este caso tiempo inclusivo representaría el tiempo que el subproceso principal se bloquea en la finalización del trabajo asincrónico.
 
-  ![marcos de llamada de bloqueo](~/docs/extensibility/media/perfview-blocking-call-frames.png)
+  ![marcos de llamada de bloqueo](~/extensibility/media/perfview-blocking-call-frames.png)
 
 Una de las otras vistas de la traza que será útil para determinar el impacto será "Pilas de carga de imagen". Puede aplicar los mismos filtros que se aplican a la vista "De subprocesos de pilas de tiempo" y averiguar todos los ensamblados cargados por el código ejecutado por el paquete de carga automática.
 

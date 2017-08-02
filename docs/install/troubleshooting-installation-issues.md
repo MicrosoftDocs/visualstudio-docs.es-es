@@ -65,9 +65,9 @@ En algunas situaciones, como las relacionadas con los archivos dañados, los pro
 
 1. Descargue la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://www.microsoft.com/en-us/download/details.aspx?id=12493) y ejecútela. Esta herramienta recopila y compila los registros de instalación disponibles para las instalaciones de Visual Studio, .NET Framework y SQL Server.
 2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.
-![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](~/docs/install/media/report-a-problem.png).
+![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](~/install/media/report-a-problem.png).
 3. Asigne un título a su informe de problema y proporcione los detalles pertinentes. Haga clic en **Siguiente** para ir a la sección **Datos adjuntos** y luego adjunte el archivo de registro generado (normalmente, el archivo está en % TEMP%\vslogs.zip).
-![Desplácese con la tecla de tabulación hasta el botón Informar de un problema nuevo y siga los pasos](~/docs/install/media/problem-report-details.png).
+![Desplácese con la tecla de tabulación hasta el botón Informar de un problema nuevo y siga los pasos](~/install/media/problem-report-details.png).
 4. Haga clic en **Siguiente** para revisar el informe del problema y luego haga clic en **Enviar**.
 
 ### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>Paso 5: Ejecución de InstallCleanup.exe para limpiar los archivos de instalación

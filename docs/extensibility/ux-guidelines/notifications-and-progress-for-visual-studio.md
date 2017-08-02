@@ -124,7 +124,7 @@ caps.handback.revision: 6
 ####  <a name="a-namebkmknotificationbubblesa-notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a> Burbujas de notificación  
  Burbujas de notificaciones pueden aparecer como informativo en un editor o diseñador o como parte del área de notificación de Windows. El usuario percibe estos burbujas como los problemas que pueden resolver más tarde, que es una ventaja para las notificaciones no críticas. Burbujas son apropiadas para la información crítica que el usuario debe solucionar de inmediato. Si utiliza las burbujas de notificación en Visual Studio, siga el [orientación de escritorio de Windows para las burbujas de notificación](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
- ![Burbuja de notificación](~/docs/extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901-07_NotificationBubbles")  
+ ![Burbuja de notificación](~/extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901-07_NotificationBubbles")  
   
  **Burbuja de notificación en el área de notificación de Windows usada para Visual Studio**  
   
@@ -175,14 +175,14 @@ caps.handback.revision: 6
 #### <a name="progress-bars"></a>Barras de progreso  
   
 ##### <a name="indeterminate"></a>Indeterminado  
- ![Barra de progreso indeterminada](~/docs/extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")  
+ ![Barra de progreso indeterminada](~/extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")  
   
  **Barra de progreso indeterminada**  
   
  "Indeterminado" significa que todo el progreso de una operación o no se puede determinar el proceso. Utilice las barras de progreso indeterminada para operaciones que requieren una cantidad ilimitada de tiempo o que tienen acceso a un número desconocido de objetos. Utilice una descripción textual para acompañar a lo que está sucediendo. Utilizar tiempos de espera para dar a límites a las operaciones de tiempo. Barras de progreso indeterminada utilice animaciones para mostrar que se está realizando el progreso pero no proporcionar ninguna otra información. No elija una barra de progreso indeterminada basándose únicamente en la posible falta de precisión por sí solo.  
   
 ##### <a name="determinate"></a>Determinada  
- ![Barra de progreso determinada](~/docs/extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")  
+ ![Barra de progreso determinada](~/extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")  
   
  **Barra de progreso determinada**  
   
@@ -262,7 +262,7 @@ caps.handback.revision: 6
 ##### <a name="dialogs"></a>Cuadros de diálogo  
  Los cuadros de diálogo pueden contener cualquiera de los tipos de cargador de progreso. Indicadores de progreso pueden se empareja con mensajería así como combinar con varios niveles de indicación de progreso para representar granular y procesos de sub.  
   
- ![Cuadro de diálogo con varios tipos de indicador de progreso](~/docs/extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")  
+ ![Cuadro de diálogo con varios tipos de indicador de progreso](~/extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")  
   
  **Cuadro de diálogo de Visual Studio con procesos simultáneos y varios tipos de indicador de progreso**  
   
@@ -273,7 +273,7 @@ caps.handback.revision: 6
 ##### <a name="document-well"></a>Documento bien  
  El documento también puede mostrar varios tipos de cargador de progreso en combinación con los controles.  
   
- ![Mensajes de progreso en la sección de documentos](~/docs/extensibility/ux-guidelines/media/0903-13_documentwell.png "0903-13_DocumentWell")  
+ ![Mensajes de progreso en la sección de documentos](~/extensibility/ux-guidelines/media/0903-13_documentwell.png "0903-13_DocumentWell")  
   
  **Barra de progreso indeterminada por debajo de la barra de herramientas**  
   
@@ -361,7 +361,7 @@ public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, 
   
  Este es un ejemplo que crea una InfoBarModel con algo de texto con un hipervínculo, un botón de acción y un icono.  
   
- ![Barra de información con hipervínculo](~/docs/extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")  
+ ![Barra de información con hipervínculo](~/extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")  
   
 ```  
 var infoBar = new InfoBarModel(  

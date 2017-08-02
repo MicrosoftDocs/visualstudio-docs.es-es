@@ -142,7 +142,7 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
   
 -   **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.  
   
-     ![Seleccionar opciones de depuración de explorador web](~/docs/ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
+     ![Seleccionar opciones de depuración de explorador web](~/ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
   
 -   **Establecer puntos de interrupción temporales**. Puede crear un punto de interrupción temporal en la línea actual de código e iniciar el depurador simultáneamente. Al llegar a esa línea de código, el depurador activa el modo de interrupción. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.  
   

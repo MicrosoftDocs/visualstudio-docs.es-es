@@ -32,11 +32,11 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
   
      Este es el aspecto de la barra de desplazamiento tras buscar una cadena.  Observe que aparecen todas las instancias de la cadena.  
   
-     ![Barra de desplazamiento después de buscar una cadena.](~/docs/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
+     ![Barra de desplazamiento después de buscar una cadena.](~/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
   
      Aquí se muestra la barra de desplazamiento después de reemplazar todas las instancias de la cadena.  Verá inmediatamente que la operación ha provocado algunos problemas.  
   
-     ![Barra de desplazamiento tras reemplazar una cadena con errores](~/docs/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
+     ![Barra de desplazamiento tras reemplazar una cadena con errores](~/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
   
 ### Para establecer el modo de presentación de la barra de desplazamiento  
   
@@ -46,10 +46,10 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
   
      Este es el aspecto del ejemplo de búsqueda cuando el modo Mapa está activado y el ancho se establece en Medio:  
   
-     ![Barra de desplazamiento en modo Mapa](~/docs/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
+     ![Barra de desplazamiento en modo Mapa](~/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
 2.  En el modo Mapa, a fin de habilitar las vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento, seleccione la opción **Mostrar información sobre herramientas de la vista previa**.  Este es su aspecto:  
   
-     ![Barra de desplazamiento con información sobre herramientas](~/docs/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
+     ![Barra de desplazamiento con información sobre herramientas](~/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Si desea mantener el comportamiento de desplazamiento del modo Mapa y la información sobre herramientas de vista previa pero no desea ver la información general del código de origen, puede establecer **Información general del código fuente** en **Desactivado**.

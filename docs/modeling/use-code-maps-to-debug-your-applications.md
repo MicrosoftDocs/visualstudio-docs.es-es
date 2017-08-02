@@ -69,7 +69,7 @@ Los mapas de código le ayudan a evitar bases de código de gran tamaño, códig
   
  ![Mapa de código: Buscar todas las referencias](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")  
   
- ![Abrir un mapa de código desde el editor de código](~/docs/modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
+ ![Abrir un mapa de código desde el editor de código](~/modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
 >  Si agrega elementos de un proyecto que se comparte entre varias aplicaciones, como Windows Phone o la Tienda Windows, dichos elementos aparecen siempre en el mapa con el proyecto de aplicación activo actualmente.  Por lo tanto, si cambia el contexto a otro proyecto de aplicación, también cambia el contexto en el mapa para cualquier elemento recién agregado desde el proyecto compartido.  Las operaciones que se realizan con un elemento en el mapa solo se aplican a los elementos que comparten el mismo contexto.  

@@ -144,7 +144,7 @@ typedef struct _CrtMemBlockHeader
  Nuevos objetos \(0xCD\)  
  Los objetos nuevos se rellenan con 0xCD al asignarse.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de bloques en el montón de depuración  
  Cada bloque de memoria del montón de depuración se asigna a uno de entre cinco tipos de asignación.  Estos tipos reciben un seguimiento y se informa de ellos de forma diferente en cuanto a detección de pérdidas e informe de estados.  El tipo de un bloque se puede especificar asignándolo mediante una llamada directa a una de las funciones de asignación del montón de depuración, como [\_malloc\_dbg](/visual-cpp/c-runtime-library/reference/malloc-dbg).  Los cinco tipos de bloques de memoria del montón de depuración \(definidos en el miembro **nBlockUse** de la estructura **\_CrtMemBlockHeader**\) son los siguientes:  
@@ -178,7 +178,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Comprobar la integridad y pérdidas de memoria del montón  
  El acceso a muchas de las características del montón de depuración se debe realizar desde dentro del código.  En la sección siguiente se describen algunas características y cómo utilizarlas.  
@@ -199,7 +199,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 |**\_CRTDBG\_CHECK\_CRT\_DF**|Off|Hace que los bloques marcados con el tipo **\_CRT\_BLOCK** se incluyan en las operaciones de detección de pérdidas y de diferencia de estado.  Cuando este bit está desactivado, la memoria utilizada internamente por la biblioteca en tiempo de ejecución se omite durante esas operaciones.|  
 |**\_CRTDBG\_LEAK\_CHECK\_DF**|Off|Hace que la comprobación de pérdidas se realice a la salida del programa mediante una llamada a **\_CrtDumpMemoryLeaks**.  Si la aplicación no consigue liberar toda la memoria asignada, se genera un informe de error.|  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Configure_the_debug_heap"></a> Configurar el montón de depuración  
  Todas las llamadas a funciones del montón, como `malloc`, `free`, `calloc`, `realloc`, `new` y `delete`, se resuelven en versiones de depuración de esas funciones que operan sobre el montón de depuración.  Cuando se libera un bloque de memoria, el montón de depuración comprueba automáticamente la integridad de los búferes situados a cada lado del área asignada y emite un informe de error en caso de sobrescritura.  
@@ -234,7 +234,7 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );  
 ```  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete y \_CLIENT\_BLOCKs en el montón de depuración de C\+\+  
  Las versiones de depuración de la biblioteca en tiempo de ejecución de C contienen versiones de depuración de los operadores `new` y `delete` de C\+\+.  Si usa el tipo de asignación `_CLIENT_BLOCK`, debe llamar a la versión de depuración del operador `new` directamente o crear macros que reemplacen al operador `new` en modo de depuración, como se muestra en el siguiente ejemplo:  
@@ -272,7 +272,7 @@ int main( )   {
   
  La versión de depuración del operador `delete` funciona con todos los tipos de bloques y no requiere realizar cambios en el programa cuando se compila una versión de lanzamiento.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funciones que indican el estado del montón  
  **\_CrtMemState**  
@@ -309,7 +309,7 @@ typedef struct _CrtMemState
 |[\_CrtMemDumpAllObjectsSince](/visual-cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Realiza un volcado de memoria de información de todos los objetos asignados desde que se tomó una determinada instantánea del montón o desde el inicio de la ejecución.  Cada vez que vuelca un bloque **\_CLIENT\_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **\_CrtSetDumpClient**.|  
 |[\_CrtDumpMemoryLeaks](/visual-cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Determina si se produjo alguna pérdida de memoria desde el inicio de la ejecución del programa; en ese caso, realiza un volcado de memoria de todos los objetos asignados.  Cada vez que **\_CrtDumpMemoryLeaks** vuelca un bloque **\_CLIENT\_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **\_CrtSetDumpClient**.|  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Seguir las solicitudes de asignación en el montón  
  Aunque la determinación exacta del nombre del archivo de código fuente y el número de línea en el que una aserción o una macro de informe se ejecuta suele ser muy útil para localizar la causa de un problema, esto no es aplicable siempre en el caso de funciones de asignación de memoria en el montón.  Mientras que las macros se pueden insertar en muchos puntos apropiados del árbol lógico de una aplicación, una asignación de memoria se suele incluir en una rutina especial a la que se llama desde muchos sitios diferentes y en muchos momentos diferentes.  Normalmente, la cuestión no es qué línea de código realizó una asignación incorrecta, sino cuál de las miles de asignaciones efectuadas por esa línea de código fue incorrecta y por qué.  
@@ -364,7 +364,7 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  Ahora, el nombre del archivo de código fuente y el número de línea donde se llamó a `addNewRecord` se almacenarán en cada bloque resultante asignado en el montón de depuración y se informará de ellos al examinar el bloque.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## Vea también  
  [Depuración de código nativo](../debugger/debugging-native-code.md)

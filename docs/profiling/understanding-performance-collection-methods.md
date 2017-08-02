@@ -120,7 +120,7 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
 ##  <a name="tier_interaction"></a> Interacción de capas  
  La generación de perfiles de interacción de capas agrega información a un archivo de datos de generación de perfiles sobre llamadas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] sincrónicas entre una página de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] u otra aplicación y una base de datos de [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)].  Los datos incluyen el número y tiempo de llamadas y los tiempos máximo y mínimo.  Los datos de interacción de capas se pueden agregar a los datos de generación de perfiles recopilados con los métodos de muestreo, instrumentación, memoria de .NET o simultaneidad.  
   
- ![Datos de generación de perfiles de interacción de capas](~/docs/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
+ ![Datos de generación de perfiles de interacción de capas](~/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
 Datos de interacción de capas recopilados por las Herramientas de generación de perfiles  
   
  [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)  

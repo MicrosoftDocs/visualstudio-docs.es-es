@@ -28,7 +28,7 @@ caps.handback.revision: 20
 # Actualizar una aplicaci&#243;n (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Se aplica a Windows y a Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Puedes hacer cambios en el código durante la depuración y, después, actualizar una aplicación de la Tienda Windows desarrollada con JavaScript eligiendo el botón **Actualizar aplicación de Windows** en la barra de herramientas **Depurar**.  Al elegir este botón, se recarga la aplicación sin detener y reiniciar el depurador.  La característica Actualizar te permite modificar código de HTML, CSS y JavaScript, y ver el resultado rápidamente.  Esta función es compatible para las aplicaciones de la Tienda Windows y de la Tienda de Windows Phone.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 20
     Hello!  
     ```  
   
-7.  Haz clic en el botón **Actualizar aplicación de Windows**, que tiene este aspecto: ![Botón Actualizar aplicación de Windows](~/docs/debugger/media/js_refresh.png "JS\_Refresh").  \(O bien, presiona F4\).  
+7.  Haz clic en el botón **Actualizar aplicación de Windows**, que tiene este aspecto: ![Botón Actualizar aplicación de Windows](~/debugger/media/js_refresh.png "JS\_Refresh").  \(O bien, presiona F4\).  
   
 8.  Cambia a la aplicación.  La aplicación se recarga sin que se reinicie el depurador y aparece el nuevo título de página.  
   

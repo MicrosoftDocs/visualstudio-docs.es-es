@@ -20,7 +20,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede utilizar los formularios Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de utilizar un diagrama DSL. Este tema le guiará a través de enlazar un formulario Windows Forms a un DSL, usando la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado.  
   
- ![2 de Wpf de DSL](~/docs/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![2 de Wpf de DSL](~/modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows y el Explorador de modelos.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Crear un DSL de Windows Forms  
@@ -71,7 +71,7 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
 ## <a name="updating-the-dsl-definition"></a>Actualice la definición de DSL  
  La siguiente que definición de DSL se utiliza en este tutorial.  
   
- ![DSL-Wpf-1](~/docs/modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL-Wpf-1](~/modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Para actualizar la definición de DSL  
   
@@ -130,7 +130,7 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
   
      Las propiedades y relaciones de la clase de modelo aparecen en la ventana de orígenes de datos.  
   
-     ![3 DslWpf](~/docs/modeling/media/dslwpf-3.png "DslWpf&3;")  
+     ![3 DslWpf](~/modeling/media/dslwpf-3.png "DslWpf&3;")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Para conectar el modelo a un formulario  
   
@@ -175,7 +175,7 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
   
 -   Garantiza que, cuando el usuario selecciona una fila, la ventana Propiedades muestra las propiedades del elemento del modelo correspondiente, en lugar de la fila de la cuadrícula de datos.  
   
- ![DslWpf4](~/docs/modeling/media/dslwpf4.png "DslWpf4")  
+ ![DslWpf4](~/modeling/media/dslwpf4.png "DslWpf4")  
 Esquema de los vínculos entre los orígenes de datos y vistas.  
   
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Para completar los enlaces de DSL  
@@ -305,7 +305,7 @@ Esquema de los vínculos entre los orígenes de datos y vistas.
   
      Podrá modificar el nombre del elemento en la vista de cuadrícula de datos. También puede eliminar desde allí.  
   
- ![DSL-Wpf-2](~/docs/modeling/media/dsl-wpf-2.png "2 de Wpf de DSL")  
+ ![DSL-Wpf-2](~/modeling/media/dsl-wpf-2.png "2 de Wpf de DSL")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Acerca del código para agregar un elemento  
  Para los nuevos botones de elemento, el siguiente código alternativo es un poco más simple.  

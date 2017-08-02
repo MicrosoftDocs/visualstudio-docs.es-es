@@ -46,7 +46,7 @@ ms.lasthandoff: 06/23/2017
 Se utiliza para consolidar, proteger y eliminar aplicaciones de escritorio, móviles, de servidor e insertadas a fin de ayudar a salvaguardar secretos comerciales y propiedad intelectual de otra índole, reducir la piratería y la falsificación y proteger contra la manipulación y la depuración no autorizada.
 Dotfuscator funciona en ensamblados compilados sin necesidad de programación adicional ni de obtener acceso al código fuente.
 
-![](~/docs/ide/dotfuscator/media/header.svg)
+![](~/ide/dotfuscator/media/header.svg)
 
 ## <a name="why-protection-matters"></a>Por qué es importante la protección
 

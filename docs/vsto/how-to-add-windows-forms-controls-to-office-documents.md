@@ -37,7 +37,7 @@ caps.handback.revision: 53
   
 -   [Agregar controles en tiempo de ejecución en complementos de VSTO](#runtimeaddin)  
   
- ![vínculo a vídeo](~/docs/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Agregar controles a una superficie de documento en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Agregar controles a una superficie de documento en tiempo de ejecución](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> Agregar controles en tiempo de diseño  
  Hay varias maneras de agregar controles de Windows Forms al documento en un proyecto de nivel de documento en tiempo de diseño.  

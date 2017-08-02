@@ -49,14 +49,14 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
 2.  En la página **Depuración**, **General**, desactive la casilla **Interrumpir todos los procesos cuando se interrumpa uno**.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Buscar archivos de origen y de símbolos \(.pdb\)  
  Para navegar por el código fuente de un proceso, el depurador necesita acceso a los archivos de código fuente y los archivos de símbolos del proceso.  Vea [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
  Si no puede tener acceso a los archivos de un proceso, puede navegar utilizando la ventana Desensamblado.  Vea [Cómo: Utilizar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger"></a> Empezar varios procesos en una solución de VS, asociar a un proceso, empezar automáticamente un proceso en el depurador  
   
@@ -81,9 +81,9 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 ####  <a name="BKMK_Start_a_specific_project_in_a_solution"></a> Iniciar un proyecto específico en una solución  
  Para iniciar un proyecto de una solución sin cambiar el proyecto de inicio predeterminado, seleccione el proyecto en el Explorador de soluciones y, a continuación, elija **Depurar** en el menú contextual.  A continuación, puede elegir **Iniciar nueva instancia** o **Ir a nueva instancia**.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Empezar varios procesos en una solución de VS, asociar a un proceso, empezar automáticamente un proceso en el depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Empezar varios procesos en una solución de VS, asociar a un proceso, empezar automáticamente un proceso en el depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ####  <a name="BKMK_Start_multiple_projects_in_a_solution"></a> Empezar varios proyectos en una solución  
   
@@ -93,9 +93,9 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
 3.  Para cada proyecto que desee cambiar, elija **Inicio**, **Iniciar sin depurar**o **Ninguno**.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Empezar varios procesos en una solución de VS, asociar a un proceso, empezar automáticamente un proceso en el depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Empezar varios procesos en una solución de VS, asociar a un proceso, empezar automáticamente un proceso en el depurador](../debugger/debug-multiple-processes.md#BKMK_Start_multiple_processes_in_a_VS_solution__attach_to_a_process__automatically_start_a_process_in_the_debugger)  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Attach_to_a_process"></a> Asociar a un proceso  
  El depurador también puede *asociarse* a los programas que se ejecutan en procesos externos a Visual Studio, incluidos los programas que se ejecutan en un dispositivo remoto.  Después de asociar a un programa, podrá usar los comandos de ejecución del depurador, inspeccionar el estado del programa, etc.  La capacidad de inspeccionar el programa podría ser limitada, en función de si el programa se ha generado con información de depuración, de si el usuario tiene acceso al código fuente del programa o de si el compilador JIT de Common Language Runtime realiza un seguimiento de la información de depuración.  
@@ -108,7 +108,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
  ![Cuadro de diálogo Asociar al proceso](../debugger/media/dbg_attachtoprocessdlg.png "DBG\_AttachToProcessDlg")  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Iniciar automáticamente un proceso en el depurador  
  En ocasiones, es posible que tenga que depurar código de inicio de un programa iniciado por otro proceso.  Por ejemplo, servicios y configuraciones personalizadas.  En estos casos, se puede iniciar el depurador y asociarse automáticamente cuando se inicia la aplicación.  
@@ -133,7 +133,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
  ![Entrada de inicio automático del depurador en regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "DBG\_Execution\_AutomaticStart\_Result")  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Cambiar procesos, interrumpir y continuar la ejecución, ejecutar paso a paso el código fuente  
   
@@ -158,9 +158,9 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   
  Cuando se cambia a un proyecto, se establece como el proceso actual de la depuración.  Cualquier ventana de depurador abierta mostrará el estado del proceso actual, así como todos los comandos de ejecución paso a paso que solo afecten al proceso actual.  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Cambiar procesos, interrumpir y continuar la ejecución, ejecutar paso a paso el código fuente](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Cambiar procesos, interrumpir y continuar la ejecución, ejecutar paso a paso el código fuente](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interrupción, paso y continuación  
   
@@ -179,9 +179,9 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 |Menú contextual de la ventana**Procesos**:<br /><br /> -   **Interrumpir proceso**|N\/D|Se interrumpe el proceso seleccionado.<br /><br /> Otros procesos mantienen su estado existente \(suspendido o en ejecución\).|  
 |Menú contextual de la ventana**Procesos**:<br /><br /> -   **Continuar proceso**|N\/D|Se reanuda el proceso seleccionado.<br /><br /> Otros procesos mantienen su estado existente \(suspendido o en ejecución\).|  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Cambiar procesos, interrumpir y continuar la ejecución, ejecutar paso a paso el código fuente](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Cambiar procesos, interrumpir y continuar la ejecución, ejecutar paso a paso el código fuente](../debugger/debug-multiple-processes.md#BKMK_Switch_processes__break_and_continue_execution__step_through_source)  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Stop_debugging__terminate_or_detach_from_processes"></a> Detener la depuración, terminar o desasociar procesos  
   
@@ -214,9 +214,9 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 |Menú contextual de la ventana**Procesos**:<br /><br /> -   **Terminar proceso**|Finaliza el proceso seleccionado.<br /><br /> Otros procesos mantienen su estado existente \(suspendido o en ejecución\).|  
 |Menú contextual de la ventana**Procesos**:<br /><br /> -   **Desasociar cuando se interrumpa la depuración**|Alterna el comportamiento de **Depurar**, **Detener depuración** para el proceso seleccionado:<br /><br /> -   Activado: el depurador se desasocia del proceso.<br />-   Desactivado: finaliza el proceso.|  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Detener la depuración, terminar o desasociar procesos](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Detener la depuración, terminar o desasociar procesos](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
- ![Volver al principio](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
+ ![Volver al principio](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## Vea también  
  [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

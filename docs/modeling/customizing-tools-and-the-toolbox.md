@@ -201,17 +201,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  **Conexión que entran en un OutPort desde un componente anidado**  
   
- ![Generador de conexiones](~/docs/modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
+ ![Generador de conexiones](~/modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")  
   
  Por este motivo, quizás quiera especificar que una conexión puede ir dirigida desde un componente anidado hacia un OutPort. Para especificar una conexión de este tipo, establezca **utiliza personalizado acepta** en el **InPort** tipo como rol de origen y el **OutPort** tipo de función de destino en la **detalles de DSL** ventana como se muestra en las ilustraciones siguientes:  
   
  **Conexión de vínculo de directiva en el Explorador de DSL**  
   
- ![Imagen de generador de conexiones](~/docs/modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
+ ![Imagen de generador de conexiones](~/modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")  
   
  **Conexión de vínculo de directiva en la ventana de detalles DSL**  
   
- ![](~/docs/modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
+ ![](~/modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")  
   
  Después, debe proporcionar métodos en la clase ConnectionBuilder:  
   

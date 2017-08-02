@@ -63,7 +63,7 @@ RTVS no se instalará si solo tiene Visual Studio Shell incluido en otros produc
 1. Ejecute el instalador de Visual Studio.
 2. Seleccione la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**:
 
-    ![Carga de trabajo Aplicaciones de ciencia de datos y de análisis de VS2017](~/docs/rtvs/media/installation-data-science-workload.png)
+    ![Carga de trabajo Aplicaciones de ciencia de datos y de análisis de VS2017](~/rtvs/media/installation-data-science-workload.png)
 
 3. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. Tenga en cuenta que, de forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, como mínimo debe seleccionar **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
 

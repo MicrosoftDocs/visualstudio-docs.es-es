@@ -74,13 +74,13 @@ Si tiene problemas con Xamarin después de realizar esta configuración e instal
   
 2.  En el programa de instalación, haga clic en el botón **Opciones adicionales** (icono de tres barras) _junto a_ **Iniciar** y elija **Modificar**.  
   
-     ![Elegir la opción Modificar en la instalación de Visual Studio](~/docs/cross-platform/media/cross-plat-xamarin-setup-1a.png "Cross-Plat Xamarin Setup 1")  
+     ![Elegir la opción Modificar en la instalación de Visual Studio](~/cross-platform/media/cross-plat-xamarin-setup-1a.png "Cross-Plat Xamarin Setup 1")  
   
 3.  Active las siguientes casillas:  
   
     1.  **Aplicaciones móviles y juegos > Desarrollo móvil con .NET**. Al hacerlo, también se seleccionarán automáticamente las distintas herramientas de Android en Kits de desarrollo de software y herramientas comunes. Esta opción también debe actualizar cualquier instalación de Xamarin existente.  
   
-         ![Seleccionar la opción Desarrollo móvil en Desarrollo móvil y de juegos](~/docs/cross-platform/media/cross-plat-xamarin-setup-2a.png "Cross-Plat Xamarin Setup 2")  
+         ![Seleccionar la opción Desarrollo móvil en Desarrollo móvil y de juegos](~/cross-platform/media/cross-plat-xamarin-setup-2a.png "Cross-Plat Xamarin Setup 2")  
   
     2. (Opcional) **Windows > Desarrollo de plataforma universal de Windows**. Se incluyen opciones para instalar imágenes de emuladores que tardarán más tiempo en descargarse; siempre puede volver al instalador de Visual Studio para agregarlos más adelante. 
   

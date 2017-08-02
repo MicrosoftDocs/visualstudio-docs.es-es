@@ -82,7 +82,7 @@ Los raíles de `Grid` se usan para administrar las filas y columnas en un panel 
   
  En la vista Diseño, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:  
   
- ![Comandos de la vista Diseño](~/docs/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Comandos de la vista Diseño](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  Estos comandos están disponibles en esta barra de herramientas:  
   

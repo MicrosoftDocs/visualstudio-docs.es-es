@@ -49,7 +49,7 @@ Projects
   
  La automatización de proyectos sigue la ruta en el diagrama siguiente.  
   
- ![Objetos de proyectos de Visual Studio](~/docs/extensibility/internals/media/projectobjects.gif "ProjectObjects")  
+ ![Objetos de proyectos de Visual Studio](~/extensibility/internals/media/projectobjects.gif "ProjectObjects")  
 Automatización de proyectos  
   
  Si no implementa un objeto de `Project` , el entorno seguirá devolviendo un objeto genérico de `Project` que sólo contiene el nombre del proyecto.  
