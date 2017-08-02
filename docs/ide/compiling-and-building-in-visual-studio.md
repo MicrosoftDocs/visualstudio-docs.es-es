@@ -1,7 +1,7 @@
 ---
 title: Compilar y generar en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/14/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,61 +16,48 @@ caps.latest.revision: 28
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
-ms.openlocfilehash: aa3d791afc574200157104145617ff6ad6139b68
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: 800fcd5ff96e9e6d05b79c4d6fc5ccf17ba3084b
 ms.contentlocale: es-es
-ms.lasthandoff: 06/22/2017
+ms.lasthandoff: 07/26/2017
 
 ---
+
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
-Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensamblados y programas ejecutables con frecuencia durante un ciclo de desarrollo. Al compilar el código con frecuencia, se pueden identificar antes errores en tiempo de compilación como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
-  
- Cuando un proyecto o una solución se ha desarrollado totalmente y se ha depurado suficientemente, se pueden compilar sus componentes en una compilación de versión. De forma predeterminada, una compilación de versión está optimizada y diseñada para que sea menor y se ejecute más rápidamente que una versión de depuración. Para obtener más información, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
-  
-## <a name="choosing-a-build-method"></a>Elegir un método de compilación  
- Se puede compilar una aplicación mediante las opciones de compilación predeterminadas en el IDE, en un símbolo del sistema o mediante Team Foundation Build. Cada una de estas opciones utiliza MSBuild como tecnología subyacente y cada enfoque tiene ventajas concretas, como se muestra en la tabla siguiente.  
-  
-|Método de compilación|Ventajas|Para obtener más información|  
-|------------------|--------------|--------------------------|  
-|Uso de el IDE|- Puede crear compilaciones más fácilmente y ejecutarlas de forma inmediata.<br />- Puede ejecutar compilaciones multiprocesador para proyectos de C# y C++.<br />- Puede personalizar algunos aspectos del sistema de compilación.|[Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|  
-|Ejecutar una línea de comandos de MSBuild|- Puede compilar proyectos sin instalar Visual Studio.<br />- Puede ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Puede personalizar la mayoría de las áreas del sistema de compilación.|[MSBuild](../msbuild/msbuild.md)|  
-|Usar Team Foundation Build|- Puede automatizar el proceso de compilación. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. También puede compilar proyectos en servidores de compilación compartidos en lugar de hacerlo en el equipo de desarrollo.<br />- Puede especificar rápidamente el código que quiere compilar, las pruebas que quiere ejecutar y otras opciones frecuentes.<br />- Puede modificar el flujo de trabajo de compilación y, si es necesario, crear actividades de compilación para realizar tareas muy personalizadas.|[Compilar la aplicación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
-  
-## <a name="building-from-the-ide"></a>Compilar desde el IDE  
- Al crear un proyecto, se definen las configuraciones de compilación predeterminadas para el mismo y se le asigna una configuración de compilación de soluciones para proporcionar contexto para las compilaciones. Las configuraciones de soluciones definen cómo se compilan y se implementan los proyectos de las soluciones. Las configuraciones de proyecto son un conjunto de propiedades de proyecto que son únicas para una plataforma y un tipo de compilación (por ejemplo, Versión Win32). Es posible editar estas configuraciones predeterminadas y crear sus propias configuraciones. Para obtener más información, vea [Administrar propiedades de soluciones y proyectos](managing-project-and-solution-properties.md).  
-  
- Desde el IDE se pueden realizar las siguientes tareas adicionales:  
-  
--   [Cambiar el directorio de salida de la compilación](../ide/how-to-change-the-build-output-directory.md).  
-  
--   [Identificar los proyectos que dependen de la salida de otro proyecto para que se compilen correctamente](../ide/how-to-create-and-remove-project-dependencies.md).  
-  
--   [Cambiar el volumen de información incluida en el registro de compilación o en la ventana de salida para las compilaciones](../ide/how-to-view-save-and-configure-build-log-files.md).  
-  
--   [Ocultar determinadas advertencias del compilador para Visual C#, Visual C++ o Visual Basic](../ide/how-to-suppress-compiler-warnings.md).  
-  
--   [Especificar acciones previas y posteriores a la compilación personalizadas para una compilación](../ide/specifying-custom-build-events-in-visual-studio.md).  
-  
--   Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).  
+
+Visual Studio te permite compilar ensamblados y aplicaciones ejecutables a partir de código fuente en cualquier momento durante el ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#. 
+
+Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir rápidamente errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
+
+Una compilación correcta es básicamente una validación de que el código fuente de la aplicación contiene una sintaxis correcta y de que se han resuelto todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Esto genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez haya probado por completo la aplicación, podrá compilar una versión e implementarla para sus clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
+
+En la familia de productos de Visual Studio, hay tres métodos que puede usar para compilar una aplicación: el IDE de Visual Studio, las herramientas de línea de comandos de MSBuild y Team Foundation Build en Visual Studio Team Services:
+ 
+| Método de compilación | Ventajas | 
+| --- |--- | --- |  
+| IDE |- Crear compilaciones inmediatamente y probarlas en un depurador.<br />- Ejecutar compilaciones multiprocesador para proyectos de C++ y C#.<br />- Personalizar aspectos diferentes del sistema de compilación. |
+| Línea de comandos de MSBuild| - Compilar proyectos sin instalar Visual Studio.<br />- Ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Personalizar la mayoría de las áreas del sistema de compilación.|
+| Team Foundation Build | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|  
+
+La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Continuous integration and deployment](https://www.visualstudio.com/docs/build/overview) (Integración e implementación continuas).
+
+## <a name="overview-of-building-from-the-ide"></a>Introducción a la compilación desde el IDE  
+
+Cuando crea un proyecto, Visual Studio crea las configuraciones de compilación predeterminadas para el proyecto y la solución que contiene el proyecto.  Estas configuraciones definen cómo se compilan y se implementan las soluciones y los proyectos. Las configuraciones de proyecto, en concreto, son únicas para una plataforma de destino (por ejemplo, Windows o Linux) y para un tipo de compilación (por ejemplo, depuración o publicación). Puede editar estas configuraciones como quiera y también puede crear sus propias configuraciones según sea necesario.
+
+Para obtener una primera introducción a la compilación dentro del IDE, vea [Tutorial: Compilar una aplicación](walkthrough-building-an-application.md).  
+
+Después, vea [Compilar y limpiar proyectos y soluciones en Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) para obtener información sobre las diversas personalizaciones de aspectos que puede llevar a cabo en el proceso. Entre las personalizaciones se incluyen [cambiar los directorios de salida](how-to-change-the-build-output-directory.md), [especificar eventos de compilación personalizados](specifying-custom-build-events-in-visual-studio.md), [administrar dependencias del proyecto](how-to-create-and-remove-project-dependencies.md), [administrar archivos del registro de compilación](how-to-view-save-and-configure-build-log-files.md) y [suprimir las advertencias del compilador](how-to-suppress-compiler-warnings.md).
+
+De ahí en adelante, puede explorar otras tareas:
+- [Descripción de las configuraciones de compilación](understanding-build-configurations.md)
+- [Descripción de las plataformas de compilación](understanding-build-platforms.md)
+- [Administrar propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)  
+- Especificar eventos de compilación en [C#](how-to-specify-build-events-csharp.md) y [Visual Basic](how-to-specify-build-events-visual-basic.md) 
+- [Establecer las opciones de compilación](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)   
- [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)   
- [Generar sitios web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
- [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
+
+- [Compilar proyectos de sitios web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
