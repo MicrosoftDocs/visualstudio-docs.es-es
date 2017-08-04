@@ -1,7 +1,7 @@
 ---
 title: "Cómo desbloquear Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 01/23/2016
+ms.date: 7/20/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,41 +13,26 @@ caps.latest.revision: 8
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 4a1e79dbceb4c0cfd02dab4b3132190e44ac3273
+ms.translationtype: HT
+ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
+ms.openlocfilehash: db9fff46d52be80e53bd5c09fb8ab9d1f06d4f3c
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/21/2017
 
 ---
+
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
-Visual Studio se puede probar de forma gratuita durante 30 días. Si desea extender el período de prueba a 90 días, puede hacerlo al iniciar sesión en el IDE. Para seguir usando Visual Studio, desbloquee el IDE mediante  
+Visual Studio se puede probar de forma gratuita durante 30 días. Al iniciar sesión en el IDE, extiende el período de prueba a 90 días. Para seguir usando Visual Studio, desbloquee el IDE mediante  
   
-1.  una suscripción en línea;  
+1.  una suscripción en línea, o  
+1.  una clave de producto.  
   
-2.  una clave de producto.  
-  
-## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear Visual Studio con una suscripción en línea  
- Para desbloquear Visual Studio mediante una suscripción en línea a Visual Studio o a MSDN que esté asociada con una cuenta Microsoft o con una cuenta profesional o educativa:  
+ed## Para desbloquear Visual Studio con una suscripción en línea  
+ Para desbloquear Visual Studio mediante una suscripción a Visual Studio Visual Studio Team Service o a MSDN que esté asociada con una cuenta Microsoft o con una cuenta profesional o educativa:  
   
 1.  Haga clic en el botón "Iniciar sesión" en la esquina superior derecha del IDE (o vaya a Archivo > Configuración de la cuenta para abrir el cuadro de diálogo Configuración de la cuenta y haga clic en el botón "Iniciar sesión").  
   
-2.  Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio encontrará la suscripción a MSDN o a Visual Studio Team Services que está asociada con su cuenta.  
+1.  Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio encuentra la suscripción a MSDN o a Visual Studio Team Services que está asociada con su cuenta.  
   
 > [!IMPORTANT]
 >  Visual Studio busca automáticamente las suscripciones en línea asociadas al conectarse a una cuenta de Visual Studio Team Services desde la ventana de herramientas de Team Explorer. Al conectarse a una cuenta de Visual Studio Team Services, puede iniciar sesión con la cuenta Microsoft o con la cuenta profesional o educativa. Si existe una suscripción en línea para esa cuenta de usuario, Visual Studio desbloqueará automáticamente el IDE.  
@@ -55,8 +40,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear Visual Studio con una clave de producto  
   
 1.  Seleccione **Archivo > Configuración de la cuenta** para abrir el cuadro de diálogo Configuración de la cuenta y haga clic en el vínculo "**Licencia con una clave de producto**".  
-  
-2.  Escriba la clave de producto en el espacio para ello.  
+1.  Escriba la clave de producto en el espacio para ello.  
   
 > [!TIP]
 >  Las versiones preliminares de Visual Studio no tienen claves de producto. Para poder usar esas versiones preliminares, debe iniciar sesión en el IDE.  
@@ -64,29 +48,28 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 ## <a name="address-license-problem-states"></a>Resolver problemas de estado de licencia  
   
 ### <a name="update-stale-licenses"></a>Actualizar licencias obsoletas  
- Es posible que haya visto el mensaje siguiente donde se indica que su licencia de Visual Studio se está quedando obsoleta.  
+ Es posible que haya visto el mensaje siguiente donde se indica que su licencia de Visual Studio se está quedando obsoleta: "Su licencia ha quedado obsoleta y debe actualizarse".
   
- ![Cuadro de diálogo de información de usuario de Visual Studio](../ide/media/vs2013_userinfo.png "VS2013_UserInfo")  
+ ![Mensaje de licencia obsoleta de Visual Studio](../ide/media/vs2017_stale-license.png)  
   
  Este mensaje indica que, aunque es posible que la licencia aún sea válida, el token de licencia que usa Visual Studio para mantener actualizada la suscripción no se ha actualizado y ha quedado obsoleto debido a uno de los siguientes motivos:  
   
-1.  No se usó Visual Studio o no hubo conexión a Internet durante un período prolongado de tiempo.  
+1.  No se ha usado Visual Studio o no ha habido conexión a Internet durante un período prolongado de tiempo.   
+1.  Se cerró la sesión de Visual Studio.  
   
-2.  Se cerró la sesión de Visual Studio.  
+ Antes de que el token de licencia quede obsoleto, Visual Studio muestra un mensaje de advertencia donde se le pide que vuelva a escribir sus credenciales.  
   
- Antes de que el token de licencia quede obsoleto, Visual Studio mostrará un mensaje de advertencia donde se le pedirá que vuelva a introducir sus credenciales.  
+ Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de diálogo Configuración de la cuenta se le indica cuántos días quedan antes de que el token expire por completo. Si el token expira, habrá que introducir de nuevo las credenciales de esta cuenta o licencia con el otro método anterior para poder continuar usando Visual Studio.  
   
- Si no vuelve a introducir sus credenciales, el token irá quedando poco a poco obsoleto. Cuando esto sucede, el cuadro de diálogo Configuración de la cuenta muestra el número de días que quedan antes de la expiración definitiva del token. Si el token expira, habrá que introducir de nuevo las credenciales de esta cuenta o licencia con el otro método anterior para poder continuar usando Visual Studio.  
-  
-> [!IMPORTANT]
+> [!Important]
 >  Si trabaja con Visual Studio durante largos períodos en entornos con poco o ningún acceso a Internet, use una clave de producto para desbloquear Visual Studio con el fin de evitar la interrupción.  
   
 ### <a name="update-expired-licenses"></a>Actualizar licencias caducadas  
  Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe:  
   
-1.  Renovar su suscripción. Para obtener más información sobre su licencia actual, vaya a Archivo > Configuración de la cuenta y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo.  
+1.  Renovar su suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo > Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo.  
   
-2.  Si tiene otra suscripción asociada con una cuenta diferente, agregue esa cuenta a la lista Todas las cuentas, en el lado izquierdo del cuadro de diálogo Archivo > Configuración de la cuenta. Para ello, haga clic en el vínculo "Agregar una cuenta...".  
+1.  Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo **Archivo > Configuración de la cuenta**. Para ello, seleccione el vínculo **Agregar una cuenta…**.  
   
 ## <a name="see-also"></a>Vea también  
  [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)

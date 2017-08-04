@@ -30,9 +30,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: c22154a77221bd45031428a158bc8060b89f93ef
+ms.contentlocale: es-es
 ms.lasthandoff: 04/05/2017
 
 ---

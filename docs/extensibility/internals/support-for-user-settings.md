@@ -30,9 +30,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 24bd28ad78f1cd3a21167215ed8348dc79edce6b
+ms.contentlocale: es-es
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -48,7 +49,7 @@ Un VSPackage puede definir una o varias categorías de configuración, que son g
      Si un paquete VSPackage solo es compatible con varios puntos de configuración personalizada, cada punto de configuración personalizada se implementa mediante una clase independiente, y cada uno está registrado por una única instancia de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>clase.</xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Por consiguiente, una configuración de implementación de clase puede admitir más de una categoría de configuración.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Detalles de la entrada de configuración personalizada del registro de punto  
- Se crean puntos de configuración personalizada en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\*\<versión >*\UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizada de admite el VSPackage y *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0.  
+ Se crean puntos de configuración personalizada en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\*\<versión >*\UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizada de admite el VSPackage y  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0.  
   
 > [!NOTE]
 >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede ser invalidado con una alternativa raíz cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se inicializa el entorno de desarrollo integrado (IDE). Para obtener más información, consulte [modificadores de línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
