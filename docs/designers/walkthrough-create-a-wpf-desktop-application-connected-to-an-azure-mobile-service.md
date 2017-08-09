@@ -13,26 +13,11 @@ caps.latest.revision: 7
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b42e50dcfc4820b750c04085f1e881ee25f786f9
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
@@ -41,7 +26,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
 ##  <a name="Requirements"></a> Requisitos previos  
  Necesitará lo siguiente para poder realizar este tutorial:  
   
--   Visual Studio 2015: cualquier versión que admita el desarrollo en WPF.  
+-   Visual Studio 2017 o cualquier versión que admita el desarrollo en WPF.  
   
 -   Una cuenta activa de Microsoft Azure.  
   
@@ -581,8 +566,8 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
 ## <a name="next-steps"></a>Pasos siguientes  
  Ha completado un ejemplo bastante sencillo de aplicación de escritorio de WPF con un back-end de Azure. Por supuesto, probablemente una aplicación real resulte mucho más compleja; sin embargo, se aplican los mismos conceptos básicos. Vea [WPF en .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
   
- Puede hacer la interfaz de usuario más atractiva mediante la adición de colores, formas, gráficos o incluso animaciones. Vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
-  
+ Puede hacer la interfaz de usuario más atractiva mediante la adición de colores, formas, gráficos o incluso animaciones. Vea [Crear una UI con el Diseñador XAML en Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) y [Creación de una interfaz de usuario con Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Para ver una comparación entre las herramientas, vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
+
  Puede conectarse a las bases de datos SQL existentes u otros orígenes de datos mediante servicios móviles de Azure. Vea [Documentación de servicios móviles](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Vea también  

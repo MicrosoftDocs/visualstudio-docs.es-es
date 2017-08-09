@@ -1,12 +1,13 @@
 ---
 title: "Edición de código con Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/28/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: e8b42484d471d4deac0eabcd4c55e09297d0873f
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 261cced8583b751d74701a8903a10a4584928940
 ms.contentlocale: es-es
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
@@ -57,15 +44,15 @@ Vea también los temas en [IntelliSense](code-intellisense.md), [fragmentos de c
 
 Además de colorear diferentes partes del código, como cadenas, comentarios y palabras clave, RTVS también resalta y permite vínculos en comentarios:
 
-![Color de sintaxis para código de R](~/rtvs/media/editing-syntax-colors.png)
+![Color de sintaxis para código de R](media/editing-syntax-colors.png)
 
 Para personalizar las fuentes y determinados colores de resaltado, seleccione el comando **Herramientas > Opciones**, vaya a **Entorno > Fuentes y colores** y después cambie la configuración de elementos relacionados con R en el cuadro **Mostrar elementos**:
 
-![Opciones de color y fuentes para el código de R](~/rtvs/media/editing-syntax-colors-options.png)
+![Opciones de color y fuentes para el código de R](media/editing-syntax-colors-options.png)
 
 Visual Studio también subraya los errores de sintaxis en el editor:
 
-![Resaltado de errores de sintaxis en código de R](~/rtvs/media/editing-syntax-error.png)
+![Resaltado de errores de sintaxis en código de R](media/editing-syntax-error.png)
 
 Para cambiar este comportamiento, consulte la configuración **Avanzadas > Comprobación de sintaxis** en [Opciones del editor](#editor-options).
 
@@ -73,37 +60,37 @@ Para cambiar este comportamiento, consulte la configuración **Avanzadas > Compr
 
 Mientras escribe código, RTVS proporciona finalización automática, como se describe en la página [IntelliSense](code-intellisense.md). También realiza formato automático como la finalización de paréntesis y llaves: 
 
-![Animación de formato en línea](~/rtvs/media/editing-inline-formatting.gif)
+![Animación de formato en línea](media/editing-inline-formatting.gif)
 
 Si al escribir se llama a funciones que tienen muchos parámetros, a menudo querrá alinear los parámetros para que el código sea más fácil de leer. RTVS recuerda la sangría establecida para los parámetros y la aplica automáticamente a las líneas siguientes:
 
-![Animación de sangría automática](~/rtvs/media/editing-auto-indentation.gif)
+![Animación de sangría automática](media/editing-auto-indentation.gif)
 
-Para cambiar este comportamiento, consulte las [Opciones del editor](#editor-options) bajo el grupo **Pestañas**.
+Para cambiar este comportamiento, vea las [Opciones del editor](#editor-options) para el grupo **Pestañas**.
 
 Las regiones de código contraíbles le permiten ocultar temporalmente parte del código en el editor. Visual Studio crea varias regiones automáticamente (por ejemplo, en instrucciones multilínea), a menos que la opción **Avanzadas > Esquematización > Esquematización de código** esté establecida en Desactivado.
 
 Para crear una región propia, rodee el código que quiera con comentarios que terminen con `---`. Los pequeños controles +/- a la izquierda del código permiten expandir y contraer las regiones:
 
-![Creación de una región contraíble con comentarios](~/rtvs/media/editing-collapsible-regions.gif)
+![Creación de una región contraíble con comentarios](media/editing-collapsible-regions.gif)
  
 De forma predeterminada, Visual Studio inserta espacios al presionar la tecla Tab. De nuevo, puede cambiar este comportamiento como se describe en [Opciones, Editor de texto, Todos los lenguajes](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navegación por el código
 
-La navegación por el código le permite acceder rápidamente al código fuente de su programa de R y sus bibliotecas. Estas características de navegación hacen que mantenga el flujo de trabajo en lugar de tener que dedicar tiempo a buscar y navegar de forma manual al código que le interese.
+La navegación por el código le permite acceder rápidamente al código fuente de su programa de R y sus bibliotecas. Estas características le mantienen en su flujo de trabajo en lugar de tener que buscar el código manualmente.
 
 **Ir a definición** salta rápidamente a una definición de función o muestra un pequeño editor en línea para leer el código fuente de una función de biblioteca. Solo tiene que hacer clic con el botón derecho en la función que le interese y seleccionar **Ir a definición** o colocar el cursor en la función y presionar F12.
 
-De este modo, se abre una nueva ventana del editor que contiene el código fuente de la función y con el cursor situado convenientemente al principio de la definición de función.
+Este comando abre una nueva ventana de editor que contiene el código fuente de la función. El cursor se coloca convenientemente al principio de la definición de la función.
 
 **Ver la definición**, invocado desde el menú contextual o Alt+F12, inserta una región desplazable de solo lectura que contiene el código fuente de la función bajo la llamada de función:
 
-![Animación de Ver la definición](~/rtvs/media/editing-peek-definition.gif)
+![Animación de Ver la definición](media/editing-peek-definition.gif)
 
 ## <a name="sending-code-to-the-interactive-window"></a>Envío de código a la ventana interactiva
 
-A muchos desarrolladores les gusta escribir código en el editor y después enviarlo a la [ventana interactiva](interactive-repl.md) para realizar pruebas de inmediato (también conocido como read-eval-print loop o REPL). Esto se hace en el editor de R al presionar Ctrl+Entrar en la línea actual de código, que después coloca el cursor en la línea siguiente. Con Ctrl+Entrar, puede examinar el código de forma eficaz desde el editor.
+A muchos desarrolladores les gusta escribir código en el editor y después enviarlo a la [ventana interactiva](interactive-repl.md) para realizar pruebas de inmediato (también conocido como read-eval-print loop o REPL). Al presionar Ctrl+Entrar en el editor de R se envía la línea actual de código a la ventana interactiva, que después coloca el cursor en la línea siguiente. Con Ctrl+Entrar, puede examinar el código de forma eficaz desde el editor.
 
 También puede seleccionar código y presionar Ctrl+ Entrar para aplicar toda la selección. Como alternativa, haga clic con el botón derecho en la selección y seleccione **Ejecutar en modo interactivo**.
 
@@ -115,7 +102,7 @@ El formato automático de Visual Studio mantiene el código que escriba, así co
 f<-function  (a){  return(a + 1) }
 ```
 
-Aplicar formato la limpiará para que quede de esta forma:
+Aplicar formato la limpia para que quede de esta forma:
 
 ```R
 f <- function(a) { return(a + 1) }
@@ -123,15 +110,15 @@ f <- function(a) { return(a + 1) }
 
 Para volver a aplicar formato a todo el archivo de código, seleccione **Editar > Avanzadas > Dar formato al documento** (Ctrl+E,D).
 
-El formato automático es una operación independiente que se puede deshacer. Por ejemplo, si pega código en el editor y se aplica el formato, seleccione **Editar > Deshacer** o presione CTRL+Z una vez para deshacer el formato; si vuelve a seleccionar Deshacer, se deshará también el pegado.
+El formato automático es una operación independiente que se puede deshacer. Por ejemplo, si pega código en el editor y se aplica el formato, al seleccionar **Editar > Deshacer** o presionar Ctrl+Z una vez se deshace el formato; si vuelve a seleccionar Deshacer, se deshará también el pegado.
  
-Las opciones de formato (incluida la desactivación del formato) se establecen a través de **Herramientas > Opciones** en la pestaña **Editor de texto > R > Avanzadas**, a la que puede ir directamente mediante el comando **Herramientas de R > Opciones del editor...** o al hacer clic con el botón derecho en el editor y seleccionar **Opciones de formato...** Consulte [Opciones del editor](#editor-options) a continuación para obtener más información.
+Las opciones de formato (incluida la desactivación del formato) se establecen mediante **Herramientas > Opciones** en la pestaña **Editor de texto > R > Opciones avanzadas**. Puede ir directamente a esta página mediante el comando **Herramientas de R > Opciones del editor...** o haciendo clic con el botón derecho en el editor y seleccionando **Opciones de formato...** Vea la sección [Opciones del editor](#editor-options) para obtener más información.
  
 ## <a name="inserting-roxygen-comments"></a>Inserción de comentarios Roxygen
 
 RTVS proporciona un acceso directo para generar comentarios [Roxygen](http://roxygen.org/) con los nombres de parámetro de una función. Solo tiene que escribir `###` en una línea en blanco encima de la definición de función:
 
-![Animación de la inserción de un comentario Roxygen](~/rtvs/media/editing-roxygen-comments.gif)
+![Animación de la inserción de un comentario Roxygen](media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>Opciones del editor
 

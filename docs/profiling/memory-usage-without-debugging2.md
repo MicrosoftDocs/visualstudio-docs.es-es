@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: baf1e18c56587b071aaa25fd522e3aa1b27a0b30
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="memory-usage-without-the-debugger"></a>Uso de memoria sin el depurador
@@ -98,10 +98,10 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
   
 |||  
 |-|-|  
-|![Paso 1](~/profiling/media/procguid_1.png "ProcGuid_1")|El texto del vínculo muestra el número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|  
-|![Paso 2](~/profiling/media/procguid_2.png "ProcGuid_2")|El texto del vínculo muestra el número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|  
-|![Paso 3](~/profiling/media/procguid_3.png "ProcGuid_3")|El texto del vínculo muestra la diferencia entre el tamaño total de objetos en memoria en el momento de esta instantánea y el tamaño total de la instantánea anterior.<br /><br /> Si el tamaño de memoria de esta instantánea es mayor que el de la anterior, el texto del vínculo es un número positivo, y es negativo si el tamaño es menor. El texto del vínculo **Línea de base** indica que esta instantánea es la primera de la sesión de diagnóstico; **Ninguna diferencia** indica que la diferencia es cero.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al tamaño total de instancias de los tipos.|  
-|![Paso 4](~/profiling/media/procguid_4.png "ProcGuid_4")|El texto del vínculo muestra la diferencia entre el número total de objetos de memoria de esta instantánea y el número de objetos de la instantánea anterior.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al recuento total de instancias de los tipos.|  
+|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El texto del vínculo muestra el número total de bytes en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el tamaño total de las instancias de tipo.|  
+|![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|El texto del vínculo muestra el número total de objetos en memoria cuando se tomó la instantánea.<br /><br /> Seleccione este vínculo para mostrar un informe de detalles de instantánea ordenado por el recuento de instancias de los tipos.|  
+|![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|El texto del vínculo muestra la diferencia entre el tamaño total de objetos en memoria en el momento de esta instantánea y el tamaño total de la instantánea anterior.<br /><br /> Si el tamaño de memoria de esta instantánea es mayor que el de la anterior, el texto del vínculo es un número positivo, y es negativo si el tamaño es menor. El texto del vínculo **Línea de base** indica que esta instantánea es la primera de la sesión de diagnóstico; **Ninguna diferencia** indica que la diferencia es cero.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al tamaño total de instancias de los tipos.|  
+|![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|El texto del vínculo muestra la diferencia entre el número total de objetos de memoria de esta instantánea y el número de objetos de la instantánea anterior.<br /><br /> Seleccione este vínculo para mostrar un informe diferencial de instantánea ordenado por la diferencia en cuanto al recuento total de instancias de los tipos.|  
   
 ##  <a name="BKMK_Snapshot_reports"></a> Informes de instantánea  
  ![Informe de instantánea de uso de memoria](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
@@ -220,7 +220,5 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
 |**Tamaño inclusivo (bytes)**|Tamaño de los objetos de la instantánea principal, incluso el tamaño de los objetos incluidos en los objetos.|  
   
 ## <a name="see-also"></a>Vea también  
- [Memoria de JavaScript](../profiling/javascript-memory.md)
- [Herramientas de generación de perfiles](../profiling/profiling-tools.md)
- [Procedimientos recomendados para aplicaciones de la Tienda Windows con C++, C# y Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Memoria de JavaScript](../profiling/javascript-memory.md) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md) [Procedimientos recomendados para aplicaciones de la Tienda Windows con C++, C# y Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

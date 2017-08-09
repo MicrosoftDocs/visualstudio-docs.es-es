@@ -1,12 +1,13 @@
 ---
 title: "Formato del código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -43,7 +30,7 @@ Visual Studio permite volver a aplicar formato rápidamente al código para que 
 - Para aplicar formato a una selección: seleccione **Edit > Advanced > Format Selection** (Editar > Opciones avanzadas > Aplicar formato a selección) o presione Ctrl+E,F.
 - Para aplicar formato a todo el archivo: seleccione **Edit > Advanced > Format Document** (Editar > Opciones avanzadas > Aplicar formato a documento) o presione Ctrl+E,D.
 
-Las opciones se establecen mediante **Tools > Options > Text Editor > Python > Formatting** (Herramientas > Opciones > Editor de texto > Python > Aplicar formato) y sus pestañas secundarias; de forma predeterminada, se configuran para que coincidan con un superconjunto de la [guía de estilo de PEP 8](http://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; las otras tres subpáginas se definen en las secciones siguientes.
+Las opciones se establecen mediante **Herramientas > Opciones > Editor de texto > Python > Aplicar formato** y sus pestañas secundarias; de manera predeterminada, se configuran para que coincidan con un superconjunto de la [guía de estilo de PEP 8](http://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; la configuración de las otras tres pestañas se describe este tema.
 
 La [compatibilidad con Python en Visual Studio](installation.md) también agrega el práctico comando [Rellenar párrafo del comentario](#fill-comment-paragraph-command) al menú **Editar > Opciones avanzadas**, como se describe a continuación.
 
@@ -55,7 +42,7 @@ El **espaciado** controla dónde se insertan o quitan los espacios en torno a di
 - Desactivada: elimina el espaciado.
 - Indeterminada: deja el formato original en su sitio.
 
-En las tablas siguientes se proporcionan ejemplos de las distintas opciones.
+En las tablas siguientes se proporcionan ejemplos de las distintas opciones:
 
 | Opción de definiciones de clase | Activado | Borrado |
 | --- | --- | --- | 
@@ -99,7 +86,7 @@ En las tablas siguientes se proporcionan ejemplos de las distintas opciones.
 
 ## <a name="statements"></a>Instrucciones
 
-Las **instrucciones** controlan la reescritura automática de diversas instrucciones en varios formularios de Python.
+Las opciones de **instrucciones** controlan la reescritura automática de diversas instrucciones en varios formularios de Python.
 
 | Opción | Antes de aplicar formato | Después de aplicar formato |
 | --- | --- | --- |
@@ -110,7 +97,7 @@ Las **instrucciones** controlan la reescritura automática de diversas instrucci
 
 ## <a name="wrapping"></a>Ajuste
 
-El **ajuste** permite establecer el **ancho máximo del comentario** (el valor predeterminado es 80), de modo que si la opción **Ajustar comentarios que son demasiado anchos** está activada, Visual Studio volverá a aplicar formato a los comentarios para no superar ese ancho.
+**Ajuste** le permite establecer el **Ancho máximo del comentario** (el valor predeterminado es 80). Si la opción **Ajustar comentarios que son demasiado anchos** está activada, Visual Studio volverá a aplicar formato a los comentarios para no superar ese ancho máximo.
 
 ```python
 # Wrapped to 40 columns
@@ -127,7 +114,7 @@ El **ajuste** permite establecer el **ancho máximo del comentario** (el valor p
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph command (Rellenar párrafo de comentarios)
 
-**Edit > Advanced > Fill Comment Paragraph** (Editar > Opciones avanzadas > Rellenar párrafo de comentarios) (Ctrl+E,Ctrl+P). Este comando redistribuye y aplica formato al texto de comentario, y combina líneas cortas y otras más largas separadas.
+**Editar > Opciones avanzadas > Rellenar párrafo de comentarios** (Ctrl+E, P) redistribuye y aplica formato al texto de comentario, y combina líneas cortas y otras más largas separadas.
 
 Por ejemplo:
 

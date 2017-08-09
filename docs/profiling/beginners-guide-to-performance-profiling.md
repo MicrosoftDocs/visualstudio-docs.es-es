@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guía básica para la generación de perfiles de rendimiento
@@ -47,6 +47,8 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
 Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
+
+También puede [ver un vídeo sobre cómo usar las herramientas de diagnóstico](#video) que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria.
 
 En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para obtener más información, consulte [Ejecutar herramientas de generación de perfiles sin depuración](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
@@ -63,7 +65,7 @@ En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de dep
 
 4.  Puede elegir si ve **Uso de CPU**, [Uso de memoria](../profiling/Memory-Usage.md) o ambos con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, también puede habilitar o desactivar IntelliTrace en **Herramientas / Opciones / IntelliTrace**.
 
-     ![Mostrar herramientas de diagnóstico](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Mostrar herramientas de diagnóstico](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Nos fijaremos principalmente en el uso de CPU, así que asegúrese de que **Uso de CPU** está habilitado (lo está de forma predeterminada).
 
@@ -71,7 +73,7 @@ En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de dep
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
-     ![Pestaña Resumen de herramientas de diagnóstico](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      Para obtener más información sobre los eventos, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
 
@@ -79,7 +81,7 @@ En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de dep
 
 7.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de CPU y, a continuación, abra la pestaña **Uso de CPU**.
 
-     ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      Cuando se elige **Habilitar generación de perfiles de CPU**, Visual Studio empezará a registrar sus funciones y cuánto tiempo tardan en ejecutarse. Solo puede ver los datos recopilados cuando la aplicación se detiene en un punto de interrupción.
 
@@ -89,15 +91,15 @@ En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de dep
 
 9.  Seleccione la región que le interese analizar de la escala de tiempo de CPU (debe ser una región en que se muestren datos de generación de perfiles).
 
-     ![Herramientas de diagnóstico para seleccionar un segmento de tiempo](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Herramientas de diagnóstico para seleccionar un segmento de tiempo](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
      El generador de perfiles empieza a preparar los datos de subproceso. Espere a que finalice.
 
-     ![Herramientas de diagnóstico para preparar subprocesos](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Herramientas de diagnóstico para preparar subprocesos](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
      La herramienta Uso de CPU muestra el informe en la pestaña **Uso de CPU**.
   
-     ![Herramientas de diagnóstico para la pestaña Uso de CPU](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Herramientas de diagnóstico para la pestaña Uso de CPU](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      En este punto, puede empezar a analizar los datos.
 
@@ -107,7 +109,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 1. En la lista de funciones, examine las funciones que realizan la mayor parte del trabajo.
 
-    ![Herramientas de diagnóstico para la lista de funciones de Uso de CPU](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Herramientas de diagnóstico para la lista de funciones de Uso de CPU](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Las funciones aparecen en orden, comenzando por las que realizan la mayor parte del trabajo (no están en orden de llamada). Esto ayuda a identificar rápidamente las funciones que se ejecutan durante más tiempo.
@@ -116,7 +118,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
     Al hacer doble clic en una función, la vista **Llamador y destinatario** se abre en el panel izquierdo. 
 
-    ![Herramientas de diagnóstico para la vista Llamador y destinatario](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Herramientas de diagnóstico para la vista Llamador y destinatario](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
     En esta vista, la función seleccionada se muestra en el encabezado y en el cuadro **Función actual** (en este ejemplo, GetNumber). La función que llamó a la función actual se muestra a la izquierda en **Función llamadora**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
 
@@ -131,7 +133,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
  
     Cada área numerada de la ilustración se corresponde con un paso del procedimiento.
   
-    ![Herramientas de diagnóstico para el árbol de llamadas](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Herramientas de diagnóstico para el árbol de llamadas](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
@@ -154,7 +156,7 @@ Código externo son funciones de los componentes del sistema y del marco que son
   
 Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
   
-![Elija Vista de filtro y, después, Mostrar código externo](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Elija Vista de filtro y, después, Mostrar código externo](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
 Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]**.
   
@@ -162,8 +164,12 @@ Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, lueg
 
 > [!TIP]
 > Si genera perfiles de un código externo que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Especificar archivos de símbolos (.pdb) y de origen en el depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+## <a name="video"></a> Ver un vídeo sobre cómo usar las herramientas de diagnóstico
+
+<div style="padding-top: 56.25%; position: relative; width: 100%;">
+<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
+</div>
   
 ## <a name="see-also"></a>Vea también  
- [[Uso de memoria](../profiling/memory-usage.md)
- [Uso de CPU](../profiling/cpu-usage.md)
- [Herramientas de generación de perfiles](../profiling/profiling-tools.md)
+ [[Uso de memoria](../profiling/memory-usage.md) [Uso de CPU](../profiling/cpu-usage.md) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

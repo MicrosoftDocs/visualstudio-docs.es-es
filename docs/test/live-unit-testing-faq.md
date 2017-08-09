@@ -26,11 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e59263c352084107d9849ab656b8b7d034337c53
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 2a58b84403189d824494af85bc732a1b8cf3d0b6
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/13/2017
 
 **Respuesta:**
 
-Actualmente, Live Unit Testing no funciona con .NET Core. Estamos trabajando para agregar esta compatibilidad en el futuro. 
+Sí. Live Unit Testing funciona con .NET Core y .NET Frameworks. Se ha agregado recientemente compatibilidad con .NET Core en la versión preliminar de Visual Studio 2017 versión 15.3. 
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>¿Por qué Live Unit Testing no funciona cuando lo activo? 
 
@@ -49,7 +49,7 @@ La **Ventana de salida** (cuando se selecciona la lista desplegable Live Unit Te
 
 - Si no se han restaurado los paquetes NuGet a los que los proyectos hacen referencia en la solución, Live Unit Testing no funcionará. Este problema debería resolverse realizando una compilación explícita de la solución o restaurando los paquetes NuGet de la solución antes de activar Live Unit Testing. 
 
-- Si utiliza pruebas basadas en MSTest en los proyectos, asegúrese de quitar la referencia a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` y agregar referencias a los paquetes NuGet de MSTest más recientes, `MSTest.TestAdapter` (se requiere la versión preliminar 1.1.4 como mínimo) y `MSTest.TestFramework` (se requiere la versión preliminar 1.0.5 como mínimo). Para más información, consulte la sección "Marcos de pruebas admitidos" del tema [Live Unit Testing con Visual Studio 2017](live-unit-testing.md#supported-test-frameworks).
+- Si en los proyectos usa pruebas basadas en MSTest, asegúrese de quitar la referencia a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` y agregar referencias a los paquetes NuGet de MSTest más recientes, `MSTest.TestAdapter` (se requiere la versión 1.1.11 como mínimo) y `MSTest.TestFramework` (se requiere la versión 1.1.11 como mínimo). Para más información, consulte la sección "Marcos de pruebas admitidos" del tema [Live Unit Testing con Visual Studio 2017](live-unit-testing.md#supported-test-frameworks).
  
 - Al menos un proyecto de la solución debe tener una referencia a NuGet o una referencia directa al marco de prueba xUnit, NUnit o MSTest. Este proyecto también debe hacer referencia a un paquete NuGet del adaptador de prueba de Visual Studio correspondiente. También se puede hacer referencia al adaptador de prueba de Visual Studio a través de un archivo `.runsettings`. El archivo `.runsettings` debe tener una entrada como la siguiente: 
 
@@ -239,3 +239,4 @@ Puede hacer varias cosas para recopilar registros más detallados:
 
 [Live Unit Testing ](live-unit-testing.md)
  
+
