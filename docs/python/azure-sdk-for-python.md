@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: c64d1abc2266b7e2edbb2c81a46c53c39eb9a85a
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 89de0d11791dbf13b9d4fcfcea8168b443d2777b
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,7 +45,7 @@ Puede encontrar documentación en [azure-sdk-for-python.readthedocs.org](http://
 
 El [Centro para desarrolladores de Azure SDK para Python](http://azure.microsoft.com/develop/python/) también tiene varios recursos útiles, incluida una serie de tutoriales como:
 
-  - Creación de aplicaciones web con [Django](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions), [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) y [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+  - Creación de aplicaciones web con [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) y [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
   - [Blob storage](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
   - [Table storage](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
   - [Queue storage](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
@@ -66,3 +66,4 @@ Para las API públicas sin documentación, las pruebas unitarias del [repositori
 El repositorio de GIT para el SDK se encuentra en [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 [Registre los problemas en el repositorio](https://github.com/Azure/azure-sdk-for-python/issues) si encuentra algún problema o tiene preguntas sobre el uso del SDK.
+
