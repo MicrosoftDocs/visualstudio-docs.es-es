@@ -1,12 +1,13 @@
 ---
 title: "Solución de problemas de depuración remota de Azure para Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b723b343-dffb-457e-9af7-ee48c1451e30
@@ -14,31 +15,17 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: f9d9d1bc974e43cdd7d1da2a1468a9b7ef84f44b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: de9d74c3a0a8a3f3b66d621884f9c17fe787f856
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Solucionador de problemas de depuración remota para Python y Azure
 
-Visual Studio no podrá conectar con [Azure App Service para realizar la depuración remota](debugging-azure-remote.md) por alguno de los siguientes motivos:
+Visual Studio no puede conectarse con [Azure App Service para realizar la depuración remota](debugging-azure-remote.md) por alguno de los siguientes motivos:
 
 | Motivo | Resolución |
 | --- | --- |

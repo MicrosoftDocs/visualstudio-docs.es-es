@@ -1,12 +1,13 @@
 ---
 title: "Refactorización del código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 76ebcb29-72d1-4958-9a63-8984c03d5c22
@@ -14,24 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: ea69604524010ab794a4de0e85aea1e5fd680ac4
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 8826722a80f97de3b6e2e56600f6aaa9cb5d6134
+ms.contentlocale: es-es
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -47,44 +35,44 @@ Visual Studio proporciona varios comandos para transformar y limpiar automática
 <a name="rename-variable"</a>
 ## <a name="rename"></a>Cambiar nombre
 
-1. Haga clic con el botón derecho en el identificador cuyo nombre desea cambiar y seleccione **Rename** (Cambiar nombre); o bien, coloque el símbolo de intercalación en ese identificador y seleccione el comando de menú **Edit > Refactor > Rename...** (Editar > Refactorizar > Cambiar nombre...) o presione F2.
+1. Haga clic con el botón derecho en el identificador cuyo nombre desea cambiar y seleccione **Rename** (Cambiar nombre); o bien, coloque el símbolo de intercalación en ese identificador y seleccione el comando de menú **Edit > Refactor > Rename...** (Editar > Refactorizar > Cambiar nombre...) (F2).
 1. En el diálogo **Rename** (Cambiar nombre) que aparece, escriba el nuevo nombre del identificador y seleccione **OK** (Aceptar):
 
-  ![Mensaje de cambio de nombre para el nuevo nombre identificado](~/python/media/code-refactor-rename-1.png)
+  ![Mensaje de cambio de nombre para el nuevo nombre identificado](media/code-refactor-rename-1.png)
 
 1. En el siguiente diálogo, seleccione los archivos y las instancias del código al que se va a aplicar el cambio de nombre; seleccione cualquier instancia individual para obtener una vista previa del cambio concreto:
 
-  ![Diálogo de cambio de nombre para seleccionar dónde aplicar los cambios](~/python/media/code-refactor-rename-2.png)
+  ![Diálogo de cambio de nombre para seleccionar dónde aplicar los cambios](media/code-refactor-rename-2.png)
 
-1. Seleccione **Apply** (Aplicar) para realizar los cambios en los archivos de código fuente. Se trata de una acción que no se puede deshacer.
+1. Seleccione **Apply** (Aplicar) para realizar los cambios en los archivos de código fuente. (Esta acción se no puede deshacer).
 
 ## <a name="extract-method"></a>Extraer método
 
-1. Seleccione las líneas de código o la expresión para extraer a un método distinto.
-1. Seleccione el comando de menú **Edit > Refactor > Extract method...** (Editar > Refactorizar > Extraer método...) o escriba Ctrl-R,M.
+1. Seleccione las líneas de código o la expresión para extraer en un método distinto.
+1. Seleccione el comando de menú **Edit > Refactor > Extract method...** (Editar > Refactorizar > Extraer método...) o pulse Ctrl+R, M.
 1. En el diálogo que aparece, escriba un nuevo nombre de método, indique dónde extraerlo y seleccione las variables de cierre. Las variables no seleccionadas para cierre se convierten en los argumentos de método:
 
-  ![Diálogo de extracción de método](~/python/media/code-refactor-extract-method-1.png)
+  ![Diálogo de extracción de método](media/code-refactor-extract-method-1.png)
 
 1. Seleccione **OK** (Aceptar); el código se modifica en consecuencia:
 
-  ![Efecto de la extracción de un método](~/python/media/code-refactor-extract-method-2.png)
+  ![Efecto de la extracción de un método](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Agregar importación
 
-Al colocar el símbolo de intercalación en un identificador que carece de información de tipo, Visual Studio proporciona una etiqueta inteligente (el icono de bombilla a la izquierda del código) cuyos comandos agregarán la instrucción `import` o `from ... import` necesaria:
+Al colocar el símbolo de intercalación en un identificador que carece de información de tipo, Visual Studio proporciona una etiqueta inteligente (el icono de bombilla a la izquierda del código) cuyos comandos agregan la instrucción `import` o `from ... import` necesaria:
 
-![Agregar etiqueta inteligente de importación](~/python/media/code-refactor-add-import-1.png)
+![Agregar etiqueta inteligente de importación](media/code-refactor-add-import-1.png)
 
-Las finalizaciones `import` se ofrecen para paquetes y módulos de nivel superior en el proyecto actual y la biblioteca estándar; las finalizaciones `from ... import` se ofrecerán para módulos y paquetes secundarios y para miembros de módulos. Esto incluye funciones, clases o datos exportados. Al seleccionar cualquier opción, se agrega la instrucción a la parte superior del archivo, detrás de otras importaciones, o a una instrucción `from ... import` existente si ya se importó el mismo módulo.
+Visual Studio ofrece finalizaciones de `import` para paquetes de nivel superior y módulos en el proyecto actual y la biblioteca estándar. Visual Studio también ofrece finalizaciones de `from ... import` para submódulos y subpaquetes, así como para miembros de módulo. Las finalizaciones incluyen funciones, clases o datos exportados. Al seleccionar cualquier opción, se agrega la instrucción a la parte superior del archivo, detrás de otras importaciones, o a una instrucción `from ... import` existente si ya se importó el mismo módulo.
 
-![Resultado de agregar una importación](~/python/media/code-refactor-add-import-2.png)
+![Resultado de agregar una importación](media/code-refactor-add-import-2.png)
 
 Visual Studio intenta filtrar miembros que no están definidos realmente en un módulo, como módulos que se importan en otros, pero no son elementos secundarios del módulo que realiza la importación. Por ejemplo, muchos módulos usan `import sys` en lugar de `from xyz import sys`, por lo que no verá una finalización para importar `sys` desde otros módulos, aunque a los módulos les falte un miembro `__all__` que excluye `sys`.
 
 De forma similar, Visual Studio filtra las funciones que se importan desde otros módulos o desde el espacio de nombres integrado. Por ejemplo, si un módulo importa la función `settrace` desde el módulo `sys`, en teoría podría importarla desde ese módulo. Pero es mejor usar `import settrace from sys` directamente, y así Visual Studio ofrece esa instrucción específicamente.
 
-Por último, si algo se va a excluir debido a las reglas anteriores, pero tiene otros valores que se incluirán (por ejemplo, porque al nombre se le ha asignado un valor en el módulo), Visual Studio sigue excluyendo la importación. Aquí se asume que el valor no debe exportarse porque está definido en otro módulo y, por tanto, es probable que la asignación adicional sea un valor ficticio que tampoco se exporta.
+Por último, si algo se fuese a excluir normalmente, pero tiene otros valores que se incluirán (por ejemplo, porque al nombre se le ha asignado un valor en el módulo), Visual Studio sigue excluyendo la importación. Este comportamiento asume que el valor no debe exportarse porque está definido en otro módulo y, por tanto, es probable que la asignación adicional sea un valor ficticio que tampoco se exporta.
 
 <a name="remove-imports"</a>
 ## <a name="remove-unused-imports"></a>Quitar importaciones no usadas
@@ -93,10 +81,10 @@ Al escribir código, resulta fácil terminar con instrucciones `import` para mó
 
 Haga clic con el botón derecho en cualquier parte en un editor y seleccione **Remove Imports** (Quitar importaciones), que le proporciona opciones para quitar de **todos los ámbitos** o solo del **ámbito actual**:
 
-![Menú para quitar importaciones](~/python/media/code-refactor-remove-imports-1.png)
+![Menú para quitar importaciones](media/code-refactor-remove-imports-1.png)
 
 Después, Visual Studio realiza los cambios adecuados en el código:
 
-![Efecto de quitar importaciones](~/python/media/code-refactor-remove-imports-2.png)
+![Efecto de quitar importaciones](media/code-refactor-remove-imports-2.png)
 
 Tenga en cuenta que Visual Studio no tiene en cuenta el flujo de control; el uso de un nombre delante de una instrucción `import` se tratará como si de hecho se usara el nombre. Visual Studio también omite todas las importaciones `from __future__`, importaciones que se realizan dentro de una definición de clase y de las instrucciones `from ... import *`.

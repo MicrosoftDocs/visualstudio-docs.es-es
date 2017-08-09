@@ -1,7 +1,7 @@
 ---
 title: "Crear una IU con el Diseñador XAML en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -18,32 +18,17 @@ caps.latest.revision: 29
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0b6b302637113be1fb2700100124cf4079c06298
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 0122714fa0c932a1fba849226e1200795ff20cfa
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
-El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones de la Tienda Windows, Windows Phone, WPF y Silverlight basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.  
+El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.  
   
- Para tareas de diseño XAML avanzadas, como animaciones y comportamientos, consulte [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).  
+ Para tareas de diseño XAML avanzadas, como animaciones y comportamientos, consulte [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Consulte también [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md) para ver una comparación entre las herramientas.
   
 ## <a name="xaml-designer-workspace"></a>Área de trabajo del Diseñador XAML  
  El área de trabajo en el Diseñador XAML consta de varios elementos de la interfaz visual. Entre estos se incluyen la mesa de trabajo, el Editor XAML, la ventana Dispositivo, la ventana Esquema del documento y la ventana Propiedades. Para abrir el Diseñador XAML, haga clic con el botón derecho en un archivo XAML en el **Explorador de soluciones** y elija **Ver diseñador**.  
@@ -61,7 +46,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
  Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .  
   
  **Raíles Grid**  
-Los raíles de `Grid` se usan para administrar las filas y columnas en un panel [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.  
+ Los raíles de`Grid` se usan para administrar las filas y columnas en un panel [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.  
   
  **Controles Adorner de Grid**  
  Un control Adorner de `Grid` aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl `Grid` . Cuando se arrastra un control Adorner de `Grid` , el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.  
@@ -82,7 +67,7 @@ Los raíles de `Grid` se usan para administrar las filas y columnas en un panel 
   
  En la vista Diseño, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:  
   
- ![Comandos de la vista Diseño](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Comandos de la vista Diseño](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  Estos comandos están disponibles en esta barra de herramientas:  
   
@@ -109,7 +94,7 @@ Los raíles de `Grid` se usan para administrar las filas y columnas en un panel 
  El zoom de marcado permite cambiar el tamaño de la vista XAML. Puede hacer zoom del 20% al 400%.  
   
 ## <a name="device-window"></a>Ventana de dispositivo  
- La ventana Dispositivo del Diseñador XAML permite simular en tiempo de diseño varias vistas, presentaciones y opciones de visualización para el proyecto de la Tienda Windows o Windows Phone. La ventana Dispositivo está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:  
+ La ventana Dispositivo en el diseñador XAML le permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana Dispositivo está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:  
   
  ![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")  
   

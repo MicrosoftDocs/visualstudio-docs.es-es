@@ -1,12 +1,13 @@
 ---
 title: "Fragmentos de código con Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/28/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 90bf4f87-e276-40cd-bc17-3dfb47ef1870
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: 033a06b276b8a31e6c69b0eff68ee3f76dda1042
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 55d7e61f1066de900d6568a848a0aa78e3fd3897
 ms.contentlocale: es-es
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
@@ -47,19 +34,17 @@ Algunos ejemplos sencillos:
 - escriba `=` y después presione Tab y RTVS lo expande al operador de asignación `<-`.
 - escriba `>` y después presione Tab y RTVS lo expande al operador de canalización `%>%`.
 
-Los fragmentos de código pueden ser mucho más que una simple finalización de caracteres. Por ejemplo, puede evitarle tener que recordar los nombres de parámetros en una llamada de función compleja, por ejemplo, este fragmento de código para leer un archivo CSV con la función `read.csv`:
+Los fragmentos de código pueden ser mucho más que una simple finalización de caracteres. Un fragmento de código para leer un archivo CSV con la función `read.csv`, por ejemplo, puede evitar tener que recordar los nombres o los parámetros:
 
-![Animación del uso de un fragmento de código para insertar una llamada a read.csv](~/rtvs/media/code-snippet-expansion.gif)
+![Animación del uso de un fragmento de código para insertar una llamada a read.csv](media/code-snippet-expansion.gif)
 
 En este caso, a medida que escribe `readc`, IntelliSense muestra una lista de finalización. Si selecciona esa finalización en la lista desplegable y presiona Tab, se selecciona `readc` y, si vuelve a presionar Tab, se expande el fragmento de código. (Por esta razón, la expansión de fragmentos de código se suele considerar como "escriba el fragmento de código y presione la tecla Tab dos veces"). En la mayoría de los casos, la primera vez que se presiona Tab, se completa la selección de IntelliSense y, la segunda vez que se presiona Tab, se desencadena la expansión.
 
 Para ver todos los fragmentos de código disponibles, abra el cuadro de diálogo **Herramientas > Administrador de fragmentos de código...** (Ctrl+K,B) y seleccione **R** en **Lenguaje**. Expanda los grupos y seleccione fragmentos de código individuales para ver una descripción y el texto del acceso directo:
 
-![Cuadro de diálogo Fragmentos de código de R](~/rtvs/media/code-snippet-dialog.png)
+![Cuadro de diálogo Fragmentos de código de R](media/code-snippet-dialog.png)
 
-Para crear fragmentos de código personalizados, siga las instrucciones en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente es el fragmento de código de la operación de canalización (acceso directo `>`)
-
-Tenga en cuenta que un fragmento de código es solo un archivo XML; este es el fragmento de código del operador de canalización:
+Para crear fragmentos de código personalizados, siga las instrucciones en [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Por último, un fragmento de código es solo un archivo XML. Por ejemplo, el siguiente código es el fragmento de código de la operación de canalización (acceso directo `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

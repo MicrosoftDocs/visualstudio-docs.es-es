@@ -1,38 +1,25 @@
 ---
 title: "Instalación de Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 4/28/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
 ms.tgt_pltfrm: 
+ms.devlang: r
 ms.topic: article
 ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
 caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: bc0b1112fe6f3acf2605101a863d831f41bb5f6d
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 8e35c82a5f8583a609e9fccbacb0b27d9c3eac8f
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
@@ -50,22 +37,20 @@ En este tema:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versiones compatibles de Visual Studio
 
-Herramientas de R para Visual Studio (RTVS) es compatible con las ediciones Community, Professional y Enterprise de [Visual Studio 2015 Update 3 (o superior)](http://go.microsoft.com/fwlink/?LinkId=691129) y [Visual Studio 2017](https://www.visualstudio.com/downloads/). 
+Herramientas de R para Visual Studio (RTVS) es compatible con las ediciones Community (gratis), Professional y Enterprise de [Visual Studio 2017](https://www.visualstudio.com/downloads/) y [Visual Studio 2015 Update 3 (o versiones superiores)](http://go.microsoft.com/fwlink/?LinkId=691129) (descarga directa). 
 
-RTVS no se instalará si solo tiene Visual Studio Shell incluido en otros productos como Visual Studio Test Professional y SQL Server Management Studio. Esto se debe a que Visual Studio Shell no tiene los componentes necesarios para RTVS.
+RTVS no se instalará si solo tiene Visual Studio Shell incluido en productos como Visual Studio Test Professional y SQL Server Management Studio. Visual Studio Shell no tiene los componentes necesarios para RTVS.
 
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalación de RTVS en Visual Studio 2017
 
-> [!Important]
-> La instalación de RTVS en Visual Studio 2017 en Windows 7 de momento está bloqueada, como se explica en el [problema n.º 3561 de GitHub](https://github.com/Microsoft/RTVS/issues/3561). Esto se solucionará en la actualización 15.3 de Visual Studio 2017.
+1. Ejecute el instalador de Visual Studio. (Consulte [Descargas](https://www.visualstudio.com/downloads/) si aún no tiene instalado Visual Studio). En Windows 7, asegúrese de que el instalador se actualiza para mostrar la versión de Visual Studio *15.2 compilación 26430.12* o una versión posterior.
 
-1. Ejecute el instalador de Visual Studio.
 2. Seleccione la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**:
 
-    ![Carga de trabajo Aplicaciones de ciencia de datos y de análisis de VS2017](~/rtvs/media/installation-data-science-workload.png)
+    ![Carga de trabajo Aplicaciones de ciencia de datos y de análisis de VS2017](media/installation-data-science-workload.png)
 
-3. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. Tenga en cuenta que, de forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, como mínimo debe seleccionar **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
+3. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. De forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, los requisitos mínimos son **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
 
 RTVS se instala en: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`, donde `<version>` suele ser `2017` y `<edition>` es `Community`, `Professional` o `Enterprise`.
 
@@ -81,11 +66,11 @@ RTVS necesita una instalación de 64 bits de R versión 3.2.1 o superior desde u
 * [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
 * [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
-Microsoft R Open y CRAN R permiten varias versiones en paralelo. Pero Microsoft R Client solo admite una versión y siempre usará la más reciente que haya instalado.
+Microsoft R Open y CRAN R permiten varias versiones en paralelo. En cambio, Microsoft R Client solo admite una versión y siempre usa la más reciente que haya instalado.
 
 ### <a name="install-the-r-tools"></a>Instalar Herramientas de R
 
-Descargue la versión actual de RTVS desde [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS comprobará si hay una versión adecuada de Visual Studio y también le ayudará a instalar un intérprete de R si aún no tiene uno.
+Descargue la versión actual de RTVS desde [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS comprobará si hay una versión adecuada de Visual Studio y le ayudará a instalar un intérprete de R si aún no tiene uno.
 
 RTVS se instala en: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
@@ -93,13 +78,14 @@ RTVS se instala en: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\
 
 La instalación sin conexión es adecuada para los equipos que no están conectados a Internet:
 
-1. Siga las instrucciones para crear un instalador sin conexión para la versión siguiente de Visual Studio. 
+1. Siga las instrucciones para crear un instalador sin conexión para la versión siguiente de Visual Studio: 
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Instale Visual Studio desde el instalador sin conexión.
-1. [Descargue RTVS](https://aka.ms/rtvs-current) e instálelo como de costumbre.
+1. Descargue los instaladores de RTVS sin conexión de [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) y [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+
+1. Instale Visual Studio y RTVS desde el instalador sin conexión.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,12 +1,13 @@
 ---
 title: "Instalación de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
@@ -14,29 +15,15 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 9cdd87d81f0b0f4748a25c7bb87fb840e246854c
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="installing-python-support-in-visual-studio"></a>Instalación de la compatibilidad de Python en Visual Studio
+# <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
 Para instalar la compatibilidad de Python para Visual Studio, siga las instrucciones que aparecen en la sección correspondiente a su versión de Visual Studio:
 
@@ -44,12 +31,15 @@ Para instalar la compatibilidad de Python para Visual Studio, siga las instrucci
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
-Tenga en cuenta que para Visual Studio 2015 y anteriores es necesario instalar por separado un intérprete de Python de su elección. Para más información, vea [Python Environments](python-environments.md) (Entornos de Python).
+Para Visual Studio 2015 y versiones anteriores también es necesario instalar por separado un intérprete de Python de su elección. Para obtener más información, consulte [Entornos de Python](python-environments.md).
 
 Para probar rápidamente la compatibilidad de Python después de seguir los pasos de instalación, abra la ventana interactiva de Python; para ello, presione Alt-I y escriba `2+2`. Si no ve la salida de `4`, revise los pasos.
 
 > [!Tip]
-> La carga de trabajo de Python incluye la útil extensión Cookiecutter que proporciona una interfaz gráfica de usuario para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Para obtener más información, vea [Using Cookiecutter](cookiecutter.md) (Uso de la extensión Cookiecutter).
+> La carga de trabajo de Python incluye la útil extensión Cookiecutter que proporciona una interfaz gráfica de usuario para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Para obtener más información, consulte [Uso de la extensión Cookiecutter](cookiecutter.md).
+
+> [!Note]
+> La compatibilidad con Python no está actualmente disponible en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code. Consulte las [Preguntas y respuestas](python-in-visual-studio.md#questions-and-answers).
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -57,14 +47,16 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 1. En el instalador de Visual Studio, seleccione la carga de trabajo **Web y nube > Desarrollo de Python**.
 
-    ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](~/python/media/installation-python-workload.png)
+    ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](media/installation-python-workload.png)
 
     > [!Note]
     > Python también se incluye en la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**.
 
 1. En el lado derecho del instalador, seleccione los intérpretes de Python y otras herramientas relacionadas que desee incluir. Por ejemplo, si va a desarrollar extensiones de C++ para Python, incluya la opción **Herramientas de desarrollo nativo Python**.
 
-    ![Opciones de desarrollo de Python en el instalador de Visual Studio](~/python/media/installation-python-options.png)
+    ![Opciones de desarrollo de Python en el instalador de Visual Studio](media/installation-python-options.png)
+
+1. Si ya tiene instalados intérpretes en el equipo, consulte [Creación de un entorno para un intérprete existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,9 +66,9 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 1. Seleccione **Lenguajes de programación > Herramientas de Python para Visual Studio** y luego haga clic en **Siguiente**:
 
-    ![Opción de PTVS en el instalador de Visual Studio 2015](~/python/media/installation-vs2015.png)    
+    ![Opción de PTVS en el instalador de Visual Studio 2015](media/installation-vs2015.png)    
 
-1. Una vez completada la instalación de Visual Studio, [instale un intérprete de Python de su elección](python-environments.md#selecting-and-installing-python-interpreters).
+1. Una vez completada la instalación de Visual Studio, [instale un intérprete de Python de su elección](python-environments.md#selecting-and-installing-python-interpreters). Si ya tiene instalado un intérprete, consulte [Creación de un entorno para un intérprete existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 y anterior
 
@@ -86,7 +78,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
     - Visual Studio 2012: [PTVS 2.1 para Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 para Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Instale un intérprete de Python de su elección](python-environments.md#selecting-and-installing-python-interpreters).
+1. [Instale un intérprete de Python de su elección](python-environments.md#selecting-and-installing-python-interpreters). Si ya tiene instalado un intérprete, consulte [Creación de un entorno para un intérprete existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="install-locations"></a>Ubicaciones de instalación
 
