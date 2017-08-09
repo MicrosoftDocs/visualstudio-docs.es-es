@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: fbc3a182d2c3dbceaa17685f649ea73a3e73ed85
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="improve-code-quality"></a>Mejorar la calidad del código
@@ -54,8 +54,8 @@ ms.lasthandoff: 05/13/2017
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Las métricas incluyen un índice de mantenimiento para funciones y clases, complejidad ciclomática de funciones, la profundidad de herencia de clases y la cantidad de vinculación entre clases.|  
   
 ## <a name="related-scenarios"></a>Escenarios relacionados  
- [Adoptar Visual Studio y Team Foundation Server para Application Lifecycle Management](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
- Si no está familiarizado con Visual Studio Team Foundation, puede obtener más información sobre cómo se usa en un entorno de desarrollo en equipo para mejorar la productividad y reducir los riesgos asociados al desarrollo de aplicaciones.  
+ [Información general de DevOps para Team Services y TFS](https://www.visualstudio.com/docs/devops-alm-overview)  
+ Si no está familiarizado con Visual Studio Team Foundation y Visual Studio Team Services, puede obtener más información sobre cómo se usa en un entorno de desarrollo en equipo para mejorar la productividad y reducir los riesgos asociados al desarrollo de aplicaciones.  
   
  [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)  
  Puede utilizar [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] para administrar los desafíos y la complejidad de diseñar el software. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] permite modelar la aplicación visualmente, tal como existe ahora y como se desea que exista en el futuro. Puede crear y mantener diagramas que le ayudarán a visualizar los modelos lógicos de la aplicación a la vez que se asignan a los modelos físicos; esto le permite cambiar, validar y analizar el software "en fase de diseño".  

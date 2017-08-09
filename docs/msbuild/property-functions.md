@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: f351952a256679ec2d6c9dc2daa5288ca7214ad0
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: c52ed7c7e6de33d10d2a653a1072766aa9fb8023
+ms.contentlocale: es-es
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="property-functions"></a>Funciones de propiedad
@@ -98,6 +99,10 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
 -   System.IO.Path  
 
 -   System.Math  
+
+-   System.Runtime.InteropServices.OSPlatform
+
+-   System.Runtime.InteropServices.RuntimeInformation
 
 -   System.UInt16  
 
@@ -195,13 +200,22 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
 |int BitwiseAnd(int first, int second)|Realiza una operación `AND` bit a bit en el primero y el segundo (primero & segundo).|  
 |int BitwiseXor(int first, int second)|Realiza una operación `XOR` bit a bit en el primero y el segundo (primero ^ segundo).|  
 |int BitwiseNot(int first)|Realiza una operación `NOT` bit a bit (~first).|  
+|bool IsOsPlatform(string platformString)|Especifica si la plataforma del sistema operativo actual es `platformString`. `platformString` debe ser un miembro de `OSPlatform`.|
+|bool IsOSUnixLike|True si el sistema operativo actual es un sistema Unix.|
+|string NormalizePath(params string[] path)|Obtiene la ruta de acceso completa con formato canónico de la ruta proporcionada y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual.|
+|string NormalizeDirectory(params string[] path)|Obtiene la ruta de acceso completa con formato canónico del directorio proporcionado y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual mientras garantiza que tiene una barra diagonal final.|
+|string EnsureTrailingSlash(string path)|Si la ruta de acceso proporcionada no tiene una barra diagonal final, entonces agrega una. Si la ruta es una cadena vacía, no la modifica.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Busca un archivo basándose en la ubicación del archivo de compilación actual, o basándose en `startingDirectory`, si se ha especificado.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Busca un archivo en el directorio especificado o en una ubicación de la estructura de directorios por encima de ese directorio.|
+|string MakeRelative(string basePath, string path)|Hace que `path` sea relativo a `basePath`. `basePath` debe ser un directorio absoluto. Si `path` no puede ser relativo, se devuelve textualmente. Similar a `Uri.MakeRelativeUri`.|
+|string ValueOrDefault(string conditionValue, string defaultValue)|Devuelve la cadena en el parámetro "defaultValue" solo si el parámetro "conditionValue" está vacío. De lo contrario, devuelve el valor conditionValue.|
 
 ##  <a name="nested-property-functions"></a>Funciones de propiedad anidadas  
  Puede combinar funciones de propiedad para formar funciones más complejas, como muestra el siguiente ejemplo.  
 
  `$([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))`  
 
- En este ejemplo se devuelve el valor del bit <xref:System.IO.FileAttributes>`Archive` (32 o 0) del archivo indicado por la ruta de acceso `tempFile`. Tenga en cuenta que los valores de datos enumerados no pueden aparecer por nombre dentro de las funciones de propiedad. En su lugar, se debe usar el valor numérico (32).  
+ Este ejemplo devuelve el valor del bit <xref:System.IO.FileAttributes>`Archive` (32 o 0) del archivo indicado por la ruta de acceso `tempFile`. Tenga en cuenta que los valores de datos enumerados no pueden aparecer por nombre dentro de las funciones de propiedad. En su lugar, se debe usar el valor numérico (32).  
 
  En las funciones de propiedad anidadas también pueden aparecer metadatos. Para obtener más información, consulte [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
 

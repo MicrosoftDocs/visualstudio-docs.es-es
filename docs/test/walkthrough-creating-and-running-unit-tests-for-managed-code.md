@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a00b80092a44190d626b93b0ecc5689bafd1a4e3
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 8b60481a9895e818773273cecbf89212f557d620
+ms.contentlocale: es-es
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
@@ -44,7 +45,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   
  Este tema contiene las siguientes secciones:  
   
- [Preparar el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
+ [Prepare el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
   
  [Crear un proyecto de prueba unitaria](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
   
@@ -60,7 +61,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   
  [Corrija el código y vuelva a ejecutar las pruebas](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
- [Utilizar pruebas unitarias para mejorar el código](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
+ [Utilice pruebas unitarias para mejorar el código](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
 >  En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El Explorador de pruebas también puede ejecutar pruebas de marcos de pruebas unitarias de terceros, que tienen adaptadores para el Explorador de pruebas. Para obtener más información, consulte [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)  
@@ -124,7 +125,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria  
- **Requisito previo**: siga los pasos del procedimiento [Preparar el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+ **Requisito previo**: siga los pasos del procedimiento [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria  
   
@@ -193,7 +194,7 @@ using BankAccountNS;
   
  Al analizar el método en pruebas, se determina que hay al menos tres comportamientos que deben comprobarse:  
   
-1.  El método produce [ArgumentOutOfRangeException](assetId:///ArgumentOutOfRangeException?qualifyHint=False&autoUpgrade=True) si la cantidad de débito es mayor que el saldo.  
+1.  El método produce <xref:System.ArgumentOutOfRangeException> si la cantidad de débito es mayor que el saldo.  
   
 2.  También produce `ArgumentOutOfRangeException` si la cantidad de débito es menor que cero.  
   
@@ -250,10 +251,10 @@ using BankAccountNS;
   
 3.  En este caso, la prueba no se completa correctamente. El método de prueba se mueve al grupo **Pruebas no superadas** . Seleccione el método en el Explorador de pruebas para ver los detalles en la parte inferior de la ventana.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corregir el código y volver a ejecutar las pruebas  
+##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas  
  **Analizar los resultados de pruebas**  
   
- El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*XXX*>**) y lo que se recibió realmente (el parámetro**Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
+ El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*XXX*>**) y lo que se ha recibido realmente (el parámetro **Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
   
  Un nuevo examen del código Debit muestra que la prueba unitaria ha logrado encontrar un error. La cantidad retirada se agrega al saldo de cuenta en lugar de ser restarse.  
   
@@ -271,11 +272,11 @@ m_balance += amount;
 m_balance -= amount;  
 ```  
   
- **Volver a ejecutar la prueba**  
+ **Vuelva a ejecutar la prueba**  
   
  En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde y la prueba se mueve al grupo de **Pruebas superadas** .  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilizar pruebas unitarias para mejorar el código  
+##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilice pruebas unitarias para mejorar el código  
  En esta sección se describe cómo un proceso iterativo de análisis, el desarrollo de pruebas unitarias y la refactorización pueden servirle de ayuda para que el código de producción sea más compacto y eficaz.  
   
  **Analizar los problemas**  
@@ -309,7 +310,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- Se usa el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> para confirmar que se ha producido la excepción correcta. El atributo hace que la prueba dé un error a menos que se produzca `ArgumentOutOfRangeException` . Ejecutar las pruebas con valores positivos y negativos de `debitAmount` y después modificar temporalmente el método probado para producir una <xref:System.ApplicationException> genérica cuando la cantidad es menor que cero muestra que la prueba se comporta correctamente. Para probar el caso en el que la cantidad retirada es mayor que el saldo, lo que debemos hacer es:  
+ Se usa el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> para validar que se ha producido la excepción correcta. El atributo hace que la prueba dé un error a menos que se produzca `ArgumentOutOfRangeException` . Ejecutar las pruebas con valores positivos y negativos de `debitAmount` y, a continuación, modificar temporalmente el método probado para producir una excepción genérica <xref:System.ApplicationException> cuando la cantidad es menor que cero muestra que la prueba se comporta correctamente. Para probar el caso en el que la cantidad retirada es mayor que el saldo, lo que debemos hacer es:  
   
 1.  Crear un nuevo método de prueba denominado `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
@@ -368,7 +369,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
 -   Asegurar que el mensaje (el tercer parámetro del constructor) incluye el `DebitAmountExceedsBalanceMessage` definido en la clase `BankAccount` .  
   
- El método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> en el marco de pruebas unitarias de Microsoft permite comprobar la segunda opción sin los cálculos necesarios de la primera.  
+ El método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> del marco de pruebas unitarias de Microsoft permite comprobar la segunda opción sin los cálculos necesarios de la primera opción.  
   
  Un segundo intento de revisar `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` podría ser similar a:  
   
@@ -394,7 +395,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }  
 ```  
   
- **Volver a probar, reescribir y volver a analizar**  
+ **Vuelva a probar, reescriba y vuelva a analizar**  
   
  Cuando se vuelven a probar los métodos de prueba con valores diferentes, descubrimos lo siguiente:  
   
@@ -404,7 +405,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
 3.  Si el valor de `debitAmount` es válido (es decir, menor que el saldo pero mayor que cero), no se detecta ninguna excepción, por lo que la comprobación nunca se detecta. El método de prueba se completa correctamente. Esto no es bueno, porque se desea que el método de prueba no se supere si no se produce ninguna excepción.  
   
- El tercer hecho es un error en el método de prueba. Para intentar resolver el problema, se agrega una aserción <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> al final del método de prueba para controlar el caso donde no se produce ninguna excepción.  
+ El tercer hecho es un error en el método de prueba. Para intentar resolver el problema, se agrega una validación <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> al final del método de prueba para controlar el caso donde no se produce ninguna excepción.  
   
  Pero, al volver a examinar, se muestra que se produce un error en la prueba si se detecta la excepción correcta. La instrucción catch restaura la excepción, el método continúa ejecutándose y produce errores en la nueva validación. Para resolver este nuevo problema, se agrega una instrucción `return` después de `StringAssert`. Al volver a examinar se confirma que hemos corregido los problemas. La versión final de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` tiene el siguiente aspecto:  
   

@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5a16c3321222c57f68409e4c2c414cb73e24f258
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: ce1b1f255fb3a276a17fa6c5248c475a9967579e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
@@ -53,11 +54,11 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 |Componente|Descripción|  
 |---------------|-----------------|  
 |Destino de enlace|El elemento de IU debe estar asociado con el origen de datos. Los elementos visuales de WPF se derivan de la clase <xref:System.Windows.UIElement>.|  
-|Propiedad de destino|*Propiedad de dependencia* del destino de enlace que refleja el valor del origen de enlace de datos. Las propiedades de dependencia son compatibles directamente con la clase <xref:System.Windows.DependencyObject> de la que se deriva <xref:System.Windows.UIElement>.|  
+|Propiedad de destino|*Propiedad de dependencia* del destino de enlace que refleja el valor del origen de enlace de datos. Las propiedades de dependencia son compatibles directamente con la clase <xref:System.Windows.DependencyObject>, de la que se deriva <xref:System.Windows.UIElement>.|  
 |Origen de enlace|Objeto de origen para uno o más valores que se proporcionan al elemento de la IU para la presentación. WPF admite automáticamente los siguientes tipos como orígenes de enlace: objetos CLR, objetos de datos ADO.NET, datos XML (de consultas XPath o LINQ to XML) u otro <xref:System.Windows.DependencyObject>.|  
 |Ruta de acceso de origen|Propiedad del origen de enlace que se resuelve en valor o conjunto de valores que debe enlazar.|  
   
- Una propiedad de dependencia es un concepto específico de WPF que representa una propiedad calculada dinámicamente de un elemento de IU. Por ejemplo, las propiedades de dependencia suelen presentar valores predeterminados o valores proporcionados por un elemento primario. Estas propiedades especiales están asistidas por instancias de la clase <xref:System.Windows.DependencyProperty> (y no campos como en las propiedades estándar). Para obtener más información sobre las propiedades de dependencia, vea [Información general sobre las propiedades de dependencia](http://msdn.microsoft.com/Library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
+ Una propiedad de dependencia es un concepto específico de WPF que representa una propiedad calculada dinámicamente de un elemento de IU. Por ejemplo, las propiedades de dependencia suelen presentar valores predeterminados o valores proporcionados por un elemento primario. Estas propiedades especiales están asistidas por instancias de la clase <xref:System.Windows.DependencyProperty> (y no campos como en las propiedades estándar). Para obtener más información sobre las propiedades de dependencia, vea [Información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
 ### <a name="dynamic-data-binding-in-wpf"></a>Enlace de datos dinámicos en WPF  
  De forma predeterminada el enlace de datos se produce solamente cuando se inicializa el elemento de IU de destino. Se trata de un enlace *único*. Esto es insuficiente para la mayoría de finalidades. Normalmente una solución de enlace de datos requiere que los cambios se propaguen dinámicamente en tiempo de ejecución mediante uno de los siguientes enlaces:  
@@ -68,7 +69,7 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
   
  Para que se produzca el enlace unidireccional o bidireccional, el origen debe implementar un mecanismo de notificación de cambio, por ejemplo implementando la interfaz <xref:System.ComponentModel.INotifyPropertyChanged> o usando un patrón *PropertyNameChanged* para cada propiedad admitida.  
   
- Para más información sobre el enlace de datos, consulte [Enlace de datos (WPF)](http://msdn.microsoft.com/Library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+ Para más información sobre el enlace de datos, consulte [Enlace de datos (WPF)](/dotnet/framework/wpf/data/data-binding-wpf).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propiedades dinámicas en clases de LINQ to XML  
  La mayoría de clases de LINQ to XML no se consideran como orígenes de datos dinámicos de WPF correctos: Parte de la información más útil solo está disponible a través de métodos (y no de propiedades) y las propiedades de esas clases no implementan las notificaciones de cambio. Para admitir el enlace de datos de WPF, LINQ to XML expone un conjunto de *propiedades dinámicas*.  
@@ -76,10 +77,10 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
  Estas propiedades dinámicas son propiedades en tiempo de ejecución especiales que duplican la funcionalidad de métodos y propiedades existentes en las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement>. Se agregaron a esas clases solamente para permitirles actuar como orígenes de datos dinámicos de WPF. Para satisfacer esta necesidad, todas las propiedades dinámicas implementan notificaciones de cambios. En la siguiente sección se describe una referencia detallada de esas propiedades dinámicas, [Propiedades dinámicas de LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Muchas de las propiedades públicas estándar, encontradas en las diferentes clases del espacio de nombres<xref:System.Xml.Linq>, se pueden usar para el enlace de datos único. No obstante, recuerde que ni el origen ni el destino se actualizarán dinámicamente con este esquema.  
+>  Muchas de las propiedades públicas estándar, encontradas en las diferentes clases del espacio de nombres <xref:System.Xml.Linq>, se pueden usar para el enlace de datos único. No obstante, recuerde que ni el origen ni el destino se actualizarán dinámicamente con este esquema.  
   
 ### <a name="accessing-dynamic-properties"></a>Acceso a propiedades dinámicas  
- No se puede tener acceso a las propiedades dinámicas de las clases<xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement>como propiedades estándar. Por ejemplo, en los lenguajes conformes a CLR como C#, no se puede:  
+ No se puede tener acceso a las propiedades dinámicas de las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement> como propiedades estándar. Por ejemplo, en los lenguajes conformes a CLR como C#, no se puede:  
   
 -   Tener acceso a ellas directamente en tiempo de compilación. Las propiedades dinámicas son invisibles para el compilador y para Visual Studio IntelliSense.  
   
@@ -106,6 +107,6 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 ## <a name="see-also"></a>Vea también  
  [Enlace de datos de WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [Propiedades dinámicas de LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)   
- [XAML en WPF](http://msdn.microsoft.com/Library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [Enlace de datos (WPF)](http://msdn.microsoft.com/Library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
+ [XAML en WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
+ [Enlace de datos (WPF)](/dotnet/framework/wpf/data/data-binding-wpf)   
  [Uso del marcado de flujo de trabajo](http://go.microsoft.com/fwlink/?LinkId=98685)

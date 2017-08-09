@@ -33,10 +33,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 17fd26b26e25c31772adf4b8629852256317968c
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
@@ -68,9 +68,9 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
  El atributo `ToolsVersion` también se usa para la migración del proyecto. Por ejemplo, si abre un proyecto de Visual Studio 2008 en Visual Studio 2010, el archivo de proyecto se actualiza para incluir ToolsVersion="4.0". Si después intenta abrir ese proyecto en Visual Studio 2008, este no reconocerá el atributo `ToolsVersion` actualizado y compilará el proyecto como si dicho atributo todavía estuviese establecido en 3.5.  
   
- Visual Studio 2010 y Visual Studio 2012 usan ToolsVersion 4.0. Visual Studio 2013 usa ToolsVersion 12.0. En muchos casos, se puede abrir el proyecto en las tres versiones de Visual Studio sin modificaciones. Visual Studio siempre usa el conjunto de herramientas correcto, pero se te notificará si la versión usada no coincide con la versión del archivo de proyecto. En casi todos los casos, esta advertencia es inofensiva porque los conjuntos de herramientas son compatibles en la mayoría de los casos.  
+ Visual Studio 2010 y Visual Studio 2012 usan ToolsVersion 4.0. Visual Studio 2013 usa ToolsVersion 12.0. Visual Studio 2015 usa ToolsVersion 14.0, y Visual Studio 2017 usa ToolsVersion 15.0. En muchos casos, puede abrir el proyecto en varias versiones de Visual Studio sin modificaciones. Visual Studio siempre usa el conjunto de herramientas correcto, pero se te notificará si la versión usada no coincide con la versión del archivo de proyecto. En casi todos los casos, esta advertencia es inofensiva porque los conjuntos de herramientas son compatibles en la mayoría de los casos.  
   
- Los subconjuntos de herramientas, que se describen más adelante en este tema, permiten que MSBuild cambie automáticamente a las herramientas que se van a usar en función del contexto en el que se ejecuta la compilación. Por ejemplo, MSBuild usa un conjunto de herramientas más reciente cuando se ejecuta en Visual Studio 2012 que cuando se ejecuta en Visual Studio 2010, sin necesidad de cambiar explícitamente el archivo de proyecto. Para obtener más información, vea [Crear proyectos personalizados con identificación de versión](../misc/making-custom-projects-version-aware.md).  
+ Los subconjuntos de herramientas, que se describen más adelante en este tema, permiten que MSBuild cambie automáticamente a las herramientas que se van a usar en función del contexto en el que se ejecuta la compilación. Por ejemplo, MSBuild usa un conjunto de herramientas más reciente cuando se ejecuta en Visual Studio 2012 que cuando se ejecuta en Visual Studio 2010, sin necesidad de cambiar explícitamente el archivo de proyecto.  
   
 ## <a name="toolset-implementation"></a>Implementación del conjunto de herramientas  
  Para implementar un conjunto de herramientas, seleccione las rutas de acceso de las distintas herramientas, destinos y tareas que constituyen dicho conjunto. Las herramientas del conjunto de herramientas que define MSBuild proceden de los orígenes siguientes:  
@@ -134,3 +134,4 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ## <a name="see-also"></a>Vea también  
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
+

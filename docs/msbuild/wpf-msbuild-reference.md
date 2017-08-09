@@ -1,54 +1,71 @@
 ---
-title: "Referencia de MSBuild para WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "compatibilidad de compilación [WPF]"
-  - "MSBuild [WPF]"
+title: Referencia de MSBuild para WPF | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- build support [WPF]
+- MSBuild [WPF]
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Referencia de MSBuild para WPF
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 126bcc37899efcc373f2bd92c054a02d6e4aca6b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/24/2017
 
-Windows Presentation Foundation \(WPF\) amplía el motor de compilación de Microsoft \(MSBuild\) con compatibilidad adicional para compilación, documentada en esta sección.  
+---
+# <a name="wpf-msbuild-reference"></a>Referencia de MSBuild para WPF
+Windows Presentation Foundation (WPF) amplía Microsoft Build Engine (MSBuild) con compatibilidad de compilación adicional que se documenta en esta sección.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Archivos .Targets](../msbuild/wpf-dot-targets-files.md)  
- Describe los archivos .targets de WPF.  
+ Describe los archivos .Targets de WPF  
   
  [Referencia de tareas](../msbuild/wpf-msbuild-task-reference.md)  
- Enumera las tareas de compilación de WPF disponibles.  
+ Muestra las tareas de compilación de WPF disponibles.  
   
  <xref:Microsoft.Build.Tasks>  
- Ensamblado de tarea de compilación.  
+ Un ensamblado de tarea de compilación.  
   
  <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- Ensamblado de arranque para implementación de tareas de compilación.  
+ Un ensamblado del programa previo a la implementación de la tarea de compilación.  
   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- Ensamblado de la utilidad de manifiesto para implementación de tareas de compilación.  
+ Un ensamblado de utilidad de manifiesto de la implementación de la tarea de compilación.  
   
  <xref:Microsoft.Build.Tasks.Hosting>  
- Ensamblado de hospedaje para tareas de compilación.  
+ Un ensamblado de hospedaje de la tarea de compilación.  
   
  <xref:Microsoft.Build.Tasks.Windows>  
- Ensamblado de ventanas para tareas de compilación.  
+ Un ensamblado de ventana de la tarea de compilación.  
   
-## Vea también  
- [MSBuild](http://msdn.microsoft.com/es-es/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+## <a name="see-also"></a>Vea también  
+ [MSBuild](../msbuild/msbuild.md)
