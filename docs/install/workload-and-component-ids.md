@@ -32,16 +32,16 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: 3fc2e9c086d6cdd71577fccd33652cfc14a3ee6e
+ms.translationtype: HT
+ms.sourcegitcommit: c3fea7195cd41a48654ea4356ef67627ddcc25dc
+ms.openlocfilehash: 2c288a22c46a21b998bcc5aecf3c0a20f46e06c0
 ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Identificadores de componente y carga de trabajo de Visual Studio 2017
-En las páginas siguientes se enumeran los identificadores de componente y carga de trabajo que necesita para instalar Visual Studio mediante una línea de comandos o especificarlo como una dependencia en un manifiesto VSIX.
+Haga clic en los nombres de edición siguientes para ver los identificadores de componente y de carga de trabajo que necesita para instalar Visual Studio mediante una línea de comandos o especifíquelos como una dependencia en un manifiesto VSIX.
 
 | **Edición** | **ID** | **Descripción** |
 | ----------- | ------ | --------------- |

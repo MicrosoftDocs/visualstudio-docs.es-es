@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.translationtype: HT
+ms.sourcegitcommit: f0576ce6dd78fe1328bcea3ab9a27507ddc0f2c0
+ms.openlocfilehash: 4811dda912f20272733a4d878fc8c607eb2573fc
 ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
@@ -60,7 +60,21 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
      ![Cuadro de diálogo Nuevo proyecto de prueba](../ide/media/newproject_test.png "NewProject_Test")  
 Cuadro de diálogo Nuevo proyecto  
   
-4.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Nuevo proyecto** . Ahora está listo para empezar a escribir pruebas.  
+4.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Nuevo proyecto** .
+
+5.  En el proyecto de clase, en el **Explorador de soluciones**, haga clic con el botón derecho en la entrada **Referencias** y haga clic en **Agregar referencia**.
+
+6.  En cuadro de diálogo **Administrador de referencias**, seleccione **Proyectos** y, después, seleccione su proyecto de prueba unitaria.
+
+7.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Administrador de referencias**.
+
+8.  En el archivo **Class1**, inmediatamente después de la última de las instrucciones **using** existente, agregue una instrucción **using** para el proyecto de prueba:
+
+    * En Visual Basic, agregue `Using UnitTestProject1`.
+    
+    * En C#, agregue `using UnitTestProject1;`.
+    
+9.  Guarde la solución. Ahora ya está listo para empezar a escribir pruebas.  
   
 ### <a name="to-generate-a-new-class-from-a-unit-test"></a>Para generar una nueva clase de una prueba unitaria  
   
@@ -73,10 +87,10 @@ Cuadro de diálogo Nuevo proyecto
   
 3.  Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una nueva instancia de una clase denominada `Automobile`, como se muestra en las siguientes ilustraciones. Aparece un subrayado ondulado que indica un error en tiempo de compilación y aparece una etiqueta inteligente bajo el nombre de tipo. La ubicación exacta de la etiqueta inteligente varía en función de si usa [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Subrayado de etiqueta inteligente en Visual Basic](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Subrayado de etiqueta inteligente en Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Subrayado de etiqueta inteligente en C&#35;](~/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Subrayado de etiqueta inteligente en C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Sitúe el puntero del mouse sobre la etiqueta inteligente para ver un mensaje de error que indica que ningún tipo denominado `Automobile` se ha definido todavía. Haga clic en la etiqueta inteligente o presione CTRL +. (CTRL+punto) para abrir el menú contextual Generar a partir del uso, como se muestra en las ilustraciones siguientes.  
@@ -112,10 +126,10 @@ Cuadro de diálogo Generar nuevo tipo
   
      En la siguiente ilustración se muestra el menú contextual de la etiqueta inteligente.  
   
-     ![Menú contextual Generar propiedad en Visual Basic](~/ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Menú contextual Generar propiedad en Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Menú contextual Generar propiedad en C&#35;](~/ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Menú contextual Generar propiedad en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>Para buscar el código fuente  
@@ -161,7 +175,7 @@ Ventana Navegar a
   
      La ventana **Navegar a** se muestra en la siguiente ilustración.  
   
-     ![Resultados de pruebas con error](~/ide/media/testsfailed.png "TestsFailed")  
+     ![Resultados de pruebas con error](../ide/media/testsfailed.png "TestsFailed")  
 Resultados de pruebas (ventana)  
   
 2.  En la ventana **Resultados de pruebas** , haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada error de prueba.  

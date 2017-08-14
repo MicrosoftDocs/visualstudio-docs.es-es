@@ -15,59 +15,45 @@ ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
-ms.openlocfilehash: e6c301a7b784c5966d4f7216e67067ef6ce3ed70
+ms.translationtype: HT
+ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
+ms.openlocfilehash: 0fd361edd5bc5056f09c64aa4499a10a50656546
 ms.contentlocale: es-es
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio 2017
 
 ## <a name="symptoms"></a>Síntomas
-Cuando intenta instalar o actualizar Microsoft Visual Studio 2017, la operación da error.
+Cuando intenta instalar o actualizar Visual Studio 2017, la operación da error.
 
 ## <a name="workaround"></a>Solución
 Para solucionar este problema, siga estos pasos:
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Paso 1: Comprobación de si este problema es un problema conocido
-Existen algunos problemas conocidos con el instalador de Visual Studio en los que está trabajando Microsoft para intentar resolverlos. Compruebe la [sección de problemas conocidos de nuestras notas de versión](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#KIinstall) para ver si hay una solución para su problema.
+Existen algunos problemas conocidos con el instalador de Visual Studio en los que está trabajando Microsoft para intentar resolverlos. Compruebe la [sección de problemas conocidos de nuestras notas de versión](https://www.visualstudio.com/news/releasenotes/vs2017-knownissues) para ver si hay una solución para su problema.
 
 ### <a name="step-2---check-with-the-developer-community"></a>Paso 2: Consulta con la comunidad de desarrolladores
-Busque su mensaje de error en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html. Puede que otros miembros de la comunidad hayan documentado una solución para su problema.
+Busque el mensaje de error en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Puede que otros miembros de la comunidad hayan documentado una solución para su problema.
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Paso 3: Eliminación del directorio del instalador de Visual Studio para corregir problemas de actualización
-El programa previo del instalador de Visual Studio es un ejecutable mínimo de poco peso que instala el resto del instalador de Visual Studio. Puede que con la eliminación de los archivos del instalador de Visual Studio y la ejecución repetida del programa previo se resuelvan algunos errores de actualización. Para ello, siga estos pasos:
+El programa previo del instalador de Visual Studio es un ejecutable mínimo de poco peso que instala el resto del instalador de Visual Studio. Puede que con la eliminación de los archivos del instalador de Visual Studio y la ejecución repetida del programa previo se resuelvan algunos errores de actualización.
+
+**Nota:** Al realizar las acciones siguientes, se reinstalan los archivos del Instalador de Visual Studio y se restablecen los metadatos de la instalación.
 
 1. Cierre el instalador de Visual Studio.
 2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es C:\Archivos de programa (x86)\Microsoft Visual Studio\Installer.
-3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón ```vs_[Visual Studio edition]__*.exe```. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/) y haga clic en **Descargar** en su edición de Visual Studio. Ejecute este ejecutable para restablecer sus metadatos de instalación.
-4. Intente instalar o actualizar de nuevo Visual Studio. Si el programa de instalación sigue dando error, vaya inmediatamente al paso 4 a continuación.
-<br/>**Nota:** Este paso reinstala los archivos de Visual Studio y restablece los metadatos de instalación.
+3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón ```vs_[Visual Studio edition]__*.exe```. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/) y haga clic en **Descargar** en su edición de Visual Studio. Ejecute el ejecutable para restablecer sus metadatos de instalación.
+4. Intente instalar o actualizar de nuevo Visual Studio. Si el Instalador sigue dando error, vaya al paso siguiente.
 
 ### <a name="step-4---report-a-problem"></a>Paso 4: Notificación de un problema
 En algunas situaciones, como las relacionadas con los archivos dañados, los problemas se pueden examinar caso por caso:
 
-1. Descargue la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://www.microsoft.com/en-us/download/details.aspx?id=12493) y ejecútela. Esta herramienta recopila y compila los registros de instalación disponibles para las instalaciones de Visual Studio, .NET Framework y SQL Server.
+1. Descargue la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://aka.ms/vscollect) y ejecútela. Esta herramienta recopila y compila los registros de instalación disponibles para las instalaciones de Visual Studio, .NET Framework y SQL Server.
 2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.
-![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](~/install/media/report-a-problem.png).
+![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](media/report-a-problem.png).
 3. Asigne un título a su informe de problema y proporcione los detalles pertinentes. Haga clic en **Siguiente** para ir a la sección **Datos adjuntos** y luego adjunte el archivo de registro generado (normalmente, el archivo está en % TEMP%\vslogs.zip).
-![Desplácese con la tecla de tabulación hasta el botón Informar de un problema nuevo y siga los pasos](~/install/media/problem-report-details.png).
+![Desplácese con la tecla de tabulación hasta el botón Informar de un problema nuevo y siga los pasos](media/problem-report-details.png).
 4. Haga clic en **Siguiente** para revisar el informe del problema y luego haga clic en **Enviar**.
 
 ### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>Paso 5: Ejecución de InstallCleanup.exe para limpiar los archivos de instalación
