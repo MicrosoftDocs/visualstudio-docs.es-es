@@ -27,24 +27,24 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 4401606f97452de235b8a2d406451e5481518006
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
-Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo *.runsettings. (El nombre de archivo no importa, siempre que use la extensión ".runsettings"). Por ejemplo, puede cambiar el .NET Framework en el que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.  
+Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo \*.runsettings. (El nombre de archivo no importa, siempre que use la extensión ".runsettings"). Por ejemplo, puede cambiar el .NET Framework en el que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.  
   
- Si no quiere realizar ninguna configuración especial, no necesita un archivo *.runsettings. El uso más frecuente es personalizar [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
+ Si no quiere realizar ninguna configuración especial, no necesita un archivo \*.runsettings. El uso más frecuente es personalizar [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
 >  **.runsettings y .testsettings**  
 >   
->  Hay dos tipos de archivos para configurar las pruebas. Los archivos *.runsettings se usan para las pruebas unitarias, mientras que los archivos \*.testsettings se usan para las [pruebas en entorno de laboratorio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), las pruebas de rendimiento web y las pruebas de carga, así como para personalizar determinados tipos de adaptadores de datos de diagnóstico como, por ejemplo, los adaptadores de registros de IntelliTrace y de eventos.  
+>  Hay dos tipos de archivos para configurar las pruebas. Los archivos \*.runsettings se usan para las pruebas unitarias. mientras que los archivos \*.testsettings se usan para las [pruebas en entorno de laboratorio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), las pruebas de rendimiento web y las pruebas de carga, así como para personalizar determinados tipos de adaptadores de datos de diagnóstico como, por ejemplo, los adaptadores de registros de IntelliTrace y de eventos.  
 >   
->  En las ediciones anteriores de Visual Studio hasta la versión 2010, las pruebas unitarias también se personalizaban mediante archivos *.testsettings. Puede seguir realizando esa acción, pero las pruebas se ejecutarán más despacio que si usara las configuraciones equivalentes en un archivo \*.runsettings.  
+>  En las ediciones anteriores de Visual Studio hasta la versión 2010, las pruebas unitarias también se personalizaban mediante archivos \*.testsettings. Puede seguir realizando esa acción, pero las pruebas se ejecutarán más despacio que si usara las configuraciones equivalentes en un archivo \*.runsettings.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizar pruebas con un archivo .runsettings  
   
@@ -61,7 +61,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
  ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
- A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
+ A continuación se muestra un archivo \*.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

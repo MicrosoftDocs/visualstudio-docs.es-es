@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 04937d3cd1a16e0be90305221850e691c8d18c50
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -37,7 +37,7 @@ Por convención, Visual Studio identifica las pruebas como métodos cuyos nombre
 
 1. Abra un [proyecto Python](python-projects.md) cargado en Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevo elemento...** y luego seleccione **Python Unit Test** (Prueba unitaria de Python) y **Agregar**.
 
-1. Esta acción crea un `test1.py file with code that imports the standard `unittest` module, derives a test class from `unittest.TestCase`, and invokes `unittest.main()` si ejecuta el script directamente:
+1. Esta acción crea un archivo `test1.py` con código que importa el módulo estándar `unittest`, deriva una clase de prueba de `unittest.TestCase` e invoca `unittest.main()` si ejecuta el script directamente:
 
   ```python
   import unittest

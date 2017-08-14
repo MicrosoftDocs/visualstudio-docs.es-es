@@ -37,18 +37,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
 ms.contentlocale: es-es
-ms.lasthandoff: 06/03/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
 Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `GenerateResource`.  
+ En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
@@ -58,7 +58,7 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 |`ExecuteAsTool`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se ejecutan tlbimp.exe y aximp.exe desde la plataforma de destino adecuada fuera de proceso para generar los ensamblados de contenedor necesarios. Este parámetro permite compatibilidad con múltiples versiones de `ResolveComReferences`.|  
 |`FilesWritten`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los nombres de todos los archivos escritos en el disco. Esto incluye el archivo de la caché, si existe. Este parámetro es útil para las implementaciones de Clean.|  
 |`MinimalRebuildFromTracking`|Parámetro `Boolean` opcional.<br /><br /> Obtiene o establece un modificador que especifica si se va a usar la compilación incremental de la que se realiza el seguimiento. Si es `true`, se activa la compilación incremental; de lo contrario, se forzará una recompilación.|  
-|`NeverLockTypeAssemblies`|Parámetro `Boolean` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos .resources. Si no especifica un nombre, se utiliza el nombre del archivo de entrada coincidente, y el archivo .resources que se crea se coloca en el directorio que contiene el archivo de entrada.|  
+|`NeverLockTypeAssemblies`|Parámetro `Boolean` opcional.<br /><br /> Obtiene o establece un valor booleano que especifica si se va a crear una nueva clase [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) para evaluar los archivos de recursos (.resx) (true) o crear una nueva clase [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) solo cuando los archivos de recursos hagan referencia al ensamblado de un usuario (false).|  
 |`OutputResources`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos .resources. Si no especifica un nombre, se utiliza el nombre del archivo de entrada coincidente, y el archivo .resources que se crea se coloca en el directorio que contiene el archivo de entrada.|  
 |`PublicClass`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea una clase de recurso fuertemente tipada como clase pública.|  
 |`References`|Parámetro `String[]` opcional.<br /><br /> Hace referencia a tipos de carga en archivos .resx. Los elementos de datos del archivo resx pueden tener un tipo de .NET. Cuando se lee el archivo .resx, se debe resolver esta situación. Normalmente, se resuelve correctamente utilizando reglas de carga de tipo estándar. Si proporciona los ensamblados en `References`, serán prioritarios.<br /><br /> Este parámetro no se requiere para los recursos fuertemente tipados.|  
@@ -112,3 +112,4 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+

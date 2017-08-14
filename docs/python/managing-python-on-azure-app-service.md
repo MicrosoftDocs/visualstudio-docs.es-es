@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 5b509a46dd3dbee3a45ab2eac57242636beee17b
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -176,7 +176,7 @@ En lugar de usar la consola de Kudu mediante Azure Portal, puede ejecutar comand
 }
 ```
 
-Para obtener información sobre los comandos y la autenticación, vea la [documentación de Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). También puede ver credenciales con [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) desde la CLI de Azure. Una biblioteca auxiliar para publicar comandos de Kudu también está disponible en GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Para obtener información sobre los comandos y la autenticación, vea la [documentación de Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). También puede ver credenciales con [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) desde la CLI de Azure. También está [disponible en GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) una biblioteca auxiliar para el registro de los comandos Kudu.
 
 
 ### <a name="copying-libraries-into-app-source-code"></a>Copiar bibliotecas en el código fuente de la aplicación
@@ -188,3 +188,4 @@ La advertencia es que estas bibliotecas deben coincidir exactamente con la versi
 ### <a name="avoiding-virtual-environments"></a>Evitar entornos virtuales
 
 Aunque trabajar en un entorno virtual localmente puede ayudarle a entender completamente las dependencias que necesita su sitio, con los entornos virtuales de App Service no se recomienda. En su lugar, simplemente instale bibliotecas en su carpeta de Python principal e impleméntelas con su aplicación para evitar tener dependencias en conflicto.
+

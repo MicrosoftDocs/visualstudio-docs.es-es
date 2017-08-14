@@ -35,10 +35,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
+ms.sourcegitcommit: 14c21f67beb92d3b13a5c54c755ccb846d116a9c
+ms.openlocfilehash: aaa19a3a818c3fa3196d79959ee30c5eae4c1b5f
 ms.contentlocale: es-es
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guía básica para la generación de perfiles de rendimiento
@@ -48,7 +48,9 @@ Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila informaci
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
 
-También puede [ver un vídeo sobre cómo usar las herramientas de diagnóstico](#video) que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria.
+|         |         |
+|---------|---------|
+| ![Vea un vídeo](../install/media/video-icon.png "WatchVideo") | [Vea un vídeo](#video) sobre cómo usar las herramientas de diagnóstico que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria. |
 
 En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para obtener más información, consulte [Ejecutar herramientas de generación de perfiles sin depuración](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
