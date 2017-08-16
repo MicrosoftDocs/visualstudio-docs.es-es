@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 05/10/2017
+ms.date: 08/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,11 +32,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: bca3912b5ff1ce9e58717af4b58c66b6a8f09b03
+ms.translationtype: HT
+ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
+ms.openlocfilehash: 880e42d1726eed7f0b8ff1137445a30011164c7f
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 
@@ -101,7 +101,7 @@ Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Se recomienda
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Se recomienda
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26323.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26419.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26419.1 | Se recomienda
@@ -167,7 +167,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26208.0 | Se recomienda
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Se recomienda
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26323.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26419.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Se recomienda
@@ -275,7 +275,7 @@ Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Se recomienda
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Se recomienda
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas de generación de perfiles | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.EntityFramework | Herramientas de Entity Framework 6 | 15.0.26208.0 | Se recomienda
@@ -416,7 +416,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Optional
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.0.26208.0 | Optional
@@ -594,7 +594,7 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Obligat
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Se recomienda
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Se recomienda
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas de generación de perfiles | 15.0.26208.0 | Se recomienda
@@ -623,7 +623,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.0.26208.0 | 
 
 **Id.:** Microsoft.VisualStudio.Workload.Node
 
-**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos.
+**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos. 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -736,7 +736,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET 
 Microsoft.Net.Component.4.6.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Framework 4 | 15.0.26208.0 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo para .NET Framework 4 - 4.6 | 15.0.26208.0 | Optional
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26323.1 | Opcional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26419.1 | Opcional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Opcional
@@ -909,6 +909,8 @@ Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26419.1 | Opcional
 Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataforma universal de Windows para Cordova | 15.0.26403.0 | Optional
+
+
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
@@ -926,6 +928,7 @@ Microsoft.VisualStudio.Component.Phone.Emulator | Emulador de Windows 10 Mobile 
 Microsoft.VisualStudio.Component.TestTools.Core | Características principales de las herramientas de pruebas | 15.0.26208.0
 Microsoft.VisualStudio.Component.TypeScript.2.0 | SDK de TypeScript 2.0 | 15.0.26208.0
 Microsoft.VisualStudio.Component.TypeScript.2.1 | SDK de TypeScript 2.1 | 15.0.26208.0
+
 
 ## <a name="see-also"></a>Vea también
 
