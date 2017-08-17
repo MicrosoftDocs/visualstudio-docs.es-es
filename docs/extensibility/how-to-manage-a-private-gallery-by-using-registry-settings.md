@@ -1,35 +1,52 @@
 ---
-title: "C&#243;mo: administrar una galer&#237;a privada mediante la configuraci&#243;n del registro | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Galerías privadas VSIX, administrar"
-  - "Administrar galerías privadas de VSIX"
+title: "Cómo: administrar una galería privada mediante la configuración del registro | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSIX private galleries, managing
+- managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# C&#243;mo: administrar una galer&#237;a privada mediante la configuraci&#243;n del registro
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 8ce054bf6149f0224785f4c3cd9274e86dc09d04
+ms.openlocfilehash: 00c42a4dbd6a9a526d661b7fa04793d531acd8bc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/17/2017
 
-Si es un administrador o el programador de una extensión de Shell aislado, puede controlar el acceso a los controles, plantillas y herramientas de la Galería de Visual Studio, la Galería de ejemplos o galerías privadas. Para hacer una galería disponibles o no, cree un archivo .pkgdef que describe las claves del registro modificado y sus valores.  
+---
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Cómo: administrar una galería privada mediante la configuración del registro
+Si eres un administrador o el programador de una extensión de Shell aislado, puede controlar el acceso a los controles, plantillas y herramientas en la Galería de Visual Studio, la Galería de ejemplos o galerías privadas. Para realizar una galería disponible o no está disponible, cree un archivo .pkgdef que describe las claves del registro modificada y sus valores.  
   
-## Administrar galerías privadas  
- Puede crear un archivo .pkgdef para controlar el acceso a las galerías en varios equipos. Este archivo debe tener el formato siguiente.  
+## <a name="managing-private-galleries"></a>Administrar ensamblados privados  
+ Puede crear un archivo .pkgdef para controlar el acceso a galerías en varios equipos. Este archivo debe tener el formato siguiente.  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
-Priority=0 (highest priority) … MaxInt (lowest priority) (DWORD) (uint)  
+Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  
 DisplayName={DisplayName} (REG_SZ)  
 DisplayNameResourceID={ID} (REG_SZ)  
@@ -39,23 +56,23 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  El `Repositories` clave hace referencia a la Galería para habilitar o deshabilitar. La Galería de Visual Studio y la Galería de ejemplos utilizan el repositorio siguiente GUID:  
   
--   Galería de Visual Studio: 0F45E408\-7995\-4375\-9485\-86B8DB553DC9  
+-   Galería de Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Galería de ejemplos: AEB9CB40\-D8E6\-4615\-B52C\-27E307F8506C  
+-   Galería de ejemplos: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
  El `Disabled` valor es opcional. De forma predeterminada, se habilita una galería.  
   
- El `Priority` valor determina el orden en que se enumeran las galerías en el cuadro de diálogo Opciones. Galería de Visual Studio tiene prioridad 10 y la Galería de ejemplos tiene prioridad 20. Las galerías privadas se inician en prioridad de 100. Si varias galerías tienen el mismo valor de prioridad, el orden en que aparecen depende de los valores de sus localizadas `DisplayName` atributos.  
+ El `Priority` valor determina el orden en que se muestran las galerías en el cuadro de diálogo de opciones. Galería de Visual Studio tiene prioridad 10 y la Galería de ejemplos tiene prioridad 20. Galerías privadas empiezan en prioridad 100. Si varias galerías tienen el mismo valor de prioridad, el orden en que aparecen se determina por los valores de su versión traducida `DisplayName` atributos.  
   
  El `Protocol` valor se requiere para galerías basado en SharePoint o Atom.  
   
- Ya sea `DisplayName`, o ambos `DisplayNameResourceID` y `DisplayNamePackageGuid`, debe especificarse. Si se especifica, la `DisplayNameResourceID` y `DisplayNamePackageGuid` se usa par.  
+ Ya sea `DisplayName`, o ambos `DisplayNameResourceID` y `DisplayNamePackageGuid`, debe especificarse. Si se especifica, la `DisplayNameResourceID` y `DisplayNamePackageGuid` par se utiliza.  
   
-## Deshabilitación de la Galería de Visual Studio con un archivo .pkgdef  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deshabilitar la Galería de Visual Studio mediante un archivo .pkgdef  
  Puede deshabilitar una galería en un archivo .pkgdef. La entrada siguiente deshabilita la Galería de Visual Studio:  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
+[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
 "Disabled"=dword:00000001  
   
 ```  
@@ -63,10 +80,10 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  La entrada siguiente deshabilita la Galería de ejemplos:  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
+[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
 "Disabled"=dword:00000001  
   
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Galerías privadas](../extensibility/private-galleries.md)
