@@ -1,36 +1,41 @@
 ---
-title: "Mostrar texto en una p&#225;gina web (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JavaScript, escritura"
-  - "JavaScript, escribir texto"
+title: "Mostrar texto en una página web (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- JavaScript, write
+- JavaScript, writing text
 ms.assetid: 3c2455e7-2402-45f2-9545-77a2b2490527
 caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
+ms.openlocfilehash: a8c9ea9d0e0300a0d9b71b0b33d7c99c9ac3935c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/11/2017
+
 ---
-# Mostrar texto en una p&#225;gina web (JavaScript)
-Hay varias maneras de mostrar texto en una página web.  Cada una tiene ventajas y desventajas y admite usos concretos.  
+# <a name="displaying-text-in-a-webpage-javascript"></a>Mostrar texto en una página web (JavaScript)
+Hay varias maneras de mostrar texto en una página web. Cada una tiene sus ventajas y desventajas y admite usos concretos.  
   
-## Mostrar texto  
+## <a name="displaying-text"></a>Mostrar texto  
   
--   La manera recomendada de mostrar texto es crear un elemento y escribir en su propiedad [textContent](http://msdn.microsoft.com/es-es/e530667f-f8fa-4b6d-a47c-4d5c75e71265):  
+-   La manera recomendada de mostrar texto es crear un elemento y escribir en su propiedad textContent.  
   
-    ```javascript  
+    ```JavaScript  
     <div id="textDiv"></div>  
     <script type="text/javascript">  
         var div = document.getElementById("textDiv");  
@@ -39,9 +44,9 @@ Hay varias maneras de mostrar texto en una página web.  Cada una tiene ventajas
     </script>  
     ```  
   
-     En este ejemplo, el valor de `text` es "my text".  Sin embargo, el valor resultante de obtener o establecer la propiedad [textContent](http://msdn.microsoft.com/es-es/e530667f-f8fa-4b6d-a47c-4d5c75e71265) en un nodo primario podría incluir contenido textual de los elementos secundarios del nodo.  En el ejemplo siguiente se muestra que el valor de [textContent](http://msdn.microsoft.com/es-es/e530667f-f8fa-4b6d-a47c-4d5c75e71265) establecido en un nodo secundario está incluido en el valor de [textContent](http://msdn.microsoft.com/es-es/e530667f-f8fa-4b6d-a47c-4d5c75e71265) del nodo primario:  
+     En este ejemplo, el valor de `text` es "my text". Sin embargo, el valor resultante de obtener o establecer la propiedad `textContent` en un nodo principal podría incluir contenido textual de los elementos secundarios del nodo. En el ejemplo siguiente se muestra que la propiedad `textContent` que se establece en un nodo secundario se incluye en el valor de `textContent` del nodo principal:  
   
-    ```javascript  
+    ```JavaScript  
     <div id="textDiv">  
         <div id="nested"></div>  
     </div>  
@@ -54,19 +59,19 @@ Hay varias maneras de mostrar texto en una página web.  Cada una tiene ventajas
     </script>  
     ```  
   
-     En este ejemplo, el valor de `text` es "\[nested\]".  
+     En este ejemplo, el valor de `text` es "[nested]".  
   
--   También puede crear un elemento y escribir en sus propiedades [innerHTML](http://msdn.microsoft.com/library/ie/ms533897\(v=vs.85\).aspx) o [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx).  El hecho de establecer estas propiedades solo afecta al texto del propio elemento, no a sus elementos secundarios.  Sin embargo, estas propiedades también tienen algunas desventajas:  
+-   También puede crear un elemento y escribir en sus propiedades [innerHTML](http://msdn.microsoft.com/library/ie/ms533897\(v=vs.85\).aspx) o [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx). El establecimiento de estas propiedades afecta solo al texto del propio elemento, no al de sus elementos secundarios. Sin embargo, estas propiedades también presentan algunos inconvenientes:  
   
-    -   La propiedad [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx) no funciona en todos los exploradores, por lo que tal vez le interese evitarla por cuestiones de compatibilidad.  
+    -   La propiedad [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx) no funciona en todos los exploradores, por lo que quizás desee evitarla por motivos de compatibilidad.  
   
-    -   La propiedad [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx) se ve afectada por los estilos CSS y no aparece si el elemento está oculto.  
+    -   En la propiedad [innerText](http://msdn.microsoft.com/library/ie/ms533899\(v=vs.85\).aspx) influyen los estilos CSS y no aparece si el elemento está oculto.  
   
-    -   La propiedad [innerHTML](http://msdn.microsoft.com/library/ie/ms533897\(v=vs.85\).aspx) obtiene y establece los nodos anidados y el texto.  Si no se protege, podría usarse para ataques por inyección de script.  Además, si se establece como texto sin etiquetas HTML, quita todos los nodos establecidos previamente.  
+    -   La propiedad [innerHTML](http://msdn.microsoft.com/library/ie/ms533897\(v=vs.85\).aspx) obtiene y establece texto y nodos anidados. Si no se protege, podría ser utilizada en ataques de inyección de script. Además, si se establece en texto sin etiquetas HTML, se quitan todos los nodos establecidos anteriormente.  
   
--   Puede usar el método `document.write` sin tener que crear un elemento.  Sin embargo, este método hace que toda la página web se borre, algo que tal vez no le interese.  
+-   Puede usar el método `document.write` sin tener que crear un elemento. Sin embargo, el uso de este método hace que se borre toda la página web y posiblemente no sea esto lo que desea.  
   
-     En el ejemplo siguiente se muestra una de las desventajas de usar `document.write`.  El script está diseñado para mostrar la hora cada 5 segundos, pero muestra la hora solo dos veces.  En el momento en que se llama a `document.write` la segunda vez, la página terminó de cargarse y `document.write` borra toda la página \(llama a `document.open`\).  En este punto, la función `ShowTime` ya no existe.  
+     En el ejemplo siguiente se muestra una de las desventajas de utilizar `document.write`. El script tiene por objeto mostrar la hora cada 5 segundos, pero muestra la hora solo dos veces. Para cuando se llama a `document.write` por segunda vez, la página ha terminado de cargarse y `document.write` borra entonces la página completa (llama a `document.open`). En este momento, la función `ShowTime` ya no existe.  
   
     ```html  
     <!DOCTYPE html>  
@@ -94,6 +99,6 @@ Hay varias maneras de mostrar texto en una página web.  Cada una tiene ventajas
   
     ```  
   
-     Para corregir el código anterior, quite la línea de código que contiene `document.write` y quite los comentarios de las dos líneas de código comentadas que se indican a continuación.  
+     Para corregir el código anterior, quite la línea de código que contiene `document.write` y quite los comentarios de las dos líneas comentadas de código que aparecen a continuación.  
   
--   También puede usar una función `alert`, `prompt` o `confirm`, que muestran un mensaje en una ventana emergente.  En la mayoría de los casos no es aconsejable usar una ventana emergente en un explorador web.  La mayoría de los exploradores modernos están configurados para bloquear automáticamente las ventanas emergentes, por lo que el mensaje podría no aparecer.  Además, es posible escribir un bucle infinito al usar ventanas emergentes, lo que impide que el usuario cierre la página web de la forma habitual.
+-   También puede utilizar una función `alert``prompt` o `confirm`, que muestra un mensaje en una ventana emergente. En la mayoría de los casos no es conveniente usar una ventana emergente en un explorador web. La mayoría de los exploradores modernos tienen valores de configuración que bloquean automáticamente las ventanas emergentes, por lo que no se podrá ver su mensaje. Además, es posible que se cree un bucle infinito al usar ventanas emergentes, que impide que el usuario cierre la página web de la manera habitual.
