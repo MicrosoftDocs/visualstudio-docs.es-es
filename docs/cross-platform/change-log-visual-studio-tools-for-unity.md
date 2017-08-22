@@ -29,48 +29,26 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
-ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
+ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
+ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
 ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
 Registro de cambios de Visual Studio Tools para Unity.  
 
-## <a name="3400"></a>3.4.0.0
- Lanzamiento 22-08-2017
+## <a name="3302"></a>3.3.0.2
+ Fecha de publicación: 15 de agosto de 2017
 
-### <a name="new-features"></a>Características nuevas  
-
--   **Project Generation:**  
-
-    -   Se agregó compatibilidad con las unidades de compilación assembly.json.
-
-    -   Se detuvo la copia de ensamblados Unity en la carpeta de proyecto.
-    
--   **Depurador:**  
-
-    -   Se agregó compatibilidad con la definición de la siguiente instrucción con el nuevo entorno de ejecución de Unity.
-    
-    -   Se agregó compatibilidad con el tipo decimal con el nuevo entorno de ejecución de Unity.
-    
-    -   Se agregó compatibilidad con las conversiones implícitas o explícitas.
-    
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
--   **Evaluación:**  
-
-    -   Se corrigió la creación de matrices con tamaño implícito.
-    
-    -   Se corrigieron los elementos generados mediante compilador con variables locales.
+-   **Generación de proyectos:**  
    
--   **Project Generation:**  
-   
-    -   Se corrigió la referencia al nivel de API de Microsoft.CSharp para 4.6.
+    -   Se ha corregido la generación de la solución Visual Studio en Unity 5.5 y versiones anteriores.
    
 ## <a name="3300"></a>3.3.0.0
- Lanzamiento 14-08-2017
+ Fecha de publicación: 14 de agosto de 2017
 
 ### <a name="new-features"></a>Características nuevas  
   
@@ -99,7 +77,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se corrigieron las definiciones con niveles de API.    
 
 ## <a name="3200"></a>3.2.0.0
- Lanzamiento 10-05-2017
+ Fecha de publicación: 10 de mayo de 2017
 
 ### <a name="new-features"></a>Características nuevas  
   
@@ -116,7 +94,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se corrigió el parpadeo con mensajes de Unity.
     
 ## <a name="3100"></a>3.1.0.0
- Lanzamiento 07-04-2017
+ Fecha de publicación: 7 de abril de 2017
 
 ### <a name="new-features"></a>Características nuevas  
   
@@ -145,12 +123,12 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se ha quitado el procesamiento posterior a la versión de ensamblado.
    
 ## <a name="3001"></a>3.0.0.1
- Publicado el 07-03-2017
+ Fecha de publicación: 7 de marzo de 2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Esta versión incluye todas las nuevas características y correcciones de errores que se introdujeron en la serie 2.8.x.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 (versión preliminar 3)
- Lanzamiento 25-01-2017
+ Fecha de publicación: 25 de enero de 2017
    
 ### <a name="bug-fixes"></a>Correcciones de errores  
    
@@ -159,7 +137,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se corrigió la regresión cuando se hacía referencia dos veces a los proyectos de complementos, primero como un archivo DLL binario y después como una referencia de proyecto.
    
 ## <a name="2810---30-preview-2"></a>2.8.1.0 (3.0 versión preliminar 2)
- Lanzamiento 23-01-2017
+ Fecha de publicación: 23 de enero de 2017
    
 ### <a name="bug-fixes"></a>Correcciones de errores  
 
@@ -186,7 +164,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se cambió a https para tener como destino la documentación remota de Unity.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 (versión preliminar 3.0)
- Lanzamiento 17-11-2016
+ Fecha de publicación: 17 de noviembre de 2016
 
 ### <a name="new-features"></a>Características nuevas  
   
@@ -253,7 +231,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se corrigió un error que impedía la compilación al compilar un script con un nombre de archivo codificado para web.
 
 ## <a name="2300"></a>2.3.0.0  
- Lanzamiento 14-07-2016  
+ Fecha de publicación: 14 de julio de 2016  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -288,7 +266,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se corrigieron varios problemas de evaluación de expresiones.  
   
 ## <a name="2200"></a>2.2.0.0  
- Lanzamiento 04-02-2016  
+ Fecha de publicación: 4 de febrero de 2016  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -335,7 +313,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Se han corregido problemas con la desinstalación de VSTU cuando está instalada la misma versión de VSTU en varias versiones distintas de Visual Studio. Por ejemplo, cuando se han instalado VSTU **2015** 2.1.0.0 y VSTU **2013** 2.1.0.0.  
   
 ## <a name="2100"></a>2.1.0.0  
- Lanzamiento el 08-09-2015  
+ Fecha de publicación: 8 de septiembre de 2015  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -356,7 +334,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Puntos de interrupción de recuento de visitas fijas en Visual Studio 2015.  
   
 ## <a name="2000"></a>2.0.0.0  
- Lanzamiento el 20-07-2015  
+ Fecha de publicación: 20 de julio de 2015  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -391,7 +369,7 @@ Registro de cambios de Visual Studio Tools para Unity.
     -   Corrección de inspección de matrices vacías.  
   
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 (versión preliminar 2)
- Lanzamiento 02-04-2015  
+ Fecha de publicación: 2 de abril de 2015  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -480,7 +458,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **UI:** compatible con temas de Visual Studio para iconos y menú contextual.  
   
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 (versión preliminar)
- Lanzamiento 12-11-2014  
+ Fecha de publicación: 12 de noviembre de 2014  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -519,7 +497,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   No se registra la devolución de llamada de registro si no es necesario.  
   
 ## <a name="1920"></a>1.9.2.0  
- Lanzamiento 09-10-2014  
+ Fecha de publicación: 9 de octubre de 2014  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -542,7 +520,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el error por el que todos los activos se incluían en los archivos de proyecto si el filtro de extensión estaba vacío.  
   
 ## <a name="1910"></a>1.9.1.0  
- Lanzamiento 22-09-2014  
+ Fecha de publicación: 22 de septiembre de 2014  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -587,7 +565,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se han corregido los scripts de apertura con VSTU en las versiones de 64 bits de Unity.  
   
 ## <a name="1900"></a>1.9.0.0  
- Lanzamiento 29-07-2014  
+ Fecha de publicación: 29 de julio de 2014  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -635,7 +613,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 >  Dado que C# es el lenguaje predominante en el ecosistema de Unity (los nuevos activos de muestra están en C# y la documentación de Unity se presentará en C# de forma predeterminada), eliminamos nuestro soporte básico para UnityScript y Boo con el fin de centrarnos mejor en la experiencia en C#. Como resultado, las soluciones de VSTU ahora solo están en C# y se cargan mucho más rápido.  
   
 ## <a name="1820"></a>1.8.2.0  
- Lanzamiento 07-01-2014  
+ Fecha de publicación: 7 de enero de 2014  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -662,7 +640,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se evita el bloqueo en Unity cuando el ensamblado generado específico de la versión no está sincronizado.  
   
 ## <a name="1810"></a>1.8.1.0  
- Lanzamiento 21-11-2013  
+ Fecha de publicación: 21 de noviembre de 2013  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -695,7 +673,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se han corregido los scripts de apertura de Unity para que no confundan la orden ALT+TAB en Unity 4.2 y versiones posteriores.  
   
 ## <a name="1800"></a>1.8.0.0  
- Lanzamiento 24-09-2013  
+ Fecha de publicación: 24 de septiembre de 2013  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -736,7 +714,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el cambio de valores de booleanos en la vista local.  
   
 ## <a name="1220"></a>1.2.2.0  
- Lanzamiento 09-07-2013  
+ Fecha de publicación: 9 de julio de 2013  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -759,7 +737,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el procesamiento de ensamblados de la versión beta de Unity 4.2.  
   
 ## <a name="1210"></a>1.2.1.0  
- Lanzamiento 09-04-2013  
+ Fecha de publicación: 9 de abril de 2013  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -772,7 +750,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el enlace de puntos de interrupción en algunos archivos DLL externos.  
   
 ## <a name="1200"></a>1.2.0.0  
- Lanzamiento 25-03-2013  
+ Fecha de publicación: 25 de marzo de 2013  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -839,10 +817,10 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se corrigió el error UVS-11: variables locales en las corrutinas.  
   
 ## <a name="1100---beta-release"></a>1.1.0.0 (versión beta)  
- Lanzamiento 09-10-2014  
+ Fecha de publicación: 9 de octubre de 2014  
   
 ## <a name="10130"></a>1.0.13.0  
- Lanzamiento 21-01-2013  
+ Fecha de publicación: 21 de enero de 2013  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -865,7 +843,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el procesamiento de mensajes largos enviados desde Unity a UnityVS. Antes de solucionar este problema, los mensajes largos podían bloquear nuestra parte de mensajería de UnityVS. Como consecuencia, a veces UnityVS no abría un archivo desde Unity.  
   
 ## <a name="10120"></a>1.0.12.0  
- Lanzamiento 03-01-2013  
+ Fecha de publicación: 3 de enero de 2013  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -884,7 +862,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido un problema de la API por el que el código de usuario no podía participar en el controlador de devolución de llamada de registro.  
   
 ## <a name="10110"></a>1.0.11.0  
- Lanzamiento 28-11-2012  
+ Fecha de publicación: 28 de noviembre de 2012  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -915,7 +893,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el bloqueo que se producía si no podíamos inyectar nuestro icono en la barra de estado de Visual Studio.  
   
 ## <a name="10100"></a>1.0.10.0  
- Lanzamiento 09-10-2012  
+ Fecha de publicación: 9 de octubre de 2012  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -928,7 +906,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido cómo se recuperan los ensamblados desde Unity para evitar el bloqueo de archivos y confusiones durante el proceso de compilación de Unity.  
   
 ## <a name="1090"></a>1.0.9.0  
- Lanzamiento 03-10-2012  
+ Fecha de publicación: 3 de octubre de 2012  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -947,7 +925,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se corrigió el error UVS-21: puntero no válido al evaluar una invocación de método a la API Math de Unity.  
   
 ## <a name="1080"></a>1.0.8.0  
- Lanzamiento 26-09-2012  
+ Fecha de publicación: 26 de septiembre de 2012  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -958,7 +936,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido cómo se registra UnityVS en Visual Studio 2010.  
   
 ## <a name="1070"></a>1.0.7.0  
- Lanzamiento 14-09-2012  
+ Fecha de publicación: 14 de septiembre de 2012  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -974,10 +952,10 @@ Registro de cambios de Visual Studio Tools para Unity.
 >  Debido a la compatibilidad con Visual Studio 2012, tuvimos que cambiar el nombre de algunos archivos y mover otros. El paquete de UnityVS para importar Unity ahora se llama UnityVS 2010 o UnityVS 2012, para Visual Studio 2010 y Visual Studio 2012 respectivamente. Esta versión también requiere que se vuelvan a generar los archivos de proyecto de UnityVS.  
   
 ## <a name="1060---internal-build"></a>1.0.6.0 (compilación interna)  
- Lanzamiento 12-09-2012  
+ Fecha de publicación: 12 de septiembre de 2012  
   
 ## <a name="1050"></a>1.0.5.0  
- Lanzamiento 10-09-2012  
+ Fecha de publicación: 10 de septiembre de 2012  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -986,7 +964,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido la detección de instancias de Unity cuando Unity estaba conectado al servidor de activos. Esto producía errores al abrir archivos desde Unity y la conexión automática del depurador de Visual Studio.  
   
 ## <a name="1040"></a>1.0.4.0  
- Lanzamiento 05-09-2012  
+ Fecha de publicación: 5 de septiembre de 2012  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -999,7 +977,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el bloqueo de UnityVS que tenía lugar durante la depuración como consecuencia de excepciones producidas por métodos o propiedades ubicadas dentro de Unity.  
   
 ## <a name="1030"></a>1.0.3.0 
- Lanzamiento 04-09-2012  
+ Fecha de publicación: 4 de septiembre de 2012  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -1014,7 +992,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el bloqueo aleatorio de VS causado por nuestra barra de estado personalizada.  
   
 ## <a name="1020"></a>1.0.2.0  
- Lanzamiento 30-08-2012  
+ Fecha de publicación: 30 de agosto de 2012  
   
 ### <a name="bug-fixes"></a>Correcciones de errores  
   
@@ -1025,7 +1003,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido el error sobre cómo se recuperaban los ensamblados de scripting desde Unity mediante Unity 4.  
   
 ## <a name="1010"></a>1.0.1.0  
- Lanzamiento 28-08-2012  
+ Fecha de publicación: 28 de agosto de 2012  
   
 ### <a name="new-features"></a>Características nuevas  
   
@@ -1042,5 +1020,5 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   Se ha corregido la finalización de archivos .dll dentro de la carpeta de activos para UnityScript y Boo.  
   
 ## <a name="1000---initial-release"></a>1.0.0.0 (versión inicial)  
- Lanzamiento 22-08-2012
+ Fecha de publicación: 22 de agosto de 2012
 
