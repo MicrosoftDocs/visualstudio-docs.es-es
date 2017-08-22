@@ -1,142 +1,166 @@
 ---
-title: "Tutorial: Crear una aplicaci&#243;n de datos sencilla mediante ADO.NET | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
+title: Create a simple data application by using ADO.NET | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 42
-caps.handback.revision: 30
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5638a26829f0d8d0c6b24281d4c8ab57f180242c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
+
 ---
-# Tutorial: Crear una aplicaci&#243;n de datos sencilla mediante ADO.NET
-Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados.  Siguiendo este tema, puede detectar cómo interactuar con una base de datos dentro de una aplicación de formularios Windows Forms sencilla utilizando Visual C\# o Visual Basic y ADO.NET.  
+# <a name="create-a-simple-data-application-by-using-adonet"></a>Create a simple data application by using ADO.NET
+When you create an application that manipulates data in a database, you perform basic tasks such defining connection strings, inserting data, and running stored procedures. By following this topic, you can discover how to interact with a database from within a simple Windows Forms "forms over data" application by using Visual C# or Visual Basic and ADO.NET.  All .NET data technologies—including datasets, LINQ to SQL, and Entity Framework—ultimately perform steps that are very similar to those shown in this article.  
+  
+ This article demonstrates a simple way to get data out of a database in a very fast manner. If your application needs to modify data in non-trivial ways and update the database, you should consider using Entity Framework and using data binding to automatically sync user interface controls to changes in the underlying data.  
   
 > [!IMPORTANT]
->  Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.  
+>  To keep the code simple, it doesn't include production-ready exception handling.  
   
- **En este tema**  
+ **In this topic**  
   
--   [Configurar la base de datos de ejemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+-   [Set up the sample database](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Crear los formularios y agregar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+-   [Create the forms and add controls](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Almacenar la cadena de conexión](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+-   [Store the connection string](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Recuperar la cadena de conexión](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+-   [Retrieve the connection string](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Escribir el código para los formularios](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+-   [Write the code for the forms](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Probar la aplicación](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+-   [Test your application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
-## Requisitos previos  
- Para crear la aplicación, necesitará:  
+## <a name="prerequisites"></a>Prerequisites  
+ To create the application, you'll need:  
   
--   Visual Studio 2012 con Update 1 o [!INCLUDE[vs_dev12](../data-tools/includes/vs_dev12_md.md)]  
+-   Visual Studio Community Edition.  
   
--   SQL Server 2012 Express LocalDB  
+-   SQL Server Express LocalDB.  
   
--   La pequeña base de datos de ejemplo que se crea siguiendo los pasos descritos en [Tutorial: Crear una pequeña base de datos de ejemplo](../data-tools/create-a-sql-database-by-using-a-script.md).  
+-   The small sample database that you create by following the steps in [Create a SQL database by using a script](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   La cadena de conexión para la base de datos después de haberla configurado.  Puede buscar este valor si abre el **Explorador de objetos de SQL Server** y el menú contextual para la base de datos, elige **Propiedades** y después se desplaza a la propiedad **Cadena de conexión**.  
+-   The connection string for the database after you set it up. You can find this value by opening **SQL Server Object Explorer**, opening the shortcut menu for the database, selecting **Properties**, and then scrolling to the **ConnectionString**  property.  
   
- En este tema se supone que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios a ese proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de estos controles y codificar eventos simples.  Si no está familiarizado con estas tareas, recomendamos que complete los [Introducción a Visual C\# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de empezar este tema.  
+ This topic assumes that you're familiar with the basic functionality of the Visual Studio IDE and can create a Windows Forms application, add forms to that project, put buttons and other controls on those forms, set properties of those controls, and code simple events. If you aren't comfortable with these tasks, we suggest that you complete the [Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) before you start this topic.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurar la base de datos de ejemplo  
- La base de datos de ejemplo de este tutorial consta de las tablas Cliente y Pedidos.  Las tablas no contienen datos inicialmente, pero se agregarán cuando se ejecute la aplicación que se va a crear.  La base de datos también tiene cinco procedimientos almacenados simples.  El [Tutorial: Crear una pequeña base de datos de ejemplo](../data-tools/create-a-sql-database-by-using-a-script.md) contiene un script Transact\-SQL que crea las tablas, las claves primarias y externas, las restricciones y los procedimientos almacenados.  
+##  <a name="BKMK_setupthesampledatabase"></a> Set up the sample database  
+ The sample database for this walkthrough consists of the Customer and Orders tables. The tables contain no data initially, but you'll add data when you run the application that you'll create. The database also has five simple stored procedures. [Create a SQL database by using a script](../data-tools/create-a-sql-database-by-using-a-script.md) contains a Transact-SQL script that creates the tables, the primary and foreign keys, the constraints, and the stored procedures.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Crear los formularios y agregar controles  
+##  <a name="BKMK_createtheformsandaddcontrols"></a> Create the forms and add controls  
   
-1.  Cree un proyecto para una aplicación de formularios Windows Forms y, a continuación, asígnele el nombre `SimpleDataApp`.  
+1.  Create a project for a Windows Forms application, and then name it SimpleDataApp.  
   
-     Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows Forms vacío denominado Form1.  
+     Visual Studio creates the project and several files, including an empty Windows form that's named Form1.  
   
-2.  Agregue dos formularios Windows Forms al proyecto para que tenga tres formularios y después asígneles los siguientes nombres.  
+2.  Add two Windows forms to your project so that it has three forms, and then give them the following names:  
   
-    -   Navegación  
+    -   Navigation  
   
     -   NewCustomer  
   
     -   FillOrCancel  
   
-3.  Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones.  Para cada control, establezca las propiedades que se describen en las tablas.  
+3.  For each form, add the text boxes, buttons, and other controls that appear in the following illustrations. For each control, set the properties that the tables describe.  
   
     > [!NOTE]
-    >  El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.  
+    >  The group box and the label controls add clarity but aren't used in the code.  
   
- **Formulario Navigation**  
+ **Navigation form**  
   
- ![Cuadro de diálogo de navegación](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+ ![Navigation dialog box](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
-|Controles del formulario Navigation|Propiedades|  
-|-----------------------------------------|-----------------|  
-|Botón|Nombre \= btnGoToAdd|  
-|Botón|Nombre \= btnGoToFillOrCancel|  
-|Botón|Nombre \= btnExit|  
+|Controls for the Navigation form|Properties|  
+|--------------------------------------|----------------|  
+|Button|Name = btnGoToAdd|  
+|Button|Name = btnGoToFillOrCancel|  
+|Button|Name = btnExit|  
   
- **Formulario NewCustomer**  
+ **NewCustomer form**  
   
- ![Agregar un nuevo cliente y realizar un pedido](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")  
+ ![Add  a new customer and place an order](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")  
   
-|Controles del formulario NewCustomer|Propiedades|  
-|------------------------------------------|-----------------|  
-|TextBox|Nombre \= txtCustomerName|  
-|TextBox|Nombre \= txtCustomerID<br /><br /> De solo lectura \= True|  
-|Botón|Nombre \= btnCreateAccount|  
-|NumericUpDown|Posiciones decimales \= 0<br /><br /> Máximo \= 5000<br /><br /> Nombre \= numOrderAmount|  
-|DateTimePicker|Formato \= Abreviado<br /><br /> Nombre \= dtpOrderDate|  
-|Botón|Nombre \= btnPlaceOrder|  
-|Botón|Nombre \= btnAddAnotherAccount|  
-|Botón|Nombre \= btnAddFinish|  
+|Controls for the NewCustomer form|Properties|  
+|---------------------------------------|----------------|  
+|TextBox|Name = txtCustomerName|  
+|TextBox|Name = txtCustomerID<br /><br /> Readonly = True|  
+|Button|Name = btnCreateAccount|  
+|NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|  
+|DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|  
+|Button|Name = btnPlaceOrder|  
+|Button|Name = btnAddAnotherAccount|  
+|Button|Name = btnAddFinish|  
   
- **Formulario FillOrCancel**  
+ **FillOrCancel form**  
   
- ![rellenar o cancelar pedidos](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")  
+ ![fill or cancel orders](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")  
   
-|Controles del formulario FillOrCancel|Propiedades|  
-|-------------------------------------------|-----------------|  
-|TextBox|Nombre \= txtOrderID|  
-|Botón|Nombre \= btnFindByOrderID|  
-|DateTimePicker|Formato \= Abreviado<br /><br /> Nombre \= dtpFillDate|  
-|DataGridView|Nombre \= dgvCustomerOrders<br /><br /> De solo lectura \= True<br /><br /> Encabezados de filas visibles \= False|  
-|Botón|Nombre \= btnCancelOrder|  
-|Botón|Nombre \= btnFillOrder|  
-|Botón|Nombre \= btnFinishUpdates|  
+|Controls for the FillOrCancel form|Properties|  
+|----------------------------------------|----------------|  
+|TextBox|Name = txtOrderID|  
+|Button|Name = btnFindByOrderID|  
+|DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|  
+|DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|  
+|Button|Name = btnCancelOrder|  
+|Button|Name = btnFillOrder|  
+|Button|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Almacenar la cadena de conexión  
- Cuando la aplicación intenta abrir una conexión a la base de datos, la aplicación debe tener acceso a la cadena de conexión.  Para evitar escribir la cadena manualmente en cada formulario, almacene la cadena en el archivo App.config del proyecto y cree un método que devuelva la cadena cuando se llama desde cualquier formulario de la aplicación.  
+##  <a name="BKMK_storetheconnectionstring"></a> Store the connection string  
+ When your application tries to open a connection to the database, your application must have access to the connection string. To avoid entering the string manually on each form, store the string in the App config file in your project, and create a method that returns the string when the method is called from any form in your application.  
   
-1.  Abra el menú contextual del proyecto y, a continuación, elija **Propiedades**.  
+ You can find the connection string in **SQL Server Object Explorer** by right-clicking the database, selecting **Properties**, and then finding the ConnectionString property. Use Ctrl+A to select the string.  
   
-2.  En el panel izquierdo de la ventana **Propiedades**, elija la pestaña **Configuración**.  
+1.  In **Solution Explorer**, select the **Properties** node under the project, and then select **Settings.settings**.  
   
-3.  En la columna **Nombre**, escriba `connString`.  
+2.  In the **Name** column, enter `connString`.  
   
-4.  En la lista **Tipo**, elija **\(Cadena de conexión\)**.  
+3.  In the **Type** list, select **(Connection String)**.  
   
-5.  En la lista **Ámbito**, elija **Aplicación**.  
+4.  In the **Scope** list, select **Application**.  
   
-6.  En la columna **Valor**, escriba la cadena de conexión y después guarde los cambios.  
+5.  In the **Value** column, enter your connection string (without any outside quotes), and then save your changes.  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Recuperar la cadena de conexión  
+> [!NOTE]
+>  In a real application, you should store the connection string securely, as described in [Connection Strings and Configuration Files](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).  
   
-1.  En la barra de menús, elija **Proyecto**, **Agregar referencia** y, a continuación, agregue una referencia a System.Configuration.dll.  
+##  <a name="BKMK_retrievetheconnectionstring"></a> Retrieve the connection string  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar clase** para agregar un archivo de clase al proyecto y después asigne el nombre `Utilidad` al archivo.  
+1.  On the menu bar, select **Project** > **Add Reference**, and then add a reference to System.Configuration.dll.  
   
-     Visual Studio crea el archivo y lo muestra en el **Explorador de soluciones**.  
+2.  On the menu bar, select **Project** > **Add Class** to add a class file to your project, and then name the file `Utility`.  
   
-3.  En el archivo Utilidad, reemplace el código del marcador de posición por el siguiente código.  Observe que los comentarios numerados \(con el prefijo Util\-\) identifican las secciones del código.  La tabla que sigue al código llama a los puntos clave.  
+     Visual Studio creates the file and displays it in **Solution Explorer**.  
+  
+3.  In the Utility file, replace the placeholder code with the following code. Notice the numbered comments (prefixed with Util-) that identify sections of the code. The table that follows the code calls out key points.  
   
     ```c#  
     using System;  
@@ -204,28 +228,28 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
     End Namespace  
     ```  
   
-    |Comentario|Descripción|  
-    |----------------|-----------------|  
-    |Util\-1|Agregue el espacio de nombres System.Configuration.|  
-    |Util\-2|Defina una variable, `returnValue`, e inicialícela en `null` \(C\#\) o en `Nothing` \(Visual Basic\).|  
-    |Util\-3|Aunque escribiera `connString` como nombre de la cadena de conexión en la ventana **Propiedades**, debe especificar `"SimpleDataApp.Properties.Settings.connString"` \(C\#\) o `"SimpleDataApp.My.MySettings.connString"` \(Visual Basic\) en el código.|  
+    |Comment|Description|  
+    |-------------|-----------------|  
+    |Util-1|Add the `System.Configuration` namespace.|  
+    |Util-2|Define a variable, `returnValue`, and initialize it to `null` (C#) or `Nothing` (Visual Basic).|  
+    |Util-3|Even though you entered `connString` as the name of the connection string in the **Properties** window, you must specify `"SimpleDataApp.Properties.Settings.connString"` (C#) or `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) in the code.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Escribir el código para los formularios  
- Esta sección contiene información general breve de lo que hace cada formulario y muestra el código que crean los formularios.  Los comentarios numerados identifican las secciones del código.  
+##  <a name="BKMK_writethecodefortheforms"></a> Write the code for the forms  
+ This section contains brief overviews of what each form does and shows the code that creates the forms. Numbered comments identify sections of the code.  
   
-### Formulario Navigation  
- El formulario Navigation se abre cuando se ejecuta la aplicación.  El botón **Agregar una cuenta** abre el formulario NewCustomer.  El botón **Rellenar o cancelar pedidos** abre el formulario FillOrCancel.  El botón **Salir** cierra la aplicación.  
+### <a name="navigation-form"></a>Navigation form  
+ The Navigation form opens when you run the application. The **Add an account** button opens the NewCustomer form. The **Fill or cancel orders** button opens the FillOrCancel form. The **Exit** button closes the application.  
   
-#### Hacer que el formulario Navigation sea el formulario de inicio  
- Si usa C\#, en el **Explorador de soluciones**, abra Program.cs y después cambie la línea `Application.Run` a esta: `Application.Run(new Navigation());`  
+#### <a name="make-the-navigation-form-the-startup-form"></a>Make the Navigation form the startup form  
+ If you're using C#, in **Solution Explorer**, open Program.cs, and then change the `Application.Run` line to this: `Application.Run(new Navigation());`  
   
- Si usa Visual Basic, en el **Explorador de soluciones**, abra la ventana **Propiedades**, elija la pestaña **Aplicación** y, a continuación, elija SimpleDataApp.Navigation en la lista **Formulario de inicio**.  
+ If you're using Visual Basic, in **Solution Explorer**, open the **Properties** window, select the **Application** tab, and then select **SimpleDataApp.Navigation** in the **Startup form** list.  
   
-#### Cree controladores de eventos  
- Cree controladores de eventos Click vacíos para los tres botones del formulario.  Consulte [Cómo: Crear controladores de eventos predeterminados en el Diseñador de Windows Forms](http://msdn.microsoft.com/es-es/757bcc16-1dc2-4d68-b115-ac0f53f05c8d).  
+#### <a name="create-event-handlers"></a>Create event handlers  
+ Double-click the three buttons on the form to create empty event-handler methods.  
   
-#### Crear código para Navigation  
- En el formulario Navigation, reemplace el código existente con el código siguiente.  
+#### <a name="create-code-for-navigation"></a>Create code for Navigation  
+ In the Navigation form, replace the existing code with the following code.  
   
 ```c#  
 using System;  
@@ -309,14 +333,14 @@ End Namespace
   
 ```  
   
-### Formulario NewCustomer  
- Cuando escribe un nombre de cliente y después elige el botón **Crear cuenta**, el formulario NewCustomer crea una cuenta de cliente y SQL Server devuelve un valor IDENTITY como el nuevo número de cuenta.  A continuación, realiza un pedido para la nueva cuenta especificando una cantidad y una fecha de pedido, y elige el botón **Realizar pedido**.  
+### <a name="newcustomer-form"></a>NewCustomer form  
+ When you enter a customer name and then select the **Create Account** button, the NewCustomer form creates a customer account, and SQL Server returns an IDENTITY value as the new account number. You then place an order for the new account by specifying an amount and an order date and selecting the **Place Order** button.  
   
-#### Cree controladores de eventos  
- Cree un controlador de eventos Click vacío para cada botón del formulario.  
+#### <a name="create-event-handlers"></a>Create event handlers  
+ Create an empty Click event handler for each button on the form.  
   
-#### Crear código para NewCustomer  
- Agregue el siguiente código al formulario NewCustomer.  Recorra paso a paso cada bloque de código mediante los comentarios numerados y la tabla después del código.  
+#### <a name="create-code-for-newcustomer"></a>Create code for NewCustomer  
+ Add the following code to the NewCustomer form. Step through each code block by using the numbered comments and the table after the code.  
   
 ```c#  
 using System;  
@@ -437,15 +461,15 @@ namespace SimpleDataApp
                 cmdNewOrder.Parameters.Add(new SqlParameter("@Amount", SqlDbType.Int));  
                 cmdNewOrder.Parameters["@Amount"].Value = numOrderAmount.Value;  
   
-                //NC-23 @Status. For a new order, the status is always O (open)  
+                //NC-23 @Status. For a new order, the status is always O (open).  
                 cmdNewOrder.Parameters.Add(new SqlParameter("@Status", SqlDbType.Char, 1));  
                 cmdNewOrder.Parameters["@Status"].Value = "O";  
   
-                //NC-24 Add return value for stored procedure, which is the orderID.  
+                //NC-24 Add return value for stored procedure, which is orderID.  
                 cmdNewOrder.Parameters.Add(new SqlParameter("@RC", SqlDbType.Int));  
                 cmdNewOrder.Parameters["@RC"].Direction = ParameterDirection.ReturnValue;  
   
-                //try – catch - finally  
+                //try-catch-finally  
                 try  
                 {  
                     //Open connection.  
@@ -494,13 +518,13 @@ namespace SimpleDataApp
             }  
         }  
   
-        //NC-27 Reset the form for another new account  
+        //NC-27 Reset the form for another new account.  
         private void btnAddAnotherAccount_Click(object sender, EventArgs e)  
         {  
             this.ClearForm();  
         }  
   
-        //NC-28 Clear values from controls  
+        //NC-28 Clear values from controls.  
         private void ClearForm()  
         {  
             txtCustomerName.Clear();  
@@ -632,11 +656,11 @@ Namespace SimpleDataApp
                 cmdNewOrder.Parameters.Add(New SqlParameter("@Status", SqlDbType.[Char], 1))  
                 cmdNewOrder.Parameters("@Status").Value = "O"  
   
-                ' NC-24 add return value for stored procedure, which is the orderID  
+                ' NC-24 Add return value for stored procedure, which is orderID.  
                 cmdNewOrder.Parameters.Add(New SqlParameter("@RC", SqlDbType.Int))  
                 cmdNewOrder.Parameters("@RC").Direction = ParameterDirection.ReturnValue  
   
-                ' try – catch - finally  
+                ' try-catch-finally  
                 Try  
                     ' Open connection.  
                     conn.Open()  
@@ -650,7 +674,7 @@ Namespace SimpleDataApp
   
                 Catch  
                     ' A simple catch.  
-                    MessageBox.Show("Order could not not be placed.")  
+                    MessageBox.Show("Order could  not be placed.")  
   
                 Finally  
                     ' Close connection.  
@@ -667,7 +691,7 @@ Namespace SimpleDataApp
                 MessageBox.Show("Please create customer account before placing order.")  
                 Return False  
   
-                ' Verify that Amount isn't 0   
+                ' Verify that Amount isn't 0.   
             ElseIf (numOrderAmount.Value < 1) Then  
   
                 MessageBox.Show("Please specify an order amount.")  
@@ -701,40 +725,40 @@ Namespace SimpleDataApp
 End Namespace  
 ```  
   
-|Comentario|Descripción|  
-|----------------|-----------------|  
-|NC\-1|Agregue System.Data.SqlClient y System.Configuration a la lista de espacios de nombres.|  
-|NC\-2|Declare las variables `parsedCustomerID` y `orderID`, que usará más adelante.|  
-|NC\-3|Llame al método `GetConnectionString` para obtener una cadena de conexión del archivo App.config y almacene el valor en la variable de cadena `connstr`.|  
-|NC\-4|Agregue código al controlador de eventos Click para el botón `btnCreateAccount`.|  
-|NC\-5|Incluya la llamada a `isCustomerName` alrededor del código de evento Click, de modo que `uspNewCustomer` solo se ejecute si un nombre de cliente está presente.|  
-|NC\-6|Cree un objeto `SqlConnection` \(`conn`\) y páselo en la cadena de conexión en `connstr`.|  
-|NC\-7|Cree un objeto `SqlCommand`, `cmdNewCustomer`.<br /><br /> -   Especifique `Sales.uspNewCustomer` como el procedimiento almacenado para ejecutar.<br />-   Use la propiedad `CommandType` para especificar que el comando es un procedimiento almacenado.|  
-|NC\-8|Agregue el parámetro de entrada `@CustomerName` del procedimiento almacenado.<br /><br /> -   Agregue el parámetro a la colección `Parameters`.<br />-   Use la enumeración SqlDbType para especificar el tipo de parámetro como nvarchar \(40\).<br />-   Especifique `txtCustomerName.Text` como el origen.|  
-|NC\-9|Agregue el parámetro de salida del procedimiento almacenado.<br /><br /> -   Agregue el parámetro a la colección `Parameters`.<br />-   Use `ParameterDirection.Output` para identificar el parámetro como resultado.|  
-|NC\-10|Agregue un bloque Try – Catch – Finally para abrir la conexión, ejecute el procedimiento almacenado, controle las excepciones y después cierre la conexión.|  
-|NC\-11|Abra la conexión \(`conn`\) que creó en NC\-6.|  
-|NC\-12|Use el método `cmdNewCustomer` de `ExecuteNonQuery` para ejecutar el procedimiento almacenado `Sales.uspNewCustomer`, que ejecuta una instrucción `INSERT`, no una consulta.|  
-|NC\-13|El valor de `@CustomerID` se devuelve como un valor IDENTITY de la base de datos.  Debido a que es un entero, tendrá que convertirlo a una cadena para mostrarla en el cuadro de texto Id. de cliente.<br /><br /> -   Ha declarado `parsedCustomerID` en NC\-2.<br />-   Almacena el valor de `@CustomerID` en `parsedCustomerID` para su uso posterior.<br />-   Convierte el identificador de cliente devuelto en una cadena y lo inserta en `txtCustomerID.Text`.|  
-|NC\-14|Para este ejemplo, agregue una cláusula catch sencilla sin calidad de producción.|  
-|NC\-15|Cierre siempre una conexión cuando termine de utilizarla para que se pueda liberar al grupo de conexiones.  Consulte [Agrupación de conexiones de SQL Server \(ADO.NET\)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
-|NC\-16|Defina un método para comprobar que un nombre de cliente está presente.<br /><br /> -   Si el cuadro de texto está vacío, muestra un mensaje y devuelve `false`, porque un nombre es necesario para crear la cuenta.<br />-   Si el cuadro de texto no está vacío, devuelve `true`.|  
-|NC\-17|Agregue código al controlador de eventos Click para el botón `btnPlaceOrder`.|  
-|NC\-18|Incluya la llamada a `isPlaceOrderReady` alrededor del código de evento `btnPlaceOrder_Click`, de modo que `uspPlaceNewOrder` no se ejecute si la entrada no está presente.|  
-|De NC\-19 a NC\-25|Estas secciones de código son similares al código que se ha agregado para el controlador de eventos `btnCreateAccount_Click`.<br /><br /> -   NC\-19.  Cree el objeto `SqlCommand`, `cmdNewOrder` y especifique `Sales.uspPlaceOrder` como el procedimiento almacenado.<br />-   De NC\-20 a NC\-23 son los parámetros de entrada para el procedimiento almacenado.<br />-   NC\-24.  `@RC` contendrá un valor devuelto que es el identificador de pedido generado a partir de la base de datos.  Esta dirección del parámetro se especifica como `ReturnValue`.<br />-   NC\-25.  Almacene el valor del identificador de pedido en la variable `orderID` que declaró en NC\-2 y muestre el valor en un cuadro de mensaje.|  
-|NC\-26|Defina un método para comprobar que existe un identificador de cliente y que se ha especificado una cantidad en `numOrderAmount`.|  
-|NC\-27|Llame al método `ClearForm` en el controlador de eventos Click `btnAddAnotherAccount`.|  
-|NC\-28|Cree el método `ClearForm` para borrar valores del formulario si desea agregar otro cliente.|  
-|NC\-29|Cierre el formulario NewCustomer y devuelva el foco al formulario Navigation.|  
+|Comment|Description|  
+|-------------|-----------------|  
+|NC-1|Add `System.Data.SqlClient` and `System.Configuration` to the list of namespaces.|  
+|NC-2|Declare the `parsedCustomerID` and `orderID` variables, which you'll use later.|  
+|NC-3|Call the `GetConnectionString` method to get the connection string from the App config file, and store the value in the `connstr` string variable.|  
+|NC-4|Add code to the Click event handler for the `btnCreateAccount` button.|  
+|NC-5|Wrap the call to `isCustomerName` around the Click event code so that `uspNewCustomer` runs only if a customer name is present.|  
+|NC-6|Create a `SqlConnection` object (`conn`), and pass in the connection string in `connstr`.|  
+|NC-7|Create a `SqlCommand` object, `cmdNewCustomer`.<br /><br /> -   Specify `Sales.uspNewCustomer` as the stored procedure to run.<br />-   Use the `CommandType` property to specify that the command is a stored procedure.|  
+|NC-8|Add the `@CustomerName` input parameter from the stored procedure.<br /><br /> -   Add the parameter to the `Parameters` collection.<br />-   Use the `SqlDbType` enumeration to specify the parameter type as nvarchar(40).<br />-   Specify `txtCustomerName.Text` as the source.|  
+|NC-9|Add the output parameter from the stored procedure.<br /><br /> -   Add the parameter to the `Parameters` collection.<br />-   Use `ParameterDirection.Output` to identify the parameter as output.|  
+|NC-10|Add a Try-Catch-Finally block to open the connection, run the stored procedure, handle exceptions, and then close the connection.|  
+|NC-11|Open the connection (`conn`) that you created at NC-6.|  
+|NC-12|Use the `ExecuteNonQuery` method for  `cmdNewCustomer` to run the `Sales.uspNewCustomer` stored procedure. This stored procedure runs an `INSERT` statement, not a query.|  
+|NC-13|The `@CustomerID` value is returned as an IDENTITY value from the database. Because it's an integer, you'll have to convert it to a string to display it in the **Customer ID** text box.<br /><br /> -   You declared `parsedCustomerID` at NC-2.<br />-   Store the `@CustomerID` value in `parsedCustomerID` for later use.<br />-   Convert the returned customer ID to a string, and insert it into `txtCustomerID.Text`.|  
+|NC-14|For this sample, add a simple (not production-quality) catch clause.|  
+|NC-15|Always close a connection after you finish using it, so that it can be released to the connection pool. See [SQL Server Connection Pooling (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-16|Define a method to verify that a customer name is present.<br /><br /> -   If the text box is empty, display a message and return `false`, because a name is required to create the account.<br />-   If the text box isn't empty, return `true`.|  
+|NC-17|Add code to the Click event handler for the `btnPlaceOrder` button.|  
+|NC-18|Wrap the call to `isPlaceOrderReady` around the `btnPlaceOrder_Click` event code so that `uspPlaceNewOrder` doesn't run if required input isn't present.|  
+|NC-19 through NC-25|These sections of code resemble the code that you added for the `btnCreateAccount_Click` event handler.<br /><br /> -   NC-19. Create the `SqlCommand` object, `cmdNewOrder`, and specify `Sales.uspPlaceOrder` as the stored procedure.<br />-   NC-20 through NC-23 are the input parameters for the stored procedure.<br />-   NC-24. `@RC` will contain a return value that's the generated order ID from the database. This parameter's direction is specified as `ReturnValue`.<br />-   NC-25. Store the value of order ID in the `orderID` variable that you declared at NC-2, and display the value in a message box.|  
+|NC-26|Define a method to verify that a customer ID exists and that an amount has been specified in `numOrderAmount`.|  
+|NC-27|Call the `ClearForm` method in the `btnAddAnotherAccount` Click event handler.|  
+|NC-28|Create the `ClearForm` method to clear values from the form if you want to add another customer.|  
+|NC29|Close the NewCustomer form, and return focus to the Navigation form.|  
   
-### Formulario FillOrCancel  
- El formulario FillOrCancel ejecuta una consulta que devuelve un pedido cuando se escribe un identificador de pedido y se elige el botón **Buscar pedido**.  La fila devuelta aparece en una cuadrícula de datos de solo lectura.  Puede marcar el pedido como cancelado \(X\) si elige el botón **Cancelar pedido** o puede marcar el pedido como relleno \(F\) si elige el botón **Rellenar pedido**.  Si elige de nuevo el botón **Buscar pedido**, la fila actualizada aparece.  
+### <a name="fillorcancel-form"></a>FillOrCancel form  
+ The FillOrCancel form runs a query to return an order when you enter an order ID and select the **Find Order** button. The returned row appears in a read-only data grid. You can mark the order as canceled (X) if you select the **Cancel Order** button, or you can mark the order as filled (F) if you select the **Fill Order** button. If you select the **Find Order** button again, the updated row appears.  
   
-#### Cree controladores de eventos  
- Cree controladores de eventos Click vacíos para los cuatro botones del formulario.  
+#### <a name="create-event-handlers"></a>Create event handlers  
+ Create empty Click event handlers for the four buttons on the form.  
   
-#### Crear código para FillOrCancel  
- Agregue el siguiente código al formulario FillOrCancel.  Recorra paso a paso los bloques de código mediante los comentarios numerados y la tabla que sigue al código.  
+#### <a name="create-code-for-fillorcancel"></a>Create code for FillOrCancel  
+ Add the following code to the FillOrCancel form. Step through the code blocks by using the numbered comments and the table that follows the code.  
   
 ```c#  
 using System;  
@@ -769,7 +793,7 @@ namespace SimpleDataApp
         //FC-4 Find an order.  
         private void btnFindByOrderID_Click(object sender, EventArgs e)  
         {  
-            //FC-5 Prepare the connection and the command  
+            //FC-5 Prepare the connection and the command.  
             if (isOrderID())  
             {  
                 //Create the connection.  
@@ -785,7 +809,7 @@ namespace SimpleDataApp
                 cmdOrderID.Parameters.Add(new SqlParameter("@orderID", SqlDbType.Int));  
                 cmdOrderID.Parameters["@orderID"].Value = parsedOrderID;  
   
-                //try – catch - finally  
+                //try-catch-finally  
                 try  
                 {  
                     //FC-6 Run the command and display the results.  
@@ -801,7 +825,7 @@ namespace SimpleDataApp
                     //Load the data from SqlDataReader into the data table.  
                     dataTable.Load(rdr);  
   
-                    //Display the data from the datatable in the datagridview.  
+                    //Display the data from the data table in the data grid view.  
                     this.dgvCustomerOrders.DataSource = dataTable;  
   
                     //Close the SqlDataReader.  
@@ -879,7 +903,7 @@ namespace SimpleDataApp
                 cmdFillOrder.Parameters.Add(new SqlParameter("@FilledDate", SqlDbType.DateTime, 8));  
                 cmdFillOrder.Parameters["@FilledDate"].Value = dtpFillDate.Value;  
   
-                //try – catch - finally  
+                //try-catch-finally  
                 try  
                 {  
                     //Open the connection.  
@@ -955,10 +979,10 @@ Imports System.Configuration
 Namespace SimpleDataApp  
     Partial Public Class FillOrCancel  
         Inherits Form  
-        ' FC-2 Storage for OrderID  
+        ' FC-2 Storage for OrderID.  
         Private parsedOrderID As Integer  
   
-        ' FC-3 Specify a connection string  
+        ' FC-3 Specify a connection string.  
         Private connstr As String = SimpleDataApp.Utility.GetConnectionString()  
   
         Public Sub New()  
@@ -996,10 +1020,10 @@ Namespace SimpleDataApp
                     ' Create a data table to hold the retrieved data.  
                     Dim dataTable As New DataTable()  
   
-                    ' Load the data from the SqlDataReader into the data table.  
+                    ' Load the data from SqlDataReader into the data table.  
                     dataTable.Load(rdr)  
   
-                    ' Display the data from the data table in the datagridview.  
+                    ' Display the data from the data table in the data grid view.  
                     Me.dgvCustomerOrders.DataSource = dataTable  
   
                     ' Close the SqlDataReader.  
@@ -1118,17 +1142,17 @@ Namespace SimpleDataApp
 End Namespace  
 ```  
   
-|Comentario|Descripción|  
-|----------------|-----------------|  
-|FC\-1|Agregue System.Data.SqlClient, System.Configuration y System.Text.RegularExpressions a la lista de espacios de nombres.|  
-|FC\-2|Declare la variable `parsedOrderID`.|  
-|FC\-3|Llame al método `GetConnectionString` para obtener una cadena de conexión del archivo App.config y almacene el valor en la variable de cadena `connstr`.|  
-|FC\-4|Agregue código al controlador de eventos Click para `btnFindOrderByID`.|  
-|FC\-5|¿Le resulta familiar?  Estas tareas se requieren antes de intentar ejecutar una instrucción SQL o un procedimiento almacenado.<br /><br /> -   Cree un objeto SqlConnection.<br />-   Defina la instrucción SQL o especifique el nombre del procedimiento almacenado.  \(En este caso, ejecutará una instrucción `SELECT`.\)<br />-   Crear un objeto `SqlCommand`.<br />-   Defina los parámetros para la instrucción SQL o procedimiento almacenado.|  
-|FC\-6|Este código usa `SqlDataReader` y `DataTable` para recuperar y mostrar el resultado de la consulta.<br /><br /> -   Abra la conexión.<br />-   Cree un SqlDataReader, `rdr`, mediante la ejecución del método `cmdOrderID` de `ExecuteReader`.<br />-   Cree un objeto `DataTable` para que contenga los datos recuperados.<br />-   Cargue los datos de `SqlDataReader` en el objeto `DataTable`.<br />-   Muestre los datos en el control DataGridView especificando `DataTable` como `DataSource` para el control DataGridView.<br />-   Cierre SqlDataReader.|  
-|FC\-7|Agregue código al controlador de eventos Click para `btnCancelOrder`.  Este código ejecuta el procedimiento almacenado `Sales.uspCancelOrder`.|  
-|FC\-8|Agregue código al controlador de eventos Click para `btnFillOrder`.  Este código ejecuta el procedimiento almacenado `Sales.uspFillOrder`.|  
-|FC\-9|Cree un método para comprobar que `OrderID` está listo para poder enviarse como parámetro al objeto `SqlCommand`.<br /><br /> -   Asegúrese de que un identificador se ha escrito en `txtOrderID`.<br />-   Use `Regex.IsMatch` para definir una comprobación simple de caracteres no enteros.<br />-   Ha declarado la variable `parsedOrderID` en FC\-2.<br />-   Si la entrada es válida, convierta el texto en un entero y almacene el valor en la variable `parsedOrderID`.<br />-   Incluya el método `isOrderID` alrededor de los controladores de eventos Click `btnFindByOrderID`, `btnCancelOrder` y `btnFillOrder`.|  
+|Comment|Description|  
+|-------------|-----------------|  
+|FC-1|Add `System.Data.SqlClient`, `System.Configuration`, and `System.Text.RegularExpressions` to the list of namespaces.|  
+|FC-2|Declare the `parsedOrderID` variable.|  
+|FC-3|Call the `GetConnectionString` method to get the connection string from the App config file, and store the value in the `connstr` string variable.|  
+|FC-4|Add code to the Click event handler for `btnFindOrderByID`.|  
+|FC-5|These tasks are required before you try to run an SQL statement or a stored procedure.<br /><br /> -   Create a `SqlConnection` object.<br />-   Define the SQL statement or specify the name of the stored procedure. (In this case, you'll run a `SELECT` statement.)<br />-   Create a `SqlCommand` object.<br />-   Define any parameters for the SQL statement or stored procedure.|  
+|FC-6|This code uses `SqlDataReader` and `DataTable` to retrieve and display the query result.<br /><br /> -   Open the connection.<br />-   Create a `SqlDataReader` object, `rdr`, by running  the `ExecuteReader` method for `cmdOrderID`.<br />-   Create a `DataTable` object to hold the retrieved data.<br />-   Load the data from the `SqlDataReader` object into the `DataTable` object.<br />-   Display the data in the data grid view by specifying `DataTable` as `DataSource` for the data grid view.<br />-   Close `SqlDataReader`.|  
+|FC-7|Add code to the Click event handler for `btnCancelOrder`. This code runs the `Sales.uspCancelOrder` stored procedure.|  
+|FC-8|Add code to the Click event handler for `btnFillOrder`. This code runs the `Sales.uspFillOrder` stored procedure.|  
+|FC-9|Create a method to verify that `OrderID` is ready to submit as a parameter to the `SqlCommand` object.<br /><br /> -   Make sure that an ID has been entered in `txtOrderID`.<br />-   Use `Regex.IsMatch` to define a simple check for non-integer characters.<br />-   You declared the `parsedOrderID` variable at FC-2.<br />-   If the input is valid, convert the text to an integer, and store the value in the `parsedOrderID` variable.<br />-   Wrap the `isOrderID` method around the `btnFindByOrderID`, `btnCancelOrder`, and `btnFillOrder` Click event handlers.|  
   
-##  <a name="BKMK_testyourapplication"></a> Probar la aplicación  
- Elija la tecla F5 para compilar y probar la aplicación después del código de cada controlador del evento Click y, a continuación, después de haber terminado la codificación.
+##  <a name="BKMK_testyourapplication"></a> Test your application  
+ Select the F5 key to build and test your application after you code each Click event handler, and then after you finish coding.

@@ -1,257 +1,268 @@
 ---
-title: "Usar puntos de interrupci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.breakpointswin"
-  - "vs.debug.disassembly.insert"
-  - "vs.debug.sourcewin.edit"
-  - "vs.debug.file"
-  - "vs.debug.breakpt.new"
-  - "vs.debug.whenbreakpointishit"
-  - "vs.debug.breakpt.choose"
-  - "vs.debug.breakpt.location.address"
-  - "vs.debug.breakpt.constraints"
-  - "vs.debug.breakpoints.delete"
-  - "vs.debug.breakpt.location.data"
-  - "vc.breakpoints"
-  - "vs.debug.breakpt.condition"
-  - "vs.debug.breakpt.location.function"
-  - "vs.debug.breakpoints"
-  - "vs.debug.menu.insert"
-  - "vs.debug.filenames"
-  - "vs.debug.breakpt.action"
-  - "vs.debug.sourcewin.insert"
-  - "vs.debug.address"
-  - "vs.debug.data"
-  - "vs.debug.func"
-  - "vs.debug.breakpt.location.file"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "puntos de interrupción, acerca de los puntos de interrupción"
+title: Use Breakpoints in the Debugger in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 02/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.breakpointswin
+- vs.debug.disassembly.insert
+- vs.debug.sourcewin.edit
+- vs.debug.file
+- vs.debug.breakpt.new
+- vs.debug.whenbreakpointishit
+- vs.debug.breakpt.choose
+- vs.debug.breakpt.location.address
+- vs.debug.breakpt.constraints
+- vs.debug.breakpoints.delete
+- vs.debug.breakpt.location.data
+- vc.breakpoints
+- vs.debug.breakpt.condition
+- vs.debug.breakpt.location.function
+- vs.debug.breakpoints
+- vs.debug.menu.insert
+- vs.debug.filenames
+- vs.debug.breakpt.action
+- vs.debug.sourcewin.insert
+- vs.debug.address
+- vs.debug.data
+- vs.debug.func
+- vs.debug.breakpt.location.file
+helpviewer_keywords:
+- breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 57
-caps.handback.revision: 56
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Usar puntos de interrupci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c2882283042f23d4f8fde14b4f49ca1669b1a5a7
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.  
+---
+# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Use Breakpoints in the Visual Studio Debugger
+You can set breakpoints when you want to stop debugger execution, perhaps to see the state of code variables or to look at the call stack. They are one of the most important debugging techniques in a developer's toolbox.  
   
-##  <a name="BKMK_Overview"></a> Establecer un punto de interrupción de función en código fuente  
- Para establecer un punto de interrupción de función, haga clic en el margen izquierdo de un archivo de código fuente o coloque el cursor en una línea de código y presione F9. El punto de interrupción aparece como un punto rojo en el margen izquierdo y la línea de código se muestra coloreada:  
+##  <a name="BKMK_Overview"></a> Setting a function breakpoint in source code  
+ You set a function breakpoint in source code by clicking in the left margin of a source code file, or by putting your cursor on a line of code and pressing F9. The breakpoint appears as a red dot in the left margin, and the line of code is colored as well:  
   
- ![Establecer un punto de interrupción](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Set a breakpoint](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
- Cuando se ejecuta este código en el depurador, la ejecución se detiene al alcanzar el punto de interrupción y antes de ejecutarse el código de esa línea. La línea de código fuente aparece coloreada de amarillo:  
+ When you run this code in the debugger, execution stops whenever the breakpoint is hit, before the code on that line is executed. The line of source code is colored yellow:  
   
- ![Ejecución de punto de interrupción detenida](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Breakpoint execution stopped](../debugger/media/breakpointexecution.png "BreakpointExecution")  
   
- En este punto, el valor de `testInt` sigue siendo 1.  
+ At this point the value of `testInt` is still 1.  
   
- Puede consultar el estado actual de la aplicación, incluidos los valores de variable y la pila de llamadas. Para más información sobre la pila de llamadas, vea [Cómo: Utilizar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).  
+ You can look at the current state of the application, including variable values and the call stack. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
   
- Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el código de C\# anterior se puede establecer un punto de interrupción en la declaración de variable, en el bucle `for` o en cualquier código incluido dentro del bucle `for`, pero no en las declaraciones de clase o espacio de nombres ni en la signatura del método.  
+ You can set a breakpoint on any line of executable code. For example, in the C# code above you can set a breakpoint on the variable declaration, the `for` loop, or any code inside the `for` loop, but you cannot set a breakpoint on the namespace or class declarations or the method signature.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Establecer otros tipos de puntos de interrupción  
- También se pueden establecer puntos de interrupción en la pila de llamadas, en la ventana Desensamblado y, en código de C\+\+ nativo, en una condición de datos o dirección de memoria.  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Setting Other Kinds of Breakpoints  
+ You can also set breakpoints in the call stack, in the Disassembly window, and, in native C++ code, at a data condition or a memory address.  
   
-## Establecer un punto de interrupción en la ventana Pila de llamadas  
- Puede interrumpir la ejecución en la instrucción o línea que devuelve una función de llamada para establecer un punto de interrupción en la ventana **Pila de llamadas**. Para más información sobre la pila de llamadas, vea [Cómo: Utilizar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md). El depurador debe estar detenido.  
+## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Setting a Breakpoint in the Call Stack Window  
+ You can break execution at the instruction or line that a calling function returns to by setting a breakpoint in the **Call Stack** window. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). The debugger must have stopped executing.  
   
-1.  Empiece a depurar la aplicación y espere a que se detenga la ejecución \(por ejemplo, en un punto de interrupción\). Abra la ventana **Pila de llamadas** \(**Depurar\/Ventanas\/Pila de llamadas** o **CTRL\+ALT\+C**\).  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Call Stack** window (**Debug > Windows > Call Stack**, or **CTRL + ALT + C**).  
   
-2.  Haga clic con el botón derecho en la función de llamada y, a continuación, seleccione **Punto de interrupción\/Insertar punto de interrupción** o use la tecla de método abreviado **F9**.  
+2.  Right-click the calling function and then select **Breakpoint > Insert Breakpoint**, or just use the shortcut key **F9**.  
   
-3.  En el margen izquierdo de la pila de llamadas, junto al nombre de la llamada de función, aparece un símbolo de punto de interrupción.  
+3.  A breakpoint symbol appears in the left margin of the call stack, next to the function call name.  
   
- En la ventana **Puntos de interrupción**, el punto de interrupción de la pila de llamadas aparecerá como una dirección con una ubicación de memoria que corresponde a la siguiente instrucción ejecutable de la función. El depurador interrumpe la ejecución en la instrucción.  
+ In the **Breakpoints** window, the call stack breakpoint appears as an address with a memory location that corresponds to the next executable instruction in the function. The debugger breaks execution at the instruction.  
   
- Para hacer un seguimiento visual de los puntos de interrupción durante la ejecución del código, vea [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+ To visually trace breakpoints during code execution, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-## Establecer un punto de interrupción en la ventana Desensamblado  
- Para establecer un punto de interrupción en una instrucción de ensamblado, el depurador debe hallarse en modo de interrupción.  
+## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Setting a Breakpoint in the Disassembly Window  
+ To set a breakpoint at an assembly instruction, the debugger must be in break mode.  
   
-1.  Empiece a depurar la aplicación y espere a que se detenga la ejecución \(por ejemplo, en un punto de interrupción\). Abra la ventana **Desensamblado** \(**Depurar\/Ventanas\/Desensamblado** o **Ctrl\+ Alt\+D**\).  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Disassembly** window (**Debug > Windows > Disassembly**, or **Ctrl + Alt + D**).  
   
-2.  Haga clic en el margen izquierdo de la instrucción donde desea establecer un punto de interrupción o coloque el cursor en la instrucción y presione **F9**.  
+2.  Click in the left margin at the instruction that you want to break at, or set your cursor at the instruction and press **F9**.  
   
-## Establecer un punto de interrupción de datos \(solo C\+\+ nativo\)  
- Los puntos de interrupción de datos interrumpen la ejecución cuando se produce un cambio en un valor que está almacenado en una ubicación especificada de la memoria. Si el valor se lee pero no cambia, la ejecución no se interrumpe. Para establecer puntos de interrupción de datos, el depurador debe estar en modo de interrupción.  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Setting a Data Breakpoint (native C++ only)  
+ Data breakpoints break execution when a value that is stored at a specified memory address changes. If the value is read but not changed, execution doesn't break. To set data breakpoints, the debugger must be in break mode.  
   
-1.  Empiece a depurar la aplicación y espere hasta que se alcance un punto de interrupción. En el menú **Depurar**, elija **Nuevo punto de interrupción\/Punto de interrupción de datos** \(o abra la ventana **Puntos de interrupción** y elija **Nuevo\/Punto de interrupción de datos**.  
+1.  Start debugging the application, and wait until a breakpoint is reached. On the **Debug** menu, choose **New Breakpoint > Data Breakpoint** (or open the **Breakpoints** window and choose **New > Data Breakpoint**.  
   
-2.  En el cuadro **Dirección**, escriba una dirección de la memoria o una expresión que se evalúe como una dirección de memoria. Por ejemplo, escriba `&avar` para que se produzca una interrupción cuando cambie el contenido de la variable `avar`.  
+2.  In the **Address** box, type a memory address or an expression that evaluates to a memory address. For example, type `&avar` to break when the contents of the variable `avar` changes.  
   
-3.  En el desplegable **Recuento de bytes**, seleccione el número de bytes que desea que el depurador inspeccione. Por ejemplo, si selecciona **4**, el depurador inspeccionará cuatro bytes a partir de `&avar` e interrumpirá la ejecución si alguno de esos bytes cambia de valor.  
+3.  In the **Byte Count** dropdown, select the number of bytes you want the debugger to watch. For example, if you select **4**, the debugger will watch the four bytes starting at `&avar` and break if any of those bytes change value.  
   
- Tenga en cuenta que los puntos de interrupción de datos dependen de la aplicabilidad de direcciones de memoria específicas.  
+ Keep in mind that data breakpoints depend on the applicability of specific memory addresses.  
   
--   Las direcciones de las variables cambian de una sesión de depuración a la siguiente. Por esta razón, los puntos de interrupción de datos se deshabilitan automáticamente a la finalización de cada sesión de depuración.  
+-   The address of a variable changes from one debugging session to the next. Data breakpoints are automatically disabled at the end of each debugging session.  
   
--   Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si se establece un punto de interrupción de datos en una variable local, se recomienda quitarlo o deshabilitarlo antes de que finalice la función.  
+-   If you set a data breakpoint on a local variable, the breakpoint remains enabled when the function ends, but the memory address is no longer applicable, and the behavior of the breakpoint is unpredictable. If you set a data breakpoint on a local variable, you should remove or disable the breakpoint before the function ends.  
   
- Los puntos de interrupción de datos no funcionan en estas condiciones:  
+ Data breakpoints don't work under these conditions:  
   
--   Si un proceso que no se está depurando escribe en la ubicación de la memoria.  
+-   A process that is not being debugged writes to the memory location  
   
--   Si la ubicación de la memoria se comparte entre dos o más procesos.  
+-   The memory location is shared between two or more processes  
   
--   Si la ubicación de la memoria se actualiza dentro del kernel. Por ejemplo, si se pasa memoria a la función `ReadFile` de Windows de 32 bits, la memoria se actualizará desde el modo kernel y el depurador no interrumpirá su ejecución en la escritura de memoria.  
+-   The memory location is updated within the kernel. For example, if memory is passed to the 32-bit Windows `ReadFile` function, the memory will be updated from kernel mode and the debugger doesn't break on the memory write.  
   
-## Establecer un punto de interrupción con una dirección de memoria \(solo en C\+\+ nativo\)  
- También puede usar la dirección de un objeto para establecer un punto de interrupción en un método llamado en una instancia específica de una clase.  Por ejemplo:  
+## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Setting a Breakpoint with a Memory Address (native C++ only)  
+ You can also use the address of an object to set a breakpoint on a method called on a specific instance of a class.  Here's an example:  
   
- Por ejemplo, dado un objeto de tipo `my_class` con la dirección, puede establecer un punto de interrupción de función en un método denominado  `my_method` llamado desde esa instancia.  
+ For example, given an object of type `my_class` with the address, you can set a function breakpoint on a method named `my_method` called from that instance.  
   
-1.  Establezca un punto de interrupción en algún lugar después de crear una instancia de dicha instancia de clase.  
+1.  Set a breakpoint somewhere after that instance of the class is instantiated.  
   
-2.  Busque la dirección de la instancia \(digamos que es `0xcccccccc`\).  
+2.  Find the address of the instance (we'll say it's `0xcccccccc`).  
   
-3.  Haga clic en **Depurar \/ Nuevo punto de interrupción \/ Punto de interrupción de función** \(o **ALT \+ F9, B**\).  
+3.  Click **Debug > New Breakpoint > Function Breakpoint** (or **ALT + F9, B**).  
   
-4.  Agregue el siguiente texto para el cuadro **Nombre de la función**:  
+4.  Add the following text to the **Function Name** box:  
   
-    ```cpp  
+    ```C++  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Administrar puntos de interrupción  
- En la ventana **Puntos de interrupción** \(**Depurar\/Ventanas\/Puntos de interrupción** o **CTRL\+ALT\+B**\) se pueden ver todos los puntos de interrupción que se han establecido en la solución:  
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Managing Breakpoints  
+ You can use the **Breakpoints** window (**Debug > Windows > Breakpoints**, or **CTRL + ALT + B**) to see all the breakpoints you have set in your solution:  
   
- ![ventana Puntos de interrupción](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![Breakpoints window](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
- La ventana **Puntos de interrupción** proporciona una ubicación central desde la que administrar todos los puntos de interrupción, algo especialmente útil cuando se tiene una solución grande o un escenario de depuración complejo en el que los puntos de interrupción son muy importantes. Si es necesario guardar o compartir el estado y la ubicación de un conjunto de puntos de interrupción, estos puntos de interrupción solo se pueden exportar e importar desde la ventana **Puntos de interrupción**.  
+ The **Breakpoints** window gives you a central place to manage all your breakpoints, which can be especially helpful in a large solution or a complex debugging scenario where breakpoints are critical. If you need to save or share the state and location of a set of breakpoints, you can export and import breakpoints only from the **Breakpoints** window.  
   
-##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Puntos de interrupción avanzados  
+##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Advanced Breakpoints  
   
-## Condiciones de punto de interrupción  
- La definición de condiciones le permite controlar cuándo y dónde se ejecuta un punto de interrupción.  
+## <a name="breakpoint-conditions"></a>Breakpoint conditions  
+ You can control when and where a breakpoint executes by setting conditions.  
   
-1.  Haga clic con el botón derecho en el punto de interrupción o mantenga el puntero y elija el icono de configuración.  
+1.  Right-click the breakpoint, or hover over the breakpoint and choose the settings icon.  
   
-2.  En el menú contextual, seleccione **Condiciones**. Se abrirá la ventana **Configuración del punto de interrupción**:  
+2.  In the context menu, select **Conditions**. This opens the **Breakpoint Settings** window:  
   
- ![Configuración de punto de interrupción](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+ ![Breakpoint settings](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- Al activar la casilla **Condiciones**, la ventana se expande para mostrar los diferentes tipos de condiciones.  
+ When you check the **Conditions** box, the window expands to show the different kinds of conditions.  
   
- **Expresión condicional:** si se selecciona “Expresión condicional”, se pueden elegir dos condiciones, **Es true** y **Cuando cambie**. Elija **Es true** si desea interrumpir cuando la expresión se cumple o elija **Cuando cambie** si desea interrumpir cuando el valor de la expresión cambie.  
+ **Conditional Expression:** When you select Conditional Expression, you can then choose two conditions: **Is true** and **When changed**. Choose **Is true** if you want to break when the expression is satisfied, or choose **When changed** if you want to break when the value of the expression has changed.  
   
- En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` es **4**:  
+ In the following example we set the breakpoint to hit only when the value of `testInt` is **4**:  
   
- ![La condición del punto de interrupción es "true"](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+ ![Breakpoint condition is true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` cambia:  
+ In the following example we set the breakpoint to hit only when the value of `testInt` changes:  
   
- ![Punto de interrupción al modificar](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+ ![Breakpoint when changed](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- El comportamiento del campo “Cuando cambie” es diferente según el lenguaje de programación. Si elige **Cuando cambie** para el código nativo, el depurador no considerará la primera evaluación de la condición como cambio, por lo que no se visitará el punto de interrupción en la primera evaluación. Si elige **Cuando cambie** para el código administrado, se visitará el punto de interrupción en la primera evaluación después de seleccionar **Cuando cambie**.  
+ The behavior of the When changed field is different for different programming languages. If you choose **When changed** for native code, the debugger doesn't consider the first evaluation of the condition to be a change, so the breakpoint won't be hit on the first evaluation. If you choose **When changed** for managed code, he breakpoint is hit on the first evaluation after **When changed** is selected.  
   
- Si se establece una condición de punto de interrupción con una sintaxis no válida, aparecerá un mensaje de advertencia. Si se especifica una condición de punto de interrupción con una sintaxis válida pero una semántica no válida, aparecerá un mensaje de advertencia la primera vez que se visite el punto de interrupción. En ambos casos, el depurador interrumpirá la ejecución cuando se visite el punto de interrupción no válido. El punto de interrupción se omitirá únicamente si la condición es válida y se evalúa como `false`.  
+ If you set a breakpoint condition with invalid syntax, a warning message appears. If you specify a breakpoint condition with valid syntax but invalid semantics, a warning message appears the first time the breakpoint is hit. In either case, the debugger breaks execution when the invalid breakpoint is hit. The breakpoint is skipped only if the condition is valid and evaluates to `false`.  
   
- La condición puede ser cualquier expresión válida que reconozca el depurador. Para más información sobre las expresiones válidas, vea [Expresiones en el depurador](../debugger/expressions-in-the-debugger.md).  
+ The condition can be any valid expression that is recognized by the debugger. For more information about valid expressions, see [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
-## Usar identificadores de objeto en las condiciones de punto de interrupción \(C\# y F \#\)  
- Hay veces en las quiere observar el comportamiento de un objeto específico; por ejemplo, podría querer averiguar por qué se insertó un objeto más de una vez en una colección. En C\# y F\#, puede crear identificadores de objeto para instancias específicas de [tipos de referencia](/dotnet/csharp/language-reference/keywords/reference-types) y usarlos en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime \(CLR\) generan el identificador de objeto y lo asocian al objeto.  Para crear un identificador de objeto, haga lo siguiente:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Using Object IDs in Breakpoint Conditions (C# and F#)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to find out why an object was inserted more than once into a collection. In C# and F#, you can create object IDs for specific instances of [reference types](/dotnet/csharp/language-reference/keywords/reference-types) and use them in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  To create an object ID, do the following:  
   
-1.  Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  Inicie la depuración y cuando se detenga la ejecución en el punto de interrupción, busque el punto de interrupción en la ventana **Locales**, haga clic con el botón derecho en él y seleccione **Crear el identificador del objeto**.  
+2.  Start debugging, and when execution stops in the breakpoint, find the breakpoint in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-     Debería ver el símbolo **$** junto con un número en la ventana **Locales**. Este es el identificador del objeto.  
+     You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-3.  Agregue un nuevo punto de interrupción condicional en el punto que quiere investigar \(por ejemplo, cuando se agregue el objeto a la colección\).  
+3.  Add a new conditional breakpoint at the point you want to investigate, for example when the object is to be added to the collection.  
   
-4.  Use el identificador de objeto en el campo de expresión condicional. Por ejemplo, si hay una variable `item` que hace referencia al objeto que se agregará a la colección, tendría que poner **item \=\= $n**, donde **n** es el número de id. de objeto.  
+4.  Use the Object ID in the Conditional Expression field. For example, if there is a variable `item` referring to the object that is to be added to the collection, you would put **item == $n**, where **n** is the object ID number.  
   
-     La ejecución se interrumpirá en el punto cuando ese objeto se agregue a la colección.  
+     Execution will break at the point when that object is to be added to the collection.  
   
- Si más adelante quiere eliminar el identificador de objeto, haga clic con el botón derecho en la variable en la ventana **Locales** y seleccione **Eliminar el identificador del objeto**.  
+ If you later want to delete the object ID, you can right-click the variable in the **Locals** window and select **Delete Object ID**.  
   
- Tenga en cuenta que los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile como elemento no usado. Los identificadores de objeto solo son válidos para la sesión de depuración actual.  
+ Note that Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
-## Número de llamadas  
- Si sospecha que un bucle del código inicia un comportamiento erróneo después de cierto número de iteraciones, puede establecer un punto de interrupción para detener la ejecución tras un determinado número de llamadas a la línea de código asociado, en lugar de verse obligado a presionar repetidamente **F5** para alcanzar el nivel de iteración.  
+## <a name="hit-count"></a>Hit Count  
+ If you suspect that a loop in your code starts misbehaving after a certain number of iterations, you can set a breakpoint to stop execution after a specified number of hits to the to the associated line of code, rather than being forced to repeatedly press **F5** to reach the iteration level.  
   
- En la ventana **Configuración del punto de interrupción**, establezca la condición en **Número de llamadas**. A continuación, puede especificar el número de iteraciones. En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cada dos iteraciones:  
+ In the **Breakpoint Settings** window, set the condition to **Hit Count**. You can then specify the number of iterations. In the following example, we set the breakpoint to hit on every other iteration:  
   
- ![Número de puntos de interrupción alcanzados](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![Breakpoint hit count](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## Filtro  
- Puede restringir un punto de interrupción para que se active solo en los dispositivos especificados, o bien en los procesos y subprocesos especificados.  
+## <a name="filter"></a>Filter  
+ You can restrict a breakpoint to fire only on specified devices, or in specified processes and threads.  
   
- En la ventana **Configuración del punto de interrupción**, establezca la condición en **Filtro**. Escriba una o varias de las siguientes expresiones.  
+ In the **Breakpoint Setting**s window, set the condition to **Filter**. Enter one or more of the following expressions.  
   
--   MachineName \= "name"  
+-   MachineName = "name"  
   
--   ProcessId \= value  
+-   ProcessId = value  
   
--   ProcessName \= "name"  
+-   ProcessName = "name"  
   
--   ThreadId \= value  
+-   ThreadId = value  
   
--   ThreadName \= "name"  
+-   ThreadName = "name"  
   
- Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusulas con `&` \(AND\), `||` \(OR\), `!` \(NOT\) y paréntesis.  
+ Enclose string values in double quotes. You can combine clauses using `&` (AND), `||` (OR), `!` (NOT), and parentheses.  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento  
- Un punto de seguimiento es un punto de interrupción que imprime un mensaje en la ventana de salida. Un punto de seguimiento puede actuar como una instrucción de seguimiento temporal en el lenguaje de programación.  
+##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Breakpoint Actions and Tracepoints  
+ A tracepoint is a breakpoint that prints a message to the Output window. A tracepoint can act like a temporary trace statement in the programming language.  
   
- En la ventana **Configuración del punto de interrupción**, active la casilla **Acciones**. En el grupo **Acción**, elija **Registrar un mensaje en la ventana de salida**. Puede imprimir una cadena genérica, como **Esto es una prueba**. Para incluir el valor de una variable o expresión, enciérrela entre llaves.  
+ In the **Breakpoint Settings** window, check the **Actions** box. Choose **Log a message to Output window** in the **Action** group. You can print a generic string, such as **this is a test**. To include the value of a variable or expression, enclose it in curly braces.  
   
- Para interrumpir la ejecución cuando se alcanza el punto de seguimiento, desactive la casilla **Continuar la ejecución**. Si se activa **Continuar la ejecución**, la ejecución no se detiene. En ambos casos, se imprime el mensaje.  
+ To break execution when the tracepoint is hit, clear the **Continue Execution** check box. When **Continue Execution** is checked, execution is not halted. In both cases, the message is printed.  
   
- Puede usar las siguientes palabras clave especiales en el **Mensaje**.  
+ You can use the following special keywords in the **Message**.  
   
 |||  
 |-|-|  
-|**$ADDRESS**|Instrucción actual|  
-|**$CALLER**|Nombre de la función de llamada|  
-|**$CALLSTACK**|Pila de llamadas|  
-|**$FUNCTION**|Nombre de la función actual|  
-|**$PID**|Identificador de proceso|  
-|**$PNAME**|Nombre del proceso|  
-|**$TID**|Identificador del subproceso|  
-|**$TNAME**|Nombre del subproceso|  
+|**$ADDRESS**|Current instruction|  
+|**$CALLER**|Calling function name|  
+|**$CALLSTACK**|Call stack|  
+|**$FUNCTION**|Current function name|  
+|**$PID**|Process id|  
+|**$PNAME**|Process name|  
+|**$TID**|Thread id|  
+|**$TNAME**|Thread name|  
 |**$TICK**||  
 |**$TNAME**||  
   
-##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etiquetas de puntos de interrupción  
- Las etiquetas de punto de interrupción solo se utilizan en la ventana **Puntos de interrupción** para ordenar y filtrar la lista de puntos de interrupción. Para agregar una etiqueta a un punto de interrupción, elija la fila del punto de interrupción y elija **Etiqueta** en el menú contextual.  
+##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Breakpoint labels  
+ Breakpoint labels are used only in the **Breakpoints** window to sort and filter the list of breakpoints. To add a label to a breakpoint, choose the breakpoint row and then choose **Label** on the context menu.  
   
-## Exportar e importar puntos de interrupción  
- Los puntos de interrupción se pueden exportar a un archivo XML; para ello, haga clic con el botón derecho en el punto de interrupción y seleccione **Exportar**. El archivo se guarda de forma predeterminada en el directorio de la solución. Para importar puntos de interrupción, abra la ventana **Puntos de interrupción** \(**CTRL\+ALT\+B**\) y, en la barra de herramientas, haga clic en la flecha que apunta a la derecha \(la información sobre herramientas es **Importar puntos de interrupción de un archivo**\).  
+## <a name="export-and-import-breakpoints"></a>Export and Import Breakpoints  
+ You can export a breakpoint to an XML file by right-clicking on the breakpoint and selecting **Export**. The file is saved by default in the solution directory. To import breakpoints, open the **Breakpoints** window (**CTRL + ALT + B**) and on the toolbar click the right-pointing arrow (the tooltip is **Import breakpoints from a file**).  
   
-## Solucionar problemas de puntos de interrupción  
+## <a name="troubleshoot-breakpoints"></a>Troubleshoot breakpoints  
   
-### Eliminé un punto de interrupción, pero continúa alcanzándose al iniciar de nuevo la depuración  
- Si eliminó un punto de interrupción durante la depuración, en algunos casos puede alcanzarse de nuevo la próxima vez que se inicia la depuración. Para dejar de encontrar este punto de interrupción, asegúrese de que todas las instancias del punto de interrupción se quitan de la ventana **Puntos de interrupción**.  
+### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>I deleted a breakpoint, but I continue to hit it when I start debugging again  
+ If you deleted a breakpoint while debugging, in some cases you may hit the breakpoint again the next time you start debugging. To stop hitting this breakpoint, make sure all the instances of the breakpoint are removed from the **Breakpoints** window.  
   
-### El depurador no puede encontrar la versión correcta del archivo de código fuente de un punto de interrupción  
- Si un archivo de código fuente ha cambiado y el código fuente ya no coincide con el código que se está depurando, es posible que el depurador busque el archivo de código fuente que corresponde a un punto de interrupción, aunque exista el archivo de código fuente.  
+### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>The debugger can't locate the correct version of the source file for a breakpoint  
+ If a source file has changed and the source no longer matches the code you are debugging, the debugger might locate the source file that corresponds to a breakpoint, even though the source file exists.  
   
-1.  Si desea que Visual Studio muestre el código fuente que no coincide con la versión que está depurando, elija **Depurar\/Opciones y configuración**. En la página **Depuración\/General**, desactive la opción **Es necesario que los archivos de código fuente coincidan con la versión original**.  
+1.  If you want Visual Studio to display source code that doesn't match the version you are debugging, choose **Debug > Options and Settings**. On the **Debugging/General** page, clear the **Require source files that exactly match the original version** option.  
   
-2.  También puede enlazar el punto de interrupción al archivo de código fuente. Seleccione el punto de interrupción y elija **Condiciones** en el menú contextual. En la ventana **Configuración del punto de interrupción**, active la casilla **Permitir que el código fuente sea distinto del de la versión original**.  
+2.  You can also bind the breakpoint to the source file. Select the breakpoint and choose **Conditions** on the context menu. Check **Allow the source code to be different from the original** in the **Breakpoint Settings** window.  
   
-### Los puntos de interrupción no funcionan en una DLL  
- No se puede establecer un punto de interrupción en un archivo de código fuente si el depurador no ha cargado la información de depuración correspondiente al módulo donde se encuentra el código. Los síntomas pueden incluir mensajes como **No se puede establecer el punto de interrupción**. El glifo del punto de interrupción de advertencia aparece en la posición del punto de interrupción. Sin embargo, estos puntos de interrupción de advertencia se convierten en puntos de interrupción reales cuando se carga el código. Para obtener más información sobre la carga de símbolos, vea [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+### <a name="breakpoints-dont-work-in-a-dll"></a>Breakpoints don't work in a DLL  
+ You cannot set a breakpoint in a source file when the debugger hasn't loaded the debug information for the module where the code is located. Symptoms may include messages such as **the breakpoint will not be set**. The Warning breakpoint glyph appears at the breakpoint location. However, these Warning breakpoints become actual breakpoints when the code is loaded. For more information about loading symbols, see [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## Vea también  
- [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)

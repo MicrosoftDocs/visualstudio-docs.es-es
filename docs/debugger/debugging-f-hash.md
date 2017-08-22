@@ -1,39 +1,56 @@
 ---
-title: "Depurar F# | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Depurar [F#]"
-  - "F#, depurar"
+title: Debugging F# | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Debugging [F#]
+- F#, debugging
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Depurar F# #
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a13622921ee85b95ee591abc89aafcc7feb77b25
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-La depuración de F\# es similar a la depuración de cualquier lenguaje administrado, con algunas excepciones:  
+---
+# <a name="debugging-f"></a>Debugging F#
+Debugging F# is similar to debugging any managed language, with a few exceptions:  
   
--   La ventana **Automático** no muestra variables de F\#.  
+-   The **Autos** window does not display F# variables.  
   
--   El modo Editar y Continuar no se admite en F\#.  Es posible editar código de F\# durante una sesión de depuración pero se debería evitar.  Dado que los cambios de código no se aplican durante la sesión de depuración, si se realizan cambios en el código de F\# durante la depuración, el código fuente no se corresponderá con el código objeto de la depuración.  
+-   Edit and Continue is not supported for F#. Editing F# code during a debugging session is possible but should be avoided. Because code changes are not applied during the debugging session, editing F# code during debugging will cause a mismatch between the source code and the code being debugged.  
   
--   El depurador no reconoce expresiones de F\#.  Para escribir una expresión en una ventana de depurador o un cuadro de diálogo durante la depuración de F\#, se debe convertir la expresión en la sintaxis de C\#.  Al convertir una expresión de F\# en C\#, no olvide que C\# usa \=\= como operador de comparación de igualdad y que F\# utiliza \=.  
+-   The debugger does not recognize F# expressions. To enter an expression in a debugger window or a dialog box during F# debugging, you must translate the expression into C# syntax. When you translate an F# expression into C#, make sure to remember that C# uses == as the comparison operator for equality and that F# uses a single =.  
   
-## Vea también  
- [Depurar código administrado](../debugger/debugging-managed-code.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)
+

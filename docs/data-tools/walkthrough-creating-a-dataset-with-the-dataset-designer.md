@@ -1,136 +1,150 @@
 ---
-title: "Tutorial: Crear un conjunto de datos con el Dise&#241;ador de Dataset | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], Diseñador de DataSet"
-  - "Diseñador de DataSet, tutoriales"
-  - "conjuntos de datos [Visual Basic], crear"
-  - "conjuntos de datos [Visual Basic], tutoriales"
-  - "esquemas XML, crear conjuntos de datos"
+title: 'Walkthrough: Creating a Dataset with the Dataset Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/02/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- datasets [Visual Basic], walkthroughs
+- XML schemas, creating datasets
+- data [Visual Studio], Dataset Designer
+- Dataset Designer, walkthroughs
+- datasets [Visual Basic], creating
 ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5f944d0611d9e0ce54730bb3583822c959f3a962
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
+
 ---
-# Tutorial: Crear un conjunto de datos con el Dise&#241;ador de Dataset
-En este tutorial creará un conjunto de datos mediante el **Diseñador de DataSet**.  Éste lo guiará a través del proceso de crear un proyecto nuevo y agregar un nuevo elemento **DataSet** a él.  Obtendrá información sobre cómo crear tablas de acuerdo con una base de datos sin utilizar un asistente.  
+# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Walkthrough: Creating a Dataset with the Dataset Designer
+In this walkthrough you will create a dataset using the **Dataset Designer**. It will take you through the process of creating a new project and adding a new **DataSet** item to it. You will learn how to create tables based on tables in a database without using a wizard.  
   
- Las tareas ilustradas en este tutorial incluyen:  
+ Tasks illustrated in this walkthrough include:  
   
--   Crear un nuevo proyecto de **Aplicación para Windows**.  
+-   Creating a new **Windows Application** project.  
   
--   Agregar un elemento de **Conjunto de datos** vacío al proyecto.  
+-   Adding an empty **DataSet** item to the project.  
   
--   Crear y configurar un origen de datos de la aplicación para generar conjuntos de datos con el **Diseñador de DataSet**.  
+-   Creating and configuring a data source in your application by building a dataset with the **Dataset Designer**.  
   
--   Crear una conexión a la base de datos Northwind en el **Explorador de servidores**.  
+-   Creating a connection to the Northwind database in **Server Explorer**.  
   
--   Crear tablas con TableAdapters del conjunto de datos basadas en tablas de la base de datos.  
+-   Creating tables with TableAdapters in the dataset based on tables in the database.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## Requisitos previos  
- Para completar las tareas de este tutorial, necesitará:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Acceso a la base de datos de ejemplo Northwind \(versión de SQL Server o Access\).  Para obtener más información, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database (SQL Server or Access version). For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Crear un nuevo proyecto de aplicación para Windows  
+## <a name="creating-a-new-windows-application-project"></a>Creating a New Windows Application Project  
   
-#### Para crear un proyecto de aplicación para Windows nuevo  
+#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows Application project  
   
-1.  Desde el menú **Archivo**, cree un nuevo proyecto.  
+1.  From the **File** menu, create a new project.  
   
-2.  Elija un lenguaje de programación en el panel **Tipos de proyecto**.  
+2.  Choose a programming language in the **Project Types** pane.  
   
-3.  Haga clic en **Aplicación para Windows** en el panel **Plantillas**.  
+3.  Click **Windows Application** in the **Templates** pane.  
   
-4.  Denomine el proyecto `DatasetDesignerWalkthrough` y, a continuación, haga clic en **Aceptar**.  
+4.  Name the project `DatasetDesignerWalkthrough`, and then click **OK**.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] agregará el proyecto al **Explorador de soluciones** y mostrará un nuevo formulario en el diseñador.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] will add the project to **Solution Explorer** and display a new form in the designer.  
   
-## Agregar un nuevo conjunto de datos a la aplicación  
+## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
   
-#### Para agregar un nuevo elemento del conjunto de datos al proyecto  
+#### <a name="to-add-a-new-dataset-item-to-the-project"></a>To add a new dataset item to the project  
   
-1.  En el menú **Proyecto**, haga clic en **Agregar nuevo elemento**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-     Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.  
+     The **Add New Item** dialog box appears.  
   
-2.  En el cuadro **Plantillas** del cuadro de diálogo **Agregar nuevo elemento**, haga clic en **DataSet**.  
+2.  In the **Templates** box of the **Add New Item** dialog box, click **DataSet**.  
   
-3.  Asigne al conjunto de datos el nombre `NorthwindDataset` y, a continuación, haga clic en **Agregar**.  
+3.  Name the Dataset `NorthwindDataset`, and then click **Add**.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] agregará un archivo denominado **NorthwindDataset.xsd** al proyecto y lo abrirá en el **Diseñador de DataSet**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] will add a file called **NorthwindDataset.xsd** to the project and open it in the **Dataset Designer**.  
   
-## Crear una conexión de datos en el Explorador de servidores  
+## <a name="creating-a-data-connection-in-server-explorer"></a>Creating a Data Connection in Server Explorer  
   
-#### Para crear una conexión a la base de datos Northwind  
+#### <a name="to-create-a-connection-to-the-northwind-database"></a>To create a connection to the Northwind database  
   
-1.  En el menú **Ver**, haga clic en el **Explorador de servidores**.  
+1.  On the **View** menu, click **Server Explorer**.  
   
-2.  En el **Explorador de servidores**, haga clic en el botón **Conectar con base de datos**.  
+2.  In **Server Explorer**, click the **Connect to Database** button.  
   
-3.  Crear una conexión a la base de datos de ejemplo Northwind.  
+3.  Create a connection to the Northwind sample database.  
   
     > [!NOTE]
-    >  Puede conectar a la versión SQL Server o Access de Northwind para este tutorial.  
+    >  You can connect to the SQL Server or Access version of Northwind for this walkthrough.  
   
-## Crear las tablas del conjunto de datos  
- En esta sección se explicará cómo agregar tablas al conjunto de datos.  
+## <a name="creating-the-tables-in-the-dataset"></a>Creating the Tables in the Dataset  
+ This section will explain how to add tables to the dataset.  
   
-#### Para crear la tabla Customers  
+#### <a name="to-create-the-customers-table"></a>To create the Customers table  
   
-1.  Expanda la conexión de datos que creó en el **Explorador de servidores** y, a continuación, expanda el nodo **Tablas**.  
+1.  Expand the data connection you created in **Server Explorer**, and then expand the **Tables** node.  
   
-2.  Arrastre la tabla **Customers** desde el **Explorador de servidores** al **Diseñador de DataSet**.  
+2.  Drag the **Customers** table from **Server Explorer** onto the **Dataset Designer**.  
   
-     Se agregan una tabla de datos **Customers** y **CustomersTableAdapter** al conjunto de datos.  
+     A **Customers** data table and **CustomersTableAdapter** are added to the dataset.  
   
-#### Para crear la tabla Orders  
+#### <a name="to-create-the-orders-table"></a>To create the Orders table  
   
--   Arrastre la tabla **Orders** desde el **Explorador de servidores** al **Diseñador de DataSet**.  
+-   Drag the **Orders** table from **Server Explorer** onto the **Dataset Designer**.  
   
-     Una tabla de datos **Orders**, **OrdersTableAdapter** y una relación de datos entre las tablas **Customers** y **Orders** se agregan al conjunto de datos.  
+     An **Orders** data table, **OrdersTableAdapter**, and data relation between the **Customers** and **Orders** tables are added to the dataset.  
   
-#### Para crear la tabla OrderDetails  
+#### <a name="to-create-the-orderdetails-table"></a>To create the OrderDetails table  
   
--   Arrastre la tabla **Order Details** desde el **Explorador de servidores** hasta el **Diseñador de DataSet**.  
+-   Drag the **Order Details** table from **Server Explorer** onto the **Dataset Designer**.  
   
-     Se agregan un tabla de datos **Order Details**, un **Order DetailsTableAdapter** y una relación de datos entre las tablas **Orders** y **Order Details** al conjunto de datos.  
+     An **Order Details** data table, **OrderDetailsTableAdapter**, and a data relation between the **Orders** and **OrderDetails** tables are added to the dataset.  
   
-## Pasos siguientes  
+## <a name="next-steps"></a>Next Steps  
   
-### Para agregar funcionalidad a la aplicación  
+### <a name="to-add-functionality-to-your-application"></a>To add functionality to your application  
   
--   Guarde el conjunto de datos.  
+-   Save the dataset.  
   
--   Seleccione elementos en la ventana **Orígenes de datos** y arrástrelos a un formulario.  Para obtener más información, vea [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+-   Select items in the **Data Sources** window and drag them onto a form. For more information, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
--   Agregar más consultas a los TableAdapters.  Para obtener más información, vea [Cómo: Crear consultas de TableAdapter](../data-tools/how-to-create-tableadapter-queries.md).  
+-   Add more queries to the TableAdapters. 
   
--   Agregar lógica de la validación a los eventos <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> de las tablas de datos en el conjunto de datos.  Para obtener más información, vea [Validar los datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
+-   Add validation logic to the <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> events of the data tables in the dataset. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
   
-## Vea también  
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Validating Data](validate-data-in-datasets.md)   
+ [Saving Data](../data-tools/saving-data.md)

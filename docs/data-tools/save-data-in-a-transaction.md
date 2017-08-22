@@ -1,169 +1,173 @@
 ---
-title: "Tutorial: Guardar datos en una transacci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], guardar en una transacción"
-  - "guardar datos"
-  - "System.Transactions (espacio de nombres)"
-  - "Transactions (espacio de nombres)"
-  - "transacciones, guardar datos"
+title: Save data in a transaction | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- System.Transactions namespace
+- data [Visual Studio], saving in a transaction
+- transactions, saving data
+- Transactions namespace
+- saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 caps.latest.revision: 15
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 098b9ecda175be055009b2ed2b826385123ede05
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
+
 ---
-# Tutorial: Guardar datos en una transacci&#243;n
-En este tutorial se muestra cómo guardar datos en una transacción usando el espacio de nombres <xref:System.Transactions>.  En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.  
+# <a name="save-data-in-a-transaction"></a>Save data in a transaction
+This walkthrough demonstrates how to save data in a transaction by using the <xref:System.Transactions> namespace. This example uses the `Customers` and `Orders` tables from the Northwind sample database.  
   
-## Requisitos previos  
- Este tutorial requiere acceso a la base de datos de ejemplo Northwind.  Para obtener información sobre la configuración de la base de datos de ejemplo Northwind, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/how-to-install-sample-databases.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ This walkthrough requires access to the Northwind sample database. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Crear una aplicación para Windows  
- El primer paso es crear una **Aplicación para Windows**.  
+## <a name="create-a-windows-application"></a>Create a Windows application  
+ The first step is to create a **Windows Application**.  
   
-#### Para crear el nuevo proyecto de Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  En Visual Studio, en el menú **Archivo** cree un nuevo **Proyecto**.  
+1.  In Visual Studio, on the **File** menu, create a new **Project**.  
   
-2.  Asigne al proyecto el nombre SavingDataInATransactionWalkthrough.  
+2.  Name the project **SavingDataInATransactionWalkthrough**.  
   
-3.  Seleccione **Aplicación para Windows** y haga clic en **Aceptar**.  Para obtener más información, vea [Aplicaciones cliente](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.  
+     The **SavingDataInATransactionWalkthrough** project is created and added to **Solution Explorer**.  
   
-## Crear un origen de datos de base de datos  
- En este paso se usa el [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png) para crear un origen de datos basado en las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.  
+## <a name="create-a-database-data-source"></a>Create a database data source  
+ This step uses the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) to create a data source based on the `Customers` and `Orders` tables in the Northwind sample database.  
   
-#### Para crear el origen de datos  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos**.  
+1.  On the **Data** menu, select**Show Data Sources**.  
   
-2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.  
+3.  On the **Choose a Data Source Type**screen, select **Database**, and then select **Next**.  
   
-4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:  
+4.  On the **Choose your Data Connection** screen do one of the following:  
   
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         O bien  
+         -or-  
   
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión** y cree una conexión con la base de datos Northwind.  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box and create a connection to the Northwind database.  
   
-5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.  
+5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
   
-6.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.  
+6.  On the **Save connection string to the Application Configuration file** screen, select **Next**.  
   
-7.  Expanda el nodo **Tables** en la página **Elija los objetos de base de datos**.  
+7.  On the **Choose your Database Objects** screen, expand the **Tables** node.  
   
-8.  Seleccione las tablas `Customers` y `Orders` y, a continuación, haga clic en **Finalizar**.  
+8.  Select the `Customers` and `Orders` tables, and then select **Finish**.  
   
-     **NorthwindDataSet** se agrega al proyecto y las tablas `Customers` y `Orders` aparecen en la ventana **Orígenes de datos**.  
+     The **NorthwindDataSet** is added to your project and the `Customers` and `Orders` tables appear in the **Data Sources** window.  
   
-## Agregar controles al formulario  
- Puede crear los controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** al formulario.  
+## <a name="addcontrols-to-the-form"></a>Addcontrols to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-#### Para crear controles enlazados a datos en el formulario de Windows Forms  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  
   
--   Expanda el nodo **Customers** en la ventana **Orígenes de datos**.  
+-   In the **Data Sources** window, expand the **Customers** node.  
   
--   Arrastre el nodo **Customers** principal desde la ventana **Orígenes de datos** a **Form1**.  
+-   Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
-     En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas \(<xref:System.Windows.Forms.BindingNavigator>\) para navegar por los registros.  En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
+     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
--   Arrastre el nodo **Orders** relacionado \(el nodo de tabla secundaria relacionado situado debajo de la columna **Fax**, no el nodo **Orders** principal\) en el formulario debajo de **CustomersDataGridView**.  
+-   Drag the related **Orders** node (not the main **Orders** node, but the related child-table node below the **Fax** column) onto the form below the **CustomersDataGridView**.  
   
-     En el formulario aparece una <xref:System.Windows.Forms.DataGridView>.  En la bandeja de componentes aparece un objeto [OrdersTableAdapter](../data-tools/tableadapter-overview.md) y un objeto <xref:System.Windows.Forms.BindingSource>.  
+     A <xref:System.Windows.Forms.DataGridView> appears on the form. An `OrdersTableAdapter` and <xref:System.Windows.Forms.BindingSource> appear in the component tray.  
   
-## Agregar una referencia al ensamblado System.Transactions  
- Las transacciones usan el espacio de nombres <xref:System.Transactions>.  De forma predeterminada, no se agrega una referencia de proyecto al ensamblado system.transactions, por lo que tiene que agregarla manualmente.  
+## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Add a reference to the System.Transactions assembly  
+ Transactions use the <xref:System.Transactions> namespace. A project reference to the system.transactions assembly is not added by default, so you need to manually add it.  
   
-#### Para agregar una referencia al archivo DLL System.Transactions  
+#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>To add a reference to the System.Transactions DLL file  
   
-1.  En el menú **Proyecto**, elija **Agregar referencia**.  
+1.  On the **Project** menu, select **Add Reference**.  
   
-2.  Seleccione **System.Transactions** \(en la pestaña **.NET**\) y haga clic en **Aceptar**.  
+2.  Select **System.Transactions** (on the **.NET** tab), and then select **OK**.  
   
-     Se agrega una referencia a **System.Transactions** al proyecto.  
+     A reference to **System.Transactions** is added to the project.  
   
-## Modificar el código del botón SaveItem de BindingNavigator  
- De forma predeterminada, para la primera tabla que se coloca en el formulario, se agrega código al evento `click` del botón de guardado en <xref:System.Windows.Forms.BindingNavigator>.  Para actualizar otras tablas, debe agregar el código manualmente.  Para este tutorial, refactorizamos el código de guardado existente a partir del controlador del evento de clic del botón de guardado, y creamos algunos métodos más para proporcionar funcionalidad de actualización específica según si la fila se debe agregar o eliminar.  
+## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Modifythe code in the BindingNavigator's SaveItem button  
+ For the first table dropped onto your form, code is added by default to the `click` event of the save button on the <xref:System.Windows.Forms.BindingNavigator>. You need to manually add code to update any additional tables. For this walkthrough, we refactor the existing save code out of the save button's click event handler.We also create a few more methods to provide specific update functionality based on whether the row needs to be added or deleted.  
   
-#### Para modificar el código de guardado generado automáticamente  
+#### <a name="to-modify-the-auto-generated-save-code"></a>To modify the auto-generated save code  
   
-1.  Haga doble clic en el botón **Guardar** en **CustomersBindingNavigator** \(el botón con el icono de disquete\).  
+1.  Select the **Save** button on the **CustomersBindingNavigator** (the button with the floppy disk icon).  
   
-2.  Reemplace el método `CustomersBindingNavigatorSaveItem_Click` con el código siguiente:  
+2.  Replace the `CustomersBindingNavigatorSaveItem_Click` method with the following code:  
   
-     [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
-     [!code-cs[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]  
+     [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]  [!code-cs[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]  
   
- El orden para conciliar los cambios a los datos relacionados es el siguiente:  
+ The order for reconciling changes to related data is as follows:  
   
--   Eliminar los registros secundarios \(en este caso, eliminar los registros de la tabla `Orders`\)  
+-   Delete child records. (In this case, delete records from the `Orders` table.)  
   
--   Eliminar los registros primarios \(en este caso, eliminar los registros de la tabla `Customers`\)  
+-   Delete parent records. (In this case, delete records from the `Customers` table.)  
   
--   Insertar registros primarios \(en este caso, insertar registros en la tabla `Customers`\)  
+-   Insert parent records.(In this case, insert records in the `Customers` table.)  
   
--   Insertar registros secundarios \(en este caso, insertar registros en la tabla `Orders`\)  
+-   Insert child records. (In this case, insert records in the `Orders` table.)  
   
-#### Para eliminar pedidos existentes  
+#### <a name="to-delete-existing-orders"></a>To delete existing orders  
   
--   Agregue el método siguiente `DeleteOrders` a **Form1**:  
+-   Add the following `DeleteOrders` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
-     [!code-cs[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]  
+     [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]  [!code-cs[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]  
   
-#### Para eliminar clientes existentes  
+#### <a name="to-delete-existing-customers"></a>To delete existing customers  
   
--   Agregue el método siguiente `DeleteCustomers` a **Form1**:  
+-   Add the following `DeleteCustomers` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
-     [!code-cs[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]  
+     [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]  [!code-cs[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]  
   
-#### Para agregar nuevos clientes  
+#### <a name="to-add-new-customers"></a>To add new customers  
   
--   Agregue el método siguiente `AddNewCustomers` a **Form1**:  
+-   Add the following `AddNewCustomers` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
-     [!code-cs[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]  
+     [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]  [!code-cs[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]  
   
-#### Para agregar nuevos pedidos  
+#### <a name="to-add-new-orders"></a>To add new orders  
   
--   Agregue el método siguiente `AddNewOrders` a **Form1**:  
+-   Add the following `AddNewOrders` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
-     [!code-cs[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]  
+     [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]  [!code-cs[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]  
   
-## Ejecutar la aplicación  
+## <a name="run-the-application"></a>Run the application  
   
-#### Para ejecutar la aplicación  
+#### <a name="to-run-the-application"></a>To run the application  
   
--   Presione F5 para ejecutar la aplicación.  
+-   Select **F5** to run the application.  
   
-## Vea también  
- [Transacciones y simultaneidad](../Topic/Transactions%20and%20Concurrency.md)   
- [Transacciones distribuidas de Oracle](../Topic/Oracle%20Distributed%20Transactions.md)   
- [Cómo: Guardar datos utilizando una transacción](../data-tools/save-data-by-using-a-transaction.md)   
- [Integración de System.Transactions con SQL Server](../Topic/System.Transactions%20Integration%20with%20SQL%20Server.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
