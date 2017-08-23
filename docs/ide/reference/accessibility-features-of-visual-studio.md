@@ -1,7 +1,7 @@
 ---
-title: "Características de accesibilidad de Visual Studio | Documentos de Microsoft"
+title: Accessibility Features of Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -12,59 +12,47 @@ helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
-caps.latest.revision: 15
 author: kempb
-ms.author: kempb
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 2fe12cb93b014a0ade1e860e1d4622abcc94e97e
-ms.openlocfilehash: b69e72a39ae91eeb92b710fc15b66ced13482d83
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 2f74439a5814d9939d9a4a3cd76cb430194375a6
 ms.contentlocale: es-es
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
-Además de las características y utilidades de accesibilidad de Windows, las características siguientes hacen que Visual Studio sea más accesible para personas con discapacidades:  
-  
--   Botón de barra de herramientas y ampliación de texto  
-  
--   Opciones de tamaño de texto en los editores  
-  
--   Personalización de colores en los editores  
-  
--   Personalización de métodos abreviados de teclado  
-  
--   Función Autocompletar para métodos y parámetros  
-  
+# <a name="accessibility-features-of-visual-studio"></a>Accessibility Features of Visual Studio
+> [!TIP]
+> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+
+In addition to accessibility features and utilities in Windows, the following features make Visual Studio more accessible for people with disabilities:  
+
+-   Toolbar button and text enlargement  
+
+-   Text size options in the editors  
+
+-   Color customization in the editors  
+
+-   Keyboard shortcut customization  
+
+-   Auto-completion for methods and parameters  
+
 > [!IMPORTANT]
->  La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](http://support.microsoft.com/ContactUs) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.  
-  
- Para obtener más información, consulta los temas siguientes:  
-  
--   [Cómo: Establecer opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)  
-  
--   [Cómo: Usar el teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
-  
--   [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
-  
--   [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)  
-  
--   [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
-  
-## <a name="see-also"></a>Vea también  
- [Servicios y productos de Microsoft para mejorar la accesibilidad](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+>  The information in this section applies only to users who license Microsoft products in the United States. If you obtained this product outside of the United States, you can use the subsidiary-information card that came with your software package, or you can visit the [Contact Us page for Microsoft Support](http://support.microsoft.com/ContactUs) and click the **Locate Microsoft Offices Worldwide** link (near the bottom of the page). This page provides a list of telephone numbers and addresses for Microsoft support services. You can contact your subsidiary to find out whether the types of products and services that are described in this section are available in your area. Information about accessibility is available in other languages, including Japanese and French.  
+
+ For more information, see the following topics:  
+
+-   [How to: Set IDE Accessibility Options](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+
+-   [How to: Use the Keyboard Exclusively](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+
+-   [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
+
+-   [Accessibility Tips and Tricks](../../ide/reference/accessibility-tips-and-tricks.md)  
+
+-   [How to: Change Fonts and Colors](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+
+## <a name="see-also"></a>See Also  
+ [Accessibility Products and Services from Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
 
