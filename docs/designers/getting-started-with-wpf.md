@@ -14,10 +14,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1f384f593129c4a0e879762d6e2e7f5944171af6
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: b1d99a132c6e29239862e9bd7629eb47a679138f
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Introducción a WPF
@@ -31,10 +31,11 @@ Windows Presentation Foundation (WPF) es un marco de interfaz de usuario que cre
 | Quiero comparar herramientas de diseño XAML... |[Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
 |Novedades de .NET|[Información general acerca de .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Elementos esenciales de aplicaciones](/dotnet/standard/application-essentials)<br /><br /> [Introducción a Visual C# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
 |Más información sobre WPF...|[Introducción a WPF](../designers/introduction-to-wpf.md)<br /><br /> [Información general sobre XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Controles](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Información general sobre el enlace de datos](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Enlace de datos WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
-|¿Es un desarrollador de Windows Forms?|[Controles de Windows Forms y controles equivalentes de WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls).aspx)<br /><br /> [Escenarios admitidos en WPF e interoperabilidad con Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
+|¿Es un desarrollador de Windows Forms?|[Controles de Windows Forms y controles equivalentes de WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Escenarios admitidos en WPF e interoperabilidad con Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>Vea también  
  [Biblioteca de clases (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/class-library-wpf)   
  [Información general sobre el desarrollo de aplicaciones](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
  [Página principal de la documentación de .NET](https://docs.microsoft.com/dotnet/index)   
  [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
