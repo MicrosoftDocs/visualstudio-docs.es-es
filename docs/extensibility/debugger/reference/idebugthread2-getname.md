@@ -1,52 +1,69 @@
 ---
-title: "IDebugThread2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::GetName"
-helpviewer_keywords: 
-  - "IDebugThread2::GetName"
+title: IDebugThread2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::GetName
+helpviewer_keywords:
+- IDebugThread2::GetName
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 80f030fda01fc5451960dda0bce5a9926080cecf
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-obtiene el nombre de un subproceso.  
+---
+# <a name="idebugthread2getname"></a>IDebugThread2::GetName
+Gets the name of a thread.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetName (   
-   BSTR* pbstrName  
+HRESULT GetName (   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName (   
-   out string pbstrName  
+```cs  
+int GetName (   
+   out string pbstrName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[out\]  Devuelve el nombre del subproceso.  
+ [out] Returns the name of the thread.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- El nombre recuperado es siempre un nombre que puede mostrar y este nombre describe el subproceso.  El nombre del subproceso podría derivarse de una arquitectura en tiempo de ejecución que admite los subprocesos con nombre, o puede ser un nombre derivado del motor de depuración.  Alternativamente, el nombre de subproceso puede establecer mediante una llamada al método de [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) .  
+## <a name="remarks"></a>Remarks  
+ The retrieved name is always a name that can be displayed and this name describes the thread. The thread name might be derived from a run-time architecture that supports named threads, or it might be a name derived from the debug engine. Alternatively, the name of the thread can be set by a call to the [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

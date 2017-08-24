@@ -1,100 +1,117 @@
 ---
-title: "PROCESS_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROCESS_INFO"
-helpviewer_keywords: 
-  - "Estructura PROCESS_INFO"
+title: PROCESS_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- PROCESS_INFO
+helpviewer_keywords:
+- PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# PROCESS_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a88bf476374e564902be8626758b610a7d846a8b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Contiene información sobre un proceso.  
+---
+# <a name="processinfo"></a>PROCESS_INFO
+Contains information about a process.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct tagPROCESS_INFO {   
-   PROCESS_INFO_FIELDS Fields;  
-   BSTR                bstrFileName;  
-   BSTR                bstrBaseName;  
-   BSTR                bstrTitle;  
-   AD_PROCESS_ID       ProcessId;  
-   DWORD               dwSessionId;  
-   BSTR                bstrAttachedSessionName;  
-   FILETIME            CreationTime;  
-   PROCESS_INFO_FLAGS  Flags;  
+typedef struct tagPROCESS_INFO {   
+   PROCESS_INFO_FIELDS Fields;  
+   BSTR                bstrFileName;  
+   BSTR                bstrBaseName;  
+   BSTR                bstrTitle;  
+   AD_PROCESS_ID       ProcessId;  
+   DWORD               dwSessionId;  
+   BSTR                bstrAttachedSessionName;  
+   FILETIME            CreationTime;  
+   PROCESS_INFO_FLAGS  Flags;  
 } PROCESS_INFO;  
 ```  
   
-```c#  
-public struct PROCESS_INFO {   
-   public uint          Fields;  
-   public string        bstrFileName;  
-   public string        bstrBaseName;  
-   public string        bstrTitle;  
-   public AD_PROCESS_ID ProcessId;  
-   public uint          dwSessionId;  
-   public string        bstrAttachedSessionName;  
-   public FILETIME      CreationTime;  
-   public uint          Flags;  
+```cs  
+public struct PROCESS_INFO {   
+   public uint          Fields;  
+   public string        bstrFileName;  
+   public string        bstrBaseName;  
+   public string        bstrTitle;  
+   public AD_PROCESS_ID ProcessId;  
+   public uint          dwSessionId;  
+   public string        bstrAttachedSessionName;  
+   public FILETIME      CreationTime;  
+   public uint          Flags;  
 };  
 ```  
   
-## Members  
- Campos  
- Una combinación de marcadores de enumeración de [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifican se completan los campos.  
+## <a name="members"></a>Members  
+ Fields  
+ A combination of flags from the [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumeration that specify which fields are filled out.  
   
  bstrFileName  
- El nombre completo del proceso.  Equivalente a llamar al método de [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con el parámetro `GN_FILENAME`.  
+ The full path name of the process. Equivalent to calling the [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) method with the parameter `GN_FILENAME`.  
   
  bstrBaseName  
- El nombre de archivo y la extensión del proceso.  Equivalente a llamar al método de `IDebugProcess2::Getname` con el parámetro `GN_BASENAME`.  
+ The file name and extension of the process. Equivalent to calling the `IDebugProcess2::Getname` method with the parameter `GN_BASENAME`.  
   
  bstrTitle  
- El título del proceso, si existe.  Equivalente a llamar al método de `IDebugProcess2::Getname` con el parámetro `GN_TITLE`.  
+ The title of the process, if one exists. Equivalent to calling the `IDebugProcess2::Getname` method with the parameter `GN_TITLE`.  
   
  ProcessId  
- la estructura de [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) que identifica el proceso.  Equivalente a llamar al método de [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .  
+ The [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure that identifies the process. Equivalent to calling the [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) method.  
   
  dwSessionId  
- El identificador de la sesión de depuración que este proceso se ejecuta en.  
+ The identifier of the debug session that this process is running in.  
   
  bstrAttachedSessionName  
- El nombre asociado de la sesión.  Equivalente a llamar al método de [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .  
+ The attached session name. Equivalent to calling the [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) method.  
   
  CreationTime  
- El tiempo que el proceso se ha creado.  
+ The time the process was created.  
   
- Marcadores  
- Una combinación de marcadores de enumeración de [PROCESS\_INFO\_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) que especifican las propiedades del proceso.  
+ Flags  
+ A combination of flags from the [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) enumeration that specify properties of the process.  
   
-## Comentarios  
- Esta estructura se pasa al método de [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) donde se completa.  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) method where it is filled in.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
- [PROCESS\_INFO\_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
+ [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)   
  [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)   
  [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Aislar el código en pruebas con Microsoft Fakes | Microsoft Docs"
+title: Isolating Code Under Test with Microsoft Fakes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,82 +26,82 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3941968fa0e2e6205c94076f555c8366f009d4c0
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 934e3b35f095f949ad11ef73e4365169d1c3e2c3
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Aislar el código probado con Microsoft Fakes
-Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otras partes de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)*. Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.  
+# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolating Code Under Test with Microsoft Fakes
+Microsoft Fakes help you isolate the code you are testing by replacing other parts of the application with *stubs* or *shims*. These are small pieces of code that are under the control of your tests. By isolating your code for testing, you know that if the test fails, the cause is there and not somewhere else. Stubs and shims also let you test your code even if other parts of your application are not working yet.  
   
- Fakes tiene dos versiones:  
+ Fakes come in two flavors:  
   
--   El [código auxiliar](#stubs) reemplaza a una clase por un pequeño sustituto que implementa la misma interfaz.  Para utilizar código auxiliar, tiene que diseñar la aplicación para que cada componente dependa únicamente de interfaces y no de otros componentes. (Por "componente" se entiende una clase o grupo de clases diseñadas y actualizadas a la vez y que suelen estar contenidas en un ensamblado).  
+-   A [stub](#stubs) replaces a class with a small substitute that implements the same interface.  To use stubs, you have to design your application so that each component depends only on interfaces, and not on other components. (By "component" we mean a class or group of classes that are designed and updated together and typically contained in an assembly.)  
   
--   Una [corrección de compatibilidad (shim)](#shims) modifica el código compilado de la aplicación en tiempo de ejecución para que, en lugar de realizar una llamada de método especificada, ejecute el código shim que proporciona la prueba. Las correcciones de compatibilidad (shims) se pueden utilizar para reemplazar las llamadas a ensamblados que no se pueden modificar, como los ensamblados .NET.  
+-   A [shim](#shims) modifies the compiled code of your application at run time so that instead of making a specified method call, it runs the shim code that your test provides. Shims can be used to replace calls to assemblies that you cannot modify, such .NET assemblies.  
   
- ![Fakes reemplaza a otros componentes](../test/media/fakes-2.png "Fakes-2")  
+ ![Fakes replace other components](../test/media/fakes-2.png "Fakes-2")  
   
- **Requisitos**  
+ **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="choosing-between-stub-and-shim-types"></a>Elegir entre código auxiliar y corrección de compatibilidad (shim)  
- Normalmente, un proyecto de Visual Studio se consideraría un componente, porque esas clases se desarrollan y actualizan al mismo tiempo. Puede considerar el uso de código auxiliar y correcciones de compatibilidad (shims) para las llamadas que el proyecto realice a otros proyectos de la solución o a otros ensamblados a los que el proyecto haga referencia.  
+## <a name="choosing-between-stub-and-shim-types"></a>Choosing between stub and shim types  
+ Typically, you would consider a Visual Studio project to be a component, because you develop and update those classes at the same time. You would consider using stubs and shims for calls that the project makes to other projects in your solution, or to other assemblies that the project references.  
   
- Como directriz general, utilice código auxiliar para las llamadas dentro de la solución de Visual Studio y correcciones de compatibilidad (shims) para las llamadas a otros ensamblados a los que se hace referencia. El motivo es que, en su propia solución, es recomendable desacoplar los componentes definiendo las interfaces de la manera que el procesamiento con stub requiere. Sin embargo, los ensamblados externos, como System.dll, no se proporcionan normalmente con definiciones de interfaz independientes, por lo que en su lugar se deben utilizar correcciones de compatibilidad (shims).  
+ As a general guide, use stubs for calls within your Visual Studio solution, and shims for calls to other referenced assemblies. This is because within your own solution it is good practice to decouple the components by defining interfaces in the way that stubbing requires. But external assemblies such as System.dll typically are not provided with separate interface definitions, so you must use shims instead.  
   
- Otras consideraciones son:  
+ Other considerations are:  
   
- **Rendimiento.** Las correcciones de compatibilidad (shims) se ejecutan más lentamente porque reescriben el código en tiempo de ejecución. El código auxiliar no tiene esta sobrecarga de rendimiento y es tan rápido como los métodos virtuales.  
+ **Performance.** Shims run slower because they rewrite your code at run time. Stubs do not have this performance overhead and are as fast as virtual methods can go.  
   
- **Métodos estáticos, tipos sellados.** Solo se puede utilizar código auxiliar para implementar interfaces. Por consiguiente, los tipos de código auxiliar no pueden utilizarse para los métodos estáticos, métodos no virtuales, métodos virtuales sellados, métodos de tipos sellados, etcétera.  
+ **Static methods, sealed types.** You can only use stubs to implement interfaces. Therefore, stub types cannot be used for static methods, non-virtual methods, sealed virtual methods, methods in sealed types, and so on.  
   
- **Tipos internos.** El código auxiliar y las correcciones de compatibilidad (shims) se pueden usar con los tipos internos que se hacen accesibles mediante el atributo de ensamblado <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
+ **Internal types.** Both stubs and shims can be used with internal types that are made accessible by using the assembly attribute <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
- **Métodos privados.** Las correcciones de compatibilidad (shims) pueden reemplazar llamadas a métodos privados si todos los tipos en la firma de método están visibles. El código auxiliar solo puede reemplazar métodos visibles.  
+ **Private methods.** Shims can replace calls to private methods if all the types on the method signature are visible. Stubs can only replace visible methods.  
   
- **Interfaces y métodos abstractos.** El código auxiliar proporciona implementaciones de interfaces y métodos abstractos que se pueden utilizar en la prueba. Las correcciones de compatibilidad (shims) no pueden instrumentar interfaces y métodos abstractos, porque no tienen cuerpos de método.  
+ **Interfaces and abstract methods.** Stubs provide implementations of interfaces and abstract methods that can be used in testing. Shims can't instrument interfaces and abstract methods, because they don't have method bodies.  
   
- Por lo general, nosotros recomendamos que se utilicen tipos de código auxiliar para aislar las dependencias del código base. Esto se puede conseguir ocultando los componentes en interfaces. Los tipos de corrección de compatibilidad (shim) pueden utilizarse para aislar los componentes de terceros que no proporcionan API comprobables.  
+ In general, we recommend that you use stub types to isolate from dependencies within your codebase. You can do this by hiding the components behind interfaces. Shim types can be used to isolate from third-party components that do not provide a testable API.  
   
-##  <a name="stubs"></a> Introducción a los códigos auxiliares  
- Para obtener una descripción más detallada, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+##  <a name="stubs"></a> Getting started with stubs  
+ For a more detailed description, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Inyectar interfaces**  
+1.  **Inject interfaces**  
   
-     Para utilizar código auxiliar, tiene que escribir el código que desea probar de manera que no mencione clases en otro componente de la aplicación. Por "componente" se entiende una clase o clases que se desarrollan y se actualizan juntas, y que normalmente están contenidas en un proyecto de Visual Studio. Las variables y los parámetros que se deben declarar con interfaces e instancias de otros componentes deben pasarse en o crearse mediante un generador. Por ejemplo, si StockFeed es una clase de otro componente de la aplicación, se consideraría erróneo:  
+     To use stubs, you have to write the code you want to test in such a way that it does not explicitly mention classes in another component of your application. By "component" we mean a class or classes that are developed and updated together, and typically contained in one Visual Studio project. Variables and parameters should be declared by using interfaces and instances of other components should be passed in or created by using a factory. For example, if StockFeed is a class in another component of the application, then this would be considered bad:  
   
      `return (new StockFeed()).GetSharePrice("COOO"); // Bad`  
   
-     En su lugar, defina una interfaz que el otro componente pueda implementar y que también pueda implementar el código auxiliar con fines de evaluación:  
+     Instead, define an interface that can be implemented by the other component, and which can also be implemented by a stub for test purposes:  
   
-    ```c#  
+    ```cs  
     public int GetContosoPrice(IStockFeed feed)  
     { return feed.GetSharePrice("COOO"); }  
   
     ```  
   
-    ```vb#  
+    ```vb  
     Public Function GetContosoPrice(feed As IStockFeed) As Integer  
      Return feed.GetSharePrice("COOO")  
     End Function  
   
     ```  
   
-2.  **Agregar un ensamblado de Fakes**  
+2.  **Add Fakes Assembly**  
   
-    1.  En el Explorador de soluciones, expanda la lista de referencia del proyecto de prueba. Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** para ver la lista de referencia.  
+    1.  In Solution Explorer, expand the test project's reference list. If you are working in Visual Basic, you must choose **Show All Files** in order to see the reference list.  
   
-    2.  Seleccione la referencia al ensamblado donde se define la interfaz (por ejemplo IStockFeed). En el menú contextual de esta referencia, seleccione **Agregar ensamblado de Fakes**.  
+    2.  Select the reference to the assembly in which the interface (for example IStockFeed) is defined. On the shortcut menu of this reference, choose **Add Fakes Assembly**.  
   
-    3.  Recompilar la solución.  
+    3.  Rebuild the solution.  
   
-3.  En las pruebas, cree instancias de código auxiliar y proporcione código para sus métodos:  
+3.  In your tests, construct instances of the stub and provide code for its methods:  
   
-    ```c#  
+    ```cs  
     [TestClass]  
     class TestStockAnalyzer  
     {  
@@ -132,7 +132,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Class TestStockAnalyzer  
   
@@ -157,16 +157,16 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
     ```  
   
-     El toque mágico aquí lo pone la clase `StubIStockFeed`. Para cada interfaz del ensamblado al que se hace referencia, el mecanismo de Microsoft Fakes genera una clase de código auxiliar. El nombre de la clase de código auxiliar se deriva del nombre de la interfaz, con "`Fakes.Stub`" como prefijo y los nombres de los tipos de parámetros anexados.  
+     The special piece of magic here is the class `StubIStockFeed`. For every interface in the referenced assembly, the Microsoft Fakes mechanism generates a stub class. The name of the stub class is the derived from the name of the interface, with "`Fakes.Stub`" as a prefix, and the parameter type names appended.  
   
-     El código auxiliar también se genera para captadores y establecedores de propiedades, para los eventos y para métodos genéricos. Para más información, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+     Stubs are also generated for the getters and setters of properties, for events, and for generic methods. For more information, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Introducción a las correcciones de compatibilidad (shim)  
- (Para obtener una descripción más detallada, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)).  
+##  <a name="shims"></a> Getting started with shims  
+ (For a more detailed description, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
- Supongamos que el componente contiene las llamadas a `DateTime.Now`:  
+ Suppose your component contains calls to `DateTime.Now`:  
   
-```c#  
+```cs  
 // Code under test:  
     public int GetTheCurrentYear()  
     {  
@@ -175,19 +175,19 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
 ```  
   
- Durante las pruebas, desea aplicar una corrección de compatibilidad (shim) a la propiedad `Now` porque la versión real devuelve de forma inapropiada un valor diferente en cada llamada.  
+ During testing, you would like to shim the `Now` property, because the real version inconveniently returns a different value at every call.  
   
- Para usar correcciones de compatibilidad (shims) no tiene que modificar el código de aplicación o escribirlo de una manera determinada.  
+ To use shims, you don't have to modify the application code or write it a particular way.  
   
-1.  **Agregar un ensamblado de Fakes**  
+1.  **Add Fakes Assembly**  
   
-     En el Explorador de soluciones, abra las referencias del proyecto de prueba unitaria y seleccione la referencia al ensamblado que contiene el método que quiera imitar. En este ejemplo, la clase `DateTime` está en **System.dll**.  Para ver las referencias en un proyecto de Visual Basic, seleccione **Mostrar todos los archivos**.  
+     In Solution Explorer, open your unit test project's references and select the reference to the assembly that contains the method you want to fake. In this example, the `DateTime` class is in **System.dll**.  To see the references in a Visual Basic project, choose **Show All Files**.  
   
-     Seleccione **Agregar ensamblado de Fakes**.  
+     Choose **Add Fakes Assembly**.  
   
-2.  **Insertar una corrección de compatibilidad (shim) en ShimsContext**  
+2.  **Insert a shim in a ShimsContext**  
   
-    ```c#  
+    ```cs  
     [TestClass]  
     public class TestClass1  
     {   
@@ -220,7 +220,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Public Class TestClass1  
         <TestMethod()> _  
@@ -246,22 +246,22 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
     End Class  
     ```  
   
-     Los nombres de clase Shim se componen anteponiendo `Fakes.Shim` al nombre de tipo original. Los nombres de parámetro se anexan al nombre del método. (No es necesario agregar referencias de ensamblado a System.Fakes).  
+     Shim class names are made up by prefixing `Fakes.Shim` to the original type name. Parameter names are appended to the method name. (You don't have to add any assembly reference to System.Fakes.)  
   
- En el ejemplo anterior se utiliza una corrección de compatibilidad (shim) para un método estático. Para utilizar una corrección de compatibilidad (shim) para un método de instancia, escriba `AllInstances` entre el nombre del tipo y el nombre del método:  
+ The previous example uses a shim for a static method. To use a shim for an instance method, write `AllInstances` between the type name and the method name:  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
   
- (No hay ningún ensamblado "System.IO.Fakes" al que hacer referencia. El espacio de nombres lo genera el proceso de creación de correcciones de compatibilidad (shim), pero puede usar "using" o "Import" de la manera habitual).  
+ (There is no 'System.IO.Fakes' assembly to reference. The namespace is generated by the shim creation process. But you can use 'using' or 'Import' in the usual way.)  
   
- También puede crear correcciones de compatibilidad (shims) para instancias concretas, para constructores y para propiedades. Para más información, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
+ You can also create shims for specific instances, for constructors, and for properties. For more information, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   
-## <a name="in-this-section"></a>En esta sección  
- [Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
+## <a name="in-this-section"></a>In this section  
+ [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
   
- [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+ [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
- [Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+ [Code generation, compilation, and naming conventions in Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
 

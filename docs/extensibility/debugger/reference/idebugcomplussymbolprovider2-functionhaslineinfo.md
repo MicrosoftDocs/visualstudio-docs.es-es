@@ -1,50 +1,67 @@
 ---
-title: "IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "FunctionHasLineInfo"
-  - "IDebugComPlusSymbolProvider2::FunctionHasLineInfo"
+title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- FunctionHasLineInfo
+- IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugComPlusSymbolProvider2::FunctionHasLineInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f1a2aec84f8809b65caa40895c8bdc766c47d16a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Determina si el método especificado tiene información de línea.  
+---
+# <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
+Determines if the specified method has line information.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT FunctionHasLineInfo(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```cs  
 int FunctionHasLineInfo(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]  La dirección de depuración representada por una interfaz de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  esta dirección debe ser un METHOD\_ADDRESS.  
+ [in] The debug address that is represented by an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. This address must be a METHOD_ADDRESS.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE`.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns `S_FALSE`.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(  
@@ -83,5 +100,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

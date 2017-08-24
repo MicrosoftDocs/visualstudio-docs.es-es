@@ -1,51 +1,68 @@
 ---
-title: "IDebugAddress::GetAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAddress::GetAddress"
-helpviewer_keywords: 
-  - "IDebugAddress:GetAddress (método)"
+title: IDebugAddress::GetAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugAddress::GetAddress
+helpviewer_keywords:
+- IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# IDebugAddress::GetAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 7626226e7deffdfacf4b4ac435a0d0fd6a11691f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o contenedor.  
+---
+# <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
+Returns a structure describing an object and its location within its scope or container.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetAddress (  
-   DEBUG_ADDRESS * pAddress  
+   DEBUG_ADDRESS * pAddress  
 );  
 ```  
   
-```c#  
+```cs  
 int GetAddress(  
-   DEBUG_ADDRESS[] pAddress  
+   DEBUG_ADDRESS[] pAddress  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in, out\]  Una estructura de [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) se ha finalizado con este método.  
+ [in, out] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure that is filled in by this method.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- La estructura de [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) se pasa a este método, que a continuación la completa con la información adecuada.  Cómo se interpreta esta información depende del tipo de información devuelto y el propio controlador de símbolos.  Vea [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más información.  
+## <a name="remarks"></a>Remarks  
+ The [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure is passed to this method, which then fills it in with the appropriate information. How this information is interpreted depends on the kind of information returned and the symbol handler itself. See [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) for more details.  
   
-## Vea también  
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+## <a name="see-also"></a>See Also  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

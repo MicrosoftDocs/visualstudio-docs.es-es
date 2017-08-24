@@ -1,55 +1,72 @@
 ---
-title: "IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::RemoveAllSetExceptions"
-helpviewer_keywords: 
-  - "IDebugEngine2::RemoveAllSetExceptions"
+title: IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::RemoveAllSetExceptions
+helpviewer_keywords:
+- IDebugEngine2::RemoveAllSetExceptions
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::RemoveAllSetExceptions
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f3fafa5d1e9dfe0270a1f7841720f4a956fec685
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Quita la lista de excepciones que el IDE ha establecido para una arquitectura o un lenguaje específica del motor en tiempo de ejecución.  
+---
+# <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
+Removes the list of exceptions the IDE has set for a particular run-time architecture or language.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT RemoveAllSetExceptions(   
-   REFGUID guidType  
+HRESULT RemoveAllSetExceptions(   
+   REFGUID guidType  
 );  
 ```  
   
-```c#  
-int RemoveAllSetExceptions(   
-   ref Guid guidType  
+```cs  
+int RemoveAllSetExceptions(   
+   ref Guid guidType  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `guidType`  
- \[in\]  GUID para el idioma o el GUID del motor de depuración que es específico de una arquitectura en tiempo de ejecución.  
+ [in] Either the GUID for the language or the GUID for the debug engine that is specific to a run-time architecture.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Las excepciones quitadas con este método se establecen mediante llamadas anteriores al método de [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .  
+## <a name="remarks"></a>Remarks  
+ The exceptions removed by this method were set by earlier calls to the [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) method.  
   
- Para quitar una excepción concreta, llame al método de [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) .  
+ To remove a specific exception, call the [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)

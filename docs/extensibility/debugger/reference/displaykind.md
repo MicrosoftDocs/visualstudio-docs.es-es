@@ -1,27 +1,44 @@
 ---
-title: "DisplayKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "DisplayKind (enumeración)"
+title: DisplayKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# DisplayKind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 50b3c5f36aab03db18a974fe6fd3a7258ee4d0c7
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Muestra los valores válidos que representan los tipos de información de tomar de un objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) y de mostrar al usuario.  
+---
+# <a name="displaykind"></a>DisplayKind
+Enumerates the valid values that represent the kinds of information to take from an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object and display to the user.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_DisplayKind  
@@ -33,7 +50,7 @@ enum enum_DisplayKind
 typedef DWORD DisplayKind;  
 ```  
   
-```c#  
+```cs  
 public enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  
@@ -42,23 +59,23 @@ public enum enum_DisplayKind
 };  
 ```  
   
-#### Parámetros  
- DisplayKind\_Value  
- Valor del campo.  
+#### <a name="parameters"></a>Parameters  
+ DisplayKind_Value  
+ Value of the field.  
   
- DisplayKind\_Name  
- Nombre del campo.  
+ DisplayKind_Name  
+ Name of the field.  
   
- DisplayKind\_Type  
- tipo de campo.  
+ DisplayKind_Type  
+ Type of field.  
   
-## Requisitos  
- encabezado: Ee.h  
+## <a name="requirements"></a>Requirements  
+ Header: Ee.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)

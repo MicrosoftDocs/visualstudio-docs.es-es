@@ -1,67 +1,84 @@
 ---
-title: "MACHINE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MACHINE_INFO"
-helpviewer_keywords: 
-  - "Estructura MACHINE_INFO"
+title: MACHINE_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MACHINE_INFO
+helpviewer_keywords:
+- MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# MACHINE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0a2c09230aba1673cbcea0474cde33e74d7e8d26
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-describe un equipo determinado.  
+---
+# <a name="machineinfo"></a>MACHINE_INFO
+Describes a particular machine.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct tagMACHINE_INFO {   
-   MACHINE_INFO_FIELDS Fields;  
-   BSTR                bstrName;  
-   MACHINE_INFO_FLAGS  Flags;  
+typedef struct tagMACHINE_INFO {   
+   MACHINE_INFO_FIELDS Fields;  
+   BSTR                bstrName;  
+   MACHINE_INFO_FLAGS  Flags;  
 } MACHINE_INFO;  
 ```  
   
-```c#  
-public struct MACHINE_INFO {   
-   public uint   Fields;  
-   public string bstrName;  
-   public uint   Flags;  
+```cs  
+public struct MACHINE_INFO {   
+   public uint   Fields;  
+   public string bstrName;  
+   public uint   Flags;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Members  
  `Fields`  
- Una combinación de marcadores de enumeración de [MACHINE\_INFO\_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) que especifican se inicializan los campos de la estructura.  
+ A combination of flags from the [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumeration that specify which fields of the structure are initialized.  
   
  `bstrName`  
- el nombre de equipo.  Equivalente a [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
+ The machine name. Equivalent to calling [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
   
  `Flags`  
- Una combinación de marcadores de enumeración de [MACHINE\_INFO\_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) que describe los atributos del equipo.  
+ A combination of flags from the [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) enumeration describing the machine attributes.  
   
-## Comentarios  
- Esta estructura es devuelta por una llamada al método de [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) .  
+## <a name="remarks"></a>Remarks  
+ This structure is returned by a call to the [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) method.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MACHINE\_INFO\_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

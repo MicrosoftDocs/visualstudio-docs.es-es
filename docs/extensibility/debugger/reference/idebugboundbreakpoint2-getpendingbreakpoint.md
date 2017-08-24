@@ -1,55 +1,72 @@
 ---
-title: "IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::GetPendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugBoundBreakpoint2::GetPendingBreakpoint (método)"
-  - "GetPendingBreakpoint (método)"
+title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBoundBreakpoint2::GetPendingBreakpoint
+helpviewer_keywords:
+- IDebugBoundBreakpoint2::GetPendingBreakpoint method
+- GetPendingBreakpoint method
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugBoundBreakpoint2::GetPendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ecf3d8ce9c488cc7cac50127e32f7916757cdfb4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el punto de interrupción pendiente de que el punto de interrupción enlazado especificado se creó.  
+---
+# <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
+Gets the pending breakpoint from which the specified bound breakpoint was created.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBreakpoint  
+HRESULT GetPendingBreakpoint(   
+   IDebugPendingBreakpoint2** ppPendingBreakpoint  
 );  
 ```  
   
-```c#  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
+```cs  
+int GetPendingBreakpoint(   
+   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppPendingBreakpoint`  
- \[out\]  Devuelve el objeto de [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente que se utilizó para crear esta limita el punto de interrupción.  
+ [out] Returns the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object that represents the pending breakpoint that was used to create this bound breakpoint.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Un punto de interrupción pendiente se puede considerar como una colección de toda la información necesaria para enlazar un punto de interrupción al código que se puede aplicar a uno o a muchos programas.  
+## <a name="remarks"></a>Remarks  
+ A pending breakpoint can be thought of as a collection of all the necessary information needed to bind a breakpoint to code that can be applied to one or many programs.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CBoundBreakpoint` que expone la interfaz de [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CBoundBreakpoint` object that exposes the [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  
@@ -82,6 +99,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

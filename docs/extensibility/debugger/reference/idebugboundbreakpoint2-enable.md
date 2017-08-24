@@ -1,52 +1,69 @@
 ---
-title: "IDebugBoundBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "Enable (método)"
-  - "IDebugBoundBreakpoint2::Enable (método)"
+title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBoundBreakpoint2::Enable
+helpviewer_keywords:
+- Enable method
+- IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugBoundBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8eb5659933f1e04f7f88a8fbda01aaac3edf01ca
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Habilita o deshabilita el punto de interrupción.  
+---
+# <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
+Enables or disables the breakpoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```cs  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `fEnable`  
- \[in\]  Establece en cero \(`TRUE`\) a habilitar o cero \(`FALSE`\) para deshabilitar el punto de interrupción.  
+ [in] Set to non-zero (`TRUE`) to enable or to zero (`FALSE`) to disable the breakpoint.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_BP_DELETED` si establece el estado del objeto enlazado de punto de interrupción a `BPS_DELETED` \(parte de la enumeración de [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) \).  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CBoundBreakpoint` que expone la interfaz de [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CBoundBreakpoint` object that exposes the [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    
@@ -95,6 +112,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

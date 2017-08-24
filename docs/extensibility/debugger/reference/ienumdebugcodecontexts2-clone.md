@@ -1,51 +1,68 @@
 ---
-title: "IEnumDebugCodeContexts2::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugCodeContexts2::Clone"
-helpviewer_keywords: 
-  - "IEnumDebugCodeContexts2::Clone"
+title: IEnumDebugCodeContexts2::Clone | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugCodeContexts2::Clone
+helpviewer_keywords:
+- IEnumDebugCodeContexts2::Clone
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumDebugCodeContexts2::Clone
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 20eff1c37fd668fae4dd5bfdf77bbe4b800e02a0
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Devuelve una copia de la enumeración actual como un objeto independiente.  
+---
+# <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
+Returns a copy of the current enumeration as a separate object.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Clone(  
-   IEnumDebugCodeContexts2** ppEnum  
+   IEnumDebugCodeContexts2** ppEnum  
 );  
 ```  
   
-```c#  
+```cs  
 int Clone(  
-   out IEnumDebugCodeContexts2 ppEnum  
+   out IEnumDebugCodeContexts2 ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Devuelve una copia de esta enumeración como un objeto independiente.  
+ [out] Returns a copy of this enumeration as a separate object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- La copia de la enumeración tiene el mismo estado que el original cuando se llama a este método.  Sin embargo, la copia y estados original son independientes y se pueden cambiar individualmente.  
+## <a name="remarks"></a>Remarks  
+ The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

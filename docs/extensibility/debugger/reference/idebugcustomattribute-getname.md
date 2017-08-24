@@ -1,51 +1,68 @@
 ---
-title: "IDebugCustomAttribute::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetName"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetName"
+title: IDebugCustomAttribute::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomAttribute::GetName
+helpviewer_keywords:
+- IDebugCustomAttribute::GetName
 ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCustomAttribute::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c06fe0979f2f95ad10d61787ffa3bdee45926555
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el nombre del atributo personalizado.  
+---
+# <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
+Gets the name of the custom attribute.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetName(   
-   BSTR* bstrName  
+HRESULT GetName(   
+   BSTR* bstrName  
 );  
 ```  
   
-```c#  
+```cs  
 int GetName(  
-   out string bstrName  
+   out string bstrName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `bstrName`  
- \[out\]  Devuelve una cadena que contiene el nombre del atributo personalizado.  
+ [out] Returns a string containing the name of the custom attribute.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- Denominado devuelto por este método corresponde al nombre de la clase utilizada para declarar el atributo.  Esto puede no corresponda exactamente el nombre de la clase de atributos personalizada propia mientras que C\# permite que el sufijo “atributo” la eliminación de un nombre de atributo personalizado cuando se utiliza en una declaración.  
+## <a name="remarks"></a>Remarks  
+ The named returned by this method corresponds to the name of the class used to declare the attribute. This may not exactly correspond to the name of the custom attribute class itself as C# allows the "Attribute" suffix to be dropped from a custom attribute name when it is used in a declaration.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

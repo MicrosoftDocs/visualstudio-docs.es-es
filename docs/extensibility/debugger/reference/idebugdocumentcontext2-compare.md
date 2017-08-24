@@ -1,67 +1,84 @@
 ---
-title: "IDebugDocumentContext2::Compare | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::Compare"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::Compare"
+title: IDebugDocumentContext2::Compare | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentContext2::Compare
+helpviewer_keywords:
+- IDebugDocumentContext2::Compare
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentContext2::Compare
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 38c1b6ea5a44a72a8c275bdff02946ea5bd8914c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Compara este contexto de documento a una matriz determinado de contextos de documento.  
+---
+# <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
+Compares this document context to a given array of document contexts.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Compare(   
-   DOCCONTEXT_COMPARE       compare,  
-   IDebugDocumentContext2** rgpDocContextSet,  
-   DWORD                    dwDocContextSetLen,  
-   DWORD*                   pdwDocContext  
+HRESULT Compare(   
+   DOCCONTEXT_COMPARE       compare,  
+   IDebugDocumentContext2** rgpDocContextSet,  
+   DWORD                    dwDocContextSetLen,  
+   DWORD*                   pdwDocContext  
 );  
 ```  
   
-```c#  
-int Compare(   
-   enum_ DOCCONTEXT_COMPARE compare,  
-   IDebugDocumentContext2[] rgpDocContextSet,  
-   uint                     dwDocContextSetLen,  
-   out uint                 pdwDocContext  
+```cs  
+int Compare(   
+   enum_ DOCCONTEXT_COMPARE compare,  
+   IDebugDocumentContext2[] rgpDocContextSet,  
+   uint                     dwDocContextSetLen,  
+   out uint                 pdwDocContext  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `compare`  
- \[in\]  Un valor de enumeración de [DOCCONTEXT\_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica el tipo de comparación.  
+ [in] A value from the [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) enumeration that specifies the type of comparison.  
   
  `rgpDocContextSet`  
- \[in\]  Matriz de los objetos de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) a los que representa los contextos de documento comparados.  
+ [in] An array of [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objects that represent the document contexts being compared to.  
   
  `dwDocContextSetLen`  
- \[in\]  La longitud de la matriz de contextos de documento a comparar.  
+ [in] The length of the array of document contexts to compare.  
   
  `pdwDocContext`  
- \[out\]  Devuelve el índice de la matriz de `rgpDocContextSet` del primer contexto de documento que satisface la comparación.  
+ [out] Returns the index into the `rgpDocContextSet` array of the first document context that satisfies the comparison.  
   
-## Valor devuelto  
- Devuelve `S_OK` si se encontró una coincidencia.  Devuelve `S_FALSE` si no se encuentra ninguna coincidencia.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ Returns `S_OK` if a match was found. Returns `S_FALSE` if no match was found. Otherwise, returns an error code.  
   
-## Comentarios  
- Los objetos de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que se pasan a la matriz se deben implementar por el mismo motor de depuración que implementa el objeto de `IDebugDocumentContext2` que es invitado; si no, la comparación no es válida.  
+## <a name="remarks"></a>Remarks  
+ The [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objects that are passed in the array must be implemented by the same debug engine that implements the `IDebugDocumentContext2` object being called on; otherwise, the comparison is not valid.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [DOCCONTEXT\_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)
+ [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)

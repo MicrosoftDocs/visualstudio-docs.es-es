@@ -1,43 +1,60 @@
 ---
-title: "Reordenar par&#225;metros de refactorizaci&#243;n (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.reorder"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactorización [C#], Reordenar parámetros"
-  - "Reordenar parámetros (refactorización) [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
+title: Reorder Parameters Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.csharp.refactoring.reorder
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Reorder Parameters
+- Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Reordenar par&#225;metros de refactorizaci&#243;n (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bf433e4bf8d32c39511bf043414a55ccb1a9d5bd
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-`Reorder Parameters` es una operación de refactorización de Visual C\# que proporciona una manera sencilla de cambiar el orden de los parámetros para los métodos, indizadores y delegados.  `Reorder Parameters` cambia la declaración y, en todas las ubicaciones donde se llama al miembro, los parámetros se reorganizan para reflejar el nuevo orden.  
+---
+# <a name="reorder-parameters-refactoring-c"></a>Reorder Parameters Refactoring (C#)
+`Reorder Parameters` is a Visual C# refactoring operation that provides an easy way to change the order of the parameters for methods, indexers, and delegates. `Reorder Parameters` changes the declaration, and at any locations where the member is called, the parameters are rearranged to reflect the new order.  
   
- Para realizar la operación `Reorder Parameters`, sitúe el cursor sobre o a un lado de un método, indizador o delegado.  Una vez colocado el cursor, invoque la operación `Reorder Parameters` usando el método abreviado de teclado o haciendo clic en el comando del menú contextual.  
+ To perform the `Reorder Parameters` operation, put the cursor on or next to a method, indexer, or delegate. When the cursor is in position, invoke the `Reorder Parameters` operation by pressing the keyboard shortcut, or by clicking the command from the shortcut menu.  
   
 > [!NOTE]
->  No puede reordenar el primer parámetro de un método de extensión.  
+>  You cannot reorder the first parameter in an extension method.  
   
-### Para reordenar parámetros  
+### <a name="to-reorder-parameters"></a>To reorder parameters  
   
-1.  Cree una biblioteca de clases denominada `ReorderParameters` y, a continuación, reemplace `Class1` por el ejemplo de código siguiente.  
+1.  Create a class library named `ReorderParameters`, and then replace `Class1` with the following example code.  
   
-    ```c#  
+    ```cs  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -56,26 +73,26 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Coloque el cursor en `MethodB`, en la declaración de método o la llamada al método.  
+2.  Place the cursor on `MethodB`, either in the method declaration or the method call.  
   
-3.  En el menú **Refactorizar**, haga clic en **Reordenar parámetros**.  
+3.  On the **Refactor** menu, click **Reorder Parameters**.  
   
-     Aparece el cuadro de diálogo **Reordenar parámetros**.  
+     The **Reorder Parameters** dialog box appears.  
   
-4.  En el cuadro de diálogo **Reordenar parámetros**, seleccione `int i` en la lista **Parámetros** y, a continuación, haga clic en el botón de la flecha hacia abajo.  
+4.  In the **Reorder Parameters** dialog box, select `int i` in the **Parameters** list, and then click the down button.  
   
-     Como alternativa, puede arrastrar `int i` después de `bool b` en la lista **Parámetros**.  
+     Alternatively, you can drag `int i` after `bool b` in the **Parameters** list.  
   
-5.  En el cuadro de diálogo **Reordenar parámetros**, haga clic en **Aceptar**.  
+5.  In the **Reorder Parameters** dialog box, click **OK**.  
   
-     Si selecciona la opción **Vista previa de los cambios de referencia** en el cuadro de diálogo **Reordenar parámetros**, aparecerá el cuadro de diálogo **Obtener vista previa de cambios \- Reordenar parámetros**.  Proporciona una vista previa de los cambios realizados en la lista de parámetros de `MethodB` en la firma y la llamada al método.  
+     If the **Preview reference changes** option is selected in the **Reorder Parameters** dialog box, the **Preview Changes - Reorder Parameters** dialog box will appear. It provides a preview of the changes in the parameter list for `MethodB` in both the signature and the method call.  
   
-    1.  Si aparece el cuadro de diálogo **Obtener vista previa de cambios \- Reordenar parámetros**, haga clic en **Aplicar**.  
+    1.  If the **Preview Changes - Reorder Parameters** dialog box appears, click **Apply**.  
   
-         En este ejemplo, se actualiza la declaración de método y todos los sitios de llamada al método `MethodB`.  
+         In this example, the method declaration and all the method call sites for `MethodB` are updated.  
   
-## Comentarios  
- Puede reordenar los parámetros de una declaración de método o una llamada al método.  Sitúe el cursor sobre la declaración de método o delegado o al lado de éstos, pero no en el cuerpo.  
+## <a name="remarks"></a>Remarks  
+ You can reorder parameters from a method declaration or a method call. Position the cursor on or next to the method or delegate declaration but not in the body.  
   
-## Vea también  
- [Refactorización \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

@@ -1,52 +1,69 @@
 ---
-title: "IDebugField::GetContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetContainer"
-helpviewer_keywords: 
-  - "IDebugField::GetContainer (método)"
+title: IDebugField::GetContainer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetContainer
+helpviewer_keywords:
+- IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugField::GetContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6131dcf58e111ba0ce8c7328ac4c3f63c76ff23b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-este método obtiene el contenedor de un campo.  
+---
+# <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
+This method gets the container of a field.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetContainer(   
-   IDebugContainerField** ppContainerField  
+HRESULT GetContainer(   
+   IDebugContainerField** ppContainerField  
 );  
 ```  
   
-```c#  
+```cs  
 int GetContainer(  
-   out IDebugContainerField ppContainerField  
+   out IDebugContainerField ppContainerField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppContainerField`  
- \[out\]  Devuelve el contenedor como se representa por la interfaz de [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .  
+ [out] Returns the container as represented by the [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Si este campo no tiene un contenedor, `ppContainerField` devuelto será un valor NULL.  
+## <a name="remarks"></a>Remarks  
+ If this field does not have a container, the returned `ppContainerField` will be a null value.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

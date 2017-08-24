@@ -1,66 +1,83 @@
 ---
-title: "IDebugFunctionObject::Evaluate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::Evaluate"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::Evaluate (método)"
+title: IDebugFunctionObject::Evaluate | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::Evaluate
+helpviewer_keywords:
+- IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugFunctionObject::Evaluate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: df6bce16c7fe6e3fd99de2b666bce00c819b3bdf
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Llama a la función y devuelve el valor resultante como object.  
+---
+# <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
+Calls the function and returns the resulting value as an object.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Evaluate(   
-   IDebugObject** ppParams,  
-   DWORD          dwParams,  
-   DWORD          dwTimeout,  
-   IDebugObject** ppResult  
+HRESULT Evaluate(   
+   IDebugObject** ppParams,  
+   DWORD          dwParams,  
+   DWORD          dwTimeout,  
+   IDebugObject** ppResult  
 );  
 ```  
   
-```c#  
+```cs  
 int Evaluate(  
-   IDebugObject[]   ppParams,   
-   IntPtr           dwParams,   
-   uint             dwTimeout,   
-   out IDebugObject ppResult  
+   IDebugObject[]   ppParams,   
+   IntPtr           dwParams,   
+   uint             dwTimeout,   
+   out IDebugObject ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppParams`  
- \[in\]  Matriz de los objetos de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representan los parámetros de entrada.  Cada uno de estos parámetros se creó con uno de los métodos de `Create` en la interfaz de [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
+ [in] An array of [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objects representing the input parameters. Each of these parameters was created with one of the `Create` methods in the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
  `dwParams`  
- \[in\]  El número de parámetros en la matriz de `ppParams` .  
+ [in] The number of parameters in the `ppParams` array.  
   
  `dwTimeout`  
- \[in\]  Especifica el tiempo máximo, en milisegundos, de esperar antes de volver de este método.  uso `INFINITE` de esperar indefinidamente.  
+ [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
   
  `ppResult`  
- \[out\]  Devuelve [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el valor de la función como un objeto.  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the value of the function as an object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- Este método configura y ejecuta una llamada a la función representada por el objeto de [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
+## <a name="remarks"></a>Remarks  
+ This method sets up and executes a call to the function represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) object.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

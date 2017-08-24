@@ -1,52 +1,69 @@
 ---
-title: "IDebugCustomAttribute::GetParentField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetParentField"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetParentField"
+title: IDebugCustomAttribute::GetParentField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomAttribute::GetParentField
+helpviewer_keywords:
+- IDebugCustomAttribute::GetParentField
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCustomAttribute::GetParentField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 382eadb5d43161b537731d78df91d8d32ea9a10f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el campo al que se asocia el atributo personalizado.  
+---
+# <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
+Gets the field to which the custom attribute is attached.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetParentField(   
-   IDebugField** ppField  
+HRESULT GetParentField(   
+   IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```cs  
 int GetParentField(  
-   out IDebugField ppField  
+   out IDebugField ppField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppField`  
- \[out\]  Devuelve el objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el campo al que se asocia el atributo personalizado.  
+ [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object that represents the field to which the custom attribute is attached.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- Llame al método de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) en el objeto devuelto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para determinar qué tipo de campo es el elemento primario.  
+## <a name="remarks"></a>Remarks  
+ Call the [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) method on the returned [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object to determine what kind of field the parent is.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

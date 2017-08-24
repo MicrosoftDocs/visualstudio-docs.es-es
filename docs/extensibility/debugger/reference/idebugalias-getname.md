@@ -1,48 +1,65 @@
 ---
-title: "IDebugAlias::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAlias::GetName"
-helpviewer_keywords: 
-  - "IDebugAlias::GetName (método)"
+title: IDebugAlias::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugAlias::GetName
+helpviewer_keywords:
+- IDebugAlias::GetName method
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugAlias::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e687f6858f2b6205f8f53ce17e2990ccf375d55b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-obtiene el nombre de este alias.  
+---
+# <a name="idebugaliasgetname"></a>IDebugAlias::GetName
+Gets the name of this alias.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetName(  
-   BSTR* pbstrName  
+HRESULT GetName(  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(  
-   out string pbstrName  
+```cs  
+int GetName(  
+   out string pbstrName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[out\]  Nombre del alias.  
+ [out] Name of the alias.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

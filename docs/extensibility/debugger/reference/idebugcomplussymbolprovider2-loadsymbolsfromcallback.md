@@ -1,28 +1,45 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "LoadSymbolsFromCallback"
-  - "IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback"
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- LoadSymbolsFromCallback
+- IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 96bcb0f1821a9e310f8599e7a6ed369421f4e1c4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Mediante el método de devolución de llamada especificado de símbolos de depuración de carga.  
+---
+# <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
+Loads debug symbols using the specified callback method.  
   
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT LoadSymbolsFromCallback(  
@@ -36,7 +53,7 @@ HRESULT LoadSymbolsFromCallback(
 );  
 ```  
   
-```c#  
+```cs  
 int LoadSymbolsFromCallback(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -48,33 +65,33 @@ int LoadSymbolsFromCallback(
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in] Identificador del dominio de aplicación.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- [in] Identificador único del módulo.  
+ [in] Unique identifier of the module.  
   
  `pUnkMetadataImport`  
- [in] Objeto que contiene los metadatos de símbolos.  
+ [in] Object that contains the symbol metadata.  
   
  `pUnkCorDebugModule`  
- [in] Objeto que implementa el [ICorDebugModule (interfaz)](ICorDebugModule%20Interface.xml).  
+ [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
- [in] Nombre del módulo.  
+ [in] Name of the module.  
   
  `bstrSymSearchPath`  
- [in] Ruta de acceso para buscar el archivo de símbolos.  
+ [in] Path to search for the symbol file.  
   
  `pCallback`  
- [in] Objeto que representa el método de devolución de llamada.  
+ [in] Object that represents the callback method.  
   
-## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
@@ -167,5 +184,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

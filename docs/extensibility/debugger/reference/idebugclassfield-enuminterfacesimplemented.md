@@ -1,52 +1,69 @@
 ---
-title: "IDebugClassField::EnumInterfacesImplemented | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumInterfacesImplemented"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumInterfacesImplemented (método)"
+title: IDebugClassField::EnumInterfacesImplemented | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugClassField::EnumInterfacesImplemented
+helpviewer_keywords:
+- IDebugClassField::EnumInterfacesImplemented method
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugClassField::EnumInterfacesImplemented
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e1e234620f89bf397eb7ec8470c57ecead52d48a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Crea un enumerador para las interfaces implementadas por esta clase.  
+---
+# <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
+Creates an enumerator for the interfaces implemented by this class.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumInterfacesImplemented(   
-   IEnumDebugFields** ppEnum  
+HRESULT EnumInterfacesImplemented(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```cs  
 int EnumInterfacesImplemented(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  devuelve un objeto de [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de interfaces implementadas.  Devuelve un valor NULL si no hay interfaces.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of interfaces implemented. Returns a null value if there are no interfaces.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK o devuelve S\_FALSE si no hay interfaces implementadas en esta clase.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no interfaces implemented on this class. Otherwise, returns an error code.  
   
-## Comentarios  
- cada elemento de la enumeración es un objeto de [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que describe una interfaz.  Observe que el código no administrado de [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] no utiliza interfaces como una entidad única de modo que este método siempre devuelve un valor NULL para el código no administrado de [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] .  
+## <a name="remarks"></a>Remarks  
+ Each element of the enumeration is an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object describing an interface. Note that unmanaged [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code does not use interfaces as a discrete entity so this method always returns a null value for unmanaged [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,46 +1,63 @@
 ---
-title: "IDebugIDECallback::DisplayMessage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugIDECallback::DisplayMessage"
+title: IDebugIDECallback::DisplayMessage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugIDECallback::DisplayMessage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f49cd40d8f936b316ee278efde198471c50ebc87
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Envía la cadena especificada del mensaje en la ventana de salida del depurador.  
+---
+# <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
+Sends the specified message string to the debugger's output window.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT DisplayMessage (  
-   LPCOLESTR szMessage  
+   LPCOLESTR szMessage  
 );  
 ```  
   
-```c#  
+```cs  
 int DisplayMessage (  
-   string szMessage  
+   string szMessage  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `szMessage`  
- \[in\]  Cadena de mensaje para mostrar en la ventana de salida del depurador.  
+ [in] Message string to display in the debugger's output window.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

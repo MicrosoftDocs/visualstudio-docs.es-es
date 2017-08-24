@@ -1,57 +1,74 @@
 ---
-title: "IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
+title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::GetServerFriendlyName
+helpviewer_keywords:
+- IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugCoreServer3::GetServerFriendlyName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a08b4f33384d6603d180cb190cb2d6f411da0281
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera un nombre descriptivo para el servidor.  
+---
+# <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
+Retrieves a friendly name for the server.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetServerFriendlyName(  
-   BSTR* pbstrName  
+HRESULT GetServerFriendlyName(  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetServerFriendlyName(  
-   out string pbstrName  
+```cs  
+int GetServerFriendlyName(  
+   out string pbstrName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[out\]  Devuelve un nombre descriptivo para el servidor.  
+ [out] Returns a friendly name for the server.  
   
 > [!NOTE]
->  El llamador es responsable de liberar la cadena.  
+>  The caller is responsible for freeing the string.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve el código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## Comentarios  
- Para los servidores usuario\-arrancados, el nombre devuelto por este método es el nombre completo del servidor.  Para los servidores auto\-arrancados, el nombre es el del equipo que el servidor se está ejecutando.  
+## <a name="remarks"></a>Remarks  
+ For user-launched servers, the name returned by this method is the full name of the server. For auto-launched servers, the name is that of the machine the server is running on.  
   
- Para un nombre orientado hacia la máquina, llame al método de [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .  
+ For a machine-oriented name, call the [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

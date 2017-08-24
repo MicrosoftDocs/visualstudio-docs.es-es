@@ -1,51 +1,68 @@
 ---
-title: "IEnumDebugProcesses2::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugProcesses2::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugProcesses2::GetCount"
+title: IEnumDebugProcesses2::GetCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugProcesses2::GetCount
+helpviewer_keywords:
+- IEnumDebugProcesses2::GetCount
 ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IEnumDebugProcesses2::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: be3a98507e253016a02d6880fdff2c951af7a684
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-devuelve el número de elementos en la enumeración.  
+---
+# <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
+Returns the number of elements in the enumeration.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetCount(  
-   ULONG* pcelt  
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```cs  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pcelt`  
- \[out\]  devuelve el número de elementos en la enumeración.  
+ [out] Returns the number of elements in the enumeration.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método no forma parte de la interfaz COM habitual de enumeración que especifica que sólo `Next`, `Clone`, `Skip`, y los métodos de `Reset` necesitan implementarse.  
+## <a name="remarks"></a>Remarks  
+ This method is not part of the customary COM enumeration interface which specifies that only the `Next`, `Clone`, `Skip`, and `Reset` methods need to be implemented.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

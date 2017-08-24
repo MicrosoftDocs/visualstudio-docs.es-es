@@ -1,57 +1,74 @@
 ---
-title: "IDebugModOpt::GetModOpts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugModOpt::GetModOpts"
-  - "GetModOpts"
+title: IDebugModOpt::GetModOpts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugModOpt::GetModOpts
+- GetModOpts
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugModOpt::GetModOpts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 03aaacda22c16e926c06dfec99a41c3f9c45f137
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera una lista de modificadores ref opcionales.  
+---
+# <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
+Retrieves a list of optional modifiers.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetModOpts(  
-   ULONG  celt,  
-   BSTR*  rgelt,  
-   ULONG* pceltFetched  
+   ULONG  celt,  
+   BSTR*  rgelt,  
+   ULONG* pceltFetched  
 );  
 ```  
   
-```c#  
+```cs  
 int GetModOpts(  
-   uint         celt,  
-   out string[] rgelt,  
-   ref uint     pceltFetched  
+   uint         celt,  
+   out string[] rgelt,  
+   ref uint     pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Número de elementos que se va a devolver.  
+ [in] Number of elements to be returned.  
   
  `rgelt`  
- \[out\]  Devuelve una matriz que contiene las opciones.  
+ [out] Returns an array that contains the options.  
   
  `pceltFetched`  
- \[in, out\]  El número de elementos devueltos en la matriz de `rgelt` .  
+ [in, out] Number of elements returned in the `rgelt` array.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

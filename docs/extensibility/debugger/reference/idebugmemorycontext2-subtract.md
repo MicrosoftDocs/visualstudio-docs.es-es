@@ -1,59 +1,76 @@
 ---
-title: "IDebugMemoryContext2::Subtract | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Subtract"
-helpviewer_keywords: 
-  - "Restar (método)"
-  - "IDebugMemoryContext2::Subtract (método)"
+title: IDebugMemoryContext2::Subtract | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryContext2::Subtract
+helpviewer_keywords:
+- Subtract method
+- IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugMemoryContext2::Subtract
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c6e517a8208a1e0cab5a1c39222e8d50be0e788b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Resta el valor especificado del contexto actual y devuelve un nuevo contexto.  
+---
+# <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
+Subtracts the specified value from the current context and returns a new context.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Subtract(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+HRESULT Subtract(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```cs  
 int Subtract(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dwCount`  
- \[in\]  El número de bytes de memoria disminuir.  
+ [in] The number of memory bytes to decrement.  
   
  `ppMemCxt`  
- \[out\]  devuelve un nuevo objeto de [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .  
+ [out] Returns a new [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Un contexto de memoria es una dirección, por lo que resta un valor desde una dirección genera una nueva dirección que requiera una nueva interfaz de contexto.  
+## <a name="remarks"></a>Remarks  
+ A memory context is an address, so subtracting a value from an address produces a new address that requires a new context interface.  
   
- Este método debe generar siempre un nuevo contexto, aunque la dirección resultante está fuera del espacio de memoria asociada con este contexto.  La única excepción a esto es si ninguna memoria se puede asignar para el nuevo contexto o si `ppMemCxt` es un valor NULL \(que es un error\).  
+ This method must always produce a new context, even if the resulting address is outside the memory space associated with this context. The only exception to this is if no memory can be allocated for the new context or if `ppMemCxt` is a null value (which is an error).  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

@@ -1,56 +1,73 @@
 ---
-title: "IDebugEnumField::GetStringFromValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetStringFromValue"
-helpviewer_keywords: 
-  - "IDebugEnumField::GetStringFromValue (método)"
+title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEnumField::GetStringFromValue
+helpviewer_keywords:
+- IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# IDebugEnumField::GetStringFromValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 00f11814f160afc63db19c744b7c3cecebea8c0e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método obtiene el nombre de la constante de enumeración con su valor.  
+---
+# <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
+This method obtains the name of the enumeration constant given its value.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetStringFromValue(  
-   ULONGLONG value,  
-   BSTR*     pbstrValue  
+   ULONGLONG value,  
+   BSTR*     pbstrValue  
 );  
 ```  
   
-```c#  
+```cs  
 int GetStringFromValue(  
-   ulong      value,  
-   out string pbstrValue  
+   ulong      value,  
+   out string pbstrValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `value`  
- \[in\]  El valor por el que se obtiene el nombre de la constante de la enumeración.  
+ [in] The value for which to get the name of the enumeration constant.  
   
  `pbstrValue`  
- \[out\]  devuelve el nombre de la constante de la enumeración.  
+ [out] Returns the name of the enumeration constant.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` si el valor no tiene ningún nombre asociado, o devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns `S_FALSE` if the value has no associated name, or returns an error code.  
   
-## Comentarios  
- Si hay más de un nombre asociado con el mismo valor, el nombre definido en la enumeración se devolverá.  
+## <a name="remarks"></a>Remarks  
+ If there is more than one name associated with the same value, the first name defined in the enumeration will be returned.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

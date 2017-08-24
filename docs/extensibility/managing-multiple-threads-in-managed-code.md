@@ -1,5 +1,5 @@
 ---
-title: "Cómo: administrar varios subprocesos en código administrado | Documentos de Microsoft"
+title: 'How to: Managing Multiple Threads in Managed Code | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,35 +26,36 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 477f57bbca9c49e7d7d13155fc1f6e55ee4667a8
-ms.openlocfilehash: 417dc6e5285859424dfa3b482a90f1a141cff163
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3fc0a6f7d7929bbea7a3779fbd329ea898986ee1
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="how-to-managing-multiple-threads-in-managed-code"></a>Cómo: administrar varios subprocesos en código administrado
-Si tiene una extensión VSPackage administrada que llama a métodos asincrónicos o tiene operaciones que se ejecutan en subprocesos distintos del subproceso de interfaz de usuario de Visual Studio, debe seguir las instrucciones que se indican a continuación. Puede mantener el subproceso de UI con capacidad de respuesta porque no necesita esperar al trabajo en otro subproceso complete. Puede hacer que el código sea más eficaz, porque no tiene subprocesos adicionales que ocupan espacio de pila y hacer más confiable y fácil de depurar, puesto que evita bloqueos e interbloqueos.  
+# <a name="how-to-managing-multiple-threads-in-managed-code"></a>How to: Managing Multiple Threads in Managed Code
+If you have a managed VSPackage extension that calls asynchronous methods or has operations that execute on threads other than the Visual Studio UI thread, you should follow the guidelines given below. You can keep the UI thread responsive because it doesn't need to wait for work on another thread to complete. You can make your code more efficient, because you don't have extra threads that take up stack space, and you can make it more reliable and easier to debug because you avoid deadlocks and hangs.  
   
- En general, puede cambiar del subproceso de interfaz de usuario a un subproceso diferente, o viceversa. Cuando el método vuelve, el subproceso actual es el subproceso desde el que se llamó originalmente.  
+ In general, you can switch from the UI thread to a different thread, or vice versa. When the method returns, the current thread is the thread from which it was originally called.  
   
 > [!IMPORTANT]
->  Las siguientes directrices usar las API en el <xref:Microsoft.VisualStudio.Threading>espacio de nombres, en concreto, la <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>clase.</xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> </xref:Microsoft.VisualStudio.Threading> Las API en este espacio de nombres son nuevas en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Puede obtener una instancia de un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>desde el <xref:Microsoft.VisualStudio.Shell.ThreadHelper>propiedad `ThreadHelper.JoinableTaskFactory`.</xref:Microsoft.VisualStudio.Shell.ThreadHelper> </xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>  
+>  The following guidelines use the APIs in the <xref:Microsoft.VisualStudio.Threading> namespace, in particular, the <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> class. The APIs in this namespace are new in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. You can get an instance of a <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> from the <xref:Microsoft.VisualStudio.Shell.ThreadHelper> property `ThreadHelper.JoinableTaskFactory`.  
   
-## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Cambiar desde el subproceso de interfaz de usuario a un subproceso en segundo plano  
+## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Switching from the UI Thread to a Background Thread  
   
-1.  Si se encuentra en el subproceso de interfaz de usuario y desea hacer el trabajo asincrónico en un subproceso en segundo plano, use Task.Run():  
+1.  If you are on the UI thread and you want to do asynchronous work on a background thread, use Task.Run():  
   
-    ```c#  
+    ```cs  
     await Task.Run(async delegate{  
-        // Now you’re on a separate thread.  
+        // Now you're on a separate thread.  
     });  
-    // Now you’re back on the UI thread.  
+    // Now you're back on the UI thread.  
   
     ```  
   
-2.  Si se encuentra en el subproceso de UI y desea bloquear de forma sincrónica mientras está realizando un trabajo en un subproceso en segundo plano, use la <xref:System.Threading.Tasks.TaskScheduler>propiedad `TaskScheduler.Default` en <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:</xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> </xref:System.Threading.Tasks.TaskScheduler>  
+2.  If you are on the UI thread and you want to synchronously block while you are performing work on a background thread, use the <xref:System.Threading.Tasks.TaskScheduler> property `TaskScheduler.Default` inside <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
-    ```c#  
+    ```cs  
     // using Microsoft.VisualStudio.Threading;  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  
         await TaskScheduler.Default;  
@@ -64,20 +65,20 @@ Si tiene una extensión VSPackage administrada que llama a métodos asincrónico
     });  
     ```  
   
-## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Cambiar de un subproceso en segundo plano al subproceso de interfaz de usuario  
+## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Switching from a Background Thread to the UI Thread  
   
-1.  Si se encuentra en un subproceso en segundo plano y desea hacer algo en el subproceso de interfaz de usuario, utilice <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:</xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>  
+1.  If you're on a background thread and you want to do something on the UI thread, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
-    ```c#  
+    ```cs  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
   
-     Puede usar el <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>para cambiar al subproceso de UI.</xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> Este método envía un mensaje al subproceso de interfaz de usuario con la continuación del método asincrónico actual y también se comunica con el resto del marco subproceso para establecer la prioridad correcta y evitar los interbloqueos.  
+     You can use the <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> method to switch to the UI thread. This method posts a message to the UI thread with the continuation of the current asynchronous method, and also communicates with the rest of the threading framework to set the correct priority and avoid deadlocks.  
   
-     Si el método de subproceso de segundo plano no es asincrónico y no se puede convertir asincrónico, puede usar el `await` sintaxis para cambiar al subproceso de UI ajustando el trabajo con <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, como en este ejemplo:</xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>  
+     If your background thread method isn't asynchronous and you can't make it asynchronous, you can still use the `await` syntax to switch to the UI thread by wrapping your work with <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, as in this example:  
   
-    ```c#  
+    ```cs  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  
         // Switch to main thread  
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  

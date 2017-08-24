@@ -1,53 +1,70 @@
 ---
-title: "IDebugProgramNode2::GetEngineInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::GetEngineInfo"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::GetEngineInfo"
+title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramNode2::GetEngineInfo
+helpviewer_keywords:
+- IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugProgramNode2::GetEngineInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c4b1effb81a710b917e8c8560288dbfaedb61ce4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el nombre y el identificador del motor \(DE\) de depuración que se ejecuta un programa.  
+---
+# <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
+Gets the name and identifier of the debug engine (DE) running a program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetEngineInfo (   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
+HRESULT GetEngineInfo (   
+   BSTR* pbstrEngine,  
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
+```cs  
 int GetEngineInfo(  
-   out string pbstrEngine,   
-   out Guid pguidEngine  
+   out string pbstrEngine,   
+   out Guid pguidEngine  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pbstrEngine`  
- \[out\]  Devuelve el nombre de running el programa \(C\+\+\-specific: esto puede ser un puntero NULL que indica que el llamador no está interesado en nombre del motor\).  
+ [out] Returns the name of the DE running the program (C++-specific: this can be a null pointer indicating that the caller is not interested in the name of the engine).  
   
  `pguidEngine`  
- \[out\]  Devuelve el identificador único global de running el programa \(C\+\+\-specific: esto puede ser un puntero NULL que indica que el llamador no interesan GUID de motor\).  
+ [out] Returns the globally unique identifier of the DE running the program (C++-specific: this can be a null pointer indicating that the caller is not interested in the GUID of the engine).  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

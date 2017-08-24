@@ -1,48 +1,65 @@
 ---
-title: "IDebugProperty2::GetParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::GetParent"
-helpviewer_keywords: 
-  - "IDebugProperty2::GetParent"
+title: IDebugProperty2::GetParent | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty2::GetParent
+helpviewer_keywords:
+- IDebugProperty2::GetParent
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProperty2::GetParent
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 9293fca7b4eaa4dc2db19772c2e44ffb6bb44185
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-obtiene la propiedad parent de una propiedad.  
+---
+# <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
+Gets the parent property of a property.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetParent (   
-   IDebugProperty2** ppParent  
+HRESULT GetParent (   
+   IDebugProperty2** ppParent  
 );  
 ```  
   
-```c#  
-int GetParent (   
-   out IDebugProperty2 ppParent  
+```cs  
+int GetParent (   
+   out IDebugProperty2 ppParent  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppParent`  
- \[out\]  Devuelve un objeto de [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa el elemento primario de la propiedad.  
+ [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the parent of the property.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Devuelve `S_GETPARENT_NO_PARENT` si no hay ningún elemento primario.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code. Returns `S_GETPARENT_NO_PARENT` if there is no parent.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,52 +1,69 @@
 ---
-title: "IDebugBinder3::GetTypeArgumentCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetTypeArgumentCount"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetTypeArgumentCount (método)"
+title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder3::GetTypeArgumentCount
+helpviewer_keywords:
+- IDebugBinder3::GetTypeArgumentCount method
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugBinder3::GetTypeArgumentCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1614c312c6aa307bd151cc76acbc843cd092a313
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método devuelve el número de tipos de argumento asociado a este objeto.  
+---
+# <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
+This method returns the number of argument types associated with this object.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetTypeArgumentCount(  
-   UINT* uCount  
+HRESULT GetTypeArgumentCount(  
+   UINT* uCount  
 );  
 ```  
   
-```c#  
-int GetTypeArgumentCount(  
-   out uint uCount  
+```cs  
+int GetTypeArgumentCount(  
+   out uint uCount  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `uCount`  
- \[out\]  Número de tipos de argumento asociado a este objeto.  
+ [out] Number of argument types associated with this object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- El valor devuelto por este método se puede usar para asignar una matriz con el método de [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) .  
+## <a name="remarks"></a>Remarks  
+ The value returned by this method can be used to allocate an array for use with the [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)

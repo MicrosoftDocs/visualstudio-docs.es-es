@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugAddresses::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugAddresses::Next"
-helpviewer_keywords: 
-  - "IEnumDebugAddresses::Next (método)"
+title: IEnumDebugAddresses::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugAddresses::Next
+helpviewer_keywords:
+- IEnumDebugAddresses::Next method
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IEnumDebugAddresses::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1c7cf35f4d6a6f61d93a0b5025f257f4fb685254
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método devuelve el siguiente conjunto de elementos de la enumeración.  
+---
+# <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
+This method returns the next set of elements from the enumeration.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG           celt,  
-   IDebugAddress** rgelt,  
-   ULONG*          pceltFetched  
+   ULONG           celt,  
+   IDebugAddress** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
-```c#  
+```cs  
 int Next(  
-   uint            celt,  
-   IDebugAddress[] rgelt,  
-   ref uint        pceltFetched  
+   uint            celt,  
+   IDebugAddress[] rgelt,  
+   ref uint        pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- \[in, out\]  Matriz de elementos de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) que se completan.  
+ [in, out] Array of [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elements to be filled in.  
   
  `pceltFetched`  
- \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

@@ -1,52 +1,69 @@
 ---
-title: "IDebugThread2::SetThreadName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::SetThreadName"
-helpviewer_keywords: 
-  - "IDebugThread2::SetThreadName"
+title: IDebugThread2::SetThreadName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::SetThreadName
+helpviewer_keywords:
+- IDebugThread2::SetThreadName
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::SetThreadName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e967427a5bcb3b89ea3d4c7de14f47e3566b1a30
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Establece el nombre del subproceso.  
+---
+# <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
+Sets the name of the thread.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetThreadName (   
-   LPCOLESTR pszName  
+HRESULT SetThreadName (   
+   LPCOLESTR pszName  
 );  
 ```  
   
-```c#  
-int SetThreadName (   
-   string pszName  
+```cs  
+int SetThreadName (   
+   string pszName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pszName`  
- \[in\]  El nombre del subproceso.  
+ [in] The name of the thread.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Para obtener el nombre del subproceso, llame al método de [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) .  
+## <a name="remarks"></a>Remarks  
+ To get the thread name, call the [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)

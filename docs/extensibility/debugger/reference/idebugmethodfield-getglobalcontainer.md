@@ -1,52 +1,69 @@
 ---
-title: "IDebugMethodField::GetGlobalContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::GetGlobalContainer"
-helpviewer_keywords: 
-  - "IDebugMethodField::GetGlobalContainer (método)"
+title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMethodField::GetGlobalContainer
+helpviewer_keywords:
+- IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugMethodField::GetGlobalContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d5365b6fbb5bc6f924957bd90e47ece607e6a92b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el contenedor global del método.  
+---
+# <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
+Gets the global container of the method.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetGlobalContainer(  
-   IDebugClassField** ppClass  
+   IDebugClassField** ppClass  
 );  
 ```  
   
-```c#  
+```cs  
 int GetGlobalContainer(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppClass`  
- \[out\]  Devuelve [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa el módulo en el que este método se define.  
+ [out] Returns an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) representing the module in which this method is defined.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- El objeto devuelto de [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) representa el módulo completo y es un objeto artificial, es decir, el módulo no tiene una clase real pero puede ser representado por un objeto de `IDebugClassField` , lo que detectans varios elementos de módulo son enumerados y.  
+## <a name="remarks"></a>Remarks  
+ The returned [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object represents the entire module and is an artificial object, that is, the module itself does not have an actual class but it can be represented by an `IDebugClassField` object, allowing the various elements of the module to be enumerated and discovered.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

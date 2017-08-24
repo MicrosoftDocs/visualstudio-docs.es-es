@@ -1,52 +1,69 @@
 ---
-title: "IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramPublisher2::UnpublishProgram"
-helpviewer_keywords: 
-  - "IDebugProgramPublisher2::UnpublishProgram"
+title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramPublisher2::UnpublishProgram
+helpviewer_keywords:
+- IDebugProgramPublisher2::UnpublishProgram
 ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugProgramPublisher2::UnpublishProgram
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: fffd194f2842516b15df2b66d89dab3c143b402f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Haga un programa no disponible para depurar.  
+---
+# <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
+Makes a program unavailable to be debugged.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT UnpublishProgram(  
-   IUnknown* pDebuggeeInterface  
+HRESULT UnpublishProgram(  
+   IUnknown* pDebuggeeInterface  
 );  
 ```  
   
-```c#  
-int UnpublishProgram(  
-   object pDebuggeeInterface  
+```cs  
+int UnpublishProgram(  
+   object pDebuggeeInterface  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pDebuggeeInterface`  
- \[in\]  Una interfaz de `IUnknown` programar.  Es el mismo valor proporcionado al método de [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e identifica el programa que se quita \(es decir, se utiliza como cookie\).  
+ [in] An `IUnknown` interface to the program. This is the same value supplied to the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method and uniquely identifies the program being removed (that is, it is used as a cookie).  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Para colocar un programa a disposición de los motores de depuración y el administrador de depuración de la sesión, utilice el método de [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .  
+## <a name="remarks"></a>Remarks  
+ To make a program available to the debug engines and session debug manager, use the [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

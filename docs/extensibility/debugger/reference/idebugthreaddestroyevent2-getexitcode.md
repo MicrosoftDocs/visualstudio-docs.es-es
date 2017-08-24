@@ -1,48 +1,65 @@
 ---
-title: "IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThreadDestroyEvent2::GetExitCode"
-helpviewer_keywords: 
-  - "IDebugThreadDestroyEvent2::GetExitCode"
+title: IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
+helpviewer_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThreadDestroyEvent2::GetExitCode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b502f82a408bfe032de27917505bc737da5ffb0e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el código de salida de un subproceso.  
+---
+# <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
+Gets the exit code for a thread.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetExitCode (   
-   DWORD* pdwExit  
+HRESULT GetExitCode (   
+   DWORD* pdwExit  
 );  
 ```  
   
-```c#  
-int GetExitCode (   
-   out uint pdwExit  
+```cs  
+int GetExitCode (   
+   out uint pdwExit  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pdwExit`  
- \[out\]  Devuelve el código de salida del subproceso.  
+ [out] Returns the thread's exit code.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

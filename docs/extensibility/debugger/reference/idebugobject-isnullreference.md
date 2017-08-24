@@ -1,51 +1,68 @@
 ---
-title: "IDebugObject::IsNullReference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::IsNullReference"
-helpviewer_keywords: 
-  - "IDebugObject::IsNullReference (método)"
+title: IDebugObject::IsNullReference | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject::IsNullReference
+helpviewer_keywords:
+- IDebugObject::IsNullReference method
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugObject::IsNullReference
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e43841d4cc991d2fee0631674aac705ddf386b1f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Comprueba si este objeto es una referencia nula.  
+---
+# <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
+Tests whether this object is a null reference.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT IsNullReference(   
-   BOOL* pfIsNull  
+HRESULT IsNullReference(   
+   BOOL* pfIsNull  
 );  
 ```  
   
-```c#  
+```cs  
 int IsNullReference(  
-   out int pfIsNull  
+   out int pfIsNull  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pfIsNull`  
- \[out\]  Devuelve cero \(`TRUE`\) si este objeto es una referencia nula; de lo contrario, devuelve cero \(`FALSE`\).  
+ [out] Returns non-zero (`TRUE`) if this object is a null reference; otherwise, returns zero (`FALSE`).  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- Una referencia nula significa un objeto vacío o un objeto a los que no se ha asignado.  
+## <a name="remarks"></a>Remarks  
+ A null reference means an empty object or an object that has not been assigned to.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

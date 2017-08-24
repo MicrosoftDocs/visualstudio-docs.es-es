@@ -1,58 +1,75 @@
 ---
-title: "IDebugBinder::ResolveRuntimeType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder::ResolveRuntimeType"
-helpviewer_keywords: 
-  - "IDebugBinder::ResolveRuntimeType (método)"
+title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder::ResolveRuntimeType
+helpviewer_keywords:
+- IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugBinder::ResolveRuntimeType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0b14c39a8f254342122e77c3f29fc1c454b377ab
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método determina el tipo en tiempo de ejecución de un objeto.  
+---
+# <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
+This method determines the run-time type of an object.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT ResolveRuntimeType(   
-   IDebugObject* pObject,  
-   IDebugField** ppResolved  
+HRESULT ResolveRuntimeType(   
+   IDebugObject* pObject,  
+   IDebugField** ppResolved  
 );  
 ```  
   
-```c#  
+```cs  
 int ResolveRuntimeType(  
-   IDebugObject     pObject,   
-   out IDebugField  ppResolved  
+   IDebugObject     pObject,   
+   out IDebugField  ppResolved  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pObject`  
- \[in\]  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que se resolverá.  
+ [in] The [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) to be resolved.  
   
  `ppResolved`  
- \[out\]  Devuelve el tipo de objeto como [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ [out] Returns the type of the object as an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- No se conoce el tipo en tiempo de ejecución de un objeto siempre en tiempo de compilación.  Por ejemplo, utilizando el polimorfismo, un argumento se puede pasar a una función como clase base, como una clase button.  El argumento real podría ser una clase derivada, como una clase de botón de radio.  
+## <a name="remarks"></a>Remarks  
+ The run-time type of an object is not always known at compile time. For example, using polymorphism, an argument can be passed to a function as its base class, such as a button class. The actual argument might be a derived class, such as a radio button class.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

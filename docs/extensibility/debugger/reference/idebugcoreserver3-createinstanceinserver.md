@@ -1,69 +1,86 @@
 ---
-title: "IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::CreateInstanceInServer"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::CreateInstanceInServer"
+title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::CreateInstanceInServer
+helpviewer_keywords:
+- IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCoreServer3::CreateInstanceInServer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b3dfdec89632fd5228801fb1f33f513b533505cc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Crea una instancia de un motor de depuración en el servidor.  
+---
+# <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
+Creates an instance of a debug engine on the server.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CreateInstanceInServer(  
-   LPCWSTR  szDll,  
-   WORD     wLangId,  
-   REFCLSID clsidObject,  
-   REFIID   riid,  
-   void**   ppvObject  
+HRESULT CreateInstanceInServer(  
+   LPCWSTR  szDll,  
+   WORD     wLangId,  
+   REFCLSID clsidObject,  
+   REFIID   riid,  
+   void**   ppvObject  
 );  
 ```  
   
-```c#  
+```cs  
 int CreateInstanceInServer(  
-   string     szDll,   
-   ushort     wLangID,   
-   ref Guid   clsidObject,   
-   ref Guid   riid,   
-   out IntPtr ppvObject  
+   string     szDll,   
+   ushort     wLangID,   
+   ref Guid   clsidObject,   
+   ref Guid   riid,   
+   out IntPtr ppvObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `szDll`  
- \[in\]  La ruta de acceso al archivo DLL que implementa el CLSID especificado en el parámetro de `clsidObject` .  Si es `NULL`, se llama a la función de `CoCreateInstance` de COM.  
+ [in] Path to the dll that implements the CLSID specified in the `clsidObject` parameter. If this is `NULL`, then COM's `CoCreateInstance` function is called.  
   
  `wLangId`  
- \[in\]  Configuración regional del motor de depuración.  Puede ser 0 si se llama al método de [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) .  
+ [in] Locale of the debug engine. This can be 0 if the [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) method should not be called.  
   
  `clsidObject`  
- \[in\]  El CLSID del motor de depuración a crear.  
+ [in] CLSID of the debug engine to create.  
   
  `riid`  
- \[in\]  Identificador de la interfaz de la interfaz específica a recuperar del objeto de clase.  
+ [in] Interface ID of the specific interface to retrieve from the class object.  
   
  `ppvObject`  
- \[out\]  interfaz de `IUnknown` de objeto con instancias.  Convierta o formulario este objeto a la interfaz deseada.  
+ [out] `IUnknown` interface from the instantiated object. Cast or marshal this object to the desired interface.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

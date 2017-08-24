@@ -1,28 +1,45 @@
 ---
-title: "IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "TypeArgumentCount"
-  - "IDebugGenericFieldInstance::TypeArgumentCount"
+title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- TypeArgumentCount
+- IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugGenericFieldInstance::TypeArgumentCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 05a73eaa509f2d15d3c51cb1816e11f1cac52635
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Devuelve al número de tipo en argumentos de parámetro para esta instancia.  
+---
+# <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
+Returns the number of type parameter arguments for this instance.  
   
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT TypeArgumentCount(  
@@ -30,21 +47,21 @@ HRESULT TypeArgumentCount(
 );  
 ```  
   
-```c#  
+```cs  
 int TypeArgumentCount(  
    ref uint pcArgs  
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pcArgs`  
- [entrada, salida] Número de argumentos de parámetro de tipo para esta instancia.  
+ [in, out] Number of type parameter arguments for this instance.  
   
-## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>Comentarios  
- Por ejemplo, si lista \< int>, este método devuelve 1 y, si lista \< int, float2 > este método devuelve 2. Este método devuelve 0 si no hay ningún argumento de tipo.  
+## <a name="remarks"></a>Remarks  
+ For example, if List\<int>, this method returns 1, and, if List\<int,float2> this method returns 2. This method returns 0 if there are no type arguments.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

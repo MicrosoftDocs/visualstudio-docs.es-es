@@ -1,57 +1,74 @@
 ---
-title: "MACHINE_INFO_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MACHINE_INFO_FLAGS"
-helpviewer_keywords: 
-  - "Enumeración MACHINE_INFO_FLAGS"
+title: MACHINE_INFO_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MACHINE_INFO_FLAGS
+helpviewer_keywords:
+- MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# MACHINE_INFO_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8904a029b57953e5cde3c5d1abd08f9889bcb2ba
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Se utiliza para describir un equipo.  
+---
+# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
+Used to describe a machine.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_MACHINE_INFO_FLAGS {   
-   MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
+enum enum_MACHINE_INFO_FLAGS {   
+   MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
 };  
 typedef DWORD MACHINE_INFO_FLAGS;  
 ```  
   
-```c#  
-public enum enum_MACHINE_INFO_FLAGS {   
-   MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
+```cs  
+public enum enum_MACHINE_INFO_FLAGS {   
+   MCIFLAG_TERMINAL_SERVICES_AVAILABLE = 0x00000001  
 };  
 ```  
   
-## Members  
- MCIFLAG\_TERMINAL\_SERVICES\_AVAILABLE  
- Indica que los servicios de terminal server están disponibles.  
+## <a name="members"></a>Members  
+ MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
+ Indicates that terminal services are available.  
   
-## Comentarios  
- Utilizado como miembro de `Flags` de la estructura de [MACHINE\_INFO](../../../extensibility/debugger/reference/machine-info.md) .  
+## <a name="remarks"></a>Remarks  
+ Used as the `Flags` member of the [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MACHINE\_INFO\_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)

@@ -1,52 +1,69 @@
 ---
-title: "IDebugObject2::GetAlias | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetAlias"
-helpviewer_keywords: 
-  - "IDebugObject2::GetAlias (método)"
+title: IDebugObject2::GetAlias | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject2::GetAlias
+helpviewer_keywords:
+- IDebugObject2::GetAlias method
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugObject2::GetAlias
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 5119711d8479004f706c15b009d8780d55d4c857
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el alias asociado a este objeto, si existe.  
+---
+# <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
+Gets the alias associated with this object, if any.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetAlias(  
-   IDebugAlias** ppAlias  
+HRESULT GetAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
-```c#  
-int GetAlias(  
-   out IDebugAlias ppAlias  
+```cs  
+int GetAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppAlias`  
- \[out\]  Devuelve un objeto de [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) que representa un alias para este objeto; de lo contrario, devuelve un valor null.  
+ [out] Returns an [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) object representing the alias for this object; otherwise, returns a null value.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- El alias de un objeto se crea con una llamada al método de [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .  
+## <a name="remarks"></a>Remarks  
+ An alias for an object is created with a call to the [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

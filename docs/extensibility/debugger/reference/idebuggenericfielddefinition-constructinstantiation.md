@@ -1,60 +1,77 @@
 ---
-title: "IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ConstructInstantiation"
-  - "IDebugGenericFieldDefinition::ConstructInstantiation"
+title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ConstructInstantiation
+- IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugGenericFieldDefinition::ConstructInstantiation
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ba5b7fc4f1ba4cf73fbd7c4425bfdd65dadf2c41
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Crea una instancia del campo con una matriz de argumentos de tipo.  
+---
+# <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
+Constructs a field instance given an array of type arguments.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT ConstructInstantiation(  
-   ULONG32       cArgs,  
-   IDebugField** ppArgs,  
-   IDebugField** ppConstructedField  
+   ULONG32       cArgs,  
+   IDebugField** ppArgs,  
+   IDebugField** ppConstructedField  
 );  
 ```  
   
-```c#  
+```cs  
 int ConstructInstantiation(  
-   uint            cArgs,  
-   IDebugField[]   ppArgs,  
-   out IDebugField ppConstructedField  
+   uint            cArgs,  
+   IDebugField[]   ppArgs,  
+   out IDebugField ppConstructedField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `cArgs`  
- \[in\]  Número de argumentos en la matriz de `ppArgs` .  
+ [in] Number of arguments in the `ppArgs` array.  
   
  `ppArgs`  
- \[in\]  Matriz que contiene los argumentos de tipo.  Los argumentos de tipo deben ser tipos cerrados \(no genéricos o totalmente con instancias genéricos\).  
+ [in] Array that contains the type arguments. The type arguments must be closed types (non-generic or fully instantiated generics).  
   
  `ppConstructedField`  
- \[out\]  devuelve la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el nuevo campo.  
+ [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface that represents the new field.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Las restricciones no se comprueban.  
+## <a name="remarks"></a>Remarks  
+ Constraints are not checked.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

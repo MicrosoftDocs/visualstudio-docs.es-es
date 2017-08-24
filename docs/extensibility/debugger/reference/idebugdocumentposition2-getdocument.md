@@ -1,49 +1,66 @@
 ---
-title: "IDebugDocumentPosition2::GetDocument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetDocument"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetDocument"
+title: IDebugDocumentPosition2::GetDocument | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentPosition2::GetDocument
+helpviewer_keywords:
+- IDebugDocumentPosition2::GetDocument
 ms.assetid: eaa172c9-5748-4ce1-a0e2-33c2063f6752
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentPosition2::GetDocument
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8cff4e6f43ebc1394aab3611f6a3c2127f3ed68d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-obtiene el documento que contiene.  
+---
+# <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
+Gets the containing document.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetDocument(   
-   IDebugDocument2** ppDoc  
+HRESULT GetDocument(   
+   IDebugDocument2** ppDoc  
 );  
 ```  
   
-```c#  
-int GetDocument(   
-   out IDebugDocument2 ppDoc  
+```cs  
+int GetDocument(   
+   out IDebugDocument2 ppDoc  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppDoc`  
- \[out\]  Devuelve un objeto de [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa el documento que contiene esta posición.  
+ [out] Returns an [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) object that represents the document containing this position.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

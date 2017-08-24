@@ -1,57 +1,74 @@
 ---
-title: "TEXT_DOC_ATTR_2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TEXT_DOC_ATTR_2"
-helpviewer_keywords: 
-  - "TEXT_DOC_ATTR_2 (enumeración)"
+title: TEXT_DOC_ATTR_2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TEXT_DOC_ATTR_2
+helpviewer_keywords:
+- TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# TEXT_DOC_ATTR_2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 40be0787a3e63367bef8f0824380f788b7689b83
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-describe los atributos de un documento.  
+---
+# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+Describes the attributes of a document.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef DWORD TEXT_DOC_ATTR_2;  
 const TEXT_DOC_ATTR_2 TEXT_DOC_ATTR_READONLY_2 = 0x00000001;  
 ```  
   
-```c#  
+```cs  
 public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;  
 ```  
   
-## Members  
- TEXT\_DOC\_ATTR\_READONLY\_2  
- Indica que el documento es de solo lectura.  
+## <a name="members"></a>Members  
+ TEXT_DOC_ATTR_READONLY_2  
+ Indicates that the document is read-only.  
   
-## Comentarios  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
->  este valor no es realmente definido en el ensamblado para C\#.  En su lugar, debe copiar la definición en el archivo de código fuente.  
+>  This value is not actually defined in the assembly for C#. Instead, you must copy the definition to your source file.  
   
- Pasado como argumento al método de [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .  
+ Passed as an argument to the [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) method.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

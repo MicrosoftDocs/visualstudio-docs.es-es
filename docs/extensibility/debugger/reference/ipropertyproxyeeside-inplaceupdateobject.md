@@ -1,62 +1,79 @@
 ---
-title: "IPropertyProxyEESide::InPlaceUpdateObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::InPlaceUpdateObject"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::InPlaceUpdateObject"
+title: IPropertyProxyEESide::InPlaceUpdateObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::InPlaceUpdateObject
+helpviewer_keywords:
+- IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IPropertyProxyEESide::InPlaceUpdateObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b4389596c19adc113b2c8307d45982f7ac1046cc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Actualiza los datos de objeto con el objeto de datos especificado y devuelve un nuevo objeto de datos que representa los nuevos datos de objeto.  
+---
+# <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
+Updates the object's data with the given data object and returns a new data object representing the object's new data.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT InPlaceUpdateObject(  
-   [in] IEEDataStorage*   dataIn,  
-   [out] IEEDataStorage** dataOut  
+   [in] IEEDataStorage*   dataIn,  
+   [out] IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
+```cs  
 int InPlaceUpdateObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
+   IEEDataStorage     dataIn,  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dataIn`  
- \[in\]  un objeto de [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contiene los nuevos datos.  
+ [in] An [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the new data.  
   
  `dataOut`  
- \[out\]  devuelve un nuevo objeto de `IEEDataStorage` que contiene los datos reemplazados.  
+ [out] Returns a new `IEEDataStorage` object containing the replaced data.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método actualiza realmente los datos de objeto.  Los datos del objeto devuelto de [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) no necesita ser iguales que los datos del objeto de entrada de `IEEDataStorage` , pero el objeto devuelto deben reflejar el valor actual de la propiedad.  
+## <a name="remarks"></a>Remarks  
+ This method actually updates the object's data. The data in the returned [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object does not need to be the same as the data in the incoming `IEEDataStorage` object, but the returned object must reflect the property's current value.  
   
- El objeto de datos entrantes no se implementan normalmente por aa.  Sin embargo, el objeto devuelto por este método se implementa siempre por aa, donde permite a aa implementar la interfaz de `IEEDataStorage` se desea cualquier clase.  
+ The incoming data object is typically not implemented by the EE. However, the object returned by this method is always implemented by the EE, which lets the EE implement the `IEEDataStorage` interface on whatever class is desired.  
   
- el método de [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) crea un objeto de datos basado en el objeto de datos entrantes pero no afecta a los datos originales de la propiedad.  
+ The [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) method creates a data object based on the incoming data object but does not affect the property's original data.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

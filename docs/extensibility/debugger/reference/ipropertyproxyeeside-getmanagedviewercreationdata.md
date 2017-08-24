@@ -1,78 +1,95 @@
 ---
-title: "IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::GetManagedViewerCreationData"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::GetManagedViewerCreationData"
+title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::GetManagedViewerCreationData
+helpviewer_keywords:
+- IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IPropertyProxyEESide::GetManagedViewerCreationData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d148300beff79e8684929e5857565786a8352c1d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera información sobre el visor para este tipo de propiedad para crear instancias de ese visor.  
+---
+# <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
+Retrieves information about the viewer for this property type in order to instantiate that viewer.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetManagedViewerCreationData(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  className,  
-   ASSEMBLYLOCRESOLUTION* alr,  
-   BOOL*                  replacementOk  
+HRESULT GetManagedViewerCreationData(  
+   BSTR*                  assemName,  
+   IEEDataStorage**       assemBytes,  
+   IEEDataStorage**       assemPdb,  
+   BSTR*                  className,  
+   ASSEMBLYLOCRESOLUTION* alr,  
+   BOOL*                  replacementOk  
 );  
 ```  
   
-```c#  
-int GetManagedViewerCreationData(  
-   out string                     assemName,  
-   out IEEDataStorage             assemBytes,  
-   out IEEDataStorage             assemPdb,  
-   out string                     className,  
-   out enum_ASSEMBLYLOCRESOLUTION alr,  
-   out int                        replacementOk  
+```cs  
+int GetManagedViewerCreationData(  
+   out string                     assemName,  
+   out IEEDataStorage             assemBytes,  
+   out IEEDataStorage             assemPdb,  
+   out string                     className,  
+   out enum_ASSEMBLYLOCRESOLUTION alr,  
+   out int                        replacementOk  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `assemName`  
- \[out\]  Devuelve el nombre del ensamblado que contiene este objeto.  
+ [out] Returns the name of the assembly holding this object.  
   
  `assemBytes`  
- \[out\]  Devuelve un objeto de [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contiene los bytes del ensamblado de este objeto \(esto es un valor null si no hay bytes disponibles\).  
+ [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes of this object (this is a null value if no bytes are available).  
   
  `assemPdb`  
- \[out\]  Devuelve un objeto de `IEEDataStorage` que contiene información del almacén de símbolos para este objeto \(esto es un valor null si no hay ningún almacén de símbolos\).  
+ [out] Returns an `IEEDataStorage` object containing the symbol store information for this object (this is a null value if no symbol store is available).  
   
  `className`  
- \[out\]  devuelve el nombre de clase que contiene este objeto.  
+ [out] Returns the class name containing this object.  
   
  `alr`  
- \[out\]  Devuelve un valor de enumeración de [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) que indica la ubicación del ensamblado.  
+ [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of the assembly.  
   
  `replacementOk`  
- \[out\]  Devuelve cero \(`TRUE`\) si el valor de este objeto se puede cambiar; cero \(`FALSE`\) si el objeto es de solo lectura.  
+ [out] Returns nonzero (`TRUE`) if this object's value can be changed; zero (`FALSE`) if the object is read-only.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método se utiliza en los visualizadores escritos para crear instancias de un visor administrado.  
+## <a name="remarks"></a>Remarks  
+ This method is used by type visualizers to instantiate a managed viewer.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

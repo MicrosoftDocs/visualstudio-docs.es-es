@@ -1,28 +1,45 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule"
-  - "LoadSymbolsFromStreamWithCorModule"
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
+- LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 738e89af649244b02172cd4f95b07c160daddad8
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Cargar símbolos de depuración desde una secuencia de datos dado el **ICorDebugModule** objeto.  
+---
+# <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
+Load debug symbols from a data stream given the **ICorDebugModule** object.  
   
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT LoadSymbolsFromStreamWithCorModule(  
@@ -35,7 +52,7 @@ HRESULT LoadSymbolsFromStreamWithCorModule(
 );  
 ```  
   
-```c#  
+```cs  
 int LoadSymbolsFromStreamWithCorModule(  
    uint    ulAppDomainID,  
    Guid    guidModule,  
@@ -46,30 +63,30 @@ int LoadSymbolsFromStreamWithCorModule(
 );  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in] Identificador del dominio de aplicación.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- [in] Identificador único del módulo.  
+ [in] Unique identifier of the module.  
   
  `baseAddress`  
- [in] Dirección de memoria base.  
+ [in] Base memory address.  
   
  `pUnkMetadataImport`  
- [in] Objeto que contiene los metadatos de símbolos.  
+ [in] Object that contains the symbol metadata.  
   
  `pUnkCorDebugModule`  
- [in] Objeto que implementa el [ICorDebugModule (interfaz)](ICorDebugModule%20Interface.xml).  
+ [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `pStream`  
- [in] Flujo de datos que contiene los símbolos de depuración para cargar.  
+ [in] Data stream that contains the debug symbols to load.  
   
-## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  
@@ -141,5 +158,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

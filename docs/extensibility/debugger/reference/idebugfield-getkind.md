@@ -1,49 +1,66 @@
 ---
-title: "IDebugField::GetKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetKind"
-helpviewer_keywords: 
-  - "IDebugField::GetKind (método)"
+title: IDebugField::GetKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetKind
+helpviewer_keywords:
+- IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugField::GetKind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cfeb62edc3de7e0a494ca8446903a2845a54e5f3
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método obtiene el tipo de campo.  
+---
+# <a name="idebugfieldgetkind"></a>IDebugField::GetKind
+This method gets the kind of field.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetKind(   
-   FIELD_KIND* pdwKind  
+HRESULT GetKind(   
+   FIELD_KIND* pdwKind  
 );  
 ```  
   
-```c#  
+```cs  
 int GetKind(  
-   out enum_FIELD_KIND pdwKind  
+   out enum_FIELD_KIND pdwKind  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pdwKind`  
- \[out\]  Devuelve el tipo de campo como una combinación de constantes de [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md) .  
+ [out] Returns the kind of field as a combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md)
+ [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

@@ -1,49 +1,66 @@
 ---
-title: "IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentTextEvents2::OnUpdateDocumentAttributes"
-helpviewer_keywords: 
-  - "IDebugDocumentTextEvents2::onUpdateDocumentAttributes"
+title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentTextEvents2::OnUpdateDocumentAttributes
+helpviewer_keywords:
+- IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentTextEvents2::onUpdateDocumentAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 174b1c43f1671621f845b96c55850cc30be07287
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Notifica al receptor de eventos que se han actualizado los atributos del documento.  
+---
+# <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
+Notifies receiver of the event that the document attributes have been updated.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT onUpdateDocumentAttributes(   
-   TEXT_DOC_ATTR_2 textdocattr  
+HRESULT onUpdateDocumentAttributes(   
+   TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
-```c#  
-int onUpdateDocumentAttributes(   
-   enum_TEXT_DOC_ATTR_2 textdocattr  
+```cs  
+int onUpdateDocumentAttributes(   
+   enum_TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `textdocattr`  
- \[in\]  Una combinación de marcadores de enumeración de [TEXT\_DOC\_ATTR\_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) que especifica los atributos actualizados del documento.  
+ [in] A combination of flags from the [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeration that specifies the updated attributes of the document.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
- [TEXT\_DOC\_ATTR\_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)
+ [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

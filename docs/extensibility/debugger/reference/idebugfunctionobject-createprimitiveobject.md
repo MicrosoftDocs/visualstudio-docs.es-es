@@ -1,56 +1,73 @@
 ---
-title: "IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreatePrimitiveObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreatePrimitiveObject (método)"
+title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::CreatePrimitiveObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugFunctionObject::CreatePrimitiveObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bdf5619331cad76a80866fcd279c56e614ee2174
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Crea un objeto de datos primitivo, como un entero simple.  
+---
+# <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
+Creates a primitive data object, such as a simple integer.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CreatePrimitiveObject(   
-   OBJECT_TYPE    ot,  
-   IDebugObject** ppObject  
+HRESULT CreatePrimitiveObject(   
+   OBJECT_TYPE    ot,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```cs  
 int CreatePrimitiveObject(  
-   enum_OBJECT_TYPE ot,   
-   out IDebugObject ppObject  
+   enum_OBJECT_TYPE ot,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ot`  
- \[in\]  Un valor de enumeración de [OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md) que representa el tipo de primitivo para crear.  
+ [in] A value from the [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeration representing the type of primitive to create.  
   
  `ppObject`  
- \[out\]  Devuelve [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto recién creado.  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the newly created object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- Llame a este método para crear un objeto que representa un objeto primitivo que es un parámetro de la función representada por la interfaz de [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  Por ejemplo, si la cadena de la expresión “myString \(5\)”, este método se utiliza para crear un objeto que representa los 5. enteros.  
+## <a name="remarks"></a>Remarks  
+ Call this method to create an object that represents a primitive object that is a parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface. For example, if the expression string is "myString(5)", this method would be used to create an object representing the integer 5.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

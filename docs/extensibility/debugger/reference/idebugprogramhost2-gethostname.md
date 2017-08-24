@@ -1,57 +1,74 @@
 ---
-title: "IDebugProgramHost2::GetHostName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramHost2::GetHostName"
-helpviewer_keywords: 
-  - "IDebugProgramHost2::GetHostName"
+title: IDebugProgramHost2::GetHostName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramHost2::GetHostName
+helpviewer_keywords:
+- IDebugProgramHost2::GetHostName
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgramHost2::GetHostName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b27e475efefab9fe7deb0a3f9fc0b067448062bb
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Obtiene el título, el nombre descriptivo, o el nombre de archivo del proceso de hospedaje de este programa.  
+---
+# <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
+Gets the title, friendly name, or file name of the hosting process of this program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetHostName(   
-   DWORD dwType,  
-   BSTR* pbstrHostName  
+HRESULT GetHostName(   
+   DWORD dwType,  
+   BSTR* pbstrHostName  
 );  
 ```  
   
-```c#  
-int GetHostName(   
-   uint dwType,  
-   out string pbstrHostName  
+```cs  
+int GetHostName(   
+   uint dwType,  
+   out string pbstrHostName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dwType`  
- \[in\]  Un valor de enumeración de [GETHOSTNAME\_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) .  
+ [in] A value from the [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeration.  
   
  `pbstrHostName`  
- \[out\]  Devuelve el nombre solicitado del proceso de hospedaje.  
+ [out] Returns the requested name of the hosting process.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- En una implementación típica de este método, se omite el parámetro de `dwType` y un nombre descriptivo del equipo host se devuelve.  Otra posible implementación es pasar el parámetro de `dwType` a una llamada al método de [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) para obtener el nombre.  
+## <a name="remarks"></a>Remarks  
+ In a typical implementation of this method, the `dwType` parameter is ignored and a friendly name of the host machine is returned. Another possible implementation is to pass the `dwType` parameter to a call to the [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) method to get the name.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

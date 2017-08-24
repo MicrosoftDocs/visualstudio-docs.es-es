@@ -1,83 +1,100 @@
 ---
-title: "IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramProvider2::GetProviderProgramNode"
-helpviewer_keywords: 
-  - "IDebugProgramProvider2::GetProviderProgramNode"
+title: IDebugProgramProvider2::GetProviderProgramNode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramProvider2::GetProviderProgramNode
+helpviewer_keywords:
+- IDebugProgramProvider2::GetProviderProgramNode
 ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugProgramProvider2::GetProviderProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 58211360e66be73c4cce8a696f938f1cbf617f5e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera el nodo de programa para un programa concreto.  
+---
+# <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
+Retrieves the program node for a specific program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetProviderProgramNode(  
-   PROVIDER_FLAGS       Flags,  
-   IDebugDefaultPort2*  pPort,  
-   AD_PROCESS_ID        processId,  
-   REFGUID              guidEngine,  
-   UINT64               programId,  
-   IDebugProgramNode2** ppProgramNode  
+HRESULT GetProviderProgramNode(  
+   PROVIDER_FLAGS       Flags,  
+   IDebugDefaultPort2*  pPort,  
+   AD_PROCESS_ID        processId,  
+   REFGUID              guidEngine,  
+   UINT64               programId,  
+   IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
-```c#  
-int GetProviderProgramNode(  
-   enum_PROVIDER_FLAGS    Flags,  
-   IDebugDefaultPort2     pPort,  
-   AD_PROCESS_ID          ProcessId,  
-   ref Guid               guidEngine,  
-   ulong                  programId,  
-   out IDebugProgramNode2 ppProgramNode  
+```cs  
+int GetProviderProgramNode(  
+   enum_PROVIDER_FLAGS    Flags,  
+   IDebugDefaultPort2     pPort,  
+   AD_PROCESS_ID          ProcessId,  
+   ref Guid               guidEngine,  
+   ulong                  programId,  
+   out IDebugProgramNode2 ppProgramNode  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `Flags`  
- \[in\]  Una combinación de marcadores de enumeración de [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) .  Los siguientes indicadores son típicos para esta llamada:  
+ [in] A combination of flags from the [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeration. The following flags are typical for this call:  
   
-|Marcador|Descripción|  
-|--------------|-----------------|  
-|`PFLAG_REMOTE_PORT`|El autor de llamada se ejecuta en el equipo remoto.|  
-|`PFLAG_DEBUGGEE`|Están depurando al llamador actualmente \(información adicional sobre formar será devuelta para cada nodo\).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Adjuntaron a pero no se iniciará el llamador por el depurador.|  
+|Flag|Description|  
+|----------|-----------------|  
+|`PFLAG_REMOTE_PORT`|Caller is running on remote machine.|  
+|`PFLAG_DEBUGGEE`|Caller is currently being debugged (additional information about marshalling will be returned for each node).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Caller was attached to but not launched by the debugger.|  
   
  `pPort`  
- \[in\]  El puerto que el proceso de llamada se ejecuta.  
+ [in] The port the calling process is running on.  
   
  `processId`  
- \[in\]  Una estructura de [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) que contiene el identificador de proceso que contiene el programa en cuestión.  
+ [in] An [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure holding the ID of the process that contains the program in question.  
   
  `guidEngine`  
- \[in\]  GUID del motor de depuración que el programa está adjunto \(si existe\).  
+ [in] GUID of the debug engine that the program is attached to (if any).  
   
  `programId`  
- \[in\]  Identificador de programa para que obtenga el nodo del programa.  
+ [in] ID of the program for which to get the program node.  
   
  `ppProgramNode`  
- \[out\]  Un objeto de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo solicitado del programa.  
+ [out] An [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) object representing the requested program node.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
- [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
- [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
+ [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,51 +1,68 @@
 ---
-title: "IEnumDebugObjects::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::Skip"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::Skip (método)"
+title: IEnumDebugObjects::Skip | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugObjects::Skip
+helpviewer_keywords:
+- IEnumDebugObjects::Skip method
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
 caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# IEnumDebugObjects::Skip
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8475a7e1695aa80e73ca95285eaf3fe70b91edc2
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método omite sobre el número especificado de elementos.  
+---
+# <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
+This method skips over the specified number of elements.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Skip(  
-   [in] ULONG celt  
+   [in] ULONG celt  
 );  
 ```  
   
-```c#  
+```cs  
 int Skip(  
-   [In] uint celt  
+   [In] uint celt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Número de elementos que se van a omitir.  
+ [in] Number of elements to skip.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
   
-## Comentarios  
- Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece al final y se devuelve `S_FALSE` .  
+## <a name="remarks"></a>Remarks  
+ If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

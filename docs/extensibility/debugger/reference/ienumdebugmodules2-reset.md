@@ -1,45 +1,62 @@
 ---
-title: "IEnumDebugModules2::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugModules2::Reset"
-helpviewer_keywords: 
-  - "IEnumDebugModules2::Reset"
+title: IEnumDebugModules2::Reset | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugModules2::Reset
+helpviewer_keywords:
+- IEnumDebugModules2::Reset
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumDebugModules2::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d6152a3006328951d0ea5635ed87b6bd75325264
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Restablece la enumeración en el primer elemento.  
+---
+# <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
+Resets the enumeration to the first element.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Reset(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```cs  
 int Reset();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Después de que se llame a este método, la siguiente llamada al método de [Siguiente](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) devuelve el primer elemento de la enumeración.  
+## <a name="remarks"></a>Remarks  
+ After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) method returns the first element of the enumeration.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

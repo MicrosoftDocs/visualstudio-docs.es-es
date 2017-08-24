@@ -1,75 +1,92 @@
 ---
-title: "ASSEMBLYLOCRESOLUTION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ASSEMBLYLOCRESOLUTION"
-helpviewer_keywords: 
-  - "Enumeración ASSEMBLYLOCRESOLUTION"
+title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ASSEMBLYLOCRESOLUTION
+helpviewer_keywords:
+- ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# ASSEMBLYLOCRESOLUTION
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b00d82b48fe683fe8ca75da7ed14db4e6caf0b9e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Especifica dónde se ubica un ensamblado.  
+---
+# <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
+Specifies where an assembly is located.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_ASSEMBLYLOCRESOLUTION {  
-   ALR_NAME      = 0x0,  
-   ALR_USERDIR   = 0x1,  
-   ALR_SHAREDDIR = 0x2,  
-   ALR_REMOTEDIR = 0x4,  
+enum enum_ASSEMBLYLOCRESOLUTION {  
+   ALR_NAME      = 0x0,  
+   ALR_USERDIR   = 0x1,  
+   ALR_SHAREDDIR = 0x2,  
+   ALR_REMOTEDIR = 0x4,  
 };  
-typedef DWORD ASSEMBLYLOCRESOLUTION;  
+typedef DWORD ASSEMBLYLOCRESOLUTION;  
 ```  
   
-```c#  
-public enum enum_ASSEMBLYLOCRESOLUTION {  
-   ALR_NAME      = 0x0,  
-   ALR_USERDIR   = 0x1,  
-   ALR_SHAREDDIR = 0x2,  
-   ALR_REMOTEDIR = 0x4,  
+```cs  
+public enum enum_ASSEMBLYLOCRESOLUTION {  
+   ALR_NAME      = 0x0,  
+   ALR_USERDIR   = 0x1,  
+   ALR_SHAREDDIR = 0x2,  
+   ALR_REMOTEDIR = 0x4,  
 };  
 ```  
   
-## Members  
- ALR\_NAME  
- El ensamblado se encuentra en el espacio de nombres actual.  
+## <a name="members"></a>Members  
+ ALR_NAME  
+ Assembly is located in the current namespace.  
   
- ALR\_USERDIR  
- El ensamblado se encuentra en un directorio de usuario.  
+ ALR_USERDIR  
+ Assembly is located in a user directory.  
   
- ALR\_SHAREDDIR  
- El ensamblado se encuentra en el directorio compartido.  
+ ALR_SHAREDDIR  
+ Assembly is located in shared directory.  
   
- ALR\_REMOTEDIR  
- El ensamblado se encuentra en un directorio remoto.  
+ ALR_REMOTEDIR  
+ Assembly is located in a remote directory.  
   
-## Comentarios  
- estos valores son devueltos por los métodos de [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y de [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .  
+## <a name="remarks"></a>Remarks  
+ These values are returned by the [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) and [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) methods.  
   
- estos valores se pueden combinar con la operación de `OR` .  
+ These values can be combined with the `OR` operation.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

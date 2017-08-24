@@ -1,28 +1,45 @@
 ---
-title: "Registrar un Service1 de lenguaje heredado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Servicios de lenguaje [managed package framework], registrar"
+title: Registering a Legacy Language Service1 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language services [managed package framework], registering
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Registrar un servicio de lenguaje heredado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1c0d31b4a079970282e0d66acf1cc3f944747e2e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-En el marco de trabajo de paquete administrado \(MPF\), el servicio de lenguaje es ofrecido por un VSPackage \(consulte [VSPackages](../../extensibility/internals/vspackages.md)\) y se registra con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agregando entradas y claves del registro. Este proceso de registro se realiza parcialmente durante la instalación y parcialmente en tiempo de ejecución.  
+---
+# <a name="registering-a-legacy-language-service"></a>Registering a Legacy Language Service
+In the managed package framework (MPF), the language service is proffered by a VSPackage (see [VSPackages](../../extensibility/internals/vspackages.md)) and is registered with [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] by adding registry keys and entries. This registration process is done in partly during installation and partly at runtime.  
   
-## Registrar el servicio de lenguaje mediante atributos  
- Los siguientes atributos se usan para registrar un servicio de lenguaje.  
+## <a name="register-the-language-service-by-using-attributes"></a>Register the Language Service by Using Attributes  
+ The following attributes are used to register a language service.  
   
 -   <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
@@ -34,14 +51,14 @@ En el marco de trabajo de paquete administrado \(MPF\), el servicio de lenguaje 
   
 -   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
- A continuación se explican estos atributos  
+ These attributes are explained below  
   
-### ProvideServiceAttribute  
- Este atributo registra el servicio de lenguaje como un servicio.  
+### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
+ This attribute registers your language service as a service.  
   
-### Ejemplo  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -55,12 +72,12 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### ProvideLanguageServiceAttribute  
- Este atributo registra el servicio de lenguaje concreto, como un servicio de lenguaje. Permite establecer las opciones que especifican las características que ofrece el servicio de lenguaje. En el ejemplo se muestra un subconjunto de las opciones que puede proporcionar un servicio de lenguaje. Para obtener el conjunto completo de opciones de servicio de lenguaje, consulte <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
+### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
+ This attribute registers your language service specifically as a language service. It allows you to set options that specify the features that your language service offers. The example shows a subset of the options a language service can provide. For the full set of language service options, see <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
   
-### Ejemplo  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -80,12 +97,12 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### ProvideLanguageExtensionAttribute  
- Este atributo asocia el servicio de lenguaje con una extensión de archivo. Siempre que se carga un archivo con dicha extensión, en cualquier proyecto su servicio de lenguaje se inicia y utiliza para mostrar el contenido del archivo.  
+### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute  
+ This attribute associates your language service with a file extension. Whenever a file with that extension is loaded, in any project, your language service is started and used to display the contents of the file.  
   
-### Ejemplo  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -99,12 +116,12 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### ProvideLanguageCodeExpansionAttribute  
- Este atributo registra una ubicación de código que se obtienen las plantillas de expansión o fragmento de código. Esta información se usa por el **Explorador de fragmentos de código** y el editor cuando se inserta un fragmento de código en el archivo de origen.  
+### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute  
+ This attribute registers a location from which code expansion or snippet templates are obtained. This information is used by the **Code Snippets Browser** and by the editor when a code snippet is inserted into the source file.  
   
-### Ejemplo  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -125,13 +142,13 @@ namespace TestLanguagePackage
 }  
 ```  
   
-### ProvideLanguageEditorOptionPageAttribute  
- Este atributo registra una página de propiedades que se mostrarán en el **opciones** cuadro de diálogo en el **Editor de texto** categoría. Utilice uno de estos atributos para cada página que se mostrará para el servicio de lenguaje. Si necesita organizar sus páginas en una estructura de árbol, utilice atributos adicionales para definir cada nodo del árbol.  
+### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
+ This attribute registers a property page to be displayed in the **Options** dialog box under the **Text Editor** category. Use one of these attributes for each page to be displayed for your language service. If you need to organize your pages in a tree structure, use additional attributes to define each node of the tree.  
   
-### Ejemplo  
- Este ejemplo muestra dos páginas de propiedades, **opciones** y **sangría**, y un nodo que contiene la segunda página de propiedades.  
+### <a name="example"></a>Example  
+ This example shows two property pages, **Options** and **Indenting**, and one node that contains the second property page.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -160,13 +177,13 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## Ofrecer el servicio de lenguaje en tiempo de ejecución  
- Cuando se carga el paquete de idioma, debe indicar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que el servicio de lenguaje está listo. Para ello se proffering el servicio. Esto se hace en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> \(método\). Además, debe iniciar un temporizador que llama el servicio de lenguaje durante períodos de inactividad, por lo que pueden realizarse análisis de segundo plano. Este temporizador inactivo también se utiliza para actualizar las propiedades de documento si ha implementado alguna a través de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase. Para admitir un temporizador, debe implementar el paquete de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interfaz \(sólo el <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> método debe implementarse completamente; los métodos restantes pueden devolver valores predeterminados\).  
+## <a name="proffer-the-language-service-at-runtime"></a>Proffer the Language Service at Runtime  
+ When your language package is loaded, you must tell [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] that your language service is ready. You do this by proffering the service. This is done in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method. In addition, you need to start a timer that calls your language service during idle periods so background parsing can be accomplished. This idle timer is also used to update document properties if you have implemented any through the <xref:Microsoft.VisualStudio.Package.DocumentProperties> class. In order to support a timer, your package must implement the <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interface (only the <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> method needs to be fully implemented; the remaining methods can return default values).  
   
-### Ejemplo  
- Este ejemplo muestra un enfoque típico para proffering un servicio y proporcionar un temporizador inactivo.  
+### <a name="example"></a>Example  
+ This example shows a typical approach to proffering a service and supplying an idle timer.  
   
-```c#  
+```cs  
   
 using System;  
 using System.Runtime.InteropServices;  

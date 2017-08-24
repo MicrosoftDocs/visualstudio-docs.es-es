@@ -1,58 +1,75 @@
 ---
-title: "IDebugProgram2::EnumCodeContexts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::EnumCodeContexts"
-helpviewer_keywords: 
-  - "IDebugProgram2::EnumCodeContexts"
+title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::EnumCodeContexts
+helpviewer_keywords:
+- IDebugProgram2::EnumCodeContexts
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgram2::EnumCodeContexts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f8db2598d1eb2f91234ebf9d475b0332da49c047
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera una lista de los contextos de código para una posición determinada de un archivo de código fuente.  
+---
+# <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
+Retrieves a list of the code contexts for a given position in a source file.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumCodeContexts(   
-   IDebugDocumentPosition2*  pDocPos,  
-   IEnumDebugCodeContexts2** ppEnum  
+HRESULT EnumCodeContexts(   
+   IDebugDocumentPosition2*  pDocPos,  
+   IEnumDebugCodeContexts2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumCodeContexts(   
-   IDebugDocumentPosition2     pDocPos,  
-   out IEnumDebugCodeContexts2 ppEnum  
+```cs  
+int EnumCodeContexts(   
+   IDebugDocumentPosition2     pDocPos,  
+   out IEnumDebugCodeContexts2 ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pDocPos`  
- \[in\]  Un objeto de [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) que representa una posición abstracta en un archivo de código fuente conocido al IDE.  
+ [in] An [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) object representing an abstract position in a source file known to the IDE.  
   
  `ppEnum`  
- \[out\]  Devuelve un objeto de [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) que contiene una lista de los contextos de código.  
+ [out] Returns an [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) object that contains a list of the code contexts.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método permite al administrador \(SDM\) de depuración de sesión o el IDE para asignar un archivo de código fuente colocar en una posición de código.  Se devuelve más de un contexto de código si el origen genera los varios bloques de código \(por ejemplo, las plantillas de C\+\+\).  
+## <a name="remarks"></a>Remarks  
+ This method allows the session debug manager (SDM) or IDE to map a source file position into a code position. More than one code context is returned if the source generates multiple blocks of code (for example, C++ templates).  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

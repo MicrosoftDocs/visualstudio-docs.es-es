@@ -1,5 +1,5 @@
 ---
-title: "Obtener una lista de instala fragmentos de código (heredada) | Documentos de Microsoft"
+title: Getting a List of Installed Code Snippets (Legacy) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,24 +30,25 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: d5bc147592bfc36247c35f23ac2885055d096af3
-ms.openlocfilehash: d49d5eb1a6a2e045d477dd03fba9372123cae83a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 51bac52e28b37818b45fd63d3c30bebb7e8d8d35
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredado)
-Un fragmento de código es un fragmento de código que se puede insertar en el búfer de origen con un comando de menú (que permite elegir entre una lista de fragmentos de código instalados) o mediante la selección de un método abreviado de fragmento de código de una lista de finalización de IntelliSense.  
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)
+A code snippet is a piece of code that can be inserted into the source buffer either with a menu command (which allows choosing among a list of installed code snippets) or by selecting a snippet shortcut from an IntelliSense completion list.  
   
- El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>método obtiene todos los fragmentos de código para un lenguaje específico de GUID.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> Los métodos abreviados para los fragmentos se pueden insertar en una lista de finalización de IntelliSense.  
+ The <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> method gets all code snippets for a specific language GUID. The shortcuts for those snippets can be inserted into an IntelliSense completion list.  
   
- Consulte [compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) para obtener más información acerca de cómo implementar los fragmentos de código en un servicio de lenguaje administrado paquete framework (MPF).  
+ See [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) for details about implementing code snippets in a managed package framework (MPF) language service.  
   
-### <a name="to-retrieve-a-list-of-code-snippets"></a>Para recuperar una lista de fragmentos de código  
+### <a name="to-retrieve-a-list-of-code-snippets"></a>To retrieve a list of code snippets  
   
-1.  El código siguiente muestra cómo obtener una lista de fragmentos de código para un idioma determinado. Los resultados se almacenan en una matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>estructuras.</xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Este método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>método para obtener el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>interfaz desde el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>service.</xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> </xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Sin embargo, también puede utilizar el proveedor de servicios dado el VSPackage y llame a la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>método.</xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>  
+1.  The following code shows how to get a list of code snippets for a given language. The results are stored in an array of <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> structures. This method uses the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method to get the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. However, you can also use the service provider given to your VSPackage and call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections;  
     using System.Runtime.InteropServices;  
@@ -118,14 +119,14 @@ Un fragmento de código es un fragmento de código que se puede insertar en el b
     }  
     ```  
   
-### <a name="to-call-the-getsnippets-method"></a>Para llamar al método GetSnippets  
+### <a name="to-call-the-getsnippets-method"></a>To call the GetSnippets method  
   
-1.  El siguiente método muestra cómo llamar a la `GetSnippets` método al final de una operación de análisis. El <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>método se llama después de una operación de análisis que se inició con la razón <xref:Microsoft.VisualStudio.Package.ParseReason>.</xref:Microsoft.VisualStudio.Package.ParseReason> </xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>  
+1.  The following method shows how to call the `GetSnippets` method at the completion of a parsing operation. The <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> method is called after a parsing operation that was started with the reason <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  El `expansionsList` listis en caché para mejorar el rendimiento de la matriz. Cambios en los fragmentos de código no se reflejan en la lista hasta que se detiene y se vuelve a cargar el servicio de lenguaje (por ejemplo, al detener y reiniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
+>  The `expansionsList` array listis cached for performance reasons. Changes to the snippets are not reflected in the list until the language service is stopped and reloaded (for example, by stopping and restarting [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-```c#  
+```cs  
 class TestLanguageService : LanguageService  
 {  
     private ArrayList expansionsList;  
@@ -142,15 +143,15 @@ class TestLanguageService : LanguageService
 }  
 ```  
   
-### <a name="to-use-the-snippet-information"></a>Para usar la información de fragmento de código  
+### <a name="to-use-the-snippet-information"></a>To use the snippet information  
   
-1.  El código siguiente muestra cómo utilizar la información de fragmento de código devuelve el `GetSnippets` (método). El `AddSnippets` método se llama desde el analizador en respuesta a alguna razón de análisis que se usa para rellenar una lista de fragmentos de código. Esto tendrá lugar después de que se ha realizado el análisis completo por primera vez.  
+1.  The following code shows how to use the snippet information returned by the `GetSnippets` method. The `AddSnippets` method is called from the parser in response to any parse reason that is used to populate a list of code snippets. This should take place after the full parse has been done for the first time.  
   
-     El `AddDeclaration` método crea una lista de declaraciones que se muestra más adelante en una lista de finalización.  
+     The `AddDeclaration` method builds a list of declarations that is later displayed in a completion list.  
   
-     La `TestDeclaration` clase contiene toda la información que se puede mostrar en una lista de finalización, así como el tipo de declaración.  
+     The `TestDeclaration` class contains all the information that can be displayed in a completion list as well as the type of declaration.  
   
-    ```c#  
+    ```cs  
     class TestAuthoringScope : AuthoringScope  
     {  
         public void AddDeclarations(TestDeclaration declaration)  
@@ -193,5 +194,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>Vea también  
- [Compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
+## <a name="see-also"></a>See Also  
+ [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

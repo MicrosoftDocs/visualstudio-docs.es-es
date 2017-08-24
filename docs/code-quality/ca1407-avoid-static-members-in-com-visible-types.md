@@ -1,99 +1,116 @@
 ---
-title: "CA1407: Evite miembros est&#225;ticos en tipos visibles para COM | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1407"
-  - "AvoidStaticMembersInComVisibleTypes"
-helpviewer_keywords: 
-  - "CA1407"
-  - "AvoidStaticMembersInComVisibleTypes"
+title: 'CA1407: Avoid static members in COM visible types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1407
+- AvoidStaticMembersInComVisibleTypes
+helpviewer_keywords:
+- CA1407
+- AvoidStaticMembersInComVisibleTypes
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
 caps.latest.revision: 23
-caps.handback.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1407: Evite miembros est&#225;ticos en tipos visibles para COM
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e312a15705d3aa7e90a5c5865d950a22dbf61af1
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
+---
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Avoid static members in COM visible types
 |||  
 |-|-|  
 |TypeName|AvoidStaticMembersInComVisibleTypes|  
-|Identificador de comprobación|CA1407|  
-|Categoría|Microsoft.Interoperability|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1407|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo marcado específicamente como visible para el Modelo de objetos componentes \(COM\) contiene un método `public` `static`.  
+## <a name="cause"></a>Cause  
+ A type that is specifically marked as visible to Component Object Model (COM) contains a `public``static` method.  
   
-## Descripción de la regla  
- COM no es compatible con métodos `static`.  
+## <a name="rule-description"></a>Rule Description  
+ COM does not support `static` methods.  
   
- Esta regla omite descriptores de acceso de eventos y propiedades, métodos de sobrecarga de operadores o métodos marcados mediante el atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o el atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.  
+ This rule ignores property and event accessors, operator overloading methods, or methods that are marked by using either the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribute or the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribute.  
   
- De manera predeterminada, son visibles para COM: ensamblados, tipos públicos, miembros de instancia públicos de tipos públicos y todos los miembros de tipos de valor públicos.  
+ By default, the following are visible to COM: assemblies, public types, public instance members in public types, and all members of public value types.  
   
- Para que ocurra esta regla, un <xref:System.Runtime.InteropServices.ComVisibleAttribute> de nivel de ensamblado se debe establecer en `false` y el <xref:System.Runtime.InteropServices.ComVisibleAttribute> de clase se debe establecer en `true`, como se muestra en el código siguiente.  
+ For this rule to occur, an assembly-level <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `false` and the class- <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `true`, as the following code shows.  
   
-```c#  
+```cs  
 using System;  
 using System.Runtime.InteropServices;   
   
 [assembly: ComVisible(false)]   
 namespace Samples  
 {      
-    [ComVisible(true)]  
-    public class MyClass  
-    {  
-        public static void DoSomething()  
-        {  
-        }  
-    }  
+    [ComVisible(true)]  
+    public class MyClass  
+    {  
+        public static void DoSomething()  
+        {  
+        }  
+    }  
 }  
 ```  
   
-## Cómo corregir infracciones  
- Para corregir una infracción a esta regla, cambie el diseño de forma que se utilice un método de instancia que proporcione la misma funcionalidad que el método `static`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the design to use an instance method that provides the same functionality as the `static` method.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla si un cliente COM no necesita acceso a la funcionalidad proporcionada por el método `static`.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if a COM client does not require access to the functionality that is provided by the `static` method.  
   
-## Infracción de ejemplo  
+## <a name="example-violation"></a>Example Violation  
   
-### Descripción  
- En el siguiente ejemplo se muestra un método `static` que infringe esta regla.  
+### <a name="description"></a>Description  
+ The following example shows a `static` method that violates this rule.  
   
-### Código  
+### <a name="code"></a>Code  
  [!code-cs[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]  
   
-### Comentarios  
- En este ejemplo, no se puede llamar al método **Book.FromPages** desde COM.  
+### <a name="comments"></a>Comments  
+ In this example, the **Book.FromPages** method cannot be called from COM.  
   
-## Corrección del ejemplo  
+## <a name="example-fix"></a>Example Fix  
   
-### Descripción  
- Para corregir la infracción del ejemplo anterior, podría cambiar el método a un método de instancia, pero eso no tiene sentido en esta instancia.  Una solución mejor es aplicar explícitamente `ComVisible(false)` al método para que los demás programadores vean claramente que el método no es visible desde COM.  
+### <a name="description"></a>Description  
+ To fix the violation in the previous example, you could change the method to an instance method, but that does not make sense in this instance. A better solution is to explicitly apply `ComVisible(false)` to the method to make it clear to other developers that the method cannot be seen from COM.  
   
- En el siguiente ejemplo se aplica <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> al método.  
+ The following example applies <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> to the method.  
   
-### Código  
+### <a name="code"></a>Code  
  [!code-cs[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]  
   
-## Reglas relacionadas  
- [CA1017: Marcar los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
- [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
+ [CA1406: Avoid Int64 arguments for Visual Basic 6 clients](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
   
- [CA1413: Evite campos no públicos en tipos de valor visibles para COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+ [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
-## Vea también  
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>See Also  
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)

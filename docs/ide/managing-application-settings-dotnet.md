@@ -1,5 +1,5 @@
 ---
-title: "Administrar la configuración de la aplicación (.NET) | Microsoft Docs"
+title: Managing Application Settings (.NET) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,90 +32,84 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: a6435584544cbffb9d90258cfba1d83bd71ee8cc
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d8d2fbd4af47b3c94ec3f5d1cbc6d88a52ca2e39
 ms.contentlocale: es-es
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# Administrar la configuración de la aplicación (.NET)
-<a id="managing-application-settings-net" class="xliff"></a>
-La configuración de la aplicación permite almacenar la información de la aplicación de forma dinámica. La configuración también le permite almacenar información en el equipo cliente que no se debe incluir en el código de la aplicación (por ejemplo, una cadena de conexión), las preferencias del usuario y otra información necesaria en tiempo de ejecución.  
+# <a name="managing-application-settings-net"></a>Managing Application Settings (.NET)
+Application settings enable you to store application information dynamically. Settings allow you to store information on the client computer that should not be included in the application code (for example a connection string), user preferences and other information you need at runtime.  
   
- La configuración de la aplicación reemplaza a las propiedades dinámicas que se usaban en versiones anteriores de Visual Studio.  
+ Application settings replace the dynamic properties used in earlier versions of Visual Studio.  
   
- Cada valor de la aplicación debe tener un nombre único. El nombre puede ser cualquier combinación de caracteres de letras, números o subrayado que no comience por un número ni contenga espacios. Se puede cambiar el nombre mediante la propiedad `Name` .  
+ Each application setting must have a unique name. The name can be any combination of letters, numbers, or an underscore that does not start with a number, and it cannot contain spaces. The name can be changed through the `Name` property.  
   
- La configuración de la aplicación se puede almacenar como cualquier tipo de datos que se pueda serializar en XML o que tenga un `TypeConverter` que implemente `ToString`/`FromString`. Los tipos más comunes son `String`, `Integer` y `Boolean`, pero también puede almacenar valores como <xref:System.Drawing.Color>, <xref:System.Object>, o bien como una cadena de conexión.  
+ Application settings can be stored as any data type that can be serialized to XML or has a `TypeConverter` that implements `ToString`/`FromString`. The most common types are `String`, `Integer`, and `Boolean`, but you can also store values as <xref:System.Drawing.Color>, <xref:System.Object>, or as a connection string.  
   
- La configuración de la aplicación también contiene un valor. El valor se establece mediante la propiedad **Value** y debe coincidir con el tipo de datos de la configuración.  
+ Application settings also contain a value. The value is set with the **Value** property and must match the data type of the setting.  
   
- Además, la configuración de la aplicación se puede enlazar a una propiedad de un formulario o de un control en tiempo de diseño.  
+ In addition, application settings can be bound to a property of a form or control at design time.  
   
- Hay dos tipos de configuración de la aplicación, en función del ámbito:  
+ There are two types of application settings, based on scope:  
   
--   La configuración de ámbito de aplicación se puede utilizar para obtener información como una dirección URL para un servicio Web o una cadena de conexión a bases de datos. Estos valores están asociados a la aplicación. Por consiguiente, los usuarios no pueden cambiarlos en tiempo de ejecución.  
+-   Application-scoped settings can be used for information such as a URL for a Web service or a database connection string. These values are associated with the application. Therefore, users cannot change them at run time.  
   
--   La configuración de ámbito de usuario se puede utilizar para obtener información, como conservar la última posición de un formulario o una preferencia de fuente. Los usuarios pueden modificar estos valores en tiempo de ejecución.  
+-   User-scoped settings can be used for information such as persisting the last position of a form or a font preference. Users can change these values at run time.  
   
- Puede cambiar el tipo de una configuración con la propiedad **Scope** .  
+ You can change the type of a setting by using the **Scope** property.  
   
- El sistema del proyecto almacena la configuración de la aplicación en dos archivos XML: un archivo .app.config, que se crea en tiempo de diseño cuando se crea la primera configuración de la aplicación, y un archivo .user.config, que se crea en tiempo de ejecución cuando el usuario que ejecuta la aplicación cambia el valor de parte de la configuración de usuario. Observe que los cambios en la configuración de usuario no se escriben en el disco a menos que la aplicación llame específicamente a un método para que lo haga.  
+ The project system stores application settings in two XML files: an app.config file, which is created at design time when you create the first application setting; and a user.config file, which is created at run time when the user who runs the application changes the value of any user setting. Notice that changes in user settings are not written to disk unless the application specifically calls a method to do this.  
   
-## Crear la configuración de la aplicación en tiempo de diseño
-<a id="creating-application-settings-at-design-time" class="xliff"></a>  
- En tiempo de diseño, hay dos maneras de crear la configuración de la aplicación: mediante la página **Configuración** del **Diseñador de proyectos**o desde la ventana **Propiedades** de un formulario o un control, lo que le permite enlazar una configuración a una propiedad.  
+## <a name="creating-application-settings-at-design-time"></a>Creating Application Settings at Design Time  
+ At design time, you can create application settings in two ways: by using the **Settings** page of the **Project Designer**, or by using the **Properties** window for a form or control, which allows you to bind a setting to a property.  
   
- Cuando crea una configuración con ámbito de aplicación (por ejemplo, una cadena de conexión a bases de datos o una referencia a los recursos del servidor), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la guarda en un archivo app.config con la etiqueta `<applicationSettings>` . (Las cadenas de conexión se guardan en la etiqueta `<connectionStrings>` .)  
+ When you create an application-scoped setting (for example, a database connection string, or a reference to server resources), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<applicationSettings>` tag. (Connection strings are saved under the `<connectionStrings>` tag.)  
   
- Cuando crea una configuración con ámbito de usuario (por ejemplo, fuente predeterminada, página principal o tamaño de la ventana), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la guarda en un archivo app.config con la etiqueta `<userSettings>` .  
+ When you create a user-scoped setting (for example, default font, home page, or window size), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<userSettings>` tag.  
   
 > [!IMPORTANT]
->  Si almacena cadenas de conexión en .app.config, debe tomar precauciones para evitar revelar información confidencial en la cadena de conexión, como contraseñas o rutas de acceso al servidor.  
+>  When you store connection strings in app.config, you should take precautions to avoid revealing sensitive information, such as passwords or server paths, in the connection string.  
 >   
->  Si toma la información de la cadena de conexión de un origen externo (un usuario que suministre un Id. de usuario y una contraseña, por ejemplo), debe asegurarse de que los valores que utilice para crear la cadena de conexión no contengan parámetros adicionales que modifiquen el comportamiento de la conexión.  
+>  If you take connection string information from an external source, such as a user supplying a user ID and password, you must be careful to ensure that the values that you use to construct your connection string do not contain additional connection string parameters that change the behavior of your connection.  
 >   
->  Plantéese utilizar la característica de configuración protegida para cifrar información confidencial en el archivo de configuración. Para obtener más información, vea [Proteger la información de conexión](/dotnet/framework/data/adonet/protecting-connection-information).  
+>  Consider using the Protected Configuration feature to encrypt sensitive information in the configuration file. See [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information) for more information.  
   
 > [!NOTE]
->  Dado que no hay ningún modelo del archivo de configuración para las bibliotecas de clases, la configuración de la aplicación no se aplica a los proyectos de la biblioteca de clases. La excepción es un proyecto de archivo DLL de Visual Studio Tools para Office, que puede tener un archivo de configuración.  
+>  Because there is no configuration file model for class libraries, application settings do not apply for Class Library projects. The exception is a Visual Studio Tools for Office DLL project, which can have a configuration file.  
   
-## Usar archivos de configuración personalizados
-<a id="using-customized-settings-files" class="xliff"></a>  
- Puede agregar archivos de configuración personalizados a su proyecto para facilitar la administración de grupos de opciones de configuración. La configuración contenida en un mismo archivo se carga y guarda como una unidad. Por consiguiente, poder almacenar configuraciones en distintos archivos correspondientes a los grupos utilizados con frecuencia y poco utilizados puede ahorrar tiempo al cargar y guardar configuraciones.  
+## <a name="using-customized-settings-files"></a>Using Customized Settings Files  
+ You can add customized settings files to your project for convenient management of groups of settings. Settings that are contained in a single file are loaded and saved as a unit. Therefore, being able to store settings in separate files for frequently-used and infrequently-used groups can save time in loading and saving settings.  
   
- Por ejemplo, puede agregar un archivo a su proyecto como SpecialSettings.settings. Aunque su clase `SpecialSettings` no se exponga en el espacio de nombres `My` , **Ver código** puede leer el archivo de configuración personalizado que contiene `Partial Class SpecialSettings`.  
+ For example, you can add a file such as SpecialSettings.settings to your project. While your `SpecialSettings` class is not exposed in the `My` namespace, **View Code** can read the custom settings file that contains `Partial Class SpecialSettings`.  
   
- El Diseñador de configuración busca primero el archivo Settings.settings creado por el sistema del proyecto; éste es el archivo que muestra de manera predeterminada el Diseñador de configuración en la ficha **Configuración** . Settings.settings se encuentra en la carpeta My Project para los proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y en la carpeta Propiedades para los proyectos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] . A continuación, el Diseñador de proyectos busca otros archivos de configuración en la carpeta raíz del proyecto. Por consiguiente, debe colocar en ella el archivo de configuración personalizado. Si agrega un archivo .settings en otra ubicación del proyecto, el Diseñador de proyectos no lo encontrará.  
+ The Settings Designer first searches for the Settings.settings file that the project system creates; this is the default file that the Project Designer displays in the **Settings** tab. Settings.settings is located in the My Project folder for [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects and in the Properties folder for [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projects. The Project Designer then searches for other settings files in the project's root folder. Therefore, you should put your custom settings file there. If you add a .settings file elsewhere in your project, the Project Designer will not be able to locate it.  
   
-## Obtener acceso o cambiar la configuración de la aplicación en tiempo de ejecución en Visual Basic
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-basic" class="xliff"></a>  
- En los proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , puede obtener acceso a la configuración de la aplicación en tiempo de ejecución por medio del objeto `My.Settings` . En la página **Configuración** , haga clic en el botón **Ver código** con el fin de ver el archivo Settings.vb. Settings.vb define la clase `Settings`, que le permite controlar estos eventos en la clase de configuración: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> y <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Tenga en cuenta que la clase `Settings` de Settings.vb es una clase parcial, que muestra solamente el código que tiene el usuario, no toda la clase generada. Para obtener más información sobre cómo tener acceso a la configuración de la aplicación mediante el objeto `My.Settings` , vea [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accessing or Changing Application Settings at Run Time in Visual Basic  
+ In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects, you can access application settings at run time by using the `My.Settings` object. On the **Settings** page, click the **View code** button to view the Settings.vb file. Settings.vb defines the `Settings` class, which enables you to handle these events on the settings class: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Notice that the `Settings` class in Settings.vb is a partial class that displays only the user-owned code, not the whole generated class. For more information about accessing application settings by using the `My.Settings` object, see [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).  
   
- Los valores de configuración de ámbito de usuario que el usuario cambia en tiempo de ejecución (por ejemplo, la posición de un formulario) se almacenan en un archivo user.config. Observe que los valores predeterminados se siguen guardando en app.config.  
+ The values of any user-scoped settings that the user changes at run time (for example, the position of a form) are stored in a user.config file. Notice that the default values are still saved in app.config.  
   
- Si ha cambiado parte de la configuración de ámbito de usuario durante el tiempo de ejecución, por ejemplo, al probar la aplicación, y desea restablecer esta configuración a sus valores predeterminados, haga clic en el botón **Sincronizar** .  
+ If you have changed any user-scoped settings during run time, for example in testing the application, and want to reset these settings to their default values, click the **Synchronize** button.  
   
- Recomendamos encarecidamente utilizar el objeto `My.Settings` y el archivo .settings predeterminado para tener acceso a las configuraciones. Esto se debe a que puede utilizar el Diseñador de configuración para asignar propiedades a los valores, y, además, la configuración del usuario se guarda automáticamente antes de cerrar la aplicación. Sin embargo, su aplicación de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] puede obtener acceso directamente a la configuración. En ese caso, necesita tener acceso a la clase `MySettings` y utilizar un archivo .settings personalizado en la raíz del proyecto. También debe guardar la configuración del usuario antes de finalizar la aplicación, igual que con una aplicación de C#; esto se describe en la sección siguiente.  
+ We strongly recommend that you use the `My.Settings` object and the default .settings file to access settings. This is because you can use the Settings Designer to assign properties to settings, and, additionally, user settings are automatically saved before application shutdown. However, your [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] application can access settings directly. In that case you have to access the `MySettings` class and use a custom .settings file in the root of the project. You must also save the user settings before ending the application, as you would do for a C# application; this is described in the following section.  
   
-## Obtener acceso o cambiar la configuración de la aplicación en tiempo de ejecución en Visual C#
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-c" class="xliff"></a> #
- En otros lenguajes distintos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], como [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], se debe tener acceso directamente a la clase `Settings` , como se muestra en el siguiente ejemplo de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] .  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accessing or Changing Application Settings at Run Time in Visual C# #
+ In languages other than [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], such as [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], you must access the `Settings` class directly, as shown in the following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example.  
   
-```c#  
+```cs  
 Properties.Settings.Default.FirstUserSetting = "abc";  
 ```  
   
- También debe llamar explícitamente al método `Save` de esta clase contenedora para conservar la configuración del usuario. Esto normalmente se realiza en el controlador de eventos `Closing` del formulario principal. En el ejemplo siguiente de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , se muestra una llamada al método `Save` .  
+ You must also explicitly call the `Save` method of this wrapper class in order to persist the user settings. You usually do this in the `Closing` event handler of the main form. The following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example shows a call to the `Save` method.  
   
-```c#  
+```cs  
 Properties.Settings.Default.Save();  
 ```  
   
- Para obtener información general sobre cómo obtener acceso a la configuración de la aplicación a través de la clase `Settings`, vea [Introducción a la configuración de la aplicación](/dotnet/framework/winforms/advanced/application-settings-overview). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).  
+ For general information about accessing application settings through the `Settings` class, see [Application Settings Overview](/dotnet/framework/winforms/advanced/application-settings-overview). For information about iterating through the settings, see this [forum post](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
- [Acceso a la configuración de la aplicación](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
+## <a name="see-also"></a>See Also  
+ [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
 

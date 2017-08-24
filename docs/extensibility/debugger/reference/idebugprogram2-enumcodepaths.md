@@ -1,78 +1,95 @@
 ---
-title: "IDebugProgram2::EnumCodePaths | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::EnumCodePaths"
-helpviewer_keywords: 
-  - "IDebugProgram2::EnumCodePaths"
+title: IDebugProgram2::EnumCodePaths | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::EnumCodePaths
+helpviewer_keywords:
+- IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgram2::EnumCodePaths
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2f083ff40b108be9ded3792c433a4dcf048f4914
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera una lista de las rutas de acceso del código para una posición determinada de un archivo de código fuente.  
+---
+# <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
+Retrieves a list of the code paths for a given position in a source file.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumCodePaths(   
-   LPCOLESTR            pszHint,  
-   IDebugCodeContext2*  pStart,  
-   IDebugStackFrame2*   pFrame,  
-   BOOL                 fSource,  
-   IEnumCodePaths2**    ppEnum,  
-   IDebugCodeContext2** ppSafety  
+HRESULT EnumCodePaths(   
+   LPCOLESTR            pszHint,  
+   IDebugCodeContext2*  pStart,  
+   IDebugStackFrame2*   pFrame,  
+   BOOL                 fSource,  
+   IEnumCodePaths2**    ppEnum,  
+   IDebugCodeContext2** ppSafety  
 );  
 ```  
   
-```c#  
-int EnumCodePaths(   
-   string                 pszHint,  
-   IDebugCodeContext2     pStart,  
-   IDebugStackFrame2      pFrame,  
-   Int                    fSource,  
-   out IEnumCodePaths2    ppEnum,  
-   out IDebugCodeContext2 ppSafety  
+```cs  
+int EnumCodePaths(   
+   string                 pszHint,  
+   IDebugCodeContext2     pStart,  
+   IDebugStackFrame2      pFrame,  
+   Int                    fSource,  
+   out IEnumCodePaths2    ppEnum,  
+   out IDebugCodeContext2 ppSafety  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pszHint`  
- \[in\]  La palabra bajo el cursor de **código fuente** o las vistas de **Desensamblado** en el IDE.  
+ [in] The word under the cursor in the **Source** or **Disassembly** view in the IDE.  
   
  `pStart`  
- \[in\]  Un objeto de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa el contexto actual del código.  
+ [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing the current code context.  
   
  `pFrame`  
- \[in\]  Un objeto de [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa el marco de pila asociado al punto de interrupción actual.  
+ [in] An [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) object representing the stack frame associated with the current breakpoint.  
   
  `fSource`  
- \[in\]  Cero \(`TRUE`\) si en la vista de **código fuente** , o cero \(`FALSE`\) si en la vista de **Desensamblado** .  
+ [in] Nonzero (`TRUE`) if in the **Source** view, or zero (`FALSE`) if in the **Disassembly** view.  
   
  `ppEnum`  
- \[out\]  Devuelve un objeto de [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) que contiene una lista de las rutas de acceso del código.  
+ [out] Returns an [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) object containing a list of the code paths.  
   
  `ppSafety`  
- \[out\]  Devuelve un objeto de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa un contexto de código adicional que se establecerá como punto de interrupción en caso de que se omite la ruta de acceso de código elegida.  Esto puede ocurrir en el caso de una expresión booleana cortocircuitada, por ejemplo.  
+ [out] Returns an [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing an additional code context to be set as a breakpoint in case the chosen code path is skipped. This can happen in the case of a short-circuited Boolean expression, for example.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Una ruta de acceso de código describe el nombre de un método o función que se invoca para obtener el punto actual en la ejecución del programa.  una lista de rutas de acceso de código representa la pila de llamadas.  
+## <a name="remarks"></a>Remarks  
+ A code path describes the name of a method or function that was called to get to the current point in the execution of the program. A list of code paths represents the call stack.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

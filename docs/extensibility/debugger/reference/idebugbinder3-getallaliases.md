@@ -1,58 +1,75 @@
 ---
-title: "IDebugBinder3::GetAllAliases | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetAllAliases"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetAllAliases (método)"
+title: IDebugBinder3::GetAllAliases | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder3::GetAllAliases
+helpviewer_keywords:
+- IDebugBinder3::GetAllAliases method
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugBinder3::GetAllAliases
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e39fb66c7618085393dfdb6a14ec085aa0f4b99e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Este método recupera una lista de alias de programa.  
+---
+# <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
+This method retrieves a list of aliases from the program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetAllAliases(  
-   UINT          uRequest,  
-   IDebugAlias** ppAliases,  
-   UINT*         puFetched  
+   UINT          uRequest,  
+   IDebugAlias** ppAliases,  
+   UINT*         puFetched  
 );  
 ```  
   
-```c#  
+```cs  
 int GetAllAliases(  
-   uint          uRequest,   
-   IDebugAlias[] ppAliases,   
-   out uint      puFetched  
+   uint          uRequest,   
+   IDebugAlias[] ppAliases,   
+   out uint      puFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `uRequest`  
- \[in\]  El número máximo de alias a cambiar \(especifica la longitud de la matriz pasado en `ppAliases`\).  
+ [in] The maximum number of aliases to return (specifies the length of the array passed into `ppAliases`).  
   
  `ppAliases`  
- \[in, out\]  Matriz a rellenar con alias \(si es un valor null y `uRequest` es 0, el recuento de los alias que pueden ser devueltos se devuelto por `puFetched`\).  
+ [in, out] Array to fill in with aliases (if this is a null value and `uRequest` is 0, the count of aliases that can be returned will be returned by `puFetched`).  
   
  `puFetched`  
- \[out\]  Devuelve el número de alias recopilados.  
+ [out] Returns the number of aliases obtained.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

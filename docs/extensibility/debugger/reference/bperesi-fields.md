@@ -1,87 +1,104 @@
 ---
-title: "BPERESI_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BPERESI_FIELDS"
-helpviewer_keywords: 
-  - "Enumeración BPERESI_FIELDS"
+title: BPERESI_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BPERESI_FIELDS
+helpviewer_keywords:
+- BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# BPERESI_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8c692ada419043aeb9e374d997b90202d14a6d88
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Especifica la información que se recupere sobre una resolución incorrecta de un punto de interrupción.  
+---
+# <a name="bperesifields"></a>BPERESI_FIELDS
+Specifies the information to be retrieved about a failed resolution of a breakpoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_BPERESI_FIELDS {   
-   PERESI_BPRESLOCATION = 0x0001,  
-   BPERESI_PROGRAM      = 0x0002,  
-   BPERESI_THREAD       = 0x0004,  
-   BPERESI_MESSAGE      = 0x0008,  
-   BPERESI_TYPE         = 0x0010,  
-   BPERESI_ALLFIELDS    = 0xffffffff  
+enum enum_BPERESI_FIELDS {   
+   PERESI_BPRESLOCATION = 0x0001,  
+   BPERESI_PROGRAM      = 0x0002,  
+   BPERESI_THREAD       = 0x0004,  
+   BPERESI_MESSAGE      = 0x0008,  
+   BPERESI_TYPE         = 0x0010,  
+   BPERESI_ALLFIELDS    = 0xffffffff  
 };  
 typedef DWORD BPERESI_FIELDS;  
 ```  
   
-```c#  
-public enum enum_BPERESI_FIELDS {   
-   PERESI_BPRESLOCATION = 0x0001,  
-   BPERESI_PROGRAM      = 0x0002,  
-   BPERESI_THREAD       = 0x0004,  
-   BPERESI_MESSAGE      = 0x0008,  
-   BPERESI_TYPE         = 0x0010,  
-   BPERESI_ALLFIELDS    = 0xffffffff  
+```cs  
+public enum enum_BPERESI_FIELDS {   
+   PERESI_BPRESLOCATION = 0x0001,  
+   BPERESI_PROGRAM      = 0x0002,  
+   BPERESI_THREAD       = 0x0004,  
+   BPERESI_MESSAGE      = 0x0008,  
+   BPERESI_TYPE         = 0x0010,  
+   BPERESI_ALLFIELDS    = 0xffffffff  
 };  
 ```  
   
-## Members  
- PERESI\_BPRESLOCATION  
- Inicializa y usan el campo de `bpResLocation` \(ubicación de resolución de punto de interrupción\) de la estructura de [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .  
+## <a name="members"></a>Members  
+ PERESI_BPRESLOCATION  
+ Initialize/use the `bpResLocation` (breakpoint resolution location) field of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure.  
   
- BPERESI\_PROGRAM  
- Inicializa y usan el campo de `pProgram` de la estructura de `BP_ERROR_RESOLUTION_INFO` .  
+ BPERESI_PROGRAM  
+ Initialize/use the `pProgram` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
   
- BPERESI\_THREAD  
- Inicializa y usan el campo de `pThread` de la estructura de `BP_ERROR_RESOLUTION_INFO` .  
+ BPERESI_THREAD  
+ Initialize/use the `pThread` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
   
- BPERESI\_MESSAGE  
- Inicializa y usan el campo de `bstrMessage` de la estructura de `BP_ERROR_RESOLUTION_INFO` .  
+ BPERESI_MESSAGE  
+ Initialize/use the `bstrMessage` field of the `BP_ERROR_RESOLUTION_INFO` structure.  
   
- BPERESI\_TYPE  
- Inicializa y usan el campo de `dwType` \(punto de interrupción tipo\) de la estructura de `BP_ERROR_RESOLUTION_INFO` .  
+ BPERESI_TYPE  
+ Initialize/use the `dwType` (breakpoint type) field of the `BP_ERROR_RESOLUTION_INFO` structure.  
   
- BPERESI\_ALLFIELDS  
- Inicializa y el uso todos los campos de la estructura de `BP_ERROR_RESOLUTION_INFO` .  
+ BPERESI_ALLFIELDS  
+ Initialize/use all fields of the `BP_ERROR_RESOLUTION_INFO` structure.  
   
-## Comentarios  
- Pasado como un parámetro al método de [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) para indicar qué campos de la estructura de [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) se deben inicializar.  
+## <a name="remarks"></a>Remarks  
+ Passed as a parameter to the [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) method to indicate which fields of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure are to be initialized.  
   
- Esta configuración también se utilizan para indicar qué campos de la estructura de `BP_ERROR_RESOLUTION_INFO` son utilizados y válidos cuando se devuelve esa estructura.  
+ These values are also used to indicate which fields in the `BP_ERROR_RESOLUTION_INFO` structure are used and valid when that structure is returned.  
   
- estos valores se pueden combinar con `OR`bit a bit.  
+ These values may be combined with a bitwise `OR`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

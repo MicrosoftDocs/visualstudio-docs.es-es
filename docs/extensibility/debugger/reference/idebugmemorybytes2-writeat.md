@@ -1,63 +1,80 @@
 ---
-title: "IDebugMemoryBytes2::WriteAt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryBytes2::WriteAt"
-helpviewer_keywords: 
-  - "IDebugMemoryBytes2::WriteAt (método)"
-  - "Método WriteAt"
+title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryBytes2::WriteAt
+helpviewer_keywords:
+- IDebugMemoryBytes2::WriteAt method
+- WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugMemoryBytes2::WriteAt
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4b6066de1c205e7df469c2c4f016e533ae9fd01a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Escriba el número de bytes especificado de memoria, empezando en la dirección especificada.  
+---
+# <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
+Writes the specified number of bytes of memory, starting at the specified address.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT WriteAt(   
-   IDebugMemoryContext2* pStartContext,  
-   DWORD                 dwCount,  
-   BYTE*                 rgbMemory  
+HRESULT WriteAt(   
+   IDebugMemoryContext2* pStartContext,  
+   DWORD                 dwCount,  
+   BYTE*                 rgbMemory  
 );  
 ```  
   
-```c#  
+```cs  
 int WriteAt(  
-   IDebugMemoryContext2 pStartContext,  
-   uint                 dwCount,  
-   byte[]               rgbMemory  
+   IDebugMemoryContext2 pStartContext,  
+   uint                 dwCount,  
+   byte[]               rgbMemory  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pStartContext`  
- \[in\]  El objeto de [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que especifica dónde iniciar bytes de escritura.  
+ [in] The [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object that specifies where to start writing bytes.  
   
  `dwCount`  
- \[in\]  el número de bytes a escribir.  
+ [in] The number of bytes to write.  
   
  `rgbMemory`  
- \[in\]  los bytes a escribir.  Esta matriz se asume que por lo menos bytes de `dwCount` de tamaño.  
+ [in] The bytes to write. This array is assumed to be at least `dwCount` bytes in size.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` si no que todos los bytes pueden tener tipo o devuelve un código de error \(normalmente `E_FAIL`\).  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns `S_FALSE` if not all bytes could be written or returns an error code (typically `E_FAIL`).  
   
-## Comentarios  
- Si la dirección inicial no está dentro de la ventana memoria representada por este objeto de [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) , ninguna escribir aparece y un código de error de `E_FAIL` se devuelve \(incluso si la cantidad en la escritura se superpone en el espacio de memoria.  
+## <a name="remarks"></a>Remarks  
+ If the starting address is not within the memory window represented by this [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object, no writing occurs and an error code of `E_FAIL` is returned — even if the amount to write overlaps into the memory space.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

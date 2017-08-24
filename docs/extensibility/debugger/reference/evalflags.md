@@ -1,90 +1,107 @@
 ---
-title: "EVALFLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EVALFLAGS"
-helpviewer_keywords: 
-  - "Enumeración EVALFLAGS"
+title: EVALFLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EVALFLAGS
+helpviewer_keywords:
+- EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# EVALFLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 89d8edcc2df38d51f8d7bb9d88084410bec86a41
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Especifica marcadores que controlan la evaluación de la expresión.  
+---
+# <a name="evalflags"></a>EVALFLAGS
+Specifies flags that control expression evaluation.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_EVALFLAGS {  
-   EVAL_RETURNVALUE = 0x0002,  
-   EVAL_NOSIDEEFFECTS = 0x0004,  
-   EVAL_ALLOWBPS = 0x0008,  
-   EVAL_ALLOWERRORREPORT = 0x0010,  
-   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
-   EVAL_NOFUNCEVAL = 0x0080,  
-   EVAL_NOEVENTS = 0x1000  
+enum enum_EVALFLAGS {  
+   EVAL_RETURNVALUE = 0x0002,  
+   EVAL_NOSIDEEFFECTS = 0x0004,  
+   EVAL_ALLOWBPS = 0x0008,  
+   EVAL_ALLOWERRORREPORT = 0x0010,  
+   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
+   EVAL_NOFUNCEVAL = 0x0080,  
+   EVAL_NOEVENTS = 0x1000  
 };  
 typedef DWORD EVALFLAGS;  
 ```  
   
-```c#  
-public enum enum_EVALFLAGS {  
-   EVAL_RETURNVALUE = 0x0002,  
-   EVAL_NOSIDEEFFECTS = 0x0004,  
-   EVAL_ALLOWBPS = 0x0008,  
-   EVAL_ALLOWERRORREPORT = 0x0010,  
-   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
-   EVAL_NOFUNCEVAL = 0x0080,  
-   EVAL_NOEVENTS = 0x1000  
+```cs  
+public enum enum_EVALFLAGS {  
+   EVAL_RETURNVALUE = 0x0002,  
+   EVAL_NOSIDEEFFECTS = 0x0004,  
+   EVAL_ALLOWBPS = 0x0008,  
+   EVAL_ALLOWERRORREPORT = 0x0010,  
+   EVAL_FUNCTION_AS_ADDRESS = 0x0040,  
+   EVAL_NOFUNCEVAL = 0x0080,  
+   EVAL_NOEVENTS = 0x1000  
 }  
 ```  
   
-## Members  
- EVAL\_RETURNVALUE  
- Especifica que el valor devuelto, si existe, se evalúa.  
+## <a name="members"></a>Members  
+ EVAL_RETURNVALUE  
+ Specifies that the return value, if any, be evaluated.  
   
- EVAL\_NOSIDEEFFECTS  
- especifica que los efectos secundarios para no ser permitido.  
+ EVAL_NOSIDEEFFECTS  
+ Specifies that side effects not be allowed.  
   
- EVAL\_ALLOWBPS  
- Especifica detenerse en los puntos de interrupción.  
+ EVAL_ALLOWBPS  
+ Specifies stopping on breakpoints.  
   
- EVAL\_ALLOWERRORREPORT  
- Especifica el informe de errores al host que se permitirá.  Se utiliza principalmente para la evaluación de expresiones en script en Internet Explorer.  
+ EVAL_ALLOWERRORREPORT  
+ Specifies error reporting to the host to be allowed. Primarily used for expression evaluation in script in Internet Explorer.  
   
- EVAL\_FUNCTION\_AS\_ADDRESS  
- Convierte las funciones que se evaluarán como direcciones, en lugar de invocar la función.  
+ EVAL_FUNCTION_AS_ADDRESS  
+ Forces functions to be evaluated as addresses, instead of invoking the function.  
   
- EVAL\_NOFUNCEVAL  
- Impide que la función sea evaluada.  por ejemplo, considere el símbolo de `int` en la expresión `myExpression(int) + 10`.  esta función se puede correctamente evaluar como dirección, pero no como valor.  
+ EVAL_NOFUNCEVAL  
+ Prevents function from being evaluated. For example, consider the `int` token in the expression `myExpression(int) + 10`. This function can be correctly evaluated as an address, but not as a value.  
   
- EVAL\_NOEVENTS  
- Marca para indicar que los eventos que se producen durante la evaluación de la expresión no se deberían enviar al administrador \(SDM\) de depuración de la sesión o al IDE.  
+ EVAL_NOEVENTS  
+ Flag to indicate that events that occur during the expression evaluation should not be sent to the session debug manager (SDM) or to the IDE.  
   
-## Comentarios  
- Estos marcadores se pasan como argumentos a los métodos de [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) y de [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .  
+## <a name="remarks"></a>Remarks  
+ These flags are passed as an argument to the [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) and [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) methods.  
   
- Estos marcadores pueden combinarse con una operación OR bit a bit.  
+ These flags may be combined with a bitwise OR.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

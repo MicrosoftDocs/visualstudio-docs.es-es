@@ -1,110 +1,115 @@
 ---
-title: "Tutorial: Crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "elementos de proyecto de SharePoint, definir sus propios tipos"
-  - "elementos de proyecto [desarrollo de SharePoint en Visual Studio], definir sus propios tipos"
-  - "proyectos de SharePoint, crear plantillas personalizadas"
-  - "desarrollo de SharePoint en Visual Studio, definir nuevos tipos de elementos de proyecto"
+title: 'Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1 | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint project items, defining your own types
+- project items [SharePoint development in Visual Studio], defining your own types
+- SharePoint projects, creating custom templates
+- SharePoint development in Visual Studio, defining new project item types
 ms.assetid: b53d48d7-cbf2-45c2-9537-06a6819be397
 caps.latest.revision: 60
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 59
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2ec75ccd4e3e78206ef7c812ef0f51a76ee1812b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
+
 ---
-# Tutorial: Crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1
-  Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint.  Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto.  En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.  
+# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1
+  SharePoint projects are containers for one or more SharePoint project items. You can extend the SharePoint project system in Visual Studio by creating your own SharePoint project item types and then associating them with a project template. In this walkthrough, you will define a project item type for creating a site column, and then you will create a project template that can be used to create a new project that contains a site column project item.  
   
- En este tutorial se muestran las siguientes tareas:  
+ This walkthrough demonstrates the following tasks:  
   
--   Crear una extensión de Visual Studio que define un nuevo tipo de elemento de proyecto de SharePoint para una columna de sitio.  El tipo de elemento de proyecto incluye una propiedad personalizada simple que aparece en la ventana **Propiedades**.  
+-   Creating a Visual Studio extension that defines a new type of SharePoint project item for a site column. The project item type includes a simple custom property that appears in the **Properties** window.  
   
--   Crear una plantilla de proyecto de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para el elemento de proyecto.  
+-   Creating a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] project template for the project item.  
   
--   Compilar un paquete de extensión de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] \(VSIX\) para implementar la plantilla de proyecto y el ensamblado de la extensión.  
+-   Building a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) package to deploy the project template and the extension assembly.  
   
--   Depurar y probar el elemento de proyecto.  
+-   Debugging and testing the project item.  
   
- Este es un tutorial independiente.  Después de completar este tutorial, puede mejorar el elemento de proyecto si agrega un asistente a la plantilla de proyecto.  Para obtener más información, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+ This is a stand-alone walkthrough. After you complete this walkthrough, you can enhance the project item by adding a wizard to the project template. For more information, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Puede descargar un ejemplo que contiene los proyectos completos, el código y otros archivos para este tutorial en la siguiente ubicación: [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
-## Requisitos previos  
- Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components on the development computer to complete this walkthrough:  
   
--   Ediciones compatibles de Microsoft Windows, SharePoint y [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Para obtener más información, vea [Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows, SharePoint and [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)].  En este tutorial se utiliza la plantilla **Proyecto VSIX** del SDK para crear un paquete VSIX e implementar el elemento.  Para obtener más información, vea [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   The [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+ Knowledge of the following concept is helpful, but not required, to complete the walkthrough:  
   
--   Columnas de sitio de SharePoint.  Para obtener más información, vea [Columnas](http://go.microsoft.com/fwlink/?LinkId=183547).  
+-   Site columns in SharePoint. For more information, see [Columns](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
--   Plantillas de proyecto de Visual Studio.  Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).  
+-   Project templates in Visual Studio. For more information, see [Creating Project and Item Templates](/visualstudio/ide/creating-project-and-item-templates).  
   
-## Crear los proyectos  
- Para completar este tutorial, debe crear tres proyectos:  
+## <a name="creating-the-projects"></a>Creating the Projects  
+ To complete this walkthrough, you need to create three projects:  
   
--   Un proyecto VSIX.  Este proyecto crea el paquete VSIX para implementar el elemento de proyecto de columnas de sitio y la plantilla de proyecto.  
+-   A VSIX project. This project creates the VSIX package to deploy the site column project item and the project template.  
   
--   Un proyecto de plantilla de proyecto.  Este proyecto crea una plantilla de proyecto que se puede usar para crear un nuevo proyecto de SharePoint que contiene el elemento de proyecto de columnas de sitio.  
+-   A project template project. This project creates a project template that can be used to create a new SharePoint project that contains the site column project item.  
   
--   Un proyecto de biblioteca de clases.  Este proyecto implementa una extensión de Visual Studio que define el comportamiento del elemento de proyecto de columnas de sitio.  
+-   A class library project. This project that implements a Visual Studio extension that defines the behavior of the site column project item.  
   
- Comience el tutorial creando ambos proyectos.  
+ Start the walkthrough by creating the projects.  
   
-#### Para crear el proyecto VSIX  
+#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
   
-1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+2.  On the menu bar, choose **File**, **New**, **Project**.  
   
-3.  En la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** se haya elegido en la lista de versiones de .NET Framework.  
+3.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
   
-4.  Expanda los nodos **Visual Basic** o **Visual C\#** y, a continuación, elija el nodo **Extensibilidad**.  
-  
-    > [!NOTE]  
-    >  El nodo **Extensibilidad** solo está disponible si se instala Visual Studio SDK.  Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.  
-  
-5.  En la lista de plantillas de proyecto, elija **Proyecto VSIX**.  
-  
-6.  En el cuadro **Nombre**, escriba **SiteColumnProjectItem** y elija el botón **Aceptar**.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **SiteColumnProjectItem** al **Explorador de soluciones**.  
-  
-#### Para crear el proyecto de plantilla de proyecto  
-  
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y después **Nuevo proyecto**.  
+4.  Expand the **Visual Basic** or **Visual C#** nodes, and then choose the **Extensibility** node.  
   
     > [!NOTE]  
-    >  En los proyectos de Visual Basic, el nodo de la solución aparece en el **Explorador de soluciones** solo cuando se activa la casilla **Mostrar solución siempre** en [General, Proyectos y soluciones, Cuadro de diálogo Opciones](http://msdn.microsoft.com/es-es/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
   
-2.  En la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** se haya elegido en la lista de versiones de .NET Framework.  
+5.  In the list of project templates, choose **VSIX Project**.  
   
-3.  Expanda los nodos **Visual C\#** o **Visual Basic** y, a continuación, elija el nodo **Extensibilidad**.  
+6.  In the **Name** box, enter **SiteColumnProjectItem**, and then choose the **OK** button.  
   
-4.  En la lista de plantillas de proyecto, elija la plantilla **Plantilla de proyecto de C\#** o **Plantilla de proyecto de Visual Basic**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SiteColumnProjectItem** project to **Solution Explorer**.  
   
-5.  En el cuadro **Nombre**, escriba **SiteColumnProjectTemplate** y elija el botón **Aceptar**.  
+#### <a name="to-create-the-project-template-project"></a>To create the project template project  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **SiteColumnProjectTemplate** a la solución.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
   
-6.  Elimine el archivo de código Class1 del proyecto.  
+    > [!NOTE]  
+    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
-7.  Si creó un proyecto de Visual Basic, elimine también los siguientes archivos del proyecto:  
+2.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+  
+3.  Expand the **Visual C#** or **Visual Basic** node, and then choose the **Extensibility** node.  
+  
+4.  In the list of project templates, choose the **C# Project Template** or **Visual Basic Project Template** template.  
+  
+5.  In the **Name** box, enter **SiteColumnProjectTemplate**, and then choose the **OK** button.  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SiteColumnProjectTemplate** project to the solution.  
+  
+6.  Delete the Class1 code file from the project.  
+  
+7.  If you created a Visual Basic project, also delete the following files from the project:  
   
     -   MyApplication.Designer.vb  
   
@@ -118,99 +123,98 @@ caps.handback.revision: 59
   
     -   Settings.settings  
   
-#### Para crear la extensión de proyecto  
+#### <a name="to-create-the-extension-project"></a>To create the extension project  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y después **Nuevo proyecto**.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
   
-2.  En la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** se haya elegido en la lista de versiones de .NET Framework.  
+2.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
   
-3.  Expanda los nodos **Visual C\#** o **Visual Basic**, elija el nodo **Windows** y después elija la plantilla **Biblioteca de clases**.  
+3.  Expand the **Visual C#** or **Visual Basic** nodes, choose the **Windows** node, and then choose the **Class Library** template.  
   
-4.  En el cuadro **Nombre**, escriba **ProjectItemTypeDefinition** y elija el botón **Aceptar**.  
+4.  In the **Name** box, enter **ProjectItemTypeDefinition** and then choose the **OK** button.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ProjectItemTypeDefinition** a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ProjectItemTypeDefinition** project to the solution and opens the default Class1 code file.  
   
-5.  Elimine el archivo de código Class1 del proyecto.  
+5.  Delete the Class1 code file from the project.  
   
-## Configurar el proyecto de extensión  
- Agregue los archivos de código y las referencias de ensamblado para configurar el proyecto de extensión.  
+## <a name="configuring-the-extension-project"></a>Configuring the Extension Project  
+ Add code files and assembly references to configure the extension project.  
   
-#### Para configurar el proyecto  
+#### <a name="to-configure-the-project"></a>To configure the project  
   
-1.  En el proyecto ProjectItemTypeDefinition, agregue un archivo de código denominado **SiteColumnProjectItemTypeProvider**.  
+1.  In the ProjectItemTypeDefinition project, add a code file that's named **SiteColumnProjectItemTypeProvider**.  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar referencia**.  
+2.  On the menu bar, choose **Project**, **Add Reference**.  
   
-3.  En el cuadro de diálogo **Administrador de referencias \- ProjectItemTypeDefinition**, expanda el nodo **Ensamblados**, elija el nodo **Framework** y después active la casilla System.ComponentModel.Composition.  
+3.  In the **Reference Manager - ProjectItemTypeDefinition** dialog box, expand the **Assemblies** node, choose the **Framework** node, and then select the System.ComponentModel.Composition check box.  
   
-4.  Elija el nodo **Extensiones**, active la casilla situada junto al ensamblado Microsoft.VisualStudio.SharePoint y después elija el botón **Aceptar**.  
+4.  Choose the **Extensions** node, select the check box next to the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
   
-## Definir el nuevo tipo de elemento de proyecto de SharePoint  
- Cree una clase que implemente la interfaz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> para definir el comportamiento del nuevo tipo de elemento de proyecto.  Implemente esta interfaz para definir un nuevo tipo de elemento de proyecto todas las veces que desee.  
+## <a name="defining-the-new-sharepoint-project-item-type"></a>Defining the New SharePoint Project Item Type  
+ Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface to define the behavior of the new project item type. Implement this interface whenever you want to define a new type of project item.  
   
-#### Para definir el nuevo tipo de elemento de proyecto de SharePoint  
+#### <a name="to-define-the-new-sharepoint-project-item-type"></a>To define the new SharePoint project item type  
   
-1.  En el archivo de código **SiteColumnProjectItemTypeProvider**, reemplace el código predeterminado por el siguiente código y guarde el archivo.  
+1.  In the **SiteColumnProjectItemTypeProvider** code file, replace the default code with the following code, and then save the file.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]  
+     [!code-cs[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]  [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]  
   
-## Crear una plantilla de proyecto de Visual Studio  
- Al crear una plantilla de proyecto, permite que otros desarrolladores creen proyectos de SharePoint que contengan elementos de proyecto de columnas de sitio.  Una plantilla de proyecto de SharePoint incluye los archivos necesarios para todos los proyectos de Visual Studio, como los archivos .csproj o .vbproj y .vstemplate, y los archivos que son específicos de los proyectos de SharePoint.  Para obtener más información, vea [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="creating-a-visual-studio-project-template"></a>Creating a Visual Studio Project Template  
+ By creating a project template, you enable other developers to create SharePoint projects that contain site column project items. A SharePoint project template includes files that are required for all projects in Visual Studio, such as .csproj or .vbproj and .vstemplate files, and files that are specific to SharePoint projects. For more information, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- En este procedimiento, creará un proyecto de SharePoint vacío para generar los archivos específicos de los proyectos de SharePoint.  A continuación, agregue estos archivos al proyecto SiteColumnProjectTemplate para incluirlos en la plantilla que se genera a partir de este proyecto.  Asimismo, configure el archivo de proyecto SiteColumnProjectTemplate para especificar dónde aparecerá la plantilla de proyecto en el cuadro de diálogo **Nuevo proyecto**.  
+ In this procedure, you create an empty SharePoint project to generate the files that are specific to SharePoint projects. You then add these files to the SiteColumnProjectTemplate project so that they're included in the template that's generated from this project. You also configure the SiteColumnProjectTemplate project file to specify where the project template appears in the **New Project** dialog box.  
   
-#### Para crear los archivos de la plantilla de proyecto  
+#### <a name="to-create-the-files-for-the-project-template"></a>To create the files for the project template  
   
-1.  Inicie una segunda instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con credenciales administrativas.  
+1.  Start a second instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] with administrative credentials.  
   
-2.  Cree un proyecto de SharePoint 2010 denominado **BaseSharePointProject**.  
+2.  Create a SharePoint 2010 project that's named **BaseSharePointProject**.  
   
     > [!IMPORTANT]  
-    >  En el **Asistente para personalización de SharePoint**, no seleccione el botón de opción **Implementar como solución de granja de servidores**.  
+    >  In the **SharePoint Customization Wizard**, don't select the **Deploy as a farm solution** option button.  
   
-3.  Agregue al proyecto un elemento vacío y llame al elemento **Field1**.  
+3.  Add an Empty Element item to the project, and then name the item **Field1**.  
   
-4.  Guarde el proyecto y, a continuación, cierre la segunda instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+4.  Save the project, and then close the second instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-5.  En la instancia de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que tiene abierta la solución SiteColumnProjectItem, en el **Explorador de soluciones**, abra el menú contextual del nodo del proyecto **SiteColumnProjectTemplate**, elija **Agregar**y, a continuación, **Elemento existente**.  
+5.  In the instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] that has the SiteColumnProjectItem solution open, in **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project node, choose **Add**, and then choose **Existing Item**.  
   
-6.  En el cuadro de diálogo **Agregar elemento existente**, abra la lista de extensiones de archivo y, a continuación, elija **Todos los archivos \(\*.\*\)**.  
+6.  In the **Add Existing Item** dialog box, open the list of file extensions, and then choose **All Files (\*.\*)**.  
   
-7.  En el directorio que contiene el proyecto BaseSharePointProject, seleccione el archivo key.snk, y después elija el botón **Agregar**.  
+7.  In the directory that contains the BaseSharePointProject project, select the key.snk file, and then choose the **Add** button.  
   
     > [!NOTE]  
-    >  En este tutorial, la plantilla de proyecto que se crea usa el mismo archivo key.snk para firmar cada proyecto que se crea mediante la plantilla.  Para obtener información sobre cómo expandir este ejemplo a fin de crear un archivo key.snk diferente para cada instancia de proyecto, consulte [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+    >  In this walkthrough, the project template that you create uses the same key.snk file to sign each project that's created by using the template. To learn how to expand this sample to create a different key.snk file for each project instance, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-8.  Repita los pasos del 5 al 8 para agregar los archivos siguientes de las subcarpetas especificadas en el directorio de BaseSharePointProject:  
+8.  Repeat steps 5-8 to add the following files from the specified subfolders in the BaseSharePointProject directory:  
   
-    -   \\Field1\\Elements.xml  
+    -   \Field1\Elements.xml  
   
-    -   \\Field1\\SharePointProjectItem.spdata  
+    -   \Field1\SharePointProjectItem.spdata  
   
-    -   \\Features\\Feature1\\Feature1.feature  
+    -   \Features\Feature1\Feature1.feature  
   
-    -   \\Features\\Feature1\\Feature1.Template.xml  
+    -   \Features\Feature1\Feature1.Template.xml  
   
-    -   \\Package\\Package.package  
+    -   \Package\Package.package  
   
-    -   \\Package\\Package.Template.xml  
+    -   \Package\Package.Template.xml  
   
-     Agregue estos archivos directamente al proyecto SiteColumnProjectTemplate; no vuelva a crear las subcarpetas Field1, Features ni Package en el proyecto.  Para obtener más información sobre estos archivos, vea [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     Add these files directly to the SiteColumnProjectTemplate project; don't recreate the Field1, Features, or Package subfolders in the project. For more information about these files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-#### Para configurar el modo en que los desarrolladores detectan la plantilla de proyecto en el cuadro de diálogo Nuevo proyecto  
+#### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>To configure how developers discover the project template in the New Project dialog box  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de proyecto **SiteColumnProjectTemplate** y luego elija **Descargar el proyecto**.  Si se le pide que guarde los cambios a los archivos, elija el botón **Sí**.  
+1.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project node, and then choose **Unload Project**. If you are prompted to save changes to any files, choose the **Yes** button.  
   
-2.  Abra el menú contextual para el nodo **SiteColumnProjectTemplate** de nuevo y, a continuación, elija **Editar SiteColumnProjectTemplate.csproj** o **Editar SiteColumnProjectTemplate.vbproj**.  
+2.  Open the shortcut menu for the **SiteColumnProjectTemplate** node again, and then choose **Edit SiteColumnProjectTemplate.csproj** or **Edit SiteColumnProjectTemplate.vbproj**.  
   
-3.  En el archivo de proyecto, busque el elemento `VSTemplate` siguiente.  
+3.  In the project file, locate the following `VSTemplate` element.  
   
     ```  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
-4.  Reemplace este elemento por el código XML siguiente.  
+4.  Replace this element with the following XML.  
   
     ```  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
@@ -218,16 +222,16 @@ caps.handback.revision: 59
     </VSTemplate>  
     ```  
   
-     El elemento `OutputSubPath` especifica las carpetas adicionales en la ruta de acceso en la que se crea la plantilla de proyecto al compilar el proyecto.  Las carpetas especificadas aquí garantizan que la plantilla de proyecto solo estará disponible cuando los clientes abran el cuadro de diálogo **Nuevo proyecto**, expandan el nodo **SharePoint** y, a continuación, elijan el nodo **2010**.  
+     The `OutputSubPath` element specifies additional folders in the path under which the project template is created when you build the project. The folders specified here ensure that the project template will be available only when customers open the **New Project** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
   
-5.  Guarde y cierre el archivo.  
+5.  Save and close the file.  
   
-6.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **SiteColumnProjectTemplate** y, a continuación, elija **Volver a cargar el proyecto**.  
+6.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project, and then choose **Reload Project**.  
   
-## Modificar los archivos de plantilla de proyecto  
- En el proyecto SiteColumnProjectTemplate, edite los archivos siguientes para definir el comportamiento de la plantilla de proyecto:  
+## <a name="editing-the-project-template-files"></a>Editing the Project Template Files  
+ In the SiteColumnProjectTemplate project, edit the following files to define the behavior of the project template:  
   
--   AssemblyInfo.cs o AssemblyInfo.vb  
+-   AssemblyInfo.cs or AssemblyInfo.vb  
   
 -   Elements.xml  
   
@@ -239,32 +243,32 @@ caps.handback.revision: 59
   
 -   SiteColumnProjectTemplate.vstemplate  
   
--   ProjectTemplate.csproj o ProjectTemplate.vbproj  
+-   ProjectTemplate.csproj or ProjectTemplate.vbproj  
   
- En los procedimientos siguientes, agregará parámetros reemplazables a algunos de estos archivos.  Un parámetro reemplazable es un token que empieza y termina por el carácter del signo de dólar \($\).  Cuando un usuario emplea esta plantilla de proyecto para crear un proyecto, Visual Studio reemplaza automáticamente estos parámetros en el nuevo proyecto por valores específicos.  Para obtener más información, vea [Parámetros reemplazables](../sharepoint/replaceable-parameters.md).  
+ In the following procedures, you'll add replaceable parameters to some of these files. A replaceable parameter is a token that starts and ends with the dollar sign ($) character. When a user uses this project template to create a project, Visual Studio automatically replaces these parameters in the new project with specific values. For more information, see [Replaceable Parameters](../sharepoint/replaceable-parameters.md).  
   
-#### Para modificar el archivo AssemblyInfo.cs o AssemblyInfo.vb  
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>To edit the AssemblyInfo.cs or AssemblyInfo.vb file  
   
-1.  En el proyecto SiteColumnProjectTemplate, abra el archivo AssemblyInfo.cs o AssemblyInfo.vb y después agregue la siguiente instrucción al principio del mismo:  
+1.  In the SiteColumnProjectTemplate project, open the AssemblyInfo.cs or AssemblyInfo.vb file, and then add the following statement to the top of it:  
   
     ```vb  
     Imports System.Security  
     ```  
   
-    ```csharp  
+    ```cs  
     using System.Security;  
     ```  
   
-     Cuando la propiedad **Solución en espacio aislado** de un proyecto de SharePoint se establece en **True**, Visual Studio agrega <xref:System.Security.AllowPartiallyTrustedCallersAttribute> al archivo de código AssemblyInfo.  Sin embargo, el archivo de código AssemblyInfo de la plantilla de proyecto no importa el espacio de nombres <xref:System.Security> de forma predeterminada.  Debe agregar esta instrucción **using** o **Imports** para evitar los errores de compilación.  
+     When the **Sandboxed Solution** property of a SharePoint project is set to **True**, Visual Studio adds the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> to the AssemblyInfo code file. However, the AssemblyInfo code file in the project template doesn't import the <xref:System.Security> namespace by default. You must add this **using** or **Imports** statement to prevent compile errors.  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para modificar el archivo Elements.xml  
+#### <a name="to-edit-the-elementsxml-file"></a>To edit the Elements.xml file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo Elements.xml por el siguiente código XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the Elements.xml file with the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
           Name="$safeprojectname$"   
@@ -275,16 +279,16 @@ caps.handback.revision: 59
     </Elements>  
     ```  
   
-     El nuevo XML agrega un elemento `Field` que define el nombre de la columna de sitio, su tipo base y el grupo en el que se hace una lista de la columna de sitio en la galería.  Para obtener más información sobre el contenido de este archivo, consulte el apartado sobre el [esquema de definiciones de campo](http://go.microsoft.com/fwlink/?LinkId=184290).  
+     The new XML adds a `Field` element that defines the name of the site column, its base type, and the group in which to list the site column in the gallery. For more information about the contents of this file, see [Field Definition Schema](http://go.microsoft.com/fwlink/?LinkId=184290).  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para editar el archivo SharePointProjectItem.spdata  
+#### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>To edit the SharePointProjectItem.spdata file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo SharePointProjectItem.spdata por el siguiente código XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the SharePointProjectItem.spdata file with the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
       <Files>  
@@ -293,22 +297,22 @@ caps.handback.revision: 59
     </ProjectItem>  
     ```  
   
-     El nuevo XML realiza los cambios siguientes en el archivo:  
+     The new XML makes the following changes to the file:  
   
-    -   Cambia el atributo `Type` del elemento `ProjectItem` a la misma cadena que se pasa a <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> en la definición del elemento de proyecto \(la clase `SiteColumnProjectItemTypeProvider` que creó anteriormente en este tutorial\).  
+    -   Changes the `Type` attribute of the `ProjectItem` element to the same string that's passed to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> on the project item definition (the `SiteColumnProjectItemTypeProvider` class that you created earlier in this walkthrough).  
   
-    -   Quita los atributos `SupportedTrustLevels` y `SupportedDeploymentScopes` del elemento `ProjectItem`.  Estos valores de atributo son innecesarios porque los niveles de confianza y los ámbitos de implementación se especifican en la clase `SiteColumnProjectItemTypeProvider` en el proyecto ProjectItemTypeDefinition.  
+    -   Removes the `SupportedTrustLevels` and `SupportedDeploymentScopes` attributes from the `ProjectItem` element. These attribute values are unnecessary because the trust levels and deployment scopes are specified in the `SiteColumnProjectItemTypeProvider` class in the ProjectItemTypeDefinition project.  
   
-     Para obtener más información sobre el contenido de los archivos .spdata, vea [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md).  
+     For more information about the contents of .spdata files, see [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md).  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para modificar el archivo Feature1.feature  
+#### <a name="to-edit-the-feature1feature-file"></a>To edit the Feature1.feature file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo Feature1.feature por el siguiente código XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the Feature1.feature file with the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
              deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$"  
@@ -319,22 +323,22 @@ caps.handback.revision: 59
     </feature>  
     ```  
   
-     El nuevo XML realiza los cambios siguientes en el archivo:  
+     The new XML makes the following changes to the file:  
   
-    -   Cambia los valores de los atributos `Id` y `featureId` del elemento `feature` a `$guid4$`.  
+    -   Changes the values of the `Id` and `featureId` attributes of the `feature` element to `$guid4$`.  
   
-    -   Cambia los valores del atributo `itemId` del elemento `projectItemReference` a `$guid2$`.  
+    -   Changes the values of the `itemId` attribute of the `projectItemReference` element to `$guid2$`.  
   
-     Para obtener más información sobre los archivos .feature, vea [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     For more information about .feature files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para modificar el archivo Package.package  
+#### <a name="to-edit-the-packagepackage-file"></a>To edit the Package.package file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo Package.package por el siguiente código XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the Package.package file with the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
              xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">  
@@ -344,24 +348,24 @@ caps.handback.revision: 59
     </package>  
     ```  
   
-     El nuevo XML realiza los cambios siguientes en el archivo:  
+     The new XML makes the following changes to the file:  
   
-    -   Cambia los valores de los atributos `Id` y `solutionId` del elemento `package` a `$guid3$`.  
+    -   Changes the values of the `Id` and `solutionId` attributes of the `package` element to `$guid3$`.  
   
-    -   Cambia los valores del atributo `itemId` del elemento `featureReference` a `$guid4$`.  
+    -   Changes the values of the `itemId` attribute of the `featureReference` element to `$guid4$`.  
   
-     Para obtener más información sobre los archivos .package, vea [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     For more information about .package files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para modificar el archivo SiteColumnProjectTemplate.vstemplate  
+#### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>To edit the SiteColumnProjectTemplate.vstemplate file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo SiteColumnProjectTemplate.vstemplate por una de las siguientes secciones de XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the SiteColumnProjectTemplate.vstemplate file with one of the following sections of XML.  
   
-    -   Si está creando una plantilla de proyecto de Visual C\#, use el XML siguiente.  
+    -   If you're creating a Visual C# project template, use the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
         <Name>Site Column</Name>  
@@ -394,10 +398,10 @@ caps.handback.revision: 59
     </VSTemplate>  
     ```  
   
-    -   Si está creando una plantilla de proyecto de Visual Basic, use el XML siguiente.  
+    -   If you're creating a Visual Basic project template, use the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
         <Name>Site Column</Name>  
@@ -430,26 +434,26 @@ caps.handback.revision: 59
     </VSTemplate>  
     ```  
   
-     El nuevo XML realiza los cambios siguientes en el archivo:  
+     The new XML makes the following changes to the file:  
   
-    -   Establece el elemento `Name` en el valor **Columna de sitio**. \(Este nombre aparece en el cuadro de diálogo **Nuevo proyecto**\).  
+    -   Sets the `Name` element to the value **Site Column**. (This name appears in the **New Project** dialog box).  
   
-    -   Agrega elementos `ProjectItem` para cada uno de los archivos que se incluyen en cada instancia de proyecto.  
+    -   Adds `ProjectItem` elements for each filethat's included in each project instance.  
   
-    -   Usa el espacio de nombres “http:\/\/schemas.microsoft.com\/developer\/vstemplate\/2005”.  Otros archivos de proyecto de esta solución usan el espacio de nombres “http:\/\/schemas.microsoft.com\/developer\/msbuild\/2003”.  Por consiguiente, los mensajes de advertencia del esquema XML se generarán, pero puede pasarlos por alto en este tutorial.  
+    -   Uses the namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Other project files in this solution use the "http://schemas.microsoft.com/developer/msbuild/2003" namespace. Therefore, XML schema warning messages will be generated, but you can disregard them in this walkthrough.  
   
-     Para obtener más información sobre el contenido de los archivos .vstemplate, vea [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+     For more information about the contents of .vstemplate files, see [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-#### Para modificar el archivo ProjectTemplate.csproj o ProjectTemplate.vbproj  
+#### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>To edit the ProjectTemplate.csproj or ProjectTemplate.vbproj file  
   
-1.  En el proyecto SiteColumnProjectTemplate, reemplace el contenido del archivo ProjectTemplate.csproj o ProjectTemplate.vbproj por una de las siguientes secciones de XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the ProjectTemplate.csproj file or ProjectTemplate.vbproj file with one of the following sections of XML.  
   
-    -   Si está creando una plantilla de proyecto de Visual C\#, use el XML siguiente.  
+    -   If you're creating a Visual C# project template, use the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -526,10 +530,10 @@ caps.handback.revision: 59
     </Project>  
     ```  
   
-    1.  Si está creando una plantilla de proyecto de Visual Basic, use el XML siguiente.  
+    1.  If you're creating a Visual Basic project template, use the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -625,140 +629,142 @@ caps.handback.revision: 59
     </Project>  
     ```  
   
-     El nuevo XML realiza los cambios siguientes en el archivo:  
+     The new XML makes the following changes to the file:  
   
-    -   Usa el elemento `TargetFrameworkVersion` para especificar .NET Framework 3.5, no 4.5.  
+    -   Uses the `TargetFrameworkVersion` element to specify the .NET Framework 3.5, not 4.5.  
   
-    -   Agrega los elementos `SignAssembly` y `AssemblyOriginatorKeyFile` para firmar el resultado del proyecto.  
+    -   Adds `SignAssembly` and `AssemblyOriginatorKeyFile` elements to sign the project output.  
   
-    -   Agrega elementos `Reference` para las referencias de ensamblado usadas por los proyectos de SharePoint.  
+    -   Adds `Reference` elements for assembly references that SharePoint projects use.  
   
-    -   Agrega elementos para cada uno de los archivos predeterminados del proyecto, como Elements.xml y SharePointProjectItem.spdata.  
+    -   Adds elements for each default file in the project, such as Elements.xml and SharePointProjectItem.spdata.  
   
-2.  Guarde y cierre el archivo.  
+2.  Save and close the file.  
   
-## Crear un paquete VSIX para implementar la plantilla de proyecto  
- Para implementar la extensión, use el proyecto VSIX en la solución **SiteColumnProjectItem** para crear un paquete VSIX.  Primero, configure el paquete VSIX modificando el archivo source.extension.vsixmanifest incluido en el proyecto VSIX.  A continuación, cree el paquete VSIX compilando la solución.  
+## <a name="creating-a-vsix-package-to-deploy-the-project-template"></a>Creating a VSIX Package to Deploy the Project Template  
+ To deploy the extension, use the VSIX project in the **SiteColumnProjectItem** solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file that is included in the VSIX project. Then, create the VSIX package by building the solution.  
   
-#### Para crear y configurar el paquete VSIX  
+#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
   
-1.  En el **Explorador de soluciones**, en el proyecto **SiteColumnProjectItem**, abra el archivo source.extension.vsixmanifest en el editor de manifiestos.  
+1.  In **Solution Explorer**, in the **SiteColumnProjectItem** project, open the source.extension.vsixmanifest file in the manifest editor.  
   
-     El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX.  Para obtener más información sobre este archivo, vea [Referencia de esquema de extensión VSIX](http://msdn.microsoft.com/es-es/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
-2.  En el cuadro **Nombre de producto**, escriba **Columna de sitio**.  
+2.  In the **Product Name** box, enter **Site Column**.  
   
-3.  En el cuadro **Autor**, escriba **Contoso**.  
+3.  In the **Author** box, enter **Contoso**.  
   
-4.  En el cuadro **Descripción**, escriba **Proyecto de SharePoint para crear columnas de sitio**.  
+4.  In the **Description** box, enter **A SharePoint project for creating site columns**.  
   
-5.  Elija la pestaña **Activos** y, a continuación, elija el botón **Nuevo**.  
+5.  Choose the **Assets** tab, and then choose the **New** button.  
   
-     Se abre el cuadro de diálogo **Agregar nuevo activo**.  
+     The **Add New Asset** dialog box opens.  
   
-6.  En la lista **Tipo**, elija **Microsoft.VisualStudio.ProjectTemplate**.  
-  
-    > [!NOTE]  
-    >  Este valor corresponde al elemento `ProjectTemplate` del archivo extension.vsixmanifest.  Este elemento identifica la subcarpeta del paquete VSIX que contiene la plantilla de proyecto.  Para obtener más información, vea [NIB: ProjectTemplate Element \(VSX Schema\)](http://msdn.microsoft.com/es-es/87add64c-9dcd-495f-8815-209dab182cb1).  
-  
-7.  En la lista **Origen**, elija **Un proyecto de la solución actual**.  
-  
-8.  En la lista **Proyecto**, elija **SiteColumnProjectTemplate** y, después, elija el botón **Aceptar**.  
-  
-9. Elija el botón **Nuevo** otra vez.  
-  
-     Se abre el cuadro de diálogo **Agregar nuevo activo**.  
-  
-10. En la lista **Tipo**, elija **Microsoft.VisualStudio.MefComponent**.  
+6.  In the **Type** list, choose **Microsoft.VisualStudio.ProjectTemplate**.  
   
     > [!NOTE]  
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest.  Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX.  Para obtener más información, vea [NIB: MEFComponent Element \(VSX Schema\)](http://msdn.microsoft.com/es-es/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  This value corresponds to the `ProjectTemplate` element in the extension.vsixmanifest file. This element identifies the subfolder in the VSIX package that contains the project template. For more information, see [NIB: ProjectTemplate Element (VSX Schema)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1).  
   
-11. En la lista **Origen**, elija **Un proyecto de la solución actual**.  
+7.  In the **Source** list, choose **A project in current solution**.  
   
-12. En la lista **Proyecto**, elija **ProjectItemTypeDefinition** y elija el botón **Aceptar**.  
+8.  In the **Project** list, and choose **SiteColumnProjectTemplate**, and then choose the **OK** button.  
   
-13. En la barra de menús, elija **Compilación**, **Compilar solución** y asegúrese de que el proyecto se compila sin errores.  
+9. Choose the **New** button again.  
   
-## Probar la plantilla de proyecto  
- Ya puede probar la plantilla de proyecto.  Primero, empiece a depurar la solución SiteColumnProjectItem en la instancia experimental de Visual Studio.  A continuación, pruebe el proyecto de **Columna de sitio** en la instancia experimental de Visual Studio.  Por último, compile y ejecute el proyecto de SharePoint para comprobar que la columna de sitio funciona del modo esperado.  
+     The **Add New Asset** dialog box opens.  
   
-#### Para empezar a depurar la solución  
-  
-1.  Reinicie Visual Studio con credenciales administrativas y abra la solución SiteColumnProjectItem.  
-  
-2.  En el archivo de código SiteColumnProjectItemTypeProvider, agregue un punto de interrupción a la primera línea de código del método `InitializeType` y elija la tecla **F5** para iniciar la depuración.  
-  
-     Visual Studio instala la extensión para %UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\10.0Exp\\Extensions\\Contoso\\Columna de sitio\\1 .0 e inicia una instancia experimental de Visual Studio.  Probará el elemento de proyecto en esta instancia de Visual Studio.  
-  
-#### Para probar el proyecto en Visual Studio  
-  
-1.  En la barra de menús de la instancia experimental de Visual Studio, elija **Archivo**, **Nuevo**, **Proyecto**.  
-  
-2.  Expanda el nodo **Visual C\#** o **Visual Basic** \(en función del lenguaje que admita la plantilla de proyecto\), expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010**.  
-  
-3.  En la lista de plantillas de proyecto, elija la plantilla **Columna de sitio**.  
-  
-4.  En el cuadro **Nombre**, escriba **SiteColumnTest** y elija el botón **Aceptar**.  
-  
-     En el **Explorador de soluciones**, aparecerá un nuevo proyecto con un elemento de proyecto denominado **Field1**.  
-  
-5.  Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `InitializeType` y elija la tecla **F5** para continuar depurando el proyecto.  
-  
-6.  En el **Explorador de soluciones**, elija el nodo **Field1** y elija la tecla **F4**.  
-  
-     Se abre la ventana **Propiedades**.  
-  
-7.  En la lista de propiedades, compruebe que aparece la propiedad **Example Property**.  
-  
-#### Para probar la columna de sitio de SharePoint  
-  
-1.  En el **Explorador de soluciones**, elija el nodo **SiteColumnTest**.  
-  
-2.  En la ventana **Propiedades**, en el cuadro de texto situado al lado de la propiedad **URL del sitio**, escriba **http:\/\/localhost**.  
-  
-     Este paso especifica el sitio de SharePoint local en el equipo de desarrollo que desea usar para la depuración.  
+10. In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  La propiedad **URL del sitio** está vacía de forma predeterminada porque la plantilla de proyecto de columnas de sitio no proporciona un asistente para recopilar este valor al crear el proyecto.  Para obtener información sobre cómo agregar un asistente que pida al desarrollador este valor y, a continuación, configure esta propiedad en el nuevo proyecto, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-3.  Elija la tecla **F5**.  
+11. In the **Source** list, choose **A project in current solution**.  
   
-     La columna de sitio se empaqueta e implementa en el sitio de SharePoint que se especifica en la propiedad **URL del sitio** del proyecto.  El explorador web se abre en la página predeterminada de este sitio.  
+12. In the **Project** list, choose **ProjectItemTypeDefinition**, and then choose the **OK** button.  
+  
+13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the project compiles without errors.  
+  
+## <a name="testing-the-project-template"></a>Testing the Project Template  
+ You are now ready to test the project template. First, start debugging the SiteColumnProjectItem solution in the experimental instance of Visual Studio. Then, test the **Site Column** project in the experimental instance of Visual Studio. Finally, build and run the SharePoint project to verify that the site column works as expected.  
+  
+#### <a name="to-start-debugging-the-solution"></a>To start debugging the solution  
+  
+1.  Restart Visual Studio with administrative credentials, and then open the SiteColumnProjectItem solution.  
+  
+2.  
+  
+3.  In the SiteColumnProjectItemTypeProvider code file, add a breakpoint to the first line of code in the `InitializeType` method, and then choose the **F5** key to start debugging.  
+  
+     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0 and starts an experimental instance of Visual Studio. You will test the project item in this instance of Visual Studio.  
+  
+#### <a name="to-test-the-project-in-visual-studio"></a>To test the project in Visual Studio  
+  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
+  
+2.  Expand the **Visual C#** or **Visual Basic** node (depending on the language that your project template supports), expand the **SharePoint** node, and then choose the **2010** node.  
+  
+3.  In the list of project templates, choose the **Site Column** template.  
+  
+4.  In the **Name** box, enter **SiteColumnTest** and then choose the **OK** button.  
+  
+     In **Solution Explorer**, a new project appears with a project item that's named **Field1**.  
+  
+5.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `InitializeType` method, and then choose the **F5** key to continue to debug the project.  
+  
+6.  In **Solution Explorer**, choose the **Field1** node, and then choose the **F4** key.  
+  
+     The **Properties** window opens.  
+  
+7.  In the properties list, verify that the property **Example Property** appears.  
+  
+#### <a name="to-test-the-site-column-in-sharepoint"></a>To test the site column in SharePoint  
+  
+1.  In **Solution Explorer**, choose the **SiteColumnTest** node.  
+  
+2.  In the **Properties** window, in the text box that's next to the **Site URL** property, enter **http://localhost**.  
+  
+     This step specifies the local SharePoint site on the development computer that you want to use for debugging.  
   
     > [!NOTE]  
-    >  Si aparece el cuadro de diálogo **Depuración de scripts deshabilitada**, elija el botón **Sí** para continuar depurando el proyecto.  
+    >  The **Site URL** property is empty by default because the Site Column project template doesn't provide a wizard for collecting this value when the project is created. To learn how to add a wizard that asks the developer for this value and then configures this property in the new project, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-4.  En el menú **Acciones del sitio**, elija **Configuración del sitio**.  
+3.  Choose the **F5** key.  
   
-5.  En la página **Configuración del sitio**, en la lista **Galerías**, elija el vínculo **Columnas de sitio**.  
+     The site column is packaged and deployed to the SharePoint site that's specified in the **Site URL** property of the project. The web browser opens to the default page of this site.  
   
-6.  En la lista de columnas de sitio, compruebe que un grupo **Columnas personalizadas** contiene una columna denominada **SiteColumnTest**.  
+    > [!NOTE]  
+    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button to continue to debug the project.  
   
-7.  Cierre el explorador web.  
+4.  On the **Site Actions** menu, choose **Site Settings**.  
   
-## Limpiar el equipo de desarrollo  
- Cuando termine de probar el proyecto, quite la plantilla de proyecto de la instancia experimental de Visual Studio.  
+5.  On the **Site Settings** page, under the **Galleries** list, choose the **Site columns** link.  
   
-#### para limpiar el equipo de desarrollo  
+6.  In the list of site columns, verify that a **Custom Columns** group contains a column that's named **SiteColumnTest**.  
   
-1.  En la instancia experimental de Visual Studio, en la barra de menús, elija **Herramientas**, **Extensiones y actualizaciones**.  
+7.  Close the web browser.  
   
-     Se abre el cuadro de diálogo **Extensiones y actualizaciones**.  
+## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
+ After you finish testing the project, remove the project template from the experimental instance of Visual Studio.  
   
-2.  En la lista de extensiones, elija la extensión **Columna de sitio** y elija el botón **Desinstalar**.  
+#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
   
-3.  En el cuadro de diálogo que aparece, elija el botón **Sí** para confirmar la desinstalación.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
   
-4.  Elija el botón **Cerrar** para completar la desinstalación.  
+     The **Extensions and Updates** dialog box opens.  
   
-5.  Cierre ambas instancias de Visual Studio \(la instancia experimental y la instancia de Visual Studio en la que se abre la solución SiteColumnProjectItem\).  
+2.  In the list of extensions, choose the **Site Column** extension, and then choose the **Uninstall** button.  
   
-## Pasos siguientes  
- Después de completar este tutorial, puede agregar un asistente a la plantilla de proyecto.  Cuando un usuario crea un proyecto de columnas de sitio, el asistente pide al usuario la dirección URL del sitio que se va a usar para depurar, le pregunta si la nueva solución es de espacio aislado y configura el nuevo proyecto con esta información.  El asistente también recopila información sobre la columna \(como el tipo base y el grupo en el que se va a hacer una lista de la columna en la galería de columnas de sitio\) y agrega esta información al archivo Elements.xml del nuevo proyecto.  Para obtener más información, vea [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension.  
   
-## Vea también  
- [Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
+4.  Choose the **Close** button to complete the uninstallation.  
+  
+5.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the SiteColumnProjectItem solution is open).  
+  
+## <a name="next-steps"></a>Next Steps  
+ After you complete this walkthrough, you can add a wizard to the project template. When a user creates a Site Column project, the wizard asks the user for the site URL to use for debugging and whether the new solution is sandboxed, and the wizard configures the new project with this information. The wizard also collects information about the column (such as the base type and the group in which to list the column in the site column gallery) and adds this information to the Elements.xml file in the new project. For more information, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+  
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   

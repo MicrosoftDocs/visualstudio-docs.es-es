@@ -1,57 +1,74 @@
 ---
-title: "IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetSymUnmanagedReader"
-  - "IDebugSymbolProviderDirect::GetSymUnmanagedReader"
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetSymUnmanagedReader
+- IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugSymbolProviderDirect::GetSymUnmanagedReader
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d6ce5ce98888891493f1578e8789768b388db6fe
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Recupera un sistema de lectura de símbolos para código no administrado.  
+---
+# <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
+Retrieves a symbol reader for unmanaged code.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetSymUnmanagedReader (  
-   ULONG32    ulAppDomainID,  
-   GUID       guidModule,  
-   IUnknown** ppSymUnmanagedReader  
+   ULONG32    ulAppDomainID,  
+   GUID       guidModule,  
+   IUnknown** ppSymUnmanagedReader  
 );  
 ```  
   
-```c#  
+```cs  
 int GetSymUnmanagedReader (  
-   uint       ulAppDomainID,  
-   Guid       guidModule,  
-   out object ppSymUnmanagedReader  
+   uint       ulAppDomainID,  
+   Guid       guidModule,  
+   out object ppSymUnmanagedReader  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- \[in\]  Identificador del dominio de aplicación.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- \[in\]  Identificador único del módulo.  
+ [in] Unique identifier of the module.  
   
  `ppSymUnmanagedReader`  
- \[out\]  Devuelve un objeto que representa el lector de símbolos para código no administrado.  
+ [out] Returns an object that represents the symbol reader for unmanaged code.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

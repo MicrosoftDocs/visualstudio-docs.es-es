@@ -1,57 +1,74 @@
 ---
-title: "IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "UpdateSymbols"
-  - "IDebugComPlusSymbolProvider::UpdateSymbols"
+title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- UpdateSymbols
+- IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugComPlusSymbolProvider::UpdateSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d25c0fd02d15da12464aba45cc55beac2cb64c2c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-Actualiza los símbolos de depuración en memoria con los de la secuencia de datos especificada.  
+---
+# <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
+Updates the debug symbols in memory with those from the specified data stream.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT UpdateSymbols (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pUpdateStream  
+   ULONG32  ulAppDomainID,  
+   GUID     guidModule,  
+   IStream* pUpdateStream  
 );  
 ```  
   
-```c#  
+```cs  
 int UpdateSymbols (  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pUpdateStream  
+   uint    ulAppDomainID,  
+   Guid    guidModule,  
+   IStream pUpdateStream  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- \[in\]  Identificador del dominio de aplicación.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- \[in\]  Identificador único del módulo.  
+ [in] Unique identifier of the module.  
   
  `pUpdateStream`  
- \[in\]  Flujo de datos que contiene los símbolos actualizados de depuración.  
+ [in] Data stream that contains the updated debug symbols.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::UpdateSymbols(  
@@ -89,8 +106,8 @@ Error:
 }  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
