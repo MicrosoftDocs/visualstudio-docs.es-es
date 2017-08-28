@@ -1,54 +1,71 @@
 ---
-title: "SccIsMultiCheckoutEnabled (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccIsMultiCheckoutEnabled"
-helpviewer_keywords: 
-  - "SccIsMultiCheckoutEnabled (función)"
+title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccIsMultiCheckoutEnabled
+helpviewer_keywords:
+- SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# SccIsMultiCheckoutEnabled (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta función comprueba si el complemento de control de código fuente permite varias desprotecciones en un archivo.  
+---
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
+This function checks whether the source control plug-in allows multiple checkouts on a file.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccIsMultiCheckoutEnabled(  
-   LPVOID pContext,  
-   LPBOOL pbMultiCheckout  
+   LPVOID pContext,  
+   LPBOOL pbMultiCheckout  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] The source control plug-in context structure.  
   
  pbMultiCheckout  
- \[out\] Especifica si se habilitan varias desprotecciones para este proyecto \(distinto de cero significa que se admiten varias desprotecciones\).  
+ [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|La comprobación fue correcta.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Error no específico.|  
+|SCC_OK|The check was successful.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Comentarios  
- El IDE realiza dos comprobaciones para determinar si los archivos pueden desproteger simultáneamente más de un usuario. En primer lugar, el sistema de control de código fuente debe admitir varias desprotecciones. El complemento de control de código fuente puede especificar esta funcionalidad durante la inicialización especificando el `SCC_CAP_MULTICHECKOUT`. Después, como una comprobación de segundo, el IDE llama a esta función para determinar si el proyecto actual admite varias desprotecciones. Si se admiten varias desprotecciones para el proyecto seleccionado, el complemento devuelve un éxito de código y establece `pbMultiCheckout` a cero \(`TRUE`\) o `FALSE`.  
+## <a name="remarks"></a>Remarks  
+ The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

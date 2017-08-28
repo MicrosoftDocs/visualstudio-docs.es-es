@@ -1,52 +1,73 @@
 ---
-title: "OPTNAMECHANGEPFN | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OPTNAMECHANGEPFN"
-helpviewer_keywords: 
-  - "Función de devolución de llamada OPTNAMECHANGEPFN"
+title: OPTNAMECHANGEPFN | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OPTNAMECHANGEPFN
+helpviewer_keywords:
+- OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# OPTNAMECHANGEPFN
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9bdd0dfb945e35580a04630cbb0f47830959e5a7
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Se trata de una función de devolución de llamada especificada en una llamada a la [SccSetOption](../extensibility/sccsetoption-function.md) \(mediante la opción `SCC_OPT_NAMECHANGEPFN`\) y se utiliza para comunicar los cambios de nombre realizados por el control de código fuente complemento volver al IDE.  
+---
+# <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
+This is a callback function specified in a call to the [SccSetOption](../extensibility/sccsetoption-function.md) (using option `SCC_OPT_NAMECHANGEPFN`) and is used to communicate name changes made by the source control plug-in back to the IDE.  
   
-## Signature  
+## <a name="signature"></a>Signature  
   
-```cpp#  
-typedef void (*OPTNAMECHANGEPFN)( LPVOID pvCallerData, LPCSTR pszOldName, LPCSTR pszNewName );  
+```cpp  
+typedef void (*OPTNAMECHANGEPFN)(  
+   LPVOID pvCallerData,  
+   LPCSTR pszOldName,  
+   LPCSTR pszNewName  
+);  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parameters  
  pvCallerData  
- \[in\] Valor de usuario especificado en una llamada anterior a la [SccSetOption](../extensibility/sccsetoption-function.md) \(mediante la opción `SCC_OPT_USERDATA`\).  
+ [in] User value specified in a previous call to the [SccSetOption](../extensibility/sccsetoption-function.md) (using option `SCC_OPT_USERDATA`).  
   
  pszOldName  
- \[in\] El nombre original del archivo.  
+ [in] The original name of the file.  
   
  pszNewName  
- \[in\] Ha cambiado el nombre del archivo a.  
+ [in] The name the file was renamed to.  
   
-## Valor devuelto  
- Ninguno.  
+## <a name="return-value"></a>Return Value  
+ None.  
   
-## Comentarios  
- Si se cambia el nombre de un archivo durante una operación de control de código fuente, el complemento de control de código fuente puede notificar el IDE sobre el cambio de nombre a través de esta devolución de llamada.  
+## <a name="remarks"></a>Remarks  
+ If a file is renamed during a source control operation, the source control plug-in can notify the IDE about the name change through this callback.  
   
- Si el IDE no admite esta devolución de llamada, no llamará a la [SccSetOption](../extensibility/sccsetoption-function.md) que se especifique. Si el complemento no admite esta devolución de llamada, devolverá `SCC_E_OPNOTSUPPORTED` desde el `SccSetOption` funcionar cuando el IDE intenta establecer la devolución de llamada.  
+ If the IDE does not support this callback, it will not call the [SccSetOption](../extensibility/sccsetoption-function.md) to specify it. If the plug-in does not support this callback, it will return `SCC_E_OPNOTSUPPORTED` from the `SccSetOption` function when the IDE attempts to set the callback.  
   
-## Vea también  
- [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>See Also  
+ [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

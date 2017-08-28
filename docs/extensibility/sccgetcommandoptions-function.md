@@ -1,81 +1,98 @@
 ---
-title: "SccGetCommandOptions (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetCommandOptions"
-helpviewer_keywords: 
-  - "SccGetCommandOptions (función)"
+title: SccGetCommandOptions Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccGetCommandOptions
+helpviewer_keywords:
+- SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# SccGetCommandOptions (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: df497de98463d728b5cd040415924a40fb6717b8
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta función pide al usuario opciones avanzadas para un comando determinado.  
+---
+# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions Function
+This function prompts the user for advanced options for a given command.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccGetCommandOptions(  
-   LPVOID pvContext,  
-   HWND hWnd,  
-   enum SCCCOMMAND iCommand,  
-   LPCMDOPTS* ppvOptions  
+   LPVOID pvContext,  
+   HWND hWnd,  
+   enum SCCCOMMAND iCommand,  
+   LPCMDOPTS* ppvOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  iCommand  
- \[in\] El comando para el que se solicitan opciones avanzadas \(consulte [Código de comando](../extensibility/command-code-enumerator.md) posibles valores\).  
+ [in] The command for which advanced options are requested (see [Command Code](../extensibility/command-code-enumerator.md) for possible values).  
   
  ppvOptions  
- \[in\] La estructura de opción \(también puede ser `NULL`\).  
+ [in] The option structure (can also be `NULL`).  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|Correcto.|  
-|SCC\_I\_ADV\_SUPPORT|El complemento de control de código fuente admite opciones avanzadas para el comando.|  
-|SCC\_I\_OPERATIONCANCELED|El usuario canceló el origen control del complemento **opciones** cuadro de diálogo.|  
-|SCC\_E\_OPTNOTSUPPORTED|El complemento de control de código fuente no admite esta operación.|  
-|SCC\_E\_ISCHECKEDOUT|No se puede realizar esta operación en un archivo que está desprotegido.|  
-|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC\_E\_NONSPECIFICERROR|Error no específico.|  
+|SCC_OK|Success.|  
+|SCC_I_ADV_SUPPORT|The source control plug-in supports advanced options for the command.|  
+|SCC_I_OPERATIONCANCELED|The user cancelled the source control plug-in's **Options** dialog box.|  
+|SCC_E_OPTNOTSUPPORTED|The source control plug-in does not support this operation.|  
+|SCC_E_ISCHECKEDOUT|Cannot perform this operation on a file that is currently checked out.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
   
-## Comentarios  
- El IDE llama a esta función por primera vez con `ppvOptions`\=`NULL` para determinar si el complemento de control de código fuente admite la característica de opciones avanzadas para el comando especificado. Si el complemento admite la característica de ese comando, el IDE llama a esta función nuevo cuando el usuario solicita opciones avanzadas \(normalmente se implementa como un **avanzadas** botón en un cuadro de diálogo\) y proporciona un puntero no NULL para `ppvOptions` que apunta a un `NULL` puntero. El complemento almacena todas las opciones avanzadas especificadas por el usuario en una estructura private y devuelve un puntero a esa estructura en `ppvOptions`. Esta estructura se pasa a todas las demás funciones de la API de complementos de Control de código fuente que necesitan saber sobre él, incluidas las llamadas posteriores a la `SccGetCommandOptions` \(función\).  
+## <a name="remarks"></a>Remarks  
+ The IDE calls this function for the first time with `ppvOptions`=`NULL` to determine if the source control plug-in supports the advanced options feature for the specified command. If the plug-in does support the feature for that command, the IDE calls this function again when the user requests advanced options (usually implemented as an **Advanced** button in a dialog box) and supplies a non-NULL pointer for `ppvOptions` that points to a `NULL` pointer. The plug-in stores any advanced options specified by the user in a private structure and returns a pointer to that structure in `ppvOptions`. This structure is then passed to all other Source Control Plug-in API functions that need to know about it, including subsequent calls to the `SccGetCommandOptions` function.  
   
- Un ejemplo puede ayudar a clarificar esta situación.  
+ An example may help clarify this situation.  
   
- Un usuario elige el **obtener** comando y el IDE muestra un **obtener** cuadro de diálogo. Las llamadas IDE la `SccGetCommandOptions` funciona con `iCommand` establecido en `SCC_COMMAND_GET` y `ppvOptions` establecido en `NULL`. Esto se interpreta mediante el control de código fuente como la pregunta, "¿tiene las opciones avanzadas de este comando?" Si el complemento devuelve `SCC_I_ADV_SUPPORT`, el IDE muestra un **avanzadas** botón en su **obtener** cuadro de diálogo.  
+ A user chooses the **Get** command and the IDE displays a **Get** dialog box. The IDE calls the `SccGetCommandOptions` function with `iCommand` set to `SCC_COMMAND_GET` and `ppvOptions` set to `NULL`. This is interpreted by the source control plug-in as the question, "Do you have any advanced options for this command?" If the plug-in returns `SCC_I_ADV_SUPPORT`, the IDE displays an **Advanced** button in its **Get** dialog box.  
   
- La primera vez que el usuario hace clic en el **avanzadas** botón, el IDE llama de nuevo el `SccGetCommandOptions` funcione, esta vez no`NULL` `ppvOptions` que apunta a un `NULL` puntero.  El complemento se muestra su propia **obtener opciones** cuadro de diálogo pide al usuario información, coloca esa información en su propia estructura y devuelve un puntero a esa estructura en `ppvOptions`.  
+ The first time the user clicks the **Advanced** button, the IDE again calls the `SccGetCommandOptions` function, this time with a non-`NULL``ppvOptions` that points to a `NULL` pointer. The plug-in displays its own **Get Options** dialog box, prompts the user for information, puts that information into its own structure, and returns a pointer to that structure in `ppvOptions`.  
   
- Si el usuario hace clic **avanzadas** en el mismo cuadro de diálogo, el IDE llama de nuevo el `SccGetCommandOptions` función nuevo sin cambiar `ppvOptions`, de modo que la estructura se pasa al complemento. Esto permite que el complemento reinicializar el cuadro de diálogo a los valores que el usuario haya establecido anteriormente. El complemento modifica la estructura en su lugar antes de devolver.  
+ If the user clicks **Advanced** again in the same dialog box, the IDE calls the `SccGetCommandOptions` function again without changing `ppvOptions`, so that the structure is passed back to the plug-in. This enables the plug-in to reinitialize its dialog box to the values that the user had previously set. The plug-in modifies the structure in place before returning.  
   
- Por último, cuando el usuario hace clic en **Aceptar** en el IDE **obtener** cuadro de diálogo, las llamadas IDE la [SccGet](../extensibility/sccget-function.md), pasando la estructura devuelta en `ppvOptions` que contiene las opciones avanzadas.  
+ Finally, when the user clicks **OK** in the IDE's **Get** dialog box, the IDE calls the [SccGet](../extensibility/sccget-function.md), passing the structure returned in `ppvOptions` that contains the advanced options.  
   
 > [!NOTE]
->  El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un **opciones** cuadro de diálogo que permite al usuario establece las preferencias que controlan el funcionamiento de la integración. Si desea que el complemento de control de código fuente proporcionar su propio cuadro de diálogo Preferencias, puede mostrar desde una **avanzadas** botón en el cuadro de diálogo de preferencias del IDE. El complemento es exclusivamente responsable de obtener y almacenar esta información; el IDE no utilizarla ni modificarlo.  
+>  The command `SCC_COMMAND_OPTIONS` is used when the IDE displays an **Options** dialog box that lets the user set preferences that control how the integration works. If the source control plug-in wants to supply its own preferences dialog box, it can display it from an **Advanced** button in the IDE's preferences dialog box. The plug-in is solely responsible for getting and persisting this information; the IDE does not use it or modify it.  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [Código de comando](../extensibility/command-code-enumerator.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+ [Command Code](../extensibility/command-code-enumerator.md)

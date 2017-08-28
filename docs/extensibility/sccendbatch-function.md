@@ -1,48 +1,65 @@
 ---
-title: "SccEndBatch (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccEndBatch"
-helpviewer_keywords: 
-  - "SccEndBatch (función)"
+title: SccEndBatch Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccEndBatch
+helpviewer_keywords:
+- SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# SccEndBatch (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9812491ac56c7a714dad200e4984afa348f564ed
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta función finaliza un lote de operaciones de control de código fuente. Estos lotes no pueden estar anidados.  
+---
+# <a name="sccendbatch-function"></a>SccEndBatch Function
+This function concludes a batch of source control operations. These batches may not be nested.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccEndBatch(void);  
 ```  
   
-#### Parámetros  
- Ninguno.  
+#### <a name="parameters"></a>Parameters  
+ None.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|Lote de operaciones concluido correctamente.|  
-|SCC\_E\_UNKNOWNERROR|Error no específico.|  
+|SCC_OK|Batch of operations successfully concluded.|  
+|SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Comentarios  
- Lotes de control de código fuente se usan para ejecutar las mismas operaciones de control de código fuente en varios proyectos o varios contextos. Los lotes se pueden utilizar para eliminar los cuadros de diálogo redundantes de la experiencia del usuario durante una operación por lotes. El [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y `SccEndBatch` \(función\) se utilizan como un par para indicar el principio y el final de una operación. No se pueden anidar.  
+## <a name="remarks"></a>Remarks  
+ Source control batches are used to execute the same source control operations across multiple projects or multiple contexts. Batches can be used to eliminate redundant dialog boxes from the user experience during a batched operation. The [SccBeginBatch](../extensibility/sccbeginbatch-function.md) and the `SccEndBatch` function are used as a pair to indicate the beginning and end of an operation. They cannot be nested.  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

@@ -1,55 +1,72 @@
 ---
-title: "IDebugEngine2::DestroyProgram | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::DestroyProgram"
-helpviewer_keywords: 
-  - "IDebugEngine2::DestroyProgram"
+title: IDebugEngine2::DestroyProgram | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::DestroyProgram
+helpviewer_keywords:
+- IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::DestroyProgram
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 09019a49385d5f35eb742b57bb2bd2e9382e0c4d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Informa a un motor de depuración \(DE\) que el programa especificado o ha finalizado y que el OF debe limpiar todas las referencias al programa y enviar un programa destruye evento.  
+---
+# <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
+Informs a debug engine (DE) that the program specified has been atypically terminated and that the DE should clean up all references to the program and send a program destroy event.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT DestroyProgram(   
-   IDebugProgram2* pProgram  
+```cpp  
+HRESULT DestroyProgram(   
+   IDebugProgram2* pProgram  
 );  
 ```  
   
-```cpp#  
-int DestroyProgram(   
-   IDebugProgram2 pProgram  
+```cpp  
+int DestroyProgram(   
+   IDebugProgram2 pProgram  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pProgram`  
- \[in\]  Un objeto de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa que o ha finalizado.  
+ [in] An [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the program that has been atypically terminated.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Después de llamar a este método, el OF envía posteriormente un evento de [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) para el administrador \(SDM\) de depuración de la sesión.  
+## <a name="remarks"></a>Remarks  
+ After this method is called, the DE subsequently sends an [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) event back to the session debug manager (SDM).  
   
- Este método no se implementa \(devuelve `E_NOTIMPL`\) si el OF se ejecuta en el mismo proceso que el programa que se depura.  Se implementa este método sólo si el OF se ejecuta en el mismo proceso que el SDM.  
+ This method is not implemented (returns `E_NOTIMPL`) if the DE runs in the same process as the program being debugged. This method is implemented only if the DE runs in the same process as the SDM.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

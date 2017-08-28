@@ -1,79 +1,96 @@
 ---
-title: "SccCheckout (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccCheckout"
-helpviewer_keywords: 
-  - "SccCheckout (función)"
+title: SccCheckout Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccCheckout
+helpviewer_keywords:
+- SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# SccCheckout (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 32349017e005654d269f9dca7bd7d29c0985bc78
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Dada una lista de nombres de archivo completo, esta función desprotege ellos en la unidad local. El comentario se aplica a todos los archivos que se desprotegen. El argumento comentario puede ser un `null` cadena.  
+---
+# <a name="scccheckout-function"></a>SccCheckout Function
+Given a list of fully qualified file names, this function checks them out to the local drive. The comment applies to all files being checked out. The comment argument can be a `null` string.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Número de archivos seleccionados estén desprotegidos.  
+ [in] Number of files selected to be checked out.  
   
  lpFileNames  
- \[in\] Matriz de nombres de ruta de acceso local completa de los archivos estén desprotegidos.  
+ [in] Array of fully qualified local path names of files to be checked out.  
   
  lpComment  
- \[in\] Comentario que se aplicará a cada uno de los archivos seleccionados que se está desprotegidos.  
+ [in] Comment to be applied to each of the selected files being checked out.  
   
- Opciones  
- \[in\] Indicadores de comandos \(consulte [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)\).  
+ fOptions  
+ [in] Command flags (see [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- \[in\] Opciones específicas del complemento de control de código fuente.  
+ [in] Source control plug-in-specific options.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|Desprotección fue correcta.|  
-|SCC\_E\_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
-|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC\_E\_NONSPECIFICERROR|Error no específico. No se ha desprotegido el archivo.|  
-|SCC\_E\_ALREADYCHECKEDOUT|El usuario ya tiene desprotegido el archivo.|  
-|SCC\_E\_FILEISLOCKED|El archivo está bloqueado, lo que prohíbe la creación de nuevas versiones.|  
-|SCC\_E\_FILEOUTEXCLUSIVE|Otro usuario ha hecho una desprotección exclusiva en este archivo.|  
-|SCC\_I\_OPERATIONCANCELED|Se canceló la operación antes de completarse.|  
+|SCC_OK|Check out was successful.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. The file was not checked out.|  
+|SCC_E_ALREADYCHECKEDOUT|The user already has the file checked out.|  
+|SCC_E_FILEISLOCKED|The file is locked, prohibiting the creation of new versions.|  
+|SCC_E_FILEOUTEXCLUSIVE|Another user has done an exclusive checkout on this file.|  
+|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+ [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)

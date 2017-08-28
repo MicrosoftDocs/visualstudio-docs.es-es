@@ -1,86 +1,103 @@
 ---
-title: "SccCheckin (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccCheckin"
-helpviewer_keywords: 
-  - "SccCheckin (función)"
+title: SccCheckin Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccCheckin
+helpviewer_keywords:
+- SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# SccCheckin (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b082ca831c17dcab3fbc95f8dd547da23a1f8982
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta función comprueba en archivos previamente desprotegido en el sistema de control de código fuente almacena los cambios y la creación de una nueva versión. Esta función se invoca con un número y una matriz de nombres de los archivos para protegerse.  
+---
+# <a name="scccheckin-function"></a>SccCheckin Function
+This function checks in previously checked-out files to the source control system, storing the changes and creating a new version. This function is called with a count and an array of names of the files to be checked in.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckin (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPSTR*    lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPSTR*    lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] A handle to the IDE window that the SCC plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Número de archivos seleccionados para protegerse.  
+ [in] Number of files selected to be checked in.  
   
  lpFileNames  
- \[in\] Matriz de nombres de ruta de acceso local completa de archivos que se va a proteger.  
+ [in] Array of fully qualified local path names of files to be checked in.  
   
  lpComment  
- \[in\] Comentario que se aplicará a cada uno de los archivos seleccionados que se protege. Esto es `NULL` Si el complemento de control de código fuente debe solicitar un comentario.  
+ [in] Comment to be applied to each of the selected files being checked in. This is `NULL` if the source control plug-in should prompt for a comment.  
   
- Opciones  
- \[in\] Indicadores de comando, 0 o `SCC_KEEP_CHECKEDOUT`.  
+ fOptions  
+ [in] Command flags, either 0 or `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
- \[in\] Opciones específicas del complemento de control de código fuente.  
+ [in] SCC plug-in-specific options.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|Los archivos se ha protegido correctamente.|  
-|SCC\_E\_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
-|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC\_E\_NONSPECIFICERROR|Error no específico. El archivo no se ha protegido.|  
-|SCC\_E\_NOTCHECKEDOUT|El usuario no ha desprotegido el archivo, por lo que no puede protegerlo.|  
-|SCC\_E\_CHECKINCONFLICT|No se pudo realizar la protección porque:<br /><br /> -   Otro usuario ha protegido con antelación y `bAutoReconcile` fuese falsa.<br /><br /> O bien<br /><br /> -   No se puede realizar la combinación automática \(por ejemplo, cuando los archivos son binarios\).|  
-|SCC\_E\_VERIFYMERGE|Archivo ha sido combinado automáticamente pero no se ha protegido espera de comprobación del usuario.|  
-|SCC\_E\_FIXMERGE|Archivo ha sido combinan automáticamente, pero no se han protegido debido a un conflicto de combinación que debe resolverse manualmente.|  
-|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC\_I\_OPERATIONCANCELED|Se canceló la operación antes de completarse.|  
-|SCC\_I\_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
-|SCC\_E\_FILENOTEXIST|No se encontró el archivo local.|  
+|SCC_OK|Files was successfully checked in.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. File was not checked in.|  
+|SCC_E_NOTCHECKEDOUT|The user has not checked out the file, so cannot check it in.|  
+|SCC_E_CHECKINCONFLICT|Checkin could not be performed because:<br /><br /> -   Another user has checked in ahead and `bAutoReconcile` was false.<br /><br /> -or-<br /><br /> -   The auto-merge cannot be done (for example, when files are binary).|  
+|SCC_E_VERIFYMERGE|File has been auto-merged but has not been checked in pending user verification.|  
+|SCC_E_FIXMERGE|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_I_OPERATIONCANCELED|Operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## Comentarios  
- El comentario se aplica a todos los archivos que se protege. El argumento comentario puede ser un `null` de cadena, en cuyo caso el complemento de control de código fuente puede pedir al usuario una cadena de comentario para cada archivo.  
+## <a name="remarks"></a>Remarks  
+ The comment applies to all files being checked in. The comment argument can be a `null` string, in which case the source control plug-in can prompt the user for a comment string for each file.  
   
- El `fOptions` argumento puede asignar un valor de la `SCC_KEEP_CHECKEDOUT` marca para indicar que la intención del usuario para proteger el archivo y compruébelo de nuevo.  
+ The `fOptions` argument can be given a value of the `SCC_KEEP_CHECKEDOUT` flag to indicate the user's intent to check the file in and check it out again.  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

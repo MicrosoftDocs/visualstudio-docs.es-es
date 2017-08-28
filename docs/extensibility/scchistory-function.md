@@ -1,82 +1,99 @@
 ---
-title: "SccHistory (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccHistory"
-helpviewer_keywords: 
-  - "SccHistory (función)"
+title: SccHistory Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccHistory
+helpviewer_keywords:
+- SccHistory function
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# SccHistory (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0efb8505fa59957f8178214d64c7ac0d979a3359
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta función muestra el historial de los archivos especificados.  
+---
+# <a name="scchistory-function"></a>SccHistory Function
+This function displays the history of the specified files.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccHistory(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pvContext`  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] The source control plug-in context structure.  
   
  `hWnd`  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  `nFiles`  
- \[in\] Número de archivos especificado en el `lpFileName` matriz.  
+ [in] Number of files specified in the `lpFileName` array.  
   
  `lpFileName`  
- \[in\] Matriz de nombres completos de los archivos.  
+ [in] Array of fully qualified names of files.  
   
  `fOptions`  
- \[in\] Indicadores de comando \(actualmente no utilizados\).  
+ [in] Command flags (currently not used).  
   
  `pvOptions`  
- \[in\] Opciones específicas del complemento de control de código fuente.  
+ [in] Source control plug-in-specific options.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC\_OK|Historial de versiones se obtuvo correctamente.|  
-|SCC\_I\_RELOADFILE|El sistema de control de código fuente modificado realmente el archivo en el disco al capturar el historial \(por ejemplo, al obtener una versión anterior del mismo\), por lo que el IDE debe cargar este archivo.|  
-|SCC\_E\_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|  
-|SCC\_E\_OPNOTSUPPORTED|El sistema de control de código fuente no admite esta operación.|  
-|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC\_E\_PROJNOTOPEN|El proyecto no ha sido abierto.|  
-|SCC\_E\_NONSPECIFICERROR|Error no específico. No se pudo obtener el historial de archivos.|  
+|SCC_OK|Version history was successfully obtained.|  
+|SCC_I_RELOADFILE|The source control system actually modified the file on disk while fetching the history (for instance, by getting an old version of it), so the IDE should reload this file.|  
+|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
+|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_PROJNOTOPEN|The project is has not been opened.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. File history could not be obtained.|  
   
-## Comentarios  
- El complemento de control de código fuente puede mostrar su propio cuadro de diálogo para mostrar el historial de cada archivo, utilizando `hWnd` como la ventana primaria. Como alternativa, devolución de llamada de salida de texto opcional función proporcionado a la [SccOpenProject](../extensibility/sccopenproject-function.md) puede utilizarse si es compatible.  
+## <a name="remarks"></a>Remarks  
+ The source control plug-in can display its own dialog box to show the history of each file, using `hWnd` as the parent window. Alternatively, the optional text output callback function supplied to the [SccOpenProject](../extensibility/sccopenproject-function.md) can be used, if it is supported.  
   
- Tenga en cuenta que, en determinadas circunstancias, el archivo que se está examinando puede cambiar durante la ejecución de esta llamada. Por ejemplo, el [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando history proporciona al usuario una oportunidad para obtener una versión anterior del archivo. En tal caso, el origen de controlar el complemento devuelve `SCC_I_RELOAD` para advertir que el IDE que debe volver a cargar el archivo.  
+ Note that under certain circumstances, the file being examined may change during the execution of this call. For example, the [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] history command gives the user a chance to get an old version of the file. In such a case, the source control plug-in returns `SCC_I_RELOAD` to warn the IDE that it needs to reload the file.  
   
 > [!NOTE]
->  Si el complemento de control de código fuente no admite esta función para una matriz de archivos, se puede mostrar el historial de archivos para el primer archivo.  
+>  If the source control plug-in does not support this function for an array of files, only the file history for the first file can be displayed.  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
