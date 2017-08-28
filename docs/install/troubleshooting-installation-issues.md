@@ -1,7 +1,7 @@
 ---
-title: "Solución de problemas de instalación | Microsoft Docs"
-description: "En ocasiones, algo no sale según lo previsto. Si se produce un error en la actualización o instalación de Visual Studio, esta página puede ayudarle."
-ms.date: 04/14/2017
+title: Troubleshooting installation issues | Microsoft Docs
+description: Sometimes, things can go wrong. If your Visual Studio installation or upgrade fails, this page can help.
+ms.date: 08/24/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,66 +16,81 @@ author: timsneath
 ms.author: tims
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
-ms.openlocfilehash: 0fd361edd5bc5056f09c64aa4499a10a50656546
+ms.sourcegitcommit: 7adecc638a0ea4b198501752930a5c92c9db282c
+ms.openlocfilehash: 566d3f0a9f38dd8fca763439ab714cf551a551ef
 ms.contentlocale: es-es
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio 2017
+# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Troubleshooting Visual Studio 2017 installation and upgrade issues
 
-## <a name="symptoms"></a>Síntomas
-Cuando intenta instalar o actualizar Visual Studio 2017, la operación da error.
+## <a name="symptoms"></a>Symptoms
+When you try to install or update Visual Studio 2017, the operation fails.
 
-## <a name="workaround"></a>Solución
-Para solucionar este problema, siga estos pasos:
+## <a name="workaround"></a>Workaround
+To work around this issue, follow these steps.
 
-### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Paso 1: Comprobación de si este problema es un problema conocido
-Existen algunos problemas conocidos con el instalador de Visual Studio en los que está trabajando Microsoft para intentar resolverlos. Compruebe la [sección de problemas conocidos de nuestras notas de versión](https://www.visualstudio.com/news/releasenotes/vs2017-knownissues) para ver si hay una solución para su problema.
+### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Step 1 - Check whether this problem is a known issue
+There are some known issues with the Visual Studio Installer that Microsoft is working on fixing. Check the [Known Issues section of our release notes](https://www.visualstudio.com/news/releasenotes/vs2017-knownissues) to see if there's a workaround for your problem.
 
-### <a name="step-2---check-with-the-developer-community"></a>Paso 2: Consulta con la comunidad de desarrolladores
-Busque el mensaje de error en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). Puede que otros miembros de la comunidad hayan documentado una solución para su problema.
+### <a name="step-2---check-with-the-developer-community"></a>Step 2 - Check with the developer community
+Search on your error message with the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html). Other members of the community may have documented a solution to your problem.
 
-### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Paso 3: Eliminación del directorio del instalador de Visual Studio para corregir problemas de actualización
-El programa previo del instalador de Visual Studio es un ejecutable mínimo de poco peso que instala el resto del instalador de Visual Studio. Puede que con la eliminación de los archivos del instalador de Visual Studio y la ejecución repetida del programa previo se resuelvan algunos errores de actualización.
+### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Step 3 - Delete the Visual Studio Installer directory to fix upgrade problems
+The Visual Studio Installer bootstrapper is a minimal light-weight executable that installs the rest of the Visual Studio Installer. Deleting Visual Studio Installer files and then rerunning the bootstrapper might solve some update failures.
 
-**Nota:** Al realizar las acciones siguientes, se reinstalan los archivos del Instalador de Visual Studio y se restablecen los metadatos de la instalación.
+**Note:** Performing the following actions reinstalls the Visual Studio Installer files and resets the installation metadata.
 
-1. Cierre el instalador de Visual Studio.
-2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es C:\Archivos de programa (x86)\Microsoft Visual Studio\Installer.
-3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón ```vs_[Visual Studio edition]__*.exe```. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/) y haga clic en **Descargar** en su edición de Visual Studio. Ejecute el ejecutable para restablecer sus metadatos de instalación.
-4. Intente instalar o actualizar de nuevo Visual Studio. Si el Instalador sigue dando error, vaya al paso siguiente.
+1. Close the Visual Studio Installer.
+2. Delete the Visual Studio Installer directory. Typically, the directory is C:\Program Files (x86)\Microsoft Visual Studio\Installer.
+3. Run the Visual Studio Installer bootstrapper. You may find the bootstrapper in your Downloads folder with a file name that follows a ```vs_[Visual Studio edition]__*.exe``` pattern. If you don't find that application, you can download the bootstrapper by going to the [Visual Studio downloads](https://www.visualstudio.com/downloads/) page and clicking **Download** for your edition of Visual Studio. Run the executable to reset your installation metadata.
+4. Try to install or update Visual Studio again. If the Installer continues to fail, go to the next step.
 
-### <a name="step-4---report-a-problem"></a>Paso 4: Notificación de un problema
-En algunas situaciones, como las relacionadas con los archivos dañados, los problemas se pueden examinar caso por caso:
+### <a name="step-4---report-a-problem"></a>Step 4 - Report a problem
+In some situations, such as those related to corrupted files, the problems may have to be looked at on a case-by-case basis:
 
-1. Descargue la [herramienta de recopilación de registros de Microsoft Visual Studio y .NET Framework](https://aka.ms/vscollect) y ejecútela. Esta herramienta recopila y compila los registros de instalación disponibles para las instalaciones de Visual Studio, .NET Framework y SQL Server.
-2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.
-![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](media/report-a-problem.png).
-3. Asigne un título a su informe de problema y proporcione los detalles pertinentes. Haga clic en **Siguiente** para ir a la sección **Datos adjuntos** y luego adjunte el archivo de registro generado (normalmente, el archivo está en % TEMP%\vslogs.zip).
-![Desplácese con la tecla de tabulación hasta el botón Informar de un problema nuevo y siga los pasos](media/problem-report-details.png).
-4. Haga clic en **Siguiente** para revisar el informe del problema y luego haga clic en **Enviar**.
+1. Collect your setup logs. See [How to get the Visual Studio installation logs](#how-to-get-the-visual-studio-installation-logs) below for details.
+2. Open the Visual Studio Installer, and then click **Report a problem** to open the Visual Studio Feedback tool.
+![You can tab to the Provide Feedback button to open the feedback tool](media/report-a-problem.png)
+3. Give your problem report a title, and provide relevant details. Click **Next** to go to the **Attachments** section, and then attach the generated log file (typically, the file is at %TEMP%\vslogs.zip).
+![Tab to the Report New Problem button, then follow through the steps](media/problem-report-details.png)
+4. Click **Next** to review your problem report, and then click **Submit**.
 
-### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>Paso 5: Ejecución de InstallCleanup.exe para limpiar los archivos de instalación
-Como último recurso, puede ejecutar InstallCleanup.exe. InstallCleanup.exe es una utilidad que se incluye con el instalador de Visual Studio, que limpia los archivos de instalación. No es una reinstalación completa. Esta utilidad elimina los datos de instancia y de caché en Visual Studio de 2017.
+### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>Step 5 - Run InstallCleanup.exe to clean up installation files
+As a last resort, you can run InstallCleanup.exe. InstallCleanup.exe is a tool that's packaged with the Visual Studio Installer, and it cleans up installation files. This tool doesn't perform a full reinstall. This tool deletes cache and instance data for Visual Studio 2017.
 
-1. Cierre el instalador de Visual Studio.
-2. Abra un símbolo del sistema de administrador. Para ello, siga estos pasos:
-   * En el menú **Inicio**, haga clic en **Ejecutar** (Inicio + R).
-   * Escriba **cmd**.
-   * Haga clic con el botón derecho en **Símbolo del sistema** y luego elija **Ejecutar como administrador**.
-3. Escriba la ruta de acceso completa de la utilidad InstallCleanup.exe y pase el siguiente modificador de línea de comandos: -f. De forma predeterminada, la ruta de acceso de la utilidad es la siguiente:
+1. Close the Visual Studio Installer.
+2. Open an administrator command prompt. To do this, follow these steps:
+   * On the **Start** menu, click **Run** (Start + R).
+   * Type **cmd**.
+   * Right-click **Command Prompt**, and then choose **Run as administrator**.
+3. Type the full path of the InstallCleanup.exe utility, and pass the following command-line switch: -f. By default, the path of the utility is as follows:
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```
-4. Vuelva a ejecutar al programa previo que se describe en el paso 3.
-5. Intente instalar o actualizar de nuevo Visual Studio.
+4. Rerun the bootstrapper that's described in [Step 3 - Delete the Visual Studio Installer directory to fix upgrade problems](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+5. Try to install or update Visual Studio again.
 
-## <a name="how-to-troubleshoot-an-offline-installer"></a>Solución de problemas de un instalador sin conexión
-Esta es una tabla de problemas conocidos y algunas soluciones que podrían servir de ayuda al realizar la instalación desde un diseño local.
+## <a name="how-to-troubleshoot-an-offline-installer"></a>How to troubleshoot an offline installer
+Here is a table of known issues and some workarounds when installing from a local layout that might help.
 
-| Problema       | Elemento                   | Solución |
+| Issue       | Item                   | Solution |
 | ----------- | ---------------------- | -------- |
-| Los usuarios no tienen acceso a los archivos. | permisos (ACL) | Asegúrese de que ajusta los permisos (ACL) de manera que concedan acceso de lectura a otros usuarios *antes* de compartir la instalación sin conexión. |
-| Las nuevas cargas de trabajo, componentes o idiomas no se instalarán.  | `--layout`  | Asegúrese de que tiene acceso a Internet si instala desde un diseño parcial y selecciona cargas de trabajo, componentes o idiomas que no están disponibles en el diseño anterior. |
+| Users do not have access to files. | permissions (ACLs) | Make sure that you adjust the permissions (ACLs) so that they grant Read access to other users  *before* you share the offline install. |
+| New workloads, components, or languages fail to install.  | `--layout`  | Make sure that you have internet access if you install from a partial layout and select workloads, components, or languages that were not downloaded previously in that partial layout. |
+
+## <a name="how-to-get-the-visual-studio-installation-logs"></a>How to get the Visual Studio installation logs
+Setup logs are needed to troubleshoot most installation issues. When you submit an issue by using [Report A Problem](../ide/how-to-report-a-problem-with-visual-studio-2017) in the Visual Studio Installer, these logs are automatically included in your report. 
+
+If you contact Microsoft Support, you may need to provide these setup logs by using the [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). The log collection tool collects setup logs from all components installed by Visual Studio 2017, including .NET Framework, Windows SDK, and SQL Server. It also collects computer information, a Windows Installer inventory, and Windows event log information for Visual Studio Installer, Windows Installer, and System Restore. 
+
+To collect the logs
+
+1. [Download the tool](https://aka.ms/vscollect).
+2. Open an administrative command prompt.
+3. Run Collect.exe from the directory where you saved the tool.
+4. Find the resulting Vslogs.zip file in your %TEMP% directory, for example, C:\Users\YourName\AppData\Local\Temp\vslogs.zip.
+
+> [!NOTE]
+> The tool must be run under the same user account that the failed installation was run under. If you are running the tool from a different user account, set the –user:\<name\> option to specify the user account under which the failed installation was run. Run `Collect.exe -?` from an administrator command prompt for additional options and usage information.
 
