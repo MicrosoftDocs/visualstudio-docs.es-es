@@ -1,69 +1,86 @@
 ---
-title: "C&#243;mo: Crear clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Create LINQ to SQL classes mapped to tables and views (O-R Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: efe23113e7163f5a85f3fe49edd783fb81e849d6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
+
 ---
-# C&#243;mo: Crear clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)
-Las clases de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] asignadas a las tablas y vistas de base de datos se denominan *clases de entidad*. La clase de entidad se asigna a un registro, mientras que las propiedades individuales de una clase de entidad se asignan a las columnas individuales que forman un registro.Puede crear clases de entidad basadas en tablas o vistas de base de datos arrastrando las tablas o vistas desde el **Explorador de servidores**\/**Explorador de bases de datos** hasta el [Object Relational Designer](../data-tools/linq-to-sql-tools-in-visual-studio2.md).El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] genera las clases y aplica los atributos concretos de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] para habilitar la funcionalidad de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] \(funciones de edición y comunicación de datos de <xref:System.Data.Linq.DataContext>\).Para obtener información detallada sobre las clases de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)], vea [Modelo de objetos de LINQ to SQL](../Topic/The%20LINQ%20to%20SQL%20Object%20Model.md).  
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>How to: Create LINQ to SQL classes mapped to tables and views (O/R Designer)
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes that are mapped to database tables and views are called *entity classes*. The entity class maps to a record, whereas the individual properties of an entity class map to the individual columns that make up a record. Create entity classes that are based on database tables or views by dragging tables or views from **Server Explorer**/**Database Explorer** onto the [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] generates the classes and applies the specific [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributes to enable [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] functionality (the data communication and editing capabilities of the <xref:System.Data.Linq.DataContext>). For detailed information about [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes, see [The LINQ to SQL Object Model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
->  El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] es un asignador relacional de objetos simple porque admite únicamente relaciones de asignación 1:1.Es decir, una clase de entidad únicamente puede tener una relación de asignación 1:1 con una tabla o vista de base de datos.No se admiten asignaciones complejas, como la asignación de una clase de entidad a varias tablas.Sin embargo, se puede asignar una clase de entidad a una vista que combina varias tablas relacionadas.  
+>  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is a simple object relational mapper because it supports only 1:1 mapping relationships. In other words, an entity class can have only a 1:1 mapping relationship with a database table or view. Complex mapping, such as mapping an entity class to multiple tables, is not supported. However, you can map an entity class to a view that joins multiple related tables.  
   
-## Crear clases de LINQ to SQL asignadas a tablas o vistas de base de datos  
- Al arrastrar tablas o vistas desde el **Explorador de servidores**\/**Explorador de bases de datos** hasta el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], se crean clases de entidad además de los métodos de <xref:System.Data.Linq.DataContext> que se usan para realizar actualizaciones.  
+## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Create LINQ to SQL Classes That Are Mapped to Database Tables or Views  
+ Dragging tables or views from **Server Explorer**/**Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] creates entity classes in addition to the <xref:System.Data.Linq.DataContext> methods that are used for performing updates.  
   
- De forma predeterminada, el motor en tiempo de ejecución de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] crea la lógica para volver a guardar en la base de datos los cambios de una clase de entidad actualizable.Esta lógica se basa en el esquema de la tabla \(las definiciones de columna e información de la clave principal\).Si no desea este comportamiento, puede configurar una clase de entidad para que se usen los procedimientos almacenados para realizar inserciones, actualizaciones y eliminaciones en lugar del comportamiento predeterminado del motor en tiempo de ejecución [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)].Para obtener más información, vea [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones \(Object Relational Designer\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
+ By default, the [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] runtime creates logic to save changes from an updatable entity class back to the database. This logic is based on the schema of the table (the column definitions and primary key information). If you do not want this behavior, you can configure an entity class to use stored procedures to perform Inserts, Updates, and Deletes instead of using the default [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] runtime behavior. For more information, see [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### Para crear clases de LINQ to SQL asignadas a tablas o vistas de base de datos  
+#### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>To create LINQ to SQL classes that are mapped to database tables or views  
   
-1.  En **Servidor**\/**Explorador de bases de datos**, expanda **Tablas** o **Vistas** y busque la tabla o vista de base de datos que desee usar en la aplicación.  
+1.  In **Server**/**Database Explorer**, expand **Tables** or **Views** and locate the database table or view that you want to use in your application.  
   
-2.  Arrastre la tabla o vista hasta el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Drag the table or view onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-     Se crea una clase de entidad, que aparece en la superficie de diseño.La clase de entidad tiene propiedades que se asignan a las columnas en la tabla o vista seleccionada.  
+     An entity class is created and appears on the design surface. The entity class has properties that map to the columns in the selected table or view.  
   
-## Crear un origen de datos de objeto y mostrar los datos en un formulario  
- Después de crear las clases de entidad mediante el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], puede crear un origen de datos de objeto y rellenar la [Orígenes de datos \(ventana\)](../Topic/Data%20Sources%20Window.md) con las clases de entidad.  
+## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Create an Object Data Source and Display the Data on a Form  
+ After you create entity classes by using the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], you can create an object data source and populate the [Data Sources Window](add-new-data-sources.md) with the entity classes.  
   
-#### Para crear un origen de datos de objeto basándose en las clases de entidad de LINQ to SQL  
+#### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>To create an object data source based on LINQ to SQL entity classes  
   
-1.  Para compilar el proyecto, en el menú **Compilar**, haga clic en **Compilar solución**.  
+1.  On the **Build** menu, click **Build Solution** to build your project.  
   
-2.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos**.  
+2.  On the **Data** menu, click **Show Data Sources**.  
   
-3.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos**.  
+3.  In the **Data Sources** window, click **Add New Data Source**.  
   
-4.  Haga clic en **Objeto** en la página **Elegir un tipo de origen de datos** y, a continuación, haga clic en **Siguiente**.  
+4.  Click **Object** on the **Choose a Data Source Type** page and then click **Next**.  
   
-5.  Expanda los nodos y, a continuación, busque y seleccione la clase.  
+5.  Expand the nodes and locate and select your class.  
   
     > [!NOTE]
-    >  Si la clase **Customer** no está disponible, cierre el asistente, compile el proyecto y vuelva a ejecutar el asistente.  
+    >  If the **Customer** class is not available, cancel out of the wizard, build the project, and run the wizard again.  
   
-6.  Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.  
+6.  Click **Finish** to create the data source and add the **Customer** entity class to the **Data Sources** window.  
   
-7.  Arrastre los elementos desde la ventana **Orígenes de datos** a un formulario.  
+7.  Drag items from the **Data Sources** window onto a form.  
   
-## Vea también  
- [Object Relational Designer](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Tutorial: Crear clases de LINQ to SQL \(Object Relational Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [Métodos DataContext \(Object Relational Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Cómo: Crear métodos DataContext asignados funciones y procedimientos almacenados \(Object Relational Designer\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [Modelo de objetos de LINQ to SQL](../Topic/The%20LINQ%20to%20SQL%20Object%20Model.md)   
- [Cómo: Agregar validación a clases de entidad](../data-tools/how-to-add-validation-to-entity-classes.md)   
- [Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)   
- [Tutorial: Agregar validación a clases de entidad](../Topic/Walkthrough:%20Adding%20Validation%20to%20Entity%20Classes.md)   
- [Cómo: Crear una asociación \(relación\) entre las clases de LINQ to SQL \(Object Relational Designer\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
+ [The LINQ to SQL Object Model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)   
+ [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)   
+  [How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
