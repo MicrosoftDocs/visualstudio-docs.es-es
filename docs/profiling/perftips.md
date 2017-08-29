@@ -28,11 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 845811bb9ee9552f8fc66b2d2b4b24ecdb04baf0
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: b19a309f403daa0a3881ec154aa4cd3f5e4d97dc
 ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
@@ -76,3 +76,4 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 
 ## <a name="see-also"></a>Vea también
  [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+
