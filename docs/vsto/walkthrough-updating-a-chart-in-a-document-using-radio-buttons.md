@@ -1,222 +1,221 @@
 ---
-title: "Tutorial: Actualizar un gr&#225;fico en un documento utilizando botones de radio"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "controles [desarrollo de Office en Visual Studio], actualizar documentos"
-  - "documentos [desarrollo de Office en Visual Studio], actualizar utilizando controles"
+title: 'Walkthrough: Updating a Chart in a Document Using Radio Buttons | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], updating using controls
+- controls [Office development in Visual Studio], updating documents
 ms.assetid: 56e6d1f2-65a4-41f0-aff5-f0cfd96d7185
 caps.latest.revision: 60
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 59
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b70182f68576ac9e142f4819ff78c2804c5be907
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Actualizar un gr&#225;fico en un documento utilizando botones de radio
-  En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.  
+# <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Walkthrough: Updating a Chart in a Document Using Radio Buttons
+  This walkthrough demonstrates how to use radio buttons in a document-level customization for Microsoft Office Word to give users the option to select chart styles on the document.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- En este tutorial se muestran las tareas siguientes:  
+ This walkthrough illustrates the following tasks:  
   
--   Agregar un gráfico al documento en un proyecto de nivel de documento en tiempo de diseño.  
+-   Adding a chart to the document in a document-level project at design time.  
   
--   Agrupar botones de radio agregándolos a un control de usuario.  
+-   Grouping radio buttons by adding them to a user control.  
   
--   Cambiar el estilo del gráfico cuando se selecciona una opción.  
+-   Changing the chart style when an option is selected.  
   
- Para ver el resultado como ejemplo completado, vea el ejemplo de controles de Word en [Ejemplos y tutoriales del desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
+ To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Requisitos previos  
- Necesita los componentes siguientes para completar este tutorial:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## Crear el proyecto  
- El primer paso es crear un proyecto de tipo Documento de Word.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word Document project.  
   
-#### Para crear un nuevo proyecto  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Cree un proyecto de Documento de Word con el nombre **Mis opciones de gráfico**.  En el asistente, seleccione **Crear un nuevo documento**.  Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a Word Document project with the name **My Chart Options**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el proyecto **Mis opciones de gráfico** al **Explorador de soluciones**.  
+     Visual Studio opens the new Word document in the designer and adds the **My Chart Options** project to **Solution Explorer**.  
   
-## Agregar un gráfico al documento  
+## <a name="adding-a-chart-to-the-document"></a>Adding a Chart to the Document  
   
-#### Para agregar un gráfico  
+#### <a name="to-add-a-chart"></a>To add a chart  
   
-1.  En el documento de Word hospedado en el diseñador de Visual Studio, en la cinta, haga clic en la pestaña **Insertar**.  
+1.  In the Word document that is hosted in the Visual Studio designer, on the Ribbon, click the **Insert** tab.  
   
-2.  En el grupo **Texto**, haga clic en el botón desplegable **Insertar objeto** y haga clic en **Objeto**.  
+2.  In the **Text** group, click the **Insert Object** drop-down button, and click **Object**.  
   
-     Se abrirá el cuadro de diálogo **Objeto**.  
+     The **Object** dialog box opens.  
   
-3.  En la lista **Tipo de objeto** de la pestaña **Crear nuevo**, seleccione **Gráfico de Microsoft Graph** y, a continuación, haga clic en **Aceptar**.  
+3.  In the **Object type** list on the **Create New** tab, select **Microsoft Graph Chart** and then click **OK**.  
   
-     Se agrega un gráfico al documento en el punto de inserción y aparece la ventana **Hoja de datos** con datos predeterminados.  
+     A chart is added to the document at the insertion point, and the **Datasheet** window appears with some default data.  
   
-4.  Cierre la ventana **Hoja de datos** para aceptar los valores predeterminados del gráfico y haga clic dentro del documento para alejar el foco del gráfico.  
+4.  Close the **Datasheet** window to accept the default values in the chart and click inside the document to move focus away from the chart.  
   
-5.  Haga clic con el botón secundario en el gráfico y, a continuación, haga clic en **Formato de objeto**.  
+5.  Right-click the chart, and then click **Format Object**.  
   
-6.  En la pestaña **Diseño** del cuadro de diálogo **Formato de objeto**, seleccione **Cuadrado** y haga clic en **Aceptar**.  
+6.  On the **Layout** tab of the **Format Object** dialog box, select **Square** and click **OK**.  
   
-## Agregar un control de usuario al proyecto  
- De manera predeterminada, los botones de radio de un documento no se excluyen mutuamente.  Puede hacer que funcionen correctamente si los agrega a un control de usuario y luego escribe código para controlar la selección.  
+## <a name="adding-a-user-control-to-the-project"></a>Adding a User Control to the Project  
+ Radio buttons on a document are not mutually exclusive by default. You can make them function correctly by adding them to a user control, and then writing code to control the selection.  
   
-#### Para agregar un control de usuario  
+#### <a name="to-add-a-user-control"></a>To add a user control  
   
-1.  Seleccione el proyecto **Mis opciones de gráfico** en el **Explorador de soluciones**.  
+1.  Select the **My Chart Options** project in **Solution Explorer**.  
   
-2.  En el menú **Proyecto**, haga clic en **Agregar nuevo elemento**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  En el cuadro de diálogo **Agregar nuevo elemento**, haga clic en **Control de usuario**, asigne el nombre **ChartOptions** al control y haga clic en **Agregar**.  
+3.  In the **Add New Item** dialog box, click **User Control**, name the control **ChartOptions,** and click **Add**.  
   
-#### Para agregar controles de Windows Forms al control de usuario  
+#### <a name="to-add-windows-form-controls-to-the-user-control"></a>To add Windows Form controls to the user control  
   
-1.  Si el control de usuario no está visible en el diseñador, haga doble clic en **ChartOptions** en el **Explorador de soluciones**.  
+1.  If the user control is not visible in the designer, double-click **ChartOptions** in **Solution Explorer**.  
   
-2.  Desde la pestaña **Controles comunes** del **Cuadro de herramientas**, arrastre el primer control **Botón de radio** al control de usuario y cambie las propiedades siguientes.  
+2.  From the **Common Controls** tab of the **Toolbox**, drag the first **Radio Button** control to the user control, and change the following properties.  
   
-    |Propiedad|Valor|  
-    |---------------|-----------|  
-    |**Nombre**|**columnChart**|  
-    |**Text**|Gráfico de columnas|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**columnChart**|  
+    |**Text**|**Column Chart**|  
   
-3.  Agregue un segundo **Botón de radio** al control de usuario y cambie las siguientes propiedades.  
+3.  Add a second **Radio Button** to the user control, and change the following properties.  
   
-    |Propiedad|Valor|  
-    |---------------|-----------|  
-    |**Nombre**|**barChart**|  
-    |**Text**|Gráfico de barras|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**barChart**|  
+    |**Text**|**Bar Chart**|  
   
-4.  Agregue un tercer **Botón de radio** al control de usuario y cambie las siguientes propiedades.  
+4.  Add a third **Radio Button** to the user control, and change the following properties.  
   
-    |Propiedad|Valor|  
-    |---------------|-----------|  
-    |**Nombre**|**lineChart**|  
-    |**Text**|Gráfico de líneas|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**lineChart**|  
+    |**Text**|**Line Chart**|  
   
-5.  Agregue un cuarto **Botón de radio** al control de usuario y cambie las siguientes propiedades.  
+5.  Add a fourth **Radio Button** to the user control, and change the following properties.  
   
-    |Propiedad|Valor|  
-    |---------------|-----------|  
-    |**Nombre**|**areaBlockChart**|  
-    |**Text**|Gráfico de bloques de áreas|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**areaBlockChart**|  
+    |**Text**|**Area Block Chart**|  
   
-## Agregar referencias  
- Para obtener acceso al gráfico desde el control de usuario en un documento, debe tener una referencia al ensamblado Microsoft.Office.Interop.Graph en el proyecto.  
+## <a name="adding-references"></a>Adding References  
+ To access the chart from the user control on a document, you must have a reference to the Microsoft.Office.Interop.Graph assembly in your project.  
   
-#### Para agregar una referencia al ensamblado Microsoft.Office.Interop.Graph  
+#### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>To add a reference to the Microsoft.Office.Interop.Graph assembly  
   
-1.  En el menú **Proyecto**, haga clic en **Agregar referencia**.  
+1.  On the **Project** menu, click **Add Reference**.  
   
-     Aparecerá el cuadro de diálogo **Agregar referencia**.  
+     The **Add Reference** dialog box appears.  
   
-2.  En la pestaña **.NET**, seleccione **Microsoft.Office.Interop.Graph** y haga clic en **Aceptar**.  Seleccione la versión 14.0.0.0 del ensamblado.  
+2.  On the **.NET** tab, select **Microsoft.Office.Interop.Graph** and click **OK**. Select the 14.0.0.0 version of the assembly.  
   
-## Cambiar el estilo del gráfico cuando se selecciona un botón de radio  
- Para que los botones funcionen correctamente, cree un evento público en el control de usuario, agregue una propiedad para establecer el tipo de selección y cree un procedimiento para el evento `CheckedChanged` de cada uno de los botones de radio.  
+## <a name="changing-the-chart-style-when-a-radio-button-is-selected"></a>Changing the Chart Style when a Radio Button is Selected  
+ To make the buttons work correctly, create a public event on the user control, add a property to set the selection type, and create a procedure for the `CheckedChanged` event of each of the radio buttons.  
   
-#### Para crear un evento y una propiedad en un control de usuario  
+#### <a name="to-create-an-event-and-property-on-a-user-control"></a>To create an event and property on a user control  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el control de usuario y, a continuación, haga clic en **Ver código**.  
+1.  In **Solution Explorer**, right-click the user control, and then click **View Code**.  
   
-2.  Agregue código para crear un evento `SelectionChanged` y la propiedad `Selection` de la clase `ChartOptions`.  
+2.  Add code to create a `SelectionChanged` event and the `Selection` property to the `ChartOptions` class.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#9)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#9)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]  
   
-#### Para controlar el evento CheckedChange de los botones de radio  
+#### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>To handle the CheckedChange event of the radio buttons  
   
-1.  Establezca el tipo de gráfico en el controlador de eventos `CheckedChanged` del botón de radio `areaBlockChart` y, a continuación, genere el evento.  
+1.  Set the chart type in the `CheckedChanged` event handler of the `areaBlockChart` radio button and then raise the event.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#10)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#10)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#10)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#10)]  
   
-2.  Establezca el tipo de gráfico en el controlador de eventos `CheckedChanged` del botón de radio `barChart`.  
+2.  Set the chart type in the `CheckedChanged` event handler of the `barChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#11)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#11)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#11)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#11)]  
   
-3.  Establezca el tipo de gráfico en el controlador de eventos `CheckedChanged` del botón de radio `columnChart`.  
+3.  Set the chart type in the `CheckedChanged` event handler of the `columnChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#12)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#12)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#12)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#12)]  
   
-4.  Establezca el tipo de gráfico en el controlador de eventos `CheckedChanged` del botón de radio `lineChart`.  
+4.  Set the chart type in the `CheckedChanged` event handler of the `lineChart` radio button.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#13)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ChartOptions.vb#13)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  En C\#, debe agregar controladores de eventos para los botones de radio.  Puede agregar el código al constructor `ChartOptions`, debajo de la llamada a `InitializeComponent`.  Para obtener información acerca de la creación de controladores de eventos, vea [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C#, you must add event handlers for the radio buttons. You can add the code to the `ChartOptions` constructor, beneath the call to `InitializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ChartOptions.cs#14)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
-## Agregar el control de usuario al documento  
- Cuando compila la solución, el nuevo control de usuario se agrega automáticamente al **Cuadro de herramientas**.  A continuación, puede arrastrar el control desde el **Cuadro de herramientas** al documento.  
+## <a name="adding-the-user-control-to-the-document"></a>Adding the User Control to the Document  
+ When you build the solution, the new user control is automatically added to the **Toolbox**. You can then drag the control from the **Toolbox** to your document.  
   
-#### Para agregar el control de usuario al documento  
+#### <a name="to-add-the-user-control-your-document"></a>To add the user control your document  
   
-1.  En el menú **Compilar**, haga clic en **Compilar solución**.  
+1.  On the **Build** menu, click **Build Solution**.  
   
-     El control **ChartOptions** se ha agregado al **Cuadro de herramientas**.  
+     The **ChartOptions** user control is added to the **Toolbox**.  
   
-2.  En el **Explorador de soluciones**, haga clic con el botón derecho en **ThisDocument.vb** o **ThisDocument.cs** y luego haga clic en **Diseñador de vistas**.  
+2.  In **Solution Explorer**, right-click **ThisDocument.vb** or **ThisDocument.cs**, and then click **View Designer**.  
   
-3.  Arrastre el control `ChartOptions` del **Cuadro de herramientas** al documento.  
+3.  Drag the `ChartOptions` control from the **Toolbox** to the document.  
   
-     En la ventana **Propiedades**, dé el nombre `ChartOptions1` al control que acaba de agregar al documento.  
+     In the **Properties** window, name the control that you just added to the document  `ChartOptions1`.  
   
-## Cambiar el tipo de gráfico  
- Cree un controlador de eventos para cambiar el tipo de gráfico según la opción que se seleccione en el control de usuario.  
+## <a name="changing-the-chart-type"></a>Changing the Chart Type  
+ Create an event handler to change the chart type according to the option that is selected in the user control.  
   
-#### Para cambiar el tipo de gráfico que se muestra en el documento  
+#### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>To change the type of chart that is displayed in the document  
   
-1.  Agregue el siguiente controlador de eventos a la clase `ThisDocument`.  
+1.  Add the following event handler to the `ThisDocument` class.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ThisDocument.vb#15)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]  
   
-2.  En C\#, debe agregar un controlador de eventos para el control de usuario al evento <xref:Microsoft.Office.Tools.Word.Document.Startup>.  
+2.  In C#, you must add an event handler for the user control to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#16)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]  
   
-## Probar la aplicación  
- Ahora puede probar el documento para asegurarse de que el estilo del gráfico se actualiza correctamente al seleccionar un botón de radio.  
+## <a name="testing-the-application"></a>Testing the Application  
+ You can now test your document to make sure that the chart style is updated correctly when you select a radio button.  
   
-#### Para probar el documento  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Presione F5 para ejecutar el proyecto.  
+1.  Press F5 to run your project.  
   
-2.  Seleccione varios botones de radio.  
+2.  Select various radio buttons.  
   
-3.  Confirme que el estilo del gráfico cambia para coincidir con la selección.  
+3.  Confirm that the chart style changes to match the selection.  
   
-## Pasos siguientes  
- A continuación, podría realizar las siguientes tareas:  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Usar un botón para rellenar un cuadro de texto.  Para obtener más información, vea [Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Using a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Cambiar el formato por medio de la selección de un estilo de un cuadro combinado.  Para obtener más información, vea [Tutorial: Cambiar el formato de un documento utilizando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Change formatting by selecting a style from a combo box. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
-## Vea también  
- [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
- [Ejemplos y tutoriales del desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Limitaciones de los controles de formularios Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
+ [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

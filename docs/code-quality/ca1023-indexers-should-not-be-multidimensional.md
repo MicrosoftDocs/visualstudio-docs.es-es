@@ -1,56 +1,71 @@
 ---
-title: "CA1023: Los indizadores no deben ser multidimensionales | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IndexersShouldNotBeMultidimensional"
-  - "CA1023"
-helpviewer_keywords: 
-  - "CA1023"
-  - "IndexersShouldNotBeMultidimensional"
+title: 'CA1023: Indexers should not be multidimensional | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IndexersShouldNotBeMultidimensional
+- CA1023
+helpviewer_keywords:
+- CA1023
+- IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA1023: Los indizadores no deben ser multidimensionales
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e676d335932cf96e61771646a9510ad93561381f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexers should not be multidimensional
 |||  
 |-|-|  
 |TypeName|IndexersShouldNotBeMultidimensional|  
-|Identificador de comprobación|CA1023|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Problemático|  
+|CheckId|CA1023|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Motivo  
- Un tipo público o protegido contiene un indizador público o protegido que utiliza más de un índice.  
+## <a name="cause"></a>Cause  
+ A public or protected type contains a public or protected indexer that uses more than one index.  
   
-## Descripción de la regla  
- Los indizadores, es decir, las propiedades indizadas, deben utilizar un índice único.  Los indizadores multidimensionales pueden reducir de forma significativa la utilidad de la biblioteca.  Si el diseño requiere varios índices, reconsidere si un tipo representa un almacén de datos lógico.  Si no es así, use un método.  
+## <a name="rule-description"></a>Rule Description  
+ Indexers, that is, indexed properties, should use a single index. Multi-dimensional indexers can significantly reduce the usability of the library. If the design requires multiple indexes, reconsider whether the type represents a logical data store. If not, use a method.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el diseño para utilizar un solo entero o un índice de cadena o utilice un método en lugar del indizador.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the design to use a lone integer or string index, or use a method instead of the indexer.  
   
-## Cuándo suprimir advertencias  
- Sólo suprima con cuidado una advertencia de esta regla después de tener en cuenta la necesidad del indizador no estándar.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after carefully considering the need for the nonstandard indexer.  
   
-## Ejemplo  
- El ejemplo siguiente muestra un tipo, `DayOfWeek03`, con un indizador multidimensional que infringe la regla.  El indizador se puede considerar un tipo de conversión y, por tanto, es más apropiado exponerlo como un método.  El tipo se vuelve a diseñar en `RedesignedDayOfWeek03` para cumplir la regla.  
+## <a name="example"></a>Example  
+ The following example shows a type, `DayOfWeek03`, with a multi-dimensional indexer that violates the rule. The indexer can be seen as a type of conversion and therefore is more appropriately exposed as a method. The type is redesigned in `RedesignedDayOfWeek03` to satisfy the rule.  
   
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-cs[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
+ [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)] [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)] [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
   
-## Reglas relacionadas  
- [CA1043: Utilizar argumento integral o de cadena para los indizadores](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1043: Use integral or string argument for indexers](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
   
- [CA1024: Utilizar las propiedades donde corresponda](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)

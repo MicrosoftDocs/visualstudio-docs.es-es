@@ -1,51 +1,69 @@
 ---
-title: "CA2101: Especifique c&#225;lculo de referencias para argumentos de cadena P/Invoke | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SpecifyMarshalingForPInvokeStringArguments"
-  - "CA2101"
-helpviewer_keywords: 
-  - "CA2101"
-  - "SpecifyMarshalingForPInvokeStringArguments"
+title: 'CA2101: Specify marshaling for P-Invoke string arguments | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SpecifyMarshalingForPInvokeStringArguments
+- CA2101
+helpviewer_keywords:
+- CA2101
+- SpecifyMarshalingForPInvokeStringArguments
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA2101: Especifique c&#225;lculo de referencias para argumentos de cadena P/Invoke
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 536195a8bd2a3d92e2fb5f784e29d01d9393e580
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Specify marshaling for P/Invoke string arguments
 |||  
 |-|-|  
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|  
-|Identificador de comprobación|CA2101|  
-|Categoría|Microsoft.Globalization|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA2101|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un miembro de invocación de plataforma permite llamadores que no son de plena confianza y no calcula explícitamente las referencias a la cadena.  
+## <a name="cause"></a>Cause  
+ A platform invoke member allows for partially trusted callers, has a string parameter, and does not explicitly marshal the string.  
   
-## Descripción de la regla  
- Cuando convierte de Unicode a ANSI, es posible que no todos los caracteres Unicode se puedan representar en una página de códigos ANSI concreta.  *Mejor asignación* intenta resolver este problema sustituyendo un carácter por el carácter que no se puede representar.  El uso de esta característica se puede producir una vulnerabilidad de seguridad potencial porque no se puede controlar el carácter que se elige.  Por ejemplo, el código malintencionado puede crear una cadena Unicode que contenga caracteres que no se encuentran en ninguna página de códigos concreta y que se convierten el caracteres especiales del sistema como '..' o '\/'.  Observe además que las comprobaciones de seguridad para los caracteres especiales normalmente aparecen antes de que la cadena se convierta a ANSI.  
+## <a name="rule-description"></a>Rule Description  
+ When you convert from Unicode to ANSI, it is possible that not all Unicode characters can be represented in a specific ANSI code page. *Best-fit mapping* tries to solve this problem by substituting a character for the character that cannot be represented. The use of this feature can cause a potential security vulnerability because you cannot control the character that is chosen. For example, malicious code could intentionally create a Unicode string that contains characters that are not found in a particular code page, which are converted to file system special characters such as '..' or '/'. Note also that security checks for special characters frequently occur before the string is converted to ANSI.  
   
- La mejor asignación es el valor predeterminado para la conversión no administrada, de WChar a Mbyte.  A menos que deshabilite explícitamente la mejor asignación, el código podría contener una vulnerabilidad de seguridad explotable debido a este problema.  
+ Best-fit mapping is the default for the unmanaged conversion, WChar to MByte. Unless you explicitly disable best-fit mapping, your code might contain an exploitable security vulnerability because of this issue.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, calcule las referencias de los tipos de datos de cadena explícitamente.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, explicitly marshal string data types.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- El ejemplo siguiente muestra un método que infringe esta regla y, a continuación, muestra cómo corregir la infracción.  
+## <a name="example"></a>Example  
+ The following example shows a method that violates this rule, and then shows how to fix the violation.  
   
- [!code-cs[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]
+ [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

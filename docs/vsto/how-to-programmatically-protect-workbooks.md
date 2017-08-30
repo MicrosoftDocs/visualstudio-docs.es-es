@@ -1,76 +1,77 @@
 ---
-title: "C&#243;mo: Proteger libros mediante programaci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "protección de documentos, agregar a los libros"
-  - "protección de documentos, quitar de los libros"
-  - "documentos [desarrollo de Office en Visual Studio], protección de documentos"
-  - "libros, contraseñas"
-  - "libros, proteger"
-  - "libros, desproteger"
+title: 'How to: Programmatically Protect Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, passwords
+- documents [Office development in Visual Studio], document protection
+- workbooks, unprotecting
+- document protection, removing from workbooks
+- document protection, adding to workbooks
+- workbooks, protecting
 ms.assetid: 553c67b9-e2a4-46b6-878c-5b4b4efa4589
 caps.latest.revision: 43
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 26ff26cffc717891c405b580602bae016fdd6399
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Proteger libros mediante programaci&#243;n
-  Puede proteger un libro de Microsoft Office Excel para que los usuarios no puedan agregar ni eliminar hojas de cálculo, y también puede desproteger el libro mediante programación.  Opcionalmente, puede especificar una contraseña, indicar si desea que se proteja la estructura \(para que los usuarios no puedan mover las hojas\) y si desea que estén protegidas las ventanas del libro.  
+# <a name="how-to-programmatically-protect-workbooks"></a>How to: Programmatically Protect Workbooks
+  You can protect a Microsoft Office Excel workbook so that users cannot add or delete worksheets, and also unprotect the workbook programmatically. You can optionally specify a password, indicate whether you want the structure protected (so users cannot move sheets around), and indicate whether you want the workbook's windows protected.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- El hecho de que un libro esté protegido no impide a los usuarios editar las celdas.  Para proteger los datos, debe proteger las hojas de cálculo.  Para obtener más información, vea [Cómo: Proteger hojas de cálculo mediante programación](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Protecting a workbook does not stop users from editing cells. To protect the data, you must protect the worksheets. For more information, see [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md).  
   
- En el siguiente código de ejemplo se utiliza una variable que contiene una contraseña que se ha obtenido del usuario.  
+ The following code examples use a variable to contain a password that is obtained from the user.  
   
-## Proteger un libro que forma parte de una personalización en el nivel del documento  
+## <a name="protecting-a-workbook-that-is-part-of-a-document-level-customization"></a>Protecting a Workbook That Is Part of a Document-Level Customization  
   
-#### Para proteger un libro  
+#### <a name="to-protect-a-workbook"></a>To protect a workbook  
   
-1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> del libro e incluya una contraseña.  Para utilizar el ejemplo de código siguiente, ejecútelo en la clase `ThisWorkbook`, no en una clase Sheet.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> method of the workbook and include a password. To use the following code example, run it in the `ThisWorkbook` class, not in a sheet class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#10)]
-     [!code-vb[Trin_VstcoreExcelAutomation#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#10)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]  [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]  
   
-#### Para desproteger un libro  
+#### <a name="to-unprotect-a-workbook"></a>To unprotect a workbook  
   
-1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A>, pasando una contraseña si es necesario.  Para utilizar el ejemplo de código siguiente, ejecútelo en la clase `ThisWorkbook`, no en una clase Sheet.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> method, passing a password if it is required. To use the following code example, run it in the `ThisWorkbook` class, not in a sheet class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreExcelAutomation#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#11)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]  [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]  
   
-## Proteger un libro mediante un complemento en el nivel de la aplicación  
+## <a name="protecting-a-workbook-by-using-an-application-level-add-in"></a>Protecting a Workbook by Using an Application-Level Add-In  
   
-#### Para proteger un libro  
+#### <a name="to-protect-a-workbook"></a>To protect a workbook  
   
-1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> del libro e incluya una contraseña.  En este ejemplo de código se usa el libro activo.  Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> method of the workbook and include a password. This code example uses the active workbook. To use this example, run the code from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]  
   
-#### Para desproteger un libro  
+#### <a name="to-unprotect-a-workbook"></a>To unprotect a workbook  
   
-1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> del libro activo y pase una contraseña si es necesario.  Para usar este ejemplo, ejecute el código desde la clase `ThisAddIn` del proyecto.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> method of the active workbook, passing a password if it is required. To use this example, run the code from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]  
   
-## Vea también  
- [Trabajar con libros](../vsto/working-with-workbooks.md)   
- [Cómo: Proteger hojas de cálculo mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Cómo: Ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

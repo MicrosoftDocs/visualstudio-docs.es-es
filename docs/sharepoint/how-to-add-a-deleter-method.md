@@ -1,83 +1,87 @@
 ---
-title: "C&#243;mo: Agregar un m&#233;todo Deleter"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [desarrollo de SharePoint en Visual Studio], Deleter"
-  - "BDC [desarrollo de SharePoint en Visual Studio], eliminar datos"
-  - "BDC [desarrollo de SharePoint en Visual Studio], eliminar instancias de entidad"
-  - "BDC [desarrollo de SharePoint en Visual Studio], quitar datos"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], Deleter"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], eliminar datos"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], eliminar instancias de entidad"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], quitar datos"
+title: 'How to: Add a Deleter Method | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], deleting data
+- Business Data Connectivity service [SharePoint development in Visual Studio], Deleter
+- BDC [SharePoint development in Visual Studio], Deleter
+- BDC [SharePoint development in Visual Studio], removing data
+- BDC [SharePoint development in Visual Studio], deleting entity instances
+- Business Data Connectivity service [SharePoint development in Visual Studio], deleting entity instances
+- Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
+- Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 ms.assetid: 3362eaf4-5dc7-4450-9009-b296308ae61f
 caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c4c224bf69149628d17d833a1f1e7cb312f93a31
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Agregar un m&#233;todo Deleter
-  Puede permitir a un usuario final eliminar un registro de datos de una lista externa de un sitio de SharePoint agregando un método *Deleter* al modelo.  Para obtener más información, vea [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-deleter-method"></a>How to: Add a Deleter Method
+  You can enable an end user to delete a data record from an external list on a SharePoint site by adding a *Deleter* method to the model. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### Para crear un método Deleter  
+### <a name="to-create-a-deleter-method"></a>To create a Deleter method  
   
-1.  En el diseñador de BDC, elija una entidad.  
+1.  On the BDC designer, choose an entity.  
   
-2.  En la barra de menú, elija **Visualización**, **Otras ventanas**, **Detalles del método de BDC**.  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     Se abre la ventana **Detalles del método de BDC**.  Para obtener más información sobre esta ventana, vea [Introducción general a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
+     The **BDC Method Details** window opens. For more information about this window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  En la lista de **Agregar un método** , elija **Cree un método Deleter**.  
+3.  In the **Add a Method** list, choose **Create a Deleter Method**.  
   
-     Visual Studio agrega los siguientes elementos al modelo.  Estos elementos aparecen en la ventana **Detalles del método de BDC**.  
+     Visual Studio adds the following elements to the model. These elements appear in the **BDC Method Details** window.  
   
-    -   Un método denominado **Delete**.  
+    -   A method named **Delete**.  
   
-    -   Un parámetro de entrada para el método.  
+    -   An input parameter for the method.  
   
-    -   Un descriptor de tipos del parámetro.  
+    -   A type descriptor for the parameter.  
   
-    -   Una instancia de método para el método.  
+    -   A method instance for the method.  
   
-     Para obtener más información, vea [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  En **Explorador de soluciones**, abra el menú contextual del archivo de código de servicio generado para la entidad y, a continuación **Ver código**.  
+4.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
   
-     El archivo de código del servicio de entidad se abre en el editor de código.  Para obtener más información sobre el archivo de código del servicio de entidad, vea [Crea un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     The entity service code file opens in the Code Editor. For more information about the entity service code file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Agregue código al método Deleter para eliminar un registro.  En el siguiente ejemplo se elimina un elemento de línea de un pedido de ventas utilizando la base de datos de ejemplo de AdventureWorks para SQL Server.  
-  
-    > [!NOTE]  
-    >  El método de este ejemplo utiliza dos parámetros de entrada.  
+5.  Add code to the Deleter method to delete a record. The following example deletes a line item from a sales order by using the AdventureWorks sample database for SQL Server.  
   
     > [!NOTE]  
-    >  Reemplace el valor del campo `ServerName` con el nombre del servidor.  
+    >  The method in this example uses two input parameters.  
   
-     [!code-csharp[SP_BDC#6](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/salesorderdetailservice.cs#6)]
-     [!code-vb[SP_BDC#6](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/salesorderdetailservice.vb#6)]  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
   
-## Vea también  
- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Cómo: Agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)   
- [Cómo: Agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Cómo: Agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)   
- [Cómo: Agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Introducción general a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Cómo: Definir la instancia de un método](../sharepoint/how-to-define-a-method-instance.md)  
+     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]  [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
+  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
+ [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
   
   

@@ -1,55 +1,71 @@
 ---
-title: "CA1012: Los tipos abstractos no deber&#237;an tener constructores | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AbstractTypesShouldNotHaveConstructors"
-  - "CA1012"
-helpviewer_keywords: 
-  - "CA1012"
+title: 'CA1012: Abstract types should not have constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AbstractTypesShouldNotHaveConstructors
+- CA1012
+helpviewer_keywords:
+- CA1012
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 25
----
-# CA1012: Los tipos abstractos no deber&#237;an tener constructores
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 82ee2e7ba06a593ef79d12e9a18e10a65d435f90
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Abstract types should not have constructors
 |||  
 |-|-|  
 |TypeName|AbstractTypesShouldNotHaveConstructors|  
-|Identificador de comprobación|CA1012|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1012|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo público es abstracto y tiene un constructor público.  
+## <a name="cause"></a>Cause  
+ A public type is abstract and has a public constructor.  
   
-## Descripción de la regla  
- Los tipos derivados pueden llamar solo a los constructores de tipos abstractos.  Puesto que los constructores públicos crean instancias de un tipo y no se pueden crear instancias de un tipo abstracto, no es correcto diseñar un tipo abstracto con un constructor público.  
+## <a name="rule-description"></a>Rule Description  
+ Constructors on abstract types can be called only by derived types. Because public constructors create instances of a type, and you cannot create instances of an abstract type, an abstract type that has a public constructor is incorrectly designed.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, marque el constructor como protegido o no declare el tipo como abstracto.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, either make the constructor protected or do not declare the type as abstract.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  El tipo abstracto tiene un constructor público.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule. The abstract type has a public constructor.  
   
-## Ejemplo  
- El siguiente ejemplo contiene un tipo abstracto que infringe esta regla.  
+## <a name="example"></a>Example  
+ The following example contains an abstract type that violates this rule.  
   
- [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
- [!code-cs[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]  
+ [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)] [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]  
   
-## Ejemplo  
- En el ejemplo siguiente se corrige la infracción anterior al cambiar la accesibilidad del constructor de `public` a `protected`.  
+## <a name="example"></a>Example  
+ The following example fixes the previous violation by changing the accessibility of the constructor from `public` to `protected`.  
   
- [!code-cs[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
- [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]
+ [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)] [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

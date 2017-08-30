@@ -1,78 +1,82 @@
 ---
-title: "How to: Execute a SharePoint Command"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint commands [SharePoint development in Visual Studio], executing"
+title: 'How to: Execute a SharePoint Command | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint commands [SharePoint development in Visual Studio], executing
 ms.assetid: 2d1a163b-b601-4dac-bcea-328f24cb4d57
 caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7f51a23170059ac4bd5a2b610e65f64f43fcb7cd
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Execute a SharePoint Command
-  Si desea utilizar el modelo de objetos de servidor en una extensión de herramientas de SharePoint, debe crear un *comando de SharePoint* personalizado para llamar a la API.  Después de definir el comando e implementarlo con la extensión de herramientas de SharePoint, la extensión puede ejecutar el comando para llamar en el modelo de objetos de servidor de SharePoint.  Para ejecutar el comando, use uno de los métodos ExecuteCommand de un objeto <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>.  
+# <a name="how-to-execute-a-sharepoint-command"></a>How to: Execute a SharePoint Command
+  If you want to use the server object model in a SharePoint tools extension, you must create a custom *SharePoint command* to call the API. After you define the command and deploy it with your SharePoint tools extension, your extension can execute the command to call into the SharePoint server object model. To execute the command, use one of the ExecuteCommand methods of an <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> object.  
   
- Para obtener más información sobre el propósito de los comandos de SharePoint, vea [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+ For more information about the purpose of SharePoint commands, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
-### Para ejecutar un comando de SharePoint  
+### <a name="to-execute-a-sharepoint-command"></a>To execute a SharePoint command  
   
-1.  En la extensión de herramientas de SharePoint, obtenga un objeto <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>.  La manera de obtener un objeto <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> depende del tipo de extensión que se esté creando:  
+1.  In your SharePoint tools extension, get an <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> object. The way you get an <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> object depends on the type of extension you are creating:  
   
-    -   En una extensión del sistema de proyectos de SharePoint, use la propiedad <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A>.  
+    -   In an extension of the SharePoint project system, use the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> property.  
   
-         Para obtener más información sobre extensiones del sistema de proyectos, vea [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md).  
+         For more information about project system extensions, see [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md).  
   
-    -   En una extensión del nodo **Conexiones de SharePoint** en el **Explorador de servidores**, use la propiedad <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A>.  Para obtener un objeto <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext>, use la propiedad <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A>.  
+    -   In an extension of the **SharePoint Connections** node in **Server Explorer**, use the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> property. To get an <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> object, use the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> property.  
   
-         Para obtener más información sobre las extensiones del **Explorador de servidores**, vea [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+         For more information about **Server Explorer** extensions, see [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
-    -   En código que no forme parte de una extensión de las herramientas SharePoint, como un asistente de plantilla de proyecto, use la propiedad <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>.  
+    -   In code that is not part of an extension of the SharePoint tools, such as a project template wizard, use the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> property.  
   
-         Para obtener más información acerca de la recuperación de un servicio de proyecto, vez [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
+         For more information about retrieving the project service, see [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md).  
   
-2.  Llame a uno de los métodos ExecuteCommand del objeto <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>.  Pase el nombre del comando que desea ejecutar al primer argumento del método ExecuteCommand.  Si el comando tiene un parámetro personalizado, páselo al segundo argumento del método ExecuteCommand.  
+2.  Call one of the ExecuteCommand methods of the <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> object. Pass the name of the command you want to execute to the first argument of the ExecuteCommand method. If your command has a custom parameter, pass that parameter to the second argument of the ExecuteCommand method.  
   
-     Hay una sobrecarga ExecuteCommand diferente para cada firma de comando compatible.  En la tabla siguiente se enumeran las firmas compatibles y qué sobrecarga usar con cada una.  
+     There is a different ExecuteCommand overload for each supported command signature. The following table lists the supported signatures and which overload to use for each signature.  
   
-    |firma de comando|Sobrecarga ExecuteCommand que se usa|  
-    |----------------------|------------------------------------------|  
-    |El comando solo tiene el parámetro <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> predeterminado y no devuelve valor.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
-    |El comando solo tiene el parámetro <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> predeterminado y un valor devuelto.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
-    |El comando tiene dos parámetros \(parámetro <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> predeterminado y un parámetro personalizado\) y ningún valor devuelto.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
-    |El comando tiene dos parámetros y un valor devuelto.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
+    |Command signature|ExecuteCommand overload to use|  
+    |-----------------------|------------------------------------|  
+    |The command has only the default <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter and no return value.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
+    |The command has only the default <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter and a return value.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
+    |The command has two parameters (the default <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter and a custom parameter) and no return value.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
+    |The command has two parameters and a return value.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
-## Ejemplo  
- En el ejemplo de código siguiente se muestra cómo utilizar la sobrecarga <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> para llamar al comando `Contoso.Commands.UpgradeSolution` que se describe en [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).  
+## <a name="example"></a>Example  
+ The following code example demonstrates how to use the <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> overload to call the `Contoso.Commands.UpgradeSolution` command that is described in [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/CS/deploymentstepextension/upgradestep.cs#6)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/vb/deploymentstepextension/upgradestep.vb#6)]  
+ [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)] [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
   
- El método `Execute` mostrado en este ejemplo es una implementación del método <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> de la interfaz <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> en un paso de implementación personalizado.  Para consultar este código en el contexto de un ejemplo mayor, vea [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ The `Execute` method shown in this example is an implementation of the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> method of the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface in a custom deployment step. To see this code in the context of a larger example, see [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
- Observe los detalles siguientes sobre la llamada al método <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>:  
+ Note the following details about the call to the <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> method:  
   
--   El primer parámetro identifica el comando que desea llamar.  Esta cadena coincide con el valor que pasa a <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> en la definición de comando.  
+-   The first parameter identifies the command that you want to call. This string matches the value that you pass to the <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> on the command definition.  
   
--   El segundo parámetro es el valor que desea pasar al segundo parámetro personalizado del comando.  En este caso, es la ruta de acceso completa del archivo .wsp que se actualiza en el sitio de SharePoint.  
+-   The second parameter is the value that you want to pass to the custom second parameter of the command. In this case, it is the full path of the .wsp file that is being upgraded to the SharePoint site.  
   
--   El código no pasa el parámetro <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> implícito al comando.  Este parámetro se pasa automáticamente al comando cuando se le llama desde una extensión del sistema de proyectos de SharePoint o una extensión del nodo **Conexiones de SharePoint** del **Explorador de servidores**.  En otros tipos de soluciones, por ejemplo, en un asistente de plantilla de proyecto que implemente la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>, este parámetro es **null**.  
+-   The code does not pass the implicit <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter to the command. This parameter is passed into the command automatically when you call the command from an extension of the SharePoint project system or an extension of the **SharePoint Connections** node in **Server Explorer**. In other types of solutions, such as in a project template wizard that implements the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface, this parameter is **null**.  
   
-## Compilar el código  
- En este ejemplo se requiere una referencia al ensamblado Microsoft.VisualStudio.SharePoint.  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires a reference to the Microsoft.VisualStudio.SharePoint assembly.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

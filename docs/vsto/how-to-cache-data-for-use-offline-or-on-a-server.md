@@ -1,71 +1,75 @@
 ---
-title: "C&#243;mo: Almacenar datos en la memoria cach&#233; para el uso sin conexi&#243;n o en un servidor"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "datos [desarrollo de Office en Visual Studio], almacenar en caché"
-  - "almacenamiento de datos en caché [desarrollo de Office en Visual Studio], uso sin conexión"
-  - "almacenamiento de datos en caché [desarrollo de Office en Visual Studio], uso de servidor"
-  - "conjuntos de datos [desarrollo de Office en Visual Studio], almacenar en caché"
-  - "aplicaciones de Office [desarrollo de Office en Visual Studio], datos"
-  - "datos sin conexión [desarrollo de Office en Visual Studio]"
+title: 'How to: Cache Data for Use Offline or on a Server | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data caching [Office development in Visual Studio], server use
+- Office applications [Office development in Visual Studio], data
+- datasets [Office development in Visual Studio], caching
+- offline data [Office development in Visual Studio]
+- data [Office development in Visual Studio], caching
+- data caching [Office development in Visual Studio], offline use
 ms.assetid: 6246b187-9413-4336-821d-2259b1adec5a
 caps.latest.revision: 49
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 48
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0958c4b94f6d0d1e5121ee3d153cf5a19ddfe42f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Almacenar datos en la memoria cach&#233; para el uso sin conexi&#243;n o en un servidor
-  Puede marcar un elemento de datos para que se almacene en memoria caché en el documento y esté así disponible sin conexión.  De esta forma, también se podrán manipular los datos del documento con otro código cuando dicho documento se encuentre almacenado en un servidor.  
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>How to: Cache Data for Use Offline or on a Server
+  You can mark a data item to be cached in the document, so that it is available offline. This also makes it possible for the data in the document to be manipulated by other code when the document is stored on a server.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Puede marcar un elemento de datos para que se almacene en memoria caché cuando dicho elemento se declara en su código o, si está utilizando un objeto <xref:System.Data.DataSet>, tiene que especificar la propiedad en la ventana **Propiedades**.  Si está almacenando en memoria caché un elemento de datos que no es <xref:System.Data.DataSet> ni <xref:System.Data.DataTable>, asegúrese de que cumple los criterios para almacenarse en memoria caché en el documento.  Para obtener más información, vea [Almacenar datos en caché](../vsto/caching-data.md).  
+ You can mark a data item to be cached when the data item is declared in your code, or, if you are using a <xref:System.Data.DataSet>, by setting a property in the **Properties** window. If you are caching a data item that is not a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>, ensure that it meets the criteria for being cached in the document. For more information, see [Caching Data](../vsto/caching-data.md).  
   
 > [!NOTE]  
->  Los nombres de los conjuntos de datos creados mediante Visual Basic que están marcados como **Cached** y **WithEvents** \(incluidos los conjuntos de datos arrastrados desde la ventana **Orígenes de datos** o **Cuadro de herramientas** cuya propiedad **CacheInDocument** está establecida en **True**\) vienen precedidos por un carácter de subrayado en la memoria caché.  Por ejemplo, si crea un conjunto de datos y lo denomina Customers, el nombre de <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> será \_Customers en la memoria caché.  Si usa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para obtener acceso al elemento almacenado en memoria caché, deberá especificar \_Customers en lugar de Customers.  
+>  Datasets created using Visual Basic that are marked as **Cached** and **WithEvents** (including datasets that are dragged from the **Data Sources** window or **Toolbox** that have the **CacheInDocument** property set to **True**) have an underscore prefixed to their names in the cache. For example, if you create a dataset and name it **Customers**, the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> name will be **_Customers** in the cache. When you use <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> to access this cached item, you must specify **_Customers** instead of **Customers**.  
   
-### Para almacenar datos en memoria caché en el documento mediante código  
+### <a name="to-cache-data-in-the-document-using-code"></a>To cache data in the document using code  
   
-1.  Declare una propiedad o campo público para el elemento de datos como un miembro de una clase de elementos host en su proyecto, como la clase `ThisDocumen`t en un proyecto de Word o la clase `ThisWorkbook` en un proyecto Excel.  
+1.  Declare a public field or property for the data item as a member of a host item class in your project, such as the `ThisDocumen`t class in a Word project or the `ThisWorkbook` class in an Excel project.  
   
-2.  Aplique el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> al miembro para marcar el elemento de datos que se va a almacenar en la memoria caché del documento.  En el ejemplo siguiente se aplica este atributo a una declaración de campo para un <xref:System.Data.DataSet>.  
+2.  Apply the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute to the member to mark the data item to be stored in the document's data cache. The following example applies this attribute to a field declaration for a <xref:System.Data.DataSet>.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreDataExcel#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#11)]  
+     [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]  [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]  
   
-3.  Agregue código para crear una instancia del elemento de datos y, si corresponde, cargarlo desde la base de datos.  
+3.  Add code to create an instance of the data item and, if applicable, to load it from the database.  
   
-     El elemento de datos sólo se carga cuando se crea por primera vez; después de esto, la memoria caché se queda con el documento y es preciso escribir otro código para actualizarlo.  
+     The data item is only loaded when it is first created; thereafter, the cache stays with the document and you must write other code to update it.  
   
-### Para almacenar un conjunto de datos en la memoria caché del documento mediante la ventana Propiedades  
+### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>To cache a dataset in the document by using the Properties window  
   
-1.  Agregue el conjunto de datos al proyecto con las herramientas del diseñador de Visual Studio; por ejemplo, puede agregar un origen de datos al proyecto a través de la ventana **Orígenes de datos**.  
+1.  Add the dataset to the project by using tools in the Visual Studio designer, for example, by adding a data source to your project using the **Data Sources** window.  
   
-2.  Si aún no tiene ninguna, cree una instancia del conjunto de datos y selecciónela en el diseñador.  
+2.  Create an instance of the dataset if you do not already have one, and select the instance in the designer.  
   
-3.  En la ventana **Propiedades**, establezca la propiedad **CacheInDocument** en **True**.  
+3.  In the **Properties** window, set the **CacheInDocument** property to **True**.  
   
-     Para obtener más información, vea [Propiedades de los proyectos de Office](../vsto/properties-in-office-projects.md).  
+     For more information, see [Properties in Office Projects](../vsto/properties-in-office-projects.md).  
   
-4.  En la ventana **Propiedades**, establezca la propiedad **Modifiers** en **Public** \(el valor predeterminado es **Internal**\).  
+4.  In the **Properties** window, set the **Modifiers** property to **Public** (by default it is **Internal**).  
   
-## Vea también  
- [Almacenar datos en caché](../vsto/caching-data.md)   
- [Cómo: Almacenar en memoria caché un origen de datos de un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Acceso a datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Guardar datos](../data-tools/saving-data.md)  
+## <a name="see-also"></a>See Also  
+ [Caching Data](../vsto/caching-data.md)   
+ [How to: Programmatically Cache a Data Source in an Office Document](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [How to: Cache Data in a Password-Protected Document](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [Saving Data](/visualstudio/data-tools/saving-data)  
   
   

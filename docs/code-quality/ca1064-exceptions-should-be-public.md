@@ -1,51 +1,68 @@
 ---
-title: "CA1064: Las excepciones deben ser p&#250;blicas | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1064"
-  - "ExceptionsShouldBePublic"
-helpviewer_keywords: 
-  - "CA1064"
-  - "ExceptionsShouldBePublic"
+title: 'CA1064: Exceptions should be public | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1064
+- ExceptionsShouldBePublic
+helpviewer_keywords:
+- ExceptionsShouldBePublic
+- CA1064
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# CA1064: Las excepciones deben ser p&#250;blicas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3fd8a83eabc89bd44d60d470422f00849da87e87
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1064-exceptions-should-be-public"></a>CA1064: Exceptions should be public
 |||  
 |-|-|  
 |TypeName|ExceptionsShouldBePublic|  
-|Identificador de comprobación|CA1064|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|No|  
+|CheckId|CA1064|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non Breaking|  
   
-## Motivo  
- Una excepción no pública deriva directamente de <xref:System.Exception>, <xref:System.SystemException> o <xref:System.ApplicationException>.  
+## <a name="cause"></a>Cause  
+ A non-public exception derives directly from <xref:System.Exception>, <xref:System.SystemException>, or <xref:System.ApplicationException>.  
   
-## Descripción de la regla  
- Una excepción interna sólo se ve dentro de su propio ámbito interno.  Cuando la excepción esté fuera del ámbito interno, sólo se podrá usar la excepción base para detectarla.  Si la excepción interna se hereda de <xref:System.Exception>, <xref:System.SystemException> o <xref:System.ApplicationException>, el código externo no tendrá información suficiente para saber qué hacer con ella.  
+## <a name="rule-description"></a>Rule Description  
+ An internal exception is only visible inside its own internal scope. After the exception falls outside the internal scope, only the base exception can be used to catch the exception. If the internal exception is inherited from <xref:System.Exception>, <xref:System.SystemException>, or <xref:System.ApplicationException>, the external code will not have sufficient information to know what to do with the exception.  
   
- Sin embargo, si el código tiene una excepción pública que después se utiliza como base para una excepción interna, es razonable suponer que el código que está fuera del ámbito podría hacer algo inteligente con la excepción base.  La excepción pública tendrá más información que T:System.Exception, T:System.SystemException o T:System.ApplicationException.  
+ But, if the code has a public exception that later is used as the base for a internal exception, it is reasonable to assume the code further out will be able to do something intelligent with the base exception. The public exception will have more information than what is provided by T:System.Exception, T:System.SystemException, or T:System.ApplicationException.  
   
-## Cómo corregir infracciones  
- Haga pública la excepción o derive la excepción interna de una excepción pública que no sea <xref:System.Exception>, <xref:System.SystemException> o <xref:System.ApplicationException>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Make the exception public, or derive the internal exception from a public exception that is not <xref:System.Exception>, <xref:System.SystemException>, or <xref:System.ApplicationException>.  
   
-## Cuándo suprimir advertencias  
- Suprima un mensaje de esta regla si está seguro de que en todos los casos la excepción privada será detectada dentro de su propio ámbito interno.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a message from this rule if you are sure in all cases that the private exception will be caught within its own internal scope.  
   
-## Ejemplo  
- Esta regla se desencadena en el primer método de ejemplo, FirstCustomException, porque la clase de excepción deriva directamente de Exception y es interna.  La regla no se desencadena en la clase SecondCustomException porque aunque la clase también deriva directamente de Exception, la clase está declarada como pública.  La tercera clase tampoco desencadena la regla porque no deriva directamente de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName> o <xref:System.ApplicationException?displayProperty=fullName>.  
+## <a name="example"></a>Example  
+ This rule fires on the first example method, FirstCustomException because the exception class derives directly from Exception and is internal. The rule does not fire on the SecondCustomException class because although the class also derives directly from Exception, the class is declared public. The third class also does not fire the rule because it does not derive directly from <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, or <xref:System.ApplicationException?displayProperty=fullName>.  
   
- [!code-cs[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]
+ [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

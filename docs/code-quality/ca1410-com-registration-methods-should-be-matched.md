@@ -1,59 +1,75 @@
 ---
-title: "CA1410: Los m&#233;todos de registro COM se deben adjuntar | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1410"
-  - "ComRegistrationMethodsShouldBeMatched"
-helpviewer_keywords: 
-  - "CA1410"
-  - "ComRegistrationMethodsShouldBeMatched"
+title: 'CA1410: COM registration methods should be matched | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1410
+- ComRegistrationMethodsShouldBeMatched
+helpviewer_keywords:
+- CA1410
+- ComRegistrationMethodsShouldBeMatched
 ms.assetid: f3b2e62d-fd66-4093-9f0c-dba01ad995fd
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1410: Los m&#233;todos de registro COM se deben adjuntar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7f38792d72d431a35b797ec73c0abdadfc2dd4f1
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: COM registration methods should be matched
 |||  
 |-|-|  
 |TypeName|ComRegistrationMethodsShouldBeMatched|  
-|Identificador de comprobación|CA1410|  
-|Categoría|Microsoft.Interoperability|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1410|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo declara un método marcado con el atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> pero no declara un método marcado con el atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>, o viceversa.  
+## <a name="cause"></a>Cause  
+ A type declares a method that is marked with the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribute but does not declare a method that is marked with the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribute, or vice versa.  
   
-## Descripción de la regla  
- Para que los clientes del Modelo de objetos componentes \(COM\) creen un tipo de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], primero se debe registrar el tipo.  Si está disponible, se llama a un método marcado con el atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> durante el proceso del registro para ejecutar código especificado por el usuario.  Se llama a un método correspondiente marcado con el atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> durante el proceso del anulación del registro, para invertir las operaciones del método de registro.  
+## <a name="rule-description"></a>Rule Description  
+ For Component Object Model (COM) clients to create a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] type, the type must first be registered. If it is available, a method that is marked with the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attribute is called during the registration process to run user-specified code. A corresponding method that is marked with the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attribute is called during the unregistration process to reverse the operations of the registration method.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, agregue el método de registro o anulación de registro correspondiente.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the corresponding registration or unregistration method.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- El siguiente ejemplo muestra un tipo que infringe la regla.  El código marcado como comentario muestra la corrección para la infracción.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates the rule. The commented code shows the fix for the violation.  
   
- [!code-cs[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]  
+ [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)] [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]  
   
-## Reglas relacionadas  
- [CA1411: Los métodos de registro COM no deben ser visibles](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1411: COM registration methods should not be visible](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>   
- [Registering Assemblies with COM](../Topic/Registering%20Assemblies%20with%20COM.md)   
- [Regasm.exe \(Assembly Registration Tool\)](../Topic/Regasm.exe%20\(Assembly%20Registration%20Tool\).md)
+ [Registering Assemblies with COM](/dotnet/framework/interop/registering-assemblies-with-com)   
+ [Regasm.exe (Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

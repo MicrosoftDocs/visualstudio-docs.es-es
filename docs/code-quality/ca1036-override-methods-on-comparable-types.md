@@ -1,70 +1,87 @@
 ---
-title: "CA1036: Reemplazar m&#233;todos en tipos comparables | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1036"
-  - "OverrideMethodsOnComparableTypes"
-helpviewer_keywords: 
-  - "OverrideMethodsOnComparableTypes"
-  - "CA1036"
+title: 'CA1036: Override methods on comparable types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1036
+- OverrideMethodsOnComparableTypes
+helpviewer_keywords:
+- OverrideMethodsOnComparableTypes
+- CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 caps.latest.revision: 21
-caps.handback.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1036: Reemplazar m&#233;todos en tipos comparables
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ed53ab63b1f56e9e3389bc6e8369adcba10445df
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Override methods on comparable types
 |||  
 |-|-|  
 |TypeName|OverrideMethodsOnComparableTypes|  
-|Identificador de comprobación|CA1036|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1036|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo público o protegido implementa la interfaz <xref:System.IComparable?displayProperty=fullName> y no reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName> ni sobrecarga el operador específico del leguaje por uno de igualdad, desigualdad o mayor que él.  La regla no informa de una infracción si el tipo hereda únicamente una implementación de la interfaz.  
+## <a name="cause"></a>Cause  
+ A public or protected type implements the <xref:System.IComparable?displayProperty=fullName> interface and does not override <xref:System.Object.Equals%2A?displayProperty=fullName> or does not overload the language-specific operator for equality, inequality, less than, or greater than. The rule does not report a violation if the type inherits only an implementation of the interface.  
   
-## Descripción de la regla  
- Los tipos que definen un criterio de ordenación personalizado implementan la interfaz <xref:System.IComparable>.  El método <xref:System.IComparable.CompareTo%2A> devuelve un valor entero que indica el criterio de ordenación correcto para dos instancias del tipo.  Esta regla identifica los tipos que establecen el criterio de ordenación; esto implica que no se aplique el criterio ordinario de igualdad, desigualdad, menor o mayor que.  Cuando proporcione una implementación de <xref:System.IComparable>, normalmente también debe reemplazar <xref:System.Object.Equals%2A> de modo que devuelva los valores coherentes con <xref:System.IComparable.CompareTo%2A>.  Si reemplaza <xref:System.Object.Equals%2A> y está codificando en un lenguaje que admite las sobrecargas de operador, también debería proporcionar operadores coherentes con <xref:System.Object.Equals%2A>.  
+## <a name="rule-description"></a>Rule Description  
+ Types that define a custom sort order implement the <xref:System.IComparable> interface. The <xref:System.IComparable.CompareTo%2A> method returns an integer value that indicates the correct sort order for two instances of the type. This rule identifies types that set a sort order; this implies that the ordinary meaning of equality, inequality, less than, and greater than do not apply. When you provide an implementation of <xref:System.IComparable>, you must usually also override <xref:System.Object.Equals%2A> so that it returns values that are consistent with <xref:System.IComparable.CompareTo%2A>. If you override <xref:System.Object.Equals%2A> and are coding in a language that supports operator overloads, you should also provide operators that are consistent with <xref:System.Object.Equals%2A>.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, reemplace <xref:System.Object.Equals%2A>.  Si su lenguaje de programación admite la sobrecarga de operadores, proporcione los operadores siguientes:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, override <xref:System.Object.Equals%2A>. If your programming language supports operator overloading, supply the following operators:  
   
--   op\_Equality  
+-   op_Equality  
   
--   op\_Inequality  
+-   op_Inequality  
   
--   op\_LessThan  
+-   op_LessThan  
   
--   op\_GreaterThan  
+-   op_GreaterThan  
   
- En C\#, los tokens que se utilizan para representar estos operadores son los siguientes: ¡\=\=\! \= \<, y \>.  
+ In C#, the tokens that are used to represent these operators are as follows: ==, !=, \<, and >.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla cuando la causan los operadores que faltan y el lenguaje de programación no admite la sobrecarga de operadores, como es el caso de Visual Basic .NET.  También es seguro suprimir una advertencia de esta regla cuando se desencadena en operadores de igualdad distintos de op\_Equality si determina que no tiene sentido implementar los operadores en su contexto de aplicación.  Sin embargo, siempre debe invalidar op\_Equality y el operador \=\= si invalida Object.Equals.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the violation is caused by missing operators and your programming language does not support operator overloading, as is the case with Visual Basic .NET. It is also safe to suppress a warning for from this rule when it fires on equality operators other than op_Equality if you determine that implementing the operators does not make sense in your application context. However, you should always over op_Equality and the == operator if you override Object.Equals.  
   
-## Ejemplo  
- El ejemplo siguiente contiene un tipo que implementa <xref:System.IComparable> correctamente.  ‎Los comentarios de código identifican los métodos que cumplen las distintas reglas relacionadas con <xref:System.Object.Equals%2A> y la interfaz <xref:System.IComparable>.  
+## <a name="example"></a>Example  
+ The following example contains a type that correctly implements <xref:System.IComparable>. Code comments identify the methods that satisfy various rules that are related to <xref:System.Object.Equals%2A> and the <xref:System.IComparable> interface.  
   
- [!code-cs[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]  
+ [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]  
   
-## Ejemplo  
- La aplicación siguiente prueba el comportamiento de la implementación <xref:System.IComparable> mostrado anteriormente.  
+## <a name="example"></a>Example  
+ The following application tests the behavior of the <xref:System.IComparable> implementation that was shown earlier.  
   
- [!code-cs[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
+ [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.IComparable?displayProperty=fullName>   
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Operadores de igualdad](../Topic/Equality%20Operators.md)
+ [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)

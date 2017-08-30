@@ -1,56 +1,73 @@
 ---
-title: "CA1301: Evitar aceleradores duplicados | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1301"
-  - "AvoidDuplicateAccelerators"
-helpviewer_keywords: 
-  - "CA1301"
-  - "AvoidDuplicateAccelerators"
+title: 'CA1301: Avoid duplicate accelerators | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1301
+- AvoidDuplicateAccelerators
+helpviewer_keywords:
+- CA1301
+- AvoidDuplicateAccelerators
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1301: Evitar aceleradores duplicados
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0e48aa6fd82a218e0184f80b1c4ec90736c46e66
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Avoid duplicate accelerators
 |||  
 |-|-|  
 |TypeName|AvoidDuplicateAccelerators|  
-|Identificador de comprobación|CA1301|  
-|Categoría|Microsoft.Globalization|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1301|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo extiende <xref:System.Windows.Forms.Control?displayProperty=fullName> y contiene dos o más controles de nivel superior que tienen teclas de acceso idénticas que se almacenan en un archivo de recursos.  
+## <a name="cause"></a>Cause  
+ A type extends <xref:System.Windows.Forms.Control?displayProperty=fullName> and contains two or more top level controls that have identical access keys that are stored in a resource file.  
   
-## Descripción de la regla  
- Una tecla de acceso, también denominada acelerador, permite el acceso mediante teclado a un control utilizando la tecla ALT.  Cuando varios controles tienen teclas de acceso duplicadas, no se define correctamente el comportamiento de la tecla de acceso.  Puede ocurrir que el usuario no tenga acceso al control deseado utilizando la tecla de acceso y que se habilite un control distinto al que desea.  
+## <a name="rule-description"></a>Rule Description  
+ An access key, also known as an accelerator, enables keyboard access to a control by using the ALT key. When multiple controls have duplicate access keys, the behavior of the access key is not well defined. The user might not be able to access the intended control by using the access key and a control other than the one that is intended might be enabled.  
   
- La implementación actual de esta regla omite los elementos de menú.  Sin embargo, los elementos de menú en el mismo submenú no deberían tener teclas de acceso idénticas.  
+ The current implementation of this rule ignores menu items. However, menu items in the same submenu should not have identical access keys.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, defina teclas de acceso únicas para todos los controles.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, define unique access keys for all controls.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- El ejemplo siguiente muestra un formulario mínimo que contiene dos controles con teclas de acceso idénticas.  Las teclas se almacenan en un archivo de recursos, que no se muestra; sin embargo, sus valores aparecen en las líneas con comentario `checkBox.Text`.  El comportamiento de aceleradores duplicados puede examinarse intercambiando las líneas `checkBox.Text` con sus homólogas con comentarios.  Sin embargo, en este caso, el ejemplo no generará una advertencia de la regla.  
+## <a name="example"></a>Example  
+ The following example shows a minimal form that contains two controls that have identical access keys. The keys are stored in a resource file, which is not shown; however, their values appear in the commented out `checkBox.Text` lines. The behavior of duplicate accelerators can be examined by exchanging the `checkBox.Text` lines with their commented out counterparts. However, in this case, the example will not generate a warning from the rule.  
   
- [!code-cs[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
+ [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Recursos de aplicaciones de escritorio](../Topic/Resources%20in%20Desktop%20Apps.md)
+ [Resources in Desktop Apps](/dotnet/framework/resources/index)

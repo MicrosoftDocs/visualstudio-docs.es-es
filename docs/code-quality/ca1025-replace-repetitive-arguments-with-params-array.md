@@ -1,49 +1,67 @@
 ---
-title: "CA1025: Reemplaza argumentos repetitivos con una matriz de par&#225;metros | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1025"
-  - "ReplaceRepetitiveArgumentsWithParamsArray"
-helpviewer_keywords: 
-  - "ReplaceRepetitiveArgumentsWithParamsArray"
-  - "CA1025"
+title: 'CA1025: Replace repetitive arguments with params array | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1025
+- ReplaceRepetitiveArgumentsWithParamsArray
+helpviewer_keywords:
+- ReplaceRepetitiveArgumentsWithParamsArray
+- CA1025
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA1025: Reemplaza argumentos repetitivos con una matriz de par&#225;metros
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 149d34bcf1192fa93e6ee5416c8003e965f6fc3f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Replace repetitive arguments with params array
 |||  
 |-|-|  
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|  
-|Identificador de comprobación|CA1025|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1025|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un método público o protegido de un tipo público tiene más de tres parámetros, y los últimos tres parámetros son el mismo tipo.  
+## <a name="cause"></a>Cause  
+ A public or protected method in a public type has more than three parameters, and its last three parameters are the same type.  
   
-## Descripción de la regla  
- Utilice una matriz de parámetros de argumentos repetidos cuando se conoce el número exacto de argumentos y los argumentos de variable sean del mismo tipo o puedan pasarse como si fueran del mismo tipo.  Por ejemplo, el método <xref:System.Console.WriteLine%2A> proporciona una sobrecarga de propósito general que utiliza una matriz de parámetros para aceptar cualquier número de argumentos <xref:System.Object>.  
+## <a name="rule-description"></a>Rule Description  
+ Use a parameter array instead of repeated arguments when the exact number of arguments is unknown and the variable arguments are the same type, or can be passed as the same type. For example, the <xref:System.Console.WriteLine%2A> method provides a general-purpose overload that uses a parameter array to accept any number of <xref:System.Object> arguments.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, reemplace los argumentos repetidos con una matriz de parámetros.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, replace the repeated arguments with a parameter array.  
   
-## Cuándo suprimir advertencias  
- Siempre es seguro suprimir una advertencia de esta regla; sin embargo, este diseño podría provocar problemas de uso.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is always safe to suppress a warning from this rule; however, this design might cause usability issues.  
   
-## Ejemplo  
- El siguiente ejemplo muestra un tipo que infringe esta regla.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-cs[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]
+ [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

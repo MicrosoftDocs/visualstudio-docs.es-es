@@ -1,48 +1,66 @@
 ---
-title: "CA1821: Quitar los finalizadores vac&#237;os | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "RemoveEmptyFinalizers"
-  - "CA1821"
-helpviewer_keywords: 
-  - "CA1821"
+title: 'CA1821: Remove empty finalizers | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- RemoveEmptyFinalizers
+- CA1821
+helpviewer_keywords:
+- CA1821
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA1821: Quitar los finalizadores vac&#237;os
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4ef95f8961e156cdfbe6858b5424296ee1ba4667
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Remove empty finalizers
 |||  
 |-|-|  
 |TypeName|RemoveEmptyFinalizers|  
-|Identificador de comprobación|CA1821|  
-|Categoría|Microsoft.Performance|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1821|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo implementa un finalizador que está vacío, llama sólo al finalizador del tipo base o llama sólo a los métodos emitidos condicionalmente.  
+## <a name="cause"></a>Cause  
+ A type implements a finalizer that is empty, calls only the base type finalizer, or calls only conditionally emitted methods.  
   
-## Descripción de la regla  
- Siempre que pueda, evite los finalizadores debido a la sobrecarga de rendimiento adicional necesaria para el seguimiento de la duración del objeto.  El recolector de elementos no utilizados ejecutará el finalizador antes de recopilar el objeto.  Esto significa que se requerirán dos colecciones para recopilar el objeto.  Un finalizador vacío no obtiene ningún beneficio de esta sobrecarga adicional.  
+## <a name="rule-description"></a>Rule Description  
+ Whenever you can, avoid finalizers because of the additional performance overhead that is involved in tracking object lifetime. The garbage collector will run the finalizer before it collects the object. This means that two collections will be required to collect the object. An empty finalizer incurs this added overhead without any benefit.  
   
-## Cómo corregir infracciones  
- Quite el finalizador vacío.  Si se requiere un finalizador para depurar, enciérrelo en directivas `#if DEBUG / #endif`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Remove the empty finalizer. If a finalizer is required for debugging, enclose the whole finalizer in `#if DEBUG / #endif` directives.  
   
-## Cuándo suprimir advertencias  
- No suprima los mensajes de esta regla.  El error para suprimir la finalización disminuye el rendimiento y no proporciona ventajas.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a message from this rule. Failure to suppress finalization decreases performance and provides no benefits.  
   
-## Ejemplo  
- El ejemplo siguiente muestra un finalizador vacío que se debería quitar, un finalizador que se debería encerrar en directivas `#if DEBUG / #endif` y un finalizador que utiliza correctamente las directivas `#if DEBUG / #endif`.  
+## <a name="example"></a>Example  
+ The following example shows an empty finalizer that should be removed, a finalizer that should be enclosed in `#if DEBUG / #endif` directives, and a finalizer that uses the `#if DEBUG / #endif` directives correctly.  
   
- [!code-cs[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]
+ [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

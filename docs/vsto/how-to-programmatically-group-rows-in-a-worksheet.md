@@ -1,69 +1,72 @@
 ---
-title: "C&#243;mo: Agrupar filas de una hoja de c&#225;lculo mediante programaci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "columnas [desarrollo de Office en Visual Studio], desagrupar"
-  - "grupos"
-  - "grupos [desarrollo de Office en Visual Studio], borrar en hojas de cálculo"
-  - "grupos, crear en las hojas de cálculo"
-  - "intervalos, crear grupos"
-  - "filas [desarrollo de Office en Visual Studio], desagrupar"
-  - "hojas de cálculo, borrar grupos"
-  - "hojas de cálculo, crear grupos"
-  - "hojas de cálculo, desagrupar filas y columnas"
+title: 'How to: Programmatically Group Rows in a Worksheet | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets, creating groups
+- groups, creating in worksheets
+- ranges, creating groups
+- worksheets, clearing groups
+- groups
+- groups [Office development in Visual Studio], clearing in worksheets
+- worksheets, ungrouping rows and columns
+- rows [Office development in Visual Studio], ungrouping
+- columns [Office development in Visual Studio], ungrouping
 ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 45
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 996904cfea85793c2359e6fc5264b8e8dd973024
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Agrupar filas de una hoja de c&#225;lculo mediante programaci&#243;n
-  Puede agrupar una o más filas enteras.  Para crear un grupo en una hoja de cálculo, utilice un control <xref:Microsoft.Office.Tools.Excel.NamedRange> o un objeto nativo de rango de Excel.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>How to: Programmatically Group Rows in a Worksheet
+  You can group one or more whole rows. To create a group in a worksheet, use a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Usar un control NamedRange  
- Si agrega en tiempo de diseño un control <xref:Microsoft.Office.Tools.Excel.NamedRange> a un proyecto en el nivel del documento, puede utilizar el control para crear mediante programación un grupo.  En el siguiente ejemplo se supone que hay tres controles <xref:Microsoft.Office.Tools.Excel.NamedRange> denominados `data2001`, `data2002` y `dataAll` en la misma hoja de cálculo.  Cada rango con nombre hace referencia a una fila entera de la hoja de cálculo.  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+ If you add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a document-level project at design time, you can use the control to programmatically create a group. The following example assumes that there are three <xref:Microsoft.Office.Tools.Excel.NamedRange> controls on the same worksheet: `data2001`, `data2002`, and `dataAll`. Each named range refers to a whole row in the worksheet.  
   
-#### Para crear un grupo de controles NamedRange en una hoja de cálculo  
+#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>To create a group of NamedRange controls on a worksheet  
   
-1.  Agrupe tres rangos con nombre mediante llamadas al método <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> de cada rango.  Este código debe colocarse en una clase Sheet, no en la clase `ThisWorkbook`.  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> method of each range. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#32](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#32)]
-     [!code-vb[Trin_VstcoreExcelAutomation#32](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#32)]  
-  
-    > [!NOTE]  
-    >  Para desagrupar las filas, llame al método <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>.  
-  
-## Usar rangos de Excel nativos  
- En el ejemplo de código se supone que hay tres rangos de Excel denominados `data2001`, `data2002` y `dataAll` en una hoja de cálculo.  
-  
-#### Para crear un grupo de rangos de Excel en una hoja de cálculo  
-  
-1.  Agrupe tres rangos con nombre mediante llamadas al método <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> de cada rango.  En el siguiente ejemplo se supone que hay tres controles <xref:Microsoft.Office.Interop.Excel.Range> denominados `data2001`, `data2002` y `dataAll` en la misma hoja de cálculo.  Cada rango con nombre hace referencia a una fila entera de la hoja de cálculo.  
-  
-     [!code-csharp[Trin_VstcoreExcelAutomation#33](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#33)]
-     [!code-vb[Trin_VstcoreExcelAutomation#33](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#33)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]  [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  Para desagrupar las filas, llame al método <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>.  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> method.  
   
-## Vea también  
- [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [NamedRange &#40;Control&#41;](../vsto/namedrange-control.md)   
- [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+ The code assumes that you have three Excel ranges named `data2001`, `data2002`, and `dataAll` on a worksheet.  
+  
+#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>To create a group of Excel ranges in a worksheet  
+  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> method of each range. The following example assumes that there are three <xref:Microsoft.Office.Interop.Excel.Range> controls named `data2001`, `data2002`, and `dataAll` on the same worksheet. Each named range refers to a whole row in the worksheet.  
+  
+     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]  [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+  
+    > [!NOTE]  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> method.  
+  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -1,61 +1,65 @@
 ---
-title: "Personalizar una cinta de opciones para Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Cinta de opciones personalizada, acerca de la personalización de la Cinta de opciones"
-  - "personalizar la cinta de opciones, acerca de la personalización de la Cinta de opciones"
-  - "Inspectores [desarrollo de Office en Visual Studio]"
-  - "Outlook [desarrollo de Office en Visual Studio], cinta de opciones"
-  - "Cinta [desarrollo de Office en Visual Studio], Outlook"
+title: Customizing a Ribbon for Outlook | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Inspectors [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, about customizing the Ribbon
+- custom Ribbon, about customizing the Ribbon
+- Ribbon [Office development in Visual Studio], Outlook
 ms.assetid: 11d10e72-806d-4d5e-b080-139bd8633eaa
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d1c65aa089a66e24b57bab3bcec5e0cf835d0fd4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Personalizar una cinta de opciones para Outlook
-  Al personalizar la cinta en Microsoft Office Outlook, debe tener en cuenta dónde aparecerá la cinta personalizada en la aplicación.  Outlook muestra la cinta en la interfaz de usuario \(UI\) de la aplicación principal y en las ventanas que se abren cuando los usuarios realizan ciertas tareas, como crear mensajes de correo electrónico.  Estas ventanas de la aplicación se denominan inspectores.  
+# <a name="customizing-a-ribbon-for-outlook"></a>Customizing a Ribbon for Outlook
+  When you customize the ribbon in Microsoft Office Outlook, you must consider where your custom ribbon will appear in the application. Outlook displays the ribbon in the main application user interface (UI) and in windows that open when users perform certain tasks, such as creating e-mail messages. These application windows are named inspectors.  
   
- ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Usar diseñador de la cinta para personalizar la cinta en Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Agregar una Cinta personalizada a la interfaz de usuario de la aplicación principal  
- La interfaz de usuario de la aplicación principal en Outlook se denomina Explorador.  Si está usando el elemento **Cinta \(diseñador visual\)**, puede añadir una cinta al Explorador haciendo clic en la propiedad **RibbonType** de la cinta en la ventana **Propiedades** y seleccionando a continuación **Microsoft.Outlook.Explorer**.  
+## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Adding a Custom Ribbon to the Main Application UI  
+ The main application UI in Outlook is called the Explorer. If you are using the **Ribbon (Visual Designer)** item, you can add a ribbon to the Explorer by clicking the **RibbonType** property of the ribbon in the **Properties** window, and then selecting **Microsoft.Outlook.Explorer**.  
   
-## Asignar una cinta a un Inspector  
- Para identificar el inspector que desea personalizar, debe especificar el tipo de cinta que corresponde a la clase de mensaje del Inspector.  
+## <a name="assigning-a-ribbon-to-an-inspector"></a>Assigning a Ribbon to an Inspector  
+ You identify the inspector you want to customize by specifying the ribbon type that corresponds to the message class for the Inspector.  
   
- Si está usando el elemento **Cinta \(diseñador visual\)**, haga clic en la propiedad **RibbonType** de la cinta en la ventana **Propiedades** y, a continuación, seleccione uno o varios de los identificadores de cinta de la lista de valores.  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the ribbon in the **Properties** window, and then select one or more ribbon IDs from the list of values.  
   
- Puede agregar más de una cinta a un proyecto.  Si más de una cinta comparte el mismo identificador de cinta, reemplace el método CreateRibbonExtensibilityObject de la clase `ThisAddin` de su proyecto para especificar qué cinta se mostrará en tiempo de ejecución.  Para obtener más información, consulte [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md).  Para obtener más información acerca de cada tipo de cinta, consulte [Personalizar la cinta en Outlook 2007](http://msdn.microsoft.com/es-es/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ You can add more than one ribbon to a project. If more than one ribbon shares a ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md). For more information about each ribbon type, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## Especificar el Tipo de Cinta mediante código XML de Cinta  
- Si está usando el elemento **Cinta \(XML\)**, compruebe el valor del parámetro *ribbonID* en el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> y devuelva la cinta adecuada.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate ribbon.  
   
- Visual Studio genera automáticamente el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> en el archivo de código de la cinta.  El parámetro *ribbonID* es una cadena que identifica el Explorador o un tipo específico de inspector.  Para ver una lista completa de los posibles valores del parámetro *ribbonID*, consulte [Personalizar la cinta en Outlook 2007](http://msdn.microsoft.com/es-es/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the ribbon code file. The *ribbonID* parameter is a string that identifies the Explorer or a specific type of inspector. For a complete list of the possible values of the *ribbonID* parameter, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
- En el siguiente ejemplo de código se indica cómo mostrar una cinta personalizada únicamente en el inspector `Microsoft.Outlook.Mail.Compose`.  Este es el inspector que se abre cuando un usuario crea un nuevo mensaje de correo electrónico.  La cinta que se debe mostrar se especifica en el método `GetResourceText()`, que se genera en la clase **Ribbon**.  Para obtener más información sobre la clase **Ribbon**, vea [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
+ The following code example demonstrates how to display a custom ribbon only in the `Microsoft.Outlook.Mail.Compose` inspector. This is the inspector that opens when a user creates a new e-mail message. The ribbon to display is specified in the `GetResourceText()` method, which is generated in the **Ribbon** class. For more information about the **Ribbon** class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonOutlookBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#1)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)] [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## Vea también  
- [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)   
- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)   
- [XML de la cinta de opciones](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   
