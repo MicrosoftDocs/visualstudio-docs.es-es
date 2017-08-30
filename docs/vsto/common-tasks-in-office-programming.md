@@ -1,240 +1,245 @@
 ---
-title: "Tareas comunes en la programaci&#243;n de Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de Office en Visual Studio, introducción"
-  - "P+F (preguntas más frecuentes) [desarrollo de Office en Visual Studio]"
-  - "desarrollo de Office en Visual Studio, preguntas más frecuentes"
+title: Common Tasks in Office Programming | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, getting started
+- FAQs (frequently asked questions) [Office development in Visual Studio]
+- Office development in Visual Studio, frequently asked questions
 ms.assetid: 7afc9bad-1d31-486e-beea-91e6d308cd67
 caps.latest.revision: 45
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 44
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 1d357b094788be68c3301d5c8f7d8407158d2b33
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tareas comunes en la programaci&#243;n de Office
-  Este tema está diseñado para ayudarle a encontrar las respuestas a las siguientes categorías de preguntas comunes sobre la programación de soluciones de Office mediante Visual Studio.  
+# <a name="common-tasks-in-office-programming"></a>Common Tasks in Office Programming
+  This topic is designed to help you find the answers to the following categories of common questions about programming Office solutions by using Visual Studio.  
   
--   [Configuración y tareas generales](#projects).  
+-   [Setup and general tasks](#projects).  
   
--   [Tareas de personalización de la interfaz de usuario](#ui).  
+-   [User interface customization tasks](#ui).  
   
--   [Tareas de automatización de Excel](#excel).  
+-   [Excel automation tasks](#excel).  
   
--   [Tareas de automatización de Word](#word).  
+-   [Word automation tasks](#word).  
   
--   [Tareas datos](#data).  
+-   [Data tasks](#data).  
   
--   [Tareas de administración de documentos de servidor](#server).  
+-   [Server-side document management tasks](#server).  
   
--   [Tareas de seguridad](#security).  
+-   [Security tasks](#security).  
   
--   [Tareas de implementación](#deployment).  
+-   [Deployment tasks](#deployment).  
   
-##  <a name="projects"></a> Configuración y tareas generales  
+##  <a name="projects"></a> Setup and General Tasks  
   
--   [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Cómo: actualizar soluciones de Office](http://msdn.microsoft.com/es-es/a269e539-b717-4680-a568-2152b070347e).  
+-   [How to: Upgrade Office Solutions](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Cómo: Instalar ensamblados de interoperabilidad primarios de Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [How to: Install Office Primary Interop Assemblies](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
--   [Cómo: Apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+-   [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
--   [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+-   [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Cómo: Abrir soluciones de Office sin ejecutar código](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [How to: Open Office Solutions without Running Code](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
--   [Cómo: Establecer la información de configuración para una solución de Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
+-   [How to: Set Up Configuration Information for an Office Solution](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
--   [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+-   [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
--   [Cómo: Mostrar errores de la interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md).  
+-   [How to: Show Add-in User Interface Errors](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
-##  <a name="ui"></a> Tareas de personalización de la interfaz de usuario  
+##  <a name="ui"></a> User Interface Customization Tasks  
   
-### Controles en documentos y hojas de cálculo  
+### <a name="controls-on-documents-and-worksheets"></a>Controls on Documents and Worksheets  
   
--   [Cómo: Agregar controles de Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
--   [Cómo: Agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+-   [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
--   [Cómo: Agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+-   [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
--   [Cómo: Agregar controles de Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
--   [Cómo: Agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+-   [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
--   [Cómo: Agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+-   [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
-### Paneles de tareas en personalizaciones de nivel de documento  
+### <a name="task-panes-in-document-level-customizations"></a>Task Panes in Document-Level Customizations  
   
--   [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+-   [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-### Paneles de tareas en complementos de VSTO  
+### <a name="task-panes-in-vsto-add-ins"></a>Task Panes in VSTO Add-ins  
   
--   [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+-   [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### Personalizaciones de la cinta de opciones  
+### <a name="ribbon-customizations"></a>Ribbon Customizations  
   
--   [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+-   [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
--   [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).  
+-   [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).  
   
--   [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md).  
+-   [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md).  
   
--   [Cómo: Agregar controles en la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
+-   [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
--   [Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
-### Áreas de formulario de Outlook  
+### <a name="outlook-form-regions"></a>Outlook Form Regions  
   
--   [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
--   [Cómo: Impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
+-   [How to: Prevent Outlook from Displaying a Form Region](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
   
-### Menús personalizados  
+### <a name="custom-menus"></a>Custom Menus  
   
--   [Cómo: Agregar comandos a menús contextuales](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+-   [How to: Add Commands to Shortcut Menus](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-##  <a name="excel"></a> Tareas de automatización de Excel  
+##  <a name="excel"></a> Excel Automation Tasks  
   
--   [Cómo: Mostrar una cadena en la celda de una hoja de cálculo mediante programación](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
+-   [How to: Programmatically Display a String in a Worksheet Cell](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
--   [Cómo: Crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).  
+-   [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
--   [Cómo: Abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md).  
+-   [How to: Programmatically Open Workbooks](../vsto/how-to-programmatically-open-workbooks.md).  
   
--   [Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md).  
+-   [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md).  
   
--   [Cómo: Cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md).  
+-   [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md).  
   
--   [Cómo: Agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
+-   [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
--   [Cómo: Ocultar hojas de cálculo mediante programación](../vsto/how-to-programmatically-hide-worksheets.md).  
+-   [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md).  
   
--   [Cómo: Mover hojas de cálculo dentro de libros mediante programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md).  
+-   [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md).  
   
--   [Cómo: Proteger libros mediante programación](../vsto/how-to-programmatically-protect-workbooks.md).  
+-   [How to: Programmatically Protect Workbooks](../vsto/how-to-programmatically-protect-workbooks.md).  
   
--   [Cómo: Hacer referencia a rangos de hojas de cálculo en el código mediante programación](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md).  
+-   [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md).  
   
--   [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
+-   [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
   
--   [Cómo: Cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
+-   [How to: Programmatically Change Formatting in Worksheet Rows Containing Selected Cells](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
   
--   [Cómo: Buscar texto en rangos de hojas de cálculo mediante programación](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md).  
+-   [How to: Programmatically Search for Text in Worksheet Ranges](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md).  
   
--   [Cómo: Imprimir hojas de cálculo mediante programación](../vsto/how-to-programmatically-print-worksheets.md).  
+-   [How to: Programmatically Print Worksheets](../vsto/how-to-programmatically-print-worksheets.md).  
   
--   [Cómo: Ejecutar cálculos de Excel mediante programación](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md).  
+-   [How to: Programmatically Run Excel Calculations](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md).  
   
--   [Cómo: Ordenar datos en hojas de cálculo mediante programación](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
+-   [How to: Programmatically Sort Data in Worksheets](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
-##  <a name="word"></a> Tareas de automatización de Word  
+##  <a name="word"></a> Word Automation Tasks  
   
--   [Cómo: Crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md).  
+-   [How to: Programmatically Create New Documents](../vsto/how-to-programmatically-create-new-documents.md).  
   
--   [Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md).  
+-   [How to: Programmatically Open Existing Documents](../vsto/how-to-programmatically-open-existing-documents.md).  
   
--   [Cómo: Guardar documentos mediante programación](../vsto/how-to-programmatically-save-documents.md).  
+-   [How to: Programmatically Save Documents](../vsto/how-to-programmatically-save-documents.md).  
   
--   [Cómo: Cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md).  
+-   [How to: Programmatically Close Documents](../vsto/how-to-programmatically-close-documents.md).  
   
--   [Cómo: Insertar texto en documentos de Word mediante programación](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
+-   [How to: Programmatically Insert Text into Word Documents](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
   
--   [Cómo: Definir y seleccionar intervalos en documentos mediante programación](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
+-   [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Cómo: Restablecer intervalos en documentos de Word mediante programación](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [How to: Programmatically Reset Ranges in Word Documents](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
--   [Cómo: Dar formato al texto en documentos mediante programación](../vsto/how-to-programmatically-format-text-in-documents.md).  
+-   [How to: Programmatically Format Text in Documents](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
--   [Cómo: Agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
+-   [How to: Add XMLNode Controls to Word Documents](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
--   [Cómo: Actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md).  
+-   [How to: Programmatically Update Bookmark Text](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
--   [Cómo: Buscar y reemplazar texto en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
+-   [How to: Programmatically Search for and Replace Text  in Documents](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
--   [Cómo: Imprimir documentos mediante programación](../vsto/how-to-programmatically-print-documents.md).  
+-   [How to: Programmatically Print Documents](../vsto/how-to-programmatically-print-documents.md).  
   
--   [Cómo: Crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md).  
+-   [How to: Programmatically Create Word Tables](../vsto/how-to-programmatically-create-word-tables.md).  
   
--   [Cómo: Agregar filas y columnas a tablas de Word mediante programación](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
+-   [How to: Programmatically Add Rows and Columns to Word Tables](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
   
--   [Cómo: Calcular un recuento de caracteres en documentos mediante programación](../vsto/how-to-programmatically-count-characters-in-documents.md).  
+-   [How to: Programmatically Count Characters in Documents](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a> Tareas datos  
+##  <a name="data"></a> Data Tasks  
   
-### Controles enlazados a datos  
+### <a name="data-bound-controls"></a>Data-bound Controls  
   
--   [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).  
+-   [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).  
   
--   [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+-   [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
--   [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md).  
+-   [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
--   [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+-   [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
--   [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+-   [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
--   [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md).  
+-   [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
--   [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+-   [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-### Datos almacenados en caché en soluciones de nivel de documento  
+### <a name="cached-data-in-document-level-solutions"></a>Cached Data in Document-Level Solutions  
   
--   [Cómo: Almacenar datos en la memoria caché para el uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   [Cómo: Almacenar en memoria caché un origen de datos de un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+-   [How to: Programmatically Cache a Data Source in an Office Document](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
--   [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+-   [How to: Cache Data in a Password-Protected Document](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
-### Datos XML personalizados  
+### <a name="custom-xml-data"></a>Custom XML Data  
   
--   [Cómo: Agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
+-   [How to: Add Custom XML Parts to Document-Level Customizations](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
--   [Cómo: Agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+-   [How to: Add Custom XML Parts to Documents by Using VSTO Add-Ins](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-##  <a name="server"></a> Tareas de administración de documentos de servidor  
+##  <a name="server"></a> Server-side Document Management Tasks  
   
--   [Cómo: Quitar extensiones de código administrado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
+-   [How to: Remove Managed Code Extensions from Documents](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
--   [Cómo: Adjuntar extensiones de código administrado a documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
+-   [How to: Attach Managed Code Extensions to Documents](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
-##  <a name="security"></a> Tareas de seguridad  
+##  <a name="security"></a> Security Tasks  
   
--   [Cómo: Firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md).  
+-   [How to: Sign Office Solutions](../vsto/how-to-sign-office-solutions.md).  
   
-##  <a name="deployment"></a> Tareas de implementación  
+##  <a name="deployment"></a> Deployment Tasks  
   
--   [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/es-es/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [How to: Publish an Office Solution by Using ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](http://msdn.microsoft.com/es-es/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [How to: Publish a Document-Level Office Solution to a SharePoint Server by Using ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Cómo: instalar una solución de Office ClickOnce](http://msdn.microsoft.com/es-es/14702f48-9161-4190-994c-78211fe18065).  
+-   [How to: Install a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Cómo: instalar los requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/es-es/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [How to: Install Prerequisites on End User Computers to Run Office Solutions](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Cómo: preparar IIS para la implementación de soluciones de Office](http://msdn.microsoft.com/es-es/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [How to: Prepare IIS for Deployment of Office Solutions](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Cómo: actualizar soluciones de Office implementadas](http://msdn.microsoft.com/es-es/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [How to: Update Deployed Office Solutions](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/es-es/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [How to: Change the Installation Path of an Office Solution](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
-## Vea también  
- [Introducción &#40;Desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)   
- [Ejemplos y tutoriales del desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)  
+## <a name="see-also"></a>See Also  
+ [Getting Started &#40;Office Development in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)   
+ [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

@@ -1,47 +1,52 @@
 ---
-title: "Trabajar con elementos de correo"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "correo electrónico [desarrollo de Office en Visual Studio], elementos de correo"
-  - "elementos de correo [desarrollo de Office en Visual Studio]"
-  - "elementos de correo [desarrollo de Office en Visual Studio], acerca de los elementos de correo"
-  - "Outlook [desarrollo de Office en Visual Studio], elementos de correo"
+title: Working with Mail Items | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- e-mail [Office development in Visual Studio], mail items
+- Outlook [Office development in Visual Studio], mail items
+- mail items [Office development in Visual Studio]
+- mail items [Office development in Visual Studio], about mail items
 ms.assetid: e5c82974-d302-49dc-9487-9b265125af03
 caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: a717fac19a3e88e656c8179c9831a49ac5e661c6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Trabajar con elementos de correo
-  La clase <xref:Microsoft.Office.Interop.Outlook.MailItem> contiene los métodos y propiedades que se usan para realizar tareas con mensajes de correo electrónico.  
+# <a name="working-with-mail-items"></a>Working with Mail Items
+  The <xref:Microsoft.Office.Interop.Outlook.MailItem> class contains the methods and properties you use to perform tasks with e-mail messages.  
   
-|Tarea|Procedimiento|  
-|-----------|-------------------|  
-|Crear un mensaje de correo electrónico.|[Cómo: Crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Enviar un mensaje de correo electrónico.|[Cómo: Enviar un correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
-|Responder a los nuevos mensajes de correo electrónico con una acción personalizada.|[Cómo: Realizar acciones al recibir un mensaje de correo electrónico mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
-|Guardar los datos adjuntos.|[Cómo: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
-|Agregar datos adjuntos|[Cómo: Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
-|Recorrer en iteración todos los mensajes no leídos.|[Cómo: Recuperar mensajes sin leer de la Bandeja de entrada mediante programación](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
+|Task|Procedure|  
+|----------|---------------|  
+|Create an e-mail message.|[How to: Programmatically Create an E-Mail Item](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
+|Send an e-mail message.|[How to: Programmatically Send E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Respond to new e-mail messages with a custom action.|[How to: Programmatically Perform Actions When an E-Mail Message Is Received](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
+|Save attachments.|[How to: Programmatically Save Attachments from Outlook E-Mail Items](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
+|Add attachments|[How to: Programmatically Attach Files to Outlook E-Mail Items](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
+|Iterate through all unread messages.|[How to: Programmatically Retrieve Unread Messages from the Inbox](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
   
- Para obtener más información sobre las tareas de Outlook y sobre el modelo de objetos de Outlook, vea [Información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md).  
+ For more information about Outlook tasks and the Outlook object model, see [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md).  
   
-## Vea también  
- [Trabajar con contactos](../vsto/working-with-contact-items.md)   
- [Trabajar con carpetas](../vsto/working-with-folders.md)   
- [Trabajar con elementos del calendario](../vsto/working-with-calendar-items.md)   
- [Soluciones de Outlook](../vsto/outlook-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Contact Items](../vsto/working-with-contact-items.md)   
+ [Working with Folders](../vsto/working-with-folders.md)   
+ [Working with Calendar Items](../vsto/working-with-calendar-items.md)   
+ [Outlook Solutions](../vsto/outlook-solutions.md)  
   
   

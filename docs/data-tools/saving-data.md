@@ -1,48 +1,65 @@
 ---
-title: "Guardar datos | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataRow.RowState"
-  - "DataSet.GetChanges"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], guardar"
-  - "datos [Visual Studio], actualizar"
-  - "bases de datos, actualizar"
-  - "DBDirect (métodos)"
-  - "guardar datos"
-  - "TableAdapter DBDirect (métodos)"
-  - "TableAdapter.Update (método)"
-  - "actualizar datos"
-  - "actualizar bases de datos"
+title: Saving Data | Microsoft Docs
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataRow.RowState
+- DataSet.GetChanges
+helpviewer_keywords:
+- DBDirect methods
+- updating data
+- data [Visual Studio], saving
+- TableAdapter DBDirect methods
+- databases, updating
+- TableAdapter.Update method
+- data [Visual Studio], updating
+- saving data
+- updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
 caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 07e2cb8fd1c808461cd6725a5c06e9ea67cd934f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Guardar datos
-Guardar datos es el proceso de conservar en el almacén de datos original, normalmente una base de datos relacional como SQL Server, los datos que se han modificado en el modelo de datos de una aplicación.  
+# <a name="saving-data"></a>Saving Data
+Saving data is the process of persisting changed data in an application's data model back to the original data store, typically a relational database such as SQL Server.  
   
- La actualización de un origen de datos por medio de un modelo de datos es un proceso que suele constar de dos pasos.  El primer paso consiste en actualizar el modelo de datos con información nueva: registros nuevos, modificados o eliminados.  El segundo paso consiste en guardar en la base de datos los cambios que se han realizado en el modelo de datos.  
+ Updating a data source by means of a data model is typically a two-step process. The first step is to update the data model with new information — new records, changed records, or deleted records. The second step is to save the changes in your data model back to the database.  
   
- En los siguientes temas se describen los conceptos y tareas asociados al proceso de guardar datos.  
+ The following topics describe the concepts and tasks associated with saving data.  
   
-## Temas relacionados  
- [Guardar los datos en conjuntos de datos](../data-tools/save-data-back-to-the-database.md)  
- Proporciona información general sobre cómo se realizan cambios en un conjunto de datos y cómo el conjunto de datos realiza un seguimiento de la información referente a los cambios a fin de guardar dichos cambios en una base de datos.  
+## <a name="related-topics"></a>Related Topics  
+[Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
+ Provides an overview of how changes are made in a dataset and how the dataset tracks information about changes in order to save those changes to a database.  
   
- [Guardar datos de entidad](../data-tools/saving-entity-data.md)  
- Describe cómo guardar los cambios en las aplicaciones de [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md) y [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md).
+[How to: Add, Modify, and Delete Entities (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+Shows how to create, update, and delete entity data in a data service.  
+  
+[How to: Execute Data Service Queries (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+Shows how to query a data service from a data service application.  
+

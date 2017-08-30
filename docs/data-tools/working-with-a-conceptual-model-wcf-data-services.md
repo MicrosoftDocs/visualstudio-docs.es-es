@@ -1,37 +1,67 @@
 ---
-title: "Consultar datos con un modelo conceptual | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], LINQ to Entities"
-  - "datos [Visual Studio], consultar un servicio"
-  - "datos [Visual Studio], consultar un EDM"
+title: Working with a Conceptual Model (WCF Data Services) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], querying a service
+- data [Visual Studio], LINQ to Entities
+- data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 caps.latest.revision: 9
-caps.handback.revision: 6
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 80fc0d9dbbf46339a032d7310bf9f931132a2ba0
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Consultar datos con un modelo conceptual
-Cuando se usa un modelo conceptual para describir los datos de una base de datos, se pueden consultar los datos a través de objetos en lugar de tener que traducirlos en ambos sentidos entre un esquema de base de datos y un modelo de objetos.  
+# <a name="working-with-a-conceptual-model-wcf-data-services"></a>Working with a Conceptual Model (WCF Data Services)
+When you use a conceptual model to describe the data in a database, you can query data through your objects instead of having to translate back and forth between a database schema and an object model.  
   
- Puede usar los modelos conceptuales con aplicaciones de los servicios de datos de WCF.  En los temas siguientes se muestra cómo consultar los datos a través de un modelo conceptual.  
+ You can use conceptual models with WCF Data Services applications. The following topics show how to query data through a conceptual model.  
   
-|Tema|Descripción|  
-|----------|-----------------|  
-|[Cómo: Ejecutar consultas en el servicio de datos](../Topic/How%20to:%20Execute%20Data%20Service%20Queries%20\(WCF%20Data%20Services\).md)|Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|[Cómo: Proyectar los resultados de una consulta](../Topic/How%20to:%20Project%20Query%20Results%20\(WCF%20Data%20Services\).md)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|  
+|Topic|Description|  
+|-----------|-----------------|  
+|[How to: Execute Data Service Queries](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Shows how to query a data service from a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] application.|  
+|[How to: Project Query Results](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Shows how to reduce the amount of data returned through a data service query.|  
   
-## Vea también  
- [Consultar el servicio de datos](../Topic/Querying%20the%20Data%20Service%20\(WCF%20Data%20Services\).md)
+ When you use a conceptual model, you can define what kind of data is valid in the language that matches your domain. You can define valid data in the model, or you can add validation to operations that you perform on an entity or data service.  
+  
+ The following topics show how to add validation to WCF Data Services applications.  
+  
+|Topic|Description|  
+|-----------|-----------------|  
+|[How to: Intercept Data Service Messages](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Shows how to add validation to a data service operation.|  
+  
+ The following topics show how to create, update, and delete data by performing operations on entities.  
+  
+|Topic|Description|  
+|-----------|-----------------|  
+|[How to: Add, Modify, and Delete Entities](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Shows how to create, update, and delete entity data in a data service.|  
+|[How to: Define Entity Relationships](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Shows how to create or change relationships in a data service.|  
+  
+## <a name="see-also"></a>See Also  
+ [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
+ [Querying the Data Service](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

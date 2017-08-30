@@ -1,64 +1,68 @@
 ---
-title: "C&#243;mo: Rellenar rangos autom&#225;ticamente con datos que cambian de forma incremental mediante programaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Autofill (método) [Excel]"
-  - "rellenar rangos automáticamente"
-  - "intervalos, rellenar automáticamente"
-  - "libros, rellenar rangos"
+title: 'How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Autofill method [Excel]
+- filling ranges automatically
+- ranges, automatically filling
+- workbooks, filling ranges
 ms.assetid: 27639d55-8ab5-483c-8907-2ea50dfd2188
 caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 841dd5874486d96dfa1518e3fb9bd6bd2cbc5fce
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Rellenar rangos autom&#225;ticamente con datos que cambian de forma incremental mediante programaci&#243;n
-  El método <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> del objeto <xref:Microsoft.Office.Interop.Excel.Range> permite rellenar automáticamente con valores un rango de una hoja de cálculo.  El método <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> se utiliza más frecuentemente para almacenar de forma incremental valores crecientes o decrecientes en un rango.  Puede especificar el comportamiento proporcionando una constante opcional de la enumeración <xref:Microsoft.Office.Interop.Excel.XlAutoFillType>.  
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data
+  The <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method of the <xref:Microsoft.Office.Interop.Excel.Range> object enables you to fill a range in a worksheet with values automatically. Most often, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method is used to store incrementally increasing or decreasing values in a range. You can specify the behavior by supplying an optional constant from the <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeration.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Cuando utilice <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> debe especificar dos rangos:  
+ You must specify two ranges when using <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:  
   
--   El rango que llama al método <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>, que especifica el punto inicial del relleno y contiene un valor inicial.  
+-   The range that calls the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method, which specifies the starting point of the fill and contains an initial value.  
   
--   El rango que desea rellenar, pasado como un parámetro al método <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>.  El rango de destino debe incluir el rango que contiene el valor inicial.  
+-   The range that you want to fill, passed as a parameter to the <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> method. This destination range must include the range that contains the initial value.  
   
     > [!NOTE]  
-    >  No se puede pasar un control <xref:Microsoft.Office.Tools.Excel.NamedRange> en lugar de un rango <xref:Microsoft.Office.Interop.Excel.Range>.  Para obtener más información, vea [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+    >  You cannot pass a <xref:Microsoft.Office.Tools.Excel.NamedRange> control in place of the <xref:Microsoft.Office.Interop.Excel.Range>. For more information, see [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
-## Ejemplo  
- [!code-csharp[Trin_VstcoreExcelAutomation#49](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#49)]  
+## <a name="example"></a>Example  
+ [!code-cs[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)] [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]  
   
-## Compilar el código  
- La primera celda del rango que desee rellenar debe contener un valor inicial.  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ The first cell of the range that you want to fill must contain an initial value.  
   
- El ejemplo requiere que rellene tres regiones:  
+ The example requires that you fill three regions:  
   
--   En la columna B se van a incluir cinco días de la semana.  Para el valor inicial, escriba **Lunes** en la celda B1.  
+-   Column B is to include five weekdays. For the initial value, type **Monday** in cell B1.  
   
--   En la columna C se van a incluir cinco meses.  Para el valor inicial, escriba **Enero** en la celda C1.  
+-   Column C is to include five months. For the initial value, type **January** in cell C1.  
   
--   En la columna D se va a incluir una serie de números, en incrementos de dos para cada fila.  Para los valores iniciales, escriba **4** en la celda D1 y **6** en la celda D2.  
+-   Column D is to include a series of numbers, incrementing by two for each row. For the initial values, type **4** in cell D1 and **6** in cell D2.  
   
-## Vea también  
- [Trabajar con rangos](../vsto/working-with-ranges.md)   
- [Cómo: Hacer referencia a rangos de hojas de cálculo en el código mediante programación](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Cómo: Ejecutar cálculos de Excel mediante programación](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Ranges](../vsto/working-with-ranges.md)   
+ [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [How to: Programmatically Run Excel Calculations](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   
