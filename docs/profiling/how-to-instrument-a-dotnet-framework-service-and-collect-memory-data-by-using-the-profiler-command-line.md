@@ -1,130 +1,146 @@
 ---
-title: "C&#243;mo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la l&#237;nea de comandos del generador de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Instrument a .NET Framework Service and Collect Memory Data by Using the Profiler Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 caps.latest.revision: 24
-caps.handback.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# C&#243;mo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la l&#237;nea de comandos del generador de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 59dfc080f87ed07bcaaf899421d32f531c07fc32
+ms.contentlocale: es-es
+ms.lasthandoff: 08/31/2017
 
-En este tema se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y recopilar datos de uso de memoria.  Puede recopilar datos de asignación de memoria o bien recopilar tanto datos de asignación de memoria como datos de duración de objetos.  
+---
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>How to: Instrument a .NET Framework Service and Collect Memory Data by Using the Profiler Command Line
+This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to instrument a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service and collect memory usage data. You can collect memory allocation data, or you can collect both memory allocation and object lifetime data.  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas.  Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección.  Vea [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  No puede generar perfiles de un servicio con el método de instrumentación si el servicio no se puede reiniciar después de iniciar el equipo, como por ejemplo un servicio que se inicia cuando se inicia el sistema operativo.  
+>  You cannot profile a service with the instrumentation method if the service cannot be restarted after the computer starts, such a service that start when the operating system starts.  
 >   
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio \\Team Tools\\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas.  Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando.  Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## Iniciar la sesión de generación de perfiles  
- Para recopilar datos de rendimiento de un servicio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], se utiliza la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas y la herramienta [VSInstr.exe](../profiling/vsinstr.md) para crear una copia instrumentada del archivo binario del servicio.  
+## <a name="starting-the-profiling-session"></a>Starting the Profiling Session  
+ To collect performance data from a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service, you use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to initialize the appropriate environment variables and the [VSInstr.exe](../profiling/vsinstr.md) tool to create an instrumented copy of the service binary file.  
   
- El equipo que hospeda el servicio se debe reiniciar para configurarlo para la generación de perfiles.  También debe iniciar manualmente el servicio desde el Administrador de control de servicios.  A continuación, inicia el generador de perfiles y después el servicio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ The computer that hosts the service must be restarted to configure it for profiling. You must also start the service manually from the Service Control Manager. You then start the profiler, and then start the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service.  
   
- Cuando se ejecute el componente instrumentado, los datos de memoria se recopilarán inmediatamente en un archivo de datos.  Puede pausar y reanudar la recolección de datos durante la sesión de generación de perfiles.  
+ When the instrumented component is executed, memory data is automatically collected to a data file. You can pause and resume data collection during the profiling session.  
   
- Para finalizar una sesión de generación de perfiles, cierre el servicio y apague explícitamente el generador de perfiles.  En la mayoría de los casos, recomendamos borrar las variables de entorno de generación de perfiles al final de una sesión.  
+ To end a profiling session, you close the service and explicitly shut down the profiler. In most cases, we recommend clearing the profiling environment variables at the end of a session.  
   
-#### Para iniciar la generación de perfiles de un servicio de .NET Framework  
+#### <a name="to-begin-profiling-a-net-framework-service"></a>To begin profiling a .NET Framework service  
   
-1.  Abra una ventana de símbolo del sistema.  
+1.  Open a command prompt window.  
   
-2.  Utilice la herramienta **VSInstr** para generar una versión instrumentada del archivo binario del servicio.  
+2.  Use the **VSInstr** tool to generate an instrumented version of the service binary.  
   
-3.  Utilice el Administrador de control de servicios para reemplazar el archivo binario original por la versión instrumentada.  Asegúrese de que el Tipo de inicio del servicio está establecido en Manual.  
+3.  Use Service Control Manager to replace the original binary with the instrumented version. Make sure that the service Startup Type is set to Manual.  
   
-4.  Inicialice las variables de entorno de generación de perfiles.  Escriba:  
+4.  Initialize the profiling environment variables. Type:  
   
-     **VSPerfClrEnv** {**\/globaltracegc** &#124; **\/globaltracegclife**}  
+     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
   
-    -   **\/globaltracegc** y **\/globaltracegclife** habilitan la recolección de datos de asignación de memoria y datos de duración de objetos.  
+    -   **/globaltracegc** and **/globaltracegclife** enable the collection of memory allocation and object lifetime data.  
   
-        |Opción|Descripción|  
+        |Option|Description|  
         |------------|-----------------|  
-        |**\/globaltracegc**|Solamente recopila datos de asignación de memoria.|  
-        |**\/globaltracegclife**|Recopila datos de asignación de memoria y de duración de objetos.|  
+        |**/globaltracegc**|Collects memory allocation data only.|  
+        |**/globaltracegclife**|Collects memory allocation and object lifetime data.|  
   
-5.  Reinicie el equipo.  
+5.  Restart the computer.  
   
-6.  Abra una ventana de símbolo del sistema.  
+6.  Open a command prompt window.  
   
-7.  Inicie el generador de perfiles.  Escriba:  
+7.  Start the profiler. Type:  
   
-     **VSPerfCmd**  [\/start](../profiling/start.md) **:trace**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
+     **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   La opción **\/start: contention** inicializa el generador de perfiles.  
+    -   The **/start: contention** option initializes the profiler.  
   
-    -   La opción **\/output:**`OutputFile` es necesaria con **\/start**.  `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles \(.vsp\).  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     Puede usar cualquiera de las siguientes opciones con la opción **\/start:sample**.  
+     You can use any of the following options with the **/start:sample** option.  
   
     > [!NOTE]
-    >  Las opciones **\/user** y **\/crosssession** son necesarias normalmente para servicios.  
+    >  The **/user** and **/crosssession** options are usually required for services.  
   
-    |Opción|Descripción|  
+    |Option|Description|  
     |------------|-----------------|  
-    |[\/usuario](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso de trabajo de ASP.NET.  Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión.  El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
-    |[\/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otros inicios de sesión.  Esta opción es necesaria si la aplicación ASP.NET se ejecuta en otra sesión.  El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows.  **\/CS** se puede especificar como una abreviatura de **\/crosssession**.|  
-    |[\/waitstart](../profiling/waitstart.md)\[**:**`Interval`\]|Especifica el número de segundos de espera para que el generador de perfiles se inicialice antes de que devuelva un error.  Si no se especifica `Interval`, el generador de perfiles esperará indefinidamente.  De manera predeterminada, **\/start** termina inmediatamente.|  
-    |[\/globaloff](../profiling/globalon-and-globaloff.md)|Para iniciar el generador de perfiles con la recolección de datos en pausa, agregue la opción **\/globaloff** a la línea de comandos **\/start**.  Utilice **\/globalon** para reanudar la generación de perfiles.|  
-    |[\/counter](../profiling/counter.md) **:** `Config`|Recopila información del contador de rendimiento del procesador especificado en Config.  La información del contador se agrega a los datos recopilados en cada evento de generación de perfiles.|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|Se utiliza únicamente con **\/wincounter**.  Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows.  El valor predeterminado es 500 ms.|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Especifica un evento de Seguimiento de eventos para Windows \(ETW\) que se va a recopilar durante la generación de perfiles.  Los eventos ETW se recopilan en un archivo \(.etl\) independiente.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the ASP.NET worker process. This option is required if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other logon sessions. This option is required if the ASP.NET application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/waitstart](../profiling/waitstart.md)[**:**`Interval`]|Specifies the number of seconds to wait for the profiler to initialize before it returns an error. If `Interval` is not specified, the profiler waits indefinitely. By default, **/start** returns immediately.|  
+    |[/globaloff](../profiling/globalon-and-globaloff.md)|To start the profiler with data collection paused, add the **/globaloff** option to the **/start** command line. Use **/globalon** to resume profiling.|  
+    |[/counter](../profiling/counter.md) **:** `Config`|Collects information from the processor performance counter specified in Config. Counter information is added to the data collected at each profiling event.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-8.  Si es necesario, inicie el servicio.  
+8.  If necessary, start the service.  
   
-9. Adjunte el generador de perfiles al servicio.  Escriba:  
+9. Attach the profiler to the service. Type:  
   
-     **VSPerfCmd \/attach:** `PID` &#124;`ProcessName`  
+     **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
   
-    -   Especifique el identificador o el nombre de proceso del servicio.  Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+    -   Specify the process ID or process name of the service. You can view the process IDs and names of all running processes in Windows Task Manager.  
   
-## Controlar la recolección de datos  
- Mientras se ejecuta el servicio, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de **VSPerfCmd.exe**.  Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the service is running, you can control data collection by starting and stopping the writing of data to the file with **VSPerfCmd.exe** options. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
   
-#### Para iniciar y detener la recolección de datos  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos.  Especifique cada opción en una línea de comandos diferente.  Puede activar y desactivar la recolección de datos varias veces.  
+-   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |Opción|Descripción|  
+    |Option|Description|  
     |------------|-----------------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Inicia \(**\/globalon**\) o detiene \(**\/globaloff**\) la recolección de datos de todos los procesos.|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [\/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia \(**\/processon**\) o detiene \(**\/processoff**\) la recolección de datos del proceso especificado por el identificador de proceso \(`PID`\).|  
-    |[\/threadon](../profiling/threadon-and-threadoff.md) **:** `TID`  [\/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia \(**\/threadon**\) o detiene \(**\/threadoff**\) la recolección de datos del subproceso especificado por el identificador del subproceso \(`TID`\).|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Starts (**/threadon**) or stops (**/threadoff**) data collection for the thread specified by the thread ID (`TID`).|  
   
-## Finalizar la sesión de generación de perfiles  
- Para finalizar una sesión de generación de perfiles, cierre la aplicación que está ejecutando el componente instrumentado y, a continuación, inicie la opción **VSPerfCmd** [\/shutdown](../profiling/shutdown.md) para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  El comando **VSPerfClrEnv \/globaloff** borra las variables de entorno de generación de perfiles.  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, close the application that is running the instrumented component, then start the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file. The **VSPerfClrEnv /globaloff** command clears the profiling environment variables.  
   
-#### Para finalizar una sesión de generación de perfiles  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  Detenga el servicio en el Administrador de control de servicios.  
+1.  Stop the service from Service Control Manager.  
   
-2.  Apague el generador de perfiles.  Escriba:  
+2.  Shut down the profiler. Type:  
   
-     **VSPerfCmd \/shutdown**  
+     **VSPerfCmd /shutdown**  
   
-3.  Cuando haya finalizado la generación de perfiles, borre las variables de entorno de generación de perfiles.  Escriba:  
+3.  When you have completed all profiling, clear the profiling environment variables. Type:  
   
-     **VSPerfClrEnv \/globaloff**  
+     **VSPerfClrEnv /globaloff**  
   
-     Reemplace el módulo instrumentado con el original.  Si es necesario, vuelva a configurar el Tipo de inicio del servicio.  
+     Replace the instrumented module with the original. If necessary, reconfigure the Startup Type of the service.  
   
-4.  Reinicie el equipo.  
+4.  Restart the computer.  
   
-## Vea también  
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
- [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling Services](../profiling/command-line-profiling-of-services.md)   
+ [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)

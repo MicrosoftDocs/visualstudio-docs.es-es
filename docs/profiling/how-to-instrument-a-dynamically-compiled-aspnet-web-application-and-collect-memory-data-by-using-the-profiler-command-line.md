@@ -1,133 +1,149 @@
 ---
-title: "C&#243;mo: Instrumentar una aplicaci&#243;n web ASP.NET compilada din&#225;micamente y recopilar datos de memoria mediante la l&#237;nea de comandos del generador de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Instrument a Dynamically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# C&#243;mo: Instrumentar una aplicaci&#243;n web ASP.NET compilada din&#225;micamente y recopilar datos de memoria mediante la l&#237;nea de comandos del generador de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 3e20fe47ea52737031ab6cc84c47ef0979e4160f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/31/2017
 
-En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de asignación de memoria y duración de objetos de .NET de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de instrumentación de generación de perfiles.  
+---
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>How to: Instrument a Dynamically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line
+This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to collect detailed .NET memory allocation and object lifetime data for a dynamically compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application by using the instrumentation profiling method.  
   
 > [!NOTE]
->  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio \\Team Tools\\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas.  Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando.  Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe modificar el archivo web.config de la aplicación de destino para permitir que la herramienta [VSInstr.exe](../profiling/vsinstr.md) instrumente los archivos de aplicación compilados dinámicamente.  A continuación, utiliza la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para configurar el servidor que hospeda la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y habilita la generación de perfiles de memoria de .NET mediante el establecimiento de las variables de entorno adecuadas y el reinicio del equipo.  
+ To collect performance data from a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, you modify the web.config file of the target application to enable the [VSInstr.exe](../profiling/vsinstr.md) tool to instrument the dynamically compiled application files. You then use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to configure the server that hosts the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application and enable .NET memory profiling by setting the appropriate environment variables, and then restart the computer.  
   
- Para recopilar datos, inicie el generador de perfiles y, a continuación, ejecute la aplicación de destino.  Mientras el generador de perfiles esté adjunto a la aplicación, puede pausar y reanudar la recolección de datos. Una vez recopilados los datos adecuados, cierre la aplicación, cierre el proceso de trabajo de Internet Information Services \(IIS\) y, a continuación, apague el generador de perfiles.  
+ To collect data, start the profiler and then run the target application. While the profiler is attached to the application, you can pause and resume data collection.When you have collected the appropriate data, close the application, close the Internet Information Services (IIS) worker process, and then shut down the profiler.  
   
- Tras completar el trabajo de generación de perfiles, restaure el estado original del archivo web.config y el servidor web.  
+ When you have completed your profiling work, restore the web.config file and the Web server to their original states.  
   
-## Configurar la aplicación web ASP.NET y el servidor web  
+## <a name="configuring-the-aspnet-web-application-and-the-web-server"></a>Configuring the ASP.NET Web Application and the Web Server  
   
-#### Para configurar la aplicación web ASP.NET y el servidor web  
+#### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>To configure the ASP.NET Web application and the Web server  
   
-1.  Modifique el archivo web.config de la aplicación de destino.  Vea [Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente](../Topic/How%20to:%20Modify%20Web.Config%20Files%20to%20Instrument%20and%20Profile%20Dynamically%20Compiled%20ASP.NET%20Web%20Applications.md).  
+1.  Modify the web.config file of the target application. See [How to: Modify Web.Config Files to Instrument and Profile Dynamically Compiled ASP.NET Web Applications](../profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md).  
   
-2.  En el equipo que hospeda la aplicación web, abra una ventana del símbolo del sistema.  
+2.  Open a command prompt window on the computer that hosts the Web application.  
   
-3.  Inicialice las variables de entorno de generación de perfiles.  Escriba:  
+3.  Initialize the profiling environment variables. Type:  
   
-     **VSPerfClrEnv \/globaltracegc**  
+     **VSPerfClrEnv /globaltracegc**  
   
-     O bien  
+     -or-  
   
-     **VSPerfClrEnv \/globaltracegclife**  
+     **VSPerfClrEnv /globaltracegclife**  
   
-    -   **\/globaltracegc** habilita la recolección de datos de asignación de memoria.  
+    -   **/globaltracegc** enables the collection of memory allocation data.  
   
-    -   **\/globaltracegclife** habilita la recolección tanto de datos de asignación de memoria como de datos de duración de objetos.  
+    -   **/globaltracegclife** enables the collection of memory allocation data and object lifetime data.  
   
-4.  Reinicie el equipo.  
+4.  Restart the computer.  
   
-## Ejecutar la sesión de generación de perfiles  
+## <a name="running-the-profiling-session"></a>Running the Profiling Session  
   
-#### Para generar los perfiles de la aplicación web ASP.NET  
+#### <a name="to-profile-the-aspnet-web-application"></a>To profile the ASP.NET Web application  
   
-1.  Inicie el generador de perfiles.  Escriba:  
+1.  Start the profiler. Type:  
   
-     **VSPerfCmd** [\/start](../profiling/start.md)**:trace** [\/output](../profiling/output.md)**:**`OutputFile` \[`Options`\]  
+     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   La opción **\/start:trace** inicializa el generador de perfiles.  
+    -   The **/start:trace** option initializes the profiler.  
   
-    -   La opción **\/output:**`OutputFile` es necesaria con **\/start**.  `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles \(.vsp\).  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     Puede usar cualquiera de las siguientes opciones con la opción **\/start:trace**.  
+     You can use any of the following options with the **/start:trace** option.  
   
     > [!NOTE]
-    >  Las opciones **\/user** y **\/crosssession** son necesarias normalmente para aplicaciones ASP.NET.  
+    >  The **/user** and **/crosssession** options are usually required for ASP.NET applications.  
   
-    |Opción|Descripción|  
+    |Option|Description|  
     |------------|-----------------|  
-    |[\/usuario](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Especifica el dominio y el nombre de usuario opcionales de la cuenta propietaria del proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión.  El nombre se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
-    |[\/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otras sesiones.  Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente.  El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows.  **\/CS** se puede especificar como una abreviatura de **\/crosssession**.|  
-    |[\/globaloff](../profiling/globalon-and-globaloff.md)|Inicia el generador de perfiles con la recolección de datos en pausa.  Utilice [\/globalon](../profiling/globalon-and-globaloff.md) para reanudar la generación de perfiles.|  
-    |[\/counter](../profiling/counter.md) **:** `Config`|Recopila información del contador de rendimiento del procesador especificado en `Config`.  La información del contador se agrega a los datos recopilados en cada evento de generación de perfiles.|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|Se utiliza únicamente con **\/wincounter**.  Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows.  El valor predeterminado es 500 ms.|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Especifica un evento de Seguimiento de eventos para Windows \(ETW\) que se va a recopilar durante la generación de perfiles.  Los eventos ETW se recopilan en un archivo \(.etl\) independiente.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the optional domain and user name of the account that owns the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process. This option is required if the process is running as a user other than the logged on user. The name is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/globaloff](../profiling/globalon-and-globaloff.md)|Starts the profiler with data collection paused. Use [/globalon](../profiling/globalon-and-globaloff.md) to resume profiling.|  
+    |[/counter](../profiling/counter.md) **:** `Config`|Collects information from the processor performance counter specified in `Config`. Counter information is added to the data collected at each profiling event.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-2.  Inicie la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de la manera habitual.  
+2.  Start the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application in the typical way.  
   
-## Controlar la recolección de datos  
- Mientras se ejecuta la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en un archivo de datos del generador de perfiles mediante el uso de las opciones de **VSPerfCmd.exe**.  Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the target application is running, you can control data collection by starting and stopping the writing of data to the profiler data file by using **VSPerfCmd.exe** options. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
   
-#### Para iniciar y detener la recolección de datos  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   Los siguientes pares de opciones inician y detienen la recolección de datos.  Especifique cada opción en una línea de comandos diferente.  Puede activar y desactivar la recolección de datos varias veces.  
+-   The following pairs of options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |Opción|Descripción|  
+    |Option|Description|  
     |------------|-----------------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Inicia \(**\/globalon**\) o detiene \(**\/globaloff**\) la recolección de datos de todos los procesos.|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID` [\/processoff](../profiling/processon-and-processoff.md)**:**`PID`|Inicia \(**\/processon**\) o detiene \(**\/processoff**\) la recolección de datos del proceso especificado por el identificador de proceso \(`PID`\).|  
-    |[\/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [\/threadoff](../profiling/threadon-and-threadoff.md)**:**`TID`|Inicia \(**\/threadon**\) o detiene \(**\/threadoff**\) la recolección de datos del subproceso especificado por el identificador del subproceso \(`TID`\).|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Starts (**/threadon**) or stops (**/threadoff**) data collection for the thread specified by the thread ID (`TID`).|  
   
--   También puede usar la opción **VSPerfCmd.exe**[\/mark](../profiling/mark.md) para insertar una marca de generación de perfiles en el archivo de datos.  El comando **\/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario.  Las marcas se pueden utilizar para filtrar los datos que se muestran en las vistas de informes y datos del generador de perfiles.  
+-   You can also use the **VSPerfCmd.exe**[/mark](../profiling/mark.md) option to insert a profiling mark into the data file. The **/mark** command adds an identifier, a timestamp, and an optional user-defined text string. Marks can be used to filter the data in profiler reports and data views.  
   
-## Finalizar la sesión de generación de perfiles  
- Para finalizar una sesión de generación de perfiles, cierre la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de destino, detenga Internet Information Services \(IIS\) para detener el proceso perfilado y, a continuación, apague el generador de perfiles.  A continuación, reinicie IIS.  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, close the target [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, stop Internet Information Services (IIS) to stop the profiled process, and then shut down the profiler. Then restart IIS.  
   
-#### Para finalizar una sesión de generación de perfiles  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  Cierre la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+1.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application.  
   
-2.  Cierre el proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] restableciendo Internet Information Services \(IIS\).  Escriba:  
+2.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process by resetting Internet Information Services (IIS). Type:  
   
-     **IISReset \/stop**  
+     **IISReset /stop**  
   
-3.  Apague el generador de perfiles.  Escriba:  
+3.  Shut down the profiler. Type:  
   
-     **VSPerfCmd** [\/shutdown](../profiling/shutdown.md)  
+     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
   
-4.  Reinicie IIS.  Escriba:  
+4.  Restart IIS. Type:  
   
-     **IISReset \/start**  
+     **IISReset /start**  
   
-## Restaurar la configuración del equipo y la aplicación  
- Después de completar la generación de perfiles, reemplace el archivo web.config, borre las variables de entorno de generación de perfiles y reinicie el equipo para restaurar el servidor y la aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] a sus estados originales.  
+## <a name="restoring-the-application-and-computer-configuration"></a>Restoring the Application and Computer Configuration  
+ When you have completed all profiling, replace the web.config file, clear the profiling environment variables, and restart the computer to restore the server and the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application to their original states.  
   
-#### Para restaurar la configuración del equipo y la aplicación  
+#### <a name="to-restore-the-application-and-computer-configuration"></a>To restore the application and computer configuration  
   
-1.  Reemplace el archivo web.config con una copia del archivo original.  
+1.  Replace the web.config file with a copy of the original file.  
   
-2.  \(Opcional\).  Borre las variables del entorno de generación de perfiles.  Escriba:  
+2.  (Optional). Clear the profiling environment variables. Type:  
   
-     **VSPerfCmd \/globaloff**  
+     **VSPerfCmd /globaloff**  
   
-3.  Reinicie el equipo.  
+3.  Restart the computer.  
   
-## Vea también  
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling ASP.NET Web Applications](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)

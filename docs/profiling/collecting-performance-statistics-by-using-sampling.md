@@ -1,56 +1,74 @@
 ---
-title: "Recopilar estad&#237;sticas de rendimiento mediante el muestreo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Herramientas de generación de perfiles, muestreo"
-  - "método de generación de perfiles mediante muestreo"
+title: Collecting Performance Statistics by Using Sampling | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Profiling Tools,sampling
+- sampling profiling method
 ms.assetid: 8e36361b-bb3d-40c6-b286-0e68c0ecb915
 caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Recopilar estad&#237;sticas de rendimiento mediante el muestreo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: b70e791d001cee1ae49cf9561b914c0a72c862ae
+ms.contentlocale: es-es
+ms.lasthandoff: 08/31/2017
 
-De forma predeterminada, el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] recopila información de generación de perfiles cada 10.000.000 ciclos de procesador \(aproximadamente cada centésima de segundo en un equipo de 1 GHz\).  Este método es útil para buscar problemas de utilización del procesador y es el método sugerido para iniciar la mayoría de las investigaciones de rendimiento.  
+---
+# <a name="collecting-performance-statistics-by-using-sampling"></a>Collecting Performance Statistics by Using Sampling
+By default, the [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] Profiling Tools sampling method collects profiling information every 10,000,000 processor cycles (approximately every one-hundredth of a second on a 1 GHz computer). The sampling method is useful for finding processor utilization issues and is the suggested method for starting most performance investigations.  
   
- **Requisitos**  
+ **Requirements**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas.  Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección.  Vea [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- Puede especificar el método de muestreo utilizando uno de los procedimientos siguientes:  
+ You can specify the sampling method by using one of the following procedures:  
   
--   En la primera página del Asistente para generación de perfiles, haga clic en **Muestreo de la CPU \(recomendado\)**.  
+-   On the first page of the Profiling Wizard, click **CPU Sampling (recommended)**.  
   
--   En la barra de herramientas del **Explorador de rendimiento**, en la lista **Método**, haga clic en **Muestreo**.  
+-   On the **Performance Explorer** toolbar, in the **Method** list, click **Sampling**.  
   
--   En la página **general** del cuadro de diálogo de propiedades de la sesión de rendimiento, haga clic en **Muestreo**.  
+-   On the **General** page of the properties dialog box for the performance session, click **Sampling**.  
   
-## Tareas comunes  
- Puede especificar opciones adicionales en el cuadro de diálogo de *Performance Session***Páginas de propiedades** de la sesión de rendimiento.  Para abrir este cuadro de diálogo:  
+## <a name="common-tasks"></a>Common Tasks  
+ You can specify additional options in the *Performance Session***Property Pages** dialog box of the performance session. To open this dialog box:  
   
--   En el **Explorador de rendimiento**, haga clic con el botón secundario en el nombre de la sesión de rendimiento y, a continuación, haga clic en **Propiedades**.  
+-   In **Performance Explorer**, right-click the performance session name, and then click **Properties**.  
   
- Las tareas de la tabla siguiente describen opciones que puede especificar en el cuadro de diálogo de *Performance Session***Páginas de propiedades** cuando genere perfiles utilizando el método de muestreo.  
+ The tasks in the following table describe options that you can specify in the *Performance Session***Property Pages** dialog box when you profile by using the sampling method.  
   
-|Tarea|Contenido relacionado|  
-|-----------|---------------------------|  
-|En la página **General**, agregue colecciones de datos de asignación de memoria y de duración de .NET Framework y especifique los detalles de nomenclatura para el archivo de datos de generación de perfiles que se crea \(.vsp\).|-   [Recopilar datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Cómo: Establecer opciones de nombre de archivo de datos de generación de perfiles](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|En la página **Muestreo**, cambie la velocidad de muestreo, cambie el evento de muestreo de los ciclos de reloj de procesador a otro contador de rendimiento de procesador, o cambie ambos valores.|-   [Cómo: Elegir eventos de muestreo](../Topic/How%20to:%20Choose%20Sampling%20Events.md)|  
-|En la página **Inicio**, si tiene varios proyectos .exe en la solución de código, especifique la aplicación que se debe iniciar y el orden de inicio.|-   [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|  
-|En la página **Interacciones de capas**, agregue información de llamada de ADO.NET a los datos recopilados en la ejecución de generación de perfiles.|-   [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|  
-|En la página **Eventos de Windows**, especifique uno o más eventos ETW \(Seguimiento de eventos para Windows\) que se recopilarán con los datos de muestreo.|-   [Cómo: Recopilar datos de Seguimiento de eventos para Windows \(ETW\)](../Topic/How%20to:%20Collect%20Event%20Tracing%20for%20Windows%20\(ETW\)%20Data.md)|  
-|En la página **Contadores de Windows**, especifique uno o más contadores de rendimiento del sistema operativo que se deben agregar como marcas a los datos de generación de perfiles.|-   [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|En la página **Avanzadas**, especifique la versión del runtime de .NET Framework que se usará en la generación de perfiles si los módulos de aplicación usan varias versiones.  De forma predeterminada, se generan los perfiles de la primera versión cargada.|-   [Cómo: Especificar el runtime de .NET Framework para la generación de perfiles en escenarios en paralelo](../Topic/How%20to:%20Specify%20the%20.NET%20Framework%20Runtime.md)|
+|Task|Related Content|  
+|----------|---------------------|  
+|On the **General** page, add .NET memory allocation and lifetime data collection, and specify naming details for the generated profiling data (.vsp) file.|-   [Collecting .NET Memory Allocation and Lifetime Data](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [How to: Set Performance Data File Name Options](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|On the **Sampling** page, change the sampling rate, change the sampling event from processor clock cycles to another processor performance counter, or change both..|-   [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)|  
+|On the **Launch** page, specify the application to start and the start order if you have multiple .exe projects in your code solution.|-   [Collecting tier interaction data](../profiling/collecting-tier-interaction-data.md)|  
+|On the **Tier Interaction** page, add ADO.NET call information to the data collected in theprofiling run.|-   [Collecting tier interaction data](../profiling/collecting-tier-interaction-data.md)|  
+|On the **Windows Events** page, specify one or more Event Tracing for Windows (ETW) events to collect with the sampling data.|-   [How to: Collect Event Tracing for Windows (ETW) Data](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
+|On the **Windows Counters** page, specify one or more operating system performance counters to add to the profiling data as marks.|-   [How to: Collect Windows Counter Data](../profiling/how-to-collect-windows-counter-data.md)|  
+|On the **Advanced** page, specify the version of the .NET Framework runtime to profile if your application modules use multiple versions. By default, the first version loaded is profiled.|-   [How to: Specify the .NET Framework Runtime](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
