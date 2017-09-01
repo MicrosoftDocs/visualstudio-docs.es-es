@@ -49,8 +49,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/24/2017
 
 ---
-# Explorador web, Entorno, Opciones (Cuadro de diálogo)
-<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
+# <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.  
   
 > [!NOTE]
@@ -80,8 +79,7 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
 > [!NOTE]
 >  Use el cuadro de diálogo Explorar con para reemplazar el explorador web interno de Visual Studio, que es una versión de Internet Explorer, por otro explorador web externo.  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)   
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   
  [Diseñador HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

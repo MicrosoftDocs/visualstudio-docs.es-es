@@ -43,14 +43,12 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/26/2017
 
 ---
-# Prerequisites Dialog Box
-<a id="prerequisites-dialog-box" class="xliff"></a>
+# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 Este cuadro de diálogo permite especificar los componentes necesarios que se instalan, cómo se instalan y en qué orden se instalan los paquetes.  
   
  Para acceder a este cuadro de diálogo, seleccione un nodo de proyecto en el **Explorador de soluciones** y después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos** , haga clic en la pestaña **Publicar** . En la página **Publicar**, haga clic en **Requisitos previos**. Para los proyectos de programas de instalación, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se abra el cuadro de diálogo **Páginas de propiedades**, haga clic en **Requisitos previos**.  
   
-## Lista de UIElement
-<a id="uielement-list" class="xliff"></a>  
+## <a name="uielement-list"></a>Lista de UIElement  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
@@ -61,8 +59,7 @@ Este cuadro de diálogo permite especificar los componentes necesarios que se in
 |**Descargar los requisitos previos de la misma ubicación que mi aplicación**|Especifica que los componentes necesarios se instalarán desde la misma ubicación que la aplicación. Mediante esta acción, se copian todos los paquetes de requisitos previos a la ubicación de publicación. Para que esta opción funcione, los paquetes se deben encontrar en el equipo de desarrollo.|  
 |**Descargar los requisitos previos de la siguiente ubicación**|Especifica que los componentes de requisitos previos se instalarán desde la ubicación seleccionada. Puede usar el botón **Examinar** para seleccionar una ubicación.|  
   
-## Información de requisitos previos
-<a id="prerequisites-information" class="xliff"></a>  
+## <a name="prerequisites-information"></a>Información de requisitos previos  
  Los componentes de requisitos previos que aparecen en el cuadro de diálogo **Requisitos previos** pueden ser diferentes a los que figuran en la lista siguiente. Los paquetes de requisitos previos incluidos en el **cuadro de diálogo Requisitos previos** se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, deberá seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.  
   
 |Elemento|Descripción|  
@@ -85,8 +82,7 @@ Este cuadro de diálogo permite especificar los componentes necesarios que se in
 |**Windows Installer 3.1**|Este paquete instala la versión 3.1 redistribuible de Microsoft Windows Installer, que permite instalar proyectos de instalación de Windows Installer. Viene preinstalado en el SP1 de Windows Server 2003 y posterior.<br /><br /> Este elemento está seleccionado de manera predeterminada.|  
 |**Windows Installer 4.5**|Este paquete instala la versión 4.5 redistribuible de Microsoft Windows Installer, que permite instalar proyectos de instalación de Windows Installer.|  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Panel Publicar, Diseñador de proyectos](../../ide/reference/publish-page-project-designer.md)   
  [Requisitos previos para la implementación de aplicaciones](../../deployment/application-deployment-prerequisites.md)   
  [Redistribuir .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

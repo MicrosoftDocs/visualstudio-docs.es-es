@@ -43,14 +43,12 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/30/2017
 
 ---
-# Seguridad y ensamblados satélite localizados
-<a id="security-and-localized-satellite-assemblies" class="xliff"></a>
+# <a name="security-and-localized-satellite-assemblies"></a>Seguridad y ensamblados satélite localizados
 Si el ensamblado principal usa nombres seguros, los ensamblados satélite deben firmarse con la misma clave privada que el ensamblado principal. Si el par de clave pública y privada de los ensamblados principal y satélite no coincide, los recursos no se cargarán. Para más información sobre la firma de ensamblados, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  
   
  En general, es posible que necesite el grupo de firmas de su organización o la firma de una organización de firmas externa con la clave privada. Esto es debido a la naturaleza confidencial de la clave privada: el acceso suele estar restringido a unas pocas personas. Puede retrasar la firma durante el desarrollo. Para más información, vea [Retrasar la firma de un ensamblado](/dotnet/framework/app-domains/delay-sign-assembly).  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Consideraciones de seguridad sobre ensamblados](/dotnet/framework/app-domains/assembly-security-considerations)   
  [Conceptos clave de seguridad](/dotnet/standard/security/key-security-concepts)   
  [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   

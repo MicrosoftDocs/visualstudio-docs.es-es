@@ -82,12 +82,10 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/24/2017
 
 ---
-# Administrar herramientas externas
-<a id="manage-external-tools" class="xliff"></a>
+# <a name="manage-external-tools"></a>Administrar herramientas externas
 Se puede llamar a herramientas externas desde Visual Studio mediante el menú **Herramientas**. Algunas herramientas predeterminadas están disponibles en el menú **Herramientas**, pero se pueden agregar otros archivos ejecutables propios.  
 
-## Herramientas disponibles en el menú Herramientas de Visual Studio
-<a id="tools-available-on-the-visual-studio-tools-menu" class="xliff"></a>
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Herramientas disponibles en el menú Herramientas de Visual Studio
  El **Herramientas** menú contiene varios comandos integrados, como:
 
 *  **Extensiones y actualizaciones** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
@@ -96,8 +94,7 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 *  **Personalizar...** para personalizar [menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 *  **Opciones...** para [establecer numerosas opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
 
-## Agregar nuevas herramientas al menú Herramientas
-<a id="add-new-tools-to-the-tools-menu" class="xliff"></a> 
+## <a name="add-new-tools-to-the-tools-menu"></a>Agregar nuevas herramientas al menú Herramientas 
  Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **Herramientas externas..**, haga clic en **Agregar** y rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:  
   
 1.  Título: *Abrir ubicación del archivo*
@@ -130,7 +127,6 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 |Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|  
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|  
 
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)
 

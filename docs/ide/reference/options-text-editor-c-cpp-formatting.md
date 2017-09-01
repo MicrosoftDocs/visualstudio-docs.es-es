@@ -41,8 +41,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/24/2017
 
 ---
-# Opciones, editor de texto, C/C++, formato
-<a id="options-text-editor-cc-formatting" class="xliff"></a>
+# <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
 Permite cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.  
   
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.  
@@ -50,13 +49,11 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
 > [!NOTE]
 >  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Opciones de C/C++
-<a id="cc-options" class="xliff"></a>  
+## <a name="cc-options"></a>Opciones de C/C++  
  **Habilitar información rápida sobre herramientas automática**  
  Habilita o deshabilita la característica de IntelliSense Información rápida.  
   
-## Código inactivo
-<a id="inactive-code" class="xliff"></a>  
+## <a name="inactive-code"></a>Código inactivo  
  **Mostrar bloques de código inactivos**  
  El código que está inactivo debido a las declaraciones `#ifdef` aparece con un color diferente para facilitar su identificación.  
   
@@ -66,24 +63,21 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  **Porcentaje de opacidad del código inactivo**  
  Se puede personalizar el grado de opacidad de los bloques de código inactivos.  
   
-## Sangría
-<a id="indentation" class="xliff"></a>  
+## <a name="indentation"></a>Sangría  
  **Aplicar sangría a las llaves**  
  Puede configurar cómo se alinean las llaves cuando se presiona ENTRAR después de comenzar un bloque de código, por ejemplo, una función o un bucle `for`. Las llaves pueden estar alineadas con el primer carácter del bloque de código o con sangría.  
   
  **Sangría automática con tecla TAB**  
  Puede configurar lo que ocurre en la línea de código actual al presionar TAB. Se aplica sangría a la línea o bien se inserta un carácter de tabulación.  
   
-## Varios
-<a id="miscellaneous" class="xliff"></a>  
+## <a name="miscellaneous"></a>Varios  
  **Enumerar comentarios en la ventana Lista de tareas**  
  El editor puede analizar archivos de código fuente abiertos para buscar palabras preestablecidas en los comentarios. Crea una entrada en la ventana **Lista de tareas** para todas las palabras clave que encuentra.  
   
  **Resaltar tokens de emparejamiento**  
  Cuando se coloca el cursor junto a una llave, el editor puede resaltar la llave correspondiente de modo que pueda ver el código incluido entre llaves más fácilmente.  
   
-## Esquematización
-<a id="outlining" class="xliff"></a>  
+## <a name="outlining"></a>Esquematización  
  **Especificar el modo de esquematización al abrir los archivos**  
  Cuando se coloca un archivo en el editor de texto, se puede habilitar la característica de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se habilita al abrir un archivo.  
   
@@ -99,7 +93,6 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
   
 -   [while (Instrucción) (C++)](/cpp/cpp/while-statement-cpp)  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)   
  [Usar IntelliSense](../../ide/using-intellisense.md)

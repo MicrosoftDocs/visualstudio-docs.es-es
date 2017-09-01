@@ -39,8 +39,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/30/2017
 
 ---
-# Permisos de usuario y Visual Studio
-<a id="user-permissions-and-visual-studio" class="xliff"></a>
+# <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal siempre que sea posible.  
 
 > [!WARNING]
@@ -66,12 +65,10 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 |Herramientas de rendimiento|Generar perfiles de una aplicación.|[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Implementación|Implementar una aplicación web en Internet Information Services (IIS) en un equipo local.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Implementar una aplicación web ASP.NET en un proveedor de host mediante Visual Studio o Visual Web Developer: implementar en IIS como entorno de prueba)|
 
-## Ejecutar Visual Studio como administrador
-<a id="running-visual-studio-as-an-administrator" class="xliff"></a>  
+## <a name="running-visual-studio-as-an-administrator"></a>Ejecutar Visual Studio como administrador  
  Puede iniciar Visual Studio con permisos administrativos cada vez que inicie el IDE o puede modificar el acceso directo de la aplicación para que se ejecute siempre con permisos administrativos. Para obtener más información, vea la Ayuda de Windows.  
 
-#### Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] o [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] o [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
 
 1.  En la pantalla **Inicio**, escriba **Visual Studio**. Debe ver la versión o las versiones de Visual Studio que ha instalado.  
 
@@ -79,8 +76,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.  
 
-#### Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]
-<a id="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd" class="xliff"></a>  
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
 
 1.  En el menú **Inicio**, elija **Todos los programas**.  
 
@@ -88,8 +84,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.  
 
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Instalar Visual Studio](../install/install-visual-studio.md)
 
