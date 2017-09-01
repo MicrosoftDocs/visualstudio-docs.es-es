@@ -1,73 +1,90 @@
 ---
-title: "IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::ResolveAssemblyRef"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::ResolveAssemblyRef"
+title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::ResolveAssemblyRef
+helpviewer_keywords:
+- IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IPropertyProxyEESide::ResolveAssemblyRef
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e71bb5aa2954c609cff4a3afbfba981bade3122c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Determina la ubicación de la referencia administrada especificada del ensamblado.  
+---
+# <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
+Determines the location of the specified managed assembly reference.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ResolveAssemblyRef(  
-   BSTR*                  assemName,  
-   IEEDataStorage**       assemBytes,  
-   IEEDataStorage**       assemPdb,  
-   BSTR*                  assemLocation,  
-   ASSEMBLYLOCRESOLUTION* alr  
+   BSTR*                  assemName,  
+   IEEDataStorage**       assemBytes,  
+   IEEDataStorage**       assemPdb,  
+   BSTR*                  assemLocation,  
+   ASSEMBLYLOCRESOLUTION* alr  
 );  
 ```  
   
-```c#  
+```csharp  
 int ResolveAssemblyRef(  
-   ref string                     assemName,  
-   out IEEDataStorage             assemBytes,  
-   out IEEDataStorage             assemPdb,  
-   out string                     assemLocation,  
-   out enum_ASSEMBLYLOCRESOLUTION alr  
+   ref string                     assemName,  
+   out IEEDataStorage             assemBytes,  
+   out IEEDataStorage             assemPdb,  
+   out string                     assemLocation,  
+   out enum_ASSEMBLYLOCRESOLUTION alr  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `assemName`  
- \[in\]  Nombre del ensamblado a resolver.  
+ [in] Name of the assembly to resolve.  
   
  `assemBytes`  
- \[out\]  Devuelve un objeto de [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contiene los bytes del ensamblado asociado a la referencia.  
+ [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes associated with the reference.  
   
  `assemPdb`  
- \[out\]  Devuelve un objeto de `IEEDataStorage` que contiene los datos del almacén de símbolos asociado a esta referencia.  
+ [out] Returns an `IEEDataStorage` object containing the symbol store data associated with this reference.  
   
  `assemLocation`  
- \[out\]  Devuelve la ubicación de la ruta de acceso de esta referencia.  
+ [out] Returns the path location of this reference.  
   
  `alr`  
- \[out\]  Devuelve un valor de enumeración de [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) que indica la ubicación del ensamblado de esta referencia.  
+ [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of this reference's assembly.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método no se implementa normalmente por un evaluador de expresiones personalizado.  
+## <a name="remarks"></a>Remarks  
+ This method is not typically implemented by a custom expression evaluator.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

@@ -1,62 +1,79 @@
 ---
-title: "IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetMethodFieldsByName"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetMethodFieldsByName (método)"
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugSymbolProvider::GetMethodFieldsByName
+helpviewer_keywords:
+- IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugSymbolProvider::GetMethodFieldsByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3bf359535d5b11edb95910afe5a81ca048ab9c21
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Este método obtiene el campo que representa un nombre completo del método.  
+---
+# <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
+This method gets the field representing a fully qualified method name.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetMethodFieldsByName(   
-   LPCOLESTR          pszFullName,  
-   NAME_MATCH         nameMatch,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT GetMethodFieldsByName(   
+   LPCOLESTR          pszFullName,  
+   NAME_MATCH         nameMatch,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMethodFieldsByName(  
-   string               pszFullName,   
-   NAME_MATCH           nameMatch,   
-   out IEnumDebugFields ppEnum  
+   string               pszFullName,   
+   NAME_MATCH           nameMatch,   
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pszFullName`  
- \[in\]  El nombre del método.  
+ [in] The method name.  
   
  `nameMatch`  
- \[in\]  Selecciona el tipo de coincidencia, por ejemplo, distingue entre mayúsculas y minúsculas.  
+ [in] Selects the type of match, for example, case-sensitive.  
   
  `ppEnum`  
- \[out\]  Devuelve un enumerador de [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) para los campos asociado a este método.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the fields associated with this method.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Un método puede asociar varios campos si se sobrecarga, por ejemplo.  
+## <a name="remarks"></a>Remarks  
+ A method can be associated with multiple fields if it is overloaded, for example.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

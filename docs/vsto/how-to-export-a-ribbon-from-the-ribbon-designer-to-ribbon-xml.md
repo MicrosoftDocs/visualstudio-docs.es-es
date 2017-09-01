@@ -1,76 +1,80 @@
 ---
-title: "C&#243;mo: Exportar una cinta de opciones del dise&#241;ador de la cinta de opciones a XML de la cinta de opciones"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Cinta de opciones personalizada, XML"
-  - "personalizar la cinta de opciones, XML"
-  - "exportar la cinta de opciones"
-  - "Cinta [desarrollo de Office en Visual Studio], exportar"
-  - "Cinta [desarrollo de Office en Visual Studio], XML"
-  - "Diseñador de la cinta de opciones [desarrollo de Office en Visual Studio]"
-  - "XML [desarrollo de Office en Visual Studio], cinta de opciones"
+title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- Ribbon [Office development in Visual Studio], exporting
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon Designer [Office development in Visual Studio]
+- exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
 caps.latest.revision: 37
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Exportar una cinta de opciones del dise&#241;ador de la cinta de opciones a XML de la cinta de opciones
-  El elemento **Cinta \(diseñador visual\)** no admite todos los tipos posibles de personalización de la cinta de opciones.  Para realizar personalizaciones avanzadas de la cinta de opciones, puede exportar la cinta desde el diseñador a un archivo XML de la cinta de opciones y editar el archivo XML directamente.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
+  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
   
 > [!NOTE]  
->  En el archivo XML de la cinta de opciones no aparecen todos los valores de propiedades.  Para obtener más información, vea [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md).  
+>  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### Para exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
   
-1.  Haga clic con el botón secundario en el archivo de código de la cinta de opciones del **Explorador de soluciones** y, a continuación, haga clic en **Ver diseñador**.  
+1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
   
-2.  Haga clic con el botón secundario en el diseñador de la cinta de opciones y, a continuación, haga clic en **Exportar cinta de opciones a archivo XML**.  
+2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
   
-     Visual Studio agrega al proyecto un archivo XML y un archivo de código XML, ambos de cinta de opciones.  
+     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
   
-3.  En la clase de código Ribbon, busque los comentarios que empiezan por `TODO:.`  
+3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
   
-4.  Copie el bloque de código de estos comentarios en la clase **ThisAddin**, **ThisWorkbook** o **ThisDocument**, dependiendo del tipo de solución que esté desarrollando.  
+4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
   
-     Este código permite a la aplicación de Microsoft Office detectar y cargar la cinta de opciones personalizada.  Para obtener más información, vea [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
+     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  En la clase **ThisAddin**, **ThisWorkbook** o **ThisDocument**, quite las marcas de comentario del bloque de código.  
+5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
   
-     Después de eliminar los comentarios del código, debe ser similar al ejemplo siguiente.  En este ejemplo, la clase Ribbon se denomina `MyRibbon`.  
+     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Cambie al archivo de código XML de la cinta de opciones y busque el área `Ribbon Callbacks`.  
+6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
   
-     Aquí es donde se escriben los métodos de devolución de llamada para controlar las acciones del usuario, como hacer clic en un botón.  
+     This is where you write callback methods to handle user actions, such as clicking a button.  
   
-7.  Cree un método de devolución de llamada para cada controlador de eventos escrito en el código del diseñador de la cinta de opciones.  
+7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
   
-8.  Mueva todo el código controlador de eventos de los controladores de eventos a los métodos de devolución de llamada y modifique el código para que funcione con el modelo de programación de extensibilidad de la cinta de opciones \(RibbonX\).  
+8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
   
-     Para obtener información sobre cómo escribir métodos de devolución de llamada y utilizar el modelo de programación RibbonX, vea [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
+     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-## Vea también  
- [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)   
- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)   
- [XML de la cinta de opciones](../vsto/ribbon-xml.md)   
- [Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

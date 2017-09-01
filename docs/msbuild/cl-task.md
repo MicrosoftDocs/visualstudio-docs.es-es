@@ -40,10 +40,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 0e6777ed52cb1695c90ae42d7795de57f9c62169
+ms.contentlocale: es-es
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="cl-task"></a>CL (Tarea)
@@ -202,7 +203,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **Safe** - **/clr:safe**  
   
-    -   **OldSyntax** -  **/CLR: oldSyntax**  
+    -   **OldSyntax** -   **/CLR: oldSyntax**  
   
      Para obtener más información, consulte [/clr (Compilación de Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
@@ -224,9 +225,9 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **OldStyle** - **/Z7**  
   
-    -   **ProgramDatabase** -  **/Zi**  
+    -   **ProgramDatabase** -   **/Zi**  
   
-    -   **EditAndContinue** -  **/Zi**  
+    -   **EditAndContinue** -   **/Zi**  
   
      Para obtener más información, consulte [/Z7, /Zi, /ZI (Formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
@@ -366,7 +367,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
      Si `true`, implementa el comportamiento estándar de C++ en los bucles [for](/cpp/cpp/for-statement-cpp) que utilizan las extensiones de Microsoft ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).  
   
-     Para obtener más información, consulte [/Zc:forScope (Forzar ajuste en el ámbito del bucle For)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+     Para obtener más información, consulte [/Zc:forScope (Forzar ajuste en el ámbito del bucle For)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).  
   
 -   **ForcedIncludeFiles**  
   
@@ -714,7 +715,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
      Si `true`, trate el tipo `wchar_t` como un tipo nativo.  
   
-     Para obtener más información, vea [/Zc:wchar_t (wchar_t es un tipo nativo)](http://msdn.microsoft.com/Library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+     Para obtener más información, vea [/Zc:wchar_t (wchar_t es un tipo nativo)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).  
   
 -   **UndefineAllPreprocessorDefinitions**  
   
@@ -768,7 +769,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Para obtener más información, consulte la opción **/W***n* en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
+     Para obtener más información, vea la opción **/W***n* en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

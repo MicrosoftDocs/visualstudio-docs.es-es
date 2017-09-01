@@ -1,138 +1,142 @@
 ---
-title: "Informaci&#243;n general sobre la cinta de opciones"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Cinta de opciones personalizada, varias cintas de opciones"
-  - "personalizar la cinta de opciones, varias cintas de opciones"
-  - "Cinta [desarrollo de Office en Visual Studio]"
-  - "Cinta [desarrollo de Office en Visual Studio], acerca de la cinta de opciones"
-  - "Cinta [desarrollo de Office en Visual Studio], varias cintas de opciones"
-  - "barras de herramientas [desarrollo de Office en Visual Studio]"
-  - "barras de herramientas [desarrollo de Office en Visual Studio], cinta de opciones"
+title: Ribbon Overview | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- customizing the Ribbon, multiple Ribbons
+- Ribbon [Office development in Visual Studio], about Ribbon
+- toolbars [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], multiple Ribbons
+- toolbars [Office development in Visual Studio]
+- custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
 caps.latest.revision: 64
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Informaci&#243;n general sobre la cinta de opciones
-  La cinta es una manera de organizar comandos relacionados para que sean fáciles de encontrar.  Los comandos aparecen como controles en la cinta.  Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de la ventana de una aplicación.  Los grupos relacionados se organizan en pestañas.  
+# <a name="ribbon-overview"></a>Ribbon Overview
+  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
   
- Ahora se puede acceder mediante la cinta a la mayoría de las características a las que se accedía mediante menús y barras de herramientas en versiones anteriores de Microsoft Office System.  Para obtener más información, vea el artículo técnico [Introducción para desarrolladores a la interfaz de usuario de 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Personalizar la cinta de Microsoft Office  
- Para personalizar la cinta, agregue uno de los siguientes elementos de cinta al proyecto de Office:  
+## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
+ To customize the Ribbon, add one of the following Ribbon items to your Office project:  
   
--   **Cinta \(diseñador visual\)**  
+-   **Ribbon (Visual Designer)**  
   
--   **Cinta \(XML\)**  
+-   **Ribbon (XML)**  
   
- Por ejemplo, para personalizar la cinta de Excel, agregue un elemento de cinta a un proyecto de complemento de Excel de VSTO.  
+ For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
   
-### Elemento de cinta \(diseñador visual\)  
- El elemento **Cinta \(diseñador visual\)** proporciona herramientas avanzadas que facilitan el diseño y desarrollo de una cinta personalizada.  Use el elemento **Cinta \(diseñador visual\)** para personalizar la cinta de las siguientes maneras:  
+### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
+ The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
   
--   Agregue pestañas personalizadas o integradas a una cinta.  
+-   Add custom or built-in tabs to a Ribbon.  
   
--   Agregue grupos personalizados a una pestaña personalizada o integrada.  
-  
-    > [!NOTE]  
-    >  Una pestaña o grupo integrado es uno que ya existe en la cinta de una aplicación de Microsoft Office.  Por ejemplo, la pestaña **Datos** es una pestaña integrada en Excel.  El grupo **Conexiones** es un grupo integrado en la pestaña **Datos**.  
-  
--   Agregue controles personalizados a un grupo personalizado.  
-  
--   Agregue controles personalizados a la vista Backstage.  
-  
- Para obtener más información acerca de cómo personalizar una cinta mediante el elemento **Cinta \(diseñador visual\)**, vea [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md).  
-  
-### Elemento Cinta \(XML\)  
- Use el elemento **Cinta \(XML\)** si desea personalizar la cinta de opciones de un modo que el elemento **Cinta \(diseñador visual\)** no admite.  Use el elemento **Cinta \(XML\)** para personalizar la cinta de las siguientes maneras:  
-  
--   Agregue grupos *integrados* a una pestaña personalizada o integrada.  
-  
--   Agregue controles integrados a un grupo personalizado.  
-  
--   Agregue código personalizado para invalidar los controladores de eventos de los controles integrados.  
-  
--   Personalice la barra de herramientas de acceso rápido.  
-  
--   Comparta una personalización de cinta entre el complemento de VSTO usando un identificador calificado.  
-  
- Para obtener más información acerca de cómo personalizar la cinta mediante el elemento **Cinta \(XML\)**, vea [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
-  
-## Exportar una cinta del diseñador de la cinta al XML de la Cinta  
- Si crea una cinta mediante el diseñador de la cinta y, a continuación, decide que desea personalizar la cinta de maneras que no admite el elemento **Cinta \(diseñador visual\)**, puede exportar la cinta a XML.  
-  
- Visual Studio crea automáticamente un elemento **Cinta \(XML\)** y rellena el archivo XML de la cinta con elementos y atributos para cada control de la cinta.  
-  
- No todas las propiedades que se encuentran en la ventana **Propiedades** del diseñador de la cinta se transfieren al archivo XML de la cinta.  Por ejemplo, Visual Studio no exporta el valor de la propiedad **Imagen** o **Texto**.  Eso es porque debe crear un método de devolución de llamada en el archivo de código de la cinta del proyecto exportado para asignar una imagen o establecer el texto de un control.  Visual Studio no genera automáticamente métodos de devolución de llamada como parte del proceso de exportación.  
-  
- Además, los valores de propiedad predeterminados sin modificar no aparecen en el archivo XML de la cinta resultante.  
-  
- Para obtener más información acerca de cómo exportar la cinta a XML, vea [Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### Actualizar el código  
- Se agrega un nuevo archivo de código de cinta al **Explorador de soluciones**.  Este archivo contiene la clase XML de la cinta.  Debe crear métodos de devolución de llamada en la región `Ribbon Callbacks` de esta clase para controlar las acciones del usuario, como es el hacer clic en un botón.  Mueva el código de los controladores de eventos a estos métodos de devolución de llamada y modifique el código para que funcione con el modelo de programación de extensibilidad de la cinta \(RibbonX\).  Para obtener más información, vea [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
-  
- También debe agregar código a la clase `ThisAddIn`, `ThisWorkbook` o `ThisDocument` que invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML de la cinta a la aplicación de Office.  
-  
- Para obtener más información, consulte [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
-  
-## Agregar varios elementos de cinta a un proyecto  
- Puede agregar más de un elemento de cinta a un mismo proyecto.  Esto resulta útil si desea realizar alguna de las dos tareas indicadas a continuación:  
-  
--   Crear cintas para los *Inspectores* de Outlook.   Para obtener más información, vea [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Add custom groups to a custom or built-in tab.  
   
     > [!NOTE]  
-    >  Un Inspector es una ventana que se abre cuando los usuarios realizan ciertas tareas, como crear un mensaje de correo electrónico.  
+    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
   
--   Seleccione qué cinta se mostrará en tiempo de ejecución.  
+-   Add custom controls to a custom group.  
   
-### Seleccionar qué cintas se mostrarán en tiempo de ejecución.  
- Dado que un proyecto puede contener más de una cinta, puede seleccionar qué cinta se mostrará en tiempo de ejecución.  
+-   Add custom controls to the Backstage View.  
   
- Para seleccionar una cinta para que se muestre en tiempo de ejecución, invalide el método CreateRibbonExtensibilityObject en la clase `ThisAddin`, `ThisWorkbook` o `ThisDocument` de su proyecto y devuelva la cinta que desee mostrar.  En el ejemplo siguiente se comprueba el valor de un campo denominado `myCondition` y se devuelve la cinta adecuada.  
+ For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
+  
+### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
+ Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
+  
+-   Add *built-in* groups to a custom tab or built-in tab.  
+  
+-   Add built-in controls to a custom group.  
+  
+-   Add custom code to override the event handlers of built-in controls.  
+  
+-   Customize the Quick Access Toolbar.  
+  
+-   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
+  
+ For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
+ If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
+  
+ Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
+  
+ Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
+  
+ In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
+  
+ For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+  
+### <a name="updating-the-code"></a>Updating the Code  
+ A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+ You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+  
+ For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
+ You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
+  
+-   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+  
+    > [!NOTE]  
+    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+  
+-   Select which Ribbon to display at run time.  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
+ Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+  
+ To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
   
 > [!NOTE]  
->  La sintaxis usada en este ejemplo devuelve una cinta que se creó mediante el elemento **Cinta \(diseñador visual\)**.  La sintaxis para devolver una cinta creada mediante un elemento **Cinta \(XML\)** es ligeramente diferente.  Para obtener más información sobre cómo devolver un elemento **Cinta \(XML\)**, consulte [XML de la cinta de opciones](../vsto/ribbon-xml.md).  
+>  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- Agregue el código siguiente:  
+ Add the following code:  
   
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/CS/ThisWorkbook.cs#1)]
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/VB/ThisWorkbook.vb#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### Temas relacionados  
+### <a name="related-topics"></a>Related Topics  
   
-|Título|Descripción|  
-|------------|-----------------|  
-|[Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)|Muestra cómo personalizar la cinta de una aplicación de Microsoft Office, agregar un elemento **Cinta \(diseñador visual\)** o **Cinta \(XML\)** a un proyecto de Office.|  
-|[Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)|Describe cómo puede usar el Diseñador de la cinta para agregar pestañas, grupos y controles personalizados a la cinta de una aplicación de Microsoft Office.|  
-|[Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Muestra cómo crear una pestaña personalizada de la cinta mediante el diseñador de la cinta.  Puede usar el diseñador de la cinta para agregar y colocar controles en la pestaña personalizada.|  
-|[Información general sobre el modelo de objetos para la cinta de opciones](../vsto/ribbon-object-model-overview.md)|Proporciona información general sobre el modelo de objetos de diferentes tipos que puede usar para obtener y establecer las propiedades de controles de la cinta en tiempo de ejecución.|  
-|[Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Muestra cómo usar el modelo de objetos de la cinta para actualizar los controles de una cinta después de cargarla en la aplicación de Office.|  
-|[Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Proporciona instrucciones para personalizar la cinta en Microsoft Office Outlook.|  
-|[Personalizar una Cinta para InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Proporciona instrucciones para personalizar la cinta en Microsoft Office InfoPath.|  
-|[Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)|Indica cómo mostrar, ocultar y modificar la cinta y permitir a los usuarios ejecutar el código desde los controles de un panel de tareas personalizado, un panel de acciones o un área del formulario de Outlook.|  
-|[Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Indica cómo cambiar el orden de las pestañas de una cinta.|  
-|[Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)|Muestra cómo agregar grupos y controles a una pestaña integrada.|  
-|[Cómo: Agregar controles en la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Muestra cómo agregar controles al menú que se abre al hacer clic en el **Archivo**.|  
-|[Cómo: Agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Muestra cómo agregar un selector de cuadro de diálogo a cualquier grupo de una cinta.|  
-|[Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Muestra cómo personalizar la cinta de maneras avanzadas exportando la cinta del diseñador al XML de la cinta.|  
-|[XML de la cinta de opciones](../vsto/ribbon-xml.md)|Explica cómo personalizar una cinta mediante el XML de la cinta.|  
-|[Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Muestra cómo crear una pestaña personalizada de la cinta mediante el elemento **Cinta \(XML\)**.|  
+|Title|Description|  
+|-----------|-----------------|  
+|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
+|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
+|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
+|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
+|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
+|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
+|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
+|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
+|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
+|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
+|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
+|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
+|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
   
   

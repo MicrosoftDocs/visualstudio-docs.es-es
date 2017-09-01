@@ -1,42 +1,46 @@
 ---
-title: "C&#243;mo: Eliminar citas mediante programaci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "calendarios [desarrollo de Office en Visual Studio], eliminar citas"
-  - "eliminar citas"
-  - "citas [desarrollo de Office en Visual Studio]"
+title: 'How to: Programmatically Delete Appointments | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- calendars [Office development in Visual Studio], deleting appointments
+- deleting appointments
+- appointments [Office development in Visual Studio]
 ms.assetid: 34bd2d5e-a075-4fbe-809f-479c72fc735a
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bc714bab21bb2495cdb74730dc4bbb948752be23
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Eliminar citas mediante programaci&#243;n
-  Este ejemplo elimina una instancia de una cita periódica. En el ejemplo se supone que la instancia de una cita periódica se produce el 28 de junio de 2006, a las 08:00.  
+# <a name="how-to-programmatically-delete-appointments"></a>How to: Programmatically Delete Appointments
+  This example deletes one instance of a recurring appointment. The example assumes that an instance of a recurring appointment occurs on June 28, 2006, at 08:00.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Ejemplo  
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_RL_DeleteAppointment/CS/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_RL_DeleteAppointment/VB/thisaddin.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)] [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]  
   
-## Vea también  
- [Trabajar con elementos del calendario](../vsto/working-with-calendar-items.md)   
- [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Cómo: Crear citas mediante programación](../vsto/how-to-programmatically-create-appointments.md)   
- [Cómo: Crear un calendario personalizado mediante programación](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Cómo: Crear una convocatoria de reunión mediante programación](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Calendar Items](../vsto/working-with-calendar-items.md)   
+ [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [How to: Programmatically Create Appointments](../vsto/how-to-programmatically-create-appointments.md)   
+ [How to: Programmatically Create a Custom Calendar](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
+ [How to: Programmatically Create a Meeting Request](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

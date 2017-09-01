@@ -1,62 +1,79 @@
 ---
-title: "IDebugDocumentPositionOffset2::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugDocumentPositionOffset2::GetRange"
+title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# IDebugDocumentPositionOffset2::GetRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 501acf49bec28092c7a41fee83f6dfd9fe9d11c9
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Recupera el intervalo para la posición del documento actual.  
+---
+# <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
+Retrieves the range for the current document position.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetRange(  
-   DWORD* pdwBegOffset,  
-   DWORD* pdwEndOffset  
+   DWORD* pdwBegOffset,  
+   DWORD* pdwEndOffset  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetRange(  
-   ref uint pdwBegOffset,  
-   ref uint pdwEndOffset  
+   ref uint pdwBegOffset,  
+   ref uint pdwEndOffset  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pdwBegOffset`  
- \[in, out\]  De para la posición inicial del intervalo.  Establezca este parámetro en un valor nulo si esta información no es necesaria.  
+ [in, out] Offset for the start position of the range. Set this parameter to a null value if this information is not needed.  
   
  `pdwEndOffset`  
- \[in, out\]  De para la posición final del intervalo.  Establezca este parámetro en un valor nulo si esta información no es necesaria.  
+ [in, out] Offset for the end position of the range. Set this parameter to a null value if this information is not needed.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- El intervalo especificado en una posición del documento para un punto de interrupción de ubicación es utilizado por el motor de depuración \(DE\) para buscar a continuación para una instrucción que aporta realmente código.  Por ejemplo, considere el siguiente código:  
+## <a name="remarks"></a>Remarks  
+ The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- La línea 5 no contribuye ningún código al programa que se depura.  Si el depurador que establece el punto de interrupción en la línea 5 desea el OF para buscar hacia delante una cantidad determinada para la primera línea participante código, el depurador especificaría un intervalo que incluye líneas adicionales de candidato donde un punto de interrupción podría correctamente estar.  El A continuación buscaría hacia delante a través de las líneas hasta que encontrar una línea que puede aceptar un punto de interrupción.  
+ Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be correctly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

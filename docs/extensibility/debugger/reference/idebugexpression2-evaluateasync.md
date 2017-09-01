@@ -1,79 +1,96 @@
 ---
-title: "IDebugExpression2::EvaluateAsync | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpression2::EvaluateAsync"
-helpviewer_keywords: 
-  - "IDebugExpression2::EvaluateAsync"
+title: IDebugExpression2::EvaluateAsync | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExpression2::EvaluateAsync
+helpviewer_keywords:
+- IDebugExpression2::EvaluateAsync
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# IDebugExpression2::EvaluateAsync
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 03ece802cc05e269dac26794bbc19e7a06b0679d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Este método evalúa la expresión de forma asincrónica.  
+---
+# <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
+This method evaluates the expression asynchronously.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EvaluateAsync (   
-   EVALFLAGS             dwFlags,  
-   IDebugEventCallback2* pExprCallback  
+```cpp  
+HRESULT EvaluateAsync (   
+   EVALFLAGS             dwFlags,  
+   IDebugEventCallback2* pExprCallback  
 );  
 ```  
   
-```c#  
+```csharp  
 int EvaluateAsync(  
-   enum_EVALFLAGS       dwFlags,   
-   IDebugEventCallback2 pExprCallback  
+   enum_EVALFLAGS       dwFlags,   
+   IDebugEventCallback2 pExprCallback  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dwFlags`  
- \[in\]  Una combinación de marcadores de enumeración de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que controlan la evaluación de la expresión.  
+ [in] A combination of flags from the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration that control expression evaluation.  
   
  `pExprCallback`  
- \[in\]  Este parámetro es siempre un valor NULL.  
+ [in] This parameter is always a null value.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  un código de error típico es:  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns an error code. A typical error code is:  
   
-|Error|Descripción|  
+|Error|Description|  
 |-----------|-----------------|  
-|E\_EVALUATE\_BUSY\_WITH\_EVALUATION|Otra expresión se evalúa actualmente, y la evaluación simultánea de expresión no se admite.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Another expression is currently being evaluated, and simultaneous expression evaluation is not supported.|  
   
-## Comentarios  
- Este método debe volver inmediatamente después de que se haya iniciado la evaluación de la expresión.  Cuando la expresión se evalúa satisfactoriamente, [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) debe enviarse a la devolución de llamada del evento de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) como proporcionado con [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
+## <a name="remarks"></a>Remarks  
+ This method should return immediately after it has started the expression evaluation. When the expression is successfully evaluated, an [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) must be sent to the [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) event callback as supplied through [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) or [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CExpression` que implemente la interfaz de [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CExpression` object that implements the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  
-                                   IDebugEventCallback2* pExprCallback)  
+                                   IDebugEventCallback2* pExprCallback)  
 {  
-    // Set the aborted state to FALSE  
-    // in case the user tries to redo the evaluation after aborting.  
-    m_bAborted = FALSE;  
-    // Post the WM_EVAL_EXPR message in the message queue of the current thread.  
-    // This starts the expression evaluation on a background thread.  
-    PostThreadMessage(GetCurrentThreadId(), WM_EVAL_EXPR, 0, (LPARAM) this);  
-    return S_OK;  
+    // Set the aborted state to FALSE  
+    // in case the user tries to redo the evaluation after aborting.  
+    m_bAborted = FALSE;  
+    // Post the WM_EVAL_EXPR message in the message queue of the current thread.  
+    // This starts the expression evaluation on a background thread.  
+    PostThreadMessage(GetCurrentThreadId(), WM_EVAL_EXPR, 0, (LPARAM) this);  
+    return S_OK;  
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   

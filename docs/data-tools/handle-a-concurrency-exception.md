@@ -1,221 +1,227 @@
 ---
-title: "Tutorial: Controlar una excepci&#243;n de simultaneidad | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "control de simultaneidad, excepciones"
-  - "control de simultaneidad, tutoriales"
-  - "simultaneidad de datos, tutoriales"
-  - "conjuntos de datos [Visual Basic], errores"
-  - "control de excepciones, problemas de simultaneidad"
-  - "actualizar conjuntos de datos, errores"
+title: Handle a concurrency exception | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- concurrency control, exceptions
+- datasets [Visual Basic], errors
+- exception handling, concurrency issues
+- data concurrency, walkthroughs
+- updating datasets, errors
+- concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 23
-caps.handback.revision: 19
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3854ab5d1e79d5e8f63ff8a21ba313a75f36c8da
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Controlar una excepci&#243;n de simultaneidad
-Las excepciones de simultaneidad \(<xref:System.Data.DBConcurrencyException>\) se producen cuando dos usuarios intentan cambiar los mismos datos al mismo tiempo en una base de datos.  En este tutorial creará una aplicación para Windows que ilustra cómo detectar una excepción <xref:System.Data.DBConcurrencyException>, ubicar la fila que produjo el error y una estrategia para controlarlo.  
+# <a name="handle-a-concurrency-exception"></a>Handle a concurrency exception
+Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised when two users attempt to change the same data in a database at the same time. In this walkthrough, you create a Windows application that illustrates how to catch a <xref:System.Data.DBConcurrencyException>, locate the row that caused the error, and learn a strategy for how to handle it.  
   
- Este tutorial le guía a través del proceso siguiente:  
+ This walkthrough takes you through the following process:  
   
-1.  Crear un proyecto nuevo de **aplicación para Windows**.  
+1.  Create a new **Windows Application** project.  
   
-2.  Crear un nuevo conjunto de datos basado en la tabla `Customers` de Northwind.  
+2.  Create a new dataset based on the Northwind `Customers` table.  
   
-3.  Crear un formulario con un control <xref:System.Windows.Forms.DataGridView> para mostrar los datos.  
+3.  Create a form with a <xref:System.Windows.Forms.DataGridView> to display the data.  
   
-4.  Llenar un conjunto de datos con datos de la tabla `Customers` de la base de datos Northwind.  
+4.  Fill a dataset with data from the `Customers` table in the Northwind database.  
   
-5.  Después de rellenar el conjunto de datos, utilizar [Visual Database Tools](http://msdn.microsoft.com/es-es/6b145922-2f00-47db-befc-bf351b4809a1) en Visual Studio para tener acceso directamente a la tabla de datos `Customers` y cambiar un registro.  
+5.  Use the [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio to directly access the `Customers` data table and change a record.  
   
-6.  A continuación, en el formulario, cambiar el mismo registro a un valor diferente, actualizar el conjunto de datos e intentar escribir los cambios en la base de datos, lo que hará que surja un error de simultaneidad.  
+6.  Change the same record to a different value, update the dataset, and attempt to write the changes to the database, which results in a concurrency error being raised.  
   
-7.  Detectar el error y luego mostrar las diferentes versiones del registro, de modo que el usuario pueda determinar si continuar y actualizar la base de datos o cancelar la actualización.  
+7.  Catch the error, then display the different versions of the record, allowing the user to determine whether to continue and update the database, or to cancel the update.  
   
-## Requisitos previos  
- Para completar las tareas de este tutorial, necesitará:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Acceso a la base de datos de ejemplo Northwind con permiso para realizar actualizaciones.  Para obtener más información, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/how-to-install-sample-databases.md).  
-  
-> [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## Crear un proyecto nuevo  
- El primer paso del tutorial es crear una nueva aplicación para Windows.  
-  
-#### Para crear un proyecto de aplicación para Windows nuevo  
-  
-1.  Desde el menú **Archivo**, cree un nuevo proyecto.  
-  
-2.  Seleccione un lenguaje de programación en el panel **Tipos de proyecto**.  
-  
-3.  Seleccione **Aplicación para Windows** en el panel **Plantillas**.  
-  
-4.  Denomine el proyecto `ConcurrencyWalkthrough`y, a continuación, haga clic en **Aceptar**.  
-  
-     Visual Studio agrega el proyecto al **Explorador de soluciones** y muestra un nuevo formulario en el diseñador.  
-  
-## Crear el conjunto de datos Northwind  
- En esta sección se creará un conjunto de datos denominado `NorthwindDataSet`.  
-  
-#### Para crear el conjunto de datos NorthwindDataSet  
-  
-1.  En el menú **Datos**, elija **Agregar nuevo origen de datos**.  
-  
-     Se abrirá el [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png).  
-  
-2.  Seleccione **Base de datos** en la página **Elegir un tipo de origen de datos**.  
-  
-3.  Seleccione una conexión a la base de datos de ejemplo Northwind desde la lista de conexiones disponibles o haga clic en **Nueva conexión** si la conexión no está disponible en la lista de conexiones.  
-  
-    > [!NOTE]
-    >  Si intenta conectar a un archivo de la base de datos local, seleccione **No** cuando se le pregunte si desea agregar el archivo al proyecto.  
-  
-4.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.  
-  
-5.  Expanda el nodo **Tablas** y seleccione la tabla `Customers`.  El nombre predeterminado del conjunto de datos debería ser `NorthwindDataSet`.  
-  
-6.  Haga clic en **Finalizar** para agregar el conjunto de datos al proyecto.  
-  
-## Crear un control DataGridView enlazado a datos  
- En esta sección se creará un control <xref:System.Windows.Forms.DataGridView> arrastrando el elemento **Customers** desde la ventana **Orígenes de datos** hasta el Windows Form.  
-  
-#### Para crear un control DataGridView enlazado a la tabla Customers  
-  
-1.  En el menú **Datos**, elija **Mostrar orígenes de datos** para abrir la **Ventana de orígenes de datos**.  
-  
-2.  En la ventana **Orígenes de datos**, expanda el nodo **NorthwindDataSet** y seleccione la tabla **Customers**.  
-  
-3.  Haga clic en la flecha hacia abajo del nodo de tabla y seleccione **DataGridView** en la lista desplegable.  
-  
-4.  Arrastre la tabla hasta un área vacía de su formulario.  
-  
-     Se agregan un control <xref:System.Windows.Forms.DataGridView> llamado `CustomersDataGridView` y un control <xref:System.Windows.Forms.BindingNavigator> denominado `CustomersBindingNavigator` al formulario enlazado con el <xref:System.Windows.Forms.BindingSource> que, a su vez, está enlazado con la tabla `Customers` del conjunto de datos `NorthwindDataSet`.  
-  
-## Punto de control  
- Ahora es posible comprobar el formulario para asegurarse de que se comporta de la forma prevista.  
-  
-#### Para comprobar el formulario  
-  
-1.  Presione F5 para ejecutar la aplicación.  
-  
-     El formulario aparece con un control <xref:System.Windows.Forms.DataGridView> que está relleno con los datos de la tabla `Customers`.  
-  
-2.  En el menú **Depurar**, elija **Detener depuración**.  
-  
-## Controlar errores de simultaneidad  
- La manera de controlar errores dependerá de los fines concretos para los que diseñe la aplicación.  Para este tutorial, después de que se produzca una infracción de simultaneidad, se utilizará la estrategia siguiente como ejemplo de control de errores de simultaneidad:  
-  
- La aplicación presentará al usuario tres versiones del registro:  
-  
--   El registro actual en la base de datos.  
-  
--   El registro original cargado en el conjunto de datos.  
-  
--   Los cambios propuestos en el conjunto de datos.  
-  
- Entonces, el usuario puede sobrescribir la base de datos con la versión propuesta o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.  
-  
-#### Para habilitar el control de errores de simultaneidad  
-  
-1.  Crear un controlador de errores personalizado.  
-  
-2.  Presentar opciones al usuario.  
-  
-3.  Procesar la respuesta del usuario.  
-  
-4.  Reenviar la actualización o reestablecer los datos en el conjunto de datos.  
-  
-### Agregar Código para controlar la excepción de simultaneidad  
- Cuando intenta realizar una actualización pero se produce una excepción, puede utilizar la información que proporciona la excepción.  
-  
- En esta sección agregará código que intentará actualizar la base de datos y controlará cualquier excepción <xref:System.Data.DBConcurrencyException> que se produzca, además de cualquier otra excepción.  
+-   Access to the Northwind sample database with permission to perform updates. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
 > [!NOTE]
->  Los métodos `CreateMessage` y `ProcessDialogResults` se agregarán más adelante en este tutorial.  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition that you're using. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-##### Para agregar control de errores para el error de simultaneidad  
+## <a name="create-a-new-project"></a>Create a new project  
+ You begin your walkthrough by creating a new Windows application.  
   
-1.  Agregue el código siguiente al método `Form1_Load`:  
+#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows application project  
   
-     [!code-cs[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]  
+1.  On the **File** menu, create a new project.  
   
-2.  Reemplace el método `CustomersBindingNavigatorSaveItem_Click` para llamar al método `UpdateDatabase` de manera que tenga el siguiente aspecto:  
+2.  In the **Project Types** pane, select a programming language.  
   
-     [!code-cs[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
+3.  In the **Templates** pane, select **Windows Application**.  
   
-### Presentar opciones al usuario  
- El código que acaba de escribir llama al procedimiento `CreateMessage` para mostrar información de error al usuario.  En este tutorial, se usará un cuadro de mensaje para mostrar al usuario las distintas versiones del registro y permitirle elegir si desea sobrescribir el registro con los cambios o cancelar la edición.  Cuando el usuario selecciona una opción \(hace clic en un botón\) en el cuadro de mensaje, la respuesta se pasa al método `ProcessDialogResult`.  
+4.  Name the project `ConcurrencyWalkthrough`, and then select **OK**.  
   
-##### Para crear el mensaje que se mostrará al usuario  
+     Visual Studio adds the project to **Solution Explorer** and displays a new form in the designer.  
   
--   Cree el mensaje agregando el código siguiente en el **Editor de código**.  Escriba este código debajo del método `UpdateDatabase`.  
+## <a name="create-the-northwind-dataset"></a>Create the Northwind dataset  
+ In this section, you create a dataset named `NorthwindDataSet`.  
   
-     [!code-cs[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]  
+#### <a name="to-create-the-northwinddataset"></a>To create the NorthwindDataSet  
   
-### Procesar la respuesta del usuario  
- También necesitará código para procesar la respuesta del usuario al cuadro de mensaje.  Las opciones son sobrescribir el registro actual en la base de datos con el cambio propuesto o abandonar los cambios locales y actualizar la tabla de datos con el registro actual de la base de datos.  Si el usuario elige sí, se llama al método <xref:System.Data.DataTable.Merge%2A> con el argumento *preserveChanges* establecido en `true`.  Esto hará la actualización llegue a efectuarse, ya que ahora la versión original del registro coincide con el registro de la base de datos.  
+1.  On the **Data** menu, choose **Add New Data source**.  
   
-##### Para procesar la respuesta del usuario en el cuadro de mensaje  
+     The [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) opens.  
   
--   Agregue el código siguiente debajo del código agregado en la sección anterior.  
+2.  On the **Choose a Data Source Type** screen, select **Database**.  
   
-     [!code-cs[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]  
-  
-## Pruebas  
- Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista.  Para simular una infracción de la simultaneidad necesita cambiar los datos en la base de datos después de rellenar el NorthwindDataSet.  
-  
-#### Para comprobar el formulario  
-  
-1.  Presione F5 para ejecutar la aplicación.  
-  
-2.  Después de que el formulario aparezca, ejecútelo y cambie al IDE de Visual Studio.  
-  
-3.  En el menú **Ver**, elija **Explorador de servidores**.  
-  
-4.  En el **Explorador de servidores**, expanda la conexión que utiliza la aplicación y, a continuación, expanda el nodo **Tablas**.  
-  
-5.  Haga clic con el botón secundario del mouse en la tabla **Customers** y seleccione **Mostrar datos de tabla**.  
-  
-6.  En el primer registro \(`ALFKI`\), cambie el valor de `ContactName` a `Maria Anders2`.  
+3.  Select a connection to the Northwind sample database from the list of available connections. If the connection is not available in the list of connections, select **New Connection**  
   
     > [!NOTE]
-    >  Navegue hasta una fila diferente para confirmar el cambio.  
+    >  If you are connecting to a local database file, select **No** when asked if you would you like to add the file to your project.  
   
-7.  Cambie al formulario en ejecución de `ConcurrencyWalkthrough`.  
+4.  On the **Save connection string to the application configuration file** screen, select **Next**.  
   
-8.  En el primer registro del formulario \(`ALFKI`\), cambie el valor de `ContactName` a `Maria Anders1`.  
+5.  Expand the **Tables** node and select the `Customers` table. The default name for the dataset should be `NorthwindDataSet`.  
   
-9. Haga clic en el botón **Guardar**.  
+6.  Select **Finish** to add the dataset to the project.  
   
-     Se produce el error de simultaneidad y aparece el cuadro de mensaje.  
+## <a name="create-a-data-bound-datagridview-control"></a>Create a data-bound DataGridView control  
+ In this section, you create a <xref:System.Windows.Forms.DataGridView> by dragging the **Customers** item from the **Data Sources** window onto your Windows Form.  
   
-10. Al hacer clic en **No** se cancela la actualización y se actualiza el conjunto de datos con los valores existentes en ese momento en la base de datos, mientras que al hacer clic en **Sí**, se escribe en la base de datos el valor propuesto.  
+#### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>To create a DataGridView control that is bound to the Customers table  
   
-## Vea también  
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+1.  On the **Data** menu, choose **Show Data Sources** to open the **Data Sources Window**.  
+  
+2.  In the **Data Sources** window, expand the **NorthwindDataSet** node, and then select the **Customers** table.  
+  
+3.  Select the down arrow on the table node, and then select **DataGridView** in the drop-down list.  
+  
+4.  Drag the table onto an empty area of your form.  
+  
+     A <xref:System.Windows.Forms.DataGridView> control named `CustomersDataGridView` and a <xref:System.Windows.Forms.BindingNavigator> named `CustomersBindingNavigator` are added to the form that's bound to the <xref:System.Windows.Forms.BindingSource>.This, is in, is turn bound to the `Customers` table in the `NorthwindDataSet`.  
+  
+## <a name="test-the-form"></a>Test the form  
+ You can now test the form to make sure it behaves as expected up to this point.  
+  
+#### <a name="to-test-the-form"></a>To test the form  
+  
+1.  Select **F5** to run the application  
+  
+     The form appears with a <xref:System.Windows.Forms.DataGridView> control on it that's filled with data from the `Customers` table.  
+  
+2.  On the **Debug** menu, select **Stop Debugging**.  
+  
+## <a name="handle-concurrency-errors"></a>Handle concurrency errors  
+ How you handle errors depends on the specific business rules that govern your application. For this walkthrough, we use the following strategy as an example for how to handle the concurrency error.  
+  
+ The application presents the user with three versions of the record:  
+  
+-   The current record in the database  
+  
+-   The original record that's loaded into the dataset  
+  
+-   The proposed changes in the dataset  
+  
+ The user is then able to either overwrite the database with the proposed version, or cancel the update and refresh the dataset with the new values from the database.  
+  
+#### <a name="to-enable-the-handling-of-concurrency-errors"></a>To enable the handling of concurrency errors  
+  
+1.  Create a custom error handler.  
+  
+2.  Display choices to the user.  
+  
+3.  Process the user's response.  
+  
+4.  Resend the update, or reset the data in the dataset.  
+  
+### <a name="add-code-to-handle-the-concurrency-exception"></a>Add code to handle the concurrency exception  
+ When you attempt to perform an update and an exception gets raised, you generally want to do something with the information that's provided by the raised exception.  
+  
+ In this section, you add code that  attempts to update the database.You also handle any <xref:System.Data.DBConcurrencyException> that might get raised, as well as any other exceptions.  
+  
+> [!NOTE]
+>  The `CreateMessage` and `ProcessDialogResults` methods will be added later in this walkthrough.  
+  
+##### <a name="to-add-error-handling-for-the-concurrency-error"></a>To add error handling for the concurrency error  
+  
+1.  Add the following code below the `Form1_Load` method:  
+  
+     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]  [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]  
+  
+2.  Replace the `CustomersBindingNavigatorSaveItem_Click` method to call the `UpdateDatabase` method so it looks like the following:  
+  
+     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]  [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
+  
+### <a name="display-choices-to-the-user"></a>Display choices to the user  
+ The code you just wrote calls the `CreateMessage` procedure to display error information to the user. For this walkthrough, you use a message box to display the different versions of the record to the user.This enables the user to choose whether to overwrite the record with the changes or cancel the edit. Once the user selects an option (clicks a button) on the message box, the response is passed to the `ProcessDialogResult` method.  
+  
+##### <a name="to-create-the-message-to-display-to-the-user"></a>To create the message to display to the user  
+  
+-   Create the message by adding the following code to the **Code Editor**. Enter this code below the `UpdateDatabase` method.  
+  
+     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]  [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]  
+  
+### <a name="process-the-users-response"></a>Process the user's response  
+ You also need code to process the user's response to the message box. The options are either to overwrite the current record in the database with the proposed change, or abandon the local changes and refresh the data table with the record that's currently in the database. If the user chooses yes, the <xref:System.Data.DataTable.Merge%2A> method is called with the *preserveChanges* argument set to `true`. This causes the update attempt to be successful, because the original version of the record now matches the record in the database.  
+  
+##### <a name="to-process-the-user-input-from-the-message-box"></a>To process the user input from the message box  
+  
+-   Add the following code below the code that was added in the previous section.  
+  
+     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]  [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]  
+  
+## <a name="test-the-form"></a>Test the form  
+ You can now test the form to make sure it behaves as expected. To simulate a concurrency violation you need to change data in the database after filling the NorthwindDataSet.  
+  
+#### <a name="to-test-the-form"></a>To test the form  
+  
+1.  Select **F5** to run the application.  
+  
+2.  After the form appears, leave it running and switch to the Visual Studio IDE.  
+  
+3.  On the **View** menu, choose **Server Explorer**.  
+  
+4.  In **Server Explorer**, expand the connection your application is using, and then expand the **Tables** node.  
+  
+5.  Right-click the **Customers** table, and then select **Show Table Data**.  
+  
+6.  In the first record (`ALFKI`) change `ContactName` to `Maria Anders2`.  
+  
+    > [!NOTE]
+    >  Navigate to a different row to commit the change.  
+  
+7.  Switch to the `ConcurrencyWalkthrough`'s running form.  
+  
+8.  In the first record on the form (`ALFKI`), change`ContactName` to `Maria Anders1`.  
+  
+9. Select the **Save** button.  
+  
+     The concurrency error is raised, and the message box appears.  
+  
+10. Selecting **No** cancels the update and updates the dataset with the values that are currently in the database. Selecting **Yes** writes the proposed value to the database.  
+  
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+

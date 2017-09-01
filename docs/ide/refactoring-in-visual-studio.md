@@ -35,8 +35,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/19/2017
 
 ---
-# Refactorización en Visual Studio
-<a id="refactoring-in-visual-studio" class="xliff"></a>
+# <a name="refactoring-in-visual-studio"></a>Refactorización en Visual Studio
 La refactorización es el proceso que consiste en modificar el código sin que cambie su comportamiento para que sea más fácil de mantener, entender y ampliar. Algunas *refactorizaciones* comunes son:  
   
 1.  dividir las funciones largas en otras más pequeñas  
@@ -49,24 +48,19 @@ La refactorización es el proceso que consiste en modificar el código sin que c
   
  Dado que la lógica de refactorización está estrechamente relacionada con la sintaxis del lenguaje, cada servicio de lenguaje de Visual Studio proporciona sus propias funciones de refactorización. Para obtener más información, consulte las siguientes páginas:  
   
-### Refactorización en C#
-<a id="refactoring-in-c" class="xliff"></a> #
+### <a name="refactoring-in-c"></a>Refactorización en C# #
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)  
   
-### Refactorización en Visual Basic
-<a id="refactoring-in-visual-basic" class="xliff"></a>  
+### <a name="refactoring-in-visual-basic"></a>Refactorización en Visual Basic  
  [Refactorización (Visual Basic)](../vb-ide/refactoring-vb.md)  
   
-### Refactorización en C++
-<a id="refactoring-in-c" class="xliff"></a>  
+### <a name="refactoring-in-c"></a>Refactorización en C++  
  [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
   
-### Refactorización en F#
-<a id="refactoring-in-f" class="xliff"></a> #
+### <a name="refactoring-in-f"></a>Refactorización en F# #
  [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), una extensión de Visual Studio de terceros, proporciona compatibilidad de refactorización con F#.  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)   
  [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)  
  [Vista previa de cambios](../ide/preview-changes.md)

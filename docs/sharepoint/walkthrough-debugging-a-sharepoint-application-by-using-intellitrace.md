@@ -1,83 +1,88 @@
 ---
-title: "Tutorial: Depurar una aplicaci&#243;n de SharePoint mediante IntelliTrace"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "IntelliTrace [desarrollo de SharePoint en Visual Studio]"
-  - "recolector de datos independiente"
-  - "Desarrollo de SharePoint en Visual Studio, IntelliTrace"
-  - "recolector de datos"
-  - "IntelliTrace"
+title: 'Walkthrough: Debugging a SharePoint Application by Using IntelliTrace | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- IntelliTrace [SharePoint development in Visual Studio]
+- standalone data collector
+- SharePoint development in Visual Studio, IntelliTrace
+- data collector
+- IntelliTrace
 ms.assetid: 4bd80d2f-f680-4bf4-81c3-f14e8185f6a4
 caps.latest.revision: 27
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 26
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8cc2fa18b3f6e81acc3ab65894ea5d293462f6a8
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
+
 ---
-# Tutorial: Depurar una aplicaci&#243;n de SharePoint mediante IntelliTrace
-  Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente.  Los depuradores tradicionales solo proporcionan una instantánea de la solución en el momento actual.  Sin embargo, puede usar IntelliTrace para revisar los eventos pasados que se produjeron en la solución y el contexto en los que se produjeron, así como navegar hasta el código.  
+# <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Walkthrough: Debugging a SharePoint Application by Using IntelliTrace
+  By using IntelliTrace, you can more easily debug SharePoint solutions. Traditional debuggers give you only a snapshot of a solution at the current moment. However, you can use IntelliTrace to review past events that occurred in your solution and the context in which they occurred and navigate to the code.  
   
- En este tutorial se muestra cómo depurar un proyecto de SharePoint 2010 o de SharePoint 2013 en Visual Studio Ultimate mediante Microsoft Monitoring Agent para recopilar datos de IntelliTrace de aplicaciones implementadas.  Para analizar estos datos, se debe utilizar Visual Studio Ultimate.  Este proyecto incorpora un receptor de características que, cuando se activa la característica, agrega una tarea a la lista de tareas y un anuncio a la lista de anuncios.  Cuando la característica está desactivada, la tarea se marca como completada y se agrega un segundo anuncio a la lista de anuncios.  Sin embargo, el procedimiento contiene un error lógico que evita que el proyecto se ejecute correctamente.  Mediante IntelliTrace, se puede localizar y corregir el error.  
+ This walkthrough demonstrates how to debug a SharePoint 2010 or SharePoint 2013 project in Visual Studio Ultimate by using Microsoft Monitoring Agent to collect IntelliTrace data from deployed applications. To analyze that data, you must use Visual Studio Ultimate. This project incorporates a feature receiver that, when the feature is activated, adds a task to the Task list and an announcement to the Announcements list. When the feature is deactivated, the task is marked as completed, and a second announcement is added to the Announcements list. However, the procedure contains a logical error that prevents the project from running correctly. By using IntelliTrace, you'll locate and correct the error.  
   
- **Se aplica a:** la información en este tema se aplica a las soluciones de SharePoint 2010 y a SharePoint 2013 creadas en Visual Studio.  
+ **Applies to:** The information in this topic applies to SharePoint 2010 and SharePoint 2013 solutions that were created in Visual Studio.  
   
- En este tutorial se muestran las tareas siguientes:  
+ This walkthrough illustrates the following tasks:  
   
--   [Crear un receptor de características](#BKMK_CreateReceiver)  
+-   [Create a Feature Receiver](#BKMK_CreateReceiver)  
   
--   [Agregar código al receptor de características](#BKMK_AddCode)  
+-   [Add Code to the Feature Receiver](#BKMK_AddCode)  
   
--   [Probar el proyecto](#BKMK_Test1)  
+-   [Test the Project](#BKMK_Test1)  
   
--   [Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)  
+-   [Collect IntelliTrace Data by using Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)  
   
--   [Depurar y corregir la solución de SharePoint](#BKMK_DebugSolution)  
+-   [Debug and Fix the SharePoint Solution](#BKMK_DebugSolution)  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Requisitos previos  
- Necesita los componentes siguientes para completar este tutorial:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   Ediciones compatibles de Windows y SharePoint.  Vea [Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows and SharePoint. See [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio Ultimate.  
   
-##  <a name="BKMK_CreateReceiver"></a> Crear un receptor de características  
- Primero se debe crear un proyecto de SharePoint vacío que tiene un receptor de características.  
+##  <a name="BKMK_CreateReceiver"></a> Create a Feature Receiver  
+ First, you create an empty SharePoint project that has a feature receiver.  
   
-#### Para crear un receptor de características  
+#### <a name="to-create-a-feature-receiver"></a>To create a feature receiver  
   
-1.  Cree el proyecto de solución de SharePoint 2010 o SharePoint 2013 y asígnele el nombre IntelliTraceTest.  
+1.  Create a SharePoint 2010 or SharePoint 2013 solution project, and name it **IntelliTraceTest**.  
   
-     Aparece el **Asistente para personalización de SharePoint**, en el que puede especificar el sitio de SharePoint para el proyecto y el nivel de confianza de la solución.  
+     The **SharePoint Customization Wizard** appears, in which you can specify both the SharePoint site for your project and the trust level of the solution.  
   
-2.  Elija el botón de opción de **Implementar como solución de granja de servidores** y después elija el botón de **Finalizar**.  
+2.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button.  
   
-     IntelliTrace sólo funciona en soluciones de granja.  
+     IntelliTrace operates only on farm solutions.  
   
-3.  En el **Explorador de soluciones**, abra el menú contextual para el nodo **Características** y, a continuación, elija **Agregar característica**.  
+3.  In **Solution Explorer**, open the shortcut menu for the **Features** node, and then choose **Add Feature**.  
   
-     Aparece Feature1.feature.  
+     Feature1.feature appears.  
   
-4.  Abra el menú contextual para Feature1.feature y, a continuación, elija **Agregar receptor de eventos** para agregar un módulo de código a la característica.  
+4.  Open the shortcut menu for Feature1.feature, and then choose **Add Event Receiver** to add a code module to the feature.  
   
-##  <a name="BKMK_AddCode"></a> Agregar código al receptor de características  
- Luego, agregue el código a dos métodos del receptor de características: `FeatureActivated` y `FeatureDeactivating`.  Estos métodos se activan cada vez que una característica se activa o se desactiva en SharePoint, respectivamente.  
+##  <a name="BKMK_AddCode"></a> Add Code to the Feature Receiver  
+ Next, add code to two methods in the feature receiver: `FeatureActivated` and `FeatureDeactivating`. These methods trigger whenever a feature is activated or deactivated in SharePoint, respectively.  
   
-#### Para agregar código al receptor de características  
+#### <a name="to-add-code-to-the-feature-receiver"></a>To add code to the feature receiver  
   
-1.  En la parte superior de la clase `Feature1EventReceiver`, agregue el siguiente código, que declara las variables que especifican el sitio y subsitio de SharePoint:  
+1.  At the top of the `Feature1EventReceiver` class, add the following code, which declares variables that specify the SharePoint site and subsite:  
   
     ```vb  
     ' SharePoint site and subsite.  
@@ -91,7 +96,7 @@ caps.handback.revision: 26
     private string webUrl = "/";  
     ```  
   
-2.  Reemplace el método `FeatureActivated` con el código siguiente:  
+2.  Replace the `FeatureActivated` method with the following code:  
   
     ```vb  
     Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)  
@@ -157,7 +162,7 @@ caps.handback.revision: 26
     }  
     ```  
   
-3.  Reemplace el método `FeatureDeactivating` con el código siguiente:  
+3.  Replace the `FeatureDeactivating` method with the following code:  
   
     ```vb  
     Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)  
@@ -247,94 +252,94 @@ caps.handback.revision: 26
     }  
     ```  
   
-##  <a name="BKMK_Test1"></a> Probar el proyecto  
- Ahora que el código se agrega al receptor de características y el recopilador de datos se está ejecutando, implemente y ejecute la solución de SharePoint para probar si funciona correctamente.  
+##  <a name="BKMK_Test1"></a> Test the Project  
+ Now that the code is added to the feature receiver and the data collector is running, deploy and run the SharePoint solution to test whether it works correctly.  
   
 > [!IMPORTANT]  
->  Para este ejemplo, se produce un error en el controlador de eventos FeatureDeactivating.  Más adelante en este tutorial, encontrará este error mediante el archivo .iTrace que creó el recopilador de datos.  
+>  For this example, an error is thrown in the FeatureDeactivating event handler. Later in this walkthrough, you locate this error by using the .iTrace file that the data collector created.  
   
-#### Para probar el proyecto  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  Implemente la solución de SharePoint y vuelva a abrir el sitio de SharePoint en un explorador.  
+1.  Deploy the solution to SharePoint, and then open the SharePoint site in a browser.  
   
-     La característica se activa automáticamente, lo que hace que el receptor de características agregue un anuncio y una tarea.  
+     The feature automatically activates, causing its feature receiver to add an announcement and a task.  
   
-2.  Muestre el contenido de las listas Anuncios y Tareas.  
+2.  Display the contents of the Announcements and Tasks lists.  
   
-     La lista Anuncios debe tener un nuevo anuncio denominado **Característica activada: IntelliTraceTest\_Feature1** y la lista de Tareas debe tener una nueva tarea denominada **Desactivar característica: IntelliTraceTest\_Feature1**.  Si falta cualquiera de estos elementos, compruebe si la característica está activada.  Si no está activada, actívela.  
+     The Announcements list should have a new announcement that's named **Activated feature: IntelliTraceTest_Feature1**, and the Tasks list should have a new task that's named **Deactivate feature: IntelliTraceTest_Feature1**. If either of these items is missing, verify whether the feature is activated. If it isn't activated, activate it.  
   
-3.  Desactive la característica siguiendo estos pasos:  
+3.  Deactivate the feature by performing the following steps:  
   
-    1.  En el menú **Acciones del sitio** en SharePoint, elija **Configuración del sitio**.  
+    1.  On the **Site Actions** menu in SharePoint, choose **Site Settings**.  
   
-    2.  En **Acciones del sitio**, elija el vínculo **Administrar las características del sitio**.  
+    2.  Under **Site Actions**, choose the **Manage site features** link.  
   
-    3.  Junto a **IntelliTraceTest Feature1**, elija el botón **Desactivar**.  
+    3.  Next to **IntelliTraceTest Feature1**, choose the **Deactivate** button.  
   
-    4.  En la página Advertencia, elija el vínculo **Desactivar esta característica**.  
+    4.  On the Warning page, choose the **Deactivate this feature** link.  
   
-     El controlador de eventos FeatureDeactivating\(\) produce un error.  
+     The FeatureDeactivating() event handler throws an error.  
   
-##  <a name="BKMK_CollectDiagnosticData"></a> Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent  
- Si instala Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, puede depurar las soluciones de SharePoint mediante el uso de datos que son más específicos que la información genérica que devuelve IntelliTrace.  El agente funciona fuera de Visual Studio mediante cmdlets de PowerShell para capturar información de depuración mientras se ejecuta la solución de SharePoint.  
+##  <a name="BKMK_CollectDiagnosticData"></a> Collect IntelliTrace Data by using Microsoft Monitoring Agent  
+ If you install Microsoft Monitoring Agent on the system that's running SharePoint, you can debug SharePoint solutions by using data that's more specific than the generic information that IntelliTrace returns. The agent works outside of Visual Studio by using PowerShell cmdlets to capture debug information while your SharePoint solution runs.  
   
 > [!NOTE]  
->  La información de configuración de esta sección es específica de este ejemplo.  Para obtener más información sobre otras opciones de configuración, vea [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+>  The configuration information in this section is specific to this example. For more information about other configuration options, see [Using the IntelliTrace stand-alone collector](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
   
-1.  En el equipo que está ejecutando SharePoint, [configure Microsoft Monitoring Agent y comience a supervisar la solución](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+1.  On the computer that's running SharePoint, [set up Microsoft Monitoring Agent and start to monitor your solution](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
   
-2.  Desactive la característica:  
+2.  Deactivate the feature:  
   
-    1.  En el menú **Acciones del sitio** en SharePoint, elija **Configuración del sitio**.  
+    1.  On the **Site Actions** menu in SharePoint, choose **Site Settings**.  
   
-    2.  En **Acciones del sitio**, elija el vínculo **Administrar las características del sitio**.  
+    2.  Under **Site Actions**, choose the **Manage site features** link.  
   
-    3.  Junto a **IntelliTraceTest Feature1**, elija el botón **Desactivar**.  
+    3.  Next to **IntelliTraceTest Feature1**, choose the **Deactivate** button.  
   
-    4.  En la página Advertencia, elija el vínculo **Desactivar esta característica**.  
+    4.  On the Warning page, choose the **Deactivate this feature** link.  
   
-     Se produce un error; en este caso, se debe al error que se produce en el controlador de eventos FeatureDeactivating\(\).  
+     An error occurs (in this case, because of the error thrown in the FeatureDeactivating() event handler).  
   
-3.  En la ventana PowerShell, ejecute el comando [Stop\-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) para crear el archivo .iTrace, detenga la supervisión y reinicie la solución de SharePoint.  
+3.  In the PowerShell window, run the [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) command to create the .iTrace file, stop monitoring, and restart your SharePoint solution.  
   
-     **Stop\-WebApplicationMonitoring**  *"\<SharePointSite\>\\\<SharePointAppName\>"*  
+     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*  
   
-##  <a name="BKMK_DebugSolution"></a> Depurar y corregir la solución de SharePoint  
- Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para buscar y corregir el error en la solución de SharePoint.  
+##  <a name="BKMK_DebugSolution"></a> Debug and Fix the SharePoint Solution  
+ Now you can view the IntelliTrace log file in Visual Studio to find and fix the error in the SharePoint solution.  
   
-#### Para depurar y corregir la solución de SharePoint  
+#### <a name="to-debug-and-fix-the-sharepoint-solution"></a>To debug and fix the SharePoint solution  
   
-1.  En la carpeta del \\IntelliTraceLogs, abra el archivo .iTrace en Visual Studio.  
+1.  In the \IntelliTraceLogs folder, open the .iTrace file in Visual Studio.  
   
-     Aparece la página **Resumen de IntelliTrace**.  Puesto que el error no se ha controlado, aparece un identificador de correlación de SharePoint \(un GUID\) en el área de la excepción no controlada de la sección **Análisis**.  Elija el botón **Pila de llamadas** si desea ver la pila de llamadas donde se produjo el error.  
+     The **IntelliTrace Summary** page appears. Because the error wasn't handled, a SharePoint correlation ID (a GUID) appears in the unhandled exception area of the **Analysis** section. Choose the **Call Stack** button if you want to view the call stack where the error occurred.  
   
-2.  Elija el botón **Depurar excepción**.  
+2.  Choose the **Debug Exception** button.  
   
-     Si se le solicita, cargue los archivos de símbolos.  En la ventana **IntelliTrace**, la excepción resalta un mensaje advirtiendo que se produjo un error grave.  
+     If prompted, load symbol files. In the **IntelliTrace** window, the exception is highlighted as "Thrown: Serious error occurred!".  
   
-     En la ventana IntelliTrace, elija la excepción para mostrar el código que produjo un error.  
+     In the IntelliTrace window, choose the exception to display the code that failed.  
   
-3.  Corrija el error abriendo la solución de SharePoint y después marque como comentario o quite la instrucción **throw** en la parte superior del procedimiento de FeatureDeactivating\(\).  
+3.  Fix the error by opening the SharePoint solution and then either commenting out or removing the **throw** statement at the top of the FeatureDeactivating() procedure.  
   
-4.  Recompile la solución en Visual Studio y, a continuación, vuelva a implementarla en SharePoint.  
+4.  Rebuild the solution in Visual Studio, and then redeploy it to SharePoint.  
   
-5.  Desactive la característica siguiendo estos pasos:  
+5.  Deactivate the feature by performing the following steps:  
   
-    1.  En el menú **Acciones del sitio** en SharePoint, elija **Configuración del sitio**.  
+    1.  On the **Site Actions** menu in SharePoint, choose **Site Settings**.  
   
-    2.  En **Acciones del sitio**, elija el vínculo **Administrar las características del sitio**.  
+    2.  Under **Site Actions**, choose the **Manage site features** link.  
   
-    3.  Junto a **IntelliTraceTest Feature1**, elija el botón **Desactivar**.  
+    3.  Next to **IntelliTraceTest Feature1**, choose the **Deactivate** button.  
   
-    4.  En la página Advertencia, elija el vínculo **Desactivar esta característica**.  
+    4.  On the Warning page, choose the **Deactivate this feature** link.  
   
-6.  Abra la lista Tareas y compruebe que el valor **Estado** de la tarea Desactivada es "Completada" y el valor **% completado** es 100 %.  
+6.  Open the Task list, and verify that the **Status** value of the Deactivate task is "Completed" and its **% Complete** value is 100%.  
   
-     El código se ejecuta ahora correctamente.  
+     The code now runs properly.  
   
-## Vea también  
- [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)   
- [Uso de IntelliTrace](../debugger/intellitrace.md)   
- [Tutorial: Comprobar código de SharePoint mediante pruebas unitarias](http://msdn.microsoft.com/es-es/3d2c4aaf-3cb5-4825-b21b-f10222abe818)  
+## <a name="see-also"></a>See Also  
+ [Verifying and Debugging SharePoint Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)   
+ [IntelliTrace](/visualstudio/debugger/intellitrace)   
+ [NIB: Walkthrough: Verify SharePoint Code by Using Unit Tests](http://msdn.microsoft.com/en-us/3d2c4aaf-3cb5-4825-b21b-f10222abe818)  
   
   

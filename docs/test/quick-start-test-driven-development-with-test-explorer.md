@@ -1,5 +1,5 @@
 ---
-title: "Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas | Microsoft Docs"
+title: 'Quick Start: Test Driven Development with Test Explorer | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,79 +27,79 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2efe98a5b421fbffbe2a39cc69a5e0acf06af7db
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af65c4f502cd36d00b031784dcda275abec3630a
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
-Es recomendable crear pruebas unitarias para hacer que el código funcione correctamente a través de varios pasos incrementales de desarrollo. Hay varios marcos que se pueden utilizar para escribir pruebas unitarias, incluidos algunos desarrollados por terceros. Algunos marcos de prueba están especializados para pruebas en plataformas o lenguas diferentes. El Explorador de pruebas proporciona una sola interfaz para las pruebas unitarias en cualquiera de estos marcos. Hay adaptadores disponibles para los marcos más comunes y es posible escribir adaptadores propios para otros marcos.  
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Quick Start: Test Driven Development with Test Explorer
+We recommend that you create unit tests to help keep your code working correctly through many incremental steps of development. There are several frameworks that you can use to write unit tests, including some developed by third parties. Some test frameworks are   specialized to testing in different languages or platforms. Test Explorer provides a single interface for unit tests in any of these frameworks. Adapters are available for the most commonly-used frameworks, and you can write your own adapters for other frameworks.  
   
- El Explorador de pruebas reemplaza las ventanas de prueba unitaria que se encontraban en versiones anteriores de Visual Studio. Las ventajas incluyen:  
+ Test Explorer supersedes the unit test windows found in earlier editions of Visual Studio. Its benefits include:  
   
--   Ejecutar pruebas de .NET, no administradas, bases de datos y otros tipos utilizando una única interfaz.  
+-   Run .NET, unmanaged, database and other kinds of tests using a single interface.  
   
--   Usar el marco de pruebas unitarias que quiera, como NUnit o MSTest.  
+-   Use the unit test framework of your choice, such as NUnit or MSTest frameworks.  
   
--   Ver en una ventana toda la información necesaria.  
+-   See in one window all the information that you need.  
   
-## <a name="using-test-explorer"></a>Usar el Explorador de pruebas  
- ![Explorador de pruebas unitarias con el botón Ejecutar todas](~/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+## <a name="using-test-explorer"></a>Using Test Explorer  
+ ![Unit Test Explorer showing Run All button](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
-#### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas  
+#### <a name="to-run-unit-tests-by-using-test-explorer"></a>To Run Unit Tests by using Test Explorer  
   
-1.  Crear pruebas unitarias que utilicen los marcos de prueba de su elección.  
+1.  Create unit tests that use the test frameworks of your choice.  
   
-     Por ejemplo, para crear una prueba que utilice el marco de trabajo de MSTest:  
+     For example, to create a test that uses the MSTest Framework:  
   
-    1.  Cree un proyecto de prueba.  
+    1.  Create a test project.  
   
-         En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual Basic**, **Visual C#**o **Visual C++**y, a continuación, elija **Prueba**.  
+         In the **New Project** dialog box, expand **Visual Basic**, **Visual C#**, or **Visual C++**, and then choose **Test**.  
   
-         Seleccione **Proyecto de prueba unitaria**.  
+         Select **Unit Test Project**.  
   
-    2.  Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.  
+    2.  Write each unit test as a method. Prefix each test method with the `[TestMethod]` attribute.  
   
-2.  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
+2.  If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
   
-3.  En la barra de menús, elija **Prueba**, **Ejecutar pruebas unitarias**, **Todas las pruebas**.  
+3.  On the menu bar, choose **Test**, **Run Unit Tests**, **All Tests**.  
   
-     La solución se compila y se ejecutan las pruebas.  
+     The solution builds and the tests run.  
   
-     Se abre el Explorador de pruebas y se muestra un resumen de los resultados.  
+     Test Explorer opens and displays a summary of the results.  
   
- **Para ver una lista completa de pruebas:** elija **Mostrar todo** en cualquier categoría.  
+ **To see a full list of tests:** Choose **Show All** in any category.  
   
- **Para ver los detalles de un resultado de pruebas:** seleccione la prueba en el Explorador de pruebas para ver detalles tales como los mensajes de excepción en el panel de detalles.  
+ **To see the details of a test result:** Select the test in Test Explorer to view details such as exception messages in the details pane.  
   
- **Para navegar hasta el código de una prueba:** haga doble clic en la prueba en el Explorador de pruebas o elija **Abrir prueba** en el acceso directo.  
+ **To navigate to the code of a test:** Double-click the test in Test Explorer, or choose **Open Test** on the shortcut menu.  
   
- **Para depurar una prueba:** abra el acceso directo de una o varias pruebas y, a continuación, elija **Depurar pruebas seleccionadas**.  
+ **To debug a test:** Open the shortcut menu for one or more tests, and then choose **Debug Selected Tests**.  
   
 > [!IMPORTANT]
->  Los resultados que se muestran son para la ejecución más reciente. La barra de resultados coloreados presenta solo los resultados de las pruebas ejecutadas. Por ejemplo, si se ejecutan varias pruebas y alguna de ellas produce un error y, a continuación, se ejecutan solo las pruebas que se completan correctamente, la barra de resultados mostrará todo en color verde.  
+>  The results that are displayed are for the most recent run. The colored results bar shows only the results for the tests that ran. For example, if you run several tests and some of them fail, and then run only the successful tests, then the results bar will show all green.  
   
 > [!NOTE]
->  Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, consulte [Usar diferentes marcos de prueba con el Explorador de pruebas](#frameworks).  
+>  If no test appears, make sure that you have installed an adapter to connect Test Explorer to the test framework that you are using. For more information, see [Using Different Test Frameworks with Test Explorer](#frameworks).  
   
-##  <a name="walkthrough"></a> Tutorial: utilizar pruebas unitarias para desarrollar un método  
- En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, vea [Usar diferentes marcos de prueba](#frameworks).  
+##  <a name="walkthrough"></a> Walkthrough: Using Unit Tests to Develop a Method  
+ This walkthrough demonstrates how to develop a tested method in C# using the Microsoft Unit Test framework. You can easily adapt it for other languages, and to use other test frameworks such as NUnit. For more information, see [Using Different Test Frameworks](#frameworks).  
   
-#### <a name="creating-the-test-and-method"></a>Crear la prueba y el método  
+#### <a name="creating-the-test-and-method"></a>Creating the Test and Method  
   
-1.  Crear un proyecto de biblioteca de clases de Visual C#. Este proyecto contendrá el código que se va a entregar. En este ejemplo, se denomina `MyMath`.  
+1.  Create a Visual C# Class Library project. This project will contain the code that we want to deliver. In this example, it is named `MyMath`.  
   
-2.  Cree un proyecto de prueba.  
+2.  Create a Test project.  
   
-    -   En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Prueba** y, a continuación, elija **Proyecto de prueba unitaria**.  
+    -   In the **New Project** dialog, choose **Visual C#**, **Test** and then choose **Unit Test Project**.  
   
-         ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+         ![New code and test projects](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  Escriba un método de prueba básico. Compruebe el resultado obtenido para una entrada específica:  
+3.  Write a basic test method. Verify the result obtained for a specific input:  
   
-    ```c#  
+    ```csharp  
   
     [TestMethod]  
     public void BasicRooterTest()  
@@ -117,63 +117,63 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }  
     ```  
   
-4.  Genere el método a partir de la prueba.  
+4.  Generate the method from the test.  
   
-    1.  Coloque el cursor en `Rooter`y a continuación, en el acceso directo, elija **Generar**, **Nuevo tipo**.  
+    1.  Place the cursor on `Rooter`, and then on the shortcut menu choose **Generate**, **New Type**.  
   
-    2.  En el cuadro de diálogo **Generar nuevo tipo** , establezca **Proyecto** en el proyecto de biblioteca de clases. En este ejemplo, es `MyMath`.  
+    2.  In the **Generate New Type** dialog box, set **Project** to the class library project. In this example, it is `MyMath`.  
   
-    3.  Coloque el cursor en `SquareRoot`y a continuación, en el acceso directo, elija **Generar**, **Código auxiliar de método**.  
+    3.  Place the cursor on `SquareRoot`, and then on the shortcut menu choose **Generate**, **Method Stub**.  
   
-5.  Ejecute la prueba unitaria.  
+5.  Run the unit test.  
   
-    1.  En el menú **Prueba** , elija **Ejecutar pruebas unitarias**, **Todas las pruebas**.  
+    1.  On the **Test** menu, choose **Run Unit Tests**, **All Tests**.  
   
-         La solución se compila y se ejecuta.  
+         The solution builds and runs.  
   
-         El Explorador de pruebas se abre y muestra los resultados.  
+         Test Explorer opens and displays the results.  
   
-         La prueba aparece bajo **Pruebas no superadas**.  
+         The test appears under **Failed Tests**.  
   
-6.  Seleccione el nombre de la prueba.  
+6.  Select the name of the test.  
   
-     Los detalles de la prueba aparecen en la parte inferior del Explorador de pruebas.  
+     The details of the test appear in the lower part of Test Explorer.  
   
-7.  Seleccione los elementos bajo **Seguimiento de la pila** para ver dónde se produjo un error en la prueba.  
+7.  Select the items under **Stack Trace** to see where the test failed.  
   
- ![Explorador de pruebas unitarias que muestra una prueba no superada.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+ ![Unit Test Explorer showing failed test.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- En este punto, se ha creado una prueba y un código auxiliar que se modificarán para que la prueba se complete correctamente.  
+ At this point, you have created a test and a stub that you will modify so that the test passes.  
   
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Después de cada cambio, haga que todas las pruebas se completen correctamente  
+#### <a name="after-every-change-make-all-the-tests-pass"></a>After every change, make all the tests pass  
   
-1.  En `MyMath\Rooter.cs`, mejore el código de `SquareRoot`:  
+1.  In `MyMath\Rooter.cs`, improve the code of `SquareRoot`:  
   
-    ```c#  
+    ```csharp  
     public double SquareRoot(double input)  
      {  
        return input / 2;  
      }  
     ```  
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2.  In Test Explorer, choose **Run All**.  
   
-     El código se compila y se ejecuta la prueba.  
+     The code builds and the test runs.  
   
-     La prueba se supera.  
+     The test passes.  
   
-     ![Explorador de pruebas unitarias que muestra una prueba superada.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Unit Test Explorer showing a passing test.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Agregar pruebas para ampliar el intervalo de entradas  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Add tests to extend the range of inputs  
   
-1.  Para mejorar su confianza en que el código funcione en todos los casos, agregue pruebas para in intervalo más amplio de valores de entrada.  
+1.  To improve your confidence that your code works in all cases, add tests that try a broader range of input values.  
   
     > [!TIP]
-    >  Evite modificar las pruebas existentes que se completan correctamente. En su lugar, agregue nuevas pruebas. Cambie las pruebas existentes solo si cambian los requisitos de usuario. Esta directiva ayuda a garantizar que no se pierda la función existente mientras se trabaja para ampliar el código.  
+    >  Avoid altering existing tests that pass. Instead, add new tests. Change existing tests only when the user requirements change. This policy helps ensure that you don't lose existing functionality as you work to extend the code.  
   
-     En la clase de prueba, agregue la siguiente prueba para un intervalo de valores de entrada:  
+     In your test class, add the following test, which tries a range of input values:  
   
-    ```c#  
+    ```csharp  
     [TestMethod]  
     public void RooterValueRange()  
     {  
@@ -197,13 +197,13 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }  
     ```  
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2.  In Test Explorer, choose **Run All**.  
   
-     La nueva prueba no se supera, aunque la primera aún se completa correctamente.  
+     The new test fails, although the first test still passes.  
   
-     Para encontrar el punto de error, seleccione la prueba que no se completa correctamente y, en la parte inferior del Explorador de pruebas, seleccione el elemento superior del **Seguimiento de la pila**.  
+     To find the point of failure, select the failing test and then in the lower part of Test Explorer, select the top item of the **Stack Trace**.  
   
-3.  Inspeccione el método que se está probando para ver qué puede ser incorrecto. En la clase `MyMath.Rooter` , reescriba el código:  
+3.  Inspect the method under test to see what might be wrong. In the `MyMath.Rooter` class, rewrite the code:  
   
     ```  
     public double SquareRoot(double input)  
@@ -219,15 +219,15 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }  
     ```  
   
-4.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+4.  In Test Explorer, choose **Run All**.  
   
-     Ahora ambas pruebas se completan correctamente.  
+     Both tests now pass.  
   
-#### <a name="add-tests-for-exceptional-cases"></a>Agregue pruebas para casos excepcionales  
+#### <a name="add-tests-for-exceptional-cases"></a>Add tests for exceptional cases  
   
-1.  Agregue una prueba para entradas negativas:  
+1.  Add a test for negative inputs:  
   
-    ```c#  
+    ```csharp  
     [TestMethod]  
      public void RooterTestNegativeInputx()  
      {  
@@ -244,17 +244,17 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
      }  
     ```  
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2.  In Test Explorer, choose **Run All**.  
   
-     El método en prueba entra en bucle y debe cancelarse manualmente.  
+     The method under test loops, and must be canceled manually.  
   
-3.  Elija **Cancelar**.  
+3.  Choose **Cancel**.  
   
-     La prueba se para después de 10 segundos.  
+     The test stops after 10 seconds.  
   
-4.  Corrija el código del método:  
+4.  Fix the method code:  
   
-    ```c#  
+    ```csharp  
   
     public double SquareRoot(double input)  
     {  
@@ -265,20 +265,20 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     ...  
     ```  
   
-5.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+5.  In Test Explorer, choose **Run All**.  
   
-     Todas las pruebas se completan correctamente.  
+     All the tests pass.  
   
-#### <a name="refactor-without-changing-tests"></a>Refactorizar sin cambiar las pruebas  
+#### <a name="refactor-without-changing-tests"></a>Refactor without changing tests  
   
-1.  Simplifique el código, pero no cambie las pruebas.  
+1.  Simplify the code, but do not change the tests.  
   
     > [!TIP]
-    >  Una *refactorización* es un cambio que está pensado para que el código se ejecute mejor o para hacer que el código sea más fácil de entender. No está pensado para alterar el comportamiento del código y, por tanto, no se cambian las pruebas.  
+    >  A *refactoring* is a change that is intended to make the code perform better or to make the code easier to understand. It is not intended to alter the behavior of the code, and therefore the tests are not changed.  
     >   
-    >  Se recomienda realizar los pasos de refactorización independientemente de los pasos que amplían la funcionalidad. Mantener las pruebas sin cambios aporta la confianza de no haber introducido errores accidentalmente durante la refactorización.  
+    >  We recommend that you perform refactoring steps separately from steps that extend functionality. Keeping the tests unchanged gives you confidence that you have not accidentally introduced bugs while refactoring.  
   
-    ```c#  
+    ```csharp  
     public class Rooter  
     {  
       public double SquareRoot(double input)  
@@ -300,9 +300,9 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
     }  
     ```  
   
-2.  Elija **Ejecutar todas**.  
+2.  Choose **Run All**.  
   
-     Todas las pruebas se completan correctamente.  
+     All the tests still pass.  
   
-     ![Explorador de pruebas unitarias que muestra 3 pruebas superadas.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Unit Test Explorer showing 3 passed tests.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
 

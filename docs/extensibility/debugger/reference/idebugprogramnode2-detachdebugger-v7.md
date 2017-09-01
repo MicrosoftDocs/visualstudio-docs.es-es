@@ -1,50 +1,67 @@
 ---
-title: "IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::DetachDebugger"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::DetachDebugger"
-  - "IDebugProgramNode2::DetachDebugger_V7"
+title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramNode2::DetachDebugger
+helpviewer_keywords:
+- IDebugProgramNode2::DetachDebugger
+- IDebugProgramNode2::DetachDebugger_V7
 ms.assetid: d2d4b78e-a2dd-4217-97a6-ab648fd2ee2f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProgramNode2::DetachDebugger_V7
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-DESUSADO.  NOT UTILICE.  
+---
+# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+DEPRECATED. DO NOT USE.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT DetachDebugger_V7 (   
-   void   
+```cpp  
+HRESULT DetachDebugger_V7 (   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int DetachDebugger_V7 ();  
 ```  
   
-## Valor devuelto  
- Una implementación siempre debe devolver `E_NOTIMPL`.  
+## <a name="return-value"></a>Return Value  
+ An implementation should always return `E_NOTIMPL`.  
   
-## Comentarios  
+## <a name="remarks"></a>Remarks  
   
 > [!WARNING]
->  A partir de [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], este método se utiliza y debe ya no devolver siempre `E_NOTIMPL`.  
+>  As of [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], this method is no longer used and should always return `E_NOTIMPL`.  
   
- Se llama a este método cuando el depurador finaliza inesperadamente.  Cuando se llama a este método, el OF debe reanudar el programa como si el usuario desasociado de.  No más eventos de depuración deben ser enviados.  El programa debe estar en un estado donde conectable de otra instancia del depurador.  
+ This method is called when the debugger unexpectedly quits. When this method is called, the DE should resume the program as though the user detached from it. No more debug events should be sent. The program should be in a state where it is attachable from another instance of the debugger.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,61 +1,77 @@
 ---
-title: "CA1018: Marcar atributos con AttributeUsageAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1018"
-  - "MarkAttributesWithAttributeUsage"
-helpviewer_keywords: 
-  - "CA1018"
-  - "MarkAttributesWithAttributeUsage"
+title: 'CA1018: Mark attributes with AttributeUsageAttribute | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1018
+- MarkAttributesWithAttributeUsage
+helpviewer_keywords:
+- CA1018
+- MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1018: Marcar atributos con AttributeUsageAttribute
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0dc155a883bc474198df5c7b489335c056fe248f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Mark attributes with AttributeUsageAttribute
 |||  
 |-|-|  
 |TypeName|MarkAttributesWithAttributeUsage|  
-|Identificador de comprobación|CA1018|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Problemático|  
+|CheckId|CA1018|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Motivo  
- El atributo <xref:System.AttributeUsageAttribute?displayProperty=fullName> no está presente en el atributo personalizado.  
+## <a name="cause"></a>Cause  
+ The <xref:System.AttributeUsageAttribute?displayProperty=fullName> attribute is not present on the custom attribute.  
   
-## Descripción de la regla  
- Cuando define un atributo personalizado, márquelo utilizando <xref:System.AttributeUsageAttribute> para indicar donde se puede aplicar el atributo personalizado en el código fuente.  El significado de un atributo y el uso que se le va a dar determinará sus ubicaciones válidas en código.  Por ejemplo, podría definir un atributo que identifique la persona responsable de mantener y mejorar cada tipo en una biblioteca, y que esa responsabilidad siempre se asigne en el nivel de tipo.  En este caso, los compiladores deberían habilitar el atributo en las clases, enumeraciones e interfaces, pero no deberían habilitarlo en los métodos, eventos o propiedades.  Las directivas organizativas y los procedimientos dictarían si el atributo debe habilitarse en ensamblados.  
+## <a name="rule-description"></a>Rule Description  
+ When you define a custom attribute, mark it by using <xref:System.AttributeUsageAttribute> to indicate where in the source code the custom attribute can be applied. The meaning and intended usage of an attribute will determine its valid locations in code. For example, you might define an attribute that identifies the person who is responsible for maintaining and enhancing each type in a library, and that responsibility is always assigned at the type level. In this case, compilers should enable the attribute on classes, enumerations, and interfaces, but should not enable it on methods, events, or properties. Organizational policies and procedures would dictate whether the attribute should be enabled on assemblies.  
   
- La enumeración <xref:System.AttributeTargets?displayProperty=fullName> define los destinos que puede especificar para un atributo personalizado.  Si omite <xref:System.AttributeUsageAttribute>, su atributo personalizado será válido para todos los destinos, tal y como define el valor `All` de la enumeración <xref:System.AttributeTargets>.  
+ The <xref:System.AttributeTargets?displayProperty=fullName> enumeration defines the targets that you can specify for a custom attribute. If you omit <xref:System.AttributeUsageAttribute>, your custom attribute will be valid for all targets, as defined by the `All` value of <xref:System.AttributeTargets> enumeration.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, especifique los destinos para el atributo utilizando <xref:System.AttributeUsageAttribute>.  Vea el ejemplo siguiente.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, specify targets for the attribute by using <xref:System.AttributeUsageAttribute>. See the following example.  
   
-## Cuándo suprimir advertencias  
- Se debe corregir una infracción de esta regla en lugar de excluir el mensaje.  Aun cuando el atributo hereda <xref:System.AttributeUsageAttribute>, el atributo debe estar presente para simplificar el mantenimiento del código.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ You should fix a violation of this rule instead of excluding the message. Even if the attribute inherits <xref:System.AttributeUsageAttribute>, the attribute should be present to simplify code maintenance.  
   
-## Ejemplo  
- En el siguiente ejemplo se definen dos atributos.  `BadCodeMaintainerAttribute` omite la instrucción <xref:System.AttributeUsageAttribute> incorrectamente y `GoodCodeMaintainerAttribute` implementa correctamente el atributo que se describe anteriormente en esta sección.  Tenga en cuenta que la regla de diseño [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) requiere la propiedad `DeveloperName` y se incluye para obtener un mejor resultado.  
+## <a name="example"></a>Example  
+ The following example defines two attributes. `BadCodeMaintainerAttribute` incorrectly omits the <xref:System.AttributeUsageAttribute> statement, and `GoodCodeMaintainerAttribute` correctly implements the attribute that is described earlier in this section. Note that the property `DeveloperName` is required by the design rule [CA1019: Define accessors for attribute arguments](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) and is included for completeness.  
   
- [!code-cs[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  
+ [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)] [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  
   
-## Reglas relacionadas  
- [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1019: Define accessors for attribute arguments](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
   
- [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md)  
+ [CA1813: Avoid unsealed attributes](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## Vea también  
- [Atributos](../Topic/Attributes1.md)
+## <a name="see-also"></a>See Also  
+ [Attributes](/dotnet/standard/design-guidelines/attributes)

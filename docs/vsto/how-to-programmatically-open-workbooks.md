@@ -1,52 +1,56 @@
 ---
-title: "C&#243;mo: Abrir libros mediante programaci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel [desarrollo de Office en Visual Studio], abrir libros"
-  - "libros, abrir"
+title: 'How to: Programmatically Open Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, opening
+- Excel [Office development in Visual Studio], opening workbooks
 ms.assetid: 06c0ac87-a2c6-4cc1-87be-39be0cb81c71
 caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 36
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: be53929363f0e984ca006e657de4940b9d075ed2
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Abrir libros mediante programaci&#243;n
-  La colección <xref:Microsoft.Office.Interop.Excel.Workbooks> permite trabajar con todos los libros abiertos, así como abrir libros en Microsoft Office Excel.  
+# <a name="how-to-programmatically-open-workbooks"></a>How to: Programmatically Open Workbooks
+  The <xref:Microsoft.Office.Interop.Excel.Workbooks> collection in Microsoft Office Excel makes it possible to work with all open workbooks and to open workbooks.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### Para abrir un libro existente  
+### <a name="to-open-an-existing-workbook"></a>To open an existing workbook  
   
-1.  Utilice el método <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Workbooks>, pasando la ruta de acceso al libro.  
+1.  Use the <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> method of the <xref:Microsoft.Office.Interop.Excel.Workbooks> collection, passing in the path to the workbook.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]  
   
-## Compilar el código  
- Este ejemplo de código requiere lo siguiente:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example requires the following:  
   
--   Un libro denominado `YourWorkbook.xls` en un directorio llamado `Test` de la unidad C.  
+-   A workbook named `YourWorkbook.xls` must exist in a directory named `Test` on drive C.  
   
-## Vea también  
- [Trabajar con libros](../vsto/working-with-workbooks.md)   
- [Cómo: Abrir archivos de texto como libros mediante programación](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [Cómo: Crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Cómo: Guardar libros mediante programación](../vsto/how-to-programmatically-save-workbooks.md)   
- [Cómo: Cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Open Text Files as Workbooks](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
+ [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
   
   

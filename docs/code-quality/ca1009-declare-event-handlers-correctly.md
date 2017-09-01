@@ -1,61 +1,76 @@
 ---
-title: "CA1009: Declare los controladores de evento correctamente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
-helpviewer_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
+title: 'CA1009: Declare event handlers correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
+helpviewer_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1009: Declare los controladores de evento correctamente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b0f63af127c6e9b11c1d9e468705bbcca14f39bd
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declare event handlers correctly
 |||  
 |-|-|  
 |TypeName|DeclareEventHandlersCorrectly|  
-|Identificador de comprobación|CA1009|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Problemático|  
+|CheckId|CA1009|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Motivo  
- Un delegado que controla un evento público o protegido no tiene la firma, el tipo de valor devuelto o los nombres de parámetro correctos.  
+## <a name="cause"></a>Cause  
+ A delegate that handles a public or protected event does not have the correct signature, return type, or parameter names.  
   
-## Descripción de la regla  
- Los métodos de control de eventos toman dos parámetros.  El primero es de tipo <xref:System.Object?displayProperty=fullName> y se denomina 'sender'.  Éste es el objeto que provocó el evento.  El segundo parámetro es de tipo <xref:System.EventArgs?displayProperty=fullName> y se denomina 'e'.  Estos son los datos están asociados a este evento.  Por ejemplo, si se provoca el evento cuando se abre un archivo, los datos de evento contienen normalmente el nombre del archivo.  
+## <a name="rule-description"></a>Rule Description  
+ Event handler methods take two parameters. The first is of type <xref:System.Object?displayProperty=fullName> and is named 'sender'. This is the object that raised the event. The second parameter is of type <xref:System.EventArgs?displayProperty=fullName> and is named 'e'. This is the data that is associated with the event. For example, if the event is raised whenever a file is opened, the event data typically contains the name of the file.  
   
- Los métodos de control de eventos no deben devolver un valor.  En el lenguaje de programación C\#, esto lo indica el tipo de valor devuelto `void`.  Un controlador de eventos puede invocar varios métodos en varios objetos.  Si los métodos pudieran devolver un valor, se devolverían varios valores por cada evento y solo estaría disponible el valor del último método invocado.  
+ Event handler methods should not return a value. In the C# programming language, this is indicated by the return type `void`. An event handler can invoke multiple methods in multiple objects. If the methods were allowed to return a value, multiple return values would occur for each event, and only the value of the last method that was invoked would be available.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, corrija la firma, tipo de valor devuelto o los nombres de parámetro del delegado.  Para obtener información detallada, vea los siguientes temas:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, correct the signature, return type, or parameter names of the delegate. For details, see the following example.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- En el siguiente ejemplo se muestra un delegado que es adecuado para el control de errores.  Los métodos que puede invocar este controlador de eventos cumplen la firma especificada en las Instrucciones de diseño.  `AlarmEventHandler` es el nombre de tipo del delegado.  `AlarmEventArgs` deriva de la clase base para los datos de evento, <xref:System.EventArgs>, y retiene los datos de evento de alarma.  
+## <a name="example"></a>Example  
+ The following example shows a delegate that is suited to handling events. The methods that can be invoked by this event handler comply with the signature that is specified in the Design Guidelines. `AlarmEventHandler` is the type name of the delegate. `AlarmEventArgs` derives from the base class for event data, <xref:System.EventArgs>, and holds alarm event data.  
   
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-cs[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
+ [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)] [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)] [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
   
-## Reglas relacionadas  
- [CA2109: Revisar los controladores de eventos visibles](../code-quality/ca2109-review-visible-event-handlers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2109: Review visible event handlers](../code-quality/ca2109-review-visible-event-handlers.md)  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.EventArgs?displayProperty=fullName>   
  <xref:System.Object?displayProperty=fullName>   
- [Eventos y delegados](http://msdn.microsoft.com/es-es/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)

@@ -1,75 +1,92 @@
 ---
-title: "IDebugContainerField::EnumFields | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugContainerField::EnumFields"
-helpviewer_keywords: 
-  - "IDebugContainerField::EnumFields (método)"
+title: IDebugContainerField::EnumFields | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugContainerField::EnumFields
+helpviewer_keywords:
+- IDebugContainerField::EnumFields method
 ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugContainerField::EnumFields
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1244306cbdfa70b0885274df75a7bf51a063bc30
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Crea un enumerador para los campos del contenedor.  
+---
+# <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
+Creates an enumerator for the fields of the container.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumFields(   
-   FIELD_KIND         dwKindFilter,  
-   FIELD_MODIFIERS    dwModifiersFilter,  
-   LPCOLESTR          pszNameFilter,  
-   NAME_MATCH         nameMatch,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumFields(   
+   FIELD_KIND         dwKindFilter,  
+   FIELD_MODIFIERS    dwModifiersFilter,  
+   LPCOLESTR          pszNameFilter,  
+   NAME_MATCH         nameMatch,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumFields(  
-   enum_ FIELD_KIND      dwKindFilter,   
-   enum_ FIELD_MODIFIERS dwModifiersFilter,   
-   string                pszNameFilter,   
-   NAME_MATCH            nameMatch,   
-   out IEnumDebugFields  ppEnum  
+   enum_ FIELD_KIND      dwKindFilter,   
+   enum_ FIELD_MODIFIERS dwModifiersFilter,   
+   string                pszNameFilter,   
+   NAME_MATCH            nameMatch,   
+   out IEnumDebugFields  ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dwKindFilter`  
- \[in\]  Una combinación de constantes de [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md) que seleccionar los campos que se van a mostrar.  Las clases de campos pueden describir tipos de almacenamiento, como clase o primitivo, o la información específica, como valor local, parámetro, o puntero “this”.  
+ [in] A combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants that select the fields to be enumerated. Field kinds can describe storage types, such as class or primitive, or specific information, such as local, parameter, or "this" pointer.  
   
  `dwModifiersFilter`  
- \[in\]  Una combinación de constantes de [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que seleccionar los campos que se van a mostrar.  Los modificadores de campos pueden tener permisos de acceso, como public o private, o información de almacenamiento, como virtual, estático, o final.  
+ [in] A combination of [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constants that select the fields to be enumerated. Field modifiers can be access permissions, such as public or private, or storage information, such as virtual, static, or final.  
   
  `pszNameFilter`  
- \[in\]  El nombre del campo que se va a enumerar.  Esto puede ser un valor NULL si fuese todos los campos a devolverse.  
+ [in] The name of the field to be enumerated. This can be a null value if all fields are to be returned.  
   
  `nameMatch`  
- \[in\]  Un valor de enumeración de [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md) que controla si busca distingue entre mayúsculas y minúsculas o no.  
+ [in] A value from the [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeration that controls whether searching is case-sensitive or not.  
   
  `ppEnum`  
- \[out\]  devuelve un objeto de [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de campos.  Devuelve un valor NULL si no hay campos.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of fields. Returns a null value if there are no fields.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK o S\_FALSE si no hay campos.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or S_FALSE if there are no fields. Otherwise, returns an error code.  
   
-## Comentarios  
- `dwKindFilter`, `dwModifiersFilter`, y los parámetros de `pszNameFilter` se pueden combinar, por ejemplo, para seleccionar todos los métodos virtuales públicos denominados “MyMethod”.  
+## <a name="remarks"></a>Remarks  
+ The `dwKindFilter`, `dwModifiersFilter`, and `pszNameFilter` parameters can be combined, for example, to select all public virtual methods named "MyMethod".  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md)   
- [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
- [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)
+ [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   
+ [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
+ [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

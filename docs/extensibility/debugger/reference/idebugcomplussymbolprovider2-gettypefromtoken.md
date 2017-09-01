@@ -1,67 +1,84 @@
 ---
-title: "IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::GetTypeFromToken"
-  - "GetTypeFromToken"
+title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::GetTypeFromToken
+- GetTypeFromToken
 ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugComPlusSymbolProvider2::GetTypeFromToken
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b8395849f002519d52ed1f547e92b67e35f6408e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Recupera un tipo dado su token.  
+---
+# <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
+Retrieves a type given its token.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromToken(  
-   ULONG32       appDomain,  
-   GUID          guidModule,  
-   DWORD         tdToken,  
-   IDebugField** ppField  
+   ULONG32       appDomain,  
+   GUID          guidModule,  
+   DWORD         tdToken,  
+   IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeFromToken(  
-   uint            appDomain,  
-   Guid            guidModule,  
-   uint            tdToken,  
-   out IDebugField ppField  
+   uint            appDomain,  
+   Guid            guidModule,  
+   uint            tdToken,  
+   out IDebugField ppField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `appDomain`  
- \[in\]  Identificador del dominio de aplicación.  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- \[in\]  Identificador único del módulo.  
+ [in] Unique identifier of the module.  
   
  `tdToken`  
- \[in\]  Símbolo de tipo que se va a recuperar.  
+ [in] Token of the type to be retrieved.  
   
  `ppField`  
- \[out\]  Devuelve el tipo representado por [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ [out] Returns the type that is represented by the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -87,5 +104,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

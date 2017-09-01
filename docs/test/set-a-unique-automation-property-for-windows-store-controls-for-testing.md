@@ -1,5 +1,5 @@
 ---
-title: "Establecer una propiedad de automatización única para la prueba de controles de la Tienda Windows | Microsoft Docs"
+title: Set a Unique Automation Property for Windows Store Controls for Testing | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,92 +26,92 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b95ff54bded55d16391f57ee53b8a95ca99ca867
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Establecer una propiedad de Automation única para la prueba de controles de la Tienda Windows
-Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Windows basada en XAML, debe tener una propiedad única de automatización que identifique cada control.  
+# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Set a Unique Automation Property for Windows Store Controls for Testing
+If you want to run coded UI tests for your XAML-based Windows Store application, you must have a unique automation property that identifies each control.  
   
- Puede asignar una propiedad única de automatización basada en el tipo de control de XAML de la aplicación. Aquí se indica cómo asignar esta propiedad única de automatización en las situaciones siguientes:  
+ You can assign a unique automation property based on the type of XAML control in your application. Here's how to assign this unique automation property in the following situations:  
   
--   [Definición estática XAML de los controles](#UniquePropertyWindowsStoreControlsStaticXAML)  
+-   [Static XAML definition of controls](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [Asignar propiedades únicas de automatización mediante Visual Studio o Blend para Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+-   [Assign unique automation properties using Visual Studio or Blend for Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [Usar una plantilla de datos](#UniquePropertyWindowsStoreControlsDataTemplate)  
+-   [Use a DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [Usar una plantilla de control](#UniquePropertyWindowsStoreControlsControlTemplate)  
+-   [Use a control template](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [Controles dinámicos](#UniquePropertyWindowsStoreControlsDynamicControls)  
+-   [Dynamic controls](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
-## <a name="use-methods-to-assign-a-unique-automation-property"></a>Usar métodos para asignar una propiedad única de automatización  
+## <a name="use-methods-to-assign-a-unique-automation-property"></a>Use methods to assign a unique automation property  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Definición estática XAML  
- Para especificar una propiedad única de automatización de un control que se define en el archivo XAML, puede establecer AutomationProperties.AutomationId o el AutomationProperties.Name implícita o explícitamente, como se muestra en los ejemplos siguientes. Al establecer alguno de estos valores se proporciona al control una propiedad única de automatización que se puede usar para identificar el control cuando se crea una grabación de acciones o de pruebas de la interfaz de usuario.  
+###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Static XAML definition  
+ To specify a unique automation property for a control that is defined in your XAML file, you can set the AutomationProperties.AutomationId or AutomationProperties.Name implicitly or explicitly, as shown in the following examples. Setting either of these values gives the control a unique automation property that can be used to identify the control when you create a coded UI test or action recording.  
   
- **Establecer la propiedad implícitamente**  
+ **Set the property implicitly**  
   
- Establezca AutomationProperties.AutomationId en **ButtonX** mediante la propiedad Name en el código XAML para el control.  
+ Set the AutomationProperties.AutomationId to **ButtonX** using the Name property in the XAML for the control.  
   
 ```xaml  
 <Button Name="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
- Establezca AutomationProperties.Name en **ButtonY** mediante la propiedad Content en el código XAML para el control.  
+ Set the AutomationProperties.Name to **ButtonY** using the Content property in the XAML for the control.  
   
 ```xaml  
 <Button Content="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
   
 ```  
   
- **Establecer la propiedad explícitamente**  
+ **Set the property explicitly**  
   
- Establezca AutomationProperties.AutomationId en **ButtonX** explícitamente en el código XAML para el control.  
+ Set the AutomationProperties.AutomationId to **ButtonX** explicitly in the XAML for the control.  
   
 ```xaml  
 <Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
- Establezca AutomationProperties.Name en **ButtonY** explícitamente en el código XAML para el control.  
+ Set the AutomationProperties.Name to **ButtonY** explicitly in the XAML for the control.  
   
 ```  
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Asignar propiedades únicas de automatización mediante Visual Studio o Blend para Visual Studio  
- Puede usar Visual Studio o Blend para Visual Studio para asignar nombres únicos a elementos interactivos como botones, cuadros de lista, cuadros combinados y cuadros de texto. Esto proporciona al control un valor único para AutomationProperties.Name.  
+###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Assign unique automation properties using Visual Studio or Blend for Visual Studio  
+ You can use Visual Studio or Blend for Visual Studio to assign unique names to interactive elements such as buttons, list boxes, combo boxes and text boxes. This gives the control a unique value for AutomationProperties.Name.  
   
- **Visual Studio:** en el menú **Herramientas**, apunte a **Opciones** y seleccione **Editor de texto**, **XAML** y **Varios**.  
+ **Visual Studio:** On the **Tools** menu, point to **Options** and then choose **Text Editor**, then **XAML**, and finally **Miscellaneous**.  
   
- Seleccione **Asignar nombre automáticamente a los elementos interactivos cuando se creen** y después haga clic en **Aceptar**.  
+ Select **Automatically name interactive elements on creation** and then choose **OK**.  
   
- ![Otras opciones de XAML](../test/media/cuit_windowsstoreapp_b.png "CUIT_WindowsStoreApp_B")  
+ ![XAML Miscellaneous options](../test/media/cuit_windowsstoreapp_b.png "CUIT_WindowsStoreApp_B")  
   
- **Blend para Visual Studio:** use uno de los métodos siguientes para realizar esta acción desde Blend para Visual Studio.  
+ **Blend for Visual Studio:** Use one of the following methods to do this from Blend for Visual Studio.  
   
 > [!NOTE]
->  Solo puede usar este método para los controles que se crean estáticamente mediante XAML.  
+>  You can only use this method for controls that are created statically using XAML.  
   
- **Para asignar un nombre único a los controles existentes**  
+ **To give a unique name to existing controls**  
   
- En el menú **Herramientas**, seleccione **Asignar nombre a elementos interactivos**, como se muestra aquí:  
+ On the **Tools** menu, choose **Name Interactive Elements**, as shown here:  
   
- ![Seleccionar Asignar nombre a elementos interactivos en el menú Herramientas](../test/media/cuit_windowsstoreproperty_blend_1.png "CUIT_WindowsStoreProperty_Blend_1")  
+ ![Choose Name Interactive Elements from Tools menu](../test/media/cuit_windowsstoreproperty_blend_1.png "CUIT_WindowsStoreProperty_Blend_1")  
   
- **Para asignar automáticamente un nombre único a los controles que se crean**  
+ **To automatically give a unique name to controls that you create**  
   
- En el menú **Herramientas**, apunte a **Opciones** y seleccione **Proyecto**. Seleccione **Asignar nombre automáticamente a los elementos interactivos cuando se creen** y después haga clic en **Aceptar**, como se muestra aquí:  
+ On the **Tools** menu, point to **Options**, and then choose **Project**. Select **Automatically name interactive elements on creation** and then choose **OK**, as shown here:  
   
- ![Establecer el proyecto para asignar nombre a los elementos interactivos](../test/media/cuit_windowsstoreproeprty_blend_2.png "CUIT_WindowsStoreProeprty_Blend_2")  
+ ![Set project to name interactive elements](../test/media/cuit_windowsstoreproeprty_blend_2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Usar una plantilla de datos  
- Puede definir una plantilla sencilla mediante ItemTemplate para enlazar los valores de un cuadro de lista con variables utilizando el XAML siguiente.  
+###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Use a data template  
+ You can define a simple template using ItemTemplate to bind the values in a list box to variables using the following XAML.  
   
 ```xaml  
   
@@ -127,7 +127,7 @@ Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Win
 </ListBox>  
 ```  
   
- También puede usar una plantilla con ItemContainerStyle para enlazar los valores a las variables utilizando el XAML siguiente.  
+ You can also use a template with ItemContainerStyle to bind the values to variables by using the following XAML.  
   
 ```xaml  
   
@@ -149,10 +149,10 @@ Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Win
   
 ```  
   
- En ambos ejemplos, debe reemplazar el método ToString () de ItemSource, como se muestra en el código siguiente. Este código se asegura de que el valor de AutomationProperties.Name está establecido y es único, porque no se puede establecer una propiedad única de automatización para cada elemento de lista enlazado a datos utilizando enlace a datos. Establecer un valor único de automatización Properties.Name es suficiente en este caso.  
+ For both of these examples, you must then override the ToString() method of ItemSource, as shown using the following code. This code makes sure that the AutomationProperties.Name value is set and is unique, because you cannot set a unique automation property for each data bound list item using binding. Setting a unique value for the Automation Properties.Name is sufficient in this case.  
   
 > [!NOTE]
->  Con este enfoque, el contenido interno del elemento de lista también se puede establecer en una cadena en la clase de empleados a través del enlace. Como se muestra en el ejemplo, al control de botón dentro de cada elemento de lista se le asigna un identificador único de automatización que es el id. de empleado.  
+>  Using this approach, the inner contents of the list item can also be set to a string in the Employee class through binding. As shown in the example, the button control inside each list item is assigned a unique automation id which is the Employee ID.  
   
 ```  
   
@@ -173,8 +173,8 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Usar una plantilla de control  
- Puede utilizar una plantilla de control para que cada instancia de un tipo específico obtenga una propiedad única de automatización cuando se define en el código. Debe crear la plantilla para que AutomationProperty enlace a un identificador único en la instancia del control. El XAML siguiente muestra un enfoque para crear este enlace con una plantilla de control.  
+###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Use a control template  
+ You can use a control template so that each instance of a specific type obtains a unique automation property when it is defined in the code. You must create the template so that the AutomationProperty binds to a unique ID in the control instance. The following XAML demonstrates one approach to create this binding with a control template.  
   
 ```xaml  
   
@@ -193,7 +193,7 @@ public override string ToString()
   
 ```  
   
- Al definir dos instancias de un botón mediante esta plantilla de control, el id. de automatización se establece en la cadena de contenido única para los controles de la plantilla, como se muestra en el código XAML siguiente.  
+ When you define two instances of a button using this control template, the automation id is set to the unique content string for the controls in the template, as shown in the following XAML.  
   
 ```xaml  
   
@@ -201,10 +201,10 @@ public override string ToString()
 <Button Content="Button2" Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Controles dinámicos  
- Si tiene controles creados dinámicamente desde el código en lugar de estáticamente o a través de las plantillas de los archivos XAML, debe establecer el contenido o las propiedades de dominio para el control. Esto garantiza que cada control dinámico tiene una propiedad única de automatización. Por ejemplo, si tiene una casilla que debe mostrarse cuando se selecciona un elemento de lista, puede establecer estas propiedades, como se muestra aquí:  
+###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Dynamic controls  
+ If you have controls that are created dynamically from your code and not created statically or through templates in XAML files, you must set the Content or Name properties for the control. This makes sure that each dynamic control has a unique automation property. For example, if you have a check box that must be displayed when you select a list item, you can set these properties, as shown here:  
   
-```c#  
+```csharp  
   
 private void CreateCheckBox(string txt, StackPanel panel)  
    {  
@@ -218,6 +218,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
   
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
+## <a name="see-also"></a>See Also  
+ [Test Windows UWP and 8.1 Store Apps with Coded UI Tests](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
 

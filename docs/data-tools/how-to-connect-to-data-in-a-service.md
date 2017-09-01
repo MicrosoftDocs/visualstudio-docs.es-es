@@ -1,68 +1,81 @@
 ---
-title: "C&#243;mo: Conectarse a los datos en un servicio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], conectar con servicios Web"
-  - "datos [Visual Studio], leer en servicios Web"
-  - "orígenes de datos, crear en servicios Web"
-  - "leer datos, en servicios Web"
-  - "servicios Web, como orígenes de datos"
-  - "servicios Web, conectar"
-  - "servicios Web, leer datos"
+title: 'How to: Connect to Data in a Service | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], connecting to Web services
+- data sources, creating from Web services
+- data [Visual Studio], reading from Web services
+- reading data, from Web services
+- Web services, reading data
+- Web services, as data sources
+- Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 32
-caps.handback.revision: 30
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 1d5ac117c835addd202e30a8ad4e1b9692202558
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Conectarse a los datos en un servicio
-Se conecta la aplicación a los datos devueltos de un servicio mediante la ejecución del [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png) y la selección de la opción **Servicio** de la página **Elegir un tipo de origen de datos**.  
+# <a name="how-to-connect-to-data-in-a-service"></a>How to: Connect to Data in a Service
+You connect your application to the data returned from a service by running the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) and selecting **Service** on the **Choose a Data Source Type** page.  
   
- Tras la ejecución correcta del asistente, se agrega una referencia al proyecto que queda inmediatamente disponible en [Orígenes de datos \(ventana\)](../Topic/Data%20Sources%20Window.md).  
+ Upon completion of the wizard, a service reference is added to your project and is immediately available in the [Data Sources Window](add-new-data-sources.md).  
   
 > [!NOTE]
->  Los elementos que aparecen en la ventana **Orígenes de datos** dependen de la información devuelta por el servicio.  Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para la configuración de orígenes de datos** pueda crear objetos enlazables.  Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, ningún elemento aparece en la **Ventana de orígenes de datos** al completar el asistente.  Esto se debe a que los conjuntos de datos sin tipo no proporcionan esquemas; por tanto, el asistente no tiene bastante información para crear el origen de datos.  
+>  The items that appear in the **Data Sources** window are dependent on the information that the service returns. Some services might not provide enough information for the **Data Source Configuration Wizard** to create bindable objects. For example, if the service returns an untyped dataset, then no items appear in the **Data Sources Window** upon completing the wizard. This is because untyped datasets do not provide schema, so the wizard does not have enough information to create the data source.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### Para conectar la aplicación a un servicio  
+### <a name="to-connect-your-application-to-a-service"></a>To connect your application to a service  
   
-1.  En el menú **Datos**, haga clic en **Agregar nuevo origen de datos**.  
+1.  On the **Data** menu, click **Add New Data Source**.  
   
-2.  En **Elegir un tipo de origen de datos**, seleccione **Servicio** y, a continuación, haga clic en **Siguiente**.  
+2.  Select **Service** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-3.  Escriba la dirección del servicio que desea utilizar o haga clic en **Detectar** para buscar los servicios en la solución actual y, a continuación, haga clic en **Ir**.  
+3.  Enter the address of the service you want to use, or click **Discover** to locate services in the current solution, and then click **Go**.  
   
-4.  Opcionalmente, se puede escribir un nuevo **Espacio de nombres** en lugar del valor predeterminado.  
+4.  Optionally, a new **Namespace** can be typed in place of the default value.  
   
     > [!NOTE]
-    >  Haga clic en **Opciones avanzadas** para abrir [Configurar referencia de servicio \(Cuadro de diálogo\)](../data-tools/configure-service-reference-dialog-box.md).  
+    >  Click **Advanced** to open the [Configure Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Haga clic en **Aceptar** para agregar una referencia del servicio a su proyecto.  
+5.  Click **OK** to add a service reference to your project.  
   
-6.  Haga clic en **Finalizar**.  
+6.  Click **Finish**.  
   
-     El origen de datos se agrega a la ventana **Orígenes de datos**.  
+     The data source is added to the **Data Sources** window.  
   
-## Pasos siguientes  
+## <a name="next-steps"></a>Next Steps  
   
-#### Para agregar funcionalidad a la aplicación  
+#### <a name="to-add-functionality-to-your-application"></a>To add functionality to your application  
   
--   Seleccione un elemento en la ventana **Orígenes de datos** y arrástrelo hasta un formulario para crear controles enlazados.  Para obtener más información, vea [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+-   Select an item in the **Data Sources** window and drag it onto a form to create bound controls. For more information, see [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-## Vea también  
- [Tutorial: Enlazar controles de WPF a un servicio de datos de WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
- [Tutorial: Enlazar controles de Silverlight a un servicio de datos de WCF](../Topic/Walkthrough:%20Binding%20Silverlight%20Controls%20to%20a%20WCF%20Data%20Service.md)   
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
  [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

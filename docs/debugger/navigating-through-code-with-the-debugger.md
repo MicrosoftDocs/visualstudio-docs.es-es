@@ -1,175 +1,208 @@
 ---
-title: "Desplazarse por el c&#243;digo con el depurador | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.execution"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "depurar [Visual Studio], control de ejecución"
-  - "ejecución, control en el depurador"
-  - "ejecutar instrucciones paso a paso"
+title: Navigate Code with the Debugger in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 02/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.execution
+helpviewer_keywords:
+- stepping
+- debugging [Visual Studio], execution control
+- execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 42
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Desplazarse por el c&#243;digo con el depurador
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 7ccde2740ba5216ca8e2a6258c283f655da8b06f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-Hay muchas maneras de desplazarse por el código en el depurador: recorrer o depurar paso a paso por instrucciones los métodos, ejecutar hasta un punto de interrupción o una ubicación especificada, y especificar si se desea restringir la depuración al código propio o incluir símbolos para depurar código externo.  
+---
+# <a name="navigate-code-with-the-visual-studio-debugger"></a>Navigate Code with the Visual Studio Debugger
+Get familiar with commands and shortcuts to navigate code in the debugger and that will make it faster and easier to find and resolve issues in your app. While you navigate code in the debugger, you can inspect the state of your app or learn more about its execution flow.  
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Ejecutar el código paso a paso por instrucciones, por procedimientos o para salir  
- Uno de los procedimientos de depuración más comunes es la *ejecución paso a paso*. En este procedimiento, se ejecuta el código línea por línea. Cuando se detiene la ejecución, por ejemplo, cuando se ejecuta el depurador hasta un punto de interrupción, puede usar tres comandos del menú **Depurar** para recorrer el código paso a paso:  
+## <a name="start-debugging"></a>Start debugging  
+ Often, you start a debugging session using **F5** (**Debug** > **Start Debugging**). This command starts your app with the debugger attached.  
   
-|Comando de menú|Método abreviado de teclado|Descripción|  
-|---------------------|---------------------------------|-----------------|  
-|**Paso a paso por instrucciones**|**F11**|Si la línea contiene una llamada a una función, **Paso a paso por instrucciones** sólo ejecuta la llamada en sí y, a continuación, se detiene en la primera línea de código incluida en la función. En caso contrario, **Paso a paso por instrucciones** ejecuta la siguiente instrucción.|  
-|**Paso a paso por procedimientos**|**F10**|Si la línea contiene una llamada a una función, **Paso a paso por procedimientos** ejecuta la función llamada y, a continuación, se detiene en la primera línea de código incluida en la función de llamada. En caso contrario, **Paso a paso por instrucciones** ejecuta la siguiente instrucción.|  
-|**Paso a paso para salir**|**Shift\+F11**|**Paso a paso para salir** reanuda la ejecución del código hasta que regresa la función y, a continuación, se interrumpe en el punto devuelto de la función de llamada.|  
+ The green arrow also starts the debugger (same as **F5**).  
   
--   En una llamada a una función anidada, **Paso a paso por instrucciones** llega hasta la función más profundamente anidada. Si utiliza **Paso a paso por instrucciones** en una llamada como `Func1(Func2())`, el depurador ejecuta paso a paso las instrucciones de la función `Func2`.  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
--   El depurador recorre paso a paso las instrucciones del código en lugar de las líneas físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:  
+ A few other ways that you can start the app with the debugger attached include **F11** ([step into code](#BKMK_Step_into__over__or_out_of_the_code)),  **F10** ([step over code](#BKMK_Step_over_Step_out)), or by using **Run to Cursor**.  See the other sections in this topic for info on what these options do.  
   
-    ```c#  
+ When you debug, the yellow line shows you the code that will execute next.  
+  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+  
+ While debugging, you can switch between commands like **F5**, **F11** and use other features described in this topic (like breakpoints) to quickly get to the code you want to look at.  
+  
+ Most debugger features, such as viewing variable values in the Locals window or evaluating expressions in the Watch window, are available only while the debugger is paused (also called *break mode*). When the debugger is paused, your app state is suspended while functions, variables, and objects remain in memory. While in break mode, you can examine the elements' positions and states to look for violations or bugs. For some project types, you can also make adjustments to the app while in break mode. To watch a video showing these features, see [Getting Started with the Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Step into code, line by line  
+ To stop on each line of code (each statement) while debugging, use the **F11** keyboard shortcut (or **Debug** > **Step Into** on the menu).  
+  
+> [!TIP]
+>  As you execute each line of code, you can hover over variables to see their values, or use the [Locals](../debugger/autos-and-locals-windows.md) and [Watch](../debugger/autos-and-locals-windows.md) windows to watch their values change.  
+  
+ Here are some details about the behavior of **Step Into**:  
+  
+-   On a nested function call, **Step Into** steps into the most deeply nested function. If you use **Step Into** on a call like `Func1(Func2())`, the debugger steps into the function `Func2`.  
+  
+-   The debugger actually steps through code statements rather than physical lines. For example an `if` clause can be written on one line:  
+  
+    ```CSharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
     ```  
   
-    ```vb  
-    Dim x As Integet = 42  
+    ```VB  
+    Dim x As Integer = 42  
     Dim s As String = "Not answered"  
     If x = 42 Then s = "Answered!"  
     ```  
   
-     Cuando esta línea se ejecuta paso a paso por instrucciones, el depurador trata la condición como un paso y el resultado como otro \(en este ejemplo, la condición es true\).  
+     When you step into this line, the debugger treats the condition as one step and the consequence as another (In this example, the condition is true).  
   
- Para realizar un seguimiento visual de la pila de llamadas mientras se depuran paso a paso las funciones, vea [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+ To visually trace the call stack while stepping into functions, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Interrumpir el código mediante puntos de interrupción o Interrumpir todos  
- Cuando se depura una aplicación con el depurador de VS, la aplicación se está ejecutando o está en modo de interrupción.  
+##  <a name="BKMK_Step_over_Step_out"></a> Step through code, skipping functions  
+ When running code in the debugger, often you will realize that you don't need to see what happens in a particular function (you don't care about it or you know it works, like well-tested library code). Use these commands to skip through code (the functions still execute, of course, but the debugger skips over them).  
   
- El depurador interrumpe la ejecución de la aplicación cuando llega a un punto de interrupción o cuando se produce una excepción. También puede interrumpir manualmente la ejecución en cualquier momento.  
+|Keyboard Command|Menu Command|Description|  
+|----------------------|------------------|-----------------|  
+|**F10**|**Step Over**|If the current line contains a function call, **Step Over** runs the code then suspends execution at the first line of code after the called function returns.|  
+|**Shift+F11**|**Step Out**|**Step Out** continues running code and suspends execution when the current function returns (the debugger skips through the current function).|  
   
- Un punto de interrupción es una señal que indica al depurador que debe suspender temporalmente la ejecución de la aplicación en un punto determinado. Cuando la ejecución se suspende en un punto de interrupción, se dice que el programa se encuentra en modo de interrupción. Entrar en el modo de interrupción no detiene ni finaliza la ejecución del programa, cuya ejecución se puede reanudar en cualquier momento.  
+> [!TIP]
+>  If you need to find the entry point in your app, start with **F10** or **F11**. These commands are often helpful when you are inspecting your app state or trying to find out more about its execution flow.  
   
- La mayoría de las características del depurador, como la presentación de los valores de las variables en la ventana Variables locales o la evaluación de las expresiones en la ventana Inspección, solo están disponibles en el modo de interrupción. Todos los elementos de la aplicación permanecen en la memoria \(por ejemplo, las funciones, variables y objetos\), pero se suspenden sus movimientos y actividades. Durante el modo de interrupción, puede examinar las posiciones de los elementos y estados para buscar infracciones o errores. También puede realizar ajustes en la aplicación mientras está en modo de interrupción.  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Run to a specific location or function  
+ Often the preferred method of debugging code, these methods are useful when you know exactly what code you want to inspect, or at least you know where you want to start debugging.  
   
- Por último, puede configurar puntos de interrupción para suspender la ejecución en función de una serie de condiciones. Vea [Usar puntos de interrupción](../debugger/using-breakpoints.md). En esta sección se explican dos maneras básicas de interrumpir la ejecución del código.  
+-   **Set breakpoints in the code**  
   
-1.  **Establecer puntos de interrupción en el código**  
+     To set a simple breakpoint in your code, open the source file in the Visual Studio editor. Set the cursor at the line of code where you want to suspend execution, and then right-click in the code window to see the context menu and choose **Breakpoint > Insert Breakpoint** (or press **F9**). The debugger suspends execution right before the line is executed.  
   
-     Para establecer un punto de interrupción simple en el código, abra el archivo de código fuente en el editor de Visual Studio. Establezca el cursor en la línea de código en la que desea interrumpir y elija **Punto de interrupción**, **Insertar punto de interrupción** en el menú contextual \(teclado: **F9**\). El depurador interrumpe la ejecución inmediatamente antes de que se ejecute la línea.  
+     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
-     ![Establecer un punto de interrupción](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+     Breakpoints in Visual Studio provide a rich set of additional functionality, such as conditional breakpoints and tracepoints. See [Using Breakpoints](../debugger/using-breakpoints.md).  
   
-     Los puntos de interrupción proporcionan un amplio conjunto de funcionalidades adicionales en Visual Studio, como los puntos de interrupción condicionales y de seguimiento. Vea [Usar puntos de interrupción](../debugger/using-breakpoints.md).  
+-   **Run to the cursor location**  
   
-2.  **Interrumpir el código manualmente**  
+     To run to the cursor location, place the cursor on an executable line of code in a source window. On the editor's context menu (right-click in the editor), choose **Run to Cursor**. This is like setting a temporary breakpoint.
+
+-   **Run to Click** 
+
+    To run to a point in your code while paused in the debugger, select the **Run execution to here** green arrow icon (you see the icon while hovering over a line of code). This eliminates the need to set temporary breakpoints.
+
+    ![Debugger's Run to Click](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+
+    > [!NOTE]
+    > **Run to Click** is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
-     Para interrumpir en la siguiente línea de código disponible de una aplicación en ejecución, elija **Depurar**, **Interrumpir todos** \(teclado: **Ctrl\+Alt\+Break**\).  
+-   **Manually break into code**  
   
--   Si está depurando con la opción Solo mi código habilitada, se interrumpe en la siguiente línea de código del proyecto. Vea [Restringir la ejecución paso a paso a Solo mi código](#BKMK_Restrict_stepping_to_Just_My_Code).  
+     To break into the next available line of code in an executing app, choose **Debug**, **Break All** (keyboard: **Ctrl+Alt+Break**). 
   
--   Si depura varios programas, un punto de interrupción o el comando Interrumpir todos afecta de forma predeterminada a todos los programas que se están depurando. Vea [Configurar el comportamiento de ejecución de varios procesos](../debugger/debug-multiple-processes.md#BKMK_Configure_the_execution_behavior_of_multiple_processes).  
+     If you break while executing code without corresponding source or symbol (.pdb) files), the debugger displays a **Source Files Not Found** or a **Symbols Not Found** page that can help you find the appropriate files. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). If you can't access the supporting files, you can still debug the assembly instructions in the Disassembly window.  
   
--   Si interrumpe el código mientras se está ejecutando sin los archivos de código fuente o de símbolos \(archivos .pdb\) correspondientes, el depurador mostrará una página con el mensaje **No se encontraron archivos de código fuente** o **No se encontraron símbolos** que le permitirá encontrar los archivos adecuados. Vea [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+-   **Run to a function on the call stack**  
   
-     Si no puede obtener acceso a los archivos de compatibilidad, aún puede depurar las instrucciones de ensamblado en la ventana Desensamblado.  
+     In the **Call Stack** window (available while debugging), select the function, right-click and  choose **Run to Cursor**. To visually trace the call stack, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Run_to_a_specified_location_or_function"></a> Ejecutar hasta una ubicación o función determinada  
- En algunas ocasiones, puede que desee ejecutar el código hasta un punto determinado y después detener la ejecución. Si ha establecido un punto de interrupción en la ubicación en la que desea interrumpir, elija **Depurar**, **Iniciar depuración** si no ha iniciado la depuración, o **Depurar**, **Continuar**. \(En ambos casos **F5** es la tecla de método abreviado\). El depurador se detiene en el punto de interrupción siguiente en la ejecución del código. Elija **Depurar**, **Continuar** hasta que llegue al punto de interrupción que desea.  
+-   **Run to a function specified by name**  
   
- También puede ejecutar hasta el punto donde haya colocado el cursor en el editor de código o hasta una función específica.  
+     You can tell the debugger to run your application until it reaches a specified function. You can specify the function by name or you can choose it from the call stack.  
   
- **Ejecutar un proceso hasta la ubicación del cursor**  
+     To specify a function by name, choose **Debug**, **New Breakpoint**, **Break at Function**, then enter the name of the function and other identifying information.  
   
- Para ejecutar un proceso hasta la ubicación del cursor, coloque el cursor en una línea de código ejecutable de una ventana de código fuente. En el menú contextual del editor, elija **Ejecutar hasta el cursor**.  
+     ![New Breakpoint dialog box](../debugger/media/dbg_execution_newbreakpoint.png "DBG_Execution_NewBreakpoint")  
   
- **Ejecutar un proceso hasta una función de la pila de llamadas**  
+     If the function is overloaded or is in multiple namespace, you can choose the functions that you want in the **Choose Breakpoints** dialog box.  
   
- En la ventana **Pila de llamadas**, seleccione la función y elija **Ejecutar hasta el cursor** en el menú contextual. Para realizar un seguimiento visual de la pila de llamadas, vea [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+     ![Choose Breakpoints dialog box](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
- **Ejecutar un proceso hasta una función especificada por nombre**  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Move the pointer to change the execution flow  
+ While the debugger is paused, you can move the instruction pointer to set the next statement of code to be executed. A yellow arrowhead in the margin of a source or Disassembly window marks the location of the next statement to be executed. By moving this arrowhead, you can skip over a portion of code or return to a line previously executed. You can use this for situations such as skipping a section of code that contains a known bug.  
   
- Puede indicar al depurador que ejecute la aplicación hasta que llegue a una función especificada. Puede especificar la función por su nombre o elegirla en la pila de llamadas.  
+ ![Moving the Pointer](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
   
- Para especificar una función por su nombre, elija **Depurar**, **Nuevo punto de interrupción**, **Interrumpir en función** y escriba el nombre de la función y otra información de identificación.  
+ To set the next statement to execute, use one of these procedures:  
   
- ![Cuadro de diálogo Nuevo punto de interrupción](../debugger/media/dbg_execution_newbreakpoint.png "DBG\_Execution\_NewBreakpoint")  
+-   In a source window, drag the yellow arrowhead to a location where you want to set the next statement in the same source file  
   
- Si la función se sobrecarga o está en varios espacios de nombres, puede elegir las funciones que desee en el cuadro de diálogo **Elegir puntos de interrupción**.  
+-   In a source window, set the cursor on the line that you want to execute next, right-click and choose **Set Next Statement**.  
   
- ![Cuadro de diálogo Elegir puntos de interrupción](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG\_Execution\_OverloadedBreakpoints")  
-  
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Establecer la siguiente instrucción que se debe ejecutar  
- Después de interrumpir el depurador, puede mover el punto de ejecución para establecer la siguiente instrucción de código que se debe ejecutar. Una flecha amarilla en el margen de una ventana de código fuente o de la ventana Desensamblado indica la ubicación de la siguiente instrucción que se debe ejecutar. Moviendo esta flecha, puede saltarse una parte del código o volver a una línea previamente ejecutada. Puede utilizar esto en situaciones como la omisión de una sección de código que contiene un error conocido.  
-  
- ![Example2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
-  
- Para establecer la siguiente instrucción que se debe ejecutar, siga uno de estos procedimientos:  
-  
--   En una ventana de código fuente, arrastre la flecha amarilla hasta la ubicación en la que desea establecer la siguiente instrucción, dentro del mismo archivo de código fuente.  
-  
--   En una ventana de código fuente, establezca el cursor en la línea que desea ejecutar a continuación y elija **Establecer instrucción siguiente** en el menú contextual.  
-  
--   En la ventana Desensamblado, establezca el cursor en la instrucción de ensamblado que desea ejecutar a continuación y elija **Establecer instrucción siguiente** en el menú contextual.  
+-   In the Disassembly window, set the cursor on the assembly instruction that you want to execute next, right-click an and choose **Set Next Statement**.  
   
 > [!CAUTION]
->  Al establecer la siguiente instrucción, el contador del programa salta directamente a la nueva ubicación. Utilice este comando con precaución.  
+>  Setting the next statement causes the program counter to jump directly to the new location. Use this command with caution:  
 >   
->  -   No se ejecutan las instrucciones entre los puntos de ejecución anteriores y nuevos.  
-> -   Si mueve el punto de ejecución hacia atrás, no se deshacen las instrucciones intermedias.  
-> -   Al mover la instrucción siguiente a otro ámbito o función normalmente se producen daños en la pila de llamadas y un error o excepción en tiempo de ejecución. Si intenta mover la instrucción siguiente a otro ámbito, el depurador abre un cuadro de diálogo con una advertencia que le ofrece la oportunidad de cancelar la operación. En Visual Basic, no puede mover la instrucción siguiente a otro ámbito o función.  
-> -   En C\+\+ nativo, si ha habilitado comprobaciones en tiempo de ejecución, al establecer la instrucción siguiente se puede producir una excepción cuando la ejecución llegue al final del método.  
-> -   Cuando la opción Editar y continuar está habilitada, **Establecer instrucción siguiente** genera un error si se han realizado modificaciones que Editar y continuar no puede reasignar inmediatamente. Esto puede suceder, por ejemplo, si se ha editado código en un bloque catch. Cuando ocurra, aparecerá un mensaje de error que indica que no se puede realizar la operación.  
+>  -   Instructions between the old and new execution points are not executed.  
+> -   If you move the execution point backwards, intervening instructions are not undone.  
+> -   Moving the next statement to another function or scope usually results in call-stack corruption, causing a run-time error or exception. If you try moving the next statement to another scope, the debugger opens a dialog box with a warning and gives you a chance to cancel the operation. In Visual Basic, you cannot move the next statement to another scope or function.  
+> -   In native C++, if you have run-time checks enabled, setting the next statement can cause an exception to be thrown when execution reaches the end of the method.  
+> -   When Edit and Continue is enabled, **Set Next Statement** fails if you have made edits that Edit and Continue cannot remap immediately. This can occur, for example, if you have edited code inside a catch block. When this happens, you'll see an error message that tells you that the operation is not supported.  
   
 > [!NOTE]
->  En código administrado, no puede mover la instrucción siguiente en las situaciones siguientes:  
+>  In managed code, you cannot move the next statement under the following conditions:  
 >   
->  -   La instrucción siguiente está en un método diferente de la instrucción actual.  
-> -   La depuración se inició a través de la depuración Just\-In\-Time.  
-> -   Un desenredo de la pila de llamadas está en curso.  
-> -   Se ha producido una excepción System.StackOverflowException o System.Threading.ThreadAbortException.  
+>  -   The next statement is in a different method than the current statement.  
+> -   Debugging was started by using Just-In-Time debugging.  
+> -   A callstack unwind is in progress.  
+> -   A System.StackOverflowException or System.Threading.ThreadAbortException exception has been thrown.  
   
- No se puede establecer la siguiente instrucción mientras se está ejecutando activamente la aplicación. Para establecer la siguiente instrucción, el depurador debe estar en modo de interrupción.  
+ You cannot set the next statement while your application is actively running. To set the next statement, the debugger must be in break mode.  
   
-##  <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a> Restringir la ejecución paso a paso a Solo mi código  
- Puede que, durante la depuración, desee examinar únicamente el código que ha escrito y pasar por alto otro código, como el correspondiente a las llamadas al sistema. Puede hacer esto mediante la depuración de Sólo mi código. Sólo mi código oculta el código de no usuario para que no aparezca en las ventanas del depurador. Mientras avanza, el depurador avanza paso a paso a través del código de no usuario, pero no se detiene en él. Vea [Solo mi código](../debugger/just-my-code.md)  
+## <a name="BKMK_Restrict_stepping_to_Just_My_Code"></a>Step into non-user code  
+ By default, the debugger tries to show you only your app code while debugging, which is determined by a debugger setting called *Just My Code*. (See [Just My Code](../debugger/just-my-code.md) to see how this works for different project types and languages and how you might customize the behavior.) However, sometimes while you are debugging, you might want to look at framework code, third-party library code, or calls to the operating system (system calls).  
+  
+ You can turn off Just My Code  by going to **Tools** > **Options** > **Debugging** and clear the **Enable Just My Code** checkbox.  
+  
+ When Just My Code is disabled, the debugger can step into non-user code and non-user code appears in the debugger windows.  
   
 > [!NOTE]
->  Sólo mi código no se admite para los proyectos de dispositivos.  
+>  Just My Code is not supported for device projects.  
   
-##  <a name="BKMK_Step_into_system_calls"></a> Ir a llamadas del sistema  
- Si ha cargado símbolos de depuración para el código del sistema y Solo mi código no está habilitado, puede ir a una llamada del sistema al igual que lo haría con cualquier otra llamada.  
+ **Step into system calls**  
   
- Para acceder a los archivos de símbolos de Microsoft, vea [Usar servidores de símbolos para buscar archivos de símbolos que no estén en el equipo local](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) en el tema [Especificar archivos de código fuente y símbolos \(.pdb\)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ If you have loaded debugging symbols for system code and Just My Code is not enabled, you can step into a system call just as you can any other call.  
   
- Para cargar los símbolos de un componente del sistema específico durante la depuración:  
+ To access Microsoft symbol files, see [Use symbol servers to find symbol files not on your local machine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine) in the [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) topic.  
   
-1.  Abra la ventana Módulos \(teclado: **Ctrl\+Alt\+U**\).  
+ To load symbols for a specific system component while you are debugging:  
   
-2.  Seleccione el módulo para el que desea cargar los símbolos.  
+1.  Open the Modules window (keyboard: **Ctrl + Alt + U**).  
   
-     Puede indicar qué módulos tienen cargados los símbolos examinando la columna **Estado del símbolo**.  
+2.  Select the module that you want to load symbols for.  
   
-3.  Elija **Cargar símbolos** en el menú contextual.  
+     You can tell which modules have symbols loaded by looking at the **Symbol Status** column.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Ir a propiedades y operadores en código administrado  
- El depurador se salta las propiedades y los operadores en código administrado de forma predeterminada. En la mayoría de los casos, esto proporciona una mejor experiencia de depuración. Para que el depurador vaya a las propiedades y los operadores, elija **Depuración**, **Opciones y configuración**. En la página **Depuración**, **General**, desactive la casilla **Saltar propiedades y operadores \(solo administrado\)**.
+3.  Choose **Load Symbols** on the context menu.  
+  
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Step into properties and operators in managed code  
+ The debugger steps over properties and operators in managed code by default. In most cases, this provides a better debugging experience. To enable stepping into properties or operators, choose **Debug** > **Options**. On the **Debugging** > **General** page, clear the **Step over properties and operators (Managed only)** check box

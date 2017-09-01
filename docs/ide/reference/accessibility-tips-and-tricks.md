@@ -1,7 +1,7 @@
 ---
-title: Sugerencias y trucos de accesibilidad | Microsoft Docs
+title: Accessibility tips and tricks | Microsoft Docs
 ms.custom: 
-ms.date: 06/27/2017
+ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -12,65 +12,54 @@ helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 837df3bb8da963fa12ee02b39d19509336873d21
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 906e8c70df502245001f87795cab9f5efe808c83
 ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="accessibility-tips-and-tricks"></a>Sugerencias y trucos de accesibilidad
-Visual Studio incluye características de accesibilidad integradas que permiten trabajar con facilidad desde el teclado y usar lectores de pantalla u otros dispositivos de tecnología de asistencia. En este tema se incluyen algunas sugerencias con el fin de hacer Visual Studio accesible, así como algunas combinaciones de teclas de método abreviado útiles. Las combinaciones de teclas de método abreviado le permiten realizar tareas en Visual Studio con el teclado.
+# <a name="accessibility-tips-and-tricks"></a>Accessibility tips and tricks
+> [!TIP]
+> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
 
-## <a name="save-your-ide-settings"></a>Guardar la configuración del IDE  
- Puede personalizar la experiencia del IDE si guarda el diseño de ventanas, el esquema de asignación de teclado y otras preferencias. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+Visual Studio includes built-in accessibility features so you can easily work from the keyboard and use screen readers or other assistive technology devices. The topic includes some suggestions for optimizing Visual Studio for accessibility as well as some useful shortcut key combinations. Shortcut key combinations enable you to perform tasks in Visual Studio by using the keyboard.
 
-## <a name="accessing-toolbars"></a>Acceso a las barras de herramientas
-El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas de herramientas. Las siguientes combinaciones de teclas de método abreviado le ayudarán a tener acceso a ellas.
+## <a name="save-your-ide-settings"></a>Save your IDE settings  
+ You can customize your IDE experience by saving your window layout, keyboard mapping scheme, and other preferences. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
 
-|Característica|Descripción|Combinación de teclas|  
+## <a name="accessing-toolbars"></a>Accessing toolbars
+The Visual Studio IDE has toolbars as do many tool windows. The following shortcut key combinations help you access them.
+
+|Feature|Description|Key Combination|  
 |-------------|-----------------|---------------------|  
-|Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB**|  
-|Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**MAYÚS** + **ALT**|
-|Barras de herramientas|Ir al primer elemento en la siguiente barra de herramientas (cuando una barra de herramientas tiene el foco).|**CTRL** + **TAB**|
+|IDE toolbars|Select the first button on the Standard toolbar.|**ALT**, **CTRL** + **TAB**|  
+|Tool window toolbars|Move focus to the toolbars in a tool window. <br> <br> **NOTE:** This works for most tool windows, but only when the focus is in a tool window. Also, you must choose the SHIFT key before the ALT key. In some tool windows, such as Team Explorer, you must hold the SHIFT key for a moment before choosing the ALT key.|**SHIFT** + **ALT**|
+|Toolbars|Go to the first item in the next toolbar (when a toolbar has focus).|**CTRL** + **TAB**|
 
-## <a name="other-useful-shortcut-key-combinations"></a>Otras combinaciones útiles de teclas de método abreviado  
-Otras combinaciones útiles de teclas de método abreviado son las siguientes.
+## <a name="other-useful-shortcut-key-combinations"></a>Other useful shortcut key combinations  
+Some other useful shortcut key combinations include the following.
 
-|Característica|Descripción|Combinación de teclas|  
+|Feature|Description|Key Combination|  
 |-------------|-----------------|---------------------|  
-|IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Acceso directo estándar de Windows|**ALT izquierda + MAYÚS izquierda + IMPR PANT**|  
-|Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Acceso directo estándar de Windows|**BARRA ESPACIADORA**|  
-|Menús contextuales|Abrir un menú contextual (clic con el botón derecho). <br> <br> **NOTA:** Acceso directo estándar de Windows|**MAYÚS** + **F10**|
-|Menús|Obtener acceso rápidamente a un elemento de menú con sus teclas de aceleración. Pulse la tecla **ALT** seguida de letras subrayadas en un menú para activar el comando. Por ejemplo, para ver el cuadro de diálogo Abrir proyecto en Visual Studio, pulsaría **ALT** + **F** + **O** + **P**.  <br><br> **NOTA:** Acceso directo estándar de Windows|**ALT** + **[letra]**|
-|Ventana Cuadro de herramientas|Desplazarse por las pestañas del cuadro de herramientas.|**CTRL** + **FLECHA ARRIBA**<br /><br /> y<br /><br /> **CTRL** + **FLECHA ABAJO**|  
-|Ventana Cuadro de herramientas|Agregar un control del cuadro de herramientas a un formulario o diseñador.|**ENTRAR**|  
-|Teclado, Entorno, Opciones (cuadro de diálogo)|Eliminar una combinación de teclas especificada en la opción **Presionar teclas de método abreviado**.|**RETROCESO**|  
+|IDE|Switch High Contrast on and off. <br> <br> **NOTE:** Standard Windows shortcut|**Left ALT + Left SHIFT + PRINT SCREEN**|  
+|Dialog box|Select or clear the check box option in a dialog box. <br> <br> **NOTE:** Standard Windows shortcut|**SPACEBAR**|  
+|Context menus|Open a context (right-click) menu. <br> <br> **NOTE:** Standard Windows shortcut|**SHIFT** + **F10**|
+|Menus|Quickly access a menu item by using its accelerator keys. Choose the **ALT** key followed by the underlined letters in a menu to activate the command. For example, to view the Open Project dialog box in Visual Studio, you would choose **ALT** + **F** + **O** + **P**.  <br><br> **NOTE:** Standard Windows shortcut|**ALT** + **[letter]**|
+|Toolbox window|Move among Toolbox tabs.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|  
+|Toolbox window|Add a control from the Toolbox to a form or designer.|**ENTER**|  
+|Keyboard, Environment, Options dialog box|Delete a key combination entered in the **Press shortcut keys** option.|**BACKSPACE**|  
 
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition.  
 
-## <a name="see-also"></a>Vea también  
- [Características de accesibilidad de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+## <a name="see-also"></a>See also  
+ [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 
- [Cómo: Personalizar menús y barras de herramientas en Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+ [How to: Customize Menus and Toolbars in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 
- [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
+ [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 

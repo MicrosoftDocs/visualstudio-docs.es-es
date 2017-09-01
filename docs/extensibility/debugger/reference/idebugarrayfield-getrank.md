@@ -1,51 +1,68 @@
 ---
-title: "IDebugArrayField::GetRank | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetRank"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetRank (método)"
+title: IDebugArrayField::GetRank | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayField::GetRank
+helpviewer_keywords:
+- IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugArrayField::GetRank
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b410db9d146397242ffbafd0ca7314c0fcea30bc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Obtiene la fila o el número de dimensiones de la matriz.  
+---
+# <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
+Gets the rank or number of dimensions of the array.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetRank(   
-   DWORD* pdwRank  
+```cpp  
+HRESULT GetRank(   
+   DWORD* pdwRank  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetRank(  
-   out uint pdwRank  
+   out uint pdwRank  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pdwRank`  
- \[out\]  devuelve a la fila.  
+ [out] Returns the rank.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Comentarios  
- La fila de una matriz corresponde al número de dimensiones.  En C\+\+ y C\#, las matrices multidimensionales son realmente matrices de matrices y pueden por consiguiente ver solamente una matriz unidimensional \(y el método de `GetRank` siempre devuelve 1\).  En [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por otra parte, las matrices multidimensionales se controlan de manera diferente y fila de este tipo de matriz refleja el número de dimensiones \(y método de `GetRank` siempre devuelve el número de dimensiones\).  
+## <a name="remarks"></a>Remarks  
+ The rank of an array corresponds to the number of dimensions. In C++ and C#, multi-dimensional arrays are really arrays of arrays and can therefore be considered just a one-dimensional array (and the `GetRank` method always returns 1). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], on the other hand, multi-dimensional arrays are handled differently and the rank of such an array reflects the number of dimensions (and the `GetRank` method always returns the number of dimensions).  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

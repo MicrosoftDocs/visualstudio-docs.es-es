@@ -1,52 +1,69 @@
 ---
-title: "IDebugDocumentContext2::GetDocument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetDocument"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetDocument"
+title: IDebugDocumentContext2::GetDocument | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentContext2::GetDocument
+helpviewer_keywords:
+- IDebugDocumentContext2::GetDocument
 ms.assetid: c6d46c5d-ade8-4dc8-9862-8fc7876658c4
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentContext2::GetDocument
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e2ff6daf8f7eb905553b3bfd9459357247485624
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Obtiene el documento que contiene este contexto de documento.  
+---
+# <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
+Gets the document that contains this document context.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetDocument(   
-   IDebugDocument2** ppDocument  
+```cpp  
+HRESULT GetDocument(   
+   IDebugDocument2** ppDocument  
 );  
 ```  
   
-```c#  
-int GetDocument(   
-   out IDebugDocument2 ppDocument  
+```csharp  
+int GetDocument(   
+   out IDebugDocument2 ppDocument  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppDocument`  
- \[out\]  Devuelve un objeto de [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) que representa el documento que contiene este contexto de documento.  
+ [out] Returns an [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) object that represents the document that contains this document context.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método es para los motores de depuración que especifique documentos directamente al IDE.  De lo contrario, este método debe devolver `E_NOTIMPL`.  
+## <a name="remarks"></a>Remarks  
+ This method is for those debug engines that supply documents directly to the IDE. Otherwise, this method should return `E_NOTIMPL`.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

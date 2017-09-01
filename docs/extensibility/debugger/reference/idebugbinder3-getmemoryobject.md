@@ -1,60 +1,77 @@
 ---
-title: "IDebugBinder3::GetMemoryObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetMemoryObject"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetMemoryObject (método)"
+title: IDebugBinder3::GetMemoryObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder3::GetMemoryObject
+helpviewer_keywords:
+- IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugBinder3::GetMemoryObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dc888c192209ae16b96e7b045f5a694b861c9db6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Este método recupera un objeto de memoria que representa la memoria que este objeto está enlazado a.  
+---
+# <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
+This method retrieves a memory object that represents the memory that this object is bound to.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetMemoryObject(  
-   IDebugField*   pField,  
-   UINT64         uConstant,  
-   IDebugObject** ppObject  
+HRESULT GetMemoryObject(  
+   IDebugField*   pField,  
+   UINT64         uConstant,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
-int GetMemoryObject(  
-   IDebugField      pField,  
-   long             uConstant,  
-   out IDebugObject ppObject  
+```csharp  
+int GetMemoryObject(  
+   IDebugField      pField,  
+   long             uConstant,  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pField`  
- \[in\]  Especifica que campo para obtener el objeto de memoria.  
+ [in] Specifies which field to get the memory object for.  
   
  `uConstant`  
- \[in\]  representa una dirección de memoria o un valor por un valor constante.  
+ [in] Represents a memory address or value for a constant value.  
   
  `ppObject`  
- \[out\]  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa la memoria que este objeto está enlazado a.  
+ [out] An [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the memory that this object is bound to.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

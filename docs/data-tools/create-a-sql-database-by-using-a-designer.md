@@ -1,206 +1,203 @@
 ---
-title: "Tutorial: Crear un archivo de base de datos local en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], datos locales"
-  - "datos [Visual Studio], tutoriales"
-  - "archivos de base de datos, crear"
-  - "bases de datos, crear"
-  - "datos locales"
-  - "LocalDB"
-  - "SQL Express"
-  - "SQL Server Express"
-  - "SQLEXPRESS"
+title: Create a SQL database by using a designer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- SQL Server Express
+- local data
+- LocalDB
+- SQLEXPRESS
+- data [Visual Studio], Local data
+- SQL Express
+- data [Visual Studio], walkthroughs
+- databases, creating
+- database files, creating
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 49
-caps.handback.revision: 44
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: f83a5530eccf7c24e351dd29c7d083c5593a7878
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Crear un archivo de base de datos local en Visual Studio
-Puede explorar tareas básicas, tales como agregar tablas y definir columnas, utilizando Visual Studio para crear y actualizar un archivo de base de datos local en SQL Server Express LocalDB, como se describe en [Información general de datos locales](../data-tools/local-data-overview.md).  Después de finalizar este tutorial, puede explorar las funciones más avanzadas usando la base de datos local como punto de partida para otros tutoriales que la necesiten.  
+# <a name="create-a-sql-database-by-using-a-designer"></a>Create a SQL database by using a designer
+You can explore basic tasks, such as adding tables and defining columns, by using Visual Studio to create and update a local database file in SQL Server Express LocalDB. After you finish this walkthrough, you can discover more advanced capabilities by using your local database as a starting point for other walkthroughs that require it.  
   
- Para obtener información sobre cómo crear una base de datos mediante SQL Server Management Studio o Transact\-SQL, vea [Create a Database](http://msdn.microsoft.com/es-es/4c4beea2-6cbc-4352-9db6-49ea8130bb64).  
+ You can also create a database by using SQL Server Management Studio (a separate download) or Transact-SQL statements in the **SQL Server Object Explorer** tool window in Visual Studio.  
   
- Durante este tutorial explorará las tareas siguientes:  
+ During this walkthrough, you'll explore the following tasks:  
   
--   [Crear un proyecto y un archivo de base de datos local](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB).  
+-   [Create a project and a local database file](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
--   [Crear tablas, columnas, claves principales y claves externas](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls).  
+-   [Create tables, columns, primary keys, and foreign keys](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
   
--   [Rellenar las tablas con datos](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating).  
+-   [Populate the tables with data](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
-## Requisitos previos  
- Para completar este tutorial, instale [!INCLUDE[vs_dev12_expwin](../data-tools/includes/vs_dev12_expwin_md.md)], Visual Studio Professional 2013, Visual Studio Premium 2013 o Visual Studio Ultimate 2013.  Estas versiones de Visual Studio incluyen SQL Server Data Tools.  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, ensure that you have SQL Server Data Tools installed. On the **View** menu, you should see **SQL Server Object Explorer**. If it's not there, go to **Add or Remove Programs**, click **Visual Studio 2015**, select **Change**, and select the box next to **SQL Server Data Tools**.  
   
-##  <a name="BKMK_CreateNewSQLDB"></a> Crear un proyecto y un archivo de base de datos local  
+##  <a name="BKMK_CreateNewSQLDB"></a> Create a project and a local database file  
   
-#### Para crear un proyecto y un archivo de base de datos  
+#### <a name="to-create-a-project-and-a-database-file"></a>To create a project and a database file  
   
-1.  Cree un proyecto de formularios Windows Forms denominado `SampleDatabaseWalkthrough`.  
+1.  Create a Windows Forms project that's named `SampleDatabaseWalkthrough`.  
   
-     Vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).  
+2.  On the menu bar, select **Project** > **Add New Item**.  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.  
+3.  In the list of item templates, scroll down and select **Service-based Database**.  
   
-     Aparece el cuadro de diálogo **Agregar nuevo elemento** para que pueda agregar los elementos adecuados a un proyecto de formularios Windows Forms.  
+     ![Item Templates dialog box](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-3.  En la lista de plantillas de elemento, desplácese hacia abajo hasta que aparezca **Base de datos basada en servicio** y elíjala.  
+4.  Name the database **SampleDatabase**, and then select the **Add** button.  
   
-     ![Cuadro de diálogo Plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+5.  If the **Data Sources** window isn't open, open it by selecting the Shift+Alt+D keys or, on the menu bar, selecting **View** > **Other Windows** > **Data Sources**.  
   
-4.  Asigne un nombre a la base de datos SampleDatabase y elija el botón **Agregar**.  
+6.  In the **Data Sources** window, select the **Add New Data Source** link.  
   
-5.  Si la ventana Orígenes de datos no está abierta, ábrala eligiendo las teclas Mayús\-Alt\-D o, en la barra de menús, elija **Ver**, **Otras ventanas**, **Orígenes de datos**.  
+7.  In the **Data Source Configuration Wizard**, select the **Next** button four times to accept the default settings, and then select the **Finish** button.  
   
-6.  En la ventana Orígenes de datos, elija el vínculo **Agregar nuevo origen de datos**.  
+ By opening the properties window for the database, you can view its connection string and the location of the primary .mdf file. You will see that the database file is in the project folder.  
   
-7.  En el **Asistente para configuración de orígenes de datos**, elija el botón **Siguiente** cuatro veces para aceptar la configuración predeterminada y, después, elija el botón **Finalizar**.  
+-   In Visual Studio, select **View** > **SQL Server Object Explorer** if that window isn't already open. Open the properties window by expanding the **Data Connections** node, opening the shortcut menu for SampleDatabase.mdf, and then selecting **Properties**.  
   
- Abra la ventana de propiedades de la base de datos para ver la cadena de conexión y la ubicación del archivo .mdf principal.  
+-   Alternatively, you can select **View** > **Server Explorer**, if that window isn't already open. Open the properties window by expanding the **Data Connections** node. Open the shortcut menu for SampleDatabase.mdf, and then select **Properties**.  
   
--   En Visual Studio Express, elija **Ver**, **Otras ventanas**, **Explorador de bases de datos** si esa ventana no está abierta todavía.  Para abrir la ventana de propiedades, expanda el nodo **Conexiones de datos**, abra el menú contextual de SampleDatabase.mdf y, después, elija **Propiedades**.  
+##  <a name="BKMK_CreateNewTbls"></a> Create tables, columns, primary keys, and foreign keys  
+ In this section, you'll create a couple of tables, a primary key in each table, and a few rows of sample data. In the next walkthrough, you'll get an idea of how that information might appear in an application. You'll also create a foreign key to specify how records in one table might correspond to records in the other table.  
   
--   En otras versiones de Visual Studio, elija **Ver**, **Explorador de servidores** si esta ventana no está abierta todavía.  Para abrir la ventana de propiedades, expanda el nodo **Conexiones de datos**, abra el menú contextual de SampleDatabase.mdf y, después, elija **Propiedades**.  
+#### <a name="to-create-the-customers-table"></a>To create the Customers table  
   
-##  <a name="BKMK_CreateNewTbls"></a> Crear tablas, columnas, claves principales y claves externas  
- En esta sección, creará un par de tablas, una clave principal en cada tabla y algunas filas de datos de ejemplo.  En el siguiente tutorial, obtendrá una idea de cómo puede aparecer esa información en una aplicación.  También creará una clave externa para especificar cuántos registros de una tabla pueden corresponder a registros de la otra tabla.  
+1.  In **Server Explorer** or **SQL Server Object Explorer**, expand the **Data Connections** node, and then expand the **SampleDatabase.mdf** node.  
   
-#### Para crear la tabla Customers  
+2.  Open the shortcut menu for **Tables**, and then select **Add New Table**.  
   
-1.  En el **Explorador de servidores** o **Explorador de bases de datos**, expanda el nodo **Conexiones de datos** y, a continuación, expanda el nodo **SampleDatabase.mdf**.  
+     The **Table Designer** opens and shows a grid with one default row, which represents a single column in the table that you're creating. By adding rows to the grid, you'll add columns in the table.  
   
-     Si el explorador para su versión de Visual Studio no está abierto, elija **Ver**, **Explorador de servidores** o **Ver**, **Otras ventanas**, **Explorador de bases de datos** en la barra de menús.  
+3.  In the grid, add a row for each of the following entries:  
   
-2.  Abra el menú contextual para **Tablas** y, a continuación, elija **Agregar nueva tabla**.  
+    |Column name|Data type|Allow nulls|  
+    |-----------------|---------------|-----------------|  
+    |`CustomerID`|`nchar(5)`|False (cleared)|  
+    |`CompanyName`|`nvarchar(50)`|False (cleared)|  
+    |`ContactName`|`nvarchar (50)`|True (selected)|  
+    |`Phone`|`nvarchar (24)`|True (selected)|  
   
-     El **Diseñador de tablas** se abre y muestra una cuadrícula con una fila predeterminada que representa una columna única de la tabla que está creando.  Al agregar filas a la cuadrícula, agregará columnas en la tabla.  
+4.  Open the shortcut menu for the `CustomerID` row, and then select **Set Primary Key**.  
   
-3.  En la cuadrícula, agregue una fila para cada una de las entradas siguientes:  
+5.  Open the shortcut menu for the default row, and then select **Delete**.  
   
-    |Nombre de columna|Tipo de datos|Permitir valores NULL|  
-    |-----------------------|-------------------|---------------------------|  
-    |`CustomerID`|`nchar(5)`|False \(desactivada\)|  
-    |`CompanyName`|`nvarchar(40)`|False \(desactivada\)|  
-    |`ContactName`|`nvarchar (30)`|True \(seleccionada\)|  
-    |`Phone`|`nvarchar (24)`|True \(seleccionada\)|  
-  
-4.  Abra el menú contextual para la fila `CustomerID` y, a continuación, elija **Establecer clave principal**.  
-  
-5.  Abra el menú contextual para la fila predeterminada y, a continuación, elija **Eliminar**.  
-  
-6.  Asigne un nombre a la tabla Customers actualizando la primera línea del panel de script para que coincida con el ejemplo siguiente:  
+6.  Name the Customers table by updating the first line in the script pane to match the following sample:  
   
     ```  
     CREATE TABLE [dbo].[Customers]  
     ```  
   
-7.  En la esquina superior izquierda del diseñador de tablas, elija el botón **Actualizar**, tal como se muestra la ilustración siguiente.  
+     You should see something like this:  
   
-     ![Botón Actualizar para el diseñador de tablas](../data-tools/media/updatelocaldb.png "UpdateLocalDB")  
+     ![Table Designer](../data-tools/media/raddata-table-designer.png "raddata Table Designer")  
   
-8.  En el cuadro de diálogo **Vista previa de actualizaciones de base de datos**, elija el botón **Actualizar base de datos**.  
+7.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-     Los cambios realizados se guardarán en el archivo de base de datos local.  
+8.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-#### Para crear la tabla Orders  
+     Your changes are saved to the local database file.  
   
-1.  Agregue otra tabla y, después, agregue una fila para cada entrada de la tabla siguiente:  
+#### <a name="to-create-the-orders-table"></a>To create the Orders table  
   
-    |Nombre de columna|Tipo de datos|Permitir valores NULL|  
-    |-----------------------|-------------------|---------------------------|  
-    |`OrderID`|`int`|False \(desactivada\)|  
-    |`CustomerID`|`nchar(5)`|False \(desactivada\)|  
-    |`OrderDate`|`datetime`|True \(seleccionada\)|  
-    |`OrderQuantity`|`int`|True \(seleccionada\)|  
+1.  Add another table, and then add a row for each entry in the following table:  
   
-2.  Establezca **OrderID** como la clave principal y después elimine la fila predeterminada.  
+    |Column name|Data type|Allow nulls|  
+    |-----------------|---------------|-----------------|  
+    |`OrderID`|`int`|False (cleared)|  
+    |`CustomerID`|`nchar(5)`|False (cleared)|  
+    |`OrderDate`|`datetime`|True (selected)|  
+    |`OrderQuantity`|`int`|True (selected)|  
   
-3.  Asigne un nombre a la tabla Orders actualizando la primera línea del panel de script para que coincida con el ejemplo siguiente:  
+2.  Set **OrderID** as the primary key, and then delete the default row.  
+  
+3.  Name the Orders table by updating the first line in the script pane to match the following sample:  
   
     ```  
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  En la esquina superior izquierda del Diseñador de tablas, elija el botón **Actualizar**.  
+4.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-5.  En el cuadro de diálogo **Vista previa de actualizaciones de base de datos**, elija el botón **Actualizar base de datos**.  
+5.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-     Los cambios realizados se guardarán en el archivo de base de datos local.  
+     Your changes are saved to the local database file.  
   
-#### Para crear una clave externa  
+#### <a name="to-create-a-foreign-key"></a>To create a foreign key  
   
-1.  En el panel de contexto de la derecha de la cuadrícula, abra el menú contextual **Claves externas** y, a continuación, elija **Agregar nueva clave externa**, como muestra la siguiente ilustración.  
+1.  In the context pane on the right side of the grid, open the shortcut menu for **Foreign Keys**, and then select **Add New Foreign Key**, as the following illustration shows.  
   
-     ![Agregar una clave externa en el diseñador de tablas](../data-tools/media/foreignkey.png "ForeignKey")  
+     ![Adding a foreign key in Table Designer](../data-tools/media/foreignkey.png "ForeignKey")  
   
-2.  En el cuadro de texto que aparece, reemplace **ToTable** por `Clientes`.  
+2.  In the text box that appears, replace **ToTable** with `Customers`.  
   
-3.  En el panel de script, actualice la última línea para que coincida con el ejemplo siguiente:  
+3.  In the T-SQL pane, update the last line to match the following sample:  
   
     ```  
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  En la esquina superior izquierda del Diseñador de tablas, elija el botón **Actualizar**.  
+4.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-5.  En el cuadro de diálogo **Vista previa de actualizaciones de base de datos**, elija el botón **Actualizar base de datos**.  
+5.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-     Los cambios realizados se guardarán en el archivo de base de datos local.  
+     Your changes are saved to the local database file.  
   
-##  <a name="BKMK_Populating"></a> Rellenar las tablas con datos  
+##  <a name="BKMK_Populating"></a> Populate the tables with data  
   
-#### Para rellenar las tablas con datos  
+#### <a name="to-populate-the-tables-with-data"></a>To populate the tables with data  
   
-1.  En el **Explorador de servidores** o el **Explorador de bases de datos**, expanda el nodo de la base de datos de ejemplo.  
+1.  In **Server Explorer** or **SQL Server Object Explorer**, expand the node for the sample database.  
   
-2.  Abra el menú contextual del nodo Tablas, elija **Actualizar** y expanda el nodo Tablas.  
+2.  Open the shortcut menu for the **Tables** node, select **Refresh**, and then expand the **Tables** node.  
   
-3.  Abra el menú contextual para la tabla Customers y, a continuación, elija **Mostrar datos de tabla**.  
+3.  Open the shortcut menu for the Customers table, and then select **Show Table Data**.  
   
-4.  Agregue los datos que desee de al menos tres clientes.  
+4.  Add whatever data you want for at least three customers.  
   
-     Puede especificar los cinco caracteres que desee como identificadores de cliente, pero elija al menos uno que pueda recordar para usarlo posteriormente en este procedimiento.  
+     You can specify any five characters you want as the customer IDs, but choose at least one that you can remember for use later in this procedure.  
   
-5.  Abra el menú contextual para la tabla Orders y, a continuación, elija **Mostrar datos de tabla**.  
+5.  Open the shortcut menu for the Orders table, and then select **Show Table Data**.  
   
-6.  Agregue datos para al menos tres pedidos.  
+6.  Add data for at least three orders.  
   
     > [!IMPORTANT]
-    >  Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna de la tabla Customers.  
+    >  Make sure that all order IDs and order quantities are integers and that each customer ID  matches a value that you specified in the CustomerID column of the Customers table.  
   
-7.  En la barra de menús, elija **Archivo**, **Guardar todo**.  
+7.  On the menu bar, select **File** > **Save All**.  
   
-8.  En la barra de menús, elija **Archivo**, **Cerrar solución**.  
+8.  On the menu bar, select **File** > **Close Solution**.  
   
     > [!NOTE]
-    >  Como procedimiento recomendado, puede hacer una copia de seguridad del archivo de base de datos que acaba de crear, copiándolo y luego pegando la copia en otra ubicación o dando a la copia un nombre diferente.  
+    >  As a best practice, you can back up the database file that you just created by copying it and then either pasting the copy in another location or giving the copy a different name.  
   
-## Pasos siguientes  
- Ahora que tiene un archivo de base de datos local con algunos datos de ejemplo, puede completar [Tutorial: Conectar con los datos de un archivo de base de datos local \(Windows Forms\)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md), además de otros tutoriales que muestran tareas de base de datos.  
-  
-## Vea también  
- [Cómo: Administrar archivos de datos locales en los proyectos](../data-tools/how-to-manage-local-data-files-in-your-project.md)   
- [Información general de datos locales](../data-tools/local-data-overview.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Información general de las aplicaciones de datos en Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+## <a name="next-steps"></a>Next Steps  
+ Now that you have a local database file with some sample data, you can complete any of the walkthroughs that demonstrate database tasks.

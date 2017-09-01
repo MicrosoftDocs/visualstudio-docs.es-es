@@ -1,129 +1,146 @@
 ---
-title: "Implementaci&#243;n GetMethodProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetMethodProperty (método)"
-  - "Propiedad IDebugExpressionEvaluator2"
+title: Implementing GetMethodProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetMethodProperty method
+- IDebugExpressionEvaluator2 property
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Implementaci&#243;n GetMethodProperty
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a1aa97237bf99f9f0f3d608550e83a416b8bcbac
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="implementing-getmethodproperty"></a>Implementing GetMethodProperty
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está obsoleta. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresiones administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Visual Studio llama el motor de depuración \(DE\) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), que a su vez llama [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obtener información sobre el método actual en el marco de pila.  
+ Visual Studio calls the debug engine's (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), which in turn calls [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) to obtain information about the current method on the stack frame.  
   
- Esta implementación de `IDebugExpressionEvaluator::GetMethodProperty` realiza las siguientes tareas:  
+ This implementation of `IDebugExpressionEvaluator::GetMethodProperty` performs the following tasks:  
   
-1.  Llamadas [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md), pasando el [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) objeto. El proveedor de símbolos \(SP\) devuelve un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa el método que contiene la dirección especificada.  
+1.  Calls [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md), passing in the [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) object. The symbol provider (SP) returns an [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) representing the method that contains the specified address.  
   
-2.  Obtiene el [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) desde el `IDebugContainerField`.  
+2.  Obtains the [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) from the `IDebugContainerField`.  
   
-3.  Crea una instancia de una clase \(denominada `CFieldProperty` en este ejemplo\) que implementa el [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) de la interfaz y contiene la `IDebugMethodField` objeto devuelto desde el SP.  
+3.  Instantiates a class (called `CFieldProperty` in this example) that implements the [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface and contains the `IDebugMethodField` object returned from the SP.  
   
-4.  Devuelve el `IDebugProperty2` de la interfaz de la `CFieldProperty` objeto.  
+4.  Returns the `IDebugProperty2` interface from the `CFieldProperty` object.  
   
-## Código administrado  
- Este ejemplo muestra una implementación de `IDebugExpressionEvaluator::GetMethodProperty` en código administrado.  
+## <a name="managed-code"></a>Managed Code  
+ This example shows an implementation of `IDebugExpressionEvaluator::GetMethodProperty` in managed code.  
   
-```c#  
+```csharp  
 namespace EEMC  
 {  
-    [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  
-    public class EEMCClass : IDebugExpressionEvaluator  
-    {  
-        public HRESULT GetMethodProperty(  
-                IDebugSymbolProvider symbolProvider,  
-                IDebugAddress        address,  
-                IDebugBinder         binder,  
-                int                  includeHiddenLocals,  
-            out IDebugProperty2      property)   
-        {  
-            IDebugContainerField containerField = null;  
-            IDebugMethodField methodField       = null;  
-            property = null;  
+    [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  
+    public class EEMCClass : IDebugExpressionEvaluator  
+    {  
+        public HRESULT GetMethodProperty(  
+                IDebugSymbolProvider symbolProvider,  
+                IDebugAddress        address,  
+                IDebugBinder         binder,  
+                int                  includeHiddenLocals,  
+            out IDebugProperty2      property)   
+        {  
+            IDebugContainerField containerField = null;  
+            IDebugMethodField methodField       = null;  
+            property = null;  
   
-            // Get the containing method field.  
-            symbolProvider.GetContainerField(address, out containerField);  
-            methodField = (IDebugMethodField) containerField;  
+            // Get the containing method field.  
+            symbolProvider.GetContainerField(address, out containerField);  
+            methodField = (IDebugMethodField) containerField;  
   
-            // Return the property of method field.  
-            property = new CFieldProperty(symbolProvider, address, binder, methodField);  
-            return COM.S_OK;  
-        }  
-    }  
+            // Return the property of method field.  
+            property = new CFieldProperty(symbolProvider, address, binder, methodField);  
+            return COM.S_OK;  
+        }  
+    }  
 }  
 ```  
   
-## Código no administrado  
- Este ejemplo muestra una implementación de `IDebugExpressionEvaluator::GetMethodProperty` en código no administrado.  
+## <a name="unmanaged-code"></a>Unmanaged Code  
+ This example shows an implementation of `IDebugExpressionEvaluator::GetMethodProperty` in unmanaged code.  
   
 ```  
 [CPP]  
 STDMETHODIMP CExpressionEvaluator::GetMethodProperty(  
-        in IDebugSymbolProvider *pprovider,  
-        in IDebugAddress        *paddress,  
-        in IDebugBinder         *pbinder,  
-        in BOOL                  includeHiddenLocals,  
-        out IDebugProperty2    **ppproperty  
-    )  
+        in IDebugSymbolProvider *pprovider,  
+        in IDebugAddress        *paddress,  
+        in IDebugBinder         *pbinder,  
+        in BOOL                  includeHiddenLocals,  
+        out IDebugProperty2    **ppproperty  
+    )  
 {  
-    if (pprovider == NULL)  
-        return E_INVALIDARG;  
+    if (pprovider == NULL)  
+        return E_INVALIDARG;  
   
-    if (ppproperty == NULL)  
-        return E_INVALIDARG;  
-    else  
-        *ppproperty = 0;  
+    if (ppproperty == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *ppproperty = 0;  
   
-    HRESULT hr;  
-    IDebugContainerField* pcontainer = NULL;  
+    HRESULT hr;  
+    IDebugContainerField* pcontainer = NULL;  
   
-    hr = pprovider->GetContainerField(paddress, &pcontainer);  
-    if (FAILED(hr))  
-        return hr;  
+    hr = pprovider->GetContainerField(paddress, &pcontainer);  
+    if (FAILED(hr))  
+        return hr;  
   
-    IDebugMethodField*    pmethod    = NULL;  
-    hr = pcontainer->QueryInterface( IID_IDebugMethodField,  
-            reinterpret_cast<void**>(&pmethod));  
-    pcontainer->Release();  
-    if (FAILED(hr))  
-        return hr;  
+    IDebugMethodField*    pmethod    = NULL;  
+    hr = pcontainer->QueryInterface( IID_IDebugMethodField,  
+            reinterpret_cast<void**>(&pmethod));  
+    pcontainer->Release();  
+    if (FAILED(hr))  
+        return hr;  
   
-    CFieldProperty* pfieldProperty = new CFieldProperty( pprovider,  
-                                                         paddress,  
-                                                         pbinder,  
-                                                         pmethod );  
-    pmethod->Release();  
-    if (!pfieldProperty)  
-        return E_OUTOFMEMORY;  
+    CFieldProperty* pfieldProperty = new CFieldProperty( pprovider,  
+                                                         paddress,  
+                                                         pbinder,  
+                                                         pmethod );  
+    pmethod->Release();  
+    if (!pfieldProperty)  
+        return E_OUTOFMEMORY;  
   
-    hr = pfieldProperty->Init();  
-    if (FAILED(hr))  
-    {  
-        pfieldProperty->Release();  
-        return hr;  
-    }  
+    hr = pfieldProperty->Init();  
+    if (FAILED(hr))  
+    {  
+        pfieldProperty->Release();  
+        return hr;  
+    }  
   
-    hr = pfieldProperty->QueryInterface( IID_IDebugProperty2,  
-            reinterpret_cast<void**>(ppproperty));  
-    pfieldProperty->Release();  
+    hr = pfieldProperty->QueryInterface( IID_IDebugProperty2,  
+            reinterpret_cast<void**>(ppproperty));  
+    pfieldProperty->Release();  
   
-    return hr;  
+    return hr;  
 }  
 ```  
   
-## Vea también  
- [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)
+## <a name="see-also"></a>See Also  
+ [Sample Implementation of Locals](../../extensibility/debugger/sample-implementation-of-locals.md)

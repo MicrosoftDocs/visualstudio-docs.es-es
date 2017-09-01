@@ -1,54 +1,70 @@
 ---
-title: "CA1041: Proporcionar un mensaje ObsoleteAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1041"
-  - "ProvideObsoleteAttributeMessage"
-helpviewer_keywords: 
-  - "ProvideObsoleteAttributeMessage"
-  - "CA1041"
+title: 'CA1041: Provide ObsoleteAttribute message | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1041
+- ProvideObsoleteAttributeMessage
+helpviewer_keywords:
+- ProvideObsoleteAttributeMessage
+- CA1041
 ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA1041: Proporcionar un mensaje ObsoleteAttribute
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bd0bbbc6604802eb945f9f7430e4474e22352753
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Provide ObsoleteAttribute message
 |||  
 |-|-|  
 |TypeName|ProvideObsoleteAttributeMessage|  
-|Identificador de comprobación|CA1041|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1041|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un tipo o miembro se marca mediante un atributo <xref:System.ObsoleteAttribute?displayProperty=fullName> para la que no se ha especificado su propiedad <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Cause  
+ A type or member is marked by using a <xref:System.ObsoleteAttribute?displayProperty=fullName> attribute that does not have its <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> property specified.  
   
-## Descripción de la regla  
- <xref:System.ObsoleteAttribute> se utiliza para marcar los tipos y miembros obsoletos de la biblioteca.  Los consumidores de la biblioteca deberían evitar el uso de cualquier tipo o miembro marcado como obsoleto.  Esto es porque puede que no se admita y que se quite finalmente de las versiones posteriores de la biblioteca.  Cuando se compila un tipo o miembro marcado mediante <xref:System.ObsoleteAttribute>, se muestra la propiedad <xref:System.ObsoleteAttribute.Message%2A> del atributo.  Esto proporciona información al usuario sobre el miembro o tipo obsoleto.  Esta información generalmente incluye cuánto tiempo se sigue admitiendo el tipo o miembro obsoleto por los diseñadores de la biblioteca y el sustituto preferido que se va a utilizar.  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.ObsoleteAttribute> is used to mark deprecated library types and members. Library consumers should avoid the use of any type or member that is marked obsolete. This is because it might not be supported and will eventually be removed from later versions of the library. When a type or member marked by using <xref:System.ObsoleteAttribute> is compiled, the <xref:System.ObsoleteAttribute.Message%2A> property of the attribute is displayed. This gives the user information about the obsolete type or member. This information generally includes how long the obsolete type or member will be supported by the library designers and the preferred replacement to use.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, agregue el parámetro `message` al constructor <xref:System.ObsoleteAttribute>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the `message` parameter to the <xref:System.ObsoleteAttribute> constructor.  
   
-## Cuándo suprimir advertencias  
- No suprima una advertencia de esta regla porque la propiedad <xref:System.ObsoleteAttribute.Message%2A> proporciona información importante sobre el tipo o miembro desusado.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule because the <xref:System.ObsoleteAttribute.Message%2A> property provides critical information about the obsolete type or member.  
   
-## Ejemplo  
- En el siguiente ejemplo se muestra un miembro obsoleto que tiene un <xref:System.ObsoleteAttribute> declarado correctamente.  
+## <a name="example"></a>Example  
+ The following example shows an obsolete member that has a correctly declared <xref:System.ObsoleteAttribute>.  
   
- [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
- [!code-cs[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]
- [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]  
+ [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)] [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)] [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.ObsoleteAttribute?displayProperty=fullName>

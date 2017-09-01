@@ -37,8 +37,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/30/2017
 
 ---
-# Cómo: Usar como destino una versión de .NET Framework
-<a id="how-to-target-a-version-of-the-net-framework" class="xliff"></a>
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Cómo: Usar como destino una versión de .NET Framework
 En este documento se describe cómo se crea un proyecto que tiene como destino una versión de .NET Framework y cómo se modifica la versión de destino en un proyecto de Visual Basic, Visual C# o Visual F# existente.  
   
 > [!IMPORTANT]
@@ -56,8 +55,7 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
 > [!NOTE]
 >  En las ediciones Express de Visual Studio, debe crear primero el proyecto y después cambiar el destino, como se describe más adelante en [Cambiar la versión de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) en este tema.  
   
-#### Para especificar una versión de destino al crear un proyecto
-<a id="to-target-a-version-when-you-create-a-project" class="xliff"></a>  
+#### <a name="to-target-a-version-when-you-create-a-project"></a>Para especificar una versión de destino al crear un proyecto  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
@@ -73,12 +71,11 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
 ##  <a name="bkmk_existing"></a> Cambiar la versión de destino  
  Puede cambiar la versión de .NET Framework de destino en un proyecto de Visual Basic, Visual C# o Visual F# si sigue este procedimiento.  
   
-#### Para cambiar la versión de destino
-<a id="to-change-the-targeted-version" class="xliff"></a>  
+#### <a name="to-change-the-targeted-version"></a>Para cambiar la versión de destino  
   
 1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto que quiere cambiar y después elija **Propiedades**.  
   
-     ![Propiedades del Explorador de soluciones de Visual Studio](~/ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
+     ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
     >  Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).  
@@ -99,8 +96,7 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
     > [!NOTE]
     >  Si el código contiene referencias a una versión de .NET Framework distinta de la que indicó, pueden aparecer mensajes de error al compilar o ejecutar el código. Para resolver estos errores, deberá modificar las referencias. Consulte [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
  [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   

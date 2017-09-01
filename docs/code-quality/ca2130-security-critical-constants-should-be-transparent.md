@@ -1,45 +1,62 @@
 ---
-title: "CA2130: Las constantes cr&#237;ticas para la seguridad deben ser transparentes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2130"
+title: 'CA2130: Security critical constants should be transparent | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2130
 ms.assetid: 344c7f7b-9130-4675-ae7f-9fa260cc9789
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
----
-# CA2130: Las constantes cr&#237;ticas para la seguridad deben ser transparentes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c3a511b716c6a5bfc215bbfe967c19da4f4d7609
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Security critical constants should be transparent
 |||  
 |-|-|  
 |TypeName|ConstantsShouldBeTransparent|  
-|Identificador de comprobación|CA2130|  
-|Categoría|Microsoft.Security|  
-|Cambio problemático|Problemático|  
+|CheckId|CA2130|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Motivo  
- Un campo constante o un miembro de enumeración se marca con <xref:System.Security.SecurityCriticalAttribute>.  
+## <a name="cause"></a>Cause  
+ A constant field or an enumeration member is marked with the <xref:System.Security.SecurityCriticalAttribute>.  
   
-## Descripción de la regla  
- El cumplimiento de la transparencia no se exige para los valores constantes porque los compiladores alinean los valores constantes para que no se requiera ninguna búsqueda en tiempo de ejecución.  Los campos constantes deberían ser transparentes en seguridad de modo que los revisores del código no supongan que el código transparente no puede tener acceso a la constante.  
+## <a name="rule-description"></a>Rule Description  
+ Transparency enforcement is not enforced for constant values because compilers inline constant values so that no lookup is required at run time. Constant fields should be security transparent so that code reviewers do not assume that transparent code cannot access the constant.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, quite el atributo SecurityCritical del campo o valor.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the SecurityCritical attribute from the field or value.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- En los ejemplos siguientes, el valor de enumeración `EnumWithCriticalValues.CriticalEnumValue` y la constante `CriticalConstant` producen esta advertencia.  Para corregir los problemas, quite el atributo \[`SecurityCritical`\] para que tengan seguridad transparente.  
+## <a name="example"></a>Example  
+ In the following examples, the enum value `EnumWithCriticalValues.CriticalEnumValue` and the constant `CriticalConstant` raise this warning. To fix the issues, remove the [`SecurityCritical`] attribute to make them security transparent.  
   
- [!code-cs[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]
+ [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]

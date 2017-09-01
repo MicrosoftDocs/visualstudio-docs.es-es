@@ -5,3 +5,4 @@
 # [Control de eventos de Windows Runtime en JavaScript](handling-windows-runtime-events-in-javascript.md)
 # [Representación de JavaScript de tipos de Windows Runtime](javascript-representation-of-windows-runtime-types.md)
 # [DateTime de Windows Runtime y representaciones de TimeSpan](windows-runtime-datetime-and-timespan-representations.md)
+# [Códigos de error para aplicaciones de Windows Runtime con JavaScript](error-codes-for-windows-runtime-apps-using-javascript.md)

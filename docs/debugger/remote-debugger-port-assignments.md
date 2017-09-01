@@ -1,61 +1,81 @@
 ---
-title: "Asignaciones de puertos del depurador remoto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Remote Debugger Port Assignments | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# Asignaciones de puertos del depurador remoto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 1208ccaea240a05795659348e55c5497c75b195d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:  
-  
+---
+# <a name="remote-debugger-port-assignments"></a>Remote Debugger Port Assignments
+The Visual Studio Remote Debugger can run as an application or as a background service. When it runs as an application, it uses a port that is assigned by default as follows:  
+
+-   Visual Studio 2017: 4022
+
 -   Visual Studio 2015: 4020  
   
 -   Visual Studio 2013: 4018  
   
 -   Visual Studio 2012: 4016  
   
- En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.  
+ In other words, the number of the port assigned to the remote debugger is incremented by 2 for each release. You can set a different port number of you like. We will explain how to set port numbers in a later section.  
   
-## Puerto del depurador remoto en sistemas operativos de 32 bits  
- El puerto TCP 4020 \(en Visual Studio de 2015\) es el puerto principal y el necesario para todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.  
+## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>The Remote Debugger Port on 32-bit Operating Systems  
+ TCP 4022 (in Visual Studio 2017) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.  
   
- En la ventana del depurador remoto, haga clic en **Herramientas \/ opciones** y establezca el número de puerto TCP\/IP.  
+ In the remote debugger window, click **Tools > Options**, and set the TCP/IP port number.  
   
- En la línea de comandos, inicie el depurador remoto con el conmutador **\/port**: **msvsmon \/port \<número de puerto\>**.  
+ On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>**.  
   
- Puede encontrar información sobre todos los conmutadores de la línea de comandos del depurador remoto en la ayuda de depuración remota \(presione **F1** o haga clic en **Ayuda \/ Uso** en la ventana del depurador remoto\).  
+ You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help > Usage** in the remote debugger window).  
   
-## Puerto del depurador remoto en sistemas operativos de 64 bits  
- Cuando se inicia la versión de 64 bits del depurador remoto, este usa el puerto 4020 de manera predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4021. Si ejecuta el depurador remoto de 32 bits, usa el puerto 4020 y no usa el puerto 4021.  
+## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>The Remote Debugger Port on 64-bit Operating Systems  
+ When the 64-bit version of the remote debugger is started, it uses the 4022 port by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023. If you run the 32-bit remote debugger, it uses 4022, and 4023 is not used.  
   
- Este puerto se puede configurar desde la línea de comandos: **Msvsmon \/wow64port \<número de puerto\>**.  
+ This port is configurable from the command line: **Msvsmon /wow64port \<port number>**.  
   
-## Puerto de detección  
- UDP 3702 se usa para buscar instancias en ejecución del depurador remoto en la red \(por ejemplo, el cuadro de diálogo **Buscar** en el cuadro de diálogo **Asociar al proceso**\). Se usa solo para detectar una máquina que ejecute el depurador remoto, por lo que es opcional si tiene alguna otra manera de conocer el nombre del equipo o la dirección IP del equipo de destino. Se trata de un puerto estándar para la detección, por lo que no es posible configurar el número de puerto.  
+## <a name="the-discovery-port"></a>The Discovery Port  
+ UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.  
   
- Si no desea habilitar la detección, puede iniciar msvsmon desde la línea de comandos con la detección deshabilitada: **Msvsmon \/nodiscovery**.  
+ If you do not want to enable discovery, you can start msvsmon from the command line with discovery disabled:  **Msvsmon /nodiscovery**.  
   
-## Puertos del depurador remoto en Azure  
- El depurador remoto en Azure usa los puertos siguientes. Los puertos del servicio en la nube se asignan a los puertos en la máquina virtual individual. Todos los puertos son TCP.  
+## <a name="remote-debugger-ports-on-azure"></a>Remote Debugger Ports on Azure  
+ The following ports are used by the remote debugger on Azure. The ports on the cloud service are mapped to the ports on the individual VM. All ports are TCP.  
   
 ||||  
 |-|-|-|  
-|**Conexión**|**Puerto en el servicio en la nube**|**Puerto en la máquina virtual**|  
+|**Connection**|**Port on Cloud Service**|**Port on VM**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## Vea también  
- [Depuración remota](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: 927d80ec00ee69ca6aa59f257826307bcd3fe513
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 2430531e4ddb3a5ef40cd773327311fa7b85ce48
+ms.contentlocale: es-es
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)

@@ -1,12 +1,13 @@
 ---
 title: "Extensión CookieCutter para Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 44aa74104cbb27de62fe739dbdd8f269fbf42c53
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 6db7e2efc54414dcb72899ab3238a9b7a0390921
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -42,9 +29,9 @@ ms.lasthandoff: 05/09/2017
 
 Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o posterior (32 o 64 bits). Si no se dispone de un intérprete de Python adecuado, Visual Studio mostrará una advertencia. Si instala a un intérprete de Python mientras se está ejecutando Visual Studio, haga clic en el botón de inicio en la barra de herramientas de Cookiecutter para detectar el intérprete recién instalado.
 
-Una vez instalado, seleccione **View > Cookicutter Explorer** (Ver > Explorador de Cookicutter) para abrir la ventana:
+Una vez instalado, seleccione **View > Cookiecutter Explorer** (Ver > Explorador de Cookiecutter) para abrir la ventana:
 
-![Ventana principal de Cookiecutter](~/python/media/cookiecutter-overview.png)
+![Ventana principal de Cookiecutter](media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Flujo de trabajo Cookiecutter
 
@@ -65,7 +52,7 @@ La página de inicio de Cookiecutter muestra una lista de plantillas para elegir
 
 Al seleccionar una plantilla y luego hacer clic en **Next** (Siguiente), Cookiecutter hace una copia local con la que trabaja.
 
-Si selecciona una plantilla de los grupos **Recomendado** o **GitHub** o escribe una dirección URL personalizada en el cuadro de búsqueda y selecciona esa plantilla, esta se clona e instala en su máquina local. Si esa plantilla se instaló en una sesión anterior de Visual Studio, se elimina automáticamente y se clona la versión más reciente.
+Si selecciona una plantilla de los grupos **Recomendado** o **GitHub**, o escribe una URL personalizada en el cuadro de búsqueda y selecciona esa plantilla, esta se clona e instala en su máquina local. Si esa plantilla se instaló en una sesión anterior de Visual Studio, se elimina automáticamente y se clona la versión más reciente.
 
 Si selecciona una plantilla del grupo **Instalado** o escribe una ruta de acceso personalizada a una carpeta en el cuadro de búsqueda y seleccione esa plantilla, Visual Studio carga esa plantilla sin clonarla.
 
@@ -76,7 +63,7 @@ Si selecciona una plantilla del grupo **Instalado** o escribe una ruta de acceso
 
 Después de que la plantilla está instalada localmente, Cookiecutter muestra una página de opciones donde puede especificar, entre otras opciones, dónde desea que Cookiecutter genere los archivos:
 
-![Página de opciones de Cookiecutter](~/python/media/cookiecutter-template-options.png)
+![Página de opciones de Cookiecutter](media/cookiecutter-template-options.png)
 
 Cada plantilla de Cookiecutter define su propio conjunto de opciones y especifica un valor predeterminado para cada una (se muestra como el texto sugerido en cada campo de entrada). Un valor predeterminado puede ser un fragmento de código, normalmente cuando es un valor dinámico que usa otras opciones. 
 
@@ -86,17 +73,17 @@ Si la plantilla especifica tareas de Visual Studio concretas para ejecutar despu
 
 ### <a name="create"></a>Crear
 
-Una vez configuradas las opciones, seleccione **Crear** para generar el código. Tenga en cuenta que si la carpeta de salida no está vacía, verá una advertencia. Si está familiarizado con la salida de la plantilla y no le importa sobrescribir los archivos, puede pasarla por alto. En caso contrario, seleccione **Cancel** (Cancelar), especifique una carpeta vacía y luego copie manualmente los archivos creados en la carpeta de salida que no está vacía.
+Una vez configuradas las opciones, seleccione **Crear** para generar el código (aparece una advertencia si la carpeta de salida no está vacía). Si está familiarizado con la salida de la plantilla y no le importa sobrescribir los archivos, puede pasarla por alto. En caso contrario, seleccione **Cancel** (Cancelar), especifique una carpeta vacía y luego copie manualmente los archivos creados en la carpeta de salida que no está vacía.
 
 Después de que los archivos se crean correctamente, Cookiecutter proporciona una opción para abrirlos en el **Explorador de soluciones**:
 
-![Cookiecutter que muestra el comando Solution Explorer](~/python/media/cookiecutter-files-created.png)
+![Cookiecutter que muestra el comando Solution Explorer](media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Opciones de Cookiecutter
 
 Las opciones de Cookiecutter están disponibles en **Tools > Options > Cookiecutter** (Herramientas > Opciones > Cookiecutter):
 
-![Opciones de Cookiecutter](~/python/media/cookiecutter-tools-options.png)
+![Opciones de Cookiecutter](media/cookiecutter-tools-options.png)
 
 | Opción | Descripción |
 | --- | --- |
@@ -105,20 +92,20 @@ Las opciones de Cookiecutter están disponibles en **Tools > Options > Cookiecut
 
 ## <a name="optimizing-cookiecutter-templates-for-visual-studio"></a>Optimización de plantillas de Cookiecutte para Visual Studio
 
-Para información sobre los aspectos básicos de la creación de una plantilla de Cookiecutter, consulte la [documentación de Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). Tenga en cuenta que la extensión Cookiecutter para Visual Studio admite plantillas creadas por Cookiecutter v1.4.
+Para información sobre los aspectos básicos de la creación de una plantilla de Cookiecutter, consulte la [documentación de Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). La extensión Cookiecutter para Visual Studio admite plantillas creadas por Cookiecutter v1.4.
 
 La representación predeterminada de variables de plantilla depende del tipo de datos (cadena o lista):
 
 - Cadena: etiqueta para el nombre de variable, cuadro de texto para escribir el valor y una marca de agua que muestra el valor predeterminado. La información sobre herramientas en el cuadro de texto muestra el valor predeterminado.
 - Lista: etiqueta para nombre de variable, cuadro combinado para seleccionar un valor. La información sobre herramientas en el cuadro combinado muestra el valor predeterminado.
 
-Se pueden realizar mejoras adicionales mediante la especificación de metadatos adicionales en el archivo `cookiecutter.json` que es específico de Visual Studio (y la CLI de Cookiecutter lo omite). Todas las propiedades son opcionales:
+Se pueden realizar mejoras adicionales en esta representación mediante la especificación de metadatos adicionales en el archivo `cookiecutter.json` que es específico de Visual Studio (y la CLI de Cookiecutter lo omite). Todas las propiedades son opcionales:
 
 | Propiedad | Descripción |
 | --- | --- |
 | Etiqueta | Especifica lo que aparece encima del editor para la variable, en lugar del nombre de la variable. |
-| Descripción | Especifica la información sobre herramientas que aparece en el control de edición que mostrará la descripción, en lugar del valor predeterminado de esa variable. |
-| Dirección URL | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la dirección URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa dirección URL. |
+| Descripción | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
+| Dirección URL | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
 | Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, de forma predeterminada para las cadenas.</li><li>`list`: cuadro combinado estándar, de forma predeterminada para las listas.</li><li>`yesno`: cuadro combinado elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón "..." que hace que muestra cuadro de diálogo de conexión de base de datos.</li></ul> |
 
 Ejemplo:
@@ -154,7 +141,7 @@ Cookiecutter presenta una característica llamada *Post-Generate Hooks* (Enlaces
 
 Por ejemplo, puede que quiera abrir un archivo en el editor de Visual Studio o en su explorador web, o activar la interfaz de usuario de Visual Studio que pide al usuario que cree un entorno virtual e instale los requisitos de paquete.
 
-Para permitir estos escenarios, Visual Studio busca metadatos extendidos en `cookiecutter.json` que describen los comandos que se ejecutarán después de que el usuario abra los archivos generados en el Explorador de soluciones o después de que los archivos se agreguen a un proyecto existente. (Nuevamente, el usuario puede optar por ejecutar las tareas si desactiva **Run additional tasks on completion** (Ejecutar tareas adicionales al terminar) en las opciones de plantilla).
+Para permitir estos escenarios, Visual Studio busca metadatos extendidos en `cookiecutter.json` que describen los comandos que se ejecutarán después de que el usuario abra los archivos generados en el Explorador de soluciones o después de que los archivos se agreguen a un proyecto existente. (Nuevamente, el usuario puede optar por ejecutar las tareas si desactiva **Ejecutar tareas adicionales después de la finalización** en las opciones de plantilla).
 
 Ejemplo:
 
@@ -189,7 +176,7 @@ Si no necesita pasar un argumento, deje una cadena vacía u omítalo de JSON:
 ]
 ```
 
-Use una matriz para varios argumentos. Para modificadores, divida el modificador y su valor en argumentos distintos y asegúrese de usar el entrecomillado correcto. Por ejemplo:
+Use una matriz para varios argumentos. Para modificadores, divida el modificador y su valor en argumentos distintos y use el entrecomillado correcto. Por ejemplo:
 
 ```json
 "_visual_studio_post_cmds": [
@@ -206,21 +193,21 @@ Use una matriz para varios argumentos. Para modificadores, divida el modificador
 
 Los argumentos pueden hacer referencia a otros variables de Cookiecutter. En los ejemplos anteriores, la variable interna `_output_folder_path` se usa para formar una ruta de acceso absoluta a los archivos generados.
 
-Tenga en cuenta que el comando `Python.InstallProjectRequirements` funciona solo al agregar archivos a un proyecto existente. El motivo es que se procesa mediante el proyecto de Python en el Explorador de soluciones, y no hay ningún proyecto para recibir el mensaje mientras se está en la vista de carpeta del Explorador de soluciones. Esta es una limitación que esperamos se solucione en una futura versión (mejor compatibilidad en general con la vista de carpeta).
+Tenga en cuenta que el comando `Python.InstallProjectRequirements` funciona solo al agregar archivos a un proyecto existente. Esta limitación existe porque el comando se procesa mediante el proyecto de Python en el Explorador de soluciones, y no hay ningún proyecto para recibir el mensaje mientras se está en la vista de carpeta del Explorador de soluciones. Esperamos eliminar la limitación en una versión futura (y proporcionar mejor compatibilidad con la vista de carpetas en general).
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
 ### <a name="error-loading-template"></a>Error al cargar la plantilla
 
-Puede que algunas plantillas usen tipos de datos no válidos, como booleanos, en sus archivos `cookiecutter.json`. Esto debería notificarse al creador de la plantilla. Haga clic en el vínculo **Issues** (Problemas) en el panel de información de la plantilla.
+Puede que algunas plantillas usen tipos de datos no válidos, como booleanos, en sus archivos `cookiecutter.json`. Informe sobre estas instancias al autor de la plantilla haciendo clic en el vínculo **Problemas**.
 
 ### <a name="hook-script-failed"></a>Error de script de enlace
 
-Algunas plantillas pueden usar scripts posteriores a la generación que no son compatibles con la interfaz de usuario de Cookiecutter. Por ejemplo, los scripts que consultan la entrada del usuario darán error por no tener una consola de terminal.
+Algunas plantillas pueden usar scripts posteriores a la generación que no son compatibles con la interfaz de usuario de Cookiecutter. Por ejemplo, se producirá un error en los scripts que consultan la entrada del usuario por no tener una consola de terminal.
 
 ### <a name="hook-script-not-supported-on-windows"></a>Script de enlace no admitido en Windows
 
-Si el script posterior es `.sh`, puede que no esté asociado con una aplicación de su máquina de Windows. Es posible que vea un diálogo emergente de Windows que le pide que busque una aplicación compatible en la Tienda Windows.
+Si el script posterior es `.sh`, puede que no esté asociado con una aplicación de su máquina de Windows. Es posible que vea un diálogo de Windows que le pide que busque una aplicación compatible en la Tienda Windows.
 
 ### <a name="templates-with-known-issues"></a>Plantillas con problemas conocidos
 
@@ -237,7 +224,7 @@ Errores de carga:
 Errores de ejecución:
 
 - **iknite/cookiecutter-ansible-role** (script de enlace posterior que requiere entrada de consola)
-- **benregn/cookiecutter-django-ansible** (error de jinja)
+- **benregn/cookiecutter-django-ansible** (error de Jinja)
 
 Usa bash (no fatal):
 

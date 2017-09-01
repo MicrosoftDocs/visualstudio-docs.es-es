@@ -1,51 +1,56 @@
 ---
-title: "Trabajar con rangos"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel, intervalos"
-  - "intervalos, tareas comunes"
-  - "libros, intervalos"
-  - "hojas de cálculo, intervalos"
+title: Working with Ranges | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Excel, ranges
+- worksheets, ranges
+- ranges, common tasks
+- workbooks, ranges
 ms.assetid: 26835a5d-402c-4c13-8f33-e4d8ffed3dfe
 caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 046efcd5daf601d18f58b7bff473d60b114e3e01
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Trabajar con rangos
-  Las clases <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Interop.Excel.Range> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con rangos.  
+# <a name="working-with-ranges"></a>Working with Ranges
+  The <xref:Microsoft.Office.Tools.Excel.NamedRange> and <xref:Microsoft.Office.Interop.Excel.Range> classes contain the methods and properties you use to perform tasks with ranges.  
   
-|Tarea|Procedimiento|  
-|-----------|-------------------|  
-|Acceder a un rango y establecer el valor.|[Cómo: Hacer referencia a rangos de hojas de cálculo en el código mediante programación](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|  
-|Rellenar un rango basado en un valor inicial.|[Cómo: Rellenar rangos automáticamente con datos que cambian de forma incremental mediante programación](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|  
-|Obtener y establecer los valores de fecha de celdas.|[Cómo: Almacenar y recuperar valores de fecha en rangos de Excel mediante programación](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md)|  
-|Aplicar estilos a las celdas de una región.|[Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
-|Buscar texto en rangos de hojas de cálculo.|[Cómo: Buscar texto en rangos de hojas de cálculo mediante programación](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
-|Aplicar color al texto de un rango de celdas.|[Cómo: Aplicar color a rangos de Excel mediante programación](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
-|Ejecutar cálculos de Excel mediante programación.|[Cómo: Ejecutar cálculos de Excel mediante programación](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
-|Mostrar una cadena en una celda.|[Cómo: Mostrar una cadena en la celda de una hoja de cálculo mediante programación](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
+|Task|Procedure|  
+|----------|---------------|  
+|Access a range and set the value.|[How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|  
+|Fill a range based on an initial value.|[How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|  
+|Get and set date values in cells.|[How to: Programmatically Store and Retrieve Date Values in Excel Ranges](../vsto/how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md)|  
+|Apply styles to cells in a region.|[How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
+|Search for text in worksheet ranges.|[How to: Programmatically Search for Text in Worksheet Ranges](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
+|Apply color to text in a range of cells.|[How to: Programmatically Apply Color to Excel Ranges](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
+|Run Excel calculations programmatically.|[How to: Programmatically Run Excel Calculations](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
+|Display a string in a cell.|[How to: Programmatically Display a String in a Worksheet Cell](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
   
- Para obtener más información sobre las tareas de Excel y el modelo de objetos de Excel, vea [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).  
+ For more information about Excel tasks and the Excel object model, see [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
- En algunos casos, los métodos con los que lleva a cabo estas tareas en los complementos de VSTO son distintos de los métodos con los que las lleva a cabo en las personalizaciones de nivel de documento.  
+ In some cases, the ways that you perform these tasks in VSTO Add-ins is different from the ways that you perform them in document-level customizations.  
   
-## Vea también  
- [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
- [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [Trabajar con libros](../vsto/working-with-workbooks.md)   
- [Usar controles de formularios Windows Forms en hojas de cálculo de Excel](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
+## <a name="see-also"></a>See Also  
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [Using Windows Forms Controls on Excel Worksheets](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
   
   

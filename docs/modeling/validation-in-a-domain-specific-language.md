@@ -1,91 +1,108 @@
 ---
-title: "La validaci&#243;n en los lenguajes espec&#237;ficos de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, restricciones"
-  - "Lenguaje específico de dominio, validación"
+title: Validation in a Domain-Specific Language | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Domain-Specific Language, constraints
+- Domain-Specific Language, validation
 ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 33
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 33
----
-# La validaci&#243;n en los lenguajes espec&#237;ficos de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 47db59100786e362d37447f07df16a13c92a4f74
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Como autor de un lenguaje específico de dominio (DSL), puede definir restricciones de validación para comprobar que el modelo creado por el usuario tiene significado. Por ejemplo, si su DSL permite a los usuarios dibujar un árbol genealógico de personas y antepasados, podría escribir una restricción que garantice que la fecha de nacimiento de los hijos sea posterior a la de los padres.  
+---
+# <a name="validation-in-a-domain-specific-language"></a>Validation in a Domain-Specific Language
+As the author of a domain-specific language (DSL), you can define validation constraints to verify that the model created by the user is meaningful. For example, if your DSL allows users to draw a family tree of people and their ancestors, you could write a constraint that ensures that children have birth dates after their parents.  
   
- Puede tener restricciones de validación que ejecutar cuando el modelo se guarda cuando se abre, y cuando el usuario ejecute explícitamente el **validar** comando de menú. También puede ejecutar la validación bajo el control del programa. Por ejemplo, podría ejecutar la validación en respuesta a un cambio en un valor de propiedad o de una relación.  
+ You can have the validation constraints execute when the model is saved, when it is opened, and when the user explicitly runs the **Validate** menu command. You can also execute validation under program control. For example, you could execute validation in response to a change in a property value or relationship.  
   
- La validación es especialmente importante si escribe plantillas de texto u otras herramientas que procesan los modelos de los usuarios. La validación garantiza que los modelos cumplen las condiciones previas que esas herramientas dan por hecho.  
+ Validation is particularly important if you are writing text templates or other tools that process your users' models. Validation ensures that the models fulfill the preconditions assumed by those tools.  
   
 > [!WARNING]
->  También puede permitir que las restricciones de validación se definan en extensiones diferentes de su DSL, junto con los controladores de gestos y los comandos de menú de la extensión. Los usuarios pueden elegir instalar estas extensiones además de su DSL. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+>  You can also allow validation constraints to be defined in separate extensions to your DSL, along with extension menu commands and gesture handlers. Users can choose to install these extensions in addition to your DSL. For more information, see [Extend your DSL by using MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-## <a name="running-validation"></a>Ejecutar la validación  
- Cuando un usuario edita un modelo, es decir, una instancia de su lenguaje específico de dominio, las siguientes acciones pueden ejecutar la validación:  
+## <a name="running-validation"></a>Running Validation  
+ When a user is editing a model, that is, an instance of your domain-specific language, the following actions can run validation:  
   
--   Haga clic en el diagrama y seleccione **validar todos los**.  
+-   Right-click the diagram and select **Validate All**.  
   
--   Haga clic en el nodo superior en el Explorador de su DSL y seleccionar **validar todos los**  
+-   Right-click the top node in the Explorer of your DSL and select **Validate All**  
   
--   Guardar el modelo.  
+-   Save the model.  
   
--   Abrir el modelo.  
+-   Open the model.  
   
--   Además, puede escribir código de programa que ejecute la validación, por ejemplo, como parte de un comando de menú o en respuesta a un cambio.  
+-   In addition, you can write program code that runs validation, for example, as part of a menu command or in response to a change.  
   
- Aparecerán errores de validación en el **lista de errores** ventana. El usuario puede hacer doble clic en un mensaje de error para seleccionar los elementos del modelo que causaron el error.  
+ Any validation errors will appear in the **Error List** window. The user can double-click an error message to select the model elements that are the cause of the error.  
   
-## <a name="defining-validation-constraints"></a>Definir restricciones de validación  
- Para definir restricciones de validación, se agregan métodos de validación a las relaciones o clases de dominio de su DSL. Cuando el usuario o el control del programa ejecutan la validación, se ejecutan algunos o todos los métodos de validación. Cada método se aplica a cada una de las instancias de la clase, y puede haber varios métodos de validación en cada clase.  
+## <a name="defining-validation-constraints"></a>Defining Validation Constraints  
+ You define validation constraints by adding validation methods to the domain classes or relationships of your DSL. When validation is run, either by the user or under program control, some or all of the validation methods are executed. Each method is applied to each instance of its class, and there can be several validation methods in each class.  
   
- Cada método de validación notifica todos los errores que encuentra.  
+ Each validation method reports any errors that it finds.  
   
 > [!NOTE]
->  Los métodos de validación notifican los errores, pero no cambian el modelo. Si desea ajustar o evitar determinados cambios, consulte [alternativas a la validación](#alternatives).  
+>  Validation methods report errors, but do not change the model. If you want to adjust or prevent certain changes, see [Alternatives to Validation](#alternatives).  
   
-#### <a name="to-define-a-validation-constraint"></a>Para definir una restricción de validación  
+#### <a name="to-define-a-validation-constraint"></a>To define a validation constraint  
   
-1.  Habilite la validación en el **Editor\Validation** nodo:  
+1.  Enable validation in the **Editor\Validation** node:  
   
-    1.  Abra **Dsl\DslDefinition.dsl**.  
+    1.  Open **Dsl\DslDefinition.dsl**.  
   
-    2.  En el Explorador de DSL, expanda el **Editor** nodo y seleccione **validación**.  
+    2.  In DSL Explorer, expand the **Editor** node and select **Validation**.  
   
-    3.  En la ventana Propiedades, establezca la **utiliza**  propiedades `true`. Lo más conveniente es establecer todas las propiedades.  
+    3.  In the Properties window, set the **Uses**  properties to `true`. It is most convenient to set all these properties.  
   
-    4.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones.  
+    4.  Click **Transform All Templates** in the Solution Explorer toolbar.  
   
-2.  Escriba definiciones de clases parciales para una o varias de sus clases de dominio o relaciones de dominio. Escriba estas definiciones en un nuevo archivo de código en el **Dsl** proyecto.  
+2.  Write partial class definitions for one or more of your domain classes or domain relationships. Write these definitions in a new code file in the **Dsl** project.  
   
-3.  Asigne este atributo como prefijo a cada clase:  
+3.  Prefix each class with this attribute:  
   
-    ```c#  
+    ```csharp  
     [ValidationState(ValidationState.Enabled)]  
     ```  
   
-    -   De forma predeterminada, este atributo también permitirá validar clases derivadas. Si quiere deshabilitar la validación para una clase derivada específica, puede usar `ValidationState.Disabled`.  
+    -   By default, this attribute will also enable validation for derived classes. If you want to disable validation for a specific derived class, you can use `ValidationState.Disabled`.  
   
-4.  Agregue métodos de validación a las clases. Cada método de validación puede tener cualquier nombre, pero tiene un parámetro de tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
+4.  Add validation methods to the classes. Each validation method can have any name, but have one parameter of type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
-     Deben tener como prefijo uno o varios atributos `ValidationMethod`:  
+     It must be prefixed with one or more `ValidationMethod` attributes:  
   
-    ```c#  
+    ```csharp  
     [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
     ```  
   
-     ValidationCategories especifica cuándo se ejecuta el método.  
+     The ValidationCategories specify when the method is executed.  
   
- Por ejemplo:  
+ For example:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
   
@@ -124,37 +141,37 @@ public partial class ParentsHaveChildren
   }  
 ```  
   
- Observe los siguientes aspectos sobre este código:  
+ Notice the following points about this code:  
   
--   Puede agregar métodos de validación a las clases de dominio o a las relaciones de dominio. El código para estos tipos está en **Dsl\Generated Code\Domain\*.cs**.  
+-   You can add validation methods to domain classes or domain relationships. The code for these types is in **Dsl\Generated Code\Domain\*.cs**.  
   
--   Cada método de validación se aplica a todas las instancias de su clase y sus subclases. En el caso de una relación de dominio, cada instancia es un vínculo entre dos elementos de modelo.  
+-   Each validation method is applied to every instance of its class and its subclasses. In the case of a domain relationship, each instance is a link between two model elements.  
   
--   Los métodos de validación no se aplican con un orden específico, y los métodos no se aplican a las instancias de su clase con ningún orden predecible.  
+-   Validation methods are not applied in any specified order, and each method is not applied to the instances of its class in any predictable order.  
   
--   Normalmente no es recomendable que un método de validación actualice el contenido del almacén, porque podría producir resultados incoherentes. En su lugar, el método debe notificar los errores llamando a `context.LogError`, `LogWarning` o `LogInfo`.  
+-   It is usually bad practice for a validation method to update the store content, because this would lead to inconsistent results. Instead, the method should report any error by calling `context.LogError`, `LogWarning` or `LogInfo`.  
   
--   En la llamada a LogError, puede proporcionar una lista de elementos de modelo o de vínculos de relación que se seleccionarán cuando el usuario haga doble clic en el mensaje de error.  
+-   In the LogError call, you can provide a list of model elements or relationship links that will be selected when the user double-clicks the error message.  
   
--   Para obtener información acerca de cómo leer el modelo de código de programa, consulte [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+-   For information about how to read the model in program code, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- El ejemplo se aplica al siguiente modelo de dominio. La relación ParentsHaveChildren tiene roles con los nombres Child y Parent.  
+ The example applies to the following domain model. The ParentsHaveChildren relationship has roles that are named Child and Parent.  
   
- ![Diagrama de definición DSL &#45; modelo de árbol genealógico](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt_person.png "FamilyT_Person")  
   
-## <a name="validation-categories"></a>Categorías de validación  
- En el <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atributo, se especifica cuando se debe ejecutar el método de validación.  
+## <a name="validation-categories"></a>Validation Categories  
+ In the <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> attribute, you specify when the validation method should be executed.  
   
-|Categoría|Execution|  
+|Category|Execution|  
 |--------------|---------------|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando el usuario invoca el comando de menú Validate (Validar).|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se abre el archivo del modelo.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se guarda el archivo. Si hay errores de validación, el usuario tendrá la opción de cancelar la operación de guardado.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se guarda el archivo. Si hay errores de métodos en esta categoría, se advierte al usuario de que quizás no sea posible volver a abrir el archivo.<br /><br /> Use esta categoría para los métodos de validación que comprueban si hay nombres o identificadores duplicados, u otras condiciones que pudieran provocar errores de carga.|  
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Cuando se llama al método ValidateCustom. Las validaciones de esta categoría se pueden invocar solo desde el código de programa.<br /><br /> Para obtener más información, consulte [categorías de validación personalizada](#custom).|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the user invokes the Validate menu command.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the model file is opened.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the file is saved. If there are validation errors, the user will be given the option of canceling the save operation.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the file is saved. If there are errors from methods in this category, the user is warned that it might not be possible to re-open the file.<br /><br /> Use this category for validation methods that test for duplicated names or IDs, or other conditions that might cause loading errors.|  
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|When the ValidateCustom method is called. Validations in this category can be invoked only from program code.<br /><br /> For more information, see [Custom Validation Categories](#custom).|  
   
-## <a name="where-to-place-validation-methods"></a>Dónde colocar los métodos de validación  
- Con frecuencia se puede lograr el mismo efecto colocando un método de validación en un tipo diferente. Por ejemplo, podría agregar un método a la clase Person en lugar de a la relación ParentsHaveChildren, y hacer que itere por los vínculos:  
+## <a name="where-to-place-validation-methods"></a>Where to Place Validation Methods  
+ You can often achieve the same effect by placing a validation method on a different type. For example, you could add a method to the Person class instead of the ParentsHaveChildren relationship, and have it iterate through the links:  
   
 ```  
 [ValidationState(ValidationState.Enabled)]  
@@ -175,13 +192,13 @@ public partial class Person
   
 ```  
   
- **Agregar restricciones de validación.** Para aplicar la validación en un orden predecible, defina un método de validación único en una clase de propietario, como el elemento raíz del modelo. Esta técnica también perite agregar varios informes de error en un único mensaje.  
+ **Aggregating validation constraints.** To apply validation in a predictable order, define a single validation method on an owner class, such the root element of your model. This technique also lets you aggregate multiple error reports into a single message.  
   
- Las desventajas son que el método combinado es menos fácil de administrar y que todas las restricciones deben tener las mismas `ValidationCategories`. Por lo tanto, le recomendamos que mantenga cada restricción en un método diferente, si es posible.  
+ Drawbacks are that the combined method is less easy to manage, and that the constraints must all have the same `ValidationCategories`. We therefore recommend that you keep each constraint in a separate method if possible.  
   
- **Pasar valores en la memoria caché del contexto.** El parámetro de contexto tiene un diccionario que se pueden colocar valores arbitrarios. El diccionario persiste mientras dura la ejecución de la validación. Un método de validación determinado podría, por ejemplo, mantener un recuento de errores en el contexto y usarlo para evitar desbordar la ventana de errores con mensajes repetidos. Por ejemplo:  
+ **Passing values in the context cache.** The context parameter has a dictionary into which you can place arbitrary values. The dictionary persists for the life of the validation run. A particular validation method could, for example, keep an error count in the context, and use it to avoid flooding the error window with repeated messages. For example:  
   
-```c#  
+```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
 if (!context.TryGetCacheValue("erroneousLinks", out erroneousLinks))  
 erroneousLinks = new List<ParentsHaveChildren>();  
@@ -191,17 +208,17 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
 ```  
   
-## <a name="validation-of-multiplicities"></a>Validación de multiplicidades  
- Su DSL genera automáticamente los métodos de validación para comprobar la multiplicidad mínima. El código se escribe en **Dsl\Generated Code\MultiplicityValidation.cs**. Estos métodos surten efecto cuando se habilita la validación en el **Editor\Validation** nodo en el Explorador de DSL.  
+## <a name="validation-of-multiplicities"></a>Validation of Multiplicities  
+ Validation methods for checking minimum multiplicity are automatically generated for your DSL. The code is written to **Dsl\Generated Code\MultiplicityValidation.cs**. These methods take effect when you enable validation in the **Editor\Validation** node in DSL Explorer.  
   
- Si establece que la multiplicidad de un rol de una relación de dominio es 1..* o 1..1, pero el usuario no crea un vínculo de esta relación, aparecerá un mensaje de error de validación.  
+ If you set the multiplicity of a role of a domain relationship to be 1..* or 1..1, but the user does not create a link of this relationship, a validation error message will appear.  
   
- Por ejemplo, si su DSL tiene clases Person y Town y una relación PersonLivesInTown con una relación **1..\*** en el rol Town, a continuación, para cada persona que no tenga ninguna ciudad, un mensaje de error aparecerá.  
+ For example, if your DSL has classes Person and Town, and a relationship PersonLivesInTown with a relationship **1..\*** at the Town role, then for each Person that has no Town, an error message will appear.  
   
-## <a name="running-validation-from-program-code"></a>Ejecutar la validación desde el código de programa  
- Para ejecutar la validación, puede acceder a un controlador de validación o crear uno. Si quiere que los errores se muestren al usuario en la ventana de errores, use el controlador de validación que está asociado al DocData de su diagrama. Por ejemplo, si está escribiendo un comando de menú, `CurrentDocData.ValidationController` está disponible en la clase de conjunto de comandos:  
+## <a name="running-validation-from-program-code"></a>Running Validation from Program Code  
+ You can run validation by accessing or creating a ValidationController. If you want the errors to be displayed to the user in the error window, use the ValidationController that is attached to your diagram's DocData. For example, if you are writing a menu command, `CurrentDocData.ValidationController` is available in the command set class:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -215,11 +232,11 @@ partial class MyLanguageCommandSet
   
 ```  
   
- Para obtener más información, vea [Cómo: agregar un comando al menú contextual](../Topic/How%20to:%20Add%20a%20Command%20to%20the%20Shortcut%20Menu.md).  
+ For more information, see [How to: Add a Command to the Shortcut Menu](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
- También puede crear un controlador de validación diferente y administrar los errores por sí mismo. Por ejemplo:  
+ You can also create a separate validation controller, and manage the errors yourself. For example:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Validation;  
 using Microsoft.VisualStudio.Modeling.Shell;  
@@ -235,12 +252,12 @@ if (!validator.Validate(store, ValidationCategories.Save))
   
 ```  
   
-## <a name="running-validation-when-a-change-occurs"></a>Ejecutar la validación cuando se produce un cambio  
- Si quiere asegurarse de que el usuario reciba una advertencia inmediata si el modelo queda invalidado, puede definir un evento de almacén que ejecute la validación. Para obtener más información acerca de los eventos de almacén, consulte [controladores propagar cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+## <a name="running-validation-when-a-change-occurs"></a>Running validation when a change occurs  
+ If you want to make sure that the user is warned immediately if the model becomes invalid, you can define a store event that runs validation. For more information about store events, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
- Además del código de validación, agregue un archivo de código personalizado para su **DslPackage** proyecto, con un contenido similar al ejemplo siguiente. Este código usa el `ValidationController` que está asociado al documento. Este controlador muestra los errores de validación en la lista de errores de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ In addition to the validation code, add a custom code file to your **DslPackage** project, with content similar to the following example. This code uses the `ValidationController` that is attached to the document. This controller displays the validation errors in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] error list.  
   
-```c#  
+```csharp  
 using System;  
 using System.Linq;  
 using Microsoft.VisualStudio.Modeling;  
@@ -299,16 +316,16 @@ namespace Company.FamilyTree
   
 ```  
   
- También se llama a los controladores después de las operaciones de deshacer o rehacer que afectan a los vínculos o elementos.  
+ The handlers are also called after Undo or Redo operations that affect the links or elements.  
   
-##  <a name="a-namecustoma-custom-validation-categories"></a><a name="custom"></a> Categorías de validación personalizadas  
- Además de las categorías de validación estándar, como Menu y Open, puede definir sus propias categorías. Puede invocar estas categorías desde el código de programa. El usuario no puede invocarlas directamente.  
+##  <a name="custom"></a> Custom Validation Categories  
+ In addition to the standard validation categories, such as Menu and Open, you can define your own categories. You can invoke these categories from program code. The user cannot invoke them directly.  
   
- Un uso típico de las categorías personalizadas es definir una categoría que pruebe si el modelo cumple las condiciones previas de una herramienta determinada.  
+ A typical use for custom categories is to define a category that tests whether the model satisfies the preconditions of a particular tool.  
   
- Para agregar un método de validación a una categoría determinada, asígnele como prefijo un atributo como este:  
+ To add a validation method to a particular category, prefix it with an attribute like this:  
   
-```c#  
+```csharp  
 [ValidationMethod(CustomCategory = "PreconditionsForGeneratePartsList")]  
 [ValidationMethod(ValidationCategory.Menu)]   
 private void TestForCircularLinks(ValidationContext context)   
@@ -317,11 +334,11 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  A un método se pueden asignar como prefijo tantos atributos `[ValidationMethod()]` como quiera. Puede agregar un método a las categorías tanto personalizadas como estándar.  
+>  You can prefix a method with as many `[ValidationMethod()]` attributes as you want. You can add a method to both custom and standard categories.  
   
- Para invocar una validación personalizada:  
+ To invoke a custom validation:  
   
-```c#  
+```csharp  
   
 // Invoke all validation methods in a custom category:   
 validationController.ValidateCustom  
@@ -329,18 +346,18 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="a-namealternativesa-alternatives-to-validation"></a><a name="alternatives"></a> Alternativas a la validación  
- Las restricciones de validación notifican los errores, pero no cambian el modelo. Si, en su lugar, quiere evitar que el modelo quede invalidado, puede usar otras técnicas.  
+##  <a name="alternatives"></a> Alternatives to Validation  
+ Validation constraints report errors, but do not change the model. If, instead, you want to prevent the model becoming invalid, you can use other techniques.  
   
- Sin embargo, estas técnicas no se recomiendan. Normalmente lo mejor es dejar que el usuario decida cómo corregir un modelo no válido.  
+ However, these techniques are not recommended. It is usually better to let the user decide how to correct an invalid model.  
   
- **Ajuste del cambio para que el modelo de validez.** Por ejemplo, si el usuario establece una propiedad por encima del máximo permitido, puede restablecer la propiedad en el valor máximo. Para ello, defina una regla. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+ **Adjust the change to restore the model to validity.** For example, if the user sets a property above the allowed maximum, you could reset the property to the maximum value. To do this, define a rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
- **Revertir la transacción si se intenta realizar un cambio no válido.** También puede definir una regla para este propósito, pero en algunos casos es posible reemplazar un controlador de propiedad **OnValueChanging()**, o para invalidar un método como `OnDeleted().` para revertir una transacción, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md).  
+ **Roll back the transaction if an invalid change is attempted.** You could also define a rule for this purpose, but in some cases it is possible to override a property handler **OnValueChanging()**, or to override a method such as `OnDeleted().` To roll back a transaction, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` For more information, see [Domain Property Value Change Handlers](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Asegúrese de que el usuario sabe que el cambio se ha ajustado o revertido. Por ejemplo, use `System.Windows.Forms.MessageBox.Show("message").`.  
+>  Make sure that the user knows that the change has been adjusted or rolled back. For example, use `System.Windows.Forms.MessageBox.Show("message").`  
   
-## <a name="see-also"></a>Vea también  
- [Navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Controladores de eventos propagan los cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+## <a name="see-also"></a>See Also  
+ [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md)

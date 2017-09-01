@@ -1,76 +1,93 @@
 ---
-title: "Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 5: Add Enter Event Handlers for the NumericUpDown Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
-En la quinta parte de este tutorial, agregará controladores de eventos Enter para hacer que sea un poco más fácil escribir las respuestas a los problemas de la prueba.  Este código seleccionará y borrará el valor actual de cada uno de los controles NumericUpDown en cuanto el jugador lo elija y comience a escribir un valor diferente.  
+---
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Step 5: Add Enter Event Handlers for the NumericUpDown Controls
+In the fifth part of this tutorial, you'll add Enter event handlers to make entering answers for quiz problems a little easier. This code will select and clear the current value in each NumericUpDown control as soon as the quiz taker chooses it and starts to enter a different value.  
   
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.  Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### Para comprobar el comportamiento predeterminado  
+### <a name="to-verify-the-default-behavior"></a>To verify the default behavior  
   
-1.  Ejecute el programa e inicie la prueba.  
+1.  Run your program, and start the quiz.  
   
-     En el control NumericUpDown del problema de suma, el cursor parpadea junto a **0** \(cero\).  
+     In the NumericUpDown control for the addition problem, the cursor flashes next to **0** (zero).  
   
-2.  Escriba `3` y observe que en el control aparece **30**.  
+2.  Enter `3`, and note that the control shows **30**.  
   
-3.  Escriba `5` y observe que aparece **350**, aunque cambia a **100** después de un segundo.  
+3.  Enter `5`, and note that **350** appears but changes to **100** after a second.  
   
-     Antes de corregir este problema, piense en lo que está sucediendo.  Piense por qué no desapareció **0** cuando escribió `3` y por qué **350** cambió a **100**, aunque esto no sucedió inmediatamente.  
+     Before you fix this problem, think about what's happening. Consider why the **0** didn't disappear when you entered `3` and why **350** changed to **100** but not immediately.  
   
-     Este comportamiento puede parecer extraño, pero tiene sentido dada la lógica del código.  Al elegir el botón **Iniciar**, la propiedad **Enabled** del botón está establecida en **False**; el botón aparece atenuado y no está disponible.  El programa cambia la selección actual \(foco\) al control que tiene el siguiente valor TabIndex más bajo, que es el control NumericUpDown del problema de suma.  Al presionar la tecla TAB para ir a un control NumericUpDown, el cursor se coloca automáticamente al principio del control; este es el motivo por el cual los números que se escriben aparecen en el lado izquierdo y no en el derecho.  Cuando se especifica un número mayor que el valor de la propiedad **MaximumValue**, que está establecida en 100, el número especificado se reemplaza por el valor de esta propiedad.  
+     This behavior may seem odd, but it makes sense given the logic of the code. When you choose the **Start** button, its **Enabled** property is set to **False**, and the button appears dimmed and is unavailable. Your program changes the current selection (focus) to the control that has the next lowest TabIndex value, which is the NumericUpDown control for the addition problem. When you use the Tab key to go to a NumericUpDown control, the cursor is automatically positioned at the start of the control, which is why the numbers that you enter appear from the left side and not the right side. When you specify a number that's higher than the value of the **MaximumValue** property, which is set to 100, the number that you enter is replaced with the value of that property.  
   
-### Para agregar un controlador de eventos Enter en un control NumericUpDown  
+### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>To add an Enter event handler for a NumericUpDown control  
   
-1.  Elija el primer control NumericUpDown \(denominado “suma”\) del formulario y, a continuación, en el cuadro de diálogo **Propiedades**, elija el icono **Eventos** de la barra de herramientas.  
+1.  Choose the first NumericUpDown control (named "sum") on the form, and then, in the **Properties** dialog box, choose the **Events** icon on the toolbar.  
   
-     En la pestaña **Eventos** del cuadro de diálogo **Propiedades** se muestran todos los eventos del elemento elegido en el formulario a los que se puede responder \(que pueden controlarse\).  Dado que eligió el control NumericUpDown, todos los eventos enumerados pertenecen a ese control.  
+     The **Events** tab in the **Properties** dialog box displays all of the events that you can respond to (handle) for the item that you choose on the form. Because you chose the NumericUpDown control, all of the events listed pertain to it.  
   
-2.  Elija el evento **Enter**, escriba `answer_Enter` y elija la tecla Entrar.  
+2.  Choose the **Enter** event, enter `answer_Enter`, and then choose the Enter key.  
   
-     ![Cuadro de diálogo Propiedades](../ide/media/express_answerenter.png "Express\_AnswerEnter")  
-Cuadro de diálogo Propiedades  
+     ![Properties dialog box](../ide/media/express_answerenter.png "Express_AnswerEnter")  
+Properties dialog box  
   
-     Acaba de agregar un controlador de eventos Enter para el control NumericUpDown de suma y ha denominado el controlador **answer\_Enter**.  
+     You've just added an Enter event handler for the sum NumericUpDown control, and you've named the handler **answer_Enter**.  
   
-3.  En el método del controlador de eventos **answer\_Enter**, agregue el código siguiente.  
+3.  In the method for the **answer_Enter** event handler, add the following code.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
-     Este código puede parecer complejo, pero puede entenderlo si lo examina paso a paso.  En primer lugar, fíjese en la parte superior del método: `object sender` en C\# o `sender As System.Object` en Visual Basic.  Este parámetro hace referencia al objeto que tiene el evento que se genera, lo que se conoce como remitente.  En este caso, el objeto remitente es el control NumericUpDown.  Por lo tanto, en la primera línea del método, se especifica que el remitente no es simplemente un objeto genérico, sino que se trata específicamente de un control NumericUpDown. \(Cada control NumericUpDown es un objeto, pero no todos los objetos son un control NumericUpDown.\) El control NumericUpDown se denomina **answerBox** en este método, porque se utilizará para todos los controles NumericUpDown del formulario, no solo para el control NumericUpDown de suma.  Dado que la variable answerBox se declara en este método, su ámbito solo se aplica a este método.  Es decir, la variable solo se puede utilizar en este método.  
+     This code may look complex, but you can understand it if you look at it step by step. First, look at the top of the method: `object sender` in C# or `sender As System.Object` in Visual Basic. This parameter refers to the object whose event is firing, which is known as the sender. In this case, the sender object is the NumericUpDown control. So, in the first line of the method, you specify that the sender isn't just any generic object but specifically a NumericUpDown control. (Every NumericUpDown control is an object, but not every object is a NumericUpDown control.) The NumericUpDown control is named **answerBox** in this method, because it will be used for all of the NumericUpDown controls on the form, not just the sum NumericUpDown control. Because you declare the answerBox variable in this method, its scope applies only to this method. In other words, the variable can be used only within this method.  
   
-     En la línea siguiente se comprueba si se ha llevado a cabo correctamente la conversión \(de tipos\) de answerBox: de un objeto a un control NumericUpDown.  Si la conversión fuera incorrecta, la variable tendría un valor de `null` \(en C\#\) o de `Nothing` \(en Visual Basic\).  La tercera línea obtiene la longitud de la respuesta que aparece en el control NumericUpDown y la cuarta línea selecciona el valor actual del control en función de esa longitud.  Ahora, cuando el jugador elige el control, Visual Studio genera este evento, con lo que se selecciona la respuesta actual.  En cuanto el jugador empiece a escribir otra respuesta, se borrará la respuesta anterior y se reemplazará por la nueva.  
+     The next line verifies whether answerBox was successfully converted (cast) from an object to a NumericUpDown control. If the conversion was unsuccessful, the variable would have a value of `null` (C#) or `Nothing` (Visual Basic). The third line gets the length of the answer that appears in the NumericUpDown control, and the fourth line selects the current value in the control based on this length. Now, when the quiz taker chooses the control, Visual Studio fires this event, which causes the current answer to be selected. As soon as the quiz taker starts to enter a different answer, the previous answer is cleared and replaced with the new answer.  
   
-4.  En el diseñador de Windows Forms, elija el control NumericUpDown de resta.  
+4.  In Windows Forms Designer, choose the difference NumericUpDown control.  
   
-5.  En la página **Eventos** del cuadro de diálogo **Propiedades**, desplácese hacia abajo hasta el evento **Enter**, elija la flecha de lista desplegable al final de la fila y elija el controlador de eventos `answer_Enter` que acaba de agregar.  
+5.  In the **Events** page of the **Properties** dialog box, scroll down to the **Enter** event, choose the drop-down arrow at the end of the row, and then choose the `answer_Enter` event handler that you just added.  
   
-6.  Repita el paso anterior para los controles NumericUpDown de producto y cociente.  
+6.  Repeat the previous step for the product and quotient NumericUpDown controls.  
   
-7.  Guarde el programa y ejecútelo.  
+7.  Save your program, and then run it.  
   
-     Al elegir un control NumericUpDown, el valor existente se selecciona automáticamente y se borra cuando empieza a escribir un valor diferente.  
+     When you choose a NumericUpDown control, the existing value is automatically selected and then cleared when you start to enter a different value.  
   
-### Para continuar o revisar  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Para ir al siguiente paso del tutorial, vea [Paso 6: Agregar un problema de resta](../ide/step-6-add-a-subtraction-problem.md).  
+-   To go to the next tutorial step, see [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 4: Agregar el método CheckTheAnswer\(\)](../ide/step-4-add-the-checktheanswer-parens-method.md).
+-   To return to the previous tutorial step, see [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md).

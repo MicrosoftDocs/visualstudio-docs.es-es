@@ -1,46 +1,51 @@
 ---
-title: "Crear objetos (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "funciones constructoras"
-  - "constructores, incluir propiedades y métodos"
-  - "crear objetos"
-  - "crear objetos, acerca de crear objetos"
-  - "crear objetos, funciones constructoras"
-  - "crear objetos, prototipos"
-  - "objetos personalizados"
-  - "objetos personalizados, crear"
-  - "Function (constructor)"
-  - "inicializar objetos, utilizar constructores"
-  - "objetos, crear [JavaScript]"
-  - "objetos prototipo"
+title: "Creación de objetos (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- constructors, including properties and methods
+- function constructor
+- creating objects, constructor functions
+- constructor functions
+- prototype objects
+- creating objects
+- custom objects, creating
+- creating objects, about creating objects
+- objects, creating [JavaScript]
+- creating objects, prototypes
+- custom objects
+- initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
 caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 0ba7962179cc2f0fcb972caee692edabee368c7d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/11/2017
+
 ---
-# Crear objetos (JavaScript)
-Dispone de varias maneras de crear sus propios objetos en JavaScript.  Puede crear directamente instancias de un [Object \(Objeto\)](../javascript/reference/object-object-javascript.md) y, después, agregar sus propios métodos y propiedades.  También puede usar la notación literal de objeto para definirlo.  Igualmente, puede usar una función constructora para definir un objeto.  Si quiere más información sobre el uso de funciones constructoras, vea [Utilizar constructores para definir tipos](../javascript/advanced/using-constructors-to-define-types.md).  
+# <a name="creating-objects-javascript"></a>Crear objetos (JavaScript)
+Dispone de varias maneras de crear sus propios objetos en JavaScript. Puede crear directamente instancias de un [objeto](../javascript/reference/object-object-javascript.md) y luego agregar sus propias propiedades y métodos. También puede usar la notación literal de objeto para definirlo. Igualmente, puede usar una función constructora para definir un objeto. Para obtener más información sobre el uso de funciones de constructor, consulte [Using Constructors to Define Types](../javascript/advanced/using-constructors-to-define-types.md) (Uso de constructores para definir tipos).  
   
-## Ejemplo  
- El código siguiente muestra cómo crear una instancia de un objeto y agregar algunas propiedades.  En este caso, solo el objeto `pasta` tiene las propiedades `grain`, `width` y `shape`.  
+## <a name="example"></a>Ejemplo  
+ El código siguiente muestra cómo crear una instancia de un objeto y agregar algunas propiedades. En este caso, solo el objeto `pasta` tiene las propiedades `grain`, `width` y `shape`.  
   
-```javascript  
-var pasta = new Object();  
+```JavaScript  
+const pasta = new Object();  
 pasta.grain = "wheat";  
 pasta.width = 0.5;  
 pasta.shape = "round";  
@@ -57,11 +62,11 @@ document.write(pasta.getShape());
   
 ```  
   
-## Literales de objeto  
- También puede usar la notación literal de objeto para crear una única instancia de un objeto.  El código siguiente muestra cómo crear una instancia de un objeto usando la notación literal de objeto.  
+## <a name="object-literals"></a>Literales de objeto  
+ También puede usar la notación literal de objeto para crear una única instancia de un objeto. El código siguiente muestra cómo crear una instancia de un objeto usando la notación literal de objeto.  
   
-```javascript  
-var pasta = {  
+```JavaScript  
+const pasta = {  
     grain: "wheat",  
     width: 0.5,  
     shape: "round"  
@@ -75,18 +80,18 @@ var pasta = {
   
  En [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)], puede usar la sintaxis abreviada para crear un literal de objeto.  
   
-```javascript  
-var key = 'a';  
-var value = 5;  
+```JavaScript  
+const key = 'a';  
+const value = 5;  
   
 // Older version  
-var obj1 = {  
+const obj1 = {  
     key: key,  
     value: value  
 };  
   
 // Edge mode  
-var obj2 = {key, value};  
+const obj2 = {key, value};  
   
 console.log(obj2);  
   
@@ -96,26 +101,26 @@ console.log(obj2);
   
  En el ejemplo siguiente se muestra el uso de la sintaxis abreviada para definir métodos en literales de objeto.  
   
-```javascript  
+```JavaScript  
 // Older versions  
-var obj = {  
+const obj = {  
     method1: function() {},  
     method2: function() {}  
 };  
   
 // Edge mode  
-var obj = {  
+const obj = {  
     method1() {},  
     method2() {}  
 };  
 ```  
   
- También puede establecer los nombres de propiedad dinámicamente en literales de objeto en [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)].  En el ejemplo de código siguiente se crea un nombre de propiedad para un objeto dinámicamente mediante la sintaxis Set.  
+ También puede establecer los nombres de propiedad dinámicamente en literales de objeto en [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)]. En el ejemplo de código siguiente se crea un nombre de propiedad para un objeto dinámicamente mediante la sintaxis Set.  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     value: 0,  
     set [propName](v) {  
         this.value = v;  
@@ -135,10 +140,10 @@ console.log(obj.value);
   
  En el ejemplo de código siguiente se crea un nombre de propiedad para un objeto dinámicamente mediante la sintaxis Get.  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     get [propName]() {  
         return 777;  
     }  
@@ -152,8 +157,9 @@ console.log(obj.prop_42);
   
  En el ejemplo de código siguiente se crea una propiedad calculada mediante la [sintaxis de la función de flecha](../javascript/functions-javascript.md) para anexar 42 al nombre de propiedad.  
   
-```javascript  
-var obj = {  
+```JavaScript  
+const obj = {  
     [ 'prop_' + (() => 42)() ]: 42  
 };  
 ```
+

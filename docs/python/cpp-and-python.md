@@ -1,69 +1,56 @@
 ---
-title: Trabajar con C++ y Python en Visual Studio | Microsoft Docs
+title: Working with C++ and Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 3/27/2017
+ms.date: 7/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
-description: "Proceso y pasos para escribir una extensión o módulo de C++ para Python en Visual Studio"
+description: The process amd steps to write a C++ extension or module for Python in Visual Studio
 caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 1912afdba22d9dec6ee3f68aafc78c07779a5b3c
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
+# <a name="creating-a-c-extension-for-python"></a>Creating a C++ extension for Python
 
-Los módulos escritos en C++ (o C) se suelen usar para ampliar las capacidades de un intérprete de Python y para permitir el acceso a funciones de bajo nivel del sistema operativo. Hay tres tipos principales de módulos:
+Modules written in C++ (or C) are commonly used to extend the capabilities of a Python interpreter as well as to enable access to low-level operating system capabilities. There are three primary types of modules:
 
-- Módulos de acelerador: dado que Python es un lenguaje interpretado, algunas partes del código pueden escribirse en C++ para un mayor rendimiento. 
-- Módulos de contenedor: exponga las interfaces existentes de C o C++ a código Python o exponga una API de Python que use características del lenguaje Python para que la API sea más fácil de usar.
-- Módulos de acceso al sistema de bajo nivel: creados para tener acceso a características de bajo nivel del tiempo de ejecución de CPython, el sistema operativo o el hardware subyacente. 
+- Accelerator modules: because Python is an interpreted language, certain pieces of code can be written in C++ for higher performance. 
+- Wrapper modules: wrappers expose existing C/C++ interfaces to Python code or expose a more "Pythonic" API that's easy to use from Python.
+- Low-level system access modules: created to access lower-level features of the CPython runtime, the operating system, or the underlying hardware. 
 
-Este tema le guía por la compilación de un módulo de extensión de C++ para CPython que calcula la tangente hiperbólica y la llama desde el código Python. Para demostrar la diferencia de rendimiento, creará y probará la rutina primero en Python.
+This topic walks through building a C++ extension module for CPython that computes a hyperbolic tangent and calls it from Python code. The routine is implemented first in Python to demonstrate the performance gain of implementing the same routine in C++.
 
-El enfoque adoptado aquí es el de las extensiones de CPython estándar que se describe en la [documentación de Python](https://docs.python.org/3/c-api/). Al final de este tema, en [Enfoques alternativos](#alternative-approaches), se describe una comparación entre este y otros medios.
+The approach taken here is that for standard CPython extensions as described in the [Python documentation](https://docs.python.org/3/c-api/). A comparison between this and other means is described under [alternative approaches](#alternative-approaches) at the end of this topic.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerequisites
 
-Este tutorial se ha escrito para Visual Studio 2017 con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** con sus opciones predeterminadas (como Python 3.6 como intérprete predeterminado). En la carga de trabajo **Desarrollo de Python**, active también la casilla de la derecha de **Herramientas de desarrollo nativo Python**, que establecerá la mayoría de las opciones descritas en este tema. (Esta opción también incluirá la carga de trabajo de C++ automáticamente). 
+This walkthrough is written for Visual Studio 2017 with both the **Desktop Development with C++** and **Python Development** workloads with their default options (such as Python 3.6 as the default interpreter). In the **Python Development** workload, also check the box on the right for **Python native development tools**, which sets up most of the options described in this topic. (This option also includes the C++ workload automatically.) 
 
-![Selección de la opción Herramientas de desarrollo nativo Python](~/python/media/cpp-install-native.png)
+![Selecting the Python native development tools option](media/cpp-install-native.png)
 
-Para obtener más información, vea [Installing Python Support for Visual Studio](installation.md) (Instalación de la compatibilidad de Python para Visual Studio), incluido el uso de otras versiones de Visual Studio. Si instala Python por separado, asegúrese de seleccionar **Download debugging symbols** (Descargar símbolos de depuración) y **Download debug binaries** (Descargar archivos binarios de depuración) en **Opciones avanzadas** en el programa de instalación. Esto garantiza que tenga disponibles las bibliotecas de depuración necesarias si decide realizar una compilación de depuración.
+For more information, see [Installing Python Support for Visual Studio](installation.md), including using other versions of Visual Studio. If you install Python separately, be sure to select **Download debugging symbols** and **Download debug binaries** under **Advanced Options** in the installer. This option ensures that you have the necessary debug libraries available if you choose to do a debug build.
 
 > [!Note]
-> Python también está disponible a través de la carga de trabajo **Aplicaciones analíticas y de ciencia de datos**, que incluye Anaconda 3 de 64 bits (con la versión más reciente de CPython) y la opción **Herramientas de desarrollo nativo de Python** predeterminada.
+> Python is also available through the **Data science and analytical applications** workload, which includes Anaconda 3 64-bit (with the latest version of CPython) and the **Python native development tools** option by default.
 
-## <a name="create-the-python-application"></a>Crear la aplicación de Python
+## <a name="create-the-python-application"></a>Create the Python application
 
-1. Cree un proyecto de Python en Visual Studio. Para ello, seleccione el comando de menú **Archivo > Nuevo > Proyecto**, busque "Python", seleccione la plantilla **Aplicación de Python**, asígnele un nombre y una ubicación adecuados y seleccione **Aceptar**.
+1. Create a new Python project in Visual Studio by selecting **File > New > Project**. Search for "Python", select the **Python Application** template, give it a suitable name and location, and select **OK**.
 
-1. En el archivo `.py` del proyecto, pegue el código siguiente, que realiza una prueba comparativa del cálculo de una tangente hiperbólica (implementada sin usar la biblioteca matemática para facilitar la comparación). No dude en escribir el código manualmente para experimentar algunas de las [características de edición de Python](code-editing.md).
+1. In the project's `.py` file, paste the following code that benchmarks the computation of a hyperbolic tangent (implemented without using the math library for easier comparison). Feel free to enter the code manually to experience some of the [Python editing features](code-editing.md).
 
     ```python
     from itertools import islice
@@ -111,41 +98,41 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. Ejecute el programa mediante **Depurar > Iniciar sin depurar** (Ctrl+F5) para ver los resultados. Verá que cada prueba comparativa tarda unos segundos en completarse.
+1. Run the program using **Debug > Start without Debugging** (Ctrl+F5) to see the results. Each benchmark takes several seconds to complete.
 
-## <a name="create-the-core-c-project"></a>Crear el proyecto de C++ principal
+## <a name="create-the-core-c-project"></a>Create the core C++ project
 
-1. Haga clic con el botón derecho en la solución en el Explorador de soluciones y seleccione **Agregar > Nuevo proyecto…**. Una solución de Visual Studio puede contener proyectos de Python y C++ juntos.
+1. Right-click the solution in Solution Explorer and select **Add > New Project...**. A Visual Studio solution can contain both Python and C++ projects together.
 
-1. Busque "C++", seleccione **Proyecto vacío**, especifique un nombre (por ejemplo, TanhBenchmark) y seleccione **Aceptar**. Nota: Si ha instalado las **Herramientas de desarrollo nativo Python** con Visual Studio 2017, puede comenzar con la plantilla **Módulo de extensión de Python**, que incluye gran parte de lo que se describe aquí. Pero en este tutorial, partiremos de un proyecto vacío para mostrar la compilación del módulo de extensión paso a paso.
+1. Search on "C++", select **Empty project**, specify a name (such as TanhBenchmark), and select **OK**. Note: if you've installed the **Python native development tools** with Visual Studio 2017, you can start with the **Python Extension Module** template, which has much of what's described here already in place. For this walkthrough, though, starting with an empty project demonstrates building the extension module step by step.
 
-1. Cree un archivo de C++ en el nuevo proyecto. Para ello, haga clic con el botón derecho en el nodo **Archivos de código fuente**, seleccione **Agregar > Nuevo elemento…**, elija **Archivo de C++**, asígnele un nombre (como `module.cpp`) y seleccione **Aceptar**. Este paso es necesario para activar las páginas de propiedades de C++ en los pasos siguientes.
+1. Create a C++ file in the new project by right-clicking the **Source Files** node, then select **Add > New Item..."**, select **C++ File**, give it a name (like `module.cpp`), and select **OK**. This step is necessary to turn on the C++ property pages in the next steps.
 
-1. Haga clic con el botón derecho en el nuevo proyecto, seleccione **Propiedades** y, en la parte superior del cuadro de diálogo **Páginas de propiedades** que aparece, establezca **Configuración** en **Todas las configuraciones**.
+1. Right-click the new project and select **Properties**, then at the top of the **Property Pages** dialog that appears, set **Configuration** to **All Configurations**.
 
-1. Establezca las propiedades específicas como se describe a continuación y seleccione **Aplicar** (es posible que deba hacer clic fuera de un campo editable para que se habilite el botón **Aplicar**).
+1. Set the specific properties as described below, then select **Apply** (you may need to click outside of an editable field for the **Apply** button to become enabled).
 
-    | Tab | Propiedad | Valor | 
+    | Tab | Property | Value | 
     | --- | --- | --- |
-    | General | General > Nombre de destino | Establézcalo de modo que coincida exactamente con el nombre del módulo tal como lo ve Python. |
-    | | General > Extensión de destino | .pyd |
-    | | Valores predeterminados del proyecto > Tipo de configuración | Biblioteca dinámica (.dll) |
-    | C/C++ > General | Directorios de inclusión adicionales | Agregue la carpeta `include` de Python según sea necesario para la instalación, por ejemplo, `c:\Python36\include`. |     
-    | C/C++ > Generación de código | Biblioteca en tiempo de ejecución | DLL multiproceso (/MD) (vea la advertencia siguiente) |
-    | C/C++ > Preprocesador | Definiciones de preprocesador | Agregue `Py_LIMITED_API;` al principio de la cadena. Esto restringe algunas de las funciones a las que se puede llamar desde Python y hace que el código sea más portátil entre versiones diferentes de Python. |
-    | Enlazador > General | Directorios de bibliotecas adicionales | Agregue la carpeta `lib` de Python que contiene archivos `.lib` según sea necesario para la instalación, por ejemplo, `c:\Python36\libs`. (Asegúrese de apuntar a la carpeta `libs` que contiene archivos `.lib`, y *no* a la carpeta `Lib` que contiene archivos `.py`). | 
+    | General | General > Target Name | Set this field to exactly match the name of the module as Python sees it. |
+    | | General > Target Extension | .pyd |
+    | | Project Defaults > Configuration Type | Dynamic Library (.dll) |
+    | C/C++ > General | Additional Include Directories | Add the Python `include` folder as appropriate for your installation, for example, `c:\Python36\include` |     
+    | C/C++ > Code Generation | Runtime Library | Multi-threaded DLL (/MD) (see Warning below) |
+    | C/C++ > Preprocessor | Preprocessor Definitions | Add `Py_LIMITED_API;` to the beginning of the string, which restricts some of the functions you can call from Python and makes the code more portable between different versions of Python. |
+    | Linker > General | Additional Library Directories | Add the Python `lib` folder containing `.lib` files as appropriate for your installation, for example, `c:\Python36\libs`. (Be sure to point to the `libs` folder that contains `.lib` files, and *not* the `Lib` folder that contains `.py` files.) | 
 
     > [!Tip]
-    > Si no ve la pestaña C/C++, esto se debe a que el proyecto no contiene archivos identificados como archivos de código fuente de C/C++. Esto puede suceder si crea un archivo de código fuente sin una extensión `.c` o `.cpp`. Por ejemplo, si ha escrito accidentalmente `module.coo` en lugar de `module.cpp` en el anterior cuadro de diálogo Nuevo elemento, Visual Studio creará el archivo pero no establecerá el tipo de archivo en "Código C/C++", que es lo que activa la pestaña de propiedades de C/C++. Esto seguirá pasando incluso si cambia el nombre de archivo a `.cpp`. Para corregir este problema, haga clic con el botón derecho en el archivo en el Explorador de soluciones, seleccione **Propiedades** y establezca **Tipo de archivo** en **Código C/C++**.
+    > If you don't see the C/C++ tab, it's because the project doesn't contain any files that it identifies as C/C++ source files. This condition can occur if you create a source file without a `.c` or `.cpp` extension. For example, if you accidentally entered `module.coo` instead of `module.cpp` in the new item dialog earlier, then Visual Studio creates the file but doesn't set the file type to "C/C+ Code," which is what activates the C/C++ properties tab. This misidentification remains the case even if you rename the file with `.cpp`. To set the file type properly, right-click the file in Solution Explorer, select **Properties**, then set  **File Type** to **C/C++ Code**.
 
     > [!Warning]
-    > No establezca la opción **C/C++ > Generación de código > Biblioteca en tiempo de ejecución** en "DLL de depuración multiproceso (/MDd)" ni siquiera para una configuración de depuración. Debe seleccionar el tiempo de ejecución de "DLL multiproceso (/MD)", ya que es con lo que se compilan los binarios de Python que no son de depuración. Si por accidente establece la opción /MDd, verá el error *C1189: Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG* (C1189: Py_LIMITED_API no es compatible con Py_DEBUG, Py_TRACE_REFS y Py_REF_DEBUG) al compilar una configuración de depuración del archivo DLL. Además, si quita `Py_LIMITED_API` para evitar el error de compilación, Python se bloqueará al intentar importar el módulo. (El bloqueo se producirá en la llamada del archivo DLL a `PyModule_Create`, como se describe más adelante, con el mensaje de salida *Fatal Python error: PyThreadState_Get: no current thread* (Error irrecuperable Python: PyThreadState_Get: ningún subproceso actual)).
+    > Don't set the **C/C++ > Code Generation > Runtime Library** option to "Multi-threaded Debug DLL (/MDd)" even for a Debug configuration. Select the "Multi-threaded DLL (/MD)" runtime because that's what the non-debug Python binaries are built with. If you happen to set the /MDd option, you see error *C1189: Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG* when building a Debug configuration of your DLL. Furthermore, if you remove `Py_LIMITED_API` to avoid the build error, Python crashes when attempting to import the module. (The crash happens within the DLL's call to `PyModule_Create` as described later, with the output message of *Fatal Python error: PyThreadState_Get: no current thread*.)
     >
-    > Tenga en cuenta que la opción /MDd es lo que se usa para compilar los binarios de depuración de Python (como python_d.exe), pero si se selecciona para un archivo DLL de extensión también se producirá el error de compilación con `Py_LIMITED_API`.
+    > Note that the /MDd option is what's used to build the Python debug binaries (such as python_d.exe), but selecting it for an extension DLL still causes the build error with `Py_LIMITED_API`.
    
-1. Haga clic con el botón derecho en el proyecto de C++ y seleccione **Compilar** para probar sus configuraciones (de depuración y de lanzamiento). Tenga en cuenta que encontrará los archivos `.pyd` en la carpeta *solución* en **Depuración** y **Lanzamiento**, no en la carpeta del proyecto de C++.
+1. Right-click the C++ project and select **Build** to test your configurations (both Debug and Release). The `.pyd` files are located in the *solution* folder under **Debug** and **Release**, not the C++ project folder itself.
 
-1. Agregue el código siguiente al archivo `.cpp` principal del proyecto de C++:
+1. Add the following code to the C++ project's main `.cpp` file:
 
     ```cpp
     #include <Windows.h>
@@ -161,25 +148,25 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
         return (1 + pow(e, (-2 * x))) / (2 * pow(e, -x));
     }
 
-    double tanh(x) {
+    double tanh(double x) {
         return sinh(x) / cosh(x);
     }
     ```
 
-1. Compile el proyecto de C++ para confirmar que el código es correcto.
+1. Build the C++ project again to confirm that your code is correct.
 
 
-## <a name="convert-the-c-project-to-an-extension-for-python"></a>Convertir el proyecto de C++ a una extensión para Python
+## <a name="convert-the-c-project-to-an-extension-for-python"></a>Convert the C++ project to an extension for Python
 
-Para convertir el DLL de C++ en una extensión para Python, debe modificar el método exportado de modo que interactúe con tipos de Python. Después, debe agregar una función que exporte el módulo, junto con las definiciones de los métodos del módulo. Para obtener información general sobre lo que se muestra aquí, vea [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) (Manual de referencia de API de Python/C) y, en especial, [Module Objects](https://docs.python.org/3/c-api/module.html) (Objetos de módulo) en python.org. (No olvide seleccionar su versión de Python en el control desplegable situado en la esquina superior derecha).
+To make the C++ DLL into an extension for Python, you need to modify the exported method to interact with Python types. Then you need to add a function that exports the module, along with definitions of the module's methods. For background on what's shown here, refer to the [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) and especially [Module Objects](https://docs.python.org/3/c-api/module.html) on python.org. (Remember to select your version of Python from the drop-down control on the upper right.)
 
-1. En el archivo de C++, incluya `Python.h` en la parte superior:
+1. In the C++ file, include `Python.h` at the top:
 
     ```cpp
-    include <Python.h>
+    #include <Python.h>
     ```
 
-1. Modifique el método `tanh` para aceptar y devolver tipos de Python:
+1. Modify the `tanh` method to accept and return Python types:
 
     ```cpp
     PyObject* tanh(PyObject *, PyObject* o) {
@@ -189,7 +176,7 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar el m�
     }
     ```
 
-1. Agregue una estructura que defina la manera en que la función `tanh` de C++ se muestra en Python:
+1. Add a structure that defines how the C++ `tanh` function is presented to Python:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
@@ -201,7 +188,7 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar el m�
     };
     ```
 
-1. Agregue una estructura que defina el módulo como lo verá Python:
+1. Add a structure that defines the module as Python sees it:
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -213,7 +200,7 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar el m�
     };
     ```
 
-1. Agregue un método al que Python llame cuando cargue el módulo, con el nombre `PyInit_<module-name>`, donde *&lt;module_name&gt;* debe coincidir exactamente con la propiedad **General > Nombre de destino** del proyecto de C++ (es decir, coincide con el nombre del archivo `.pyd` compilado por el proyecto).
+1. Add a method that Python calls when it loads the module, which must be named `PyInit_<module-name>`, where *&lt;module_name&gt;* exactly matches the C++ Project's **General > Target Name** property (that is, it matches the filename of the `.pyd` built by the project).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {    
@@ -221,21 +208,21 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar el m�
     }
     ```
 
-1. Compile el archivo DLL otra vez para comprobar el código.
+1. Build the DLL again to verify your code.
 
-## <a name="test-the-code-and-compare-the-results"></a>Probar el código y comparar los resultados
+## <a name="test-the-code-and-compare-the-results"></a>Test the code and compare the results
 
-Ahora que tiene el archivo DLL estructurado como una extensión de Python, puede hacer referencia a él desde el proyecto de Python, importar el módulo y usar sus métodos.
+Now that you have the DLL structured as a Python extension, you can refer to it from the Python project, import the module, and use its methods.
 
-Hay dos maneras de hacer que el archivo DLL esté disponible para Python. En primer lugar, puede agregar una referencia desde el proyecto de Python al proyecto de C++, siempre y cuando se encuentren en la misma solución de Visual Studio:
+There are two ways to make the DLL available to Python. First, you can add a reference from the Python project to the C++ project, provided that they're in the same Visual Studio solution:
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto de Python y seleccione **Referencias**. En el cuadro de diálogo, seleccione la pestaña **Proyectos**, el proyecto **superfastcode** y **Aceptar**.
+1. In Solution Explorer, right-click the Python project and select **References**. In the dialog, select the **Projects** tab, select the **superfastcode** project, and then **OK**.
 
-En segundo lugar, puede instalar el módulo en el entorno global de Python, de modo que también esté disponible para otros proyectos de Python. Tenga en cuenta que, para hacerlo, normalmente tendrá que actualizar la base de datos de finalización de IntelliSense para ese entorno, además de quitar el módulo del entorno.
+Second, you can install the module in the global Python environment, making it available to other Python projects as well. Doing so typically requires that you refresh the IntelliSense completion database for that environment. Refreshing is also necessary when removing the module from the environment.
 
-1. Si usa Visual Studio 2017, ejecute el instalador de Visual Studio, seleccione **Modificar**, seleccione **Componentes individuales > Compiladores, herramientas de compilación y entornos de ejecución > Conjunto de herramientas de Visual C++ 2015.3 v140**. Esto se debe a que Python (para Windows) se compila con Visual Studio 2015 (versión 14.0) y espera que esas herramientas estén disponibles al compilar una extensión mediante el método descrito aquí.
+1. If you're using Visual Studio 2017, run the Visual Studio installer, select **Modify**, select **Individual Components > Compilers, build tools, and runtimes > Visual C++ 2015.3 v140 toolset**. This step is necessary because Python (for Windows) is itself build with Visual Studio 2015 (version 14.0) and expects those tools be available when building an extension through the method described here.
 
-1. Cree un archivo denominado `setup.py` en el proyecto de C++. Para ello, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevos elementos...*, busque "Python", seleccione **Archivo de Python**, asígnele el nombre setup.py y haga clic en **Aceptar**. Cuando el archivo aparezca en el editor, pegue el código siguiente en él:
+1. Create a file named `setup.py` in your C++ project by right-clicking the project, selecting **Add > New Items...**, searching for "Python" and selecting **Python file**, naming it setup.py, and selecting **OK**. When the file appears in the editor, paste the following code into it:
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -248,49 +235,49 @@ En segundo lugar, puede instalar el módulo en el entorno global de Python, de m
         )
     ```
 
-    Vea [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (Compilar extensiones de C y C++) (python.org) para consultar la documentación de este script.
+    See [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (python.org) for documentation on this script.
 
-1. El código `setup.py` le indica a Python que debe compilar la extensión (con el conjunto de herramientas de Visual Studio 2015 C++), lo que sucede en la línea de comandos. Abra un símbolo del sistema con privilegios elevados, vaya a la carpeta que contiene el proyecto de C++ (y `setup.py`) y escriba el comando siguiente:
+1. The `setup.py` code instructs Python to build the extension (using the Visual Studio 2015 C++ toolset), which happens from the command line. Open an elevated command prompt, navigate to the folder containing the C++ project (and `setup.py`), and enter the following command:
 
     ```bash
     pip install .
     ```
 
-Ahora puede llamar al código de `tanh` y comparar su rendimiento con la implementación de Python:
+Now you can call the `tanh` code the module and compare its performance to the Python implementation:
 
-1. Agregue las líneas siguientes en `tanhbenchmark.py` para llamar al método `fast_tanh` exportado desde el archivo DLL y agréguelo a la salida de la prueba comparativa. Si escribe la instrucción `from s` manualmente, verá que `superfastcode` aparece en la lista de finalización y, después de escribir `import`, verá el método `fast_tanh`.
+1. Add the following lines in `tanhbenchmark.py` to call the `fast_tanh` method exported from the DLL, and add it to the benchmark output. If you type the `from s` statement manually, you'll see `superfastcode` come up in the completion list, and after typing `import` the `fast_tanh` method appears.
 
     ```python
     from superfastcode import fast_tanh    
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. Ejecute el programa de Python y verá que la rutina de C++ se ejecuta aproximadamente entre 15 y 20 veces más rápido que la implementación de Python.
+1. Run the Python program and see that the C++ routine runs around 15 to 20 times faster than the Python implementation.
 
-## <a name="debug-the-c-code"></a>Depurar el código de C++
+## <a name="debug-the-c-code"></a>Debug the C++ code
 
-La [compatibilidad con Python en Visual Studio](installation.md) incluye la capacidad de [depurar código de Python y de C++ al mismo tiempo](debugging-mixed-mode.md). Para experimentarlo, haga lo siguiente:
+[Python support in Visual Studio](installation.md) includes the ability to [debug Python and C++ code together](debugging-mixed-mode.md). To experience this mixed-mode debugging, do the following steps:
 
-1. Haga clic con el botón derecho en el proyecto de Python en el Explorador de soluciones, seleccione **Propiedades**, elija la pestaña **Depurar** y, después, seleccione la opción **Depurar > Habilitar depuración de código nativo**.
+1. Right-click the Python project in Solution Explorer, select **Properties**, select the **Debug** tab, and then select the **Debug > Enable native code debugging** option.
 
     > [!Tip]
-    > Cuando se habilita la depuración de código nativo, la ventana de salida de Python podría desaparecer de inmediato al completarse el programa, sin ofrecer la pausa habitual "Presione cualquier tecla para continuar…". Para forzar una pausa, agregue la opción `-i` al campo **Ejecutar > Argumentos del intérprete** en la pestaña **Depurar** al habilitar la depuración de código nativo. Esto colocará el intérprete de Python en modo interactivo cuando finalice el código, momento en que esperará a que presione Ctrl+Z, ENTRAR para salir. (Como alternativa, si no le importa modificar el código de Python, puede agregar las instrucciones `import os` y `os.system("pause")` al final del programa. Esto duplica la petición de pausa original).
+    > When you enable native code debugging, the Python output window may disappear immediately when the program has completed without giving you the usual "Press any key to continue..." pause. To force a pause, add the `-i` option to the **Run > Interpreter Arguments** field on the **Debug** tab when you enable native code debugging. This argument puts the Python interpreter into interactive mode after the code finishes, at which point it waits for you to press Ctrl+Z, Enter to exit. (Alternately, if you don't mind modifying your Python code, you can add `import os` and `os.system("pause")` statements at the end of your program. This code duplicates the original pause prompt.)
 
-1. En el código de C++, establezca un punto de interrupción en la primera línea del método `tanh` y, después, inicie el depurador. Verá que el depurador se detiene cuando se llama a este código:
+1. In your C++ code, set a breakpoint on the first line within the `tanh` method, then start the debugger. The debugger stops when that code is called:
 
-    ![Detener en un punto de interrupción en el código de C++](~/python/media/cpp-debugging.png)
+    ![Stopping at a breakpoint in C++ code](media/cpp-debugging.png)
 
-1. En este momento puede recorrer el código de C++, examinar variables, etc., como se detalla en [Debugging C++ and Python Together](debugging-mixed-mode.md) (Depurar C++ y Python juntos).
+1. At this point you can step through the C++ code, examine variables, and so on, as detailed in [Debugging C++ and Python Together](debugging-mixed-mode.md).
 
-## <a name="alternative-approaches"></a>Enfoques alternativos 
+## <a name="alternative-approaches"></a>Alternative approaches 
 
-Existen otros métodos para crear extensiones de Python, como se describe en la tabla siguiente. La primera entrada de CPython es lo que ya se ha tratado en este tema.
+There are other means to create Python extensions as described in the table below. The first entry for CPython is what's been discussed this topic already.
 
-| Enfoque | Año | Usuarios representativos | Ventajas | Inconvenientes |
+| Approach | Vintage | Representative User(s) | Pro(s) | Con(s) |
 | --- | --- | --- | --- | --- |
-| Módulos de extensión de C/C++ para CPython | 1991 | biblioteca estándar | [Amplia documentación y tutoriales](https://docs.python.org/3/c-api/). Control total. | Compilación, portabilidad, administración de referencias. Extensos conocimientos de C. |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
-| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
-| Cython | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Semejante a Python. Muy maduro. Alto rendimiento. | Compilación, nueva sintaxis y cadena de herramientas. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Nuevo, menos maduro. |
+| C/C++ extension modules for CPython | 1991 | Standard Library | [Extensive documentation and tutorials](https://docs.python.org/3/c-api/). Total control. | Compilation, portability, reference management. High C knowledge. |
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generate bindings for many languages at once. | Excessive overhead if Python is the only target. |
+| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | No compilation, wide availability. | Accessing and mutating C structures cumbersome and error prone. |
+| Cython | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python-like. Highly mature. High performance. | Compilation, new syntax and toolchain. |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Ease of integration, PyPy compatibility. | New, less mature. |
 

@@ -1,5 +1,5 @@
 ---
-title: Crear una prueba de IU codificada controlada por datos | Microsoft Docs
+title: Creating a Data-Driven Coded UI Test | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,44 +28,44 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2c4cb515c4442b3c48c42f47f9116e9ff536a5f4
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f2e6f9a98756b7970ae965e784573ed98fa9c6e1
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
-Para probar las distintas condiciones, puede ejecutar las pruebas varias veces con distintos valores de parámetros. Las pruebas de IU codificada controlada por datos son una forma cómoda de hacerlo. Defina los valores de parámetros en un origen de datos, y cada fila de dicho origen de datos será una iteración de la prueba de IU codificada. El resultado general de la prueba se basará en el resultado de todas las iteraciones. Por ejemplo, si se produce un error en una iteración de la prueba, el resultado general es error.  
+# <a name="creating-a-data-driven-coded-ui-test"></a>Creating a Data-Driven Coded UI Test
+To test different conditions, you can run your tests multiple times with different parameter values. Data-driven coded UI tests are a convenient way to do this. You define parameter values in a data source, and each row in the data source is an iteration of the coded UI test. The overall result of the test will be based on the outcome for all the iterations. For example, if one test iteration fails, the overall test result is failure.  
   
- **Requisitos**  
+ **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos  
- En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicación Calculadora de Windows. Esta suma dos números y utiliza una aserción para validar que la suma sea correcta. A continuación, la aserción y los valores de parámetro de ambos números se codifican para que se controlen por datos y se almacenan en un archivo de valores separados por comas (.csv).  
+## <a name="create-a-data-driven-coded-ui-test"></a>Create a data-driven coded UI test  
+ This sample creates a coded UI test that runs on the Windows Calculator application. It adds two numbers together and uses an assertion to validate that the sum is correct. Next, the assertion and the parameter values for the two numbers are coded to become data-driven and stored in a comma-separated value (.csv) file.  
   
-#### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada  
+#### <a name="step-1---create-a-coded-ui-test"></a>Step 1 - Create a coded UI test  
   
-1.  Cree un proyecto.  
+1.  Create a project.  
   
-     ![Cree un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png "CUIT_dataDriven_")  
+     ![Create a coded UI test project](../test/media/cuit_datadriven_.png "CUIT_dataDriven_")  
   
-2.  Elija la opción de grabar las acciones.  
+2.  Choose to record the actions.  
   
-     ![Elija la opción de grabar las acciones](../test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
+     ![Choose to record the actions](../test/media/cuit_datadriven_generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
-3.  Abra la aplicación Calculadora y empiece a grabar la prueba.  
+3.  Open the calculator app and start recording the test.  
   
-     ![Grabe las acciones](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
+     ![Record actions](../test/media/cuit_datadriven_cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.  
+4.  Add 1 plus 2, pause the recorder, and generate the test method. Later we'll replace the values of this user input with values from a data file.  
   
-     ![Genere el método de prueba](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
+     ![Genetate test method](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
-     Cierre el generador de pruebas. El método se agrega a la prueba:  
+     Close the test builder. The method is added to the test:  
   
-    ```c#  
+    ```csharp  
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -75,27 +75,27 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     }  
     ```  
   
-5.  Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).  
+5.  Use the `AddNumbers()` method to verify that the test runs. Place the cursor in the test method shown above, open the context menu, and choose **Run Tests**. (Keyboard shortcut: Ctrl + R, T).  
   
-     El resultado que indica si se ha superado la prueba se muestra en la ventana del Explorador de pruebas. Para abrir la ventana del Explorador de pruebas, en el menú **PRUEBA**, elija **Windows** y después **Explorador de pruebas**.  
+     The test result that shows if the test passed or failed is displayed in the Test Explorer window. To open the Test Explorer window, from the **TEST** menu, choose **Windows** and then choose **Test Explorer**.  
   
-6.  Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.  
+6.  Because a data source can also be used for assertion parameter values—which are used by the test to verify expected values—let's add an assertion to validate that the sum of the two numbers is correct. Place the cursor in the test method shown above, open the context menu and choose **Generate Code for Coded UI Test**, and then **Use Coded UI Test Builder**.  
   
-     Asigne el control de texto de la calculadora que muestre la suma.  
+     Map the text control in the calculator that displays the sum.  
   
-     ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png "CUIT_dataDriven_AddAssertion")  
+     ![Map the UI text control](../test/media/cuit_datadriven_addassertion.png "CUIT_dataDriven_AddAssertion")  
   
-7.  Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.  
+7.  Add an assertion that validates that the value of the sum is correct. Choose the **DisplayText** property that has the value of **3** and then choose **Add Assertion**. Use the **AreEqual** comparator and verify that the comparison value is **3**.  
   
-     ![Configure la aserción](../test/media/cuit_datadriven_builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
+     ![Configure the assertion](../test/media/cuit_datadriven_builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
   
-8.  Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.  
+8.  After configuring the assertion, generate code from the builder again. This creates a new method for the validation.  
   
-     ![Genere el método de aserción](../test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
+     ![Generate the assertion method](../test/media/cuit_datadriven_assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
-     Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.  
+     Because the `ValidateSum` method validates the results of the `AddNumbers` method, move it to the bottom of the code block.  
   
-    ```c#  
+    ```csharp  
     public void CodedUITestMethod1()  
     {  
   
@@ -106,17 +106,17 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     }  
     ```  
   
-9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: Ctrl + R, T).  
+9. Verify that the test runs by using the `ValidateSum()` method. Place the cursor in the test method shown above, open the context menu, and choose **Run Tests**. (Keyboard shortcut:Ctrl + R, T).  
   
-     En este momento, todos los valores de parámetro se definen en sus métodos como constantes. Después, vamos a crear un conjunto de datos para realizar la prueba controlada por datos.  
+     At this point, all the parameter values are defined in their methods as constants. Next, let's create a data set to make our test data-driven.  
   
-#### <a name="step-2---create-a-data-set"></a>Paso 2: crear un conjunto de datos  
+#### <a name="step-2---create-a-data-set"></a>Step 2 - Create a data set  
   
-1.  Agregue al proyecto dataDrivenSample un archivo de texto llamado `data.csv`.  
+1.  Add a text file to the dataDrivenSample project named `data.csv`.  
   
-     ![Agregar un archivo de valores separados por comas al proyecto](../test/media/cuit_datadriven_addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
+     ![Add a comma seperated value file to the project](../test/media/cuit_datadriven_addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
   
-2.  Llene el archivo .csv con los siguientes datos:  
+2.  Populate the .csv file with the following data:  
   
     |Num1|Num2|Sum|  
     |----------|----------|---------|  
@@ -124,21 +124,21 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     |5|6|11|  
     |6|8|14|  
   
-     Después de agregar los datos, el archivo debería ser similar al siguiente:  
+     After adding the data, the file should appear as the following:  
   
-     ![Rellene el archivo .CSV con datos](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
+     ![Populate the .CSV file with data](../test/media/cuit_datadriven_adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Es importante que guarde el archivo .csv utilizando la codificación correcta. En el menú **ARCHIVO**, seleccione **Opciones avanzadas para guardar** y seleccione **Unicode (UTF-8 sin firma) – Página de códigos 65001** como codificación.  
+3.  It is important to save the .csv file using the correct encoding. On the **FILE** menu, choose **Advanced Save Options** and choose **Unicode (UTF-8 without signature) - Codepage 65001** as the encoding.  
   
-4.  El archivo .csv debe copiarse en el directorio de salida; de lo contrario, no podrá ejecutarse la prueba. Utilice la ventana Propiedades para copiarlo.  
+4.  The .csv file, must be copied to the output directory, or the test can't run. Use the Properties window to copy it.  
   
-     ![Implemente el archivo .CSV](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
+     ![Deploy the .CSV file](../test/media/cuit_datadriven_deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
-     Ahora que hemos creado el conjunto de datos, vamos a enlazar los datos a la prueba.  
+     Now that we have the data set created, let's bind the data to the test.  
   
-#### <a name="step-3---add-data-source-binding"></a>Paso 3: agregar enlaces de origen de datos  
+#### <a name="step-3---add-data-source-binding"></a>Step 3 - Add data source binding  
   
-1.  Para enlazar el origen de datos, agregue un atributo `DataSource` al atributo `[TestMethod]` existente situado inmediatamente encima del método de prueba.  
+1.  To bind the data source, add a `DataSource` attribute within the existing `[TestMethod]` attribute that is immediately above the test method.  
   
     ```  
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
@@ -153,20 +153,20 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
     ```  
   
-     El origen de datos está ahora disponible para su uso en este método de prueba.  
+     The data source is now available for you to use in this test method.  
   
     > [!TIP]
-    >  Consulte los [ejemplos de atributo de origen de datos](#CreateDataDrivenCUIT_QA_DataSourceAttributes) en la sección de preguntas y respuestas. Allí encontrará ejemplos del uso de otros tipos de origen de datos, como XML, SQL Express y Excel.  
+    >  See [data source attribute samples](#CreateDataDrivenCUIT_QA_DataSourceAttributes) in the Q & A section for samples of using other data source types such as XML, SQL Express and Excel.  
   
-2.  Ejecute la prueba.  
+2.  Run the test.  
   
-     Tenga en cuenta que la prueba se ejecuta a través de tres iteraciones. Esto se debe a que el origen de datos que se enlazó contiene tres filas de datos. Sin embargo, también observará que la prueba sigue utilizando los valores de parámetro constantes y que suma 1 + 2, lo que genera cada vez un resultado de 3.  
+     Notice that the test runs through three iterations. This is because the data source that was bound contains three rows of data. However, you will also notice that the test is still using the constant parameter values and is adding 1 + 2 with a sum of 3 each time.  
   
-     Después, configuraremos la prueba para usar los valores del archivo de origen de datos.  
+     Next, we'll configure the test to use the values in the data source file.  
   
-#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Paso 4: usar los datos de la prueba de IU codificada  
+#### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Step 4 - Use the data in the coded UI test  
   
-1.  Agregue `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` al principio del archivo CodedUITest.cs:  
+1.  Add `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` to the top of the CodedUITest.cs file:  
   
     ```  
     using System;  
@@ -182,7 +182,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
     ```  
   
-2.  Agregue `TestContext.DataRow[]` en el método `CodedUITestMethod1()` que aplicará valores del origen de datos. Los valores del origen de datos reemplazan las constantes asignadas a los controles UIMap utilizando los controles `SearchProperties`:  
+2.  Add `TestContext.DataRow[]` in the `CodedUITestMethod1()` method which will apply values from the data source. The data source values override the constants assigned to UIMap controls by using the controls `SearchProperties`:  
   
     ```  
     public void CodedUITestMethod1()  
@@ -197,38 +197,38 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
     }  
     ```  
   
-     Para averiguar qué propiedades de búsqueda tienen datos por codificar, utilice el Editor de pruebas de IU codificadas.  
+     To figure out which search properties to code the data to, use the Coded UI Test Editor.  
   
-    -   Abra el archivo UIMap.uitest.  
+    -   Open the UIMap.uitest file.  
   
-         ![Abra el Editor de prueba de IU codificada](../test/media/cuit_datadriven_opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
+         ![Open the Coded UI Test Editor](../test/media/cuit_datadriven_opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
   
-    -   Elija la acción de la IU y observe la asignación de controles de IU correspondientes. Fíjese en cómo la asignación se corresponde con el código, por ejemplo, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
+    -   Choose the UI action and observe the corresponding UI control mapping. Notice how the mapping corresponds to the code, for example, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
   
-         ![Utilice el editor de pruebas de la IU codificada para ayudar con el código](../test/media/cuit_datadriven_testeditor.png "CUIT_dataDriven_TestEditor")  
+         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit_datadriven_testeditor.png "CUIT_dataDriven_TestEditor")  
   
-    -   En la ventana Propiedades, abra **Propiedades de búsqueda**. El valor **Nombre** de las propiedades de búsqueda es lo que se está manipulando en el código que utiliza el origen de datos. Por ejemplo, a `SearchProperties` se le asignan los valores de la primera columna de cada fila de datos: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Para las tres iteraciones, esta prueba cambiará el valor **Nombre** de la propiedad de búsqueda a 3, 5 y, por último, 6.  
+    -   In the Properties Window, open **Search Properties**. The search properties **Name** value is what is being manipulated in the code using the data source. For example, the `SearchProperties` is being assigned the values in the first column of each data row: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. For the three iterations, this test will change the **Name** value for the search property to 3, then 5, and finally 6.  
   
-         ![Utilice las propiedades de búsqueda para ayudar en la codificación](../test/media/cuit_datadriven_searchproperties.png "CUIT_dataDriven_SearchProperties")  
+         ![Use the search properties to assist in coding](../test/media/cuit_datadriven_searchproperties.png "CUIT_dataDriven_SearchProperties")  
   
-3.  Guarde la solución.  
+3.  Save the solution.  
   
-#### <a name="step-5---run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos  
+#### <a name="step-5---run-the-data-driven-test"></a>Step 5 - Run the data-driven test  
   
-1.  Compruebe que la prueba está ahora controlada por datos ejecutándola de nuevo.  
+1.  Verify that the test is now data-driven by running the test again.  
   
-     Debería ver como la prueba se ejecuta en las tres iteraciones utilizando los valores del archivo .csv. La validación también debería funcionar y la prueba debería mostrarse como superada en el Explorador de pruebas el paso.  
+     You should see the test run through the three iterations using the values in the .csv file. The validation should work as well and the test should display as passed in the Test Explorer.  
   
- **Orientación**  
+ **Guidance**  
   
- Para obtener más información, vea [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ For additional information, see [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) and [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-## <a name="q--a"></a>Preguntas y respuestas  
+## <a name="q--a"></a>Q & A  
   
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> ¿Cuáles son los atributos de fuente de datos para otros tipos de orígenes de datos, como SQL Express o XML?  
- Puede utilizar las cadenas de origen de datos de muestra de la tabla siguiente copiándolas en el código y personalizándolas en caso necesario.  
+###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> What are the data source attributes for other data source types, such as SQL Express or XML?  
+ You can use the sample data source strings in the table below by copying them to your code and making the necessary customizations.  
   
- **Tipos y atributos de origen de datos**  
+ **Data Source Types and Attributes**  
   
 -   CSV  
   
@@ -238,7 +238,7 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`  
   
--   Caso de prueba de Team Foundation Server  
+-   Test case in Team Foundation Server  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`  
   
@@ -250,8 +250,8 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>P: ¿Puedo usar pruebas controladas por datos en mi aplicación de Windows Phone?  
- **R:** Sí. Las pruebas de interfaz de usuario codificadas controladas por datos para Windows Phone se definen mediante el atributo DataRow en un método de prueba. En el siguiente ejemplo, x e y usan los valores 1 y 2 para la primera iteración y -1 y -2 para la segunda iteración de la prueba.  
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Q: Can I use data-driven tests on my Windows Phone app?  
+ **A:** Yes. Data-driven Coded UI tests for Windows Phone are defined using the DataRow attribute on a test method. In the following example, x and y use the values of 1 and 2 for the first iteration and -1 and -2 for the second iteration of the test.  
   
 ```  
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
@@ -261,18 +261,18 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ```  
   
- Para obtener más información, consulte [Usar pruebas de interfaz de usuario codificadas controladas por datos en las aplicaciones de Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+ For more information, see [Use Data-driven coded UI tests on Windows Phone apps](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: ¿Por qué no puedo modificar el código en el archivo UIMap.Designer?  
- **R:** Cualquier cambio que se efectúe en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. En este ejemplo, y en la mayoría de los casos, los cambios de código necesarios para habilitar una prueba para utilizar un origen de datos pueden introducirse en el archivo de código fuente de la prueba (es decir, CodedUITest1.cs).  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q: Why can't I modify the code in the UIMap.Designer file?  
+ **A:** Any code changes you make in the UIMapDesigner.cs file will be overwritten every time you generate code using the UIMap - Coded UI Test Builder. In this sample, and in most cases, the code changes needed to enable a test to use a data source can be made to the test's source code file (that is, CodedUITest1.cs).  
   
- Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
+ If you have to modify a recorded method, you must copy it to UIMap.cs file and rename it. The UIMap.cs file can be used to override methods and properties in the UIMapDesigner.cs file. You must remove the reference to the original method in the Coded UITest.cs file and replace it with the renamed method name.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)   
- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)   
+ [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+ [Best Practices for Coded UI Tests](../test/best-practices-for-coded-ui-tests.md)   
+ [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 

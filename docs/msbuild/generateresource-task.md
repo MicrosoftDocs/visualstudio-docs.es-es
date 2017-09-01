@@ -37,17 +37,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 88f783331de62539614ea6d175039ccb5bf1b767
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
-Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `GenerateResource`.  
+ En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
@@ -57,7 +58,7 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 |`ExecuteAsTool`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, se ejecutan tlbimp.exe y aximp.exe desde la plataforma de destino adecuada fuera de proceso para generar los ensamblados de contenedor necesarios. Este parámetro permite compatibilidad con múltiples versiones de `ResolveComReferences`.|  
 |`FilesWritten`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los nombres de todos los archivos escritos en el disco. Esto incluye el archivo de la caché, si existe. Este parámetro es útil para las implementaciones de Clean.|  
 |`MinimalRebuildFromTracking`|Parámetro `Boolean` opcional.<br /><br /> Obtiene o establece un modificador que especifica si se va a usar la compilación incremental de la que se realiza el seguimiento. Si es `true`, se activa la compilación incremental; de lo contrario, se forzará una recompilación.|  
-|`NeverLockTypeAssemblies`|Parámetro `Boolean` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos .resources. Si no especifica un nombre, se utiliza el nombre del archivo de entrada coincidente, y el archivo .resources que se crea se coloca en el directorio que contiene el archivo de entrada.|  
+|`NeverLockTypeAssemblies`|Parámetro `Boolean` opcional.<br /><br /> Obtiene o establece un valor booleano que especifica si se va a crear una nueva clase [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) para evaluar los archivos de recursos (.resx) (true) o crear una nueva clase [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) solo cuando los archivos de recursos hagan referencia al ensamblado de un usuario (false).|  
 |`OutputResources`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica el nombre de los archivos generados, como los archivos .resources. Si no especifica un nombre, se utiliza el nombre del archivo de entrada coincidente, y el archivo .resources que se crea se coloca en el directorio que contiene el archivo de entrada.|  
 |`PublicClass`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea una clase de recurso fuertemente tipada como clase pública.|  
 |`References`|Parámetro `String[]` opcional.<br /><br /> Hace referencia a tipos de carga en archivos .resx. Los elementos de datos del archivo resx pueden tener un tipo de .NET. Cuando se lee el archivo .resx, se debe resolver esta situación. Normalmente, se resuelve correctamente utilizando reglas de carga de tipo estándar. Si proporciona los ensamblados en `References`, serán prioritarios.<br /><br /> Este parámetro no se requiere para los recursos fuertemente tipados.|  
@@ -71,17 +72,17 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 |`StronglyTypedNamespace`|Parámetro `String` opcional.<br /><br /> Especifica el espacio de nombres que se usará para el origen de clase generado del recurso fuertemente tipado. Si no se especifica este parámetro, cualquier recurso fuertemente tipado se encontrará en el espacio de nombres global.|  
 |`TLogReadFiles`|Parámetro de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene una matriz de elementos que representan los registros de seguimiento de lectura.|  
 |`TLogWriteFiles`|Parámetro de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene una matriz de elementos que representan los registros de seguimiento de escritura.|  
-|`ToolArchitecture`|Parámetro [String](assetId:///String?qualifyHint=False&autoUpgrade=True) opcional.<br /><br /> Se utiliza para determinar si debe utilizarse o no Tracker.exe para generar ResGen.exe.<br /><br /> Debe ser analizable para un miembro de la enumeración <xref:Microsoft.Build.Utilities.ExecutableType>. Si es `String.Empty`, utiliza una heurística para determinar una arquitectura predeterminada. Debe ser analizable para un miembro de la enumeración Microsoft.Build.Utilities.ExecutableType.|  
-|`TrackerFrameworkPath`|Parámetro assetId:///String?qualifyHint=False&autoUpgrade=True opcional.<br /><br /> Especifica la ruta de acceso a la ubicación de .NET Framework adecuada que contiene FileTracker.dll.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de FileTracker.dll que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en la versión actual de .NET Framework.|  
-|`TrackerLogDirectory`|Parámetro assetId:///String?qualifyHint=False&autoUpgrade=True opcional.<br /><br /> Especifica el directorio intermedio en el que se van a colocar los registros de seguimiento de la ejecución de esta tarea.|  
-|`TrackerSdkPath`|Parámetro assetId:///String?qualifyHint=False&autoUpgrade=True opcional.<br /><br /> Especifica la ruta de acceso a la ubicación del SDK de Windows adecuada que contiene Tracker.exe.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de Tracker.exe que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en el SDK de Windows actual.|  
-|`TrackFileAccess`|Parámetro [Boolean](assetId:///Boolean?qualifyHint=False&autoUpgrade=True) opcional.<br /><br /> Si es true, el directorio del archivo de entrada se utiliza para resolver rutas de acceso de archivo relativas.|  
+|`ToolArchitecture`|Parámetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Se utiliza para determinar si debe utilizarse o no Tracker.exe para generar ResGen.exe.<br /><br /> Debe ser analizable para un miembro de la enumeración <xref:Microsoft.Build.Utilities.ExecutableType>. Si es `String.Empty`, utiliza una heurística para determinar una arquitectura predeterminada. Debe ser analizable para un miembro de la enumeración Microsoft.Build.Utilities.ExecutableType.|  
+|`TrackerFrameworkPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a la ubicación de .NET Framework adecuada que contiene FileTracker.dll.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de FileTracker.dll que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en la versión actual de .NET Framework.|  
+|`TrackerLogDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio intermedio en el que se van a colocar los registros de seguimiento de la ejecución de esta tarea.|  
+|`TrackerSdkPath`|Parámetro `String` opcional.<br /><br /> Especifica la ruta de acceso a la ubicación del SDK de Windows adecuada que contiene Tracker.exe.<br /><br /> Si está establecido, el usuario asume la responsabilidad de comprobar que el valor de bits de Tracker.exe que pasa coincide con el valor de bits del archivo ResGen.exe que va a utilizar. Si no está establecido, la tarea decide la ubicación adecuada basándose en el SDK de Windows actual.|  
+|`TrackFileAccess`|Parámetro <xref:System.Boolean> opcional.<br /><br /> Si es true, el directorio del archivo de entrada se utiliza para resolver rutas de acceso de archivo relativas.|  
 |`UseSourcePath`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica que el directorio del archivo de entrada se utiliza para resolver las rutas de acceso de archivo relativas.|  
   
 ## <a name="remarks"></a>Comentarios  
  Debido a que los archivos .resx pueden contener vínculos a otros archivos de recursos, no basta con simplemente comparar las marcas de tiempo de los archivos .resx y .resource para ver si las salidas están actualizadas. En su lugar, la tarea `GenerateResource` sigue los vínculos en los archivos .resx y comprueba también las marcas de tiempo de los archivos vinculados. Esto significa que, por lo general, no debe utilizar los atributos `Inputs` y `Outputs` en el destino que contiene la tarea `GenerateResource`, puesto que podría causar que se omitiera cuando tendría que ejecutarse.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension> , que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task> . Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
  Cuando se utiliza MSBuild 4.0 para proyectos de .NET 3.5, la compilación puede dar error en los recursos x86. Para evitar este problema, puede compilar el destino como un ensamblado AnyCPU.  
   
@@ -111,3 +112,4 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+

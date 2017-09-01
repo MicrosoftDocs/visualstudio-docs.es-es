@@ -1,55 +1,72 @@
 ---
-title: "IDebugCanStopEvent2::GetReason | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2::GetReason"
-helpviewer_keywords: 
-  - "IDebugCanStopEvent2::GetReason"
+title: IDebugCanStopEvent2::GetReason | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCanStopEvent2::GetReason
+helpviewer_keywords:
+- IDebugCanStopEvent2::GetReason
 ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugCanStopEvent2::GetReason
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b5d4c50b407406ea9a5d878decf859b8ab70863d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Obtiene el motivo por el que el motor de depuración \(DE\) desea detener.  
+---
+# <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
+Gets the reason why the debug engine (DE) wants to stop.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetReason(   
-   CANSTOP_REASON* pcr  
+```cpp  
+HRESULT GetReason(   
+   CANSTOP_REASON* pcr  
 );  
 ```  
   
-```c#  
-int GetReason(   
-   out enum_CANSTOP_REASON pcr  
+```csharp  
+int GetReason(   
+   out enum_CANSTOP_REASON pcr  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pcr`  
- \[out\]  Devuelve un valor de enumeración de [CANSTOP\_REASON](../../../extensibility/debugger/reference/canstop-reason.md) que describe el motivo de este evento.  
+ [out] Returns a value from the [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) enumeration that describes the reason for this event.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método se llama normalmente antes del método de [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) por lo que el llamador puede determinar si pasar distinto de cero \(`TRUE`\) al método de `IDebugCanStopEvent2::CanStop` .  
+## <a name="remarks"></a>Remarks  
+ This method is typically called before the [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) method so the caller can determine whether to pass non-zero (`TRUE`) to the `IDebugCanStopEvent2::CanStop` method.  
   
- La razón de detener puede ser cualquier `CANSTOP_ENTRYPOINT`, que significa que el OF ha alcanzado un punto de entrada, o `CANSTOP_STEPIN`, que significa el OF ha ejecutado en una función.  
+ The reason for stopping can be either `CANSTOP_ENTRYPOINT`, which means the DE has reached an entry point, or `CANSTOP_STEPIN`, which means the DE has stepped into a function.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
- [CANSTOP\_REASON](../../../extensibility/debugger/reference/canstop-reason.md)   
+ [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)   
  [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)

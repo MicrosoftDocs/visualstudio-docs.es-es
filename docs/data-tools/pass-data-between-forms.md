@@ -1,137 +1,152 @@
 ---
-title: "Tutorial: Pasar datos entre formularios Windows Forms | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], pasar entre formularios"
-  - "formularios, pasar datos"
-  - "tutoriales [Visual Studio], datos"
-  - "tutoriales [Windows Forms], datos"
-  - "Windows Forms, tutoriales"
+title: Pass data between forms | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- walkthroughs [Windows Forms], data
+- walkthroughs [Visual Studio], data
+- data [Visual Studio], passing between forms
+- forms, passing data between
+- Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 caps.latest.revision: 14
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c8aec778fc3ef4d6269886b2d652e5a1595f9d6b
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Pasar datos entre formularios Windows Forms
-En este tutorial se proporcionan instrucciones paso a paso para pasar datos de un formulario a otro.  Usando las tablas de clientes y pedidos de Northwind, un formulario permitirá a los usuarios seleccionar un cliente y un segundo formulario mostrará los pedidos de los clientes seleccionados.  En este tutorial se muestra cómo crear un método en un formulario que recibe datos del primero formulario.  
+# <a name="pass-data-between-forms"></a>Pass data between forms
+This walkthrough provides step-by-step instructions for passing data from one form to another. Using the customers and orders tables from Northwind, one form allows users to select a customer, and a second form displays the selected customer's orders. This walkthrough shows how to create a method on the second form that receives data from the first form.  
   
 > [!NOTE]
->  En este tutorial solo se muestra una manera de pasar datos de un formulario a otro.  Hay otras opciones para datos a un formulario, entre ellas las siguientes: puede crear un segundo constructor para recibir datos o puede crear una propiedad pública que se puede establecer con los datos del primer formulario.  
+>  This walkthrough demonstrates only one way to pass data between forms. There are other options for passing data to a form, including creating a second constructor to receive data, or creating a public property that can be set with data from the first form.  
   
- Las tareas ilustradas en este tutorial incluyen:  
+ Tasks illustrated in this walkthrough include:  
   
--   Crear un nuevo proyecto **Aplicación Windows**.  
+-   Creating a new **Windows Application** project.  
   
--   Crear y configurar un conjunto de datos con el [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Seleccionar el control que se va a crear en el formulario al arrastrar elementos desde la ventana **Orígenes de datos**.  Para obtener más información, vea [Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Selecting the control to be created on the form when dragging items from the **Data Sources** window. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Crear un control enlazado a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta un formulario.  
+-   Creating a data-bound control by dragging items from the **Data Sources** window onto a form.  
   
--   Crear un segundo formulario con una cuadrícula para mostrar datos.  
+-   Creating a second form with a grid to display data.  
   
--   Crear una consulta de TableAdapter para buscar los pedidos de un cliente determinado.  
+-   Creating a TableAdapter query to fetch orders for a specific customer.  
   
--   Pasar datos de un formulario a otro.  
+-   Passing data between forms.  
   
-## Requisitos previos  
- Para completar las tareas de este tutorial, necesitará:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Acceso a la base de datos de ejemplo Northwind.  Para obtener más información, vea [Cómo: Instalar bases de datos de ejemplo](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Crear la aplicación para Windows  
+## <a name="create-the-windows-application"></a>Create the Windows Application  
   
-#### Para crear el nuevo proyecto de Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  En el menú **Archivo**, cree un nuevo proyecto.  
+1.  From the **File** menu, create a new project.  
   
-2.  Asigne al proyecto el nombre `PassingDataBetweenForms`.  
+2.  Name the project `PassingDataBetweenForms`.  
   
-3.  Seleccione **Aplicación de Windows Forms** y haga clic en **Aceptar**.  Para obtener más información, vea [Aplicaciones cliente](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Forms Application**, and click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     El proyecto **PassingDataBetweenForms** se crea y se agrega al **Explorador de soluciones**.  
+     The **PassingDataBetweenForms** project is created, and added to **Solution Explorer**.  
   
-## Crear el origen de datos  
+## <a name="create-the-data-source"></a>Create the data source  
   
-#### Para crear el origen de datos  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  En el menú **Datos**, haga clic en **Mostrar orígenes de datos**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  En la página **Elegir un modelo de base de datos**, compruebe que se ha especificado **Conjunto de datos** y haga clic en **Siguiente**.  
+4.  On the **Choose a database model** page, verify that **Dataset** is specified, and then click **Next**.  
   
-5.  En la página **Elegir la conexión de datos**, realice una de las siguientes operaciones:  
+5.  On the **Choose your Data Connection** page, do one of the following:  
   
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         O bien  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.  
+6.  If your database requires a password and if the option to include sensitive data is enabled, select the option and then click **Next**.  
   
-6.  Si su base de datos requiere una contraseña y la opción para incluir datos confidenciales está habilitada, seleccione la opción y haga clic en **Siguiente**.  
+7.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-7.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.  
+8.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-8.  Expanda el nodo **Tables** en la página **Elija los objetos de base de datos**.  
+9. Select the **Customers** and **Orders** tables, and then click **Finish**.  
   
-9. Seleccione las tablas **Customers** y **Orders** y, a continuación, haga clic en **Finalizar**.  
+     The **NorthwindDataSet** is added to your project, and the **Customers** and **Orders** tables appear in the **Data Sources** window.  
   
-     **NorthwindDataSet** se agrega al proyecto y las tablas **Customers** y Orders aparecen en la ventana **Orígenes de datos**.  
+## <a name="create-the-first-form-form1"></a>Create the first form (Form1)  
+ You can create a data-bound grid (a <xref:System.Windows.Forms.DataGridView> control), by dragging the **Customers** node from the **Data Sources** window onto the form.  
   
-## Crear el primer formulario \(Form1\)  
- Puede crear una cuadrícula enlazada a datos \(un control <xref:System.Windows.Forms.DataGridView>\) arrastrando el nodo **Customers** desde la ventana **Orígenes de datos** al formulario.  
+#### <a name="to-create-a-data-bound-grid-on-the-form"></a>To create a data-bound grid on the form  
   
-#### Para crear una cuadrícula enlazada a datos en el formulario  
+-   Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
--   Arrastre el nodo **Customers** principal desde la ventana **Orígenes de datos** a **Form1**.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     En **Form1** aparecen <xref:System.Windows.Forms.DataGridView> y una barra de herramientas \(<xref:System.Windows.Forms.BindingNavigator>\) para navegar por los registros.  En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
+## <a name="create-the-second-form-form2"></a>Create the second form (Form2)  
   
-## Crear el segundo formulario \(Form2\)  
+#### <a name="to-create-a-second-form-to-pass-the-data-to"></a>To create a second form to pass the data to  
   
-#### Para crear un segundo formulario al que pasar los datos  
+1.  From the **Project** menu, choose **Add Windows Form**.  
   
-1.  En el menú **Proyecto**, elija **Agregar Windows Forms**.  
+2.  Leave the default name of **Form2**, and click **Add**.  
   
-2.  Deje el nombre predeterminado **Form2** y haga clic en **Agregar**.  
+3.  Drag the main **Orders** node from the **Data Sources** window onto **Form2**.  
   
-3.  Arrastre el nodo **Orders** principal desde la ventana **Orígenes de datos** a **Form2**.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     En **Form2** aparecen <xref:System.Windows.Forms.DataGridView> y una barra de herramientas \(<xref:System.Windows.Forms.BindingNavigator>\) para navegar por los registros.  En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
+4.  Delete the **OrdersBindingNavigator** from the component tray.  
   
-4.  Elimine **OrdersBindingNavigator** de la bandeja de componentes.  
+     The **OrdersBindingNavigator** disappears from **Form2**.  
   
-     **OrdersBindingNavigator** desaparece del **Form2**.  
+## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Add a TableAdapter query to Form2 to load orders for the selected customer on Form1  
   
-## Agregar una consulta de TableAdapter al Form2 para cargar pedidos del cliente seleccionado en el Form1  
+#### <a name="to-create-a-tableadapter-query"></a>To create a TableAdapter query  
   
-#### Para crear una consulta de TableAdapter  
+1.  Double-click the **NorthwindDataSet.xsd** file in **Solution Explorer**.  
   
-1.  Haga doble clic en el archivo **NorthwindDataSet.xsd**, en el **Explorador de soluciones**.  
+2.  Right-click the **OrdersTableAdapter**, and select **Add Query**.  
   
-2.  Haga clic con el botón secundario en **OrdersTableAdapter** y seleccione **Agregar consulta**.  
+3.  Leave the default option of **Use SQL statements**, and then click **Next**.  
   
-3.  Deje la opción predeterminada **Usar instrucciones SQL** y haga clic en **Siguiente**.  
+4.  Leave the default option of **SELECT which returns rows**, and then click **Next**.  
   
-4.  Deje la opción predeterminada **SELECT que devuelve filas** y haga clic en **Siguiente**.  
-  
-5.  Agregue una cláusula WHERE a la consulta para que devuelva `Orders` en función del `CustomerID`.  La consulta debe ser similar a lo siguiente:  
+5.  Add a WHERE clause to the query, to return `Orders` based on the `CustomerID`. The query should be similar to the following:  
   
     ```  
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry  
@@ -140,68 +155,56 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
     ```  
   
     > [!NOTE]
-    >  Compruebe que la sintaxis de los parámetros sea correcta para su base de datos.  Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el siguiente aspecto: `WHERE CustomerID = ?`.  
+    >  Verify the correct parameter syntax for your database. For example, in Microsoft Access, the WHERE clause would look like: `WHERE CustomerID = ?`.  
   
-6.  Haga clic en **Siguiente**.  
+6.  Click **Next**.  
   
-7.  En **Rellenar un DataTable**, en **Nombre del método**, escriba `FillByCustomerID`.  
+7.  For the **Fill a DataTableMethod Name**, type `FillByCustomerID`.  
   
-8.  Desactive la opción **Devolver un DataTable** y haga clic en **Siguiente**.  
+8.  Clear the **Return a DataTable** option, and then click **Next**.  
   
-9. Haga clic en **Finalizar**.  
+9. Click **Finish**.  
   
-## Crear un método en Form2 al que pasar datos  
+## <a name="create-a-method-on-form2-to-pass-data-to"></a>Create a method on Form2 to pass data to  
   
-#### Para crear un método al que pasar datos  
+#### <a name="to-create-a-method-to-pass-data-to"></a>To create a method to pass data to  
   
-1.  Haga clic con el botón secundario en **Form2** y seleccione **Ver código** para abrir **Form2** en el **Editor de código**.  
+1.  Right-click **Form2**, and select **View Code** to open **Form2** in the **Code Editor**.  
   
-2.  Agregue el código siguiente a **Form2** después del método `Form2_Load`:  
+2.  Add the following code to **Form2** after the `Form2_Load` method:  
   
-     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
-     [!code-cs[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]  
+     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]  [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]  
   
-## Crear un método en Form1 para pasar datos y mostrarlos en Form2  
+## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Create a method on Form1 to pass data and display Form2  
   
-#### Para crear un método para pasar datos a Form2  
+#### <a name="to-create-a-method-to-pass-data-to-form2"></a>To create a method to pass data to Form2  
   
-1.  En **Form1**, haga clic con el botón secundario en la cuadrícula de datos Customer y, después, haga clic en **Propiedades**.  
+1.  In **Form1**, right-click the Customer data grid, and then click **Properties**.  
   
-2.  En la ventana **Propiedades**, haga clic en **Eventos**.  
+2.  In the **Properties** window, click **Events**.  
   
-3.  Haga doble clic en el evento **CellDoubleClick**.  
+3.  Double-click the **CellDoubleClick** event.  
   
-     Aparece el editor de código.  
+     The code editor appears.  
   
-4.  Actualice la definición del método para que coincida con el ejemplo siguiente:  
+4.  Update the method definition to match the following sample:  
   
-     [!code-cs[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
-     [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]  
+     [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]  [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]  
   
-## Ejecutar la aplicación  
+## <a name="run-the-application"></a>Run the Application  
   
-#### Para ejecutar la aplicación  
+#### <a name="to-run-the-application"></a>To run the application  
   
--   Presione F5 para ejecutar la aplicación.  
+-   Press F5 to run the application.  
   
--   Haga doble clic en un registro de cliente en **Form1** para abrir **Form2** con los pedidos del cliente.  
+-   Double-click a customer record in **Form1** to open **Form2** with that customer's orders.  
   
-## Pasos siguientes  
- Dependiendo de los requisitos de la aplicación, existen varios pasos que se pueden realizar después de pasar los datos de un formulario a otro.  Entre las mejoras que podría realizar se incluyen:  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after passing data between forms. Some enhancements you could make to this walkthrough include:  
   
--   Modificar el conjunto de datos agregando o quitando objetos de la base de datos.  Para obtener más información, vea [Cómo: Editar un conjunto de datos](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
+-   Editing the dataset, to add or remove database objects. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
--   Agregar funcionalidad para guardar los datos de nuevo en la base de datos.  Para obtener más información, vea [Cómo: Guardar cambios de un conjunto de datos en una base de datos](../data-tools/how-to-save-dataset-changes-to-a-database.md).  
+-   Adding functionality to save data back to the database. For more information, see [Save data back to the database](../data-tools/save-data-back-to-the-database.md).  
   
-## Vea también  
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Información general sobre orígenes de datos](../data-tools/add-new-data-sources.md)   
- [Información general sobre TableAdapter](../data-tools/tableadapter-overview.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

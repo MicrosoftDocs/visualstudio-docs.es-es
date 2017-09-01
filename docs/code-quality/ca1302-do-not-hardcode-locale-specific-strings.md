@@ -1,55 +1,72 @@
 ---
-title: "CA1302: No codificar las cadenas espec&#237;ficas de configuraci&#243;n regional | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotHardcodeLocaleSpecificStrings"
-  - "CA1302"
-helpviewer_keywords: 
-  - "DoNotHardcodeLocaleSpecificStrings"
-  - "CA1302"
+title: 'CA1302: Do not hardcode locale specific strings | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotHardcodeLocaleSpecificStrings
+- CA1302
+helpviewer_keywords:
+- DoNotHardcodeLocaleSpecificStrings
+- CA1302
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1302: No codificar las cadenas espec&#237;ficas de configuraci&#243;n regional
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b723eade12eac5be6959710afc667452d05ac81a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Do not hardcode locale specific strings
 |||  
 |-|-|  
 |TypeName|DoNotHardcodeLocaleSpecificStrings|  
-|Identificador de comprobación|CA1302|  
-|Categoría|Microsoft.Globalization|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1302|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un método utiliza un literal de cadena que representa parte de la ruta de acceso de determinadas carpetas del sistema.  
+## <a name="cause"></a>Cause  
+ A method uses a string literal that represents part of the path of certain system folders.  
   
-## Descripción de la regla  
- La enumeración <xref:System.Environment.SpecialFolder?displayProperty=fullName> contiene miembros que hacen referencia a carpetas del sistema especiales.  La ubicación de estas carpetas puede tener diferentes valores en sistemas operativos distintos, el usuario puede cambiar alguna de estas ubicaciones y además, están adaptadas.  Un ejemplo de carpeta especial es la carpeta System, que es la carpeta "C:\\WINDOWS\\system32" en [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], pero "C:\\WINNT\\system32" en [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)].  El método <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> devuelve las ubicaciones asociadas a la enumeración <xref:System.Environment.SpecialFolder>.  Las ubicaciones devueltas por <xref:System.Environment.GetFolderPath%2A> se adaptan y se adecuan al equipo actualmente en ejecución.  
+## <a name="rule-description"></a>Rule Description  
+ The <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumeration contains members that refer to special system folders. The locations of these folders can have different values on different operating systems, the user can change some of the locations, and the locations are localized. An example of a special folder is the System folder, which is "C:\WINDOWS\system32" on [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] but "C:\WINNT\system32" on [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. The <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> method returns the locations that are associated with the <xref:System.Environment.SpecialFolder> enumeration. The locations that are returned by <xref:System.Environment.GetFolderPath%2A> are localized and appropriate for the currently running computer.  
   
- Esta regla asigna un símbolo \(token\) a las rutas de acceso de la carpeta recuperadas mediante el método <xref:System.Environment.GetFolderPath%2A> en niveles de directorio independientes.  Cada literal de cadena se compara con los tokens.  Si se encuentra alguna coincidencia, se supone que el método compila una cadena que hace referencia a la ubicación del sistema asociada al token.  Para la portabilidad y adaptabilidad, utilice el método <xref:System.Environment.GetFolderPath%2A> para recuperar las ubicaciones de las carpetas del sistema especiales en lugar de utilizar los literales de cadena.  
+ This rule tokenizes the folder paths that are retrieved by using the <xref:System.Environment.GetFolderPath%2A> method into separate directory levels. Each string literal is compared to the tokens. If a match is found, it is assumed that the method is building a string that refers to the system location that is associated with the token. For portability and localizability, use the <xref:System.Environment.GetFolderPath%2A> method to retrieve the locations of the special system folders instead of using string literals.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, recupere la ubicación mediante el método <xref:System.Environment.GetFolderPath%2A>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, retrieve the location by using the <xref:System.Environment.GetFolderPath%2A> method.  
   
-## Cuándo suprimir advertencias  
- Suprimir las advertencias de esta regla es un método seguro si el literal de cadena no se usa para hacer referencia a una de las ubicaciones del sistema asociadas a la enumeración <xref:System.Environment.SpecialFolder>.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the string literal is not used to refer to one of the system locations that is associated with the <xref:System.Environment.SpecialFolder> enumeration.  
   
-## Ejemplo  
- El ejemplo siguiente compila la ruta de acceso de la carpeta de datos de la aplicación común, que genera tres advertencias de esta regla.  Después, el ejemplo recupera la ruta de acceso mediante el método <xref:System.Environment.GetFolderPath%2A>.  
+## <a name="example"></a>Example  
+ The following example builds the path of the common application data folder, which generates three warnings from this rule. Next, the example retrieves the path by using the <xref:System.Environment.GetFolderPath%2A> method.  
   
- [!code-cs[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]  
+ [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)] [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]  
   
-## Reglas relacionadas  
- [CA1303: No pasar literales como parámetros localizados](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1303: Do not pass literals as localized parameters](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

@@ -1,45 +1,62 @@
 ---
-title: "CA2135: Los ensamblados de nivel 2 no deben contener LinkDemands | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2135"
+title: 'CA2135: Level 2 assemblies should not contain LinkDemands | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2135
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
----
-# CA2135: Los ensamblados de nivel 2 no deben contener LinkDemands
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b16b92994dd2ab0e03ade703460e52a887e820e6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Level 2 assemblies should not contain LinkDemands
 |||  
 |-|-|  
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|  
-|Identificador de comprobación|CA2135|  
-|Categoría|Microsoft.Security|  
-|Cambio problemático|Problemático|  
+|CheckId|CA2135|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Motivo  
- Una clase o miembro de clase está utilizando <xref:System.Security.Permissions.SecurityAction> en una aplicación que está utilizando seguridad de Nivel 2.  
+## <a name="cause"></a>Cause  
+ A class or class member is using a <xref:System.Security.Permissions.SecurityAction> in an application that is using Level 2 security.  
   
-## Descripción de la regla  
- LinkDemands está desusado en el conjunto de reglas de seguridad de nivel 2.  En lugar de utilizar LinkDemands para exigir la seguridad en el momento de la compilación Just\-In\-Time \(JIT\), marque los métodos, tipos y campos con el atributo <xref:System.Security.SecurityCriticalAttribute>.  
+## <a name="rule-description"></a>Rule Description  
+ LinkDemands are deprecated in the level 2 security rule set. Instead of using LinkDemands to enforce security at just-in-time (JIT) compilation time, mark the methods, types, and fields with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, quite <xref:System.Security.SecurityCriticalAttribute> y marque el tipo o miembro con el atributo <xref:System.Security.Permissions.SecurityAction>.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the <xref:System.Security.Permissions.SecurityAction> and mark the type or member with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Ejemplo  
- En el ejemplo siguiente, <xref:System.Security.Permissions.SecurityAction> se debería quitar, así como el método marcado con el atributo <xref:System.Security.SecurityCriticalAttribute>.  
+## <a name="example"></a>Example  
+ In the following example, the <xref:System.Security.Permissions.SecurityAction> should be removed and the method marked with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
- [!code-cs[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]
+ [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]

@@ -1,48 +1,65 @@
 ---
-title: "Idiomas de los recursos neutros para la localizaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "referencia cultural, ubicar recursos"
-  - "globalización [Visual Studio], recursos"
-  - "localización [Visual Studio], recursos"
-  - "recursos neutrales"
-  - "NeutralResourcesLanguageAttribute (clase)"
-  - "recursos [Visual Studio], sistema de reserva"
+title: Neutral Resources Languages for Localization | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- localization [Visual Studio], resources
+- NeutralResourcesLanguageAttribute class
+- globalization [Visual Studio], resources
+- resources [Visual Studio], fallback system
+- culture, locating resources
+- neutral resources
 ms.assetid: ef064995-3b84-4698-a708-9689b7723533
 caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# Idiomas de los recursos neutros para la localizaci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eb1e4d30bb71fffc1de83c9c77e089ac8e912f0e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-La clase <xref:System.Resources.NeutralResourcesLanguageAttribute> especifica la referencia cultural de los recursos incluidos en el ensamblado principal.  Este atributo se usa como mejora de rendimiento para que el objeto <xref:System.Resources.ResourceManager> no llegue a los recursos incluidos en el ensamblado principal.  
+---
+# <a name="neutral-resources-languages-for-localization"></a>Neutral Resources Languages for Localization
+The <xref:System.Resources.NeutralResourcesLanguageAttribute> class specifies the culture of the resources included in the main assembly. This attribute is used as a performance enhancement, so that the <xref:System.Resources.ResourceManager> object does not search for resources that are included in the main assembly.  
   
- En el código siguiente se muestra cómo establecer el idioma de los recursos neutros.  El código se puede incluir en un script de compilación o en el archivo AssemblyInfo.vb o AssemblyInfo.cs.  
+ The following code shows how to set the neutral resources language. The code can be placed in either a build script or in the AssemblyInfo.vb or AssemblyInfo.cs file.  
   
-```vb#  
+```vb  
 ' Set neutral resources language for assembly.  
 <Assembly: NeutralResourcesLanguageAttribute("en")>  
   
 ```  
   
-```c#  
+```csharp  
 // Set neutral resources language for assembly.  
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  <xref:System.Resources.ResourceManager>   
- [Introducción a aplicaciones internacionales basadas en .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
- [Organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md)   
- [Localizar aplicaciones](../ide/localizing-applications.md)   
- [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)
+ [Introduction to International Applications Based on the .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
+ [Hierarchical Organization of Resources for Localization](../ide/hierarchical-organization-of-resources-for-localization.md)   
+ [Localizing Applications](../ide/localizing-applications.md)   
+ [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)

@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 60732a1fbe7379b43d2856a62d5cd459165dd9a3
 ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
@@ -58,7 +58,7 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
 
 3.  Modifique el archivo de código para indicar dónde debe aplicarse el reemplazo de parámetros. Para más información, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
 
-4.  En el menú **Archivo**, haga clic en **Exportar plantilla**.  
+4.  En el menú **Proyecto**, haga clic en **Exportar plantilla**.  
 
 5.  Haga clic en **Plantilla de elemento**, seleccione el proyecto que contiene el elemento y haga clic en **Siguiente**.  
 
@@ -166,7 +166,7 @@ En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#e
 
 2.  Modifique el elemento de proyecto hasta que se pueda guardar como plantilla.  
 
-3.  Modifique el archivo de código según corresponda para indicar dónde debe aplicarse el reemplazo de parámetros. Para más información sobre el reemplazo de parámetros, vea Cómo: Sustituir parámetros en una plantilla.  
+3.  Modifique el archivo de código según corresponda para indicar dónde debe aplicarse el reemplazo de parámetros. Para más información sobre el reemplazo de parámetros, consulte [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4.  Cree un archivo XML y guárdelo con la extensión de nombre de archivo .vstemplate en el mismo directorio que la nueva plantilla de elementos.  
 

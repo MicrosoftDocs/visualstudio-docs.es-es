@@ -1,73 +1,90 @@
 ---
-title: "BP_RESOLUTION_DATA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_RESOLUTION_DATA"
-helpviewer_keywords: 
-  - "Estructura BP_RESOLUTION_DATA"
+title: BP_RESOLUTION_DATA | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_RESOLUTION_DATA
+helpviewer_keywords:
+- BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# BP_RESOLUTION_DATA
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f5be75214e9ab112cc3af17bd8bdcfae00083661
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Describe el resultado de enlazar un punto de interrupción de datos.  
+---
+# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
+Describes the result of binding a data breakpoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct _BP_RESOLUTION_DATA {   
-   BSTR              bstrDataExpr;  
-   BSTR              bstrFunc;  
-   BSTR              bstrImage;  
-   BP_RES_DATA_FLAGS dwFlags;  
+```cpp  
+typedef struct _BP_RESOLUTION_DATA {   
+   BSTR              bstrDataExpr;  
+   BSTR              bstrFunc;  
+   BSTR              bstrImage;  
+   BP_RES_DATA_FLAGS dwFlags;  
 } BP_RESOLUTION_DATA;  
 ```  
   
-```c#  
-public struct BP_RESOLUTION_DATA {   
-   public string bstrDataExpr;  
-   public string bstrFunc;  
-   public string bstrImage;  
-   public uint   dwFlags;  
+```csharp  
+public struct BP_RESOLUTION_DATA {   
+   public string bstrDataExpr;  
+   public string bstrFunc;  
+   public string bstrImage;  
+   public uint   dwFlags;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Members  
  `bstrDataExpr`  
- La expresión de datos se ha enlazado.  
+ The data expression that has been bound.  
   
  `bstrFunc`  
- El nombre de la función que el punto de interrupción de datos ha enlazado en \(si existe\).  
+ The name of the function the data breakpoint has bound in (if any).  
   
  `bstrImage`  
- El nombre del módulo \(MyModule.dll, por ejemplo\) que el punto de interrupción de datos ha enlazado en.  
+ The name of the module (MyModule.dll, for example) that the data breakpoint has bound in.  
   
  `dwFlags`  
- Un valor de enumeración de [BP\_RES\_DATA\_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) , describe cómo se implementa el punto de interrupción de datos.  
+ A value from the [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) enumeration, describing how the data breakpoint is implemented.  
   
-## Comentarios  
- Esta estructura es miembro de la estructura de [BP\_RESOLUTION\_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , que a su vez un miembro de la estructura de [BP\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) devuelta por el método de [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) .  
+## <a name="remarks"></a>Remarks  
+ This structure is a member of the [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure, which is in turn a member of the [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure returned by the [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) method.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_RESOLUTION\_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
- [BP\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
+ [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

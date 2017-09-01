@@ -1,49 +1,66 @@
 ---
-title: "IDebugField::GetAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetAddress"
-helpviewer_keywords: 
-  - "IDebugField::GetAddress (método)"
+title: IDebugField::GetAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetAddress
+helpviewer_keywords:
+- IDebugField::GetAddress method
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugField::GetAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 56cf317fad706249ef88be6dc6e0fea470b874eb
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Este método obtiene la dirección de la depuración de un campo.  
+---
+# <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
+This method gets the debug address of a field.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetAddress(   
-   IDebugAddress** ppAddress  
+```cpp  
+HRESULT GetAddress(   
+   IDebugAddress** ppAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAddress(  
-   out IDebugAddress ppAddress  
+   out IDebugAddress ppAddress  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `ppAddress`  
- \[out\]  Devuelve la dirección como objeto de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
+ [out] Returns the address as an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, return an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

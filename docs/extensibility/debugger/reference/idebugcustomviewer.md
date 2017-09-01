@@ -1,67 +1,84 @@
 ---
-title: "IDebugCustomViewer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer"
-helpviewer_keywords: 
-  - "Interfaz IDebugCustomViewer"
+title: IDebugCustomViewer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomViewer
+helpviewer_keywords:
+- IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugCustomViewer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 74fcd4f2c5ac72aeede1acd407f8bfb97f18932d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Esta interfaz permite a un evaluador de \(EE\) expresiones para mostrar un valor de propiedad en cualquier formato es necesario.  
+---
+# <a name="idebugcustomviewer"></a>IDebugCustomViewer
+This interface enables an expression evaluator (EE) to display a property's value in whatever format is necessary.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCustomViewer : IUknown  
 ```  
   
-## Notas para los implementadores  
- Aa implementa esta interfaz para mostrar un valor de propiedad en un formato personalizado.  
+## <a name="notes-for-implementers"></a>Notes for Implementers  
+ An EE implements this interface to display a property's value in a custom format.  
   
-## Notas para los llamadores  
- Una llamada a la función de `CoCreateInstance` de COM crea instancias de esta interfaz.  `CLSID` pasado a `CoCreateInstance` se obtiene del registro.  Una llamada a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) obtiene la ubicación del registro.  Vea las notas de detalles junto con el ejemplo.  
+## <a name="notes-for-callers"></a>Notes for Callers  
+ A call to COM's `CoCreateInstance` function instantiates this interface. The `CLSID` passed to `CoCreateInstance` is obtained from the registry. A call to [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) obtains the location in the registry. See Remarks for details as well as the Example.  
   
-## métodos en el orden de Vtable  
- esta interfaz implementa el método siguiente:  
+## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
+ This interface implements the following method:  
   
-|Método|Descripción|  
+|Method|Description|  
 |------------|-----------------|  
-|[Valor de visualización](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Haga lo que sea necesario mostrar un valor determinado.|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Does whatever is necessary to display a given value.|  
   
-## Comentarios  
- Se utiliza esta interfaz cuando un valor de propiedad no se puede mostrar por normal medio\-para el ejemplo, con una tabla de datos u otro tipo de propiedad complejo.  Un visor personalizado, como se representa por la interfaz de `IDebugCustomViewer` , es diferente de un visualizador de tipo, que es un programa externo para mostrar datos de un tipo específico independientemente aa.  Aa implementa un visor personalizado que sea específico de esa aa.  Un usuario selecciona qué tipo de visualizador a utilizar, es un visualizador de tipo o un visor personalizado.  Vea [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre este proceso.  
+## <a name="remarks"></a>Remarks  
+ This interface is used when a property's value cannot be displayed by normal means—for example, with a data table or another complex property type. A custom viewer, as represented by the `IDebugCustomViewer` interface, is different from a type visualizer, which is an external program for displaying data of a specific type regardless of the EE. The EE implements a custom viewer that is specific to that EE. A user selects which type of visualizer to use, be it a type visualizer or a custom viewer. See [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) for details on this process.  
   
- Un visor personalizado se registra igual que aa y, por consiguiente, requiere un lenguaje GUID y un proveedor GUID.  El nombre métrica \(o de entrada del Registro\) exacto sólo se conoce a aa.  Esta métrica se devuelve en la estructura de [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) , que a su vez es devuelta por una llamada a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md).  El valor almacenado en la métrica es `CLSID` que se pasa a la función de `CoCreateInstance` COM \(vea el ejemplo\).  
+ A custom viewer is registered in the same way as an EE and, therefore, requires a language GUID and a vendor GUID. The exact metric (or registry entry name) is known only to the EE. This metric is returned in the [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structure, which in turn is returned by a call to [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). The value stored in the metric is the `CLSID` that is passed to COM's `CoCreateInstance` function (see the Example).  
   
- la función de [Aplicaciones auxiliares SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) , `SetEEMetric`, se puede utilizar para registrar un visor personalizado.  Vea la sección “registro de Evaluators de expresiones” de `Debugging SDK Helpers` para claves del Registro concretas que un visor personalizado debe.  Observe que un visor personalizado sólo necesita una métrica \(definido por el implementador de aa\) mientras un evaluador de expresiones requiere diversas métricas predefinidas.  
+ The [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) function, `SetEEMetric`, can be used to register a custom viewer. See the "Expression Evaluators" registry section of `Debugging SDK Helpers` for the specific registry keys that a custom viewer needs. Note that a custom viewer needs only one metric (which is defined by the EE's implementer) whereas an expression evaluator requires several predefined metrics.  
   
- Normalmente, un visor personalizado proporciona una vista de solo lectura de los datos, ya que la interfaz de [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) proporcionada a [Valor de visualización](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) no tiene métodos para cambiar el valor de propiedad excepto como cadena.  Para poder modificar bloques arbitrarios de datos, aa implementa una interfaz personalizada en el mismo objeto que implementa la interfaz de `IDebugProperty3` .  Esta interfaz personalizada a proporcionaría los métodos necesarios para cambiar un bloque arbitrario de datos.  
+ Normally, a custom viewer provides a read-only view of the data, since the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface supplied to [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) has no methods for changing the property's value except as a string. In order to support changing arbitrary blocks of data, the EE implements a custom interface on the same object that implements the `IDebugProperty3` interface. This custom interface would then provide the methods needed to change an arbitrary block of data.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Ejemplo  
- este ejemplo muestra cómo obtener el primer visor personalizado de una propiedad si esa propiedad tiene algunos visores personalizados.  
+## <a name="example"></a>Example  
+ This example shows how to get the first custom viewer from a property if that property has any custom viewers.  
   
-```cpp#  
+```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
 {  
     // This string is typically defined globally.  For this example, it  
@@ -105,8 +122,8 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## Vea también  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>See Also  
+ [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [Aplicaciones auxiliares SDK para la depuración](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

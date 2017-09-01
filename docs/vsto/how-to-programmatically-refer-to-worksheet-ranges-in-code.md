@@ -1,63 +1,66 @@
 ---
-title: "C&#243;mo: Hacer referencia a rangos de hojas de c&#225;lculo en el c&#243;digo mediante programaci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel [desarrollo de Office en Visual Studio], hacer referencia a rangos de hojas de cálculo"
-  - "intervalos, hacer referencia"
-  - "hacer referencia a rangos de hojas de cálculo"
-  - "hojas de cálculo, hacer referencia a rangos"
+title: 'How to: Programmatically Refer to Worksheet Ranges in Code | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ranges, referring to
+- worksheets, referring to ranges
+- referring to worksheet ranges
+- Excel [Office development in Visual Studio], referring to worksheet ranges
 ms.assetid: 113633b8-426a-4d02-b6b8-d459d1f110ea
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1ae11cd66e5e916ca4e95c740d811b4b42d684f1
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Hacer referencia a rangos de hojas de c&#225;lculo en el c&#243;digo mediante programaci&#243;n
-  Se utiliza un proceso similar para hacer referencia al contenido de un control <xref:Microsoft.Office.Tools.Excel.NamedRange> o a un objeto de rango de Excel nativo.  
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>How to: Programmatically Refer to Worksheet Ranges in Code
+  You use a similar process to refer to the contents of a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Usar un control NamedRange  
- En el ejemplo siguiente se agrega un control <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo y, a continuación, se agrega texto a la celda del rango.  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+ The following example adds a <xref:Microsoft.Office.Tools.Excel.NamedRange> to a worksheet and then adds text to the cell in the range.  
   
-#### Para hacer referencia a un control NamedRange  
+#### <a name="to-refer-to-a-namedrange-control"></a>To refer to a NamedRange control  
   
-1.  Asigne una cadena a la propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> del control <xref:Microsoft.Office.Tools.Excel.NamedRange>.  Este código debe colocarse en una clase Sheet, no en la clase `ThisWorkbook`.  
+1.  Assign a string to the <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property of the <xref:Microsoft.Office.Tools.Excel.NamedRange> control. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#46](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#46)]
-     [!code-vb[Trin_VstcoreExcelAutomation#46](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#46)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]  [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]  
   
-## Usar rangos de Excel nativos  
- En el ejemplo siguiente se agrega un rango de Excel nativo a una hoja de cálculo y, a continuación, se agrega texto a la celda del rango.  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+ The following example adds a native Excel range to a worksheet and then adds text to the cell in the range.  
   
-#### Para hacer referencia a un objeto de rango nativo  
+#### <a name="to-refer-to-a-native-range-object"></a>To refer to a native range object  
   
-1.  Asigne una cadena a la propiedad <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> del rango.  
+1.  Assign a string to the <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> property of the range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#47](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#47)]
-     [!code-vb[Trin_VstcoreExcelAutomation#47](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#47)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]  [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]  
   
-## Vea también  
- [Trabajar con rangos](../vsto/working-with-ranges.md)   
- [Cómo: Revisar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Cómo: Rellenar rangos automáticamente con datos que cambian de forma incremental mediante programación](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Cómo: Buscar texto en rangos de hojas de cálculo mediante programación](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
- [NamedRange &#40;Control&#41;](../vsto/namedrange-control.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Ranges](../vsto/working-with-ranges.md)   
+ [How to: Programmatically Check Spelling in Worksheets](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [How to: Programmatically Search for Text in Worksheet Ranges](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

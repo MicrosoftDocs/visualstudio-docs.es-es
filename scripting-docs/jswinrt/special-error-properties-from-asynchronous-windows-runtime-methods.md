@@ -1,33 +1,38 @@
 ---
-title: "Propiedades de error especiales de los m&#233;todos asincr&#243;nicos de Windows en tiempo de ejecuci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Propiedades de error especiales de los métodos de Windows Runtime asincrónicos | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- javascript
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 120d8f699c8bedd0fe5762300203c5d5ec18e73e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/11/2017
+
 ---
-# Propiedades de error especiales de los m&#233;todos asincr&#243;nicos de Windows en tiempo de ejecuci&#243;n
-Puede ser difícil depurar métodos asincrónicos de Windows en tiempo de ejecución en JavaScript porque el error se puede producir de en alguna parte en profundidad de la pila de llamadas.  El objeto `Error` de JavaScript tiene propiedades adicionales que solo aparecen cuando el error se produce desde un método asincrónico de Windows en tiempo de ejecución cuando la aplicación se ejecuta en modo de depuración.  
+# <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>Propiedades de error especiales de los métodos asincrónicos de Windows Runtime
+En JavaScript puede resultar difícil depurar los métodos de Windows Runtime asincrónicos, porque el error puede generarse desde cualquier parte intrincada de la pila de llamadas. El objeto `Error` de JavaScript tiene propiedades adicionales que solo aparecen cuando el error se genera desde un método de Windows Runtime asincrónico cuando la aplicación se ejecuta en modo de depuración.  
   
-## Propiedades especiales de error  
- Un objeto de error resultante de una operación asincrónica con error de Windows en tiempo de ejecución en modo de depuración, tiene las propiedades especiales siguientes:  
+## <a name="special-error-properties"></a>Propiedades de error especiales  
+ Un objeto de error que procede de una operación asincrónica de Windows Runtime errónea en modo de depuración tiene las siguientes propiedades especiales:  
   
--   `asyncOpSource` \(objeto\) recopila información sobre la ubicación original donde se realizó la llamada que generó un error.  La propiedad `asyncOpSource.originatingCall` \(cadena\) muestra la ubicación en el código de usuario que originó la operación asincrónica.  
+-   `asyncOpSource` (objeto): obtiene información sobre la ubicación original donde se realizó la llamada que generó un error. `asyncOpSource.originatingCall` (cadena): muestra la ubicación en el código del usuario que originó la operación asincrónica.  
   
--   asyncOpType \(cadena\) obtiene el nombre del tipo de operación asincrónica que provocó el error.  
+-   asyncOpType (cadena): obtiene el nombre del tipo de operación asincrónica que produjo el error.  
   
- Para obtener más información acerca de errores con operaciones asincrónicas, vea:  
+ Para obtener más información sobre los errores con operaciones asincrónicas, consulte:  
   
--   [How to handle errors with promises](http://msdn.microsoft.com/es-es/01d5a901-c4ea-46f6-8005-6d39c32203eb)  
+-   [Cómo controlar errores con promesas](https://msdn.microsoft.com/en-us/library/windows/apps/hh700337.aspx)  
   
--   [Solución de problemas de errores de Windows en tiempo de ejecución](http://msdn.microsoft.com/es-es/1ef7d7df-82ac-441d-8ad0-54ab1318de64)
+-   [Solucionar errores de Windows en tiempo de ejecución](http://msdn.microsoft.com/en-us/1ef7d7df-82ac-441d-8ad0-54ab1318de64)

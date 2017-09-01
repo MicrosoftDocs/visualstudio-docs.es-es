@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: db7c9121beea3b6a27a435680dfe01cbc8cba8b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: b19a309f403daa0a3881ec154aa4cd3f5e4d97dc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
@@ -42,7 +43,7 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 ## <a name="perftips"></a>Sugerencias de rendimiento  
  Cuando el depurador detiene la ejecución en un punto de interrupción o en una operación de ejecución paso a paso, el tiempo transcurrido entre la interrupción y el punto de interrupción anterior aparece como una sugerencia en la ventana del editor. Para obtener más información, vea [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![Sugerencia de rendimiento](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![Sugerencia de rendimiento](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Ventana Herramientas de diagnóstico  
  Los puntos de interrupción y datos de tiempo asociados se registran en la ventana Herramientas de diagnóstico.  
@@ -72,3 +73,7 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 1.  En el menú **Depurar** , elija **Opciones**.  
   
 2.  Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.
+
+## <a name="see-also"></a>Vea también
+ [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+

@@ -1,66 +1,83 @@
 ---
-title: "IDebugCoreServer3::EnableAutoAttach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords:
+- IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCoreServer3::EnableAutoAttach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0d8bd772e752134a41de1edbb2888703c3ebf42d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Permite asociar automático para los motores especificados de depuración.  
+---
+# <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
+Enables automatic attaching for the specified debug engines.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnableAutoAttach(  
-   GUID*     rgguidSpecificEngines,  
-   DWORD     celtSpecificEngines,  
-   LPCOLESTR pszStartPageUrl,  
-   BSTR*     pbstrSessionId  
+```cpp  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
 );  
 ```  
   
-```c#  
-int EnableAutoAttach(  
-   Guid[]     rgguidSpecificEngines,  
-   uint       celtSpecificEngines,  
-   string     pszStartPageUrl,  
-   out string pbstrSessionId  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `rgguidSpecificEngines`  
- \[in\]  Matriz de GUID para que cada motor de depuración marcado como auto\-adjuntando.  
+ [in] Array of GUIDs for each debug engine to mark as auto-attaching.  
   
  `celtSpecificEngines`  
- \[in\]  el número de motores especificados en `rgguidSpecificEngines`.  
+ [in] The number of engines specified in `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- \[in\]  La dirección URL que empieza a utilizar el auto\-adjuntar.  
+ [in] The starting URL to use when auto-attaching.  
   
  `pbstrSessionID`  
- \[out\]  Identificador de la sesión que auto\-fue asociada.  
+ [out] ID of the session that was auto-attached.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED`, que indica que el generador de la clase de la asociación automática no se ha registrado.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code. One error code is `E_AUTO_ATTACH_NOT_REGISTERED`, which indicates that the auto-attach class factory has not been registered.  
   
-## Comentarios  
- Cuando un programa asociado con la dirección URL especificada se inicia, los motores especificados de depuración se inician y se adjuntan.  
+## <a name="remarks"></a>Remarks  
+ When a program associated with the specified URL is started, the specified debug engines are automatically started and attached.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

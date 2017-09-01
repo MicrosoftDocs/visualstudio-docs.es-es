@@ -1,75 +1,92 @@
 ---
-title: "IDebugProcess2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::Attach"
-helpviewer_keywords: 
-  - "IDebugProcess2::Attach"
+title: IDebugProcess2::Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::Attach
+helpviewer_keywords:
+- IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcess2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 95b86696abe1491c4ff1deedcfa948d0ca6e0df4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Asocia el administrador de depuración de sesión \(SDM\) al proceso.  
+---
+# <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
+Attaches the session debug manager (SDM) to the process.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   GUID*                 rgguidSpecificEngines,  
-   DWORD                 celtSpecificEngines,  
-   HRESULT*              rghrEngineAttach  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   GUID*                 rgguidSpecificEngines,  
+   DWORD                 celtSpecificEngines,  
+   HRESULT*              rghrEngineAttach  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   Guid[]               rgguidSpecificEngines,  
-   uint                 celtSpecificEngines,  
-   int[]                rghrEngineAttach  
+```csharp  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   Guid[]               rgguidSpecificEngines,  
+   uint                 celtSpecificEngines,  
+   int[]                rghrEngineAttach  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pCallback`  
- \[in\]  Un objeto de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que se utiliza para la notificación de eventos de depuración.  
+ [in] An [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object that is used for debug event notification.  
   
  `rgguidSpecificEngines`  
- \[in\]  Una matriz de GUID de los motores de depuración que se utilizarán a los programas de depuración que se ejecutan en el proceso.  Este parámetro puede ser un valor NULL.  Vea las notas de detalles.  
+ [in] An array of GUIDs of debug engines to be used to debug programs running in the process. This parameter can be a null value. See Remarks for details.  
   
  `celtSpecificEngines`  
- \[in\]  El número de motores de depuración en la matriz de `rgguidSpecificEngines` y el tamaño de la matriz de `rghrEngineAttach` .  
+ [in] The number of debug engines in the `rgguidSpecificEngines` array and the size of the `rghrEngineAttach` array.  
   
  `rghrEngineAttach`  
- \[in, out\]  Una matriz de códigos HRESULT devueltos por los motores de depuración.  El tamaño de esta matriz se especifica en el parámetro de `celtSpecificEngines` .  Cada código es normalmente `S_OK` o `S_ATTACH_DEFERRED`.  Este último indica que el OF está asociado actualmente a ningún software.  
+ [in, out] An array of HRESULT codes returned by the debug engines. The size of this array is specified in the `celtSpecificEngines` parameter. Each code is typically either `S_OK` or `S_ATTACH_DEFERRED`. The latter indicates that the DE is currently attached to no programs.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  la tabla siguiente muestra otros valores posibles.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. The following table shows other possible values.  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|El proceso especificado ya está asociado al depurador.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Una infracción de seguridad producida durante el procedimiento de asociar.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un proceso de escritorio no se puede asociar el depurador.|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|The specified process is already attached to the debugger.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|A security violation occurred during the attach procedure.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|A desktop process cannot be attached to the debugger.|  
   
-## Comentarios  
- Asociar el depurador a un proceso asocia el SDM todos los programas que se ejecutan en ese proceso que se puede depurar por los motores de \(DE\) depuración especificados en la matriz de `rgguidSpecificEngines` .  Establezca el parámetro de `rgguidSpecificEngines` con un valor null o inclusión `GUID_NULL` en la matriz para adjuntar a todos los programas en el proceso.  
+## <a name="remarks"></a>Remarks  
+ Attaching to a process attaches the SDM to all programs running in that process that can be debugged by the debug engines (DE) specified in the `rgguidSpecificEngines` array. Set the `rgguidSpecificEngines` parameter to a null value or include `GUID_NULL` in the array to attach to all programs in the process.  
   
- Todos los eventos de depuración que aparecen en el proceso se envían al objeto dado de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) .  Se proporciona este objeto de `IDebugEventCallback2` cuando el SDM llama a este método.  
+ All debug events that occur in the process are sent to the given [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object. This `IDebugEventCallback2` object is provided when the SDM calls this method.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -1,28 +1,47 @@
 ---
-title: "C&#243;mo: Crear una condici&#243;n de regla declarativa (Heredado) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "instrucciones condicionales, condiciones de reglas declarativas"
-  - "condiciones de reglas declarativas"
-  - "cuadro de diálogo Editor de condiciones de reglas"
+title: 'How to: Create a Declarative Rule Condition (Legacy) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- declarative rule conditions
+- condition statements, declarative rule conditions
+- Rule Condition Editor dialog box
 ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+author: ErikRe
+ms.author: erikre
+manager: erikre
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 2672ecfc484c3b586af2acdf9b8dbd9bb9f5633a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# C&#243;mo: Crear una condici&#243;n de regla declarativa (Heredado)
-En este tema se describe cómo declarar una condición de regla usando [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>How to: Create a Declarative Rule Condition (Legacy)
+This topic describes how to declare a rule condition using the legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] that targets the [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] or the [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- Una instrucción condicional se evalúa como **True** o **False**.Una condición de regla declarativa es una instrucción condicional que se crea usando el [Editor de condiciones de reglas \(Cuadro de diálogo\) \(Heredado\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) y se almacena como XML con el flujo de trabajo.Puede incluir predicados que comparan el estado del flujo de trabajo y álgebra booleana que combina varios predicados.  
+ A condition statement evaluates to **True** or **False**. A declarative rule condition is a condition statement that is created by using the [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) and stored as XML with the workflow. It can include predicates that compare workflow state and Boolean algebra that combines multiple predicates.  
   
- Las condiciones de regla declarativa se utilizan en las siguientes actividades predefinidas de Windows Workflow Foundation:  
+ Declarative rule conditions are used in the following Windows Workflow Foundation out-of-box activities:  
   
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
@@ -36,36 +55,36 @@ En este tema se describe cómo declarar una condición de regla usando [!INCLUDE
   
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
-### Para crear una condición de regla declarativa mediante el Editor de condiciones de reglas  
+### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>To create a declarative rule condition using the Rule Condition Editor  
   
-1.  En la ventana **Propiedades** de la actividad, haga clic en la propiedad **Condition** o la propiedad **UntilCondition**, dependiendo de la actividad.  
+1.  In the activity's **Properties** window, click the **Condition** property or **UntilCondition** property, depending on the activity.  
   
-2.  Seleccione **Condición de regla declarativa** en la lista de la propiedad.  
+2.  Select **Declarative Rule Condition** from the list for the property.  
   
-3.  Expanda la propiedad **Condition** o **UntilCondition**.  
+3.  Expand the **Condition** or **UntilCondition** property.  
   
-4.  Haga clic en la propiedad **ConditionName**.  
+4.  Click the **ConditionName** property.  
   
-5.  Haga clic en los puntos suspensivos **\[...\]** de **ConditionName** para abrir el cuadro de diálogo **Seleccionar condición**.  
+5.  Click the **ConditionName** ellipsis **[...]** to open the **Select Condition** dialog box.  
   
-6.  Haga clic en **Nueva condición** para abrir el cuadro de diálogo **Editor de condiciones de reglas**.  
+6.  Click **New Condition** to open the **Rule Condition Editor** dialog box.  
   
-7.  Escriba la expresión de la condición en el cuadro de texto **Condición**.  
+7.  Type the expression for the condition in the **Condition** text box.  
   
-     Para obtener información sobre cómo crear expresiones de condiciones, vea [Editor de condiciones de reglas \(Cuadro de diálogo\) \(Heredado\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
+     For information about how to create condition expressions, see [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Cuando termine de crear la expresión de condición, haga clic en **Aceptar** para cerrar el cuadro de diálogo y crear la condición de la regla con un nombre asignado.  
+8.  When you are finished creating the condition expression, click **OK** to close the dialog box and create the rule condition with an assigned name.  
   
-     Se abre el cuadro de diálogo **Seleccionar condición**.  
+     The **Select Condition** dialog box opens.  
   
-     Para obtener información sobre cómo usar el cuadro de diálogo **Seleccionar condición**, vea [Seleccionar condición \(Cuadro de diálogo\) \(Heredado\)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+     For information about how to use the **Select Condition** dialog box, see [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
-## Vea también  
- [Actividades de flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md)   
- [Uso de ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
- [Uso de la actividad IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
- [Uso de la actividad Replicator](http://go.microsoft.com/fwlink?LinkID=65080)   
- [Uso de la actividad While](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Editor de condiciones de reglas \(Cuadro de diálogo\) \(Heredado\)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Seleccionar condición \(Cuadro de diálogo\) \(Heredado\)](../workflow-designer/select-condition-dialog-box-legacy.md)   
- [Uso de condiciones en flujos de trabajo](http://go.microsoft.com/fwlink?LinkID=65009)
+## <a name="see-also"></a>See Also  
+ [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md)   
+ [Using the ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
+ [Using the IfElseBranchActivity Activity](http://go.microsoft.com/fwlink?LinkID=65075)   
+ [Using the Replicator Activity](http://go.microsoft.com/fwlink?LinkID=65080)   
+ [Using the While Activity](http://go.microsoft.com/fwlink?LinkID=65091)   
+ [Rule Condition Editor Dialog Box (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
+ [Select Condition Dialog Box (Legacy)](../workflow-designer/select-condition-dialog-box-legacy.md)   
+ [Using Conditions in Workflows](http://go.microsoft.com/fwlink?LinkID=65009)

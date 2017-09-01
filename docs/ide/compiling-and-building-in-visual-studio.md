@@ -17,16 +17,16 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 800fcd5ff96e9e6d05b79c4d6fc5ccf17ba3084b
+ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
+ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
 ms.contentlocale: es-es
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-Visual Studio te permite compilar ensamblados y aplicaciones ejecutables a partir de código fuente en cualquier momento durante el ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#. 
+La ejecución de una compilación crea ensamblados y aplicaciones ejecutables a partir del código fuente en cualquier momento durante el ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#. 
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir rápidamente errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
 
@@ -61,3 +61,4 @@ De ahí en adelante, puede explorar otras tareas:
 ## <a name="see-also"></a>Vea también  
 
 - [Compilar proyectos de sitios web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
+

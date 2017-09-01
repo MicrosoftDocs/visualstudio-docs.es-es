@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28a8636db753eb71a90cb89f921f58b97aabdc59
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 3a78a0d9afc766d316957b27d70269518f2d9d33
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizar el uso de energía en las aplicaciones de la Tienda
@@ -66,7 +66,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificar escenarios con marcas de usuario  
  Puedes agregar *marcas de usuario* a los datos de generación de perfiles para ayudar a identificar áreas en la regla de escala de tiempo.  
   
- ![Marcas de usuario en la escala de tiempo](~/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![Marcas de usuario en la escala de tiempo](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  La marca aparece como un triángulo naranja en la escala de tiempo en el momento de la ejecución del método. El mensaje y el tiempo se muestran como información sobre herramientas al mantener el mouse sobre la marca. Si dos o más marcas de usuario están muy próximas, se combinan dichas marcas y los datos sobre herramientas. Puedes acercar la escala de tiempo para separar las marcas.  
   
@@ -77,7 +77,7 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
  Al ejecutarse el método, se agrega una marca de usuario a los datos de generación de perfiles junto con un mensaje.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](https://msdn.microsoft.com/en-us/library/windows/apps/windows.foundation.diagnostics.loggingchannel.dispose.aspx) en C# y VB) cuando haya finalizado con un canal de registro.  
+>  -   Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (proyectada como [System.IDisposable](/dotnet/api/system.idisposable) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# y VB) cuando haya finalizado con un canal de registro.  
 > -   Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
   
  Consulte el [ejemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) en el Windows SDK.  
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
 4.  Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
   
-     ![Detener la recopilación de datos](~/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
+     ![Detener la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analiza los datos recopilados y muestra los resultados.  
   
@@ -141,12 +141,12 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Paso 1](~/profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|  
-|![Paso 2](~/profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
-|![Paso 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|  
-|![Paso 4](~/profiling/media/procguid_4.png "ProcGuid_4")|El gráfico **Uso de potencia** es un gráfico de varias líneas que muestra los cambios producidos en la potencia de salida por un recurso de dispositivo durante una sesión de generación de perfiles. El generador de perfiles Consumo de energía hace un seguimiento de la potencia utilizada por la CPU, la actividad de red y la presentación en pantalla.|  
-|![Paso 5](~/profiling/media/procguid_6.png "ProcGuid_6")|El gráfico **Recursos (activados/desactivados)**  proporciona detalles sobre los costos energéticos de red. La barra **Red** representa el tiempo que estuvo abierta la conexión de red. La barra secundaria **Transferencia de datos** es el tiempo que la aplicación estuvo recibiendo o enviando datos a través de la red.|  
-|![Paso 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|El **Resumen de uso de energía** muestra la cantidad proporcional de la energía total utilizada en la escala de tiempo seleccionada por la CPU, la actividad de red y la presentación en pantalla.|  
+|![Paso 1](../profiling/media/procguid_1.png "ProcGuid_1")|El archivo de informe se denomina Report*YYYYMMDD-HHMM*.diagsession. Puedes cambiar el nombre si decides guardarlo.|  
+|![Paso 2](../profiling/media/procguid_2.png "ProcGuid_2")|La escala de tiempo muestra la longitud de la sesión de generación de perfiles, los eventos de activación del ciclo de vida de la aplicación y las marcas de usuario.|  
+|![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|Puedes restringir el informe a una parte de la escala de tiempo arrastrando las barras azules para seleccionar una región de esta.|  
+|![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|El gráfico **Uso de potencia** es un gráfico de varias líneas que muestra los cambios producidos en la potencia de salida por un recurso de dispositivo durante una sesión de generación de perfiles. El generador de perfiles Consumo de energía hace un seguimiento de la potencia utilizada por la CPU, la actividad de red y la presentación en pantalla.|  
+|![Paso 5](../profiling/media/procguid_6.png "ProcGuid_6")|El gráfico **Recursos (activados/desactivados)**  proporciona detalles sobre los costos energéticos de red. La barra **Red** representa el tiempo que estuvo abierta la conexión de red. La barra secundaria **Transferencia de datos** es el tiempo que la aplicación estuvo recibiendo o enviando datos a través de la red.|  
+|![Paso 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|El **Resumen de uso de energía** muestra la cantidad proporcional de la energía total utilizada en la escala de tiempo seleccionada por la CPU, la actividad de red y la presentación en pantalla.|  
   
  **Para analizar los datos de perfil de energía**  
   
@@ -170,3 +170,6 @@ if (performance && performance.mark) {
      El simulador de Visual Studio para la Tienda Windows te permite simular las propiedades de la conexión de datos de las API de información de red. Consulta [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   
 -   Las herramientas **Control de tiempo de función de JavaScript** y **Uso de CPU** pueden ayudarle a reducir la carga de la CPU siempre que esté causada por funciones ineficaces Vea [Analizar el uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+
+## <a name="see-also"></a>Vea también
+ [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

@@ -1,143 +1,147 @@
 ---
-title: "Informaci&#243;n general acerca del modelo de objetos de Word"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "modelo de objetos de Word"
-  - "Word [desarrollo de Office en Visual Studio], modelo de objeto"
-  - "modelos de objeto [desarrollo de Office en Visual Studio], Office"
-  - "modelos de objeto [desarrollo de Office en Visual Studio], Word"
-  - "objetos [desarrollo de Office en Visual Studio], modelos de objeto de Office"
-  - "modelos de objetos de Office"
+title: Word Object Model Overview | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word object model
+- Word [Office development in Visual Studio], object model
+- object models [Office development in Visual Studio], Office
+- object models [Office development in Visual Studio], Word
+- objects [Office development in Visual Studio], Office object models
+- Office object models
 ms.assetid: b66a7d9e-0a51-4ef5-8754-b2b899f9094c
 caps.latest.revision: 78
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 77
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cc4d99791bcd98dc57bb55cf21f65d7e9634360e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Informaci&#243;n general acerca del modelo de objetos de Word
-  Cuando se desarrollan soluciones de Word en Visual Studio, se interactúa con el modelo de objetos de Word. Este modelo de objetos está compuesto de clases e interfaces que se proporcionan en el ensamblado de interoperabilidad primario de Word y que se definen en el espacio de nombres <xref:Microsoft.Office.Interop.Word>.  
+# <a name="word-object-model-overview"></a>Word Object Model Overview
+  When you develop Word solutions in Visual Studio, you interact with the Word object model. This object model consists of classes and interfaces that are provided in the primary interop assembly for Word, and are defined in the <xref:Microsoft.Office.Interop.Word> namespace.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- En este tema se proporciona una breve introducción del modelo de objetos de Word. Para conocer los recursos donde puede obtener más información sobre el modelo de objetos de Word completo, consulte [Usar la documentación del modelo de objetos de Word](#WordOMDocumentation).  
+ This topic provides a brief overview of the Word object model. For resources where you can learn more about the entire Word object model, see [Using the Word Object Model Documentation](#WordOMDocumentation).  
   
- Para obtener información sobre cómo usar el modelo de objetos de Word para efectuar tareas específicas, consulte los siguientes temas:  
+ For information about using the Word object model to perform specific tasks, see the following topics:  
   
--   [Trabajar con documentos](../vsto/working-with-documents.md)  
+-   [Working with Documents](../vsto/working-with-documents.md)  
   
--   [Trabajar con texto en documentos](../vsto/working-with-text-in-documents.md)  
+-   [Working with Text in Documents](../vsto/working-with-text-in-documents.md)  
   
--   [Trabajar con tablas](../vsto/working-with-tables.md)  
+-   [Working with Tables](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a> Descripción del modelo de objetos de Word  
- Word proporciona centenares de objetos con los que se puede interactuar. Estos objetos se organizan en una jerarquía que sigue estrechamente la interfaz de usuario. En la parte superior de la jerarquía se encuentra el objeto <xref:Microsoft.Office.Interop.Word.Application>, que representa la instancia actual de Word. El objeto <xref:Microsoft.Office.Interop.Word.Application> contiene los objetos <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark> y <xref:Microsoft.Office.Interop.Word.Range>. Cada uno de estos objetos tiene muchos métodos y propiedades a los que puede tener acceso para manipular e interactuar con el objeto.  
+##  <a name="understanding"></a> Understanding the Word Object Model  
+ Word provides hundreds of objects with which you can interact. These objects are organized in a hierarchy that closely follows the user interface. At the top of the hierarchy is the <xref:Microsoft.Office.Interop.Word.Application> object. This object represents the current instance of Word. The <xref:Microsoft.Office.Interop.Word.Application> object contains the <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, and <xref:Microsoft.Office.Interop.Word.Range> objects. Each of these objects has many methods and properties that you can access to manipulate and interact with the object.  
   
- En la siguiente ilustración se muestra una vista de estos objetos en la jerarquía del modelo de objetos de Word.  
+ The following illustration shows one view of these objects in the hierarchy of the Word object model.  
   
- ![Gráfico del modelo de objetos de Word](../vsto/media/wrwordobjectmodel.gif "Gráfico del modelo de objetos de Word")  
+ ![Word Object Model graphic](../vsto/media/wrwordobjectmodel.gif "Word Object Model graphic")  
   
- A primera vista, parece que los objetos se superponen. Por ejemplo, los objetos <xref:Microsoft.Office.Interop.Word.Document> y <xref:Microsoft.Office.Interop.Word.Selection> son miembros del objeto <xref:Microsoft.Office.Interop.Word.Application>, pero el objeto <xref:Microsoft.Office.Interop.Word.Document> también es miembro del objeto <xref:Microsoft.Office.Interop.Word.Selection>. Tanto el objeto <xref:Microsoft.Office.Interop.Word.Document> como el objeto <xref:Microsoft.Office.Interop.Word.Selection> contienen objetos <xref:Microsoft.Office.Interop.Word.Bookmark> y <xref:Microsoft.Office.Interop.Word.Range>. El solapamiento se produce porque hay varias maneras de obtener acceso al mismo tipo de objeto. Por ejemplo, se puede aplicar formato a un objeto <xref:Microsoft.Office.Interop.Word.Range>, pero puede que desee tener acceso al intervalo de la selección actual, de un párrafo concreto, de una sección o de todo el documento.  
+ At first glance, objects appear to overlap. For example, the <xref:Microsoft.Office.Interop.Word.Document> and <xref:Microsoft.Office.Interop.Word.Selection> objects are both members of the <xref:Microsoft.Office.Interop.Word.Application> object, but the <xref:Microsoft.Office.Interop.Word.Document> object is also a member of the <xref:Microsoft.Office.Interop.Word.Selection> object. Both the <xref:Microsoft.Office.Interop.Word.Document> and <xref:Microsoft.Office.Interop.Word.Selection> objects contain <xref:Microsoft.Office.Interop.Word.Bookmark> and <xref:Microsoft.Office.Interop.Word.Range> objects. The overlap exists because there are multiple ways you can access the same type of object. For example, you apply formatting to a <xref:Microsoft.Office.Interop.Word.Range> object; but you may want to access the range of the current selection, of a particular paragraph, of a section, or of the entire document.  
   
- En las siguientes secciones se describen brevemente los objetos de nivel superior y cómo interactúan entre sí. Estos objetos incluyen los cinco siguientes:  
+ The following sections briefly describe the top-level objects and how they interact with each other. These objects include the following five:  
   
--   Application \(objeto\)  
+-   Application object  
   
--   Document \(objeto\)  
+-   Document object  
   
--   Selection \(objeto\)  
+-   Selection object  
   
--   Range \(objeto\)  
+-   Range object  
   
--   Bookmark \(objeto\)  
+-   Bookmark object  
   
- Además del modelo de objetos de Word, los proyectos de Office en Visual Studio proporcionan *elementos host* y *controles host* que extienden algunos objetos del modelo de objetos de Word. Los elementos y controles host se comportan como los objetos de Word que extienden, pero tienen también una funcionalidad adicional, como capacidades de enlace de datos y eventos adicionales. Para obtener más información, consulte [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md) y [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md).  
+ In addition to the Word object model, Office projects in Visual Studio provide *host items* and *host controls* that extend some objects in the Word object model. Host items and host controls behave like the Word objects they extend, but they also have additional functionality such as data-binding capabilities and extra events. For more information, see [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md) and [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-### Objeto de aplicación  
- El objeto <xref:Microsoft.Office.Interop.Word.Application> representa la aplicación de Word y es el primario de los demás objetos. Sus miembros normalmente son aplicables a Word en su totalidad. Puede usar sus propiedades y métodos para controlar el entorno de Word.  
+### <a name="application-object"></a>Application Object  
+ The <xref:Microsoft.Office.Interop.Word.Application> object represents the Word application, and is the parent of all of the other objects. Its members usually apply to Word as a whole. You can use its properties and methods to control the Word environment.  
   
- En los proyectos de complemento de VSTO, puede acceder al objeto <xref:Microsoft.Office.Interop.Word.Application> mediante el campo `Application` de la clase `ThisAddIn`. Para obtener más información, consulta [Programar complementos de VSTO](../vsto/programming-vsto-add-ins.md).  
+ In VSTO Add-in projects, you can access the <xref:Microsoft.Office.Interop.Word.Application> object by using the `Application` field of the `ThisAddIn` class. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
- En los proyectos de nivel de documento, puede obtener acceso al objeto <xref:Microsoft.Office.Interop.Word.Application> mediante la propiedad <xref:Microsoft.Office.Tools.Word.Document.Application%2A> de la clase `ThisDocument`.  
+ In document-level projects, you can access the <xref:Microsoft.Office.Interop.Word.Application> object by using the <xref:Microsoft.Office.Tools.Word.Document.Application%2A> property of the `ThisDocument` class.  
   
-### Document \(objeto\)  
- El objeto <xref:Microsoft.Office.Interop.Word.Document> es fundamental para la programación de Word. Representa un documento y todo su contenido. Al abrir un documento o crear uno nuevo, se crea un nuevo objeto <xref:Microsoft.Office.Interop.Word.Document> que se agrega a la colección <xref:Microsoft.Office.Interop.Word.Documents> del objeto <xref:Microsoft.Office.Interop.Word.Application>. El documento que tiene el foco se llama documento activo. Se representa mediante la propiedad <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> del objeto <xref:Microsoft.Office.Interop.Word.Application>.  
+### <a name="document-object"></a>Document Object  
+ The <xref:Microsoft.Office.Interop.Word.Document> object is central to programming Word. It represents a document and all of its contents. When you open a document or create a new document, you create a new <xref:Microsoft.Office.Interop.Word.Document> object, which is added to the <xref:Microsoft.Office.Interop.Word.Documents> collection of the <xref:Microsoft.Office.Interop.Word.Application> object. The document that has the focus is called the active document. It is represented by the <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> property of the <xref:Microsoft.Office.Interop.Word.Application> object.  
   
- Las herramientas de desarrollo de Office en Visual Studio extienden el objeto <xref:Microsoft.Office.Interop.Word.Document> proporcionando el tipo <xref:Microsoft.Office.Tools.Word.Document>. Este tipo es un *elemento host* que proporciona acceso a todas las características de un objeto <xref:Microsoft.Office.Interop.Word.Document> y agrega eventos adicionales, además de aportar la capacidad de agregar controles administrados.  
+ The Office development tools in Visual Studio extend the <xref:Microsoft.Office.Interop.Word.Document> object by providing the <xref:Microsoft.Office.Tools.Word.Document> type. This type is a *host item* that gives you access to all features of a <xref:Microsoft.Office.Interop.Word.Document> object, and adds additional events and the ability to add managed controls.  
   
- Cuando se crea un proyecto de nivel de documento, puede obtener acceso a los miembros de <xref:Microsoft.Office.Tools.Word.Document> mediante la clase `ThisDocument` generada en el proyecto. Puede obtener acceso a los miembros del elemento host <xref:Microsoft.Office.Tools.Word.Document> usando las palabras clave **Me** o **this** desde el código en la clase `ThisDocument` o usando `Globals.ThisDocument` desde el código fuera de la clase `ThisDocument`. Para obtener más información, consulta [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md). Por ejemplo, para seleccionar el primer párrafo del documento, use el siguiente código.  
+ When you create a document-level project, you can access <xref:Microsoft.Office.Tools.Word.Document> members by using the generated `ThisDocument` class in your project. You can access members of the <xref:Microsoft.Office.Tools.Word.Document> host item by using the **Me** or **this** keywords from code in the `ThisDocument` class, or by using `Globals.ThisDocument` from code outside the `ThisDocument` class. For more information, see [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md). For example, to select the first paragraph in the document, use the following code.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#120](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#120)]
- [!code-vb[Trin_VstcoreWordAutomation#120](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#120)]  
+ [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)] [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
   
- En los proyectos de complemento de VSTO, puede generar elementos host <xref:Microsoft.Office.Tools.Word.Document> en tiempo de ejecución. Puede usar el elemento host generado para agregar controles al documento asociado. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ In VSTO Add-in projects, you can generate <xref:Microsoft.Office.Tools.Word.Document> host items at run time. You can use the generated host item to add controls to the associated document. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-### Selection \(objeto\)  
- El objeto <xref:Microsoft.Office.Interop.Word.Selection> representa el área actualmente seleccionada. Al efectuar una operación en la interfaz de usuario de Word, como poner un texto en negrita, seleccione o resalte el texto y, después, aplique el formato. El objeto <xref:Microsoft.Office.Interop.Word.Selection> siempre está presente en un documento. Si no hay nada seleccionado, representa el punto de inserción. Además, una selección puede estar formada por varios bloques de texto no contiguos.  
+### <a name="selection-object"></a>Selection Object  
+ The <xref:Microsoft.Office.Interop.Word.Selection> object represents the area that is currently selected. When you perform an operation in the Word user interface, such as bolding text, you select, or highlight the text and then apply the formatting. The <xref:Microsoft.Office.Interop.Word.Selection> object is always present in a document. If nothing is selected, then it represents the insertion point. In addition, a selection can encompass multiple blocks of text that are not contiguous.  
   
-### Range \(objeto\)  
- El objeto <xref:Microsoft.Office.Interop.Word.Range> representa un área contigua de un documento y se define mediante una posición de carácter inicial y una posición de carácter final. Se pueden usar varios objetos <xref:Microsoft.Office.Interop.Word.Range> a la vez. Asimismo, se pueden definir varios objetos <xref:Microsoft.Office.Interop.Word.Range> en el mismo documento. El objeto <xref:Microsoft.Office.Interop.Word.Range> tiene las siguientes características:  
+### <a name="range-object"></a>Range Object  
+ The <xref:Microsoft.Office.Interop.Word.Range> object represents a contiguous area in a document, and is defined by a starting character position and an ending character position. You are not limited to a single <xref:Microsoft.Office.Interop.Word.Range> object. You can define multiple <xref:Microsoft.Office.Interop.Word.Range> objects in the same document. A <xref:Microsoft.Office.Interop.Word.Range> object has the following characteristics:  
   
--   Puede estar formado solo por el punto de inserción, un intervalo de texto o el documento completo.  
+-   It can consist of the insertion point alone, a range of text, or the entire document.  
   
--   Incluye caracteres no imprimibles como espacios, caracteres de tabulación y marcas de párrafo.  
+-   It includes non-printing characters such as spaces, tab characters, and paragraph marks.  
   
--   Puede ser el área representada por la selección actual o puede representar un área diferente de la selección actual.  
+-   It can be the area represented by the current selection, or it can represent an area different from the current selection.  
   
--   No está visible en los documentos, a diferencia de una selección, que siempre está visible.  
+-   It is not visible in a document, unlike a selection, which is always visible.  
   
--   No se guarda con un documento y solo existe mientras se ejecuta el código.  
+-   It is not saved with a document and exists only while the code is running.  
   
- Cuando se inserta texto al final de un intervalo, Word lo amplía automáticamente para que incluya el texto insertado.  
+ When you insert text at the end of a range, Word automatically expands the range to include the inserted text.  
   
-### Objetos de control de contenido  
- Un <xref:Microsoft.Office.Interop.Word.ContentControl> permite controlar la entrada y la presentación de texto y otros tipos de contenido en documentos de Word. Un <xref:Microsoft.Office.Interop.Word.ContentControl> puede mostrar varios tipos diferentes de interfaz de usuario que se optimizan para su uso en documentos de Word, como un control de texto enriquecido, un selector de fecha o un cuadro combinado. También puede usar un <xref:Microsoft.Office.Interop.Word.ContentControl> para evitar que los usuarios editen secciones del documento o la plantilla.  
+### <a name="content-control-objects"></a>Content Control Objects  
+ A <xref:Microsoft.Office.Interop.Word.ContentControl> provides a way for you to control the input and presentation of text and other types of content in Word documents. A <xref:Microsoft.Office.Interop.Word.ContentControl> can display several different types of UI that are optimized for use in Word documents, such as a rich text control, a date picker, or a combo box. You can also use a <xref:Microsoft.Office.Interop.Word.ContentControl> to prevent users from editing sections of the document or template.  
   
- Visual Studio extiende el objeto <xref:Microsoft.Office.Interop.Word.ContentControl> en varios controles host diferentes. Mientras que el objeto <xref:Microsoft.Office.Interop.Word.ContentControl> puede mostrar cualquiera de los diferentes tipos de interfaz de usuario disponibles para los controles de contenido, Visual Studio proporciona un tipo distinto para cada control de contenido. Por ejemplo, puede usar un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para crear un control de texto enriquecido o un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> para crear un selector de fecha. Estos controles host se comportan como un <xref:Microsoft.Office.Interop.Word.ContentControl> nativo, pero incluyen eventos adicionales y funciones de enlace de datos. Para obtener más información, consulta [Controles de contenido](../vsto/content-controls.md).  
+ Visual Studio extends the <xref:Microsoft.Office.Interop.Word.ContentControl> object into several different host controls. Whereas the <xref:Microsoft.Office.Interop.Word.ContentControl> object can display any of the different types of UI that are available for content controls, Visual Studio provides a different type for each content control. For example, you can use a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to create a rich text control, or you can use a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to create a date picker. These host controls behave like the native <xref:Microsoft.Office.Interop.Word.ContentControl>, but they have additional events and data-binding capabilities. For more information, see [Content Controls](../vsto/content-controls.md).  
   
-### Bookmark \(objeto\)  
- El objeto <xref:Microsoft.Office.Interop.Word.Bookmark> representa un área contigua en un documento, con una posición inicial y una posición final. Los marcadores se pueden usar para marcar una ubicación en un documento o como contenedores de texto en un documento. Un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> puede constar del punto de inserción, o bien, puede contener todo el documento. Un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> tiene las siguientes características que lo distinguen del objeto <xref:Microsoft.Office.Interop.Word.Range>:  
+### <a name="bookmark-object"></a>Bookmark Object  
+ The <xref:Microsoft.Office.Interop.Word.Bookmark> object represents a contiguous area in a document, with both a starting position and an ending position. You can use bookmarks to mark a location in a document, or as a container for text in a document. A <xref:Microsoft.Office.Interop.Word.Bookmark> object can consist of the insertion point, or be as large as the entire document. A <xref:Microsoft.Office.Interop.Word.Bookmark> has the following characteristics that set it apart from the <xref:Microsoft.Office.Interop.Word.Range> object:  
   
--   Puede asignar un nombre al marcador en tiempo de diseño.  
+-   You can name the bookmark at design time.  
   
--   Los objetos <xref:Microsoft.Office.Interop.Word.Bookmark> se guardan con el documento y, por lo tanto, no se eliminan cuando se detiene la ejecución del código o se cierra el documento.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> objects are saved with the document, and thus are not deleted when the code stops running or your document is closed.  
   
--   Los marcadores pueden estar ocultos o hacerse visibles estableciendo la propiedad <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> del objeto <xref:Microsoft.Office.Interop.Word.View> en **false** o **true**.  
+-   Bookmarks can be hidden or made visible by setting the <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> property of the <xref:Microsoft.Office.Interop.Word.View> object to **false** or **true**.  
   
- Visual Studio extiende el objeto <xref:Microsoft.Office.Interop.Word.Bookmark> proporcionando el control host <xref:Microsoft.Office.Tools.Word.Bookmark>. El control host <xref:Microsoft.Office.Tools.Word.Bookmark> se comporta como un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo, pero incluye eventos adicionales y funciones de enlace de datos. Puede enlazar datos a un control Bookmark de un documento de la misma manera que se enlazan datos a un control de cuadro de texto en un Windows Forms. Para obtener más información, consulta [Bookmark &#40;Control&#41;](../vsto/bookmark-control.md).  
+ Visual Studio extends the <xref:Microsoft.Office.Interop.Word.Bookmark> object by providing the <xref:Microsoft.Office.Tools.Word.Bookmark> host control. The <xref:Microsoft.Office.Tools.Word.Bookmark> host control behaves like a native <xref:Microsoft.Office.Interop.Word.Bookmark>, but has additional events and data-binding capabilities. You can bind data to a bookmark control on a document in the same way that you bind data to a text box control on a Windows Form. For more information, see [Bookmark Control](../vsto/bookmark-control.md).  
   
-##  <a name="WordOMDocumentation"></a> Usar la documentación del modelo de objetos de Word  
- Para obtener información completa sobre el modelo de objetos de Word, puede consultar la referencia del ensamblado de interoperabilidad primario \(PIA\) de Word y la referencia del modelo de objetos de Visual Basic para aplicaciones \(VBA\).  
+##  <a name="WordOMDocumentation"></a> Using the Word Object Model Documentation  
+ For complete information about the Word object model, you can refer to the Word primary interop assembly (PIA) reference and the Visual Basic for Applications (VBA) object model reference.  
   
-### Referencia de ensamblado de interoperabilidad primario  
- La documentación de referencia de los PIA de Word describe los tipos del ensamblado de interoperabilidad primario para Word. Esta documentación está disponible en la siguiente ubicación: [Referencia de ensamblados de interoperabilidad primarios de Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+### <a name="primary-interop-assembly-reference"></a>Primary Interop Assembly Reference  
+ The Word PIA reference documentation describes the types in the primary interop assembly for Word. This documentation is available from the following location: [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
- Para obtener más información sobre el diseño de los ensamblados de interoperabilidad primarios \(PIA\) de Word, como las diferencias entre las clases y las interfaces en los PIA y cómo se implementan los eventos en los PIA, consulte [Información general sobre las clases y las interfaces de los ensamblados de interoperabilidad primarios de Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ For more information about the design of the Word PIA, such as the differences between classes and interfaces in the PIA and how events in the PIA are implemented, see [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
-### Referencia del modelo de objetos de VBA  
- La referencia del modelo de objetos de VBA documenta el modelo de objetos de Word, tal como se expone en el código de VBA. Para más información, vea la [Referencia del modelo de objetos de Word 2010](http://go.microsoft.com/fwlink/?LinkId=199772).  
+### <a name="vba-object-model-reference"></a>VBA Object Model Reference  
+ The VBA object model reference documents the Word object model as it is exposed to VBA code. For more information, see [Word 2010 Object Model Reference](http://go.microsoft.com/fwlink/?LinkId=199772).  
   
- Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del PIA de Word. Por ejemplo, el objeto Document en la referencia del modelo de objetos de VBA corresponde al objeto <xref:Microsoft.Office.Interop.Word.Document> del PIA de Word. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C\# si quiere usarlo en un proyecto de Word creado con Visual Studio.  
+ All of the objects and members in the VBA object model reference correspond to types and members in the Word PIA. For example, the Document object in the VBA object model reference corresponds to the <xref:Microsoft.Office.Interop.Word.Document> object in the Word PIA. Although the VBA object model reference provides code examples for most properties, methods, and events, you must translate the VBA code in this reference to Visual Basic or Visual C# if you want to use them in a Word project that you create by using Visual Studio.  
   
-## Vea también  
- [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)   
- [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
- [Trabajar con documentos](../vsto/working-with-documents.md)   
- [Trabajar con texto en documentos](../vsto/working-with-text-in-documents.md)   
- [Trabajar con tablas](../vsto/working-with-tables.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)   
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Working with Documents](../vsto/working-with-documents.md)   
+ [Working with Text in Documents](../vsto/working-with-text-in-documents.md)   
+ [Working with Tables](../vsto/working-with-tables.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

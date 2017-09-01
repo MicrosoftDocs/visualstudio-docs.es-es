@@ -1,52 +1,69 @@
 ---
-title: "IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CreatePointerToType"
-  - "IDebugTypeFieldBuilder::CreatePointerToType"
+title: IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CreatePointerToType
+- IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugTypeFieldBuilder::CreatePointerToType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2127f6b444e43cb272a57d85538621e203a79130
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Crea un puntero al tipo especificado.  
+---
+# <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
+Creates a pointer to the specified type.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreatePointerToType(  
-   IDebugField*  pTypeField,  
-   IDebugField** pPtrToTypeField  
+   IDebugField*  pTypeField,  
+   IDebugField** pPtrToTypeField  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreatePointerToType(  
-   IDebugField     pTypeField,  
-   out IDebugField pPtrToTypeField  
+   IDebugField     pTypeField,  
+   out IDebugField pPtrToTypeField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pTypeField`  
- \[in\]  Tipo para señalar a.  Se representa mediante la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
+ [in] Type to point to. It is represented by the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
   
  `pPtrToTypeField`  
- \[out\]  devuelve el puntero representado por un nuevo objeto de **IDebugField** .  
+ [out] Returns the pointer represented by a new **IDebugField** object.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

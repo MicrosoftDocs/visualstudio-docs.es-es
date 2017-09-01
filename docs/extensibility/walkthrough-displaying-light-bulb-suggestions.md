@@ -1,62 +1,79 @@
 ---
-title: "Tutorial: Mostrar sugerencias de bombilla | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Walkthrough: Displaying Light Bulb Suggestions | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Tutorial: Mostrar sugerencias de bombilla
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1096b04fee06415e65a93b0ecd8a6257de64edfc
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Las bombillas son iconos que se utilizan en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo correcciones para problemas identificados por los analizadores de código integrados o la refactorización de código.  
+---
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Walkthrough: Displaying Light Bulb Suggestions
+Light bulbs are icons used in the Visual Studio editor that expand to display a set of actions, for example fixes for problems identified by the built-in code analyzers or code refactoring.  
   
- En los editores de Visual C\# y Visual Basic, también puede usar .NET Compiler Platform \(«Roslyn»\) para escribir y empaquetar sus propios analizadores de código con las acciones que se muestran las bombillas automáticamente. Para obtener más información, consulte:  
+ In the Visual C# and Visual Basic editors, you can also use the .NET Compiler Platform ("Roslyn") to write and package your own code analyzers with actions that display light bulbs automatically. For more information, see:  
   
--   [Cómo: Escribir un diagnóstico de C\# y la revisión de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+-   [How To: Write a C# Diagnostic and Code Fix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Cómo: Escribir un diagnóstico de Visual Basic y la corrección de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+-   [How To: Write a Visual Basic Diagnostic and Code Fix](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Otros lenguajes como C\+\+ también proporcionan las bombillas para algunas acciones rápidas, como una sugerencia para crear una implementación de código auxiliar de esa función.  
+ Other languages such as C++ also provide light bulbs for some quick actions, such as a suggestion to create a stub implementation of that function.  
   
- Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C\#, un subrayado ondulado de color rojo aparece bajo un nombre de variable cuando no es válido. Cuando desplaza el mouse sobre el identificador no válido, se muestra una bombilla cerca del cursor.  
+ Here's what a light bulb looks like. In a Visual Basic or Visual C# project, a red squiggle appears under a variable name when it is invalid. When you mouse over the invalid identifier, a light bulb is displayed near the cursor.  
   
- ![light bulb](~/extensibility/media/lightbulb.png "LightBulb")  
+ ![light bulb](../extensibility/media/lightbulb.png "LightBulb")  
   
- Si hace clic en la flecha hacia abajo por la bombilla, se muestra un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios que se realizaron en el código si se ejecuta la acción.  
+ If you click the down arrow by the light bulb, a set of suggested actions is displayed, along with a preview of the selected action. In this case, it shows the changes that will be made to your code if you execute the action.  
   
  ![light bulb preview](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, podría proporcionar acciones para mover abrir las llaves para una nueva línea o al final de la línea anterior. El siguiente tutorial muestra cómo crear una bombilla que aparece en la palabra actual y le sugiere dos acciones: **convertir a mayúsculas** y **convertir a minúsculas**.  
+ You can use light bulbs to provide your own suggested actions. For example, you could provide actions to move opening curly braces to a new line or move them to the end of the preceding line. The following walkthrough shows how to create a light bulb that appears on the current word and has two suggested actions: **Convert to upper case** and **Convert to lower case**.  
   
-## Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional de la instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulta [Instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Crear un proyecto de Managed Extensibility Framework \(MEF\)  
+## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
   
-1.  Cree un proyecto de VSIX de C\#. \(En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C\# \/ extensibilidad**, a continuación, **proyecto VSIX**.\) El nombre de la solución `LightBulbTest`.  
+1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `LightBulbTest`.  
   
-2.  Agregar un **clasificador Editor** plantilla de elemento para el proyecto. Para obtener más información, consulta [Crear una extensión con una plantilla de elemento de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Add an **Editor Classifier** item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Elimine los archivos de clase existentes.  
+3.  Delete the existing class files.  
   
-4.  Agregue la siguiente referencia al proyecto y establezca **copia Local** a `False`:  
+4.  Add the following reference to the project, and set **Copy Local** to `False`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-5.  Agregue un nuevo archivo de clase y asígnele el nombre **LightBulbTest**.  
+5.  Add a new class file and name it **LightBulbTest**.  
   
-6.  Agregue las siguientes instrucciones using:  
+6.  Add the following using statements:  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Linq;  
     using System.Collections.Generic;  
@@ -71,27 +88,27 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
   
     ```  
   
-## Implementar un proveedor de origen de luz  
+## <a name="implementing-the-light-bulb-source-provider"></a>Implementing the Light Bulb Source Provider  
   
-1.  En el archivo de clase LightBulbTest.cs, elimine la clase LightBulbTest. Agregue una clase denominada **TestSuggestedActionsSourceProvider** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Exportación con el nombre de **acciones recomendadas de prueba** y un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto".  
+1.  In the LightBulbTest.cs class file, delete the LightBulbTest class. Add a class named **TestSuggestedActionsSourceProvider** that implements <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Export it with a Name of **Test Suggested Actions** and a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "text".  
   
-    ```c#  
+    ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
     [Name("Test Suggested Actions")]  
     [ContentType("text")]  
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2.  En la clase de proveedor de origen, importe la <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> y se agrega como una propiedad.  
+2.  Inside the source provider class, import the <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> and add it as a property.  
   
-    ```c#  
+    ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> para devolver un <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> objeto. Trataremos el origen en la sección siguiente.  
+3.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> method to return an <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> object. We will discuss the source in the next section.  
   
-    ```c#  
+    ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
     {  
         if (textBuffer == null && textView == null)  
@@ -102,26 +119,26 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-## Implementar el ISuggestedActionSource  
- El origen de la acción sugerida es responsable de recopilar el conjunto de acciones sugeridas y agregarlos en el contexto adecuado. En este caso, el contexto es la palabra actual y las acciones sugeridas son **UpperCaseSuggestedAction** y **LowerCaseSuggestedAction**, que se tratan en la sección siguiente.  
+## <a name="implementing-the-isuggestedactionsource"></a>Implementing the ISuggestedActionSource  
+ The suggested action source is responsible for collecting the set of suggested actions and adding them in the right context. In this case the context is the current word and the suggested actions are **UpperCaseSuggestedAction** and **LowerCaseSuggestedAction**, which we will discuss in the following section.  
   
-1.  Agregue una clase **TestSuggestedActionsSource** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+1.  Add a class **TestSuggestedActionsSource** that implements <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
-    ```c#  
+    ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2.  Agregue campos privados de sólo lectura para el proveedor de código fuente de la acción sugerida, el búfer de texto y la vista de texto.  
+2.  Add private read-only fields for the suggested action source provider, the text buffer and the text view.  
   
-    ```c#  
+    ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
     private readonly ITextBuffer m_textBuffer;  
     private readonly ITextView m_textView;  
     ```  
   
-3.  Agregue un constructor que establece los campos privados.  
+3.  Add a constructor that sets the private fields.  
   
-    ```c#  
+    ```csharp  
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)  
     {  
         m_factory = testSuggestedActionsSourceProvider;  
@@ -130,9 +147,9 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-4.  Agregue un método privado que devuelve la palabra que está bajo el cursor. El siguiente método busca en la ubicación actual del cursor y pide el navegador de estructura de texto de la extensión de la palabra. Si el cursor está en una palabra, el <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> devueltos en el parámetro out; de lo contrario el `out` parámetro es `null` y el método devuelve `false`.  
+4.  Add a private method that returns the word that is currently under the cursor. The following method looks at the current location of the cursor and asks the text structure navigator for the extent of the word. If the cursor is on a word, the <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> is returned in the out parameter; otherwise the `out` parameter is `null` and the method returns `false`.  
   
-    ```c#  
+    ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
     {  
         ITextCaret caret = m_textView.Caret;  
@@ -155,11 +172,11 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-5.  Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>. El editor llama a este método para averiguar si se debe mostrar la bombilla. Esta llamada se realiza con bastante frecuencia, por ejemplo, cuando el cursor se mueve de una línea a otra, o cuando se desplaza el mouse sobre un subrayado ondulado de error. Es asincrónica para permitir que otras operaciones de interfaz de usuario de ejercer mientras está trabajando en este método. En la mayoría de los casos que este método tiene que realizar algunos análisis y análisis de la línea actual, por lo que el procesamiento puede tardar algún tiempo.  
+5.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> method. The editor calls this method to find out whether to display the light bulb. This call is made quite often, for example whenever the cursor moves from one line to another, or when the mouse hovers over an error squiggle. It is asynchronous in order to allow other UI operations to carry on while this method is working. In most cases this method needs to perform some parsing and analysis of the current line, so the processing may take some time.  
   
-     En nuestra implementación obtiene de forma asincrónica el <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> y determina si la extensión es significativa, es decir, si tiene algún texto que no sea un espacio en blanco.  
+     In our implementation it asynchronously gets the <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> and determines whether the extent is significant, i.e., whether it has some text other than whitespace.  
   
-    ```c#  
+    ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
     {  
         return Task.Factory.StartNew(() =>  
@@ -175,12 +192,12 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-6.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> método, que devuelve una matriz de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objetos que contienen las distintas <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objetos. Este método se llama cuando se expande la bombilla.  
+6.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> method, which returns an array of <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objects that contain the different <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objects. This method is called when the light bulb is expanded.  
   
     > [!WARNING]
-    >  Debe asegurarse de que las implementaciones de `HasSuggestedActionsAsync()` y `GetSuggestedActions()` son coherente; es, si `HasSuggestedActionsAsync()` devuelve `true`, a continuación, `GetSuggestedActions()` debería tener algunas acciones para mostrar. En muchos casos `HasSuggestedActionsAsync()` se llama justo antes `GetSuggestedActions()`, pero no siempre es así. Por ejemplo, si el usuario invoca las acciones de bombilla presionando \(CTRL \+.\) sólo `GetSuggestedActions()` se llama.  
+    >  You should make sure that the implementations of `HasSuggestedActionsAsync()` and `GetSuggestedActions()` are consistent; that is, if `HasSuggestedActionsAsync()` returns `true`, then `GetSuggestedActions()` should have some actions to display. In many cases `HasSuggestedActionsAsync()` is called just before `GetSuggestedActions()`, but this is not always the case. For example, if the user invokes the light bulb actions by pressing (CTRL + .) only `GetSuggestedActions()` is called.  
   
-    ```c#  
+    ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
     {  
         TextExtent extent;  
@@ -195,15 +212,15 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }   
     ```  
   
-7.  Definir una `SuggestedActionsChanged` eventos.  
+7.  Define a `SuggestedActionsChanged` event.  
   
-    ```c#  
+    ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8.  Para completar la implementación, agregue las implementaciones para los `Dispose()` y `TryGetTelemetryId()` métodos. No queremos no telemetría, así que puede devolver false y establezca el GUID vacío.  
+8.  To complete the implementation, add implementations for the `Dispose()` and `TryGetTelemetryId()` methods. We don't want to do telemetry, so just return false and set the GUID to Empty.  
   
-    ```c#  
+    ```csharp  
     public void Dispose()  
     {  
     }  
@@ -216,22 +233,22 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-## Implementar las acciones de bombilla  
+## <a name="implementing-light-bulb-actions"></a>Implementing Light Bulb Actions  
   
-1.  En el proyecto, agregue una referencia a Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll y establezca **copia Local** a `False`.  
+1.  In the project, add a reference to Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll and set **Copy Local** to `False`.  
   
-2.  Crear dos clases, la primera llamada `UpperCaseSuggestedAction` y la segunda se denomina `LowerCaseSuggestedAction`. Ambas clases implementan <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Create two classes, the first named `UpperCaseSuggestedAction` and the second named `LowerCaseSuggestedAction`. Both classes implement <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
-    ```c#  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    ```csharp  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Ambas clases son iguales, salvo que uno llama <xref:System.String.ToUpper%2A> y las demás llamadas <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
+     Both classes are alike except that one calls <xref:System.String.ToUpper%2A> and the other calls <xref:System.String.ToLower%2A>. The following steps cover only the uppercase action class, but you must implement both classes. Use the steps for implementing the uppercase action as a pattern for implementing the lowercase action.  
   
-3.  Agregue las siguientes instrucciones using para estas clases:  
+3.  Add the following using statements for these classes:  
   
-    ```c#  
+    ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
     using System.Windows;  
     using System.Windows.Controls;  
@@ -240,18 +257,18 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
   
     ```  
   
-4.  Declare un conjunto de campos privados.  
+4.  Declare a set of private fields.  
   
-    ```c#  
+    ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
-5.  Agregue un constructor que establezca los campos.  
+5.  Add a constructor that sets the fields.  
   
-    ```c#  
+    ```csharp  
     public UpperCaseSuggestedAction(ITrackingSpan span)  
     {  
         m_span = span;  
@@ -261,9 +278,9 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-6.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> método por lo que muestra la vista previa de la acción.  
+6.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> method so that it displays the action preview.  
   
-    ```c#  
+    ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
     {  
         var textBlock = new TextBlock();  
@@ -273,23 +290,23 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-7.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> método para que devuelva una cadena vacía <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> \(enumeración\).  
+7.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> method so that it returns an empty <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> enumeration.  
   
-    ```c#  
+    ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
     {  
         return Task.FromResult<IEnumerable<SuggestedActionSet>>(null);  
     }  
     ```  
   
-8.  Implemente las propiedades de la siguiente manera:  
+8.  Implement the properties as follows.  
   
-    ```c#  
+    ```csharp  
     public bool HasActionSets  
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -317,21 +334,21 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-9. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método reemplazando el texto en el intervalo con su equivalente en mayúsculas.  
+9. Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> method by replacing the text in the span with its uppercase equivalent.  
   
-    ```c#  
-    public void Invoke(CancellationToken cancellationToken)  
+    ```csharp  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
     ```  
   
     > [!WARNING]
-    >  La acción de bombilla **Invoke** no se espera el método para mostrar la interfaz de usuario.  Si su acción de poner en funcionamiento la nueva interfaz de usuario \(por ejemplo una vista previa o selección de cuadro de diálogo\), no mostrar la interfaz de usuario directamente desde el **Invoke** método pero en su lugar programar para mostrar la interfaz de usuario después de volver de **Invoke**.  
+    >  The light bulb action **Invoke** method is not expected to show UI.  If your action does bring up new UI (for example a preview or selection dialog), do not display the UI directly from within the **Invoke** method but instead schedule to display your UI after returning from **Invoke**.  
   
-10. Para completar la implementación, agregue el `Dispose()` y `TryGetTelemetryId()` métodos.  
+10. To complete the implementation, add the `Dispose()` and `TryGetTelemetryId()` methods.  
   
-    ```c#  
+    ```csharp  
     public void Dispose()  
     {  
     }  
@@ -344,23 +361,24 @@ Las bombillas son iconos que se utilizan en el editor de Visual Studio que se ex
     }  
     ```  
   
-11. No se olvide de hacer lo mismo para `LowerCaseSuggestedAction` cambiar el texto "Convertir '{0}' en minúsculas" y la llamada <xref:System.String.ToUpper%2A> a <xref:System.String.ToLower%2A>.  
+11. Don't forget to do the same thing for `LowerCaseSuggestedAction` changing the display text to "Convert '{0}' to lower case" and the call <xref:System.String.ToUpper%2A> to <xref:System.String.ToLower%2A>.  
   
-## Compilar y probar el código  
- Para probar este código, compile la solución LightBulbTest y ejecútelo en la instancia Experimental.  
+## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
+ To test this code, build the LightBulbTest solution and run it in the Experimental instance.  
   
-1.  Compile la solución.  
+1.  Build the solution.  
   
-2.  Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
+2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
   
-3.  Cree un archivo de texto y escriba algún texto. Debería ver una bombilla a la izquierda del texto.  
+3.  Create a text file and type some text. You should see a light bulb to the left of the text.  
   
      ![test the light bulb](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4.  Apuntar a la bombilla. Debería ver una flecha hacia abajo.  
+4.  Point at the light bulb. You should see a down arrow.  
   
-5.  Al hacer clic en la bombilla, deberían mostrarse dos acciones sugeridas, junto con la vista previa de la acción seleccionada.  
+5.  When you click the light bulb, two suggested actions should be displayed, along with the preview of the selected action.  
   
-     ![test light bulb, expanded](~/extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![test light bulb, expanded](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
-6.  Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.
+6.  If you click the first action, all the text in the current word should be converted to upper case. If you click the second action, all the text should be converted to lower case.  
+  

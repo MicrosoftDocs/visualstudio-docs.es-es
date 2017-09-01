@@ -1,56 +1,73 @@
 ---
-title: "IDebugMemoryContext2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::GetInfo"
-helpviewer_keywords: 
-  - "Método GetInfo"
-  - "IDebugMemoryContext2::GetInfo (método)"
+title: IDebugMemoryContext2::GetInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryContext2::GetInfo
+helpviewer_keywords:
+- GetInfo method
+- IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugMemoryContext2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e04dea27278295327ddaa9c7a7d51e45a1c4958a
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-recupera una estructura de [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md) que describa el contexto.  
+---
+# <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
+Retrieves a [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure that describes the context.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetInfo(   
-   CONTEXT_INFO_FIELDS dwFields,  
-   CONTEXT_INFO*       pInfo  
+```cpp  
+HRESULT GetInfo(   
+   CONTEXT_INFO_FIELDS dwFields,  
+   CONTEXT_INFO*       pInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetInfo(  
-   enum_CONTEXT_INFO_FIELDS dwFields,   
-   CONTEXT_INFO[]           pinfo  
+   enum_CONTEXT_INFO_FIELDS dwFields,   
+   CONTEXT_INFO[]           pinfo  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- \[in\]  Una combinación de marcadores de enumeración de [CONTEXT\_INFO\_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) que indican qué campos de la estructura de [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md) se deben completar.  
+ [in] A combination of flags from the [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeration that indicate which fields of the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure are to be fill in.  
   
  `pInfo`  
- \[in, out\]  La estructura de `CONTEXT_INFO` se ha completado.  
+ [in, out] The `CONTEXT_INFO` structure that is filled in.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
- [CONTEXT\_INFO\_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
- [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)
+ [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
+ [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

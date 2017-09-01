@@ -36,10 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 18f1ea2f5ee76f4f8457b7254ff3dd3b7b3e4901
+ms.contentlocale: es-es
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Cómo: Firmar aplicaciones y manifiestos de implementación
@@ -49,7 +50,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
   
  Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en .exe. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.  
   
- Para obtener información sobre la creación de archivos de claves, consulte [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Para obtener información sobre la creación de archivos de claves, consulte [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión .pfx. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.  
@@ -124,7 +125,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 3.  Publique la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Ensamblados con nombre seguro](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)   
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

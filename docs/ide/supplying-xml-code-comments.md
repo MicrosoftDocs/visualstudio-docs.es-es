@@ -40,8 +40,7 @@ ms.contentlocale: es-es
 ms.lasthandoff: 05/30/2017
 
 ---
-# Proporcionar comentarios del código XML
-<a id="supplying-xml-code-comments" class="xliff"></a>
+# <a name="supplying-xml-code-comments"></a>Proporcionar comentarios del código XML
 Puede hacer que los comentarios de los archivos de código fuente estén disponibles como IntelliSense. Al agregar el modificador /doc a la línea de comandos del compilador de Visual Basic, C# o C++, se genera un archivo .xml que sirve como base para la documentación de IntelliSense.  
   
  Para más información sobre la documentación del código en Visual Basic, vea [Cómo: Crear documentación XML](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation).  
@@ -50,6 +49,5 @@ Puede hacer que los comentarios de los archivos de código fuente estén disponi
   
  Para más información sobre la documentación del código en C++, vea [Comentarios](/cpp/cpp/comments-cpp) y [Documentación XML](/cpp/ide/xml-documentation-visual-cpp).  
   
-## Vea también
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Vea también  
  [Usar IntelliSense](../ide/using-intellisense.md)

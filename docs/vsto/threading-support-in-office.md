@@ -1,83 +1,86 @@
 ---
-title: "Compatibilidad del subprocesamiento en Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "varios subprocesos [desarrollo de Office en Visual Studio]"
-  - "modelos de objeto [desarrollo de Office en Visual Studio], compatibilidad del subprocesamiento"
-  - "aplicaciones de Office [desarrollo de Office en Visual Studio], compatibilidad del subprocesamiento"
-  - "subprocesos [desarrollo de Office en Visual Studio]"
+title: Threading Support in Office | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- multiple threads [Office development in Visual Studio]
+- threading [Office development in Visual Studio]
+- Office applications [Office development in Visual Studio], threading support
+- object models [Office development in Visual Studio], threading support
 ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 10df94908366d53a01239bbd2ce9837d2b6780e6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Compatibilidad del subprocesamiento en Office
-  En este tema se proporciona información sobre compatibilidad de subprocesamientos en el modelo de objetos de Microsoft Office.  El modelo de objetos de Office no es seguro para subprocesos, pero, en una solución de Office, es posible trabajar con varios subprocesos.  Las aplicaciones de Office son servidores de modelos de objetos componentes \(COM\).  Mediante COM, los clientes pueden llamar a servidores COM en subprocesos arbitrarios.  Para los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar llamadas simultáneas de modo que sólo se ejecute un subproceso lógico en el servidor en cada instante.  Este mecanismo se conoce como el modelo STA \(contenedor uniproceso\).  Dado que las llamadas se serializan, los llamadores pueden quedar bloqueados durante lapsos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso de fondo.  
+# <a name="threading-support-in-office"></a>Threading Support in Office
+  This topic provides information about how threading is supported in the Microsoft Office object model. The Office object model is not thread safe, but it is possible to work with multiple threads in an Office solution. Office applications are Component Object Model (COM) servers. COM allows clients to call COM servers on arbitrary threads. For COM servers that are not thread safe, COM provides a mechanism to serialize concurrent calls so that only one logical thread executes on the server at any time. This mechanism is known as the single-threaded apartment (STA) model. Because calls are serialized, callers might be blocked for periods of time while the server is busy or is handling other calls on a background thread.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Conocimientos necesarios al utilizar múltiples subprocesos  
- Para trabajar con varios subprocesos es necesario tener al menos un conocimiento básico de los siguientes aspectos de multithreading:  
+## <a name="knowledge-required-when-using-multiple-threads"></a>Knowledge Required When Using Multiple Threads  
+ To work with multiple threads, you must have at least basic knowledge of the following aspects of multithreading:  
   
--   APIs de Windows  
+-   Windows APIs  
   
--   Conceptos multiproceso de COM  
+-   COM multithreaded concepts  
   
--   Simultaneidad  
+-   Concurrency  
   
--   Sincronización  
+-   Synchronization  
   
--   Cálculo de referencias  
+-   Marshaling  
   
- Para obtener información general acerca de multithreading, vea [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779).  
+ For general information about multithreading, see [Managed Threading](/dotnet/standard/threading/).  
   
- Office se ejecuta en el STA principal.  Entender las implicaciones que esto conlleva permite entender cómo utilizar varios subprocesos con Office.  
+ Office runs in the main STA. Understanding the implications of this makes it possible to understand how to use multiple threads with Office.  
   
-## Escenario de multithreading básico  
- El código de las soluciones de Office siempre se ejecuta en el subproceso de la interfaz de usuario principal.  Tal vez desee mejorar el rendimiento de la aplicación ejecutando una tarea independiente en un subproceso de fondo.  El objetivo consiste en completar ambas tareas aparentemente al mismo tiempo en lugar de una tarea tras otra, lo que tendría como resultado una ejecución más uniforme \(el motivo principal de usar múltiples subprocesos\).  Por ejemplo, podría tener el código de los eventos en el subproceso de la IU principal de Excel y, en un subproceso de fondo, ejecutar una tarea que recuperara datos de un servidor y actualizara las celdas en la IU de Excel con los datos obtenidos del servidor.  
+## <a name="basic-multithreading-scenario"></a>Basic Multithreading Scenario  
+ Code in Office solutions always runs on the main UI thread. You might want to smooth out application performance by running a separate task on a background thread. The goal is to complete two tasks seemingly at once instead of one task followed by the other, which should result in smoother execution (the main reason to use multiple threads). For example, you might have your event code on the main Excel UI thread, and on a background thread you might run a task that gathers data from a server and updates cells in the Excel UI with the data from the server.  
   
-## Subprocesos en segundo plano que realizan llamadas al modelo de objetos de Office  
- Cuando un subproceso de fondo realiza una llamada a la aplicación de Office, las referencias de la llamada se calculan automáticamente entre los límites del STA.  Sin embargo, no hay ninguna garantía de que la aplicación de Office pueda controlar la llamada en el momento en que el subproceso de fondo la realiza.  Hay varias posibilidades:  
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Background Threads That Call into the Office Object Model  
+ When a background thread makes a call to the Office application, the call is automatically marshaled across the STA boundary. However, there is no guarantee that the Office application can handle the call at the time the background thread makes it. There are several possibilities:  
   
-1.  La aplicación de Office debe suministrar mensajes para que la llamada tenga la oportunidad de entrar.  Si está muy ocupado en procesamientos sin resultados, esto podría llevar tiempo.  
+1.  The Office application must pump messages for the call to have the opportunity to enter. If it is doing heavy processing without yielding this could take time.  
   
-2.  Si otro subproceso lógico ya está en el apartamento, el nuevo subproceso no puede entrar.  Esto pasa a menudo cuando un subproceso lógico entra en la aplicación de Office y, a continuación, realiza una llamada que vuelve a entrar al apartamento del llamador.  La aplicación se bloquea a la espera de que se devuelva la llamada.  
+2.  If another logical thread is already in the apartment, the new thread cannot enter. This often happens when a logical thread enters the Office application and then makes a reentrant call back to the caller's apartment. The application is blocked waiting for that call to return.  
   
-3.  Excel podría estar en un estado tal que no pudiera controlar inmediatamente una llamada entrante.  Por ejemplo, la aplicación de Office podría estar mostrando un cuadro de diálogo modal.  
+3.  Excel might be in a state such that it cannot immediately handle an incoming call. For example, the Office application might be displaying a modal dialog.  
   
- Para las posibilidades 2 y 3, COM proporciona la interfaz [IMessageFilter](http://msdn.microsoft.com/es-es/e12d48c0-5033-47a8-bdcd-e94c49857248).  Si el servidor la implementa, todas las llamadas entran a través del método [HandleIncomingCall](http://msdn.microsoft.com/es-es/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be).  Para la posibilidad 2, las llamadas se rechazan automáticamente.  Para la posibilidad 3, el servidor puede rechazar la llamada, dependiendo de las circunstancias.  Si se rechaza la llamada, el llamador debe decidir qué hacer.  Normalmente, el llamador implementa [IMessageFilter](http://msdn.microsoft.com/es-es/e12d48c0-5033-47a8-bdcd-e94c49857248), en cuyo caso sería notificado del rechazo por el método [RetryRejectedCall](http://msdn.microsoft.com/es-es/3f800819-2a21-4e46-ad15-f9594fac1a3d).  
+ For possibilities 2 and 3, COM provides the [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) interface. If the server implements it, all calls enter through the [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) method. For possibility 2, calls are automatically rejected. For possibility 3, the server can reject the call, depending on the circumstances. If the call is rejected, the caller must decide what to do. Normally, the caller implements [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), in which case it would be notified of the rejection by the [RetryRejectedCall](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) method.  
   
- Sin embargo, en el caso de las soluciones creadas mediante las herramientas de desarrollo de Office en Visual Studio, la interoperabilidad COM convierte todas las llamadas rechazadas en <xref:System.Runtime.InteropServices.COMException> \("El filtro de mensaje indicó que la aplicación está ocupada"\).  Siempre que se realice una llamada del modelo de objetos en un subproceso de fondo, se debe estar preparado para controlar esta excepción.  Normalmente, esto implica tener que reintentarlo una cierta cantidad de veces y mostrar después un cuadro de diálogo.  Sin embargo, también puede crear el subproceso de fondo como STA y, a continuación, registrar un filtro de mensajes para ese subproceso para controlar este caso.  
+ However, in the case of solutions created by using the Office development tools in Visual Studio, COM interop converts all rejected calls to a <xref:System.Runtime.InteropServices.COMException> ("The message filter indicated that the application is busy"). Whenever you make an object model call on a background thread, you must to be prepared to handle this exception. Typically, that involves retrying for a certain amount of time and then displaying a dialog. However, you can also create the background thread as STA and then register a message filter for that thread to handle this case.  
   
-## Iniciar correctamente el subproceso  
- Cuando cree un nuevo subproceso STA, establezca el estado de tipo apartamento en STA antes de iniciar el subproceso.  En el ejemplo de código siguiente se muestra cómo hacerlo.  
+## <a name="starting-the-thread-correctly"></a>Starting the Thread Correctly  
+ When you create a new STA thread, set the apartment state to STA before you start the thread. The following code example demonstrates how to do this.  
   
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
+ [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)] [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Para obtener más información, vea [Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557).  
+ For more information, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
-## Formularios no modales  
- Un formulario no modal permite cierto tipo de interacción con la aplicación mientras se muestra el formulario.  El usuario interactúa con el formulario y el formulario interactúa con la aplicación sin cerrarse.  El modelo de objetos de Office admite el uso de formularios no modales administrados; sin embargo, no se deben usar en un subproceso de fondo.  
+## <a name="modeless-forms"></a>Modeless Forms  
+ A modeless form allows some type of interaction with the application while the form is displayed. The user interacts with the form, and the form interacts with the application without closing. The Office object model supports managed modeless forms; however, they should not be used on a background thread.  
   
-## Vea también  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
- [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
- [Subprocesamiento &#40;C&#35; y Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
- [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
- [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Managed Threading](/dotnet/standard/threading/)  
+ [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
+ [Using Threads and Threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
   
   

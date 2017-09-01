@@ -1,64 +1,81 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetAttributedClassesForLanguage"
-  - "IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage"
+title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetAttributedClassesForLanguage
+- IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0868998a43c48bc985c4801deddcf089c73f01bf
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-recupera las clases con el atributo especificado que se implementan en el lenguaje de programación especificado.  
+---
+# <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
+Retrieves the classes with the specified attribute that are implemented in the specified programming language.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [C++]  
 HRESULT GetAttributedClassesForLanguage (  
-   GUID               guidLanguage,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
+   GUID               guidLanguage,  
+   LPOLESTR           pstrAttribute,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAttributedClassesForLanguage (  
-   Guid                 guidLanguage,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
+   Guid                 guidLanguage,  
+   string               pstrAttribute,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `guidLanguage`  
- \[in\]  Identificador único del lenguaje.  
+ [in] Unique identifier for the language.  
   
  `pstrAttribute`  
- \[in\]  La cadena del atributo.  
+ [in] The attribute string.  
   
  `ppEnum`  
- \[out\]  Devuelve una enumeración de las clases de atributos.  
+ [out] Returns an enumeration of the attribute classes.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(  
     GUID guidLanguage,  
     __in_z LPOLESTR pstrAttribute,  
@@ -186,5 +203,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

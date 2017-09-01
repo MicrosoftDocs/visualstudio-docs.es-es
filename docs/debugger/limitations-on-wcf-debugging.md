@@ -1,51 +1,68 @@
 ---
-title: "Limitaciones de la depuraci&#243;n de WCF | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurar, WCF"
-  - "WCF, limitaciones de la depuración"
+title: Limitations on WCF Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging, WCF
+- WCF, debugging limitations
 ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 30
----
-# Limitaciones de la depuraci&#243;n de WCF
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 02e261c06d065eec1c93159f39103d9281cef3b9
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:  
+---
+# <a name="limitations-on-wcf-debugging"></a>Limitations on WCF Debugging
+There are three ways that you can begin debugging a WCF service:  
   
--   Se depura un proceso cliente que llama a un servicio.  El depurador va al servicio.  El servicio no tiene que estar en la misma solución que la aplicación cliente.  
+-   You are debugging a client process that calls a service. The debugger steps into the service. The service does not have to be in the same solution as your client application.  
   
--   Se depura un proceso cliente que realiza una solicitud a un servicio.  El servicio debe formar parte de la solución.  
+-   You are debugging a client process that makes a request to a service. The service must be part of your solution.  
   
--   Se utiliza **Asociar al proceso** para asociarse a un servicio que se está ejecutando actualmente.  La depuración comienza dentro del servicio.  
+-   You use **Attach to Process** to attach to a service that is currently running. Debugging begins inside the service.  
   
- En este tema se describen las limitaciones de estos escenarios.  
+ This topic describes limitations on these scenarios.  
   
-## Limitaciones de ir a un servicio  
- Para ir a un servicio desde una aplicación cliente que está depurando, se deben cumplir las siguientes condiciones:  
+## <a name="limitations-on-stepping-into-a-service"></a>Limitations on Stepping Into a Service  
+ To step into a service from a client applications that you are debugging, the following conditions must be met:  
   
--   El cliente debe llamar al servicio utilizando un objeto de cliente sincrónico.  
+-   The client must call the service by using a synchronous client object.  
   
--   La operación del contrato no puede ser unidireccional.  
+-   The contract operation cannot be one-way.  
   
--   Si el servidor es asincrónico, no se puede ver la pila de llamadas completa mientras se esté ejecutando el código dentro del servicio.  
+-   If the server is asynchronous, you cannot view the full call stack while you are executing code inside the service.  
   
--   La depuración debe estar habilitada con el siguiente código en el archivo app.config o Web.config:  
+-   Debugging must be enabled with the following code in the app.config or Web.config file:  
   
     ```  
     <system.web>  
@@ -53,21 +70,21 @@ Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
     </system.web>  
     ```  
   
-     Este código solo se tiene que agregar una vez.  Puede agregar este código modificando el archivo .config o asociándose al servicio mediante **Asociar al proceso**.  Si se utiliza **Asociar al proceso** en un servicio, el código de depuración se agrega automáticamente al archivo .config.  Después de esto, puede depurar e ir al servicio sin tener que modificar el archivo .config.  
+     This code only has to be added one time. You can add this code by editing the .config file or by attaching to the service by using **Attach to Process**. When you use **Attach to Process** on a service, the debug code is automatically added to the .config file. After that, you can debug and step into the service without having to edit the .config file.  
   
-## Limitaciones de salir de un servicio  
- Salir de un servicio y regresar al cliente tiene las mismas limitaciones que se describieron para ir a un servicio.  Además, el depurador debe estar asociado al cliente.  Si está depurando un cliente y va a un servicio, el depurador seguirá asociado al servicio.  Esto es cierto si inició el cliente utilizando **Iniciar depuración** o se asoció al cliente utilizando **Asociar al proceso**.  Si empieza a depurar asociándose al servicio, el depurador no estará asociado aún al cliente.  En tal caso, si tiene que salir del servicio y regresar al cliente, primero deberá utilizar **Asociar al proceso** para asociarse manualmente al cliente.  
+## <a name="limitations-on-stepping-out-of-a-service"></a>Limitations on Stepping Out of a Service  
+ Stepping out of a service and back to the client has the same limitations described for stepping into a service. In addition, the debugger must be attached to the client. If you are debugging a client and step into a service, the debugger remains attached to the service. This is true whether you started the client by using **Start Debugging** or attached to the client by using **Attach to Process**. If you began debugging by attaching to the service, the debugger is not yet attached to the client. In that case, if you have to step out of the service and back to the client, you must first use **Attach to Process** to attach to the client manually.  
   
-## Limitaciones de la asociación automática a un servicio  
- Asociarse automáticamente a un servicio tiene las siguientes limitaciones:  
+## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitations on Automatic Attach to a Service  
+ Automatically attaching to a service has the following limitations:  
   
--   El servicio debe formar parte de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que está depurando.  
+-   The service must be part of the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution you are debugging.  
   
--   El servicio debe estar hospedado.  Puede formar parte de un proyecto de sitio web \(sistema de archivos y HTTP\), proyecto de aplicación web \(sistema de archivos y HTTP\) o proyecto de biblioteca de servicio WCF.  Los proyectos de biblioteca de servicio WCF pueden ser bibliotecas de servicio o bibliotecas de servicio de flujo de trabajo.  
+-   The service must be hosted. It may be part of a Web Site Project (File System and HTTP), Web Application Project (File System and HTTP), or WCF Service Library project. WCF Service Library projects can be either Service Libraries or Workflow Service Libraries.  
   
--   Este servicio se debe invocar desde un cliente WCF.  
+-   The service must be invoked from a WCF client.  
   
--   La depuración debe estar habilitada con el siguiente código en el archivo app.config o Web.config:  
+-   Debugging must be enabled with the following code in the app.config or Web.config file:  
   
     ```  
     <system.web>  
@@ -75,12 +92,12 @@ Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
     <system.web>  
     ```  
   
-## Autohospedaje  
- Un *servicio que se hospeda a sí mismo* es un servicio WCF que no se ejecuta dentro de IIS, el host de servicio WCF o el servidor de desarrollo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  Para obtener información sobre cómo depurar un servicio autohospedado, vea [Cómo: Depurar un servicio WCF independiente](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+## <a name="self-hosting"></a>Self-Hosting  
+ A *self-hosted service* is a WCF service that does not run inside IIS, the WCF Service Host, or the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. For information about how to debug a self-hosted service, see [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
-## Autohospedaje  
- Para permitir la depuración de aplicaciones de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se debe instalar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5 antes de instalar [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  Si [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] se instala antes de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5, se produce un error al intentar depurar una aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 o 3.5.  El mensaje de error es, "No se puede ir automáticamente al servidor". Utilice el **Panel de control** de Windows, **Programas y características**, para corregir este problema y reparar la instalación de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)].  
+## <a name="self-hosting"></a>Self-Hosting  
+ To enable debugging of [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 applications, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 must be installed before [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed. If [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed before [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5, an error occurs when you try to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 application. The error message is, "Unable to Automatically Step Into the Server." To fix this problem, use the Windows **Control Panel** > **Programs and Features** to repair your [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installation.  
   
-## Vea también  
- [Depurar servicios WCF](../debugger/debugging-wcf-services.md)   
- [Cómo: Depurar un servicio WCF independiente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+## <a name="see-also"></a>See Also  
+ [Debugging WCF Services](../debugger/debugging-wcf-services.md)   
+ [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

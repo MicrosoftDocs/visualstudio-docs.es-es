@@ -1,145 +1,163 @@
 ---
-title: "Elementos comunes de proyectos de MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, elementos comunes de proyectos"
+title: Common MSBuild Project Items | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Elementos comunes de proyectos de MSBuild
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 95cc68dfeb1005913198f9eb4564b2237818a5da
+ms.contentlocale: es-es
+ms.lasthandoff: 08/23/2017
 
-En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos.  Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión.  Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común.  Estos elementos se definen en el archivo microsoft.build.commontypes.xsd.  
+---
+# <a name="common-msbuild-project-items"></a>Common MSBuild Project Items
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], an item is a named reference to one or more files. Items contain metadata such as file names, paths, and version numbers. All project types in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] have several items in common. These items are defined in the file microsoft.build.commontypes.xsd.  
   
-## Elementos comunes  
- A continuación, se muestra una lista de todos los elementos de proyecto comunes.  
+## <a name="common-items"></a>Common Items  
+ The following is a list of all the common project items.  
   
-### Referencia  
- Representa una referencia de ensamblado \(administrada\) del proyecto.  
+### <a name="reference"></a>Reference  
+ Represents an assembly (managed) reference in the project.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|HintPath|Cadena opcional.  Ruta de acceso absoluta o relativa del ensamblado.|  
-|Name|Cadena opcional.  Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
-|FusionName|Cadena opcional.  Especifica el nombre de fusión sencillo o seguro del elemento.<br /><br /> Cuando este atributo está presente se ahorra tiempo, ya que no es necesario abrir el archivo de ensamblado para obtener el nombre de fusión.|  
-|SpecificVersion|Booleano opcional.  Especifica si solo se debe hacer referencia a la versión del nombre de fusión.|  
-|Alias|Cadena opcional.  Cualquier alias de la referencia.|  
-|Privado|Booleano opcional.  Especifica si la referencia debe copiarse en la carpeta de salida.  Este atributo coincide con la propiedad **Copia local** de la referencia que está en el IDE de Visual Studio.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|HintPath|Optional string. Relative or absolute path of the assembly.|  
+|Name|Optional string. The display name of the assembly, for example, "System.Windows.Forms."|  
+|FusionName|Optional string. Specifies the simple or strong fusion name for the item.<br /><br /> When this attribute is present, it can save time because the assembly file does not have to be opened to obtain the fusion name.|  
+|SpecificVersion|Optional boolean. Specifies whether only the version in the fusion name should be referenced.|  
+|Aliases|Optional string. Any aliases for the reference.|  
+|Private|Optional boolean. Specifies whether the reference should be copied to the output folder. This attribute matches the **Copy Local** property of the reference that's in the Visual Studio IDE.|  
   
-### COMReference  
- Representa una referencia a un componente COM \(no administrado\) del proyecto.  
+### <a name="comreference"></a>COMReference  
+ Represents a COM (unmanaged) component reference in the project.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|Name|Cadena opcional.  El nombre para mostrar del componente.|  
-|Guid|Cadena opcional.  GUID del componente, con el formato {12345678\-1234\-1234\-1234\-1234567891234}.|  
-|VersionMajor|Cadena opcional.  Parte principal del número de versión del componente.  Por ejemplo, "5" si el número de versión completo es "5.46".|  
-|VersionMinor|Cadena opcional.  Parte secundaria del número de versión del componente.  Por ejemplo, "46" si el número de versión completo es "5.46".|  
-|LCID|Cadena opcional.  LocaleID del componente.|  
-|WrapperTool|Cadena opcional.  Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|  
-|Isolated|Booleano opcional.  Especifica si se trata de un componente sin registro.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Optional string. The display name of the component.|  
+|Guid|Optional string. A GUID for the component, in the form {12345678-1234-1234-1234-1234567891234}.|  
+|VersionMajor|Optional string. The major part of the version number of the component. For example, "5" if the full version number is "5.46."|  
+|VersionMinor|Optional string. The minor part of the version number of the component. For example, "46" if the full version number is "5.46."|  
+|LCID|Optional string. The LocaleID for the component.|  
+|WrapperTool|Optional string. The name of the wrapper tool that is used on the component, for example, "tlbimp."|  
+|Isolated|Optional boolean. Specifies whether the component is a reg-free component.|  
   
-### COMFileReference  
- Representa una lista de las bibliotecas de tipos que se pasan al destino ResolvedComreference.  
+### <a name="comfilereference"></a>COMFileReference  
+ Represents a list of type libraries that feed into the ResolvedComreference target.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|WrapperTool|Cadena opcional.  Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|WrapperTool|Optional string. The name of the wrapper tool that is used on the component, for example, "tlbimp."|  
   
-### NativeReference  
- Representa un archivo de manifiesto nativo o una referencia a este archivo.  
+### <a name="nativereference"></a>NativeReference  
+ Represents a native manifest file or a reference to such a file.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|Name|Cadena necesaria.  Nombre base del archivo de manifiesto.|  
-|HintPath|Cadena necesaria.  Ruta de acceso relativa del archivo de manifiesto.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Required string. The base name of the manifest file.|  
+|HintPath|Required string. The relative path of the manifest file.|  
   
-### ProjectReference  
- Representa una referencia a otro proyecto.  
+### <a name="projectreference"></a>ProjectReference  
+ Represents a reference to another project.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|Name|Cadena opcional.  Nombre para mostrar de la referencia.|  
-|Project|Cadena opcional.  GUID de la referencia, con el formato {12345678\-1234\-1234\-1234\-1234567891234}.|  
-|Package|Cadena opcional.  Ruta de acceso del archivo de proyecto al que se hace referencia.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|Name|Optional string. The display name of the reference.|  
+|Project|Optional string. A GUID for the reference, in the form {12345678-1234-1234-1234-1234567891234}.|  
+|Package|Optional string. The path of the project file that is being referenced.|  
   
-### Compile  
- Representa los archivos de código fuente para el compilador.  
+### <a name="compile"></a>Compile  
+ Represents the source files for the compiler.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|DependentUpon|Cadena opcional.  Especifica el archivo del que depende este archivo para compilarse correctamente.|  
-|AutoGen|Booleano opcional.  Indica si el entorno de desarrollo integrado \(IDE\) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generó el archivo para el proyecto.|  
-|Link|Cadena opcional.  Ruta de acceso notacional que se va a mostrar cuando el archivo se encuentre físicamente fuera de la influencia del archivo de proyecto.|  
-|Visible|Booleano opcional.  Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|Cadena opcional.  Determina si el archivo se va a copiar en el directorio de resultados.  Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|AutoGen|Optional boolean. Indicates whether the file was generated for the project by the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE).|  
+|Link|Optional string. The notational path to be displayed when the file is physically located outside the influence of the project file.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### EmbeddedResource  
- Representa los recursos que se van a incrustar en el ensamblado generado.  
+### <a name="embeddedresource"></a>EmbeddedResource  
+ Represents resources to be embedded in the generated assembly.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|DependentUpon|Cadena opcional.  Especifica el archivo del que depende este archivo para compilarse correctamente.|  
-|Generator|Cadena necesaria.  Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
-|LastGenOutput|Cadena necesaria.  Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
-|CustomToolNamespace|Cadena necesaria.  Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Link|Cadena opcional.  La ruta de acceso notacional se muestra si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
-|Visible|Booleano opcional.  Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|Cadena opcional.  Determina si el archivo se va a copiar en el directorio de resultados.  Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
-|LogicalName|Cadena necesaria.  Nombre lógico del recurso incrustado.|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly|  
+|Generator|Required string. The name of any file generator that is run on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that ran on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path is displayed if the file is physically located outside the influence of the project.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
+|LogicalName|Required string. The logical name of the embedded resource.|  
   
-### Content  
- Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.  
+### <a name="content"></a>Content  
+ Represents files that are not compiled into the project, but may be embedded or published together with it.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|DependentUpon|Cadena opcional.  Especifica el archivo del que depende este archivo para compilarse correctamente.|  
-|Generator|Cadena necesaria.  Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
-|LastGenOutput|Cadena necesaria.  Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
-|CustomToolNamespace|Cadena necesaria.  Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Link|Booleano opcional.  Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|PublishState|Cadena necesaria.  El estado de publicación del contenido:<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Requisito previo|  
-|IsAssembly|Booleano opcional.  Especifica si el archivo es un ensamblado.|  
-|Visible|Booleano opcional.  Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|Cadena opcional.  Determina si el archivo se va a copiar en el directorio de resultados.  Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|Generator|Required string. The name of any file generator that runs on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that was run on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path to be displayed if the file is physically located outside the influence of the project.|  
+|PublishState|Required string. The publish state of the content, either:<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite|  
+|IsAssembly|Optional boolean. Specifies whether the file is an assembly.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### Ninguna  
- Representa archivos que no deberían tener ningún rol en el proceso de compilación.  
+### <a name="none"></a>None  
+ Represents files that should have no role in the build process.  
   
-|Nombre del elemento|Descripción|  
-|-------------------------|-----------------|  
-|DependentUpon|Cadena opcional.  Especifica el archivo del que depende este archivo para compilarse correctamente.|  
-|Generator|Cadena necesaria.  Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
-|LastGenOutput|Cadena necesaria.  Nombre del archivo creado por cualquier generador de archivos que se ejecutó en este elemento.|  
-|CustomToolNamespace|Cadena necesaria.  Espacio de nombres en el que cualquier generador de archivos que se ejecute en este elemento debe crear código.|  
-|Link|Cadena opcional.  Ruta de acceso notacional que se mostrará si el archivo se encuentra físicamente fuera de la influencia del proyecto.|  
-|Visible|Booleano opcional.  Indica si se va a mostrar el archivo en el **Explorador de soluciones** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|CopyToOutputDirectory|Cadena opcional.  Determina si el archivo se va a copiar en el directorio de resultados.  Los valores son:<br /><br /> 1.  Nunca<br />2.  Siempre<br />3.  PreserveNewest|  
+|Item Name|Description|  
+|---------------|-----------------|  
+|DependentUpon|Optional string. Specifies the file this file depends on to compile correctly.|  
+|Generator|Required string. The name of any file generator that is run on this item.|  
+|LastGenOutput|Required string. The name of the file that was created by any file generator that ran on this item.|  
+|CustomToolNamespace|Required string. The namespace in which any file generator that runs on this item should create code.|  
+|Link|Optional string. The notational path to be displayed if the file is physically located outside the influence of the project.|  
+|Visible|Optional boolean. Indicates whether to display the file in **Solution Explorer** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|CopyToOutputDirectory|Optional string. Determines whether to copy the file to the output directory. Values are:<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest|  
   
-### BaseApplicationManifest  
- Representa el manifiesto de aplicación base de la compilación y contiene información de seguridad de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
+ Represents the base application manifest for the build, and contains [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment security information.  
   
-### CodeAnalysisImport  
- Representa el proyecto FxCop que se importará.  
+### <a name="codeanalysisimport"></a>CodeAnalysisImport  
+ Represents the FxCop project to import.  
   
-### Importar  
- Representa los ensamblados cuyos espacios de nombres debe importar el compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+### <a name="import"></a>Import  
+ Represents assemblies whose namespaces should be imported by the [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiler.  
   
-## Vea también  
- [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>See Also  
+ [Common MSBuild Project Properties](../msbuild/common-msbuild-project-properties.md)
+

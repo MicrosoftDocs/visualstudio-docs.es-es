@@ -1,38 +1,56 @@
 ---
-title: "CA1304: Especificar CultureInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SpecifyCultureInfo"
-  - "CA1304"
-helpviewer_keywords: 
-  - "SpecifyCultureInfo"
-  - "CA1304"
+title: 'CA1304: Specify CultureInfo | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SpecifyCultureInfo
+- CA1304
+helpviewer_keywords:
+- SpecifyCultureInfo
+- CA1304
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
----
-# CA1304: Especificar CultureInfo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: aacdab5f70f27a110414270d8584ce3ca97f47aa
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Specify CultureInfo
 |||  
 |-|-|  
 |TypeName|SpecifyCultureInfo|  
-|Identificador de comprobación|CA1304|  
-|Categoría|Microsoft.Globalization|  
-|Cambio problemático|Poco problemático|  
+|CheckId|CA1304|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## Motivo  
- Un método o constructor llama a un miembro que tiene una sobrecarga que acepta un parámetro <xref:System.Globalization.CultureInfo?displayProperty=fullName> y el método o constructor no llama a la sobrecarga que toma el parámetro <xref:System.Globalization.CultureInfo>.  Esta regla omite las llamadas a los métodos siguientes:  
+## <a name="cause"></a>Cause  
+ A method or constructor calls a member that has an overload that accepts a <xref:System.Globalization.CultureInfo?displayProperty=fullName> parameter, and the method or constructor does not call the overload that takes the <xref:System.Globalization.CultureInfo> parameter. This rule ignores calls to the following methods:  
   
 -   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>  
   
@@ -40,41 +58,41 @@ caps.handback.revision: 20
   
 -   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>  
   
-## Descripción de la regla  
- Si no se proporciona un objeto <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=fullName>, el valor predeterminado proporcionado por el miembro sobrecargado podría no surtir el efecto deseado en todas las variables locales.  Además, los miembros de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] eligen la referencia cultural predeterminada y dan formato basándose en suposiciones que podrían ser incorrectas para su código.  Para garantizar que el código funciona como se espera para sus escenarios, debería proporcionar la información específica de la referencia cultural según las instrucciones siguientes:  
+## <a name="rule-description"></a>Rule Description  
+ When a <xref:System.Globalization.CultureInfo> or <xref:System.IFormatProvider?displayProperty=fullName> object is not supplied, the default value that is supplied by the overloaded member might not have the effect that you want in all locales. Also, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] members choose default culture and formatting based on assumptions that might not be correct for your code. To ensure the code works as expected for your scenarios, you should supply culture-specific information according to the following guidelines:  
   
--   Si el valor se muestra al usuario, utilice la referencia cultural actual.  Vea <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
+-   If the value will be displayed to the user, use the current culture. See <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
   
--   Si el valor se almacena y se obtiene acceso a él mediante software, eso es, almacenado en un archivo o base de datos, utilice la referencia cultural para todos los idiomas.  Vea <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
+-   If the value will be stored and accessed by software, that is, persisted to a file or database, use the invariant culture. See <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
   
--   Si no conoce el destino del valor, haga que el consumidor o proveedor de datos especifique la referencia cultural.  
+-   If you do not know the destination of the value, have the data consumer or provider specify the culture.  
   
- Observe que <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> solo se utiliza para recuperar recursos adaptados mediante una instancia de la clase <xref:System.Resources.ResourceManager?displayProperty=fullName>.  
+ Note that <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> is used only to retrieve localized resources by using an instance of the <xref:System.Resources.ResourceManager?displayProperty=fullName> class.  
   
- Incluso si el comportamiento predeterminado del miembro sobrecargado es adecuado para sus necesidades, es mejor llamar explícitamente a la sobrecarga específica de la referencia cultural para que el código se autodocumente y se mantenga de forma más sencilla.  
+ Even if the default behavior of the overloaded member is appropriate for your needs, it is better to explicitly call the culture-specific overload so that your code is self-documenting and more easily maintained.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, utilice la sobrecarga que toma un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider> y especifique el argumento siguiendo las instrucciones mostradas anteriormente.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, use the overload that takes a <xref:System.Globalization.CultureInfo> or <xref:System.IFormatProvider> and specify the argument according to the guidelines that were listed earlier.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla cuando el proveedor de formato\/referencia cultural predeterminado sea la elección correcta, y donde el mantenimiento del código no sea una prioridad de desarrollo importante.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when it is certain that the default culture/format provider is the correct choice, and where code maintainability is not an important development priority.  
   
-## Ejemplo  
- En el ejemplo siguiente, `BadMethod` causa dos infracciones de esta regla.  `GoodMethod` corrige la primera infracción pasando la referencia cultural de todos los idiomas a System.String.Compare, y corrige la segunda infracción pasando la referencia cultural actual a <xref:System.String.ToLower%2A> puesto que `string3` se muestra al usuario.  
+## <a name="example"></a>Example  
+ In the following example, `BadMethod` causes two violations of this rule. `GoodMethod` corrects the first violation by passing the invariant culture to System.String.Compare, and corrects the second violation by passing the current culture to <xref:System.String.ToLower%2A> because `string3` is displayed to the user.  
   
- [!code-cs[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]  
+ [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]  
   
-## Ejemplo  
- El ejemplo siguiente muestra el efecto de la referencia cultural actual en el <xref:System.IFormatProvider> predeterminado seleccionado por el tipo <xref:System.DateTime>.  
+## <a name="example"></a>Example  
+ The following example shows the effect of current culture on the default <xref:System.IFormatProvider> that is selected by the <xref:System.DateTime> type.  
   
- [!code-cs[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]  
+ [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]  
   
- Este ejemplo produce el siguiente resultado:  
+ This example produces the following output.  
   
-  **6\/4\/1900 12:15:12 PM**  
-**06\/04\/1900 12:15:12**   
-## Reglas relacionadas  
- [CA1305: Especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)  
+ **6/4/1900 12:15:12 PM**  
+**06/04/1900 12:15:12**   
+## <a name="related-rules"></a>Related Rules  
+ [CA1305: Specify IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)  
   
-## Vea también  
- [NIB: Using the CultureInfo Class](http://msdn.microsoft.com/es-es/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+## <a name="see-also"></a>See Also  
+ [NIB: Using the CultureInfo Class](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

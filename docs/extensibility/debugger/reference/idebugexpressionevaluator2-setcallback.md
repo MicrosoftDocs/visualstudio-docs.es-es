@@ -1,55 +1,72 @@
 ---
-title: "IDebugExpressionEvaluator2::SetCallback | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator2::SetCallback"
-  - "SetCallback"
+title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugExpressionEvaluator2::SetCallback
+- SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugExpressionEvaluator2::SetCallback
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e5b9964dee0580fe0fbab6d817c4dc2abf56dad4
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Permite al evaluador \(EE\) de expresiones para especificar la interfaz de devolución de llamada que el motor del \(DE\) depurador usará para leer valores métrica.  
+---
+# <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
+Enables the expression evaluator (EE) to specify the callback interface that the debugger engine (DE) will use to read metric settings.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetCallback (  
-   IDebugSettingsCallback2* pCallback  
+   IDebugSettingsCallback2* pCallback  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetCallback (  
-   IDebugSettingsCallback2 pCallback  
+   IDebugSettingsCallback2 pCallback  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pCallback`  
- \[in\]  Interfaz a utilizar para la devolución de valores.  
+ [in] Interface to use for the settings callback.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método proporciona una interfaz al administrador de depuración de la sesión que un evaluador de expresiones puede utilizar para leer valores métrica.  Es útil en la depuración remota leer métricas en el equipo de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+## <a name="remarks"></a>Remarks  
+ This method provides an interface to the session debug manager that an expression evaluator can use to read metric settings. It is useful in remote debugging to read metrics on the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] computer.  
   
-## Ejemplo  
- Los ejemplos siguientes se muestra cómo implementar este método para un objeto **de la repetición** que expone la interfaz de [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) .  
+## <a name="example"></a>Example  
+ The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
 {  
     // precondition  
@@ -74,5 +91,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

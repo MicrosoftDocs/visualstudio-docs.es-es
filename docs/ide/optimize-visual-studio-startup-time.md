@@ -1,7 +1,7 @@
 ---
-title: Optimizar el tiempo de inicio de Visual Studio | Microsoft Docs
+title: Optimize Visual Studio Startup Time | Microsoft Docs
 ms.custom: 
-ms.date: 7/20/2017
+ms.date: 8/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -18,84 +18,155 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
-ms.openlocfilehash: af1ff0dbeeb30e6b3169c6a94dab8da50085bf20
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: feb8aed2c4ce883b4af940159d982184eae54fa3
 ms.contentlocale: es-es
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 
-# <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
-Lo ideal es que Visual Studio se inicie siempre lo antes posible. En cambio, las ventanas de herramientas abiertas y las extensiones de Visual Studio pueden afectar negativamente al tiempo de inicio porque se cargan automáticamente al arrancar. En la ventana **Administrar el rendimiento de Visual Studio** puede ver qué extensiones y características afectan al tiempo de inicio de Visual Studio y controlar el comportamiento de carga de dichas extensiones y características.
+# <a name="optimize-visual-studio-startup-time"></a>Optimize Visual Studio Startup Time
+Ideally, Visual Studio should always start up as quickly as possible. However, Visual Studio extensions and open tool windows can adversely affect startup time because they load automatically at startup. The **Manage Visual Studio Performance** window enables you see which extensions and features affect Visual Studio startup time and to control loading behavior of those extensions and features.
 
-## <a name="control-startup-behavior"></a>Controlar el comportamiento de inicio
+For more general tips on improving performance, see [Visual Studio Performance Tips and Tricks](../ide/visual-studio-performance-tips-and-tricks.md).
 
-Para evitar extender demasiado el tiempo de inicio, Visual Studio 2017 impide la carga de extensiones durante el inicio mediante un enfoque de carga a petición. Con este comportamiento, las extensiones no se abren inmediatamente después de que Visual Studio se inicia, sino solo cuando resulta necesario después del inicio. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
+## <a name="control-startup-behavior"></a>Control startup behavior
 
-Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje también proporciona un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**, que también se puede abrir con el comando de menú **Ayuda > Administrar el rendimiento de Visual Studio**.
+To avoid extending startup time, Visual Studio 2017 avoids loading extensions during startup, using an on-demand-load approach. This behavior means that extensions don't open immediately after Visual Studio starts, but on an as-needed basis after startup. Also, because tool windows left open in a prior Visual Studio session can slow startup time, Visual Studio opens tool windows in a more intelligent way to avoid impacting startup time.
 
-![Administrar el rendimiento Visual Studio: mensaje emergente en el que se lee "Se ha detectado que la extensión... está ralentizando Visual Studio"](~/ide/media/vside_perfdialog_popup.PNG)
+If Visual Studio detects slow startup, a pop-up message appears, alerting you to the extension or tool window that's causing the slowdown. The message also provides a link to the **Manage Visual Studio Performance** dialog box. You can also open this window using the **Help > Manage Visual Studio Performance** menu command.
 
-En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones que afectan negativamente al rendimiento de inicio. Este cuadro de diálogo le permite cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
+![Manage Visual Studio Performance - popup reading 'We've noticed that extension ... is slowing Visual Studio'](../ide/media/vside_perfdialog_popup.png)
 
-### <a name="change-extension-settings"></a>Cambio de la configuración de las extensiones
+The dialog box lists the extensions and tools windows that are affecting startup performance. This dialog box enables you to change extension and tool window settings to improve startup performance.
 
-Si una extensión está ralentizando el inicio de Visual Studio, esta aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** cuando selecciona uno de los tipos de extensión. En el cuadro de diálogo se muestra qué extensión afecta al rendimiento de inicio, cuándo se carga una solución y cuándo se escribe en el editor.
+### <a name="change-extension-settings"></a>Change extension settings
 
-![Administrar el rendimiento Visual Studio: vista de extensiones](~/ide/media/vside_perfdialog_extensions.PNG)
+If an extension is slowing down Visual Studio startup, the extension appears in the **Manage Visual Studio Performance** dialog box when you choose one of the extension types. The dialog box shows which extensions affect performance at startup, when loading a solution, and when typing in the editor.
 
-Si el impacto en el tiempo de inicio, de carga de soluciones o de escritura en el editor resulta excesivamente alto, deshabilite la extensión para dicho escenario; para ello, seleccione **Deshabilitar**. Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo Administrador de extensiones o Administrar el rendimiento de Visual Studio.
+![Manage Visual Studio Performance - extensions view](../ide/media/vside_perfdialog_extensions.png)
 
-### <a name="change-tool-window-settings"></a>Cambio de la configuración de la ventana de herramientas
+If the impact on startup, solution load, or typing time is unacceptably high, disable the extension for that scenario by selecting the **Disable** button. You can always re-enable the extension for future sessions by using the Extension Manager or the Manage Visual Studio Performance dialog box.
 
-Si una ventana de herramientas está ralentizando el inicio de Visual Studio y desea modificar el impacto, puede invalidar su comportamiento; para ello, seleccione una de estas dos opciones en lugar de **Usar comportamiento predeterminado**:
+### <a name="change-tool-window-settings"></a>Change tool window settings
 
-- **No mostrar ventana al inicio:** la ventana de herramientas especificada siempre estará cerrada la próxima vez que abra Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Puede abrir la ventana de herramientas desde el menú correspondiente.
-- **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Se trata de una buena opción si usa una ventana de herramientas frecuentemente, porque esta todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
+If a tool window is slowing down Visual Studio startup and you wish to change the impact, you can override its behavior by choosing one of two options instead of **Use default behavior**:
 
-![Administrar el rendimiento Visual Studio: vista de ventanas de herramientas](~/ide/media/vside_perfdialog_toolwindows.PNG)
+- **Do not show window at startup:** the specified tool window is always closed when you next open Visual Studio, even if left open in a previous session. You can open the tool window from the appropriate menu.
+- **Auto hide window at startup:** If a tool window was left open in a previous session, this option collapses the tool window's group at startup to avoid initializing the tool window. This option is a good choice if you use a tool window often, because the tool window is still available, but no longer negatively affects Visual Studio startup time.
 
-Siempre puede volver a este cuadro de diálogo en cualquier momento para cambiar la configuración de una ventana de herramientas concreta.
+![Manage Visual Studio Performance - tool windows view](../ide/media/vside_perfdialog_toolwindows.png)
 
-## <a name="speed-up-solution-load"></a>Acelerar la carga de la solución
+You can always return to this dialog box at any time to change the setting for any given tool window.
 
-Visual Studio 2017 admite la **carga de solución ligera**, una característica que reduce la cantidad de tiempo y memoria necesaria para cargar soluciones grandes en el IDE. Si tiene una solución grande que contiene muchos proyectos de C#, VB y C++, probablemente verá una ventaja de rendimiento sustancial si habilita la carga de solución ligera.
+## <a name="speed_up_solution_load"></a>Load large solutions faster in Visual Studio 2017
 
-Como algunas de las características del IDE no están completamente disponibles cuando la carga de solución ligera está habilitada, la característica está desactivada de manera predeterminada. Las siguientes secciones ayudan a decidir si habilitar esta característica o no.
+Many solutions contain a large number of projects, which affects the time taken to load those solutions. However, in team environments, developers typically work on a different subset of those projects and don’t need to load all of the individual projects.
 
-### <a name="enable-lightweight-solution-load"></a>Habilitar la carga de solución ligera
+Visual Studio 2017 supports **lightweight solution load**. When lightweight solution load (LSL) mode is enabled, Visual Studio 2017 loads a small subset of projects instead of loading all the projects in a large solution. Most of the commonly used IDE features work under LSL mode, and it provides the ability for you to build, search, and debug on the entire solution. (The main unsupported feature in LSL mode is edit and continue).
 
-Puede habilitar la carga de solución ligera para el IDE como un conjunto o para soluciones individuales.
+> [!NOTE]
+> This content applies to Visual Studio 2017 Update 3
 
-Para cambiar la carga de solución ligera en la configuración de todos los proyectos y soluciones, vaya a **Herramientas > Opciones > Proyectos y soluciones > General** y seleccione una de las tres opciones de carga:
+For large solutions with more than 30 projects, LSL typically loads solutions twice as fast (on average). While most of the IDE features work in LSL mode, some IDE features might require all the projects to be loaded. In these cases, Visual Studio automatically loads the entire solution so that you can use the feature. In the worst-case scenario, you end up loading all the projects in the lightweight mode. 
 
-![Cuadro de diálogo Opciones de herramientas](~/ide/media/VSIDE_LightweightSolutionLoad.png)
+If you use an IDE feature on a project that is not currently loaded, Visual Studio loads the appropriate project(s) for you. For example, if you are trying to create or open a class diagram for an unopened project, Visual Studio automatically loads the appropriate projects. The detailed feature list is referenced in the sections following.
 
-- **Permitir que Visual Studio elija lo mejor para mi solución**: Visual Studio determina si se debe aplicar la carga de solución ligera al analizar cada solución cuando se abre. 
-- **Habilitar:** se habilita la carga de solución ligera para esta solución, con independencia de la configuración del IDE.
-- **Deshabilitar:** se deshabilita la carga de solución ligera para esta solución, con independencia de la configuración del IDE.
+The following sections show how to enable lightweight solution load and also help you decide whether or not to enable the feature.
 
-Para habilitar la carga de solución ligera en una solución individual, seleccione el nodo de solución de nivel superior en el Explorador de soluciones. En la ventana **Propiedades**, seleccione **Predeterminada**, **Habilitada** o **Deshabilitada** para la propiedad **Carga ligera**.
+### <a name="enable-or-disable-lightweight-solution-load"></a>Enable or disable lightweight solution load
 
-![Explorador de soluciones](~/ide/media/VSIDE_LSL Solution Setting.png)
+You can right-click the solution name in Solution Explorer, and select **Enable Lightweight Solution Load**. After selecting the option, you need to close and reopen the solution to activate lightweight solution load.
 
-También puede hacer clic con el botón derecho en el nodo de solución de nivel superior en el Explorador de soluciones y seleccionar **Habilitar la carga de solución ligera** (si la característica está deshabilitada actualmente) o **Deshabilitar la carga de solución ligera** (si la característica está habilitada actualmente):
+> [!NOTE]
+> Similar steps apply for disabling LSL. To disable lightweight solution load, select **Disable Lightweight Solution Load**, then close and reopen the solution. 
 
-Cuando cambia la configuración de la carga de solución ligera, el cambio surte efecto la próxima vez que se carga la solución. No necesita reiniciar el IDE.
+![Solution Explorer](../ide/media/VSIDE_LSL_Solution_Setting.png)
 
-### <a name="automatically-enable-lightweight-solution-load"></a>Habilitar la carga de solución ligera automáticamente
+### <a name="configure-global-settings-for--lightweight-solution-load"></a>Configure global settings for  lightweight solution load
 
-Cuando abra una solución grande en Visual Studio 2017, puede ver un mensaje emergente que le ofrece habilitar la carga de solución ligera. El mensaje aparece solo para las soluciones que contienen muchos proyectos de C#, VB o C++. Al seleccionar **Habilitar**, se activa la carga de solución ligera solo para dicha solución. La configuración del IDE no varía.
+You can globally disable or configure LSL for all the solutions by choosing **Tools > Options > Projects and Solutions**.
 
-![Ventana emergente](~/ide/media/VSIDE_LSL Popup.png)
+![Tools Options dialog box](../ide/media/VSIDE_LightweightSolutionLoad.png)
 
-Puede deshabilitar la carga de solución ligera más tarde en la ventana **Propiedades** de la solución.
+### <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>How does lightweight solution load work behind the scenes?
 
-### <a name="limitations"></a>Limitaciones
+When you load your solution, Visual Studio remembers which projects you previously opened and loads only those projects. All other projects are visible in Solution Explorer but not loaded. As soon as you expand a project or right click on a project, Visual Studio auto-loads that project. Auto-loading of projects usually takes less than a second but can take longer for some projects.
+However, Visual Studio enables IDE features like search, debug, build, and source control that operate across the entire solution. For example, you can search across an entire solution even though only a few projects are loaded in the lightweight mode. 
 
-Muchas características del IDE están completamente disponibles cuando se habilita la carga de solución ligera. En cambio, algunas características del IDE y extensiones de terceros pueden no ser completamente compatibles.  Las siguientes características no funcionan cuando la carga de solución ligera está habilitada:
+As you expand more projects, Visual Studio remembers the list of expanded projects. When a solution is reopened, Visual Studio auto-loads projects that you previously expanded.
 
-- Algunas extensiones de terceros pueden no comportarse según lo esperado cuando la carga de solución ligera está habilitada.
-- La opción Editar y continuar no funciona en proyectos que no se cargan al iniciar la depuración. Los archivos incluidos en dicho proyecto son de solo lectura y se notifica un error de que el proyecto no se ha cargado si se ha intentado realizar una modificación.
-- Cuando se habilita la carga de solución ligera, los proyectos de F# no pueden compilarse correctamente y es posible que los símbolos no estén completamente disponibles en GoTo.
+### <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio prompts developers likely to see significant performance gains
+
+From Visual Studio telemetry, large solutions with over 30 projects significantly benefit from LSL mode. Consequently, we prompt developers with large solutions to try out LSL mode. The majority of developers who try LSL for the first time end up using it on regular basis. 
+
+We are constantly reviewing Visual Studio usage telemetry to improve heuristics for offering LSL mode to developers who would benefit the most. 
+
+### <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio makes recommendations to turn on lightweight solution load based on heuristics
+
+By default, Visual Studio turns on LSL for users who are most likely to benefit. If you have multiple solutions, Visual Studio offers LSL mode for solutions that are most likely to see significant performance gains. If you select the lightweight mode option **Let Visual Studio decide** (default option), Visual Studio may open the solution in lightweight mode based on heuristics. A message bar indicates whether the solution is in lightweight mode. When the message bar shows, you have the option to learn more, or update settings.
+
+![Popup window](../ide/media/VSIDE_LSL_Popup.png)
+
+### <a name="ide-features-fully-supported-in-lightweight-mode"></a>IDE Features fully supported in Lightweight mode
+
+|Feature|Supported in Lightweight Mode?|
+|-|-|-|
+|IntelliSense|Yes|
+|Search|Yes|
+|Debugging|Yes|
+|Build|Yes|
+|Code Navigation (Go To Definition & Find All References)|Yes|
+|Code Lens|Yes|
+|Static Code analysis|Yes|
+|Deploy and Publish|Yes|
+|Adding & removing references|Yes|
+|Multi-targeting|Yes|
+|IntelliTrace|Yes|
+|Live Unit Testing|Yes|
+|IntelliTest|Yes|
+|Microsoft Fakes|Yes|
+|Edit and Continue|Not supported|
+|Unit Testing|Requires loading of test projects  followed by a solution build|
+
+### <a name="scenarios-in-which-lightweight-solution-loads-the-appropriate-projects-to-complete-the-operation"></a>Scenarios in which Lightweight solution loads the appropriate project(s) to complete the operation
+
+If you are not working on a project in the solution, the project is not loaded in lightweight mode. For some features, additional projects are automatically loaded to support the feature scenario. (We intend to minimize this list of scenarios. ) For these scenarios, Visual Studio either loads the project(s) itself, or prompts you to load the project(s) as needed.
+
+|Category|Issue|
+|-|-|-|
+|Unit test|Projects that are not currently loaded do not show up in the list of test projects for both the “Create IntelliTest” and “Create Unit Test” wizards. </br>You need to load the projects for which you want to create tests (you can expand the project node to load the project).|
+|Class Diagrams|If you create or open a Class Diagram of a project, Visual Studio automatically loads the projects that are direct dependencies of that project. </br>If the entire solution is not loaded, we turn off the validation of obsolete artifacts referenced by a dependency validation diagram.|
+
+### <a name="scenarios-in-which-lightweight-solution-loads-the-entire-solution"></a>Scenarios in which lightweight solution loads the entire solution 
+
+For some features, Visual Studio automatically loads the entire solution to support the scenario. This action ensures that you always get full functionality. For example, some TFS operations may require the entire solution to be loaded. To provide full functionality, Visual Studio loads the entire solution.
+
+|Category|Scenario|
+|-|-|-|
+|TFS SCC command on solution node|If an SCC command is triggered on the solution node (within Solution Explorer), Visual Studio automatically loads the entire solution before completing the command.|
+|Project load|If your solution contains .NET Core projects and Shared projects, Visual Studio always automatically loads these projects during initial solution load itself. These projects do not currently support lightweight mode.|
+|Solution configuration manager|If you use solution configuration manager or batch build, Visual Studio automatically loads the entire solution to provide a full experience.|
+|NuGet package manager|If you open NuGet package manager’s user interface, or the NuGet package manager console, Visual Studio automatically loads the entire solution to provide a full experience.|
+
+### <a name="known-issues"></a>Known issues
+
+There are some scenarios that may not work in LSL mode, and require the loading of additional projects or the entire solution. We are actively working on addressing these cases. 
+
+|Category|Issue|Workaround|
+|-|-|-|-|
+|IntelliSense|IntelliSense may not get updated after a configuration change (for example, changing a release build to debug and vice versa). The impact depends on code differences due to configuration change.|Reload solution after changing the configuration.|
+|Refactoring limitations for C#/VB projects|Code fixes that change project files may fail silently the first time.|Load projects if you need to make code fixes to files of these projects. Lightweight mode does not make fixes to projects that are not loaded.|
+|Unit Test Discovery|Tests discovered on deferred projects do not run when a project is loaded manually.|Rebuild the project to rediscover tests and run selected tests again.|
+|Live unit testing (LUT)|In LSL mode, you may see that LUT is not activated. It is not activated because LUT needs one of the test projects to get loaded.|Load any test project to activate live unit testing for the solution.|
+|Solution Explorer Search|1.    Solution Explorer search in LSL mode does not search within the files and there are no progression results (that is, only files are shown under the search tree, but not classes, methods, etc.).</br>2.    All files belonging to a project are shown as a flat list instead of a tree view. When files belong to a folder of a project, we show the relative path of the file, instead of just the file name on the search view.</br>There are no context menus for the file items in the search view.|Load the entire solution in non-LSL mode to get traditional Solution Explorer search.</br>You can also use Visual Studio IDE search.|
+|Object Browser for C++ Projects|Object Browser shows assembly/WinMD references for only loaded projects.|Load projects for which you want to see information in the Object browser.|
+
+> [!Note]
+> Thanks to our partners, popular extensions including Resharper also work well with lightweight solution  load.
+
+We are excited about innovations to optimize solution load time performance for developers. Since this is a new feature, we are actively looking at customer feedback, and addressing known issues. We look forward to hearing your feedback. You can email Visual Studio solution load optimization team at lslsupport@microsoft.com
+
+## <a name="see-also"></a>See Also
+[Visual Studio Performance Tips and Tricks](../ide/visual-studio-performance-tips-and-tricks.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Prueba de aplicaciones de SharePoint 2010 con pruebas de IU codificadas | Microsoft Docs
+title: Testing SharePoint 2010 Applications with Coded UI Tests | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,68 +27,68 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7ab8ce7199fec306a0f50344619200266a2261b8
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9364f111bc310b9d57bec88611b795ec22ee2ec7
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
-Incluir pruebas de IU codificadas en una aplicación de SharePoint permite comprobar que toda la aplicación, incluidos sus controles de interfaz de usuario, funcionan correctamente. Las pruebas de IU codificadas también pueden validar valores y la lógica de la interfaz de usuario.  
+# <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testing SharePoint 2010 Applications with Coded UI Tests
+Including coded UI tests in a SharePoint application lets you verify that the whole application, including its UI controls, is functioning correctly. Coded UI tests can also validate values and logic in the user interface.  
   
- **Requisitos**  
+ **Requirements**  
   
 -   Visual Studio Enterprise  
   
-## <a name="what-else-should-i-know-about-coded-ui-tests"></a>¿Qué más debería saber sobre las pruebas de IU codificadas?  
- Para obtener más información sobre las ventajas de usar pruebas de IU codificadas, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md) y [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196).  
+## <a name="what-else-should-i-know-about-coded-ui-tests"></a>What else should I know about coded UI tests?  
+ To learn more about the benefits of using coded UI tests, see [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) and [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
- **Notas**  
+ **Notes**  
   
--   ![Requisito previo](~/test/media/prereq.png "Prereq") Las pruebas de IU codificadas para las aplicaciones de SharePoint solo son compatibles con SharePoint 2010.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.  
   
--   ![Requisito previo](~/test/media/prereq.png "Prereq") No se pueden usar controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.  
   
-## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Crear una prueba de IU codificada para la aplicación de SharePoint  
- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.  
+## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Creating a coded UI test for your SharePoint app  
+ [Creating coded UI tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) for your SharePoint 2010 applications is the same as creating tests for other types of applications. Record and Playback is supported for all controls on the Web Editing interface. The interface for selecting categories and web parts are all standard web controls.  
   
- ![Elementos web de SharePoint](~/test/media/cuit_sharepoint.png "CUIT_SharePoint")  
+ ![SharePoint web parts](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Si se graba una acción, validar las acciones antes de generar código. Como hay varios comportamientos asociados con el desplazamiento del mouse, esta característica está activada de manera predeterminada. Tenga cuidado al quitar desplazamientos redundantes de las pruebas de IU codificadas. Puede hacerlo modificando el código de la prueba o usando el [editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+>  If you are recording action, validate the actions before generating code. Since there are several behaviors associated with Mouse hover, it is on by default. Be careful to remove redundant hovers from your coded UI tests. You can do this by editing the code for the test, or by using the [Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
-## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Incluir pruebas de los controles de Office 2010 dentro de la aplicación de SharePoint  
- Para habilitar la automatización de algunos elementos web de Office 2010 en su aplicación de SharePoint, es necesario realizar algunas modificaciones mínimas en el código.  
-  
-> [!WARNING]
->  No se admiten controles de Visio y PowerPoint 2010.  
-  
-### <a name="excel-2010-cell-controls"></a>Controles de celda de Excel 2010  
- Para incluir controles de celda de Excel, hay que realizar algunos cambios en el código de la prueba de IU codificada.  
+## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Including testing of Office 2010 controls within your SharePoint app  
+ To enable automation for some office 2010 web parts in your SharePoint app, you have to make some minor code modifications.  
   
 > [!WARNING]
->  Escribir texto en una celda de Excel, seguida de una acción de tecla de flecha, no se graba correctamente. Use el mouse para seleccionar celdas.  
+>  Support for Visio and PowerPoint 2010 controls is not supported.  
   
- Si graba acciones en una celda vacía, tiene que modificar el código haciendo doble clic en la celda y, luego, realizando una operación de texto definida. Esto es necesario porque, al hacer clic en la celda, seguido de una acción de teclado, se activa `textarea` dentro de la celda. Grabar simplemente un `setvalue` en la celda vacía haría que se buscara el elemento `editbox` que no estará presente hasta que se haga clic en la celda. Por ejemplo:  
+### <a name="excel-2010-cell-controls"></a>Excel 2010 cell controls  
+ To include Excel cell controls, you must make some changes in the coded UI test's code.  
   
-```c#  
+> [!WARNING]
+>  Entering text in any Excel cell, followed by an arrow key action, does not record correctly. Use the mouse to select cells.  
+  
+ If you are recording actions on an empty cell, you must modify the code by double clicking on the cell and then performing a set text operation. This is needed because a click on the cell, followed by any keyboard action activates the `textarea` within the cell. Simply recording a `setvalue` on the empty cell would search for the `editbox` which is not present until the cell has been clicked. For example:  
+  
+```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
 uiGridKeyboardInputEdit.Text=value;  
 ```  
   
- Si graba acciones en una celda que no está vacía, la grabación será un poco más complicada, porque en cuanto agregue texto a una celda, se agregará un nuevo control \<div> como elemento secundario de la celda. El nuevo control \<div> contiene el texto que acaba de especificar. La grabadora necesita grabar acciones en el nuevo control \<div>, pero no puede porque el nuevo control \<div> no existirá hasta que se especifique la prueba. Tendrá que realizar los siguientes cambios en el código manualmente para acabar con este problema.  
+ If you are recording actions on a non-empty cell, then recording gets a little more complicated, because the moment you add text to a cell, a new \<div> control is added as a child of the cell. The new \<div> control contains the text that you just entered. The recorder needs to record actions on the new \<div> control; however, it can't because the new \<div> control does not exist until after the test is entered. You must manually make the following code changes to accommodate this issue.  
   
-1.  Vaya a la inicialización de la celda y establezca `RowIndex` y `ColumnIndex` como propiedades principales:  
+1.  Go to cell initialization and make `RowIndex` and `ColumnIndex` primary properties:  
   
-    ```c#  
+    ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Busque el elemento secundario `HtmlDiv` de la celda:  
+2.  Find the `HtmlDiv` child of the cell:  
   
-    ```c#  
+    ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
     {   
          if (String.IsNullOrEmpty(cell.InnerText)) return cell;   
@@ -102,69 +102,69 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Agregue código para una acción de doble clic del mouse en `HtmlDiv`:  
+3.  Add code for a mouse double-click action on `HtmlDiv`:  
   
-    ```c#  
+    ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Agregue código para texto establecido en `TextArea`:  
+4.  Add code to set text on `TextArea`:  
   
-    ```c#  
+    ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
     ```  
   
-## <a name="enabling-coded-ui-testing-of-silverlight-web-parts-in-your-sharepoint-2010-app"></a>Habilitar pruebas de IU codificadas de los elementos web de Silverlight en la aplicación de SharePoint 2010  
- Las pruebas de Silverlight no se admiten en Visual Studio 2012 y versiones posteriores. Pero, si desea probar los elementos web de Silverlight en la aplicación de SharePoint 2010, puede instalar un complemento de Silverlight independiente desde la Galería de Visual Studio.  
+## <a name="enabling-coded-ui-testing-of-silverlight-web-parts-in-your-sharepoint-2010-app"></a>Enabling coded UI testing of Silverlight web parts in your SharePoint 2010 app  
+ Silverlight testing isn't supported in Visual Studio 2012 and later. But, if you want to test the Silverlight web parts in your SharePoint 2010 app, you can install a separate Silverlight plug-in from the Visual Studio Gallery.  
   
-#### <a name="setting-up-your-machine"></a>Configurar el equipo  
+#### <a name="setting-up-your-machine"></a>Setting up your machine  
   
-1.  Asegúrese de que tiene Visual Studio 2012.1 o posterior instalado.  
+1.  Make sure that you have Visual Studio 2012.1 or later installed.  
   
-2.  Instale el [complemento de la prueba de IU de Microsoft Visual Studio para Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
+2.  Install the [Microsoft Visual Studio UI Test Plugin for Silverlight](http://visualstudiogallery.msdn.microsoft.com/28312a61-9451-451a-990c-c9929b751eb4).  
   
-3.  Instale [Fiddler](http://www.fiddler2.com/fiddler2/). Se trata simplemente de una herramienta que captura y registra el tráfico HTTP.  
+3.  Install [Fiddler](http://www.fiddler2.com/fiddler2/). This is simply a tool that captures and logs the HTTP traffic.  
   
-4.  Descargue el [proyecto de fiddlerXap](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Descomprímalo, compílelo y ejecute el script "CopySLHelper.bat" para instalar la DLL auxiliar necesaria para comprobar los elementos web de Silverlight cuando use la herramienta Fiddler.  
+4.  Download the [fiddlerXap project](http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-10-36-48-70/FiddlerXapProxy.zip). Unzip it, build it, and run the "CopySLHelper.bat" script to install the helper DLL that is required to test Silverlight web parts when you use the Fiddler tool.  
   
- Después de configurar el equipo, haga lo siguiente para empezar a comprobar la aplicación de SharePoint 2010 con los elementos web de Silverlight:  
+ After setting up your machine, to start testing your SharePoint 2010 app with Silverlight web parts, follow these steps:  
   
-#### <a name="testing-silverlight-web-parts"></a>Probar elementos web de Silverlight  
+#### <a name="testing-silverlight-web-parts"></a>Testing Silverlight web parts  
   
-1.  Inicie Fiddler.  
+1.  Start Fiddler.  
   
-2.  Borre la memoria caché de exploración. Esto es necesario porque el archivo XAP (que contiene la DLL auxiliar de automatización de interfaz de usuario de Silverlight) se suele almacenar en caché. Tenemos que asegurarnos de que se selecciona el archivo XAP, por eso borramos la memoria caché de exploración.  
+2.  Clear the browser cache. This is necessary because the XAP file, which contains the Silverlight UI Automation Helper DLL, is typically cached. We have to make sure that the modified XAP file is picked up, so we clear the browser cache.  
   
-3.  Abra la página web.  
+3.  Open the web page.  
   
-4.  Inicie la grabadora y genere código como lo haría para una prueba de aplicación web normal.  
+4.  Start the recorder and generate code like you would for a regular web application testing.  
   
-5.  Es preciso confirmar que el código generado hace referencia a Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
+5.  You should confirm that the generated code references the Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
   
-     Para más información, vea [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx).  
+     For more information, see [UI Testing SharePoint 2010 with Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   
-## <a name="external-resources"></a>Recursos externos  
+## <a name="external-resources"></a>External resources  
   
 ### <a name="blogs"></a>Blogs  
- [Pruebas de IU de SharePoint 2010 con Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
+ [UI Testing SharePoint 2010 with Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   
- [Descripción de la lógica de búsqueda de controles de Silverlight en la prueba de IU codificada](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)  
+ [Understanding the Search logic for Silverlight controls in Coded UI Test](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/understanding-the-search-logic-for-silverlight-controls-in-coded-ui-test.aspx)  
   
- [Captura de la propiedad de un control de Silverlight](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)  
+ [Fetching Property of a Silverlight control](http://blogs.msdn.com/b/tapas_sahoos_blog/archive/2010/11/16/fetching-property-of-a-silverlight-control.aspx)  
   
- [Índice de contenido para la prueba de IU codificada](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
+ [Content Index for Coded UI Test](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
   
-### <a name="guidance"></a>Orientación  
- [Comprobación de entregas continuas con Visual Studio 2012 – Capítulo 5: Automatización de las pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+### <a name="guidance"></a>Guidance  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5 Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-### <a name="forum"></a>Foro  
- [Blog de Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)  
+### <a name="forum"></a>Forum  
+ [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Vea también  
- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Rendimiento web y pruebas de carga de aplicaciones de SharePoint 2010 y 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Crear soluciones de SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Comprobar y depurar código de SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Compilar y depurar soluciones de SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Generar perfiles de rendimiento de aplicaciones de SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>See Also  
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)   
+ [Web performance and load testing SharePoint 2010 and 2013 applications](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
+ [Create SharePoint Solutions](/office-dev/office-dev/create-sharepoint-solutions)   
+ [Verifying and Debugging SharePoint Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+ [Building and Debugging SharePoint Solutions](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+ [Profiling the Performance of SharePoint Applications](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
 

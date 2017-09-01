@@ -1,54 +1,71 @@
 ---
-title: "IDebugDocumentTextEvents2::onInsertText | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentTextEvents2::OnInsertText"
-helpviewer_keywords: 
-  - "IDebugDocumentTextEvents2::onInsertText"
+title: IDebugDocumentTextEvents2::onInsertText | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentTextEvents2::OnInsertText
+helpviewer_keywords:
+- IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentTextEvents2::onInsertText
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f851ac5f28d1f6b7e06fe5bd9fb74f3f27aa1771
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Notifica al paquete de depuración que el texto se ha insertado en el documento.  
+---
+# <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
+Notifies the debug package that text has been inserted into the document.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT onInsert(   
-   TEXT_POSITION pos,  
-   DWORD         dwNumToInsert  
+```cpp  
+HRESULT onInsert(   
+   TEXT_POSITION pos,  
+   DWORD         dwNumToInsert  
 );  
 ```  
   
-```c#  
-int onInsert(   
-   enum_TEXT_POSITION pos,  
-   uint               dwNumToInsert  
+```csharp  
+int onInsert(   
+   enum_TEXT_POSITION pos,  
+   uint               dwNumToInsert  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pos`  
- \[in\]  Una estructura de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica que el texto se insertado.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates where the text was inserted.  
   
  `dwNumToInsert`  
- \[in\]  Especifica el número de caracteres de texto que se ha insertado.  
+ [in] Specifies the number of characters of text that were inserted.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

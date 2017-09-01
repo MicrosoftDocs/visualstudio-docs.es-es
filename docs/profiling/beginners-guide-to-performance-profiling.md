@@ -1,5 +1,5 @@
 ---
-title: "Guía básica para la generación de perfiles de rendimiento en Visual Studio | Microsoft Docs"
+title: Beginner's Guide to Performance Profiling in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -34,136 +34,145 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Guía básica para la generación de perfiles de rendimiento
-Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
+# <a name="beginners-guide-to-performance-profiling"></a>Beginner's Guide to Performance Profiling
+You can use Visual Studio profiling tools to analyze performance issues in your application. This procedure shows how to use **CPU Usage** tab of the Diagnostics Tools to obtain performance data for your app. The Diagnostics Tools are supported for .NET development in Visual Studio, including ASP.NET, and for native/C++ development.
   
-Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila información sobre las funciones que se ejecutan en la aplicación. La herramienta enumera las funciones que realizaron trabajo y proporciona un gráfico de escala de tiempo que se puede utilizar para centrarse en segmentos específicos de la sesión de muestreo.
+When the debugger pauses, the **CPU Usage** tool collects information about the functions that are executing in your application. The tool lists the functions that were performing work, and provides a timeline graph you can use to focus on specific segments of the sampling session.
 
-El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
+The Diagnostic hub offers you a lot of other options to run and manage your diagnostics session. If **CPU Usage** does not give you the data that you need, the [other profiling tools](../profiling/Profiling-Tools.md) provide different kinds of information that might be helpful to you. In many cases, the performance bottleneck of your application may be caused by something other than your CPU, such as memory, rendering UI, or network request time. The Diagnostics hub offers you a lot of other options to record and analyze this kind of data.
 
-En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para obtener más información, consulte [Ejecutar herramientas de generación de perfiles sin depuración](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+|         |         |
+|---------|---------|
+| ![Watch a video](../install/media/video-icon.png "WatchVideo") | [Watch a video](#video) on using the diagnostics tools that shows how to analyze CPU usage and how to analyze memory usage. |
+
+In this topic, we'll discuss analyzing CPU usage in your normal debugging workflow. You can also analyze CPU usage without a debugger attached or by targeting a running app - for more information see [Collect profiling data without debugging](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Run profiling tools with or without the debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Step 1: Collect profiling data 
   
-1.  Abra el proyecto que desee depurar en Visual Studio y establezca un punto de interrupción de la aplicación en el punto en que quiera examinar el uso de CPU.
+1.  Open the project you want to debug in Visual Studio and set a breakpoint in your app at the point where you want to examine CPU usage.
 
-2.  Establezca un segundo punto de interrupción al final de la función o la región de código que quiera analizar.
+2.  Set a second breakpoint at the end of the function or region of code that you want to analyze.
 
     > [!TIP]
-    > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
+    > By setting two breakpoints, you can limit data collection to the parts of code that you want to analyze.
   
-3.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.
+3.  The **Diagnostic Tools** window appears automatically unless you have turned it off. To bring up the window again, click **Debug / Windows / Show Diagnostic Tools**.
 
-4.  Puede elegir si ve **Uso de CPU**, [Uso de memoria](../profiling/Memory-Usage.md) o ambos con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, también puede habilitar o desactivar IntelliTrace en **Herramientas / Opciones / IntelliTrace**.
+4.  You can choose whether to see **CPU Usage**, [Memory Usage](../profiling/Memory-Usage.md), or both, with the **Select Tools** setting on the toolbar. If you are running Visual Studio Enterprise,  you can also enable or disable IntelliTrace in **Tools / Options / IntelliTrace**.
 
-     ![Mostrar herramientas de diagnóstico](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Show Diagnostics Tools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
-     Nos fijaremos principalmente en el uso de CPU, así que asegúrese de que **Uso de CPU** está habilitado (lo está de forma predeterminada).
+     We will mainly be looking at CPU utilization, so make sure that **CPU Usage** is enabled (it is enabled by default).
 
-5.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
+5.  Click **Debug / Start Debugging** (or **Start** on the toolbar, or **F5**).
 
-     Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
+     When the app finishes loading, the Summary view of the Diagnostics Tools appears.
 
-     ![Pestaña Resumen de herramientas de diagnóstico](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Diagnostics Tools Summary Tab](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Para obtener más información sobre los eventos, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
+     For more information on the events, see [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
 
-6.  Ejecute el escenario que hará que se alcance el primer punto de interrupción.
+6.  Run the scenario that will cause your first breakpoint to be hit.
 
-7.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de CPU y, a continuación, abra la pestaña **Uso de CPU**.
+7.  While the debugger is paused, enable the collection of the CPU Usage data and then open the **CPU Usage** tab.
 
-     ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Diagnostics Tools Enable CPU Profiling](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Cuando se elige **Habilitar generación de perfiles de CPU**, Visual Studio empezará a registrar sus funciones y cuánto tiempo tardan en ejecutarse. Solo puede ver los datos recopilados cuando la aplicación se detiene en un punto de interrupción.
+     When you choose **Enable CPU Profiling**, Visual Studio will begin recording your functions and how much time they take to execute. You can only view this collected data when your application is halted at a breakpoint.
 
-8.  Presione F5 para ejecutar la aplicación hasta el segundo punto de interrupción.
+8.  Hit F5 to run the app to your second breakpoint.
 
-     Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
+     Now, you now have performance data for your application specifically for the region of code that runs between the two breakpoints.
 
-9.  Seleccione la región que le interese analizar de la escala de tiempo de CPU (debe ser una región en que se muestren datos de generación de perfiles).
+9.  Select the region you're interested in analyzing in the CPU timeline (it must be a region that shows profiling data).
 
-     ![Herramientas de diagnóstico para seleccionar un segmento de tiempo](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Diagnostics Tools Selecting a Time Segment](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
-     El generador de perfiles empieza a preparar los datos de subproceso. Espere a que finalice.
+     The profiler begins preparing thread data. Wait for it to finish.
 
-     ![Herramientas de diagnóstico para preparar subprocesos](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Diagnostics Tools Preparing Threads](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
-     La herramienta Uso de CPU muestra el informe en la pestaña **Uso de CPU**.
+     The CPU Usage tool displays the report in the **CPU Usage** tab.
   
-     ![Herramientas de diagnóstico para la pestaña Uso de CPU](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Diagnostics Tools CPU Usage Tab](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
-     En este punto, puede empezar a analizar los datos.
+     At this point, you can begin to analyze the data.
 
-## <a name="Step2"></a> Paso 2: Analizar datos de uso de CPU
+## <a name="Step2"></a> Step 2: Analyze CPU usage data
 
-Se recomienda que, para empezar a analizar los datos, examine la lista de funciones de Uso de CPU, identifique las funciones que realizan la mayor parte del trabajo y, a continuación, observe detenidamente cada una de ellas.
+We recommend that you begin analyzing your data by examining the list of functions under CPU Usage, identifying the functions that are doing the most work, and then taking a closer look at each one.
 
-1. En la lista de funciones, examine las funciones que realizan la mayor parte del trabajo.
+1. In the function list, examine the functions that are doing the most work.
 
-    ![Herramientas de diagnóstico para la lista de funciones de Uso de CPU](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Diagnostics Tools CPU Usage Function List](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
-    > Las funciones aparecen en orden, comenzando por las que realizan la mayor parte del trabajo (no están en orden de llamada). Esto ayuda a identificar rápidamente las funciones que se ejecutan durante más tiempo.
+    > Functions are listed in order starting with those doing the most work (they're not in call order). This helps you quickly identify the longest running functions.
 
-2. En la lista de funciones, haga doble clic en una de las funciones de aplicación que realice mucho trabajo.
+2. In the function list, double-click one of your app functions that is doing a lot of work.
 
-    Al hacer doble clic en una función, la vista **Llamador y destinatario** se abre en el panel izquierdo. 
+    When you double-click a function, the **Caller/Callee** view opens in the left pane. 
 
-    ![Herramientas de diagnóstico para la vista Llamador y destinatario](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Diagnostics Tools Caller Callee View](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
-    En esta vista, la función seleccionada se muestra en el encabezado y en el cuadro **Función actual** (en este ejemplo, GetNumber). La función que llamó a la función actual se muestra a la izquierda en **Función llamadora**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
+    In this view, the selected function shows up in the heading and in the **Current Function** box (GetNumber, in this example). The function that called the current function is shown on the left under **Calling Function**, and any functions called by the current function are shown in **Called Functions** box on the right. (You can select either box to change the current function.)
 
-    En esta vista se muestra el tiempo total (ms) y el porcentaje del tiempo de ejecución global de la aplicación que la función ha tardado en completarlo.
+    This view shows you the total time (ms) and the percentage of the overall app running time that the function has taken to complete.
 
-    **Cuerpo de la función** también muestra la cantidad total de tiempo (y el porcentaje de tiempo) empleado en el cuerpo de la función, excluido el tiempo invertido en las funciones llamadoras y llamadas. (En este ejemplo, 3713 de 3729 ms se dedicaron al cuerpo de la función y los 16 ms restantes se dedicaron al código externo al que esta función llama).
+    **Function Body** also shows you the total amount of time (and the percentage of time) spent in the function body excluding time spent in calling and called functions. (In this example, 3713 out of 3729 ms were spent in the function body, and the remaining 16 ms were spent in external code called by this function).
 
     > [!TIP]
-    > Los valores altos en **Cuerpo de la función** pueden indicar un cuello de botella de rendimiento dentro de la propia función.
+    > High values in **Function Body** may indicate a performance bottleneck within the function itself.
 
-3. Si quiere obtener una vista de nivel superior en que se muestre el orden en que las funciones se llaman, seleccione **Árbol de llamadas** en la lista desplegable en la parte superior del panel.
+3. If you want to see a higher-level view showing the order in which the functions are called, select **Call Tree** from the drop-down list at the top of the pane.
  
-    Cada área numerada de la ilustración se corresponde con un paso del procedimiento.
+    Each numbered area in the figure relates to a step in the procedure.
   
-    ![Herramientas de diagnóstico para el árbol de llamadas](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Diagnostics Tools Call Tree](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
-|![Paso 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|El nodo de nivel superior de los árboles de llamadas de Uso de CPU es un pseudonodo|  
-|![Paso 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|En la mayoría de las aplicaciones, si la opción [Mostrar código externo](#BKMK_External_Code) está deshabilitada, el nodo de segundo nivel es un nodo **[Código externo]** que contiene el código del sistema y Framework que inicia y detiene la aplicación, dibuja la IU, controla la programación de subprocesos y ofrece otros servicios de bajo nivel a la aplicación.|  
-|![Paso 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|
-|![Paso 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|
+|![Step 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|The top-level node in CPU Usage call trees is a pseudo-node|  
+|![Step 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|In most apps, when the [Show External Code](#BKMK_External_Code) option is disabled, the second-level node is an **[External Code]** node that contains the system and framework code that starts and stops the app, draws the UI, controls thread scheduling, and provides other low-level services to the app.|  
+|![Step 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|The children of the second-level node are the user-code methods and asynchronous routines that are called or created by the second-level system and framework code.|
+|![Step 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Child nodes of a method contain data only for the calls of the parent method. When **Show External Code** is disabled, app methods can also contain an **[External Code]** node.|
 
-Aquí encontrará más información sobre los valores de columna:
+Here is more information on the column values:
 
-- **CPU total** indica cuánto trabajo realizaron la función y las funciones llamadas por ella. Los valores altos de CPU total señalan las funciones que consumen más en general.
+- **Total CPU** indicates how much work was done by the function and any functions called by it. High total CPU values point to the functions that are most expensive overall.
   
-- **Solo CPU** indica cuánto trabajo realizó el código del cuerpo de la función, sin incluir el trabajo de las funciones llamadas por dicha función. Los valores altos de **Solo CPU** pueden indicar un cuello de botella de rendimiento dentro de la propia función.
+- **Self CPU** indicates how much work was done by the code in the function body, excluding the work done by functions that were called by it. High **Self CPU** values may indicate a performance bottleneck within the function itself.
 
-- **Módulos** El nombre del módulo que contiene la función o el número de módulos que contienen las funciones en un nodo [Código externo].
+- **Modules** The name of the module containing the function, or the number of modules containing the functions in an [External Code] node.
 
-## <a name="BKMK_External_Code"></a>Ver código externo
+## <a name="BKMK_External_Code"></a>View external code
 
-Código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que usted escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que la herramienta Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
+External code are functions in system and framework components that executed by the code you write. External code include functions that start and stop the app, draw the UI, control threading, and provide other low-level services to the app. In most cases, you won't be interested in external code, and so the CPU Usage tool gathers the external functions of a user method into one **[External Code]** node.
   
-Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.  
+If you want to view the call paths of external code, choose **Show External Code** from the **Filter view** list and then choose **Apply**.  
   
-![Elija Vista de filtro y, después, Mostrar código externo](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Choose Filter View, then Show External Code](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
-Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]**.
+Be aware that many external code call chains are deeply nested, so that the width of the Function Name column can exceed the display width of all but the largest of computer monitors. When this happens, function names are shown as **[...]**.
   
-Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, luego, utilice la barra de desplazamiento horizontal para visualizar los datos.
+Use the search box to find a node that you are looking for, then use the horizontal scroll bar to bring the data into view.
 
 > [!TIP]
-> Si genera perfiles de un código externo que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Especificar archivos de símbolos (.pdb) y de origen en el depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+> If you profile external code that calls Windows functions, you should make sure that you have the most current .pdb files. Without these files, your report views will list Windows function names that are cryptic and difficult to understand. For more information about how to make sure that you have the files you need, see [Specify Symbol (.pdb) and Source Files in the Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+## <a name="video"></a> Watch a video on using the diagnostics tools
+
+<div style="padding-top: 56.25%; position: relative; width: 100%;">
+<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
+</div>
   
-## <a name="see-also"></a>Vea también  
- [[Uso de memoria](../profiling/memory-usage.md)
- [Uso de CPU](../profiling/cpu-usage.md)
- [Herramientas de generación de perfiles](../profiling/profiling-tools.md)
+## <a name="see-also"></a>See Also  
+ [[Memory Usage](../profiling/memory-usage.md) [CPU Usage](../profiling/cpu-usage.md) [Profiling in Visual Studio](../profiling/index.md) [Profiling Feature Tour](../profiling/profiling-feature-tour.md)
+

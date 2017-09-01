@@ -1,0 +1,189 @@
+---
+title: "Información general | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs"
+ms.custom: 
+ms.date: 05/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IntelliTest, Visual Studio IntelliTest developer testing tool
+ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
+caps.latest.revision: 56
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
+ms.openlocfilehash: a10125710bc36917842a26caebda5b5e7ac8b7fb
+ms.contentlocale: es-es
+ms.lasthandoff: 06/02/2017
+
+---
+# <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
+
+IntelliTest le permite detectar errores pronto, y reduce los costos de mantenimiento de pruebas. Con un enfoque de pruebas transparente y automatizado, IntelliTest puede generar un conjunto candidato de pruebas para su código de .NET. La generación del conjunto de pruebas puede guiarse además mediante las *propiedades de corrección* que especifique. IntelliTest evolucionará incluso el conjunto de pruebas automáticamente a medida que el código sometido a prueba evolucione.
+
+**Pruebas de caracterización**  
+IntelliTest le permite determinar el comportamiento del código en términos de un conjunto de pruebas unitarias tradicionales. Dicho conjunto de pruebas puede usarse como un conjunto de regresión que forma la base para tratar la complejidad asociada con la refactorización de código desconocido o heredado.
+
+**Generación de entradas de prueba guiada**  
+IntelliTest usa un análisis de código abierto y un enfoque de solución de restricciones para generar automáticamente valores de entrada de pruebas precisos; normalmente sin la necesidad de cualquier intervención de usuario. Para los tipos de objeto complejos, genera fábricas automáticamente. Puede guiar la generación de entradas de prueba ampliando y configurando las fábricas para que se adapten a sus requisitos. Las propiedades de corrección que se especifican como aserciones en el código también se usarán automáticamente para guiar más la generación de entradas de prueba.
+
+**Integración del IDE**  
+IntelliTest está totalmente integrado en el IDE de Visual Studio. Toda la información recopilada durante la generación del conjunto de pruebas (como las entradas generadas automáticamente, el resultado del código, los casos de pruebas generados y su estado de superación o error) aparece en el IDE de Visual Studio. Puede iterar fácilmente entre corregir su código y volver a ejecutar IntelliTest, sin salir del IDE de Visual Studio. Las pruebas pueden guardarse en la solución como un proyecto de prueba unitaria, y se detectarán automáticamente después mediante el Explorador de pruebas de Visual Studio.
+
+**Complementar las prácticas de pruebas existentes**  
+Use IntelliTest para complementar cualquier práctica de prueba existente que ya siga.
+
+Si quiere probar:
+
+* Algoritmos en datos primitivos o matrices de datos primitivos:
+  * escriba [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing)
+* Algoritmos en datos complejos, como el compilador:
+  * permita que IntelliTest genere primero una representación abstracta de los datos y, después, la introduzca en el algoritmo
+  * permita que IntelliTest cree instancias mediante la [creación de objetos personalizados](input-generation.md#objects) e invariantes de datos y, después, invoque el algoritmo
+* Contenedores de datos:
+  * escriba [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing)
+  * permita que IntelliTest cree instancias mediante la [creación de objetos personalizados](input-generation.md#objects) e invariantes de datos y, después, invoque un método del contenedor y vuelva a comprobar después los elementos invariantes
+  * escriba [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) que llaman a diferentes métodos de la implementación, dependiendo de los valores de parámetro
+* Una base de código existente:
+  * use el Asistente de IntelliTest para Visual Studio para comenzar a generar un conjunto de [pruebas unitarias parametrizadas (PUT)](test-generation.md#parameterized-unit-testing)
+
+<a name="hello-world"></a>
+## <a name="the-hello-world-of-intellitest"></a>Hello World de IntelliTest
+
+IntelliTest detecta entradas relevantes al programa que se prueba, lo que significa que puede usarlo para generar la famosa cadena **Hello World** (Hola a todos) . Presupone que ha creado un proyecto de prueba basado en MSTest de C# y que ha agregado una referencia a **Microsoft.Pex.Framework**. Si está usando un marco de prueba diferente, cree una biblioteca de clases de C# y vea la documentación del marco de prueba para obtener información sobre cómo configurar el proyecto.
+
+En el ejemplo siguiente se crean dos restricciones en el parámetro denominado **value**, de manera que IntelliTest generará la cadena requerida.
+
+```
+using System;
+using Microsoft.Pex.Framework; 
+using Microsoft.VisualStudio.TestTools.UnitTesting; 
+
+[TestClass]
+public partial class HelloWorldTest {
+    [PexMethod]
+    public void HelloWorld([PexAssumeNotNull]string value) {
+        if (value.StartsWith("Hello")
+            && value.EndsWith("World!")
+            && value.Contains(" "))
+            throw new Exception("found it!");
+    }
+}
+```
+
+Una vez se haya compilado y ejecutado, IntelliTest genera un conjunto de pruebas de la manera siguiente:
+
+1. ""
+2. "\0\0\0\0\0"
+3. "Hello"
+4. "\0\0\0\0\0\0"
+5. "Hello\0"
+6. "Hello\0\0"
+7. "Hello\0World!"
+8. "Hello World!"
+
+Vaya [aquí](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0) para entender dónde se guardan las pruebas generadas.
+El código de prueba generado debe incluir una prueba como la siguiente:
+
+```
+[TestMethod]
+[PexGeneratedBy(typeof(global::HelloWorldTest))]
+[PexRaisedException(typeof(Exception))]
+public void HelloWorldThrowsException167()
+{
+    this.HelloWorld("Hello World!");
+}
+```
+
+Es así de fácil.
+
+<a name="limitations"></a>
+## <a name="limitations"></a>Limitaciones
+
+En esta sección se describen las limitaciones de IntelliTest:
+
+* [Indeterminismo](#nondeterminism)
+* [Simultaneidad](#concurrency)
+* [Código .NET nativo](#native-code)
+* [Plataforma](#platform)
+* [Idioma](#language)
+* [Razonamiento simbólico](#symbolic-reasoning)
+* [Seguimientos de la pila](#incorrect-stack)
+
+<a name="nondeterminism"></a>
+### <a name="nondeterminism"></a>Indeterminismo
+
+IntelliTest presupone que el programa analizado es determinista. Si no lo es, IntelliTest lo recorrerá hasta que alcance un límite de exploración.
+
+IntelliTest considera que un programa no es determinista si se basa en entradas que IntelliTest no puede controlar.
+
+IntelliTest controla entradas que se proporcionan para las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) y se obtienen de [PexChoose](static-helper-classes.md#pexchoose). En ese sentido, los resultados de las llamadas a código no instrumentado o no administrado también se consideran como "entradas" en el programa instrumentado, pero IntelliTest no puede controlarlas. Si el flujo de control del programa depende de los valores específicos que provienen de estos orígenes externos, IntelliTest no puede "guiar" al programa hacia las áreas que no se han cubierto anteriormente. 
+
+Además, el programa se considera indeterminista si los valores de los orígenes externos cambian al volver a ejecutar el programa. En dichos casos, IntelliTest pierde el control de la ejecución del programa y su búsqueda pasa a ser muy ineficaz.
+
+A veces no es evidente cuando esto sucede. Considere los siguientes ejemplos:
+
+* El resultado del método **GetHashCode()** se proporciona mediante código no administrado y no es predecible.
+* La clase **System.Random** usa la hora del sistema actual para proporcionar valores aleatorios reales.
+* La clase **System.DateTime** proporciona la hora actual, que obviamente no está bajo el control de IntelliTest.
+
+<a name="concurrency"></a>
+### <a name="concurrency"></a>simultaneidad
+
+IntelliTest no controla los programas multiproceso.
+
+<a name="native-code"></a>
+### <a name="native-code-net-code-that-is-not-instrumented"></a>Código nativo, código .NET que no se ha instrumentado
+
+IntelliTest no entiende el código nativo, como las instrucciones x86 que se llaman mediante **P/Invoke**. No sabe cómo traducir dichas llamadas en restricciones que se pueden pasar al [solucionador de restricciones](input-generation.md#constraint-solver). Incluso para el código .NET, puede analizar solo código que instrumenta. IntelliTest no puede instrumentar determinadas partes de **mscorlib**, incluida la biblioteca de reflexión. **DynamicMethod** no se puede instrumentar. 
+
+La solución alternativa que se sugiere es tener un modo de prueba donde dichos métodos se encuentren en tipos de un ensamblado dinámico. En cambio, incluso si algunos métodos no están instrumentados, IntelliTest intentará cubrir el código instrumentado todo lo posible.
+
+<a name="platform"></a>
+### <a name="platform"></a>Plataforma
+
+IntelliTest solo se admite en .NETframework de 32 bits basado en X86.
+
+<a name="language"></a>
+### <a name="language"></a>Lenguaje
+
+En principio, IntelliTest puede analizar los programas de .NET arbitrarios, escritos en cualquier lenguaje de .NET. En cambio, en Visual Studio solo admite C#.
+
+<a name="symbolic-reasoning"></a>
+### <a name="symbolic-reasoning"></a>Razonamiento simbólico
+
+IntelliTest usa un [solucionador de restricciones](input-generation.md#constraint-solver) automático para determinar los valores que son relevantes para la prueba y el programa sometido a prueba. En cambio, las capacidades del solucionador de restricciones están, y siempre estarán, limitadas.
+
+<a name="incorrect-stack"></a>
+### <a name="slightly-incorrect-stack-traces"></a>Seguimientos de la pila (ligeramente) incorrectos
+
+Como IntelliTest detecta y "vuelve a generar" excepciones en cada método instrumentado, los números de línea en los seguimientos de la pila no serán correctos. Esta es una limitación en el diseño de la instrucción "Rethrow".
+
+<a name="further-reading"></a>
+## <a name="further-reading"></a>Información adicional
+
+* [Entrada de blog de introducción](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) en MSDN.
+* [Generar pruebas unitarias para el código con IntelliTest](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+
+## <a name="got-feedback"></a>¿Tiene comentarios?
+
+Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+

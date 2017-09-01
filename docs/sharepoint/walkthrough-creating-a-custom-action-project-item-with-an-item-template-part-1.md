@@ -1,211 +1,215 @@
 ---
-title: "Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint project items, creating custom templates"
-  - "SharePoint project items, defining your own types"
-  - "project items [SharePoint development in Visual Studio], defining your own types"
-  - "SharePoint development in Visual Studio, defining new project item types"
+title: 'Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1 | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint project items, creating custom templates
+- SharePoint project items, defining your own types
+- project items [SharePoint development in Visual Studio], defining your own types
+- SharePoint development in Visual Studio, defining new project item types
 ms.assetid: 41ed9c1c-4239-4d80-934b-975fde744288
 caps.latest.revision: 152
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 151
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 277d10d8fbbdc90a6606d91b80a0d704c76b5b4c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1
-  Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto.  En este tutorial, creará un elemento de proyecto que se puede agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint.  La acción personalizada agrega un elemento de menú al menú **Acciones del sitio** del sitio de SharePoint.  
+# <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1
+  You can extend the SharePoint project system in Visual Studio by creating your own project item types. In this walkthrough, you will create a project item that can be added to a SharePoint project to create a custom action on a SharePoint site. The custom action adds a menu item to the **Site Actions** menu of the SharePoint site.  
   
- En este tutorial se muestran las siguientes tareas:  
+ This walkthrough demonstrates the following tasks:  
   
--   Crear una extensión de Visual Studio que define un nuevo tipo de elemento de proyecto de SharePoint para una acción personalizada.  El nuevo tipo de elemento de proyecto implementa varias características personalizadas:  
+-   Creating a Visual Studio extension that defines a new type of SharePoint project item for a custom action. The new project item type implements several custom features:  
   
-    -   Un menú contextual que actúa como un punto inicial para las tareas adicionales relacionadas con el elemento de proyecto, como mostrar un diseñador para la acción personalizada en Visual Studio.  
+    -   A shortcut menu that serves as a starting point for additional tasks related to the project item, such as displaying a designer for the custom action in Visual Studio.  
   
-    -   Código que se ejecuta cuando un desarrollador cambia ciertas propiedades del elemento de proyecto y del proyecto que lo contiene.  
+    -   Code that runs when a developer changes certain properties of the project item and the project that contains it.  
   
-    -   Un icono personalizado que aparece al lado del elemento de proyecto en el **Explorador de soluciones**.  
+    -   A custom icon that appears next to the project item in **Solution Explorer**.  
   
--   Crear una plantilla de elementos de Visual Studio para el elemento de proyecto.  
+-   Creating a Visual Studio item template for the project item.  
   
--   Compilar un paquete de extensión de Visual Studio \(VSIX\) para implementar la plantilla de elemento de proyecto y el ensamblado de la extensión.  
+-   Building a Visual Studio Extension (VSIX) package to deploy the project item template and the extension assembly.  
   
--   Depurar y probar el elemento de proyecto.  
+-   Debugging and testing the project item.  
   
- Este es un tutorial independiente.  Después de completar este tutorial, puede mejorar el elemento de proyecto si agrega un asistente a la plantilla de elemento.  Para obtener más información, vea [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+ This is a stand-alone walkthrough. After you complete this walkthrough, you can enhance the project item by adding a wizard to the item template. For more information, see [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Puede descargar un ejemplo que contiene los proyectos completos, el código y otros archivos para este tutorial en la siguiente ubicación: [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location:  [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
-## Requisitos previos  
- Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components on the development computer to complete this walkthrough:  
   
--   Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.  Para obtener más información, vea [Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Microsoft Windows, SharePoint and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)].  En este tutorial se utiliza la plantilla **Proyecto VSIX** del SDK para crear un paquete VSIX e implementar el elemento.  Para obtener más información, vea [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   The [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+ Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
   
--   Acciones personalizadas en SharePoint.  Para obtener más información, vea una [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+-   Custom actions in SharePoint. For more information, see [Custom Action](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Plantillas de elemento en Visual Studio.  Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).  
+-   Item templates in Visual Studio. For more information, see [Creating Project and Item Templates](/visualstudio/ide/creating-project-and-item-templates).  
   
-## Crear los proyectos  
- Para completar este tutorial, debe crear tres proyectos:  
+## <a name="creating-the-projects"></a>Creating the Projects  
+ To complete this walkthrough, you need to create three projects:  
   
--   Un proyecto VSIX.  Este proyecto crea el paquete VSIX para implementar el elemento de proyecto de SharePoint.  
+-   A VSIX project. This project creates the VSIX package to deploy the SharePoint project item.  
   
--   Un proyecto de plantilla de elemento.  Este proyecto crea una plantilla de elemento que se puede utilizar para agregar el elemento de proyecto de SharePoint a un proyecto de SharePoint.  
+-   An item template project. This project creates an item template that can be used to add the SharePoint project item to a SharePoint project.  
   
--   Un proyecto de biblioteca de clases.  Este proyecto implementa una extensión de Visual Studio que define el comportamiento del elemento de proyecto de SharePoint.  
+-   A class library project. This project implements a Visual Studio extension that defines the behavior of the SharePoint project item.  
   
- Comience el tutorial creando ambos proyectos.  
+ Start the walkthrough by creating the projects.  
   
-#### Para crear el proyecto VSIX  
+#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
   
-1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+2.  On the menu bar, choose **File**, **New**, **Project**.  
   
-3.  En la lista que aparece en la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** esté seleccionado.  
+3.  In the list at the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is selected.  
   
-4.  En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Visual C\#** o **Visual Basic** y, a continuación, elija el nodo **Extensibilidad**.  
-  
-    > [!NOTE]  
-    >  El nodo **Extensibilidad** solo está disponible si se instala Visual Studio SDK.  Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.  
-  
-5.  Elija la plantilla **Proyecto VSIX**.  
-  
-6.  En el cuadro **Nombre**, escriba **CustomActionProjectItem** y elija el botón **Aceptar**.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **CustomActionProjectItem** al **Explorador de soluciones**.  
-  
-#### Para crear el proyecto de plantilla de elemento  
-  
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y después **Nuevo proyecto**.  
+4.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
   
     > [!NOTE]  
-    >  En los proyectos de Visual Basic, el nodo de la solución aparece en el **Explorador de soluciones** solo cuando se activa la casilla **Mostrar solución siempre** en [General, Proyectos y soluciones, Cuadro de diálogo Opciones](http://msdn.microsoft.com/es-es/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
   
-2.  En la lista que aparece en la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** esté seleccionado.  
+5.  Choose the **VSIX Project** template.  
   
-3.  En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Visual C\#** o **Visual Basic** y, a continuación, elija el nodo **Extensibilidad**.  
+6.  In the **Name** box, enter **CustomActionProjectItem**, and then choose the **OK** button.  
   
-4.  En la lista de plantillas de proyecto, elija la plantilla **Plantilla de elemento de C\#** o **Plantilla de elemento de Visual Basic**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **CustomActionProjectItem** project to **Solution Explorer**.  
   
-5.  En el cuadro **Nombre**, escriba **ItemTemplate** y elija el botón **Aceptar**.  
+#### <a name="to-create-the-item-template-project"></a>To create the item template project  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ItemTemplate** a la solución.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
   
-#### Para crear la extensión de proyecto  
+    > [!NOTE]  
+    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución, elija **Agregar** y después **Nuevo proyecto**.  
+2.  In the list at the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is selected.  
   
-2.  En la lista que aparece en la parte superior del cuadro de diálogo **Nuevo proyecto**, asegúrese de que **.NET Framework 4.5** esté seleccionado.  
+3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
   
-3.  En el cuadro de diálogo **Nuevo proyecto**, expanda los nodos **Visual C\#** o **Visual Basic** elija el nodo **Windows** y después elija la plantilla de proyecto **Biblioteca de clases**.  
+4.  In the list of project templates, choose the **C# Item Template** or **Visual Basic Item Template** template.  
   
-4.  En el cuadro **Nombre**, escriba **ProjectItemDefinition** y elija el botón **Aceptar**.  
+5.  In the **Name** box, enter **ItemTemplate**, and then choose the **OK** button.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega el proyecto **ProjectItemDefinition** a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ItemTemplate** project to the solution.  
   
-5.  Elimine el archivo de código Class1 del proyecto.  
+#### <a name="to-create-the-extension-project"></a>To create the extension project  
   
-## Configurar el proyecto de extensión  
- Antes de escribir el código para definir el tipo de elemento de proyecto de SharePoint, tiene que agregar los archivos de código y las referencias de ensamblado al proyecto de extensión.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
   
-#### Para configurar el proyecto  
+2.  In the list at the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is selected.  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition**, elija **Agregar** y luego **Nuevo elemento**.  
+3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, choose the **Windows** node, and then choose the **Class Library** project template.  
   
-2.  En la lista de elementos de proyecto, elija **Archivo de código**.  
+4.  In the **Name** box, enter **ProjectItemDefinition**, and then choose the **OK** button.  
   
-3.  En el cuadro **Nombre**, escriba el nombre **CustomAction** con la extensión de nombre de archivo correcta y elija el botón **Agregar**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ProjectItemDefinition** project to the solution and opens the default Class1 code file.  
   
-4.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition** y luego elija **Agregar referencia**.  
+5.  Delete the Class1 code file from the project.  
   
-5.  En el cuadro de diálogo **Administrador de referencias – ProjectItemDefinition**, elija el nodo **Ensamblados** y **Framework**.  
+## <a name="configuring-the-extension-project"></a>Configuring the Extension Project  
+ Before you write code to define the SharePoint project item type, you have to add code files and assembly references to the extension project.  
   
-6.  Active la casilla situada al lado de cada uno de los siguientes ensamblados:  
+#### <a name="to-configure-the-project"></a>To configure the project  
+  
+1.  In **Solution Explorer**, open the shortcut menu for the **ProjectItemDefinition** project, choose **Add**, then choose **New Item**.  
+  
+2.  In the list of project items, choose **Code File**.  
+  
+3.  In the **Name** box, enter the name **CustomAction** with the appropriate file name extension, and then choose the **Add** button.  
+  
+4.  In **Solution Explorer**, open the shortcut menu for the **ProjectItemDefinition** project, and then choose **Add Reference**.  
+  
+5.  In the **Reference Manager - ProjectItemDefinition** dialog box, choose the **Assemblies** node, and then choose the **Framework** node.  
+  
+6.  Select the check box next to each of the following assemblies:  
   
     -   System.ComponentModel.Composition  
   
     -   System.Windows.Forms  
   
-7.  Elija el nodo **Extensiones**, active la casilla situada junto al ensamblado Microsoft.VisualStudio.SharePoint y después elija el botón **Aceptar**.  
+7.  Choose the **Extensions** node, select the check box next to the Microsoft.VisualStudio.Sharepoint assembly, and then choose the **OK** button.  
   
-## Definir el nuevo tipo de elemento de proyecto de SharePoint  
- Cree una clase que implemente la interfaz <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> para definir el comportamiento del nuevo tipo de elemento de proyecto.  Implemente esta interfaz para definir un nuevo tipo de elemento de proyecto todas las veces que desee.  
+## <a name="defining-the-new-sharepoint-project-item-type"></a>Defining the New SharePoint Project Item Type  
+ Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface to define the behavior of the new project item type. Implement this interface whenever you want to define a new type of project item.  
   
-#### Para definir el nuevo tipo de elemento de proyecto de SharePoint  
+#### <a name="to-define-the-new-sharepoint-project-item-type"></a>To define the new SharePoint project item type  
   
-1.  En el proyecto ProjectItemDefinition, abra el archivo de código CustomAction.  
+1.  In the ProjectItemDefinition project, open the CustomAction code file.  
   
-2.  Reemplace el código de este archivo por el código siguiente.  
+2.  Replace the code in this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.customaction/cs/projectitemtypedefinition/customaction.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.customaction/vb/projectitemdefinition/customaction.vb#1)]  
+     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]  [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]  
   
-## Crear un icono para el elemento de proyecto en el Explorador de soluciones  
- Cuando crea un elemento de proyecto de SharePoint personalizado, puede asociarle una imagen \(un icono o mapa de bits\).  Esta imagen aparece al lado del elemento de proyecto en el **Explorador de soluciones**.  
+## <a name="creating-an-icon-for-the-project-item-in-solution-explorer"></a>Creating an Icon for the Project Item in Solution Explorer  
+ When you create a custom SharePoint project item, you can associate an image (an icon or bitmap) with the project item. This image appears next to the project item in **Solution Explorer**.  
   
- En el procedimiento siguiente se crea un icono para el elemento de proyecto y se incrusta en el ensamblado de la extensión.  El <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> de la clase `CustomActionProjectItemTypeProvider` que creó anteriormente hace referencia a este icono.  
+ In the following procedure, you create an icon for the project item and embed the icon in the extension assembly. This icon is referenced by the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute> of the `CustomActionProjectItemTypeProvider` class that you created earlier.  
   
-#### Para crear un icono personalizado para el elemento de proyecto  
+#### <a name="to-create-a-custom-icon-for-the-project-item"></a>To create a custom icon for the project item  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **ProjectItemDefinition**, elija **Agregar** y luego **Nuevo elemento…**.  
+1.  In **Solution Explorer**, open the shortcut menu for the **ProjectItemDefinition** project, choose **Add**, and then choose **New Item...**.  
   
-2.  En la lista de elementos de proyecto, elija el elemento **Archivo de icono**.  
-  
-    > [!NOTE]  
-    >  En los proyectos Visual Basic, debe elegir el nodo **General** para mostrar el elemento **Archivo de icono**.  
-  
-3.  En el cuadro **Nombre**, escriba **CustomAction\_SolutionExplorer.ico** y elija el botón **Agregar**.  
-  
-     El nuevo icono se abre en el **Editor de imágenes**.  
-  
-4.  Modifique la versión 16x16 del archivo de icono para que tenga un diseño que pueda reconocer y guarde el archivo.  
-  
-5.  En el **Explorador de soluciones**, elija **CustomAction\_SolutionExplorer.ico**.  
-  
-6.  En la ventana **Propiedades**, elija la flecha situada junto a la propiedad **Acción de compilación**.  
-  
-7.  En la lista que aparece, elija **Recurso incrustado**.  
-  
-## Punto de control  
- En este punto del tutorial, todo el código del elemento de proyecto está en el proyecto.  Compile el proyecto para comprobar que se compila sin errores.  
-  
-#### Para compilar el proyecto  
-  
-1.  Abra el menú contextual del proyecto **ProjectItemDefinition** y elija **Compilar**.  
-  
-## Crear una plantilla de elementos de Visual Studio  
- Para permitir que otros desarrolladores usen el elemento de proyecto, debe crear una plantilla de proyecto o una plantilla de elemento de proyecto.  Los desarrolladores utilizan estas plantillas en Visual Studio para crear una instancia de su elemento de proyecto creando un nuevo proyecto o agregando un elemento a un proyecto existente.  En este tutorial, use el proyecto ItemTemplate para configurar el elemento de proyecto.  
-  
-#### Para crear la plantilla de elementos  
-  
-1.  Elimine el archivo de código Class1 del proyecto ItemTemplate.  
-  
-2.  En el proyecto ItemTemplate, abra el archivo ItemTemplate.vstemplate.  
-  
-3.  Reemplace el contenido del archivo por el siguiente código XML y, a continuación, guarde y cierre el archivo.  
+2.  In the list of project items, choose the **Icon File** item.  
   
     > [!NOTE]  
-    >  El siguiente código XML está diseñado para una plantilla de elemento de Visual C\#.  Si está creando una plantilla de elemento de Visual Basic, reemplace el valor del elemento `ProjectType` por `VisualBasic`.  
+    >  In Visual Basic projects, you must choose the **General** node to display the **Icon File** item.  
+  
+3.  In the **Name** box, enter **CustomAction_SolutionExplorer.ico**, and then choose the **Add** button.  
+  
+     The new icon opens in the **Image Editor**.  
+  
+4.  Edit the 16x16 version of the icon file so that it has a design you can recognize, and then save the icon file.  
+  
+5.  In **Solution Explorer**, choose **CustomAction_SolutionExplorer.ico**.  
+  
+6.  In the **Properties** window, choose the arrow next to the **Build Action** property.  
+  
+7.  In the list that appears, choose **Embedded Resource**.  
+  
+## <a name="checkpoint"></a>Checkpoint  
+ At this point in the walkthrough, all the code for the project item is now in the project. Build the project to verify that it compiles without errors.  
+  
+#### <a name="to-build-your-project"></a>To build your project  
+  
+1.  Open the shortcut menu for the **ProjectItemDefinition** project and choose **Build**.  
+  
+## <a name="creating-a-visual-studio-item-template"></a>Creating a Visual Studio Item Template  
+ To enable other developers to use your project item, you must create a project template or item template. Developers use these templates in Visual Studio to create an instance of your project item by creating a new project, or by adding an item to an existing project. For this walkthrough, use the ItemTemplate project to configure your project item.  
+  
+#### <a name="to-create-the-item-template"></a>To create the item template  
+  
+1.  Delete the Class1 code file from the ItemTemplate project.  
+  
+2.  In the ItemTemplate project, open the ItemTemplate.vstemplate file.  
+  
+3.  Replace the contents of the file with the following XML, and then save and close the file.  
+  
+    > [!NOTE]  
+    >  The following XML is for a Visual C# item template. If you are creating a Visual Basic item template, replace the value of the `ProjectType` element with `VisualBasic`.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
         <DefaultName>CustomAction</DefaultName>  
@@ -223,18 +227,18 @@ caps.handback.revision: 151
     </VSTemplate>  
     ```  
   
-     Este archivo define el contenido y comportamiento de la plantilla de elementos.  Para obtener más información sobre el contenido de este archivo, vea [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+     This file defines the contents and behavior of the item template. For more information about the contents of this file, see [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
-4.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate**, elija **Agregar** y luego **Nuevo elemento**.  
+4.  In **Solution Explorer**, open the shortcut menu for the **ItemTemplate** project, choose **Add**, and then choose **New Item**.  
   
-5.  En el cuadro de diálogo **Agregar nuevo elemento**, elija la plantilla **Archivo de texto**.  
+5.  In the **Add New Item** dialog box, choose the **Text File** template.  
   
-6.  En el cuadro **Nombre**, escriba **CustomAction.spdata** y elija el botón **Agregar**.  
+6.  In the **Name** box, enter **CustomAction.spdata**, and then choose the **Add** button.  
   
-7.  Agregue el siguiente código XML al archivo CustomAction.spdata y, a continuación, guarde y cierre el archivo.  
+7.  Add the following XML to the CustomAction.spdata file, and then save and close the file.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.CustomAction" DefaultFile="Elements.xml"   
      xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
       <Files>  
@@ -243,18 +247,18 @@ caps.handback.revision: 151
     </ProjectItem>  
     ```  
   
-     Este archivo contiene información sobre los archivos que están contenidos en el elemento de proyecto.  El atributo `Type` del elemento `ProjectItem` debe estar establecido en la misma cadena que se pasa a <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> en la definición del elemento de proyecto \(la clase `CustomActionProjectItemTypeProvider` que creó anteriormente en este tutorial\).  Para obtener más información sobre el contenido de los archivos .spdata, vea [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md).  
+     This file contains information about the files that are contained by the project item. The `Type` attribute of the `ProjectItem` element must be set to the same string that is passed to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> on the project item definition (the `CustomActionProjectItemTypeProvider` class you created earlier in this walkthrough). For more information about the contents of .spdata files, see [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md).  
   
-8.  En el **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate**, elija **Agregar** y luego **Nuevo elemento**.  
+8.  In **Solution Explorer**, open the shortcut menu for the **ItemTemplate** project, choose **Add**, and then choose **New Item**.  
   
-9. En el cuadro de diálogo **Agregar nuevo elemento**, elija la plantilla **Archivo XML**.  
+9. In the **Add New Item** dialog box, choose the **XML File** template.  
   
-10. En el cuadro **Nombre**, escriba **Elements.xml** y elija el botón **Agregar**.  
+10. In the **Name** box, enter **Elements.xml**, and then choose the **Add** button.  
   
-11. Reemplace el contenido del archivo Elements.xml por el siguiente código XML y, a continuación, guarde y cierre el archivo.  
+11. Replace the contents of the Elements.xml file with the following XML, and then save and close the file.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="Replace this with a GUID or some other unique string"  
                     GroupId="SiteActions"  
@@ -267,21 +271,21 @@ caps.handback.revision: 151
     </Elements>  
     ```  
   
-     Este archivo define una acción personalizada predeterminada que crea un elemento en el menú **Acciones del sitio** del sitio de SharePoint.  Cuando un usuario elige el elemento de menú, la dirección URL especificada en el elemento `UrlAction` se abre en el explorador web.  Para obtener más información sobre los elementos XML que se pueden usar para definir una acción personalizada, vea las [definiciones de acciones personalizadas](http://go.microsoft.com/fwlink/?LinkId=177801).  
+     This file defines a default custom action that creates a menu item on the **Site Actions** menu of the SharePoint site. When a user chooses the menu item, the URL specified in the `UrlAction` element opens in the web browser. For more information about the XML elements you can use to define a custom action, see [Custom Action Definitions](http://go.microsoft.com/fwlink/?LinkId=177801).  
   
-12. Si lo desea. también puede abrir el archivo ItemTemplate.ico y modificarlo para que tenga un diseño que pueda reconocer.  Este icono se mostrará al lado del elemento de proyecto en el cuadro de diálogo **Agregar nuevo elemento**.  
+12. Optionally, open the ItemTemplate.ico file and modify it so that it has a design that you can recognize. This icon will display next to the project item in the **Add New Item** dialog box.  
   
-13. En el **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** y, a continuación, elija **Descargar el proyecto**.  
+13. In **Solution Explorer**, open the shortcut menu for the **ItemTemplate** project, and then choose **Unload Project**.  
   
-14. Abra de nuevo el menú contextual del proyecto **ItemTemplate** y, a continuación, elija **Editar ItemTemplate.csproj** o **Editar ItemTemplate.vbproj**.  
+14. Open the shortcut menu for the **ItemTemplate** project again, and then choose **Edit ItemTemplate.csproj** or **Edit ItemTemplate.vbproj**.  
   
-15. Busque el elemento `VSTemplate` siguiente en el archivo del proyecto.  
+15. Locate the following `VSTemplate` element in the project file.  
   
     ```  
     <VSTemplate Include="ItemTemplate.vstemplate">  
     ```  
   
-16. Reemplace este elemento `VSTemplate` por el siguiente código XML y, a continuación, guarde y cierre el archivo.  
+16. Replace this `VSTemplate` element with the following XML, and then save and close the file.  
   
     ```  
     <VSTemplate Include="ItemTemplate.vstemplate">  
@@ -289,178 +293,178 @@ caps.handback.revision: 151
     </VSTemplate>  
     ```  
   
-     El elemento `OutputSubPath` especifica las carpetas adicionales en la ruta de acceso en la que se crea la plantilla de elemento al compilar el proyecto.  Las carpetas especificadas aquí garantizan que la plantilla de elemento solo estará disponible cuando los clientes abran el cuadro de diálogo **Agregar nuevo elemento**, expandan el nodo **SharePoint** y, a continuación, elijan el nodo **2010**.  
+     The `OutputSubPath` element specifies additional folders in the path under which the item template is created when you build the project. The folders specified here ensure that the item template will be available only when customers open the **Add New Item** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
   
-17. En el **Explorador de soluciones**, abra el menú contextual del proyecto **ItemTemplate** y, a continuación, elija **Volver a cargar el proyecto**.  
+17. In **Solution Explorer**, open the shortcut menu for the **ItemTemplate** project, and then choose **Reload Project**.  
   
-## Crear un paquete VSIX para implementar el elemento de proyecto  
- Para implementar la extensión, utilice el proyecto VSIX en la solución para crear un paquete VSIX.  Primero, configure el paquete VSIX modificando el archivo source.extension.vsixmanifest incluido en el proyecto VSIX.  A continuación, cree el paquete VSIX compilando la solución.  
+## <a name="creating-a-vsix-package-to-deploy-the-project-item"></a>Creating a VSIX Package to Deploy the Project Item  
+ To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file that is included in the VSIX project. Then, create the VSIX package by building the solution.  
   
-#### Para crear y configurar el paquete VSIX  
+#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual para el archivo **source.extension.vsixmanifest** en el proyecto CustomActionProjectItem y, a continuación, elija **Abrir**.  
+1.  In **Solution Explorer**, open the shortcut menu for the **source.extension.vsixmanifest** file in the CustomActionProjectItem project, and then choose **Open**.  
   
-     Visual Studio abre el archivo en el editor de manifiestos.  El archivo source.extension.vsixmanifest es la base del archivo extension.vsixmanifest que requieren todos los paquetes VSIX.  Para obtener más información sobre este archivo, vea [Referencia de esquema de extensión VSIX](http://msdn.microsoft.com/es-es/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio opens the file in the manifest editor. The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
-2.  En el cuadro **Nombre de producto**, escriba **Custom Action Project Item**.  
+2.  In the **Product Name** box, enter **Custom Action Project Item**.  
   
-3.  En el cuadro **Autor**, escriba **Contoso**.  
+3.  In the **Author** box, enter **Contoso**.  
   
-4.  En el cuadro **Descripción**, escriba **Elemento de proyecto de SharePoint que representa una acción personalizada**.  
+4.  In the **Description** box, enter **A SharePoint project item that represents a custom action**.  
   
-5.  En la pestaña **Activos**, elija el botón **Nuevo**.  
+5.  On the **Assets** tab, choose the **New** button.  
   
-     Aparecerá el cuadro de diálogo **Agregar nuevo activo**.  
+     The **Add New Asset** dialog box appears.  
   
-6.  En la lista **Tipo**, elija **Microsoft.VisualStudio.ItemTemplate**.  
-  
-    > [!NOTE]  
-    >  Este valor corresponde al elemento `ItemTemplate` del archivo extension.vsixmanifest.  Este elemento identifica la subcarpeta del paquete VSIX que contiene la plantilla de elemento de proyecto.  Para obtener más información, vea [NIB: ItemTemplate Element \(VSX Schema\)](http://msdn.microsoft.com/es-es/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
-  
-7.  En la lista **Origen**, elija **Un proyecto de la solución actual**.  
-  
-8.  En la lista **Proyecto**, elija **ItemTemplate** y elija el botón **Aceptar**.  
-  
-9. En la pestaña **Activos**, elija el botón **Nuevo** otra vez.  
-  
-     Aparecerá el cuadro de diálogo **Agregar nuevo activo**.  
-  
-10. En la lista **Tipo**, elija **Microsoft.VisualStudio.MefComponent**.  
+6.  In the **Type** list, choose **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest.  Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX.  Para obtener más información, vea [NIB: MEFComponent Element \(VSX Schema\)](http://msdn.microsoft.com/es-es/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  This value corresponds to the `ItemTemplate` element in the extension.vsixmanifest file. This element identifies the subfolder in the VSIX package that contains the project item template. For more information, see [NIB: ItemTemplate Element (VSX Schema)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
   
-11. En la lista **Origen**, elija **Un proyecto de la solución actual**.  
+7.  In the **Source** list, choose **A project in current solution**.  
   
-12. En la lista **Proyecto**, elija **ProjectItemDefinition**.  
+8.  In the **Project** list, choose **ItemTemplate**, and then choose the **OK** button.  
   
-13. Elija el botón **Aceptar**.  
+9. In the **Assets** tab, choose the **New** button again.  
   
-14. En la barra de menús, elija **Compilación**, **Compilar solución** y asegúrese de que el proyecto se compila sin errores.  
+     The **Add New Asset** dialog box appears.  
   
-15. Asegúrese de que la carpeta de salida de la compilación del proyecto CustomActionProjectItem contiene el archivo CustomActionProjectItem.vsix.  
+10. In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
   
-     De forma predeterminada, la carpeta de salida de la compilación es ..\\bin\\Debug en la carpeta que contiene el proyecto CustomActionProjectItem.  
+    > [!NOTE]  
+    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-## Probar el elemento de proyecto  
- Ya puede probar el elemento de proyecto.  Primero, empiece a depurar la solución CustomActionProjectItem en la instancia experimental de Visual Studio.  A continuación, pruebe el elemento de proyecto **Acción personalizada** de un proyecto de SharePoint en la instancia experimental de Visual Studio.  Por último, compile y ejecute el proyecto SharePoint para comprobar que la acción personalizada funciona del modo esperado.  
+11. In the **Source** list, choose **A project in current solution**.  
   
-#### Para empezar a depurar la solución  
+12. In the **Project** list, choose **ProjectItemDefinition**.  
   
-1.  Reinicie Visual Studio con credenciales administrativas y abra la solución CustomActionProjectItem.  
+13. Choose the **OK** button.  
   
-2.  Abra el archivo de código CustomAction y, a continuación, agregue un punto de interrupción a la primera línea de código en el método `InitializeType`.  
+14. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the project compiles without errors.  
   
-3.  Elija la tecla **F5** para iniciar la depuración.  
+15. Make sure that the build output folder for the CustomActionProjectItem project contains the CustomActionProjectItem.vsix file.  
   
-     Visual Studio instala la extensión en %UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\10.0Exp\\Extensions\\Contoso\\Custom Action Project Item\\1 .0 e inicia una instancia experimental de Visual Studio.  Probará el elemento de proyecto en esta instancia de Visual Studio.  
+     By default, the build output folder is the ..\bin\Debug folder under the folder that contains the CustomActionProjectItem project.  
   
-#### Para probar el elemento de proyecto en Visual Studio  
+## <a name="testing-the-project-item"></a>Testing the Project Item  
+ You are now ready to test the project item. First, start debugging the CustomActionProjectItem solution in the experimental instance of Visual Studio. Then, test the **Custom Action** project item in a SharePoint project in the experimental instance of Visual Studio. Finally, build and run the SharePoint project to verify that the custom action works as expected.  
   
-1.  En la barra de menús de la instancia experimental de Visual Studio, elija **Archivo**, **Nuevo**, **Proyecto**.  
+#### <a name="to-start-debugging-the-solution"></a>To start debugging the solution  
   
-2.  Expanda **Visual C\#** o **Visual Basic** \(en función del lenguaje que admita la plantilla de elemento\), expanda **SharePoint** y, a continuación, elija el nodo **2010**.  
+1.  Restart Visual Studio with administrative credentials, and then open the CustomActionProjectItem solution.  
   
-3.  En la lista de plantillas de proyecto, elija **Proyecto de SharePoint 2010**.  
+2.  Open the CustomAction code file, and then add a breakpoint to the first line of code in the `InitializeType` method.  
   
-4.  En el cuadro **Nombre**, escriba **CustomActionTest** y elija el botón **Aceptar**.  
+3.  Choose the **F5** key to start debugging.  
   
-5.  En el **Asistente para personalización de SharePoint**, escriba la dirección URL del sitio que desea usar en la depuración y elija el botón **Finalizar**.  
+     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Custom Action Project Item\1.0 and starts an experimental instance of Visual Studio. You'll test the project item in this instance of Visual Studio.  
   
-6.  En el **Explorador de soluciones**, abra el menú contextual del nodo de proyecto, elija **Agregar** y luego **Nuevo elemento**.  
+#### <a name="to-test-the-project-item-in-visual-studio"></a>To test the project item in Visual Studio  
   
-7.  En el cuadro de diálogo **Agregar nuevo elemento**, elija el nodo **2010** en el nodo **SharePoint**.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
   
-     Compruebe que el elemento **Acción personalizada** aparece en la lista de elementos de proyecto.  
+2.  Expand **Visual C#** or **Visual Basic** (depending on the language that your item template supports), expand **SharePoint**, and then choose the **2010** node.  
   
-8.  Elija el elemento **Acción personalizada** y, a continuación, el botón **Agregar**.  
+3.  In the list of project templates, choose **SharePoint 2010 Project**.  
   
-     Visual Studio agrega un elemento denominado **CustomAction1** a su proyecto y abre el archivo Elements.xml en el editor.  
+4.  In the **Name** box, enter **CustomActionTest**, and then choose the **OK** button.  
   
-9. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `InitializeType`.  
+5.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging, and then choose the **Finish** button.  
   
-10. Elija la tecla **F5** para continuar depurando el proyecto.  
+6.  In **Solution Explorer**, open the shortcut menu for the project node, choose **Add**, and then choose **New Item**.  
   
-11. En la instancia experimental de Visual Studio, en el **Explorador de soluciones**, abra el menú contextual del nodo **CustomAction1** y, a continuación, elija **Ver diseñador de acción personalizada**.  
+7.  In the **Add New Item** dialog box, choose the **2010** node under the **SharePoint** node.  
   
-12. Compruebe que aparece un cuadro de mensaje y, a continuación, elija el botón **Aceptar**.  
+     Verify that the **Custom Action** item appears in the list of project items.  
   
-     Puede utilizar este menú contextual para proporcionar opciones o comandos adicionales a los desarrolladores, como mostrar un diseñador para la acción personalizada.  
+8.  Choose the **Custom Action** item, and then choose the **Add** button.  
   
-13. En la barra de menús, elija **Ver**, **Resultados**.  
+     Visual Studio adds an item that's named **CustomAction1** to your project and opens the Elements.xml file in the editor.  
   
-     Se abre la ventana **Resultados**.  
+9. Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `InitializeType` method.  
   
-14. En el **Explorador de soluciones**, abra el menú contextual para el elemento **CustomAction1**, y después cambie su nombre a **MyCustomAction**.  
+10. Choose the **F5** key to continue to debug the project.  
   
-     En la ventana **Resultados** aparece un mensaje de confirmación.  Este mensaje lo escribe el controlador de eventos <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> que se definió en la clase `CustomActionProjectItemTypeProvider`.  Puede controlar este y otros eventos de elementos de proyecto para implementar el comportamiento personalizado cuando el desarrollador modifica el elemento de proyecto.  
+11. In the experimental instance of Visual Studio, in **Solution Explorer**, open the shortcut menu for the **CustomAction1** node, and then choose **View Custom Action Designer**.  
   
-#### Para probar la acción personalizada en SharePoint  
+12. Verify that a message box appears, and then choose the **OK** button.  
   
-1.  En la instancia experimental de Visual Studio, abra el archivo Elements.xml que es un elemento secundario del elemento de proyecto **MyCustomAction**.  
+     You can use this shortcut menu to provide additional options or commands for developers, such as displaying a designer for the custom action.  
   
-2.  En el archivo Elements.xml, realice los cambios siguientes y guarde el archivo:  
+13. On the menu bar, choose **View**, **Output**.  
   
-    -   En el elemento `CustomAction`, establezca el atributo `Id` en un GUID o alguna otra cadena única como se muestra en el ejemplo siguiente:  
+     The **Output** window opens.  
+  
+14. In **Solution Explorer**, open the shortcut menu for the **CustomAction1** item, and then change its name to **MyCustomAction**.  
+  
+     In the **Output** window, a confirmation message appears. This message is written by the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> event handler that you defined in the `CustomActionProjectItemTypeProvider` class. You can handle this event and other project item events to implement custom behavior when the developer modifies the project item.  
+  
+#### <a name="to-test-the-custom-action-in-sharepoint"></a>To test the custom action in SharePoint  
+  
+1.  In the experimental instance of Visual Studio, open the Elements.xml file that's a child of the **MyCustomAction** project item.  
+  
+2.  In the Elements.xml file, make the following changes, and then save the file:  
+  
+    -   In the `CustomAction` element, set the `Id` attribute to a GUID or some other unique string as the following example shows:  
   
         ```  
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"  
         ```  
   
-    -   En el elemento `CustomAction`, establezca el atributo `Title` tal y como se muestra en el siguiente ejemplo:  
+    -   In the `CustomAction` element, set the `Title` attribute as the following example shows:  
   
         ```  
         Title="SharePoint Developer Center"  
         ```  
   
-    -   En el elemento `CustomAction`, establezca el atributo `Description` tal y como se muestra en el siguiente ejemplo:  
+    -   In the `CustomAction` element, set the `Description` attribute as the following example shows:  
   
         ```  
         Description="Opens the SharePoint Developer Center Web site."  
         ```  
   
-    -   En el elemento `UrlAction`, establezca el atributo `Url` tal y como se muestra en el siguiente ejemplo:  
+    -   In the `UrlAction` element, set the `Url` attribute as the following example shows:  
   
         ```  
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   
-3.  Elija la tecla F5.  
+3.  Choose the F5 key.  
   
-     La acción personalizada se empaqueta e implementa en el sitio de SharePoint que se especifica en la propiedad **URL del sitio** del proyecto.  El explorador web se abre en la página predeterminada de este sitio.  
+     The custom action is packaged and deployed to the SharePoint site that's specified in the **Site URL** property of the project. The web browser opens to the default page of this site.  
   
     > [!NOTE]  
-    >  Si aparece el cuadro de diálogo **Depuración de scripts deshabilitada**, elija el botón **Sí** para continuar depurando el proyecto.  
+    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button to continue to debug the project.  
   
-4.  En el menú **Acciones del sitio**, elija **Centro para desarrolladores de SharePoint**, compruebe que el explorador abre el sitio web http:\/\/msdn.microsoft.com\/sharepoint\/default.aspx y luego cierre el explorador web.  
+4.  On the **Site Actions** menu, choose **SharePoint Developer Center**, verify that the browser opens the website http://msdn.microsoft.com/sharepoint/default.aspx, and then close the web browser.  
   
-## Limpiar el equipo de desarrollo  
- Después de probar el elemento de proyecto, quite la plantilla de elemento de proyecto de la instancia experimental de Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
+ After you finish testing the project item, remove the project item template from the experimental instance of Visual Studio.  
   
-#### Para limpiar el equipo de desarrollo  
+#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
   
-1.  En la instancia experimental de Visual Studio, en la barra de menús, elija **Herramientas**, **Extensiones y actualizaciones**.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
   
-     Se abre el cuadro de diálogo **Extensiones y actualizaciones**.  
+     The **Extensions and Updates** dialog box opens.  
   
-2.  En la lista de extensiones, elija **Elemento proyecto acción personalizada** y, a continuación, **Desinstalar**.  
+2.  In the list of extensions, choose **Custom Action Project Item**, and then choose the **Uninstall** button.  
   
-3.  En el cuadro de diálogo que aparece, elija el botón **Sí** para confirmar la desinstalación.  
+3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension.  
   
-4.  Elija el botón **Reiniciar ahora** para completar la desinstalación.  
+4.  Choose the **Restart Now** button to complete the uninstallation.  
   
-5.  Cierre tanto la instancia experimental de Visual Studio como la instancia en la que se abre la solución CustomActionProjectItem.  
+5.  Close both the experimental instance of Visual Studio and the instance in which the CustomActionProjectItem solution is open.  
   
-## Pasos siguientes  
- Después de completar este tutorial, puede agregar un asistente a la plantilla de elemento.  Cuando un usuario agrega un elemento de proyecto Acción personalizada a un proyecto de SharePoint, el asistente recopila información sobre la acción \(como su ubicación y la dirección URL a la que se va a navegar al elegirse la acción\) y agrega esta información al archivo Elements.xml del nuevo elemento de proyecto.  Para obtener más información, vea [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+## <a name="next-steps"></a>Next Steps  
+ After you complete this walkthrough, you can add a wizard to the item template. When a user adds a Custom Action project item to a SharePoint project, the wizard collects information about the action (such as its location and the URL to navigate to when the action is chosen) and adds this information to the Elements.xml file in the new project item. For more information, see [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md)   
- [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Image Editor for Icons](/visual-cpp/windows/image-editor-for-icons)   
- [Creating an Icon or Other Image &#40;Image Editor for Icons&#41;](/visual-cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference)   
+ [Image Editor for Icons](/cpp/windows/image-editor-for-icons)   
+ [Creating an Icon or Other Image &#40;Image Editor for Icons&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

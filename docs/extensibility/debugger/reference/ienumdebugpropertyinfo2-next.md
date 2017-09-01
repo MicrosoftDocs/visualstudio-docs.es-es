@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugPropertyInfo2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugPropertyInfo2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugPropertyInfo2::Next"
+title: IEnumDebugPropertyInfo2::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugPropertyInfo2::Next
+helpviewer_keywords:
+- IEnumDebugPropertyInfo2::Next
 ms.assetid: 4eb8c7c3-aadf-4187-abee-c0620308a3eb
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumDebugPropertyInfo2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5f97a63ae9da055d40b1c6cbe3d91bf343aee067
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Devuelve el conjunto de elementos de la enumeración.  
+---
+# <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
+Returns the next set of elements from the enumeration.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG                 celt,  
-   DEBUG_PROPERTY_INFO** rgelt,  
-   ULONG*                pceltFetched  
+   ULONG                 celt,  
+   DEBUG_PROPERTY_INFO** rgelt,  
+   ULONG*                pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint                  celt,  
-   DEBUG_PROPERTY_INFO[] rgelt,  
-   ref uint              pceltFetched  
+   uint                  celt,  
+   DEBUG_PROPERTY_INFO[] rgelt,  
+   ref uint              pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- \[in, out\]  Matriz de elementos de [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md) que se completan.  
+ [in, out] Array of [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elements to be filled in.  
   
  `pceltFetched`  
- \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

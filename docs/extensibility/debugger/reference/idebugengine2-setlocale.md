@@ -1,51 +1,68 @@
 ---
-title: "IDebugEngine2::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::SetLocale"
-helpviewer_keywords: 
-  - "IDebugEngine2::SetLocale"
+title: IDebugEngine2::SetLocale | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::SetLocale
+helpviewer_keywords:
+- IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6b655d95dacbaf5142c6be70141420e553012d73
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Establece la configuración regional del motor de depuración \(DE\).  
+---
+# <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
+Sets the locale of the debug engine (DE).  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT SetLocale(   
-   WORD wLangID  
+```cpp  
+HRESULT SetLocale(   
+   WORD wLangID  
 );  
 ```  
   
-```c#  
-int SetLocale(   
-   ushort wLangID  
+```csharp  
+int SetLocale(   
+   ushort wLangID  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `wLangID`  
- \[in\]  especifica la configuración regional de idioma.  Por ejemplo, 1033 para inglés.  
+ [in] Specifies the language locale. For example, 1033 for English.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Este método llama el administrador de depuración de la sesión \(SDM\) para propagar la configuración regional del IDE para buscar cadenas devueltas por el OF correctamente.  
+## <a name="remarks"></a>Remarks  
+ This method is called by the session debug manager (SDM) to propagate the locale settings of the IDE so that strings returned by the DE are properly localized.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

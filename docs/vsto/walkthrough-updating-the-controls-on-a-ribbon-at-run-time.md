@@ -1,306 +1,303 @@
 ---
-title: "Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecuci&#243;n"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "controles [desarrollo de Office en Visual Studio], cinta de opciones"
-  - "menús dinámicos [desarrollo de Office en Visual Studio]"
-  - "Cinta [desarrollo de Office en Visual Studio], controles"
-  - "Cinta [desarrollo de Office en Visual Studio], menú dinámico"
-  - "Cinta [desarrollo de Office en Visual Studio], actualizar"
-  - "actualizar controles de la cinta de opciones"
+title: 'Walkthrough: Updating the Controls on a Ribbon at Run Time | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], controls
+- updating Ribbon controls
+- Ribbon [Office development in Visual Studio], dynamic menu
+- dynamic menus [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], updating
 ms.assetid: ed80790f-3f95-47e4-8a41-872588a8ca07
 caps.latest.revision: 51
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 50
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cc34acd219401610dcb936f9dbca59620aab7d71
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecuci&#243;n
-  En este tutorial se muestra cómo usar el modelo de objetos de la cinta de opciones para actualizar los controles en una cinta después de cargarla en la aplicación de Office.  
+# <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: Updating the Controls on a Ribbon at Run Time
+  This walkthrough demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- En el ejemplo, se extraen los datos de la base de datos de ejemplo Northwind para rellenar un cuadro combinado y un menú en Microsoft Office Outlook.  Los elementos que se seleccionan en estos controles rellenan automáticamente campos como **Para** y **Asunto** en un mensaje de correo electrónico.  
+ The example pulls data from the Northwind sample database to populate a combo box and menu in Microsoft Office Outlook. Items that you select in these controls automatically populate fields such as **To** and **Subject** in an e-mail message.  
   
- En este tutorial se muestran las tareas siguientes:  
+ This walkthrough illustrates the following tasks:  
   
--   Crear un proyecto de complemento de VSTO de Outlook  
+-   Creating a new Outlook VSTO Add-in project.  
   
--   Diseñar un grupo personalizado de la cinta de opciones  
+-   Designing a custom Ribbon group.  
   
--   Agregar el grupo personalizado a una pestaña integrada  
+-   Adding the custom group to a built-in tab.  
   
--   Actualizar los controles de la cinta de opciones en tiempo de ejecución  
+-   Updating controls on the Ribbon at run time.  
   
 > [!NOTE]  
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones.  La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos.  Para obtener más información, consulte [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Requisitos previos  
- Necesita los componentes siguientes para completar este tutorial:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Outlook  
   
-## Crear un proyecto de complemento de VSTO de Outlook  
- En primer lugar, cree un proyecto de complemento de VSTO de Outlook.  
+## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Creating a New Outlook VSTO Add-in Project  
+ First, create an Outlook VSTO Add-in project.  
   
-#### Para crear un proyecto de complemento de VSTO de Outlook  
+#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>To create a new Outlook VSTO Add-in project  
   
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento de VSTO de Outlook con el nombre Ribbon\_Update\_At\_Runtime.  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Outlook VSTO Add-in project with the name **Ribbon_Update_At_Runtime**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione **Crear directorio para la solución**.  
+2.  In the **New Project** dialog box, select **Create directory for solution**.  
   
-3.  Guarde el proyecto en el directorio de proyecto predeterminado.  
+3.  Save the project to the default project directory.  
   
-     Para obtener más información, consulte [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## Diseñar un grupo personalizado de la cinta de opciones  
- La cinta de opciones de este ejemplo aparecerá cuando un usuario cree un nuevo mensaje de correo electrónico.  Para crear un grupo personalizado en la cinta de opciones, primero agregue un elemento de la cinta de opciones al proyecto y, después, diseñe el grupo en el Diseñador de la cinta de opciones.  Este grupo personalizado ayudará a generar mensajes de correo electrónico de seguimiento para los clientes extrayendo los nombres e historiales de pedidos de una base de datos.  
+## <a name="designing-a-custom-ribbon-group"></a>Designing a Custom Ribbon Group  
+ The Ribbon for this example will appear when a user composes a new mail message. To create a custom group for the Ribbon, first add a Ribbon item to your project, and then design the group in the Ribbon Designer. This custom group will help you generate follow-up e-mail messages to customers by pulling names and order histories from a database.  
   
-#### Para diseñar un grupo personalizado  
+#### <a name="to-design-a-custom-group"></a>To design a custom group  
   
-1.  En el menú **Proyecto**, haga clic en **Agregar nuevo elemento**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  En el cuadro de diálogo **Agregar nuevo elemento**, seleccione **Cinta \(diseñador visual\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Cambie el nombre de la nueva cinta de opciones por **CustomerRibbon** y, después, haga clic en **Agregar**.  
+3.  Change the name of the new Ribbon to **CustomerRibbon**, and then click **Add**.  
   
-     El archivo **CustomerRibbon.cs** o **CustomerRibbon.vb** se abre en el Diseñador de la cinta de opciones y muestra una pestaña y un grupo predeterminados.  
+     The **CustomerRibbon.cs** or **CustomerRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  Haga clic en el Diseñador de la cinta de opciones para seleccionarlo.  
+4.  Click the Ribbon Designer to select it.  
   
-5.  En la ventana **Propiedades**, haga clic en la flecha desplegable situada junto a la propiedad **RibbonType** y, después, haga clic en **Microsoft.Outlook.Mail.Compose**.  
+5.  In the **Properties** window, click the drop-down arrow next to the **RibbonType** property, and then click **Microsoft.Outlook.Mail.Compose**.  
   
-     De este modo, la cinta de opciones aparecerá cuando el usuario redacte un nuevo mensaje de correo en Outlook.  
+     This enables the Ribbon to appear when the user composes a new mail message in Outlook.  
   
-6.  En el Diseñador de la cinta de opciones, haga clic en **Grupo1** para seleccionarlo.  
+6.  In the Ribbon Designer, click **Group1** to select it.  
   
-7.  En la ventana **Propiedades** , establezca **Etiqueta** en Compras de cliente.  
+7.  In the **Properties** window, set **Label** to **Customer Purchases**.  
   
-8.  En la pestaña **Controles de la cinta de opciones de Office**  del **Cuadro de herramientas**, arrastre un **ComboBox** hasta el grupo **Compras de cliente**.  
+8.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ComboBox** onto the **Customer Purchases** group.  
   
-9. Haga clic en **ComboBox1** para seleccionarlo.  
+9. Click **ComboBox1** to select it.  
   
-10. En la ventana **Propiedades**, establezca **Etiqueta** en Clientes.  
+10. In the **Properties** window, set **Label** to **Customers**.  
   
-11. En la pestaña **Controles de la cinta de opciones de Office**  del **Cuadro de herramientas**, arrastre un **Menú** hasta el grupo **Compras de cliente**.  
+11. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **Menu** onto the **Customer Purchases** group.  
   
-12. En la ventana **Propiedades**, establezca **Etiqueta** en Producto comprado.  
+12. In the **Properties** window, set **Label** to **Product Purchased**.  
   
-13. Establezca **Dinámico** en **true**.  
+13. Set **Dynamic** to **true**.  
   
-     De este modo, puede agregar y quitar controles del menú en tiempo de ejecución después de que se haya cargado la cinta de opciones en la aplicación de Office.  
+     This enables you to add and remove controls on the menu at run time after the Ribbon is loaded into the Office application.  
   
-## Agregar el grupo personalizado a una pestaña integrada  
- Una pestaña integrada es una pestaña que ya está en la cinta de opciones de un inspector o explorador de Outlook.  En este procedimiento agregará el grupo personalizado a una pestaña integrada y especificará la posición del grupo personalizado en la pestaña.  
+## <a name="adding-the-custom-group-to-a-built-in-tab"></a>Adding the Custom Group to a Built-in Tab  
+ A built-in tab is a tab that is already on the Ribbon of an Outlook Explorer or Inspector. In this procedure, you will add the custom group to a built-in tab, and then specify the position of the custom group on the tab.  
   
-#### Para agregar el grupo personalizado a una pestaña integrada  
+#### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>To add the custom group to a built-in tab  
   
-1.  Haga clic en la pestaña **TabAddins \(Integrado\)** para seleccionarla.  
+1.  Click the **TabAddins (Built-In)** tab to select it.  
   
-2.  En la ventana **Propiedades**, expanda la propiedad **ControlId** y, después, establezca **OfficeId** en TabNewMailMessage.  
+2.  In the **Properties** window, expand the **ControlId** property, and then set **OfficeId** to **TabNewMailMessage**.  
   
-     De este modo, se agrega el grupo **Compras del cliente** a la pestaña **Mensajes** de la cinta de opciones que aparece en un nuevo mensaje de correo.  
+     This adds the **Customer Purchases** group to the **Messages** tab of the Ribbon that appears in a new mail message.  
   
-3.  Haga clic en el grupo **Compras del cliente** para seleccionarlo.  
+3.  Click the **Customer Purchases** group to select it.  
   
-4.  En la ventana **Propiedades**, expanda la propiedad **Position**, haga clic en la flecha desplegable situada junto a la propiedad **PositionType** y, después, haga clic en **BeforeOfficeId**.  
+4.  In the **Properties** window, expand the **Position** property, click the drop-down arrow next to the **PositionType** property, and then click **BeforeOfficeId**.  
   
-5.  Establezca la propiedad **OfficeId** en GroupClipboard.  
+5.  Set the **OfficeId** property to **GroupClipboard**.  
   
-     De este modo, se coloca el grupo **Compras del cliente** delante del grupo **Portapapeles** de la pestaña **Mensajes**.  
+     This positions the **Customer Purchases** group before the **Clipboard** group of the **Messages** tab.  
   
-## Crear el origen de datos  
- Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo al proyecto.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### Para crear el origen de datos  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  En el menú **Datos**, haga clic en **Agregar nuevo elemento**.  
+1.  On the **Data** menu, click **Add New Data Source**.  
   
-     Se inicia el **Asistente para la configuración de orígenes de datos**.  
+     This starts the **Data Source Configuration Wizard**.  
   
-2.  Seleccione **Base de datos** y haga clic en **Siguiente**.  
+2.  Select **Database**, and then click **Next**.  
   
-3.  Seleccione **Conjunto de datos** y haga clic en **Siguiente**.  
+3.  Select **Dataset**, and then click **Next**.  
   
-4.  Seleccione una conexión de datos a la base de datos de ejemplo Northwind de Microsoft SQL Server Compact 4.0 o agregue una nueva conexión mediante el botón **Nueva conexión**.  
+4.  Select a data connection to the Northwind sample Microsoft SQL Server Compact 4.0 database, or add a new connection by using the **New Connection** button.  
   
-5.  Cuando haya seleccionado o creado una conexión, haga clic en **Siguiente**.  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  Haga clic en **Siguiente** para guardar la cadena de conexión.  
+6.  Click **Next** to save the connection string.  
   
-7.  En la página **Elija los objetos de base de datos**, expanda **Tablas**.  
+7.  On the **Choose Your Database Objects** page, expand **Tables**.  
   
-8.  Active la casilla situada al lado de cada una de las siguientes tablas:  
+8.  Select the check box next to each of the following tables:  
   
     1.  **Customers**  
   
-    2.  **Detalles del pedido**  
+    2.  **Order Details**  
   
-    3.  **Pedidos**  
+    3.  **Orders**  
   
-    4.  **Productos**  
+    4.  **Products**  
   
-9. Haga clic en **Finalizar**.  
+9. Click **Finish**.  
   
-## Actualizar los controles del grupo personalizado en tiempo de ejecución  
- Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguientes tareas:  
+## <a name="updating-controls-in-the-custom-group-at-run-time"></a>Updating Controls in the Custom Group at Run Time  
+ Use the Ribbon object model to perform the following tasks:  
   
--   Agregar nombres de cliente al cuadro combinado **Clientes**.  
+-   Add customer names to the **Customers** combo box.  
   
--   Agregar controles de menú y de botón al menú **Productos comprados** que representen los pedidos y los productos vendidos.  
+-   Add menu and button controls to the **Products Purchased** menu that represent sales orders and products sold.  
   
--   Rellenar los campos To, Subject y Body de los nuevos mensajes de correo usando los datos del cuadro combinado **Clientes** y del menú **Productos comprados**.  
+-   Populate the To, Subject, and Body fields of new mail messages by using data from the **Customers** combo box and **Products Purchased** menu.  
   
-#### Para actualizar los controles del grupo personalizado mediante el modelo de objetos de la cinta de opciones  
+#### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>To update controls in the custom group by using the Ribbon object model  
   
-1.  En el menú **Proyecto**, haga clic en **Agregar referencia**.  
+1.  On the **Project** menu, click **Add Reference**.  
   
-2.  En el cuadro de diálogo **Agregar referencia**, haga clic en la pestaña **.NET**, seleccione el ensamblado  **System.Data.Linq** y, después, haga clic en **Aceptar**.  
+2.  In the **Add Reference** dialog box, click the **.NET** tab, select the **System.Data.Linq** assembly, and then click **OK**.  
   
-     Este ensamblado contiene las clases para usar Language\-Integrated Queries \(LINQ\).  Va a usar LINQ para rellenar los controles del grupo personalizado con datos de la base de datos Northwind.  
+     This assembly contains classes for using Language-Integrated Queries (LINQ). You will use LINQ to populate controls in the custom group with data from the Northwind database.  
   
-3.  En el **Explorador de soluciones**, haga clic en el archivo **CustomerRibbon.cs** o **CustomerRibbon.vb** para seleccionarlo.  
+3.  In **Solution Explorer**, click **CustomerRibbon.cs** or **CustomerRibbon.vb** to select it.  
   
-4.  En el menú **Ver**, haga clic en **Código**.  
+4.  On the **View** menu, click **Code**.  
   
-     Se abre el archivo de código de la cinta de opciones en el editor de código.  
+     The Ribbon code file opens in the Code Editor.  
   
-5.  Agregue las siguientes instrucciones a la parte superior del archivo de código de la cinta de opciones.  Estas instrucciones proporcionan acceso fácil a los espacios de nombres LINQ y al espacio de nombres del ensamblado de interoperabilidad primario \(PIA\) de Outlook.  
+5.  Add the following statements to the top of the Ribbon code file. These statements provide easy access to LINQ namespaces and to the namespace of the Outlook primary interop assembly (PIA).  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Agregue el siguiente código dentro de la clase CustomerRibbon.  Este código declara los adaptadores de tabla y tabla de datos que usará para almacenar la información de las tablas de clientes, pedidos, detalles de pedidos y productos de la base de datos Northwind.  
+6.  Add the following code inside the CustomerRibbon class. This code declares the data table and table adapters that you will use to store information from the Customer, Orders, Order Details, and Product tables of the Northwind database.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Agregue el siguiente bloque de código a la clase `CustomerRibbon`.  Este código agrega tres métodos auxiliares que crean los controles para la cinta de opciones en tiempo de ejecución.  
+7.  Add the following block of code to the `CustomerRibbon` class. This code adds three helper methods that create controls for the Ribbon at runtime.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Reemplace el método del controlador de eventos `CustomerRibbon_Load` por el siguiente código.  Este código usa una consulta LINQ para efectuar las siguientes tareas:  
+8.  Replace the `CustomerRibbon_Load` event handler method with the following code. This code uses a LINQ query to perform the following tasks:  
   
-    -   Rellenar el cuadro combinado **Clientes** con el identificador y el nombre de 20 clientes de la base de datos Northwind.  
+    -   Populate the **Customers** combo box by using the ID and name of 20 customers in the Northwind database.  
   
-    -   Llama al método auxiliar `PopulateSalesOrderInfo`.  Este método actualiza el menú **Productos comprados** con los números de pedido correspondientes al cliente actualmente seleccionado.  
+    -   Calls the `PopulateSalesOrderInfo` helper method. This method updates the **ProductsPurchased** menu with sales order numbers that pertain to the currently selected customer.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#4)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#4)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)] [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Agregue el código siguiente a la clase `CustomerRibbon`.  Este código usa consultas LINQ para efectuar las siguientes tareas:  
+9. Add the following code to the `CustomerRibbon` class. This code uses LINQ queries to perform the following tasks:  
   
-    -   Agregar un submenú al menú **Productos comprados** por cada pedido relacionado con el cliente seleccionado.  
+    -   Adds a submenu to the **ProductsPurchased** menu for each sales order related to the selected customer.  
   
-    -   Agregar botones a cada submenú para los productos relacionados con el pedido.  
+    -   Adds buttons to each submenu for the products related to the sales order.  
   
-    -   Agregar controladores de eventos a cada botón.  
+    -   Adds event handlers to each button.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#6)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#6)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)] [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
   
-10. En el **Explorador de soluciones**, haga doble clic en el archivo de código de la cinta de opciones.  
+10. In **Solution Explorer**, double-click the Ribbon code file.  
   
-     Se abre el Diseñador de la cinta de opciones.  
+     The Ribbon Designer opens.  
   
-11. En el Diseñador de la cinta de opciones, haga doble clic en el cuadro combinado **Clientes**.  
+11. In the Ribbon Designer, double-click the **Customers** combo box.  
   
-     El archivo de código de la cinta de opciones se abre en el editor de código y aparece el controlador de eventos `ComboBox1_TextChanged`.  
+     The Ribbon code file opens in the Code Editor, and the `ComboBox1_TextChanged` event handler appears.  
   
-12. Reemplace el controlador de eventos `ComboBox1_TextChanged` por el siguiente código.  Este código realiza las tareas siguientes:  
+12. Replace the `ComboBox1_TextChanged` event handler with the following code. This code performs the following tasks:  
   
-    -   Llama al método auxiliar `PopulateSalesOrderInfo`.  Este método actualiza el menú **Productos comprados** con los pedidos relacionados con el cliente seleccionado.  
+    -   Calls the `PopulateSalesOrderInfo` helper method. This method updates the **Products Purchased** menu with sales orders that relate to the selected customer.  
   
-    -   Llama al método auxiliar `PopulateMailItem` y pasa el texto actual, que es el nombre del cliente seleccionado.  Este método rellena los campos To, Subject y Body de los nuevos mensajes de correo.  
+    -   Calls the `PopulateMailItem` helper method and passes in the current text, which is the selected customer name. This method populates the To, Subject, and Body fields of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#5)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)] [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Agregue el siguiente controlador de eventos Click a la clase `CustomerRibbon`.  Este código agrega el nombre de los productos seleccionados al campo Body de los nuevos mensajes de correo.  
+13. Add the following Click event handler to the `CustomerRibbon` class. This code adds the name of selected products to the Body field of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#8)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#8)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]  [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
-14. Agregue el código siguiente a la clase `CustomerRibbon`.  Este código realiza las tareas siguientes:  
+14. Add the following code to the `CustomerRibbon` class. This code performs the following tasks:  
   
-    -   Rellena la línea To en los nuevos mensajes de correo con la dirección de correo electrónico del cliente actualmente seleccionado.  
+    -   Populates the To line of new mail messages by using the e-mail address of the currently selected customer.  
   
-    -   Agrega texto a los campos Subject y Body de los nuevos mensajes de correo.  
+    -   Adds text to the Subject and Body fields of new mail messages.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/CS/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Update_At_Runtime/VB/CustomerRibbon.vb#7)]  
+     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)] [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
-## Probar los controles en el grupo personalizado  
- Cuando abra un nuevo formulario de correo en Outlook, aparecerá el grupo personalizado **Compras del cliente** en la pestaña **Mensajes** de la cinta de opciones.  
+## <a name="testing-the-controls-in-the-custom-group"></a>Testing the Controls in the Custom Group  
+ When you open a new mail form in Outlook, a custom group named **Customer Purchases** appears on the **Messages** tab of the Ribbon.  
   
- Para crear un mensaje de correo electrónico de seguimiento de clientes, seleccione un cliente y, después, seleccione los productos comprados por ese cliente.  Los controles del grupo **Compras del cliente** se actualizan en tiempo de ejecución con los datos de la base de datos Northwind.  
+ To create a customer follow-up e-mail message, select a customer, and then select products purchased by the customer. The controls in the **Customer Purchases** group are updated at run time with data from the Northwind database.  
   
-#### Para probar los controles en el grupo personalizado  
+#### <a name="to-test-the-controls-in-the-custom-group"></a>To test the controls in the custom group  
   
-1.  Presione F5 para ejecutar el proyecto.  
+1.  Press F5 to run your project.  
   
-     Se inicia Outlook.  
+     Outlook starts.  
   
-2.  En Outlook, en el menú **Archivo**, elija **Nuevo** y haga clic en **Mensaje de correo**.  
+2.  In Outlook, on the **File** menu, point to **New**, and then click **Mail Message**.  
   
-     Se producen las siguientes acciones:  
+     The following actions occur:  
   
-    -   Aparece una nueva ventana del inspector de mensajes de correo.  
+    -   A new mail message Inspector window appears.  
   
-    -   En la pestaña **Mensaje** de la cinta de opciones, el grupo **Compras del cliente** aparece delante del grupo **Portapapeles**.  
+    -   On the **Message** tab of the Ribbon, the **Customer Purchases** group appears before the **Clipboard** group.  
   
-    -   El cuadro combinado **Clientes** del grupo se actualiza con los nombres de los clientes en la base de datos Northwind.  
+    -   The **Customers** combo box in the group is updated with the names of customers in the Northwind database.  
   
-3.  En la pestaña **Mensaje** de la cinta de opciones, en el grupo **Compras del cliente**, seleccione un cliente en el cuadro combinado **Clientes**.  
+3.  On the **Message** tab of the Ribbon, in the **Customer Purchases** group, select a customer from the **Customers** combo box.  
   
-     Se producen las siguientes acciones:  
+     The following actions occur:  
   
-    -   El menú **Productos comprados** se actualiza para mostrar cada pedido del cliente seleccionado.  
+    -   The **Products Purchased** menu is updated to show each sales order for the selected customer.  
   
-    -   Cada submenú del pedido se actualiza para mostrar los productos comprados en ese pedido.  
+    -   Each sales order submenu is updated to show the products purchased in that order.  
   
-    -   La dirección de correo electrónico del cliente seleccionado se agrega a la línea **Para** del mensaje de correo, y el asunto y el cuerpo del mensaje de correo se rellenan con texto.  
+    -   The selected customer's e-mail address is added to the **To** line of the mail message, and the subject and body of the mail message are populated with text.  
   
-4.  Haga clic en el menú **Productos comprados**, elija cualquier pedido y, después, haga clic en un producto del pedido.  
+4.  Click the **Products Purchases** menu, point to any sales order, and then click a product from the sales order.  
   
-     El nombre del producto se agrega al cuerpo del mensaje de correo.  
+     The product name is added to the body of the mail message.  
   
-## Pasos siguientes  
- Puede aprender más acerca de la personalización de la interfaz de usuario de Office en estos temas:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento.  Para obtener más información, consulte [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md).  
+-   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Extender un formulario estándar o personalizado de Microsoft Office Outlook.  Para obtener más información, consulte [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
--   Agregar un panel de tareas personalizado a Outlook.  Para obtener más información, consulte [Paneles de tareas personalizados](../vsto/custom-task-panes.md).  
+-   Add a custom task pane to Outlook. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
-## Vea también  
- [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)   
- [Language\-Integrated Query \(LINQ\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
- [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)   
- [Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Información general sobre el modelo de objetos para la cinta de opciones](../vsto/ribbon-object-model-overview.md)   
- [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
- [Cómo: Agregar controles en la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Cómo: Mostrar errores de la interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)   
+ [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)   
+ [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
+ [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [How to: Show Add-in User Interface Errors](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

@@ -1,76 +1,93 @@
 ---
-title: "Tutorial: Leer datos XML e introducirlos en un conjunto de datos | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], leer de archivos XML"
-  - "acceso a datos [Visual Studio], datos XML"
-  - "conjuntos de datos [Visual Basic], leer datos XML"
-  - "leer datos, XML (archivos)"
-  - "leer archivos, XML"
-  - "leer XML"
-  - "XML [Visual Studio], leer"
-  - "XML (documentos), leer"
+title: Read XML data into a dataset | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- reading XML
+- data access [Visual Studio], XML data
+- reading files, XML
+- data [Visual Studio], reading from XML files
+- reading data, XML files
+- XML [Visual Studio], reading
+- XML documents, reading
+- datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 18
-caps.handback.revision: 15
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e45b2a2ed21e3a1750a9c90b3efe1eee0e19947e
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Tutorial: Leer datos XML e introducirlos en un conjunto de datos
-ADO.NET proporciona métodos sencillos para trabajar con datos XML.  En este tutorial, se creará una aplicación para Windows que cargará datos XML en un conjunto de datos.  Después, el conjunto de datos se mostrará en un control <xref:System.Windows.Forms.DataGridView>.  Por último, se mostrará en un cuadro de texto un esquema XML basado en el contenido del archivo XML.  
+# <a name="read-xml-data-into-a-dataset"></a>Read XML data into a dataset
+ADO.NET provides simple methods for working with XML data. In this walkthrough, you  create a Windows application that  loads XML data into a dataset. The dataset is then displayed in a <xref:System.Windows.Forms.DataGridView> control. Finally, an XML schema based on the contents of the XML file is displayed in a text box.  
   
- Este tutorial consta de cinco pasos principales:  
+ This walkthrough consists of five main steps:  
   
-1.  Crear un proyecto nuevo.  
+1.  Creating a new project  
   
-2.  Crear un archivo XML que se leerá en el conjunto de datos.  
+2.  Creating an XML file to be read into the dataset  
   
-3.  Crear la interfaz de usuario.  
+3.  Creating the user interface  
   
-4.  Crear el conjunto de datos, leer el archivo XML y mostrarlo en un control <xref:System.Windows.Forms.DataGridView>.  
+4.  Creating the dataset, reading the XML file, and displaying it in a <xref:System.Windows.Forms.DataGridView> control  
   
-5.  Agregar código para mostrar en un control <xref:System.Windows.Forms.TextBox> el esquema XML basado en el archivo XML.  
+5.  Adding code to display the XML schema based on the XML file in a <xref:System.Windows.Forms.TextBox> control  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**.  Para obtener más información, vea [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition you're using. To change your settings, on the **Tools** menu, select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Crear un nuevo proyecto  
- En este paso, creará un proyecto de Visual Basic o Visual C\# que incluirá este tutorial.  
+## <a name="create-a-new-project"></a>Create a new project  
+ In this step, you  create a Visual Basic or Visual C# project that  contains this walkthrough.  
   
-#### Para crear el nuevo proyecto de Windows  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  En el menú **Archivo**, cree un nuevo proyecto.  
+1.  On the **File** menu, create a new project.  
   
-2.  Asigne al proyecto el nombre `ReadingXML`.  
+2.  Name the project `ReadingXML`.  
   
-3.  Seleccione **Aplicación para Windows** y haga clic en **Aceptar**.  Para obtener más información, vea [Aplicaciones cliente](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application**, and then select**OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Se crea el proyecto **ReadingXML** y se agrega al Explorador de soluciones.  
+     The **ReadingXML** project is created and added to **Solution Explorer**.  
   
-## Generar el archivo XML que será leído en el conjunto de datos  
- Debido a que este tutorial se centra en la lectura de datos XML en un conjunto de datos, se proporciona el contenido de un archivo XML.  
+## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generate the XML file to be read into the dataset  
+ Because this walkthrough focuses on reading XML data into a dataset, the contents of an XML file is provided.  
   
-#### Para crear el archivo XML que será leído en el conjunto de datos  
+#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>To create the XML file that will be read into the dataset  
   
-1.  En el menú **Proyecto**, elija **Agregar nuevo elemento**.  
+1.  On the **Project** menu, select **Add New Item**.  
   
-2.  Seleccione **Archivo XML**, asigne al archivo el nombre `authors.xml` y haga clic en **Agregar**.  
+2.  Select **XML File**, name the file `authors.xml`, and then select **Add**.  
   
-     El archivo XML se carga en el diseñador y está listo para su edición.  
+     The XML file loads into the designer and is ready for edit.  
   
-3.  Pegue el código siguiente en el editor, debajo de la declaración XML:  
+3.  Paste the following code into the editor below the XML declaration:  
   
     ```xml  
     <Authors_Table>  
@@ -132,37 +149,37 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML.  En este tut
     </Authors_Table>  
     ```  
   
-4.  En el menú **Archivo**, seleccione **Guardar authors.xml**.  
+4.  On the **File** menu, select **Save authors.xml**.  
   
-## Crear la interfaz de usuario  
- La interfaz de usuario para esta aplicación constará de los siguientes elementos:  
+## <a name="create-the-user-interface"></a>Create the user interface  
+ The user interface for this application consists of the following:  
   
--   Un control <xref:System.Windows.Forms.DataGridView> que mostrará el contenido del archivo XML como datos.  
+-   A <xref:System.Windows.Forms.DataGridView> control that displays the contents of the XML file as data.  
   
--   Un control <xref:System.Windows.Forms.TextBox> que mostrará el esquema XML del archivo XML.  
+-   A <xref:System.Windows.Forms.TextBox> control that displays the XML schema for the XML file.  
   
--   Dos controles <xref:System.Windows.Forms.Button>.  
+-   Two <xref:System.Windows.Forms.Button> controls.  
   
-    -   Un botón lee el archivo XML en el conjunto de datos y lo muestra en el control <xref:System.Windows.Forms.DataGridView>.  
+    -   One button reads the XML file into the dataset and displays it in the <xref:System.Windows.Forms.DataGridView> control.  
   
-    -   El segundo botón extrae el esquema del conjunto de datos y, a través de un <xref:System.IO.StringWriter>, lo muestra en el control <xref:System.Windows.Forms.TextBox>.  
+    -   A second button extracts the schema from the dataset, and through a <xref:System.IO.StringWriter> displays it in the <xref:System.Windows.Forms.TextBox> control.  
   
-#### Para agregar controles al formulario  
+#### <a name="to-add-controls-to-the-form"></a>To add controls to the form  
   
-1.  Abra `Form1` en la vista de diseño.  
+1.  Open `Form1` in design view.  
   
-2.  En el **Cuadro de herramientas**, arrastre los controles siguientes hasta el formulario:  
+2.  From the **Toolbox**, drag the following controls onto the form:  
   
-    -   Un control <xref:System.Windows.Forms.DataGridView>  
+    -   One <xref:System.Windows.Forms.DataGridView> control  
   
-    -   Un control <xref:System.Windows.Forms.TextBox>  
+    -   One <xref:System.Windows.Forms.TextBox> control  
   
-    -   Dos controles <xref:System.Windows.Forms.Button>  
+    -   Two <xref:System.Windows.Forms.Button> controls  
   
-3.  Establezca las siguientes propiedades:  
+3.  Set the following properties:  
   
-    |Control|Propiedad.|Configuración|  
-    |-------------|----------------|-------------------|  
+    |Control|Property|Setting|  
+    |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**ScrollBars**|**Vertical**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
@@ -170,79 +187,75 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML.  En este tut
     |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
-## Crear el conjunto de datos que recibirá los datos XML  
- En este procedimiento siguiente, se crea un nuevo conjunto de datos denominado `authors`.  Para obtener más información sobre conjuntos de datos, vea [Trabajar con los conjuntos de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
+## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Create the dataset thatreceives the XML data  
+ In this step, you create a new dataset named `authors`. For more information about datasets, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-#### Para crear un nuevo conjunto de datos que recibirá los datos XML  
+#### <a name="to-create-a-new-dataset-that--receives-the-xml-data"></a>To create a new dataset that  receives the XML data  
   
-1.  Con el archivo de código fuente para **Form1** seleccionado en el **Explorador de soluciones**, haga clic en el botón **Diseñador de vistas** en la barra de herramientas **Explorador de soluciones**.  
+1.  In **Solution Explorer**, select the source file for **Form1**, and then select the **View Designer** button on the **Solution Explorer** toolbar.  
   
-2.  Desde [Cuadro de herramientas, Datos \(Pestaña\)](../ide/reference/toolbox-data-tab.md), arrastre un **Conjunto de datos** hasta **Form1**.  
+2.  From the [Toolbox, Data Tab](../ide/reference/toolbox-data-tab.md), drag a **DataSet** onto **Form1**.  
   
-3.  **Conjunto de datos sin tipo** seleccione en el cuadro de diálogo de **Agregar conjunto de datos** , y haga clic en **Aceptar**.  
+3.  In the **Add Dataset** dialog box, select **Untyped dataset**, and then select **OK**.  
   
-     **DataSet1** se agrega a la bandeja de componentes.  
+     **DataSet1** is added to the component tray.  
   
-4.  En la ventana **Propiedades**, establezca las propiedades **Nombre** y <xref:System.Data.DataSet.DataSetName%2A> en `AuthorsDataSet`.  
+4.  In the **Properties** window, set the **Name** and <xref:System.Data.DataSet.DataSetName%2A> properties for`AuthorsDataSet`.  
   
-## Crear el controlador de eventos para leer los datos XML en el conjunto de datos  
- El botón **Leer XML** lee el archivo XML en el conjunto de datos y establece propiedades en el control <xref:System.Windows.Forms.DataGridView> que lo enlaza al conjunto de datos.  
+## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Create the event handler to read the XML file into the dataset  
+ The **Read XML** button reads the XML file into the dataset. It then sets properties on the <xref:System.Windows.Forms.DataGridView> control that bind it to the dataset.  
   
-#### Para agregar código al controlador de eventos ReadXmlButton\_Click  
+#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>To add code to the ReadXmlButton_Click event handler  
   
-1.  En el **Explorador de soluciones**, seleccione **Form1** y haga clic en el botón **Diseñador de vistas** del **Explorador de soluciones**.  
+1.  In **Solution Explorer**, select **Form1**,  and then select the **View Designer** button on the **Solution Explorer** toolbar.  
   
-2.  Haga doble clic en el botón **Leer XML**.  
+2.  Select the **Read XML** button.  
   
-     Se abrirá el **Editor de código** en el controlador de eventos `ReadXmlButton_Click`.  
+     The **Code Editor** opens at the `ReadXmlButton_Click` event handler.  
   
-3.  Escriba el código siguiente en el controlador de eventos `ReadXmlButton_Click`:  
+3.  Type the following code into the `ReadXmlButton_Click` event handler:  
   
-     [!code-cs[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]  
+     [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]  [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]  
   
-4.  En el código del controlador de eventos `ReadXMLButton_Click`, cambie la entrada `filepath =` a la ruta de acceso correcta.  
+4.  In the `ReadXMLButton_Click` event handler code, change the `filepath =` entry to the correct path.  
   
-## Crear el controlador de eventos para mostrar el esquema en el control TextBox  
- El botón **Mostrar esquema** crea un objeto <xref:System.IO.StringWriter> que se llena con el esquema y se muestra en el control <xref:System.Windows.Forms.TextBox>.  
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Create the event handler to display the schema in the textbox  
+ The **Show Schema** button creates a <xref:System.IO.StringWriter> object that's filled with the schema and is displayed in the <xref:System.Windows.Forms.TextBox>control.  
   
-#### Para agregar código al controlador de eventos ShowSchemaButton\_Click  
+#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>To add code to the ShowSchemaButton_Click event handler  
   
-1.  En el **Explorador de soluciones**, seleccione **Form1** y haga clic en el botón **Diseñador de vistas**.  
+1.  In **Solution Explorer**, select **Form1**, and then select the **View Designer** button.  
   
-2.  Haga doble clic en el botón **Mostrar esquema**.  
+2.  Select the **Show Schema** button.  
   
-     Se abrirá el **Editor de código** en el controlador de eventos `ShowSchemaButton_Click`.  
+     The **Code Editor** opens at the `ShowSchemaButton_Click` event handler.  
   
-3.  Escriba el código siguiente en el controlador de eventos `ShowSchemaButton_Click`.  
+3.  Type the following code into the `ShowSchemaButton_Click` event handler.  
   
-     [!code-cs[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]  
+     [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]  [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]  
   
-## Pruebas  
- Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista.  
+## <a name="test-the-form"></a>Test the form  
+ You can now test the form to make sure it behaves as expected.  
   
-#### Para comprobar el formulario  
+#### <a name="to-test-the-form"></a>To test the form  
   
-1.  Presione F5 para ejecutar la aplicación.  
+1.  Select **F5** to run the application.  
   
-2.  Haga clic en el botón **Leer XML**.  
+2.  Select the **Read XML** button.  
   
-     El control DataGridView muestra el contenido del archivo XML.  
+     The DataGridView displays the contents of the XML file.  
   
-3.  Haga clic en el botón **Mostrar esquema**.  
+3.  Select the **Show Schema** button.  
   
-     El cuadro de texto muestra el esquema XML del archivo XML.  
+     The text box displays the XML schema for the XML file.  
   
-## Pasos siguientes  
- Este tutorial muestra los pasos básicos para leer un archivo XML en un conjunto de datos, así como crear un esquema basado en el contenido del archivo XML.  Éstas son algunas de las tareas que pueden venir a continuación:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough teaches you the basics of reading an XML file into a dataset, as well as creating a schema based on the contents of the XML file. Here are some tasks that you might do next:  
   
--   Editar los datos del conjunto de datos y volver a escribirlos como XML.  Para obtener más información, vea <xref:System.Data.DataSet.WriteXml%2A>.  
+-   Edit the data in the dataset and write it back out as XML. For more information, see <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Editar los datos del conjunto de datos y escribirlos en una base de datos.  Para obtener más información, vea [Guardar datos](../data-tools/saving-data.md).  
+-   Edit the data in the dataset and write it out to a database. For more information, see [Saving Data](../data-tools/saving-data.md).  
   
-## Vea también  
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)       
+ [XML Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

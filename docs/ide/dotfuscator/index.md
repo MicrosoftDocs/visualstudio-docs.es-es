@@ -46,7 +46,7 @@ ms.lasthandoff: 06/23/2017
 Se utiliza para consolidar, proteger y eliminar aplicaciones de escritorio, móviles, de servidor e insertadas a fin de ayudar a salvaguardar secretos comerciales y propiedad intelectual de otra índole, reducir la piratería y la falsificación y proteger contra la manipulación y la depuración no autorizada.
 Dotfuscator funciona en ensamblados compilados sin necesidad de programación adicional ni de obtener acceso al código fuente.
 
-![](~/ide/dotfuscator/media/header.svg)
+![](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Por qué es importante la protección
 
@@ -67,7 +67,7 @@ Para obtener más información acerca de cómo Dotfuscator se ajusta a un ciclo 
 Su copia de Microsoft Visual Studio 2017 incluye una copia gratuita de ***PreEmptive Protection - Dotfuscator* Community Edition**, también conocido como Dotfuscator CE, para su uso personal.
 Para obtener instrucciones sobre cómo instalar la versión de Dotfuscator CE incluida con Visual Studio 2017, consulte la [página de instalación][install].
 
-Dotfuscator CE ofrece una gama de servicios de [consolidación y protección de software] [ software-protection] para desarrolladores, arquitectos y evaluadores.
+Dotfuscator CE ofrece una gama de servicios de [consolidación y protección de software] [software-protection] para desarrolladores, arquitectos y evaluadores.
 A continuación se presentan algunos ejemplos de [ofuscación de .NET][obfuscation] y otras características de [protección de aplicaciones][app-protection] incluidas en Dotfuscator CE:
 
 * *[Cambio del nombre][renaming]* de los identificadores para dificultar la utilización de técnicas de ingeniería inversa en los ensamblados compilados.

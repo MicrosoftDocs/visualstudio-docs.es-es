@@ -1,59 +1,76 @@
 ---
-title: "IDebugProgram2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgram2::Attach"
+title: IDebugProgram2::Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::Attach
+helpviewer_keywords:
+- IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProgram2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c20b759f000c17dbd6ec1fcd510b99ff70c6d9f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Asocia el programa.  
+---
+# <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
+Attaches to the program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugEventCallback2 pCallback  
+```csharp  
+int Attach(   
+   IDebugEventCallback2 pCallback  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pCallback`  
- \[in\]  Un objeto de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que se utilizará para la notificación de eventos de depuración.  
+ [in] An [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object to be used for debug event notification.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  La tabla siguiente se muestran algunos códigos de error posibles.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. The following table shows some possible error codes.  
   
-|Valor|Descripción|  
+|Value|Description|  
 |-----------|-----------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|El programa especificado ya está asociado al depurador.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Una infracción de seguridad producida durante el procedimiento de asociar.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programa de escritorio no se puede asociar el depurador.|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|The specified program is already attached to the debugger.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|A security violation occurred during the attach procedure.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|A desktop program cannot be attached to the debugger.|  
   
-## Comentarios  
- Un motor de depuración \(DE\) nunca llama a este método para asociar un programa.  Si el OF se ejecuta en el espacio de direcciones del programa, se llama al método de [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  Si se ejecuta en la sesión del espacio de direcciones \(SDM\) de administrador, se llama al método de [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .  
+## <a name="remarks"></a>Remarks  
+ A debug engine (DE) never calls this method to attach to a program. If the DE runs in the program's address space, the [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) method is called. If the DE runs in the session debug manager's (SDM) address space, the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) method is called.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   

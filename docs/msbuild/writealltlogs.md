@@ -1,50 +1,67 @@
 ---
-title: "WriteAllTLogs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "WriteAllTLogs"
-apilocation: 
-  - "filetracker.dll"
-apitype: "COM"
-helpviewer_keywords: 
-  - "WriteAllTLogs"
+title: WriteAllTLogs | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- WriteAllTLogs
+apilocation:
+- filetracker.dll
+apitype: COM
+helpviewer_keywords:
+- WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
 caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# WriteAllTLogs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: bceb71feaa265ba52af3716a090bbf5ecf24a6b8
+ms.contentlocale: es-es
+ms.lasthandoff: 06/03/2017
 
-Escribe registros de seguimiento para todos los contextos y subprocesos.  
+---
+# <a name="writealltlogs"></a>WriteAllTLogs
+Escribe registros de seguimiento para todos los subprocesos y contextos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp
 HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
 ```  
   
-#### Parámetros  
- \[in\] `intermediateDirectory`  
- El directorio en el que se almacena el registro de seguimiento.  
+#### <a name="parameters"></a>Parámetros  
+ [in] `intermediateDirectory`  
+ El directorio en el que almacenar el registro de seguimiento.  
   
- \[in\] `tlogRootName`  
+ [in] `tlogRootName`  
  El nombre raíz del nombre del archivo de registro.  
   
-## Valor devuelto  
- Un [HRESULT](assetId:///HRESULT?qualifyHint=False&autoUpgrade=True) con el bit [SUCCEEDED](assetId:///SUCCEEDED?qualifyHint=False&autoUpgrade=True) establecido si se creó el contexto de seguimiento.  
+## <a name="return-value"></a>Valor devuelto  
+ Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento se ha creado.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** FileTracker.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

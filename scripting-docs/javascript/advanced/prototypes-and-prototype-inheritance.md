@@ -1,32 +1,37 @@
 ---
-title: "Prototipos y herencia de prototipo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "prototipo [JavaScript]"
-  - "herencia de prototipo [JavaScript]"
+title: Prototipos y herencia de prototipos | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- prototype [JavaScript]
+- prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
+ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
+ms.contentlocale: es-es
+ms.lasthandoff: 08/11/2017
+
 ---
-# Prototipos y herencia de prototipo
-En JavaScript, `prototype` es una propiedad de funciones, y de objetos creados por las funciones constructoras.  El prototipo de una función es un objeto.  Se usa principalmente cuando se utiliza una función como constructor.  
+# <a name="prototypes-and-prototype-inheritance"></a>Prototipos y herencia de prototipos
+En JavaScript, `prototype` es una propiedad de funciones, y de objetos creados por las funciones constructoras. El prototipo de una función es un objeto. Se usa principalmente cuando se utiliza una función como constructor.  
   
-```javascript  
+```JavaScript  
 function Vehicle(wheels, engine) {  
     this.wheels = wheels;  
     this.engine = engine;  
@@ -35,10 +40,10 @@ function Vehicle(wheels, engine) {
   
  En el ejemplo anterior, el prototipo de la función `Vehicle` es el prototipo de cualquier objeto cuyas instancias se crean con el constructor `Vehicle`.  
   
-## Usar prototipos para agregar propiedades y métodos  
+## <a name="using-prototypes-to-add-properties-and-methods"></a>Usar prototipos para agregar propiedades y métodos  
  Puedes usar la propiedad `prototype` para agregar propiedades y métodos a los objetos, incluso a los que ya se han creado:  
   
-```javascript  
+```JavaScript  
 var testVehicle = new Vehicle(2, false);  
 Vehicle.prototype.color = "red";  
 var testColor = testVehicle.color;  
@@ -46,9 +51,9 @@ var testColor = testVehicle.color;
   
  El valor de `testColor` es "red".  
   
- Puede incluso agregar propiedades y métodos a objetos predefinidos.  Por ejemplo, puede definir un método `Trim` para el objeto prototipo `String`. Todas las cadenas del script heredarán el método.  
+ Puede incluso agregar propiedades y métodos a objetos predefinidos. Por ejemplo, puede definir un método `Trim` para el objeto prototipo `String`. Todas las cadenas del script heredarán el método.  
   
-```javascript  
+```JavaScript  
 String.prototype.trim = function()  
 {  
     // Replace leading and trailing spaces with the empty string  
@@ -63,24 +68,25 @@ s = s.trim();
 window.alert(s + " (" + s.length + ")");  
 ```  
   
-### Usar prototipos para derivar un objeto de otro con Object.create  
- El objeto `prototype` se puede usar para derivar un objeto de otro.  Por ejemplo, puede usar la función [Object.create](../../javascript/reference/object-create-function-javascript.md) para derivar un nuevo objeto `Bicycle` con el prototipo del objeto `Vehicle` que hemos definido antes \(además de todas las propiedades nuevas que necesite\).  
+### <a name="using-prototypes-to-derive-one-object-from-another-with-objectcreate"></a>Usar prototipos para derivar un objeto de otro con Object.create  
+
+El prototipo `Object` se puede usar para derivar un objeto de otro. Por ejemplo, puede usar la función [Object.create](../../javascript/reference/object-create-function-javascript.md) para derivar un nuevo objeto `Bicycle` con el prototipo del objeto `Vehicle` que hemos definido antes (además de todas las propiedades nuevas que necesite).  
   
-```javascript  
-var Bicycle = Object.create(Object.getPrototypeOf(Vehicle), {  
+```JavaScript  
+var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {  
     "pedals" :{value: true}  
 });  
   
 ```  
   
- El objeto `Bicycle` tiene las propiedades `wheels`, `engine`, `color` y `pedals`, y su prototipo es `Vehicle.prototype`.  El motor de JavaScript encuentra la propiedad `pedals` en `Bicycle` y busca la cadena de prototipo para encontrar las propiedades `wheels`, `engine` y `color` de `Vehicle`.  
+ El objeto `bicycle` tiene las propiedades `wheels`, `engine`, `color` y `pedals`, y su prototipo es `Vehicle.prototype`. El motor de JavaScript encuentra la propiedad `pedals` en `bicycle` y busca la cadena de prototipo para encontrar las propiedades `wheels`, `engine` y `color` de `Vehicle`.  
   
-### Cambiar el prototipo de un objeto  
- En Internet Explorer 11, puede reemplazar el prototipo interno de un objeto o función con un nuevo prototipo mediante la propiedad [\_\_proto](../../javascript/reference/proto-property-object-javascript.md).  Al utilizar esta propiedad, se heredan las propiedades y métodos del nuevo prototipo junto con otras propiedades y métodos en la cadena de prototipos.  
+### <a name="changing-an-objects-prototype"></a>Cambiar el prototipo de un objeto  
+ En Internet Explorer 11, puede reemplazar el prototipo interno de un objeto o función por un nuevo prototipo mediante la propiedad [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md). Al utilizar esta propiedad, se heredan las propiedades y métodos del nuevo prototipo junto con otras propiedades y métodos en la cadena de prototipos.  
   
- En el ejemplo siguiente se muestra cómo modificar el prototipo de un objeto.  Este ejemplo muestra cómo las propiedades heredadas del objeto cambian cuando cambia el prototipo.  
+ En el ejemplo siguiente se muestra cómo modificar el prototipo de un objeto. Este ejemplo muestra cómo las propiedades heredadas del objeto cambian cuando cambia el prototipo.  
   
-```javascript  
+```JavaScript  
 function Friend() {  
     this.demeanor = "happy";  
 }  
@@ -108,3 +114,4 @@ if (console && console.log) {
     console.log(player.ally === "Tom");             // Returns true  
 }  
 ```
+

@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
 ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
@@ -120,7 +120,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 |**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esto podría producir una baja tasa de imágenes por segundo en la interfaz y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar estos elementos (es decir, el tiempo empleado en Arrange, Measure, ApplyTemplate y ArrangeOverride) y genera los árboles visuales que participaron en una fase de Diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar, o para evaluar otros mecanismos de aplazamiento que optimicen la fase de diseño.|  
 |**Representar**|Tiempo invertido en representar elementos XAML en la pantalla.|  
 |**E/S**|Tiempo invertido en recuperar datos desde el disco local o desde recursos de red a los que se tiene acceso mediante la API [Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
-|**App Code**|Tiempo invertido en la ejecución de código (de usuario) de la aplicación no relacionado con el análisis ni el diseño.|  
+|**Código de aplicación**|Tiempo invertido en la ejecución de código (de usuario) de la aplicación no relacionado con el análisis ni el diseño.|  
 |**Otro XAML**|Tiempo invertido en ejecutar código en tiempo de ejecución XAML.|  
   
 > [!TIP]
@@ -137,6 +137,6 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 |![Personalizar la información de detalles de la escala de tiempo](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permite especificar las anotaciones de eventos.|  
   
 ## <a name="see-also"></a>Vea también  
- [Blog del equipo de WPF: nueva herramienta de análisis del rendimiento de la interfaz de usuario para aplicaciones de WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones de WPF)](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Procedimientos recomendados para la Tienda Windows con C++, C# y Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimizar el rendimiento de la aplicación WPF](http://msdn.microsoft.com/Library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Optimizar WPF: Rendimiento de aplicaciones](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

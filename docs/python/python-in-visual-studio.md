@@ -1,38 +1,25 @@
 ---
 title: Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 5/2/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: hero-article
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: c46c8b7a0d9ea1509dcda2ef711562b3cf95b259
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 082ac09fcc1bb466de891d0daa7178e505c35770
 ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -40,7 +27,7 @@ ms.lasthandoff: 05/09/2017
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
-Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del desarrollo de Python y las cargas de trabajo de ciencia de datos (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores). 
+Visual Studio en Windows proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del desarrollo de Python y las cargas de trabajo de ciencia de datos (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores). Python no se admite actualmente en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code (vea [Preguntas y respuestas a continuación](#questions-and-answers)).
 
 Siga nuestras [instrucciones de instalación](installation.md) para configurar la carga de trabajo de Python y, luego, use los vínculos siguientes para obtener más información sobre características relacionadas con Python así como las funcionalidades de Visual Studio.
 
@@ -52,11 +39,11 @@ Siga nuestras [instrucciones de instalación](installation.md) para configurar l
 | Compatibilidad con IPython | Incluye compatibilidad para IPython o Jupyter en REPL para gráficos en línea, .NET y Windows Presentation Foundation (WPF). | no disponible |
 | [Edición enriquecida, IntelliSense y comprensión del código](code-editing.md) | Incluye colores de sintaxis, autocompletado en todo el código y las bibliotecas, [formateo de código](code-formatting.md), ayuda para las firmas, vista de clases, Ir a definición, Buscar todas las referencias, fragmentos de código, [refactorización](code-refactoring.md), [PyLint](code-pylint.md) y mucho más. | [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [Ventana interactiva](interactive-repl.md) | Proporciona una experiencia rápida de REPL para Python con la capacidad de resaltar fácilmente una parte del código y enviarla a la ventana interactiva. | no disponible |
-| [Depuración repleta de características](debugging.md) | La depuración se puede realizar con o sin un proyecto de Visual Studio, lo que incluye la posibilidad de adjuntar a un ejecutable existente, [depuración en modo mixto de Python/C++](debugging-mixed-mode.md), [depuración remota](debugging-cross-platform-remote.md) en Windows/Linux/Mac, [depuración remota en Azure](debugging-azure-remote.md) y depuración en la ventana interactiva. | [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Depuración repleta de características](debugging.md) | La depuración se puede realizar con o sin un proyecto de Visual Studio, lo que incluye la posibilidad de depurar un ejecutable existente, [Depuración en modo mixto de Python/C++](debugging-mixed-mode.md), [depuración remota](debugging-cross-platform-remote.md) en Windows/Linux/Mac, [depuración remota en Azure](debugging-azure-remote.md) y depuración en la ventana interactiva. | [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md) |
 | [Herramientas de generación de perfiles con informes completos](profiling.md) | Explora cómo se invierte el tiempo dentro de la aplicación, incluida la capacidad de comparar el rendimiento entre diferentes ejecuciones de generación de perfiles. | [Herramientas de generación de perfiles](../profiling/profiling-tools.md) (no todas las características de generación de perfiles de Visual Studio están disponibles para Python) |
 | [Herramientas de pruebas unitarias](unit-testing.md) | Detecte, ejecute y administre pruebas en el Explorador de pruebas de Visual Studio y depure fácilmente pruebas unitarias. | [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) |
 
-La carga de trabajo de Python también incluye el [SDK de Azure para Python](azure-sdk-for-python.md), lo que simplifica el consumo de servicios de Azure, con compatibilidad para Windows, Mac OS X y Linux.
+La carga de trabajo de Python también incluye el [SDK de Azure para Python](azure-sdk-for-python.md), lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
 
 Nuestra serie de [vídeos de introducción y análisis detallado](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) en YouTube proporciona información general de las principales características.
 
@@ -64,13 +51,17 @@ Nuestra serie de [vídeos de introducción y análisis detallado](https://www.yo
 
 ## <a name="questions-and-answers"></a>Preguntas y respuestas
 
+**P. ¿Visual Studio para Mac es compatible con Python?**
+
+R. No en este momento, aunque se ha solicitado en [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentación de [Visual Studio para Mac](https://docs.microsoft.com/visualstudio/mac/) identifica los tipos actuales de desarrollo que admite. Mientras tanto, Visual Studio Code en Windows, Mac y Linux [funciona bien con Python a través de las extensiones disponibles](https://code.visualstudio.com/docs/languages/python).
+
 **P. ¿Qué puedo usar para generar la interfaz de usuario con Python?**
 
-Un archivo . La oferta principal en este área es [Qt Project](https://www.qt.io/qt-for-application-development/), con enlaces para Python denominados [PySide (el enlace oficial)](http://wiki.qt.io/PySide) (vea también las [descargas de PySide](https://download.qt.io/official_releases/pyside/.)) y [PyQt](https://wiki.python.org/moin/PyQt). En la actualidad, la compatibilidad con Python en Visual Studio no incluye herramientas específicas para el desarrollo de la interfaz de usuario.
+R. La oferta principal en este área es [Qt Project](https://www.qt.io/qt-for-application-development/), con enlaces para Python denominados [PySide (el enlace oficial)](http://wiki.qt.io/PySide) (vea también las [descargas de PySide](https://download.qt.io/official_releases/pyside/.)) y [PyQt](https://wiki.python.org/moin/PyQt). En la actualidad, la compatibilidad con Python en Visual Studio no incluye herramientas específicas para el desarrollo de la interfaz de usuario.
 
 **P. ¿Un proyecto de Python puede producir un archivo ejecutable independiente?**
 
-Un archivo . Por lo general, Python es un lenguaje interpretado, con código que se ejecuta bajo demanda en un entorno compatible con Python adecuado como Visual Studio y servidores web. En la actualidad, Visual Studio no proporciona por sí mismo los medios para crear un archivo ejecutable independiente, lo que significa básicamente un programa con un intérprete de Python insertado. Pero hay varias formas dentro de la comunidad de Python para hacerlo, como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
+R. Por lo general, Python es un lenguaje interpretado, con código que se ejecuta bajo demanda en un entorno compatible con Python adecuado como Visual Studio y servidores web. En la actualidad, Visual Studio no proporciona por sí mismo los medios para crear un archivo ejecutable independiente, lo que significa básicamente un programa con un intérprete de Python insertado. En cambio, existen varios medios dentro de la comunidad de Python para crear ejecutables como se describe en [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython también se puede insertar en una aplicación nativa, como se describe en la entrada de blog [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) (Uso del archivo Zip insertable de CPython).
 
 ## <a name="features-matrix"></a>Matriz de características
 
@@ -78,9 +69,9 @@ La compatibilidad de Python se puede instalar en las siguientes ediciones de Vis
 
 - [Visual Studio 2017 (todas las ediciones)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (todas las ediciones)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
-- [Visual Studio 2013 Community Edition] (https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
-- [Visual Studio 2013 Express para Web, Update 2 o una versión posterior](https://www.microsoft.com/en-us/download/details.aspx?id=44912)
-- [Visual Studio 2013 Express para escritorio, Update 2 o una versión posterior](https://www.microsoft.com/en-US/download/details.aspx?id=44914)
+- Visual Studio 2013 Community Edition
+- Visual Studio 2013 Express para Web, Update 2 o una versión posterior
+- Visual Studio 2013 Express para escritorio, Update 2 o una versión posterior
 - Visual Studio 2013 (edición Pro o una versión posterior)
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
@@ -146,9 +137,9 @@ Características admitidas por la versión y edición de Visual Studio:
 
 | Azure | 2017 | 2015 | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Implementación web en el sitio web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
-| Implementación web en el rol web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Implementación web en el rol de trabajo | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
+| Implementación en el sitio web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
+| Implementación en el rol web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
+| Implementación en el rol de trabajo | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | Ejecución en el emulador de Azure | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
 | Depuración remota | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
 | Adjuntar en el Explorador de servidores | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
@@ -193,7 +184,7 @@ Características admitidas por la versión y edición de Visual Studio:
 
 5. El editor de plantillas de Django en Visual Studio 2013 tiene algunos problemas conocidos que se resuelven mediante la instalación de Update 2.
 
-6. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo Asociar al proceso, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando Adjuntar depurador (Python) en el Explorador de servidores. Esto requiere el [SDK de Azure para .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+6. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo Asociar al proceso, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando Adjuntar depurador (Python) en el Explorador de servidores. La depuración remota requiere el [SDK de Azure para .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
 
 7. Requiere Windows 8 o una versión posterior. El comando Adjuntar depurador (Python) del Explorador de servidores requiere el [SDK de Azure para .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
 
@@ -203,5 +194,6 @@ Características admitidas por la versión y edición de Visual Studio:
 
 - [Escritura de juegos Kinect con Python mediante PyKinect](https://github.com/Microsoft/PTVS/wiki/PyKinect) (wiki de GitHub)
 - [Puente de WFastCGI entre IIS y Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
-- - [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
+- [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
+- [Preguntas principales de Python en Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
 

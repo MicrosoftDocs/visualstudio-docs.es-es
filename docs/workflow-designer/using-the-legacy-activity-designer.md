@@ -1,62 +1,81 @@
 ---
-title: "Usar el dise&#241;ador de actividad Legacy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "actividades, agregar secundarias"
-  - "actividades, configurar"
-  - "actividades, crear personalizadas"
-  - "Diseñador de actividades"
-  - "actividades secundarias, agregar"
-  - "actividades personalizadas"
+title: Using the Legacy Activity Designer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- activities, configuring
+- custom activities
+- Activity Designer
+- child activities, adding
+- activities, adding child
+- activities, creating custom
 ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+author: ErikRe
+ms.author: erikre
+manager: erikre
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 07f5366d268de8b426f02ec3aa982d6f89f1547d
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Usar el dise&#241;ador de actividad Legacy
-En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado.Use el diseñador heredado cuando tenga como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="using-the-legacy-activity-designer"></a>Using the Legacy Activity Designer
+This topic describes how to use the activity designer in the legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use the legacy designer when targeting the [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] or the [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- El diseñador de actividad le permite crear sus propias actividades personalizadas.  
+ The Activity Designer enables you to create your own custom activities.  
   
-## Crear una actividad personalizada  
- Siga estos pasos para crear una actividad personalizada con el diseñador de actividades:  
+## <a name="creating-a-custom-activity"></a>Creating a Custom Activity  
+ Follow these steps to create a custom activity using the Activity Designer:  
   
-1.  En el menú **Proyecto**, haga clic en **Agregar actividad**.  
+1.  On the **Project** menu, click **Add Activity**.  
   
-2.  Seleccione la plantilla **Actividad** o **Actividad \(con separación del código\)**.  
+2.  Select the **Activity** or **Activity (with code separation)** template.  
   
-    1.  Use la plantilla **Actividad** para crear una actividad con la definición de actividad y el código de usuario en el mismo archivo de código.  
+    1.  Use the **Activity** template to create an activity with the activity definition and the user code in same code file.  
   
-    2.  Use la plantilla **Actividad \(con separación del código\)** para crear una actividad con la definición de actividad expresada como marcado del flujo de trabajo y el código de usuario en un archivo de código independiente.  
+    2.  Use the **Activity (with code separation)** template to create an activity with the activity definition expressed as workflow markup and the user code in a separate code file.  
   
-3.  Escriba un nombre de actividad o mantenga el nombre predeterminado y, a continuación, haga clic en **Agregar**.  
+3.  Type an activity name or keep the default name, and then click **Add**.  
   
- También puede crear un conjunto de actividades personalizadas creando un nuevo proyecto de tipo **Workflow Activity Library**.Para obtener más información sobre este tipo de proyecto, vea [Cómo: Crear una biblioteca de actividades de flujo de trabajo \(Heredado\)](../Topic/How%20to:%20Create%20a%20Workflow%20Activity%20Library%20\(Legacy\).md).  
+ You can also create a set of custom activities by creating a new project of type **Workflow Activity Library**. For more information about this project type, see [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
-## Configurar una actividad  
- Aunque el diseñador de actividades esté activo, puede utilizar el explorador de propiedades para configurar las propiedades enumeradas en la siguiente tabla.  
+## <a name="configuring-an-activity"></a>Configuring an Activity  
+ While the Activity Designer is active, you can use the property browser to configure the properties listed in the following table.  
   
-|Propiedad|Comentarios|  
-|---------------|-----------------|  
-|**Name**|Nombre de la actividad.|  
-|**Base Class**|Clase base de la que deriva la actividad.La clase base predeterminada es [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020).En la ventana **Propiedades**, haga clic en los puntos suspensivos **\[…\]** de **Clase base** para seleccionar otra clase base en el [Examinar y seleccionar un cuadro de diálogo de tipo .NET \(Heredado\)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
-|**Description**|Descripción de la actividad definida por el usuario.|  
-|**Enabled**|Se debe establecer de forma predeterminada en **True** para habilitar la ejecución y validación de la actividad.Se debe establecer de forma predeterminada en **False** para deshabilitar la ejecución y validación de la actividad.Para obtener información sobre la ejecución y validación de actividades, vea [Desarrollar actividades del flujo de trabajo](http://go.microsoft.com/fwlink?LinkID=65024).|  
+|Property|Comments|  
+|--------------|--------------|  
+|**Name**|Name of the activity.|  
+|**Base Class**|Base class that the activity derives from. The default base class is [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). In the **Properties** window, click the **Base Class** ellipsis **[...]** to select another base class in the [Browse and Select a .NET Type Dialog Box (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
+|**Description**|User-defined description of the activity.|  
+|**Enabled**|Set to **True** by default to enable activity execution and validation. Set to **False** to disable activity execution and validation. For information about activity execution and validation, see [Developing Workflow Activities](http://go.microsoft.com/fwlink?LinkID=65024).|  
   
-## Agregar actividades secundarias  
- Puede arrastrar actividades secundarias del cuadro de herramientas hasta la actividad que esté diseñando.Puede configurar cada una de las actividades secundarias con el explorador de propiedades.  
+## <a name="adding-child-activities"></a>Adding Child Activities  
+ You can drag child activities from the Toolbox to the activity that you are designing. You can then configure each child activity using the property browser.  
   
-## Vea también  
- [Desarrollar actividades de flujo de trabajo](http://go.microsoft.com/fwlink?LinkID=65024)   
- [Creación de actividades personalizadas](http://go.microsoft.com/fwlink?LinkID=65021)   
- [Actividades de flujo de trabajo heredadas](../workflow-designer/legacy-workflow-activities.md)   
- [Muestras de actividades personalizadas](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Cómo: Crear una biblioteca de actividades de flujo de trabajo \(Heredado\)](../Topic/How%20to:%20Create%20a%20Workflow%20Activity%20Library%20\(Legacy\).md)   
- [Usar el Diseñador de flujo de trabajo heredado](../workflow-designer/using-the-legacy-workflow-designer.md)
+## <a name="see-also"></a>See Also  
+ [Developing Workflow Activities](http://go.microsoft.com/fwlink?LinkID=65024)   
+ [Creating Custom Activities](http://go.microsoft.com/fwlink?LinkID=65021)   
+ [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md)   
+ [Custom Activities Samples](http://go.microsoft.com/fwlink?LinkID=65022)   
+ [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Using the Legacy Workflow Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

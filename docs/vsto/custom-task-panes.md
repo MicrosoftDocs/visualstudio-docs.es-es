@@ -1,157 +1,161 @@
 ---
-title: "Paneles de tareas personalizados"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "complementos [desarrollo de Office en Visual Studio], paneles de tareas personalizados"
-  - "complementos de nivel de aplicación [desarrollo de Office en Visual Studio], paneles de tareas personalizados"
-  - "paneles de tareas personalizados [desarrollo de Office en Visual Studio]"
-  - "paneles de tareas personalizados [desarrollo de Office en Visual Studio], acerca de los paneles de tareas personalizados"
-  - "paneles de tareas personalizados [desarrollo de Office en Visual Studio], crear"
-  - "paneles de tareas personalizados [desarrollo de Office en Visual Studio], múltiples ventanas de aplicación"
-  - "paneles de tareas personalizados con varias ventanas de la aplicación [desarrollo de Office en Visual Studio]"
-  - "desarrollo de Office en Visual Studio, paneles de tareas"
-  - "paneles de tareas [desarrollo de Office en Visual Studio]"
-  - "paneles de tareas [desarrollo de Office en Visual Studio], acerca de los paneles de tareas personalizados"
-  - "paneles de tareas [desarrollo de Office en Visual Studio], crear"
-  - "paneles de tareas [desarrollo de Office en Visual Studio]. varias ventanas de la aplicación"
-  - "paneles de interfaz de usuario [desarrollo de Office en Visual Studio]"
-  - "interfaces de usuario [desarrollo de Office en Visual Studio], paneles de tareas personalizados"
+title: Custom Task Panes | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, task panes
+- user interface panels [Office development in Visual Studio]
+- task panes [Office development in Visual Studio]
+- user interfaces [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio], creating
+- task panes [Office development in Visual Studio]. multiple application windows
+- custom task panes [Office development in Visual Studio], multiple application windows
+- task panes [Office development in Visual Studio], creating
+- application-level add-ins [Office development in Visual Studio], custom task panes
+- multiple applications windows with custom task panes [Office development in Visual Studio]
+- add-ins [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio]
+- task panes [Office development in Visual Studio], about custom task panes
+- custom task panes [Office development in Visual Studio], about custom task panes
 ms.assetid: 9a415109-5333-433e-95c6-3d59ce9c4d02
 caps.latest.revision: 52
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b99d43d4e775e118d60ba692f4dde615cbb6f5f6
+ms.contentlocale: es-es
+ms.lasthandoff: 08/30/2017
+
 ---
-# Paneles de tareas personalizados
-  Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office.  Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y proporcionar a los usuarios una interfaz conocida para acceder a las características de la solución.  Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.  
+# <a name="custom-task-panes"></a>Custom Task Panes
+  Task panes are user interface panels that are typically docked to one side of a window in a Microsoft Office application. Custom task panes give you a way to create your own task pane and provide users with a familiar interface to access your solution's features. For example, the interface can contain controls that run code to modify documents or display data from a data source.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Un panel de tareas personalizado difiere del panel de acciones.  El panel de acciones es parte de las personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel.  Para obtener más información, consulte [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md).  
+>  A custom task pane differs from the actions pane. The actions pane is part of document-level customizations for Microsoft Office Word and Microsoft Office Excel. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
-## Ventajas de los paneles de tareas personalizados  
- Los paneles de tareas personalizados permiten integrar características en una interfaz de usuario conocida.  Puede crear un panel de tareas personalizado rápidamente con herramientas de Visual Studio.  
+## <a name="benefits-of-custom-task-panes"></a>Benefits of Custom Task Panes  
+ Custom task panes let you integrate your features into a familiar user interface. You can create a custom task pane quickly by using Visual Studio tools.  
   
-### Interfaz de usuario conocida  
- Los usuarios de las aplicaciones de Microsoft Office System ya están familiarizados con el uso de los paneles de tareas, como el panel de tareas **Estilos y formato** de Word.  Los paneles de tareas personalizados se comportan como los demás paneles de tareas de Microsoft Office System.  Los usuarios pueden acoplar paneles de tareas personalizados en diferentes lados de la ventana de la aplicación o pueden arrastrar paneles de tareas personalizados a cualquier lugar de la ventana.  Puede crear un complemento de VSTO que muestre varios paneles de tareas personalizados al mismo tiempo, y los usuarios pueden controlar cada panel de tareas individualmente.  
+### <a name="familiar-user-interface"></a>Familiar User Interface  
+ Users of applications in the Microsoft Office system are already familiar with using task panes such as the **Styles and Formatting** task pane in Word. Custom task panes behave like other task panes in the Microsoft Office system. Users can dock custom task panes to different sides of the application window, or they can drag custom task panes to any location in the window. You can create a VSTO Add-in that displays multiple custom task panes at the same time, and users can control each task pane individually.  
   
-### Compatibilidad con Windows Forms  
- La interfaz de usuario de un panel de tareas personalizado que se crea con las herramientas de desarrollo de Office en Visual Studio se basa en controles de Windows Forms.  Puede usar el Diseñador de Windows Forms conocido para diseñar la interfaz de usuario de un panel de tareas personalizado.  También puede usar la compatibilidad de enlace de datos de Windows Forms para enlazar un origen de datos a controles del panel de tareas.  
+### <a name="windows-forms-support"></a>Windows Forms Support  
+ The user interface of a custom task pane that you create by using the Office development tools in Visual Studio is based on Windows Forms controls. You can use the familiar Windows Forms Designer to design the user interface for a custom task pane. You can also use the data binding support in Windows Forms to bind a data source to controls on the task pane.  
   
-## Crear un panel de tareas personalizado  
- Puede crear un panel de tareas personalizado básico en dos pasos:  
+## <a name="creating-a-custom-task-pane"></a>Creating a Custom Task Pane  
+ You can create a basic custom task pane in two steps:  
   
-1.  Cree una interfaz de usuario para el panel de tareas personalizado agregando controles de Windows Forms al objeto <xref:System.Windows.Forms.UserControl>.  
+1.  Create a user interface for your custom task pane by adding Windows Forms controls to a <xref:System.Windows.Forms.UserControl> object.  
   
-2.  Cree una instancia del panel de tareas personalizado pasando el control de usuario al objeto <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> en su complemento de VSTO.  Esta colección devuelve un nuevo objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que puede usar para modificar el aspecto del panel de tareas y responder a eventos de usuario.  
+2.  Instantiate the custom task pane by passing the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> object in your VSTO Add-in. This collection returns a new <xref:Microsoft.Office.Tools.CustomTaskPane> object that you can use to modify the appearance of the task pane and respond to user events.  
   
- Para obtener más información, consulte [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+ For more information, see [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### Crear la interfaz de usuario  
- Todos los paneles de tareas personalizados que se crean con las herramientas de desarrollo de Office en Visual Studio contienen un objeto <xref:System.Windows.Forms.UserControl>.  Este control de usuario proporciona la interfaz de usuario de su panel de tareas personalizado.  Puede crear el control de usuario en tiempo de diseño o en tiempo de ejecución.  Si crea el control de usuario en tiempo de diseño, puede usar el Diseñador de Windows Forms para construir la interfaz de usuario de su panel de tareas.  
+### <a name="creating-the-user-interface"></a>Creating the User Interface  
+ All custom task panes that are created by using the Office development tools in Visual Studio contain a <xref:System.Windows.Forms.UserControl> object. This user control provides the user interface of your custom task pane. You can create the user control at design time or at run time. If you create the user control at design time, you can use the Windows Forms Designer to construct the user interface of your task pane.  
   
-### Crear una instancia del panel de tareas personalizado  
- Después de crear un control de usuario que contenga la interfaz de usuario del panel de tareas personalizado, debe crear una instancia de <xref:Microsoft.Office.Tools.CustomTaskPane>.  Para ello, pase el control de usuario a <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> en el complemento de VSTO llamando a uno de los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  Esta colección se expone como el campo `CustomTaskPanes` de la clase `ThisAddIn`.  El siguiente ejemplo de código está diseñado para ejecutarse desde la clase `ThisAddIn`.  
+### <a name="instantiating-the-custom-task-pane"></a>Instantiating the Custom Task Pane  
+ After you create a user control that contains the user interface of the custom task pane, you have to instantiate a <xref:Microsoft.Office.Tools.CustomTaskPane>. To do this, pass the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> in your VSTO Add-in by calling one of the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods. This collection is exposed as the `CustomTaskPanes` field of the `ThisAddIn` class. The following code example is intended to be run from the `ThisAddIn` class.  
   
- [!code-csharp[Trin_TaskPaneBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/CS/ThisAddIn.cs#2)]
- [!code-vb[Trin_TaskPaneBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/VB/ThisAddIn.vb#2)]  
+ [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)] [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
- Los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> devuelven un nuevo objeto <xref:Microsoft.Office.Tools.CustomTaskPane>.  Puede usar este objeto para modificar el aspecto del panel de tareas y responder a eventos de usuario.  
+ The <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods return a new <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can use this object to modify the appearance of the task pane and to respond to user events.  
   
-### Controlar el panel de tareas en varias ventanas.  
- Los paneles de tareas personalizados están asociados a una ventana de marco de documento, que presenta al usuario una vista de un documento o elemento.  El panel de tareas solo está visible cuando la ventana asociada está visible.  
+### <a name="controlling-the-task-pane-in-multiple-windows"></a>Controlling the Task Pane in Multiple Windows  
+ Custom task panes are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible.  
   
- Para determinar qué ventana muestra el panel de tareas personalizado, use la sobrecarga del método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> adecuada al crear el panel de tareas:  
+ To determine which window displays the custom task pane, use the appropriate <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method overload when you create the task pane:  
   
--   Para asociar el panel de tareas a la ventana activa, use el método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+-   To associate the task pane with the active window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
--   Para asociar el panel de tareas a un documento que se hospeda en una ventana especificada, use el método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+-   To associate the task pane with a document that is hosted by a specified window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
- Algunas aplicaciones de Office requieren instrucciones explícitas acerca de cuándo crear o mostrar el panel de tareas cuando se abre más de una ventana.  Esto hace que sea más importante tener en cuenta dónde se crean las instancias de un panel de tareas personalizado en el código, para asegurarse de que el panel de tareas aparece con los documentos o elementos adecuados en la aplicación.  Para obtener más información, consulte [Administrar paneles de tareas personalizados en las ventanas de la aplicación](#Managing).  
+ Some Office applications require explicit instructions for when to create or display your task pane when more than one window is open. This makes it important to consider where to instantiate the custom task pane in your code to ensure that the task pane appears with the appropriate documents or items in the application. For more information, see [Managing Custom Task Panes in Application Windows](#Managing).  
   
-## Acceder a la aplicación desde el panel de tareas  
- Si desea automatizar la aplicación desde el control de usuario, puede acceder directamente al modelo de objetos usando `Globals.ThisAddIn.Application` en el código.  La clase `Globals` estática proporciona acceso al objeto `ThisAddIn`.  El campo `Application` de este objeto es el punto de entrada al modelo de objetos de la aplicación.  
+## <a name="accessing-the-application-from-the-task-pane"></a>Accessing the Application from the Task Pane  
+ If you want to automate the application from the user control, you can directly access the object model by using `Globals.ThisAddIn.Application` in your code. The static `Globals` class provides access to the `ThisAddIn` object. The `Application` field of this object is the entry point into the object model of the application.  
   
- Para obtener más información sobre el campo `Application` del objeto `ThisAddIn`, consulte [Programar complementos de VSTO](../vsto/programming-vsto-add-ins.md).  Para consultar un tutorial que muestra cómo automatizar una aplicación desde un panel de tareas personalizado, consulte [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  Para obtener más información sobre el la clase `Globals`, consulte [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ For more information about the `Application` field of the `ThisAddIn` object, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). For a walkthrough that demonstrates how to automate an application from a custom task pane, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). For more information about the `Globals` class, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-## Administrar la interfaz de usuario del panel de tareas  
- Después de crear el panel de tareas, puede usar las propiedades y los eventos del objeto <xref:Microsoft.Office.Tools.CustomTaskPane> para controlar la interfaz de usuario del panel de tareas y responder cuando el usuario cambia el panel de tareas.  
+## <a name="managing-the-user-interface-of-the-task-pane"></a>Managing the User Interface of the Task Pane  
+ After you create the task pane, you can use properties and events of the <xref:Microsoft.Office.Tools.CustomTaskPane> object to control the user interface of the task pane and to respond when the user changes the task pane.  
   
-### Hacer visible el panel de tareas personalizado  
- De forma predeterminada, el panel de tareas no está visible.  Para hacer visible el panel de tareas, debe establecer la propiedad <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> en **true**.  
+### <a name="making-the-custom-task-pane-visible"></a>Making the Custom Task Pane Visible  
+ By default, the task pane is not visible. To make the task pane visible, you must set the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property to **true**.  
   
- Los usuarios pueden cerrar un panel de tareas en cualquier momento haciendo clic en el botón **Cerrar** \(X\) en la esquina del panel de tareas.  Sin embargo, no hay ninguna manera predeterminada para que los usuarios vuelvan a abrir el panel de tareas personalizado.  Si un usuario cierra un panel de tareas personalizado, no podrá volver a ver el panel de tareas personalizado, a menos que le proporcione la manera de mostrarlo.  
+ Users can close a task pane at any time by clicking the **Close** button (X) in the corner of the task pane. However, there is no default way for users to open the custom task pane again. If a user closes a custom task pane, that user cannot view the custom task pane again unless you provide a way to display it.  
   
- Si crea un panel de tareas personalizado en el complemento de VSTO, debe crear también un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado.  Si crea un panel de tareas personalizado en una aplicación de Microsoft Office que admite la personalización de la cinta de opciones, puede agregar un grupo de controles a la cinta con un botón que muestre u oculte el panel de tareas personalizado.  Para consultar un tutorial que muestra cómo hacerlo, consulte [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+ If you create a custom task pane in your VSTO Add-in, you should also create a UI element, such as a button, that users can click to display or hide your custom task pane. If you create a custom task pane in a Microsoft Office application that supports customizing the Ribbon, you can add a control group to the Ribbon with a button that displays or hides your custom task pane. For a walkthrough that demonstrates how to do this, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
- Si crea un panel de tareas personalizado en una aplicación de Microsoft Office que no admite la personalización de la cinta de opciones, puede agregar un <xref:Microsoft.Office.Core.CommandBarButton> que muestre u oculte el panel de tareas personalizado.  
+ If you create a custom task pane in a Microsoft Office application that does not support customizing the Ribbon, you can add a <xref:Microsoft.Office.Core.CommandBarButton> that displays or hides your custom task pane.  
   
-### Modificar el aspecto del panel de tareas  
- Puede controlar el tamaño y la ubicación de un panel de tareas personalizado mediante las propiedades del objeto <xref:Microsoft.Office.Tools.CustomTaskPane>.  Puede realizar muchos otros cambios en el aspecto de un panel de tareas personalizado usando las propiedades del objeto <xref:System.Windows.Forms.UserControl> que se encuentra en el panel de tareas personalizado.  Por ejemplo, puede especificar una imagen de fondo para un panel de tareas personalizado mediante la propiedad <xref:System.Windows.Forms.Control.BackgroundImage%2A> del control de usuario.  
+### <a name="modifying-the-appearance-of-the-task-pane"></a>Modifying the Appearance of the Task Pane  
+ You can control the size and location of a custom task pane by using properties of the <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can make many other changes to the appearance of a custom task pane by using properties of the <xref:System.Windows.Forms.UserControl> object that is contained in the custom task pane. For example, you can specify a background image for a custom task pane by using the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property of the user control.  
   
- En la tabla siguiente se enumeran los cambios que puede realizar en un panel de tareas personalizado usando las propiedades <xref:Microsoft.Office.Tools.CustomTaskPane>.  
+ The following table lists the changes you can make to a custom task pane by using <xref:Microsoft.Office.Tools.CustomTaskPane> properties.  
   
-|Tarea|Propiedad|  
-|-----------|---------------|  
-|Para cambiar el tamaño del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
-|Para cambiar la ubicación del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
-|Para ocultar el panel de tareas o hacerlo visible|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
-|Para evitar que el usuario cambie la ubicación del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
+|Task|Property|  
+|----------|--------------|  
+|To change the size of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
+|To change the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
+|To hide the task pane or make it visible|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
+|To prevent the user from changing the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
   
-### Programar eventos del panel de tareas personalizado  
- Tal vez desee que el complemento de VSTO responda cuando el usuario modifique el panel de tareas personalizado.  Por ejemplo, si el usuario cambia la orientación del panel de vertical a horizontal, quizás desee cambiar la posición de los controles.  
+### <a name="programming-custom-task-pane-events"></a>Programming Custom Task Pane Events  
+ You might want your VSTO Add-in to respond when the user modifies the custom task pane. For example, if the user changes the orientation of the pane from vertical to horizontal, you might want to reposition the controls.  
   
- En la tabla siguiente se enumeran los eventos que puede controlar para responder a los cambios que el usuario realice en el panel de tareas personalizado.  
+ The following table lists the events that you can handle to respond to changes that the user makes to the custom task pane.  
   
-|Tarea|Evento|  
-|-----------|------------|  
-|Responder cuando el usuario cambia la ubicación del panel de tareas.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
-|Responder cuando el usuario oculta el panel de tareas o lo hace visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
+|Task|Event|  
+|----------|-----------|  
+|To respond when the user changes the location of the task pane.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
+|To respond when the user hides the task pane or makes it visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
   
-## Limpiar los recursos que usa el panel de tareas  
- Después de crear un panel de tareas personalizado, el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> permanece en memoria mientras se ejecuta el complemento de VSTO.  El objeto permanece en memoria incluso después de que el usuario haga clic en el botón **Cerrar** \(X\) en la esquina del panel de tareas.  
+## <a name="cleaning-up-resources-used-by-the-task-pane"></a>Cleaning Up Resources Used by the Task Pane  
+ After you create a custom task pane, the <xref:Microsoft.Office.Tools.CustomTaskPane> object remains in memory as long as your VSTO Add-in is running. The object remains in memory even after the user clicks the **Close** button (X) in the corner of the task pane.  
   
- Para limpiar los recursos que usa el panel de tareas mientras el complemento de VSTO se está ejecutando, use los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>.  Estos métodos quitan el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> especificado de la colección `CustomTaskPanes` y llaman al método <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> del objeto.  
+ To clean up resources used by the task pane while the VSTO Add-in is still running, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods. These methods remove the specified <xref:Microsoft.Office.Tools.CustomTaskPane> object from the `CustomTaskPanes` collection, and they call the <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> method of the object.  
   
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO.  No llame a los métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> en el controlador de eventos `ThisAddIn_Shutdown` del proyecto.  Estos métodos producirán una <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`.  Para obtener más información sobre `ThisAddIn_Shutdown`, consulte [Eventos de los proyectos de Office](../vsto/events-in-office-projects.md).  
+ The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatically cleans up resources used by the custom task pane when the VSTO Add-in is unloaded. Do not call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods in the `ThisAddIn_Shutdown` event handler in your project. These methods will throw an <xref:System.ObjectDisposedException>, because the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] cleans up resources used by the <xref:Microsoft.Office.Tools.CustomTaskPane> object before `ThisAddIn_Shutdown` is called. For more information about `ThisAddIn_Shutdown`, see [Events in Office Projects](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a> Administrar paneles de tareas personalizados en varias ventanas de aplicación  
- Cuando se crea un panel de tareas personalizado en una aplicación que usa varias ventanas para mostrar documentos y otros elementos, deberá llevar a cabo otros pasos para asegurarse de que el panel de tareas está visible cuando el usuario así lo espere.  
+##  <a name="Managing"></a> Managing Custom Task Panes in Multiple Application Windows  
+ When you create a custom task pane in an application that uses multiple windows to display documents and other items, you need to take extra steps to ensure that the task pane is visible when the user expects it to be.  
   
- Los paneles de tareas personalizados de todas las aplicaciones están asociados a una ventana de marco de documento, que presenta al usuario una vista de un documento o elemento.  El panel de tareas solo está visible cuando la ventana asociada está visible.  Sin embargo, no todas las aplicaciones usan ventanas de marco de documento de la misma forma.  
+ Custom task panes in all applications are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible. However, not all applications use document frame windows the same way.  
   
- Los grupos de aplicaciones siguientes tienen requisitos de desarrollo diferentes:  
+ The following application groups have different development requirements:  
   
 -   [Outlook](#Outlook)  
   
--   [Word, InfoPath y PowerPoint](#WordAndInfoPath)  
+-   [Word, InfoPath, and PowerPoint](#WordAndInfoPath)  
   
- ![vínculo a vídeo](~/data-tools/media/playvideo.gif "vínculo a vídeo") Para ver una demostración en vídeo relacionada, consulte [Cómo: Administrar paneles de tareas en complementos de VSTO de Word](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Manage Task Panes in Word VSTO Add-ins?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
- Cuando se crea un panel de tareas personalizado para Outlook, se asocia a una ventana específica del Explorador o el Inspector.  Los exploradores son ventanas que muestran el contenido de una carpeta y los inspectores son ventanas que muestran un elemento como un mensaje de correo electrónico o una tarea.  
+ When you create a custom task pane for Outlook, the custom task pane is associated with a specific Explorer or Inspector window. Explorers are windows that display the contents of a folder, and Inspectors are windows that display an item such as an e-mail message or a task.  
   
- Si desea mostrar un panel de tareas personalizado con varias ventanas del Explorador o el Inspector, deberá crear una nueva instancia del panel de tareas personalizado cuando se abre una ventana del Explorador o el Inspector.  Para ello, controle el evento que se desencadena al crear una ventana del Explorador o el Inspector y, a continuación, cree el panel de tareas en el controlador de eventos.  También puede administrar eventos del Explorador y del Inspector para ocultar o mostrar paneles de tareas, en función de qué ventana esté visible.  
+ If you want to display a custom task pane with multiple Explorer or Inspector windows, you need to create a new instance of the custom task pane when an Explorer or Inspector window opens. To do this, handle an event that is raised when an Explorer or Inspector window is created, and then create the task pane in the event handler. You can also handle Explorer and Inspector events to hide or display task panes depending on which window is visible.  
   
- Para asociar el panel de tareas a un explorador o inspector específico, use el método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> para crear el panel de tareas y pase el objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> o <xref:Microsoft.Office.Interop.Outlook.Inspector> al parámetro *window*.  Para obtener más información sobre la creación de paneles de tareas personalizados, consulte [Información general sobre los paneles de tareas personalizados](../vsto/custom-task-panes.md).  
+ To associate the task pane with a specific Explorer or Inspector, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass the <xref:Microsoft.Office.Interop.Outlook.Explorer> or <xref:Microsoft.Office.Interop.Outlook.Inspector> object to the *window* parameter. For more information about creating custom task panes, see [Custom Task Panes Overview](../vsto/custom-task-panes.md).  
   
- Para consultar un tutorial que muestra cómo crear un panel de tareas para cada mensaje de correo electrónico que se abre, consulte [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+ For a walkthrough that demonstrates how to create a task pane for every e-mail message that is opened, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-### Eventos de Outlook  
- Para supervisar el estado de las ventanas del Explorador, puede administrar los siguientes eventos relacionados con el Explorador:  
+### <a name="outlook-events"></a>Outlook Events  
+ To monitor the state of Explorer windows, you can handle the following Explorer-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
@@ -161,7 +165,7 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Para supervisar el estado de las ventanas del Inspector, puede administrar los siguientes eventos relacionados con el Inspector:  
+ To monitor the state of Inspector windows, you can handle the following Inspector-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
@@ -171,20 +175,20 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
-### Evitar varias instancias de un panel de tareas personalizado en Outlook  
- Para evitar que las ventanas de Outlook muestren varias instancias de un panel de tareas personalizado, quite explícitamente el panel de tareas personalizado de la colección `CustomTaskPanes` de la clase `ThisAddIn` cuando se cierra cada ventana.  Llame al método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> en un evento que se desencadene al cerrar una ventana, como <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> o <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
+### <a name="preventing-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Preventing Multiple Instances of a Custom Task Pane in Outlook  
+ To prevent Outlook windows from displaying multiple instances of a custom task pane, explicitly remove the custom task pane from the `CustomTaskPanes` collection of the `ThisAddIn` class when each window is closed. Call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> method in an event that is raised when a window is closed, such as <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> or <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
   
- Si no quita explícitamente el panel de tareas personalizado, las ventanas de Outlook podrían mostrar varias instancias del panel de tareas personalizado.  En ocasiones Outlook recicla las ventanas, y las ventanas recicladas conservan referencias a los paneles de tareas personalizados que se les adjuntaron.  
+ If you do not explicitly remove the custom task pane, Outlook windows might display multiple instances of the custom task pane. Outlook sometimes recycles windows, and recycled windows retain references to any custom task panes that were attached to them.  
   
-##  <a name="WordAndInfoPath"></a> Word, InfoPath y PowerPoint  
- Word, InfoPath y PowerPoint muestran cada documento en una ventana de marco de documento diferente.  Cuando se crea un panel de tareas personalizado para estas aplicaciones, el panel se asocia únicamente a un documento específico.  Si el usuario abre un documento diferente, el panel de tareas personalizado se oculta hasta que el documento anterior esté visible de nuevo.  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath, and PowerPoint  
+ Word, InfoPath, and PowerPoint display each document in a different document frame window. When you create a custom task pane for these applications, the custom task pane is associated only with a specific document. If the user opens a different document, the custom task pane is hidden until the earlier document is visible again.  
   
- Si desea mostrar un panel de tareas personalizado con varios documentos, cree una nueva instancia del panel de tareas personalizado cuando el usuario cree un documento nuevo o abra un documento existente.  Para ello, controle los eventos que se generan cuando se crea o se abre un documento y, a continuación, cree el panel de tareas en los controladores de eventos.  También puede administrar eventos del documento para ocultar o mostrar paneles de tareas, en función de qué documento esté visible.  
+ If you want to display a custom task pane with multiple documents, create a new instance of the custom task pane when the user creates a new document or opens an existing document. To do this, handle events that are raised when a document is created or opened, and then create the task pane in the event handlers. You can also handle document events to hide or display task panes depending on which document is visible.  
   
- Para asociar el panel de tareas a una ventana de documento específica, use el método <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> para crear el panel de tareas y pase <xref:Microsoft.Office.Interop.Word.Window> \(para Word\), <xref:Microsoft.Office.Interop.InfoPath.WindowObject> \(para InfoPath\) o <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> \(para PowerPoint\) al parámetro *window*.  
+ To associate the task pane with a specific document window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass a <xref:Microsoft.Office.Interop.Word.Window> (for Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (for InfoPath), or <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> (for PowerPoint) to the *window* parameter.  
   
-### Eventos de Word  
- Para supervisar el estado de las ventanas de documento en Word, puede administrar los eventos siguientes:  
+### <a name="word-events"></a>Word Events  
+ To monitor the state of document windows in Word, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>  
   
@@ -196,8 +200,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>  
   
-### Eventos de InfoPath  
- Para supervisar el estado de las ventanas de documento en InfoPath, puede administrar los eventos siguientes:  
+### <a name="infopath-events"></a>InfoPath Events  
+ To monitor the state of document windows in InfoPath, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>  
   
@@ -209,8 +213,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>  
   
-### Eventos de PowerPoint  
- Para supervisar el estado de las ventanas de documento en PowerPoint, puede administrar los eventos siguientes:  
+### <a name="powerpoint-events"></a>PowerPoint Events  
+ To monitor the state of document windows in PowerPoint, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation>  
   
@@ -224,10 +228,9 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate>  
   
-## Vea también  
- [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  
+## <a name="see-also"></a>See Also  
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+

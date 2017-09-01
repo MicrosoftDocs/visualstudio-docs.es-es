@@ -1,72 +1,88 @@
 ---
-title: "C&#243;digo de origen de L2DBForm.xaml.cs | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: L2DBForm.xaml.cs Source Code | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 caps.latest.revision: 2
-caps.handback.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# C&#243;digo de origen de L2DBForm.xaml.cs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c54155a382aa9fce95ecaab212632d80dfa61d9f
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Este tema contiene el contenido y la descripción del código de origen C\# del archivo L2DBForm.xaml.cs.La clase parcial L2XDBForm contenida en este archivo se puede dividir en tres secciones lógicas: miembros de datos y los controladores de eventos Click de botones `OnRemove` y `OnAddBook`.  
+---
+# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
+This topic contains the contents and description of the C# source code in the file L2DBForm.xaml.cs. The L2XDBForm partial class contained in this file can be divided into three logical sections: data members and the `OnRemove` and `OnAddBook` button click event handlers.  
   
-## Miembros de datos  
- Se utilizan dos miembros de datos privados para asociar esta clase con los recursos de la ventana que se utilizan en L2DBForm.xaml.  
+## <a name="data-members"></a>Data Members  
+ Two private data members are used to associate this class to the window resources used in L2DBForm.xaml.  
   
--   La variable del espacio de nombres `myBooks` se inicializa en `"http://www.mybooks.com"`.  
+-   The namespace variable `myBooks` is initialized to `"http://www.mybooks.com"`.  
   
--   El miembro `bookList` se inicializa en el constructor en la cadena CDATA de L2DBForm.xaml con la siguiente línea:  
+-   The member `bookList` is initialized in the constructor to the CDATA string in L2DBForm.xaml with the following line:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
     ```  
   
-## Controlador de eventos OnAddBook  
- Este método contiene las siguientes tres instrucciones:  
+## <a name="onaddbook-event-handler"></a>OnAddBook Event Handler  
+ This method contains the following three statements:  
   
--   La primera instrucción condicional se utiliza para la validación de entrada.  
+-   The first conditional statement is used for input validation.  
   
--   La segunda instrucción crea un nuevo <xref:System.Xml.Linq.XElement> a partir de los valores de cadena que el usuario ha especificado en la sección de la interfaz de usuario \(IU\) **Agregar nuevo libro**.  
+-   The second statement creates a new <xref:System.Xml.Linq.XElement> from the string values the user entered in the **Add New Book** user interface (UI) section.  
   
--   La última instrucción agrega este nuevo elemento de libro al proveedor de datos de L2DBForm.xaml.En consecuencia, el enlace de datos dinámicos actualizará la IU con este nuevo elemento; no se requiere ningún código adicional proporcionado por el usuario.  
+-   The last statement adds this new book element to the data provider in L2DBForm.xaml. Consequently, dynamic data binding will automatically update the UI with this new item; no extra user-supplied code is required.  
   
-## Controlador de eventos OnRemove  
- El controlador `OnRemove` es más complicado que el controlador `OnAddBook` por dos motivos.En primer lugar, como el XML sin formato contiene espacios en blanco conservados, las nuevas líneas coincidentes deben quitarse con la entrada del libro.En segundo lugar, por comodidad, la selección, que se hizo en el elemento eliminado, se restablece a la selección previa de la lista.  
+## <a name="onremove-event-handler"></a>OnRemove Event Handler  
+ The `OnRemove` handler is more complicated than the `OnAddBook` handler for two reasons. First, because the raw XML contains preserved white space, matching newlines must also be removed with the book entry. Second, as a convenience, the selection, which was on the deleted item, is reset to the previous one in the list.  
   
- No obstante, el trabajo principal de quitar el elemento de libro seleccionado se logra con sólo dos instrucciones:  
+ However the core work of removing the selected book item is accomplished by only two statements:  
   
--   En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:  
+-   First, the book element associated with the currently selected item in the list box is retrieved:  
   
     ```  
     XElement selBook = (XElement)lbBooks.SelectedItem;   
     ```  
   
--   A continuación, se elimina este elemento del proveedor de datos:  
+-   Then, this element is deleted from the data provider:  
   
     ```  
     selBook.Remove();  
     ```  
   
- De nuevo, el enlace de datos dinámicos garantiza que la IU del programa se actualiza automáticamente.  
+ Again, dynamic data binding assures that the program's UI is automatically updated.  
   
-## Ejemplo  
+## <a name="example"></a>Example  
   
-### Descripción  
+### <a name="description"></a>Description  
   
-### Código  
+### <a name="code"></a>Code  
   
-```c#  
+```csharp  
 using System;  
 using System.Linq;  
 using System.Collections;  
@@ -134,9 +150,9 @@ namespace LinqToXmlDataBinding {
   
 ```  
   
-### Comentarios  
- Para conocer el origen XAML asociado para esos controladores, vea [Código fuente de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md).  
+### <a name="comments"></a>Comments  
+ For the associated XAML source for these handlers, see [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md).  
   
-## Vea también  
- [Tutorial: Ejemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Código fuente de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)
+## <a name="see-also"></a>See Also  
+ [Walkthrough: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md)

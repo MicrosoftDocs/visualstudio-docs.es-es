@@ -1,56 +1,73 @@
 ---
-title: "IDebugProgram2::GetEngineInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetEngineInfo"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetEngineInfo"
+title: IDebugProgram2::GetEngineInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::GetEngineInfo
+helpviewer_keywords:
+- IDebugProgram2::GetEngineInfo
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgram2::GetEngineInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f031cbe124765d44c116d3af35a877712cbe4502
+ms.contentlocale: es-es
+ms.lasthandoff: 08/28/2017
 
-Obtiene el nombre y GUID del motor \(DE\) de depuración que ejecuta este programa.  
+---
+# <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
+Gets the name and GUID of the debug engine (DE) running this program.  
   
-## Sintaxis  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetEngineInfo(   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
+```cpp  
+HRESULT GetEngineInfo(   
+   BSTR* pbstrEngine,  
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
-int GetEngineInfo(   
-   out string pbstrEngine,  
-   out GUID   pguidEngine  
+```csharp  
+int GetEngineInfo(   
+   out string pbstrEngine,  
+   out GUID   pguidEngine  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parameters  
  `pbstrEngine`  
- \[out\]  Devuelve el nombre de running este programa.  
+ [out] Returns the name of the DE running this program.  
   
  `pguidEngine`  
- \[out\]  Devuelve el GUID de running este programa.  
+ [out] Returns the GUID of the DE running this program.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Comentarios  
- Cada OF define su propio GUID para identificar.  
+## <a name="remarks"></a>Remarks  
+ Each DE defines its own GUID for identification.  
   
-## Vea también  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

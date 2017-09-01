@@ -1,114 +1,143 @@
 ---
-title: "Configurar el Firewall de Windows para la depuraci&#243;n remota | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Configure the Windows Firewall for Remote Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# Configurar el Firewall de Windows para la depuraci&#243;n remota
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: cd4596e063bc6fb66a259d34109eb1eb74d1780c
+ms.contentlocale: es-es
+ms.lasthandoff: 08/22/2017
 
-Este tema se describe cómo configurar el firewall para habilitar la depuración remota en equipos que ejecutan los sistemas operativos siguientes:  
-  
--   Windows 7  
-  
--   Windows 8\/8.1  
+---
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configure the Windows Firewall for Remote Debugging
+This topic describes how to configure the firewall to enable remote debugging on computers that run the following operating systems:  
   
 -   Windows 10  
   
--   Windows Server 2008 \(R2\)  
+-   Windows 8/8.1  
   
--   Windows Server 2012  
+-   Windows 7   
   
 -   Windows Server 2012 R2  
+
+-   Windows Server 2012
   
- Si la red en la que está realizando la depuración no está protegida por un firewall, esta configuración no es necesaria. De lo contrario, el equipo que hospeda Visual Studio y el equipo remoto que se va a depurar requerirán cambios en la configuración del firewall.  
+-   Windows Server 2008 R2 
   
- **IPSec** Si la red requiere que la comunicación se realice con IPSec, debe abrir puertos adicionales en el equipo host de Visual Studio y en el equipo remoto.  
+ If the network on which you are debugging is not protected by a firewall, this configuration is unnecessary. Otherwise, both the computer that hosts Visual Studio and the remote computer that is to be debugged require changes to the firewall configuration.  
   
- **Servidor web** Si va a realizar la depuración de un servidor web remoto, debe abrir un puerto adicional en el equipo remoto.  
+ **IPSec** If your network requires that communication be performed using IPSec, you must open additional ports on both the Visual Studio host computer and the remote computer.  
   
- Tenga en cuenta que ambos equipos no tienen que ejecutar el mismo sistema operativo. Por ejemplo, el equipo de Visual Studio puede ejecutar Windows 10 y el equipo remoto puede ejecutar Windows Server 2012 R2.  
+ **Web Server** If you are debugging a remote Web server, you must open an additional port on the remote computer. (For IIS, port 80 must be open.)  
   
-## Para configurar el firewall de Windows en el equipo de Visual Studio  
- Las instrucciones para configurar el firewall de Windows varían ligeramente en los distintos sistemas operativos. En Windows 7 o Windows Server 2008, se usa la palabra **programa**; mientras que en Windows 8\/8.1, Windows 10 y Windows Server 2012 se usa la palabra **aplicación**.  En los pasos siguientes se usará la palabra **aplicación**.  
+ Note that both computers do not have to run the same operating system. For example, the Visual Studio computer can run Windows 10 and the remote computer can run Windows Server 2012 R2.      
   
-1.  Abra la página del Firewall de Windows. \(En el cuadro de búsqueda del menú **Inicio**, escriba **Firewall de Windows**\).  
-  
-2.  Haga clic en **Permitir una aplicación o una característica a través de Firewall de Windows**.  
-  
-3.  En la lista **Aplicaciones y características permitidas:**, busque **Detección del depurador remoto de Visual Studio**. Si aparece en la lista, asegúrese de que está seleccionada y de que también estén seleccionados uno o varios tipos de red.  
-  
-4.  Si no aparece **Detección del depurador remoto de Visual Studio**, haga clic en **Permitir otra aplicación**. Si aún no ve la opción en la ventana **Agregar una aplicación**, haga clic en **Examinar** y vaya a **\<directorio de instalación de Visual Studio\>\\Common7\\IDE\\Remote Debugger**. Busque la carpeta correspondiente de la aplicación \(x86, x64, Appx\) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
-  
-5.  En la lista **Aplicaciones y características permitidas**, busque **Monitor de depuración remota de Visual Studio**. Active uno o más tipos de red \(**dominio, doméstica\/de trabajo \(privada\) o pública**\) para la comunicación con el monitor de depuración remota. Los tipos deben incluir la red a la que está conectado el equipo de Visual Studio.  
-  
-## Para abrir un puerto en el equipo de Visual Studio para habilitar la detección  
- Debe permitir el puerto UDP 3702 entrante para permitir la detección de los equipos que ejecutan el depurador remoto. Para agregarlo, vea Cómo configurar puertos en un firewall.  
-  
-## Para configurar el firewall de Windows del equipo remoto para la depuración remota  
- Los componentes de depuración remota pueden instalarse en el equipo remoto o ejecutarse desde un directorio compartido. El firewall del equipo remoto debe configurarse en ambos casos. Los componentes de depuración remota se encuentra en:  
-  
- **\<directorio de instalación de Visual Studio\>\\Common7\\IDE\\Remote Debugger**  
-  
- Las instrucciones para configurar el firewall de Windows varían ligeramente en los distintos sistemas operativos. En Windows 7 o Windows Server 2008, se usa la palabra **programa**; mientras que en Windows 8\/8.1, Windows 10 y Windows Server 2012 se usa la palabra **aplicación**.  En los pasos siguientes se usará la palabra **aplicación**.  
-  
-1.  Abra la página del Firewall de Windows. \(En el cuadro de búsqueda del menú **Inicio**, escriba **Firewall de Windows**\).  
-  
-2.  Haga clic en **Permitir una aplicación o una característica a través de Firewall de Windows**.  
-  
-3.  En la lista **Aplicaciones y características permitidas**, busque **Monitor de depuración remota de Visual Studio**. Si aparece en la lista, asegúrese de que está seleccionada y de que también estén seleccionados uno o varios tipos de red.  
-  
-4.  Si no aparece el **Monitor de depuración remota de Visual Studio** en la lista, haga clic en **Permitir otra aplicación**. Si aún no ve la opción en la ventana **Agregar una aplicación**, haga clic en **Examinar** y vaya a **\<directorio de instalación de Visual Studio\>\\Common7\\IDE\\Remote Debugger**. Busque la carpeta correspondiente de la aplicación \(x86, x64, Appx\) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
-  
-5.  En la lista **Aplicaciones permitidas**, busque **Monitor de depuración remota de Visual Studio**. Active uno o más tipos de red \(**dominio, doméstica\/de trabajo \(privada\) o pública**\) para la comunicación con el monitor de depuración remota. Los tipos deben incluir la red a la que está conectado el equipo de Visual Studio.  
-  
-## Puertos en el equipo remoto que habilitan la depuración remota  
+## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports on the remote computer that enable remote debugging  
   
 |||||  
 |-|-|-|-|  
-|**Puertos**|**Entrante\/saliente**|**Protocolo**|**Descripción**|  
-|3702|Saliente|UDP|Necesario para la detección del depurador remoto|  
-|4020||TCP|Para VS 2015. El número de puerto se incrementa en 2 para cada versión de Visual Studio. Para más información, vea Asignaciones de puerto de depurador remoto de Visual Studio.|  
-|4021||TCP|Para VS 2015. El número de puerto se incrementa en 2 para cada versión de Visual Studio. Para más información, vea Asignaciones de puerto de depurador remoto de Visual Studio.|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|   
+|4022|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. For more information, see [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. (Only used to remote debug a 32-bit process from the 64-bit version of the remote debugger.) For more information, see  [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
+|3702|Outgoing|UDP|(Optional) Required for remote debugger discovery.|    
   
-## Puertos en el equipo remoto que permiten la depuración remota con el modo de compatibilidad administrado o nativo  
+## <a name="how-to-configure-ports-in-windows-firewall"></a>How to Configure Ports in Windows Firewall  
+
+When you install Visual Studio or the remote debugger, the software will try to open the correct ports. However, in some scenarios (such as using a third party firewall), you may need to open a port manually. If you need to verify that ports are open, see [Troubleshooting](#troubleshooting). Some instructions for opening a port may be different on older versions of Windows.
+
+To open a port:
+  
+1. Open the **Start** menu, search for **Windows Firewall with Advanced Security**.
+
+2. Then choose **Inbound Rules > New Rule > Port**, and then click **Next**. (For Outgoing rules, choose **Outbound Rules** instead.)
+
+3. Choose either **TCP** or **UDP**, depending on the port number.
+
+4. Under **Specific local ports**, enter the port number, click **Next**.
+
+5. Click **Allow the Connection** and then click **Next**.
+
+6. Select one or more network types to enable for the port and click **Next**.
+
+    The type you select must include the network to which the remote computer is connected.
+7. Add the name (for example, **msvsmon**, **IIS**, or **Web Deploy**) for the rule and click **Finish**.
+
+    You should see your new rule in the Inbound Rules or Outbound Rules list.
+
+## <a name="troubleshooting"></a>Troubleshooting
+
+If you are having trouble attaching to your app with the remote debugger, you may need to verify that the correct ports are open.
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Verify that ports are open in the Windows Firewall on the Visual Studio Computer  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (In the **Start** menu search box, type **Windows Firewall**).  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger Discovery**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger Discovery** is not listed, click **Allow another app**. If you still don't see it in the **Add an app** window, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps and features** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Verify that ports are open in the Windows Firewall on the remote computer  
+ The remote debugging components can be installed on the remote computer or run from a shared directory. The firewall of the remote computer must be configured in both cases. The remote debugging components are located in:  
+  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**  
+  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (On the **Start** menu search box, type **Windows Firewall**.)  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger** is not listed, click **Allow another app**. If you still don't see it in the **Add an app window**, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Managed or native compatibility mode) Open additional ports on the remote computer
+
+If you are using compatibility mode for the debugger (**Tools > Options > Debugging**), additional ports will need to be opened. Compatibility mode enables a legacy version of the debugger and different ports are required.
+
+> [!NOTE]
+> The legacy version of the debugger is the Visual Studio 2010 debugger.
   
 |||||  
 |-|-|-|-|  
-|**Puertos**|**Entrante\/saliente**|**Protocolo**|**Descripción**|  
-|135, 139, 445|Saliente|TCP|Obligatorio.|  
-|137, 138|Saliente|UDP|Obligatorio.|  
-|500, 4500|Saliente|UDP|Necesario si la directiva de dominio exige que la comunicación de red se realice a través de IPSec.|  
-|80|Saliente|TCP|Necesario para la depuración en el servidor web.|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|  
+|135, 139, 445|Outgoing|TCP|Required.|  
+|137, 138|Outgoing|UDP|Required.|  
+|500, 4500|Outgoing|UDP|Required if your domain policy requires network communication to be performed through IPSec.|  
+|80|Outgoing|TCP|Required for Web Server debugging.|
   
-## Cómo configurar puertos en el Firewall de Windows  
-  
-1.  En el menú **Inicio**, busque **Firewall de Windows con seguridad avanzada**.  
-  
-2.  Haga clic en **Reglas de entrada** o **Reglas de salida** y, a continuación, haga clic en **Nueva regla** en la lista **Acciones**.  
-  
-3.  En la página **Tipo de regla**, seleccione **Puerto** y, a continuación, haga clic en **Siguiente**.  
-  
-4.  En la página **Protocolo y puertos** seleccione el protocolo del puerto \(TCP o UDP\). Seleccione **Puertos locales específicos** y escriba uno o más números de puerto que desea habilitar para el protocolo. Separe los números con comas. Después, haga clic en **Siguiente**.  
-  
-5.  En la página **Acción**, seleccione **Permitir la conexión** y, a continuación, haga clic en **Siguiente**.  
-  
-6.  En la página **Perfil** seleccione uno o más tipos de red para habilitar para el puerto. Los tipos seleccionados deben incluir la red a la que está conectado el equipo remoto. Después, haga clic en **Siguiente**.  
-  
-7.  En la página **Nombre**, escriba un nombre para la regla y, a continuación, haga clic en **Finalizar**.  
-  
-8.  Debería ver la nueva regla en la lista **Reglas de entrada** o **Reglas de salida**.  
-  
-## Vea también  
- [Depuración remota](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

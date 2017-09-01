@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 251b00c479c3853ba4fc00521f3e4cac74a93d27
 ms.contentlocale: es-es
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
@@ -90,7 +90,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
  Cada área numerada de la ilustración se corresponde con un paso del procedimiento.  
   
- ![Vista de informe de resumen de muestreo](~/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Vista de informe de resumen de muestreo](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Para analizar datos de muestreo:  
   
@@ -139,9 +139,9 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
 4.  Después de volver a ejecutar la sesión, se agrega otro archivo de datos a la carpeta **Informes** de la sesión en el **Explorador de rendimiento**. Seleccione los datos de generación de perfiles originales y nuevos, haga clic con el botón secundario en la selección y, luego, haga clic en **Comparar informes de rendimiento**.  
   
-     Se abre una nueva ventana de informe que muestra los resultados de la comparación. Para obtener más información sobre cómo utilizar la vista de comparación, consulte [Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md).  
+     Se abre una nueva ventana de informe que muestra los resultados de la comparación. Para obtener más información sobre cómo utilizar la vista de comparación, consulte [Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de rendimiento](../profiling/performance-explorer.md)   
  [Introducción](../profiling/getting-started-with-performance-tools.md)   
- [Información general](../profiling/overviews-performance-tools.md)
+ [Introducciones](../profiling/overviews-performance-tools.md) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
