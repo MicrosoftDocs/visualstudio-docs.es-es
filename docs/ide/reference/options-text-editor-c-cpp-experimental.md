@@ -1,7 +1,7 @@
 ---
 title: Opciones, editor de texto, C/C++, experimental | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 1677db7d5af93db8a378d598332e6a6d52f09bdd
 ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
@@ -50,7 +50,8 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
 ## <a name="enable-predictive-intellisense"></a>Habilitar Intellisense predictivo
 IntelliSense predictivo limita el número de resultados que se muestran en la lista desplegable de IntelliSense para que vea únicamente los resultados que son relevantes en el contexto. Por ejemplo, si escribe <code>int x =</code> e invoca la lista desplegable de IntelliSense, solo verá números enteros o funciones que devuelven enteros. IntelliSense predictivo está desactivado de forma predeterminada.
 
-## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida
+## <a name="enable-faster-project-load"></a>Habilitar la carga de proyectos más rápida 
+**Visual Studio 2017 versión 15.3 y posteriores**: esta característica ahora se denomina **Habilitar almacenamiento en caché de los proyectos** y se ha movido a la página de propiedades [Configuración de proyecto de VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 Esta opción permite que Visual Studio copie en caché los datos de un proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Características adicionales de la Galería de Visual Studio
