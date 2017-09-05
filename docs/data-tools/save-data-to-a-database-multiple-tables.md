@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 828a7800aec528dd90de946de0243b5fb0198225
+ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
+ms.openlocfilehash: 36597ffe7f20e68c0cd45ce0b7443d6f7a1b5957
 ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/05/2017
 
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Save data to a database (multiple tables)
@@ -135,7 +135,7 @@ One of the most common scenarios in application development is to display data o
   
      A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. An `OrdersTableAdapter` and <xref:System.Windows.Forms.BindingSource> appear in the component tray.  
   
-## <a name="addcode-to-update-the-database"></a>Addcode to update the database  
+## <a name="add-code-to-update-the-database"></a>Add code to update the database  
  You can update the database by calling the `Update` methods of the **Customers** and **Orders** TableAdapters. By default, an event handler for the **Save** button of the<xref:System.Windows.Forms.BindingNavigator> is added to the form's code to send updates to the database. This procedure modifies the code to send updates in the correct order.This eliminates the possibility of raising referential integrity errors. The code also implements error handling by wrapping the update call in a try-catch block. You can modify the code to suit the needs of your application.  
   
 > [!NOTE]
