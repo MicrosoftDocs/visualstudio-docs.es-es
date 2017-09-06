@@ -40,10 +40,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
-ms.openlocfilehash: a4adf246f578245dc318d586f5d99e416633e2ef
+ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
+ms.openlocfilehash: 63bb0c381ab0314b42d9a6a8a695a5ce3ff76388
 ms.contentlocale: es-es
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="validate-data-in-datasets"></a>Validate data in datasets
@@ -194,7 +194,7 @@ Validation can also be performed during the <xref:System.Data.DataTable.RowChang
      [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]  [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]  
   
 ## <a name="access-the-original-version-of-a-datarow"></a>Access the original version of a DataRow  
- When changes are made to data rows, the dataset retains both the original (<xref:System.Data.DataRowVersion>) and new (<xref:System.Data.DataRowVersion>) versions of the row. For example, before calling the `AcceptChanges` method, your application can access the different versions of a record (as defined in the <xref:System.Data.DataRowVersion> enumeration) and process the changes accordingly.  
+ When changes are made to data rows, the dataset retains both the original (<xref:System.Data.DataRowVersion.Original>) and new (<xref:System.Data.DataRowVersion.Current>) versions of the row. For example, before calling the `AcceptChanges` method, your application can access the different versions of a record (as defined in the <xref:System.Data.DataRowVersion> enumeration) and process the changes accordingly.  
   
 > [!NOTE]
 >  Different versions of a row exist only after it has been edited and before it the `AcceptChanges` method has been called. After the `AcceptChanges` method has been called, the current and original versions are the same.  
