@@ -1,99 +1,116 @@
 ---
-title: "Configurar referencia de servicio (Cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "msvse_wcf.dlg.ConfigureServiceReference"
-helpviewer_keywords: 
-  - "Servicios WCF, cuadro de diálogo Configurar referencia de servicio"
-  - "referencias de servicio [Visual Studio], configurar comportamiento"
-  - "Configurar referencia de servicio (cuadro de diálogo)"
+title: Configure Service Reference Dialog Box | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- msvse_wcf.dlg.ConfigureServiceReference
+helpviewer_keywords:
+- WCF services, Configure Service Reference dialog box
+- service references [Visual Studio], configuring behavior
+- Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: a4aaa6e00355cee8ea7700d9114d2c174700ba72
+ms.contentlocale: es-es
+ms.lasthandoff: 09/07/2017
+
 ---
-# Configurar referencia de servicio (Cuadro de di&#225;logo)
-El cuadro de diálogo **Configurar referencia de servicio** permite configurar el comportamiento de los servicios [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)].  
+# <a name="configure-service-reference-dialog-box"></a>Configure Service Reference Dialog Box
+The **Configure Service Reference** dialog box enables you to configure the behavior of [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] services.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos.  Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas.  Para obtener más información, consulte [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/es-es/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose Import and Export Settings on the Tools menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- Para acceder al cuadro de diálogo **Configurar referencia de servicio**, haga clic con el botón secundario en una referencia de servicio en el **Explorador de soluciones** y elija **Configurar referencia de servicio**.  También puede acceder al cuadro de diálogo haciendo clic en el botón **Avanzadas** en el [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md).  
+ To access the **Configure Service Reference** dialog box, right-click a service reference in **Solution Explorer** and choose **Configure Service Reference**. You can also access the dialog box by clicking the **Advanced** button in the **Add Service Reference Dialog Box**.  
   
-## Lista de tareas  
+## <a name="task-list"></a>Task List  
   
--   Para cambiar la dirección donde se hospeda un servicio WCF, escriba la nueva dirección en el campo **Dirección**.  
+-   To change the address where a WCF service is hosted, enter the new address in the **Address** field.  
   
--   Para cambiar el nivel de acceso de las clases de un cliente de WCF, seleccione una palabra clave de nivel de acceso en la lista **Nivel de acceso de las clases generadas**.  
+-   To change the access level for classes in a WCF client, select an access-level keyword in the **Access level for generated classes** list.  
   
--   Para llamar a los métodos de un servicio WCF asincrónicamente, active la casilla **Generar operaciones asincrónicas**.  
+-   To call the methods of a WCF service asynchronously, select the **Generate asynchronous operations** check box.  
   
--   Para generar tipos de contrato de mensaje en un cliente de WCF, active la casilla **Generar siempre contratos de mensaje**.  
+-   To generate message contract types in a WCF client, select the **Always generate message contracts** check box.  
   
--   Para especificar tipos de colección de lista o diccionario para un cliente de WCF, seleccione los tipos en las listas **Tipo de colección** y **Tipo de colección de diccionario**.  
+-   To specify list or dictionary collection types for a WCF client, select the types from the **Collection type** and **Dictionary collection type** lists.  
   
--   Para deshabilitar el uso compartido de tipos, desactive la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**.  Para habilitar el uso compartido de tipos para un subconjunto de ensamblados a los que se hace referencia, active la casilla **Volver a usar tipos en ensamblados a los que se hace referencia**, seleccione **Volver a usar tipos en los ensamblados especificados** y seleccione las referencias deseadas en la lista **Ensamblados a los que se hace referencia**.  
+-   To disable type sharing, clear the **Reuse types in referenced assemblies** check box. To enable type sharing for a subset of referenced assemblies, select the **Reuse types in referenced assemblies** check box, select **Reuse types in specified referenced assemblies**, and select the desired references in the **Referenced assemblies list**.  
   
-## Lista de UIElement  
- **Dirección**  
- Se usa para actualizar la dirección web en la que una referencia de servicio busca un servicio.  Por ejemplo, durante el desarrollo un servicio podría hospedarse en un servidor de desarrollo para más adelante moverse a un servidor de producción, lo que hace necesario un cambio de dirección.  
-  
-> [!NOTE]
->  El elemento Dirección no está disponible cuando el cuadro de diálogo **Configurar referencia de servicio** se muestra desde el [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md).  
-  
- **Nivel de acceso para clases generadas**  
- Determina el nivel de acceso del código para clases de cliente de WCF.  
+## <a name="uielement-list"></a>UIElement List  
+ **Address**  
+ Used to update the Web address where a service reference looks for a service. For example, during development the service may be hosted on a development server then later moved to a production server, necessitating an address change.  
   
 > [!NOTE]
->  En los proyectos de sitio web, esta opción siempre está establecida en `Public` y no se puede cambiar.  Para obtener más información, consulte [Troubleshooting Service References](../data-tools/troubleshooting-service-references.md).  
+>  The Address element is not available when the **Configure Service Reference** dialog box is displayed from the **Add Service Reference Dialog Box**.  
   
- **Generar operaciones asincrónicas**  
- Determina si se llamará a los métodos de servicio de WCF sincrónicamente \(valor predeterminado\) o asincrónicamente.  
-  
- **Generar operaciones basadas en tareas**  
- Al escribir código asincrónico, esta opción permite aprovechar las ventajas de la biblioteca TPL, incorporada en .Net 4.  Consulte [Biblioteca de procesamiento paralelo basado en tareas \(TPL\)](http://msdn.microsoft.com/library/dd460717.aspx).  
-  
- **Generar siempre contratos de mensaje**  
- Determina si se generarán tipos de contrato de mensaje para un cliente de WCF.  Para obtener más información acerca de los contratos de mensaje, consulte [Usar contratos de mensaje](../Topic/Using%20Message%20Contracts.md).  
-  
- **Tipo de colección**  
- Especifica el tipo de colección de lista para un cliente de WCF.  El tipo predeterminado es <xref:System.Array>.  
-  
- **Tipo de colección de diccionario**  
- Especifica el tipo de colección de diccionario para un cliente de WCF.  El tipo predeterminado es <xref:System.Collections.Generic.Dictionary%602>.  
-  
- **Volver a usar tipos en ensamblados a los que se hace referencia**  
- Determina si un cliente de WCF intentará volver a usar tipos que ya existen en ensamblados a los que se hace referencia en lugar de generar nuevos tipos cuando se agrega o se actualiza un servicio.  Esta opción se encuentra activada de forma predeterminada.  
-  
- **Volver a usar tipos en todos los ensamblados a los que se hace referencia**  
- Cuando está seleccionada, se volverán a usar todos los tipos de la lista **Ensamblados a los que se hace referencia** si es posible.  Esta opción se encuentra activada de forma predeterminada.  
-  
- **Volver a usar tipos en los ensamblados especificados**  
- Cuando está seleccionada, solo se volverán a usar los tipos seleccionados en la lista **Ensamblados a los que se hace referencia**.  
-  
- **Ensamblados a los que se hace referencia**  
- Contiene una lista de los ensamblados a los que se hace referencia en el proyecto o sitio web.  Cuando **Volver a usar tipos en los ensamblados especificados** está activada, se pueden seleccionar o deseleccionar ensamblados individuales.  
-  
- **Agregar referencia web**  
- Se abrirá el [Agregar referencia Web \(Cuadro de diálogo\)](http://msdn.microsoft.com/es-es/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ **Access level for generated classes**  
+ Determines the code access level for WCF client classes.  
   
 > [!NOTE]
->  Esta opción solo debe usarse para proyectos destinados a la versión 2.0 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+>  For Website projects, this option is always set to `Public` and cannot be changed. For more information, see [Troubleshooting Service References](../data-tools/troubleshooting-service-references.md).  
+  
+ **Generate asynchronous operations**  
+ Determines whether WCF service methods will be called synchronously (the default) or asynchronously.  
+  
+ **Generate task-based operations**  
+ When writing async code, this option allows you to take advantage of the Task Parallel Library (TPL) that was introduced with .Net 4. See [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+  
+ **Always generate message contracts**  
+ Determines whether message contract types will be generated for a WCF client. For more information about message contracts, see [Using Message Contracts](/dotnet/framework/wcf/feature-details/using-message-contracts).  
+  
+ **Collection type**  
+ Specifies the list collection type for a WCF client. The default type is <xref:System.Array>.  
+  
+ **Dictionary collection type**  
+ Specifies the dictionary collection type for a WCF client. The default type is <xref:System.Collections.Generic.Dictionary%602>.  
+  
+ **Reuse types in referenced assemblies**  
+ Determines whether a WCF client will try to reuse that already exist in referenced assemblies instead of generating new types when a service is added or updated. By default, this option is checked.  
+  
+ **Reuse types in all referenced assemblies**  
+ When selected, all types in the **Referenced assemblies list** will be reused if possible. By default, this option is selected.  
+  
+ **Reuse types in specified referenced assemblies**  
+ When selected, only the selected types in the **Referenced assemblies list** will be reused.  
+  
+ **Referenced assemblies list**  
+ Contains a list of referenced assemblies for the project or Web site. When **Reuse types in specified referenced assemblies** is selected, individual assemblies can be selected or cleared.  
+  
+ **Add Web Reference**  
+ Displays the [NIB: Add Web Reference Dialog Box](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
->  El botón **Agregar referencia web** solo está disponible cuando el cuadro de diálogo **Configurar referencia de servicio** se muestra desde el [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md).  
+>  This option should be used only for projects that target version 2.0 of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## Vea también  
- [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)   
- [How to: Add, Update, or Remove a Service Reference](../Topic/How%20to:%20Add,%20Update,%20or%20Remove%20a%20Service%20Reference.md)   
- [How to: Add a Reference to a Web Service](../Topic/How%20to:%20Add%20a%20Reference%20to%20a%20Web%20Service.md)   
- [Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio](../data-tools/configure-service-reference-dialog-box.md)   
- [Ejemplo Consuming ASMX and WCF Services](http://msdn.microsoft.com/es-es/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)
+> [!NOTE]
+>  The **Add Web Reference** button is available only when the **Configure Service Reference** dialog box is displayed from the **Add Service Reference Dialog Box**.  
+  
+## <a name="see-also"></a>See Also  
+
+ [How to: Add a Reference to a Web Service](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
+ [Windows Communication Foundation Services and WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
