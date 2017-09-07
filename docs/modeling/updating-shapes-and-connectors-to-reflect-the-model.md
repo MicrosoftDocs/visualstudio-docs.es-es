@@ -1,5 +1,5 @@
 ---
-title: Updating Shapes and Connectors to Reflect the Model | Microsoft Docs
+title: Actualizar formas y conectores para reflejar el modelo | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,13 +15,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Updating Shapes and Connectors to Reflect the Model
-In a domain-specific language in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can make the appearance of a shape reflect the state of the underlying model.  
+# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Actualizar formas y conectores para reflejar el modelo
+En un lenguaje específico de dominio en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede hacer que la apariencia de una forma reflejan el estado del modelo subyacente.  
   
- The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You will need these statements in each file:  
+ Los ejemplos de código de este tema deben agregarse a un `.cs` un archivo en su `Dsl` proyecto. Necesitará estas instrucciones en cada archivo:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -29,24 +29,24 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Set Shape Map properties to control the visibility of a decorator  
- You can control the visibility of a decorator without writing program code, by configuring the mapping between the shape and the domain class in the DSL Definition. For more information, see [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Establecer las propiedades de mapa de formas para controlar la visibilidad de un elemento decorator  
+ Puede controlar la visibilidad de un elemento decorator sin escribir código de programa, mediante la configuración de la asignación entre la forma y la clase de dominio en la definición DSL. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).
   
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expose the color and style of a shape as properties  
- In the DSL Definition, right-click the shape class, point to **Add Exposed**, and then click one of the items such as **Fill Color**.  
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Exponer el color y estilo de una forma como propiedades  
+ En la definición DSL, haga clic en la clase shape, seleccione **agregar expone**y, a continuación, haga clic en uno de los elementos como **Fill Color**.  
   
- The shape now has a domain property that you can set in program code or as a user. For example, to set it in the program code of a command or rule, you could write:  
+ La forma ahora tiene una propiedad de dominio que se puede establecer en el código de programa o como un usuario. Por ejemplo, para establecerla en el código de programa de un comando o una regla, podría escribir:  
   
  `shape.FillColor = System.Drawing.Color.Red;`  
   
- If you want to make the property variable only under program control, and not by the user, select the new domain property such as **Fill Color** in the DSL Definition diagram. Then, in the Properties window, set **Is Browsable** to `false` or set **Is UI Readonly** to `true`.  
+ Si desea hacer que la variable de propiedad solo bajo control del programa y no por el usuario, seleccione la nueva propiedad de dominio como **Fill Color** en el diagrama de definición DSL. A continuación, en la ventana Propiedades, establezca **es examinable** a `false` o establecer **es Readonly de interfaz de usuario** a `true`.  
   
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Define Change Rules to make color, style or location depend on model element properties  
- You can define rules that update the appearance the shape dependent on other parts of the model. For example, you could define a Change Rule on a model element that updates the color of its shape dependent on the properties of the model element. For more information about Change Rules, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definir reglas de cambio para que el color, estilo o una ubicación dependen de propiedades del elemento de modelo  
+ Puede definir reglas que actualizan la apariencia de la forma depende de otras partes del modelo. Por ejemplo, podría definir una regla de cambio de un elemento del modelo que actualiza el color de su forma depende de las propiedades del elemento del modelo. Para obtener más información acerca de cómo cambiar las reglas, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
- You should use rules only to update properties that are maintained within the Store, because rules are not invoked when the Undo command is performed. This does not include some graphical features such as the size and visibility of a shape. To update those features of a shape, see [Updating Non-Store Graphical features](#OnAssociatedProperty).  
+ Debe usar las reglas para actualizar las propiedades que se mantienen en el almacén, porque las reglas no se invocan cuando se realiza el comando Deshacer. Esto no incluye algunas características como el tamaño y la visibilidad de una forma gráficas. Para actualizar las características de una forma, consulte [características gráficas de almacén no actualizar](#OnAssociatedProperty).  
   
- The following example assumes that you have exposed `FillColor` as a domain property as described in the previous section.  
+ En el siguiente ejemplo se da por supuesto que ha expuesto `FillColor` como una propiedad de dominio como se describe en la sección anterior.  
   
 ```csharp  
 [RuleOn(typeof(ExampleElement))]  
@@ -85,8 +85,8 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Use OnChildConfigured to initialize a shape's properties  
- To set the properties of a shape when it is first created, the override `OnChildConfigured()` in a partial definition of your diagram class. The diagram class is specified in your DSL Definition, and the generated code is in **Dsl\Generated Code\Diagram.cs**. For example:  
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usar OnChildConfigured para inicializar las propiedades de una forma  
+ Para establecer las propiedades de una forma cuando llega el primer creado, la invalidación `OnChildConfigured()` en una definición parcial de la clase del diagrama. La clase del diagrama se especifica en la definición de DSL y el código generado está en **Dsl\Generated Code\Diagram.cs**. Por ejemplo:  
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -109,12 +109,12 @@ partial class MyLanguageDiagram
   
 ```  
   
- This method can be used both for domain properties and non-store features, such as the size of the shape.  
+ Este método se puede utilizar tanto para las propiedades de dominio y las características de almacén no, como el tamaño de la forma.  
   
-##  <a name="OnAssociatedProperty"></a> Use AssociateValueWith() to update other features of a shape  
- For some features of a shape, such as whether it has a shadow, or the arrow style of a connector, there is no built-in method of exposing the feature as a domain property.  Changes to such features are not under the control of the transaction system. Therefore, it is not appropriate to update them using rules, because rules are not invoked when the user performs the Undo command.  
+##  <a name="OnAssociatedProperty"></a>Usar AssociateValueWith() para actualizar otras características de una forma  
+ Para algunas características de una forma, por ejemplo, si tiene una sombra, o el estilo de flecha de un conector, no hay ningún método integrado de exponer la característica como una propiedad de dominio.  Cambios en estas características no están bajo el control del sistema de transacciones. Por lo tanto, no resulta adecuado actualizarlos mediante reglas, porque las reglas no se invocan cuando el usuario ejecuta el comando Deshacer.  
   
- Instead, you can update such features by using <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. In the following example, the arrow style of a connector is controlled by a value of a domain property in the relationship that the connector displays:  
+ En su lugar, puede actualizar estas características mediante <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. En el ejemplo siguiente, el estilo de flecha de un conector se controla mediante un valor de una propiedad de dominio en la relación que el conector de muestra:  
   
 ```  
 public partial class ArrowConnector // My connector class.   
@@ -155,7 +155,7 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()` should be called one time for each domain property that you want to register. After it has been called, any changes to the specified property will call `OnAssociatedPropertyChanged()` in any shapes that present the property's model element.  
+ `AssociateValueWith()`debe llamarse una vez por cada propiedad del dominio que desea registrar. Después de la llamada, se llamará los cambios en la propiedad especificada `OnAssociatedPropertyChanged()` en las formas que presenten el elemento del modelo de la propiedad.  
   
- It is not necessary to call `AssociateValueWith()` for each instance. Although InitializeResources is an instance method, it is invoked only one time for each shape class.
+ No es necesario llamar a `AssociateValueWith()` para cada instancia. Aunque InitializeResources es un método de instancia, se invoca solo una vez para cada clase de forma.
 

@@ -10,8 +10,8 @@ dev_langs:
 - C++
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 9
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 translation.priority.mt:
@@ -20,10 +20,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: a2367ec3284c7813d0ffc3581d872ab997854466
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 2c7549c0d09c8f7892dbebe34a6fbe3bcb67d4be
 ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools for C++

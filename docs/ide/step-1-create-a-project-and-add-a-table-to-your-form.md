@@ -102,7 +102,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
   
      Ya tiene diseñado el formulario. Debería ser similar a la imagen siguiente.  
   
-     ![Formulario inicial del juego de formar parejas](~/ide/media/express_tut4step1.png "Express_Tut4Step1")  
+     ![Formulario inicial del juego de formar parejas](../ide/media/express_tut4step1.png "Express_Tut4Step1")  
 Formulario inicial del juego de formar parejas  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  

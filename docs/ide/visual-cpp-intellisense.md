@@ -40,32 +40,32 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
 ## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++  
  IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, prácticamente todas las características de IntelliSense pueden habilitarse o deshabilitarse en la página de propiedades **Editor de texto, C/C++, Avanzado**.  
   
- ![Herramientas, Opciones, Editor de texto, C&#47;C&#43;&#43;, Opciones avanzadas](~/ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
+ ![Herramientas, Opciones, Editor de texto, C&#47;C&#43;&#43;, Opciones avanzadas](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
   
  Puede utilizar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense.  
   
- ![Visual C&#43;&#43; menú de IntelliSense](~/ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")  
+ ![Visual C&#43;&#43; menú de IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")  
   
 ### <a name="statement-completion-and-member-list"></a>Lista de finalización de instrucciones y de miembros  
  Cuando empiece a escribir una palabra clave, un tipo, una función, el nombre de una variable u otro elemento de programa que el compilador reconozca, el editor le ofrecerá la opción de completar la palabra por usted.  
   
  Para ver una lista de los iconos y sus significados, vea [Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md).  
   
- ![Visual C&#43;&#43; ventana Palabra completa](~/ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")  
+ ![Visual C&#43;&#43; ventana Palabra completa](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")  
   
  La primera vez que se invoca la lista de miembros solo muestra los miembros a los que se puede acceder en el contexto actual. Si después de esa primera vez usa **Ctrl+J**, muestra todos los miembros, independientemente de su accesibilidad. Si se invoca una tercera vez, se muestra una lista de elementos de programa aún más amplia. Puede desactivar la finalización de instrucciones en la página **Opciones generales de C/C++**.  
   
- ![Visual C&#43;&#43; Lista de miembros](~/ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")  
+ ![Visual C&#43;&#43; Lista de miembros](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")  
   
 ### <a name="parameter-help"></a>Ayuda de parámetro  
  Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual", basado en la ubicación del cursor, está en negrita. Puede desactivar la finalización de instrucciones en la página **Opciones generales de C/C++**.  
   
- ![Visual C&#43;&#43; Ayuda del parámetro](~/ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")  
+ ![Visual C&#43;&#43; Ayuda del parámetro](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")  
   
 ### <a name="quick-info"></a>Información rápida  
  Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar Información rápida en la página **Editor de texto, C/C++, Avanzado**.  
   
- ![Visual C&#43;&#43; InformaciónRápida](~/ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")  
+ ![Visual C&#43;&#43; InformaciónRápida](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")  
   
 ## <a name="error-squiggles"></a>Subrayados ondulados de error  
  Los subrayados ondulados bajo un elemento de programa (variable, palabra clave, llave, nombre de tipo, etc.), intentan indicarle la existencia de un error o un posible error en el código. Un subrayado ondulado aparece cuando escribe una declaración adelantada, para recordarle que aún le queda por escribir la implementación. Un subrayado ondulado de color púrpura se muestra en un proyecto compartido para indicar que hay un error en código que no está activo actualmente, como sucede, por ejemplo, cuando está trabajando en el contexto de Windows pero introduce algo que sería un error en un contexto de Android. Un subrayado ondulado de color rojo indica una advertencia o un error del compilador en el código activo que tiene que resolver.  
@@ -80,7 +80,7 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
   
  Esta es una aplicación de OpenGLES que está configurada para compilarse para Android e iOS. La ilustración muestra el código compartido que se está editando. En la primera imagen, Android es el proyecto activo:  
   
- ![El proyecto Android es el proyecto activo.](~/ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")  
+ ![El proyecto Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")  
   
  Tenga en cuenta lo siguiente:  
   
@@ -92,7 +92,7 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
   
  Ahora cambie el proyecto activo a iOS.StaticLibrary y observe cómo cambia el subrayado ondulado.  
   
- ![iOS está seleccionado como el proyecto activo.](~/ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+ ![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
  Tenga en cuenta lo siguiente:  
   

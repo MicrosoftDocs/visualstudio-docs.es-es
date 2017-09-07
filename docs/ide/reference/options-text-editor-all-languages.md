@@ -79,7 +79,7 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Mostrar glifos visuales para ajuste de línea  
  Cuando está seleccionada, se muestra un indicador de flecha de retorno en el que una línea larga se ajusta en una segunda línea.  
   
- ![Captura de pantalla de LineBreakSymbol](~/ide/reference/media/linebreak.gif "linebreak")  
+ ![Captura de pantalla de LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")  
   
  Desactive esta casilla si prefiere no mostrar estos indicadores.  
   

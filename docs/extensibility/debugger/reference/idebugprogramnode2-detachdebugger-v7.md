@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::DetachDebugger_V7 | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,13 +35,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
-DEPRECATED. DO NOT USE.  
+EN DESUSO. NO UTILICE.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT DetachDebugger_V7 (   
@@ -53,15 +53,15 @@ HRESULT DetachDebugger_V7 (
 int DetachDebugger_V7 ();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- An implementation should always return `E_NOTIMPL`.  
+## <a name="return-value"></a>Valor devuelto  
+ Siempre debe devolver una implementación `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Comentarios  
   
 > [!WARNING]
->  As of [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], this method is no longer used and should always return `E_NOTIMPL`.  
+>  Como de [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], este método ya no se utiliza y siempre debe devolver `E_NOTIMPL`.  
   
- This method is called when the debugger unexpectedly quits. When this method is called, the DE should resume the program as though the user detached from it. No more debug events should be sent. The program should be in a state where it is attachable from another instance of the debugger.  
+ Este método se llama cuando el depurador se cierra inesperadamente. Cuando se llama a este método, la DE debe reanudar el programa como si el usuario se separa del mismo. No hay más eventos de depuración se deben enviar. El programa debe estar en un estado donde resulta adjuntable desde otra instancia del depurador.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,7 +1,7 @@
 ---
 title: "Automatización de la instalación de Visual Studio con un archivo de respuesta | Microsoft Docs"
-description: "{{MARCADOR DE POSICIÓN}}"
-ms.date: 05/06/2017
+description: "Más información sobre cómo crear un archivo de respuesta JSON que permita automatizar la instalación de Visual Studio"
+ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
 ms.technology:
@@ -9,56 +9,46 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 448C738E-121F-4B64-8CA8-3BC997817A14
+- response file
+- automate
+- installation
+- command-line
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: c77f0321e50a27635e083d656cf6ba8011a4ef4d
+ms.translationtype: HT
+ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
+ms.openlocfilehash: 5c8aaf24a1952847c593d5eb70f7c94208310174
 ms.contentlocale: es-es
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 08/14/2017
 
 ---
+
 # <a name="how-to-define-settings-in-a-response-file"></a>Definición de la configuración en un archivo de respuesta
-Los administradores que implementan Visual Studio pueden especificar un archivo de respuesta mediante el parámetro `--in`, por ejemplo:
+Los administradores que implementan Visual Studio pueden especificar un archivo de respuesta con el parámetro `--in`, como en el ejemplo siguiente:
 
 ```
 vs_enterprise.exe --in customInstall.json
 ```
 
-Los archivos de respuesta son archivos [JSON](http://json-schema.org/) cuyo contenido reflejan los argumentos de línea de comandos.  En general, si un parámetro de línea de comandos no toma ningún argumento (por ejemplo, `--quiet`, `--passive`, etc.), el valor del archivo de respuesta debe ser true/false.  Si toma un argumento (por ejemplo, `--installPath <dir>`), el valor del archivo de respuesta debe ser una cadena.  Si toma un argumento y puede aparecer más de una vez en la línea de comandos (por ejemplo, `--add <id>`), debe ser una matriz de cadenas.
+Los archivos de respuesta son archivos [JSON](http://json-schema.org/) cuyo contenido reflejan los argumentos de línea de comandos.  En general, si un parámetro de línea de comandos no toma ningún argumento (por ejemplo, `--quiet`, `--passive`, etc.), el valor del archivo de respuesta debe ser "true" o "false".  Si toma un argumento (por ejemplo, `--installPath <dir>`), el valor del archivo de respuesta debe ser una cadena.  Si toma un argumento y puede aparecer más de una vez en la línea de comandos (por ejemplo, `--add <id>`), debe ser una matriz de cadenas.
 
-Los parámetros especificados en la línea de comandos invalidan la configuración del archivo de respuesta, excepto en el caso de parámetros que toman varias entradas (por ejemplo, `--add`), donde las entradas suministradas en la línea de comandos se combinan con la configuración del archivo de respuesta.
+Los parámetros que se especifican en la línea de comandos invalidan la configuración a partir del archivo de respuesta, excepto cuando los parámetros toman varias entradas (por ejemplo, `--add`). Cuando tiene varias entradas, las entradas proporcionadas en la línea de comandos se combinan con la configuración del archivo de respuesta.
 
 # <a name="setting-a-default-configuration-for-visual-studio"></a>Establecimiento de una configuración predeterminada para Visual Studio
 
-Si creó una caché de diseño de red con `--layout`, se crea un archivo `response.json` inicial en el diseño.
+Si creó una caché de diseño de red con `--layout`, se crea un archivo `response.json` inicial en el diseño. Si crea un diseño parcial, este archivo de respuesta incluye las cargas de trabajo y los idiomas que se han incluido en el diseño.  Al ejecutar la instalación desde este diseño se usa automáticamente este archivo response.json, que selecciona las cargas de trabajo y los componentes incluidos en el diseño.  Los usuarios pueden seleccionar o anular la selección de cualquier carga de trabajo en la interfaz de usuario de instalación antes de instalar Visual Studio. 
 
-Los administradores que crean un diseño pueden modificar el archivo `response.json` en el diseño para controlar la configuración predeterminada que verán sus usuarios al instalar Visual Studio a partir del diseño.  Por ejemplo, si un administrador desea que se instalen de forma predeterminada las cargas de trabajo y los componentes seleccionados, puede configurar un archivo `response.json` para agregarlos.
+Los administradores que crean un diseño pueden modificar el archivo `response.json` en el diseño para controlar la configuración predeterminada que ven sus usuarios al instalar Visual Studio a partir del diseño.  Por ejemplo, si un administrador quiere que se instalen de manera predeterminada las cargas de trabajo y los componentes específicos, puede configurar un archivo `response.json` para agregarlos.
 
-Cuando se ejecuta la instalación de Visual Studio desde una carpeta de diseño, se usará _automáticamente_ el archivo de respuesta de la carpeta de diseño.  No es necesario usar la opción `--in`.
+Cuando se ejecuta la instalación de Visual Studio desde una carpeta de diseño, usa _automáticamente_ el archivo de respuesta de la carpeta de diseño.  No tiene que usar la opción `--in`.
 
-Puede actualizar el archivo `response.json` que se crea en una carpeta de diseño sin conexión para definir la configuración predeterminada de los usuarios que realizan la instalación desde este diseño. **Sin embargo, es fundamental que deje las propiedades existentes que se definieron cuando se creó el diseño.**
+Puede actualizar el archivo `response.json` que se crea en una carpeta de diseño sin conexión para definir la configuración predeterminada de los usuarios que realizan la instalación desde este diseño.
 
-El archivo base `response.json` del diseño será parecido a este pero con el valor del producto y el canal que va a instalar:
+> [!WARNING]
+> Es fundamental que deje las propiedades existentes que se han definido cuando se ha creado el diseño.
+
+El archivo `response.json` base de un diseño debe tener un aspecto similar al ejemplo siguiente, salvo por el hecho de que incluiría el valor del producto y el canal que quiere instalar:
 
 ```json
 {
@@ -69,9 +59,10 @@ El archivo base `response.json` del diseño será parecido a este pero con el va
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
+Cuando crea o actualiza un diseño, también se crea un archivo response.template.json.  Este archivo contiene todos los identificadores de idioma, componentes y carga de trabajo que pueden usarse.  Este archivo se proporciona como una plantilla para todo lo que podría incluirse en una instalación personalizada.  Los administradores pueden usar este archivo como un punto inicial para un archivo de respuesta personalizado.  Simplemente quite los identificadores de lo que no quiere instalar y guárdelo en su propio archivo de respuesta.  No personalice el archivo response.template.json o sus cambios se perderán cuando se actualice el diseño. 
 
 ## <a name="example-layout-response-file-content"></a>Ejemplo de contenido del archivo de respuesta de diseño
-En este ejemplo se instalará Visual Studio Enterprise con seis cargas de trabajo y componentes comunes, con los idiomas inglés y francés para la interfaz de usuario. Puede usarlo como plantilla; simplemente cambie las cargas de trabajo y los componentes por los que quiere instalar.
+En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de trabajo y componentes comunes, con los idiomas inglés y francés para la interfaz de usuario. Puede usar este ejemplo como una plantilla; simplemente cambie las cargas de trabajo y los componentes que quiere instalar:
 
 ```json
 {

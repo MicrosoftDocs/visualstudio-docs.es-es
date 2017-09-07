@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft Docs
+title: CONNECTION_PROTOCOL | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2be5678704e9a5899c4ce7f5caba8cec1d8a21e6
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # CONNECTION_PROTOCOL
-Indicates the protocol being used to communicate between a debug server and the debug package (DE).  
+Indica el protocolo que se va a usar para la comunicación entre un servidor de depuración y el paquete de depuración (Alemania).  
   
-## Syntax  
+## Sintaxis  
   
 ```cpp  
 typedef enum tagCONNECTION_PROTOCOL {  
@@ -66,38 +66,38 @@ public enum CONNECTION_PROTOCOL {
 };  
 ```  
   
-#### Parameters  
+#### Parámetros  
  CONNECTION_NONE  
- No connection has been made to a server.  
+ Se ha realizado ninguna conexión a un servidor.  
   
  CONNECTION_UNKNOWN  
- A connection has been made, but it is of an unknown type.  
+ Se ha realizado una conexión, pero es de un tipo desconocido.  
   
  CONNECTION_LOCAL  
- Connection is to a local server.  
+ Conexión es a un servidor local.  
   
  CONNECTION_PIPE  
- Connection is through a named pipe.  
+ La conexión es a través de una canalización con nombre.  
   
  CONNECTION_TCPIP  
- Connection uses TCP/IP.  
+ Conexión usa TCP/IP.  
   
  CONNECTION_HTTP  
- Connection uses HTTP (through a Web server).  
+ Conexión usa HTTP (a través de un servidor Web).  
   
  CONNECTION_OTHER  
- Some other type of connection has been established (this value is not currently used).  
+ Se ha establecido algún otro tipo de conexión (este valor no se utiliza actualmente).  
   
-## Remarks  
- These values are returned from the [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) method.  
+## Comentarios  
+ Estos valores se devuelven desde el [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) método.  
   
-## Requirements  
- Header: msdbg.h  
+## Requisitos  
+ Encabezado: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

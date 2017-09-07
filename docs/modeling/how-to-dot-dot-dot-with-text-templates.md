@@ -1,5 +1,5 @@
 ---
-title: How to ... with Text Templates | Microsoft Docs
+title: "Cómo... con plantillas de texto | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,73 +29,73 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 6e6841e77556d9ae8b8ce76bff01537d5f45e855
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to--with-text-templates"></a>How to ... with Text Templates
-Text templates in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provide a useful way of generating text of any kind. You can use text templates to generate text at run time as part of your application and at design time to generate some of your project code. This topic summarizes the most frequently asked "How do I ...?" questions.  
+# <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
+Plantillas de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporcionan una forma útil de generar el texto de cualquier tipo. Puede usar plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas frecuentes.  
   
- In this topic, multiple answers that are preceded by bullets are alternative suggestions.  
+ En este tema, varias respuestas precedidos de viñetas son sugerencias alternativas.  
   
- For a general introduction to text templates, read [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).  
+ Para obtener una introducción general a las plantillas de texto, leer [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
   
-## <a name="how-to-"></a>How to ...  
+## <a name="how-to-"></a>Cómo...  
   
-### <a name="generate-part-of-my-application-code"></a>Generate part of my application code  
- I have a configuration or *model* in a file or a database. One or more parts of my code depend on that model.  
+### <a name="generate-part-of-my-application-code"></a>Generar parte del código de mi aplicación  
+ Tengo una configuración o *modelo* en un archivo o una base de datos. Uno o varios elementos de código dependen de ese modelo.  
   
--   Generate some of your code files from text templates. For more information, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) and [What is the best way to start writing a template?](#starting).  
+-   Generar algunos de los archivos de código a partir de plantillas de texto. Para obtener más información, consulte [generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) y [¿qué es la mejor manera de empezar a escribir una plantilla?](#starting).  
   
-### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generate files at run time, passing data into the template  
- At run time, my application generates text files, such as reports, that contain a mixture of standard text and data. I want to avoid writing hundreds of `write` statements.  
+### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Generar archivos en tiempo de ejecución, pasar datos a la plantilla  
+ En tiempo de ejecución, la aplicación genera archivos de texto, como informes, que contienen una mezcla de texto estándar y los datos. Desea evitar escribir cientos de `write` instrucciones.  
   
--   Add a runtime text template to your project. This template creates a class in your code, which you can instantiate and use to generate text. You can pass data to it in the constructor parameters. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+-   Agregar una plantilla de texto en tiempo de ejecución para el proyecto. Esta plantilla crea una clase en el código, que se puede crear una instancia y se utiliza para generar el texto. Los parámetros del constructor para pasar datos a él. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
--   If you want to generate from templates that are available only at run time, you can use standard text templates. If you are writing a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension, you can invoke the text templating service. For more information, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md). In other contexts, you can use the text templating engine. For more information, see <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
+-   Si desea generar a partir de plantillas que están disponibles en tiempo de ejecución, puede utilizar plantillas de texto estándar. Si está escribiendo un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión, puede invocar el servicio de plantillas de texto. Para obtener más información, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). En otros contextos, puede utilizar el motor de plantillas de texto. Para obtener más información, consulta <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
   
-     Use the \<#@parameter#> directive to pass parameters to these templates. For more information, see [T4 Parameter Directive](../modeling/t4-parameter-directive.md).  
+     Use la \<#@parameter#> directiva para pasar parámetros a estas plantillas. Para obtener más información, consulte [directiva de parámetro T4](../modeling/t4-parameter-directive.md).  
   
-### <a name="read-another-project-file-from-a-template"></a>Read another project file from a template  
- To read a file from the same [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project as the template:  
+### <a name="read-another-project-file-from-a-template"></a>Leer otro archivo de proyecto a partir de una plantilla  
+ Para leer un archivo de la misma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto como plantilla:  
   
--   Insert `hostSpecific="true"` into the `<#@template#>` directive.  
+-   Inserte `hostSpecific="true"` en la directiva `<#@template#>`.  
   
-     In your code, use `this.Host.ResolvePath(filename)` to obtain the full path of the file.  
+     En el código, utilice `this.Host.ResolvePath(filename)` para obtener la ruta de acceso completa del archivo.  
   
-### <a name="invoke-methods-from-a-template"></a>Invoke methods from a template  
- If the methods already exist, for example, in standard [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes:  
+### <a name="invoke-methods-from-a-template"></a>Invocar métodos desde una plantilla  
+ Si los métodos ya existen, por ejemplo, en la norma [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] clases:  
   
--   Use the \<#@assembly#> directive to load the assembly, and use \<#@import#> to set the namespace context. For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).  
+-   Utilice la \<#@assembly#> directiva al cargar el ensamblado y usar \<#@import#> para establecer el contexto de espacio de nombres. Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).  
   
-     If you frequently use the same set of assembly and import directives, consider writing a directive processor. In each template, you can invoke the directive processor, which can load the assemblies and the model files and set the namespace context. For more information, see [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+     Si se usa a menudo el mismo conjunto de ensamblado e importación directivas, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos de modelo y establecer el contexto de espacio de nombres. Para obtener más información, consulte [procesadores de la directiva de plantilla de creación personalizado T4 texto](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- If you are writing the methods yourself:  
+ Si va a escribir los métodos:  
   
--   If you are writing a runtime text template, write a partial class definition that has the same name as your runtime text template. Add the additional methods into this class.  
+-   Si está escribiendo una plantilla de texto en tiempo de ejecución, escribir una definición de clase parcial que tiene el mismo nombre que la plantilla de texto en tiempo de ejecución. Agregue los métodos adicionales en esta clase.  
   
--   Write a class feature control block `<#+ ... #>` in which you can declare methods, properties, and private classes. When the text template is compiled, it is transformed to a class. The standard control blocks `<#...#>` and text are transformed to a single method, and class feature blocks are inserted as separate members. For more information, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).  
+-   Escribir un bloque de control de características de clase `<#+ ... #>` en que se pueden declarar métodos, propiedades y clases privadas. Cuando se compila la plantilla de texto, se transforma en una clase. Los bloques de control estándar `<#...#>` texto se transforman a un único método y bloques de características de clase se insertan como miembros independientes. Para obtener más información, consulte [bloques de Control de plantilla de texto](../modeling/text-template-control-blocks.md).  
   
-     Methods defined as class features can also include embedded text blocks.  
+     Métodos definidos como las características de clase también pueden incluir bloques de texto incrustado.  
   
-     Consider placing class features in a separate file which you can `<#@include#>` into one or more template files.  
+     Considere la posibilidad de colocar las características de clase en un archivo independiente que puede `<#@include#>` en uno o varios archivos de plantilla.  
   
--   Write the methods in a separate assembly (class library) and call them from your template. Use the `<#@assembly#>` directive to load the assembly, and `<#@import#>` to set the namespace context. Note that in order to rebuild the assembly while you are debugging it, you might have to stop and restart [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. For more information, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).  
+-   Escribir los métodos en un ensamblado independiente (biblioteca de clases) y llamarlos desde la plantilla. Use la `<#@assembly#>` directiva para cargar el ensamblado, y `<#@import#>` para establecer el contexto de espacio de nombres. Tenga en cuenta que con el fin de volver a generar el ensamblado mientras realiza la depuración, es posible que deba detener y reiniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).  
   
-### <a name="generate-many-files-from-one-model-schema"></a>Generate many files from one model schema  
- If you often generate files from models that have the same XML or database schema:  
+### <a name="generate-many-files-from-one-model-schema"></a>Generar varios archivos de esquema de un modelo  
+ Si a menudo genera archivos de modelos que tienen el mismo esquema XML o base de datos:  
   
--   Consider writing a directive processor. This enables you to replace multiple assembly statements and import statements in each template with a single custom directive. The directive processor can also load and parse the model file. For more information, see [Creating Custom T4 Text Template Directive Processors](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+-   Considere la posibilidad de escribir un procesador de directivas. Esto le permite reemplazar varias instrucciones de ensamblado y las instrucciones en cada plantilla con una única directiva personalizada de importación. El procesador de directivas también puede cargar y analizar el archivo de modelo. Para obtener más información, consulte [procesadores de la directiva de plantilla de creación personalizado T4 texto](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
-### <a name="generate-files-from-a-complex-model"></a>Generate files from a complex model  
+### <a name="generate-files-from-a-complex-model"></a>Generar archivos a partir de un modelo complejo  
   
--   Consider creating a domain-specific language (DSL) to represent the model. This makes it much easier to write the templates, because you use types and properties that reflect the names of the elements in your model. You do not have to parse the file or navigate XML nodes. For example:  
+-   Considere la creación de un lenguaje específico de dominio (DSL) para representar el modelo. Resulta mucho más fácil escribir las plantillas, porque utiliza los tipos y propiedades que reflejan los nombres de los elementos en el modelo. No es necesario analizar el archivo o navegar por los nodos XML. Por ejemplo:  
   
      `foreach (Book book in this.Library) { ... }`  
   
-     For more information, see [Getting Started with Domain-Specific Languages](../modeling/getting-started-with-domain-specific-languages.md) and [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).  
+     Para obtener más información, consulte [Getting Started with lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md) y [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Get data from [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
- To use services provided in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], by set the `hostSpecific` attribute and load the `EnvDTE` assembly. For example:  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtener datos[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+ Para utilizar servicios proporcionados en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], conjunto de la `hostSpecific` atributo y carga la `EnvDTE` ensamblado. Por ejemplo:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -110,36 +110,36 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ```  
   
-### <a name="execute-text-templates-in-the-build-process"></a>Execute text templates in the build process  
+### <a name="execute-text-templates-in-the-build-process"></a>Ejecutar plantillas de texto en el proceso de compilación  
   
--   For more information, see [Code Generation in a Build Process](../modeling/code-generation-in-a-build-process.md).  
+-   Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).  
   
-## <a name="more-general-questions"></a>More general questions  
+## <a name="more-general-questions"></a>Preguntas más generales  
   
-###  <a name="starting"></a> What is the best way to start writing a text template?  
+###  <a name="starting"></a>¿Cuál es la mejor manera de empezar a escribir una plantilla de texto?  
   
-1.  Write a specific example of the generated file.  
+1.  Escribir un ejemplo concreto del archivo generado.  
   
-2.  Turn it into a text template by inserting the `<#@template #>` directive, and the directives and code that are required to load the input file or model.  
+2.  Convierte en una plantilla de texto insertando la `<#@template #>` directiva y las directivas y código que son necesarias para cargar el archivo de entrada o el modelo.  
   
-3.  Progressively replace parts of the file with expression and code blocks.  
+3.  Progresivamente reemplazar partes del archivo con la expresión y bloques de código.  
   
-### <a name="what-is-a-model"></a>What is a "model"?  
+### <a name="what-is-a-model"></a>¿Qué es un "modelo"?  
   
--   The input read by your template. It could be in a file or in a database. It might be XML, or a Visio drawing, or a domain-specific language (DSL), or a UML model, or it could be plain text. It could be spread across several files. Typically more than one template reads one model.  
+-   La entrada leída por la plantilla. Es posible en un archivo o en una base de datos. Puede ser XML, o un dibujo de Visio, o un lenguaje específico de dominio (DSL) o un modelo UML, o podría ser texto sin formato. Se podrían propagarse a través de varios archivos. Por lo general, más de una plantilla lee un modelo.  
   
-     The implication of the term "model" is that it represents some aspect of your business more directly than the generated program code or other files. For example, it might represent the plan of a communications network that your generated software will supervise.  
+     La implicación del término "modelo de" es que representa algún aspecto de su negocio más fácilmente que el código de programa generado u otros archivos. Por ejemplo, podría representar el plan de una red de comunicaciones que se supervise el software generado.  
   
-### <a name="what-is-the-benefit-of-using-text-templates"></a>What is the benefit of using text templates?  
- Typically, you generate multiple code or other files from one model. The model represents the requirements more directly than the generated code. It omits implementation detail and is written in terms of the requirements, rather than the code. When the requirements change - as they usually do - you can update the model more easily and more reliably than the different parts of the program code.  
+### <a name="what-is-the-benefit-of-using-text-templates"></a>¿Cuál es la ventaja de utilizar plantillas de texto?  
+ Por lo general, generar código varios u otros archivos de un modelo. El modelo representa los requisitos más fácilmente que el código generado. Se omite el detalle de implementación y se escribe en cuanto a los requisitos, en lugar de con el código. Cuando cambian los requisitos - tal y como lo hacen normalmente - puede actualizar el modelo más fácil y más confiable que las distintas partes del código del programa.  
   
- Code generation is therefore a valuable tool from the perspective of agile development methods.  
+ Generación de código, por tanto, es una herramienta valiosa desde la perspectiva de los métodos de desarrollo ágil.  
   
-### <a name="what-best-practices-are-there-for-text-templates"></a>What "best practices" are there for text templates?  
+### <a name="what-best-practices-are-there-for-text-templates"></a>¿Qué "prácticas recomendadas" existen para plantillas de texto?  
   
--   For more information, see [Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md).  
+-   Para obtener más información, consulte [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
-### <a name="what-is-t4"></a>What is "T4"?  
+### <a name="what-is-t4"></a>¿Qué es "T4"?  
   
--   Another name for the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] text template capabilities described here. The previous version, which was not published, was an abbreviation for "Text Template Transformation".
+-   Otro nombre para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] capacidades de plantilla de texto que se describen aquí. La versión anterior, que no se ha publicado, era una abreviatura de "Transformación de plantillas de texto".
 

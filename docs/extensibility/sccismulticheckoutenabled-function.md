@@ -1,5 +1,5 @@
 ---
-title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
+title: "Función SccIsMultiCheckoutEnabled | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
-This function checks whether the source control plug-in allows multiple checkouts on a file.  
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (función)
+Esta función comprueba si el complemento de control de código fuente permite varias desprotecciones en un archivo.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 SCCRTN SccIsMultiCheckoutEnabled(  
@@ -49,23 +49,23 @@ SCCRTN SccIsMultiCheckoutEnabled(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- [in] The source control plug-in context structure.  
+ [in] La estructura de contexto de complemento de control de código fuente.  
   
  pbMultiCheckout  
- [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
+ [out] Especifica si están habilitadas las desprotecciones múltiples para este proyecto (distinto de cero significa que se admiten varias desprotecciones).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|The check was successful.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
+|SCC_OK|La comprobación fue correcta.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no determinado.|  
   
-## <a name="remarks"></a>Remarks  
- The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
+## <a name="remarks"></a>Comentarios  
+ El IDE realiza dos comprobaciones para determinar si los archivos pueden desproteger simultáneamente más de un usuario. En primer lugar, el sistema de control de código fuente debe admitir varias desprotecciones. El complemento de control de código fuente puede especificar esta capacidad durante la inicialización especificando el `SCC_CAP_MULTICHECKOUT`. Por lo tanto, como una segunda comprobación, el IDE llama a esta función para determinar si el proyecto actual no admite varias desprotecciones. Si se admiten varias desprotecciones para el proyecto seleccionado, el complemento devuelve una correcta de código y establece `pbMultiCheckout` a distinto de cero (`TRUE`) o `FALSE`.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vea también  
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

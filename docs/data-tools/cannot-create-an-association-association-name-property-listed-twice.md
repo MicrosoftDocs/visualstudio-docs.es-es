@@ -1,38 +1,56 @@
 ---
-title: "No se puede crear una asociaci&#243;n &lt;nombre de asociaci&#243;n&gt;; la propiedad aparece dos veces. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Cannot create an association &lt;association name&gt; - property listed twice | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 400027c855e52e3059082ed06a4d6891f8891c12
+ms.contentlocale: es-es
+ms.lasthandoff: 09/07/2017
+
 ---
-# No se puede crear una asociaci&#243;n &lt;nombre de asociaci&#243;n&gt;; la propiedad aparece dos veces.
-No se puede crear una asociación \<nombre de asociación\>.La misma propiedad aparece más de una vez: \<nombre de propiedad\>.  
+# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Cannot create an association &lt;association name&gt; - property listed twice
+Cannot create an association \<association name>. The same property is listed more than once: \<property name>.  
   
- Las asociaciones las define el comando **Propiedades de la asociación** seleccionado en el cuadro de diálogo **Editor de asociaciones**.Las propiedades pueden aparecer solamente una vez para cada clase en la asociación.  
+ Associations are defined by the selected **Association Properties** in the **Association Editor** dialog box. Properties can be listed only one time for each class in the association.  
   
- La propiedad mencionada en el mensaje aparece más de una vez en las **Propiedades de la asociación** de la clase primaria o secundaria.  
+ The property in the message appears more than one time in either the Parent or Child class's **Association Properties**.  
   
-### Para resolver esta condición  
+### <a name="to-resolve-this-condition"></a>To resolve this condition  
   
--   Lea el mensaje y fíjese en la propiedad especificada en el mensaje.  
+-   Examine the message and note the property specified in the message.  
   
--   Haga clic en **Aceptar** para descartar el cuadro de mensaje.  
+-   Click **OK** to dismiss the message box.  
   
--   Examine las **Propiedades de la asociación** y quite las entradas duplicadas.  
+-   Inspect the **Association Properties** and remove the duplicate entries.  
   
--   Haga clic en **Aceptar**.  
+-   Click **OK**.  
   
-## Vea también  
- [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Cómo: Crear una asociación \(relación\) entre las clases de LINQ to SQL \(Object Relational Designer\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [Tutorial: Crear clases de LINQ to SQL \(Object Relational Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](linq-to-sql-tools-in-visual-studio2.md)   
+ [How to: Create an association (relationship) between LINQ to SQL classes (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

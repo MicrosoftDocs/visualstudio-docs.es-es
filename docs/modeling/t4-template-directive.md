@@ -1,5 +1,5 @@
 ---
-title: T4 Template Directive | Microsoft Docs
+title: T4 Directiva de plantilla | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,73 +29,73 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a93cb843f45efffe2b8ccdb86543baf48736ed90
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="t4-template-directive"></a>T4 Template Directive
-A [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 text template usually starts with a `template` directive, which specifies how the template should be processed. There should be no more than one template directive in a text template and any files that it includes.  
+# <a name="t4-template-directive"></a>Directiva de plantilla T4
+Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se inicia con una directiva `template`, que especifica cómo se debería procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.  
   
- For a general overview of writing text templates, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Para obtener una descripción general de la escritura de plantillas de texto, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).  
   
-## <a name="using-the-template-directive"></a>Using the Template Directive  
+## <a name="using-the-template-directive"></a>Usar la directiva de plantilla  
   
 ```  
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- The `template` directive has several attributes that allow you to specify different aspects of the transformation. All the attributes are optional.  
+ La directiva `template` tiene varios atributos que permiten especificar distintos aspectos de la transformación. Todos los atributos son opcionales.  
   
-## <a name="compileroptions-attribute"></a>compilerOptions attribute  
- Example:  
+## <a name="compileroptions-attribute"></a>compilerOptions (atributo)  
+ Ejemplo:  
  `compilerOptions="optimize+"`  
   
- Valid values:  
- Any valid compiler options.  
+ Valores válidos:  
+ Cualquier opción del compilador válida.  
   
- Ignored for run-time (preprocessed) templates.  
+ Se omite para plantillas (preprocesadas) en tiempo de ejecución.  
   
- These options are applied when the template has been converted into [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] or [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], and the resulting code is compiled.  
+ Estas opciones se aplican cuando la plantilla se ha convertido en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], y el código resultante está compilado.  
   
-## <a name="culture-attribute"></a>culture attribute  
- Example:  
+## <a name="culture-attribute"></a>culture (atributo)  
+ Ejemplo:  
  `culture="de-CH"`  
   
- Valid values:  
- "", the invariant culture, which is the default.  
+ Valores válidos:  
+ "", la referencia cultural, que es la predeterminada.  
   
- A culture expressed as a string in the form xx-XX. For example, en-US, ja-JP, de-CH, de-DE. For more information, see <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
+ Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, consulta <xref:System.Globalization.CultureInfo?displayProperty=fullName>.  
   
- The culture attribute specifies the culture to use when an expression block is converted to text.  
+ El atributo culture especifica la referencia cultural para utilizar cuando un bloque de expresión se convierte en texto.  
   
-## <a name="debug-attribute"></a>debug attribute  
- Example:  
+## <a name="debug-attribute"></a>debug (atributo)  
+ Ejemplo:  
  ```  
 debug="true"  
 ```  
   
- Valid values:  
- `true, false`. False is the default.  
+ Valores válidos:  
+ `true, false`. False es la opción predeterminada.  
   
- If the `debug` attribute is `true`, the intermediate code file will contain information that enables the debugger to identify more accurately the position in your template where a break or exception occurred.  
+ Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.  
   
- For design-time templates the intermediate code file will be written to your **%TEMP%** directory.  
+ Para plantillas en tiempo de diseño se escribirá el archivo de código intermedio para su **% TEMP %** directory.  
   
- To run a design-time template in the debugger, save the text template, then open the shortcut menu of the text template in Solution Explorer, and choose **Debug T4 Template**.  
+ Para ejecutar una plantilla en tiempo de diseño en el depurador, guarde la plantilla de texto, a continuación, abra el menú contextual de la plantilla de texto en el Explorador de soluciones y elija **depurar plantilla T4**.  
   
-## <a name="hostspecific-attribute"></a>hostspecific attribute  
- Example:  
+## <a name="hostspecific-attribute"></a>hostspecific (atributo)  
+ Ejemplo:  
  ```  
 hostspecific="true"  
 ```  
   
- Valid values:  
- `true, false, trueFromBase`. False is the default.  
+ Valores válidos:  
+ `true, false, trueFromBase`. False es la opción predeterminada.  
   
- If you set the value of this attribute to `true`, a property named `Host` is added to the class generated by your text template. The property is a reference to the host of the transformation engine, and is declared as <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. If you have defined a custom host, you can cast it to the custom host type.  
+ Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. La propiedad es una referencia al host del motor de transformación y se declara como <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.  
   
- Because the type of this property depends on the type of host, it is only useful if you are writing a text template that works only with a specific host. It's applicable to [design-time templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md), but not [run-time templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. Es aplicable a [plantillas en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pero no [plantillas en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- When `hostspecific` is `true` and you are using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can cast `this.Host` to IServiceProvider to access [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] features. You can also use `Host.ResolvePath(filename)` to obtain the absolute path of a file in the project. For example:  
+ Si `hostspecific` es `true` y está utilizando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede convertir `this.Host` a IServiceProvider para tener acceso a las características de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -117,20 +117,20 @@ Content of myFile is:
   
 ```  
   
- If you use the `inherits` and `hostspecific` attributes together, specify host="trueFromBase" in the derived class and host="true" in the base class. This avoids a double definition of the `Host` property in the generated code.  
+ Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique host="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.  
   
-## <a name="language-attribute"></a>language attribute  
- Example:  
+## <a name="language-attribute"></a>language (atributo)  
+ Ejemplo:  
  `language="VB"`  
   
- Valid values:  
- `C#` (default)  
+ Valores válidos:  
+ `C#` (valor predeterminado)  
   
  `VB`  
   
- The language attribute specifies the language ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) to use for the source code in statement and expression blocks. The intermediate code file from which the output is generated will use this language. This language is not related to the language that your template generates, which can be any kind of text.  
+ El atributo language especifica el idioma ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) que se utilizará para el código fuente en los bloques de instrucciones y expresiones. El archivo de código intermedio del que se genera el resultado utilizará este lenguaje. Este lenguaje no se relaciona con el lenguaje que genera la plantilla, que puede ser cualquier tipo de texto.  
   
- For example:  
+ Por ejemplo:  
   
 ```vb  
 <#@ template language="VB" #>  
@@ -147,17 +147,17 @@ Squares of numbers:
   
 ```  
   
-## <a name="inherits-attribute"></a>inherits attribute  
- You can specify that the program code of your template can inherit from another class, which can also be generated from a text template.  
+## <a name="inherits-attribute"></a>inherits (atributo)  
+ Puede especificar que el código de programa de su plantilla puede heredar de otra clase, que también se puede generar a partir de una plantilla de texto.  
   
-### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Inheritance in a run-time (preprocessed) text template  
- You can use inheritance between run-time text templates to create a basic template that has several derived variants. Run-time templates are those that have the **Custom Tool** property set to **TextTemplatingFilePreprocessor**. A run-time template generates code that you can call in your application to create the text defined in the template. For more information, see [Run-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Herencia en una plantilla de texto (preprocesada) en tiempo de ejecución  
+ Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Plantillas en tiempo de ejecución son aquellos que tienen la **herramienta personalizada** propiedad establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- If you do not specify an `inherits` attribute, a base class and a derived class are generated from your text template. When you specify an `inherits` attribute, only the derived class is generated. You can write a base class by hand, but it must provide the methods that are used by the derived class.  
+ Si no especifica un atributo `inherits`, se generan una clase base y una clase derivada en la plantilla de texto. Al especificar un atributo `inherits`, únicamente se genera la clase derivada. Puede escribir una clase base a mano, pero debe proporcionar los métodos que utiliza la clase derivada.  
   
- More typically, you specify another preprocessed template as the base class. The base template provides common blocks of text, which can be interleaved with text from the derived templates. You can use class feature blocks `<#+ ... #>` to define methods that contain text fragments. For example, you can place the framework of the output text in the base template, providing virtual methods that can be overridden in derived templates:  
+ Por lo general, se especifica otra plantilla preprocesada como la clase base. La plantilla base proporciona bloques de texto comunes, que pueden intercalarse con texto en las plantillas derivadas. Puede utilizar bloques de característica de clase `<#+ ... #>` para definir métodos que contienen fragmentos de texto. Por ejemplo, puede colocar el marco del texto de salida en la plantilla base, proporcionando métodos virtuales que se pueden invalidar en plantillas derivadas:  
   
- Run-time (preprocessed) text template BaseTemplate.tt:  
+ Plantilla de texto (preprocesada) en tiempo de ejecución BaseTemplate.tt:  
  ```scr  
 This is the common header.  
 <#   
@@ -176,7 +176,7 @@ This is the common footer.
   
 ```  
   
- Run-time (preprocessed) text template DerivedTemplate1.tt:  
+ Plantilla de texto (preprocesada) en tiempo de ejecución DerivedTemplate1.tt:  
  ```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
@@ -201,12 +201,12 @@ protected override void SpecificFragment2()
   
 ```  
   
- Application code to invoke DerivedTemplate1:  
+ Código de aplicación para invocar a DerivedTemplate1:  
  ```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
- Resulting output:  
+ Resultado que se obtiene:  
  ```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
@@ -215,41 +215,41 @@ A common central text.
 This is the common footer.  
 ```  
   
- You can build the base and derived classes in different projects. Remember to add the base project or assembly to the derived project's references.  
+ Puede compilar las clases derivadas y base en proyectos diferentes. No olvide agregar el proyecto de base o ensamblado a las referencias del proyecto derivado.  
   
- You can also use an ordinary hand-written class as the base class. The base class must provide the methods used by the derived class.  
+ También puede utilizar una clase normal escrita a mano como la clase base. La clase base debe proporcionar los métodos que usa la clase derivada.  
   
 > [!WARNING]
->  If you use the `inherits` and `hostspecific` attributes together, specify hostspecific="trueFromBase" in the derived class and host="true" in the base class. This avoids a double definition of the `Host` property in the generated code.  
+>  Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique hostspecific="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.  
   
-### <a name="inheritance-in-a-design-time-text-template"></a>Inheritance in a design-time text template  
- A design-time text template is a file for which **Custom Tool** is set to **TextTemplatingFileGenerator**. The template generates an output file of code or text, which forms part of your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. To generate the output file, the template is first translated into an intermediate program code file, which you do not usually see. The `inherits` attribute specifies the base class for this intermediate code.  
+### <a name="inheritance-in-a-design-time-text-template"></a>Herencia en una plantilla de texto en tiempo de diseño  
+ Una plantilla de texto en tiempo de diseño es un archivo para el que **herramienta personalizada** está establecido en **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.  
   
- For a design-time text template, you can specify any base class that is derived from <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Use the `<#@assembly#>` directive to load the assembly or project that contains the base class.  
+ Para una plantilla de texto en tiempo de diseño, puede especificar cualquier clase base que se derive de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilice la directiva `<#@assembly#>` para cargar el ensamblado o proyecto que contiene la clase base.  
   
- For more information, see ["Inheritance in Text Templates" in Gareth Jones' Blog](http://go.microsoft.com/fwlink/?LinkId=208373).  
+ Para obtener más información, consulte ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
-## <a name="linepragmas-attribute"></a>LinePragmas attribute  
- Example:  
+## <a name="linepragmas-attribute"></a>Atributo LinePragmas  
+ Ejemplo:  
  `linePragmas="false"`  
   
- Valid values:  
- `true` (default)  
+ Valores válidos:  
+ `true` (valor predeterminado)  
   
  `false`  
   
- Setting this attribute to false removes the tags that identify your line numbers within the generated code. This means that the compiler will report any errors by using line numbers of the generated code.This gives you more debugging options, as you can choose to debug either the text template or the generated code.  
+ Al establecer este atributo en false se quitan las etiquetas que identifican los números de línea en el código generado. Esto significa que el compilador notificará cualquier error utilizando los números de línea del código generado. Esto proporciona más opciones de depuración, ya que puede elegir entre depurar la plantilla de texto o el código generado.  
   
- This attribute can also help if you're finding the absolute filenames in pragmas are causing distracting merges under source code control.  
+ Este atributo también puede ser útil si se detecta que los nombres de archivo absolutos en las directivas pragma están produciendo combinaciones confusas en el control de código fuente.  
   
-## <a name="visibility-attribute"></a>Visibility attribute  
- Example:  
+## <a name="visibility-attribute"></a>Atributo visibility  
+ Ejemplo:  
  `visibility="internal"`  
   
- Valid values:  
- `public` (default)  
+ Valores válidos:  
+ `public` (valor predeterminado)  
   
  `internal`  
   
- In a runtime text template, this sets the visibility attribute of the generated class. By default, the class is part of the public API of your code, but by setting `visibility="internal"` you can make sure that only your code can use the text-generating class.
+ En una plantilla de texto en tiempo de ejecución, establece el atributo de visibilidad de la clase generada. De forma predeterminada, la clase forma parte de la API pública del código, pero si se establece `visibility="internal"`, puede asegurarse de que solo el código pueda utilizar la clase de generación de texto.
 
