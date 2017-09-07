@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Team Explorer 2017 workload and component IDs | Microsoft Docs
-description: Use Visual Studio workload and component IDs to provide integrated testing tools for generalist testers
+title: Identificadores de componente y carga de trabajo de Visual Studio Team Explorer 2017 | Microsoft Docs
+description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar herramientas de pruebas integradas para evaluadores generalistas
 keywords: 
 author: TerryGLee
 ms.author: tglee
@@ -35,48 +35,48 @@ ms.translationtype: HT
 ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
 ms.openlocfilehash: eb7fa7c5a273e6f7f7fffaa324528d8c187c5d6f
 ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 component directory
+# <a name="visual-studio-team-explorer-2017-component-directory"></a>Directorio de componentes de Visual Studio Team Explorer 2017
 
-The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
+Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
 
-Also note the following about this page:
+Tenga en cuenta también lo siguiente sobre esta página:
 
-* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
-* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
-* We've also added a section that lists the additional components that are not affiliated with any workload.
+* Cada carga de trabajo tiene su propia sección, seguida por el identificador de la carga de trabajo y una tabla de los componentes que están disponibles para la carga de trabajo.
+* De forma predeterminada, los componentes con carácter **Obligatorio** se instalarán cuando se instala la carga de trabajo. Si lo desea, también puede instalar los componentes con la marca **Recomendado** y **Opcional**.
+* También hemos agregado una sección que muestra los componentes adicionales que no están asociados a ninguna carga de trabajo.
 
-For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
+Para obtener más información acerca de cómo utilizar estos identificadores, vea [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Y, para obtener una lista de los identificadores de componente y carga de trabajo para otros productos, consulte la página [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) (Identificadores de componente y carga de trabajo de Visual Studio 2017).
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio core editor (included with Visual Studio Team Explorer 2017)
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Editor de núcleo de Visual Studio (incluido con Visual Studio Team Explorer 2017)
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+**Id.:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Description:** The Visual Studio core shell experience, including syntax-aware code editing, source code control and work item management.
+**Descripción:** la experiencia del shell principal de Visual Studio, que incluye edición de código compatible con la sintaxis, control de código fuente y administración de elementos de trabajo.
 
-### <a name="components-included-by-this-workload"></a>Components included by this workload
+### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Component ID | Name | Version | Dependency type
+Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio core editor | 15.0.26606.0 | Required
+Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26606.0 | Obligatorio
 
-## <a name="unaffiliated-components"></a>Unaffiliated components
+## <a name="unaffiliated-components"></a>Componentes no afiliados
 
-These are components that are not included with any workload, but may be selected as an individual component.
+Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Component ID | Name | Version
+Id. de componente | Nombre | Versión
 --- | --- | ---
-n/a | n/a | n/a
+no disponible | no disponible | no disponible
 
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Vea también
 
-* [Visual Studio workload and component IDs](workload-and-component-ids.md)
-* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Command-line parameter examples](command-line-parameter-examples.md)
-* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)
+* [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
+* [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
+* [Crear una instalación sin conexión de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 

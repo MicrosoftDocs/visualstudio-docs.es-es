@@ -1,5 +1,5 @@
 ---
-title: Optimize Visual Studio Startup Time | Microsoft Docs
+title: Optimizar el tiempo de inicio de Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 8/31/2017
 ms.reviewer: 
@@ -21,59 +21,59 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
 ms.openlocfilehash: 8e419de02104d30344b32e28174bd7de41f91677
 ms.contentlocale: es-es
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="optimize-visual-studio-startup-time"></a>Optimize Visual Studio Startup Time
-Ideally, Visual Studio should always start up as quickly as possible. However, Visual Studio extensions and open tool windows can adversely affect startup time because they load automatically at startup. The **Manage Visual Studio Performance** window enables you see which extensions and features affect Visual Studio startup time and to control loading behavior of those extensions and features.
+# <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
+Lo ideal es que Visual Studio se inicie siempre lo antes posible. En cambio, las ventanas de herramientas abiertas y las extensiones de Visual Studio pueden afectar negativamente al tiempo de inicio porque se cargan automáticamente al arrancar. En la ventana **Administrar el rendimiento de Visual Studio** puede ver qué extensiones y características afectan al tiempo de inicio de Visual Studio y controlar el comportamiento de carga de dichas extensiones y características.
 
-For more general tips on improving performance, see [Visual Studio Performance Tips and Tricks](../ide/visual-studio-performance-tips-and-tricks.md).
+Para obtener más sugerencias generales sobre cómo mejorar el rendimiento, vea [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
-## <a name="control-startup-behavior"></a>Control startup behavior
+## <a name="control-startup-behavior"></a>Controlar el comportamiento de inicio
 
-To avoid extending startup time, Visual Studio 2017 avoids loading extensions during startup, using an on-demand-load approach. This behavior means that extensions don't open immediately after Visual Studio starts, but on an as-needed basis after startup. Also, because tool windows left open in a prior Visual Studio session can slow startup time, Visual Studio opens tool windows in a more intelligent way to avoid impacting startup time.
+Para evitar extender demasiado el tiempo de inicio, Visual Studio 2017 impide la carga de extensiones durante el inicio mediante un enfoque de carga a petición. Con este comportamiento, las extensiones no se abren inmediatamente después de que Visual Studio se inicia, sino solo cuando resulta necesario después del inicio. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
 
-If Visual Studio detects slow startup, a pop-up message appears, alerting you to the extension or tool window that's causing the slowdown. The message also provides a link to the **Manage Visual Studio Performance** dialog box. You can also open this window using the **Help > Manage Visual Studio Performance** menu command.
+Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje también proporciona un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**. También puede abrir esta ventana utilizando el comando de menú **Ayuda > Administrar el rendimiento de Visual Studio**.
 
-![Manage Visual Studio Performance - popup reading 'We've noticed that extension ... is slowing Visual Studio'](../ide/media/vside_perfdialog_popup.png)
+![Administrar el rendimiento Visual Studio: mensaje emergente en el que se lee "Se ha detectado que la extensión... está ralentizando Visual Studio"](../ide/media/vside_perfdialog_popup.png)
 
-The dialog box lists the extensions and tools windows that are affecting startup performance. This dialog box enables you to change extension and tool window settings to improve startup performance.
+En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones que afectan negativamente al rendimiento de inicio. Este cuadro de diálogo le permite cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
 
-### <a name="change-extension-settings"></a>Change extension settings
+### <a name="change-extension-settings"></a>Cambio de la configuración de las extensiones
 
-If an extension is slowing down Visual Studio startup, the extension appears in the **Manage Visual Studio Performance** dialog box when you choose one of the extension types. The dialog box shows which extensions affect performance at startup, when loading a solution, and when typing in the editor.
+Si una extensión está ralentizando el inicio de Visual Studio, esta aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** cuando selecciona uno de los tipos de extensión. En el cuadro de diálogo se muestra qué extensión afecta al rendimiento de inicio, cuándo se carga una solución y cuándo se escribe en el editor.
 
-![Manage Visual Studio Performance - extensions view](../ide/media/vside_perfdialog_extensions.png)
+![Administrar el rendimiento Visual Studio: vista de extensiones](../ide/media/vside_perfdialog_extensions.png)
 
-If the impact on startup, solution load, or typing time is unacceptably high, disable the extension for that scenario by selecting the **Disable** button. You can always re-enable the extension for future sessions by using the Extension Manager or the Manage Visual Studio Performance dialog box.
+Si el impacto en el tiempo de inicio, de carga de soluciones o de escritura en el editor resulta excesivamente alto, deshabilite la extensión para dicho escenario; para ello, seleccione **Deshabilitar**. Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo Administrador de extensiones o Administrar el rendimiento de Visual Studio.
 
-### <a name="change-tool-window-settings"></a>Change tool window settings
+### <a name="change-tool-window-settings"></a>Cambio de la configuración de la ventana de herramientas
 
-If a tool window is slowing down Visual Studio startup and you wish to change the impact, you can override its behavior by choosing one of two options instead of **Use default behavior**:
+Si una ventana de herramientas está ralentizando el inicio de Visual Studio y desea modificar el impacto, puede invalidar su comportamiento; para ello, seleccione una de estas dos opciones en lugar de **Usar comportamiento predeterminado**:
 
-- **Do not show window at startup:** the specified tool window is always closed when you next open Visual Studio, even if left open in a previous session. You can open the tool window from the appropriate menu.
-- **Auto hide window at startup:** If a tool window was left open in a previous session, this option collapses the tool window's group at startup to avoid initializing the tool window. This option is a good choice if you use a tool window often, because the tool window is still available, but no longer negatively affects Visual Studio startup time.
+- **No mostrar ventana al inicio:** la ventana de herramientas especificada siempre estará cerrada la próxima vez que abra Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Puede abrir la ventana de herramientas desde el menú correspondiente.
+- **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Se trata de una buena opción si usa una ventana de herramientas frecuentemente, porque esta todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
 
-![Manage Visual Studio Performance - tool windows view](../ide/media/vside_perfdialog_toolwindows.png)
+![Administrar el rendimiento Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
 
-You can always return to this dialog box at any time to change the setting for any given tool window.
+Siempre puede volver a este cuadro de diálogo en cualquier momento para cambiar la configuración de una ventana de herramientas concreta.
 
-## <a name="speed_up_solution_load"></a>Load large solutions faster in Visual Studio 2017
+## <a name="speed_up_solution_load"></a>Carga de soluciones grandes más rápido en Visual Studio de 2017
 
-Visual Studio 2017 introduces a new feature called lightweight solution load that reduces the amount of time and memory required to load large solutions in the IDE. If you have a large solution containing many C#, VB, or C++ projects, you are likely to see a substantial performance benefit if you enable lightweight solution load. For detailed information on how you might benefit by using this feature, see [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio).
+Visual Studio 2017 presenta una nueva característica denominada Carga de solución ligera que reduce la cantidad de tiempo y memoria necesarias para cargar soluciones grandes en el IDE. Si tiene una solución grande que contiene muchos proyectos de C#, VB o C++, probablemente verá una ventaja de rendimiento sustancial si habilita la carga de solución ligera. Para información detallada sobre cómo se podría beneficiar utilizando esta característica, consulte [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio) (Optimización de la carga de la solución).
 
 > [!NOTE]
-> This content applies to Visual Studio 2017 Update 3.
+> Este contenido se aplica a Visual Studio 2017 Update 3.
 
-### <a name="enable-or-disable-lightweight-solution-load"></a>Enable or disable lightweight solution load
+### <a name="enable-or-disable-lightweight-solution-load"></a>Habilitación o deshabilitación de la característica Carga de solución ligera
 
-You can right-click the solution name in Solution Explorer, and select **Enable Lightweight Solution Load**. After selecting the option, you need to close and reopen the solution to activate lightweight solution load.
+Puede hacer clic con el botón derecho en el nombre de la solución en el Explorador de soluciones y seleccionar **Habilitar la carga de solución ligera**. Después de seleccionar la opción, debe cerrar y volver a abrir la solución para activar la carga de la solución ligera.
 
-![Solution Explorer](../ide/media/VSIDE_LSL_Solution_Setting.png)
+![Explorador de soluciones](../ide/media/VSIDE_LSL_Solution_Setting.png)
 
-To configure global settings for lightweight solution load, see [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings).
+Para definir la configuración global para la carga de solución ligera, consulte [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings) (Optimización de la carga de la solución).
 
-## <a name="see-also"></a>See Also
-[Visual Studio Performance Tips and Tricks](../ide/visual-studio-performance-tips-and-tricks.md)
+## <a name="see-also"></a>Vea también
+[Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
 
