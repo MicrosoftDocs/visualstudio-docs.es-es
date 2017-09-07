@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Skip | Microsoft Docs
+title: IEnumDebugAddresses::Skip | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7dd58e73e9745b8a3efdb0e135fb5b733b9bbb70
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
-This method skips over the specified number of elements.  
+Este método omite el número especificado de elementos.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT Skip(  
@@ -54,15 +54,15 @@ int Skip(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] Number of elements to skip.  
+ [in] Número de elementos que se van a omitir.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
+## <a name="remarks"></a>Comentarios  
+ Si `celt` especifica un valor mayor que el número de elementos restantes, la enumeración se establece al final y `S_FALSE` se devuelve.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

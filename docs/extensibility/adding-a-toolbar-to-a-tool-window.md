@@ -1,5 +1,5 @@
 ---
-title: Adding a Toolbar to a Tool Window | Microsoft Docs
+title: Agregar una barra de herramientas a una ventana de herramientas | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,33 +33,33 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b094a04a9d2e273418edaa7cc4bc2d36f89e9d29
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="adding-a-toolbar-to-a-tool-window"></a>Adding a Toolbar to a Tool Window
-This walkthrough shows how to add a toolbar to a tool window.  
+# <a name="adding-a-toolbar-to-a-tool-window"></a>Agregar una barra de herramientas a una ventana de herramientas
+Este tutorial muestra cómo agregar una barra de herramientas a una ventana de herramientas.  
   
- A toolbar is a horizontal or vertical strip that contains buttons bound to commands. The length of a toolbar in a tool window is always the same as the width or height of the tool window, depending on where the toolbar is docked.  
+ Una barra de herramientas es una barra horizontal o vertical que contiene botones que se enlaza a los comandos. La longitud de una barra de herramientas en una ventana de herramientas siempre es el mismo que el ancho o alto de la ventana de herramientas, dependiendo de dónde se acopla la barra de herramientas.  
   
- Unlike toolbars in the IDE, a toolbar in a tool window must be docked and cannot be moved or customized. If the VSPackage is written in umanaged code, the toolbar can be docked on any edge.  
+ A diferencia de las barras de herramientas en el IDE, una barra de herramientas en una ventana de herramientas debe acoplarse y no puede moverse o personalizado. Si se ha escrito el VSPackage en código umanaged, la barra de herramientas se puede acoplar en un borde.  
   
- For more information about how to add a toolbar, see [Adding a Toolbar](../extensibility/adding-a-toolbar.md).  
+ Para obtener más información sobre cómo agregar una barra de herramientas, consulte [agregar una barra de herramientas](../extensibility/adding-a-toolbar.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Requisitos previos  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-toolbar-for-a-tool-window"></a>Creating a Toolbar for a Tool Window  
+## <a name="creating-a-toolbar-for-a-tool-window"></a>Crear una barra de herramientas de una ventana de herramientas  
   
-1.  Create a VSIX project named `TWToolbar` that has both a menu command named **TWTestCommand** and a tool window named **TestToolWindow**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md) and [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md). You need to add the command item template before adding the tool window template.  
+1.  Crear un proyecto VSIX denominado `TWToolbar` que tiene un comando de menú denominado **TWTestCommand** y una ventana de herramientas denominado **TestToolWindow**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md) y [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md). Debe agregar la plantilla de elemento de comando antes de agregar la plantilla de la ventana de herramienta.  
   
-2.  In TWTestCommandPackage.vsct, look for the Symbols section. In the GuidSymbol node named guidTWTestCommandPackageCmdSet declare a toolbar and a toolbar group, as follows.  
+2.  En TWTestCommandPackage.vsct, busque la sección de símbolos. En el nodo de GuidSymbol denominado guidTWTestCommandPackageCmdSet declarar una barra de herramientas y un grupo de la barra de herramientas, como se indica a continuación.  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3.  At the top of the `Commands` section, create a `Menus` section. Add a `Menu` element to define the toolbar.  
+3.  En la parte superior de la `Commands` , debe crearse un `Menus` sección. Agregar un `Menu` elemento para definir la barra de herramientas.  
   
     ```xml  
     <Menus>  
@@ -73,9 +73,9 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Menus>  
     ```  
   
-     Toolbars cannot be nested like submenus. Therefore, you do not have to assign a parent. Also, you do not have to set a priority, because the user can move toolbars. Typically, initial placement of a toolbar is defined programmatically, but subsequent changes by the user are persisted.  
+     No se pueden anidar las barras de herramientas como submenús. Por lo tanto, no es necesario asignar a un elemento primario. Además, no es necesario establecer una prioridad, porque el usuario puede mover las barras de herramientas. Normalmente, la posición inicial de una barra de herramientas se define mediante programación, pero se conservan los cambios posteriores por el usuario.  
   
-4.  In the Groups section, define a group to contain the commands for the toolbar.  
+4.  En la sección grupos, defina un grupo para que contenga los comandos de la barra de herramientas.  
   
     ```xml  
   
@@ -84,7 +84,7 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Group>  
     ```  
   
-5.  In the Buttons section, change the parent of the existing Button element to the toolbar group so that the toolbar will be displayed.  
+5.  En la sección de botones, cambie al elemento primario del elemento de botón existente para el grupo de la barra de herramientas para que se mostrará la barra de herramientas.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -96,40 +96,40 @@ This walkthrough shows how to add a toolbar to a tool window.
     </Button>  
     ```  
   
-     By default, if a toolbar has no commands, it does not appear.  
+     De forma predeterminada, si una barra de herramientas no tiene ningún comando, no aparece.  
   
-     Because the new toolbar is not automatically added to the tool window, the toolbar must be added explicitly. This is discussed in the next section.  
+     Dado que la nueva barra de herramientas no se agrega automáticamente a la ventana de herramientas, la barra de herramientas debe agregarse explícitamente. Esta técnica se analiza en la sección siguiente.  
   
-## <a name="adding-the-toolbar-to-the-tool-window"></a>Adding the Toolbar to the Tool Window  
+## <a name="adding-the-toolbar-to-the-tool-window"></a>Agregar la barra de herramientas a la ventana de herramientas  
   
-1.  In TWTestCommandPackageGuids.cs add the following lines.  
+1.  En TWTestCommandPackageGuids.cs agregue las líneas siguientes.  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2.  In TestToolWindow.cs add the following using statement.  
+2.  En TestToolWindow.cs agregue la siguiente instrucción using.  
   
     ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
-3.  In the TestToolWindow constructor add the following line.  
+3.  En el constructor TestToolWindow agregue la línea siguiente.  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   
-## <a name="testing-the-toolbar-in-the-tool-window"></a>Testing the Toolbar in the Tool Window  
+## <a name="testing-the-toolbar-in-the-tool-window"></a>Probar la barra de herramientas en la ventana de herramientas  
   
-1.  Build the project and start debugging. The Visual Studio experimental instance should appear.  
+1.  Compile la solución y comience la depuración. Debe aparecer la instancia experimental de Visual Studio.  
   
-2.  On the **View / Other Windows** menu, click **Test ToolWindow** to display the tool window.  
+2.  En el **vista / otras ventanas** menú, haga clic en **ventana de herramientas de pruebas paralelas** para mostrar la ventana de herramientas.  
   
-     You should see a toolbar (it looks like the default icon) at the top left of the tool window, just below the title.  
+     Verá una barra de herramientas (parece que el icono predeterminado) en la parte superior izquierda de la ventana de herramientas, justo debajo del título.  
   
-3.  On the toolbar, click the icon to display the message **TWTestCommandPackage Inside TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3.  En la barra de herramientas, haga clic en el icono para mostrar el mensaje **TWTestCommandPackage en TWToolbar.TWTestCommand.MenuItemCallback()**.  
   
-## <a name="see-also"></a>See Also  
- [Adding a Toolbar](../extensibility/adding-a-toolbar.md)
+## <a name="see-also"></a>Vea también  
+ [Adición de una barra de herramientas](../extensibility/adding-a-toolbar.md)

@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS | Microsoft Docs
+title: PARSEFLAGS | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 86589a8f3886592ad1659b646b0a983a9f31f48b
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Specifies how to parse an expression.  
+Especifica cómo analizar una expresión.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 enum enum_PARSEFLAGS {   
@@ -59,27 +59,27 @@ public enum enum_PARSEFLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Miembros  
  PARSE_EXPRESSION  
- Indicates that the expression is not a statement.  
+ Indica que la expresión no es una instrucción.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Indicates that the expression is to be parsed (and later evaluated) as an address.  
+ Indica que la expresión se analiza (y más adelante se evalúan) como una dirección.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Indicates that the expression is being parsed during design time (that is, when a designer is open).  
+ Indica que se está analizando la expresión en tiempo de diseño (es decir, cuando un diseñador abierto).  
   
-## <a name="remarks"></a>Remarks  
- Passed as a parameter to the [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) and [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) methods.  
+## <a name="remarks"></a>Comentarios  
+ Pasar como un parámetro a la [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) y [analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) métodos.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+ [Analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

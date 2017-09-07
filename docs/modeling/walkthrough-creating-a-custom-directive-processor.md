@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating a Custom Directive Processor | Microsoft Docs'
+title: 'Tutorial: Crear un procesador de directivas personalizado | Documentos de Microsoft'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,39 +32,39 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 449a8d80eef26935251c265b526d8aacd471d147
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-creating-a-custom-directive-processor"></a>Walkthrough: Creating a Custom Directive Processor
-*Directive processors* work by adding code to the *generated transformation class*. If you call a *directive* from a *text template*, the rest of the code that you write in your text template can rely on the functionality that the directive provides.  
+# <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
+*Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde una *plantilla de texto*, el resto del código que escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.  
   
- You can write your own custom directive processors. This enables you to customize your text templates. To create a custom directive processor, you create a class that inherits from either <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> or <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
+ Puede escribir sus propios procesadores de directivas personalizados. Esto le permite personalizar las plantillas de texto. Para crear un procesador de directivas personalizado, crea una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
- Tasks that are illustrated in this walkthrough include the following:  
+ Las tareas que se ilustran en este tutorial son las siguientes:  
   
--   Creating a custom directive processor  
+-   Crear un procesador de directivas personalizado  
   
--   Registering the directive processor  
+-   Registrar el procesador de directivas  
   
--   Testing the directive processor  
+-   Probar el procesador de directivas  
   
-## <a name="prerequisites"></a>Prerequisites  
- To complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Para completar este tutorial, necesitará:  
   
 -   Visual Studio 2010  
   
 -   Visual Studio 2010 SDK  
   
-## <a name="creating-a-custom-directive-processor"></a>Creating a Custom Directive Processor  
- In this walkthrough, you create a custom directive processor. You add a custom directive that reads an XML file, stores it in an <xref:System.Xml.XmlDocument> variable, and exposes it through a property. In the section "Testing the Directive Processor," you use this property in a text template to access the XML file.  
+## <a name="creating-a-custom-directive-processor"></a>Crear un procesador de directivas personalizado  
+ En este tutorial, creará un procesador de directivas personalizado. Agregará una directiva personalizada que lea un archivo XML, le almacene en una variable <xref:System.Xml.XmlDocument> y lo exponga a través de una propiedad. En la sección "Probar el procesador de directivas", utilizará esta propiedad en una plantilla de texto para tener acceso al archivo XML.  
   
- The call to your custom directive looks like the following:  
+ La llamada a la directiva personalizada tiene un aspecto similar al siguiente:  
   
  `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`  
   
- The custom directive processor adds the variable and the property to the generated transformation class. The directive that you write uses the <xref:System.CodeDom> classes to create the code that the engine adds to the generated transformation class. The <xref:System.CodeDom> classes create code in either Visual C# or [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], depending on the language specified in the `language` parameter of the `template` directive. The language of the directive processor and the language of the text template that is accessing the directive processor do not have to match.  
+ El procesador de directivas personalizado agrega la variable y la propiedad a la clase de transformación generada. La directiva que escribe utiliza las clases <xref:System.CodeDom> para crear el código que el motor agrega a la clase de transformación generada. Las clases <xref:System.CodeDom> crean código en Visual C# o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], dependiendo del lenguaje especificado en el parámetro `language` de la directiva `template`. El lenguaje del procesador de directivas y el lenguaje de la plantilla de texto que tiene acceso al procesador de directivas no tienen que coincidir.  
   
- The code that the directive creates looks like the following:  
+ El código que crea la directiva tiene un aspecto similar al siguiente:  
   
 ```csharp  
 private System.Xml.XmlDocument document0Value;  
@@ -95,20 +95,20 @@ Public Overridable ReadOnly Property Document0() As System.Xml.XmlDocument
 End Property  
 ```  
   
-#### <a name="to-create-a-custom-directive-processor"></a>To create a custom directive processor  
+#### <a name="to-create-a-custom-directive-processor"></a>Para crear un procesador de directivas personalizado  
   
-1.  In Visual Studio, create a C# or a Visual Basic class library project named CustomDP.  
+1.  En Visual Studio, cree un proyecto de biblioteca de clases de Visual C# o Visual Basic con el nombre CustomDP.  
   
     > [!NOTE]
-    >  If you want to install the directive processor on more than one computer, it is better to use a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension (VSIX) project and include a .pkgdef file in the extension. For more information, see [Deploying a Custom Directive Processor](../modeling/deploying-a-custom-directive-processor.md).  
+    >  Si desea instalar el procesador de directivas en más de un equipo, es mejor utilizar un proyecto de extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (VSIX) e incluir un archivo .pkgdef en la extensión. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
   
-2.  Add  references to these assemblies:  
+2.  Agregue referencias a estos ensamblados:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
   
-3.  Replace the code in **Class1** with the following code. This code defines a CustomDirectiveProcessor class that inherits from the <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> class and implements the necessary methods.  
+3.  Reemplace el código de **Class1** con el código siguiente. Este código define una clase CustomDirectiveProcessor que hereda de la clase <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa los métodos necesarios.  
   
     ```csharp  
     using System;  
@@ -620,90 +620,90 @@ End Property
     End Namespace  
     ```  
   
-4.  For [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] only, open the **Project** menu, and click **CustomDP Properties**. On the **Application** tab, in **Root namespace**, delete the default value, `CustomDP`.  
+4.  Para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo, abra la **proyecto** menú y haga clic en **propiedades de CustomDP**. En el **aplicación** ficha **espacio de nombres raíz**, elimine el valor predeterminado, `CustomDP`.  
   
-5.  On the **File** menu, click **Save All**.  
+5.  En el **archivo** menú, haga clic en **guardar todo**.  
   
-6.  On the **Build** menu, click **Build Solution**.  
+6.  En el menú **Compilar** , haga clic en **Compilar solución**.  
   
-### <a name="build-the-project"></a>Build the Project  
- Build the project. On the **Build** menu, click **Build Solution**.  
+### <a name="build-the-project"></a>Compilar el proyecto  
+ Compile el proyecto. En el menú **Compilar** , haga clic en **Compilar solución**.  
   
-## <a name="registering-the-directive-processor"></a>Registering the Directive Processor  
- Before you can call a directive from a text template in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you must add a registry key for the directive processor.  
+## <a name="registering-the-directive-processor"></a>Registrar el procesador de directivas  
+ Antes de que se puede llamar a una directiva desde una plantilla de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], debe agregar una clave del registro para el procesador de directivas.  
   
 > [!NOTE]
->  If you want to install the directive processor on more than one computer, it is better to define a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension (VSIX) that includes a .pkgdef file along with your assembly. For more information, see [Deploying a Custom Directive Processor](../modeling/deploying-a-custom-directive-processor.md).  
+>  Si desea instalar el procesador de directivas en más de un equipo, es mejor definir una extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (VSIX) que incluya un archivo .pkgdef junto con el ensamblado. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
   
- Keys for directive processors exist in the registry in the following location:  
+ Las claves para los procesadores de directivas se encuentran en la siguiente ubicación del Registro:  
   
 ```  
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveProcessors  
 ```  
   
- For 64-bit systems, the registry location is:  
+ Para los sistemas 64 bits, la ubicación del Registro es:  
   
 ```  
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplating\DirectiveProcessors  
 ```  
   
- In this section, you add a key for your custom directive processor to the registry in the same location.  
+ En esta sección, agregará una clave para el procesador de directivas personalizado en el Registro, en la misma ubicación.  
   
 > [!CAUTION]
->  Incorrectly editing the registry can severely damage your system. Before you make changes to the registry, back up any valuable data that is on the computer.  
+>  Una modificación incorrecta del Registro puede provocar daños graves en el sistema. Antes de efectuar cambios en el Registro, realice una copia de seguridad de la información importante del equipo.  
   
-#### <a name="to-add-a-registry-key-for-the-directive-processor"></a>To add a registry key for the directive processor  
+#### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Para agregar una clave del Registro para el procesador de directivas  
   
-1.  Run the `regedit` command by using the Start menu or the command line.  
+1.  Ejecute el `regedit` comando mediante el menú Inicio o la línea de comandos.  
   
-2.  Browse to the location **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**, and click the node.  
+2.  Vaya a la ubicación **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**y haga clic en el nodo.  
   
-     On 64-bit systems, use **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+     En los sistemas de 64 bits, utilice **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-3.  Add a new key named CustomDirectiveProcessor.  
-  
-    > [!NOTE]
-    >  This is the name that you will use in the Processor field of your custom directives. This name does not need to match the name of the directive, the name of the directive processor class, or the directive processor namespace.  
-  
-4.  Add a new string value named Class that has a value CustomDP.CustomDirectiveProcessor for the name of the new string.  
-  
-5.  Add a new string value named CodeBase that has a value equal to the path of the CustomDP.dll that you created earlier in this walkthrough.  
-  
-     For example, the path might look like `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.  
-  
-     Your registry key should have the following values:  
-  
-    |Name|Type|Data|  
-    |----------|----------|----------|  
-    |(Default)|REG_SZ|(value not set)|  
-    |Class|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |CodeBase|REG_SZ|**\<Path to Your Solution>**CustomDP\bin\Debug\CustomDP.dll|  
-  
-     If you have put the assembly in the GAC, the values should look like the following:  
-  
-    |Name|Type|Data|  
-    |----------|----------|----------|  
-    |(Default)|REG_SZ|(value not set)|  
-    |Class|REG_SZ|CustomDP.CustomDirectiveProcessor|  
-    |Assembly|REG_SZ|CustomDP.dll|  
-  
-6.  Restart Visual Studio.  
-  
-## <a name="testing-the-directive-processor"></a>Testing the Directive Processor  
- To test the directive processor, you need to write a text template that calls it.  
-  
- In this example, the text template calls the directive and passes in the name of an XML file that contains documentation for a class file.
-  
- The text template then uses the <xref:System.Xml.XmlDocument> property that the directive creates to navigate the XML and print the documentation comments.  
-  
-#### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>To create an XML file for use in testing the directive processor  
-  
-1.  Create a text file named `DocFile.xml` by using any text editor (for example, Notepad).  
+3.  Agregue una nueva clave con el nombre CustomDirectiveProcessor.  
   
     > [!NOTE]
-    >  You can create this file in any location (for example, C:\Test\DocFile.xml).  
+    >  Este es el nombre que utilizará en el campo de procesador de las directivas personalizadas. Este nombre no tiene que coincidir con el nombre de la directiva, el nombre de la clase de procesador de directivas ni el espacio de nombres de procesador de directivas.  
   
-2.  Add the following to the text file:  
+4.  Agregue un nuevo valor de cadena denominado Class con un valor CustomDP.CustomDirectiveProcessor para el nombre de la nueva cadena.  
+  
+5.  Agregue un nuevo valor de cadena denominado CodeBase con un valor igual a la ruta de acceso de CustomDP.dll que creó anteriormente en este tutorial.  
+  
+     Por ejemplo, la ruta de acceso sería `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`.  
+  
+     La clave del Registro debe tener los siguientes valores:  
+  
+    |Nombre|Tipo|Datos|  
+    |----------|----------|----------|  
+    |(Predeterminado)|REG_SZ|(valor no establecido)|  
+    |Clase|REG_SZ|CustomDP.CustomDirectiveProcessor|  
+    |CodeBase|REG_SZ|**\<Ruta de acceso a la solución >**CustomDP\bin\Debug\CustomDP.dll|  
+  
+     Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:  
+  
+    |Nombre|Tipo|Datos|  
+    |----------|----------|----------|  
+    |(Predeterminado)|REG_SZ|(valor no establecido)|  
+    |Clase|REG_SZ|CustomDP.CustomDirectiveProcessor|  
+    |Ensamblado|REG_SZ|CustomDP.dll|  
+  
+6.  Reinicie Visual Studio.  
+  
+## <a name="testing-the-directive-processor"></a>Probar el procesador de directivas  
+ Para probar el procesador de directivas, debe escribir una plantilla de texto que lo llame.  
+  
+ En este ejemplo, la plantilla de texto llama a la directiva y le pasa en el nombre de un archivo XML que contiene documentación para un archivo de clase.
+  
+ A continuación, la plantilla de texto utiliza la propiedad <xref:System.Xml.XmlDocument> que la directiva crea para navegar al XML e imprimir los comentarios de la documentación.  
+  
+#### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Para crear un archivo XML y usarlo para probar el procesador de directivas  
+  
+1.  Cree un archivo de texto denominado `DocFile.xml` con cualquier editor de texto (por ejemplo, el Bloc de notas).  
+  
+    > [!NOTE]
+    >  Puede crear este archivo en cualquier ubicación (por ejemplo, C:\Test\DocFile.xml).  
+  
+2.  Agregue lo siguiente al archivo de texto:  
   
     ```  
     <?xml version="1.0"?>  
@@ -744,22 +744,22 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>  
     ```  
   
-3.  Save and close the file.  
+3.  Guarde y cierre el archivo.  
   
-#### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>To create a text template to test the directive processor  
+#### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>Para crear una plantilla de texto y probar el procesador de directivas  
   
-1.  In Visual Studio, create a C# or Visual Basic class library project named TemplateTest.  
+1.  En Visual Studio, cree un proyecto de biblioteca de clases de Visual C# o Visual Basic con el nombre TemplateTest.  
   
-2.  Add a new text template file named TestDP.tt.  
+2.  Agregue un nuevo archivo de plantilla de texto denominado TestDP.tt.  
   
-3.  Make sure that the **Custom Tool** property of TestDP.tt is set to `TextTemplatingFileGenerator`.  
+3.  Asegúrese de que el **herramienta personalizada** propiedad de TestDP.tt está establecida en `TextTemplatingFileGenerator`.  
   
-4.  Change the content of  TestDP.tt to the following text.  
+4.  Cambie el contenido de TestDP.tt al siguiente texto.  
   
     > [!NOTE]
-    >  Make sure to replace the string <`YOUR PATH>` with the path to the DocFile.xml file.  
+    >  Asegúrese de reemplazar la cadena <`YOUR PATH>` con la ruta de acceso al archivo DocFile.xml.  
   
-     The language of the text template does not have to match the language of the directive processor.  
+     El lenguaje de la plantilla de texto no tiene que coincidir con el lenguaje del procesador de directivas.  
   
     ```csharp  
     <#@ assembly name="System.Xml" #>  
@@ -844,19 +844,19 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
   
     > [!NOTE]
-    >  In this example, the value of the `Processor` parameter is `CustomDirectiveProcessor`. The value of the `Processor` parameter must match the name of the processor's registry key.  
+    >  En este ejemplo, el valor del parámetro `Processor` es `CustomDirectiveProcessor`. El valor del parámetro `Processor` debe coincidir con el nombre de la clave del Registro del procesador.  
   
-5.  On the **File** menu, click **Save All**.  
+5.  En el **archivo** menú, haga clic en **guardar todo**.  
   
-#### <a name="to-test-the-directive-processor"></a>To test the directive processor  
+#### <a name="to-test-the-directive-processor"></a>Para probar el procesador de directivas  
   
-1.  In **Solution Explorer**, right-click TestDP.tt and then click **Run Custom Tool**.  
+1.  En **el Explorador de soluciones**, haga clic en TestDP.tt y, a continuación, haga clic en **ejecutar herramienta personalizada**.  
   
-     For [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] users, TestDP.txt might not appear in **Solution Explorer** by default. To display all files assigned to the project, open the **Project** menu and click **Show All Files**.  
+     Para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] a los usuarios, TestDP.txt podría no aparecer en **el Explorador de soluciones** de forma predeterminada. Para mostrar todos los archivos asignados al proyecto, abra el **proyecto** menú y haga clic en **mostrar todos los archivos**.  
   
-2.  In **Solution Explorer**, expand the TestDP.txt node, and then double-click TestDP.txt to open it in the editor.  
+2.  En **el Explorador de soluciones**, expanda el nodo TestDP.txt y, a continuación, haga doble clic en TestDP.txt para abrirlo en el editor.  
   
-     The generated text output appears. The output should look like the following:  
+     Aparece la salida de texto generada. La salida debe tener un aspecto parecido al siguiente:  
   
     ```  
        Name:  T:SomeClass  
@@ -888,15 +888,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
       value:  A value tag is used to describe the property value  
     ```  
   
-## <a name="adding-html-to-generated-text"></a>Adding HTML to Generated Text  
- After you test your custom directive processor, you might want to add some HTML to your generated text.  
+## <a name="adding-html-to-generated-text"></a>Agregar HTML a texto generado  
+ Después de probar el procesador de directivas personalizado, es posible que desee agregar algún HTML al texto generado.  
   
-#### <a name="to-add-html-to-the-generated-text"></a>To add HTML to the generated text  
+#### <a name="to-add-html-to-the-generated-text"></a>Para agregar HTML al texto generado  
   
-1.  Replace the code in TestDP.tt with the following. The HTML is highlighted. Make sure to replace the string `YOUR PATH` with the path to the DocFile.xml file.  
+1.  Reemplace el código de TestDP.tt por el siguiente: El HTML se resalta. Asegúrese de reemplazar la cadena `YOUR PATH` con la ruta de acceso al archivo DocFile.xml.  
   
     > [!NOTE]
-    >  Additional open \<# and close #> tags separate the statement code from the HTML tags.  
+    >  Apertura adicionales \<# y cierre #> etiquetas separan el código de instrucción de las etiquetas HTML.  
   
     ```csharp  
     <#@ assembly name="System.Xml" #>  
@@ -978,9 +978,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>  
     ```  
   
-2.  On the **File** menu, click **Save TestDP.txt**.  
+2.  En el **archivo** menú, haga clic en **Guardar TestDP.txt**.  
   
-3.  To view the output in a browser, in **Solution Explorer**, right-click TestDP.htm, and click **View In Browser**.  
+3.  Para ver la salida en un explorador, en **el Explorador de soluciones**, haga clic en TestDP.htm y haga clic en **ver en el explorador**.  
   
-     Your output should be the same as the original text except it should have the HTML format applied. Each item name should appear in bold.
+     El resultado debe ser igual que el texto original pero con el formato HTML aplicado. Todos los nombres de elemento deben aparecer en negrita.
 

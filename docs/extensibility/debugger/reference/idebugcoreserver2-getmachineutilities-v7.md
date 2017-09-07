@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Microsoft Docs
+title: IDebugCoreServer2::GetMachineUtilities_V7 | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,16 +34,16 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c9441dc96ca5c090f246d4b27842afa6270e1ffb
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-This method gets the machine utilities for a server.  
+Este método obtiene las utilidades de la máquina para un servidor.  
   
 > [!NOTE]
->  This method is obsolete: do not use ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] always returns `E_NOTIMPL` if this method is called). It is retained for historical reasons.  
+>  Este método está obsoleto: no use ([!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] siempre devuelve `E_NOTIMPL` si se llama a este método). Se conserva por motivos históricos.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetMachineUtilities_V7(  
@@ -57,15 +57,15 @@ int GetMachineUtilities_V7(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `ppUtil`  
- [out] Returns an `IDebugMDMUtil2_V7` interface that represents the machine utilities information.  
+ [out] Devuelve un `IDebugMDMUtil2_V7` interfaz que representa la información de utilidades de la máquina.  
   
-## <a name="return-value"></a>Return Value  
- Always returns `E_NOTIMPL`, indicating that the method is not implemented.  
+## <a name="return-value"></a>Valor devuelto  
+ Siempre devuelve `E_NOTIMPL`, que indica que el método no está implementado.  
   
-## <a name="remarks"></a>Remarks  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] always returns `E_NOTIMPL` if this method is called.  
+## <a name="remarks"></a>Comentarios  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]siempre devuelve `E_NOTIMPL` si se llama a este método.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

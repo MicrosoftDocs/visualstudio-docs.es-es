@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeLocationId | Microsoft Docs
+title: IDebugDisassemblyStream2::GetCodeLocationId | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0614509685436f46a2f48eb8b6a6299321f84901
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
-Returns a code location identifier for a particular code context.  
+Devuelve un identificador de ubicación de código para un contexto de código determinado.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetCodeLocationId(   
@@ -56,22 +56,22 @@ int GetCodeLocationId(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pCodeContext`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object to be converted to an identifier.  
+ [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto se convierta en un identificador.  
   
  `puCodeLocationId`  
- [out] Returns the code location identifier. See Remarks.  
+ [out] Devuelve el identificador de ubicación del código. Vea la sección Comentarios.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_CODE_CONTEXT_OUT_OF_SCOPE` if the code context is valid but outside the scope.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_CODE_CONTEXT_OUT_OF_SCOPE` si el contexto del código es válido, pero fuera del ámbito.  
   
-## <a name="remarks"></a>Remarks  
- The code location identifier is specific to the debug engine (DE) supporting the disassembly. This location identifier is used internally by the DE to track positions in the code and is typically an address or offset of some kind. The only requirement is that if the code context of one location is less than the code context of another location, then the corresponding code location identifier of the first code context must also be less than the code location identifier of the second code context.  
+## <a name="remarks"></a>Comentarios  
+ El identificador de ubicación de código es específico para el motor de depuración (Alemania) admiten el desensamblado. Este identificador de ubicación se utiliza internamente por la DE para realizar el seguimiento de las posiciones en el código y suele ser una dirección o desplazamiento de algún tipo. El único requisito es que si el contexto del código de una ubicación es menor que el contexto del código de otra ubicación, el identificador de ubicación de código correspondiente de la primera contexto del código también debe ser menor que el identificador de ubicación de código de la segundo contexto del código.  
   
- To retrieve the code context of a code location identifier, call the [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) method.  
+ Para recuperar el contexto del código de un identificador de ubicación del código, llame a la [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md) método.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)

@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
+title: ASSEMBLYLOCRESOLUTION | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1357a55b240872237a9c838d1387cf07f14c6f92
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Specifies where an assembly is located.  
+Especifica dónde se encuentra un ensamblado.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 enum enum_ASSEMBLYLOCRESOLUTION {  
@@ -61,32 +61,32 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Miembros  
  ALR_NAME  
- Assembly is located in the current namespace.  
+ Ensamblado se encuentra en el espacio de nombres actual.  
   
  ALR_USERDIR  
- Assembly is located in a user directory.  
+ Ensamblado se encuentra en un directorio de usuarios.  
   
  ALR_SHAREDDIR  
- Assembly is located in shared directory.  
+ Ensamblado se encuentra en el directorio compartido.  
   
  ALR_REMOTEDIR  
- Assembly is located in a remote directory.  
+ Ensamblado se encuentra en un directorio remoto.  
   
-## <a name="remarks"></a>Remarks  
- These values are returned by the [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) and [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) methods.  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se devuelven por la [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.  
   
- These values can be combined with the `OR` operation.  
+ Estos valores pueden combinarse con la `OR` operación.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef | Microsoft Docs
+title: IPropertyProxyEESide::ResolveAssemblyRef | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e71bb5aa2954c609cff4a3afbfba981bade3122c
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Determines the location of the specified managed assembly reference.  
+Determina la ubicación de la referencia de ensamblado administrado especificado.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT ResolveAssemblyRef(  
@@ -62,29 +62,29 @@ int ResolveAssemblyRef(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `assemName`  
- [in] Name of the assembly to resolve.  
+ [in] Nombre del ensamblado que se va a resolver.  
   
  `assemBytes`  
- [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes associated with the reference.  
+ [out] Devuelve un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contiene los bytes de ensamblado asociados a la referencia de objeto.  
   
  `assemPdb`  
- [out] Returns an `IEEDataStorage` object containing the symbol store data associated with this reference.  
+ [out] Devuelve un `IEEDataStorage` objeto que contiene el símbolo de almacena datos asociados a esta referencia.  
   
  `assemLocation`  
- [out] Returns the path location of this reference.  
+ [out] Devuelve la ubicación de ruta de acceso de esta referencia.  
   
  `alr`  
- [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of this reference's assembly.  
+ [out] Devuelve un valor de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeración que indica la ubicación del ensamblado de la referencia.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- This method is not typically implemented by a custom expression evaluator.  
+## <a name="remarks"></a>Comentarios  
+ Normalmente, este método no se implementa mediante un evaluador de expresiones personalizado.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

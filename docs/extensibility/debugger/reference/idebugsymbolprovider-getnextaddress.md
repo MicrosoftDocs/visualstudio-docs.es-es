@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
+title: IDebugSymbolProvider::GetNextAddress | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 61f05a9cdde32717d6151a15cf7f8d2176c7ed60
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Gets the debug address that follows a given debug address in a method.  
+Obtiene la dirección de depuración que sigue a una dirección de depuración especificado en un método.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetNextAddress(   
@@ -58,18 +58,18 @@ int GetNextAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] Given debug address.  
+ [in] Dirección de depuración especificado.  
   
  `fStatementOnly`  
- [in] If TRUE, limits the debug addresses to a single statement.  
+ [in] Si es TRUE, limita las direcciones de depuración a una única instrucción.  
   
  `ppAddress`  
- [out] Returns the next debug address.  
+ [out] Devuelve la siguiente dirección de depuración.  
   
-## <a name="return-value"></a>Return Value  
- Returns a valid `HRESULT`, typically S_OK.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un válidas `HRESULT`, normalmente S_OK.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

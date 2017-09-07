@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft Docs
+title: IDebugObject::SetValue | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7249c2bc64afea2ca1037cc7fa1cf617357341d7
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Sets the value of the object from a consecutive series of bytes.  
+Establece el valor del objeto de una serie de bytes consecutiva.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT SetValue(   
@@ -56,19 +56,19 @@ int SetValue(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pValue`  
- [in] An array of bytes representing the new value.  
+ [in] Una matriz de bytes que representa el nuevo valor.  
   
  `nSize`  
- [in] The size of the value in bytes.  
+ [in] El tamaño del valor en bytes.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- The values in the array are copied into this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object, replacing any existing value. The size of the new value can be larger or smaller than the existing value. This `IDebugObject` cannot be a null reference.  
+## <a name="remarks"></a>Comentarios  
+ Los valores de la matriz se copian en esta [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto, reemplazando cualquier valor existente. El tamaño del nuevo valor puede ser mayor o menor que el valor existente. Esto `IDebugObject` no puede ser una referencia nula.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

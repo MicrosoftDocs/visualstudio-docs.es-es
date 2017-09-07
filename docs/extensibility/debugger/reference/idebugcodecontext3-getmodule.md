@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetModule | Microsoft Docs
+title: IDebugCodeContext3::GetModule | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c015c7b6cb604e1f5da5ca13cb7a58425c622773
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-Retrieves a reference to the interface of the debug module.  
+Recupera una referencia a la interfaz del módulo de depuración.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetModule(   
@@ -52,15 +52,15 @@ public int GetModule(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `ppModule`  
- [out] Reference to the debug module interface.  
+ [out] Referencia a la interfaz de módulo de depuración.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugCodeContext** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugCodeContext** objeto que expone la [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
@@ -80,5 +80,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

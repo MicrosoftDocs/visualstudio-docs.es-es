@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft Docs
+title: IDebugExpressionContext2::GetName | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: fa2e97ef660c4872e234e386b5b2513551551c7c
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Retrieves the name of the evaluation context.  
+Recupera el nombre del contexto de evaluación.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetName(   
@@ -54,19 +54,19 @@ int GetName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pbstrName`  
- [out] Returns the name of the evaluation context.  
+ [out] Devuelve el nombre del contexto de evaluación.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- The name is the description of this evaluation context. It is typically something that can be parsed by an expression evaluator that refers to this exact evaluation context. For example, in C++ the name is as follows:  
+## <a name="remarks"></a>Comentarios  
+ El nombre es la descripción de este contexto de evaluación. Normalmente es algo que se puede analizar mediante un evaluador de expresiones que hace referencia a este contexto de evaluación exacta. Por ejemplo, en C++ el nombre es el siguiente:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

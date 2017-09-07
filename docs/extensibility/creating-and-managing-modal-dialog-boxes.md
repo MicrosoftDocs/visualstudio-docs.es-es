@@ -1,5 +1,5 @@
 ---
-title: Creating and Managing Modal Dialog Boxes | Microsoft Docs
+title: "Crear y administrar cuadros de diálogo modales | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,21 +32,21 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 4da27f2be100df8e9f196f68b4371cbb8f474d27
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="creating-and-managing-modal-dialog-boxes"></a>Creating and Managing Modal Dialog Boxes
-When you create a modal dialog box inside Visual Studio, you must make sure that the parent window of the dialog box is disabled while the dialog box is displayed, then re-enable the parent window after the dialog box is closed. If you do not do so, you may receive the error: "Microsoft Visual Studio cannot shut down because a modal dialog is active. Close the active dialog and try again."  
+# <a name="creating-and-managing-modal-dialog-boxes"></a>Crear y administrar cuadros de diálogo modales
+Cuando se crea un cuadro de diálogo modal dentro de Visual Studio, deberá asegurarse de que la ventana primaria del cuadro de diálogo está deshabilitada mientras se muestra el cuadro de diálogo y después volver a habilitar la ventana primaria cuando se cierra el cuadro de diálogo. Si no lo hace, puede recibir el error: "Microsoft Visual Studio no se puede apagar porque un cuadro de diálogo modal está activo. Cierre el cuadro de diálogo activo e inténtelo de nuevo."  
   
- There are two ways of doing this. The recommended way, if you have a WPF dialog box, is to derive it from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, and then call <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> to display the dialog box. If you do this, you do not need to manage the modal state of the parent window.  
+ Hay dos maneras de hacerlo. La manera recomendada, si tiene un cuadro de diálogo WPF es derivar desde <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>y, a continuación, llame a <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> para mostrar el cuadro de diálogo. Si lo hace, no es necesario administrar el estado modal de la ventana primaria.  
   
- If your dialog box is not WPF, or for some other reason you cannot derive your dialog box class from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, then you must get the parent of the dialog box by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> and manage the modal state yourself, by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> method with a parameter of 0 (false) before displaying the dialog box and calling the method again with a parameter of 1 (true) after closing the dialog box.  
+ Si el cuadro de diálogo no es WPF o de alguna otra clase motivo no se puede derivar el cuadro de diálogo de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, a continuación, debe obtener el elemento primario del cuadro de diálogo mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> y administrar el estado modal usted mismo, mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> método con un parámetro de 0 (false) antes de mostrar el cuadro de diálogo y llamar al método nuevo con un parámetro de 1 (verdadero) después de cerrar el cuadro de diálogo.  
   
-## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Creating a dialog box derived from DialogWindow  
+## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Crear un cuadro de diálogo derivado de DialogWindow  
   
-1.  Create a VSIX project named **OpenDialogTest** and add a menu command named **OpenDialog**. For more information about how to do this, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Crear un proyecto VSIX denominado **OpenDialogTest** y agregue un comando de menú llamado **cuadro de diálogo Abrir**. Para obtener más información acerca de cómo hacerlo, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  To use the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> class, you must add references to the following assemblies (in the Framework tab of the **Add Reference** dialog box):  
+2.  Para usar el <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> (clase), debe agregar referencias a los ensamblados siguientes (en la pestaña de .NET Framework de la **Agregar referencia** cuadro de diálogo):  
   
     -   PresentationCore  
   
@@ -56,20 +56,20 @@ When you create a modal dialog box inside Visual Studio, you must make sure that
   
     -   System.Xaml  
   
-3.  In OpenDialog.cs, add the following `using` statement:  
+3.  En OpenDialog.cs, agregue las siguientes `using` instrucción:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Declare a class named **TestDialogWindow** that derives from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4.  Declarar una clase denominada **TestDialogWindow** que se deriva de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  To be able to minimize and maximize the dialog box, set <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> and <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> to true:  
+5.  Para poder minimizar y maximizar el cuadro de diálogo, establezca <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> y <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> en true:  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -79,40 +79,40 @@ When you create a modal dialog box inside Visual Studio, you must make sure that
     }  
     ```  
   
-6.  In the **OpenDialog.ShowMessageBox** method, replace the existing code with the following:  
+6.  En el **OpenDialog.ShowMessageBox** método, reemplace el código existente con lo siguiente:  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Build and run the application. The experimental instance of Visual Studio should appear. On the **Tools** menu of the experimental instance you should see a command named **Invoke OpenDialog**. When you click this command, you should see the dialog window. You should be able to minimize and maximize the window.  
+7.  Compile y ejecute la aplicación. Debe aparecer la instancia experimental de Visual Studio. En el **herramientas** menú de la instancia experimental verá un comando llamado **cuadro de diálogo Abrir invocar**. Al hacer clic en este comando, verá el cuadro de diálogo. Debe ser capaz de minimizar y maximizar la ventana.  
   
-## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Creating and managing a dialog box not derived from DialogWindow  
+## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Creación y administración de un cuadro de diálogo no derivado de DialogWindow  
   
-1.  For this procedure, you can use the **OpenDialogTest** solution you created in the previous procedure, with the same assembly references.  
+1.  Para este procedimiento, puede usar el **OpenDialogTest** solución creada en el procedimiento anterior, con las mismas referencias de ensamblado.  
   
-2.  Add the following `using` declarations:  
+2.  Agregue las siguientes `using` declaraciones:  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Create a class named **TestDialogWindow2** that derives from <xref:System.Windows.Window>:  
+3.  Cree una clase denominada **TestDialogWindow2** que se deriva de <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Add a private reference to <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4.  Agregue una referencia privada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Add a constructor that sets the reference to <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5.  Agregue un constructor que establece la referencia a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -121,7 +121,7 @@ When you create a modal dialog box inside Visual Studio, you must make sure that
     }  
     ```  
   
-6.  In the **OpenDialog.ShowMessageBox** method, replace the existing code with the following:  
+6.  En el **OpenDialog.ShowMessageBox** método, reemplace el código existente con lo siguiente:  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -143,4 +143,4 @@ When you create a modal dialog box inside Visual Studio, you must make sure that
     }  
     ```  
   
-7.  Build and run the application. On the **Tools** menu you should see a command named **Invoke OpenDialog**. When you click this command, you should see the dialog window.
+7.  Compile y ejecute la aplicación. En el **herramientas** menú verá un comando llamado **cuadro de diálogo Abrir invocar**. Al hacer clic en este comando, verá el cuadro de diálogo.

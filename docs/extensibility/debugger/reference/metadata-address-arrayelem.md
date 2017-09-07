@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
+title: METADATA_ADDRESS_ARRAYELEM | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: df941d56a1b9baf8ffa15b022e0b9577da143fc8
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
-This structure represents an array element within an array.  
+Esta estructura representa un elemento de matriz dentro de una matriz.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_ARRAYELEM {  
@@ -56,26 +56,26 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Términos  
  tokMethod  
- The ID of the array this element is a part of.  
+ El identificador de la matriz de este elemento es una parte de.  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C++] `_mdToken` es un `typedef` de 32 bits `int`.  
   
  dwIndex  
- The index of this element within the array.  
+ El índice de este elemento de la matriz.  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_ARRAYELEM` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## <a name="remarks"></a>Comentarios  
+ Esta estructura es una parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_ARRAYELEM` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Vea también  
+ [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

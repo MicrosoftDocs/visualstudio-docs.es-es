@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: IDebugExpressionEvaluator2::SetCallback | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e5b9964dee0580fe0fbab6d817c4dc2abf56dad4
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Enables the expression evaluator (EE) to specify the callback interface that the debugger engine (DE) will use to read metric settings.  
+Permite que el evaluador de expresiones (EE) especificar la interfaz de devolución de llamada que el motor de depuración (Alemania) va a usar para leer los valores de métrica.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT SetCallback (  
@@ -53,18 +53,18 @@ int SetCallback (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pCallback`  
- [in] Interface to use for the settings callback.  
+ [in] Interfaz que se utiliza para la devolución de llamada de configuración.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- This method provides an interface to the session debug manager that an expression evaluator can use to read metric settings. It is useful in remote debugging to read metrics on the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] computer.  
+## <a name="remarks"></a>Comentarios  
+ Este método proporciona una interfaz para el Administrador de depuración de sesión que un evaluador de expresiones puede utilizar para leer la configuración de la métrica. Resulta útil para la depuración remota para leer las métricas en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] equipo.  
   
-## <a name="example"></a>Example  
- The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
+## <a name="example"></a>Ejemplo  
+ Los ejemplos siguientes se muestra cómo implementar este método para un **CEE** objeto que expone la [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaz.  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -91,5 +91,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

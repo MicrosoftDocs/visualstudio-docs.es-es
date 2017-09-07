@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
+title: IDebugSymbolProvider::GetMethodFieldsByName | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3bf359535d5b11edb95910afe5a81ca048ab9c21
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-This method gets the field representing a fully qualified method name.  
+Este método obtiene el campo que representa un nombre de método completo.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetMethodFieldsByName(   
@@ -58,22 +58,22 @@ int GetMethodFieldsByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pszFullName`  
- [in] The method name.  
+ [in] El nombre del método.  
   
  `nameMatch`  
- [in] Selects the type of match, for example, case-sensitive.  
+ [in] Selecciona el tipo de coincidencia, por ejemplo, distingue mayúsculas de minúsculas.  
   
  `ppEnum`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the fields associated with this method.  
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para los campos asociados a este método.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- A method can be associated with multiple fields if it is overloaded, for example.  
+## <a name="remarks"></a>Comentarios  
+ Un método puede asociarse con varios campos si está sobrecargado, por ejemplo.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

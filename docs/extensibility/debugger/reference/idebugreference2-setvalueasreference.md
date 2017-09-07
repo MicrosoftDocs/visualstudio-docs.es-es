@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference | Microsoft Docs
+title: IDebugReference2::SetValueAsReference | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e295ad3fd09a8b5dbaa17cdd6f10f3cb8a9ff1b9
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Sets the value of a reference from another reference. Reserved for future use.  
+Establece el valor de una referencia desde otra referencia. Reservado para un uso futuro.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT SetValueAsReference (   
@@ -60,21 +60,21 @@ int SetValueAsReference (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `rgpArgs`  
- [in] An array of [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objects used to determine how to set the reference value.  
+ [in] Una matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos que se usan para determinar cómo establecer el valor de referencia.  
   
  `dwArgCount`  
- [in] The number of references in the array.  
+ [in] El número de referencias de la matriz.  
   
  `pValue`  
- [in] An [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object from which to set the property value.  
+ [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto desde el que se establecerá el valor de propiedad.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ [in] Tiempo máximo, en milisegundos, que se esperará antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
   
-## <a name="return-value"></a>Return Value  
- Always returns `E_NOTIMPL`.  
+## <a name="return-value"></a>Valor devuelto  
+ Siempre devuelve `E_NOTIMPL`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

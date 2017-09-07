@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: MT
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2728faddd71485f3636eeefb6b86bb1f6be90fdd
+ms.openlocfilehash: 249c2de091056b0278cc1c8ea54044f6b693e664
 ms.contentlocale: es-es
 
 ---
-Visual Studio SDK
+Microsoft Test Manager

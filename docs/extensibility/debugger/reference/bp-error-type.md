@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: BP_ERROR_TYPE | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ab0dc686c4d002733bf8501be042e33c500fb8e3
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
-Specifies the error type of a breakpoint.  
+Especifica el tipo de error de un punto de interrupción.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 enum enum_BP_ERROR_TYPE {   
@@ -75,53 +75,53 @@ public enum enum_BP_ERROR_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Miembros  
  BPET_NONE  
- Specifies no breakpoint error.  
+ No especifica ningún error de punto de interrupción.  
   
  BPET_TYPE_WARNING  
- Specifies a warning-style breakpoint error.  
+ Especifica un error de punto de interrupción de advertencia estilo.  
   
  BPET_TYPE_ERROR  
- Specifies an error-style breakpoint error.  
+ Especifica un error de punto de interrupción de estilo de error.  
   
  BPET_SEV_HIGH  
- Specifies a high-severity breakpoint error.  
+ Especifica un error de punto de interrupción de gravedad alta.  
   
  BPET_SEV_GENERAL  
- Specifies a medium-severity breakpoint error.  
+ Especifica un error de punto de interrupción de gravedad Media.  
   
  BPET_SEV_LOW  
- Specifies a low-severity breakpoint error.  
+ Especifica un error de punto de interrupción de gravedad baja.  
   
  BPET_TYPE_MASK  
- Specifies a mask-style breakpoint error.  
+ Especifica un error de punto de interrupción de estilo de máscara.  
   
  BPET_SEV_MASK  
- Specifies a severity-mask-style breakpoint error.  
+ Especifica un error de punto de interrupción de estilo de máscara de gravedad.  
   
  BPET_GENERAL_WARNING  
- Specifies a general-warning-style breakpoint error.  
+ Especifica un error de punto de interrupción de estilo de advertencia general.  
   
  BPET_GENERAL_ERROR  
- Specifies a general-error-style breakpoint error.  
+ Especifica un error de punto de interrupción de estilo de error general.  
   
  BPET_ALL  
- Specifies all breakpoint error types.  
+ Especifica todos los tipos de error de punto de interrupción.  
   
-## <a name="remarks"></a>Remarks  
- These values may be combined with a bitwise `OR` and used for the `dwType` member of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure. Passed as a parameter to the [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) method.  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se pueden combinar con un bit a bit `OR` y se utilizan para la `dwType` miembro de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura. Pasar como un parámetro a la [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.  
   
- A breakpoint error type is composed of a type and a severity. This means that a breakpoint error type is never just a type (for example, `BPET_TYPE_ERROR`,) or a severity (for example, `BPET_SEV_GENERAL`) by itself. `BPET_GENERAL_WARNING` and `BPET_GENERAL_ERROR` provide predefined values for general warning and error breakpoints.  
+ Un tipo de error de punto de interrupción se compone de un tipo y un nivel de gravedad. Esto significa que un tipo de error de punto de interrupción nunca es simplemente un tipo (por ejemplo, `BPET_TYPE_ERROR`,) o un nivel de gravedad (por ejemplo, `BPET_SEV_GENERAL`) por sí mismo. `BPET_GENERAL_WARNING`y `BPET_GENERAL_ERROR` proporcionar valores predefinidos para puntos de interrupción de advertencia y error generales.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

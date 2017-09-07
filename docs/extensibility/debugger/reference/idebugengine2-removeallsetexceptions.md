@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveAllSetExceptions | Microsoft Docs
+title: IDebugEngine2::RemoveAllSetExceptions | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ea570fe5ab9df8ad2cc004a35113156436161dcd
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Removes the list of exceptions the IDE has set for a particular run-time architecture or language.  
+Quita la lista de excepciones que se estableció el IDE para una determinada arquitectura de tiempo de ejecución o un lenguaje.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT RemoveAllSetExceptions(   
@@ -54,19 +54,19 @@ int RemoveAllSetExceptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `guidType`  
- [in] Either the GUID for the language or the GUID for the debug engine that is specific to a run-time architecture.  
+ [in] El GUID para el idioma o en el GUID para el motor de depuración que es específico de una arquitectura en tiempo de ejecución.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- The exceptions removed by this method were set by earlier calls to the [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) method.  
+## <a name="remarks"></a>Comentarios  
+ Las excepciones que se quitan mediante este método se establecieron por las llamadas anteriores a la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) método.  
   
- To remove a specific exception, call the [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) method.  
+ Para quitar una excepción específica, llame a la [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) método.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Reset | Microsoft Docs
+title: IEnumDebugErrorBreakpoints2::Reset | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 60c48f0d9fae54b5d7f11aa71abf05d59f799dca
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
-Resets the enumeration to the first element.  
+Restablece la enumeración al primer elemento.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT Reset(  
@@ -52,11 +52,11 @@ HRESULT Reset(
 int Reset();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) method returns the first element of the enumeration.  
+## <a name="remarks"></a>Comentarios  
+ Después de llamar a este método, la siguiente llamada a la [siguiente](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) método devuelve el primer elemento de la enumeración.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
+title: IDebugBoundBreakpoint2::SetHitCount | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,13 +35,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 72f4f12aecaeb3b45af5950a9ec3bc45f37c1969
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Sets the hit count for the bound breakpoint.  
+Establece el número de llamadas para el punto de interrupción enlazado.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT SetHitCount(   
@@ -55,18 +55,18 @@ int SetHitCount(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `dwHitCount`  
- [in] The hit count to set.  
+ [in] El número de llamadas para establecer.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
   
-## <a name="remarks"></a>Remarks  
- The hit count is the number of times this breakpoint has fired during the current run of the session.  
+## <a name="remarks"></a>Comentarios  
+ El número de llamadas es el número de veces que se ha activado este punto de interrupción durante la ejecución de la sesión actual.  
   
- This method is typically called by the debug engine to update the current hit count on this breakpoint.  
+ Normalmente se llama a este método por el motor de depuración para actualizar el número de llamadas actual en este punto de interrupción.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
