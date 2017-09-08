@@ -20,8 +20,8 @@ helpviewer_keywords:
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 27
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -39,10 +39,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
-ms.openlocfilehash: 4908b52683af2adb4455a7add4b51e7e52b2700e
+ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
+ms.openlocfilehash: 2a8553c23c805d6e8acddaf4ba264a915c2795bc
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 # <a name="save-data-back-to-the-database"></a>Save data back to the database
@@ -64,8 +64,8 @@ If you're familiar with TableAdapters, you can jump directly to one of these top
 |[Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|How to perform updates with TableAdapters|  
 |[Hierarchical update](../data-tools/hierarchical-update.md)|How to perform updates from a dataset with two or more related tables|  
 |[Handle a concurrency exception](../data-tools/handle-a-concurrency-exception.md)|How to handle exceptions when two users attempt to change the same data in a database at the same time|  
-|[Save data by using a transaction](../data-tools/save-data-by-using-a-transaction.md)|How to save data in a transaction using the System.Transactions namespace  and the TransactionScope object|  
-|[Save data in a transaction](../data-tools/save-data-in-a-transaction.md)|How to save data in a transaction using the System.Transactions namespace|  
+|[How to: Save data by using a transaction](../data-tools/save-data-by-using-a-transaction.md)|How to save data in a transaction using the System.Transactions namespace and a TransactionScope object|  
+|[Walkthrough: Save data in a transaction](../data-tools/save-data-in-a-transaction.md)|Walkthrough that creates a Windows Forms application to demonstrate saving data to a database inside a transaction|  
 |[Save data to a database (multiple tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|How to edit records and save changes in multiple tables back to the database|  
 |[Save data from an object to a database](../data-tools/save-data-from-an-object-to-a-database.md)|How to pass data from an object that is not in a dataset to a database by using a TableAdapter DbDirect method|  
 |[Save data with the TableAdapter DBDirect methods](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|How to use the TableAdapter to send SQL queries directly to the database|  

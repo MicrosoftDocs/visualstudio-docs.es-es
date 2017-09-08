@@ -22,10 +22,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 13659103061c6054698f4579b4b71d2669d2356d
-ms.openlocfilehash: e16808d62d181ec21f1bb8a2085a9003bded59fe
+ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
+ms.openlocfilehash: eda7684f3d717dc0700984d530556c4acd2ff85e
 ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Install Visual Studio 2017
@@ -37,10 +37,10 @@ Ready to install? We'll walk you through it, step-by-step.
 
 ## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>Step 1 - Make sure your computer is ready for Visual Studio
 
-Before you begin installing Visual Studio
+Before you begin installing Visual Studio:
 
 1. Check the [system requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). This helps you know whether your computer supports Visual Studio 2017.
-2. Apply the latest Windows Updates. This ensures that your computer has both the latest security updates and the required system components for Visual Studio.
+2. Apply the latest Windows updates. This ensures that your computer has both the latest security updates and the required system components for Visual Studio.
 3. Reboot. This ensures that any pending installs or updates don't hinder the Visual Studio install.
 4. Free up space. Remove unneeded files and applications from your %SystemDrive% by, for example, running the Disk Cleanup app.
 
@@ -56,7 +56,7 @@ Next, download the Visual Studio bootstrapper file. To do so, click the followin
 
 |         |         |
 |---------|---------|
-|  ![film icon for video](media/video-icon.png "Watch a video")  |    [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) on how to download the Visual Studio bootstrapper file and select the edition of Visual Studio that's right for you. |
+|  ![movie camera icon for video](media/video-icon.png "Watch a video")  |    [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) on how to download the Visual Studio bootstrapper file and select the edition of Visual Studio that's right for you. |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Step 3 - Install the Visual Studio installer
 
@@ -92,7 +92,7 @@ After the installer is installed, you can use it to customize your installation 
 
 |         |         |
 |---------|---------|
-|  ![film icon for video](media/video-icon.png "Watch a video")  |    [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) on how to install the Visual Studio Installer and then install a workload. |
+|  ![movie camera icon for video](media/video-icon.png "Watch a video")  |    [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) on how to install the Visual Studio Installer and then install a workload. |
 
 ## <a name="step-5---select-individual-components-optional"></a>Step 5 - Select individual components (Optional)
 
@@ -102,7 +102,7 @@ If you don't want to use the Workloads feature to customize your Visual Studio i
 
   |         |         |
   |---------|---------|
-  |  ![film icon for video](media/video-icon.png "Watch a video")  |   [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) on how to install an individual component by using the Visual Studio Installer. |
+  |  ![movie camera icon for video](media/video-icon.png "Watch a video")  |   [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) on how to install an individual component by using the Visual Studio Installer. |
 
 ## <a name="step-6---install-language-packs-optional"></a>Step 6 - Install language packs (Optional)
 
@@ -112,7 +112,7 @@ By default, the installer program tries to match the language of the operating s
 
   |         |         |
   |---------|---------|
-  |  ![film icon for video](media/video-icon.png "Watch a video")  |   [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) on how to install a language pack by using the Visual Studio Installer. |
+  |  ![movie camera icon for video](media/video-icon.png "Watch a video")  |   [Watch a video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) on how to install a language pack by using the Visual Studio Installer. |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Change the installer language from the command line
 
@@ -132,5 +132,5 @@ Sometimes, things can go wrong. If your Visual Studio installation fails, see th
 * [Uninstall Visual Studio 2017](uninstall-visual-studio.md)
 * [Visual Studio 2017 administrator guide](visual-studio-administrator-guide.md)
   * [Use command-line parameters to install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [How to report a problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-
+* [Create an offline installation of Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Report a problem with Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
