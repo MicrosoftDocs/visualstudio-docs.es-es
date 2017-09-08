@@ -1,5 +1,5 @@
 ---
-title: 'Step 4: Add a Click Event Handler to Each Label | Microsoft Docs'
+title: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,49 +31,49 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: b7a7fc66913ff7cc4afc952f2f797781a6f90819
 ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Step 4: Add a Click Event Handler to Each Label
-The matching game works as follows:  
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
+El juego de formar parejas funciona como sigue:  
   
-1.  When a player chooses one of the squares with a hidden icon, the program shows the icon to the player by changing the icon color to black.  
+1.  Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.  
   
-2.  Then the player chooses another hidden icon.  
+2.  A continuación, el jugador elige otro icono oculto.  
   
-3.  If the icons match, they stay visible. If not, both icons are hidden again.  
+3.  Si los iconos coinciden, permanecen visibles. En caso contrario, se vuelven a ocultar.  
   
- To get your program to work that way, you add a Click event handler that changes the color of the label that is chosen.  
+ Para conseguir que un programa funcione de esa manera, agregue un controlador de eventos Click que cambie el color de la etiqueta que se elige.  
   
-### <a name="to-add-a-click-event-handler-to-each-label"></a>To add a Click event handler to each label  
+### <a name="to-add-a-click-event-handler-to-each-label"></a>Para agregar un controlador de eventos Click a cada etiqueta  
   
-1.  Open the form in the Windows Forms Designer. In Solution Explorer, choose Form1.cs or Form1.vb. On the menu bar, choose **View**, **Designer**.  
+1.  Abra el formulario en el Diseñador de Windows Forms. En el Explorador de soluciones, elija Form1.cs o Form1.vb. En la barra de menús, elija **Ver**, **Diseñador**.  
   
-2.  Choose the first label control to select it. Then, hold down the CTRL key while you choose each of the other labels to select them. Be sure that every label is selected.  
+2.  Elija el primer control de etiqueta para seleccionarlo. A continuación, mantenga presionada la tecla CTRL mientras elige cada una de las otras etiquetas para seleccionarlas. Asegúrese de que todas las etiquetas están seleccionadas.  
   
-3.  Choose the **Events** button on the tool bar in the **Properties** window to view the **Events** page in the **Properties** window. Scroll down to the **Click** event, and enter **label_Click** in the box, as shown in the following picture.  
+3.  Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente ilustración.  
   
-     ![Properties window showing Click event](../ide/media/express_labelclick.png "Express_labelClick")  
-Properties window showing Click event  
+     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_labelclick.png "Express_labelClick")  
+Ventana Propiedades mostrando el evento Click  
   
-4.  Choose the ENTER key. The IDE adds a Click event handler called `label_Click()` to the code, and hooks it to each of the labels on the form.  
+4.  Elija la tecla Entrar. El IDE agrega al código un controlador de eventos Click denominado `label_Click()` y lo enlaza a cada una de las etiquetas del formulario.  
   
-5.  Fill in the rest of the code, as follows:  
+5.  Rellene el resto del código como se indica a continuación:  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]  
   
     > [!NOTE]
-    >  If you copy and paste the `label_Click()` code block rather than entering the code manually, be sure to replace the existing `label_Click()` code. Otherwise, you'll end up with a duplicate code block.  
+    >  Si copia y pega el bloque `label_Click()` de código, en lugar de escribirlo manualmente, asegúrese de reemplazar el código `label_Click()` existente. De lo contrario, se encontrará con un bloque de código duplicado.  
   
     > [!NOTE]
-    >  You may recognize `object sender` at the top of the event handler as the same one used in the [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md) tutorial. Because you hooked up different label control Click event to a single event handler method, the same method is called no matter which label the user chooses. The event handler method needs to know which label was chosen, so it uses the name **sender** to identify the label control. The first line of the method tells the program that it's not just a generic object, but specifically a label control, and that it uses the name **clickedLabel** to access the label's properties and methods.  
+    >  Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el utilizado en el tutorial [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre **sender** para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre **clickedLabel**, tiene acceso a las propiedades y los métodos de la etiqueta.  
   
-     This method first checks whether **clickedLabel** was successfully converted (cast) from an object to a label control. If unsuccessful, it has a value of `null` (C#) or `Nothing` (Visual Basic), and you don't want to execute the remainder of the code in the method. Next, the method checks the chosen label's text color by using the label's **ForeColor** property. If the label's text color is black, then that means the icon's already been chosen and the method is done. (That's what the `return` statement does: It tells the program to stop executing the method.) Otherwise, the icon hasn't been chosen, so the program changes the label's text color to black.  
+     Este método comprueba primero si **clickedLabel** se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Esto es lo que hace la instrucción `return`: indicar al programa que deje de ejecutar el método). Si no, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.  
   
-6.  On the menu bar, choose **File**, **Save All** to save your progress, and then, on the menu bar, choose **Debug**, **Start Debugging** to run your program. You should see an empty form with a blue background. Choose any of the cells in the form, and one of the icons should become visible. Continue choosing different places in the form. As you choose the icons, they should appear.  
+6.  En la barra de menús, elija **Archivo**, **Guardar todo** para guardar el progreso y, a continuación, en la barra de menús, elija **Depurar**, **Iniciar depuración** para ejecutar el programa. Debería ver un formulario vacío con un fondo azul. Al elegir cualquiera de las celdas del formulario, uno de los iconos debería hacerse visible. Siga eligiendo distintas partes del formulario. A medida que elija los iconos, estos deberían mostrarse.  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   To go to the next tutorial step, see [Step 5: Add Label References](../ide/step-5-add-label-references.md).  
+-   Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).  
   
--   To return to the previous tutorial step, see [Step 3: Assign a Random Icon to Each Label](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Para volver al paso previo del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).

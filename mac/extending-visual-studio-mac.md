@@ -1,6 +1,6 @@
 ---
-title: Extending Visual Studio for Mac
-Description: Visual Studio for Mac's features and functionality can be extended with modules called extension packages. The first part of this guide creates a simple Visual Studio for Mac extension package to insert the date and time into a document. The second part of this guide introduces the fundamentals of the extension package system and some of the core APIs that form the foundation of Visual Studio for Mac.
+title: Extender Visual Studio para Mac
+Description: "Puede extender las características y las funciones de Visual Studio para Mac con módulos denominados paquetes de extensión. En la primera parte de esta guía, se crea un paquete de extensión simple de Visual Studio para Mac para insertar la fecha y hora en un documento. En la segunda parte de esta guía, se presentan los conceptos básicos del sistema de paquetes de extensión y algunas de las API principales que conforman la base de Visual Studio para Mac."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
@@ -11,34 +11,34 @@ ms.translationtype: HT
 ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
 ms.openlocfilehash: fd924424ed825ae37dcfa736e529a50b04e472e6
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 
-# <a name="extending-visual-studio-for-mac"></a>Extending Visual Studio for Mac
+# <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
-Visual Studio for Mac consists of a set of modules called *Extension Packages*. You can use Extension Packages to introduce new functionality to Visual Studio for Mac, such as support for an additional language or a new Project template.
+Visual Studio para Mac consta de un conjunto de módulos denominados *paquetes de extensión*. Puede usar los paquetes de extensión para incluir una nueva función en Visual Studio para Mac, como la compatibilidad con un idioma adicional o una nueva plantilla de proyecto.
 
-Extension packages build from the *extension* points of other extension packages. Extension points are placeholders for areas that can be expanded upon, such as a menu or the list of IDE Commands. An extension package can build from an extension point by registering a node of structured data called an extension, such as a new menu item or a new Command. Each extension point accepts certain types of extensions, such as a *Command*, *Pad*, or *FileTemplate*. A module that contains extension points is called an *add-in host*, as it can be extended by other extension packages.
+Los paquetes de extensión se compilan desde los puntos de *extensión* de otros paquetes de extensión. Los puntos de extensión son marcadores de posición para las áreas que se pueden expandir, por ejemplo, un menú o la lista de comandos del IDE. Puede compilar un paquete de extensión desde un punto de extensión. Para ello, registre un nodo de datos estructurados denominados extensiones, como un nuevo elemento de menú o un comando nuevo. Cada punto de extensión acepta ciertos tipos de extensiones, como *Command*, *Pad* o *FileTemplate*. Un módulo que contiene puntos de extensión se denomina *host de complemento*, ya que lo pueden extender otros paquetes de extensión.
 
-To customize Visual Studio for Mac, you can create an extension package that builds from extension points contained in add-in hosts within pre-existing libraries in Visual Studio for Mac, as illustrated by the following diagram:
+Para personalizar Visual Studio para Mac, puede crear un paquete de extensión que se compile desde los puntos de extensión contenidos en hosts de complemento en las bibliotecas preexistentes de Visual Studio para Mac, como se muestra en el diagrama siguiente:
 
-![Add-in Architecture](media/extending-visual-studio-mac-addin1.png)
+![Arquitectura de complementos](media/extending-visual-studio-mac-addin1.png)
 
-In order for an extension package to build from Visual Studio for Mac, it must have extensions that build from pre-existing extension points within the Visual Studio for Mac IDE. When an extension package relies on an extension point defined in an add-in host, it is said to have a _dependency_ on that extension package.
+Para que un paquete de extensión se compile desde Visual Studio para Mac, debe tener extensiones que se compilen desde puntos de extensión preexistentes en el IDE de Visual Studio para Mac. Cuando un paquete de extensión se basa en un punto de extensión definido en un host de complemento, se dice que tiene una _dependencia_ en dicho paquete de extensión.
 
-The benefit of this modular design is that Visual Studio for Mac is extensible -- there are many extension points that can be built upon with custom extension packages. Examples of current extension packages include support for C# and F#, debugger tools, and Project templates.
+La ventaja de este diseño modular es que Visual Studio para Mac es extensible, ya que hay muchos puntos de extensión desde los que se puede compilar con paquetes de extensión personalizados. Entre los ejemplos de paquetes de extensión actuales se incluyen la compatibilidad con C# y F#, las herramientas del depurador y las plantillas de proyecto.
 
 > [!NOTE]
-> **Note**: If you have an Add-in Maker project that was created before Add-in Maker 1.2, you need to migrate your project as outlined in the steps [here](https://mhut.ch/addinmaker/1.2).
+> **Nota**: Si tiene un proyecto de Add-in Maker creado antes de Add-in Maker 1.2, debe migrar el proyecto siguiendo los pasos que se describen [aquí](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
-This section looks at the different files generated by the Add-in Maker and the data a command extension requires.
+En esta sección se examinan los diferentes archivos que genera Add-in Maker y los datos que requiere una extensión de comando.
 
-## <a name="attribute-files"></a>Attribute files
+## <a name="attribute-files"></a>Archivos de atributos
 
-Extension packages store metadata about their name, version, dependencies, and other information in C# attributes. The Add-in Maker creates two files, `AddinInfo.cs` and `AssemblyInfo.cs` to store and organize this information. Extension packages must have a unique id and namespace specified in their *Addin attribute*:
+Los paquetes de extensión almacenan metadatos sobre el nombre, la versión, las dependencias y otra información en atributos de C#. Add-in Maker crea dos archivos, `AddinInfo.cs` y `AssemblyInfo.cs`, para almacenar y organizar esta información. Los paquetes de extensión deben tener un identificador y un espacio de nombres únicos especificados en el *atributo Addin*:
 
 ```
 [assembly:Addin (
@@ -48,29 +48,29 @@ Extension packages store metadata about their name, version, dependencies, and o
 )]
 ```
 
-Extension packages must also declare dependencies on the extension packages that own the extension points they plug into. These are automatically referenced at build time.
+Los paquetes de extensión también deben declarar las dependencias en los paquetes de extensión que poseen los puntos de extensión a los que se conectan. Se hace referencia a estos automáticamente en tiempo de compilación.
 
-Furthermore, additional references can be added via the Add-in reference node in the solution pad for the project, as depicted by the following image:
+Además, se pueden agregar referencias adicionales a través del nodo de referencias de complemento en el panel de solución del proyecto, como se muestra en la imagen siguiente:
 
-![Insert Date Screenshot](media/extending-visual-studio-mac-addin13.png)
+![Captura de pantalla de insertar fecha](media/extending-visual-studio-mac-addin13.png)
 
-They also have their corresponding `assembly:AddinDependency ` attributes added at build time. Once the metadata and dependency declarations are in place, you can focus on the essential building blocks of the extension package.
+También se agregan sus atributos `assembly:AddinDependency ` correspondientes en tiempo de compilación. Una vez que se han colocado los metadatos y las declaraciones de dependencias, puede centrarse en los bloques de creación fundamentales del paquete de extensión.
 
-## <a name="extensions-and-extension-points"></a>Extensions and extension points
+## <a name="extensions-and-extension-points"></a>Extensiones y puntos de extensión
 
-An extension point is a placeholder that defines a data structure (a type), while an extension defines data that conforms to a structure specified by a specific extension point. Extension points specify what type of extension they can accept in their declaration. Extensions are declared using type names or extension paths. See the [Extension Point reference](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) for a more in-depth explanation on how to create the extension point that you need.
+Un punto de extensión es un marcador de posición que define una estructura de datos (un tipo), mientras que una extensión define los datos que se ajustan a una estructura especificada por un punto de extensión específico. Los puntos de extensión especifican qué tipo de extensión pueden aceptar en su declaración. Las extensiones se declaran mediante nombres de tipo o rutas de acceso de extensión. Vea la [referencia sobre los puntos de extensión](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) para obtener una explicación más detallada sobre cómo crear el punto de extensión que necesita.
 
-The extension/extension point architecture keeps the development of Visual Studio for Mac fast and modular. 
+La arquitectura de extensión/punto de extensión garantiza que el desarrollo de Visual Studio para Mac sea rápido y modular. 
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
-### <a name="command-extensions"></a>Command Extensions
+### <a name="command-extensions"></a>Extensiones de comando
 
 <!--[Walkthrough](~/extending-visual-studio-mac-walkthrough.md) uses a Command Extension - an extension that points to methods that are called every time it is executed. -->
 
-Command Extensions are extensions that point to methods that are called every time it is executed.
+Las extensiones de comando son extensiones que apuntan a los métodos a los que se llama cada vez que se ejecutan.
 
-Command Extensions are defined by adding entries to the `/MonoDevelop/Ide/Commands` extension point. We defined our extension in `Manifest.addin.xml` with the following code:
+Las extensiones de comando se definen mediante la adición de entradas al punto de extensión `/MonoDevelop/Ide/Commands`. Hemos definido nuestra extensión en `Manifest.addin.xml` con el código siguiente:
 
  ```
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
@@ -81,16 +81,16 @@ Command Extensions are defined by adding entries to the `/MonoDevelop/Ide/Comman
 </Extension>
 ```
 
-The extension node contains a path attribute that specifies the extension point that it is plugging into, in this case `/MonoDevelop/Ide/Commands/Edit`. Additionally, it acts as a parent node to the Command. The Command node has the following attributes:
+El nodo de extensión contiene un atributo de ruta de acceso que especifica el punto de extensión al que se conecta, en este caso, `/MonoDevelop/Ide/Commands/Edit`. Además, actúa como nodo primario para el comando. El nodo de comando tiene los atributos siguientes:
 
-*   **id** - Specifies the identifier for this Command. Command Identifiers must be declared as enumeration members, and are used to connect Commands to CommandItems.
-*   **_label** - The text to be shown in menus.
-*   **_description** - The text to be shown as a tooltip for toolbar buttons.
-*   **defaultHandler** - Specifies the `CommandHandler` class that powers the Command
+*   **id**: especifica el identificador de este comando. Los identificadores de comando deben declararse como miembros de enumeración y se usan para conectar Commands a CommandItems.
+*   **_label**: texto que se mostrará en los menús.
+*   **_description**: texto que se mostrará como una información sobre herramientas para los botones de la barra de herramientas.
+*   **defaultHandler**: especifica la clase `CommandHandler` que activa el comando.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
-A CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point is demonstrated in the following code snippet:
+En el siguiente fragmento de código se muestra una extensión de CommandItem que se conecta al punto de extensión `/MonoDevelop/Ide/MainMenu/Edit`:
 
 ```
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
@@ -98,11 +98,11 @@ A CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` ext
 </Extension>
 ```
 
-A CommandItem places a Command specified in its id attribute into a menu. This CommandItem is extending the `/MonoDevelop/Ide/MainMenu/Edit` extension point, which makes the Command's label appear in the **Edit Menu**. Note that the **id** in the CommandItem corresponds to the id of the Command node, `InsertDate`. If you were to remove the CommandItem, the **Insert Date** option would disappear from the Edit Menu.
+CommandItem coloca un comando especificado en su atributo id en un menú. Dicho CommandItem extiende el punto de extensión `/MonoDevelop/Ide/MainMenu/Edit`, lo que hace que la etiqueta del comando aparezca en el **menú Edición**. Tenga en cuenta que el valor de **id** de CommandItem se corresponde con el identificador del nodo de comandos, `InsertDate`. Si quita CommandItem, la opción **Insertar fecha** desaparecerá del menú Edición.
 
-### <a name="command-handlers"></a>Command Handlers
+### <a name="command-handlers"></a>Controladores de comandos
 
-The `InsertDateHandler` is an extension of the `CommandHandler` class. It overrides two methods, `Update` and `Run`. The `Update` method is queried whenever a Command is shown in a menu or executed via key bindings. By changing the info object, you can disable the Command or make it invisible, populate array commands, and more. This `Update` method disables the command if it can't find an active *Document* with a *TextEditor* to insert text into:
+`InsertDateHandler` es una extensión de la clase `CommandHandler`. Reemplaza dos métodos, `Update` y `Run`. El método `Update` se consulta cada vez que un comando se muestra en un menú o se ejecuta mediante enlaces de teclado. Al cambiar el objeto de información, puede deshabilitar el comando o convertirlo en invisible, rellenar comandos de matriz, etc. El método `Update` deshabilita el comando si no encuentra un objeto *Document* activo con un objeto *TextEditor* en el que insertar texto:
 
 ```
 protected override void Update (CommandInfo info)
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 }
 ```
 
-You only need to override the `Update` method when you have special logic for enabling or hiding the Command. The `Run` method executes whenever a user executes a Command, which in this case occurs when a user selects the Command from the Edit Menu. This method inserts the date and time at the caret in the text editor:
+Solo necesita invalidar el método `Update` cuando tiene una lógica especial para habilitar u ocultar el comando. El método `Run` se ejecuta cada vez que un usuario ejecuta un comando, lo que en este caso se produce cuando un usuario selecciona el comando en el menú Edición. Este método inserta la fecha y hora en el símbolo de inserción en el editor de texto:
 
 ```
 protected override void Run ()
@@ -122,7 +122,7 @@ protected override void Run ()
 }
 ```
 
-Declare the Command type as an enumeration member within `DateInserterCommands`:
+Declare el tipo Command como un miembro de enumeración en `DateInserterCommands`:
 
 ```
 public enum DateInserterCommands
@@ -131,37 +131,37 @@ public enum DateInserterCommands
 }
 ```
 
-This ties together the Command and CommandItem - the CommandItem calls the Command when the CommandItem is selected from the **Edit Menu**.
+Esto enlaza Command y CommandItem y, cuando en el **menú Edición** se selecciona CommandItem, este llama a Command.
 
-## <a name="ide-apis"></a>IDE APIs
+## <a name="ide-apis"></a>API del IDE
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-For information on the scope of areas that are available for development, see the [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) and the [API Overview](http://monodevelop.com/Developers/Articles/API_Overview). When building advanced extension packages, also refer to [Developer Articles](http://monodevelop.com/Developers/Articles). Below is a partial list of areas for customization:
+Para obtener información sobre el ámbito de las áreas disponibles para el desarrollo, vea [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) (Referencia del árbol de extensión) y [API Overview](http://monodevelop.com/Developers/Articles/API_Overview) (Introducción a la API). Al compilar paquetes de extensión avanzados, vea también los [artículos para desarrolladores](http://monodevelop.com/Developers/Articles). A continuación se muestra una lista parcial de las áreas que se pueden personalizar:
 
-*   Pads
-*   Key Binding Schemes
-*   Policies
-*   Code formatters
-*   Project file formats
-*   Preferences panels
-*   Options Panels
-*   Debugger Protocols
-*   Debugger visualizers
-*   Workspace layouts
-*   Solution pad tree nodes
-*   Source editor margins
-*   Unit test engines
-*   Code generators
-*   Code snippets
-*   Target frameworks
-*   Target runtime
-*   VCS back-ends
-*   Refactoring
-*   Execution handlers
-*   Syntax highlighting
+*   Paneles
+*   Esquemas de enlace del teclado
+*   Directivas
+*   Formateadores de código
+*   Formatos de archivos de proyecto
+*   Paneles de preferencias
+*   Paneles de opciones
+*   Protocolos del depurador
+*   Visualizadores del depurador
+*   Diseños del área de trabajo
+*   Nodos de árbol del panel de soluciones
+*   Márgenes del editor de código fuente
+*   Motores de prueba unitaria
+*   Generadores de código
+*   Fragmentos de código
+*   Versiones de .NET Framework de destino
+*   Tiempo de ejecución de destino
+*   Back-end de VCS
+*   Refactorización
+*   Controladores de ejecución
+*   Resalte de sintaxis
 
-## <a name="additional-information"></a>Additional Information
+## <a name="additional-information"></a>Información adicional
 
 > [!NOTE]
-We are currently working on improving the extensibility scenarios for Visual Studio for Mac. If you are creating extensions and need additional help or information, or would like to provide feedback, please fill in the [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) form.
+Actualmente estamos trabajando para mejorar los escenarios de extensibilidad de Visual Studio para Mac. Si está creando extensiones y necesita más información o ayuda, o si quiere proporcionar comentarios, rellene el formulario [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Creación de extensiones de Visual Studio para Mac).
