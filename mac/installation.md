@@ -1,6 +1,6 @@
 ---
-title: "Instalación de Visual Studio para Mac"
-description: "Instrucciones sobre cómo instalar Visual Studio para Mac y los componentes adicionales necesarios para el desarrollo multiplataforma."
+title: Install Visual Studio for Mac
+description: Instructions on how to install Visual Studio for Mac and additional components required for cross-platform development.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
@@ -8,71 +8,82 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
+ms.sourcegitcommit: d4e4258ae5cd0bb564a9d9b8b731256bb39ada11
+ms.openlocfilehash: 5a89260b405ad655d331425d65a14985f4c46c11
 ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 
-# <a name="setup-and-install-visual-studio-for-mac"></a>Configuración e instalación de Visual Studio para Mac
+# <a name="setup-and-install-visual-studio-for-mac"></a>Setup and Install Visual Studio for Mac
 
-## <a name="setup"></a>Programa de instalación
+## <a name="setup"></a>Setup
 
-Para empezar a desarrollar aplicaciones multiplataforma nativas al descargar Visual Studio para Mac, hay un par de componentes que debe instalar y configurar como preparación.
+To start developing native, cross-platform apps when you download Visual Studio for Mac there are a couple of things that you must install and set up in preparation.
 
-Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
+For working with iOS in Visual Studio you need the following pieces:
 
-* Un equipo Mac con macOS Sierra 10.12 o superior
+* a Mac with macOS Sierra 10.12 or above
 * Xcode 8.3
-* Un ID de Apple. Si aún no tiene un ID de Apple, puede crearlo en https://appleid.apple.com. Es necesario tener un ID de Apple para la instalación y el inicio de sesión en Xcode.
+* An Apple ID. If you don't have an Apple ID already you can create a new one at https://appleid.apple.com. It's necessary to have an Apple ID for installing and signing into Xcode.
 
-## <a name="install"></a>Instalar
+## <a name="install"></a>Install
 
-1. Descargue Visual Studio para Mac desde [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Download Visual Studio for Mac from [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
-2. Una vez descargado el paquete del instalador, haga clic en el archivo **VisualStudioInstaller.dmg** para montar el instalador y luego ejecútelo al hacer doble clic en el logotipo, como se muestra en la siguiente imagen:
+2. Once the installer package is downloaded, click the **VisualStudioInstaller.dmg** file to mount the installer and then run it by double-clicking the logo, as illustrated by the following image:
 
-  ![Cuadro de diálogo del instalador](media/installer-image1.png)
+  ![Installer dialog](media/installer-image1.png)
 
-3. Es posible que aparezca un cuadro de diálogo de alerta similar a la siguiente imagen. En este caso, haga clic en **Abrir**:
+3. You might be prompted with an alert dialog similar to the following image. In this case, click **Open**:
 
-  ![cuadro de diálogo de alerta](media/installer-image2.png)
+  ![alert dialog](media/installer-image2.png)
 
-4. El instalador inspecciona el sistema para comprobar qué componentes hay que instalar o actualizar:
+4. The installer inspects your system to verify which components need to be installed or updated:
 
-  ![Evaluación del sistema](media/installer-image3.png)
+  ![Assessing your system](media/installer-image3.png)
 
-5. Luego aparece un cuadro de diálogo de alerta que le pide que confirme los términos de licencia y privacidad. Haga clic en el botón **Continuar** para confirmar los términos:
+5. You'll then be presented with an alert dialog asking you to acknowledge the Privacy and License terms. Press the **Continue** button to acknowledge the terms:
 
-  ![Cuadro de diálogo de licencia](media/installer-image4.png)
+  ![License dialog](media/installer-image4.png)
 
-6. El instalador muestra una lista de componentes necesarios que faltan y que deben descargarse e instalarse. Seleccione qué productos quiere descargar aquí:
+6. The installer presents a list of required components that are missing and that need to be downloaded and installed. Select the products you wish to download here:
 
-  ![Selección de elementos](media/installer-image5.png)
+  ![Select Items](media/installer-image5.png)
 
-  Esta pantalla de instalación muestra la versión y el tamaño de cada componente individual. Puede hacer clic en cada componente para mostrar una lista de dependencias de ese componente (para Android), ver paquetes adicionales que descarga (para .NET Core) o ver las aplicaciones adicionales necesarias (para iOS y macOS):
+  This installation screen displays the version and size of each individual component. You can click each component to display a list of dependencies for that component (for Android), see additional packages that it downloads (for .NET Core), or view any additional applications required (for iOS and macOS):
 
-  ![Dependencias adicionales de Android](media/installer-image6.png)
+  ![Android additional dependencies](media/installer-image6.png)
 
-7. Una vez que esté satisfecho con la selección, seleccione el botón **Instalar y actualizar** para iniciar el proceso de instalación.
+7. Once you are happy with your selection, select the **Install and Update** button to start the installation process.
 
-8. El instalador inicia el proceso de descarga e instalación de los elementos seleccionados:
+8. The installer starts the download and install process of the selected items:
 
-  ![Inicio de la instalación](media/installer-image7.png)
+  ![Starting Installation](media/installer-image7.png)
 
-  ![Descarga de Xamarin.Mac](media/installer-image8.png)
+  ![Downloading Xamarin.Mac](media/installer-image8.png)
 
-  ![Finalización de la instalación](media/installer-image9.png)
+  ![Finishing Installation](media/installer-image9.png)
 
-9. Se le puede pedir que eleve los permisos necesarios de componentes individuales necesarios para completar la instalación. Escriba aquí las credenciales de administrador para continuar el proceso de instalación:
+9. You might be prompted to elevate the permissions necessary for individual components that are needed to complete installation. Enter your administrator credentials here to continue the installation process:
 
-  ![Especifique los permisos para continuar con el instalador](media/installer-image10.png)
+  ![Enter permissions to continue with installer](media/installer-image10.png)
 
-10. Una vez que la instalación sea correcta, puede empezar a desarrollar aplicaciones en Visual Studio si presiona **Iniciar**:
+10. Once the installation is successful, you can start developing apps in Visual Studio by pressing **Start**:
 
-  ![Apertura de Visual Studio](media/installer-image11.png)
+  ![Open Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Si decide no instalar una plataforma o herramienta durante la instalación original (al anular la selección en el paso 6), debe volver a ejecutar el [instalador](https://www.visualstudio.com/vs/) si quiere agregar los componentes más adelante.
+If you chose not install a platform or tool during the original installation (by unselecting it in step #6), you must run the [installer](https://www.visualstudio.com/vs/) again if you wish to add the components later.
 
+## <a name="manual-installation"></a>Manual Installation
+
+If your installation fails or any single component of your installation fails, you may be able to resolve the issue through manual installation. To view the required components and download each one, take the following steps:
+
+1. On the second screen on the Visual Studio Installer, go to the menu bar and select **View Manual Installation Instructions**:
+
+    ![Option showing manual install menu item](media/installer-image12.png)
+
+2. Follow the instructions to download and install the components manually:
+
+  ![Manual installation dialog](media/installer-image13.png)
