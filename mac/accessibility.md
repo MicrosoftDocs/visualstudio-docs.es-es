@@ -1,5 +1,5 @@
 ---
-title: Accessibility
+title: Accesibilidad
 description: 
 author: asb3993
 ms.author: amburns
@@ -10,72 +10,72 @@ ms.translationtype: HT
 ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
 ms.openlocfilehash: e0d893f155982ecd95f25ebdab768e810005b167
 ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 
-# <a name="accessibility"></a>Accessibility
+# <a name="accessibility"></a>Accesibilidad
 
-In addition to features and utilities in macOS, Visual Studio for Mac has the following features, making it more accessible for people with disabilities:
+Además de las características y utilidades de macOS, Visual Studio para Mac tiene las características siguientes, por lo que es más accesible para personas con discapacidades:
 
-- Text Enlargement in the Solution and Editor Pads
-- Text size options in the editors
-- Color customization in the editors
-- Keyboard shortcut customization
-- Code-completion for methods and parameters 
+- Ampliación de texto de los paneles de soluciones y de editores
+- Opciones de tamaño de texto en los editores
+- Personalización de colores en los editores
+- Personalización de métodos abreviados de teclado
+- Completado de código para métodos y parámetros 
 
-For more information on accessibility features in macOS, see [Apple's website](https://www.apple.com/accessibility/mac/).
+Para más información acerca de las características de accesibilidad de macOS, consulte el [sitio web de Apple](https://www.apple.com/accessibility/mac/).
 
-## <a name="using-accessibility-features-in-visual-studio-for-mac"></a>Using Accessibility features in Visual Studio for Mac
+## <a name="using-accessibility-features-in-visual-studio-for-mac"></a>Uso de las características de accesibilidad de Visual Studio para Mac
 
-The Accessibility features in Visual Studio for Mac are turned off by default. To enable them, do the following steps:
+De forma predeterminada, las características de accesibilidad de Visual Studio para Mac están desactivadas. Para habilitarlas, siga estos pasos:
 
-1. Go to **Visual Studio > Preferences > Other > Accessibility**.
+1. Vaya a **Visual Studio > Preferencias > Otros > Accesibilidad**.
 
-2. Select the **Enable Accessibility** checkbox, as illustrated in the following diagram:
+2. Active la casilla **Enable Accessibility** (Habilitar accesibilidad), como se muestra en el diagrama siguiente:
 
-    ![Enable accessibility checkbox](media/accessibility-image1.png)
+    ![Casilla para habilitar la accesibilidad](media/accessibility-image1.png)
 
-3. Press the **Restart Visual Studio** button to allow the accessibility features to take effect.
+3. Presione el botón **Reinicie Visual Studio** para que las características de accesibilidad surtan efecto.
 
 
-Alternatively, you can use the command line to enable accessibility features. To do this, enter the following command in terminal: 
+Como alternativa, puede usar la línea de comandos para habilitar las características de accesibilidad. Para ello, especifique el comando siguiente en el terminal: 
 
 ```bash
 defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1 
 ```
 
-After turning on accessibility, you need to restart Visual Studio.
+Después de activar la accesibilidad, debe reiniciar Visual Studio.
 
-## <a name="how-to-use-keyboard-navigation"></a>How to: Use Keyboard Navigation
+## <a name="how-to-use-keyboard-navigation"></a>Uso de la navegación mediante el teclado
 
-Keyboard navigation can be enabled by setting the Full Keyboard Access option in **System Preferences > Keyboard > Shortcuts** to **All Controls**:
+Se puede habilitar la navegación mediante el teclado mediante el establecimiento de la opción de acceso de teclado completo en **Preferencias del sistema > Teclado > Accesos directos** en **Todos los controles**:
 
-  ![Systems preferences panel in macos](media/accessibility-image2.png)
+  ![Panel de preferencias del sistema en macOS](media/accessibility-image2.png)
 
-Setting full keyboard access turns on the focus rectangle. You can then select controls using:
-- Tab to go forward through controls
-- Shift-Tab to go backwards through controls
-- Arrow keys to move between controls in the direction of the arrows. 
+Si se establece el acceso de teclado completo, se activa en el rectángulo de foco. Después, se pueden seleccionar los controles mediante:
+- Presione la tecla tabulador para avanzar por los controles
+- Presione Mayús-Tab para retroceder por los controles
+- Teclas de dirección para desplazarse entre los controles en la dirección de las flechas. 
 
-Pressing the Space bar activates the focused control.
+Al presionar la barra espaciadora, se activa el control con el foco.
 
-## <a name="how-to-enable-and-use-voice-over"></a>How to: Enable and use Voice Over
+## <a name="how-to-enable-and-use-voice-over"></a>Habilitación y utilización de VoiceOver
 
-Turn VoiceOver on or off press **Cmd + F5**
+Para activar o desactivar VoiceOver, presione **Cmd + F5**
 
-To navigate through the UI VoiceOver commands, use the following commands:
+Para navegar por los comandos de VoiceOver de la interfaz de usuario, use los comandos siguientes:
 
-- Move VoiceOver cursor between Controls: **Ctrl + Alt + Left arrow key / Right arrow key**
+- Nueva el cursor de VoiceOver entre los controles: **Ctrl + Alt + tecla de dirección izquierda/tecla de dirección derecha**
 
-VoiceOver reads out the name of the controls, some details about it, and what you can do with it. 
+VoiceOver lee el nombre de los controles, algunos detalles sobre ellos y lo que se puede hacer con ellos. 
 
-- Enter Groups and controls (such as the Solution Pad, Toolbox, and other Pads): **Ctrl + Alt + Shift + Down Arrow**
+- Especifique los grupos y controles (por ejemplo, Panel de solución, el cuadro de herramientas y otros paneles): **Ctrl + Alt + Mayús + flecha abajo**
 
-Once inside a control, you can use **Ctrl + Alt + Arrows** to move around inside it. 
+Cuando esté dentro de un control, puede usar **Ctrl + Alt + Teclas de dirección** para desplazarse por él. 
  
-For general information on using VoiceOver in macOS, refer to the following guides:
+Para más información sobre el uso de VoiceOver en macOS, consulte las guías siguientes:
 
-- [Getting Started with VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
-- [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/)
+- [Getting Started with VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/) (Introducción a VoiceOver)
+- [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (Comandos de VoiceOver en macOS)
 
