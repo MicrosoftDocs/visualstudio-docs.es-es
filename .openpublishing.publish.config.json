@@ -54,9 +54,7 @@
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.es-es",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
-  "contribution_branch_mappings":{
-    "master-sxs": "master"
-  },
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -80,7 +78,7 @@
       "branch_mapping": {
         "live": "live",
         "master": "master"
-      }
+       }
     }
   ],
   "branch_target_mapping": {},

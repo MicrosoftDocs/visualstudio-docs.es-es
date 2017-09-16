@@ -1,5 +1,5 @@
 ---
-title: "Edición de código de Python en Visual Studio | Microsoft Docs"
+title: Editing Python Code in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/10/2017
 ms.prod: visual-studio-dev15
@@ -16,148 +16,147 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: f4d594297359c0b79d1ad64bbc5682de916899b8
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="editing-python-code"></a>Edición de código de Python
+# <a name="editing-python-code"></a>Editing Python code
 
-Los desarrolladores invierten mucho tiempo en el editor de código, por lo que la [compatibilidad de Python en Visual Studio](installation.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación. 
+Developers spend much of their time in the code editor, so [Python support in Visual Studio](installation.md) provides functionality to help you be more productive. Features include IntelliSense syntax highlighting, auto-completion, signature help, method overrides, search, and navigation. 
 
-En este tema:
+In this topic:
 
-- [IntelliSense](#intellisense) incluidas las finalizaciones, la ayuda para la firma, la información rápida y la coloración de código.
-- [Fragmentos de código](#code-snippets)
-- [Navegación por el código](#navigating-your-code)
+- [IntelliSense](#intellisense) including completions, signature help, quick info, and code coloring.
+- [Code snippets](#code-snippets)
+- [Navigating your code](#navigating-your-code)
 
-Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código. La compatibilidad con Python incluye el uso del Examinador de objetos de Visual Studio (**Ver > Otras ventanas > Examinador de objetos** o Ctrl+W,J) para inspeccionar las clases definidas en cada módulo y las funciones definidas en esas clases. 
+For general documentation on editing code in Visual Studio, see [Writing Code in the Code and Text Editor](../ide/writing-code-in-the-code-and-text-editor.md). Also see [Outlining in Visual Studio](../ide/outlining.md), which helps you stay focused on particular sections of your code. Python support includes using the Visual Studio Object Browser (**View > Other Windows > Object Browser** or Ctrl+W,J) for inspecting classes defined in each module and the functions defined in those classes. 
 
-El editor también está integrado en la ventana interactiva de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Introducción: Uso de la ventana interactiva de REPL])(getting-started.md#using-the-interactive-repl-window) y [Uso de la ventana interactiva: Comando Enviar código a Interactive](interactive-repl.md#send-code-to-interactive-command) para obtener información.
+The editor is also integrated with the interactive window in Visual Studio, making it easy to exchange code between the two. See [Getting Started - Using the interactive REPL window](getting-started.md#using-the-interactive-repl-window) and [Using the interactive window - Send code to interactive command](interactive-repl.md#send-code-to-interactive-command) for details.
 
-Para obtener una introducción a la edición de código de Python, vea el vídeo de youtube.com (3 minutos y 48 segundos) [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a Python en Visual Studio, parte 3: edición):
+For an introduction to editing Python code, see [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3m48s):
 
 > [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Para mejorar el rendimiento, IntelliSense depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (vea [Python Environments](python-environments.md) [Entornos de Python]). 
+IntelliSense provides [completions](#completions), [signature help](#signature-help), [quick info](#quick-info), and [code coloring](#code-coloring). To improve performance, IntelliSense depends on the completion database that's generated for each Python environment in your project. Databases may need refreshing if you add, remove, or update packages. Database status is shown in the **Python Environments** window (a sibling of Solution Explorer) on the **IntelliSense** tab (see [Python Environments](python-environments.md)). 
 
-### <a name="completions"></a>Finalizaciones
+### <a name="completions"></a>Completions
 
-Las finalizaciones aparecen como instrucciones, identificadores y otras palabras que pueden especificarse adecuadamente en la ubicación actual en el editor. Lo que se muestra en la lista se basa en contexto y se filtra para omitir las opciones incorrectas o molestas. Las finalizaciones a menudo se desencadenan escribiendo instrucciones diferentes (como `import`) y operadores (incluido el punto), pero puede hacer que aparezcan en cualquier momento escribiendo Ctrl-J, Espacio.
+Completions appear as statements, identifiers, and other words that may be appropriately entered at the current location in the editor. What's shown in the list is based on context and is filtered to omit incorrect or distracting options. Completions are often triggered by typing different statements (such as `import`) and operators (including a period), but you can have them appear at anytime by typing Ctrl-J, Space.
 
-![Finalizaciones de miembros](media/code-editing-completions-simple.png)
+![Member completion](media/code-editing-completions-simple.png)
 
-Cuando se abre una lista de finalizaciones, puede buscar la finalización que desee con las teclas de dirección, el mouse o bien escribiendo algo más. A medida que escriba más letras, la lista se seguirá filtrando para mostrar las finalizaciones probables. También puede usar accesos directos como:
+When a completion list is open, you can search for the completion you want using the arrow keys, the mouse, or by continuing to type. As you type more letters, the list is further filtered to show likely completions. You can also use shortcuts such as:
 
-- Escribir letras que no están al principio del nombre, como "parse" para buscar "argparse"
-- Escribir solo las letras que se encuentran al principio de palabras, como "abc" para buscar 'AbstractBaseClass' o "air" para buscar "as_integer_ratio"
-- Omitir letras, como "b64" para buscar "base64"
+- Typing letters that are not at the start of the name, such as 'parse' to find 'argparse'
+- Typing only letters that are at the start of words, such as 'abc' to find 'AbstractBaseClass' or 'air' to find 'as_integer_ratio'
+- Skipping letters, such as 'b64' to find 'base64'
 
-Algunos ejemplos:
+Some examples:
 
-![Finalizaciones de miembros con filtrado](media/code-editing-completion-filtering.png)
+![Member completion with filtering](media/code-editing-completion-filtering.png)
 
-Las finalizaciones de miembros aparecen automáticamente al escribir un punto después de una variable o un valor, junto con los métodos y atributos de los tipos posibles. Si una variable puede ser de más de un tipo, la lista incluye todas las posibilidades de todos los tipos, con información adicional para indicar qué tipos admite cada finalización. Cuando una finalización es compatible con todos los tipos posibles, se muestra sin la anotación.
+Member completions appear automatically when you type a period after a variable or value, along with the methods and attributes of the potential types. If a variable could be more than one type, the list includes all possibilities from all types, with extra information to indicate which types support each completion. Where a completion is supported by all possible types, it is shown without annotation.
 
-![Finalización de miembros en varios tipos](media/code-editing-completion-types.png)
+![Member completion on multiple types](media/code-editing-completion-types.png)
 
-De manera predeterminada, no se muestran los miembros "dunder" (miembros que comienzan y terminan con un doble carácter de subrayado). En general, no se debe acceder a dichos miembros directamente. En cambio, si necesita uno, al escribir el doble carácter de subrayado inicial se agregan estas finalizaciones a la lista:
+By default, "dunder" members (members beginning and ending with a double underscore) are not shown. In general, such members should not be accessed directly. If you need one, however, typing the leading double underscore adds these completions to the list:
 
-![Finalización de miembros privados](media/code-editing-completion-dunder.png)
+![Private member completion](media/code-editing-completion-dunder.png)
 
-Las instrucciones `import` y `from ... import` muestran una lista de módulos que pueden importarse. Con `from ... import`, la lista incluye miembros que pueden importarse desde el módulo especificado.
+The `import` and `from ... import` statements display a list of modules that can be imported. With `from ... import`, the list includes members that can be imported from the specified module.
 
-![Finalización de importaciones](media/code-editing-completion-import.png)
+![Import completion](media/code-editing-completion-import.png)
 
-Las instrucciones `raise` y `except` muestran listas de clases que probablemente sean tipos de error. La lista puede no incluir todas las excepciones definidas por el usuario, pero le ayudan a encontrar rápidamente las excepciones integradas adecuadas:
+The `raise` and `except` statements display lists of classes likely to be error types. The list may not include all user-defined exceptions, but helps you find suitable built-in exceptions quickly:
 
-![Finalización de excepciones](media/code-editing-completion-exception.png)
+![Exception completion](media/code-editing-completion-exception.png)
 
-Al escribir @ se inicia un decorador y se muestran todos los posibles decoradores. Muchos de estos elementos no se pueden usar como decoradores; consulte la documentación de la biblioteca para determinar cuál se va a usar.
+Typing @ starts a decorator and shows potential decorators. Many of these items aren't usable as decorators; check the library documentation to determine which to use.
 
-![Finalización de decoradores](media/code-editing-completion-decorator.png)
-
-> [!Tip]
-> Puede configurar el comportamiento de estas finalizaciones en **Herramientas > Opciones > Editor de texto > Python > Opciones avanzadas**. De estas opciones, **Filter list based on search string** (Filtrar lista en función de la cadena de búsqueda) aplica el filtrado de sugerencias de finalización mientras se escribe (activo de manera predeterminada) y **Member completion displays intersection of members** (La finalización de miembros muestra la intersección de miembros) muestra solo las finalizaciones que son compatibles con todos los posibles tipos (desactivado de manera predeterminada). Vea [Opciones: resultados de finalización](options.md#completion-results).
-
-### <a name="signature-help"></a>Ayuda para la firma
-
-Al escribir código que llama a una función, la ayuda para la firma aparece cuando se escribe el `(` de apertura y muestra la información de documentación y parámetros disponible. También puede hacer que aparezca con Ctrl+Mayús+Espacio dentro de una llamada de función. La información que se muestra depende de las cadenas de documentación del código fuente de la función, pero incluye los valores predeterminados.
-
-![Ayuda para la firma](media/code-editing-signature-help.png)
+![Decorator completion](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Para deshabilitar la ayuda para la firma, vaya a **Herramientas > Opciones > Editor de texto> General** y desactive **Finalización de instrucciones > Información de parámetros**.
+> You can configure the behavior of completions through **Tools > Options > Text Editor > Python > Advanced"**. Among these, **Filter list based on search string**: applies filtering of completion suggestions as you type (default is checked), and **Member completion displays intersection of members** shows only completions that are supported by all possible types (default is unchecked). See [Options - completion results](options.md#completion-results).
 
-### <a name="quick-info"></a>Información rápida
+### <a name="signature-help"></a>Signature help
 
-Al pasar el puntero del mouse sobre un identificador aparece una sugerencia de información rápida. Según el identificador, la información rápida puede mostrar los valores o tipos posibles, cualquier documentación disponible, los tipos de devolución y las ubicaciones de definición:
+When writing code that calls a function, signature help appears when you type the opening `(` and displays available documentation and parameter information. You can also make it appear with Ctrl+Shift+Space inside a function call. The information displayed depends on the documentation strings in the function's source code, but includes any default values.
 
-![Información rápida](media/code-editing-quick-info.png)
-
-### <a name="code-coloring"></a>Coloración de código
-
-La coloración de código utiliza información desde análisis de código a variables de colores, instrucciones y otras partes del código. Por ejemplo, las variables que hacen referencia a clases o módulos pueden mostrarse en un color diferente que las funciones u otros valores, y los nombres de los parámetros aparecen en un color diferente que las variables locales o globales. (De manera predeterminada, las funciones no se muestran en negrita):
-
-![Coloración de código](media/code-editing-code-coloring.png)
-
-Para personalizar los colores, vaya a **Herramientas > Opciones > Entorno > Fuentes y colores** y modifique las entradas de Python en la lista **Mostrar elementos**:
-
-![Opciones de fuentes y colores](media/code-editing-customize-colors.png)
+![Signature help](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Para deshabilitar la coloración de código, vaya a **Herramientas > Opciones > Editor de texto > Python > Opciones avanzadas** y desactive **Otras opciones > Color names based on type** (Nombres de colores basados en tipo). Vea [Opciones: otras opciones](options.md#miscellaneous-options).
+> To disable signature help, go to **Tools > Options > Text Editor > Python > General** and clear **Statement completion > Parameter information**.
 
+### <a name="quick-info"></a>Quick info
 
-## <a name="code-snippets"></a>Fragmentos de código
+Hovering the mouse pointer over an identifier displays a Quick Info tooltip. Depending on the identifier, Quick Info may display the potential values or types, any available documentation, return types and, definition locations:
 
-Los fragmentos de código son pedazos de código que se pueden insertar en los archivos mediante un acceso directo y la tecla Tab o bien con los comandos **Editar > IntelliSense > Insertar fragmento de código** **Rodear con**. Por ejemplo, si escribe `class` seguido por la tecla Tab se genera el resto de la clase. Puede escribir sobre el nombre y la lista de bases, moviéndose entre los campos resaltados con Tab, y luego presionar Entrar para empezar a escribir el cuerpo.
+![Quick Info](media/code-editing-quick-info.png)
 
-![Fragmentos de código](media/code-editing-code-snippets.png)
+### <a name="code-coloring"></a>Code coloring
 
-Puede ver los fragmentos de código disponibles en el Administrador de fragmentos de código (**Herramientas > Administrador de fragmentos de código**), seleccionando **Python** como lenguaje:
+Code coloring uses information from code analysis to colors variables, statements, and other parts of your code. For example, variables that refer to modules or classes may be shown in a different color than functions or other values, and parameter names appear in a different color than local or global variables. (By default, functions are not shown in bold):
 
-![Administrador de fragmentos de código](media/code-editing-code-snippets-manager.png)
+![Code coloring](media/code-editing-code-coloring.png)
 
-Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
-Los fragmentos de código se pueden personalizar al [crear un fragmento de código](https://msdn.microsoft.com/library/ms165394.aspx) e importándolos a través de 
+To customize the colors, go to **Tools > Options > Environment > Fonts and Colors** and modify the Python entries in the **Display items** list:
 
-Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
-
-
-## <a name="navigating-your-code"></a>Navegación por el código
-
-La compatibilidad con Python en Visual Studio proporciona varios medios para desplazarse rápidamente dentro del código, incluidas las bibliotecas para las que hay código fuente disponible: la [barra de navegación](#navigation-bar), [Ir a definición](#go-to-definition), [Navegar a](#navigate-to) y [Buscar todas las referencias](#find-all-references). También se puede usar el [Examinador de objetos](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
-
-### <a name="navigation-bar"></a>Barra de navegación
-
-La barra de navegación se muestra en la parte superior de cada ventana del editor e incluye una lista de dos niveles de definiciones. La lista desplegable de la izquierda contiene la clase de nivel superior y las definiciones de funciones en el archivo actual; la lista desplegable de la derecha muestra una lista de definiciones dentro del ámbito que se muestra en la izquierda. A medida que recorra el editor, las listas se actualizan para mostrar el contexto actual y, además, puede seleccionar una entrada de estas listas para ir directamente a ella.
-
-![Barra de navegación](media/code-editing-navigation-bar.png)
+![Fonts and Colors options](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Para ocultar la barra de navegación, vaya a **Herramientas > Opciones > Editor de texto > Python > General** y desactive **Configuración > Barra de navegación**.
+> To disable code coloring, go to **Tools > Options > Text Editor > Python > Advanced** and clear **Miscellaneous Options > Color names based on type**. See [Options - Miscellaneous Options](options.md#miscellaneous-options).
 
-### <a name="go-to-definition"></a>Ir a definición
 
-**Ir a definición** rápidamente salta del uso de un identificador (por ejemplo, un nombre de función, clase o variable) al código fuente donde se define. Se invoca haciendo clic derecho en un identificador y seleccionando **Ir a definición**, o colocando el símbolo de intercalación en el identificador y presionando F12. Funciona en todo su código y las bibliotecas externas siempre que el código fuente esté disponible. Si el código fuente de la biblioteca no está disponible, **Ir a definición** salta a la correspondiente instrucción `import` para una referencia de módulo, o mostrará un error.
+## <a name="code-snippets"></a>Code snippets
 
-![Ir a definición](media/code-editing-go-to-definition.png)
+Code snippets are fragments of code that can be inserted into your files by typing a shortcut and pressing Tab, or using the **Edit > IntelliSense > Insert Code Snippet** **Surround With** commands. For example, typing `class` followed by the Tab key generates the rest of the class. You can type over the name and bases list, moving between the highlighted fields with Tab, then press Enter to begin typing the body.
 
-### <a name="navigate-to"></a>Navegar a
+![Code Snippets](media/code-editing-code-snippets.png)
 
-El comando **Editar > Navegar a...**  (Ctrl-coma) muestra un cuadro de búsqueda en el editor donde puede escribir cualquier cadena y consultar las posibles coincidencias en el código que define una función, una clase o una variable que contiene la cadena. Esta característica proporciona una función similar a **Ir a definición**, pero sin tener que buscar un uso de un identificador.
+You can see the available code snippets in the Code Snippets Manager (**Tools > Code Snippets Manager**), selecting **Python** as the language:
 
-Haga doble clic en cualquier nombre, o seleccione con teclas de dirección y Entrar, para navegar a la definición de ese identificador.
+![Code Snippets Manager](media/code-editing-code-snippets-manager.png)
 
-![Navegar a](media/code-editing-navigate-to.png)
+To create your own snippets, see [Walkthrough: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md). 
 
-### <a name="find-all-references"></a>Buscar todas las referencias
+If you write a great code snippet that you'd like to share, feel free to post it in a gist and [let us know](https://github.com/Microsoft/PTVS/issues). We may be able to include it in a future release of Visual Studio.
 
-**Buscar todas las referencias** es una forma útil de detectar aquellas instancias en las que un identificador determinado se define y utiliza, incluidas las importaciones y las asignaciones. Se invoca haciendo clic derecho en un identificador y seleccionando **Buscar todas las referencias**, o colocando el símbolo de intercalación en el identificador y presionando Mayús+F12. Al hacer doble clic en un elemento de la lista se navega hasta su ubicación.
 
-![Resultados de Buscar todas las referencias](media/code-editing-find-all-references.png)
+## <a name="navigating-your-code"></a>Navigating your code
+
+Python support in Visual Studio provides several means to quickly navigate within your code, including libraries for which source code is available: the [navigation bar](#navigation-bar), [Go To Definition](#go-to-definition), [Navigate To](#navigate-to), and [Find All References](#find-all-references). You can also use the Visual Studio [Object Browser](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser).
+
+### <a name="navigation-bar"></a>Navigation bar
+
+The navigation bar is displayed at the top of each editor window and includes a two-level list of definitions. The left drop-down contains top-level class and function definitions in the current file; the right drop-down displays a list of definitions within the scope shown in the left. As you move around in the editor, the lists update to show your current context, and you can also select an entry from these lists to jump directly to in.
+
+![Navigation Bar](media/code-editing-navigation-bar.png)
+
+> [!Tip]
+> To hide the navigation bar, go to **Tools > Options > Text Editor > Python > General** and clear **Settings > Navigation bar**.
+
+### <a name="go-to-definition"></a>Go To Definition
+
+**Go To Definition** quickly jumps from the use of an identifier (such as a function name, class, or variable), to the source code where it's defined. You invoke it by right-clicking an identifier and selecting **Go To Definition** or, by placing the caret in the identifier and pressing F12. It works across your code and external libraries provided that source code is available. If library source code is not available, **Go To Definition** jumps to the relevant `import` statement for a module reference, or display an error.
+
+![Go To Definition](media/code-editing-go-to-definition.png)
+
+### <a name="navigate-to"></a>Navigate To
+
+The **Edit > Navigate To...** command (Ctrl-comma) displays a search box in the editor where you can type any string and see possible matches in your code that defines a function, class, or variable containing that string. This feature provides a similar capability as **Go To Definition** but without having to locate a use of an identifier.
+
+Double-clicking any name, or selecting with arrow keys and Enter, navigates to the definition of that identifier.
+
+![Navigate To](media/code-editing-navigate-to.png)
+
+### <a name="find-all-references"></a>Find All References
+
+**Find All References** is a helpful way of discovering where any given identifier is both defined and used, including imports and assignments. You invoke it by right-clicking an identifier and selecting **Find All References**, or by placing the caret in the identifier and pressing Shift+F12. Double-clicking an item in the list navigates to its location.
+
+![Find All References results](media/code-editing-find-all-references.png)

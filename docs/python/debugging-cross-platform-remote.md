@@ -1,5 +1,5 @@
 ---
-title: "Depuración remota multiplataforma de Python en Visual Studio | Microsoft Docs"
+title: Python Cross-Platform Remote Debugging in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
@@ -16,172 +16,174 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: b18efd1fb488c0d07b9a0ffa41f9b4e3613ef17c
+ms.sourcegitcommit: ea08439b7f540e5629dfc17df4748c296e0619fa
+ms.openlocfilehash: 7bd509a9f520434f3a09b3b01a59003094a420aa
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/11/2017
 
 ---
 
-# <a name="remotely-debugging-python-code-on-linux"></a>Depuración remota de código de Python en Linux
+# <a name="remotely-debugging-python-code-on-linux"></a>Remotely Debugging Python Code on Linux
 
-Visual Studio puede iniciar y depurar aplicaciones de Python de manera local y remota en un equipo Windows (vea [Depuración remota](../debugger/remote-debugging.md)). También puede realizar la depuración remota en un sistema operativo, un dispositivo o una implementación de Python diferentes a CPython mediante la [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
+Visual Studio can launch and debug Python applications locally and remotely on a Windows computer (see [Remote Debugging](../debugger/remote-debugging.md)). It can also debug remotely on a different operating system, device, or Python implementation other than CPython using the [ptvsd library](https://pypi.python.org/pypi/ptvsd).
 
-Al usar ptvsd, el código de Python que se depura hospeda el servidor de depuración al que puede asociar Visual Studio. El hospedaje necesita una pequeña modificación en el código para importar y habilitar al servidor. Además, es posible que haya que modificar la configuración de la red o del firewall en el equipo remoto para permitir conexiones TCP.
+When using ptvsd, the Python code being debugged hosts the debug server to which Visual Studio can attach. This hosting requires a small modification to your code to import and enable the server, and may require network or firewall configurations on the remote computer to allow TCP connections.
 
-Para ver una introducción a la depuración remota, consulte el vídeo de youtube.com (6 minutos y 22 segundos)[Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Profundización: depuración remota entre plataformas).
+For an introduction to remote debugging, see [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s).
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
-## <a name="setting-up-a-linux-computer"></a>Configuración de un equipo Linux
+## <a name="setting-up-a-linux-computer"></a>Setting up a Linux computer
 
-Los elementos siguientes son necesarios para seguir este tutorial:
+The following items are needed to follow this walkthrough:
 
-- Un equipo remoto que ejecute Python en un sistema operativo como Mac OSX o Linux.
-- El puerto 5678 (entrada) abierto en el firewall de ese equipo, que es el valor predeterminado para la depuración remota.
+- A remote computer running Python on an operating system like Mac OSX or Linux.
+- Port 5678 (inbound) opened on that computer's firewall, which is the default for remote debugging.
 
-Puede crear fácilmente [máquinas virtuales de Linux en Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](python-environments.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
+You can easily create [Linux virtual machines on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) and [access it using Remote Desktop](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) from Windows. An Ubuntu for the VM is convenient because Python is installed by default; otherwise, see the list on [Install a Python interpreter of your choice](python-environments.md#selecting-and-installing-python-interpreters) for additional Python download locations.
 
-Para obtener detalles sobre cómo crear una regla de firewall para una máquina virtual de Azure, vea [Apertura de puertos para una máquina virtual en Azure mediante Azure Portal](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+For details on creating a firewall rule for an Azure VM, see [Opening ports to a VM in Azure using the Azure portal](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
 
-## <a name="preparing-the-script-for-debugging"></a>Preparación del script para la depuración
+## <a name="preparing-the-script-for-debugging"></a>Preparing the script for debugging
 
-1. En el equipo remoto, cree un archivo de Python denominado `guessing-game.py` con el código siguiente:
+1. On the remote computer, create a Python file called `guessing-game.py` with the following code:
 
   ```python
-    import random
+  import random
 
-    guesses_made = 0
-    name = input('Hello! What is your name?\n')
-    number = random.randint(1, 20)
-    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+  guesses_made = 0
+  name = input('Hello! What is your name?\n')
+  number = random.randint(1, 20)
+  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-    while guesses_made < 6:
-    guess = int(input('Take a guess: '))
-    guesses_made += 1
-    if guess < number:
-        print('Your guess is too low.')
-    if guess > number:
-        print('Your guess is too high.')
-    if guess == number:
-        break
-    if guess == number:
-    print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-    else:
-    print('Nope. The number I was thinking of was {0}'.format(number))
+  while guesses_made < 6:
+      guess = int(input('Take a guess: '))
+      guesses_made += 1
+      if guess < number:
+          print('Your guess is too low.')
+      if guess > number:
+          print('Your guess is too high.')
+      if guess == number:
+          break
+  if guess == number:
+      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+  else:
+      print('Nope. The number I was thinking of was {0}'.format(number))
   ```
  
-1. Instale el paquete `ptvsd` en su entorno mediante `pip3 install ptvsd`. (Nota: Es una buena idea registrar la versión de ptvsd que se instala en caso de necesitarla para solucionar problemas; la [lista de ptvsd](https://pypi.python.org/pypi/ptvsd) también muestra las versiones disponibles).
+1. Install the `ptvsd` package into your environment using `pip3 install ptvsd`. (Note: it's a good idea to record the version of ptvsd that's installed in case you need it for troubleshooting; the [ptvsd listing](https://pypi.python.org/pypi/ptvsd) also shows available versions.)
 
-1. Habilite la depuración remota agregando el código siguiente al punto más anterior posible de `guessing-game.py`, delante de otro código. (Aunque no es un requisito estricto, es imposible depurar subprocesos en segundo plano generados antes de la llamada a la función `enable_attach`).
+1. Enable remote debugging by adding the code below at the earliest possible point in `guessing-game.py`, before other code. (Though not a strict requirement, it's impossible to debug any background threads spawned before the `enable_attach` function is called.)
 
    ```python
    import ptvsd
    ptvsd.enable_attach('my_secret')
    ```
 
-   El primer argumento pasado a `enable_attach` (denominado "secreto") restringe el acceso al script en ejecución. Este secreto deberá escribirse al conectar con el depurador remoto. (Aunque no se recomienda, puede permitir que cualquiera se conecte, mediante `enable_attach(secret=None)`).
+   The first argument passed to `enable_attach` (called "secret") restricts access to the running script, and you enter this secret when attaching the remote debugger. (Though not recommended, you can allow anyone to connect, use `enable_attach(secret=None)`.)
 
-1. Guarde el archivo y ejecute `python3 guessing-game.py`. La llamada a `enable_attach` se ejecuta en segundo plano y espera las conexiones entrantes mientras se interactúa con el programa. Si lo desea, se puede llamar a la función `wait_for_attach` después de `enable_attach` para bloquear el programa hasta que se asocie el depurador.
+1. Save the file and run `python3 guessing-game.py`. The call to `enable_attach` runs in the background and waits for incoming connections as you otherwise interact with the program. If desired, the `wait_for_attach` function can be called after `enable_attach` to block the program until the debugger attaches.
 
 > [!Tip]
-> Además de `enable_attach` y `wait_for_attach`, ptvsd también proporciona una función auxiliar `break_into_debugger`, que actúa como un punto de interrupción de programación si el depurador está asociado. También hay una función `is_attached` que devuelve `True` si el depurador está asociado (tenga en cuenta que no es necesario comprobar este resultado antes de llamar a cualquier otra función `ptvsd`).
+> In addition to `enable_attach` and `wait_for_attach`, ptvsd also provides a helper function `break_into_debugger`, which serves as a programmatic breakpoint if the debugger is attached. There is also an `is_attached` function that returns `True` if the debugger is attached (note that there is no need to check this result before calling any other `ptvsd` functions).
 
-## <a name="attaching-remotely-from-python-tools"></a>Asociación remota desde Herramientas de Python
+## <a name="attaching-remotely-from-python-tools"></a>Attaching remotely from Python Tools
 
-En estos pasos, estableceremos un punto de interrupción simple para detener el proceso remoto.
+In these steps, we set a simple breakpoint to stop the remote process.
 
-1. Cree una copia del archivo remoto en el equipo local y ábralo en Visual Studio. No importa dónde se encuentre el archivo, pero su nombre debe coincidir con el nombre del script en el equipo remoto.
+1. Create a copy of the remote file on the local computer and open it in Visual Studio. It doesn't matter where the file is located, but its name should match the name of the script on the remote computer.
 
-1. (Opcional) Para tener IntelliSense para ptvsd en el equipo local, instale el paquete de ptvsd en su entorno de Python.
+1. (Optional) To have IntelliSense for ptvsd on your local computer, install the ptvsd package into your Python environment.
 
-1. Seleccione **Depurar > Asociar al proceso**.
+1. Select **Debug > Attach to Process**.
 
-1. En el cuadro de diálogo **Asociar al proceso** que aparece, establezca **Tipo de conexión** en **Depuración remota de Python (ptvsd)**. (En versiones anteriores de Visual Studio estos comandos se denominaban **Transporte** y **Depuración remota de Python**).
+1. In the **Attach to Process** dialog that appears, set **Connection Type** to **Python remote (ptvsd)**. (On older versions of Visual Studio these commands are named **Transport** and **Python remote debugging**.)
 
-1. En el campo **Destino de la conexión** (**Calificador** en versiones anteriores), escriba `tcp://<secret>@<ip_address>:5678`, donde `<secret>` es la cadena pasada `enable_attach` en el código Python, `<ip_address>` es la del equipo remoto (que puede ser una dirección explícita o un nombre como myvm.cloudapp.net), y `:5678` es el número de puerto de depuración remota.
+1. In the **Connection Target** field (**Qualifier** on older versions), enter `tcp://<secret>@<ip_address>:5678` where `<secret>` is the string passed `enable_attach` in the Python code, `<ip_address>` is that of the remote computer (which can be either an explicit address or a name like myvm.cloudapp.net), and `:5678` is the remote debugging port number.
 
     > [!Warning]
-    > Si está realizando una conexión a través de una conexión pública a Internet, debería utilizar `tcps` en su lugar y seguir las instrucciones siguientes para la [Protección de la conexión del depurador con SSL](#securing-the-debugger-connection-with-ssl).
+    > If you're making a connection over the public internet, you should be using `tcps` instead and following the instruction below for [Securing the debugger connection with SSL](#securing-the-debugger-connection-with-ssl).
 
-1. Presione Entrar para rellenar la lista de procesos de ptvsd disponibles en el equipo:
+1. Press Enter to populate the list of available ptvsd processes on that computer:
 
-    ![Escribir el destino de la conexión y enumerar procesos](media/remote-debugging-qualifier.png)
+    ![Entering the connection target and listing processes](media/remote-debugging-qualifier.png)
 
-    Si inicia otro programa en el equipo remoto después de rellenar esta lista, haga clic en el botón **Actualizar**.
+    If you happen to start another program on the remote computer after populating this list, select the **Refresh** button.
 
-1. Seleccione el proceso para depurar y después haga clic en **Adjuntar**, o haga doble clic en el proceso.
+1. Select the process to debug and then **Attach**, or double-click the process.
 
-1. Visual Studio cambia después al modo de depuración mientras el script continúa ejecutándose en el equipo remoto, lo que proporciona todas las capacidades normales de [depuración](debugging.md). Por ejemplo, establezca un punto de interrupción en la línea `if guess < number:`, después cambie al equipo remoto y escriba otro intento. Una vez hecho esto, el programa Visual Studio del equipo local se detiene en ese punto de interrupción, muestra las variables locales, etc.:
+1. Visual Studio then switches into debugging mode while the script continues to run on the remote computer, providing all the usual [debugging](debugging.md) capabilities. For example, set a breakpoint on the `if guess < number:` line, then switch over to the remote computer and enter another guess. After you do so, Visual Studio on your local computer stops at that breakpoint, shows local variables, and so on:
 
-    ![Se ha llegado al punto de interrupción](media/remote-debugging-breakpoint-hit.png)
+    ![Breakpoint is hit](media/remote-debugging-breakpoint-hit.png)
 
-1. Al detener la depuración, Visual Studio se desconecta del programa, que continúa ejecutándose en el equipo remoto. ptvsd también sigue escuchando para conectar depuradores, por lo que se puede volver a conectar al proceso en cualquier momento.
+1. When you stop debugging, Visual Studio detaches from the program, which continues to run on the remote computer. ptvsd also continues listening for attaching debuggers, so you can reattach to the process again at any time.
 
-### <a name="connection-troubleshooting"></a>Solución de problemas de conexión
+### <a name="connection-troubleshooting"></a>Connection troubleshooting
 
-1. Asegúrese de que ha seleccionado **Depuración remota de Python (ptvsd)** para el **Tipo de conexión** (**Depuración remota de Python** para **Transporte** con versiones anteriores).
-1. Compruebe que el secreto en **Destino de la conexión** (o **Calificador**) coincide exactamente con el secreto en el código remoto.
-1. Compruebe que la dirección IP en **Destino de la conexión** (o **Calificador**) coincide exactamente con la del equipo remoto.
-1. Compruebe que esté abierto el puerto de depuración remota en el equipo remoto y que ha incluido el sufijo de puerto en el destino de la conexión, por ejemplo `:5678`.
-    - Si necesita usar un puerto diferente, puede especificarlo en la llamada a `enable_attach` mediante el argumento `address`, como en `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. En este caso, abra ese puerto concreto en el firewall.
-1. Compruebe que la versión de ptvsd instalada en el equipo remoto, tal como la devuelve `pip3 list`, coincide con la que usa la versión de las herramientas de Python que se usa en Visual Studio en la tabla siguiente. Si es necesario, actualice ptvsd en el equipo remoto.
+1. Make sure that you've selected **Python remote (ptvsd)** for the **Connection Type** (**Python remote debugging** for **Transport** with older versions.)
+1. Check that the secret in the **Connection Target** (or **Qualifier**) exactly matches the secret in the remote code.
+1. Check that the IP address in the **Connection Target** (or **Qualifier**) matches that of the remote computer.
+1. Check that you're opened the remote debugging port on the remote computer, and that you've included the port suffix in the connection target, such as `:5678`.
+    - If you need to use a different port, you can specify it in the `enable_attach` call using the `address` argument, as in `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. In this case, open that specific port in the firewall.
+1. Check that the version of ptvsd installed on the remote computer as returned by `pip3 list` matches that used by the version of the Python tools you're using in Visual Studio in the table below. If necessary, update ptvsd on the remote computer.
 
-    | Versión de Visual Studio | Versión de las herramientas de Python/ptvsd |
+    | Visual Studio Version | Python tools/ptvsd version |
     | --- | --- |
-    | 2017 | 3.0.0 |
+    | 2017 15.3 | 3.2.0 |
+    | 2017 15.2 | 3.1.0 |
+    | 2017 15.0, 15.1 | 3.0.0 |
     | 2015 | 2.2.6 |
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>Protección de la conexión del depurador con SSL
+## <a name="securing-the-debugger-connection-with-ssl"></a>Securing the debugger connection with SSL
 
-De forma predeterminada, la conexión al servidor de depuración remota de ptvsd solo está protegida por el secreto y todos los datos se pasan como texto sin formato. Para una conexión más segura, ptvsd es compatible con SSL, que se define como sigue:
+By default, the connection to the ptvsd remote debug server is secured only by the secret and all data is passed in plain text. For a more secure connection, ptvsd supports SSL, which you set up as follows:
 
-1. En el equipo remoto, genere archivos de certificado autofirmado y de clave independientes con openssl:
+1. On the remote computer, generate separate self-signed certificate and key files using openssl:
     
     ```bash
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
-    Cuando se le solicite, use el nombre de host o la dirección IP (lo que use para conectarse) para el **Nombre común** cuando se lo solicite openssl.
+    When prompted, use the hostname or IP address (whichever you use to connect) for the **Common Name** when prompted by openssl.
 
-    (Vea [Certificados autofirmados](http://docs.python.org/3/library/ssl.html#self-signed-certificates) en la documentación del módulo `ssl` de Python para obtener más detalles. Tenga en cuenta que en esa documentación el comando solo genera un único archivo combinado).
+    (See [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates) in the Python `ssl` module docs for additional details. Note that the command in those docs generates only a single combined file.)
 
-1. En el código, modifique la llamada a `enable_attach` para incluir los argumentos `certfile` y `keyfile` usando los nombres de archivo como valores (estos argumentos tienen el mismo significado que para la función estándar `ssl.wrap_socket` de Python):
+1. In the code, modify the call to `enable_attach` to include `certfile` and `keyfile` arguments using the filenames as the values (these arguments have the same meaning as for the standard `ssl.wrap_socket` Python function):
 
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
     
-    También puede realizar el mismo cambio en el archivo de código en el equipo local, pero dado que este código no se ejecuta realmente, no es estrictamente necesario.    
+    You can also make the same change in the code file on the local computer, but because this code isn't actually run, it isn't strictly necessary.    
 
-1. Reinicie el programa de Python en el equipo remoto, para prepararlo para la depuración.
+1. Restart the Python program on the remote computer, making it ready for debugging.
 
-1. Proteja el canal agregando el certificado a la CA raíz de confianza en el equipo Windows con Visual Studio:
+1. Secure the channel by adding the certificate to Trusted Root CA on the Windows computer with Visual Studio:
 
-    1. Copie el archivo de certificado desde el equipo remoto al equipo local.
-    1. Abra el Panel de Control y vaya a **Herramientas administrativas > Administrar certificados de equipo**.
-    1. En la ventana que aparece, expanda **Entidades de certificación raíz de confianza** en el lado izquierdo, haga clic con el botón derecho en **Certificados** y seleccione **Todas las tareas > Importar...**
-    1. Vaya al archivo `.cer` copiado desde el equipo remoto, selecciónelo y, después, haga clic en los cuadros de diálogo para completar la importación.
+    1. Copy the certificate file from the remote computer to the local computer.
+    1. Open Control Panel and navigate to **Administrative Tools > Manage computer certificates**.
+    1. In the window that appears, expand **Trusted Root Certification Authorities** on the left side, right-click **Certificates**, and select **All Tasks > Import...**.
+    1. Navigate to and select the `.cer` file copied from the remote computer, then click through the dialogs to complete the import.
 
-1. Repita el proceso de asociación en Visual Studio como se ha descrito anteriormente y ahora use `tcps://` como protocolo para el **Destino de la conexión** (o **Calificador**).
+1. Repeat the attach process in Visual Studio as described earlier, now using `tcps://` as the protocol for the **Connection Target** (or **Qualifier**).
 
-    ![Selección del transporte de depuración remota con SSL](media/remote-debugging-qualifier-ssl.png)
+    ![Choosing the remote debugging transport with SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Advertencias
+### <a name="warnings"></a>Warnings
 
-Visual Studio le avisará sobre posibles problemas de certificado cuando se conecta a través de SSL, como se describe a continuación. Puede ignorar las advertencias y continuar, pero aunque el canal se cifrará contra el espionaje, puede estar abierto a ataques de tipo "Man in the middle".
+Visual Studio prompts you about potential certificate issues when connecting over SSL as described below. You may ignore the warnings and proceed, but although the channel is still be encrypted against eavesdropping it can be open to man-in-the-middle attacks.
 
-1. Si ve la siguiente advertencia "El certificado remoto no es de confianza", significa que no ha agregado correctamente el certificado a la CA raíz de confianza. Compruebe esos pasos y vuelve a intentarlo.
+1. If you see the "remote certificate is not trusted" warning below, it means you did not properly add the certificate to the Trusted Root CA. Check those steps and try again.
 
-    ![Advertencia de confianza de certificado SSL](media/remote-debugging-ssl-warning.png)
+    ![SSL certificate trusted warning](media/remote-debugging-ssl-warning.png)
 
-1. Si ve la siguiente advertencia "El nombre del certificado remoto no coincide con el nombre de host", significa que no se han usado la dirección IP o el nombre de host correctos como el **Nombre común** al crear el certificado.
+1. If you see the "remote certificate name does not match hostname" warning below, it means you did not use the proper hostname or IP address as the **Common Name** when creating the certificate.
 
-    ![Advertencia de nombre de host de certificado SSL](media/remote-debugging-ssl-warning2.png)
+    ![SSL certificate hostname warning](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
-> En la actualidad, Visual Studio 2017 se bloquea cuando omite estas advertencias. Asegúrese de corregir todos los problemas antes de intentar conectarse.
+> At present, Visual Studio 2017 hangs when you ignore these warnings. Be sure to correct all problems before attempting to connect.
 
