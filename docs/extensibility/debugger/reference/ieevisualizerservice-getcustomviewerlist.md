@@ -1,89 +1,72 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEEVisualizerService::GetCustomViewerList
-helpviewer_keywords:
-- IEEVisualizerService::GetCustomViewerList method
+title: "IEEVisualizerService::GetCustomViewerList | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEEVisualizerService::GetCustomViewerList"
+helpviewer_keywords: 
+  - "IEEVisualizerService::GetCustomViewerList (método)"
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9301d27a921ab549fd99c8d679f7c2601535d04e
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-This method returns a list of type visualizers that this service knows about.  
+# IEEVisualizerService::GetCustomViewerList
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Este método devuelve una lista de visualizadores tipo que este servicio conoce.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
-```csharp  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+```c#  
+int GetCustomViewerList(  
+   uint                  celtSkip,  
+   uint                  celtRequested,  
+   DEBUG_CUSTOM_VIEWER[] rgViewers,  
+   out uint              pceltFetched  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `celtSkip`  
- [in] Number of visualizers to skip over.  
+ \[in\]  Número de visualizadores a omitir sobre.  
   
  `celRequested`  
- [in] Number of visualizers to retrieve (also specifies size of the `rgViewers` array).  
+ \[in\]  Número de visualizadores a recuperar \(también especifica el tamaño de la matriz de `rgViewers` \).  
   
  `rgViewers`  
- [in, out] Array of [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures to be filled in.  
+ \[in, out\]  Matriz de estructuras de [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) que se completan.  
   
  `pceltFetched`  
- [out] Number of visualizers actually retrieved.  
+ \[out\]  número de visualizadores recuperados realmente.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) passes the request to this method as part of its support for type visualizers. If the expression evaluator also supplies custom viewers for the same type, it can append appropriately filled-out [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures for those custom viewers to the list. Make sure that [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflects those additional viewers.  
+## Comentarios  
+ [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) pasa ésta a este método como parte de su compatibilidad para los visualizadores escritos.  Si la expresión de evaluador los visores personalizados de fuentes también para el mismo tipo, puede anexar estructuras correctamente rellenadas\-hacia fuera de [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) para los visores personalizados a la lista.  asegúrese de que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) refleje esos visores adicionales.  
   
- See [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) for details on the differences between visualizers and viewers.  
+ Vea [Visualizador de tipo y el visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) para obtener detalles sobre las diferencias entre los visualizadores y visores.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
+ [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)   
- [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Visualizador de tipo y el visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

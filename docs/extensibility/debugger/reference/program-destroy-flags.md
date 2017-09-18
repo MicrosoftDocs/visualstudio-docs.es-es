@@ -1,74 +1,57 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- PROGRAM_DESTROY_FLAGS enumeration
+title: "PROGRAM_DESTROY_FLAGS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Enumeración PROGRAM_DESTROY_FLAGS"
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 82f7330108481959b457c0f69d80c355c69831c3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
-Enumerates the valid values of the program destroy flags.  
+# PROGRAM_DESTROY_FLAGS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Muestra los valores válidos de programa destruyen los marcadores.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
-   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
+   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
 };  
 typedef DWORD PROGRAM_DESTROY_FLAGS;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
-   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
+   PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
 };  
 ```  
   
-## <a name="terms"></a>Terms  
- PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Destroy program, but continue to debug.  
+## términos  
+ PROGRAM\_DESTROY\_CONTINUE\_DEBUGGING  
+ Destruya el programa, pero continuar depurando.  
   
-## <a name="remarks"></a>Remarks  
- The enumeration is returned by the [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) method.  
+## Comentarios  
+ la enumeración es devuelta por el método de [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .  
   
-## <a name="requirements"></a>Requirements  
- Header: Msdbg.h  
+## Requisitos  
+ encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)

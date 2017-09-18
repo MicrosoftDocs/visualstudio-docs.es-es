@@ -1,43 +1,26 @@
 ---
-title: Handling Specialized Deployment | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- deploying applications [Visual Studio SDK]
-- specialized deployment
+title: "Control especializado de implementaci&#243;n | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "implementar aplicaciones [Visual Studio SDK]"
+  - "implementación especializada"
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 32
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d822f80c6040f68dacce76acfc9660ad9c7fe052
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 32
 ---
-# <a name="handling-specialized-deployment"></a>Handling Specialized Deployment
-A deployment is an optional operation for projects. A Web project, for example, supports a deployment to let a project update a Web server. Likewise, a **Smart Device** project supports a deployment to copy a built application to the target device. Project subtypes can supply specialized deployment behavior by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. This interface defines a complete set of the deployment operations:  
+# Control especializado de implementaci&#243;n
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+una implementación es una operación opcional para los proyectos.  Un proyecto web, por ejemplo, admite una implementación que permite un proyecto actualizar un servidor web.  Igualmente, un proyecto de **Smart Device** admite a una implementación que copie una aplicación integrada en el dispositivo de destino.  Los subtipos de proyecto pueden proporcionar comportamiento especializado de implementación implementando la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> .  Esta interfaz define un conjunto completo de las operaciones de implementación:  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
@@ -55,17 +38,17 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- The actual deployment operation should be performed in the separate thread to make [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] even more responsive to the user interaction. The methods provided by <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> are called asynchronously by [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] and operate in the background, allowing the environment to query the status of a deployment operation at any time or to stop the operation, if necessary. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface deployment operations are called by the environment when the user selects the deploy command.  
+ La operación de implementación real se debe realizar en el subproceso independiente para crear [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluso más capacidad de respuesta a la interacción del usuario.  Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> llaman de forma asincrónica por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y funcionan en segundo plano, permitiendo que el entorno vea el estado de una operación de implementación en cualquier momento o detener la operación, si es necesario.  Las operaciones de la implementación de la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> llama el entorno cuando el usuario selecciona el comando deploy.  
   
- To notify the environment that a deployment operation has begun or ended, the project subtype needs to call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> and the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> methods.  
+ Para notificar al entorno que ha iniciado una operación de implementación o completada, subtipo de proyecto necesita llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> y los métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> .  
   
-## <a name="handling-specialized-deployment"></a>Handling Specialized Deployment  
+## administrar la implementación especializada  
   
-#### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>To handle a specialized deployment by a subtype project  
+#### Para controlar una implementación especializada en otro proyecto de subtipo  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> method to register the environment to receive notifications of deployment status events.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> para registrar el entorno para recibir notificaciones de los eventos de estado de la implementación.  
   
-    ```vb  
+    ```vb#  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
     Public Function AdviseDeployStatusCallback(ByVal pIVsDeployStatusCallback As IVsDeployStatusCallback, _  
                                                ByRef pdwCookie As UInteger) As Integer  
@@ -80,7 +63,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     private Microsoft.VisualStudio.Shell.EventSinkCollection adviseSink = new Microsoft.VisualStudio.Shell.EventSinkCollection();  
     public int AdviseDeployStatusCallback(IVsDeployStatusCallback pIVsDeployStatusCallback,   
                                           out uint pdwCookie)  
@@ -94,16 +77,16 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> method to cancel the environment's registration to receive notifications of deployment status events.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> para cancelar el registro del entorno para recibir notificaciones de los eventos de estado de la implementación.  
   
-    ```vb  
+    ```vb#  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
         adviseSink.RemoveAt(dwCookie)  
         Return VSConstants.S_OK  
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int UnadviseDeployStatusCallback(uint dwCookie)  
     {  
         adviseSink.RemoveAt(dwCookie);  
@@ -112,16 +95,16 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> method to perform the commit operation specific to your application.  This method is used mainly for database deployment.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> para realizar el específico de la operación de confirmación a la aplicación.  este método se utiliza principalmente para la implementación de la base de datos.  
   
-    ```vb  
+    ```vb#  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
         'Implement commit operation here.  
         Return VSConstants.S_OK  
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int Commit(uint dwReserved)  
     {  
          //Implement commit operation here.  
@@ -130,16 +113,16 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> method to perform a rollback operation. When this method is called, the deployment project must do whatever is appropriate to rollback changes and restore the state of the project. This method is used mainly for database deployment.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> para realizar una operación de deshacer.  Cuando se llama a este método, el proyecto de implementación debe hacer lo que sea necesario revertir los cambios y restaurar el estado del proyecto.  este método se utiliza principalmente para la implementación de la base de datos.  
   
-    ```vb  
+    ```vb#  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
         'Implement commit operation here.  
         Return VSConstants.S_OK  
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int Rollback(uint dwReserved)  
     {  
         //Implement Rollback operation here.  
@@ -148,9 +131,9 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> method to determine whether or not a project is able to start a deployment operation.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> para determinar si un proyecto puede iniciar una operación de implementación.  
   
-    ```vb  
+    ```vb#  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
         If Not pfSupported Is Nothing AndAlso pfSupported.Length > 0 Then  
             pfSupported(0) = 1  
@@ -165,7 +148,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int QueryStartDeploy(uint dwOptions, int[] pfSupported, int[] pfReady)  
     {  
         if (pfSupported != null && pfSupported.Length >0)  
@@ -181,9 +164,9 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> method to determine whether or not a deployment operation has completed successfully.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> para determinar si una operación de la implementación se haya completado correctamente.  
   
-    ```vb  
+    ```vb#  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
         pfDeployDone = 1  
         If Not deploymentThread Is Nothing AndAlso deploymentThread.IsAlive Then  
@@ -193,7 +176,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int QueryStatusDeploy(out int pfDeployDone)  
     {  
         pfDeployDone = 1;  
@@ -204,9 +187,9 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> method to begin a deployment operation in a separate thread. Place the code specific to your application's deployment inside the `Deploy` method.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> para iniciar una operación de implementación en un subproceso independiente.  Coloque el código específico para la implementación de aplicación dentro del método de `Deploy` .  
   
-    ```vb  
+    ```vb#  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
         If pIVsOutputWindowPane Is Nothing Then  
             Throw New ArgumentNullException("pIVsOutputWindowPane")  
@@ -234,7 +217,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int StartDeploy(IVsOutputWindowPane pIVsOutputWindowPane, uint dwOptions)  
     {  
         if (pIVsOutputWindowPane == null)  
@@ -261,9 +244,9 @@ A deployment is an optional operation for projects. A Web project, for example, 
   
     ```  
   
--   Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> method to stop a deployment operation. This method is called when a user presses the **Cancel** button during the deployment process.  
+-   Implemente el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> para detener una operación de implementación.  Se llama a este método cuando un usuario presiona el botón de **Cancelar** durante el proceso de implementación.  
   
-    ```vb  
+    ```vb#  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
         If Not deploymentThread Is Nothing AndAlso deploymentThread.IsAlive Then  
             Return VSConstants.S_OK  
@@ -283,7 +266,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     public int StopDeploy(int fSync)  
     {  
         if (deploymentThread != null && deploymentThread.IsAlive)  
@@ -307,7 +290,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     ```  
   
 > [!NOTE]
->  All code examples provided in this topic are parts of a larger example in [VSSDK Samples](http://aka.ms/vs2015sdksamples).  
+>  Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo mayor, [Muestras de VSSDK](../../misc/vssdk-samples.md).  
   
-## <a name="see-also"></a>See Also  
- [Project Subtypes](../../extensibility/internals/project-subtypes.md)
+## Vea también  
+ [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)

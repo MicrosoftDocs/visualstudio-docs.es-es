@@ -1,328 +1,314 @@
 ---
-title: 'Walkthrough: Debugging a Parallel Application | Microsoft Docs'
-ms.custom: H1HackMay2017
-ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-helpviewer_keywords:
-- debugger, parallel tasks walkthrough
-- parallel stacks toolwindow
-- parallel tasks toolwindow
-- parallel applications, debugging [C++]
-- debugging, parallel applications
-- parallel applications, debugging [Visual Basic]
-- parallel applications, debugging [C#]
+title: "Tutorial: Depurar una aplicaci&#243;n paralela | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "FSharp"
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "depurador, tutorial para tareas paralelas"
+  - "depurar, aplicaciones paralelas"
+  - "aplicaciones paralelas, depurar [C#]"
+  - "aplicaciones paralelas, depurar [C++]"
+  - "aplicaciones paralelas, depurar [Visual Basic]"
+  - "ventana de herramientas Pilas paralelas"
+  - "ventana de herramientas Tareas paralelas"
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 caps.latest.revision: 28
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 70301ddf35e675d2d187346f4c0e77f034576c14
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.handback.revision: 28
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Walkthrough: Debugging a Parallel Application in Visual Studio
-This walkthrough shows how to use the **Parallel Tasks** and **Parallel Stacks** windows to debug a parallel application. These windows help you understand and verify the runtime behavior of code that uses the [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) or the [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). This walkthrough provides sample code that has built-in breakpoints. After the code breaks, the walkthrough shows how to use the **Parallel Tasks** and **Parallel Stacks** windows to examine it.  
+# Tutorial: Depurar una aplicaci&#243;n paralela
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **Tareas paralelas** para depurar una aplicación paralela.  Estas ventanas ayudan a entender y comprobar el comportamiento en tiempo de ejecución del código que utiliza [Task Parallel Library \(TPL\)](../Topic/Task%20Parallel%20Library%20\(TPL\).md) o [Runtime de simultaneidad](/visual-cpp/parallel/concrt/concurrency-runtime).  En este tutorial se proporciona código de muestra con puntos de interrupción integrados.  Una vez que el código se interrumpe, se muestra cómo utilizar las ventanas **Tareas paralelas** y **Pilas paralelas** para examinarlo.  
   
- This walkthrough teaches these tasks:  
+ Se enseñan estas tareas:  
   
--   How to view the call stacks of all threads in one view.  
+-   Cómo ver las pilas de llamadas de todos los subprocesos en una vista.  
   
--   How to view the list of `System.Threading.Tasks.Task` instances that are created in your application.  
+-   Cómo ver la lista de instancias de `System.Threading.Tasks.Task` que se crean en la aplicación.  
   
--   How to view the real call stacks of tasks instead of threads.  
+-   Cómo ver las pilas de llamadas reales de las tareas en lugar de los subprocesos.  
   
--   How to navigate to code from the **Parallel Tasks** and **Parallel Stacks** windows.  
+-   Cómo navegar al código desde las ventanas **Tareas paralelas** y **Pilas paralelas**.  
   
--   How the windows cope with scale through grouping, zooming, and other related features.  
+-   Cómo trabajan las ventanas con la escala de tamaño mediante la agrupación, el zoom y otras características relacionadas.  
   
-## <a name="prerequisites"></a>Prerequisites  
- This walkthrough assumes that **Just My Code** is enabled (it is enabled by default in more recent versions of Visual Studio). On the **Tools** menu, click **Options**, expand the **Debugging** node, select **General**, and then select **Enable Just My Code (Managed only)**. If you do not set this feature, you can still use this walkthrough, but your results may differ from the illustrations.  
+## Requisitos previos  
+ En el tutorial se supone que **Solo mi código** está habilitado.  En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código \(solo administrado\)**.  Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  
   
-## <a name="c-sample"></a>C# Sample  
- If you use the C# sample, this walkthrough also assumes that External Code is hidden. To toggle whether external code is displayed, right-click the **Name** table header of the **Call Stack** window, and then select or clear **Show External Code**. If you do not set this feature, you can still use this walkthrough, but your results may differ from the illustrations.  
+## Ejemplo de C\#  
+ Si utiliza el ejemplo de C\#, también se supone que Código externo está oculto.  Para alternar si se muestra el código externo, haga clic con el botón secundario en el encabezado de tabla **Nombre** de la ventana **Pila de llamadas** y, a continuación, active o desactive **Mostrar código externo**.  Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  
   
-## <a name="c-sample"></a>C++ Sample  
- If you use the C++ sample, you can ignore references to External Code in this topic. External Code only applies to the C# sample.  
+## Ejemplo de C\+\+  
+ Si utiliza el ejemplo C\+\+, puede omitir las referencias a Código externo de este tema.  El código externo solo se aplica en el ejemplo de C\#.  
   
-## <a name="illustrations"></a>Illustrations  
- The illustrations in this topic recorded on a quad core computer running the C# sample. Although you can use other configurations to complete this walkthrough, the illustrations may differ from what is displayed on your computer.  
+## Ilustraciones  
+ Las ilustraciones de este tema se grabaron en un equipo básico quad core que ejecuta el ejemplo de C\#.  Aunque puede utilizar otras configuraciones para completar este tutorial, las ilustraciones pueden diferir de lo que se muestra en su equipo.  
   
-## <a name="creating-the-sample-project"></a>Creating the Sample Project  
- The sample code in this walkthrough is for an application that does nothing. The goal is just to understand how to use the tool windows to debug a parallel application.  
+## Crear el proyecto de muestra  
+ El código de ejemplo de este tutorial es para una aplicación que no hace nada.  El objetivo es entender cómo utilizar las ventanas de herramientas para depurar una aplicación paralela.  
   
-#### <a name="to-create-the-sample-project"></a>To create the sample project  
+#### Para crear el proyecto de ejemplo  
   
-1.  In Visual Studio, on the **File** menu, point to **New** and then click **Project**.  
+1.  En el menú **Archivo** de Visual Studio, elija **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
-2.  In the **Installed Templates** pane, select either Visual C#, Visual Basic, or Visual C++. For the managed languages, ensure that [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] is displayed in the framework box.  
+2.  En el panel **Plantillas instaladas**, seleccione Visual C\#, Visual Basic o Visual C\+\+.  En los lenguajes administrados, asegúrese de que aparece [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] en el cuadro del marco.  
   
-3.  Select **Console Application** and then click **OK**. Remain in Debug configuration, which is the default.  
+3.  Seleccione **Aplicación de consola** y, a continuación, haga clic en **Aceptar**.  Mantenga la configuración Debug, que es el valor predeterminado.  
   
-4.  Open the .cpp, .cs, or .vb code file in the project. Delete its contents to create an empty code file.  
+4.  Abra el archivo de código .cpp, .cs o .vb del proyecto.  Elimine su contenido para crear un archivo de código vacío.  
   
-5.  Paste the following code for your chosen language into the empty code file.  
+5.  En el archivo de código vacío, pegue el siguiente código en el lenguaje elegido.  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)] [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)] [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+ [!code-cs[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+ [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+ [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  On the **File** menu, click **Save All**.  
+1.  En el menú **Archivo**, haga clic en **Guardar todo**.  
   
-2.  On the **Build** menu, click **Rebuild Solution**.  
+2.  En el menú **Compilar**, haga clic en **Recompilar solución**.  
   
-     Notice that there are four calls to `Debugger.Break` (`DebugBreak` in the C++ sample) Therefore, you do not have to insert breakpoints; just running the application will cause it to break in the debugger up to four times.  
+     Observe que hay cuatro llamadas a `Debugger.Break` \(`DebugBreak` en el ejemplo de C\+\+\). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Using the Parallel Stacks Window: Threads View  
- On the **Debug** menu, click **Start Debugging**. Wait for the first breakpoint to be hit.  
+## Utilizar la ventana Pilas paralelas: vista de subprocesos  
+ En el menú **Depurar**, haga clic en **Iniciar depuración**.  Espere a que se alcance el primer punto de interrupción.  
   
-#### <a name="to-view-the-call-stack-of-a-single-thread"></a>To view the call stack of a single thread  
+#### Para ver la pila de llamadas de un subproceso  
   
-1.  On the **Debug** menu, point to **Windows** and then click **Threads**. Dock the **Threads** window at the bottom of Visual Studio.  
+1.  En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**.  Acople la ventana **Subprocesos** en la parte inferior de Visual Studio.  
   
-2.  On the **Debug** menu, point to **Windows** and then click **Call Stack**. Dock the **Call Stack** window at the bottom Visual Studio.  
+2.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**.  Acople la ventana **Pila de llamadas** en la parte inferior de Visual Studio.  
   
-3.  Double-click a thread in the **Threads** window to make it current. Current threads have a yellow arrow. When you change the current thread, its call stack is displayed in the **Call Stack** window.  
+3.  Haga doble clic en un subproceso en la ventana **Subprocesos** para que sea el actual.  Los subprocesos actuales tienen una flecha amarilla.  Al cambiar el subproceso actual, la pila de llamadas se muestra en la ventana **Pila de llamadas**.  
   
-#### <a name="to-examine-the-parallel-stacks-window"></a>To examine the Parallel Stacks window  
+#### Para examinar la ventana Pilas paralelas  
   
-1.  On the **Debug** menu, point to **Windows** and then click **Parallel Stacks**. Make sure that **Threads** is selected in the box at the upper-left corner.  
+1.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pilas paralelas**.  Asegúrese de que **Subprocesos** está seleccionado en el cuadro de la esquina superior izquierda.  
   
-     By using the **Parallel Stacks** window, you can view multiple call stacks at the same time in one view. The following illustration shows the **Parallel Stacks** window above the **Call Stack** window.  
+     Utilizando la ventana **Pilas paralelas**, puede ver al mismo tiempo varias pilas de llamadas en una vista.  La siguiente ilustración muestra la ventana **Pilas paralelas** sobre la ventana **Pila de llamadas**.  
   
-     ![Threads view in Parallel Stacks window](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
+     ![Vista Subprocesos en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_1.png "PDB\_Walkthrough\_1")  
   
-     The call stack of the Main thread appears in one box and the call stacks for the other four threads are grouped in another box. Four threads are grouped together because their stack frames share the same method contexts; that is, they are in the same methods: `A`, `B`, and `C`. To view the thread IDs and names of the threads that share the same box, hover over the header (**4 Threads**). The current thread is displayed in bold, as shown in the following illustration.  
+     La pila de llamadas del subproceso principal aparece en un cuadro y las pilas de llamadas de los otros cuatro subprocesos están agrupadas en otro cuadro.  Se agrupan cuatro subprocesos porque sus marcos de pila comparten los mismos contextos de método, es decir, están en los mismos métodos: `A`, `B` y `C`.  Para ver los identificadores y los nombres de los subprocesos que comparten el mismo cuadro, desplace el puntero del mouse sobre el encabezado \(**4 Subprocesos**\).  El subproceso actual se muestra en negrita, como en la siguiente ilustración.  
   
-     ![Tooltip that shows thread IDs and names](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
+     ![Información sobre herramientas con identificadores y nombres de subprocesos](../debugger/media/pdb_walkthrough_1a.png "PDB\_Walkthrough\_1A")  
   
-     The yellow arrow indicates the active stack frame of the current thread. To get more information, hover over it  
+     La flecha amarilla indica el marco de pila activo del subproceso actual.  Para obtener más información, desplace el puntero del mouse sobre él  
   
-     ![Tooltip on active stack frame](../debugger/media/pdb_walkthrough_1b.png "PDB_Walkthrough_1B")  
+     ![Información sobre herramientas en marco de pila activo](../debugger/media/pdb_walkthrough_1b.png "PDB\_Walkthrough\_1B")  
   
-     You can set how much detail to show for the stack frames (**Module Names**, **Parameter Types**, **Parameter Names**, **Parameter Values**, **Line Numbers** and **Byte Offsets**) by right-clicking in the **Call Stack** window.  
+     Puede establecer cuánto detalle mostrar en los marcos de pila \(**Nombres del módulo**, **Tipos de parámetros**, **Nombres de parámetros**, **Valores de parámetro**, **Números de línea** y **Desplazamientos de bytes**\) haciendo clic con el botón secundario del mouse en la ventana **Pila de llamadas**.  
   
-     A blue highlight around a box indicates that the current thread is part of that box. The current thread is also indicated by the bold stack frame in the tooltip. If you double-click the Main thread in the Threads window, you can observe that the blue highlight in the **Parallel Stacks** window moves accordingly.  
+     Un resaltado azul alrededor de un cuadro indica que el subproceso actual forma parte de ese cuadro.  El subproceso actual también está indicado por el marco de pila en negrita de la información sobre herramientas.  Si hace doble clic en el subproceso principal en la ventana Subprocesos, puede observar que el resaltado azul de la ventana **Pilas paralelas** se mueve de forma acorde.  
   
-     ![Highlighted main thread in Parallel Stacks window](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")  
+     ![Subproceso principal resaltado en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_1c.png "PDB\_Walkthrough\_1C")  
   
-#### <a name="to-resume-execution-until-the-second-breakpoint"></a>To resume execution until the second breakpoint  
+#### Para reanudar la ejecución hasta el segundo punto de interrupción  
   
-1.  To resume execution until the second breakpoint is hit, on the **Debug** menu, click **Continue**. The following illustration shows the thread tree at the second breakpoint.  
+1.  Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  La siguiente ilustración muestra el árbol de subproceso en el segundo punto de interrupción.  
   
-     ![Parallel Stacks window that shows many branches](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")  
+     ![Ventana Pilas paralelas con muchas bifurcaciones](../debugger/media/pdb_walkthrough_2.png "PDB\_Walkthrough\_2")  
   
-     At the first breakpoint, four threads all went from S.A to S.B to S.C methods. That information is still visible in the **Parallel Stacks** window, but the four threads have progressed further. One of them continued to S.D and then S.E. Another continued to S.F, S.G, and S.H. Two others continued to S.I and S.J, and from there one of them went to S.K and the other continued to non-user External Code.  
+     En el primer punto de interrupción, cuatro subprocesos fueron de S.A a S.B a los métodos S.C.  Esa información todavía está visible en la ventana **Pilas paralelas**, pero los cuatro subprocesos han progresado más.  Uno de ellos continuó a S.D y a S.E.  Otro continuó hasta S.F, S.G y S.H.  Los otros dos continuaron a S.I y S.J, y de allí uno fue a S.K y el otro continuó a código externo de no usuario.  
   
-     You can hover over the box header, for example, **1 Thread** or **2 Threads**, to see the thread IDs of the threads. You can hover over stack frames to see thread IDs plus other frame details. The blue highlight indicates the current thread and the yellow arrow indicates the active stack frame of the current thread.  
+     Puede desplazar el puntero del mouse sobre el encabezado del cuadro, por ejemplo, **1 subproceso** o **2 subprocesos**, para ver los identificadores de subproceso de los subprocesos.  Puede desplazar el puntero del mouse sobre los marcos de pila para ver identificadores de subproceso y otros detalles del marco.  El resaltado azul indica el subproceso actual y la flecha amarilla indica el marco de pila activo del subproceso actual.  
   
-     The cloth-threads icon (overlapping blue and red waved lines) indicate the active stack frames of the noncurrent threads. In the **Call Stack** window, double-click S.B to switch frames. The **Parallel Stacks** window indicates the current stack frame of the current thread by using a green curved arrow icon.  
+     El icono de los subprocesos \(las líneas onduladas azules y rojas superpuestas\) indica los marcos de pila activos de los subprocesos que no son el actual.  En la ventana **Pila de llamadas**, haga doble clic en S.B para intercambiar los marcos.  La ventana **Pilas paralelas** indica el marco de pila del subproceso actual utilizando un icono de flecha verde y curvada.  
   
-     In the **Threads** window, switch between threads and observe that the view in the **Parallel Stacks** window is updated.  
+     En la ventana **Subprocesos**, intercambie entre los subprocesos y observe que la vista en la ventana **Pilas paralelas** está actualizada.  
   
-     You can switch to another thread, or to another frame of another thread, by using the shortcut menu in the **Parallel Stacks** window. For example, right-click S.J, point to **Switch To Frame**, and then click a command.  
+     Puede cambiar a otro subproceso o al marco de otro subproceso, utilizando el menú contextual en la ventana **Pilas paralelas**.  Por ejemplo, haga clic con el botón secundario en S.J, apunte a **Cambiar a marco** y, a continuación, haga clic en un comando.  
   
-     ![Parallel Stacks Path of Execution](../debugger/media/pdb_walkthrough_2b.png "PDB_Walkthrough_2B")  
+     ![Ruta de acceso a pilas paralelas de ejecución](../debugger/media/pdb_walkthrough_2b.png "PDB\_Walkthrough\_2B")  
   
-     Right-click S.C and point to **Switch To Frame**. One of the commands has a check mark that indicates the stack frame of the current thread. You can switch to that frame of the same thread (just the green arrow will move) or you can switch to the other thread (the blue highlight will also move). The following illustration shows the submenu.  
+     Haga clic con el botón secundario en S.C y señale a **Cambiar a marco**.  Uno de los comandos tiene una marca de verificación que indica el marco de pila del subproceso actual.  Puede cambiar a ese marco del mismo subproceso \(la flecha verde se moverá\) o puede cambiar al otro subproceso \(el resaltado azul también moverá\).  La ilustración siguiente muestra los submenús.  
   
-     ![Stacks menu with 2 options on C while J is current](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")  
+     ![Menú Pilas con 2 opciones en el marco del subproceso C mientras que el actual es el J](../debugger/media/pdb_walkthrough_3.png "PDB\_Walkthrough\_3")  
   
-     When a method context is associated with just one stack frame, the box header displays **1 Thread** and you can switch to it by double-clicking. If you double-click a method context that has more than 1 frame associated with it, then the menu automatically pops up. As you hover over the method contexts, notice the black triangle at the right. Clicking that triangle also displays the shortcut menu.  
+     Cuando un contexto de método está asociado solo a un marco de pila, el encabezado del cuadro muestra **1 subproceso** y puede cambiar a él haciendo doble clic.  Si hace doble clic en un contexto de método que tiene más que un marco asociado, el menú se abre automáticamente.  Cuando desplace el puntero del mouse sobre los contextos de método, observe el triángulo negro a la derecha.  Al hacer clic en ese triángulo, también se muestra el menú contextual.  
   
-     For large applications that have many threads, you may want to focus on just a subset of threads. The **Parallel Stacks** window can display call stacks only for flagged threads. On the toolbar, click the **Show Only Flagged** button next to the list box.  
+     Con aplicaciones grandes que tienen muchos subprocesos, le interesa centrarse en un subconjunto de subprocesos.  La ventana **Pilas paralelas** solo puede mostrar las pilas de llamadas de los subprocesos marcados.  En la barra de herramientas, haga clic en el botón **Mostrar marcadas únicamente** junto al cuadro de lista.  
   
-     ![Empty Parallel Stacks window and tooltip](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
+     ![Ventana Pilas paralelas vacía e información sobre herramientas](../debugger/media/pdb_walkthrough_3a.png "PDB\_Walkthrough\_3A")  
   
-     Next, in the **Threads** window, flag threads one by one to see how their call stacks appear in the **Parallel Stacks** window. To flag threads, use the shortcut menu or the first cell of a thread. Click the **Show Only Flagged** toolbar button again to show all threads.  
+     A continuación, en la ventana **Subprocesos**, marque los subprocesos uno por uno para ver cómo sus pilas de llamadas aparecen en la ventana **Pilas paralelas**.  Para marcar subprocesos, utilice el menú contextual o la primera celda de un subproceso.  Haga clic de nuevo en el botón de la barra de herramientas **Mostrar marcadas únicamente** para mostrar todos los subprocesos.  
   
-#### <a name="to-resume-execution-until-the-third-breakpoint"></a>To resume execution until the third breakpoint  
+#### Para reanudar la ejecución hasta el tercer punto de interrupción  
   
-1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**.  
+1.  Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
   
-     When multiple threads are in the same method but the method was not at the beginning of the call stack, the method appears in different boxes. An example at the current breakpoint is S.L, which has three threads in it and appears in three boxes. Double-click S.L.  
+     Cuando varios subprocesos están en el mismo método pero el método no estaba al principio de la pila de llamadas, el método aparece en cuadros diferentes.  Un ejemplo en el punto de interrupción actual es S.L, que tiene tres subprocesos y aparece en tres cuadros.  Haga doble clic en S.L.  
   
-     ![Execution path in Parallel Stacks window](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")  
+     ![Ruta de acceso de ejecución en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_3b.png "PDB\_Walkthrough\_3B")  
   
-     Notice that S.L is bold in the other two boxes so that you can see where else it appears. If you want to see which frames call into S.L and which frames it calls, click the **Toggle Method View** button on the toolbar. The following illustration shows the method view of The **Parallel Stacks** window.  
+     Observe que S.L está en negrita en los otros dos cuadros para que pueda ver dónde más aparece.  Si desea ver qué marcos llaman a S.L y a qué marcos llama, haga clic en el botón **Alternar vista de método** en la barra de herramientas.  La siguiente ilustración muestra la vista de método de la ventana **Pilas paralelas**.  
   
-     ![Method view in Parallel Stacks window](../debugger/media/pdw_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![Vista Método en la ventana Pilas paralelas](../debugger/media/pdw_walkthrough_4.png "PDW\_Walkthrough\_4")  
   
-     Notice how the diagram pivoted on the selected method and positioned it in its own box in the middle of the view. The callees and callers appear on the top and bottom. Click the **Toggle Method View** button again to leave this mode.  
+     Observe cómo el diagrama se monta en el método seleccionado y lo coloca en su propio cuadro en el medio de la vista.  Los destinatarios y llamadores aparecen en la parte superior e inferior.  Haga clic de nuevo en el botón **Alternar vista de método** para dejar este modo.  
   
-     The shortcut menu of the **Parallel Stacks** window also has the following other items.  
+     El menú contextual de la ventana **Pilas paralelas** también tiene los siguientes otros elementos.  
   
-    -   **Hexadecimal Display** toggles the numbers in the tooltips between decimal and hexadecimal.  
+    -   **Presentación hexadecimal** alterna los números de la información sobre herramientas entre decimal y hexadecimal.  
   
-    -   **Symbol Load Information** and **Symbol Settings** open the respective dialog boxes.  
+    -   **Información de carga de símbolos** y **Configuración de símbolos** abren los cuadros de diálogo respectivos.  
   
-    -   **Go To Source Code** and **Go To Disassembly** navigate in the editor to the selected method.  
+    -   **Ir al código fuente** e **Ir al desensamblado** navegan en el editor hasta el método seleccionado.  
   
-    -   **Show External Code** displays all the frames even if they are not in user code. Try it to see the diagram expand to accommodate the additional frames (which may be dimmed because you do not have symbols for them).  
+    -   **Mostrar código externo** muestra todos los marcos aun cuando no estén en código de usuario.  Pruébelo para ver el diagrama expandirse para alojar los marcos adicionales \(que pueden estar atenuados porque no tiene símbolos para ellos\).  
   
-     When you have large diagrams and you step to the next breakpoint, you may want the view to auto scroll to the active stack frame of the current thread; that is, the thread that hit the breakpoint first. In the **Parallel Stacks** window, make sure that the **Auto Scroll to Current Stack Frame** button on the toolbar is on.  
+     Si tiene diagramas grandes y pasa al punto de interrupción siguiente, tal vez le interese la vista para desplazarse de forma automática al marco de pila activo del subproceso actual, es decir, el subproceso que alcanzó primero el punto de interrupción.  En la ventana **Pilas paralelas** asegúrese de que el botón **Desplazar automáticamente a marco de pila actual** de la barra de herramientas está activado.  
   
-     ![Autoscrolling in the Parallel Stacks window](../debugger/media/pdb_walkthrough_4a.png "PDB_Walkthrough_4A")  
+     ![Desplazamiento automático en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_4a.png "PDB\_Walkthrough\_4A")  
   
-2.  Before you continue, in the **Parallel Stacks** window, scroll all the way to the left and all the way down.  
+2.  Antes de continuar, en la ventana **Pilas paralelas**, desplácese a la izquierda y hacia abajo todo lo posible.  
   
-#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>To resume execution until the fourth breakpoint  
+#### Para reanudar la ejecución hasta el cuarto punto de interrupción  
   
-1.  To resume execution until the fourth breakpoint is hit, on the **Debug** menu, click **Continue**.  
+1.  Para reanudar la ejecución hasta llegar al cuarto punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
   
-     Notice how the view autoscrolled into place. Switch threads in the **Threads** window or switch stack frames in the **Call Stack** window and notice how the view always autoscrolls to the correct frame. Turn off **Auto Scroll to Current Tool Frame** option and view the difference.  
+     Observe cómo la vista se desplaza automáticamente para ocupar su lugar.  Alterne los subprocesos en la ventana **Subprocesos** o alterne los marcos de pila en la ventana **Pila de llamadas** y observe cómo la vista siempre se desplaza automáticamente hasta el marco correcto.  Desactive la opción **Desplazar automáticamente a marco de pila actual** y vea la diferencia.  
   
-     The **Bird's Eye View** also helps with large diagrams in the **Parallel Stacks** window. You can see the **Bird's Eye View** by clicking the button between the scroll bars on the lower-right corner of the window, as shown in the following illustration.  
+     La **Vista aérea** también permite ver diagramas grandes en la ventana **Pilas paralelas**.  Para ver la **Vista aérea**, haga clic en el botón situado entre las barras de desplazamiento en la esquina inferior derecha de la ventana, como se muestra en la siguiente ilustración.  
   
-     ![Bird's&#45;eye view in Parallel Stacks window](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
+     ![Vista de pájaro en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_5.png "PDB\_Walkthrough\_5")  
   
-     You can move the rectangle to quickly pan around the diagram.  
+     Puede mover el rectángulo para hacer una rápida panorámica del diagrama.  
   
-     Another way to move the diagram in any direction is to click a blank area of the diagram and drag it where you want it.  
+     Otra manera de mover el diagrama en cualquier dirección es haciendo clic en un área en blanco del diagrama y arrastrando al lugar deseado.  
   
-     To zoom in and out of the diagram, press and hold CTRL while you move the mouse wheel. Alternatively, click the Zoom button on the toolbar and then use the Zoom tool.  
+     Para acercar y alejar, mantenga presionada la tecla CTRL mientras mueve la rueda del mouse.  Alternativamente, haga clic en el botón Zoom en la barra de herramientas y utilice la herramienta Zoom.  
   
-     ![Zoomed stacks in Parallel Stacks window](../debugger/media/pdb_walkthrough_5a.png "PDB_Walkthrough_5A")  
+     ![Pilas ampliadas en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_5a.png "PDB\_Walkthrough\_5A")  
   
-     You can also view the stacks in a top-down direction instead of bottom-up, by clicking the **Tools** menu, clicking **Options**, and then select or clear the option under the **Debugging** node.  
+     También puede ver las pilas en dirección descendente en lugar de ascendente haciendo clic en el menú **Herramientas**, en **Opciones** y seleccionando o borrando la opción bajo el nodo **Depuración**.  
   
-2.  Before you continue, on the **Debug** menu, click **Stop Debugging** to end execution.  
+2.  Antes de continuar, en el menú **Depurar**, haga clic en **Detener depuración** para finalizar la ejecución.  
   
-## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Using the Parallel Tasks Window and the Tasks View of the Parallel Stacks window  
- We recommended that you complete the earlier procedures before you continue.  
+## Utilizar la ventana Tareas paralelas y la vista Tareas de la ventana Pilas paralelas  
+ Recomendamos completar los procedimientos anteriores antes de continuar.  
   
-#### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>To restart the application until the first breakpoint is hit  
+#### Para reiniciar la aplicación hasta que alcance el primer punto de interrupción  
   
-1.  On the **Debug** menu, click **Start Debugging** and wait for the first breakpoint to be hit.  
+1.  En el menú **Depurar**, haga clic en **Iniciar depuración** y espere hasta alcanzar el primer punto de interrupción.  
   
-2.  On the **Debug** menu, point to **Windows** and then click **Threads**. Dock the **Threads** window at the bottom of Visual Studio.  
+2.  En el menú **Depurar**, elija **Ventanas** y, a continuación, haga clic en **Subprocesos**.  Acople la ventana **Subprocesos** en la parte inferior de Visual Studio.  
   
-3.  On the **Debug** menu, point to **Windows** and click **Call Stack**. Dock the **Call Stack** window at the bottom Visual Studio.  
+3.  En el menú **Depurar**, seleccione **Ventanas** y, a continuación, haga clic en **Pila de llamadas**.  Acople la ventana **Pila de llamadas** en la parte inferior de Visual Studio.  
   
-4.  Double-click a thread in the **Threads** window to makes it current. Current threads have the yellow arrow. When you change the current thread, the other windows are updated. Next, we will examine tasks.  
+4.  Haga doble clic en un subproceso de la ventana **Subprocesos** para que sea el actual.  Los subprocesos actuales tienen la flecha amarilla.  Al cambiar el subproceso actual, las otras ventanas se actualizan.  A continuación, examinaremos las tareas.  
   
-5.  On the **Debug** menu, point to **Windows** and then click **Parallel Tasks**. The following illustration shows the **Tasks** window.  
+5.  En el menú **Depurar**, apunte a **Ventanas** y, a continuación, haga clic en **Tareas paralelas**.  La siguiente ilustración muestra la ventana **Tareas paralelas**.  
   
-     ![Four running tasks in Tasks window](../debugger/media/pdw_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Cuatro tareas en ejecución en la ventana Tareas paralelas](../debugger/media/pdw_walkthrough_6.png "PDW\_Walkthrough\_6")  
   
-     For each running Task, you can read its ID, which is returned by the same-named property, the ID and name of the thread that runs it, its location (hovering over that displays a tooltip that has the whole call stack). Also, under the **Task** column, you can see the method that was passed into the task; in other words, the starting point.  
+     Por cada tarea que se esté ejecutando, puede leer su identificador, que devuelve la propiedad del mismo nombre, el identificador y nombre del subproceso que lo ejecuta, su ubicación \(desplazando el puntero del mouse para mostrar una información sobre herramientas con la pila de llamadas completa\).  Asimismo, en la columna **Tarea**, puede ver el método que se pasó a la tarea; en otras palabras, el punto inicial.  
   
-     You can sort any column. Notice the sort glyph that indicates the sort column and direction. You can also reorder the columns by dragging them left or right.  
+     Puede ordenar cualquier columna.  Observe el glifo de ordenación que indica la columna y la dirección de ordenación.  También puede reordenar las columnas arrastrándolas a izquierda o derecha.  
   
-     The yellow arrow indicates the current task. You can switch tasks by double-clicking a task or by using the shortcut menu. When you switch tasks, the underlying thread becomes current and the other windows are updated.  
+     La flecha amarilla indica la tarea actual.  Puede intercambiar las tareas haciendo doble clic en una tarea o utilizando el menú contextual.  Al intercambiar las tareas, el subproceso subyacente pasa a ser el actual y las demás ventanas se actualizan.  
   
-     When you manually switch from one task to another, the yellow arrow moves, but a white arrow still shows the task that caused the debugger to break.  
+     Cuando pasa manualmente de una tarea a otra, la flecha amarilla se mueve, pero una flecha blanca sigue mostrando la tarea que hizo que el depurador se interrumpiera.  
   
-#### <a name="to-resume-execution-until-the-second-breakpoint"></a>To resume execution until the second breakpoint  
+#### Para reanudar la ejecución hasta el segundo punto de interrupción  
   
-1.  To resume execution until the second breakpoint is hit, on the **Debug** menu, click **Continue**.  
+1.  Para reanudar la ejecución hasta llegar al segundo punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
   
-     Previously, the **Status** column showed all tasks as Running, but now two of the tasks are Waiting. Tasks can be blocked for many different reasons. In the **Status** column, hover over a waiting task to learn why it is blocked. For example, in the following illustration, task 3 is waiting on task 4.  
+     Previamente, la columna **Estado** mostraba todas las tareas como en ejecución, pero ahora dos de las tareas están en espera.  Las tareas se pueden bloquear por muchas razones diferentes.  En la columna **Estado**, desplace el puntero del mouse sobre una tarea en espera para saber por qué está bloqueada.  Por ejemplo, en la siguiente ilustración, la tarea 3 está esperando a la tarea 4.  
   
-     ![Two waiting tasks in Tasks window](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
+     ![Dos tareas en espera en la ventana Tareas paralelas](../debugger/media/pdb_walkthrough_7.png "PDB\_Walkthrough\_7")  
   
-     Task 4, in turn, is waiting on a monitor owned by the thread assigned to task 2.  
+     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2.  
   
-     ![Waiting task and tooltip in Tasks window](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")  
+     ![Tarea en espera e información sobre herramientas en la ventana Tareas](../debugger/media/pdb_walkthrough_7a.png "PDB\_Walkthrough\_7A")  
   
-     You can flag a task by clicking the flag in the first column of the **Tasks** window.  
+     Puede marcar una tarea haciendo clic en la marca en la primera columna de la ventana **Tareas paralelas**.  
   
-     You can use flagging to track tasks between different breakpoints in the same debugging session or to filter for tasks whose call stacks are shown in the **Parallel Stacks** window.  
+     Puede utilizar las marcas para realizar el seguimiento de las tareas entre los puntos de interrupción diferentes en la misma sesión de depuración o filtrar por las tareas cuyas pilas de llamadas se muestren en la ventana **Pilas paralelas**.  
   
-     When you used the **Parallel Stacks** window earlier, you viewed the application threads. View the **Parallel Stacks** window again, but this time view the application tasks. Do this by selecting **Tasks** in the box on the upper left. The following illustration shows the Tasks View.  
+     Cuando utilizó la ventana **Pilas paralelas** anteriormente, vio los subprocesos de la aplicación.  Mire la ventana **Pilas paralelas** de nuevo, pero esta vez observe las tareas de la aplicación.  Haga esto seleccionando **Tareas** en el cuadro de la izquierda superior.  En la siguiente ilustración se muestra la vista Tareas.  
   
-     ![Threads view in Parallel Stacks window](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Vista Subprocesos en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_8.png "PDB\_Walkthrough\_8")  
   
-     Threads that are not currently executing tasks are not shown in the Tasks View of the **Parallel Stacks** window. Also, for threads that execute tasks, some of the stack frames that are not relevant to tasks are filtered from the top and bottom of the stack.  
+     Los subprocesos que no están ejecutando tareas actualmente no se muestran en el vista de tareas de la ventana **Pilas paralelas**.  Asimismo, con los subprocesos que ejecutan tareas, algunos de los marcos de pila que no son pertinentes para las tareas se filtran de la parte superior e inferior de la pila.  
   
-     View the **Tasks** window again. Right-click any column header to see a shortcut menu for the column.  
+     Observe la ventana **Tareas paralelas** de nuevo.  Haga clic con el botón secundario en cualquier encabezado de columna para ver un menú contextual de la columna.  
   
-     ![Shortcut view menu in Tasks window](../debugger/media/pdb_walkthrough_8a.png "PDB_Walkthrough_8A")  
+     ![Menú de vista contextual en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_8a.png "PDB\_Walkthrough\_8A")  
   
-     You can use the shortcut menu to add or remove columns. For example, the AppDomain column is not selected; therefore, it is not displayed in the list. Click **Parent**. The **Parent** column appears without values for any of the four tasks.  
+     Puede utilizar el menú contextual para agregar o quitar las columnas.  Por ejemplo, la columna AppDomain no está seleccionada; por consiguiente, no se muestra en la lista.  Haga clic en **Primario**.  La columna **Primario** aparece sin valores para las cuatro tareas.  
   
-#### <a name="to-resume-execution-until-the-third-breakpoint"></a>To resume execution until the third breakpoint  
+#### Para reanudar la ejecución hasta el tercer punto de interrupción  
   
-1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**.  
+1.  Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  
   
-     A new task, task 5, is now running and task 4 is now waiting. You can see why by hovering over the waiting task in the **Status** window. In the **Parent** column, notice that task 4 is the parent of task 5.  
+     Ahora se está ejecutando una nueva tarea, la tarea 5, y la tarea 4 está en espera.  Puede ver por qué desplazando el puntero del mouse sobre la tarea en espera de la ventana **Estado**.  En la columna **Primario**, observe que tarea 4 es el elemento primario de la tarea 5.  
   
-     To better visualize the parent-child relationship, right-click the **Parent** column header and then click **Parent Child View**. You should see the following illustration.  
+     Para visualizar la relación primario\-secundario mejor, haga clic con el botón secundario en el encabezado de columna **Primario** y, a continuación, haga clic en **Vista de elemento primario y secundario**.  Vea la ilustración siguiente:  
   
-     ![Parent&#45;child view in Tasks window](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
+     ![Vista de elemento primario y secundario en la ventana Tareas paralelas](../debugger/media/pdb_walkthrough_9.png "PDB\_Walkthrough\_9")  
   
-     Notice that task 4 and task 5 are running on the same thread. This information is not displayed in the **Threads** window; seeing it here is another benefit of the **Tasks** window. To confirm this, view the **Parallel Stacks** window. Make sure that you are viewing **Tasks**. Locate tasks 4 and 5 by double-clicking them in the **Tasks** window. When you do, the blue highlight in the **Parallel Stacks** window is updated. You can also locate tasks 4 and 5 by scanning the tooltips on the **Parallel Stacks** window.  
+     Observe que la tarea 4 y 5 se están ejecutando en el mismo subproceso.  Esta información no se muestra en la ventana **Subprocesos**; poder verlo aquí es otra de las ventajas de la ventana **Tareas paralelas**.  Para confirmar esto, vea la ventana **Pilas paralelas**.  Asegúrese de que está viendo **Tareas**.  Busque las tareas 4 y 5 haciendo doble clic en ellas en la ventana **Tareas paralelas**.  Al hacerlo, se actualiza el resaltado azul de la ventana **Pilas paralelas**.  También puede buscar las tareas 4 y 5 examinando la información sobre herramientas en la ventana **Pilas paralelas**.  
   
-     ![Task view in Parallel Stacks window](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
+     ![Vista Tarea en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_9a.png "PDB\_Walkthrough\_9A")  
   
-     In the **Parallel Stacks** window, right-click S.P, and then click **Go To Thread**. The window switches to Threads View and the corresponding frame is in view. You can see both tasks on the same thread.  
+     En la ventana **Pilas paralelas**, haga clic con el botón secundario en S.P y, a continuación, haga clic en **Ir al subproceso**.  La ventana cambia a la vista de subprocesos y el marco correspondiente está a la vista.  Puede ver ambas tareas en el mismo subproceso.  
   
-     ![Highlighted thread in threads view](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")  
+     ![Subproceso resaltado en la vista de subprocesos](../debugger/media/pdb_walkthrough_9b.png "PDB\_Walkthrough\_9B")  
   
-     This is another benefit of the Tasks View in the **Parallel Stacks** window, compared to the **Threads** window.  
+     Esta es otra ventaja de la vista de tareas de la ventana **Pilas paralelas**, comparada con la ventana **Subprocesos**.  
   
-#### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>To resume execution until the fourth breakpoint  
+#### Para reanudar la ejecución hasta el cuarto punto de interrupción  
   
-1.  To resume execution until the third breakpoint is hit, on the **Debug** menu, click **Continue**. Click the **ID** column header to sort by ID. You should see the following illustration.  
+1.  Para reanudar la ejecución hasta llegar al tercer punto de interrupción, haga clic en **Continuar** en el menú **Depurar**.  Haga clic en el encabezado de columna **Id.** para ordenar por identificador.  Vea la ilustración siguiente:  
   
-     ![Four task states in Parallel Stacks window](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
+     ![Cuatro estados de tarea en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_10.png "PDB\_Walkthrough\_10")  
   
-     Because task 5 has completed, it is no longer displayed. If that is not the case on your computer and the deadlock is not shown, step one time by pressing F11.  
+     Como la tarea 5 se ha completado, ya no se muestra.  Si no es el caso en su equipo y no se muestra el interbloqueo, avance un paso presionando F11.  
   
-     Task 3 and task 4 are now waiting on each other and are deadlocked. There are also 5 new tasks that are children of task 2 and are now scheduled. Scheduled tasks are tasks that have been started in code but have not run yet. Therefore, their **Location** and **Thread Assignment** columns are empty.  
+     Las tareas 3 y 4 se están esperando mutuamente y están interbloqueadas.  Hay también 5 nuevas tareas que son elementos secundarios de la tarea 2 y se programan ahora.  Las tareas programadas son tareas que se han iniciado en código pero no se han ejecutado todavía.  Por consiguiente, las columnas **Asignación de subproceso** y **Ubicación** están vacías.  
   
-     View the **Parallel Stacks** window again. The header of each box has a tooltip that shows the thread IDs and names. Switch to Tasks View in the **Parallel Stacks** window. Hover over a header to see the task ID and name, and the status of the task, as shown in the following illustration.  
+     Observe la ventana **Pilas paralelas** de nuevo.  El encabezado de cada cuadro tiene una información sobre herramientas que muestra los identificadores y los nombres de los subprocesos.  Cambie a la vista de tareas en la ventana **Pilas paralelas**.  Desplace el puntero del mouse sobre un encabezado para ver el identificador, el nombre y el estado de la tarea, como se muestra en la siguiente ilustración.  
   
-     ![Header tooltip in Parallel Stacks window](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")  
+     ![Información sobre herramientas de encabezado en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_11.png "PDB\_Walkthrough\_11")  
   
-     You can group the tasks by column. In the **Tasks** window, right-click the **Status** column header and then click **Group by Status**. The following illustration shows the **Tasks** window grouped by status.  
+     Puede agrupar las tareas por columna.  En la ventana **Tareas paralelas**, haga clic con el botón secundario en el encabezado de columna **Estado** y, a continuación, haga clic en **Agrupar por estado**.  La siguiente ilustración muestra la ventana **Tareas paralelas** agrupadas por estado.  
   
-     ![Grouped tasks in Tasks window](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
+     ![Tareas agrupadas en la ventana Tareas paralelas](../debugger/media/pdb_walkthrough_12.png "PDB\_Walkthrough\_12")  
   
-     You can also group by any other column. By grouping tasks, you can focus on a subset of tasks. Each collapsible group has a count of the items that are grouped together. You can also quickly flag all items in the group by clicking the **Flag** button to the right of the **Collapse** button.  
+     También puede agrupar por cualquier otra columna.  Agrupando las tareas, se puede concentrar en un subconjunto de tareas.  Cada grupo contraíble tiene un recuento de los elementos que están agrupados.  También puede marcar rápidamente todos los elementos del grupo haciendo clic en el botón **Marcar** a la derecho del botón **Contraer**.  
   
-     ![Grouped stacks in Parallel Stacks window](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
+     ![Pilas agrupadas en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_12a.png "PDB\_Walkthrough\_12A")  
   
-     The last feature of the **Tasks** window to examine is the shortcut menu that is displayed when you right-click a task.  
+     La última característica para examinar de la ventana **Tareas paralelas** es el menú contextual que se muestra al hacer clic con el botón secundario en una tarea.  
   
-     ![Shortcut menu in Tasks window](../debugger/media/pdb_walkthrough_12b.png "PDB_Walkthrough_12B")  
+     ![Menú contextual en la ventana Tareas paralelas](../debugger/media/pdb_walkthrough_12b.png "PDB\_Walkthrough\_12B")  
   
-     The shortcut menu displays different commands, depending on the status of the task. The commands may include **Copy**, **Select All**, **Hexadecimal Display**, **Switch to Task**, **Freeze Assigned Thread**, **Freeze All Threads But This**, and **Thaw Assigned Thread**, and **Flag**.  
+     El menú contextual muestra comandos diferentes, dependiendo del estado de la tarea.  Los comandos pueden incluir **Copiar**, **Seleccionar todo**, **Presentación hexadecimal**, **Cambiar a tarea**, **Inmovilizar subproceso asignado**, **Inmovilizar todos los subprocesos excepto este**, **Reanudar subproceso asignado** y **Marcar**.  
   
-     You can freeze the underlying thread of a task, or tasks, or you can freeze all threads except the assigned one. A frozen thread is represented in the **Tasks** window as it is in the **Threads** window, by a blue *pause* icon.  
+     Puede inmovilizar el subproceso subyacente de una o varias tareas, y puede inmovilizar todos los subprocesos exceptuando el asignado.  Un subproceso inmovilizado se representa en la ventana **Tareas paralelas** como en la ventana **Subprocesos**, por un icono de *pausa* azul.  
   
-## <a name="summary"></a>Summary  
- This walkthrough demonstrated the **Parallel Tasks** and **Parallel Stacks** debugger windows. Use these windows on real projects that use multithreaded code. You can examine parallel code written in C++, C#, or Visual Basic.  
+## Resumen  
+ En este tutorial se han mostrado las ventanas del depurador **Tareas paralelas** y **Pilas paralelas**.  Utilice estas ventanas en los proyectos reales que utilizan código multithreading.  Puede examinar código paralelo escrito en C\+\+, C\# o Visual Basic.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [Debugging Multithreaded Applications](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger Basics](../debugger/debugger-basics.md)   
- [Debugging Managed Code](../debugger/debugging-managed-code.md)   
- [Parallel Programming](/dotnet/standard/parallel-programming/index)   
- [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)   
- [Using the Parallel Stacks Window](../debugger/using-the-parallel-stacks-window.md)   
- [Using the Tasks Window](../debugger/using-the-tasks-window.md)
+ [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
+ [Depurar código administrado](../debugger/debugging-managed-code.md)   
+ [Parallel Programming](../Topic/Parallel%20Programming%20in%20the%20.NET%20Framework.md)   
+ [Runtime de simultaneidad](/visual-cpp/parallel/concrt/concurrency-runtime)   
+ [Uso de la ventana Tareas paralelas](../debugger/using-the-parallel-stacks-window.md)   
+ [Usar la ventana Tareas](../debugger/using-the-tasks-window.md)

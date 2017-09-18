@@ -1,66 +1,49 @@
 ---
-title: Creating a WPF Toolbox Control | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- toolbox control
-- toolbox
-- wpf
+title: "Crear un Control de cuadro de herramientas WPF | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "control de cuadro de herramientas"
+  - "toolbox"
+  - "wpf"
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 16
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40196a61c1fdc1dd7f2cf7d75e5fa65fb0580160
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 16
 ---
-# <a name="creating-a-wpf-toolbox-control"></a>Creating a WPF Toolbox Control
-The WPF (Windows Presentation Framework) Toolbox Control template lets you create WPF controls that are automatically added to the **Toolbox** when the extension is installed. This topic shows how to use the template to create a **Toolbox** control that you can distribute to other users.  
+# Crear un Control de cuadro de herramientas WPF
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+La plantilla de Control de cuadro de herramientas WPF \(Windows Presentation Framework\) le permite crear controles WPF que se agregan automáticamente a la **herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un **herramientas** control que se puede distribuir a otros usuarios.  
   
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional de la instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulta [Instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-wpf-toolbox-control"></a>Creating a WPF Toolbox Control  
+## Crear un Control de cuadro de herramientas WPF  
   
-#### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>Create an Extension with a WPF Toolbox Control  
+#### Crear una extensión con un Control de cuadro de herramientas WPF  
   
-1.  Create a VSIX project named `MyToolboxControl`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
+1.  Cree un proyecto VSIX denominado `MyToolboxControl`. Puede encontrar la plantilla de proyecto VSIX en la **nuevo proyecto** en el cuadro de diálogo **Visual C\# \/ extensibilidad**.  
   
-2.  When the project opens, add a **WPF Toolbox Control** item template named `MyToolboxControl`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **WPF Toolbox Control**. In the **Name** field at the bottom of the window, change the command file name to `MyToolboxControl.cs`.  
+2.  Cuando se abre el proyecto, agregue un **Control de cuadro de herramientas de WPF** plantilla de elemento denominada `MyToolboxControl`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar \/ nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C\# \/ extensibilidad** y seleccione **Control de cuadro de herramientas de WPF**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para `MyToolboxControl.cs`.  
   
-     The solution now contains a user control, a `ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> that adds the control to the **Toolbox**, and a **Microsoft.VisualStudio.ToolboxControl** Asset entry in the VSIX manifest for  deployment.  
+     La solución contiene ahora un control de usuario, un `ProvideToolboxControlAttribute`<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que agrega el control a la **herramientas**, y un **Microsoft.VisualStudio.ToolboxControl** entrada de recurso en el manifiesto de VSIX para la implementación.  
   
-#### <a name="to-create-the-control-ui"></a>To create the control UI  
+#### Para crear la interfaz de usuario del control  
   
-1.  Open MyToolboxControl.xaml in the designer.  
+1.  Abra MyToolboxControl.xaml en el diseñador.  
   
-     The designer shows a <xref:System.Windows.Controls.Grid> control that contains a <xref:System.Windows.Controls.Button> control.  
+     El diseñador muestra un control <xref:System.Windows.Controls.Grid> que contiene un control <xref:System.Windows.Controls.Button>.  
   
-2.  Arrange the grid layout. When you select the <xref:System.Windows.Controls.Grid> control, blue control bars appear on the top and left edges of the grid. You can add rows and columns to the grid by clicking the bars.  
+2.  Organizar el diseño de cuadrícula. Cuando se selecciona el <xref:System.Windows.Controls.Grid> controlar, aparecen barras de control en azul en los bordes superiores e izquierdos de la cuadrícula. Puede agregar filas y columnas a la cuadrícula haciendo clic en las barras.  
   
-3.  Add child controls to the grid. You can position a child control by dragging it from the **Toolbox** to a section of the grid, or by setting its `Grid.Row` and `Grid.Column` attributes in the XAML. The following example adds two labels on the top row of the grid and a button on the second row.  
+3.  Agregar controles secundarios a la cuadrícula. Puede colocar un control secundario arrastrándolo desde el **herramientas** a una sección de la cuadrícula, o estableciendo su `Grid.Row` y `Grid.Column` atributos en XAML. El ejemplo siguiente agrega dos etiquetas en la fila superior de la cuadrícula y un botón en la segunda fila.  
   
     ```xaml  
     <Grid>  
@@ -70,18 +53,18 @@ The WPF (Windows Presentation Framework) Toolbox Control template lets you creat
     </Grid>  
     ```  
   
-## <a name="renaming-the-control"></a>Renaming the control  
- By default, your control will appear in the **Toolbox** as **MyToolboxControl** in a group named **MyToolboxControl.MyToolboxControl**. You can change these names in the MyToolboxControl.xaml.cs file.  
+## Cambiar el nombre del control  
+ De forma predeterminada, el control aparecerá en el **herramientas** como **MyToolboxControl** en un grupo denominado **MyToolboxControl.MyToolboxControl**. Puede cambiar estos nombres en el archivo MyToolboxControl.xaml.cs.  
   
-1.  Open MyToolboxControl.xaml.cs in the code view.  
+1.  Abra MyToolboxControl.xaml.cs en la vista código.  
   
-2.  Find the MyToolboxControl class and rename it to TestControl. (The fastest way to do this is to rename the class, then select **Rename** from the context menu and complete the steps. (For more information about the **Rename** command, see [Rename Refactoring (C#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2.  Busque la clase MyToolboxControl y cambie su nombre a TestControl. \(La forma más rápida de hacerlo es cambiar el nombre de la clase, a continuación, seleccione **cambiar el nombre de** en el menú contextual y complete los pasos. \(Para obtener más información acerca de la **cambiar el nombre de** de comandos, consulte [Cambiar el nombre de refactorización \(C\#\)](../csharp-ide/rename-refactoring-csharp.md).\)  
   
-3.  Go to the `ProvideToolboxControl` attribute and change the value of the first parameter to **Test**. This is the name of the group that will contain the control in the **Toolbox**.  
+3.  Vaya a la `ProvideToolboxControl` de atributo y cambie el valor del primer parámetro para **prueba**. Este es el nombre del grupo que contiene el control en el **herramientas**.  
   
-     The resulting code should look like this:  
+     El código resultante debe tener este aspecto:  
   
-    ```csharp  
+    ```c#  
     [ProvideToolboxControl("Test", true)]  
     public partial class TestControl : UserControl  
     {  
@@ -92,27 +75,27 @@ The WPF (Windows Presentation Framework) Toolbox Control template lets you creat
     }  
     ```  
   
-## <a name="building-testing-and-deployment"></a>Building, Testing, and Deployment  
- When you debug the project, you should find the control installed in the **Toolbox** of the experimental instance of Visual Studio.  
+## Compilación, prueba e implementación  
+ Cuando se depura el proyecto, encontrará el control instalado en el **herramientas** de la instancia experimental de Visual Studio.  
   
-#### <a name="to-build-and-test-the-control"></a>To build and test the control  
+#### Para compilar y probar el control  
   
-1.  Rebuild the project and start debugging.  
+1.  Vuelva a generar el proyecto e iniciar la depuración.  
   
-2.  In the new instance of Visual Studio, create a WPF Application project. Make sure the XAML Designer is open.  
+2.  En la nueva instancia de Visual Studio, cree un proyecto de aplicación WPF. Asegúrese de que el Diseñador de XAML está abierto.  
   
-3.  Find your control in the **Toolbox** and drag it to the design surface.  
+3.  Busque el control en el **Cuadro de herramientas** y arrástrelo a la superficie de diseño.  
   
-4.  Start debugging the WPF application.  
+4.  Inicie la depuración de la aplicación de WPF.  
   
-5.  Verify that your control appears.  
+5.  Compruebe que aparece el control.  
   
-#### <a name="to-deploy-the-control"></a>To deploy the control  
+#### Para implementar el control  
   
-1.  After you build the tested project, you can find the .vsix file in the \bin\debug\ folder of the project.  
+1.  Después de compilar el proyecto probado, puede encontrar el archivo .vsix en la carpeta \\bin\\debug\\ del proyecto.  
   
-2.  You can install it on a local computer by double-clicking the .vsix file and following the installation procedure. To uninstall the control, go to **Tools / Extensions and Updates** and look for the control extension, then click **Uninstall**.  
+2.  Puede instalarlo en un equipo local, haga doble clic en el archivo .vsix y siguiendo el procedimiento de instalación. Para desinstalar el control, vaya a **Herramientas \/ extensiones y actualizaciones** y busque la extensión de control, a continuación, haga clic en **desinstalar**.  
   
-3.  Upload the .vsix file to a network or to a Web site.  
+3.  Cargue el archivo .vsix en una red o en un sitio web.  
   
-     If you upload the file to the [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Web site, other users can use **Tools / Extensions and Updates** in Visual Studio to find the control online and install it.
+     Si va a cargar el archivo a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web, pueden usar otros usuarios **Herramientas \/ extensiones y actualizaciones** en Visual Studio para buscar el control en línea e instalarlo.

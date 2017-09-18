@@ -1,68 +1,51 @@
 ---
-title: IDebugProcess2::GetProcessId | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProcess2::GetProcessId
-helpviewer_keywords:
-- IDebugProcess2::GetProcessId
+title: "IDebugProcess2::GetProcessId | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProcess2::GetProcessId"
+helpviewer_keywords: 
+  - "IDebugProcess2::GetProcessId"
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 08258124c9717701c442c5606dda13e90f4c5b52
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-Gets the GUID for this process.  
+# IDebugProcess2::GetProcessId
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene el GUID para este proceso.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetProcessId(  
-   GUID* pguidProcessId  
+```cpp#  
+HRESULT GetProcessId(  
+   GUID* pguidProcessId  
 );  
 ```  
   
-```csharp  
-int GetProcessId(  
-   out Guid pguidProcessId  
+```c#  
+int GetProcessId(  
+   out Guid pguidProcessId  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `pguidProcessId`  
- [out] Returns the GUID for this process.  
+ \[out\]  Devuelve el GUID para este proceso.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- The Globally Unique IDentifier (GUID) identifies this process from all other processes running in the system.  
+## Comentarios  
+ El identificador único global \(GUID\) identifica este proceso de todos los procesos que se ejecutan en el sistema.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

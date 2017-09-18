@@ -1,72 +1,55 @@
 ---
-title: Adding a Menu to the Visual Studio Menu Bar | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- menus, creating top level
-- top-level menus
+title: "Agregar un men&#250; a la barra de men&#250;s de Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "menús, creación de nivel superior"
+  - "menús de nivel superior"
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 51
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3e187603315224cdd73dbfaa53ea5cc7d4b0b7df
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 51
 ---
-# <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adding a Menu to the Visual Studio Menu Bar
-This walkthrough shows how to add a menu to the menu bar of the Visual Studio integrated development environment (IDE). The IDE menu bar contains menu categories such as **File**, **Edit**, **View**, **Window**, and **Help**.  
+# Agregar un men&#250; a la barra de men&#250;s de Visual Studio
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Este tutorial muestra cómo agregar un menú a la barra de menús del entorno de desarrollo integrado \(IDE\) de Visual Studio. La barra de menús IDE contiene categorías de menú como **archivo**, **Editar**, **vista**, **ventana**, y **Ayuda**.  
   
- Before adding a new menu to the Visual Studio menu bar, consider whether your commands should be placed within an existing menu. For more information about command placement, see [Menus and Commands for Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
+ Antes de agregar un nuevo menú en la barra de menús de Visual Studio, considere si los comandos se deben colocar dentro de un menú existente. Para obtener más información acerca de la selección del comando, consulte [Menús y comandos de Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
   
- Menus are declared in the .vsct file of the project. For more information about menus and .vsct files, see [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Los menús se declaran en el archivo .vsct del proyecto. Para obtener más información acerca de los menús y los archivos .vsct, vea [Barras de herramientas, menús y comandos](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- By completing this walkthrough, you can create a menu named **TestMenu** that contains one command.  
+ Después de completar este tutorial, puede crear un menú denominado **TestMenu** que contiene un comando.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## Requisitos previos  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional de la instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulta [Instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Creating a VSIX Project that has a Custom Command item template  
+## Crear un proyecto de VSIX que tiene una plantilla de elemento de comando personalizado  
   
-1.  Create a VSIX project named `TopLevelMenu`. You can find the VSIX project template in the **New Project** dialog under **Visual C#** / **Extensibility**.  For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Cree un proyecto VSIX denominado `TopLevelMenu`. Puede encontrar la plantilla de proyecto VSIX en la **nuevo proyecto** en el cuadro de diálogo **Visual C\#** \/ **extensibilidad**.  Para obtener más información, consulta [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  When the project opens, add a custom command item template named **TestCommand**. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **TestCommand.cs**.  
+2.  Cuando se abre el proyecto, agregue una plantilla de elemento de comando personalizado denominada **TestCommand**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar \/ nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C\# \/ extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, el nombre del archivo de comandos **TestCommand.cs**.  
   
-## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Creating a Menu on the IDE Menu Bar  
+## Crear un menú en la barra de menús del IDE  
   
-#### <a name="to-create-a-menu"></a>To create a menu  
+#### Para crear un menú  
   
-1.  In **Solution Explorer**, open TestCommandPackage.vsct.  
+1.  En **el Explorador de soluciones**, abra TestCommandPackage.vsct.  
   
-     At the end of the file, there is a \<Symbols> node that contains several \<GuidSymbol> nodes. In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:  
+     Al final del archivo, hay un nodo \< símbolos \> que contiene varios nodos de \< GuidSymbol \>. En el nodo denominado guidTestCommandPackageCmdSet, agregue un nuevo símbolo, como sigue:  
   
     ```xml  
     <IDSymbol name="TopLevelMenu" value="0x1021"/>  
     ```  
   
-2.  Create an empty \<Menus> node in the \<Commands> node, just before \<Groups>. In the \<Menus> node, add a \<Menu> node , as follows:  
+2.  Crear un nodo \< menús \> vacío en el nodo \< comandos \>, justo antes de \< grupos \>. En el nodo \< menús \>, agregue un nodo \< Menu \>, como sigue:  
   
     ```xml  
     <Menus>  
@@ -81,15 +64,15 @@ This walkthrough shows how to add a menu to the menu bar of the Visual Studio in
     </Menus>  
     ```  
   
-     The `guid` and `id` values of the menu specify the command set and the specific menu in the command set.  
+     El `guid` y `id` valores del menú especifican el conjunto de comandos y el menú específico en el conjunto de comandos.  
   
-     The `guid` and `id` values of the parent position the menu on the section of the Visual Studio menu bar that contains the Tools and Add-ins menus.  
+     El `guid` y `id` valores del elemento primario colocar el menú en la sección de la barra de menús de Visual Studio que contiene los menús herramientas y complementos.  
   
-     The value of the `CommandName` string specifies that the text should appear in the menu item.  
+     El valor de la `CommandName` cadena especifica que el texto debe aparecer en el elemento de menú.  
   
-3.  In the \<Groups> section, find the \<Group> and change the \<Parent> element to point to the menu we just added:  
+3.  En la sección \< grupos \>, \< grupo \> encuentra y cambie el elemento \< principal \> seleccione el menú que acaba de agregar:  
   
-    ```csharp  
+    ```c#  
     <Groups>  
           <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
             <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
@@ -97,19 +80,19 @@ This walkthrough shows how to add a menu to the menu bar of the Visual Studio in
         </Groups>  
     ```  
   
-     This makes the group part of the new menu.  
+     Esto hace que el elemento de grupo del nuevo menú.  
   
-4.  Find the `Buttons` section. Notice that the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Package template has generated a `Button` element that has its parent set to `MyMenuGroup`. As a result, this command will appear on your menu.  
+4.  Busque la `Buttons` sección. Observe que el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de paquetes ha generado un `Button` elemento con su elemento primario establecido en `MyMenuGroup`. Como resultado, este comando aparecerá en el menú.  
   
-## <a name="building-and-testing-the-extension"></a>Building and Testing the Extension  
+## Compilar y probar la extensión  
   
-1.  Build the project and start debugging. An instance of the experimental instance should appear.  
+1.  Compile la solución y comience la depuración. Debe aparecer una instancia de la instancia experimental.  
   
-2.  The menu bar in the experimental instance should contain a **TestMenu** menu.  
+2.  La barra de menús en la instancia experimental debe contener una **TestMenu** menú.  
   
-3.  On the **TestMenu** menu, click **Invoke Test Command**.  
+3.  En el **TestMenu** menú, haga clic en **invocar el comando de prueba**.  
   
-     A message box should appear and display the message "TestCommand Package Inside TopLevelMenu.TestCommand.MenuItemCallback()". This indicates that the new command works.  
+     Debería aparecer un cuadro de mensaje y se mostrará el mensaje "TestCommand paquete dentro de TopLevelMenu.TestCommand.MenuItemCallback\(\)". Esto indica que el nuevo comando funciona.  
   
-## <a name="see-also"></a>See Also  
- [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)
+## Vea también  
+ [Barras de herramientas, menús y comandos](../extensibility/internals/commands-menus-and-toolbars.md)

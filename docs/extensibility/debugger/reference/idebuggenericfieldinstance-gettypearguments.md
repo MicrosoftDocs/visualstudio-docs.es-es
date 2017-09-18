@@ -1,74 +1,57 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- GetTypeArguments
-- IDebugGenericFieldInstance::GetTypeArguments
+title: "IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "GetTypeArguments"
+  - "IDebugGenericFieldInstance::GetTypeArguments"
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cf82089a18e82d559b669e5d73d6d6994dd1c34c
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Retrieves the type parameter arguments for this instance.  
+# IDebugGenericFieldInstance::GetTypeArguments
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Recupera los argumentos del parámetro de tipo para esta instancia.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT GetTypeArguments(  
-   ULONG32       cArgs,  
-   IDebugField** ppArgs,  
-   ULONG32*      pcArgs  
+   ULONG32       cArgs,  
+   IDebugField** ppArgs,  
+   ULONG32*      pcArgs  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetTypeArguments(  
-   uint              cArgs,  
-   out IDebugField[] ppArgs,  
-   ref uint          pcArgs  
+   uint              cArgs,  
+   out IDebugField[] ppArgs,  
+   ref uint          pcArgs  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `cArgs`  
- [in] Number of type parameters.  
+ \[in\]  número de parámetros de tipo.  
   
  `ppArgs`  
- [out] Returns an array of type parameters.  
+ \[out\]  Devuelve una matriz de parámetros de tipo.  
   
  `pcArgs`  
- [in, out] Number of members in the `ppArgs` array.  
+ \[in, out\]  Número de miembros de la matriz de `ppArgs` .  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

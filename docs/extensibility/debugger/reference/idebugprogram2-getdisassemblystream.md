@@ -1,81 +1,64 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgram2::GetDisassemblyStream
-helpviewer_keywords:
-- IDebugProgram2::GetDisassemblyStream
+title: "IDebugProgram2::GetDisassemblyStream | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgram2::GetDisassemblyStream"
+helpviewer_keywords: 
+  - "IDebugProgram2::GetDisassemblyStream"
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 50655e8d565fe08c4ea918d69f5eeb8780d43c55
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-Gets the disassembly stream for this program or a part of this program.  
+# IDebugProgram2::GetDisassemblyStream
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene el desensamblado transmitir para este programa o parte de este programa.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetDisassemblyStream(   
-   DISASSEMBLY_STREAM_SCOPE   dwScope,  
-   IDebugCodeContext2*        pCodeContext,  
-   IDebugDisassemblyStream2** ppDisassemblyStream  
+```cpp#  
+HRESULT GetDisassemblyStream(   
+   DISASSEMBLY_STREAM_SCOPE   dwScope,  
+   IDebugCodeContext2*        pCodeContext,  
+   IDebugDisassemblyStream2** ppDisassemblyStream  
 );  
 ```  
   
-```csharp  
-int GetDisassemblyStream(   
-   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
-   IDebugCodeContext2             pCodeContext,  
-   out IDebugDisassemblyStream2   ppDisassemblyStream  
+```c#  
+int GetDisassemblyStream(   
+   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
+   IDebugCodeContext2             pCodeContext,  
+   out IDebugDisassemblyStream2   ppDisassemblyStream  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `dwScope`  
- [in] Specifies a value from the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration that defines the scope of the disassembly stream.  
+ \[in\]  Especifica un valor de enumeración de [DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) que define el ámbito de la secuencia de desensamblado.  
   
  `pCodeContext`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the position of where to start the disassembly stream.  
+ \[in\]  Un objeto de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa la posición de dónde iniciar la secuencia de desensamblado.  
   
  `ppDisassemblyStream`  
- [out] Returns an [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) object that represents the disassembly stream.  
+ \[out\]  Devuelve un objeto de [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) que representa la secuencia de desensamblado.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_DISASM_NOTSUPPORTED` if disassembly is not supported for this particular architecture.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  devuelve `E_DISASM_NOTSUPPORTED` si el desensamblado no se admite para esta arquitectura determinada.  
   
-## <a name="remarks"></a>Remarks  
- If the `dwScopes` parameter has the `DSS_HUGE` flag of the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration set, then the disassembly is expected to return a large number of disassembly instructions, for example, for an entire file or module. If the `DSS_HUGE` flag is not set, then the disassembly is expected to be confined to a small region, typically that of a single function.  
+## Comentarios  
+ Si el parámetro de `dwScopes` tiene el indicador de `DSS_HUGE` de enumeración de [DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) establecida, el desensamblado es esperado devolver un gran número de instrucciones de desensamblado, por ejemplo, para un archivo o un módulo completo.  Si el indicador de `DSS_HUGE` no se establece, el desensamblado es esperado ser confinado a una pequeña región, normalmente que de una sola función.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
+ [DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

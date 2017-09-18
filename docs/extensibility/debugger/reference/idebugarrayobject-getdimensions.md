@@ -1,73 +1,56 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugArrayObject::GetDimensions
-helpviewer_keywords:
-- IDebugArrayObject::GetDimensions method
+title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugArrayObject::GetDimensions"
+helpviewer_keywords: 
+  - "IDebugArrayObject::GetDimensions (método)"
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 05ff3521879afe821fbac681a89ad993f5a18000
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
-Gets the dimensions of the array.  
+# IDebugArrayObject::GetDimensions
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene las dimensiones de la matriz.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetDimensions(   
-   DWORD dwCount,  
-   DWORD dwDimensions[]  
+```cpp#  
+HRESULT GetDimensions(   
+   DWORD dwCount,  
+   DWORD dwDimensions[]  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetDimensions(  
-   [In] uint    dwCount,   
-   [Out] uint[] dwDimensions  
+   [In] uint    dwCount,   
+   [Out] uint[] dwDimensions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `dwCount`  
- [in] The number of dimensions to retrieve.  
+ \[in\]  el número de dimensiones a recuperar.  
   
  `dwDimensions`  
- [in, out] An array that is filled in with the sizes of each dimension. `dwCount` specifies the maximum size of the `dwDimensions` array.  
+ \[in, out\]  Una matriz que se completa con los tamaños de cada dimensión.  `dwCount` especifica el tamaño máximo de la matriz de `dwDimensions` .  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- A multi-dimensional array can have different sizes for each dimension. For example, given the three-dimensional array `myarray[3][2][6]`, this method would return 3, 2, and 6 in the `dwDimensions` parameter in that order.  
+## Comentarios  
+ Una matriz multidimensional puede tener distintos tamaños para cada dimensión.  Por ejemplo, dada la matriz tridimensional `myarray[3][2][6]`, este método devolverá 3, 2 y 6, en el parámetro de `dwDimensions` en ese orden.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

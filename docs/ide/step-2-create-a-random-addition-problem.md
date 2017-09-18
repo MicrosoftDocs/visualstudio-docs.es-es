@@ -1,114 +1,101 @@
 ---
-title: 'Step 2: Create a Random Addition Problem | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Paso 2: Crear un problema de suma aleatoria | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 caps.latest.revision: 27
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 800b113b78da57b4bd0a3a760c884b96c9b138c2
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 27
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Step 2: Create a Random Addition Problem
-In the second part of this tutorial, you make the quiz challenging by adding math problems that are based on random numbers. You also create a method that's named `StartTheQuiz()` and that fills in the problems and starts the countdown timer. Later in this tutorial, you'll add the subtraction, multiplication, and division problems.  
+# Paso 2: Crear un problema de suma aleatoria
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante.  También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás.  Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.  
   
 > [!NOTE]
->  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos.  Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-create-a-random-addition-problem"></a>To create a random addition problem  
+### Para crear un problema de suma aleatoria  
   
-1.  In the form designer, choose the form (Form1).  
+1.  En el diseñador de formularios, elija el formulario \(Form1\).  
   
-2.  On the menu bar, choose **View**, **Code**.  
+2.  En la barra de menús, elija **Ver**, **Código**.  
   
-     Form1.cs or Form1.vb appears, depending on the programming language that you're using, so that you can view the code behind the form.  
+     Aparecerá Form1.cs o Form1.vb, según el lenguaje de programación que esté utilizando, de modo que podrá ver el código subyacente del formulario.  
   
-3.  Create a `Random` object by adding a `new` statement near the top of the code, like the following.  
+3.  Cree un objeto `Random` agregando una instrucción `new` cerca de la parte superior del código, tal y como se muestra a continuación.  
   
-     [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]  [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]  
+     [!code-cs[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
+     [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]  
   
-     You've added a `Random` object to your form and named the object **randomizer**.  
+     Ha agregado un objeto `Random` al formulario y lo ha llamado **randomizer**.  
   
-     `Random` is known as an object. You've probably heard that word before, and you learn more about what it means for programming in the next tutorial. For now, just remember that you can use `new` statements to create buttons, labels, panels, OpenFileDialogs, ColorDialogs, SoundPlayers, Randoms, and even forms, and those items are referred to as objects. When you run your program, the form is started, and the code behind it creates a `Random` object and names it **randomizer**.  
+     `Random` se denomina objeto.  Probablemente habrá oído esta palabra antes. Obtendrá más información sobre lo que significa en programación en el siguiente tutorial.  De momento, solo tiene que recordar que puede utilizar las instrucciones `new` para crear botones, etiquetas, paneles, controles OpenFileDialog, ColorDialog, SoundPlayer y Random e incluso formularios, y que estos elementos se denominan objetos.  Cuando se ejecute el programa, se iniciará el formulario y el código subyacente creará un objeto `Random`, que llamará **randomizer**.  
   
-     Soon you'll build a method to check the answers, so your quiz must use variables to store the random numbers that it generates for each problem. See [Variables](/dotnet/visual-basic/programming-guide/language-features/variables/index) or [Types](/dotnet/csharp/programming-guide/types/index). To properly use variables, you must declare them, which means listing their names and data types.  
+     Pronto compilaremos un método para comprobar las respuestas, de modo que la prueba debe utilizar variables para almacenar los números aleatorios que genera para cada problema.  Vea [Variables](/dotnet/visual-basic/programming-guide/language-features/variables/index) o [Tipos](/dotnet/csharp/programming-guide/types/index).  Para utilizar correctamente las variables, debe declararlas, lo que significa que debe enumerar sus nombres y tipos de datos.  
   
-4.  Add two integer variables to the form, and name them **addend1** and **addend2**.  
-  
-    > [!NOTE]
-    >  An integer variable is known as an int in C# or an Integer in Visual Basic. This kind of variable stores a positive or negative number from -2147483648 through 2147483647 and can store only whole numbers, not decimals.  
-  
-     You use a similar syntax to add an integer variable as you did to add the `Random` object, as the following code shows.  
-  
-     [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]  [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]  
-  
-5.  Add a method that's named `StartTheQuiz()` and that uses the `Random` object's `Next()` method to show the random numbers in the labels. `StartTheQuiz()` will eventually fill in all of the problems and then start the timer, so add a comment. The function should look like the following.  
-  
-     [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]  [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]  
-  
-     Notice that when you enter the dot (.) after **randomizer** in the code, an IntelliSense window opens and shows you all of the `Random` object's methods that you can call. For example, Intellisense lists the `Next()` method, as follows.  
-  
-     ![Next method](../ide/media/express_randomwhite.png "Express_RandomWhite")  
-Next method  
-  
-     When you enter a dot after an object, IntelliSense shows a list of the object's members, such as properties, methods, and events.  
+4.  Agregue dos variables de entero al formulario y asígneles los nombres **addend1** y **addend2**.  
   
     > [!NOTE]
-    >  When you use the `Next()` method with the `Random` object, such as when you call `randomizer.Next(50)`, you get a random number that's less than 50 (from 0 through 49). In this example, you called `randomizer.Next(51)`. You used 51 and not 50 so that the two random numbers will add up to an answer that's from 0 through 100. If you pass 50 to the `Next()` method, it chooses a number from 0 through 49, so the highest possible answer is 98, not 100. After the first two statements in the method run, each of the two integer variables, `addend1` and `addend2`, hold a random number from 0 through 50. This screenshot shows Visual C# code, but IntelliSense works the same way for Visual Basic.  
+    >  Una variable de entero se conoce como int en C\# o integer en Visual Basic.  Este tipo de variable almacena un número positivo o negativo comprendido entre \-2147483648 y 2147483647, y solo puede almacenar números enteros, no decimales.  
   
-     Take a closer look at these statements.  
+     Para agregar una variable de entero se utiliza una sintaxis similar a la que usó para agregar el objeto `Random`, tal y como se muestra en el código siguiente.  
   
-     [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]  [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]  
+     [!code-cs[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
+     [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]  
   
-     The statements set the **Text** properties of **plusLeftLabel** and **plusRightLabel** so that they display the two random numbers. You must use the integer's `ToString()` method to convert the numbers to text. (In programming, string means text. Label controls display only text, not numbers.  
+5.  Agregue un método denominado `StartTheQuiz()` que utilice el método `Next()` del objeto `Random` para mostrar números aleatorios en las etiquetas.  `StartTheQuiz()` irá rellenando gradualmente todos los problemas e iniciará el temporizador, así que debe agregar un comentario.  La función debería tener un aspecto parecido al siguiente.  
   
-6.  In the design window, either double-click the **Start** button, or choose it and then choose the Enter key.  
+     [!code-cs[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
+     [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]  
   
-     When a quiz taker chooses this button, the quiz should start, and you've just added a Click event handler to implement that behavior.  
+     Observe que cuando escribe el punto \(.\) después de randomizer en el código, se abre una ventana de IntelliSense en la que se muestran todos los métodos del objeto `Random` a los que se puede llamar.  Por ejemplo, Intellisense muestra el método `Next()` de la forma siguiente.  
   
-7.  Add the following two statements.  
+     ![Método Next](~/ide/media/express_randomwhite.png "Express\_RandomWhite")  
+Método Next  
   
-     [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]  [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]  
+     Cuando escribe un punto después de un objeto, IntelliSense muestra una lista de los miembros del objeto, como las propiedades, métodos y eventos.  
   
-     The first statement calls the new `StartTheQuiz()` method. The second statement sets the **Enabled** property of the **startButton** control to **False** so that the quiz taker can't choose the button during a quiz.  
+    > [!NOTE]
+    >  Cuando use el método `Next()` con el objeto `Random`, por ejemplo cuando llame a `randomizer.Next(50)`, obtendrá un número aleatorio menor que 50 \(del 0 al 49\).  En este ejemplo, se llamó a `randomizer.Next(51)`.  Se ha utilizado 51 y no 50 para que los dos números aleatorios sumen una respuesta que esté comprendida entre 0 y 100.  Si pasa 50 al método `Next()`, este elige un número del 0 al 49, de modo que la respuesta mayor posible es 98, y no 100.  Después de ejecutarse las dos primeras instrucciones del método, cada una de las dos variables de entero, `addend1` y `addend2`, contiene un número aleatorio del 0 al 50.  Esta captura de pantalla muestra el código de Visual C\#, pero IntelliSense funciona de la misma manera con Visual Basic.  
   
-8.  Save your code, run it, and then choose the **Start** button.  
+     Fijémonos con más atención en estas instrucciones.  
   
-     A random addition problem appears, as the following illustration shows.  
+     [!code-cs[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
+     [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]  
   
-     ![Random addition problem](../ide/media/express_additionproblem.png "Express_AdditionProblem")  
-Random addition problem  
+     Las instrucciones establecen las propiedades **Text** de **plusLeftLabel** y **plusRightLabel** para que muestren los dos números aleatorios.  Debe utilizar el método `ToString()` del entero para convertir los números en texto. \(En programación, cadena significa texto\).  Los controles de etiqueta muestran únicamente texto, no números.  
   
-     In the next step of the tutorial, you'll add the sum.  
+6.  En la ventana de diseño, haga doble clic en el botón **Iniciar**, o elíjalo y presione la tecla Entrar.  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+     Cuando un jugador elija este botón, la prueba deberá iniciarse. Por este motivo, acaba de agregar un controlador de eventos Click, para implementar este comportamiento.  
   
--   To go to the next tutorial step, see [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md).  
+7.  Agregue las dos instrucciones siguientes.  
   
--   To return to the previous tutorial step, see [Step 1: Create a Project and Add Labels to Your Form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+     [!code-cs[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
+     [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]  
+  
+     La primera instrucción llama al nuevo método `StartTheQuiz()`.  La segunda instrucción establece la propiedad **Enabled** del control **startButton** en **False**, de modo que el jugador de la prueba no puede elegir el botón durante una prueba.  
+  
+8.  Guarde el código, ejecútelo y, a continuación, elija el botón **Iniciar**.  
+  
+     Aparece un problema de suma aleatoria, tal y como se muestra en la ilustración siguiente.  
+  
+     ![Problema de sumas aleatorias](../ide/media/express_additionproblem.png "Express\_AdditionProblem")  
+Problema de suma aleatoria  
+  
+     En el siguiente paso del tutorial, agregará la suma.  
+  
+### Para continuar o revisar  
+  
+-   Para ir al siguiente paso del tutorial, vea [Paso 3: Agregar un temporizador de cuenta atrás](../ide/step-3-add-a-countdown-timer.md).  
+  
+-   Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar etiquetas al formulario](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

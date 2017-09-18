@@ -1,82 +1,65 @@
 ---
-title: Support for Code Snippets in a Legacy Language Service | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- snippets, supporting in language services
-- code snippets, supporting in language services [managed package framework]
-- language services [managed package framework], supporting code snippets
+title: "Compatibilidad con fragmentos de c&#243;digo en un servicio de lenguaje heredado | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "fragmentos de código, admitir en servicios de lenguaje"
+  - "fragmentos de código de compatibilidad en los servicios de lenguaje [managed package framework]"
+  - "Servicios de lenguaje [managed package framework], compatibilidad con fragmentos de código"
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 28
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fa4012ad3460551dcfd5d2f7c99f406505077ebd
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 28
 ---
-# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Support for Code Snippets in a Legacy Language Service
-A code snippet is a piece of code that is inserted into the source file. The snippet itself is an XML-based template with a set of fields. These fields are highlighted after the snippet is inserted and can have different values depending on the context in which the snippet is inserted. Immediately after the snippet is inserted, the language service can format the snippet.  
+# Compatibilidad con fragmentos de c&#243;digo en un servicio de lenguaje heredado
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+Un fragmento de código es un fragmento de código que se inserta en el archivo de origen. El fragmento de código es una plantilla basada en XML con un conjunto de campos. Estos campos se resaltan después el fragmento de código se inserta y puede tener diferentes valores dependiendo del contexto en el que se inserta el fragmento de código. Inmediatamente después de inserta el fragmento de código, el servicio de lenguaje puede dar formato el fragmento de código.  
   
- The snippet is inserted in a special edit mode that allows the fields of the snippet to be navigated by using the TAB key. The fields can support IntelliSense-style drop-down menus. The user commits the snippet to the source file by typing either the ENTER or the ESC key. To learn more about snippets, please see [Code Snippets](../../ide/code-snippets.md).  
+ El fragmento de código se inserta en un modo de edición especial que permite a los campos del fragmento de código para navegar utilizando la tecla TAB. Los campos pueden admitir los menús desplegables de estilo de IntelliSense. El usuario confirma el fragmento de código al archivo de origen escribiendo el ENTRAR o la tecla ESC. Para obtener más información acerca de los fragmentos de código, consulte [Fragmentos de código](../../ide/code-snippets.md).  
   
- Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Walkthrough: Implementing Code Snippets](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la nueva forma de implementar las características del servicio de lenguaje es usar extensiones MEF. Para obtener más información, consulte [Tutorial: Implementar fragmentos de código](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
+>  Se recomienda que comience a utilizar el nuevo editor de API tan pronto como sea posible. Esto mejora el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
-## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework Support for Code Snippets  
- The managed package framework (MPF) supports most snippet functionality, from reading the template to inserting the snippet and enabling the special edit mode. Support is managed through the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> class.  
+## Compatibilidad con Framework de paquete para fragmentos de código administrado  
+ El marco de trabajo de paquete administrado \(MPF\) admite toda la funcionalidad del fragmento de código, de la lectura de la plantilla para insertar el fragmento de código y habilitar especial del modo de edición. Soporte técnico se administra a través de la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase.  
   
- When the <xref:Microsoft.VisualStudio.Package.Source> class is instantiated, the <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> method in the <xref:Microsoft.VisualStudio.Package.LanguageService> class is called to obtain an <xref:Microsoft.VisualStudio.Package.ExpansionProvider> object (note that the base <xref:Microsoft.VisualStudio.Package.LanguageService> class always returns a new <xref:Microsoft.VisualStudio.Package.ExpansionProvider> object for each <xref:Microsoft.VisualStudio.Package.Source> object).  
+ Cuando el <xref:Microsoft.VisualStudio.Package.Source> se crea una instancia de clase, el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> método en la <xref:Microsoft.VisualStudio.Package.LanguageService> clase se llama para obtener un <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto \(tenga en cuenta que la base de <xref:Microsoft.VisualStudio.Package.LanguageService> clase siempre devuelve un nuevo <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto para cada <xref:Microsoft.VisualStudio.Package.Source> objeto\).  
   
- The MPF does not support expansion functions. An expansion function is a named function that is embedded in a snippet template and returns one or more values to be placed in a field. The values are returned by the language service itself through an <xref:Microsoft.VisualStudio.Package.ExpansionFunction> object. The <xref:Microsoft.VisualStudio.Package.ExpansionFunction> object must be implemented by the language service to support expansion functions.  
+ La MPF no admite funciones de expansión. Una función de expansión es una función con nombre que está incrustada en una plantilla de fragmento y devuelve uno o más valores que se colocarán en un campo. Los valores se devuelven por el lenguaje de servicio a través de un <xref:Microsoft.VisualStudio.Package.ExpansionFunction> objeto. La <xref:Microsoft.VisualStudio.Package.ExpansionFunction> objeto debe ser implementado por el servicio de lenguaje para admitir las funciones de expansión.  
   
-## <a name="providing-support-for-code-snippets"></a>Providing Support for Code Snippets  
- To enable support for code snippets, you must provide or install the snippets and you must provide the means for the user to insert those snippets. There are three steps to enabling support for code snippets:  
+## Proporciona compatibilidad con fragmentos de código  
+ Para habilitar la compatibilidad con fragmentos de código, debe proporcionar o instalar los fragmentos de código y debe proporcionar los medios para el usuario insertar los fragmentos de código. Hay tres pasos para habilitar la compatibilidad con fragmentos de código:  
   
-1.  Installing the snippet files.  
+1.  Instalación de los archivos de fragmento de código.  
   
-2.  Enabling code snippets for your language service.  
+2.  Habilitación de fragmentos de código para el servicio de lenguaje.  
   
-3.  Invoking the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> object.  
+3.  Invocar la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.  
   
-### <a name="installing-the-snippet-files"></a>Installing the Snippet Files  
- All snippets for a language are stored as templates in XML files, typically one snippet template per file. For details on the XML schema used for code snippet templates, see [Code Snippets Schema Reference](../../ide/code-snippets-schema-reference.md). Each snippet template is identified with a language ID. This language ID is specified in the registry and is put into the `Language` attribute of the \<Code> tag in the template.  
+### Instalación de los archivos de fragmento de código  
+ Todos los fragmentos de código para un lenguaje se almacenan como plantillas en archivos XML, normalmente una plantilla de fragmentos por archivo. Para obtener más información sobre el esquema XML utilizado para las plantillas de fragmento de código, consulte [Referencia de esquemas de fragmentos de código](../../ide/code-snippets-schema-reference.md). Cada plantilla de fragmento de código se identifica con un identificador de idioma. Este lenguaje identificador se especifica en el registro y se coloca en el `Language` atributo de la etiqueta \< código \> en la plantilla.  
   
- There are typically two locations where snippet template files are stored: 1) where your language was installed and 2) in the user's folder. These locations are added to the registry so that the Visual Studio **Code Snippets Manager** can find the snippets. The user's folder is where snippets created by the user are stored.  
+ Normalmente, hay dos ubicaciones donde se almacenan los archivos de plantilla de fragmento de código: 1\) donde se ha instalado el idioma y \(2\) en la carpeta del usuario. Estas ubicaciones se agregan al registro hasta que Visual Studio **Administrador de fragmentos de código** puede encontrar los fragmentos de código. La carpeta del usuario es donde se almacenan los fragmentos de código creados por el usuario.  
   
- The typical folder layout for the installed snippet template files looks like this: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ El diseño de carpeta habitual para los archivos de plantilla de fragmento instalado tiene el siguiente aspecto: *\[InstallRoot\]*\\*\[TestLanguage\]*\\Snippets\\*\[LCID\]*\\Snippets.  
   
- *[InstallRoot]* is the folder your language is installed in.  
+ *\[InstallRoot\]* es la carpeta instalado en su idioma.  
   
- *[TestLanguage]* is the name of your language as a folder name.  
+ *\[TestLanguage\]* es el nombre de su lenguaje, como un nombre de carpeta.  
   
- *[LCID]* is the locale ID. This is how localized versions of your snippets are stored. For example, the locale ID for English is 1033, so *[LCID]* is replaced by 1033.  
+ *\[LCID\]* es el identificador de configuración regional. Se trata de cómo localizadas versiones de sus fragmentos de código se almacenan. Por ejemplo, el identificador de configuración regional para inglés es 1033, por lo que *\[LCID\]* se sustituye por 1033.  
   
- One additional file must be supplied and that is an index file, typically called SnippetsIndex.xml or ExpansionsIndex.xml (you can use any valid filename ending in .xml). This file is typically stored in the *[InstallRoot]*\\*[TestLanguage]* folder and specifies the exact location of the snippets folder as well as the language ID and GUID of the language service that uses the snippets. The exact path of the index file is put into the registry as described later in "Installing the Registry Entries". Here is an example of a SnippetsIndex.xml file:  
+ Debe proporcionarse un archivo adicional y que es un archivo de índice, normalmente denominado SnippetsIndex.xml o ExpansionsIndex.xml \(puede utilizar cualquier nombre de archivo válida terminada en .xml\). Este archivo normalmente se almacenan en el *\[InstallRoot\]*\\*\[TestLanguage\]* carpeta y especifica la ubicación exacta de la carpeta de fragmentos de código así como el identificador de idioma y el GUID del servicio de lenguaje que usa los fragmentos de código. La ruta de acceso exacta del archivo de índice se coloca en el registro como se describe más adelante en "Instalar las entradas del registro". Este es un ejemplo de un archivo SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -93,26 +76,26 @@ A code snippet is a piece of code that is inserted into the source file. The sni
 </SnippetCollection>  
 ```  
   
- The \<Language> tag specifies the language ID (the `Lang` attribute) and the language service GUID.  
+ La etiqueta \< idioma \> especifica el identificador de idioma \(el `Lang` atributo\) y el GUID del servicio de lenguaje.  
   
- This example assumes you have installed your language service in the Visual Studio installation folder. The %LCID% is replaced with the user's current locale ID. Multiple \<SnippetDir> tags can be added, one for each different directory and locale. In addition, a snippet folder can contain subfolders, each of which is identified in the index file with the \<SnippetSubDir> tag that is embedded in a \<SnippetDir> tag.  
+ En este ejemplo se supone que ha instalado el servicio de lenguaje en la carpeta de instalación de Visual Studio. % LCID % se reemplaza con el identificador de configuración regional actual. del usuario Puede agregar varias etiquetas \< SnippetDir \>, uno por cada directorio diferente y la configuración regional. Además, una carpeta de fragmento puede contener subcarpetas, cada uno de los cuales se identifica en el archivo de índice con la etiqueta \< SnippetSubDir \> que está incrustada en una etiqueta \< SnippetDir \>.  
   
- Users can also create their own snippets for your language. These are typically stored in the user's settings folder, for example *[TestDocs]*\Code Snippets\\*[TestLanguage]*\Test Code Snippets, where *[TestDocs]* is the location of the user's settings folder for Visual Studio.  
+ Los usuarios también pueden crear sus propios fragmentos de código para su idioma. Normalmente se almacenan en la carpeta de configuración del usuario, por ejemplo *\[TestDocs\]*\\Code Snippets\\*\[TestLanguage\]*\\Test fragmentos de código, donde *\[TestDocs\]* es la ubicación de la carpeta de configuración del usuario de Visual Studio.  
   
- The following substitution elements can be placed in the path stored in the \<DirPath> tag in the index file.  
+ Los siguientes elementos de sustitución pueden colocarse en la ruta almacenada en la etiqueta \< DirPath \> en el archivo de índice.  
   
-|Element|Description|  
-|-------------|-----------------|  
-|%LCID%|Locale ID.|  
-|%InstallRoot%|Root installation folder for Visual Studio, for example, C:\Program Files\Microsoft Visual Studio 8.|  
-|%ProjDir%|Folder containing the current project.|  
-|%ProjItem%|Folder containing the current project item.|  
-|%TestDocs%|Folder in the user's settings folder, for example, C:\Documents and Settings\\*[username]*\My Documents\Visual Studio\8.|  
+|Elemento|Descripción|  
+|--------------|-----------------|  
+|% LCID %|Id. de configuración regional.|  
+|% InstallRoot %|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\\Program Files\\Microsoft Visual Studio 8.|  
+|% ProjDir %|Carpeta que contiene el proyecto actual.|  
+|% ProjItem %|Carpeta que contiene el elemento de proyecto actual.|  
+|% TestDocs %|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\\Documents and Settings\\*\[username\]*\\My Studio\\8.|  
   
-### <a name="enabling-code-snippets-for-your-language-service"></a>Enabling Code Snippets for Your Language Service  
- You can enable code snippets for your language service by adding the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> attribute to your VSPackage (see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md) for details). The <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> and <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parameters are optional, but you should include the `SearchPaths` named parameter in order to inform the **Code Snippets Manager** of the location of your snippets.  
+### Habilitación de fragmentos de código para el servicio de lenguaje  
+ Puede habilitar los fragmentos de código para el servicio de lenguaje agregando el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atributo el VSPackage \(consulte [Registrar un servicio de lenguaje](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información\). El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> y <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parámetros son opcionales, pero debe incluir el `SearchPaths` con el nombre de parámetro para informar a los **Administrador de fragmentos de código** de la ubicación de los fragmentos de código.  
   
- The following is an example of how to use this attribute:  
+ El siguiente es un ejemplo de cómo utilizar este atributo:  
   
 ```  
 [ProvideLanguageCodeExpansion(  
@@ -124,20 +107,20 @@ A code snippet is a piece of code that is inserted into the source file. The sni
          SearchPaths = @"%InstallRoot%\Test Snippet Language\Snippets\%LCID%\")]    // Path to snippets  
 ```  
   
-### <a name="calling-the-expansion-provider"></a>Calling the Expansion Provider  
- The language service controls the insertion of any code snippet, as well as the way insertion is invoked.  
+### Llamando al proveedor de expansión  
+ El servicio de lenguaje controla la inserción de cualquier fragmento de código, así como la forma en que se invoca la inserción.  
   
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>Calling the Expansion Provider for Code Snippets  
- There are two ways to invoke the expansion provider: by using a menu command or by using a shortcut from a completion list.  
+## Llamando al proveedor de expansión para fragmentos de código  
+ Hay dos maneras de invocar el proveedor de expansión: mediante un comando de menú o mediante un acceso directo de una lista de finalización.  
   
-### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserting a Code Snippet by using a Menu Command  
- To use a menu command to display the snippet browser, you add a menu command and then call the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method in the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface in response to that menu command.  
+### Insertar un fragmento de código mediante un comando de menú  
+ Para utilizar un comando de menú para mostrar el Explorador de fragmento de código, agregue un comando de menú y, a continuación, llame a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfaz en respuesta a ese comando de menú.  
   
-1.  Add a command and a button to your .vsct file. You can find instructions for doing so in [Creating an Extension with a Menu Command](../../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Agregar un botón y un comando en el archivo .vsct. Puede encontrar instrucciones para hacer esto en [Tutorial: Crear un comando de menú mediante la plantilla de paquete de Visual Studio](../Topic/Walkthrough:%20Creating%20a%20Menu%20Command%20By%20Using%20the%20Visual%20Studio%20Package%20Template.md).  
   
-2.  Derive a class from the <xref:Microsoft.VisualStudio.Package.ViewFilter> class and override the <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> method to indicate support for the new menu command. This example always enables the menu command.  
+2.  Derivar una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar la compatibilidad para el nuevo comando de menú. Este ejemplo habilita siempre el comando de menú.  
   
-    ```csharp  
+    ```c#  
     using Microsoft.VisualStudio.Package;  
   
     namespace TestLanguagePackage  
@@ -171,9 +154,9 @@ A code snippet is a piece of code that is inserted into the source file. The sni
     }  
     ```  
   
-3.  Override the <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in the <xref:Microsoft.VisualStudio.Package.ViewFilter> class to obtain the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> object and call the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method on that object.  
+3.  Invalidar el <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método en la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase para obtener la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto y llamar a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método en ese objeto.  
   
-    ```csharp  
+    ```c#  
     using Microsoft.VisualStudio.Package;  
   
     namespace TestLanguagePackage  
@@ -221,7 +204,7 @@ A code snippet is a piece of code that is inserted into the source file. The sni
   
     ```  
   
-     The following methods in the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> class are called by Visual Studio in the given order during the process of inserting the snippet:  
+     Los métodos siguientes en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase llama Visual Studio en el orden especificado durante el proceso de insertar el fragmento de código:  
   
 4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
@@ -233,18 +216,19 @@ A code snippet is a piece of code that is inserted into the source file. The sni
   
 8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-     After the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> method is called, the snippet has been inserted and the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> object is in a special edit mode used for modifying a snippet that has just been inserted.  
+     Después de la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> se llama al método, se ha insertado el fragmento de código y la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto está en un modo de edición especial utilizado para modificar un fragmento de código que acaba de insertar.  
   
-### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Inserting a code snippet by using a shortcut  
- Implementation of a shortcut from a completion list is much more involved than implementing a menu command. You must first add snippet shortcuts to the IntelliSense word completion list. Then you must detect when a snippet shortcut name has been inserted as a result of completion. Finally, you must obtain the snippet title and path using the shortcut name and pass that information to the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> method on the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> method.  
+### Insertar un fragmento de código mediante un acceso directo  
+ Implementación de un acceso directo de una lista de finalización es mucho más complicado que la implementación de un comando de menú. Primero debe agregar accesos directos de fragmento de código a la lista de finalización de palabras de IntelliSense. A continuación, debe detectar cuando se ha insertado un nombre de acceso directo del fragmento de código como resultado de la finalización. Por último, debe obtener el título del fragmento de código y la ruta de acceso con el nombre del acceso directo y pasar esa información a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> \(método\).  
   
- To add snippet shortcuts to the word completion list, add them to the <xref:Microsoft.VisualStudio.Package.Declarations> object in your <xref:Microsoft.VisualStudio.Package.AuthoringScope> class. You must make sure you can identify the shortcut as a snippet name. For an example, see [Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Para agregar accesos directos de fragmento de código a la lista de finalización de word, agréguelos a la <xref:Microsoft.VisualStudio.Package.Declarations> objeto en su <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase. Debe asegurarse de que puede identificar el acceso directo como un nombre de fragmento de código. Para obtener un ejemplo, consulta [Tutorial: Obtener una lista de fragmentos de código instalados \(implementación heredado\)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
- You can detect the insertion of the code snippet shortcut in the <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> method of the <xref:Microsoft.VisualStudio.Package.Declarations> class. Because the snippet name has already been inserted into the source file, it must be removed when the expansion is inserted. The <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> method takes a span that describes the point of insertion for the snippet; if the span includes the entire snippet name in the source file, that name is replaced by the snippet.  
+ Puede detectar la inserción del acceso directo de fragmento de código en el <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> método de la <xref:Microsoft.VisualStudio.Package.Declarations> clase. Dado que el nombre del fragmento de código ya se ha insertado en el archivo de origen, debe quitarse cuando se inserta la expansión. El <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método toma un intervalo que describe el punto de inserción para el fragmento; si el intervalo incluye el nombre del fragmento completo en el archivo de origen, ese nombre se sustituye por el fragmento de código.  
   
- Here is a version of a <xref:Microsoft.VisualStudio.Package.Declarations> class that handles snippet insertion given a shortcut name. Other methods in the <xref:Microsoft.VisualStudio.Package.Declarations> class have been omitted for clarity. Note that the constructor of this class takes a <xref:Microsoft.VisualStudio.Package.LanguageService> object. This can be passed in from your version of the <xref:Microsoft.VisualStudio.Package.AuthoringScope> object (for example, your implementation of the <xref:Microsoft.VisualStudio.Package.AuthoringScope> class might take the <xref:Microsoft.VisualStudio.Package.LanguageService> object in its constructor and pass that object on to your `TestDeclarations` class constructor).  
+ Aquí es una versión de un <xref:Microsoft.VisualStudio.Package.Declarations> clase que controla la inserción de fragmentos de un nombre de método abreviado. Otros métodos en el <xref:Microsoft.VisualStudio.Package.Declarations> clase se han omitido por motivos de claridad. Tenga en cuenta que el constructor de esta clase toma un <xref:Microsoft.VisualStudio.Package.LanguageService> objeto. Esto puede pasarse en de la versión de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto \(por ejemplo, la implementación de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase podría tomar la <xref:Microsoft.VisualStudio.Package.LanguageService> objeto en su constructor y pasar ese objeto en su `TestDeclarations` constructor de clase\).  
   
-```csharp  
+```  
+[C#]  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -343,7 +327,7 @@ namespace TestLanguagePackage
 }  
 ```  
   
- When the language service gets the shortcut name, it calls the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> method to obtain the filename and code snippet title. The language service then calls the <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> method in the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> class to insert the code snippet. The following methods are called by Visual Studio in the given order in the <xref:Microsoft.VisualStudio.Package.ExpansionProvider> class during the process of inserting the snippet:  
+ Cuando el servicio de lenguaje Obtiene el nombre de método abreviado, llama a la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> método para obtener el título de fragmento de nombre de archivo y el código. El servicio de lenguaje, a continuación, llama el <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método en la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase para insertar el fragmento de código. Visual Studio llama los métodos siguientes en el orden especificado en el <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase durante el proceso de insertar el fragmento de código:  
   
 1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
@@ -353,17 +337,17 @@ namespace TestLanguagePackage
   
 4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- For more information on getting a list of installed code snippets for your language service, see [Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Para obtener más información sobre cómo obtener una lista de fragmentos de código instalados para el servicio de lenguaje, consulte [Tutorial: Obtener una lista de fragmentos de código instalados \(implementación heredado\)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
-## <a name="implementing-the-expansionfunction-class"></a>Implementing the ExpansionFunction Class  
- An expansion function is a named function that is embedded in a snippet template and returns one or more values to be placed in a field. In order to support expansion functions in your language service, you must derive a class from the <xref:Microsoft.VisualStudio.Package.ExpansionFunction> class and implement the <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> method. You must then override the <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> method in the <xref:Microsoft.VisualStudio.Package.LanguageService> class to return a new instantiation of your version of the <xref:Microsoft.VisualStudio.Package.ExpansionFunction> class for each expansion function you support. If you support a list of possible values from an expansion function, you must also override the <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> method in the <xref:Microsoft.VisualStudio.Package.ExpansionFunction> class to return a list of those values.  
+## Implementación de la clase ExpansionFunction  
+ Una función de expansión es una función con nombre que está incrustada en una plantilla de fragmento y devuelve uno o más valores que se colocarán en un campo. Para admitir las funciones de expansión en el servicio de lenguaje, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase e implemente el <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> método. Debe reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> método en la <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una nueva instancia de la versión de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase para cada función de expansión se admiten. Si admite una lista de valores posibles de una función de expansión, también debe reemplazar el <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> método en la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> clase para devolver una lista de esos valores.  
   
- An expansion function that takes arguments or needs to access other fields should not be associated with an editable field, as the expansion provider might not be fully initialized by the time the expansion function is called. As a result, the expansion function is not able to obtain the value of its arguments or any other field.  
+ Una función de expansión que toma argumentos o necesita tener acceso a otros campos no debería estar asociada con un campo editable, como el proveedor de expansión podría no estar inicializado totalmente en el momento en que se llama a la función de expansión. Como resultado, la función de expansión no es capaz de obtener el valor de sus argumentos o cualquier otro campo.  
   
-### <a name="example"></a>Example  
- Here is an example of how a simple expansion function called `GetName` might be implemented. This expansion function appends a number to a base class name each time the expansion function is instantiated (which corresponds to each time the associated code snippet is inserted).  
+### Ejemplo  
+ Este es un ejemplo de cómo llamar a una función de expansión simple `GetName` podría implementarse. Esta función de expansión anexa un número al nombre de clase base cada vez que se crea una instancia de la función de expansión \(que corresponde a cada vez que el fragmento de código asociado se inserta\).  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Package;  
   
 namespace TestLanguagePackage  
@@ -406,8 +390,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)   
- [Code Snippets](../../ide/code-snippets.md)   
- [Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+## Vea también  
+ [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registrar un servicio de lenguaje](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+ [Fragmentos de código](../../ide/code-snippets.md)   
+ [Tutorial: Obtener una lista de fragmentos de código instalados \(implementación heredado\)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

@@ -1,67 +1,50 @@
 ---
-title: SccUninitialize Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccUninitialize
-helpviewer_keywords:
-- SccUninitialize function
+title: "SccUninitialize (funci&#243;n) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccUninitialize"
+helpviewer_keywords: 
+  - "SccUninitialize (función)"
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7b88c889b66314cec269efd68f0f1d00ce4c1f8d
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="sccuninitialize-function"></a>SccUninitialize Function
-This function cleans up any allocations or open connections created by a previous call to the [SccInitialize](../extensibility/sccinitialize-function.md) in preparation for shutting down the source control plug-in.  
+# SccUninitialize (funci&#243;n)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Esta función limpia las asignaciones o conexiones abiertas creadas por una llamada anterior a la [SccInitialize](../extensibility/sccinitialize-function.md) en preparación para cerrar el complemento de control de código fuente.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 SCCRTN SccUninitialize (  
-   LPVOID pvContext  
+   LPVOID pvContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  pvContext  
- [in] The pointer to the source control plug-in context structure created in the [SccInitialize](../extensibility/sccinitialize-function.md).  
+ \[in\] El puntero a la estructura de contexto complemento de control de código fuente creado en el [SccInitialize](../extensibility/sccinitialize-function.md).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Valor devuelto  
+ La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|The clean-up completed successfully.|  
+|SCC\_OK|La limpieza finalizada correctamente.|  
   
-## <a name="remarks"></a>Remarks  
- The source control plug-in is responsible for preparing to be shut down and for freeing memory that the plug-in has allocated for the context structure. The function is called once for each given instance of a plug-in. A call to the [SccInitialize](../extensibility/sccinitialize-function.md) precedes this call. No projects can still be open at the time of the call to `SccUninitialize`.  
+## Comentarios  
+ El complemento de control de código fuente es responsable de preparación para cerrar y para liberar memoria que ha asignado el complemento de la estructura de contexto. La función se llama una vez para cada instancia concreta de un complemento. Una llamada a la [SccInitialize](../extensibility/sccinitialize-function.md) precede a esta llamada. No hay proyectos todavía pueden estar abiertos en el momento de la llamada a `SccUninitialize`.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## Vea también  
+ [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

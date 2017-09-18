@@ -1,137 +1,120 @@
 ---
-title: DisassemblyData | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- DisassemblyData
-helpviewer_keywords:
-- DisassemblyData structure
+title: "DisassemblyData | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "DisassemblyData"
+helpviewer_keywords: 
+  - "DisassemblyData (estructura)"
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cde2a74a390443593a8d49ce0dad57a547e0eff0
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="disassemblydata"></a>DisassemblyData
-Describes one disassembly instruction for the integrated development environment (IDE) to display.  
+# DisassemblyData
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Describe una instrucción de desensamblado del entorno de desarrollo \(IDE\) integrado en la pantalla.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-typedef struct tagDisassemblyData {   
-   DISASSEMBLY_STREAM_FIELDS dwFields;  
-   BSTR                      bstrAddress;  
-   BSTR                      bstrAddressOffset;  
-   BSTR                      bstrCodeBytes;  
-   BSTR                      bstrOpcode;  
-   BSTR                      bstrOperands;  
-   BSTR                      bstrSymbol;  
-   UINT64                    uCodeLocationId;  
-   TEXT_POSITION             posBeg;  
-   TEXT_POSITION             posEnd;  
-   BSTR                      bstrDocumentUrl;  
-   DWORD                     dwByteOffset;  
-   DISASSEMBLY_FLAGS         dwFlags;  
+```cpp#  
+typedef struct tagDisassemblyData {   
+   DISASSEMBLY_STREAM_FIELDS dwFields;  
+   BSTR                      bstrAddress;  
+   BSTR                      bstrAddressOffset;  
+   BSTR                      bstrCodeBytes;  
+   BSTR                      bstrOpcode;  
+   BSTR                      bstrOperands;  
+   BSTR                      bstrSymbol;  
+   UINT64                    uCodeLocationId;  
+   TEXT_POSITION             posBeg;  
+   TEXT_POSITION             posEnd;  
+   BSTR                      bstrDocumentUrl;  
+   DWORD                     dwByteOffset;  
+   DISASSEMBLY_FLAGS         dwFlags;  
 } DisassemblyData;  
 ```  
   
-```csharp  
-public struct DisassemblyData {   
-   public uint          dwFields;  
-   public string        bstrAddress;  
-   public string        bstrAddressOffset;  
-   public string        bstrCodeBytes;  
-   public string        bstrOpcode;  
-   public string        bstrOperands;  
-   public string        bstrSymbol;  
-   public ulong         uCodeLocationId;  
-   public TEXT_POSITION posBeg;  
-   public TEXT_POSITION posEnd;  
-   public string        bstrDocumentUrl;  
-   public uint          dwByteOffset;  
-   public uint          dwFlags;  
+```c#  
+public struct DisassemblyData {   
+   public uint          dwFields;  
+   public string        bstrAddress;  
+   public string        bstrAddressOffset;  
+   public string        bstrCodeBytes;  
+   public string        bstrOpcode;  
+   public string        bstrOperands;  
+   public string        bstrSymbol;  
+   public ulong         uCodeLocationId;  
+   public TEXT_POSITION posBeg;  
+   public TEXT_POSITION posEnd;  
+   public string        bstrDocumentUrl;  
+   public uint          dwByteOffset;  
+   public uint          dwFlags;  
 };  
 ```  
   
-## <a name="members"></a>Members  
+## Members  
  `dwFields`  
- The [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constant that specifies which fields are filled out.  
+ La constante de [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) que especifica se completan los campos.  
   
  `bstrAddress`  
- The address as an offset from some starting point (usually the beginning of the associated function).  
+ La dirección como un desplazamiento de algún punto inicial \(normalmente el principio de la función asociada\).  
   
  `bstrCodeBytes`  
- The code bytes for this instruction.  
+ Los bytes de código para esta instrucción.  
   
  `bstrOpcode`  
- The opcode for this instruction.  
+ el código de operación para esta instrucción.  
   
  `bstrOperands`  
- The operands for this instruction.  
+ los operandos para esta instrucción.  
   
  `bstrSymbol`  
- The symbol name, if any, associated with the address (public symbol, label, and so on).  
+ El nombre de símbolo, si existe, asociado con la dirección \(símbolo, etiqueta públicos, etc.\).  
   
  `uCodeLocationId`  
- The code location identifier for this disassembled line. If the code context address of one line is greater than the code context address of another, then the disassembled code location identifier of the first will also be greater than the code location identifier of the second.  
+ El identificador de la ubicación del código para esta línea desensamblada.  Si la dirección del contexto del código de una línea es mayor que la dirección del contexto del código de otra, el identificador desensamblado de la ubicación del código del primer también será mayor que el identificador de la ubicación del código del segundo.  
   
  `posBeg`  
- The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) that corresponds to the position in a document where the disassembly data begins.  
+ [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición en un documento en el que comienza el datos de desensamblado.  
   
  `posEnd`  
- The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) that corresponds to the position in a document where the disassembly data ends.  
+ [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) que corresponde a la posición en un documento cuyos datos de desensamblado finaliza.  
   
  `bstrDocumentUrl`  
- For text documents that can be represented as file names, the `bstrDocumentUrl` field is filled in with the file name where the source can be found, using the format `file://file name`.  
+ Para los documentos de texto que se puede representar como nombres de archivo, el campo de `bstrDocumentUrl` se completa con el nombre de archivo en el origen se encuentra, con el formato `nombre de file://file`.  
   
- For text documents that cannot be represented as file names, `bstrDocumentUrl` is a unique identifier for the document, and the debug engine must implement the [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) method.  
+ Para los documentos de texto que no se pueden representar como nombres de archivo, `bstrDocumentUrl` es un identificador único para el documento, y el motor de depuración debe implementar el método de [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) .  
   
- This field can also contain additional information about checksums. See Remarks for details.  
+ Este campo también puede contener información adicional sobre sumas de comprobación.  Vea las notas de detalles.  
   
  `dwByteOffset`  
- The number of bytes the instruction is from the beginning of the code line.  
+ El número de bytes la instrucción se desde el principio de la línea de código.  
   
  `dwFlags`  
- The [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constant that specifies which flags are active.  
+ La constante de [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) que especifica que los marcadores están activas.  
   
-## <a name="remarks"></a>Remarks  
- Each `DisassemblyData` structure describes one instruction of disassembly. An array of these structures is returned from the [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) method.  
+## Comentarios  
+ Cada estructura de `DisassemblyData` describe una instrucción de desensamblado.  Una matriz de estas estructuras se devuelve del método de [Leer](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) .  
   
- The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure is used for text-based documents only. The source code range for this instruction is filled out only for the first instruction generated from a statement or line, for example, when `dwByteOffset == 0`.  
+ La estructura de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) se utiliza para los documentos basados en texto.  El intervalo de código fuente para esta instrucción se completa solo para la primera instrucción generada de una instrucción o una línea; por ejemplo, si `dwByteOffset == 0`.  
   
- For documents that are non-textual, a document context can be obtained from the code, and the `bstrDocumentUrl` field should be a null value. If the `bstrDocumentUrl` field is the same as the `bstrDocumentUrl` field in the previous `DisassemblyData` array element, then set the `bstrDocumentUrl` to a null value.  
+ Para los documentos que son no textuales, un contexto de documento se puede obtener de código, y el campo de `bstrDocumentUrl` debe ser un valor NULL.  Si el campo de `bstrDocumentUrl` es igual que el campo de `bstrDocumentUrl` en el elemento de matriz anterior de `DisassemblyData` , establezca `bstrDocumentUrl` en un valor nulo.  
   
- If the `dwFlags` field has the `DF_DOCUMENT_CHECKSUM` flag set, then additional checksum information follows the string pointed to by the `bstrDocumentUrl` field. Specifically, after the null string terminator, there follows a GUID identifying the checksum algorithm that is in turn followed by a 4 byte value indicating the number of bytes in the checksum and that in turn is followed by the checksum bytes. See the Example in this topic on how to encode and decode this field in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
+ Si el campo de `dwFlags` tiene el indicador de `DF_DOCUMENT_CHECKSUM` establecido, la información de suma de comprobación adicional sigue la cadena indicada por el campo de `bstrDocumentUrl` .  Específicamente, después del terminador de la cadena nula, sigue un GUID que identifica el algoritmo de suma de comprobación que a su vez va seguido de un valor de 4 bytes que indica el número de bytes de la suma de comprobación y que a su vez sigue los bytes de la suma de comprobación.  Vea el ejemplo de este tema en cómo codificar y descodificar este campo en [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
-## <a name="example"></a>Example  
- The `bstrDocumentUrl` field can contain additional information other than a string if the `DF_DOCUMENT_CHECKSUM` flag is set. The process of creating and reading this encoded string is straightforward in [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]. However, in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], it is another matter. For those who are curious, the following example shows one way to create the encoded string from [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] and one way to decode the encoded string in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
+## Ejemplo  
+ El campo de `bstrDocumentUrl` puede contener información adicional que no sea una cadena si se establece la marca de `DF_DOCUMENT_CHECKSUM` .  El proceso de crear y leer esta cadena codificada es sencillo en [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)].  Sin embargo, en [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], es otra asunto.  Para los que se curiosos, el ejemplo siguiente muestra una manera de crear la cadena codificada de [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] y una forma de descodificar la cadena codificada en [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
-```csharp  
+```c#  
 using System;  
 using System.Runtime.InteropServices;  
   
@@ -240,11 +223,11 @@ namespace MyNamespace
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
- [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
+## Vea también  
+ [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Leer](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)   
- [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+ [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)   
+ [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

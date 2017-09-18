@@ -1,54 +1,36 @@
 ---
-title: Utilization Navigator | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.cv.performance.utilizationnavigator
+title: "Navegador de utilizaci&#243;n | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.cv.performance.utilizationnavigator"
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 caps.latest.revision: 9
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: 49fde5b95e12d40af4778d182058f0ae3204e3b8
-ms.contentlocale: es-es
-ms.lasthandoff: 08/31/2017
-
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="utilization-navigator"></a>Utilization Navigator
-You can use the Utilization Navigator in the Concurrency Visualizer to select an interval of time in a trace. The Concurrency Visualizer shows the utilization of CPU cores by the target process over time. This makes it easier to examine CPU utilization patterns and also enables comparison between the utilization data and the data in other views. The Utilization Navigator appears at the top of every view in the Concurrency Visualizer. The following illustration shows the Utilization Navigator.  
+# Navegador de utilizaci&#243;n
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Se puede utilizar el Navegador de utilización en el Visualizador de simultaneidad para seleccionar un intervalo de tiempo en un seguimiento.  El Visualizador de simultaneidad muestra la utilización de núcleos de CPU del proceso de destino a lo largo del tiempo.  Esto facilita examinar las pautas de utilización de la CPU y permite también comparar los datos de uso y los datos en otras vistas.  El Navegador de utilización aparece en la parte superior de cada vista del Visualizador de simultaneidad.  La siguiente ilustración muestra el Navegador de utilización.  
   
- ![Utilization Navigator showing selected timeframe](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
-Utilization Navigator and a selected time frame  
+ ![Navegador de uso que muestra el marco de tiempo seleccionado](~/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+El Navegador de utilización y un período de tiempo seleccionado  
   
- In the illustration, the selected interval is defined by a red rectangle, known as the *thumb*.  
+ En la ilustración, el intervalo seleccionado está definido por un rectángulo rojo, conocido como *miniatura*.  
   
- Here's how you can use the Utilization Navigator to manipulate the displayed time range:  
+ Aquí se muestra cómo se puede utilizar el Navegador de utilización para manipular el intervalo de tiempo mostrado:  
   
--   You can pan by dragging the thumb left or right. (Keyboard: Move the focus to the thumb and then press the left or right arrow key.)  
+-   Se puede hacer un desplazamiento arrastrando el dedo hacia la izquierda o la derecha. \(Teclado: Mueva el foco a la miniatura y después presione la tecla izquierda o derecha\).  
   
--   You can change the extent of the interval by dragging one of the handles. (Keyboard: Move the focus to a handle and then press the right or left arrow key.)  
+-   Se puede cambiar la extensión del intervalo arrastrando uno de los identificadores. \(Teclado: Mueva el foco a un identificador y después presione la tecla derecha o izquierda\).  
   
- If you change the interval by using a different Concurrency Visualizer zoom control, the Utilization Navigator updates to reflect the change.
+ Si cambia el intervalo mediante el uso de un control distinto de zoom del Visualizador de simultaneidad, el Navegador de utilización se actualiza para reflejar el cambio.

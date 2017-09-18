@@ -1,107 +1,90 @@
 ---
-title: SccPopulateList Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccPopulateList
-helpviewer_keywords:
-- SccPopulateList function
+title: "SccPopulateList (funci&#243;n) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccPopulateList"
+helpviewer_keywords: 
+  - "SccPopulateList (función)"
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8d335f9853531f25bd5c7d137248e3b03297a3d5
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccpopulatelist-function"></a>SccPopulateList Function
-This function updates a list of files for a particular source control command and supplies source control status on all given files.  
+# SccPopulateList (funci&#243;n)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Esta función actualiza una lista de archivos para un comando de control de origen determinado y proporciona el estado de control de código fuente en todos los archivos determinados.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 SCCRTN SccPopulateList (  
-   LPVOID          pvContext,  
-   enum SCCCOMMAND nCommand,  
-   LONG            nFiles,  
-   LPCSTR*         lpFileNames,  
-   POPLISTFUNC     pfnPopulate,  
-   LPVOID          pvCallerData,  
-   LPLONG          lpStatus,  
-   LONG            fOptions  
+   LPVOID          pvContext,  
+   enum SCCCOMMAND nCommand,  
+   LONG            nFiles,  
+   LPCSTR*         lpFileNames,  
+   POPLISTFUNC     pfnPopulate,  
+   LPVOID          pvCallerData,  
+   LPLONG          lpStatus,  
+   LONG            fOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] La estructura de contexto complemento de control de código fuente.  
   
- nCommand  
- [in] The source control command that will be applied to all files in the `lpFileNames` array (see [Command Code](../extensibility/command-code-enumerator.md) for a list of possible commands).  
+ Ncomando  
+ \[in\] El comando de control de código fuente que se aplicará a todos los archivos en el `lpFileNames` matriz \(consulte [Código de comando](../extensibility/command-code-enumerator.md) para obtener una lista de comandos posibles\).  
   
  nFiles  
- [in] Number of files in the `lpFileNames` array.  
+ \[in\] Número de archivos en el `lpFileNames` matriz.  
   
  lpFileNames  
- [in] An array of file names known to the IDE.  
+ \[in\] Una matriz de nombres de archivo que se sabe que el IDE.  
   
  pfnPopulate  
- [in] The IDE callback function to call to add and remove files (see [POPLISTFUNC](../extensibility/poplistfunc.md) for details).  
+ \[in\] La función de devolución de llamada IDE al que llamar para agregar y quitar archivos \(consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información\).  
   
  pvCallerData  
- [in] Value that is to be passed unchanged to the callback function.  
+ \[in\] Valor que se pasa sin cambios a la función de devolución de llamada.  
   
  lpStatus  
- [in, out] An array for the source control plug-in to return the status flags for each file.  
+ \[entrada, salida\] Una matriz para el control de código fuente para devolver los indicadores de estado para cada archivo.  
   
- fOptions  
- [in] Command flags (see the "PopulateList flag" section of [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md) for details).  
+ Opciones  
+ \[in\] Indicadores de comandos \(consulte la sección "PopulateList flag" de [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para obtener más información\).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Valor devuelto  
+ La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|Success.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC\_OK|Correcto.|  
+|SCC\_E\_NONSPECIFICERROR|Error no específico.|  
   
-## <a name="remarks"></a>Remarks  
- This function examines the list of files for its current status. It uses the `pfnPopulate` callback function to notify the caller when a file does not match the criteria for the `nCommand`. For example, if the command is `SCC_COMMAND_CHECKIN` and a file in the list is not checked out, then the callback is used to inform the caller. Occasionally, the source control plug-in may find other files that could be part of the command and add them. This allows, for example, a Visual Basic user to check out a .bmp file that is used by his or her project but does not appear in the Visual Basic project file. A user chooses the **Get** command in the IDE. The IDE will display a list of all files that it thinks the user can get, but before the list is shown, the `SccPopulateList` function is called to make sure the list to be displayed is up to date.  
+## Comentarios  
+ Esta función examina la lista de archivos para su estado actual. Usa el `pfnPopulate` la función de devolución de llamada para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`. Por ejemplo, si el comando es `SCC_COMMAND_CHECKIN` y un archivo en la lista no está desprotegido, la devolución de llamada se usa para informar al autor de la llamada. En ocasiones, el complemento de control de código fuente puede encontrar otros archivos que podrían formar parte del comando y agregarlos. Esto permite, por ejemplo, un usuario de Visual Basic desproteger un archivo .bmp que se utiliza en su proyecto pero no aparece en el archivo de proyecto de Visual Basic. Un usuario elige el **obtener** comando en el IDE. El IDE mostrará una lista de todos los archivos que cree que el usuario puede obtener, pero antes de que se muestra la lista, el `SccPopulateList` función se invoca para asegurarse de que la lista para mostrar está actualizada.  
   
-## <a name="example"></a>Example  
- The IDE builds a list of files that it thinks the user can get. Before it displays this list, it calls the `SccPopulateList` function, giving the source control plug-in the opportunity to add and delete files from the list. The plug-in modifies the list by calling the given callback function (see [POPLISTFUNC](../extensibility/poplistfunc.md) for more details).  
+## Ejemplo  
+ El IDE compila una lista de archivos que cree que puede obtener el usuario. Antes de mostrar esta lista, llama a la `SccPopulateList` de función, que proporciona el complemento de control de origen de la oportunidad de agregar y eliminar archivos de la lista. El complemento modifica la lista mediante una llamada a la función de devolución de llamada determinado \(consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más detalles\).  
   
- The plug-in continues to call the `pfnPopulate` function, which adds and deletes files, until it is finished and then returns from the `SccPopulateList` function. The IDE can then display its list. The `lpStatus` array represents all files in the original list passed in by the IDE. The plug-in fills in the status of all these files in addition to making use of the callback function.  
+ El complemento sigue llamando el `pfnPopulate` función, que agrega y elimina los archivos, hasta que finalice y, a continuación, se devuelve desde el `SccPopulateList` \(función\). El IDE puede mostrar su lista. El `lpStatus` matriz representa todos los archivos en la lista original que se pasa en el IDE. Use el complemento rellena el estado de todos estos archivos realizar además de la función de devolución de llamada.  
   
 > [!NOTE]
->  A source control plug-in always has the option to simply return immediately from this function, leaving the list as it is. If a plug-in implements this function, it can indicate this by setting the `SCC_CAP_POPULATELIST` capability bitflag in the first call to the [SccInitialize](../extensibility/sccinitialize-function.md). By default, the plug-in should always assume that all items being passed in are files. However, if the IDE sets the `SCC_PL_DIR` flag in the `fOptions` parameter, all the items being passed in are to be considered directories. The plug-in should add all the files that belong in the directories. The IDE will never pass in a mixture of files and directories.  
+>  Un complemento de control de código fuente siempre tiene la opción de simplemente devolver inmediatamente desde esta función, dejando la lista tal cual. Si un complemento implementa esta función, puede indicar esto estableciendo la `SCC_CAP_POPULATELIST` indicador de capacidad en la primera llamada a la [SccInitialize](../extensibility/sccinitialize-function.md). De forma predeterminada, el complemento siempre debe asumir que todos los elementos que se pasan son archivos. Sin embargo, si establece el IDE la `SCC_PL_DIR` marca en el `fOptions` parámetro, todos los elementos que se pasan deben considerarse directorios. El complemento debe agregar todos los archivos que pertenecen en los directorios. El IDE no pasará nunca en una combinación de archivos y directorios.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## Vea también  
+ [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
- [Bitflags Used by Specific Commands](../extensibility/bitflags-used-by-specific-commands.md)   
- [Command Code](../extensibility/command-code-enumerator.md)
+ [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Código de comando](../extensibility/command-code-enumerator.md)

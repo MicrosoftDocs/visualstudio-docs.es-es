@@ -1,68 +1,51 @@
 ---
-title: IDebugClassField::GetEnclosingClass | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugClassField::GetEnclosingClass
-helpviewer_keywords:
-- IDebugClassField::GetEnclosingClass method
+title: "IDebugClassField::GetEnclosingClass | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugClassField::GetEnclosingClass"
+helpviewer_keywords: 
+  - "IDebugClassField::GetEnclosingClass (método)"
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e595390fb636f6b98041fa45aa5eb798940bc61d
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Gets the class that encloses this class.  
+# IDebugClassField::GetEnclosingClass
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene la clase envolvente esta clase.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetEnclosingClass(   
-   IDebugClassField** ppClassField  
+```cpp#  
+HRESULT GetEnclosingClass(   
+   IDebugClassField** ppClassField  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetEnclosingClass(  
-   out IDebugClassField ppClassField  
+   out IDebugClassField ppClassField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `ppClassField`  
- [out] Returns an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object representing the enclosing class. Returns a null value if there is no enclosing class.  
+ \[out\]  Devuelve un objeto de [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa la clase envolvente.  Devuelve un valor NULL si no hay ninguna clase envolvente.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- If the class represented by this [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object is a nested class, then the `ppClassField` parameter returns an `IDebugClassField` object representing the enclosing class. For example, given this class definition:  
+## Comentarios  
+ Si la clase representada por este objeto de [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) es una clase anidada, el parámetro de `ppClassField` devuelve un objeto de `IDebugClassField` que representa la clase envolvente.  Por ejemplo, dada esta definición de clase:  
   
 ```  
 class RootClass {  
@@ -70,7 +53,7 @@ class RootClass {
 };  
 ```  
   
- Calling the `GetEnclosingClass` method on the `IDebugClassField` object representing the `NestedClass` class returns an `IDebugClassField` object representing the class `RootClass`.  
+ Llamando al método de `GetEnclosingClass` en el objeto de `IDebugClassField` que representa la clase de `NestedClass` devuelve un objeto de `IDebugClassField` que representa la clase `RootClass`.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

@@ -1,55 +1,38 @@
 ---
-title: Updating the User Interface | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- user interfaces, updating
-- commands, updating UI
+title: "Actualizaci&#243;n de la interfaz de usuario | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "interfaces de usuario, actualizar"
+  - "comandos, actualizar la interfaz de usuario"
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 41
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: da33a633ee3f98d2b11ee476fa77e9aaae0e8342
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 41
 ---
-# <a name="updating-the-user-interface"></a>Updating the User Interface
-After you implement a command, you can add code to update the user interface with the state of your new commands.  
+# Actualizaci&#243;n de la interfaz de usuario
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Después de implementar un comando, puede agregar código para actualizar la interfaz de usuario con el estado de los comandos de nuevo.  
   
- In a typical Win32 application, the command set can be continuously polled and the state of individual commands can be adjusted as the user views them. However, because the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell can host an unlimited number of VSPackages, extensive polling might decrease responsiveness, especially polling across interop assemblies between managed code and COM.  
+ En una aplicación típica de Win32, el conjunto de comandos que se puede sondear continuamente y se puede ajustar el estado de comandos individuales que ve el usuario. Sin embargo, dado que el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell puede hospedar un número ilimitado de VSPackages, sondeo extenso podría disminuir la capacidad de respuesta, especialmente de sondeo en los ensamblados de interoperabilidad entre código administrado y COM.  
   
-### <a name="to-update-the-ui"></a>To update the UI  
+### Para actualizar la interfaz de usuario  
   
-1.  Perform one of the following steps:  
+1.  Realice uno de estos pasos:  
   
-    -   Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method.  
+    -   Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.  
   
-         An <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface can be obtained from the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service, as follows.  
+         Un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz puede obtenerse desde el <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> del servicio, como sigue.  
   
-        ```csharp  
+        ```c#  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
         {  
             IVsUIShell vsShell = (IVsUIShell)sp.GetService(typeof(IVsUIShell));  
@@ -62,12 +45,12 @@ After you implement a command, you can add code to update the user interface wit
   
         ```  
   
-         If the parameter of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> is non-zero (`TRUE`), then the update is performed synchronously and immediately. We recommend that you pass zero (`FALSE`) for this parameter to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously or performance might decrease. For more information about command flags, see the [Command Flag Element](../extensibility/command-flag-element.md) documentation.  
+         Si el parámetro de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> es distinto de cero \(`TRUE`\), a continuación, la actualización se realiza sincrónicamente e inmediatamente. Se recomienda pasar cero \(`FALSE`\) para este parámetro ayudar a mantener un buen rendimiento. Si desea evitar el almacenamiento en caché, se aplican los `DontCache` marca al crear el comando en el archivo .vsct. No obstante, utilice el indicador con precaución o es posible que disminuya el rendimiento. Para obtener más información acerca de los indicadores de comando, consulte el [Elemento de indicador de comando](../extensibility/command-flag-element.md) documentación.  
   
-    -   In VSPackages that host an ActiveX control by using the in-place activation model in a window, it might be more convenient to use the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface and the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface are functionally equivalent. Both cause the environment to re-query the state of all commands. Typically, an update is not performed immediately. Instead, an update is delayed until idle time. The shell caches the command state to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously because performance might decrease.  
+    -   En VSPackages que hospedar un control ActiveX mediante el modelo de activación en contexto en una ventana, puede ser más conveniente utilizar el <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> método. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> método en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz y <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> método en el <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaz son funcionalmente equivalentes. Ambas hacen que el entorno volver a consultar el estado de todos los comandos. Normalmente, una actualización no se realiza inmediatamente. En su lugar, una actualización se retrasa hasta el tiempo de inactividad. El shell se almacena en caché el estado de comandos para ayudar a mantener un buen rendimiento. Si desea evitar el almacenamiento en caché, se aplican los `DontCache` marca al crear el comando en el archivo .vsct. No obstante, utilice el indicador con precaución porque podría disminuir el rendimiento.  
   
-         Notice that you can obtain the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface by calling the `QueryInterface` method on an <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> object or by obtaining the interface from the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service.  
+         Tenga en cuenta que puede obtener el <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaz llamando el `QueryInterface` método en un <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> de objeto u obteniendo la interfaz de la <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> servicio.  
   
-## <a name="see-also"></a>See Also  
- [How VSPackages Add User Interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Implementation](../extensibility/internals/command-implementation.md)
+## Vea también  
+ [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Implementación](../extensibility/internals/command-implementation.md)

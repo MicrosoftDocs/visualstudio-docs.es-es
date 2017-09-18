@@ -1,93 +1,76 @@
 ---
-title: SccUncheckout Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccUncheckout
-helpviewer_keywords:
-- SccUncheckout function
+title: "SccUncheckout (funci&#243;n) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccUncheckout"
+helpviewer_keywords: 
+  - "SccUncheckout (función)"
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5db90c033a03605369c19bf358b0642f9f80163b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout Function
-This function undoes a previous checkout operation, thereby restoring the contents of the selected file or files to the state prior to the checkout. All changes made to the file since the checkout are lost.  
+# SccUncheckout (funci&#243;n)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Esta función deshace una operación de desprotección anterior, con lo que se restaura el contenido del archivo seleccionado o los archivos al estado anterior a la desprotección. Se perderán todos los cambios realizados en el archivo desde la desprotección.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 SCCRTN SccUncheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] La estructura de contexto complemento de control de código fuente.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Número de archivos especificado en el `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files for which to undo a checkout.  
+ \[in\] Matriz de nombres de ruta de acceso local completa de archivos para el que se va a deshacer una desprotección.  
   
- fOptions  
- [in] Command flags (not used).  
+ Opciones  
+ \[in\] Indicadores de comando \(no utilizados\).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Opciones específicas del complemento de control de código fuente.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Valor devuelto  
+ La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|Undo checkout was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. Undo checkout did not succeed.|  
-|SCC_E_NOTCHECKEDOUT|The user does not have the file checked out.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_PROJNOTOPEN|The project has not been opened from source control.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|SCC\_OK|Deshacer desprotección fue correcta.|  
+|SCC\_E\_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
+|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC\_E\_NONSPECIFICERROR|Error no específico. Deshacer desprotección no se realizó correctamente.|  
+|SCC\_E\_NOTCHECKEDOUT|El usuario no tiene el archivo desprotegido.|  
+|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
+|SCC\_E\_PROJNOTOPEN|No se abrió el proyecto de control de código fuente.|  
+|SCC\_I\_OPERATIONCANCELED|Se canceló la operación antes de completarse.|  
   
-## <a name="remarks"></a>Remarks  
- After this operation, the `SCC_STATUS_CHECKEDOUT` and `SCC_STATUS_MODIFIED` flags will both be cleared for the files on which the undo checkout was performed.  
+## Comentarios  
+ Después de esta operación, el `SCC_STATUS_CHECKEDOUT` y `SCC_STATUS_MODIFIED` marcas ambos se borrará de los archivos en el que se realizó la desprotección.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## Vea también  
+ [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,78 +1,61 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEEMetricString
+title: "IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugSettingsCallback2::GetEEMetricString"
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 60fe2d13216964c2132901f92f762824bcba9ef3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-Retrieves the value string of an expression evaluator metric given its name.  
+# IDebugSettingsCallback2::GetEEMetricString
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Recupera la cadena de valor de métrica del evaluador de expresiones dado su nombre.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT GetEEMetricString(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   BSTR*   pbstrValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   BSTR*   pbstrValue  
 );  
 ```  
   
-```csharp  
+```c#  
 private int GetEEMetricString(  
-   ref Guid   guidLang,  
-   ref Guid   guidVendor,  
-   string     pszMetric,  
-   out string pbstrValue  
+   ref Guid   guidLang,  
+   ref Guid   guidVendor,  
+   string     pszMetric,  
+   out string pbstrValue  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `guidLang`  
- [in] Unique identifier of the programming language.  
+ \[in\]  Identificador único del lenguaje de programación.  
   
  `guidVendor`  
- [in] Unique identifier of the vendor.  
+ \[in\]  Identificador único del proveedor.  
   
  `pszMetric`  
- [in] Name of the metric.  
+ \[in\]  Nombre de la.  
   
  `pbstrValue`  
- [out] Returns the metric value string.  
+ \[out\]  Devuelve la cadena métricas de valor.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

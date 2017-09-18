@@ -1,74 +1,57 @@
 ---
-title: BP_RES_DATA_FLAGS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_RES_DATA_FLAGS
-helpviewer_keywords:
-- BP_RES_DATA_FLAGS enumeration
+title: "BP_RES_DATA_FLAGS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_RES_DATA_FLAGS"
+helpviewer_keywords: 
+  - "Enumeración BP_RES_DATA_FLAGS"
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 96e32e1265e2cab302253c05d90dcca70cc74df9
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-Specifies whether the data breakpoint is being emulated or implemented in hardware.  
+# BP_RES_DATA_FLAGS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Especifica si el punto de interrupción de datos se está emulando o se implementa en hardware.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-enum enum_BP_RES_DATA_FLAGS {   
-   BP_RES_DATA_EMULATED = 0x0001  
+```cpp#  
+enum enum_BP_RES_DATA_FLAGS {   
+   BP_RES_DATA_EMULATED = 0x0001  
 };  
 typedef DWORD BP_RES_DATA_FLAGS;  
 ```  
   
-```csharp  
-public enum enum_BP_RES_DATA_FLAGS {   
-   BP_RES_DATA_EMULATED = 0x0001  
+```c#  
+public enum enum_BP_RES_DATA_FLAGS {   
+   BP_RES_DATA_EMULATED = 0x0001  
 };  
 ```  
   
-## <a name="members"></a>Members  
- BP_RES_DATA_EMULATED  
- Specifies that the data breakpoint is being emulated.  
+## Members  
+ BP\_RES\_DATA\_EMULATED  
+ Especifica que se está emulando el punto de interrupción de datos.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `dwFlags` member of the [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure.  
+## Comentarios  
+ utilizado para el miembro de `dwFlags` de la estructura de [BP\_RESOLUTION\_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Requisitos  
+ encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+## Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [BP\_RESOLUTION\_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

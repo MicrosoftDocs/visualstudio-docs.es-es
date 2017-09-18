@@ -1,76 +1,59 @@
 ---
-title: IEnumDebugModules2::Next | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEnumDebugModules2::Next
-helpviewer_keywords:
-- IEnumDebugModules2::Next
+title: "IEnumDebugModules2::Next | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugModules2::Next"
+helpviewer_keywords: 
+  - "IEnumDebugModules2::Next"
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bb4ebd3c5392114ba95e5cdbbfb71e8b5e7cdb5a
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
-Returns the next set of elements from the enumeration.  
+# IEnumDebugModules2::Next
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Devuelve el conjunto de elementos de la enumeración.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT Next(  
-   ULONG           celt,  
-   IDebugModule2** rgelt,  
-   ULONG*          pceltFetched  
+   ULONG           celt,  
+   IDebugModule2** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
-```csharp  
+```c#  
 int Next(  
-   uint            celt,  
-   IDebugModule2[] rgelt,  
-   ref uint        pceltFetched  
+   uint            celt,  
+   IDebugModule2[] rgelt,  
+   ref uint        pceltFetched  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `celt`  
- [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
+ \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
   
  `rgelt`  
- [in, out] Array of [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) elements to be filled in.  
+ \[in, out\]  Matriz de elementos de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que se completan.  
   
  `pceltFetched`  
- [out] Returns the number of elements actually returned in `rgelt`.  
+ \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

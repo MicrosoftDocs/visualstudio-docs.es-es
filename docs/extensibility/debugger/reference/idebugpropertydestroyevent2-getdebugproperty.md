@@ -1,66 +1,49 @@
 ---
-title: IDebugPropertyDestroyEvent2::GetDebugProperty | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPropertyDestroyEvent2::GetDebugProperty
-helpviewer_keywords:
-- IDebugPropertyDestroyEvent2::GetDebugProperty
+title: "IDebugPropertyDestroyEvent2::GetDebugProperty | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPropertyDestroyEvent2::GetDebugProperty"
+helpviewer_keywords: 
+  - "IDebugPropertyDestroyEvent2::GetDebugProperty"
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f1c91c1a805d99617875556b04f1903fd7c32daa
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
-Gets the property to be destroyed.  
+# IDebugPropertyDestroyEvent2::GetDebugProperty
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+obtiene la propiedad que se destruirá.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
+```cpp#  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppProperty  
 );  
 ```  
   
-```csharp  
-int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
+```c#  
+int GetDebugProperty (   
+   out IDebugProperty2 ppProperty  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `ppProperty`  
- [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the property to be destroyed.  
+ \[out\]  devuelve un objeto de [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que represente la propiedad que se destruirá.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

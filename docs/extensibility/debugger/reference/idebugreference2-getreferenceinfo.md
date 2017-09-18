@@ -1,92 +1,75 @@
 ---
-title: IDebugReference2::GetReferenceInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugReference2::GetReferenceInfo
-helpviewer_keywords:
-- IDebugReference2::GetReferenceInfo
+title: "IDebugReference2::GetReferenceInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugReference2::GetReferenceInfo"
+helpviewer_keywords: 
+  - "IDebugReference2::GetReferenceInfo"
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0e5c52d3b05c23324202e16323546bafabbf0658
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Gets the [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure that describes a reference. Reserved for future use.  
+# IDebugReference2::GetReferenceInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+obtiene la estructura de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) que describe una referencia.  Reservado para un uso futuro.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetReferenceInfo (   
-   DEBUGREF_INFO_FLAGS   dwFields,  
-   DWORD                 nRadix,  
-   DWORD                 dwTimeout,  
-   IDebugReference2**    rgpArgs,  
-   DWORD                 dwArgCount,  
-   DEBUG_REFERENCE_INFO* pReferenceInfo  
+```cpp#  
+HRESULT GetReferenceInfo (   
+   DEBUGREF_INFO_FLAGS   dwFields,  
+   DWORD                 nRadix,  
+   DWORD                 dwTimeout,  
+   IDebugReference2**    rgpArgs,  
+   DWORD                 dwArgCount,  
+   DEBUG_REFERENCE_INFO* pReferenceInfo  
 );  
 ```  
   
-```csharp  
-int GetReferenceInfo (   
-   enum_DEBUGREF_INFO_FLAGS  dwFields,  
-   uint                      nRadix,  
-   uint                      dwTimeout,  
-   IDebugReference2[]        rgpArgs,  
-   uint                      dwArgCount,  
-   DEBUG_REFERENCE_INFO[]    pReferenceInfo  
+```c#  
+int GetReferenceInfo (   
+   enum_DEBUGREF_INFO_FLAGS  dwFields,  
+   uint                      nRadix,  
+   uint                      dwTimeout,  
+   IDebugReference2[]        rgpArgs,  
+   uint                      dwArgCount,  
+   DEBUG_REFERENCE_INFO[]    pReferenceInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `dwFields`  
- [in] A combination of flags from the [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeration that determine the fields to be filled out in the [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.  
+ \[in\]  Una combinación de marcadores de enumeración de [DEBUGREF\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) que determinan los campos que se completan comentario la estructura de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .  
   
  `nRadix`  
- [in] The radix to be used in formatting any numerical information.  
+ \[in\]  La base que se utilizará para dar formato a cualquier información numérica.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ \[in\]  hora máxima, en milisegundos, de esperar antes de volver de este método.  uso `INFINITE` de esperar indefinidamente.  
   
  `rgpArgs`  
- [in] An array of [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objects. Reserved for future use; set to a null value.  
+ \[in\]  Matriz de los objetos de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .  reservado para uso futuro; establezca en un valor nulo.  
   
  `dwArgCount`  
- [in] The number of reference arguments in the `rgpArgs` array. Reserved for future use; set to 0.  
+ \[in\]  El número de argumentos de referencia en la matriz de `rgpArgs` .  reservado para uso futuro; establezca en 0.  
   
  `pReferenceInfo`  
- [out] A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure that is filled in with a description of the property.  
+ \[out\]  Una estructura de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) se completa con una descripción de la propiedad.  
   
-## <a name="return-value"></a>Return Value  
- Always returns `E_NOTIMPL`.  
+## Valor devuelto  
+ Siempre devuelve `E_NOTIMPL`.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+ [DEBUGREF\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
+ [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

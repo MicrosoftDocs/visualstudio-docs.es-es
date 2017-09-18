@@ -1,53 +1,39 @@
 ---
-title: 'Walkthrough: Creating a Code Snippet | Microsoft Docs'
-ms.custom: 
-ms.date: 09/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- code snippets, creating
-- code snippets, shortcut
-- code snippets, template
-- code snippets, replacements
-- code snippets, references
-- code snippets, imports
+title: "Tutorial: Crear un fragmento de c&#243;digo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "fragmentos de código, crear"
+  - "fragmentos de código, importaciones"
+  - "fragmentos de código, referencias"
+  - "fragmentos de código, reemplazos"
+  - "fragmentos de código, acceso directo"
+  - "fragmentos de código, plantilla"
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: bf9f2084ffcdce85a2f1bdb2617ae2c39c6d1e44
-ms.contentlocale: es-es
-ms.lasthandoff: 09/13/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Walkthrough: Creating a Code Snippet
-You can create a code snippet with only a few steps. All you need to do is create an XML file, fill in the appropriate elements, and add your code to it. You can also add references and replacement parameters to your code. You can add the snippet to your Visual Studio installation by using the Import button on the Code Snippets Manager (**Tools**, **Code Snippets Manager...**).  
+# Tutorial: Crear un fragmento de c&#243;digo
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Puede crear un fragmento de código con solo unos pasos.  Todo lo que tiene que hacer es crear un archivo XML, rellenar los elementos correspondientes y agregar su código.  También puede agregar referencias y parámetros de reemplazo a su código.  Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón de importación en el Administrador de fragmentos de código \(**Herramientas\/Administrador de fragmentos de código**\).  
   
-## <a name="snippet-template"></a>Snippet Template  
- The following is the basic snippet template:  
+> [!TIP]
+>  Para obtener información sobre cómo escribir fragmentos de código más fácilmente, busque en el sitio web de CodePlex herramientas de la comunidad como, por ejemplo, el [Editor de fragmentos de código](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
-```xml  
+## Plantilla de fragmentos de código  
+ La siguiente es la plantilla de fragmento de código básica:  
+  
+```  
 <?xml version="1.0" encoding="utf-8"?>  
 <CodeSnippets  
     xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -65,52 +51,52 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
 ```  
   
-### <a name="to-create-a-code-snippet"></a>To Create a Code Snippet  
+### Para crear un fragmento de código  
   
-1.  Create a new XML file in Visual Studio and add the template shown above.  
+1.  Cree un nuevo archivo XML en Visual Studio y agregue la plantilla que se muestra anteriormente.  
   
-2.  Fill in the title of the snippet, e.g. "Hello World VB", in the Title element.  
+2.  Rellene el título del fragmento de código como, por ejemplo, "Hello World VB" en el elemento de título.  
   
-3.  Fill in the language of the snippet in the Languages attribute of the Code element. For this example, use "VB".  
+3.  Rellene el lenguaje del fragmento de código en el atributo Lenguajes del elemento Código.  Para este ejemplo, se usa "VB".  
   
-4.  Add some code in the CDATA section inside the Code element, for example:  
+4.  Agregue código de la sección CDATA al elemento de código, por ejemplo:  
   
-    ```xml  
+    ```  
     <Code Language="VB">  
         <![CDATA[Console.WriteLine("Hello, World!")]]>  
     </Code>  
   
     ```  
   
-5.  Save the snippet as VBCodeSnippet.snippet.  
+5.  Guarde el fragmento como VBCodeSnippet.snippet.  
   
-### <a name="to-add-a-code-snippet-to-visual-studio"></a>To Add a Code Snippet to Visual Studio  
+### Para agregar un fragmento de código a Visual Studio  
   
-1.  You can add your own snippets to your Visual Studio installation by using the Code Snippets Manager. Open the Code Snippets Manager (**Tools**, **Code Snippets Manager...**).  
+1.  Puede agregar sus propios fragmentos de código a la instalación de Visual Studio mediante el Administrador de fragmentos de código.  Abra el Administrador de fragmentos de código \(**Herramientas\/Administrador de fragmentos de código**\).  
   
-2.  Click the **Import** button.  
+2.  Haga clic en el botón **Importar**.  
   
-3.  Go to the location where you saved the code snippet in the previous procedure, select it, and click **Open**.  
+3.  Vaya a la ubicación donde guardó el fragmento de código en el procedimiento anterior, selecciónelo y haga clic en **Abrir**.  
   
-4.  The **Import Code Snippet** dialog opens, asking you to choose where to add the snippet from the choices in the right pane. One of the choices should be **My Code Snippets**. Select it and click **Finish**, then **OK**.  
+4.  El diálogo **Importar fragmento de código** se abre y le pide elegir dónde agregar el fragmento de código de las opciones del panel derecho.  Una de las opciones debe ser **Mis fragmentos de código**.  Seleccione y haga clic en **Finalizar** y, a continuación, haga clic en **Aceptar**.  
   
-5.  The snippet is copied to the following location:  
+5.  El fragmento de código se copia en la siguiente ubicación:  
   
-     `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets`  
+     `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Test your snippet by opening a Visual Basic project and opening a code file. In the file click **Insert Snippet** on the context menu, then **My Code Snippets**. You should see a snippet named **My Visual Basic Code Snippet**. Double-click it.  
+6.  Pruebe el fragmento. Para ello, abra un proyecto de Visual Basic y un archivo de código.  En el archivo, haga clic en **Insertar fragmento de código** del menú contextual y elija **Mis fragmentos de código**.  Debería ver un fragmento de código denominado **Mi fragmento de código de Visual Basic**.  Haga doble clic.  
   
-7.  You should see `Console.WriteLine("Hello, World!")` inserted in the code.  
+7.  Debe ver `Console.WriteLine("Hello, World!")` insertado en el código.  
   
-### <a name="adding-description-and-shortcut-fields"></a>Adding Description and Shortcut Fields  
+### Adición de campos de descripción y acceso directo  
   
-1.  Description fields give more information about your code snippet when viewed in the Code Snippets Manager. The shortcut is a tag that users can type in order to insert your snippet. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
+1.  Los campos de descripción proporcionan más información acerca del fragmento de código cuando se visualiza en el Administrador de fragmentos de código.  El acceso directo es una etiqueta que los usuarios pueden escribir para insertar el fragmento.  Edite el fragmento de código que agregó abriendo el archivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
   
-2.  Add Author and Description elements to the Header element, and fill them in.  
+2.  Agregue los elementos Autor y Descripción al elemento Encabezado y complételos.  
   
-3.  The Header element should look something like this:  
+3.  El elemento de encabezado debería tener el siguiente aspecto:  
   
-    ```xml  
+    ```  
     <Header>  
         <Title>Hello World VB</Title>  
         <Author>Myself</Author>  
@@ -119,11 +105,11 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  Open the Code Snippets Manager and select your code snippet. In the right pane you should see that the Description and Author fields are now populated.  
+4.  Abra el Administrador de fragmentos de código y seleccione el fragmento de código.  En el panel derecho, debería ver que los campos Descripción y Autor están ahora rellenados.  
   
-5.  To add a shortcut, add a Shortcut element alongside the Author and Description element:  
+5.  Para agregar un acceso directo, agregue un elemento de acceso directo junto al elemento de Autor y Descripción:  
   
-    ```xml  
+    ```  
     <Header>  
         <Title>Hello World VB</Title>  
         <Author>Myself</Author>  
@@ -133,19 +119,19 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-6.  Save the snippet file again.  
+6.  Guarde el archivo de fragmento de nuevo.  
   
-7.  To test the shortcut, open a Visual Basic project and open a code file. Type `hello` in the file and press TAB. The snippet code should be inserted.  
+7.  Para probar el acceso directo, abra un proyecto de Visual Basic y abra un archivo de código.  Escriba `hello` en el archivo y presione la tecla TAB.  Se debe insertar el código del fragmento de código.  
   
-### <a name="to-add-references-and-imports"></a>To Add References and Imports  
+### Para agregar importaciones y referencias  
   
-1.  With Visual Basic snippets you can add a reference to a project by using the References element, and add an Imports declaration by using the Imports element. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.  
+1.  Con fragmentos de Visual Basic puede agregar una referencia a un proyecto mediante el elemento Referencias y agregar una declaración de importaciones mediante el elemento Imports. \(Los fragmentos de código de otros idiomas no disponen de esta característica.\) Por ejemplo, si cambia `Console.WriteLine` en el ejemplo de código a `MessageBox.Show`, puede que necesite agregar el ensamblado System.Windows.Forms.dll al proyecto.  
   
-2.  Open your snippet.  
+2.  Abra el fragmento.  
   
-3.  Add the References element under the Snippet element:  
+3.  Agregue el elemento References bajo el elemento Snippet:  
   
-    ```xml  
+    ```  
     <References>  
         <Reference>  
             <Assembly>System.Windows.Forms.dll</Assembly>  
@@ -154,9 +140,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  Add the Imports element under the Snippet element:  
+4.  Agregue el elemento Imports bajo el elemento Snippet:  
   
-    ```xml  
+    ```  
     <Imports>  
         <Import>  
            <Namespace>System.Windows.Forms</Namespace>  
@@ -165,34 +151,34 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-5.  Change the CDATA section to the following:  
+5.  Cambie la sección CDATA a lo siguiente:  
   
-    ```xml  
+    ```  
     <![CDATA[MessageBox.Show("Hello, World!")]]>  
     ```  
   
-6.  Save the snippet.  
+6.  Guarde el fragmento.  
   
-7.  Open a Visual Basic project and add the snippet.  
+7.  Abra un proyecto de Visual Basic y agregue el fragmento.  
   
-8.  You will see an Imports statement at the top of the code file:  
+8.  Verá una instrucción de importaciones al principio del archivo de código:  
   
-    ```vb  
+    ```  
     Imports System.Windows.Forms  
   
     ```  
   
-9. Look at the project's properties. The References tab includes a reference to System.Windows.Forms.dll.  
+9. Consulte las propiedades del proyecto.  La pestaña Referencias incluye una referencia a ystem.Windows.Forms.dll.  
   
-### <a name="adding-replacements"></a>Adding Replacements  
+### Adición de reemplazos  
   
-1.  You may want parts of your code snippets to be replaced by the user, for example if you add a variable and want the user to replace the variable with one in the current project. You can provide two types of replacements: literals and objects. Literals are strings of some type (string literals, variable names, or string representations of numeric values). Objects are instances of some type other than a string. In this procedure you will declare a literal replacement and an object replacement, and change the code to reference these replacements.  
+1.  Puede que desee que partes de sus fragmentos de código se reemplacen por el usuario, por ejemplo, si agrega una variable y desea que el usuario la reemplace por otra del proyecto actual.  Puede proporcionar dos tipos de reemplazos: literales y objetos.  Los literales son cadenas de algún tipo \(literales de cadena, nombres de variable o representaciones de cadena de valores numéricos\).  Los objetos son instancias de algún tipo distinto de una cadena.  En este procedimiento declarará un reemplazo literal y reemplazo de objeto, y cambiará el código para hacer referencia a estos reemplazos.  
   
-2.  Open your snippet.  
+2.  Abra el fragmento.  
   
-3.  This example uses a SQL connection string, so you need to change the Imports and References elements to add the appropriate references:  
+3.  Este ejemplo utiliza una cadena de conexión SQL, por lo que tiene que cambiar los elementos Importaciones y Referencias para agregar las referencias adecuadas:  
   
-    ```xml  
+    ```  
     <References>  
         <Reference>  
             <Assembly>System.Data.dll</Assembly>  
@@ -212,9 +198,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  To declare a literal replacement for the SQL connection string, add a Declarations element under the Snippet element, and in it add a Literal element with subelements for the ID, the tooltip, and the default value for the replacement:  
+4.  Para declarar un reemplazo literal para la cadena de conexión SQL, agregue un elemento de declaraciones debajo del elemento del fragmento de código, y en él agregue un elemento literal con los subelementos para el identificador, la información sobre herramientas y el valor predeterminado para el reemplazo:  
   
-    ```xml  
+    ```  
     <Declarations>  
         <Literal>  
             <ID>SqlConnString</ID>  
@@ -225,9 +211,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-5.  To declare an object replacement for the SQL connection, add an Object element inside the Declarations element, and add sub-elements for the ID, the type of the object, the tooltip, and the default value. The resulting Declarations element should look like this:  
+5.  Para declarar un reemplazo de objeto para la conexión de SQL, agregue un elemento de objeto dentro del elemento de declaraciones y agregue subelementos para el identificador, el tipo de objeto,la información sobre herramientas y el valor predeterminado.  El elemento Declaraciones resultante debería ser similar a lo siguiente:  
   
-    ```xml  
+    ```  
     <Declarations>  
         <Literal>  
             <ID>SqlConnString</ID>  
@@ -243,9 +229,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
     </Declarations>  
     ```  
   
-6.  In the code section, you reference the replacements with surrounding $ signs, for example `$replacement$`:  
+6.  En la sección de código, haga referencia a los reemplazos mediante signos $ alrededor del texto, por ejemplo `$reemplazo$`:  
   
-    ```xml  
+    ```  
     <Code Language="VB" Kind="method body">  
         <![CDATA[Dim daCustomers As SqlDataAdapter  
             Dim selectCommand As SqlCommand  
@@ -257,13 +243,13 @@ You can create a code snippet with only a few steps. All you need to do is creat
     </Code>  
     ```  
   
-7.  Save the snippet.  
+7.  Guarde el fragmento.  
   
-8.  Open a Visual Basic project and add the snippet.  
+8.  Abra un proyecto de Visual Basic y agregue el fragmento.  
   
-9. The code should look like the following, where the replacements `SQL connection string` and `dcConnection` are highlighted in light orange. Press TAB to navigate from one to the other.  
+9. El código debe tener el aspecto que se indica a continuación, donde los reemplazos `Cadena de conexión SQL` y `dcConnection` se resaltan en naranja claro.  Presione TAB para navegar hacia delante y hacia atrás.  
   
-    ```vb  
+    ```  
     Dim daCustomers As SqlDataAdapter  
     Dim selectCommand As SqlCommand  
   
@@ -274,5 +260,5 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-## <a name="see-also"></a>See Also  
- [Code Snippets Schema Reference](../ide/code-snippets-schema-reference.md)
+## Vea también  
+ [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

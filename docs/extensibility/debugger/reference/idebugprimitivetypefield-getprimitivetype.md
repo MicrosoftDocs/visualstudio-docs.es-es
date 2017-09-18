@@ -1,64 +1,47 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- GetPrimitiveType
-- IDebugPrimitiveTypeField::GetPrimitiveType
+title: "IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "GetPrimitiveType"
+  - "IDebugPrimitiveTypeField::GetPrimitiveType"
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7c47a9fac269aff59846723bb05be514d857f85a
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
-Retrieves the primitive type that is associated with this field.  
+# IDebugPrimitiveTypeField::GetPrimitiveType
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Recupera el tipo primitivo que está asociado a este campo.  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT GetPrimitiveType (  
    DWORD* pdwType  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetPrimitiveType (  
    out uint pdwType  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parámetros  
  `pdwType`  
- [out] Value from the [CorElementType Enumeration](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) that represents the primitive type.  
+ [out] Valor de la [CorElementType (enumeración)](CorElementType%20Enumeration.xml) que representa el tipo primitivo.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE`.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)
