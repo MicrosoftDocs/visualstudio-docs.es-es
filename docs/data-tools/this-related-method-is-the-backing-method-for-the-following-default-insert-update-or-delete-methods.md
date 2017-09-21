@@ -1,57 +1,38 @@
 ---
-title: This related method is the backing method for the following default insert, update, or delete methods | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Este m&#233;todo relacionado es el m&#233;todo de copia de seguridad para los siguientes m&#233;todos de inserci&#243;n, actualizaci&#243;n o eliminaci&#243;n | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: f90d8ff4184e8c3686f40e86d31eca39865a87c0
-ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>This related method is the backing method for the following default insert, update, or delete methods
-This related method is the backing method for the following default insert, update, or delete methods. If it is deleted, these methods will be deleted as well. Do you wish to continue?  
+# Este m&#233;todo relacionado es el m&#233;todo de copia de seguridad para los siguientes m&#233;todos de inserci&#243;n, actualizaci&#243;n o eliminaci&#243;n
+Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación.Si se elimina, estos métodos se eliminarán también.¿Desea continuar?  
   
- The selected `DataContext` method is currently used as one of the Insert, Update, or Delete methods for one of the entity classes on the O/R Designer. Deleting the selected method will cause the entity class that was using this method to revert to the default run-time behavior for performing the Insert, Update, or Delete during an update.  
+ El método seleccionado de `DataContext` se usa actualmente como uno de los métodos de inserción, actualización o eliminación para una de las clases de entidad en Object Relational Designer.Al eliminar el método seleccionado, la clase de entidad que usaba este método se revertirá al comportamiento predeterminado en tiempo de ejecución para realizar la inserción, actualización o eliminación durante una actualización.  
   
-### <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>To delete the selected method, causing the entity class to use runtime updates  
+### Para eliminar el método seleccionado de modo que la clase de entidad utilizará las actualizaciones en tiempo de ejecución  
   
--   Click **Yes**.  
+-   Haga clic en **Sí**.  
   
-     The selected method is deleted and any classes that used this method for overriding update behavior are reverted to using the default LINQ to SQL runtime behavior.  
+     El método seleccionado se elimina y las clases que usaban este método para invalidar el comportamiento de actualización se revierten al comportamiento predeterminado del motor en tiempo de ejecución LINQ to SQL.  
   
-### <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>To close the message box, leaving the selected method unchanged  
+### Para cerrar el cuadro de mensaje sin cambiar el método seleccionado  
   
--   Click **No**.  
+-   Haga clic en **No**.  
   
-     The message box closes and no changes are made.  
+     El cuadro de mensaje se cierra y no se realiza ninguna modificación.  
   
-## <a name="see-also"></a>See Also  
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## Vea también  
+ [Métodos DataContext \(Object Relational Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones \(Object Relational Designer\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
+ [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)

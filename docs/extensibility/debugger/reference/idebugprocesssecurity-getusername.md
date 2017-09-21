@@ -1,66 +1,49 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugProcessSecurity::GetUserName
+title: "IDebugProcessSecurity::GetUserName | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugProcessSecurity::GetUserName"
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
 caps.latest.revision: 4
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 081f073ba59021ca56dd084bd2cef0fde6c5c32e
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 4
 ---
-# <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-Gets the user name from the port supplier.  
+# IDebugProcessSecurity::GetUserName
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene el nombre de usuario del proveedor de puerto.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT GetUserName(  
-    BSTR *pbstrUserName  
+    BSTR *pbstrUserName  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetUserName (  
-    string pbstrUserName  
+    string pbstrUserName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `pbstrUserName`  
- [out] A string containing the user name.  
+ \[out\]  Cadena que contiene el nombre de usuario.  
   
-## <a name="return-value"></a>Return Value  
- If the method succeeds, it returns `S_OK`. Otherwise it returns an error code.  
+## Valor devuelto  
+ si el método tiene éxito, devuelve `S_OK`.  si no devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- `GetUserName` returns the user name that is displayed in the **User Name** column of the **Attach to Process** dialog box. To view the **Attach to Process** dialog box, click **Attach to Process** on the **Tools** menu in the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE).  
+## Comentarios  
+ `GetUserName` devuelve el nombre de usuario que se muestra en la columna de **Nombre de usuario** del cuadro de diálogo de **Adjuntar a procesar** .  Para ver el cuadro de diálogo de **Adjuntar a procesar** , haga clic en **Adjuntar a procesar** en el menú de **Herramientas** en el entorno de desarrollo integrado de \(IDE\) [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

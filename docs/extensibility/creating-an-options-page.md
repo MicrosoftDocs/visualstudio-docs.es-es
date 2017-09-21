@@ -1,79 +1,62 @@
 ---
-title: Creating an Options Page | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Tools Options pages [Visual Studio SDK], creating
+title: "Creaci&#243;n de una p&#225;gina de opciones | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "páginas de opciones de herramientas [SDK de Visual Studio], crear"
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 62
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 10b40fccecfff4d4578b1a1bfe228d037e7516ac
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 62
 ---
-# <a name="creating-an-options-page"></a>Creating an Options Page
-This walkthrough creates a simple Tools/Options page that uses a property grid to examine and set properties.  
+# Creaci&#243;n de una p&#225;gina de opciones
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Este tutorial crea una página Herramientas\/Opciones sencilla que utiliza una cuadrícula de propiedades para examinar y establecer propiedades.  
   
- To save these properties to and restore them from a settings file, follow these steps, and then see [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
+ Para guardar estas propiedades a y restáurelos a partir de un archivo de configuración, siga estos pasos y, a continuación, consulte [Creación de una categoría de configuración](../extensibility/creating-a-settings-category.md).  
   
- The MPF provides two classes to help you create Tools Options pages, the <xref:Microsoft.VisualStudio.Shell.Package> class and the <xref:Microsoft.VisualStudio.Shell.DialogPage> class. You create a VSPackage to provide a container for these pages by subclassing the Package class. You create each tools options page by deriving from the DialogPage class.  
+ La MPF proporciona dos clases para ayudarle a crear páginas de opciones de herramientas, el <xref:Microsoft.VisualStudio.Shell.Package> \(clase\) y la <xref:Microsoft.VisualStudio.Shell.DialogPage> clase. Crear un VSPackage para proporcionar un contenedor de estas páginas mediante subclases de la clase de paquete. Crear cada página de opciones de herramientas derivando de la clase de DialogPage.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## Requisitos previos  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional de la instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulta [Instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-tools-options-grid-page"></a>Creating a Tools Options Grid Page  
- In this section, you create a simple Tools Options property grid. You use this grid to display and change the value of a property.  
+## Crear una página de cuadrícula de opciones de herramientas  
+ En esta sección, creará una cuadrícula de propiedades de opciones de herramientas simple. Esta cuadrícula se utiliza para mostrar y cambiar el valor de una propiedad.  
   
-#### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>To create the VSIX project and add a VSPackage  
+#### Para crear el proyecto VSIX y agregar un VSPackage  
   
-1.  Every Visual Studio extension starts with a VSIX deployment project which will contain the extension assets. Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX project named `MyToolsOptionsExtension`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
+1.  Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contiene los activos de la extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `MyToolsOptionsExtension`. Puede encontrar la plantilla de proyecto VSIX en la **nuevo proyecto** en el cuadro de diálogo **Visual C\# \/ extensibilidad**.  
   
-2.  Add a VSPackage by adding a Visual Studio Package item template named `MyToolsOptionsPackage`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item dialog**, go to **Visual C# Items / Extensibility** and select **Visual Studio Package**. In the **Name** field at the bottom of the dialog, change the file name to `MyToolsOptionsPackage.cs`. For more information about how to create a VSPackage, see [Creating an Extension with a VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2.  Agregar un paquete VSPackage agregando una plantilla de elemento de paquete de Visual Studio denominada `MyToolsOptionsPackage`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar \/ nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a **elementos de Visual C\# \/ extensibilidad** y seleccione **paquete de Visual Studio**. En el **nombre** campo en la parte inferior del cuadro de diálogo, cambie el nombre de archivo a `MyToolsOptionsPackage.cs`. Para obtener más información sobre cómo crear un paquete VSPackage, consulte [Crear una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
-#### <a name="to-create-the-tools-options-property-grid"></a>To create the Tools Options property grid  
+#### Para crear la cuadrícula de propiedades de opciones de herramientas  
   
-1.  Open the MyToolsOptionsPackage file in the code editor.  
+1.  Abra el archivo MyToolsOptionsPackage en el editor de código.  
   
-2.  Add the following using statement.  
+2.  Agregue la siguiente instrucción using.  
   
-    ```csharp  
+    ```c#  
     using System.ComponentModel;  
     ```  
   
-3.  Declare an OptionPageGrid class and derive it from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+3.  Declare una clase OptionPageGrid y lo derivará de <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
+    ```c#  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4.  Apply a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class to assign to the class an options category and options page name for the OptionPageGrid. The result should look like this:  
+4.  Aplicar un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> a la clase de VSPackage que se asigna a la clase de una categoría de opciones y el nombre de la página de opciones para el OptionPageGrid. El resultado debería tener este aspecto:  
   
-    ```csharp  
+    ```c#  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -83,15 +66,15 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5.  Add an `OptionInteger` property to the `OptionPageGrid` class.  
+5.  Agregar un `OptionInteger` propiedad a la `OptionPageGrid` clase.  
   
-    -   Apply a <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> to assign to the property a property grid category.  
+    -   Aplicar un <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> para asignar a la propiedad de una categoría de la cuadrícula de propiedad.  
   
-    -   Apply a <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> to assign to the property a name.  
+    -   Aplicar un <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> para asignar a la propiedad un nombre.  
   
-    -   Apply a <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> to assign to the property a description.  
+    -   Aplicar un <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> para asignar a la propiedad una descripción.  
   
-    ```csharp  
+    ```c#  
     public class OptionPageGrid : DialogPage  
     {  
         private int optionInt = 256;  
@@ -108,30 +91,30 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     ```  
   
     > [!NOTE]
-    >  The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> supports properties that have appropriate converters or that are structures or arrays that can be expanded into properties that have appropriate converters. For a list of converters, see the <xref:System.ComponentModel> namespace.  
+    >  La implementación predeterminada de <xref:Microsoft.VisualStudio.Shell.DialogPage> admite propiedades convertidores adecuados o que son estructuras o matrices que se pueden expandir en las propiedades que tienen convertidores adecuados. Para obtener una lista de convertidores, consulte la <xref:System.ComponentModel> espacio de nombres.  
   
-6.  Build the project and start debugging.  
+6.  Compile la solución y comience la depuración.  
   
-7.  In the experimental instance of Visual Studio, on the **Tools** menu click **Options**.  
+7.  En la instancia experimental de Visual Studio, en el **herramientas** menú haga clic en **opciones**.  
   
-     In the left pane you should see **My Category**. (Options categories are listed in alphabetical order, so it should appear about halfway down the list.) Open **My Category** and then click **My Grid Page**.The options grid appears in the right pane. The property category is **My Options**, and the property name is **My Integer Option**. The property description, **My integer option**, appears at the bottom of the pane. Change the value from its initial value of 256 to something else. Click **OK**, and then reopen **My Grid Page**. You can see that the new value persists.  
+     En el panel izquierdo debería ver **My Category**. \(Categorías de opciones se muestran en orden alfabético, por lo que debe aparecer sobre a mitad hacia abajo en la lista.\) Abra **My Category** y, a continuación, haga clic en **Mi página de cuadrícula**. La cuadrícula de opciones aparece en el panel derecho. Es la categoría de propiedad **Mis opciones de**, y el nombre de propiedad es **Mi opción entero**. La descripción de la propiedad **Mi opción entero**, aparece en la parte inferior del panel. Cambie el valor de su valor inicial de 256 a otra cosa. Haga clic en **Aceptar**, y, a continuación, vuelva a abrir **Mi página de cuadrícula**. Puede ver que el nuevo valor se conserva.  
   
-     Your options page is also available through Visual Studio's Quick Launch. In the Quick Launch window in the upper right corner of the IDE, type **My Category** and you will see **My Category -> My Grid Page** listed in the dropdown.  
+     La página de opciones también está disponible a través de inicio rápido de Visual Studio. En la ventana de inicio rápido, en la esquina superior derecha del IDE, escriba **My Category** y verá **My Category –\> Mi página de cuadrícula** aparece en la lista desplegable.  
   
-## <a name="creating-a-tools-options-custom-page"></a>Creating a Tools Options Custom Page  
- In this section, you create a Tools Options page with a custom UI. You use this page to display and change the value of a property.  
+## Creación de un archivo de opciones de herramientas página  
+ En esta sección, creará una página de opciones de herramientas con una interfaz de usuario personalizada. Utilice esta página para mostrar y cambiar el valor de una propiedad.  
   
-1.  Open the MyToolsOptionsPackage file in the code editor.  
+1.  Abra el archivo MyToolsOptionsPackage en el editor de código.  
   
-2.  Add the following using statement.  
+2.  Agregue la siguiente instrucción using.  
   
     ```vb  
     using System.Windows.Forms;  
     ```  
   
-3.  Add an `OptionPageCustom` class, just before the `OptionPageGrid` class. Derive the new class from `DialogPage`.  
+3.  Agregar un `OptionPageCustom` clase, justo antes del `OptionPageGrid` clase. Derive la nueva clase de `DialogPage`.  
   
-    ```csharp  
+    ```c#  
     public class OptionPageCustom : DialogPage  
     {  
         private string optionValue = "alpha";  
@@ -144,9 +127,9 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     }  
     ```  
   
-4.  Add a GUID attribute. Add an OptionString property:  
+4.  Agregue un atributo GUID. Agregue una propiedad OptionString:  
   
-    ```csharp  
+    ```c#  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -160,9 +143,9 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     }  
     ```  
   
-5.  Apply a second <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class. This attribute assigns the class an options category and options page name.  
+5.  Aplicar un segundo <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> a la clase de VSPackage. Este atributo asigna la clase una categoría de opciones y el nombre de la página de opciones.  
   
-    ```csharp  
+    ```c#  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -174,15 +157,15 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6.  Add a new **User Control** named MyUserControl to the project.  
+6.  Agregue un nuevo **Control de usuario** denominado MyUserControl al proyecto.  
   
-7.  Add a **TextBox** control to the user control.  
+7.  Agregar un **TextBox** control al control de usuario.  
   
-     In the **Properties** window, on the toolbar, click the **Events** button, and then double-click the **Leave** event. The new event handler appears in the MyUserControl.cs code.  
+     En el **propiedades** ventana, en la barra de herramientas, haga clic en el **eventos** botón y, a continuación, haga doble clic en el **deje** eventos. Aparece el nuevo controlador de eventos en el código MyUserControl.cs.  
   
-8.  Add a public `OptionsPage` field, an `Initialize` method to the control class, and update the event handler to set the option value to the contents of the text box:  
+8.  Agregar un público `OptionsPage` campo, un `Initialize` método a la clase de control y actualizar el controlador de eventos para establecer la opción de valor para el contenido del cuadro de texto:  
   
-    ```csharp  
+    ```c#  
     public partial class MyUserControl : UserControl  
     {  
         public MyUserControl()  
@@ -204,11 +187,11 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     }  
     ```  
   
-     The `optionsPage` field holds a reference to the parent `OptionPageCustom` instance. The `Initialize` method displays `OptionString` in the **TextBox**. The event handler writes the current value of the **TextBox** to the `OptionString` when focus leaves the **TextBox**.  
+     El `optionsPage` campo contiene una referencia al elemento primario `OptionPageCustom` instancia. El `Initialize` método muestra `OptionString` en el **TextBox**. El controlador de eventos escribe el valor actual de la **TextBox** a la `OptionString` cuando el enfoque deja el **TextBox**.  
   
-9. In the package code file, add an override for the `OptionPageCustom.Window` property to the OptionPageCustom class to create, initialize, and return an instance of `MyUserControl`. The class should now look like this:  
+9. En el archivo de código del paquete, agregue una invalidación para el `OptionPageCustom.Window` propiedad a la clase OptionPageCustom para crear, inicializar y devolver una instancia de `MyUserControl`. La clase debe tener el siguiente aspecto:  
   
-    ```csharp  
+    ```c#  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -233,18 +216,18 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
     }  
     ```  
   
-10. Build and run the project.  
+10. Compile y ejecute el proyecto.  
   
-11. In the experimental instance, click **Tools / Options**.  
+11. En la instancia experimental, haga clic en **Herramientas \/ opciones**.  
   
-12. Find **My Category** and then **My Custom Page**.  
+12. Buscar **Mi categoría** y, a continuación, **personalizados página**.  
   
-13. Change the value of **OptionString**. Click **OK**, and then reopen **My Custom Page**. You can see that the new value has persisted.  
+13. Cambie el valor de **OptionString**. Haga clic en **Aceptar**, y, a continuación, vuelva a abrir **Mi página personalizada**. Puede ver que se ha conservado el nuevo valor.  
   
-## <a name="accessing-options"></a>Accessing Options  
- In this section, you get the value of an option from the VSPackage that hosts the associated Tools Options page. The same technique can be used to obtain the value of any public property.  
+## Acceso a opciones  
+ En esta sección, obtendrá el valor de una opción de VSPackage que hospeda la página de opciones de herramientas asociada. La misma técnica puede utilizarse para obtener el valor de las propiedades públicas.  
   
-1.  In the package code file, add a public property called **OptionInteger** to the **MyToolsOptionsPackage** class.  
+1.  En el archivo de código del paquete, agregue una propiedad pública denominada **OptionInteger** a la **MyToolsOptionsPackage** clase.  
   
     ```  
     public int OptionInteger  
@@ -258,13 +241,13 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
     ```  
   
-     This code calls <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> to create or retrieve an `OptionPageGrid` instance. `OptionPageGrid` calls <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> to load its options, which are public properties.  
+     Este código llama a <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> para crear o recuperar un `OptionPageGrid` instancia.`OptionPageGrid` llamadas <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> cargar sus opciones, que son propiedades públicas.  
   
-2.  Now add a custom command item template named **MyToolsOptionsCommand** to display the value. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **MyToolsOptionsCommand.cs**.  
+2.  Ahora agregue una plantilla de elemento de comando personalizado denominada **MyToolsOptionsCommand** para mostrar el valor. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C\# \/ extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, el nombre del archivo de comandos **MyToolsOptionsCommand.cs**.  
   
-3.  In the MyToolsOptionsCommand file, replace the body of the command's `ShowMessageBox` method with the following:  
+3.  En el archivo MyToolsOptionsCommand, reemplace el cuerpo del comando `ShowMessageBox` método con lo siguiente:  
   
-    ```csharp  
+    ```c#  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         MyToolsOptionsPackage myToolsOptionsPackage = this.package as MyToolsOptionsPackage;  
@@ -273,11 +256,11 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
     ```  
   
-4.  Build the project and start debugging.  
+4.  Compile la solución y comience la depuración.  
   
-5.  In the experimental instance, on the **Tools** menu, click **Invoke MyToolsOptionsCommand**.  
+5.  En la instancia experimental, en la **herramientas** menú, haga clic en **invocar MyToolsOptionsCommand**.  
   
-     A message box displays the current value of `OptionInteger`.  
+     Un cuadro de mensaje muestra el valor actual de `OptionInteger`.  
   
-## <a name="see-also"></a>See Also  
- [Options and Options Pages](../extensibility/internals/options-and-options-pages.md)
+## Vea también  
+ [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md)

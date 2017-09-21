@@ -1,70 +1,53 @@
 ---
-title: IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBoundBreakpoint2::GetHitCount
-helpviewer_keywords:
-- GetHitCount method
-- IDebugBoundBreakpoint2::GetHitCount method
+title: "IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBoundBreakpoint2::GetHitCount"
+helpviewer_keywords: 
+  - "GetHitCount (método)"
+  - "IDebugBoundBreakpoint2::GetHitCount (método)"
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4113484cfe1a63c16fbf18e8b52139ecadd521bc
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
-Gets the current hit count for this bound breakpoint.  
+# IDebugBoundBreakpoint2::GetHitCount
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Obtiene el número de llamadas actual para esto limitan el punto de interrupción.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT GetHitCount(   
-   DWORD* pdwHitCount  
+```cpp#  
+HRESULT GetHitCount(   
+   DWORD* pdwHitCount  
 );  
 ```  
   
-```csharp  
-int GetHitCount(   
-   out uint pdwHitCount  
+```c#  
+int GetHitCount(   
+   out uint pdwHitCount  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `pdwHitCount`  
- [out] Returns the hit count.  
+ \[out\]  Devuelve el número de llamadas.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_BP_DELETED` si establece el estado del objeto enlazado de punto de interrupción a `BPS_DELETED` \(parte de la enumeración de [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) \).  
   
-## <a name="remarks"></a>Remarks  
- The hit count is the number of times this breakpoint has fired during the current run of the session.  
+## Comentarios  
+ El número de llamadas es el número de veces que este punto de interrupción ha desencadenado durante la ejecución de la actual de la sesión.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -1,79 +1,62 @@
 ---
-title: Include Element | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- Include
-helpviewer_keywords:
-- Include element (VSCT XML schema)
-- VSCT XML schema elements, Include
+title: "Elemento include | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "Include"
+helpviewer_keywords: 
+  - "Incluir el elemento (esquema VSCT XML)"
+  - "Elementos de esquema XML VSCT, incluir"
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 92ac563092cae75cd32a5722a7f9f850545fcad9
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="include-element"></a>Include Element
-The Include element specifies a file that can be located on the supplied include path for insertion into the current file.  All symbols and types defined will become part of the compiled result.  
+# Elemento include
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+El elemento Include especifica un archivo que se encuentra en proporcionado, incluya la ruta de acceso para la inserción en el archivo actual.  Todos los símbolos y tipos definidos formarán parte del resultado compilado.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```csharp  
+```c#  
 <Include href="stdidcmd.h" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Attributes and Elements  
- The following sections describe attributes, child elements, and parent elements.  
+## Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### <a name="attributes"></a>Attributes  
+### Atributos  
   
-|Attribute|Description|  
-|---------------|-----------------|  
-|href|Required. The path to the header file:<br /><br /> href="stdidcmd.h"|  
-|Condition|Optional. See [Conditional Attributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Atributo|Descripción|  
+|--------------|-----------------|  
+|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href\="stdidcmd.h"|  
+|Condición|Opcional. Vea [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### <a name="child-elements"></a>Child Elements  
+### Elementos secundarios  
   
-|Element|Description|  
-|-------------|-----------------|  
-|None.|None.|  
+|Elemento|Descripción|  
+|--------------|-----------------|  
+|Ninguno.|Ninguno.|  
   
-### <a name="parent-elements"></a>Parent Elements  
+### Elementos primarios  
   
-|Element|Description|  
-|-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Defines all of the elements that represent commands — that is, menu items, menus, toolbars, and combo boxes — that a VSPackage provides to the IDE.|  
+|Elemento|Descripción|  
+|--------------|-----------------|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos, es decir, elementos de menú, menús, barras de herramientas y cuadros combinados, que proporciona un paquete VSPackage al IDE.|  
   
-## <a name="example"></a>Example  
+## Ejemplo  
   
 ```  
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## Vea también  
+ [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

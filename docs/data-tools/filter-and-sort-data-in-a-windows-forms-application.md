@@ -1,68 +1,62 @@
 ---
-title: Filter and sort data in a Windows Forms application | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs:
-- VB
-- CSharp
-helpviewer_keywords:
-- row states, filtering
-- data views, sorting
-- row version, filtering
-- row states
-- data views, filtering
-- sorting datasets, using data views
-- dataset filtering, using data views
+title: "C&#243;mo: Filtrar y ordenar los datos en una aplicaci&#243;n Windows Forms | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "vistas de datos, filtrar"
+  - "vistas de datos, ordenar"
+  - "filtrado de conjuntos de datos, mediante vistas de datos"
+  - "estados de fila"
+  - "estados de fila, filtrar"
+  - "versión de fila, filtrar"
+  - "ordenar conjuntos de datos, mediante vistas de datos"
 ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 93dab9181f1a232048a09bcfd1b69d0814c01a35
-ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 14
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filter and sort data in a Windows Forms application
-You filter data by setting the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to a string expression that returns the desired records.  
+# C&#243;mo: Filtrar y ordenar los datos en una aplicaci&#243;n Windows Forms
+Los datos se filtran estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en una expresión de cadena que devuelve los registros deseados.  
   
- You sort data by setting the <xref:System.Windows.Forms.BindingSource.Sort%2A> property to the column name you want to sort on; append `DESC` to sort in descending order, or append `ASC` to sort in ascending order.  
+ Puede ordenar los datos estableciendo la propiedad <xref:System.Windows.Forms.BindingSource.Sort%2A> en el nombre de columna por la que desea ordenar; anexe `DESC` para realizar la ordenación en sentido descendente, o bien, `ASC` para hacerlo en sentido ascendente.  
   
 > [!NOTE]
->  If your application does not use <xref:System.Windows.Forms.BindingSource> components, you can filter and sort data by using <xref:System.Data.DataView> objects. For more information, see [DataViews](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews).  
+>  Si su aplicación no utiliza componentes <xref:System.Windows.Forms.BindingSource>, puede puede filtrar y ordenar los datos mediante objetos <xref:System.Data.DataView>.  Para obtener más información, vea [DataViews](../Topic/DataViews.md).  
   
-## <a name="to-filter-data-by-using-a-bindingsource-component"></a>To filter data by using a BindingSource component  
+### Para filtrar datos mediante un componente BindingSource  
   
--   Set the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to the expression you want to return. For example, the following code returns customers with a `CompanyName` that starts with "B":  
+-   Establezca la propiedad <xref:System.Windows.Forms.BindingSource.Filter%2A> en la expresión que desea devolver.  Por ejemplo, el código siguiente devuelve los clientes cuyo valor de `CompanyName` empieza por "B":  
   
-     [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]  [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]  
+     [!code-cs[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
+     [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]  
   
-## <a name="to-sort-data-by-using-a-bindingsource-component"></a>To sort data by using a BindingSource component  
+### Para ordenar los datos mediante un componente BindingSource  
   
--   Set the <xref:System.Windows.Forms.BindingSource.Sort%2A> property to the column you want to sort on. For example, the following code sorts customers on the `CompanyName` column in descending order:  
+-   Establezca la propiedad <xref:System.Windows.Forms.BindingSource.Sort%2A> en la columna por la que desea ordenar.  Por ejemplo, el código siguiente ordena los clientes por la columna `CompanyName` en orden descendente:  
   
-     [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]  [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]  
+     [!code-cs[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
+     [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## Vea también  
+ [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
+ [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Información general de las aplicaciones de datos en Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
+ [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
+ [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
+ [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
+ [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
+ [Validar datos](../Topic/Validating%20Data.md)   
+ [Guardar datos](../data-tools/saving-data.md)

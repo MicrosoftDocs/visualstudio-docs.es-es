@@ -1,48 +1,31 @@
 ---
-title: Run-Time Text Generation with T4 Text Templates | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Preprocessed Text Template project item
-- TextTemplatingFilePreprocessor custom tool
-- text templates, TransformText() method
-- text templates, generating files at run time
+title: "Run-Time Text Generation with T4 Text Templates | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Preprocessed Text Template project item"
+  - "TextTemplatingFilePreprocessor custom tool"
+  - "text templates, TransformText() method"
+  - "text templates, generating files at run time"
 ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 22
-author: alancameronwills
-ms.author: awills
-manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c40747ca3422bbb229c73f3a01a5f760a05f4fd0
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 22
 ---
-# <a name="run-time-text-generation-with-t4-text-templates"></a>Run-Time Text Generation with T4 Text Templates
-You can generate text strings in your application at run time by using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] runtime text templates. The computer where the application executes does not have to have [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Runtime templates are sometimes called "preprocessed text templates" because at compile time, the template generates code that is executed at run time.  
+# Run-Time Text Generation with T4 Text Templates
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Puede generar cadenas de texto en la aplicación en tiempo de ejecución mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantillas de texto en tiempo de ejecución.  El equipo donde la aplicación se ejecuta no tiene que tener [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Las plantillas en tiempo de ejecución a veces se denominan "preprocesado plantillas de texto" porque en tiempo de compilación, la plantilla genera código que se ejecuta en tiempo de ejecución.  
   
- Each template is a mixture of the text as it will appear in the generated string, and fragments of program code. The program fragments supply values for the variable parts of the string, and also control conditional and repeated parts.  
+ Cada plantilla es una mezcla del texto tal y como aparecerá en la cadena generada y de fragmentos de código de programa.  Los fragmentos de programa proporciona valores para las partes variables de la cadena, y también controlan partes condicionales y repetidas.  
   
- For example, the following template could be used in an application that creates an HTML report.  
+ Por ejemplo, la siguiente plantilla se podría utilizar en una aplicación que crea un informe HTML.  
   
 ```  
 <#@ template language="C#" #>  
@@ -59,26 +42,26 @@ This report is Company Confidential.
 </body></html>  
 ```  
   
- Notice that the template is an HTML page in which the variable parts have been replaced with program code. You could begin the design of such a page by writing a static prototype of the HTML page. You could then replace the table and other variable parts with program code that generates the content that varies from one occasion to the next.  
+ Observe que la plantilla es una página HTML en la que las partes variables se han reemplazado con código de programa.  Podría comenzar el diseño de este tipo de página escribiendo un prototipo estático de la página HTML.  A continuación, podría reemplazar la tabla y otras partes variables con código de programa que genera el contenido que varía de una ocasión a la siguiente.  
   
- Using a template in your application makes it is easier to see the final form of the output than you could in, for example, a long series of write statements. Making changes to the form of the output is easier and more reliable.  
+ Al utilizar una plantilla en la aplicación es más fácil ver la forma final de la salida en un plantilla que lo que podría ver, por ejemplo, en una larga serie de instrucciones write.  Realizar cambios en el formulario del resultado es más fácil y confiable.  
   
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Creating a Run-Time Text Template in any Application  
+## Crear una plantilla de texto en tiempo de ejecución en cualquier aplicación  
   
-#### <a name="to-create-a-run-time-text-template"></a>To create a run-time text template  
+#### Para crear una plantilla de texto en tiempo de ejecución  
   
-1.  In Solution Explorer, on the shortcut menu of your project, choose **Add**, **New Item**.  
+1.  En el Explorador de soluciones, en el menú contextual del proyecto, elija  **Agregar**,  **Nuevo elemento**.  
   
-2.  In the **Add New Item** dialog box, select **Runtime Text Template**. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] look under **Common Items\General**.)  
+2.  En el  **Agregar nuevo elemento** cuadro de diálogo, seleccione  **Plantilla de texto en tiempo de ejecución**.  \(En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] busque en **Elementos comunes\\General**.\)  
   
-3.  Type a name for your template file.  
+3.  Escriba un nombre para el archivo de plantilla.  
   
     > [!NOTE]
-    >  The template file name will be used as a class name in the generated code. Therefore, it should not have spaces or punctuation.  
+    >  El nombre del archivo de plantilla se utilizará como nombre de clase en el código generado.  Por tanto, no debe tener espacios ni puntuación.  
   
-4.  Choose **Add**.  
+4.  Elija  **Agregar**.  
   
-     A new file is created that has extension **.tt**. Its **Custom Tool** property is set to **TextTemplatingFilePreprocessor**. It contains the following lines:  
+     Se crea un nuevo archivo con la extensión **.tt**.  Su propiedad **Herramienta personalizada** se establece en **TextTemplatingFilePreprocessor**.  Contiene las líneas siguientes:  
   
     ```  
     <#@ template language="C#" #>  
@@ -88,37 +71,37 @@ This report is Company Confidential.
     <#@ import namespace="System.Collections.Generic" #>  
     ```  
   
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Converting an Existing File to a Run-Time Template  
- A good way to create a template is to convert an existing example of the output. For example, if your application will generate HTML files, you can start by creating a plain HTML file. Make sure that it works correctly and that its appearance is correct. Then include it into your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project and convert it to a template.  
+## Convertir un archivo existente en una plantilla en tiempo de ejecución  
+ Una buena forma de crear una plantilla es convertir un ejemplo existente de la salida.  Por ejemplo, si la aplicación generará archivos HTML, puede comenzar creando un archivo HTML sin formato.  Asegúrese de que funciona correctamente y de que su aspecto es correcto.  A continuación, inclúyalo en el proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y conviértalo en una plantilla.  
   
-#### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>To convert an existing text file to a run-time template  
+#### Para convertir un archivo de texto existente en una plantilla en tiempo de ejecución  
   
-1.  Include the file into your [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] project. In Solution Explorer, on the shortcut menu of the project, choose **Add**, **Existing Item**.  
+1.  Incluya el archivo en el proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  En el Explorador de soluciones, en el menú contextual del proyecto, elija  **Agregar**,  **Elemento existente**.  
   
-2.  Set the file's **Custom Tools** property to **TextTemplatingFilePreprocessor**. In Solution Explorer, on the shortcut menu of the file, choose **Properties**.  
+2.  Establezca la propiedad **Herramienta personalizada** del archivo en **TextTemplatingFilePreprocessor**.  En el Explorador de soluciones, en el menú contextual del archivo, elija  **Propiedades**.  
   
     > [!NOTE]
-    >  If the property is already set, make sure that it is **TextTemplatingFilePreprocessor** and not **TextTemplatingFileGenerator**. This can happen if you include a file that already has the extension **.tt**.  
+    >  Si la propiedad ya está establecida, asegúrese de que es **TextTemplatingFilePreprocessor** y no **TextTemplatingFileGenerator**.  Esto puede sucede si incluye un archivo que ya tiene la extensión **.tt**.  
   
-3.  Change the file name extension to **.tt**. Although this step is optional, it helps you avoid opening the file in an incorrect editor.  
+3.  Cambie la extensión de nombre de archivo a **.tt**.  Aunque este paso es opcional, sirve de ayuda para evitar abrir el archivo en un editor incorrecto.  
   
-4.  Remove any spaces or punctuation from the main part of the file name. For example "My Web Page.tt" would be incorrect, but "MyWebPage.tt" is correct. The file name will be used as a class name in the generated code.  
+4.  Quite cualquier espacio o puntuación de la parte principal del nombre de archivo.  Por ejemplo "Mi página web.tt" sería incorrecto, pero "MiPáginaWeb.tt" es correcto.  El nombre de archivo se utilizará como nombre de clase en el código generado.  
   
-5.  Insert the following line at the beginning of the file. If you are working in a Visual Basic project, replace "C#" with "VB".  
+5.  Inserte la siguiente línea al principio del archivo.  Si trabaja en un proyecto de Visual Basic, reemplace "C\#" con "VB".  
   
      `<#@ template language="C#" #>`  
   
-## <a name="the-content-of-the-run-time-template"></a>The Content of the Run-Time Template  
+## Contenido de la plantilla en tiempo de ejecución  
   
-### <a name="template-directive"></a>Template directive  
- Keep the first line of the template as it was when you created the file:  
+### Directiva de plantilla  
+ Mantenga la primera línea de la plantilla tal y como estaba cuando creó el archivo:  
   
  `<#@ template language="C#" #>`  
   
- The language parameter will depend on the language of your project.  
+ El parámetro de lenguaje dependerá del lenguaje del proyecto.  
   
-### <a name="plain-content"></a>Plain content  
- Edit the **.tt** file to contain the text that you want your application to generate. For example:  
+### Contenido sin formato  
+ Edite el archivo **.tt** para incluir el texto que desea que genere la aplicación.  Por ejemplo:  
   
 ```  
 <html><body>  
@@ -128,10 +111,10 @@ This report is Company Confidential.
 </body></html>  
 ```  
   
-### <a name="embedded-program-code"></a>Embedded program code  
- You can insert program code between `<#` and `#>`. For example:  
+### Código de programa incrustado  
+ Puede insertar código de programa entre `<#` y `#>`.  Por ejemplo:  
   
-```csharp  
+```c#  
 <table>  
     <# for (int i = 1; i <= 10; i++)  
        { #>  
@@ -141,7 +124,7 @@ This report is Company Confidential.
  </table>  
 ```  
   
-```vb  
+```vb#  
 <table>  
 <#  
     For i As Integer = 1 To 10  
@@ -155,54 +138,54 @@ This report is Company Confidential.
   
 ```  
   
- Notice that statements are inserted between `<# ... #>` and expressions are inserted between `<#= ... #>`. For more information, see [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Observe que las instrucciones se insertan entre `<# ... #>` y que las expresiones se insertan entre `<#= ... #>`.  Para obtener más información, vea [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
   
-## <a name="using-the-template"></a>Using the Template  
+## Utilizar la plantilla  
   
-### <a name="the-code-built-from-the-template"></a>The code built from the template  
- Whenever you save the **.tt** file, a subsidiary **.cs** or **.vb** file will be generated. To see this file in Solution Explorer, expand the **.tt** file node. In a Visual Basic project, you will be able to expand the node after you click **Show All Files** in the Solution Explorer toolbar.  
+### Código compilado a partir de la plantilla  
+ Siempre que guarda el archivo **.tt**, se genera un archivo **.cs** o **.vb** subsidiario.  Para ver este archivo en el Explorador de soluciones, expanda el nodo del archivo **.tt**.  En un proyecto de Visual Basic, podrá expandir el nodo después de hacer clic en **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones.  
   
- Notice that this subsidiary file contains a partial class that contains a method called `TransformText()`. You can call this method from your application.  
+ Observe que este archivo subsidiario contiene una clase parcial que contiene un método denominado `TransformText()`.  Puede llamar a este método desde la aplicación.  
   
-### <a name="generating-text-at-run-time"></a>Generating text at run time  
- In your application code, you can generate the content of your template using a call like this:  
+### Generar texto en tiempo de ejecución  
+ En el código de aplicación, puede generar el contenido de la plantilla mediante una llamada similar a:  
   
-```csharp  
+```c#  
 MyWebPage page = new MyWebPage();  
 String pageContent = page.TransformText();  
 System.IO.File.WriteAllText("outputPage.html", pageContent);  
   
 ```  
   
-```vb  
+```vb#  
 Dim page = New My.Templates.MyWebPage  
 Dim pageContent = page.TransformText()  
 System.IO.File.WriteAllText("outputPage.html", pageContent)  
   
 ```  
   
- To place the generated class in a particular namespace, set the **Custom Tool Namespace** property of the text template file.  
+ Para colocar la clase generada en un espacio de nombres determinado, establezca la propiedad **Espacio de nombres de la herramienta personalizada** del archivo de plantilla de texto.  
   
-### <a name="debugging-runtime-text-templates"></a>Debugging Runtime Text Templates  
- Debug and test runtime text templates in the same way as ordinary code.  
+### Depuración de las plantillas de texto en tiempo de ejecución  
+ Depurar y probar las plantillas de texto en tiempo de ejecución de la misma forma que código común.  
   
- You can set a breakpoint in a text template. If you start the application in debugging mode from Visual Studio, you can step through the code and evaluate watch expressions in the usual way.  
+ Puede establecer un punto de interrupción en una plantilla de texto.  Si la aplicación se inicia en modo de depuración de Visual Studio, puede recorrer el código y evaluar expresiones de inspección de la forma habitual.  
   
-### <a name="passing-parameters-in-the-constructor"></a>Passing parameters in the constructor  
- Usually a template must import some data from other parts of the application. To make this easy, the code built by the template is a partial class. You can create another part of the same class in another file in your project. That file can include a constructor with parameters, properties and functions that can accessed both by the code that is embedded in the template, and by the rest of the application.  
+### Pasar parámetros en el constructor  
+ Normalmente una plantilla debe importar algunos datos de otras partes de la aplicación.  Para que esto resulte más sencillo, el código que compila la plantilla es una clase parcial.  Puede crear otra parte de la misma clase en otro archivo del proyecto.  Este archivo puede incluir un constructor con parámetros, propiedades y funciones a los que pueden tener acceso el código incrustado en la plantilla y el resto de la aplicación.  
   
- For example, you could create a separate file **MyWebPageCode.cs**:  
+ Por ejemplo, podría crear un archivo independiente **MyWebPageCode.cs**:  
   
-```csharp  
+```c#  
 partial class MyWebPage  
 {  
     private MyData m_data;  
     public MyWebPage(MyData data) { this.m_data = data; }}  
 ```  
   
- In your template file **MyWebPage.tt**, you could write:  
+ En el archivo de plantilla **MyWebPage.tt**, podría escribir:  
   
-```csharp  
+```c#  
 <h2>Sales figures</h2>  
 <table>  
 <# foreach (MyDataItem item in m_data.Items)   
@@ -215,19 +198,19 @@ partial class MyWebPage
 </table>  
 ```  
   
- To use this template in the application:  
+ Para utilizar esta plantilla en la aplicación:  
   
-```csharp  
+```c#  
 MyData data = ...;  
 MyWebPage page = new MyWebPage(data);  
 String pageContent = page.TransformText();  
 System.IO.File.WriteAllText("outputPage.html", pageContent);  
 ```  
   
-#### <a name="constructor-parameters-in-visual-basic"></a>Constructor parameters in Visual Basic  
- In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the separate file **MyWebPageCode.vb** contains:  
+#### Parámetros de constructor en Visual Basic  
+ En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el archivo independiente **MyWebPageCode.vb** contiene:  
   
-```vb  
+```vb#  
 Namespace My.Templates  
   Partial Public Class MyWebPage  
     Private m_data As MyData  
@@ -238,9 +221,9 @@ Namespace My.Templates
 End Namespace  
 ```  
   
- The template file could contain:  
+ El archivo de plantilla podría contener:  
   
-```vb  
+```vb#  
 <#@ template language="VB" #>  
 <html><body>  
 <h1>Sales for January</h2>  
@@ -259,9 +242,9 @@ This report is Company Confidential.
   
 ```  
   
- And the template would be invoked by passing the parameter in the constructor:  
+ Y la plantilla podría ser invocada pasando el parámetro en el constructor:  
   
-```vb  
+```vb#  
 Dim data = New My.Templates.MyData  
     ' Add data values here ....  
 Dim page = New My.Templates.MyWebPage(data)  
@@ -270,55 +253,55 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
   
 ```  
   
-#### <a name="passing-data-in-template-properties"></a>Passing data in template properties  
- An alternative method of passing data to the template is to add public properties to the template class in a partial class definition. Your application can set the properties before invoking `TransformText()`.  
+#### Pasar datos en las propiedades de plantilla  
+ Un método alternativo de pasar datos a la plantilla es agregar las propiedades públicas a la clase de plantilla en una definición de clase parcial.  La aplicación puede establecer las propiedades antes de invocar `TransformText()`.  
   
- You can also add fields to your template class in a partial definition. This would enable you to pass data between successive executions of the template.  
+ También puede agregar campos a la clase de plantilla en una definición parcial.  Esto le permitiría pasar datos entre las ejecuciones sucesivas de la plantilla.  
   
-### <a name="use-partial-classes-for-code"></a>Use partial classes for code  
- Many developers prefer to avoid writing large bodies of code in templates. Instead, define methods in a partial class that has the same name as the template file. Call those methods from the template. In this way, the template shows you more clearly what the target output string will look like. Discussions about the appearance of the result can be separated from the logic of creating the data that it displays.  
+### Utilizar clases parciales para el código  
+ Muchos desarrolladores prefieren evitar escribir cuerpos grandes de código en plantillas.  En su lugar, defina métodos en una clase parcial que tiene el mismo nombre que el archivo de plantilla.  Llame a esos métodos desde la plantilla.  De esta manera, la plantilla muestra más claramente el aspecto de la cadena de salida de destino.  Debates sobre la apariencia del resultado pueden separarse de la lógica de la creación de datos que muestran.  
   
-### <a name="assemblies-and-references"></a>Assemblies and references  
- If you want your template code to reference a .NET or other assembly such as **System.Xml.dll**, you should add it to your project's **References** in the usual manner.  
+### Ensamblados y referencias  
+ Si desea que el código de plantilla haga referencia a .NET u otro ensamblado como **System.Xml.dll**, debe agregarlo a las **referencias** del proyecto de la manera habitual.  
   
- If you want to import a namespace in the same way as a `using` statement, you can do this with the `import` directive:  
+ Si desea importar un espacio de nombres de la misma manera que una instrucción `using`, puede hacerlo con la directiva `import`:  
   
 ```  
 <#@ import namespace="System.Xml" #>  
 ```  
   
- These directives must be placed at the beginning of the file, immediately after the `<#@template` directive.  
+ Estas directivas se deben colocar al principio del archivo, inmediatamente después de la directiva `<#@template`.  
   
-### <a name="shared-content"></a>Shared content  
- If you have text that is shared between several templates, you can place it in a separate file and include it in each file in which it should appear:  
+### Contenido compartido  
+ Si tiene texto compartido entre varias plantillas, puede colocarlo en un archivo independiente e incluir este en cada archivo donde debe aparecer:  
   
 ```  
 <#@include file="CommonHeader.txt" #>  
 ```  
   
- The included content can contain any mixture of program code and plain text, and it can contain other include directives and other directives.  
+ El contenido incluido puede contener cualquier mezcla de código de programa y texto sin formato, y puede contener otras directivas de inclusión y otras directivas.  
   
- The include directive can be used anywhere within the text of a template file or an included file.  
+ La directiva de inclusión se puede utilizar en cualquier lugar dentro del texto de un archivo de plantilla o de un archivo incluido.  
   
-### <a name="inheritance-between-run-time-text-templates"></a>Inheritance between Run-Time Text Templates  
- You can share content between run-time templates by writing a base class template, which can be abstract. Use the `inherits` parameter of the `<@#template#>` directive to reference another runtime template class.  
+### Herencia entre plantillas de texto en tiempo de ejecución  
+ Puede compartir el contenido entre plantillas en tiempo de ejecución escribiendo una plantilla de clase base, que puede ser abstracta.  Uso del `inherits` parámetro de la `<@#template#>` la directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Inheritance pattern: Fragments in Base Methods  
- In the pattern used in the example that follows, notice the following points:  
+#### Modelo de herencia: fragmentos en métodos base  
+ En el modelo utilizado en el ejemplo que aparece a continuación, observe los siguientes puntos:  
   
--   The base class `SharedFragments` defines methods within class feature blocks `<#+ ... #>`.  
+-   La clase base `SharedFragments` define los métodos dentro de los bloques de características de clase `<#+ ... #>`.  
   
--   The base class contains no free text. Instead, all its text blocks occur inside the class feature methods.  
+-   La clase base no contiene ningún texto libre.  En su lugar, todos sus bloques de texto se producen dentro de los métodos de característica de clase.  
   
--   The derived class invokes the methods defined in `SharedFragments`.  
+-   La clase derivada invoca a los métodos definidos en `SharedFragments`.  
   
--   The application calls the `TextTransform()` method of the derived class, but does not transform the base class `SharedFragments`.  
+-   La aplicación llama al método `TextTransform()` de la clase derivada, pero no transforma la clase base `SharedFragments`.  
   
--   Both the base and derived classes are runtime text templates: that is, the **Custom Tool** property is set to **TextTemplatingFilePreprocessor**.  
+-   Las clases base y derivadas son las plantillas de texto en tiempo de ejecución: es decir, el  **Herramienta personalizada** está establecida en  **TextTemplatingFilePreprocessor**.  
   
  **SharedFragments.tt:**  
   
-```csharp  
+```c#  
 <#@ template language="C#" #>  
 <#+  
 protected void SharedText(int n)  
@@ -334,7 +317,7 @@ protected void SharedText(int n)
   
  **MyTextTemplate1.tt:**  
   
-```csharp  
+```c#  
 <#@ template language="C#" inherits="SharedFragments" #>  
 begin 1  
    <# SharedText(2); #>  
@@ -344,14 +327,14 @@ end 1
   
  **MyProgram.cs:**  
   
-```csharp  
+```c#  
 ...   
 MyTextTemplate1 t1  = new MyTextTemplate1();  
 string result = t1.TransformText();  
 Console.WriteLine(result);  
 ```  
   
- **The resulting output:**  
+ **Resultado que se obtiene:**  
   
 ```  
 begin 1  
@@ -359,12 +342,12 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Inheritance Pattern: Text in Base Body  
- In this alternative approach to using template inheritance, the bulk of the text is defined in the base template. The derived templates provide data and text fragments that fit into the base content.  
+#### Modelo de herencia: texto en el cuerpo base  
+ En este enfoque alternativo al uso de la herencia de plantillas, la mayor parte del texto está definida en la plantilla base.  Las plantillas derivadas proporcionan datos y fragmentos de texto que se ajustan en el contenido base.  
   
  **AbstractBaseTemplate1.tt:**  
   
-```csharp  
+```c#  
 <#@ template language="C#" #>  
   
 Here is the description for this derived template:  
@@ -388,7 +371,7 @@ End of common template.
   
  **DerivedTemplate1.tt:**  
   
-```csharp  
+```c#  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
 <#   
   // Set the base template properties:  
@@ -413,16 +396,16 @@ protected override void SpecificFragment(int n)
   
 ```  
   
- **Application code:**  
+ **Código de aplicación:**  
   
-```csharp  
+```c#  
 ...   
 DerivedTemplate1 t1 = new DerivedTemplate1();  
 string result = t1.TransformText();  
 Console.WriteLine(result);  
 ```  
   
- **Resulting output:**  
+ **Resultado que se obtiene:**  
   
 ```  
 Here is the description for this derived template:  
@@ -434,12 +417,12 @@ End of common template.
 End material for DerivedTemplate1.  
 ```  
   
-## <a name="related-topics"></a>Related Topics  
- Design Time Templates: If you want to use a template to generate code that becomes part of your application, see [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+## Temas relacionados  
+ Plantillas en tiempo de diseño: si desea utilizar una plantilla para generar código que pase a formar parte de la aplicación, vea [Design\-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
- Runtime templates can be used in any application where the templates and their content are determined at compile time. But if you want to write a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension that generates text from templates that change at run time, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+ Las plantillas en tiempo de ejecución pueden utilizarse en cualquier aplicación donde se determinan las plantillas y su contenido en tiempo de compilación.  Pero si desea escribir una extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que genere texto a partir de plantillas que cambian en tiempo de ejecución, vea [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md)   
  [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)   
- [Understanding T4: Preprocessed Text Templates by Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
+ [Comprensión T4: Preprocesa las plantillas de texto mediante la sincronización de directorios de Oleg](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)

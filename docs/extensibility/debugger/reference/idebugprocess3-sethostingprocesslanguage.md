@@ -1,69 +1,52 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProcess3::SetHostingProcessLanguage
-helpviewer_keywords:
-- IDebugProcess3::SetHostingProcessLanguage
+title: "IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProcess3::SetHostingProcessLanguage"
+helpviewer_keywords: 
+  - "IDebugProcess3::SetHostingProcessLanguage"
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 094163bb1fd5b44e82d966a3090d3caedfbf626e
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-This method sets the language that the process will be hosted under. This language can then be used by the debug engine (DE) to load the appropriate expression evaluator.  
+# IDebugProcess3::SetHostingProcessLanguage
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Este método establece el idioma que el proceso se hospedado en.  Este lenguaje se puede utilizar en el motor de depuración \(DE\) para cargar el evaluador adecuado de la expresión.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
 ```cpp  
-HRESULT SetHostingProcessLanguage(  
-   REFGUID guidLang  
+HRESULT SetHostingProcessLanguage(  
+   REFGUID guidLang  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetHostingProcessLanguage(  
-   ref Guid guidLang  
+   ref Guid guidLang  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `guidLang`  
- [in] `GUID` of the language that the DE should use. Specify `GUID_NULL` (C++) or `Guid.Empty` (C#) to have the DE use the default language.  
+ \[in\]  `GUID` de lenguajes que se OF debe usar.  Especifique `GUID_NULL` \(C\+\+\) o `Guid.Empty` \(C\#\) para que el OF utiliza el idioma predeterminado.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve el código de error.  
   
-## <a name="remarks"></a>Remarks  
- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) can be used to retrieve the current language setting.  
+## Comentarios  
+ [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) se puede utilizar para recuperar la configuración de idioma actual.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)

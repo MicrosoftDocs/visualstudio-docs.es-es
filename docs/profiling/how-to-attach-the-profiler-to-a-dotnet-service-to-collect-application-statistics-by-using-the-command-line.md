@@ -1,151 +1,135 @@
 ---
-title: 'How to: Attach the Profiler to a .NET Service to Collect Application Statistics by Using the Command Line | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "C&#243;mo: Adjuntar el generador de perfiles a un servicio .NET para recopilar estad&#237;sticas de aplicaci&#243;n mediante la l&#237;nea de comandos | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 28
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: d8c68b9c554d7f40b379b821cb8907bdfecc9a43
-ms.contentlocale: es-es
-ms.lasthandoff: 08/31/2017
-
+caps.handback.revision: 28
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>How to: Attach the Profiler to a .NET Service to Collect Application Statistics by Using the Command Line
-This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to attach the profiler to a .NET Framework service and collect performance statistics by using the sampling method.  
+# C&#243;mo: Adjuntar el generador de perfiles a un servicio .NET para recopilar estad&#237;sticas de aplicaci&#243;n mediante la l&#237;nea de comandos
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar estadísticas de rendimiento con el método de muestreo.  
   
 > [!NOTE]
->  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas.  Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección.  Vea [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 >   
->  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio \\Team Tools\\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas.  Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando.  Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Adding tier interaction data to a profiling run requires specific procedures with the command line profiling tools. See [Collecting tier interaction data](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
+>  Agregar datos de interacción de capas a una ejecución de generación de perfiles requiere procedimientos concretos con las Herramientas de generación de perfiles de la línea de comandos.  Vea [Recopilar datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
   
- To collect performance data from a .NET Framework service, you must use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to initialize the appropriate environment variables. You must then restart the computer that hosts the service and configure that computer for profiling. You then attach the profiler to the service process. When the profiler is attached to the service, you can pause and resume data collection.  
+ Para recopilar datos de rendimiento de un servicio de .NET Framework, debe utilizar la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas.  A continuación, debe reiniciar el equipo que hospeda el servicio y configurarlo para la generación de perfiles.  Después debe adjuntar el generador de perfiles al proceso del servicio.  Mientras el generador de perfiles está adjunto al servicio, puede pausar y reanudar la recolección de datos.  
   
- To end a profiling session, the profiler must be detached from the service and the profiler must be explicitly shut down. In most cases, we recommend clearing the profiling environment variables at the end of a session.  
+ Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar del servicio y se debe apagar explícitamente.  En la mayoría de los casos, recomendamos borrar las variables de entorno de generación de perfiles al final de una sesión.  
   
-## <a name="attaching-the-profiler"></a>Attaching the Profiler  
+## Adjuntar el generador de perfiles  
   
-#### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>To attach the Profiler to a .NET Framework service  
+#### Para adjuntar el generador de perfiles a un servicio de .NET Framework  
   
-1.  Install the service.  
+1.  Instale el servicio.  
   
-2.  Open a command prompt window.  
+2.  Abra una ventana de símbolo del sistema.  
   
-3.  Initialize the profiling environment variables. Type:  
+3.  Inicialice las variables de entorno de generación de perfiles.  Escriba:  
   
-     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
+     **VSPerfClrEnv \/globalsampleon** \[**\/samplelineoff**\]  
   
-    -   **/globalsampleon** enables sampling.  
+    -   **\/globalsampleon** habilita el muestreo.  
   
-    -   **/samplelineoff** disables the assignment of collected data to specific source code lines. When this option is specified, data is assigned only to functions.  
+    -   **\/samplelineoff** deshabilita la asignación de los datos recopilados a líneas de código fuente específicas.  Cuando se especifica esta opción, los datos se asignan solo a funciones.  
   
-4.  Restart the computer.  
+4.  Reinicie el equipo.  
   
-5.  Open a command prompt window.  
+5.  Abra una ventana de símbolo del sistema.  
   
-6.  Start the profiler. Type:  
+6.  Inicie el generador de perfiles.  Escriba:  
   
-     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+     **VSPerfCmd**  [\/start](../profiling/start.md) **:sample**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
   
-    -   The **/start:sample** option initializes the profiler.  
+    -   La opción **\/start:sample** inicializa el generador de perfiles.  
   
-    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
+    -   La opción **\/output:**`OutputFile` es necesaria con **\/start**.  `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles \(.vsp\).  
   
-     You can use any of the following options with the **/start:sample** option.  
+     Puede usar cualquiera de las siguientes opciones con la opción **\/start:sample**.  
   
     > [!NOTE]
-    >  The **/user** and **/crosssession** options are usually required for services.  
+    >  Las opciones **\/user** y **\/crosssession** son necesarias normalmente para servicios.  
   
-    |Option|Description|  
+    |Opción|Descripción|  
     |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the profiled process. This option is required only if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
-    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the service is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
-    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
+    |[\/usuario](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles.  Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión.  El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
+    |[\/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otras sesiones.  Esta opción es necesaria si el servicio se ejecuta en una sesión diferente.  El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows.  **\/CS** se puede especificar como una abreviatura de **\/crosssession**.|  
+    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles.|  
+    |[\/automark](../profiling/automark.md) **:** `Interval`|Se utiliza únicamente con **\/wincounter**.  Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows.  El valor predeterminado es 500 ms.|  
+    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|Especifica un evento de Seguimiento de eventos para Windows \(ETW\) que se va a recopilar durante la generación de perfiles.  Los eventos ETW se recopilan en un archivo \(.etl\) independiente.|  
   
-7.  If necessary, start the service.  
+7.  Si es necesario, inicie el servicio.  
   
-8.  Attach the profiler to the service. Type:  
+8.  Adjunte el generador de perfiles al servicio.  Escriba:  
   
-     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**  [\/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} \[`Sample Event`\] \[[\/targetclr](../profiling/targetclr.md)**:**`Version`\]  
   
-    -   Specify the process ID (`PID`) or process name (ProcName) of the service. You can view the process IDs and names of all running processes in Windows Task Manager.  
+    -   Especifique el identificador de proceso \(`PID`\) o nombre de proceso \(ProcName\) del servicio.  Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
   
-     By default, performance data is sampled every 10,000,000 non-halted processor clock cycles. This is approximately 100 samples per second on a 1GH processor. You can specify one of the following options to change the clock cycle interval or to specify a different sampling event.  
+     De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos.  En un procesador de 1 GH, equivale aproximadamente a 100 muestras por segundo.  Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj o especificar otro evento de muestreo.  
   
-    |Sample Event|Description|  
-    |------------------|-----------------|  
-    |[/timer](../profiling/timer.md) **:** `Interval`|Changes the sampling interval to the number of non-halted clock cycles specified by `Interval`.|  
-    |[/pf](../profiling/pf.md)[**:**`Interval`]|Changes the sampling event to page faults. If `Interval` is specified, sets the number of page faults between samples. Default is 10.|  
-    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Changes the sampling event to system calls from the process to the operating system kernel (syscalls). If `Interval` is specified, sets the number of calls between samples. Default is 10.|  
-    |[/counter](../profiling/counter.md) **:** `Config`|Changes the sampling event and interval to the processor performance counter and interval specified in `Config`.|  
+    |Evento de muestreo|Descripción|  
+    |------------------------|-----------------|  
+    |[\/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo al número de ciclos de reloj no detenidos especificado en `Interval`.|  
+    |[\/pf](../profiling/pf.md)\[**:**`Interval`\]|Cambia el evento de muestreo a errores de página.  Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro.  El valor predeterminado es 10.|  
+    |[\/sys](../profiling/sys-vsperfcmd.md)\[`:``Interval`\]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo \(llamadas syscall\).  Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro.  El valor predeterminado es 10.|  
+    |[\/counter](../profiling/counter.md) **:** `Config`|Cambia el evento y el intervalo de muestreo al contador de rendimiento del procesador y al intervalo especificados en `Config`.|  
   
-    -   **targetclr:** `Version` specifies the version of the common language runtime (CLR) to profile when more than one version of the runtime is loaded in an application. Optional.  
+    -   **targetclr:** `Version` especifica la versión de Common Language Runtime \(CLR\) para generar perfiles cuando se carga más de una versión del runtime en una aplicación.  Opcional.  
   
-## <a name="controlling-data-collection"></a>Controlling Data Collection  
- When the service is running, you can use **VSPerfCmd.exe** options to start and stop the writing of data to the profiler data file. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
+## Controlar la recolección de datos  
+ Cuando se está ejecutando el servicio, puede utilizar las opciones de **VSPerfCmd.exe** para iniciar y detener la escritura de datos en el archivo de datos del generador de perfiles.  Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
   
-#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
+#### Para iniciar y detener la recolección de datos  
   
--   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
+-   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos.  Especifique cada opción en una línea de comandos diferente.  Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Option|Description|  
+    |Opción|Descripción|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
-    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** starts to collect data for the process specified by the process ID or process name. **/detach** stops data collection for the specified process or for all processes if a specific process is not specified.|  
+    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|Inicia \(**\/globalon**\) o detiene \(**\/globaloff**\) la recolección de datos de todos los procesos.|  
+    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [\/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia \(**\/processon**\) o detiene \(**\/processoff**\) la recolección de datos del proceso especificado por el identificador de proceso \(`PID`\).|  
+    |**\/attach:**{`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[:{`PID`&#124;`ProcName`}\]|**\/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso o por el nombre de proceso.  **\/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
   
-## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
- To end a profiling session, the profiler must be detached from all profiled processes and the profiler must be explicitly shut down . You can detach the from an application profiled with the sampling method by closing the application or by calling the **VSPerfCmd /detach** option. You then call the **VSPerfCmd /shutdown** option to turn the profiler off and close the profiling data file.  
+## Finalizar la sesión de generación de perfiles  
+ Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de todos los procesos perfilados y se debe apagar explícitamente.  Puede desasociar el generador de perfiles de una aplicación para la que se generan perfiles con el método de muestreo cerrando la aplicación o llamando a la opción **VSPerfCmd \/detach**.  Después debe llamar a la opción **VSPerfCmd \/shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  
   
- The **VSPerfClrEnv /globaloff** command clears the profiling environment variables, but the system configuration is not reset until the computer is restarted.  
+ El comando **VSPerfClrEnv \/globaloff** borra las variables de entorno de generación de perfiles, pero la configuración del sistema no se restablece una vez reiniciado el equipo.  
   
-#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
+#### Para finalizar una sesión de generación de perfiles  
   
-1.  Do one of the following to detach the profiler from the target application:  
+1.  Siga uno de estos procedimientos para desasociar el generador de perfiles de la aplicación de destino:  
   
-    -   Stop the service.  
+    -   Detenga el servicio.  
   
-         -or-  
+         O bien  
   
-    -   Type **VSPerfCmd /detach**  
+    -   Escriba **VSPerfCmd \/detach**  
   
-2.  Shut down the profiler. Type:  
+2.  Apague el generador de perfiles.  Escriba:  
   
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd \/shutdown**  
   
-3.  (Optional) Clear the profiling environment variables. Type:  
+3.  \(Opcional\) Borre las variables del entorno de generación de perfiles.  Escriba:  
   
-     **VSPerfClrEnv /globaloff**  
+     **VSPerfClrEnv \/globaloff**  
   
-4.  Restart the computer.  
+4.  Reinicie el equipo.  
   
-## <a name="see-also"></a>See Also  
- [Profiling Services](../profiling/command-line-profiling-of-services.md)   
- [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md)
+## Vea también  
+ [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
+ [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

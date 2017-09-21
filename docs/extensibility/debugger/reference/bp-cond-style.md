@@ -1,84 +1,67 @@
 ---
-title: BP_COND_STYLE | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_COND_STYLE
-helpviewer_keywords:
-- BP_COND_STYLE enumeration
+title: "BP_COND_STYLE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_COND_STYLE"
+helpviewer_keywords: 
+  - "Enumeración BP_COND_STYLE"
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3148f8a1aaa333c8ae0cf55bdc3bc4e218c0f574
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
-Specifies the breakpoint condition style for pending and bound breakpoints.  
+# BP_COND_STYLE
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Especifica el estilo de la condición de punto de interrupción para los puntos de interrupción pendientes y enlazados.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
+```cpp#  
+enum enum_BP_COND_STYLE {   
+   BP_COND_NONE         = 0x0000,  
+   BP_COND_WHEN_TRUE    = 0x0001,  
+   BP_COND_WHEN_CHANGED = 0x0002  
 };  
 typedef DWORD BP_COND_STYLE;  
 ```  
   
-```csharp  
-public enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
+```c#  
+public enum enum_BP_COND_STYLE {   
+   BP_COND_NONE         = 0x0000,  
+   BP_COND_WHEN_TRUE    = 0x0001,  
+   BP_COND_WHEN_CHANGED = 0x0002  
 };  
 ```  
   
-## <a name="members"></a>Members  
- BP_COND_NONE  
- Fires the breakpoint when the breakpoint's position is reached. No breakpoint condition specified.  
+## Members  
+ BP\_COND\_NONE  
+ Desencadena el punto de interrupción cuando se alcanza la posición del punto de interrupción.  Ninguna condición de punto de interrupción especificada.  
   
- BP_COND_WHEN_TRUE  
- Fires the breakpoint only when the conditional expression associated with the breakpoint evaluates to `true`.  
+ BP\_COND\_WHEN\_TRUE  
+ Desencadena el punto de interrupción solo cuando la expresión condicional asociado al punto de interrupción se evalúa como `true`.  
   
- BP_COND_WHEN_CHANGED  
- Fires the breakpoint only when the value of the conditional expression associated with the breakpoint has changed from its previous evaluation.  
+ BP\_COND\_WHEN\_CHANGED  
+ Desencadena el punto de interrupción sólo cuando el valor de la expresión condicional asociado al punto de interrupción ha cambiado su evaluación anterior.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `styleCondition` member of the [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure.  
+## Comentarios  
+ utilizado para el miembro de `styleCondition` de la estructura de [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Requisitos  
+ encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+## Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

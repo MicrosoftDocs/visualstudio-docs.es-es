@@ -13,6 +13,8 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - updating datasets, constraints
 - constraints [Visual Basic], datasets
@@ -20,8 +22,8 @@ helpviewer_keywords:
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -39,10 +41,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: b8f5bf22140e0790d3d2ef383975d9351995d9f6
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5b5d6a28bfed55aa925aa667877f9c5e3b7f57c1
 ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Turn off constraints while filling a dataset
@@ -57,7 +59,7 @@ If a dataset contains constraints (such as foreign-key constraints), they can ra
   
 -   The following example shows how to temporarily turn off constraint checking in a dataset:  
   
-     [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]  [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]  
+     [!code-cs[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]  [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]  
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>To suspend update constraints using the Dataset Designer  
   

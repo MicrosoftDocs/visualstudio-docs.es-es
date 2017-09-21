@@ -1,91 +1,74 @@
 ---
-title: SccRunScc Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccRunScc
-helpviewer_keywords:
-- SccRunScc function
+title: "SccRunScc (funci&#243;n) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccRunScc"
+helpviewer_keywords: 
+  - "SccRunScc (función)"
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: db173b2a22556c360808b93049f39fca7f95656f
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccrunscc-function"></a>SccRunScc Function
-This function invokes the source control administration tool.  
+# SccRunScc (funci&#243;n)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Esta función invoca la herramienta de administración de control de código fuente.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 SCCRTN SccRunScc(  
-   LPVOID  pvContext,  
-   HWND    hWnd,  
-   LONG    nFiles,  
-   LPCSTR* lpFileNames  
+   LPVOID  pvContext,  
+   HWND    hWnd,  
+   LONG    nFiles,  
+   LPCSTR* lpFileNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] La estructura de contexto complemento de control de código fuente.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Número de archivos especificado en el `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Array of selected file names.  
+ \[in\] Matriz de nombres de archivo seleccionados.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Valor devuelto  
+ La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|The source control administration tool was successfully invoked.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled.|  
-|SCC_E_INITIALIZEFAILED|Failed to initialize the source control system.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
-|SCC_E_CONNECTIONFAILURE|Failed to connect to the source control system.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC\_OK|Se invocó correctamente la herramienta de administración de control de código fuente.|  
+|SCC\_I\_OPERATIONCANCELED|Se canceló la operación.|  
+|SCC\_E\_INITIALIZEFAILED|No se pudo inicializar el sistema de control de código fuente.|  
+|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención.|  
+|SCC\_E\_CONNECTIONFAILURE|No se pudo conectar al sistema de control de código fuente.|  
+|SCC\_E\_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
+|SCC\_E\_NONSPECIFICERROR|Error no específico.|  
   
-## <a name="remarks"></a>Remarks  
- This function allows the caller to access the full range of features of the source control system through an external administration tool. If the source control system has no user interface, the source control plug-in can implement an interface to perform necessary administration functions.  
+## Comentarios  
+ Esta función permite al llamador tener acceso a la gama completa de características del sistema de control de código fuente a través de una herramienta de administración externo. Si el sistema de control de código fuente no tiene ninguna interfaz de usuario, el complemento de control de código fuente puede implementar una interfaz para realizar funciones de administración necesarios.  
   
- This function is called with a count and an array of file names for the currently selected files. If the administration tool supports it, the list of files can be used to preselect files in the administration interface; otherwise, the list can be ignored.  
+ Esta función se invoca con un número y una matriz de nombres de archivo para los archivos seleccionados actualmente. Si la herramienta de administración lo admite, la lista de archivos puede utilizarse para preseleccionar archivos en la interfaz de administración; de lo contrario, puede omitir la lista.  
   
- This function is typically invoked when the user selects the **Launch \<Source Control Server>** from the **File** -> **Source Control** menu. This **Launch** menu option can be always disabled or even hidden by setting a registry entry. See [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md) for details. This function is called only if [SccInitialize](../extensibility/sccinitialize-function.md) returns the `SCC_CAP_RUNSCC` capability bit (see [Capability Flags](../extensibility/capability-flags.md) for details on this and other capability bits).  
+ Esta función normalmente se invoca cuando el usuario selecciona el **Inicio \< servidor de Control de código fuente \>** desde el **archivo** \-\> **Control de código fuente** menú. Esto **iniciar** opción de menú puede siempre deshabilitado o incluso ocultarse estableciendo una entrada del registro. Para obtener información más detallada, vea [Cómo: instalar un complemento de Control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md). Esta función sólo se llama si [SccInitialize](../extensibility/sccinitialize-function.md) devuelve el `SCC_CAP_RUNSCC` bit de capacidad \(consulte [Marcadores de capacidad](../extensibility/capability-flags.md) para obtener más información sobre este y otros bits de capacidad\).  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
- [Capability Flags](../extensibility/capability-flags.md)   
+## Vea también  
+ [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Cómo: instalar un complemento de Control de código fuente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Marcadores de capacidad](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

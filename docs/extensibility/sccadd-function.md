@@ -1,115 +1,98 @@
 ---
-title: SccAdd Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccAdd
-helpviewer_keywords:
-- SccAdd function
+title: "SccAdd (funci&#243;n) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccAdd"
+helpviewer_keywords: 
+  - "SccAdd (función)"
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 17
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 25b3dbc61b4fb57471737e41d3904effa9ed87be
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 17
 ---
-# <a name="sccadd-function"></a>SccAdd Function
-This function adds new files to the source control system.  
+# SccAdd (funci&#243;n)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Esta función agrega nuevos archivos al sistema de control de código fuente.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 SCCRTN SccAdd(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG*     pfOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG*     pfOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] La estructura de contexto complemento de control de código fuente.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  nFiles  
- [in] Number of files selected to be added to the current project as given in the `lpFileNames` array.  
+ \[in\] Número de archivos seleccionados para agregar al proyecto actual, como se indica en la `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Array of fully qualified local names of files to be added.  
+ \[in\] Matriz de nombres locales completos de archivos que se va a agregar.  
   
  lpComment  
- [in] The comment to be applied to all of the files being added.  
+ \[in\] El comentario que se aplicará a todos los archivos que se va a agregar.  
   
  pfOptions  
- [in] Array of command flags, provided on a per-file basis.  
+ \[in\] Matriz de indicadores de comando, proporcionado por el archivo.  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Opciones específicas del complemento de control de código fuente.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Valor devuelto  
+ La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|The add operation was successful.|  
-|SCC_E_FILEALREADYEXISTS|The selected file is already under source control.|  
-|SCC_E_TYPENOTSUPPORTED|The type of the file (for example, binary) is not supported by the source control system.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure; add not performed.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
-|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
-|SCC_E_FILENOTEXIST|Local file was not found.|  
+|SCC\_OK|La operación de agregar fue correcta.|  
+|SCC\_E\_FILEALREADYEXISTS|El archivo seleccionado ya está bajo control de código fuente.|  
+|SCC\_E\_TYPENOTSUPPORTED|El tipo de archivo \(por ejemplo, binario\) no es compatible con el sistema de control de código fuente.|  
+|SCC\_E\_OPNOTSUPPORTED|El sistema de control de código fuente no admite esta operación.|  
+|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
+|SCC\_E\_NONSPECIFICERROR|Error no específico; Agregue no realiza.|  
+|SCC\_I\_OPERATIONCANCELED|Se canceló la operación antes de completarse.|  
+|SCC\_I\_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
+|SCC\_E\_FILENOTEXIST|No se encontró el archivo local.|  
   
-## <a name="remarks"></a>Remarks  
- The usual `fOptions` are replaced here by an array, `pfOptions`, with one `LONG` option specification per file. This is because the file type may vary from file to file.  
+## Comentarios  
+ La habitual `fOptions` se reemplazan aquí por una matriz `pfOptions`, con una `LONG` opción especificación por archivo. Esto es porque el tipo de archivo puede variar de un archivo a.  
   
 > [!NOTE]
->  It is invalid to specify both `SCC_FILETYPE_TEXT` and `SCC_FILETYPE_BINARY` options for the same file, but it is valid to specify neither. Setting neither is the same as setting `SCC_FILETYPE_AUTO`, in which case the source control plug-in autodetects the file type.  
+>  No es válido especificar ambos `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` Opciones para el mismo archivo, pero es válido especificar ninguno. Configuración no es lo mismo que establecer `SCC_FILETYPE_AUTO`, en cuyo caso el origen de controlar el complemento detecta automáticamente el tipo de archivo.  
   
- Below is the list of flags used in the `pfOptions` array:  
+ A continuación se muestra la lista de marcas que se usan en el `pfOptions` matriz:  
   
-|Option|Value|Meaning|  
-|------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0x00|The source control plug-in should detect the file type.|  
-|SCC_FILETYPE_TEXT|0x01|Indicates an ASCII text file.|  
-|SCC_FILETYPE_BINARY|0x02|Indicates a file type other than ASCII text.|  
-|SCC_ADD_STORELATEST|0x04|Stores only the latest copy of the file, no deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0x08|Treats the file as ANSI text.|  
-|SCC_FILETYPE_UTF8|0x10|Treats the file as Unicode text in UTF8 format.|  
-|SCC_FILETYPE_UTF16LE|0x20|Treats the file as Unicode text in UTF16 Little Endian format.|  
-|SCC_FILETYPE_UTF16BE|0x40|Treats the file as Unicode text in UTF16 Big Endian format.|  
+|Opción|Valor|Significado|  
+|------------|-----------|-----------------|  
+|SCC\_FILETYPE\_AUTO|0 x 00|El complemento de control de código fuente debe detectar el tipo de archivo.|  
+|SCC\_FILETYPE\_TEXT|0 x 01|Indica un archivo de texto ASCII.|  
+|SCC\_FILETYPE\_BINARY|0 x 02|Indica un tipo de archivo que no sea de texto ASCII.|  
+|SCC\_ADD\_STORELATEST|0 x 04|Almacena sólo la copia más reciente del archivo, no hay diferencias.|  
+|SCC\_FILETYPE\_TEXT\_ANSI|0 x 08|Trata el archivo como texto ANSI.|  
+|SCC\_FILETYPE\_UTF8|0 x 10|Trata el archivo como texto Unicode en formato UTF8.|  
+|SCC\_FILETYPE\_UTF16LE|0 x 20|Trata el archivo como texto Unicode en UTF16 Little Endian formato.|  
+|SCC\_FILETYPE\_UTF16BE|0 x 40|Trata el archivo como texto Unicode en UTF16 Big Endian de formato.|  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## Vea también  
+ [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

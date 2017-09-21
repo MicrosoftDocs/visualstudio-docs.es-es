@@ -1,75 +1,59 @@
 ---
-title: 'Step 2: Add a Random Object and a List of Icons | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Paso 2: Agregar un objeto aleatorio y una lista de iconos | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 22
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e20f96c4515d9e06de779bd70dd33e09526bbf23
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 22
 ---
-# <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Step 2: Add a Random Object and a List of Icons
-In this step, you create a set of matching symbols for the game. Each symbol is added to two random cells in the TableLayoutPanel on the form. To do this, you use two `new` statements to create two objects. The first is a `Random` object, like the one you used in the math quiz game. It is used in this code to randomly choose cells in the TableLayoutPanel. The second object, which may be new to you, is a `List` object which is used to store the randomly-chosen symbols.  
+# Paso 2: Agregar un objeto aleatorio y una lista de iconos
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+En este paso, creará un conjunto de símbolos para formar parejas en el juego.  Cada símbolo se agrega a dos celdas aleatorias del elemento TableLayoutPanel en el formulario.  Para ello, se utilizan dos instrucciones `new` para crear dos objetos.  El primero es un objeto `Random` como el usado en el juego de la prueba de matemáticas.  Se utiliza en este código para elegir aleatoriamente celdas de TableLayoutPanel.  El segundo objeto, que tal vez no conozca, es un objeto `List` que se utiliza para almacenar los símbolos elegidos al azar.  
   
-### <a name="to-add-a-random-object-and-a-list-of-icons"></a>To add a Random object and a list of icons  
+### Para agregar un objeto Random y una lista de iconos  
   
-1.  In **Solution Explorer**, choose **Form1.cs** if you're using Visual C#, or **Form1.vb** if you're using Visual Basic, and then on the menu bar, choose **View**, **Code**. As an alternative, you can choose the **F7** key or double-click **Form1** in **Solution Explorer**.  
+1.  En el **Explorador de soluciones**, elija **Form1.cs** si usa Visual C\# o **Form1.vb** si usa Visual Basic y, en la barra de menús, elija **Ver**, **Código**.  También puede elegir la tecla **F7** o hacer doble clic en **Form1** en el **Explorador de soluciones**.  
   
-     This displays the code module behind Form1.  
+     Se mostrará el módulo de código subyacente de Form1.  
   
-2.  In the existing code, add the following code.  
+2.  En el código existente, agregue el siguiente código.  
   
-     [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]  [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
+     [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]  
   
-     If you're using Visual C#, be sure you put the code after the opening curly brace and just after the class declaration (`public partial class Form1 : Form`). If you're using Visual Basic, put the code right after the class declaration (`Public Class Form1`).  
+     Si usa Visual C\#, asegúrese de que coloca el código detrás de la llave de apertura y justo detrás de la declaración de clase \(`public partial class Form1 : Form`\).  Si usa Visual Basic, coloque el código justo detrás de la declaración de clase \(`Public Class Form1`\).  
   
-3.  When adding the `List` object, notice the **IntelliSense** window that opens. The following is a Visual C# example, but similar text appears when you add a list in Visual Basic.  
+3.  Al agregar el objeto `List`, observe que se abre la ventana **IntelliSense**.  El ejemplo siguiente corresponde a Visual C\#, pero aparece un texto similar cuando se agrega una lista en Visual Basic.  
   
-     ![Properties window showing Click event](../ide/media/express_listintellisense.png "Express_ListIntellisense")  
-IntelliSense window  
-  
-    > [!NOTE]
-    >  The Intellisense window appears only when you enter code manually. If you copy and paste the code, it doesn't appear.  
-  
-     If you look at the code (and remarks) in small sections, it's easier to understand. Your programs can use `List` objects to keep track of many different types of items. A list can hold numbers, true/false values, text, or other objects. You can even have a `List` object that holds other `List` objects. The items in a list are called *elements*, and each list only holds one type of element. So, a list of numbers can only hold numbers—you can't add text to that list. Similarly, you can't add numbers to a list of true/false values.  
-  
-     When you create a `List` object using a `new` statement, you need to specify the kind of data you want to store in it. That's why the tooltip at the top of the **IntelliSense** window shows the types of elements in the list. Also, that's what `List<string>` (in Visual C#) and `List(Of String)` (in Visual Basic) means: It's a `List` object that holds elements of `string` data type. A string is what your program uses to store text, which is what the tooltip to the right of the **IntelliSense** window is telling you.  
-  
-4.  Consider why in Visual Basic a temporary array must be created first, but in Visual C#, the list can be created with one statement. This is because the Visual C# language has *collection initializers*, which prepare the list to accept values. In Visual Basic, you can use a collection initializer. However, for compatibility with the previous version of Visual Basic, we recommend using the preceding code.  
-  
-     When you use a collection initializer with a `new` statement, after the new `List` object is created, the program fills it with the data you provided inside the curly braces. In this case, you get a list of strings named **icons**, and that list will be initialized so that it contains sixteen strings. Each of those strings is a single letter, and they all correspond to the icons that will be in the labels. So, the game will have a pair of exclamation points, a pair of uppercase N letters, a pair of commas, and so on. (When these characters are set to the Webdings font, they will appear as symbols, such as a bus, a bike, a spider, and so forth.) Your `List` object will have sixteen strings in all, one for each cell in the TableLayoutPanel panel.  
+     ![Ventana Propiedades mostrando el evento Click](~/ide/media/express_listintellisense.png "Express\_ListIntellisense")  
+Ventana IntelliSense  
   
     > [!NOTE]
-    >  In Visual Basic, you get the same result, but first the strings are put into a temporary array, which is then converted into a `List` object. An array is similar to a list, except, for example, arrays are created with a fixed size. Lists can shrink and grow as needed, which is important in this program.  
+    >  La ventana de Intellisense solo aparece cuando se escribe código manualmente.  Si copia y pega el código, no aparece.  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+     Es más sencillo comprender el código \(y los comentarios\) si se examina en secciones pequeñas.  Sus programas pueden utilizar objetos `List` para realizar un seguimiento de muchos tipos de elementos distintos.  Una lista puede contener números, valores true\/false, texto u otros objetos.  Se puede tener un objeto `List` que contiene otros objetos `List`.  Los elementos en una lista se llaman *elementos* y cada lista solo contiene elementos de un tipo.  Por tanto, una lista de números solo puede contener números; no se puede agregar texto a esa lista.  De igual modo, tampoco se pueden agregar números a una lista de valores true\/false.  
   
--   To go to the next tutorial step, see [Step 3: Assign a Random Icon to Each Label](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+     Cuando se crea un objeto `List` mediante una instrucción `new`, debe especificar el tipo de datos que desea almacenar en él.  Por eso la información sobre herramientas de la parte superior de la ventana **IntelliSense** muestra los tipos de elementos de la lista.  Además, eso es lo que significa `List<string>` \(en Visual C\#\) y `List(Of String)` \(en Visual Basic\): es un objeto `List` que contiene elementos del tipo de datos `string`.  Una cadena es lo que su programa utiliza para almacenar texto, que es lo que la información sobre herramientas de la parte derecha de la ventana **IntelliSense** le indica.  
   
--   To return to the previous tutorial step, see [Step 1: Create a Project and Add a Table to Your Form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
+4.  En Visual Basic se debe crear primero una matriz temporal, pero en Visual C\#, la lista se puede crear con una instrucción.  Esto es así porque el lenguaje Visual C\# tiene *inicializadores de colección*, que preparan la lista para aceptar valores.  En Visual Basic, puede utilizar un inicializador de colección.  Sin embargo, por compatibilidad con la versión anterior de Visual Basic, recomendamos utilizar el código anterior.  
+  
+     Al utilizar un inicializador de colección con una instrucción `new`, una vez creado el nuevo objeto `List`, el programa lo rellena con los datos que especifique entre las llaves.  En este caso, se obtiene una lista de cadenas denominadas **iconos**; la lista se inicializará para que contenga dieciséis cadenas.  Cada una de esas cadenas es una letra única y todas corresponden a los iconos que se mostrarán en las etiquetas.  Así que el juego tendrá un par de signos de exclamación, un par de letras N en mayúscula, un par de comas, etc. \(Cuando estos caracteres se establezcan en la fuente Webdings, aparecerán en forma de símbolos, como un autobús, una bicicleta, una araña, etc.\). El objeto `List` tendrá dieciséis cadenas en total, una por cada celda del panel TableLayoutPanel.  
+  
+    > [!NOTE]
+    >  En Visual Basic, se obtiene el mismo resultado, pero las cadenas se colocan primero en una matriz temporal, que se convierte después en un objeto `List`.  Una matriz es similar a una lista, salvo que las matrices se crean con un tamaño fijo.  Las listas pueden reducir y crecer según sea necesario, algo que es importante en este programa.  
+  
+### Para continuar o revisar  
+  
+-   Para ir al siguiente paso del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+  
+-   Para volver al paso anterior del tutorial, vea [Paso 1: Crear un proyecto y agregar una tabla a un formulario](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

@@ -1,72 +1,55 @@
 ---
-title: User (VSPerfCmd) | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "User (VSPerfCmd) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 caps.latest.revision: 7
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: 4fbb8ad36461f3f06abb9318e537868e26d55860
-ms.contentlocale: es-es
-ms.lasthandoff: 08/31/2017
-
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="user-vsperfcmd"></a>User (VSPerfCmd)
-The **User** option specifies the domain and user name of the account that owns the profiled process. This option is required only if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.  
+# User (VSPerfCmd)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+La opción **User** especifica el nombre de usuario y el dominio opcional de la cuenta propietaria del proceso para el que se han generado perfiles.  Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión.  El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.  
   
- The **User** option can only be specified on a command line that also contains the **Start** option.  
+ La opción **User** solo se puede especificar en una línea de comandos que también contenga la opción de opción **Start**.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
 ```  
 VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `Domain`  
- The name of the user's domain.  
+ Nombre del dominio del usuario.  
   
  `UserName`  
- The name of the user.  
+ Nombre del usuario.  
   
-## <a name="required-options"></a>Required Options  
- The **User** option can only be used with the **Start** option.  
+## Opciones necesarias  
+ La opción **User** solamente se puede utilizar con la opción **Start**.  
   
  **Start:** `Method`  
- Initializes the profiler to the specified profiling method.  
+ Inicializa el generador de perfiles al método de generación de perfiles especificado.  
   
-## <a name="example"></a>Example  
- The following example demonstrates the use of the **User** option.  
+## Ejemplo  
+ El siguiente ejemplo muestra el uso de la opción **User**.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM  
 ```  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profiling Stand-Alone Applications](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profiling ASP.NET Web Applications](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profiling Services](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)

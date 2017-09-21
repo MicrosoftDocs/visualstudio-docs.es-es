@@ -1,106 +1,95 @@
 ---
-title: N-Tier Data Applications Overview | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- presentation tier
-- middle tier
-- data tier
-- n-tier applications, about n-tier applications
+title: "Informaci&#243;n general sobre aplicaciones de datos con n capas | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "capa de datos"
+  - "capa intermedia"
+  - "aplicaciones con n capas, acerca de las aplicaciones con n capas"
+  - "capa de presentación"
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: d86260cbc0bbc7eda47009730e26201368abd623
-ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 26
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="n-tier-data-applications-overview"></a>N-Tier Data Applications Overview
-*N-tier* data applications are data applications that are separated into multiple *tiers*. Also called "distributed applications" and "multitier applications," n-tier applications separate processing into discrete tiers that are distributed between the client and the server. When you develop applications that access data, you should have a clear separation between the various tiers that make up the application.  
+# Informaci&#243;n general sobre aplicaciones de datos con n capas
+Las aplicaciones de datos con *n niveles* son aplicaciones de datos que se dividen en varios *niveles*.  Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor.  Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.  
   
- A typical n-tier application includes a presentation tier, a middle tier, and a data tier. The easiest way to separate the various tiers in an n-tier application is to create discrete projects for each tier that you want to include in your application. For example, the presentation tier might be a Windows Forms application, whereas the data access logic might be a class library located in the middle tier. Additionally, the presentation layer might communicate with the data access logic in the middle tier through a service such as a service. Separating application components into separate tiers increases the maintainability and scalability of the application. It does this by enabling easier adoption of new technologies that can be applied to a single tier without the requirement to redesign the whole solution. In addition, n-tier applications typically store sensitive information in the middle-tier, which maintains isolation from the presentation tier.  
+ Una aplicación típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos.  La manera más fácil de separar los distintos niveles de una aplicación con n niveles es creando proyectos independientes para cada nivel que se desee incluir en la aplicación.  Por ejemplo, el nivel de presentación podría ser una aplicación de formularios Windows Forms, mientras que la lógica de acceso a datos podría ser una biblioteca de clases ubicada en el nivel intermedio.  Además, el nivel de presentación podría comunicarse con la lógica de acceso a datos del nivel intermedio a través de un servicio como un servicio.  Al separar los componentes de la aplicación en niveles independientes, se aumenta la facilidad de  mantenimiento y la escalabilidad de la aplicación.  Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa.  Además, las aplicaciones con n niveles almacenan normalmente la información confidencial en el nivel intermedio, lo cual mantiene su aislamiento respecto del nivel de presentación.  
   
- Visual Studio contains several features to help developers create n-tier applications:  
+ Visual Studio contiene varias características que ayudan a los programadores a crear aplicaciones con n niveles:  
   
--   The dataset provides a **DataSet Project** property that enables you to separate the dataset (data entity layer) and TableAdapters (data access layer) into discrete projects.  
+-   El [Crear y editar conjuntos de datos con tipo](../data-tools/creating-and-editing-typed-datasets.md) ofrece una propiedad **DataSet Project** que permite separar el conjunto de datos \(capa de entidad de datos\) y `TableAdapter`s \(capa de acceso a datos\) en proyectos adicionales.  
   
--   The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) provides settings to generate the DataContext and data classes into separate namespaces. This enables logical separation of the data access and data entity tiers.  
+-   El [Object Relational Designer](../data-tools/linq-to-sql-tools-in-visual-studio2.md) proporciona los valores de configuración para generar el contexto de datos \(DataContext\) y las clases de datos en espacios de nombres independientes.  Con ello se habilita la separación lógica del acceso a datos y los niveles de entidad de datos.  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) provides the <xref:System.Data.Linq.Table%601.Attach%2A> method that enables you to bring together the DataContext from different tiers in an application. For more information, see [N-Tier and Remote Applications with LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ a SQL](../Topic/LINQ%20to%20SQL.md) proporciona el método <xref:System.Data.Linq.Table%601.Attach%2A>, que permite reunir el contexto de datos de diferentes niveles en una aplicación.  Para obtener más información, vea [Aplicaciones remotas y de n niveles con LINQ to SQL](../Topic/N-Tier%20and%20Remote%20Applications%20with%20LINQ%20to%20SQL.md).  
   
-## <a name="presentation-tier"></a>Presentation Tier  
- The *presentation tier* is the tier in which users interact with an application. It often contains additional application logic also. Typical presentation tier components include the following:  
+## Nivel de presentación  
+ El *nivel de presentación* es el nivel en el que los usuarios interactúan con una aplicación.  Normalmente, contiene también la lógica adicional de la aplicación.  Los componentes típicos del nivel de presentación son los siguientes:  
   
--   Data binding components, such as the <xref:System.Windows.Forms.BindingSource> and <xref:System.Windows.Forms.BindingNavigator>.  
+-   Los componentes de enlace de datos, tales como <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Object representations of data, such as [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) entity classes for use in the presentation tier.  
+-   Las representaciones de objeto de los datos, tales como clases de entidad de [LINQ a SQL](../Topic/LINQ%20to%20SQL.md) para su uso en el nivel de presentación.  
   
- The presentation tier typically accesses the middle tier by using a service reference (for example, a [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). The presentation tier does not directly access the data tier. The presentation tier communicates with the data tier by way of the data access component in the middle tier.  
+ El nivel de presentación normalmente obtiene acceso al nivel intermedio mediante una referencia al servicio \(por ejemplo, una aplicación [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)\).  El nivel de presentación no obtiene acceso directamente a la capa de datos.  El nivel de presentación se comunica con la capa de datos por medio del componente de acceso a datos en el nivel intermedio.  
   
-## <a name="middle-tier"></a>Middle Tier  
- The *middle tier* is the layer that the presentation tier and the data tier use to communicate with each other. Typical middle tier components include the following:  
+## Nivel intermedio  
+ El *nivel intermedio* es la capa que el nivel de presentación y la capa de datos utilizan para comunicarse entre sí.  Los componentes típicos del nivel intermedio son los siguientes:  
   
--   Business logic, such as business rules and data validation.  
+-   La lógica empresarial \(reglas empresariales, validación de datos, etc.\).  
   
--   Data access components and logic, such as the following:  
+-   La lógica y los componentes de acceso a datos, como los siguientes:  
   
-    -   [TableAdapters](create-and-configure-tableadapters.md) and [DataAdapters and DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).  
+    -   [TableAdapters](../Topic/TableAdapters.md) y [DataAdapters y DataReaders](../Topic/DataAdapters%20and%20DataReaders.md).  
   
-    -   Object representations of data, such as [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) entity classes.  
+    -   Representaciones de objeto de los datos, como las clases de entidad de [LINQ a SQL](../Topic/LINQ%20to%20SQL.md).  
   
-    -   Common application services, such as authentication, authorization, and personalization.  
+    -   Los servicios de aplicación comunes, como autenticación, autorización y personalización.  
   
- The following illustration shows features and technologies that are available in Visual Studio and where they might fit in to the middle tier of an n-tier application.  
+ Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.  
   
- ![Middle tier components](../data-tools/media/ntiermid.png "NtierMid")  
-Middle tier  
+ ![Componentes de nivel intermedio](../data-tools/media/ntiermid.png "NtierMid")  
+Nivel intermedio  
   
- The middle tier typically connects to the data tier by using a data connection. This data connection is typically stored in the data access component.  
+ El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos.  Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.  
   
-## <a name="data-tier"></a>Data Tier  
- The *data tier* is basically the server that stores an application's data (for example, a server running [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]).  
+## Capa de datos  
+ La *capa de datos* es básicamente el servidor que almacena los datos de una aplicación \(por ejemplo, un servidor que ejecuta [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]\).  
   
- The following illustration shows features and technologies that are available in Visual Studio and where they might fit in to the data tier of an n-tier application.  
+ Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.  
   
- ![Data tier components](../data-tools/media/ntierdatatier.png "ntierdatatier")  
-Data tier  
+ ![Componentes de capa de datos](../data-tools/media/ntierdatatier.png "ntierdatatier")  
+Capa de datos  
   
- The data tier cannot be accessed directly from the client in the presentation tier. Instead, the data access component in the middle tier is used for communication between the presentation and data tiers.  
+ No se puede obtener acceso a la capa de datos directamente desde el cliente en el nivel de presentación.  En su lugar, el componente de acceso a datos en el nivel intermedio se utiliza para la comunicación entre las capas de datos y la presentación.  
   
-## <a name="help-for-n-tier-development"></a>Help for N-Tier Development  
- The following topics provide information about working with n-tier applications:  
+## Ayuda para el desarrollo con n niveles  
+ En los temas siguientes se ofrece información sobre cómo trabajar con aplicaciones de n niveles.  
   
- [Separate datasets and TableAdapters into different projects](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+ [Cómo: Separar conjuntos de datos y TableAdapters en proyectos diferentes](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
- [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
-
- [N-Tier and Remote Applications with LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
-## <a name="see-also"></a>See Also  
+ [Tutorial: Agregar validación a una aplicación de datos con n niveles](../Topic/Walkthrough:%20Adding%20Validation%20to%20an%20N-Tier%20Data%20Application.md)  
+  
+ [Aplicaciones remotas y de n niveles con LINQ to SQL](../Topic/N-Tier%20and%20Remote%20Applications%20with%20LINQ%20to%20SQL.md)  
+  
+## Vea también  
  <xref:System.Data.Linq.ITable.Attach%2A>   
- [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [Hierarchical update](../data-tools/hierarchical-update.md)   
- [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Tutorial: Crear una aplicación de datos con n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [Actualización jerárquica](../data-tools/hierarchical-update.md)   
+ [Trabajar con los conjuntos de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
+ [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

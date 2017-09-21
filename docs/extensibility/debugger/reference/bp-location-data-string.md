@@ -1,80 +1,63 @@
 ---
-title: BP_LOCATION_DATA_STRING | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_LOCATION_DATA_STRING
-helpviewer_keywords:
-- BP_LOCATION_DATA_STRING structure
+title: "BP_LOCATION_DATA_STRING | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_LOCATION_DATA_STRING"
+helpviewer_keywords: 
+  - "Estructura BP_LOCATION_DATA_STRING"
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 639ba9c6a51b1d6803f2ab83336d1ce098e70440
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
-Used for setting data breakpoints that are based on a string that the user can enter from the integrated development environment (IDE).  
+# BP_LOCATION_DATA_STRING
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Se utiliza para establecer los puntos de interrupción de datos basados en una cadena que el usuario puede especificar el entorno de desarrollo integrado \(IDE\).  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-typedef struct _BP_LOCATION_DATA_STRING {   
-   IDebugThread2* pThread;  
-   BSTR           bstrContext;  
-   BSTR           bstrDataExpr;  
-   DWORD          dwNumElements;  
+```cpp#  
+typedef struct _BP_LOCATION_DATA_STRING {   
+   IDebugThread2* pThread;  
+   BSTR           bstrContext;  
+   BSTR           bstrDataExpr;  
+   DWORD          dwNumElements;  
 } BP_LOCATION_DATA_STRING;  
 ```  
   
-## <a name="members"></a>Members  
+## Members  
  `pThread`  
- The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread on which the breakpoint occurs.  
+ El objeto de [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa el subproceso en el que el punto de interrupción.  
   
  `bstrContext`  
- The context of the breakpoint within the code, typically a method or function name as seen on a call stack.  
+ El contexto del punto de interrupción en el código, normalmente un nombre de método o de función como se explica en una pila de llamadas.  
   
  `bstrDataExpr`  
- The data string the user enters to set the breakpoint.  
+ La cadena de los datos que el usuario escribe para establecer el punto de interrupción.  
   
  `dwNumElements`  
- The number of elements in the data string in which the breakpoint occurs.  
+ El número de elementos en la cadena de datos en la que el punto de interrupción.  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
+## Comentarios  
+ Esta estructura es miembro de la estructura de [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de una unión.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Requisitos  
+ encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+## Vea también  
+ [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,69 +1,52 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject2::GetField
-helpviewer_keywords:
-- IDebugObject2::GetField method
+title: "IDebugObject2::GetField | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject2::GetField"
+helpviewer_keywords: 
+  - "IDebugObject2::GetField (método)"
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bd870e8068763ee992e2b510d8d834beff03fece
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Gets the type of this object.  
+# IDebugObject2::GetField
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+obtiene el tipo de este objeto.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
 ```cpp  
-HRESULT GetField(  
- IDebugField** ppField  
+HRESULT GetField(  
+ IDebugField** ppField  
 );  
 ```  
   
-```csharp  
-int GetField(  
-   out IDebugField ppField  
+```c#  
+int GetField(  
+   out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `ppField`  
- [out] Returns an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object if not a null value.  
+ \[out\]  Devuelve un objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si no es un valor null.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- A field describes the type of the object.  
+## Comentarios  
+ Un campo describe el tipo de objeto.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

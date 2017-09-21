@@ -1,134 +1,117 @@
 ---
-title: 'How to: Suppress File Change Notifications | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - suppress file change notification
+title: "C&#243;mo: suprimir las notificaciones de cambio de archivo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "editores [Visual Studio SDK] heredados - Suprimir notificaciones de cambio de archivo"
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 18
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 85742bb20de1aa2df796c69b754d662f24329195
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 18
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>How to: Suppress File Change Notifications
-When the physical file representing the text buffer has been changed, a dialog box displays with the message **Do you want to save changes to the following items?** This is known as file change notification. If many changes are going to be to the file, however, this dialog box displaying over and over again can quickly become annoying.  
+# C&#243;mo: suprimir las notificaciones de cambio de archivo
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Cuando el archivo físico que representa el búfer de texto se ha cambiado, se muestra un cuadro de diálogo con el mensaje **¿Desea guardar los cambios en los elementos siguientes?** Esto se conoce como notificación del archivo.  Si muchos cambios van a estar al archivo, sin embargo, este cuadro de diálogo que muestra una y otra vez puede llegar a ser rápidamente molesto.  
   
- You can programmatically suppress this dialog box using the following procedure. By doing this, you can reload a file immediately without having to prompt the user to save the changes each time.  
+ Mediante programación puede suprimir este cuadro de diálogo mediante el procedimiento siguiente.  Haciendo esto, puede volver a cargar un archivo inmediatamente sin tener que pedir al usuario guardar los cambios cada vez.  
   
-### <a name="to-suppress-file-change-notification"></a>To suppress file change notification  
+### Para suprimir la notificación de archivo  
   
-1.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> method to determine which text buffer object is associated with your open file.  
+1.  Llame al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> para determinar qué texto en el objeto de búfer son asociado al archivo abierto.  
   
-2.  Direct the <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> object that is in memory to ignore monitoring file changes by obtaining the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> (document data) object, and then implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> method with the `fIgnore` parameter set to `true`.  
+2.  Resuelva el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> que está en la memoria para omitir cambios del archivo de supervisión obtener la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> del objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> \(datos de documento\), e implementar el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> con el parámetro de `fIgnore` establecido en `true`.  
   
-3.  Call the methods on the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> and the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaces to update the in-memory <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> object with the file changes (such as when a field is added to your component).  
+3.  Llame a los métodos en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y las interfaces de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> para actualizar el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> de memoria con los cambios del archivo \(por ejemplo cuando un campo se agrega el componente\).  
   
-4.  Update the file on disk with the changes without considering any pending edits the user might have in progress.  
+4.  Actualice el archivo en el disco con los cambios sin tener de ninguna ediciones pendientes que el usuario puede tener en curso.  
   
-     In this way, when you direct the <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> object to resume monitoring for file change notifications, the text buffer in memory reflects the changes that you generated, as well as all other pending edits. The file on disk reflects the latest code generated by you and any previously saved changes by the user in user-edited code.  
+     De esta manera, cuando se ejecuta el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> a la supervisión resume para las notificaciones del archivo, el búfer de texto en memoria refleja los cambios que generó, junto con el resto de las ediciones pendientes.  el archivo en el disco refleja el último código generado por usted y cualquier cambio previamente guardado por el usuario en código usuario\-editado.  
   
-5.  Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> method to notify the <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> object to resume monitoring for file change notifications by setting the `fIgnore` parameter to `false`.  
+5.  Llame al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> para notificar al objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> a la supervisión resume para las notificaciones del archivo estableciendo el parámetro de `fIgnore` a `false`.  
   
-6.  If you plan to make several changes to the file, as in the case of source code control (SCC), then you must tell the global file change service to temporarily suspend file change notifications.  
+6.  Si piensa realizar varios cambios en el archivo, como en el caso del control de \(SCC\) código fuente, después de debe indicar al servicio de cambio de archivo global que debe suspender temporalmente las notificaciones del archivo.  
   
-     For example, if you rewrite the file and then change the timestamp, you must suspend the file change notifications, as the rewrite and timestample operations each count as a separate file change event. To enable the global file change notification you should instead call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> method.  
+     Por ejemplo, si se rescribe el archivo y después cambia la marca de tiempo, debe suspender notificaciones de cambio de archivo, como las operaciones de la reescritura y de timestample cada recuento como un archivo independiente cambian evento.  Para habilitar la notificación del archivo global debe en lugar de llamar al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> .  
   
-## <a name="example"></a>Example  
- The following demonstrates how to suppress file change notification.  
+## Ejemplo  
+ A continuación se muestra cómo suprimir la notificación del archivo.  
   
-```cpp  
+```cpp#  
 //Misc. helper classes  
   
 CSuspendFileChanges::CSuspendFileChanges(  
-    /* [in] */ const CString& strMkDocument,   
-    /* [in] */ BOOL fSuspendNow /* = TRUE */)   
+    /* [in] */ const CString& strMkDocument,   
+    /* [in] */ BOOL fSuspendNow /* = TRUE */)   
 :  
-    m_strMkDocument(strMkDocument),  
-    m_fFileChangeSuspended(FALSE)  
+    m_strMkDocument(strMkDocument),  
+    m_fFileChangeSuspended(FALSE)  
 {  
-    if(fSuspendNow)  
-        Suspend();  
+    if(fSuspendNow)  
+        Suspend();  
 }  
 CSuspendFileChanges::~CSuspendFileChanges()  
 {  
-    Resume();  
+    Resume();  
 }  
 void CSuspendFileChanges::Suspend()  
 {  
-    USES_CONVERSION;  
+    USES_CONVERSION;  
   
-    // Prevent suspend from suspending more than once.  
-    if(m_fFileChangeSuspended)  
-        return;  
+    // Prevent suspend from suspending more than once.  
+    if(m_fFileChangeSuspended)  
+        return;  
   
-    IVsRunningDocumentTable* pRDT =   
+    IVsRunningDocumentTable* pRDT =   
       _VxModule.GetIVsRunningDocumentTable();  
-    ASSERT(pRDT);  
-    if (!pRDT)  
-        return;  
+    ASSERT(pRDT);  
+    if (!pRDT)  
+        return;  
   
-    CComPtr<IUnknown> srpDocData;  
-    VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    CComPtr<IUnknown> srpDocData;  
+    VSCOOKIE vscookie = VSCOOKIE_NIL;  
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
-    if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
-        return;  
-    CComPtr<IVsFileChangeEx> srpIVsFileChangeEx;  
-    HRESULT hr = _VxModule.QueryService(SID_SVsFileChangeEx,   
+    if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
+        return;  
+    CComPtr<IVsFileChangeEx> srpIVsFileChangeEx;  
+    HRESULT hr = _VxModule.QueryService(SID_SVsFileChangeEx,   
       IID_IVsFileChangeEx, (void **)&srpIVsFileChangeEx);  
-    if (SUCCEEDED(hr) && srpIVsFileChangeEx)  
-    {  
-        m_fFileChangeSuspended = TRUE;  
-        srpIVsFileChangeEx->IgnoreFile(NULL, m_strMkDocument, TRUE);   
-        srpDocData->QueryInterface(IID_IVsDocDataFileChangeControl,   
+    if (SUCCEEDED(hr) && srpIVsFileChangeEx)  
+    {  
+        m_fFileChangeSuspended = TRUE;  
+        srpIVsFileChangeEx->IgnoreFile(NULL, m_strMkDocument, TRUE);   
+        srpDocData->QueryInterface(IID_IVsDocDataFileChangeControl,   
           (void**)&m_srpIVsDocDataFileChangeControl);  
-        if(m_srpIVsDocDataFileChangeControl)  
-            m_srpIVsDocDataFileChangeControl->IgnoreFileChanges(TRUE);  
-    }  
+        if(m_srpIVsDocDataFileChangeControl)  
+            m_srpIVsDocDataFileChangeControl->IgnoreFileChanges(TRUE);  
+    }  
 }  
 void CSuspendFileChanges::Resume()  
 {  
-    if(!m_fFileChangeSuspended)  
-        return;  
+    if(!m_fFileChangeSuspended)  
+        return;  
   
-    CComPtr<IVsFileChangeEx> srpIVsFileChangeEx;  
-    HRESULT hr = _VxModule.QueryService(SID_SVsFileChangeEx,   
+    CComPtr<IVsFileChangeEx> srpIVsFileChangeEx;  
+    HRESULT hr = _VxModule.QueryService(SID_SVsFileChangeEx,   
       IID_IVsFileChangeEx, (void **)&srpIVsFileChangeEx);  
-    if (SUCCEEDED(hr) && srpIVsFileChangeEx)  
+    if (SUCCEEDED(hr) && srpIVsFileChangeEx)  
   
-    srpIVsFileChangeEx->IgnoreFile(NULL, m_strMkDocument, FALSE);   
-    if(m_srpIVsDocDataFileChangeControl)  
-        m_srpIVsDocDataFileChangeControl->IgnoreFileChanges(FALSE);  
-    m_fFileChangeSuspended = FALSE;  
-    m_srpIVsDocDataFileChangeControl.Release();  
+    srpIVsFileChangeEx->IgnoreFile(NULL, m_strMkDocument, FALSE);   
+    if(m_srpIVsDocDataFileChangeControl)  
+        m_srpIVsDocDataFileChangeControl->IgnoreFileChanges(FALSE);  
+    m_fFileChangeSuspended = FALSE;  
+    m_srpIVsDocDataFileChangeControl.Release();  
 }  
 // Misc. helper classes  
 ```  
   
-## <a name="robust-programming"></a>Robust Programming  
- If your case involves multiple changes to the file, as in the case of SCC, then it is important to resume global file change notifications before alerting the document data to resume monitoring for file changes.
+## Programación eficaz  
+ Si el caso implica varios cambios al archivo, como en el caso de SCC, después de es importante reanudar las notificaciones de archivo global antes de avisar a los datos del documento a la supervisión resume para los cambios del archivo.

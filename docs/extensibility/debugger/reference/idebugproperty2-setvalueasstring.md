@@ -1,80 +1,63 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsString
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsString
+title: "IDebugProperty2::SetValueAsString | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty2::SetValueAsString"
+helpviewer_keywords: 
+  - "IDebugProperty2::SetValueAsString"
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4a8fe4e1a40aa9ab33cd0cfdb925bbb4f0607fbd
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Sets the value of a property from a given string.  
+# IDebugProperty2::SetValueAsString
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Establece el valor de una propiedad de una cadena especificada.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT SetValueAsString (   
-   LPCOLESTR pszValue,  
-   UINT      nRadix,  
-   DWORD     dwTimeout  
+```cpp#  
+HRESULT SetValueAsString (   
+   LPCOLESTR pszValue,  
+   UINT      nRadix,  
+   DWORD     dwTimeout  
 );  
 ```  
   
-```csharp  
-int SetValueAsString (   
-   string pszValue,  
-   uint   nRadix,  
-   uint   dwTimeout  
+```c#  
+int SetValueAsString (   
+   string pszValue,  
+   uint   nRadix,  
+   uint   dwTimeout  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `pszValue`  
- [in] A string containing the value to be set.  
+ \[in\]  Una cadena que contiene el valor que se va a establecer.  
   
  `nRadix`  
- [in] A radix to be used in interpreting any numerical information. This can be 0 to attempt to determine the radix automatically.  
+ \[in\]  una base que se utilizará en la interpretación de cualquier información numérica.  Puede ser 0 a intentar determinar base automáticamente.  
   
  `dwTimeout`  
- [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ \[in\]  Especifica el tiempo máximo, en milisegundos, de esperar antes de volver de este método.  uso `INFINITE` de esperar indefinidamente.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code. The following table shows other possible values.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  la tabla siguiente muestra otros valores posibles.  
   
-|Value|Description|  
+|Valor|Descripción|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|The string could not be converted into a property value, or the property value could not be set.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|The property is read-only.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|La cadena no se puede convertir en un valor de propiedad, o el valor de propiedad no se establece.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|La propiedad es de sólo lectura|  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

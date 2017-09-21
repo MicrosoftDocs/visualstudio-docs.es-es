@@ -1,65 +1,48 @@
 ---
-title: IDebugEngineProgram2::Stop | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugEngineProgram2::Stop
-helpviewer_keywords:
-- IDebugEngineProgram2::Stop
+title: "IDebugEngineProgram2::Stop | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugEngineProgram2::Stop"
+helpviewer_keywords: 
+  - "IDebugEngineProgram2::Stop"
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e8a1d5fd980d50326c11101acc54146e4de03258
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
-Stops all threads running in this program.  
+# IDebugEngineProgram2::Stop
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Detiene todos los subprocesos ejecutándose en este programa.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT Stop(   
-   void   
+```cpp#  
+HRESULT Stop(   
+   void   
 );  
 ```  
   
-```csharp  
+```c#  
 int Stop();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- This method is called when this program is being debugged in a multi-program environment. When a stopping event from some other program is received, this method is called on this program. The implementation of this method should be asynchronous; that is, not all threads should be required to be stopped before this method returns. The implementation of this method may be as simple as calling the [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) method on this program.  
+## Comentarios  
+ Se llama a este método cuando este programa se está depurando en un entorno de la multiprogramación.  Cuando un evento que detiene de algún otro programa se recibe, este método se llama este programa.  la implementación de este método debe ser asincrónica; es decir, no todos los subprocesos se deben requerir para detener antes de que este método devuelva.  La implementación de este método puede ser tan simple como llamando al método de [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) en este programa.  
   
- No debug event is sent in response to this method.  
+ No se envía ningún evento de depuración en respuesta a este método.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

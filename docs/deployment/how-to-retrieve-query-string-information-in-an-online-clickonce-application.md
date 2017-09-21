@@ -1,101 +1,85 @@
 ---
-title: 'How to: Retrieve Query String Information in an Online ClickOnce Application | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-helpviewer_keywords:
-- ClickOnce deployment, query strings
-- query strings, retrieving information
+title: "C&#243;mo: Recuperar informaci&#243;n de la cadena de consulta de una aplicaci&#243;n ClickOnce en l&#237;nea | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-deployment"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "implementación ClickOnce, cadenas de consulta"
+  - "cadenas de consulta, recuperar información"
 ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 904e4060959a912981bb9a6ba47296267591cd2d
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.handback.revision: 19
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>How to: Retrieve Query String Information in an Online ClickOnce Application
-The *query string* is the portion of a URL beginning with a question mark (?) that contains arbitrary information in the form *name=value*. Suppose you have a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application named `WindowsApp1` that you host on `servername`, and you want to pass in a value for the variable `username` when the application launches. Your URL might look like the following:  
+# C&#243;mo: Recuperar informaci&#243;n de la cadena de consulta de una aplicaci&#243;n ClickOnce en l&#237;nea
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+La *cadena de consulta* es la parte de una dirección URL que empieza con un signo de interrogación de cierre \(?\) y que contiene información arbitraria con el formato *nombre\=valor*. Supongamos que tiene una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominada `WindowsApp1` que hospeda en `servername`, y quiere pasar un valor para la variable `username` cuando se inicia la aplicación. La dirección URL podría tener el aspecto siguiente:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
   
- The following two procedures show how to use a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application to obtain query string information.  
+ Los dos procedimientos siguientes muestran cómo usar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para obtener información de la cadena de consulta.  
   
 > [!NOTE]
->  You can only pass information in a query string when your application is being launched using HTTP, instead of using a file share or the local file system.  
+>  Solo puede pasar información en una cadena de consulta cuando la aplicación se inicia mediante HTTP, en lugar de un recurso compartido de archivos o el sistema de archivos local.  
   
- The first procedure shows how your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application can use a small piece of code to read these values when the application launches.  
+ En el primer procedimiento se muestra cómo la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede usar un fragmento de código para leer estos valores cuando se inicia la aplicación.  
   
- The next procedure shows how to configure your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application using MageUI.exe so that it can accept query string parameters. You will need to do this whenever you publish your application.  
-  
-> [!NOTE]
->  See the "Security" section later in this topic before you make a decision to enable this feature.  
-  
- For information about how to create a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment using Mage.exe or MageUI.exe, see [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ En el siguiente procedimiento se muestra cómo se configura la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante MageUI.exe para que pueda aceptar parámetros de cadena de consulta. Debe hacerlo siempre que publique la aplicación.  
   
 > [!NOTE]
->  Starting in .NET Framework 3.5 SP1, it is possible to pass command-line arguments to an offline [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. If you want to supply arguments to the application, you can pass in parameters to the shortcut file with the .APPREF-MS extension.  
+>  Antes de tomar la decisión de habilitar esta característica, consulte la sección "Seguridad" más adelante en este tema.  
   
-### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>To obtain query string information from a ClickOnce application  
+ Para obtener información sobre cómo crear una implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante Mage.exe o MageUI.exe, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-1.  Place the following code in your project. In order for this code to function, you will have to have a reference to System.Web and add `using` or `Imports` statements for System.Web, System.Collections.Specialized, and System.Deployment.Application.  
+> [!NOTE]
+>  A partir de .NET Framework 3.5 SP1, es posible pasar argumentos de línea de comandos a una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sin conexión. Si quiere proporcionar argumentos a la aplicación, puede pasar parámetros al archivo de acceso directo con la extensión .APPREF\-MS.  
   
-     [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]  [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]  
+### Para obtener información de la cadena de consulta de una aplicación ClickOnce  
   
-2.  Call the function defined previously to retrieve a <xref:System.Collections.DictionaryBase.Dictionary%2A> of the query string parameters, indexed by name.  
+1.  Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System.Web y agregar instrucciones `using` o `Imports` para System.Web, System.Collections.Specialized y System.Deployment.Application.  
   
-### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>To enable query string passing in a ClickOnce application with MageUI.exe  
+     [!code-cs[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
+     [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]  
   
-1.  Open the .NET Command Prompt and type:  
+2.  Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.  
+  
+### Para habilitar que se pase una cadena de consulta en una aplicación ClickOnce con MageUI.exe  
+  
+1.  Abra el símbolo del sistema de .NET y escriba:  
   
     ```  
     MageUI  
     ```  
   
-2.  From the **File** menu, select **Open**, and open the deployment manifest for your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, which is the file ending in the `.application` extension.  
+2.  En el menú **Archivo**, seleccione **Abrir** y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], que es el archivo que acaba con la extensión `.application`.  
   
-3.  Select the **Deployment Options** panel in the left-hand navigation window, and select the **Allow URL parameters to be passed to application** check box.  
+3.  Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación**.  
   
-4.  From the **File** menu, select **Save**.  
+4.  En el menú **Archivo**, seleccione **Guardar**.  
   
 > [!NOTE]
->  Alternately, you can enable query string passing in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Select the **Allow URL parameters to be passed to application** check box, which can be found by opening the **Project Properties**, selecting the **Publish** tab, clicking the **Options** button, and then selecting **Manifests**.  
+>  También puede habilitar que se pase una cadena de consulta en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación**. Para ello, abra **Propiedades del proyecto**, seleccione la pestaña **Publicar**, haga clic en el botón **Opciones** y, después, seleccione **Manifiestos**.  
   
-## <a name="robust-programming"></a>Robust Programming  
- When you use query string parameters, you must give careful consideration to how your application is installed and activated. If your application is configured to install on the user's computer from the Web or from a network share, it is likely that the user will activate the application only once through the URL. After that, the user will usually activate your application using the shortcut in the **Start** menu. As a result, your application is guaranteed to receive query string arguments only once during its lifetime. If you choose to store these arguments on the user's machine for future use, you are responsible for storing them in a safe and secure manner.  
+## Programación eficaz  
+ Cuando se usan parámetros de cadena de consulta, debe prestar mucha atención a cómo se instala y se activa la aplicación. Si la aplicación está configurada para instalarse en el equipo del usuario desde Internet o desde un recurso compartido de red, es probable que el usuario active la aplicación una sola vez a través de la dirección URL. Después de eso, el usuario normalmente activará la aplicación mediante el acceso directo del menú **Inicio**. Como resultado, se garantiza que la aplicación recibe argumentos de cadena de consulta una sola vez durante su vigencia. Si decide almacenar estos argumentos en el equipo del usuario para un uso futuro, es usted el responsable de almacenarlos de forma segura.  
   
- If your application is online only, it will always be activated through a URL. Even in this case, however, your application must be written to function properly if the query string parameters are missing or corrupted.  
+ Si la aplicación solo está en línea, siempre se activará a través de una dirección URL. Pero, incluso en este caso, la aplicación debe escribirse de modo que funcione correctamente si faltan parámetros de cadena de consulta o si están dañados.  
   
-## <a name="net-framework-security"></a>.NET Framework Security  
- Allow passing URL parameters to your [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application only if you plan to cleanse the input of any malicious characters before using it. A string embedded with quotes, slashes, or semicolons, for example, might perform arbitrary data operations if used unfiltered in a SQL query against a database. For more information on query string security, see [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+## Seguridad de .NET Framework  
+ Permita que se pasen parámetros de la dirección URL a la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] únicamente si prevé limpiar los posibles caracteres malintencionados de la entrada antes de usarla. Las cadenas en las que haya incrustadas, por ejemplo, comillas, barras o caracteres de punto y coma pueden realizar operaciones de datos arbitrarios si se usan sin filtrar en una consulta SQL en una base de datos. Para obtener más información sobre la seguridad de las cadenas de consulta, consulte [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
   
-## <a name="see-also"></a>See Also  
- [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md)
+## Vea también  
+ [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

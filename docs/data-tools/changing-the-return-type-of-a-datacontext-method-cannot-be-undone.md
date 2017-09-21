@@ -1,61 +1,42 @@
 ---
-title: Changing the return type of a DataContext method cannot be undone | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "El cambio del tipo devuelto de un m&#233;todo DataContext no se puede deshacer | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
 caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 0dbf3618bb92ed58a1ec57c14d59eadabcf4a734
-ms.contentlocale: es-es
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Changing the return type of a DataContext method cannot be undone
-Changing the return type of a DataContext method cannot be undone. To revert back to the automatically generated type, you must drag the item from Server Explorer/Database Explorer onto the O/R Designer again. Are you sure you want to change the return type?  
+# El cambio del tipo devuelto de un m&#233;todo DataContext no se puede deshacer
+El cambio del tipo devuelto de un método DataContext no se puede deshacer.Para volver al tipo generado automáticamente, debe arrastrar de nuevo el elemento desde el Explorador de servidores\/Explorador de bases de datos hasta Object Relational Designer.¿Está seguro de que desea cambiar el tipo devuelto?  
   
- The return type of a <xref:System.Data.Linq.DataContext> method differs depending on where you drop the item in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. If you drop an item directly onto an existing entity class, a <xref:System.Data.Linq.DataContext> method that has the return type of the entity class is created. If you drop an item onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type is created. You can change the return type of a <xref:System.Data.Linq.DataContext> method after you add it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and click the **Return Type** property in the **Properties** window.  
+ El tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> difiere según la ubicación donde se coloque el elemento en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].Si se coloca un elemento directamente en una clase de entidad existente, se crea un método de <xref:System.Data.Linq.DataContext> que tiene el tipo de valor devuelto de la clase de entidad.Si se coloca un elemento en un área vacía del [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], se crea un método de <xref:System.Data.Linq.DataContext> que devuelve un tipo generado automáticamente.Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos.Para examinar o cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext>, selecciónelo y haga clic en la propiedad **Tipo devuelto** en la ventana **Propiedades**.  
   
-### <a name="to-change-the-return-type-of-a-datacontext"></a>To change the return type of a DataContext  
+### Para cambiar el tipo de valor devuelto de un método de DataContext  
   
--   Click **Yes**.  
+-   Haga clic en **Sí**.  
   
-### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>To exit the message box and leave the return type unchanged  
+### Para salir del cuadro de mensaje sin modificar el tipo de valor devuelto  
   
--   Click **No**.  
+-   Haga clic en **No**.  
   
-### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>To revert to the original return type after changing the return type  
+### Para revertir al tipo de valor devuelto original después de cambiar el tipo de valor devuelto  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method on the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and delete it.  
+1.  Seleccione el método de <xref:System.Data.Linq.DataContext> en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] y elimínelo.  
   
-2.  Locate the item in **Server Explorer/Database Explorer** and drag it onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Busque el elemento en el **Explorador de servidores\/Explorador de bases de datos** y arrástrelo hasta el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-     A <xref:System.Data.Linq.DataContext> method is created with the original default return type.  
+     Se crea un método de <xref:System.Data.Linq.DataContext> con el tipo de valor devuelto predeterminado original.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
+## Vea también  
+ [Object Relational Designer](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Métodos DataContext \(Object Relational Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [Cómo: Crear métodos DataContext asignados funciones y procedimientos almacenados \(Object Relational Designer\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
+ [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)

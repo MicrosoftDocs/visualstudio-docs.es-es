@@ -1,89 +1,72 @@
 ---
-title: MACHINE_INFO_FIELDS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- MACHINE_INFO_FIELDS
-helpviewer_keywords:
-- MACHINE_INFO_FIELDS enumeration
+title: "MACHINE_INFO_FIELDS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "MACHINE_INFO_FIELDS"
+helpviewer_keywords: 
+  - "Enumeración MACHINE_INFO_FIELDS"
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bc4aef9381443cbdc0e83d37f9cadb9a4634a1d3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Specifies what kind of information to retrieve for a particular machine.  
+# MACHINE_INFO_FIELDS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Especifica qué tipo de información a recuperar en un equipo determinado.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-enum enum_MACHINE_INFO_FIELDS {   
-   MCIF_NAME  = 0x00000001,  
-   MCIF_FLAGS = 0x00000002,  
-   MCIF_ALL   = 0x00000003  
+```cpp#  
+enum enum_MACHINE_INFO_FIELDS {   
+   MCIF_NAME  = 0x00000001,  
+   MCIF_FLAGS = 0x00000002,  
+   MCIF_ALL   = 0x00000003  
 };  
 typedef DWORD MACHINE_INFO_FIELDS;  
 ```  
   
-```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
-   MCIF_NAME  = 0x00000001,  
-   MCIF_FLAGS = 0x00000002,  
-   MCIF_ALL   = 0x00000003  
+```c#  
+public enum enum_MACHINE_INFO_FIELDS {   
+   MCIF_NAME  = 0x00000001,  
+   MCIF_FLAGS = 0x00000002,  
+   MCIF_ALL   = 0x00000003  
 };  
 ```  
   
-## <a name="members"></a>Members  
- MCIF_NAME  
- Initialize/use the `bstrName` field in the structure.  
+## Members  
+ MCIF\_NAME  
+ Inicializa y usan el campo de `bstrName` en la estructura.  
   
- MCIF_FLAGS  
- Initialize/use the `Flags` field in the structure.  
+ MCIF\_FLAGS  
+ Inicializa y usan el campo de `Flags` en la estructura.  
   
- MIF_ALL  
- Initialize/use all of the fields in the structure.  
+ MIF\_ALL  
+ Inicializa y el uso de todos los campos de la estructura.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed to the [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) method to indicate which members of the [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure are to be initialized.  
+## Comentarios  
+ Estos valores se pasan al método de [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) para indicar qué miembros de la estructura de [MACHINE\_INFO](../../../extensibility/debugger/reference/machine-info.md) se deben inicializar.  
   
- Also used in the `Fields` member of the `MACHINE_INFO` structure to indicate which fields are used and valid.  
+ También se utiliza en el miembro de `Fields` de la estructura de `MACHINE_INFO` para indicar qué campos son utilizados y válidos.  
   
- These flags may be combined with a bitwise `OR`.  
+ Estos marcadores se pueden combinar con `OR`bit a bit.  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## Requisitos  
+ encabezado: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
+## Vea también  
+ [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [MACHINE\_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

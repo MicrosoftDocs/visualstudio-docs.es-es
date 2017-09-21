@@ -1,73 +1,56 @@
 ---
-title: 'How to: Specify Build Events (Visual Basic) | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- pre-build events
-- events [Visual Studio], builds
-- post-build events
-- build events [Visual Studio]
-- builds [Visual Studio], events
+title: "C&#243;mo: Especificar eventos de compilaci&#243;n (Visual Basic) | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "eventos de compilación [Visual Studio]"
+  - "compilaciones [Visual Studio], eventos"
+  - "eventos [Visual Studio], compilaciones"
+  - "eventos posteriores a la compilación"
+  - "eventos anteriores a la compilación"
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 caps.latest.revision: 26
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: d021d979067c5394843511682255a7b55c3007ae
-ms.contentlocale: es-es
-ms.lasthandoff: 09/13/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 26
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>How to: Specify Build Events (Visual Basic)
-Build events in Visual Basic can be used to run scripts, macros, or other actions as a part of the compilation process. Pre-build events occur before compilation; post-build events occur after compilation.  
+# C&#243;mo: Especificar eventos de compilaci&#243;n (Visual Basic)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Los eventos de compilación en Visual Basic pueden utilizarse para ejecutar scripts, macros u otras acciones como una parte del proceso de compilación.  Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.  
   
- Build events are specified in the **Build Events** dialog box, available from the **Compile** page of the **Project Designer**.  
+ Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de compilación**, disponible en la página **Compilación** del **Diseñador de proyectos**.  
   
 > [!NOTE]
->  Visual Basic Express does not support entry of build events. This is supported only in the full Visual Studio product.  
+>  Visual Basic Express no admite la entrada de eventos de compilación.  Solo se admite en el producto de Visual Studio completo.  
   
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>How to Specify Pre-Build and Post-Build Events  
+## Cómo especificar eventos anteriores y posteriores a la compilación  
   
-#### <a name="to-specify-a-build-event"></a>To specify a build event  
+#### Para especificar un evento de compilación  
   
-1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.  
+1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
   
-2.  Click the **Compile** tab.  
+2.  Haga clic en la ficha **Compilar**.  
   
-3.  Click the **Build Events** button to open the **Build Events** dialog box.  
+3.  Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
   
-4.  Enter the command-line arguments for your pre-build or post-build action, and then click **OK**.  
-  
-    > [!NOTE]
-    >  Add a `call` statement before all post-build commands that run .bat files. For example, `call C:\MyFile.bat` or `call C:\MyFile.bat call C:\MyFile2.bat`.  
+4.  Escriba los argumentos de la línea de comandos para la acción anterior o posterior a la compilación y haga clic en **Aceptar**.  
   
     > [!NOTE]
-    >  If your pre-build or post-build event does not complete successfully, you can terminate the build by having your event action exit with a code other than zero (0), which indicates a successful action.  
+    >  Agregue una instrucción `call` delante de todos los comandos posteriores a la compilación que ejecutan archivos .bat.  Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Example: How to Change Manifest Information Using a Post-Build Event  
- The following procedure shows how to set the minimum operating system version in the application manifest using an .exe command called from a post-build event (the .exe.manifest file in the project directory). The minimum operating system version is a four-part number such as 4.10.0.0. To do this, the command will change the `<dependentOS>` section of the manifest:  
+    > [!NOTE]
+    >  Si el evento previo o posterior a la compilación no se completa correctamente, puede finalizar la compilación haciendo que la acción del evento salga con un código distinto de cero \(0\), que indica una acción correcta.  
+  
+## Ejemplo: Cómo cambiar la información del manifiesto mediante un evento posterior a la compilación  
+ El procedimiento siguiente muestra cómo establecer la versión mínima del sistema operativo en el manifiesto de la aplicación por medio de un comando .exe al que llama un evento posterior a la compilación \(archivo .exe.manifest en el directorio de proyecto\).  La versión mínima del sistema operativo es un número constituido por cuatro partes, como 4.10.0.0.  Para ello, el comando modificará la sección `<dependentOS>` del manifiesto:  
   
 ```  
 <dependentOS>  
@@ -77,19 +60,19 @@ Build events in Visual Basic can be used to run scripts, macros, or other action
 </dependentOS>  
 ```  
   
-#### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>To create an .exe command to change the application manifest  
+#### Para crear un comando .exe para cambiar el manifiesto de la aplicación  
   
-1.  Create a console application for the command. From the **File** menu, click **New**, and then click **Project**.  
+1.  Cree una aplicación de consola para el comando.  En el menú **Archivo**, seleccione **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
-2.  In the **New Project** dialog box, in the **Visual Basic** node, select **Windows** and then the **Console Application** template. Name the project `ChangeOSVersionVB`.  
+2.  En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Windows** y, a continuación, la plantilla **Aplicación de consola**.  Asigne al proyecto el nombre `ChangeOSVersionVB`.  
   
-3.  In Module1.vb, add the following line to the other `Imports` statements at the top of the file:  
+3.  En Module1.vb, agregue la línea siguiente a las otras instrucciones `Imports` de la parte superior del archivo:  
   
     ```  
     Imports System.Xml  
     ```  
   
-4.  Add the following code in `Sub Main`:  
+4.  Agregue el código siguiente en `Sub Main`:  
   
     ```  
     Sub Main()  
@@ -132,57 +115,57 @@ Build events in Visual Basic can be used to run scripts, macros, or other action
     End Sub  
     ```  
   
-     The command takes two arguments. The first argument is the path to the application manifest (that is, the folder in which the build process creates the manifest, typically Projectname.publish). The second argument is the new operating system version.  
+     El comando acepta dos argumentos.  El primer argumento es la ruta de acceso al manifiesto de aplicación \(es decir, la carpeta donde el proceso de compilación crea el manifiesto, que suele ser NombreDelProyecto.publish\).  El segundo argumento es la nueva versión del sistema operativo.  
   
-5.  On the **Build** menu, click **Build Solution**.  
+5.  En el menú **Compilar**, haga clic en **Compilar solución**.  
   
-6.  Copy the .exe file to a directory such as `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Copie el archivo .exe en un directorio como `C:\TEMP\ChangeOSVersionVB.exe`.  
   
- Next, invoke this command in a post-build event to change the application manifest.  
+ A continuación, invoque este comando en un evento posterior a la compilación, para modificar el manifiesto de la aplicación.  
   
-#### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>To invoke a post-build event to change the application manifest  
+#### Para invocar un evento posterior a la compilación a fin de modificar el manifiesto de la aplicación  
   
-1.  Create a Windows application for the project to be published. From the **File** menu, click **New**, and then click **Project**.  
+1.  Cree una aplicación para Windows para el proyecto que se va a publicar.  En el menú **Archivo**, seleccione **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
-2.  In the **New Project** dialog box, in the **Visual Basic** node, select **Windows Classic Desktop** and then the **Windows Forms App** template. Name the project `VBWinApp`.  
+2.  En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Windows** y, a continuación, la plantilla **Aplicación para Windows**.  Asigne al proyecto el nombre `VBWinApp`.  
   
-3.  With the project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.  
+3.  Con el proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
   
-4.  In the Project Designer, go to the **Publish** page and set **Publishing location** to `C:\TEMP\`.  
+4.  En el Diseñador de proyectos, vaya a la página **Publicar** y establezca **Ubicación de publicación** en `C:\TEMP\`.  
   
-5.  Publish the project by clicking **Publish Now**.  
+5.  Publique el proyecto, haciendo clic en **Publicar ahora.**  
   
-     The manifest file will be built and put in `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. To view the manifest, right-click the file and click **Open with**, then click **Select the program from a list**, and then click **Notepad**.  
+     Se compilará el archivo de manifiesto y se colocará en `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`.  Para ver el manifiesto, haga clic con el botón secundario del mouse en el archivo, y seleccione sucesivamente **Abrir con**, **Seleccionar el programa de una lista** y **Bloc de notas**.  
   
-     Search in the file for the `<osVersionInfo>` element. For example, the version might be:  
+     Busque el elemento `<osVersionInfo>` en el archivo.  Por ejemplo, la versión podrían ser:  
   
     ```  
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  In the Project Designer, go to the **Compile** tab and click the **Build Events** button to open the **Build Events** dialog box.  
+6.  En el Diseñador de proyectos, seleccione la ficha **Compilación** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.  
   
-7.  In the **Post-build Event Command Line** box, enter the following command:  
+7.  En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
-     When you build the project, this command will change the minimum operating system version in the application manifest to 5.1.2600.0.  
+     Al compilar el proyecto, este comando cambiará la versión mínima del sistema operativo en el manifiesto de la aplicación a 5.1.2600.0.  
   
-     The `$(TargetPath)` macro expresses the full path for the executable being created. Therefore, $(TargetPath).manifest will specify the application manifest created in the bin directory. Publishing will copy this manifest to the publishing location that you set earlier.  
+     La macro `$(TargetPath)` expresa la ruta de acceso completa para el ejecutable creado.  Por consiguiente, $\(TargetPath\).manifest especificará el manifiesto de aplicación creado en el directorio bin.  Al publicarlo, se copiará este manifiesto en la ubicación de publicación que estableció anteriormente.  
   
-8.  Publish the project again. Go to the **Publish** page and click **Publish Now**.  
+8.  Publique otra vez el proyecto.  Vaya a la página **Publicar** y haga clic en **Publicar ahora.**  
   
-     View the manifest again. To view the manifest, go to the publish directory, right-click the file and click **Open with** and then **Select the program from a list**, and then click **Notepad**.  
+     Vea de nuevo el manifiesto.  Para ver el manifiesto, vaya al directorio de publicación, haga clic con el botón secundario del mouse en el archivo y seleccione sucesivamente **Abrir con**, **Seleccionar el programa de una lista** y **Bloc de notas**.  
   
-     The version should now read:  
+     La versión indicada debe ser ahora:  
   
     ```  
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>See Also  
- [Managing Compilation Properties](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Compile Page, Project Designer (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Publish Page, Project Designer](../ide/reference/publish-page-project-designer.md)   
- [Pre-build Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [How to: Specify Build Events (C#)](../ide/how-to-specify-build-events-csharp.md)
+## Vea también  
+ [Managing Compilation Properties](http://msdn.microsoft.com/es-es/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Página Compilación, Diseñador de proyectos \(Visual Basic\)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+ [Panel Publicar, Diseñador de proyectos](../ide/reference/publish-page-project-designer.md)   
+ [Línea de comandos del evento anterior\/posterior a la compilación \(Cuadro de diálogo\)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
+ [Cómo: Especificar eventos de compilación \(C\#\)](../ide/how-to-specify-build-events-csharp.md)

@@ -1,62 +1,44 @@
 ---
-redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
-title: Remove Parameters Refactoring (C#) | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.csharp.refactoring.remove
-dev_langs:
-- CSharp
-helpviewer_keywords:
-- parameters [C#], removing
-- refactoring [C#], Remove Parameters
-- Remove Parameters refactoring [C#]
+title: "Quitar par&#225;metros (Refactorizaci&#243;n, C#) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/05/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.csharp.refactoring.remove"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "parámetros [C#], movimiento"
+  - "refactorización [C#], quitar parámetros"
+  - "Quitar parámetros (refactorización) [C#]"
 ms.assetid: f4fc3265-0ef8-4398-a691-c338178697a6
 caps.latest.revision: 24
-author: BillWagner
-ms.author: wiwagn
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5359df1aa685a0fc8dabe356c0901072d6c36608
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+caps.handback.revision: 24
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
-# <a name="remove-parameters-refactoring-c"></a>Remove Parameters Refactoring (C#)
-`Remove Parameters` is a refactoring operation that provides an easy way to remove parameters from methods, indexers, or delegates. Remove Parameters changes the declaration; at any locations where the member is called, the parameter is removed to reflect the new declaration.  
+# Quitar par&#225;metros (Refactorizaci&#243;n, C#)
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+`Remove Parameters` es una operación de refactorización que proporciona una manera sencilla de quitar parámetros de los métodos, indizadores o delegados.  Quitar parámetros cambia la declaración; en todas las ubicaciones donde se llama al miembro, el parámetro se quita para reflejar la nueva declaración.  
   
- You perform the Remove Parameters operation by first positioning the cursor on a method, indexer, or delegate. While the cursor is in position, to invoke the Remove `Parameters` operation, click the **Refactor** menu, press the keyboard shortcut, or select the command from the shortcut menu.  
+ La operación de quitar parámetros se realiza colocando primero el cursor en un método, indizador o delegado.  Cuando el cursor esté en la posición correcta, para invocar la operación Quitar `Parameters`, haga clic en el menú **Refactorizar**, presione el método abreviado de teclado o seleccione el comando en el menú contextual.  
   
 > [!NOTE]
->  You cannot remove the first parameter in an extension method.  
+>  No se puede quitar el primer parámetro de un método de extensión.  
   
-### <a name="to-remove-parameters"></a>To remove parameters  
+### Para quitar los parámetros  
   
-1.  Create a console application named `RemoveParameters`, and then replace `Program` with the following code.  
+1.  Cree una aplicación de consola denominada `RemoveParameters` y, a continuación, reemplace `Program` por el ejemplo siguiente.  
   
-    ```csharp  
+    ```c#  
     class A  
     {  
         // Invoke on 'A'.  
@@ -73,39 +55,39 @@ ms.lasthandoff: 08/28/2017
     }  
     ```  
   
-2.  Place the cursor on method `A`, either in the method declaration or the method call.  
+2.  Coloque el cursor en el método `A`, bien en la declaración de método o bien en la llamada al método.  
   
-3.  From the **Refactor** menu, select **Remove Parameters** to display the **Remove Parameters** dialog box.  
+3.  En el menú **Refactorizar**, seleccione **Quitar parámetros** para mostrar el cuadro de diálogo **Quitar parámetros**.  
   
-     You can also type the keyboard shortcut CTRL+R, V to display the **Remove Parameters** dialog box.  
+     También puede presionar CTRL\+R, V, que es el método abreviado de teclado para mostrar el cuadro de diálogo **Quitar parámetros**.  
   
-     You can also right-click the cursor, point to **Refactor**, and then click **Remove Parameters** to display the **Remove Parameters** dialog box.  
+     O bien, puede hacer clic con el botón secundario en el cursor, señalar **Refactorizar** y, a continuación, hacer clic en **Quitar parámetros** para mostrar el cuadro de diálogo **Quitar parámetros**.  
   
-4.  Using the **Parameters** field, position the cursor on `int i`, and then click **Remove**.  
+4.  Utilizando el campo **Parámetros**, sitúe el cursor en `int i` y, a continuación, haga clic en **Quitar**.  
   
-5.  Click **OK**.  
+5.  Haga clic en **Aceptar**.  
   
-6.  In the **Preview Changes — Remove Parameters** dialog box, click **Apply**.  
+6.  En el cuadro de diálogo **Obtener vista previa de cambios \- Quitar parámetros**, haga clic en **Aplicar**.  
   
-## <a name="remarks"></a>Remarks  
- You can remove parameters from a method declaration or a method call. Position the cursor in the method declaration or delegate name and invoke Remove Parameters.  
+## Comentarios  
+ Es posible quitar los parámetros de una declaración de método o de una llamada al método.  Coloque el cursor en la declaración de método o en el nombre de delegado e invoque a Quitar parámetros.  
   
 > [!CAUTION]
->  Remove Parameters enables you to remove a parameter that is referenced in the body of the member, but it does not remove the references to that parameter in the method body. This can introduce build errors into your code. However, you can use the **Preview Changes** dialog box to review your code before executing the refactoring operation.  
+>  Quitar parámetros permite eliminar un parámetro al que se hace referencia en el cuerpo del miembro, pero no quita las referencias a dicho parámetro en el cuerpo del método.  Esto puede producir errores de compilación en el código.  Sin embargo, puede usar el cuadro de diálogo **Vista previa de los cambios** para revisar el código antes de ejecutar la operación de refactorización.  
   
- If a parameter being removed is modified during the call to a method, the removal of the parameter will also remove the modification. For example, if a method call is changed from  
+ Si un parámetro que se está quitando se modifica durante la llamada a un método, la eliminación del parámetro también quitará la modificación.  Por ejemplo, si se cambia una llamada a un método de  
   
-```csharp  
+```c#  
 MyMethod(param1++, param2);  
 ```  
   
- to  
+ por  
   
-```csharp  
+```c#  
 MyMethod(param2);  
 ```  
   
- by the refactoring operation, `param1` will not be incremented.  
+ no se incrementará `param1` mediante la operación de refactorización.  
   
-## <a name="see-also"></a>See Also  
- [Refactoring (C#)](refactoring-csharp.md)
+## Vea también  
+ [Refactorización \(C\#\)](../csharp-ide/refactoring-csharp.md)

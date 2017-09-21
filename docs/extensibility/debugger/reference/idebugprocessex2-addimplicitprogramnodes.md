@@ -1,79 +1,62 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProcessEx2::AddImplicitProgramNodes
-helpviewer_keywords:
-- IDebugProcessEx2::AddImplicitProgramNodes method
+title: "IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProcessEx2::AddImplicitProgramNodes"
+helpviewer_keywords: 
+  - "IDebugProcessEx2::AddImplicitProgramNodes (método)"
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b248f3077a21e0e1f8dfc989971454a8e5c06aa7
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-This method adds a program node for each debug engine (DE) specified.  
+# IDebugProcessEx2::AddImplicitProgramNodes
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Este método agrega un nodo de programa para cada motor \(DE\) de depuración especificado.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
+```cpp#  
 HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
+   REFGUID guidLaunchingEngine,  
+   GUID*   rgguidSpecificEngines,  
+   DWORD   celtSpecificEngines  
 );  
 ```  
   
-```csharp  
+```c#  
 int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
+   ref Guid guidLaunchingEngine,  
+   Guid[]   rgguidSpecificEngines,  
+   uint     celtSpecificEngines  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `guidLaunchingEngine`  
- [in] The `GUID` of a DE that is to be used to launch programs (and is assumed to add its own program nodes).  
+ \[in\]  `GUID` de un OF que debe utilizar para iniciar programas \(y se supone agregar sus propios nodos de programa\).  
   
  `rgguidSpecificEngines`  
- [in] Array of `GUID`s of DEs for which program nodes will be added.  
+ \[in\]  Matriz de s para `GUID`de DES para los nodos del programa se agregarán.  
   
  `celtSpecificEngines`  
- [in] The number of `GUID`s in the `rgguidSpecificEngines` array.  
+ \[in\]  El número de s de `GUID`en la matriz de `rgguidSpecificEngines` .  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- [Program Nodes](../../../extensibility/debugger/program-nodes.md) will be added for each DE listed in `rgguidSpecificEngines`—excluding the launching engine (as given in `guidLaunchingEngine`), which is assumed to add its own program node when it launches a program.  
+## Comentarios  
+ [Nodos de programa](../../../extensibility/debugger/program-nodes.md) se agregará para cada OF enumerado en `rgguidSpecificEngines`\(excepto el motor que inicia \(según lo especificado en `guidLaunchingEngine`\), que se supone para agregar su propio nodo de programa cuando inicia un programa.  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Program Nodes](../../../extensibility/debugger/program-nodes.md)
+ [Nodos de programa](../../../extensibility/debugger/program-nodes.md)

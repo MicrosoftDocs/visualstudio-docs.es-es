@@ -1,84 +1,67 @@
 ---
-title: IDebugPointerObject::SetBytes | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPointerObject::SetBytes
-helpviewer_keywords:
-- IDebugPointerObject::SetBytes method
+title: "IDebugPointerObject::SetBytes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPointerObject::SetBytes"
+helpviewer_keywords: 
+  - "IDebugPointerObject::SetBytes (método)"
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 71211a0946c969d7b1cffc3eefc4f33b2f659df3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Sets the value pointed to from a series of consecutive bytes.  
+# IDebugPointerObject::SetBytes
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Establece el valor indicado de una serie de bytes consecutivos.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT SetBytes(   
-   DWORD  dwStart,  
-   DWORD  dwCount,  
-   BYTE*  pBytes,  
-   DWORD* pdwBytes  
+```cpp#  
+HRESULT SetBytes(   
+   DWORD  dwStart,  
+   DWORD  dwCount,  
+   BYTE*  pBytes,  
+   DWORD* pdwBytes  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetBytes(  
-   uint     dwStart,   
-   uint     dwCount,   
-   byte[]   pBytes,   
-   out uint pdwBytes  
+   uint     dwStart,   
+   uint     dwCount,   
+   byte[]   pBytes,   
+   out uint pdwBytes  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `dwStart`  
- [in] An offset, in bytes, from the start of the object pointed to.  
+ \[in\]  Una diferencia, en bytes, desde el inicio del objeto que en.  
   
  `dwCount`  
- [in] The number of bytes to set.  
+ \[in\]  El número de bytes al conjunto.  
   
  `pBytes`  
- [in] An array of bytes representing the new value. This value is stored into the object, starting at the given offset.  
+ \[in\]  Una matriz de byte que representa el nuevo valor.  Este valor se almacena en el objeto, comenzando en el desplazamiento especificado.  
   
  `pdwBytes`  
- [out] Returns the number of bytes actually set.  
+ \[out\]  devuelve el número de bytes establecidos realmente.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- This method is used if the pointer as represented by this [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) points to a primitive type or a simple array of primitive types (that is, an array that can be represented by a simple sequence of bytes). This `IDebugPointerObject` object cannot be a null reference (it must point to an address in memory).  
+## Comentarios  
+ Este método se utiliza si el puntero como se representa por este puntos de [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) a un tipo primitivo o a una matriz simple de los tipos primitivos \(es decir, una matriz que se puede representar mediante una secuencia de bytes simple\).  este objeto de `IDebugPointerObject` no puede ser una referencia nula \(debe señalar a una dirección en memoria\).  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

@@ -1,70 +1,53 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPendingBreakpoint2::SetCondition
-helpviewer_keywords:
-- SetCondition method
-- IDebugPendingBreakpoint2::SetCondition method
+title: "IDebugPendingBreakpoint2::SetCondition | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPendingBreakpoint2::SetCondition"
+helpviewer_keywords: 
+  - "SetCondition (método)"
+  - "IDebugPendingBreakpoint2::SetCondition (método)"
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e418fc46dc04e4271954782ba7fe9cb8e2e652c7
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-Sets or changes the condition associated with the pending breakpoint.  
+# IDebugPendingBreakpoint2::SetCondition
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Establece o cambia la condición asociada al punto de interrupción pendiente.  
   
-## <a name="syntax"></a>Syntax  
+## Sintaxis  
   
-```cpp  
-HRESULT SetCondition(   
-   BP_CONDITION bpCondition  
+```cpp#  
+HRESULT SetCondition(   
+   BP_CONDITION bpCondition  
 );  
 ```  
   
-```csharp  
-int SetCondition(   
-   BP_CONDITION bpCondition  
+```c#  
+int SetCondition(   
+   BP_CONDITION bpCondition  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parámetros  
  `bpCondition`  
- [in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure that specifies the condition to set.  
+ \[in\]  una estructura de [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que especifica la condición para establecer.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Valor devuelto  
+ Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
   
-## <a name="remarks"></a>Remarks  
- Any condition that was previously associated with the pending breakpoint is lost. All breakpoints bound from this pending breakpoint are called to set their condition to the value specified in the `bpCondition` parameter.  
+## Comentarios  
+ Se pierde cualquier condición que estuviera previamente asociado al punto de interrupción pendiente.  Todos los puntos de interrupción enlazados de este punto de interrupción pendiente se denominan para establecer la condición en el valor especificado en el parámetro de `bpCondition` .  
   
-## <a name="see-also"></a>See Also  
+## Vea también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+ [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
