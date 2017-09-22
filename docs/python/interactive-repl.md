@@ -2,7 +2,6 @@
 title: Ventana interactiva de REPL de Python en Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
