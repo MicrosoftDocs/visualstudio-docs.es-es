@@ -1,21 +1,41 @@
 ---
-title: "Get Started Developing with Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio, introducción"
+title: "Introducción al desarrollo con Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 11/16/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 65
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 65
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 4b2952b9233c7c4571ad4509cc7c4beda7ee2338
+ms.contentlocale: es-es
+ms.lasthandoff: 02/22/2017
+
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 Le damos la bienvenida a Visual Studio. Una vez haya [descargado](http://www.visualstudio.com/community) el producto, estas páginas le ayudarán a comenzar a codificar.  
@@ -65,9 +85,4 @@ Le damos la bienvenida a Visual Studio. Una vez haya [descargado](http://www.vis
 |[Introducción a Visual C# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Escribir código JavaScript](https://msdn.microsoft.com/library/cte3c772.aspx)|  
 |[Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Introducción a la programación funcional con F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|  
 |[Introducción a C++](../ide/getting-started-with-cpp-in-visual-studio.md)|[Introducción a la depuración en Visual Studio](../ide/getting-started-with-debugging-in-visual-studio.md)|
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

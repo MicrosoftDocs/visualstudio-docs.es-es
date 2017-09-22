@@ -12,9 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 robots: noindex,nofollow
-translationtype: Human Translation
+ms.technology:
+- vs-acquisition
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
 ms.openlocfilehash: 2220a1c2def8fd831f3adba1f3b02e03efe47fe9
+ms.contentlocale: es-es
 ms.lasthandoff: 03/07/2017
 
 ---
@@ -34,7 +37,7 @@ Si se produce un problema con Visual Studio, queremos saberlo para poder diagnos
   1. Haga clic en **Iniciar sesión** en la parte izquierda de la herramienta, como se muestra en la siguiente captura de pantalla.
   2. Siga las instrucciones en pantalla para iniciar sesión.
 
-  ![Iniciar sesión para notificar un problema](~/ide/media/vs2017-report-a-problem-sign-in.png "Iniciar sesión para notificar un problema")
+  ![Iniciar sesión para notificar un problema](../ide/media/vs2017-report-a-problem-sign-in.png "Iniciar sesión para notificar un problema")
 
 
 ## <a name="search-and-vote-for-similar-problems"></a>Buscar y votar problemas similares  
@@ -43,7 +46,7 @@ Si se produce un problema con Visual Studio, queremos saberlo para poder diagnos
 1.  Busque el problema y vea si otros usuarios ya lo han notificado.
 2.  Si alguien lo ha notificado, "vótelo" para indicárnoslo.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](~/ide/media/vs2017-report-a-problem-search-and-vote.png "Buscar y votar problemas similares")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](../ide/media/vs2017-report-a-problem-search-and-vote.png "Buscar y votar problemas similares")
 
 
 ## <a name="report-a-new-problem"></a>Notificar un problema nuevo

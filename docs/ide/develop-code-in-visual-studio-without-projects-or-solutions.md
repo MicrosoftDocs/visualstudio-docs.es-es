@@ -28,8 +28,8 @@ helpviewer_keywords:
 - code
 ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
 caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -46,9 +46,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: 3a8be04b4d2c927dc296753420ff736b993343c9
+ms.contentlocale: es-es
 ms.lasthandoff: 03/07/2017
 
 ---
@@ -73,7 +74,7 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
 1. Vaya al repositorio que desea clonar.
 1. En la página de GitHub del repositorio, elija el botón **Clone or Download** (Clonar o descargar) y, a continuación, elija el botón **Copy to Clipboard** (Copiar en el Portapapeles) del menú desplegable para copiar la dirección URL segura del sitio de GitHub.
 
-  ![Botón de clonar de GitHub](~/ide/media/VSIDE_Code_Clone.png)
+  ![Botón de clonar de GitHub](./media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  Aunque también tiene la opción de abrir el proyecto en el escritorio o descargar un archivo .zip del proyecto, en este ejemplo se muestra cómo clonar el repositorio mediante el método URL seguro.
@@ -81,12 +82,12 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
 1. En Visual Studio, elija la pestaña **Team Explorer** para abrir Team Explorer.
 1. En Team Explorer, en la sección **Repositorios GIT locales**, elija el comando **Clonar** y, a continuación, pegue la dirección URL de la página de GitHub en el cuadro de texto.
 
-  ![Clonación del proyecto](~/ide/media/VSIDE_Code_Clone2.png)
+  ![Clonación del proyecto](./media/VSIDE_Code_Clone2.png)
 
 1. Elija el botón **Clonar** para clonar los archivos del proyecto en un repositorio de GIT local. Dependiendo del tamaño del repositorio, este proceso podría tardar varios minutos.
 1. Una vez que el repositorio se haya clonado en el sistema, en Team Explorer, elija el comando **Abrir** del menú contextual (clic derecho) del proyecto recién clonado.
 
-  ![Proyecto clonado](~/ide/media/VSIDE_Code_Clone3.png)
+  ![Proyecto clonado](./media/VSIDE_Code_Clone3.png)
 
 1. Elija el comando **Mostrar vista de carpeta** para ver los archivos en el Explorador de soluciones.
 
@@ -94,7 +95,7 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
 
   Ahora puede examinar las carpetas y los archivos del proyecto clonado y ver y buscar en el código en el editor de código de Visual Studio, con coloración de sintaxis y otras características.
 
-    ![Búsqueda del código de proyecto clonado](~/ide/media/VSIDE_Code_Clone4.png)
+    ![Búsqueda del código de proyecto clonado](./media/VSIDE_Code_Clone4.png)
 
 
 ## <a name="debug-your-code"></a>Depurar el código
@@ -102,7 +103,7 @@ Puede depurar el código en Visual Studio. Para depurar algunos lenguajes, debe 
 
 El cuadro de lista desplegable situado junto al botón de inicio de la barra de herramientas muestra todos los elementos de inicio que Visual Studio detecta, así como los elementos que elija específicamente en una carpeta.
 
-![Botón Ejecutar](~/ide/media/VSIDE_Code_Run_Button.png)
+![Botón Ejecutar](./media/VSIDE_Code_Run_Button.png)
 
 Visual Studio reconoce automáticamente los proyectos, pero es necesario que los scripts (como Python y JavaScript) se seleccionen explícitamente a fin de que aparezcan en la lista.
 Además, algunos elementos de inicio, como MSBuild y CMake, pueden tener varias configuraciones de compilación que aparecen en la lista desplegable del botón Ejecutar.
@@ -138,11 +139,11 @@ También puede crear tareas de compilación arbitrarias que pueden hacer casi to
 
 1. Elija el archivo o la carpeta del proyecto en el Explorador de soluciones donde quiere que esté la tarea y, en el menú contextual del archivo o la carpeta (clic derecho), elija **Configurar tareas**.
 
-  ![Configurar tareas](~/ide/media/VSIDE_Code_Config_Task.png)
+  ![Configurar tareas](./media/VSIDE_Code_Config_Task.png)
 
   Al elegir **Configurar tareas** se abre un archivo denominado tasks.vs.json. Si este archivo no existe, se crea. Este archivo contiene las tareas de compilación para la carpeta o el archivo seleccionado.
 
-  ![Archivo tasks.vs.json](~/ide/media/VSIDE_Code_Tasks_JSON.png)
+  ![Archivo tasks.vs.json](./media/VSIDE_Code_Tasks_JSON.png)
 
 1. Agregue la siguiente tarea de compilación a tasks.vs.json. En este ejemplo, vamos a agregar una tarea sencilla denominada "Enumerar salidas" que muestra los archivos y subcarpetas de la carpeta seleccionada en la ventana de salida. (La nueva tarea debe agregarse dentro de la matriz de "tareas" existente).
 
@@ -159,12 +160,12 @@ También puede crear tareas de compilación arbitrarias que pueden hacer casi to
   ```
   La tarea de compilación completa debería tener este aspecto.
 
-  ![Tarea de compilación arbitraria](~/ide/media/VSIDE_Code_Tasks_ArbTask.png)
+  ![Tarea de compilación arbitraria](./media/VSIDE_Code_Tasks_ArbTask.png)
 
 1. Guarde el proyecto.
 1. Abra el menú contextual de la carpeta seleccionada. Debería ver la nueva tarea de compilación arbitraria en la parte inferior del menú contextual.
 
-  ![Comando de tarea de compilación arbitraria](~/ide/media/VSIDE_Code_Tasks_ArbTask2.png)
+  ![Comando de tarea de compilación arbitraria](./media/VSIDE_Code_Tasks_ArbTask2.png)
 
 1. Seleccione el nuevo comando **Enumerar salidas** para ejecutar la tarea.
 
@@ -174,7 +175,7 @@ En este procedimiento, agregaremos dos tareas de compilación personalizadas que
 
 1. Elija un archivo del proyecto en el Explorador de soluciones que desee designar más adelante como elemento de inicio. En el menú de contextual del archivo (clic derecho), elija **Configurar tareas**.
 
-  ![Comando de tarea de compilación personalizada](~/ide/media/VSIDE_Code_Tasks_CustTask1.png)
+  ![Comando de tarea de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask1.png)
 
 1. Agregue las siguientes tareas de compilación a tasks.vs.json. En este ejemplo, vamos a agregar dos tareas: una llamada "makefile-build" que usa el comando nMake para generar el proyecto, y otra llamada makefile-clean que llama al comando nMake con el argumento "clean". Estas tareas deben agregarse a la matriz de "tareas" existente. (Tenga en cuenta que estas son solo tareas de compilación de ejemplo. Para que funcionen realmente, debe tener la carga de trabajo que contiene [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) instalada en el sistema).
 
@@ -199,12 +200,12 @@ En este procedimiento, agregaremos dos tareas de compilación personalizadas que
   ```
   La tarea de compilación personalizada completa debería tener este aspecto.
 
-  ![Herramienta de compilación personalizada](~/ide/media/VSIDE_Code_Tasks_CustTask2.png)
+  ![Herramienta de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask2.png)
 
 1. Guarde el proyecto.
 1. Abra el menú contextual del archivo seleccionado. Las nuevas tareas de compilación personalizadas deben aparecer en el medio del menú contextual.
 
-  ![Comando de tarea de compilación personalizada](~/ide/media/VSIDE_Code_Tasks_CustTask3.png)
+  ![Comando de tarea de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask3.png)
 
   > [!NOTE]
   > Los comandos aparecen bajo el comando **Configurar tareas** comando debido a su configuración de `contextType`; "build" y "clean" son comandos de compilación, por lo que aparecen en la sección de compilación en el medio del menú contextual.
@@ -213,11 +214,11 @@ En este procedimiento, agregaremos dos tareas de compilación personalizadas que
 
 1. En el menú contextual del archivo, elija **Establecer como elemento de inicio**.
 
-  ![Comando de tarea de compilación personalizada](~/ide/media/VSIDE_Code_Tasks_CustTask4.png)
+  ![Comando de tarea de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask4.png)
 
 1. En la barra de herramientas, elija la flecha desplegable situada junto al botón Inicio. El elemento de inicio aparece ahora como una opción.
 
-  ![Comando de tarea de compilación personalizada](~/ide/media/VSIDE_Code_Tasks_CustTask5.png)
+  ![Comando de tarea de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask5.png)
 
 Ahora puede elegir el botón Inicio o la tecla F5 para ejecutar el código base. Puede editar y depurar el código base en Visual Studio aunque Visual Studio no reconozca las herramientas de compilación del código base. El resultado de la tarea de compilación aparece en la ventana **Salida**, y los errores de compilación aparecen en la **Lista de errores**. El archivo de la tarea de compilación de tasks.vs.json asocia el bucle de desarrollo interno de Visual Studio con las herramientas de compilación personalizadas que utiliza el código base.
 
@@ -237,7 +238,7 @@ Al especificar la ubicación de salida se notifica a Visual Studio dónde encont
 
 De forma predeterminada, el archivo tasks.vs.json se encuentra en una carpeta oculta denominada `.vs`. Para ver los archivos ocultos en Visual Studio, elija el botón **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones.
 
-![Comando de tarea de compilación arbitraria](~/ide/media/VSIDE_Code_Tasks_FileLocation.png)
+![Comando de tarea de compilación arbitraria](./media/VSIDE_Code_Tasks_FileLocation.png)
 
 El archivo tasks.vs.json está oculto porque la mayoría de los usuarios normalmente no desea insertarlo en el repositorio del control de código fuente. Sin embargo, si desea poder insertarlo en el repositorio del control de código fuente, arrastre el archivo a la raíz del proyecto donde estará visible.
 
