@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 32
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -79,7 +79,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
  Esta es la barra de herramientas **Modo Diseñador de sombras**:  
   
- ![La barra de herramientas Modo Diseñador de sombras.](~/designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
+ ![La barra de herramientas Modo Diseñador de sombras.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")  
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:  
   

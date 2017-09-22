@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e15c00f6-3e22-49b8-8269-69e4c8be8040
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 f1_keywords:
 - vs.codefix.previewchanges
@@ -28,9 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 14e6961d6db557e77687eef17aae9b16f5a4d706
 ms.openlocfilehash: eb49815ed120ee4ff65dfc04764282f1ac6d1ff8
+ms.contentlocale: es-es
+ms.lasthandoff: 02/22/2017
 
 ---
 
@@ -38,7 +40,7 @@ ms.openlocfilehash: eb49815ed120ee4ff65dfc04764282f1ac6d1ff8
 
 Visual Studio incluye varias herramientas de *Acciones rápidas* o *Refactorización* que permiten obtener una vista previa de los cambios que se van a realizar en el proyecto antes de aceptarlos.  Esto tiene lugar en la ventana **Vista previa de los cambios**.  Por ejemplo, aquí en la ventana **Vista previa de los cambios** se muestra qué se cambiará durante una refactorización de cambio de nombre en un proyecto de C#:
 
-![Vista previa de cambios](~/ide/media/previewchanges.png)
+![Vista previa de cambios](media/previewchanges.png)
 
 En la mitad superior de la ventana se muestran las líneas específicas que se cambiarán, cada una con una casilla.  Puede activar o desactivar cada casilla si quiere aplicar de manera selectiva la refactorización solo en líneas específicas.
 
@@ -48,9 +50,4 @@ Después de revisar los cambios, haga clic en el botón **Aplicar** para aceptar
 
 ## <a name="see-also"></a>Vea también  
 [Refactorización en Visual Studio](../ide/refactoring-in-visual-studio.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

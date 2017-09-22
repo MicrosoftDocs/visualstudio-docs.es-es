@@ -16,8 +16,8 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
 caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz

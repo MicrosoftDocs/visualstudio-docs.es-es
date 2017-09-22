@@ -1,26 +1,46 @@
 ---
-title: "Paso 11: Ejecutar el programa y probar otras caracter&#237;sticas | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Paso 11: Ejecutar el programa y probar otras características | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 019d72fece70586013455bbe74f09b990c9fac80
+ms.contentlocale: es-es
+ms.lasthandoff: 02/22/2017
+
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Paso 11: Ejecutar el programa y probar otras características
 El programa está finalizado y listo para ejecutarse. Puede ejecutar el programa y establecer el color de fondo del control PictureBox. Para aprender más, intente mejorar el programa cambiando el color del formulario, personalizando los botones y la casilla, y cambiando las propiedades del formulario.  
   
  Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).  
   
- ![vínculo al vídeo](~/data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Para ejecutar el programa y establecer el color de fondo  
   
@@ -59,8 +79,3 @@ Cuadro de diálogo Color
 -   Para ir al siguiente tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 -   Para volver al paso anterior del tutorial, vea [Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

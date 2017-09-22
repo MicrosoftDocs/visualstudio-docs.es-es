@@ -13,8 +13,8 @@ helpviewer_keywords:
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -57,8 +57,7 @@ Obtenga más información sobre cómo configurar y personalizar propiedades del 
 |[Página Referencias, Diseñador de proyectos (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Use esta página para administrar las referencias que ha usado un proyecto.|  
 |[Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md)|Use esta página para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|  
 |[Página Firma, Diseñador de proyectos](../../ide/reference/signing-page-project-designer.md)|Use esta página para firmar los manifiestos de implementación y aplicación, y firmar el ensamblado.|  
-|||  
-|||  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)
+

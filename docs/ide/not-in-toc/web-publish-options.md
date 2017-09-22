@@ -5,15 +5,15 @@ ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
 caps.latest.revision: 1
-author: kraigb
-ms.author: kraigb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -29,14 +29,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
 ms.openlocfilehash: 6bc4d5116517402825317611c44d4b594ee79b2a
+ms.contentlocale: es-es
 ms.lasthandoff: 03/10/2017
 
 ---
 
-# <a name="what-publishing-options-are-right-for-me"></a>¿Qué opciones de publicación son las adecuadas para mí?
+# ¿Qué opciones de publicación son las adecuadas para mí?
 
 Desde Visual Studio, las aplicaciones web pueden publicarse directamente en los destinos siguientes:
 
@@ -47,7 +48,7 @@ Desde Visual Studio, las aplicaciones web pueden publicarse directamente en los 
 
 En la pestaña **Publicar**, puede seleccionar un perfil de publicación existente, importar uno existente o crear uno nuevo con las opciones que se describen aquí.
 
-## <a name="azure-app-service"></a>Azure App Service
+## Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) ayuda a los desarrolladores a crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura.
 
@@ -57,7 +58,7 @@ Determine la potencia de proceso que tiene una aplicación web eligiendo un [pla
 
 Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure, pero es usted quien administra esas máquinas virtuales. A cada aplicación web en un App Service se le asignará una dirección URL única \*.azurewebsites.net; todos los planes de tarifa que no sean los gratuitos también permiten asignar nombres de dominio personalizados al sitio.
 
-### <a name="when-to-choose-azure-app-service"></a>Cuándo optar por Azure App Service
+### Cuándo optar por Azure App Service
 
 - Si quiere implementar una aplicación web que sea accesible mediante Internet.
 - Si quiere escalar automáticamente la aplicación web en función de la demanda sin necesidad de volver a implementarla.
@@ -68,7 +69,7 @@ Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure,
 > Si quiere usar Azure App Service en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 
-## <a name="azure-virtual-machines"></a>Azure Virtual Machines
+## Azure Virtual Machines
 
 [Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) le permite crear y administrar cualquier cantidad de recursos informáticos en la nube. Al asumir la responsabilidad de todo el software y las actualizaciones de las máquinas virtuales, puede personalizarlas todo lo que quiera según necesite su aplicación web. Puede tener acceso a las máquinas virtuales directamente mediante Escritorio remoto, y cada una mantendrá su dirección IP asignada durante el tiempo que se quiera.
 
@@ -76,7 +77,7 @@ Escalar una aplicación web que se hospeda en máquinas virtuales implica desarr
 
 Para obtener información adicional, vea la [comparación detallada](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) entre Azure App Service, Azure Virtual Machines y otros servicios de Azure que puede usar como un destino de implementación mediante la opción Personalizar de Visual Studio.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Cuándo optar por Azure App Virtual Machines
+### Cuándo optar por Azure App Virtual Machines
 
 - Si quiere implementar una aplicación web que sea accesible desde Internet, con un control completo sobre la duración de las direcciones IP asignadas.
 - Si necesita personalizaciones de nivel de máquina en sus servidores, que incluyen software adicional como un sistema de base de datos especializado, configuraciones de red específicas, particiones de disco, etc.
@@ -86,7 +87,7 @@ Para obtener información adicional, vea la [comparación detallada](https://azu
 > Si quiere usar Azure Virtual Machines en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 
-## <a name="file-system"></a>Sistema de archivos
+## Sistema de archivos
 
 Implementar en el sistema de archivos significa simplemente copiar los archivos de su aplicación web en una carpeta específica de su propio equipo. A menudo se usa con fines de prueba, o para implementar la aplicación y que la usen un número limitado de usuarios si el equipo también está ejecutando un servidor web. Si la carpeta de destino se comparte en una red, la implementación en el sistema de archivos puede hacer que los archivos de la aplicación web estén disponibles para otros usuarios que, a su vez, podrán implementarla después en servidores específicos.
 
@@ -94,7 +95,7 @@ Cualquier máquina local que esté ejecutando un servidor web puede hacer que su
 
 Tenga en cuenta que si por cualquier razón (como el acceso a la máquina) no puede usar servicios en la nube como Azure App Service o Azure Virtual Machines, puede usar [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) en su propio centro de datos. Azure Stack le permite administrar y usar los recursos informáticos mediante Azure App Service y Azure Virtual Machines mientras se sigue conservando todo en el entorno local.
 
-### <a name="when-to-choose-file-system-deployment"></a>Cuándo optar por la implementación del sistema de archivos
+### Cuándo optar por la implementación del sistema de archivos
 
 - Si solo necesita implementar la aplicación en un recurso compartido de archivos desde el que otros usuarios la implementarán en diferentes servidores.
 - Si solo necesita una implementación de pruebas locales.
@@ -102,7 +103,7 @@ Tenga en cuenta que si por cualquier razón (como el acceso a la máquina) no pu
 
 
 
-## <a name="custom-targets"></a>Destinos personalizados
+## Destinos personalizados
 
 Un destino personalizado le permite implementar su aplicación web en un destino que no sea Azure App Service, Azure Virtual Machines o el sistema de archivos local. Puede implementar en un sistema de archivos o en cualquier otro servidor (Internet o intranet) al que tenga acceso, incluidos los que se encuentran en otros servicios en la nube. Puede funcionar con implementación web (archivos o .ZIP) y FTP.
 
@@ -115,7 +116,7 @@ Cuando elige un destino personalizado, Visual Studio le pide un nombre de perfil
 
 Puede crear cualquier número de perfiles de implementación personalizados en Visual Studio, lo que hace que sea posible administrar perfiles con diferentes configuraciones.
 
-### <a name="when-to-choose-custom-deployment"></a>Cuándo optar por la implementación personalizada
+### Cuándo optar por la implementación personalizada
 
 - Si está usando servicios en la nube en un proveedor que no sea Azure a los que se puede acceder mediante direcciones URL.
 - Si quiere implementar con credenciales que no sean las que usa con Visual Studio ni las que están asociadas directamente a las cuentas de Azure.

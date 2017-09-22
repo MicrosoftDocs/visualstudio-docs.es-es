@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -50,7 +50,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:  
   
-     ![Cuadro de diálogo Crear recurso](~/designers/media/xaml_create_resource.png "xaml_create_resource")  
+     ![Cuadro de diálogo Crear recurso](../designers/media/xaml_create_resource.png "xaml_create_resource")  
   
 3.  En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.  
   
