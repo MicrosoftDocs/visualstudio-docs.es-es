@@ -37,7 +37,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="localizing-menu-commands"></a>Localizar los comandos de menú
@@ -52,11 +52,11 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
   
 2.  Realizar una copia de *filename*.en-US.vsct para cada uno de los idiomas localizados.  
   
-     El nombre de cada copia *filename*. *Configuración regional*.vsct, donde *configuración regional* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     El nombre de cada copia *filename*.* Configuración regional*.vsct, donde *configuración regional* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
   
-     Estos *filename*. *Configuración regional*archivos .vsct contendrá el texto del menú localizada para el paquete.  
+     Estos *filename*.* Configuración regional*archivos .vsct contendrá el texto del menú localizada para el paquete.  
   
-3.  Abra cada *filename*. *Configuración regional*archivo .vsct para localizar el texto.  
+3.  Abra cada *filename*.* Configuración regional*archivo .vsct para localizar el texto.  
   
     1.  Modificar el [ButtonText](../extensibility/buttontext-element.md) elemento valores según corresponda para el lenguaje determinado.  
   

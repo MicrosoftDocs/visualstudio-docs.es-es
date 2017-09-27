@@ -15,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6dbf4f2bfabbfe5dc780eb4e973c6fae7ca6b1d9
+ms.sourcegitcommit: d0a5b44962b0cfbe549453b1760a38237de7e6ab
+ms.openlocfilehash: 420af3d78a514a7e6b6ded186c204ad8301c4c85
 ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -44,7 +44,7 @@ La compatibilidad de Python en Visual Studio incluye una serie de [plantillas de
 1. Seleccione la plantilla "Python Application" (Aplicación de Python), especifique una carpeta para el proyecto y seleccione **Aceptar**. (Si desea crear un repositorio local para el proyecto justo ahora, seleccione también la opción **Agregar al control de código fuente**).
 
     > [!Tip]
-    > La plantilla "From exiting Python Code" (A partir del código Python existente) permite crear rápidamente un proyecto de Visual Studio desde una carpeta que ya contiene código Python, en lugar de tener que crear un proyecto vacío nuevo e importar en él el código existente.
+    > La plantilla "From existing Python Code" (A partir del código Python existente) permite crear rápidamente un proyecto de Visual Studio desde una carpeta que ya contiene código Python, en lugar de tener que crear un proyecto vacío nuevo e importar en él el código existente.
 
 1. Después de unos minutos, el proyecto se abre en la ventana del Explorador de soluciones de Visual Studio. Aquí puede examinar los archivos y carpetas del proyecto, así como administrar entornos.
 

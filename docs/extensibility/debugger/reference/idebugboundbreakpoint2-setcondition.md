@@ -1,54 +1,71 @@
 ---
-title: "IDebugBoundBreakpoint2::SetCondition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::SetCondition"
-helpviewer_keywords: 
-  - "SetCondition (método)"
-  - "IDebugBoundBreakpoint2::SetCondition (método)"
+title: IDebugBoundBreakpoint2::SetCondition | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBoundBreakpoint2::SetCondition
+helpviewer_keywords:
+- SetCondition method
+- IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugBoundBreakpoint2::SetCondition
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2b4e7fa667bfd5c0956233588210bc87e55d02bd
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
-Establece o cambia la condición asociado a este punto de interrupción enlazado.  
+---
+# <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
+Establece o cambia la condición asociada a este punto de interrupción enlazado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT SetCondition(   
-   BP_CONDITION bpCondition  
+```cpp  
+HRESULT SetCondition(   
+   BP_CONDITION bpCondition  
 );  
 ```  
   
-```c#  
-int SetCondition(   
-   enum_BP_CONDITION bpCondition  
+```csharp  
+int SetCondition(   
+   enum_BP_CONDITION bpCondition  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `bpCondition`  
- \[in\]  Un valor de enumeración de [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que describe la condición.  
+ [in] Un valor de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumeración que describe la condición.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_BP_DELETED` si establece el estado del objeto enlazado de punto de interrupción a `BPS_DELETED` \(parte de la enumeración de [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) \).  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
   
-## Comentarios  
- Se pierde cualquier condición que estuviera previamente asociado a este punto de interrupción.  
+## <a name="remarks"></a>Comentarios  
+ Cualquier condición que estaba asociado previamente a este punto de interrupción se pierde.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

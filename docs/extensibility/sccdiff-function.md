@@ -1,87 +1,104 @@
 ---
-title: "SccDiff (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDiff"
-helpviewer_keywords: 
-  - "SccDiff (función)"
+title: "Función SccDiff | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccDiff
+helpviewer_keywords:
+- SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# SccDiff (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: de66dd1f5bb36ac60c145d481f4d46722dc1ca59
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
-Esta función muestra \(o simplemente, opcionalmente, busca\) sistema de control de las diferencias entre el archivo actual \(en el disco local\) y la última versión protegida en el origen.  
+---
+# <a name="sccdiff-function"></a>SccDiff (función)
+Esta función muestra (o simplemente, opcionalmente, busca) las diferencias entre el archivo actual (en el disco local) y su última versión de archivo protegido en el origen de sistema de control.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 SCCRTN SccDiff(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LPCSTR    lpFileName,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LPCSTR    lpFileName,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pvContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de código fuente.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpFileName  
- \[in\] Nombre de archivo para el que se solicita la diferencia.  
+ [in] Nombre de archivo para el que se solicita la diferencia.  
   
- Opciones  
- \[in\] Indicadores de comando. Para obtener más información, vea la sección Comentarios.  
+ fOptions  
+ [in] Marcas de comando. Para obtener más información, vea la sección Comentarios.  
   
  pvOptions  
- \[in\] Opciones específicas del complemento de control de código fuente.  
+ [in] Opciones de específicas del complemento de control de origen.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|La versión de servidor y de copia de trabajo son idénticos.|  
-|SCC\_I\_FILESDIFFERS|La copia de trabajo difiere de la versión bajo control de código fuente.|  
-|SCC\_I\_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
-|SCC\_E\_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|  
-|SCC\_E\_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC\_E\_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de origen, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC\_E\_NONSPECIFICERROR|Error no específico; no se ha obtenido la diferencia del archivo.|  
-|SCC\_E\_FILENOTEXIST|No se encontró el archivo local.|  
+|SCC_OK|La versión de servidor y de copia de trabajo son idénticos.|  
+|SCC_I_FILESDIFFERS|La copia de trabajo difiere de la versión bajo control de código fuente.|  
+|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
+|SCC_E_FILENOTCONTROLLED|El archivo no está bajo control de código fuente.|  
+|SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC_E_NONSPECIFICERROR|Error no determinado; no se ha obtenido la diferencia de archivo.|  
+|SCC_E_FILENOTEXIST|No se encontró el archivo local.|  
   
-## Comentarios  
- Esta función sirve para dos propósitos diferentes. De forma predeterminada, muestra una lista de cambios en un archivo. El complemento de control de código fuente abre su propia ventana, en el mismo formato que elija, para mostrar las diferencias entre el archivo del usuario en el disco y la versión más reciente del archivo bajo control de código fuente.  
+## <a name="remarks"></a>Comentarios  
+ Esta función tiene dos propósitos diferentes. De forma predeterminada, muestra una lista de cambios en un archivo. El complemento de control de código fuente abre su propia ventana, en el mismo formato que elija, para mostrar las diferencias entre el archivo del usuario en el disco y la versión más reciente del archivo bajo control de código fuente.  
   
- Como alternativa, el IDE simplemente que necesite determinar si un archivo ha cambiado. Por ejemplo, el IDE necesite determinar si es seguro desproteger un archivo sin informar al usuario. En ese caso, el IDE se pasa en el `SCC_DIFF_CONTENTS` marca. El complemento de control de código fuente debe comprobar el archivo en disco, byte a byte en el archivo de control de código fuente y devolver un valor que indica si los dos archivos son diferentes sin mostrar nada al usuario.  
+ Como alternativa, el IDE simplemente que necesite determinar si un archivo ha cambiado. Por ejemplo, el IDE necesite determinar si es seguro desproteger un archivo sin informar al usuario. En ese caso, el IDE se pasa en el `SCC_DIFF_CONTENTS` marca. El complemento de control de origen debe comprobar el archivo en disco, byte a byte, con el archivo controlado por código fuente y devolver un valor que indica si los dos archivos son diferentes sin mostrar nada al usuario.  
   
- Optimizar el rendimiento, el complemento de control de código fuente puede usar una alternativa basada en una suma de comprobación o una marca de tiempo en lugar de la comparación byte a byte llamada para `SCC_DIFF_CONTENTS`: estos formularios de comparación son obviamente más rápido pero menos confiable. No todos los sistemas de control de código fuente pueden admitir estos métodos alternativos de comparación y el complemento puede tener que recurrir a una comparación de contenido. Todos los complementos código fuente control deben, como mínimo, admite una comparación de contenido.  
+ Como una optimización del rendimiento, el complemento de control de código fuente puede usar una alternativa basada en una suma de comprobación o una marca de tiempo en lugar de la comparación byte a byte que se llama para `SCC_DIFF_CONTENTS`: estas formas de comparación son obviamente más rápido pero menos confiable. No todos los sistemas de control de código fuente pueden admitir estos métodos de comparación alternativo, y el complemento podría tener que recurrir a una comparación de contenido. Todos los complementos código fuente control deben, como mínimo, admitir una comparación de contenido.  
   
 > [!NOTE]
->  Las marcas de diferencia rápida son mutuamente excluyentes. Es válido para no pasar ningún marcador, pero no es válido para pasar simultáneamente más de uno.`SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas se pueden utilizar para probar, pero nunca se debería pasar como un parámetro.  
+>  Las marcas de diferencia rápida son mutuamente excluyentes. Es válido para pasar no existen marcadores, pero no es válido para pasar al mismo tiempo más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas se pueden utilizar para probar, pero nunca se debe pasar como parámetro.  
   
 |`fOption`|Significado|  
-|---------------|-----------------|  
-|SCC\_DIFF\_IGNORECASE|Comparación entre mayúsculas y minúsculas \(se puede usar para diferencia rápido o visual\).|  
-|SCC\_DIFF\_IGNORESPACE|Omite los espacios en blanco \(se puede usar para diferencia rápido o visual\).|  
-|SCC\_DIFF\_QD\_CONTENTS|En modo silencioso, compara el archivo, byte a byte.|  
-|SCC\_DIFF\_QD\_CHECKSUM|En modo silencioso, compara el archivo a través de una suma de comprobación cuando se admita. Si no se admite, recurre a una comparación de contenido.|  
-|SCC\_DIFF\_QD\_TIME|En modo silencioso, compara el archivo a través de su marca de tiempo cuando se admita. Si no se admite, recurre a una comparación de contenido.|  
+|---------------|-------------|  
+|SCC_DIFF_IGNORECASE|Comparación entre mayúsculas y minúsculas (se puede usar para diferencia rápido o visual).|  
+|SCC_DIFF_IGNORESPACE|Omite los espacios en blanco (puede utilizarse para diferencia rápido o visual).|  
+|SCC_DIFF_QD_CONTENTS|En modo silencioso compara el archivo, byte a byte.|  
+|SCC_DIFF_QD_CHECKSUM|En modo silencioso compara el archivo a través de una suma de comprobación cuando se admita. Si no se admite, vuelve a obtener una comparación de contenido.|  
+|SCC_DIFF_QD_TIME|En modo silencioso compara el archivo a través de su marca de tiempo cuando se admita. Si no se admite, vuelve a obtener una comparación de contenido.|  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vea también  
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -2,8 +2,7 @@
 title: "Instalar Visual Studio detrás de un firewall o servidor proxy | Documentos de Microsoft"
 description: 
 ms.custom: 
-ms.date: 07/18/2017
-ms.prod: visual-studio-dev15
+ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -20,10 +19,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ddbbda1069749e2ce685507d55a070f1dec27c17
-ms.openlocfilehash: 48fd143f917d6e13c18f6913bea625b2e8cf5ce8
+ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
+ms.openlocfilehash: cb2ef641cb5b9b6efbd1aeb539154da1e4082b51
 ms.contentlocale: es-es
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Instalar Visual Studio detrás de un firewall o servidor proxy
@@ -43,8 +42,13 @@ Si es posible para su entorno, considere la posibilidad de agregar los dominios 
 | dl.xamarin.com | Configurar ubicación de descarga de los paquetes |
 | visualstudiogallery.msdn.microsoft.com | Ubicación de descarga de las extensiones de Visual Studio |
 | www.visualstudio.com | Ubicación de la documentación |
+| docs.microsoft.com | Ubicación de la documentación |
 | msdn.microsoft.com | Ubicación de la documentación |
 | www.microsoft.com | Ubicación de la documentación |
+| *.windows.net | Ubicación de inicio de sesión |
+| *.microsoftonline.com | Ubicación de inicio de sesión |
+| *.live.com | Ubicación de inicio de sesión |
+
 
 ## <a name="non-microsoft-domains"></a>Dominios que no son de Microsoft
 | Dominio | Instala estas cargas de trabajo. |
@@ -65,7 +69,7 @@ Si es posible para su entorno, considere la posibilidad de agregar los dominios 
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
   * [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
     * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
-    * [Referencia de id. de componente y carga de trabajo](workload-and-component-ids.md)
+    * [Carga de trabajo y referencia de id. de componente](workload-and-component-ids.md)
   * [Crear una instalación basada en red de Visual Studio](create-a-network-installation-of-visual-studio.md)
     * [Consideraciones especiales para instalar Visual Studio en un entorno sin conexión](install-visual-studio-in-offline-environment.md)
   * [Automatizar Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)

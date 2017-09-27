@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
-ms.openlocfilehash: e48edfa02f059444539e0a3d8514366f94a1a1f1
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 1882e191caa027e7a6e2b52c766135b240b309a1
 ms.contentlocale: es-es
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Sincronizar la configuración de Visual Studio

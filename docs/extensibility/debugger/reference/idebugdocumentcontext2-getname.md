@@ -1,61 +1,78 @@
 ---
-title: "IDebugDocumentContext2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetName"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetName"
+title: IDebugDocumentContext2::GetName | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentContext2::GetName
+helpviewer_keywords:
+- IDebugDocumentContext2::GetName
 ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugDocumentContext2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5d0edefb96d481de2dc7166f78767c2154f0d160
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
-Obtiene el nombre mostrable del documento que contiene este contexto de documento.  
+---
+# <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
+Obtiene el nombre del documento que contiene este contexto de documento que se pueden mostrar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetName(   
-   GETNAME_TYPE gnType,  
-   BSTR*        pbstrFileName  
+```cpp  
+HRESULT GetName(   
+   GETNAME_TYPE gnType,  
+   BSTR*        pbstrFileName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   enum_GETNAME_TYPE  gnType,  
-   out string         pbstrFileName  
+```csharp  
+int GetName(   
+   enum_GETNAME_TYPE  gnType,  
+   out string         pbstrFileName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `gnType`  
- \[in\]  Un valor de enumeración de [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md) que especifica el tipo de nombre para cambiar.  
+ [in] Un valor de la [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeración que especifica el tipo de nombre para devolver.  
   
  `pbstrFileName`  
- \[out\]  Devuelve el nombre del archivo.  
+ [out] Devuelve el nombre del archivo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Este método recibe normalmente la llamada al método de [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) , a menos que el contexto del documento se escribe para almacenar el nombre del documento propio \(como la presentación de ejemplo\).  
+## <a name="remarks"></a>Comentarios  
+ Normalmente, este método reenvía la llamada a la [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) método, a menos que el contexto del documento está escrito para almacenar el nombre de documento (como el programa de ejemplo).  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CDebugContext` que expone la interfaz de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CDebugContext` objeto que expone la [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)    
 {    
    HRESULT hr;    
@@ -92,6 +109,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+ [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

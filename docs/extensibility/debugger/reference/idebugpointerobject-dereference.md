@@ -1,56 +1,73 @@
 ---
-title: "IDebugPointerObject::Dereference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerObject::Dereference"
-helpviewer_keywords: 
-  - "IDebugPointerObject::Dereference (método)"
+title: IDebugPointerObject::Dereference | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPointerObject::Dereference
+helpviewer_keywords:
+- IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugPointerObject::Dereference
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d69fbe6a4f3c5453053f81cffd1753dca0470438
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
-Obtiene el objeto informa a.  
+---
+# <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
+Obtiene el objeto al que señala.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT DeReference(   
-   DWORD          dwIndex,  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT DeReference(   
+   DWORD          dwIndex,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int Dereference(  
-   uint             dwIndex,   
-   out IDebugObject ppObject  
+   uint             dwIndex,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwIndex`  
- \[in\]  Un desplazamiento de byte simple desde el inicio del objeto que en.  
+ [in] Un desplazamiento de byte simple desde el principio del objeto que señala.  
   
  `ppObject`  
- \[out\]  Devuelve un objeto de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa el objeto informa a, más desplazamiento, si existe.  
+ [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa el objeto que señala, además de desplazamiento, si lo hay.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  Devuelve E\_FAIL si este objeto no indica a otro objeto.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error. Devuelve E_FAIL si este objeto no hace referencia a otro objeto.  
   
-## Comentarios  
- El objeto informa a puede ser un tipo primitivo o un tipo más complejo como una clase o estructura.  
+## <a name="remarks"></a>Comentarios  
+ El objeto al que señala puede ser un tipo primitivo o un tipo más complejo, como una clase o estructura.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

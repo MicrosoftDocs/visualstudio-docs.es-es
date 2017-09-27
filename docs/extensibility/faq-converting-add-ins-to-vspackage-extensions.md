@@ -30,7 +30,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8db7d203b599c11ce8fea07ed3647771c879a256
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage
@@ -83,7 +83,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
 1.  Cree un VSPackage que tenga un comando de menú. (Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto >*Package.cs.)  
+2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene * \<el nombre del proyecto >*Package.cs.)  
   
 3.  Agregue las siguientes instrucciones `using` al archivo:  
   
@@ -145,7 +145,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Para obtener el objeto DTE de un VSPackage  
   
-1.  En un proyecto VSIX, con una plantilla de elementos de paquete de Visual Studio, busque el  *\<nombre del proyecto >*Package.cs archivo. Esta es la clase que deriva de <xref:Microsoft.VisualStudio.Shell.Package>; puede ayudarlo a interaccionar con Visual Studio. En este caso, usa su <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>.  
+1.  En un proyecto VSIX, con una plantilla de elementos de paquete de Visual Studio, busque el * \<nombre del proyecto >*Package.cs archivo. Esta es la clase que deriva de <xref:Microsoft.VisualStudio.Shell.Package>; puede ayudarlo a interaccionar con Visual Studio. En este caso, usa su <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obtener el objeto <xref:EnvDTE80.DTE2>.  
   
 2.  Agregue estas instrucciones `using`:  
   
@@ -177,7 +177,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
 1.  Crear un VSPackage que tiene un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.  
   
-2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto >*Package.cs.)  
+2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene * \<el nombre del proyecto >*Package.cs.)  
   
 3.  Agregue estas instrucciones `using`:  
   
@@ -225,7 +225,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
 1.  Crear un VSPackage que tiene un comando de menú, como en el [¿cómo empiezo desarrollar extensiones VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sección.  
   
-2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene  *\<el nombre del proyecto >*Package.cs.)  
+2.  Abra el archivo que contiene la definición del VSPackage. (En un proyecto de C#, tiene * \<el nombre del proyecto >*Package.cs.)  
   
 3.  Agregue estas instrucciones `using`:  
   
