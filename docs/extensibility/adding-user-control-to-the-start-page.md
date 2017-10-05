@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Agregar Control de usuario a la página de inicio
@@ -190,7 +190,7 @@ Este tutorial muestra cómo agregar una referencia de archivo DLL a una página 
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Probar una página de inicio personalizada creada manualmente  
   
-1.  Copie el archivo XAML y los archivos de texto o marcado auxiliares archivos, a la **%USERPROFILE%\My documentos\Visual Studio 2015\StartPages\\**  carpeta.  
+1.  Copie el archivo XAML y los archivos de texto o marcado auxiliares archivos, a la **%USERPROFILE%\My documentos\Visual Studio 2015\StartPages\\ ** carpeta.  
   
 2.  Si la página de inicio hace referencia a los tipos en ensamblados que no están instalados Visual Studio o los controles, copie los ensamblados y, a continuación, pegarlos en *carpeta de instalación de Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
   

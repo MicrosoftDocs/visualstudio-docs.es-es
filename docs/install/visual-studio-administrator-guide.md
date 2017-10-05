@@ -3,7 +3,6 @@ title: "Guía del administrador de Visual Studio | Microsoft Docs"
 description: "Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial."
 ms.custom: 
 ms.date: 05/15/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

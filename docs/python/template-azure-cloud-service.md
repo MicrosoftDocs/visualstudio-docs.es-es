@@ -2,7 +2,6 @@
 title: Plantilla de proyectos de servicios en la nube de Azure para Python | Microsoft Docs
 ms.custom: 
 ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

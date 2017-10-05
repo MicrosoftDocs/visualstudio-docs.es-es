@@ -2,7 +2,6 @@
 title: Opciones de Herramientas de R en Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -20,16 +19,16 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
-ms.openlocfilehash: a2f0421ff622483fb53795dac527bb8db3c689e2
+ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
+ms.openlocfilehash: 5777be7df1256d4fe4d34be41fb10eb546d4a0ac
 ms.contentlocale: es-es
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
 # <a name="r-tools-for-visual-studio-options"></a>Opciones de Herramientas de R para Visual Studio
  
-Se accede a la configuración a través del menú **R Tools > Opciones** o a través de **Herramientas > Opciones** y desplazándose hasta  **R Tools**:
+Se accede a la configuración a través del menú **R Tools > Opciones** o a través de **Herramientas > Opciones** y desplazándose hasta ** R Tools**:
  
   ![Cuadro de diálogo Opciones de R Tools](media/options-dialog.png)
 

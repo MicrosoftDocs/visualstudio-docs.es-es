@@ -1,33 +1,50 @@
 ---
-title: "Solucionar problemas de m&#233;tricas de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Solucionar problemas de métricas de código | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 4
-author: "erickson-doug"
-ms.author: "douge"
-manager: "douge"
-caps.handback.revision: 4
----
-# Solucionar problemas de m&#233;tricas de c&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: erickson-doug
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 26dc2869ceb16e2c16a74ee52249777394fb666a
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
-Al recopilar métricas de código, podría experimentar algunos de los siguientes problemas:  
+---
+# <a name="troubleshooting-code-metrics-issues"></a>Solucionar problemas de métricas de código
+Pueden surgir algunos de los siguientes problemas al recopilar métricas de código:  
   
--   [Cambios en cálculos de complejidad de código de Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
+-   [Cambios en los cálculos de complejidad de código de Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
   
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Cambios en cálculos de complejidad de código de Visual Studio 2010  
- Para la misma función, la métrica de complejidad de código calculada en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] puede ser diferente de la calculada por versiones anteriores de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en las siguientes situaciones:  
+##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Cambios en los cálculos de complejidad de código de Visual Studio 2010  
+ Para la misma función, la métrica de complejidad de código se calcula en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] puede ser diferente de la métrica calculada por versiones anteriores de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en las siguientes situaciones:  
   
--   La función contiene uno o más bloques catch.  En versiones anteriores de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], los bloques catch no se incluían en el cálculo.  En [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], la complejidad de cada bloque catch se agrega a la complejidad de la función.  
+-   La función contiene uno o varios bloques catch. En versiones anteriores de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], catch bloques no se incluyeron en el cálculo. En [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], la complejidad de cada bloque catch se agrega a la complejidad de la función.  
   
--   La función contiene una instrucción Switch \(Select Case en VB\).  Las diferencias del compilador entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y versiones anteriores pueden generar código MSIL diferente para algunas instrucciones Switch que contienen casos de paso explícito.  
+-   La función contiene una instrucción switch (Select Case en VB). Compilador diferencias entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y versiones anteriores pueden generar código MSIL diferente para algunas instrucciones switch que contienen casos de paso explícito.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

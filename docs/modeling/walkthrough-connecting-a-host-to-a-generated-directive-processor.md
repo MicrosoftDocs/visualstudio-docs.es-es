@@ -23,7 +23,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
@@ -96,7 +96,7 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
   
 1.  Abra la solución de CustomHost.  
   
-2.  En el **proyecto** menú, haga clic en **Agregar referencia**.  
+2.  En el menú **Proyecto**, haga clic en **Agregar referencia**.  
   
      El **Agregar referencia** abre el cuadro de diálogo con el **.NET** muestra la ficha.  
   

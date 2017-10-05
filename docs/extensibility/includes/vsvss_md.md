@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: MT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 6588c75ff05d480c2760e98eb9af9e35ea63571b
+ms.contentlocale: es-es
 
 ---
 Visual SourceSafe

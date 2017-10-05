@@ -2,7 +2,6 @@
 title: R Tools para Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -102,7 +101,7 @@ Un archivo . Sí, puede usar cualquier sistema de control de código fuente que 
 
 Un archivo . La versión 1.0 de RTVS es solo en inglés. La versión 1.1 se traducirá al mismo conjunto de idiomas que Visual Studio. Mientras tanto, utilice el [paquete de idioma en inglés para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157) o, en Visual Studio 2017, ejecute el programa de instalación y seleccione Inglés en la pestaña **Paquetes de idioma**.
 
-![Configuración internacional para Visual Studio de 2017](~/rtvs/media/FAQ-international-settings.png)
+![Configuración internacional para Visual Studio de 2017](media/FAQ-international-settings.png)
 
 **P. ¿RTVS funciona con las ediciones de 32 bits de R?**
 

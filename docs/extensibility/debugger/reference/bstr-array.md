@@ -1,63 +1,80 @@
 ---
-title: "BSTR_ARRAY | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BSTR_ARRAY"
-helpviewer_keywords: 
-  - "Estructura BSTR_ARRAY"
+title: BSTR_ARRAY | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BSTR_ARRAY
+helpviewer_keywords:
+- BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# BSTR_ARRAY
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0e1d2b2228085505971102494522cdf9085d4a67
+ms.contentlocale: es-es
+ms.lasthandoff: 09/26/2017
 
+---
+# <a name="bstrarray"></a>BSTR_ARRAY
 Una estructura que describe una matriz de cadenas.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 typedef struct tagBSTR_ARRAY {  
-   DWORD dwCount;  
-   BSTR* Members;  
+   DWORD dwCount;  
+   BSTR* Members;  
 } BSTR_ARRAY;  
 ```  
   
-```c#  
+```csharp  
 struct BSTR_ARRAY {  
-   DWORD    dwCount;  
-   string[] Members;  
+   DWORD    dwCount;  
+   string[] Members;  
 }  
 ```  
   
-## términos  
+## <a name="terms"></a>Términos  
  dwCount  
- Número de cadenas en la matriz de `Members` .  
+ Número de cadenas en `Members` matriz.  
   
- Members  
+ Miembros  
  Matriz de cadenas.  
   
-## Comentarios  
- Esta estructura se devuelve del método de [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .  
+## <a name="remarks"></a>Comentarios  
+ Esta estructura se devuelve desde el [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.  
   
- \[C\+\+ sólo\] la cadena individual de Cada se debe liberar mediante `SysFreeString`, y la matriz de `Members` se debe liberar con `CoTaskMemFree`.  
+ [Solo en C++] Cada cadena individual debe liberarse mediante `SysFreeString`y el `Members` matriz debe ser liberarla con `CoTaskMemFree`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

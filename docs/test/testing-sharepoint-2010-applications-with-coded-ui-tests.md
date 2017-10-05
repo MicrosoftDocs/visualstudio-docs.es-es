@@ -31,7 +31,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 9364f111bc310b9d57bec88611b795ec22ee2ec7
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas

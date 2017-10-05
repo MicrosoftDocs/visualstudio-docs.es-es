@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
 ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
@@ -120,7 +120,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 3.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `Namespace`.  
   
-     En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**y establezca **tipo** a **CustomStorage** .  
+     En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**y establezca **tipo** a **CustomStorage **.  
   
 4.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `IsNamespaceTracking`.  
   
@@ -748,7 +748,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 4.  Arrastre un **ExampleElement** elemento desde el **cuadro de herramientas** a la superficie del diagrama.  
   
-5.  En el **propiedades** ventana para el elemento, seleccione la **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a  **OtherNamespace**.  
+5.  En el **propiedades** ventana para el elemento, seleccione la **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a ** OtherNamespace**.  
   
      Tenga en cuenta que el valor de **elemento Namespace** ahora se muestra en negrita.  
   
@@ -766,7 +766,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 9. Cambio **Default Namespace** para el diagrama de **DefaultNamespace** a **NewNamespace**.  
   
-     El **Namespace** de seguimiento que el primer elemento del **Default Namespace** propiedad, mientras que la **Namespace** del segundo elemento mantiene su valor actualizado de usuario de  **OtherNamespace**.  
+     El **Namespace** de seguimiento que el primer elemento del **Default Namespace** propiedad, mientras que la **Namespace** del segundo elemento mantiene su valor actualizado de usuario de ** OtherNamespace**.  
   
 10. Guarde la solución y, a continuación, cierre la compilación experimental.  
   
