@@ -1,36 +1,9 @@
 ---
-title: "UnInit | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# UnInit
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/uninit
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 2caa1cebaf419a41153d5e7f734ed062a246b26d
+ms.contentlocale: es-es
+ms.lasthandoff: 11/08/2017
 
-Finaliza el archivo de registro de gráficos, lo cierra y libera los recursos utilizados mientras la aplicación estaba grabando activamente información de gráficos.  
-  
-## Sintaxis  
-  
-```cpp  
-void UnInit();  
-```  
-  
-## Comentarios  
- Se llama automáticamente a `UnInit` cuando se destruye una instancia de la clase `VsgDbg`.  Si la instancia de `VsgDbg` no estaba grabando activamente información de gráficos, no tiene ningún efecto.  
-  
- Después de que se haya llamado a `UnInit` en una instancia de la clase `VsgDbg`, se puede crear un nuevo archivo de registro de gráficos llamando a `Init` y finalizarlo llamando a `UnInit`.  Se puede repetir tantas veces como se desee utilizar la misma instancia de `VsgDbg` para crear varios archivos de registro de gráficos independientes.  
-  
-## Vea también  
- [Init](../debugger/init.md)
+---

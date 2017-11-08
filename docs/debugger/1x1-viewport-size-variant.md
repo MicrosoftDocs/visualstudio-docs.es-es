@@ -1,42 +1,9 @@
 ---
-title: "1x1 Viewport (Variante de tama&#241;o) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 1x1 Viewport (Variante de tama&#241;o)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/1x1-viewport-size-variant
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 952dddcfa059e28e21f033c774d2844f7a6a0b6f
+ms.contentlocale: es-es
+ms.lasthandoff: 11/08/2017
 
-Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.  
-  
-## Interpretación  
- Una ventanilla más pequeña reduce el número de píxeles que deben sombrearse, pero no reduce el número de vértices que deben procesarse.  Establecer las dimensiones de la ventanilla a 1x1 píxeles elimina eficazmente el sombreado de píxeles de la aplicación.  
-  
- Si esta variante muestra un gran aumento del rendimiento, puede indicar que la aplicación consume demasiada tasa de relleno.  Esto puede indicar que la resolución que ha elegido es demasiado elevada para la plataforma de destino o que la aplicación invierte demasiado tiempo en sombrear píxeles que más adelante se sobrescriben \(sobredibujan\).  Este resultado sugiere que disminuir el tamaño del búfer de fotogramas o reducir la cantidad de sobredibujo mejorará el rendimiento de la aplicación.  
-  
-## Comentarios  
- Las dimensiones de la ventanilla se restablecen a 1x1 píxeles después de todas las llamadas a `ID3D11DeviceContext::OMSetRenderTargets` o `ID3D11DeviceContext::RSSetViewports`.  
-  
-## Ejemplo  
- Esta variante se puede reproducir con código como el siguiente:  
-  
-```  
-D3D11_VIEWPORT viewport;  
-viewport.TopLeftX = 0;  
-viewport.TopLeftY = 0;  
-viewport.Width = 1;  
-viewport.Height = 1;  
-d3d_context->RSSetViewports(1, &viewport);  
-```
+---
