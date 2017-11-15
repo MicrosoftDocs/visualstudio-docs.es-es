@@ -1,1 +1,1 @@
-Microsoft Edge con características JavaScript experimentales habilitadas \(about:flags\)
+Microsoft Edge con características JavaScript experimentales habilitadas (about:flags)
