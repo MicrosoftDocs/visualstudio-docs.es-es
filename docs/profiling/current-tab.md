@@ -1,30 +1,29 @@
 ---
-title: "Pesta&#241;a actual | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.reportnav.current"
-helpviewer_keywords: 
-  - "Visualizador de simultaneidad, pila de llamadas en el punto de selección"
+title: "Pestaña Actual | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.reportnav.current
+helpviewer_keywords: Concurrency Visualizer, Callstack at Selection Point
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 506a74699ba9f3cf059feb34b16d69af0150895a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a actual
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Al hacer clic en la pestaña **Actual**, se puede ver una pila de llamadas \(si está disponible\) que está más cerca del punto de selección actual en la línea de tiempo si se selecciona un segmento de un subproceso de la CPU.  En este caso, el punto de selección se representa mediante una flecha negra o un símbolo de intercalación, sobre la línea de tiempo.  Cuando se selecciona un segmento de bloqueo, no se muestra el símbolo de intercalación porque no ha habido ejecución.  Sin embargo, el segmento se mantiene resaltado y se muestra una pila de llamadas.  
+# <a name="current-tab"></a>Pestaña actual
+Si hace clic en la pestaña **Actual**, puede ver una pila de llamadas (si está disponible) que está más cerca del punto de selección actual en la escala de tiempo si se selecciona un segmento de subproceso de CPU.  En este caso, el punto de selección se representa mediante una flecha negra, o un símbolo de intercalación, sobre la escala de tiempo. Cuando se selecciona un segmento de bloqueo, el símbolo de intercalación no se muestra porque no se ha producido ninguna ejecución. Sin embargo, el segmento todavía está resaltado y se muestra una pila de llamadas.  
   
- La pestaña **Actual** también muestra información sobre segmentos de actividades de DirectX, los marcadores y el acceso de E\/S.  Para los segmentos de actividad de DirectX, se muestra información sobre la manera en que se procesan los paquetes de DMA en la cola de hardware.  Para los marcadores, se muestra información sobre la descripción y el tipo de marcador.  Para el acceso de E\/S, se muestra información sobre el archivo y el número de bytes leídos o escritos.  
+ En la pestaña **Actual** también se muestra información sobre los segmentos de actividad de DirectX, marcadores y acceso de E/S.  Para los segmentos de actividad de DirectX, se muestra información sobre la forma en que la cola de hardware procesa los paquetes DMA.  Para los marcadores, se muestra información sobre la descripción y el tipo de marcador.  Para el acceso de E/S, se muestra información sobre el archivo y el número de bytes leídos o escritos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

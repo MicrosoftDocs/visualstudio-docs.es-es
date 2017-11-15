@@ -1,11 +1,10 @@
 ---
 title: "Crear una IU con el Diseñador XAML en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/17/2017
+ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +13,15 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 20ffb34c3c9ac1d2842995c53332eb241337b769
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 0122714fa0c932a1fba849226e1200795ff20cfa
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.  

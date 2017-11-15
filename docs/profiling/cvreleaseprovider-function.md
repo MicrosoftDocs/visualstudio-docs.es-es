@@ -1,30 +1,29 @@
 ---
-title: "CvReleaseProvider (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvReleaseProvider"
-helpviewer_keywords: 
-  - "CvReleaseProvider (método)"
+title: "CvReleaseProvider (función) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvReleaseProvider
+helpviewer_keywords: CvReleaseProvider method
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6a6adcdd1be3b14ec4dbb9462ebddd82d9835e4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CvReleaseProvider (Funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Libera el proveedor del marcador.  Liberar el proveedor de marcador no afectará a la ejecución del marcador creado con anterioridad en este proveedor.  Las ejecuciones de marcador tienen que liberarse por separado por la llamada a CvReleaseMarkerSeries.  Un error al liberar el proveedor causa una pérdida de memoria.  
+# <a name="cvreleaseprovider-function"></a>CvReleaseProvider (Función)
+Libera el proveedor de marcadores. Liberar el proveedor de marcadores no afectará a la serie de marcadores de este proveedor creada anteriormente. La serie de marcadores debe liberarse por separado mediante la llamada de CvReleaseMarkerSeries. Si no se puede liberar el proveedor, se produce una pérdida de memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CvReleaseProvider(  
@@ -32,15 +31,15 @@ HRESULT CvReleaseProvider(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pProvider`  
- Contexto del proveedor  No puede ser NULL.  
+ Contexto de proveedor. No puede ser nulo.  
   
-## Valor devuelto  
- S\_OK cuando el proveedor se libera correctamente o un código de error en caso de que hubiera cualquier error.  Utilizar macros SUCCEEDED\/FAILED para comprobar si hay condición de error.  
+## <a name="return-value"></a>Valor devuelto  
+ S_OK cuando el proveedor se libera correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkers.h  
   
-## Vea también  
- [Referencia de la biblioteca C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)

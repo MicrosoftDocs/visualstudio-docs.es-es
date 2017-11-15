@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 77ee7d54dd265026b2bf4c9af52a71cccf9a7675
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="strict-mode-javascript"></a>Strict (Modo de JavaScript)
 El modo strict es una manera de introducir una mejor comprobación de errores en el código. Cuando se utiliza el modo strict, no se puede, por ejemplo, usar variables declaradas de forma implícita, asignar un valor a una propiedad de solo lectura o agregar una propiedad a un objeto que no es extensible. Las restricciones se indican en la sección [Restricciones del código en modo strict](../../javascript/advanced/strict-mode-javascript.md#rest), más adelante en este tema. Para obtener más información sobre el modo strict, consulte [ECMAScript Language Specification, 5th edition](http://www.ecma-international.org/publications/standards/Ecma-262.htm) (Especificación del lenguaje ECMAScript, Quinta edición).  

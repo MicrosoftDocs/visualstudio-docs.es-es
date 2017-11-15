@@ -4,36 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 14850bf6bf761060cd1e276d1bc38668d04f6b3c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2a93a2af3f3d89a4970a949b42bea79b3641d53f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, tal y como se describe en [Cómo: Crear y ejecutar una prueba unitaria](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  
@@ -215,4 +200,3 @@ namespace ClassLibrary2
 ## <a name="see-also"></a>Vea también  
  [Anatomía de una prueba unitaria](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-

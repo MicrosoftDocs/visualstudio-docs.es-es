@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fa34b3321d4b1b7e8f317d559583fb0bb75d97f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 23c5b56f5c3382b65ea06cb5e631ac2078cac42d
-ms.contentlocale: es-es
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabajar con diagramas de clases (Diseñador de clases)
 Con los diagramas de clases, es más fácil comprender la estructura de clases de los proyectos desarrollados por otras personas (o los que escribió hace mucho tiempo). Puede utilizarlos para personalizar, compartir y presentar información de proyectos con otros usuarios.  
@@ -54,7 +38,7 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 >  El Diseñador de clases no realiza un seguimiento de la ubicación de los archivos de origen, por lo que cambiar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el Diseñador de clases pierda de vista el tipo, especialmente el tipo de origen de una typedef, de clases base o de tipos de asociación. Puede que reciba un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+ [Cómo: Agregar diagramas de clase a proyectos (Diseñador de clases)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  Describe cómo agregar diagramas de clases a los proyectos.  
   

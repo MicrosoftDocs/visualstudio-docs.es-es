@@ -1,85 +1,85 @@
 ---
-title: "C&#243;mo: Configurar la reducci&#243;n de ruido en las vistas de informes de las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.noisereduction.dialog"
-helpviewer_keywords: 
-  - "herramientas de generación de perfiles, recortes"
-  - "herramientas de generación de perfiles, reducción de ruido de informes"
-  - "herramientas de generación de perfiles, plegamiento"
+title: "Cómo: Configurar la reducción de ruido en las vistas de informes | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.noisereduction.dialog
+helpviewer_keywords:
+- profiling tools, trimming
+- profiling tools, report noise reduction
+- profiling tools, folding
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b1cda2b61c50deb98752063f9606849356386a84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Configurar la reducci&#243;n de ruido en las vistas de informes de las herramientas de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Los informes de rendimiento se pueden configurar para la reducción de ruido limitando la cantidad de datos que se presentan en las vistas Árbol de llamadas y Asignación.  Al utilizar la reducción de ruido, los problemas de rendimiento destacan más.  Esto le servirá de ayuda al analizar los informes de rendimiento.  
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
+Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.  
   
- Las opciones de configuración de la reducción de ruido incluyen las siguientes:  
+ Las opciones de configuración de reducción de ruido incluyen:  
   
--   **Reducción**: cuando se analiza un informe, la vista omite las funciones comprendidas en la configuración de valores y de umbral que haya establecido, tal como se describe en el procedimiento de reducción que figura a continuación.  La opción de reducción está habilitada de forma predeterminada.  
+-   **Recorte** Cuando se analice un informe, la vista omitirá las funciones que se encuentran en la configuración de valor y umbral que ha establecido, como se describe en el siguiente procedimiento de recorte. De forma predeterminada, Recorte está habilitado.  
   
--   **Plegamiento**: si habilita el plegamiento, las funciones consecutivas en una ruta de acceso que cumplan los valores que haya configurado se combinarán como se describe en el procedimiento de plegamiento que figura a continuación.  De forma predeterminada, el plegamiento está habilitado.  
+-   **Plegado** Si habilita el plegado, se combinarán las funciones consecutivas en una ruta de acceso que cumplen la configuración que ha establecido, como se describe en el siguiente procedimiento de plegado. De forma predeterminada, el plegado está habilitado.  
   
-### Para configurar la reducción de un informe de rendimiento  
+### <a name="to-configure-trimming-for-a-performance-report"></a>Para configurar el recorte de un informe de rendimiento  
   
-1.  Con la vista Árbol de llamadas o Asignación abierta en el informe generado, en el menú **Desarrollador**, haga clic en **Generador de perfiles** y, a continuación, haga clic en **Opciones de reducción de ruido**.  
+1.  Cuando una vista Árbol de llamadas o Asignación se muestra en el informe generado, en el menú **Desarrollador** haga clic en **Generador de perfiles** y después en **Opciones de reducción de ruido**.  
   
      Aparece el cuadro de diálogo **Reducción de ruido**.  
   
-2.  Para habilitar reducción, siga estos pasos:  
+2.  Para habilitar el recorte debe seguir estos pasos:  
   
-    1.  Seleccione **Habilitar reducción**.  Ésta es la configuración predeterminada.  
+    1.  Seleccione **Habilitar recorte**. Ésta es la configuración predeterminada.  
   
         > [!NOTE]
-        >  Si está habilitada la reducción de ruido, se mostrará una barra de información en el informe.  Para obtener más información, vea [Vista Árbol de llamadas](../profiling/call-tree-view.md) y [Asignaciones \(Vista\)](../profiling/dotnet-memory-allocations-view.md).  
+        >  Si está habilitada la reducción de ruido, se mostrará una barra de información en el informe. Para obtener más información, consulte [Vista Árbol de llamadas](../profiling/call-tree-view.md) y [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md).  
   
-    2.  Para configurar el valor, utilice la lista desplegable **Valor** y elija el valor aplicable.  
+    2.  Configure el valor con la lista desplegable **Valor**; elija el valor aplicable.  
   
-    3.  Para configurar el valor de umbral deseado, escriba un valor de porcentaje en el cuadro de texto **Umbral**.  
+    3.  Configure el valor de umbral deseado escribiendo un valor de porcentaje en el cuadro de texto **Umbral**.  
   
-    4.  Para habilitar la advertencia de reducción de ruido en el informe generado, seleccione **Mostrar advertencia cuando la reducción de ruido está habilitada**.  Ésta es la configuración predeterminada.  
+    4.  Para habilitar la advertencia de reducción de ruido en el informe generado, seleccione **Mostrar advertencia cuando se habilita la reducción de ruido**. Ésta es la configuración predeterminada.  
   
-3.  Para deshabilitar la reducción, desactive **Habilitar reducción**.  
+3.  Para deshabilitar el recorte, desactive **Habilitar recorte**.  
   
 4.  Haga clic en **Aceptar**.  
   
-### Para configurar el plegamiento de un informe de rendimiento  
+### <a name="to-configure-folding-for-a-performance-report"></a>Para configurar el plegado de un informe de rendimiento  
   
-1.  En el menú **Desarrollador**, haga clic en **Generador de perfiles** y, a continuación, haga clic en **Opciones de reducción de ruido**.  
+1.  En el menú **Desarrollador**, haga clic en **Generador de perfiles** y después en **Opciones de reducción de ruido**.  
   
      Aparece el cuadro de diálogo **Reducción de ruido**.  
   
-2.  Para habilitar el plegamiento, siga estos pasos:  
+2.  Para habilitar el plegado debe seguir estos pasos:  
   
-    1.  Seleccione **Habilitar plegamiento**.  Ésta es la configuración predeterminada.  
+    1.  Seleccione **Habilitar plegamiento**. Ésta es la configuración predeterminada.  
   
         > [!NOTE]
-        >  Si está habilitada la reducción de ruido, se mostrará una barra de información en el informe.  Para obtener más información, vea [Vista Árbol de llamadas](../profiling/call-tree-view.md) y [Asignaciones \(Vista\)](../profiling/dotnet-memory-allocations-view.md).  
+        >  Si está habilitada la reducción de ruido, se mostrará una barra de información en el informe. Para obtener más información, consulte [Vista Árbol de llamadas](../profiling/call-tree-view.md) y [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md).  
   
-    2.  Para configurar el valor, utilice la lista desplegable **Valor** y elija el valor aplicable.  
+    2.  Configure el valor con la lista desplegable **Valor**; seleccione el valor aplicable.  
   
-    3.  Para configurar el valor de umbral deseado, escriba un valor de porcentaje en el cuadro de texto **Umbral**.  
+    3.  Configure el valor de umbral deseado escribiendo un valor de porcentaje en el cuadro de texto **Umbral**.  
   
-    4.  Para habilitar la advertencia de reducción de ruido en el informe generado, seleccione **Mostrar advertencia cuando la reducción de ruido está habilitada**.  Ésta es la configuración predeterminada.  
+    4.  Para habilitar la advertencia de reducción de ruido en el informe generado, seleccione **Mostrar advertencia cuando se habilita la reducción de ruido**. Ésta es la configuración predeterminada.  
   
-3.  Para deshabilitar el doblado, desactive **Habilitar plegamiento**.  
+3.  Para deshabilitar el plegado, desactive **Habilitar plegado**.  
   
 4.  Haga clic en **Aceptar**.  
   
-## Vea también  
- [Personalizar las vistas de los informes de las Herramientas de generación de perfiles](../profiling/customizing-performance-tools-report-views.md)   
- [Cómo: Excluir o incluir funciones cortas en la instrumentación](../Topic/How%20to:%20Exclude%20or%20Include%20Short%20Functions%20from%20Instrumentation.md)   
+## <a name="see-also"></a>Vea también  
+ [Personalizar las vistas de Informes de las Herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)   
+ [Cómo: Excluir o incluir funciones cortas en la instrumentación](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view.md)   
- [Asignaciones \(Vista\)](../profiling/dotnet-memory-allocations-view.md)
+ [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)

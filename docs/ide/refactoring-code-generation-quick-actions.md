@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 03/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: 59ed01aa24468dd7b08a10389f91580321fe9b82
-ms.contentlocale: es-es
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: 7d987cc154f912b8b93bd79365ef3939da1e0457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refactorización, generación de código y acciones rápidas en Visual Studio
 Visual Studio proporciona diversas herramientas para ayudarle a escribir código.  Dado que la funcionalidad de estas herramientas está estrechamente relacionada con la sintaxis del lenguaje, cada servicio de lenguaje de Visual Studio proporciona sus propias funciones.
@@ -60,5 +44,4 @@ Las acciones rápidas le permiten refactorizar, generar o modificar el código d
 ## <a name="see-also"></a>Vea también  
 [IDE de Visual Studio](../ide/visual-studio-ide.md)   
 [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)  
-
 

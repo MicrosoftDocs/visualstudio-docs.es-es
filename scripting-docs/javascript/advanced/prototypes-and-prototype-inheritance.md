@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
 ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototipos y herencia de prototipos
 En JavaScript, `prototype` es una propiedad de funciones, y de objetos creados por las funciones constructoras. El prototipo de una función es un objeto. Se usa principalmente cuando se utiliza una función como constructor.  
@@ -114,4 +112,3 @@ if (console && console.log) {
     console.log(player.ally === "Tom");             // Returns true  
 }  
 ```
-

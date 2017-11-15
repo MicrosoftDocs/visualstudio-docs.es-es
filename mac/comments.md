@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: cb44dc755721f6095c9a07ad3e6fec1f6849e149
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="comments"></a>Comentarios
 
 Al depurar o experimentar con código, puede ser útil comentar bloques de código de forma temporal o a largo plazo. 
@@ -47,4 +45,3 @@ Los comentarios también son útiles para documentar el código para los desarro
   comment in F#
 *)
 ```
-

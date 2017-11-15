@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Function view
+helpviewer_keywords: Function view
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2d2edf2dfc1194fa28ec99e9cbe2c500ec69859f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 582ec23192001b262938a82b9867ae82805e0cab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="functions-view---instrumentation-data"></a>Vista Funciones: datos de instrumentación
 En la vista del informe de funciones se enumeran los datos de generación de perfiles por nombre de la función.  

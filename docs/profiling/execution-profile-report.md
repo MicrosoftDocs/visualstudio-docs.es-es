@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.threads.report.execution
-helpviewer_keywords:
-- Concurrency Visualizer, Execution Profile Report
+f1_keywords: vs.cv.threads.report.execution
+helpviewer_keywords: Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36ecfc56c76d1f5c5bf2ce7188d0520a5e63ade7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bdf0605f635fd1cc07e04bcb848bc83f92d2d8c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="execution-profile-report"></a>Informe del perfil de ejecución
 El informe del perfil de ejecución es un perfil de muestreo tradicional. Se toman muestras aproximadamente cada milisegundo durante los períodos cuando un subproceso se está ejecutando en un núcleo lógico, y el visualizador de simultaneidad intercala el conjunto acumulado de pilas de muestras para generar un árbol de llamadas típico. Los datos de esta tabla pueden verse afectados por el intervalo de tiempo actual y los subprocesos ocultos, así como por estos filtros que se pueden aplicar:  

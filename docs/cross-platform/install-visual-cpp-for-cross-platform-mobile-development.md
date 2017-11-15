@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 15
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "15"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d284309b0243f8d551d06c53d50d5df5de8f3f3c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
+# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar Visual C++ para el desarrollo móvil multiplataforma
 [Visual C++ para el desarrollo móvil multiplataforma](http://go.microsoft.com/fwlink/p/?LinkId=536383) es un componente opcional instalable incluido en Visual Studio 2015. Incluye plantillas de Visual Studio de varias plataformas e instala las herramientas de desarrollo multiplataforma y SDK que permiten comenzar a usarlos sin tener que buscarlos, descargarlos y configurarlos usted mismo. Puede usar estas herramientas en Visual Studio para crear, editar, depurar y probar proyectos para varias plataformas de manera sencilla. Este tema describe cómo instalar las herramientas y los software de terceros necesarios para desarrollar aplicaciones multiplataforma con Visual Studio. Para obtener información general del componente, vea [Desarrollo móvil multiplataforma de Visual Studio C++](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Requisitos](#Requirements)   

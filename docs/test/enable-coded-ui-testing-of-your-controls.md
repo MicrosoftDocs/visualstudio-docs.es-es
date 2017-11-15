@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: 22
+caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 00f7cd1d45bca63387acc7f38b39b1cb51b4b2be
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
 Para probar los controles con mayor facilidad, implemente compatibilidad con el marco de pruebas de IU codificadas. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, pueden admitirse la grabación, la reproducción y la validación de propiedades. Puede basarse en ello para permitir que el generador de pruebas de IU codificadas reconozca las propiedades personalizadas del control y proporcione clases personalizadas para obtener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.  
@@ -238,4 +222,3 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
 ## <a name="see-also"></a>Vea también  
  <xref:System.Windows.Forms.AccessibleObject>   
  [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-

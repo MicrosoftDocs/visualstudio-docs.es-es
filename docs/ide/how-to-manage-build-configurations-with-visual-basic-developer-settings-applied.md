@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,30 +16,15 @@ helpviewer_keywords:
 - MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 782d860d94cd9e7d4967076a5ea0d3fe86b29400
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 3e61fb6667c16fd75cef78fbcaa835b97603dbe5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 De manera predeterminada, todas las opciones de configuración de compilación avanzadas están ocultas con las opciones del desarrollador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aplicadas. En este tema se explica cómo habilitar manualmente estas opciones.  

@@ -5,23 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JavaScript, Windows Runtime API
+helpviewer_keywords: JavaScript, Windows Runtime API
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
 ms.openlocfilehash: 693b3dac9def5533417638c3ec1c0de8db1d5fe3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="considerations-when-using-the-windows-runtime-api"></a>Consideraciones al usar la API de Windows Runtime
 Puede usar casi todos los elementos de la API de Windows Runtime en JavaScript. Sin embargo, hay algunos aspectos de la representación de JavaScript de elementos de Windows Runtime que se deben tener en cuenta.  

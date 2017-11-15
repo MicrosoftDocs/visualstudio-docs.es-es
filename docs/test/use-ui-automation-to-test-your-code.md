@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,30 +17,14 @@ helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
 ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
-caps.latest.revision: 85
+caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 745908c5c5f8f4844ea6bbe80111bb32bf4dbac3
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 Las pruebas automatizadas que controlan la aplicación a través de la interfaz de usuario se conocen como *pruebas de IU codificadas* (CUIT). Estas pruebas incluyen unas pruebas funcionales de los controles de la interfaz de usuario. Permiten comprobar si toda la aplicación, incluida la interfaz de usuario, funciona correctamente. Las pruebas de IU codificadas son especialmente útiles donde haya una validación o cualquier otra lógica en la interfaz de usuario, por ejemplo, en una página web. También se suelen usar para automatizar una prueba manual existente.  
@@ -511,4 +494,3 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Actualizar pruebas de IU codificadas desde Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)   
  [Generar una prueba de IU codificada a partir de la grabación de acciones existente](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
-

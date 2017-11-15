@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicaciones web grabando las pruebas con Internet Explorer. Después, puede personalizar la prueba y reproducirla de nuevo en Internet Explorer u otros tipos de exploradores para estas aplicaciones web.  
@@ -117,17 +101,17 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  *¿Qué más debería saber?*  
  **Notas**  
   
--   ![Requisito previo](~/test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
   
--   ![Requisito previo](~/test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
   
      Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.  
   
--   ![Requisito previo](~/test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
   
  **Sugerencias**  
   
--   ![Sugerencia](~/test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
+-   ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
@@ -171,4 +155,3 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Analizar pruebas de IU codificadas mediante los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-

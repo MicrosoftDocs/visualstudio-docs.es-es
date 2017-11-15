@@ -1,66 +1,67 @@
 ---
-title: "C&#243;mo: Crear un sombreador Lambert b&#225;sico | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: Crear un sombreador Lambert básico | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-caps.latest.revision: 20
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b2852c673f00234629450803d1c5d860c8646cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Crear un sombreador Lambert b&#225;sico
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL \(Directed Graph Shader Language\) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.  
+# <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
+En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.  
   
- En este documento se muestran estas actividades:  
+ Este documento muestra estas actividades:  
   
--   Nodos a un gráfico de presentación  
+-   Agregar nodos a un gráfico de sombreador  
   
--   Desconectarse de nodos  
+-   Desconectar nodos  
   
 -   Conectar nodos  
   
-## El modelo de iluminación de Lambert  
- El modelo de iluminación de Lambert incorpora iluminación ambiental y direccional para sombrear objetos en una escena 3D.  Los componentes de ambiente proporcionan un nivel de iluminación base en la escena 3D.  Los componentes direccionales proporcionan iluminación adicional \(medida\) de fuentes de luz direccionales.  La iluminación ambiente afecta a todas las superficies de la escena igualmente, sin importar su orientación.  Para una superficie determinada, es un producto de color ambiente de la superficie y el color y la intensidad de iluminación ambiente en la escena.  La iluminación direccional afecta a cada superficie en la escena de manera diferente, en función de la orientación de la superficie con respecto a la dirección de la fuente de luz.  Es un producto de color y la guía difusos de la superficie, y el color, la intensidad, y la dirección de luz.  Las superficies que miran directamente hacia la fuente de luz reciben la máxima contribución y las superficies que miran directamente al otro lado no reciben ninguna contribución.  Bajo el modelo de iluminación de Lamberto, combinan el componente ambiente y uno o más componentes direccionales para determinar la contribución de color difusa total para cada punto del objeto.  
+## <a name="the-lambert-lighting-model"></a>El modelo de iluminación de Lambert  
+ El modelo de iluminación de Lambert incorpora iluminación ambiental y direccional para sombrear objetos en una escena 3D. Los componentes ambientales proporcionan un nivel de iluminación base en la escena 3D. Los componentes direccionales proporcionan iluminación adicional de fuentes de luz direccionales (lejanas). La iluminación ambiental afecta a todas las superficies de la escena igualmente, sin importar su orientación. Para una superficie determinada, es el producto del color de ambiente de la superficie y del color y la intensidad de la luz ambiental en la escena. La iluminación direccional afecta a cada superficie de la escena de manera diferente, en función de la orientación de la superficie con respecto a la dirección de la fuente de luz. Es un producto del color difuso y la orientación de la superficie, y del color, la intensidad y la dirección de las fuentes de luz. Las superficies que miran directamente hacia la fuente de luz reciben la máxima contribución y las superficies que miran directamente al otro lado no reciben ninguna contribución. Bajo el modelo de iluminación de Lambert, se combinan el componente ambiental y uno o más componentes direccionales para determinar la contribución de color difuso total para cada punto del objeto.  
   
  Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.  
   
-#### Para crear un sombreador Lambert  
+#### <a name="to-create-a-lambert-shader"></a>Para crear un sombreador Lambert básico  
   
-1.  Cree un sombreador DGSL con el que trabajar.  Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).  
+1.  Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).  
   
-2.  Desconecte el nodo de **Color de punto** de nodo de **Color final** .  Elija el terminal de **RGB** de nodo de **Color de punto** , y elija **Romper vínculos**.  Deje el terminal de **Alfa** conectado.  
+2.  Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Deje el terminal **Alfa** conectado.  
   
-3.  Agregue un nodo de **Lamberto** al gráfico.  En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Lambert** y muévalo a la superficie de diseño.  El nodo de Lamberto calcula la contribución de color difusa total de píxel, en función de parámetros ambiente y difusos de iluminación.  
+3.  Agregue un nodo **Lambert** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Lambert** y muévalo a la superficie de diseño. El nodo Lambert calcula la contribución de color difuso total del píxel, en función de parámetros de iluminación ambiente y difusa.  
   
-4.  Conectar el nodo de **Color de punto** al nodo de **Lambert** .  En el modo de **activada** , mueva el terminal de **RGB** de nodo de **Color de punto** el terminal de **Color difuso** de nodo de **Lambert** .  Esta conexión proporciona el nodo de Lamberto con un color difuso interpolado de píxeles.  
+4.  Conecte el nodo **Color de punto** al nodo **Lambert**. En modo **Seleccionar**, mueva el terminal **RGB** del nodo **Color de punto** al terminal **Color difuso** del nodo **Lambert**. Esta conexión proporciona al nodo Lambert el color difuso interpolado del píxel.  
   
-5.  Conectar el valor de color calculado al color final.  Mueva el terminal de **salida** de nodo de **Lambert** el terminal de **RGB** de nodo de **Color final** .  
+5.  Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Lambert** al terminal **RGB** del nodo **Color final**.  
   
- La siguiente ilustración muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.  
+ La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.  
   
 > [!NOTE]
->  Para ilustrar mejor el efecto de presentación en esta ilustración, color naranja se ha especificado mediante el parámetro de **MaterialDiffuse** de presentación.  Un juego o una aplicación puede utilizar este parámetro para proporcionar un valor de color único para cada objeto.  Para obtener información sobre parámetros materiales, vea la sección sobre los sombreadores previewing de en [Diseñador de sombras](../designers/shader-designer.md).  
+>  Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador. Un juego o una aplicación puede usar este parámetro para proporcionar un valor de color único para cada objeto. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).  
   
- ![Gráfico de sombreador y vista previa de su efecto.](../designers/media/digit-lambert-effect-graph.png "Digit\-Lambert\-Effect\-Graph")  
+ ![Gráfico de sombreador y vista previa de su efecto.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
- Algunas formas podrían dar mejores vistas previas para algunos los sombreadores.  Para obtener más información sobre cómo obtener una vista previa de los sombreadores del Sombreador Designer, vea la sección de los sombreadores previewing de en [Diseñador de sombras](../designers/shader-designer.md).  
+ Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).  
   
  La siguiente ilustración muestra el sombreador descrito en este documento aplicado a un modelo 3D.  
   
- ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png "Digit\-Lambert\-Effect\-Result")  
+ ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- Para obtener más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
  [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   

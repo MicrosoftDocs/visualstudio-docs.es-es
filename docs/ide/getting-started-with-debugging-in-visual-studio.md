@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 5
-author: kempb
-ms.author: kempb
+caps.latest.revision: "5"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: fa857220def2da9b05f1bbed70e906034727b8af
-ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 82bce617eec0f5038499a2eed370efa33d817e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-debugging-in-visual-studio"></a>Introducción a la depuración en Visual Studio
 Visual Studio proporciona un conjunto integrado y eficaz de herramientas de compilación y depuración de proyectos. En este tema verá cómo empezar a usar el conjunto más básico de características de depuración de la interfaz de usuario.  
@@ -210,4 +194,3 @@ Visual Studio proporciona un conjunto integrado y eficaz de herramientas de comp
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-

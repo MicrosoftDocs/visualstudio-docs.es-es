@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
 Visual Studio para Mac ofrece tres maneras de agregar referencias adicionales a un proyecto:
@@ -44,4 +42,3 @@ NuGet es el administrador de paquetes más popular para el desarrollo de .NET. L
 Para ello, haga clic con el botón derecho en la carpeta **Paquete** en el Panel de la solución y seleccione Agregar paquetes.
 
 En el tutorial [Including a NuGet package in your Project](~/nuget-walkthrough.md) (Incluir un paquete NuGet en el proyecto) se proporciona más información sobre el uso de un paquete NuGet.
-

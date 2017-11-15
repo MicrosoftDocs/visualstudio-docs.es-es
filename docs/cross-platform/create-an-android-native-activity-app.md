@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-caps.latest.revision: 3
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "3"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 4d970c4b028981760d74ec797b87aeae07853fc4
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bf42c5b05ec68546bee938746f3e3b774303e5fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="create-an-android-native-activity-app"></a>Crear una aplicación de Android Native Activity
 Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataforma, Visual Studio 2015 puede usarse para crear aplicaciones de Android Native Activity completamente funcionales. El kit de desarrollo nativo (NDK) de Android es un conjunto de herramientas que le permite implementar la mayor parte de su aplicación para Android mediante código de C/C++ puro. El código Java JNI actúa como adherencia para permitir que el código C/C++ interactúe con Android. El NDK de Android introdujo la capacidad para crear aplicaciones Native Activity con la API de Android Level 9. El código Native Activity se usa para crear aplicaciones de juegos y gráficos avanzados que usan Unreal Engine u OpenGL. Este tema le guiará en el proceso de creación de una aplicación Native Activity sencilla que usa OpenGL. Existen temas adicionales que abordan el ciclo de vida de desarrollador al completo incluida la edición, la compilación, la depuración y la implementación de código Native Activity.  
@@ -93,7 +75,7 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
      Este es el aspecto de la aplicación predeterminada en el emulador de Visual Studio para Android.  
   
-     ![El emulador ejecutando la aplicación](~/cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
+     ![El emulador ejecutando la aplicación](../cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
   
      Visual Studio inicia el emulador, que tarda unos segundos en cargarse e implementar el código. Cuando la aplicación se inicia, puede establecer puntos de interrupción y usar el depurador para ver el código, examinar los locales e inspeccionar los valores.  
   

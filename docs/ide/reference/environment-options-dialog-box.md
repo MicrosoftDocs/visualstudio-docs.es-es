@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: bd21586ad9dab89c2146a8061271d8642529adf9
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 6d6d7f0bc3d55e59fec506d6387f0f6254300ee8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.  

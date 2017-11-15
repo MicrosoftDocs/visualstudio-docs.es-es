@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 89ce216f1273678adf9b97ff789c7d48f3130d77
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>Configurar advertencias en Visual Basic
 El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye un conjunto de advertencias sobre código susceptible de provocar errores en tiempo de ejecución. Puede usar esa información para escribir un código mejor, más limpio y rápido con menos errores. Por ejemplo, el compilador generará una advertencia cuando el usuario intente invocar un miembro de una variable de objeto sin asignar, volver de una función sin establecer el valor devuelto, o ejecutar un bloque `Try` con errores en la lógica para detectar excepciones.  
   
  En ocasiones, el compilador proporciona lógica adicional en nombre del usuario para que este pueda centrarse en la tarea en cuestión, en lugar de anticipar posibles errores. En versiones anteriores de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `Option Strict` se usaba para limitar la lógica adicional que proporciona el compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Configurar advertencias le permite limitar esta lógica de una forma más pormenorizada, en el nivel de las advertencias individuales.  

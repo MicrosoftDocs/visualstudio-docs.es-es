@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.RoamingSettings
+f1_keywords: VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 1882e191caa027e7a6e2b52c766135b240b309a1
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Sincronizar la configuración de Visual Studio
 
@@ -87,4 +70,3 @@ En Visual Studio 15.3 y versiones posteriores, hemos dejado de compartir determi
 ## <a name="see-also"></a>Vea también
 
 [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
-

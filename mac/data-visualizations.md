@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="data-visualizations"></a>Visualizaciones de datos
 
 Visual Studio para Mac incluye compatibilidad de la interfaz de usuario con el depurador, lo que permite visualizar los valores de una variable, un campo o una propiedad durante la depuración. Estos visualizadores de datos muestran una versión extendida de los datos y permiten a los desarrolladores inspeccionar estructuras conocidas, por ejemplo para mostrar el color de una estructura de color.
@@ -106,4 +104,3 @@ A continuación se indican otros tipos que también tienen sus propios visualiza
     *   Muestra un hipervínculo interactivo.
 *   **IntPtr**
     *   Muestra una representación hexadecimal de IntPtr.
-

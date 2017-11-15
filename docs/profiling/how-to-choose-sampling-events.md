@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.sampling
+f1_keywords: vs.performance.property.sampling
 helpviewer_keywords:
 - clock cycles sample event
 - sample events, choosing
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - performance counter sample event
 - performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c5c031c5eb857e95af97a92500327088665e364d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4903a3c8373c0ce9c6119176649ba793caf27c27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  

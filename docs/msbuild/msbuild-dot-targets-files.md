@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,30 +16,15 @@ helpviewer_keywords:
 - .Targets files
 - MSBuild, .Targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
-ms.openlocfilehash: e212fafb9eaf7891ff75084d4d5dd8b492718049
-ms.contentlocale: es-es
-ms.lasthandoff: 06/15/2017
-
+ms.openlocfilehash: 0811a2f32ae9834c1141265a936e67c6a04adbcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-targets-files"></a>Archivos .Targets de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye varios archivos .targets que contienen elementos, propiedades, destinos y tareas para escenarios comunes. Estos archivos se importan automáticamente en la mayoría de los archivos del proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para simplificar el mantenimiento y la legibilidad.  
@@ -67,4 +51,3 @@ Directory.Build.targets es un archivo definido por el usuario que proporciona pe
  [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](../msbuild/msbuild.md)
-

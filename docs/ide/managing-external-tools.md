@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.externaltools
+f1_keywords: vs.externaltools
 helpviewer_keywords:
 - Create GUID tool
 - RC (Resource Compiler)
@@ -57,30 +55,15 @@ helpviewer_keywords:
 - Help Workshop
 - Resource Compiler
 ms.assetid: f382fd40-a98f-4934-8c9a-5aeae881acde
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 1d273749cc41eb975dc9f93329edf9a57aaae09a
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 9829887a28ec2e672999732e38604f3d9d6fea9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 Se puede llamar a herramientas externas desde Visual Studio mediante el menú **Herramientas**. Algunas herramientas predeterminadas están disponibles en el menú **Herramientas**, pero se pueden agregar otros archivos ejecutables propios.  
@@ -129,4 +112,3 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 
 ## <a name="see-also"></a>Vea también  
  [Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)
-

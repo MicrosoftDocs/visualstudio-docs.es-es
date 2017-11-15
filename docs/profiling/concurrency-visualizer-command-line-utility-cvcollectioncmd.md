@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.performance.cvcollectioncmd
+f1_keywords: vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: f219ae7937ea3810b58faa34f6320a627ede99ae
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: c23bc80fff6bf088d10c788b92a52b1c43fc5db9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Visualizador de simultaneidad para recopilar seguimientos de la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.  
@@ -170,4 +152,3 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 </LocalConfig>  
   
 ```
-

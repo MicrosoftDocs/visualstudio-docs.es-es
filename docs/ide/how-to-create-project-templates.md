@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ExportTemplateWizard
+f1_keywords: VS.ExportTemplateWizard
 helpviewer_keywords:
 - Visual Studio templates, creating project templates
 - project templates, metadata files
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - project templates, custom template locations
 - project templates, creating
 ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 279a123088308a54dccfa9abe0bfbcdb18e5aaf1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-project-templates"></a>Cómo: Crear plantillas de proyectos
 Este procedimiento le permite crear una plantilla con el Asistente **Exportar plantilla**, que empaqueta su plantilla en un archivo .zip. También puede crear plantillas en el formato de archivo VSIX para obtener una implementación mejorada con la extensión del Asistente Exportar plantilla, o con las plantillas que se incluyen en [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)], o puede crear plantillas manualmente.  
@@ -75,4 +58,3 @@ Este procedimiento le permite crear una plantilla con el Asistente **Exportar pl
 ## <a name="see-also"></a>Vea también  
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
-

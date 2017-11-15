@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0ab82e9962871d6dd5da724a7a72677c387e9a53
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control **Temporizador** al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.  
@@ -51,7 +35,8 @@ Temporizador
   
 3.  Pulse el icono del control de temporizador en el Diseñador de Windows Forms y pulse la tecla ENTRAR, o haga doble clic en el temporizador, para agregar un controlador de eventos **Tic** vacío. Reemplace el código por el código siguiente o escriba manualmente el código siguiente en el controlador de eventos.  
   
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]  [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
+     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
      El controlador de eventos Tick realiza tres acciones: primero, se asegura de que el temporizador no está en marcha mediante una llamada al método `Stop()`. A continuación, usa las dos variables de referencia, `firstClicked` y `secondClicked`, para ocultar de nuevo los iconos de las dos etiquetas que el jugador eligió. Finalmente, restablece las variables de referencia `firstClicked` y `secondClicked` en `null` en Visual C# y `Nothing` en Visual Basic. Este paso es importante porque es como se restablece el programa. Ahora no realiza el seguimiento de ningún control `Label` y vuelve a estar listo para que el jugador elija otra etiqueta.  
   
@@ -60,7 +45,8 @@ Temporizador
   
 4.  Para ver el nuevo temporizador en acción, vaya al editor de código y agregue el siguiente código al principio y al final del método de control de eventos `label_Click()`. (Se agrega una instrucción `if` al principio y tres instrucciones al final; el resto del método no cambia).  
   
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]  [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
+     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
      El código que se encuentra al principio del método comprueba si el temporizador se ha iniciado comprobando el valor de la propiedad **Enabled**. Así, si el jugador elige el primer y segundo control `Label` y se inicia el temporizador, no sucederá nada al elegir un tercer control.  
   

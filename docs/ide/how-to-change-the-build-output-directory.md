@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- output directory, changing
+helpviewer_keywords: output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 14be502abb42d6bb9637e7394ec8bf20b50c4231
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ccbb32b9fd035a9058812eb5a3df306ff629086f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Cómo: Cambiar el directorio de resultados de compilación
 Puede especificar la ubicación de salida por configuración (para debug, release o ambos) generada por el proyecto.  

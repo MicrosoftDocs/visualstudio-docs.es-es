@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - task batching [MSBuild]
 - MSBuild, task batching
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: e397b2d32ab76c7ef65536df51df875f7b8a67a1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: daa41beb487020dcaeccba692ace97b057a6b3ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.  

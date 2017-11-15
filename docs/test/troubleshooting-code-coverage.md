@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: c435bb9e490e9a3c59de78f383632552c0ca4641
-ms.contentlocale: es-es
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>Solucionar problemas de cobertura de código
 La herramienta de análisis de cobertura de código de Visual Studio recopila datos para ensamblados nativos y administrados (archivos .dll o .exe). Sin embargo, en algunos casos, la ventana de resultados de cobertura de código muestra un error similar a “Resultados vacíos generados:….” Hay varias razones posibles por las que esto puede suceder. Este tema está diseñado para ayudar a resolver esos problemas.  
@@ -163,4 +147,3 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
   
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-

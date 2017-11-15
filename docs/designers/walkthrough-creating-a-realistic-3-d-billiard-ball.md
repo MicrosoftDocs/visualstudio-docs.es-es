@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-caps.latest.revision: 9
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e6ee75cded8cefe4f2e46c4e53edd0f050273a5d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Tutorial: Crear una bola de billar 3D realista
 En este tutorial se muestra cómo crear una bola de billar 3D realista mediante el Diseñador de sombras y el Editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. La apariencia 3D de la bola de billar se logra combinando varias técnicas de sombreador con los recursos apropiados de textura.  
@@ -67,11 +65,11 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
      La textura debe ser similar a esta:  
   
-     ![Textura de la bola de billar](~/designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+     ![Textura de la bola de billar](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
 4.  Opcionalmente, puede que quiera reducir los requisitos de almacenamiento de esta textura. Puede hacerlo reduciendo el ancho de la textura para que coincida con el alto. Esto comprime la textura a lo largo de su ancho, pero debido a la manera en que la textura se asigna a la esfera, se expandirá cuando se represente la bola de billar. Después de cambiar el tamaño, la textura debe ser similar a esta:  
   
-     ![Textura de la bola de billar comprimida en un cuadrado](~/designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+     ![Textura de la bola de billar comprimida en un cuadrado](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
  Ahora puede crear un sombreador que aplique esta textura al modelo.  
   
@@ -93,7 +91,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
  Ahora, la bola de billar debe tener un aspecto similar a este:  
   
- ![Un primer plano de la bola de billar con textura](~/designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
+ ![Un primer plano de la bola de billar con textura](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>Crear profundidad con el modelo de iluminación Lambert  
  Hasta ahora, ha creado una bola de billar fácilmente reconocible. En cambio, parece plano y sin interés, más como un dibujo de una bola de billar que una réplica convincente. La apariencia plana es resultado del sombreador simplista, que se comporta como si cada píxel de la superficie de la bola de billar recibiese la misma cantidad de luz.  
@@ -114,7 +112,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
  Con la iluminación Lambert aplicada, la bola de billar debería ser similar a esta:  
   
- ![Un primer plano de la bola de billar iluminada y texturizada](~/designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
+ ![Un primer plano de la bola de billar iluminada y texturizada](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Mejorar el aspecto básico con resaltes especulares  
  El modelo de iluminación de Lambert proporciona la sensación de forma y dimensión ausente en el sombreador de solo textura. En cambio, la bola de billar todavía tiene un aspecto algo opaco.  
@@ -135,7 +133,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
  Con los reflejos especulares aplicados, la bola de billar debería ser similar a esta:  
   
- ![Un primer plano de la bola de billar con reflexión especular agregada](~/designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
+ ![Un primer plano de la bola de billar con reflexión especular agregada](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Crear un sentido de espacio reflejando el entorno  
  Con los reflejos especulares aplicados, la bola de billar tiene una apariencia bastante convincente. Tiene la forma correcta, el trabajo correcto de dibujo y el acabado adecuado. En cambio, existe otra técnica que hará que el aspecto de la bola de billar se integre mejor en su entorno.  
@@ -158,13 +156,13 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
 4.  Cree una segunda textura con el mismo tamaño que la primera. Esta textura se repetirá en los cuatro lados del mapa de cubo, que corresponden a la superficie y los lados de una mesa de billar, y al área de alrededor de la mesa de billar. Asegúrese de dibujar la superficie de la tabla de billar en esta textura usando el mismo color que la textura inferior. La textura debe ser similar a esta:  
   
-     ![La textura de los lados del mapa del cubo](~/designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+     ![La textura de los lados del mapa del cubo](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
      Recuerde que un mapa de reflexión no tiene que ser fotorrealista para ser eficaz; por ejemplo, el mapa del cubo usado para crear las imágenes de este caso solo contiene cuatro bolsillos en lugar de seis.  
   
 5.  Cree una tercera textura con el mismo tamaño que las otras. Esta textura será la parte superior del mapa de cubo, que corresponde al techo de la mesa de billar. Para hacer que esta parte de la reflexión sea más interesante, puede dibujar una luz desde arriba para reforzar los reflejos especulares que ha agregado al sombreador en el procedimiento anterior. La textura debe ser similar a esta:  
   
-     ![La textura de la parte superior del mapa del cubo](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+     ![La textura de la parte superior del mapa del cubo](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
  Ahora que ha creado las texturas individuales de los lados del mapa de cubo, puede usar una herramienta para a ensamblarlos en un mapa de cubo que se puede almacenar en una sola textura de .dds. Puede usar cualquier programa que quiera para crear el mapa de cubo, siempre que pueda guardar el mapa de cubo en el formato de textura .dds. Este tutorial muestra cómo crear la textura usando la herramienta de texturas de DirectX que forma parte del SDK de DirectX de junio de 2010.  
   
@@ -188,7 +186,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
  Puede imaginarse el diseño del mapa de cubo así:  
   
- ![Diseño del entorno del mapa del cubo](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+ ![Diseño del entorno del mapa del cubo](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
  La imagen en la parte superior es la cara del cubo Positivo Y (+Y); en el centro, de izquierda a derecha, están las caras del cubo -X, +Z, +X y -Z; en la parte inferior está la cara del cubo -Y.  
   
@@ -212,7 +210,7 @@ En este tutorial se muestra cómo crear una bola de billar 3D realista mediante 
   
  Con la asignación de entorno aplicada, la bola de billar debería ser similar a esta:  
   
- ![Un primer plano de la bola de billar asignada al entorno](~/designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
+ ![Un primer plano de la bola de billar asignada al entorno](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
   
  En esta imagen final, observe que los efectos que ha agregado se unen para crear una bola de billar muy convincente. La forma, textura e iluminación crean la apariencia básica de un objeto 3D, y los reflejos y los brillos especulares hacen que la bola de billar resulte más interesante y se integre mejor en su entorno.  
   

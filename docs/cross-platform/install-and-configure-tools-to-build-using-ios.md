@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 11
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "11"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 53224c67d6778ea51e1cf055a0c4c0db34940ada
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  

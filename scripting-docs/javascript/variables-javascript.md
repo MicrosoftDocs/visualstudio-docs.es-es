@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="variables-javascript"></a>Variables (JavaScript)
 En [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], una variable contiene un valor, por ejemplo, "hola" o 5. Cuando se usa la variable, se hace referencia a los datos que esta representa, por ejemplo `NumberOfDaysLeft = EndDate - TodaysDate`.  

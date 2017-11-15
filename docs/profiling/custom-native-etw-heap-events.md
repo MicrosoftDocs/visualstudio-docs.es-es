@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: 8
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-dev_langs:
-- C++
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+dev_langs: C++
+ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
 Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
@@ -176,6 +158,5 @@ Al igual que en el montón de Windows estándar, también puede usar esta herram
 > Visual Studio también contiene una herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar > Generador de perfiles de rendimiento** o mediante la combinación de teclado **ALT+F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar > Windows > Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl+Alt+F2**.
 
 ## <a name="see-also"></a>Vea también
-* [Herramientas de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
-
+[Herramientas de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[Uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

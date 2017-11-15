@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,30 +13,15 @@ f1_keywords:
 - vs.performance.rules.DA0012
 - vs.performance.DA0011
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e09aa099a362182ff46ce0de998f0117100b162c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 971b12e3f14848e5f30420da0994f231f8299491
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Cantidad significativa de reflexión
 |||  

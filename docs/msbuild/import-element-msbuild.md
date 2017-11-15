@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Import
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
 - VB
 - CSharp
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
-ms.openlocfilehash: 507b5fc312ca1f3a8c3ab4e24d3c43fddd0398eb
-ms.lasthandoff: 03/13/2017
-
+ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa el contenido de un archivo de proyecto en otro archivo de proyecto.  
@@ -74,7 +57,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contiene una colección de elementos `Import` agrupados en una condición opcional.|  
 
 ## <a name="remarks"></a>Comentarios  
@@ -91,9 +74,9 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
  El esquema de un proyecto importado es idéntico al de un proyecto estándar. Aunque [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede compilar un proyecto importado, es poco probable que lo haga porque un proyecto importado no suele contener información sobre las propiedades que se establecen o el orden en el que se ejecutan los destinos. El proyecto importado depende del proyecto en el que se importa para obtener esa información.  
 
 > [!NOTE]
->  Mientras que las instrucciones de importación condicional funcionan en compilaciones de MSBuild de línea de comandos, no funcionan con MSBuild en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las importaciones condicionales se evalúan usando los valores de configuración y de la plataforma que se establecen cuando se carga el proyecto. Si posteriormente se realizan cambios que requieren una reevaluación de los condicionales del archivo de proyecto (por ejemplo, si cambia la plataforma), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vuelve a evaluar las condiciones de las propiedades y los elementos, pero no de las importaciones. Dado que no se reevalúa el condicional de importación, se omitirá la importación.  
+>  Mientras que las instrucciones de importación condicional funcionan en compilaciones de MSBuild de línea de comandos, no funcionan con MSBuild en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Las importaciones condicionales se evalúan usando los valores de configuración y de la plataforma que se establecen cuando se carga el proyecto. Si posteriormente se realizan cambios que requieren una reevaluación de los condicionales del archivo de proyecto (por ejemplo, si cambia la plataforma), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vuelve a evaluar las condiciones de las propiedades y los elementos, pero no de las importaciones. Dado que no se reevalúa el condicional de importación, se omitirá la importación.  
 >   
->  Para solucionar este problema, coloque las importaciones condicionales en los archivos .targets o coloque código en un bloque condicional, como un bloque del [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
+>  Para solucionar este problema, coloque las importaciones condicionales en los archivos .targets o coloque código en un bloque condicional, como un bloque [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
 
 ## <a name="wildcards"></a>Caracteres comodín  
  En .NET Framework 4, MSBuild permite caracteres comodín en el atributo Project. Cuando hay caracteres comodín, se ordenan todas las coincidencias encontradas (para la reproducibilidad) y, después, se importan en ese orden como si dicho orden se hubiera establecido explícitamente.  
@@ -133,4 +116,3 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Cómo: Usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-

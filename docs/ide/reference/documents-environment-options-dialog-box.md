@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -33,30 +32,15 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e98661157ec1168c2aa19717c626a82f5e0a1975
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documentos, Entorno, Opciones (Cuadro de diálogo)
 Use esta página del cuadro de diálogo **Opciones** para controlar la visualización de documentos en el entorno de desarrollo integrado (IDE) y administrar los cambios externos de los documentos y archivos. Puede tener acceso a este cuadro de diálogo haciendo clic en **Opciones** en el menú **Herramientas** y, después, seleccionar **Documentos** en el nodo **Entorno**. Si **Documentos** no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,14 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
-caps.latest.revision: 83
+caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 Este tutorial recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el Explorador de pruebas de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Por último, puede cambiar el código del proyecto y volver a ejecutar las pruebas.  
@@ -435,4 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  En esta sección final, el trabajo que se hizo al mejorar el código de prueba condujo a métodos de prueba más eficaces e informativos. Pero, lo que es más importante, el análisis adicional también condujo a mejoras en el código del proyecto en pruebas.
-

@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: fb1bcd92e8f7bda12e774b969da2c71dfc38ab2f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 815f93d50258dac2018a75f7b95d05378bdc77e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 Los estilos y las plantillas de elementos del diseñador XAML se almacenan en entidades reutilizables denominadas recursos. Los estilos permiten establecer las propiedades de los elementos y volver a usar esos valores para lograr una apariencia coherente entre distintos elementos. Una propiedad [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define la apariencia de un control y también puede aplicarse como un recurso. Para obtener más información, vea [Inicio rápido: diseñar controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Inicio rápido: plantillas de control](http://go.microsoft.com/fwlink/?LinkID=247982).  

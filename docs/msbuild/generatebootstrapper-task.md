@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
 dev_langs:
 - VB
 - CSharp
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e22d2cb649528d527cf37e80fda0ad49671863d3
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  

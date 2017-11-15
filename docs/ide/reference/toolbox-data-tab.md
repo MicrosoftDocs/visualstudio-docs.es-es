@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: bfe6b74b10829ac06d07b3e22b969b8ed6357972
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 Muestra objetos de datos que puede agregar a formularios y componentes. La pestaña **Datos** del **Cuadro de herramientas** aparece cuando crea un proyecto que tiene un diseñador asociado. El **Cuadro de herramientas** aparece de manera predeterminada en el entorno de desarrollo integrado de Visual Studio; si necesita mostrar el **Cuadro de herramientas**, seleccione **Cuadro de herramientas** del menú **Ver**.  

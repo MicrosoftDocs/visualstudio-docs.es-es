@@ -1,30 +1,29 @@
 ---
-title: "CvCreateMarkerSeriesWithCodePageA (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmakers/CvCreateMarkerSeriesWithCodePageA"
-helpviewer_keywords: 
-  - "CvCreateMarkerSeriesWithCodePageA (método)"
+title: "CvCreateMarkerSeriesWithCodePageA (función) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmakers/CvCreateMarkerSeriesWithCodePageA
+helpviewer_keywords: CvCreateMarkerSeriesWithCodePageA method
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cc266ff4a96fa96f89e1eaafe2eaa8377ef601fa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CvCreateMarkerSeriesWithCodePageA (Funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Crea series de marcadores para un proveedor dado y una página de códigos especificados.  Esta función se puede utilizar para especificar la página de códigos explícitamente para el texto escrito por las funciones de la API ANSI del marcador.  Establecer la página de códigos puede ser útil en caso de que el seguimiento sea capturado y luego analizado en equipos diferentes con las diferentes configuraciones regionales y lenguajes.  De forma predeterminada, se utiliza la página de códigos devuelta por la función de GetACP\(\).  
+# <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA (Función)
+Crea series de marcadores para un proveedor determinado y una página de códigos especificada. Esta función se puede utilizar para especificar la página de códigos explícitamente para el texto escrito por las funciones ANSI de API de marcador. Establecer la página de códigos puede ser útil en caso de que el seguimiento se capture y luego analice en distintos equipos con configuraciones regionales o idiomas diferentes. De forma predeterminada, se utiliza la página de códigos devuelta por la función GetACP().  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CvCreateMarkerSeriesWithCodePageA(  
@@ -35,24 +34,24 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pProvider`  
- El objeto proveedor inicializado previamente por CvInitProvider.  No puede ser NULL.  
+ Objeto de proveedor inicializado anteriormente por CvInitProvider. No puede ser nulo.  
   
  `pSeriesName`  
- Nombre de la serie del marcador.  No puede ser NULL pero se permite la cadena vacía.  
+ Nombre de la serie de marcador. No puede ser nulo, pero se permite una cadena vacía.  
   
  `nTextCodePage`  
- Página de códigos válida  
+ Página de códigos válida.  
   
  `ppMarkerSeries`  
- Dirección de una variable de salida que almacenará contexto de la serie de marcadores.  No puede ser NULL.  
+ Dirección de una variable de salida que almacenará el contexto de la serie de marcador. No puede ser nulo.  
   
-## Valor devuelto  
- S\_OK cuando la serie de marcadores se crea correctamente o se lanza un código de error en caso de cualquier error.  Utilizar macros SUCCEEDED\/FAILED para comprobar si hay condición de error.  
+## <a name="return-value"></a>Valor devuelto  
+ S_OK cuando la serie de marcador se crea correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkers.h  
   
-## Vea también  
- [Referencia de la biblioteca C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)

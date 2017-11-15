@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9f34917cf5138201b1668e2800bc4ae1fd8e73a8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 484ffe617123e6daf147210761e0fa9dd60bd379
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 Este tema contiene el contenido y la descripción del código de origen C# del archivo L2DBForm.xaml.cs. La clase parcial L2XDBForm contenida en este archivo se puede dividir en tres secciones lógicas: miembros de datos y los controladores de eventos Click de botones `OnRemove` y `OnAddBook`.  

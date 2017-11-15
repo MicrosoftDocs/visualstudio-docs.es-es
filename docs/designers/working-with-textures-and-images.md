@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2cb4836ae868d56147a82fcefa0c5546bfcf8cad
-ms.contentlocale: es-es
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-textures-and-images"></a>Trabajar con texturas e imágenes
 Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear y modificar texturas e imágenes. El editor de imágenes admite formatos de imagen y textura enriquecidos, como los que se usan en el desarrollo de aplicaciones de DirectX.  
   
 > [!NOTE]
->  El editor de imágenes no es compatible con las imágenes de poco color, como los iconos o los cursores. Para crear o modificar esos tipos de imágenes, use el [editor de imágenes para iconos](/cpp/windows/image-editor-for-icons).  
+>  El editor de imágenes no es compatible con las imágenes de poco color, como los iconos o los cursores. Para crear o modificar esos tipos de imágenes, use el [Image Editor for Icons](/cpp/windows/image-editor-for-icons).  
   
 ## <a name="textures-and-images"></a>Texturas e imágenes  
  Las texturas e imágenes son, en un nivel básico, simplemente tablas de datos que se usan para proporcionar detalle visual en las aplicaciones de gráficos. El tipo de detalle que una textura o una imagen proporciona depende de cómo se use, pero las muestras de colores, los valores alfa (transparencia), las normales de superficie y los valores de altura son ejemplos comunes. La principal diferencia entre una textura y una imagen es que una textura está diseñada para usarse junto con una representación de la forma (normalmente un modelo 3D) para expresar un objeto o una escena completos, pero una imagen es normalmente una representación independiente del objeto o de la escena.  

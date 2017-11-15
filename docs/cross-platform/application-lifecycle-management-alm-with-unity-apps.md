@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
-ms.contentlocale: es-es
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: e2ab02d04f72ecfcbf792befdf1eb536e16c4e94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas maneras de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.  

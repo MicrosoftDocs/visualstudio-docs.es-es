@@ -5,35 +5,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
-caps.latest.revision: 3
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: 952414b5e6e683242a2e71bcba9c37471a6219bc
-ms.contentlocale: es-es
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: f3ce9677f344b8d97992d78b08ed44341657d51c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactorización en Visual Studio
 La refactorización es el proceso que consiste en modificar el código sin que cambie su comportamiento para que sea más fácil de mantener, entender y ampliar. Algunas *refactorizaciones* comunes son:  

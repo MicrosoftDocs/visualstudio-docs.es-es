@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2ae1ef56f40106321dd514b3e42e54be2afa7efd
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f8c436730023ebd534cc8fb7794f3724d371568c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Información general de Visual Studio Tools para Unity
 En esta sección aprenderá más acerca de las características que ofrece Visual Studio Tools para Unity y cómo utilizarlas para ser más productivo con Unity.  

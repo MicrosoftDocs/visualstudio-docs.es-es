@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7aba2366893e188107632e5b8393fff79c0a5f82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 15990f447ba3e368b19d93317eadbde7b126326a
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
 El juego funciona bien siempre y cuando el jugador elija únicamente parejas de iconos que no coinciden. Sin embargo, piense qué sucedería si el jugador elige una pareja coincidente. En lugar de hacer que los iconos desaparezcan activando el temporizador (con el método `Start()`), el juego se debería restablecer automáticamente para dejar de realizar el seguimiento de las etiquetas mediante las variables de referencia `firstClicked` y `secondClicked`, sin restablecer los colores de las dos etiquetas elegidas.  
@@ -41,7 +25,8 @@ El juego funciona bien siempre y cuando el jugador elija únicamente parejas de 
   
 1.  Agregue la siguiente instrucción `if` al método de control de eventos `label_Click()`, casi al final del código, justo encima de la instrucción donde se inicia el temporizador. Observe el código minuciosamente mientras lo agrega al programa. Observe cómo funciona.  
   
-     [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]  [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
+     [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
      La primera línea de la instrucción `if` que acaba de agregar comprueba si el icono de la primera etiqueta en eligió el jugador es igual que el icono de la segunda etiqueta. Si los iconos son iguales, el programa ejecuta las tres instrucciones entre llaves en C# o las tres instrucciones incluidas en la instrucción `if` en Visual Basic. Las dos primeras instrucciones restablecen las variables de referencia `firstClicked` y `secondClicked` para que ya no realicen el seguimiento de ninguna de las etiquetas. (Quizás reconozca esas dos instrucciones por el controlador de eventos Tick del temporizador). La tercera es una instrucción `return`, que indica al programa que omita el resto de las instrucciones del método sin ejecutarlas.  
   

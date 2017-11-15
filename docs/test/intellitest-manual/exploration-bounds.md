@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IntelliTest, Exploration bounds
+helpviewer_keywords: IntelliTest, Exploration bounds
 ms.assetid: 9E0751B3-CE7E-49D4-833E-F1C2709E57C1
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: e3b4ddd14bf150f17966f52862e2a4c392fd55ce
-ms.contentlocale: es-es
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: bc3574dac776d7cb84dc31a9c6cb4d306409ee5b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="exploration-bounds"></a>Límites de exploración
 
@@ -210,4 +193,3 @@ El valor predeterminado de esta opción es **TestEmissionBranchHits=2**, que gen
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
 Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
-

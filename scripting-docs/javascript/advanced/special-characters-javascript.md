@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - escape sequence
 - backslash (\)
 ms.assetid: 3b38b1bd-1f0f-4748-b13e-55cab36fd126
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 066b83e7457dd630b1aa59cba83d0dec6a84631c
 ms.openlocfilehash: 0eaae8dfc84d9a3be6db54c50558d4cf675a53a8
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="special-characters-javascript"></a>Caracteres especiales (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] proporciona secuencias de escape que se pueden incluir en cadenas para crear caracteres que no es posible escribir directamente.  

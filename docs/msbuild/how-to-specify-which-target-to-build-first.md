@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - MSBuild, specifying the defalut target
 - MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 401db77b47014ad3330c0a78acf648605a2c3278
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Cómo: Especificar qué destino utilizar primero al compilar
 Un archivo del proyecto puede contener uno o vario elementos `Target` que definen cómo se compila el proyecto. El motor [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila el primer proyecto que encuentra, así como las dependencias, a menos que el archivo del proyecto contenga un atributo `DefaultTargets`, un atributo `InitialTargets` o que un destino se especifique en la línea de comandos mediante el modificador **/target**.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -42,36 +41,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
 - VS.ToolsOptionsPages.Text_Editor.CSharp
+- VS.ToolsOptionsPages.Text_Editor.Python
+- VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: eee3b34e9f473c200463b65f1b839416f5dce0ec
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 Este cuadro de diálogo le permite cambiar la configuración global del editor de texto y el código de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto** y, después, haga clic en **General**.  

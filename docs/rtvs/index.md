@@ -1,27 +1,24 @@
 ---
 title: R Tools para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
 ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 693b070974c86babcfb57f71d37aa7eb030aac90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 80a10c710aac8413bd59b53bb61de7a982c09952
-ms.contentlocale: es-es
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-r-in-visual-studio"></a>Trabajo con R en Visual Studio
 
 R es un entorno y lenguaje muy extensible para cálculos estadísticos y gráficos. Se distribuye de forma gratuita bajo la Licencia para el Público en General GNU, cuenta con soporte técnico de la comunidad seguro y se conoce por su capacidad para generar gráficos con calidad de publicación, como fórmulas y símbolos matemáticos. Puede obtener más información sobre R en [r project.org](https://www.r-project.org/about.html) y [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html) (Introducción a R).
@@ -126,4 +123,3 @@ Un archivo . No, Visual Studio no es compatible con la carga de proyectos de un 
 1. **Enviar una sonrisa o Enviar una desaprobación**: el menú **R Tools > Comentarios** es una manera rápida para enviar comentarios y adjuntar archivos de registro de RTVS para ayudar en el diagnóstico del problema. (Los registros se escriben en `%temp%/RTVSlogs.zip` en caso de que desee enviarlos por separado). El registro está deshabilitado si ha desactivado la telemetría de Visual Studio a través del comando de menú **Ayuda > Comentarios > Configuración** o durante la instalación.
 
 1. **Correo electrónico**: puede enviar comentarios directamente al equipo a *rtvsuserfeedback (arroba) microsoft.com*.
-

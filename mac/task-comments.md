@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 973e7b627a7b5c121ff388874577fe59c45529d7
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="task-comments"></a>Comentarios de tareas
 
 Al escribir código, es una práctica estándar comentar de forma explícita el código sin terminar o cuestionable o las soluciones rápidas con advertencias. Los tokens de señal predeterminados proporcionados por Visual Studio para Mac son TODO, HACK, FIXME y UNDONE, aunque se pueden definir tokens personalizados en **Visual Studio > Preferencias... > Entorno > Tareas**, como se muestra a continuación:

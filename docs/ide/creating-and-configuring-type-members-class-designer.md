@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,30 +29,15 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1b2a1479c20814f55d65504a3dd79fc15a544082
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: d720df18b817e838cd3e5e0e34c9a7e123c1a402
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos en la ventana **Detalles de clase**:  

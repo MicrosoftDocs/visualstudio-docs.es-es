@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tutorial
+helpviewer_keywords: MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 346c00891913ea2050f3e6790d738cccc5136c0a
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.  

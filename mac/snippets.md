@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 1f2ee1d440ad1c7d8cd75ae9194c651f2fc16a41
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="code-snippets"></a>Fragmentos de código 
 
 Los fragmentos de código, que se suelen denominar _plantillas de código_, son útiles para una programación eficaz, ya que permiten la inserción y edición de bloques de código escritos previamente. El uso de fragmentos de código puede resultar particularmente cómodo para agregar rápidamente patrones comunes o incluso para aprender nuevos patrones si, como desarrollador, no está seguro de la sintaxis. Hay plantillas para C#, F#, HTML, XML, Python y Razor.
@@ -40,4 +38,3 @@ Hay varias maneras de agregar fragmentos de código, algunas de las cuales se ex
 Aunque hay muchas plantillas existentes en una serie de lenguajes que se pueden usar y editar, también se pueden agregar nuevas plantillas si se va a **Visual Studio > Preferencias > Editor de texto > Fragmentos de código**:
 
 ![Insertar nueva plantilla](media/source-editor-image12.png)
-

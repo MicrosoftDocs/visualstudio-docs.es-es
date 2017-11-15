@@ -1,29 +1,32 @@
 ---
-title: "Organizaci&#243;n jer&#225;rquica de recursos para la localizaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "archivos de recursos, localizado"
-  - "localización [Visual Studio], recursos"
-  - "recursos de reserva"
-  - "aplicaciones internacionales [Visual Studio], almacenar recursos"
-  - "ensamblados satélite, jerarquías de recursos"
-  - "globalización [Visual Studio], recursos"
-  - "ensamblados satélite"
-  - "recursos [Visual Studio], sistema de reserva"
-  - "archivos de recursos, procesos de reserva"
+title: "Organización jerárquica de recursos para la localización | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- resource files, localized
+- localization [Visual Studio], resources
+- fallback resources
+- international applications [Visual Studio], storing resources
+- satellite assemblies, resource hierarchies
+- globalization [Visual Studio], resources
+- satellite assemblies
+- resources [Visual Studio], fallback system
+- resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organización jerárquica de recursos para la localización
 En Visual Studio, los recursos adaptados (datos como cadenas e imágenes adecuados para cada referencia cultural) se almacenan en archivos independientes y cargan según la configuración de la referencia cultural de la interfaz de usuario. Para comprender cómo se cargan los recursos adaptados, es útil pensar en ellos como si se organizaran de forma jerárquica.  
@@ -40,11 +43,11 @@ En Visual Studio, los recursos adaptados (datos como cadenas e imágenes adecuad
   
  La mejor forma de almacenar sus recursos es generalizarlos tanto como sea posible. Eso significa almacenar cadenas localizadas, imágenes y demás en archivos de recursos para referencias culturales neutras en lugar de referencias culturales específicas siempre que sea posible. Por ejemplo, si dispone de recursos para la referencia cultural francés belga ("fr-BE") y los recursos que hay inmediatamente antes son los recursos de reserva en inglés, puede producirse un problema cuando alguien use su aplicación en un sistema configurado para la referencia cultural francés canadiense. El sistema buscará un ensamblado satélite para "fr-CA", sin encontrarlo, y cargará el ensamblado principal que contiene el recurso de reserva, que es el inglés, en lugar de cargar los recursos en francés. En la imagen siguiente se muestra este escenario no deseable.  
   
- ![Solo recursos específicos](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Solo recursos específicos](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Si sigue la práctica recomendada de situar tantos recursos como sea posible en un archivo de recursos neutro para la referencia cultural "fr", el usuario francocanadiense no vería los recursos marcados para la referencia cultural "fr-BE", sino cadenas en francés. La situación siguiente muestra este escenario preferible.  
   
- ![Gráfico NeutralSpecificResources](~/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+ ![Gráfico NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Vea también  
  [Idiomas de los recursos neutros para la localización](../ide/neutral-resources-languages-for-localization.md)   
@@ -53,8 +56,3 @@ En Visual Studio, los recursos adaptados (datos como cadenas e imágenes adecuad
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)   
  [Cómo: Establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de formularios Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
  [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,16 +13,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 342b68ef-df93-48c4-81de-bdf6b6ce58d9
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 540d10958a7f2d406a6d70a633fc09a2cada8f41
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="what39s-new-in-javascript"></a>Novedades de JavaScript
 En este documento se incluyen las nuevas características de JavaScript compatibles con el [modo Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] y con las aplicaciones de la Tienda Windows Phone.  

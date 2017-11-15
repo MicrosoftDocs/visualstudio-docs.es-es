@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Visual Studio, 64-bit support
 - 64-bit programming [C++]
 ms.assetid: b08ff3ad-c6fd-468f-94d5-01a61aab6833
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b3d0e23ac673c30ff1b598f9aff009f4c206ff5
-ms.contentlocale: es-es
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 191c70b205969def7e5645b3c0fdbb52adf0f049
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para obtener más información sobre la compatibilidad con plataformas de 64 bits en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consulte [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  

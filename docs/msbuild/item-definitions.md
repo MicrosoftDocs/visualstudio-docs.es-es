@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, item definitions
+helpviewer_keywords: msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: f9359f3828ab31c69e7c5db46a1136990ceeab67
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b2cf0713a38187f27bfddd46b0ad32b592d397a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permite la declaración estática de los elementos de archivos de proyecto mediante el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.  
@@ -271,4 +255,3 @@ En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition 
   
 ## <a name="see-also"></a>Vea también  
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)
-

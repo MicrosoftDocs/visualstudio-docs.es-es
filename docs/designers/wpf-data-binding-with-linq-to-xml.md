@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 356c2cef-3468-495d-b4bd-f6b7f883446b
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: cfa8cfb699ae20e1ae5e563545959b16802540ea
-ms.contentlocale: es-es
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: dddfcf34fcdd06ce63d2d7ec9e661991d880a988
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Enlace de datos WPF con LINQ to XML
 En esta sección se proporciona información sobre cómo utilizar LINQ to XML como origen de datos para el enlace de datos en aplicaciones de Windows Presentation Foundation (WPF). Este caso se basa en las *propiedades dinámicas* especiales de <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> y <xref:System.Xml.Linq.XElement?displayProperty=fullName>. Esas propiedades dinámicas también están documentadas en esta sección.  

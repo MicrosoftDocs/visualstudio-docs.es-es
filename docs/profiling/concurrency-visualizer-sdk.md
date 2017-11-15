@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.sdk.about
+f1_keywords: vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0d5c4895cb77388e45442dccdbfdd98884e81c18
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: efe710a237ff9cde5d66a7e377f7a4b700a00705
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](http://go.microsoft.com/fwlink/?LinkId=235405).  

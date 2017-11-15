@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,29 +16,15 @@ helpviewer_keywords:
 - MSBuild, item metadata
 - MSBuild, well-known item metadata
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 89e1497061d0720590d8abd6e35fbb3422ba51ef
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dd9e082834af6194b84c7975e4a42337d66a429a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadatos de los elementos conocidos de MSBuild
 En la tabla siguiente se describen los metadatos asignados a cada elemento en el momento de su creación. Se utilizó la declaración del elemento siguiente en cada ejemplo para incluir el archivo `C:\MyProject\Source\Program.cs` en el proyecto.  

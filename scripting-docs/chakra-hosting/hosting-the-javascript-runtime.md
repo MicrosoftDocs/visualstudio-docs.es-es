@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 2bf213bf262ede7642e05c66e424b860238dc57f
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="hosting-the-javascript-runtime"></a>Hospedar runtime de JavaScript
 Las API de JavaScript Runtime (JsRT) permiten a las aplicaciones de escritorio, del lado servidor y de la Tienda Windows que se ejecutan en el sistema operativo Windows agregar funciones de scripting a una aplicación mediante el uso del motor de JavaScript Chakra basado en estándares (usado también por Microsoft Edge e Internet Explorer). Estas API están disponibles en Windows 10 y cualquier versión del sistema operativo Windows que tenga la versión 10 de Internet Explorer instalada en el equipo. Para obtener más información, consulta [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md). Para obtener información sobre el uso de JsRT en aplicaciones de la Tienda Windows, consulte [JsRT and the Universal Windows Platform](#Windows).  

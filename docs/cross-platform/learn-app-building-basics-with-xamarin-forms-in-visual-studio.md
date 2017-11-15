@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: d428f340cd1c0c990ec196c3c9d84e6f22093805
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 157b900964afc33690b696a08f047c5dd1c2d70d
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Información sobre los conceptos básicos de la compilación de aplicaciones con Xamarin.Forms en Visual Studio
 Tras realizar los pasos [Setup and install](../cross-platform/setup-and-install.md) y [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md), en este tutorial se muestra cómo compilar una aplicación básica (se muestra a continuación) con Xamarin.Forms. Con Xamarin.Forms, escribirá todo el código de interfaz de usuario una vez en una biblioteca de clases portable (PCL). Después, Xamarin representará de forma automática los controles de interfaz de usuario nativos para las plataformas iOS, Android y Windows. Se recomienda este enfoque porque la opción de PCL es la más compatible al usar solo esas API de .NET que son compatibles con todas las plataformas de destino, y porque Xamarin.Forms le permite compartir código de interfaz de usuario entre plataformas.  

@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
 - profiling tools reports, comparing
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9a0b4dcb86aa4241d223dd4a1172267dd8ec20da
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-performance-data-files"></a>Comparar archivos de datos de rendimiento
 La funcionalidad de comparación de archivos de datos de herramientas de generación de perfiles permite seleccionar dos archivos de informe (.VSP o .VSPS) y generar un informe que muestra las diferencias, las regresiones de rendimiento y las mejoras producidas de una sesión de generación de perfiles a otra.  

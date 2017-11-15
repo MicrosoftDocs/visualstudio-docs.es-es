@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit tests
+helpviewer_keywords: unit testing, create unit tests
 ms.assetid: 5D625021-BA96-48A5-9453-3EF6F0943466
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 0bed76bf1dda027983bc960661937916b063a54e
-ms.contentlocale: es-es
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 7e69218700314224f67094486cfd381ac1460995
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
@@ -85,4 +68,3 @@ En cambio, esta característica se aplica igualmente a la situación en la que e
 Vea la publicación del blog [Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/).
 
 Pueden encontrarse más publicaciones de blog de pruebas unitarias [aquí](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
-

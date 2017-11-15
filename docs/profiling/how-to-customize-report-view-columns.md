@@ -1,29 +1,29 @@
 ---
-title: "C&#243;mo: Personalizar las columnas de la vista de informe de las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.test.columnchooser.dialogbox"
-helpviewer_keywords: 
-  - "herramientas de generación de perfiles, personalización de informes"
-  - "informes de rendimiento, personalización"
+title: "Cómo: Personalizar las columnas de la vista de informes | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.test.columnchooser.dialogbox
+helpviewer_keywords:
+- profiling tools, customizing reports
+- performance reports, customizing
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Personalizar las columnas de la vista de informe de las herramientas de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Las herramientas de rendimiento en la edición de desarrollo de Visual Studio Team System se integran totalmente en el entorno de desarrollo integrado \(IDE\) proporcionar una mezcla de usuario.  La lista siguiente es representativa de vistas que se pueden personalizar agregando, quitando y reorganizando columnas:  
+# <a name="how-to-customize-report-view-columns"></a>Cómo: Personalizar las columnas de la vista de informes
+Las herramientas de rendimiento de Visual Studio Team System Development Edition están totalmente integradas en el entorno de desarrollo integrado (IDE) para proporcionar una experiencia de usuario sin problemas. La lista siguiente es representativa de las vistas que se pueden personalizar agregando, quitando y reorganizando columnas:  
   
 -   [Vista Módulos](../profiling/modules-view.md)  
   
@@ -31,13 +31,13 @@ Las herramientas de rendimiento en la edición de desarrollo de Visual Studio Te
   
 -   [Vista Líneas](../profiling/lines-view.md)  
   
--   [Vista Punteros de instrucciones \(IP\)](../profiling/instruction-pointers-ips-view.md)  
+-   [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md)  
   
 -   [Vista Llamador y destinatario](../profiling/caller-callee-view.md)  
   
 -   [Vista Árbol de llamadas](../profiling/call-tree-view.md)  
   
--   [Asignaciones \(Vista\)](../profiling/dotnet-memory-allocations-view.md)  
+-   [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)  
   
 -   [Vista Duración del objeto](../profiling/object-lifetime-view.md)  
   
@@ -45,11 +45,11 @@ Las herramientas de rendimiento en la edición de desarrollo de Visual Studio Te
   
 -   [Vista Proceso](../profiling/process-view.md)  
   
-### Personalizar una vista de informe  
+### <a name="to-customize-a-report-view"></a>Para personalizar una vista de informe  
   
 1.  Abra la vista de informe.  
   
-2.  Haga clic con el botón secundario del mouse en la vista y, a continuación, haga clic en **Agregar o quitar columnas**.  
+2.  Haga clic con el botón derecho en la superficie de la vista de informe y después haga clic en **Agregar o quitar columnas**.  
   
      Aparecerá el cuadro de diálogo **Agregar o quitar columnas**.  
   

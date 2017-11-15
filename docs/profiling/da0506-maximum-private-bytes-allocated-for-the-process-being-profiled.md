@@ -1,49 +1,50 @@
 ---
-title: "DA0506: M&#225;ximo de bytes privados asignados al proceso que se va a perfilar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DA0506"
-  - "vs.performance.DA0506"
-  - "vs.performance.506"
+title: "DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DA0506
+- vs.performance.DA0506
+- vs.performance.506
 ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1a257478cf797741aee7f52361c59cbe06b72bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# DA0506: M&#225;ximo de bytes privados asignados al proceso que se va a perfilar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar
 |||  
 |-|-|  
 |Identificador de regla|DA0506|  
 |Categoría|Supervisión de recursos|  
-|Método de generación de perfiles|Todos|  
-|Mensaje|Esta información se recopiló solo con fines informativos.  El contador Process Private Bytes mide la memoria virtual asignada por el proceso del que se está generando el perfil.  El valor indicado es el máximo observado de todos los intervalos de medición.|  
+|Método de generación de perfiles|Todas|  
+|Mensaje|Esta información se recopiló únicamente con fines informativos. El contador de bytes privados del proceso mide la memoria virtual asignada por el proceso del que está generando perfiles. El valor notificado es el máximo observado de todos los intervalos de medición.|  
 |Tipo de regla|Información|  
   
- Cuando genere perfiles usando métodos de muestreo, memoria de .NET o contención de recursos, debe recopilar al menos 10 muestras para desencadenar esta regla.  
+ Al generar perfiles mediante los métodos de muestreo, memoria de .NET o contención de recursos, debe reunir al menos 10 ejemplos para activar esta regla.  
   
-## Descripción de la regla  
- Este mensaje indica la cantidad máxima de memoria virtual que el proceso tiene asignada actualmente en bytes \(bytes privados\).  Los bytes privados representan las ubicaciones de memoria virtual asignadas por el proceso a las que solo pueden tener acceso los subprocesos que se ejecutan dentro del proceso.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Este mensaje indica la cantidad máxima de memoria virtual que el proceso ha asignado actualmente en bytes (bytes privados). Los bytes privados representan las ubicaciones de memoria virtual asignadas por el proceso a las que solo pueden acceder los subprocesos que se ejecutan dentro del proceso.  
   
- Para un proceso de 32 bits que se ejecuta en un equipo de 32 bits, el límite superior de la parte privada del espacio de direcciones de proceso es 2 GB.  Utilizando el [\/3 GB](http://go.microsoft.com/fwlink/?LinkId=177831) modificador Boot.ini, los procesos de 32 bits pueden adquirir hasta 3 GB de memoria virtual.  Un proceso de 32 bits que se esté ejecutando en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.  
+ Para los procesos de 32 bits que se ejecutan en un equipo de 32 bits, el límite superior de la parte privada del espacio de direcciones de proceso es de 2 GB. Mediante el modificador [/3 GB](http://go.microsoft.com/fwlink/?LinkId=177831) Boot.ini, los procesos de 32 bits pueden adquirir hasta 3 GB de memoria virtual. Un proceso de 32 bits que se ejecuta en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.  
   
- Un proceso de 64 bits que se esté ejecutando en un equipo de 64 bits puede adquirir hasta 8 TB de memoria virtual privada.  
+ Un proceso de 64 bits que se ejecuta en un equipo de 64 bits puede adquirir hasta 8 TB de memoria virtual privada.  
   
- El valor indicado es el máximo de todos los intervalos de medida en los que estaba activo el proceso para el que se generan perfiles.  
+ El valor notificado es el máximo de todos los intervalos de medición en que estuvo activo el proceso del que se está generando el perfil.  
   
- Para obtener más información sobre los espacios de direcciones de proceso, vea [Espacio de dirección virtual](http://go.microsoft.com/fwlink/?LinkId=177832) en la documentación sobre administración de memoria de Windows.  
+ Para obtener más información sobre los espacios de direcciones de proceso, consulte [Espacio de direcciones virtuales](http://go.microsoft.com/fwlink/?LinkId=177832) en la documentación de administración de memoria de Windows de MSDN.  
   
-## Cómo usar los datos de la regla  
- Utilice el valor indicado para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de generación de perfiles.  
+## <a name="how-to-use-rule-data"></a>Cómo utilizar datos de regla  
+ Utilice el valor notificado para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de generación de perfiles diferentes.  
   
- Un valor máximo de bytes privados de proceso que se aproxime al límite arquitectónico de crecimiento de un espacio de direcciones de proceso puede dar lugar a excepciones de memoria insuficiente.  Para obtener más información, vea [Problemas de investigación de memoria](http://go.microsoft.com/fwlink/?LinkID=177833) en MSDN Magazine.
+ Se pueden producir excepciones de memoria agotada si un valor máximo de bytes privados del proceso se aproxima al límite de la arquitectura establecido para el crecimiento máximo de un espacio de direcciones de proceso. Para obtener más información, consulte [Investigar los problemas de memoria](http://go.microsoft.com/fwlink/?LinkID=177833) en MSDN Magazine.

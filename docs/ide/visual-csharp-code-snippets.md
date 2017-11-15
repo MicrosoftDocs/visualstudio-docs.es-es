@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,31 +14,15 @@ helpviewer_keywords:
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5f996aff0c247db658f3b9f1fec666792751ae11
-ms.openlocfilehash: 407ef81649de1c62d91d5a79535a8f9c67feb97c
-ms.contentlocale: es-es
-ms.lasthandoff: 06/06/2017
-
+ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C#
 Los fragmentos de código están listos para usar y puede insertarlos rápidamente en el código. Por ejemplo, el fragmento de código `for` crea un bucle `for` vacío. Algunos fragmentos de código son envolventes, lo que permite seleccionar líneas de código y después elegir un fragmento de código que incorpore las líneas de código seleccionadas. Por ejemplo, al seleccionar líneas de código y activar después el fragmento de código `for`, se creará un bucle `for` que incluirá dichas líneas en su bloque. De este modo, los fragmentos de código hacen de la escritura de código de programación un proceso más rápido, sencillo y fiable.  
@@ -97,4 +80,3 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
  [Fragmentos de código](../ide/code-snippets.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Cómo: Usar fragmentos de código envolventes](../ide/how-to-use-surround-with-code-snippets.md)   
-

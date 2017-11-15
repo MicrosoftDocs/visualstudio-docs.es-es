@@ -1,23 +1,26 @@
 ---
-title: "C&#243;mo: Especificar el icono de una aplicaci&#243;n (Visual Basic, C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "iconos [Visual Studio], aplicación"
-  - "propiedades de aplicación [Visual Studio], iconos"
-  - "iconos de aplicación [Visual Studio]"
+title: "Cómo: Especificar el icono de una aplicación (Visual Basic, C#) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- icons [Visual Studio], application
+- application properties [Visual Studio], icons
+- application icons [Visual Studio]
 ms.assetid: ad8e14ed-adc2-45b6-a0be-818b16d5616f
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 17cce04dd94829225823de676e286b7d0158abec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Cómo: Especificar el icono de una aplicación (Visual Basic, C#)
 La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se mostrará para la aplicación compilada en el Explorador de archivos y en la barra de tareas de Windows.  
@@ -25,7 +28,7 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
  Se puede acceder a la propiedad `Icon` desde el panel **Aplicación** del **Diseñador de proyectos**. Contiene una lista de iconos que se han agregado a un proyecto, como recursos o como archivos de contenido.  
   
 > [!NOTE]
->  Después de establecer la propiedad de icono para una aplicación, también puede establecer la propiedad `Icon` de cada **Ventana** o **Formulario** en la aplicación. Para obtener información sobre los iconos de la ventana para las aplicaciones independientes de Windows Presentation Foundation (WPF), vea la propiedad <xref:System.Windows.Window.Icon%2A>.  
+>  Después de establecer la propiedad de icono para una aplicación, también puede establecer la propiedad `Icon` de cada **Ventana** o **Formulario** en la aplicación. Para obtener información acerca de los iconos de la ventana para las aplicaciones independientes de Windows Presentation Foundation (WPF), consulte la propiedad <xref:System.Windows.Window.Icon%2A>.  
   
 ### <a name="to-specify-an-application-icon"></a>Para especificar el icono de una aplicación  
   
@@ -44,8 +47,3 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
  [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Administrar las propiedades de la aplicación](../ide/application-properties.md)  
  [Cómo: Agregar o quitar recursos](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

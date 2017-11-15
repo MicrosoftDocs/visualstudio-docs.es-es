@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,30 +17,15 @@ helpviewer_keywords:
 - assemblies [Visual Studio], security
 - localization, satellite assemblies
 ms.assetid: 6d953840-b301-47d5-8d34-30c1b29b5071
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 2bac6b9d00c52e782cf2993ce70c3bd3466aba55
-ms.contentlocale: es-es
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: fc8579d18f1d3f0314bab99698024e463b51454b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>Seguridad y ensamblados satélite localizados
 Si el ensamblado principal usa nombres seguros, los ensamblados satélite deben firmarse con la misma clave privada que el ensamblado principal. Si el par de clave pública y privada de los ensamblados principal y satélite no coincide, los recursos no se cargarán. Para más información sobre la firma de ensamblados, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).  

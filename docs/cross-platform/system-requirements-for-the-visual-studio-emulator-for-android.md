@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b4ed14f43316dc02ef8d039c590cd2f93b3060e5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 El emulador de Visual Studio para Android se ejecuta como una máquina virtual en Hyper-V, que es la tecnología de virtualización para Windows 8 y posteriores. Para ejecutar el emulador, el equipo debe cumplir los requisitos para ejecutar Hyper-V, tal como se describe en este tema.  
@@ -101,7 +84,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
   
  Para comprobar los requisitos de RAM y de Windows, vaya al Panel de control, elija Sistema y seguridad y, a continuación, elija Sistema.  
   
- ![Comprobar los requisitos del sistema](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Comprobar los requisitos del sistema](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Requisitos de red  
  La red debe cumplir los siguientes requisitos:  
@@ -147,7 +130,7 @@ El emulador de Visual Studio para Android se ejecuta como una máquina virtual e
 > [!IMPORTANT]
 >  Después de unirse al grupo, cierre la sesión o reinicie el equipo para que el cambio surta efecto.  
   
- ![Unirse al grupo de seguridad Administradores de Hyper-V](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Unirse al grupo de seguridad Administradores de Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Para agregarse a un grupo manualmente, abra el complemento Grupos y usuarios locales. Para obtener más información, vea [Agregar una cuenta de usuario a un grupo](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Este tema de Windows 7 también es aplicable a Windows 8).  
   

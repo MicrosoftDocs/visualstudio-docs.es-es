@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: efa83606dd7ef00cb82ea0d139a7238f0425664c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9424a42099659a91252b8a0b8ae9649cf79176a9
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Paso 4: Agregar el método CheckTheAnswer()
 En la cuarta parte de este tutorial, escribirá un método, `CheckTheAnswer()`, que determina si las respuestas a los problemas de matemáticas son correctas. Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
@@ -47,13 +30,15 @@ En la cuarta parte de este tutorial, escribirá un método, `CheckTheAnswer()`, 
   
      Cuando se llama a este método, agrega los valores de addend1 y addend2, y compara el resultado con el valor del control `NumericUpDown` de suma. Si los valores son iguales, el método devuelve el valor `true`. De lo contrario, el método devuelve el valor `false`. El código debe tener un aspecto parecido al siguiente.  
   
-     [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]  [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]  
   
      A continuación, puede comprobar la respuesta actualizando el código del método para que el controlador de eventos Tick del temporizador llame al nuevo método `CheckTheAnswer()`.  
   
 2.  Agregue el código siguiente a la instrucción `if else`.  
   
-     [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]  [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
+     [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]  
   
      Si la respuesta es correcta, `CheckTheAnswer()` devuelve `true`. El controlador de eventos detiene el temporizador, muestra un mensaje de felicitación y hace que el botón **Iniciar** esté disponible de nuevo. De lo contrario, la prueba continúa.  
   
