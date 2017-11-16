@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
 En este documento se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.  
@@ -50,7 +35,7 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |Animaciones|Get/Set (Boolean)|Determina si el entorno de desarrollo integrado (IDE) utiliza animación en la barra de estado.|  
 |AnimationSpeed|Get/Set (Short)||  
 |AutoAdjustExperience|Get/Set (Boolean)|Ajusta automáticamente la experiencia visual según el rendimiento del cliente.|  
-|RichClientExperienceOptions|Get/Set (Enum)|Habilita la experiencia visual de cliente enriquecido con valores de <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|RichClientExperienceOptions|Get/Set (Enum)|Habilita la experiencia visual de cliente enriquecida con los valores de <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
 |CloseButtonActiveTabOnly|Get/Set (Boolean)|Determina si el botón **Cerrar** aparece solo en la pestaña activa.|  
 |AutohidePinActiveTabOnly|Get/Set (Boolean)|Determina si el botón **Ocultar automáticamente** afecta solo a la pestaña activa.|  
   
@@ -71,7 +56,7 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Determina si al abrir un nuevo archivo se vuelve a utilizar la ventana de documento actual si se guarda el documento actual. `false` significa que siempre se abrirá una nueva ventana de documento para cada documento que se abra.|  
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Determina si el entorno vuelve a cargar automáticamente los archivos abiertos en el IDE cuando el sistema operativo notifica al IDE de que los archivos se modificaron en el disco.|  
 |AutoloadExternalChanges|Get/Set (Boolean)|Determina si las modificaciones externas detectadas para abrir los documentos vuelven a cargar automáticamente el archivo modificado si no se modifica el documento abierto. Si se modifica el documento abierto y esta propiedad es`true`, el IDE muestra un mensaje como si esta propiedad fuera `false`.|  
-|InitializeOpenFileFromCurrentDocument|Get/Set (Boolean)|Determina si el comando <xref:EnvDTE.DTEClass.OpenFile%2A> propaga el nombre de directorio y archivo desde el último documento activo o desde el último lugar en el que se abrió un archivo.|  
+|InitializeOpenFileFromCurrentDocument|Get/Set (Boolean)|Determina si el comando <xref:EnvDTE.DTEClass.OpenFile%2A> propaga el directorio y el nombre de archivo desde el último documento activo o desde el último lugar en el que abrió un archivo.|  
 |MiscFilesProjectSavesLastNItems|Get/Set (Short)|Determina cuántos archivos graba el proyecto Archivos varios. Como resultado, puede ver lo último que abrió como archivos varios en el disco cuando vuelva a usar el IDE.|  
 |ShowMiscFilesProject|Get/Set (Boolean)|Determina si se muestra el proyecto Archivos varios.|  
 |CheckForConsisentLineEndings|Get/Set (Boolean)|Comprueba que los finales de línea son coherentes en la carga de archivos.|  
@@ -163,7 +148,7 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |ConfirmTaskDeletion|Get/Set (Boolean)|Especifica si se muestra un cuadro de confirmación al eliminar tareas desde la **Lista de tareas**.|  
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Especifica si recibe una advertencia al agregar una tarea de usuario que no se mostrará.|  
 |DontShowFilePaths|Get/Set (Boolean)|Especifica si se muestran las rutas de acceso completas al archivo en la Lista de tareas.|  
-|CommentTokens|SafeArray|Devuelve una matriz SafeArray de valores de token de comentarios. Cada uno tiene los campos `Name` (cadena) y `Priority` (<xref:EnvDTE.vsTaskPriority>, Alta, Media o Baja).|  
+|CommentTokens|SafeArray|Devuelve una matriz SafeArray de valores de token de comentarios. Cada uno tiene los campos `Name` (cadena) y `Priority` (<xref:EnvDTE.vsTaskPriority>, alto, medio o bajo).|  
   
 ## <a name="web-browser"></a>Explorador web  
  `DTE.Properties("Environment", "WebBrowser")`  
@@ -172,7 +157,7 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
 |------------------------|-----------|-----------------|  
 |HomePage|Get/Set (String)|Representa la dirección URL de la página principal.|  
 |SearchPage|Get/Set (String)|Representa la URL de la página de búsqueda.|  
-|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Origen, Diseño, Externa).|  
+|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (origen, diseño, externa).|  
 |ViewSourceExternalProgram|Get/Set (String)|Ruta de acceso del visor de origen externo.|  
   
 ## <a name="see-also"></a>Vea también  

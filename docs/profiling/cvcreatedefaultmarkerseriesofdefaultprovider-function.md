@@ -1,30 +1,29 @@
 ---
-title: "CvCreateDefaultMarkerSeriesOfDefaultProvider (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider"
-helpviewer_keywords: 
-  - "CvCreateDefaultMarkerSeriesOfDefaultProvider (método)"
+title: "CvCreateDefaultMarkerSeriesOfDefaultProvider (función) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
+helpviewer_keywords: CvCreateDefaultMarkerSeriesOfDefaultProvider method
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 076a815be9a900b45fffee95856caa003d8155d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CvCreateDefaultMarkerSeriesOfDefaultProvider (Funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Crea una serie predeterminada de marcadores para un proveedor predeterminado.  
+# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider (Función)
+Crea la serie de marcadores predeterminados de un proveedor predeterminado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(  
@@ -33,18 +32,18 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppProvider`  
- Dirección de la variable de objeto de proveedor.  La dirección no puede ser NULL, la variable puede tener cualquier valor.  
+ Dirección de la variable de objeto de proveedor. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.  
   
  `ppMarkerSeries`  
- Dirección de la variable del objeto de serie del marcador.  La dirección no puede ser NULL, la variable puede tener cualquier valor.  
+ Dirección de la variable de objeto de serie de marcador. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.  
   
-## Valor devuelto  
- S\_OK cuando las ejecuciones del proveedor y el marcador se crean correctamente o un código de error en caso de que se presente alguno.  Utilizar macros SUCCEEDED\/FAILED para comprobar si hay condición de error.  
+## <a name="return-value"></a>Valor devuelto  
+ S_OK cuando la serie de proveedor y marcador se crea correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkers.h  
   
-## Vea también  
- [Referencia de la biblioteca C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)

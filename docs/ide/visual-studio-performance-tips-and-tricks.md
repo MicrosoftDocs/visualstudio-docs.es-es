@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -36,14 +36,6 @@ Las recomendaciones de rendimiento de Visual Studio están previstas para situac
 ## <a name="configure-solution-and-projects"></a>Configuración de solución y proyectos
 
 Si tiene una solución muy grande con muchos proyectos, le puede resultar beneficioso realizar las siguientes optimizaciones:
-
-- **Habilite la carga de solución ligera**
-
-    El empleo de **Carga de solución ligera** puede mejorar el rendimiento de la CPU y la memoria al aplazar la carga de algunos proyectos de la solución. También puede habilitar esta característica solución a solución. Esta opción está desactivada de forma predeterminada.
-
-    Para habilitar **Carga de solución ligera**, elija **Herramientas > Opciones > Proyectos y soluciones > Carga de solución ligera**.
-
-    Algunas características del IDE no están habilitadas en este modo. Para determinar si esta opción puede ayudar, vea [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) (Acortar el tiempo de carga de una solución) y [Optimize solution loading](../ide/optimize-solution-loading-in-visual-studio.md) (Optimizar la carga de soluciones).
 
 - **Descargue proyectos**
 

@@ -1,91 +1,92 @@
 ---
-title: "C&#243;mo: Establecer los permisos de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "generación de perfiles, establecimiento de permisos"
-  - "seguridad [Visual Studio ALM], establecimiento de permisos"
-  - "permisos [Visual Studio ALM], generación de perfiles"
-  - "herramientas de generación de perfiles, establecimiento de permisos de perfiles"
-  - "herramientas de rendimiento, establecimiento de permisos de perfiles"
+title: "Cómo: Establecer permisos | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling, setting permissions
+- security [Visual Studio ALM], setting permissions
+- permissions [Visual Studio ALM], profiling
+- profiling tools, setting profiling permissions
+- performance tools, setting profiling permissions
 ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
-caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Establecer los permisos de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este tema se describe cómo el administrador de un equipo concede los permisos de seguridad necesarios para generar perfiles a un usuario o grupo que no tiene permisos de administrador en ese equipo.  
+# <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
+Este tema describe cómo un administrador de un equipo concede los permisos de seguridad necesarios para la generación de perfiles a un usuario o grupo que no tiene permisos de administrador en ese equipo.  
   
- Un principio de seguridad básico dice que las aplicaciones deben ejecutarse con los permisos que necesitan y ninguno más.  Este principio también se aplica a los usuarios.  Si los usuarios gozan de plena eficacia cuando inician sesión como miembros del grupo Usuarios en lugar del grupo Administradores, no se les deben conceder permisos de administrador.  En el primer procedimiento, "Crear una cuenta de usuario con permisos de Usuario" se describe cómo crear una cuenta de usuario para un miembro del grupo Usuarios.  
+ Un principio de seguridad básico indica que las aplicaciones se deberían ejecutar solo con los permisos que necesitan. Este principio se aplica también a los usuarios. Si los usuarios pueden ser totalmente efectivos cuando inician sesión como miembros del grupo Usuarios en lugar del grupo Administradores, no se les deben conceder permisos de administrador. En el primer procedimiento, "Para crear una cuenta de usuario que tenga permisos de usuario", se describe cómo crear una cuenta de usuario para un miembro del grupo Usuarios.  
   
  **Requisitos**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Los miembros del grupo Usuarios necesitarán tener acceso a las carpetas y los archivos del disco que se comparten con otros miembros del equipo.  En el segundo procedimiento, "Conceder acceso a los archivos compartidos del proyecto", se describe cómo conceder dicho acceso.  
+ Los miembros del grupo Usuarios necesitarán acceso a las carpetas y archivos en disco que se comparten con otros miembros del equipo. En el segundo procedimiento, "Para conceder acceso a los archivos de proyecto compartido", se describe cómo conceder acceso.  
   
- Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación de perfiles si un administrador les concede acceso al controlador de software para las herramientas de generación de perfiles.  En el último procedimiento, "Conceder acceso al controlador de generación de perfiles", se describe cómo conceder acceso a ese controlador.  
+ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación de perfiles si un administrador les concede acceso al controlador de software para las herramientas de generación de perfiles. En el último procedimiento, "Para conceder acceso al controlador de generación de perfiles", se describe cómo conceder acceso a ese controlador.  
   
 > [!NOTE]
->  Se necesitan permisos de administrador para poder seguir los pasos de estos procedimientos.  
+>  Necesita permisos de administrador para seguir los pasos de estos procedimientos.  
   
-### Crear una cuenta de usuario con permisos de Usuario  
+### <a name="to-create-a-user-account-that-has-user-permissions"></a>Para crear una cuenta de usuario que tenga permisos de usuario  
   
-1.  Haga clic con el botón secundario del mouse en **Mi PC** y, a continuación, haga clic en **Administrar**.  
+1.  Haga clic con el botón derecho en **Mi equipo** y después haga clic en **Administrar**.  
   
-     Se abrirá la ventana **Administración de equipos**.  
+     Se abre la ventana **Administración de equipos**.  
   
-2.  Expanda **Usuarios y grupos locales**.  
+2.  Expandir **Grupos y usuarios locales**.  
   
-3.  Haga clic con el botón secundario del mouse en la carpeta **Usuarios** y, a continuación, haga clic en **Usuario nuevo**.  
+3.  Haga clic con el botón derecho en la carpeta **Usuarios** y después haga clic en **Nuevo usuario**.  
   
-     Aparecerá el cuadro de diálogo **Usuario nuevo**.  
+     Aparece el cuadro de diálogo **New usuario**.  
   
-4.  Rellene los campos de este cuadro de diálogo con la información correspondiente a la cuenta de usuario que va a crear.  Especifique una contraseña.  Opcionalmente, active la casilla que exige al usuario cambiar la contraseña la siguiente vez que inicie sesión.  
+4.  Complete los campos de este cuadro de diálogo con la información de la cuenta de usuario que está creando. Especifique una contraseña. Si lo desea, active la casilla que exige al usuario cambiar la contraseña en el siguiente inicio de sesión.  
   
 5.  Haga clic en **Crear** y después en **Cerrar**.  
   
-     El nuevo usuario aparecerá en el grupo Usuarios, un grupo que no tiene permisos de Administrador.  
+     El nuevo usuario aparece en el grupo Usuarios, un grupo de usuarios que no tienen permisos de administrador.  
   
-### Conceder acceso a los archivos compartidos del proyecto  
+### <a name="to-grant-access-to-shared-project-files"></a>Para conceder acceso a archivos compartidos del proyecto  
   
-1.  En el Explorador de Windows \(o Explorador de archivos\), busque la raíz del árbol de carpetas de los archivos de proyecto utilizados por este usuario y compartidos con el equipo del proyecto.  
+1.  En el Explorador de Windows (o Explorador de archivos), busque la raíz del árbol de carpetas para los archivos de proyecto utilizados por este usuario y compartidos por el equipo del proyecto.  
   
-     La ruta de acceso de esta carpeta será similar a la siguiente:  
+     La ruta de acceso de esta carpeta puede ser similar a la siguiente:  
   
     ```  
     D:\ourProject  
     ```  
   
-2.  Haga clic con el botón secundario del mouse en la carpeta y, a continuación, haga clic en **Propiedades**.  
+2.  Haga clic con el botón derecho en la carpeta y después haga clic en **Propiedades**.  
   
-     El cuadro de diálogo de **\<Nombre de carpeta\> Propiedades** aparece.  
+     Aparece el cuadro de diálogo **\<Nombre de carpeta > Propiedades**.  
   
-3.  Haga clic en la ficha **Seguridad**.  
+3.  Haga clic en la pestaña **Seguridad** .  
   
-4.  Haga clic en el nombre de la cuenta del usuario en el cuadro **Nombres de grupos o usuarios**.  
+4.  Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.  
   
-5.  En el cuadro de **Permisos para \<nombre de usuario\>** , active la casilla para **Control total**.  
+5.  En el cuadro **Permisos para \<nombre de usuario >**, seleccione la casilla **Control total**.  
   
 6.  Haga clic en **Aceptar**.  
   
-     De esta forma se conceden permisos al usuario para el árbol de carpetas compartidas que comienza por la carpeta seleccionada en el paso 5.  
+     Esto concede permisos al usuario para el árbol de carpetas compartidas que comienza con la carpeta seleccionada en el paso 5.  
   
-### Conceder acceso al controlador de generación de perfiles  
+### <a name="to-grant-access-to-the-profiling-driver"></a>Para conceder acceso al controlador de generación de perfiles  
   
 1.  Abra un símbolo del sistema como administrador.  
   
-2.  Cambie al directorio:  
+2.  Cambie el directorio a:  
   
     ```  
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
@@ -97,35 +98,35 @@ En este tema se describe cómo el administrador de un equipo concede los permiso
     vsperfcmd /admin:driver,start /admin:service,start  
     ```  
   
-     Este comando instala e inicia el controlador correspondiente a las herramientas de generación de perfiles.  
+     Este comando instala e inicia el controlador para las herramientas de generación de perfiles.  
   
-     Este comando inicia el controlador y el servicio de generación de perfiles de manera que los usuarios sin permisos de administrador puedan utilizar las características de generación de perfiles disponibles en su espacio de proceso de usuario.  Sólo un administrador puede ejecutar el comando; se produce un error con los usuarios que no tienen permisos administrativos.  
+     Este comando inicia el controlador y el servicio de generación de perfiles para que los usuarios que no son administradores puedan utilizar las funciones de generación de perfiles que están disponibles en su espacio de proceso de usuario. Solo los administradores pueden ejecutar el comando; si intenta ejecutarlo un usuario que no es administrador, se producirá un error.  
   
-     Tenga en cuenta que los efectos de este paso se deshacen al reiniciar el equipo, a menos que también lleve a cabo el último paso del procedimiento.  
+     Tenga en cuenta que los efectos de este paso se deshacen al reiniciar el equipo, a menos que también realice el paso final de este procedimiento.  
   
-4.  Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por parte de un usuario o grupo que no tiene acceso de administrador al equipo:  
+4.  Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por un usuario o grupo que no tiene acceso de administrador en el equipo:  
   
     ```  
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
     ```  
   
-     Este comando concede \<el acceso\> de la cuenta de nombre de usuario\> o \<del nombre de grupo a las herramientas de generación de perfiles.  \<La opción correcta\> determina la funcionalidad que el usuario puede tener acceso.  \<La opción correcta\> puede ser uno o más de los siguientes valores:  
+     Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:  
   
-    -   FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recolección de datos de rendimiento de los servicios, el muestreo y la generación de perfiles entre sesiones.  
+    -   FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
   
-    -   SampleProfiling: permite al acceso a los métodos de generación de perfiles de muestreo.  
+    -   SampleProfiling: permite el acceso a los métodos de generación de perfiles de muestra.  
   
     -   CrossSession: permite al acceso a la generación de perfiles entre sesiones que se requiere para los servicios de generación de perfiles.  
   
-5.  \(Opcional\) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el comando siguiente:  
+5.  (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:  
   
     ```  
     vsperfcmd /admin:driver,autostart,on  
     ```  
   
- Después de iniciar sesión, los usuarios especificados podrán utilizar las herramientas de generación de perfiles aunque no tengan permisos de administrador.  
+ Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)

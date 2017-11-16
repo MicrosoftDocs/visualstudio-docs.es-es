@@ -1,20 +1,19 @@
 ---
-title: Administrar propiedades de soluciones y proyectos
+title: Administrar propiedades de soluciones y proyectos | Microsoft Docs
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
+ms.openlocfilehash: 8871ab002a94a9c0bbc0063a25b4dea9cb271142
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: fefb6c5e67b21907150611b3639cc16c05812e1a
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
-## <a name="project-options"></a>Opciones de proyecto 
+## <a name="project-options"></a>Opciones de proyecto
 
 Las opciones de proyecto son específicas de cada proyecto y afectan al modo en que este se escribe, se compila y se ejecuta. Esto contrasta con las preferencias de Visual Studio para Mac, que establecen opciones específicas del usuario, y con las opciones de solución, que establecen las opciones de toda la solución. Las opciones de proyecto se almacenan en el archivo de proyecto (.csproj), para que otros desarrolladores puedan compilar y ejecutar el proyecto correctamente. Esto permite que muchos programadores trabajen en el mismo documento sin poner en peligro el formato del archivo.
 
@@ -45,4 +44,3 @@ Xamarin.iOS contiene opciones relacionadas con la firma de lote, como el perfil 
 Las opciones de solución son como las opciones de proyecto, aunque abarcan toda la solución. Proporcionan una manera de establecer la información del autor, la configuración de compilación, los estilos de formato de código y el control de versiones y una forma de asignar el proyecto de inicio de la solución.  Se puede acceder al cuadro de diálogo Opciones de la solución desde el elemento de menú **Proyecto > Opciones de la solución**, desde el elemento de menú contextual **Opciones** de la solución en el Panel de solución o al hacer doble clic en la solución en el Panel de solución:
 
  ![Opciones de solución](media/projects-and-solutions-image7.png)
-

@@ -1,28 +1,24 @@
 ---
 title: "Edición de código con Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 261cced8583b751d74701a8903a10a4584928940
-ms.contentlocale: es-es
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-r-code-in-visual-studio"></a>Edición de código de R en Visual Studio
  
 Herramientas de R para Visual Studio (RTVS) adapta la experiencia de edición de Visual Studio expresamente para R, mientras que conserva todas las características y la capacidad de usar extensiones. (Por ejemplo, si prefiere enlaces de teclado de VIM, puede instalar la [extensión gratuita VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) desde la Galería de Visual Studio).
@@ -150,4 +146,3 @@ Las opciones de la pestaña **R > Avanzadas** son específicas de RTVS:
 | Ventana interactiva | Comprobación de sintaxis en la consola de R | Desactivado | Aplica la comprobación de sintaxis en la ventana interactiva. Es posible que la comprobación de sintaxis no funcione correctamente con instrucciones multilínea. | 
 | esquematizar | Esquematización de código | Activado | Crea automáticamente regiones contraíbles para áreas como instrucciones multilínea. | 
 | Comprobación de sintaxis | Mostrar errores de sintaxis | Activado | Habilita la comprobación automática de sintaxis del código. |
-

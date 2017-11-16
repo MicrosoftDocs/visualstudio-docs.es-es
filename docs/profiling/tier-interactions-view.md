@@ -1,28 +1,27 @@
 ---
-title: "Interacciones de capas (Vista) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.tierinteraction"
-helpviewer_keywords: 
-  - "Interacciones de capas (vista)"
+title: Vista Interacciones de capas | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.tierinteraction
+helpviewer_keywords: Tier Interactions view
 ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Interacciones de capas (Vista)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución en funciones de aplicaciones de varias capas que se comunican con bases de datos a través de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)].  Los datos se recopilan solamente para las llamadas a funciones sincrónicas.  
+# <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
+La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.  
   
  **Requisitos**  
   
@@ -30,31 +29,31 @@ La generación de perfiles de interacción de capas proporciona información adi
   
  La vista de interacciones muestra datos de interacción de capas en dos paneles:  
   
--   El panel principal es un árbol jerárquico.  La fila del nivel superior contiene los datos agregados para las conexiones de bases de datos de una página [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o un proceso.  Los nodos secundarios contienen datos agregados para las conexiones de base de datos del primario.  
+-   El panel principal es un árbol jerárquico. La fila de nivel superior contiene los datos agregados para las conexiones de base de datos de un página de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o un proceso. Los nodos secundarios contienen datos agregados para las conexiones de base de datos del elemento primario.  
   
--   Al hacer clic en un nodo de llamada de base de datos en el panel principal, los datos para la instancia de la llamada de la base de datos se muestran en el panel de detalles.  
+-   Al hacer clic en un nodo de llamada a la base de datos en el panel principal, los datos de la instancia de la llamada a la base de datos se muestran en el panel de detalles.  
   
- El tiempo se muestra como el número de milisegundos o el número de ciclos de reloj de la CPU.  Para cambiar la unidad de tiempo mostrada, haga clic en el menú **Herramientas**, haga clic en **Opciones** y, a continuación, elija una de las opciones **Mostrar valores de hora como**.  
+ La hora se muestra como el número de milisegundos o el número de ciclos de reloj de la CPU. Para cambiar la unidad de tiempo que se muestra, haga clic en el menú **Herramientas**, haga clic en **Opciones** y después elija uno de las opciones de **Mostrar valores de tiempo como**.  
   
-## Panel principal  
-  
-|Columna|Descripción|  
-|-------------|-----------------|  
-|**Name**|-   Para una fila del nivel superior, el nombre del proceso para el que se generan perfiles o página web.<br />-   En una fila de conexión a base de datos, el nombre del servidor que hospeda la base de datos.|  
-|**Base de datos**|El nombre de la base de datos \(solamente las filas de conexión de base de datos\).|  
-|**Total**|Número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|  
-|**Tiempo total transcurrido**|Tiempo total empleado en ejecutar cualquiera de las solicitudes desde el proceso, la página web o la conexión de base de datos.|  
-|**Tiempo máximo transcurrido**|El tiempo máximo empleado en ejecutar cualquiera de las solicitudes desde el proceso, la página web o la conexión de base de datos.|  
-|**Tiempo mínimo transcurrido**|El tiempo mínimo empleado en ejecutar cualquiera de las solicitudes desde el proceso, la página web o la conexión de base de datos.|  
-|**Promedio de tiempo transcurrido**|El tiempo medio empleado en ejecutar una solicitud desde el proceso, la página web o la conexión de base de datos.|  
-  
-## Panel de detalles de la conexión de base de datos  
+## <a name="master-pane"></a>Panel principal  
   
 |Columna|Descripción|  
-|-------------|-----------------|  
-|**Texto del comando**|Consulta SQL de la solicitud.|  
-|**Recuento de consultas**|Número de veces que se ejecutó la consulta.|  
-|**Tiempo total transcurrido**|Tiempo total empleado en ejecutar las instancias de la consulta.|  
-|**Tiempo máximo transcurrido**|El tiempo máximo empleado en ejecutar cualquiera de las instancias de la consulta.|  
-|**Tiempo mínimo transcurrido**|El tiempo mínimo empleado en ejecutar cualquiera de las instancias de la consulta.|  
-|**Promedio de tiempo transcurrido**|El tiempo medio empleado en ejecutar una instancia de la consulta.|
+|------------|-----------------|  
+|**Nombre**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
+|**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|  
+|**Recuento**|El número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|  
+|**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
+|**Tiempo máximo transcurrido**|El tiempo máximo dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
+|**Tiempo mínimo transcurrido**|El tiempo mínimo dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
+|**Promedio de tiempo transcurrido**|El promedio de tiempo dedicado a ejecutar una solicitud del proceso, la página web o la conexión de base de datos.|  
+  
+## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos  
+  
+|Columna|Descripción|  
+|------------|-----------------|  
+|**Texto de comando**|La consulta SQL de la solicitud.|  
+|**Número de consultas**|El número de veces que se ejecutó la consulta.|  
+|**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar las instancias de la consulta.|  
+|**Tiempo máximo transcurrido**|El tiempo máximo dedicado a ejecutar cualquier instancia de la consulta.|  
+|**Tiempo mínimo transcurrido**|El tiempo mínimo dedicado a ejecutar cualquier instancia de la consulta.|  
+|**Promedio de tiempo transcurrido**|El tiempo mínimo dedicado a ejecutar una instancia de la consulta.|

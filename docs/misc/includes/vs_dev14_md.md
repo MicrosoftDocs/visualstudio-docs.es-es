@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 9b1f6eb7dc3091349c5fb91e480f6e673ecd7bf8
+ms.openlocfilehash: a2e260a646b8da0e3348d5d912fe3ed683c5c5b8
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
 ---
-.NET Framework 3.5 Service Pack 1
+Visual Studio 2015

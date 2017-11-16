@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 27dc4d56a0608ddf031b47775bd9aaef20e24194
-ms.contentlocale: es-es
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] más fácilmente con los accesos directos que se muestran en este tema. Este tema solo es un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).  
@@ -90,19 +73,18 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |-|-|  
 |Modo de sugerencia de IntelliSense|Ctrl+Alt+Espacio (alternancia)|  
 |Forzar la visualización de IntelliSense|Ctrl+J|  
-|Etiquetas inteligentes|Ctrl+.|  
+|Acciones rápidas|Ctrl+.|  
 |Selector de fragmentos de código|Ctrl+K, X o ?, Tab (VB)|  
 |Delimitar con|Ctrl+K, S|  
 |Mostrar información rápida|Ctrl+K, I|  
 |Navegar a|Ctrl+,|  
-|Ir a definición|F12|  
-|Definición de Peek|Alt+F12|  
-|Ir a la pila de definiciones|Ctrl+Mayús+8 (Atrás), Ctrl+Mayús+7 (Adelante)|  
 |Navegar por las referencias resaltadas|Ctrl+Mayús+Arriba (Anterior), Ctrl+Mayús+Abajo (Siguiente)|  
 |Zoom del editor|Ctrl+Mayús+> (entrada), Ctrl+Mayús+< (salida)|  
 |Selección de bloques|Mantenga presionada la tecla Alt mientras arrastra el mouse, Mayús+Alt+teclas de dirección|  
 |Subir o bajar línea|Alt+Arriba/Alt+Abajo|  
+|Ir a definición|F12|  
 |Definición de Peek|Alt+F12|  
+|Ir a la pila de definiciones|Ctrl+Mayús+8 (Atrás), Ctrl+Mayús+7 (Adelante)|  
 |Cerrar la ventana Definición de Peek|Esc|  
 |Promover la ventana Definición de Peek a una pestaña de documento normal|Ctrl+Alt+Inicio|  
 |Navegar entre varias ventanas Definición de Peek|Ctrl+Alt+- y Ctrl+Alt+=|  
@@ -146,4 +128,3 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
  [Visual Studio Toolbox on Channel 9 (Herramientas de Visual Studio en Channel 9)](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
  [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
  [Visual Studio Connect Bugs (Errores de conexión de Visual Studio)](http://connect.microsoft.com/VisualStudio)
-

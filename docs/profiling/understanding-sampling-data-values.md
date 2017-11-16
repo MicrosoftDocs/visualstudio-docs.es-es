@@ -1,56 +1,57 @@
 ---
-title: "Introducci&#243;n a los valores de datos de muestreo en las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "método de generación de perfiles mediante muestreo"
-  - "herramientas de generación de perfiles, muestreo"
+title: "Introducción a los valores de datos de muestreo | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- sampling profiling method
+- Profiling Tools, sampling
 ms.assetid: fad540a8-24b6-4ff9-91ce-e67e9a58399d
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 761f08adead5037056e07031903517e4f5d76744
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Introducci&#243;n a los valores de datos de muestreo en las herramientas de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El método de generación de perfiles de *muestreo* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interrumpe el procesador del equipo a intervalos establecidos y recopila la pila de llamadas a funciones.  Una *pila de llamadas* es una estructura dinámica que almacena información sobre las funciones que se ejecutan en el procesador.  
+# <a name="understanding-sampling-data-values"></a>Introducción a los valores de datos de muestreo
+El método de generación de perfiles de *muestreo* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interrumpe el procesador del equipo a intervalos establecidos y recopila la pila de llamadas a función. Una *pila de llamadas* es una estructura dinámica que almacena información sobre las funciones que se ejecutan en el procesador.  
   
  **Requisitos**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- El análisis del generador de perfiles determina si el procesador está ejecutando código en el proceso de destino.  Si el procesador no está ejecutando código en dicho proceso, se descarta la muestra.  
+ El análisis del generador de perfiles determina si el procesador está ejecutando código en el proceso de destino. Si el procesador no está ejecutando código en el proceso de destino, se descarta la muestra.  
   
- Si el procesador está ejecutando el código de destino, el generador de perfiles incrementa los recuentos de muestras para cada función de la pila de llamadas.  En el momento que se toma el ejemplo, solo una función de la pila de llamadas está ejecutando código.  Las demás funciones de la pila son elementos primarios en la jerarquía de las llamadas de función que están esperando la vuelta de las funciones secundarias.  
+ Si el procesador está ejecutando código en el proceso de destino, el generador de perfiles incrementa los recuentos de muestras para cada función en la pila de llamadas. En el momento en que se tomó la muestra, solo una función en la pila de llamadas está ejecutando el código. Las demás funciones de la pila son elementos primarios en la jerarquía de llamadas de función que están esperando a que las secundarias devuelvan información.  
   
- En el evento de ejemplo, el generador de perfiles incrementa el recuento de muestras *exclusivas* de la función que está ejecutando sus instrucciones.  Dado que una muestra exclusiva forma también parte del número de muestras totales \(*inclusivas*\) de la función, también se incrementa el recuento de muestras inclusivas de la función actualmente activa.  
+ Para el evento de muestreo, el generador de perfiles incrementa la muestra *exclusiva* del recuento de la función que está ejecutando actualmente sus instrucciones. Dado que una muestra exclusiva también forma parte de las muestras totales (*inclusivas*) de la función, también se incrementa el recuento de muestras inclusivas de la función actualmente activa.  
   
- El generador de perfiles incrementa el recuento de muestras inclusivas del resto de las funciones de la pila de llamadas.  
+ El generador de perfiles incrementa el recuento de muestras inclusivas de todas las demás funciones en la pila de llamadas.  
   
-## Muestras inclusivas  
- Número total de muestras recopiladas durante la ejecución de la función de destino.  
+## <a name="inclusive-samples"></a>Muestras inclusivas  
+ El número total de muestras recopiladas durante la ejecución de la función de destino.  
   
- Incluye las muestras recopiladas durante la ejecución directa del código de función y las muestras recopiladas durante la ejecución de funciones secundarias a las que llama la función de destino.  
+ Esto incluye muestras recopiladas durante la ejecución directa del código de función y las muestras recopiladas durante la ejecución de las funciones secundarias llamadas por la función de destino.  
   
-## Muestras exclusivas  
- Número de muestras recopiladas durante la ejecución directa de las instrucciones de la función de destino.  
+## <a name="exclusive-samples"></a>Muestras exclusivas  
+ El número de muestras recopiladas durante la ejecución directa de las instrucciones de la función de destino.  
   
  Entre las muestras exclusivas no se incluyen las muestras recopiladas durante la ejecución de funciones a las que llama la función de destino.  
   
-## Porcentaje de inclusión  
- Porcentaje del número total de muestras inclusivas de la función o rango de datos en la generación de perfiles.  
+## <a name="inclusive-percent"></a>Porcentaje de inclusivas  
+ El porcentaje del número total de muestras inclusivas de la generación de perfiles que son muestras inclusivas de la función o el rango de datos.  
   
-## Porcentaje de exclusión  
- Porcentaje del número total de muestras exclusivas de la función o rango de datos en la generación de perfiles.  
+## <a name="exclusive-percent"></a>Porcentaje de exclusivas  
+ El porcentaje del número total de muestras exclusivas de la generación de perfiles que son muestras exclusivas de la función o el rango de datos.  
   
-## Vea también  
- [Cómo: Elegir métodos de recolección](../profiling/how-to-choose-collection-methods.md)   
- [Analizar los datos de las Herramientas de generación de perfiles](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Vea también  
+ [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)   
+ [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

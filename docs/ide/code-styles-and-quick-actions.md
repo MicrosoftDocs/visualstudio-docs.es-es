@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 03/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: csharp
@@ -16,28 +15,12 @@ manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: acc01617fffd7465cee01267482112aac5e352fc
-ms.contentlocale: es-es
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: d42bb9165748b7282aa42f062b545add62ad1c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-styles-and-quick-actions"></a>Estilos de código y acciones rápidas
 Para establecer preferencias de estilo de código para los proyectos de C# y Visual Basic, abra la ventana **Herramientas > Opciones** y, después, seleccione **Editor de texto > C# / Basic > Estilo de código > General**.  Las opciones configuradas en esta ventana se aplican a la máquina local.  Cada elemento de la lista mostrará una vista previa de la preferencia cuando se seleccione, como se muestra a continuación.
 
@@ -47,5 +30,5 @@ Para cada elemento, puede establecer el valor de **Preferencia** y **Gravedad** 
 
 También puede administrar la configuración del estilo de código para .NET con un archivo [EditorConfig](editorconfig-code-style-settings-reference.md).  En este caso, la configuración seleccionada en la ventana Opciones será la configuración de reserva y el archivo EditorConfig tendrá prioridad.  Puede usar este archivo para aplicar y configurar el estilo de codificación para todo el repositorio o equipo.
 
-# <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 * [Acciones rápidas](quick-actions.md)

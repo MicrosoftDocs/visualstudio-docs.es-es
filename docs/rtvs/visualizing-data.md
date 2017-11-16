@@ -1,27 +1,24 @@
 ---
 title: "Visualización de datos con las herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 496619c9-4005-4c20-baf6-80b4bb1ceb56
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 48aaf1c8e02c1de84c36d8bff7d9b73eb4bd3af7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: af9627ba4eb245f4c4947b5d365449fce76c166c
-ms.contentlocale: es-es
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
 El trazado es una parte fundamental del flujo de trabajo de un científico de datos. En las herramientas de R para Visual Studio (RTVS), toda la actividad de trazado se centra en una o más ventanas de trazado, que están diseñadas para mejorar la productividad de esta actividad principal.
@@ -103,4 +100,3 @@ Puede manipular ventanas de trazado mediante programación desde el código de R
 - `dev.new()`: crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).
 - `dev.set(<device number>)`: establecer el dispositivo de gráficos activo.
 - `dev.off()`: eliminar el dispositivo activo.
-

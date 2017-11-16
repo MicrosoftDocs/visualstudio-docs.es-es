@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,30 +19,15 @@ helpviewer_keywords:
 - outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 Use este cuadro de diálogo para modificar la configuración del formato del editor, la refactorización de código y los comentarios de documentación XML para Visual C#. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto**, expanda **C#** y, después, haga clic en **Opciones avanzadas**.  
@@ -67,13 +51,13 @@ Use este cuadro de diálogo para modificar la configuración del formato del edi
   
 -   Las ediciones [Editar y continuar](../../debugger/edit-and-continue.md) no válidas son moradas.  
   
- Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas con información sobre el error.  
+Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas con información sobre el error.  
   
- Mostrar errores semánticos activos  
- Identifica determinados errores de compilación sin una compilación explícita, por ejemplo, mediante la declaración y el uso de un tipo desconocido o haciendo referencia a una propiedad desconocida.  
+Mostrar errores semánticos activos  
+Identifica determinados errores de compilación sin una compilación explícita, por ejemplo, mediante la declaración y el uso de un tipo desconocido o haciendo referencia a una propiedad desconocida.  
   
- Resaltar referencias al símbolo bajo el cursor  
- Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.  
+Resaltar referencias al símbolo bajo el cursor  
+Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.  
   
 ## <a name="refactoring"></a>Refactorización  
  Comprobar resultados de refactorización  

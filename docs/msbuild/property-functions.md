@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 02/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, property functions
+helpviewer_keywords: MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 03b4eba806256f0bc6a37c6639a3a9cc44abd3ae
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para evaluar los scripts de MSBuild. Las funciones de propiedad se pueden usar siempre que aparezcan propiedades. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.  
@@ -234,7 +217,7 @@ $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)
  Esta función de propiedad tiene la sintaxis siguiente:  
 
 ```  
-$([MSBuild]::EnsureTrailingSlash('$(PathProperty)')  
+$([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```  
 
 ##  <a name="msbuild-getdirectorynameoffileabove"></a>GetDirectoryNameOfFileAbove de MSBuild  
@@ -358,4 +341,3 @@ Output:
 ## <a name="see-also"></a>Vea también
 [Propiedades de MSBuild](../msbuild/msbuild-properties.md)   
 [Información general sobre MSBuild](../msbuild/msbuild.md)
-

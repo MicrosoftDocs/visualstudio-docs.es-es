@@ -1,40 +1,38 @@
 ---
-title: "marker_series::~marker_series (Destructor) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_series::~marker_series"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::~marker_series (destructor)"
+title: marker_series::~marker_series (Destructor) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_series::~marker_series
+helpviewer_keywords: Concurrency::diagnostic::marker_series::~marker_series destructor
 ms.assetid: 5632523b-fd58-40aa-8523-f29ee9083a65
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1928b9c4dd42c9d5d27c3fa677c97b671ac36bb7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::~marker_series (Destructor)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Destruye el objeto marker\_series y libera todos los recursos asignados.  
+# <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series (Destructor)
+Destruye el objeto marker_series y libera todos los recursos asignados.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 ~marker_series();  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostico  
+ **Espacio de nombres:** Concurrency::diagnostic  
   
-## Vea también  
- [marker\_series \(Clase\)](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Vea también  
+ [Clase marker_series](../profiling/marker-series-class.md)

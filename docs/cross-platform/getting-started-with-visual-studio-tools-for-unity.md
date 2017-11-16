@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 04/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a923d3fa962ee826d86a1c6946ae87a469b728d6
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 03fd3a4cc84852ad922dec417850a0f4a0b1ea1c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introducción a Visual Studio Tools para Unity
 En esta sección, aprenderá a instalar Visual Studio Tools para Unity y a configurar el proyecto de Unity para trabajar con Visual Studio.  
@@ -129,8 +112,8 @@ En esta sección, aprenderá a instalar Visual Studio Tools para Unity y a confi
  ![Abra el proyecto de Unity en Visual Studio.](../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")  
 
 ## <a name="next-steps"></a>Pasos siguientes  
+
  Para obtener información sobre el uso y la depuración de su proyecto Unity en Visual Studio, vea [Uso de Visual Studio Tools para Unity](../cross-platform/using-visual-studio-tools-for-unity.md).  
 
 ## <a name="see-also"></a>Vea también  
  [Página principal de Unity](http://unity3d.com)
-

@@ -1,37 +1,36 @@
 ---
-title: "Segmento de escala de tiempo vac&#237;o | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.empty"
-helpviewer_keywords: 
-  - "Visualizador de simultaneidad, segmento de escala de tiempo vacío"
+title: "Segmento de escala de tiempo vacío | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.empty
+helpviewer_keywords: Concurrency Visualizer, empty timeline segment
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b8cc25d03d4565f33ff42267ea0af1c7c31cbfd8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Segmento de escala de tiempo vac&#237;o
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En el Visualizador de simultaneidad, el motivo para que una sección de la escala de tiempo esté vacía \(tiene un fondo blanco\) depende del tipo de canal.  
+# <a name="empty-timeline-segment"></a>Segmento de escala de tiempo vacío
+En el visualizador de simultaneidad, el motivo por el que una sección de la escala de tiempo está vacía (tiene un fondo blanco) depende del tipo de canal.  
   
--   Para un canal de subproceso CPU, significa que el subproceso no ha existido durante una parte de la escala de tiempo.  Si está interesado en el subproceso, puede encontrar su sección en ejecución utilizando el zoom o la barra de desplazamiento horizontal.  
+-   Un canal de subproceso de CPU, significa que el subproceso no existió durante esta parte de la escala de tiempo. Si está interesado en el subproceso, puede encontrar su sección en ejecución mediante el control de zoom o el desplazamiento horizontal.  
   
--   Para un canal I\/O, significa que no ha ocurrido ningún acceso de disco en nombre del proceso de destino en ese momento.  
+-   Para un canal de E/S, significa que no se ha producido ningún acceso al disco en nombre del proceso de destino en ese momento.  
   
--   Para un canal de DirectX, significa que no se ha realizado ningún trabajo GPU en nombre del proceso de destino durante una parte de la escala de tiempo.  
+-   Para un canal de DirectX, significa que no se ha realizado ningún trabajo de GPU en nombre del proceso de destino durante esta parte de la escala de tiempo.  
   
--   Para un canal de marcador, significa que no se generaron marcadores.  
+-   Un canal de marcador, significa que no se generó ningún marcador.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
- [Zoom \(control\) \(Vista de subprocesos\)](../profiling/zoom-control-threads-view.md)
+ [Control de zoom (vista de subprocesos)](../profiling/zoom-control-threads-view.md)

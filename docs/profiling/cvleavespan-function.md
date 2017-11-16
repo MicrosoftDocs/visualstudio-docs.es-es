@@ -1,30 +1,29 @@
 ---
-title: "CvLeaveSpan (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvLeaveSpan"
-helpviewer_keywords: 
-  - "CvLeaveSpan (método)"
+title: "CvLeaveSpan (función) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvLeaveSpan
+helpviewer_keywords: CvLeaveSpan method
 ms.assetid: 3bf65fdf-a471-4efd-ac7a-03e701bbae5d
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1886858cfedbb3651a394b9f739feadd6c77d1a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CvLeaveSpan (Funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Marca el fin del intervalo.  
+# <a name="cvleavespan-function"></a>CvLeaveSpan (Función)
+Marca el final del intervalo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CvLeaveSpan(  
@@ -32,15 +31,15 @@ HRESULT CvLeaveSpan(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pSpan`  
- Objeto intervalo devuelto por una llamada anterior a CvEnterSpan\*.  No puede ser NULL.  
+ Objeto de intervalo devuelto por una llamada anterior a CvEnterSpan*. No puede ser nulo.  
   
-## Valor devuelto  
- S\_OK cuando el mensaje se escribe correctamente.  Código de error en caso de que hubiera cualquier error.  Utilizar macros SUCCEEDED\/FAILED para comprobar si hay condición de error.  
+## <a name="return-value"></a>Valor devuelto  
+ S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkers.h  
   
-## Vea también  
- [Referencia de la biblioteca C\+\+](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)

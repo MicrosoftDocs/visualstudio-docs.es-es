@@ -1,27 +1,24 @@
 ---
 title: Integrar SQL Server con las herramientas de R para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 919dfc34-234a-489e-91bf-74a4cefae26c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: dfccd737ae7017823fdf7f2a5112fd05c8900559
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
-ms.sourcegitcommit: fa4f6a27eeacd2f016a248daa74074392b1137f2
-ms.openlocfilehash: b7afc0b2e62245e30814a0bc00d455400ae1b2d8
-ms.contentlocale: es-es
-ms.lasthandoff: 07/20/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/15/2017
 ---
-
 # <a name="working-with-sql-server-and-r"></a>Trabajar con SQL Server y R
 
 La excelente compatibilidad de Visual Studio con SQL Server ayuda a los científicos de datos a trabajar con bases de datos de R y SQL mediante la capacidad de crear y ejecutar consultas de SQL, así como a trabajar con procedimientos almacenados.
@@ -71,7 +68,7 @@ En el vídeo siguiente (6m 09s) también se proporciona información general de 
 ### <a name="add-a-database-connection"></a>Agregar una conexión de base de datos
 
 1. Seleccione **Herramientas de R > Datos > Agregar conexión de base de datos** para que aparezca el cuadro de diálogo **Propiedades de la conexión**. Aquí especifique el nombre del origen de datos (SQL Server en este caso), el nombre del servidor, el modo de autenticación y el nombre de la base de datos. Seleccione **Prueba de conexión** para comprobar su entrada antes de cerrar el cuadro de diálogo.
- 
+
     ![Cuadro de diálogo Conexión SQL](media/sql-connection-string-dialog.png)
 
 1. Una vez que haya seleccionado **Aceptar** con una conexión válida, Visual Studio genera una cadena de conexión denominada `dbConnection` en un archivo `settings.R` nuevo. RTVS obtiene automáticamente (ejecuta) este archivo, por lo que puede usar la conexión inmediatamente de los scripts de R:
@@ -81,7 +78,7 @@ En el vídeo siguiente (6m 09s) también se proporciona información general de 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Escribir y probar un procedimiento almacenado de SQL
 
 Para agregar un nuevo procedimiento almacenado de SQL, haga clic con el botón derecho en su proyecto, seleccione **Agregar > Nuevo elemento...**, seleccione **Procedimiento almacenado de SQL con R** de la lista de plantillas, proporcione un nombre al archivo (`StoredProcedure.R` en este ejemplo) y seleccione **Aceptar**.
- 
+
 RTVS crea tres archivos para el procedimiento almacenado, un archivo `.R` para su código de R, un archivo `.Query.sql` para el código SQL y un archivo `.Template.sql` que combina los dos. Estos dos últimos aparecen en el Explorador de soluciones como elementos secundarios del archivo `.R`:
 
 ![Vista expandida del Explorador de soluciones del procedimiento almacenado de SQL con R](media/sql-solution-explorer-expanded.png)
@@ -159,4 +156,3 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 > [!Tip]
 > Si tiene el Explorador de objetos de SQL Server abierto en Visual Studio, su procedimiento almacenado aparece publicado en la carpeta **Programación > Procedimientos almacenados** de su base de datos. También puede ejecutarlo desde el Explorador de objetos haciendo clic con el botón derecho y seleccionando **Ejecutar procedimiento**, o llamándolo de manera interactiva desde una ventana de consulta de `.sql`.
-

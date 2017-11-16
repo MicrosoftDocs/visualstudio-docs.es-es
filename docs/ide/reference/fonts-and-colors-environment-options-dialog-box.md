@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,30 +26,15 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 209ddbe4166e7818e5ea3a1a699f6a0f1ee096e0
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
@@ -93,17 +77,17 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
     > [!NOTE]
     >  Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.  
   
- **Usar valores predeterminados**  
- Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.  
+**Usar valores predeterminados**  
+Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.  
   
- **Fuente (los tipos en negrita indican fuentes con ancho fijo)**  
- Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.  
+**Fuente (los tipos en negrita indican fuentes con ancho fijo)**  
+Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.  
   
- **Size**  
- Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.  
+**Size**  
+Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.  
   
- **Elementos para mostrar**  
- Enumera los elementos de los que puede modificar el color de primer plano y de fondo.  
+**Elementos para mostrar**  
+Enumera los elementos de los que puede modificar el color de primer plano y de fondo.  
   
 > [!NOTE]
 >  **Texto sin formato** es el elemento para mostrar predeterminado. Como tal, las propiedades asignadas a **Texto sin formato** serán reemplazadas por las propiedades asignadas a otros elementos para mostrar. Por ejemplo, si asigna el color azul al **Texto sin formato** y el color verde al **Identificador**, todos los identificadores aparecerán en verde. En este ejemplo, las propiedades del **Identificador** reemplazan las propiedades del **Texto sin formato**.  

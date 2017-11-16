@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
-ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
-ms.lasthandoff: 03/28/2017
-
+ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.  
@@ -118,7 +103,7 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
  A diferencia de otros parámetros de tarea, `MSBuildRuntime` y `MSBuildArchitecture` no son evidentes para la propia tarea.  Para escribir una tarea que tenga en cuenta el contexto en el que se ejecuta, debe probar el contexto mediante una llamada a .NET Framework o bien debe usar propiedades de compilación para pasar información de contexto a través de otros parámetros de tarea.  
   
 > [!NOTE]
-> Es posible establecer atributos  `UsingTask` desde las propiedades del conjunto de herramientas y del entorno.  
+>  Es posible establecer atributos `UsingTask` desde las propiedades del conjunto de herramientas y del entorno.  
   
  Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera más flexible de establecer el contexto de destino, pero también la manera más limitada en cuanto al ámbito.  Por un lado, dado que se establecen en la propia instancia de tarea y no se evalúan hasta que la tarea está a punto de ejecutarse, pueden derivar su valor del ámbito completo de propiedades disponibles en tiempo de evaluación y tiempo de compilación.  Por otro lado, estos parámetros solo se aplican a una instancia determinada de una tarea en un destino determinado.  
   
@@ -127,4 +112,3 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
   
 ## <a name="see-also"></a>Vea también  
  [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
-

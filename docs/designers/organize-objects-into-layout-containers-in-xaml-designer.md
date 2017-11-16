@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7974392d54ab30be77df939206927fd020dc620f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: c5635f5da028283e6683548ec4388f7b3bfcbd8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 Piense en qué parte de la página quiere que aparezcan los objetos como imágenes, botones y vídeos. Tal vez desee que aparezcan en filas y columnas, en una sola línea vertical u horizontal, o en posiciones fijas.  
@@ -66,50 +50,50 @@ Piense en qué parte de la página quiere que aparezcan los objetos como imágen
 ###  <a name="Grid"></a> Cuadrícula  
  Organice los objetos en filas y columnas.  
   
- ![](~/designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
+ ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Usar cuadrículas](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Usar cuadrículas](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
 ###  <a name="Uniform"></a> UniformGrid  
  Organice los objetos en regiones de cuadrícula iguales o uniformes. Este panel es excelente para organizar una lista de imágenes.  
   
- ![](~/designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
+ ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
   
  (Disponible solo para proyectos de WPF)  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
 ###  <a name="Canvas"></a> Canvas  
  Organice los objetos como desee. Cuando los usuarios ejecuten la aplicación, estos elementos tendrán una posición fija en la pantalla.  
   
- ![](~/designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
+ ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con canvas](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con canvas](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas).  
   
 ###  <a name="Stack"></a> StackPanel  
  Organice los objetos en una sola línea horizontal o verticalmente.  
   
- ![](~/designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
+ ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con StackPanel y WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con StackPanel y WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Wrap"></a> WrapPanel  
  Organice los objetos en secuencia de izquierda a derecha. Cuando el panel se queda sin espacio en el borde de la derecha, *ajusta* el contenido a la línea siguiente, y así sucesivamente de izquierda a derecha y de arriba abajo. También puede hacer que la orientación de un panel de ajuste (WrapPanel) sea vertical para que los objetos fluyan de arriba abajo y de izquierda a derecha.  
   
  (Disponible solo para proyectos de WPF)  
   
- ![](~/designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
+ ![](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con StackPanel y WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con StackPanel y WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Dock"></a> DockPanel  
  Organice los objetos para que permanezcan, o se *acoplen*, en uno de los bordes del panel.  
   
  (Disponible solo para proyectos de WPF)  
   
- ![](~/designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png "72d46b58-9a49-4dd5-8af7-6843c0440226")  
+ ![](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png "72d46b58-9a49-4dd5-8af7-6843c0440226")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).  
   
 ## <a name="layout-controls"></a>Controles de diseño  
  También puede agregar los objetos a controles de diseño. No tienen tantas características como un panel de diseño, pero pueden resultar útiles en determinados escenarios.  
@@ -129,9 +113,9 @@ Piense en qué parte de la página quiere que aparezcan los objetos como imágen
 ###  <a name="Border"></a> Border  
  Cree un borde, un fondo o ambos alrededor de un objeto. Solo puede agregar un objeto a un elemento **Border**. Si quiere aplicar un borde o un fondo a más de un objeto, agregue un panel de diseño al elemento **Border**. A continuación, agregue objetos a ese panel o control.  
   
- ![](~/designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
+ ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](~/designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con bordes](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabajar con bordes](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders).  
   
 ###  <a name="Popup"></a> Popup  
  Muestre información u opciones a los usuarios en una ventana. Solo puede agregar un objeto a un elemento **Popup**. De manera predeterminada, un elemento **Popup** contiene una **Cuadrícula**, pero se puede cambiar esta configuración.  
@@ -139,14 +123,14 @@ Piense en qué parte de la página quiere que aparezcan los objetos como imágen
 ###  <a name="Scroll"></a> ScrollViewer  
  Permita que los usuarios se desplacen hacia abajo en una página o parte de una página. Puede agregar un solo objeto a un control **ScrollViewer** así que resulta muy adecuado agregar un panel de diseño como una **Cuadrícula** o **StackPanel**.  
   
- ![](~/designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
+ ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
 ###  <a name="View"></a> Viewbox  
  Escale objetos igual que haría con un control de zoom. Solo puede agregar un objeto a un elemento **Viewbox**. Si quiere aplicar ese efecto a más de un objeto, agregue un panel de diseño al control **ViewBox** y, después, agregue los controles a dicho panel de diseño.  
   
  (Disponible solo para proyectos de WPF)  
   
- ![](~/designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
+ ![](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png "f5b13c66-d918-4141-8a16-bd8f8628687a")  
   
 ## <a name="see-also"></a>Vea también  
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   

@@ -1,50 +1,51 @@
 ---
-title: "Solucionar problemas de las herramientas de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Solucionar problemas de herramientas de rendimiento | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4dc0567a9bd51c7f7cb5051a4e5086310a5a86ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Solucionar problemas de las herramientas de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Al trabajar con las herramientas de generación de perfiles, puede experimentar uno de los siguientes problemas:  
+# <a name="troubleshooting-performance-tools-issues"></a>Solucionar problemas de herramientas de rendimiento
+Puede experimentar uno de los siguientes problemas al utilizar las herramientas de generación de perfiles:  
   
--   [Las herramientas de generación de perfiles no recopilan datos](#NoDataCollected)  
+-   [No se recopilan datos con las herramientas de generación de perfiles](#NoDataCollected)  
   
--   [En las vistas de rendimiento y los informes aparecen números para los nombres de función](#NoSymbols)  
+-   [Las vistas de rendimiento y los informes muestran números para los nombres de función](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a> Las herramientas de generación de perfiles no recopilan datos  
- Después de crear el perfil de una aplicación, no se crea ningún archivo de datos de generación de perfiles \(.vsp\) y aparece la siguiente advertencia en la Ventana de salida o en la ventana Comandos:  
+##  <a name="NoDataCollected"></a> No se recopilan datos con las herramientas de generación de perfiles  
+ Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.vsp) y recibe la siguiente advertencia en la ventana de salida o en la ventana Comandos:  
   
  PRF0025: No se recopiló ningún dato.  
   
- Este problema puede deberse a diversos motivos:  
+ Este problema puede tener varias causas:  
   
--   Un proceso cuyo perfil se generó usando el muestreo o el método de memoria .NET inicia un proceso secundario que resulta ser el proceso que realiza el trabajo de la aplicación.  Por ejemplo, algunas aplicaciones leen la línea de comandos para determinar si se han iniciado como una aplicación Windows o como una aplicación de línea de comandos.  Si se solicitó una aplicación Windows, el proceso original inicia un nuevo proceso configurado como una aplicación Windows y el proceso original termina.  Como las herramientas de generación de perfiles no recopilan automáticamente datos de los procesos secundarios, no se recopila ningún dato.  
+-   Un proceso cuyo perfil se generó usando el método de muestreo o de memoria de .NET inicia un proceso secundario que se convierte en el proceso que realiza el trabajo de la aplicación. Por ejemplo, algunas aplicaciones leen la línea de comandos para determinar si se han iniciado como una aplicación de Windows o como una aplicación de línea de comandos. Si se solicitó una aplicación Windows, el proceso original inicia un nuevo proceso configurado como una aplicación de Windows y después se cierra el proceso original. Dado que las herramientas de generación de perfiles no recopilan automáticamente datos de procesos secundarios, no se recopilan datos.  
   
-     Para recopilar los datos de generación de perfiles en este escenario, asocie el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles.  Para obtener más información vea [Cómo: Asociar y desasociar el generador de perfiles de los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Attach \(VSPerfCmd\)](../profiling/attach.md)  
+     Para recopilar datos de generación de perfiles en esta situación, adjunte el generador de perfiles al proceso secundario en lugar de iniciar la aplicación con el generador de perfiles. Para obtener más información, consulte [Cómo: Adjuntar y separar las herramientas de rendimiento para los procesos en ejecución](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) y [Adjuntar (VSPerfCmd)](../profiling/attach.md)  
   
-##  <a name="NoSymbols"></a> En las vistas de rendimiento y los informes aparecen números para los nombres de función  
- Después de crear el perfil de una aplicación, aparecen números en lugar de nombres de función en los informes y las vistas.  
+##  <a name="NoSymbols"></a> Las vistas de rendimiento y los informes muestran números para los nombres de función  
+ Después de generar perfiles de una aplicación, se muestran números en lugar de los nombres de función en las vistas e informes.  
   
- Este problema se debe a que el motor de análisis de herramientas de generación de perfiles no puede encontrar los archivos .pdb que contienen la información de símbolos que se asigna a la información del código fuente, como los nombres de función y los números de línea del archivo compilado.  De forma predeterminada, el compilador crea el archivo .pdb cuando se compila el archivo de la aplicación.  En la aplicación compilada se almacena una referencia al directorio local del archivo .pdb.  El motor de análisis busca el archivo .pdb en el directorio al que se hace referencia y, a continuación, en el archivo que actualmente contiene el archivo de la aplicación.  Si no se encuentra el archivo .pdb, el motor de análisis usa los desplazamientos de las funciones en lugar de los nombres de función.  
+ La causa de este problema es que el motor de análisis de las herramientas de generación de perfiles no puede encontrar los archivos .pdb que contienen la información de símbolos que asigna la información de código fuente, como los nombres de función y los números de línea del archivo compilado. De forma predeterminada, el compilador crea el archivo .pdb cuando se compila el archivo de aplicación. Se almacena una referencia al directorio local del archivo .pdb en la aplicación compilada. El motor de análisis busca el archivo .pdb en el directorio al que se hace referencia y después en el archivo que contiene actualmente el archivo de aplicación. Si no se encuentra el archivo .pdb, el motor de análisis usa los desplazamientos de función en lugar de los nombres de función.  
   
- Puede corregir el problema siguiendo uno de estos mecanismos:  
+ Puede corregir el problema de dos maneras:  
   
--   Buscando los archivos .pdb y situándolos en el mismo directorio que los archivos de la aplicación.  
+-   Busque los archivos .pdb y colóquelos en el mismo directorio que los archivos de aplicación.  
   
--   Insertando la información de símbolos en el archivo de datos de generación de perfiles \(.vsp\).  Para obtener más información, vea [Guardar información de símbolos con archivos de datos de generación de perfiles](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Incruste la información de símbolos en el archivo de datos de generación de perfiles (.vsp). Para obtener más información, consulte [Guardar información de símbolos con archivos de datos de rendimiento](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  El motor de análisis necesita que el archivo .pdb tenga la misma versión que el archivo de la aplicación compilado.  Un archivo .pdb de una compilación anterior o posterior del archivo de la aplicación no funcionará.
+>  El motor de análisis requiere que el archivo .pdb tenga la misma versión que el archivo de la aplicación compilada. Un archivo .pdb de una compilación anterior o posterior del archivo de la aplicación no funcionará.

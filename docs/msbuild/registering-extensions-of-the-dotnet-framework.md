@@ -1,38 +1,38 @@
 ---
-title: "Registrar las extensiones de .NET Framework | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Cuadro de diálogo Agregar referencias, registro de las extensiones de .NET Framework"
-  - "MSBuild, registro de las extensiones de .NET Framework"
-  - "extensiones de .NET Framework, registro"
+title: Registrar las extensiones de .NET Framework | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Add References dialog box, registering extensions of the .NET Framework
+- MSBuild, registering extensions of the .NET Framework
+- .NET Framework extensions, registering
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: ccffad8637f032993c71efa2eca3ba7d14e6e88a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Registrar las extensiones de .NET Framework
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede desarrollar un ensamblado que extienda una versión concreta de .NET Framework.  Para permitir que el ensamblado aparezca en el cuadro de diálogo **Agregar referencias** de Visual Studio, debe agregar la carpeta que lo contiene al Registro del sistema.  
+# <a name="registering-extensions-of-the-net-framework"></a>Registrar las extensiones de .NET Framework
+Puede desarrollar un ensamblado que extienda una versión concreta de .NET Framework. Para que el ensamblado se muestre en el cuadro de diálogo **Agregar referencias** de Visual Studio, debe agregar la carpeta que lo contiene al registro del sistema.  
   
- Por ejemplo, supongamos que la compañía Trey Research ha desarrollado una biblioteca que extiende .NET Framework 4, y que desea que los ensamblados de biblioteca aparezcan en el cuadro de diálogo **Agregar referencias** cuando un proyecto esté destinado a .NET Framework 4.  Supongamos, además, que los ensamblados son de 32 bits y se ejecutan en un equipo de 32 bits, o bien que son ensamblados de 64 bits que se ejecutan en un equipo de 64 bits, y que se instalarán en la carpeta C:\\TreyResearch\\Extensions4\\.  
+ Por ejemplo, suponga que la empresa Trey Research ha desarrollado una biblioteca que extiende .NET Framework 4, y quiere que los ensamblados de biblioteca se muestren en el cuadro de diálogo **Agregar referencias** cuando un proyecto tiene como destino .NET Framework 4. Suponga también que los ensamblados son ensamblados de 32 bits que se ejecutan en un equipo de 32 bits o ensamblados de 64 bits que se ejecutan en un equipo de 64 bits, y que se instalarán en la carpeta C:\TreyResearch\Extensions4\.  
   
- Registre esta carpeta utilizando esta clave: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\.NETFramework\\v4.0.21006\\AssemblyFoldersEx\\TreyResearch\\.  Dé a la clave este valor predeterminado: C:\\TreyResearch\\Extensions4.  
+ Registre esta carpeta mediante esta clave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Dé a la clave este valor predeterminado: C:\TreyResearch\Extensions4.  
   
 > [!NOTE]
 >  El número de compilación de la versión de .NET Framework puede ser diferente.  
   
- Para registrar un ensamblado de 32 bits en un equipo de 64 bits, utilice el nodo Wow6432; por ejemplo: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\.NETFramework\\v4.0.21006\\AssemblyFoldersEx\\TreyResearch\\.  
+ Para registrar un ensamblado de 32 bits en un equipo de 64 bits, utilice el nodo Wow6432, por ejemplo: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)

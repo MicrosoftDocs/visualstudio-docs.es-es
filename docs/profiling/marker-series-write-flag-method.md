@@ -1,30 +1,29 @@
 ---
-title: "marker_series::write_flag (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_flag (método)"
+title: "marker_series::write_flag (Método) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c50ce91ca1759d6d4768dec2a487e2ca169b2d64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::write_flag (M&#233;todo)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Escribe una marca en el archivo de seguimiento del Visualizador de simultaneidad.  
+# <a name="markerserieswriteflag-method"></a>marker_series::write_flag (Método)
+Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 void write_flag(  
@@ -49,9 +48,9 @@ void write_flag(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `_Format`  
- Una cadena de formato compuesto que contiene el texto mezclado con cero o más elementos de formato, que se corresponden con los objetos de la lista de argumentos.  
+ Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.  
   
  `_Importance`  
  Nivel de importancia.  
@@ -59,10 +58,10 @@ void write_flag(
  `_Category`  
  Categoría.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** cvmarkersobj.h  
   
- **Espacio de nombres:** Concurrency::diagnostico  
+ **Espacio de nombres:** Concurrency::diagnostic  
   
-## Vea también  
- [marker\_series \(Clase\)](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Vea también  
+ [Clase marker_series](../profiling/marker-series-class.md)

@@ -4,39 +4,24 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- msdnstart
+f1_keywords: msdnstart
 helpviewer_keywords:
 - Visual Studio
 - Visual Studio 2017
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
-caps.latest.revision: 125
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 2cf7d1e79ccf79b652dbb730e7ac7fd6a9c984b5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 81942228cd8ee30ac8ea990af072ace0ce626c5b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="welcome-to-visual-studio-2017"></a>¡Le damos la bienvenida a Visual Studio 2017!
 Tenemos todo lo que necesita para crear excelentes aplicaciones para dispositivos o aplicaciones de escritorio, ya sea para la web o en la nube. Escriba código para iOS, Android, Linux y Windows (entre otros) en un entorno de desarrollo integrado (IDE). Obtenga una gran ayuda de código interactiva (*IntelliSense*), navegación sencilla por el código y depuración, compilaciones rápidas y una implementación veloz. Visual Studio aumenta la productividad y le facilita el trabajo, tanto si lo lleva a cabo por sí solo como si forma parte de un equipo.  
@@ -120,4 +105,3 @@ Para obtener la versión más reciente de las herramientas de extensibilidad de 
 Puede usar .NET Compiler Platform (Roslyn) para escribir sus propios analizadores de código y generadores de código. Encuentre todo lo que necesita en [Roslyn](https://github.com/dotnet/Roslyn).  
 
 Busque las [extensiones existentes para el IDE de VS](https://visualstudiogallery.msdn.microsoft.com/) creadas por los desarrolladores de Microsoft y nuestra comunidad de desarrollo.  
-

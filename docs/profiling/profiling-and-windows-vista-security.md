@@ -1,50 +1,51 @@
 ---
-title: "Generar perfiles y seguridad en Windows Vista | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Herramientas de generación de perfiles, seguridad"
-  - "Herramientas de rendimiento, seguridad"
+title: Generar perfiles y seguridad en Windows Vista | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Profiling Tools,security
+- performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0ac59d9cb4b729b99193a921c5f6965e48815261
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Generar perfiles y seguridad en Windows Vista
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dependiendo de la configuración de los permisos de acceso de usuario para [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que haya establecido un administrador de equipo, cada usuario podría tener permisos de seguridad para generar los perfiles de un proceso en dicho equipo.  En los ejemplos siguientes se muestran las posibles diferencias entre los usuarios:  
+# <a name="profiling-and-windows-vista-security"></a>Generar perfiles y seguridad en Windows Vista
+En función de la configuración de los permisos de acceso de usuario de [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que haya facilitado un administrador de equipo, un usuario puede tener permisos de seguridad para generar perfiles de un proceso en ese equipo. En los siguientes ejemplos se muestran las posibles diferencias existentes entre los usuarios:  
   
--   Algunos usuarios pueden tener acceso a las características avanzadas de generación de perfiles cuando el administrador ha configurado el controlador y el servicio que deben iniciarse.  
+-   Algunos usuarios pueden tener acceso a las características avanzadas de generación de perfiles cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
   
--   Los usuarios del dominio pueden tener acceso sólo a la generación de perfiles de muestreo.  
+-   Los usuarios de dominio pueden tener acceso solo a la generación de perfiles de ejemplo.  
   
--   Algunos usuarios pueden denegar a todos los demás usuarios el acceso a la generación de perfiles.  
+-   Algunos usuarios pueden denegar el acceso a la generación de perfiles a todos los demás usuarios.  
   
- Para obtener más información, vea las opciones de ADMIN en [VSPerfCmd](../profiling/vsperfcmd.md).  
+ Para obtener más información, consulte las opciones ADMIN de [VSPerfCmd](../profiling/vsperfcmd.md).  
   
-## Generación de perfiles entre sesiones  
- La *generación de perfiles entre sesiones* es la capacidad de generar perfiles de un proceso que se ejecuta en otra sesión de inicio.  Por ejemplo, la mayoría de los servicios se ejecutan en la sesión 0 y los usuarios no pueden ejecutar directamente en la sesión 0.  Mediante el botón **Asociar al proceso** de la barra de herramientas del Explorador de rendimiento, o con la opción \/attach de la herramienta de la línea de comandos VSPerfCmd, puede generar perfiles de la mayoría de los procesos en otras sesiones de inicio.  
+## <a name="cross-session-profiling"></a>Generación de perfiles entre sesiones  
+ La *generación de perfiles entre sesiones* es la capacidad de generar perfiles de un proceso que se ejecuta en una sesión diferente. Por ejemplo, la mayoría de servicios se ejecutan en la sesión 0 y los usuarios no pueden ejecutarse directamente en la sesión 0. Mediante el uso del botón **Adjuntar al proceso** en la barra de herramientas del explorador de rendimiento o la opción /attach de la herramienta de línea de comandos VSPerfCmd, puede generar perfiles de la mayoría de los procesos en otras sesiones de inicio.  
   
- Para ver una lista de los procesos disponibles, establezca las opciones de visibilidad de la generación de perfiles entre procesos.  Estas opciones están disponibles en la ventana **Asociar al proceso** que aparece al hacer clic en **Asociar al proceso**:  
+ Puede ver una lista de los procesos que están disponibles mediante el establecimiento de las opciones de visibilidad de generación de perfiles entre procesos. Estas opciones están disponibles en la ventana **Adjuntar al proceso** que aparece al hacer clic en **Adjuntar al proceso**:  
   
 -   **Mostrar los procesos de todos los usuarios**  
   
-     Cuando esta opción no está seleccionada, la lista muestra solamente los procesos que pertenecen al usuario actual.  Si se ha seleccionado **Mostrar los procesos de todos los usuarios**, la lista muestra los procesos de todos los usuarios.  
+     Cuando no se selecciona esta opción, la lista muestra solamente los procesos que pertenecen al usuario actual. Cuando **Mostrar procesos de todos los usuarios** está seleccionada, la lista muestra los procesos de todos los usuarios.  
   
 -   **Mostrar los procesos de todas las sesiones**  
   
-     Cuando esta opción no está seleccionada, la lista muestra los procesos de la sesión actual.  Cuando está seleccionada, la lista muestra los procesos de todas las sesiones.  
+     Cuando no se selecciona esta opción, la lista muestra los procesos de la sesión actual. Cuando se selecciona esta opción, la lista muestra los procesos de todas las sesiones.  
   
-## Vea también  
- [Temas de introducción](../profiling/overviews-performance-tools.md)   
+## <a name="see-also"></a>Vea también  
+ [Información general](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [How to: Attach to a Running Process](http://msdn.microsoft.com/es-es/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Cómo: Conectar a procesos en ejecución](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

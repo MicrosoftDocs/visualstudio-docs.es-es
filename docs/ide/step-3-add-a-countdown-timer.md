@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b2d9a565300dabd4212695d62c01a415d0e11012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1719ed1feb1caa38644550322484d2ba519c1be2
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: Agregar un temporizador de cuenta atrás
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.  
@@ -45,7 +28,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
   
 1.  Agregue una variable de entero denominada **timeLeft**, como hizo en el procedimiento anterior. El código debe tener un aspecto parecido al siguiente.  
   
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]  [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
   
      Ahora necesita un método que cuente realmente los segundos, como un temporizador, y que genere un evento después del tiempo especificado.  
   
@@ -63,7 +47,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
   
 5.  Agregue las siguientes instrucciones al nuevo método de control de eventos.  
   
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]  [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
   
      En función de lo que haya agregado, el temporizador comprobará cada segundo si se ha agotado el tiempo, determinando si la variable de entero **timeLeft** es mayor que 0. Si es así, todavía queda tiempo. En primer lugar, el temporizador resta 1 a timeLeft y, después, actualiza la propiedad **Text** del control `timeLabel` para mostrar al jugador cuántos segundos quedan.  
   
@@ -99,7 +84,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
   
      Vamos a fijarnos con más atención en la instrucción que hemos agregado en el bloque `else` para mostrar la respuesta al problema de suma.  
   
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]  [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
   
      La instrucción `addend1 + addend2` suma los valores de las dos variables. La primera parte (`sum.Value`) usa la propiedad **Value** del control `NumericUpDown` de la suma para mostrar la respuesta correcta. Utilizará la misma propiedad más adelante para comprobar las respuestas de la prueba.  
   
@@ -107,7 +93,8 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
   
 6.  Agregue tres líneas al final de método `StartTheQuiz()`, de modo que el código tenga este aspecto.  
   
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]  [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
   
      Ahora, al empezar la prueba, la variable **timeLeft** se establece en 30 y la propiedad **Text** del control `timeLabel` se establece en 30 segundos. Después, el método `Start()` del control `Timer` inicia la cuenta atrás. (La prueba no comprueba la respuesta todavía, esto viene después).  
   

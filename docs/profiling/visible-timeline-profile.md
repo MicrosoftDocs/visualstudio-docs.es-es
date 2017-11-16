@@ -1,28 +1,27 @@
 ---
-title: "Perfil de escala de tiempo visible | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.activelegend"
-helpviewer_keywords: 
-  - "vs.cv.threads.activelegend (Visualizador de simultaneidad), Leyenda activa de las vistas de subprocesos"
+title: Perfil de escala de tiempo visible | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.activelegend
+helpviewer_keywords: vs.cv.threads.activelegendConcurrency Visualizer, Threads View Active Legend
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 91de09a8fda024c07d5ccff147c5b826896e8638
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Perfil de escala de tiempo visible
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El perfil de línea de tiempo visible para la vista bloqueante del subproceso ofrece información estadística y vínculos a informes.  Cuando amplía, reduce, desplaza horizontalmente, oculta o muestra canales, los números de la leyenda activa cambian para reflejar lo que aparece en la vista en cada momento.  Para ver un informe sobre un elemento de la leyenda, haga clic en el elemento.  
+# <a name="visible-timeline-profile"></a>Perfil de escala de tiempo visible
+El perfil de escala de tiempo visible para la vista Bloqueo de subprocesos proporciona información estadística y vínculos a los informes. Los números de la leyenda activa cambian para reflejar lo que está actualmente en la vista a medida que amplía, reduce, se desplaza horizontalmente y oculta o muestra canales. Para ver un informe sobre un elemento de la leyenda, haga clic en él.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

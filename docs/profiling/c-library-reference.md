@@ -1,51 +1,51 @@
 ---
-title: "Referencia de la biblioteca C | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "SDK del visualizador de simultaneidad, referencia de la biblioteca de C"
+title: Referencia de la biblioteca C | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Concurrency Visualizer SDK, C Library Reference
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Referencia de la biblioteca C
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta sección contiene información de referencia para el SDK del visualizador de simultaneidad.  
+# <a name="c-library-reference"></a>Referencia de la biblioteca C
+Esta sección contiene información de referencia para el SDK del Visualizador de simultaneidad.  
   
 > [!NOTE]
->  El estándar del lenguaje C reserva el uso de identificadores que comienzan con un carácter de subrayado \(`_`\) para implementaciones como bibliotecas.  No utilice nombres que empiecen con un subrayado en el código.  No se garantiza el comportamiento de los elementos de código cuyos nombres siguen esta convención y está sujeto a cambios en futuras versiones.  Por estas razones, estos elementos de código se omiten en esta documentación.  
+>  El estándar del lenguaje C reserva el uso de los identificadores que comienzan con un carácter de subrayado (`_`) para implementaciones como bibliotecas. No utilice nombres que comiencen por un carácter de subrayado en el código. El comportamiento de los elementos de código cuyos nombres siguen esta convención no está garantizado y está sujeto a cambios en el futuro. Por estos motivos, dichos elementos de código se omiten de esta documentación.  
   
-## En esta sección  
- [CvCreateDefaultMarkerSeriesOfDefaultProvider \(Función\)](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
+## <a name="in-this-section"></a>En esta sección  
+ [CvCreateDefaultMarkerSeriesOfDefaultProvider (función)](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
- [CvCreateMarkerSeries \(Función\)](../profiling/cvcreatemarkerseries-function.md)  
+ [Función CvCreateMarkerSeries](../profiling/cvcreatemarkerseries-function.md)  
   
- [CvCreateMarkerSeriesWithCodePageA \(Función\)](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
+ [Función CvCreateMarkerSeriesWithCodePageA](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
   
- [CvEnterSpan \(Función\)](../profiling/cventerspan-function.md)  
+ [Función CvEnterSpan](../profiling/cventerspan-function.md)  
   
- [CvInitProvider \(Función\)](../profiling/cvinitprovider-function.md)  
+ [Función CvInitProvider](../profiling/cvinitprovider-function.md)  
   
- [CvIsEnabled \(Función\)](../profiling/cvisenabled-function.md)  
+ [Función CvIsEnabled](../profiling/cvisenabled-function.md)  
   
- [CvLeaveSpan \(Función\)](../profiling/cvleavespan-function.md)  
+ [Función CvLeaveSpan](../profiling/cvleavespan-function.md)  
   
- [CvReleaseMarkerSeries \(Función\)](../profiling/cvreleasemarkerseries-function.md)  
+ [Función CvReleaseMarkerSeries](../profiling/cvreleasemarkerseries-function.md)  
   
- [CvReleaseProvider \(Función\)](../profiling/cvreleaseprovider-function.md)  
+ [Función CvReleaseProvider](../profiling/cvreleaseprovider-function.md)  
   
- [CvWriteAlert \(Función\)](../profiling/cvwritealert-function.md)  
+ [Función CvWriteAlert](../profiling/cvwritealert-function.md)  
   
- [CvWriteFlag \(Función\)](../profiling/cvwriteflag-function.md)  
+ [Función CvWriteFlag](../profiling/cvwriteflag-function.md)  
   
- [CvWriteMessage \(Función\)](../profiling/cvwritemessage-function.md)
+ [CvWriteMessage (función)](../profiling/cvwritemessage-function.md)

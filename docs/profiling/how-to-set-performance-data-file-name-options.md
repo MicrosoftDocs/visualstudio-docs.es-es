@@ -1,28 +1,29 @@
 ---
-title: "C&#243;mo: Establecer opciones de nombre de archivo de datos de generaci&#243;n de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: establecer opciones de nombre de archivo de datos de rendimiento | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 308766c1a4fbe5194f1330bd74c81f6d9d41b36f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Establecer opciones de nombre de archivo de datos de generaci&#243;n de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-De forma predeterminada, para guardar un archivo de datos de generación de perfiles \(.vsp\) se utiliza la sintaxis siguiente:  
+# <a name="how-to-set-performance-data-file-name-options"></a>Cómo: establecer opciones de nombre de archivo de datos de rendimiento
+De forma predeterminada, se guarda un archivo de generación de perfiles de datos (.vsp) mediante la siguiente sintaxis:  
   
- *Path\\VSP\-File\\YYMMDD\(N\)* **.vsp**  
+ *Path\VSP-File\YYMMDD(N)* **.vsp**  
   
- Puede cambiar cualquier parámetro de denominación en la página General del cuadro de diálogo de propiedades de la sesión de rendimiento.  
+ Puede cambiar cualquier parámetro de nomenclatura en la página General del cuadro de diálogo de propiedades de la sesión de rendimiento.  
   
  **Requisitos**  
   
@@ -30,23 +31,23 @@ De forma predeterminada, para guardar un archivo de datos de generación de perf
   
 |||  
 |-|-|  
-|*Path*|Directorio que contiene el informe.  La ubicación predeterminado es la carpeta de soluciones o la ubicación predeterminado para los proyectos y las soluciones del usuario.|  
-|*VSP\-File*|Nombre del archivo de datos de generación de perfiles.  El nombre predeterminado es el nombre de la solución o aplicación ejecutable para la que se generan perfiles.|  
-|*YYMMDD*|Marca de fecha que muestra el año, mes y día que se recolectaron los datos para la generación de perfiles.|  
-|*\(N\)*|Si existe más de un archivo de datos de generación de perfiles, se agrega un número incrementado al nombre de archivo entre paréntesis.|  
+|*Path*|El directorio que contiene el informe. La ubicación predeterminada es la carpeta de soluciones o la ubicación predeterminada de los proyectos y soluciones del usuario.|  
+|*VSP-File*|El nombre del archivo de datos de generación de perfiles. El nombre predeterminado es el nombre de la solución o ejecutable del que se generan perfiles.|  
+|*YYMMDD*|Una marca de fecha que muestra el año, mes y día en que se recopilaron los datos de generación de perfiles.|  
+|*(N)*|Si existe más de un archivo de datos de generación de perfiles, se agrega un número incrementado al nombre de archivo entre paréntesis.|  
   
-### Para cambiar la sintaxis de la denominación de los archivos de datos de generación de perfiles de una sesión de rendimiento  
+### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Para cambiar la sintaxis de nomenclatura de los archivos de datos de generación de perfiles de una sesión de rendimiento  
   
-1.  En el **Explorador de rendimiento**, haga clic con el botón secundario en el nombre de la sesión de rendimiento y, a continuación, haga clic en **Propiedades**.  
+1.  En el **Explorador de rendimiento**, haga clic con el botón derecho en el nombre de la sesión de rendimiento y, después, haga clic en **Propiedades**.  
   
 2.  Haga clic en **General**.  
   
-3.  Bajo **Informe**, cambie cualquiera de los valores siguientes:  
+3.  En **Informe**, cambie cualquiera de las siguientes opciones:  
   
     |||  
     |-|-|  
     |**Ubicación del informe**|Especifique un directorio para almacenar los archivos de datos de generación de perfiles.|  
     |**Nombre del informe**|Especifique un nombre base para los archivos.|  
-    |**Agregar nuevos informes a la sesión automáticamente**|Active la casilla para agregar el archivo de datos a la sesión de rendimiento automáticamente.|  
-    |**Anexar un número para incrementar a los informes generados**|Active la casilla para agregar un número creciente al nombre de archivo cuando exista más de un archivo del mismo nombre.  Desactive la casilla para sobrescribir un archivo existente.|  
-    |**Usar una marca de tiempo para el número**|Active la casilla para agregar una marca de fecha al nombre de archivo.|
+    |**Agregar nuevos informes a la sesión automáticamente**|Active la casilla para agregar automáticamente el archivo de datos a la sesión de rendimiento.|  
+    |**Anexar un número incremental a informes generados**|Active la casilla para agregar un número incremental al nombre de archivo cuando exista más de un archivo con el mismo nombre. Desactive la casilla para sobrescribir un archivo existente.|  
+    |**Usar una marca de tiempo para el número**|Active la casilla para agregar una fecha al nombre de archivo.|
