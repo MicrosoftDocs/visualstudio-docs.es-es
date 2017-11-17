@@ -1,29 +1,32 @@
 ---
-title: "Operador Spread (...) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Operador Spread (...) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 10263a4c-bd27-4d87-9917-fb4b6bf373db
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a07d480360441906c445faa196f6d7771f97d75d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Operador Spread (...) (JavaScript)
-Permite que partes de una matriz literal se inicialicen desde una expresión iterable \(como, por ejemplo, otra matriz literal\) o permite que una expresión se expanda a varios argumentos \(en llamadas a funciones\).  
+# <a name="spread-operator--javascript"></a>Operador Spread (...) (JavaScript)
+Permite que partes de una matriz literal se inicialicen desde una expresión iterable (como, por ejemplo, otra matriz literal) o permite que una expresión se expanda a varios argumentos (en llamadas a funciones).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 var array = [[arg0ToN ,] ...iterable [, arg0ToN]]  
@@ -31,23 +34,23 @@ func([args ,] ...iterable [, args | ...iterable])
   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `iterable`  
- Requerido.  Un objeto iterable.  
+ Obligatorio. Un objeto iterable.  
   
  `arg0ToN`  
- Opcional.  Uno o más elementos de un literal de matriz.  
+ Opcional. Uno o más elementos de un literal de matriz.  
   
  `args`  
- Opcional.  Uno o más argumentos a una función.  
+ Opcional. Uno o más argumentos a una función.  
   
-## Comentarios  
- Para obtener más información sobre iteradores, vea [Iteradores y generadores](../../javascript/advanced/iterators-and-generators-javascript.md).  Para obtener más información sobre cómo utilizar el operador spread como un parámetro rest, consulte [Funciones](../../javascript/functions-javascript.md).  
+## <a name="remarks"></a>Comentarios  
+ Para obtener más información sobre los iteradores, vea [iteradores y generadores](../../javascript/advanced/iterators-and-generators-javascript.md). Para obtener más información sobre cómo utilizar el operador spread como un parámetro de rest, consulte [funciones](../../javascript/functions-javascript.md).  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo de código mostrado a continuación, el uso del operador spread se contrasta con el uso del método `concat`.  
   
-```javascript  
+```JavaScript  
 var a, b, c, d, e;  
 a = [1,2,3];  
 b = "dog";  
@@ -67,10 +70,10 @@ console.log(e);
 // 1, 2, 3, "dog", 42, "cat"  
 ```  
   
-## Ejemplo  
- En el ejemplo de código mostrado a continuación se indica cómo utilizar el operador spread en una llamada de función.  En este ejemplo dos literales de matriz se pasan a la función mediante el operador spread y las matrices se expanden a varios argumentos.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código mostrado a continuación se indica cómo utilizar el operador spread en una llamada de función. En este ejemplo dos literales de matriz se pasan a la función mediante el operador spread y las matrices se expanden a varios argumentos.  
   
-```javascript  
+```JavaScript  
 function f(a, b, c, x, y, z) {  
   return a + b + c + x + y + z;  
 }  
@@ -83,10 +86,10 @@ console.log(f(...args, 4, ...[5, 6]));
   
 ```  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  Con los operadores spread, puede simplificar código que anteriormente requería el uso de `apply`.  
   
-```javascript  
+```JavaScript  
 function f(x, y, z) {  
     return x + y + z;  
 }  
@@ -94,15 +97,15 @@ function f(x, y, z) {
 var args = [1, 2, 3];  
   
 // Old method  
-func.apply(this, args);  
+f.apply(this, args);  
 // New method  
-func(...args);  
+f(...args);  
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md)   
- [Resumen de operadores \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Resumen de operadores (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)
