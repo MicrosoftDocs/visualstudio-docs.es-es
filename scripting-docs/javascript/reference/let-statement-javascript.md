@@ -1,61 +1,63 @@
 ---
-title: "let (Instrucci&#243;n, JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "let_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "let (instrucción)"
-  - "declarar variables, instrucción let"
+title: "Let (instrucción) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: let_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- let statement
+- declaring variables, let statement
 ms.assetid: c7e4f8a9-8f54-47b6-aed2-956959c1ecfd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c447a1bf0c430771ff146965a592f7e160e2055b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# let (Instrucci&#243;n, JavaScript)
-Declara una variable de ámbito del bloque.  
+# <a name="let-statement-javascript"></a>let (Instrucción, JavaScript)
+Declara una variable con ámbito de bloque.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 let variable1 = value1  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `variable1`  
- Nombre de la variable que se está declarando.  
+ El nombre de la variable que se declara.  
   
  `value1`  
- Valor inicial asignado a la variable.  
+ El valor inicial asignado a la variable.  
   
-## Comentarios  
- Utilice la instrucción `let` para declarar una variable, el ámbito del que está limitado al bloque en el que se declara.  Puede asignar valores a variables al declararlas o más adelante en el script.  
+## <a name="remarks"></a>Comentarios  
+ Use la `let` instrucción para declarar una variable, el ámbito de los cuales se restringe al bloque en el que se declara. Puede asignar valores a las variables al declararlas o más adelante en la secuencia de comandos.  
   
- Una variable declarada con `let` no puede usarse antes de que se active su declaración o un error.  
+ Una variable declarada con `let` no se puede usar antes de que se producirá un error o su declaración.  
   
- Si no inicializa la variable en la instrucción `let`, se le asigna automáticamente el valor `undefined` de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Si no se inicializa la variable en el `let` instrucción, se asigna automáticamente el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valor `undefined`.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestra el uso de la instrucción `let`.  
   
-```javascript  
-var  l = 10;  
+```JavaScript  
+var  l = 10;  
 {  
-    let l = 2;  
-   // At this point, l = 2.  
+    let l = 2;  
+   // At this point, l = 2.  
 }  
 // At this point, l = 10.  
   
@@ -67,11 +69,11 @@ let myarray = new Array();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Vea también  
- [const \(Instrucción\)](../../javascript/reference/const-statement-javascript.md)   
- [new \(Operador\)](../../javascript/reference/new-operator-decrementjavascript.md)   
- [Array \(Objeto\)](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Const (instrucción)](../../javascript/reference/const-statement-javascript.md)   
+ [new (Operador, Referencia de C#)](../../javascript/reference/new-operator-decrementjavascript.md)   
+ [Array (objeto)](../../javascript/reference/array-object-javascript.md)   
  [Variables](../../javascript/variables-javascript.md)

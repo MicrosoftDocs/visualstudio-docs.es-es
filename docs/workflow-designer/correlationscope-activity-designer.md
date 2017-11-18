@@ -1,47 +1,50 @@
 ---
-title: "Dise&#241;ador de actividades CorrelationScope | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.ServiceModel.Activities.CorrelationScope.UI"
+title: "Diseñador de actividades CorrelationScope | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 3e6e745e470c5e5b5a279f460198729bd9429ccc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Dise&#241;ador de actividades CorrelationScope
-El diseñador de actividades **CorrelationScope** se utiliza para crear y configurar una actividad <xref:System.ServiceModel.Activities.CorrelationScope> que proporciona administración implícita de actividades de mensajería secundarias mediante el uso de un objeto <xref:System.ServiceModel.Activities.CorrelationHandle>.  
+# <a name="correlationscope-activity-designer"></a>Diseñador de actividades CorrelationScope
+El **CorrelationScope** Diseñador de actividades se usa para crear y configurar un <xref:System.ServiceModel.Activities.CorrelationScope> actividad que proporciona administración implícita de actividades de mensajería secundarias mediante un <xref:System.ServiceModel.Activities.CorrelationHandle> objeto.  
   
-## Actividad CorrelationScope  
- La propiedad <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias.Las actividades <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.Receive> que se incluyen en la propiedad <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> se configuran para utilizar la propiedad <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de la actividad <xref:System.ServiceModel.Activities.CorrelationScope> que sirve de contenedor para efectuar la correlación.  
+## <a name="the-correlationscope-activity"></a>Actividad CorrelationScope  
+ La propiedad <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> especifica la clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias. Las actividades <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.Receive> que se incluyen en la propiedad <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> se configuran para utilizar la propiedad <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de la actividad <xref:System.ServiceModel.Activities.CorrelationScope> que sirve de contenedor para efectuar la correlación.  
   
-### Utilizar el diseñador de actividades CorrelationScope  
- El diseñador de actividades **CorrelationScope** se puede encontrar en la categoría **Mensajería** del **Cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **Cuadro de herramientas** a la izquierda de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. \(De forma alternativa, seleccione **Barra de herramientas** en el menú **Ver** o CTRL\+ALT\+X\).  
+### <a name="using-the-correlationscope-activity-designer"></a>Utilizar el diseñador de actividades CorrelationScope  
+ El **CorrelationScope** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas** ficha en el lado izquierdo de la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)  
   
- El diseñador de actividades **CorrelationScope** se puede arrastrar desde el **Cuadro de herramientas** y colocarlo en a la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].Esto crea una actividad <xref:System.ServiceModel.Activities.CorrelationScope> con un valor **DisplayName** predeterminado de CorrelationScope.La propiedad <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades **CorrelationScope** o en el cuadro **DisplayName** de la ventana **Propiedades**.  
+ El **CorrelationScope** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie. Esto crea una <xref:System.ServiceModel.Activities.CorrelationScope> actividad con el valor predeterminado es **DisplayName** de CorrelationScope. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **CorrelationScope** Diseñador de actividad o en la **DisplayName** cuadro de la **propiedades** ventana.  
   
- Para especificar la propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> que utilizan las actividades de mensajería secundarias, haga clic en el botón de puntos suspensivos junto al campo **CorrelatesWith** en la ventana **Propiedades** para mostrar el cuadro de diálogo **Editor de expresiones**.Esta propiedad también se puede establecer en la superficie del diseñador de actividades.  
+ Para especificar el <xref:System.ServiceModel.Activities.CorrelationHandle> utilizada por las actividades de mensajería secundarias, haga clic en el botón de puntos suspensivos junto a la **CorrelatesWith** campo **propiedades** ventana para mostrar la **Editor de expresiones**  cuadro de diálogo. Esta propiedad también se puede establecer en la superficie del diseñador de actividades.  
   
- Las actividades dentro del ámbito de la correlación se especifican al colocar sus diseñadores dentro del cuadro **Cuerpo** en el diseñador **CorrelationScope**.  
+ Las actividades dentro del ámbito la correlación se especifican al colocar sus diseñadores dentro de la **cuerpo** cuadro dentro de la **CorrelationScope** diseñador.  
   
-### Propiedades CorrelationScope  
- En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.CorrelationScope> y se describe cómo se utilizan en el diseñador.Estas propiedades se pueden editar en la ventana **Propiedades** o en la superficie del diseñador [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] y, en muchas ocasiones, en ambos.  
+### <a name="the-correlationscope-properties"></a>Propiedades CorrelationScope  
+ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.CorrelationScope> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en **propiedades** ventana o en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] expuesto y a menudo tanto en el diseñador.  
   
 |Nombre de la propiedad|Obligatorio|Uso|  
-|----------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre opcional descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>.|  
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Especifica la propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias.Si no se establece esta propiedad, <xref:System.ServiceModel.Activities.CorrelationScope> crea una propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> implícita automáticamente.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.ServiceModel.Activities.InitializeCorrelation>.|  
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Especifica la propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para administrar las actividades de mensajería secundarias. Si no se establece esta propiedad, <xref:System.ServiceModel.Activities.CorrelationScope> crea una propiedad <xref:System.ServiceModel.Activities.CorrelationHandle> implícita automáticamente.|  
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Especifica las actividades dentro del ámbito de la correlación.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Receive](../workflow-designer/receive-activity-designer.md)   
+ [Recepción](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
  [Enviar](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   

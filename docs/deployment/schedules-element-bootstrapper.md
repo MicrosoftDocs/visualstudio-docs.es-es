@@ -1,33 +1,33 @@
 ---
-title: "&lt;Schedules&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Schedules> (elemento) [arranque]"
+title: '&lt;Programaciones&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Schedules&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento `Schedules` contiene elementos `Schedule`, que definen el momento específico en el que los comandos definidos por el elemento `Command` deben ejecutarse.  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Programaciones&gt; elemento (arranque)
+El `Schedules` contiene el elemento `Schedule` elementos, que definen las horas en que los comandos definidos por el `Command` se debe ejecutar el elemento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Schedules>  
@@ -41,29 +41,29 @@ El elemento `Schedules` contiene elementos `Schedule`, que definen el momento es
 </Schedules>  
 ```  
   
-## Elementos y atributos  
- El elemento `Schedules` es un elemento secundario del elemento `Product`.  Cada elemento `Product` puede tener al menos un elemento `Schedules`.  El elemento `Schedules` no tiene atributos.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `Schedules` es un elemento secundario de la `Product` elemento. Cada `Product` elemento puede tener a lo sumo una `Schedules` elemento. El `Schedules` elemento no tiene atributos.  
   
-## Schedule  
- El elemento `Schedule` es un elemento secundario del elemento `Schedules`.  Un elemento `Schedules` debe tener al menos un elemento `Schedule`.  
+## <a name="schedule"></a>Programación  
+ El `Schedule` es un elemento secundario de la `Schedules` elemento. A `Schedules` elemento debe tener al menos un `Schedule` elemento.  
   
- `Schedule` tiene el atributo siguiente.  
+ `Schedule`tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Name`|Obligatorio.  Nombre del elemento de programación.  Corresponde a la propiedad `ScheduleName` del elemento `Command`.  Cuando `Command` hace referencia a la programación con nombre, sólo se ejecutará en el momento indicado por dicho elemento `Schedule`.  Los programas también se pueden asociar a elementos `FailIf` y `BypassIf`, que restringen estas comprobaciones condicionales a la ejecución de la programación especificada.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
+|---------------|-----------------|  
+|`Name`|Obligatorio. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, solo se ejecutará a la hora indicada por esa `Schedule` elemento. Programaciones también pueden asociar a la `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales a la ejecución en la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
   
- Un elemento `Schedule` determinado puede tener exactamente uno de los elementos secundarios siguientes.  
+ A partir de `Schedule` elemento puede tener exactamente uno de los elementos secundarios siguientes.  
   
-## BuildList  
- El elemento `BuildList` indica al instalador que ejecute un comando inmediatamente después de que se inicie la aplicación de arranque.  
+## <a name="buildlist"></a>BuildList  
+ El `BuildList` elemento indica al instalador que ejecute un comando inmediatamente después de que se inicia la aplicación de arranque.  
   
-## BeforePackage  
- El elemento `BeforePackage` indica al instalador que ejecute un comando antes de que se instale el paquete especificado.  
+## <a name="beforepackage"></a>BeforePackage  
+ El `BeforePackage` elemento indica al instalador que ejecute un comando antes de instalar el paquete especificado.  
   
-## AfterPackage  
- El elemento `AfterPackage` indica al instalador que ejecute un comando después de que se instale el paquete especificado.  
+## <a name="afterpackage"></a>AfterPackage  
+ El `AfterPackage` elemento indica al instalador que ejecute un comando después de instalar el paquete especificado.  
   
-## Vea también  
- [\<Product\> \(Elemento\)](../deployment/product-element-bootstrapper.md)   
+## <a name="see-also"></a>Vea también  
+ [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

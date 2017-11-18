@@ -1,95 +1,96 @@
 ---
-title: "Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "aplicaciones ClickOnce, problemas con manifiestos"
-  - "aplicaciones ClickOnce, temas de seguridad"
-  - "aplicaciones ClickOnce, problemas de control de versiones"
-  - "aplicaciones ClickOnce, Control de cuentas de usuario de Windows Vista"
-  - "manifiestos [ClickOnce]"
-  - "seguridad, aplicaciones ClickOnce"
-  - "Control de cuentas de usuario, aplicaciones ClickOnce"
-  - "control de versiones, aplicaciones ClickOnce"
-  - "Windows 7, implementaciones ClickOnce"
-  - "Windows Vista, implementaciones ClickOnce"
+title: Seguridad y control de versiones, manifiestos problemas en implementaciones ClickOnce | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- versioning, ClickOnce applications
+- ClickOnce applications, Windows Vista User Account Control
+- ClickOnce applications, versioning issues
+- security, ClickOnce applications
+- Windows 7, ClickOnce deployments
+- ClickOnce applications, manifest issues
+- User Account Control, ClickOnce applications
+- Windows Vista, ClickOnce deployments
+- manifests [ClickOnce]
+- ClickOnce applications, security issues
 ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
-caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 603ff665e2c01abe62954e4e65e49a095d358b29
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Hay varios problemas relacionados con la seguridad, las versiones de las aplicaciones así como la sintaxis y la semántica de los manifiestos de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debido a los cuales la implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede no realizarse correctamente.  
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce
+Hay una gran variedad de problemas con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] seguridad, versiones de las aplicaciones y manifiesto de sintaxis y semántica que puede causar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación no se realice correctamente.  
   
-## Control de cuentas de usuario de ClickOnce y Windows Vista  
- En [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], las aplicaciones se ejecutan como un usuario estándar de forma predeterminada, aunque el usuario actual haya iniciado una sesión con una cuenta que tiene permisos de administrador.  Si una aplicación debe realizar una acción que requiere permisos de administrador, se lo indica al sistema operativo que, a continuación, pide al usuario que escriba sus credenciales de administrador.  Esta característica, que se denomina Control de cuentas de usuario \(UAC\), evita que las aplicaciones realicen modificaciones que puedan afectar a todo el sistema operativo sin la aprobación explícita de un usuario.  Las aplicaciones Windows declaran que requieren esta elevación de permisos especificando el atributo `requestedExecutionLevel` en la sección `trustInfo` de su manifiesto de aplicación.  
+## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce y Control de cuentas de usuario de Windows Vista  
+ En [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], aplicaciones de forma predeterminada se ejecutan como un usuario estándar, incluso si el usuario actual ha iniciado sesión con una cuenta que tenga permisos de administrador. Si una aplicación debe llevar a cabo una acción que requiere permisos de administrador, se indica al sistema operativo, que, a continuación, pide al usuario que escriba sus credenciales de administrador. Esta característica, que se denomina Control de cuentas de usuario (UAC), evita que las aplicaciones realicen modificaciones que pueden afectar a todo el sistema operativo sin la aprobación explícita de un usuario. Las aplicaciones Windows declaran que requieren esta elevación de permisos especificando el `requestedExecutionLevel` atributo en la `trustInfo` sección de su manifiesto de aplicación.  
   
- Debido al riesgo de exposición de las aplicaciones a ataques de elevación de la seguridad, las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no pueden solicitar la elevación de permisos si UAC está habilitado para el cliente.  Cualquier aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que intente establecer su atributo `requestedExecutionLevel` en `requireAdministrator` o `highestAvailable` no se instalará en [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].  
+ Debido al riesgo de exposición de las aplicaciones a ataques de elevación de seguridad, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones no pueden solicitar la elevación de permisos si UAC está habilitado para el cliente. Cualquier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que intenta establecer su `requestedExecutionLevel` atribuir a `requireAdministrator` o `highestAvailable` no se instalará en [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].  
   
- En algunos casos, la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podría intentar ejecutarse con permisos de administrador debido a la lógica de detección del instalador en [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].  En este caso, puede establecer el atributo `requestedExecutionLevel` en `asInvoker`, en el manifiesto de aplicación.  Esto hará que la propia aplicación se ejecute sin la elevación. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] agrega automáticamente este atributo a todos los manifiestos de aplicación.  
+ En algunos casos, la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación podría intentar ejecutar con permisos de administrador debido a la lógica de detección del instalador en [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. En este caso, puede establecer la `requestedExecutionLevel` atributo en el manifiesto de aplicación para `asInvoker`. Esto hará que la propia aplicación para que se ejecute sin la elevación. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]Este atributo se agrega automáticamente a todos los manifiestos de aplicación.  
   
- Si está desarrollando una aplicación que requiere permisos de administrador para la duración completa de la aplicación, debería considerar la posibilidad de implementar la aplicación mediante la tecnología de Windows Installer \(MSI\).  Para obtener más información, vea [Fundamentos de Windows Installer](../extensibility/internals/windows-installer-basics.md).  
+ Si está desarrollando una aplicación que requiere permisos de administrador para toda la duración de la aplicación, considere la posibilidad de implementar la aplicación mediante la tecnología de Windows Installer (MSI) en su lugar. Para obtener más información, consulte [Fundamentos de Windows Installer](../extensibility/internals/windows-installer-basics.md).  
   
-## Cuotas de aplicaciones en línea y aplicaciones de confianza parcial  
- Si la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se ejecuta en línea en lugar de ejecutarse por medio de una instalación, deberá ajustarse a la cuota reservada para las aplicaciones en línea.  Además, una aplicación de red que se ejecuta con confianza parcial, como un conjunto restringido de permisos de seguridad, no puede superar la mitad del tamaño de cuota.  
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Aplicaciones de confianza parcial y las cuotas de la aplicación en línea  
+ Si su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecuta en línea en lugar de a través de una instalación, deben ajustarse a la cuota que se reservan para las aplicaciones en línea. Además, una aplicación de red que se ejecuta en confianza parcial, como con un conjunto restringido de permisos de seguridad, no puede ser mayor que la mitad del tamaño de cuota.  
   
- Para obtener más información e instrucciones sobre cómo cambiar la cuota de aplicaciones en línea, vea [Información general sobre la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md).  
+ Para obtener más información e instrucciones sobre cómo cambiar la cuota de aplicación en línea, consulte [información general sobre la memoria caché de ClickOnce](../deployment/clickonce-cache-overview.md).  
   
-## Problemas de versiones  
- Pueden surgir problemas si se asignan nombres seguros al ensamblado y se incrementa el número de versión del ensamblado para reflejar una actualización de la aplicación.  Cualquier ensamblado que se haya compilado con una referencia a un ensamblado de nombre seguro deberá volver a compilarse por sí mismo; de lo contrario, el ensamblado intentará hacer referencia a la versión anterior.  Esto es debido a que el ensamblado utiliza el valor de versión anterior en su solicitud de enlace.  
+## <a name="versioning-issues"></a>Problemas de control de versiones  
+ Puede experimentar problemas si asigna nombres seguros al ensamblado y aumentar el número de versión de ensamblado para reflejar una actualización de la aplicación. Cualquier ensamblado compilado con una referencia a un ensamblado con nombre seguro debe compilarse por sí o el ensamblado intentará hacer referencia a la versión anterior. El ensamblado intentará esto porque el ensamblado está usando el valor de la versión anterior en su solicitud de enlace.  
   
- Por ejemplo, supongamos que dispone de un ensamblado con nombre seguro en su propio proyecto con la versión 1.0.0.0.  Tras compilar el ensamblado, lo agrega como referencia al proyecto que contiene la aplicación principal.  Si actualiza el ensamblado, incrementa la versión a 1.0.0.1 e intenta implementarlo sin volver a compilar también la aplicación, ésta no podrá cargar el ensamblado en tiempo de ejecución.  
+ Por ejemplo, supongamos que tiene un ensamblado con nombre seguro en su propio proyecto con la versión 1.0.0.0. Después de compilar el ensamblado, agréguela como una referencia al proyecto que contiene la aplicación principal. Si actualiza el ensamblado, incrementa la versión a 1.0.0.1 e intenta implementar sin volver a compilar también la aplicación, la aplicación no pueda cargar el ensamblado en tiempo de ejecución.  
   
- Este error sólo puede producirse si edita manualmente los manifiestos de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; este error no debe producirse si genera la implementación mediante [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)].  
+ Este error puede ocurrir solamente si está editando el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos manualmente; no debería experimentar este error si se genera la implementación mediante [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)].  
   
-## Especificar ensamblados de .NET Framework individuales en el manifiesto  
- La aplicación no se cargará si ha editado manualmente una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para hacer referencia a una versión anterior de un ensamblado de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  Por ejemplo, si agregase una referencia al ensamblado System.Net para una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] anterior a la versión especificada en el manifiesto, se produciría un error.  En general, no debería intentar especificar referencias a ensamblados individuales de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ya que la versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en la que se ejecuta la aplicación se especifica como una dependencia en el manifiesto de aplicación.  
+## <a name="specifying-individual-net-framework-assemblies-in-the-manifest"></a>Especificar los ensamblados de individuales de .NET Framework en el manifiesto  
+ La aplicación no se cargará si ha editado manualmente un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación para hacer referencia a una versión anterior de un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ensamblado. Por ejemplo, si ha agregado una referencia al ensamblado System.Net para una versión de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] antes de la versión especificada en el manifiesto, a continuación, se producirá un error. En general, no debería intentar especificar referencias a persona [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ensamblados, como la versión de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en que se ejecuta la aplicación se especifica como una dependencia en el manifiesto de aplicación.  
   
-## Problemas de análisis de manifiesto  
- Los archivos de manifiesto utilizados por [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] son archivos XML válidos y con un formato correcto: deben seguir las reglas de sintaxis de XML y utilizar únicamente los elementos y atributos definidos en el esquema XML correspondiente.  
+## <a name="manifest-parsing-issues"></a>Análisis de problemas de manifiesto  
+ Los archivos de manifiesto que se usan por [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] son archivos XML, y deben ser correcto y válido: deben cumplir las reglas de sintaxis XML y solo utilizan elementos y atributos definidos en el esquema XML correspondiente.  
   
- Seleccionar un nombre para la aplicación que contenga un carácter especial, como comillas simples o dobles, puede producir problemas en un archivo de manifiesto.  El nombre de la aplicación forma parte de su identidad de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Actualmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no analiza las identidades que contienen caracteres especiales.  Si se produce un error al activar la aplicación, asegúrese de que sólo esté utilizando caracteres alfabéticos y numéricos para el nombre e intente realizar de nuevo la implementación.  
+ Algo que puede causar problemas en un archivo de manifiesto consiste en seleccionar un nombre para la aplicación que contiene un carácter especial, como un signo de comillas simples o doble. Nombre de la aplicación forma parte de su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identidad. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]actualmente no analiza las identidades que contienen caracteres especiales. Si no se puede activar la aplicación, asegúrese de que se utilizan caracteres alfabéticos y numéricos solo para el nombre e intente implementar de nuevo.  
   
- Si ha editado manualmente la implementación o los manifiestos de aplicación, puede haberlos dañado involuntariamente.  Un manifiesto dañado impedirá la instalación correcta de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Puede depurar este tipo de errores en tiempo de ejecución haciendo clic en **Detalles** en el cuadro de diálogo **Error de ClickOnce** y leyendo el mensaje de error del registro.  El registro mostrará uno de los mensajes siguientes:  
+ Si ha editado manualmente los manifiestos de implementación o de aplicación, puede haberlos dañado involuntariamente. Un manifiesto dañado evitará una correcta [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalación. Puede depurar estos errores en tiempo de ejecución haciendo clic en **detalles** en el **ClickOnce Error** cuadro de diálogo y leer el mensaje de error en el registro. El registro mostrará uno de los mensajes siguientes:  
   
--   Una descripción del error de sintaxis así como el número de línea y la posición de carácter donde aparece el error.  
+-   Una descripción del error de sintaxis y el número de línea y el carácter posición donde se produjo el error.  
   
--   El nombre de un elemento o atributo cuya utilización infringe el esquema del manifiesto.  Si ha agregado manualmente XML a los manifiestos, tendrá que comparar la información agregada con los esquemas del manifiesto.  Para obtener más información, vea [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) y [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
+-   El nombre de un elemento o atributo utilizado infringe el esquema del manifiesto. Si ha agregado manualmente XML a los manifiestos, tendrá que comparar las adiciones a los esquemas del manifiesto. Para obtener más información, consulte [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) y [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Un conflicto de identificadores.  Las referencias de dependencias en los manifiestos de implementación y aplicación deben ser únicas en los atributos `name` y `publicKeyToken`.  Si ambos atributos coinciden con dos elementos cualesquiera de un manifiesto, no se podrá realizar el análisis del manifiesto.  
+-   Un conflicto de identificador. Las referencias de dependencias en los manifiestos de aplicación e implementación deben ser únicas en ambos sus `name` y `publicKeyToken` atributos. Si ambos atributos coinciden entre dos elementos cualesquiera de un manifiesto, análisis del manifiesto no se realizará correctamente.  
   
-## Precauciones cuando se cambian manualmente manifiestos o aplicaciones  
- Cuando actualiza un manifiesto de aplicación, debe volver a firmar tanto el manifiesto de aplicación como el manifiesto de implementación.  El manifiesto de implementación contiene una referencia al manifiesto de aplicación que incluye el código hash de ese archivo y su firma digital.  
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauciones cuando se cambian manualmente manifiestos o aplicaciones  
+ Cuando se actualiza un manifiesto de aplicación, debe volver a firmar el manifiesto de aplicación y el manifiesto de implementación. El manifiesto de implementación contiene una referencia al manifiesto de aplicación que incluye el hash del archivo y su firma digital.  
   
-### Precauciones con respecto al uso de deploymentProvider  
- El manifiesto de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tiene una propiedad `deploymentProvider` que señala la ruta de acceso completa a la ubicación desde donde se debe instalar y atender la aplicación:  
+### <a name="precautions-with-deployment-provider-usage"></a>Precauciones con el uso del proveedor de implementación  
+ El [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación tiene un `deploymentProvider` propiedad que señala a la ruta de acceso completa de la ubicación desde donde la aplicación debe instalarse y realizando tareas de mantenimiento:  
   
 ```  
 <deploymentProvider codebase="http://myserver/myapp.application" />  
 ```  
   
- Esta ruta de acceso se establece cuando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea la aplicación y es obligatoria para las aplicaciones instaladas.  La ruta de acceso indica la ubicación estándar desde donde el instalador de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalará la aplicación y buscará las actualizaciones.  Si utiliza el comando **xcopy** para copiar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en otra ubicación pero no cambia la propiedad `deploymentProvider`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] seguirá haciendo referencia a la ubicación original cuando intente descargar la aplicación.  
+ Esta ruta de acceso se establece cuando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea la aplicación y es obligatoria para las aplicaciones instaladas. La ruta apunta a la ubicación estándar donde el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installer instalará la aplicación de y buscar actualizaciones. Si usas el **xcopy** comando para copiar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación a una ubicación diferente, pero no cambie el `deploymentProvider` propiedad, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] todavía hará referencia a la ubicación original cuando intente descargar la aplicación.  
   
- Si desea mover o copiar una aplicación, debe actualizar también la ruta de acceso de `deploymentProvider`, de modo que el cliente se instala realmente desde la nueva ubicación.  La actualización de esta ruta de acceso es sobre todo importante si hay aplicaciones instaladas.  Para las aplicaciones en línea que se inician siempre a través de la dirección URL original, la configuración de `deploymentProvider` es opcional.  Si se configura `deploymentProvider`, se tendrá en cuenta; en caso contrario, se utilizará la dirección URL usada para activar la aplicación como dirección URL base para descargar los archivos de aplicación.  
+ Si desea mover o copiar una aplicación, también debe actualizar el `deploymentProvider` ruta de acceso, por lo que el cliente se instala realmente desde la nueva ubicación. La actualización de esta ruta de acceso es principalmente un problema si ha instalado las aplicaciones. Para las aplicaciones en línea que siempre se inician a través de la dirección URL original, establecer el `deploymentProvider` es opcional. Si `deploymentProvider` está establecido, se respetará; en caso contrario, se utilizará la dirección URL utilizada para iniciar la aplicación como la dirección URL base para descargar los archivos de la aplicación.  
   
 > [!NOTE]
->  Cada vez que actualiza el manifiesto, también debe volver a firmarlo.  
+>  Cada vez que actualice el manifiesto debe también firmarlo de nuevo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+ [Elegir una estrategia de implementación ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

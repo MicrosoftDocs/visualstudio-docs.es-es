@@ -1,5 +1,5 @@
 ---
-title: "Implementar una extensión del modelo de capas | Documentos de Microsoft"
+title: "Implementar una extensión de modelo de capas | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,29 +10,15 @@ helpviewer_keywords:
 - dependency diagrams, deploying extensions
 - layer models, deploying extensions
 ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 03164fe80a0b8f4dbc321a7e57b7db9e38e405d5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d019e602c5bf198df03a50034c2ed29519d16e53
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
 Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de capas que se crean mediante Visual Studio.  
@@ -42,9 +28,9 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
   
 #### <a name="to-install-the-extension"></a>Para instalar la extensión  
   
-1.  En el proyecto que contiene **source.vsix.manifest**, abra **bin\\ \* ** en el Explorador de archivos.  
+1.  En el proyecto que contiene **source.vsix.manifest**, abra **bin\\ \***  en el Explorador de archivos.  
   
-2.  Copia la ** \*.vsix** archivos en el equipo en el que desea instalar la extensión.  
+2.  Copia la  **\*.vsix** archivo en el equipo en el que va a instalar la extensión.  
   
 3.  En el equipo de destino, haga doble clic en el * archivo .vsix en el Explorador de Windows.  
   
@@ -61,7 +47,7 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Para instalar la extensión por capas en un servidor de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Server  
   
-1.  Copia la **.vsix** archivos del equipo de desarrollo para la [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] equipo.  
+1.  Copia la **.vsix** archivos desde el equipo de desarrollo para la [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] equipo.  
   
      Coloque el archivo VSIX en una de las siguientes ubicaciones:  
   
@@ -78,15 +64,14 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
          %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versión]  
   
         > [!NOTE]
-        >  % LocalAppData % suele *DriveName*: usuarios*nombre de usuario*AppDataLocal.  
+        >  Suele ser % LocalAppData % *DriveName*: los usuarios*nombre de usuario*AppDataLocal.  
   
 2.  Expanda cada archivo VSIX en una carpeta en la misma ubicación:  
   
-    1.  Cambiar la extensión de nombre de archivo de **.vsix** a **.zip**.  
+    1.  Cambie la extensión de nombre de archivo de **.vsix** a **.zip**.  
   
     2.  Extraiga el contenido del archivo .zip a una carpeta.  
   
     3.  Elimine el archivo .zip  
   
 3.  Reinicie [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)].
-

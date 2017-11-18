@@ -1,51 +1,53 @@
 ---
-title: "&#39;continue&#39; no puede estar fuera del bucle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1020"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: CAN &#39; t tiene &#39; continuar &#39; fuera del bucle | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1020
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &#39;continue&#39; no puede estar fuera del bucle
-Has intentado usar la instrucción **continue** fuera de un bucle.  La instrucción **continue** solo se puede usar dentro del cuerpo de:  
+# <a name="can39t-have-39continue39-outside-of-loop"></a>CAN &#39; t tiene &#39; continuar &#39; fuera del bucle
+Se intentó utilizar el **continuar** instrucción fuera de un bucle. El **continuar** instrucción puede utilizarse únicamente dentro del cuerpo de r:  
   
--   un bucle `do-while`,  
+-   `do-while`bucle,  
   
--   un bucle `while`,  
+-   `while`bucle,  
   
--   un bucle **for**,  
+-   **para** bucles,  
   
--   un bucle **for\/in**.  
+-   **por/en** bucle.  
   
-### Para corregir este error  
+### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrate de que la instrucción **continue** aparece dentro del cuerpo de:  
+-   Asegúrese de que el **continuar** instrucción aparece dentro del cuerpo de r:  
   
-    -   un bucle `do-while`,  
+    -   `do-while`bucle,  
   
-    -   un bucle `while`,  
+    -   `while`bucle,  
   
-    -   un bucle **for**,  
+    -   **para** bucles,  
   
-    -   un bucle **for\/in**.  
+    -   **por/en** bucle.  
   
-## Vea también  
- [continue \(Instrucción\)](../../javascript/reference/continue-statement-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Continue (instrucción)](../../javascript/reference/continue-statement-javascript.md)   
  [Controlar el flujo del programa](../../javascript/controlling-program-flow-javascript.md)   
- [Solución de problemas en las secuencias de comandos](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Solución de problemas de los scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

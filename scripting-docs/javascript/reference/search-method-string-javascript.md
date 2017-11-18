@@ -1,56 +1,57 @@
 ---
-title: "search (M&#233;todo, String, JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "search"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "search (método)"
+title: "Buscar (método, String) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: search
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: search method
 ms.assetid: 1cae0fbc-3319-4327-ba4e-d5fa2c4a9ba0
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 730fb1604147b56fc5ab1e312bf7a6dfb5487a5a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# search (M&#233;todo, String, JavaScript)
-Busca la primera coincidencia de subcadena en una búsqueda de expresiones regulares.  
+# <a name="search-method-string-javascript"></a>search (Método, String, JavaScript)
+Busca la primera coincidencia de subcadena en una búsqueda de expresión regular.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 stringObj.search(rgExp)   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `stringObj`  
- Obligatorio.  Objeto `String` o literal de cadena donde se realizará la búsqueda.  
+ Obligatorio. La `String` objeto o literal en el que se va a realizar la búsqueda de cadena.  
   
  `rgExp`  
- Obligatorio.  Instancia de un objeto **Regular Expression** que contiene el patrón de expresión regular y las marcas aplicables.  
+ Obligatorio. Una instancia de un **expresión Regular** objeto que contiene el patrón de expresión regular y las marcas aplicables.  
   
-## Valor devuelto  
- Si se encuentra una coincidencia, el método **search** devuelve un valor entero que indica el desplazamiento desde el principio de la cadena en la que se encontró la primera coincidencia.  Si no se encuentra ninguna coincidencia, devuelve \-1.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se encuentra una coincidencia, el **búsqueda** método devuelve un valor entero que indica el desplazamiento desde el principio de la cadena donde se produjo la primera coincidencia. Si se encuentra ninguna coincidencia, devuelve -1.  
   
-## Comentarios  
- También puedes establecer la marca `i` que hace que la búsqueda no distinga entre mayúsculas y minúsculas.  
+## <a name="remarks"></a>Comentarios  
+ También puede establecer el `i` marca que hace que la búsqueda distinguir mayúsculas de minúsculas.  
   
-## Ejemplo  
- En el siguiente ejemplo se muestra el uso del método **search**.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **búsqueda** método.  
   
-```javascript  
+```JavaScript  
 var src = "is but a Dream within a dream";  
 var re = /dream/;  
 var pos = src.search(re);  
@@ -64,19 +65,18 @@ document.write(pos);
 // Output:   
 // 24   
 // 9  
-  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)  
+ **Se aplica a**: [objeto de cadena](../../javascript/reference/string-object-javascript.md)  
   
-## Vea también  
- [exec \(Método, Regular Expression\)](../../javascript/reference/exec-method-regular-expression-javascript.md)   
- [match \(Método, String\)](../../javascript/reference/match-method-string-javascript.md)   
- [Regular Expression \(Objeto\)](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/es-es/ab0766e1-7037-45ed-aa23-706f58358c0e)   
- [replace \(Método, String\)](../../javascript/reference/replace-method-string-javascript.md)   
- [test \(Método, Regular Expression\)](../../javascript/reference/test-method-regular-expression-javascript.md)   
- [Regular Expression Programming \(JavaScript\)](http://msdn.microsoft.com/es-es/3b62e27c-4f07-4726-a95b-6e841807bfaf)
+## <a name="see-also"></a>Vea también  
+ [exec (método, Regular Expression)](../../javascript/reference/exec-method-regular-expression-javascript.md)   
+ [Match (método) (cadena)](../../javascript/reference/match-method-string-javascript.md)   
+ [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [Replace (método) (cadena)](../../javascript/reference/replace-method-string-javascript.md)   
+ [Test (método) (expresión Regular)](../../javascript/reference/test-method-regular-expression-javascript.md)   
+ [Programación de la expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/3b62e27c-4f07-4726-a95b-6e841807bfaf)

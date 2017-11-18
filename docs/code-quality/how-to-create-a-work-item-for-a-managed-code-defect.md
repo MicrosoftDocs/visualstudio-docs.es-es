@@ -1,40 +1,41 @@
 ---
-title: "C&#243;mo: Crear un elemento de trabajo para defectos de c&#243;digo administrado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "código administrado, crear elementos de trabajo para los defectos de código"
-  - "análisis de código, creación de elementos de trabajo"
+title: "Cómo: crear un elemento de trabajo para defectos de código administrado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managed code, creating work items for code defects
+- code analysis, creating work items
 ms.assetid: 46ddfd57-af4a-4c1d-bd00-8e6328f321f0
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7f416f8000240101d8ac6e29603d1b2f662e1b76
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Crear un elemento de trabajo para defectos de c&#243;digo administrado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede utilizar la característica de seguimiento de elementos de trabajo para registrar el elemento de trabajo desde [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  Para usar esta característica, el proyecto debe formar parte del proyecto de equipo de [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Cómo: Crear un elemento de trabajo para defectos de código administrado
+Puede usar la característica para registrar el elemento de trabajo desde dentro de seguimiento de elementos de trabajo [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]. Para usar esta característica, el proyecto debe formar parte del proyecto de equipo [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
   
-### Para crear un elemento de trabajo para el defectos del código administrado  
+### <a name="to-create-a-work-item-for-managed-code-defect"></a>Para crear un elemento de trabajo para defectos de código administrado  
   
-1.  En la ventana de **Análisis de código** , seleccione la advertencia.  
+1.  En el **análisis de código** ventana, seleccione la advertencia.  
   
-2.  Elija **Acciones**, elija **Crear elemento de trabajo** y elija el tipo de elemento de trabajo que desee crear.  
+2.  Elija **acciones**, a continuación, elija **crear elemento de trabajo** y elija el tipo de elemento de trabajo para crear.  
   
-     Se crea un nuevo elemento de trabajo, donde puede especificar información sobre el defecto.  
+     Se crea un nuevo elemento de trabajo para que especificar la información de defecto.  
   
-### Para crear un elemento de trabajo para varios defectos de código administrado  
+### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Para crear un elemento de trabajo para varios defectos de código administrado  
   
-1.  En la **Lista de errores**, seleccione varias advertencias y, a continuación, haga clic en ellas con el botón secundario del mouse.  
+1.  En el **lista de errores**, seleccione varias advertencias y, a continuación, haga clic en las advertencias.  
   
-2.  Elija **Crear elemento de trabajo** y haga clic en el tipo de elemento de trabajo que desee crear.  
+2.  Seleccione **crear elemento de trabajo** y haga clic en el tipo de elemento de trabajo para crear.  
   
-     Se crea un solo elemento de trabajo para todas las advertencias seleccionadas, donde puede especificar la información del error.
+     Se crea un elemento de trabajo único para todas las advertencias seleccionadas para especificar la información de error.

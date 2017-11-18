@@ -1,53 +1,54 @@
 ---
-title: "C&#243;mo: Volver a firmar manifiestos de aplicaci&#243;n e implementaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implementación ClickOnce, firmar manifiestos"
-  - "implementar aplicaciones [ClickOnce], firmar manifiestos"
-  - "implementar aplicaciones, firmar manifiestos"
-  - "aplicaciones de Office, firmar manifiestos"
-  - "desarrollo de Office en Visual Studio, firmar manifiestos"
+title: "Cómo: volver a firmar manifiestos de implementación y aplicación | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Office applications, signing manifests
+- deploying applications [ClickOnce], signing manifests
+- deploying applications, signing manifests
+- ClickOnce deployment, signing manifests
+- Office development in Visual Studio, signing manifests
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: baa3e9310946482a4c7c64fdb619ce612a21dbda
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Volver a firmar manifiestos de aplicaci&#243;n e implementaci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Después de realizar cambios en las propiedades de implementación del manifiesto de aplicación para las aplicaciones de Windows Forms y Windows Presentation Foundation \(xbap\) o las soluciones de Office, debe volver a firmar los manifiestos de aplicación e implementación con un certificado.  Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
+Después de realizar cambios a las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de usuario final.  
   
- Otro escenario donde se deberían volver a firmar los manifiestos es cuando los clientes desean firmar los manifiestos de aplicación e implementación con su propio certificado.  
+ Otro escenario donde se podrían volver a firmar los manifiestos es cuando los clientes desean firmar la aplicación y los manifiestos de implementación con su propio certificado.  
   
-## Volver a firmar los manifiestos de implementación y aplicación  
- En este procedimiento se supone que ya ha realizado los cambios en el archivo de manifiesto de la aplicación \(.manifest\).  Para obtener más información, vea [Cómo: Cambiar propiedades de implementación](http://msdn.microsoft.com/es-es/66052a3a-8127-4964-8147-2477ef5d1472).  
+## <a name="re-signing-the-application-and-deployment-manifests"></a>Manifiestos de volver a firmar la aplicación e implementación  
+ Este procedimiento se da por supuesto que ya ha realizado cambios en el archivo de manifiesto de aplicación (.manifest). Para obtener más información, consulte [Cómo: cambiar propiedades de implementación](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
   
-#### Para volver a firmar los manifiestos de implementación y aplicación con Mage.exe  
+#### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación y la implementación de los manifiestos con Mage.exe  
   
-1.  Abra una ventana **Símbolo del sistema de Visual Studio**.  
+1.  Abra un **Visual Studio Command Prompt** ventana.  
   
-2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que desea firmar.  
+2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que desea iniciar sesión.  
   
-3.  Escriba el comando siguiente para firmar el archivo de manifiesto de aplicación.  Reemplace ManifestFileName con el nombre del archivo de manifiesto más la extensión.  Reemplace Certificate por la ruta de acceso relativa o completa del archivo de certificado y reemplace Password por la contraseña para el certificado.  
+3.  Escriba el comando siguiente para firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto más la extensión. Reemplace el certificado con la ruta de acceso completa o relativa al archivo de certificado y contraseña con la contraseña para el certificado.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Por ejemplo, podría ejecutar el comando siguiente para firmar un manifiesto de aplicación para un complemento, una aplicación de Windows Forms o una aplicación Explorador de Windows Presentation Foundation.  No se recomienda el uso de certificados temporales creados por Visual Studio para la implementación en entornos de producción.  
+     Por ejemplo, podría ejecutar el comando siguiente para firmar un manifiesto de aplicación para un complemento, una aplicación de formularios Windows Forms o una aplicación de explorador de Windows Presentation Foundation. Certificados temporales creados por Visual Studio no se recomiendan para la implementación en entornos de producción.  
   
     ```  
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -55,13 +56,13 @@ Después de realizar cambios en las propiedades de implementación del manifiest
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Escriba el comando siguiente para actualizar y firmar el archivo de manifiesto de implementación y reemplace los nombres de los marcadores de posición como en el paso anterior.  
+4.  Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Por ejemplo, podría ejecutar el comando siguiente para actualizar y firmar un manifiesto de implementación de un complemento de Excel, una aplicación de Windows Forms o una aplicación de explorador de Windows Presentation Foundation.  
+     Por ejemplo, podría ejecutar el comando siguiente para actualizar y firmar un manifiesto de implementación para un complemento de Excel, una aplicación de formularios Windows Forms o una aplicación de explorador de Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -69,26 +70,26 @@ Después de realizar cambios en las propiedades de implementación del manifiest
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  De manera opcional, copie el manifiesto de implementación principal \(publish\\*appname*.application\) en el directorio de implementación de la versión \(publish\\Application Files\\*appname*\_*versión*\).  
+5.  Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*Application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
   
-## Actualizar y volver a firmar los manifiestos de implementación y aplicación  
- En este procedimiento, se supone que ya ha realizado los cambios en el archivo del manifiesto de aplicación \(.manifest\), pero que hay otros archivos que se han actualizado.  Durante la actualización de los archivos, también se ha de actualizar el hash que representa el archivo.  
+## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Actualizar y volver a firmar la aplicación y los manifiestos de implementación  
+ Este procedimiento se supone que ya ha realizado que cambios en la aplicación (.manifest) del archivo de manifiesto, pero que no hay otros archivos que se actualizaron. Cuando se actualizan los archivos, también debe actualizarse el valor hash que representa el archivo.  
   
-#### Para actualizar y volver a firmar los manifiestos de implementación y aplicación con Mage.exe  
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para actualizar y volver a firmar la aplicación y la implementación de los manifiestos con Mage.exe  
   
-1.  Abra una ventana **Símbolo del sistema de Visual Studio**.  
+1.  Abra un **Visual Studio Command Prompt** ventana.  
   
-2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que desea firmar.  
+2.  Cambie los directorios a la carpeta que contiene los archivos de manifiesto que desea iniciar sesión.  
   
-3.  Quite la extensión .deploy de los archivos en la carpeta de salida de publicación.  
+3.  Quite la extensión de archivo ".deploy" de los archivos en la carpeta de salida de publicación.  
   
-4.  Escriba el siguiente comando para actualizar el manifiesto de aplicación con el nuevo hash para los archivos actualizados y firmar el archivo del manifiesto de aplicación.  Reemplace ManifestFileName con el nombre del archivo de manifiesto más la extensión.  Reemplace Certificate por la ruta de acceso relativa o completa del archivo de certificado y reemplace Password por la contraseña para el certificado.  
+4.  Escriba el siguiente comando para actualizar el manifiesto de aplicación con el nuevo hash para los archivos actualizados y firmar el archivo de manifiesto de aplicación. Reemplace ManifestFileName con el nombre de su archivo de manifiesto más la extensión. Reemplace el certificado con la ruta de acceso completa o relativa al archivo de certificado y contraseña con la contraseña para el certificado.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     Por ejemplo, podría ejecutar el comando siguiente para firmar un manifiesto de aplicación para un complemento, una aplicación de Windows Forms o una aplicación Explorador de Windows Presentation Foundation.  No se recomienda el uso de certificados temporales creados por Visual Studio para la implementación en entornos de producción.  
+     Por ejemplo, podría ejecutar el comando siguiente para firmar un manifiesto de aplicación para un complemento, una aplicación de formularios Windows Forms o una aplicación de explorador de Windows Presentation Foundation. Certificados temporales creados por Visual Studio no se recomiendan para la implementación en entornos de producción.  
   
     ```  
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -96,13 +97,13 @@ Después de realizar cambios en las propiedades de implementación del manifiest
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Escriba el comando siguiente para actualizar y firmar el archivo de manifiesto de implementación y reemplace los nombres de los marcadores de posición como en el paso anterior.  
+5.  Escriba el siguiente comando para actualizar y firmar el archivo de manifiesto de implementación, reemplazando los nombres de marcador de posición como en el paso anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     Por ejemplo, podría ejecutar el comando siguiente para actualizar y firmar un manifiesto de implementación de un complemento de Excel, una aplicación de Windows Forms o una aplicación de explorador de Windows Presentation Foundation.  
+     Por ejemplo, podría ejecutar el comando siguiente para actualizar y firmar un manifiesto de implementación para un complemento de Excel, una aplicación de formularios Windows Forms o una aplicación de explorador de Windows Presentation Foundation.  
   
     ```  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
@@ -110,18 +111,18 @@ Después de realizar cambios en las propiedades de implementación del manifiest
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Vuelva a agregar la extensión .deploy a los archivos, excepto a los archivos del manifiesto de implementación y del manifiesto de aplicación.  
+6.  Agregar la extensión de archivo .deploy a los archivos, excepto los archivos de manifiesto de la aplicación y la implementación.  
   
-7.  De manera opcional, copie el manifiesto de implementación principal \(publish\\*appname*.application\) en el directorio de implementación de la versión \(publish\\Application Files\\*appname*\_*versión*\).  
+7.  Si lo desea, copie el manifiesto de implementación principal (publicar\\*appname*Application) en el directorio de implementación de la versión (publish\Application archivos\\*appname*_ *versión*).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Información general sobre la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
- [Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Cómo: Agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
+ [Cómo: habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Cómo: agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Cómo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

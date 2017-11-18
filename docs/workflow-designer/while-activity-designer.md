@@ -1,32 +1,35 @@
 ---
-title: "Dise&#241;ador de actividades While | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.While.UI"
+title: "Diseñador de actividades While | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: b70e0c66813c474d5711538843da93a669df88d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Dise&#241;ador de actividades While
-La actividad <xref:System.Activities.Statements.While> ejecuta la actividad que se encuentra en su propiedad <xref:System.Activities.Statements.While.Body%2A> mientras la propiedad <xref:System.Activities.Statements.Condition%2A> especificada se evalúa con el valor **true**.La actividad contenida nunca se puede ejecutar.Si desea ejecutar la actividad contenida al menos una vez, utilice la actividad <xref:System.Activities.Statements.DoWhile> en su lugar.  
+# <a name="while-activity-designer"></a>Diseñador de actividades While
+El <xref:System.Activities.Statements.While> actividad ejecuta la actividad contenida en su <xref:System.Activities.Statements.While.Body%2A> mientras especificado <xref:System.Activities.Statements.While.Condition%2A> se evalúa como **true**. La actividad contenida nunca se puede ejecutar. Si desea ejecutar la actividad contenida al menos una vez, utilice la actividad <xref:System.Activities.Statements.DoWhile> en su lugar.  
   
-## Propiedades While en el Diseñador de flujo de trabajo  
+## <a name="while-properties-in-workflow-designer"></a>Propiedades While en el Diseñador de flujo de trabajo  
  En la tabla siguiente se muestran las actividades <xref:System.Activities.Statements.While> más útiles y se describe cómo se utilizan en el diseñador.  
   
 |Nombre de la propiedad|Obligatorio|Uso|  
-|----------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.While> en el encabezado.El valor predeterminado es While.El valor se puede editar en la ventana **Propiedades** o directamente en el encabezado del diseñador de actividades.<br /><br /> Pese a que la propiedad <xref:System.Activities.Activity.DisplayName%2A> no es obligatoria, se recomienda utilizar una.|  
-|<xref:System.Activities.Statements.While.Body%2A>|False|Contiene la actividad que se va ejecutar mientras que <xref:System.Activities.Statements.Condition%2A> se evalúe con el valor **true**.|  
-|<xref:System.Activities.Statements.Condition%2A>|True|Contiene la expresión de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] que se evalúa para determinar si se va a ejecutar la actividad en la propiedad <xref:System.Activities.Statements.While.Body%2A>.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.While> en el encabezado. El valor predeterminado es While. El valor se puede editar en el **propiedades** ventana o directamente en el encabezado del Diseñador de actividad.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|  
+|<xref:System.Activities.Statements.While.Body%2A>|False|Contiene la actividad que se va a ejecutar mientras la <xref:System.Activities.Statements.While.Condition%2A> se evalúa como **true**.|  
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Contiene la expresión de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] que se evalúa para determinar si se va a ejecutar la actividad en la propiedad <xref:System.Activities.Statements.While.Body%2A>.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)   
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)

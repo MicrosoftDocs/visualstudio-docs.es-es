@@ -1,43 +1,46 @@
 ---
-title: "prototype (Propiedad, Error) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: prototype (propiedad) (Error) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 6c268a51-1a3d-4397-abf8-e54ca4e598fe
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b7d0413d3541691a38672e7c0720b58245725b76
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# prototype (Propiedad, Error)
-Devuelve una referencia al prototipo para un error.  
+# <a name="prototype-property-error"></a>prototype (Propiedad, Error)
+Devuelve una referencia al prototipo correspondiente a un error.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 error.prototype  
 ```  
   
-## Comentarios  
- El argumento `error` es el nombre de un error.  
+## <a name="remarks"></a>Comentarios  
+ El `error` argumento es el nombre de un error.  
   
- Usa la propiedad `prototype` para proporcionar un conjunto base de funcionalidad a un error.  Las nuevas instancias de un objeto "heredan" el comportamiento del prototipo asignado a ese objeto.  
+ Use la `prototype` propiedad para proporcionar un conjunto básico de funcionalidad a un Error. Las nuevas instancias de un objeto «heredan» el comportamiento del prototipo asignado a dicho objeto.  
   
- Por ejemplo, para agregar un método al objeto `Error` que devuelve el valor del elemento mayor de la matriz, declara la función, agrégala a `Error.prototype` y después úsala.  
+ Por ejemplo, para agregar un método al objeto `Error` que devuelva el valor del elemento más grande de la matriz, declare la función, agréguela a `Error.prototype` y después úsela.  
   
-```javascript  
+```JavaScript  
 function getSeverity(){  
     if (this.number > 1000)  
         return "high";  
@@ -54,7 +57,7 @@ document.write(myError.getSev());
   
 ```  
   
- Todos los objetos intrínsecos de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tienen una propiedad `prototype` que es de solo lectura.  Se pueden agregar propiedades y métodos al prototipo, pero no se puede asignar al objeto otro prototipo diferente.  No obstante, se puede asignar un nuevo prototipo a los objetos definidos por el usuario.  
+ Todos los intrínsecos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objetos tienen un `prototype` propiedad que es de solo lectura. Pueden agregar propiedades y métodos al prototipo, pero el objeto no puede asignarse a otro prototipo. Sin embargo, los objetos definidos por el usuario es posible asignar un nuevo prototipo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

@@ -1,47 +1,47 @@
 ---
-title: "Elemento &lt;Signature&gt; (Implementaci&#243;n ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Signature> (elemento) [manifiesto de implementación ClickOnce]"
+title: "&lt;Firma&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Signature> element [ClickOnce deployment manifest]
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a60156c77dfc33475d3913c3fed2e30159f03959
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;Signature&gt; (Implementaci&#243;n ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (implementación de ClickOnce)
 Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   
-## Comentarios  
- Firmar un manifiesto de implementación mediante una firma con doble cifrado es opcional, pero se recomienda hacerlo.  Para obtener más información sobre cómo firmar los archivos XML, vea la Recomendación de World Wide Web Consortium, "XML\-Signature Syntax and Processing," que se describe en [http:\/\/www.w3.org\/TR\/xmldsig\-core\/](http://www.w3.org/TR/xmldsig-core/).  
+## <a name="remarks"></a>Comentarios  
+ Firmar un manifiesto de implementación mediante una firma con doble cifrado es opcional, pero se recomienda. Para obtener más información acerca de la firma XML archivos Consulte la World Wide Web Consortium recomendación, "XML-Signature Syntax and Processing," se describe en [http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/).  
   
- Si desea firmar su manifiesto, deben proporcionarse un algoritmo hash para todos los archivos.  No se puede firmar un manifiesto con archivos a los que no se aplica un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de este tipo de archivos.  
+ Si desea firmar el manifiesto, se deben proporcionar valores hash para todos los archivos. No se puede firmar un manifiesto con archivos que no se aplica un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de este tipo de archivos.  
   
-## Ejemplo  
- En el ejemplo de código siguiente se ilustra un elemento `Signature` en un manifiesto utilizado en una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra un `Signature` elemento en un manifiesto de implementación utilizado en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -72,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)

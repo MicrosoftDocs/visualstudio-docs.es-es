@@ -10,24 +10,24 @@ helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
 ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 571b30e0be9863b20dc1c8abca87940bb21cc344
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
-Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, podría modificar **cortar** para que excluya información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage y se derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.</xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>  
+Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, puede modificar **cortar** para que excluye la información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   
  En resumen, para modificar un comando:  
   
-1.  [Averigüe qué comandos puede modificar](#what).  
+1.  [Detectar qué comandos puede modificar](#what).  
   
-2.  [Crear una declaración parcial de la clase de conjunto de comandos adecuada](#extend).  
+2.  [Crear una declaración parcial de la clase de conjunto de comando adecuado](#extend).  
   
 3.  [Invalide los métodos ProcessOnStatus y ProcessOnMenu](#override) para el comando.  
   
@@ -36,11 +36,11 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
 > [!NOTE]
 >  Si desea crear sus propios comandos de menú, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="a-namewhata-what-commands-can-you-modify"></a><a name="what"></a>¿Qué comandos puede modificar?  
+##  <a name="what"></a>¿Qué comandos se pueden modificar?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Para averiguar qué comandos puede modificar  
   
-1.  En el `DslPackage` proyecto, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# se puede encontrar en el Explorador de soluciones como filial de `CommandSet.tt`.  
+1.  En el `DslPackage` proyecto, abra `GeneratedCode\CommandSet.cs`. Este archivo de C# puede encontrarse en el Explorador de soluciones como una subsidiaria de `CommandSet.tt`.  
   
 2.  Buscar clases en este archivo cuyos nombres terminan con "`CommandSet`", por ejemplo `Language1CommandSet` y `Language1ClipboardCommandSet`.  
   
@@ -53,7 +53,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
     > [!NOTE]
     >  Normalmente no debe editar los archivos que se han generado. Las ediciones se perderán la próxima vez que se generen los archivos.  
   
-##  <a name="a-nameextenda-extend-the-appropriate-command-set-class"></a><a name="extend"></a>Extender la clase de conjunto de comandos apropiada  
+##  <a name="extend"></a>Extender la clase de conjunto de comando adecuado  
  Cree un nuevo archivo que contiene una declaración parcial de la clase de conjunto de comandos.  
   
 #### <a name="to-extend-the-command-set-class"></a>Para extender la clase de conjunto de comandos  
@@ -76,13 +76,13 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
     { internal partial class Language1CommandSet { ...  
     ```  
   
-     **Nota** si utiliza la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.  
+     **Tenga en cuenta** si utiliza la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.  
   
-##  <a name="a-nameoverridea-override-the-command-methods"></a><a name="override"></a>Reemplazar los métodos de comando  
- Mayoría de los comandos tiene dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe ser visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
+##  <a name="override"></a>Invalide los métodos de comando  
+ Casi todos los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú  
- Invalide el método ProcessOnStatus... (método). Este método debe establecer las propiedades Visible y Enabled de su parámetro MenuCommand. Normalmente, el comando busca en this.CurrentSelection para determinar si se aplica a los elementos seleccionados, y también podría buscar en sus propiedades para determinar si se puede aplicar en el estado actual de las mismas.  
+ Invalidar el ProcessOnStatus... método. Este método debe establecer las propiedades Visible y Enabled de su parámetro MenuCommand. Normalmente, el comando busca en this.CurrentSelection para determinar si se aplica a los elementos seleccionados, y también podría buscar en sus propiedades para determinar si se puede aplicar en el estado actual de las mismas.  
   
  Como regla general, la propiedad Visible se debe determinar en función de qué elementos están seleccionados. La propiedad Enabled, que determina si el comando aparece en negro o en gris en el comando, dependerá del estado actual de la selección.  
   
@@ -113,7 +113,7 @@ protected override void ProcessOnStatusDeleteCommand (MenuCommand command)
  El método ProcessOnStatus no debe crear, eliminar ni actualizar elementos en el almacén.  
   
 ### <a name="to-change-the-behavior-of-the-command"></a>Para cambiar el comportamiento del comando  
- Invalide el método ProcessOnMenu... (método). En el ejemplo siguiente se impide que el usuario elimine más de un elemento al mismo tiempo, aunque presione la tecla Suprimir.  
+ Invalidar el ProcessOnMenu... método. En el ejemplo siguiente se impide que el usuario elimine más de un elemento al mismo tiempo, aunque presione la tecla Suprimir.  
   
 ```  
 /// <summary>  
@@ -130,7 +130,7 @@ protected override void ProcessOnMenuDeleteCommand()
 }  
 ```  
   
- Si el código realiza cambios en el almacén, como crear, eliminar o actualizar elementos o vínculos, debe hacerlo dentro de una transacción. Para obtener más información, consulte [cómo crear y actualizar elementos de modelo](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Si el código realiza cambios en el almacén, como crear, eliminar o actualizar elementos o vínculos, debe hacerlo dentro de una transacción. Para obtener más información, consulte [cómo crear y actualizar elementos del modelo](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Escribir el código de los métodos  
  Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:  
@@ -147,15 +147,14 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.  
   
- Para obtener más información sobre cómo navegar de un elemento a y sobre cómo crear objetos y vínculos, consulte [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+ Para obtener más información sobre cómo navegar de un elemento a elemento y sobre cómo crear objetos y vínculos, consulte [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Vea también  
- <xref:System.ComponentModel.Design.MenuCommand></xref:System.ComponentModel.Design.MenuCommand>   
+ <xref:System.ComponentModel.Design.MenuCommand>   
  [Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Tabla de comandos de Visual Studio (. Archivos de Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Tabla de comandos de Visual Studio (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
- [VMSDK: diagramas de circuitos. Personalización extensa DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [Código de ejemplo: diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
+ [VMSDK - ejemplo de diagramas de circuito. Personalización de una amplia DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
+ [Código de ejemplo: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

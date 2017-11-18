@@ -1,33 +1,33 @@
 ---
-title: "&lt;Package&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<package> (elemento) [arranque]"
+title: '&lt;Paquete&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Package&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento `Package` es el elemento XML de nivel superior dentro de un archivo de paquete.  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; elemento (arranque)
+El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Package  
@@ -142,17 +142,17 @@ El elemento `Package` es el elemento XML de nivel superior dentro de un archivo 
 </Package>  
 ```  
   
-## Elementos y atributos  
- Se requiere el elemento `Package`.  Tiene los atributos siguientes.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `Package` elemento es necesario. Tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Culture`|Obligatorio.  Define la referencia cultural para este paquete, que determina el idioma que se va a utilizar.  Este atributo es una clave del elemento `Strings`, que muestra las cadenas específicas de la referencia cultural para los nombres del producto y los mensajes de error durante la instalación.|  
-|`Name`|Obligatorio.  El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Este atributo es una clave del elemento `Strings`, que debe contener un elemento `String` en el que las propiedades `Name` y `Culture` están establecidas para coincidir con las propiedades `Name` y `Culture` de `Package`.|  
-|`LicenseAgreement`|Opcional.  Especifica el nombre del archivo en el paquete de distribución que contiene el Contrato de licencia para el usuario final \(CLUF\).  Este archivo puede ser de texto sin formato \(.txt\) o formato de texto enriquecido.  \(.rtf\)|  
+|---------------|-----------------|  
+|`Culture`|Obligatorio. Define la referencia cultural para este paquete, que determina el idioma que desea utilizar. Este atributo es una clave en el `Strings` elemento, que enumera las cadenas de referencia cultural para los nombres de producto y los mensajes de error durante la instalación.|  
+|`Name`|Obligatorio. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con la `Name` y `Culture` establecen propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
+|`LicenseAgreement`|Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (.txt) o formato de texto enriquecido. .rtf)|  
   
-## Ejemplo  
- En el siguiente ejemplo de código se muestra un archivo de paquete completo para la redistribución de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir la [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -189,5 +189,5 @@ El elemento `Package` es el elemento XML de nivel superior dentro de un archivo 
 </Package>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

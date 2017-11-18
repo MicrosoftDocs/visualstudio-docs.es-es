@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 864963f32fe703ada943f7e5202d7ebf6bf21e51
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 Puede generar o configurar partes de la aplicación a partir de un modelo.
@@ -37,7 +23,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
  El modelo representa los requisitos de forma más directa que el código. Al derivar el comportamiento de la aplicación directamente desde el modelo, puede responder a los cambios en los requisitos de forma mucho más rápida y confiable que actualizando el código. Aunque es necesario algún trabajo inicial para configurar la derivación, este esfuerzo queda compensado si espera que los requisitos varíen o si piensa crear diversas variantes del producto.  
   
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generar el código de la aplicación a partir de un modelo  
- La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en el mismo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución en la que guarda el modelo. Para obtener más información, consulte:  
+ La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en el mismo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución en el que mantener el modelo. Para obtener más información, consulte:  
   
 -   [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
@@ -52,7 +38,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
  Pero si empieza con una aplicación existente, podría encontrarse con que es necesaria una gran cantidad de refactorización para separar los distintos comportamientos que se rigen por el modelo, de modo que puedan modificarse independientemente. Se recomienda evaluar este aspecto de la aplicación al calcular el costo del proyecto.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Configuración de la aplicación a partir de un modelo  
- Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo y modificar su comportamiento en consecuencia. Para obtener más información, consulte:  
+ Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo y para modificar su comportamiento en consecuencia. Para obtener más información, consulte:  
   
 -   [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
@@ -63,19 +49,19 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
 ## <a name="developing-a-derived-application"></a>Desarrollar una aplicación derivada  
  Las siguientes pautas generales podrían resultarle de utilidad:  
   
--   **Iniciar específico y luego generalice.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.  
+-   **Iniciar específico, a continuación, generalize.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.  
   
      Por ejemplo, puede diseñar un sitio web que tiene un conjunto específico de las páginas web antes de diseñar una aplicación web que presenta las páginas que se definen en un modelo.  
   
--   **Modele los aspectos variantes.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.  
+-   **Los aspectos de la variantes del modelo.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.  
   
      Por ejemplo, si el conjunto de páginas web y los vínculos entre ellos cambian pero el estilo y el formato de las páginas es siempre el mismo, el modelo debe describir los vínculos, pero no tiene que describir el formato de las páginas.  
   
--   **Divida los problemas.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.  
+-   **Preocupaciones independientes.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.  
   
      Por ejemplo, puede usar un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas.
   
--   **Modele el requisito, no la solución.** Diseñar el modelo de forma que describe los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.  
+-   **Modelar el requisito, no la solución.** Diseñar el modelo para que se describen los requisitos de usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.  
   
      Por ejemplo, el modelo de exploración web debe representar las páginas web y los hipervínculos entre ellas. El modelo de exploración web no debería representar fragmentos de HTML o clases de la aplicación.  
   
@@ -89,5 +75,5 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
   
 ## <a name="see-also"></a>Vea también  
  [Generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Cómo: abrir un modelo del archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Cómo: abrir un modelo de archivo en el código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

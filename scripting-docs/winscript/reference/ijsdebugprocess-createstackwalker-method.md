@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugProcess::CreateStackWalker (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugprocess:: Createstackwalker (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugProcess.CreateStackWalker
 apilocation: jscript9diag.dll
 ms.assetid: 9d02e21d-7900-4942-8d17-cd04a2261463
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 66ca7594f4e3c6ef44aa8cde1d92f17d46a9aa30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugProcess::CreateStackWalker (M&#233;todo)
+# <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker (Método)
 Método de generador para el rastreador de pila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CreateStackWalker(  
@@ -28,20 +32,20 @@ HRESULT CreateStackWalker(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `threadId`  
- \[in\] El id. del subproceso.  
+ [in] El identificador de subproceso.  
   
  `ppStackWalker`  
- \[out\] Nuevo objeto rastreador de pila.  
+ [out] El nuevo objeto de rastreador de pila.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Comentarios  
- Devuelve E\_JsDEBUG\_UNKNOWN\_THREAD si el subproceso no tiene JavaScript en él.  Este método puede invocarse únicamente mientras se detiene el proceso de destino.  
+## <a name="remarks"></a>Comentarios  
+ Devuelve E_JsDEBUG_UNKNOWN_THREAD si el subproceso no tiene JavaScript en él. Solo se puede llamar al método mientras se detiene el proceso de destino.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebugProcess \(Interfaz\)](../../winscript/reference/ijsdebugprocess-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebugProcess (Interfaz)](../../winscript/reference/ijsdebugprocess-interface.md)

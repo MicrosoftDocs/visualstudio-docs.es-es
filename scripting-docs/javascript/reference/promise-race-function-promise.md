@@ -1,45 +1,47 @@
 ---
-title: "Funci&#243;n Promise.race (promesa) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Función Promise.race (promesa) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9236eced-d313-4d03-8c3e-d89d762b3084
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fedd512f4565009c8429b43b0d9d93de943d13fb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Funci&#243;n Promise.race (promesa)
+# <a name="promiserace-function-promise"></a>Función Promise.race (promesa)
 Crea una nueva promesa que resolverá o rechazará con el mismo valor de resultado que la primera promesa que se va resolver o rechazar entre los argumentos pasados.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Promise.race(iterable)  
-  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `iterable`  
- Obligatorio.  Una o varias promesas.  
+ Obligatorio. Una o varias promesas.  
   
-## Comentarios  
- Si una de las promesas de `iterable` ya se encuentra en estado resuelto o rechazado, `Promise.race` devuelve una promesa resuelta o rechazada de la misma manera con el valor del resultado igual al valor que se usó para resolver \(o rechazar\) la promesa.  Si varias promesas de `iterable` ya se resolvieron o rechazaron, `Promise.race` devuelve una promesa resuelta de la misma manera que la primera promesa iterada.  Si no se resuelve o rechaza ninguna promesa de iterable, la promesa que se devuelve desde `Promise.race` tampoco se resuelve o rechaza.  
+## <a name="remarks"></a>Comentarios  
+ Si una de las promesas de `iterable` ya se encuentra en estado resuelto o rechazado, `Promise.race` devuelve una promesa resuelta o rechazada de la misma manera con el valor del resultado igual al valor que se usó para resolver (o rechazar) la promesa. Si varias promesas de `iterable` ya se resolvieron o rechazaron, `Promise.race` devuelve una promesa resuelta de la misma manera que la primera promesa iterada. Si no se resuelve o rechaza ninguna promesa de iterable, la promesa que se devuelve desde `Promise.race` tampoco se resuelve o rechaza.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```javascript  
+```JavaScript  
 var p1 = new Promise(function(resolve, reject) {  
     setTimeout(resolve, 0, 'success');  
 });  
@@ -65,8 +67,8 @@ race.catch(function(result) {
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Objeto Promise](../../javascript/reference/promise-object-javascript.md)

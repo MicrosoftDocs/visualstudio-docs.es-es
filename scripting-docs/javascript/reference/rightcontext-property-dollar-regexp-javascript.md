@@ -1,48 +1,49 @@
 ---
-title: "rightContext (Propiedad) ($&#39;) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$'"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "rightContext ($') (propiedad)"
+title: Propiedad rightContext ($&#39;) (RegExp) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: rightContext property ($')
 ms.assetid: 6999c056-d18c-4583-9dd9-8fbb6d3d0ee7
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d47ea5dd67de9d73ab59b615c567ad3a7a96fb7b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# rightContext (Propiedad) ($&#39;) (RegExp) (JavaScript)
-Devuelve los caracteres entre la posición siguiente a la última coincidencia y el final de la cadena de búsqueda.  Es de solo lectura.  
+# <a name="rightcontext-property-39-regexp-javascript"></a>Propiedad rightContext ($&#39;) (RegExp) (JavaScript)
+Devuelve los caracteres desde la posición siguiente de la última coincidencia al final de la cadena buscada. Sólo lectura.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 RegExp.rightContext  
 ```  
   
-## Comentarios  
- El objeto asociado con esta propiedad siempre es el objeto `RegExp` global.  
+## <a name="remarks"></a>Comentarios  
+ El objeto asociado a esta propiedad siempre es global `RegExp` objeto.  
   
- El valor inicial de la propiedad **rightContext** es una cadena vacía.  El valor de la propiedad **rightContext** cambia cada vez que se obtiene una coincidencia correcta.  
+ El valor inicial de la **rightContext** propiedad es una cadena vacía. El valor de la **rightContext** propiedad cambia cada vez que se realiza una coincidencia correcta.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la propiedad **rightContext**:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **rightContext** propiedad:  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -64,16 +65,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [RegExp \(Objeto\)](../../javascript/reference/regexp-object-javascript.md)  
+ **Se aplica a**: [RegExp (objeto)](../../javascript/reference/regexp-object-javascript.md)  
   
-## Vea también  
- [$1...$9 \(Propiedades, RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [index \(Propiedad, RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [input \(Propiedad\) \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [lastIndex \(Propiedad, RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [lastMatch \(Propiedad\) \($&\) \(RegExp\)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
- [lastParen \(Propiedad\) \($\+\) \(RegExp\)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
- [leftContext \(Propiedad\) \($\`\) \(RegExp\)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [$1... $9 (propiedades, RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [Index (propiedad) (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [Input (propiedad) ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [lastIndex (propiedad) (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [Propiedad lastMatch ($&) (RegExp)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
+ [lastParen ($ +) (RegExp) de la propiedad](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)   
+ [leftContext (Propiedad) ($`) (RegExp)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)

@@ -1,29 +1,30 @@
 ---
-title: "CA2003: No tratar fibras como subprocesos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
-helpviewer_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
+title: 'CA2003: No tratar fibras como subprocesos | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
+helpviewer_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4ca9b0649950be50dcff5103258d60f6f924f12a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2003: No tratar fibras como subprocesos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: No tratar fibras como subprocesos
 |||  
 |-|-|  
 |TypeName|DoNotTreatFibersAsThreads|  
@@ -31,14 +32,14 @@ caps.handback.revision: 16
 |Categoría|Microsoft.Reliability|  
 |Cambio problemático|Poco problemático|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un subproceso administrado se trata como un subproceso de Win32.  
   
-## Descripción de la regla  
- No presuponga que un subproceso administrado es un subproceso de Win32.  Es una fibra.  Common Language Runtime \(CLR\) ejecutará los subprocesos administrados como fibras en el contexto de subprocesos reales que posee SQL.  Estos subprocesos se pueden compartir entre los AppDomains e incluso entre las bases de datos en el proceso de SQL Server.  El uso del almacenamiento local de subprocesos administrados funciona, pero no puede utilizarse el almacenamiento local de subprocesos no administrados ni suponerse que el código se vaya a ejecutar de nuevo en el subproceso del SO actual.  No cambie valores como por ejemplo la configuración regional del subproceso.  No llame a CreateCriticalSection ni a CreateMutex mediante P\/Invoke porque requieren que el subproceso que entra en un bloqueo también salga de él.  Dado que esto no sucede cuando se utilizan fibras, las secciones críticas de Win32 y las exclusiones mutuas no tendrán utilidad alguna en SQL.  Puede utilizar sin ningún riesgo la mayor parte del estado en un objeto System.Thread administrado.  Esto incluye el almacenamiento local de subprocesos administrado y la referencia cultural de la interfaz de usuario \(IU\) actual del subproceso.  Sin embargo, a causa del modelo de programación, no podrá cambiar la referencia cultural actual de un subproceso cuando use SQL; esto se lleva a cabo mediante un nuevo permiso.  
+## <a name="rule-description"></a>Descripción de la regla  
+ No suponga que un subproceso administrado es un subproceso de Win32. Es una fibra. Common language runtime (CLR) ejecutará los subprocesos administrados como fibras en el contexto de los subprocesos reales que son propiedad de SQL. Estos subprocesos pueden compartirse entre los AppDomains e incluso las bases de datos en el proceso de SQL Server. Mediante administrado subproceso almacenamiento local funcionará, pero no se puede usar el almacenamiento local de subprocesos no administrados ni se supone que el código se ejecutará en el subproceso de sistema operativo actual de nuevo. No cambie la configuración como la configuración regional del subproceso. No llame a CreateCriticalSection ni a CreateMutex a través de P/Invoke porque requieren que el subproceso que entra en un bloqueo también salga del bloqueo. Dado que este no es el caso cuando se utilizan fibras, secciones críticas de Win32 y exclusiones mutuas será inútiles en SQL. Puede utilizar sin ningún riesgo la mayor parte del estado en mutuas. Esto incluye el almacenamiento local de subprocesos administrados y la referencia cultural actual (UI) de la interfaz de usuario del subproceso. Sin embargo, para los motivos de modelo de programación, no podrá cambiar la referencia cultural actual de un subproceso cuando se usa SQL; Esto se aplicará a través de un nuevo permiso.  
   
-## Cómo corregir infracciones  
- Examine su uso de los subprocesos y modifique el código en consecuencia.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Examine el uso de subprocesos y cambiar el código en consecuencia.  
   
-## Cuándo suprimir advertencias  
- Esta regla no se debe suprimir.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No se debe suprimir esta regla.

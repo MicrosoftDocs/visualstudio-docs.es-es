@@ -1,48 +1,51 @@
 ---
-title: "has (M&#233;todo, Map de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "tiene (método, Map) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 876df854-2941-4db2-92c6-1b497840b169
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 48228b495c845bef91caa0b85e67980100a6f790
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# has (M&#233;todo, Map de JavaScript)
-Devuelve el objeto `true` si el mapa contiene el elemento especificado.  
+# <a name="has-method-map-javascript"></a>has (Método, Map de JavaScript)
+Devuelve `true` si la asignación contiene el elemento especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 mapObj.has(key)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `mapObj`  
- Requerido.  Un objeto `Map`.  
+ Obligatorio. Objeto `Map`.  
   
  `key`  
- Requerido.  Clave del elemento que se va a probar.  
+ Obligatorio. Clave del elemento que se va a probar.  
   
-## Valor de propiedad y valor devuelto  
- `true` si la asignación contiene el elemento especificado.  
+## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
+ `true`Si el objeto map contiene el elemento especificado.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo agregar un miembro a `Map` y después comprobar si la asignación lo contiene.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo agregar un miembro a un `Map` y, a continuación, compruebe si la asignación lo contiene.  
   
-```javascript  
+```JavaScript  
 var m = new Map();  
 m.set(2, "red");  
   
@@ -52,5 +55,5 @@ document.write(m.has(2));
 // true  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

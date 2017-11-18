@@ -1,54 +1,56 @@
 ---
-title: "getUTCMinutes (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getUTCMinutes"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "minutos"
-  - "horas UTC, devolver"
-  - "getUTCMinutes (método)"
+title: "getUTCMinutes (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getUTCMinutes
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- minutes
+- UTC times, returning
+- getUTCMinutes method
 ms.assetid: b6d92543-b285-4e46-8f47-bba36e53fabd
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fe691d3b52d18340eeeff81a91c049a262277c54
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getUTCMinutes (M&#233;todo, Date de JavaScript)
-Obtiene el valor de un objeto de `Date` utilizando la hora Universal coordinada \(hora UTC\).  
+# <a name="getutcminutes-method-date-javascript"></a>getUTCMinutes (Método, Date de JavaScript)
+Obtiene los minutos de un `Date` objeto mediante la hora Universal coordinada (UTC).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getUTCMinutes()   
 ```  
   
-#### Parámetros  
- La referencia requerida de `dateObj` es un objeto de `Date` .  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve un entero entre 0 y 59.  Cero se devuelve la hora es menos de un minuto después de la hora.  Si un objeto de `Date` se creó sin especificar el tiempo, de forma predeterminada el valor de mínimo UTC es 0.  Sin embargo, en otras zonas horarias puede ser diferente.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un entero entre 0 y 59. Se devuelve cero que la hora es inferior a un minuto posterior a la hora. Si un `Date` se creó el objeto sin especificar el tiempo, de forma predeterminada, la hora UTC, valor de minuto es 0. Sin embargo, en otras zonas horarias puede ser diferente.  
   
-## Comentarios  
- Para obtener el número de minutos almacenados mediante la hora local, utilice el método `getMinutes`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el número de minutos almacenados mediante la hora local, use la `getMinutes` método.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el uso del método `getUTCMinutes`.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/1/2001");  
 document.write(date.getUTCMinutes());  
 document.write("<br/>");  
@@ -62,12 +64,12 @@ document.write(date.getUTCMinutes());
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Applies To**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getMinutes \(Método, Date\)](../../javascript/reference/getminutes-method-date-javascript.md)   
- [setMinutes \(Método, Date\)](../../javascript/reference/setminutes-method-date-javascript.md)   
- [setUTCMinutes \(Método, Date\)](../../javascript/reference/setutcminutes-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getMinutes (método, Date)](../../javascript/reference/getminutes-method-date-javascript.md)   
+ [setMinutes (método, Date)](../../javascript/reference/setminutes-method-date-javascript.md)   
+ [setUTCMinutes (Método, Date)](../../javascript/reference/setutcminutes-method-date-javascript.md)

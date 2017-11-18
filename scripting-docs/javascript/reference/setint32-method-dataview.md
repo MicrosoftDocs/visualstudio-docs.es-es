@@ -1,51 +1,54 @@
 ---
-title: "setInt32 (M&#233;todo, DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "setInt32 (método, DataView) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 07e5f068-0e3f-4c23-84b3-c72658d7f194
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 00f3f6b03cdd3a8d5d7b95184f1c0ff5c356592a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# setInt32 (M&#233;todo, DataView)
-Establece el valor Int32 en el desplazamiento de bytes especificado desde el inicio de la vista.  No hay ninguna restricción de alineación; se pueden establecer valores multibyte en cualquier desplazamiento.  
+# <a name="setint32-method-dataview"></a>setInt32 (Método, DataView)
+Establece el valor de Int32 en el desplazamiento de bytes especificado desde el principio de la vista. No hay ninguna restricción de alineación; los valores de varios bytes pueden establecerse en cualquier posición de desplazamiento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 dataView.setInt32 (byteOffset, value, littleEndian);   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `byteOffset`  
- Lugar del búfer donde se debe recuperar el valor.  
+ El lugar en el búfer en el que se debe recuperar el valor.  
   
  `value`  
- Valor que se establece.  
+ Valor que se va a establecer.  
   
  `littleEndian`  
- Opcional.  Si es false o undefined, se debe escribir un valor big\-endian. Si no, se debe escribir un valor little\-endian.  
+ Opcional. Si es false o no definido, se debe escribir un valor de big-endian, en caso contrario, se debe escribir el valor de un little-endian.  
   
-## Comentarios  
- Estos métodos producen una excepción si la escritura se va a realizar más allá del final de la vista.  
+## <a name="remarks"></a>Comentarios  
+ Estos métodos genera una excepción si se escriben más allá del final de la vista.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo establecer el primer valor Int32 del DataView.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo establecer el primer Int32 en DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

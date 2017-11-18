@@ -1,58 +1,61 @@
 ---
-title: "Object.keys (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "keys (método) [JavaScript]"
-  - "Object.keys (método) [JavaScript]"
+title: "Object.Keys (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Object.keys method [JavaScript]
+- keys method [JavaScript]
 ms.assetid: cf4a7daf-cf28-4467-bc6b-f7f106ec3876
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0e725c3ab7206b04d9a900cb614b57c37dfc4351
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.keys (Funci&#243;n de JavaScript)
-Devuelve los nombres de las propiedades y los métodos enumerables de un objeto.  
+# <a name="objectkeys-function-javascript"></a>Object.keys (Función de JavaScript)
+Devuelve los nombres de las propiedades y métodos enumerables de un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 Object.keys(object)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
   
 |Parámetro|Definición|  
 |---------------|----------------|  
-|`object`|Obligatorio.  Objeto que contiene las propiedades y los métodos.  Puede ser un objeto que tú creaste o un objeto existente de Document Object Model \(DOM\).|  
+|`object`|Obligatorio. El objeto que contiene las propiedades y métodos. Puede tratarse de un objeto que ha creado o un objeto existente de Document Object Model (DOM).|  
   
-## Valor devuelto  
- Matriz que contiene los nombres de las propiedades y los métodos enumerables del objeto.  
+## <a name="return-value"></a>Valor devuelto  
+ Una matriz que contiene los nombres de las propiedades y métodos del objeto.  
   
-## Excepciones  
- Si el valor proporcionado para el argumento `object` no es el nombre de un objeto, se produce una excepción `TypeError`.  
+## <a name="exceptions"></a>Excepciones  
+ Si el valor proporcionado para el `object` argumento no es el nombre de un objeto, un `TypeError` se produce la excepción.  
   
-## Comentarios  
- El método `keys` solo devuelve los nombres de propiedades y métodos enumerables.  Para devolver los nombres de las propiedades y los métodos enumerables y no enumerables, puedes usar [Object.getOwnPropertyNames \(Función\)](../../javascript/reference/object-getownpropertynames-function-javascript.md).  
+## <a name="remarks"></a>Comentarios  
+ El `keys` método devuelve solo los nombres de propiedades y métodos. Para devolver los nombres de métodos y propiedades enumerables y no es enumerable, puede utilizar [Object.getOwnPropertyNames (función)](../../javascript/reference/object-getownpropertynames-function-javascript.md).  
   
- Para obtener información sobre el atributo `enumerable` de una propiedad, consulta [Object.defineProperty \(Función\)](../../javascript/reference/object-defineproperty-function-javascript.md) y [Object.getOwnPropertyDescriptor \(Función\)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+ Para obtener información sobre la `enumerable` atributos de una propiedad, vea [Object.defineProperty (función)](../../javascript/reference/object-defineproperty-function-javascript.md) y [Object.getOwnPropertyDescriptor (función)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-## Ejemplo  
- En el ejemplo siguiente se crea un objeto que tiene tres propiedades y un método.  Después usa el método `keys` para obtener las propiedades y los métodos del objeto.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un objeto que tiene tres propiedades y un método. A continuación, utiliza el `keys` método para obtener las propiedades y métodos del objeto.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -76,10 +79,10 @@ document.write (arr);
 // grain,width,shape,toString  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los nombres de todas las propiedades enumerables que comienzan por la letra "g" en el objeto Pasta.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente muestra los nombres de todas las propiedades que comienzan con la letra "g" en el objeto de Pasta.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -105,8 +108,8 @@ function CheckKey(value) {
 // grain  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Object.getOwnPropertyNames \(Función\)](../../javascript/reference/object-getownpropertynames-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Object.getOwnPropertyNames (Función)](../../javascript/reference/object-getownpropertynames-function-javascript.md)

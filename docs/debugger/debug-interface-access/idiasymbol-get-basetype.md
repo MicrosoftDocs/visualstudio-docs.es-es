@@ -1,73 +1,72 @@
 ---
-title: "IDiaSymbol::get_baseType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_baseType (método)"
+title: 'Idiasymbol:: Get_basetype | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_baseType method
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 62f7ce0d29ec1b5bf997917a74e650a446a468ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_baseType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-recupera el tipo base para este símbolo*.*  
+# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
+Recupera el tipo base para este símbolo*.*  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_baseType (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_baseType (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve un valor de enumeración de [BasicType \(Enumeración\)](../../debugger/debug-interface-access/basictype.md) que especifica el tipo base de símbolos.  
+ [out] Devuelve un valor de la [BasicType (enumeración)](../../debugger/debug-interface-access/basictype.md) enumeración que especifica el tipo base del símbolo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- El tipo básico para un token puede determinar primero obtiene el tipo de token y después interrogando a ese tipo devuelto para el tipo base.  Observe que algunos símbolos no puede tener una base \(por ejemplo, nombre de la estructura.  
+## <a name="remarks"></a>Comentarios  
+ Obteniendo primero el tipo del símbolo de y, a continuación, interrogar devolvió un tipo para el tipo base, se puede determinar el tipo básico para un símbolo. Tenga en cuenta que algunos símbolos no pueden tener un tipo base, por ejemplo, un nombre de la estructura.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 IDiaSymbol* pType;  
 CComPtr<IDiaSymbol> pBaseType;  
 if (pType->get_type( &pBaseType ) == S_OK)  
 {  
-    BasicType btBaseType;  
-    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
+    BasicType btBaseType;  
+    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
     {  
-        // Do something with basic type.  
-    }  
+        // Do something with basic type.  
+    }  
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v7.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v7.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType \(Enumeración\)](../../debugger/debug-interface-access/basictype.md)   
- [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+ [BasicType (enumeración)](../../debugger/debug-interface-access/basictype.md)   
+ [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

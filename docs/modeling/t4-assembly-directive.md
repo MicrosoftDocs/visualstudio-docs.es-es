@@ -1,29 +1,31 @@
 ---
-title: "T4 Assembly Directive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: T4 Directiva de ensamblado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
-caps.latest.revision: 4
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# T4 Assembly Directive
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de texto en tiempo de diseño, la directiva `assembly` carga un ensamblado para que el código de plantilla pueda utilizar sus tipos.  El efecto es similar a agregar una referencia al ensamblado en un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
+En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de texto en tiempo de diseño, la directiva `assembly` carga un ensamblado para que el código de plantilla pueda utilizar sus tipos. El efecto es similar a agregar una referencia al ensamblado en un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Para obtener información general sobre cómo escribir plantillas de texto, vea [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Para obtener una descripción general de la escritura de plantillas de texto, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  No necesita la directiva de salida `assembly` en una plantilla de texto \(preprocesada\) en tiempo de ejecución.  En su lugar, agregue los ensamblados necesarios a las **Referencias** del proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+>  No necesita la directiva de salida `assembly` en una plantilla de texto (preprocesada) en tiempo de ejecución. En su lugar, agregue los ensamblados necesarios para la **referencias** de su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto.  
   
-## Usar la directiva de ensamblado  
+## <a name="using-the-assembly-directive"></a>Usar la directiva de ensamblado  
  La sintaxis de las directivas es la siguiente:  
   
 ```  
@@ -32,19 +34,19 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
   
  El nombre del ensamblado debe ser uno de los siguientes:  
   
--   El nombre seguro de un ensamblado en la GAC, como `System.Xml.dll`.  También puede utilizar el formulario largo, como `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`.  Para obtener más información, vea <xref:System.Reflection.AssemblyName>.  
+-   El nombre seguro de un ensamblado en la GAC, como `System.Xml.dll`. También puede utilizar el formulario largo, como `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Para obtener más información, consulta <xref:System.Reflection.AssemblyName>.  
   
 -   La ruta de acceso absoluta del ensamblado  
   
- También puede usar la sintaxis `$(variableName)` para hacer referencia a variables de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como `$(SolutionDir)`, y usar `%VariableName%` para hacer referencia a las variables de entorno.  Por ejemplo:  
+ También puede usar la sintaxis `$(variableName)` para hacer referencia a variables de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como `$(SolutionDir)`, y usar `%VariableName%` para hacer referencia a las variables de entorno. Por ejemplo:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
 ```  
   
- La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada.  En su lugar, incluya las referencias necesarias en la sección **Referencias** del proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Para obtener más información, vea [Run\-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la **referencias** sección de su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
-## Ensamblados estándar  
+## <a name="standard-assemblies"></a>Ensamblados estándar  
  Loa siguientes ensamblados se cargan automáticamente, por lo que no es necesario escribir las directivas de ensamblado para ellos:  
   
 -   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
@@ -53,7 +55,7 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
   
 -   `WindowsBase.dll`  
   
- Si utiliza una directiva personalizada, el procesador de directivas podría cargar ensamblados adicionales.  Por ejemplo, si escribe plantillas para un lenguaje específico del dominio \(ADSL\), no necesita escribir directivas de ensamblado para los siguientes ensamblados:  
+ Si utiliza una directiva personalizada, el procesador de directivas podría cargar ensamblados adicionales. Por ejemplo, si escribe plantillas para un lenguaje específico del dominio (ADSL), no necesita escribir directivas de ensamblado para los siguientes ensamblados:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
@@ -63,10 +65,10 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
   
 -   El ensamblado contiene el ADSL.  
   
-##  <a name="msbuild"></a> Usar las propiedades del proyecto en MSBuild y Visual Studio  
- Las macros de Visual Studio, como $ \(SolutionDir\), no funcionan en MSBuild.  Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
+##  <a name="msbuild"></a>Usando las propiedades de proyecto de MSBuild y Visual Studio  
+ Macros de Visual Studio como $ (SolutionDir) no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
   
- Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto.  En este ejemplo se define una propiedad denominada `myLibFolder`:  
+ Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:  
   
 ```xml  
 <!-- Define a project property, myLibFolder: -->  
@@ -89,5 +91,5 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## Vea también  
- [T4 Include Directive](../modeling/t4-include-directive.md)
+## <a name="see-also"></a>Vea también  
+ [Directiva Include T4](../modeling/t4-include-directive.md)

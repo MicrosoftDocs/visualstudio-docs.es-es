@@ -1,48 +1,50 @@
 ---
-title: "length (Propiedad, argumentos de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "length Property"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Length (propiedad)"
-  - "length (propiedad, arguments)"
+title: Length (propiedad, argumentos) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: length Property
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- length property (arguments)
+- Length property
 ms.assetid: 3cf36823-15bc-489b-a951-24c4923d9dba
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cede75a91244442f5f28ec9f71b7128814bed5d2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# length (Propiedad, argumentos de JavaScript)
-Devuelve el número real de argumentos que el llamador pasa a una función.  
+# <a name="length-property-arguments-javascript"></a>length (Propiedad, argumentos de JavaScript)
+Devuelve el número real de argumentos pasados a una función por el llamador.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 [function.]arguments.length  
 ```  
   
-## Comentarios  
- El argumento opcional *function* es el nombre del objeto `Function` que se está ejecutando actualmente.  
+## <a name="remarks"></a>Comentarios  
+ Opcional *función* argumento es el nombre de la ejecución `Function` objeto.  
   
- El motor de scripting inicializa la propiedad **length** del objeto **arguments** con el número real de argumentos pasados a un objeto `Function` cuando comienza la ejecución de esa función.  
+ El **longitud** propiedad de la **argumentos** objeto se inicializa el motor de scripting en el número real de argumentos pasados a una `Function` objeto cuando comienza la ejecución de esa función.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la propiedad **length** del objeto **arguments**.  Para comprender totalmente el ejemplo, pasa más argumentos a la función que los 2 argumentos esperados:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **longitud** propiedad de la **argumentos** objeto. Para comprender el ejemplo, pasar más argumentos a la función de los 2 argumentos que se esperaba:  
   
-```javascript  
+```JavaScript  
 function ArgTest(a, b){  
    var s = "";  
   
@@ -54,12 +56,12 @@ function ArgTest(a, b){
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [arguments \(Objeto\)](../../javascript/reference/arguments-object-javascript.md)&#124; [Function \(Objeto\)](../../javascript/reference/function-object-javascript.md)  
+ **Se aplica a**: [arguments (objeto)](../../javascript/reference/arguments-object-javascript.md)&#124; [Objeto de función](../../javascript/reference/function-object-javascript.md)  
   
-## Vea también  
- [arguments \(Propiedad, Function\)](../../javascript/reference/arguments-property-function-javascript.md)   
- [length \(Propiedad, Array\)](../../javascript/reference/length-property-array-javascript.md)   
- [length \(Propiedad, String\)](../../javascript/reference/length-property-string-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [arguments (propiedad) (función)](../../javascript/reference/arguments-property-function-javascript.md)   
+ [Length (propiedad, Array)](../../javascript/reference/length-property-array-javascript.md)   
+ [length (Propiedad, String)](../../javascript/reference/length-property-string-javascript.md)

@@ -1,54 +1,56 @@
 ---
-title: "getHours (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getHours"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Date (objeto)"
-  - "GetHours (método)"
-  - "Hours (método)"
+title: "getHours (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getHours
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Date object
+- GetHours method
+- Hours method
 ms.assetid: c3936496-a213-4d15-b308-d53926ed310c
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 87170f96ee6ae6b4a825436717a94749cc336ee0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getHours (M&#233;todo, Date de JavaScript)
-Obtiene las horas de una fecha, usando la hora local.  
+# <a name="gethours-method-date-javascript"></a>getHours (Método, Date de JavaScript)
+Obtiene las horas en una fecha mediante la hora local.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getHours()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Un entero entre 0 y 23 que indica el número de horas transcurrido desde la medianoche.  Se devuelve cero si la hora es anterior a la 1:00:00 a.m.  Si se ha creado un objeto `Date` sin especificar la hora, la hora es 0 de forma predeterminada.  
+## <a name="return-value"></a>Valor devuelto  
+ Un entero entre 0 y 23, que indica el número de horas desde medianoche. Si la hora es anterior a 1:00:00 a.m., se devuelve cero. Si un `Date` se creó el objeto sin especificar el tiempo, de forma predeterminada, la hora es 0.  
   
-## Comentarios  
- Para obtener el valor de horas usando el horario universal coordinado \(UTC\), usa el método `getUTCHours`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el valor de horas mediante la hora Universal coordinada (UTC), use el `getUTCHours` método.  
   
-## Ejemplo  
- En el siguiente ejemplo, se muestra cómo usar el método `getHours`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo, se muestra cómo utilizar el método `getHours`.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/1/2001");  
 document.write(date.getHours());  
 document.write("<br/>");  
@@ -62,12 +64,12 @@ document.write(date.getHours());
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getUTCHours \(Método, Date\)](../../javascript/reference/getutchours-method-date-javascript.md)   
- [setHours \(Método, Date\)](../../javascript/reference/sethours-method-date-javascript.md)   
- [setUTCHours \(Método, Date\)](../../javascript/reference/setutchours-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getUTCHours (método, Date)](../../javascript/reference/getutchours-method-date-javascript.md)   
+ [setHours (método, Date)](../../javascript/reference/sethours-method-date-javascript.md)   
+ [setUTCHours (Método, Date)](../../javascript/reference/setutchours-method-date-javascript.md)

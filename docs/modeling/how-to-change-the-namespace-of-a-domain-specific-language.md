@@ -1,56 +1,57 @@
 ---
-title: "C&#243;mo: Cambiar el espacio de nombres de los lenguajes espec&#237;ficos de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, espacio de nombres"
+title: "Cómo: cambiar el Namespace de un lenguaje específico de dominio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, namespace
 ms.assetid: f20c47e5-230d-4f0e-812f-5c6edb86866c
-caps.latest.revision: 19
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b7419766b4c195c3bcef2aa45e886004a89fb5ec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Cambiar el espacio de nombres de los lenguajes espec&#237;ficos de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede cambiar el espacio de nombres de un lenguaje específico.  Debe realizar el cambio en **Explorador ADSL**, en las propiedades del proyecto paquete de DSL, y del ensamblado.  
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio
+Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe realizar el cambio en el **DSL explorador**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.  
   
-### Para cambiar el espacio de nombres de un lenguaje específico  
+### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para cambiar el espacio de nombres de un lenguaje específico de dominio  
   
-1.  En **Explorador ADSL**, haga clic en el nodo de **DSL** .  
+1.  En **DSL explorador**, haga clic en el **Dsl** nodo.  
   
-2.  en la ventana de **Propiedades** , cambie la propiedad de **espacio de nombres** .  
+2.  En el **propiedades** ventana, cambiar la **Namespace** propiedad.  
   
-3.  Guarde la solución y transformar plantillas.  
+3.  Guarde la solución y transformar las plantillas.  
   
-4.  En el menú de **proyecto** , haga clic **Propiedades del ADSL**.  
+4.  En el **proyecto** menú, haga clic en **Dsl propiedades**.  
   
      Aparecerán las propiedades del proyecto.  
   
-5.  Haga clic en la ficha **Aplicación**.  
+5.  Haga clic en la pestaña **Aplicación** .  
   
-6.  Cambie la propiedad de **espacio de nombres predeterminado** al nuevo espacio de nombres.  
+6.  Cambiar el **espacio de nombres predeterminado** propiedad para el nuevo nombre de espacio de nombres.  
   
-7.  Si también desea cambiar el nombre del ensamblado, cambie **Propiedad del nombre del ensamblado.**  
+7.  Si también desea cambiar el nombre del ensamblado, cambie la **propiedad de nombre de ensamblado.**  
   
-8.  Si ha cambiado el nombre, DslPackage abierto \\Package .tt y ha actualizado esta línea:  
+8.  Si ha cambiado el nombre del ensamblado, abra DslPackage\Package.tt y actualice esta línea:  
   
      `string dslAssembly = "YourDSLassembly.Dsl.dll";`  
   
-9. Si ha escrito código personalizado, asegúrese de cambiar las referencias de espacio de nombres y la clase en los archivos de código.  
+9. Si ha escrito un código personalizado, asegúrese de cambiar las referencias de espacio de nombres y la clase en los archivos de código.  
   
-10. restablezca la instancia de Visual Studio Experimental.  
+10. Restablecer la instancia Experimental de Visual Studio.  
   
-    1.  elimine **\\Users\\***{el nombre}***\\AppData\\Local\\Microsoft\\VisualStudio\\\*Exp**  
+    1.  Eliminar **\Users\\***{su nombre}***\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
-    2.  en el menú de Windows **Iniciar** , elija **Todos los programas**, **Microsoft Visual Studio 2010 SDK**, **Herramientas**, **Restablezca la instancia Experimental de**.  
+    2.  En las ventanas **iniciar** menú, elija **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**, **restablecer el Instancia experimental**.  
   
-11. en el menú de **Generar** , elija **Volver a generar solución**.  
+11. En el **generar** menú, elija **volver a generar solución**.  
   
-## Vea también  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/es-es/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Vea también  
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

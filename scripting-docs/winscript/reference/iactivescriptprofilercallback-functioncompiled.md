@@ -1,25 +1,29 @@
 ---
-title: "IActiveScriptProfilerCallback::FunctionCompiled | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProfilerCallback::FunctionCompiled | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProfilerCallback.FunctionCompiled
 apilocation: scrobj.dll
 ms.assetid: a7e9ef17-3891-4731-9d08-c37bc489be61
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 797476d4892224ad0b27c9caf579c0704693c835
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerCallback::FunctionCompiled
-Notifica al objeto generador de perfiles que el motor de script encontró una función al compilar un script.  
+# <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
+Notifica al analizador de objeto que el scripting del motor encontró una función cuando se compila una secuencia de comandos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT FunctionCompiled(  
@@ -30,27 +34,27 @@ HRESULT FunctionCompiled(
     [in] IUnknown *pIDebugDocumentContext);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `functionId`  
- \[in\] identificador único de la función.  Este id. es asignado por el motor de script.  
+ [in] El identificador único de la función. Este identificador está asignado por el motor de scripting.  
   
  `scriptId`  
- \[in\] identificador único del script que la función forma parte de.  
+ [in] El identificador único de la secuencia de comandos que forma parte de la función.  
   
  `pwszFunctionName`  
- \[in\] nombre de la función, o null para una función anónima.  
+ [in] El nombre de la función, o null para una función anónima.  
   
  `pwszFunctionNameHint`  
- \[in\] deducía el nombre de la función, o null si el motor de script no infiere ningún nombre.  
+ [in] El nombre deducido de la función, o null si el motor de scripting no deduce cualquier nombre.  
   
  `pIDebugDocumentContext`  
- \[in\] si está disponible, el puntero a una interfaz de `IUnknown` que el generador de perfiles debe consultar un puntero de [IDebugDocumentContext \(Interfaz\)](../../winscript/reference/idebugdocumentcontext-interface.md) .  De lo contrario, es NULL.  
+ [in] Si está disponible, el puntero a un `IUnknown` interfaz que el generador de perfiles debe consultar un [IDebugDocumentContext (interfaz)](../../winscript/reference/idebugdocumentcontext-interface.md) puntero. De lo contrario, es NULL.  
   
-## Valor devuelto  
- El valor devuelto de este método es omitido por el motor de script.  
+## <a name="return-value"></a>Valor devuelto  
+ Se omite el valor devuelto de este método por el motor de scripting.  
   
-## Comentarios  
- El motor de script puede proporcionar el contexto del documento sólo si es compatible con el host.  
+## <a name="remarks"></a>Comentarios  
+ El motor de scripting puede proporcionar el contexto del documento sólo si esto es compatible con el host.  
   
-## Vea también  
- [IActiveScriptProfilerCallback \(Interfaz\)](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

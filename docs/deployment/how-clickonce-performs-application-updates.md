@@ -1,42 +1,43 @@
 ---
-title: "C&#243;mo realiza ClickOnce actualizaciones de aplicaciones | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implementación ClickOnce, actualizaciones"
-  - "implementar aplicaciones [ClickOnce], actualizaciones de aplicaciones"
-  - "actualizaciones, ClickOnce"
+title: "Cómo realiza ClickOnce actualizaciones de aplicaciones | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- updates, ClickOnce
+- ClickOnce deployment, updates
+- deploying applications [ClickOnce], application updates
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 32e0b56ab5d4507c971948b98c8f7660650e70cc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo realiza ClickOnce actualizaciones de aplicaciones
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-ClickOnce utiliza la información de la versión del archivo especificada en el manifiesto de implementación de una aplicación para decidir si debe actualizar los archivos de la aplicación.  Una vez que se inicia una actualización, ClickOnce utiliza una técnica denominada *revisión de archivos* para evitar que se produzca una descarga redundante de archivos de aplicación.  
+# <a name="how-clickonce-performs-application-updates"></a>Cómo realiza ClickOnce actualizaciones de aplicaciones
+ClickOnce utiliza la información de versión del archivo especificada en el manifiesto de implementación de una aplicación para decidir si se deben actualizar los archivos de la aplicación. Una vez iniciada una actualización, ClickOnce utiliza una técnica denominada *revisión de archivos* para evitar la descarga de redundancia de los archivos de la aplicación.  
   
-## Revisión de archivos  
- Al actualizar una aplicación, ClickOnce no descarga todos los archivos para la nueva versión de la aplicación, a menos que los archivos hayan cambiado.  En lugar de ello, compara las firmas hash de los archivos especificados en el manifiesto de aplicación de la aplicación actual con las firmas del manifiesto de la nueva versión.  Si las firmas de un archivo son distintas, ClickOnce descarga la nueva versión.  Si las firmas coinciden, significa que el archivo no ha cambiado de una versión a la siguiente.  En este caso, ClickOnce copia el archivo existente y lo utiliza en la nueva versión de la aplicación.  Este método evita que ClickOnce tenga que descargar de nuevo la aplicación completa, aunque sólo hayan cambiado uno o dos archivos.  
+## <a name="file-patching"></a>La revisión de archivos  
+ Al actualizar una aplicación, ClickOnce no descargar todos los archivos de la nueva versión de la aplicación a menos que los archivos han cambiado. En su lugar, compara las firmas hash de los archivos especificados en el manifiesto de aplicación para la aplicación actual con las firmas en el manifiesto de la nueva versión. Si las firmas de un archivo son diferentes, ClickOnce descarga la nueva versión. Si las firmas coinciden, el archivo no ha cambiado de una versión a la siguiente. En este caso, ClickOnce copia el archivo existente y lo usa en la nueva versión de la aplicación. Este enfoque impide que ClickOnce de tener que descargar toda la aplicación de nuevo, incluso si solo uno o dos archivos han cambiado.  
   
- La revisión de archivos también funciona con los ensamblados que se descargan a petición mediante los métodos <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> y <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A>.  
+ La revisión de archivos también funciona para los ensamblados que se descargan a petición mediante el <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> y <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> métodos.  
   
- Si utiliza Visual Studio para compilar la aplicación, cada vez que recompile el proyecto completo se generarán nuevas firmas hash para todos los archivos.  En este caso, todos los ensamblados se descargarán en el cliente, aunque sólo hayan cambiado algunos de ellos.  
+ Si usa Visual Studio para compilar su aplicación, generará nuevas firmas hash para todos los archivos cada vez que se vuelve a generar todo el proyecto. En este caso, todos los ensamblados se descargarán en el cliente, aunque pueden haber cambiado solo algunos ensamblados.  
   
- La revisión de archivos no funciona con archivos marcados como datos y almacenados en el directorio de datos.  Estos archivos siempre se descargan, independientemente de la firma hash del archivo.  Para obtener más información sobre el directorio de datos, vea [Obtener acceso local o remoto a los datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+ La revisión de archivos no funciona para los archivos que están marcados como datos y se almacenan en el directorio de datos. Estos se descargarán siempre, independientemente de la firma del archivo hash. Para obtener más información sobre el directorio de datos, vea [obtener acceso Local y remoto datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+ [Elegir una estrategia de implementación ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

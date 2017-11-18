@@ -1,47 +1,48 @@
 ---
-title: "encodeURIComponent (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "encodeURIComponent"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "encodeURIComponent (método)"
+title: "encodeURIComponent (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: encodeURIComponent
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: encodeURIComponent method
 ms.assetid: 8202bce6-1342-40dc-a5ef-ac6d210a7d15
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 56680e9bcfe1de61d8a1eabd0ff8d2eced01d603
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# encodeURIComponent (Funci&#243;n de JavaScript)
-Codifica una cadena de texto como un componente válido de un identificador uniforme de recursos \(URI\).  
+# <a name="encodeuricomponent-function-javascript"></a>encodeURIComponent (Función de JavaScript)
+Codifica una cadena de texto como un componente válido de un identificador uniforme de recursos (URI).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 encodeURIComponent(encodedURIString)  
 ```  
   
-## Comentarios  
- El argumento obligatorio `encodedURIString` es un valor que representa un componente de URI codificado.  
+## <a name="remarks"></a>Comentarios  
+ Requerido `encodedURIString` argumento es un valor que representa un componente de URI codificado.  
   
- La función `encodeURIComponent` devuelve un URI codificado.  Si pasas el resultado a `decodeURIComponent`, se devuelve la cadena original.  Como la función `encodeURIComponent` codifica todos los caracteres, ten cuidado si la cadena representa una ruta de acceso como \/carpeta1\/carpeta2\/predeterminado.html.  Los caracteres de barra diagonal se codificarán y no serán válidos si se envían como solicitud a un servidor web.  Usa la función `encodeURI` si la cadena contiene más de un único componente de URI.  
+ El `encodeURIComponent` función devuelve un identificador URI codificado. Si se pasa el resultado a `decodeURIComponent`, se devuelve la cadena original. Dado que la `encodeURIComponent` función codifica todos los caracteres, debe tener cuidado si la cadena representa una ruta de acceso como **/folder1/folder2/default.html**. Los caracteres de barra diagonal se codificarán y no serán válidos si se envían como una solicitud a un servidor web. Use la `encodeURI` funcionar si la cadena contiene más de un componente de URI único.  
   
-## Ejemplo  
- En el código siguiente primero se codifica un componente URI y después se descodifica.  
+## <a name="example"></a>Ejemplo  
+ El código siguiente primero codifica un componente URI y luego los descodifica.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURIComponent ("www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -54,9 +55,9 @@ document.write(uriDecode);
 // www.Not a URL.com  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Vea también  
- [decodeURI \(Función\)](../../javascript/reference/decodeuri-function-javascript.md)   
- [decodeURIComponent \(Función\)](../../javascript/reference/decodeuricomponent-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [decodeURI (función)](../../javascript/reference/decodeuri-function-javascript.md)   
+ [DecodeURIComponent (Función)](../../javascript/reference/decodeuricomponent-function-javascript.md)

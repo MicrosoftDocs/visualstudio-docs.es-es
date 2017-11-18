@@ -1,72 +1,73 @@
 ---
-title: "localeCompare (M&#233;todo, String de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "localeCompare"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "localeCompare (método)"
+title: "localeCompare (método, String) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: localeCompare
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: localeCompare method
 ms.assetid: 66914079-12dd-4393-a84c-c05f58231c36
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 056a440d26c4ebf48bd762968fa32ea1efdfb443
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# localeCompare (M&#233;todo, String de JavaScript)
+# <a name="localecompare-method-string-javascript"></a>localeCompare (Método, String de JavaScript)
 Determina si dos cadenas son equivalentes en la configuración regional actual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 stringVar.localeCompare(stringExp[, locales][, options])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `stringVar`  
- Requerido.  La primera cadena que se va a comparar.  
+ Obligatorio. Primera cadena que se va a comparar.  
   
  `stringExp`  
- Requerido.  La segunda cadena que se va a comparar.  
+ Obligatorio. Segunda cadena que se va a comparar.  
   
  `locales`  
- Opcional.  Un matriz de cadenas de configuración regional que contienen una o más etiquetas de configuración regional o lenguaje.  Si incluye más de una cadena de la configuración regional, enumérelas en orden descendente de prioridad para de manera que la primera entrada se la configuración regional preferida.  Si omite este parámetro, se usa la configuración regional predeterminada del runtime de JavaScript.  Este parámetro debe ajustarse a los estándares [BCP 47](http://tools.ietf.org/html/rfc5646); vea el [objeto International.Collator](../../javascript/reference/intl-collator-object-javascript.md) para obtener más información.  
+ Opcional. Un matriz de cadenas de configuración regional que contienen una o más etiquetas de configuración regional o lenguaje. Si incluye más de una cadena de configuración regional, enumérelas por orden de prioridad descendente de manera que la primera entrada sea la configuración regional preferida. Si omite este parámetro, se usa la configuración regional predeterminada del runtime de JavaScript. Este parámetro debe ajustarse a [BCP 47](http://tools.ietf.org/html/rfc5646) estándares; vea la [Intl.Collator (objeto)](../../javascript/reference/intl-collator-object-javascript.md) para obtener más información.  
   
  `options`  
- Opcional.  Objeto que contiene una o más propiedades que especifican opciones de comparación. Vea el [objeto Intl.Collator](../../javascript/reference/intl-collator-object-javascript.md) para obtener más información.  
+ Opcional. Objeto que contiene una o varias propiedades que especifican opciones de comparación. Consulte la [Intl.Collator (objeto)](../../javascript/reference/intl-collator-object-javascript.md) para obtener más información.  
   
-## Comentarios  
- Para las cadenas de comparación, puede especificar objetos `String` o los literales de cadena.  
+## <a name="remarks"></a>Comentarios  
+ Para las cadenas de comparación, puede especificar `String` objetos o literales de cadena.  
   
- A partir de Internet Explorer 11, `localeCompare` utiliza el objeto `Intl.Collator` internamente para crear comparaciones, lo que agrega compatibilidad para los parámetros `locales` y `options`.  Para obtener más información sobre estos parámetros, vea [Intl.Collator](../../javascript/reference/intl-collator-object-javascript.md) y [Intl.Collator.compare](../../javascript/reference/compare-property-intl-collator.md).  
+ A partir de Internet Explorer 11, `localeCompare` utiliza la `Intl.Collator` objeto internamente para realizar comparaciones, que agrega compatibilidad para la `locales` y `options` parámetros. Para obtener más información acerca de estos parámetros, consulte [Intl.Collator](../../javascript/reference/intl-collator-object-javascript.md) y [Intl.Collator.compare](../../javascript/reference/compare-property-intl-collator.md).  
   
 > [!IMPORTANT]
->  Los parámetros `locales` y `options` no se admiten en todos los modos de documento y versiones de explorador.  Para obtener más información, consulte la sección Requisitos.  
+>  Los parámetros `locales` y `options` no se admiten en todos los modos de documento o todas las versiones de explorador. Para obtener más información, consulte la sección Requisitos.  
   
- El método `localeCompare` realiza una comparación de la cadena actual y la cadena `stringVar` y `stringExp` y devuelve uno de los siguientes resultados, en función del criterio de ordenación de la configuración regional predeterminada del sistema:  
+ El `localeCompare` método realiza una comparación de cadenas dependientes de la configuración regional de `stringVar` y `stringExp` y devuelve uno de los siguientes resultados, según el criterio de ordenación de la configuración regional predeterminada del sistema:  
   
--   \-1 si ordena `stringVar` antes de `stringExp`.  
+-   -1 si `stringVar` se ordena antes que `stringExp`.  
   
--   \+1 si `stringVar` se ordena después de `stringExp`.  
+-   + 1 si `stringVar` se ordena después de `stringExp`.  
   
--   0 \(cero\) si las dos cadenas son equivalentes.  
+-   0 (cero) si las dos cadenas son equivalentes.  
   
-## Ejemplo  
- En el siguiente código se muestra cómo usar `localeCompare`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente código se muestra cómo usar `localeCompare`:  
   
-```javascript  
+```JavaScript  
 var str1 = "def";  
 var str2 = "abc"  
   
@@ -85,10 +86,10 @@ document.write(str1.localeCompare(str4));
 // Output: 0  
 ```  
   
-## Ejemplo  
- El código siguiente muestra cómo utilizar `localeCompare` con la configuración regional Alemán \(Alemania\).  
+## <a name="example"></a>Ejemplo  
+ El código siguiente muestra cómo utilizar `localeCompare` con la configuración regional Alemán (Alemania).  
   
-```javascript  
+```JavaScript  
 var str1 = "a";  
 var str2 = "b";  
   
@@ -98,10 +99,10 @@ document.write(str1.localeCompare(str2, "de-DE"));
 // - 1  
 ```  
   
-## Ejemplo  
- El ejemplo siguiente muestra cómo utilizar `localeCompare` con la configuración regional de alemán \(Alemania\) y una extensión específica de la configuración regional que indique el criterio de ordenación de las libretas de teléfonos alemanas.  Este ejemplo muestra diferencias específicas de configuración regional.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo usar `localeCompare` con la configuración regional Alemán (Alemania) y una extensión de configuración regional que especifica el criterio de ordenación alemán libretas de teléfonos. Este ejemplo muestra las diferencias de configuración regional.  
   
-```javascript  
+```JavaScript  
 var arr = ["ä", "ad", "af", "a"];  
   
 document.write(arr[0].localeCompare(arr[1], "de-DE-u-co-phonebk"));  // Returns 1  
@@ -114,12 +115,12 @@ document.write (arr[0].localeCompare(arr[3], "de-DE"));  // Returns 1
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- Los parámetros `locales` y `options`:  
+ Parámetros `locales` y `options`:  
   
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Vea también  
- [toLocaleString \(Método, Object\)](../../javascript/reference/tolocalestring-method-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toLocaleString (Método, Object)](../../javascript/reference/tolocalestring-method-object-javascript.md)

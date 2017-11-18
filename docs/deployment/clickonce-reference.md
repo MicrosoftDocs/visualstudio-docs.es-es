@@ -1,33 +1,34 @@
 ---
-title: "Referencia a ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce, referencia"
-  - "manifiestos [ClickOnce]"
+title: Referencia de ClickOnce | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce, reference
+- manifests [ClickOnce]
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Referencia a ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Las páginas siguientes describen la estructura de los archivos XML utilizada para representar aplicaciones ClickOnce.  
+# <a name="clickonce-reference"></a>Referencia a ClickOnce
+Las páginas siguientes describen la estructura de los archivos XML utilizados para representar aplicaciones ClickOnce.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)  
  Enumera y describe los elementos y atributos que conforman un manifiesto de aplicación.  
   
@@ -35,19 +36,19 @@ Las páginas siguientes describen la estructura de los archivos XML utilizada pa
  Enumera y describe los elementos y atributos que conforman un manifiesto de implementación.  
   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)  
- Enumera los elementos de archivos de producto y archivos empaquetados.  
+ Enumera los elementos de archivo de paquete y del producto.  
   
  [Referencia de la API no administrada de ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
- Muestra las API públicas no administradas de dfshim.dll.  
+ Listas de API públicas no administradas de dfshim.dll.  
   
-## Referencia  
+## <a name="reference"></a>Referencia  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)  
- Proporciona información conceptual detallada sobre la implementación ClickOnce.  
+ Proporciona información conceptual detallada sobre la implementación de ClickOnce.  
   
  <xref:System.Deployment.Application>  
- Proporciona vínculos a documentación de referencia sobre las clases públicas que admiten ClickOnce en código administrado.  
+ Proporciona vínculos para hacer referencia a documentación de las clases públicas que admiten ClickOnce en código administrado.  
   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)  
- Proporciona tutoriales y procedimientos referentes a tareas ClickOnce.
+ Proporciona tutoriales y cómo-a la que realizar tareas de ClickOnce.

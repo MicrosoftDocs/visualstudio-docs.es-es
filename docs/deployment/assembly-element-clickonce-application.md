@@ -1,34 +1,33 @@
 ---
-title: "&lt;assembly&gt; (Elemento) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assembly> (elemento) [manifiesto de aplicación ClickOnce]"
+title: "&lt;ensamblado&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assembly> element [ClickOnce application manifest]
 ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;assembly&gt; (Elemento)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento de nivel superior del manifiesto de aplicación.  
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;ensamblado&gt; elemento (aplicación ClickOnce)
+El elemento de nivel superior para el manifiesto de aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
@@ -37,8 +36,8 @@ El elemento de nivel superior del manifiesto de aplicación.
 />  
 ```  
   
-## Elementos y atributos  
- El elemento `assembly` es el elemento raíz y es necesario.  Su primer elemento contenido debe ser un elemento `assemblyIdentity`.  Los elementos del manifiesto deben estar en uno de los espacios de nombres siguientes:  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `assembly` elemento es el elemento raíz y es necesario. Su primer elemento contenido debe ser un `assemblyIdentity` elemento. Los elementos del manifiesto deben estar en uno de los espacios de nombres siguientes:  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -46,16 +45,16 @@ El elemento de nivel superior del manifiesto de aplicación.
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- Los elementos secundarios del ensamblado también deben estar en estos espacios de nombres, mediante herencia o etiquetas.  
+ Los elementos secundarios del ensamblado también deben ser en estos espacios de nombres, mediante herencia o etiquetado.  
   
- El elemento `assembly` tiene el siguiente atributo.  
+ El `assembly` elemento tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`manifestVersion`|Obligatorio.  El atributo `manifestVersion` debe establecerse en `1.0`.|  
+|---------------|-----------------|  
+|`manifestVersion`|Obligatorio. El `manifestVersion` atributo debe establecerse en `1.0`.|  
   
-## Ejemplo  
- En el siguiente ejemplo de código se muestran un elemento `assembly` de un manifiesto de aplicación para una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Este ejemplo de código forma parte de un ejemplo más extenso que aparece en el tema [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra un `assembly` elemento en un manifiesto de aplicación para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 ```  
 <asmv1:assembly   
@@ -71,6 +70,6 @@ El elemento de nivel superior del manifiesto de aplicación.
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Elemento \<assembly\>](../deployment/assembly-element-clickonce-deployment.md)
+ [\<ensamblado > elemento](../deployment/assembly-element-clickonce-deployment.md)

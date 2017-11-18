@@ -1,70 +1,73 @@
 ---
-title: "Object.getPrototypeOf (funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Object.setPrototypeOf (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: a2609f6e-aeee-4c13-b7cf-c31ddf58ff35
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 686fea255978b34af13fcf64785819f3d3afadbb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.getPrototypeOf (funci&#243;n de JavaScript)
+# <a name="objectsetprototypeof-function-javascript"></a>Object.getPrototypeOf (función de JavaScript)
 Establece el prototipo de un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Object.setPrototypeOf(obj, proto);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `obj`  
- Requerido.  El objeto para el que va a establecer el prototipo.  
+ Obligatorio. El objeto para el que va a establecer el prototipo.  
   
  `proto`  
- Requerido.  El nuevo objeto prototipo.  
+ Obligatorio. El nuevo objeto prototipo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
 > [!WARNING]
->  Establecer el prototipo puede reducir el rendimiento de todo el código JavaScript con acceso a un objeto cuyo prototipo ha mutado.  
+>  El hecho de establecer el prototipo puede reducir el rendimiento en todo el código JavaScript que tiene acceso a un objeto cuyo prototipo se cambió.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra cómo establecer el prototipo de un objeto.  
   
-```javascript  
+```JavaScript  
 function Rectangle() {  
 }  
   
 var rec = new Rectangle();  
   
 if (console && console.log) {  
-    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
+    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns true  
     Object.getPrototypeOf(rec, Object.prototype);  
-    console.log(Object.getPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
+    console.log(Object.setPrototypeOf(rec) === Rectangle.prototype);  // Returns false  
 }  
 ```  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra cómo agregar propiedades a un objeto agregándolas al prototipo.  
   
-```javascript  
+```JavaScript  
 var proto = { y: 2 };  
   
 var obj = { x: 10 };  
-Object.getPrototypeOf(obj, proto);  
+Object.setPrototypeOf(obj, proto);  
   
 proto.y = 20;  
 proto.z = 40;  
@@ -76,13 +79,13 @@ if (console && console.log) {
 }  
 ```  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se agregan propiedades al objeto `String` estableciendo un nuevo prototipo en él.  
   
-```javascript  
+```JavaScript  
 var stringProp = { desc: "description" };  
   
-Object.getPrototypeOf(String, stringProp);  
+Object.setPrototypeOf(String, stringProp);  
 var s1 = "333";  
 var s2 = new String("333");  
   
@@ -92,13 +95,13 @@ if (console && console.log) {
     console.log(s1.desc === "description");     // Returns false  
     console.log(s2.desc === "description");     // Returns false  
   
-    Object.getPrototypeOf(s1, String); // Can't be set.  
-    Object.getPrototypeOf(s2, String);  
+    Object.setPrototypeOf(s1, String); // Can't be set.  
+    Object.setPrototypeOf(s2, String);  
   
     console.log(s1.desc === "description"); // Returns false  
     console.log(s2.desc === "description"); // Returns true  
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

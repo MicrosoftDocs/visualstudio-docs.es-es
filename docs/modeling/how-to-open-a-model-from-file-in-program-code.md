@@ -1,61 +1,63 @@
 ---
-title: "C&#243;mo: Abrir un modelo desde un archivo en el c&#243;digo del programa | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: abrir un modelo de archivo en el código de programa | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
-caps.latest.revision: 8
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: d225f991d7d0160f261c4a7c25c1251564a8b97b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Abrir un modelo desde un archivo en el c&#243;digo del programa
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede abrir modelos ADSL en cualquier aplicación.  
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Cómo: Abrir un modelo desde un archivo en el código del programa
+Puede abrir modelos DSL en cualquier aplicación.  
   
- De una extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , puede utilizar ModelBus con este fin.  ModelBus proporciona el mecanismo estándar para hacer referencia a un modelo o elementos en un modelo, y encontrar el modelo si ha desplazado.  Para obtener más información, vea [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ Desde un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos de un modelo y para buscar el modelo si se ha movido. Para obtener más información, consulte [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## Versión de .NET Framework de destino  
- Establezca **Versión de .NET Framework de destino** de proyecto de aplicación a **.NET Framework 4**.  
+## <a name="target-framework"></a>Plataforma de destino  
+ Establecer el **.NET framework de destino** de su proyecto de aplicación para **.NET Framework 4**.  
   
-#### Para establecer el marco de destino  
+#### <a name="to-set-the-target-framework"></a>Para establecer la plataforma de destino  
   
-1.  Abra el proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para la aplicación en la que desea leer un modelo ADSL.  
+1.  Abra el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto para la aplicación en la que desea leer un modelo DSL.  
   
-2.  En el **Explorador de soluciones**, haga clic con el botón secundario del mouse en el proyecto y, a continuación, seleccione **Propiedades**.  
+2.  En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades**.  
   
-3.  En la ventana propiedades del proyecto, en la pestaña de **Aplicación** , establezca el campo de **Versión de .NET Framework de destino** a **.NET Framework 4**.  
+3.  En la ventana de propiedades del proyecto, en la **aplicación** pestaña, establezca el **.NET framework de destino** campo **.NET Framework 4**.  
   
 > [!NOTE]
->  Puede que necesite hacer esto aunque se **.NET Framework 4** seleccionado en el cuadro de diálogo de creación del proyecto.  El marco de destino no debe ser **.NET Framework 4 client profile**.  
+>  Tendrá que hacerlo aunque haya activado **.NET Framework 4** en el cuadro de diálogo de creación de proyecto. La plataforma de destino no debe ser **.NET Framework 4 Client Profile**.  
   
-## Referencias  
- Tiene que agregar estas referencias al proyecto de aplicación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :  
+## <a name="references"></a>Referencias  
+ Tiene que agregar estas referencias para su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto de aplicación:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Si no ve esta bajo la pestaña de **.NET** en el cuadro de diálogo de **Agregue referencias** , haga clic en la pestaña de **Examinar** y navegue a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies \`.  
+    -   Si no ve esto bajo la **.NET** pestaña en el **agregar referencias** cuadro de diálogo, haga clic en el **examinar** pestaña y vaya a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   El ensamblado ADSL, que encontrará en la carpeta bin el proyecto ADSL.  Su nombre es normalmente el formato: *la compañía*.*TheProject*`. Dsl.dll`.  
+-   El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre normalmente tiene el formato: *suempresa*. *Convertirá*`.Dsl.dll`.  
   
-## Clases importantes en ADSL  
- Antes de poder escribir código que lee DSL, debe conocer los nombres de algunas de las clases generadas por ADSL.  En la solución ADSL, abra el proyecto de **DSL** y busca en la carpeta de **GeneratedCode** .  O bien, haga doble clic en el ensamblado ADSL en el proyecto **Referencias**, y abra el espacio de nombres ADSL en **Examinador de objetos**.  
+## <a name="important-classes-in-the-dsl"></a>Clases importantes de DSL  
+ Para que pueda escribir el código que lee el ADSL, debe conocer los nombres de algunas de las clases generadas por el ADSL. En la solución DSL, abra el **Dsl** proyecto y buscar en el **GeneratedCode** carpeta. Como alternativa, haga doble clic en el ensamblado DSL en el proyecto **referencias**y abra el espacio de nombres DSL **Examinador de objetos**.  
   
- Éstas son clases que debe identificar:  
+ Estas son las clases que debe identificar:  
   
--   *TheDslRootClass* \- Éste es el nombre de la clase de `DslDefinition.dsl`.  
+-   *YourDslRootClass* -este es el nombre de la clase raíz en su `DslDefinition.dsl`.  
   
--   *TheDslName* `SerializationHelper` \- clase de This is definido en `SerializationHelper.cs` en el proyecto ADSL.  
+-   *YourDslName* `SerializationHelper` -esta clase se define en `SerializationHelper.cs` en el proyecto DSL.  
   
--   *TheDslName* `DomainModel` \- clase de This is definido en `DomainModel.cs` en el proyecto ADSL.  
+-   *YourDslName* `DomainModel` -esta clase se define en `DomainModel.cs` en el proyecto DSL.  
   
-## Leer de un archivo  
- El ejemplo siguiente se ha diseñado para leer ADSL en las que las clases importantes son como sigue:  
+## <a name="reading-from-a-file"></a>Al leer un archivo  
+ En el ejemplo siguiente está diseñado para leer un DSL en el que las clases importantes son los siguientes:  
   
 -   FamilyTreeModel  
   
@@ -63,7 +65,7 @@ Puede abrir modelos ADSL en cualquier aplicación.
   
 -   FamilyTreeDomainModel  
   
- Otra clase de dominio en este DSL es persona.  
+ La otra clase de dominio en este DSL es persona.  
   
 ```  
 using System;  
@@ -101,8 +103,8 @@ namespace StandaloneReadDslConsole
 } } } }  
 ```  
   
-## Guardar un archivo  
- Suma siguiente al código anterior realiza un cambio en el modelo y lo guarda en un archivo.  
+## <a name="saving-to-a-file"></a>Guardar datos en un archivo  
+ Agrega la siguiente línea en el código anterior realiza un cambio en el modelo y, a continuación, guarda en un archivo.  
   
 ```  
 using (Transaction t =  

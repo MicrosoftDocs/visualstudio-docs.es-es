@@ -1,53 +1,54 @@
 ---
-title: "Propiedades de los conectores | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, conectores"
+title: Propiedades de los conectores | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, connectors
 ms.assetid: b1f24e8d-cdd7-4a5d-af37-1038f43b45c7
-caps.latest.revision: 21
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Propiedades de los conectores
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Los conectores representan relaciones de dominio en un diseñador generado.  
+# <a name="properties-of-connectors"></a>Propiedades de los conectores
+Los conectores representan las relaciones de dominio en un diseñador generado.  
   
- Para obtener más información, vea [Cómo: Definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).  Para obtener más información sobre cómo utilizar estas propiedades, vea [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Los conectores tienen propiedades que se muestran en la tabla siguiente.  
+ Conectores tienen las propiedades que se muestran en la tabla siguiente.  
   
-|Propiedad.|Descripción|Default|  
-|----------------|-----------------|-------------|  
-|Color|Color del conector.|Black|  
-|estilo de guión|El estilo de guión para la línea para este conector \(Solid, guión, punto, DashDot, DashDotDot, o personalizado\).|Sólido|  
-|Estilo del extremo de origen|El origen finaliza el estilo para este conector \(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond, None\).|None|  
-|Estilo de final de destino|El destino finaliza el estilo para este conector \(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond, None\).|None|  
-|Color del texto|El color que se utiliza para los elementos decorator de texto que están asociados con este conector.|Black|  
-|Thickness|el grosor de la línea para este conector, medida en pulgadas.|0.03125|  
-|Modificador de acceso|el nivel de acceso de la clase \(`public` o `internal`\).|Public|  
-|Atributos personalizados|Se utiliza para agregar atributos a la clase del código fuente generado con este conector.|\<none\>|  
-|genera derivado doble|Si `True`, una clase base y una clase parcial \(para admitir la personalización reemplaza a través\) se genera.  Para obtener más información, vea [Invalidar y ampliar clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|tiene el constructor personalizado|Si `True`, un constructor personalizado proporcionado en el código fuente.  Para obtener más información, vea [Invalidar y ampliar clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificador de herencia|Describe la clase de herencia de clases de código fuente que se genera el conector \(`none`, `abstract` o `sealed`\).|nada|  
-|base el conector|la clase base de este conector.|\(ninguno\)|  
-|Name|el nombre de este conector.|nombre actual|  
-|Espacio de nombres|El espacio de nombres que está asociado con este conector.|espacio de nombres actual|  
-|Tipo de información sobre herramientas|Cómo la información sobre herramientas está definido \(corregido, variable, ni\).  Si se ha corregido, el valor de la propiedad de `Fixed Tooltip Text` se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en código personalizado.|\<none\>|  
-|Notas|Notas informales que son asociado a este conector.|\<none\>|  
-|Estilo de enrutamiento|el estilo que se utiliza para distribuir el conector.  un conector de `Rectilinear` crea en ángulo recto gira como sea necesario; un conector de `Straight` no.|rectilíneo|  
-|color expuesto como propiedad<br /><br /> estilo de guión expuesto como propiedad<br /><br /> grosor expuesto como propiedad<br /><br /> Color del texto de expone|si `True`, el usuario puede establecer la propiedad dicha de una forma.  Para establecerla, haga clic con el botón secundario en la definición de la forma y haga clic **agregue expuesto**.|False|  
-|Descripción|Utilizado el documento el diseñador generado.|\<none\>|  
-|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para este conector.|\<none\>|  
-|texto de información sobre herramientas fijo|el texto que se utiliza para una información sobre herramientas fija.|\<none\>|  
-|Palabra clave de Ayuda|La palabra clave que se utiliza para la ayuda de F1 de índice para este elemento.|\<none\>|  
+|Propiedad|Descripción|Default|  
+|--------------|-----------------|-------------|  
+|Color|El color de este conector.|Negro|  
+|Estilo de guión|El estilo de guión para la línea para este conector (sólido, guión, punto, línea mixta, DashDotDot o personalizado).|Sólido|  
+|Estilo de extremo de origen|El estilo de extremo de origen para este conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o ninguno).|Ninguna|  
+|Estilo de extremo de destino|El estilo de extremo de destino para este conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o ninguno).|Ninguna|  
+|Color del texto|El color que se usa para decoradores de texto que están asociados a este conector.|Negro|  
+|Thickness|El grosor de la línea para este conector, se mide en pulgadas.|0.03125|  
+|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Público|  
+|Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de este conector.|\<Ninguno >|  
+|Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir del conector (`none`, `abstract` o `sealed`).|ninguna|  
+|Conector de base|La clase base de este conector.|(ninguno)|  
+|Name|El nombre de este conector.|Nombre actual|  
+|Espacio de nombres|El espacio de nombres que está afiliado a este conector.|Espacio de nombres actual|  
+|ToolTip (tipo)|Cómo se define la información sobre herramientas (fijo, variable o ninguno). Si, a continuación, corrige el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en el código personalizado.|\<Ninguno >|  
+|Notas|Notas informales que están asociadas a este conector.|\<Ninguno >|  
+|Estilo de enrutamiento|El estilo que se utiliza para el conector de enrutamiento. A `Rectilinear` conector hace ángulo recto activa según sea necesario; un `Straight` conector no lo hace.|Rectos|  
+|Color expuesta como propiedad<br /><br /> Estilo de guión expuesto como propiedad<br /><br /> Grosor expuesto como propiedad<br /><br /> Expone el Color del texto|Si `True`, el usuario puede establecer la propiedad de una forma indicada. Para definir esta opción, haga clic en la definición de la forma y haga clic en **agregar expone**.|False|  
+|Descripción|Se utiliza para documentar el diseñador generado.|\<Ninguno >|  
+|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para este conector.|\<Ninguno >|  
+|Texto de información sobre herramientas fijo|El texto que se usa para una información sobre herramientas fijo.|\<Ninguno >|  
+|Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para este elemento.|\<Ninguno >|  
   
-## Vea también  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/es-es/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Vea también  
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

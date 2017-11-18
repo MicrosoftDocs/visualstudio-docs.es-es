@@ -1,105 +1,109 @@
 ---
-title: "Definir una directiva de bloqueo para crear segmentos de solo lectura | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Definir una directiva de bloqueo para crear segmentos de solo lectura | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
-caps.latest.revision: 12
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Definir una directiva de bloqueo para crear segmentos de solo lectura
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La Inmutabilidad API de SDK de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de visualización y modelado permite que un programa bloquear la parte o todo el modelo específico \(DSL\) del lenguaje para que se pueda leer pero no cambiar.  Esta opción de solo lectura puede utilizar, por ejemplo, para que un usuario puede pedir a sus colegas anotan y que revisen un modelo ADSL pero puede denegarlos de cambiar el original.  
+# <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
+La API de inmutabilidad de los [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado permite que un programa parte de bloqueo o la totalidad de un modelo de lenguaje específico de dominio (DSL) para que se puede leer pero no cambia. Se usa esta opción de solo lectura, por ejemplo, para que un usuario puede preguntar a compañeros para agregar anotaciones y revisar un modelo DSL pero puede no puedan cambiar el original.  
   
- Además, como autor ADSL, puede definir *una directiva de bloqueo.* Una directiva de bloqueo define se permite, no se permite que los bloqueos, u obligatorio.  Por ejemplo, al publicar un DSL, puede animar los programadores de otros fabricantes a extenderla con nuevos comandos.  Pero también puede utilizar una directiva de bloqueo para evitar modificar el estado de sólo lectura de partes especificadas del modelo.  
+ Además, como autor de un DSL, puede definir un *la política de bloqueo.* Una directiva de bloqueo define los bloqueos que son permitidos, no se permite u obligatorio. Por ejemplo, cuando se publica un DSL, puede recomendar a los programadores de otros fabricantes para ampliar con nuevos comandos. Pero también podría utilizar una directiva de bloqueo para evitar que modificar el estado de solo lectura de elementos especificados del modelo.  
   
 > [!NOTE]
->  Una directiva de bloqueo se puede evitar mediante la reflexión.  Proporciona un límite claro para los programadores de otros fabricantes, pero no proporciona de seguridad.  
+>  Una directiva de bloqueo puede evitarse mediante la reflexión. Proporciona un límite claro para los desarrolladores de aplicaciones de terceros, pero no proporcionan una gran seguridad.  
   
- Más información y ejemplos están disponibles en el sitio Web[El SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkId=186128) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Obtener más información y ejemplos están disponibles en la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkId=186128) sitio Web.  
+
+[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-## La configuración y el obtener bloqueos  
- Puede establecer bloqueos en el almacén, en una partición, o en un elemento individual.  Por ejemplo, esta instrucción evitará un elemento modelo sea eliminado, y también evitará que sus propiedades son modificadas:  
+## <a name="setting-and-getting-locks"></a>Establecer u obtener bloqueos  
+ Puede establecer los bloqueos en el almacén, en una partición o en un elemento individual. Por ejemplo, esta instrucción impedirá que un elemento del modelo que se va a eliminar y también impide que sus propiedades que se va a cambiar:  
   
 ```  
 using Microsoft.VisualStudio.Modeling.Immutability; ...  
 element.SetLocks(Locks.Delete | Locks.Property);  
 ```  
   
- Otros valores de bloqueo se pueden utilizar para evitar cambios en relaciones, creación de elemento, desplazarse entre las particiones, y reordenar vínculos en un rol.  
+ Pueden utilizar otros valores de bloqueo para evitar cambios en las relaciones, la creación de elemento, el movimiento entre particiones y volver a ordenación vínculos en un rol.  
   
- Los bloqueos se aplican a las acciones del usuario y el código de programa.  Si el código de programa intenta realizar un cambio, `InvalidOperationException` se producirá.  Los bloqueos se omiten en una operación de deshacer o de rehacer.  
+ Los bloqueos se aplican a las acciones del usuario tanto para código de programa. Si el código de programa intenta realizar un cambio, un `InvalidOperationException` se iniciará. Se omiten los bloqueos en una operación de deshacer o rehacer.  
   
- Puede detectar si un elemento tiene un cualquier bloqueo en un determinado conjunto con `IsLocked(Locks)` y puede obtener el conjunto actual de interbloqueo en un elemento mediante `GetLocks()`.  
+ Puede detectar si un elemento tiene un bloqueo de cualquier en un conjunto determinado mediante el uso de `IsLocked(Locks)` y puede obtener el conjunto actual de bloqueos en un elemento mediante `GetLocks()`.  
   
- Puede establecer un bloqueo sin utilizar una transacción.  La base de datos de bloqueo no forma parte del almacén.  Si establece un bloqueo en respuesta a un cambio de un valor en el almacén, por ejemplo en OnValueChanged, permite los cambios que forman parte de una operación.  
+ Puede establecer un bloqueo sin utilizar una transacción. La base de datos de bloqueo no forma parte de la tienda. Si establece un bloqueo en respuesta a un cambio de un valor en el almacén, por ejemplo en OnValueChanged, debe permitir los cambios que forman parte de una operación de deshacer.  
   
- Estos métodos son métodos de extensión que están definidos en el espacio de nombres <xref:Microsoft.VisualStudio.Modeling.Immutability> .  
+ Estos métodos son métodos de extensión que se definen en el <xref:Microsoft.VisualStudio.Modeling.Immutability> espacio de nombres.  
   
-### Bloqueos en particiones y almacena  
- Los bloqueos también puede aplicarse a las particiones y el almacén.  Un bloqueo que se establece en una partición se aplica a todos los elementos de la partición.  Por tanto, por ejemplo, la siguiente instrucción evitará que todos los elementos de un elemento se eliminen, con independencia de los estados de su propio bloqueo.  Sin embargo, otros bloqueos por ejemplo `Locks.Property` podría establecer en elementos individuales:  
+### <a name="locks-on-partitions-and-stores"></a>Bloqueos de particiones y los almacenes  
+ También puede aplicarse a las particiones y el almacén de bloqueos. Un bloqueo que se establece en una partición se aplica a todos los elementos de la partición. Por lo tanto, por ejemplo, la siguiente instrucción impedirá todos los elementos de una partición que se va a eliminar, independientemente de los Estados de sus propios bloqueos. No obstante, otros bloqueos como `Locks.Property` todavía puede establecerse en elementos individuales:  
   
 ```  
 partition.SetLocks(Locks.Delete);  
 ```  
   
- Un bloqueo que se establece en el almacén se aplica a todos sus elementos, con independencia de los valores de ese bloqueo en particiones y elementos.  
+ Un bloqueo que se establece en el almacén se aplica a todos sus elementos, independientemente de la configuración de dicho bloqueo en las particiones y los elementos.  
   
-### Mediante bloqueos  
- Puede usar bloqueos para implementar esquemas como los ejemplos siguientes:  
+### <a name="using-locks"></a>Uso de bloqueos  
+ Podría utilizar bloqueos para implementar esquemas como en los ejemplos siguientes:  
   
--   Denegar los cambios a todos los elementos y relaciones excepto los que representan comentarios.  Esto permite a los usuarios anotan un modelo sin cambiarlo.  
+-   No permitir cambios a todos los elementos y relaciones, salvo aquellos que representan los comentarios. Esto permite a los usuarios anotar un modelo sin modificarlo.  
   
--   Denegar los cambios en la partición predeterminada, pero permite los cambios en el elemento del diagrama.  el usuario puede reorganizar el diagrama, pero no puede modificar el modelo subyacente.  
+-   No permitir cambios en la partición predeterminada, pero permitir que los cambios en la partición de diagrama. El usuario puede reorganizar el diagrama, pero no puede modificar el modelo subyacente.  
   
--   Denegar los cambios al almacén excepto un grupo de usuarios registrados en una base de datos independiente.  Para otros usuarios, el diagrama y el modelo son de solo lectura.  
+-   No permitir cambios en el almacén excepto para un grupo de usuarios que están registrados en una base de datos independiente. Para otros usuarios, el diagrama y el modelo son de solo lectura.  
   
--   Denegar los cambios en el modelo si una propiedad boolean de diagrama se establece en true.  Proporcione un comando de menú para cambiar esa propiedad.  Esto ayuda a los usuarios asegurarse de que no realizan cambios accidentalmente.  
+-   No permitir cambios en el modelo si se establece una propiedad booleana del diagrama en true. Proporciona un comando de menú para cambiar esa propiedad. Esto ayuda a garantizar que los usuarios que no hagan cambios accidentalmente.  
   
--   Denegar la adición y eliminación de elementos y relaciones de determinadas clases, pero permite cambia la propiedad.  Esto proporciona a los usuarios un de forma fija en la que puede rellenar las propiedades.  
+-   No permitir la adición y eliminación de elementos y relaciones de determinadas clases, pero permitir que los cambios de propiedad. Esto proporciona a los usuarios un formulario fijo en el que pueden rellenar las propiedades.  
   
-## Valores de bloqueo  
- Bloqueos puede definir en un almacén, una partición, o un ModelElement individual.  Bloqueos es una enumeración de `Flags` : puede combinar los valores utilizando “&#124;”.  
+## <a name="lock-values"></a>Valores de bloqueo  
+ Los bloqueos se pueden establecer en un almacén, partición o ModelElement individual. Locks es una `Flags` enumeración: puede combinar sus valores usando ' &#124;'.  
   
--   Bloqueos de se incluye de ModelElement bloquea siempre de su parte.  
+-   Bloqueos de una ModelElement siempre incluyen los bloqueos de su partición.  
   
--   Bloqueos de una incluyen de partición bloquea siempre store.  
+-   Bloqueos de una partición siempre incluyen los bloqueos de la tienda.  
   
- No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo deshabilitar el bloqueo en un elemento individual.  
+ No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo, deshabilite el bloqueo en un elemento individual.  
   
 |Valor|Lo que significa que si `IsLocked(Value)` es true|  
-|-----------|-------------------------------------------------------|  
-|None|ninguna restricción.|  
-|Propiedad.|Las propiedades del dominio de elementos no se pueden cambiar.  Esto no se aplica a las propiedades generadas por el rol de una clase de dominio en una relación.|  
-|Agregar|los nuevos elementos y vínculos no se pueden crear en una partición o un almacén.<br /><br /> no aplicable a `ModelElement`.|  
-|Mover|El elemento no se puede mover entre las particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|  
-|Eliminar|Un elemento no se puede eliminar si este bloqueo se establece en el propio elemento, o en cualquiera de los elementos a los que la eliminación propagaría, como elementos incrustados y formas.<br /><br /> Puede utilizar `element.CanDelete()` para detectar si un elemento se puede eliminar.|  
-|Reordenar|El orden de vínculos en un roleplayer no puede modificarse.|  
-|RolePlayer|El conjunto de vínculos que son su origen en este elemento no se puede cambiar.  Por ejemplo, los nuevos elementos no se pueden insertar en este elemento.  Esto no afecta a los vínculos para los que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, el origen y destino no resultan afectados.|  
-|Todos|OR bit a bit de los otros valores.|  
+|-----------|------------------------------------------|  
+|Ninguna|Sin restricción.|  
+|Propiedad|No se puede cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades que se generan mediante la función de una clase de dominio en una relación.|  
+|Add|No se puede crear nuevos elementos y vínculos en una partición o en el almacén.<br /><br /> No es aplicable a `ModelElement`.|  
+|Mover|No se puede mover el elemento entre particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|  
+|Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos a los que podría propagar la eliminación, como las formas y los elementos incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|  
+|Volver a ordenar|No se puede cambiar el orden de vínculos en un roleplayer.|  
+|RolePlayer|No se puede cambiar el conjunto de vínculos que se generan en este elemento. Por ejemplo, no se puede incrustar elementos nuevos en este elemento. Esto no afecta a los vínculos para el que este elemento es el destino.<br /><br /> Si este elemento es un vínculo, su origen y destino no se ven afectados.|  
+|Todas|Operación OR bit a bit de los demás valores.|  
   
-## Directivas de bloqueo  
- Como autor de DSL, puede definir *una directiva de bloqueo*.  Una directiva de bloqueo modera la operación de SetLocks\(\), de modo que pueda evitar concreto bloquee de establecer o asignadas por mandato concreto bloquea establecido.  Normalmente, utilizaría una directiva de bloqueo de desalentar usuarios o los desarrolladores accidental de contravenir el uso previsto ADSL, de la misma manera que puede declarar `private`variable.  
+## <a name="locking-policies"></a>Directivas de bloqueos  
+ Como autor de un DSL, puede definir un *bloqueo directiva*. Una directiva de bloqueo modera la operación de SetLocks(), por lo que puede impedir que bloqueos específicos que se va a establecer o exigir que se deben establecer bloqueos específicos. Normalmente, se usa una directiva de bloqueo para evitar que los usuarios o los desarrolladores cometen accidentalmente el uso previsto de un DSL, de la misma manera que puede declarar una variable `private`.  
   
- También puede utilizar una directiva de bloqueo para establecer bloqueos en todos los elementos dependientes en el tipo de elemento.  Esto es porque `SetLocks(Locks.None)` siempre se llama cuando un elemento se crea por primera vez o se deserializa desde un archivo.  
+ También puede usar una directiva de bloqueo para establecer bloqueos en todos los elementos dependientes en el tipo del elemento. Esto es porque `SetLocks(Locks.None)` siempre se llama cuando un elemento en primer lugar se crea o se deserializa desde archivo.  
   
- Sin embargo, no puede utilizar una directiva para variar bloqueos en un elemento durante su duración.  Para lograr este efecto, debe utilizar llamadas a `SetLocks()`.  
+ Sin embargo, no se puede utilizar una directiva para variar los bloqueos sobre un elemento durante su vida útil. Para lograr este efecto, debe utilizar llamadas a `SetLocks()`.  
   
- Para definir una directiva de bloqueo, tiene que:  
+ Para definir una directiva de bloqueo, tendrá que:  
   
--   cree una clase que implemente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
+-   Cree una clase que implemente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
   
--   Agregue esta clase a los servicios que están disponibles con el DocData ADSL.  
+-   Agregar esta clase a los servicios que están disponibles a través de la DocData del ADSL.  
   
-### Para definir una directiva de bloqueo  
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tiene la siguiente definición:  
+### <a name="to-define-a-locking-policy"></a>Para definir una directiva de bloqueo  
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>tiene la siguiente definición:  
   
 ```  
 public interface ILockingPolicy  
@@ -110,7 +114,7 @@ public interface ILockingPolicy
 }  
 ```  
   
- Se llama a estos métodos cuando se realiza una llamada a `SetLocks()` en un almacén, una partición, o un ModelElement.  En cada método, proporcionan un conjunto propuesto de bloqueos.  Puede devolver el conjunto propuesto, o puede agregar y quitar bloqueos.  
+ Estos métodos se invocan cuando se realiza una llamada a `SetLocks()` en un almacén, partición o ModelElement. En cada método, se le proporcionará un conjunto propuesto de bloqueos. Puede devolver el conjunto de propuesta, o puede agregar y sustraer bloqueos.  
   
  Por ejemplo:  
   
@@ -142,16 +146,16 @@ namespace Company.YourDsl.DslPackage // Change
   
 ```  
   
- Para asegurarse de que los usuarios puedan eliminar siempre elementos, incluso si el código llama a `SetLocks(Lock.Delete):`  
+ Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si llama a otro código`SetLocks(Lock.Delete):`  
   
  `return proposedLocks & (Locks.All ^ Locks.Delete);`  
   
- Denegar el cambio en todas las propiedades de cada elemento MyClass:  
+ Para no permitir cambios en todas las propiedades de cada elemento de MyClass:  
   
- `return element is MyClass ?  (proposedLocks | Locks.Property) : proposedLocks;`  
+ `return element is MyClass ? (proposedLocks | Locks.Property) : proposedLocks;`  
   
-### Para que la directiva disponible como servicio  
- En el proyecto de `DslPackage` , agregue un nuevo archivo que contiene el código similar al ejemplo siguiente:  
+### <a name="to-make-your-policy-available-as-a-service"></a>Para que la directiva esté disponible como un servicio  
+ En su `DslPackage` del proyecto, agregue un nuevo archivo que contiene código que es similar al siguiente:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  

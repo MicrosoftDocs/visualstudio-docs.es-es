@@ -1,64 +1,66 @@
 ---
-title: "compile (M&#233;todo, Regular Expression de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "compile"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Compile (método)"
-  - "compilar código fuente, expresiones regulares"
-  - "expresiones regulares, compilar"
+title: "Compile (método) (expresión Regular) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: compile
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- regular expressions, compiling
+- Compile method
+- compiling source code, regular expressions
 ms.assetid: dc28cae3-478d-49b5-b5ea-203e5edfe195
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b8de23a9e4f0e03fbf042195867ad9426e4c6bb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# compile (M&#233;todo, Regular Expression de JavaScript)
-Compila una expresión regular y la convierte a un formato interno para una ejecución más rápida.  
+# <a name="compile-method-regular-expression-javascript"></a>compile (Método, Regular Expression de JavaScript)
+Compila una expresión regular en un formato interno para una ejecución más rápida.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 rgExp.compile(pattern, [flags])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `rgExp`  
- Obligatorio.  Instancia de un objeto **Regular Expression**.  Puede ser un nombre de variable o un literal.  
+ Obligatorio. Una instancia de un **expresión Regular** objeto. Puede ser un nombre de variable o un literal.  
   
- *pattern*  
- Obligatorio.  Expresión de cadena que contiene un patrón de expresión regular que se va a compilar.  
+ *patrón*  
+ Obligatorio. Una expresión de cadena que contiene un patrón de expresión regular se compile  
   
  `flags`  
- Opcional.  Las marcas disponibles, que se pueden combinar, son:  
+ Opcional. Los marcadores disponibles, que se pueden combinar, son:  
   
--   g \(búsqueda global de todas las repeticiones de *pattern*\)  
+-   g (búsqueda global para todas las apariciones de *patrón*)  
   
--   i \(pasar por alto mayúsculas y minúsculas\)  
+-   i (no distinguir mayús./minús.)  
   
--   m \(búsqueda en varias líneas\)  
+-   m (búsqueda de múltiples líneas)  
   
-## Comentarios  
- El método **compile** convierte el argumento *pattern* a un formato interno para que la ejecución sea más rápida.  Esto permite un uso más eficiente de las expresiones regulares en bucles, por ejemplo.  Una expresión regular compilada aumenta la velocidad cuando se reutiliza la misma expresión repetidamente.  Sin embargo, no se obtiene ninguna ventaja si la expresión regular cambia.  
+## <a name="remarks"></a>Comentarios  
+ El **compilar** método convierte *patrón* en un formato interno para una ejecución más rápida. Esto permite un uso más eficaz de las expresiones regulares en bucles, por ejemplo. Una expresión regular compilada acelera cosas cuando se reutiliza la misma expresión repetidamente. No se obtienen ventajas, sin embargo, si cambia la expresión regular.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso del método **compile**:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **compilar** método:  
   
-```javascript  
+```JavaScript  
 function CompileDemo(){  
    var rs;  
    var s = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPp"  
@@ -73,10 +75,10 @@ function CompileDemo(){
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Regular Expression \(Objeto\)](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Se aplica a**: [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## Vea también  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/es-es/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Vea también  
+ [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

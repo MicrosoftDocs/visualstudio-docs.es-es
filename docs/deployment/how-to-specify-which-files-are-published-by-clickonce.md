@@ -1,120 +1,120 @@
 ---
-title: "C&#243;mo: Especificar los archivos que se van a publicar mediante ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implementación ClickOnce, exclusión de archivos"
-  - "archivos, publicar mediante ClickOnce"
+title: "Cómo: especificar qué archivos se publican mediante ClickOnce | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, file exclusion
+- files, publishing via ClickOnce
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 68773435bc35a93ab49189306db532c68e2b8dad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Especificar los archivos que se van a publicar mediante ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cuando se publica una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], todos los archivos sin código en el proyecto se implementan junto con la aplicación.  En algunos casos, puede que no desee ni necesite publicar algunos archivos o puede que desee instalar algunos archivos según las condiciones.  Visual Studio proporciona las funciones para excluir los archivos, marcarlos como archivos de datos o requisitos previos y crear grupos para la instalación condicional.  
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Cómo: Especificar los archivos que se van a publicar mediante ClickOnce
+Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos de aplicación, sin código en el proyecto se implementan junto con la aplicación. En algunos casos, no puede quiere o necesita publicar determinados archivos, o puede que desee instalar determinados archivos según las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar los archivos como archivos de datos o requisitos previos y crear grupos de archivos para la instalación condicional.  
   
- Los archivos de una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se administran en el cuadro de diálogo **Archivos de aplicación**, al que se puede obtener acceso desde la página **Publicar** del **Diseñador de proyectos**.  
+ Archivos de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se administran en el **archivos de la aplicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.  
   
- Inicialmente, hay un solo grupo de archivos denominado **\(Requerido\)**.  Puede crear grupos de archivos adicionales y asignarles archivos.  No se puede cambiar el **Grupo de descarga** de los archivos que se requieren para ejecutar la aplicación.  Por ejemplo, el archivo .exe de la aplicación o los archivos marcados como archivos de datos deben pertenecer al grupo **\(Requerido\)**.  
+ Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)**. Puede crear grupos de archivos adicionales y asignarles archivos. No se puede cambiar la **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.  
   
- El valor predeterminado del estado de publicación de un archivo se etiqueta como **\(Automático\)**.  Por ejemplo, el archivo .exe de la aplicación tiene, de manera predeterminada, un estado de publicación de **Incluir \(Automático\)**.  
+ Estado de publicación de manera predeterminada el valor de un archivo se etiqueta con **(Auto)**. Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.  
   
- Los archivos cuya propiedad **Acción de compilación** está establecida en **Contenido** se designan como archivos de aplicación y se marcan como incluidos de forma predeterminada.  Dichos archivos se pueden incluir, excluir o marcar como archivos de datos.  Hay algunas excepciones:  
+ Archivos con la **acción de compilación** propiedad establecida en **contenido** se designan como archivos de aplicación y se marcará como incluido de forma predeterminada. Pueden incluirse, excluir o marcados como archivos de datos. Las excepciones son los siguientes:  
   
--   Los archivos de datos como los archivos de bases de datos SQL \(.mdf y .mdb\) y los archivos XML se marcarán de forma predeterminada como archivos de datos.  
+-   Archivos de datos como archivos XML y archivos de base de datos de SQL (.mdf y .mdb) se marcará como archivos de datos de forma predeterminada.  
   
--   Las referencias a ensamblados \(archivos .dll\) se designan de la siguiente forma cuando se agrega una referencia: si **Copia local** es **False**, se marca de forma predeterminada como un ensamblado de requisito previo \(**Requisito previo \(Automático\)**\) que debe estar presente en la GAC antes de instalar la aplicación.  Si **Copia local** es **True**, el ensamblado se marca de forma predeterminada como un ensamblado de aplicación \(**Incluir \(Automático\)**\) y se copiará en la carpeta de la aplicación durante la instalación.  Aparecerá una referencia COM en el cuadro de diálogo **Archivos de aplicación** \(como un archivo .ocx\) únicamente si la propiedad **Isolated** está establecida en **True**.  Se incluirá de forma predeterminada.  
+-   Referencias a ensamblados (archivos .dll) se designan como se indica a continuación cuando se agrega la referencia: si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**(requisitos previos Auto)**) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado de forma predeterminada como un ensamblado de aplicación (**incluir (automático)**) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia de COM, aparecerá en la **archivos de la aplicación** de diálogo cuadro (como un archivo .ocx) solo si su **Isolated** propiedad está establecida en **True**. De forma predeterminada, se incluirá.  
   
-### Para agregar archivos al cuadro de diálogo Archivos de aplicación  
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo de archivos de aplicación  
   
-1.  Seleccione un archivo de datos en el **Explorador de soluciones**.  
+1.  Seleccione un archivo de datos en **el Explorador de soluciones**.  
   
-2.  En la ventana Propiedades, cambie la propiedad **Acción de compilación** al valor **Contenido**.  
+2.  En la ventana Propiedades, cambie la **acción de compilación** propiedad a la **contenido** valor.  
   
-### Para excluir los archivos de la publicación ClickOnce  
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir archivos de publicación de ClickOnce  
   
-1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
+1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la ficha **Publicar**.  
+2.  Haga clic en el **publicar** ficha.  
   
-3.  Haga clic en el botón **Archivos de aplicación** para abrir el cuadro de diálogo **Archivos de aplicación**.  
+3.  Haga clic en el **archivos de la aplicación** para abrir el **archivos de la aplicación** cuadro de diálogo.  
   
-4.  En el cuadro de diálogo **Archivos de aplicación**, seleccione el archivo que desea excluir.  
+4.  En el **archivos de la aplicación** cuadro de diálogo, seleccione el archivo que desea excluir.  
   
-5.  En el campo **Estado de la publicación**, seleccione **Excluir** en la lista desplegable.  
+5.  En el **estado de la publicación** campo, seleccione **excluir** en la lista desplegable.  
   
-### Para marcar los archivos como archivos de datos  
+### <a name="to-mark-files-as-data-files"></a>Para marcar los archivos como archivos de datos  
   
-1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
+1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la ficha **Publicar**.  
+2.  Haga clic en el **publicar** ficha.  
   
-3.  Haga clic en el botón **Archivos de aplicación** para abrir el cuadro de diálogo **Archivos de aplicación**.  
+3.  Haga clic en el **archivos de la aplicación** para abrir el **archivos de la aplicación** cuadro de diálogo.  
   
-4.  En el cuadro de diálogo **Archivos de aplicación**, seleccione el archivo que desea marcar como datos.  
+4.  En el **archivos de la aplicación** cuadro de diálogo, seleccione el archivo que desea marcar como datos.  
   
-5.  En el campo **Estado de la publicación**, seleccione **Archivo de datos** en la lista desplegable.  
+5.  En el **estado de la publicación** campo, seleccione **archivo de datos** en la lista desplegable.  
   
-### Para marcar archivos como requisitos previos  
+### <a name="to-mark-files-as-prerequisites"></a>Marcar archivos como requisitos previos  
   
-1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
+1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la ficha **Publicar**.  
+2.  Haga clic en el **publicar** ficha.  
   
-3.  Haga clic en el botón **Archivos de aplicación** para abrir el cuadro de diálogo **Archivos de aplicación**.  
+3.  Haga clic en el **archivos de la aplicación** para abrir el **archivos de la aplicación** cuadro de diálogo.  
   
-4.  En el cuadro de diálogo **Archivos de aplicación**, seleccione el ensamblado de aplicación \(archivo .dll\) que desea marcar como requisito previo.  Observe que su aplicación debe tener una referencia al ensamblado de aplicación para que éste aparezca en la lista.  
+4.  En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación (archivo .dll) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de aplicación en orden para que aparezca en la lista.  
   
-5.  En el campo **Estado de la publicación**, seleccione **Requisitos previos** en la lista desplegable.  
+5.  En el **estado de la publicación** campo, seleccione **requisitos previos** en la lista desplegable.  
   
-### Para agregar un nuevo grupo de archivos  
+### <a name="to-add-a-new-file-group"></a>Para agregar un nuevo grupo de archivos  
   
-1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
+1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la ficha **Publicar**.  
+2.  Haga clic en el **publicar** ficha.  
   
-3.  Haga clic en el botón **Archivos de aplicación** para abrir el cuadro de diálogo **Archivos de aplicación**.  
+3.  Haga clic en el **archivos de la aplicación** para abrir el **archivos de la aplicación** cuadro de diálogo.  
   
-4.  En el cuadro de diálogo **Archivos de aplicación**, seleccione el campo **Grupo** para incluir el archivo en el nuevo grupo.  
+4.  En el **archivos de la aplicación** cuadro de diálogo, seleccione la **grupo** field para un archivo que desea incluir en el nuevo grupo.  
   
     > [!NOTE]
-    >  Los archivos deben tener la propiedad **Acción de compilación** establecida en **Contenido** antes de que los nombres de archivo aparezcan en el cuadro de diálogo **Archivos de aplicación**.  
+    >  Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.  
   
-5.  En el campo **Grupo de descarga**, seleccione **\<Nuevo...\>** en la lista desplegable.  
+5.  En el **grupo de descarga** campo, seleccione  **\<nuevo... >** en la lista desplegable.  
   
-6.  En el cuadro de diálogo **Nuevo grupo**, escriba un nombre para el grupo y, a continuación, haga clic en **Aceptar**.  
+6.  En el **nuevo grupo** cuadro de diálogo, escriba un nombre para el grupo y, a continuación, haga clic en **Aceptar**.  
   
-### Para agregar un archivo a un grupo  
+### <a name="to-add-a-file-to-a-group"></a>Para agregar un archivo a un grupo  
   
-1.  Con un proyecto seleccionado en el **Explorador de soluciones**, en el menú **Proyecto** haga clic en **Propiedades**.  
+1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en la ficha **Publicar**.  
+2.  Haga clic en el **publicar** ficha.  
   
-3.  Haga clic en el botón **Archivos de aplicación** para abrir el cuadro de diálogo **Archivos de aplicación**.  
+3.  Haga clic en el **archivos de la aplicación** para abrir el **archivos de la aplicación** cuadro de diálogo.  
   
-4.  En el cuadro de diálogo **Archivos de aplicación**, seleccione el campo **Grupo** para incluir el archivo en el nuevo grupo.  
+4.  En el **archivos de la aplicación** cuadro de diálogo, seleccione la **grupo** field para un archivo que desea incluir en el nuevo grupo.  
   
-5.  En el campo **Grupo de descarga**, seleccione un grupo en la lista desplegable.  
+5.  En el **grupo de descarga** , a continuación, seleccione un grupo en la lista desplegable.  
   
     > [!NOTE]
-    >  No se puede cambiar el **Grupo de descarga** de los archivos que se requieren para ejecutar la aplicación.  
+    >  No se puede cambiar la **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Cómo: Publicar una aplicación ClickOnce sin usar el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -11,30 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de dominio.  
@@ -120,7 +105,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 3.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `Namespace`.  
   
-     En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**y establezca **tipo** a **CustomStorage **.  
+     En el **propiedades** ventana para la nueva propiedad, establezca **es examinable** a **False**y establezca **tipo** a **CustomStorage** .  
   
 4.  Para el **ExampleElement** dominio clase, agregue una propiedad de dominio denominada `IsNamespaceTracking`.  
   
@@ -748,7 +733,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 4.  Arrastre un **ExampleElement** elemento desde el **cuadro de herramientas** a la superficie del diagrama.  
   
-5.  En el **propiedades** ventana para el elemento, seleccione la **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a ** OtherNamespace**.  
+5.  En el **propiedades** ventana para el elemento, seleccione la **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a  **OtherNamespace**.  
   
      Tenga en cuenta que el valor de **elemento Namespace** ahora se muestra en negrita.  
   
@@ -766,7 +751,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 9. Cambio **Default Namespace** para el diagrama de **DefaultNamespace** a **NewNamespace**.  
   
-     El **Namespace** de seguimiento que el primer elemento del **Default Namespace** propiedad, mientras que la **Namespace** del segundo elemento mantiene su valor actualizado de usuario de ** OtherNamespace**.  
+     El **Namespace** de seguimiento que el primer elemento del **Default Namespace** propiedad, mientras que la **Namespace** del segundo elemento mantiene su valor actualizado de usuario de  **OtherNamespace**.  
   
 10. Guarde la solución y, a continuación, cierre la compilación experimental.  
   
@@ -778,4 +763,3 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)   
-

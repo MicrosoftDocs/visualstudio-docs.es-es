@@ -1,5 +1,5 @@
 ---
-title: Ampliar DSL mediante MEF | Documentos de Microsoft
+title: Extender el ADSL mediante MEF | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,31 +7,31 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 9a730560e0f19c8e6e58ccc830a95541ae3c5d29
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 492455d06c65bdcf3838c4f61d1fd2dbbcbb0c3f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
-Puede ampliar su lenguaje específico de dominio (DSL) mediante Managed Extensibility Framework (MEF). Usted o a otros desarrolladores podrán escribir extensiones para el DSL sin cambiar la definición de DSL y el código de programa. Estas extensiones incluyen comandos de menú, los controladores de arrastrar y colocar y la validación. Los usuarios podrán instalar su DSL y, opcionalmente, instalar las extensiones para él.  
+Puede extender el lenguaje específico de dominio (DSL) mediante el uso de Managed Extensibility Framework (MEF). O a otros desarrolladores podrán escribir extensiones para DSL sin cambiar la definición de DSL y el código de programa. Estas extensiones son comandos de menú, controladores de arrastrar y colocar y la validación. Los usuarios podrán instalar ADSL y, a continuación, opcionalmente instalar las extensiones para él.  
   
- Además, al habilitar MEF en su DSL, puede ser más fácil de escribir algunas de las características de su DSL, incluso si se compila junto con el DSL.  
+ Además, cuando se habilita MEF en ADSL, puede ser más fácil de escribir algunas de las características del ADSL, incluso si se generan junto con el ADSL.  
   
- Para obtener más información acerca de MEF, vea [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/Library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Para obtener más información acerca de MEF, vea [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Para habilitar su DSL poder ampliarse MEF  
+### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Para habilitar el ADSL debe extender MEF  
   
-1.  Cree una carpeta nueva denominada **MefExtension** dentro de la **DslPackage** proyecto. Agregue los siguientes archivos:  
+1.  Cree una carpeta nueva denominada **MefExtension** dentro de la **DslPackage** proyecto. Agregue los siguientes archivos en él:  
   
-     Nombre del archivo:`CommandExtensionVSCT.tt`  
+     Nombre de archivo:`CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
-    >  El GUID del conjunto de este archivo para ser el mismo que el que se define en DslPackage\GeneratedCode\Constants.tt CommandSetId de GUID  
+    >  El GUID del conjunto de este archivo para ser el mismo que el CommandSetId de GUID que se define en DslPackage\GeneratedCode\Constants.tt  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -44,95 +44,95 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante Managed Extensib
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Nombre del archivo:`CommandExtensionRegistrar.tt`  
+     Nombre de archivo:`CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Nombre del archivo:`ValidationExtensionEnablement.tt`  
+     Nombre de archivo:`ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Nombre del archivo:`ValidationExtensionRegistrar.tt`  
+     Nombre de archivo:`ValidationExtensionRegistrar.tt`  
   
-     Si agrega este archivo, debe habilitar la validación en su DSL mediante al menos uno de los modificadores en **EditorValidation** en el Explorador de DSL.  
+     Si agrega este archivo, debe habilitar la validación en ADSL mediante el uso de al menos uno de los modificadores en **EditorValidation** en el Explorador de DSL.  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Nombre del archivo:`PackageExtensionEnablement.tt`  
+     Nombre de archivo:`PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
     ```  
   
-2.  Cree una carpeta nueva denominada **MefExtension** dentro de la **Dsl** proyecto. Agregue los siguientes archivos:  
+2.  Cree una carpeta nueva denominada **MefExtension** dentro de la **Dsl** proyecto. Agregue los siguientes archivos en él:  
   
-     Nombre del archivo:`DesignerExtensionMetaDataAttribute.tt`  
+     Nombre de archivo:`DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Nombre del archivo:`GestureExtensionEnablement.tt`  
+     Nombre de archivo:`GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Nombre del archivo:`GestureExtensionController.tt`  
+     Nombre de archivo:`GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionController.tt" #>  
     ```  
   
-3.  Agregue la siguiente línea al archivo existente denominado **Dslpackage\commands**:  
+3.  Agregue la siguiente línea al archivo existente que se denomina **DslPackage\Commands.vsct**:  
   
     ```  
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
     ```  
   
-     Inserte la línea después del `<Include>` directiva.  
+     Inserte la línea después de las existentes `<Include>` directiva.  
   
 4.  `Open DslDefinition.dsl.`  
   
 5.  En el Explorador de DSL, seleccione **Editor\Validation**.  
   
-6.  En la ventana Propiedades, asegúrese de que al menos una de las propiedades con nombre **usa... ** is `true`.  
+6.  En la ventana Propiedades, asegúrese de que al menos una de las propiedades con nombre **usa...**  es `true`.  
   
 7.  En la barra de herramientas del explorador de soluciones, haga clic en **Transformar todas las plantillas**.  
   
-     Archivos secundarios aparecen debajo de cada uno de los archivos que ha agregado.  
+     Archivos de distribuidores aparecen debajo de cada uno de los archivos que agregaron.  
   
 8.  Compile y ejecute la solución para comprobar que sigue funcionando.  
   
- Su DSL ya está habilitado en MEF. Puede escribir los comandos de menú y controladores de gestos con restricciones de validación como extensiones MEF. Puede escribir estas extensiones en la solución DSL junto con otro código personalizado. Además, usted o a otros desarrolladores pueden escribir independiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones que amplían su DSL.  
+ ADSL está ahora habilitado para MEF. Puede escribir comandos de menú, controladores de gestos y restricciones de validación como las extensiones MEF. Puede escribir estas extensiones en la solución DSL junto con otro código personalizado. Además, se o a otros desarrolladores pueden escribir independiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones que amplían el ADSL.  
   
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Crear una extensión para un DSL habilitado MEF  
- Si tiene acceso a un DSL habilitado MEF creado por usted mismo o a otra persona, puede escribir las extensiones para él. Las extensiones se pueden utilizar para agregar comandos de menú, los controladores de gestos o restricciones de validación. Para crear estas extensiones, utiliza un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución de extensión (VSIX). La solución tiene dos partes: un proyecto de biblioteca de clases que compila el ensamblado de código y un proyecto VSIX que empaqueta el ensamblado.  
+ Si tiene acceso a un DSL habilitado MEF creado por usted mismo u otra persona, puede escribir las extensiones para él. Las extensiones permiten agregar comandos de menú, controladores de gestos o restricciones de validación. Para crear estas extensiones, use un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución de extensión (VSIX). La solución tiene dos partes: un proyecto de biblioteca de clases que compila el ensamblado de código y un proyecto VSIX que empaqueta el ensamblado.  
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Para crear una extensión VSIX de DSL  
   
-1.  Cree un nuevo proyecto de biblioteca de clases. Para ello, en la **nuevo proyecto** cuadro de diálogo, seleccione **Visual Basic** o **Visual C#** y, a continuación, seleccione **biblioteca de clases**.  
+1.  Cree un nuevo proyecto de biblioteca de clases. Para ello, en el **nuevo proyecto** cuadro de diálogo, seleccione **Visual Basic** o **Visual C#** y, a continuación, seleccione **biblioteca de clases**.  
   
-2.  En el nuevo proyecto de biblioteca de clases, agregue una referencia al ensamblado del DSL.  
+2.  En el nuevo proyecto de biblioteca de clases, agregue una referencia al ensamblado de DSL.  
   
     -   Normalmente, este ensamblado tiene un nombre que termina con ". DSL.dll".  
   
     -   Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **Dsl\bin\\\***  
   
-    -   Si tiene acceso al archivo VSIX DSL, puede encontrar el ensamblado cambiando la extensión de nombre de archivo del archivo VSIX para "zip". Descomprima el archivo zip.  
+    -   Si tiene acceso al archivo DSL VSIX, puede encontrar el ensamblado cambiando la extensión de nombre de archivo del archivo VSIX para "zip". Descomprima el archivo zip.  
   
 3.  Agregue referencias a los siguientes ensamblados. NET:  
   
@@ -146,7 +146,7 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante Managed Extensib
   
     -   System.Windows.Forms.dll  
   
-4.  Cree un proyecto VSIX en la misma solución. Para ello, en la **nuevo proyecto** diálogo cuadro, expanda **Visual Basic** o **Visual C#**, haga clic en **extensibilidad**y, a continuación, seleccione **proyecto VSIX**.  
+4.  Cree un proyecto VSIX en la misma solución. Para ello, en el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, haga clic en **extensibilidad**y, a continuación, seleccione  **Proyecto VSIX**.  
   
 5.  En el Explorador de soluciones, haga clic en el proyecto VSIX y, a continuación, haga clic en **establecer como proyecto de inicio**.  
   
@@ -158,25 +158,25 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante Managed Extensib
   
     1.  En **source.extension.vsixmanifest**, haga clic en **Agregar referencia**  
   
-    2.  En el cuadro de diálogo, haga clic en **agregar carga** y, a continuación, busque el archivo VSIX del DSL. Generado en el archivo VSIX en la solución DSL, **DslPackage\bin\\\***.  
+    2.  En el cuadro de diálogo, haga clic en **agregar carga** y, a continuación, busque el archivo VSIX de DSL. Integrada en el archivo VSIX en la solución DSL, **DslPackage\bin\\\***.  
   
-         Esto permite a los usuarios instalar el DSL y la extensión al mismo tiempo. Si el usuario ya ha instalado el DSL, se instalará sólo en su extensión.  
+         Esto permite a los usuarios instalar DSL y la extensión al mismo tiempo. Si el usuario ya ha instalado el ADSL, se instalará solo la extensión.  
   
 9. Revisar y actualizar los demás campos de **source.extension.vsixmanifest**. Haga clic en **seleccionar ediciones** y compruebe que el valor correcto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se establecen las ediciones.  
   
 10. Agregue código al proyecto de biblioteca de clases. Utilice los ejemplos en la sección siguiente como guía.  
   
-     Puede agregar cualquier número de clases de validación, gesto y comando.  
+     Puede agregar cualquier número de comandos, gestos y las clases de validación.  
   
 11. Para probar la extensión, presione **F5**. En la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cree o abra un archivo de ejemplo de DSL.  
   
-## <a name="writing-mef-extensions-for-dsls"></a>Escribir extensiones MEF para DSL  
- Puede escribir las extensiones en el proyecto de código de ensamblado de una solución de extensión DSL independiente. También puede utilizar MEF en el proyecto DslPackage, como una manera cómoda de escribir comandos, gestos y código de validación como parte de la DSL.  
+## <a name="writing-mef-extensions-for-dsls"></a>Escribir las extensiones MEF para DSL  
+ Puede escribir las extensiones en el proyecto de código de ensamblado de una solución de extensión DSL independiente. También puede utilizar MEF en el proyecto DslPackage, como una manera cómoda para escribir comandos, gestos y código de validación como parte de la DSL.  
   
 ### <a name="menu-commands"></a>Comandos de menú  
- Para escribir un comando de menú, defina una clase que implementa <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>y agregue el prefijo de la clase con el atributo que se define en su DSL, denominado *Sudsl*`CommandExtension`.</xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> Puede escribir más de una clase de comando de menú.  
+ Para escribir un comando de menú, defina una clase que implementa <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> y la clase con el atributo que se define en ADSL, con el nombre de prefijo *YourDsl*`CommandExtension`. Puede escribir más de una clase de comando de menú.  
   
- `QueryStatus()`se llama cuando el usuario seleccione el diagrama. Debe inspeccionar la selección actual y establecer `command.Enabled` para indicar si el comando es aplicable.  
+ `QueryStatus()`se llama cada vez que el usuario seleccione en el diagrama. Debe inspeccionar la selección actual y establecer `command.Enabled` para indicar si el comando es aplicable.  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -244,7 +244,7 @@ namespace MyMefExtension
 ```  
   
 ### <a name="gesture-handlers"></a>Controladores de gestos  
- Un controlador de gestos puede tratar con objetos que se arrastran al diagrama desde cualquier lugar dentro o fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el siguiente ejemplo permite al usuario arrastrar archivos desde el Explorador de Windows al diagrama. Crea elementos que contienen los nombres de archivo.  
+ Un controlador de gestos puede tratar con objetos que se arrastran al diagrama desde cualquier lugar, dentro o fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el ejemplo siguiente, se permite al usuario arrastrar archivos desde el Explorador de Windows en el diagrama. Crea los elementos que contienen los nombres de archivo.  
   
  Puede escribir controladores para tratar con arrastrar desde otros modelos DSL y modelos UML. Para obtener más información, consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
@@ -321,7 +321,7 @@ namespace MefExtension
 ```  
   
 ### <a name="validation-constraints"></a>Restricciones de validación  
- Métodos de validación se marcan con el `ValidationExtension` atributo generado por el DSL y también por <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>.</xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> El método puede aparecer en cualquier clase que no está marcado por un atributo.  
+ Los métodos de validación se marcan con la `ValidationExtension` atributo que se genera mediante el ADSL y también <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. El método puede aparecer en cualquier clase que no está marcado por un atributo.  
   
  Para obtener más información, consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
   
@@ -374,7 +374,7 @@ namespace MefExtension
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Envío de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/Library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Extensiones de Visual Studio de envío](../extensibility/shipping-visual-studio-extensions.md)   
+ [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)   
  [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [La validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)

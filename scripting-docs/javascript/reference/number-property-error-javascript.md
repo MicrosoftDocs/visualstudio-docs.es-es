@@ -1,33 +1,34 @@
 ---
-title: "number (Propiedad, Error de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Number"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Number (propiedad)"
+title: Number (propiedad, Error) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Number
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Number property
 ms.assetid: 8697e20b-a2b0-4e26-85c0-ab07ddfe8281
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bbc229e7d0572e1a3dbed056b344da7ff9ce7292
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# number (Propiedad, Error de JavaScript)
-Devuelve o establece el valor numérico asociado a un error específico.  La propiedad predeterminada del objeto `Error` es **number**.  
+# <a name="number-property-error-javascript"></a>number (Propiedad, Error de JavaScript)
+Devuelve o establece el valor numérico asociado a un error específico. El `Error` es la propiedad predeterminada del objeto **número**.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
@@ -35,20 +36,20 @@ object
 .number [= errorNumber]  
 ```  
   
-## Parámetros  
- *Object*  
- Cualquier instancia del objeto `Error`.  
+## <a name="parameters"></a>Parámetros  
+ *Objeto*  
+ Cualquier instancia de la `Error` objeto.  
   
  *errorNumber*  
- Entero que representa un error.  
+ Un entero que representa un error.  
   
-## Comentarios  
- Un número de error es un valor de 32 bits.  La palabra de 16 bits superior es el código de facilidad, y la palabra inferior es el código de error.  Para determinar el código de error, usa el operador `&` \(AND bit a bit\) para agrupar la propiedad number con el número hexadecimal `0xFFFF`.  
+## <a name="remarks"></a>Comentarios  
+ Un número de error es un valor de 32 bits. La palabra de 16 bits superior es el código de componente y la palabra inferior es el código de error. Para determinar el código de error, use la `&` (bit a bit y) para combinar la propiedad number con el número hexadecimal `0xFFFF`.  
   
-## Ejemplo  
- En el ejemplo siguiente se produce una excepción y se muestra el código de error derivado del número de error.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se hace que se produzca una excepción y muestra el código de error que se deriva del número de error.  
   
-```javascript  
+```JavaScript  
 try  
     {  
     // Cause an error.  
@@ -69,21 +70,21 @@ catch(e)
     }  
 ```  
   
-## Ejemplo  
- El resultado de este código es el siguiente.  
+## <a name="example"></a>Ejemplo  
+ El resultado de este código es como sigue.  
   
-```javascript  
+```JavaScript  
 Error Code: 5009  
 Facility Code: 10  
 Error Message: 'y' is undefined  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
- **Se aplica a**: [Error \(Objeto\)](../../javascript/reference/error-object-javascript.md)  
+ **Se aplica a**: [objeto Error](../../javascript/reference/error-object-javascript.md)  
   
-## Vea también  
- [description \(Propiedad, Error\)](../../javascript/reference/description-property-error-javascript.md)   
- [message \(Propiedad, Error\)](../../javascript/reference/message-property-error-javascript.md)   
- [name \(Propiedad, Error\)](../../javascript/reference/name-property-error-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Description (propiedad) (Error)](../../javascript/reference/description-property-error-javascript.md)   
+ [Message (propiedad) (Error)](../../javascript/reference/message-property-error-javascript.md)   
+ [name (Propiedad, Error)](../../javascript/reference/name-property-error-javascript.md)

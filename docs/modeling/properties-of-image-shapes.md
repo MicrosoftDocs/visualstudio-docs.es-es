@@ -1,33 +1,34 @@
 ---
-title: "Propiedades de las formas de imagen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.selectimagedialog"
-  - "vs.dsltools.dsldesigner.imageshape"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, forma de imagen"
+title: Propiedades de las formas de imagen | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.dsltools.dsldesigner.selectimagedialog
+- vs.dsltools.dsldesigner.imageshape
+helpviewer_keywords: Domain-Specific Language, image shape
 ms.assetid: 9ce00ccd-07f2-4640-ac96-2a60481d0d72
-caps.latest.revision: 25
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 88ae1fb937f5f86aa767a2de8d1978ea160f6d15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Propiedades de las formas de imagen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede utilizar las formas de la imagen para especificar cómo las clases de dominio aparecen en un diseñador generado.  Defina una forma de imagen estableciendo la propiedad de `Image` de la clase en un archivo de imagen predefinido.  Se admiten los siguientes formatos:  
+# <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
+Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Define una forma de imagen, estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinida. Se admiten los siguientes formatos:  
   
 -   .gif  
   
 -   .jpg  
   
--   .jpeg  
+-   .JPEG  
   
 -   .bmp  
   
@@ -35,41 +36,41 @@ Puede utilizar las formas de la imagen para especificar cómo las clases de domi
   
 -   .emf  
   
--   png  
+-   PNG  
   
- De forma predeterminada, los archivos de recursos de diseñador, como archivos de imagen, se encuentran en la carpeta de **RECURSOS**en el proyecto de **DSL** .  
+ De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.  
   
- Para obtener más información, vea [Cómo: Definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).  Para obtener más información sobre cómo utilizar estas propiedades, vea [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+ Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Las formas de la imagen tienen propiedades que se muestran en la tabla siguiente.  
+ Formas de imagen tienen las propiedades que se muestran en la tabla siguiente.  
   
-|Propiedad.|Descripción|Default|  
-|----------------|-----------------|-------------|  
-|Color de relleno|el color de relleno de esta forma.|Blanco|  
-|Modo de degradado de relleno|El modo de degradado de relleno de esta forma.|Horizontal|  
-|tiene puntos de conexión predeterminados|Si `True`, la forma utiliza la parte superior, inferior, izquierdo, y los puntos de conexión correctos en el diseñador generado.|False|  
-|Color|el contorno color de esta forma.|Black|  
-|Estilo de guión de esquema|El estilo de guión del contorno de esta forma \(Solid, guión, punto, DashDot, DashDotDot, o personalizado\).|Sólido|  
+|Propiedad|Descripción|Default|  
+|--------------|-----------------|-------------|  
+|Color de relleno|El color de relleno de esta forma.|Blanco|  
+|Modo degradado de relleno|El modo de degradado de relleno de esta forma.|Horizontal|  
+|Tiene puntos de conexión predeterminados|Si `True`, la forma usará superior, inferior, izquierda y puntos de conexión adecuada en el diseñador generado.|False|  
+|Color del contorno|El color del contorno de esta forma.|Negro|  
+|Estilo de guión de esquema|El estilo de guión de esquema de esta forma (sólido, guión, punto, línea mixta, DashDotDot o personalizado).|Sólido|  
 |Grosor del contorno|El grosor del contorno de esta forma.|0.03125|  
-|Color del texto|El color que se utiliza para los elementos decorator de texto que están asociados con esta forma.|Black|  
-|Modificador de acceso|El modificador de acceso de la geometría \(public o interno\).|Public|  
-|Atributos personalizados|Se utiliza para agregar atributos a la clase del código fuente se genera de esta forma.|\<none\>|  
-|genera derivado doble|Si `True`, una clase base y una clase parcial \(para admitir la personalización reemplaza a través\) se genera.  Para obtener más información, vea [Invalidar y ampliar clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|tiene el constructor personalizado|Si `True`, un constructor personalizado proporcionado en el código fuente.  Para obtener más información, vea [Invalidar y ampliar clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificador de herencia|Describe la clase de herencia de clases de código fuente que se genera de la imagen \(`none`, `abstract` o `sealed`\).|nada|  
-|Base la imagen|la clase base de esta forma.|\(ninguno\)|  
-|Name|el nombre de esta forma.|nombre actual|  
-|Espacio de nombres|El espacio de nombres que está asociado con esta forma.|espacio de nombres actual|  
-|Tipo de información sobre herramientas|El lugar donde se define la información sobre herramientas \(corregido, variable, ni\).  Si se ha corregido, el valor de la propiedad de `Fixed Tooltip Text` se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en código personalizado.|nada|  
-|Notas|Notas informales que son asociado a esta forma.|\<none\>|  
-|alto inicial|el alto inicial de esta forma, en pulgadas.|1|  
-|ancho inicial|el ancho inicial de esta forma, en pulgadas.|1.5|  
-|color de relleno expuesto como propiedad<br /><br /> Modo expuesto degradado de relleno<br /><br /> contorno expuesto Color como propiedad<br /><br /> Estilo de guión expuesto de esquema como propiedad<br /><br /> Grosor expuesto de esquema como propiedad<br /><br /> Color del texto de expone|si `True`, el usuario puede establecer la propiedad dicha de una forma.  Para establecerla, haga clic con el botón secundario en la definición de la forma y haga clic **agregue expuesto**.|False|  
-|Descripción|Utilizado el documento el diseñador generado.|\<none\>|  
-|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para esta forma.|\<none\>|  
-|texto de información sobre herramientas fijo|el texto que se utiliza para una información sobre herramientas fija.|\<none\>|  
-|Palabra clave de Ayuda|La palabra clave que se utiliza para la ayuda de F1 de índice para este elemento.|\<none\>|  
-|Image|La ruta de acceso al archivo de imagen que se utiliza para esta forma.|\<none\>|  
+|Color del texto|El color que se usa para decoradores de texto que están asociados con esta forma.|Negro|  
+|Modificador de acceso|El modificador de acceso de la forma de geometría (pública o interna).|Público|  
+|Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de esta forma.|\<Ninguno >|  
+|Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir de la forma de imagen (`none`, `abstract` o `sealed`).|ninguna|  
+|Forma de la imagen base|La clase base de esta forma.|(ninguno)|  
+|Name|El nombre de esta forma.|Nombre actual|  
+|Espacio de nombres|El espacio de nombres que está afiliado a esta forma.|Espacio de nombres actual|  
+|ToolTip (tipo)|El lugar donde se define la información sobre herramientas (fijo, variable o ninguno). Si, a continuación, corrige el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en el código personalizado.|ninguna|  
+|Notas|Notas informales que están asociadas con esta forma.|\<Ninguno >|  
+|Alto inicial|El alto inicial de esta forma, en pulgadas.|1|  
+|Ancho inicial|Ancho inicial de esta forma, en pulgadas.|1.5|  
+|Color de relleno expuesto como propiedad<br /><br /> Modo degradado de relleno expuesto<br /><br /> Expone el Color del contorno como propiedad<br /><br /> Expone el estilo de guión de esquema como propiedad<br /><br /> Expone el grosor del contorno como propiedad<br /><br /> Expone el Color del texto|Si `True`, el usuario puede establecer la propiedad de una forma indicada. Para definir esta opción, haga clic en la definición de la forma y haga clic en **agregar expone**.|False|  
+|Descripción|Se utiliza para documentar el diseñador generado.|\<Ninguno >|  
+|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para esta forma.|\<Ninguno >|  
+|Texto de información sobre herramientas fijo|El texto que se usa para una información sobre herramientas fijo.|\<Ninguno >|  
+|Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para este elemento.|\<Ninguno >|  
+|Imagen|La ruta de acceso al archivo de imagen que se usa para esta forma.|\<Ninguno >|  
   
-## Vea también  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/es-es/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Vea también  
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

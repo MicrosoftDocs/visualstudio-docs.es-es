@@ -1,28 +1,29 @@
 ---
-title: "Ubicaci&#243;n y tama&#241;o de las reglas de restricci&#243;n de formas BoundsRules | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, eventos"
+title: "BoundsRules restringir la ubicación de la forma y el tamaño | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, events
 ms.assetid: 4d08e541-fc67-4e68-bf31-30d346aa2aa0
-caps.latest.revision: 18
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 8a611bd18cb06b712f671d370bfc26d4dc8cf4f3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Ubicaci&#243;n y tama&#241;o de las reglas de restricci&#243;n de formas BoundsRules
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-*Una regla de Límites* es una clase que define los límites en el tamaño y la ubicación de una forma.  Proporciona un método que se llama repetidamente mientras un usuario está arrastrando una forma o las esquinas o los lados de una forma.  
+# <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
+A *regla límites* es una clase que define los límites en el tamaño y la ubicación de una forma. Proporciona un método que se llama repetidamente mientras un usuario está arrastrando una forma o los extremos o lados de una forma.  
   
- El ejemplo siguiente restringe una forma rectangular para ser una barra de tamaño fijo, u horizontal o vertical.  Cuando el usuario arrastra las esquinas o lateral, el esquema mueve volteado entre las dos configuraciones permitidas de alto y ancho.  
+ En el ejemplo siguiente, se restringe una forma rectangular como una barra de tamaño fijo, horizontal o vertical. Cuando el usuario arrastra los extremos o lados, voltea el esquema entre las dos configuraciones permitidas de alto y ancho.  
   
- la regla de los límites es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>.  una instancia de la regla se crea en la forma:  
+ Los límites de reglas es una clase derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Se crea una instancia de la regla en la forma:  
   
 ```  
 using Microsoft.VisualStudio.Modeling.Diagrams; ...  
@@ -62,8 +63,8 @@ public class BarBoundsRule: BoundsRules
 } } }  
 ```  
   
- Observe que la ubicación y el tamaño pueden ser restringidos si desea.  
+ Tenga en cuenta que la ubicación y el tamaño pueden restringirse si desea.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)

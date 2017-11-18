@@ -1,64 +1,66 @@
 ---
-title: "Varios DSL en una soluci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Varios lenguajes DSL en una única solución | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: 3
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b55d1d5ec8e84c8d16681ffd0ac738291e1bc39d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Varios DSL en una soluci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.  
   
- Puede usar varias técnicas para integrar varios DSL.  Para obtener más información, vea [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md), [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) y [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md).  
+ Puede usar varias técnicas para integrar varios DSL. Para obtener más información, consulte [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) y [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) y [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).  
   
-### Para compilar más de un DSL en la misma solución  
+### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Para compilar más de un DSL en la misma solución  
   
 1.  Cree dos o más soluciones de DSL y un proyecto de VSIX, y agregue todos los proyectos a una única solución.  
   
-    -   Para crear un nuevo proyecto de VSIX: En el cuadro de diálogo **Nuevo proyecto**, elija **Visual C\#**, **Extensibilidad**, **Proyecto VSIX**.  
+    -   Para crear un nuevo proyecto VSIX: en el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.  
   
     -   Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.  
   
-         Por cada DSL, abra una nueva instancia de Visual Studio.  Cree el nuevo DSL y especifique la misma carpeta de solución que la solución de VSIX.  
+         Por cada DSL, abra una nueva instancia de Visual Studio. Cree el nuevo DSL y especifique la misma carpeta de solución que la solución de VSIX.  
   
          Asegúrese de crear cada DSL con una extensión de nombre de archivo diferente.  
   
-    -   Cambie los nombres de los proyectos **Dsl** y **DslPackage** para que sean todos diferentes.  Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
+    -   Cambiar los nombres de los **Dsl** y **DslPackage** proyectos para que sean distintos. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.  
   
-    -   En cada **DslPackage\*\\source.extension.tt**, actualice esta línea con el nombre de proyecto de DSL correcto:  
+    -   En cada uno de ellos **DslPackage\*\source.extension.tt**, actualice esta línea con el nombre de proyecto de Dsl correcto:  
   
          `string dslProjectName = "Dsl2";`  
   
-    -   En la solución de VSIX, agregue los proyectos Dsl\* y DslPackage\*.  
+    -   En la solución VSIX, agregue el ADSL * y DslPackage\* proyectos.  
   
          Quizás quiera coloca cada par en su propia carpeta de solución.  
   
 2.  Combine los manifiestos VSIX de los DSL:  
   
-    1.  Abra *suProyectoVsix***\\source.extension.manifest**.  
+    1.  Abra *YourVsixProject***\source.extension.manifest**.  
   
-    2.  Para cada DSL, elija **Agregar contenido** y agregue:  
+    2.  Para cada ADSL, elija **agregar contenido** y agregue:  
   
-        -   El proyecto `Dsl*` como un **MEF Component** \(Componente MEF\).  
+        -   `Dsl*`un proyecto como un **componente MEF**  
   
-        -   El proyecto `DslPackage*` como un **MEF Component** \(Componente MEF\).  
+        -   `DslPackage*`un proyecto como un **componente MEF**  
   
-        -   El proyecto `DslPackage*` como un **VS Package** \(Paquete de VS\).  
+        -   `DslPackage*`un proyecto como un **VS Package**  
   
 3.  Compile la solución.  
   
- El VSIX resultante instalará ambos DSL.  Use F5 para probarlos o implemente *suProyectoVsix***\\bin\\Debug\\\*.vsix**.  
+ El VSIX resultante instalará ambos DSL. Puede probar a ellos mediante F5 o implementar *YourVsixProject***\bin\Debug\\\*.vsix**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Personalizar comportamiento de copia](../modeling/customizing-copy-behavior.md)

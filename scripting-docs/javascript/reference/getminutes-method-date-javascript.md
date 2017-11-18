@@ -1,53 +1,55 @@
 ---
-title: "getMinutes (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getMinutes"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "GetMinutes (método)"
-  - "minutes (método)"
+title: "getMinutes (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getMinutes
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- GetMinutes method
+- minutes method
 ms.assetid: d4139b5d-04e1-474c-9a83-e9d40597243a
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ff08fd84345c9ceb816444a1b44643a8353b60b1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getMinutes (M&#233;todo, Date de JavaScript)
-Obtiene los minutos de un objeto `Date` utilizando la hora local.  
+# <a name="getminutes-method-date-javascript"></a>getMinutes (Método, Date de JavaScript)
+Obtiene los minutos de un `Date` de objeto, utilizando la hora local.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getMinutes()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve un entero entre 0 y 59.  Se devuelve cero cuando el tiempo es inferior a un minuto después de la hora.  Si se ha creado un objeto `Date` sin especificar la hora, el valor de los minutos es 0 de forma predeterminada.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un entero entre 0 y 59. Se devuelve cero que la hora es inferior a un minuto posterior a la hora. Si un `Date` se creó el objeto sin especificar el tiempo, de forma predeterminada el valor de minuto es 0.  
   
-## Comentarios  
- Para obtener el valor de minutos usando el horario universal coordinado \(UTC\), usa el método `getUTCMinutes`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el valor de minutos mediante la hora Universal coordinada (UTC), use el `getUTCMinutes` método.  
   
-## Ejemplo  
- En el siguiente ejemplo se muestra cómo usar el método `getMinutes`.  
+## <a name="example"></a>Ejemplo  
+ El siguiente ejemplo se muestra cómo el `getMinutes` método.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/1/2001");  
 document.write(date.getMinutes());  
 document.write("<br/>");  
@@ -58,15 +60,14 @@ document.write(date.getMinutes());
 // Output:  
 // 0  
 // 5  
-  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getUTCMinutes \(Método, Date\)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
- [setMinutes \(Método, Date\)](../../javascript/reference/setminutes-method-date-javascript.md)   
- [setUTCMinutes \(Método, Date\)](../../javascript/reference/setutcminutes-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getUTCMinutes (método, Date)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
+ [setMinutes (método, Date)](../../javascript/reference/setminutes-method-date-javascript.md)   
+ [setUTCMinutes (Método, Date)](../../javascript/reference/setutcminutes-method-date-javascript.md)

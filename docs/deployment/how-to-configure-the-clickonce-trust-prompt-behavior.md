@@ -1,91 +1,92 @@
 ---
-title: "C&#243;mo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "aplicaciones ClickOnce, instalar sin preguntar"
-  - "aplicaciones ClickOnce, mensaje relativo a la confianza"
-  - "implementación ClickOnce, instalar sin preguntar"
-  - "implementación ClickOnce, mensaje relativo a la confianza"
-  - "implementar aplicaciones [ClickOnce], mensaje relativo a la confianza"
+title: "Cómo: configurar el comportamiento de solicitud de la confianza de ClickOnce | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, install without prompting
+- deploying applications [ClickOnce], trust prompt
+- ClickOnce applications, install without prompting
+- ClickOnce applications, trust prompt
+- ClickOnce deployment, trust prompt
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar si a los usuarios finales se les ofrece la opción de instalar aplicaciones ClickOnce, como aplicaciones Windows Forms, aplicaciones Windows Presentation Foundation, aplicaciones de consola, aplicaciones de explorador WPF y soluciones de Office.  Para configurar el mensaje relativo a la confianza, establezca las claves del Registro en el equipo de cada usuario final.  
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Cómo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
+Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce, como aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, aplicaciones de consola, explorador WPF las aplicaciones y soluciones de Office. Configurar el aviso de confianza mediante el establecimiento de las claves del registro en el equipo de cada usuario final.  
   
- En la tabla siguiente se muestran las opciones de configuración que se pueden aplicar a cada una de los cinco zonas \(Internet, UntrustedSites, MyComputer, LocalIntranet y TrustedSites\).  
+ En la tabla siguiente se muestra las opciones de configuración que se pueden aplicar a cada una de las cinco zonas (Internet, UntrustedSites, MyComputer, intranet local y TrustedSites).  
   
-|Opción|Valor de configuración del Registro|Descripción|  
-|------------|-----------------------------------------|-----------------|  
-|Habilitar el mensaje relativo a la confianza.|`Enabled`|El mensaje de ClickOnce relativo a la confianza se muestra para que los usuarios finales puedan otorgar confianza a las aplicaciones ClickOnce.|  
-|Restringir el mensaje relativo a la confianza.|`AuthenticodeRequired`|El mensaje de ClickOnce relativo a la confianza solo se muestra si las aplicaciones ClickOnce se firman con un certificado que identifica al publicador.|  
-|Deshabilitar el mensaje relativo a la confianza.|`Disabled`|El mensaje de ClickOnce relativo a la confianza no se muestra en ninguna aplicación ClickOnce que no esté firmada con un certificado de confianza explícito.|  
+|Opción|Valor de la configuración del registro|Descripción|  
+|------------|----------------------------|-----------------|  
+|Habilitar el aviso de confianza.|`Enabled`|El aviso de confianza de ClickOnce es la pantalla para que los usuarios finales pueden conceder confianza a las aplicaciones de ClickOnce.|  
+|Restringir el aviso de confianza.|`AuthenticodeRequired`|El aviso de confianza de ClickOnce solo se muestra si las aplicaciones ClickOnce se firman con un certificado que identifique al publicador.|  
+|Deshabilitar el aviso de confianza.|`Disabled`|No se muestra el aviso de confianza de ClickOnce para las aplicaciones ClickOnce que no están firmadas con un certificado de confianza explícita.|  
   
- En la tabla siguiente se muestra el comportamiento predeterminado de cada zona.  La columna Aplicaciones hace referencia a las aplicaciones Windows Forms, a las aplicaciones Windows Presentation Foundation, a las aplicaciones de explorador WPF y a las aplicaciones de consola.  
+ En la tabla siguiente se muestra el comportamiento predeterminado para cada zona. La columna aplicaciones hace referencia a las aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, aplicaciones de explorador WPF y las aplicaciones de consola.  
   
-|Zona|Aplicaciones|Soluciones de Office|  
-|----------|------------------|--------------------------|  
+|Zona|Aplicaciones|soluciones de Office|  
+|----------|------------------|----------------------|  
 |`MyComputer`|`Enabled`|`Enabled`|  
 |`LocalIntranet`|`Enabled`|`Enabled`|  
 |`TrustedSites`|`Enabled`|`Enabled`|  
 |`Internet`|`Enabled`|`AuthenticodeRequired`|  
 |`UntrustedSites`|`Disabled`|`Disabled`|  
   
- Para invalidar estos valores, habilite, restrinja o deshabilite el mensaje de ClickOnce relativo a la confianza.  
+ Puede habilitar o deshabilitar el aviso de confianza de ClickOnce o restringir para invalidar estos valores.  
   
-## Habilitar el mensaje de ClickOnce relativo a la confianza  
- Si desea que a los usuarios finales se les ofrezca la opción de instalar y ejecutar cualquier aplicación ClickOnce que provenga de una zona determinada, habilite el mensaje relativo a la confianza de dicha zona.  
+## <a name="enabling-the-clickonce-trust-prompt"></a>Habilitar el aviso de confianza de ClickOnce  
+ Habilitar el aviso de confianza para una zona cuando desee que los usuarios finales se mostrará la opción de instalar y ejecutar las aplicaciones ClickOnce que proceden de esa zona.  
   
-#### Para habilitar el mensaje de ClickOnce relativo a la confianza mediante el editor del Registro  
+#### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para habilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del Registro:  
+1.  Abra el editor del registro:  
   
-    1.  Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.  
+    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
   
-    2.  En el cuadro **Abrir**, escriba `regedit32` y, a continuación, haga clic en **Aceptar**.  
+    2.  En el **abiertos** , escriba `regedit32`y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del Registro:  
+2.  Busque la siguiente clave del registro:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créela.  
   
-3.  Agregue las subclaves siguientes como **Valor de cadena**, si no existen ya, junto con los valores asociados que se muestran en la tabla siguiente.  
+3.  Agregue las subclaves siguientes como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
-    |Subclave de valor alfanumérico|Valor|  
-    |------------------------------------|-----------|  
+    |Subclave del valor de cadena|Valor|  
+    |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
     |`MyComputer`|`Enabled`|  
     |`LocalIntranet`|`Enabled`|  
     |`TrustedSites`|`Enabled`|  
   
-     En las soluciones de Office, `Internet` tiene el valor predeterminado `AuthenticodeRequired` y `UntrustedSites` tiene el valor `Disabled`.  En todas las demás, `Internet` tiene el valor predeterminado `Enabled`.  
+     Para las soluciones de Office, `Internet` tiene el valor predeterminado `AuthenticodeRequired` y `UntrustedSites` tiene el valor `Disabled`. Para todos los demás, `Internet` tiene el valor predeterminado `Enabled`.  
   
-#### Para habilitar el mensaje de ClickOnce relativo a la confianza mediante programación  
+#### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Para habilitar el aviso de confianza de ClickOnce mediante programación  
   
-1.  Cree una aplicación de consola de Visual Basic o Visual C\# en Visual Studio.  
+1.  Cree una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
 2.  Abra el archivo Program.vb o Program.cs para modificarlo y agregue el código siguiente.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "Enabled")  
@@ -96,7 +97,7 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
     key.Close()  
     ```  
   
-    ```c#  
+    ```csharp  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "Enabled");  
@@ -109,40 +110,40 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
   
 3.  Compile y ejecute la aplicación.  
   
-## Restringir el mensaje de ClickOnce relativo a la confianza  
- Restrinja el mensaje relativo a la confianza para que sea necesario firmar las soluciones con certificados Authenticode que dispongan de una identidad conocida antes de que se pida a los usuarios una decisión relativa a la confianza.  
+## <a name="restricting-the-clickonce-trust-prompt"></a>Restringir el aviso de confianza de ClickOnce  
+ Restringir el aviso de confianza de modo que las soluciones se deben firmar con certificados Authenticode que dispongan de una identidad conocida antes de que se piden a los usuarios una decisión de confianza.  
   
-#### Para restringir el mensaje de ClickOnce relativo a la confianza mediante el editor del Registro  
+#### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para restringir el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del Registro:  
+1.  Abra el editor del registro:  
   
-    1.  Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.  
+    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
   
-    2.  En el cuadro **Abrir**, escriba `regedit` y, a continuación, haga clic en **Aceptar**.  
+    2.  En el **abiertos** , escriba `regedit`y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del Registro:  
+2.  Busque la siguiente clave del registro:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créela.  
   
-3.  Agregue las subclaves siguientes como **Valor de cadena**, si no existen ya, junto con los valores asociados que se muestran en la tabla siguiente.  
+3.  Agregue las subclaves siguientes como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
-    |Subclave de valor alfanumérico|Valor|  
-    |------------------------------------|-----------|  
+    |Subclave del valor de cadena|Valor|  
+    |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
     |`MyComputer`|`AuthenticodeRequired`|  
     |`LocalIntranet`|`AuthenticodeRequired`|  
     |`TrustedSites`|`AuthenticodeRequired`|  
   
-#### Para restringir el mensaje de ClickOnce relativo a la confianza mediante programación  
+#### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Para restringir el aviso de confianza de ClickOnce mediante programación  
   
-1.  Cree una aplicación de consola de Visual Basic o Visual C\# en Visual Studio.  
+1.  Cree una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
 2.  Abra el archivo Program.vb o Program.cs para modificarlo y agregue el código siguiente.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "AuthenticodeRequired")  
@@ -153,7 +154,7 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
     key.Close()  
     ```  
   
-    ```c#  
+    ```csharp  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "AuthenticodeRequired");  
@@ -166,40 +167,40 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
   
 3.  Compile y ejecute la aplicación.  
   
-## Deshabilitar el mensaje de ClickOnce relativo a la confianza  
- Puede deshabilitar el mensaje relativo a la confianza para que a los usuarios finales no se les ofrezca la opción de instalar soluciones en cuya directiva de seguridad aún no confían.  
+## <a name="disabling-the-clickonce-trust-prompt"></a>Deshabilitar el aviso de confianza de ClickOnce  
+ Puede deshabilitar el aviso de confianza para que los usuarios finales no tienen la opción para instalar soluciones que no son de confianza ya en su directiva de seguridad.  
   
-#### Para deshabilitar el mensaje de ClickOnce relativo a la confianza mediante el editor del Registro  
+#### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para deshabilitar el aviso de confianza de ClickOnce mediante el editor del registro  
   
-1.  Abra el editor del Registro:  
+1.  Abra el editor del registro:  
   
-    1.  Haga clic en **Inicio** y, a continuación, haga clic en **Ejecutar**.  
+    1.  Haga clic en **iniciar**y, a continuación, haga clic en **ejecutar**.  
   
-    2.  En el cuadro **Abrir**, escriba `regedit` y, a continuación, haga clic en **Aceptar**.  
+    2.  En el **abiertos** , escriba `regedit`y, a continuación, haga clic en **Aceptar**.  
   
-2.  Busque la siguiente clave del Registro:  
+2.  Busque la siguiente clave del registro:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clave no existe, créela.  
   
-3.  Agregue las subclaves siguientes como **Valor de cadena**, si no existen ya, junto con los valores asociados que se muestran en la tabla siguiente.  
+3.  Agregue las subclaves siguientes como **valor de cadena**, si no existe ya, con los valores asociados que se muestra en la tabla siguiente.  
   
-    |Subclave de valor alfanumérico|Valor|  
-    |------------------------------------|-----------|  
+    |Subclave del valor de cadena|Valor|  
+    |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
     |`MyComputer`|`Disabled`|  
     |`LocalIntranet`|`Disabled`|  
     |`TrustedSites`|`Disabled`|  
   
-#### Para deshabilitar el mensaje de ClickOnce relativo a la confianza mediante programación  
+#### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Para deshabilitar el aviso de confianza de ClickOnce mediante programación  
   
-1.  Cree una aplicación de consola de Visual Basic o Visual C\# en Visual Studio.  
+1.  Cree una aplicación de consola de Visual Basic o Visual C# en Visual Studio.  
   
 2.  Abra el archivo Program.vb o Program.cs para modificarlo y agregue el código siguiente.  
   
-    ```vb#  
+    ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel")  
     key.SetValue("MyComputer", "Disabled")  
@@ -210,7 +211,7 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
     key.Close()  
     ```  
   
-    ```c#  
+    ```csharp  
     Microsoft.Win32.RegistryKey key;  
     key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel");  
     key.SetValue("MyComputer", "Disabled");  
@@ -224,14 +225,14 @@ Puede configurar el mensaje de ClickOnce relativo a la confianza para controlar 
   
 3.  Compile y ejecute la aplicación.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Información general sobre la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
- [Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Cómo: Agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
+ [Cómo: habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Cómo: agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

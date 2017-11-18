@@ -1,47 +1,50 @@
 ---
-title: "Dise&#241;ador de actividades InitializeCorrelation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.ServiceModel.Activities.InitializeCorrelation.UI"
+title: "Diseñador de actividades InitializeCorrelation | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 387b5420614fed3f4d5f956f5a91fe2ece70d53a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Dise&#241;ador de actividades InitializeCorrelation
-El diseñador de actividades **InitializeCorrelation** se utiliza para crear y configurar una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> que se utiliza para establecer una correlación entre los mensajes antes de enviarlos o recibirlos.  
+# <a name="initializecorrelation-activity-designer"></a>Diseñador de actividades InitializeCorrelation
+El **InitializeCorrelation** Diseñador de actividades se usa para crear y configurar un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad que se utiliza para establecer una correlación entre los mensajes antes de enviarlos o recibirlos.  
   
-## Actividad InitializeCorrelation  
- Una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> se utiliza para inicializar las correlaciones sin enviar o recibir un mensaje.Normalmente una correlación se inicializa cuando se envía o recibe un mensaje.Si se debe establecer una correlación antes de enviar o recibir un mensaje, utilice <xref:System.ServiceModel.Activities.InitializeCorrelation> para inicializar la correlación.  
+## <a name="the-initializecorrelation-activity"></a>Actividad InitializeCorrelation  
+ Una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> se utiliza para inicializar las correlaciones sin enviar o recibir un mensaje. Normalmente una correlación se inicializa cuando se envía o recibe un mensaje. Si se debe establecer una correlación antes de enviar o recibir un mensaje, utilice <xref:System.ServiceModel.Activities.InitializeCorrelation> para inicializar la correlación.  
   
-### Utilizar el diseñador de actividades InitializeCorrelation  
- El diseñador de actividades **InitializeCorrelation** se puede encontrar en la categoría **Mensajería** del **Cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **Cuadro de herramientas** de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. \(De forma alternativa, seleccione **Barra de herramientas** en el menú **Ver** o CTRL\+ALT\+X\).  
+### <a name="using-the-initializecorrelation-activity-designer"></a>Utilizar el diseñador de actividades InitializeCorrelation  
+ El **InitializeCorrelation** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en la **cuadro de herramientas**  pestaña en el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)  
   
- El diseñador de actividades **InitializeCorrelation** se puede arrastrar desde el **Cuadro de herramientas** y colocar en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].De esta forma se crea una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> con una propiedad <xref:System.Activities.Activity.DisplayName%2A> predeterminada de InitializeCorrelation.<xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades **InitializeCorrelation** o en el cuadro **DisplayName** de la ventana **Propiedades**.  
+ El **InitializeCorrelation** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie. Esto crea una <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad no tiene un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de InitializeCorrelation.The <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **InitializeCorrelation** Diseñador de actividad o en la  **DisplayName** cuadro de la **propiedades** ventana.  
   
- Se puede especificar <xref:System.ServiceModel.Activities.CorrelationHandle> en el campo **Correlación** de la ventana **Propiedades** en la superficie del diseñador de actividades **InitializeCorrelation**.  
+ El <xref:System.ServiceModel.Activities.CorrelationHandle> puede ser especifica en la **correlación** campo **propiedades** ventana en el **InitializeCorrelation** superficie del Diseñador de actividad.  
   
- Al hacer clic en el botón con puntos suspensivos junto al campo **CorrelationData** en la ventana **Propiedades** o en el texto con la sugerencia "Ver..." en la superficie del diseñador de actividades **InitializeCorrelation** se muestra el cuadro de diálogo **Inicializar correlación** donde puede especificar el identificador de correlación y los pares clave\-valor que se usan para la inicialización.[!INCLUDE[crabout](../test/includes/crabout_md.md)] cómo usar este cuadro de diálogo, vea el tema [Editor de colección de tipos \(cuadro de diálogo\)](../workflow-designer/type-collection-editor-dialog-box.md).  
+ Haga clic en el botón de puntos suspensivos además el **CorrelationData** campo **propiedades** ventana o el texto de la sugerencia "Ver..." en **InitializeCorrelation** Diseñador de actividad superficie muestra el **inicializar correlación** cuadro de diálogo en el que puede especificar el identificador de correlación y los pares de clave y valor utilizados para inicializarlo. [!INCLUDE[crabout](../test/includes/crabout_md.md)]mediante este cuadro de diálogo, vea el [cuadro de diálogo de Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema.  
   
-### Propiedades InitializeCorrelation  
- En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.InitializeCorrelation> y se describe cómo se utilizan en el diseñador.Estas propiedades se pueden editar en ventana **Propiedades** o en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
+### <a name="the-initializecorrelation-properties"></a>Propiedades InitializeCorrelation  
+ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.InitializeCorrelation> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en **propiedades** ventana o en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie.  
   
 |Nombre de la propiedad|Obligatorio|Uso|  
-|----------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>.El valor predeterminado es InitializeCorrelation.<br /><br /> Aunque no es obligatorio utilizar un valor no predeterminado para la propiedad <xref:System.Activities.Activity.DisplayName%2A> descriptiva, se recomienza utilizar uno.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>. El valor predeterminado es InitializeCorrelation.<br /><br /> Aunque no es obligatorio utilizar un valor no predeterminado para la propiedad <xref:System.Activities.Activity.DisplayName%2A> descriptiva, se recomienza utilizar uno.|  
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> se utiliza para asociar las actividades de flujo de trabajo en la correlación.|  
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Un diccionario de datos de correlación que relaciona los mensajes con la instancia de flujo de trabajo.<br /><br /> Use el cuadro de diálogo **Inicializar correlación** para configurar <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>.[!INCLUDE[crabout](../test/includes/crabout_md.md)] el uso de este cuadro de diálogo, vea el tema [Editor de colección de tipos \(cuadro de diálogo\)](../workflow-designer/type-collection-editor-dialog-box.md).|  
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Un diccionario de datos de correlación que relaciona los mensajes con la instancia de flujo de trabajo.<br /><br /> Use la **inicializar correlación** cuadro de diálogo para configurar la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. [!INCLUDE[crabout](../test/includes/crabout_md.md)]el uso en este cuadro de diálogo, vea el [cuadro de diálogo de Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
- [Receive](../workflow-designer/receive-activity-designer.md)   
+ [Recepción](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
  [Enviar](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   

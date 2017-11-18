@@ -12,41 +12,27 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - constraints, architectural
 ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
-caps.latest.revision: 64
+caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: b17d12160920952170d042eb46191df66542c80a
-ms.openlocfilehash: e51f32303496d20980d7442458cd35350db01687
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia desde el código
-Para visualizar la arquitectura de alto nivel, la lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que su código sea coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para proyectos de Visual C# .NET y Visual Basic. NET. Para ver qué versiones de Visual Studio admiten esta característica, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+Para visualizar la arquitectura de alto nivel, lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que el código sigue siendo coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# .NET y Visual Basic. NET. Para ver qué versiones de Visual Studio admiten esta característica, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
- ![Crear un diagrama de dependencia](~/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
+ ![Crear un diagrama de dependencia](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
- Un diagrama de dependencia permite organizar los elementos de la solución de Visual Studio en grupos lógicos abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.  
+ Un diagrama de dependencia le permite organizar los elementos de la solución de Visual Studio en grupos lógicos y abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre las capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.  
   
- [Vídeo: Validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+ [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
   
-##  <a name="a-namecreatediagrama-create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Crear un diagrama de dependencia  
- Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene un proyecto de modelado. 
+##  <a name="CreateDiagram"></a>Crear un diagrama de dependencia  
+ Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene un proyecto de modelado. 
   
 > [!IMPORTANT]
 >  No agregue, arrastre o copie un diagrama de dependencia existente de un proyecto de modelado a otro proyecto de modelado o en otro lugar de la solución. Esto conserva las referencias del diagrama original, aunque se cambie el diagrama. Esto también impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
@@ -61,7 +47,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 3.  Especifique un nombre para el diagrama.  
   
-4.  En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente en la solución.  
+4.  En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.  
   
      O bien  
   
@@ -70,46 +56,46 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
     > [!NOTE]
     >  El diagrama de dependencia debe existir dentro de un proyecto de modelado. Sin embargo, puede vincularlos a elementos en cualquier parte de la solución.  
   
-5.  Asegúrese de guardar el proyecto de modelado y el diagrama de dependencia.  
+5.  Asegúrese de que desea guardar el proyecto de modelado y el diagrama de dependencia.  
 
-## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Arrastrar y colocar, o copiar y pegar desde un mapa de código
+## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Arrastrar y colocar, o copiar y pegar, desde un mapa de código
 
-1. Generar un mapa de código para la solución mediante el **arquitectura** menú. 
+1. Generar un mapa de código para la solución mediante la **arquitectura** menú. 
 
-2. Considere la posibilidad de aplicar un filtro de mapa de código para quitar carpetas de soluciones y "los activos prueba" Si desea exigir las dependencias del código de producto.
+2. Considere la posibilidad de aplicar un filtro de mapa de código para quitar las carpetas de soluciones y "Prueba activos" Si desea aplicar las dependencias del código de producto.
 
-3. En el mapa de código generado, quite el nodo "Externo", o expandir para mostrar los ensamblados externos, dependiendo de si desea exigir las dependencias de espacio de nombres y eliminar ensamblados no sean necesarios desde el mapa de código. 
+3. En el mapa de código generado, quite el nodo "Externo", o expandir para mostrar los ensamblados externos, dependiendo de si desea aplicar las dependencias de espacio de nombres y eliminar ensamblados no sean necesarios desde el mapa de código. 
 
-4. Crear un nuevo diagrama de dependencia para la solución mediante el **arquitectura** menú
+4. Cree un nuevo diagrama de dependencia para la solución mediante la **arquitectura** menú
 
-5. Seleccionar todos los nodos en el mapa de código (usar _Ctrl_ + _A_, o utilizar la selección de goma presionando el _MAYÚS_ antes de que haga clic en, arrastre y suelte la clave.
+5. Seleccionar todos los nodos del mapa de código (usar _Ctrl_ + _A_, o use la herramienta de selección de goma presionando el _MAYÚS_ antes de que haga clic en, arrastre y suelte la clave.
 
-6. Arrastrar y colocar, o una copiar y pegar, los elementos seleccionados en el nuevo diagrama de validación de dependencias. 
+6. Arrastrar y colocar, o un copiar y pegar, los elementos seleccionados en el nuevo diagrama de validación de la dependencia. 
 
-7. Esto muestra la arquitectura de aplicación actual. Decidir lo que desea que la arquitectura sea y modificar el diagrama de dependencia en consecuencia.
+7. Esto muestra la arquitectura de aplicación actual. Decidir la acción que realizará la arquitectura sea y modificar el diagrama de dependencia en consecuencia.
 
-![Diagrama de dependencias generado a partir de un mapa de código](~/modeling/media/dependency-validation-01.png)
+![Diagrama de dependencias generado a partir de un mapa de código](media/dependency-validation-01.png)
   
-##  <a name="a-namecreatelayersa-create-layers-from-artifacts"></a><a name="CreateLayers"></a>Creación de capas desde artefactos  
+##  <a name="CreateLayers"></a>Crear capas a partir de artefactos  
  Puede crear capas a partir de elementos de una solución de Visual Studio, como proyectos, archivos de código, espacios de nombres, clases y métodos. Esto crea automáticamente vínculos entre las capas y los elementos, que se incluyen en el proceso de validación de capas.  
   
  También puede vincular capas a los elementos que no admiten validación, como documentos de Word o presentaciones de PowerPoint, para poder asociar una capa con especificaciones o planes. También puede vincular capas a archivos en proyectos que se comparten entre varias aplicaciones, pero el proceso de validación no incluirá esas capas, que aparecen con nombres genéricos como “Layer1" y “Layer2".  
   
- Para ver si un elemento vinculado admite la validación, abra **Explorador de capas** y examine el **admite validación** propiedad del elemento. Consulte [administrar vínculos a artefactos](#Managing).  
+ Para ver si un elemento vinculado admite la validación, abra **Explorador de capas** y examine el **Supports Validation** propiedad del elemento. Vea [administrar vínculos a artefactos](#Managing).  
   
 |**En**|**Siga estos pasos**|  
 |------------|----------------------------|  
-|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento al diagrama de dependencia de estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:** arrastrar archivos binarios al diagrama de dependencia no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|  
+|Crear una capa para un único artefacto|<ol><li>Arrastre el elemento al diagrama de dependencia de estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Vea [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar las aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:** arrastrar archivos binarios al diagrama de dependencia no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios para el proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|  
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos al diagrama de dependencia al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|  
-|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:** si utiliza la **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|  
+|Crear una capa para cada artefacto seleccionado|Presione y mantenga presionado el **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:** si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|  
 |Agregar un artefacto a una capa|Arrastre el artefacto hasta la capa.|  
-|Crear una nueva capa que no tenga vínculos|En el **herramientas**, expanda la **diagrama de dependencia de** sección y, a continuación, arrastre un **capa** al diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.<br /><br /> o bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|  
+|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda la **diagrama de dependencia** sección y, a continuación, arrastre un **capa** hasta el diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.<br /><br /> o bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|  
 |Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> o bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|  
-|Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual de la selección y, a continuación, elija **grupo**.|  
-|Cambiar el color de una capa|Establezca su **Color** propiedad en el color que desee.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
+|Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual para la selección y, a continuación, elija **grupo**.|  
+|Cambiar el color de una capa|Establecer su **Color** propiedad para el color que desee.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
   
  El número de una capa indica el número de artefactos vinculados a ella. Sin embargo, cuando lea este número, recuerde lo siguiente:  
   
@@ -119,9 +105,9 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
   
 -   Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.  
   
-##  <a name="a-namemanaginga-manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Administrar vínculos entre capas y artefactos  
+##  <a name="Managing"></a>Administrar vínculos entre capas y artefactos  
   
-1.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **ver vínculos**.  
+1.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **ver vínculos**.  
   
      **Explorador de capas** muestra los vínculos de artefacto de la capa seleccionada.  
   
@@ -130,36 +116,36 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 |**En**|**En el Explorador de capas**|  
 |------------|---------------------------|  
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **eliminar**.|  
-|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|  
-|Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|  
+|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|  
+|Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|  
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|  
 |Compruebe que el artefacto vinculado admite la validación con el diagrama de dependencia.|Mire el **admite validación** columna para el vínculo del artefacto.|  
   
-##  <a name="a-namediscoveringa-reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Ingeniería inversa de dependencias existentes  
+##  <a name="Discovering"></a>Técnicas de ingeniería inversa de las dependencias existentes  
  Una dependencia existe cuando un artefacto que está asociado a una capa tiene una referencia a un artefacto que está asociado a otra capa. Por ejemplo, una clase de una capa declara una variable que tiene una clase en otra capa. Puede realizar ingeniería inversa de las dependencias existentes en los artefactos vinculados a las capas del diagrama.  
   
 > [!NOTE]
->  No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que se puede aplicar ingeniería inversa, abra el menú contextual para una o varias capas y, a continuación, elija **ver vínculos**. En **Explorador de capas**, examine la **admite validación** columna. Dependencias no se pueden realizar ingeniería inversa de artefactos en el que se muestra esta columna **False**.  
+>  No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias en las que puede realizar ingeniería inversa, abra el menú contextual para una o varias capas y, a continuación, elija **ver vínculos**. En **Explorador de capas**, examine la **admite validación** columna. Dependencias no se pueden realizar ingeniería inversa de artefactos para el que se muestra esta columna **False**.  
   
 -   Seleccione una o varias capas, abra el menú contextual de una capa seleccionada y, a continuación, elija **generar dependencias**.  
   
  Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.  
   
-##  <a name="a-nameeditdependenciesa-edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Editar capas y dependencias para mostrar el diseño previsto  
- Para describir los cambios que piensa realizar en el sistema o la arquitectura deseada, edite el diagrama de dependencia:  
+##  <a name="EditDependencies"></a>Editar capas y dependencias para mostrar el diseño previsto  
+ Para describir los cambios que va a realizar en el sistema o la arquitectura deseada, edite el diagrama de dependencia:  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
-|Cambiar o restringir la dirección de una dependencia|Establezca su **dirección** propiedad.|  
-|Crear nuevas dependencias|Utilice la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.|  
-|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Utilice un punto y coma (**;**) para separar los espacios de nombres.|  
+|Cambiar o restringir la dirección de una dependencia|Establecer su **dirección** propiedad.|  
+|Crear nuevas dependencias|Use la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.|  
+|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
   
-##  <a name="a-nameeditlayouta-change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Cambiar cómo aparecen los elementos en el diagrama  
+##  <a name="EditLayout"></a>Cambiar cómo aparecen los elementos en el diagrama  
  Puede cambiar el tamaño, la forma, el color y la posición de las capas o el color de las dependencias mediante la edición de sus propiedades.  
   
-##  <a name="a-namecodemapsa-discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Detectar patrones y dependencias en un mapa de código  
+##  <a name="Codemaps"></a>Detectar patrones y las dependencias de un mapa de código  
  Durante la creación de diagramas de dependencia, también puede crear **mapas de código**. Estos diagramas pueden ayudarle a detectar patrones y dependencias mientras explora el código. Use el Explorador de soluciones, la Vista de clases o el Examinador de objetos para explorar los ensamblados, los espacios de nombres y las clases, que a menudo corresponden a las capas existentes. Para obtener más información sobre mapas de código, vea:  
   
 -   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)  
@@ -169,9 +155,8 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
 -   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Vídeo: Validar las dependencias de la arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
+ [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
  [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)   
  [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)   
  [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)   
  [Visualizar el código](../modeling/visualize-code.md)
-

@@ -1,48 +1,51 @@
 ---
-title: "Crear un proyecto de flujo de trabajo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "crear un proyecto de flujo de trabajo"
-  - "Diseñador de flujo de trabajo de Visual Studio 2010, crear un proyecto de flujo de trabajo"
-  - "Diseñador de flujo de trabajo, crear un proyecto de flujo de trabajo"
+title: Crear un proyecto de flujo de trabajo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- Workflow Designer, creating a workflow project
+- Visual Studio 2010 Workflow Designer, creating a workflow project
+- creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "15"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Crear un proyecto de flujo de trabajo
-Los flujos de trabajo, los servicios de flujo de trabajo de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], las actividades personalizadas y los diseñadores de actividad personalizados se pueden crear mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].En esta sección se describe cómo crear bibliotecas y aplicaciones con las plantillas de proyecto disponibles en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="creating-a-workflow-project"></a>Crear un proyecto de flujo de trabajo
+Los flujos de trabajo, los servicios de flujo de trabajo de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], las actividades personalizadas y los diseñadores de actividad personalizados se pueden crear mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En esta sección se describe cómo crear bibliotecas y aplicaciones con las plantillas de proyecto disponibles en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- En los primeros cuatro temas siguientes se describe el uso de la plantillas de flujo de trabajo que se encuentran en la ventana **Nuevo proyecto**.Se puede obtener acceso a estas plantillas abriendo [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] y seleccionando **Archivo** \-\> **Nuevo** \-\> **Proyecto**. Después, seleccione la categoría **Flujo de trabajo** en la sección **Plantillas instaladas** de la izquierda, debajo de los nodos **Visual Basic** o **Visual C\#**.  
+ Los primeros cuatro temas siguientes describen cómo utilizar las plantillas de flujo de trabajo se encuentra en la **nuevo proyecto** ventana. Pueden tener acceso a estas plantillas abriendo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] y seleccionando **archivo** -> **New** -> **proyecto...** , la **flujo de trabajo** categoría desde la **plantillas instaladas** sección de la izquierda, bajo la **Visual Basic** o **Visual C#** nodo.  
   
- En el último tema se describe cómo agregar actividades de flujo de trabajo, diseñadores y servicios u otros elementos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a un proyecto \(u otro\) del flujo de trabajo existente.  
+ En el último tema se describe cómo agregar actividades de flujo de trabajo, diseñadores y servicios u otros elementos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a un proyecto (u otro) del flujo de trabajo existente.  
   
-## En esta sección  
- [Crear una aplicación de consola de flujos de trabajo](../workflow-designer/how-to-create-a-workflow-console-application.md)  
+## <a name="in-this-section"></a>En esta sección  
+ [Cómo: Crear una aplicación de consola de flujos de trabajo](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Describe cómo crear una aplicación de consola de flujos de trabajo.  
   
- [Crear una aplicación de servicio de flujo de trabajo WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
+ [Cómo: Crear una aplicación de servicio de flujo de trabajo WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
  Describe los pasos necesarios para crear una aplicación de servicio de flujo de trabajo de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)].  
   
- [Crear una biblioteca de actividades](../workflow-designer/how-to-create-an-activity-library.md)  
+ [Cómo: Crear una biblioteca de actividades](../workflow-designer/how-to-create-an-activity-library.md)  
  Describe los pasos que se van a usar para crear una biblioteca de actividades en el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
- [Crear una biblioteca de diseñadores de actividades](../Topic/How%20to:%20Create%20an%20Activity%20Designer%20Library.md)  
+ [Cómo: Crear una biblioteca de diseñadores de actividad](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Describe cómo crear diseñadores que se adapten a distintos públicos.  
   
- [Cómo agregar un nuevo elemento a un proyecto de flujo de trabajo](../Topic/How%20to:%20Add%20a%20New%20Item%20to%20a%20Workflow%20Project.md)  
+ [Cómo: Agregar un nuevo elemento a un proyecto de flujo de trabajo](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  Describe cómo agregar actividades o diseñadores de flujo de trabajo y otros elementos adicionales de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como actividades de código, a un proyecto existente.  
   
-## Secciones relacionadas  
- [Diseñar flujos de trabajo](../Topic/Designing%20Workflows.md)  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Diseño de flujos de trabajo](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
   
-## Vea también  
- [Utilizar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)
+## <a name="see-also"></a>Vea también  
+ [Usar el Diseñador de flujo de trabajo](../workflow-designer/using-the-workflow-designer.md)

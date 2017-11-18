@@ -1,32 +1,34 @@
 ---
-title: "Accessing Visual Studio or other Hosts from a Text Template | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Obtiene acceso a Visual Studio u otros Hosts desde una plantilla de texto | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
-caps.latest.revision: 5
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 6b75a3b3e57ee72afc11013a1cf7a041b222b204
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Accessing Visual Studio or other Hosts from a Text Template
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En una plantilla de texto, puede utilizar los métodos y propiedades expuestas por el host que ejecuta la plantilla, como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Tener acceso a Visual Studio u otros hosts desde una plantilla de texto
+En una plantilla de texto, puede usar métodos y propiedades expuestas por el host que ejecuta la plantilla, como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Esto se aplica a las plantillas de texto normales, no a las plantillas de texto preprocesadas.  
+ Esto se aplica a las plantillas de texto normal, plantillas de texto preprocesadas no.  
   
-## Obtener acceso al host  
- Establezca `hostspecific="true"` en la directiva `template`.  Esto le permite utilizar `this.Host`, que tiene el tipo de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  Este tipo tiene miembros que se pueden utilizar, por ejemplo, para resolver nombres de archivo y registro de errores.  
+## <a name="obtaining-access-to-the-host"></a>Obtener acceso al host  
+ Establecer `hostspecific="true"` en el `template` directiva. Esto le permite usar `this.Host`, que tiene el tipo <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Este tipo tiene miembros que pueden usar, por ejemplo, para resolver nombres de archivo y para registrar los errores.  
   
-### Resolver nombres de archivo  
- Para encontrar la ruta de acceso completa de un archivo relativo a la plantilla de texto, utilice this.Host.ResolvePath \(\).  
+### <a name="resolving-file-names"></a>Resolver nombres de archivo  
+ Para buscar la ruta de acceso completa de un archivo con respecto a la plantilla de texto, utilícelo. Host.ResolvePath().  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.IO" #>  
@@ -39,10 +41,10 @@ Content of myFile is:
   
 ```  
   
-### Mostrar mensajes de error  
- Este ejemplo registra los mensajes cuando se transforma la plantilla.  Si el host es [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se agregan a la ventana de error.  
+### <a name="displaying-error-messages"></a>Mostrar mensajes de Error  
+ Este ejemplo registra los mensajes cuando se transforma la plantilla. Si el host es [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se agregan a la ventana de error.  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.CodeDom.Compiler" #>  
@@ -57,14 +59,14 @@ Content of myFile is:
   
 ```  
   
-## Usar la API de Visual Studio  
- Si está ejecutando una plantilla de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede utilizar `this.Host` para obtener acceso a los servicios proporcionados por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y a cualquier paquete o extensiones que se cargan.  
+## <a name="using-the-visual-studio-api"></a>Con la API de Visual Studio  
+ Si está ejecutando una plantilla de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede usar `this.Host` acceder a los servicios proporcionados por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y los paquetes o extensiones que se cargan.  
   
- Establezca hostspecific\="true" y realice la conversión de `this.Host` a <xref:System.IServiceProvider>.  
+ Establecer hostspecific = "true" y convertir `this.Host` a <xref:System.IServiceProvider>.  
   
- En este ejemplo se obtiene la API de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:EnvDTE.DTE>, como un servicio:  
+ Este ejemplo obtiene la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API, <xref:EnvDTE.DTE>, como un servicio:  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ assembly name="EnvDTE" #>  
@@ -77,5 +79,5 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
   
 ```  
   
-## Uso de hostSpecific con herencia de plantilla  
- Especificar `hostspecific="trueFromBase"` si también utiliza la `inherits` atributo, y si se hereda de una plantilla que especifica `hostspecific="true"`.  Esto evita una advertencia del compilador para el efecto que la propiedad `Host` se ha declarado dos veces.
+## <a name="using-hostspecific-with-template-inheritance"></a>Usar hostSpecific con herencia de plantilla  
+ Especifique `hostspecific="trueFromBase"` si también utiliza el `inherits` atributo, y si se hereda de una plantilla que especifica `hostspecific="true"`. Esto evita una advertencia del compilador en el efecto que la propiedad `Host` se ha declarado dos veces.

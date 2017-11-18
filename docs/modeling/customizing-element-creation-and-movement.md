@@ -1,25 +1,25 @@
 ---
-title: "Personalizar la creaci&#243;n y el movimiento de los elementos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.elementmergedirective"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, las directivas de mezcla de elemento"
+title: "Personalizar la creación del elemento y movimiento | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords: Domain-Specific Language, element merge directives
 ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
-caps.latest.revision: 36
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 36
+caps.latest.revision: "36"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Personalizar la creaci&#243;n y el movimiento de los elementos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 Puede permitir que un elemento que se pueden arrastrar a otra, en el cuadro de herramientas o en una operación de pegado o la operación de movimiento. Puede tener los elementos movidos vinculados a los elementos de destino, mediante las relaciones que especifique.  
   
  Una directiva de mezcla element (EMD) especifica lo que ocurre cuando un elemento de modelo es *combinados* en otro elemento de modelo. Esto sucede cuando:  
@@ -38,7 +38,7 @@ Puede permitir que un elemento que se pueden arrastrar a otra, en el cuadro de h
   
  La responsabilidad de un EMD consiste en decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones se deberían crear instancias para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y crear objetos adicionales.  
   
- ![DSL &#45; EMD &#95; Combinar](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
+ ![DSL &#45; EMD &#95; Mezcla](../modeling/media/dsl-emd_merge.png "EMD_Merge DSL")  
 El rol de una directiva de mezcla de elemento  
   
  Un EMD se genera automáticamente cuando se define una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo mediante la adición de código personalizado.  
@@ -48,15 +48,15 @@ El rol de una directiva de mezcla de elemento
 ## <a name="defining-an-element-merge-directive"></a>Definir una directiva de mezcla de elemento  
  Puede agregar directivas de mezcla de elemento para las clases de dominio, relaciones de dominio, formas, conectores y diagramas. Puede agregar o buscar en el Explorador de DSL en la clase de dominio receptora. La clase receptora es la clase de dominio del elemento que ya está en el modelo y en la que se van a combinar el elemento nuevo o copiar.  
   
- ![DSL &#45; EMD &#95; detalles](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL &#45; EMD &#95; detalles](../modeling/media/dsl-emd_details.png "EMD_Details DSL")  
   
- La **clase indización** es la clase de dominio de los elementos que se pueden mezclar con los miembros de la clase receptora. Instancias de subclases de la clase de Index Server también se combinará por este EMD, a menos que establezca **se aplica a las subclases** en False.  
+ El **indización clase** es la clase de dominio de los elementos que se pueden mezclar con los miembros de la clase receptora. Instancias de subclases de la clase de Index Server también se combinará por este EMD, a menos que establezca **se aplica a las subclases** en False.  
   
  Hay dos tipos de directiva de mezcla:  
   
--   Un **proceso de mezcla** directiva especifica las relaciones por el que debe vincularse al nuevo elemento en el árbol.  
+-   A **proceso de mezcla** directiva especifica las relaciones por el que debe vincularse al nuevo elemento en el árbol.  
   
--   Un **al día mezcla** Directiva redirige el nuevo elemento a otro elemento de recepción, por lo general, un elemento primario.  
+-   A **al día mezcla** directiva redirige el nuevo elemento a otro elemento de recepción, por lo general, un elemento primario.  
   
  Puede agregar código personalizado para combinar directivas:  
   
@@ -71,7 +71,7 @@ El rol de una directiva de mezcla de elemento
 > [!NOTE]
 >  Si escribe un código de combinación personalizada, afecta solo combinaciones que se realizan usando este EMD. Si hay otros EMDs que la combinación del mismo tipo de objeto, o si hay otro código personalizado que crea estos objetos sin utilizar el EMD, a continuación, no se verá afectado por el código personalizado de mezcla.  
 >   
->  Si desea asegurarse de que un nuevo elemento o una nueva relación siempre es procesado por el código personalizado, considere la posibilidad de definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio del elemento. Para obtener más información, vea [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+>  Si desea asegurarse de que un nuevo elemento o una nueva relación siempre es procesado por el código personalizado, considere la posibilidad de definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio del elemento. Para obtener más información, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Ejemplo: Definir un EMD sin código personalizado  
  En el ejemplo siguiente, se permite a los usuarios crear un elemento y un conector al mismo tiempo, arrastre desde el cuadro de herramientas en una forma existente. El ejemplo agrega un EMD a la definición DSL. Antes de esta modificación, los usuarios pueden arrastrar herramientas en el diagrama, pero no en las formas existentes.  
@@ -80,7 +80,7 @@ El rol de una directiva de mezcla de elemento
   
 #### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Para permitir a los usuarios crear un elemento y un conector al mismo tiempo  
   
-1.  Crear un nuevo DSL mediante la **idioma mínimo** plantilla de solución.  
+1.  Crear un nuevo DSL mediante la **lenguaje mínimo** plantilla de solución.  
   
      Cuando se ejecuta este DSL, permite crear formas y conectores entre las formas. No se puede arrastrar un nuevo **ExampleElement** forma del cuadro de herramientas en una forma existente.  
   
@@ -88,7 +88,7 @@ El rol de una directiva de mezcla de elemento
   
     1.  En **DSL explorador**, expanda **clases de dominio**. Haga clic en `ExampleElement` y, a continuación, haga clic en **Agregar nuevo elemento mezcla directiva**.  
   
-    2.  Asegúrese de que la **Detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **Ver**, **otras ventanas**, **Detalles de DSL**.)  
+    2.  Asegúrese de que el **detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **vista**, **otras ventanas**, **detalles de DSL**.)  
   
 3.  Establecer el **indización clase** en la ventana Detalles de DSL, para definir qué clase de elementos se puede mezclar en `ExampleElement` objetos.  
   
@@ -108,7 +108,7 @@ El rol de una directiva de mezcla de elemento
   
      Puede usar la herramienta de exploración de la ruta de acceso para crear cada ruta de acceso:  
   
-    1.  En **mezcla de proceso mediante la creación de vínculos en las rutas de acceso**, haga clic en **\< Agregar ruta de acceso>**.  
+    1.  En **mezcla de proceso mediante la creación de vínculos en las rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >**.  
   
     2.  Haga clic en la flecha de lista desplegable a la derecha del elemento de lista. Aparece una vista de árbol.  
   
@@ -140,20 +140,20 @@ El rol de una directiva de mezcla de elemento
   
 -   El EMD afecta a ambas creación en el cuadro de herramientas y también las operaciones de pegar.  
   
-     Si escribe código personalizado que crea nuevos elementos, puede invocar explícitamente el EMD mediante el `ElementOperations.Merge` método. Esto garantiza que el código vincula nuevos elementos en el modelo de la misma manera que otras operaciones. Para obtener más información, vea [Personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).  
+     Si escribe código personalizado que crea nuevos elementos, puede invocar explícitamente el EMD mediante el `ElementOperations.Merge` método. Esto garantiza que el código vincula nuevos elementos en el modelo de la misma manera que otras operaciones. Para obtener más información, consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).  
   
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>Ejemplo: Agregar código personalizado Aceptar a un EMD  
  Al agregar código personalizado a un EMD, puede definir el comportamiento de la combinación más complejo. Este sencillo ejemplo impide que el usuario agregar más de un número fijo de elementos al diagrama. En el ejemplo se modifica el valor predeterminado EMD que acompaña a una relación de incrustación.  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Para escribir código personalizado acepta y restringir lo que puede agregar el usuario  
   
-1.  Crear un DSL mediante la **idioma mínimo** plantilla de solución. Abra el diagrama de definición DSL.  
+1.  Crear un DSL mediante la **lenguaje mínimo** plantilla de solución. Abra el diagrama de definición DSL.  
   
 2.  En el Explorador de DSL, expanda **clases de dominio**, `ExampleModel`, **elemento Combinar directivas**. Seleccione la directiva de combinación del elemento que se denomina `ExampleElement`.  
   
      Este EMD controla cómo el usuario puede crear nuevos `ExampleElement` objetos en el modelo, por ejemplo, arrastre desde el cuadro de herramientas.  
   
-3.  En la **Detalles de DSL** ventana, seleccione **Aceptar personalizado usa**.  
+3.  En el **detalles de DSL** ventana, seleccione **Aceptar personalizado usa**.  
   
 4.  Recompilar la solución. Este proceso tardará más de lo habitual porque el código generado se actualizará desde el modelo.  
   
@@ -163,7 +163,7 @@ El rol de una directiva de mezcla de elemento
   
 5.  Crear un nuevo archivo de código en el **Dsl** proyecto. Reemplazar su contenido con el código siguiente y cambiar el espacio de nombres al espacio de nombres del proyecto.  
   
-    ```c#  
+    ```csharp  
     using Microsoft.VisualStudio.Modeling;  
   
     namespace Company.ElementMergeSample // EDIT.  
@@ -189,7 +189,7 @@ El rol de una directiva de mezcla de elemento
   
     ```  
   
-     Este sencillo ejemplo restringe el número de elementos que se pueden mezclar con el modelo primario. Condiciones de más interesante, el método puede inspeccionar cualquiera de las propiedades y los vínculos del objeto receptor. También pueden inspeccionar las propiedades de los elementos de combinación, que se realizan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obtener más información sobre `ElementGroupPrototypes`, consulte [Personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md). Para obtener más información sobre cómo escribir código que lee un modelo, vea [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+     Este sencillo ejemplo restringe el número de elementos que se pueden mezclar con el modelo primario. Condiciones de más interesante, el método puede inspeccionar cualquiera de las propiedades y los vínculos del objeto receptor. También pueden inspeccionar las propiedades de los elementos de combinación, que se realizan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obtener más información acerca de `ElementGroupPrototypes`, consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md). Para obtener más información sobre cómo escribir código que lee un modelo, vea [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 6.  Probar DSL:  
   
@@ -212,7 +212,7 @@ El rol de una directiva de mezcla de elemento
   
 2.  Invalidar el `MergeRelate` (método) y, opcionalmente, el `MergeDisconnect` método. Para ello, debe establecer el **genera derivados dobles** propiedad de la clase de dominio. El código puede llamar el código generado de mezcla en la clase base. Utilice esta opción si desea realizar operaciones adicionales después de haber realizado la combinación.  
   
- Estos enfoques sólo afectan a combinaciones que se realizan usando este EMD. Si desea que afecte a todas las formas en el que se puede crear el elemento combinado, una alternativa es definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinada. Para obtener más información, vea [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+ Estos enfoques sólo afectan a combinaciones que se realizan usando este EMD. Si desea que afecte a todas las formas en el que se puede crear el elemento combinado, una alternativa consiste en definir una `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinada. Para obtener más información, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 #### <a name="to-override-mergerelate"></a>Para invalidar MergeRelate  
   
@@ -222,7 +222,7 @@ El rol de una directiva de mezcla de elemento
   
      Por ejemplo, en un DSL generado a partir de la solución de lenguaje mínima, seleccione `ExampleModel`.  
   
-3.  En la **propiedades** ventana, establezca **genera derivados dobles** a **true**.  
+3.  En el **propiedades** ventana, establezca **genera derivados dobles** a **true**.  
   
 4.  Recompilar la solución.  
   
@@ -230,7 +230,7 @@ El rol de una directiva de mezcla de elemento
   
 6.  En un nuevo archivo de código, escribir una clase parcial para la clase de receptor y reemplazar el `MergeRelate` método. No olvide llamar al método base. Por ejemplo:  
   
-    ```c#  
+    ```csharp  
     partial class ExampleModel  
     {  
       /// <summary>  
@@ -261,24 +261,24 @@ El rol de una directiva de mezcla de elemento
   
      Asimismo, inspeccione métodos denominados `MergeDisconnect`. Estos métodos desvinculación un elemento del modelo una vez que va a eliminar.  
   
-2.  En **DSL explorador**, seleccione o cree la directiva de mezcla de elemento que desea personalizar. En la **Detalles de DSL** ventana, establezca **usa mezcla personalizada**.  
+2.  En **DSL explorador**, seleccione o cree la directiva de mezcla de elemento que desea personalizar. En el **detalles de DSL** ventana, establezca **usa mezcla personalizada**.  
   
-     Cuando se establece esta opción, el **proceso de mezcla** y **al día mezcla** Opciones se omiten. El código se usa en su lugar.  
+     Cuando se establece esta opción, el **proceso de mezcla** y **al día mezcla** opciones se omiten. El código se usa en su lugar.  
   
 3.  Recompilar la solución. Tardará más de lo habitual porque los archivos de código generado se actualizará desde el modelo.  
   
-     Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones que aparecen en el código generado. Estas instrucciones le preguntará si quiere proporcionar dos métodos, `MergeRelate`*YourDomainClass* y `MergeDisconnect`*YourDomainClass*  
+     Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones que aparecen en el código generado. Estas instrucciones le preguntará si quiere proporcionar dos métodos, `MergeRelate` *YourDomainClass* y `MergeDisconnect` *YourDomainClass*  
   
 4.  Escribir los métodos en una definición de clase parcial en un archivo de código independiente. Los ejemplos que anteriormente ha inspeccionado deberían proponer lo que necesita.  
   
- Código de combinación personalizada no tendrá ningún efecto código que crea objetos y relaciones directamente y no se verán afectadas otras EMDs. Para asegurarse de que los cambios adicionales se implementan sin tener en cuenta cómo se crea el elemento, considere la posibilidad de escribir un `AddRule` y un `DeleteRule` en su lugar. Para obtener más información, vea [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+ Código de combinación personalizada no tendrá ningún efecto código que crea objetos y relaciones directamente y no se verán afectadas otras EMDs. Para asegurarse de que los cambios adicionales se implementan sin tener en cuenta cómo se crea el elemento, considere la posibilidad de escribir un `AddRule` y `DeleteRule` en su lugar. Para obtener más información, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="redirecting-a-merge-operation"></a>Redirigir una operación de combinación  
  Una directiva de combinación directa redirige el destino de una operación de combinación. Por lo general, el nuevo destino es el elemento primario de incrustación del destino inicial.  
   
  Por ejemplo, en DSL que se creó con la plantilla de diagrama de componentes, los puertos se incrustan en componentes. Se muestran los puertos como pequeñas formas en el borde de una forma de componente. El usuario crea puertos si arrastra una forma de componente en la herramienta de puerto. A veces, pero el usuario arrastra erróneamente la herramienta de puerto a un puerto existente, en lugar del componente, y se produce un error en la operación. Se trata de un error habitual cuando hay varios puertos existentes. Para ayudar al usuario para evitar esta molesto, puede permitir que los puertos que se pueden arrastrar a un puerto existente, pero tienen la acción que se redirige al componente primario. La operación funciona como si el elemento de destino fuera del componente.  
   
- Puede crear una directiva de mezcla hacia delante en la solución de modelo de componentes. Si se compila y ejecuta la solución original, debería ver que los usuarios pueden arrastrar cualquier número de **el puerto de entrada** o **puerto de salida** elementos desde la **cuadro de herramientas** para un **componente** elemento. Sin embargo, no se arrastran un puerto a un puerto existente. Las alertas de puntero disponible que este movimiento no está habilitados. Sin embargo, puede crear una directiva de mezcla hacia delante para que un puerto que sea involuntariamente colocadas en una existente **proporcionados por el puerto** se reenvía a la **componente** elemento.  
+ Puede crear una directiva de mezcla hacia delante en la solución de modelo de componentes. Si se compila y ejecuta la solución original, debería ver que los usuarios pueden arrastrar cualquier número de **puerto de entrada** o **puerto de salida** elementos de la **cuadro de herramientas** para un **Componente** elemento. Sin embargo, no se arrastran un puerto a un puerto existente. Las alertas de puntero disponible que este movimiento no está habilitados. Sin embargo, puede crear una directiva de mezcla hacia delante para que un puerto que sea involuntariamente colocadas en una existente **puerto de entrada** se reenvía a la **componente** elemento.  
   
 #### <a name="to-create-a-forward-merge-directive"></a>Para crear una directiva de mezcla hacia delante  
   
@@ -290,25 +290,25 @@ El rol de una directiva de mezcla de elemento
   
 4.  El **ComponentPort** clase dominio abstracta es la clase base de ambos **InPort** y **OutPort**. Haga clic en **ComponentPort** y, a continuación, haga clic en **Agregar nuevo elemento mezcla directiva**.  
   
-     Un nuevo **Directiva de mezcla de Element** nodo aparece en el **elemento Combinar directivas** nodo.  
+     Un nuevo **directiva de mezcla de Element** nodo aparece en el **elemento Combinar directivas** nodo.  
   
-5.  Seleccione el **Directiva de mezcla de Element** nodo y abra el **Detalles de DSL** ventana.  
+5.  Seleccione el **directiva de mezcla de Element** nodo y abra el **detalles de DSL** ventana.  
   
 6.  En la lista de clases de indización, seleccione **ComponentPort**.  
   
-7.  Seleccione **Reenviar combinar en una clase de dominio diferente**.  
+7.  Seleccione **reenviar combinar en una clase de dominio diferente**.  
   
-8.  En la lista de selección de la ruta de acceso, expanda **ComponentPort**, expanda **ComponentHasPorts**, y, a continuación, seleccione **componente**.  
+8.  En la lista de selección de la ruta de acceso, expanda **ComponentPort**, expanda **ComponentHasPorts**y, a continuación, seleccione **componente**.  
   
      La nueva ruta de acceso debe ser similar a este:  
   
      **ComponentHasPorts.Component/!Component**  
   
-9. Guarde la solución y, a continuación, transformar las plantillas, haga clic en el botón situado en el **el Explorador de soluciones** barra de herramientas.  
+9. Guarde la solución y, a continuación, transformar las plantillas, haga clic en el botón situado en la **el Explorador de soluciones** barra de herramientas.  
   
 10. Compile y ejecute la solución. Una nueva instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aparece.  
   
-11. En **el Explorador de soluciones**, abra Sample.mydsl. En el diagrama y la **cuadro de herramientas de ComponentLanguage** aparecen.  
+11. En **el Explorador de soluciones**, abra Sample.mydsl. En el diagrama y la **ComponentLanguage herramientas** aparecen.  
   
 12. Arrastre un **puerto de entrada** desde el **cuadro de herramientas** a otro **puerto de entrada.** A continuación, arrastre un **OutputPort** a una **InputPort** y, a continuación, a otro **OutputPort**.  
   

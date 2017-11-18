@@ -1,115 +1,116 @@
 ---
-title: "Acerca de los lenguajes espec&#237;ficos de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio"
+title: "Acerca de lenguajes específicos de dominio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
-caps.latest.revision: 26
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 3bab0e785dfccddb7d182864a01146fe697b4247
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Acerca de los lenguajes espec&#237;ficos de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-A diferencia de un lenguaje de uso general como C\# o UML, un lenguaje específico \(DSL\) está diseñado para expresar instrucciones en un espacio del problema, o el dominio.  
+# <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
+A diferencia de un lenguaje de propósito general, como C# o UML, un lenguaje específico de dominio (DSL) está diseñado para expresar las instrucciones en un determinado problema de espacio o dominio.  
   
- Expresiones regulares conocidas y SQL de inclusión del dominio \(ADSL\).  Cada DSL es mucho mejor que un lenguaje de propósito general para describir operaciones en cadenas de texto o una base de datos, pero mucho peor para describir las ideas que están fuera de su propio ámbito.  Las industrias individuales tienen su propio dominio \(ADSL\).  Por ejemplo, en la industria de las telecomunicaciones, los idiomas descriptivos de llamada son ampliamente utilizados especificar la secuencia de estados en una llamada telefónica, y en la industria de ciclos aérea una norma ADSL se utiliza para describir reservaciones del vuelo.  
+ DSL Well-Known incluye expresiones regulares y SQL. Cada DSL es mucho mejor que un lenguaje de propósito general para describir las operaciones en cadenas de texto o en una base de datos, pero peor para describir ideas que se encuentran fuera de su propio ámbito. Sectores individuales también tienen sus propios DSL. Por ejemplo, en el sector de telecomunicaciones, llame a descripción idiomas se utilizan ampliamente para especificar la secuencia de Estados en una llamada de teléfono y en el aire viajes sector un estándar que DSL se utiliza para describir las reservas de vuelo.  
   
- El negocio y el proyecto también se ocupan de conjuntos especiales de conceptos que se puede describir con ADSL.  Por ejemplo, podría definir un DSL para una de estas aplicaciones:  
+ Su empresa y el proyecto también se aplican a conjuntos especial de conceptos que se describen con un DSL. Por ejemplo, podría definir un DSL para una de estas aplicaciones:  
   
--   Plan de rutas de navegación de un sitio Web.  
+-   Plan de rutas de navegación en un sitio Web.  
   
--   Esquemas eléctricos para componentes electrónicos.  
+-   Diagramas de cableado para componentes electrónicos.  
   
--   Redes de las bandas transportadoras y de equipaje que administran el equipo de un aeropuerto.  
+-   Redes de bandas transportadoras y equipos de un aeropuerto de control de equipaje.  
   
- Cuando diseñe DSL, defina *una clase de dominio* para cada uno de los conceptos importantes en el dominio, como una página Web, una lámpara, o un mostrador de facturación de aeropuerto.  Al definir las *relaciones de dominio* como hipervínculo, conexión, o una banda transportadora para vincular los conceptos juntos.  
+ Cuando se diseña un DSL, defina un *clase dominio* para cada uno de los conceptos más importantes en el dominio, como una página Web, luz o aeropuerto comprobación mostrador de facturación. Defina *relaciones de dominio* como hipervínculo, conexión o una banda transportadora para vincular entre sí los conceptos.  
   
- Los usuarios ADSL crean *modelos.* Los modelos son *instancias* de ADSL.  Por ejemplo, describen un sitio Web concreto, o la conexión de un dispositivo determinado, o de equipaje controlando el sistema de un aeropuerto determinado.  
+ Crean usuarios de ADSL *modelos.* Los modelos son *instancias* de DSL. Por ejemplo, describe un sitio Web determinado, o el cableado de un determinado dispositivo o el sistema en un aeropuerto determinado de control de equipaje.  
   
- Los usuarios pueden ver un modelo como diagrama o como Windows form.  Los modelos se pueden ver como XML, que es cómo se almacena.  Cuando se define un DSL, define cómo las instancias de cada clase y relación de dominio aparecen en la pantalla del usuario.  DSL normal se muestra como una colección de iconos o de rectángulos conectados mediante flechas.  
+ Los usuarios pueden ver un modelo como un diagrama o un formulario Windows Forms. Los modelos también pueden ver como XML, que es cómo se almacenan. Al definir un DSL, puede definir cómo las instancias de cada clase de dominio y cada relación aparecen en la pantalla del usuario. Un DSL típico se muestra como una colección de iconos o rectángulos conectados mediante flechas.  
   
- La ilustración siguiente muestra un modelo en ADSL en forma de diagrama:  
+ La siguiente ilustración muestra un pequeño modelo en un DSL esquemática:  
   
- ![Modelo de árbol de familia Tudor](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Modelo de árbol de familia Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
-## Qué se puede hacer con el dominio \(ADSL\)  
- Una aplicación típica ADSL es generar código de programa u otros artefactos.  Cuando se define un DSL, puede definir *las plantillas de texto* que leen un modelo ADSL y generan archivos de texto.  
+## <a name="what-you-can-do-with-dsls"></a>¿Qué puede hacer con DSL  
+ Una aplicación típica de un DSL es generar código de programa u otros artefactos. Cuando se define el ADSL, puede definir *plantillas de texto* que leer un modelo de DSL y para generar archivos de texto.  
   
- Por ejemplo, podría escribir plantillas que toman un plan de aeropuerto y generan la parte del software del equipaje que administra, así como algunas documentos del usuario que describen el plan.  
+ Por ejemplo, podría escribir plantillas que toman un plan de aeropuerto y generan parte del software de control, así como algunos de los documentos de usuario que describen el plan de equipaje.  
   
- Cuando tenga definido un DSL, puede distribuirlo a otros usuarios que puedan instalarlo en sus propios equipos.  Los usuarios ADSL pueden crear y editar modelos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Una vez haya definido un DSL, puede distribuirla a otros usuarios que pueden instalarlo en sus equipos. Pueden crear y editar modelos en los usuarios de ADSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- También puede definir los comandos de menú y otras herramientas que ayudan a los usuarios editar DSL, restricciones de validación de ayudar las plantillas asegúrese de que ADSL se utiliza correctamente, y elementos que ayudan a los usuarios a crear nuevas instancias.  Puede ajustar uno o más el dominio \(ADSL\) con sus herramientas y otras extensiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como paquete integrado.  
+ También puede definir comandos de menú y otras herramientas que ayudan a los usuarios edición DSL, restricciones de validación para ayudar a garantizar que la DSL se utiliza correctamente, y plantillas de elementos que le ayudan a los usuarios crean nuevas instancias. Puede ajustar uno o más DSL con sus herramientas y otros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones como un paquete integrado.  
   
- Normalmente, se crea un lenguaje específico cuando un equipo de desarrollo tiene que escribir código similar para varios productos.  Por ejemplo, una compañía especializado en el equipaje que administra los sistemas podría definir una pista ADSL de equipaje de la que pueden generar parte de código para cada instalación.  Las ventajas de ADSL se pueden ser comprensible para los clientes, que el código generado de es confiable, y que el sistema se puede actualizar rápidamente si el cambio de los requisitos de clientes.  
+ Normalmente, un lenguaje específico de dominio se crea cuando un equipo de desarrollo tiene que escribir un código similar para varios productos. Por ejemplo, una compañía que se especializa en sistemas de control de equipaje podría definir un DSL de pista de equipaje desde la que pueden generar parte del código para cada instalación. Las ventajas de DSL son que se pueda entender sus clientes, que el código generado desde el es de confianza y que se puede actualizar rápidamente el sistema si cambian los requisitos de los clientes.  
   
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] permite crear un lenguaje específico de dominio que tenga poseer el diseñador gráfico y dispone de la notación del diagrama, y después utiliza el lenguaje para generar el código fuente adecuado para cada proyecto.  
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]permite crear un lenguaje específico de dominio que tiene su propio diseñador gráfico y su propia notación de diagrama y, a continuación, usar el lenguaje para generar código fuente adecuado para cada proyecto.  
   
-## Desarrollo específico  
- el desarrollo específico es el proceso de identificar las partes de las aplicaciones que se pueden modelar mediante un lenguaje específico de dominio, y después de crear el lenguaje e implementarlo en los desarrolladores de aplicaciones.  Los desarrolladores utilizan el lenguaje específico para construir los modelos específicos de las aplicaciones, utilizan modelos para generar código fuente, y usan el código fuente para desarrollar aplicaciones.  
+## <a name="domain-specific-development"></a>Desarrollo específico de dominio  
+ Desarrollo específico de dominio es el proceso de identificar las partes de las aplicaciones que se pueden crear mediante un lenguaje específico de dominio y, a continuación, construir el idioma y su implementación en los desarrolladores de aplicaciones. Los desarrolladores usar el lenguaje específico de dominio para generar modelos que son específicos para sus aplicaciones, usar los modelos para generar código fuente y, a continuación, use el código fuente para desarrollar las aplicaciones.  
   
-## Aspectos de desarrollo gráfico específico de dominio  
- Un lenguaje específico de gráfico debe incluir las siguientes características:  
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspectos del desarrollo gráfico específico de dominio  
+ Un lenguaje específico de dominio gráfico debe incluir las siguientes características:  
   
 -   Notation  
   
--   modelo de dominio  
+-   Modelo de dominio  
   
--   Compilación de artefacto  
+-   Generación de artefacto  
   
 -   Serialización  
   
 -   Integración con Visual Studio  
   
-### Notation  
- Un lenguaje específico de dominio debe tener un conjunto razonablemente pequeño de elementos que pueden ser fácilmente definido y extendidos representar construcciones específicas.  Una notación consta de las formas, que representan los elementos, y conectores, que representan las relaciones entre los elementos, en una superficie gráfica del diagrama.  En [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], formas se pueden extender y refinar para representar los elementos de lenguaje específico.  
+### <a name="notation"></a>Notation  
+ Un lenguaje específico de dominio debe tener un conjunto de elementos que puede definirse y amplía para representar construcciones específicas del dominio fácilmente suficientemente pequeño. Una notación consta de formas, que representan los elementos, y conectores, que representan las relaciones entre elementos en una superficie de diagrama de gráficos. En [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], pueden ampliar las formas y se ha refinado para representar los elementos de su lenguaje específico de dominio.  
   
-### modelo de dominio  
- Un lenguaje específico debe combinar el conjunto de elementos y relaciones entre ellas en una gramática coherente.  También debe definir si las combinaciones de elementos y relaciones son válidas.  Por ejemplo, los lenguajes de programación evitan normalmente herencia circular, donde la clase es derivada de una segunda clase y la segunda clase es derivada de primera clase.  Las restricciones se pueden utilizar para expresar la lógica de negocios, por ejemplo, una persona no puede ser un dependiente de.  [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utiliza restricciones para expresar las clases de restricciones que la mayoría de los lenguajes específicos necesarios.  
+### <a name="domain-model"></a>Modelo de dominio  
+ Un lenguaje específico de dominio debe combinar el conjunto de elementos y las relaciones entre ellos en una gramática coherente. También debe definir si combinaciones de elementos y relaciones son válidas. Por ejemplo, los lenguajes de programación normalmente evitar herencia circular, en el que una clase se deriva de una clase de segundo y la segunda clase se deriva de la primera clase. También pueden utilizarse restricciones para expresar la lógica de negocios, por ejemplo, una persona no puede ser una dependencia de sí mismo. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]usa las restricciones para expresar los tipos de restricciones que requieren más lenguajes específicos de dominio.  
   
-### Compilación de artefacto  
- Uno de los propósitos principales de un lenguaje específico del dominio es generar un artefacto, por ejemplo, código fuente, un archivo XML, o algún otro datos utilizable.  Normalmente, un cambio en el modelo significa un cambio en el artefacto.  Puede utilizar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para generar los artefactos y para regenerarlas cuando cambia el modelo.  
+### <a name="artifact-generation"></a>Generación de artefacto  
+ Uno de los principales propósitos de un lenguaje específico de dominio consiste en generar un artefacto, por ejemplo, código fuente, un archivo XML o algún otro dato utilizable. Normalmente, un cambio en el modelo indica un cambio en el artefacto. Puede usar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para generar artefactos y a generar cuando se cambia el modelo.  
   
-### Serialización  
- Un lenguaje específico de dominio se debe conservar en algún formulario que puede editarse, guardarse, cerrar, y se vuelva a cargar.  [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utiliza un formato XML que permite definir y personalizar cómo el lenguaje específico es serializado o conservado.  
+### <a name="serialization"></a>Serialización  
+ Un lenguaje específico de dominio se debe conservar en alguna forma que puede editar, guardar, cierra y vuelve a cargar. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utiliza un formato XML que le permite definir y personalizar cómo se serializa o se conservan su lenguaje específico de dominio.  
   
-### Integración con Visual Studio  
- Dado que [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], extiende muchas ventanas y controles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  También le permite personalizar el comportamiento de los comandos de menú, elementos de cuadro de herramientas, y otros elementos de la interfaz de usuario.  
+### <a name="integration-with-visual-studio"></a>Integración con Visual Studio  
+ Dado que [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], extiende muchas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventanas y controles. También permite personalizar el comportamiento de los comandos de menú, elementos de cuadro de herramientas y otros elementos de la interfaz de usuario.  
   
- También puede crear un adaptador modelo de bus del lenguaje específico.  Este adaptador permite hacer referencia a un modelo y los elementos dentro de un modelo, y le permite escribir código que tenga acceso y actualizar a una instancia de ADSL.  Mediante el mecanismo modelo eficaz de bus, puede escribir las extensiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que ejecutan los varios modelos.  También puede escribir aplicaciones independientes que funcionan con modelos.  Para obtener más información, vea [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ También puede crear un adaptador de Bus de modelo para su lenguaje específico de dominio. Este adaptador le permite un modelo de referencia y los elementos dentro de un modelo y permite escribir código que puede obtener acceso y actualizar una instancia de DSL. Mediante el uso de un mecanismo eficaz Model Bus, puede escribir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] las extensiones que funcionan con varios modelos. También puede escribir aplicaciones independientes que funcionan con modelos. Para obtener más información, consulte [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
-## Ventajas de desarrollo específico de dominio  
- Un lenguaje específico puede proporcionar las siguientes ventajas:  
+## <a name="benefits-of-domain-specific-development"></a>Ventajas de desarrollo específico de dominio  
+ Un lenguaje específico de dominio puede proporcionar las siguientes ventajas:  
   
--   Contiene las construcciones que se ajuste a exactamente el espacio del problema.  
+-   Contiene construcciones que se ajuste exactamente al problema de espacio.  
   
-     A diferencia de lenguajes de uso general, un lenguaje específico consta de los elementos y las relaciones que representan directamente la lógica del espacio del problema.  Por ejemplo, una aplicación de la póliza de seguros debe incluir los elementos para las directivas y las peticiones.  Un lenguaje específico facilita diseñar la aplicación, y encuentra y corregir errores de lógica.  
+     A diferencia de los lenguajes de uso generales, un lenguaje específico de dominio consta de elementos y las relaciones que representan directamente la lógica del espacio de problema. Por ejemplo, una aplicación de póliza debe incluir elementos de directivas y notificaciones. Un lenguaje específico de dominio resulta más fácil diseñar la aplicación y buscar y corregir los errores de lógica.  
   
--   Permite a los no\-desarrolladores de software y las personas que no conocen el dominio entienden el diseño global.  
+-   Permite no a los desarrolladores y las personas que no conoce el dominio entender el diseño general.  
   
-     Mediante un lenguaje específico del gráfico, puede crear una representación visual del dominio de modo que los no\-desarrolladores de software pueden fácilmente entender el diseño de la aplicación.  
+     Mediante el uso de un lenguaje específico de dominio gráfico, puede crear una representación visual del dominio para que los desarrolladores no pueden comprender fácilmente el diseño de la aplicación.  
   
--   Facilita la creación un prototipo de la aplicación final.  
+-   Resulta más fácil crear un prototipo de la aplicación final.  
   
-     Los desarrolladores pueden utilizar el código que el modelo genera para crear una aplicación de prototipo que pueden mostrar a los clientes.  
+     Los desarrolladores pueden usar el código que genera su modelo para crear una aplicación de prototipo que puede mostrar a los clientes.  
   
-## El proceso de desarrollo específico de dominio  
- La mayoría de los equipos de desarrollo de software que utilizan lenguajes específicos de dominio siga estos pasos para crear y utilizar los modelos:  
+## <a name="the-process-of-domain-specific-development"></a>El proceso de desarrollo específico de dominio  
+ La mayoría de los equipos de desarrollo de software que utilizan lenguajes específicos de dominio siguen estos pasos para crear y usar sus modelos:  
   
--   El equipo distingue las partes variables del dominio de los elementos que no cambian.  
+-   El equipo distingue las partes variables del dominio de los elementos que no cambia nunca.  
   
--   Los desarrolladores escriben el código para las partes fijas y los puntos de extensión de licencia para las partes variables.  
+-   Los desarrolladores escribir código para las partes fijas y deje de puntos de extensión para los elementos de la variable.  
   
--   El desarrollador de software iniciales o el arquitecto crea un lenguaje específico que escriba los modelos de diseño de las partes fijas de dominio y la extensión designado para las partes variables.  
+-   El jefe de desarrollo de software o el arquitecto crea un lenguaje específico de dominio que incorpora los patrones de diseño de las partes del dominio y los puntos de extensión para las partes variables fijos.  
   
--   El desarrollador de software iniciales o el arquitecto implementa el lenguaje específico a los desarrolladores las aplicaciones diferentes que el equipo genera.  
+-   El jefe de desarrollo de software o el arquitecto implementa el lenguaje específico de dominio a los desarrolladores de las distintas aplicaciones generadas por el equipo.  
   
--   Cada desarrollador crea un modelo que se aplican a la aplicación concreta.
+-   Cada desarrollador crea un modelo que se aplica a la aplicación específica.

@@ -1,49 +1,51 @@
 ---
-title: "C&#243;mo: ampliar el Dise&#241;ador de lenguaje espec&#237;fico de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: Extender el Diseñador de lenguaje específico de dominio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: 9
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 44b3ea3d3997ac781b02220316810f00826f2beb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: ampliar el Dise&#241;ador de lenguaje espec&#237;fico de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede crear extensiones para el diseñador que se usa para editar las definiciones de DSL. Tipos de extensión que se puede realizar incluyen la adición de comandos de menú, agregar controladores para arrastrar y haga doble clic en movimientos y las reglas que se desencadenan cuando cambian de determinados tipos de relaciones o valores. Las extensiones pueden empaquetar como una extensión de integración de Visual Studio \(VSIX\) y distribuirse a otros usuarios.  
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Cómo: Ampliar el diseñador de lenguajes específicos de dominio
+Puede crear extensiones para el diseñador que se usa para editar las definiciones de DSL. Tipos de extensión que se puede realizar incluyen la adición de comandos de menú, agregar controladores de arrastran y haga doble clic en movimientos y reglas que se desencadenan cuando cambian de determinados tipos de valores o relaciones. Las extensiones se pueden empaquetar como una extensión de integración de Visual Studio (VSIX) y distribuirse a otros usuarios.  
   
- Código de ejemplo y obtener más información sobre esta característica, vea Visual Studio [sitio Web de visualización y modelado de SDK \(VMSDK\)](http://go.microsoft.com/fwlink/?LinkID=186128).  
+ Para obtener código de ejemplo y obtener más información sobre esta característica, vea el de Visual Studio [sitio Web de visualización y modelado de SDK (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).  
   
-## Configuración de la solución  
- Configurar un proyecto que contiene el código de la extensión y un proyecto VSIX que exporta el proyecto. La solución puede contener otros proyectos que se incorporan en el mismo VSIX.  
+## <a name="setting-up-the-solution"></a>Configuración de la solución  
+ Configurar un proyecto que contiene el código de la extensión y un proyecto VSIX que exporta el proyecto. La solución puede contener otros proyectos que se han incorporado a la misma extensión VSIX.  
   
-#### Para crear una solución de extensión de diseñador de DSL  
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>Para crear una solución de extensión de diseñador DSL  
   
-1.  Cree un nuevo proyecto mediante la plantilla de proyecto Biblioteca de clases. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Visual C\#** y, a continuación, en la ventana central haga clic en **biblioteca de clases de**.  
+1.  Cree un nuevo proyecto mediante la plantilla de proyecto de biblioteca de clases. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Visual C#** y, a continuación, en la ventana central haga clic en **biblioteca de clases**.  
   
-     Este proyecto contendrá el código de las extensiones.  
+     Este proyecto contendrá el código de sus extensiones.  
   
-2.  Cree un nuevo proyecto mediante la plantilla de proyecto VSIX. En el **nuevo proyecto** diálogo cuadro, expanda **Visual C\#**, haga clic en **extensibilidad**, y, a continuación, en la selección de la ventana central **proyecto VSIX**.  
+2.  Cree un nuevo proyecto mediante la plantilla de proyecto VSIX. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#**, haga clic en **extensibilidad**y, a continuación, en la ventana central, seleccione **proyecto VSIX**.  
   
-     Seleccione **Agregar a solución**.  
+     Seleccione **agregar a solución**.  
   
      Source.Extension.vsixmanifest se abre en el editor de manifiestos VSIX.  
   
-3.  Sobre el campo de contenido, haga clic en **Agregar contenido**.  
+3.  Sobre el campo de contenido, haga clic en **agregar contenido**.  
   
-4.  En el **Agregar contenido** cuadro de diálogo, establezca **Seleccionar un tipo de contenido** a **componente MEF**, y establecer **proyecto** a su proyecto de biblioteca de clases.  
+4.  En el **agregar contenido** cuadro de diálogo, establezca **seleccionar un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.  
   
-5.  Haga clic en **Seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.  
+5.  Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.  
   
-6.  Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.  
+6.  Asegúrese de que el proyecto VSIX sea el proyecto de inicio de la solución.  
   
-7.  En el proyecto de biblioteca de clases, agregue referencias a los siguientes ensamblados:  
+7.  En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -63,25 +65,25 @@ Puede crear extensiones para el diseñador que se usa para editar las definicion
   
      System.Windows.Forms  
   
-## Pruebas e implementación  
- Para probar cualquiera de las extensiones de este tema, compilar y ejecutar la solución. Se abre una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En esta instancia, abra una solución de DSL. Editar el diagrama DslDefinition. Puede ver el comportamiento de la extensión.  
+## <a name="testing-and-deployment"></a>Prueba e implementación  
+ Para probar cualquiera de las extensiones en este tema, compile y ejecute la solución. Se abre una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En este caso, abra una solución DSL. Editar el diagrama de DslDefinition. Se puede ver el comportamiento de la extensión.  
   
- Para implementar las extensiones en el método main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], y a otros equipos, siga estos pasos:  
+ Para implementar las extensiones en el método main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]y a otros equipos, siga estos pasos:  
   
-1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\\*\\\*.vsix  
+1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\\\*.vsix  
   
-2.  Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows \(o explorador de archivos\), haga doble clic en él.  
+2.  Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.  
   
      El [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] abre el Administrador de extensiones para confirmar que se ha instalado la extensión.  
   
  Para desinstalar la extensión, siga estos pasos:  
   
-1.  en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en el **herramientas** menú, haga clic en **Administrador de extensiones de**.  
+1.  en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en la **herramientas** menú, haga clic en **Extension Manager**.  
   
 2.  Seleccione la extensión y elimínelo.  
   
-## Agregar un comando de menú contextual  
- Para que un comando de menú contextual aparezcan en la superficie del Diseñador de DSL o en la ventana del explorador de DSL, escribir una clase similar a la siguiente.  
+## <a name="adding-a-shortcut-menu-command"></a>Agregar un comando de menú contextual  
+ Para que un comando de menú contextual aparezcan en la superficie del diseñador DSL o en la ventana Explorador de DSL, escribir una clase similar a lo siguiente.  
   
  La clase debe implementar `ICommandExtension` y debe tener el atributo `DslDefinitionModelCommandExtension`.  
   
@@ -145,7 +147,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }  
 ```  
   
-## Control de movimientos del Mouse  
+## <a name="handling-mouse-gestures"></a>Control de gestos del Mouse  
  El código es similar al código del comando de menú.  
   
 ```  
@@ -206,8 +208,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }  
 ```  
   
-## Responder a cambios de valor  
- Este controlador tiene un modelo de dominio funcione correctamente. Ofrecemos un modelo de dominio simple.  
+## <a name="responding-to-value-changes"></a>Responder a cambios de valor  
+ Este controlador necesita un modelo de dominio para que funcione correctamente. Se proporcionan un modelo de dominio simple.  
   
 ```  
 using System.Diagnostics;  

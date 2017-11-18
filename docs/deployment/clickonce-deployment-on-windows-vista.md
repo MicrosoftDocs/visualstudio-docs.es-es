@@ -1,56 +1,57 @@
 ---
-title: "Implementaci&#243;n de ClickOnce en Windows Vista | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implementación ClickOnce, Windows"
-  - "generación de manifiestos"
-  - "generación de manifiesto UAC"
-  - "Windows, implementación ClickOnce"
+title: "Implementación de ClickOnce en Windows Vista | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- UAC manifest generation
+- ClickOnce deployment, Windows
+- manifest generation
+- Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 22a50c85db54ed58b675253bb071c4aab47fe197
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Implementaci&#243;n de ClickOnce en Windows Vista
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Al compilar aplicaciones en Visual Studio para el Control de cuentas de usuario \(UAC\) en Windows Vista, normalmente se genera un manifiesto incrustado, codificado en forma de datos XML binarios, en el archivo ejecutable de la aplicación.  Dado que las aplicaciones ClickOnce y COM sin registro requieren un manifiesto externo, Visual Studio genera un archivo para estos tipos de proyectos que contiene los datos de UAC en lugar de un manifiesto incrustado.  De forma predeterminada, Visual Studio utiliza información de un archivo denominado app.manifest para generar información del manifiesto de UAC externo \(para implementación de ClickOnce y COM sin registro\), o para incrustarlo en el archivo ejecutable de la aplicación \(en todos los demás casos\).  Visual Studio proporciona las opciones siguientes para la generación de manifiestos:  
+# <a name="clickonce-deployment-on-windows-vista"></a>Implementación de ClickOnce en Windows Vista
+Compilar aplicaciones en Visual Studio para Control de cuentas de usuario (UAC) en Windows Vista normalmente genera un manifiesto incrustado, como datos binarias codifican XML en archivo ejecutable de la aplicación. Dado que las aplicaciones ClickOnce y COM sin registro requieren un manifiesto externo, Visual Studio genera un archivo para estos tipos de proyectos que contienen los datos UAC en lugar de un manifiesto incrustado. De forma predeterminada, Visual Studio usa información en un archivo denominado app.manifest para generar la información de manifiesto UAC externa (para la implementación de ClickOnce y COM sin registro), o para incrustar en el archivo ejecutable de la aplicación (para todos los demás casos). Visual Studio proporciona las siguientes opciones para la generación de manifiestos:  
   
--   Usar un manifiesto incrustado.  Incruste los datos de UAC en el archivo ejecutable de la aplicación y ejecútelo como un usuario normal.  
+-   Use un manifiesto incrustado. Incrustar los datos UAC en el archivo ejecutable de la aplicación y ejecutar como usuario normal.  
   
-     Este es el valor predeterminado \(a menos que use ClickOnce\).  Este valor admitirá la forma habitual de funcionamiento de Visual Studio en Windows Vista; es decir, la generación de un manifiesto interno y externo, usando `AsInvoker` ambos manifiestos.  
+     Se trata de la configuración predeterminada (a menos que use ClickOnce). Esta configuración será compatible con la forma habitual en que funciona en Visual Studio en Windows Vista; es decir, la generación del manifiesto interno y externo, ambos usando `AsInvoker`.  
   
--   Usar un manifiesto externo.  Genere un manifiesto externo utilizando app.manifest.  
+-   Use un manifiesto externo. Genere un manifiesto externo utilizando app.manifest.  
   
-     Así se genera únicamente el manifiesto externo usando la información en app.manifest.  Cuando se publica una aplicación mediante el uso de ClickOnce o COM sin registro, Visual Studio agrega app.manifest al proyecto y agrega esta opción.  
+     Esto genera únicamente el manifiesto externo usando la información en app.manifest. Al publicar una aplicación mediante ClickOnce o COM sin registro, Visual Studio agrega app.manifest al proyecto y agrega esta opción.  
   
--   No usar ningún manifiesto.  Cree la aplicación sin un manifiesto.  
+-   No usar ningún manifiesto. Crear la aplicación sin un manifiesto.  
   
-     Este enfoque también se conoce como *virtualización*.  Use esta opción si desea que haya compatibilidad con aplicaciones existentes de versiones anteriores de Visual Studio.  
+     Este enfoque también se denomina es *virtualización*. Utilice esta opción para la compatibilidad con las aplicaciones existentes de versiones anteriores de Visual Studio.  
   
- Las nuevas propiedades están disponibles en la página **Aplicación** del Diseñador de proyectos \(solo para proyectos de Visual C\#\) y en el formato de archivo de proyecto de MSBuild.  
+ Las nuevas propiedades están disponibles en la **aplicación** página del Diseñador de proyectos (proyectos de Visual C# sólo) y en el formato de archivo de proyecto de MSBuild.  
   
- Observe que el método para configurar la generación de manifiestos de UAC en el IDE de Visual Studio difiere en función del tipo de proyecto \(Visual C\# y Visual Basic\).  
+ Tenga en cuenta que el método para configurar la generación de manifiestos de UAC en el IDE de Visual Studio difiere según el tipo de proyecto (Visual C# y Visual Basic).  
   
- Para obtener información sobre cómo configurar proyectos de Visual C\# para la generación de manifiestos, vea [Página de aplicación, Diseñador de proyectos \(C\#\)](../ide/reference/application-page-project-designer-csharp.md).  
+ Para obtener información sobre cómo configurar proyectos de Visual C# para la generación de manifiestos, consulte [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
- Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, vea [Aplicación \(Página, Diseñador de proyectos\) \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md).  
+ Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, consulte [página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [User Permissions and Visual Studio](http://msdn.microsoft.com/es-es/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
- [Página de aplicación, Diseñador de proyectos \(C\#\)](../ide/reference/application-page-project-designer-csharp.md)   
- [Aplicación \(Página, Diseñador de proyectos\) \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md)
+ [Permisos de usuario y Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
+ [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

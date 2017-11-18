@@ -1,33 +1,33 @@
 ---
-title: "&lt;PackageFiles&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<PackageFiles> (elemento) [arranque]"
+title: '&lt;PackageFiles&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;PackageFiles&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento `PackageFiles` contiene elementos `PackageFile` que definen los paquetes de instalación ejecutados como resultado del elemento `Command`.  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (arranque)
+El `PackageFiles` contiene el elemento `PackageFile` elementos, que definen los paquetes de instalación que se ejecuta como resultado de la `Command` elemento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <PackageFiles  
@@ -43,28 +43,28 @@ El elemento `PackageFiles` contiene elementos `PackageFile` que definen los paqu
 </PackageFiles>  
 ```  
   
-## Elementos y atributos  
- El elemento `PackageFiles` tiene el siguiente atributo.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `PackageFiles` elemento tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`CopyAllPackageFiles`|Opcional.  Si se establece en `false`, el instalador sólo descargará los archivos a los que se hace referencia en el elemento `Command`.  Si se establece en `true`, se descargarán todos los archivos.<br /><br /> Si se establece en `IfNotHomesite`, el instalador se comportará como si se hubiera establecido en `False` si `ComponentsLocation` se ha establecido en `HomeSite`; de lo contrario, se comportará como si se hubiera establecido en `True`.  Este valor puede ser útil para permitir que los propios paquetes de arranque ejecuten su propio comportamiento en un escenario de HomeSite.<br /><br /> El valor predeterminado es `true`.|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|Opcional. Si establece en `false`, el instalador sólo descargará los archivos que se hace referencia desde el `Command` elemento. Si establece en `true`, se descargarán todos los archivos.<br /><br /> Si establece en `IfNotHomesite`, el instalador comportará igual como si `False` si `ComponentsLocation` está establecido en `HomeSite`y en caso contrario, se comportará igual como si `True`. Esta configuración puede ser útil para permitir que los paquetes que son programas previos ejecutar su propio comportamiento en un escenario de HomeSite.<br /><br /> De manera predeterminada, es `true`.|  
   
-## PackageFile  
- El elemento `PackageFile` es un elemento secundario del elemento `PackageFiles`.  Un elemento `PackageFiles` debe tener al menos un elemento `PackageFile`.  
+## <a name="packagefile"></a>PackageFile  
+ El `PackageFile` es un elemento secundario de la `PackageFiles` elemento. A `PackageFiles` elemento debe tener al menos un `PackageFile` elemento.  
   
- `PackageFile` tiene los atributos siguientes.  
+ `PackageFile`tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Name`|Obligatorio.  Nombre del archivo de paquete.  Se trata del nombre al que el elemento `Command` hace referencia cuando define las condiciones de instalación de un paquete.  Este valor también se utiliza como clave en la tabla `Strings` para recuperar el nombre encontrado que herramientas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizarán para describir el paquete.|  
-|`HomeSite`|Opcional.  Ubicación del paquete en el servidor remoto, si no está incluido con el instalador.|  
-|`CopyOnBuild`|Opcional.  Especifica si el arranque debe copiar el archivo de paquete en el disco en tiempo de compilación.  El valor predeterminado es true.|  
-|`PublicKey`|Clave pública cifrada del firmante del certificado del paquete.  Requerido si se utiliza `HomeSite`; en caso contrario, es opcional.|  
-|`Hash`|Opcional.  Un hash SHA1 del archivo de paquete.  Esto se utiliza para comprobar la integridad del archivo en el momento de la instalación.  Si el hash idéntico no se puede calcular a partir del archivo empaquetado, no se instalará el paquete.|  
+|---------------|-----------------|  
+|`Name`|Obligatorio. El nombre del archivo del paquete. Este es el nombre que el `Command` elemento hará referencia cuando define las condiciones en las que se instala un paquete. Este valor también se utiliza como una clave en el `Strings` tabla para recuperar el nombre localizado que herramientas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizará para describir el paquete.|  
+|`HomeSite`|Opcional. La ubicación del paquete en el servidor remoto, si no se incluye con el programa de instalación.|  
+|`CopyOnBuild`|Opcional. Especifica si el programa previo debe copiar el archivo de paquete en el disco en tiempo de compilación. El valor predeterminado es true.|  
+|`PublicKey`|La clave pública cifrada del firmante del certificado del paquete. Requerido si `HomeSite` se usa; en caso contrario, opcional.|  
+|`Hash`|Opcional. Un hash SHA1 del archivo del paquete. Esto se utiliza para comprobar la integridad del archivo durante la instalación. Si no se puede calcular el hash idéntico desde el archivo de paquete, no se instalará el paquete.|  
   
-## Ejemplo  
- En el siguiente ejemplo de código se definen paquetes para el paquete redistribuible de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y sus dependencias, como Windows Installer.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se define paquetes para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] paquete redistribuible y sus dependencias, como Windows Installer.  
   
 ```  
 <PackageFiles>  
@@ -75,7 +75,7 @@ El elemento `PackageFiles` contiene elementos `PackageFile` que definen los paqu
 </PackageFiles>  
 ```  
   
-## Vea también  
- [\<Product\> \(Elemento\)](../deployment/product-element-bootstrapper.md)   
- [\<Package\> \(Elemento\)](../deployment/package-element-bootstrapper.md)   
+## <a name="see-also"></a>Vea también  
+ [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
+ [\<Paquete > elemento](../deployment/package-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

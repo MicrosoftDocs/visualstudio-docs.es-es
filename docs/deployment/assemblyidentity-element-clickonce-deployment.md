@@ -1,39 +1,38 @@
 ---
-title: "Elemento &lt;assemblyIdentity&gt; (Implementaci&#243;n ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assemblyIdentity> (elemento) [manifiesto de implementación ClickOnce]"
+title: "&lt;assemblyIdentity&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assemblyIdentity> element [ClickOnce deployment manifest]
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 26debb7d29458ab6452a2063e8e5c7e2f43fa7d0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;assemblyIdentity&gt; (Implementaci&#243;n ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifica el ensamblado primario de la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (implementación de ClickOnce)
+Identifica el ensamblado primario de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
-      <assemblyIdentity    
-   name   
+      <assemblyIdentity    
+   name   
    version  
    publicKeyToken  
    processorArchitecture  
@@ -41,21 +40,21 @@ Identifica el ensamblado primario de la aplicación [!INCLUDE[ndptecclick](../de
 />  
 ```  
   
-## Elementos y atributos  
- Se requiere el elemento `assemblyIdentity`.  No contiene ningún elemento secundario y tiene los siguientes atributos.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `assemblyIdentity` elemento es necesario. No contiene elementos secundarios y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`name`|Obligatorio.  Identifica el nombre descriptivo de la implementación con propósitos informativos.<br /><br /> Si `name` contiene caracteres especiales, como comillas dobles o sencillas, la aplicación podría no activarse.|  
-|`version`|Obligatorio.  Especifica el número de versión del ensamblado con el formato siguiente: `principal.secundaria.compilación.revisión`.<br /><br /> Este valor se debe incrementar en un manifiesto actualizado para desencadenar una actualización de la aplicación.|  
-|`publicKeyToken`|Obligatorio.  Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del valor hash SHA\-1 de la clave pública bajo la que se firma el manifiesto de implementación.  La clave pública que se utiliza para firmar debe tener 2048 bits o más.<br /><br /> Aunque la firma del ensamblado es opcional \(pero recomendable\), este atributo es obligatorio.  Si un ensamblado no tiene firma, debe copiar un valor de un ensamblado autofirmado o utilizar un valor "ficticio" compuesto de ceros.|  
-|`processorArchitecture`|Obligatorio.  Especifica el procesador.  Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits e `Itanium` para procesadores Intel Itanium de 64 bits.|  
-|`type`|Obligatorio.  Por razones de compatibilidad con la tecnología de instalación en paralelo de Windows.  El único valor permitido es `win32`.|  
+|---------------|-----------------|  
+|`name`|Obligatorio. Identifica el nombre legible de la implementación con fines informativos.<br /><br /> Si `name` contiene caracteres especiales, como las comillas simples o dobles, puede producir un error de la aplicación Activar.|  
+|`version`|Obligatorio. Especifica el número de versión del ensamblado, en el siguiente formato: `major.minor.build.revision`.<br /><br /> Este valor se debe incrementar en un manifiesto actualizado para desencadenar una actualización de la aplicación.|  
+|`publicKeyToken`|Obligatorio. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del valor hash SHA-1 de la clave pública con la que se firma el manifiesto de implementación. La clave pública que se utiliza para firmar debe tener 2048 bits o mayor.<br /><br /> Aunque la firma de un ensamblado es opcional, pero recomendable, este atributo es necesario. Si un ensamblado está firmado, debería copiar un valor de un ensamblado autofirmado o utilizar un valor "ficticio" de todos los ceros.|  
+|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
+|`type`|Obligatorio. Para la compatibilidad con la tecnología de instalación en paralelo de Windows. El único valor permitido es `win32`.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Ejemplo  
- En el siguiente ejemplo de código se muestra un elemento `assemblyIdentity` en un manifiesto de implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Este ejemplo de código forma parte de un ejemplo más extenso que aparece en el tema [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra un `assemblyIdentity` elemento en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. Este ejemplo de código forma parte de un ejemplo mayor proporcionado para el [manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md) tema.  
   
 ```  
 <!-- Identify the deployment. -->  
@@ -68,6 +67,6 @@ Identifica el ensamblado primario de la aplicación [!INCLUDE[ndptecclick](../de
   xmlns="urn:schemas-microsoft-com:asm.v1" />  
 ```  
   
-## Vea también  
- [Manifiesto de la implementación ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Elemento \<assemblyIdentity\>](../deployment/assemblyidentity-element-clickonce-application.md)
+## <a name="see-also"></a>Vea también  
+ [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md)

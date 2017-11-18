@@ -1,46 +1,47 @@
 ---
-title: "C&#243;mo: Crear un manifiesto de producto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "dependencias, paquete de arranque personalizado"
-  - "requisitos previos, paquete de arranque personalizado"
-  - "archivos del producto [ClickOnce]"
-  - "archivos de producto [Windows Installer]"
+title: "Cómo: crear un manifiesto de producto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- product files [ClickOnce]
+- product files [Windows Installer]
+- prerequisites, custom bootstrapper package
+- dependencies, custom bootstrapper package
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 36f1c1d5255233f57f7c2e266fe26fd8cbf789ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Crear un manifiesto de producto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para implementar los requisitos previos de su aplicación, puede crear un paquete de arranque.  Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto de paquete para cada configuración regional.  El manifiesto del paquete contiene aspectos específicos de la localización de su paquete.  Esto incluye cadenas, contratos de licencia de usuario final y paquetes de idioma.  
+# <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
+Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización de su paquete. Esto incluye cadenas, contratos de licencia de usuario final y los paquetes de idioma.  
   
- Para obtener más información sobre los manifiestos de producto, vea [Cómo: Crear un manifiesto de paquete](../deployment/how-to-create-a-package-manifest.md).  
+ Para obtener más información sobre los manifiestos de producto, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).  
   
-## Crear el manifiesto del producto  
+## <a name="creating-the-product-manifest"></a>Crear el manifiesto del producto  
   
-#### Para crear el manifiesto del producto  
+#### <a name="to-create-the-product-manifest"></a>Para crear el manifiesto del producto  
   
-1.  Cree un directorio para el paquete de arranque.  En este ejemplo se utiliza C:\\package.  
+1.  Cree un directorio para el paquete del programa previo. En este ejemplo se utiliza C:\package.  
   
-2.  En Visual Studio, cree un nuevo archivo XML llamado `product.xml` y guárdelo en la carpeta C:\\package.  
+2.  En Visual Studio, cree un nuevo archivo XML denominado `product.xml`y guárdelo en la carpeta C:\package.  
   
-3.  Agregue el siguiente XML para describir el espacio de nombres XML y el código de producto para el paquete.  Reemplace el código del producto por un identificador único del paquete.  
+3.  Agregue el siguiente código XML para describir el código de producto y de espacio de nombres XML para el paquete. Reemplace el código de producto con un identificador único para el paquete.  
   
     ```  
     <Product  
@@ -48,7 +49,7 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Agregue XML para especificar que el paquete tiene una dependencia.  En este ejemplo se utiliza una dependencia en Microsoft Windows Installer 3.1.  
+4.  Agregue el código XML para especificar que el paquete tiene una dependencia. Este ejemplo utiliza una dependencia en Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -56,7 +57,7 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
       </RelatedProducts>  
     ```  
   
-5.  Agregue XML para hacer una lista de todos los archivos que están en el paquete de arranque.  En este ejemplo se utiliza el nombre de archivo empaquetado CorePackage.msi.  
+5.  Agregue el código XML para obtener una lista de todos los archivos que se encuentran en el paquete del programa previo. En este ejemplo se utiliza el nombre de archivo de paquete CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -64,16 +65,16 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
     </PackageFiles>  
     ```  
   
-6.  Copie o mueva el archivo CorePackage.msi a la carpeta C:\\package.  
+6.  Copie o mueva el archivo CorePackage.msi a la carpeta C:\package.  
   
-7.  Agregue XML para instalar el paquete utilizando los comandos de arranque.  El arranque agrega automáticamente la marca **\/qn** al archivo .msi, que se instalará silenciosamente.  Si el archivo es un .exe, el arranque lo ejecuta utilizando el shell.  El siguiente XML no muestra ningún argumento a CorePackage.msi, pero puede colocar el argumento de la línea de comandos en el atributo Arguments.  
+7.  Agregue el código XML para instalar el paquete mediante los comandos del programa previo. El programa previo se agrega automáticamente el **/qn** marca para el archivo .msi, que se instalará en modo silencioso. Si el archivo .exe, el programa previo ejecuta el archivo .exe mediante el shell. El siguiente XML no muestra ningún argumento a CorePackage.msi, pero se puede colocar el argumento de línea de comandos en el atributo de argumentos.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Agregue el siguiente XML para comprobar si se instala este paquete de arranque.  Reemplace el código de producto por el GUID del componente redistribuible.  
+8.  Agregue el siguiente código XML para comprobar si se instaló este paquete de programa previo. Reemplace el código de producto con el GUID del componente redistribuible.  
   
     ```  
     <InstallChecks>  
@@ -83,7 +84,7 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
     </InstallChecks>  
     ```  
   
-9. Agregue XML para cambiar el comportamiento de arranque que depende de si ya hay un componente de arranque instalado.  Si el componente está instalado, el paquete de arranque no se ejecuta.  El siguiente XML comprueba si el usuario actual es un administrador porque este componente requiere privilegios de administrador.  
+9. Agregue el código XML para cambiar el comportamiento del programa previo en función de si ya está instalado el componente de programa previo. Si el componente está instalado, el paquete de arranque no se ejecuta. El siguiente código XML comprueba si el usuario actual es un administrador porque este componente requiere privilegios administrativos.  
   
     ```  
     <InstallConditions>  
@@ -96,7 +97,7 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
     </InstallConditions>  
     ```  
   
-10. Agregue XML para establecer los códigos de salida si la instalación es correcta y es necesario reiniciar.  El siguiente XML muestra los códigos de salida Fail y FailReboot, que indican que el arranque no seguirá instalando los paquetes.  
+10. Agregue el código XML para establecer los códigos de salida si la instalación es correcta y si es necesario reiniciar el equipo. El siguiente código XML muestra que el error y FailReboot códigos, lo que indica que el programa previo no podrán continuar instalando paquetes de salida.  
   
     ```  
     <ExitCodes>  
@@ -107,17 +108,17 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
     </ExitCodes>  
     ```  
   
-11. Agregue el siguiente XML para finalizar la sección para los comandos de arranque.  
+11. Agregue el siguiente código XML para finalizar la sección para los comandos del programa previo.  
   
     ```  
         </Command>  
     </Commands>  
     ```  
   
-12. Mueva la carpeta C:\\package al directorio de arranque de Visual Studio.  Para Visual Studio 2010, es \\Archivos de programa\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages.  
+12. Mover la carpeta C:\package en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el directorio de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program.  
   
-## Ejemplo  
- El manifiesto del producto contiene las instrucciones de instalación de los requisitos previos personalizados.  
+## <a name="example"></a>Ejemplo  
+ El manifiesto del producto contiene instrucciones de instalación de requisitos previos personalizados.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -160,5 +161,5 @@ Para implementar los requisitos previos de su aplicación, puede crear un paquet
 </Product>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

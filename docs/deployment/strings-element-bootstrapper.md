@@ -1,36 +1,36 @@
 ---
-title: "&lt;Strings&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.NoStringsForCulture"
-  - "MSBuild.GenerateBootstrapper.ProductCultureNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Strings> (elemento) [arranque]"
+title: '&lt;Cadenas&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.NoStringsForCulture
+- MSBuild.GenerateBootstrapper.ProductCultureNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Strings&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Define las cadenas localizadas de nombres de productos y paquetes, así como mensajes de error de instalación.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; elemento (arranque)
+Define las cadenas localizadas para nombres de productos, nombres de paquete y mensajes de error de instalación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Strings>  
@@ -41,20 +41,20 @@ Define las cadenas localizadas de nombres de productos y paquetes, así como men
 </Strings>  
 ```  
   
-## Elementos y atributos  
- El elemento `Strings` es un elemento secundario del elemento `Package`.  No tiene atributos.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `Strings` es un elemento secundario de la `Package` elemento. No tiene ningún atributo.  
   
-## Cadena.  
- El elemento `String` es un elemento secundario del elemento `Strings`.  Un elemento `Strings` puede tener uno o más elementos `String`.  
+## <a name="string"></a>String  
+ El `String` es un elemento secundario de la `Strings` elemento. A `Strings` elemento puede tener uno o más `String` elementos.  
   
- `String` tiene el atributo siguiente.  
+ `String`tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Name`|Obligatorio.  Nombre de la cadena.|  
+|---------------|-----------------|  
+|`Name`|Obligatorio. El nombre de la cadena.|  
   
-## Ejemplo  
- En el siguiente ejemplo de código se especifican todas las cadenas en inglés para el instalador de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  
   
 ```  
 <Strings>  
@@ -75,5 +75,5 @@ Define las cadenas localizadas de nombres de productos y paquetes, así como men
 </Strings>  
 ```  
   
-## Vea también  
- [\<Package\> \(Elemento\)](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Vea también  
+ [\<Paquete > elemento](../deployment/package-element-bootstrapper.md)

@@ -10,35 +10,20 @@ helpviewer_keywords:
 - requirements
 - stories
 ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: 60866c46920bb85927498992082763f9e34b4137
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades de los usuarios a través de diagramas sobre sus actividades, así como la importancia del sistema para ayudarles a lograr sus objetivos. Un modelo de requisitos es un conjunto de estos diagramas, cada uno de los cuales se centra en un aspecto diferente de las necesidades de los usuarios. Para ver una demostración en vídeo, consulte [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Crear modelos del ámbito empresarial).  
   
- Para ver qué versiones de Visual Studio admiten cada tipo de modelo, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Un modelo de requisitos le ayuda a:  
   
@@ -67,15 +52,15 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 |Diagrama o documento|Qué se describe en un modelo de requisitos|Sección|  
 |-------------------------|-----------------------------------------------|-------------|  
 |Diagrama de clases conceptuales|Glosario de los tipos que se usan para describir los requisitos; los tipos visibles en la interfaz del sistema.||  
-|Otros documentos o elementos de trabajo|Criterios de rendimiento, seguridad, facilidad de uso y confiabilidad.|[Describir requisitos de calidad de servicio](#QoSRequirements)|  
+|Otros documentos o elementos de trabajo|Criterios de rendimiento, seguridad, facilidad de uso y confiabilidad.|[Describir los requisitos de calidad de servicio](#QoSRequirements)|  
 |Otros documentos o elementos de trabajo|Restricciones y reglas no específicas para un determinado caso de uso|[Mostrar reglas de negocio](#BusinessRules)|  
   
  Observe que la mayoría de los tipos de diagramas se pueden usar para otros fines. Para obtener información general de tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
   
-##  <a name="a-namebusinessrulesa-showing-business-rules"></a><a name="BusinessRules"></a>Mostrar reglas de negocio  
+##  <a name="BusinessRules"></a> Showing Business Rules  
  Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.  
   
- Muchas reglas de negocio son restricciones en las relaciones entre las clases conceptuales. Puede escribir estas *estático**reglas de negocios* como comentarios asociados a las clases pertinentes en un diagrama de clases conceptuales. Por ejemplo:  
+ Muchas reglas de negocio son restricciones en las relaciones entre las clases conceptuales. Puede escribir estos *estático**reglas de negocios* como comentarios asociados con las clases pertinentes en un diagrama de clases conceptuales. Por ejemplo:  
   
  ![Regla en comentario adjunto a la clase Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   
@@ -91,7 +76,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 |--------------------|----------|  
 |Cómo desarrollar código que cumple las reglas de negocio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="a-nameqosrequirementsa-describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a>Describir requisitos de calidad de servicio  
+##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Existen varias categorías de requisito de calidad de servicio. Entre esos tipos se incluyen los siguientes:  
   
 -   Rendimiento  
@@ -112,10 +97,9 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
   
 |Más información|Leer|  
 |--------------------|----------|  
-|Información más detallada sobre el registro de los requisitos de calidad de servicio|[Instrucciones para definir requisitos calidad de servicio](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
+|Información más detallada sobre el registro de los requisitos de calidad de servicio|[Instrucciones para definir los requisitos de calidad de servicio](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Cómo desarrollar código que cumpla los requisitos de calidad de servicio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="see-also"></a>Vea también  
  [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)   
  [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)   
-

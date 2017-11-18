@@ -1,39 +1,42 @@
 ---
-title: "ArrayBuffer.isView (Funci&#243;n, ArrayBuffer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "ArrayBuffer.isView (función) (ArrayBuffer) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1887324f-892b-4fcd-ad33-748ba9517a06
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5aaae2acb38aa2f8c4b5e49ea203e86665315700
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# ArrayBuffer.isView (Funci&#243;n, ArrayBuffer)
-Determina si un objeto proporciona una vista del búfer.  
+# <a name="arraybufferisview-function-arraybuffer"></a>ArrayBuffer.isView (Función, ArrayBuffer)
+Determina si un objeto permite ver el búfer.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 ArrayBuffer.isView(object)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `object`  
- Requerido.  Objeto que se va a probar.  
+ Obligatorio. Objeto que se va a probar.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Es `true` si se cumple cualquiera de las condiciones siguientes:  
   
 -   `object` es un objeto `DataView`.  
@@ -42,12 +45,12 @@ ArrayBuffer.isView(object)
   
  De lo contrario, el método devuelve `false`.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se demuestra el uso de la función `isView` para probar una matriz con tipo y un objeto `DataView`.  
   
-```javascript  
+```JavaScript  
 var uint = new UInt8ClampedArray(10);  
   
 if(console && console.log) {  
@@ -60,8 +63,8 @@ if(console && console.log) {
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Vea también  
- [Objeto Uint8ClampedArray](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Uint8ClampedArray (Objeto)](../../javascript/reference/uint8clampedarray-object-javascript.md)

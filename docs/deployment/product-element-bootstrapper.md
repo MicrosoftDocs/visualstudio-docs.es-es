@@ -1,33 +1,33 @@
 ---
-title: "&lt;Product&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<product> (elemento) [arranque]"
+title: '&lt;Producto&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Product&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento `Product` es el elemento XML de nivel superior dentro de un archivo de producto.  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; elemento (arranque)
+El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Product  
@@ -139,15 +139,15 @@ ProductCode
 </Package>  
 ```  
   
-## Elementos y atributos  
- El elemento `Product` se requiere en un archivo de producto.  Tiene el atributo siguiente.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El `Product` elemento es necesario en un archivo de producto. Tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`ProductCode`|Identificador único para el producto.|  
+|---------------|-----------------|  
+|`ProductCode`|Un identificador único para el producto.|  
   
-## Ejemplo  
- En el ejemplo de código siguiente se muestra un archivo de producto completo para la instalación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra un archivo de producto completo para la instalación de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -251,5 +251,5 @@ ProductCode
 </Product>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

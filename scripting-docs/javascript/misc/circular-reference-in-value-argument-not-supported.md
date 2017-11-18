@@ -1,38 +1,40 @@
 ---
-title: "No se admite referencia circular en argumento de valor | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5034"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Referencia circular en un argumento de valor no admitida | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5034
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 5d06f0fa-86f5-49d1-8d50-af1759990f43
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# No se admite referencia circular en argumento de valor
-Se ha intentado invocar `JSON.stringify` con un valor que no es válido.  El argumento `value`, una matriz o un objeto, contiene una referencia circular.  
+# <a name="circular-reference-in-value-argument-not-supported"></a>Referencia circular en un argumento de valor no admitida
+Se ha realizado un intento de invocar `JSON.stringify` con un valor que no es válido. El `value` argumento, matriz u objeto, contiene una referencia circular.  
   
-### Para corregir este error  
+### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Quitar la referencia circular del argumento.  
+-   Quite la referencia circular del argumento.  
   
-## Ejemplo  
- El código de este ejemplo produce un error de tiempo de ejecución porque `john` tiene una referencia a `mary` y `mary` tiene una referencia a `john`.  para quitar la referencia circular, quite o desactive la propiedad `brother` del objeto `mary` o la propiedad `sister` del objeto `john`.  
+## <a name="example"></a>Ejemplo  
+ El código de este ejemplo produce un error de tiempo de ejecución porque `john` tiene una referencia a `mary` y `mary` tiene una referencia a `john`. Para quitar la referencia circular, quitar o sin establecer la propiedad `brother` desde el `mary` objeto o la `sister` propiedad desde el `john` objeto.  
   
-```javascript  
+```JavaScript  
 var john = new Object();  
 var mary = new Object();  
 john.sister = mary;  
@@ -42,7 +44,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## Vea también  
- [JSON \(Objeto\)](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse \(Función\)](../../javascript/reference/json-parse-function-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
+ [JSON.parse (función)](../../javascript/reference/json-parse-function-javascript.md)   
  [Errores en tiempo de ejecución de JavaScript](../../javascript/reference/javascript-run-time-errors.md)

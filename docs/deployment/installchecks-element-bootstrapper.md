@@ -1,33 +1,33 @@
 ---
-title: "&lt;InstallChecks&gt; (Elemento, Arranque) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<InstallChecks> (elemento) [arranque]"
+title: '&lt;InstallChecks&gt; elemento (arranque) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 2a731c504355cbd3869790720af1f67f6c6bf0eb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;InstallChecks&gt; (Elemento, Arranque)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento `InstallChecks` permite iniciar varias pruebas en relación con el equipo local para asegurarse de que se han instalado todos los requisitos previos de una aplicación.  
+# <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (arranque)
+El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo local para asegurarse de que se hayan instalado todos los requisitos previos para una aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <InstallChecks>  
@@ -71,82 +71,82 @@ El elemento `InstallChecks` permite iniciar varias pruebas en relación con el e
 </InstallChecks>  
 ```  
   
-## AssemblyCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  En cada instancia de `AssemblyCheck`, el arranque garantizará que el ensamblado identificado por el elemento existe en la memoria caché global de ensamblados \(GAC\).  No contiene elementos y tiene los siguientes atributos.  
+## <a name="assemblycheck"></a>AssemblyCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `AssemblyCheck`, el programa previo se asegurará de que el ensamblado identificado por el elemento existe en la caché de ensamblados global (GAC). No contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`Name`|Obligatorio.  Nombre completo del ensamblado que se va a comprobar.|  
-|`PublicKeyToken`|Obligatorio.  El formulario abreviado de la clave pública asociado con este ensamblado de nombre seguro.  Todos los ensamblados almacenados en la GAC deben tener un nombre, una versión y una clave pública.|  
-|`Version`|Obligatorio.  Versión del ensamblado.<br /><br /> El número de versión tiene el formato \<*versión principal*\>.\<*versión secundaria*\>.\<*versión de compilación*\>.\<*versión de revisión*\>.|  
-|`Language`|Opcional.  El lenguaje de un ensamblado traducido.  El valor predeterminado es `neutral`.|  
-|`ProcessorArchitecture`|Opcional.  El procesador del equipo de destino de esta instalación.  El valor predeterminado es `msil`.|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Obligatorio. El nombre completo del ensamblado que se va a comprobar.|  
+|`PublicKeyToken`|Obligatorio. La forma abreviada de la clave pública asociado a este ensamblado con nombre seguro. Todos los ensamblados almacenados en la GAC deben tener un nombre, una versión y una clave pública.|  
+|`Version`|Obligatorio. Versión del ensamblado.<br /><br /> El número de versión tiene el formato \< *versión principal*>.\< *versión secundaria*>.\< *versión de compilación*>.\< *la versión de revisión*>.|  
+|`Language`|Opcional. El idioma de un ensamblado localizado. El valor predeterminado es `neutral`.|  
+|`ProcessorArchitecture`|Opcional. El procesador del equipo objetivo de esta instalación. El valor predeterminado es `msil`.|  
   
-## ExternalCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  Para cada instancia de `ExternalCheck`, el arranque ejecutará el programa externo especificado en un proceso independiente y almacenará su código de salida en la propiedad indicada por `Property`.  `ExternalCheck` es útil para implementar las comprobaciones de la dependencia complejas o cuando la única manera de comprobar la existencia de un componente es creando instancias de él.  
+## <a name="externalcheck"></a>ExternalCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `ExternalCheck`, el programa previo ejecutará el programa externo con nombre en un proceso independiente y almacenar su código de salida en la propiedad indicada por `Property`. `ExternalCheck`es útil para implementar comprobaciones de dependencia complejas o cuando la única manera de comprobar la existencia de un componente es crear instancias de él.  
   
- `ExternalCheck` no contiene elementos y tiene los atributos siguientes.  
-  
-|Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`PackageFile`|Obligatorio.  El programa externo que se va a ejecutar.  El programa debe formar parte del paquete de distribución de instalación.|  
-|`Arguments`|Opcional.  Proporciona los argumentos de la línea de comandos a la aplicación ejecutable nombrada por `PackageFile`.|  
-  
-## FileCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  Para cada instancia de `FileCheck`, el arranque determinará si el archivo con nombre existe, y devolverá el número de versión del archivo.  Si el archivo no tiene un número de versión, el arranque establecerá en 0 la propiedad especificada por `Property`..  Si el archivo no existe, `Property` no se establece en ningún valor.  
-  
- `FileCheck` no contiene elementos y tiene los atributos siguientes.  
+ `ExternalCheck`no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`FileName`|Obligatorio.  Nombre del archivo que se va a buscar.|  
-|`SearchPath`|Obligatorio.  El disco o carpeta en la que buscar el archivo.  Debe ser una ruta de acceso relativa si se asigna `SpecialFolder`; en caso contrario, debe ser una ruta de acceso absoluta.|  
-|`SpecialFolder`|Opcional.  Una carpeta que tiene importancia especial para Windows o para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  El valor predeterminado es interpretar `SearchPath` como una ruta de acceso absoluta.  Los valores válidos son los siguientes:<br /><br /> `AppDataFolder`.  La carpeta de datos de esta aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; es específica para el usuario actual.<br /><br /> `CommonAppDataFolder`.  La carpeta de datos de la aplicación utilizada por todos los usuarios.<br /><br /> `CommonFilesFolder`.  La carpeta Archivos comunes del usuario actual.<br /><br /> `LocalDataAppFolder`.  La carpeta de datos para las aplicaciones no móviles.<br /><br /> `ProgramFilesFolder`.  La carpeta Archivos de programa estándar para las aplicaciones de 32 bits.<br /><br /> `StartUpFolder`.  La carpeta que contiene todas las aplicaciones iniciadas en el inicio del sistema.<br /><br /> `SystemFolder`.  La carpeta que contiene los archivos DLL del sistema de 32 bits.<br /><br /> `WindowsFolder`.  La carpeta que contiene la instalación del sistema de Windows.<br /><br /> `WindowsVolume`.  La unidad o partición que contiene la instalación del sistema de Windows.|  
-|`SearchDepth`|Opcional.  La profundidad con que buscar el archivo con nombre en las subcarpetas.  La búsqueda se realiza primero en profundidad.  El valor predeterminado es 0, lo que restringe la búsqueda a la carpeta de nivel superior especificada por `SpecialFolder` y **SearchPath**.|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`PackageFile`|Obligatorio. El programa externo para la ejecución. El programa debe formar parte de la distribución del paquete de instalación.|  
+|`Arguments`|Opcional. Proporcione argumentos de línea de comandos para el archivo ejecutable denominado por `PackageFile`.|  
   
-## MsiProductCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  En cada instancia de `MsiProductCheck`, el arranque comprueba si la instalación de Microsoft Windows Installer especificada se ha ejecutado hasta completarse.  El valor de propiedad se establece en función del estado del producto instalado.  Un valor positivo indica que el producto está instalado, 0 ó \-1 indican que no está instalado.  \(Consulte la función del SDK de Windows Installer MsiQueryFeatureState para obtener más información\). .  Si Windows Installer no está instalado en el equipo, no se ha configurado `Property`.  
+## <a name="filecheck"></a>FileCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `FileCheck`, el programa previo determinará si el archivo con nombre existe y devolver el número de versión del archivo. Si el archivo no tiene un número de versión, el programa previo establece la propiedad denominada por `Property` en 0. Si el archivo no existe, `Property` no está establecido en cualquier valor.  
   
- `MsiProductCheck` no contiene elementos y tiene los atributos siguientes.  
+ `FileCheck`no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`Product`|Obligatorio.  El GUID del producto instalado.|  
-|`Feature`|Opcional.  El GUID de una característica concreta de la aplicación instalada.|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`FileName`|Obligatorio. El nombre del archivo que desea buscar.|  
+|`SearchPath`|Obligatorio. El disco o la carpeta en la que se va a buscar el archivo. Debe ser una ruta de acceso relativa si `SpecialFolder` está asignado; en caso contrario, debe ser una ruta de acceso absoluta.|  
+|`SpecialFolder`|Opcional. Una carpeta que tiene una importancia especial para Windows o a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. El valor predeterminado es interpretar `SearchPath` como una ruta de acceso absoluta. Los valores válidos son los siguientes:<br /><br /> `AppDataFolder`. La carpeta de datos de aplicación para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la aplicación; específica del usuario actual.<br /><br /> `CommonAppDataFolder`. La carpeta de datos de aplicación utilizada por todos los usuarios.<br /><br /> `CommonFilesFolder`. La carpeta de archivos comunes para el usuario actual.<br /><br /> `LocalDataAppFolder`. La carpeta de datos para las aplicaciones no móvil.<br /><br /> `ProgramFilesFolder`. La carpeta de archivos de programa estándar para las aplicaciones de 32 bits.<br /><br /> `StartUpFolder`. La carpeta que contiene todas las aplicaciones que se inicia al iniciarse el sistema.<br /><br /> `SystemFolder`. La carpeta que contiene los archivos DLL del sistema de 32 bits.<br /><br /> `WindowsFolder`. La carpeta que contiene la instalación del sistema de Windows.<br /><br /> `WindowsVolume`. La unidad o partición que contiene la instalación del sistema de Windows.|  
+|`SearchDepth`|Opcional. La profundidad en la que se va a buscar en subcarpetas para el archivo con nombre. La búsqueda es la prioridad de profundidad. El valor predeterminado es 0, lo que limita la búsqueda a la carpeta de nivel superior especificada por `SpecialFolder` y **SearchPath**.|  
   
-## RegistryCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  En cada instancia de `RegistryCheck`, el arranque comprueba si existe la clave del Registro especificada o si tiene el valor indicado.  
+## <a name="msiproductcheck"></a>MsiProductCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `MsiProductCheck`, el programa previo comprueba si la instalación de Microsoft Windows Installer especificada ha ejecutado hasta su finalización. El valor de propiedad se establece según el estado del producto instalado. Un valor positivo indica que el producto está instalado, 0 ó -1 indica que no está instalado. (Vea la función de SDK de Windows Installer MsiQueryFeatureState para obtener más información). . Si Windows Installer no está instalado en el equipo, `Property` no se ha establecido.  
   
- `RegistryCheck` no contiene elementos y tiene los atributos siguientes.  
-  
-|Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Obligatorio.  Nombre de la clave del Registro.|  
-|`Value`|Opcional.  Nombre del valor del Registro que se va a recuperar.  El valor predeterminado es devolver el texto del valor predeterminado.  `Value` debe ser String o DWORD.|  
-  
-## RegistryFileCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`.  Por cada instancia de `RegistryFileCheck`, el arranque recupera la versión del archivo especificado, intentando primero recuperar la ruta de acceso al archivo desde la clave del Registro especificada.  Esto resulta especialmente útil si desea buscar un archivo en un directorio especificado como un valor del Registro.  
-  
- `RegistryFileCheck` no contiene elementos y tiene los atributos siguientes.  
+ `MsiProductCheck`no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Property`|Obligatorio.  El nombre de la propiedad que permite almacenar el resultado.  Se puede hacer referencia a esta propiedad desde una prueba debajo del elemento `InstallConditions`, que es un elemento secundario del elemento `Command`.  Para obtener más información, vea [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Obligatorio.  Nombre de la clave del Registro.  Su valor se interpreta como la ruta de acceso a un archivo, a menos que se establezca el atributo `File`.  Si esta clave no existe, no se establece `Property`.|  
-|`Value`|Opcional.  Nombre del valor del Registro que se va a recuperar.  El valor predeterminado es devolver el texto del valor predeterminado.  `Value` debe ser una cadena.|  
-|`FileName`|Opcional.  Nombre de un archivo .  Si se especifica, se supone que el valor obtenido de la clave del Registro es una ruta de acceso al directorio y dicho nombre se adjunta.  Si no se especifica, se supone que el valor devuelto del Registro es la ruta de acceso completa a un archivo.|  
-|`SearchDepth`|Opcional.  La profundidad con que buscar el archivo con nombre en las subcarpetas.  La búsqueda se realiza primero en profundidad.  El valor predeterminado es 0, lo que restringe la búsqueda a la carpeta de nivel superior especificada por el valor de la clave del Registro.|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Product`|Obligatorio. El GUID para el producto instalado.|  
+|`Feature`|Opcional. El GUID para una característica específica de la aplicación instalada.|  
   
-## Comentarios  
- Los elementos bajo `InstallChecks` definen las comprobaciones que se ejecutarán, pero no las ejecutan.  Para ejecutar las comprobaciones, es necesario crear elementos `Command` bajo el elemento `Commands`.  
+## <a name="registrycheck"></a>RegistryCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `RegistryCheck`, el programa previo comprueba si existe la clave del registro especificada o si tiene el valor indicado.  
   
-## Ejemplo  
- En el siguiente ejemplo de código se muestra el elemento `InstallChecks` tal y como se utiliza en el archivo de producto de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ `RegistryCheck`no contiene elementos y tiene los atributos siguientes.  
+  
+|Atributo|Descripción|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Key`|Obligatorio. Nombre de la clave del Registro.|  
+|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value`debe ser una cadena o un valor DWORD.|  
+  
+## <a name="registryfilecheck"></a>RegistryFileCheck  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `RegistryFileCheck`, el programa previo recupera la versión del archivo especificado, intentando primero recuperar la ruta de acceso al archivo de la clave del registro especificada. Esto es especialmente útil si desea buscar un archivo en un directorio especificado como un valor en el registro.  
+  
+ `RegistryFileCheck`no contiene elementos y tiene los atributos siguientes.  
+  
+|Atributo|Descripción|  
+|---------------|-----------------|  
+|`Property`|Obligatorio. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Key`|Obligatorio. Nombre de la clave del Registro. Su valor se interpreta como la ruta de acceso a un archivo, a menos que el `File` atributo está establecido. Si esta clave no existe, `Property` no se ha establecido.|  
+|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value`debe ser una cadena.|  
+|`FileName`|Opcional. El nombre de un archivo. Si se especifica, el valor obtenido de la clave del registro se supone que una ruta de acceso de directorio y este nombre se anexa a él. Si no se especifica, se supone que el valor devuelto del registro es la ruta de acceso completa a un archivo.|  
+|`SearchDepth`|Opcional. La profundidad en la que se va a buscar en subcarpetas para el archivo con nombre. La búsqueda es la prioridad de profundidad. El valor predeterminado es 0, lo que limita la búsqueda a la carpeta de nivel superior especificada por el valor de la clave del registro.|  
+  
+## <a name="remarks"></a>Comentarios  
+ Mientras que los elementos subyacentes `InstallChecks` definir las pruebas se ejecuten, no se ejecutan. Para ejecutar las pruebas, se debe crear `Command` elementos debajo del `Commands` elemento.  
+  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra la `InstallChecks` elemento tal y como se utiliza en el archivo del producto para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```  
 <InstallChecks>  
@@ -155,32 +155,32 @@ El elemento `InstallChecks` permite iniciar varias pruebas en relación con el e
 </InstallChecks>  
 ```  
   
-## InstallConditions  
- Cuando se evalúan `InstallChecks`, generan las propiedades.  Las condiciones `InstallConditions` utilizan a continuación las propiedades para determinar si un paquete debe instalarse, omitirse o producir un error.  En la tabla siguiente se muestran las condiciones `InstallConditions`:  
+## <a name="installconditions"></a>InstallConditions  
+ Cuando `InstallChecks` son evalúa, generan las propiedades. A continuación, se usan las propiedades `InstallConditions` para determinar si un paquete debe instalar, omitir o producirá un error. La siguiente tabla se recogen los `InstallConditions`:  
   
 |||  
 |-|-|  
-|`FailIf`|Si cualquier condición `FailIf` se evalúa como true, se producirá un error en el paquete.  El resto de las condiciones no se evaluarán.|  
-|`BypassIf`|Si alguna condición `BypassIf` se evalúa como true, se omitirá el paquete.  El resto de las condiciones no se evaluarán.|  
+|`FailIf`|Si cualquier `FailIf` condición se evalúa como true, se producirá un error en el paquete. No se evaluará el resto de las condiciones.|  
+|`BypassIf`|Si cualquier `BypassIf` condición se evalúa como true, se omitirá el paquete. No se evaluará el resto de las condiciones.|  
   
-## Propiedades predefinidas  
- En la tabla siguiente se muestran los elementos `BypassIf` y `FailIf`.  
+## <a name="predefined-properties"></a>Propiedades predefinidas  
+ La siguiente tabla se recogen los `BypassIf` y `FailIf` elementos:  
   
-|Propiedad.|Notas|Valores posibles|  
-|----------------|-----------|----------------------|  
-|`Version9X`|Número de versión de un sistema operativo Windows 9X.|4.10 \= Windows 98|  
-|`VersionNT`|Número de versión de un sistema operativo basado en Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 \= Windows 2000<br /><br /> 5.1.0 \= Windows XP<br /><br /> 5.1.2 \= Windows XP Professional SP2<br /><br /> 5.2.0 \= Windows Server 2003|  
-|`VersionNT64`|Número de versión de un sistema operativo basado en Windows NT de 64 bits.|Igual que el mencionado previamente.|  
-|`VersionMsi`|Número de versión del servicio de Windows Installer.|2.0 \= Windows Installer 2.0|  
-|`AdminUser`|Especifica si un usuario tiene privilegios de administrador en un sistema operativo basado en Windows NT.|0 \= sin privilegios de administrador<br /><br /> 1 \= con privilegios de administrador|  
+|Propiedad|Notas|Valores posibles|  
+|--------------|-----------|---------------------|  
+|`Version9X`|Número de versión del sistema operativo Windows 9 X.|4.10 = Windows 98|  
+|`VersionNT`|Número de versión del sistema operativo basado en Windows NT.|Principal.secundaria.servicepack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`VersionNT64`|Número de versión de un sistema operativo basado en Windows NT de 64 bits.|Igual que anteriormente mencionados.|  
+|`VersionMsi`|Número de versión del servicio Windows Installer.|2.0 = Windows Installer 2.0|  
+|`AdminUser`|Especifica si un usuario tiene privilegios de administrador en un sistema operativo basado en Windows NT.|0 no = privilegios de administrador<br /><br /> 1 = privilegios de administrador|  
   
- Por ejemplo, para bloquear la instalación en un equipo en el que se ejecuta Windows 95, utilice código como el siguiente:  
+ Por ejemplo, para bloquear la instalación en un equipo que ejecuta Windows 95, utilice código como el siguiente:  
   
 ```  
 <!-- Block install on Windows 95 -->  
-    <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
+    <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
 ```  
   
-## Vea también  
- [\<Commands\> \(Elemento\)](../deployment/commands-element-bootstrapper.md)   
+## <a name="see-also"></a>Vea también  
+ [\<Comandos > elemento](../deployment/commands-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
