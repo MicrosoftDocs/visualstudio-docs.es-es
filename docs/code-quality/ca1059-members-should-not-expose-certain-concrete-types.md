@@ -1,29 +1,30 @@
 ---
-title: "CA1059: Los miembros no deben exponer determinados tipos concretos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
-helpviewer_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
+title: 'CA1059: Los miembros no deben exponer determinados tipos concretos | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1059
+- MembersShouldNotExposeCertainConcreteTypes
+helpviewer_keywords:
+- MembersShouldNotExposeCertainConcreteTypes
+- CA1059
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d5b8b4a50ce23a7ed50f2e608334f9b438a0b090
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1059: Los miembros no deben exponer determinados tipos concretos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer determinados tipos concretos
 |||  
 |-|-|  
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|  
@@ -31,25 +32,25 @@ caps.handback.revision: 18
 |Categoría|Microsoft.Design|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- Un miembro visible externamente es de un tipo concreto o expone determinados tipos concretos a través de uno de sus parámetros o valores devueltos.  Actualmente, esta regla informa sobre la exposición de los tipos concretos siguientes:  
+## <a name="cause"></a>Motivo  
+ Un miembro visible externamente es un tipo concreto o expone determinados tipos concretos a través de uno de sus parámetros o valor devuelto. Actualmente, esta regla informa sobre la exposición de los siguientes tipos concretos:  
   
--   Tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.  
+-   Un tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.  
   
-## Descripción de la regla  
- Un tipo concreto es un tipo que tiene una implementación completa y, por consiguiente, se pueden crear instancias de él.  Para permitir un uso extendido del miembro, reemplace el tipo concreto por la interfaz sugerida.  Esto permite que el miembro acepte cualquier tipo que implemente la interfaz o que se utilice en aquellos puntos donde se espere un tipo que implementa la interfaz.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Un tipo concreto es un tipo que tiene una implementación completa y, por consiguiente, se pueden crear instancias de él. Para permitir un uso extendido del miembro, reemplace el tipo concreto por la interfaz sugerida. Esto permite que el miembro acepte cualquier tipo que implementa la interfaz o utilizarse donde se espera un tipo que implementa la interfaz.  
   
- La tabla siguiente muestra los tipos concretos específicos y sus reemplazos sugeridos.  
+ En la tabla siguiente se enumera los tipos concretos específicos y sus reemplazos sugeridos.  
   
-|Tipo concreto|Reemplazo|  
-|-------------------|---------------|  
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Al utilizar la interfaz, se desacopla el miembro de una implementación específica de un origen de datos XML.|  
+|Tipo concreto|Replacement|  
+|-------------------|-----------------|  
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Mediante la interfaz, desacopla al miembro de una implementación específica de un origen de datos XML.|  
   
-## Cómo corregir infracciones  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, cambie el tipo concreto por la interfaz sugerida.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir un mensaje de esta regla si se necesita la funcionalidad concreta prestada por el tipo concreto.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir un mensaje de esta regla si se necesita la funcionalidad específica que proporciona el tipo concreto.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1011: Considere pasar los tipos base como parámetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

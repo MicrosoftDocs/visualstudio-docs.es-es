@@ -1,53 +1,54 @@
 ---
-title: "$1...$9 (Propiedades,RegExp de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$1...$9"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "$1...$9 (propiedades)"
+title: $1... $9 (propiedades, RegExp) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $1...$9
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc1926d6281c9003c432c9c9e89a73a48a584ef4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# $1...$9 (Propiedades,RegExp de JavaScript)
-Devuelve las nueve partes memorizadas más recientemente que se encontraron durante la coincidencia de patrones.  Es de solo lectura.  
+# <a name="19-properties-regexp-javascript"></a>$1...$9 (Propiedades,RegExp de JavaScript)
+Devuelve que las nueve memorizadas más recientemente que las partes que se encontró durante la coincidencia de patrones. Sólo lectura.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 RegExp.$n   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `RegExp`  
- Siempre es el objeto `RegExp` global.  
+ Siempre global `RegExp` objeto.  
   
  `n`  
- Cualquier entero entre 1 y 9.  
+ Cualquier número entero comprendido entre 1 y 9.  
   
-## Comentarios  
- Los valores de las propiedades **$1...$9** se modifican cada vez que se obtiene una coincidencia correcta entre paréntesis.  En un patrón de expresión regular se puede especificar cualquier número de subcadenas entre paréntesis, pero solo se pueden almacenar las nueve más recientes.  
+## <a name="remarks"></a>Comentarios  
+ Los valores de la **$1... $9** se modifican propiedades siempre que se realiza una coincidencia correcta entre paréntesis. Se puede especificar cualquier número de subcadenas entre paréntesis en un patrón de expresión regular, pero se pueden almacenar las nueve más recientes.  
   
-## Ejemplo  
- En el ejemplo siguiente se realiza una búsqueda de expresiones regulares.  Muestra coincidencias y subcoincidencias del objeto `RegExp` global.  Las subcoincidencias son coincidencias entre paréntesis correctas contenidas en las propiedades `$1…$9`.  En el ejemplo también se muestran coincidencias y subcoincidencias de la matriz devuelta por el método `exec`.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se realiza una búsqueda de expresión regular. Muestra coincidencias y submatches desde global `RegExp` objeto. Las subcoincidencias son coincidencia correcta entre paréntesis que figuran en la `$1...$9` propiedades. En el ejemplo también muestra las coincidencias y submatches de la matriz devuelta por la `exec` método.  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var re = /(\w+)@(\w+)\.(\w+)/g  
@@ -103,10 +104,10 @@ document.write(s);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [RegExp \(Objeto\)](../../javascript/reference/regexp-object-javascript.md)  
+ **Se aplica a**: [RegExp (objeto)](../../javascript/reference/regexp-object-javascript.md)  
   
-## Vea también  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/es-es/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Vea también  
+ [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

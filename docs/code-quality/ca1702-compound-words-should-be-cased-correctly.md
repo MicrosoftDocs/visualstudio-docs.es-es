@@ -1,58 +1,58 @@
 ---
-title: "CA1702: En las palabras compuestas se deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1702"
-  - "CompoundWordsShouldBeCasedCorrectly"
-helpviewer_keywords: 
-  - "CA1702"
-  - "CompoundWordsShouldBeCasedCorrectly"
+title: "CA1702: En las palabras compuestas deben ser mayúsculas y minúsculas correctamente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1702
+- CompoundWordsShouldBeCasedCorrectly
+helpviewer_keywords:
+- CA1702
+- CompoundWordsShouldBeCasedCorrectly
 ms.assetid: 05481245-7ad8-48c3-a456-3aa44b6160a6
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9c8606656b7ffe5f64c4c162b85d24bdbd9b1de0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1702: En las palabras compuestas se deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente
 |||  
 |-|-|  
 |TypeName|CompoundWordsShouldBeCasedCorrectly|  
 |Identificador de comprobación|CA1702|  
 |Categoría|Microsoft.Naming|  
-|Cambio problemático|Problemático: cuando se desencadena en ensamblados.<br /><br /> No problemático: cuando se desencadena en parámetros de tipo.|  
+|Cambio problemático|Importante cuando se desencadena en los ensamblados.<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo.|  
   
-## Motivo  
- El nombre de un identificador contiene varias palabras y al menos una de ellas parece ser una palabra compuesta en la que no se utilizan correctamente las mayúsculas y minúsculas.  
+## <a name="cause"></a>Motivo  
+ El nombre de un identificador contiene varias palabras y al menos una de las palabras parece ser una palabra compuesta en la que no se las mayúsculas y minúsculas correctamente.  
   
-## Descripción de la regla  
- El nombre del identificador se divide en palabras que se basan en el uso de mayúsculas y minúsculas.  La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos palabras contiguas.  Si la reconoce, el identificador genera una infracción de la regla.  Ejemplos de palabras compuestas que originan una infracción son "CheckSum" y "MultiPart", que deberían escribirse como "Checksum" y "Multipart", respectivamente.  Debido a un uso común anterior, hay excepciones que tienen cabida en la regla, y se marcan algunas palabras únicas, como "Toolbar" y "Filename", en las que se deberían utilizar las mayúsculas y minúsculas como si se tratase de dos palabras distintas \(en este caso, "ToolBar" y "FileName"\).  
+## <a name="rule-description"></a>Descripción de la regla  
+ El nombre del identificador se divide en palabras que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos palabras contigua. Si se reconoce, el identificador genera una infracción de la regla. Ejemplos de palabras compuestas que producen una infracción son "CheckSum" y "MultiPart", que debe escribirse como "Checksum" y "Multipart", respectivamente. Debido a un uso común anterior, se generan varias excepciones en la regla, y se marcan algunas palabras únicas, como "Toolbar" y "Filename", que deberían escribirse como dos palabras distintas (en este caso, "ToolBar" y "FileName").  
   
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime.  Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
   
-## Cómo corregir infracciones  
- Cambie el nombre utilizando las mayúsculas correctamente.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Cambie el nombre para que lo es mayúsculas y minúsculas correctamente.  
   
-## Cuándo suprimir advertencias  
- Puede suprimir de forma segura una advertencia de esta regla si el diccionario ortográfico reconoce ambas partes de la palabra compuesta y se pretende utilizar dos palabras.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla si ambas partes de la palabra compuesta se reconocen por el diccionario de ortografía y la intención es usar dos o más palabras.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
-## Vea también  
- [Instrucciones de nomenclatura](../Topic/Naming%20Guidelines.md)   
- [Convenciones de mayúsculas y minúsculas](../Topic/Capitalization%20Conventions.md)
+## <a name="see-also"></a>Vea también  
+ [Las directrices de nomenclatura](/dotnet/standard/design-guidelines/naming-guidelines)   
+ [Convenciones de mayúsculas y minúsculas](/dotnet/standard/design-guidelines/capitalization-conventions)

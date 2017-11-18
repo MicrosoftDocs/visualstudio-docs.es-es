@@ -1,49 +1,51 @@
 ---
-title: "dimensions (M&#233;todo, VBArray de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "dimensions"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "dimensions (método)"
-  - "VBArray (constante de objeto)"
+title: "Dimensions (método, VBArray) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: dimensions
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dimensions method
+- VBArray object constant
 ms.assetid: ac83589e-85d9-48cb-b28d-c579e65fd604
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9896a5beced00614a825b1921b6046b0ac8a396a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# dimensions (M&#233;todo, VBArray de JavaScript)
+# <a name="dimensions-method-vbarray-javascript"></a>dimensions (Método, VBArray de JavaScript)
 Devuelve el número de dimensiones de un objeto VBArray.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
-array.dimensions( )  
+array.dimensions( )   
 ```  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  La *matriz* necesaria es un objeto VBArray.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  El método **dimensions** proporciona una forma de recuperar el número de dimensiones en un objeto VBArray especificado.  
   
- El siguiente ejemplo consta de tres partes. La primera parte es código VBScript para crear una matriz segura de Visual Basic. La segunda parte es código [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que determina el número de dimensiones en la matriz segura y el límite superior de cada dimensión. Ambas partes van en la sección \<HEAD\> de una página HTML. La tercera parte es el código [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que va en la sección \<BODY\> para ejecutar las otras dos partes.  
+ El siguiente ejemplo consta de tres partes. La primera parte es código VBScript para crear una matriz segura de Visual Basic. La segunda parte es código [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que determina el número de dimensiones en la matriz segura y el límite superior de cada dimensión. Ambas partes van en la \<HEAD > sección de una página HTML. La tercera parte es el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] código que va en la \<BODY > para ejecutar las otras dos partes.  
   
-```javascript  
+```JavaScript  
 <head>  
 <script type="text/vbscript">  
 <!--  
@@ -89,13 +91,13 @@ function VBArrayTest(vba)
 </body>  
 ```  
   
-## Requisitos  
- Se admite en los siguientes modos de documento: Modo de interpretación, estándar de Internet Explorer 6, estándar de Internet Explorer 7, estándar de Internet Explorer 8, estándar de Internet Explorer 9 y estándar de Internet Explorer 10. No se admite en aplicaciones de [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]. Consulte [Información de versión](../../javascript/reference/javascript-version-information.md).  
+## <a name="requirements"></a>Requisitos  
+ Se admite en los siguientes modos de documento: Modo de interpretación, estándar de Internet Explorer 6, estándar de Internet Explorer 7, estándar de Internet Explorer 8, estándar de Internet Explorer 9 y estándar de Internet Explorer 10. No se admite en aplicaciones de [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] . Consulte [Información de versión](../../javascript/reference/javascript-version-information.md).  
   
- **Se aplica a**: [VBArray \(Objeto\)](../../javascript/reference/vbarray-object-javascript.md)  
+ **Se aplica a**: [VBArray Object](../../javascript/reference/vbarray-object-javascript.md)  
   
-## Vea también  
- [getItem \(Método, VBArray\)](../../javascript/reference/getitem-method-vbarray-javascript.md)   
- [lbound \(Método, VBArray\)](../../javascript/reference/lbound-method-vbarray-javascript.md)   
- [toArray \(Método, VBArray\)](../../javascript/reference/toarray-method-vbarray-javascript.md)   
- [ubound \(Método, VBArray\)](../../javascript/reference/ubound-method-vbarray-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getItem (método, VBArray)](../../javascript/reference/getitem-method-vbarray-javascript.md)   
+ [LBound (método, VBArray)](../../javascript/reference/lbound-method-vbarray-javascript.md)   
+ [toArray (método, VBArray)](../../javascript/reference/toarray-method-vbarray-javascript.md)   
+ [ubound (Método, VBArray)](../../javascript/reference/ubound-method-vbarray-javascript.md)

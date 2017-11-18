@@ -1,54 +1,55 @@
 ---
-title: "call (M&#233;todo, Function de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "call"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "call (método)"
+title: "Llame al método (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: call
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: call method
 ms.assetid: fa356dec-48e6-4f75-8bf3-c1814a76818f
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ef871f85459ad875a747ae79c7c054b30a82e55
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# call (M&#233;todo, Function de JavaScript)
-Llama a un método de un objeto y sustituye el objeto actual por otro objeto.  
+# <a name="call-method-function-javascript"></a>call (Método, Function de JavaScript)
+Llama a un método de un objeto y sustituye otro objeto para el objeto actual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 call([thisObj[, arg1[, arg2[,  [, argN]]]]])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `thisObj`  
- Opcional.  Objeto que se va a utilizar como objeto actual.  
+ Opcional. El objeto que se usará como el objeto actual.  
   
  `arg1, arg2, , argN`  
- Opcional.  Lista de argumentos que se van a pasar al método.  
+ Opcional. Una lista de argumentos que se pasarán al método.  
   
-## Comentarios  
- El método `call` se usa para llamar a un método en nombre de otro objeto.  Permite cambiar el objeto `this` de una función del contexto original al nuevo objeto especificado por  `thisObj`.  
+## <a name="remarks"></a>Comentarios  
+ El `call` método se usa para llamar a un método en nombre de otro objeto. Permite cambiar la `this` objeto de una función del contexto original al nuevo objeto especificado por `thisObj`.  
   
- Si no se proporciona el argumento `thisObj`, el objeto `global` se utiliza como argumento `thisObj`.  
+ Si `thisObj` no se proporciona, el `global` objeto se usa como `thisObj`.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el código siguiente se muestra cómo puede utilizar el método `call`.  
   
-```javascript  
+```JavaScript  
 function callMe(arg1, arg2){  
     var s = "";  
   
@@ -81,9 +82,9 @@ document.write(callMe.call(3, 4, 5));
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Vea también  
- [Function \(Objeto\)](../../javascript/reference/function-object-javascript.md)   
- [apply \(Método, Function\)](../../javascript/reference/apply-method-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)   
+ [apply (Método, Function)](../../javascript/reference/apply-method-function-javascript.md)

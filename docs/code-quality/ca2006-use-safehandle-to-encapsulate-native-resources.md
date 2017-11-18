@@ -1,29 +1,30 @@
 ---
-title: "CA2006: Utilizar SafeHandle para encapsular recursos nativos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2006"
-  - "UseSafeHandleToEncapsulateNativeResources"
-helpviewer_keywords: 
-  - "UseSafeHandleToEncapsulateNativeResources"
-  - "CA2006"
+title: 'CA2006: Utilizar SafeHandle para encapsular recursos nativos | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2006
+- UseSafeHandleToEncapsulateNativeResources
+helpviewer_keywords:
+- UseSafeHandleToEncapsulateNativeResources
+- CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b83aec0a44e0762ed2d65f9bbbd39318b1b1b942
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2006: Utilizar SafeHandle para encapsular recursos nativos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Utilizar SafeHandle para encapsular recursos nativos
 |||  
 |-|-|  
 |TypeName|UseSafeHandleToEncapsulateNativeResources|  
@@ -31,21 +32,21 @@ caps.handback.revision: 16
 |Categoría|Microsoft.Reliability|  
 |Cambio problemático|Poco problemático|  
   
-## Motivo  
- El código administrado utiliza <xref:System.IntPtr> para tener acceso a los recursos nativos.  
+## <a name="cause"></a>Motivo  
+ El código administrado utiliza <xref:System.IntPtr> para tener acceso a recursos nativos.  
   
-## Descripción de la regla  
- El uso de `IntPtr` en código administrado podría indicar un posible problema para la seguridad y la confiabilidad.  Todos los usos de `IntPtr` se deben revisar para determinar se necesita utilizar en su lugar <xref:System.Runtime.InteropServices.SafeHandle> o una tecnología similar.  Se producirá un problema si `IntPtr` representa algún recurso nativo, como memoria, un identificador de archivos o un socket que el código administrado considere de su propiedad.  Si el código administrado posee el recurso, también debe liberar los recursos nativos asociados a él, porque si no lo hace se produciría la pérdida de recursos.  
+## <a name="rule-description"></a>Descripción de la regla  
+ El uso de `IntPtr` en código administrado podría indicar un posible problema de seguridad y confiabilidad. Todos los usos de `IntPtr` se deben revisar para determinar si el uso de un <xref:System.Runtime.InteropServices.SafeHandle> , o una tecnología similar, es necesario en su lugar. Problemas si la `IntPtr` representa algún recurso nativo, como la memoria, un identificador de archivo o un socket, que el código administrado se considera que posea. Si el código administrado posee el recurso, deben liberar los recursos nativos asociados con él, porque un error al hacerlo provocaría la pérdida de recursos.  
   
- En estos casos, además existirán problemas de seguridad o confiabilidad si se permite el acceso multithreading a `IntPtr` y se proporciona una manera de liberar el recurso representado por `IntPtr`.  Estos problemas implican el reciclaje del valor `IntPtr` al liberar el recurso mientras en otro subproceso se está utilizando el mismo recurso simultáneamente.  Esto puede producir condiciones de carrera en las que un subproceso puede leer o escribir datos que están asociados al recurso equivocado.  Por ejemplo, si el tipo almacena un identificador OS como `IntPtr` y permite a los usuarios llamar a **Close** y a cualquier otro método que utilice simultáneamente este indicador, y sin que exista algún tipo de sincronización, el código sufrirá un problema de reciclaje de indicadores.  
+ En estos escenarios, problemas de seguridad ni confiabilidad también existirá si se permite el acceso multiproceso a la `IntPtr` y una manera de liberar el recurso representado por el `IntPtr` se proporciona. Estos problemas incluyen el reciclaje del `IntPtr` valor al liberar el recurso mientras se realiza un uso simultáneo del recurso en otro subproceso. Esto puede producir condiciones de carrera en un subproceso puede leer o escribir los datos que está asociados al recurso incorrecto. Por ejemplo, si el tipo almacena un identificador del sistema operativo como un `IntPtr` y permite a los usuarios llamar a ambos **cerrar** y cualquier otro método que utiliza ese controlador simultáneamente y sin algún tipo de sincronización, el código tiene un identificador de reciclaje problema.  
   
- Este problema de reciclado de identificadores puede producir daños en los datos y, con frecuencia, una vulnerabilidad de seguridad.  Su clase `T:System.Runtime.InteropServices.CriticalHandle` y la clase del mismo nivel [SafeHandle](assetId:///SafeHandle?qualifyHint=False&autoUpgrade=True) proporcionan un mecanismo para encapsular un controlador nativo a un recurso para que se puedan evitar tales problemas del subprocesamiento.  Además, puede utilizar `SafeHandle` y su clase secundaria relacionada `CriticalHandle` para otros problemas con subprocesos, por ejemplo, para controlar la duración de los objetos administrados que contienen una copia del indicador nativo sobre las llamadas a los métodos nativos.  En esta situación, con frecuencia se puede quitar las llamadas a `GC.KeepAlive`.  La sobrecarga de rendimiento causada al utilizar `SafeHandle` y, en menor grado, `CriticalHandle`, se puede reducir con frecuencia a través de un diseño cuidadoso.  
+ Este identificador de reciclaje de problema puede provocar daños en los datos y, con frecuencia, una vulnerabilidad de seguridad. `SafeHandle`y su clase secundaria relacionada <xref:System.Runtime.InteropServices.CriticalHandle> proporcionan un mecanismo para encapsular un identificador nativo a un recurso para que se pueden evitar estos problemas de subprocesamiento. Además, puede usar `SafeHandle` y su clase secundaria relacionada `CriticalHandle` para otros problemas de subprocesamiento, por ejemplo, para controlar la duración de objetos administrados que contienen una copia del identificador nativo sobre las llamadas a métodos nativos. En esta situación, a menudo puede quitar las llamadas a `GC.KeepAlive`. El rendimiento es posible sobrecarga se producen cuando se usa `SafeHandle` y, en menor grado, `CriticalHandle`, con frecuencia puede reducirse mediante un diseño cuidadoso.  
   
-## Cómo corregir infracciones  
- Convierta el uso de `IntPtr` en `SafeHandle` para administrar sin ningún riesgo el acceso a los recursos nativos.  Vea el tema de referencia de <xref:System.Runtime.InteropServices.SafeHandle> para obtener ejemplos.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Convertir `IntPtr` uso con respecto a `SafeHandle` para administrar el acceso a los recursos nativos de forma segura. Vea el <xref:System.Runtime.InteropServices.SafeHandle> tema de referencia para obtener ejemplos.  
   
-## Cuándo suprimir advertencias  
- Esta advertencia no se debe suprimir.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No se debe suprimir esta advertencia.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:System.IDisposable>

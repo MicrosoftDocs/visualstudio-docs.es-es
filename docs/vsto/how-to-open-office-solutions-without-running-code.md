@@ -1,57 +1,59 @@
 ---
-title: "C&#243;mo: Abrir soluciones de Office sin ejecutar c&#243;digo"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ensamblados [desarrollo de Office en Visual Studio], omitir"
-  - "excluir ensamblados"
-  - "documentos [desarrollo de Office en Visual Studio], abrir sin ejecutar código"
-  - "documentos de Office [desarrollo de Office en Visual Studio], abrir sin ejecutar código"
-  - "soluciones de Office [desarrollo de Office en Visual Studio], abrir"
-  - "abrir soluciones de Office"
-  - "soluciones [desarrollo de Office en Visual Studio], abrir"
+title: "Cómo: abrir soluciones de Office sin ejecutar código | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office solutions [Office development in Visual Studio], opening
+- opening Office solutions
+- bypassing assemblies
+- solutions [Office development in Visual Studio], opening
+- assemblies [Office development in Visual Studio], bypassing
+- Office documents [Office development in Visual Studio, opening without running code
+- documents [Office development in Visual Studio], opening without running code
 ms.assetid: a853d91c-9fd6-421a-b3a2-956b6b494b96
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Abrir soluciones de Office sin ejecutar c&#243;digo
-  Una solución de Microsoft Office creada con extensiones de código administrado se ejecutará aunque la configuración de seguridad de la aplicación de Office del usuario final esté establecida en Alta.  Esto obedece a que la seguridad del código de ensamblado de .NET es administrada por Microsoft .NET Framework y no por Microsoft Office.  
+# <a name="how-to-open-office-solutions-without-running-code"></a>Cómo: Abrir soluciones de Office sin ejecutar código
+  Una solución de Microsoft Office creada con las extensiones de código administrado se ejecuta aunque la configuración de seguridad en la aplicación de Office del usuario final se establece en alta. Esto es porque la seguridad del código de ensamblado .NET está administrado por Microsoft .NET Framework, no por Microsoft Office.  
   
- No obstante, pueden existir varios motivos que aconsejen abrir un documento sin ejecutar el código.  Por ejemplo, el código que se ejecuta cuando se abre el documento podría alterar el contenido, pero el usuario desea actualizar el aspecto del documento antes de que el código lo cambie.  O bien, quizás desee enviar a alguien el documento con determinada información y no desee ejecutar el código y, posiblemente, alterar el contenido.  
+ Sin embargo, hay ocasiones cuando desea abrir un documento sin ejecutar el código. Por ejemplo, código que se ejecuta cuando se abre el documento podría alterar el contenido, pero desea actualizar el aspecto del documento antes de los cambios de código. O desea enviar el documento con cierta información en ella a otra persona, y no desea que el código para ejecutar y posiblemente modificar su contenido.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Existen varias formas de abrir un documento o un libro que contenga extensiones de código administrado sin ejecutar el código de ensamblado.  
+ Hay varias maneras de abrir un documento o un libro que contiene las extensiones de código administrado sin ejecutar el código de ensamblado.  
   
-### Para omitir el ensamblado usando la tecla MAYÚS  
+### <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Para omitir el ensamblado usando la tecla MAYÚS  
   
--   Abra los documentos y libros desde el menú **Archivo** manteniendo presionada la tecla MAYÚS para evitar que Word y Excel provoquen eventos de inicialización mientras el documento está abriéndose.  
+-   Abrir documentos y libros desde el **archivo** menú mientras mantiene presionada la tecla MAYÚS para impedir que generar eventos de inicialización mientras se abre el documento de Word y Excel.  
   
     > [!NOTE]  
-    >  Si abre un documento o libro desde el panel de tareas **Introducción**, al mantener presionada la tecla MAYÚS no se omite el código.  Asimismo, manteniendo presionada la tecla MAYÚS no se impide que se produzcan eventos después de abrir el documento.  
+    >  Si abre un documento o libro desde el **Introducción** panel de tareas, mantenga presionada la tecla MAYÚS no omite el código. Además, manteniendo presionada la tecla MAYÚS no evita que los eventos que se produzca después de abrir el documento.  
   
      Este método es útil si desea abrir un documento para realizar cambios sin ejecutar el código y modificar primero el documento.  
   
-### Para omitir un ensamblado cambiándole el nombre o quitándolo  
+### <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Para omitir un ensamblado con el cambio de nombre o eliminarlo  
   
--   Si tiene los permisos necesarios en el equipo donde está ubicado el ensamblado, puede quitarlo o cambiar su nombre para que tanto el documento como el libro no puedan encontrarlo.  Esto hace que se produzca un error cada vez que se abre el documento de Office.  
+-   Si tiene los permisos necesarios en el equipo donde se encuentra el ensamblado, puede cambiar el nombre o quite el ensamblado para que el documento o libro no se puede encontrar. Esto genera un error que se produce cada vez que se abre el documento de Office.  
   
-     Si la solución es utilizada por varias personas, con este método se impide que la solución se ejecute para todas ellas.  Esto puede resultar útil si se encuentra un problema en el código o en un servidor al que se hace referencia y desea impedir que lo ejecuten todos los usuarios.  
+     Si la solución es utilizada por varias personas, este método impide que la solución se ejecuta para todas ellas. Esto puede resultar útil si se encuentra un problema en el código o un servidor que se hace referencia y desea evitar que los usuarios lo ejecuten.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Asegurar las soluciones de Office](../vsto/securing-office-solutions.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   

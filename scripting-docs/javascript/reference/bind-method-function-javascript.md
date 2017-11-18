@@ -1,60 +1,63 @@
 ---
-title: "bind (M&#233;todo, Function de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "argumentos [JavaScript], bind (método)"
-  - "bind (método) [JavaScript]"
-  - "parámetros [JavaScript], bind (método)"
-  - "esta palabra clave [JavaScript], bind (método)"
+title: "Bind (método) (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parameters [JavaScript], bind method
+- arguments [JavaScript], bind method
+- bind method [JavaScript]
+- this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd7fc752df9bd41f8625ac2cb484486dfd19558d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# bind (M&#233;todo, Function de JavaScript)
-Para una función determinada, crea una función enlazada con el mismo cuerpo que la función original.  En la función enlazada, el objeto `this` se resuelve en el objeto pasado.  La función enlazada tiene los parámetros iniciales especificados.  
+# <a name="bind-method-function-javascript"></a>bind (Método, Function de JavaScript)
+Para una función determinada, crea una función enlazada con el mismo cuerpo que la función original. En la función enlazada, el objeto `this` se resuelve en el objeto pasado. La función enlazada tiene los parámetros iniciales especificados.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 function.bind(thisArg[,arg1[,arg2[,argN]]])  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `function`  
- Obligatorio.  Objeto de función.  
+ Obligatorio. Objeto de función.  
   
  `thisArg`  
- Obligatorio.  Objeto al que se puede hacer referencia dentro de la nueva función, mediante la palabra clave `this`.  
+ Obligatorio. Objeto al que se puede hacer referencia dentro de la nueva función, mediante la palabra clave `this`.  
   
- `arg1`\[,`arg2`\[,`argN`\]\]\]  
- Opcional.  Lista de argumentos que se pasarán a la nueva función.  
+ `arg1`[,`arg2`[,`argN`]]]  
+ Opcional. Lista de argumentos que se pasarán a la nueva función.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Nueva función que es igual que la función `function`, excepto el objeto `thisArg` y los argumentos iniciales.  
   
-## Excepciones  
+## <a name="exceptions"></a>Excepciones  
  Si el parámetro `function` especificado no es una función, se produce una excepción `TypeError`.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el código siguiente se muestra cómo puede utilizar el método `bind`.  
   
-```javascript  
+```JavaScript  
 // Define the original function.  
 var checkNumericRange = function (value) {  
     if (typeof value !== 'number')  
@@ -76,10 +79,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente, el objeto `thisArg` es diferente del objeto que contiene el método original.  
   
-```javascript  
+```JavaScript  
 // Create an object that contains the original function.  
 var originalObject = {  
     minimum: 50,  
@@ -109,10 +112,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Ejemplo  
- En el código siguiente se muestra cómo utilizar los argumentos `arg1[,arg2[,argN]]]`.  La función enlazada utiliza los parámetros especificados en el método `bind` como primer y segundo parámetros.  Todos los parámetros especificados cuando se llama a la función enlazada se utilizan como el tercer o cuarto parámetro \(y así sucesivamente\).  
+## <a name="example"></a>Ejemplo  
+ En el código siguiente se muestra cómo utilizar los argumentos `arg1[,arg2[,argN]]]`. La función enlazada utiliza los parámetros especificados en el método `bind` como primer y segundo parámetros. Todos los parámetros especificados cuando se llama a la función enlazada se utilizan como el tercer o cuarto parámetro (y así sucesivamente).  
   
-```javascript  
+```JavaScript  
 // Define the original function with four parameters.  
 var displayArgs = function (val1, val2, val3, val4) {  
     document.write(val1 + " " + val2 + " " + val3 + " " + val4);  
@@ -130,11 +133,11 @@ displayArgs2("b", "c");
 // Output: 12 a b c   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Function \(Objeto\)](../../javascript/reference/function-object-javascript.md)   
- [filter \(Método, Array\)](../../javascript/reference/filter-method-array-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Objeto de función](../../javascript/reference/function-object-javascript.md)   
+ [filtrar (método, Array)](../../javascript/reference/filter-method-array-javascript.md)   
  [Utilizar el método bind](../../javascript/advanced/using-the-bind-method-javascript.md)   
- [Aplicación de ejemplo Hilo JavaScript \(Tienda Windows\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [Aplicación de ejemplo de JavaScript de hilo (tienda Windows)](http://hilojs.codeplex.com/SourceControl/latest)

@@ -1,11 +1,10 @@
 ---
-title: 'CA2227: Collection properties should be read only | Microsoft Docs'
+title: "CA2227: Propiedades de la colección deben ser de solo lectura | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,57 +14,44 @@ helpviewer_keywords:
 - CA2227
 - CollectionPropertiesShouldBeReadOnly
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0134a75b966d0d65b30691c22cfd03e223c8bdbd
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: df23ab2259bc8042b9a9782ff9f7a15ac349a1c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Collection properties should be read only
+# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 |||  
 |-|-|  
 |TypeName|CollectionPropertiesShouldBeReadOnly|  
-|CheckId|CA2227|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Breaking|  
+|Identificador de comprobación|CA2227|  
+|Categoría|Microsoft.Usage|  
+|Cambio problemático|Problemático|  
   
-## <a name="cause"></a>Cause  
- An externally visible writable property is a type that implements <xref:System.Collections.ICollection?displayProperty=fullName>. Arrays, indexers (properties with the name 'Item'), and permission sets are ignored by the rule.  
+## <a name="cause"></a>Motivo  
+ Una propiedad de escritura visible externamente es un tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. La regla omite las matrices, los indizadores (propiedades con el nombre 'Item') y conjuntos de permisos.  
   
-## <a name="rule-description"></a>Rule Description  
- A writable collection property allows a user to replace the collection with a completely different collection. A read-only property stops the collection from being replaced but still allows the individual members to be set. If replacing the collection is a goal, the preferred design pattern is to include a method to remove all the elements from the collection and a method to re-populate the collection. See the <xref:System.Collections.ArrayList.Clear%2A> and <xref:System.Collections.ArrayList.AddRange%2A> methods of the <xref:System.Collections.ArrayList?displayProperty=fullName> class for an example of this pattern.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Una propiedad de colección grabable permite al usuario reemplazar la colección por otra completamente diferente. Una propiedad de sólo lectura impide que la colección se reemplace, pero sí permite establecer miembros individuales. Si su objetivo es reemplazar la colección, el patrón de diseño preferido consiste en incluir un método para quitar todos los elementos de la colección y un método para volver a rellenar la colección. Consulte la <xref:System.Collections.ArrayList.Clear%2A> y <xref:System.Collections.ArrayList.AddRange%2A> métodos de la <xref:System.Collections.ArrayList?displayProperty=fullName> clase para obtener un ejemplo de este patrón.  
   
- Both binary and XML serialization support read-only properties that are collections. The <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> class has specific requirements for types that implement <xref:System.Collections.ICollection> and <xref:System.Collections.IEnumerable?displayProperty=fullName> in order to be serializable.  
+ Serialización XML y binaria admiten propiedades de solo lectura que son colecciones. El <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> clase tiene requisitos específicos para los tipos que implementan <xref:System.Collections.ICollection> y <xref:System.Collections.IEnumerable?displayProperty=fullName> para que sean serializables.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the property read-only and, if the design requires it, add methods to clear and re-populate the collection.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, convierta la propiedad de solo lectura y, si lo requiere el diseño, agregue métodos para borrar y volver a rellenar la colección.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla.  
   
-## <a name="example"></a>Example  
- The following example shows a type with a writable collection property and shows how the collection can be replaced directly. Additionally, the preferred manner of replacing a read-only collection property using `Clear` and `AddRange` methods is shown.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra un tipo con una propiedad de colección grabable y muestra cómo se puede reemplazar la colección directamente. Además, la forma preferida de sustitución de una propiedad de colección de solo lectura mediante `Clear` y `AddRange` se muestran los métodos.  
   
- [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)] [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)] [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CPP/ca2227-collection-properties-should-be-read-only_1.cpp)]  
+ [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
+ [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
+ [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CPP/ca2227-collection-properties-should-be-read-only_1.cpp)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1819: Properties should not return arrays](../code-quality/ca1819-properties-should-not-return-arrays.md)
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA1819: Las propiedades no deberían devolver matrices](../code-quality/ca1819-properties-should-not-return-arrays.md)

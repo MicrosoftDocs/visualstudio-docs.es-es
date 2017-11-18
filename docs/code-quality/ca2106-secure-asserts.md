@@ -1,30 +1,30 @@
 ---
-title: "CA2106: Asegurar aserciones | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2106"
-  - "SecureAsserts"
-helpviewer_keywords: 
-  - "CA2106"
-  - "SecureAsserts"
+title: 'CA2106: Asegurar aserciones | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2106
+- SecureAsserts
+helpviewer_keywords:
+- CA2106
+- SecureAsserts
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 321d00f13ebc891070549778239fec60201d03c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2106: Asegurar aserciones
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2106-secure-asserts"></a>CA2106: Asegurar aserciones
 |||  
 |-|-|  
 |TypeName|SecureAsserts|  
@@ -32,18 +32,18 @@ manager: "wpickett"
 |Categoría|Microsoft.Security|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un método valida un permiso y no se realiza ninguna comprobación de seguridad en el llamador.  
   
-## Descripción de la regla  
- Validar un permiso de seguridad sin realizar ninguna comprobación de seguridad puede dejar una debilidad de seguridad explotable en el código.  Un recorrido de pila de seguridad se detiene cuando se somete a aserción un permiso de seguridad.  Si valida un permiso sin realizar ninguna comprobación en el llamador, éste último podría ejecutar código indirectamente utilizando los permisos del usuario.  Las aserciones sin comprobaciones de seguridad solo se permiten si está seguro de que la aserción no se puede utilizar de una manera dañina.  Una aserción es inocua si el código al que llama es inocuo, o los usuarios no pueden pasar información arbitraria al código al que llama.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Validar un permiso de seguridad sin realizar ninguna comprobación de seguridad puede dejar una debilidad de seguridad explotable en el código. Un recorrido de pila de seguridad se detiene cuando se impone un permiso de seguridad. Si valida un permiso sin realizar ninguna comprobación en el llamador, el autor de la llamada podría ejecutar código indirectamente mediante el uso de sus permisos. Las aserciones sin comprobaciones de seguridad están permitidas sólo cuando esté seguro de que la aserción no se puede usar de manera perjudicial. Una aserción es inofensiva si el código que se llama es inocuo o los usuarios no pueden pasar información arbitraria al código que llama.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, agregue una demanda de seguridad al método o a su tipo declarativo.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, agregue una demanda de seguridad para el método o su tipo declarativo.  
   
-## Cuándo suprimir advertencias  
- Suprima una advertencia de esta regla solo después de una revisión exhaustiva de la seguridad.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Suprima una advertencia de esta regla solo después de una revisión cuidadosa de la seguridad.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)
+ [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)

@@ -1,40 +1,42 @@
 ---
-title: "JSON.parse (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "JSON.parse"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JSON.parse (método)"
-  - "parse JSON (método)"
+title: "JSON.parse (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: JSON.parse
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parse JSON method
+- JSON.parse method
 ms.assetid: 20f00d31-5ab5-4c3c-ab49-2534fc39a9b4
-caps.latest.revision: 41
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 41
+caps.latest.revision: "41"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JSON.parse (Funci&#243;n de JavaScript)
-Convierte una cadena de la notación de objetos de JavaScript \(JSON\) en un objeto.  
+# <a name="jsonparse-function-javascript"></a>JSON.parse (Función de JavaScript)
+Convierte una cadena de la notación de objetos de JavaScript (JSON) en un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 JSON.parse(text [, reviver])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `text`  
  Obligatorio. Una cadena JSON válida.  
   
@@ -47,17 +49,17 @@ JSON.parse(text [, reviver])
   
 -   Si `reviver` devuelve `null` o `undefined`, se elimina el miembro.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Un objeto o matriz.  
   
-## Excepciones  
- Si esta función causa un error de análisis de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] \(como "SCRIPT1014: Carácter no válido"\), el texto de entrada no cumple la sintaxis de JSON. Para corregir el error, realice uno de estos procedimientos:  
+## <a name="exceptions"></a>Excepciones  
+ Si esta función causa un error de análisis de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (como "SCRIPT1014: Carácter no válido"), el texto de entrada no cumple la sintaxis de JSON. Para corregir el error, realice uno de estos procedimientos:  
   
 -   Modifica el argumento `text` para que sea conforme con la sintaxis de JSON. Para más información, vea la sección [Notación de sintaxis BNF](http://go.microsoft.com/fwlink/?LinkId=125203) de objetos JSON.  
   
      Por ejemplo, si la respuesta está en formato JSONP en lugar de JSON puro, pruebe este código en el objeto de respuesta:  
   
-    ```javascript  
+    ```JavaScript  
     var fixedResponse = response.responseText.replace(/\\'/g, "'");  
     var jsonObj = JSON.parse(fixedResponse);  
     ```  
@@ -66,10 +68,10 @@ JSON.parse(text [, reviver])
   
 -   Ejecute el argumento `text` en un validador de JSON como [JSLint](http://www.jslint.com/) para ayudar a identificar errores de sintaxis.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa `JSON.parse` para convertir una cadena JSON en un objeto.  
   
-```javascript  
+```JavaScript  
 var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';  
 var contact = JSON.parse(jsontext);  
 document.write(contact.surname + ", " + contact.firstname);  
@@ -79,10 +81,10 @@ document.write(contact.phone[1]);
 // 555-0100  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se convierte una matriz en una cadena JSON mediante `JSON.stringify` y, a continuación, se convierte la cadena de nuevo en una matriz mediante `JSON.parse`.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se convierte una matriz en una cadena JSON mediante `JSON.stringify`y, a continuación, se convierte la cadena de nuevo en una matriz mediante `JSON.parse`.  
   
-```javascript  
+```JavaScript  
 var arr = ["a", "b", "c"];  
 var str = JSON.stringify(arr);  
 document.write(str);  
@@ -101,10 +103,10 @@ while (newArr.length > 0) {
 // a  
 ```  
   
-## Ejemplo  
- La función `reviver` se suele usar para transformar la representación JSON de las cadenas de fecha de Organización internacional de normalización \(ISO\) en objetos `Date` con el formato de hora universal coordinada \(UTC\). En este ejemplo se usa `JSON.parse` para deserializar una cadena de fecha con formato ISO. La función `dateReviver` devuelve objetos `Date` para los miembros a los que se da formato como cadenas de fecha ISO.  
+## <a name="example"></a>Ejemplo  
+ La función `reviver` se suele usar para transformar la representación JSON de las cadenas de fecha de Organización internacional de normalización (ISO) en objetos `Date` con el formato de hora universal coordinada (UTC). En este ejemplo se usa `JSON.parse` para deserializar una cadena de fecha con formato ISO. La función `dateReviver` devuelve objetos `Date` para los miembros a los que se da formato como cadenas de fecha ISO.  
   
-```javascript  
+```JavaScript  
 var jsontext = '{ "hiredate": "2008-01-01T12:00:00Z", "birthdate": "2008-12-25T12:00:00Z" }';  
 var dates = JSON.parse(jsontext, dateReviver);  
 document.write(dates.birthdate.toUTCString());  
@@ -126,10 +128,10 @@ function dateReviver(key, value) {
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
-## Vea también  
- [JSON.stringify \(Función\)](../../javascript/reference/json-stringify-function-javascript.md)   
- [toJSON \(Método, Date\)](../../javascript/reference/tojson-method-date-javascript.md)   
- [Aplicación de ejemplo de la plantilla Hub \(Tienda Windows\)](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)
+## <a name="see-also"></a>Vea también  
+ [JSON.stringify (función)](../../javascript/reference/json-stringify-function-javascript.md)   
+ [toJSON (método, Date)](../../javascript/reference/tojson-method-date-javascript.md)   
+ [Aplicación de ejemplo de plantilla hub (tienda Windows)](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)

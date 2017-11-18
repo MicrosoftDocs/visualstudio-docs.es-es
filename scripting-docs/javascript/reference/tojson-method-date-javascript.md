@@ -1,52 +1,54 @@
 ---
-title: "toJSON (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toJSON (método)"
+title: "toJSON (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toJSON method
 ms.assetid: f91df030-e9c9-425e-8e6d-b46bdda66cb6
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a131c7b248ca0486ab0b3b02d40e4351136c37c9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toJSON (M&#233;todo, Date de JavaScript)
-Lo usa el método [JSON.stringify](../../javascript/reference/json-stringify-function-javascript.md) para habilitar la transformación de los datos de un objeto para la serialización de notación de objetos JavaScript \(JSON\).  
+# <a name="tojson-method-date-javascript"></a>toJSON (Método, Date de JavaScript)
+Utilizado por el [JSON.stringify](../../javascript/reference/json-stringify-function-javascript.md) método para permitir la transformación de datos de un objeto para la serialización de JavaScript Object Notation (JSON).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 objectname.toJSON()  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `objectname`  
- Obligatorio.  Objeto para el que deseas la serialización de JSON.  
+ Obligatorio. Un objeto que JSON es deseable serialización.  
   
-## Comentarios  
- La función `JSON.stringify` usa el método `toJSON`.  `JSON.stringify` serializa un valor de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] en texto JSON.  Si se proporciona un método `toJSON` a `JSON.stringify`, se llama al método `toJSON` cuando se llama a `JSON.stringify`.  
+## <a name="remarks"></a>Comentarios  
+ El `toJSON` método lo usa el `JSON.stringify` función. `JSON.stringify`Serializa un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valor en texto JSON. Si un `toJSON` método se proporciona para `JSON.stringify`, `toJSON` se llama al método cuando `JSON.stringify` se llama.  
   
- El método `toJSON` es un miembro integrado del objeto [Date](../../javascript/reference/date-object-javascript.md) de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Devuelve una cadena de fecha con formato ISO para la zona horaria UTC \(se indica mediante el sufijo Z\).  
+ El `toJSON` método es un miembro integrado de la [fecha](../../javascript/reference/date-object-javascript.md) [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto. Devuelve una cadena de fecha con formato ISO de la zona de horaria UTC (indicada por el sufijo Z).  
   
- Puedes invalidar el método `toJSON` para el tipo `Date` o definir un método `toJSON` para otros tipos de objeto con el fin de conseguir la transformación de datos para el tipo de objeto específico antes de la serialización de JSON.  
+ Puede invalidar la `toJSON` método para el `Date` escriba, o definir una `toJSON` método para otros tipos de objeto lograr una transformación de datos para el tipo de objeto específico antes de la serialización de JSON.  
   
-## Ejemplo  
- En el ejemplo siguiente se usa el método `toJSON` para serializar valores miembro de cadena en mayúsculas.  Se llama al método `toJSON` cuando se llama a `JSON.stringify`.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se usa el `toJSON` método para serializar los valores de miembro de cadena en mayúsculas. El `toJSON` se llama al método cuando `JSON.stringify` se llama.  
   
-```javascript  
+```JavaScript  
 var contact = new Object();  
 contact.firstname = "Jesper";  
 contact.surname = "Aaberg";  
@@ -72,10 +74,10 @@ var jsonText = JSON.stringify(contact);
 */  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo usar el método `toJSON` que es un miembro integrado del objeto [Date](../../javascript/reference/date-object-javascript.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo utilizar el `toJSON` método que es un miembro integrado de la [fecha](../../javascript/reference/date-object-javascript.md) objeto.  
   
-```javascript  
+```JavaScript  
 var dt = new Date('8/24/2009');  
 dt.setUTCHours(7, 30, 0);  
 var jsonText = JSON.stringify(dt);  
@@ -85,11 +87,11 @@ var jsonText = JSON.stringify(dt);
 */  
 ```  
   
-## Requisitos  
- [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)] **Se aplica a:** [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+## <a name="requirements"></a>Requisitos  
+ [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]**Se aplica a:** [objeto de fecha](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [JSON \(Objeto\)](../../javascript/reference/json-object-javascript.md)   
- [JSON.parse \(Función\)](../../javascript/reference/json-parse-function-javascript.md)   
- [JSON.stringify \(Función\)](../../javascript/reference/json-stringify-function-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
+ [JSON.parse (función)](../../javascript/reference/json-parse-function-javascript.md)   
+ [JSON.stringify (función)](../../javascript/reference/json-stringify-function-javascript.md)   
  [Métodos de JavaScript](../../javascript/reference/javascript-methods.md)

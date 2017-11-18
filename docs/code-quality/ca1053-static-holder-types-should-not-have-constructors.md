@@ -1,11 +1,10 @@
 ---
-title: 'CA1053: Static holder types should not have constructors | Microsoft Docs'
+title: "CA1053: Los tipos titulares estáticos no deberían tener constructores | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,55 +14,40 @@ helpviewer_keywords:
 - CA1053
 - StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 26a8887ff5604028d3028749230151d5b0555827
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a9e9d6272fbb21644daab96bb3ccd7d02b023840
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Static holder types should not have constructors
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Los tipos titulares estáticos no deben tener constructores
 |||  
 |-|-|  
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|  
-|CheckId|CA1053|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Identificador de comprobación|CA1053|  
+|Categoría|Microsoft.Design|  
+|Cambio problemático|Problemático|  
   
-## <a name="cause"></a>Cause  
- A public or nested public type declares only static members and has a public or protected default constructor.  
+## <a name="cause"></a>Motivo  
+ Un tipo público o público anidado declara sólo miembros estáticos y tiene un constructor predeterminado público o protegido.  
   
-## <a name="rule-description"></a>Rule Description  
- The constructor is unnecessary because calling static members does not require an instance of the type. Also, because the type does not have non-static members, creating an instance does not provide access to any of the type's members.  
+## <a name="rule-description"></a>Descripción de la regla  
+ El constructor no es necesario puesto que al llamar a los miembros estáticos no se requiere una instancia del tipo. Además, dado que el tipo no tiene miembros no estáticos, crear una instancia no proporcionan acceso a cualquiera de los miembros del tipo.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the default constructor or make it private.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, quite el constructor predeterminado o que sea privada.  
   
 > [!NOTE]
->  Some compilers automatically create a public default constructor if the type does not define any constructors. If this is the case with your type, add a private default constructor to eliminate the violation.  
+>  Algunos compiladores crean automáticamente un constructor predeterminado público si el tipo no define ningún constructor. Si este es el caso con su tipo, agregue un constructor predeterminado privado para eliminar la infracción.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. The presence of the constructor suggests that the type is not a static type.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla. La presencia del constructor sugiere que el tipo no es un tipo estático.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule. Notice that there is no default constructor in the source code. When this code is compiled into an assembly, the C# compiler will insert a default constructor, which will violate this rule. To correct this, declare a private constructor.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra un tipo que infringe esta regla. Tenga en cuenta que no hay ningún constructor predeterminado en el código fuente. Cuando este código se compila en un ensamblado, el compilador de C# insertará un constructor predeterminado, que infringe esta regla. Para corregir este error, declare un constructor privado.  
   
  [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

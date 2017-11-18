@@ -1,55 +1,56 @@
 ---
-title: "toFixed (M&#233;todo, Number de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toFixed"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toFixed (Método)"
+title: "toFixed (método, Number) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toFixed
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toFixed method
 ms.assetid: b5f03400-865e-4ab2-818c-f734c0f6d6f0
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd51dd67632f4e6417fee72fd19575025423bbf1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toFixed (M&#233;todo, Number de JavaScript)
+# <a name="tofixed-method-number-javascript"></a>toFixed (Método, Number de JavaScript)
 Representa un número en notación de punto fijo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 numObj.toFixed([fractionDigits])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `numObj`  
- Se requiere un objeto `Number`.  
+ Requiere un `Number` objeto.  
   
  `fractionDigits`  
- Opcional.  Número de dígitos que hay después del signo decimal.  Debe estar entre 0 y 20, ambos incluidos.  
+ Opcional. El número de dígitos después del separador decimal. Debe estar en el intervalo 0 - 20, ambos inclusive.  
   
-## Valor devuelto  
- Devuelve una representación de cadena de un número en notación de punto fijo, que contiene dígitos de `fractionDigits` después de la coma decimal.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve una representación de cadena de un número en notación de punto fijo, que contiene `fractionDigits` dígitos después del separador decimal.  
   
- Si no se proporciona `fractionDigits` o es **undefined**, el valor predeterminado es cero.  
+ Si `fractionDigits` no se proporciona o **indefinido**, el valor predeterminado es cero.  
   
-## Ejemplo  
- En el siguiente código se muestra cómo usar `toFixed`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente código se muestra cómo usar `toFixed`:  
   
-```javascript  
+```JavaScript  
 var num = new Number(123);  
 var fix = num.toFixed();  
 document.write(fix);  
@@ -65,11 +66,11 @@ document.write(fix);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [Number \(Objeto\)](../../javascript/reference/number-object-javascript.md)  
+ **Se aplica a**: [número de objeto](../../javascript/reference/number-object-javascript.md)  
   
-## Vea también  
- [toExponential \(Método, Number\)](../../javascript/reference/toexponential-method-number-javascript.md)   
- [toPrecision \(Método, Number\)](../../javascript/reference/toprecision-method-number-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toExponential (método, Number)](../../javascript/reference/toexponential-method-number-javascript.md)   
+ [toPrecision (Método, Number)](../../javascript/reference/toprecision-method-number-javascript.md)

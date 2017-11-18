@@ -1,55 +1,56 @@
 ---
-title: "test (M&#233;todo, Regular Expression de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "test"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "método de prueba"
+title: "Test (método) (expresión Regular) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: test
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: test method
 ms.assetid: 4f4b6e39-cb1a-4be9-a66f-7b846075580d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 53e2d2c23821cba5149367c7b5a735fa471bf581
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# test (M&#233;todo, Regular Expression de JavaScript)
-Devuelve un valor Boolean que indica si existe o no un patrón en una cadena de búsqueda.  
+# <a name="test-method-regular-expression-javascript"></a>test (Método, Regular Expression de JavaScript)
+Devuelve un valor booleano que indica si existe o no un modelo en una cadena de búsqueda.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 rgExp.test(str)   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `rgExp`  
- Obligatorio.  Instancia de un objeto **Regular Expression** que contiene el patrón de expresión regular y las marcas aplicables.  
+ Obligatorio. Una instancia de un **expresión Regular** objeto que contiene el patrón de expresión regular y las marcas aplicables.  
   
  `str`  
- Obligatorio.  Cadena en la que se va a buscar.  
+ Obligatorio. La cadena en la que se va a realizar la búsqueda.  
   
-## Comentarios  
- El método **test** comprueba si existe un patrón dentro de una cadena: devuelve **true** si existe y **false** de lo contrario.  
+## <a name="remarks"></a>Comentarios  
+ El **probar** método comprueba si un patrón existe dentro de una cadena y devuelve **true** si es así, y **false** en caso contrario.  
   
- El método **test** no modifica las propiedades del objeto `RegExp` global.  
+ Las propiedades de la información global `RegExp` objeto no se modifica la **probar** método.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso del método **test**.  Para usar este ejemplo, pase a la función un patrón de expresión regular y una cadena.  La función busca la presencia del patrón de expresión regular en la cadena y devuelve una cadena que indica el resultado de la búsqueda:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **probar** método. Para usar este ejemplo, pasar la función de un patrón de expresión regular y una cadena. La función probará la aparición de un patrón de expresión regular en la cadena y devolver una cadena que indica los resultados de búsqueda:  
   
-```javascript  
+```JavaScript  
 function TestDemo(re, teststring)  
 {  
    // Test string for existence of regular expression.  
@@ -69,12 +70,12 @@ function TestDemo(re, teststring)
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Regular Expression \(Objeto\)](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Se aplica a**: [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## Vea también  
- [RegExp \(Objeto\)](../../javascript/reference/regexp-object-javascript.md)   
- [Regular Expression \(Objeto\)](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/es-es/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Vea también  
+ [RegExp (objeto)](../../javascript/reference/regexp-object-javascript.md)   
+ [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

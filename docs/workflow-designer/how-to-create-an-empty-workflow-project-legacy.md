@@ -1,49 +1,53 @@
 ---
-title: "C&#243;mo: Crear un proyecto de flujo de trabajo vac&#237;o (Heredado) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "proyectos de flujo de trabajo vacío"
-  - "proyectos, flujo de trabajo vacío"
-  - "flujos de trabajo, proyectos de flujo de trabajo vacío"
+title: "Cómo: crear un proyecto de flujo de trabajo vacío (heredado) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- projects, empty workflow
+- empty workflow projects
+- workflows, empty workflow projects
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 43e3da62c78ebead3d13b1a41e7b1fff92fcfc80
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Crear un proyecto de flujo de trabajo vac&#237;o (Heredado)
-Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)].Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="how-to-create-an-empty-workflow-project-legacy"></a>Cómo: Crear un proyecto de flujo de trabajo vacío (Heredado)
+Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
-### Para crear un proyecto de flujo de trabajo vacío  
+### <a name="to-create-an-empty-workflow-project"></a>Para crear un proyecto de flujo de trabajo vacío  
   
 1.  Inicie Visual Studio.  
   
-2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.  
+2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto**.  
   
-     Se abre el cuadro de diálogo **Nuevo proyecto**.  
+     Aparece el cuadro de diálogo **Nuevo proyecto** .  
   
-3.  Seleccione la opción **.NET Framework 3.0** o la opción **.NET Framework 3.5** en la lista desplegable situada en la parte superior de la ventana **Nuevo proyecto** para tener acceso al diseñador heredado.  
+3.  Seleccione el **.NET Framework 3.0** opción o **.NET Framework 3.5** opción en la lista desplegable lista en la parte superior de la **nuevo proyecto** ventana para tener acceso al diseñador heredado.  
   
     > [!NOTE]
-    >  La opción predeterminada de [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] es **.NET Framework 4**.Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que tienen como destino [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] y no usa el diseñador heredado.  
+    >  La opción predeterminada de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que tienen como destino [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] y no usa el diseñador heredado.  
   
-4.  En el panel **Tipos de proyecto**, seleccione Visual C\# o Visual Basic \(en **Otros lenguajes**\) y, a continuación, seleccione **Flujo de trabajo**.  
+4.  En el **tipos de proyecto** panel, seleccione Visual C# o Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.  
   
-5.  En el panel **Plantillas**, seleccione **Proyecto de flujo de trabajo vacío**.  
+5.  En el **plantillas** panel, seleccione **proyecto vacío de flujo de trabajo**.  
   
-6.  En el cuadro **Nombre**, escriba un nombre descriptivo para que resulte sencillo identificar el proyecto.  
+6.  En el **nombre** cuadro, escriba un nombre descriptivo para el proyecto para que sea fácil de identificar.  
   
-7.  En el cuadro **Ubicación**, escriba el directorio donde desea guardar el proyecto o haga clic en el botón **Examinar** para desplazarse hasta él.  
+7.  En el **ubicación** cuadro, escriba el directorio en el que desea guardar el proyecto o haga clic en **examinar** para navegar hasta él.  
   
-     Si desea crear un directorio de soluciones para el proyecto, active la casilla **Crear directorio para la solución** y escriba un nombre en el cuadro **Nombre de la solución**.  
+     Si desea que un directorio de solución creado para el proyecto, seleccione la **crear directorio para la solución** casilla de verificación y escriba un nombre en el **nombre de la solución** cuadro.  
   
 8.  Haga clic en **Aceptar**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear proyectos de flujo de trabajo heredados](../workflow-designer/creating-legacy-workflow-projects.md)

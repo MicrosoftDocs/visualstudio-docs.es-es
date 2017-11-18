@@ -1,29 +1,30 @@
 ---
-title: "CA1307: Especificar StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
-helpviewer_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
+title: 'CA1307: Especificar StringComparison | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1307
+- SpecifyStringComparison
+helpviewer_keywords:
+- CA1307
+- SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 61d8ca557bfc55e3488a35e82f0242f931c51ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1307: Especificar StringComparison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
 |||  
 |-|-|  
 |TypeName|SpecifyStringComparison|  
@@ -31,20 +32,20 @@ caps.handback.revision: 11
 |Categoría|Microsoft.Globalization|  
 |Cambio problemático|Poco problemático|  
   
-## Motivo  
- Una operación de comparación de cadenas utiliza una sobrecarga de método que no establece un parámetro <xref:System.StringComparison>.  
+## <a name="cause"></a>Motivo  
+ Una operación de comparación de cadenas utiliza una sobrecarga del método que no establece un <xref:System.StringComparison> parámetro.  
   
-## Descripción de la regla  
- Muchas operaciones de cadenas y, lo que es más importante, los métodos <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A>, proporcionan una sobrecarga que acepta un valor de enumeración <xref:System.StringComparison> como parámetro.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Muchas operaciones de cadenas, más importante la <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A> métodos, proporcionan una sobrecarga que acepta un <xref:System.StringComparison> valor de enumeración como parámetro.  
   
- Siempre que exista una sobrecarga que tome un parámetro <xref:System.StringComparison>, debe utilizarse en lugar de una sobrecarga que no tome este parámetro.  Si establece explícitamente este parámetro, su código resultará más claro y más fácil de mantener.  
+ Cada vez que existe una sobrecarga que toma un <xref:System.StringComparison> parámetro, se debería utilizar en lugar de una sobrecarga que no tome este parámetro. Si este parámetro se establece explícitamente, el código es a menudo más clara realizadas y fáciles de mantener.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción a esta regla, cambie los métodos de comparación de cadenas por sobrecargas que acepten la enumeración <xref:System.StringComparison> como parámetro.  Por ejemplo, cambie `String.Compare(str1, str2)` por `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambiar los métodos de comparación de cadenas por sobrecargas que acepten la <xref:System.StringComparison> enumeración como parámetro. Por ejemplo: cambiar `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación se ha diseñado para una audiencia local limitada y, por tanto, no se va a localizar.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación está destinada a una audiencia local limitada y, por tanto, no será localizada.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Advertencias de globalización](../code-quality/globalization-warnings.md)   
  [CA1309: Utilizar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

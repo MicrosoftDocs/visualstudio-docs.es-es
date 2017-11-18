@@ -1,35 +1,37 @@
 ---
-title: "switch (Instrucci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "switch_JavaScriptKeyword"
-  - "default_JavaScriptKeyword"
-  - "case_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "switch (instrucción)"
+title: "switch (instrucción) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- switch_JavaScriptKeyword
+- default_JavaScriptKeyword
+- case_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: switch statement
 ms.assetid: 61f80e8b-3739-4146-a893-c2832d92b28c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a301fc8bcc72b48c6ba8e999c0ebb70fe9d92b41
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# switch (Instrucci&#243;n de JavaScript)
-Permite la ejecución de una o más instrucciones cuando el valor de una expresión especificada coincide con una etiqueta.  
+# <a name="switch-statement-javascript"></a>switch (Instrucción de JavaScript)
+Habilita la ejecución de una o varias instrucciones cuando el valor de una expresión especificada coincide con una etiqueta.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 switch (expression) {  
@@ -41,37 +43,37 @@ switch (expression) {
 }   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `expression`  
- Expresión que se va a evaluar.  
+ La expresión que se debe evaluar.  
   
  `label`  
- Identificador con el que se compara `expression`.  Si `label` es `expression`, la ejecución empieza con `statementlist` que hay inmediatamente después del signo de dos puntos y continúa hasta que encuentra una instrucción `break`, que es opcional, o el final de la instrucción `switch`.  
+ Un identificador que debe coincidir con `expression`. Si `label` es un `expression`, inicia la ejecución con el `statementlist` inmediatamente después de los dos puntos y continúa hasta que encuentra en un `break` instrucción, que es opcional, o al final de la `switch` instrucción.  
   
  `statementlist`  
  Instrucción o instrucciones que se van a ejecutar.  
   
-## Comentarios  
- Usa la cláusula `default` para proporcionar una instrucción que se ejecutará si ninguno de los valores de etiqueta coincide con `expression`.  Puede aparecer en cualquier lugar del bloque de código de `switch`.  
+## <a name="remarks"></a>Comentarios  
+ Use la `default` cláusula para proporcionar una instrucción que se ejecuta si ninguna de la etiqueta coincide con los valores `expression`. Puede aparecer en cualquier lugar dentro de la `switch` bloque de código.  
   
- Se pueden especificar cero o más bloques `label`.  Si ninguno de los argumentos `label` coincide con el valor de `expression` y no se proporciona una cláusula `default`, no se ejecuta ninguna instrucción.  
+ Cero o más `label` se pueden especificar bloques. Si no hay ningún `label` coincide con el valor de `expression`y un `default` caso no se proporciona, se ejecuta ninguna instrucción.  
   
- La ejecución fluye por una instrucción `switch` de la siguiente manera:  
+ Ejecución fluye a través de un `switch` instrucción como se indica a continuación:  
   
--   Evalúa `expression` y examina `label` por orden hasta encontrar una coincidencia.  
+-   Evaluar `expression` y mire `label` en orden hasta que se encuentra una coincidencia.  
   
--   Si un valor de `label` es igual a `expression`, ejecuta la `statementlist` que lo acompaña.  
+-   Si un `label` valor es igual a `expression`, ejecute su que acompaña a `statementlist`.  
   
-     La ejecución continúa hasta que se encuentra una instrucción `break` o hasta que la instrucción `switch` finaliza.  Esto implica la ejecución de varios bloques `label` si no se usa una instrucción `break`.  
+     Continuar la ejecución hasta que un `break` se encuentra la instrucción, o la `switch` instrucción finaliza. Esto significa que varios `label` los bloques se ejecutan si un `break` no se utiliza la instrucción.  
   
--   Si ningún valor de `label` es igual a `expression`, va a la cláusula `default`.  Si no hay ninguna cláusula `default`, va al último paso.  
+-   Si no hay ningún `label` es igual a `expression`, vaya a la `default` caso. Si no hay ningún `default` caso, vaya al último paso.  
   
--   La ejecución continúa en la instrucción que sigue al final del bloque de código `switch`.  
+-   La ejecución continúa en la instrucción siguiente al final de la `switch` bloque de código.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se comprueba el tipo de un objeto.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -102,10 +104,10 @@ function MyObjectType(obj) {
   
 ```  
   
-## Ejemplo  
- En el código siguiente se muestra lo que ocurre si no usas una instrucción `break`.  
+## <a name="example"></a>Ejemplo  
+ El siguiente código muestra lo que sucede si no usa un `break` instrucción.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -133,9 +135,9 @@ function MyObjectType(obj) {
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Vea también  
- [break \(Instrucción\)](../../javascript/reference/break-statement-javascript.md)   
- [if...else \(Instrucción\)](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [break (Instrucción)](../../javascript/reference/break-statement-javascript.md)   
+ [if...else (Instrucción)](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)

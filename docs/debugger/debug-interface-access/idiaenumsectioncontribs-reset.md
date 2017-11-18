@@ -1,37 +1,36 @@
 ---
-title: "IDiaEnumSectionContribs::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSectionContribs::Reset (método)"
+title: 'Idiaenumsectioncontribs:: Reset | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSectionContribs::Reset method
 ms.assetid: 97ea62ed-bdf8-4df2-b178-b17b9df20adc
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2657ca96d994f44a0843700aa92d6dfa64f16ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSectionContribs::Reset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Restaura una secuencia de enumeración al principio.  
+# <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
+Restablece una secuencia de enumeración al principio.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT Reset();  
 ```  
   
-## Valor devuelto  
- Devuelva `S_OK`.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve `S_OK`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

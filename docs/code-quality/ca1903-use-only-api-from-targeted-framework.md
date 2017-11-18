@@ -1,11 +1,10 @@
 ---
-title: 'CA1903: Use only API from targeted framework | Microsoft Docs'
+title: 'CA1903: Usar solo API de .NET framework de destino | Documentos de Microsoft'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,73 +14,58 @@ helpviewer_keywords:
 - UseOnlyApiFromTargetedFramework
 - CA1903
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
-caps.latest.revision: 8
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ec60623b651e990d77895d3c4eeef90cd69222a1
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Use only API from targeted framework
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
-|CheckId|CA1903|  
-|Category|Microsoft.Portability|  
-|Breaking Change|Breaking - when fired against the signature of an externally visible member or type.<br /><br /> Non breaking - when fired in the body of a method.|  
+|Identificador de comprobación|CA1903|  
+|Categoría|Microsoft.Portability|  
+|Cambio problemático|Problemático: cuando se activa con la firma de un miembro visible externamente o tipo.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|  
   
-## <a name="cause"></a>Cause  
- A member or type is using a member or type that was introduced in a service pack that was not included with the project's targeted framework.  
+## <a name="cause"></a>Motivo  
+ Un miembro o tipo utiliza un miembro o tipo que se introdujo en un service pack que no se incluye con .NET framework de destino del proyecto.  
   
-## <a name="rule-description"></a>Rule Description  
- New members and types were included in .NET Framework 2.0 Service Pack 1 and 2, .NET Framework 3.0 Service Pack 1 and 2, and .NET Framework 3.5 Service Pack 1. Projects that target the major versions of the .NET Framework can unintentionally take dependencies on these new APIs. To prevent this dependency, this rule fires on usages of any new members and types that were not included by default with the project's target framework.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Tipos y miembros nuevos se han incluido en .NET Framework 2.0 Service Pack 1 y 2, .NET Framework 3.0 Service Pack 1 y 2 y .NET Framework 3.5 Service Pack 1. Los proyectos que tienen como destino las versiones principales de .NET Framework pueden tomar dependencias involuntariamente en estas nuevas API. Para evitar esta dependencia, esta regla se desencadena en los usos de los nuevos miembros y tipos que no se incluyen con .NET framework de destino del proyecto de forma predeterminada.  
   
- **Target Framework and Service Pack Dependencies**  
+ **.NET Framework de destino y las dependencias del módulo de servicio**  
   
 |||  
 |-|-|  
-|When target framework is|Fires on usages of members introduced in|  
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
-|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3.5|.NET Framework 3.5 SP1|  
-|.NET Framework 4|N/A|  
+|Cuando es .NET framework de destino|Se desencadena cuando se usan miembros presentados en|  
+|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
+|.NET Framework 3.0|.NET framework 2.0 SP1, Service Pack 2 de .NET Framework 2.0, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
+|.NET Framework 3,5|.NET Framework 3,5 SP1|  
+|.NET Framework 4|N/D|  
   
- To change a project's target framework, see [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
+ Para cambiar la plataforma de destino del proyecto, consulte [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To remove the dependency on the service pack, remove all usages of the new member or type. If this is a deliberate dependency, either suppress the warning or turn this rule off.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para quitar la dependencia en el service pack, quite todos los usos del nuevo miembro o tipo. Si se trata de una dependencia deliberada, suprimir la advertencia o desactivar esta regla.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule if this was not a deliberate dependency on the specified service pack. In this situation, your application might fail to run on systems without this service pack installed. Suppress the warning or turn this rule off if this was a deliberate dependency.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla si no se trata de una dependencia deliberada en el módulo de servicio especificado. En esta situación, la aplicación podría no ejecutarse en sistemas sin este service pack instalado. Suprimir la advertencia o desactivar esta regla si se trata de una dependencia deliberada.  
   
-## <a name="example"></a>Example  
- The following example shows a class that uses the type DateTimeOffset that is only available in .NET 2.0 Service Pack 1. This example requires that .NET Framework 2.0 has been selected in the Target Framework drop-down list in the Project properties.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra una clase que utiliza el tipo DateTimeOffset que solo está disponible en .NET 2.0 Service Pack 1. Este ejemplo requiere que .NET Framework 2.0 se ha seleccionado en la lista desplegable de .NET Framework de destino en las propiedades del proyecto.  
   
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example fixes the previously described violation by replacing usages of the DateTimeOffset type with the DateTime type.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se corrige la infracción descrita previamente reemplazando los usos del tipo DateTimeOffset con el tipo de fecha y hora.  
   
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Portability Warnings](../code-quality/portability-warnings.md)   
- [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md)
+## <a name="see-also"></a>Vea también  
+ [Advertencias de portabilidad](../code-quality/portability-warnings.md)   
+ [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

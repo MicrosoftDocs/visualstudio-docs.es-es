@@ -1,65 +1,68 @@
 ---
-title: "Object.create (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "create (función) [JavaScript]"
-  - "Object.create (función) [JavaScript]"
+title: "Object.Create (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- create function [JavaScript]
+- Object.create function [JavaScript]
 ms.assetid: 0ad31f36-a9ee-444e-b0fe-c87843d03196
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f359908c5c836743e22390580f542df27d7b98e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.create (Funci&#243;n de JavaScript)
-Crea un objeto que tiene un prototipo especificado y contiene opcionalmente propiedades especificadas.  
+# <a name="objectcreate-function-javascript"></a>Object.create (Función de JavaScript)
+Crea un objeto que tiene el prototipo especificado y, opcionalmente, que contiene las propiedades especificadas.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Object.create(prototype, descriptors)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `prototype`  
- Requerido.  Objeto que se usará como prototipo.  Puede ser un valor `null`.  
+ Obligatorio. Objeto que se va a usar como un prototipo. Puede ser `null`.  
   
  `descriptors`  
- Opcional.  Objeto de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que contiene uno o varios descriptores de propiedad.  
+ Opcional. Un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto que contiene uno o varios descriptores de propiedad.  
   
- Una *propiedad de datos* es una propiedad que puede obtener y establecer un valor.  El descriptor de una propiedad de datos contiene un atributo `value`, así como atributos `writable`, `enumerable` y `configurable`.  Si los últimos tres atributos no se especifican, su valor predeterminado es `false`.  Una *propiedad de descriptor de acceso* llama a una función proporcionada por el usuario cada vez que el valor se recupera o establece.  El descriptor para una propiedad de descriptor de acceso contiene un atributo `set`, un atributo `get` o ambos.  Para obtener más información, vea [Object.defineProperty \(Función\)](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ Una *propiedad datos* es una propiedad que puede obtener y establecer un valor. Un descriptor de propiedad de datos contiene un `value` atributo, además de `writable`, `enumerable`, y `configurable` atributos. Si no se especifican los últimos tres atributos, el valor predeterminado `false`. Un *propiedad de descriptor de acceso* llama a una función proporcionada por el usuario cada vez que el valor es recuperar o establecer. Un descriptor de propiedad de descriptor de acceso contiene un `set` atributo, un `get` atributo, o ambos. Para obtener más información, consulte [Object.defineProperty (función)](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
-## Valor devuelto  
- Un objeto nuevo cuyo prototipo interno se ha especificado y que contiene las propiedades especificadas, si las hay.  
+## <a name="return-value"></a>Valor devuelto  
+ Un nuevo objeto que tiene el prototipo interno especificado y contiene las propiedades especificadas, si existe alguno.  
   
-## Excepciones  
- Se produce una excepción `TypeError` si alguna de las condiciones siguientes es verdadera:  
+## <a name="exceptions"></a>Excepciones  
+ Un `TypeError` excepción se produce si se cumple alguna de las condiciones siguientes:  
   
--   El argumento `prototype` no es un objeto ni es `null`.  
+-   El `prototype` argumento no es un objeto y no es `null`.  
   
--   Un descriptor del argumento `descriptors` tiene un atributo `value` o `writable` y también un atributo `get` o `set`.  
+-   Un descriptor de la `descriptors` argumento tiene un `value` o `writable` de atributo y tiene un `get` o `set` atributo.  
   
--   Un descriptor del argumento `descriptors` tiene un atributo `get` o `set` que no es una función.  
+-   Un descriptor de la `descriptors` argumento tiene un `get` o `set` atributo que no es una función.  
   
-## Comentarios  
- Puede usar esta función con un parámetro `prototype` `null` para detener la cadena de prototipo.  El objeto creado no tendrá ningún prototipo.  
+## <a name="remarks"></a>Comentarios  
+ Puede usar esta función con un `null``prototype` parámetro para detener la cadena de prototipo. El objeto creado no tendrá ningún prototipo.  
   
-## Ejemplo  
- En el ejemplo siguiente se crea un objeto usando un prototipo `null` y se agregan dos propiedades enumerables.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un objeto mediante un `null` prototipo y agrega dos propiedades enumerables.  
   
-```javascript  
+```JavaScript  
 var newObj = Object.create(null, {  
             size: {  
                 value: "large",  
@@ -82,10 +85,10 @@ document.write(Object.getPrototypeOf(newObj));
   
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se crea un objeto que tiene el mismo prototipo interno que el objeto Object.  Podrá ver que tiene el mismo prototipo que un objeto creado mediante un literal de objeto.  La función [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md) obtiene el prototipo del objeto original.  Para obtener el descriptor de propiedad del objeto, puede usar [Object.getOwnPropertyDescriptor \(Función\)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un objeto que tiene el mismo prototipo interno como Object (objeto). Puede ver que tiene el mismo prototipo como un objeto creado mediante el uso de un literal de objeto. El [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md) función obtiene el prototipo del objeto original. Para obtener el descriptor de propiedad del objeto, puede usar [Object.getOwnPropertyDescriptor (función)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-```javascript  
+```JavaScript  
 var firstLine = { x: undefined, y: undefined };  
   
 var secondLine = Object.create(Object.prototype, {  
@@ -112,10 +115,10 @@ document.write("second line prototype = " + Object.getPrototypeOf(secondLine));
 // second line prototype = [object Object]  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se crea un objeto que tiene el mismo prototipo interno que el objeto Shape.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un objeto que tiene el mismo prototipo interno que el objeto de forma.  
   
-```javascript  
+```JavaScript  
   
 // Create the shape object.  
 var Shape = { twoDimensional: true, color: undefined, hasLineSegments: undefined };  
@@ -124,10 +127,10 @@ var Square = Object.create(Object.getPrototypeOf(Shape));
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Object.getPrototypeOf \(Función\)](../../javascript/reference/object-getprototypeof-function-javascript.md)   
- [isPrototypeOf \(Método, Object\)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
- [Crear objetos](../../javascript/creating-objects-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Object.getPrototypeOf (función)](../../javascript/reference/object-getprototypeof-function-javascript.md)   
+ [isPrototypeOf (método) (objeto)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
+ [Creación de objetos](../../javascript/creating-objects-javascript.md)
