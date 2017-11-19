@@ -1,49 +1,50 @@
 ---
-title: "Cambiar la configuraci&#243;n de vista mediante la API heredada | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK] heredados: cambiar la configuración de vista"
+title: "Cambiar la configuración de la vista mediante la API heredado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Cambiar la configuraci&#243;n de vista mediante la API heredada
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Los valores para las características básicas del editor, como el ajuste automático de línea, margen de selección, y espacio virtual, se pueden cambiar por el usuario mediante el cuadro de diálogo de **Opciones** .  Sin embargo, también es posible cambiar esta configuración mediante programación.  
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambiar la configuración de la vista mediante la API heredado
+Configuración de características del editor principal, como el ajuste automático de línea, el margen de selección y el espacio virtual, se puede modificar por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  
   
-## Cambiar la configuración mediante heredado API  
- La interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> expone un conjunto de propiedades del editor de texto.  La vista de texto contiene una categoría de propiedades \(GUID\_EditPropCategory\_View\_MasterSettings\) que representa el grupo de valores mediante programación cambiados para la vista de texto.  Los valores de la vista se ha cambiado una vez de esta manera, no se pueden cambiar en el cuadro de diálogo de **Opciones** hasta que se restablezcan.  
+## <a name="changing-settings-by-using-the-legacy-api"></a>Cambiar la configuración mediante la API heredado  
+ El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz expone un conjunto de propiedades del editor de texto. La vista de texto contiene una categoría de propiedades (GUID_EditPropCategory_View_MasterSettings) que representa el grupo de configuración mediante programación modificada para la vista de texto. Una vez que se cambiaron ver la configuración de esta manera, no se puede cambiar en el **opciones** cuadro de diálogo hasta que se restablecen.  
   
- A continuación se muestra el proceso típico para cambiar la configuración de vista para una instancia del editor básico.  
+ Aquí te mostramos el proceso típico para cambiar la configuración de vista para una instancia del editor principal.  
   
-1.  Llame a `QueryInterface` en \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>\) para la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> .  
+1.  Llame a `QueryInterface` en el (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) para el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz.  
   
-2.  Llame al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> , especificando un valor de GUID\_EditPropCategory\_View\_MasterSettings para el parámetro de `rguidCategory` .  
+2.  Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método, especificando un valor de GUID_EditPropCategory_View_MasterSettings para el `rguidCategory` parámetro.  
   
-     Esto devuelve un puntero a la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> , que contiene el conjunto de propiedades forzadas para la vista.  Los valores en este grupo se convierten permanentemente.  Si un valor no está en este grupo, después realizará las opciones especificadas en el cuadro de diálogo de **Opciones** o los comandos de usuario.  
+     Esto devuelve un puntero a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaz, que contiene el conjunto de propiedades forzadas para la vista. Cualquier configuración de este grupo de forma permanente se convierten obligatoriamente. Si una configuración no está en este grupo, se seguirá las opciones especificadas en el **opciones** cuadro de diálogo o los comandos del usuario.  
   
-3.  Llame al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> , especificando el valor apropiado de los valores del parámetro de `idprop` .  
+3.  Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> método, especificando el valor de la configuración adecuada en la `idprop` parámetro.  
   
-     Por ejemplo, forzar el ajuste de línea, el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> de llamada y especificar un valor de VSEDITPROPID\_ViewLangOpt\_WordWrap, `vt` para el parámetro de `idprop` .  En esta llamada, `vt` es un VARIANT de VT\_BOOL escrito y `vt.boolVal` es VARIANT\_TRUE.  
+     Por ejemplo, para forzar ajuste automático de línea, llame a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> y especifique un valor de VSEDITPROPID_ViewLangOpt_WordWrap, `vt` para el `idprop` parámetro. En esta llamada, `vt` es una variante del tipo VT_BOOL y `vt.boolVal` es VARIANT_TRUE.  
   
-## Restablecer valores cambiados de vista  
- Para restaurar cualquier valor cambiado de vista de una instancia del editor básico, llame al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> y especifique el valor adecuado del valor del parámetro de `idprop` .  
+## <a name="resetting-changed-view-settings"></a>Restablecer la configuración de vista modificada  
+ Para restablecer cualquier configuración para una instancia del editor principal de la vista modificada, llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> método y especifique el valor de configuración adecuado en el `idprop` parámetro.  
   
- Por ejemplo, permitir que el ajuste de línea flota libremente, se quitaría de la categoría de la propiedad llamando a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> y especificando un valor de VSEDITPROPID\_ViewLangOpt\_WordWrap para el parámetro de `idprop` .  
+ Por ejemplo, para permitir el ajuste de línea flotar libremente, se podría quitar de la categoría de propiedad llamando a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> y especificando un valor de VSEDITPROPID_ViewLangOpt_WordWrap para el `idprop` parámetro.  
   
- para quitar todos los valores cambiados para el editor básico inmediatamente, especifique un valor de VSEDITPROPID\_ViewComposite\_AllCodeWindowDefaults, vt para el parámetro de `idprop` .  En esta llamada, el vt es un VARIANT de VT\_BOOL escrito y vt.boolVal es VARIANT\_TRUE.  
+ Para quitar configuración de todos los modificada para el editor principal a la vez, especifique un valor de VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt para el `idprop` parámetro. En esta llamada, vt es una variante del tipo VT_BOOL y vt.boolVal es VARIANT_TRUE.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Dentro del Editor de núcleo](../extensibility/inside-the-core-editor.md)   
- [Acceso a Text vista usando la API heredada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
- [Opciones \(Cuadro de diálogo\)](../ide/reference/options-dialog-box-visual-studio.md)
+ [Obtener acceso a Text vista mediante la API heredado](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [Opciones (cuadro de diálogo)](../ide/reference/options-dialog-box-visual-studio.md)

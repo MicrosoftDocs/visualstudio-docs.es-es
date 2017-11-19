@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumTables::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumTables::Clone (método)"
+title: 'Idiaenumtables:: Clone | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumTables::Clone method
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6d5c7ee825404586c039fa9e42a9d4f13721443f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumTables::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Crea un enumerador que contiene al mismo estado de enumeración que el enumerador actual.  
+# <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
+Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumTables** ppenum  
+```C++  
+HRESULT Clone (   
+   IDiaEnumTables** ppenum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppenum`  
- \[out\]  Devuelve un objeto de [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) que contiene un duplicado del enumerador.  Las tablas no se duplican, sólo el enumerador.  
+ [out] Devuelve un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto que contiene un duplicado del enumerador. No se duplican las tablas, solo el enumerador.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

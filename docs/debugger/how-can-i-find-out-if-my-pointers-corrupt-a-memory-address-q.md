@@ -1,52 +1,51 @@
 ---
-title: "C&#243;mo averiguar si los punteros da&#241;an una direcci&#243;n de memoria | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "direcciones, punteros que dañan direcciones de memoria"
-  - "dirección de memoria dañada"
-  - "depurar [C++], daño en la memoria"
-  - "dirección de memoria dañada por punteros"
-  - "memoria, daños"
-  - "punteros, dañar direcciones de memoria"
+title: "Cómo averiguar si los punteros dañan una dirección de memoria | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- addresses, pointers corrupting memory address
+- memory, corruption
+- pointers, corrupting memory addresses
+- memory address corruption by pointers
+- debugging [C++], memory corruption
+- corrupted memory address
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 863acbf45268330e106360dd7778acab94b670de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo averiguar si los punteros da&#241;an una direcci&#243;n de memoria
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Descripción del problema  
- Parece que uno de los punteros está dañando la memoria en la dirección 0x00408000.  ¿Cómo se puede averiguar lo que está ocurriendo allí?  
+# <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Cómo averiguar si los punteros dañan una dirección de memoria
+## <a name="problem-description"></a>Descripción del problema  
+ Parece que uno de los punteros está dañando la memoria en la dirección 0x00408000. ¿Cómo se puede averiguar lo que está ocurriendo allí?  
   
-## Soluciones  
+## <a name="solution"></a>Soluciones  
   
-#### Compruebe si el montón está dañado  
+#### <a name="check-for-heap-corruption"></a>Compruebe si el montón está dañado  
   
--   La mayoría de los daños en la memoria se deben en realidad a que el montón está dañado.  Pruebe a usar la utilidad de marcas global \(gflags.exe\) o pageheap.exe.  Vea [http:\/\/support.microsoft.com\/default.aspx?scid\=kb;en\-us;286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
+-   La mayoría de los daños en la memoria se deben en realidad a que el montón está dañado. Pruebe a usar la utilidad de marcas global (gflags.exe) o pageheap.exe. Vea [http://support.microsoft.com/default.aspx?scid=kb;en-us;286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
   
-#### Para averiguar dónde se ha modificado la dirección de la memoria  
+#### <a name="to-find-where-the-memory-address-is-modified"></a>Para averiguar dónde se ha modificado la dirección de la memoria  
   
-1.  Establezca un punto de interrupción de datos en 0x00408000.  Vea [Establecer un punto de interrupción de cambio de datos \(solo C\+\+ nativo\)](../debugger/using-breakpoints.md#BKMK_Set_a_data_change_breakpoint__native_C___only_).  
+1.  Establezca un punto de interrupción de datos en 0x00408000. Vea [establecer un punto de interrupción de cambio de datos (solo C++ nativo)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
   
-2.  Cuando alcance el punto de interrupción, utilice la ventana **Memoria** para ver el contenido de la memoria a partir de la dirección 0x00408000.  Para obtener más información, vea [Memoria \(Ventana\)](../debugger/memory-windows.md).  
+2.  Cuando se alcanza el punto de interrupción, utilice la **memoria** contenido de la ventana para ver la memoria a partir de 0 x 00408000. Para obtener más información, consulte [memoria (ventana)](../debugger/memory-windows.md).  
   
-## Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Vea también  
+ [Preguntas frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

@@ -1,50 +1,52 @@
 ---
-title: "Elemento ButtonText | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Elemento ButtonText (esquema VSCT XML)"
-  - "Elementos de esquema XML VSCT, ButtonText"
+title: Elemento ButtonText | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ButtonText element (VSCT XML schema)
+- VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b17492b0cc8531ac892bf8ead1c309f403d1da48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento ButtonText
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este campo le permite especificar el texto que aparece en varios menús. De forma predeterminada, la `ButtonText` elemento aparece en los controladores de menú. El `ButtonText` elemento también es el valor predeterminado si los demás campos de texto están en blanco. El `ButtonText` elemento no puede estar en blanco, incluso si se especifican los demás campos de texto.  
+# <a name="buttontext-element"></a>Elemento ButtonText
+Este campo le permite especificar el texto que aparece en varios menús. De forma predeterminada, la `ButtonText` elemento aparece en controladores de menús. El `ButtonText` elemento también es el valor predeterminado si los demás campos de texto están en blanco. El `ButtonText` elemento no puede estar en blanco, incluso si se especifican los demás campos de texto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ButtonText>My Command</ButtonText>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento de cadenas](../extensibility/strings-element.md)|Agrupa los elementos de texto, como `ButtonText` y `CommandName`.|  
+|-------------|-----------------|  
+|[Strings (Elemento)](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` y `CommandName`.|  
   
-## Valor de texto  
- El valor de texto de la `ButtonText` elemento proporciona el texto que se muestra para los elementos de menú, combinaciones y otros elementos de interfaz de usuario con texto visible.  
+## <a name="text-value"></a>Valor de texto  
+ El valor de texto de la `ButtonText` elemento proporciona el texto que se muestra para los elementos de menú, combinaciones y otros elementos de interfaz (UI) de usuario que tienen texto visible.  
   
-## Vea también  
- [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vea también  
+ [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

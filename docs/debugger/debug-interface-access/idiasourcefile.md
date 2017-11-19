@@ -1,55 +1,54 @@
 ---
-title: "IDiaSourceFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile (interfaz)"
+title: IDiaSourceFile | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile interface
 ms.assetid: 6e9be757-797f-4960-ba62-c14092620bbd
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b742986d59024021eff5e85d54fc64247571df61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-representa un archivo de código fuente.  
+# <a name="idiasourcefile"></a>IDiaSourceFile
+Representa un archivo de origen.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDiaSourceFile`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDiaSourceFile`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaSourceFile::get\_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valor de clave enteros simple que es único para esta imagen.|  
-|[IDiaSourceFile::get\_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera el nombre del archivo.|  
-|[IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|recupera el tipo de la suma de comprobación.|  
-|[IDiaSourceFile::get\_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumerador de los elementos con números de línea que hace referencia a este archivo.|  
-|[IDiaSourceFile::get\_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|recupera los bytes de la suma de comprobación.|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera un valor de clave de entero simple que es único para esta imagen.|  
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera el nombre de archivo de origen.|  
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Recupera el tipo de suma de comprobación.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera un enumerador de los elementos con números de línea que hacen referencia a este archivo.|  
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera los bytes de la suma de comprobación.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Notas para los llamadores  
- Obtiene esta interfaz llamando a los métodos de [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o de [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) .  Vea el ejemplo para obtener detalles.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Obtener esta interfaz mediante una llamada a la [idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) o [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) métodos. Vea el ejemplo para obtener más información.  
   
-## Ejemplo  
- Esta función muestra los nombres de todos los archivos de código fuente que contribuyen a la tabla especificada.  
+## <a name="example"></a>Ejemplo  
+ Esta función muestra los nombres de todos los archivos de origen que contribuyen a la tabla especificada.  
   
-```cpp#  
+```C++  
 void ShowSourceFiles(IDiaTable *pTable)  
 {  
     CComPtr<IDiaEnumSourceFiles> pSourceFiles;  
@@ -74,18 +73,18 @@ void ShowSourceFiles(IDiaTable *pTable)
 }  
 ```  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Vea también  
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
- [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
- [IDiaLineNumber::get\_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
- [IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+## <a name="see-also"></a>Vea también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
+ [Idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
+ [Idialinenumber:: Get_sourcefile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   
+ [Idiasession:: Findfilebyid](../../debugger/debug-interface-access/idiasession-findfilebyid.md)   
+ [Idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

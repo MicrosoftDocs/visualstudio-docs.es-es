@@ -1,46 +1,45 @@
 ---
-title: "IDiaFrameData::get_functionStart | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_functionStart (método)"
+title: 'Idiaframedata:: Get_functionstart | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_functionStart method
 ms.assetid: 49fd24fb-65c2-4812-8303-56a968353e1b
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 51303607eace37d5886c14efc1057bc50e4c8ce0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_functionStart
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 Recupera una marca que indica si el bloque contiene el punto de entrada de una función.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_functionStart (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  devuelve `TRUE` si el bloque contiene el punto de entrada; si no devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el bloque contiene el punto de entrada; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Es posible que un marco de pila no es el inicio de una función porque el cuadro representa un método o una función insertada incrustado en una función.  
+## <a name="remarks"></a>Comentarios  
+ Es posible que no sea el inicio de una función porque el marco representa un método de en línea o función que se insertan en una función de un marco de pila.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

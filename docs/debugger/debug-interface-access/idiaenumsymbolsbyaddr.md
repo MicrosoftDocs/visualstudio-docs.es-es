@@ -1,57 +1,56 @@
 ---
-title: "IDiaEnumSymbolsByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSymbolsbyAddr (interfaz)"
+title: IDiaEnumSymbolsByAddr | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSymbolsbyAddr interface
 ms.assetid: 37d3dcdf-e4fa-4354-b5e1-8843566b52ac
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4efdd5297b1a4b995ba7d3e45edc9b2c982f6ecd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSymbolsByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Enumera por la dirección que los símbolos diferentes contenían en el origen de datos.  
+# <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
+Enumera por dirección los símbolos distintos contenidos en el origen de datos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaEnumSymbolsByAddr : IUnknown  
+IDiaEnumSymbolsByAddr : IUnknown  
 ```  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDiaEnumSymbolsByAddr`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDiaEnumSymbolsByAddr`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Coloca el enumerador realizando una búsqueda en la sección y el desplazamiento.|  
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Coloca el enumerador mediante una búsqueda de la dirección virtual relativa \(RVA\).|  
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Coloca el enumerador mediante una búsqueda de la dirección virtual \(VA\).|  
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera los símbolos siguientes en orden de dirección.  Actualiza la posición del enumerador por el número de elementos capturados.|  
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Recupera los símbolos anteriores en orden de dirección.  Actualiza la posición del enumerador por el número de elementos capturados.|  
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Coloca el enumerador realizando una búsqueda por sección o de desplazamiento.|  
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|El enumerador se coloca al realizar una búsqueda por dirección virtual relativa (RVA).|  
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|El enumerador se coloca al realizar una búsqueda por dirección virtual (VA).|  
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera los símbolos siguientes en orden por dirección. Actualiza la posición del enumerador por número de elementos que se capturan.|  
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Recupera los símbolos anteriores en orden por dirección. Actualiza la posición del enumerador por número de elementos que se capturan.|  
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Realiza una copia de un objeto.|  
   
-## Comentarios  
- esta interfaz proporciona los símbolos agrupados por la dirección.  Para ejecutar los símbolos agrupados por tipo, por ejemplo `SymTagUDT` \(tipo definido por el usuario\) o `SymTagBaseClass`, utilice la interfaz de [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz proporciona símbolos agrupados por dirección. Para trabajar con símbolos agrupadas por tipo, por ejemplo `SymTagUDT` (tipo definido por el usuario) o `SymTagBaseClass`, use la [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) interfaz.  
   
-## Notas para los llamadores  
- Obtiene esta interfaz llamando al método de [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Obtener esta interfaz mediante una llamada a la [idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) método.  
   
-## Ejemplo  
- Esta función establece el nombre y la dirección de todos los símbolos ordenados por la dirección relativa virtual.  
+## <a name="example"></a>Ejemplo  
+ Esta función muestra el nombre y la dirección de todos los símbolos que se ordenan por la dirección virtual relativa.  
   
-```cpp#  
+```C++  
 void ShowSymbolsByAddress(IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumSymbolsByAddr> pEnumByAddr;  
@@ -95,14 +94,14 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 }  
 ```  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Vea también  
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
+## <a name="see-also"></a>Vea también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

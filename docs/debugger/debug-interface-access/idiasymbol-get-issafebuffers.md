@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isSafeBuffers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isSafeBuffers (método)"
+title: 'Idiasymbol:: Get_issafebuffers | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isSafeBuffers method
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f75693fe1caa638d60d69f9ba61e15426c8f2ed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isSafeBuffers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si la directiva de preprocesador para un búfer seguro se utiliza.  Utilice cuando [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) se establece en `SymTagFunction`.  
+# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Recupera una marca que especifica si se usa la directiva de preprocesador para un búfer seguro. Debe usar cuando el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) está establecido en `SymTagFunction`.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
+```C++  
+HRESULT get_isSafeBuffers(   
+   BOOL* pRetVal)  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  devuelve `TRUE` si el puntero utiliza una directiva de preprocesador para un búfer seguro; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el puntero usa una directiva de preprocesador para un búfer seguro; de lo contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia100.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict\_gs\_check](/visual-cpp/preprocessor/strict-gs-check)
+ [strict_gs_check](/cpp/preprocessor/strict-gs-check)

@@ -1,27 +1,30 @@
 ---
-title: "IDebugSessionProvider (Interfaz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugSessionProvider (interfaz)"
+title: IDebugSessionProvider (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugSessionProvider interface
 ms.assetid: 1b898423-7af9-44f5-8dda-987005309c99
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugSessionProvider (Interfaz)
-La interfaz principal proporcionada por un depurador el IDE al host y el lenguaje de permiso inició la depuración.  Establece una sesión de depuración para una aplicación en ejecución.  Esta interfaz se implementa mediante el administrador de depuración de equipo.  
+# <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider (Interfaz)
+La interfaz principal proporcionada por un depurador IDE para habilitar el host y el idioma inicia la depuración. Establece una sesión de depuración para una aplicación en ejecución. Esta interfaz se implementa mediante el Administrador de depuración de la máquina.  
   
- Además de los métodos heredados de `IUnknown`, la interfaz `IDebugSessionProvider` expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, el `IDebugSessionProvider` interfaz expone los métodos siguientes.  
   
-## métodos en el orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  

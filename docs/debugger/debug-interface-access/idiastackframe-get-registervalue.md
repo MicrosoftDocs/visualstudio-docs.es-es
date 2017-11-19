@@ -1,48 +1,47 @@
 ---
-title: "IDiaStackFrame::get_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame::get_registerValue (método)"
+title: 'Idiastackframe:: Get_registervalue | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_registerValue method
 ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a454beb98fc8579bf625dbdb64db1cf60f8dd50a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el valor de un registro especificado que está almacenado en el marco de pila.  
+# <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
+Recupera el valor de un registro especificado tal como se almacena en el marco de pila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_registerValue(  
-   ULONG      registerIndex,  
-   ULONGLONG *pRetVal  
+   ULONG      registerIndex,  
+   ULONGLONG *pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `registerIndex`  
- \[in\]  uno de los valores de enumeración de [CV\_HREG\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-hreg-e.md) .  
+ [in] Uno de los [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) valores de enumeración.  
   
  `pRetVal`  
- \[out\]  valor almacenado en el registro.  
+ [out] Valor almacenado en el registro.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve el código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [CV\_HREG\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md)

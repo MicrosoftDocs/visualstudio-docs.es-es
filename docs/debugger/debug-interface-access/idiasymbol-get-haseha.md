@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_hasEHa | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasEHa (método)"
+title: 'Idiasymbol:: Get_haseha | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasEHa method
 ms.assetid: cb61dfd9-fe69-461c-8185-288440454864
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 323f94ffdbb05fcf37cd749a1b29bef47738489b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasEHa
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si la función contiene administrar \(estructurado\) asincrónico de excepción.  
+# <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
+Recupera una marca que especifica si la función contiene excepciones asincrónicas (estructuradas).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT get_hasEHa(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pFlag`  
- \[out\]  Devuelve `TRUE` si la función tiene algún administrar asincrónico de excepción; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función no tiene ningún control de excepciones asincrónico; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- Es posible mezclar asincrónico o el control de excepciones estructurado con la excepción estilos de C\+\+ que administra, pero requiere un modificador específicos del compilador, \/EHa, para hacerlo.  
+## <a name="remarks"></a>Comentarios  
+ Es posible mezclar con control de excepciones de C++ estilo de control de excepciones estructurado o asincrónico, pero requiere un modificador de compilador específico, /EHa para habilitarlo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

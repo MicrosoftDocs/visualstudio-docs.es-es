@@ -1,29 +1,29 @@
 ---
-title: "Comandos del men&#250; Ventana | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Comandos del menú Ventana"
+title: "Comandos del menú Ventana | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window menu commands
 ms.assetid: 9b5f1b5f-fd42-4de5-a3e1-d8e7e2e8cf1a
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0e36c5dfe47582ea0910f4727269ba96c5d321a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comandos del men&#250; Ventana
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El menú **Ventana** proporciona comandos para administrar las ventanas de Spy\+\+.  
+# <a name="window-menu-commands"></a>Comandos del menú Ventana
+El **ventana** menú proporciona comandos para administrar ventanas de Spy ++.  
   
- **Cascada**  
- Reorganiza todas las ventanas en un modelo en cascada.  
+ **En cascada**  
+ Reorganiza todas las ventanas en cascada.  
   
  **Mosaico horizontal**  
  Reorganiza todas las ventanas en un modelo de mosaico horizontal.  
@@ -31,14 +31,14 @@ El menú **Ventana** proporciona comandos para administrar las ventanas de Spy\+
  **Mosaico vertical**  
  Reorganiza todas las ventanas en un modelo de mosaico vertical.  
   
- **Organizar iconos**  
- Reorganiza los iconos de la vista, si se han minimizado las ventanas.  
+ **Organizar los iconos**  
+ Reorganiza los iconos de la vista, si se han minimizado windows.  
   
- **Cerrar\/Cerrar todo**  
- Cierra una o todas las ventanas de Spy\+\+.  
+ **Cerrar, cerrar todo**  
+ Cierra una o todas las ventanas de Spy ++.  
   
  **Actualizar**  
- Actualiza la vista actualmente seleccionada.  
+ Actualiza la vista seleccionada actualmente.  
   
  **Ventana**  
  Permite la selección de una ventana concreta.

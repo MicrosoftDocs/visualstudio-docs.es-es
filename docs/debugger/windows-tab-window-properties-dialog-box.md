@@ -1,33 +1,33 @@
 ---
-title: "Pesta&#241;a Ventanas (Cuadro de di&#225;logo Propiedades de la ventana) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Cuadro de diálogo Propiedades de la ventana, pestaña Ventanas"
+title: "Pestaña ventanas, cuadro de diálogo de propiedades de ventana | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a49ec9b52d2eaf6dc336ed28d5b4e531bb3b25cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a Ventanas (Cuadro de di&#225;logo Propiedades de la ventana)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use la pestaña **Ventanas** para mostrar información sobre las ventanas relacionadas con la ventana seleccionada.  Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), cambie el foco a la ventana [Vista Ventanas](../debugger/windows-view.md).  Seleccione el nodo de una ventana en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="windows-tab-window-properties-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Propiedades de la ventana)
+Use la **Windows** ficha para mostrar información sobre windows relacionada con la ventana seleccionada. Para mostrar la [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione cualquier nodo de la ventana en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- En la pestaña **Ventanas** está disponible la configuración siguiente:  
+ Las siguientes opciones están disponibles en la **Windows** ficha:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Ventana siguiente**|Identificador de la ventana relacionada siguiente en la misma secuencia \(orden z\) que se muestra en la vista de árbol de la ventana \(es "ninguno" si no hay ninguna ventana siguiente\).  Elija esta entrada para ver las propiedades de la ventana siguiente.|  
-|**Ventana anterior**|Identificador de la ventana relacionada anterior en la misma secuencia \(orden z\) que se muestra en la vista de árbol de la ventana \(es "ninguno" si no hay ninguna ventana anterior\).  Elija esta entrada para ver las propiedades de la ventana anterior.|  
-|**Ventana primaria**|Identificador de la ventana primaria de esta ventana \(es "ninguno" si no hay una ventana primaria\).  Elija esta entrada para ver las propiedades de la ventana primaria.|  
-|**Primera ventana secundaria**|Identificador de la primera ventana secundaria de esta ventana, en la secuencia \(orden z\) que se muestra en la vista de árbol de la ventana \(es "ninguno" si no hay ventanas secundarias\).  Elija este valor para ver las propiedades de la primera ventana secundaria.|  
-|**Ventana propietaria**|Identificador de la ventana propietaria de esta ventana.  Normalmente, la ventana principal de una aplicación es la propietaria de las ventanas de diálogo modales del sistema, por ejemplo \(es "ninguno" si no hay ningún propietario\).  Elija esta entrada para ver las propiedades de la ventana propietaria.|
+|**Ventana siguiente**|El identificador de la siguiente ventana de mismo nivel en la misma secuencia (orden Z) que se muestra en la vista de árbol de ventanas ("ninguno", si no hay ninguna ventana siguiente). Elija esta entrada para ver las propiedades de la siguiente ventana.|  
+|**Ventana anterior**|El identificador de la ventana anterior del mismo nivel en la misma secuencia (orden Z) que se muestra en la vista de árbol de ventanas ("ninguno", si no hay ninguna ventana anterior). Elija esta entrada para ver las propiedades de la ventana anterior.|  
+|**Ventana primaria**|El identificador de ventana primaria de esta ventana ("ninguno", si no hay ningún elemento primario). Elija esta entrada para ver las propiedades de la ventana primaria.|  
+|**Primer elemento secundario**|El identificador de primera ventana secundaria esta ventana, en la secuencia (orden Z) se muestra en la vista de árbol de ventanas ("ninguno", si no hay ningún ventanas secundarias). Elija este valor para ver las propiedades de la primera ventana secundaria.|  
+|**Ventana propietaria**|El identificador de ventana propietaria de esta ventana. Ventana principal de una aplicación suele ser propietaria de las ventanas de diálogo modal del sistema, por ejemplo ("ninguno", si no hay ningún propietario). Elija esta entrada para ver las propiedades de la ventana propietaria.|

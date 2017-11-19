@@ -1,33 +1,31 @@
 ---
-title: "Error: No se puede conectar al equipo &lt;nombre&gt;. No se puede encontrar el equipo en la red. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.dcom_disabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "DCOM, no se puede realizar la conexión (error)"
+title: "Error: No se puede conectar a la máquina &lt;nombre&gt;. No se puede encontrar la máquina en la red. | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.remote.dcom_disabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: DCOM, unable to connect error
 ms.assetid: b584b5db-ef52-45ed-8561-1314da3cc5b8
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8ed30ca3baeb29f92c4d5f02b64c581ef9a37a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Error: No se puede conectar al equipo &lt;nombre&gt;. No se puede encontrar el equipo en la red.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Error: No se puede conectar a la máquina &lt;nombre&gt;. No se puede encontrar la máquina en la red.
 Este comportamiento se produce si se da una de las condiciones siguientes:  
   
 -   La conexión al equipo remoto se interrumpe.  
@@ -36,9 +34,9 @@ Este comportamiento se produce si se da una de las condiciones siguientes:
   
 -   La contraseña en el equipo remoto ha expirado.  
   
-### Para solucionar este comportamiento  
+### <a name="to-resolve-this-behavior"></a>Para solucionar este comportamiento  
   
--   Asegúrese de que el equipo local y el equipo remoto están en la misma red.  Para ello, utilice el Explorador de Microsoft Windows \(o el Explorador de archivos\) para intentar tener acceso al equipo remoto.  
+-   Asegúrese de que el equipo local y el equipo remoto están en la misma red. Para ello, utilice el Explorador de Microsoft Windows (o el Explorador de archivos) para intentar tener acceso al equipo remoto.  
   
      — y —  
   
@@ -48,6 +46,6 @@ Este comportamiento se produce si se da una de las condiciones siguientes:
   
 -   Asegúrese de que la contraseña que utiliza para conectarse al equipo remoto sea válida y no haya expirado.  
   
-## Vea también  
- [Configurar las herramientas remotas en el dispositivo](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)   
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>Vea también  
+ [Depuración remota](../debugger/remote-debugging.md)   
+ [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)

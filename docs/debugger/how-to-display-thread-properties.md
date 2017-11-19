@@ -1,31 +1,31 @@
 ---
-title: "How to: Display Thread Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "thread properties"
+title: "Cómo: mostrar las propiedades de subproceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: thread properties
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c7ed86a571f667555c6c7fd03d0a228308229c86
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Thread Properties
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para obtener más información sobre un subproceso que se muestra en la [vista Subprocesos](../debugger/threads-view.md), use el [cuadro de diálogo Propiedades del subproceso](../debugger/thread-properties-dialog-box.md).  
+# <a name="how-to-display-thread-properties"></a>Cómo: Mostrar las propiedades del subproceso
+Para obtener más información acerca de un subproceso que se muestra en [vista de subprocesos](../debugger/threads-view.md), use la [cuadro de diálogo de propiedades de subproceso](../debugger/thread-properties-dialog-box.md).  
   
-### Para abrir un cuadro de diálogo Propiedades del subproceso  
+### <a name="to-open-a-thread-properties-dialog-box"></a>Para abrir un cuadro de diálogo Propiedades del subproceso  
   
-1.  Seleccione un subproceso en el árbol mostrado en la [vista Subprocesos](../debugger/threads-view.md).  
+1.  Seleccione un subproceso en el árbol mostrado en [vista de subprocesos](../debugger/threads-view.md).  
   
-2.  En el menú **Ver**, haga clic en **Propiedades**.  
+2.  Desde el **vista** menú, elija **propiedades**.  
   
- Los cuadros de diálogo de propiedades no son modales, de modo que puede hacer clic en otro elemento de una ventana de vista y el cuadro de diálogo mostrará la información del elemento seleccionado.
+ Cuadros de diálogo de propiedades no son modales, por lo que puede hacer clic en otro elemento en una ventana de vista y el cuadro de diálogo mostrará información sobre el elemento seleccionado.

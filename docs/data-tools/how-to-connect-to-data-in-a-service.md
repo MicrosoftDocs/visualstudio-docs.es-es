@@ -1,68 +1,66 @@
 ---
-title: "C&#243;mo: Conectarse a los datos en un servicio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], conectar con servicios Web"
-  - "datos [Visual Studio], leer en servicios Web"
-  - "orígenes de datos, crear en servicios Web"
-  - "leer datos, en servicios Web"
-  - "servicios Web, como orígenes de datos"
-  - "servicios Web, conectar"
-  - "servicios Web, leer datos"
+title: "Cómo: conectarse a los datos en un servicio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], connecting to Web services
+- data sources, creating from Web services
+- data [Visual Studio], reading from Web services
+- reading data, from Web services
+- Web services, reading data
+- Web services, as data sources
+- Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-caps.latest.revision: 32
-caps.handback.revision: 30
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 334f31dcd68e031bfb25b4e0dcd6ce55b9d2f20c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Conectarse a los datos en un servicio
-Se conecta la aplicación a los datos devueltos de un servicio mediante la ejecución del [Asistente para la configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png) y la selección de la opción **Servicio** de la página **Elegir un tipo de origen de datos**.  
+# <a name="how-to-connect-to-data-in-a-service"></a>Cómo: Conectarse a los datos en un servicio
+Conectar su aplicación a los datos devueltos desde un servicio mediante la ejecución de la [Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png) y seleccionando **servicio** en el **elegir un tipo de origen de datos**página.  
   
- Tras la ejecución correcta del asistente, se agrega una referencia al proyecto que queda inmediatamente disponible en [Orígenes de datos \(ventana\)](../Topic/Data%20Sources%20Window.md).  
+ Tras la finalización del asistente, se agrega al proyecto una referencia de servicio y está disponible de inmediato en el [ventana Orígenes de datos](add-new-data-sources.md).  
   
 > [!NOTE]
->  Los elementos que aparecen en la ventana **Orígenes de datos** dependen de la información devuelta por el servicio.  Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para la configuración de orígenes de datos** pueda crear objetos enlazables.  Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, ningún elemento aparece en la **Ventana de orígenes de datos** al completar el asistente.  Esto se debe a que los conjuntos de datos sin tipo no proporcionan esquemas; por tanto, el asistente no tiene bastante información para crear el origen de datos.  
+>  Los elementos que aparecen en la **orígenes de datos** ventana dependen de la información devuelta por el servicio. Algunos servicios podrían no proporcionar suficiente información para que la **Data Source Configuration Wizard** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, a continuación, no aparece ningún elemento en el **ventana Orígenes de datos** al finalizar el asistente. Esto es porque los conjuntos de datos sin tipo no proporcionan esquemas, por lo que el asistente no tiene información suficiente para crear el origen de datos.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### Para conectar la aplicación a un servicio  
+### <a name="to-connect-your-application-to-a-service"></a>Para conectar su aplicación a un servicio  
   
-1.  En el menú **Datos**, haga clic en **Agregar nuevo origen de datos**.  
+1.  En el menú **Datos** , haga clic en **Agregar nuevo elemento**.  
   
-2.  En **Elegir un tipo de origen de datos**, seleccione **Servicio** y, a continuación, haga clic en **Siguiente**.  
+2.  Seleccione **servicio** en el **elegir un tipo de origen de datos** página y, a continuación, haga clic en **siguiente**.  
   
-3.  Escriba la dirección del servicio que desea utilizar o haga clic en **Detectar** para buscar los servicios en la solución actual y, a continuación, haga clic en **Ir**.  
+3.  Escriba la dirección del servicio que desea usar o haga clic en **Discover** para buscar servicios en la solución actual y, a continuación, haga clic en **vaya**.  
   
-4.  Opcionalmente, se puede escribir un nuevo **Espacio de nombres** en lugar del valor predeterminado.  
+4.  Si lo desea, un nuevo **Namespace** pueden escribirse en lugar del valor predeterminado.  
   
     > [!NOTE]
-    >  Haga clic en **Opciones avanzadas** para abrir [Configurar referencia de servicio \(Cuadro de diálogo\)](../data-tools/configure-service-reference-dialog-box.md).  
+    >  Haga clic en **avanzadas** para abrir el [cuadro de diálogo Configurar referencia de servicio](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Haga clic en **Aceptar** para agregar una referencia del servicio a su proyecto.  
+5.  Haga clic en **Aceptar** para agregar una referencia de servicio a su proyecto.  
   
 6.  Haga clic en **Finalizar**.  
   
-     El origen de datos se agrega a la ventana **Orígenes de datos**.  
+     El origen de datos se agrega a la **orígenes de datos** ventana.  
   
-## Pasos siguientes  
+## <a name="next-steps"></a>Pasos siguientes  
   
-#### Para agregar funcionalidad a la aplicación  
+#### <a name="to-add-functionality-to-your-application"></a>Para agregar funcionalidad a la aplicación  
   
--   Seleccione un elemento en la ventana **Orígenes de datos** y arrástrelo hasta un formulario para crear controles enlazados.  Para obtener más información, vea [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+-   Seleccione un elemento en el **orígenes de datos** ventana y arrástrelo hasta un formulario para crear controles enlazados. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-## Vea también  
- [Tutorial: Enlazar controles de WPF a un servicio de datos de WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
- [Tutorial: Enlazar controles de Silverlight a un servicio de datos de WCF](../Topic/Walkthrough:%20Binding%20Silverlight%20Controls%20to%20a%20WCF%20Data%20Service.md)   
- [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+## <a name="see-also"></a>Vea también  
+ [Enlazar controles WPF a un servicio de datos WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
+ [Servicios de Windows Communication Foundation y Servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

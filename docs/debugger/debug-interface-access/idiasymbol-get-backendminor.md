@@ -1,33 +1,31 @@
 ---
-title: "IDiaSymbol::get_backEndMinor | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_backEndMinor (método)"
+title: 'Idiasymbol:: Get_backendminor | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_backEndMinor method
 ms.assetid: 37f38d19-6685-440d-a477-7127c4f8699e
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 474b62f702655472327f94370f75955695192795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_backEndMinor
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 Recupera el número de versión secundaria de back-end del compilador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_backEndMinor (   
    DWORD* pRetVal  
 );  
@@ -44,9 +42,9 @@ HRESULT get_backEndMinor (
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Un compilador normalmente se compone de dos elementos principales: el front-end (el analizador), que controla el análisis del código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tener una versión diferente que el back-end.  
+ Un compilador normalmente se compone de dos elementos principales: el front-end (el analizador), que se encarga de analizar el código fuente en un formato intermedio, y un back-end (generador de código), que convierte el formato intermedio en el ensamblado. No es raro que el front-end tenga una versión diferente que el back-end.  
   
- Un front-end o un número de versión de back-end se compone de tres partes: \< principales>. \< secundaria>. \< compilación>, donde \< principales> es el número de versión principal, \< secundaria> es el número de versión secundaria, y \< compilación> es el número de compilación. Por ejemplo, 13.10.3077.  
+ Un front-end o un número de versión de back-end se compone de tres partes: \<principal >.\< secundaria >. \<generar >, donde \<principales > es el número de versión principal, \<secundaria > es el número de versión secundaria, y \<de compilación > es el número de compilación. Por ejemplo, 13.10.3077.  
   
 ## <a name="requirements"></a>Requisitos  
   

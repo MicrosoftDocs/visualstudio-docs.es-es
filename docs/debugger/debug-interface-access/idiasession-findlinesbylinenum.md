@@ -1,67 +1,66 @@
 ---
-title: "IDiaSession::findLinesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByLinenum (método)"
+title: 'Idiasession:: Findlinesbylinenum | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByLinenum method
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb1538aedd1846e164301238262cfb9378973dfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Determina los números de línea de compilación que se encuentra el número de línea especificado en un archivo de código fuente desde o enfoque.  
+# <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
+Determina los números de línea de la operación de compilación que el número de línea especificado en un archivo de origen se encuentra dentro o cerca.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findLinesByLinenum (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByLinenum (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   DWORD                 linenum,  
+   DWORD                 column,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `compiland`  
- \[in\]  Un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el compilando en el que buscar los números de línea.  Este parámetro no puede ser `NULL`.  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa la operación de compilación en la que se va a buscar los números de línea. Este parámetro no puede ser `NULL`.  
   
  `file`  
- \[in\]  Un objeto de [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa el archivo de código fuente para buscar en.  Este parámetro no puede ser `NULL`.  
+ [in] Un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa el archivo de código fuente que se busca. Este parámetro no puede ser `NULL`.  
   
  `linenum`  
- \[in\]  Especifica un número de línea basada en uno.  
+ [in] Especifica un número de línea basado en uno.  
   
 > [!NOTE]
->  No puede utilizar cero para especificar todas las líneas \(utilice el método de [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) para buscar todas las líneas\).  
+>  No se puede usar cero para especificar todas las líneas (usar la [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para buscar todas las líneas).  
   
  `column`  
- \[in\]  especifica el número de columnas.  uso cero de especificar todas las columnas.  Una columna es un desplazamiento de bytes en una línea.  
+ [in] Especifica el número de columna. Utilice cero para especificar todas las columnas. Una columna es un desplazamiento de bytes en una línea.  
   
  `ppResult`  
- \[out\]  Devuelve un objta de [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contiene una lista de los números de línea recuperados.  
+ [out] Devuelve un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recupera objta que contiene una lista de los números de línea.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo abrir un archivo de código fuente, enumerar los elementos contribuidos por este archivo, y buscar los números de línea en el archivo de código fuente donde cada compilación comienza.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo abrir un archivo de origen, enumerar los compilandos aportados por este archivo y busque los números de línea en el archivo de origen donde se inicia cada operación de compilación.  
   
-```cpp#  
+```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
 {  
     IDiaEnumSourceFiles* pEnum;  
@@ -98,9 +97,9 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [Idiasession:: Findlinesbyaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

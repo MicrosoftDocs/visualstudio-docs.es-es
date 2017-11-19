@@ -1,66 +1,66 @@
 ---
-title: "No se puede asociar al proceso | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.unable2attach"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: No se puede adjuntar al proceso | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.remote.unable2attach
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ec2c181edc69ac2e693de96fcf72fe9116f758b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# No se puede asociar al proceso
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-No se puede asociar al proceso.Se denegó el acceso al componente del depurador del servidor mientras se conectaba a este equipo.  
+# <a name="unable-to-attach-to-the-process"></a>No se puede asociar al proceso
+No se puede asociar al proceso. Se denegó el acceso al componente del depurador del servidor mientras se conectaba a este equipo.  
   
  Hay dos escenarios comunes que provocan este error:  
   
- **Escenario 1:** el equipo A ejecuta Windows XP.  El equipo B ejecuta Windows Server 2003.  El Registro del equipo B contiene el siguiente valor DWORD:  
+ **Escenario 1:** equipo A ejecuta Windows XP. El equipo B ejecuta Windows Server 2003. El Registro del equipo B contiene el siguiente valor DWORD:  
   
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`  
   
- El Usuario 1 inicia una sesión de Terminal Server \(sesión 1\) en el equipo B e inicia una aplicación administrada desde esa sesión.  
+ El Usuario 1 inicia una sesión de Terminal Server (sesión 1) en el equipo B e inicia una aplicación administrada desde esa sesión.  
   
- El Usuario 2, que es el administrador de ambos equipos, inició una sesión en el equipo A.  Desde allí, intenta adjuntarse a una aplicación que se ejecuta en la sesión 1 del equipo B.  
+ Usuario 2, que es administrador en ambos equipos, se registra en el equipo A. Desde allí, intenta asociar a una aplicación que se ejecuta en la sesión 1 del equipo B.  
   
- **Escenario 2:** un usuario ha iniciado sesión en dos equipos, A y B, en el mismo grupo de trabajo, con la misma contraseña en ambos equipos.  El depurador se está ejecutando en el equipo A e intenta adjuntarse a una aplicación administrada que se ejecuta en el equipo B.  En el equipo A, la opción **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales** está establecida como **Invitado**.  
+ **Escenario 2:** un usuario ha iniciado sesión en dos equipos, A y B, en el mismo grupo de trabajo, con la misma contraseña en ambos equipos. El depurador se ejecuta en el equipo A e intenta asociar a una aplicación administrada que se ejecuta en el equipo B. **acceso a la red: modelo de seguridad y recursos compartidos para cuentas locales** establecido en **invitado**.  
   
-### Para resolver el Escenario 1  
+### <a name="to-solve-scenario-1"></a>Para resolver el Escenario 1  
   
 -   Ejecute el depurador y la aplicación administrada con el mismo nombre de usuario y la misma contraseña.  
   
-### Para resolver el Escenario 2  
+### <a name="to-solve-scenario-2"></a>Para resolver el escenario 2  
   
-1.  En el menú **Inicio**, elija **Panel de control**.  
+1.  Desde el **iniciar** menú, elija **el Panel de Control**.  
   
-2.  En el Panel de control, haga doble clic en **Herramientas administrativas**.  
+2.  En el Panel de Control, haga doble clic en **herramientas administrativas**.  
   
-3.  En la ventana Herramientas administrativas, haga doble clic en **Directiva de seguridad local**.  
+3.  En la ventana Herramientas administrativas, haga doble clic en **directiva de seguridad Local**.  
   
-4.  En la ventana Configuración de seguridad local, seleccione **Directivas locales**.  
+4.  En la ventana Directiva de seguridad Local, seleccione **directivas locales**.  
   
-5.  En la columna **Directivas**, haga doble clic en **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**.  
+5.  En el **directivas** columna, haga doble clic en **acceso a la red: modelo de seguridad y recursos compartidos para cuentas locales**.  
   
-6.  En el cuadro de diálogo **Acceso de red: modelo de seguridad y recursos compartidos para cuentas locales**, cambie la configuración de seguridad local a **Clásica** y haga clic en **Aceptar**.  
+6.  En el **acceso a la red: modelo de seguridad y recursos compartidos para cuentas locales** diálogo cuadro, cambie la configuración de seguridad local para **clásico**y haga clic en **Aceptar**.  
   
     > [!CAUTION]
-    >  Cambiar el modelo de seguridad a Clásica puede producir un acceso inesperado a archivos compartidos y componentes DCOM.  Si realiza este cambio, un usuario remoto puede realizar la autenticación con su cuenta de usuario local en lugar de hacerlo como Invitado.  Si la información de un usuario remoto coincide con su nombre de usuario y contraseña, dicho usuario podrá tener acceso a cualquier carpeta u objeto DCOM que haya compartido.  Si utiliza este modelo de seguridad, asegúrese de que todas las cuentas de usuario del equipo tengan contraseñas seguras o establezca una isla de red aislada para los equipos depurados y en depuración a fin de evitar el acceso no autorizado.  
+    >    Cambiar el modelo de seguridad a Clásica puede producir un acceso inesperado a archivos compartidos y componentes DCOM. Si realiza este cambio, un usuario remoto puede realizar la autenticación con su cuenta de usuario local en lugar de hacerlo como Invitado. Si la información de un usuario remoto coincide con su nombre de usuario y contraseña, dicho usuario podrá tener acceso a cualquier carpeta u objeto DCOM que haya compartido. Si utiliza este modelo de seguridad, asegúrese de que todas las cuentas de usuario del equipo tengan contraseñas seguras o establezca una isla de red aislada para los equipos depurados y en depuración a fin de evitar el acceso no autorizado.  
   
 7.  Cierre todas las ventanas.  
   
-## Vea también  
- [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>Vea también  
+ [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)

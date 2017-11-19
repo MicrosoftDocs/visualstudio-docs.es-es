@@ -1,50 +1,49 @@
 ---
-title: "IDiaSymbol::get_intro | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_intro (método)"
+title: 'Idiasymbol:: Get_intro | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_intro method
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 41a52574a2e966860d9143487a1befb5d3a1b95d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_intro
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si la función es una función virtual de introducción.  
+# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
+Recupera una marca que especifica si la función es una función virtual a la presentación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_intro (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_intro (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  devuelve `TRUE` si la función es introducción virtual; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función es preliminar virtual; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 class A {  
    virtual int f1();  
 }  
@@ -53,14 +52,14 @@ class B : public A {
 }  
 ```  
   
- `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es introducción virtual.  
+ Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es preliminar virtual.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v7.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v7.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

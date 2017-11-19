@@ -1,51 +1,50 @@
 ---
-title: "IDiaSession::findInlineFramesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineFramesByVA | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: df9e68f6-e0a4-4cf6-b11d-61c40351e0cd
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1f9ef4aa471ca4bf12e2d609f7b0dcd6129b644a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineFramesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos de punto flotante en una dirección virtual especificada \(VA\).  
+# <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
+Recupera una enumeración que permite a un cliente recorrer en iteración todos los fotogramas en línea en una dirección virtual especificado (VA).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findInlineFramesByVA (   
-   IDiaSymbol*       parent,  
-   ULONGLONG         va,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findInlineFramesByVA (   
+   IDiaSymbol*       parent,   ULONGLONG         va,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `parent`  
- \[in\] objeto de `IDiaSymbol` que representa el elemento primario.  
+ [in] Un `IDiaSymbol` objeto que representa el elemento primario.  
   
  `va`  
- \[in\] especifica la dirección como VA.  
+ [in] Especifica la dirección como un VA.  
   
  `ppResult`  
- \[out\] contiene un objeto de `IDiaEnumSymbols` que contiene la lista de marcos se recuperen que.  
+ [out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)

@@ -1,58 +1,58 @@
 ---
-title: "IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ebeb2ae079845c55c1903afdbcef381a5b4d379c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se contienen en una función principal especificada de código auxiliar de aceleradores en una dirección relativa virtual especificada.  
+# <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
+Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de símbolos que se encuentran en una función de código auxiliar de acelerador primario especificado en una dirección virtual relativa especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `parent`  
- \[in\] `IDiaSymbol` que corresponde a la función de código auxiliar de aceleradores que se buscará.  
+ [in] Un `IDiaSymbol` que corresponde a la función de código auxiliar de aceleración que desea buscar.  
   
  `tagValue`  
- \[in\] valor de etiqueta del puntero de El.  
+ [in] El valor de etiqueta de puntero.  
   
  `rva`  
- \[in\] dirección virtual de relativa de El.  
+ [in] La dirección virtual relativa.  
   
  `ppResult`  
- \[out\] puntero A un puntero de interfaz de `IDiaEnumSymbols` inicializar con el resultado.  
+ [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Llame a este método solo en una interfaz de `IDiaSymbol` correspondiente a una función de código auxiliar de aceleradores.  
+## <a name="remarks"></a>Comentarios  
+ Llamar a este método solo en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar de aceleración.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

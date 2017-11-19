@@ -1,60 +1,65 @@
 ---
-title: "BuildProjectOnLoad (Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad"
-helpviewer_keywords: 
-  - "<BuildOnLoad> (elemento) [plantillas de Visual Studio]"
-  - "BuildOnLoad (elemento) [plantillas de Visual Studio]"
+title: BuildProjectOnLoad (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
+helpviewer_keywords:
+- <BuildOnLoad> element [Visual Studio Templates]
+- BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnLoad (Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica si compilar el proyecto inmediatamente después de que ha creado.  
+# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Plantillas de Visual Studio)
+Especifica si se debe compilar el proyecto inmediatamente después de crearla.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <BuildProjectOnLoad> true/false </BuildProjectOnLoad>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe estar `true` o `false`, que indica si compilar el proyecto inmediatamente después de que ha creado.  
+ El texto debe ser `true` o `false`, que indica si se debe compilar el proyecto inmediatamente después de crearla.  
   
-## Comentarios  
- `BuildProjectOnLoad` es un atributo opcional.  El valor predeterminado es `false`.  
+## <a name="remarks"></a>Comentarios  
+ `BuildProjectOnLoad` es un atributo opcional. El valor predeterminado es `false`.  
   
-## Ejemplo  
- En el ejemplo siguiente se ilustran los metadatos para una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,7 +86,7 @@ Especifica si compilar el proyecto inmediatamente después de que ha creado.
 </VSTemplate>  
 ```  
   
-## Vea también  
- [TemplateContent \(Elemento, Plantillas de Visual Studio\)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [TemplateContent (elemento) (plantillas de Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

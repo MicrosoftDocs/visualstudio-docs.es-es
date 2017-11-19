@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_access | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_access (método)"
+title: 'Idiasymbol:: Get_access | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_access method
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 872478d4b94710bc994022ca19f5f913ce2368ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_access
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-recupera el modificador de acceso de un miembro de clase.  
+# <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
+Recupera el modificador de acceso de un miembro de clase.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_access (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_access (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve un valor de enumeración de [CV\_access\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-access-e.md) que especifica el modificador de acceso de un miembro de clase.  
+ [out] Devuelve un valor de la [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md) enumeración que especifica el modificador de acceso de un miembro de clase.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v7.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v7.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV\_access\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-access-e.md)
+ [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md)

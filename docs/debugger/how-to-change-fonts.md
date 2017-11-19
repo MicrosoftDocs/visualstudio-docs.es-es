@@ -1,38 +1,38 @@
 ---
-title: "How to: Change Fonts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fonts, SpyHelp"
+title: "Cómo: cambiar fuentes | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f55564cc5c439d4ead88299108d3db5e10b9e11e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Change Fonts
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Se puede cambiar la fuente, el estilo de fuente y el tamaño de fuente de las ventanas de Spy\+\+.  
+# <a name="how-to-change-fonts"></a>Cómo: Cambiar las fuentes
+Puede cambiar la fuente, estilo de fuente y tamaño de fuente para ventanas de Spy ++.  
   
-### Para cambiar las opciones de las fuentes  
+### <a name="to-change-font-options"></a>Para cambiar las opciones de fuente  
   
-1.  En el menú **Ver**, haga clic en **Fuente**.  
+1.  Desde el **vista** menú, elija **fuente**.  
   
-2.  Elija una fuente, un estilo de fuente y un tamaño de fuente.  
+2.  Elija una fuente, estilo de fuente y tamaño de fuente.  
   
 3.  Haga clic en **Aceptar**.  
   
- Si selecciona **Guardar como predeterminada**, todas las ventanas de Spy\+\+ usarán esta fuente.  
+ Seleccionar **Guardar como predeterminada** hará que todas las futuras ventanas de Spy ++ utilizarán esta fuente.  
   
-## Vea también  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Usar Spy ++](../debugger/using-spy-increment.md)   
+ [Vistas de Spy ++](../debugger/spy-increment-views.md)   
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)

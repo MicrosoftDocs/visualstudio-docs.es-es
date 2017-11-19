@@ -1,53 +1,53 @@
 ---
-title: "Cuadro de di&#225;logo Buscar subproceso | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Buscar subproceso"
+title: "Cuadro de diálogo Buscar subproceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9887fef89ea78665a64eead02f4d7ea11a28d890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Cuadro de di&#225;logo Buscar subproceso
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use este cuadro de diálogo para buscar y seleccionar el nodo correspondiente a un subproceso concreto en la [vista Subprocesos](../debugger/threads-view.md).  Para abrir este cuadro de diálogo, mueva el foco a una ventana de vista **Subprocesos**.  A continuación, elija **Buscar subproceso** en el menú **Buscar**.  
+# <a name="thread-search-dialog-box"></a>Cuadro de diálogo Buscar subproceso
+Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en [vista de subprocesos](../debugger/threads-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **subprocesos** ventana de vista. A continuación, elija **Buscar subproceso** desde el **búsqueda** menú.  
   
- Están disponibles los siguientes parámetros de configuración:  
+ Las siguientes opciones están disponibles:  
   
  **Subproceso**  
- Identificador de subproceso que se busca.  
+ El identificador del subproceso que se buscará.  
   
  **Módulo**  
- Cadena de módulo que se va a buscar.  
+ La cadena de módulo que se buscará.  
   
- **Dirección de búsqueda Arriba o Abajo**  
+ **Dirección de la búsqueda hacia arriba o hacia abajo**  
  La dirección inicial de la búsqueda.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Cuadro de diálogo Propiedades del subproceso](../debugger/thread-properties-dialog-box.md)  
- Se usa para mostrar las propiedades de un subproceso seleccionado en la vista Subprocesos.  
+ Se utiliza para mostrar las propiedades de un subproceso seleccionado en la vista de subprocesos.  
   
- [Referencia de Spy\+\+](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen los menús y cuadros de diálogo de Spy\+\+.  
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)  
+ Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.  
   
- [Buscar un subproceso en la Vista de subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica cómo encontrar un subproceso concreto en la vista Subprocesos.  
+ [Buscar un subproceso en la vista de subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ Explica cómo encontrar un subproceso concreto en la vista de subprocesos.  
   
- [Vista de subprocesos](../debugger/threads-view.md)  
- Muestra una vista de árbol de los subprocesos activos  
+ [Vista Subprocesos](../debugger/threads-view.md)  
+ Muestra una vista de árbol de subprocesos activos  
   
- [Vistas de Spy\+\+](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy\+\+ de ventanas, mensajes, procesos y subprocesos.  
+ [Vistas de Spy++](../debugger/spy-increment-views.md)  
+ Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
   
- [Usar Spy\+\+](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy\+\+ y explica cómo se puede usar.
+ [Usar Spy++](../debugger/using-spy-increment.md)  
+ Presenta la herramienta Spy ++ y explica cómo se puede usar.

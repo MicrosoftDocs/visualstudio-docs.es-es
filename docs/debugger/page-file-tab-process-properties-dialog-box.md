@@ -1,31 +1,31 @@
 ---
-title: "Pesta&#241;a Archivo de paginaci&#243;n (Cuadro de di&#225;logo Propiedades del proceso) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Propiedades de procesos para Windows NT"
+title: "Pestaña archivo de paginación, cuadro de diálogo de propiedades de proceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties for Windows NT
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0bf5215e7a6d4c4a4a0dac37a9bde2b15fb8f19a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a Archivo de paginaci&#243;n (Cuadro de di&#225;logo Propiedades del proceso)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use la pestaña **Archivo de paginación** para examinar el archivo de paginación de un proceso.  Para mostrar el [cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), cambie el foco a la ventana [Vista Procesos](../debugger/processes-view.md).  Seleccione el nodo de un proceso en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="page-file-tab-process-properties-dialog-box"></a>Pestaña Archivo de paginación (Cuadro de diálogo Propiedades del proceso)
+Use la **archivo de paginación** pestaña para examinar el archivo de paginación de un proceso. Para mostrar la [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- En la pestaña **Archivo de paginación** está disponible la configuración siguiente:  
+ Las siguientes opciones están disponibles en la **archivo de paginación** ficha:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Bytes de archivo de paginación**|Número actual de páginas del archivo de paginación que usa este proceso.  El archivo de paginación almacena las páginas de datos que usa el proceso pero que no se encuentran en otros archivos.  Todos los procesos usan el archivo de paginación, por lo que la falta de espacio puede producir errores durante la ejecución de otros procesos.|  
-|**Bytes de archivo de paginación máximos**|Número máximo de páginas del archivo de paginación que este proceso ha usado.|  
-|**Errores de página**|Número de errores de página de los subprocesos que se ejecutan en este proceso.  Un error de página se produce cuando un subproceso hace referencia a una página de memoria virtual que no está en su espacio de trabajo en la memoria principal.  Por lo tanto, la página no se recuperará desde el disco si está en la lista en espera y, por lo tanto, ya se encuentra en la memoria principal, o si otro proceso con el que se comparte la página la está usando.|
+|**Bytes del archivo de paginación**|El número actual de páginas que este proceso está usando en el archivo de paginación. El archivo de paginación almacena las páginas de datos utilizada por el proceso, pero no contenidas en otros archivos. El archivo de paginación se usa por todos los procesos y la falta de espacio en el archivo de paginación puede provocar errores mientras se están ejecutando otros procesos.|  
+|**Bytes de archivo de página máximos**|El número máximo de páginas que este proceso ha usado en el archivo de paginación.|  
+|**Errores de página**|El número de errores de página por los subprocesos ejecutados en este proceso. Se produce un error de página cuando un subproceso hace referencia a una página de memoria virtual que no está en su espacio de trabajo en la memoria principal. Por lo tanto, la página no se recuperará desde el disco si está en la lista de espera y, por lo que ya se encuentran en la memoria principal, o si la está usando otro proceso con el que se comparte la página.|

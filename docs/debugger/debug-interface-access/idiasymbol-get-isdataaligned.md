@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isDataAligned | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isDataAligned (método)"
+title: 'Idiasymbol:: Get_isdataaligned | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a654db4e9da3490950e390d74fa0148a974fdd2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isDataAligned
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si el tipo definido por \(UDT\) el usuario se ha alineado a un límite específico de memoria.  
+# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+Recupera una marca que especifica si el tipo definido por el usuario (UDT) se ha alineado a algunos límites de memoria concreta.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT get_isDataAligned(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pFlag`  
- \[out\]  Devuelve `TRUE` si el UDT se ha alineado al límite de memoria; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el UDT se ha alineado a algunos límites de memoria; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- Esta propiedad se establece normalmente cuando la aplicación ejecutable es compilada con alineación no predeterminado de los datos.  Por ejemplo, el compilador de Microsoft C\+\+ cambiar la alineación de los datos con la opción de línea de comandos, \/Zp*\#*, donde es un valor *\#* byte.  
+## <a name="remarks"></a>Comentarios  
+ Por lo general, esta propiedad se establece cuando se compila el archivo ejecutable con la alineación de datos no predeterminado. Por ejemplo, el compilador de Microsoft C++ puede cambiar la alineación de datos con la opción de línea de comandos, /Zp*#*, donde  *#*  es un valor de byte.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

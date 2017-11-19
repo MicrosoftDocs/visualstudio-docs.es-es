@@ -1,56 +1,57 @@
 ---
-title: "Menu Commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, menu commands"
-  - "menu commands, Spy++"
+title: "Comandos de menú | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, menu commands
+- menu commands, Spy++
 ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 824dfd632b48bc4f80324e119dfe1af9a5c7015e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Menu Commands
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En los temas de Ayuda de esta sección se explican los comandos disponibles en los menús de Spy\+\+.  
+# <a name="menu-commands"></a>Comandos de menú
+Los temas de ayuda en esta sección se enumeran los comandos disponibles en los menús de Spy ++.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Comandos de menú de Spy](../debugger/spy-menu-commands.md)  
- Describe cada comando disponible en el menú **Spy**.  
+ Describe cada comando disponible en el **Spy** menú.  
   
  [Comandos del menú Árbol](../debugger/tree-menu-commands.md)  
- Describe cada comando disponible en el menú **Árbol**.  
+ Describe cada comando disponible en el **árbol** menú.  
   
  [Comandos del menú Buscar](../debugger/search-menu-commands.md)  
- Describe cada comando disponible en el menú **Buscar**.  
+ Describe cada comando disponible en el **búsqueda** menú.  
   
  [Comandos del menú Ver](../debugger/view-menu-commands.md)  
- Describe cada comando disponible en el menú **Ver**.  
+ Describe cada comando disponible en el **vista** menú.  
   
  [Comandos del menú Mensajes](../debugger/messages-menu-commands.md)  
- Describe cada comando disponible en el menú **Mensajes**.  
+ Describe cada comando disponible en el **mensajes** menú.  
   
  [Comandos del menú Ventana](../debugger/window-menu-commands.md)  
- Describe cada comando disponible en el menú **Ventana**.  
+ Describe cada comando disponible en el **ventana** menú.  
   
  [Comandos del menú Ayuda](../debugger/help-menu-commands.md)  
- Describe cada comando disponible en el menú **Ayuda**.  
+ Describe cada comando disponible en el **ayuda** menú.  
   
-## Secciones relacionadas  
- [Usar Spy\+\+](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy\+\+ y explica cómo se puede usar.  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Usar Spy++](../debugger/using-spy-increment.md)  
+ Presenta la herramienta Spy ++ y explica cómo se puede usar.  
   
- [Vistas de Spy\+\+](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy\+\+ de ventanas, mensajes, procesos y subprocesos.  
+ [Vistas de Spy++](../debugger/spy-increment-views.md)  
+ Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
   
- [Referencia de Spy\+\+](../debugger/spy-increment-reference.md)  
- Incluye esta sección, además de otras secciones en las que se describen los cuadros de diálogo de Spy\+\+.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)  
+ Se incluyen en esta sección y secciones que describen los cuadros de diálogo de Spy ++.

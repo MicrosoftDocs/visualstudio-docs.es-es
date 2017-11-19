@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_hasSecurityChecks | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasSecurityChecks (método)"
+title: 'Idiasymbol:: Get_hassecuritychecks | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasSecurityChecks method
 ms.assetid: 4bb51f62-8645-41a4-bc44-1451010623fd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a71a57974f0c4c139fc755601c14f475b3fe0c66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasSecurityChecks
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si el compilando o la función ha sido compilada con las comprobaciones de seguridad de saturación del búfer \(por ejemplo, el modificador del compilador [\/GS \(Comprobación de seguridad del búfer\)](/visual-cpp/build/reference/gs-buffer-security-check) \).  
+# <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
+Recupera una marca que especifica si la operación de compilación o la función se ha compilado con las comprobaciones de seguridad de saturación del búfer (por ejemplo, el [/GS (comprobación de seguridad de búfer)](/cpp/build/reference/gs-buffer-security-check) modificador del compilador).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_hasSecurityChecks(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pFlag`  
- \[out\]  Devuelve `TRUE` si la función tiene las comprobaciones de seguridad; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función no tiene ninguna comprobación de seguridad; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [\/GS \(Comprobación de seguridad del búfer\)](/visual-cpp/build/reference/gs-buffer-security-check)
+ [/GS (comprobación de seguridad de búfer)](/cpp/build/reference/gs-buffer-security-check)

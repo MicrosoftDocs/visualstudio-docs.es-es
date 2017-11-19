@@ -1,73 +1,72 @@
 ---
-title: "IDiaSymbol::findChildrenExByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::findChildrenExByVA"
+title: IDiaSymbol::findChildrenExByVA | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::findChildrenExByVA
 ms.assetid: 29080009-36e4-4697-acd7-50f2e3e1bf1b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 94ca67611d77ae7da5f2e3fa1a6e0745871d8e1c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findChildrenExByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera los elementos secundarios de símbolos que son válidos en una dirección virtual especificada.  
+# <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
+Recupera a los elementos secundarios del símbolo que son válidos en una dirección virtual especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findChildrenExByVA (   
-   enum SymTagEnum   symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   DWORD             address,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findChildrenExByVA (   
+   enum SymTagEnum   symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   DWORD             address,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `symtag`  
- \[in\]  Especifica las etiquetas del token de los elementos secundarios que se recuperarán, como definido en [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md).  Establezca en `SymTagNull` para que todos los elementos secundarios se recuperen.  
+ [in] Especifica las etiquetas de símbolo de los elementos secundarios van a recuperar, tal como se define en el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md). Establecido en `SymTagNull` para todos los elementos secundarios van a recuperar.  
   
  `name`  
- \[in\]  especifica el nombre de los elementos secundarios que se recuperarán.  Establezca en `NULL` para que todos los elementos secundarios se recuperen.  
+ [in] Especifica el nombre de los elementos secundarios van a recuperar. Establecido en `NULL` para todos los elementos secundarios van a recuperar.  
   
  `compareFlags`  
- \[in\]  Especifica las opciones de comparación de aplicar para llamar a coincidir.  Los valores de enumeración de [NameSearchOptions \(Enumeración\)](../../debugger/debug-interface-access/namesearchoptions.md) sólo se pueden utilizar o en combinación.  
+ [in] Especifica las opciones de comparación que se aplicará a la coincidencia de nombres. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede utilizarse por sí solas o en combinación.  
   
  `address`  
- \[in\]  Especifica la dirección virtual.  
+ [in] Especifica la dirección virtual.  
   
  `ppResult`  
- \[out\]  Devuelve un objeto de [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contiene una lista de los símbolos secundarios recuperados.  
+ [out] Devuelve un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recupera el objeto que contiene una lista de los símbolos de secundarios.  
   
-## Valor devuelto  
- Devuelve `S_OK` si por lo menos se encontró un elemento secundario de símbolos, o devuelve `S_FALSE` si no se encuentra ningún elementos secundarios; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve `S_OK` si se encontró al menos un elemento secundario del símbolo, o devuelve `S_FALSE` si no se encuentra ningún elemento secundario; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los símbolos locales que son información activa devuelta de intervalo de inclusión.  
+## <a name="remarks"></a>Comentarios  
+ Los símbolos locales que se devuelven incluyen información de intervalo en vivo.  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia100.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [NameSearchOptions \(Enumeración\)](../../debugger/debug-interface-access/namesearchoptions.md)
+ [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md)

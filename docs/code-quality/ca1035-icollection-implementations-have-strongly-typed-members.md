@@ -1,11 +1,10 @@
 ---
-title: 'CA1035: ICollection implementations have strongly typed members | Microsoft Docs'
+title: 'CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados | Documentos de Microsoft'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,66 +14,51 @@ helpviewer_keywords:
 - CA1035
 - ICollectionImplementationsHaveStronglyTypedMembers
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a955a69791704d9c179c53a353e08a4ad37a10c0
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection implementations have strongly typed members
+# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Las implementaciones de ICollection tienen miembros fuertemente tipados
 |||  
 |-|-|  
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|  
-|CheckId|CA1035|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Identificador de comprobación|CA1035|  
+|Categoría|Microsoft.Design|  
+|Cambio problemático|Problemático|  
   
-## <a name="cause"></a>Cause  
- A public or protected type implements <xref:System.Collections.ICollection?displayProperty=fullName> but does not provide a strongly typed method for <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. The strongly typed version of <xref:System.Collections.ICollection.CopyTo%2A> must accept two parameters and cannot have a <xref:System.Array?displayProperty=fullName> or an array of <xref:System.Object?displayProperty=fullName> as its first parameter.  
+## <a name="cause"></a>Motivo  
+ Un tipo público o protegido implementa <xref:System.Collections.ICollection?displayProperty=fullName> pero no proporciona un método fuertemente tipado para <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. La versión fuertemente tipada de <xref:System.Collections.ICollection.CopyTo%2A> debe aceptar dos parámetros y no puede tener un <xref:System.Array?displayProperty=fullName> o una matriz de <xref:System.Object?displayProperty=fullName> como su primer parámetro.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule requires <xref:System.Collections.ICollection> implementations to provide strongly typed members so that users are not required to cast arguments to the <xref:System.Object> type when they use the functionality that is provided by the interface. This rule assumes that the type that implements <xref:System.Collections.ICollection> does so to manage a collection of instances of a type that is stronger than <xref:System.Object>.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Esta regla requiere que <xref:System.Collections.ICollection> las implementaciones proporcionen fuertemente tipados miembros para que los usuarios no necesiten convertir los argumentos en la <xref:System.Object> escriba cuando utilicen la funcionalidad proporcionada por la interfaz. Esta regla supone que el tipo que implementa <xref:System.Collections.ICollection> hace así para administrar una colección de instancias de un tipo que es más fuerte que <xref:System.Object>.  
   
- <xref:System.Collections.ICollection> implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface. If the objects in the collection extend <xref:System.ValueType?displayProperty=fullName>, you must provide a strongly typed member for <xref:System.Collections.IEnumerable.GetEnumerator%2A> to avoid the decrease in performance that is caused by boxing. This is not required when the objects of the collection are a reference type.  
+ <xref:System.Collections.ICollection> implementa la interfaz <xref:System.Collections.IEnumerable?displayProperty=fullName>. Si los objetos de la colección extienden <xref:System.ValueType?displayProperty=fullName>, debe proporcionar un miembro fuertemente tipado para <xref:System.Collections.IEnumerable.GetEnumerator%2A> para evitar la disminución de rendimiento que se produjo por la conversión boxing. Esto no es necesario cuando los objetos de la colección son un tipo de referencia.  
   
- To implement a strongly typed version of an interface member, implement the interface members explicitly by using names in the form `InterfaceName.InterfaceMemberName`, such as <xref:System.Collections.ICollection.CopyTo%2A>. The explicit interface members use the data types that are declared by the interface. Implement the strongly typed members by using the interface member name, such as <xref:System.Collections.ICollection.CopyTo%2A>. Declare the strongly typed members as public, and declare parameters and return values to be of the strong type that is managed by the collection. The strong types replace weaker types such as <xref:System.Object> and <xref:System.Array> that are declared by the interface.  
+ Para implementar una versión fuertemente tipada de un miembro de interfaz, implemente los miembros de interfaz explícitamente mediante el uso de nombres en el formulario `InterfaceName.InterfaceMemberName`, como <xref:System.Collections.ICollection.CopyTo%2A>. Los miembros de interfaz explícita utilicen los tipos de datos que se declaran por la interfaz. Implemente los miembros fuertemente tipados mediante el nombre de miembro de interfaz, como <xref:System.Collections.ICollection.CopyTo%2A>. Declara a los miembros fuertemente tipados como públicos y declare los parámetros y devuelven valores para que sea de tipo inflexible administrado por la colección. Los tipos seguros reemplazan los tipos más débiles como <xref:System.Object> y <xref:System.Array> que se declaran mediante la interfaz.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the interface member explicitly (declare it as <xref:System.Collections.ICollection.CopyTo%2A>). Add the public strongly typed member, declared as `CopyTo`, and have it take a strongly typed array as its first parameter.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, implemente explícitamente el miembro de interfaz (declárela como <xref:System.Collections.ICollection.CopyTo%2A>). Agregar público fuertemente tipado declarado el miembro, como `CopyTo`, y que lleve a cabo una matriz fuertemente tipada como su primer parámetro.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if you implement a new object-based collection, such as a binary tree, where types that extend the new collection determine the strong type. These types should comply with this rule and expose strongly typed members.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Suprima las advertencias de esta regla si implementa una nueva colección basada en objetos, como un árbol binario, donde los tipos que extienden la nueva colección determinan el establecimiento inflexible de tipos. Estos tipos deben cumplir con esta regla y exponer miembros fuertemente tipados.  
   
-## <a name="example"></a>Example  
- The following example demonstrates the correct way to implement <xref:System.Collections.ICollection>.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra la forma correcta de implementar <xref:System.Collections.ICollection>.  
   
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1038: Enumerators should be strongly typed](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA1038: Los enumeradores deben estar fuertemente tipados](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
- [CA1039: Lists are strongly typed](../code-quality/ca1039-lists-are-strongly-typed.md)  
+ [CA1039: Las listas están fuertemente tipadas](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   

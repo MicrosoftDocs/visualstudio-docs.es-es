@@ -1,50 +1,49 @@
 ---
-title: "IDiaSymbol::get_oemId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_oemId (método)"
+title: 'Idiasymbol:: Get_oemid | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_oemId method
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7f13be5ad2feef750689754f085c340ef3619bac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_oemId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el valor de identificador del fabricante \(OEM\) de equipo original de símbolos.  
+# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
+Recupera el valor de identificador de fabricante de equipos originales (OEM) del símbolo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_oemId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_oemId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  devuelve un valor único que identifique OEM.  
+ [out] Devuelve un valor único que identifica un OEM.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- Esta propiedad solo se aplica a los símbolos con un tipo de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) de `SymTagCustomType`.  
+## <a name="remarks"></a>Comentarios  
+ Esta propiedad se aplica sólo a los símbolos con un [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) tipo de `SymTagCustomType`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)

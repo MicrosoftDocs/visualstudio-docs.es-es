@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_compilerName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_compilerName (método)"
+title: 'Idiasymbol:: Get_compilername | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_compilerName method
 ms.assetid: 66eaaf72-68d4-40ee-b132-97bea9fe395c
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0c8abef165e5e5714af142a6a60c97ecc03343c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_compilerName
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Devuelve el nombre del compilador usado para generar [Compiland](../../debugger/debug-interface-access/compiland.md).  
+# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
+Devuelve el nombre del compilador que se use para generar la [Compiland](../../debugger/debug-interface-access/compiland.md).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_compilerName (  
-   BSTR *pName  
+   BSTR *pName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pName`  
- Puntero a un valor BSTR que contendrá el nombre Unicode del compilador.  
+ Puntero a una cadena BSTR que contendrá el nombre de Unicode del compilador.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,67 +1,66 @@
 ---
-title: "StackFrameTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StackFrameTypeEnum (enumeración)"
+title: StackFrameTypeEnum | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37d8e960d256b8746781668068978aa72f45155c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# StackFrameTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-especifica el tipo de marco de pila.  
+# <a name="stackframetypeenum"></a>StackFrameTypeEnum
+Especifica el tipo de marco de pila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
+   FrameTypeFPO,  
+   FrameTypeTrap,  
+   FrameTypeTSS,  
+   FrameTypeStandard,  
+   FrameTypeFrameData,  
+   FrameTypeUnknown = -1  
 };  
 ```  
   
-## Elementos \(Elements\)  
+## <a name="elements"></a>Elementos  
  `FrameTypeFPO`  
- Puntero de capítulo omitida; Información de FPO disponibles.  
+ Puntero de marco que se omite; Información de FPO está disponible.  
   
  `FrameTypeTrap`  
- Cuadro de Kernel.  
+ Marco de captura de kernel.  
   
  `FrameTypeTSS`  
- Cuadro de Kernel.  
+ Marco de captura de kernel.  
   
  `FrameTypeStandard`  
- Marco de pila estándar EBP.  
+ Marco de pila EBP estándar.  
   
  `FrameTypeFrameData`  
- Puntero de capítulo omitida; Información de datos frame disponibles.  
+ Puntero de marco que se omite; Información de datos de marco está disponible.  
   
  `FrameTypeUnknown`  
- Capítulo que no tiene información de depuración.  
+ Marco que no tiene ninguna información de depuración.  
   
-## Comentarios  
- Los valores de esta enumeración son devueltos por una llamada al método de [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración son devueltos por una llamada a la [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+ [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

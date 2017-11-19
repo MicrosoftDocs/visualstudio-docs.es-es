@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumSectionContribs::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSectionContribs::Clone (método)"
+title: 'Idiaenumsectioncontribs:: Clone | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSectionContribs::Clone method
 ms.assetid: 81d3f3a7-3684-4e5c-b028-29b268684a2c
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2f12f3a2c67a91fb865bf5a96a9c851e1fd877c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSectionContribs::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Crea un enumerador que contiene al mismo estado de enumeración que el enumerador actual.  
+# <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
+Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Clone(   
-   IDiaEnumSectionContrib** ppenum  
+```C++  
+HRESULT Clone(   
+   IDiaEnumSectionContrib** ppenum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  ppenum  
- \[out\]  Devuelve un objeto de [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) que contiene un duplicado del enumerador.  Las contribuciones de la sección no se duplican, sólo el enumerador.  
+ [out] Devuelve un [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) objeto que contiene un duplicado del enumerador. La sección contribuciones no están duplicados, solo el enumerador.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

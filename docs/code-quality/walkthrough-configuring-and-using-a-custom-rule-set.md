@@ -1,81 +1,82 @@
 ---
-title: "Tutorial: Configurar y utilizar un conjunto de reglas personalizado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "análisis de código, tutoriales"
-  - "análisis de código, conjuntos de reglas"
+title: 'Tutorial: Configurar y utilizar un personalizado conjunto de reglas | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code analysis, walkthroughs
+- code analysis, rule sets
 ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 40
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Tutorial: Configurar y utilizar un conjunto de reglas personalizado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este tutorial se muestra cómo emplear las herramientas de análisis del código que se han configurado para usar un *conjunto de reglas* personalizado en una biblioteca de clases.  Puede seleccionar un conjunto de reglas relacionadas con el tipo de proyecto que especificó para la solución o puede seleccionar otros conjuntos de reglas para satisfacer una necesidad concreta, por ejemplo, examinar el código heredado para buscar problemas que se pueden corregir sin necesidad de interrupción.  En ambos casos puede personalizar los conjuntos de reglas de manera que se ajusten a los requisitos de un proyecto.  
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
+Este tutorial muestra cómo utilizar las herramientas de análisis de código que se ha configurado para usar un personalizada *conjunto de reglas* en una biblioteca de clases. Puede seleccionar un conjunto de reglas que se relaciona con el tipo de proyecto que especificó para la solución, o puede seleccionar otros conjuntos de reglas para satisfacer una necesidad concreta como el análisis de código heredado para problemas que puede corregirse de una manera sin interrupción. En cualquier caso, los conjuntos de reglas también pueden personalizarse para ajustar a los requisitos del proyecto.  
   
- En este tutorial, llevará a cabo estos procesos:  
+ En este tutorial, recorre paso a paso a través de estos procesos:  
   
 -   Crear una biblioteca de clases.  
   
--   Seleccionar el conjunto de reglas de análisis de código **Reglas de directrices de diseño básicas de Microsoft**.  
+-   Seleccione el **reglas de directrices de diseño básicas de Microsoft** conjunto de reglas de análisis de código.  
   
--   Agregar su código propio a la clase.  
+-   Agregue su propio código a la clase.  
   
 -   Ejecutar análisis de código.  
   
 -   Personalizar el conjunto de reglas.  
   
--   Ejecutar análisis de código y ver cómo funciona el comportamiento de la personalización del conjunto de reglas.  
+-   Ejecutar análisis de código y ver cómo el conjunto de reglas personalización funciona el comportamiento.  
   
-## Requisitos previos  
+## <a name="prerequisites"></a>Requisitos previos  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
-## Utilizar conjuntos de reglas con análisis de código  
- Primero, cree una biblioteca de clases simple.  
+## <a name="using-rule-sets-with-code-analysis"></a>Utilizar conjuntos de reglas con análisis de código  
+ En primer lugar, cree una biblioteca de clases simple.  
   
-#### Crear una biblioteca de clases  
+#### <a name="create-a-class-library"></a>Crear una biblioteca de clases  
   
-1.  En el menú **Archivo**, haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**.  
+1.  En el menú **Archivo** , haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, en **Tipos de proyecto**, haga clic en **Visual C\#**.  
+2.  En el **nuevo proyecto** cuadro de diálogo **tipos de proyecto**, haga clic en **Visual C#**.  
   
-3.  En **Visual C\#**, seleccione **Biblioteca de clases**.  
+3.  En **Visual C#**, seleccione **biblioteca de clases**.  
   
-4.  En el cuadro de texto **Nombre**, escriba **RuleSetSample** y, a continuación, haga clic en Aceptar.  
+4.  En el **nombre** cuadro de texto, escriba **RuleSetSample** y, a continuación, haga clic en **Aceptar**.  
   
- A continuación, seleccionará el conjunto de reglas **Reglas de directrices de diseño básicas de Microsoft** y lo guardará con su proyecto.  
+ A continuación, seleccionará el **reglas de directrices de diseño básicas de Microsoft** conjunto de reglas y guárdelo con el proyecto.  
   
-#### Seleccionar un conjunto de reglas de análisis de código  
+#### <a name="select-a-code-analysis-rule-set"></a>Seleccione un conjunto de reglas de análisis de código  
   
-1.  En el menú **Analizar**, haga clic en **Configurar análisis de código para RuleSetSample**.  
+1.  En el **analizar** menú, haga clic en **configurar análisis de código para RuleSetSample**.  
   
-     Aparece la configuración del análisis de código.  
+     Aparecen los valores de configuración para el análisis de código.  
   
-2.  En la lista desplegable **Ejecutar este conjunto de reglas**, seleccione **Todas las reglas de Microsoft**.  
+2.  En el **ejecutar este conjunto de reglas** lista desplegable, seleccione **todas las reglas de Microsoft**.  
   
-     Para obtener más información acerca de los conjuntos de reglas disponibles, vea [Referencia del conjunto de reglas Análisis de código](../code-quality/code-analysis-rule-set-reference.md).  
+     Para obtener más información acerca de los conjuntos de reglas disponibles, vea [referencia de conjunto de reglas de análisis de código](../code-quality/code-analysis-rule-set-reference.md).  
   
-     En el menú Archivo, haga clic en **Guardar los elementos seleccionados** para actualizar el archivo de proyecto con información sobre el conjunto de reglas seleccionado y sus valores.  
+     En el menú archivo, haga clic en **guardar elementos seleccionados** para actualizar el archivo de proyecto con información sobre el conjunto de reglas que ha seleccionado y su configuración.  
   
     > [!TIP]
-    >  En una situación real, una práctica recomendada para clasificar por orden de prioridad los problemas que se desean abordar con el análisis de código es comenzar con el conjunto de **Reglas mínimas recomendadas de Microsoft** y corregir los problemas y, después, agregar incrementalmente más reglas o conjuntos de reglas para buscar y corregir otros problemas.  
+    >  En una situación real, una buena práctica de usar para asignar prioridades a los problemas de destino con el análisis de código es comenzar con la **reglas mínimas recomendadas** conjunto de reglas y corregir los problemas deseados y, a continuación, agregar de forma incremental más reglas o la regla se establece para buscar y corregir los problemas adicionales.  
   
- A continuación, agregará código a la biblioteca de clases que se utilizará para mostrar las infracciones de la regla de análisis de código CA1704 "Los identificadores deberían tener la ortografía correcta".  Para obtener más información, vea [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
+ A continuación, agregará código a la biblioteca de clases que se usará para mostrar las infracciones de la CA1704 "Los identificadores deberían tener la ortografía correcta" regla de análisis de código. Para obtener más información, consulte [CA1704: los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
-#### Agregar su propio código  
+#### <a name="add-your-own-code"></a>Agregar su propio código  
   
--   En el Explorador de soluciones, abra el archivo Class1.cs y reemplace el código existente por el siguiente:  
+-   En el Explorador de soluciones, abra el archivo Class1.cs y reemplace el código existente con lo siguiente:  
   
     ```  
     using System;  
@@ -101,56 +102,56 @@ En este tutorial se muestra cómo emplear las herramientas de análisis del cód
   
     ```  
   
- Ahora puede ejecutar el análisis de código en el proyecto RuleSetSample y buscar errores y advertencias generadas en la ventana Lista de errores.  
+ Ahora puede ejecutar análisis de código en el proyecto RuleSetSample y buscar errores y advertencias generadas en la ventana Lista de errores.  
   
-#### Ejecutar el análisis de código en el proyecto RuleSetSample  
+#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Ejecutar análisis de código en el proyecto RuleSetSample  
   
-1.  En el menú **Analizar**, haga clic en **Ejecutar análisis de código en RuleSetSample**.  
+1.  En el **analizar** menú, haga clic en **ejecutar análisis de código en RuleSetSample**.  
   
-2.  En la ventana Lista de errores, haga clic en **Advertencias** y, a continuación, haga clic en el encabezado de columna **Descripción** para ordenar las advertencias alfanuméricamente.  
+2.  En la ventana Lista de errores, haga clic en **advertencias** y, a continuación, haga clic en el **descripción** encabezado de columna para ordenar las advertencias por orden alfanumérico.  
   
-     En una aplicación real, corregiría cualquier infracción de regla que mereciera la pena corregir en este punto u opcionalmente desactivaría o suprimiría una regla si decide que no vale la pena corregirla.  Para obtener más información, vea [Suprimir advertencias mediante el atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     En una aplicación del mundo real, se podría corregir cualquier infracción de regla merece la pena corregir en este punto, o si lo desea desactivar o suprimir una regla si ha determinado que no se implementó la pena corregir. Para obtener más información, consulte [Suprimir advertencias usando el atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
-3.  Observe las advertencias CA1704.  Las infracciones de esta regla indican que debe "considerar proporcionar un nombre más descriptivo para los parámetros". Podría corregir el problema en el código o deshabilitar la regla, tal y como se explica en el procedimiento siguiente.  
+3.  Tenga en cuenta las advertencias CA1704. Las infracciones de esta regla indican que debe "considerar proporcionar un nombre más descriptivo para los parámetros." Puede corregir el problema en el código o se puede deshabilitar la regla, tal como se describe en el procedimiento siguiente.  
   
- Después, personalizará el conjunto de reglas para que excluya la advertencia CA1704, "Los identificadores deberían tener la ortografía correcta".  
+ A continuación, personalizará el conjunto de reglas para excluir la advertencia CA1704, "Los identificadores deberían tener la ortografía correcta".  
   
-#### Personalizar el conjunto de reglas en su proyecto para deshabilitar una regla concreta  
+#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Personalizar el conjunto de reglas para que su proyecto para deshabilitar una regla específica  
   
-1.  En el menú **Analizar**, haga clic en **Configurar análisis de código para RuleSetSample**.  
+1.  En el **analizar** menú, haga clic en **configurar análisis de código para RuleSetSample**.  
   
-2.  En la lista desplegable **Ejecutar este conjunto de reglas**, compruebe que todavía está resaltado **Todas las reglas de Microsoft** y, a continuación, haga clic en **Abrir**.  Se muestra la página del conjunto de reglas.  
+2.  En el **ejecutar este conjunto de reglas** lista desplegable lista, compruebe que la **todas las reglas de Microsoft** todavía se resalta el conjunto de reglas y, a continuación, haga clic en **abiertos**. Se abrirá la página de conjunto de reglas.  
   
-3.  Expanda el nodo de la categoría Microsoft.Naming y, a continuación, seleccione la advertencia CA1704.  
+3.  Expanda el nodo de categoría Microsoft.Naming y, a continuación, seleccione la advertencia CA1704.  
   
-4.  En la columna **Acción**, seleccione **Ninguna**. Esto evita que CA1704 se muestre como una advertencia o error en la ventana Lista de errores.  
+4.  En el **acción** columna, seleccione **ninguno.** Esto evita que CA1704 mostrar como una advertencia o un error en la ventana Lista de errores.  
   
-     Este es un buen momento para experimentar con los distintos botones de la barra de herramientas y las opciones de filtrado para familiarizarse con ellos.  Por ejemplo, puede utilizar la lista desplegable  **Agrupar por** para buscar una regla o categoría de reglas concreta.  Otro ejemplo es que puede utilizar el botón **Ocultar reglas deshabilitadas** de la barra de herramientas de páginas del conjunto de reglas para ocultar o mostrar todas las reglas que tienen la columna **Acción** establecida en **Ninguna**.  Esto puede ser útil si desea buscar reglas que haya desactivado para comprobar que siguen deshabilitadas.  
+     Ahora sería un buen momento para experimentar con los distintos botones de barra de herramientas y opciones de filtrado para familiarizarse con ellos. Por ejemplo, puede usar el **Group By** la lista desplegable para ayudar a localizar una regla específica, o categoría de reglas. Otro ejemplo es que puede usar el **ocultar reglas deshabilitadas** botón en la barra de herramientas de páginas de conjunto de reglas para ocultar o mostrar todas las reglas con el **acción** columna establecida en **ninguno**. Esto puede ser útil si desea buscar todas las reglas que ha desactivado para comprobar que aún desea tenerlas deshabilitado.  
   
-5.  En el menú Ver, haga clic en la Ventana Propiedades.  Escriba **My Custom Rule Set** en el cuadro Nombre de la ventana de herramientas de Propiedades.  De esta manera se cambia el nombre para mostrar del nuevo conjunto de reglas en el IDE de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].  
+5.  En el menú Ver, haga clic en ventana Propiedades. Tipo de **My Custom Rule Set** en el cuadro Nombre de la ventana de herramientas de propiedades. Esto cambia el nombre para mostrar de la nueva regla establecido el [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE.  
   
-6.  En el menú **Archivo**, haga clic en **Guardar todas las reglas de Microsoft.ruleset** para guardar su conjunto de reglas personalizado.  Navegar hasta la carpeta raíz del proyecto.  En el cuadro **Nombre de archivo**, escriba MyCustomRuleSet.  El conjunto de reglas personalizado puede ahora seleccionarse para el uso con el proyecto.  
+6.  En el **archivo** menú, haga clic en **Rules.ruleset todos los Microsoft guardar** guardar la regla personalizada establecido. Navegue a la carpeta raíz del proyecto. En **el nombre de archivo** cuadro de texto, escriba **MyCustomRuleSet**. El conjunto de reglas personalizado puede ahora seleccionarse para su uso con el proyecto.  
   
- Con el nuevo conjunto de reglas creado, tiene que configurar los valores del proyecto para especificar que desea utilizar el nuevo conjunto de reglas.  
+ Con el nuevo conjunto de reglas creado, ahora tendrá que configurar la configuración del proyecto para especificar que desea usar la nueva regla establecer con él.  
   
-#### Especificar el nuevo conjunto de reglas para usar con el proyecto  
+#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Especifique la nueva regla establecer para su uso con el proyecto  
   
-1.  En el Explorador de soluciones, haga clic con el botón secundario del mouse en el proyecto y, a continuación, seleccione **Propiedades**.  
+1.  En el Explorador de soluciones, haga clic en el proyecto y, a continuación, seleccione **propiedades**.  
   
-2.  En la pestaña **Propiedades**, haga clic en **Análisis de código**.  
+2.  En el **propiedades** , haga clic en **análisis de código**.  
   
-     En la lista desplegable de **Ejecutar este conjunto de reglas** , haga clic en **\<Examinar\>**.  Navegue hasta la carpeta raíz del proyecto de código y seleccione MyCustomRuleSet.ruleset.  Este es el nuevo conjunto de reglas que creó en el procedimiento anterior.  
+     En el **ejecutar este conjunto de reglas** la lista desplegable, haga clic en  **\<Examinar... >**. Navegue hasta la carpeta raíz de su proyecto de código y, a continuación, seleccione **MyCustomRuleSet.ruleset**. Este es el nuevo conjunto de reglas que creó en el procedimiento anterior.  
   
-3.  En el menú **Archivo**, haga clic en **Guardar** para guardar la configuración del proyecto.  El conjunto de reglas personalizado ya se puede utilizar con el proyecto.  
+3.  En el **archivo** menú, haga clic en **guardar** para guardar la configuración del proyecto. Ahora se puede utilizar el conjunto de reglas personalizado con el proyecto.  
   
- Finalmente, ejecutará el análisis de código de nuevo usando su conjunto de reglas MyCustomRuleSet.  Observe que la ventana Lista de errores no muestra la infracción de la regla de rendimiento CA1704.  
+ Por último, ejecutará el análisis de código con el conjunto de reglas MyCustomRuleSet. Tenga en cuenta que la ventana Lista de errores no se muestra la infracción de regla de rendimiento CA1704.  
   
-#### Ejecutar el análisis de código en el proyecto RuleSetSample por segunda vez  
+#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Ejecutar análisis de código en el proyecto RuleSetSample por segunda vez  
   
-1.  En el menú **Analizar**, haga clic en **Ejecutar análisis de código en RuleSetSample**.  
+1.  En el **analizar** menú, haga clic en **ejecutar análisis de código en RuleSetSample**.  
   
-2.  En la ventana Lista de errores, observe que al hacer clic en **Advertencias**, ya no aparecen las infracciones del advertencia CA1704 de la regla "Los identificadores deberían tener la ortografía correcta".  
+2.  En la ventana Lista de errores, tenga en cuenta que al hacer clic en **advertencias**, ya no verá las infracciones de la advertencia CA1704 de la regla "Los identificadores deberían tener la ortografía correcta".  
   
-## Vea también  
- [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+## <a name="see-also"></a>Vea también  
+ [Cómo: configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Referencia del conjunto de reglas Análisis de código](../code-quality/code-analysis-rule-set-reference.md)

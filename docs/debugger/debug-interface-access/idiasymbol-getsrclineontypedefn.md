@@ -1,41 +1,41 @@
 ---
-title: "IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::getSrcLineOnTypeDefn | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0627d02c41fb1564037c56725d3ba26e9ffa2cfe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::getSrcLineOnTypeDefn
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el archivo de código fuente y el número de línea que indica dónde se define un tipo definido por el usuario especificado.  
+# <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
+Recupera el número de archivo y la línea de código fuente que indican donde se define un tipo definido por el usuario especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT getSrcLineOnTypeDefn(  
    IDiaLineNumber **ppResult);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppResult`  
- \[out\] objeto de A `IDiaLineNumber` que contiene el archivo de código fuente y el número de línea donde el definido por el usuario.  
+ [out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.  
   
-## Valor devuelto  
- Si es correcto, especificado `S_OK`; si no, especificado `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

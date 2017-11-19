@@ -1,49 +1,48 @@
 ---
-title: "IDiaSymbol::get_rank | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_rank (método)"
+title: 'Idiasymbol:: Get_rank | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_rank method
 ms.assetid: 14cc9c4b-a5ec-414a-b01f-4a142c17b7cc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 623c700c6f9a30b6142faeb7e1b31881d0e0fe11
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_rank
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el rango \(número de dimensiones\) de una matriz multidimensional de FORTRAN.  
+# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
+Recupera el rango (número de dimensiones) de una matriz multidimensional de FORTRAN.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_rank (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_rank (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve el número de dimensiones de una matriz multidimensional de FORTRAN.  
+ [out] Devuelve el número de dimensiones de una matriz multidimensional de FORTRAN.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- La fila hace referencia al número de dimensiones de una matriz donde se ha declarado la matriz como `myarray[1,2,3]`.  Este ejemplo tiene una fila de 3 y 3.  La fila no se aplica a C\+\+ que usa el concepto de una matriz de matrices para cada dimensión \(es decir, `myarray[1][2][3]`\).  
+## <a name="remarks"></a>Comentarios  
+ Rango hace referencia al número de dimensiones de una matriz donde se declara la matriz como `myarray[1,2,3]`. Este ejemplo tiene un rango de dimensiones 3 y 3. Rango no se aplica a C++ que utiliza el concepto de una matriz de matrices para cada dimensión (es decir, `myarray[1][2][3]`).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

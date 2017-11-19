@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_liveRangeLength | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeLength"
+title: IDiaSymbol::get_liveRangeLength | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeLength
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cbb517fda948a916815072ab406aafe49f7dc241
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeLength
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Devuelve la longitud del intervalo de dirección en el que el símbolo local es válido.  
+# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+Devuelve la longitud del intervalo de direcciones en la que el símbolo local es válido.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_liveRangeLength (   
-   ULONGLONG* length  
+```C++  
+HRESULT get_liveRangeLength (   
+   ULONGLONG* length  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `length`  
- \[out\]  Devuelve la longitud del intervalo de direcciones.  
+ [out] Devuelve la longitud del intervalo de direcciones.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  Un código de error devuelto indica que el token no tiene información activa del intervalo.  
+>  Un código de error devuelto significa que el símbolo no tiene información de intervalo en vivo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia100.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

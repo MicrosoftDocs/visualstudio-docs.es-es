@@ -1,95 +1,94 @@
 ---
-title: "LocationType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LocationType (enumeración)"
+title: LocationType | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: LocationType enumeration
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d5a6a14b3e5e1731c7b9f1fd58181be7adb870d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# LocationType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Indica el tipo de información de ubicación contenida en uno.  
+# <a name="locationtype"></a>LocationType
+Indica el tipo de información de ubicación contenida en un símbolo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum LocationType {   
-   LocIsNull,  
-   LocIsStatic,  
-   LocIsTLS,  
-   LocIsRegRel,  
-   LocIsThisRel,  
-   LocIsEnregistered,  
-   LocIsBitField,  
-   LocIsSlot,  
-   LocIsIlRel,  
-   LocInMetaData,  
-   LocIsConstant,  
-   LocTypeMax  
+```C++  
+enum LocationType {   
+   LocIsNull,  
+   LocIsStatic,  
+   LocIsTLS,  
+   LocIsRegRel,  
+   LocIsThisRel,  
+   LocIsEnregistered,  
+   LocIsBitField,  
+   LocIsSlot,  
+   LocIsIlRel,  
+   LocInMetaData,  
+   LocIsConstant,  
+   LocTypeMax  
 };  
 ```  
   
-## Elementos \(Elements\)  
+## <a name="elements"></a>Elementos  
  `LocIsNull`  
- La información de ubicación no está disponible.  
+ Información de ubicación no está disponible.  
   
  `LocIsStatic`  
- la ubicación es estática.  
+ Ubicación es estática.  
   
  `LocIsTLS`  
- La ubicación se encuentra en almacenamiento local de subprocesos.  
+ Ubicación está en almacenamiento local de subprocesos.  
   
  `LocIsRegRel`  
- la ubicación es registro\-relativa.  
+ La ubicación es relativa del registro.  
   
  `LocIsThisRel`  
- La ubicación es `this`\- relativa.  
+ Ubicación es `this`-relativa.  
   
  `LocIsEnregistered`  
- La ubicación se encuentra en un registro.  
+ Ubicación está en un registro.  
   
  `LocIsBitField`  
- La ubicación se encuentra en un campo de bits.  
+ Se encuentra en un campo de bits.  
   
  `LocIsSlot`  
- La ubicación es una entrada de Lenguaje intermedio de Microsoft \(MSIL\).  
+ La ubicación es una ranura de lenguaje intermedio de Microsoft (MSIL).  
   
  `LocIsIlRel`  
- la ubicación es MSIL\-relativa.  
+ Ubicación es relativo a MSIL.  
   
  `LocInMetaData`  
- La ubicación se encuentra en metadatos.  
+ Se encuentra en los metadatos.  
   
  `LocIsConstant`  
- La ubicación se encuentra en un valor constante.  
+ Se encuentra en un valor constante.  
   
  `LocTypeMax`  
- El número de tipos de la ubicación de esta enumeración.  
+ El número de tipos de ubicación de esta enumeración.  
   
-## Comentarios  
- Las propiedades disponibles en la interfaz de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dependen de la ubicación del símbolo en el archivo de imagen.  Para obtener más información, vea [Symbol Locations](../../debugger/debug-interface-access/symbol-locations.md).  
+## <a name="remarks"></a>Comentarios  
+ Las propiedades disponibles para la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaz dependen de la ubicación del símbolo en el archivo de imagen. Para obtener más información, consulte [ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md).  
   
- Los valores de esta enumeración son devueltos por una llamada al método de [IDiaSymbol::get\_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .  
+ Los valores de esta enumeración son devueltos por una llamada a la [idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [Symbol Locations](../../debugger/debug-interface-access/symbol-locations.md)
+ [Idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [Ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

@@ -1,50 +1,52 @@
 ---
-title: "Clase ContingentProperties - miembros internos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Clase ContingentProperties [motores de depuración de .NET Framework]"
-  - "motores de depuración, ContingentProperties (clase) [.NET Framework]"
+title: Clase ContingentProperties - miembros internos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ContingentProperties class [.NET Framework debug engines]
+- debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3d5d929f41a40d986aafa8150e68fadcb46f3469
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Clase ContingentProperties - miembros internos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="contingentproperties-class---internal-members"></a>Clase ContingentProperties - miembros internos
 Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.  
   
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib \(en mscorlib.dll\)  
+ **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- No se puede tener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común \(CIL\).  
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
   
-## Miembros  
+## <a name="members"></a>Miembros  
   
-### Campos  
+### <a name="fields"></a>Campos  
   
-|Nombre|Descripción|  
-|------------|-----------------|  
-|[m\_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados en esta tarea.|  
+|Name|Descripción|  
+|----------|-----------------|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados con esta tarea.|  
   
-## Comentarios  
- .NET Framework inicializa los campos de esta clase solo cuando sean necesarios.  
+## <a name="remarks"></a>Comentarios  
+ .NET Framework inicializa los campos de esta clase solo cuando sean necesarias.  
   
-## Vea también  
- [Información interna de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+## <a name="see-also"></a>Vea también  
+ [Datos internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

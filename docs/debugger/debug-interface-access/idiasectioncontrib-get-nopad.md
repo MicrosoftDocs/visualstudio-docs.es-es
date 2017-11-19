@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_nopad | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_nopad (método)"
+title: 'Idiasectioncontrib:: Get_nopad | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_nopad method
 ms.assetid: f5c08603-0b3e-4e81-acf1-1b95a6a83bed
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6bbabc5497e59db31535f87761bd081fe2eb0a6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_nopad
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una marca que indica si la sección no se debe completar el límite siguiente de memoria.  
+# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
+Recupera una marca que indica si la sección no se debe controlar hasta el siguiente límite de memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_nopad(  
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 };  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve `TRUE` si la sección se completa el límite siguiente de memoria; si no devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si no se debe controlar la sección hasta el siguiente límite de memoria; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Ésta es una propiedad consultada normalmente sólo en más archivos anteriores.  
+## <a name="remarks"></a>Comentarios  
+ Se trata de una propiedad suele aparecer sólo en los archivos antiguos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

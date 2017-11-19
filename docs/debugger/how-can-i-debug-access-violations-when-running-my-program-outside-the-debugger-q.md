@@ -1,43 +1,41 @@
 ---
-title: "C&#243;mo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.access"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "depuración de infracción de acceso"
-  - "depurar [Visual Studio], infracciones de acceso"
+title: "Cómo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.access
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- access violation debugging
+- debugging [Visual Studio], access violations
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d1b8a6e019725f95788b4988fbe1ddef18cb27cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Descripción del problema  
- El programa funciona bien en el entorno de Visual Studio, pero cuando se ejecuta de forma independiente en el sistema operativo Windows, produce una infracción de acceso.  ¿Cómo se puede depurar este problema?  
+# <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Cómo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador
+## <a name="problem-description"></a>Descripción del problema  
+ El programa funciona bien en el entorno de Visual Studio, pero cuando se ejecuta de forma independiente en el sistema operativo Windows, produce una infracción de acceso. ¿Cómo se puede depurar este problema?  
   
-## Soluciones  
- Establezca la opción [Depuración Just\-In\-Time](../debugger/just-in-time-debugging-in-visual-studio.md) y ejecute el programa de forma independiente hasta que se produzca la infracción de acceso.  A continuación, en el cuadro de diálogo **Infracción de acceso**, se puede hacer clic en **Cancelar** para iniciar el depurador.  
+## <a name="solution"></a>Solución  
+ Establecer el [Just-in-time depuración](../debugger/just-in-time-debugging-in-visual-studio.md) opción y ejecutar el programa de forma independiente hasta que se produce la infracción de acceso. A continuación, en la **infracción de acceso** cuadro de diálogo, puede hacer clic en **cancelar** para iniciar el depurador.  
   
- Vea también el artículo Q133174 de Knowledge Base, "How to Locate Where a General Protection \(GP\) Fault Occurs". Encontrará artículos de Knowledge Base en el CD\-ROM de MSDN Library o realizando búsquedas en [http:\/\/support.microsoft.com\/](http://support.microsoft.com/).  
+ Vea también el artículo Q133174 de Knowledge Base, "How to Locate Where a General Protection (GP) Fault Occurs". Encontrará artículos de Knowledge Base en el CD de MSDN Library o realizando búsquedas [http://support.microsoft.com/](http://support.microsoft.com/).  
   
-## Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Vea también  
+ [Preguntas frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

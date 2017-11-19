@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_hasLongJump | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasLongJump (método)"
+title: 'Idiasymbol:: Get_haslongjump | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasLongJump method
 ms.assetid: 14484cb1-43b0-47a1-a9a8-081b55566886
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6f4f6c95cea5a0ff6231f57d6297384dee6ba847
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasLongJump
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un indicador que especifica si la función contiene un uso de comando de [longjmp](/visual-cpp/c-runtime-library/reference/longjmp) \(emparejado con un comando de [setjmp](/visual-cpp/c-runtime-library/reference/setjmp) , éstas forman el método de estilo C de excepciones\).  
+# <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
+Recupera una marca que especifica si la función contiene un uso de la [longjmp](/cpp/c-runtime-library/reference/longjmp) comando (emparejado con un [setjmp](/cpp/c-runtime-library/reference/setjmp) comando ellos forman el método de estilo C de control de excepciones).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_hasLongJump  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pFlag`  
- \[out\]  devuelve `TRUE` si la función contiene un comando de `longjmp` ; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función contiene un `longjmp` comando; de lo contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
- [longjmp](/visual-cpp/c-runtime-library/reference/longjmp)   
- [setjmp](/visual-cpp/c-runtime-library/reference/setjmp)
+ [Idiasymbol:: Get_hassetjump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
+ [longjmp](/cpp/c-runtime-library/reference/longjmp)   
+ [setjmp](/cpp/c-runtime-library/reference/setjmp)

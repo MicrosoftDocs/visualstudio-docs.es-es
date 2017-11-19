@@ -1,40 +1,40 @@
 ---
-title: "Informaci&#243;n general (Debug Interface Access SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tipos definidos por el usuario"
-  - "archivos .dbg"
-  - "módulos"
-  - "interfaces [Kit de desarrollo DIA (SDK)]"
-  - "DBG (archivos)"
-  - "procedimientos [Kit de desarrollo DIA (SDK)]"
-  - "archivos ejecutables"
-  - "Objetos COM, en el SDK de DIA"
-  - "compilands"
-  - "imágenes ejecutables"
+title: "Información general (Debug Interface Access SDK) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- user-defined types
+- .dbg files
+- modules
+- interfaces [DIA SDK]
+- DBG files
+- procedures [DIA SDK]
+- executable files
+- COM objects, in DIA SDK
+- compilands
+- executable images
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d4cd0206e402600cbe9002c931adb7ff6a2cc680
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Informaci&#243;n general (Debug Interface Access SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Utilice el diámetro SDK para tener acceso a información de depuración de Microsoft.  El diámetro SDK proporciona API basado COM establecido que elimina la necesidad de escribir el código siempre que Microsoft cambie el formato de la información de depuración.  El diámetro SDK también permite leer de un conjunto seleccione de versiones anteriores de información de depuración, que se encuentran en los archivos .pdb y .dbg generados por versiones 5,0 de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] y posterior.  
+# <a name="overview-debug-interface-access-sdk"></a>Información general (Debug Interface Access SDK)
+Use el SDK de DIA para tener acceso a la información de depuración de Microsoft. El SDK de DIA proporciona el conjunto de API que elimina la necesidad de volver a escribir el código cada vez que Microsoft cambia el formato de la información de depuración basada en un COM. El SDK de DIA también le permite leer de un conjunto de versiones anteriores de información de depuración, ubicados en archivos .pdb y .dbg generados por [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] versiones 5.0 y versiones posteriores.  
   
- Cada interfaz en el diámetro SDK representa un objeto COM, excepto si dicha de otra manera.  Las interfaces adicionales, por otros objetos, se crean mediante consultas explícitas, como [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) o [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md), en lugar de llamar a `QueryInterface` en punteros existentes de la interfaz.  
+ Cada interfaz en el SDK de DIA representa un objeto COM diferente, excepto donde se indique lo contrario. Interfaces adicionales por lo que los objetos adicionales, se crean por medio de consultas, como [idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) o [idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md), en lugar de mediante una llamada a `QueryInterface` en punteros de interfaz existente.  
   
-## Vea también  
- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+## <a name="see-also"></a>Vea también  
+ [Idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

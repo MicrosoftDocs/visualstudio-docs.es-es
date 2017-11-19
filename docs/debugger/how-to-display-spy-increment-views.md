@@ -1,28 +1,27 @@
 ---
-title: "How to: Display Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, viewing code"
+title: "Cómo: mostrar las vistas de Spy ++ | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy++, viewing code
 ms.assetid: 38c88663-1f73-48e9-8b47-52a3e8451c98
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03a8733e41ea17eaf1cf2412190761d5c329e793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Display Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cuando Spy\+\+ se inicia, se abre en la [vista Ventanas](../debugger/windows-view.md), una vista de árbol de todas las ventanas y controles disponibles en el equipo.  Esta ventana raíz se titula "Ventanas 1", pero también hay otras tres vistas disponibles en Spy\+\+: la [vista Mensajes](../debugger/messages-view.md), la [vista Procesos](../debugger/processes-view.md) y la [vista de subprocesos](../debugger/threads-view.md).  Puede seleccionar la vista que desee mostrar en el menú **Spy**.  Para obtener más información, vea [Vistas de Spy\+\+](../debugger/spy-increment-views.md).  
+# <a name="how-to-display-spy-views"></a>Cómo: Mostrar las vistas de Spy++
+Cuando se inicia Spy ++, se abre en [Windows Vista](../debugger/windows-view.md), una vista de árbol de todas las ventanas y controles disponibles en su equipo. Esta ventana raíz es títulos "Windows 1". También hay tres otras vistas de Spy ++: [vista mensajes](../debugger/messages-view.md), [vista procesos](../debugger/processes-view.md), y [vista de subprocesos](../debugger/threads-view.md). Puede mostrar la vista que desee desde la **Spy** menú. Para obtener más información, consulte [vistas de Spy ++](../debugger/spy-increment-views.md).  
   
-## Vea también  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Vea también  
+ [Usar Spy ++](../debugger/using-spy-increment.md)   
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)

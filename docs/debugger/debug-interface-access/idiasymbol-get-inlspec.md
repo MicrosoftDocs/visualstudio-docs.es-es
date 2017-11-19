@@ -1,55 +1,53 @@
 ---
-title: "IDiaSymbol::get_InlSpec | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_InlSpec (método)"
+title: 'Idiasymbol:: Get_inlspec | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_InlSpec method
 ms.assetid: 30af6a2f-be84-429e-a96a-d0f9ed9343fb
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_InlSpec
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Esta función recupera una marca que indica si la función se marca como insertado \(mediante uno de los atributos de [inline, \_\_inline, \_\_forceinline](../../misc/inline-inline-forceinline.md) \).  
+# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+Esta función recupera una marca que indica si la función se marca como alineado (mediante uno de los [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) atributos).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT get_inlSpec(  
-   BOOL *pRetVal  
+   BOOL *pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve `TRUE` si la función se marca como alineada; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la función se ha marcado como en línea; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v8.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v8.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, \_\_inline, \_\_forceinline](../../misc/inline-inline-forceinline.md)
+ [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md)

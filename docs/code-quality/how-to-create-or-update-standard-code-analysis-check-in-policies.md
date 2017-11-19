@@ -1,73 +1,74 @@
 ---
-title: "C&#243;mo: Crear o actualizar directivas de protecci&#243;n de an&#225;lisis de c&#243;digo est&#225;ndar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.policyeditor"
-helpviewer_keywords: 
-  - "análisis de código, migrar directiva de protección"
+title: "Cómo: crear o actualizar directivas de protección de análisis de código estándar | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.policyeditor
+helpviewer_keywords: code analysis, migrating check-in policy
 ms.assetid: 458eb3b8-bb5e-4056-82b7-7079ce9c4089
-caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 29
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6396b698a5f4d2602c9969d6cab0422832b3e6dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Crear o actualizar directivas de protecci&#243;n de an&#225;lisis de c&#243;digo est&#225;ndar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede exigir que se ejecute un análisis de código en todos los proyectos de código de un proyecto de equipo mediante la directiva de protección de análisis de código.  Un análisis de código obligatorio puede mejorar la calidad del código que se protege en la base de código.  
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
+Puede requerir que el análisis de código se ejecute en todos los proyectos de código en un proyecto de equipo mediante el uso de la directiva de protección de análisis de código. Necesidad de análisis de código puede mejorar la calidad del código que está protegido en la base de código.  
   
 > [!NOTE]
->  Esta característica sólo está disponible si está utilizando Team Foundation Server.  
+>  Esta característica solo está disponible si usas Team Foundation Server.  
   
- Las directivas de protección de análisis de código se definen mediante los valores de configuración del proyecto de equipo y se aplican a cada proyecto de código incluido en el proyecto de equipo.  Las ejecuciones del análisis de código se configuran para los proyectos de código en el archivo de proyecto \(.xxproj\) del proyecto de código.  Las ejecuciones del análisis de código se realizan en el equipo local.  Cuando se habilita una directiva de protección de análisis de código, los archivos de un proyecto de código que se van a proteger deben compilarse después de su última edición y, en el equipo en el que se realizan los cambios, debe llevarse a cabo una ejecución del análisis de código que, como mínimo, contenga las reglas en los valores del proyecto de equipo.  
+ Directivas de protección de análisis de código se establecen en la configuración del proyecto de equipo y se aplican a cada proyecto de código del proyecto de equipo. Series de análisis de código se configuran para los proyectos de código en el archivo de proyecto (xxproj) para el proyecto de código. Series de análisis de código se realizan en el equipo local. Cuando se habilita una directiva de protección de análisis de código, archivos de un proyecto de código que se pueda protegerse deben compilarse después de su última modificación y que ejecute un análisis de código contiene, como mínimo, las reglas de la configuración del proyecto de equipo deben realizarse en el equipo donde la c se han realizado cambios.  
   
--   En el código administrado, la directiva de protección de establece especificando un *conjunto de reglas* que contenga un subconjunto de las reglas de análisis de código.  
+-   Para código administrado, establezca la directiva de protección especificando un *conjunto de reglas* que contiene un subconjunto de las reglas de análisis de código.  
   
--   En el código de C\/C\+\+, la directiva de protección requiere que se ejecuten todas las reglas de análisis de código.  Puede agregar las directivas del preprocesador para deshabilitar reglas concretas en determinados proyectos de código de su proyecto de equipo.  
+-   Para el código de C o C++, la directiva de protección requiere que todas las reglas de análisis de código se ejecute. Puede agregar directivas de preprocesador para deshabilitar reglas específicas para los proyectos de código individuales en el proyecto de equipo.  
   
- Después de especificar una directiva de protección en el código administrado, los miembros del equipo pueden sincronizar sus valores de análisis de código de los proyectos de código con los valores de la directiva del proyecto de equipo.  
+ Después de especificar una directiva de protección para el código administrado, los miembros del equipo pueden sincronizar su configuración de análisis de código para los proyectos de código para la configuración de directiva del proyecto de equipo.  
   
-### Para abrir el editor de directivas de protección  
+### <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directiva de protección  
   
-1.  En Team Explorer, haga clic con el botón secundario en el nombre del proyecto de equipo, elija **Configuración del proyecto de equipo** y, a continuación, haga clic en **Control de código fuente**.  
+1.  En Team Explorer, haga clic en el nombre del proyecto de equipo, seleccione **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.  
   
-2.  En el cuadro de diálogo **Control de código fuente**, seleccione la pestaña **Directiva de protección**.  
+2.  En el **Control de código fuente** cuadro de diálogo, seleccione la **directiva de protección** ficha.  
   
-3.  Siga uno de estos procedimientos:  
+3.  Realice una de las siguientes acciones:  
   
-    -   Haga clic en **Agregar** para crear una nueva directiva de protección.  
+    -   Haga clic en **agregar** para crear una nueva directiva en el repositorio.  
   
-    -   Haga doble clic en el elemento **Análisis de código** existente en la lista **Tipo de directiva** para cambiar la directiva.  
+    -   Haga doble clic en las existentes **análisis de código** de elemento en el **tipo de directiva** lista para cambiar la directiva.  
   
-### Para establecer las opciones de la directiva  
+### <a name="to-set-policy-options"></a>Para establecer las opciones de directiva  
   
--   Seleccione o desactive las opciones siguientes:  
+-   Active o desactive las siguientes opciones:  
   
     |Opción|Descripción|  
     |------------|-----------------|  
-    |**Exigir solo la protección de archivos que formen parte de la solución actual.**|El análisis de código solamente puede ejecutarse en los archivos especificados en la solución y en los archivos de configuración del proyecto.  Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|  
-    |**Exigir análisis de código de C\/C\+\+ \(\/analyze\)**|Exige que todos los proyectos de C o C\+\+ se compilen con la opción del compilador \/analyze para ejecutar el análisis de código antes de que puedan protegerse.|  
-    |**Exigir análisis de código para código administrado**|Exige que todos los proyectos administrados ejecuten el análisis de código y se compilen antes de que se puedan proteger.|  
+    |**Aplicar en el repositorio para que sólo contenga los archivos que forman parte de la solución actual.**|Análisis de código puede ejecutar solo en los archivos especificados en archivos de configuración de soluciones y proyectos. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|  
+    |**Exigir análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se generan con el / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|  
+    |**Exigir análisis de código para código administrado**|Requiere que todos los proyectos administrados, ejecutan análisis de código y compilación antes de protegerlos.|  
   
-### Para especificar un conjunto de reglas administradas  
+-  
   
--   En la lista **Ejecutar este conjunto de reglas**, use uno de los siguientes métodos:  
+### <a name="to-specify-a-managed-rule-set"></a>Para especificar un conjunto de reglas administradas  
+  
+-   Desde el **ejecutar este conjunto de reglas** lista, use uno de los métodos siguientes:  
   
     -   Seleccione un conjunto de reglas estándar de Microsoft.  
   
-    -   Seleccione un conjunto de reglas personalizado, haga clic en **\<Conjunto de reglas seleccione de control de código fuente…\>**, y escriba la ruta de acceso de control de versiones del conjunto de reglas en el explorador de control de código fuente.  La sintaxis de una ruta de acceso de control de versiones es:  
+    -   Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >**y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:  
   
-    -   **$\/** `TeamProjectName` **\/** `VersionControlPath`  
+    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Para obtener más información acerca de cómo se crea e implementa un conjunto personalizado de reglas de la directiva de protección, vea [Implementar directivas de protección personalizadas para el código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    -   Para obtener más información acerca de cómo crear e implementar una regla de directiva de protección personalizadas conjuntos, vea [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

@@ -1,43 +1,42 @@
 ---
-title: "IDiaLineNumber::get_compiland | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber::get_compiland (método)"
+title: 'Idialinenumber:: Get_compiland | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_compiland method
 ms.assetid: c476d0b8-c473-47eb-96f5-c4e8f577b1c9
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 87ae8076faae34ae55c227f0b9306cc7eacad848
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_compiland
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una referencia al símbolo para la compilación que contribuyó bytes de texto de la imagen.  
+# <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
+Recupera una referencia al símbolo de la operación de compilación que han contribuido a los bytes del texto de la imagen.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_compiland (   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_compiland (   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pRetVal  
- \[out\]  Devuelve un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) para el compilando que contribuyó bytes de texto de la imagen.  
+ [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto para la operación de compilación que han contribuido a los bytes del texto de la imagen.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

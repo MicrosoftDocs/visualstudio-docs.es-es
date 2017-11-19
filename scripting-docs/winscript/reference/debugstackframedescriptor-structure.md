@@ -1,27 +1,30 @@
 ---
-title: "DebugStackFrameDescriptor (Estructura) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: Estructura DebugStackFrameDescriptor | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: DebugStackFrameDescriptor
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DebugStackFrameDescriptor (estructura)"
+helpviewer_keywords: DebugStackFrameDescriptor structure
 ms.assetid: a86bcb99-41e4-4a26-a1dd-e1458fb73139
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 346f039ca96f2160d7ac28686e542b3d88a91dfb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# DebugStackFrameDescriptor (Estructura)
+# <a name="debugstackframedescriptor-structure"></a>Estructura DebugStackFrameDescriptor
 Enumera los marcos de pila y la salida de las combinaciones de varios enumeradores en el mismo subproceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 typedef struct tagDebugStackFrameDescriptor {  
@@ -33,24 +36,24 @@ typedef struct tagDebugStackFrameDescriptor {
 } DebugStackFrameDescriptor;  
 ```  
   
-## Members  
+## <a name="members"></a>Miembros  
  `pdsf`  
  El objeto de marco de pila.  
   
  `dwMin`  
- Una representación equipo\- dependiente de rango inferior de direcciones físicas asociado a este marco de pila.  
+ Una representación dependientes del equipo del intervalo de direcciones físicas asociado con este marco de pila inferior.  
   
  `dwLim`  
- Una representación equipo\- dependiente de rango superior de direcciones físicas asociado a este marco de pila.  
+ Una representación dependientes del equipo de la superior del intervalo de direcciones físicas asociado con este marco de pila.  
   
  `fFinal`  
- Marcadores de marcado que indica que se procesa el cuadro.  
+ Marca que indica que se está procesando el marco.  
   
  `punkFinal`  
- Si este parámetro no es `NULL`, combinación actual de enumerador debe detener y un nuevo debe iniciar.  El objeto indica cómo iniciar la nueva enumeración.  
+ Si este parámetro no es `NULL`, debe detener el enumerador actual combinación y se debe iniciar uno nuevo. El objeto indica cómo iniciar la nueva enumeración.  
   
-## Comentarios  
- El administrador de la depuración utiliza esta estructura para ordenar los marcos de pila de los motores de scripts.  Por convención, las pilas crecen abajo.  Por consiguiente, en las arquitecturas donde las pilas crecen, direcciones deben dos\- ser complementadas.  
+## <a name="remarks"></a>Comentarios  
+ El Administrador de depuración del proceso utiliza esta estructura para ordenar los marcos de pila de varios motores de script. Por convención, las pilas crecen hacia abajo. En consecuencia, en arquitecturas de donde pilas crecen hasta las direcciones deben estar complementan pares.  
   
-## Vea también  
- [Active Script Debugger \(Constantes, enumeraciones y estructuras\)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+## <a name="see-also"></a>Vea también  
+ [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

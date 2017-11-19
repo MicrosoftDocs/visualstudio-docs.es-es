@@ -1,48 +1,47 @@
 ---
-title: "IDiaStackWalkHelper::symbolForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper::symbolForVA (método)"
+title: 'Idiastackwalkhelper:: Symbolforva | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper::symbolForVA method
 ms.assetid: 8dd9455d-d44c-4dd6-a0aa-31131cbea2aa
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cc9f22d1be5c98e5dd1eda420b1b327aea11741a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::symbolForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el token que contiene la dirección virtual especificada.  
+# <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
+Recupera el símbolo que contiene la dirección virtual especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT symbolForVA(   
-   ULONGLONG     va,  
-   IDiaSymbol**  ppSymbol  
+```C++  
+HRESULT symbolForVA(   
+   ULONGLONG     va,  
+   IDiaSymbol**  ppSymbol  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `va`  
- \[in\]  La dirección virtual contenida en el token solicitado.  El token debe ser `SymTagFunctionType` \(un valor de enumeración de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) \).  
+ [in] La dirección virtual que se encuentra en el símbolo solicitado. El símbolo debe ser un `SymTagFunctionType` (un valor de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración).  
   
  `ppSymbol`  
- \[out\]  un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el símbolo en la dirección especificada.  
+ [out] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el símbolo en la dirección especificada.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

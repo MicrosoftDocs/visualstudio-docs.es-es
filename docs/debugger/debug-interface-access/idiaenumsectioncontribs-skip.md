@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumSectionContribs::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumSectionContribs::Skip (método)"
+title: 'Idiaenumsectioncontribs:: Skip | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSectionContribs::Skip method
 ms.assetid: 7471a178-5134-41b2-80a6-51ff96abe916
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 607ae2e6f78bc501ad1372c32f20451ca74f1c87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSectionContribs::Skip
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Omite un número especificado de contribuciones de la sección en una secuencia de enumeración.  
+# <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
+Omite un número especificado de las contribuciones de la sección en una secuencia de enumeración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Skip(   
-   ULONG celt  
+```C++  
+HRESULT Skip(   
+   ULONG celt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- \[in\]  El número de contribuciones de sección en la secuencia de enumeración al salto.  
+ [in] El número de las contribuciones de la sección en la secuencia de enumeración que se va a omitir.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` si no hay contribuciones de sección a omitir.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún más contribuciones de sección que se omiten.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

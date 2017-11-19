@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_oemSymbolId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_oemSymbolId (método)"
+title: 'Idiasymbol:: Get_oemsymbolid | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_oemSymbolId method
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b00b4374e7cf6f48ce6ab10276db0bb914d27cb7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_oemSymbolId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el valor de \(OEM\) identificador del fabricante de equipo original.  
+# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+Recupera el valor de identificador del símbolo de fabricante de equipos originales (OEM).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_oemSymbolId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_oemSymbolId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve un identificador internamente asignada del símbolo OEM  
+ [out] Devuelve que un OEM asignado internamente de símbolos de identificador.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- el identificador es un valor único creado por el diámetro SDK para marcar todos los símbolos como único.  
+## <a name="remarks"></a>Comentarios  
+ El identificador es un valor único creado por el SDK de DIA para marcar todos los símbolos como única.  
   
- Esta propiedad solo se aplica a los símbolos con un tipo de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) de `SymTagCustomType`.  
+ Esta propiedad se aplica sólo a los símbolos con un [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) tipo de `SymTagCustomType`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)

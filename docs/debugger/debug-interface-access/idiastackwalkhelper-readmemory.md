@@ -1,60 +1,59 @@
 ---
-title: "IDiaStackWalkHelper::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::readMemory (método)"
+title: IDiaStackWalkHelper::readMemory | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::readMemory method
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cccec7df8428db0a1e7c1fe2274475c2b723d760
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::readMemory
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lee un bloque de datos de la imagen del ejecutable en memoria.  
+# <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
+Lee un bloque de datos de imagen del archivo ejecutable en la memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT readMemory(   
-   enum MemoryTypeEnum type,  
-   ULONGLONG           va,  
-   DWORD               cbData,  
-   DWORD*              pcbData,  
-   BYTE*               pbData  
+```C++  
+HRESULT readMemory(   
+   enum MemoryTypeEnum type,  
+   ULONGLONG           va,  
+   DWORD               cbData,  
+   DWORD*              pcbData,  
+   BYTE*               pbData  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `type`  
- \[in\]  Un valor de enumeración de [MemoryTypeEnum \(Enumeración\)](../../debugger/debug-interface-access/memorytypeenum.md) que especifica el tipo de memoria a la lectura.  
+ [in] Un valor de la [MemoryTypeEnum (enumeración)](../../debugger/debug-interface-access/memorytypeenum.md) enumeración que especifica el tipo de memoria para leer.  
   
  va  
- \[in\]  Dirección virtual en la imagen de la que se empiezan a lectura.  
+ [in] Dirección virtual en la imagen desde el que se va a comenzar la lectura.  
   
  `cbData`  
- \[in\]  El tamaño del búfer de datos en bytes.  
+ [in] El tamaño del búfer de datos en bytes.  
   
  `pcbData`  
- \[out\]  Devuelve el número de bytes leídos realmente.  Si `pbData` es `NULL`, entonces es el número total de bytes de datos disponibles.  
+ [out] Devuelve el número de bytes leídos realmente. Si `pbData` es `NULL`, este es el número total de bytes de datos disponibles.  
   
  `pbData`  
- \[in, out\]  un búfer que se completa con la lectura de memoria.  
+ [entrada, salida] Un búfer que se rellena con la memoria de lectura.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [MemoryTypeEnum \(Enumeración\)](../../debugger/debug-interface-access/memorytypeenum.md)
+ [MemoryTypeEnum (enumeración)](../../debugger/debug-interface-access/memorytypeenum.md)

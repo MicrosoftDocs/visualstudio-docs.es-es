@@ -1,31 +1,34 @@
 ---
-title: "IDebugThreadCall (Interfaz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugThreadCall (interfaz)"
+title: IDebugThreadCall (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugThreadCall interface
 ms.assetid: 9a9a9892-f310-4ef3-8db2-4f868be52d7e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugThreadCall (Interfaz)
-La interfaz de `IDebugThreadCall` implementan normalmente por un componente que realice llamadas entre subprocesos con `IDebugThread` que constituye la implementación proporcionada por el administrador de proceso \(PDM\) de depuración.  
+# <a name="idebugthreadcall-interface"></a>IDebugThreadCall (Interfaz)
+El `IDebugThreadCall` interfaz normalmente se implementa mediante un componente que realiza llamadas a través de subprocesos con el `IDebugThread` implementación proporcionada por el Administrador de depuración (PDM) de proceso de cálculo de referencias.  
   
- El PDM llama a la interfaz de `IDebugThreadCall` en el subproceso deseado, y la interfaz de `IDebugThreadCall` envía la llamada a la implementación deseada.  La interfaz de `IDebugThreadCall` convierte la información de parámetros pasada a los parámetros a la parte superior adecuada.  
+ Las llamadas PDM la `IDebugThreadCall` interfaz en el subproceso deseado y la `IDebugThreadCall` interfaz envía la llamada a la implementación. El `IDebugThreadCall` interfaz convierte la información de parámetros pasada en los parámetros a la parte superior adecuada.  
   
- La interfaz de `IDebugThreadCall` es un objeto libre\- con.  
+ La `IDebugThreadCall` interfaz es un objeto de subprocesamiento libre.  
   
-## Métodos  
- Además de los métodos heredados de `IUnknown`, la interfaz `IDebugThreadCall` expone los métodos siguientes.  
+## <a name="methods"></a>Métodos  
+ Además de los métodos heredados de `IUnknown`, el `IDebugThreadCall` interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Llamadas de identificadores para ejecutar código en otro subproceso.|
+|[IDebugThreadCall::ThreadCallHandler](../../winscript/reference/idebugthreadcall-threadcallhandler.md)|Controla las llamadas a ejecutar código en otro subproceso.|

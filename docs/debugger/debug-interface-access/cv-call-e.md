@@ -1,70 +1,69 @@
 ---
-title: "CV_call_e | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CV_call_e (enumeración)"
+title: CV_call_e | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: CV_call_e enumeration
 ms.assetid: f230560b-4243-432d-8f19-46df112043b9
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 89340c4cd448201f7624f5ec6b15dc67f74db4f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CV_call_e
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="cvcalle"></a>CV_call_e
 Especifica la convención de llamada para una función.  
   
 > [!NOTE]
->  Solo los valores de enumeración más comunes se documentan aquí.  La enumeración completa está disponible en el archivo de encabezado cvconst.h.  
+>  Solo los valores de enumeración más comunes se documentan aquí. La enumeración completa está disponible en el archivo de encabezado cvconst.h.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-typedef enum CV_call_e {   
-   CV_CALL_NEAR_C    = 0x00,  
-   CV_CALL_NEAR_FAST = 0x04,  
-   CV_CALL_NEAR_STD  = 0x07,  
-   CV_CALL_NEAR_SYS  = 0x09,  
-   CV_CALL_THISCALL  = 0x0b,  
-   CV_CALL_CLRCALL   = 0x16  
+```C++  
+typedef enum CV_call_e {   
+   CV_CALL_NEAR_C    = 0x00,  
+   CV_CALL_NEAR_FAST = 0x04,  
+   CV_CALL_NEAR_STD  = 0x07,  
+   CV_CALL_NEAR_SYS  = 0x09,  
+   CV_CALL_THISCALL  = 0x0b,  
+   CV_CALL_CLRCALL   = 0x16  
 } CV_call_e;  
 ```  
   
-## Elementos \(Elements\)  
- CV\_CALL\_NEAR\_C  
- Especifica una convención de llamada mediante de derecha a izquierda una inserción de cierre.  La función de llamada borra la pila.  
+## <a name="elements"></a>Elementos  
+ CV_CALL_NEAR_C  
+ Especifica una convención de llamada a funciones mediante una inserción están cerca de derecha a izquierda. La función llamada borra la pila.  
   
- CV\_CALL\_NEAR\_FAST  
- Especifica una convención de llamada mediante una inserción de izquierda a derecha próxima con los registros.  La función llamada utiliza la suma de bytes de parámetro para borrar la pila.  
+ CV_CALL_NEAR_FAST  
+ Especifica una convención de llamada a funciones mediante una inserción de izquierda a derecha casi con registros. La función llamada usa la suma de bytes de parámetro para borrar la pila.  
   
- CV\_CALL\_NEAR\_STD  
- Especifica una convención de llamada mediante una llamada estándar próxima \(de derecha a izquierda inserción\).  
+ CV_CALL_NEAR_STD  
+ Especifica una convención de llamada a funciones mediante una llamada estándar casi (inserción de derecha a izquierda).  
   
- CV\_CALL\_NEAR\_SYS  
- Especifica una convención de llamada mediante una llamada al sistema de cierre.  
+ CV_CALL_NEAR_SYS  
+ Especifica una convención de llamada a funciones mediante una llamada del sistema están cerca.  
   
- CV\_CALL\_THISCALL  
- Especifica una convención de llamada mediante la llamada a `this` \(puntero de`this` pasado en el registro\).  
+ CV_CALL_THISCALL  
+ Especifica una convención de llamada a funciones utilizando `this` llamar (`this` registro pasa el puntero).  
   
- CV\_CALL\_CLRCALL  
- Especifica una convención de llamada que utiliza Common Language Runtime \(CLR\) \(también conocido como convención de llamada de código administrado\).  
+ CV_CALL_CLRCALL  
+ Especifica una convención de llamada a funciones usada por el Common Language Runtime (CLR) (también conocido como un código administrado convención de llamada).  
   
-## Comentarios  
- Los valores de esta enumeración son devueltos por una llamada al método de [IDiaSymbol::get\_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración son devueltos por una llamada a la [idiasymbol:: Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)
+ [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA2116: APTCA methods should only call APTCA methods | Microsoft Docs'
+title: "CA2116: Los métodos APTCA solo deben llamar a métodos APTCA | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,87 +14,72 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c3e531c91ec7a321c7ddc1130df7a0e8efa7323c
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA methods should only call APTCA methods
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 |||  
 |-|-|  
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|  
-|CheckId|CA2116|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Identificador de comprobación|CA2116|  
+|Categoría|Microsoft.Security|  
+|Cambio problemático|Problemático|  
   
-## <a name="cause"></a>Cause  
- A method in an assembly with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribute calls a method in an assembly that does not have the attribute.  
+## <a name="cause"></a>Motivo  
+ Un método en un ensamblado con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo llama a un método en un ensamblado que no tiene el atributo.  
   
-## <a name="rule-description"></a>Rule Description  
- By default, public or protected methods in assemblies with strong names are implicitly protected by a [Link Demands](/dotnet/framework/misc/link-demands) for full trust; only fully trusted callers can access a strong-named assembly. Strong-named assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute do not have this protection. The attribute disables the link demand, making the assembly accessible to callers that do not have full trust, such as code executing from an intranet or the Internet.  
+## <a name="rule-description"></a>Descripción de la regla  
+ De forma predeterminada, los métodos públicos o protegidos de ensamblados con nombres seguros implícitamente están protegidos por un [peticiones de vínculo](/dotnet/framework/misc/link-demands) de plena confianza; solo de plena confianza para los autores de llamada pueden tener acceso a un ensamblado con nombre seguro. Los ensamblados con nombre seguro marcados con el <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) no tiene esta protección. El atributo deshabilita la petición de vínculo, lo que el ensamblado puede tener acceso a los llamadores que no tienen plena confianza, por ejemplo, el código que se ejecuta desde una intranet o Internet.  
   
- When the APTCA attribute is present on a fully trusted assembly, and the assembly executes code in another assembly that does not allow partially trusted callers, a security exploit is possible. If two methods `M1` and `M2` meet the following conditions, malicious callers can use the method `M1` to bypass the implicit full trust link demand that protects `M2`:  
+ Si el atributo APTCA está presente en un ensamblado de plena confianza y el ensamblado ejecuta código en otro ensamblado que no permite a llamadores parcialmente confiables, es posible un ataque de seguridad. Si dos métodos `M1` y `M2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el método `M1` para omitir la petición de vínculo de plena confianza implícita que protege `M2`:  
   
--   `M1` is a public method declared in a fully trusted assembly that has the APTCA attribute.  
+-   `M1`es un método público que se declara en un ensamblado de plena confianza que tiene el atributo APTCA.  
   
--   `M1` calls a method `M2` outside `M1`'s assembly.  
+-   `M1`llama a un método `M2` fuera `M1`del ensamblado.  
   
--   `M2`'s assembly does not have the APTCA attribute and, therefore, should not be executed by or on behalf of callers that are partially trusted.  
+-   `M2`del ensamblado no tiene el atributo APTCA y, por lo tanto, no debe ejecutarse por o en nombre de los llamadores de confianza parcial.  
   
- A partially trusted caller `X` can call method `M1`, causing `M1` to call `M2`. Because `M2` does not have the APTCA attribute, its immediate caller (`M1`) must satisfy a link demand for full trust; `M1` has full trust and therefore satisfies this check. The security risk is because `X` does not participate in satisfying the link demand that protects `M2` from untrusted callers. Therefore, methods with the APTCA attribute must not call methods that do not have the attribute.  
+ Un llamador de confianza parcial `X` puede llamar al método `M1`, con lo que `M1` para llamar a `M2`. Dado que `M2` no tiene el atributo APTCA, su llamador inmediato (`M1`) debe satisfacer una petición de vínculo de plena confianza; `M1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de vínculo que protege `M2` de llamadores de confianza. Por lo tanto, los métodos con el atributo APTCA no deben llamar métodos que no tienen el atributo.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- If the APCTA attribute is required, use a demand to protect the method that calls into the full trust assembly. The exact permissions you demand will depend on the functionality exposed by your method. If it is possible, protect the method with a demand for full trust to ensure that the underlying functionality is not exposed to partially trusted callers. If this is not possible, select a set of permissions that effectively protects the exposed functionality. For more information about demands, see [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Si el atributo APCTA es necesario, use una petición para proteger el método que llama al ensamblado de plena confianza. Los permisos exactos que se solicitan dependerán de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a los llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que proteja eficazmente la funcionalidad expuesta. Para obtener más información sobre las peticiones de, consulte [peticiones](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- To safely suppress a warning from this rule, you must ensure that the functionality exposed by your method does not directly or indirectly allow callers to access sensitive information, operations, or resources that can be used in a destructive manner.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que la funcionalidad expuesta por el método no directa ni indirectamente que los llamadores tener acceso a información confidencial, operaciones o recursos que se pueden usar de forma destructiva.  
   
-## <a name="example"></a>Example  
- The following example uses two assemblies and a test application to illustrate the security vulnerability detected by this rule. The first assembly does not have the APTCA attribute and should not be accessible to partially trusted callers (represented by `M2` in the previous discussion).  
+## <a name="example"></a>Ejemplo  
+ El ejemplo siguiente utiliza dos ensamblados y una aplicación de prueba para ilustrar la vulnerabilidad de seguridad detectada por esta regla. El primer ensamblado no tiene el atributo APTCA y no debe estar accesible a los llamadores de confianza parcial (representado por `M2` en la explicación anterior).  
   
  [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]  
   
-## <a name="example"></a>Example  
- The second assembly is fully trusted and allows partially trusted callers (represented by `M1` in the previous discussion).  
+## <a name="example"></a>Ejemplo  
+ El segundo ensamblado es de plena confianza y permite llamadores parcialmente confiables (representado por `M1` en la explicación anterior).  
   
  [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]  
   
-## <a name="example"></a>Example  
- The test application (represented by `X` in the previous discussion) is partially trusted.  
+## <a name="example"></a>Ejemplo  
+ La aplicación de prueba (representada por `X` en la explicación anterior) es de confianza parcial.  
   
  [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]  
   
- This example produces the following output.  
+ Este ejemplo produce el siguiente resultado:  
   
- **Demand for full trust:Request failed.**  
-**ClassRequiringFullTrust.DoWork was called.**   
-## <a name="related-rules"></a>Related Rules  
- [CA2117: APTCA types should only extend APTCA base types](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
+ **Solicitar código de plena confianza: error en la solicitud.**  
+**Se llamó a ClassRequiringFullTrust.DoWork.**   
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA2117: Los tipos APTCA solo amplían tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
-## <a name="see-also"></a>See Also  
- [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET Framework Assemblies Callable by Partially Trusted Code](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
- [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+## <a name="see-also"></a>Vea también  
+ [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)   
+ [Puede llamar de ensamblados de .NET framework mediante código de confianza parcial](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
+ [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)  (Usar bibliotecas de código que no es de plena confianza)  
+ [Peticiones](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
+ [Peticiones de vínculo](/dotnet/framework/misc/link-demands)   
+ [Datos y modelado](/dotnet/framework/data/index)

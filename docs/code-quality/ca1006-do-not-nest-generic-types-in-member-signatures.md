@@ -1,11 +1,10 @@
 ---
-title: 'CA1006: Do not nest generic types in member signatures | Microsoft Docs'
+title: "CA1006: No anidar tipos genéricos en firmas de miembro | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,70 +14,56 @@ helpviewer_keywords:
 - CA1006
 - DoNotNestGenericTypesInMemberSignatures
 ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9b11fa3ef2f9d49a440274a1110f06766e144e1e
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e2ec28ce2cfe1e8c0de622a0f35d37ddd82e1be7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Do not nest generic types in member signatures
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: No anidar tipos genéricos en firmas de miembro
 |||  
 |-|-|  
 |TypeName|DoNotNestGenericTypesInMemberSignatures|  
-|CheckId|CA1006|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Identificador de comprobación|CA1006|  
+|Categoría|Microsoft.Design|  
+|Cambio problemático|Problemático|  
   
-## <a name="cause"></a>Cause  
- An externally visible member has a signature that contains a nested type argument.  
+## <a name="cause"></a>Motivo  
+ Un miembro visible externamente tiene una firma que contiene un argumento de tipo anidado.  
   
-## <a name="rule-description"></a>Rule Description  
- A nested type argument is a type argument that is also a generic type. To call a member whose signature contains a nested type argument, the user must instantiate one generic type and pass this type to the constructor of a second generic type. The required procedure and syntax are complex and should be avoided.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Un argumento de tipo anidado es un argumento de tipo que también es un tipo genérico. Para llamar a un miembro cuya firma contenga un argumento de tipo anidado, el usuario debe crear instancias de un tipo genérico y pasar este tipo al constructor de un segundo tipo genérico. El procedimiento y la sintaxis necesarios para ello son complejos, por lo que es preferible evitarlo.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the design to remove the nested type argument.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie el diseño que se va a quitar el argumento de tipo anidado.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Providing generics in a syntax that is easy to understand and use reduces the time that is required to learn and increases the adoption rate of new libraries.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla. Al proporcionar genéricos con una sintaxis que sea fácil de entender y usar reduce el tiempo que se necesita para obtener información y aumenta la velocidad de adopción de nuevas bibliotecas.  
   
-## <a name="example"></a>Example  
- The following example shows a method that violates the rule and the syntax that is required to call the violating method.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra un método que infringe la regla y la sintaxis necesaria para llamar al método infractora.  
   
- [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)] [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]  
+ [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
+ [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1005: Avoid excessive parameters on generic types](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
- [CA1010: Collections should implement generic interface](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
+ [CA1010: Las colecciones deben implementar la interfaz genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
- [CA1000: Do not declare static members on generic types](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
+ [CA1000: No declarar miembros estáticos en tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
   
- [CA1002: Do not expose generic lists](../code-quality/ca1002-do-not-expose-generic-lists.md)  
+ [CA1002: No exponer listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
- [CA1004: Generic methods should provide type parameter](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
+ [CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
   
- [CA1003: Use generic event handler instances](../code-quality/ca1003-use-generic-event-handler-instances.md)  
+ [CA1003: Utilizar instancias genéricas de controlador de eventos](../code-quality/ca1003-use-generic-event-handler-instances.md)  
   
- [CA1007: Use generics where appropriate](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007: Utilizar valores genéricos cuando sea posible](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>See Also  
- [Generics](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>Vea también  
+ [Genéricos](/dotnet/csharp/programming-guide/generics/index)

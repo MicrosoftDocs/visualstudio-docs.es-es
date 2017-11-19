@@ -1,49 +1,50 @@
 ---
-title: "CA2207: Inicializar campos est&#225;ticos de tipo de valor insertados | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "InitializeValueTypeStaticFieldsInline"
-  - "CA2207"
-helpviewer_keywords: 
-  - "CA2207"
-  - "InitializeValueTypeStaticFieldsInline"
+title: "CA2207: Inicializar campos estáticos de tipo de valor insertados | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- InitializeValueTypeStaticFieldsInline
+- CA2207
+helpviewer_keywords:
+- CA2207
+- InitializeValueTypeStaticFieldsInline
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7f22975ba591e4300e54a4bda01f3802b393ae59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2207: Inicializar campos est&#225;ticos de tipo de valor insertados
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializar campos estáticos de tipo de valor insertados
 |||  
 |-|-|  
 |TypeName|InitializeValueTypeStaticFieldsInline|  
 |Identificador de comprobación|CA2207|  
 |Categoría|Microsoft.Usage|  
-|Cambio problemático|No|  
+|Cambio problemático|No trascendental|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un tipo de valor declara un constructor estático explícito.  
   
-## Descripción de la regla  
- Al declarar un tipo de valor, se realiza una inicialización predeterminada en la que los campos de tipo de valor se establecen en cero y los campos de tipo de referencia se establecen en `null` \(`Nothing` en Visual Basic\).  Un constructor estático explícito sólo garantiza la ejecución antes de llamar al constructor de la instancia o al miembro estático del tipo.  Por tanto, si se crea el tipo sin haber llamado al constructor de la instancia, el constructor estático no garantiza la ejecución.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Cuando se declara un tipo de valor, se somete a una inicialización predeterminada donde todos los campos de tipo de valor se establecen en cero y todos los campos de tipo de referencia se establecen en `null` (`Nothing` en Visual Basic). Un constructor estático explícito sólo garantiza la ejecución antes de un constructor de instancia o se llama a un miembro estático del tipo. Por lo tanto, si se crea el tipo sin llamar a un constructor de instancia, no se garantiza que el constructor estático para ejecutar.  
   
- Si los datos estáticos se inicializan en línea y no se declara el constructor estático explícito, los compiladores de C\# y Visual Basic agregan el marcador `beforefieldinit` a la definición de clase de MSIL.  Además, los compiladores agregan un constructor estático privado que contiene código de inicialización estática.  Este constructor estático privado garantiza la ejecución antes de obtener acceso a cualquier campo estático del tipo.  
+ Si todos los datos estáticos es inicializado en línea y no se declara ningún constructor estático explícito, los compiladores de C# y Visual Basic agregan el `beforefieldinit` marca a la definición de clase MSIL. Los compiladores de agregan también un constructor estático privado que contiene el código de inicialización estática. Este constructor estático privado se ejecuta siempre antes de que se tiene acceso a los campos estáticos del tipo.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declara y quite el constructor estático.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla inicializar todos los datos estáticos cuando se declara y quite el constructor estático.  
   
-## Cuándo suprimir advertencias  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima las advertencias de esta regla.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1810: Inicializar campos estáticos de tipo de referencia insertados](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

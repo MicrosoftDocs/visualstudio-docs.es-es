@@ -1,47 +1,46 @@
 ---
-title: "IDiaFrameData::get_cplusplusExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_cplusplusExceptionHandling (método)"
+title: 'Idiaframedata:: Get_cplusplusexceptionhandling | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_cplusplusExceptionHandling method
 ms.assetid: 54ee9cde-ce8e-45f1-809c-6fbad800d850
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 130ef97cefd04e34652ee664007ad503438b1ccb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_cplusplusExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una marca que indica si el control de excepciones de C\+\+ está vigente.  
+# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Recupera una marca que indica si el control de excepciones de C++ está en vigor.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_cplusplusExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_cplusplusExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve `TRUE` si el control de excepciones de C\+\+ está vigente; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el control de excepciones de C++ está en vigor; de lo contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Para determinar si el control de excepciones estructurado está vigente \(que es muy diferente del control de excepciones de C\+\+\), llame al método de [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) .  
+## <a name="remarks"></a>Comentarios  
+ Para determinar si de excepciones estructurado control en vigor (que es muy diferente de control de excepciones de C++), llame a la [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)
+ [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)

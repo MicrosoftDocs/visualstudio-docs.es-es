@@ -1,64 +1,64 @@
 ---
-title: "Constantes (Debug Interface Access SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "constantes, SDK de DIA"
-  - "SDK de DIA, constantes"
+title: Constantes (Debug Interface Access SDK) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- constants, DIA SDK
+- DIA SDK, constants
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 50b6533b1036087dc8d0cdfe59b653774d781f55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Constantes (Debug Interface Access SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Estas constantes de cadena se pueden utilizar para identificar diferentes secciones de un archivo de base de datos de depuración de programa \(PDB\) a través del diámetro SDK.  
+# <a name="constants-debug-interface-access-sdk"></a>Constantes (Debug Interface Access SDK)
+Estas constantes de cadena pueden utilizarse para identificar las distintas secciones de un archivo de base de datos (PDB) de depuración de programa a través del SDK de DIA.  
   
-## Constantes  
- los siguientes se declaran como macros de C\/C\+\+.  
+## <a name="constants"></a>Constantes  
+ A continuación se declara como macros de C o C++.  
   
 |Macro|Valor|  
 |-----------|-----------|  
-|`DiaTable_Symbols`|l " símbolos”|  
-|`DiaTable_Sections`|l " secciones”|  
-|`DiaTable_SrcFiles`|l " SourceFiles”|  
-|`DiaTable_LineNums`|l " LineNumbers”|  
-|`DiaTable_SegMap`|l " SegmentMap”|  
-|`DiaTable_Dbg`|l " Dbg”|  
-|`DiaTable_InjSrc`|l " InjectedSource”|  
-|`DiaTable_FrameData`|l " FrameData”|  
+|`DiaTable_Symbols`|L "Símbolos"|  
+|`DiaTable_Sections`|L "Secciones"|  
+|`DiaTable_SrcFiles`|L "ArchivosCódigoFuente"|  
+|`DiaTable_LineNums`|L "LineNumbers"|  
+|`DiaTable_SegMap`|L "SegmentMap"|  
+|`DiaTable_Dbg`|L "Dbg"|  
+|`DiaTable_InjSrc`|L "InjectedSource"|  
+|`DiaTable_FrameData`|L "FrameData"|  
   
-## Ejemplo  
- A continuación se muestra un ejemplo utilizando uno de estos símbolos:  
+## <a name="example"></a>Ejemplo  
+ Este es un ejemplo utilizando uno de estos símbolos:  
   
-```cpp#  
+```C++  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  
 {  
-    HRESULT hr;  
-    VARIANT var;  
-    var.vt      = VT_BSTR;  
-    var.bstrVal = SysAllocString( DiaTable_Symbols );  
-    hr = pEnumTables->Item( var, pTable );  
-    return(hr);  
+    HRESULT hr;  
+    VARIANT var;  
+    var.vt      = VT_BSTR;  
+    var.bstrVal = SysAllocString( DiaTable_Symbols );  
+    hr = pEnumTables->Item( var, pTable );  
+    return(hr);  
 }  
 ```  
   
-## Requisitos  
- encabezado: dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: dia2.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
