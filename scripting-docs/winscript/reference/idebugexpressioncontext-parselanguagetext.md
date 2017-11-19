@@ -1,27 +1,30 @@
 ---
-title: "IDebugExpressionContext::ParseLanguageText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugExpressionContext::ParseLanguageText | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugExpressionContext.ParseLanguageText
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugExpressionContext::ParseLanguageText"
+helpviewer_keywords: IDebugExpressionContext::ParseLanguageText
 ms.assetid: 650cb016-7d80-4011-b264-780f871a3466
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e455768b7d38096c64ab61f2b36aeba871ddf0bc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugExpressionContext::ParseLanguageText
+# <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Crea una expresión de depuración para el texto especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT ParseLanguageText(  
@@ -33,40 +36,40 @@ HRESULT ParseLanguageText(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pstrCode`  
- \[in\] proporciona el texto de la expresión o los extractos.  
+ [in] Proporciona el texto de la expresión o instrucción.  
   
  `nRadix`  
- \[in\] base a utilizar.  
+ [in] Base para utilizar.  
   
  `pstrDelimiter`  
- \[in\] delimitador de FIN\-de\-script\- bloque en Bytes.  Cuando `pstrCode` se analiza de una secuencia de texto, el host normalmente utiliza un delimitador, como dos comillas simples \('\), para detectar el final del bloque de script.  Este parámetro especifica el delimitador que el host utilizado, permitiendo que el motor de script proporcione algún preprocesamiento primitivo condicional \(por ejemplo, reemplazando una comilla simple \['\] con dos comillas sencillas para el uso como delimitador\).  Exactamente cómo \(y si\) el motor de script utiliza esta información depende del motor de script.  Establezca este parámetro en `NULL` si el host no utilizó un delimitador para marcar el final del bloque de script.  
+ [in] El delimitador final del bloque de script. Cuando `pstrCode` se analiza desde una secuencia de texto, el host normalmente usa un delimitador, como dos comillas ("), para detectar el final del bloque de script simples. Este parámetro especifica el delimitador que utiliza el host, lo que el motor de scripting proporcionar algunos condicional preprocesamiento primitivos (por ejemplo, reemplace una comilla simple ['] con dos comillas simples para su uso como un delimitador). Exactamente cómo (y si) los usos de motor de scripting en función de esta información en el motor de scripting. Establezca este parámetro en `NULL` si el host no usó un delimitador para marcar el final del bloque de script.  
   
  `dwFlags`  
- \[in\] la combinación de texto siguiente de depuración marca:  
+ [in] Combinación de los siguientes indicadores de texto de depuración:  
   
 |Constante|Valor|Descripción|  
-|---------------|-----------|-----------------|  
-|DEBUG\_TEXT\_ISEXPRESSION|0x00000001|Indica que el texto es una expresión en un fragmento.  Este marcador puede afectar a la forma en que el texto es analizado por algunos lenguajes.|  
-|DEBUG\_TEXT\_RETURNVALUE|0x00000002|Si un valor devuelto está disponible, se utiliza el llamador.|  
-|DEBUG\_TEXT\_NOSIDEEFFECTS|0x00000004|No permite los efectos secundarios.  Si se establece esta marca, la evaluación de la expresión no debe cambiar un estado de runtime.|  
-|DEBUG\_TEXT\_ALLOWBREAKPOINTS|0x00000008|Permite los puntos de interrupción durante la evaluación de texto.  Si este marcador no se establecer puntos de interrupción se omiten durante la evaluación de texto.|  
-|DEBUG\_TEXT\_ALLOWERRORREPORT|0x00000010|Permite informes de error durante la evaluación de texto.  Si este marcador no se establece los errores no se notifican al host durante la evaluación.|  
-|DEBUG\_TEXT\_EVALUATETOCODECONTEXT|0x00000020|Indica que se va a evaluar la expresión a un contexto del código en lugar de ejecutando la expresión propia|  
+|--------------|-----------|-----------------|  
+|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que el texto es una expresión en lugar de una instrucción. Este indicador puede afectar a la manera en la que se analiza el texto de algunos lenguajes.|  
+|DEBUG_TEXT_RETURNVALUE|0x00000002|Si un valor devuelto está disponible, se utilizará por el llamador.|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|No se permiten efectos secundarios. Si se establece esta marca, la evaluación de la expresión no debe cambiar ningún estado en tiempo de ejecución.|  
+|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Permite que los puntos de interrupción durante la evaluación del texto. Si no se establece esta marca se omiten los puntos de interrupción durante la evaluación del texto.|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permite que los informes de error durante la evaluación del texto. Si no se establece esta marca, a continuación, no se notifican al host durante la evaluación.|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica la expresión se evalúa a un contexto de código, en lugar de ejecutar la propia expresión|  
   
  `ppe`  
- \[out\] devuelve la expresión de depuración para el texto especificado.  
+ [out] Devuelve la expresión de depuración para el texto especificado.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Este método crea una expresión de depuración para el texto especificado.  
   
-## Vea también  
- [IDebugExpressionContext \(Interfaz\)](../../winscript/reference/idebugexpressioncontext-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugExpressionContext (Interfaz)](../../winscript/reference/idebugexpressioncontext-interface.md)

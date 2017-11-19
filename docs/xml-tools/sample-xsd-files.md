@@ -1,32 +1,33 @@
 ---
-title: "Archivos XSD de muestra | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Los archivos XSD de ejemplo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 6a3d0ab6-825e-42fa-8df0-37fbc5da9e73
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6a48af8fb930f30157314b408ff4b77f4c397ff7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Archivos XSD de muestra
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="sample-xsd-files"></a>Archivos XSD de muestra
 Los archivos de muestra siguientes se usan en la documentación del Diseñador de esquemas XSD.  
   
 > [!NOTE]
->  Las empresas, las organizaciones, los productos, los nombres de dominio, las direcciones de correo electrónico, los logotipos, las personas, los lugares y los eventos que se describen aquí son ficticios.No se pretende establecer ni se debe inferir ninguna asociación con ninguna empresa, organización, producto, nombre de dominio, dirección de correo electrónico, logotipo, persona, lugar ni evento real.  
+>  Las compañías, organizaciones, productos, nombres de dominio, direcciones de correo electrónico, logotipos, personas, lugares y eventos que se citan a modo de ejemplo son ficticios. No se pretende establecer ni se debe inferir ninguna asociación con ninguna empresa, organización, producto, nombre de dominio, dirección de correo electrónico, logotipo, persona, lugar ni evento real.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
   
 |Tema|Descripción|  
-|----------|-----------------|  
-|[Archivo XSD de ejemplo: esquema de pedido de compra](../Topic/Sample%20XSD%20File:%20Purchase%20Order%20Schema.md)|Un documento XSD que contiene un esquema de pedido de compra típico.|  
+|-----------|-----------------|  
+|[Archivo XSD de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Un documento XSD que contiene un esquema de pedido de compra típico.|  
 |[Ejemplo de archivo XSD: esquema simple](../xml-tools/sample-xsd-file-simple-schema.md)|Un documento XSD que contiene un esquema simple.|  
-|[Archivo XSD de muestra: relaciones](../Topic/Sample%20XSD%20File:%20Relationships.md)|Un documento XSD que contiene un esquema con relaciones.|
+|[Archivo XSD de muestra: relaciones](../xml-tools/sample-xsd-file-relationships.md)|Un documento XSD que contiene un esquema con relaciones.|

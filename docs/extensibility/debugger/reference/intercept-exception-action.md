@@ -1,59 +1,59 @@
 ---
-title: "INTERCEPT_EXCEPTION_ACTION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "INTERCEPT_EXCEPTION_ACTION"
-helpviewer_keywords: 
-  - "Enumeración INTERCEPT_EXCEPTION_ACTION"
+title: INTERCEPT_EXCEPTION_ACTION | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: INTERCEPT_EXCEPTION_ACTION
+helpviewer_keywords: INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a6804e4991c8707e619c96d6945d120b2fb37ffb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# INTERCEPT_EXCEPTION_ACTION
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica qué acciones para tomar el interceptar las excepciones.  
+# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
+Especifica qué acciones emprender al interceptar excepciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 typedef DWORD INTERCEPT_EXCEPTION_ACTION;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 ```  
   
-#### Parámetros  
- IEA\_INTERCEPT  
- permisos que interceptan la excepción actual.  Éste es el único valor compatible actualmente y debe especificarse.  
+#### <a name="parameters"></a>Parámetros  
+ IEA_INTERCEPT  
+ Permite interceptar la excepción actual. Este es el único valor admitido en la actualidad y debe especificarse.  
   
-## Comentarios  
- estos valores se pasan en el método de [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se pasan a la [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

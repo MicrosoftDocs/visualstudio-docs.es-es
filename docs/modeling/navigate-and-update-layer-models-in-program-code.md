@@ -10,30 +10,15 @@ helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información acerca de los diagramas de dependencia de punto de vista del usuario, consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md).  
@@ -137,7 +122,7 @@ public void ... (...)
   
  ![Cada ILayerElement se presenta mediante un objeto IShape. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> y <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> también se usan para mostrar modelos UML. Para obtener más información, consulte [mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> y <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> también se usan para mostrar modelos UML. 
   
 ## <a name="see-also"></a>Vea también  
  [Agregar comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
@@ -145,4 +130,3 @@ public void ... (...)
  [Agregar propiedades personalizadas a diagramas de dependencia](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)   
  [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)   
-

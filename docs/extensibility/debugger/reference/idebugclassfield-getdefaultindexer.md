@@ -1,53 +1,53 @@
 ---
-title: "IDebugClassField::GetDefaultIndexer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::GetDefaultIndexer"
-helpviewer_keywords: 
-  - "IDebugClassField::GetDefaultIndexer (método)"
+title: IDebugClassField::GetDefaultIndexer | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::GetDefaultIndexer
+helpviewer_keywords: IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d30388b170f4a7de672fbdda11ccead83acce32c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::GetDefaultIndexer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtiene el nombre del indizador predeterminado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetDefaultIndexer(   
-   BSTR* pbstrIndexer  
+```cpp  
+HRESULT GetDefaultIndexer(   
+   BSTR* pbstrIndexer  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDefaultIndexer(  
-   out string pbstrIndexer  
+   out string pbstrIndexer  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pbstrIndexer`  
- \[out\]  Devuelve una cadena que contiene el nombre del indizador predeterminado.  
+ [out] Devuelve una cadena que contiene el nombre del indizador predeterminado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK o devuelve S\_FALSE si no hay indizador predeterminado.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- El indizador predeterminado de una clase es la propiedad que se marca como la propiedad de `Default` para los métodos de la matriz.  Esto es específico de [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  A continuación se muestra un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se utiliza.  
+## <a name="remarks"></a>Comentarios  
+ El indizador predeterminado de una clase es la propiedad que se marca como el `Default` propiedad accesos de matriz. Esto es específico de [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Este es un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se utiliza.  
   
-```vb#  
+```vb  
 Imports System.Collections;  
   
 Public Class Class1  
@@ -77,5 +77,5 @@ Function GetItem(Index as Integer) as Integer
 End Function  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

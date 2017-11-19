@@ -1,67 +1,67 @@
 ---
-title: "STEPUNIT | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "STEPUNIT"
-helpviewer_keywords: 
-  - "Enumeración STEPUNIT"
+title: STEPUNIT | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: STEPUNIT
+helpviewer_keywords: STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e0f4dab5124e3f7d6924c5f02f552832e8b0fd36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# STEPUNIT
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica la unidad del paso a paso.  
+# <a name="stepunit"></a>STEPUNIT
+Especifica la unidad de paso de ejecución paso a paso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```cpp  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 typedef DWORD STEPUNIT;  
 ```  
   
-```c#  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```csharp  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 ```  
   
-## Members  
- STEP\_STATEMENT  
- Pasos por instrucción.  
+## <a name="members"></a>Miembros  
+ STEP_STATEMENT  
+ Pasos de instrucción.  
   
- STEP\_LINE  
+ STEP_LINE  
  Pasos por línea.  
   
- STEP\_INSTRUCTION  
+ STEP_INSTRUCTION  
  Pasos por instrucción.  
   
-## Comentarios  
- Pasado como argumento al método de [Paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
+## <a name="remarks"></a>Comentarios  
+ Pasa como un argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Paso](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

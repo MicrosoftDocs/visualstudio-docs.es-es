@@ -1,46 +1,45 @@
 ---
-title: "IDiaSession::put_loadAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::put_loadAddress (método)"
+title: 'Idiasession:: Put_loadaddress | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::put_loadAddress method
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3b12ef6fa6da9338346aa997ba16cb023548f138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::put_loadAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Establece la dirección de la carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  
+# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT put_loadAddress (   
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_loadAddress (   
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `NewVal`  
- \[in\]  Dirección de la carga del archivo ejecutable.  
+ [in] Carga la dirección del archivo ejecutable.  
   
-## Comentarios  
- Las propiedades de la dirección virtual \(VA\) de símbolo se calculan con el valor de este método.  No calculan las direcciones virtuales a menos que esta propiedad está establecida en cero.  
+## <a name="remarks"></a>Comentarios  
+ Propiedades de dirección virtual (VA) de símbolos se calculan utilizando el valor de este método. Direcciones virtuales no se calculan a menos que esta propiedad se establece en distinto de cero.  
   
 > [!NOTE]
->  Debe llamar a este método cuando se obtiene el objeto de [IDiaSession](../../debugger/debug-interface-access/idiasession.md) y antes de que comience con el objeto si necesita utilizar las propiedades virtuales de símbolos.  
+>  Debe llamar a este método cuando llegue el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto y antes de empezar a usar el objeto si necesita usar las propiedades virtuales en los símbolos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

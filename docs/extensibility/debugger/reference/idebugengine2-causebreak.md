@@ -1,46 +1,46 @@
 ---
-title: "IDebugEngine2::CauseBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::CauseBreak"
-helpviewer_keywords: 
-  - "IDebugEngine2::CauseBreak"
+title: IDebugEngine2::CauseBreak | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::CauseBreak
+helpviewer_keywords: IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eeb8c262d6e1abc88e40f027d921ae2d4ae12cf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::CauseBreak
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Solicitudes que todos los programas que se están depurando por este motor \(DE\) de depuración para detener la ejecución la próxima vez una de sus subprocesos intentan ejecutar.  
+# <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
+Las solicitudes de todos los programas que se está depurando este motor de depuración (Alemania) para detener la ejecución de la próxima vez que uno de sus subprocesos intenta ejecutar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT CauseBreak(   
-   void   
+```cpp  
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int CauseBreak();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- este método es asincrónico: se envía un evento de [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) cuando se denominan los intentos siguientes de programa de ejecutarse después de este método.  
+## <a name="remarks"></a>Comentarios  
+ Este método es asincrónico: una [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento se envía cuando el programa siguiente intenta ejecutar después de que se llama a este método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

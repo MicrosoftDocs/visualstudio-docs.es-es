@@ -1,57 +1,62 @@
 ---
-title: "Elemento &lt;description&gt; (desarrollo de Office en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "description (elemento)"
-  - "elemento <description>"
-  - "manifiestos de aplicación [desarrollo de Office en Visual Studio], elemento <description>"
+title: "&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- description element
+- <description> element
+- application manifests [Office development in Visual Studio], <description> element
 ms.assetid: 27c90f8c-393d-4557-9371-2e4e3c4a2d95
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a4978233c9172dd07cc034cba7f0d0f76374f231
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento &lt;description&gt; (desarrollo de Office en Visual Studio)
-  El elemento `description` del espacio de nombres `vstov4`  almacena la descripción de la solución de Office que aparece en el cuadro de diálogo de complementos COM de aplicaciones de Microsoft Office.  
+# <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;descripción&gt; elemento (desarrollo de Office en Visual Studio)
+  El elemento `description` del espacio de nombres `vstov4` almacena la descripción de la solución de Office que aparece en el cuadro de diálogo de complementos COM de aplicaciones de Microsoft Office.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <description>  
 </description>  
 ```  
   
-## Elementos y atributos  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
  Opcional. El elemento `description` está en el espacio de nombres `vstov4` . Contiene la descripción del complemento que se muestra en el cuadro de diálogo Complementos COM de las aplicaciones de Microsoft Office.  
   
  El elemento `description` no tiene atributos ni elementos secundarios.  
   
-## Ejemplo para complemento de VSTO  
+## <a name="vsto-add-in-example"></a>Ejemplo para complemento de VSTO  
   
-### Descripción  
- En el siguiente ejemplo de código se muestra el elemento `description` en una solución de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>description  
+ En el siguiente ejemplo de código se muestra el elemento `description` en una solución de nivel de aplicación implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Código  
+### <a name="code"></a>Código  
   
 ```  
-<vstov4:description> ContosoOutlookAddIn - Outlook add-in created with Visual Studio Tools for Office </vstov4:description>  
+<vstov4:description>  
+  ContosoOutlookAddIn - Outlook add-in   
+  created with Visual Studio Tools for Office  
+</vstov4:description>  
 ```  
   
-## Vea también  
- [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>Vea también  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

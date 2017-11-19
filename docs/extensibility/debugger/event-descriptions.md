@@ -1,49 +1,50 @@
 ---
-title: "Descripciones de eventos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], eventos"
+title: Descripciones de eventos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Descripciones de eventos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cada tipo de evento tiene un propósito concreto.  
+# <a name="event-descriptions"></a>Descripciones de eventos
+Cada tipo de evento tiene un propósito específico.  
   
-## Eventos y los Motivos para el uso de Su  
+## <a name="events-and-the-reasons-for-their-use"></a>Eventos y los motivos para su uso  
   
 |Evento|Descripción|  
-|------------|-----------------|  
-|Provoca eventos de documento|Aparece cuando el motor de depuración \(DE\) desea el IDE para abrir o para poner un documento en primer plano.|  
-|Límite del punto de interrupción o eventos de error de punto de interrupción|Enviado cuando se enlaza un punto de interrupción o a un punto de interrupción no puede enlazar y se devuelve un error.|  
-|Eventos independientes de punto de interrupción|Aparece cuando un punto de interrupción enlazado desata de código.|  
-|puede detener eventos|Enviado al IDE para determinar si el usuario desea detener en un punto especificado en código.|  
-|Eventos de punto de interrupción|Aparece cuando un punto de interrupción de código o de los datos se alcance.|  
-|Eventos de texto del documento|Aparece cuando el texto en un documento cambia.  estos eventos no se envían con el método de `IDebugEventCallBack2::Event` .|  
-|el motor crea eventos|Enviado cuando un motor se crea por primera vez.|  
-|Eventos de punto de entrada|Enviado al programa que se depura ha ejecutado el código de inicialización y ha alcanzado el primer punto de entrada de usuario.|  
-|Eventos de excepción|Enviado cuando un programa en ejecución alcanza una excepción.|  
-|Eventos completos evaluación de expresiones|Enviado cuando la evaluación asincrónica de la expresión.|  
-|eventos de Buscar símbolo|Enviado siempre que el OF necesite pedir al usuario encuentre los símbolos para un módulo.|  
-|Eventos completos carga|Enviado cuando se haya completado la carga de programas inicial y el primer código está a punto de ejecutarse en el programa.|  
-|Eventos de mensaje|enviado cuando los mensajes se envían a los usuarios.|  
-|Eventos de carga de módulos|Enviado cuando un nuevo módulo se carga o descargado.|  
-|eventos de la cadena de salida|Enviado cuando escribe de programa de la salida.|  
-|Crear y destruir los eventos|Enviados para anunciar la creación o destrucción de los procesos, programas, las propiedades, sesiones y subprocesos para que el IDE de Visual Studio puede hacer un seguimiento del estado de los programas que se están depurando.|  
-|Eventos completos paso|enviado cuando se completa un paso.|  
-|Eventos de cambio de nombre de subproceso|enviado cuando el usuario cambia el nombre de un subproceso.|  
-|Eventos de cambio de nombre de programa|enviado cuando el usuario cambia el nombre de un programa.|  
+|-----------|-----------------|  
+|Activar eventos de documento|Se producen cuando el motor de depuración (Alemania) desea el IDE para abrir o poner un documento al primer plano.|  
+|Punto de interrupción enlazado o eventos de error de punto de interrupción|Enviar cuando se enlaza a un punto de interrupción o cuando no se puede enlazar a un punto de interrupción y se devuelve un error.|  
+|Eventos de punto de interrupción sin enlazar|Se producen cuando un punto de interrupción enlazado desenlaza desde el código.|  
+|Puede detener eventos|Envía el IDE para determinar si el usuario desea detener en un punto especificado en el código.|  
+|Eventos de punto de interrupción|Se producen cuando se alcanza un punto de interrupción de código o datos.|  
+|Eventos de texto del documento|Se producen cuando se cambia el texto de un documento. Estos eventos no se envían a través de la `IDebugEventCallBack2::Event` método.|  
+|Motor de crear eventos|Se envía cuando se crea por primera vez un motor.|  
+|Eventos de punto de entrada|Se envía cuando el programa que se está depurando haya ejecutado el código de inicialización y alcanza su primer punto de entrada de usuario.|  
+|Eventos de excepción|Se envía cuando un programa en ejecución produce una excepción.|  
+|Eventos completados de la evaluación de expresión|Envía una vez completada la evaluación de expresiones asincrónica.|  
+|Buscar eventos de símbolos|Se envía siempre que la DE debe pedir al usuario que buscar símbolos para un módulo.|  
+|Eventos de carga finalizada|Envía solo cuando se complete la carga de programa inicial y el primer código está a punto de ejecutarse en el programa.|  
+|Eventos de mensajes|Se envía cuando se envían mensajes a los usuarios.|  
+|Eventos del módulo de carga|Enviar cuando se carga o descarga un nuevo módulo.|  
+|Eventos de la cadena de salida|Se envía cuando el programa escribe la salida de depuración.|  
+|Crear y destruir eventos|Envía a anunciar la creación o la destrucción de procesos, programas, propiedades, las sesiones y los subprocesos, por lo que el IDE de Visual Studio puede realizar un seguimiento del estado de los programas que se está depurando.|  
+|Eventos complete de paso|Se envía cuando se completa un paso.|  
+|Eventos de cambio de nombre de subprocesos|Se envía cuando el usuario cambia el nombre de un subproceso.|  
+|Eventos de cambio de nombre de programa|Se envía cuando el usuario cambia el nombre de un programa.|  
   
-## Vea también  
- [Enviar eventos](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Vea también  
+ [Envío de eventos](../../extensibility/debugger/sending-events.md)

@@ -1,53 +1,53 @@
 ---
-title: "IDebugMethodField::EnumStaticLocals | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumStaticLocals"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumStaticLocals (método)"
+title: IDebugMethodField::EnumStaticLocals | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumStaticLocals
+helpviewer_keywords: IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 49de63c81c46f379630f5d5cb328a670472ddcee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumStaticLocals
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Crea un enumerador para las variables estáticas del método.  
+# <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
+Crea un enumerador para las variables locales estáticas del método.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumStaticLocals(   
-   IEnumDebugFields** ppLocals  
+```cpp  
+HRESULT EnumStaticLocals(   
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumStaticLocals(  
-   out IEnumDebugFields ppLocals  
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppLocals`  
- \[out\]  devuelve un objeto de [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de valores locales estáticos.  Devuelve un valor NULL si no hay valores locales estáticos.  
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de las variables locales estáticas. Devuelve un valor null si no hay ningún variables locales estáticas.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK o devuelve S\_FALSE si no hay valores locales estáticos.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún variables locales estáticas. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Cada elemento es un objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa diferentes tipos de valores locales estáticos.  Llame al método de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) en cada objeto para determinar exactamente qué clase de valor local estático representa el objeto.  
+## <a name="remarks"></a>Comentarios  
+ Cada elemento es un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representan tipos diferentes de las variables locales estáticas. Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en cada objeto para determinar exactamente qué tipo de variable local estática representa el objeto.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

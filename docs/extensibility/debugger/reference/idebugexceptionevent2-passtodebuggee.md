@@ -1,55 +1,55 @@
 ---
-title: "IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::PassToDebuggee"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::PassToDebuggee"
+title: IDebugExceptionEvent2::PassToDebuggee | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExceptionEvent2::PassToDebuggee
+helpviewer_keywords: IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4abb59c9bf9717089353683087c38425d3bf88ed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExceptionEvent2::PassToDebuggee
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica si la excepción se debe pasar al programa que se está depurando cuando la ejecución se reanuda, o si se descarta la excepción.  
+# <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
+Especifica si la excepción se debería pasar al programa que se está depurando cuando se reanuda la ejecución, o si se debería descartar la excepción.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT PassToDebuggee(  
-   BOOL fPass  
+```cpp  
+HRESULT PassToDebuggee(  
+   BOOL fPass  
 );  
 ```  
   
-```c#  
-int PassToDebuggee(  
-   int fPass  
+```csharp  
+int PassToDebuggee(  
+   int fPass  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `fPass`  
- \[in\]  Cero \(`TRUE`\) si la excepción se pasa al programa que se está depurando cuando la ejecución se reanuda, o cero \(`FALSE`\) si se descarta la excepción.  
+ [in] Es distinto de cero (`TRUE`) si la excepción se debería pasar al programa que se está depurando cuando se reanuda la ejecución, o cero (`FALSE`) si se debería descartar la excepción.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Llamar a este método no produce realmente ningún código que se ejecutará en el programa que se depura.  La llamada es simplemente establecer el estado para la ejecución de código siguiente.  Por ejemplo, las llamadas al método de [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) pueden devolver `S_OK` con [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md). conjunto de campos de`dwState` a `EXCEPTION_STOP_SECOND_CHANCE`.  
+## <a name="remarks"></a>Comentarios  
+ Llamar a este método no hacer que cualquier código que se ejecuta en el programa que se está depurando. La llamada consiste simplemente en establecer el estado para la ejecución del código siguiente. Por ejemplo, se llama a la [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) método puede devolver `S_OK` con el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo establecido en `EXCEPTION_STOP_SECOND_CHANCE`.  
   
- El IDE puede recibir el evento de [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) y llamar al método de [Continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md) .  El motor de depuración \(DE\) debe tener un comportamiento predeterminado para controlar el caso del método de `PassToDebuggee` no se denomina.  
+ El IDE puede recibir el [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventos y llame al método el [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md) método. El motor de depuración (Alemania) debe tener un comportamiento predeterminado para controlar el caso si la `PassToDebuggee` no se llama el método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)   
- [Continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md)
+ [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

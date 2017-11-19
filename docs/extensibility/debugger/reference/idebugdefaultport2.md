@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDefaultPort2
-helpviewer_keywords:
-- IDebugDefaultPort2 interface
+f1_keywords: IDebugDefaultPort2
+helpviewer_keywords: IDebugDefaultPort2 interface
 ms.assetid: 7b3452af-9a96-4c4c-9946-4339b72d3d7b
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: d048bf55d8a8cb721e8ebf85444e49c3bfa771b9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: a733ff466a8c0e8ad62e1d633054d0631024b9ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Esta interfaz proporciona varios métodos para tener acceso a servidor de puertos y servicios de notificación.  

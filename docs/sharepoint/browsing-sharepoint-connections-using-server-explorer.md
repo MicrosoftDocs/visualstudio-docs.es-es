@@ -1,60 +1,60 @@
 ---
-title: "Examinar las conexiones de SharePoint utilizando el Explorador de servidores"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.SharePointExplorer.SharePointConnection"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "conexiones de SharePoint [desarrollo de SharePoint en Visual Studio]"
-  - "desarrollo de SharePoint en Visual Studio, explorar sitios de SharePoint"
-  - "desarrollo de SharePoint en Visual Studio, Conexiones de SharePoint"
+title: Examinar las conexiones de SharePoint mediante el Explorador de servidores | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.SharePointExplorer.SharePointConnection
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, browsing SharePoint sites
+- SharePoint development in Visual Studio, SharePoint Connections
+- SharePoint Connections [SharePoint development in Visual Studio]
 ms.assetid: b3b1d97b-e990-414c-8ba5-3fd1b463fbef
-caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Examinar las conexiones de SharePoint utilizando el Explorador de servidores
-  Ahora puede examinar las conexiones locales de SharePoint en **Explorador de servidores**.  Con esta técnica, puede navegar por los componentes de un sitio de SharePoint en el sistema.  Los componentes de sitio de SharePoint, como definiciones y tipos de contenido enumerados, aparecen en un nodo denominado **Conexiones de SharePoint** en la vista de árbol de **Explorador de servidores**.  Para mostrar **Explorador de servidores**, en la barra de menú, elija **Visualización**, **Explorador de servidores**.  Además de mostrar los componentes de sitio de SharePoint, puede quitar elementos, ver sus propiedades, o actualizar la vista de árbol mediante comandos del menú contextual.  
+# <a name="browsing-sharepoint-connections-using-server-explorer"></a>Examinar las conexiones de SharePoint utilizando el Explorador de servidores
+  Ahora puede examinar las conexiones locales de SharePoint en **Explorador de servidores**. Mediante esta técnica, puede navegar por los componentes de un sitio de SharePoint en el sistema. Componentes de sitio de SharePoint, como las definiciones de lista y tipos de contenido aparecen en un nodo que se denomina **las conexiones de SharePoint** en la vista de árbol de **Explorador de servidores**. Para mostrar **Explorador de servidores**, en la barra de menús, elija **vista**, **Explorador de servidores**. Además de mostrar los componentes de sitio de SharePoint, puede quitar elementos, ver sus propiedades o actualizar la vista de árbol mediante comandos en el menú contextual.  
   
 > [!IMPORTANT]  
->  Para examinar un sitio de SharePoint, debe ser administrador de la colección de sitios de SharePoint, y debe ejecutar Visual Studio como administrador del equipo local.  Si no, el sitio aparecerá en **Explorador de servidores**, pero no podrá expandir su nodo.  Para comprobar si es un administrador de colección de sitios, abra el sitio en un explorador web, abra el menú de **Acciones del sitio** , elija **Permisos de sitio**y, a continuación, en la página de **Permisos: Team Site** , elija el comando de **Los administradores de colecciones de sitios** del grupo de **Administrar** en la cinta de opciones.  Su nombre aparecerá en el cuadro de texto si es un administrador de la colección de sitios.  Si el comando de **Los administradores de colecciones de sitios** no aparece en el grupo de control de la cinta de opciones, no es administrador de la colección de sitios, y debe obtener los permisos adecuados site administrator.  
+>  Para examinar un sitio de SharePoint, debe ser un administrador de la colección de sitios de SharePoint y debe estar ejecutando Visual Studio como administrador del equipo local. En caso contrario, el sitio aparece en **Explorador de servidores**, pero no se puede expandir su nodo. Para comprobar si es un administrador de la colección de sitios, abra el sitio en un explorador web, abra el **acciones del sitio** menú, elija **permisos de sitio**y, a continuación, en la **permisos: equipo Sitio** página, elija la **Site Collection Administrators** línea de comandos desde el **administrar** grupo en la cinta de opciones. El nombre aparecerá en el cuadro de texto si es un administrador de colección de sitios. Si el **Site Collection Administrators** comando no aparece en el grupo de administrar en la cinta de opciones, no es un administrador de la colección de sitios y debe obtener los permisos adecuados del administrador del sitio.  
   
-## Nodos del explorador de servidores  
- Un nodo en la vista de árbol de **Explorador de servidores** en **Conexiones de SharePoint**representa cada componente de un sitio de SharePoint.  Por ejemplo, los sitios de SharePoint predeterminados incluyen un tipo de contenido denominado Discusión, que representa un tipo de discusión que muestra en la página **Discusiones** del sitio de SharePoint.  El tipo de contenido Discusiones contiene varios campos.  Para ver estos campos en **Explorador de servidores**, expanda el nodo de **Tipos de contenido** , y el nodo de **Discusión** .  Bajo él hay varios nodos de campos, como Cuerpo, Asunto de la discusión y Título.  
+## <a name="server-explorer-nodes"></a>Nodos del explorador de servidores  
+ Cada componente de un sitio de SharePoint se representa mediante un nodo en el **Explorador de servidores** en la vista de árbol **las conexiones de SharePoint**. Por ejemplo, sitios de SharePoint predeterminados incluyen un tipo de contenido denominado discusión, que representa un tipo de análisis que se muestra en el **discusiones** página del sitio de SharePoint. El tipo de contenido de discusión contiene varios campos. Para ver estos campos en **Explorador de servidores**, expanda la **tipos de contenido** nodo y, a continuación, el **discusión** nodo. En son varios nodos de campo, como el título, el asunto de discusión y cuerpo.  
   
-## Comandos del menú contextual de los nodos  
- Cada nodo tiene un menú contextual al que se tiene acceso haciendo clic con el botón secundario en el nodo o eligiendo y elige las teclas mayús\+f10.  Los comandos de nodo pueden incluir lo siguiente:  
+## <a name="node-shortcut-menu-commands"></a>Comandos de menú contextual de nodo  
+ Cada nodo tiene un menú contextual que tener acceso haciendo clic en el nodo o seleccionarlo y, a continuación, elija las teclas MAYÚS + F10. Los comandos de nodo pueden incluir lo siguiente:  
   
 |Nombre de comando|Descripción|  
-|-----------------------|-----------------|  
-|Actualizar|Actualiza la vista de árbol para reflejar cualquier cambio que se pueda haber producido desde la última vez que se mostró el nodo.|  
-|Delete|Quita el nodo raíz seleccionado de la vista de árbol. **Note:**  Este comando solo está habilitado en las conexiones de SharePoint enumeradas bajo el nodo **Conexiones de SharePoint**.|  
-|Propiedades|La ventana **Propiedades** muestra las propiedades disponibles del nodo seleccionado.  Las propiedades son todas de solo lectura y no todos los nodo tiene propiedades asociadas.|  
-|Agregar conexión|Le permite especificar un sitio de SharePoint que desea examinar.  Esta disponible en el nodo **Conexiones de SharePoint** y los nodos de subsitio.|  
-|Ver en el explorador|Muestra la lista seleccionada en el explorador web.  Este comando está disponible en algunas listas bajo el nodo **Listas** que se incluye en **Listas y bibliotecas**.|  
+|------------------|-----------------|  
+|Actualizar|Actualiza la vista de árbol para reflejar los cambios que se hayan producido desde la última vez que se mostró el nodo.|  
+|Eliminar|Quita el nodo seleccionado de la vista de árbol. **Nota:** este comando sólo está habilitado en las conexiones de SharePoint que aparecen en la **las conexiones de SharePoint** nodo.|  
+|Propiedades|Muestra las propiedades disponibles para el nodo seleccionado en el **propiedades** ventana. Las propiedades son todas de sólo lectura y no todos los nodos tienen propiedades asociadas a él.|  
+|Agregar conexión|Permite especificar un sitio de SharePoint que desea examinar. Disponible en la **las conexiones de SharePoint** nodo y los nodos secundarios del sitio.|  
+|Ver en el explorador|Muestra la lista seleccionada en el explorador Web. Este comando está disponible en algunas listas bajo el **enumera** nodo que se encuentra en **listas y bibliotecas**.|  
   
-## Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados  
   
 |Título|Descripción|  
-|------------|-----------------|  
-|[Cómo: Agregar o quitar conexiones de SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Describe los pasos que se requieren para agregar un nuevo sitio de SharePoint al nodo **Conexiones de SharePoint** en el **Explorador de servidores**.|  
+|-----------|-----------------|  
+|[Cómo: Agregar o quitar conexiones de SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Describe los pasos necesarios para agregar un nuevo sitio de SharePoint para el **las conexiones de SharePoint** nodo **Explorador de servidores**.|  
   
-## Vea también  
- [Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

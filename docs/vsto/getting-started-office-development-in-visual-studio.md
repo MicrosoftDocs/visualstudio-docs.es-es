@@ -1,31 +1,35 @@
 ---
-title: "Introducci&#243;n (Desarrollo de Office en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de Office en Visual Studio, introducción"
+title: "Introducción (desarrollo de Office en Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Office development in Visual Studio, getting started
 ms.assetid: fc27e84c-dca2-4b0a-8794-f57a2a886262
-caps.latest.revision: 56
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 52
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 04e0419fe3c56ef51656aafb20f16d78045dabab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Introducci&#243;n (Desarrollo de Office en Visual Studio)
+# <a name="getting-started-office-development-in-visual-studio"></a>Introducción (Desarrollo de Office en Visual Studio)
   Esta sección contiene temas que le ayudarán a empezar a usar Microsoft Office Developer Tools en Visual Studio.  
   
-## En esta sección  
- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+> [!NOTE]  
+>  ¿Está interesado en el desarrollo de soluciones que amplían la experiencia de Office en [varias plataformas](https://dev.office.com/add-in-availability)? Visite la nueva [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede compilarlas mediante prácticamente cualquier tecnología, como HTML5, JavaScript, CSS3 y XML de programación web.  
+  
+## <a name="in-this-section"></a>En esta sección  
+ [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Proporciona información general para desarrollar soluciones de Office en Visual Studio.  
   
  [Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
@@ -34,7 +38,7 @@ caps.handback.revision: 52
  [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)  
  Describe qué aplicaciones y proyectos son necesarios para usar características de desarrollo de Office, como la extensibilidad de cinta, los paneles de tareas personalizados, los paneles de acciones y las áreas de formulario.  
   
- [Configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
+ [Configuración de un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
  Proporciona información y pasos para instalar las herramientas de desarrollo de Office, el tiempo de ejecución que permite que las soluciones de Office se ejecuten en equipos de usuarios finales y los ensamblados de interoperabilidad primarios de Office.  
   
  [Introducción a la programación de personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
@@ -43,8 +47,8 @@ caps.handback.revision: 52
  [Introducción a la programación de personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
  Proporciona un resumen de conceptos importantes necesarios cuando se usa Visual Studio para crear personalizaciones de nivel de documento para Word.  
   
- [Introducción a la programación de complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
- Proporciona un resumen de conceptos importantes necesarios cuando se usa Visual Studio para crear complementos en el nivel de aplicación de Visual Studio Tools para Office \(VSTO\) para aplicaciones de Microsoft Office.  
+ [Introducción a la programación de complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ Proporciona un resumen de conceptos importantes necesarios cuando se usa Visual Studio para crear complementos en el nivel de aplicación de Visual Studio Tools para Office (VSTO) para aplicaciones de Microsoft Office.  
   
  [Comparación de soluciones de VBA y Office en Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  Describe las capacidades relativas de Visual Basic para Aplicaciones y de las herramientas de desarrollo de Office en Visual Studio para desarrollar soluciones de Office.  
@@ -52,23 +56,23 @@ caps.handback.revision: 52
  [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)  
  Proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.  
   
-## Secciones relacionadas  
- [Ejemplos y tutoriales del desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)  
  Proporciona vínculos a aplicaciones de ejemplo y temas que proporcionan instrucciones paso a paso para realizar tareas habituales.  
   
  [Arquitectura de las soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  Describe los componentes de las soluciones de Office y cómo funcionan en tiempo de diseño y tiempo de ejecución.  
   
- [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
  Proporciona información sobre cómo crear un proyecto de Office y configurar el proyecto en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)  
+ [Desarrollo de soluciones de Office](../vsto/developing-office-solutions.md)  
  Proporciona información sobre cómo implementar personalizaciones de la interfaz de usuario y el código en un proyecto de Office.  
   
- [Asegurar las soluciones de Office](../vsto/securing-office-solutions.md)  
+ [Protección de soluciones de Office](../vsto/securing-office-solutions.md)  
  Proporciona información acerca de los requisitos de seguridad para las soluciones de Office.  
   
- [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
+ [Implementación de una solución de Office](../vsto/deploying-an-office-solution.md)  
  Proporciona información sobre cómo poner soluciones de Office a disposición de los usuarios y describe las principales cuestiones que se deben considerar cuando se elige un método de implementación y se establece la seguridad.  
   
  [Visual Studio Tools para Office, artículos técnicos y guías visuales](http://go.microsoft.com/fwlink/?LinkID=106640)  

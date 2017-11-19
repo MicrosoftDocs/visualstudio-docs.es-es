@@ -1,51 +1,52 @@
 ---
-title: "IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::IsFunctionDeleted"
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: feb2101187db64c628fce8a57f1101dabf666af6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::IsFunctionDeleted
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Determina que la función en la dirección especificada de depuración se elimina.  
+# <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
+Determina que se ha eliminado la función en la dirección de depuración especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT IsFunctionDeleted(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsFunctionDeleted(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pAddress`  
- \[in\]  La dirección de depuración representada por una interfaz de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  esta dirección debe ser un METHOD\_ADDRESS.  
+ [in] La dirección de depuración representado por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz. Esta dirección debe ser un METHOD_ADDRESS.  
   
-## Valor devuelto  
- si se elimina la función, devuelve `S_OK`.  Si la función existe, devuelve `S_FALSE`.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se elimina la función, devuelve `S_OK`. Si la función es existe, devuelve `S_FALSE`.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(  
     IDebugAddress* pAddress  
 )  
@@ -90,5 +91,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

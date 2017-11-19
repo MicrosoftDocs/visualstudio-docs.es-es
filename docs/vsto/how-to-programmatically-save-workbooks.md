@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Save Workbooks | Microsoft Docs'
+title: "Cómo: guardar libros mediante programación | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,78 +15,83 @@ helpviewer_keywords:
 - workbooks, saving
 - workbooks, saving backup copies
 ms.assetid: 991ccf9b-5213-4094-9030-284ec167bdcc
-caps.latest.revision: 50
-author: kempb
-ms.author: kempb
+caps.latest.revision: "50"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b20aa9c1bfa93295420f4a50803abb31e0d3da07
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 5be604d75183209ecdf068409e26007277cb6d98
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>How to: Programmatically Save Workbooks
-  There are several ways to save a workbook. You can save a workbook without changing the path. If the workbook has not been saved before, you should save the workbook by specifying a path. Without an explicit path, Microsoft Office Excel saves the file in the current folder with the name it was given when it was created. You can also save a copy of the workbook without modifying the open workbook in memory.  
+# <a name="how-to-programmatically-save-workbooks"></a>Cómo: Guardar libros mediante programación
+  Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="saving-a-workbook-without-changing-the-path"></a>Saving a Workbook Without Changing the Path  
+## <a name="saving-a-workbook-without-changing-the-path"></a>Guardar un libro sin cambiar la ruta de acceso  
   
-#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para guardar un libro asociado a una personalización de nivel de documento  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> method of the ThisWorkbook class.  
+1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> de la clase ThisWorkbook.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]  [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
+     [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]  
   
-#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para guardar el libro activo en un complemento de VSTO  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> method to save the active workbook. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
+1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> para guardar el libro activo. Para usar el ejemplo de código siguiente, ejecútelo en la clase `ThisAddIn` en un proyecto de complemento de VSTO para Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]  
   
-## <a name="saving-a-workbook-with-a-new-path"></a>Saving a Workbook with a New Path  
- You can save the specified workbook to a new location or with a new name, optionally specifying a file format, a password, an access mode, and more.  
+## <a name="saving-a-workbook-with-a-new-path"></a>Guardar un libro con una nueva ruta de acceso  
+ Puede guardar el libro especificado en una ubicación nueva o con un nombre nuevo, especificando opcionalmente un formato de archivo, una contraseña y un modo de acceso, entre otras cosas.  
   
 > [!NOTE]  
->  You might want to set the <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> property to **False** before saving the workbook with a new path because saving in some formats requires interaction. Setting this property to **False** causes Excel to use all defaults.  
+>  Desea establecer el <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propiedad **False** antes de guardar el libro con una nueva ruta de acceso, ya que guardar en algunos formatos requiere interacción. Si se establece esta propiedad en **False** , Excel usa todos los valores predeterminados.  
   
-#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para guardar un libro asociado a una personalización de nivel de documento  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> method of the `ThisWorkbook` class. To use the following code example, run it in the `ThisWorkbook` class.  
+1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la clase `ThisWorkbook`. Para usar el siguiente ejemplo de código, ejecútelo en la clase `ThisWorkbook`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]  [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
+     [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
   
-#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para guardar el libro activo en un complemento de VSTO  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> method to save the active workbook to a new path. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
+1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> para guardar el libro activo en una nueva ruta de acceso. Para usar el ejemplo de código siguiente, ejecútelo en la clase `ThisAddIn` en un proyecto de complemento de VSTO para Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]  
   
-## <a name="saving-a-copy-of-the-workbook"></a>Saving a Copy of the Workbook  
- You can save a copy of the workbook to a file without modifying the open workbook in memory. This is useful when you want to create a backup copy without modifying the location of the workbook.  
+## <a name="saving-a-copy-of-the-workbook"></a>Guardar una copia del libro  
+ Puede guardar una copia del libro en un archivo sin modificar el libro abierto en memoria. Esto es útil cuando se desea crear una copia de seguridad sin modificar la ubicación del libro.  
   
-#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>To save a workbook associated with a document-level customization  
+#### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para guardar un libro asociado a una personalización de nivel de documento  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> method of the `ThisWorkbook` class. To use the following code example, run it in the `ThisWorkbook` class.  
+1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la clase `ThisWorkbook`. Para usar el siguiente ejemplo de código, ejecútelo en la clase `ThisWorkbook`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]  [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
+     [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  
   
-#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>To save the active workbook in a VSTO Add-in  
+#### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para guardar el libro activo en un complemento de VSTO  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> method to save a copy of the active workbook. To use the following code example, run it in the `ThisAddIn` class in a VSTO Add-in project for Excel.  
+1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> para guardar una copia del libro activo. Para usar el ejemplo de código siguiente, ejecútelo en la clase `ThisAddIn` en un proyecto de complemento de VSTO para Excel.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]  
   
-## <a name="robust-programming"></a>Robust Programming  
- Interactively canceling any of the methods that save or copy the workbook raises a run-time error in your code. For example, if your procedure calls the <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> method but does not disable prompts from Excel, and your user clicks **Cancel** when prompted, Excel raises a run-time error.  
+## <a name="robust-programming"></a>Programación sólida  
+ Si se cancela interactivamente cualquiera de los métodos que guardan o copian el libro se produce un error en tiempo de ejecución en el código. Por ejemplo, si el procedimiento llama el <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método pero no deshabilita los mensajes de Excel, y el usuario hace clic en **cancelar** cuando se le solicite, Excel genera un error en tiempo de ejecución.  
   
-## <a name="see-also"></a>See Also  
- [Working with Workbooks](../vsto/working-with-workbooks.md)   
- [Workbook Host Item](../vsto/workbook-host-item.md)   
- [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+## <a name="see-also"></a>Vea también  
+ [Trabajar con libros](../vsto/working-with-workbooks.md)   
+ [Elemento Host Workbook](../vsto/workbook-host-item.md)   
+ [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+ [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
+ [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)  
   
   

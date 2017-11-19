@@ -1,34 +1,35 @@
 ---
-title: "Depurar c&#243;digo de ejemplo HTML, CSS y JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Depurar código de ejemplo HTML, CSS y JavaScript | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 762caca321cdda941fd295306fdfdf73e03b0aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Depurar c&#243;digo de ejemplo HTML, CSS y JavaScript
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de ejemplo HTML, CSS y JavaScript
+![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- El código de este tema es el archivo de ejemplo para [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
+ El código de este tema es el archivo de ejemplo para [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   
-## Código de ejemplo  
- El siguiente código HTML se usa en la etiqueta \<body\> del Inicio rápido.  
+## <a name="sample-code"></a>Código de ejemplo  
+ El siguiente código HTML se usa en la \<cuerpo > etiqueta del tutorial rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -52,7 +53,7 @@ caps.handback.revision: 13
 }  
 ```  
   
- En el ejemplo de código siguiente se muestra el código de JavaScript completo de default.js.  Las referencias a los espacios de nombres de WinJS para este código están en el archivo default.html de la plantilla.  
+ En el ejemplo de código siguiente se muestra el código de JavaScript completo de default.js. Las referencias a espacios de nombres de WinJS para este código están en el archivo default.html de la plantilla.  
   
 ```javascript  
 (function () {  
@@ -103,5 +104,5 @@ caps.handback.revision: 13
 })();  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

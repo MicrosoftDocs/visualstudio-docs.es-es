@@ -1,85 +1,66 @@
 ---
-title: "C&#243;mo: Aplicar tareas de edici&#243;n en modo de interrupci&#243;n con Editar y continuar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.variables.failededit"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-helpviewer_keywords: 
-  - "modo de interrupción, aplicar cambios del código"
-  - "código, editar en modo de interrupción"
-  - "incluir en código, editar en modo de interrupción"
-  - "Editar y continuar [Visual Basic], aplicar tareas de edición en modo de interrupción"
-  - "Editar y continuar, aplicar tareas de edición en modo de interrupción"
-  - "editar, modo de interrupción"
+title: "Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.variables.failededit
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [Visual Basic], applying edits in break mode
+- break mode, applying code changes
+- Edit and Continue, applying edits in break mode
+- editing, break mode
+- coding, editing in break mode
+- code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
-caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Aplicar tareas de edici&#243;n en modo de interrupci&#243;n con Editar y continuar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
   
- La opción Editar y continuar no se encuentra disponible en los siguientes escenarios de depuración:  
+Para conocer las limitaciones sobre el uso de editar y continuar durante la depuración, vea [cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md)]
   
--   Depuración en modo mixto \(nativa o administrada\).  
-  
--   Depuración de SQL.  
-  
--   Depuración de un volcado de Dr.  Volcado de memoria de Watson.  
-  
--   Edición de código tras una excepción no controlada, cuando no se ha seleccionado la opción **Desenredar la pila de llamadas de las excepciones no controladas**.  
-  
--   Depuración de una aplicación incrustada en tiempo de ejecución.  
-  
--   Depuración de una aplicación con **Asociar a**, en lugar de ejecutar la aplicación con **Iniciar** desde el menú **Depurar**.  
-  
--   Depuración de código optimizado.  
-  
--   Depuración de código administrado cuando el destino es una aplicación de 64 bits.  Si desea utilizar la opción Editar y continuar, deberá establecer el destino en x86.  \(*Proyecto***Propiedades**, pestaña **Compilar**, **Configuración de compilador avanzada**\).  
-  
--   Depuración de una versión anterior del código cuando no se haya podido generar una nueva versión debido a errores de compilación.  
-  
-### Para editar código en modo de interrupción  
+### <a name="to-edit-code-in-break-mode"></a>Para editar código en modo de interrupción  
   
 1.  Entre en el modo de interrupción siguiendo uno de estos pasos:  
   
-    -   Establezca un punto de interrupción en el código y, a continuación, elija **Iniciar depuración** en el menú **Depurar**; espere a que la aplicación llegue al punto de interrupción.  
+    -   Establecer un punto de interrupción en el código, a continuación, elija **Iniciar depuración** desde el **depurar** menú y espere a que la aplicación llegue al punto de interrupción.  
   
-         \-O bien\-  
+         O bien  
   
-    -   Inicie la depuración y, a continuación, seleccione **Interrumpir todos** en el menú **Depurar**.  
+    -   Iniciar la depuración y, a continuación, seleccione **interrumpir todos** desde el **depurar** menú.  
   
-         \-O bien\-  
+         O bien  
   
-    -   Si se produce una excepción, elija **Habilitar edición** en el **Asistente de excepciones**.  
+    -   Cuando se produce una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
   
-2.  Realice todos los cambios que desee en el código, siempre y cuando sean válidos.  
+2.  Realice los cambios de código deseada y se admite.  
   
-     Para obtener más información, vea [Ediciones no compatibles en Editar y continuar de Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
+     Para obtener más información, consulte [cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
-    >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas.  No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
+    >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
   
-3.  En el menú **Depurar**, haga clic en **Continuar** para reanudar la ejecución.  
+3.  En el **depurar** menú, haga clic en **continuar** para reanudar la ejecución.  
   
      El código se ejecutará con los cambios aplicados incorporados al proyecto.  
   
-## Vea también  
- [Ediciones no compatibles en Editar y continuar de Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
- [Editar y continuar \(Visual Basic\)](../debugger/edit-and-continue-visual-basic.md)
+## <a name="see-also"></a>Vea también  
+ [Cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Editar y continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

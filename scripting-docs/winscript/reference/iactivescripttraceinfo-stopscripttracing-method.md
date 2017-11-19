@@ -1,36 +1,38 @@
 ---
-title: "IActiveScriptTraceInfo::StopScriptTracing (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Iactivescripttraceinfo:: Stopscripttracing (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 296f49ab-b341-42a1-82b7-787e91bf74e1
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e3fb0f77ff84453eaf202d09d05cd926cf0e7c2a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptTraceInfo::StopScriptTracing (M&#233;todo)
-Detiene el seguimiento de script.  
+# <a name="iactivescripttraceinfostopscripttracing-method"></a>IActiveScriptTraceInfo::StopScriptTracing (Método)
+Se detiene el seguimiento de la secuencia de comandos.  
   
-## Sintaxis  
-  
-```  
-HRESULT StopScriptTracing(void);   
-}  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
+HRESULT StopScriptTracing(void); }  
+```  
   
-#### Parámetros  
- Este método no tiene ningún parámetro.  
+#### <a name="parameters"></a>Parámetros  
+ Este método no tiene parámetros.  
   
-## Valor devuelto  
- Los valores devueltos posibles de este método son los siguientes:  
+## <a name="return-value"></a>Valor devuelto  
+ Los posibles valores devueltos para este método son:  
   
-1.  S\_OK: Correctamente.  
+1.  S_OK: correcto.  
   
-2.  E\_NOTIMPL: no implementado.
+2.  E_NOTIMPL: No implementado.

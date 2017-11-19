@@ -1,48 +1,47 @@
 ---
-title: "Ejemplo Dia2dump | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aplicaciones de ejemplo [Kit de desarrollo DIA (SDK)]"
-  - "Dia2dump (ejemplo) [Kit de desarrollo DIA (SDK)]"
+title: Ejemplo Dia2dump | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- sample applications [DIA SDK]
+- Dia2dump sample [DIA SDK]
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1a3166065680c193875c451626846a090e50cbc1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Ejemplo Dia2dump
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El ejemplo de Dia2dump se instala con Visual Studio y contiene el archivo de código fuente de Dia2dump.cpp.  El ejecutable compilado se ejecuta desde la línea de comandos y muestra el contenido de un archivo completo de la base de datos de programa \(.pdb\).  
+# <a name="dia2dump-sample"></a>Ejemplo Dia2dump
+El ejemplo Dia2dump se instala con Visual Studio y contiene el archivo de origen dia2dump.cpp. El archivo ejecutable compilado se ejecuta desde la línea de comandos y muestra el contenido de un archivo de programa (.pdb) de la base de datos.  
   
-### para instalar el ejemplo  
+### <a name="to-install-the-sample"></a>Para instalar el ejemplo  
   
-1.  Compruebe que el sistema cumple todos los requisitos de configuración descritos en la página de inicio de la configuración de Visual Studio.  
+1.  Compruebe que su sistema cumple todos los requisitos de configuración que se describe en la página de inicio de instalación de Visual Studio.  
   
-2.  Instale Visual Studio y siga todas las instrucciones de configuración e instalación para los ejemplos incluidos.  
+2.  Instalar Visual Studio y siga todas las instrucciones de instalación y configuración para los ejemplos incluidos.  
   
-#### Para compilar el ejemplo  
+#### <a name="to-build-the-sample"></a>Para compilar el ejemplo  
   
-1.  Abra el archivo de Dia2dump.sln en Visual Studio.  \(En caso necesario, Visual Studio le ayudará a actualizar el proyecto de Dia2dump.\)  
+1.  Abra el archivo Dia2dump.sln en Visual Studio. (Si es necesario, Visual Studio le primero permitirá actualizar el proyecto de Dia2dump.)  
   
-2.  En las páginas de propiedades del proyecto, en **C\/C\+\+** &#124; **General** &#124; la propiedad de**Directorios de inclusión adicionales** , especifica el directorio de `. \DIA SDK \ include` .  esto garantiza que el compilador puede encontrar el archivo de dia2.h.  
+2.  En las páginas de propiedades de proyecto, en la **C/C++** &#124; **General** &#124; **Directorios de inclusión adicionales** propiedad, especifique el `..\DIA SDK\include` directory. Esto garantiza que el compilador pueda encontrar el archivo dia2.h.  
   
-3.  En el menú **Compilar**, haga clic en **Recompilar solución**.  
+3.  En el **generar** menú, haga clic en **volver a generar solución**.  
   
-4.  Cierra Visual Studio.  
+4.  Cierre Visual Studio.  
   
-#### Para ejecutar el ejemplo  
+#### <a name="to-run-the-sample"></a>Para ejecutar el ejemplo  
   
 1.  Abra un símbolo del sistema y escriba lo siguiente:  
   
@@ -50,6 +49,6 @@ El ejemplo de Dia2dump se instala con Visual Studio y contiene el archivo de có
     dia2dump filename  
     ```  
   
-## Vea también  
- [Archivo de origen Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+## <a name="see-also"></a>Vea también  
+ [Origen Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
+ [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadDWORD | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadDWORD"
+title: IDiaPropertyStorage::ReadDWORD | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadDWORD
 ms.assetid: 5f4c034e-a9d3-4560-94b5-ede524741439
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 178eb0cceaacd6d93f20e74c034e452d8f7fdf6f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadDWORD
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lee los valores de `DWORD` en un conjunto de propiedades.  
+# <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
+Lee `DWORD` valores en un conjunto de propiedades.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT ReadDWORD (   
-   PROPID id,  
-   DWORD* pValue  
+```C++  
+HRESULT ReadDWORD (   
+   PROPID id,  
+   DWORD* pValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `id`  
- \[in\]  Identificador de la propiedad que se leerá \(`PROPID` se define en WTypes.h como `ULONG`\).  
+ [in] Identificador de la propiedad que debe leerse (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
   
  `pValue`  
- \[out\]  devuelve el valor de propiedad.  
+ [out] Devuelve el valor de propiedad.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Devuelve `E_INVALIDARG` si la propiedad no es de `DWORD`escrito.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_INVALIDARG` si la propiedad no es de tipo `DWORD`.  
   
-## Comentarios  
- `DWORD` está definido por Windows como entero sin signo de 32 bits.  
+## <a name="remarks"></a>Comentarios  
+ Un `DWORD` se define por Windows como un entero de 32 bits sin signo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

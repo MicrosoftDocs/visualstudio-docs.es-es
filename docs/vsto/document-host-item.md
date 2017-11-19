@@ -1,59 +1,61 @@
 ---
-title: "Elemento host Document"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documentos [desarrollo de Office en Visual Studio]"
-  - "documentos [desarrollo de Office en Visual Studio], elementos host de documentos"
-  - "elementos host de documentos"
-  - "Word [desarrollo de Office en Visual Studio], documentos de Word"
-  - "Word [desarrollo de Office en Visual Studio]"
-  - "documentos de Word"
-  - "elementos host [desarrollo de Office en Visual Studio], Document"
+title: Elemento Host de documento | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio]
+- documents [Office development in Visual Studio], document host items
+- document host items
+- Word [Office development in Visual Studio], Word documents
+- Word [Office development in Visual Studio]
+- Word documents
+- host items [Office development in Visual Studio], Document
 ms.assetid: 4c1963f2-e88e-4c68-9f3d-13dedebddde4
-caps.latest.revision: 47
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+caps.latest.revision: "47"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: de243ee4b36d180b93e1b64f2a08c013a05d5360
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento host Document
+# <a name="document-host-item"></a>Elemento host Document
   El elemento host <xref:Microsoft.Office.Tools.Word.Document> es un tipo que extiende el tipo <xref:Microsoft.Office.Interop.Word.Document> del ensamblado de interoperabilidad primario de Word. Asimismo, el elemento host <xref:Microsoft.Office.Tools.Word.Document> proporciona las mismas propiedades, métodos y eventos que un objeto <xref:Microsoft.Office.Interop.Word.Document> y, además, también expone eventos adicionales y sirve de contenedor para los controles host y para los controles de Windows Forms.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  En los proyectos de nivel de documento, existe un elemento host <xref:Microsoft.Office.Tools.Word.Document> predeterminado que representa al documento del proyecto. En los proyectos de complemento de VSTO, puede generar elementos host <xref:Microsoft.Office.Tools.Word.Document> en tiempo de ejecución.  
   
-## Información acerca de los elementos host de documento en los proyectos de nivel de documento  
- Para obtener acceso al documento del proyecto, utilice la clase `ThisDocument`. Cuando se crea un proyecto de nivel de documento, Visual Studio genera la clase `ThisDocument` para que sirva como vínculo de comunicación entre Word y el código de personalización. La clase `ThisDocument` le da acceso a los miembros del elemento host <xref:Microsoft.Office.Tools.Word.Document> para que pueda realizar tareas básicas durante la personalización, como por ejemplo, ejecutar el código cuando el documento se abre o se cierra. También puede usar esa clase para agregar controles al documento. Si combina diferentes conjuntos de controles y escribe el código, puede enlazar los controles a los datos, recopilar información del usuario y responder a las acciones del usuario. Para obtener más información, consulta [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md).  
+## <a name="understanding-the-document-host-item-in-document-level-projects"></a>Información acerca de los elementos host de documento en los proyectos de nivel de documento  
+ Para obtener acceso al documento del proyecto, utilice la clase `ThisDocument` . Cuando se crea un proyecto de nivel de documento, Visual Studio genera la clase `ThisDocument` para que sirva como vínculo de comunicación entre Word y el código de personalización. La clase `ThisDocument` le da acceso a los miembros del elemento host <xref:Microsoft.Office.Tools.Word.Document> para que pueda realizar tareas básicas durante la personalización, como por ejemplo, ejecutar el código cuando el documento se abre o se cierra. También puede usar esa clase para agregar controles al documento. Si combina diferentes conjuntos de controles y escribe el código, puede enlazar los controles a los datos, recopilar información del usuario y responder a las acciones del usuario. Para obtener más información, consulta [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
   
- La clase `ThisDocument` proporciona una ubicación en la que puede empezar a escribir el código del proyecto. Como esta clase proporciona las mismas propiedades, métodos y eventos que el objeto <xref:Microsoft.Office.Interop.Word.Document> que se encuentra en el ensamblado de interoperabilidad primario de Word, también puede usar `ThisDocument` para obtener acceso al modelo de objetos de Word.  Para obtener más información, consulta [Información general acerca del modelo de objetos de Word](../vsto/word-object-model-overview.md).  
+ La clase `ThisDocument` proporciona una ubicación en la que puede empezar a escribir el código del proyecto. Como esta clase proporciona las mismas propiedades, métodos y eventos que el objeto <xref:Microsoft.Office.Interop.Word.Document> que se encuentra en el ensamblado de interoperabilidad primario de Word, también puede usar `ThisDocument` para obtener acceso al modelo de objetos de Word. Para obtener más información, consulta [Word Object Model Overview](../vsto/word-object-model-overview.md).  
   
-### Limitaciones del elemento host Document en los proyectos de nivel de documento  
- Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Word.Document> \(es decir, la clase `ThisDocument`\). No puede agregar nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> al proyecto en tiempo de diseño, ni tampoco crear nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> en tiempo de ejecución desde una personalización de nivel de documento.  
+### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Limitaciones del elemento host Document en los proyectos de nivel de documento  
+ Un proyecto de nivel de documento puede contener solamente un elemento host <xref:Microsoft.Office.Tools.Word.Document> (es decir, la clase `ThisDocument` ). No puede agregar nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> al proyecto en tiempo de diseño, ni tampoco crear nuevos elementos host <xref:Microsoft.Office.Tools.Word.Document> en tiempo de ejecución desde una personalización de nivel de documento.  
   
- Si crea un nuevo documento de Word en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Word.Document>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información sobre cómo crear documentos en tiempo de ejecución, consulte [Cómo: Crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md).  
+ Si crea un nuevo documento de Word en tiempo de ejecución, será del tipo <xref:Microsoft.Office.Interop.Word.Document>. Como no se trata de un elemento host, este no puede contener controles host ni controles de Windows Forms. Para obtener más información acerca de cómo crear documentos en tiempo de ejecución, consulte [Cómo: crear mediante programación nuevos documentos](../vsto/how-to-programmatically-create-new-documents.md).  
   
-## Información acerca de los elementos Host de documento en los proyectos de nivel de aplicación  
- En los proyectos de complemento VSTO, puede generar en tiempo de ejecución un elemento host <xref:Microsoft.Office.Tools.Word.Document> para cualquier documento que esté abierto en Word. Puede usar el elemento host <xref:Microsoft.Office.Tools.Word.Document> para agregar controles al documento asociado, o para administrar los eventos que no estén disponibles en los objetos <xref:Microsoft.Office.Interop.Word.Document>.  
+## <a name="understanding-document-host-items-in-application-level-projects"></a>Información acerca de los elementos Host de documento en los proyectos de nivel de aplicación  
+ En los proyectos de complemento VSTO, puede generar en tiempo de ejecución un elemento host <xref:Microsoft.Office.Tools.Word.Document> para cualquier documento que esté abierto en Word. Puede usar el elemento host <xref:Microsoft.Office.Tools.Word.Document> para agregar controles al documento asociado, o para administrar los eventos que no estén disponibles en los objetos <xref:Microsoft.Office.Interop.Word.Document> .  
   
- Para generar un elemento host <xref:Microsoft.Office.Tools.Word.Document>, use el método GetVstoObject. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Para generar un <xref:Microsoft.Office.Tools.Word.Document> elemento host, utilice el método GetVstoObject. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## Vea también  
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
+## <a name="see-also"></a>Vea también  
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
- [Información general acerca del modelo de objetos de Word](../vsto/word-object-model-overview.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
+ [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
   
   

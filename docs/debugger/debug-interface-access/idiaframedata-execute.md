@@ -1,54 +1,53 @@
 ---
-title: "IDiaFrameData::execute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::execute (método)"
+title: 'Idiaframedata:: Execute | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::execute method
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29b284e466ce751e86f488203b4b22c0c18c6573
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::execute
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Realiza la pila que desenredo y devuelve los resultados en una interfaz de cuadro de recorrido de pila.  
+# <a name="idiaframedataexecute"></a>IDiaFrameData::execute
+Realiza el desenredo de la pila y devuelve los resultados en una interfaz de marco de recorrido de pila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT execute (   
-   IDiaStackWalkFrame* frame  
+```C++  
+HRESULT execute (   
+   IDiaStackWalkFrame* frame  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `frame`  
- \[in\]  Un objeto de [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) que contiene el estado del marco registra.  
+ [in] Un [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objeto que contiene el estado de los registros de marco.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  la tabla siguiente muestra los valores devueltos posibles para este método.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. La tabla siguiente muestran los posibles valores devueltos para este método.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|E\_DIA\_INPROLOG|No puede ejecutar un marco de pila mientras en código de prólogo.|  
-|E\_DIA\_SYNTAX|Error de análisis encontrado en un programa de cuadro.|  
-|E\_DIA\_FRAME\_ACCESS|No se puede obtener acceso a los registros o en memoria.|  
-|E\_DIA\_VALUE|error en el cálculo de un valor \(por ejemplo, división por cero\).|  
+|E_DIA_INPROLOG|No se puede ejecutar un marco de pila en el código de prólogo.|  
+|E_DIA_SYNTAX|Analizar el error en el programa de marco.|  
+|E_DIA_FRAME_ACCESS|No se puede a los registros de acceso o memoria.|  
+|E_DIA_VALUE|Error en el cálculo de un valor (por ejemplo, la división por cero).|  
   
-## Comentarios  
- Se llama a este método durante la depuración desenrede la pila.  El objeto de [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) es implementado por la aplicación cliente para recibir las actualizaciones a los registros y proporcionar los métodos utilizados por el método de `execute` .  
+## <a name="remarks"></a>Comentarios  
+ Se llama a este método durante la depuración para desenredar la pila. El [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objeto se implementa mediante la aplicación de cliente para recibir actualizaciones de los registros y para proporcionar métodos usados por la `execute` método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

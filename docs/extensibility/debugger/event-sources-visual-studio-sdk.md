@@ -1,28 +1,29 @@
 ---
-title: "Or&#237;genes de eventos (SDK de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], orígenes de eventos"
+title: "Orígenes de eventos (Visual Studio SDK) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Or&#237;genes de eventos (SDK de Visual Studio)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-hay dos orígenes de eventos: el motor de depuración \(DE\) y la sesión del administrador \(SDM\).  Los eventos enviados de un OF tienen un motor no null, mientras que los eventos enviados de SDM tienen un motor de NULL.  
+# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
+Hay dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM). Eventos enviados desde un Alemania tienen un motor distinto de NULL, mientras que eventos enviados desde el SDM tienen un motor NULL.  
   
-## Ejemplo  
- El siguiente ejemplo muestra cómo enviar **IDebugProgramCreateEvent2** del SDM.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo enviar la **IDebugProgramCreateEvent2** desde el DE para el SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
@@ -73,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
   
 ```  
   
-## Vea también  
- [Enviar eventos](../../extensibility/debugger/sending-events.md)
+## <a name="see-also"></a>Vea también  
+ [Envío de eventos](../../extensibility/debugger/sending-events.md)

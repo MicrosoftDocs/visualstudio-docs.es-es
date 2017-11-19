@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - customizing the view
+helpviewer_keywords: editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3e70313d662d54b48823500a054b5aaa2a9401ae
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Tutorial: Personalizar la vista de texto
 Puede personalizar una vista de texto mediante la modificación de cualquiera de las siguientes propiedades en su mapa de formato del editor:  
@@ -67,7 +51,8 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
   
 2.  Agregue las siguientes `using` directivas:  
   
-     [!code-csharp[VSSDKViewPropertyTest #1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)][!code-vb[VSSDKViewPropertyTest n.º 1  ](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
 3.  Declarar una clase denominada `TestViewCreationListener` que hereda de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exportar esta clase con los siguientes atributos:  
   
@@ -75,17 +60,20 @@ Puede personalizar una vista de texto mediante la modificación de cualquiera de
   
     -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>para especificar el rol de este agente de escucha.  
   
-     [!code-csharp[VSSDKViewPropertyTest 2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs) ] [!code-vb [VSSDKViewPropertyTest 2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
+     [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
+     [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
 4.  En esta clase, importe el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>.  
   
-     [!code-csharp[VSSDKViewPropertyTest 3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)][!code-vb[VSSDKViewPropertyTest 3  ](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="changing-the-view-properties"></a>Cambiar las propiedades de vista  
   
 1.  Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que se cambian las propiedades de la vista cuando se abre la vista. Para realizar el cambio, busque el <xref:System.Windows.ResourceDictionary> que se corresponde con el aspecto de la vista que desea buscar. A continuación, cambie la propiedad adecuada en el diccionario de recursos y establecer las propiedades. Procesar por lotes las llamadas a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método mediante una llamada a la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de establecer las propiedades y, a continuación, el <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> después de establecer las propiedades.  
   
-     [!code-csharp[VSSDKViewPropertyTest #4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)][!code-vb[VSSDKViewPropertyTest #4  ](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]  
+     [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
+     [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]  
   
 ## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
   

@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_isAcceleratorStubFunction | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6a7d2f27e776b37c392eb0116425ceeb6916031
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAcceleratorStubFunction
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Indica si el token corresponde a un token de nivel superior de la función para un sombreador compilado para un acelerador que corresponde a `parallel_for_each` una llamada.  
+# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+Indica si el símbolo corresponde a un símbolo de función de nivel superior de un sombreador que se compila para un acelerador que corresponde a un `parallel_for_each` llamar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT get_isAcceleratorStubFunction(   
    BOOL* pFlag);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pFlag`  
- \[out\] puntero A `BOOL` que indica si el token corresponde a un token de nivel superior de la función para un sombreador compilado para un acelerador que corresponde a `parallel_for_each` una llamada.  
+ [out] Un puntero a un `BOOL` que indica si el símbolo corresponde a un símbolo de función de nivel superior de un sombreador que se compila para un acelerador que corresponde a un `parallel_for_each` llamar.  
   
-## Valor devuelto  
- Si es correcto, especificado `S_OK`; si no, especificado `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

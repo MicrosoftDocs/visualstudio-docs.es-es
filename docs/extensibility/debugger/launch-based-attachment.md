@@ -1,38 +1,40 @@
 ---
-title: "Datos adjuntos basada en el inicio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "motores de depuración, iniciar"
-  - "motores de depuración, asociar a programas"
+title: Datos adjuntos basada en Inicio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, launching
+- debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2aa9787ad432e402375680c4e27e433236b13249
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Datos adjuntos basada en el inicio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-los datos adjuntos Lanzamiento\-basados a un programa son automáticos.  Cuando el proceso que hospeda el programa es iniciadas por el SDM, datos adjuntos lanzamiento\-basados siguen una ruta similar a la del método manual de los datos adjuntos.  Para obtener información, vea [Asociar el depurador al programa](../../extensibility/debugger/attaching-to-the-program.md).  
+# <a name="launch-based-attachment"></a>Datos adjuntos basada en Inicio
+Datos adjuntos en función de inicio a un programa son automático. Cuando se inicia el proceso que hospeda el programa envía el SDM, datos adjuntos basada en Inicio siguen una ruta de acceso similar a la que el método de conexión manual. Para obtener información, consulte [asociar al programa](../../extensibility/debugger/attaching-to-the-program.md).  
   
-## El proceso que asocia  
- La diferencia principal es la secuencia de eventos que realizan la llamada de **Asociar** , como sigue:  
+## <a name="the-attaching-process"></a>El proceso de asociación  
+ La diferencia principal es la secuencia de eventos después de la **adjuntar** llamar, como se indica a continuación:  
   
-1.  Enviar un objeto de evento de **IDebugEngineCreateEvent2** al SDM.  Para obtener información detallada, vea [envío de eventos](../../extensibility/debugger/sending-events.md).  
+1.  Enviar una **IDebugEngineCreateEvent2** objeto de evento para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
   
-2.  Llame al método de `IDebugProgram2::GetProgramId` en la interfaz de **IDebugProgram2** pasada al método de **Asociar** .  
+2.  Llame a la `IDebugProgram2::GetProgramId` método en el **IDebugProgram2** interfaz se pasa a la **adjuntar** método.  
   
-3.  Enviar un objeto de evento de **IDebugProgramCreateEvent2** para notificar al SDM que el objeto local de **IDebugProgram2** se creó para representar el programa se OF.  
+3.  Enviar una **IDebugProgramCreateEvent2** objeto de evento para notificar el SDM que la variable local **IDebugProgram2** objeto se creó para representar el sistema a la DE.  
   
-4.  Enviar un objeto de evento de [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) para notificar al SDM que un nuevo subproceso se crea para el proceso que arrancó.  
+4.  Enviar una [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objeto de evento para notificar el SDM que se crea un nuevo subproceso para el proceso que se inicia.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enviar los eventos necesarios](../../extensibility/debugger/sending-the-required-events.md)   
  [Habilitación de un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

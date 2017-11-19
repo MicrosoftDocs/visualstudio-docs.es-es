@@ -1,52 +1,53 @@
 ---
-title: "IDebugBoundBreakpoint2::GetState | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::GetState"
-helpviewer_keywords: 
-  - "Método GetState"
-  - "IDebugBoundBreakpoint2::GetState (método)"
+title: IDebugBoundBreakpoint2::GetState | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::GetState
+helpviewer_keywords:
+- GetState method
+- IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cdf9b86212d42f50cc676084a58e2b654fb11486
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::GetState
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el estado de esto limitan el punto de interrupción.  
+# <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
+Obtiene el estado de este punto de interrupción enlazado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetState(   
-   BP_STATE* pState  
+```cpp  
+HRESULT GetState(   
+   BP_STATE* pState  
 );  
 ```  
   
-```c#  
-int GetState(   
-   out enum_BP_STATE pState  
+```csharp  
+int GetState(   
+   out enum_BP_STATE pState  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pState`  
- \[out\]  Devuelve un valor de enumeración de [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) que describe el estado del punto de interrupción.  
+ [out] Devuelve un valor de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración que describe el estado del punto de interrupción.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CBoundBreakpoint` que expone la interfaz de [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CBoundBreakpoint` objeto que expone la [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.  
   
 ```  
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)    
@@ -68,6 +69,6 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

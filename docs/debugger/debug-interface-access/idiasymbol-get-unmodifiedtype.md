@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_unmodifiedType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_unmodifiedType (método)"
+title: 'Idiasymbol:: Get_unmodifiedtype | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_unmodifiedType method
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a24b85ac16f9837a4e28674567341f00a993bf9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_unmodifiedType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera el tipo original para este símbolo.  Utilice cuando [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo.  
+# <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
+Recupera el tipo original de este símbolo. Debe usar cuando el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_unmodifiedType(   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_unmodifiedType(   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el tipo original de este símbolo.  
+ [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el tipo original de este símbolo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- El tipo actual es una modificación del tipo devuelto original.  El tipo original para un token puede determinar primero obtiene el tipo de token y después interrogando a ese tipo devuelto para el tipo original.  Observe que algunos símbolos pueden no tener un tipo y un tipo original.  
+## <a name="remarks"></a>Comentarios  
+ El tipo actual es una modificación del tipo original devuelto. Obteniendo primero el tipo del símbolo de y, a continuación, interrogar que devuelve el tipo para el tipo original se puede determinar el tipo original para un símbolo. Tenga en cuenta que algunos símbolos no pueden tener un tipo modificado del tipo original.  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia100.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Update Bookmark Text | Microsoft Docs'
+title: "Cómo: actualizar mediante programación el texto de marcador | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,73 +15,77 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
 ms.assetid: 2324164d-2538-4695-9aaf-7285ce403be3
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b7da0b4b6bf1c9f23d12214135761d2bb7d18f8b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ee78ad2aac4ff9cefcb3291d3b1b2010d8a1c26c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>How to: Programmatically Update Bookmark Text
-  You can insert text into a placeholder bookmark in a Microsoft Office Word document so that you can retrieve the text at a later time, or to replace text in a bookmark. If you are developing a document-level customization, you can also update text in a <xref:Microsoft.Office.Tools.Word.Bookmark> control that is bound to data. For more information, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+# <a name="how-to-programmatically-update-bookmark-text"></a>Cómo: Actualizar texto de marcador mediante programación
+  Puede insertar texto en un marcador de marcador de posición de un documento de Microsoft Office Word para poder recuperar el texto posteriormente o reemplazar el texto de un marcador. Si está desarrollando una personalización de nivel de documento, también puede actualizar el texto de un control <xref:Microsoft.Office.Tools.Word.Bookmark> que está enlazado a datos. Para obtener más información, consulte [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- The bookmark object can be one of two types:  
+ El objeto de marcador puede ser de uno de los dos tipos indicados a continuación:  
   
--   A <xref:Microsoft.Office.Tools.Word.Bookmark> host control.  
+-   Un control host <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> controls extend native <xref:Microsoft.Office.Interop.Word.Bookmark> objects by enabling data binding and exposing events. For more information about host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+     Los controles <xref:Microsoft.Office.Tools.Word.Bookmark> amplían los objetos nativos <xref:Microsoft.Office.Interop.Word.Bookmark> habilitando el enlace de datos y exponiendo los eventos. Para más información sobre los controles host, consulte [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
--   A native <xref:Microsoft.Office.Interop.Word.Bookmark> object.  
+-   Un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark> objects do not have events or data binding capabilities.  
+     Los objetos <xref:Microsoft.Office.Interop.Word.Bookmark> no tienen funcionalidad de enlace de datos o eventos.  
   
- When you assign text to a bookmark, the behavior differs between a <xref:Microsoft.Office.Interop.Word.Bookmark> and a <xref:Microsoft.Office.Tools.Word.Bookmark>. For more information, see [Bookmark Control](../vsto/bookmark-control.md).  
+ Cuando se asigna texto a un marcador, el comportamiento de los objetos <xref:Microsoft.Office.Interop.Word.Bookmark> y <xref:Microsoft.Office.Tools.Word.Bookmark> es diferente. Para obtener más información, consulta [Bookmark Control](../vsto/bookmark-control.md).  
   
-## <a name="using-host-controls"></a>Using Host Controls  
+## <a name="using-host-controls"></a>Usar controles host  
   
-#### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>To update bookmark contents using a Bookmark control  
+#### <a name="to-update-bookmark-contents-using-a-bookmark-control"></a>Para actualizar el contenido del marcador usando un control Bookmark  
   
-1.  Create a procedure that takes a `bookmark` argument for the name of the bookmark, and a `newText` argument for the string to assign to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> property.  
-  
-    > [!NOTE]  
-    >  Assigning text to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> or <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> property of a <xref:Microsoft.Office.Tools.Word.Bookmark> control does not cause the bookmark to be deleted.  
-  
-     [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]  [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]  
-  
-2.  Assign the *newText* string to the <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> property of the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
-  
-     [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]  [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]  
-  
-## <a name="using-word-objects"></a>Using Word Objects  
-  
-#### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>To update bookmark contents using a Word Bookmark object  
-  
-1.  Create a procedure that has a `bookmark` argument for the name of the <xref:Microsoft.Office.Interop.Word.Bookmark>, and a `newText` argument for the string to assign to the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of the bookmark.  
+1.  Cree un procedimiento que tome un argumento `bookmark` para el nombre del marcador y un argumento `newText` para la cadena que se va a asignar a la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A>.  
   
     > [!NOTE]  
-    >  Assigning text to a native Word <xref:Microsoft.Office.Interop.Word.Bookmark> object causes the bookmark to be deleted.  
+    >  Asignar texto a la propiedad <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> o <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> de un control <xref:Microsoft.Office.Tools.Word.Bookmark> no hace que se elimine el marcador.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]  [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]  
+     [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
+     [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]  
   
-2.  Assign the *newText* string to the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of the bookmark, which automatically deletes the bookmark. Then re-add the bookmark to the <xref:Microsoft.Office.Interop.Word.Bookmarks> collection.  
+2.  Asigne el *TextoNuevo* de cadena para el <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propiedad de la <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     The following code example can be used in a document-level customization.  
+     [!code-vb[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#64)]
+     [!code-csharp[Trin_VstcoreWordAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#64)]  
   
-     [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]  [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]  
+## <a name="using-word-objects"></a>Usar objetos de Word  
   
-     The following code example can be used in a VSTO Add-in. This example uses the active document.  
+#### <a name="to-update-bookmark-contents-using-a-word-bookmark-object"></a>Para actualizar el contenido del marcador usando un objeto Bookmark de Word  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
+1.  Cree un procedimiento que tenga un argumento `bookmark` para el nombre del objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un argumento `newText` para la cadena que se va a asignar a la propiedad <xref:Microsoft.Office.Interop.Word.Range.Text%2A> del marcador.  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Insert Text into Word Documents](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Word Object Model Overview](../vsto/word-object-model-overview.md)   
- [Bookmark Control](../vsto/bookmark-control.md)  
+    > [!NOTE]  
+    >  Si se asigna texto a un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo de Word, se elimina el marcador.  
+  
+     [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
+     [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]  
+  
+2.  Asigne el *TextoNuevo* de cadena para el <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propiedad del marcador, lo cual elimina automáticamente el marcador. A continuación, vuelva a agregar el marcador a la colección <xref:Microsoft.Office.Interop.Word.Bookmarks>.  
+  
+     El siguiente ejemplo de código se puede usar en una personalización de nivel de documento.  
+  
+     [!code-vb[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#66)]
+     [!code-csharp[Trin_VstcoreWordAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#66)]  
+  
+     El siguiente ejemplo de código se puede usar en un complemento de VSTO. En este ejemplo se usa el documento activo.  
+  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#66)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
+  
+## <a name="see-also"></a>Vea también  
+ [Cómo: insertar texto en documentos de Word mediante programación](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
+ [Bookmark (Control)](../vsto/bookmark-control.md)  
   
   

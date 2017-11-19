@@ -1,86 +1,88 @@
 ---
-title: "Plantilla de proyecto VSIX | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "implementar paquetes"
-  - "publicar la extensión"
+title: Plantilla de proyecto VSIX | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- deploy packages
+- publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 24a2937b37aa339f85e197f6ff2bb49cbb0ce86f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Plantilla de proyecto VSIX
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede usar la plantilla de proyecto de VSIX para ajustar una o más extensiones de Visual Studio en un proyecto VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  
+# <a name="vsix-project-template"></a>Plantilla de proyecto VSIX
+Puede utilizar la plantilla de proyecto de VSIX que incluya una o más extensiones de Visual Studio en un proyecto VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  
   
  Implementación de VSIX admite VSPackages, ensamblados, componentes MEF, plantillas de proyecto, plantillas de elementos, controles de cuadro de herramientas y tipos de extensión personalizados.  
   
 > [!NOTE]
->  Para usar proyectos VSIX, debe instalar el SDK de Visual Studio. Para obtener más información sobre el SDK de Visual Studio, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+>  Para usar proyectos VSIX, debe instalar el SDK de Visual Studio. Para obtener más información sobre el SDK de Visual Studio, vea [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-## Dónde encontrar la plantilla de proyecto VSIX  
- La plantilla de proyecto VSIX está disponible en la **nuevo proyecto** cuadro de diálogo. Expanda el **Visual Basic** nodo o **Visual C\#** nodo y, a continuación, elija **extensibilidad**.  
+## <a name="where-to-find-the-vsix-project-template"></a>Dónde encontrar la plantilla de proyecto VSIX  
+ La plantilla de proyecto VSIX está disponible en la **nuevo proyecto** cuadro de diálogo. Expanda el **Visual Basic** nodo o la **Visual C#** nodo y, a continuación, elija **extensibilidad**.  
   
 > [!TIP]
->  Debe asegurarse de que .NET Framework 4.5 o posterior, se especifica en la lista desplegable en la parte superior de la **nuevo proyecto** cuadro de diálogo.  
+>  Debe asegurarse de que .NET Framework 4.5 o versiones posteriores, se especifica en la lista desplegable en la parte superior de la **nuevo proyecto** cuadro de diálogo.  
   
-## Usos de la plantilla de proyecto VSIX  
+## <a name="uses-of-the-vsix-project-template"></a>Usos de la plantilla de proyecto VSIX  
  La plantilla de proyecto VSIX tiene dos usos principales:  
   
--   Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que no dispone de soporte técnico VSIX.  
+-   Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que aún no dispone de soporte técnico VSIX.  
   
--   Para ajustar los resultados de varias extensiones en un paquete de distribución.  
+-   Para ajustar las salidas de varias extensiones en un paquete de distribución.  
   
- No es necesario utilizar la plantilla de proyecto de VSIX para implementar VSPackages u otros tipos de extensiones que disponen de VSIX.  
+ No es necesario usar la plantilla de proyecto de VSIX para implementar paquetes VSPackage u otros tipos de extensiones que ya tienen VSIX admite.  
   
-## Empaquetar una extensión en un proyecto VSIX vacío  
- Puede empaquetar una extensión existente o una extensión que no tiene todavía VSIX admiten ajustando en un proyecto VSIX vacío. La extensión se ajuste debe ser de un tipo que es compatible con la [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empaquetar una extensión en un proyecto VSIX vacío  
+ Puede empaquetar una extensión existente o una extensión que no tenga ya VSIX admite incluyéndolo en un proyecto VSIX vacío. La extensión que se va a encapsular debe ser de un tipo que sea compatible con la [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
-#### Para empaquetar una extensión utilizando un proyecto VSIX  
+#### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Para empaquetar una extensión utilizando un proyecto VSIX  
   
 1.  Compile los proyectos que forman la extensión.  
   
-2.  Cree un proyecto VSIX utilizando la **proyecto VSIX** plantilla.  
+2.  Crear un proyecto VSIX mediante la **proyecto VSIX** plantilla.  
   
      Se abre Source.Extension.vsixmanifest en **Diseñador de manifiestos**.  
   
-3.  En la pestaña **Activos**, elija el botón **Nuevo**.  
+3.  En el **activos** ficha, elija la **New** botón.  
   
-     Aparecerá el cuadro de diálogo **Agregar nuevo activo**.  
+     El **Agregar nuevo activo** aparece el cuadro de diálogo.  
   
-4.  En el **tipo** elija el tipo de extensión que se va a agregar.  
+4.  En el **tipo** lista, elija el tipo de extensión que se va a agregar.  
   
-5.  Para agregar un elemento de extensión o contenido que se incluye en la solución actual \(por ejemplo, una plantilla de elemento o un ensamblado compilado\), realice los pasos siguientes:  
+5.  Para agregar un elemento de contenido o de extensiones que se incluye en la solución actual (por ejemplo, una plantilla de elementos o un ensamblado compilado), realice los pasos siguientes:  
   
-    1.  En la lista **Origen**, elija **Un proyecto de la solución actual**.  
+    1.  En el **origen** elija **un proyecto de la solución actual**.  
   
-    2.  En el **proyecto** elija el nombre de la extensión.  
+    2.  En el **proyecto** lista, elija el nombre de la extensión.  
   
-    3.  En el **incrustar en esta carpeta** escriba el nombre de una carpeta en la que desea incrustar el recurso y, a continuación, elija la **Aceptar** botón.  
+    3.  En el **insertar en esta carpeta** cuadro, escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija la **Aceptar** botón.  
   
-6.  Para agregar una extensión o un elemento de contenido que no está incluido en la solución actual, realice los pasos siguientes:  
+6.  Para agregar una extensión o un elemento de contenido que no se incluye en la solución actual, realice los pasos siguientes:  
   
     1.  En el **origen** cuadro de lista, elija **archivo en filesystem**.  
   
-    2.  En el **ruta** campo, escriba la ruta de acceso completa al archivo de extensión compilado o comprimido o utilizar el **Examinar** botón para examinar el archivo.  
+    2.  En el **ruta de acceso** campo, escriba la ruta de acceso completa para el archivo de extensión compiladas o comprimidos o use la **examinar** botón para buscar el archivo.  
   
-    3.  En el **incrustar en esta carpeta** escriba el nombre de una carpeta en la que desea incrustar el recurso y, a continuación, elija la **Aceptar** botón.  
+    3.  En el **insertar en esta carpeta** cuadro, escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija la **Aceptar** botón.  
   
-7.  Si desea que el paquete debe incluir extensiones adicionales, agregar de la misma manera.  
+7.  Si desea que el paquete debe incluir extensiones adicionales, agregarlos de la misma manera.  
   
 8.  Compile la solución.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera un archivo .vsix que contiene un archivo de manifiesto de VSIX, un archivo \[Content\_Types\] .xml y todos los activos de extensión que agrega al proyecto.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]genera un archivo .vsix que contenga un archivo de manifiesto de VSIX, un archivo [Content_Types] .xml y de todos los activos de extensión que agregan al proyecto.  
   
-## Vea también  
- [Referencia de esquema 2.0 extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

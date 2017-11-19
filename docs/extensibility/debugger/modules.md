@@ -1,33 +1,35 @@
 ---
-title: "M&#243;dulos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "módulos"
-  - "depurar [SDK de depuración], módulos"
+title: "Módulos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- modules
+- debugging [Debugging SDK], modules
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c363ea8809449118782597e68f60637f296af89f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# M&#243;dulos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En términos de arquitectura del depurador, **un módulo**:  
+# <a name="modules"></a>Módulos
+En cuanto a la arquitectura del depurador, una **módulo**:  
   
--   Es un contenedor físico de código, como un archivo ejecutable o DLL.  
+-   Es un contenedor físico del código, como un archivo ejecutable o un archivo DLL.  
   
--   Puede volver a cargar los símbolos y describirse.  Las descripciones de módulo se muestran en la ventana módulos del IDE.  
+-   Puede volver a cargar sus símbolos y autodescriptivos. Descripciones del módulo se muestran en la ventana módulos del IDE.  
   
--   Se representa mediante una interfaz de [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , crea un motor de depuración para describir el módulo.  
+-   Se representa mediante un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interfaz, creada por un motor de depuración para describir el módulo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

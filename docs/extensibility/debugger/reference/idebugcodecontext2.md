@@ -1,59 +1,59 @@
 ---
-title: "IDebugCodeContext2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCodeContext2"
-helpviewer_keywords: 
-  - "Interfaz IDebugCodeContext2"
+title: IDebugCodeContext2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCodeContext2
+helpviewer_keywords: IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e9e003372e390d7e807f314555310c167bf011a8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCodeContext2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Esta interfaz representa la posición inicial de una instrucción de código.  Para la mayoría de las arquitecturas en tiempo de ejecución actual, un contexto del código se puede considerar como dirección en una secuencia de la ejecución del programa.  
+# <a name="idebugcodecontext2"></a>IDebugCodeContext2
+Esta interfaz representa la posición inicial de una instrucción de código. Para la mayoría de tiempo de ejecución de arquitecturas en la actualidad, un contexto de código puede considerarse como una dirección de flujo de ejecución de un programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugCodeContext2 : IDebugMemoryContext2  
+IDebugCodeContext2 : IDebugMemoryContext2  
 ```  
   
-## Notas para los implementadores  
- El motor de depuración implementa esta interfaz para relacionar la posición de una instrucción de código con una posición del documento.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El motor de depuración implementa esta interfaz para relacionar la posición de una instrucción de código a una posición del documento.  
   
-## Notas para los llamadores  
- Los métodos de las interfaces devuelven esta interfaz, lo más normalmente, [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md).  También se usa mayoritariamente con la interfaz de [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) así como en la información de resolución de punto de interrupción.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Métodos en muchas interfaces devuelven esta interfaz, normalmente, [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md). También se utiliza mucho con el [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) interfaz así como en la información de resolución de punto de interrupción.  
   
-## métodos en el orden de Vtable  
- Además de los métodos de la interfaz de [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) , esta interfaz implementa los siguientes métodos:  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Además de los métodos en el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaz, esta interfaz implementa los métodos siguientes:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Obtiene el contexto del documento que corresponde al contexto activo del código.|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Obtiene la información del lenguaje para este contexto de código.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|Obtiene el contexto del documento que corresponde al contexto de código activo.|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Obtiene la información de idioma para este contexto de código.|  
   
-## Comentarios  
- La diferencia clave entre una interfaz de `IDebugCodeContext2` y una interfaz de [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) es que `IDebugCodeContext2` siempre es instrucción\-alineado.  Esto significa que `IDebugCodeContext2` apunta siempre al principio de una instrucción, mientras que `IDebugMemoryContext2` puede señalar a cualquier byte de memoria en la arquitectura en tiempo de ejecución.  `IDebugCodeContext2` se incrementa en instrucciones en lugar de por el tamaño de almacenamiento básico \(normalmente byte\).  
+## <a name="remarks"></a>Comentarios  
+ La diferencia clave entre una `IDebugCodeContext2` interfaz y un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaz es que un `IDebugCodeContext2` siempre están alineados a la instrucción. Esto significa que un `IDebugCodeContext2` siempre señala al principio de una instrucción, mientras que un `IDebugMemoryContext2` pueden señalar a los bytes de memoria de la arquitectura del tiempo de ejecución. `IDebugCodeContext2`se incrementa por instrucciones en lugar de por el tamaño de almacenamiento de información básica (normalmente bytes).  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
  [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   

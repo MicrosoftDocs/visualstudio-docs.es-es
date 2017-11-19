@@ -1,29 +1,30 @@
 ---
-title: "Men&#250;s contextuales | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK] heredados - menús contextuales"
+title: "Menús contextuales | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - context menus
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d56be2fecca89d3cfb5a7b12982a0de7f61d457f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Men&#250;s contextuales
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Se muestran los menús contextuales cuando los clic con el botón secundario de un usuario en un área activa del área cliente y claros cuando se suelta el botón secundario del mouse.  
+# <a name="context-menus"></a>Menús contextuales
+Menús contextuales se muestran cuando un usuario hace clic con un botón en una región activa del área cliente y borrar cuando se suelta el botón secundario del mouse.  
   
-## Menús contextuales del editor  
- Interceptando `ECMD_SHOWCONTEXTMENU`, el servicio de lenguaje puede controlar los menús contextuales que se mostrarán en el editor.  Para mostrar dispone del menú contextual, utilice este comando cuando se pasan en <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> llamando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>.  Si no controla este comando, después el IDE muestra un menú contextual estándar proporcionado para el editor.  También puede controlar el contenido del menú contextual de por\-marcador.  Para obtener más información al respecto, vea [Uso de marcadores de texto con la API heredada](../extensibility/using-text-markers-with-the-legacy-api.md) y [Intercepción de comandos del servicio de lenguaje heredado](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
+## <a name="editor-context-menus"></a>Menús contextuales del editor  
+ Interceptando `ECMD_SHOWCONTEXTMENU`, el servicio de lenguaje puede controlar los menús contextuales que aparecerá en el editor. Para mostrar su propio menú contextual, controlar este comando cuando se pasa a la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A>. Si no controla este comando, el IDE muestra un menú contextual estándar proporcionado para el editor. También puede controlar el contenido del menú contextual en una base por marcador. Para obtener más información sobre esto, consulte [usar marcadores de texto con la API heredado](../extensibility/using-text-markers-with-the-legacy-api.md) y [interceptando comandos del servicio de lenguaje heredado](../extensibility/internals/intercepting-legacy-language-service-commands.md).  
   
-## Vea también  
- [Desarrollar un servicio de lenguaje](../extensibility/internals/developing-a-legacy-language-service.md)   
- [Comandos y menús de extensión](../extensibility/extending-menus-and-commands.md)
+## <a name="see-also"></a>Vea también  
+ [Desarrollar un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)

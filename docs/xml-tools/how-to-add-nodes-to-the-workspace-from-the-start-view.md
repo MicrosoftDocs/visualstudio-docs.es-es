@@ -1,35 +1,36 @@
 ---
-title: "C&#243;mo: Agregar nodos al &#225;rea de trabajo desde la vista Inicio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: agregar nodos al área de trabajo desde la vista inicio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0c3f1572306dfe26d50d51ba0e83037debaf1c7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar nodos al &#225;rea de trabajo desde la vista Inicio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este tema se describe cómo agregar nodos globales al [Área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde la [Vista Inicio](../xml-tools/start-view.md).  
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Cómo: Agregar nodos al área de trabajo desde la vista Inicio
+Este tema describe cómo agregar nodos globales para la [área de trabajo del Diseñador de esquemas de XML](../xml-tools/xml-schema-designer-workspace.md) desde el [vista inicio](../xml-tools/start-view.md).  
   
-### Para agregar nodos al área de trabajo desde la vista Inicio  
+### <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Para agregar nodos al área de trabajo desde la vista Inicio  
   
-1.  Siga los pasos de [Cómo: Crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Siga los pasos de [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Haga clic con el botón secundario del mouse en el Editor XML y seleccione **Diseñador de vistas**.  
+2.  Haga clic en el Editor XML y seleccione **Diseñador de vistas**.  
   
      Aparecerá la vista Inicio.  
   
-     En la sección **Detalles del conjunto de esquemas**, observe que hay dos \(**2**\) **Tipos complejos globales**.  
+     En el **detalles del conjunto de esquemas** sección, tenga en cuenta que hay dos (**2**) **tipos complejos globales**.  
   
-3.  Haga clic en el vínculo **agregar** situado a la derecha del título **Tipos complejos globales**.  
+3.  Haga clic en el **agregar** vínculo a la derecha de la **tipos complejos globales** encabezado.  
   
      Los nodos de tipo complejo `USAddress` y `PurchaseOrderType` aparecerán en la superficie de diseño de la vista Gráfico.

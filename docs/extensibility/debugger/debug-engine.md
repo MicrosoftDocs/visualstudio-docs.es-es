@@ -1,44 +1,45 @@
 ---
-title: "Motor de depuraci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "motores de depuración"
+title: "Motor de depuración | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Motor de depuraci&#243;n
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un motor de depuración \(DE\) ejecuta el intérprete o el sistema operativo para proporcionar servicios de depuración como control de ejecución, puntos de interrupción, y evaluación de la expresión.  El OF es responsable de supervisar el estado de un programa que se depura.  Para hacer realizar esto, el OF utiliza los métodos están disponibles en tiempo de ejecución compatible, si de CPU o de las API proporcionadas por el tiempo de ejecución.  
+# <a name="debug-engine"></a>Motor de depuración
+Un motor de depuración (Alemania) funciona con el sistema operativo o intérprete para proporcionar servicios de depuración como la evaluación de expresión, control y los puntos de interrupción de ejecución. La DE es responsable de supervisar el estado de un programa que se está depurando. Para lograr esto, la DE utiliza los métodos que sean a su disposición en el tiempo de ejecución admitida, si de la CPU o de la API proporcionada por el runtime.  
   
- Por ejemplo, los mecanismos \(CLR\) de fuentes de Common Language Runtime para controlar un programa en ejecución a través de interfaces de ICorDebugXXX.  Un OF que admite CLR utiliza las interfaces adecuadas de ICorDebugXXX para realizar el seguimiento de un programa de código administrado que se está depurando.  A continuación se comunica cualquier cambio de estado al administrador \(SDM\) de la depuración de sesión, que transmite a tal información [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  
+ Por ejemplo, common language runtime (CLR) proporciona mecanismos para supervisar un programa en ejecución a través de las interfaces de ICorDebugXXX. Un Alemania que admita CLR usa las interfaces de ICorDebugXXX adecuadas para realizar un seguimiento de un programa de código administrado que se está depurando. Se comunica, a continuación, los cambios de estado para el Administrador de depuración de sesión (SDM), que reenvía dicha información a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
 > [!NOTE]
->  Un motor de depuración tiene como destino un runtime concreto, es decir, el sistema en el que el programa que se ejecuta depurando.  CLR es el tiempo de ejecución para el código administrado, y el runtime de Win32 es para las aplicaciones para Windows nativas.  Si el lenguaje que cree puede el destino uno de estos dos runtime, fuentes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ya los motores necesarios de depuración.  Todo lo que tiene que implementar es evaluador de expresiones.  
+>  Un motor de depuración tiene como destino un runtime concreto, es decir, el sistema en el que el programa que se está depurando se ejecuta. CLR es el tiempo de ejecución para código administrado y el tiempo de ejecución de Win32 es para aplicaciones nativas de Windows. Si el idioma se crea uno de estos dos tiempos de ejecución, puede tener como destino [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ya proporciona los motores de depuración es necesario. Lo único que debe implementar es un evaluador de expresiones.  
   
-## Funcionamiento del motor de depuración  
- Los servicios de supervisión se implementan a través de interfaces y pueden producir el paquete de depuración para la transición entre distintos modos operativos.  Para obtener más información, vea [Modos de funcionamiento](../../extensibility/debugger/operational-modes.md).  Normalmente hay sólo un OF implementation el entorno en tiempo de ejecución.  
+## <a name="debug-engine-operation"></a>Funcionamiento del motor de depuración  
+ Los servicios de supervisión se implementan a través de las interfaces de Alemania y pueden hacer que el paquete de depuración para la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos de funcionamiento](../../extensibility/debugger/operational-modes.md). Normalmente hay sólo una implementación DE por cada entorno de tiempo de ejecución.  
   
 > [!NOTE]
->  Cuando hay OF independiente implementations para Transact\-SQL y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] comparten un único OF.  
+>  Mientras haya implementaciones DE independientes para Transact-SQL y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript y [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] comparten un único Alemania.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de depuración permisos depurar los motores para ejecutar una de dos maneras: en el mismo proceso que el shell de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], o en el mismo proceso que el programa de destino que se depura.  El último formulario aparece normalmente cuando el proceso que se está depurando es realmente una ejecución del script en un intérprete, y el motor de depuración debe tener conocimientos más el intérprete para controlar el script.  Observe que en este caso, este es realmente un runtime; los motores de depuración son para las implementaciones concretas en tiempo de ejecución.  Además, la implementación de un único OF puede dividirse a través de los límites de procesos y de equipo \(por ejemplo, depuración remota\).  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]habilita la depuración depurar motores para ejecutar una de dos maneras: en el mismo proceso que el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell o en el mismo proceso que el programa de destino que se está depurando. El segundo formulario normalmente se produce cuando el proceso que se está depurando es realmente un script que se ejecuta en un intérprete, y el motor de depuración debe tener un conocimiento profundo del intérprete de con el fin de supervisar la secuencia de comandos. Tenga en cuenta que en este caso, el intérprete es realmente un tiempo de ejecución; motores de depuración son para las implementaciones en tiempo de ejecución específica. Además, la implementación de un único DE se puede dividir en los límites del procesos o equipos (por ejemplo, depuración remota).  
   
- El OF expone [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que las interfaces de depuración.  Toda la comunicación es con COM.  Si el OF está en proceso cargado, fuera de proceso, o en otro equipo, no afecta a la comunicación componente.  
+ La muestra DE la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaces de depuración. Es toda la comunicación a través de COM. Si se carga el Alemania en proceso, fuera de proceso o en otro equipo, no afecta la comunicación de componentes.  
   
- El OF funciona con un componente del evaluador de expresiones para habilitar el OF por ese runtime determinado para entender la sintaxis de expresiones.  El OF también funciona con un componente de controlador de símbolos para tener acceso a información de depuración simbólica generada por el compilador del lenguaje.  Para obtener más información, vea [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md) y [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md).  
+ La DE funciona con un componente de evaluador de expresiones para habilitar el Alemania durante ese tiempo de ejecución determinado comprender la sintaxis de expresiones. La DE también funciona con un componente de controlador de símbolos para tener acceso a la información de depuración simbólica generada por el compilador de lenguaje. Para obtener más información, consulte [evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md) y [proveedor símbolo](../../extensibility/debugger/symbol-provider.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)   
  [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)   
  [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)

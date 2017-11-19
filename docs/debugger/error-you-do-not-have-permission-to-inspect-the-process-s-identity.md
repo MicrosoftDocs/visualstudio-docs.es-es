@@ -1,69 +1,70 @@
 ---
-title: "Error: Visual Studio no tiene privilegios suficientes para inspeccionar la identidad del proceso | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Error: No tiene permiso para inspeccionar el proceso &#39; identidad s | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 6233d060-85b8-42be-ae5f-bde7e1d0f241
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e168af69b04fb152e054860b2a6bd2084a349ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Error: Visual Studio no tiene privilegios suficientes para inspeccionar la identidad del proceso
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-No tiene permiso para inspeccionar la identidad del proceso.Probablemente se deba a la configuración del sistema.  
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Error: No tiene permiso para inspeccionar el proceso &#39; identidad s
+No tiene permiso para inspeccionar la identidad del proceso. Probablemente se deba a la configuración del sistema.  
   
- El depurador no pudo inspeccionar la identidad del proceso, información necesaria para depurar.  La causa más probable es que se haya deshabilitado Terminal Services.  Terminal Services está habilitado de forma predeterminada.  Siga estos pasos para volver a habilitar Terminal Services.  
+ El depurador no pudo inspeccionar la identidad del proceso, información necesaria para depurar. La causa más probable es que se haya deshabilitado Terminal Services. Terminal Services está habilitado de forma predeterminada. Siga estos pasos para volver a habilitar Terminal Services.  
   
-### Para habilitar Terminal Services  
+### <a name="to-enable-terminal-services"></a>Para habilitar Terminal Services  
   
-1.  Haga clic en **Inicio** y, a continuación, elija **Panel de control**.  
+1.  Haga clic en **iniciar** y, a continuación, elija **el Panel de Control**.  
   
-2.  En el Panel de control, elija **Cambiar a Vista clásica** si es necesario y, a continuación, haga doble clic en **Herramientas administrativas**.  
+2.  En el Panel de Control, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
   
-3.  En la ventana **Herramientas administrativas**, haga doble clic en **Administración de equipos**.  
+3.  En el **herramientas administrativas** ventana, haga doble clic en **administración de equipos**.  
   
-4.  En la ventana Administración de equipos, expanda el nodo **Servicios y Aplicaciones**.  
+4.  En la ventana Administración de equipos, expanda el **servicios y aplicaciones** nodo.  
   
-5.  En **Servicios y Aplicaciones**, haga clic en **Servicios**.  
+5.  En el **servicios y aplicaciones**, haga clic en **Services**.  
   
      Se mostrará una lista de servicios en el panel derecho.  
   
-6.  En la lista **Servicios**, haga clic con el botón secundario en **Terminal Services** y, a continuación, elija **Propiedades**.  
+6.  En el **servicios** lista, haga clic en **servicios de Terminal Server** y, a continuación, elija **propiedades**.  
   
-7.  En la ventana **Propiedades de Terminal Services**, vaya a la ficha **General** y establezca el **Tipo de inicio** en  **Manual**.  
+7.  En el **propiedades Terminal Services** ventana, vaya a la **General** pestaña y establecer **tipo de inicio** a **Manual**.  
   
 8.  Haga clic en **Aceptar**.  
   
 9. Reinicie el equipo.  
   
-     Este procedimiento no habilita automáticamente Escritorio remoto.  Si desea habilitar Escritorio remoto en su equipo, realice el siguiente procedimiento adicional.  
+     Este procedimiento no habilita automáticamente Escritorio remoto. Si desea habilitar Escritorio remoto en su equipo, realice el siguiente procedimiento adicional.  
   
-### Para habilitar Escritorio remoto  
+### <a name="to-enable-remote-desktop"></a>Para habilitar Escritorio remoto  
   
-1.  Haga clic en **Inicio** y, a continuación, haga clic con el botón secundario en **Mi PC**.  
+1.  Haga clic en **iniciar** y, a continuación, haga clic en **Mi PC**.  
   
-2.  Elija **Propiedades**.  
+2.  Elija **propiedades**.  
   
-     Se mostrará la ventana **Propiedades del sistema**.  
+     El **propiedades del sistema** se muestra la ventana.  
   
-3.  Haga clic en **Remoto**.  
+3.  Haga clic en **remoto**.  
   
-4.  En **Escritorio remoto**, seleccione **Permitir que los usuarios se conecten de manera remota a este equipo**.  
+4.  En **escritorio remoto**, seleccione **permiten a los usuarios conectarse remotamente a este equipo**.  
   
 5.  Haga clic en **Aceptar**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

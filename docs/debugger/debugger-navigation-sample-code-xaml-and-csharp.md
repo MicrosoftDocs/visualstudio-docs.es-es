@@ -1,33 +1,34 @@
 ---
-title: "C&#243;digo de ejemplo de navegaci&#243;n del depurador (Xaml y C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Código de ejemplo de navegación (Xaml y C#) del depurador | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 8f4266bc-4597-43ab-b620-8b08ea988a8e
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc03dff54a254c71729d702c887ed81c86b4d48d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;digo de ejemplo de navegaci&#243;n del depurador (Xaml y C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El código de este tema es el archivo de ejemplo para el tema [Navegar por una sesión de depuración \(Xaml y C\#\)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md).  
+# <a name="debugger-navigation-sample-code-xaml-and-c"></a>Código de ejemplo de navegación del depurador (Xaml y C#)
+El código de este tema es el archivo de ejemplo para la [navegar por una sesión de depuración (Xaml y C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) tema.  
   
-## Código de ejemplo  
+## <a name="sample-code"></a>Código de ejemplo  
   
-```c#  
+```CSharp  
 public MainPage()  
 {  
     InitializeComponent();  

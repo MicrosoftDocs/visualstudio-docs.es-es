@@ -1,70 +1,70 @@
 ---
-title: "IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromContext"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromContext (método)"
+title: IDebugSymbolProvider::GetAddressesFromContext | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetAddressesFromContext
+helpviewer_keywords: IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d2499fb1cca7dcbbf278d00c0aac205774d3cb75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetAddressesFromContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método asigna un contexto del documento en una matriz de direcciones de depuración.  
+# <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
+Este método asigna un contexto de documento en una matriz de direcciones de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetAddressesFromContext(   
-   IDebugDocumentContext2* pDocContext,  
-   BOOL                    fStatmentOnly,  
-   IEnumDebugAddresses**   ppEnumBegAddresses,  
-   IEnumDebugAddresses**   ppEnumEndAddresses  
+```cpp  
+HRESULT GetAddressesFromContext(   
+   IDebugDocumentContext2* pDocContext,  
+   BOOL                    fStatmentOnly,  
+   IEnumDebugAddresses**   ppEnumBegAddresses,  
+   IEnumDebugAddresses**   ppEnumEndAddresses  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAddressesFromContext(  
-   IDebugDocumentContext2  pDocContext,  
-   bool                    fStatmentOnly,  
-   out IEnumDebugAddresses ppEnumBegAddresses,  
-   out IEnumDebugAddresses ppEnumEndAddresses  
+   IDebugDocumentContext2  pDocContext,  
+   bool                    fStatmentOnly,  
+   out IEnumDebugAddresses ppEnumBegAddresses,  
+   out IEnumDebugAddresses ppEnumEndAddresses  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pDocContext`  
- \[in\]  El contexto del documento.  
+ [in] El contexto del documento.  
   
  `fStatmentOnly`  
- \[in\]  Si es TRUE, límites que la depuración dirige a una sola instrucción.  
+ [in] Si es TRUE, limita las direcciones de depuración a una única instrucción.  
   
  `ppEnumBegAddresses`  
- \[out\]  Devuelve un enumerador para las direcciones de depuración que comienzan asociado a esta instrucción o línea.  
+ [out] Devuelve un enumerador para las direcciones iniciales de depuración asociada a esta instrucción o línea.  
   
  `ppEnumEndAddresses`  
- \[out\]  Devuelve un enumerador de [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) para las direcciones de depuración de cierre asociado a esta instrucción o línea.  
+ [out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Un contexto de documento indica normalmente un intervalo de líneas de código fuente.  Este método proporciona instrucciones de depuración inicial y final asociado a estas líneas.  Algunos lenguajes permiten instrucciones que abarcan varias líneas, o las que contiene más de una instrucción.  Este método proporciona un marcador para limitar las direcciones de depuración a una sola instrucción.  
+## <a name="remarks"></a>Comentarios  
+ Un contexto de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten las instrucciones que abarcan varias líneas o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración a una única instrucción.  
   
- Es posible que una sola instrucción tiene varias direcciones de depuración, como en el caso de las plantillas.  
+ Es posible que una sola instrucción tener varias direcciones de depuración, como en el caso de plantillas.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

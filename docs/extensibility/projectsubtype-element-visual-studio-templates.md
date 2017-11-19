@@ -1,72 +1,77 @@
 ---
-title: "ProjectSubType (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType"
-helpviewer_keywords: 
-  - "<ProjectSubType> (elemento) [plantillas de Visual Studio]"
-  - "ProjectSubType (elemento) [plantillas de Visual Studio]"
+title: ProjectSubType (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
+helpviewer_keywords:
+- ProjectSubType element [Visual Studio Templates]
+- <ProjectSubType> element [Visual Studio Templates]
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c42cfdd72207fdca7fbbe0b17b0f96f20066f098
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectSubType (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Clasifica la plantilla en una subcategoría del valor especificado en el elemento `ProjectType`.  
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (Elemento, Plantillas de Visual Studio)
+Clasifica la plantilla en una subcategoría del valor especificado en el `ProjectType` elemento.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<ProjectSubType >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
-## Atributos y elementos  
- Las siguientes secciones describen atributos, elementos secundarios y elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
  Este valor especifica la subcategoría de la plantilla.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  `ProjectSubType` es un elemento secundario opcional de `TemplateData`.  
   
- El elemento `ProjectSubType` proporciona una subcategoría del elemento [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md).  Este valor puede incluir:  
+ El `ProjectSubType` elemento proporciona una subcategoría a la [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Este valor puede incluir:  
   
--   `SmartDevice-NETCFv1`: especifica que la plantilla está destinada a la versión 1.0 de [!INCLUDE[Compact](../extensibility/includes/compact_md.md)].  
+-   `SmartDevice-NETCFv1`: Especifica que los destinos de plantilla la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 1.0.  
   
--   `SmartDevice-NETCFv2`: especifica que la plantilla está destinada a la versión 2.0 de [!INCLUDE[Compact](../extensibility/includes/compact_md.md)].  
+-   `SmartDevice-NETCFv2`: Especifica que los destinos de plantilla la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
   
- Si una plantilla contiene un elemento `ProjectType` con un valor de `Web`, el elemento `ProjectSubType` especifica el lenguaje de programación de la plantilla.  Este elemento puede tener los valores siguientes:  
+ Si una plantilla contiene un `ProjectType` elemento con un valor de `Web`, el `ProjectSubType` elemento especifica el lenguaje de programación de la plantilla. Este elemento puede tener los valores siguientes:  
   
--   `CSharp`: especifica que la plantilla cree un proyecto o elemento web de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+-   `CSharp`: Especifica que la plantilla crea una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento Web.  
   
--   `VisualBasic`: especifica que la plantilla cree un proyecto o elemento web de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+-   `VisualBasic`: Especifica que la plantilla crea una [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento Web.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto de una aplicación para dispositivos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] destinada a la versión 2.0 de [!INCLUDE[Compact](../extensibility/includes/compact_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dispositivo aplicación destinada a la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versión 2.0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -93,7 +98,7 @@ Clasifica la plantilla en una subcategoría del valor especificado en el element
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
- [ProjectType \(Elemento, Plantillas de Visual Studio\)](../extensibility/projecttype-element-visual-studio-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [ProjectType (Elemento, Plantillas de Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

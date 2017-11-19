@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptStats::GetStatEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptStats::GetStatEx | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptStats.GetStatEx
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptStats::GetStatEx"
+helpviewer_keywords: IActiveScriptStats::GetStatEx
 ms.assetid: f526f51d-8ab5-49ef-a8f7-ae0ac1cb46e4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptStats::GetStatEx
-Devuelve estadísticas personalizada del script.  
+# <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
+Devuelve una estadística de la secuencia de comandos personalizada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetStatEx(  
@@ -31,30 +34,30 @@ HRESULT GetStatEx(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guid`  
- \[in\] especifica que estadística a devolver.  La semántica de la estadística corresponde al GUID determinado es totalmente motor definido.  
+ [in] Especifica qué estadística para devolver. La semántica de cuál corresponde a un determinado GUID es completamente definido por el motor.  
   
  `pluHi`  
- \[out\] bits height 32 de un entero sin signo de 64 bits que representa la estadística.  
+ [out] Los 32 bits superiores de un entero de 64 bits sin signo que representa la estadística.  
   
  `pluLo`  
- \[out\] bits bajos de El 32 de un entero sin signo de 64 bits que representa la estadística.  
+ [out] Los 32 bits inferiores de un entero de 64 bits sin signo que representa la estadística.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|Este método no está implementado.|  
+|`E_NOTIMPL`|No se implementa el método.|  
   
-## Comentarios  
- Este método permite que un motor de script personalizado devuelve estadísticas significativas a un host de personalizadas.  
+## <a name="remarks"></a>Comentarios  
+ Este método permite usar un motor de secuencia de comandos personalizada devolver estadísticas significativas para un host personalizado.  
   
 > [!NOTE]
 >  Este método no está implementado actualmente.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
- [IActiveScriptStats \(Interfaz\)](../../winscript/reference/iactivescriptstats-interface.md)
+ [IActiveScriptStats (Interfaz)](../../winscript/reference/iactivescriptstats-interface.md)

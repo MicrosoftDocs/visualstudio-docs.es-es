@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f5f944dad46225a70192bbfb0dbd0d1dc6dc861a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d40de5bedbb0e77aee2a0dbed34f8dc22d3835c9
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Tutorial: Crear un SDK usando C# o Visual Basic
 En este tutorial, aprenderá a crear un SDK de biblioteca matemática simple mediante Visual C# y, a continuación, el SDK como una extensión de Visual Studio (VSIX) del paquete. Se realizarán los siguientes procedimientos:  
@@ -57,7 +42,8 @@ En este tutorial, aprenderá a crear un SDK de biblioteca matemática simple med
   
 5.  Cambiar el nombre de **Class1.cs** a **Arithmetic.cs** y actualícelo para que coincida con el código siguiente:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT 3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)][!code-vb[CreatingAnSDKUsingWinRT 3  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
 6.  En **el Explorador de soluciones**, abra el menú contextual para el **solución 'SimpleMath'** nodo y, a continuación, elija **Configuration Manager**.  
   
@@ -86,7 +72,7 @@ En este tutorial, aprenderá a crear un SDK de biblioteca matemática simple med
   
 6.  Reemplace el XML existente por el siguiente código XML:  
   
-     [!code-xml[CreatingAnSDKUsingWinRT n.º 1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
+     [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
 7.  En **el Explorador de soluciones**, elija la **SimpleMathVSIX** proyecto.  
   
@@ -245,7 +231,8 @@ En este tutorial, aprenderá a crear un SDK de biblioteca matemática simple med
   
 11. Actualizar MainPage.xaml.cs para que coincida con el código siguiente:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp 2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)][!code-vb[CreatingAnSDKUsingWinRTDemoApp 2  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
   
 12. Presione la tecla F5 para ejecutar la aplicación.  
   

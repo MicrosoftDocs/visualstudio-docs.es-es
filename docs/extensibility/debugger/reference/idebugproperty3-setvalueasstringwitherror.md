@@ -1,71 +1,71 @@
 ---
-title: "IDebugProperty3::SetValueAsStringWithError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
-helpviewer_keywords: 
-  - "IDebugProperty3::SetValueAsStringWithError"
+title: IDebugProperty3::SetValueAsStringWithError | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::SetValueAsStringWithError
+helpviewer_keywords: IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d713d4d29b0e7a0e51f998efe460ae75a8dbd0b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::SetValueAsStringWithError
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Establece el valor de esta propiedad y devuelve un mensaje de error, en caso necesario.  
+# <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
+Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT SetValueAsStringWithError(  
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout,  
-   BSTR*     errorString  
+HRESULT SetValueAsStringWithError(  
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout,  
+   BSTR*     errorString  
 );  
 ```  
   
-```c#  
-int SetValueAsStringWithError(  
-   string     pszValue,  
-   uint       dwRadix,  
-   uint       dwTimeout,  
-   out string errorString  
+```csharp  
+int SetValueAsStringWithError(  
+   string     pszValue,  
+   uint       dwRadix,  
+   uint       dwTimeout,  
+   out string errorString  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pszValue`  
- \[in\]  Valor que se establece.  
+ [in] Valor que se va a establecer.  
   
  `dwRadix`  
- \[in\]  El valor que se establece.  
+ [in] La base del valor que se va a establecer.  
   
  `dwTimeout`  
- \[in\]  El tiempo de espera del valor que se establezca \(`INFINITE` significa espera para siempre\).  
+ [in] La longitud de tiempo de espera para que el valor que se establecerá (`INFINITE` , espera indefinida).  
   
  `errorString`  
- \[out\]  Si se produjo un error que estableció el valor, éste contiene la razón del error.  
+ [out] Si se produjo un error al establecer el valor, esto es el motivo del error.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El valor de entrada podría ser una expresión que se evalúe.  
+## <a name="remarks"></a>Comentarios  
+ El valor de entrada podría ser una expresión que se debe evaluar.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CProperty** que expone la interfaz de [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CProperty** objeto que expone la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   
     LPCOLESTR in_szValue,  
     DWORD in_RADIX,  
@@ -167,5 +167,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

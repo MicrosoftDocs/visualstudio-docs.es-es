@@ -1,59 +1,58 @@
 ---
-title: "IDiaSourceFile::get_checksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSourceFile::get_checksum (método)"
+title: 'Idiasourcefile:: Get_checksum | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSourceFile::get_checksum method
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c2bcfbc701f6f4799a51d09fac4c4eb184e6f5d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSourceFile::get_checksum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-recupera los bytes de la suma de comprobación.  
+# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
+Recupera los bytes de la suma de comprobación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_checksum (   
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
+```C++  
+HRESULT get_checksum (   
+   DWORD  cbData,  
+   DWORD* pcbData,  
+   BYTE   data[]  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cbData`  
- \[in\]  Tamaño del búfer de datos, en bytes.  
+ [in] Tamaño del búfer de datos, en bytes.  
   
  `pcbData`  
- \[out\]  Devuelve el número de bytes de suma de comprobación.  Este parámetro no puede ser `NULL`.  
+ [out] Devuelve el número de bytes de la suma de comprobación. Este parámetro no puede ser `NULL`.  
   
  `data`  
- \[in, out\]  un búfer que se rellena con los bytes de la suma de comprobación.  Si este parámetro es `NULL`, después `pcbData` devuelve el número de bytes necesarios.  
+ [entrada, salida] Un búfer que se rellena con los bytes de la suma de comprobación. Si este parámetro es `NULL`, a continuación, `pcbData` devuelve el número de bytes necesarios.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Para determinar el tipo de algoritmo de suma de comprobación utilizado para generar los bytes de la suma de comprobación, llame al método de [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) .  
+## <a name="remarks"></a>Comentarios  
+ Para determinar el tipo de algoritmo de suma de comprobación que se usó para generar los bytes de la suma de comprobación, llame a la [idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) método.  
   
- La suma de comprobación se genera normalmente del archivo de código fuente para que los cambios en el archivo de código fuente se reflejan los cambios en los bytes de la suma de comprobación.  Si no coinciden los bytes de la suma de comprobación una suma de comprobación representado de la imagen carga de archivo, el archivo se debe considerar dañado o manipular.  
+ La suma de comprobación se suele generar desde la imagen del archivo de origen, por lo que los cambios en el archivo de código fuente se reflejan en los cambios en los bytes de la suma de comprobación. Si los bytes de la suma de comprobación no coincide con una suma de comprobación generado a partir de la imagen cargada del archivo, a continuación, se debe considerar el archivo dañado o alterado.  
   
- Las sumas de comprobación típicas nunca son más de 32 bytes de tamaño pero no se supone que el tamaño máximo de una suma de comprobación.  Establezca el parámetro de `data` a `NULL` para obtener el número de bytes necesarios para recuperar la suma de comprobación.  Después asigna un búfer de tamaño adecuado y llame a este método una vez más con el nuevo búfer.  
+ Las sumas de comprobación típicos nunca son más de 32 bytes de tamaño pero no se da por supuesto que es el tamaño máximo de una suma de comprobación. Establecer el `data` parámetro `NULL` para obtener el número de bytes necesarios para recuperar la suma de comprobación. A continuación, asignar un búfer del tamaño adecuado y llamar a este método una vez más con el nuevo búfer.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get\_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)
+ [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

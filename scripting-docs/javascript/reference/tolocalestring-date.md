@@ -1,64 +1,67 @@
 ---
-title: "toLocaleString (Date) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: toLocaleString (fecha) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 3472d7bd-b255-4804-8407-c4a1e419a5a3
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b6dc7b1f38f7e57d1c10f7197bb73b13b3545380
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toLocaleString (Date)
-Convierte una fecha en una cadena mediante la configuración regional actual o especificada.  
+# <a name="tolocalestring-date"></a>toLocaleString (Date)
+Convierte una fecha en una cadena mediante el uso de la configuración regional actual o especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.toLocaleString([locales][, options])   
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dateObj`  
- Requerido.  Objeto `Date` que se va a convertir.  
+ Obligatorio. La `Date` objeto que se va a convertir.  
   
  `locales`  
- Opcional.  Un matriz de cadenas de configuración regional que contienen una o más etiquetas de configuración regional o lenguaje.  Si incluye más de una cadena de la configuración regional, enumérelas en orden descendente de prioridad para de manera que la primera entrada se la configuración regional preferida.  Si omite este parámetro, se usa la configuración regional predeterminada del runtime de JavaScript.  
+ Opcional. Un matriz de cadenas de configuración regional que contienen una o más etiquetas de configuración regional o lenguaje. Si incluye más de una cadena de configuración regional, enumérelas por orden de prioridad descendente de manera que la primera entrada sea la configuración regional preferida. Si omite este parámetro, se usa la configuración regional predeterminada del runtime de JavaScript.  
   
  `options`  
- Opcional.  Un objeto que contiene una o más propiedades que especifican opciones de comparación.  
+ Opcional. Objeto que contiene una o varias propiedades que especifican opciones de comparación.  
   
-## Comentarios  
- A partir de Internet Explorer 11, `toLocaleString` utiliza `Intl.DateTimeFormat` internamente para crear comparaciones, lo que agrega compatibilidad para los parámetros `locales` y `options`.  Para obtener más información sobre estos parámetros, vea [Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md).  
+## <a name="remarks"></a>Comentarios  
+ A partir de Internet Explorer 11, `toLocaleString` utiliza `Intl.DateTimeFormat` internamente para las comparaciones se realizan, que agrega compatibilidad para la `locales` y `options` parámetros. Para obtener más información acerca de estos parámetros, consulte [Intl.DateTimeFormat](../../javascript/reference/intl-datetimeformat-object-javascript.md).  
   
 > [!IMPORTANT]
->  Los parámetros `locales` y `options` no se admiten en todos los modos de documento y versiones de explorador.  Para obtener más información, consulte la sección Requisitos.  
+>  Los parámetros `locales` y `options` no se admiten en todos los modos de documento o todas las versiones de explorador. Para obtener más información, consulte la sección Requisitos.  
   
- Cuando usa `toLocaleString` en modo "quirks", en modo de documento anterior y en modo de documento estándar de Internet Explorer 10:  
+ Al utilizar `toLocaleString` en el modo de documento estándar, en los modos de documento anteriores y en el modo no estándar de Internet Explorer 10:  
   
--   Devuelve un objeto `String` que contiene la fecha escrita en el formato largo predeterminado de la configuración regional actual.  
+-   Devuelve un `String` objeto que contiene la fecha escrita en formato largo predeterminado de la configuración regional actual.  
   
--   Para fechas comprendidas entre 1601 y 1999 d.C., se aplica formato a la fecha de acuerdo con la configuración regional del Panel de control del usuario.  
+-   Para las fechas entre 1601 y 1999 D.C., la fecha tiene el formato según la configuración regional del Panel de Control del usuario.  
   
 > [!NOTE]
->  Si omite el parámetro `locales`, utilice `toLocaleString` para mostrar solo los resultados a un usuario; nunca utilícelo para calcular valores desde un script, porque el resultado devuelto es específico del equipo.  
+>  Si se omite la `locales` parámetro, use `toLocaleString` solo para mostrar los resultados a un usuario; nunca utiliza para calcular los valores dentro de una secuencia de comandos, dado que el resultado devuelto es específico del equipo.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo, se muestra cómo utilizar el método `toLocaleString`.  
   
-```javascript  
+```JavaScript  
 function toLocaleStrDemo(){     
    var d, s;                      //Declare variables.  
    d = new Date();                //Create Date object.  
@@ -68,10 +71,10 @@ function toLocaleStrDemo(){
 }  
 ```  
   
-## Ejemplo  
- El ejemplo siguiente muestra cómo utilizar el método `toLocaleString` con opciones de configuración regional y comparación especificadas.  
+## <a name="example"></a>Ejemplo  
+ El ejemplo siguiente muestra cómo utilizar el método `toLocaleString` con una configuración regional concreta y opciones de comparación.  
   
-```javascript  
+```JavaScript  
 var date = new Date(Date.UTC(2013, 1, 1, 14, 0, 0));  
 var options = { weekday: "long", year: "numeric", month: "short",  
     day: "numeric" };  
@@ -90,12 +93,12 @@ document.write(date.toLocaleString("hi-IN", options));
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- Los parámetros `locales` y `options`:  
+ Parámetros `locales` y `options`:  
   
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Vea también  
- [toLocaleDateString \(Método, Date\)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toLocaleDateString (Método, Date)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)

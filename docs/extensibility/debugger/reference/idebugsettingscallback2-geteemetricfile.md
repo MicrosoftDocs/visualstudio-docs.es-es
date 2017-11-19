@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEEMetricFile"
+title: IDebugSettingsCallback2::GetEEMetricFile | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bee70cc78ab87d6277445cf3edd0f0bf786c97f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetEEMetricFile
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera el archivo métrica del evaluador de expresiones dado el nombre o la métrica.  
+# <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
+Recupera el archivo de métrica de evaluador de expresiones dado el nombre o la métrica.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricFile(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   BSTR*   pbstrValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   BSTR*   pbstrValue  
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetEEMetricFile(  
-   ref Guid   guidLang,  
-   ref Guid   guidVendor,  
-   string     pszMetric,  
-   out string pbstrValue  
+   ref Guid   guidLang,  
+   ref Guid   guidVendor,  
+   string     pszMetric,  
+   out string pbstrValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guidLang`  
- \[in\]  Identificador único del lenguaje de programación.  
+ [in] Identificador único del lenguaje de programación.  
   
  `guidVendor`  
- \[in\]  Identificador único del proveedor.  
+ [in] Identificador único del proveedor.  
   
  `pszMetric`  
- \[in\]  Nombre de la.  
+ [in] Nombre de la métrica.  
   
  `pbstrValue`  
- \[out\]  Devuelve el contenido del archivo métrica como cadena.  
+ [out] Devuelve el contenido del archivo métrico como una cadena.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

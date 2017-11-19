@@ -1,78 +1,79 @@
 ---
-title: "C&#243;mo: Seleccionar los esquemas XML que se van a usar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: seleccionar los esquemas XML que se utilizan | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 50077e430d6d9f273dd4cd3e247de3df043804c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Seleccionar los esquemas XML que se van a usar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El Editor XML proporciona una memoria caché de esquemas que está ubicada en el directorio %InstallDir%\\Xml\\Schemas.La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.  
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Cómo: Seleccionar los esquemas XML que se van a usar
+El Editor XML proporciona una caché de esquemas que está ubicada en el directorio %InstallDir%\Xml\Schemas. La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.  
   
- La propiedad de documento **Esquemas** se emplea para seleccionar uno o varios esquemas de lenguaje de definición de esquemas XML \(XSD\) que se usarán en la validación.Permite seleccionar esquemas de la caché de esquema o especificar un esquema que no está ubicado en la caché.  
+ El **esquemas** propiedad de documento se utiliza para seleccionar uno o más XML esquema definición XSD (lenguaje) que se van a usar. Permite seleccionar esquemas de la caché de esquema o especificar un esquema que no está ubicado en la caché.  
   
- Los esquemas especificados se guardan en el archivo oculto de opciones del usuario de la solución \(.suo\), junto con todas las demás propiedades de documento XML.Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.  
+ Los esquemas especificados se guardan en el archivo oculto de opciones del usuario de la solución (.suo), junto con todas las demás propiedades de documento XML. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.  
   
 > [!NOTE]
->  El editor puede realizar la validación mediante un esquema alineado o un esquema al que se haga referencia en el atributo `xsd:schemaLocation`.Para obtener más información, vea [Validación de documentos XML](../xml-tools/xml-document-validation.md).  
+>  El editor puede realizar la validación mediante un esquema alineado o un esquema al que se haga referencia en el atributo `xsd:schemaLocation`. Para obtener más información, consulte [validación de documentos XML](../xml-tools/xml-document-validation.md).  
   
-### Para seleccionar un esquema XML de la caché de esquema  
+### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Para seleccionar un esquema XML de la caché de esquema  
   
 1.  Abra un archivo en el Editor XML.  
   
-2.  En la ventana de propiedades del documento, haga clic en el botón del campo **Esquemas**.  
+2.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
   
-     Aparece el cuadro de diálogo **Esquemas XML**.En el cuadro de diálogo se muestran todos los esquemas con una extensión .xsd en la caché de esquema \(incluidos los esquemas a los que se hace referencia en el archivo catalog.xml\), así como los esquemas que se encuentren en la solución actual, que estén abiertos en Visual Studio, a los que se haga referencia en un atributo `xsd:schemaLocation` o a los que se haga referencia en la propiedad **Esquemas**.  
+     El **esquemas XML** se muestra el cuadro de diálogo. El cuadro de diálogo enumera todos los esquemas con una extensión .xsd en la caché de esquema (incluidos los esquemas que se hace referenciados en el archivo catalog.xml), y también cualquier esquema que se encuentra en la solución actual, se abre en Visual Studio, al que hace referencia en un `xsd:schemaLocation` de atributo, o al que hace referencia en el **esquemas** propiedad.  
   
 3.  Seleccione los esquemas que desea utilizar en la validación mediante una de las siguientes acciones:  
   
-    -   Seleccione un esquema que aparece en el cuadro de diálogo **Esquemas XML**, haga clic en la columna **Usar** y, a continuación, seleccione **Utilizar este esquema**.  
+    -   Seleccione un esquema que aparece en el **esquemas XML** cuadro de diálogo, haga clic en el **Use** columna y, a continuación, seleccione **utilizar este esquema**.  
   
-     \-o\-  
+     O bien  
   
-    -   Seleccione varios esquemas que aparecen en el cuadro de diálogo **Esquemas XML**, haga clic con el botón secundario y seleccione **Utilizar este esquema**.  
+    -   Seleccione varios esquemas que aparecen en la **esquemas XML** cuadro de diálogo, menú contextual y seleccione **utilizar este esquema**.  
   
 4.  Haga clic en **Aceptar**.  
   
-     La lista de esquemas seleccionados se copia de nuevo en la propiedad de documento **Esquemas**.  
+     La lista de esquemas seleccionados se copia en el **esquemas** propiedad del documento.  
   
-### Para agregar un esquema XML a la caché de esquema  
+### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Para agregar un esquema XML a la caché de esquema  
   
-1.  En la ventana de propiedades del documento, haga clic en el botón del campo **Esquemas**.  
+1.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
   
 2.  Haga clic en **Agregar**.  
   
-     De este modo se abre el cuadro de diálogo **Abrir esquema XSD**.  
+     Se abrirá la **Abrir esquema XSD** cuadro de diálogo.  
   
 3.  Busque y seleccione los esquemas que se van a agregar a la caché de esquema.  
   
-4.  Haga clic en **Abrir**.  
+4.  Haga clic en **abiertos**.  
   
-     El esquema se agrega a la caché de esquema y el valor de la columna **Usar** se establece en **Utilizar este esquema**.  
+     El esquema se agrega al esquema de caché y es el **Use** valor de la columna se establece en **utilizar este esquema**.  
   
-### Para eliminar un esquema XML de la caché de esquema  
+### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Para eliminar un esquema XML de la caché de esquema  
   
-1.  En la ventana de propiedades del documento, haga clic en el botón del campo **Esquemas**.  
+1.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.  
   
-2.  Seleccione el esquema que desee quitar y haga clic en **Quitar**.  
+2.  Seleccione el esquema que desea quitar y, a continuación, haga clic en **quitar**.  
   
      El esquema se quita de la caché de esquema en memoria, pero no del sistema de archivos.  
   
     > [!NOTE]
-    >  Si todavía existe una referencia al esquema a través de un atributo `schemaLocation` o una coincidencia con `targetNamespace`, entonces **Quitar** no funcionará en esta situación debido a una asociación automática.En este caso, se recomienda marcar el esquema como **No utilizar esquemas seleccionados** en la columna **Usar**.  
+    >  Si todavía existe una referencia al esquema a través de un `schemaLocation` atributo o una coincidencia con `targetNamespace` , a continuación, **quitar** no funcionará en esta situación debido a una asociación automática. En este caso, se recomienda que marque el esquema como **no utilizar esquemas seleccionados** en el **usar** columna.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Caché de esquema](../xml-tools/schema-cache.md)   
- [Cuadro de diálogo Esquemas XML](../xml-tools/xml-schemas-dialog-box.md)   
+ [Cuadro de diálogo de esquemas XML](../xml-tools/xml-schemas-dialog-box.md)   
  [Editor XML](../xml-tools/xml-editor.md)

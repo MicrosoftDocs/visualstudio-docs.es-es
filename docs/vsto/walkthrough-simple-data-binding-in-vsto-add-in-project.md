@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Simple Data Binding in VSTO add-in Project | Microsoft Docs'
+title: 'Tutorial: Enlace de datos complejos en VSTO agregar en el proyecto | Documentos de Microsoft'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,151 +15,157 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
 ms.assetid: b248d194-a8b1-4f87-94c4-24e940eea1fd
-caps.latest.revision: 39
-author: kempb
-ms.author: kempb
+caps.latest.revision: "39"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 697b9a06be8f292339518cd5e410a40efc5efac4
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: fe1626a818a6442e56e8934b142a31b65f83c0a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Walkthrough: Simple Data Binding in VSTO add-in Project
-  You can bind data to host controls and Windows Forms controls in VSTO Add-in projects. This walkthrough demonstrates how to add controls to a Microsoft Office Word document and bind the controls to data at run time.  
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO
+  Puede enlazar datos a controles host y controles de Windows Forms en proyectos de complemento de VSTO. En este tutorial se muestra cómo se agregan controles a un documento de Microsoft Office Word y cómo se enlazan los controles a datos en tiempo de ejecución.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ En este tutorial se muestran las tareas siguientes:  
   
--   Adding a <xref:Microsoft.Office.Tools.Word.ContentControl> to a document at run time.  
+-   Agregar un elemento <xref:Microsoft.Office.Tools.Word.ContentControl> a un documento en tiempo de ejecución.  
   
--   Creating a <xref:System.Windows.Forms.BindingSource> that connects the control to an instance of a dataset.  
+-   Crear un elemento <xref:System.Windows.Forms.BindingSource> que conecta el control a una instancia de un conjunto de datos.  
   
--   Enabling the user to scroll through the records and view them in the control.  
+-   Permitir al usuario que se desplace por los registros y visualizarlos en el control.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
--   Access to a running instance of SQL Server 2005 or SQL Server 2005 Express that has the `AdventureWorksLT` sample database attached to it. You can download the `AdventureWorksLT` database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?LinkId=115611). For more information about attaching a database, see the following topics:  
+-   Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT` . La base de datos `AdventureWorksLT` se puede descargar del [sitio web de CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:  
   
-    -   To attach a database by using SQL Server Management Studio or SQL Server Management Studio Express, see [How to: Attach a Database (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   Para asociar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: asociar una base de datos (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
   
-    -   To attach a database by using the command line, see [How to: Attach a Database File to SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   Para asociar una base de datos mediante la línea de comandos, vea [Cómo: asociar un archivo de base de datos a SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create a Word VSTO Add-in project.  
+## <a name="creating-a-new-project"></a>Crear un proyecto nuevo  
+ El primer paso es crear un proyecto de complemento de VSTO de Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Create a Word VSTO Add-in project with the name **Populating Documents from a Database**, using either Visual Basic or C#.  
+1.  Cree un proyecto de complemento de VSTO para Word con el nombre **Rellenar documentos desde una base de datos**, mediante Visual Basic o C#.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the ThisAddIn.vb or ThisAddIn.cs file and adds the **Populating Documents from a Database** project to **Solution Explorer**.  
+     Visual Studio abre el archivo ThisAddIn.vb o ThisAddIn.cs y agrega el proyecto **Rellenar documentos desde una base de datos** al **Explorador de soluciones**.  
   
-2.  If your project targets the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], add a reference to the Microsoft.Office.Tools.Word.v4.0.Utilities.dll assembly. This reference is required to programmatically add Windows Forms controls to the document later in this walkthrough.  
+2.  Si su proyecto tiene como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], agregue una referencia al ensamblado Microsoft.Office.Tools.Word.v4.0.Utilities.dll. Esta referencia es obligatoria para agregar mediante programación controles de Windows Forms al documento más adelante en este tutorial.  
   
-## <a name="creating-a-data-source"></a>Creating a Data Source  
- Use the **Data Sources** window to add a typed dataset to your project.  
+## <a name="creating-a-data-source"></a>Crear un origen de datos  
+ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo al proyecto.  
   
-#### <a name="to-add-a-typed-dataset-to-the-project"></a>To add a typed dataset to the project  
+#### <a name="to-add-a-typed-dataset-to-the-project"></a>Para agregar un conjunto de datos con tipo al proyecto  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  Si la ventana **Orígenes de datos** no es visible, muéstrela; para ello, en la barra de menús, elija **Ver**, **Otras ventanas**, **Orígenes de datos**.  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
-3.  Click **Database**, and then click **Next**.  
+3.  Haga clic en **Base de datos**y luego en **Siguiente**.  
   
-4.  If you have an existing connection to the `AdventureWorksLT` database, choose this connection and click **Next**.  
+4.  Si ya tiene una conexión a la base de datos `AdventureWorksLT` , elija esa conexión y haga clic en **Siguiente**.  
   
-     Otherwise, click **New Connection**, and use the **Add Connection** dialog box to create the new connection. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
+     De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
   
-5.  In the **Save the Connection String to the Application Configuration File** page, click **Next**.  
+5.  En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.  
   
-6.  In the **Choose Your Database Objects** page, expand **Tables** and select **Customer (SalesLT)**.  
+6.  En la página **Elegir los objetos de base de datos** expanda **Tablas** y seleccione **Customer (SalesLT)**.  
   
-7.  Click **Finish**.  
+7.  Haga clic en **Finalizar**.  
   
-     The AdventureWorksLTDataSet.xsd file is added to **Solution Explorer**. This file defines the following items:  
+     El archivo AdventureWorksLTDataSet.xsd se agrega al **Explorador de soluciones**. Este archivo define los siguientes elementos:  
   
-    -   A typed dataset named `AdventureWorksLTDataSet`. This dataset represents the contents of the **Customer (SalesLT)** table in the AdventureWorksLT database.  
+    -   Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla **Customer (SalesLT)** de la base de datos AdventureWorksLT.  
   
-    -   A TableAdapter named `CustomerTableAdapter`. This TableAdapter can be used to read and write data in the `AdventureWorksLTDataSet`. For more information, see [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   Un TableAdapter llamado `CustomerTableAdapter`. Este TableAdapter puede usarse para leer y escribir datos el `AdventureWorksLTDataSet`. Para obtener más información, consulta [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
-     You will use both of these objects later in this walkthrough.  
+     Estos dos objetos se usarán más adelante en este tutorial.  
   
-## <a name="creating-controls-and-binding-controls-to-data"></a>Creating Controls and Binding Controls to Data  
- The interface for viewing database records in this walkthrough is very basic, and it is created right inside the document. One <xref:Microsoft.Office.Tools.Word.ContentControl> displays a single database record at a time, and two <xref:Microsoft.Office.Tools.Word.Controls.Button> controls enable you to scroll back and forth through the records. The content control uses a <xref:System.Windows.Forms.BindingSource> to connect to the database.  
+## <a name="creating-controls-and-binding-controls-to-data"></a>Crear controles y enlazarlos a datos  
+ La interfaz para ver registros de la base de datos en este tutorial es muy básica y se crea dentro del documento. Un elemento <xref:Microsoft.Office.Tools.Word.ContentControl> muestra un registro único de la base de datos a la vez y dos controles <xref:Microsoft.Office.Tools.Word.Controls.Button> le permiten desplazarse hacia delante y atrás por los registros. El control de contenido usa un elemento <xref:System.Windows.Forms.BindingSource> para conectarse a la base de datos.  
   
- For more information about binding controls to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Para más información sobre el enlace de controles a datos, consulte [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-#### <a name="to-create-the-interface-in-the-document"></a>To create the interface in the document  
+#### <a name="to-create-the-interface-in-the-document"></a>Para crear la interfaz en el documento  
   
-1.  In the `ThisAddIn` class, declare the following controls to display and scroll through the `Customer` table of the `AdventureWorksLTDataSet` database.  
+1.  En la clase `ThisAddIn` , declare los siguientes controles para mostrar y desplazarse por la tabla `Customer` de la base de datos `AdventureWorksLTDataSet` .  
   
-     [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]  [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]  
+     [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]  
   
-2.  In the `ThisAddIn_Startup` method, add the following code to initialize the dataset, fill the dataset with information from the `AdventureWorksLTDataSet` database.  
+2.  En el método `ThisAddIn_Startup` , agregue el siguiente código para inicializar el conjunto de datos y rellenarlo con la información de la base de datos `AdventureWorksLTDataSet` .  
   
-     [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]  [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]  
+     [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
+     [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]  
   
-3.  Add the following code to the `ThisAddIn_Startup` method. This generates a host item that extends the document. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+3.  Agregue el código siguiente al método `ThisAddIn_Startup` . Esto genera un elemento host que extiende el documento. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-     [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]  [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]  
+     [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
+     [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]  
   
-4.  Define several ranges at the beginning of the document. These ranges identify where to insert text and place controls.  
+4.  Defina varios intervalos al principio del documento. Estos intervalos identifican dónde se insertará texto y se colocarán los controles.  
   
-     [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]  [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]  
+     [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
+     [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]  
   
-5.  Add the interface controls to the previously defined ranges.  
+5.  Agregue los controles de interfaz a los intervalos definidos previamente.  
   
-     [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]  [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]  
+     [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
+     [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]  
   
-6.  Bind the content control to `AdventureWorksLTDataSet` by using the <xref:System.Windows.Forms.BindingSource>. For C# developers, add two event handlers for the <xref:Microsoft.Office.Tools.Word.Controls.Button> controls.  
+6.  Enlace el control de contenido a `AdventureWorksLTDataSet` mediante el elemento <xref:System.Windows.Forms.BindingSource>. Para los desarrolladores de C#, agregue dos controladores de eventos para los controles <xref:Microsoft.Office.Tools.Word.Controls.Button> .  
   
-     [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]  [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]  
+     [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
+     [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]  
   
-7.  Add the following code to navigate through the database records.  
+7.  Agregue el código siguiente para navegar por los registros de la base de datos.  
   
-     [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]  [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]  
+     [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
+     [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you open Word, the content control displays data from the `AdventureWorksLTDataSet` dataset. Scroll through the database records by clicking the **Next** and **Previous** buttons.  
+## <a name="testing-the-add-in"></a>Probar el complemento  
+ Cuando abre Word, el control de contenido muestra los datos del conjunto de datos `AdventureWorksLTDataSet` . Desplácese por los registros de la base de datos haciendo clic en los botones **Siguiente** y **Anterior** .  
   
-#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
+#### <a name="to-test-the-vsto-add-in"></a>Para probar el complemento de VSTO  
   
-1.  Press **F5**.  
+1.  Presione **F5**.  
   
-     A content control named `customerContentControl` is created and populated with data. At the same time, a dataset object named `adventureWorksLTDataSet` and a <xref:System.Windows.Forms.BindingSource> named `customerBindingSource` are added to the project. The <xref:Microsoft.Office.Tools.Word.ContentControl> is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the dataset object.  
+     Se crea un control de contenido denominado `customerContentControl` y se rellena con datos. Al mismo tiempo, se agregan al proyecto un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y un elemento <xref:System.Windows.Forms.BindingSource> con el nombre `customerBindingSource` . El elemento <xref:Microsoft.Office.Tools.Word.ContentControl> se enlaza al elemento <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.  
   
-2.  Click the **Next** and **Previous** buttons to scroll through the database records.  
+2.  Haga clic en los botones **Siguiente** y **Anterior** para desplazarse por los registros de la base de datos.  
   
-## <a name="see-also"></a>See Also  
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)   
- [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
- [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Add new data sources](/visualstudio/data-tools/add-new-data-sources)   
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Connecting to Data in Windows Forms Applications](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+## <a name="see-also"></a>Vea también  
+ [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)   
+ [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Cómo: rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)   
+ [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Cómo: desplazarse por registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Cómo: actualizar un origen de datos con datos de un Control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Tutorial: Enlace de datos Simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
+ [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
+ [Uso de archivos de base de datos Local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Agregar nuevos orígenes de datos](/visualstudio/data-tools/add-new-data-sources)   
+ [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Cómo: actualizar un origen de datos con datos de un Control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Uso de archivos de base de datos Local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Conectarse a datos en aplicaciones de Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [Información general sobre el componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

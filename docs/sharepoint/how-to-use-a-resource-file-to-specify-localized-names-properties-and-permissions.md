@@ -1,61 +1,63 @@
 ---
-title: "C&#243;mo: Usar un archivo de recursos para especificar nombres, propiedades y permisos localizados | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [desarrollo de SharePoint en Visual Studio], localizar cadenas"
-  - "BDC [desarrollo de SharePoint en Visual Studio], propiedades"
-  - "BDC [desarrollo de SharePoint en Visual Studio], archivo de recursos"
-  - "BDC [desarrollo de SharePoint en Visual Studio], cadenas de recursos"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], localizar cadenas"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], propiedades"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], archivo de recursos"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], cadenas de recursos"
+title: "Cómo: usar un archivo de recursos para especificar nombres localizados, propiedades y permisos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], localize strings
+- BDC [SharePoint development in Visual Studio], localize strings
+- BDC [SharePoint development in Visual Studio], resource file
+- Business Data Connectivity service [SharePoint development in Visual Studio], resource strings
+- BDC [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], resource file
+- BDC [SharePoint development in Visual Studio], resource strings
 ms.assetid: 72bb744d-818b-4e5a-9da2-295412025680
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6a8b61477ae3b588b2aeadf1c9d99618151825f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Usar un archivo de recursos para especificar nombres, propiedades y permisos localizados
-  Mediante un archivo de recursos, puede proporcionar nombres traducidos, definir propiedades, y aplicar los objetos de tor de los permisos que se definen en un modelo de \(BDC\) de conectividad a datos profesionales.  Para especificar esta información, se agrega un elemento de **Recurso de conectividad a datos profesionales** a un proyecto que contenga un elemento de **Modelo de conectividad a datos empresariales** .  A continuación se especifica nombres, propiedades y permisos XML del archivo de recursos.  
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Cómo: Usar un archivo de recursos para especificar nombres, propiedades y permisos localizados
+  Mediante el uso de un archivo de recursos, puede proporcionar los nombres traducidos, definir propiedades y aplicar permisos tor objetos que se definen en un modelo de conectividad de datos profesionales (BDC). Para especificar esta información, agregue un **recurso de conectividad a datos empresariales** elemento a un proyecto que contiene un **modelo de conectividad a datos empresariales** elemento. A continuación, especifique los nombres, propiedades y permisos mediante la edición de XML para el archivo de recursos.  
   
-### Para agregar un archivo de recursos de BDC a un proyecto de SharePoint  
+### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Para agregar un archivo de recursos BDC a un proyecto de SharePoint  
   
-1.  En **Explorador de soluciones**, expanda la carpeta para el proyecto de SharePoint y, a continuación la carpeta que contiene el modelo BDC.  
+1.  En **el Explorador de soluciones**, expanda la carpeta del proyecto de SharePoint y, a continuación, elija la carpeta que contiene el modelo BDC.  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.  
+2.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-3.  Expanda el nodo de **sharepoint** y, a continuación el nodo de **2010** .  
+3.  Expanda el **SharePoint** nodo y, a continuación, elija la **2010** nodo.  
   
-4.  En el cuadro de diálogo de **Agregar nuevo elemento** , elija **Elemento de recurso de conectividad a datos profesionales**.  
+4.  En el **Agregar nuevo elemento** diálogo cuadro, elija **elemento de recurso de conexión de datos de negocio**.  
   
-5.  En el cuadro de **Name** , especifique el nombre del archivo de recursos, y elija el botón de **Add** .  
+5.  En el **nombre** cuadro, especifique el nombre del archivo de recursos y, a continuación, elija la **agregar** botón.  
   
-     Un archivo de recursos que tiene la extensión .bdcr se agrega al proyecto y se abrirá para editar.  
+     Un archivo de recursos que tiene la extensión .bdcr se agrega al proyecto y abre para su edición.  
   
-6.  Agregue XML para definir los nombres, las propiedades, y los permisos traducidos que desea aplicar el modelo BDC.  
+6.  Agregue el código XML para definir los nombres traducidos, propiedades y permisos que se desea aplicar el modelo BDC.  
   
-     Para obtener información sobre cómo definir estos elementos, vea [Modelo y archivos de recursos](http://go.microsoft.com/fwlink/?LinkID=169283).  
+     Para obtener información sobre cómo definir estos elementos, vea [modelo y archivos de recursos](http://go.microsoft.com/fwlink/?LinkID=169283).  
   
-## Vea también  
- [Cómo: Agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Crea un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Cómo: Crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
- [Cómo: Incluir un ensamblado personalizado en una característica de BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+## <a name="see-also"></a>Vea también  
+ [Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Cómo: crear un modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Cómo: incluir un ensamblado personalizado en una característica BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrar Datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

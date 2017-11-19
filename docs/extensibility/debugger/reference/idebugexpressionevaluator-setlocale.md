@@ -1,51 +1,51 @@
 ---
-title: "IDebugExpressionEvaluator::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::SetLocale"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator::SetLocale (método)"
+title: IDebugExpressionEvaluator::SetLocale | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::SetLocale
+helpviewer_keywords: IDebugExpressionEvaluator::SetLocale method
 ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bdba51967b470023deb5997bc243b900e3155245
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método establece el idioma que desea utilizar para crear resultados imprimibles.  
+# <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
+Este método establece el idioma que se usará para crear resultados imprimibles.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT SetLocale(   
-   WORD wLangID  
+```cpp  
+HRESULT SetLocale(   
+   WORD wLangID  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetLocale(  
-   ushort wLangID  
+   ushort wLangID  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `wLangID`  
- \[in\]  El identificador de idioma.  
+ [in] El identificador de idioma.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Se puede llamar a este método varias veces durante el evaluador de \(EE\) expresiones se carga, por lo que aa debe poder cambiar lenguajes simultáneamente.  Aa utiliza esta configuración regional para devolver mensajes de error y cadenas en el lenguaje adecuado.  
+## <a name="remarks"></a>Comentarios  
+ Este método puede llamarse muchas veces mientras se carga, el evaluador de expresiones (EE) para que el EE debe ser capaz de intercambiar los idiomas sobre la marcha. El EE usa esta configuración regional para devolver mensajes de error y las cadenas en el idioma adecuado.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

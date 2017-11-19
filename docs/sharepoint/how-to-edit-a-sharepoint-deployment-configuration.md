@@ -1,61 +1,61 @@
 ---
-title: "C&#243;mo: Modificar una configuraci&#243;n de implementaci&#243;n de SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.Project.DeploymentConfig"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, implementar"
+title: "Cómo: editar una configuración de implementación de SharePoint | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.Project.DeploymentConfig
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, deploying
 ms.assetid: bff1895b-d3fe-4ec0-ba91-f8884dc35957
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 287618def7897cd2c91a63db9d8272c919190dfa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Modificar una configuraci&#243;n de implementaci&#243;n de SharePoint
-  Puede crear una configuración de implementación o modificar una existente.  Por ejemplo, podría ejecutar un paso único o cambiar el orden de los pasos del proceso de implementación.  Le puede interesar crear o modificar las configuraciones de implementación porque las configuraciones integradas y agregadas mediante programación no se pueden cambiar.  
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Cómo: Modificar una configuración de implementación de SharePoint
+  Puede crear una configuración de implementación o modificar una configuración de implementación existente. Por ejemplo, podría ejecutar un paso único o cambiar el orden de los pasos del proceso de implementación. Puede que desee crear o modificar las configuraciones de implementación porque no se puede cambiar las configuraciones integradas y agregadas mediante programación.  
   
-## Crear una configuración de implementación de SharePoint  
+## <a name="creating-a-sharepoint-deployment-configuration"></a>Crear una configuración de implementación de SharePoint  
   
-#### Para crear una configuración de implementación de SharePoint  
+#### <a name="to-create-a-sharepoint-deployment-configuration"></a>Para crear una configuración de implementación de SharePoint  
   
-1.  En **Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de menús, elija **Project**, *ProjectName***Propiedades**.  
+1.  En **el Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de menús, elija **proyecto**, *ProjectName***propiedades**.  
   
-2.  En la pestaña de **sharepoint** , elija el botón de **new** .  
+2.  En el **SharePoint** ficha, elija la **New** botón.  
   
-     Aparecerá el cuadro de diálogo **Agregar nueva configuración de implementación**.  
+     El **agregar nueva configuración de implementación** aparece el cuadro de diálogo.  
   
-3.  En el cuadro de texto de **Name** , escriba un nombre para la configuración de implementación.  
+3.  En el **nombre** texto cuadro, escriba un nombre para la configuración de implementación.  
   
-4.  En el panel de **Pasos de implementación disponibles** , elija los pasos que desea agregar a la configuración de implementación, elija el botón \(de**\>**\), y después elija el botón de **Aceptar** .  
+4.  En el **pasos de implementación disponibles** panel, elija los pasos que desea agregar a la configuración de implementación, elija el (**>**) botón y, a continuación, elija el **Aceptar** botón.  
   
     > [!NOTE]  
-    >  Si ha configurado un comando de la pre\- implementación o un comando de la POST\- implementación, estos pasos solo se ejecutan si los agrega a una configuración de implementación personalizada.  
+    >  Si ha configurado un comando anterior a la implementación o un comando posterior a la implementación, ejecutan estos pasos únicamente si se agregan a una configuración de implementación personalizada.  
   
-## Cambiar la configuración de implementación activa  
+## <a name="changing-the-active-deployment-configuration"></a>Cambiar la configuración de implementación activa  
   
-#### Para cambiar la configuración de implementación activa  
+#### <a name="to-change-the-active-deployment-configuration"></a>Para cambiar la configuración de implementación activa  
   
-1.  En **Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de menús, elija **Project**, *ProjectName***Propiedades**.  
+1.  En **el Explorador de soluciones**, elija un proyecto de SharePoint y, a continuación, en la barra de menús, elija **proyecto**, *ProjectName***propiedades**.  
   
-2.  Elija la ficha de **sharepoint** .  
+2.  Elija la **SharePoint** ficha.  
   
-3.  En el cuadro de lista de **Configuración de implementación activa** , elija el nombre de la configuración de implementación que desee utilizar.  
+3.  En el **Active Deployment Configuration** cuadro de lista, elija el nombre de la configuración de implementación que desea usar.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

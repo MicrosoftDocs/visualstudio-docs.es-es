@@ -1,30 +1,30 @@
 ---
-title: "CA2103: Revisar la seguridad imperativa | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
-helpviewer_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
+title: 'CA2103: Revisar la seguridad imperativa | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2103
+- ReviewImperativeSecurity
+helpviewer_keywords:
+- CA2103
+- ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b6047df9ea1b5454d4c4c689a5baef887907779a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2103: Revisar la seguridad imperativa
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2103-review-imperative-security"></a>CA2103: Revisar la seguridad imperativa
 |||  
 |-|-|  
 |TypeName|ReviewImperativeSecurity|  
@@ -32,20 +32,20 @@ manager: "wpickett"
 |Categoría|Microsoft.Security|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un método utiliza la seguridad imperativa y podría estar creando el permiso utilizando la información de estado y los valores devueltos que pueden cambiar mientras la solicitud está activa.  
   
-## Descripción de la regla  
- La seguridad imperativa utiliza objetos administrados para especificar permisos y acciones de seguridad durante la ejecución del código, en comparación con la seguridad declarativa que utiliza los atributos para almacenar permisos y acciones en metadatos.  La seguridad imperativa es muy flexible porque se puede establecer el estado de un objeto de permiso y seleccionar las acciones de seguridad utilizando la información que no está disponible hasta el tiempo de ejecución.  La desventaja de esta flexibilidad es que se corre el riesgo de que la información en tiempo de ejecución que utiliza para determinar el estado de un permiso se modifique si la acción se lleva a cabo.  
+## <a name="rule-description"></a>Descripción de la regla  
+ La seguridad imperativa utiliza objetos administrados para especificar permisos y acciones de seguridad durante la ejecución de código, en comparación con la seguridad declarativa, que utiliza los atributos para almacenar permisos y acciones en los metadatos. La seguridad imperativa es muy flexible, ya que puede establecer el estado de un objeto de permiso y seleccionar las acciones de seguridad mediante la información que no está disponible en tiempo de ejecución. Flexibilidad junto con la que produce el riesgo de que la información en tiempo de ejecución que usa para determinar que el estado de un permiso no permanecen sin cambios siempre que la acción está en vigor.  
   
- Utilice la seguridad declarativa siempre que sea posible.  Las solicitudes declarativas son más fáciles de entender.  
+ Utilice la seguridad declarativa siempre que sea posible. Las solicitudes declarativas son fáciles de entender.  
   
-## Cómo corregir infracciones  
- Revise las solicitudes de seguridad imperativa para asegurase de que el estado del permiso no depende de la información que se modifica siempre que se esté utilizando el permiso.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Revise las solicitudes de seguridad imperativa para asegurarse de que el estado del permiso no se basa en información que puede cambiar mientras se está usando el permiso.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla si el permiso no depende de los datos que cambian.  Sin embargo, es mejor cambiar la demanda imperativa por su equivalente declarativa.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla si el permiso no se basa en datos que cambian. Sin embargo, es mejor cambiar la petición imperativa a su equivalente declarativo.  
   
-## Vea también  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Datos y modelado](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>Vea también  
+ [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)   
+ [Datos y modelado](/dotnet/framework/data/index)

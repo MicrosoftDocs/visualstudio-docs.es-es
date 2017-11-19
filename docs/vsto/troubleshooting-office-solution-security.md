@@ -1,37 +1,38 @@
 ---
-title: "Solucionar problemas de seguridad de soluciones de Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "seguridad [desarrollo de Office en Visual Studio], solucionar problemas"
+title: "Solucionar problemas de seguridad de la solución de Office | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: security [Office development in Visual Studio], troubleshooting
 ms.assetid: 6f85dd61-31f5-47da-8409-21ad827eb2dd
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2bf7b639504d6bca53af590d200d9d291ddcd66b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Solucionar problemas de seguridad de soluciones de Office
-  Este tema contiene sugerencias para solucionar problemas comunes que podrían producirse al trabajar en la seguridad de las soluciones de Office.  
+# <a name="troubleshooting-office-solution-security"></a>Solucionar problemas de seguridad de soluciones de Office
+  Este tema contiene sugerencias para resolver problemas comunes que pueden surgir al trabajar con la protección de las soluciones de Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## No se pueden instalar soluciones de confianza desde sitios restringidos  
- Los usuarios no pueden instalar una solución desde una ubicación web si el sitio Web se encuentra en la zona de sitios restringidos de Internet Explorer.  Esto es así incluso cuando la solución está firmada con un certificado de confianza.  
+## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>No se puede instalar soluciones de sitios restringidos de confianza  
+ Los usuarios no pueden instalar una solución desde una ubicación web si el sitio web se muestra en la zona de sitios restringidos de Internet Explorer. Esto es cierto incluso si la solución está firmada con un certificado de confianza.  
   
- La dirección URL del manifiesto de implementación se puede dividir por categorías en cinco zonas:  
+ La dirección URL del manifiesto de implementación se puede clasificar en uno de los cinco zonas:  
   
--   Mi PC  
+-   Mi equipo  
   
 -   Internet  
   
@@ -41,16 +42,16 @@ caps.handback.revision: 28
   
 -   Sitios restringidos  
   
- Si la ubicación del manifiesto de implementación se ha asignado a la zona de sitios restringidos, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no instala la solución.  Si el usuario conoce la ubicación y considera que es de confianza, puede quitarla de la zona de sitios restringidos e instalar la solución.  Para obtener información sobre cómo administrar zonas, vea [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Si la ubicación del manifiesto de implementación se ha asignado a la zona de sitios restringidos, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no instala la solución. Si la ubicación se conoce y puede ser de confianza, el usuario puede quitar la ubicación de la zona de sitios restringidos e instalar la solución. Para obtener información acerca de cómo administrar zonas, vea [Configurar editores de confianza de ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
-## No se pueden instalar soluciones desde recursos compartido de archivos de red o desde ubicaciones web cuando se ha instalado Configuración de seguridad mejorada de Internet Explorer o Internet Explorer 7  
- Configuración de seguridad mejorada de Internet Explorer \(IEESC\) en Windows Server 2003 y posterior, e Internet Explorer 7 y posterior, limita significativamente la capacidad de usuarios de examinar internet.  Cuando los usuarios intentan instalar soluciones de Office desde un recurso compartido de archivos de red o una ubicación del web, puede recibir el siguiente mensaje de error: “La funcionalidad personalizada en esta aplicación no funcionará porque el certificado utilizado para firmar el manifiesto de implementación para *SolutionName* no es de confianza.  Póngase en contacto con el administrador para obtener asistencia."  
+## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>No se puede instalar soluciones desde recursos compartidos de archivos de red o ubicaciones Web cuando la configuración de seguridad mejorada de Internet Explorer o Internet Explorer 7 está instalado  
+ Internet Explorer Enhanced seguridad configuración (IEESC) en Windows Server 2003 y versiones posteriores e Internet Explorer 7 y versiones posterior, restringe la capacidad de los usuarios a navegar por Internet. Cuando los usuarios intentan instalar soluciones de Office desde una ubicación de web o recurso compartido de archivos de red, puede que aparezca el siguiente mensaje de error: "funcionalidad personalizada de esta aplicación no funcionará porque el certificado utilizado para firmar el manifiesto de implementación para *SolutionName* no es de confianza. Póngase en contacto con el administrador para obtener más ayuda."  
   
- Con IEESC e Internet Explorer 7 y posterior, si clasifican la dirección URL del manifiesto de implementación en la zona de Internet, el manifiesto tiene un certificado de un editor de confianza o la solución no se puede instalar.  Sin IEESC, el comportamiento predeterminado es pedir confirmación al usuario final para tomar una decisión de confianza.  
+ Con IEESC e Internet Explorer 7 y versiones posterior, si la dirección URL del manifiesto de implementación se clasifica por categorías en la zona de Internet, el manifiesto debe tener un certificado de un publicador de confianza o no se puede instalar la solución. Sin IEESC, el comportamiento predeterminado es preguntar al usuario final para tomar una decisión de confianza.  
   
- Para administrar el efecto de IEESC e Internet Explorer 7 y posterior, identifique los sitios Web y las rutas universales de \(UNC\) de convención de nomenclatura que confía y agrega a una de las zonas de seguridad \(intranet local o sitios de confianza\). Para obtener información sobre cómo administrar zonas, vea [Editores de confianza de configuración de ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Para administrar el efecto de IEESC e Internet Explorer 7 y versiones posteriores, identificar sitios web y rutas de nomenclatura universal (UNC) convención confía y agregarlos a una de las zonas de seguridad de confianza (intranet Local o sitios de confianza). Para obtener información acerca de cómo administrar zonas, vea [Configurar editores de confianza de ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
-## Vea también  
- [Asegurar las soluciones de Office](../vsto/securing-office-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Protección de soluciones de Office](../vsto/securing-office-solutions.md)  
   
   

@@ -1,59 +1,58 @@
 ---
-title: "IDiaStackWalkFrame::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkFrame::readMemory (método)"
+title: 'Idiastackwalkframe:: ReadMemory | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkFrame::readMemory method
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03750c990d259bab3a4942021e0b3ee8b1e0fd65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkFrame::readMemory
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Memoria de lecturas de la imagen.  
+# <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
+Lee de la imagen de memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT readMemory (   
-   MemoryTypeEnum type,  
-   ULONGLONG va,  
-   DWORD     cbData,  
-   DWORD*    pcbData,  
-   BYTE      data[]  
+```C++  
+HRESULT readMemory (   
+   MemoryTypeEnum type,  
+   ULONGLONG va,  
+   DWORD     cbData,  
+   DWORD*    pcbData,  
+   BYTE      data[]  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `type`  
- \[in\] Uno de los valores de enumeración de [MemoryTypeEnum \(Enumeración\)](../../debugger/debug-interface-access/memorytypeenum.md) que especifica la clase de memoria de acceso.  
+ [in] Uno de los [MemoryTypeEnum (enumeración)](../../debugger/debug-interface-access/memorytypeenum.md) valores de enumeración que especifica el tipo de memoria para tener acceso.  
   
  `va`  
- \[in\] ubicación de la dirección virtual de imagen a la lectura de inicio.  
+ [in] Ubicación de dirección virtual en la imagen a comenzar la lectura.  
   
  `cbData`  
- \[in\] tamaño del búfer de datos, en bytes.  
+ [in] Tamaño del búfer de datos, en bytes.  
   
  `pcbData`  
- \[out\] devuelve el número de bytes devueltos.  Si `data` es `NULL`, después`pcbData` contiene el número total de bytes de datos disponibles.  
+ [out] Devuelve el número de bytes devueltos. Si `data` es `NULL`, a continuación, `pcbData` contiene el número total de bytes de datos disponibles.  
   
  `data`  
- \[out\] búfer de que debe ser completo con datos de la ubicación especificada.  
+ [out] Búfer que va a rellenar con datos de la ubicación especificada.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

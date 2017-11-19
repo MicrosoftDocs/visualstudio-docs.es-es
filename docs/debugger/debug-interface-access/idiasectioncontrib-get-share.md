@@ -1,43 +1,42 @@
 ---
-title: "IDiaSectionContrib::get_share | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_share (método)"
+title: 'Idiasectioncontrib:: Get_share | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_share method
 ms.assetid: 05c4c896-4419-4166-8bb2-8d0934dc14b5
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: efffa26d9f7501037919d58e34d5949f5fe4df72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_share
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una marca que indica si la sección se puede compartir en memoria.  
+# <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
+Recupera una marca que indica si se pueden compartir la sección de memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_share (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_share (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  devuelve `TRUE` si la sección es compartible en memoria; de lo contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si la sección es compartible en memoria; en caso contrario, devuelve `FALSE`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBoundBreakpoint2::GetPendingBreakpoint
+f1_keywords: IDebugBoundBreakpoint2::GetPendingBreakpoint
 helpviewer_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint method
 - GetPendingBreakpoint method
 ms.assetid: 22f94f81-f8d9-46de-96e9-fae6f3c24903
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 87f4653fbaa4a8b9bf5aa45edb2c64c1462e03f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 85c6f7650cedc9fe6136ff84a9ff7acfd82ac96a
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Obtiene el punto de interrupción pendiente desde la que se creó el punto de interrupción enlazado especificado.  

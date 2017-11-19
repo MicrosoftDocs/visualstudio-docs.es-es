@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating Your First VSTO Add-in for Word | Microsoft Docs'
+title: 'Tutorial: Crear el primer complemento VSTO para Word | Documentos de Microsoft'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,135 +16,135 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
 ms.assetid: 9d857be7-5c74-4303-baf4-672afc1ea397
-caps.latest.revision: 55
-author: kempb
-ms.author: kempb
+caps.latest.revision: "55"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 31464b710698d4dd253382676bde88b01f86a62a
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: a61a56401e97a47da0903dadfff35e16c974bbc5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Walkthrough: Creating Your First VSTO Add-in for Word
-  This introductory walkthrough shows you how to create a VSTO Add-in for Microsoft Office Word. The features that you create in this kind of solution are available to the application itself, regardless of which documents are open.  
+# <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Tutorial: Crear el primer complemento de VSTO para Word
+  Este tutorial introductorio muestra cómo crear un complemento de VSTO para Microsoft Office Word. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los documentos que estén abiertos.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ En este tutorial se muestran las tareas siguientes:  
   
--   Creating a Word VSTO Add-in project.  
+-   Crear un proyecto de complemento de VSTO de Word.  
   
--   Writing code that uses the object model of Word to add text to a document when it is saved.  
+-   Escribir código que usa el modelo de objetos de Word para agregar texto a un documento cuando se guarda.  
   
--   Building and running the project to test it.  
+-   Compilar y ejecutar el proyecto para probarlo.  
   
--   Cleaning up the completed project so that the VSTO Add-in no longer runs automatically on your development computer.  
+-   Limpiar el proyecto completado para que el complemento de VSTO deje de ejecutarse automáticamente en el equipo de desarrollo.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Creating the Project  
+## <a name="creating-the-project"></a>Crear el proyecto  
   
-#### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>To create a new Word VSTO Add-in project in Visual Studio  
+#### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>Para crear un nuevo proyecto de complemento de VSTO de Word en Visual Studio  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
+3.  En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.  
   
-4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
+4.  En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .  
   
-5.  In the list of project templates, select a Word VSTO Add-in project.  
+5.  En la lista de plantillas de proyecto, seleccione un proyecto de complemento de VSTO de Word.  
   
-6.  In the **Name** box, type **FirstWordAddIn**.  
+6.  En el **nombre** , escriba **FirstWordAddIn**.  
   
-7.  Click **OK**.  
+7.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstWordAddIn** project and opens the ThisAddIn code file in the editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea el **FirstWordAddIn** del proyecto y abre el archivo de código ThisAddIn en el editor.  
   
-## <a name="writing-code-to-add-text-to-the-saved-document"></a>Writing Code to Add Text to the Saved Document  
- Next, add code to the ThisAddIn code file. The new code uses the object model of Word to add boilerplate text to each saved document. By default, the ThisAddIn code file contains the following generated code:  
+## <a name="writing-code-to-add-text-to-the-saved-document"></a>Escribir código para agregar texto al documento guardado  
+ A continuación, agregue código al archivo de código ThisAddIn. El nuevo código usa el modelo de objetos de Word para agregar texto reutilizable a cada documento guardado. De forma predeterminada, el archivo de código ThisAddIn contiene el siguiente código generado:  
   
--   A partial definition of the `ThisAddIn` class. This class provides an entry point for your code and provides access to the object model of Word. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). The remainder of the `ThisAddIn` class is defined in a hidden code file that you should not modify.  
+-   Una definición parcial de la clase `ThisAddIn`. Esta clase proporciona un punto de entrada para el código y proporciona acceso al modelo de objetos de Word. Para obtener más información, consulta [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). El resto de la clase `ThisAddIn` se define en un archivo de código oculto que no se debe modificar.  
   
--   The `ThisAddIn_Startup` and `ThisAddIn_Shutdown` event handlers. These event handlers are called when Word loads and unloads your VSTO Add-in. Use these event handlers to initialize your VSTO Add-in when it is loaded, and to clean up resources used by your VSTO Add-in when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   Los controladores de eventos `ThisAddIn_Startup` y `ThisAddIn_Shutdown` . Se llama a estos controladores de eventos cuando Word carga y descarga el complemento de VSTO. Use estos controladores de eventos para inicializar el complemento de VSTO cuando se cargue y para limpiar los recursos que usa el complemento de VSTO cuando se descargue. Para obtener más información, consulta [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>To add a paragraph of text to the saved document  
+#### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Para agregar un párrafo de texto al documento guardado  
   
-1.  In the ThisAddIn code file, add the following code to the `ThisAddIn` class. The new code defines an event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event, which is raised when a document is saved.  
+1.  En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn`. El nuevo código define un controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>, que se desencadena cuando se guarda un documento.  
   
-     When the user saves a document, the event handler adds new text at the start of the document.  
+     Cuando el usuario guarda un documento, el controlador de eventos agrega el nuevo texto al principio del documento.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]  [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
     > [!NOTE]  
-    >  This code uses an index value of 1 to access the first paragraph in the <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> collection. Although Visual Basic and Visual C# use 0-based arrays, the lower array bounds of most collections in the Word object model is 1. For more information, see [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+    >  Este código usa un valor de índice 1 para acceder al primer párrafo de la colección <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Aunque Visual Basic y Visual C# usan matrices basadas en 0, el límite de matriz inferior de la mayoría de las colecciones del modelo de objetos de Word es 1. Para obtener más información, consulta [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
-2.  If you are using C#, add the following required code to the `ThisAddIn_Startup` event handler. This code is used to connect the `Application_DocumentBeforeSave` event handler with the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event.  
+2.  Si está utilizando C#, agregue el siguiente código necesario para el controlador de eventos `ThisAddIn_Startup` . Este código se utiliza para conectar el controlador de eventos `Application_DocumentBeforeSave` con el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>.  
   
      [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- To modify the document when it is saved, the previous code examples use the following objects:  
+ Para modificar el documento cuando se guarda, los ejemplos de código anteriores usan los siguientes objetos:  
   
--   The `Application` field of the `ThisAddIn` class. The `Application` field returns a <xref:Microsoft.Office.Interop.Word.Application> object, which represents the current instance of Word.  
+-   El campo `Application` de la clase `ThisAddIn`. El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.Word.Application> que representa la instancia actual de Word.  
   
--   The `Doc` parameter of the event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event. The `Doc` parameter is a <xref:Microsoft.Office.Interop.Word.Document> object, which represents the saved document. For more information, see [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+-   El parámetro `Doc` del controlador de eventos para el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>. El parámetro `Doc` es un objeto <xref:Microsoft.Office.Interop.Word.Document> que representa el documento guardado. Para obtener más información, consulta [Word Object Model Overview](../vsto/word-object-model-overview.md).  
   
-## <a name="testing-the-project"></a>Testing the Project  
+## <a name="testing-the-project"></a>Probar el proyecto  
   
-#### <a name="to-test-the-project"></a>To test the project  
+#### <a name="to-test-the-project"></a>Para probar el proyecto  
   
-1.  Press **F5** to build and run your project.  
+1.  Presione **F5** para compilar y ejecutar el proyecto.  
   
-     When you build the project, the code is compiled into an assembly that is included in the build output folder for the project. Visual Studio also creates a set of registry entries that enable Word to discover and load the VSTO Add-in, and it configures the security settings on the development computer to enable the VSTO Add-in to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
+     Al compilar el proyecto, el código se compila en un ensamblado que se incluye en la carpeta de salida de compilación del proyecto. Visual Studio crea también un conjunto de entradas del Registro que permiten que Word detecte y cargue el complemento de VSTO, y establece la configuración de seguridad en el equipo de desarrollo para permitir la ejecución del complemento de VSTO. Para obtener más información, consulte [compilar soluciones de Office](../vsto/building-office-solutions.md).  
   
-2.  In Word, save the active document.  
+2.  En Word, guarde el documento activo.  
   
-3.  Verify that the following text is added to the document.  
+3.  Compruebe que el texto siguiente se agrega al documento.  
   
-     **This text was added by using code.**  
+     **Este texto se agregó mediante código.**  
   
-4.  Close Word.  
+4.  Cierre Word.  
   
-## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
- When you finish developing a project, remove the VSTO Add-in assembly, registry entries, and security settings from your development computer. Otherwise, the VSTO Add-in will continue to run every time that you open Word on your development computer.  
+## <a name="cleaning-up-the-project"></a>Limpiar el proyecto  
+ Cuando termine de desarrollar un proyecto, quite el ensamblado del complemento de VSTO, las entradas del Registro y la configuración de seguridad del equipo de desarrollo. De lo contrario, el complemento de VSTO se ejecutará cada vez que abra Word en el equipo de desarrollo.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Para limpiar el proyecto completado en el equipo de desarrollo  
   
-1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
+1.  En el menú **Crear** de Visual Studio, haga clic en **Limpiar solución**.  
   
-## <a name="next-steps"></a>Next Steps  
- Now that you have created a basic VSTO Add-in for Word, you can learn more about how to develop VSTO Add-ins from these topics:  
+## <a name="next-steps"></a>Pasos siguientes  
+ Ahora que ya creó creado un complemento básico de VSTO para Word, puede obtener más información sobre cómo desarrollar complementos de VSTO en estos temas:  
   
--   General programming tasks that you can perform in VSTO Add-ins: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Tareas de programación generales que puede realizar en complementos de VSTO: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Programming tasks that are specific to Word VSTO Add-ins: [Word Solutions](../vsto/word-solutions.md).  
+-   Tareas de programación específicas de los complementos de VSTO de Word: [soluciones de Word](../vsto/word-solutions.md).  
   
--   Using the object model of Word: [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+-   Mediante el modelo de objetos de Word: [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md).  
   
--   Customizing the UI of Word, for example, by adding a custom tab to the Ribbon or creating your own custom task pane: [Office UI Customization](../vsto/office-ui-customization.md).  
+-   Personalizar la interfaz de usuario de Word, por ejemplo, agregando una pestaña personalizada a la cinta de opciones o creando su propio panel de tareas personalizado: [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
   
--   Building and debugging VSTO Add-ins for Word: [Building Office Solutions](../vsto/building-office-solutions.md).  
+-   Compilar y depurar los complementos VSTO para Word: [compilar soluciones de Office](../vsto/building-office-solutions.md).  
   
--   Deploying VSTO Add-ins for Word: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   Implementar complementos VSTO para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>See Also  
- [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Word Solutions](../vsto/word-solutions.md)   
+## <a name="see-also"></a>Vea también  
+ [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Soluciones de Word](../vsto/word-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Word Object Model Overview](../vsto/word-object-model-overview.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Building Office Solutions](../vsto/building-office-solutions.md)   
- [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
- [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
+ [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
+ [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
+ [Compilar soluciones de Office](../vsto/building-office-solutions.md)   
+ [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
+ [Información general sobre las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)  
   
   

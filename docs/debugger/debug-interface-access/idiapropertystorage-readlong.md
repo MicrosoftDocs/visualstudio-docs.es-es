@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadLONG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadLONG"
+title: IDiaPropertyStorage::ReadLONG | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadLONG
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aba26ae4e2495d8c0a4feb1ff692d90a228e8292
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadLONG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lee los valores de `LONG` en un conjunto de propiedades.  
+# <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
+Lee `LONG` valores en un conjunto de propiedades.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT ReadDLONG (   
-   PROPID id,  
-   LONG*  pValue  
+```C++  
+HRESULT ReadDLONG (   
+   PROPID id,  
+   LONG*  pValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `id`  
- \[in\]  Identificador de la propiedad que se leerá \(`PROPID` se define en WTypes.h como `ULONG`\).  
+ [in] Identificador de la propiedad que debe leerse (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
   
  `pValue`  
- \[out\]  devuelve el valor de propiedad.  
+ [out] Devuelve el valor de propiedad.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Devuelve `E_INVALIDARG` si la propiedad no es de `LONG`escrito.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_INVALIDARG` si la propiedad no es de tipo `LONG`.  
   
-## Comentarios  
- `LONG` está definido por Windows como un entero de 32 bits.  
+## <a name="remarks"></a>Comentarios  
+ Un `LONG` se define por Windows como un entero de 32 bits con signo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

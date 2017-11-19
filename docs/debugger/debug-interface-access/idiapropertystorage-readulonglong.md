@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadULONGLONG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadULONGLONG"
+title: IDiaPropertyStorage::ReadULONGLONG | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadULONGLONG
 ms.assetid: f80a2e24-5744-4fec-bab0-3ed51aef6e58
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 997efbd4528312a18563a6cc606516692f7ca9ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadULONGLONG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lee los valores de `ULONGLONG` en un conjunto de propiedades.  
+# <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
+Lee `ULONGLONG` valores en un conjunto de propiedades.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT ReadULONGLONG (   
-   PROPID     id,  
-   ULONGLONG* pValue  
+```C++  
+HRESULT ReadULONGLONG (   
+   PROPID     id,  
+   ULONGLONG* pValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `id`  
- \[in\]  Identificador de la propiedad que se leerá \(`PROPID` se define en WTypes.h como `ULONG`\).  
+ [in] Identificador de la propiedad que debe leerse (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
   
  `pValue`  
- \[out\]  devuelve el valor de propiedad.  
+ [out] Devuelve el valor de propiedad.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Devuelve `E_INVALIDARG` si la propiedad no es de `ULONGLONG`escrito.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_INVALIDARG` si la propiedad no es de tipo `ULONGLONG`.  
   
-## Comentarios  
- `ULONGLONG` está definido por Windows como un entero de 64 bits sin signo.  
+## <a name="remarks"></a>Comentarios  
+ Un `ULONGLONG` se define por Windows como un entero de 64 bits sin signo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

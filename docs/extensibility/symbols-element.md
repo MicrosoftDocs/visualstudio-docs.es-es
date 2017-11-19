@@ -1,32 +1,34 @@
 ---
-title: "Elemento de s&#237;mbolos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Elemento de símbolos (esquema VSCT XML)"
-  - "Elementos de esquema XML VSCT, símbolos"
+title: "Símbolos elemento | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Symbols element (VSCT XML schema)
+- VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento de s&#237;mbolos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Define los GUID e identificadores de otros elementos VSCT. Para código no administrado, esta información normalmente procede de los archivos de encabezado especificados por [Elemento extern](../extensibility/extern-element.md). El código administrado utiliza los elementos secundarios del elemento de símbolos para definir esta información.  
+# <a name="symbols-element"></a>Elemento de símbolos
+Define los GUID e identificadores que son utilizados por otros elementos VSCT. Para código no administrado, esta información normalmente procede de los archivos de encabezado que se especifican mediante [Extern elemento](../extensibility/extern-element.md). El código administrado utiliza los elementos secundarios del elemento de símbolos para definir esta información.  
   
- Si crea un archivo de vsct desde un archivo .cto existente, los símbolos se generará como elementos secundarios del elemento de símbolos. Para obtener más información, consulta [Cómo: Crear un archivo .vsct a partir de un archivo .cto existente](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Si crea un archivo .vsct desde un archivo .cto existente, se generará los símbolos como elementos secundarios del elemento de símbolos. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo de director de tecnología](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).  
   
- El elemento de símbolos no debe confundirse con el [Definir el elemento](../extensibility/define-element.md), que define los pares de nombre y valor para su uso por el preprocesador.  
+ El elemento de símbolos no debe confundirse con el [definir elemento](../extensibility/define-element.md), que define los pares de nombre / valor para su uso por el preprocesador.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Symbols>  
@@ -35,33 +37,40 @@ Define los GUID e identificadores de otros elementos VSCT. Para código no admin
 </Symbols>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
+|---------------|-----------------|  
 |Ninguna||  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|GuidSymbol|Define un símbolo GUID. GuidSymbol tiene dos atributos necesarios: nombre y valor. El nombre es el nombre del símbolo, y el valor es el valor del GUID como una cadena.<br /><br /> Por ejemplo: \< nombre de GuidSymbol \= "guidVsPackage1Pkg" value \= "{c5f54698\-101a\-4846\-84d3\-dc748f9cd848}" \/ \>|  
-|IDSymbol|Define un símbolo. IDSymbol tiene dos atributos necesarios: nombre y valor. El nombre es el nombre del símbolo, y el valor es el valor del símbolo como una cadena.<br /><br /> Por ejemplo: \< nombre de IDSymbol \= "MyMenuGroup" value \= "0x1020" \/ \>|  
+|-------------|-----------------|  
+|GuidSymbol|Define un símbolo GUID. GuidSymbol tiene dos atributos obligatorios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del GUID como una cadena.<br /><br /> Por ejemplo:\<GuidSymbol name = "guidVsPackage1Pkg" value = "{c5f54698-101a-4846-84d3-dc748f9cd848}" / >|  
+|IDSymbol|Define un símbolo. IDSymbol tiene dos atributos obligatorios: nombre y valor. El nombre es el nombre del símbolo y el valor es el valor del símbolo como una cadena.<br /><br /> Por ejemplo:\<IDSymbol name = "MyMenuGroup" value = "0x1020" / >|  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|El elemento raíz del archivo vsct.|  
+|-------------|-----------------|  
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|El elemento raíz del archivo vsct.|  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
 ```  
-<Symbols> <GuidSymbol name="guidVsPackage1Pkg" value="{c5f54698-101a-4846-84d3-dc748f9cd848}" /> <GuidSymbol name="guidVsPackage1CmdSet" value="{cb9dfd7f-2fcc-4a3e-aae8-f7fe30b1cfac}"> <IDSymbol name="MyMenuGroup" value="0x1020" /> <IDSymbol name="cmdidMyCommand" value="0x0100" /> <IDSymbol name="cmdidMyTool" value="0x0101" /> </GuidSymbol> </Symbols>  
+<Symbols>  
+  <GuidSymbol name="guidVsPackage1Pkg" value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />  
+  <GuidSymbol name="guidVsPackage1CmdSet" value="{cb9dfd7f-2fcc-4a3e-aae8-f7fe30b1cfac}">  
+    <IDSymbol name="MyMenuGroup" value="0x1020" />  
+    <IDSymbol name="cmdidMyCommand" value="0x0100" />  
+    <IDSymbol name="cmdidMyTool" value="0x0101" />  
+  </GuidSymbol>  
+</Symbols>  
 ```  
   
-## Vea también  
- [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Vea también  
+ [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

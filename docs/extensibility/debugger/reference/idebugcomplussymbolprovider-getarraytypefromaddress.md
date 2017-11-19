@@ -1,69 +1,71 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetArrayTypeFromAddress"
-  - "IDebugComPlusSymbolProvider::GetArrayTypeFromAddress"
+title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetArrayTypeFromAddress
+- IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 43e8df22bcf5acdcef81dce761cfdf49398fcfee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Información de tipo de recupera sobre la matriz especificado dado su dirección de depuración.  
+# <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
+Recupera información de tipo de la matriz especificada a partir de su dirección de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 [C++]  
 HRESULT GetArrayTypeFromAddress(  
-   IDebugAddress* pAddress,  
-   BYTE*          pSig,  
-   DWORD          dwSigLength,  
-   IDebugField**  ppField  
+   IDebugAddress* pAddress,  
+   BYTE*          pSig,  
+   DWORD          dwSigLength,  
+   IDebugField**  ppField  
 );  
 ```  
   
 ```  
 [C#]  
 int GetArrayTypeFromAddress(  
-   IDebugAddress   pAddress,  
-   int[]           pSig,  
-   uint            dwSigLength,  
-   out IDebugField ppField  
+   IDebugAddress   pAddress,  
+   int[]           pSig,  
+   uint            dwSigLength,  
+   out IDebugField ppField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pAddress`  
- \[in\]  La dirección de depuración representada por una interfaz de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
+ [in] La dirección de depuración representado por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `pSig`  
- \[in\]  La matriz a examinar.  
+ [in] La matriz para examinar.  
   
  `dwSigLength`  
- \[in\]  Longitud en bytes de la matriz de `pSig` .  
+ [in] Longitud en bytes de la `pSig` matriz.  
   
  `ppField`  
- \[out\]  Devuelve el tipo de matriz como se representa por una interfaz de [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .  
+ [out] Devuelve el tipo de matriz representado por un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  
     IDebugAddress *pAddress,  
     BYTE *pSig,  
@@ -96,5 +98,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

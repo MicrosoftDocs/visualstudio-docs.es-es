@@ -1,43 +1,44 @@
 ---
-title: "Pesta&#241;a General (Cuadro de di&#225;logo Propiedades del subproceso) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "subprocesos [Visual Studio], propiedades del subproceso"
-  - "propiedades de subprocesos"
+title: "Ficha general, cuadro de diálogo de propiedades de subproceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- threading [Visual Studio], thread properties
+- thread properties
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2af344735b88fb7091ec438638c948a7f7f2ca4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a General (Cuadro de di&#225;logo Propiedades del subproceso)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use este cuadro de diálogo para obtener más detalles de un subproceso concreto.  Para abrir este cuadro de diálogo, mueva el foco a una ventana de [vista de subprocesos](../debugger/threads-view.md) o abra la [vista Mensajes](../debugger/messages-view.md) y expanda un mensaje.  Seleccione cualquier nodo de subproceso en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="general-tab-thread-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del subproceso)
+Utilice este cuadro de diálogo para obtener más información acerca de un subproceso concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista de subprocesos](../debugger/threads-view.md) ventana o abra [vista mensajes](../debugger/messages-view.md) y expanda un mensaje. Seleccione cualquier nodo de subproceso en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- El cuadro de diálogo **Propiedades del subproceso** contiene un panel, la pestaña **General**.  Están disponibles los siguientes parámetros de configuración:  
+ El **propiedades del subproceso** cuadro de diálogo contiene un panel, el **General** ficha. Las siguientes opciones están disponibles:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Nombre de módulo**|El nombre del módulo.|  
-|**Id. de subproceso**|Identificador único de este subproceso.  Tenga en cuenta que los números de identificador de subproceso se reutilizan; sólo identifican un subproceso mientras dure.|  
-|**Id. de proceso**|El identificador único del proceso.  Los números de identificador de procesos se reutilizan, por lo que identifican un proceso solamente mientras dure dicho proceso.  El tipo de objeto Process se crea cuando se ejecuta un programa.  Todos los subprocesos de un proceso comparten el mismo espacio de direcciones y tienen acceso a los mismos datos.  Elija este valor para ver las propiedades del identificador del proceso.|  
-|**Estado subproc.**|Estado actual del subproceso.  Si un subproceso está en ejecución significa que está usando un procesador; un subproceso en espera está a punto de usarlo.  Un subproceso listo está a la espera de usar un procesador porque no hay ninguno libre.  Un subproceso en transición está esperando a que se ejecute un recurso; por ejemplo, espera a que la pila de ejecución se pagine desde el disco.  Un subproceso en espera no necesita el procesador porque está esperando a que se complete una operación periférica o a que quede libre un recurso.|  
-|**Motivo de espera**|Solo es aplicable cuando el subproceso está en estado de espera.  Se usan pares de eventos para la comunicación con los subsistemas protegidos.|  
-|**Tiempo de CPU**|Tiempo de CPU total gastado en este proceso y sus subprocesos.  Es igual a tiempo de usuario \+ tiempo con privilegios.|  
-|**Tiempo de usuario**|Tiempo total que este subproceso ha estado ejecutando código en modo usuario.  Las aplicaciones se ejecutan en modo usuario, como sucede con subsistemas tales como el administrador de ventanas y el motor gráfico.|  
-|**Tiempo con privil.**|Tiempo total que este subproceso ha estado ejecutando código en modo con privilegios.  Cuando se llama a un servicio de sistema de Windows, a menudo el servicio se ejecutará en modo con privilegios para obtener acceso a datos privados del sistema.  Estos datos están protegidos del acceso por parte de subprocesos que se ejecutan en modo usuario.  Las llamadas al sistema pueden ser explícitas o también implícitas, como cuando se produce un error de página o una interrupción.|  
-|**Tiempo transcurrido**|Tiempo total \(en segundos\) que se ha ejecutado este subproceso.|  
-|**Prioridad act.**|Prioridad dinámica actual de este subproceso.  Los subprocesos de un proceso pueden aumentar y disminuir su propia prioridad base con respecto a la prioridad base del proceso.|  
-|**Prioridad base**|Prioridad base actual de este subproceso.|  
-|**Dir. de inicio**|Dirección virtual de inicio para este subproceso.|  
-|**User PC**|Contador de programa del usuario para el subproceso.|  
-|**Cambios contexto**|Número de cambios de un subproceso a otro.  Los cambios de subproceso se pueden producir dentro de un mismo proceso o entre procesos distintos.  Un cambio de subproceso puede originarse porque un subproceso solicita información a otro o porque un subproceso de mayor prioridad que está listo para ejecutarse se adelanta a otro subproceso.|
+|**Nombre del módulo**|El nombre del módulo.|  
+|**Identificador de subproceso**|El identificador único de este subproceso. Tenga en cuenta que los números de Id. de subproceso se reutilizan; un subproceso que identifican solo durante la duración del subproceso.|  
+|**Identificador del proceso**|El identificador único de este proceso. Números de Id. de proceso se reutilizan, por lo que identifican un proceso sólo durante la vigencia de este proceso. El tipo de objeto de proceso se crea cuando se ejecuta un programa. Todos los subprocesos de un proceso comparten el mismo espacio de direcciones y tengan acceso a los mismos datos. Elija este valor para ver las propiedades del identificador del proceso.|  
+|**Estado de subprocesos.**|El estado actual del subproceso. Un subproceso de ejecución está usando un procesador; un subproceso en espera está a punto de utilizar uno. Un subproceso de la lista está esperando para usar un procesador porque no hay ninguno libre. Un subproceso en transición está esperando un recurso para su ejecución, como la espera de la pila de ejecución de la paginación del disco. Un subproceso en espera no necesita el procesador porque está esperando que se complete una operación periférica o hasta que esté disponible un recurso.|  
+|**Motivo de espera**|Esto solo es aplicable cuando el subproceso está en el estado de espera. Los pares de eventos se usan para comunicarse con subsistemas protegidos.|  
+|**Tiempo de CPU**|Tiempo de CPU total empleado en este proceso y sus subprocesos. Es igual al tiempo de usuario + tiempo con privilegios.|  
+|**Tiempo de usuario**|El tiempo total que este subproceso invirtió en ejecutar código en modo de usuario. Las aplicaciones se ejecutan en modo de usuario, como sucede con subsistemas como el Administrador de ventanas y el motor de gráficos.|  
+|**Tiempo privilegiado**|El tiempo total que este subproceso invirtió en ejecutar código en modo privilegiado. Cuando se llama a un servicio de sistema de Windows, el servicio a menudo se ejecutará en modo privilegiado para obtener acceso a los datos privados del sistema. Estos datos están protegidos contra el acceso por subprocesos que se ejecutan en modo de usuario. Las llamadas al sistema pueden ser explícitas o implícitas, como cuando se produce un error de página o una interrupción.|  
+|**Tiempo transcurrido**|El tiempo total transcurrido (en segundos) que se ha estado ejecutando este subproceso.|  
+|**Prioridad actual**|La prioridad dinámica actual de este subproceso. Subprocesos dentro de un proceso pueden aumentar y disminuir su propia prioridad base con respecto a la prioridad base del proceso.|  
+|**Prioridad base**|La prioridad base actual de este subproceso.|  
+|**Dirección de inicio**|Dirección virtual inicial para este subproceso.|  
+|**PC de usuario**|El contador de programa del usuario para el subproceso.|  
+|**Cambios de contexto**|El número de cambios de un subproceso a otro. Modificadores de subproceso pueden producirse dentro de un único proceso o entre procesos. Un cambio de subproceso puede deberse porque un subproceso solicita otra para obtener información, o por un subproceso que se ve relegado cuando esté listo para ejecutar un subproceso de prioridad más alto.|

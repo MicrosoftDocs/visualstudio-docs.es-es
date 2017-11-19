@@ -1,54 +1,55 @@
 ---
-title: "How to: Search for a Message in Messages View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Message Search dialog box"
-  - "Messages view"
-  - "messages, searching for"
+title: "Cómo: buscar un mensaje en la vista mensajes | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Message Search dialog box
+- Messages view
+- messages, searching for
 ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 36c3158542dff52a2e1ca350e49be254219183c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Search for a Message in Messages View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para buscar un mensaje concreto en la vista Mensajes se puede usar su identificador, su tipo o su identificador de mensaje como criterios de búsqueda.  Cualquiera de éstos, de forma individual o combinada, serán criterios de búsqueda válidos.  También se puede especificar la dirección inicial de la búsqueda.  Los campos del cuadro de diálogo se cargan previamente con los atributos del mensaje actualmente seleccionado.  
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Cómo: Buscar un mensaje en la vista Mensajes
+Puede buscar un mensaje concreto en la vista mensajes mediante su identificador, el tipo o el Id. de mensaje como criterios de búsqueda. Cualquiera de estos, o una combinación, serán criterios de búsqueda válido. También se puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo se cargan previamente con los atributos del mensaje actualmente seleccionado.  
   
-### Para buscar un mensaje en la vista Mensajes  
+### <a name="to-search-for-a-message-in-messages-view"></a>Para buscar un mensaje en la vista mensajes  
   
-1.  Organice las ventanas de modo que estén visibles la ventana de Spy\+\+ y una ventana de [vista Mensajes](../debugger/messages-view.md) activa.  
+1.  Organizar las ventanas de modo que ese Spy ++ y cuando se activa [vista mensajes](../debugger/messages-view.md) ventana están visibles.  
   
-2.  En el menú **Buscar**, elija **Buscar mensaje**.  
+2.  Desde el **búsqueda** menú, elija **Buscar mensaje**.  
   
-     Se abrirá el [cuadro de diálogo Buscar mensaje](../debugger/message-search-dialog-box.md).  
+     El [cuadro de diálogo Buscar mensaje](../debugger/message-search-dialog-box.md) se abre.  
   
-3.  Arrastre la **herramienta de búsqueda** sobre la ventana que desee.  Mientras se arrastra la herramienta, el cuadro de diálogo **Buscar mensaje** muestra los detalles de la ventana seleccionada.  
+3.  Arrastre el **herramienta de búsqueda** sobre la ventana deseada. A medida que arrastra la herramienta, el **Buscar mensaje** cuadro de diálogo muestra los detalles de la ventana seleccionada.  
   
-     \-O bien\-  
+     - O  
   
-     Si tiene el identificador de la ventana cuyos mensajes desea examinar, escríbalo en el cuadro de texto **Identificador**.  
+     Si tiene el identificador de la ventana cuyos mensajes desea examinar, escríbalo en el **controlar** cuadro de texto.  
   
-     \-O bien\-  
+     - O  
   
-     Si conoce el tipo de mensaje o el identificador de mensaje, selecciónelos en los menús desplegables **Tipo** y **Mensaje**, y borre el cuadro de texto **Identificador**.  
+     Si conoce el tipo de mensaje o el identificador de mensaje que desea, selecciónelos desde el **tipo** y **mensaje** menús desplegables y desactive el **controlar** cuadro de texto.  
   
-4.  Borre cualquier campo para el que no desee especificar valores.  
+4.  Desactive los campos para los que no desea especificar los valores.  
   
     > [!TIP]
-    >  Para reducir el desorden de la pantalla, seleccione la opción **Ocultar Spy\+\+**.  Esta opción oculta la ventana principal de Spy\+\+ y deja únicamente el cuadro de diálogo **Buscar ventana** visible encima de las demás aplicaciones.  La ventana principal de Spy\+\+ se restaura al hacer clic en **Aceptar** o **Cancelar**, o al desactivar la opción **Ocultar Spy\+\+**.  
+    >  Para reducir la acumulación de elementos de pantalla, seleccione la **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.  
   
-5.  Elija **Arriba** o **Abajo** como dirección inicial de la búsqueda.  
+5.  Elija **una** o **hacia abajo** para la dirección inicial de la búsqueda.  
   
 6.  Haga clic en **Aceptar**.  
   
- Si se encuentra un mensaje coincidente, se resalta en la ventana de la vista Mensajes.  Vea [Vista Mensajes](../debugger/messages-view.md).
+ Si se encuentra un mensaje coincidente, se resalta en la ventana de vista de mensajes. Vea [la vista mensajes](../debugger/messages-view.md).

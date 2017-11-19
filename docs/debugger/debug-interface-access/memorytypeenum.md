@@ -1,59 +1,58 @@
 ---
-title: "MemoryTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MemoryTypeEnum (enumeración)"
+title: MemoryTypeEnum | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: MemoryTypeEnum enumeration
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: db6a66f8d496c73d05e05fd2f5398998c0a72484
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# MemoryTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Especifica el tipo de memoria de acceso.  
+# <a name="memorytypeenum"></a>MemoryTypeEnum
+Especifica el tipo de memoria para tener acceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 enum MemoryTypeEnum {  
-   MemTypeCode,  
-   MemTypeData,  
-   MemTypeStack,  
-   MemTypeAny = -1  
+   MemTypeCode,  
+   MemTypeData,  
+   MemTypeStack,  
+   MemTypeAny = -1  
 };  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `MemTypeCode`  
- Memoria del código de acceso únicamente.  
+ Tiene acceso a código sólo de memoria.  
   
  `MemTypeData`  
- Datos de acceso o memoria de montón.  
+ Tiene acceso a datos o la pila de la memoria.  
   
  `MemTypeStack`  
- Memoria del montón de acceso únicamente.  
+ Tiene acceso a la pila solo memoria.  
   
  `MemTypeAny`  
- Acceso a cualquier clase de memoria.  
+ Tiene acceso a cualquier tipo de memoria.  
   
-## Comentarios  
- Los valores de esta enumeración se pasan al método de [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) para limitar el acceso a diferentes tipos de memoria.  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración se pasan a la [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) método para limitar el acceso a diferentes tipos de memoria.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

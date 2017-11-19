@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,36 +12,23 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 565aaeb189ad129d5e4e26d9c73c080de2e77676
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>En el SDK de Visual Studio
+# <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 Esta sección proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.  
   
 ## <a name="extensibility-architecture"></a>Arquitectura de extensibilidad  
- En la siguiente ilustración muestra la arquitectura de extensibilidad de Visual Studio. VSPackages proporcionan funcionalidad de la aplicación, que se comparte entre el IDE como servicios. El IDE estándar también ofrece una amplia gama de servicios, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que proporcionan acceso a las funciones de ventana del IDE.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
+ En la siguiente ilustración muestra la arquitectura de extensibilidad de Visual Studio. VSPackages proporcionan funcionalidad de la aplicación, que se comparte entre el IDE como servicios. El IDE estándar también ofrece una amplia gama de servicios, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que proporcionan acceso a las funciones de ventana del IDE.  
   
- ![Gráfico de arquitectura de entorno](~/extensibility/internals/media/environment.gif "environment")  
+ ![Gráfico de arquitectura de entorno](../../extensibility/internals/media/environment.gif "entorno")  
 Vista generalizada de la arquitectura de Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -51,7 +37,7 @@ Vista generalizada de la arquitectura de Visual Studio
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  El shell de Visual Studio proporciona funcionalidad básica y admitir la comunicación cruzada entre sus extensiones de componentes de MEF y VSPackages. Para obtener más información, consulte [Shell de Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Directrices de experiencia del usuario  
+## <a name="user-experience-guidelines"></a>Directrices de la experiencia de usuario  
  Si va a diseñar nuevas características de Visual Studio, debería echarle un vistazo en estas instrucciones para obtener sugerencias de diseño y facilidad de uso: [instrucciones para la experiencia del usuario de Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Comandos  
@@ -59,7 +45,7 @@ Vista generalizada de la arquitectura de Visual Studio
   
  Cuando se amplía Visual Studio, puede crear comandos y regístrelos con el shell de Visual Studio. Puede especificar cómo estos comandos se mostrará en el IDE, por ejemplo, en un menú o barra de herramientas. Normalmente un comando personalizado aparece en el **herramientas** menú y un comando para mostrar una ventana de herramientas aparecerían en el **otras ventanas** submenú de la **vista** menú.  
   
- Cuando se crea un comando, también debe crear un controlador de eventos para él. El controlador de eventos determina si el comando es visible o está habilitado, permite modificar su texto y garantiza que el comando responde correctamente cuando se activa. En la mayoría de los casos, el IDE controla los comandos mediante el uso de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>interfaz.</xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Comandos de Visual Studio se controlan empezando por el contexto de los comandos más interno, según la selección local y continuando hasta el contexto más externo, según la selección global. Los comandos agregados al menú principal están disponibles inmediatamente para los scripts.  
+ Cuando se crea un comando, también debe crear un controlador de eventos para él. El controlador de eventos determina si el comando es visible o está habilitado, permite modificar su texto y garantiza que el comando responde correctamente cuando se activa. En la mayoría de los casos, el IDE controla los comandos mediante el uso de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Comandos de Visual Studio se controlan empezando por el contexto de los comandos más interno, según la selección local y continuando hasta el contexto más externo, según la selección global. Los comandos agregados al menú principal están disponibles inmediatamente para los scripts.  
   
  Para obtener más información, consulte [comandos, menús y barras de herramientas](../../extensibility/internals/commands-menus-and-toolbars.md).  
   
@@ -75,7 +61,7 @@ Vista generalizada de la arquitectura de Visual Studio
   
  Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas.  
   
- ![Captura de pantalla](~/extensibility/internals/media/t1gui.png "T1gui")  
+ ![Captura de pantalla](../../extensibility/internals/media/t1gui.png "T1gui")  
   
  Algunas de las ventanas de herramientas se acoplan entre sí en un solo panel que muestra la ventana de herramientas del explorador de soluciones y oculta las otras ventanas de herramientas, pero hace que estén disponibles, haga clic en las pestañas. La imagen muestran dos ventanas de herramientas, el **lista de errores** y **salida** ventana, acoplada juntas en un único panel.  
   
@@ -118,7 +104,7 @@ Vista generalizada de la arquitectura de Visual Studio
  Para obtener más información, consulte [Agregar proyecto y plantillas de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Propiedades y opciones  
- El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados: [extender propiedades](../../extensibility/internals/extending-properties.md) páginas de opciones contienen conjuntos de opciones que forman parte de un componente determinado, como un lenguaje de programación o un paquete VSPackage: [opciones y páginas de opciones](../../extensibility/internals/options-and-options-pages.md). Configuración es características suelen estar relacionados con la interfaz de usuario que se pueden importar y exportar: [soporte técnico para la configuración de usuario de](../../extensibility/internals/support-for-user-settings.md).  
+ El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados: [extender propiedades](../../extensibility/internals/extending-properties.md) páginas de opciones contienen conjuntos de opciones que pertenecen a un componente determinado, como un lenguaje de programación o un paquete VSPackage: [opciones y páginas de opciones](../../extensibility/internals/options-and-options-pages.md). Configuración es características suelen estar relacionados con la interfaz de usuario que se pueden importar y exportar: [soporte técnico para la configuración de usuario de](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Servicios de Visual Studio  
  Un servicio proporciona un conjunto específico de interfaces de componentes consumir. Visual Studio proporciona un conjunto de servicios que puede usarse en los componentes, incluidas las extensiones. Por ejemplo, los servicios de Visual Studio permiten a las ventanas de herramientas pueden mostrarse u oculto de forma dinámica, habilitar el acceso a la Ayuda, barra de estado o eventos de interfaz de usuario. El editor de Visual Studio también proporciona servicios que pueden importarse por extensiones de editor. Para obtener más información, consulte [Using y proporcionar servicios](../../extensibility/using-and-providing-services.md).  

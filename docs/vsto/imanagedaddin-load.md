@@ -1,56 +1,55 @@
 ---
-title: "IManagedAddin::Load"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "IManagedAddin::Load"
-  - "Load (método)"
+title: 'IManagedAddIn:: Load | Documentos de Microsoft'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 3faf9312-8ab4-4960-b2e7-8ca9859a3dcf
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 62c1af72158c0b416942e9124003dbeb06b584ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IManagedAddin::Load
+# <a name="imanagedaddinload"></a>IManagedAddin::Load
   Se llama a este elemento cuando se carga un complemento VSTO administrado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
 |*bstrManifestURL*|Ruta de acceso del manifiesto del complemento VSTO.|  
-|*pdispApplication*|Un puntero a un IDispatch que representa la aplicación host que está cargando el complemento VSTO.|  
+|*pdispApplication*|Un puntero a una interfaz IDispatch que representa la aplicación host que se está cargando el complemento de VSTO.|  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Un valor HRESULT que indica si el método se ha completado correctamente.  
   
-## Comentarios  
- Un manifiesto es un archivo \(normalmente un archivo XML\) que proporciona información que se usa para cargar el complemento VSTO. Por ejemplo, un manifiesto puede especificar la ubicación del ensamblado del complemento VSTO y la clase de punto de entrada, para así poder crear una instancia cuando se carga el complemento VSTO.  
+## <a name="remarks"></a>Comentarios  
+ Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO. Por ejemplo, un manifiesto puede especificar la ubicación del ensamblado del complemento VSTO y la clase de punto de entrada, para así poder crear una instancia cuando se carga el complemento VSTO.  
   
- El parámetro *bstrManifestURL* contiene el valor de la entrada `Manifest` que se encuentra en la clave de registro HKEY\_CURRENT\_USER\\Software\\Microsoft\\Office\\*\<nombre de la aplicación\>*\\Addins\\*\<identificador del complemento\>* del complemento VSTO. Para obtener más información, consulta [Interfaz IManagedAddin](../vsto/imanagedaddin-interface.md).  
+ El *bstrManifestURL* parámetro contiene el valor de la `Manifest` entrada bajo el HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nombre de aplicación >*\Addins\\*\<identificador del complemento >* clave del registro para el complemento de VSTO. Para obtener más información, consulta [IManagedAddin Interface](../vsto/imanagedaddin-interface.md).  
   
  Implemente el método [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) para realizar tareas como configurar el dominio de la aplicación y la directiva de seguridad del complemento VSTO que se va a cargar.  
   
-## Vea también  
- [Interfaz IManagedAddin](../vsto/imanagedaddin-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
   
   

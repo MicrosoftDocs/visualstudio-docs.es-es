@@ -1,52 +1,52 @@
 ---
-title: "IDebugStackFrame2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
+title: IDebugStackFrame2::GetDebugProperty | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2::GetDebugProperty
+helpviewer_keywords: IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1340313a66a3c58759f1cd91bc967a3d95ac93ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2::GetDebugProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-obtiene una descripción de las propiedades de un marco de pila.  
+# <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
+Obtiene una descripción de las propiedades de un marco de pila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppDebugProp  
+```cpp  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppDebugProp  
 );  
 ```  
   
-```c#  
-int GetDebugProperty (   
-   out IDebugProperty2 ppDebugProp  
+```csharp  
+int GetDebugProperty (   
+   out IDebugProperty2 ppDebugProp  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppDebugProp`  
- \[out\]  Devuelve un objeto de [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que describe las propiedades de este marco de pila.  
+ [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que describe las propiedades de este marco de pila.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Llamar al método de [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) con los filtros adecuados pueden recuperar las variables locales, los parámetros de método, registros, y puntero “this” asociado al marco de pila.  
+## <a name="remarks"></a>Comentarios  
+ Llamar a la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método con los filtros correspondientes puede recuperar las variables locales, los parámetros de método, los registros y puntero "this" asociados con el marco de pila.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

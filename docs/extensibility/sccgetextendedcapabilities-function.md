@@ -1,59 +1,60 @@
 ---
-title: "SccGetExtendedCapabilities (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetExtendedCapabilities"
-helpviewer_keywords: 
-  - "SccGetExtendedCapabilities (función)"
+title: "Función SccGetExtendedCapabilities | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccGetExtendedCapabilities
+helpviewer_keywords: SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d5134116a9d6a8d7872692e88ecd8adf60e9c02e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccGetExtendedCapabilities (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta función devuelve capacidades adicionales compatibles con el complemento de control de código fuente.  
+# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities (función)
+Esta función devuelve funcionalidades adicionales compatibles con el complemento de control de código fuente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 SCCRTN SccGetExtendedCapabilities(  
-   LPVOID pContext,  
-   LONG lSccExCaps,   LPBOOL pbSupported  
+   LPVOID pContext,  
+   LONG lSccExCaps,  
+   LPBOOL pbSupported  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- \[in\] El puntero de contexto de complemento de control de código fuente.  
+ [in] El puntero de contexto de complemento de control de código fuente.  
   
  lSccExCaps  
- \[in\] Un indicador que especifica una funcionalidad extendida para el que se va a probar \(vea la tabla de código de capacidad total de [Marcadores de capacidad](../extensibility/capability-flags.md) para las marcas posibles\).  
+ [in] Un indicador que especifica una capacidad ampliada para la que se va a probar (vea la tabla de código de funcionalidad extendida de [capacidad marcas](../extensibility/capability-flags.md) para las marcas posibles).  
   
  pbSupported  
- \[out\] Devuelve un valor no es cero \(`TRUE`\) si se admite la capacidad especificada; en caso contrario, devuelve cero \(`FALSE`\).  
+ [out] Devuelve distinto de cero (`TRUE`) si se admite la capacidad especificada; en caso contrario, devuelve cero (`FALSE`).  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|La operación de capacidad get finalizada correctamente.|  
-|SCC\_E\_UNKNOWNERROR<br /><br /> SCC\_E\_NONSPECIFICERROR|Error desconocido o no especificado.|  
+|SCC_OK|La operación de capacidad de get finalizada correctamente.|  
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Error desconocido o no especificado.|  
   
-## Comentarios  
- Este método se llama a petición; es decir, cuando se necesita una capacidad ser probado, se llama a este método para determinar si el que se admite la capacidad. Se especifica solo un marcador a la vez.  
+## <a name="remarks"></a>Comentarios  
+ Este método se llama a petición; es decir, cuando se necesita una capacidad va a probar, se llama a este método para determinar si el que se admite la capacidad. Se especifica solo un marcador a la vez.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Códigos de error](../extensibility/error-codes.md)   
  [Marcadores de capacidad](../extensibility/capability-flags.md)

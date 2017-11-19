@@ -1,51 +1,51 @@
 ---
-title: "CA2221: Debe proteger los finalizadores | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
-helpviewer_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
+title: 'CA2221: Los finalizadores deben protegerse | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2221
+- FinalizersShouldBeProtected
+helpviewer_keywords:
+- FinalizersShouldBeProtected
+- CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ff2d5cd64a77f09437a07b446f486e1c2dd5024
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2221: Debe proteger los finalizadores
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
 |||  
 |-|-|  
 |TypeName|FinalizersShouldBeProtected|  
 |Identificador de comprobación|CA2221|  
 |Categoría|Microsoft.Usage|  
-|Cambio problemático|No|  
+|Cambio problemático|No trascendental|  
   
-## Motivo  
- Un tipo público implementa un finalizador que no especifica el acceso de familia \(protegido\).  
+## <a name="cause"></a>Motivo  
+ Un tipo público implementa un finalizador que no especifica la familia de acceso (protegido).  
   
-## Descripción de la regla  
- Los finalizadores deben utilizar el modificador de acceso de familia.  Los compiladores de C\#, Visual Basic y C\+\+ fuerzan esta regla.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Los finalizadores deben utilizar el modificador de acceso de familia. Esta regla se aplica a los compiladores de C#, Visual Basic y Visual C++.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el finalizador para que las familias sean accesibles.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie el finalizador para que sea accesible para la familia.  
   
-## Cuándo suprimir advertencias  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima las advertencias de esta regla.  
   
-## Ejemplo  
- Esta regla no se puede infringir en cualquier lenguaje de .NET de alto nivel; se puede infringir si está escribiendo con lenguaje intermedio de Microsoft.  
+## <a name="example"></a>Ejemplo  
+ No se infringe esta regla en cualquier lenguaje de .NET Framework de alto nivel; se puede infringir si está escribiendo el lenguaje intermedio de Microsoft.  
   
 ```  
 // =============== CLASS MEMBERS DECLARATION ===================  
@@ -80,5 +80,5 @@ manager: "wpickett"
 } // end of namespace  
 ```  
   
-## Vea también  
- [Patrón de Dispose](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>Vea también  
+ [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

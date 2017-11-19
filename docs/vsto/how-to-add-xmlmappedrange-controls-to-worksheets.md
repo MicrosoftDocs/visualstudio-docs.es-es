@@ -1,72 +1,74 @@
 ---
-title: "C&#243;mo: Agregar controles XMLMappedRange a hojas de c&#225;lculo"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "controles [desarrollo de Office en Visual Studio], agregar a hojas de cálculo"
-  - "XMLMappedRange (control), agregar a hojas de cálculo"
+title: "Cómo: agregar controles XMLMappedRange a hojas de cálculo | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XMLMappedRange control, adding to worksheets
+- controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: e1d4f2a8-1157-49c2-9158-a1253b709cb8
-caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0d83241e265db0e0ef0165cbc1615f23ea2ec5a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar controles XMLMappedRange a hojas de c&#225;lculo
-  Cuando se asigna un elemento XML a una celda en Microsoft Office Excel, Visual Studio agrega automáticamente un control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> a la hoja de cálculo.  
+# <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Cómo: Agregar controles XMLMappedRange a hojas de cálculo
+  Al asignar un elemento XML a una celda en Microsoft Office Excel, Visual Studio agrega automáticamente un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control a la hoja de cálculo.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
 > [!NOTE]  
->  El control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> no está disponible en el **Cuadro de herramientas** ni en la ventana **Orígenes de datos**.  Además, no puede crear controles <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mediante programación.  
+>  El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control no está disponible en la **cuadro de herramientas** o **orígenes de datos** ventana. Además, no se puede crear <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controles mediante programación.  
   
-### Para agregar un control XMLMappedRange a una hoja de cálculo  
+### <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Para agregar un control XMLMappedRange a una hoja de cálculo  
   
-1.  Abra el libro de Excel en el diseñador de Visual Studio.  
+1.  Abra el libro de Excel en el Diseñador de Visual Studio.  
   
-2.  Abra la hoja de cálculo a la que desee agregar el control.  
+2.  Abra la hoja de cálculo en la que desea agregar el control.  
   
-3.  En la pestaña **Desarrollador**, haga clic en **Código fuente**.  
-  
-    > [!NOTE]  
-    >  Si la ficha **Desarrollador** no está visible en la cinta de opciones, debe habilitarla.  Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
-  
-     Se abre el panel de tareas **Código fuente XML**.  
-  
-4.  En el panel de tareas **Código fuente XML**, haga clic en **Asignaciones XML**.  
-  
-5.  En el cuadro de diálogo **Asignaciones XML**, haga clic en **Agregar**.  
-  
-     Aparecerá el cuadro de diálogo **Código fuente XML**.  
-  
-6.  Seleccione un esquema XML en el cuadro de diálogo **Código fuente XML** y haga clic en **Abrir**.  
-  
-     El esquema se agrega al cuadro de diálogo **Asignaciones XML**.  
-  
-7.  En el cuadro de diálogo **Asignaciones XML**, haga clic en **Aceptar**.  
-  
-8.  Arrastre un elemento desde el panel de tareas **Código fuente XML** hacia una celda de la hoja de cálculo.  
-  
-     Se crea un control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> que se agrega al proyecto.  
+3.  En el **Developer** , haga clic en **origen**.  
   
     > [!NOTE]  
-    >  Si arrastra un elemento principal desde el panel de tareas **Código fuente XML**, se crea un control <xref:Microsoft.Office.Tools.Excel.ListObject>.  
+    >  Si el **Developer** ficha no está visible en la cinta de opciones, debe habilitarla. Para obtener más información, consulta [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-## Vea también  
- [XmlMappedRange &#40;Control&#41;](../vsto/xmlmappedrange-control.md)   
+     El **origen XML** aparece el panel de tareas.  
+  
+4.  En el **origen XML** panel de tareas, haga clic en **asignaciones XML**.  
+  
+5.  En el **asignaciones XML** cuadro de diálogo, haga clic en **agregar**.  
+  
+     El **origen XML** aparece el cuadro de diálogo.  
+  
+6.  Seleccione un esquema XML desde el **origen XML** cuadro de diálogo y haga clic en **abiertos**.  
+  
+     El esquema se agrega a la **asignaciones XML** cuadro de diálogo.  
+  
+7.  En el **asignaciones XML** cuadro de diálogo, haga clic en **Aceptar**.  
+  
+8.  Arrastre un elemento desde el **origen XML** panel de tareas hasta una celda en la hoja de cálculo.  
+  
+     Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> se crea y se agrega al proyecto.  
+  
+    > [!NOTE]  
+    >  Si se arrastra un elemento primario de la **origen XML** panel de tareas, una <xref:Microsoft.Office.Tools.Excel.ListObject> se crea el control.  
+  
+## <a name="see-also"></a>Vea también  
+ [XmlMappedRange (Control)](../vsto/xmlmappedrange-control.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
- [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Cómo: Asignar esquemas a hojas de cálculo en Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

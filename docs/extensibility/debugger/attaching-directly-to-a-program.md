@@ -1,46 +1,47 @@
 ---
-title: "Asociar directamente a un programa | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "motores de depuración, asociar a programas"
+title: Conectar directamente a un programa | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8818a57d50595b3c40fa45875a1dfe23d34fb369
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Asociar directamente a un programa
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Los usuarios que desean a los programas de depuración en un proceso que está ejecutando normalmente siguen este proceso:  
+# <a name="attaching-directly-to-a-program"></a>Conectar directamente a un programa
+Los usuarios que van a depurar programas en un proceso que ya se está ejecutando normalmente siguen este proceso:  
   
-1.  En el IDE, elija el comando de **Procesos de depuración** de menú de **Herramientas** .  
+1.  En el IDE, elija la **procesos de depuración** línea de comandos desde el **herramientas** menú.  
   
-     Aparecerá el cuadro de diálogo **Procesos**.  
+     El **procesos** aparece el cuadro de diálogo.  
   
-2.  Elija un proceso y haga clic en el botón de **Asociar** .  
+2.  Elija un proceso y haga clic en el **adjuntar** botón.  
   
-     El cuadro de diálogo de **Adjuntar a procesar** aparece, enumerando todos los motores \(DEs\) de depuración instalados en el equipo.  
+     El **adjuntar al proceso** aparece el cuadro de diálogo, enumerar todos los motores de depuración (DEs) instalados en el equipo.  
   
-3.  Especifique el DES para utilizar para depurar el proceso seleccionado, haga clic en **Aceptar**.  
+3.  Especifique el DEs se usa para depurar el proceso seleccionado y, a continuación, haga clic en **Aceptar**.  
   
- El paquete de depuración inicia una sesión de depuración y pasa la lista de a.  La sesión de depuración a su vez pasa esta lista, junto con una función de devolución de llamada, el proceso seleccionado, y se pide el proceso para enumerar los programas en ejecución.  
+ El paquete de depuración inicia una sesión de depuración y le pasa la lista de DEs. La sesión de depuración a su vez pasa esta lista, junto con una función de devolución de llamada, para el proceso seleccionado y, a continuación, le pide el proceso para enumerar sus programas en ejecución.  
   
- Mediante programación, en respuesta a la solicitud de usuario, el paquete de depuración crea una instancia del administrador \(SDM\) de depuración de la sesión y pasa la lista de DES seleccionados a.  Junto con la lista, el paquete de depuración pasa el SDM una interfaz de [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) .  El paquete de depuración pasa la lista de el proceso seleccionado llamando a [IDebugProcess2:: Asociar](../../extensibility/debugger/reference/idebugprocess2-attach.md).  El SDM llama [IDebugProcess2:: EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) en el puerto para enumerar los programas que se ejecutan en el proceso.  
+ Mediante programación, en respuesta a la solicitud del usuario, el paquete de depuración crea una instancia del Administrador de sesión de depuración (SDM) y le pasa la lista de DEs seleccionado. Junto con la lista, el paquete de depuración pasa el SDM un [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) interfaz. El paquete de depuración pasa a la lista de DEs para el proceso seleccionado mediante una llamada a [IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md). El SDM, a continuación, llama [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) en el puerto para enumerar los programas que se ejecutan en el proceso.  
   
- Desde aquí, cada motor de depuración está asociado a un programa exactamente como se detalla en [Asociar Después una versión](../../extensibility/debugger/attaching-after-a-launch.md), con dos excepciones.  
+ Desde este punto, cada motor de depuración se adjunta a un programa exactamente como se detalla en [adjuntar después de iniciar un](../../extensibility/debugger/attaching-after-a-launch.md), con dos excepciones.  
   
- Para aumentar la eficacia, el DES que se implementan para compartir un espacio de direcciones con el SDM se agrupa de forma que cada OF tiene un conjunto de programas se adjuntará a.  En este caso, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) llama [IDebugEngine2:: Asociar](../../extensibility/debugger/reference/idebugengine2-attach.md) y se le pasa una matriz de programas a la asociación a.  
+ Para mejorar la eficacia, DEs que se implementan para compartir un espacio de direcciones con el SDM están agrupados para que cada Alemania tiene un conjunto de programas se asociará. En este caso, [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) llamadas [IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) y pasa una matriz de programas para adjuntar a.  
   
- La segunda excepción es que los eventos de inicio enviados por un OF que asocia un programa que se está ejecutando no incluyen normalmente el evento de punto de entrada.  
+ La segunda excepción es que los eventos de inicio enviados por una DE asociación a un programa que ya se está ejecutando no suele tener el evento de punto de entrada.  
   
-## Vea también  
- [Enviar eventos de inicio después de un lanzamiento](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+## <a name="see-also"></a>Vea también  
+ [Envío de eventos de inicio después de un lanzamiento](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

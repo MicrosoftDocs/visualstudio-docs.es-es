@@ -1,49 +1,50 @@
 ---
-title: "Referencia de la API (depuraci&#243;n de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], referencia de API"
+title: "Referencia de API (depuración de Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Referencia de la API (depuraci&#243;n de Visual Studio)
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-La sección de referencia incluye una introducción general de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API, y de una serie de ejemplos de código.  todas las referencias son enumeradas alfabéticamente por categoría.  
+# <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
+La sección de referencia incluye información general y conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias se muestran ordenados alfabéticamente por categoría.  
   
- La tabla siguiente se muestran los valores de `HRESULT` de común devueltos por métodos.  
+ La siguiente tabla muestra common `HRESULT` valores devueltos por métodos.  
   
 |Name|Descripción|Valor|  
 |----------|-----------------|-----------|  
-|S\_OK|Correcto.|0x00000000|  
-|E\_UNEXPECTED|error inesperado.|0x8000FFFF|  
-|E\_NOTIMPL|Sin implementar.|0x80004001|  
-|E\_OUTOFMEMORY|Memoria insuficiente para completar la operación.|0x8007000E|  
-|E\_INVALIDARG|Uno o varios argumentos no son válidos.|0x80070057|  
-|E\_NOINTERFACE|Ninguna como interfaz compatible.|0x80004002|  
-|E\_POINTER|Puntero no válido.|0x80004003|  
-|E\_HANDLE|Identificador no válido.|0x80070006|  
-|E\_ABORT|operación anulada.|0x80004004|  
-|E\_FAIL|error inesperado.|0x80004005|  
-|E\_ACCESSDENIED|error general de acceso denegado.|0x80070005|  
+|S_OK|Correcto.|0x00000000|  
+|E_UNEXPECTED|Error inesperado.|0x8000FFFF|  
+|E_NOTIMPL|Sin implementar.|0 x 80004001|  
+|E_OUTOFMEMORY|No hay suficiente memoria para completar la operación.|0x8007000E|  
+|E_INVALIDARG|Uno o más argumentos no son válidos.|0 x 80070057|  
+|E_NOINTERFACE|No se admite esta interfaz.|0 x 80004002|  
+|E_POINTER|Puntero no válido.|0 x 80004003|  
+|E_HANDLE|Identificador no válido.|0x80070006|  
+|E_ABORT|Se anuló la operación.|0x80004004|  
+|E_FAIL|Error inesperado.|0 x 80004005|  
+|E_ACCESSDENIED|Error de denegación de acceso general.|0 x 80070005|  
   
 > [!NOTE]
->  Cuando [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] de depuración método devuelve `S_OK`, se supone que todo out punteros de parámetro es válido, es decir, no se realiza ninguna validación de out punteros de parámetro cuando se devuelve `S_OK` .  
+>  Cuando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurar el método devuelve `S_OK`, se asume que todo punteros de parámetro son válidos, es decir, que no se realiza ninguna validación en los punteros de parámetro cuando `S_OK` se devuelve.  
   
 > [!NOTE]
->  Los parámetros no válidos o \[out\] de `NULL` pueden producir el IDE al bloqueo.  
+>  No válido o `NULL` [parámetros out] puede hacer que el IDE se bloquee.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   

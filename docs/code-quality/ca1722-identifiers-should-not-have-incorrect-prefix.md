@@ -1,29 +1,30 @@
 ---
-title: "CA1722: Los identificadores no deber&#237;an tener el prefijo incorrecto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
-  - "CA1722"
-helpviewer_keywords: 
-  - "CA1722"
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
+title: "CA1722: Los identificadores no deberían tener el prefijo incorrecto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotHaveIncorrectPrefix
+- CA1722
+helpviewer_keywords:
+- CA1722
+- IdentifiersShouldNotHaveIncorrectPrefix
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 84cf14fc28a3de1d6ff5bff9e40216953d5d1461
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1722: Los identificadores no deber&#237;an tener el prefijo incorrecto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Los identificadores no deberían tener el prefijo incorrecto
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|  
@@ -31,21 +32,21 @@ caps.handback.revision: 16
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un identificador tiene un prefijo incorrecto.  
   
-## Descripción de la regla  
+## <a name="rule-description"></a>Descripción de la regla  
  Por convención, sólo ciertos elementos de programación tienen nombres que comienzan con un prefijo concreto.  
   
- Los nombres de tipo no tienen un prefijo concreto y no se deben prefijar con una 'C'.  Esta regla crea un informe sobre las infracciones para los nombres de tipo como 'CMyClass' y no crea un informe sobre las infracciones para los nombres de tipo como 'Cache'.  
+ Nombres de tipo no tienen un prefijo concreto y no deben ir precedidos por una 'C'. Esta regla informa de las infracciones para los nombres de tipo como 'CMyClass' y no notifica las infracciones para los nombres de tipo como 'Cache'.  
   
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime.  Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
   
-## Cómo corregir infracciones  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Quite el prefijo del identificador.  
   
-## Cuándo suprimir advertencias  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima las advertencias de esta regla.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1715: Los identificadores deberían tener el prefijo correcto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

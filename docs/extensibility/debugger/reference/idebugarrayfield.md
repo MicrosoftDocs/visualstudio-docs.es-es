@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugArrayField
-helpviewer_keywords:
-- IDebugArrayField interface
+f1_keywords: IDebugArrayField
+helpviewer_keywords: IDebugArrayField interface
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: d294afcdbf434f65f556a3437af9cfa7e179703d
-ms.contentlocale: es-es
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 464da2f6a116a2eeb0cecee2f649df1c28401929
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 Esta interfaz describe un símbolo de matriz o un tipo.  

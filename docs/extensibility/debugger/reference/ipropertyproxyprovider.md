@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IPropertyProxyProvider
-helpviewer_keywords:
-- IPropertyProxyProvider interface
+f1_keywords: IPropertyProxyProvider
+helpviewer_keywords: IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 73a1a1a189e4922d662081a92738b1c35c6bb291
-ms.contentlocale: es-es
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: de400fc9e5b631a7ccffb0547fa693a8bf0ac419
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 Esta interfaz proporciona una interfaz de proxy para ver y cambiar los datos de un objeto.  

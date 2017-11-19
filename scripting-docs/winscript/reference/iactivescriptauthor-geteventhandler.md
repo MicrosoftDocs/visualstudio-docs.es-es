@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetEventHandler | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetEventHandler | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetEventHandler
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetEventHandler"
+helpviewer_keywords: IActiveScriptAuthor::GetEventHandler
 ms.assetid: 87c7a71d-46b9-448c-b34d-394105e20982
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2b09f900162b6dba82696c946b53ab131691530c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetEventHandler
+# <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
 Devuelve el scriptlet que tiene los atributos especificados.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetEventHandler(  
@@ -33,31 +36,31 @@ HRESULT GetEventHandler(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdisp`  
- \[in\] objeto de El `IDispatch` que corresponde a `NamedItem` a las que se asocia el scriptlet.  
+ [in] El `IDispatch` objeto que corresponde a la `NamedItem` a la que está asociado el scriptlet.  
   
  `pszItem`  
- \[in\] dirección de búfer del identificador de nivel superior del nombre completo del scriptlet en el host.  
+ [in] La dirección del búfer del identificador del nivel superior del nombre completo scriptlet en el host.  
   
  `pszSubItem`  
- \[in\] dirección de búfer del identificador del segundo nivel de nombre completo del scriptlet en el host.  Establezca en NULL si el nombre tiene un solo nivel.  
+ [in] La dirección del búfer del identificador de segundo nivel del nombre completo scriptlet en el host. Se establece en NULL si el nombre tiene un solo nivel.  
   
  `pszEvent`  
- \[in\] dirección de un búfer que contiene el nombre del evento.  El scriptlet es un controlador para este evento.  
+ [in] La dirección de un búfer que contiene el nombre del evento. El scriptlet es un controlador de eventos para este evento.  
   
  `ppse`  
- \[out\] dirección de una variable que recibe un puntero a la interfaz de `IScriptEntry` de scriptlet que tiene los atributos especificados.  
+ [out] La dirección de una variable que recibe un puntero a la `IScriptEntry` interfaz del scriptlet que tiene los atributos especificados.  
   
-## Valor devuelto  
- Interfaz `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Vea también  
- [IActiveScriptAuthor \(Interfaz\)](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IScriptEntry \(Interfaz\)](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IActiveScriptAuthor (interfaz)](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

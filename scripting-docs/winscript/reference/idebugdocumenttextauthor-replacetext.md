@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentTextAuthor::ReplaceText | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentTextAuthor.ReplaceText
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentTextAuthor::ReplaceText"
+helpviewer_keywords: IDebugDocumentTextAuthor::ReplaceText
 ms.assetid: f89304e6-5be0-45a5-947d-2c59c3c0a05e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentTextAuthor::ReplaceText
-Reemplaza el texto en el documento.  
+# <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
+Reemplaza el texto del documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT ReplaceText(  
@@ -31,25 +34,25 @@ HRESULT ReplaceText(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- \[in\] ubicación de inicio del intervalo de caracteres a reemplazar.  
+ [in] Iniciar ubicación del intervalo de caracteres para reemplazar.  
   
  `cNumToReplace`  
- \[in\] número de caracteres que se va a reemplazar.  
+ [in] Número de caracteres que se va a reemplazar.  
   
  `pcharText[]`  
- \[in\] búfer de que contiene los caracteres nuevos para reemplazar los antiguos caracteres.  
+ [in] Un búfer que contiene los nuevos caracteres para reemplazar los caracteres anteriores.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método reemplaza el texto en el documento.  
+## <a name="remarks"></a>Comentarios  
+ Este método reemplaza el texto del documento.  
   
-## Vea también  
- [IDebugDocumentTextAuthor \(Interfaz\)](../../winscript/reference/idebugdocumenttextauthor-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugDocumentTextAuthor (Interfaz)](../../winscript/reference/idebugdocumenttextauthor-interface.md)

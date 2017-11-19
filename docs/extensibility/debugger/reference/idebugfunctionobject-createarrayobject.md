@@ -1,76 +1,76 @@
 ---
-title: "IDebugFunctionObject::CreateArrayObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject (método)"
+title: IDebugFunctionObject::CreateArrayObject | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugFunctionObject::CreateArrayObject
+helpviewer_keywords: IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f5a567b906be7e295a8ea1c32f9fdbe19320bd5f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionObject::CreateArrayObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Crea un objeto array.  Esta matriz puede contener valores de primitivo o la instancia de objeto.  
+# <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
+Crea un objeto de matriz. Esta matriz puede contener a cualquier tipo primitivo o valores de la instancia del objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT CreateArrayObject(   
-   OBJECT_TYPE    ot,  
-   IDebugField*   pClassField,  
-   DWORD          dwRank,  
-   DWORD          dwDims[],  
-   DWORD          dwLowBounds[],  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT CreateArrayObject(   
+   OBJECT_TYPE    ot,  
+   IDebugField*   pClassField,  
+   DWORD          dwRank,  
+   DWORD          dwDims[],  
+   DWORD          dwLowBounds[],  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateArrayObject(  
-   enum_OBJECT_TYPE ot,   
-   IDebugField      pClassField,   
-   uint             dwRank,   
-   uint[]           dwDims,   
-   uint[]           dwLowBounds,   
-   out IDebugObject ppObject  
+   enum_OBJECT_TYPE ot,   
+   IDebugField      pClassField,   
+   uint             dwRank,   
+   uint[]           dwDims,   
+   uint[]           dwLowBounds,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ot`  
- \[in\]  Especifica un valor de enumeración de [OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md) que indica el tipo de objeto array.  
+ [in] Especifica un valor de la [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeración que indica el tipo del nuevo objeto de matriz.  
   
  `pClassField`  
- \[in\]  Un objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa la clase de un objeto, si crea una matriz de valores de la instancia de objeto.  Si crea una matriz de objetos primitivos, este parámetro es un valor null.  
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa la clase de un objeto, si crea una matriz de objetos en valores de instancia. Si crea una matriz de objetos simples, este parámetro es un valor null.  
   
  `dwRank`  
- \[in\]  La fila o el número de dimensiones de la matriz.  
+ [in] El rango o el número de dimensiones de la matriz.  
   
  `dwDims`  
- \[in\]  Los tamaños de cada dimensión de la matriz.  
+ [in] Los tamaños de cada dimensión de la matriz.  
   
  `dwLowBounds`  
- \[in\]  El origen de cada dimensión \(normalmente 0 o 1\).  
+ [in] El origen de cada dimensión (normalmente 0 o 1).  
   
  `ppObject`  
- \[out\]  Devuelve un objeto de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa la matriz creada recientemente.  esto es realmente un objeto de [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) .  
+ [out] Devuelve un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa la matriz recién creada. Esto es realmente una [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) objeto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Llame a este método para crear un objeto que representa un parámetro de matriz a la función representada por la interfaz de [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
+## <a name="remarks"></a>Comentarios  
+ Llamar a este método para crear un objeto que representa un parámetro de matriz a la función que se representa mediante el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

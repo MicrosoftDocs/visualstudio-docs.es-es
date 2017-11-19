@@ -1,61 +1,61 @@
 ---
-title: "IEnumDebugFields | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFields"
-helpviewer_keywords: 
-  - "Interfaz IEnumDebugFields"
+title: IEnumDebugFields | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugFields
+helpviewer_keywords: IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ed697205a5cd7d866df639e2908e3cc0b4fa2f72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugFields
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-esta interfaz representa una colección de objetos que implementan la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
+# <a name="ienumdebugfields"></a>IEnumDebugFields
+Esta interfaz representa una colección de objetos que implementan la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IEnumDebugFields : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Esta interfaz está implementada por el proveedor de token para que los conjuntos de objetos que implementan la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  Observe que esto no es una enumeración COM estándar debido a la presencia del método de [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Esta interfaz se implementa mediante el proveedor de símbolos para ofrecer conjuntos de objetos que implementan la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz. Tenga en cuenta que esto no es una enumeración de COM estándar debido a la presencia de la [GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md) método.  
   
-## Notas para los llamadores  
- esta interfaz es devuelta por [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) y [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md).  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz es devuelto por [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md) y [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md).  
   
-## métodos en el orden de Vtable  
- esta interfaz implementa los métodos siguientes.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Esta interfaz implementa los métodos siguientes.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Siguiente](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera el conjunto de objetos de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de enumeración.|  
+|[Siguiente](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera el siguiente conjunto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos de la enumeración.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Omite un número especificado de entradas.|  
-|[Restablecer](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|restablece la enumeración a la primera entrada.|  
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|recupera una copia de la enumeración actual.|  
+|[Restablecer](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Restablece la enumeración a la primera entrada.|  
+|[Clon](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Recupera una copia de la enumeración actual.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Recupera el número de entradas de la enumeración.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Requisitos  
- encabezado: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)   

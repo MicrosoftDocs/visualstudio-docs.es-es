@@ -1,55 +1,55 @@
 ---
-title: "IDebugProgram2::GetProcess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetProcess"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetProcess"
+title: IDebugProgram2::GetProcess | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetProcess
+helpviewer_keywords: IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6d085c149c72393f0179ad6b6b50334426777d9c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetProcess
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtenga el proceso que este programa ejecuta en.  
+# <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
+Obtener el proceso que se ejecuta este programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 HRESULT GetProcess(  
-   IDebugProcess2** ppProcess  
+   IDebugProcess2** ppProcess  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetProcess(  
-   out IDebugProcess2 ppProcess  
+   out IDebugProcess2 ppProcess  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppProcess`  
- \[out\]  devuelve la interfaz de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa el proceso.  
+ [out] Devuelve el [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfaz que representa el proceso.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- A menos que un motor de depuración \(DE\) implementa la interfaz de [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) , la implementación de este método debe devolver siempre `E_NOTIMPL` porque un OF no puede determinar que el proceso se ejecuta en y por tanto no puede satisfacer una implementación de este método.  
+## <a name="remarks"></a>Comentarios  
+ A menos que un motor de depuración (Alemania) implementa la [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md) implementación de Alemania de este método de interfaz, siempre debería devolver `E_NOTIMPL` porque un Alemania no puede determinar qué proceso se ejecuta en y, por tanto, no se puede satisface una implementación de este método.  
   
- Implementar la interfaz de `IDebugEngineLaunch2` significa que el OF debe saber cómo crear un proceso; por consiguiente, la implementación de la interfaz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) puede saber qué proceso se ejecuta en.  
+ Implementar la `IDebugEngineLaunch2` interfaz significa que la DE debe saber cómo crear un proceso; por lo tanto, la implementación de Alemania de la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaz es capaz de saber qué proceso se ejecuta en.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

@@ -1,56 +1,57 @@
 ---
-title: "C&#243;mo: Agregar una propiedad personalizada"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.BDC.Property_Editor"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [desarrollo de SharePoint en Visual Studio], propiedades personalizadas"
-  - "BDC [desarrollo de SharePoint en Visual Studio], propiedades"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], propiedades personalizadas"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], propiedades"
+title: "Cómo: agregar una propiedad personalizada | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.BDC.Property_Editor
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], properties
+- Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
+- BDC [SharePoint development in Visual Studio], custom properties
 ms.assetid: 670c7fff-a8fb-499f-8694-d5aecc432c16
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b087ae9f767ed762b6d9269f60f2612127bdc705
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar una propiedad personalizada
-  Puede agregar propiedades personalizadas al modelo utilizando el **Editor de propiedades**.  Puede tener acceso a estas propiedades en el código para recuperar información, como las cadenas de conexión y otros datos en tiempo de ejecución.  
+# <a name="how-to-add-a-custom-property"></a>Cómo: Agregar una propiedad personalizada
+  Puede agregar propiedades personalizadas al modelo mediante la **Editor de propiedades**. Puede tener acceso a estas propiedades en el código para recuperar información como cadenas de conexión y otros datos en tiempo de ejecución.  
   
-### Para agregar una propiedad personalizada  
+### <a name="to-add-a-custom-property"></a>Para agregar una propiedad personalizada  
   
-1.  En **Explorador de BDC**, elija el nodo que representa el elemento de modelo al que desea aplicar una propiedad personalizada.  
+1.  En el **Explorador de BDC**, elija el nodo que representa el elemento de modelo al que desea aplicar una propiedad personalizada.  
   
-2.  En la barra de menús, elija **Ver** y después elija **Ventana Propiedades**.  
+2.  En la barra de menús, elija **vista**, **ventana propiedades**.  
   
-3.  En la ventana de **Propiedades** , elija la propiedad de **Propiedades personalizadas** , y elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\).  
+3.  En el **propiedades** ventana, elija la **propiedades personalizadas** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de Mobile NET")).  
   
-     Aparecerá el cuadro de diálogo **Editor de propiedades**.  
+     El **Editor de propiedades** aparece el cuadro de diálogo.  
   
-4.  En el cuadro de texto de la columna de **Name** , especifique el nombre de la propiedad.  
+4.  En el cuadro de texto en el **nombre** columna, especifique el nombre de la propiedad.  
   
-5.  Para el campo de **Tipo** de la propiedad personalizada, elija el tipo de datos adecuado.  
+5.  Para el **tipo** campo de la propiedad personalizada, elija el tipo de datos adecuado.  
   
-6.  Para el campo de **Valor** de la propiedad personalizada, especifique un valor, y elija el botón de **Aceptar** .  
+6.  Para el **valor** campo de la propiedad personalizada, especifique un valor y, a continuación, elija la **Aceptar** botón.  
   
-## Vea también  
- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Crea un modelo de conectividad a datos profesionales](../sharepoint/creating-a-business-data-connectivity-model.md)   
+## <a name="see-also"></a>Vea también  
+ [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Integrar Datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

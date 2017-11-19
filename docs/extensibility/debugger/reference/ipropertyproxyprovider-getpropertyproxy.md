@@ -1,59 +1,59 @@
 ---
-title: "IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyProvider::GetPropertyProxy"
-helpviewer_keywords: 
-  - "IPropertyProxyProvider::GetPropertyProxy"
+title: IPropertyProxyProvider::GetPropertyProxy | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IPropertyProxyProvider::GetPropertyProxy
+helpviewer_keywords: IPropertyProxyProvider::GetPropertyProxy
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9bd09c7f0490d70b969bf9def9870a3a33aac551
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IPropertyProxyProvider::GetPropertyProxy
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera la interfaz de proxy de propiedad para el identificador especificado de proxy  
+# <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
+Recupera la interfaz de proxy de propiedad para el identificador del proxy especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetPropertyProxy(  
-   DWORD                  dwID,  
-   IPropertyProxyEESide** proxy  
+   DWORD                  dwID,  
+   IPropertyProxyEESide** proxy  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPropertyProxy(  
-   uint                     dwID,  
-   out IPropertyProxyEESide proxy  
+   uint                     dwID,  
+   out IPropertyProxyEESide proxy  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwID`  
- \[in\]  Identificador del proxy deseado de la propiedad.  
+ [in] Id. del proxy de la propiedad deseada.  
   
  `proxy`  
- \[out\]  devuelve un objeto de [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  
+ [out] Devuelve un [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) objeto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Para admitir los visualizadores de tipo externo, este método transmite normalmente la llamada al método de [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) .  Vea [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener detalles sobre cómo se recopilan IEEVisualizerService.  
+## <a name="remarks"></a>Comentarios  
+ Para admitir los visualizadores de tipo externo, este método normalmente reenvía la llamada a la [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) método. Vea [Visualizing y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo se obtiene el IEEVisualizerService.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [Visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)

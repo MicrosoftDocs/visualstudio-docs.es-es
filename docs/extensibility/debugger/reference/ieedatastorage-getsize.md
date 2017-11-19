@@ -1,52 +1,52 @@
 ---
-title: "IEEDataStorage::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEDataStorage::GetSize"
-helpviewer_keywords: 
-  - "IEEDataStorage::GetSize"
+title: IEEDataStorage::GetSize | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEDataStorage::GetSize
+helpviewer_keywords: IEEDataStorage::GetSize
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dd0ec398877a581109f864411ede684147e86ebd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEEDataStorage::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-devuelve el número de bytes contenidos en este objeto.  
+# <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
+Devuelve el número de bytes incluidos en este objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(  
-   ULONG* size  
+   ULONG* size  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSize(  
-   out uint size  
+   out uint size  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `size`  
- \[out\]  el número de bytes contenidos en este objeto.  
+ [out] El número de bytes incluidos en este objeto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- utilice el método de [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) para recuperar los bytes de datos reales.  
+## <a name="remarks"></a>Comentarios  
+ Use la [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) método para recuperar los bytes de datos reales.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

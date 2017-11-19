@@ -1,59 +1,58 @@
 ---
-title: "IDiaEnumDebugStreamData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreamData (interfaz)"
+title: IDiaEnumDebugStreamData | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreamData interface
 ms.assetid: e2023c32-4c05-4d0c-a0be-f016a230c788
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b3b2424f62db5c77de2030e641093802593f7094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreamData
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Proporciona acceso a los registros en una secuencia de datos de depuración.  
+# <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
+Proporciona acceso a los registros de un flujo de datos de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDiaEnumDebugStreamData : IUnknown  
 ```  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDiaEnumDebugStreamData`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDiaEnumDebugStreamData`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|recupera la versión de [IEnumVARIANT Interface](http://msdn.microsoft.com/es-es/139e3c93-faef-4003-9079-e0e94494db3e) de este enumerador.|  
-|[IDiaEnumDebugStreamData::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera el número de registros en la secuencia de datos de depuración.|  
-|[IDiaEnumDebugStreamData::get\_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Recupera el nombre de la secuencia de datos de depuración.|  
-|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|recupera el registro especificado.|  
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|recupera el número de registros especificado de la secuencia enumerada.|  
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Omite un número de registros especificado en una secuencia enumerada.|  
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Restablece el orden al principio.|  
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumerador que contiene el mismo orden que el enumerador actual.|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versión de este enumerador.|  
+|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera el número de registros en el flujo de datos de depuración.|  
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Recupera el nombre de la secuencia de datos de depuración.|  
+|[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Recupera el registro especificado.|  
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Recupera el número especificado de registros de la secuencia enumerada.|  
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Omite un número especificado de registros en una secuencia enumerada.|  
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Restablece la secuencia enumerada al principio.|  
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumerador que contiene la misma secuencia enumerada que el enumerador actual.|  
   
-## Comentarios  
- Esta interfaz representa una secuencia de registros en una secuencia de datos de depuración.  El tamaño y la interpretación de cada registro es dependientes en la secuencia de datos que el registro procede de.  Esta interfaz proporciona eficazmente el acceso a los bytes de datos sin formato del archivo de símbolos.  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz representa una secuencia de registros en un flujo de datos de depuración. El tamaño y la interpretación de cada registro es dependiente de la secuencia de datos procede del registro. Esta interfaz proporciona eficazmente el acceso a los bytes de datos sin procesar en el archivo de símbolos.  
   
-## Notas para los llamadores  
- Llame a los métodos de [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o de [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) para obtener un objeto de `IDiaEnumDebugStreamData` .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Llame a la [idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o [idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) métodos para obtener un `IDiaEnumDebugStreamData` objeto.  
   
-## Ejemplo  
- Este ejemplo muestra cómo obtener acceso a una sola secuencia de datos y sus registros.  
+## <a name="example"></a>Ejemplo  
+ Este ejemplo muestra cómo obtener acceso a una única secuencia de datos y sus registros.  
   
-```cpp#  
+```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  
 {  
     BSTR  wszName;  
@@ -104,14 +103,14 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 }  
 ```  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Vea también  
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+## <a name="see-also"></a>Vea también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

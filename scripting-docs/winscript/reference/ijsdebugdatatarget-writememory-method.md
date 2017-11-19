@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugDataTarget::WriteMemory (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugdatatarget:: WriteMemory (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.WriteMemory
 apilocation: jscript9diag.dll
 ms.assetid: 0d3c04c3-9ef8-4842-a145-3d29bca75062
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugDataTarget::WriteMemory (M&#233;todo)
+# <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory (Método)
 Lee la memoria del proceso de destino.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT WriteMemory(  
@@ -29,23 +33,23 @@ HRESULT WriteMemory(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `address`  
- \[in\] Dirección base en la que escribir la memoria del proceso de destino.  
+ [in] La dirección base del que se va a escribir en la memoria del proceso de destino.  
   
  `pMemory`  
- \[in\] Los datos a escribir en el espacio de direcciones de proceso especificado.  
+ [in] Los datos se escriban en el espacio de direcciones del proceso especificado.  
   
  `size`  
- \[in\] Número de bytes que se van a escribir en el proceso.  
+ [in] El número de bytes que se va a escribir en el proceso.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Comentarios  
- Antes de que se produzca la transferencia de datos, el sistema comprueba que se puede tener acceso de escritura a todos los datos de la dirección base y a la memoria del tamaño especificado y, si no es así, la función produce un error E\_JsDEBUG\_INVALID\_MEMORY\_ADDRESS.  
+## <a name="remarks"></a>Comentarios  
+ Antes de que ocurra la transferencia de datos, el sistema comprueba que todos los datos en la memoria del tamaño especificado y la dirección base es accesible para el acceso de escritura, y si no es accesible, la función genera un error E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebugDataTarget \(Interfaz\)](../../winscript/reference/ijsdebugdatatarget-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

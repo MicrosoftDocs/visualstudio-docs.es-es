@@ -1,68 +1,72 @@
 ---
-title: "IDispatchEx (Interfaz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDispatchEx (interfaz)"
-  - "IDispatchEx (interfaz), acerca de IDispatchEx"
+title: IDispatchEx (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- IDispatchEx interface, about IDispatchEx
+- IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a100a193f5e3abcb076fb8aaf3d64a0d0c38833
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx (Interfaz)
-`IDispatchEx`, una extensión de la interfaz de `IDispatch` , admite representa adecuado para los lenguajes dinámicos como lenguajes de scripting.  Esta sección describe la propia interfaz de `IDispatchEx` , las diferencias entre `IDispatch` y `IDispatchEx`, y la razón de las extensiones.  Se espera que los lectores están familiarizados con `IDispatch` y tienen acceso a la documentación de `IDispatch` .  
+# <a name="idispatchex-interface"></a>IDispatchEx (Interfaz)
+`IDispatchEx`, una extensión de la `IDispatch` interfaz, admite características adecuados para lenguajes dinámicos, como los lenguajes de scripting. Esta sección se describe la `IDispatchEx` interfaz propia, las diferencias entre `IDispatch` y `IDispatchEx`y el motivo de las extensiones. Se espera que los lectores están familiarizados con `IDispatch` y tener acceso a la `IDispatch` documentación.  
   
-## Comentarios  
- `IDispatch` se desarrolló básicamente para Microsoft Visual Basic.  La limitación principal de `IDispatch` es que supone que los objetos son estáticos.  Es decir puesto que los objetos no cambian durante el tiempo de ejecución, la información de tipo puede describirlos completamente en tiempo de compilación.  Los modelos dinámicos en tiempo de ejecución que se encuentran en los lenguajes de scripting como Visual Basic scripting edition \(VBScript\) y [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y los modelos de objetos como HTML dinámico requieren una interfaz más flexible.  
+## <a name="remarks"></a>Comentarios  
+ `IDispatch`Básicamente, se desarrolló para Microsoft Visual Basic. La limitación principal de `IDispatch` es que presupone que los objetos son estáticos. En otras palabras, ya que no cambian de objetos en tiempo de ejecución, información de tipo puede describir completamente ellos en tiempo de compilación. Los modelos de tiempo de ejecución dinámicos que se encuentran en lenguajes como Visual Basic Scripting Edition (VBScript) y [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y modelos de objeto como HTML dinámico requieren una interfaz más flexible.  
   
- `IDispatchEx` se desarrolló para proporcionar todos los servicios de `IDispatch` así como de algunas extensiones que son adecuados para lenguajes tarde\- enlazados más dinámicos como lenguajes de scripting.  Características adicionales de `IDispatchEx` más allá de los proporcionados por `IDispatch` son:  
+ `IDispatchEx`se desarrolló para proporcionar todos los servicios de `IDispatch` , así como algunas extensiones que son adecuados para los idiomas de tiempo de ejecución más dinámicos como lenguajes de scripting. Las características adicionales de `IDispatchEx` más allá de aquellas proporcionadas por `IDispatch` son:  
   
--   Agregue nuevos miembros a un objeto \(“expando”\) utilizan `GetDispID` con el marcador de `fdexNameEnsure` .  
+-   Agregar nuevos miembros a un objeto ("expando"), utilice `GetDispID` con el `fdexNameEnsure` marca.  
   
--   Eliminar los miembros de un objeto `DeleteMemberByName` uso o `DeleteMemberByDispID`.  
+-   Eliminar miembros de un objeto, utilice `DeleteMemberByName` o `DeleteMemberByDispID`.  
   
--   Operación\- uso con distinción entre mayúsculas y minúsculas `fdexNameCaseSensitive` o `fdexNameCaseInsensitive`de envío.  
+-   Las operaciones de envío entre mayúsculas y minúsculas: usar `fdexNameCaseSensitive` o `fdexNameCaseInsensitive`.  
   
--   Buscar el miembro con el nombre\- uso implícito `fdexNameImplicit`.  
+-   Búsqueda de miembro con nombre implícita: usar `fdexNameImplicit`.  
   
--   Mostrar identificadores dispid de un objeto `GetNextDispID`uso.  
+-   Enumerar los identificadores DispId de un objeto, utilice `GetNextDispID`.  
   
--   Mapa de DISPID al nombre\- uso `GetMemberName`del elemento.  
+-   Mapa de DISPID al nombre de elemento, utilice `GetMemberName`.  
   
--   Obtiene las propiedades de miembro\- uso `GetMemberProperties`del objeto.  
+-   Obtener propiedades de los miembros de objeto, utilice `GetMemberProperties`.  
   
--   Invocación de método con el puntero\-uso `InvokeEx` de `this` con DISPATCH\_METHOD.  
+-   Invocación de método con `this` puntero: usar `InvokeEx` con DISPATCH_METHOD.  
   
--   Permite a los exploradores que admiten el concepto de espacios de nombres que obtiene el elemento primario del espacio de nombres de objeto un uso `GetNameSpaceParent`.  
+-   Permitir que los exploradores que admiten el concepto de espacios de nombres para obtener el elemento primario de espacio de nombre de un objeto, utilice `GetNameSpaceParent`.  
   
- Objetos que `IDispatchEx` admiten también podría admitir `IDispatch` para la compatibilidad con versiones anteriores.  La naturaleza dinámica de los objetos que `IDispatchEx` admiten tiene algunas implicaciones para la interfaz de `IDispatch` de esos objetos.  Por ejemplo, `IDispatch` crea la hipótesis siguiente:  
+ Objetos que admiten `IDispatchEx` también podría admitir `IDispatch` por compatibilidad con versiones anteriores. La naturaleza dinámica de objetos que admiten `IDispatchEx` tiene algunas implicaciones para el `IDispatch` interfaz de dichos objetos. Por ejemplo, `IDispatch` realiza las suposiciones siguientes:  
   
--   El miembro y el parámetro Identificadores deben permanecer constantes para la duración del objeto.  Esto permite que un cliente obtenga Dispid una vez y los almacena en memoria caché para su uso posterior.  
+-   El miembro y el parámetro DISPID deben permanecer constantes durante la vigencia del objeto. Esto permite que un cliente obtener los identificadores DispId una vez y almacenarlos en memoria caché para su uso posterior.  
   
- Puesto que `IDispatchEx` permite la adición y eliminación de miembros, el conjunto de identificadores dispid válido no sigue siendo constante.  Sin embargo, `IDispatchEx` requiere que la asignación entre DISPID y el nombre de miembro permanezca constante.  Esto significa que si se elimina un miembro:  
+ Puesto que `IDispatchEx` permite la adición y eliminación de miembros, el conjunto de identificadores DispId válidos no permanezca constante. Sin embargo, `IDispatchEx` requiere que la asignación entre el nombre de miembro y DISPID permanezca constante. Esto significa que si se elimina un miembro:  
   
--   El identificador de envío no puede reutilizar hasta que crean un miembro con el mismo nombre.  
+-   No se puede reutilizar el identificador DISPID hasta que se crea un miembro con el mismo nombre.  
   
--   El identificador de envío debe seguir siendo válido para `GetNextDispID`.  
+-   Tiene que ser válido para el identificador DISPID `GetNextDispID`.  
   
--   El identificador de envío se debe aceptar correctamente por `IDispatch` cualquiera de los o `IDispatchEx` que método\- deben reconocer el miembro como eliminado y devolver un código de error adecuado \(normalmente DISP\_E\_MEMBERNOTFOUND o S\_FALSE\).  
+-   El identificador DISPID debe ser aceptado correctamente mediante cualquiera de los `IDispatch` o `IDispatchEx` métodos: debe reconocer el miembro como eliminada y devolver un código de error correspondiente (normalmente DISP_E_MEMBERNOTFOUND o S_FALSE).  
   
-## Ejemplos  
- Este [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] codificadas en pruebas de función \(\) hace lo siguiente:  
+## <a name="examples"></a>Ejemplos  
+ Esto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] código en la función test() hace lo siguiente:  
   
--   Crea un nuevo objeto llamando al constructor de `Object` y asigna un puntero al nuevo objeto a la variable Obj.  
+-   Crea un nuevo objeto mediante una llamada a la `Object` constructor y se le asigna un puntero para el nuevo objeto a la variable obj.  
   
--   Crea un nuevo elemento denominado Elem en el objeto y las asignaciones a este elemento un puntero al gatos de la función.  
+-   Crea un nuevo elemento denominado Elem en el objeto y se asigna a este elemento de un puntero a la cat de función.  
   
--   Llama a esta función.  Puesto que se llama al método, el puntero de `this` hace referencia al objeto Obj.  La función agrega un nuevo elemento, barra, al objeto.  
+-   Llama a esta función. Puesto que se llama como un método, el `this` puntero hace referencia al objeto obj. La función agrega un nuevo elemento, barra, para el objeto.  
   
  El código HTML completo es:  
   
@@ -95,7 +99,7 @@ test();
 </html>  
 ```  
   
- Un control título en esta misma página Web puede obtener un puntero de envío para los motores de script del explorador.  El control podría implementar pruebas de función \(\):  
+ Un control situado en la misma página Web pudo obtener un puntero de envío para los motores de script desde el explorador. El control, a continuación, podría implementar el test() de función:  
   
 ```  
 <html>  
@@ -113,25 +117,25 @@ function cat()
 </html>  
 ```  
   
- El código del control, prueba, hace lo mismo que la función `test()`de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  Observe que estas llamadas send se realizadas en el motor de ejecución de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y cambiar el estado del motor:  
+ Desde el control de código, probar, hace lo mismo que el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] función `test()`. Tenga en cuenta que estas llamadas a dispatch se realizan en el que se ejecuta [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor y cambiar el estado del motor de:  
   
--   Obtiene el puntero de envío a la función de gatos mediante `GetDispID()`.  
+-   Obtiene el puntero de envío a la función de cat mediante `GetDispID()`.  
   
--   Obtiene el puntero de envío a la función de objetos mediante `GetDispID()`.  
+-   Obtiene el puntero de envío para el objeto de función mediante `GetDispID()`.  
   
--   Construye un objeto llamando a la función del objeto con `InvokeEx()` y obtiene un puntero de envío al objeto recientemente construido.  
+-   Construye un objeto mediante una llamada a la función del objeto con `InvokeEx()` y obtiene un puntero de envío para el objeto recién creado.  
   
--   Crea un nuevo elemento, Elem, en el objeto con `GetDispID()` con el marcador de `fdexNameEnsure` .  
+-   Crea un nuevo elemento, Elem, en el objeto utilizando `GetDispID()` con el `fdexNameEnsure` marca.  
   
--   Coloca el puntero de envío al gatos en el elemento utilizando `InvokeEx()`.  
+-   Coloca el puntero de envío a cat en el elemento mediante `InvokeEx()`.  
   
--   Llama al puntero de envío al gatos como método llamando a `InvokeEx()` y pasando el puntero de envío al objeto construido como el puntero de `this` .  
+-   Llama al puntero de envío a cat como un método mediante una llamada a `InvokeEx()` y pasar el puntero de envío para el objeto construido como el `this` puntero.  
   
--   El método de gatos crea un nuevo elemento, barra, con el objeto actual de `this` .  
+-   El método cat crea un nuevo elemento, barra, en la actual `this` objeto.  
   
--   Comprueba que el nuevo elemento, barra, se creó en el objeto construido enumerando a través de los elementos mediante `GetNextDispID()`.  
+-   Comprueba que el nuevo elemento, barras, se creó en el objeto construido con una enumeración a través de los elementos mediante `GetNextDispID()`.  
   
- El código del control de pruebas:  
+ El código para el control de pruebas:  
   
 ```  
    BOOL test(IDispatchEx *pdexScript)  
@@ -232,5 +236,5 @@ LDone:
    }  
 ```  
   
-## Métodos  
- [IDispatchEx \(Métodos\)](../../winscript/reference/idispatchex-methods.md)
+## <a name="methods"></a>Métodos  
+ [IDispatchEx (Métodos)](../../winscript/reference/idispatchex-methods.md)

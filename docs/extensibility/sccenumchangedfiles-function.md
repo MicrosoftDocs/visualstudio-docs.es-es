@@ -1,63 +1,63 @@
 ---
-title: "SccEnumChangedFiles (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccEnumChangedFiles"
-helpviewer_keywords: 
-  - "SccEnumChangedFiles (función)"
+title: "Función SccEnumChangedFiles | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccEnumChangedFiles
+helpviewer_keywords: SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ad62f14ea658e4af6e22d4beef410e6d9cf02df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccEnumChangedFiles (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles (función)
 Proporciona una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes de la base de datos de control de código fuente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 SCCRTN SccEnumChangedFiles(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LONG    cFiles,  
-   LPCSTR* lpFileNames,  
-   LONG*   plIsFileDifferent  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LONG    cFiles,  
+   LPCSTR* lpFileNames,  
+   LONG*   plIsFileDifferent  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- \[in\] El puntero de contexto de complemento de control de código fuente.  
+ [in] El puntero de contexto de complemento de control de código fuente.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  cFiles  
- \[in\] Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de `plIsFileDifferent` matriz.  
+ [in] Número de nombres de archivo especificados en la `lpFileNames` matriz. También especifica el tamaño de `plIsFileDifferent` matriz.  
   
  lpFileNames  
- \[in\] Matriz de nombres de archivo local para comprobar.  
+ [in] Matriz de nombres de archivo local para comprobar.  
   
  plIsFileDifferent  
- \[entrada, salida\] Matriz de valores que indican el estado de la diferencia de cada archivo \(matriz debe tener al menos `cFiles` entradas\). Es distinto de cero significa que el archivo es diferente.  
+ [entrada, salida] Matriz de valores que indican el estado de la diferencia de cada archivo (matriz debe tener al menos `cFiles` entradas). Es distinto de cero significa que el archivo es diferente.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|Operación se completó correctamente.|  
-|SCC\_UNSPECIFIEDERROR|Error genérico.|  
+|SCC_OK|Operación se completó correctamente.|  
+|SCC_UNSPECIFIEDERROR|Error genérico.|  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vea también  
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA1407: Avoid static members in COM visible types | Microsoft Docs'
+title: "CA1407: Evite miembros estáticos en tipos visibles para COM | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,51 +14,35 @@ helpviewer_keywords:
 - CA1407
 - AvoidStaticMembersInComVisibleTypes
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
-caps.latest.revision: 23
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 54c8639bd6968b3a9e6c2497376ba91cd7cdf071
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 43240b8969026a8bbec18528230d3ca97bcb2236
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Avoid static members in COM visible types
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evite miembros estáticos en tipos visibles para COM
 |||  
 |-|-|  
 |TypeName|AvoidStaticMembersInComVisibleTypes|  
-|CheckId|CA1407|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Non-breaking|  
+|Identificador de comprobación|CA1407|  
+|Categoría|Microsoft.Interoperability|  
+|Cambio problemático|Poco problemático|  
   
-## <a name="cause"></a>Cause  
- A type that is specifically marked as visible to Component Object Model (COM) contains a `public``static` method.  
+## <a name="cause"></a>Motivo  
+ Un tipo marcado específicamente como visible para el modelo de objetos componentes (COM) contiene un `public``static` método.  
   
-## <a name="rule-description"></a>Rule Description  
- COM does not support `static` methods.  
+## <a name="rule-description"></a>Descripción de la regla  
+ COM no es compatible con `static` métodos.  
   
- This rule ignores property and event accessors, operator overloading methods, or methods that are marked by using either the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribute or the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribute.  
+ Esta regla omite las propiedades y los descriptores de acceso de eventos, métodos o métodos que se marcan utilizando la sobrecarga de operadores el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.  
   
- By default, the following are visible to COM: assemblies, public types, public instance members in public types, and all members of public value types.  
+ De forma predeterminada, los siguientes son visibles para COM: ensamblados, tipos públicos, miembros de instancia públicos en tipos públicos y todos los miembros de tipos de valor públicos.  
   
- For this rule to occur, an assembly-level <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `false` and the class- <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `true`, as the following code shows.  
+ Para esta regla para que se produzca, un nivel de ensamblado <xref:System.Runtime.InteropServices.ComVisibleAttribute> debe establecerse en `false` y la clase - <xref:System.Runtime.InteropServices.ComVisibleAttribute> debe establecerse en `true`, como se muestra en el código siguiente.  
   
 ```csharp  
 using System;  
@@ -78,39 +61,39 @@ namespace Samples
 }  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the design to use an instance method that provides the same functionality as the `static` method.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie el diseño para utilizar un método de instancia que proporciona la misma funcionalidad que la `static` método.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if a COM client does not require access to the functionality that is provided by the `static` method.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla si un cliente COM no requiere acceso a la funcionalidad proporcionada por el `static` método.  
   
-## <a name="example-violation"></a>Example Violation  
+## <a name="example-violation"></a>Infracción de ejemplo  
   
-### <a name="description"></a>Description  
- The following example shows a `static` method that violates this rule.  
+### <a name="description"></a>Descripción  
+ El ejemplo siguiente muestra un `static` método que infringe esta regla.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]  
   
-### <a name="comments"></a>Comments  
- In this example, the **Book.FromPages** method cannot be called from COM.  
+### <a name="comments"></a>Comentarios  
+ En este ejemplo, el **Book.FromPages** método no se puede llamar desde COM.  
   
-## <a name="example-fix"></a>Example Fix  
+## <a name="example-fix"></a>Corrección del ejemplo  
   
-### <a name="description"></a>Description  
- To fix the violation in the previous example, you could change the method to an instance method, but that does not make sense in this instance. A better solution is to explicitly apply `ComVisible(false)` to the method to make it clear to other developers that the method cannot be seen from COM.  
+### <a name="description"></a>Descripción  
+ Para corregir la infracción en el ejemplo anterior, puede cambiar el método a un método de instancia, pero no tiene sentido en esta instancia. Una solución mejor es aplicar explícitamente `ComVisible(false)` al método para dejar claro a otros desarrolladores que el método no pueden verse desde COM.  
   
- The following example applies <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> to the method.  
+ El ejemplo siguiente aplica <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> al método.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
- [CA1406: Avoid Int64 arguments for Visual Basic 6 clients](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
+ [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
   
- [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+ [CA1413: Evite campos no públicos en tipos de valor visibles para COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>Vea también  
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)

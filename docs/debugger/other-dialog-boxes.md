@@ -1,41 +1,42 @@
 ---
-title: "Other Dialog Boxes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "dialog boxes, Spy++"
-  - "Spy++ dialog boxes"
+title: "Otros cuadros de diálogo | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- dialog boxes, Spy++
+- Spy++ dialog boxes
 ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 78e786b27ebe2847bc9327f673d2cbd780179efa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Other Dialog Boxes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Estos cuadros de diálogo muestran información sobre el programa Spy\+\+.  
+# <a name="other-dialog-boxes"></a>Otros cuadros de diálogo
+Estos cuadros de diálogo muestran información acerca del programa de Spy ++.  
   
-## En esta sección  
- [Acerca de Microsoft Spy\+\+](../debugger/about-microsoft-spy-increment.md)  
- Información sobre la propiedad del programa Spy\+\+.  
+## <a name="in-this-section"></a>En esta sección  
+ [Acerca de Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
+ Información sobre la propiedad del programa Spy ++.  
   
- [Aviso de copyright para la Ayuda de Spy\+\+](../debugger/copyright-notice-for-spy-increment-help.md)  
- Aviso legal de copyright.  
+ [Aviso de copyright para la Ayuda de Spy++](../debugger/copyright-notice-for-spy-increment-help.md)  
+ Aviso legal de propiedad intelectual.  
   
-## Secciones relacionadas  
- [Referencia de Spy\+\+](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen los menús y cuadros de diálogo de Spy\+\+.  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)  
+ Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.  
   
- [Usar Spy\+\+](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy\+\+ y explica cómo se puede usar.  
+ [Usar Spy++](../debugger/using-spy-increment.md)  
+ Presenta la herramienta Spy ++ y explica cómo se puede usar.  
   
- [Vistas de Spy\+\+](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy\+\+ de ventanas, mensajes, procesos y subprocesos.
+ [Vistas de Spy++](../debugger/spy-increment-views.md)  
+ Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.

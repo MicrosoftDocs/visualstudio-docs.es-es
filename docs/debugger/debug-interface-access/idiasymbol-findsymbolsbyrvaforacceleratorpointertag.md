@@ -1,52 +1,52 @@
 ---
-title: "IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f12417323d0553fc6dd9ca33c65c566229454c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de los símbolos incluidos en esta función de código auxiliar en una dirección relativa virtual especificada.  
+# <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
+Dado un valor de etiqueta correspondiente, este método devuelve una enumeración de símbolos que se encuentran en esta función de código auxiliar en una dirección virtual relativa especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    DWORD             tagValue,  
    DWORD             rva,  
    IDiaEnumSymbols** ppResult);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `tagValue`  
- \[in\] se encuentra el valor de etiqueta del puntero de El que el símbolo de pointee registra.  
+ [in] El valor de etiqueta de puntero para el que se encuentran los registros de símbolos el puntero.  
   
  `rva`  
- \[in\] rva a El que se utiliza para filtrar los símbolos que corresponden a la variable de pointee con el valor de etiqueta especificado.  
+ [in] La rva que se utiliza para filtrar los símbolos que corresponden a la variable el puntero con el valor de etiqueta especificado.  
   
  `ppResult`  
- \[out\] puntero A un puntero de interfaz de `IDiaEnumSymbols` inicializar con el resultado.  
+ [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
   
-## Valor devuelto  
- Si es correcto, especificado `S_OK`; si no, especificado `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
-## Comentarios  
- Llame a este método solo en una interfaz de `IDiaSymbol` correspondiente a una función de código auxiliar de aceleradores.  
+## <a name="remarks"></a>Comentarios  
+ Llamar a este método solo en un `IDiaSymbol` interfaz que corresponde a una función de código auxiliar de aceleración.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

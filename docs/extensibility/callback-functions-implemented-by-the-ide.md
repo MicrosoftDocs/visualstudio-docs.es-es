@@ -1,35 +1,37 @@
 ---
-title: "Funciones de devoluci&#243;n de llamada implementadas por el IDE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "origen control complementos, las funciones de devolución de llamada"
-  - "funciones de devolución de llamada, los complementos de control de código fuente"
+title: "Funciones de devolución de llamada implementadas por el IDE | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control plug-ins, callback functions
+- callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Funciones de devoluci&#243;n de llamada implementadas por el IDE
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para realizar la integración con el entorno de desarrollo integrado \(IDE\) como transparente como sea posible y para proporcionar una experiencia unificada para el usuario final, el complemento de control de código fuente puede utilizar las funciones de devolución de llamada que se implementan mediante el IDE. El complemento puede llamar a estas funciones en los momentos adecuados durante una operación de control de código fuente para pasar información al IDE; el IDE puede mostrar esta información como elementos incrustados en su interfaz de usuario nativa. El usuario tiene una experiencia menos fragmentada en este escenario que si el complemento emplea su propia interfaz de usuario.  
+# <a name="callback-functions-implemented-by-the-ide"></a>Funciones de devolución de llamada implementadas por el IDE
+Para realizar la integración con el entorno de desarrollo integrado (IDE) como sin problemas como sea posible y para proporcionar una experiencia unificada para el usuario final, el complemento de control de código fuente puede utilizar las funciones de devolución de llamada que se implementan mediante el IDE. El complemento puede llamar a estas funciones en los momentos adecuados durante una operación de control de código fuente para pasar información al IDE; el IDE, a continuación, puede mostrar esta información como los elementos incrustados en su interfaz de usuario nativa. El usuario tiene una experiencia menos fragmentada en este escenario que si el complemento usa su propia interfaz de usuario.  
   
- El archivo de encabezado necesario es scc.h. La ubicación predeterminada es \\Program Files\\VSIP 8.0\\EnvSDK\\common\\inc\\. También es la carpeta VSIP que tiene el ejemplo de complemento de control de código fuente en \\Program Files\\VSIP 8.0\\MSSCCI\\.  
+ El archivo de encabezado necesario es scc.h. La ubicación predeterminada es \Program Files\VSIP 8.0\EnvSDK\common\inc\\. También está en la carpeta VSIP con el ejemplo de complemento de control de código fuente en \Program Files\VSIP 8.0\MSSCCI\\.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Describe la función de devolución de llamada que usa [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el control de código fuente mediante el IDE.  
+ Describe la función de devolución de llamada que se usa por [SccOpenProject](../extensibility/sccopenproject-function.md) para mostrar mensajes desde el complemento mediante el IDE de control de código fuente.  
   
  [POPLISTFUNC](../extensibility/poplistfunc.md)  
- Describe la función de devolución de llamada que usa [SccPopulateList](../extensibility/sccpopulatelist-function.md) cuando el IDE no tiene acceso completo a la información que solo está disponible para el control de código fuente, como una lista completa de los archivos bajo control de versiones.  
+ Describe la función de devolución de llamada que se usa por [SccPopulateList](../extensibility/sccpopulatelist-function.md) cuando el IDE no tiene acceso completo a la información que solo está disponible para el complemento, como una lista completa de los archivos bajo control de versiones de control de código fuente.  
   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)  
  Describe la función de devolución de llamada que usa el [SccQueryChanges](../extensibility/sccquerychanges-function.md) operación.  
@@ -38,23 +40,23 @@ Para realizar la integración con el entorno de desarrollo integrado \(IDE\) com
  Describe la función de devolución de llamada que usa el [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) operación.  
   
  [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)  
- Describe la función de devolución de llamada definida por una llamada a la [SccSetOption](../extensibility/sccsetoption-function.md) que permite el control de código fuente para comunicar los cambios de nombre de nuevo en el IDE.  
+ Describe la función de devolución de llamada definida por una llamada a la [SccSetOption](../extensibility/sccsetoption-function.md) que permite el control de código fuente de complemento para la comunicación de cambios de nombre de nuevo con el IDE.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [SccOpenProject](../extensibility/sccopenproject-function.md)  
  Abre un proyecto.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Examina la lista de archivos de su estado actual. Además, utiliza el `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`.  
+ Examina la lista de archivos para su estado actual. Además, usa el `pfnPopulate` función para notificar al llamador cuando un archivo no coincide con los criterios para la `nCommand`.  
   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)  
- Examina una lista de directorios y archivos en un proyecto o proyectos que están bajo control de código fuente. Cada nombre de archivo y directorio encontrado se pasa a una función de devolución de llamada.  
+ Examina una lista de directorios y archivos en un proyecto o los proyectos que están bajo control de código fuente. Cada nombre de archivo y directorio que se encuentra se pasa a una función de devolución de llamada.  
   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)  
  Examina los cambios en el nombre que se realizaron en una lista de archivos. Cada nombre de archivo se pasa a una función de devolución de llamada junto con su estado de cambio.  
   
  [SccSetOption](../extensibility/sccsetoption-function.md)  
- Establece una amplia variedad de opciones. Cada opción comienza con `SCC_OPT_xxx` y tiene su propio conjunto definido de valores.  
+ Establece una amplia variedad de opciones. Cada opción empieza con `SCC_OPT_xxx` y tiene su propio conjunto definido de valores.  
   
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)  
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)  
  Describe el contenido de la sección de referencia del SDK de complemento de Control de origen.

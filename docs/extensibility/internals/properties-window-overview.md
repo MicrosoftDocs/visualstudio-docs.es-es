@@ -1,54 +1,55 @@
 ---
-title: "Informaci&#243;n general sobre la ventana Propiedades | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Propiedades (ventana)"
+title: "Información general sobre la ventana de propiedades | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0094accca0feb026fca02c78bf6e86fe512ce981
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Informaci&#243;n general sobre la ventana Propiedades
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-La ventana de **Propiedades** se utiliza para mostrar las propiedades de los objetos seleccionados en los dos tipos principales de ventanas disponibles en el entorno de desarrollo integrado de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(IDE\).  estos dos tipos de ventanas son:  
+# <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
+El **propiedades** ventana se usa para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:  
   
--   Ventanas de herramientas como el explorador de soluciones, vista de clases, y el examinador de objetos  
+-   Ventanas de herramientas como el Explorador de soluciones, vista de clases y objetos de explorador  
   
--   Ventanas de documento que contienen los editores y diseñadores como el diseñador de formularios, el editor XML, y el editor HTML  
+-   Ventanas de documento que contiene estos editores y diseñadores, como el Diseñador de formularios, el editor XML y el editor de HTML  
   
-## Mediante la ventana Propiedades  
- La ventana de **Propiedades** muestra las propiedades de elementos seleccionados sencillos o múltiples.  Si varios elementos son seleccionado, la intersección de todas las propiedades de todos los objetos seleccionados se muestra.  
+## <a name="using-the-properties-window"></a>Mediante la ventana Propiedades  
+ El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados. Si se seleccionan varios elementos, se muestra la intersección de todas las propiedades para todos los objetos seleccionados.  
   
- Los eventos relacionados con un objeto seleccionado dentro de una ventana o un editor HTML de diseño de formularios mediante metadatos de COM\+ se muestran en la ventana de **Propiedades** .  Por ejemplo, puede seleccionar un botón y mostrar sus eventos asociadas, como un evento de `OnClick` , que se puede vincular a ese botón.  
+ Eventos relacionados con un objeto seleccionado dentro de una ventana de diseño del formulario o el editor de HTML con los metadatos de COM + se muestran en la **propiedades** ventana. Por ejemplo, puede seleccionar un botón y mostrar sus eventos asociados, como un `OnClick` eventos, que pueden vincularse a ese botón.  
   
- Los eventos mostrados en la ventana de **Propiedades** se utilizan principalmente con objetos enlazados al código.  Si edita un formato de archivo que no tiene nada que ver con código, no va a tener ningún eventos.  Los eventos se muestran solo en la ventana de **Propiedades** cuando hay un enlace entre el código en ejecución y ciertos eventos asociado a los objetos específicos.  Un ejemplo de esto sería código detrás de un objeto seleccionado que se ejecuta cuando se produce ese objeto.  
+ Eventos mostrados en la **propiedades** ventana se utilizan principalmente con objetos que están enlazados al código. Si está editando un formato de archivo que no tiene nada que ver con el código, no va a tener todos los eventos. Solo se muestran los eventos en el **propiedades** ventana cuando hay un enlace entre ejecutar código y determinados eventos asociados a objetos específicos. Un ejemplo de esto sería el código detrás de un objeto seleccionado que se ejecuta cuando ese objeto se activa.  
   
- La tabla siguiente se muestran las interfaces primarias utilizadas por la ventana de **Propiedades** .  
+ En la tabla siguiente se enumera las interfaces principales utilizadas por la **propiedades** ventana.  
   
-|nombre de la interfaz|Descripción|  
-|---------------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|proporciona una lista de categorías a la ventana de **Propiedades** y asigna cada propiedad a una categoría.|  
-|[Interfaz IDispatch](http://msdn.microsoft.com/es-es/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Expone los métodos y las propiedades de un objeto en las herramientas de programación y otras aplicaciones que automatización admiten.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Proporciona los botones de puntos suspensivos \(...\) denominados *builders* que las ventanas modal abierto de diálogo implementados por el propio objeto.  Se utiliza cuando un valor fácilmente no está escrito por el usuario en un campo de texto.  Por ejemplo, puede ser utilizado para abrir un selector de colores que determina el valor RGB automáticamente.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Proporciona acceso a los objetos utilizados a información actualizada mostrada en la ventana de **Propiedades** .  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se implementa mediante VSPackages para cada ventana que contiene objetos seleccionables con propiedades relacionadas que se mostrarán.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Proporciona información sobre el tipo de un objeto como métodos de una interfaz y campos de una estructura.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Permisos VSPackages para recibir notificación de los eventos de selección y recuperar la información sobre la jerarquía de proyecto, el elemento, el valor del elemento, y el contexto actual de la interfaz de usuario de comandos.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|proporciona el entorno con el acceso a las selecciones múltiples.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Se utiliza para proporcionar adaptadas nombres en algunas propiedades mostradas en la ventana de **Propiedades** .|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Notifies registró VSPackages de cambios en la selección, el valor del elemento, o al contexto de la interfaz de usuario de comandos.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Notifica al entorno de un cambio en la selección actual y proporciona acceso a la jerarquía y la información sobre el elemento relacionado con la nueva selección.|  
+|Nombre de la interfaz|Descripción|  
+|--------------------|-----------------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Proporciona una lista de categorías para la **propiedades** ventana y cada propiedad se asigna a una categoría.|  
+|[Interfaz IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Expone métodos y propiedades para la programación de herramientas y otras aplicaciones que admiten la automatización de un objeto.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Proporciona botones de puntos suspensivos (...) que se llama *generadores* que abrir ventanas de cuadro de diálogo modal implementadas por el propio objeto. Se utiliza si no tiene el tipo fácilmente un valor por el usuario en un campo de texto. Por ejemplo, podría utilizarse para abrir un selector de color que determina el valor RGB para usted.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Proporciona acceso a objetos que se utiliza para actualizar la información que se muestra en el **propiedades** ventana. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>se implementa mediante paquetes VSPackage para cada ventana que contiene objetos que pueden seleccionarse con propiedades relacionadas que se mostrarán.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Proporciona información sobre el tipo de un objeto como métodos de una interfaz y los campos de una estructura.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Permite VSPackages para recibir la notificación de eventos de selección y recuperar información acerca de la jerarquía del proyecto actual, el elemento, el valor del elemento y el contexto de la interfaz de usuario de comandos.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Proporciona el entorno que brinda acceso a las selecciones múltiples.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Usa para proporcionar los nombres traducidos en algunas propiedades que se muestran en la **propiedades** ventana.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Notifica a VSPackages registrados de los cambios en la selección actual, el valor del elemento o el contexto de la interfaz de usuario de comandos.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Notifica el entorno de un cambio en la selección actual y proporciona acceso a la información de jerarquía y elementos relacionados con la nueva selección.|  
   
- Para obtener más información sobre `IDispatch`, vea la biblioteca de MSDN.  
+ Para obtener más información sobre `IDispatch`, vea MSDN library.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Extender propiedades](../../extensibility/internals/extending-properties.md)   
- [Interfaces y campos de la ventana de propiedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)
+ [Interfaces y campos de la ventana Propiedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)

@@ -1,46 +1,45 @@
 ---
-title: "IDiaLineNumber::get_statement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber::get_statement (método)"
+title: 'Idialinenumber:: Get_statement | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_statement method
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 05cb3f85fe2f1ea82622a4537b89895a44eebf63
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_statement
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un mensaje que indica que esta información de línea describe el principio de una instrucción, en lugar de una expresión, en el origen del programa.  
+# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
+Recupera una marca que indica que esta información de línea indica el principio de una instrucción, en lugar de una expresión, en el código fuente del programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_statement (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_statement (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve `TRUE` si esta información de línea describe el principio de una instrucción en el origen del programa.  
+ [out] Devuelve `TRUE` si esta información de línea describe el principio de una instrucción en el código fuente del programa.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si esta propiedad no se admite.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Las instrucciones pueden abarcar varias líneas.  Este método indica si el número de línea asociado marca el principio de una instrucción en varias líneas.  
+## <a name="remarks"></a>Comentarios  
+ Las instrucciones pueden abarcar varias líneas. Este método indica si el número de línea asociado marca el principio de una instrucción de varias líneas.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

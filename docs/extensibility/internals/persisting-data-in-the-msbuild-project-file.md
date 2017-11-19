@@ -1,71 +1,72 @@
 ---
-title: "Conservar los datos en el archivo de proyecto de MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "archivos de proyecto, conservar los datos en"
+title: Almacenar datos en el archivo de proyecto de MSBuild | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5d41a4776362f450d5d55552b049c3bba1bc781b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Conservar los datos en el archivo de proyecto de MSBuild
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un subtipo del proyecto puede necesitar conservar los datos subtipo\-específicos en el archivo de proyecto para su uso posterior.  Un subtipo de proyectos utiliza la persistencia del archivo de proyecto para cumplir los requisitos siguientes:  
+# <a name="persisting-data-in-the-msbuild-project-file"></a>Almacenar datos en el archivo de proyecto de MSBuild
+Un subtipo de proyecto que necesite conservar datos específicos del subtipo en el archivo de proyecto para su uso posterior. Un subtipo de proyecto usa la persistencia del archivo de proyecto para cumplir los requisitos siguientes:  
   
-1.  Conserve los datos utilizados como parte de la compilación del proyecto.  \(Para obtener más información sobre Microsoft Build Engine, vea [MSBuild](http://msdn.microsoft.com/es-es/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).\) información relacionada con puede cualquiera:  
+1.  Conservar los datos que se usa como parte de la generación del proyecto. (Para obtener más información sobre Microsoft Build Engine, consulte [MSBuild](../../msbuild/msbuild.md).) Puede obtener información relacionada con la compilación:  
   
-    1.  datos de la independientes.  es decir, datos almacenados en los elementos de MSBuild con el espacio en blanco o condiciones que falta.  
+    1.  Datos de configuración independiente. Es decir, los datos almacenados en los elementos de MSBuild y condiciones en blanco o falta.  
   
-    2.  datos dependientes.  es decir, datos almacenados en los elementos de MSBuild que se condicionan para una configuración de proyecto determinada.  Por ejemplo:  
+    2.  Dependiendo de la configuración de datos. Es decir, los datos almacenados en los elementos de MSBuild que se preparan para una configuración de proyecto determinado. Por ejemplo:  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  
         ```  
   
-2.  Conserve los datos que no son pertinentes para compilar.  Estos datos se pueden expresar en XML de forma libre que no se valida con un esquema XML.  
+2.  Conservar los datos que no es relevantes para la compilación. Estos datos se pueden expresar en XML de forma libre que no se valida con un esquema XML.  
   
-    1.  datos de la independientes.  
+    1.  Datos de configuración independiente.  
   
-    2.  datos dependientes.  
+    2.  Dependiendo de la configuración de datos.  
   
-## Información relacionada con de persistencia  
- La persistencia de los datos útiles para compilar un proyecto se administra con MSBuild.  El sistema MSBuild mantiene una tabla principal de información relacionada con.  Los subtipos de proyecto son responsables de obtener acceso a estos datos para obtener y establecer valores de propiedad.  Los subtipos de proyectos también pueden aumentar la tabla de datos relacionada con agregando propiedades adicionales que se persistirán y quitar propiedades para que no se conservan.  
+## <a name="persisting-build-related-information"></a>Conservar información relacionada con la compilación  
+ Persistencia de datos útiles para la creación de un proyecto se controla mediante MSBuild. El sistema MSBuild mantiene una tabla maestra de la información relacionada con la compilación. Subtipos de proyecto son responsables de obtener acceso a estos datos para obtener y establecer valores de propiedad. Subtipos de proyecto también pueden aumentar la tabla de datos relacionadas con la compilación agregando propiedades adicionales que se deben conservar y quitar propiedades de modo que no se conservan.  
   
- Para modificar los datos de MSBuild, un subtipo del proyecto es responsable de recuperar el objeto de propiedad de MSBuild del sistema base del proyecto con <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> es una interfaz implementada en el sistema de proyectos básico y las consultas de subtipo del proyecto que agregan para ejecutando `QueryInterface`.  
+ Para modificar los datos de MSBuild, es responsable de recuperar el objeto de propiedad de MSBuild desde el sistema del proyecto de base a través de un subtipo de proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>es una interfaz implementada en el sistema del proyecto principal y la agregación consultas subtipo de proyecto para él mediante la ejecución de `QueryInterface`.  
   
  El procedimiento siguiente describe los pasos para quitar una propiedad mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   
-#### para quitar una propiedad de un archivo de proyecto de MSBuild  
+#### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>Para quitar una propiedad de un archivo de proyecto de MSBuild  
   
-1.  Llame a `QueryInterface` en <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> de subtipo del proyecto.  
+1.  Llame a `QueryInterface` en <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> del subtipo de proyecto.  
   
-2.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> de llamada con `pszPropName` establecido en la propiedad que desea quitar.  
+2.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A> con `pszPropName` establecido en la propiedad que desea quitar.  
   
-### información relacionada de persistencia de la No\-Generación  
- La persistencia de los datos en archivos de proyecto que no importa para compilar se administra con <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.  
+### <a name="persisting-non-build-related-information"></a>Información relacionada con la compilación no persistente  
+ Persistencia de los datos en los archivos de proyecto que no es relevante generar se controla a través de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>.  
   
- Puede implementar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> en el objeto principal de `project subtype aggregator` , el objeto de `project subtype project configuration` , o ambos.  
+ Puede implementar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> en el método main `project subtype aggregator` objeto, el `project subtype project configuration` objeto, o ambos.  
   
- Los puntos siguientes describen los principales conceptos relativos al conservar la información relacionada con la no\-generación.  
+ Los puntos siguientes describen los principales conceptos sobre la persistencia de la información de compilación no relacionado.  
   
--   Las llamadas bases del proyecto en el objeto principal del agregador de subtipo del proyecto \(es decir, subtipo fuera del proyecto\) para cargar y guardar datos independientes de la configuración, y ésta llama a los objetos de configuración de proyecto de subtipo del proyecto para cargar o guardar datos dependientes de la configuración.  
+-   El proyecto de base llama en el objeto de agregador de subtipo (es decir, el subtipo de proyecto más externa) de proyecto principal para cargar y guardar datos de configuración independientes, y llama en los objetos de configuración del proyecto de subtipo de proyecto para cargar o guardar dependientes de la configuración datos.  
   
--   El proyecto base llama a los métodos de varias veces <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> para cada nivel de agregación de subtipo del proyecto, y pasa el GUID para cada capa.  
+-   El proyecto de base llama a los métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> varias veces para cada nivel de agregación de subtipo de proyecto y pasa el GUID para cada nivel.  
   
--   El proyecto base pasa o recibe un fragmento XML dedicado a un subtipo concreto del proyecto y use este mecanismo como forma de estado de persistencia entre los niveles de agregación.  
+-   El proyecto de base se pasa o recibe un fragmento XML que se dedica a un subtipo de proyecto determinado y utiliza este mecanismo como una manera de mantener el estado entre los niveles de agregación.  
   
--   El proyecto base llama a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>de subtipo fuera del proyecto que pasa el GUID.  Si el GUID pertenece al subtipo fuera del proyecto, controla la llamada propio; si no delega la llamada en un subtipo interno del proyecto, y así sucesivamente, hasta que encuentre el subtipo de proyecto al que GUID corresponde.  
+-   El proyecto de base llama el subtipo de proyecto exterior <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>implementación pasando un GUID. Si el GUID pertenece a del subtipo de proyecto más externo, controla la llamada en Sí; en caso contrario, delega la llamada a un subtipo de proyecto interna y así sucesivamente, hasta que se encuentra el subtipo de proyecto que se corresponde con el GUID.  
   
--   Un subtipo del proyecto también puede modificar el fragmento XML antes o después de que delega la llamada en un subtipo interno del proyecto.  El ejemplo siguiente se muestra un fragmento de un archivo de proyecto, donde un nombre de un archivo que contiene las propiedades específicas de un subtipo del proyecto, se pasa al subtipo del proyecto.  
+-   Un subtipo de proyecto también puede modificar el fragmento XML antes o después de que delega la llamada a un subtipo de proyecto interna. En el ejemplo siguiente se muestra un extracto de un archivo de proyecto, donde un nombre de un archivo que contiene propiedades específicas de un subtipo de proyecto, se pasa a ese subtipo de proyecto.  
   
     ```  
     <ProjectExtensions>  
@@ -77,5 +78,5 @@ Un subtipo del proyecto puede necesitar conservar los datos subtipo\-específico
       </ProjectExtensions>  
     ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)

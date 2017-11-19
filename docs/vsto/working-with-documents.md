@@ -1,35 +1,37 @@
 ---
-title: "Trabajar con documentos"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documentos [desarrollo de Office en Visual Studio], tareas comunes"
-  - "documentos de Office [desarrollo de Office en Visual Studio], tareas comunes"
-  - "Word [desarrollo de Office en Visual Studio], tareas comunes de documentos"
+title: Trabajar con documentos | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio, common tasks
+- documents [Office development in Visual Studio], common tasks
+- Word [Office development in Visual Studio], document common tasks
 ms.assetid: d21a1be6-fabc-4573-b861-b76cec5814bd
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2236ecbc6bb30ff3cfba9bebd5d5e5509f54721a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Trabajar con documentos
+# <a name="working-with-documents"></a>Trabajar con documentos
   En los temas de esta sección se proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word de modo que funcione con documentos en proyectos de Office.  
   
  En algunos casos, los métodos con los que lleva a cabo estas tareas en los complementos de VSTO son distintos de los métodos con los que las lleva a cabo en las personalizaciones de nivel de documento.  
   
 |Tarea|Procedimiento|  
-|-----------|-------------------|  
+|----------|---------------|  
 |Crear un documento basado en la plantilla Normal o en una plantilla diferente.|[Cómo: Crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)|  
 |Abrir un documento concreto como de lectura y escritura o de solo lectura.|[Cómo: Abrir documentos existentes mediante programación](../vsto/how-to-programmatically-open-existing-documents.md)|  
 |Cerrar el documento activo o un documento concreto.|[Cómo: Cerrar documentos mediante programación](../vsto/how-to-programmatically-close-documents.md)|  
@@ -38,14 +40,14 @@ caps.handback.revision: 17
 |Mostrar la vista previa de impresión de un documento.|[Cómo: Mostrar documentos en Vista previa de impresión mediante programación](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|  
 |Mostrar un cuadro de diálogo integrado y recopilar los datos proporcionados por el usuario.|[Cómo: Usar cuadros de diálogo integrados en Word mediante programación](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|  
 |Usar la funcionalidad en un cuadro de diálogo integrado sin mostrarlo.|[Cómo: Usar cuadros de diálogo de Word en modo oculto mediante programación](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|  
-|Agregar una imagen o Word Art a un documento.|[Cómo: Agregar imágenes y dibujos de Word a documentos mediante programación](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|  
+|Agregar una imagen o Word Art a un documento.|[Cómo: Agregar imágenes y Word Art a documentos mediante programación](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|  
 |Impedir que los usuarios modifiquen un documento o una parte de un documento.|[Cómo: Proteger documentos y partes de documentos mediante programación](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|  
 |Comprobar la ortografía.|[Cómo: Revisar la ortografía en documentos mediante programación](../vsto/how-to-programmatically-check-spelling-in-documents.md)|  
 |Agregar un encabezado o pie de página a un documento.|[Cómo: Agregar encabezados y pies de página a documentos mediante programación](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|  
 |Quitar todos los comentarios de un documento.|[Cómo: Quitar todos los comentarios de documentos mediante programación](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|  
   
-## Vea también  
- [Información general acerca del modelo de objetos de Word](../vsto/word-object-model-overview.md)   
- [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+## <a name="see-also"></a>Vea también  
+ [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
+ [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

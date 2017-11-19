@@ -1,40 +1,41 @@
 ---
-title: "C&#243;mo: Compilar soluciones de SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, compilar"
+title: "Cómo: compilar soluciones de SharePoint | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, building
 ms.assetid: 7ded93e6-fba2-4e7f-8865-62841fd2b04b
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Compilar soluciones de SharePoint
-  La compilación de una solución de SharePoint no es diferente de la compilación de otras aplicaciones en Visual Studio.  Para obtener más información sobre cómo compilar aplicaciones, vea [Compilar aplicaciones en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).  Para consultar algunos aspectos específicos de las soluciones de SharePoint, vea [Cómo: Implementar y publicar una solución de SharePoint en un sitio de SharePoint local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+# <a name="how-to-build-sharepoint-solutions"></a>Cómo: Compilar soluciones de SharePoint
+  Compilar la solución de SharePoint no es diferente a generar otras aplicaciones en Visual Studio. Para obtener más información sobre la creación de aplicaciones, consulte [compilar y generar en Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio). Para obtener una explicación de las consideraciones específicas para soluciones de SharePoint, vea [Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
-### Para compilar soluciones de SharePoint  
+### <a name="to-build-sharepoint-solutions"></a>Para compilar soluciones de SharePoint  
   
-1.  Decida si desea crear una versión de depuración o una versión de lanzamiento.  Para obtener más información, vea [Configuración del proyecto para el depurador](../debugger/debugger-project-settings.md).  
+1.  Decida si va a realizar una depuración o una versión de lanzamiento. Para obtener más información, consulte [Debugger Project Settings](/visualstudio/debugger/debugger-project-settings).  
   
-2.  Elija la opción adecuada para compilar o recompilar una solución o proyecto.  Para obtener más información, vea [Compilar aplicaciones en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).  
+2.  Elija la opción adecuada para generar o volver a generar la solución o proyecto. Para obtener más información, consulte [compilar y generar en Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
   
 3.  En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

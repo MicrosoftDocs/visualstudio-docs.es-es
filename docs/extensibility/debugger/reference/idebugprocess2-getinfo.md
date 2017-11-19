@@ -1,55 +1,55 @@
 ---
-title: "IDebugProcess2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetInfo"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetInfo"
+title: IDebugProcess2::GetInfo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::GetInfo
+helpviewer_keywords: IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 34bea2c3853bfbe8a9ca66b0ea663e35989d74b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Obtiene una descripción del proceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetInfo(  
-   PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO*        pProcessInfo  
+```cpp  
+HRESULT GetInfo(  
+   PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO*        pProcessInfo  
 );  
 ```  
   
-```c#  
-int GetInfo(  
-   enum_PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO[]            pProcessInfo  
+```csharp  
+int GetInfo(  
+   enum_PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO[]            pProcessInfo  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `Fields`  
- \[in\]  Una combinación de valores de enumeración de [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) que especifica qué campos de parámetro de `pProcessInfo` se deben completar.  
+ [in] Una combinación de valores de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumeración que especifica qué campos de la `pProcessInfo` parámetro deben rellenarse.  
   
  `pProcessInfo`  
- \[out\]  Una estructura de [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md) se completa con una descripción del proceso.  
+ [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estructura que se rellena con una descripción del proceso.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
- [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)
+ [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

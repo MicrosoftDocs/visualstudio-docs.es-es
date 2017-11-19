@@ -1,51 +1,50 @@
 ---
-title: "IDiaEnumDebugStreams::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreams::Item (método)"
+title: 'Idiaenumdebugstreams:: Item | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams::Item method
 ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fefec4989c649e7b4113f78948c1ce30d42f050f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreams::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una secuencia de depuración por medio de un índice o nombre.  
+# <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
+Recupera un flujo de depuración por medio de un índice o nombre.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Item (   
-   VARIANT                   index,  
-   IDiaEnumDebugStreamData** stream  
+```C++  
+HRESULT Item (   
+   VARIANT                   index,  
+   IDiaEnumDebugStreamData** stream  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  índice  
- \[in\]  Índice o nombre de la secuencia de depuración que se recuperará.  Si se utiliza un tipo Variant entero, debe estar en el intervalo 0 a `count`\-1, donde es `count` que devuelve el método de [IDiaEnumDebugStreams::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .  
+ [in] Índice o nombre de la secuencia de depuración va a recuperar. Si se utiliza una variante de entero, debe estar en el intervalo de 0 a `count`-1, donde `count` es devuelto por la [idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) método.  
   
  secuencia  
- \[out\]  Devuelve un objeto de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) que representa la secuencia especificada de depuración.  
+ [out] Devuelve un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objeto que representa el flujo de depuración especificado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,  
                                        LONG whichStream)  
 {  
@@ -69,6 +68,6 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

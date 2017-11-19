@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Copy and Paste Shapes in a Visio Document | Microsoft Docs'
+title: "Cómo: copiar mediante programación y pegar formas en un documento de Visio | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,44 +14,45 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], copying and pasting Visio shapes
 - Visio [Office development in Visual Studio], copying and pasting Visio shapes
 ms.assetid: 762d95cf-2d5c-4dea-988b-8f4da88fa1f1
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0a2603284a790ee940b8b20126e5994f35c59b65
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f3454a6514c22f1da82ef95407a0ff6be1fe442c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>How to: Programmatically Copy and Paste Shapes in a Visio Document
-  You can programmatically copy shapes on one page of a document and paste them into a new page in the same document. You can choose to paste them into the default location (the center of the active window) or into the same coordinate locations as they had on the original page.  
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Cómo: Copiar y pegar formas en un documento de Visio mediante programación
+  Puede copiar formas de la página de un documento y pegarlas en una nueva página en ese mismo documento, mediante programación. Puede decidir pegarlas en la ubicación predeterminada (el centro de la ventana activa) o en las mismas ubicaciones de coordenadas de la página original.  
   
-## <a name="copying-and-pasting-shapes"></a>Copying and Pasting Shapes  
- For details about the object model, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), and [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) methods and the [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](https://msdn.microsoft.com/library/office/ff765187.aspx) flag.  
+## <a name="copying-and-pasting-shapes"></a>Copiar y pegar formas  
+ Para obtener detalles acerca del modelo de objetos, consulte la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx)y [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) , y de la marca [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](https://msdn.microsoft.com/library/office/ff765187.aspx) .  
   
-#### <a name="to-copy-shapes-to-the-center-of-another-page"></a>To copy shapes to the center of another page  
+#### <a name="to-copy-shapes-to-the-center-of-another-page"></a>Copiar formas en el centro de otra página  
   
--   The following example demonstrates how to copy the shapes from the first page and paste them into the center of the second page.  
+-   En el ejemplo siguiente se muestra cómo copiar las formas de la primera página y pegarlas en el centro de la segunda página.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]  
   
-## <a name="copying-and-pasting-shapes-with-the-same-positions"></a>Copying and Pasting Shapes With the Same Positions  
- For details about the object model, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), and [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) methods and the [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](https://msdn.microsoft.com/library/office/ff765187.aspx) flag.  
+## <a name="copying-and-pasting-shapes-with-the-same-positions"></a>Copiar y pegar formas con las mismas posiciones  
+ Para obtener detalles sobre el modelo de objetos, consulte la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx)y [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) , y de la marca [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](https://msdn.microsoft.com/library/office/ff765187.aspx) .  
   
- If you need to control the format of the pasted information and (optionally) establish a link to a source file (for example, a Microsoft Office Word document), use the PasteSpecial method.  
+ Si necesita controlar el formato de la información pegada y (opcionalmente) establecer un vínculo a un archivo de origen (por ejemplo, un documento de Microsoft Office Word), utilice el método PasteSpecial.  
   
-#### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>To copy shapes and shape locations to another page  
+#### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Copiar las formas y sus ubicaciones en otra página  
   
--   The following example demonstrates how to copy the shapes from the first page and paste them into the second page with their original coordinate locations.  
+-   En el ejemplo siguiente se muestra cómo copiar las formas de la primera página y pegarlas en la segunda página junto a sus ubicaciones de coordenadas originales.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]  
   
-## <a name="see-also"></a>See Also  
- [Visio Solutions](../vsto/visio-solutions.md)   
- [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
- [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)   
- [How to: Programmatically Add Shapes to a Visio Document](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
+## <a name="see-also"></a>Vea también  
+ [Soluciones de Visio](../vsto/visio-solutions.md)   
+ [Información general del modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
+ [Trabajar con formas de Visio](../vsto/working-with-visio-shapes.md)   
+ [Cómo: Agregar formas a un documento de Visio mediante programación](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
   
   

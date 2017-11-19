@@ -1,76 +1,78 @@
 ---
-title: "Utilizar fuentes y colores | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fuentes, controlar en IDE"
-  - "IDE, controlar el color del texto y fuentes"
-  - "Página de propiedades de fuentes y colores"
-  - "control de fuente y color [Visual Studio SDK]"
-  - "texto, IDE"
+title: Utilizar fuentes y colores | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- fonts, controlling in IDE
+- IDE, controlling text color and fonts
+- Fonts and Colors property page
+- font and color control [Visual Studio SDK]
+- text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Utilizar fuentes y colores
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] proporciona compatibilidad para utilizar fuentes y colores para mostrar texto.  
+# <a name="using-fonts-and-colors"></a>Utilizar fuentes y colores
+El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] proporciona compatibilidad para que utilizar fuentes y colores para mostrar el texto.  
   
-## En esta sección  
- [Introducción de Color y fuente](../extensibility/font-and-color-overview.md)  
- Describe la fuente de texto y definiciones de colores en el entorno de desarrollo integrado de \(IDE\) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  También presenta conceptos de categorías y los elementos de la pantalla, y describe cómo VSPackages y el editor básico utilizan atributos de texto.  
+## <a name="in-this-section"></a>En esta sección  
+ [Información general de Color y fuente](../extensibility/font-and-color-overview.md)  
+ Describe la configuración de fuente y color del texto en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). También presenta los conceptos de categorías y mostrar los elementos y describe cómo utilizan los atributos de texto VSPackages y el editor principal.  
   
- [Obtención de información de Color para los colores de texto y de fuente](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- Proporciona instrucciones para implementar el color del texto en VSPackages que administran **Categorías** distinto de **Editor de texto**.  
+ [Obtención de fuente y la información de Color para el color de texto](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
+ Proporciona directrices para implementar los colores de texto en los paquetes VSPackage que administran **categorías** distinto de **Editor de texto**.  
   
  [Obtener acceso a la configuración de Color y fuente almacenado](../extensibility/accessing-stored-font-and-color-settings.md)  
- Explica cómo la fuente actual y las definiciones de colores se pueden almacenar, recuperar, y aplicarse.  
+ Explica cómo actual fuente y color de configuración se puede almacenar, recuperar y aplicar.  
   
  [Implementación de categorías personalizadas y mostrar los elementos](../extensibility/implementing-custom-categories-and-display-items.md)  
- Describe los pasos básicos para los que una ventana puede crear y utilizar sus propios de **Mostrar los elementos** y de **Categorías** a la vista de texto admiten.  
+ Describe los pasos básicos mediante el cual puede crear y usar su propio de una ventana **mostrar elementos** y **categorías** para admitir la presentación del texto.  
   
- Este enfoque requiere un VSPackage implementar la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> e interfaces relacionadas.  
+ Este enfoque requiere un VSPackage implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaz y las interfaces relacionadas.  
   
  [Cómo: obtener acceso a las fuentes integradas y la combinación de colores](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- Describe cómo definir y registrar una categoría con fuentes integradas y colores, e inicia el uso de sistema fuentes y colores.  
+ Describe cómo definir y registrar una categoría mediante el uso de colores y fuentes integradas para iniciar el uso de colores y fuentes proporcionados por el sistema.  
   
-## Referencia  
+## <a name="reference"></a>Referencia  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- Proporciona una instancia de `IVsFontAndColorDefaults` o interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> que corresponde a un caso anunciado determinado en **Mostrar valores para** enumerado en la página de **Fuentes y colores** del cuadro de diálogo de **Opciones** .  
+ Proporciona una instancia de la `IVsFontAndColorDefaults` o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaz que corresponde a un elemento determinado que se muestran en la **Mostrar configuración para** lista en la **fuentes y colores** página de la **Opciones** cuadro de diálogo.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- Permite a un Paquete para admitir la página del IDE **Fuentes y colores** definiendo las fuentes predeterminadas y los colores para una ventana o un componente de la interfaz de usuario.  
+ Permite que un paquete VSPackage admitir el IDE **fuentes y colores** página mediante la definición de las fuentes predeterminadas y los colores de una ventana o un componente de interfaz de usuario.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- Proporciona un mecanismo por el que un Paquete que proporciona fuente y compatibilidad de color puede especificar un grupo de elementos de presentación \(una estupendo\-categoría que representa la unión de dos o más categorías.  
+ Proporciona un mecanismo mediante el cual un VSPackage que proporciona soporte técnico de fuente y color puede especificar un grupo de elemento para mostrar - una categoría superobligatorios que representa la unión de dos o más categorías.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- Permite a un Paquete para recuperar la fuente y los datos de color, o guardarlo en el registro.  
+ Permite que un paquete VSPackage recuperar datos de fuente y color, o guardar en el registro.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- Notifica VSPackages que usa la fuente y la información de color sobre cambios en fuente y definiciones de colores.  
+ Notifica a VSPackages que está usando la información de fuente y color sobre los cambios en la configuración de fuente y color.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- Proporciona herramientas para trabajar con la entrada y los datos de salida que usan métodos del mecanismo de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**fuente y Color** .  
+ Proporciona herramientas para trabajar con los datos de entrada y salidos que se usan los métodos de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **fuente y Color** mecanismo.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
- Controla el almacenamiento en caché de la fuente y definiciones de colores.  
+ Controla el almacenamiento en caché de configuración de fuente y color.  
   
-## Secciones relacionadas  
- [Desarrollar un servicio de lenguaje](../extensibility/internals/developing-a-legacy-language-service.md)  
- Explica cómo VSPackages puede utilizar servicios para personalizar el editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Desarrollo de un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)  
+ Describe cómo VSPackages puede utilizar servicios de lenguaje para personalizar el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor.  
   
- [Colores en los editores personalizados de sintaxis](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries cómo el editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza servicios para implementar el colorear la sintaxis.  
+ [Colores de sintaxis en editores personalizados](../extensibility/syntax-coloring-in-custom-editors.md)  
+ Se explica cómo el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor usa servicios de lenguaje para implementar los colores de sintaxis.  
   
- [Extensión de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Explica cómo utilizar los servicios de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear elementos de la interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
+ Explica cómo usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] services para crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

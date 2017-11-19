@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplicationThread::SynchronousCallIntoThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplicationThread::SynchronousCallIntoThread | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationThread.SynchronousCallIntoThread
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplicationThread::SynchronousCallIntoThread"
+helpviewer_keywords: IDebugApplicationThread::SynchronousCallIntoThread
 ms.assetid: 8a91157f-dade-418a-ad02-5607ce12c95c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationThread::SynchronousCallIntoThread
-Proporciona un mecanismo para el llamador para ejecutar código en el subproceso de la aplicación.  
+# <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
+Proporciona un mecanismo para que el llamador ejecutar código en el subproceso de la aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SynchronousCallIntoThread(  
@@ -32,29 +35,29 @@ HRESULT SynchronousCallIntoThread(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pstcb`  
- \[in\] objeto de la llamada.  
+ [in] Objeto que se va a llamar.  
   
  `dwParam1`  
- \[in\] parámetro de Tareas para pasar a `IDebugThreadCall::ThreadCallHandler` el método.  
+ [in] El primer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
   
  `dwParam2`  
- \[in\] parámetro de Segundo para pasar a `IDebugThreadCall::ThreadCallHandler` el método.  
+ [in] Segundo parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
   
  `dwParam3`  
- \[in\] parámetro de Third para pasar a `IDebugThreadCall::ThreadCallHandler` el método.  
+ [in] Tercer parámetro para pasar a la `IDebugThreadCall::ThreadCallHandler` método.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método proporciona un mecanismo para el llamador para ejecutar código en el subproceso del depurador.  Los motores y hosts de lenguaje suelen utilizar este método para implementar objetos libre\- roscados encima de las únicas implementaciones roscadas.  
+## <a name="remarks"></a>Comentarios  
+ Este método proporciona un mecanismo para que el llamador ejecutar código en el subproceso del depurador. Los hosts y motores de idioma suelen usar este método para implementar objetos de subprocesamiento libre encima de sus implementaciones de subprocesos únicos.  
   
-## Vea también  
- [IDebugApplicationThread \(Interfaz\)](../../winscript/reference/idebugapplicationthread-interface.md)   
- [IDebugThreadCall \(Interfaz\)](../../winscript/reference/idebugthreadcall-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugApplicationThread (interfaz)](../../winscript/reference/idebugapplicationthread-interface.md)   
+ [IDebugThreadCall (Interfaz)](../../winscript/reference/idebugthreadcall-interface.md)

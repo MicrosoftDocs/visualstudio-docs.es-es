@@ -1,39 +1,23 @@
 ---
-title: "Crear un Editor de núcleo y registrar un tipo de archivo del Editor | Documentos de Microsoft\""
+title: "Crear un Editor de núcleo y registrar un tipo de archivo del Editor | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - walkthrough
+helpviewer_keywords: editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-caps.latest.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c590896144ddd6e7dd1586ef08e5049d46795320
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dec3e53df108377dacfc53ba308029933654b789
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor
 En este tutorial se muestra cómo crear un VSPackage que comienza el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el editor principal cuando un archivo que tiene la extensión de nombre de archivo .myext se carga.  

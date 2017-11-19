@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_RESOLUTION_INFO
-helpviewer_keywords:
-- BP_RESOLUTION_INFO structure
+f1_keywords: BP_RESOLUTION_INFO
+helpviewer_keywords: BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a08dcb196ff90343faa4b44edbb01a01e401df13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 88d18b6262724e21602b87365d262c9422140abe
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 Describe la información de punto de interrupción enlazado para un punto de interrupción de código o un punto de interrupción de datos.  

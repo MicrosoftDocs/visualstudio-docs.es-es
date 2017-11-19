@@ -1,65 +1,66 @@
 ---
-title: "CA1709: Los identificadores deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldBeCasedCorrectly"
-  - "CA1709"
-helpviewer_keywords: 
-  - "CA1709"
-  - "IdentifiersShouldBeCasedCorrectly"
+title: "CA1709: Los identificadores deben ser minúsculas correctamente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldBeCasedCorrectly
+- CA1709
+helpviewer_keywords:
+- CA1709
+- IdentifiersShouldBeCasedCorrectly
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
-caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 29
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d9332359228d657e9155996443822a5d1c11ad01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1709: Los identificadores deber&#237;an utilizar las may&#250;sculas y min&#250;sculas correctamente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldBeCasedCorrectly|  
 |Identificador de comprobación|CA1709|  
 |Categoría|Microsoft.Naming|  
-|Cambio problemático|Problemático: cuando se produce en los ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> No problemático: cuando se produce en parámetros de tipo genérico.|  
+|Cambio problemático|Problemático: cuando se genera en los ensamblados, espacios de nombres, tipos, miembros y parámetros.<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo genérico.|  
   
-## Motivo  
- No se han utilizado correctamente las mayúsculas y minúsculas para escribir el nombre.  
+## <a name="cause"></a>Motivo  
+ El nombre de un identificador no es las mayúsculas y minúsculas correctamente.  
   
- – O bien –  
+ \- o -  
   
- El nombre de un identificador contiene un acrónimo de dos letras y la segunda letra es minúscula.  
+ El nombre de un identificador contiene un acrónimo de dos letras y la segunda letra en minúscula.  
   
- – O bien –  
+ \- o -  
   
  El nombre de un identificador contiene un acrónimo de tres o más letras mayúsculas.  
   
-## Descripción de la regla  
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime.  Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
   
- Por convención, los nombres de parámetro utilizan la convención Camel de uso de mayúsculas; el espacio de nombres, el tipo y los nombres de miembro utilizan la convención Pascal.  En un nombre basado en la convención Camel, la primera letra es minúscula y la primera letra de las demás palabras del nombre es mayúscula.  Los ejemplos de nombres escritos según la convención Camel son "packetSniffer", "ioFile" y "fatalErrorCode".  En un nombre escrito según la convención Pascal, la primera letra es mayúscula y la primera letra de las demás palabras del nombre es mayúscula.  Los ejemplos de nombres basados en la convención Pascal son "PacketSniffer", "IOFile" y "FatalErrorCode".  
+ Por convención, los nombres de parámetro utilizan mayúsculas y minúsculas camel; los nombres de espacio de nombres, tipo y miembro utilizan la convención Pascal mayúsculas y minúsculas. En un nombre de la grafía camel, la primera letra es minúscula y la primera letra de las demás palabras en el nombre está en mayúsculas. Ejemplos de nombres de grafía de camel son "packetSniffer", "ioFile" y "fatalErrorCode". En un nombre de la grafía Pascal, la primera letra es mayúscula y la primera letra de las demás palabras en el nombre está en mayúsculas. Ejemplos de nombres de la grafía Pascal son "PacketSniffer", "IOFile" y "FatalErrorCode".  
   
- La regla divide el nombre en palabras según las mayúsculas o minúsculas y compara las palabras de dos letras, como "In" o "My", con la lista de palabras comunes de dos letras.  Si no se encuentra una coincidencia, se supone que la palabra es un acrónimo.  Asimismo, esta regla supone que ha encontrado un acrónimo cuando el nombre contiene cuatro letras mayúsculas seguidas o tres letras mayúsculas seguidas al final del nombre.  
+ Esta regla divide el nombre en palabras según las mayúsculas y minúsculas y comprueba las palabras de dos letras con una lista de palabras comunes de dos letras, por ejemplo, "In" o "Mi". Si no se encuentra una coincidencia, se supone que la palabra es un acrónimo. Además, esta regla supone que ha encontrado un acrónimo cuando el nombre contiene cuatro letras mayúsculas seguidas o tres letras en mayúsculas en una fila al final del nombre.  
   
- Por convención, los acrónimos de dos letras utilizan todas las letras mayúsculas y los acrónimos de tres o más caracteres utilizan la convención Pascal de mayúsculas.  Los ejemplos siguientes usan esta convención de nomenclatura: 'DB', 'CR', 'Cpa' y 'Ecma'.  Los ejemplos siguientes infringen la convención: 'Io', 'XML' y 'DoD' y para los nombres que no sean de parámetros, 'xp' y 'cpl'.  
+ Por convención, los acrónimos de dos letras utilizan todas las letras mayúsculas y acrónimos de tres o más caracteres utilizan la convención Pascal mayúsculas y minúsculas. Los ejemplos siguientes usan esta convención de nomenclatura: 'DB', 'CR', 'Cpa' y 'Ecma'. Los ejemplos siguientes infringen la convención: 'Io', 'XML' y 'DoD' y para los nombres de nonparameter, 'xp' y 'cpl'.  
   
- 'ID' es un caso de uso de mayúsculas especial que provoca una infracción de esta regla. El “id.” no es un acrónimo sino una abreviatura para “identificador”.  
+ 'Identificador' es usar la grafía especial que provoca una infracción de esta regla. 'Identificador' no es un acrónimo pero es una abreviatura de 'identificación'.  
   
-## Cómo corregir infracciones  
- Cambie el nombre utilizando las mayúsculas correctamente.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Cambie el nombre para que lo es mayúsculas y minúsculas correctamente.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir esta advertencia si dispone de sus propias convenciones de nomenclatura o si el identificador representa un nombre correcto, por ejemplo, el nombre de una compañía o una tecnología.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir esta advertencia si tiene sus propias convenciones de nomenclatura, o si el identificador representa un nombre propio, por ejemplo, el nombre de una empresa o una tecnología.  
   
- También puede agregar términos específicos, abreviaturas y acrónimos a un diccionario personalizado de análisis de código.  Los términos especificados en el diccionario personalizado no producirán infracciones de esta regla.  Para obtener más información, vea [Cómo: Personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ También puede agregar términos específicos, abreviaturas y acrónimos que a un diccionario personalizado de análisis de código. Condiciones especificadas en el diccionario personalizado no hará que las infracciones de esta regla. Para obtener más información, vea [Cómo: personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

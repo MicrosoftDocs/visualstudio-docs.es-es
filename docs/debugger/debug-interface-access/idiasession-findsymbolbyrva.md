@@ -1,60 +1,59 @@
 ---
-title: "IDiaSession::findSymbolByRVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findSymbolByRVA (método)"
+title: 'Idiasession:: Findsymbolbyrva | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findSymbolByRVA method
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b7443c64d722df7ef3370b78df723ef58168765c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolByRVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera un símbolo especificado con el que contiene, o es el más próximo a, una dirección relativa virtual especificada \(RVA\).  
+# <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
+Recupera un tipo de símbolo especificado que contiene, o que esté más cercano a una dirección virtual relativa (RVA) especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findSymbolByRVA (   
-   DWORD        rva,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol  
+```C++  
+HRESULT findSymbolByRVA (   
+   DWORD        rva,  
+   SymTagEnum   symtag,  
+   IDiaSymbol** ppSymbol  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `rva`  
- \[in\]  especifica el RVA.  
+ [in] Especifica la dirección RVA.  
   
  `symtag`  
- \[in\]  Tipo de token para encontrar.  los valores se toman de la enumeración de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) .  
+ [in] Tipo de símbolo que se encuentra. Valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración.  
   
  `ppSymbol`  
- \[out\]  Devuelve un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el token recuperado.  
+ [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recupera el objeto que representa el símbolo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 IDiaSymbol* pFunc;  
 pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)

@@ -1,36 +1,38 @@
 ---
-title: "Obtener acceso a la configuraci&#243;n de Color y fuente almacenado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fuentes y obtener acceso a la configuración almacenada"
-  - "control de fuente y color [Visual Studio SDK], persistencia"
-  - "colores, obtener acceso a la configuración almacenada"
+title: "Obtener acceso a la configuración de Color y fuente almacenado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- fonts, accessing stored settings
+- font and color control [Visual Studio SDK], persistence
+- colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bc4424b3cf277bcee13123081deecac070344054
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Obtener acceso a la configuraci&#243;n de Color y fuente almacenado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="accessing-stored-font-and-color-settings"></a>Obtener acceso a la configuración de Color y fuente almacenado
 El [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) almacena la configuración modificada para fuentes y colores en el registro. Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz para tener acceso a esta configuración.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Para iniciar la persistencia de los Estados de fuentes y colores  
- Información de fuente y color se almacena por categoría en la siguiente ubicación del registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\< versión de Visual Studio>*\FontAndColors\\*\< CategoryGUID>*], donde *\< CategoryGUID>* es el identificador GUID de categoría.  
+ Información de fuente y color se almacena por categoría en la siguiente ubicación del registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\  *\<CategoryGUID >*], donde  *\<CategoryGUID >* es el identificador GUID de categoría.  
   
  Por lo tanto, para iniciar la persistencia, un VSPackage debe:  
   
 -   Obtener un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz mediante una llamada a `QueryService` con el proveedor de servicios globales.  
   
-     `QueryService` se debe llamar mediante el uso de un argumento de Id. de servicio `SID_SVsFontAndColorStorage` y un argumento de Id. de interfaz `IID_IVsFontAndColorStorage`.  
+     `QueryService`se debe llamar mediante el uso de un argumento de Id. de servicio `SID_SVsFontAndColorStorage` y un argumento de Id. de interfaz `IID_IVsFontAndColorStorage`.  
   
 -   Use la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir una categoría para conservar mediante el GUID de la categoría y un indicador de modo como argumentos.  
   
@@ -55,7 +57,7 @@ El [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desar
   
  Sincronizar la configuración de almacenamiento con la configuración de IDE es en gran medida transparente. El IDE subyacente escribe automáticamente la configuración actualizada para **elementos para mostrar** a las entradas del registro de categorías.  
   
- Si varios paquetes VSPackage comparte una categoría determinada, un VSPackage debe requerir que los eventos se generan cuando métodos de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz se utilizan para modificar la configuración del registro almacenado.  
+ Si varios paquetes VSPackage comparte una categoría determinada, un VSPackage debe requerir que los eventos se generan cuando métodos de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz sirven para modificar la configuración del registro almacenado.  
   
  De forma predeterminada, no está habilitada la generación de eventos. Para habilitar la generación de eventos, debe abrirse una categoría mediante el uso de <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Esto hace que el IDE llamar a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa un paquete VSPackage.  
   

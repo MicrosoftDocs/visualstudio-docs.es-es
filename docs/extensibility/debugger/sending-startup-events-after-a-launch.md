@@ -1,49 +1,50 @@
 ---
-title: "Enviar eventos de inicio despu&#233;s de un lanzamiento | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], eventos de inicio"
+title: "Envío de eventos de inicio después de un inicio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0620821ec908deed2c57ddfefb40763a48fd2074
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Enviar eventos de inicio despu&#233;s de un lanzamiento
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El motor de depuración \(DE\) se asocia una vez al programa, envía una serie de eventos startup de nuevo a la sesión de depuración.  
+# <a name="sending-startup-events-after-a-launch"></a>Envío de eventos de inicio después de un lanzamiento
+Una vez que el motor de depuración (Alemania) se asocian al programa, envía una serie de eventos de inicio a la sesión de depuración.  
   
- Eventos startup enviados posterior a la sesión de depuración lo siguiente:  
+ Eventos de inicio que se envían a la sesión de depuración incluyen lo siguiente:  
   
--   Un evento de creación del motor.  
+-   Un evento de creación de motor.  
   
--   Un evento de creación de programa.  
+-   Evento de creación de un programa.  
   
--   Eventos de creación y la carga de módulos de subproceso.  
+-   Subprocesos de creación y eventos del módulo de carga.  
   
--   Una carga completa el evento, incluido cuando se carga el código y listo para ejecutarse, pero antes de que se ejecuta todo el código  
+-   Un evento de carga completada, enviado cuando el código está cargado y listo para ejecutarse, pero antes de ejecutar cualquier código  
   
     > [!NOTE]
-    >  Cuando se continúa este evento, se inicializan las variables globales y ejecución de las rutinas de arranque.  
+    >  Cuando se sigue este evento, se inicializan las variables globales y ejecutan rutinas de inicio.  
   
--   Otro posible eventos de creación y la carga de módulos de subproceso.  
+-   Posible otro subprocesos creación y eventos del módulo de carga.  
   
--   Un evento de punto de entrada, que indica que el programa ha alcanzado el punto de entrada principal, como **Principal** o `WinMain`.  Este evento no se envía normalmente si el OF asocia un programa que se está ejecutando.  
+-   Un evento de punto de entrada, lo cual indica que el programa ha alcanzado su punto de entrada principal, como **Main** o `WinMain`. Este evento no se envía normalmente si el Alemania se asocia a un programa que ya se está ejecutando.  
   
- Mediante programación, el OF envía primero el administrador de depuración de sesión \(SDM\) una interfaz de [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , que representa un evento de creación del motor, seguida de [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md), que representa un evento de creación de programa.  
+ Mediante programación, la DE envía primero el Administrador de sesión de depuración (SDM) un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interfaz, que representa un evento de creación de motor, seguido por un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , que representa un evento de creación de programa.  
   
- Esto va seguida normalmente por uno o más eventos de los eventos de la creación de subprocesos de [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) y la carga de módulos de [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) .  
+ Esto le sigue normalmente uno o varios [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) eventos de creación de subprocesos y [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) eventos del módulo de carga.  
   
- Cuando se carga el código y listo para ejecutarse, pero antes de que se ejecuta el código, el OF envía el SDM un evento completed carga de [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) .  Por último, si el programa no se está ejecutando, el OF envía un evento de punto de entrada de [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , indica que el programa ha alcanzado el punto de entrada principal y está listo para depurar.  
+ Cuando el código está cargado y listo para ejecutarse, pero antes de ejecuta cualquier código, la DE envía el SDM un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) eventos de carga completa. Por último, si el programa no se está ejecutando, la DE envía una [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) evento de punto de entrada, que el programa ha llegado a su punto de entrada principal y está listo para la depuración de señalización.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Control de ejecución](../../extensibility/debugger/control-of-execution.md)   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

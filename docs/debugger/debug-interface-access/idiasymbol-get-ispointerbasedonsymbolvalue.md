@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isPointerBasedOnSymbolValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_isPointerBasedOnSymbolValue | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 50a31bcb1f1d72110cf17c43dd599909225250dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isPointerBasedOnSymbolValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Especifica si el puntero de `this` está basado en un valor de símbolo.  
+# <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
+Especifica si el `this` puntero se basa en un valor de símbolo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT get_isPointerBasedOnSymbolValue(   
    BOOL* pRetVal);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\] puntero A `BOOL` que especifica si el puntero de `this` está basado en un valor de símbolo.  
+ [out] Un puntero a un `BOOL` que especifica si el `this` puntero se basa en un valor de símbolo.  
   
-## Valor devuelto  
- Si es correcto, especificado `S_OK`; si no, especificado `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

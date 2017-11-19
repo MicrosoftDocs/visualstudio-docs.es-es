@@ -1,40 +1,40 @@
 ---
-title: "No se puede cambiar el valor (Cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.variables.failededit"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "No se puede cambiar el valor (cuadro de diálogo)"
-  - "variables [depurador], editar"
+title: "No se puede cambiar el cuadro de diálogo valor | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.variables.failededit
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Cannot Change Value dialog box
+- variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b05c461d71f1fc1526114e8ae41ecf7f04d63885
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# No se puede cambiar el valor (Cuadro de di&#225;logo)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Error  
- `The value of this variable cannot be changed`  &#124; `The name` *name* `does not exist in the current context` &#124; *various other messages*  
+# <a name="cannot-change-value-dialog-box"></a>No se puede cambiar el valor (cuadro de diálogo)
+## <a name="error"></a>Error  
+ `The value of this variable cannot be changed`&#124; `The name` *nombre* `does not exist in the current context` &#124; *otros mensajes*  
   
- Este cuadro de mensaje aparece al intentar cambiar el contenido de una variable a un valor no válido en una ventana del depurador \(ventanas Automático, Inspección o Variables locales\) o en el cuadro de diálogo Inspección rápida.  Por ejemplo, este cuadro de mensaje aparece si intenta establecer el valor de una variable entera a una cadena de caracteres.  
+ Este cuadro de mensaje aparece al intentar cambiar el contenido de una variable a un valor no válido en una ventana del depurador (ventanas Automático, Inspección o Variables locales) o en el cuadro de diálogo Inspección rápida. Por ejemplo, este cuadro de mensaje aparece si intenta establecer el valor de una variable entera a una cadena de caracteres.  
   
-## Soluciones  
+## <a name="solution"></a>Soluciones  
  Asegúrese de que el valor de entrada que escribe en la ventana del depurador o en el cuadro de diálogo Inspección rápida representa un valor válido para la variable que está intentando establecer.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Expresiones en el depurador](../debugger/expressions-in-the-debugger.md)

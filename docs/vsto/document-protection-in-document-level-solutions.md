@@ -1,65 +1,67 @@
 ---
-title: "Protecci&#243;n de documentos en soluciones de nivel de documento"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documentos [desarrollo de Office en Visual Studio], permisos restringidos"
-  - "documentos de Office [desarrollo de Office en Visual Studio], permisos restringidos"
-  - "permisos [desarrollo de Office en Visual Studio]"
-  - "permisos restringidos [desarrollo de Office en Visual Studio]"
-  - "libros [desarrollo de Office en Visual Studio], permisos restringidos"
+title: "Protección en soluciones de nivel de documento de documentos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- restricted permissions [Office development in Visual Studio]
+- permissions [Office development in Visual Studio]
+- workbooks [Office development in Visual Studio], restricted permissions
+- Office documents [Office development in Visual Studio], restricted permissions
+- documents [Office development in Visual Studio], restricted permissions
 ms.assetid: a25472ad-03f0-4804-9d19-e5ff71340d49
-caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ceecad94d3f9bb910f47484e5deab0f20876a0d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Protecci&#243;n de documentos en soluciones de nivel de documento
-  En los proyectos de nivel de documento, se pueden usar las características de protección de Microsoft Office Word y Microsoft Office Excel.  Estas características impiden que los usuarios no autorizados puedan realizar cambios en las partes protegidas de los documentos.  
+# <a name="document-protection-in-document-level-solutions"></a>Protección de documentos en soluciones de nivel de documento
+  Puede usar las características de protección de Microsoft Office Word y Microsoft Office Excel en proyectos de nivel de documento. Estas características impiden que los usuarios no autorizados puedan realizar cambios en los elementos protegidos de un documento.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Utilizando Excel, puede habilitar o deshabilitar la protección mientras el libro esté abierto en el diseñador.  Si utiliza Word, sólo puede activar la protección desde fuera del diseñador.  En tiempo de ejecución puede habilitar o deshabilitar la protección mediante programación, tanto para Word como para Excel.  
+ Utiliza Excel, puede activar y desactivar la protección mientras el libro está abierto en el diseñador. Con Word, puede activar protección sólo fuera del diseñador. En tiempo de ejecución, puede habilitar o deshabilitar la protección mediante programación de Word y Excel.  
   
- Cuando la protección de documentos está habilitada en un documento que abierto en el diseñador, desaparecen todos los controles del **Cuadro de herramientas** o no están disponibles, ni tampoco se puede arrastrar ningún elemento desde la ventana **Orígenes de datos** hasta el documento.  
+ Cuando se habilita la protección de documentos en un documento que esté abierto en el diseñador, se quitan todos los controles de la **cuadro de herramientas** o dejan de estar disponibles, y no se puede arrastrar cualquier cosa, desde el **orígenes de datos** ventana para el documento.  
   
-## ServerDocument y documentos protegidos  
- Si un documento está protegido, no se puede obtener acceso a la memoria caché de datos desde fuera del documento.  No se puede utilizar la clase <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para recuperar ni manipular los datos almacenados en la memoria caché de un documento protegido, ni tampoco utilizar otros métodos de la clase <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument>.  
+## <a name="serverdocument-and-protected-documents"></a>ServerDocument y documentos protegidos  
+ Si un documento está protegido, la caché de datos no se puede tener acceso desde fuera del documento. No se puede utilizar el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase para recuperar o manipular los datos que se almacena en caché en un documento protegido, o usar otros métodos de la <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> clase.  
   
-## Protección de documentos de Word en el diseñador  
- Si agrega protección a un documento o plantilla de Word mientras está abierto en Visual Studio, no podrá habilitar la protección desde el diseñador.  El documento está en modo de diseño mientras está abierto en Visual Studio y debe encontrarse en modo de ejecución para habilitar la protección.  
+## <a name="word-document-protection-in-the-designer"></a>Protección de documentos de Word en el diseñador  
+ Si agrega protección a una plantilla o un documento de Word mientras está abierto en Visual Studio, no se puede empezar a aplicar la protección en el diseñador. El documento está en modo de diseño mientras está abierto en Visual Studio y se debe estar en modo de ejecución para poder empezar a aplicar la protección.  
   
- Sin embargo, si crea un proyecto que utilice un documento de Word existente que tenga la protección habilitada, el documento estará protegido mientras esté abierto en el diseñador.  No podrá modificar las partes protegidas del documento, pero sí podrá escribir código en el Editor de código para automatizar el documento.  Tampoco podrá compilar el proyecto si la protección está habilitada mientras el documento esté abierto en Visual Studio.  
+ Sin embargo, si crea un proyecto que usa un documento de Word existente que tiene habilitada la protección, el documento está protegido mientras está abierto en el diseñador. No se puede editar las partes del documento protegidas, pero todavía puede escribir código en el Editor de código para automatizar el documento. También se no se puede compilar el proyecto si la protección está habilitada mientras el documento está abierto en Visual Studio.  
   
- Para poder modificar el documento y compilar el proyecto puede desactivar la protección mientras el documento esté abierto en el diseñador.  No obstante, no puede desactivar la protección de la copia del diseñador mientras esté realizando la depuración; el documento que se abre durante la depuración es una copia independiente de la que está abierta en el diseñador \(la copia de resultado se almacena en el directorio \\bin, en caso de usar Visual Basic, y en el directorio \\bin\\debug si se utiliza C\#\).  
+ Puede desactivar protección mientras el documento está abierto en el diseñador para que pueda modificar el documento y compile el proyecto. No se puede desactivar la protección para la copia en el diseñador mientras está depurando; el documento que se abre durante la depuración es una copia independiente de la que está abierta en el diseñador (la copia de salida se almacena en el directorio \bin de Visual Basic y el directorio \bin\debug de C#).  
   
- Puede habilitar la protección en la copia del documento que se abre en el diseñador cerrando el proyecto en Visual Studio, abriendo la copia del documento situada en el directorio del proyecto y activando entonces la protección en el mismo.  
+ Puede habilitar la protección en la copia del documento que se abre en el Diseñador de cerrar el proyecto en Visual Studio, abra la copia del documento que se encuentra en el directorio del proyecto y activar la protección.  
   
-## Forzar la protección de documentos de Word al compilar  
- Visual Studio comienza a aplicar la protección de los documentos y plantillas de Word durante el proceso de compilación, de manera que la protección está habilitada cuando el documento se abre para la depuración.  El documento se protege con una contraseña en blanco.  
+## <a name="enforcing-word-document-protection-on-build"></a>Aplicar protección de documentos de Word en la compilación  
+ Visual Studio inicia la aplicación de protección de documentos de Word y plantillas durante el proceso de compilación, para que la protección está habilitada cuando el documento se abre para la depuración. El documento está protegido con una contraseña vacía.  
   
- Durante la compilación la protección está habilitada de forma que si hay código en el evento <xref:Microsoft.Office.Tools.Word.Document.Startup> del código que podría provocar excepciones o cambiar el comportamiento de la aplicación, este código pueda depurarse correctamente.  Si habilita la protección después de abrir el documento, no se podrá depurar ni comprobar el código de inicialización.  
+ La protección está habilitada durante la compilación así que si hay código en el documento <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos que podrían provocar excepciones o cambiar el comportamiento de la aplicación, este código puede ser depurado correctamente. Si habilita la protección después de abre el documento, no se puede depurar código de inicialización o se no se probó.  
   
-## Establecer la contraseña  
- Visual Studio habilita automáticamente la protección, pero no proporciona ninguna contraseña de forma predeterminada.  Si desea que la protección del documento tenga una contraseña, debe agregarla antes de implementar la solución.  Agregar una contraseña le habilita para permitir a los usuarios autorizados quitar la protección del documento; sin contraseña, la protección no se puede quitar fácilmente.  Para obtener información detallada sobre cómo establecer una contraseña, vea la Ayuda de la aplicación de Office concreta.  
+## <a name="setting-the-password"></a>Configuración de la contraseña  
+ Visual Studio automáticamente habilita la protección, pero no proporciona ninguna contraseña de forma predeterminada. Si desea que la protección del documento que tiene una contraseña, debe agregarlo antes de implementar la solución. Agregar una contraseña le permite dejar que los usuarios autorizados quitar la protección del documento; sin una contraseña, no puede eliminarse fácilmente protección. Para obtener más información acerca de cómo establecer una contraseña, vea la Ayuda de la aplicación de Office específica.  
   
-## Vea también  
- [Cómo: Proteger documentos y partes de documentos mediante programación](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
- [Ejemplos y tutoriales del desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Información general sobre la administración de permisos sobre la información y las extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Protección mediante contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)   
- [Cómo: Permitir que el código se ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Cómo: proteger documentos y partes de documentos mediante programación](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
+ [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Information Rights Management y la información general de las extensiones de código administrado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Protección con contraseña en documentos de Office](../vsto/password-protection-on-office-documents.md)   
+ [Cómo: permitir que el código ejecute en documentos con permisos restringidos](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

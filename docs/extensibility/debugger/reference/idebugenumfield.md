@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEnumField
-helpviewer_keywords:
-- IDebugEnumField interface
+f1_keywords: IDebugEnumField
+helpviewer_keywords: IDebugEnumField interface
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a4040577cc6d51cedc10fcb641c7aca18fa51c14
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 90313b9cf47ab358be0341248ce134f0fabe45ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 Esta interfaz representa un tipo de enumeración.  

@@ -1,28 +1,30 @@
 ---
-title: "Interfaz de asistente (IDTWizard) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDTWizard (interfaz)"
-  - "asistentes, interfaz"
+title: Asistente para la interfaz (IDTWizard) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDTWizard interface
+- wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ba6952bce6d99149f2a8f18b7d2eac12cbd08761
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Interfaz de asistente (IDTWizard)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El entorno de \(IDE\) desarrollo integrado \(IDE\) utiliza la interfaz de <xref:EnvDTE.IDTWizard> para comunicarse con los asistentes.  Los asistentes deben implementar esta interfaz para su instalación en el IDE.  
+# <a name="wizard-interface-idtwizard"></a>Asistente para la interfaz (IDTWizard)
+El entorno de desarrollo integrado (IDE) utiliza el <xref:EnvDTE.IDTWizard> interfaz para comunicarse con los asistentes. Asistentes deben implementar esta interfaz para instalarse en el IDE.  
   
- el método de <xref:EnvDTE.IDTWizard.Execute%2A> es el único método asociado con la interfaz de <xref:EnvDTE.IDTWizard> .  Los asistentes implementan este método y el IDE llama al método en la interfaz.  El ejemplo siguiente se muestra la firma del método.  
+ El <xref:EnvDTE.IDTWizard.Execute%2A> método es el único método asociado a la <xref:EnvDTE.IDTWizard> interfaz. Asistentes para implementan este método y el IDE llama al método en la interfaz. En el ejemplo siguiente se muestra la firma del método.  
   
 ```  
 /* IDTWizard Method */  
@@ -35,27 +37,27 @@ STDMETHOD(Execute)(THIS_
    );  
 ```  
   
- El mecanismo de inicio es similar para los asistentes de **Nuevo proyecto** y de **Agregar nuevo elemento** .  Para iniciar cualquiera, se llama a la interfaz de <xref:EnvDTE.IDTWizard> definido en Dteinternal.h.  La única diferencia es el conjunto de contexto y parámetros personalizados que se pasan a la interfaz cuando se llama a la interfaz.  
+ El mecanismo de inicio es similar tanto para la **nuevo proyecto** y **Agregar nuevo elemento**asistentes. Para su inicio, se llama a la <xref:EnvDTE.IDTWizard> interfaz definida en Dteinternal.h. La única diferencia es el conjunto de contexto y parámetros personalizados que se pasan a la interfaz cuando se llama a la interfaz.  
   
- La siguiente información describe la interfaz de <xref:EnvDTE.IDTWizard> que los asistentes deben implementar para trabajar en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  El IDE llama al método de <xref:EnvDTE.IDTWizard.Execute%2A> en el asistente, pasándole el siguiente:  
+ La siguiente información describe el <xref:EnvDTE.IDTWizard> interfaz que deben implementar los asistentes para trabajar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Las llamadas IDE el <xref:EnvDTE.IDTWizard.Execute%2A> método en el asistente, pasando lo siguiente:  
   
 -   El objeto DTE  
   
      El objeto DTE es la raíz del modelo de automatización.  
   
--   El identificador al cuadro de diálogo de la ventana como se muestra en el segmento de código, `hwndOwner ([in] long)`.  
+-   El identificador para el cuadro de diálogo de ventana, como se muestra en el segmento de código, `hwndOwner ([in] long)`.  
   
-     El asistente utiliza este `hwndOwner` como elemento primario para el cuadro de diálogo del asistente.  
+     El asistente lo use `hwndOwner` como elemento primario para el cuadro de diálogo del asistente.  
   
--   Parámetros de contexto pasados a la interfaz como variante para SAFEARRAY como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+-   Parámetros de contexto pasan a la interfaz como variante para SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
-     Los parámetros de contexto contienen una matriz de valores que son específicos del tipo de asistente que se inicia y el estado actual del proyecto.  El IDE pasa los parámetros de contexto el asistente.  Para obtener más información, vea [Parámetros de contexto](../../extensibility/internals/context-parameters.md).  
+     Parámetros de contexto contienen una matriz de valores que son específicas para el tipo de asistente que se inicia y el estado actual del proyecto. El IDE pasa los parámetros de contexto para el asistente. Para obtener más información, consulte [parámetros de contexto](../../extensibility/internals/context-parameters.md).  
   
--   Parámetros personalizados pasados a la interfaz como variante para SAFEARRAY como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+-   Parámetros personalizados de pasar a la interfaz como una variante SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
-     Los parámetros personalizados contienen una matriz de parámetros definidos por el usuario.  Un archivo .vsz pasa parámetros personalizados al IDE.  Los valores vienen determinados por las instrucciones de `Param=` .  Para obtener más información, vea [Parámetros personalizados](../../extensibility/internals/custom-parameters.md).  
+     Parámetros personalizados contienen una matriz de parámetros definidos por el usuario. Un archivo .vsz pasa parámetros personalizados para el IDE. Los valores se determinan por el `Param=` instrucciones. Para obtener más información, consulte [Custom Parameters](../../extensibility/internals/custom-parameters.md).  
   
--   los valores devueltos para la interfaz son  
+-   Los valores devueltos para la interfaz son  
   
     ```  
     wizardResultSuccess = -1,  
@@ -64,8 +66,8 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2  
     ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Parámetros de contexto](../../extensibility/internals/context-parameters.md)   
  [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)   
  [Asistentes](../../extensibility/internals/wizards.md)   
- [Asistente \(. Archivo vsz\)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -1,39 +1,37 @@
 ---
-title: "Preparaci&#243;n de la depuraci&#243;n: servicios de Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "depurar [Visual Studio], servicios de Windows"
-  - "aplicaciones de servicios de Windows, depurar"
+title: "Preparación de la depuración: Servicios de Windows | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], Windows services
+- Windows Service applications, debugging
 ms.assetid: ac0a99f7-ec3d-4a20-b17f-698a817fdcc2
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7cd7fc1a71009262b53878f40a1418cd4167efe5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Preparaci&#243;n de la depuraci&#243;n: servicios de Windows
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un servicio de Windows es un programa que se ejecuta en segundo plano en Microsoft Windows.  Como ejemplos pueden citarse el servicio Telnet y el servicio de hora de Windows \(que actualiza el reloj visible del equipo\).  Un servicio de Windows no se puede ejecutar desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; debe ejecutarse dentro del contexto del Administrador de control de servicios.  Para obtener más información, vea [Crear servicios de Windows](../Topic/How%20to:%20Create%20Windows%20Services.md), [Depurar aplicaciones de servicios de Windows](../Topic/How%20to:%20Debug%20Windows%20Service%20Applications.md) y [Aplicaciones de servicios de Windows](../Topic/Developing%20Windows%20Service%20Applications.md).  
+# <a name="debugging-preparation-windows-services"></a>Preparación de la depuración: servicios de Windows
+Un servicio de Windows es un programa que se ejecuta en segundo plano en Microsoft Windows. Como ejemplos pueden citarse el servicio Telnet y el servicio de hora de Windows (que actualiza el reloj visible del equipo). Un servicio de Windows no se puede ejecutar desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; debe ejecutarse dentro del contexto del Administrador de control de servicios. Para obtener más información, consulte [crear servicios de Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [depurar aplicaciones de servicios de Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), y [Windows Service Applications](/dotnet/framework/windows-services/index).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
- [Tipos de proyectos de C\#, F\# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Configuración del proyecto para configuraciones de depuración en C\#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración del proyecto para una configuración de depuración de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Configuraciones de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de depuración de la configuración del proyecto para un de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Cómo: Depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)

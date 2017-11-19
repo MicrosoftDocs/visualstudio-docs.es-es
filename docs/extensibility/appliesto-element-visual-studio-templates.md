@@ -1,70 +1,76 @@
 ---
-title: "AppliesTo (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: AppliesTo (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fc168ca6433204a4f5f50a55c79b9e4320773841
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# AppliesTo (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica una expresión opcional para buscar una o varias funciones coincidentes.  \(vea <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>\).  Las funciones las exponen los tipos de proyecto a través de la jerarquía como una propiedad <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>.  De esta manera, la plantilla se puede compartir en varios tipos de proyecto que tengan funciones aplicables comunes.  
+# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (Elemento, Plantillas de Visual Studio)
+Especifica una expresión opcional para buscar una o varias funciones coincidentes. (vea <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Las funciones las exponen los tipos de proyecto a través de la jerarquía como una propiedad <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De esta manera, la plantilla se puede compartir en varios tipos de proyecto que tengan funciones aplicables comunes.  
   
- Este elemento es opcional.  Puede haber un máximo de una instancia en un archivo de plantilla.  Este elemento solo sirve para designar una plantilla de elemento como aplicable, de acuerdo con las funciones del proyecto activo actualmente seleccionado.  No se puede utilizar para designar una plantilla de elemento como no aplicable.  Si `AppliesTo` no está presente o la expresión no es capaz de indicar si la plantilla es aplicable, se utiliza `TemplateID` o `TemplateGroupID` para crear la plantilla aplicable, como en las versiones anteriores del producto.  
+ Este elemento es opcional. Puede haber un máximo de una instancia en un archivo de plantilla. Este elemento solo sirve para designar una plantilla de elemento como aplicable, de acuerdo con las funciones del proyecto activo actualmente seleccionado. No se puede utilizar para designar una plantilla de elemento como no aplicable. Si `AppliesTo` no está presente o la expresión no es capaz de indicar si la plantilla es aplicable, se utiliza `TemplateID` o `TemplateGroupID` para crear la plantilla aplicable, como en las versiones anteriores del producto.  
   
- Apareció por primera vez en Visual Studio 2013 Update 2.  Para hacer referencia a la versión correcta, vea [Referencing Assemblies Delivered in the Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/es-es/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta, consulte [que hacen referencia a ensamblados que se entregan en Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<AppliesTo >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-<AppliesTo>Capability1</AppliesTo>    
+<AppliesTo>Capability1</AppliesTo>   
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla.|  
   
-## Valor de texto  
- Se requiere un valor de texto.  Este texto especifica las funciones del proyecto.  
+## <a name="text-value"></a>Valor de texto  
+ Se requiere un valor de texto. Este texto especifica las funciones del proyecto.  
   
  La sintaxis de expresión válida se define como:  
   
--   La expresión de la función, por ejemplo “\(VisualC &#124; CSharp\) \+ \(MSTest &#124; NUnit\)”.  
+-   La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
   
--   "&#124;" es el operador OR.  
+-   El "&#124;" es el operador OR.  
   
--   Los caracteres "&" y "\+" son operadores AND.  
+-   Los caracteres "&" y "+" son operadores AND.  
   
--   El carácter “\!” es el operador NOT.  
+-   El carácter “!” es el operador NOT.  
   
 -   Los paréntesis indican el orden de prioridad de la evaluación.  
   
 -   Una expresión null o vacía se evalúa como una coincidencia.  
   
--   Las funciones del proyecto pueden ser cualquier carácter salvo estos caracteres reservados: "'\`:;,\+\-\*\/\\\!~&#124;&%$@^\(\)\={}\[\]\<\>?  \\t\\b\\n\\r  
+-   ¿Las capacidades de proyectos pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~ &#124; & %$@^()={} [] <>? \t\b\n\r  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran tres plantillas diferentes.  `Template1` se aplica a todos los tipos de proyecto de C\# o a cualquier otro tipo de proyecto que admita la función `WindowsAppContainer`.  `Template2` se aplica a todos los proyectos de C\# de cualquier tipo.  `Template3` se aplica a los proyectos de C\# que no son proyectos `WindowsAppContainer`.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestran tres plantillas diferentes. `Template1` se aplica a todos los tipos de proyecto de C# o a cualquier otro tipo de proyecto que admita la función `WindowsAppContainer`. `Template2` se aplica a todos los proyectos de C# de cualquier tipo. `Template3` se aplica a los proyectos de C# que no son proyectos `WindowsAppContainer`.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -93,6 +99,6 @@ Especifica una expresión opcional para buscar una o varias funciones coincident
   
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

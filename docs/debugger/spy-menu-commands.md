@@ -1,41 +1,41 @@
 ---
-title: "Comandos de men&#250; de Spy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Comandos de menú de Spy"
+title: "Comandos de menú de Spy | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy menu commands
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2d54477a809e891cbba30617a872bfbc22c62ce5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comandos de men&#250; de Spy
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El menú **Spy** proporciona comandos para trabajar con las ventanas y vistas de Spy\+\+.  
+# <a name="spy-menu-commands"></a>Comandos de menú de Spy
+El **Spy** menú proporciona comandos para trabajar con ventanas de Spy ++ y vistas.  
   
  **Windows**  
- Abre una nueva vista Ventanas.  
+ Abre una nueva vista de Windows.  
   
  **Procesos**  
- Abre una nueva vista Procesos.  
+ Abre una nueva vista de procesos.  
   
  **Subprocesos**  
- Abre una nueva vista Subprocesos.  
+ Abre una nueva vista de subprocesos.  
   
  **Mensajes de registro**  
- Abre una nueva vista Mensajes y abre el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) para la vista.  
+ Abre una nueva vista mensajes y abre el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) para la vista.  
   
  **Buscar ventana**  
- Muestra el cuadro de diálogo **Buscar ventana** para seleccionar una ventana con el mouse.  
+ Muestra el **FindWindow** cuadro de diálogo para seleccionar una ventana con el mouse.  
   
- **Exit**  
- Cierra la utilidad Spy\+\+.
+ **Salir**  
+ Cierra la utilidad Spy ++.

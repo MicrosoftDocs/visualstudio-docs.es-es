@@ -1,0 +1,54 @@
+---
+title: "Cómo: responder al depurador Just-In-Time | Documentos de Microsoft"
+ms.custom: 
+ms.date: 05/23/17
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Visual Studio], Just-In-Time
+- Just-In-Time debugging
+ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
+caps.latest.revision: "48"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 06beda1fdeda9f62d8f89b9458f488961d39fe29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
+---
+# <a name="how-to-respond-to-the-just-in-time-debugger"></a>Cómo: responder al depurador Just-In-Time
+
+Las acciones que debe realizar cuando vea Just-in-Time cuadro de diálogo de depurador dependen de qué desea hacer:
+
+#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Si desea corregir o depurar el error (los usuarios de Visual Studio)
+
+- Debe tener [instalado Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) para ver la información detallada sobre el error e intenta depurarlo. Para obtener más información, consulte [depurar con el depurador Just](../debugger/debug-using-the-just-in-time-debugger.md). Si no se puede resolver el error y corregir la aplicación, póngase en contacto con el propietario de la aplicación para resolver el error.
+
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Si desea impedir que aparezca el cuadro de diálogo de depurador Just
+
+Puede tomar medidas para evitar Just-in-Time cuadro de diálogo de depurador que aparezcan. Si el error encarga de la aplicación, puede ejecutar la aplicación normalmente.
+
+1. (Aplicaciones web) Si desea ejecutar una aplicación web, puede deshabilitar la depuración de script.
+
+    Para Internet Explorer o Edge, deshabilitar la depuración de scripts en el cuadro de diálogo Opciones de Internet. Puede tener acceso a esta configuración de la **el Panel de Control** > **red e Internet** > **opciones de Internet** (los pasos exactos dependen de su versión de Windows y el explorador).
+
+    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+
+    A continuación, vuelva a abrir la página web donde se encuentra el error. Si cambia la configuración, el problema no se soluciona, póngase en contacto con el propietario de la aplicación web para corregir el problema.
+
+3. (Los usuarios de visual Studio) Si tiene instalado Visual Studio (o si ha instalado anteriormente y quitó), [Just-in-Time de deshabilitar la depuración](../debugger/debug-using-the-just-in-time-debugger.md) e intente volver a ejecutar la aplicación.
+
+    > [!IMPORTANT]
+    > Si deshabilita Just-in-Time de depuración y la aplicación encuentra una excepción no controlada (error), ya sea un cuadro de diálogo de error estándar en su lugar verá o la aplicación se bloqueará o de bloqueo. La aplicación no se ejecutará normalmente hasta que se solucione el error (por usted o el propietario de la aplicación).
+
+2. (ASP.NET e IIS) Si hospeda una aplicación Web ASP.NET en IIS, deshabilite la depuración de servidor.
+
+    En el Administrador de IIS, haga clic en el nodo del servidor y elija **cambiar a vista características**. En la sección de ASP.NET, elija **compilación de .NET** y, a continuación, asegúrese de que elige **False** como el comportamiento de depuración (los pasos son diferentes en versiones anteriores de IIS).
+  
+## <a name="see-also"></a>Vea también    
+ [Conceptos básicos del depurador](../debugger/debugger-basics.md)   

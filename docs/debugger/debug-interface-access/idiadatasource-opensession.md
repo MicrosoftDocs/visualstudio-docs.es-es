@@ -1,58 +1,57 @@
 ---
-title: "IDiaDataSource::openSession | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource::openSession (método)"
+title: 'Idiadatasource:: OpenSession | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource::openSession method
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 72fa36bd077a08484c225e1349134929e541d074
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource::openSession
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Abra una sesión para ver símbolos.  
+# <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
+Se abre una sesión para consultar los símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT openSession (   
-   IDiaSession** ppSession  
+```C++  
+HRESULT openSession (   
+   IDiaSession** ppSession  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  ppSession  
- \[out\]  Devuelve un objeto de [IDiaSession](../../debugger/debug-interface-access/idiasession.md) que representa la sesión abierta.  
+ [out] Devuelve un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto que representa la sesión abierta.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  la tabla siguiente muestra los valores devueltos posibles para este método.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. La tabla siguiente muestran los posibles valores devueltos para este método.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|E\_UNEXPECTED|El objeto de [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) no se ha inicializado anteriormente con un origen de símbolos.|  
-|E\_INVALIDARG|Parámetro no válido de `ppSession` .|  
-|E\_OUTOFMEMORY|Memoria insuficiente para abrir la sesión.|  
+|E_UNEXPECTED|El [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) objeto previamente no se ha inicializado con un origen de símbolos.|  
+|E_INVALIDARG|No válido `ppSession` parámetro.|  
+|E_OUTOFMEMORY|Memoria insuficiente para abrir la sesión.|  
   
-## Comentarios  
- este método abre un objeto de [IDiaSession](../../debugger/debug-interface-access/idiasession.md) para un origen de datos.  
+## <a name="remarks"></a>Comentarios  
+ Este método abre un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objeto para un origen de datos.  
   
- los objetos de`IDiaSession` implementan consultas en el origen de datos.  Una sesión controla un espacio de direcciones para cada conjunto de símbolos de depuración.  Si el archivo .exe o .dll descrito por los símbolos del origen de datos está activo en intervalos con varias direcciones \(por ejemplo, porque varios procesos lo tienen carga\), entonces una sesión para cada intervalo de dirección debe utilizarse.  
+ `IDiaSession`objetos de implementar las consultas en el origen de datos. Una sesión administra un espacio de direcciones para cada conjunto de símbolos de depuración. Si el archivo .exe o .dll descrito por los símbolos de origen de datos está activo en varias direcciones intervalos (por ejemplo, porque tienen varios procesos cargado), a continuación, se debe usar una sesión para cada intervalo de direcciones.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 IDiaSession* pSession;  
 HRESULT hr = pSource->openSession( &pSession );  
 if (FAILED(hr))  
@@ -61,7 +60,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [Información general](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

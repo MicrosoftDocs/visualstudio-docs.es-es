@@ -1,62 +1,64 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetFunctionLineOffset"
-  - "GetFunctionLineOffset"
+title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetFunctionLineOffset
+- GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6ed51d3350142b07c77176e6de41b6ef8d925cc0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetFunctionLineOffset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera la dirección de una función que representa la diferencia determinado de la línea.  
+# <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
+Recupera la dirección dentro de una función que representa el desplazamiento de línea determinada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetFunctionLineOffset(  
-   IDebugAddress*  pAddress,   
-   DWORD           dwLine,   
-   IDebugAddress** ppNewAddress   
+   IDebugAddress*  pAddress,   
+   DWORD           dwLine,   
+   IDebugAddress** ppNewAddress   
 );  
 ```  
   
-```c#  
+```csharp  
 int GetFunctionLineOffset(  
-   IDebugAddress     pAddress,   
-   uint              dwLine,   
-   out IDebugAddress ppNewAddress  
+   IDebugAddress     pAddress,   
+   uint              dwLine,   
+   out IDebugAddress ppNewAddress  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pAddress`  
- \[in\]  Ejecute que representa la función.  
+ [in] Dirección que representa la función.  
   
  `dwLine`  
- \[in\]  Desplazamiento de la línea del principio de la función.  
+ [in] Línea de desplazamiento desde el principio de la función.  
   
  `ppNewAddress`  
- \[out\]  Nueva dirección que representa el desplazamiento de la línea del principio de la función.  
+ [out] Nueva dirección que representa la línea de desplazamiento desde el principio de la función.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
     IDebugAddress *pAddress,  
     DWORD dwLine,  
@@ -101,5 +103,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

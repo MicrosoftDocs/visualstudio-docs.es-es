@@ -1,51 +1,51 @@
 ---
-title: "IDebugDocumentPosition2::GetFileName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetFileName"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetFileName"
+title: IDebugDocumentPosition2::GetFileName | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::GetFileName
+helpviewer_keywords: IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 24ac47f6af78a3e2c5a3d77d63f930d7b7396a2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::GetFileName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el nombre del archivo de código fuente que contiene la posición del documento.  
+# <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
+Obtiene el nombre de archivo del archivo de origen que contiene la posición del documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetFileName(   
-   BSTR* pbstrFileName  
+```cpp  
+HRESULT GetFileName(   
+   BSTR* pbstrFileName  
 );  
 ```  
   
-```c#  
-int GetFileName(   
-   out string pbstrFileName  
+```csharp  
+int GetFileName(   
+   out string pbstrFileName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pbstrFileName`  
- \[out\]  Devuelve el nombre del archivo de código fuente.  
+ [out] Devuelve el nombre de archivo del archivo de origen.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Un archivo de código fuente no siempre tener un nombre de archivo \(el archivo de código fuente puede no existir en el disco, por ejemplo\).  
+## <a name="remarks"></a>Comentarios  
+ Un archivo de origen no puede tener siempre un nombre de archivo (el archivo de origen no exista en el disco, por ejemplo).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

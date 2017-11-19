@@ -1,58 +1,58 @@
 ---
-title: "IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier3::EnumPersistedPorts"
-helpviewer_keywords: 
-  - "IDebugPortSupplier3::EnumPersistedPorts"
+title: IDebugPortSupplier3::EnumPersistedPorts | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortSupplier3::EnumPersistedPorts
+helpviewer_keywords: IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 49f76fe661ec718759600771149f5363788d3a85
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplier3::EnumPersistedPorts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Este método recupera un objeto que permite la enumeración de la lista de puertos persistentes.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT EnumPersistedPorts(  
-   BSTR_ARRAY         PortNames,  
-   IEnumDebugPorts2** ppEnum  
+HRESULT EnumPersistedPorts(  
+   BSTR_ARRAY         PortNames,  
+   IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPersistedPorts(  
-   BSTR_ARRAY           PortNames,  
-   out IEnumDebugPorts2 ppEnum  
+```csharp  
+int EnumPersistedPorts(  
+   BSTR_ARRAY           PortNames,  
+   out IEnumDebugPorts2 ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `PortNames`  
- \[in\]  Una estructura de [BSTR\_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) que contiene una lista de nombres de puerto para buscar y cambiar entre los puertos persistentes.  Sólo las lingüísticamente los puertos con estos nombres se devolverán.  
+ [in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) estructura que contiene una lista de nombres de puerto para buscar y devolver entre los puertos persistentes. Se devuelve solo aquellos puertos persistentes con estos nombres.  
   
  `ppEnum`  
- \[out\]  un objeto que implementa la interfaz de [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .  
+ [out] Un objeto que implementa el [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfaz.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los puertos persistentes se cargan cuando se crea una instancia de un proveedor de puerto, y guardados cuando se destruye el proveedor de puerto.  
+## <a name="remarks"></a>Comentarios  
+ Puertos persistentes se cargan cuando un proveedor de puerto se crea y se guarda cuando se destruye el proveedor del puerto.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   
- [BSTR\_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)
+ [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

@@ -1,59 +1,59 @@
 ---
-title: "IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findAcceleratorInlineesByLinenum | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 386c87aa-f7b2-4d38-9dd6-fffba9ff01f0
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8f465a4089d2d0503c953c39e914d1d15ceff0e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findAcceleratorInlineesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Devuelve una enumeración de los símbolos para los marcos de punto flotante que corresponden a la ubicación especificada del origen.  
+# <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
+Devuelve una enumeración de símbolos para marcos flotantes que corresponden a la ubicación de origen especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findAcceleratorInlineeLinesByName (   
+   IDiaSymbol*           parent,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
    DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `parent`  
- \[in\] `IDiaSymbol` que corresponde a la función de código auxiliar de aceleradores que necesita ser buscada.  
+ [in] Un `IDiaSymbol` que corresponda a la función de código auxiliar de aceleración que necesita que se buscará.  
   
  `file`  
- \[in\] `IDiaSourceFile` de la ubicación de origen.  
+ [in] El `IDiaSourceFile` de la ubicación de origen.  
   
  `linenum`  
- \[in\] número de línea de la ubicación de origen.  
+ [in] El número de línea de la ubicación de origen.  
   
  `colnum`  
- \[in\] número de columnas de la ubicación de origen.  
+ [in] El número de columna de la ubicación de origen.  
   
  `ppResult`  
- \[out\] puntero A un puntero de interfaz de `IDiaEnumLineNumbers` inicializar con el resultado.  
+ [out] Un puntero a un `IDiaEnumLineNumbers` puntero de interfaz que se inicializa con el resultado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

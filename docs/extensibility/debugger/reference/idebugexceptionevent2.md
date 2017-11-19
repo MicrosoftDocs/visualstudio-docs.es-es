@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2
-helpviewer_keywords:
-- IDebugExceptionEvent2 interface
+f1_keywords: IDebugExceptionEvent2
+helpviewer_keywords: IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: c9817ca386846833ab022c5dbca3d3807bd38ef6
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4aa1c643a07f15f361c77c618d717cc2655277c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) cuando se produce una excepción en el programa que se está ejecutando actualmente.  

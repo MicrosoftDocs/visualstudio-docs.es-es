@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="localizing-menu-commands"></a>Localizar los comandos de menú
 Puede proporcionar el texto localizado para el menú y barra de herramientas de comandos mediante la creación de archivos de vsct localizado y adaptado .resx (archivos) para que el paquete de VS y, a continuación, actualizar los archivos de proyecto incorporar los cambios.  
@@ -52,11 +37,11 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
   
 2.  Realizar una copia de *filename*.en-US.vsct para cada uno de los idiomas localizados.  
   
-     El nombre de cada copia *filename*.* Configuración regional*.vsct, donde *configuración regional* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     El nombre de cada copia *filename*. *Configuración regional*.vsct, donde *configuración regional* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
   
-     Estos *filename*.* Configuración regional*archivos .vsct contendrá el texto del menú localizada para el paquete.  
+     Estos *filename*. *Configuración regional*archivos .vsct contendrá el texto del menú localizada para el paquete.  
   
-3.  Abra cada *filename*.* Configuración regional*archivo .vsct para localizar el texto.  
+3.  Abra cada *filename*. *Configuración regional*archivo .vsct para localizar el texto.  
   
     1.  Modificar el [ButtonText](../extensibility/buttontext-element.md) elemento valores según corresponda para el lenguaje determinado.  
   

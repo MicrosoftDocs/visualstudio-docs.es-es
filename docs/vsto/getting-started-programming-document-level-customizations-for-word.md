@@ -1,77 +1,79 @@
 ---
-title: "Introducci&#243;n a la programaci&#243;n de personalizaciones de nivel de documento para Word"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "proyectos de Word [desarrollo de Office en Visual Studio], introducción"
-  - "soluciones de Word en Visual Studio"
+title: "Introducción a la programación de personalizaciones de nivel de documento para Word | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word solutions in Visual Studio
+- Word projects [Office development in Visual Studio], getting started
 ms.assetid: 30593c47-1658-4fca-b9a9-36fbdf73c901
-caps.latest.revision: 44
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 43
+caps.latest.revision: "44"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Introducci&#243;n a la programaci&#243;n de personalizaciones de nivel de documento para Word
-  Si ha empezado recientemente a crear personalizaciones de nivel de documento para Microsoft Office Word con Visual Studio, esto es lo que necesita saber.  
+# <a name="getting-started-programming-document-level-customizations-for-word"></a>Introducción a la programación de personalizaciones de nivel de documento para Word
+  Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Word mediante Visual Studio, aquí es lo que necesita saber.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
-## Introducción al funcionamiento de las personalizaciones de nivel de documento para Word  
- Cada personalización de Word que crea se basa en un documento único.  Para empezar a utilizar la personalización, el usuario final abre el documento o lo crea a partir de una plantilla de Word.  Los eventos del documento, como por ejemplo desplazar el cursor a áreas específicas o hacer clic en botones y elementos de menús, pueden llamar a métodos de control de eventos del ensamblado.  Cuando se cierra el documento, las características proporcionadas por la personalización dejan de estar disponibles en Word.  
+## <a name="understanding-how-document-level-customizations-for-word-work"></a>Descripción de las personalizaciones de nivel de documento cómo para el trabajo de Word  
+ Cada personalización de Word que cree se basa en un solo documento. Para empezar a usar la personalización, el usuario final abre el documento o se crea a partir de una plantilla de Word. Eventos en el documento, por ejemplo, mueva el cursor a áreas específicas o hacer clic en botones y elementos de menú, pueden llamar a métodos de control de eventos en el ensamblado. Cuando se cierra el documento, las características proporcionadas por la personalización dejan de estar disponibles en Word.  
   
- Para obtener más información, vea [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
+ Para obtener más información, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
   
-## Crear proyectos de nivel de documento para Word  
- Para crear un proyecto de personalización de nivel de documento para Word, use las plantillas de proyecto Documento de Word o Plantilla de Word que están disponibles en el cuadro de diálogo **Nuevo proyecto** de Visual Studio.  Estas plantillas incluyen las referencias de ensamblado y los archivos de proyecto necesarios.  
+## <a name="creating-document-level-projects-for-word"></a>Crear proyectos de nivel de documento para Word  
+ Para crear una personalización de nivel de documento para Word, use la plantilla de proyecto de documento de Word o plantilla de Word en el **nuevo proyecto** cuadro de diálogo. Estas plantillas incluyen las referencias de ensamblado necesarias y los archivos del proyecto.  
   
- Para obtener más información sobre cómo crear un proyecto de nivel de documento para Word, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  Para obtener más información sobre las plantillas de proyecto, vea [Información general sobre las plantillas de Office Project](../vsto/office-project-templates-overview.md).  
+ Para obtener más información acerca de cómo crear un proyecto de nivel de documento para Word, consulte [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Para obtener más información acerca de las plantillas de proyecto, vea [información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).  
   
-## Programar documentos de Word mediante elementos y controles host  
- Los *elementos host* y *controles host* son clases que proporcionan el modelo de programación para las personalizaciones de nivel de documento.  
+## <a name="programming-word-documents-by-using-host-items-host-controls"></a>Programación de documentos de Word mediante el uso de elementos y controles Host  
+ *Elementos host* y *controles host* son clases que proporcionan el modelo de programación para las personalizaciones de nivel de documento.  
   
- Los elementos host proporcionan un punto de entrada para el código, y también pueden actuar como contenedores para los controles host y controles de formularios Windows Forms.  En proyectos de nivel de documento para Word, la clase `ThisDocument` representa el elemento host.  
+ Elementos host proporcionan un punto de entrada para el código y también puede actúan como contenedores para los controles host y controles de formularios Windows Forms. En los proyectos de nivel de documento para Word, el elemento de host está representado por la `ThisDocument` clase.  
   
- Los controles host se basan en objetos nativos de Word, como controles de contenido, marcadores y nodos XML.  Los controles host proporcionan una funcionalidad similar a los objetos nativos de Word, pero también disponen de nuevos eventos, compatibilidad con diseñadores y capacidad de enlace de datos.  Aparecen como objetos de primera clase en el código del proyecto y en IntelliSense, lo que facilita las referencias a objetos específicos directamente en el código sin necesidad de navegar por el modelo de objetos de Word.  
+ Controles host se basan en objetos nativos de Word, como controles de contenido, marcadores y nodos XML. Controles host proporcionan una funcionalidad similar a los objetos nativos de Word, pero también tienen nuevos eventos, compatibilidad con el diseñador y capacidad de enlace de datos. Aparecen como objetos de primera clase en el código del proyecto y en IntelliSense, lo que resulta más sencillo hacer referencia a objetos específicos directamente en el código sin tener que navegar por el modelo de objetos de Word.  
   
  Para obtener más información, vea los temas siguientes:  
   
--   [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)  
+-   [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
   
--   [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)  
+-   [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)  
   
 -   [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)  
   
-## Personalizar la interfaz de usuario de Word  
- La mayoría de las soluciones de Microsoft Office modifican la interfaz de usuario de la aplicación de Office para proporcionar formas en las que los usuarios puedan interactuar con la solución.  Hay muchas maneras en las que se puede modificar la interfaz de usuario de Word mediante una personalización de nivel de documento.  Por ejemplo, puede agregar controles a la cinta de opciones, y puede mostrar un panel de acciones.  Para obtener más información, vea [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
+## <a name="customizing-the-user-interface-of-word"></a>Personalización de la interfaz de usuario de Word  
+ La mayoría de soluciones de Microsoft Office modificar la interfaz de usuario (UI) de la aplicación de Office para proporcionar alguna manera para que los usuarios interactuar con la solución. Hay muchas maneras en que puede modificar la interfaz de usuario de Word mediante una personalización de nivel de documento. Por ejemplo, puede agregar controles a la cinta de opciones, y puede mostrar un panel de acciones. Para obtener más información, consulte [personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md).  
   
- También puede abrir el documento que está asociado directamente al proyecto en Visual Studio.  Una vez abierto el documento en Visual Studio, puede modificarlo mediante la interfaz de usuario de Word.  También puede utilizar el documento como superficie de diseño, lo que permite al usuario arrastrar controles hasta el mismo.  Para obtener más información, vea [Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
+ También puede abrir el documento que está asociado al proyecto directamente en Visual Studio. Cuando el documento está abierto en Visual Studio, puede modificar el documento mediante la interfaz de usuario de Word. También puede usar el documento como una superficie de diseño, que le permite arrastrar controles en él. Para obtener más información, consulte [proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-## Enlazar controles a los datos  
- Los controles de contenido y el control <xref:Microsoft.Office.Tools.Word.Bookmark> se encuentran en la lista de controles que se pueden arrastrar desde la ventana **Orígenes de datos**.  Al agregar controles de contenido y marcadores de esta manera, se enlazan automáticamente con el origen de datos que se configure mediante la ventana.  Sin escribir ningún código, puede mostrar los datos contenidos en bases de datos, servicios y objetos de negocios.  Para obtener más información, vea [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+## <a name="binding-controls-to-data"></a>Enlazar controles a los datos  
+ Los controles de contenido y la <xref:Microsoft.Office.Tools.Word.Bookmark> control están en la lista de controles que puede arrastrar desde el **orígenes de datos** ventana. Agregar controles de contenido y marcadores de esta manera automáticamente, enlaza al origen de datos que configura mediante la ventana. Sin escribir ningún código, puede mostrar datos de bases de datos, servicios y objetos comerciales. Para obtener más información, consulte [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-## Pasos siguientes  
- Para obtener información sobre cómo crear una personalización de nivel de documento para Word, vea [Tutorial: Crear la primera personalización en el nivel del documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md).  En este tutorial se presentan las herramientas de desarrollo de Office en Visual Studio y el modelo de programación para las personalizaciones de nivel de documento para Word.  
+## <a name="next-steps"></a>Pasos siguientes  
+ Para obtener información sobre cómo crear una personalización de nivel de documento para Word, consulte [Tutorial: crear el primer nivel de documento Customization For Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md). En este tutorial se presenta las herramientas de desarrollo de Office en Visual Studio y el modelo de programación para las personalizaciones de nivel de documento de Word.  
   
- Para obtener una lista de temas en los que se describen algunas de las tareas comunes en los proyectos de Word, vea [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md).  
+ Para obtener una lista de temas que le guiarán a través de algunas de las tareas comunes en proyectos de Word, consulte [tareas comunes de programación de Office](../vsto/common-tasks-in-office-programming.md).  
   
-## Vea también  
- [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
+## <a name="see-also"></a>Vea también  
+ [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
  [Soluciones de Word](../vsto/word-solutions.md)   
- [Tutorial: Crear la primera personalización en el nivel del documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
+ [Tutorial: Crear la primera personalización de nivel de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
- [Información general acerca del modelo de objetos de Word](../vsto/word-object-model-overview.md)   
+ [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
   
   

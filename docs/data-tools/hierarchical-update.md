@@ -1,5 +1,5 @@
 ---
-title: Hierarchical update | Microsoft Docs
+title: "Actualización jerárquica | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - saving data, changed data
 - data [Visual Basic], hierarchical update
@@ -22,118 +20,105 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 78f1d4a53dee7bd0e9cfe22e1ad2b1f94555f7e1
-ms.contentlocale: es-es
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 0091e17cf24a9476dde84cf2d8ad1a34f94e2cdd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="hierarchical-update"></a>Hierarchical update
-*Hierarchical update* refers to the process of saving updated data (from a dataset with two or more related tables) back to a database while maintaining referential integrity rules. *Referential integrity* refers to the consistency rules provided by the constraints in a database that control the behavior of inserting, updating, and deleting related records. For example, it's referential integrity that enforces the creation of a customer record before allowing orders to be created for that customer.  For more information about relationships in datasets, see [Relationships in datasets](../data-tools/relationships-in-datasets.md)  
+# <a name="hierarchical-update"></a>Actualización jerárquica
+*Actualización jerárquica* hace referencia al proceso de guardar los datos actualizados (de un conjunto de datos con dos o más tablas relacionadas) a una base de datos manteniendo las reglas de integridad referencial. *La integridad referencial* hace referencia a las reglas de coherencia proporcionadas por las restricciones en una base de datos que controlan el comportamiento de insertar, actualizar y eliminar registros relacionados. Por ejemplo, es integridad referencial que exige la creación de un registro de cliente antes de permitir que los pedidos se va a crearse para ese cliente.  Para obtener más información acerca de las relaciones en conjuntos de datos, vea [relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)  
   
- The hierarchical update feature uses a `TableAdapterManager` to manage the `TableAdapter`s in a typed dataset. The `TableAdapterManager` component is a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-generated class, so it's not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. When you drag a table from the data sources window to a Windows Form or WPF page, Visual Studio adds a variable of type TableAdapterManager to the form or page, and you see it in the designer in the component tray. For detailed information about the `TableAdapterManager` class, see the TableAdapterManager Reference section of [TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
+ La característica de actualización jerárquica usa un `TableAdapterManager` para administrar el `TableAdapter`s en un conjunto de datos con tipo. El `TableAdapterManager` componente es un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-generado (clase), por lo que no forma parte de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Cuando se arrastra una tabla desde la ventana de orígenes de datos a un formulario Windows Forms o la página WPF, Visual Studio agrega una variable de tipo TableAdapterManager al formulario o la página y se muestra en el diseñador en la Bandeja de componentes. Para obtener información detallada sobre la `TableAdapterManager` de clases, vea la sección de referencia de TableAdapterManager de [TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
- By default, a dataset treats related tables as "relations only," which means that it doesn't enforce foreign key constraints. You can modify that setting at design time by using the Dataset Designer. Select the relation line between two tables to bring up the **Relation** dialog box. The changes you make here will determine how the TableAdapterManager behaves when it send the changes in the related tables back to the database.  
+ De forma predeterminada, un conjunto de datos trata las tablas relacionadas como "solo, relaciones" lo que significa que no obliga a usar restricciones foreign key. Puede modificar esa configuración en tiempo de diseño mediante el Diseñador de Dataset. Seleccione la línea de relación entre dos tablas para que aparezca el **relación** cuadro de diálogo. Los cambios que realice aquí determinarán cómo comporta el TableAdapterManager al que enviar los cambios en las tablas relacionadas en la base de datos.  
   
-## <a name="enable-hierarchical-update-in-a-dataset"></a>Enable hierarchical update in a dataset  
- By default, hierarchical update is enabled for all new datasets that are added or created in a project. Turn hierarchical update on or off by setting the **Hierarchical Update** property of a typed dataset in The dataset to **True** or **False**:  
+## <a name="enable-hierarchical-update-in-a-dataset"></a>Habilitar la actualización jerárquica en un conjunto de datos  
+ De forma predeterminada, la actualización jerárquica está habilitada para todos los nuevos conjuntos de datos que se agregan o se crean en un proyecto. Activar o desactivar la actualización jerárquica estableciendo la **actualización jerárquica** propiedad de un conjunto de datos con tipo en el conjunto de datos **True** o **False**:  
   
- ![Hierarchical update setting](../data-tools/media/hierarchical-update-setting.png "Hierarchical update setting")  
+ ![Configuración de actualización jerárquica](../data-tools/media/hierarchical-update-setting.png "la configuración de actualización jerárquica")  
   
-## <a name="create-a-new-relation-between-tables"></a>Create a new relation between tables  
- To create a new relation between two tables, in the Dataset Designer, select the title bar of each table, then right-click and select **Add relation**.  
+## <a name="create-a-new-relation-between-tables"></a>Crear a una nueva relación entre tablas  
+ Para crear una nueva relación entre dos tablas, en el Diseñador de Dataset, seleccione la barra de título de cada tabla, a continuación, haga clic en y seleccione **agregar relación**.  
   
- ![Hierarchical update add relation menu](../data-tools/media/hierarchical-update-add-relation-menu.png "Hierarchical update add relation menu")  
+ ![Actualización jerárquica Agregar menú relación](../data-tools/media/hierarchical-update-add-relation-menu.png "actualización jerárquica agregar menús de relación")  
   
-## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Understand foreign-key constraints, cascading updates, and deletes  
- It's important to understand how foreign-key constraints and cascading behavior in the database are created in the generated dataset code.  
+## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Comprender las restricciones foreign key, las actualizaciones en cascada y las eliminaciones  
+ Es importante entender las restricciones foreign key cómo y comportamiento en cascada en la base de datos se crean en el código de conjunto de datos generado.  
   
- By default, the data tables in a dataset are generated with relationships (<xref:System.Data.DataRelation>) that match the relationships in the database. However, the relationship in the dataset is not generated as a foreign-key constraint. The <xref:System.Data.DataRelation> is configured as **Relation Only** without <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> or <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> in effect.  
+ De forma predeterminada, las tablas de datos en un conjunto de datos se generan con relaciones (<xref:System.Data.DataRelation>) que coinciden con las relaciones en la base de datos. Sin embargo, la relación en el conjunto de datos no se genera como una restricción FOREIGN KEY. El <xref:System.Data.DataRelation> está configurado como **sólo relación** sin <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> o <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> en vigor.  
   
- By default, cascading updates and cascading deletes are turned off even if the database relationship is set with cascading updates and/or cascading deletes turned on. For example, creating a new customer and a new order and then trying to save the data can cause a conflict with the foreign-key constraints that are defined in the database. For more information, see [Turn off constraints while filling a dataset](turn-off-constraints-while-filling-a-dataset.md).  
+ De forma predeterminada, las actualizaciones y las eliminaciones en cascada están desactivadas, incluso si la relación de la base de datos establece que estén activadas. Por ejemplo, crear un nuevo cliente y un nuevo pedido y, a continuación, intenta guardar los datos pueden producir un conflicto con las restricciones de clave externa que se definen en la base de datos. Para obtener más información, consulte [desactivar restricciones al llenar un conjunto de datos](turn-off-constraints-while-filling-a-dataset.md).  
   
-## <a name="set-the-order-to-perform-updates"></a>Set the order to perform updates  
- Setting the order to perform updates sets the order of the individual inserts, updates, and deletes that are required to save all the modified data in all tables of a dataset. When hierarchical update is enabled, inserts are performed first, then updates, and then deletes. The `TableAdapterManager` provides an `UpdateOrder` property that can be set to perform updates first, then inserts, and then deletes.  
-  
-> [!NOTE]
->  It's  important to understand that the update order is all inclusive. That is, when updates are performed, inserts, and then deletes are performed for all tables in the dataset.  
-  
- To set the `UpdateOrder` property, after dragging items from the [Data Sources Window](add-new-data-sources.md) onto a form, select the `TableAdapterManager` in the component tray, and then set the `UpdateOrder` property in the **Properties** window. 
-  
-## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Create a backup copy of a dataset before performing a hierarchical update  
- When you save data (by calling the `TableAdapterManager.UpdateAll()` method), the `TableAdapterManager` attempts to update the data for each table in a single transaction. If any part of the update for any table fails, the whole transaction is rolled back. In most situations, the rollback returns your application to its original state.  
-  
- However, sometimes you might want to restore the dataset from the backup copy. One example of this might occur when you're using auto-increment values. For example, if a save operation is not successful, auto-increment values are not reset in the dataset, and the dataset  continues to create auto-incrementing values.This leaves a gap in numbering that might not be acceptable in your application. In situations where this is an issue, the `TableAdapterManager` provides a `BackupDataSetBeforeUpdate` property that replaces the existing dataset with a backup copy if the transaction fails.  
+## <a name="set-the-order-to-perform-updates"></a>Establecer el orden para realizar actualizaciones  
+ Establecer el orden para realizar actualizaciones establece el orden de la persona inserta, actualiza y elimina ese necesarias para guardar todos los datos modificados en todas las tablas de un conjunto de datos. Cuando la actualización jerárquica está habilitada, las inserciones se llevan a cabo en primer lugar, a continuación, actualiza y, a continuación, se elimina. El `TableAdapterManager` proporciona un `UpdateOrder` propiedad que se puede establecer para realizar actualizaciones en primer lugar, inserciones y eliminaciones.  
   
 > [!NOTE]
->  The backup copy is only in memory while the `TableAdapterManager.UpdateAll` method is running. Therefore, there is no programmatic access to this backup dataset because it either replaces the original dataset or goes out of scope as soon as the `TableAdapterManager.UpdateAll` method finishes running.  
+>  Es importante entender que el orden de actualización es totalmente inclusivo. Es decir, cuando se realizan las actualizaciones, inserciones y, a continuación, las eliminaciones se realizan para todas las tablas del conjunto de datos.  
   
-## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modify the generated save code to perform the hierarchical update  
- Save changes from the related data tables in the dataset to the database by calling the `TableAdapterManager.UpdateAll` method and passing in the name of the dataset that contains the related tables. For example, run the `TableAdapterManager.UpdateAll(NorthwindDataset)` method to send updates from all the tables in NorthwindDataset to the back-end database.  
+ Para establecer el `UpdateOrder` propiedad después de arrastrar elementos desde la [ventana Orígenes de datos](add-new-data-sources.md) en un formulario, seleccione la `TableAdapterManager` en la Bandeja de componentes y, a continuación, establezca el `UpdateOrder` propiedad en la **propiedades** ventana. 
   
- After you drop the items from the **Data Sources** window, code is automatically added to the `Form_Load` event to populate each table (the `TableAdapter.Fill` methods). Code is also added to the **Save** button click event of the <xref:System.Windows.Forms.BindingNavigator> to save data from the dataset back to the database (the `TableAdapterManager.UpdateAll` method).  
+## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Crear una copia de seguridad de un conjunto de datos antes de realizar una actualización jerárquica  
+ Cuando se guardan datos (llamando al método `TableAdapterManager.UpdateAll()` ), `TableAdapterManager` intenta actualizar los datos para cada tabla en una transacción única. Si se produce un error en cualquier parte de la actualización en cualquier tabla, se revierte la transacción entera. En la mayoría de los casos, la reversión de la aplicación vuelve a su estado original.  
   
- The generated save code also contains a line of code that calls the `CustomersBindingSource.EndEdit` method. More specifically, it calls the <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method of the first <xref:System.Windows.Forms.BindingSource>that's added to the form. In other words, this code is only generated for the first table that's dragged from the **Data Sources** window onto the form. The <xref:System.Windows.Forms.BindingSource.EndEdit%2A> call commits any changes that are in process in any data-bound controls that are currently being edited. Therefore, if a data-bound control still has focus and you click the **Save** button, all pending edits in that control are committed before the actual save (the `TableAdapterManager.UpdateAll` method).  
-  
-> [!NOTE]
->  The Dataset Designer only adds the `BindingSource.EndEdit` code for the first table that's dropped onto the form. Therefore, you have to add a line of code to call the `BindingSource.EndEdit` method for each related table on the form. For this walkthrough, this means you have to add a call to the `OrdersBindingSource.EndEdit` method.  
-  
-#### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>To update the code to commit changes to the related tables before saving  
-  
-1.  Double-click the **Save** button on the <xref:System.Windows.Forms.BindingNavigator> to open **Form1** in the Code Editor.  
-  
-2.  Add a line of code to call the `OrdersBindingSource.EndEdit` method after the line that calls the `CustomersBindingSource.EndEdit` method. The code in the **Save** button click event should resemble the following:  
-  
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]  [!code-cs[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]  
-  
- In addition to committing changes on a related child table before saving data to a database, you might also have to commit newly created parent records before adding new child records to a dataset. In other words, you might have to add the new parent record (Customer) to the dataset before foreign key constraints enable new child records (Orders) to be added to the dataset. To accomplish this, you can use the child `BindingSource.AddingNew` event.  
+ Sin embargo, a veces se decide restaurar el conjunto de datos a partir de la copia de seguridad. Un ejemplo de esto se puede producir cuando usa valores de incremento automático. Por ejemplo, si un proceso de guardar la operación no es correcta, valores de incremento automático no se restablecen en el conjunto de datos y el conjunto de datos continúa crear valores de incremento automático. Esto deja un vacío en la numeración que puede no ser aceptable en la aplicación. En situaciones donde éste es un problema, `TableAdapterManager` proporciona una propiedad `BackupDataSetBeforeUpdate` que reemplaza el conjunto de datos existente con una copia de seguridad si se produce un error en la transacción.  
   
 > [!NOTE]
->  Whether you have to commit new parent records depends on the type of control that's used to bind to your data source. In this walkthrough, you use individual controls to bind to the parent table. This requires the additional code to commit the new parent record. If the parent records were instead displayed in a complex binding control like the <xref:System.Windows.Forms.DataGridView>, this additional <xref:System.Windows.Forms.BindingSource.EndEdit%2A> call for the parent record would not be necessary. This is because the underlying data-binding functionality of the control handles the committing of the new records.  
+>  La copia de seguridad únicamente permanece en memoria mientras el `TableAdapterManager.UpdateAll` método se está ejecutando. Por lo tanto, no hay ningún acceso mediante programación a este conjunto de datos de copia de seguridad porque reemplaza el conjunto de datos original o se sale del ámbito en cuanto el `TableAdapterManager.UpdateAll` método termina de ejecutarse.  
   
-#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>To add code to commit parent records in the dataset before adding new child records  
+## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modificar generado guardar código para realizar la actualización jerárquica  
+ Guarde en la base de datos los cambios de las tablas de datos relacionadas del conjunto de datos; para ello, llame al método `TableAdapterManager.UpdateAll` y pase el nombre del conjunto de datos que contiene las tablas relacionadas. Por ejemplo, ejecute el método `TableAdapterManager.UpdateAll(NorthwindDataset)` para enviar las actualizaciones de todas las tablas de NorthwindDataset a la base de datos back-end.  
   
-1.  Create an event handler for the `OrdersBindingSource.AddingNew` event.  
+ Después de colocar los elementos de la **orígenes de datos** ventana, se agrega automáticamente código para el `Form_Load` eventos para rellenar cada tabla (la `TableAdapter.Fill` métodos). También se agrega código para el **guardar** evento de clic de botón la <xref:System.Windows.Forms.BindingNavigator> para guardar los datos del conjunto de datos en la base de datos (el `TableAdapterManager.UpdateAll` método).  
   
-    -   Open **Form1** in design view, select **OrdersBindingSource** in the component tray, select **Events** in the **Properties** window, and then double-click the **AddingNew** event.  
+ El código de guardado generado también contiene una línea de código que llama al método `CustomersBindingSource.EndEdit`. Más específicamente, llama a la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método del primer <xref:System.Windows.Forms.BindingSource>que se agrega al formulario. En otras palabras, este código solo se genera para la primera tabla que se arrastra desde el **orígenes de datos** ventana hasta el formulario. La llamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma los cambios que están en curso en los controles enlazados a datos que se estén editando en ese momento. Por lo tanto, si un control enlazado a datos aún tiene foco y hace clic en el **guardar** button, todas las ediciones pendientes en ese control se confirman antes del guardado real (el `TableAdapterManager.UpdateAll` método).  
   
-2.  Add a line of code to the event handler that calls the `CustomersBindingSource.EndEdit` method. The code in the `OrdersBindingSource_AddingNew` event handler should resemble the following:  
+> [!NOTE]
+>  El Diseñador de Dataset solo agrega el `BindingSource.EndEdit` código para la primera tabla que se coloca en el formulario. Por lo tanto, tiene que agregar una línea de código para llamar al método `BindingSource.EndEdit` para cada tabla relacionada en el formulario. Para este tutorial, esto significa que tiene que agregar una llamada al método `OrdersBindingSource.EndEdit`.  
   
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]  [!code-cs[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]  
+#### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para actualizar el código para confirmar los cambios en las tablas relacionadas antes de guardar  
   
-## <a name="tableadaptermanager-reference"></a>TableAdapterManager reference  
- By default, a `TableAdapterManager` class is generated when you create a dataset that contains related tables. To prevent the class from being generated, change the value of the `Hierarchical Update` property of the dataset to false. When you drag a table that has a relation onto the design surface of a Windows Form or WPF page, Visual Studio declares a member variable of the class. If you don't use databinding, you have to manually declare the variable.  
+1.  Haga doble clic en el **guardar** situado en la <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** en el Editor de código.  
   
- The `TableAdapterManager` class is not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Therefore, you cannot look it up in the documentation. It is created at design time as part of the dataset creation process.  
+2.  Agregue una línea de código para llamar al método `OrdersBindingSource.EndEdit` después de la línea que llama al método `CustomersBindingSource.EndEdit`. El código en el **guardar** clic en el botón eventos deben ser similar a lo siguiente:  
   
- The following are the frequently used methods and properties of the `TableAdapterManager` class:  
+     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
+     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]  
   
-|Member|Description|  
+Además de confirmar los cambios en una tabla secundaria relacionada antes de guardar los datos en una base de datos, quizás también tenga que confirmar los registros primarios recién creados antes de agregar nuevos registros secundarios a un conjunto de datos. En otras palabras, quizás tenga que agregar el nuevo registro primario (Customer) al conjunto de datos para que las restricciones de clave externa permitan agregar nuevos registros secundarios (Orders) al conjunto de datos. Para ello, puede usar el evento `BindingSource.AddingNew` secundario.  
+  
+> [!NOTE]
+>  Si se deben confirmar los nuevos registros primarios depende del tipo de control que se usa para enlazar al origen de datos. En este tutorial, usa controles individuales para enlazar a la tabla primaria. Esto requiere que el código adicional confirme el nuevo registro primario. Si los registros primarios se mostraron en su lugar en un control de enlace complejo, como el <xref:System.Windows.Forms.DataGridView>este adicionales <xref:System.Windows.Forms.BindingSource.EndEdit%2A> llamar a para el registro primario no sería necesario. Esto se debe a que la funcionalidad de enlace a datos subyacente del control controla la confirmación de los nuevos registros.  
+  
+#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Para agregar código para confirmar los registros primarios en el conjunto de datos antes de agregar registros secundarios  
+  
+1.  Cree un controlador para el evento `OrdersBindingSource.AddingNew`.  
+  
+    -   Abra **Form1** en la vista de diseño, seleccione **OrdersBindingSource** en la Bandeja de componentes, seleccione **eventos** en el **propiedades** ventana, y a continuación, haga doble clic en el **AddingNew** evento.  
+  
+2.  Agregar una línea de código al controlador de eventos que llama el `CustomersBindingSource.EndEdit` método. El código del controlador de evento `OrdersBindingSource_AddingNew` debe tener un aspecto similar al siguiente:  
+  
+     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
+     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]  
+  
+## <a name="tableadaptermanager-reference"></a>Referencia de TableAdapterManager  
+ De forma predeterminada, un `TableAdapterManager` clase se genera cuando se crea un conjunto de datos contiene tablas relacionadas. Para evitar que la clase que se está generando, cambie el valor de la `Hierarchical Update` propiedad del conjunto de datos en false. Cuando se arrastra una tabla que tiene una relación a la superficie de diseño de un formulario Windows Forms o la página WPF, Visual Studio declara una variable de miembro de la clase. Si no usa el enlace de datos, es necesario manualmente declarar la variable.  
+  
+ El `TableAdapterManager` clase no es parte de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Por lo tanto, no puede buscarla en la documentación. Se crea en tiempo de diseño como parte del proceso de creación del conjunto de datos.  
+  
+ Los siguientes son los métodos usados con frecuencia y las propiedades de la `TableAdapterManager` clase:  
+  
+|Miembro|Descripción|  
 |------------|-----------------|  
-|`UpdateAll` method|Saves all data from all data tables.|  
-|`BackUpDataSetBeforeUpdate` property|Determines whether to create a backup copy of the dataset before executing the `TableAdapterManager.UpdateAll` method.Boolean.|  
-|*tableName* `TableAdapter` property|Represents a `TableAdapter`. The generated `TableAdapterManager` contains a property for each `TableAdapter` it manages. For example, a dataset with a Customers and Orders table is generated with a `TableAdapterManager` that contains `CustomersTableAdapter` and `OrdersTableAdapter` properties.|  
-|`UpdateOrder` property|Controls the order of the individual insert, update, and delete commands. Set this to one of the values in the `TableAdapterManager.UpdateOrderOption` enumeration.<br /><br /> By default, the `UpdateOrder` is set to **InsertUpdateDelete**. This means that inserts, then updates, and then deletes are performed for all tables in the dataset.|  
+|Método `UpdateAll`|Guarda todos los datos de todas las tablas de datos.|  
+|Propiedad `BackUpDataSetBeforeUpdate`|Determina si se debe crear una copia de seguridad del conjunto de datos antes de ejecutar el `TableAdapterManager.UpdateAll` método. Valor booleano.|  
+|*tableName* `TableAdapter` propiedad|Representa un `TableAdapter`. Generado `TableAdapterManager` contiene una propiedad para cada `TableAdapter` que administra. Por ejemplo, un conjunto de datos con una tabla Customers y Orders se genera con un `TableAdapterManager` que contiene `CustomersTableAdapter` y `OrdersTableAdapter` propiedades.|  
+|Propiedad `UpdateOrder`|Controla el orden de los individual insert, update y comandos delete. Establezca esta propiedad en uno de los valores de la `TableAdapterManager.UpdateOrderOption` enumeración.<br /><br /> De forma predeterminada, el `UpdateOrder` está establecido en **InsertUpdateDelete**. Esto significa que se inserta, a continuación, actualizaciones y eliminaciones, a continuación, se realizan para todas las tablas del conjunto de datos.|  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Vea también  
+ [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

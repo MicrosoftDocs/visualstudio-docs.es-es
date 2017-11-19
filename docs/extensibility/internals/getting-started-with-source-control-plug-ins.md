@@ -1,42 +1,44 @@
 ---
-title: "Introducci&#243;n a los complementos de Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "origen control complementos, introducción"
-  - "obtener iniciado, origen control complementos"
+title: "Introducción a los complementos de Control de código fuente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control plug-ins, getting started
+- getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ccbc7536a899226b7f2d9433b6c451df33bbde5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Introducci&#243;n a los complementos de Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Para crear un complemento de control de código fuente, debe crear un archivo DLL que implementa las funciones definido en el Control de origen API del complemento, y después registrar una DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para hacerlo disponible para su uso en el control de versiones de código fuente.  
+# <a name="getting-started-with-source-control-plug-ins"></a>Introducción a los complementos de Control de código fuente
+Para crear un control de código fuente complemento, debe crear un archivo DLL que implementa las funciones definidas en la API de complemento de Control de origen, y, a continuación, registrar la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que esté disponible para su uso en el control de versiones de código de origen.  
   
- Tres versiones del complemento de control de código fuente API \(versiones 1,1, 1,2, y 1,3\) están disponibles para los complementos de control de código fuente.  El complemento de control de código fuente API documentadas aquí es la versión 1,3.  Se ha diseñado para ser totalmente compatible con los complementos de control de código fuente que admitían las versiones 1,1 y 1,2.  Los detalles de la sección de [Novedades de la API de complemento de origen Control versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) que las nuevas características admitidas en la última versión del complemento API de Control de código fuente.  
+ Tres versiones de la API de complemento de Control de origen (versiones 1.1, 1.2 y 1.3) están disponibles para los complementos de control de código fuente. La API de complementos de Control de código fuente mostradas aquí es la versión 1.3. Se diseñó para ser totalmente compatibles con los complementos de control de código fuente admite las versiones 1.1 y 1.2. El [What's New en la API de complemento de origen Control versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sección detallan las nuevas características que se admiten en la versión más reciente de la API de complemento de Control de origen.  
   
-## En esta sección  
- [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- Describe cómo crear las entradas del Registro necesarias para conectar un control de código fuente DLL.  
+## <a name="in-this-section"></a>En esta sección  
+ [Instalación de un complemento de control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ Describe cómo hacer que las entradas del registro necesarias para conectar un archivo DLL del control de código fuente.  
   
- [Novedades de la API de complemento de origen Control versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- Proporciona información general sobre los cambios realizados en el complemento de control de código fuente API en la versión 1,3.  
+ [Novedades de la API del complemento de control de código fuente, versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ Proporciona una breve descripción de los cambios realizados en la API de complementos de Control de código fuente en la versión 1.3.  
   
- [Novedades de la API de complemento de origen Control versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- Proporciona información general sobre los cambios realizados en el complemento de control de código fuente API en la versión 1,2.  
+ [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ Proporciona una breve descripción de los cambios realizados en la API de complementos de Control de código fuente en la versión 1.2.  
   
-## Secciones relacionadas  
- [Complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md)  
- Proporciona una lista completa de todos los elementos del complemento de control de código fuente API.  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)  
+ Proporciona una lista completa de todos los elementos de la API de complementos de Control de código fuente.  
   
- [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Define el complemento de control de código fuente SDK y describe los recursos incluidos.
+ [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Define el SDK de complemento de Control de origen y se describen los recursos incluidos.

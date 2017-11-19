@@ -1,65 +1,67 @@
 ---
-title: "Barras de herramientas, men&#250;s y comandos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "menús [Visual Studio SDK], comandos"
-  - "comandos [Visual Studio]"
-  - "barras de herramientas [Visual Studio], comandos"
+title: "Barras de herramientas, menús y comandos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus [Visual Studio SDK], commands
+- commands [Visual Studio]
+- toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-caps.latest.revision: 60
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 60
+caps.latest.revision: "60"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Barras de herramientas, men&#250;s y comandos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Menús y barras de herramientas son la forma, los usuarios tener acceso a comandos en su VSPackage. Comandos son funciones que realizar tareas, como la impresión de un documento, al actualizar una vista o crear un nuevo archivo. Menús y barras de herramientas son de manera gráfica cómoda para presentar los comandos a los usuarios. Normalmente, los comandos relacionados se agrupan en el mismo menú o barra de herramientas.  
+# <a name="commands-menus-and-toolbars"></a>Comandos, menús y barras de herramientas
+Menús y barras de herramientas son la forma, los usuarios tener acceso a comandos del VSPackage. Los comandos son funciones que realizan tareas, como la impresión de un documento, la actualización de una vista o la creación de un archivo nuevo. Los menús y las barras de herramientas son maneras gráficas y cómodas de presentar los comandos a los usuarios. Normalmente, los comandos relacionados se agrupan en clústeres en el mismo menú o en la misma barra de herramientas.  
   
--   Normalmente, los menús se muestran como cadenas de una palabra en clúster en una fila en la parte superior del entorno de desarrollo integrado \(IDE\) o una ventana de herramientas. Los menús también se pueden mostrar como resultado de un evento con el botón secundario y se conocen como menús contextuales en ese contexto. Al hacer clic, los menús se expanden para mostrar uno o más comandos. Comandos, al hacer clic, pueden llevar a cabo tareas o iniciar submenús que contienen comandos adicionales. Algunos nombres de menú conocidos son el archivo, edición, vista y ventana. Para obtener más información, consulta [Comandos y menús de extensión](../../extensibility/extending-menus-and-commands.md).  
+-   Los menús suelen mostrarse como cadenas de una palabra agrupadas en clúster en una fila de la parte superior del entorno de desarrollo integrado (IDE) o una ventana de herramientas. Los menús también se pueden mostrar como resultado de un evento de botón derecho y se conocen como menús contextuales en ese contexto. Al hacer clic en ellos, los menús se expanden para mostrar uno o varios comandos. Cuando se hace clic en los comandos, pueden llevar a cabo tareas o iniciar submenús que contengan comandos adicionales. Algunos nombres de menú conocidos son Archivo, Edición, Vista y Ventana. Para obtener más información, consulte [extender menús y comandos de](../../extensibility/extending-menus-and-commands.md).  
   
--   Barras de herramientas normalmente son las filas de botones y otros controles, como controladores de menús, cuadros de lista, cuadros de texto y cuadros combinados. Todos los controles de barra de herramientas están asociados con los comandos. Al hacer clic en un botón de barra de herramientas, se activa su comando asociado. Botones de barra de herramientas suelen tengan iconos que sugiera los comandos subyacentes, como una impresora para un comando de impresión. En un control de lista desplegable, cada elemento de la lista está asociado con un comando distinto. Un controlador de menú es un híbrido en el que un lado del control es un botón de barra de herramientas y el otro lado es una flecha hacia abajo que se muestra al hacer clic en los comandos adicionales. Para obtener más información, consulta [Agregar un controlador de menú a una barra de herramientas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
+-   Las barras de herramientas normalmente son filas de botones y otros controles, como cuadros combinados, cuadros de lista, cuadros de texto y controladores de menús. Todos los controles de barra de herramientas están asociados a comandos. Cuando se hace clic en un botón de barra de herramientas, se activa su comando asociado. Los botones de barra de herramientas suelen tener iconos que sugieren los comandos subyacentes, como una impresora para un comando Imprimir. En un control de lista desplegable, cada elemento de la lista está asociado a un comando distinto. Un controlador de menú es un híbrido en el que un lado del control es un botón de barra de herramientas y el otro lado es una flecha hacia abajo que muestra comandos adicionales cuando se hace clic en ella. Para obtener más información, consulte [agregando un controlador de menú a una barra de herramientas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).  
   
--   Cuando se crea un comando, también debe crear un controlador de eventos para él. El controlador de eventos determina si el comando es visible o activado, le permite modificar su texto y se asegura de que el comando responde correctamente \("rutas"\) cuando se activa. En la mayoría de los casos, el IDE controla los comandos usando el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ruta de forma jerárquica, empezando por el contexto de comandos más interno, según la selección local y continuar con el contexto más externo, según la selección global. Los comandos agregados al menú principal están disponibles inmediatamente para secuencias de comandos. Para obtener más información, consulte [MenuCommands frente a OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) y [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md).  
+-   Cuando se crea un comando, también debe crear un controlador de eventos para él. El controlador de eventos determina si el comando es visible o está activado, permite modificar su texto y garantiza que el comando responde correctamente ("enruta") cuando se activa. En la mayoría de los casos, el IDE controla los comandos mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ruta de forma jerárquica, empezando por el contexto de los comandos más interno, según la selección local y continuando hasta el contexto más externo, según la selección global. Los comandos agregados al menú principal están disponibles inmediatamente para los scripts. Para obtener más información, vea [MenuCommands frente a. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) y [objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md).  
   
- Para definir nuevos menús y barras de herramientas, debe describir en un archivo de la tabla de comandos de Visual Studio \(.vsct\). La plantilla de paquete de Visual Studio crea este archivo, junto con los elementos necesarios para admitir los comandos, barras de herramientas y editores seleccionados en la plantilla. Como alternativa, puede escribir su propio archivo vsct, mediante el esquema xml se describe aquí: [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Para definir nuevos menús y barras de herramientas, debe describirlos en un archivo de tabla de comandos de Visual Studio (.vsct). La plantilla de paquete de Visual Studio se ocupa de crear este archivo, junto con los elementos necesarios para admitir los comandos, barras de herramientas y editores seleccionados en la plantilla. Como alternativa, puede escribir su propio archivo .vsct, mediante el esquema xml se describe aquí: [referencia de esquemas XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
- Para obtener más información sobre cómo trabajar con los archivos .vsct, vea [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Para obtener más información sobre cómo trabajar con archivos de vsct, consulte [tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Los temas de esta sección explican cómo funcionan las barras de herramientas, menús y comandos de VSPackages.  
+ Los temas de esta sección explican cómo funcionan los comandos, menús y barras de herramientas en los paquetes VSPackage.  
   
-## En esta sección  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+## <a name="in-this-section"></a>En esta sección  
+ [Adición de elementos de la interfaz de usuario por VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Una descripción detallada de la especificación de formato de tabla de comandos.  
   
- [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
- Describe una sintaxis basada en XML y el compilador para las tablas de comando.  
+ [Archivos de tabla de comandos de Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ Describe un compilador para las tablas de comando y la sintaxis basada en XML.  
   
- [Comando predeterminado, el grupo y la ubicación de la barra de herramientas](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
- Describe las barras de herramientas, grupos, menús y comandos predefinidos.  
+ [Ubicación predeterminada de comando, grupo y barra de herramientas](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ Describe las barras de herramientas, grupos, los menús y comandos predefinidos.  
   
  [Grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
  Especifica los menús predefinidos, los comandos y los grupos de comandos disponibles para su uso por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Diseño de comando](../../extensibility/internals/command-design.md)  
+ [Diseño de comandos](../../extensibility/internals/command-design.md)  
  Explica cómo diseñar los comandos.  
   
- [Optimización de menús y comandos de barra de herramientas](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
+ [Optimización de comandos de menú y barra de herramientas](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
  Proporciona instrucciones para los comandos.  
   
- [Disponibilidad de los comandos](../../extensibility/internals/making-commands-available.md)  
- Explica cómo hacer que los comandos disponibles en Visual Studio.  
+ [Puesta a disposición de comandos](../../extensibility/internals/making-commands-available.md)  
+ Explica cómo hacer que los comandos disponibles para Visual Studio.  
   
  [Comandos y menús que utilizan ensamblados de interoperabilidad](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Explica cómo implementar los comandos que utilizan ensamblados de interoperabilidad.  
+ Explica cómo implementar comandos que utilizan los ensamblados de interoperabilidad.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Enrutamiento de comandos en VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
- Explica el enrutamiento de comandos en VSPackages.
+ Explica el enrutamiento de comandos en los paquetes VSPackage.

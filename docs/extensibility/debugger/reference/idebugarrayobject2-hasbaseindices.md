@@ -1,44 +1,46 @@
 ---
-title: "IDebugArrayObject2::HasBaseIndices | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "HasBaseIndices"
-  - "IDebugArrayObject2::HasBaseIndices"
+title: IDebugArrayObject2::HasBaseIndices | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- HasBaseIndices
+- IDebugArrayObject2::HasBaseIndices
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cf293eacb64fdee5790ff9b87d2e3afcfccc8f2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject2::HasBaseIndices
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Determina si la matriz tiene índices bases \(límites inferior\) definido.  
+# <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
+Determina si la matriz tiene índices de base (límites inferiores) definidos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT HasBaseIndices (  
-   BOOL* pfHasBaseIndices  
+   BOOL* pfHasBaseIndices  
 );  
 ```  
   
-```c#  
+```csharp  
 int HasBaseIndices (  
-   out bool pfHasBaseIndices  
+   out bool pfHasBaseIndices  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pfHasBaseIndices`  
- \[out\]  TRUE para especificar que la matriz tiene índices bases \(límites inferior\); de lo contrario, FALSE.  
+ [out] TRUE para especificar que la matriz tiene índices de base (límites inferiores); en caso contrario, FALSE.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.

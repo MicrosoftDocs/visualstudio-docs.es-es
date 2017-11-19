@@ -1,27 +1,30 @@
 ---
-title: "IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IMachineDebugManagerCookie::RemoveApplication | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IMachineDebugManagerCookie.RemoveApplication
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IMachineDebugManagerCookie::RemoveApplication"
+helpviewer_keywords: IMachineDebugManagerCookie::RemoveApplication
 ms.assetid: af8f4a52-ec5e-48fa-87de-234d5e6528d0
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fe0849b2f580eac7759db36335823a737a198e55
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManagerCookie::RemoveApplication
-Quita una aplicación de la lista actual de la aplicación.  
+# <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
+Quita una aplicación desde el que se ejecuta lista de aplicaciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT RemoveApplication(  
@@ -30,24 +33,24 @@ HRESULT RemoveApplication(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwDebugAppCookie`  
- \[in\] cookie de que identifica la aplicación de depuración.  
+ [in] Cookie que identifica la aplicación de depuración.  
   
  `dwAppCookie`  
- \[in\] cookie de proporcionada cuando la aplicación se agregó a la lista de la aplicación.  
+ [in] La cookie que se proporcionó cuando la aplicación se agrega a la lista de aplicaciones.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método llama el administrador de la depuración siempre que se llame a `IProcessDebugManager::RemoveApplication` .  
+## <a name="remarks"></a>Comentarios  
+ El Administrador de depuración del proceso llama a este método cada vez que `IProcessDebugManager::RemoveApplication` se llama.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
- [IMachineDebugManagerCookie \(Interfaz\)](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+ [IMachineDebugManagerCookie (interfaz)](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

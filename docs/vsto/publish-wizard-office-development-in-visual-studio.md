@@ -1,75 +1,77 @@
 ---
-title: "Asistente para publicaci&#243;n (Desarrollo de Office en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VST.ProjectProperties.PublishWizard"
-  - "VST.PublishWizard.Publish.2007System"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "implementación ClickOnce [desarrollo de Office en Visual Studio], Asistente para publicación"
-  - "implementar aplicaciones [desarrollo de Office en Visual Studio], Asistente para publicación"
-  - "aplicaciones de Office [desarrollo de Office en Visual Studio], Asistente para publicación"
-  - "Asistente para publicación, soluciones de Office"
+title: "Asistente para publicación (desarrollo de Office en Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VST.ProjectProperties.PublishWizard
+- VST.PublishWizard.Publish.2007System
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ClickOnce deployment [Office development in Visual Studio], Publish Wizard
+- deploying applications [Office development in Visual Studio], Publish Wizard
+- Office applications [Office development in Visual Studio], Publish Wizard
+- Publish Wizard, Office solutions
 ms.assetid: 793314b6-b6a6-4509-8f1c-dd9466cf5190
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Asistente para publicaci&#243;n (Desarrollo de Office en Visual Studio)
-  Utilice **Asistente para publicación** para copiar los archivos de la solución en una ubicación especificada, cree archivos de manifiesto, y crear un programa de instalación.  
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (Desarrollo de Office en Visual Studio)
+  Use la **Asistente para publicación** para copiar archivos de la solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.  
   
- Para obtener acceso a este asistente, en el menú de **Compilación** , elija **Publicar** *SolutionName*.  También puede obtener acceso al **Asistente para publicación** desde el **Explorador de soluciones**.  Abrir el menú contextual para el nodo del proyecto y, a continuación **Publicar**.  
+ Para tener acceso a este asistente, en la **compilar** menú, elija **publicar** *nombresolución*. También puede tener acceso a la **Asistente para publicación de** de **el Explorador de soluciones**. Abra el menú contextual del nodo de proyecto y, a continuación, elija **publicar**.  
   
- En cada una de las siguientes secciones se describe una página del asistente.  
+ Cada sección describe una página del asistente.  
   
-## ¿Dónde desea publicar la aplicación?  
- **Especificar la ubicación para la publicación de esta aplicación**  
- Obligatorio.  La ubicación de la publicación es el directorio donde el **Asistente para publicación** copia los archivos de la solución como los manifiestos, los ensamblados, el certificado temporal y otros archivos de la compilación.  Debe tener acceso de escritura a este directorio.  
+## <a name="where-do-you-want-to-publish-the-application"></a>¿Dónde desea publicar la aplicación?  
+ **Especifique la ubicación para publicar esta aplicación**  
+ Obligatorio. La ubicación de publicación es el directorio donde el **Asistente para publicación** copia los archivos de solución como los manifiestos, los ensamblados, los certificados temporales y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.  
   
- Escriba la ubicación como una ruta de acceso del disco, un recurso compartido de archivos, un sitio FTP, o dirección URL del sitio Web, o haga clic en el botón de **Examinar** para buscar la ubicación.  La ruta de acceso puede estar en estos formatos:  
+ Escriba la ubicación como una ruta de acceso de disco, el recurso compartido de archivos, el sitio FTP o la dirección URL del sitio web, o haga clic en el **examinar** botón para buscar la ubicación. La ruta de acceso puede estar en estos formatos:  
   
--   Una ruta de acceso absoluta o relativa en formato Windows estándar, por ejemplo: C:\\Deploy\\MiAplicación o \\MiAplicación.  
+-   Una ruta de acceso absoluta o relativa en formato Windows estándar, como C:\Deploy\MyApplication o \MyApplication.  
   
--   Una ruta de acceso de la Convención de nomenclatura universal \(UNC\), como \\\\NombreServidor\\MiAplicación \\.  
+-   Una ruta de acceso de convención de nomenclatura Universal (UNC), como \\\ServerName\MyApplication\\.  
   
--   Dirección URL de un sitio Web, como http:\/\/www.microsoft.com\/MyApplication.  
+-   Una dirección URL de un sitio web, como http://www.microsoft.com/MyApplication.  
   
- De manera predeterminada, la ubicación de publicación es *http:\/\/localhost\/nombreDelProyecto\/* si tiene IIS instalado, o el directorio publish\\ si no tiene IIS instalado.  
+ De forma predeterminada, la ubicación de publicación es *http://localhost/nombreDelProyecto/* si tiene IIS instalado o el directorio publish\ si no tiene IIS instalado.  
   
 > [!NOTE]  
->  Existen más consideraciones a tener en cuenta si el equipo de destino ejecuta Windows Vista.  Debe ser un administrador en el equipo de Windows Vista para utilizar la opción de publicación local.  Además, la ubicación predeterminada siempre es el directorio *publish\\*, independientemente de que tenga IIS instalado.  
+>  Existen consideraciones más si el equipo de destino está ejecutando Windows Vista. Debe ser un administrador en el equipo de Windows Vista para usar la opción de publicación local. Además, la ubicación predeterminada es siempre el *publicar\\*  directorio, independientemente de si tiene IIS instalado.  
   
-## ¿Cuál es la ruta de instalación predeterminada en los equipos del usuario final?  
- La ruta de instalación es opcional.  Puede establecer la ruta de instalación más adelante si lo prefiere.  Para obtener información detallada, vea [Cómo: Cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/es-es/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>¿Qué es la ruta de instalación predeterminada en equipos de usuarios finales?  
+ La ruta de instalación es opcional. Puede establecer la ruta de instalación más adelante si lo prefiere. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
- La ruta de instalación es el directorio desde el que el usuario final instalará la personalización.  Es también la ruta que utilizará la solución para buscar actualizaciones.  El **Asistente para publicación** no implementa la solución en esta ubicación, a menos que la ruta de acceso sea la misma que la que escribió en el cuadro **Especificar la ubicación para la publicación de esta aplicación** de la página anterior.  
+ La ruta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. El **Asistente para publicación de** implementar la solución en esta ubicación, a menos que la ruta de acceso es el mismo que se introdujo en la **especificar la ubicación para publicar esta aplicación** cuadro en la página anterior.  
   
  **Desde un sitio Web**  
- Especifica la dirección URL que los usuarios finales seguirán para instalar la solución.  
+ Especifique la dirección URL que los usuarios finales seguirán para instalar la solución.  
   
- **Desde una ruta de acceso UNC o un recurso compartido de archivos**  
- Especifica la ruta de acceso UNC que los usuarios finales seguirán para instalar la solución.  
+ **Desde un recurso compartido de archivo o ruta de acceso UNC**  
+ Especifique la ruta de acceso UNC que los usuarios finales seguirán para instalar la solución.  
   
- **Desde un CD\-ROM o un DVD\-ROM**  
+ **Desde un CD-ROM o DVD-ROM**  
  Esta opción no requiere una ruta de instalación.  
   
- Visual Studio no graba en CD ni en DVD.  Debe copiar manualmente el resultado en un CD o en un DVD.  
+ Visual Studio no grabar el CD o DVD. Debe copiar manualmente el resultado en un CD o DVD.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publicar &#40;página&#41;, Diseñador de proyectos &#40;Desarrollo de Office en Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
- [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
+ [Publicar la página, Diseñador de proyectos &#40; desarrollo de Office en Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Implementación de una solución de Office](../vsto/deploying-an-office-solution.md)  
   
   

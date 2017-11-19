@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Profiling a SharePoint Application | Microsoft Docs'
+title: "Tutorial: Generar perfiles de una aplicación de SharePoint | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,74 +16,73 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
 ms.assetid: 0b19d4b7-5fcc-42a2-b411-96eccd00137f
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d5f13883367d68999df59647aba7cedeb48628e1
-ms.contentlocale: es-es
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-profiling-a-sharepoint-application"></a>Walkthrough: Profiling a SharePoint Application
-  This walkthrough shows how to use the profiling tools in Visual Studio to optimize the performance of a SharePoint application. The example application is a SharePoint feature event receiver that contains an idle loop that degrades the performance of the feature event receiver. The Visual Studio profiler enables you to locate and eliminate the most expensive (slowest-performing) part of the project, also known as the *hot path*.  
+# <a name="walkthrough-profiling-a-sharepoint-application"></a>Tutorial: Generar el perfil de una aplicación de SharePoint
+  En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *ruta de acceso activa*.  
   
- This walkthrough demonstrates the following tasks:  
+ En este tutorial se muestran las siguientes tareas:  
   
--   [Adding a Feature and Feature Event Receiver](#BKMK_AddFtrandFtrEvntReceiver).  
+-   [Agregar una característica y un receptor de eventos de características](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configuring and Deploying the SharePoint Application](#BKMK_ConfigSharePointApp).  
+-   [Configurar e implementar la aplicación de SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Running the SharePoint Application](#BKMK_RunSPApp).  
+-   [Ejecutar la aplicación de SharePoint](#BKMK_RunSPApp).  
   
--   [Viewing and Interpreting the Profiling Results](#BKMK_ViewResults).  
+-   [Visualización e interpretación de los resultados de la generación de perfiles](#BKMK_ViewResults).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
--   Supported editions of Microsoft Windows and SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Ediciones compatibles de Microsoft Windows y SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
-## <a name="creating-a-sharepoint-project"></a>Creating a SharePoint Project  
- First, create a SharePoint project.  
+## <a name="creating-a-sharepoint-project"></a>Creación de un proyecto de SharePoint  
+ Primero, cree un proyecto de SharePoint.  
   
-#### <a name="to-create-a-sharepoint-project"></a>To create a SharePoint project  
+#### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint  
   
-1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
+1.  En la barra de menús, elija **archivo**, **New**, **proyecto** para mostrar la **nuevo proyecto** cuadro de diálogo.  
   
-2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
+2.  Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija la **2010** nodo.  
   
-3.  In the templates pane, choose the **SharePoint 2010 Project** template.  
+3.  En el panel Plantillas, elija la **proyecto de SharePoint 2010** plantilla.  
   
-4.  In the **Name** box, enter **ProfileTest**, and then choose the **OK** button.  
+4.  En el **nombre** cuadro, escriba **ProfileTest**y, a continuación, elija la **Aceptar** botón.  
   
-     The **SharePoint Customization Wizard** appears.  
+     El **Asistente para personalización de SharePoint** aparece.  
   
-5.  On the **Specify the site and security level for debugging** page, enter the URL for the SharePoint server site where you want to debug the site definition, or use the default location (http://*system name*/).  
+5.  En el **especificar el nivel de sitio y la seguridad para la depuración** página, escriba la dirección URL para el sitio del servidor de SharePoint donde desea depurar la definición de sitio o utilice la ubicación predeterminada (http://*nombre del sistema*/) .  
   
-6.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
+6.  En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
   
-     Currently, you can only profile farm solutions. For more information about sandboxed solutions versus farm solutions, see [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md).  
+     De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja de servidores, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Choose the **Finish** button. The project appears in **Solution Explorer**.  
+7.  Elija la **finalizar** botón. El proyecto aparece en **el Explorador de soluciones**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Adding a Feature and Feature Event Receiver  
- Next, add a feature to the project along with an event receiver for the feature. This event receiver will contain the code to be profiled.  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Agregar una característica y un receptor de eventos de características  
+ A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.  
   
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>To add a feature and feature event receiver  
+#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **Features** node, choose **Add Feature**, and leave the name at the default value, **Feature1**.  
+1.  En **el Explorador de soluciones**, abra el menú contextual para el **características** nodo, elija **Agregar característica**y deje el nombre en el valor predeterminado, **Feature1**.  
   
-2.  In **Solution Explorer**, open the shortcut menu for **Feature1**, and then choose **Add Event Receiver**.  
+2.  En **el Explorador de soluciones**, abra el menú contextual para **Feature1**y, a continuación, elija **agregar receptor de eventos**.  
   
-     This adds a code file to the feature with several commented-out event handlers and opens the file for editing.  
+     Esto agrega un archivo de código a la característica con varios controladores de eventos con comentarios y abre el archivo para edición.  
   
-3.  In the event receiver class, add the following variable declarations.  
+3.  En la clase del receptor de eventos, agregue las siguientes declaraciones de variable.  
   
     ```vb  
     ' SharePoint site/subsite.  
@@ -99,7 +96,7 @@ ms.lasthandoff: 08/28/2017
     private string webUrl = "/";  
     ```  
   
-4.  Replace the `FeatureActivated` procedure with the following code.  
+4.  Reemplace el procedimiento `FeatureActivated` por el siguiente código.  
   
     ```vb  
     Public Overrides Sub FeatureActivated(properties As SPFeatureReceiverProperties)  
@@ -158,7 +155,7 @@ ms.lasthandoff: 08/28/2017
     }  
     ```  
   
-5.  Add the following procedure below the `FeatureActivated`procedure.  
+5.  Agregue el siguiente procedimiento bajo el `FeatureActivated`procedimiento.  
   
     ```vb  
   
@@ -185,104 +182,104 @@ ms.lasthandoff: 08/28/2017
     }  
     ```  
   
-6.  In **Solution Explorer**, open the shortcut menu for the project (**ProfileTest**), and then choose **Properties**.  
+6.  En **el Explorador de soluciones**, abra el menú contextual del proyecto (**ProfileTest**) y, a continuación, elija **propiedades**.  
   
-7.  In the **Properties** dialog box, choose the **SharePoint** tab.  
+7.  En el **propiedades** diálogo cuadro, elija la **SharePoint** ficha.  
   
-8.  In the **Active Deployment Configuration** list, choose **No Activation**.  
+8.  En el **Active Deployment Configuration** elija **No Activation**.  
   
-     Selecting this deployment configuration enables you to manually activate the feature later in SharePoint.  
+     La selección de esta configuración de implementación le permite activar manualmente la característica más adelante en SharePoint.  
   
-9. Save the project.  
+9. Guarde el proyecto.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a> Configuring and Deploying the SharePoint Application  
- Now that the SharePoint project is ready, configure it and deploy it to the SharePoint server.  
+##  <a name="BKMK_ConfigSharePointApp"></a>Configurar e implementar la aplicación de SharePoint  
+ Ahora que el proyecto de SharePoint está listo, configúrelo e impleméntelo en el servidor de SharePoint.  
   
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>To configure and deploy the SharePoint application  
+#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implementar la aplicación de SharePoint  
   
-1.  On the **Analyze** menu, choose **Launch Performance Wizard**.  
+1.  En el **analizar** menú, elija **iniciar Asistente de rendimiento**.  
   
-2.  On page one of the **Performance Wizard**, leave the method of profiling as **CPU sampling** and choose the **Next** button.  
+2.  En la página uno de los **Asistente de rendimiento**, deje el método de generación de perfiles como **muestreo de la CPU** y elija la **siguiente** botón.  
   
-     The other profiling methods can be used in more advanced profiling situations. For more information, see [Understanding Performance Collection Methods](/visualstudio/profiling/understanding-performance-collection-methods).  
+     Los demás métodos de generación de perfiles pueden utilizarse en situaciones más avanzadas de generación de perfiles. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](/visualstudio/profiling/understanding-performance-collection-methods).  
   
-3.  On page two of the **Performance Wizard**, leave the profile target as **ProfileTest** and choose the **Next** button.  
+3.  En la página dos de los **Asistente de rendimiento**, deje el perfil de destino como **ProfileTest** y elija la **siguiente** botón.  
   
-     If a solution has multiple projects, they appear in this list.  
+     Si una solución tiene varios proyectos, aparecen en esta lista.  
   
-4.  On page three of the **Performance Wizard**, clear the **Enable Tier Interaction Profiling** check box, and then choose the **Next** button.  
+4.  En la página tres de los **Asistente de rendimiento**, desactive el **Habilitar generación de perfiles de interacción de capas** casilla de verificación y, a continuación, elija la **siguiente** botón.  
   
-     The Tier Interaction Profiling (TIP) feature is useful for measuring the performance of applications that query databases and for showing you the number of times a web page is requested. Because that data is not required for this example, we will not enable this feature.  
+     La característica de generación de perfiles de interacción de capa (TIP) es útil para medir el rendimiento de las aplicaciones que consultan a bases de datos y para mostrar el número de veces que se solicita una página web. Dado que esos datos no son necesarios para este ejemplo, no se habilitará esta característica.  
   
-5.  On page four of the **Performance Wizard**, leave the **Launch profiling after the wizard finishes** check box selected, and then choose the **Finish** button.  
+5.  En la página cuatro de las **Asistente de rendimiento**, deje el **Iniciar generación de perfiles cuando finalice el asistente** casilla seleccionada y, a continuación, elija la **finalizar** botón.  
   
-     The wizard enables application profiling on the server, displays the **Performance Explorer** window, and then builds, deploys, and runs the SharePoint application.  
+     El Asistente habilita la generación de perfiles de aplicación en el servidor, muestra la **Explorador de rendimiento** ventana y, a continuación, compila, implementa y ejecuta la aplicación de SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a> Running the SharePoint Application  
- Activate the feature in SharePoint, triggering the `FeatureActivation` event code to run.  
+##  <a name="BKMK_RunSPApp"></a>Ejecutar la aplicación de SharePoint  
+ Active la característica en SharePoint, desencadenando el código de evento `FeatureActivation` para la ejecución.  
   
-#### <a name="to-run-the-sharepoint-application"></a>To run the SharePoint application  
+#### <a name="to-run-the-sharepoint-application"></a>Para ejecutar la aplicación de SharePoint  
   
-1.  In SharePoint, open the **Site Actions** menu, and then choose **Site Settings**.  
+1.  En SharePoint, abra el **acciones del sitio** menú y, a continuación, elija **configuración del sitio**.  
   
-2.  In the **Site Actions** list, choose the **Manage site features** link.  
+2.  En el **acciones del sitio** lista, elija la **administrar características del sitio** vínculo.  
   
-3.  In the **Features** list, choose the **Activate** button next to **ProfileTest Feature1**.  
+3.  En el **características** lista, elija la **activar** situado junto a **ProfileTest Feature1**.  
   
-     There is a pause when you do this, due to the idle loop being called in the `FeatureActivated` function.  
+     Se produce una pausa al hacer esto, debido a que se llama al bucle inactivo en la función `FeatureActivated`.  
   
-4.  On the **Quick Launch** bar, choose **Lists** and then in the **Lists** list, choose **Announcements**.  
+4.  En el **inicio rápido** barra, elija **enumera** y, a continuación, en la **enumera** elija **anuncios**.  
   
-     Notice that a new announcement has been added to the list stating that the feature was activated.  
+     Observe que se ha agregado un nuevo anuncio a la lista que indica que se ha activado la característica.  
   
-5.  Close the SharePoint site.  
+5.  Cierre el sitio de SharePoint.  
   
-     After you close SharePoint, the profiler creates and displays a Sample Profiling Report and saves it as a .vsp file in the **ProfileTest** project's folder.  
+     Después de cerrar SharePoint, el generador de perfiles crea y muestra un informe de generación de perfiles de muestreo y lo guarda como un archivo .vsp en la **ProfileTest** carpeta del proyecto.  
   
-##  <a name="BKMK_ViewResults"></a> Viewing and Interpreting the Profiling Results  
- Now that you have run and profiled the SharePoint application, view the test results.  
+##  <a name="BKMK_ViewResults"></a>Visualización e interpretación de los resultados de la generación de perfiles  
+ Ahora que ha ejecutado la aplicación de SharePoint y ha generado perfiles, vea los resultados de las pruebas.  
   
-#### <a name="to-view-and-interpret-the-profiling-results"></a>To view and interpret the profiling results  
+#### <a name="to-view-and-interpret-the-profiling-results"></a>Para ver e interpretar los resultados de la generación de perfiles  
   
-1.  In the **Functions Doing the Most Individual Work** section of the Sample Profiling Report, notice that `TimeCounter` is near the top of the list.  
+1.  En el **las funciones que realizan la mayor parte del trabajo Individual** sección del informe de generación de perfiles de ejemplo, observe que `TimeCounter` esté cerca de la parte superior de la lista.  
   
-     This location indicates that `TimeCounter` was one of the functions with the highest number of samples, meaning it's one of the biggest performance bottlenecks in the application. This situation isn't surprising, however, because it was purposely designed that way for demonstration purposes.  
+     Esta ubicación indica que `TimeCounter` fue una de las funciones con el número más alto de muestras, lo que significa que es uno de los mayores cuellos de botella de rendimiento de la aplicación. Sin embargo, esta situación no es sorprendente, porque se diseñó deliberadamente de ese modo para fines de demostración.  
   
-2.  In the **Functions Doing the Most Individual Work** section, choose the `ProcessRequest` link to display the cost distribution for the `ProcessRequest` function.  
+2.  En el **las funciones que realizan la mayor parte del trabajo Individual** sección, elija el `ProcessRequest` vínculo para mostrar la distribución del costo de la `ProcessRequest` (función).  
   
-     In the **Called functions** section for `ProcessRequest`, notice that the **FeatureActiviated** function is listed as the most expensive called function.  
+     En el **denominadas funciones** sección `ProcessRequest`, tenga en cuenta que la **FeatureActivated** función aparece como la que más recursos consume llama la función.  
   
-3.  In the **Called functions** section, choose the **FeatureActivated** button.  
+3.  En el **denominadas funciones** sección, elija el **FeatureActivated** botón.  
   
-     In the **Called functions** section for **FeatureActivated**, the `TimeCounter` function is listed as the most expensive called function. In the **Function Code View** pane, the highlighted code (`TimeCounter`) is the hotspot and indicates where the correction is needed.  
+     En el **denominadas funciones** sección **FeatureActivated**, el `TimeCounter` función aparece como la que más recursos consume llama la función. En el **vista de código de función** panel, el código resaltado (`TimeCounter`) es la zona activa e indica dónde se necesita la corrección.  
   
-4.  Close the Sample Profiling Report.  
+4.  Cierre el informe de generación de perfiles de muestreo.  
   
-     To view the report again at any time, open the .vsp file in the **Performance Explorer** window.  
+     Para ver el informe de nuevo en cualquier momento, abra el archivo .vsp en la **Explorador de rendimiento** ventana.  
   
-## <a name="fixing-the-code-and-reprofiling-the-application"></a>Fixing the Code and Reprofiling the Application  
- Now that hotspot function in the SharePoint application has been identified, fix it.  
+## <a name="fixing-the-code-and-reprofiling-the-application"></a>Corrección del código y regeneración de perfiles de la aplicación  
+ Ahora que ha identificado la función de zona activa de la aplicación de SharePoint, corríjala.  
   
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>To fix the code and reprofile the application  
+#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Para corregir el código y regenerar los perfiles de la aplicación  
   
-1.  In the feature event receiver code, comment out the `TimeCounter` method call in `FeatureActivated` to prevent it from being called.  
+1.  En el código del receptor de eventos de características, comente la llamada al método `TimeCounter` de `FeatureActivated` para evitar que se le llame.  
   
-2.  Save the project.  
+2.  Guarde el proyecto.  
   
-3.  In **Performance Explorer**, open the Targets folder, and then choose the **ProfileTest** node.  
+3.  En **Explorador de rendimiento**, abra la carpeta destinos y, a continuación, elija la **ProfileTest** nodo.  
   
-4.  On the **Performance Explorer** toolbar, in the **Actions** tab, choose the **Start Profiling** button.  
+4.  En el **Explorador de rendimiento** barra de herramientas, en la **acciones** ficha, elija la **Iniciar generación de perfiles** botón.  
   
-     If you want to change any of the profiling properties prior to reprofiling the application, choose the **Launch Performance Wizard** button instead.  
+     Si desea cambiar cualquiera de las propiedades de generación de perfiles antes de regeneración de perfiles de la aplicación, elija la **iniciar Asistente de rendimiento** botón en su lugar.  
   
-5.  Follow the instructions in the **Running the SharePoint Application** section, previously in this topic.  
+5.  Siga las instrucciones de la **ejecuta la aplicación de SharePoint** sección, anteriormente en este tema.  
   
-     The feature should activate much faster now that the call to the idle loop has been eliminated. The Sample Profiling Report should reflect this.  
+     La característica se debería activar mucho más rápido ahora que se ha eliminado la llamada al bucle inactivo. El informe de generación de perfiles de muestreo debería reflejarlo.  
   
-## <a name="see-also"></a>See Also  
- [Performance Explorer](/visualstudio/profiling/performance-explorer)   
- [Performance Session Overview](/visualstudio/profiling/performance-session-overview)   
- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
- [Find Application Bottlenecks with Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
+## <a name="see-also"></a>Vea también  
+ [Explorador de rendimiento](/visualstudio/profiling/performance-explorer)   
+ [Información general sobre la sesión de rendimiento](/visualstudio/profiling/performance-session-overview)   
+ [Guía básica para la generación de perfiles de rendimiento](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
+ [Detectar cuellos de botella de aplicación con el generador de perfiles de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=137266)  
   
   

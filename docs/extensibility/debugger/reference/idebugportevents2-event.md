@@ -1,67 +1,67 @@
 ---
-title: "IDebugPortEvents2::Event | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEvents2::Event"
-helpviewer_keywords: 
-  - "IDebugPortEvents2::Event"
+title: IDebugPortEvents2::Event | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortEvents2::Event
+helpviewer_keywords: IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 82ea7d2c4a32bb224c8377a2980c944b3389da2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortEvents2::Event
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método envía los eventos que implican la creación y destrucción de procesos y de programas en un puerto.  
+# <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
+Este método envía eventos que indican la creación y destrucción de procesos y programas en un puerto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT Event(  
-   IDebugCoreServer2* pServer,  
-   IDebugPort2*       pPort,  
-   IDebugProcess2*    pProcess,  
-   IDebugProgram2*    pProgram,  
-   IDebugEvent2*      pEvent,  
-   REFIID             riidEvent  
+   IDebugCoreServer2* pServer,  
+   IDebugPort2*       pPort,  
+   IDebugProcess2*    pProcess,  
+   IDebugProgram2*    pProgram,  
+   IDebugEvent2*      pEvent,  
+   REFIID             riidEvent  
 );  
 ```  
   
-```c#  
+```csharp  
 int Event(  
-   IDebugCoreServer2 pServer,   
-   IDebugPort2       pPort,   
-   IDebugProcess2    pProcess,   
-   IDebugProgram2    pProgram,   
-   IDebugEvent2      pEvent,   
-   ref Guid          riidEvent  
+   IDebugCoreServer2 pServer,   
+   IDebugPort2       pPort,   
+   IDebugProcess2    pProcess,   
+   IDebugProgram2    pProgram,   
+   IDebugEvent2      pEvent,   
+   ref Guid          riidEvent  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pMachine`  
- \[in\]  Un objeto de [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) que representa el servidor de depuración \(hay uno para cada instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]\) donde se produjo el evento.  
+ [in] Un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa el servidor de depuración (haya uno para cada instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]) en que se ha producido el evento.  
   
  `pPort`  
- \[in\]  Un objeto de [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa el puerto en el que se produjo el evento.  
+ [in] Un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto en el que se produjo el evento.  
   
  `pProcess`  
- \[in\]  Un objeto de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa el proceso en el que se produjo el evento.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso en el que se produjo el evento.  
   
  `pProgram`  
- \[in\]  Un objeto de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa en la que se produjo el evento.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa en el que se produjo el evento.  
   
  `pEvent`  
- \[in\]  un objeto de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) que identifica el evento.  Los posibles eventos son los siguientes:  
+ [in] Un [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que identifica el evento. Los eventos posibles son los siguientes:  
   
 -   [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)  
   
@@ -72,12 +72,12 @@ int Event(
 -   [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)  
   
  `riidEvent`  
- \[in\]  GUID del evento.  Dado que el evento se convierte en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) antes de llamar a este método, este identificador facilita determinar se está publicando el evento.  
+ [in] El GUID del evento. Dado que el evento se convierte en [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) antes de llamar a este método, este identificador resulta más fácil determinar qué eventos se están enviando.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

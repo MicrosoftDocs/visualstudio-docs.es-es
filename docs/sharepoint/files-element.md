@@ -1,30 +1,31 @@
 ---
-title: "Files Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Files element"
+title: Archivos elemento | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Files element
 ms.assetid: 3c611d5b-28f1-48a7-a068-63e01fa2f3aa
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dcb3e7e81d9897f23742eda83c72bb64caed65da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Files Element
-  Especifica los archivos que se desea implementar con el elemento de proyecto de SharePoint, por ejemplo archivos del elemento Feature y la salida de proyectos dependientes que no son de SharePoint.  
+# <a name="files-element"></a>Files (Elemento)
+  Especifica los archivos que se implementan con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y el resultado de los proyectos dependientes que no es de SharePoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Files>  
@@ -33,38 +34,38 @@ caps.handback.revision: 11
 </Files>  
 ```  
   
-## Tipo  
+## <a name="type"></a>Tipo  
  **FileCollectionType**  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Elemento **ProjectItemFileType** opcional.<br /><br /> Representa un archivo de SharePoint, como un archivo de elemento de característica, que se va a incluir con el elemento de proyecto cuando se implemente en SharePoint.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Elemento **ProjectOutputFileType** opcional.<br /><br /> Representa la salida de un proyecto que se va a incluir con el elemento de proyecto cuando se implemente en SharePoint.|  
+|-------------|-----------------|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Opcional **ProjectItemFileType** elemento.<br /><br /> Representa un archivo de SharePoint, como archivo de elemento de característica, se incluyen con el elemento de proyecto cuando se implementa en SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Opcional **ProjectOutputFileType** elemento.<br /><br /> Representa el resultado de un proyecto para incluir con el elemento de proyecto cuando se implementa en SharePoint.|  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint.  Este es el elemento raíz necesario del archivo .spdata.|  
+|-------------|-----------------|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este es el elemento raíz necesario del archivo .spdata.|  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de los elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

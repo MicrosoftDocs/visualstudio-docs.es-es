@@ -1,11 +1,10 @@
 ---
-title: 'CA2002: Do not lock on objects with weak identity | Microsoft Docs'
+title: "CA2002: No bloquear objetos con identidad débil | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,45 +14,29 @@ helpviewer_keywords:
 - CA2002
 - DoNotLockOnObjectsWithWeakIdentity
 ms.assetid: 16100b39-c6fc-452b-8fca-8b459a26c286
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 15e189741636255f83086e1877abad80fb3da57b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 54a7693f5e2921b7cab60278c870c456084c56f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Do not lock on objects with weak identity
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 |||  
 |-|-|  
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|  
-|CheckId|CA2002|  
-|Category|Microsoft.Reliability|  
-|Breaking Change|Non-breaking|  
+|Identificador de comprobación|CA2002|  
+|Categoría|Microsoft.Reliability|  
+|Cambio problemático|Poco problemático|  
   
-## <a name="cause"></a>Cause  
- A thread attempts to acquire a lock on an object that has a weak identity.  
+## <a name="cause"></a>Motivo  
+ Un subproceso intenta adquirir un bloqueo en un objeto que tiene identidad débil.  
   
-## <a name="rule-description"></a>Rule Description  
- An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object. The following types have a weak identity and are flagged by the rule:  
+## <a name="rule-description"></a>Descripción de la regla  
+ Se dice que un objeto tiene una identidad débil cuando se puede tener acceso directamente a través de los límites del dominio de aplicación. Un subproceso que intenta obtener un bloqueo en un objeto que tiene identidad débil se puede bloquear con un segundo subproceso en un dominio de aplicación diferente que tenga bloqueado el mismo objeto. Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:  
   
 -   <xref:System.MarshalByRefObject>  
   
@@ -71,22 +54,23 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Threading.Thread>  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, use an object from a type that is not in the list in the Description section.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, utilice un objeto de un tipo que no está en la lista en la sección de descripción.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla.  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2213: Disposable fields should be disposed](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+## <a name="related-rules"></a>Reglas relacionadas  
+ [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
-## <a name="example"></a>Example  
- The following example shows some object locks that violate the rule.  
+## <a name="example"></a>Ejemplo  
+ El ejemplo siguiente muestra algunos bloqueos de objeto que infringen la regla.  
   
- [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)] [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]  
+ [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
+ [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  <xref:System.Threading.Monitor>   
  <xref:System.AppDomain>   
- [lock Statement](/dotnet/csharp/language-reference/keywords/lock-statement)   
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [lock (Instrucción)](/dotnet/csharp/language-reference/keywords/lock-statement)   
+ [SyncLock (instrucción)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

@@ -1,29 +1,29 @@
 ---
-title: "C&#243;mo: Ejecutar an&#225;lisis de c&#243;digo manualmente para c&#243;digo administrado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "análisis de código, ejecutar"
+title: "Cómo: ejecutar análisis de código manualmente para código administrado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8bafcfbc47085aff25f88b87f7691862009752d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Ejecutar an&#225;lisis de c&#243;digo manualmente para c&#243;digo administrado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La herramienta de análisis de código le proporciona información sobre posibles defectos en el código fuente.  Puede ejecutar el análisis de código automáticamente con cada compilación de un proyecto de código y también puede ejecutarlo manualmente.  Las reglas que se comprueban cuando se ejecuta el análisis de código se especifican en la página de análisis de código de las páginas de propiedades del proyecto.  Para obtener más información, vea [Cómo: Configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)  
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Cómo: Ejecutar análisis de código manualmente para código administrado
+La herramienta de análisis de código proporciona información para usted sobre posibles defectos en el código fuente. Puede ejecutar análisis de código automáticamente con cada compilación de un proyecto de código y también puede ejecutar análisis de código manualmente. Las reglas que se comprueban cuando se ejecuta el análisis de código se especifican en la página de análisis de código de las páginas de propiedades de proyecto. Para obtener más información, vea [Cómo: configurar el análisis de código para un proyecto de código administrado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)  
   
-### Para ejecutar el análisis de código manualmente  
+### <a name="to-run-code-analysis-manually"></a>Para ejecutar el análisis de código manualmente  
   
-1.  En el **Explorador de soluciones**, haga clic en el proyecto.  
+1.  En **el Explorador de soluciones**, haga clic en el proyecto.  
   
-2.  En el menú de **Analizar** , haga clic en **Ejecutar el análisis de código en** *Project Name*.
+2.  En el **analizar** menú, haga clic en **ejecutar análisis de código en** *nombre del proyecto*.

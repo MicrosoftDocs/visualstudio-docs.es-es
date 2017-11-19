@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetChild | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptNode::GetChild | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetChild
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetChild"
+helpviewer_keywords: IScriptNode::GetChild
 ms.assetid: 8cb3f8b0-958b-40bb-a91a-49a788661861
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetChild
-Devuelve el elemento secundario que está en el índice especificado en el nodo.  
+# <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
+Devuelve al elemento secundario que está en el índice especificado en el nodo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetChild(  
@@ -30,26 +33,26 @@ HRESULT GetChild(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `isn`  
- \[in\] índice del elemento secundario del elemento primario.  
+ [in] El índice del elemento secundario en el elemento primario.  
   
  `ppsn`  
- \[out\] dirección de una variable que recibe un puntero a la interfaz de `IScriptNode` de instancia secundaria.  
+ [out] La dirección de una variable que recibe un puntero a la `IScriptNode` interfaz de la instancia secundaria.  
   
- Para los objetos de `IScriptNode` que representan una página Web, retornos de este parámetro un objeto que contiene un bloque de script.  
+ Para `IScriptNode` objetos que representan una página Web, este parámetro devuelve un objeto que contiene un bloque de script.  
   
- Para los objetos de `IScriptEntry` que especifican un bloque script, retornos de este parámetro un objeto que especifica una función.  
+ Para `IScriptEntry` objetos que especifican un bloque de script, este parámetro devuelve un objeto que especifica una función.  
   
-## Valor devuelto  
- Interfaz `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Para los objetos de `IScriptEntry` que especifican un objeto de función y para los objetos de `IScriptScriptlet` , error en este método porque no hay entradas secundarias.  
+## <a name="remarks"></a>Comentarios  
+ Para `IScriptEntry` objetos que especifican un objeto de función y para `IScriptScriptlet` objetos, este método produce un error porque no hay entradas secundarias.  
   
-## Vea también  
- [IScriptNode \(Interfaz\)](../../winscript/reference/iscriptnode-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IScriptNode (Interfaz)](../../winscript/reference/iscriptnode-interface.md)

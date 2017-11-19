@@ -1,48 +1,48 @@
 ---
-title: "SccEndBatch (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccEndBatch"
-helpviewer_keywords: 
-  - "SccEndBatch (función)"
+title: "Función SccEndBatch | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccEndBatch
+helpviewer_keywords: SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e45d3ea8fefad30875ee91775412e7dcf40cb28e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccEndBatch (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta función finaliza un lote de operaciones de control de código fuente. Estos lotes no pueden estar anidados.  
+# <a name="sccendbatch-function"></a>SccEndBatch (función)
+Esta función finaliza un lote de las operaciones de control de código fuente. Estos lotes no pueden anidarse.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 SCCRTN SccEndBatch(void);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  Ninguno.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|Lote de operaciones concluido correctamente.|  
-|SCC\_E\_UNKNOWNERROR|Error no específico.|  
+|SCC_OK|Lote de operaciones concluido correctamente.|  
+|SCC_E_UNKNOWNERROR|Error no determinado.|  
   
-## Comentarios  
- Lotes de control de código fuente se usan para ejecutar las mismas operaciones de control de código fuente en varios proyectos o varios contextos. Los lotes se pueden utilizar para eliminar los cuadros de diálogo redundantes de la experiencia del usuario durante una operación por lotes. El [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y `SccEndBatch` \(función\) se utilizan como un par para indicar el principio y el final de una operación. No se pueden anidar.  
+## <a name="remarks"></a>Comentarios  
+ Lotes de control de código fuente se usan para ejecutar las mismas operaciones de control de código fuente en varios proyectos o varios contextos. Lotes pueden usarse para eliminar cuadros de diálogo de redundancia de la experiencia del usuario durante una operación por lotes. El [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y `SccEndBatch` función sirven como un par para indicar el principio y al final de una operación. No se pueden anidar.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

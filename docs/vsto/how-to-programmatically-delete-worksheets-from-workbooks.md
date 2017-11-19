@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Delete Worksheets from Workbooks | Microsoft Docs'
+title: "Cómo: eliminar hojas de cálculo mediante programación de los libros | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,67 +14,68 @@ helpviewer_keywords:
 - workbooks, deleting worksheets
 - worksheets, deleting
 ms.assetid: c5ae99f0-806d-4320-a29c-75ad444fb996
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e28e765abd1c7b18bdc0121e12be99db6e87afc1
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: efa5c68555fbd9e309335d8c985c4f14f1b07b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>How to: Programmatically Delete Worksheets from Workbooks
-  You can delete any worksheet in a workbook. To delete a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Cómo: Eliminar hojas de cálculo de libros mediante programación
+  Puede eliminar cualquier hoja de cálculo de un libro. Para eliminar una hoja de cálculo, use el elemento host worksheet o acceda a la hoja de cálculo mediante la colección Sheets del libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
- If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method to delete a specified worksheet. The following code deletes a worksheet from a workbook by referencing the worksheet host item directly.  
+## <a name="using-the-worksheet-host-item"></a>Usar el elemento host Worksheet  
+ Si la hoja de cálculo se agregó en tiempo de diseño en una personalización de nivel de documento, use el método <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> para eliminar una hoja de cálculo especificada. El siguiente código elimina una hoja de cálculo de un libro haciendo referencia directamente al elemento host worksheet.  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using any of the following project templates:  
+>  Este código solo se ejecuta en proyectos creados mediante cualquiera de las siguientes plantillas de proyecto:  
 >   
->  -   Excel 2013 Workbook  
-> -   Excel 2013 Template  
-> -   Excel 2010 Workbook  
-> -   Excel 2010 Template  
+>  -   Libro de Excel 2013  
+> -   Plantilla de Excel 2013  
+> -   Libro de Excel 2010  
+> -   Plantilla de Excel 2010  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar las clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad principal](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>To delete a worksheet by using a worksheet host item  
+#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Para eliminar una hoja de cálculo mediante un elemento host worksheet  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method of `Sheet1`.  
+1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> de `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]  [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
+     [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
- Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Usar la colección Sheets del libro de Excel  
+ Acceda a las hojas de cálculo a través de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> de Microsoft Office Excel en los siguientes casos:  
   
--   You want to delete a worksheet in a VSTO Add-in.  
+-   Desea eliminar una hoja de cálculo de un complemento de VSTO.  
   
--   The worksheet that you want to delete was created at run time in a document-level customization.  
+-   La hoja de cálculo que desea eliminar se creó en tiempo de ejecución en una personalización de nivel de documento.  
   
- The following code deletes a worksheet from a workbook by referencing the sheet through the index number of the **Sheets** collection. This code assumes that a new worksheet was created programmatically.  
+ El siguiente código elimina una hoja de cálculo de un libro haciendo referencia a la hoja a través del número de índice de la **hojas** colección. Este código supone que se ha creado una nueva hoja de cálculo mediante programación.  
   
 > [!IMPORTANT]  
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar las clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad principal](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>To delete a worksheet by using the Sheets collection of the Excel workbook  
+#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Para eliminar una hoja de cálculo mediante la colección Sheets del libro de Excel  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> method of the <xref:Microsoft.Office.Interop.Excel.Sheets> collection.  
+1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> de la colección <xref:Microsoft.Office.Interop.Excel.Sheets>.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]  [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
+     [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
- [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [How to: Programmatically Select Worksheets](../vsto/how-to-programmatically-select-worksheets.md)   
- [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>Vea también  
+ [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
+ [Cómo: ocultar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Cómo: mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Cómo: seleccionar hojas de cálculo de mediante programación](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Cómo: agregar nuevas hojas de cálculo a libros mediante programación](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Elemento Host Worksheet](../vsto/worksheet-host-item.md)   
+ [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

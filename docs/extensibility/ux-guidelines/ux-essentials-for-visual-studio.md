@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 19db4e41ef35ddbec4f43823d4bf66bb148a854f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 368540b909536523515ea610e509b22600628f81
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Essentials UX para Visual Studio
 ## <a name="best-practices"></a>Procedimientos recomendados  
@@ -99,7 +84,7 @@ ms.lasthandoff: 05/04/2017
   
  En este caso, hay una preocupación adicional porque el icono utilizado para la alerta contiene una "&times;" icono, por lo que no se puede usar el icono de eliminación común junto a él. Como resultado, la interfaz de usuario usa un botón de quitar un control más inadecuado.  
   
- ![Colocación de interfaz de usuario en un estado de error de forma predeterminada es un antipatrón de Visual Studio.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />Colocación de interfaz de usuario en un estado de error de forma predeterminada es un antipatrón de Visual Studio.
+ ![Colocación de interfaz de usuario en un estado de error de forma predeterminada es un antipatrón de Visual Studio. ] (../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti patrón")<br />Colocación de interfaz de usuario en un estado de error de forma predeterminada es un antipatrón de Visual Studio.
   
 #### <a name="alternatives"></a>Alternativas  
  Una mejor solución a este problema sería:  
@@ -122,7 +107,7 @@ ms.lasthandoff: 05/04/2017
 Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz de usuario es un antipatrón dentro de Visual Studio. Vínculos vídeo correctamente diseñado deben mostrar una información sobre herramientas con información adicional al mantener el mouse y haga clic en el "&times;" debe descartar el mensaje sin necesidad de intervención.
 
 
- ![Explicativo texto anti &#45; patrón &#45; incorrecto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Patrón de vínculo de vídeo incorrecto
+ ![Explicativo texto anti &#45; patrón &#45; incorrecta](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Patrón de vínculo de vídeo incorrecto
   
 #### <a name="result"></a>Resultado  
  En lugar de un botón de cierre simple (un solo clic), el usuario está obligado a utilizar dos clics para descartar simplemente la interfaz de usuario en todos los lugares que aparecen los vínculos de vídeo.  
@@ -130,20 +115,20 @@ Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz
 #### <a name="alternatives"></a>Alternativas  
  El diseño correcto para esta situación sería seguir el patrón común para Internet Explorer, Office y Visual Studio: al mantener el mouse, el usuario puede ver la descripción de la información sobre herramientas y un solo clic oculta la interfaz de usuario.  
   
- ![Explicativo texto anti &#45; patrón &#45; corregir](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />Patrón de vínculo de vídeo correcto
+ ![Explicativo texto anti &#45; patrón &#45; correcto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-patrón corregir")<br />Patrón de vínculo de vídeo correcto
   
 ### <a name="using-command-bars-for-settings"></a>Usar barras de comandos para la configuración  
  **Figura A** representa este antipatrón: poner un valor por debajo de un botón de comando que se aplica a algo más que el comando. En este esquema, hay comandos además de iniciar la depuración, como la vista de explorador, iniciar sin depurar y paso a paso, que respetará la configuración seleccionada.  
 
-  ![Figura r: antipatrón de barra comando](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />Figura r: antipatrón de barra comando
+  ![Figura r: antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-patrón-FigureA")<br />Figura r: antipatrón de barra comando
   
  Indeseable ligeramente mejor, pero aún, es sinónimo de poner la configuración de este tipo en las barras de herramientas, como se muestra en **figura B**. Aunque los botones de expansión que ocupen menos espacio y son, por tanto, una mejora en listas desplegables, ambos diseños se sigue usando una barra de herramientas para promocionar algo que no es realmente un comando.  
  
- ![Figura B: mejor, pero que todavía un antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />Figura B: mejor, pero que todavía un antipatrón de barra de comandos
+ ![Figura B: mejor, pero que todavía un antipatrón de barra de comandos](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-patrón-FigureB")<br />Figura B: mejor, pero que todavía un antipatrón de barra de comandos
  
   En el enfoque correcto que se muestra en **figura C**, la configuración está vinculada a una serie de comandos. No hay ninguna configuración global que se va a establecer y solo estamos cambiar entre cuatro comandos. Esta es la única situación en la que los comandos en la barra de herramientas son aceptables. 
 
- ![Usar figura C: correcto del patrón de barra de comandos de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />Usar figura C: correcto del patrón de barra de comandos de Visual Studio
+ ![Figura C: corregir el uso del patrón de barra de comandos de Visual Studio](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-patrón-FigureC")<br />Usar figura C: correcto del patrón de barra de comandos de Visual Studio
    
 ### <a name="control-anti-patterns"></a>Antipatrones de control  
  Algunos antipatrones son uso simplemente incorrecta o la presentación de un control o un grupo de controles.  
@@ -152,15 +137,15 @@ Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz
  Utilizar texto subrayado debe utilizarse solo para los hipervínculos.  
   
  **Incorrecta:**    
- ![Texto subrayado que no sea un hipervínculo es un antipatrón de Visual Studio.](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102-g_GroupLabelIncorrect")<br />Texto subrayado que no sea un hipervínculo es un antipatrón de Visual Studio.
+ ![Texto subrayado que no sea un hipervínculo es un antipatrón de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "g_GroupLabelIncorrect 0102")<br />Texto subrayado que no sea un hipervínculo es un antipatrón de Visual Studio.
   
  **Buena:**   
- ![Un estilo correctamente, texto de hipervínculo no aparece sin adornar de la fuente del entorno.](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />Un estilo correctamente, texto de hipervínculo no aparece sin adornar de la fuente del entorno.
+ ![Un estilo correctamente, texto de hipervínculo no aparece sin adornar de la fuente del entorno. ] (../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "h_GroupLabelCorrect 0102")<br />Un estilo correctamente, texto de hipervínculo no aparece sin adornar de la fuente del entorno.
   
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Al hacer clic en una casilla de verificación resultados en un cuadro de diálogo emergente  
  Haga clic en la casilla de verificación "Habilitar Escritorio remoto para todos los roles" en el Asistente "Publicar aplicación de Windows Azure" inmediatamente, se abrirá un cuadro de diálogo emergente, antipatrón de Visual Studio. Además, el campo de casilla de verificación no rellena con una casilla de verificación después de que se selecciona, otro antipatrón de interacción.  
   
- ![Abrir un cuadro de diálogo después de hacer clic en una casilla de verificación es un antipatrón de Visual Studio.](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />Abrir un cuadro de diálogo después de hacer clic en una casilla de verificación es un antipatrón de Visual Studio.
+ ![Abrir un cuadro de diálogo después de hacer clic en una casilla de verificación es un antipatrón de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "i_CheckboxPopup 0102")<br />Abrir un cuadro de diálogo después de hacer clic en una casilla de verificación es un antipatrón de Visual Studio.
   
 ### <a name="hyperlink-anti-patterns"></a>Antipatrones de hipervínculo  
  El ejemplo siguiente contiene dos antipatrones.  
@@ -169,7 +154,7 @@ Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz
   
 2.  "Más" no es el texto adecuado para un vínculo a un tema conceptual. Objetivo del usuario no es más, es para entender las implicaciones de su elección.  
   
- ![Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.](~/extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.  
+ ![Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio. ] (../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")<br />Se omitirá el servicio de color y el uso de "Obtener más información" para los hipervínculos están antipatrones de Visual Studio.  
   
  **Una mejor solución:** suponer la pregunta ¿se pregunte al usuario, haga clic en el vínculo.  
   

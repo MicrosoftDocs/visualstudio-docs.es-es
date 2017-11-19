@@ -1,53 +1,53 @@
 ---
-title: "FIELD_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "FIELD_INFO"
-helpviewer_keywords: 
-  - "Estructura FIELD_INFO"
+title: FIELD_INFO | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: FIELD_INFO
+helpviewer_keywords: FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5b7b3bfae3923a7df3f5c499bfac5cde12d1388b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# FIELD_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Esta estructura describe la variable local, el parámetro, u otro campo.  
+# <a name="fieldinfo"></a>FIELD_INFO
+Esta estructura describe una variable local, parámetro u otro campo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-typedef struct _tagFieldInfo {   
-   FIELD_INFO_FIELDS dwFields;  
-   BSTR              bstrFullName;  
-   BSTR              bstrName;  
-   BSTR              bstrType;  
-   FIELD_MODIFIERS   dwModifiers;  
+```cpp  
+typedef struct _tagFieldInfo {   
+   FIELD_INFO_FIELDS dwFields;  
+   BSTR              bstrFullName;  
+   BSTR              bstrName;  
+   BSTR              bstrType;  
+   FIELD_MODIFIERS   dwModifiers;  
 } FIELD_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct FIELD_INFO {  
-   public uint   dwFields;  
-   public string bstrFullName;  
-   public string bstrName;  
-   public string bstrType;  
-   public uint   dwModifiers;  
+   public uint   dwFields;  
+   public string bstrFullName;  
+   public string bstrName;  
+   public string bstrType;  
+   public uint   dwModifiers;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Miembros  
  dwFields  
- Una combinación de marcadores de enumeración de [FIELD\_INFO\_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica completan los integrantes.  
+ Una combinación de indicadores de la [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumeración que especifica qué miembros se rellenan.  
   
  bstrFullName  
  El nombre completo del campo.  
@@ -55,24 +55,24 @@ public struct FIELD_INFO {
  bstrName  
  El nombre corto del campo.  
   
- bstrType  
- Tipo del campo.  
+ bstrType parámetro  
+ El tipo del campo.  
   
  dwModifiers  
- Una combinación de marcadores de enumeración de [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que describe el campo.  
+ Una combinación de indicadores de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeración que describe el campo.  
   
-## Comentarios  
- Esta estructura se pasa al método de [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) donde se completa.  
+## <a name="remarks"></a>Comentarios  
+ Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método donde se rellena.  
   
-## Requisitos  
- encabezado: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [FIELD\_INFO\_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
- [FIELD\_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
+ [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
+ [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

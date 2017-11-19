@@ -1,56 +1,56 @@
 ---
-title: "IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::EnumCodeContexts"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::EnumCodeContexts"
+title: IDebugDocumentContext2::EnumCodeContexts | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::EnumCodeContexts
+helpviewer_keywords: IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a11ec6d678fce60cbecbc1dc9e2b7c61eb1e5867
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::EnumCodeContexts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera una lista de todos los contextos de código asociado a este contexto de documento.  
+# <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
+Recupera una lista de todos los contextos de código asociado con este contexto de documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumCodeContexts(   
-   IEnumDebugCodeContexts2** ppEnumCodeCxts  
+```cpp  
+HRESULT EnumCodeContexts(   
+   IEnumDebugCodeContexts2** ppEnumCodeCxts  
 );  
 ```  
   
-```c#  
-int EnumCodeContexts(   
-   out IEnumDebugCodeContexts2 ppEnumCodeCxts  
+```csharp  
+int EnumCodeContexts(   
+   out IEnumDebugCodeContexts2 ppEnumCodeCxts  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppEnumCodeCxts`  
- \[out\]  Devuelve un objeto de [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) que contiene una lista de contextos de código.  
+ [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de contextos de código.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Un contexto de documento puede generar varios contextos de código cuando el documento está utilizando plantillas o archivos de inclusión.  
+## <a name="remarks"></a>Comentarios  
+ Un contexto de único documento puede generar varios contextos de código cuando el documento utiliza plantillas o archivos de inclusión.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CDebugContext` que expone la interfaz de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CDebugContext` objeto que expone la [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)    
 {    
    HRESULT hr;    
@@ -106,6 +106,6 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

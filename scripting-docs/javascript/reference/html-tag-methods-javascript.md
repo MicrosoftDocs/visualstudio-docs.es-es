@@ -1,72 +1,75 @@
 ---
-title: "M&#233;todos de etiqueta HTML (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "anchor (método) [JavaScript]"
-  - "big (método) [JavaScript]"
-  - "blink (método) [JavaScript]"
-  - "bold (método) [JavaScript]"
-  - "fixed (método) [JavaScript]"
-  - "fontcolor (método) [JavaScript]"
-  - "fontsize (método) [JavaScript]"
-  - "métodos de etiqueta HTML [JavaScript]"
-  - "italics (método) [JavaScript]"
-  - "link (método) [JavaScript]"
-  - "small (método) [JavaScript]"
-  - "sub (método) [JavaScript]"
-  - "sup (método) [JavaScript]"
+title: "Métodos de etiqueta HTML (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- link method [JavaScript]
+- blink method [JavaScript]
+- fontsize method [JavaScript]
+- italics method [JavaScript]
+- sup method [JavaScript]
+- anchor method [JavaScript]
+- fixed method [JavaScript]
+- fontcolor method [JavaScript]
+- bold method [JavaScript]
+- small method [JavaScript]
+- HTML Tag methods [JavaScript]
+- sub method [JavaScript]
+- big method [JavaScript]
 ms.assetid: 50376223-be95-4aa4-9147-9e738a5d3cfa
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7639bc609d8e9b7e4b212fe67ae40f81487d708e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# M&#233;todos de etiqueta HTML (JavaScript)
-Puedes usar métodos de etiquetas HTML para colocar elementos HTML alrededor del texto en un objeto `String`.  
+# <a name="html-tag-methods-javascript"></a>Métodos de etiqueta HTML (JavaScript)
+Puede usar los métodos de etiqueta HTML para colocar elementos HTML alrededor del texto de un `String` objeto.  
   
-## Sintaxis  
- En la tabla siguiente se muestra la sintaxis para cada método de etiquetas HTML y una descripción del mismo.  
+## <a name="syntax"></a>Sintaxis  
+ En la tabla siguiente se muestra la sintaxis y una descripción de cada método de etiqueta HTML.  
   
- En la columna Sintaxis, `string1` es un objeto `String` o un literal de cadena.  
+ En la columna de la sintaxis, `string1` es un `String` literal u objeto.  
   
- La columna Estándar indica recomendaciones de [World Wide Web Consortium \(W3C\)](http://go.microsoft.com/fwlink/?LinkId=199553) para HTML 4.  "No recomendado" indica que se recomienda usar hojas de estilos en lugar del elemento HTML.  
+ Indica la columna estándar [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/?LinkId=199553) recomendaciones para HTML 4. "Desaconseja" indica que el elemento HTML se desaconseja en favor de hojas de estilos.  
   
 |Sintaxis|Descripción del método|Descripción del parámetro|Estándar|  
-|--------------|----------------------------|-------------------------------|--------------|  
-|`string1`.anchor\(`name`\)|Pone un delimitador HTML que tiene un atributo NAME alrededor del texto.|El parámetro `name` es el texto que se va a colocar en el atributo NAME del delimitador HTML.||  
-|`string1`.big\(\)|Pone etiquetas HTML \<BIG\> alrededor del texto.||No recomendado|  
-|`string1`.blink\(\)|Pone etiquetas HTML \<BLINK\> alrededor del texto.  La etiqueta \<BLINK\>no se admite en Internet Explorer.||No estándar|  
-|`string1`.bold\(\)|Pone etiquetas HTML \<B\> alrededor del texto.||No recomendado|  
-|`string1`.fixed\(\)|Pone etiquetas HTML \<TT\> alrededor del texto.||No recomendado|  
-|`string1`.fontcolor\(`color`\)|Pone etiquetas HTML \<FONT\> con un atributo COLOR alrededor del texto.|El parámetro `color` es un valor alfanumérico que contiene el valor hexadecimal o el nombre predefinido de un color.  Los nombres de colores predefinidos válidos dependen del explorador del host de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y su versión.|Desusado|  
-|`string1`.fontsize\(`size`\)|Pone etiquetas HTML \<FONT\> con un atributo SIZE alrededor del texto.|El parámetro `size` es un valor entero que especifica el tamaño del texto.  Los valores enteros válidos dependen del explorador del host de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y su versión.|Desusado|  
-|`string1`.italics\(\)|Pone etiquetas HTML \<I\> alrededor del texto.||No recomendado|  
-|`string1`.link\(`href`\)|Pone un delimitador HTML que tiene un atributo HREF alrededor del texto.|El parámetro `href` es el texto que se va a colocar en el atributo HREF del delimitador HTML.||  
-|`string1`.small\(\)|Pone etiquetas HTML \<SMALL\> alrededor del texto.||No recomendado|  
-|`string1`.strike\(\)|Pone etiquetas HTML \<STRIKE\> alrededor del texto.||Desusado|  
-|`string1`.sub\(\)|Pone etiquetas HTML \<SUB\> alrededor del texto.|||  
-|`string1`.sup\(\)|Pone etiquetas HTML \<SUP\> alrededor del texto.|||  
+|------------|------------------------|---------------------------|--------------|  
+|`string1`.Anchor (`name`)|Coloca un delimitador HTML que tiene un atributo de nombre alrededor del texto.|El `name` parámetro es texto que se va a colocar en el atributo NAME del delimitador HTML.||  
+|`string1`.big()|Coloca HTML \<BIG > etiquetas alrededor del texto.||No usar|  
+|`string1`.blink()|Coloca HTML \<BLINK > etiquetas alrededor del texto. El \<BLINK > etiqueta no se admite en Internet Explorer.||No en estándar|  
+|`string1`.Bold()|Coloca HTML \<B > etiquetas alrededor del texto.||No usar|  
+|`string1`.fixed()|Coloca HTML \<TT > etiquetas alrededor del texto.||No usar|  
+|`string1`.fontcolor (`color`)|Coloca HTML \<fuente > etiquetas con un atributo COLOR a ambos lados del texto.|El `color` parámetro es un valor de cadena que contiene el valor hexadecimal o el nombre predefinido para un color. Nombres de colores predefinidos válidos dependen del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] explorador y su versión de host.|En desuso|  
+|`string1`.FontSize (`size`)|Coloca HTML \<fuente > etiquetas con un atributo SIZE alrededor del texto.|El `size` parámetro es un valor entero que especifica el tamaño del texto. Valores enteros válidos dependen del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] explorador y su versión de host.|En desuso|  
+|`string1`.italics()|Coloca HTML \<I > etiquetas alrededor del texto.||No usar|  
+|`string1`.Link (`href`)|Coloca un delimitador HTML que tiene un atributo HREF alrededor del texto.|El `href` parámetro es texto que se va a colocar en el atributo HREF del delimitador HTML.||  
+|`string1`.Small()|Coloca HTML \<pequeño > etiquetas alrededor del texto.||No usar|  
+|`string1`.Strike()|Coloca HTML \<STRIKE > etiquetas alrededor del texto.||En desuso|  
+|`string1`.Sub()|Coloca HTML \<SUB > etiquetas alrededor del texto.|||  
+|`string1`.SUP()|Coloca HTML \<SUP > etiquetas alrededor del texto.|||  
   
-## Comentarios  
- No se realiza ninguna comprobación para determinar si las etiquetas HTML ya se han aplicado a la cadena.  
+## <a name="remarks"></a>Comentarios  
+ Se realiza ninguna comprobación para determinar si las etiquetas HTML ya se han aplicado a la cadena.  
   
-## Ejemplo  
- En los ejemplos siguientes se muestra cómo usar los métodos de etiquetas HTML.  
+## <a name="example"></a>Ejemplo  
+ Los ejemplos siguientes muestran cómo usar los métodos de etiqueta HTML.  
   
-```javascript  
+```JavaScript  
 // anchor method.  
 var strVariable = "This is an anchor.";  
 document.write(strVariable.anchor("Anchor1"));  
@@ -133,10 +136,10 @@ document.write(strVariable.sup());
 // Output: <SUP>This is a string.</SUP>  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)  
+ **Se aplica a**: [objeto de cadena](../../javascript/reference/string-object-javascript.md)  
   
-## Vea también  
- [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [String (Objeto)](../../javascript/reference/string-object-javascript.md)

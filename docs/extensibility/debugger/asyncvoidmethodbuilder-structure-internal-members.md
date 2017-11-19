@@ -1,34 +1,36 @@
 ---
-title: "Estructura de AsyncVoidMethodBuilder - miembros internos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "motores de depuración, AsyncVoidMethodBuilder (estructura) [.NET Framework]"
-  - "Estructura de AsyncVoidMethodBuilder [motores de depuración de .NET Framework]"
+title: Estructura de AsyncVoidMethodBuilder - miembros internos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
+- AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8e2a8b9f7e287ccf8bc63a8d7392cba0d58cb9bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Estructura de AsyncVoidMethodBuilder - miembros internos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Este tema describen los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> tema de referencia.  
+# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Estructura de AsyncVoidMethodBuilder - miembros internos
+En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> tema de referencia.  
   
- **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib \(en mscorlib.dll\)  
+ **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- No se puede tener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común \(CIL\).  
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 .class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncVoidMethodBuilder  
@@ -36,13 +38,13 @@ Este tema describen los miembros internos de la <xref:System.Runtime.CompilerSer
        implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
 ```  
   
-## Miembros internos  
+## <a name="internal-members"></a>Miembros internos  
   
-|Nombre|Descripción|  
-|------------|-----------------|  
-|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma exclusiva este generador al depurador.|  
-|[campo m\_objectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado el depurador para identificar de forma exclusiva este generador.|  
+|Name|Descripción|  
+|----------|-----------------|  
+|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma exclusiva este generador para el depurador.|  
+|[campo de m_objectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Representa el objeto inicializado de forma diferida utilizado por el depurador para identificar de forma única este generador.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Información interna de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Datos internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

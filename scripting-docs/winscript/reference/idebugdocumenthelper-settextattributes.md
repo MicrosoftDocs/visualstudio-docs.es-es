@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::SetTextAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::SetTextAttributes | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.SetTextAttributes
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::SetTextAttributes"
+helpviewer_keywords: IDebugDocumentHelper::SetTextAttributes
 ms.assetid: 31657738-9e4c-436a-be61-23f4185d452e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::SetTextAttributes
-Establece los atributos de un intervalo de texto, reemplazando otros atributos en ese texto.  
+# <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
+Establece los atributos en un intervalo de texto, reemplazando otros atributos en ese texto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SetTextAttributes(  
@@ -31,29 +34,29 @@ HRESULT SetTextAttributes(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ulCharOffset`  
- \[in\] ubicación del inicio del intervalo de texto.  
+ [in] La ubicación de inicio del intervalo de texto.  
   
  `cChars`  
- \[in\] número de caracteres del intervalo.  
+ [in] El número de caracteres en el intervalo.  
   
  `pstaTextAttr`  
- \[in\] atributos de texto de origen para obtener el intervalo de texto.  
+ [in] Los atributos de texto de origen para el intervalo de texto.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Es un error para llamar a `SetTextAttributes` en un intervalo de texto antes que el texto se agrega al documento.  Llame a `AddDBCSText`, `AddUnicodeText`, o métodos de `AddDeferredText` para agregar texto al documento.  
+## <a name="remarks"></a>Comentarios  
+ Es un error al llamar a `SetTextAttributes` en un intervalo de texto antes de que el texto se agrega al documento. Llame a la `AddDBCSText`, `AddUnicodeText`, o `AddDeferredText` métodos para agregar texto al documento.  
   
-## Vea también  
- [IDebugDocumentHelper \(Interfaz\)](../../winscript/reference/idebugdocumenthelper-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
  [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
- [SOURCE\_TEXT\_ATTR \(Enumeración\)](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR (Enumeración)](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,63 +1,63 @@
 ---
-title: "IEnumDebugReferenceInfo2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugReferenceInfo2"
-helpviewer_keywords: 
-  - "IEnumDebugReferenceInfo2"
+title: IEnumDebugReferenceInfo2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugReferenceInfo2
+helpviewer_keywords: IEnumDebugReferenceInfo2
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b913f0eb4f3dfa4e1ff8fa5bf6719a8f6fed4e3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugReferenceInfo2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Esta interfaz se enumeran las estructuras de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .  
+# <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
+Esta interfaz enumera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructuras.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IEnumDebugReferenceInfo2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El motor de depuración \(DE\) implementa esta interfaz como parte de su compatibilidad con las referencias a objetos en memoria.  Esta interfaz se debe implementar solo si se admiten las referencias.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El motor de depuración (Alemania) implementa esta interfaz como parte de su compatibilidad con las referencias a objetos en memoria. Esta interfaz se debe implementar únicamente si se admiten referencias.  
   
-## Notas para los llamadores  
- Visual Studio llama [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) para obtener esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Llamadas visuales Studio [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) para obtener esta interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IEnumDebugReferenceInfo2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IEnumDebugReferenceInfo2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[Siguiente](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Recupera un número especificado de estructuras de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) en una secuencia de enumeración.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Omite un número especificado de estructuras de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) en la secuencia de la enumeración.|  
-|[Restablecer](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Restaura una secuencia de enumeración al principio.|  
-|[Clonar](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Crea un enumerador que contiene al mismo estado de enumeración que el enumerador actual.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Obtiene el número de estructuras de [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) de un enumerador.|  
+|[Siguiente](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Recupera un número especificado de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructuras en una secuencia de enumeración.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Omite un número especificado de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructuras en la secuencia de enumeración.|  
+|[Restablecer](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Restablece una secuencia de enumeración al principio.|  
+|[Clon](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Obtiene el número de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructuras en un enumerador.|  
   
-## Comentarios  
- Una referencia es esencialmente un tipo y una dirección, mientras que una propiedad es un nombre, tipo, y una dirección.  Una referencia se conserva cuando el objeto denominado existe en memoria.  Vea [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) para obtener más información.  
+## <a name="remarks"></a>Comentarios  
+ Una referencia es básicamente un tipo y una dirección, mientras que una propiedad es un nombre, tipo y dirección. Se mantiene una referencia como referencia de objeto existe en la memoria. Vea [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) para obtener más detalles.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
+ [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)

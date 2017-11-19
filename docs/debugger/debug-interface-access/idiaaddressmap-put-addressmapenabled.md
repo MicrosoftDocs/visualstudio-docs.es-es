@@ -1,52 +1,51 @@
 ---
-title: "IDiaAddressMap::put_addressMapEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::put_addressMapEnabled (método)"
+title: 'Idiaaddressmap:: Put_addressmapenabled | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::put_addressMapEnabled method
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5542e00511301a84ba54a08405434001f63c4b5d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::put_addressMapEnabled
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Especifica si la configuración de direcciones se debe utilizar para traducir a direcciones de símbolos.  
+# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Especifica si se debe usar la asignación de dirección para traducir direcciones de símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT put_addressMapEnabled (   
-   BOOL NewVal  
+```C++  
+HRESULT put_addressMapEnabled (   
+   BOOL NewVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  NewVal  
- \[in\]  Establezca en `TRUE` para habilitar la traducción de símbolos, o `FALSE` para deshabilitar.  
+ [in] Establecido en `TRUE` para habilitar la traducción de símbolos, o `FALSE` a deshabilitar.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los postprocesadores ejecutables actualizan a veces el ejecutable.  El diámetro contiene un mecanismo para admitir la traducción de símbolos al nuevo diseño.  
+## <a name="remarks"></a>Comentarios  
+ Ejecutables procesadores posteriores a la actualización a veces el archivo ejecutable. DIA contiene un mecanismo para admitir la traducción de símbolos para el nuevo diseño.  
   
- Cuando un archivo PDB se carga, la configuración de direcciones almacenada en el archivo está habilitada.  En ocasiones, sin embargo, cuando una aplicación cliente puede que necesite proporcionar su propia configuración de direcciones llamando al método de [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  Si el método de `set_addressMap` es correcto, la aplicación cliente debe llamar al método de `put_addressMapEnabled` con un parámetro de `NewVal` de `TRUE` para habilitar el uso de esa configuración de direcciones.  
+ Cuando se carga un archivo PDB, se habilita la asignación de dirección que se almacena en el archivo. Hay ocasiones, sin embargo, cuando una aplicación cliente que necesite proporcionar su propia asignación de dirección mediante una llamada a la [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método. Si el `set_addressMap` método se realiza correctamente, la aplicación cliente debe llamar a la `put_addressMapEnabled` método con un `NewVal` parámetro de `TRUE` para habilitar el uso de esa asignación de dirección.  
   
- El estado actual de la configuración de direcciones que está habilitada puede recuperarse con una llamada al método de [IDiaAddressMap::get\_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .  
+ Se puede recuperar el estado actual de la asignación de dirección está habilitada con una llamada a la [idiaaddressmap:: Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::get\_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)
+ [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)

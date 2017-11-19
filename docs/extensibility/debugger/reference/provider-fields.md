@@ -1,64 +1,64 @@
 ---
-title: "PROVIDER_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_FIELDS"
-helpviewer_keywords: 
-  - "Enumeración PROVIDER_FIELDS"
+title: PROVIDER_FIELDS | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PROVIDER_FIELDS
+helpviewer_keywords: PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 01aa9048e26c265b1fe04ba653fb224b86ec77cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# PROVIDER_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica las propiedades asociadas con un proveedor de programa.  
+# <a name="providerfields"></a>PROVIDER_FIELDS
+Especifica las propiedades asociadas a un proveedor de programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+```cpp  
+enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 typedef DWORD PROVIDER_FIELDS;  
 ```  
   
-```c#  
-public enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+```csharp  
+public enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 ```  
   
-## Members  
- PFIELD\_PROGRAM\_NODES  
- el campo de `ProgramNodes` es válido.  
+## <a name="members"></a>Miembros  
+ PFIELD_PROGRAM_NODES  
+ El `ProgramNodes` campo es válido.  
   
- PFIELD\_IS\_DEBUGGER\_PRESENT  
- el campo de `fIsDebuggerPresent` es válido.  
+ PFIELD_IS_DEBUGGER_PRESENT  
+ El `fIsDebuggerPresent` campo es válido.  
   
-## Comentarios  
- Estos valores se devuelven en el miembro de `Fields` de la estructura de [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md) para indicar qué campos de la estructura explícitamente que se completaron.  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se devuelven en el `Fields` miembro de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura para indicar qué campos de la estructura se rellenaron explícitamente.  
   
- estos valores se pueden combinar con `OR`bit a bit.  
+ Estos valores se pueden combinar con un bit a bit `OR`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)
+ [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

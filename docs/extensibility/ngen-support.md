@@ -4,38 +4,23 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 46b6f4d13b4c1938797dbe6cf6023e3c8c42d1ed
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 433ff9555ce4a3e896aca1143ee649217f80dc7f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 
-Con Visual Studio de 2017 y el nuevo v3 VSIX extensión (versión 3) manifiesto formato, ahora los desarrolladores pueden extensión "ngen" sus ensamblados en tiempo de instalación.
+Con Visual Studio de 2017 y la v3 VSIX nueva extensión (versión 3) manifiesto formato de extensión a los desarrolladores ahora pueden "ngen" los ensamblados en tiempo de instalación.
 
 A continuación se muestra un extracto de MSDN que explica qué "ngen" hace:
 
@@ -43,26 +28,26 @@ A continuación se muestra un extracto de MSDN que explica qué "ngen" hace:
 >
 >desde [Ngen.exe (generador de imágenes nativas)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
 
-Para "ngen", un ensamblado, VSIX debe estar instalada "por instancia por equipo". Esto se puede habilitar activando la casilla "todos los usuarios" en el diseñador extension.vsixmanifest:
+En orden para "ngen" un ensamblado, la extensión VSIX debe instalarse "por instancia por equipo". Esto se puede habilitar activando la casilla de verificación "todos los usuarios" en el diseñador extension.vsixmanifest:
 
-![Compruebe todos los usuarios](~/extensibility/media/check-all-users.png)
+![Compruebe todos los usuarios](media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Cómo habilitar Ngen
 
-Para habilitar ngen para un ensamblado, puede utilizar el **propiedades** ventana de Visual Studio.
+Para habilitar ngen para un ensamblado, puede usar el **propiedades** ventana de Visual Studio.
 
 Hay 4 propiedades que se pueden establecer:
 
-1. **Ngen** (booleano): si es true, el programa de instalación de Visual Studio le "ngen" del ensamblado.
-2. **Aplicación de Ngen** (cadena) – Ngen proporciona la oportunidad de utilizar el archivo app.config de la aplicación para resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuyo app.config que desea usar (relativa al directorio de instalación de Visual Studio).
-3. **Arquitectura de Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todo
-4. **Prioridad de Ngen** (número entero entre 1 y 3) – nivel de la prioridad de Ngen se documenta en [niveles de prioridad de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+1. **Ngen** (booleano): si es true, el instalador de Visual Studio le "ngen" del ensamblado.
+2. **Aplicación de Ngen** (cadena) Ngen proporciona la oportunidad de usar el archivo app.config de la aplicación para resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuyo app.config que desea usar (relativa al directorio de instalación de Visual Studio).
+3. **Arquitectura de Ngen** (enumeración) - la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todas
+4. **Prioridad de Ngen** (entero entre 1 y 3) - nivel de la prioridad de Ngen se documenta en [niveles de prioridad de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
-Este es un vistazo a la **propiedades** ventana en acción:
+Este es un vistazo el **propiedades** ventana en acción:
 
-![Ngen en Propiedades](~/extensibility/media/ngen-in-properties.png)
+![Ngen en Propiedades](media/ngen-in-properties.png)
 
-Esto agregará los metadatos para la referencia de proyecto dentro de archivo .csproj del proyecto VSIX:
+Esto agregará los metadatos a la referencia de proyecto dentro del archivo .csproj del proyecto VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -75,8 +60,8 @@ Esto agregará los metadatos para la referencia de proyecto dentro de archivo .c
 </ProjectReference>
  ```
 
- >**Nota:** puede editar el archivo .csproj directamente, si lo prefiere.
+ >**Nota:** se puede editar el archivo .csproj directamente, si lo prefiere.
 
 ## <a name="extra-information"></a>Información adicional
 
-Aplicarán los cambios de propiedad diseñador a algo más que las referencias de proyecto; puede establecer los metadatos de Ngen de elementos dentro de su proyecto (con los mismos métodos descritos anteriormente) de siempre que los elementos son ensamblados. NET.
+Los cambios de diseñador de propiedad se aplican a algo más que las referencias de proyecto; puede establecer los metadatos de Ngen para los elementos dentro de su proyecto (con los mismos métodos que se ha descrito anteriormente) de siempre que los elementos son ensamblados .NET.

@@ -1,35 +1,36 @@
 ---
-title: "Posici&#243;n del documento | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración] y contextos"
+title: "Posición de documentos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4132742177eac126a6aa67f915c16c2ff4e8c93c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Posici&#243;n del documento
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de depuración, **un documento colocar**:  
+# <a name="document-position"></a>Posición del documento
+En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un **documento posición**:  
   
--   Proporciona una abstracción de una posición en un archivo de código fuente como conocido al IDE.  Para la mayoría de los lenguajes hoy, una posición de documento se puede considerar como posición en un archivo de código fuente.  
+-   Proporciona una abstracción de una posición en un archivo de código fuente como se sabe que el IDE. Para la mayoría de los idiomas en la actualidad, una posición del documento puede considerarse como una posición en un archivo de código fuente.  
   
 -   Describe una posición en un documento de origen a un motor de depuración.  
   
--   Se implementa mediante una interfaz de [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .  
+-   Se implementa mediante un [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interfaz.  
   
-## Vea también  
- [Contexto de código](../../extensibility/debugger/code-context.md)   
- [Contexto de documento](../../extensibility/debugger/document-context.md)   
+## <a name="see-also"></a>Vea también  
+ [Contexto del código](../../extensibility/debugger/code-context.md)   
+ [Contexto del documento](../../extensibility/debugger/document-context.md)   
  [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)   
  [Interfaces de proveedor de símbolos](../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)

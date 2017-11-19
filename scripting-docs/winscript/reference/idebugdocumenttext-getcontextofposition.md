@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentText::GetContextOfPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentText::GetContextOfPosition | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentText.GetContextOfPosition
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentText::GetContextOfPosition"
+helpviewer_keywords: IDebugDocumentText::GetContextOfPosition
 ms.assetid: 86560853-d9b1-499a-a1b5-ea06aa1f1f5c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f1be8bb6d350a2ca68912622396af52f1625985a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentText::GetContextOfPosition
-Crea un objeto de contexto del documento correspondiente al intervalo proporcionado de la posición.  
+# <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
+Crea un objeto de contexto de documento correspondiente al intervalo de posición de carácter proporcionado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetContextOfPosition(  
@@ -31,25 +34,25 @@ HRESULT GetContextOfPosition(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cCharacterPosition`  
- \[in\] ubicación de inicio del intervalo de la posición.  
+ [in] Iniciar ubicación la posición del intervalo de caracteres.  
   
  `cNumChars`  
- \[in\] número de caracteres del intervalo.  
+ [in] Número de caracteres en el intervalo.  
   
  `ppsc`  
- \[out\] objeto de contexto del documento de El correspondiente al intervalo especificado de la posición.  
+ [out] El objeto de contexto de documento correspondiente al intervalo de posición de carácter especificado.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método crea un objeto de contexto del documento correspondiente al intervalo proporcionado de la posición.  
+## <a name="remarks"></a>Comentarios  
+ Este método crea un objeto de contexto de documento correspondiente al intervalo de posición de carácter proporcionado.  
   
-## Vea también  
- [IDebugDocumentText \(Interfaz\)](../../winscript/reference/idebugdocumenttext-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugDocumentText (Interfaz)](../../winscript/reference/idebugdocumenttext-interface.md)

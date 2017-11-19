@@ -1,50 +1,51 @@
 ---
-title: "IDebugSymbolProviderDirect | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interfaz IDebugSymbolProviderDirect"
+title: IDebugSymbolProviderDirect | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 077a4422d7e8edde460e03dd2a26675df3fdd6fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Representa un proveedor de token que tiene acceso directo a los metadatos y las interfaces básicas de símbolos.  
+# <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
+Representa un proveedor de símbolos que tiene acceso directo a las interfaces de símbolos de metadatos y core.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugSymbolProviderDirect: IUnknown  
 ```  
   
-## Métodos  
- Esta interfaz implementa los siguientes métodos:  
+## <a name="methods"></a>Métodos  
+ Esta interfaz implementa los métodos siguientes:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Recupera el identificador del dominio de aplicación determinado la dirección de depuración.|  
-|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Información de recupera sobre los módulos del grupo de símbolos.|  
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Información de recupera sobre el grupo de símbolo cuyo el proveedor del token es un miembro.|  
-|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Recupera información de importación de metadatos.|  
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Información de recupera sobre el método en la dirección especificada de depuración.|  
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Recupera un sistema de lectura de símbolos para código no administrado.|  
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Recupera el identificador de dominio de aplicación dado la dirección de depuración.|  
+|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Recupera información acerca de los módulos en el grupo de símbolos.|  
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Recupera información sobre el grupo de símbolos de los cuales el proveedor de símbolo es un miembro.|  
+|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Recupera la información de importación de metadatos.|  
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Recupera información sobre el método en la dirección de depuración especificado.|  
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Recupera un lector de símbolos para código no administrado.|  
   
-## Comentarios  
- Esta interfaz se puede utilizar en lugar la mayoría de las otras interfaces de proveedor del token.  Proporciona acceso directo a los metadatos y las interfaces de `CorSym` .  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz se puede usar en lugar de la mayoría de las otras interfaces de proveedor de símbolos. Proporciona acceso directo a los metadatos y `CorSym` interfaces.  
   
-## Requisitos  
- encabezado: Sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

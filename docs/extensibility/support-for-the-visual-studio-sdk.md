@@ -1,68 +1,71 @@
 ---
-title: "Compatibilidad con el SDK de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "SDK de Visual Studio, opciones de soporte técnico"
-  - "soporte técnico, SDK de Visual Studio"
-  - "Ayuda, SDK de Visual Studio"
-  - "grupos de noticias de soporte técnico del SDK de Visual Studio"
-  - "Sitios Web, soporte del SDK de Visual Studio"
+title: Compatibilidad con el SDK de Visual Studio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio SDK, support options
+- support, Visual Studio SDK
+- Help, Visual Studio SDK
+- newsgroups, Visual Studio SDK support
+- Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 595e8cec9f90e44c4260ade6c9654483513c310a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Compatibilidad con el SDK de Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Existen varias opciones de soporte para clientes que tienen preguntas sobre cómo ampliar el entorno de desarrollo integrado \(IDE\) de Visual Studio.  
+# <a name="support-for-the-visual-studio-sdk"></a>Compatibilidad con el SDK de Visual Studio
+Existen varias opciones de soporte técnico para los clientes que tienen preguntas sobre cómo extender el entorno de desarrollo integrado (IDE) de Visual Studio.  
   
-## Soporte técnico gratuito  
+## <a name="free-support"></a>Soporte técnico gratuito  
   
-### Centro de desarrollo de MSDN  
- El [Centro de desarrolladores de extensibilidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) en MSDN contiene recursos que le ayudan a responder a preguntas sobre cómo extender Visual Studio. Por ejemplo, hay varios vínculos a blogs de desarrolladores VSIP.  
+### <a name="msdn-development-center"></a>Centro de desarrollo de MSDN  
+ El [centro de desarrollo de extensibilidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) en MSDN contiene recursos que ayudan a responder a preguntas sobre cómo extender Visual Studio. Por ejemplo, hay varios vínculos a blogs de desarrolladores VSIP.  
   
-### Grupos de noticias de Microsoft  
+### <a name="microsoft-newsgroups"></a>Grupos de noticias de Microsoft  
  Los miembros del equipo de desarrollo de Visual Studio y otros desarrolladores que desean extender Visual Studio a menudo participan en el grupo de noticias microsoft.public.vstudio.extensibility. Este grupo de noticias es un grupo de noticias administrado. Si es suscriptor de MSDN Universal, asegúrese de que registra un alias de correo no deseado para que sea posible para que Microsoft pueda responder.  
   
-### Foros de MSDN  
- El [foros de MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) proporcionan otra forma para charlar con colegas y expertos. La interfaz gráfica de usuario \(UI\) de los foros está diseñada para que resulten fáciles de usar que los grupos de noticias. El [foro de extensibilidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) es un buen lugar para empezar a buscar respuestas a preguntas de extensibilidad. Buscar siempre antes de hacer una pregunta de alguien que ya ha solicitado la misma pregunta.  
+### <a name="msdn-forums"></a>Foros de MSDN  
+ El [foros de MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) proporcionan otra forma de chat con colegas y expertos. La interfaz gráfica de usuario (UI) de los foros está diseñada para que sean fáciles de usar que los grupos de noticias. El [foro de extensibilidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) es un buen lugar para empezar a buscar respuestas a preguntas de extensibilidad. Buscar siempre antes de hacer una pregunta porque alguien que ya ha realizado la misma pregunta.  
   
-### Galería de Visual Studio  
- El [Galería de Visual Studio](http://visualstudiogallery.msdn.microsoft.com/) es el lugar para las extensiones y código de ejemplo. Puede encontrar herramientas que mejoran la productividad y el usuario experimentan con aplicaciones de ejemplo que muestran cómo utilizar VSPackages y Managed Extensibility Framework \(MEF\) y otros tipos de ejemplos de Visual Studio.  
+### <a name="visual-studio-gallery"></a>Galería de Visual Studio  
+ El [Galería de Visual Studio](http://visualstudiogallery.msdn.microsoft.com/) es el lugar para el código de ejemplo y extensiones. Puede encontrar herramientas que mejoran la productividad y el usuario experimentan con aplicaciones de ejemplo que muestran cómo usar VSPackages y Managed Extensibility Framework (MEF) y otros tipos de ejemplos de Visual Studio.  
   
-### CodePlex  
- [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) es el sitio de Web de alojamiento de proyectos de código abierto de Microsoft. Puede usar CodePlex para crear y compartir proyectos nuevos, contribuyen a proyectos existentes, o usar las aplicaciones en el sitio y proporcionar comentarios. Todos los PowerToys \(y su documentación\) que se incluían en versiones anteriores de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] están ahora disponibles en CodePlex.  
+### <a name="visual-studio-sdk-samples"></a>Ejemplos de SDK de Visual Studio
+
+Puede encontrar ejemplos de código abierto de extensiones del SDK de VS en GitHub en [ejemplos de Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Este repositorio de GitHub contiene ejemplos que muestran diversas características extensibles en Visual Studio.
+
+## <a name="included-support"></a>Incluye soporte técnico  
   
-## Incluye soporte  
+### <a name="visual-studio-product-support"></a>Compatibilidad de productos de Visual Studio  
+ Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.  
   
-### Servicios de soporte técnico de Visual Studio  
- Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad con Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.  
-  
-### Soporte de suscripción a MSDN  
+### <a name="msdn-subscription-support"></a>Compatibilidad con suscripciones de MSDN  
  Paquetes de suscripción de MSDN también pueden incluir cierta compatibilidad. Para obtener más información, consulte [soporte técnico para suscriptores MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
   
-## Soporte de pago  
+## <a name="paid-support"></a>Soporte técnico de pago  
   
-### Soporte de herramientas para desarrolladores  
- También se puede adquirir soporte técnico. Una variedad de ofertas de soporte están disponibles bajo la categoría Herramientas de desarrollo en [Microsoft Help and Support Centers](http://go.microsoft.com/fwlink/?LinkID=82383).  
+### <a name="developer-tools-support"></a>Compatibilidad con las herramientas para desarrolladores  
+ También se puede adquirir el soporte técnico. Hay disponibles bajo la categoría de herramientas de desarrollo en una variedad de ofertas de soporte técnico [Microsoft Help and Support Centers](http://go.microsoft.com/fwlink/?LinkID=82383).  
   
- Los clientes que deseen usar el [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desarrollar paquetes complejos puede considerar adquirir un contrato de soporte técnico Premier con Microsoft. Para obtener más información, consulte [Microsoft Premier Support](http://go.microsoft.com/fwlink/?LinkID=76660). Para las pequeñas empresas, [ventaja de Partner Support](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) puede ser una alternativa atractiva a una oferta de soporte Premier tradicional.  
+ Los clientes que deseen utilizar el [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desarrollar paquetes complejos puede considerar la posibilidad de adquirir un contrato de soporte técnico Premier con Microsoft. Para obtener más información, consulte [soporte técnico Premier de Microsoft](http://go.microsoft.com/fwlink/?LinkID=76660). Para las pequeñas empresas, [soporte técnico de ventaja de Partner](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) puede ser una alternativa atractiva a una oferta de soporte Premier tradicional.  
   
 > [!NOTE]
->  No se puede usar el soporte estándar de consulta o para obtener consejos.  
+>  Soporte técnico estándar no se puede usar para la consulta o para obtener consejos.  
   
- Se pueden enviar preguntas acerca de las ofertas Premier Support junto con el programa VSIP a [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Preguntas sobre el nuevo programa de ventajas para socios se pueden enviar a [advantg@microsoft.com](mailto:advantg@microsoft.com).  
+ Se pueden enviar preguntas sobre las ofertas de soporte técnico Premier junto con el programa VSIP a [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Preguntas sobre el nuevo programa de ventajas para socios se pueden enviar a [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
   
  Puede encontrar información acerca de las solicitudes de soporte técnico individual en [solicitudes individuales admiten](http://go.microsoft.com/fwlink/?LinkID=82385).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Hable con nosotros](../ide/talk-to-us.md)

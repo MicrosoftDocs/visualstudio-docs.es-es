@@ -1,41 +1,42 @@
 ---
-title: "Extensi&#243;n de otras partes de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "interfaces de usuario"
+title: Extender otras partes de Visual Studio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: user interfaces
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9a8617c4d6c5ac4a224a97f6a6311a5526151599
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Extensi&#243;n de otras partes de Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Hay muchos más elementos de la IU de Visual Studio que se pueden ampliar. Aquí le mostramos algunas.  
+# <a name="extending-other-parts-of-visual-studio"></a>Extender otras partes de Visual Studio
+Hay muchos más elementos de la IU de Visual Studio que se pueden ampliar. Aquí le mostramos algunos.  
   
-## Creación de un paquete VSPackage  
- Los bloques de creación básicos de extensibilidad de Visual Studio son VSPackages.  Obtenga información acerca de cómo agregar un paquete VSPackage: [Crear una extensión con un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+## <a name="creating-a-vspackage"></a>Crear un VSPackage  
+ Los bloques de creación básicos de extensibilidad de Visual Studio son paquetes VSPackage.  Obtenga información acerca de cómo agregar un paquete VSPackage: [crear una extensión con un paquete VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
-## Extensión del Cuadro de herramientas  
+## <a name="extending-the-toolbox"></a>Extensión del Cuadro de herramientas  
  Obtenga información acerca de cómo agregar nuevos controles y otros elementos al cuadro de herramientas y cómo usar la funcionalidad del cuadro de herramientas:  
   
--   [Crear un Control de cuadro de herramientas WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
+-   [Creación de un control de cuadro de herramientas de WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
   
--   [Crear un Control de cuadro de herramientas de Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
+-   [Creación de un control de cuadro de herramientas de Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
-## Ampliación de la barra de estado  
- Obtenga información acerca de cómo leer y escribir en la barra de estado y la barra de progreso y cómo proporcionar animaciones y otras interfaces de usuario: [Ampliación de la barra de estado](../extensibility/extending-the-status-bar.md).  
+## <a name="extending-the-status-bar"></a>Extender la barra de estado  
+ Obtenga información acerca de cómo leer y escribir en la barra de estado y la barra de progreso y cómo proporcionar las animaciones y otra interfaz de usuario: [extender la barra de estado](../extensibility/extending-the-status-bar.md).  
   
-## Crear páginas de inicio personalizado  
- Aprenda a crear su propia página de inicio, desde cero o de un ejemplo de página de inicio descargable: [Crear una página principal personalizada](../extensibility/creating-a-custom-start-page.md).  
+## <a name="creating-custom-start-pages"></a>Crear páginas de inicio personalizada  
+ Obtenga información acerca de cómo crear su propia página de inicio, desde el principio o de un ejemplo de página de inicio que se pueden descargar: [crear una página de inicio personalizada](../extensibility/creating-a-custom-start-page.md).  
   
-## Escribir en el registro de actividad  
- Aprenda a escribir en el registro de actividad: [Cómo: utilizar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).
+## <a name="write-to-the-activity-log"></a>Escribir en el registro de actividad  
+ Obtenga información acerca de cómo escribir en el registro de actividad: [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).

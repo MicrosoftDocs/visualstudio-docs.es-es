@@ -1,25 +1,29 @@
 ---
-title: "IActiveScriptProfilerCallback::ScriptCompiled | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProfilerCallback::ScriptCompiled | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProfilerCallback.ScriptCompiled
 apilocation: scrobj.dll
 ms.assetid: 1bb8e9be-cbb1-4a61-b36c-805127a56ac7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ea1823087b323f2acc9b87edfce48bbe9f924bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerCallback::ScriptCompiled
-Notifica al objeto generador de perfiles que el motor de script compiló un script.  Se llama a este método para cada script se compile que.  
+# <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
+Notifica al generador de perfiles un objeto que el scripting del motor compilado una secuencia de comandos. Se llama a este método para cada secuencia de comandos que se compila.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT ScriptCompiled(  
@@ -28,21 +32,21 @@ HRESULT ScriptCompiled(
     [in] IUnknown *pIDebugDocumentContext);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `scriptId`  
- \[in\] identificador único del script que se compiló.  Este id. es asignado por el motor de script.  
+ [in] El identificador único de la secuencia de comandos que se compiló. Este identificador está asignado por el motor de scripting.  
   
  `type`  
- \[in\] tipo del script que se compiló.  Los valores se definen en [PROFILER\_SCRIPT\_TYPE \(Enumeración\)](../../winscript/reference/profiler-script-type-enumeration.md).  
+ [in] El tipo de la secuencia de comandos que se compiló. Los valores se definen en [PROFILER_SCRIPT_TYPE (enumeración)](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- \[in\] si está disponible, un puntero a una interfaz de `IUnknown` que el generador de perfiles debe consultar un puntero de [IDebugDocumentContext \(Interfaz\)](../../winscript/reference/idebugdocumentcontext-interface.md) .  Si no, esto será null.  
+ [in] Si está disponible, un puntero a un `IUnknown` interfaz que el generador de perfiles debe consultar un [IDebugDocumentContext (interfaz)](../../winscript/reference/idebugdocumentcontext-interface.md) puntero. En caso contrario, éste será null.  
   
-## Valor devuelto  
- El valor devuelto de este método es omitido por el motor de script.  
+## <a name="return-value"></a>Valor devuelto  
+ Se omite el valor devuelto de este método por el motor de scripting.  
   
-## Comentarios  
- El motor de script puede proporcionar el contexto del documento sólo si es compatible con el host.  
+## <a name="remarks"></a>Comentarios  
+ El motor de scripting puede proporcionar el contexto del documento sólo si esto es compatible con el host.  
   
-## Vea también  
- [IActiveScriptProfilerCallback \(Interfaz\)](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IActiveScriptProfilerCallback (Interfaz)](../../winscript/reference/iactivescriptprofilercallback-interface.md)

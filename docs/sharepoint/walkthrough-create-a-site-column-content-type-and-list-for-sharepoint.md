@@ -1,37 +1,39 @@
 ---
-title: "Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.ListDesigner.GeneralMessageHelp"
-  - "Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping"
-  - "VS.SharePointTools.ListDesigner.SortingGrouping"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, tipos de contenido"
-  - "desarrollo de SharePoint en Visual Studio, campos"
-  - "desarrollo de SharePoint en Visual Studio, definiciones de lista"
-  - "desarrollo de SharePoint en Visual Studio, instancias de lista"
+title: 'Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint | Documentos de Microsoft'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.ListDesigner.GeneralMessageHelp
+- Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
+- VS.SharePointTools.ListDesigner.SortingGrouping
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, list definitions
+- SharePoint development in Visual Studio, list instances
+- SharePoint development in Visual Studio, fields
+- SharePoint development in Visual Studio, content types
 ms.assetid: caebacc2-616c-4373-8e21-edc7979338e7
-caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint
-  Los procedimientos siguientes muestran cómo crear el sitio de SharePoint personalizado columna\- o *campo\- como*así como tipo de contenido que usa las columnas de sitio.  También muestra cómo crear una lista que utilice el nuevo tipo de contenido.  
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint
+  Los procedimientos siguientes muestran cómo crear columnas personalizadas de sitio de SharePoint, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que utiliza el nuevo tipo de contenido.  
   
  En este tutorial se incluyen las tareas siguientes:  
   
@@ -39,49 +41,49 @@ caps.handback.revision: 53
   
 -   [Crear un tipo de contenido personalizado](#BKMK_CreateCustContType).  
   
--   [Crear una lista](#BKMK_CreateList).  
+-   [Crear una lista de](#BKMK_CreateList).  
   
--   [Crear una lista](#BKMK_CreateList).  
+-   [Crear una lista de](#BKMK_CreateList).  
   
 -   [Probar la aplicación](#BKMK_TestApp).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Requisitos previos  
+## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
   
--   Ediciones compatibles de Windows y SharePoint.  Para obtener más información, vea [Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Ediciones compatibles de Windows y SharePoint. Para obtener más información, consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a> Crear columnas de sitio personalizadas  
- Este ejemplo crea una lista para administrar pacientes en un hospital.  Primero, debe crear un proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y agregar columnas de sitio a, como sigue.  
+##  <a name="BKMK_CreatingCustSiteCols"></a>Crear columnas de sitio personalizadas  
+ Este ejemplo crea una lista para la administración de pacientes en el hospital. En primer lugar, debe crear un proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y agregue columnas de sitio, como se indica a continuación.  
   
-#### Para crear el proyecto  
+#### <a name="to-create-the-project"></a>Para crear el proyecto  
   
-1.  En el menú de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**archivo** , elija **new**, **Project**.  
+1.  En el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **archivo** menú, elija **New**, **proyecto**.  
   
-2.  En el cuadro de diálogo de **Nuevo proyecto** , en **Visual C\#** o **Visual Basic**, expanda el nodo de **sharepoint** y, a continuación **2010**.  
+2.  En el **nuevo proyecto** cuadro de diálogo, bajo **Visual C#** o **Visual Basic**, expanda la **SharePoint** nodo y, a continuación, elija **2010**.  
   
-3.  En el panel de **Plantillas** , elija **SharePoint 2010 Project**, cambie el nombre del proyecto a la sesión, y después elija el botón de **Aceptar** .  
+3.  En el **plantillas** panel, elija **proyecto de SharePoint 2010**, cambie el nombre del proyecto para **Clinic**y, a continuación, elija la **Aceptar** botón.  
   
-     La plantilla de proyecto de SharePoint 2010 es un proyecto vacío que se utiliza en este ejemplo para contener columnas de sitio y otros elementos que se agregan más adelante.  
+     La plantilla de proyecto de SharePoint 2010 es un proyecto vacío que se utiliza en este ejemplo para que contenga columnas de sitio y otros elementos de proyecto que se agreguen más tarde.  
   
-4.  En la página de **Especifique el sitio y el nivel de seguridad de la depuración** , escriba la dirección URL del sitio de SharePoint local al que desea agregar el nuevo elemento de campo personalizado, o utilice la ubicación predeterminada \(`http://<`*SystemName*`>/)`.  
+4.  En el **especificar el nivel de sitio y la seguridad para la depuración** página, escriba la dirección URL para el sitio de SharePoint local a la que desea agregar el nuevo elemento de campo personalizado o utilice la ubicación predeterminada (`http://<`*SystemName* `>/)`.  
   
-5.  En la sección **¿Cuál es el nivel de confianza de esta solución de SharePoint?**, use el valor predeterminado **Implementar como solución en espacio aislado**.  
+5.  En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, utilice el valor predeterminado **implementar como una solución en espacio aislado**.  
   
-     Para obtener más información sobre las soluciones de espacio aislado y granja de servidores, vea [Consideraciones sobre las soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
+     Para obtener más información acerca de espacio aislado y soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
   
-6.  Elija el botón **Finalizar**.  El proyecto debe ahora aparecen en **Explorador de soluciones**.  
+6.  Elija la **finalizar** botón. El proyecto debe aparecer ahora en **el Explorador de soluciones**.  
   
-#### Para agregar columnas de sitio  
+#### <a name="to-add-site-columns"></a>Para agregar columnas de sitio  
   
-1.  Agregue una nueva columna de sitio.  Para ello, en **Explorador de soluciones**, abra el menú contextual para **Sesión**y, a continuación **Add**, **Nuevo elemento**.  
+1.  Agregar una nueva columna de sitio. Para ello, en **el Explorador de soluciones**, abra el menú contextual para **Clinic**y, a continuación, elija **agregar**, **nuevo elemento**.  
   
-2.  En el cuadro de diálogo de **Agregar nuevo elemento** , elija **Columna de sitio**, cambie el nombre por nombre de Patient, y elija el botón de **Add** .  
+2.  En el **Agregar nuevo elemento** diálogo cuadro, elija **columna de sitio**, cambie el nombre a **Patient Name**y, a continuación, elija la **agregar** botón.  
   
-3.  En el archivo Elements.xml de la columna de sitio, deje **Tipo** que establece como **Texto**, y cambie **Agrupar** a las columnas del sitio de la sesión.  Cuando termina, el archivo Elements.xml de la columna de sitio debe tener el aspecto siguiente.  
+3.  En el archivo Elements.xml de la columna de sitio, deje el **tipo** establecer como **texto**y cambie el **grupo** si se establece en **columnas de sitio Clinic**. Cuando haya finalizado, archivo Elements.xml de la columna de sitio debe ser similar al ejemplo siguiente.  
   
     ```  
     <Field  
@@ -94,141 +96,141 @@ caps.handback.revision: 53
     </Field>  
     ```  
   
-4.  Utilizando el mismo procedimiento, agregue dos columnas más del sitio al proyecto: Identificador paciente \(tipo \= “entero”\) y Doctor Name \(tipo \= “text”\).  Establezca el valor de grupo a las columnas del sitio de la sesión.  
+4.  Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **ID de paciente** (tipo = "Integer") y **nombre médico** (tipo = "Text"). Establezca su valor de grupo en **columnas de sitio Clinic**.  
   
-##  <a name="BKMK_CreateCustContType"></a> Crear un tipo de contenido personalizado  
- A continuación, cree un contenido tipo\- basado en el contenido de los contactos tipo\- que incluye columnas de sitio que creó en el procedimiento anterior.  Basar un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para el uso en el nuevo tipo de contenido.  
+##  <a name="BKMK_CreateCustContType"></a>Crear un tipo de contenido personalizado  
+ A continuación, cree un tipo de contenido, en función del tipo de contenido de contactos, que incluye las columnas de sitio que creó en el procedimiento anterior. A partir de un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para su uso en el nuevo tipo de contenido.  
   
-#### Para crear un tipo de contenido personalizado  
+#### <a name="to-create-a-custom-content-type"></a>Para crear un tipo de contenido personalizado  
   
-1.  Agregue un tipo de contenido al proyecto.  Para ello, en **Explorador de soluciones**, elija el nodo del proyecto  
+1.  Agregar un tipo de contenido al proyecto. Para ello, en **el Explorador de soluciones**, elija el nodo de proyecto  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.  
+2.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-3.  En **Visual C\#** o **Visual Basic**, expanda el nodo de **sharepoint** y, a continuación el nodo de **2010** .  
+3.  Bajo **Visual C#** o **Visual Basic**, expanda la **SharePoint** nodo y, a continuación, elija la **2010** nodo.  
   
-4.  En el panel de **Plantillas** , elija la plantilla de **Tipo de contenido** , cambie el nombre a la información de Patient, y elija el botón de **Add** .  
+4.  En el **plantillas** panel, elija la **tipo de contenido** plantilla, cambie el nombre a **Info de paciente**y, a continuación, elija la **agregar** botón.  
   
-     **Asistente para la personalización de SharePoint** Abra.  
+     El **Asistente para personalización de SharePoint** se abre.  
   
-5.  En la lista de **El tipo de contenido base este tipo de contenido heredar** , elija **Contacto** como el tipo de contenido en el que basar el nuevo tipo de contenido, y elegir el botón de **Finalizar** .  
+5.  En el **qué tipo de contenido base debe heredarse de este tipo de contenido de** elija **póngase en contacto con** como el tipo de contenido en el que desea basar el nuevo tipo de contenido y, a continuación, elija la **finalizar**botón.  
   
-     Esto le da acceso a otras columnas potencialmente útiles del sitio en el tipo de contenido del contacto, además de las columnas de sitio que definió anteriormente.  
+     Esto le da acceso a otras columnas de sitio posiblemente útil en el tipo de contenido de contacto, además de las columnas de sitio que definió anteriormente.  
   
-6.  Después de que el diseñador del tipo de contenido aparezca, en la pestaña de **Columnas** , agregue las tres columnas de sitio que definió anteriormente: **Nombre paciente**, **Identificador paciente**, y **Doctor Name**.  Para agregar estas columnas, elija el primer cuadro de lista de columnas de sitio enumeradas bajo **Mostrar nombre**, y después elija en cada columna de sitio en la lista de uno en uno.  
+6.  El tipo de contenido aparezca el diseñador, en la **columnas** ficha, agregue los tres columnas que ha definido anteriormente del sitio: **Patient Name**, **ID de paciente**y **Nombre médico**. Para agregar estas columnas, elija el primer cuadro de lista en la lista de columnas de sitio en **nombre para mostrar**y, a continuación, elija las columnas de sitio en la lista de uno a la vez.  
   
     > [!TIP]  
-    >  Elegir las columnas de sitio más rápidamente, filtrar la lista escribiendo las primeras letras del nombre de la columna.  
+    >  Para elegir las columnas de sitio más rápidamente, filtrar la lista, escriba las primeras letras del nombre de la columna.  
   
-7.  Además de las tres columnas personalizadas de sitio, agregue la columna de sitio **COMENTARIOS** de la lista de columnas de sitio.  
+7.  Además de las tres columnas de sitio personalizado, agregue el **comentarios** columna de sitio en la lista de columnas de sitio.  
   
-8.  Active la casilla de **Requerido** para que las columnas de sitio de **Nombre paciente** y de **Identificador paciente** se crean campos obligatorios.  
+8.  Seleccione el **requiere** casilla de verificación de la **Patient Name** y **ID de paciente** campos de columnas de sitio para que sean necesarios.  
   
-9. En la pestaña de **Tipo de contenido** , asegúrese de que el tipo de contenido es **Información paciente**, y después cambie la descripción a la tarjeta de información de Patient.  
+9. En el **Content Type** ficha, asegúrese de que el nombre de tipo de contenido es **Info de paciente**y, a continuación, cambie la descripción a **tarjeta de información de los pacientes**.  
   
-10. Cambie **Nombre de grupo** a los tipos de contenido de la sesión, y deje los otros valores en sus valores predeterminados.  
+10. Cambio **nombre del grupo de** a **tipos de contenido de la clínica**y deje los otros valores en sus valores predeterminados.  
   
-11. En la barra de menú, elija **archivo**, **guardar todo**, y luego cierre el diseñador del tipo de contenido.  
+11. En la barra de menús, elija **archivo**, **guardar todo**y, a continuación, cierre el Diseñador de tipo de contenido.  
   
-##  <a name="BKMK_CreateList"></a> Crear una lista  
- Ahora, cree una lista que utilice las nuevas columnas de tipo de contenido y de sitio.  
+##  <a name="BKMK_CreateList"></a>Creación de una lista  
+ Ahora, cree una lista que usa las nuevas columnas de sitio y el tipo de contenido.  
   
-#### Para crear una lista  
+#### <a name="to-create-a-list"></a>Para crear una lista  
   
-1.  Agregue una lista al proyecto.  Para ello, en **Explorador de soluciones**, elija el nodo del proyecto.  
+1.  Agregar una lista al proyecto. Para ello, en **el Explorador de soluciones**, elija el nodo del proyecto.  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.  
+2.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-3.  En **Visual C\#** o **Visual Basic**, expanda el nodo de **sharepoint** y, a continuación el nodo de **2010** .  
+3.  Bajo **Visual C#** o **Visual Basic**, expanda la **SharePoint** nodo y, a continuación, elija la **2010** nodo.  
   
-4.  En el panel de **Plantillas** , elija la plantilla de **list** , cambie el nombre a Patients, y elija el botón de **Add** .  
+4.  En el **plantillas** panel, elija la **lista** plantilla, cambie el nombre a **pacientes**y, a continuación, elija la **agregar** botón.  
   
-5.  Deje **Personalizar la lista basada en** que establece como **Establezca como valor predeterminado \(en blanco\)**, y elija el botón de **Finalizar** .  
+5.  Deje el **personalizar la lista en función de** establecer como **predeterminado (en blanco)**y, a continuación, elija la **finalizar** botón.  
   
-6.  En la lista Designer, elija el botón de **Tipos de contenido** para mostrar el cuadro de diálogo de **Configuración de tipo de contenido** .  
+6.  En el Diseñador de la lista, elija la **tipos de contenido** botón para mostrar el **configuración del tipo de contenido** cuadro de diálogo.  
   
-7.  Elija la nueva fila, elija el tipo de contenido de **Información paciente** en la lista de tipos de contenido, y elija el botón de **Aceptar** .  
+7.  Elija la nueva fila, elija la **Info de paciente** de contenido de tipo en la lista de tipos de contenido y, a continuación, elija la **Aceptar** botón.  
   
-     Esto agrega todas las columnas de sitio de tipo de contenido de **Información paciente** en la lista.  
+     Esto agrega todas las columnas de sitio desde la **Info de paciente** tipo en la lista de contenido.  
   
-8.  Elimine todas las columnas de sitio de la lista salvo el siguiente:  
+8.  Eliminar todas las columnas de sitio en la lista excepto los siguientes:  
   
-    -   Identificador paciente  
+    -   Id. de pacientes  
   
-    -   Nombre paciente  
+    -   Nombre del paciente  
   
-    -   Teléfono doméstico  
+    -   Teléfono particular  
   
     -   Correo electrónico  
   
-    -   Doctor Name  
+    -   Nombre médico  
   
     -   Comentarios  
   
-9. En **Nombre para mostrar de la columna**, elija una fila vacía, agregue una columna de la lista personalizada, y denomínela Hospital.  Deje su tipo de datos como **Una sola línea de texto**.  
+9. En **nombre para mostrar columna**, elija una fila vacía, agregar una columna de la lista personalizada y asígnele el nombre **Hospital**. Deje el tipo de datos como **única línea de texto**.  
   
-     La columna de la lista personalizada solo se aplica a esta lista.  Cuando se agrega una personalizada muestra la columna en una lista, un nuevo tipo de contenido de la lista, incluidas todas las columnas agregadas en la lista, se crea y se establece como predeterminados de la lista.  
+     La columna de la lista personalizada sólo se aplica a esta lista. Cuando se agrega una columna de la lista personalizada a una lista, se crea un nuevo tipo de contenido de lista, que incluye todas las columnas que se agregan a la lista y se establece como la lista predeterminada.  
   
     > [!TIP]  
-    >  Si elige una columna de la lista de columnas de sitio, se usa una columna existente del sitio.  Sin embargo, si escribe un valor de nombre de columna sin elegir ninguna columna en la lista, se crea una columna de la lista personalizada, aunque una columna con el mismo nombre ya existe en la lista.  
+    >  Si elige una columna de la lista de columnas de sitio, se utiliza una columna de sitio existente. Sin embargo, si escribe un valor de nombre de columna sin elegir las columnas en la lista, se crea una columna de la lista personalizada, incluso si ya existe una columna con el mismo nombre en la lista.  
   
-     Opcionalmente, en lugar de establecer el tipo de datos para custom muestra la columna a **Una sola línea de texto**, podría en lugar de establecer el tipo de datos de esta columna para buscar, y los valores se recuperan de una tabla u otra lista.  Para obtener información sobre columnas de búsqueda, vea [Lista Relaciones de SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) y [Búsquedas y Relaciones enumerado](http://go.microsoft.com/fwlink/?LinkID=224995).  
+     Si lo desea, en lugar de establecer el tipo de datos de la columna de la lista personalizada para **única línea de texto**, en su lugar podría establecer el tipo de datos para esta columna a la búsqueda y sus valores se pueden recuperar desde una tabla u otra lista. Para obtener información acerca de las columnas de búsqueda, vea [relaciones de lista en SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) y [búsquedas y las relaciones de lista](http://go.microsoft.com/fwlink/?LinkID=224995).  
   
-10. Junto a los cuadros de **Identificador paciente** y de **Nombre paciente** , active la casilla de **Requerido** .  
+10. Junto a la **ID de paciente** y **Patient Name** cuadros, seleccionados la **necesario** casilla de verificación.  
   
-11. En la pestaña de **Vistas** , elija una fila vacía para crear una vista.  Escriba los detalles pacientes.  
+11. En el **vistas** ficha, elija una fila vacía para crear una vista. Escriba **los detalles del paciente**.  
   
-     En la pestaña de **Vistas** , puede especificar las columnas que desea que aparezca en la lista de SharePoint.  
+     En el **vistas** ficha, puede especificar las columnas que desea que aparezca en la lista de SharePoint.  
   
-12. Elija la nueva fila de **Detalles pacientes** , y elija el botón de **Predeterminado** .  
+12. Elija la nueva **detalles del paciente** fila y, a continuación, elija la **Predeterminar** botón.  
   
      La nueva vista ahora es la vista predeterminada de la lista.  
   
-13. Agregue las columnas siguientes a la lista de **Columnas seleccionadas** en el orden siguiente:  
+13. Agregue las columnas siguientes a la **columnas seleccionadas** lista en el orden siguiente:  
   
-    -   Identificador paciente  
+    -   Id. de pacientes  
   
-    -   Nombre paciente  
+    -   Nombre del paciente  
   
-    -   Teléfono doméstico  
+    -   Teléfono particular  
   
     -   Correo electrónico  
   
-    -   Doctor Name  
+    -   Nombre médico  
   
     -   Hospital  
   
     -   Comentarios  
   
-14. En la lista de **Propiedades** , elija la propiedad de **Ordenar y agrupar** , y elija los puntos suspensivos ![Icono Puntos suspensivos](~/sharepoint/media/ellipsisicon.gif "Icono Puntos suspensivos") para mostrar el cuadro de diálogo de **Ordenar y agrupar** .  
+14. En el **propiedades** lista, elija la **ordenar y agrupar** propiedad y, a continuación, elija el botón de puntos suspensivos ![icono puntos suspensivos](../sharepoint/media/ellipsisicon.gif "el icono de puntos suspensivos")para mostrar la **ordenar y agrupar** cuadro de diálogo.  
   
-15. En la lista de **Nombre de columna** , elija **Nombre paciente**, asegúrese de que la columna de **Ordenar** está establecida en **Ascendente**, y después elija el botón de **Aceptar** .  
+15. En el **nombre de la columna** elija **Patient Name**, asegúrese de que el **ordenar** columna se establece en **ascendente**y, a continuación, elija la  **Aceptar** botón.  
   
-##  <a name="BKMK_TestApp"></a> Probar la aplicación  
- Ahora que las columnas, el tipo de contenido, y la lista personalizados de sitio están listos, implementelas en SharePoint, y ejecute la aplicación para probarlo.  
+##  <a name="BKMK_TestApp"></a>Probar la aplicación  
+ Ahora que las columnas de sitio personalizadas, el tipo de contenido y la lista están listos, implementarlas en SharePoint y ejecutar la aplicación para probarla.  
   
-#### Para probar la aplicación  
+#### <a name="to-test-the-application"></a>Para probar la aplicación  
   
-1.  En la barra de menús, elija **Archivo**, **Guardar todo**.  
+1.  En la barra de menús, pulse **Archivo**, **Guardar todo**.  
   
-2.  Elija la tecla F5 para ejecutar la aplicación.  
+2.  Presione la tecla F5 para ejecutar la aplicación.  
   
-     Se compila la aplicación, y después sus características se implementan en SharePoint y se generan.  
+     Se compila la aplicación y, a continuación, se implementan en SharePoint y activar sus características.  
   
-3.  En la barra de navegación rápida, elija el vínculo de **Pacientes** para mostrar la lista de **Pacientes** .  
+3.  En la barra de navegación rápida, elija la **pacientes** vínculo para mostrar la **pacientes** lista.  
   
-     Los nombres de columna en la lista deben coincidir con los que escribió en la pestaña de **Vistas** en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     Los nombres de columna en la lista deben coincidir con la que ha especificado en el **vistas** ficha [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-4.  Elija el vínculo de **Agregar nuevo elemento** para crear una tarjeta de información paciente.  
+4.  Elija la **Agregar nuevo elemento** vínculo para crear una tarjeta de información de los pacientes.  
   
-5.  Escriba información en los campos, y elija el botón de **Guardar** .  
+5.  Escriba información en los campos y, a continuación, elija la **guardar** botón.  
   
      El nuevo registro aparece en la lista.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear listas, tipos de contenido y columnas de sitio para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)   
- [Cómo: Cree un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
+ [Cómo: crear un tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Tipos de contenido](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Columnas](http://go.microsoft.com/fwlink/?LinkId=192081)  
   

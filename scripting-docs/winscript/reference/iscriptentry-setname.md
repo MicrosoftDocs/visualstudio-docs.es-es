@@ -1,27 +1,30 @@
 ---
-title: "IScriptEntry::SetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptEntry::SetName | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptEntry.SetName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptEntry::SetName"
+helpviewer_keywords: IScriptEntry::SetName
 ms.assetid: dfa33450-87d7-4c8e-bfd8-0cc2d6542a0e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 43e167ce48c208b6f552984fe2db9ec9d48c72eb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptEntry::SetName
-Para las entradas que representan un objeto único \(como una función\), establece el nombre del objeto.  
+# <a name="iscriptentrysetname"></a>IScriptEntry::SetName
+Para las entradas que representan un único objeto (por ejemplo, una función), Establece el nombre del objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SetName(  
@@ -29,19 +32,19 @@ HRESULT SetName(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `psz`  
- \[in\] nuevo nombre del objeto de `IScriptEntry` .  
+ [in] El nuevo nombre de la `IScriptEntry` objeto.  
   
-## Valor devuelto  
- Interfaz `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Vea también  
- [IScriptEntry \(Interfaz\)](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IScriptEntry (interfaz)](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

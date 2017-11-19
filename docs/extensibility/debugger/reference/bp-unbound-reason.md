@@ -1,72 +1,72 @@
 ---
-title: "BP_UNBOUND_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_UNBOUND_REASON"
-helpviewer_keywords: 
-  - "Enumeración BP_UNBOUND_REASON"
+title: BP_UNBOUND_REASON | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_UNBOUND_REASON
+helpviewer_keywords: BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfa3ab5ee6d38da45bd69cf4a9e49a86035d1252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# BP_UNBOUND_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Proporciona la razón que un punto de interrupción era independiente.  
+# <a name="bpunboundreason"></a>BP_UNBOUND_REASON
+Proporciona la razón de que un punto de interrupción se sin enlazar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
+```cpp  
+enum enum_BP_UNBOUND_REASON {   
+   BPUR_UNKNOWN           = 0x0000,  
+   BPUR_CODE_UNLOADED     = 0x0002,  
+   BPUR_BREAKPOINT_REBIND = 0x0003,  
+   BPUR_BREAKPOINT_ERROR  = 0x0004  
 };  
 typedef DWORD BP_UNBOUND_REASON;  
 ```  
   
-```c#  
-public enum enum_BP_UNBOUND_REASON {   
-   BPUR_UNKNOWN           = 0x0000,  
-   BPUR_CODE_UNLOADED     = 0x0002,  
-   BPUR_BREAKPOINT_REBIND = 0x0003,  
-   BPUR_BREAKPOINT_ERROR  = 0x0004  
+```csharp  
+public enum enum_BP_UNBOUND_REASON {   
+   BPUR_UNKNOWN           = 0x0000,  
+   BPUR_CODE_UNLOADED     = 0x0002,  
+   BPUR_BREAKPOINT_REBIND = 0x0003,  
+   BPUR_BREAKPOINT_ERROR  = 0x0004  
 };  
 ```  
   
-## Members  
- BPUR\_UNKNOWN  
- la razón es desconocida.  
+## <a name="members"></a>Miembros  
+ BPUR_UNKNOWN  
+ La razón es desconocida.  
   
- BPUR\_CODE\_UNLOADED  
- se ha descargado el código que contiene el punto de interrupción.  
+ BPUR_CODE_UNLOADED  
+ El código que contiene el punto de interrupción se ha descargado.  
   
- BPUR\_BREAKPOINT\_REBIND  
- el punto de interrupción se ha reencuadernado a una ubicación diferente.  Esto puede ocurrir después de operaciones de editar y continuar cuando el punto de interrupción se mueve, o cuando el punto de interrupción se enlaza a un archivo con una ruta que ya no es válida.  
+ BPUR_BREAKPOINT_REBIND  
+ El punto de interrupción se han vuelto a enlazar a una ubicación diferente. Esto puede ocurrir después de editar y continuar con las operaciones cuando se mueve el punto de interrupción o cuando el punto de interrupción se enlaza a un archivo con una ruta de acceso que ya no es válido.  
   
- BPUR\_ BREAKPOINT\_ERROR  
- el punto de interrupción se determina para estar en error después de que se enlace.  Esto pasa a los puntos de interrupción administrados cuyas condiciones ya no son válidas.  
+ BPUR_ BREAKPOINT_ERROR  
+ El punto de interrupción se determina como error después de que está enlazado. Esto ocurre con los puntos de interrupción administrados cuyas condiciones ya no son válidos.  
   
-## Comentarios  
- Devuelto por el método de [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .  
+## <a name="remarks"></a>Comentarios  
+ Devuelve el [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

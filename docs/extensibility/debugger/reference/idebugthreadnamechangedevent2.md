@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugThreadNameChangedEvent2
-helpviewer_keywords:
-- IDebugThreadNameChangedEvent2
+f1_keywords: IDebugThreadNameChangedEvent2
+helpviewer_keywords: IDebugThreadNameChangedEvent2
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 5bb790dbc786f41a4eb09e1d6e0c3cf95cb79508
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ec6ca74403c4207f91245c25cb09cd828e2c41e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Esta interfaz se envía por el motor de depuración (Alemania) para el Administrador de sesión de depuración (SDM) cuando cambia el nombre de un subproceso en el programa que se está depurando.  

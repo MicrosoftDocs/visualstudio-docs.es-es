@@ -1,69 +1,70 @@
 ---
-title: "FeatureProperty Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "FeatureProperty element"
+title: FeatureProperty (elemento) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: FeatureProperty element
 ms.assetid: 36a771a6-98d0-4a40-a278-d76baea82452
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 97575a32aa3498787a5b81f1ade49c74e290854e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# FeatureProperty Element
-  Representa una propiedad personalizada que se incluye con una característica cuando se implementa en SharePoint.  Una vez implementada la característica, se puede obtener acceso a la propiedad en el código.  
+# <a name="featureproperty-element"></a>FeatureProperty (Elemento)
+  Representa una propiedad personalizada que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada la característica, puede tener acceso a la propiedad en el código.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <FeatureProperty Key = "Key of the property value"  
     Value = "Property value" />  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|**Key**|El atributo **xs:string** es obligatorio.<br /><br /> La clave que se utiliza para almacenar y recuperar el valor de propiedad.  Cada propiedad debe tener una clave que es única dentro de la Característica.|  
-|**Value**|El atributo **xs:string** es obligatorio.<br /><br /> Valor de propiedad.|  
+|---------------|-----------------|  
+|**Key**|Requiere **xs: String** atributo.<br /><br /> La clave que se utiliza para almacenar y recuperar el valor de propiedad. Cada propiedad debe tener una clave que es única dentro de la característica.|  
+|**Valor**|Requiere **xs: String** atributo.<br /><br /> Valor de propiedad.|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Representa una colección de valores de propiedad que se incluye con una característica cuando se implementa en SharePoint.|  
   
-## Comentarios  
- Para obtener más información sobre las propiedades de las características, vea [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Comentarios  
+ Para obtener más información sobre propiedades de características, vea [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

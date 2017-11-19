@@ -1,37 +1,38 @@
 ---
-title: "Formato, XML, Editor de texto, Cuadro de di&#225;logo Opciones | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Formato, XML, Editor de texto, cuadro de diálogo Opciones | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c6b6a0cbfc0a82bbc827b0a994426ef7e87ced91
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Formato, XML, Editor de texto, Cuadro de di&#225;logo Opciones
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este cuadro de diálogo permite especificar las opciones de formato del Editor XML.Puede tener acceso al cuadro de diálogo **Opciones** desde el menú **Herramientas**.  
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, Editor de texto, Cuadro de diálogo Opciones
+Este cuadro de diálogo permite especificar las opciones de formato del Editor XML. Puede tener acceso a la **opciones** cuadro de diálogo desde el **herramientas** menú.  
   
 > [!NOTE]
->  Estas opciones están disponibles cuando se selecciona la carpeta **Editor de texto**, la carpeta **XML** y, a continuación, la opción **Formato** del cuadro de diálogo **Opciones**.  
+>  Estas opciones están disponibles cuando se selecciona el **Editor de texto** carpeta, el **XML** carpeta y, a continuación, el **formato** opción desde el **opciones** cuadro de diálogo.  
   
-## Atributos  
+## <a name="attributes"></a>Atributos  
  **Preservar el formato manual de atributos**  
- No se vuelve a dar formato a los atributos.Este es el valor predeterminado.  
+ No se vuelve a dar formato a los atributos. Este es el valor predeterminado.  
   
 > [!NOTE]
 >  Si los atributos están en varias líneas, el editor aplica sangría a cada línea de atributos para que coincida con la sangría del elemento primario.  
   
- **Alinear cada atributo en su propia línea**  
- Alinea el segundo atributo y los posteriores en vertical para que coincidan con la sangría del primer atributo.La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos.  
+ **Alinear los atributos en su propia línea**  
+ Alinea el segundo atributo y los posteriores en vertical para que coincidan con la sangría del primer atributo. La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos.  
   
 ```  
 <item id = "123-A"  
@@ -40,18 +41,18 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 </item>  
 ```  
   
-## Formatear automáticamente  
+## <a name="auto-reformat"></a>Formatear automáticamente  
  **Al pegar desde el Portapapeles**  
  Vuelve a dar formato al texto XML pegado desde el portapapeles.  
   
- **Al terminar la etiqueta final**  
+ **En la realización de la etiqueta de cierre**  
  Vuelve a dar formato el elemento cuando se completa la etiqueta de cierre.  
   
-## Contenido mixto  
- **Conservar el contenido mixto de manera predeterminada**  
- Determina si el editor volverá a dar formato al contenido mixto.De forma predeterminada, el editor intenta volver a dar formato al contenido mixto, excepto cuando el contenido se halla en un ámbito `xml:space="preserve"`.  
+## <a name="mixed-content"></a>Contenido mixto  
+ **Conservar el contenido mixto de forma predeterminada**  
+ Determina si el editor volverá a dar formato al contenido mixto. De forma predeterminada, el editor intenta volver a dar formato al contenido mixto, excepto cuando el contenido se halla en un ámbito `xml:space="preserve"`.  
   
- Si un elemento contiene una mezcla de texto y marcado, se considera que el contenido es mixto.A continuación se muestra un ejemplo de un elemento con contenido mixto.  
+ Si un elemento contiene una mezcla de texto y marcado, se considera que el contenido es mixto. A continuación se muestra un ejemplo de un elemento con contenido mixto.  
   
 ```  
 <dir>c:\data\AlphaProject\  
@@ -60,6 +61,6 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 </dir>  
 ```  
   
-## Vea también  
- [Propiedades de documentos XML, Ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)   
+## <a name="see-also"></a>Vea también  
+ [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)   
  [Componentes del Editor XML](../xml-tools/xml-editor-components.md)

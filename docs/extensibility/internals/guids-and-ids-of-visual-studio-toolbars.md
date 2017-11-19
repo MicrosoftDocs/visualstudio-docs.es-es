@@ -1,141 +1,143 @@
 ---
-title: "GUID e identificadores de las barras de herramientas de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "grupos de Visual studio"
-  - "barras de herramientas"
-  - "barra de herramientas de Visual studio"
-  - "id"
-  - "grupo de toolgar"
-  - "ventana de herramientas"
-  - "GUID"
+title: GUID e identificadores de barras de herramientas de Visual Studio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- visual studio groups
+- toolbars
+- visual studio toolbar
+- id
+- toolgar group
+- tool window toolbar
+- guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# GUID e identificadores de las barras de herramientas de Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Este tema muestra el GUID y los valores de identificador de barras de herramientas que se incluyen en el entorno de desarrollo integrado de \(IDE\) Visual Studio, y grupos contienen.  Estos valores se definen en los archivos de .vsct que se instalan como parte del SDK de Visual Studio.  Para obtener más información, vea [Grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e identificadores de barras de herramientas de Visual Studio
+Este tema enumera los valores GUID y el ID de las barras de herramientas que se incluyen en el entorno de desarrollo integrado (IDE) de Visual Studio y de los grupos que contienen. Estos valores se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [IDE-Defined comandos, menús y grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
 > [!NOTE]
->  Muchas de las barras de herramientas disponibles en Visual Studio no son definidas por Visual Studio, y su GUID y valores de identificador no son públicos.  Este tema enumera solo las barras de herramientas que se definen en los archivos de Visual Studio SDK .vsct.  
+>  Muchas de las barras de herramientas disponibles para Visual Studio no están definidos en Visual Studio así como sus GUID y valores de identificador no son públicos. Este tema enumera sólo las barras de herramientas que se definen en archivos de vsct del SDK de Visual Studio.  
   
- Para obtener más información sobre cómo trabajar con objetos del IDE que se definen en archivos de .vsct, vea [Comandos y menús de extensión](../../extensibility/extending-menus-and-commands.md).  
+ Para obtener más información sobre cómo trabajar con objetos IDE que se definen en archivos de vsct, consulte [extender menús y comandos de](../../extensibility/extending-menus-and-commands.md).  
   
- Las barras de herramientas predeterminadas proporcionadas por el IDE de Visual Studio utilizan GUID `guidSHLMainMenu`, excepto si especificado de otra manera utilizando GUID: Sintaxis de identificador.  
+ Las barras de herramientas predeterminada proporcionadas por el IDE de Visual Studio usa el GUID `guidSHLMainMenu`, excepto cuando se especifique lo contrario, mediante la sintaxis de GUID: Id.  
   
-## Barras de herramientas del IDE  
- Las barras de herramientas siguientes se proporcionan en el IDE de Visual Studio.  Las barras de herramientas pueden mostrar seleccionándolos en el submenú de **barras de herramientas** de menú de **Herramientas** .  las barras de herramientas en ventanas de herramientas no se incluyen en esta sección.  
+## <a name="ide-toolbars"></a>Barras de herramientas IDE  
+ El IDE de Visual Studio proporciona las siguientes barras de herramientas. Barras de herramientas se pueden mostrar seleccionándolos en la **las barras de herramientas** submenú de la **herramientas** menú. Barras de herramientas en ventanas de herramientas no se incluyen en esta sección.  
   
- Sólo los grupos pueden descender directamente de las barras de herramientas.  Para agregar un grupo, establezca su elemento primario al GUID y el identificador de la barra de herramientas.  para agregar un botón a una barra de herramientas, establezca a su elemento primario a un grupo en la barra de herramientas.  
-  
-|Barra de herramientas|Id.|  
-|---------------------------|---------|  
-|Standard|IDM\_VS\_TOOL\_STANDARD|  
-|Compilar|IDM\_VS\_TOOL\_BUILD|  
-|Editor de texto|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Depuración|guidVSDebugGroup: IDM\_DEBUG\_TOOLBAR|  
-|Ubicación de depuración|guidVSDebugGroup: IDM\_DEBUG\_CONTEXT\_TOOLBAR|  
-  
-### barras de herramientas especiales  
- Estas barras de herramientas son definidas por el IDE de Visual Studio, pero proporcionan funciones especializadas y no los grupos de comando host.  
+ Solo los grupos pueden descender directamente desde las barras de herramientas. Para agregar un grupo, establezca a su elemento primario en el GUID y el Id. de la barra de herramientas. Para agregar un botón a una barra de herramientas, establecer a su elemento primario a un grupo en la barra de herramientas.  
   
 |Barra de herramientas|Id.|  
-|---------------------------|---------|  
-|agregue el comando|IDM\_VS\_TOOL\_ADDCOMMAND|  
-|No definido|IDM\_VS\_TOOL\_UNDEFINED|  
-|Esquema XML|IDM\_VS\_TOOL\_SCHEMA|  
-|Datos XML|IDM\_VS\_TOOL\_DATA|  
+|-------------|--------|  
+|Estándar|IDM_VS_TOOL_STANDARD|  
+|Compilar|IDM_VS_TOOL_BUILD|  
+|Editor de texto|IDM_VS_TOOL_TEXTEDITOR|  
+|Depuración|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|Ubicación de depuración|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
-## Grupos de las barras de herramientas del IDE  
- Para agregar un botón a una barra de herramientas estándar, establezca en uno de los siguientes grupos como su elemento primario.  La barra de herramientas principal ordenan los grupos.  
+### <a name="special-toolbars"></a>Barras de herramientas especiales  
+ Estas barras de herramientas se definen mediante el IDE de Visual Studio, pero realizan funciones especializadas y no hospeda grupos de comandos.  
   
-### grupos de la barra de herramientas Estándar  
+|Barra de herramientas|Id.|  
+|-------------|--------|  
+|Agregar comando|IDM_VS_TOOL_ADDCOMMAND|  
+|Sin definir|IDM_VS_TOOL_UNDEFINED|  
+|esquema XML|IDM_VS_TOOL_SCHEMA|  
+|Datos XML|IDM_VS_TOOL_DATA|  
   
-|Name|Id.|  
-|----------|---------|  
-|Guarde y Abrir|IDG\_VS\_TOOLSB\_SAVEOPEN|  
-|Cortar o copia|IDG\_VS\_TOOLSB\_CUTCOPY|  
-|Deshacer\/rehacer|IDG\_VS\_TOOLSB\_UNDOREDO|  
-|Ejecución y compilado|IDG\_VS\_TOOLSB\_RUNBUILD|  
-|Buscar|IDG\_VS\_TOOLSB\_SEARCH|  
-|Ventanas|IDG\_VS\_TOOLSB\_WINDOWS|  
-|Windows|IDG\_VS\_TOOLSB\_NEWWINDOWS|  
-|Carga y guardar|IDG\_VS\_WINDOWUI\_LOADSAVE|  
-|medidor|IDG\_VS\_TOOLSB\_GAUGE|  
+## <a name="groups-on-the-ide-toolbars"></a>Grupos en las barras de herramientas IDE  
+ Para agregar un botón a una barra de herramientas estándar, establezca uno de los siguientes grupos como su elemento primario. Los grupos se ordenan por la barra de herramientas principal.  
   
-### Grupos de la barra de herramientas de compilación  
+### <a name="standard-toolbar-groups"></a>Grupos de la barra de herramientas estándar  
   
 |Name|Id.|  
-|----------|---------|  
-|Barra de compilación|IDG\_VS\_BUILDBAR|  
-|Cancelar|IDG\_VS\_BUILD\_CANCEL|  
+|----------|--------|  
+|Guardar o abrir|IDG_VS_TOOLSB_SAVEOPEN|  
+|Cortar/Copiar|IDG_VS_TOOLSB_CUTCOPY|  
+|Deshacer/rehacer|IDG_VS_TOOLSB_UNDOREDO|  
+|Ejecución y compilación|IDG_VS_TOOLSB_RUNBUILD|  
+|Buscar|IDG_VS_TOOLSB_SEARCH|  
+|Windows|IDG_VS_TOOLSB_WINDOWS|  
+|Nuevas ventanas|IDG_VS_TOOLSB_NEWWINDOWS|  
+|Cargar o guardar|IDG_VS_WINDOWUI_LOADSAVE|  
+|medidor|IDG_VS_TOOLSB_GAUGE|  
   
-### Grupos de la barra de herramientas editor de texto  
-  
-|Name|Id.|  
-|----------|---------|  
-|Finalización|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Indent|IDG\_VS\_EDITTOOLBAR\_INDENT|  
-|Comment|IDG\_VS\_EDITTOOLBAR\_COMMENT|  
-|Marcadores|IDG\_VS\_EDITTOOLBAR\_TEMPBOOKMARKS|  
-  
-### grupos de la barra de herramientas Depuración  
+### <a name="build-toolbar-groups"></a>Crear grupos de la barra de herramientas  
   
 |Name|Id.|  
-|----------|---------|  
-|Execution|IDM\_DEBUG\_TOOLBAR|  
-|Recorrido paso a paso|IDG\_DEBUG\_TOOLBAR\_STEPPING|  
-|Watch|IDG\_DEBUG\_TOOLBAR\_WATCH|  
-|Ventanas|IDG\_DEBUG\_TOOLBAR\_WINDOWS|  
+|----------|--------|  
+|Barra de compilación|IDG_VS_BUILDBAR|  
+|Cancelar|IDG_VS_BUILD_CANCEL|  
   
-### Grupos de la barra de herramientas ubicación de depuración  
+### <a name="text-editor-toolbar-groups"></a>Grupos de la barra de herramientas del Editor de texto  
   
 |Name|Id.|  
-|----------|---------|  
-|Ubicación de depuración|IDG\_DEBUG\_CONTEXT\_TOOLBAR|  
+|----------|--------|  
+|Finalización|IDM_VS_TOOL_TEXTEDITOR|  
+|Sangría|IDG_VS_EDITTOOLBAR_INDENT|  
+|Comentario|IDG_VS_EDITTOOLBAR_COMMENT|  
+|Marcadores|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-## barras de herramientas de la ventana de herramientas  
- Las barras de herramientas pueden aparecer directamente en el IDE o en ventanas de herramientas como **Explorador de soluciones**.  Dado que las ventanas de herramientas no se definen en archivos de .vsct, barras de herramientas de la ventana de herramientas no tienen elementos primarios definido.  En su lugar, se colocan en código.  La tabla siguiente muestra las barras de herramientas que aparecen en las ventanas de herramientas en el IDE, y grupos de comando que contienen.  
+### <a name="debug-toolbar-groups"></a>Grupos de la barra de herramientas de depuración  
+  
+|Name|Id.|  
+|----------|--------|  
+|Execution|IDM_DEBUG_TOOLBAR|  
+|Recorrido paso a paso|IDG_DEBUG_TOOLBAR_STEPPING|  
+|Watch|IDG_DEBUG_TOOLBAR_WATCH|  
+|Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
+  
+### <a name="debug-location-toolbar-groups"></a>Grupos de barra de herramientas ubicación de depuración  
+  
+|Name|Id.|  
+|----------|--------|  
+|Ubicación de depuración|IDG_DEBUG_CONTEXT_TOOLBAR|  
+  
+## <a name="tool-window-toolbars"></a>Barras de herramientas de ventana de herramienta  
+ Barras de herramientas pueden aparecer directamente en el IDE o en las ventanas de herramientas como **el Explorador de soluciones**. Dado que las ventanas de herramientas no están definidas en archivos de vsct, barras de herramientas de ventana de herramienta no tiene definidos elementos primarios. En su lugar, se colocan en el código. La siguiente tabla muestra las barras de herramientas que aparecen en las ventanas de herramientas en el IDE y los grupos de comandos que contienen.  
   
 > [!NOTE]
->  Las barras de herramientas y grupos utilizan GUID `guidSHLMainMenu`, excepto si especificado de otra manera utilizando GUID: Sintaxis de identificador.  Donde GUID se especifica para una barra de herramientas, también se aplica a los grupos que descienden de la barra de herramientas.  
+>  Barras de herramientas y grupos utilizan el GUID `guidSHLMainMenu`, excepto cuando se especifique lo contrario, mediante la sintaxis de GUID: Id. Cuando se especifica un GUID para una barra de herramientas, también se aplica a los grupos que descienden de esa barra de herramientas.  
   
-|ventana de herramientas|Barra de herramientas|Groups|  
-|-----------------------------|---------------------------|------------|  
-|Explorador de soluciones|IDM\_VS\_TOOL\_PROJWIN|IDG\_VS\_PROJ\_TOOLBAR1..5|  
-|Explorador de servidores|guid\_SE\_MenuGroup: IDM\_SE\_TOOLBAR\_SERVEREXPLORER|IDG\_SE\_TOOLBAR\_REFRESH|  
-|Propiedades|IDM\_VS\_TOOL\_PROPERTIES|IDG\_VS\_PROPERTIES\_SORT<br /><br /> IDG\_VS\_PROPERTIES\_PAGES|  
-|Vista de clases|IDM\_VS\_TOOL\_CLASSVIEW|IDG\_VS\_CLASSVIEW\_FOLDERS<br /><br /> IDG\_VS\_CLASSVIEW\_SEARCH<br /><br /> IDG\_VS\_CLASSVIEW\_SETTINGS|  
-|Vista de clases|IDM\_VS\_TOOL\_CLASSVIEW\_GO|IDG\_VS\_CLASSVIEW\_SEAR CH2|  
-|Examinador de objetos|IDM\_VS\_TOOL\_OBJBROWSER|IDG\_VS\_OBJBROWSER\_SUBSETS<br /><br /> IDG\_VS\_OBJBROWSER\_SEARCH<br /><br /> IDG\_VS\_OBJBROWSER\_ADDREFERENCE<br /><br /> IDG\_VS\_OBJBROWSER\_BROWSERSETTINGS|  
-|Examinador de objetos|IDM\_VS\_TOOL\_OBJECT\_BROWSER\_GO|IDG\_VS\_OBJBROWSER\_SEAR CH2|  
-|Output|IDM\_VS\_TOOL\_OUTPUTWINDOW|IDG\_VS\_OUTPUTWINDOW\_SELECT<br /><br /> IDG\_VS\_OUTPUTWINDOW\_GOTO<br /><br /> IDG\_VS\_OUTPUTWINDOW\_NEXTPREV<br /><br /> IDG\_VS\_OUTPUTWINDOW\_CLEAR<br /><br /> IDG\_VS\_OUTPUTWINDOW\_WORDWRAP|  
-|Buscar y reemplazar|IDM\_VS\_TOOL\_UNIFIEDFIND|IDG\_VS\_FINDTAB<br /><br /> IDG\_VS\_REPLACETAB|  
-|Resultados de la búsqueda 1|IDM\_VS\_TOOL\_FINDRESULTS1|IDG\_VS\_FINDRESULTS1\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS1\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS1\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS1\_STOPFIND|  
-|Resultados de la búsqueda 2|IDM\_VS\_TOOL\_FINDRESULTS2|IDG\_VS\_FINDRESULTS2\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS2\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS2\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS2\_STOPFIND|  
-|Snippet|IDM\_VS\_TOOL\_SNIPPETMENUS|IDG\_VS\_SNIPPET\_REPL<br /><br /> IDG\_VS\_SNIPPET\_REF<br /><br /> IDG\_VS\_SNIPPET\_PROP|  
-|Marcadores|IDM\_VS\_TOOL\_BOOKMARKWIND|IDG\_VS\_BWNEWFOLDER<br /><br /> IDG\_VS\_BWNEXTBM<br /><br /> IDG\_VS\_BWNEXTBMF<br /><br /> IDG\_VS\_BWENABLE<br /><br /> IDG\_VS\_BWDELETE|  
-|Lista de tareas|IDM\_VS\_TOOL\_TASKLIST|IDG\_VS\_TASKLIST\_PROVIDERLIST|  
-|Tareas de usuario|IDM\_VS\_TOOL\_USERTASKS|IDG\_VS\_TASKLIST\_PROVIDERLIST<br /><br /> IDG\_VS\_USERTASKS\_EDIT|  
-|Lista de errores|IDM\_VS\_TOOL\_ERRORLIST|IDG\_VS\_ERRORLIST\_ERRORGROUP<br /><br /> IDG\_VS\_ERRORLIST\_WARNINGGROUP<br /><br /> IDG\_VS\_ERRORLIST\_MESSAGEGROUP|  
-|Explorador de llamadas|IDM\_VS\_TOOL\_ CALLBROWSER1. .16|\_ACTIONS OF IDG\_VS\_TOOLBAR\_ CALLBROWSER1<br /><br /> \_TYPE OF IDG\_VS\_TOOLBAR\_ CALLBROWSER1<br /><br /> \_CBSETTINGS OF IDG\_VS\_TOOLBAR\_ CALLBROWSER1|  
-|Puntos de interrupción|guidVSDebugGroup: IDM\_BREAKPOINTS\_WINDOW\_TOOLBAR|IDG\_BREAKPOINTS\_WINDOW\_NEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_DELETE<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_ALL<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_VIEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_EDIT<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_COLUMNS|  
-|Desensamblado|guidVSDebugGroup: IDM\_DISASM\_WINDOW\_TOOLBAR|IDG\_DISASM\_WINDOW\_TOOLBAR|  
-|memoria 1\-4|guidVSDebugGroup: IDM\_MEMORY\_WINDOW\_TOOLBAR1… 4|IDG\_MEMORY\_EXPRESSION1..4<br /><br /> IDG\_MEMORY\_ COLUMNS1. .4|  
-|Procesos|guidVSDebugGroup: IDM\_ATTACHED\_PROCS\_TOOLBAR|IDG\_ATTACHED\_PROCS\_EXECCNTRL IDG\_ATTACHED\_PROCS\_STEPPING<br /><br /> IDG\_ATTACHED\_PROCS\_EXE CCNTRL2<br /><br /> IDG\_ATTACHED\_PROCS\_ATTACH<br /><br /> IDG\_ATTACHED\_PROCS\_COLUMNS|  
+|Ventana de herramientas|Barra de herramientas|Grupos|  
+|-----------------|-------------|------------|  
+|Explorador de soluciones|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1... 5|  
+|Explorador de servidores|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|  
+|Propiedades|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|  
+|Vista de clases|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|  
+|Vista de clases|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
+|Examinador de objetos|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
+|Examinador de objetos|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
+|Resultado|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|Buscar y reemplazar|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
+|Buscar resultados 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
+|Buscar resultados 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  
+|Fragmento de código|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
+|Marcadores|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|  
+|Lista de tareas|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|  
+|Tareas de usuario|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|  
+|Lista de errores|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|  
+|Explorador de llamadas|IDM_VS_TOOL_CALLBROWSER1... 16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
+|Puntos de interrupción|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
+|Desensamblado|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
+|Memoria 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1... 4<br /><br /> IDG_MEMORY_COLUMNS1... 4|  
+|Procesos|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Agregar un controlador de menú a una barra de herramientas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Agregar una barra de herramientas a una ventana de herramientas](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [GUID e identificadores de menús de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

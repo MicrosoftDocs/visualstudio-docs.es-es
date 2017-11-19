@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder3
-helpviewer_keywords:
-- IDebugBinder3 interface
+f1_keywords: IDebugBinder3
+helpviewer_keywords: IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 47df761681525fd0c1062ae3d84be61c388282e9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 437d8414c725ffe7f5dab992da262de918c03693
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]

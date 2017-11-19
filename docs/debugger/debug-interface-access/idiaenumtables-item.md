@@ -1,54 +1,53 @@
 ---
-title: "IDiaEnumTables::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumTables::Item (método)"
+title: 'Idiaenumtables:: Item | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumTables::Item method
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 26acf7b8f9ad54a1ef1ed25497cd408c51c745c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumTables::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera una tabla mediante un índice o nombre.  
+# <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
+Recupera una tabla por medio de un índice o nombre.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Item (   
-   VARIANT     index,  
-   IDiaTable** table  
+```C++  
+HRESULT Item (   
+   VARIANT     index,  
+   IDiaTable** table  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `index`  
- \[in\]  índice o nombre de [IDiaTable](../../debugger/debug-interface-access/idiatable.md) que se recuperará.  Si se utiliza un tipo Variant entero, debe estar en el intervalo 0 a `count`\-1, donde es `count` que devuelve el método de [IDiaEnumTables::get\_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .  
+ [in] Índice o nombre de la [IDiaTable](../../debugger/debug-interface-access/idiatable.md) va a recuperar. Si se utiliza una variante de entero, debe estar en el intervalo de 0 a `count`-1, donde `count` es devuelto por la [idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) método.  
   
  `table`  
- \[out\]  devuelve un objeto de [IDiaTable](../../debugger/debug-interface-access/idiatable.md) que representa la tabla deseada.  
+ [out] Devuelve un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objeto que representa la tabla deseada.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Si se especifica un tipo Variant de la cadena, entonces los nombres de cadena en una tabla determinada.  el nombre debe ser uno de los nombres de tabla como definido en [Constantes \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
+## <a name="remarks"></a>Comentarios  
+ Si se especifica una variante de cadena, la cadena de nombres en una tabla determinada. El nombre debe ser uno de los nombres de tabla como se define en [constantes (Debug interfaz Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp#  
+```C++  
 VARIANT var;  
 var.vt = VT_BSTR;  
 var.bstrVal = SysAllocString(DiaTable_Symbols );  
@@ -56,8 +55,8 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaEnumTables::get\_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
- [Constantes \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+ [Idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [Constantes (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

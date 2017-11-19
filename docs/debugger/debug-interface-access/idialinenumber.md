@@ -1,64 +1,63 @@
 ---
-title: "IDiaLineNumber | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber (interfaz)"
+title: IDiaLineNumber | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber interface
 ms.assetid: 1071f7d0-1f8c-4384-933f-c49c7eb930bd
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 45996e66500ebf275154553774d5116c6075af0f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Tiene acceso a la información que describe el proceso de asignación de un bloque de bytes de texto de la imagen a un número de línea del archivo de código fuente.  
+# <a name="idialinenumber"></a>IDiaLineNumber
+Accede a información que describe el proceso de asignación de un bloque de bytes de texto de la imagen a un número de línea del archivo de código fuente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaLineNumber : IUnknown  
+IDiaLineNumber : IUnknown  
 ```  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDiaLineNumber`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDiaLineNumber`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaLineNumber::get\_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Recupera una referencia al símbolo para la compilación que contribuyó bytes de texto de la imagen.|  
-|[IDiaLineNumber::get\_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Recupera una referencia al objeto del archivo de código fuente.|  
-|[IDiaLineNumber::get\_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|recupera el número de línea en el archivo de código fuente.|  
-|[IDiaLineNumber::get\_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Recupera el número de línea de código fuente basada en uno donde finaliza la instrucción o expresión.|  
-|[IDiaLineNumber::get\_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Recupera el número de columnas en el que comienza la expresión o instrucción.|  
-|[IDiaLineNumber::get\_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Recupera el número de columnas donde finaliza la expresión o la instrucción.|  
-|[IDiaLineNumber::get\_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Recuperar la parte de la sección de la dirección de memoria donde inicia un bloque.|  
-|[IDiaLineNumber::get\_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Recupera el desplazamiento de la dirección de memoria donde inicia un bloque.|  
-|[IDiaLineNumber::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Recupera la dirección virtual relativa de la imagen \(RVA\) de un bloque.|  
-|[IDiaLineNumber::get\_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Recupera la dirección virtual \(VA\) de un bloque.|  
-|[IDiaLineNumber::get\_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|recupera el número de bytes en un bloque.|  
-|[IDiaLineNumber::get\_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|recupera un identificador de archivo de código fuente único para el archivo de código fuente que contribuyó esta línea.|  
-|[IDiaLineNumber::get\_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera un mensaje que indica que esta información de línea describe el principio de una instrucción en el origen del programa.|  
-|[IDiaLineNumber::get\_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera el identificador único para la compilación que contribuyó esta línea.|  
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Recupera una referencia al símbolo de la operación de compilación que han contribuido a los bytes del texto de la imagen.|  
+|[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Recupera una referencia al objeto de archivo de origen.|  
+|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Recupera el número de línea en el archivo de origen.|  
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Recupera el número de línea de origen basado en uno cuando finaliza la instrucción o expresión.|  
+|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Recupera el número de columna donde comienza la expresión o instrucción.|  
+|[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Recupera el número de columna donde finaliza la expresión o instrucción.|  
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Recupera el elemento de sección de la dirección de memoria donde se comienza un bloque.|  
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Recupera la parte de la dirección de memoria donde se comienza un bloque de desplazamiento.|  
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Recupera la imagen dirección virtual relativa (RVA) de un bloque.|  
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Recupera la dirección virtual (VA) de un bloque.|  
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Recupera el número de bytes en un bloque.|  
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Recupera un identificador de archivo de origen único para el archivo de origen que han contribuido a esta línea.|  
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera una marca que indica que esta información de línea indica el principio de una instrucción en el código fuente del programa.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera el identificador único para la operación de compilación que han contribuido a esta línea.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Notas para los llamadores  
- Obtiene esta interfaz llamando a los métodos de [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) o de [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Obtener esta interfaz mediante una llamada a la [idiaenumlinenumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) o [idiaenumlinenumbers:: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) métodos.  
   
-## Ejemplo  
- La siguiente función muestra los números de línea utilizados en una función \(representada por `pSymbol`\).  
+## <a name="example"></a>Ejemplo  
+ La siguiente función muestra números de línea que se utiliza en una función (representado por `pSymbol`).  
   
-```cpp#  
+```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
 {  
     ULONGLONG length = 0;  
@@ -136,15 +135,15 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }  
 ```  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Vea también  
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Vea también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
+ [Idiaenumlinenumbers:: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
  [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)

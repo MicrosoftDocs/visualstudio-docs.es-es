@@ -1,53 +1,54 @@
 ---
-title: "Modelo de un servicio de lenguaje heredado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Servicios de lenguaje, modelo"
+title: Modelo de un servicio de lenguaje heredado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Modelo de un servicio de lenguaje heredado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un servicio de lenguaje define elementos y características para un idioma concreto, y se utiliza para proporcionar el editor con información específica del lenguaje.  Por ejemplo, el editor necesita conocer los elementos y las palabras clave del lenguaje para admitir el colorear la sintaxis.  
+# <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
+Un servicio de lenguaje define los elementos y características para un idioma específico y se utiliza para proporcionar el editor con información específica para ese idioma. Por ejemplo, el editor debe saber los elementos y las palabras clave del lenguaje para admitir los colores de sintaxis.  
   
- El servicio de lenguaje funciona estrechamente con el búfer de texto administrado por el editor y la vista que contiene el editor.  La opción de Microsoft IntelliSense **información rápida** es un ejemplo de una característica proporcionada por un servicio de lenguaje.  
+ El servicio de lenguaje trabaja en estrecha colaboración con el búfer de texto administrado por el editor y la vista que contiene el editor. Microsoft IntelliSense **Quick Info** opción es un ejemplo de una característica proporcionada por un servicio de lenguaje.  
   
-## Un servicio de lenguaje mínimo  
+## <a name="a-minimal-language-service"></a>Un servicio de lenguaje mínima  
  El servicio de lenguaje más básico contiene los dos objetos siguientes:  
   
--   *El servicio de lenguaje* implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> .  Un servicio de lenguaje tiene información sobre el lenguaje, incluida su nombre, extensiones de nombre de archivo, administrador de ventana de código, y colorizer.  
+-   El *servicio de lenguaje* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz. Un servicio de lenguaje tiene información sobre el lenguaje, como su nombre, las extensiones de nombre de archivo, el Administrador de ventanas de código y aplicador de color.  
   
--   *el colorizer* implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> .  
+-   El *aplicador de color* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaz.  
   
- El gráfico conceptual siguiente muestra un modelo de un servicio de básico.  
+ El siguiente dibujo conceptual muestra un modelo de un servicio de lenguaje básico.  
   
- ![Gráfico del modelo de servicio de lenguaje](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Modelo básico del servicio de lenguaje  
+ ![Gráfico del modelo de servicio de lenguaje](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+Modelo de servicio de lenguaje básico  
   
- Los hosts de la ventana de documento *la vista del documento* del editor, en cuyo caso el publicador de la base de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  La vista del documento y el búfer de texto pertenecen al editor.  Estos objetos ejecutan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de una ventana de documento especializada denominada *una ventana de código*.  La ventana de códigos se contiene en un objeto de<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> creado y controla el IDE.  
+ Los hosts de la ventana de documento del *vista de documento* del editor, en este caso el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principal. La vista de documento y el búfer de texto son propiedad del editor. Estos objetos funcionan con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de una ventana de documento especializadas llama a un *ventana de código*. La ventana de código se encuentra en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que se crea y se controla mediante el IDE.  
   
- Cuando un archivo con una extensión dada cargado, el editor encuentra el servicio de lenguaje asociado a esa extensión y pasa a la ventana de código llamando al método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> .  El servicio de lenguaje devuelve *un administrador de ventana de código*, que implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> .  
+ Cuando se carga un archivo con una extensión específica, el editor busca el servicio de lenguaje asociado a esa extensión y le pasa la ventana de código mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. El servicio de lenguaje devuelve un *Administrador de ventanas de código*, que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaz.  
   
- La tabla siguiente se proporciona información general sobre los objetos del modelo.  
+ En la tabla siguiente proporciona información general de los objetos en el modelo.  
   
-|Componente|Objeto.|Función|  
-|----------------|-------------|-------------|  
-|Búfer de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Una secuencia de texto de la escritura de Unicode.  es posible que el texto utilice otras codificaciones.|  
-|Ventana de código|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|una ventana de documento que contiene una o más vistas de texto.  Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en modo \(MDI\) de interfaz de múltiples documentos, la ventana de código es un elemento secundario de MDI.|  
-|vista de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Una ventana que permite al usuario navegar y ver el texto mediante el teclado y el mouse.  Una vista de texto aparece al usuario como editor.  Puede utilizar las vistas de texto en las ventanas normales del editor, la ventana de salida, y la ventana Inmediato.  Además, puede configurar una o más vistas de texto dentro de una ventana de código.|  
-|Administrador de texto|Administrado por el servicio de <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> , del que se obtiene un puntero de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>|Un componente que mantiene la información bursátil compartida por todos los componentes descritos previamente.|  
-|Servicio de lenguaje|Dependiente de implementación; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objeto que proporciona el editor con información más específica como resaltado de sintaxis, finalización de instrucciones, y coincidencia de llaves.|  
+|Componente|Objeto|Función|  
+|---------------|------------|--------------|  
+|Búfer de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Una secuencia de texto de lectura/escritura de Unicode. Es posible para que utilice otras codificaciones de texto.|  
+|Ventana Código|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Una ventana de documento que contiene una o varias vistas de texto. Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en modo de interfaz de múltiples documentos (MDI), la ventana de código es un formulario MDI secundario.|  
+|Vista de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Una ventana que permite al usuario navegar y ver texto mediante el teclado y mouse (ratón). Aparece una vista de texto para el usuario como un editor. Puede usar vistas de texto en ventanas del editor normal, la ventana de salida y la ventana Inmediato. Además, puede configurar una o varias vistas de texto dentro de una ventana de código.|  
+|Administrador de texto|Administrado por el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> de servicio, desde el cual obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntero|Un componente que mantiene información comunes compartido por todos los componentes que se ha descrito anteriormente.|  
+|Servicio de lenguaje|Implementación dependiente; implementa<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Un objeto que proporciona el editor de información específica del lenguaje como resaltado de sintaxis, finalización de instrucciones y coincidencia de llaves.|  
   
-## Vea también  
- [Datos del documento y vista de documento en editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+## <a name="see-also"></a>Vea también  
+ [Datos de documento y vista de documento en editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

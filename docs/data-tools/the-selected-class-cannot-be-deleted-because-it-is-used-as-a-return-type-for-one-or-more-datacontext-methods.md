@@ -1,32 +1,34 @@
 ---
-title: "No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios m&#233;todos DataContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "La clase seleccionada no se puede eliminar porque se utiliza como un tipo de valor devuelto de uno o más métodos de DataContext | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 865c8f9fa91c24eed1e10bde68b239932237a62b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios m&#233;todos DataContext
-El tipo de valor devuelto de uno o varios métodos de <xref:System.Data.Linq.DataContext> es la clase de entidad seleccionada.Cuando se elimina una clase de entidad que se usa como tipo de valor devuelto para un método de <xref:System.Data.Linq.DataContext>, se pueden producir errores en la compilación del proyecto.Para eliminar la clase de entidad seleccionada, identifique los métodos de <xref:System.Data.Linq.DataContext> que la usan y establezca sus tipos de valor devuelto en otra clase de entidad.  
+# <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
+El tipo de valor devuelto de uno o varios métodos de <xref:System.Data.Linq.DataContext> es la clase de entidad seleccionada. Cuando se elimina una clase de entidad que se usa como tipo de valor devuelto para un método de <xref:System.Data.Linq.DataContext>, se pueden producir errores en la compilación del proyecto. Para eliminar la clase de entidad seleccionada, identifique los métodos de <xref:System.Data.Linq.DataContext> que la usan y establezca sus tipos de valor devuelto en otra clase de entidad.  
   
- Para revertir los tipos de valor devuelto de los métodos de <xref:System.Data.Linq.DataContext> a sus tipos originales generados automáticamente, primero elimine el método de <xref:System.Data.Linq.DataContext> del panel de métodos y, a continuación, arrastre el objeto desde el **Explorador de servidores**\/**Explorador de bases de datos** hasta Object Relational Designer.  
+ Para revertir los tipos de valor devueltos de <xref:System.Data.Linq.DataContext> métodos a sus tipos originales generados automáticamente, primero debe eliminar el <xref:System.Data.Linq.DataContext> método desde el panel de métodos y, a continuación, arrastre el objeto desde **Explorador de servidores** / **El Explorador de base de datos** hasta Object Relational Designer.  
   
-### Para corregir este error  
+### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  Para identificar los métodos de <xref:System.Data.Linq.DataContext> que usan la clase de entidad como tipo de valor devuelto, seleccione un método de <xref:System.Data.Linq.DataContext> en el panel de métodos y examine la propiedad **Tipo devuelto** en la ventana **Propiedades**.  
+1.  Identificar <xref:System.Data.Linq.DataContext> métodos que usan la clase de entidad como un tipo de valor devuelto, seleccione un <xref:System.Data.Linq.DataContext> método en los métodos de panel e inspeccionando el **tipo de valor devuelto** propiedad en el **propiedades** ventana .  
   
-2.  Establezca **Tipo devuelto** en otra clase de entidad o elimine el método de <xref:System.Data.Linq.DataContext> del panel de métodos.  
+2.  Establecer el **tipo de valor devuelto** en otra clase de entidad o elimine la <xref:System.Data.Linq.DataContext> método desde el panel de métodos.  
   
-## Vea también  
- [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Tutorial: Crear clases de LINQ to SQL \(Object Relational Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [Métodos DataContext \(Object Relational Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Cómo: Cambiar el tipo devuelto de un método DataContext \(Object Relational Designer\)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)
+## <a name="see-also"></a>Vea también
+[Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

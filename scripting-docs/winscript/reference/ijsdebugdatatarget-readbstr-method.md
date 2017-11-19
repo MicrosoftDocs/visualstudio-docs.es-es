@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugDataTarget::ReadBSTR (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugdatatarget:: Readbstr (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.ReadBSTR
 apilocation: jscript9diag.dll
 ms.assetid: 4b571db7-04b9-42a0-9a3e-310ac9d0e659
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 85fbdb556b59c67610ad65b7e1f056399ad6da58
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugDataTarget::ReadBSTR (M&#233;todo)
-Lee BSTR del destino de depuración.  
+# <a name="ijsdebugdatatargetreadbstr-method"></a>IJsDebugDataTarget::ReadBSTR (Método)
+Lee una cadena BSTR desde el destino de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT ReadBSTR(  
@@ -28,20 +32,20 @@ HRESULT ReadBSTR(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `address`  
- \[in\] Dirección de la que leer.  
+ [in] La dirección que leer.  
   
  `pString`  
- \[out\] BSTR leído del destino de depuración.  
+ [out] El BSTR lee desde el destino de depuración.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Comentarios  
- Devuelve E\_JsDEBUG\_INVALID\_MEMORY\_ADDRESS si la dirección no es válida.  
+## <a name="remarks"></a>Comentarios  
+ Devuelve E_JsDEBUG_INVALID_MEMORY_ADDRESS si la dirección no es válida.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebugDataTarget \(Interfaz\)](../../winscript/reference/ijsdebugdatatarget-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

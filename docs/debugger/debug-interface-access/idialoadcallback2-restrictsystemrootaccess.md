@@ -1,40 +1,39 @@
 ---
-title: "IDiaLoadCallback2::RestrictSystemRootAccess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback2::RestrictSystemRootAccess (método)"
+title: 'Idialoadcallback2:: Restrictsystemrootaccess | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback2::RestrictSystemRootAccess method
 ms.assetid: 39f22db8-632a-4ef0-babc-23f758e6d937
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2f77f92487f8f44aa2608f6e29eb779c9292ae8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback2::RestrictSystemRootAccess
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Determina si el buscar archivos .pdb se permite en el directorio raíz del sistema.  
+# <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
+Determina si se permite la búsqueda de archivos .pdb en el directorio raíz del sistema.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```C++  
 HRESULT RestrictSystemRootAccess();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Cualquier código devuelto distinto de `S_OK` evita buscar la raíz del sistema para los archivos .pdb.  
+## <a name="remarks"></a>Comentarios  
+ Cualquier código de retorno distinto de `S_OK` evita buscar la raíz del sistema de archivos .pdb.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -1,48 +1,32 @@
 ---
-title: Migrar de registro de clases COM de depurador de 64 bits | Documentos de Microsoft
+title: Migrar el registro de la clase de 64 bits depurador COM | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/10/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregg-miskelly
 ms.author: greggm
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 19ce2d4cc1ff92240529f35f42845778ded49fdf
-ms.contentlocale: es-es
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 06bfef5f1b4d67cb691a74b953296b1ab057d62f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrar el registro de clase COM del depurador de 64 bits
+# <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrar el registro de la clase COM de depurador de 64 bits
 
-Para las extensiones del depurador que registrar clases COM en HKEY_CLASSES_ROOT (utilizando regasm, regsvr32, o escribir directamente en el registro) y cargan en msvsmon.exe (el depurador remoto), es posible proporcionar este registro para msvsmon sin necesidad de escribir en HKEY_CLASSES_ROOT. Esto afecta a los evaluadores de expresión de depurador .NET heredadas o motores de depuración que se configuran para cargar en el proceso de msvsmon.exe.
+Para las extensiones del depurador que registrar clases COM en HKEY_CLASSES_ROOT (utilizando regasm, regsvr32, o escribir directamente en el registro) y se cargan en msvsmon.exe (el depurador remoto), ahora es posible proporcionar este registro a msvsmon sin necesidad de para escribir en HKEY_CLASSES_ROOT. Esto afecta a los evaluadores de expresión de depurador .NET heredados o motores de depuración que están configurados para cargar en el proceso de msvsmon.exe.
 
-## <a name="msvsmon-comclass-def"></a>definición de msvsmon comclass
+## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-Para utilizar esta técnica, agregue un archivo *.msvsmon-comclass-def.json junto a msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64).
+Para usar esta técnica, agregue un archivo de *.msvsmon-comclass-def.json junto a msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64).
 
-Este es un archivo de definición de comclass de msvsmon de ejemplo que registra uno administrado y una clase nativa:
+Este es un ejemplo de archivo de msvsmon-comclass-def que registra uno administrado y una clase nativa:
 
 Nombre de archivo: MyCompany.MyExample.msvsmon-comclass-def.json
 
@@ -63,4 +47,3 @@ Nombre de archivo: MyCompany.MyExample.msvsmon-comclass-def.json
   ]
 }
 ```
-

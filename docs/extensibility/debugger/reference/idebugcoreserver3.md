@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3
-helpviewer_keywords:
-- IDebugCoreServer3 interface
+f1_keywords: IDebugCoreServer3
+helpviewer_keywords: IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: caa07706e507bb6f6b8aa84404eab5e67579be5b
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 66b543735a48364429eec02d23df0bd08c987035
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Esta interfaz proporciona acceso a información sobre el servidor en que está ejecutando el proceso.  

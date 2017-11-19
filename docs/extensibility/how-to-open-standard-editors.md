@@ -1,58 +1,60 @@
 ---
-title: "C&#243;mo: abrir editores est&#225;ndares | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK], abrir"
-  - "proyectos [Visual Studio SDK], abrir editores estándares"
+title: "Cómo: abrir editores estándares | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], opening
+- projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bd3e3b8da06e6846c8c6adc6ddc3f65873c1e2bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: abrir editores est&#225;ndares
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Al abrir un editor estándar, deja el IDE determinar un editor estándar para un tipo de archivo designado, en lugar de especificar un editor específico de proyecto para el archivo.  
+# <a name="how-to-open-standard-editors"></a>Cómo: abrir editores estándares
+Cuando se abre un editor estándar, permiten el IDE determinar un editor estándar para un tipo de archivo designado, en lugar de especificar un editor específico del proyecto para el archivo.  
   
- Complete el procedimiento siguiente para implementar el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> .  esto abrirá un archivo de proyecto en un editor estándar.  
+ Complete el procedimiento siguiente para implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método. Se abrirá un archivo de proyecto en un editor estándar.  
   
-### para implementar el método de OpenItem con un editor estándar  
+### <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>Para implementar el método OpenItem con un editor estándar  
   
-1.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> \(`RDT_EditLock`\) para determinar si el archivo del objeto del documento está abierto.  
+1.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) para determinar si el archivo de objeto de datos de documento ya está abierto.  
   
-2.  Si el archivo está abierto, vuelva a mejorar el archivo llamando al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> , especificando un valor de `IDO_ActivateIfOpen` para el parámetro de `grfIDO` .  
+2.  Si el archivo ya está abierto, reaparece el archivo mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> método, especificando un valor de `IDO_ActivateIfOpen` para el `grfIDO` parámetro.  
   
-     Si el archivo está abierto y el documento es propiedad de un proyecto diferente que el proyecto de la llamada, el proyecto recibe una advertencia que el editor abierta es de otro proyecto.  La ventana del archivo se emerge.  
+     Si el archivo está abierto y el documento pertenece a un proyecto diferente a del proyecto que realiza la llamada, el proyecto recibe una advertencia que es el editor que se está abriendo desde otro proyecto. A continuación, aparece la ventana de archivo.  
   
-3.  Si el documento no está abierto o no en la tabla en el documento, llame al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> \(`OSE_ChooseBestStdEditor`\) para abrir un editor estándar para el archivo.  
+3.  Si el documento no está abierto o no en la tabla de documento de ejecución, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> (método) (`OSE_ChooseBestStdEditor`) para abrir un editor estándar para el archivo.  
   
      Cuando se llama al método, el IDE realiza las tareas siguientes:  
   
-    1.  El IDE examina la subclave de Editors\/{guidEditorType} \/Extensions del registro para determinar qué editor puede abrir el archivo y tiene la máxima prioridad para ello.  
+    1.  El IDE examina los editores / {guidEditorType} / subclave de extensiones en el registro para determinar qué editor puede abrir el archivo y tiene la prioridad más alta para realizar esta acción.  
   
-    2.  Después de que el IDE determinar qué editor puede abrir el archivo, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>.  La implementación del editor de este método devuelve la información necesaria para que el IDE llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> y el sitio el documento que se acaba de abrir.  
+    2.  Una vez que el IDE ha determinado qué editor puede abrir el archivo, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Implementación del editor de este método devuelve la información necesaria para el IDE llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> y el documento recién abierto del sitio.  
   
-    3.  Finalmente, el IDE carga el documento mediante la interfaz habitual de persistencia, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
+    3.  Por último, el IDE carga el documento mediante la interfaz de persistencia habituales, como <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
   
-    4.  Si el IDE ha determinado previamente que la jerarquía o el elemento de la jerarquía está disponible, el IDE llama a método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> en el proyecto de obtener un puntero de <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> de contexto de nivel de proyecto para pasar la reproducción en con la llamada al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> .  
+    4.  Si el IDE previamente ha determinado que la jerarquía o un elemento de la jerarquía está disponible, el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> método en el proyecto para obtener un contexto de nivel de proyecto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntero para pasar en con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> llamada al método.  
   
-4.  Devuelve un puntero de <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> al IDE cuando el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> en el proyecto si desea que el editor obtener contexto del proyecto.  
+4.  Devolver un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> puntero para el IDE cuando el IDE llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> en el proyecto si desea permitir que el contexto de get editor desde el proyecto.  
   
-     Seguir este paso permite a los servicios adicionales de la propuesta de proyecto en el editor.  
+     Llevar a cabo este paso permite a los servicios adicionales de oferta de proyecto en el editor.  
   
-     Si la vista del documento o el objeto de vista del documento se ha ubicado correctamente en un marco de ventana, el objeto se inicializó con sus datos llamando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>.  
+     Si la vista de documento o el objeto de vista de documento correctamente se sitúa en un marco de ventana, el objeto se inicializa con sus datos mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A>.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Cómo: abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Cómo: abrir editores específica del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
  [Cómo: abrir editores para los documentos abiertos](../extensibility/how-to-open-editors-for-open-documents.md)   
- [Mostrar archivos mediante el comando Abrir archivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+ [Visualización de archivos mediante el comando Abrir archivo](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

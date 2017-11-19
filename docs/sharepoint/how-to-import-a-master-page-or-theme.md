@@ -1,62 +1,64 @@
 ---
-title: "C&#243;mo: Importar un tema o p&#225;gina maestra"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "importar elementos [desarrollo de SharePoint en Visual Studio]"
-  - "desarrollo de SharePoint en Visual Studio, importar elementos"
+title: "Cómo: importar un tema o página maestra | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, importing items
+- importing items [SharePoint development in Visual Studio]
 ms.assetid: 8b446cca-2adb-457b-bbfd-891209290e80
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Importar un tema o p&#225;gina maestra
-  Puede proporcionar a las páginas del sitio de SharePoint un aspecto coherente creando y páginas maestras y temas.  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no proporciona plantillas para estos elementos, pero puede crearlos en SharePoint Designer y después importarlos en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  Para obtener más información, vea [Bloque de creación: Páginas e interfaz de usuario](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.  
+# <a name="how-to-import-a-master-page-or-theme"></a>Cómo: Importar un tema o página maestra
+  Puede dar páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlas en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: interfaz de usuario y páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.  
   
-### Para importar un tema o una página maestra  
+### <a name="to-import-a-master-page-or-theme"></a>Para importar un tema o página maestra  
   
 1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree o abra un proyecto de SharePoint.  
   
-     Para obtener información sobre cómo crear un proyecto de SharePoint, vea [Plantillas de proyecto y de elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Para obtener información sobre cómo crear un proyecto de SharePoint, vea [proyecto de SharePoint y plantillas de elementos de proyecto](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-2.  En la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.  
+2.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-3.  En el cuadro de diálogo **Agregar nuevo elemento**, expanda el nodo **SharePoint** y, a continuación, elija el nodo **2010**.  
+3.  En el **Agregar nuevo elemento** cuadro de diálogo, expanda el **SharePoint** nodo y, a continuación, elija la **2010** nodo.  
   
-4.  En la lista de plantillas de SharePoint, elija la plantilla de **Módulo** , y especifique un nombre para el módulo.  
+4.  En la lista de plantillas de SharePoint, elija el **módulo** plantilla y, a continuación, especifique un nombre para el módulo.  
   
-     Un módulo contiene archivos \(por ejemplo, página maestra o archivos de tema\) para la implementación en una ubicación que especifique en SharePoint.  
+     Un módulo contiene archivos (por ejemplo, página maestra o archivos de tema) para su implementación en una ubicación que especifique en SharePoint.  
   
-5.  En el módulo, elimine el archivo predeterminado, que se denomina Sample.txt.  
+5.  En el módulo, elimine el archivo de forma predeterminada, que es el nombre Sample.txt.  
   
-6.  Elija el nodo módulo.  
+6.  Elija el nodo de módulo.  
   
-7.  En la barra de menú, elija **Project**, **Agregar elemento existente**, y elija el archivo de página maestra o de tema.  
+7.  En la barra de menús, elija **proyecto**, **Agregar elemento existente**y, a continuación, elija el archivo de tema o página maestra.  
   
-     Los archivos de página maestra tienen una extensión .master, y los archivos de tema tienen una extensión de .thmx.  
+     Archivos de página maestra tienen la extensión. master, y archivos de tema tienen una extensión .thmx.  
   
-8.  Si ha agregado una página maestra, cambie su **Resolución de conflictos de implementación** a **Automático** en las propiedades del agente.  
+8.  Si ha agregado una página maestra, cambiar su **Deployment Conflict Resolution** si se establece en **automática** en las propiedades del módulo.  
   
     > [!NOTE]  
-    >  Se pueden producir errores si el nombre de la página maestra es el mismo que el de una página maestra existente marcada como página maestra predeterminada o página maestra personalizada.  Para obtener información sobre cómo resolver este problema, vea [Tutorial: Importar una página maestra personalizada y una página de sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
+    >  Pueden producirse errores si el nombre de la página maestra es el mismo que el nombre de una página maestra existente que está marcado como página maestra predeterminada o página maestra personalizada. Para obtener información sobre cómo resolver este problema, consulte [Tutorial: importar una página maestra de personalizado y página del sitio con una imagen](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
   
 9. En el módulo, abra Elements.xml.  
   
-     Debe actualizar el archivo Elements.xml para que haga referencia a la página maestra o el tema que agregó.  
+     Debe actualizar el archivo Elements.xml para hacer referencia a la página maestra o un tema que agregó.  
   
-10. Para una página maestra, reemplace el marcado de módulo existente con el siguiente marcado.  
+10. Para una página maestra, reemplace el marcado existente del módulo con el siguiente marcado.  
   
     ```  
     <Module Name="[Module Name]" Url="_catalogs/masterpage">  
@@ -65,7 +67,7 @@ caps.handback.revision: 14
     </Module>  
     ```  
   
-     Para un tema, reemplace el marcado de módulo existente con el siguiente marcado.  
+     Para un tema, reemplace el marcado existente del módulo con el marcado siguiente.  
   
     ```  
     <Module Name="[Module Name]" Url="_catalogs/theme"   
@@ -74,27 +76,27 @@ caps.handback.revision: 14
     </Module>  
     ```  
   
-     Asegúrese de reemplazar los valores de marcador de posición con los nombres reales del módulo y de la página maestra o el tema.  
+     No olvide reemplazar los valores de marcador de posición con los nombres reales de módulo y el tema o página maestra.  
   
-     El atributo `Type="GhostableInLibrary"` indica que el elemento se ha agregado a la base de datos de contenido y el atributo `Url` del módulo especifica dónde se almacena el archivo en la base de datos de contenido de SharePoint.  
+     El atributo `Type="GhostableInLibrary"` indica que el elemento se agrega a la base de datos de contenido y el `Url` atributo del módulo especifica dónde desea almacenar el archivo en la base de datos de contenido de SharePoint.  
   
-11. Para cambiar el ámbito de implementación de una página maestra, en **Explorador de soluciones**, abra el archivo de la característica Designer y, a continuación un nuevo ámbito de implementación de la lista de **Ámbito** .  
+11. Para cambiar el ámbito de la implementación de una página maestra, en **el Explorador de soluciones**, abra el archivo de la característica en el Diseñador de características y, a continuación, elija un nuevo ámbito de implementación de la **ámbito** lista.  
   
-     Un valor de **web** significa que la página maestra sólo se aplica al sitio Web especificado actualmente en el proyecto.  Un valor de **sitio** significa que la página maestra se aplica a la colección de sitios actual, que incluye todos los subsitios y el sitio web raíz.  Los otros valores no se aplican.  
+     Un valor de **Web** significa que la página maestra se aplica solo al sitio Web que se especifica actualmente en el proyecto. Un valor de **sitio** significa que la página maestra se aplica a la colección de sitios actual, que incluye todos los subsitios y el sitio web raíz. No se aplican los demás valores.  
   
     > [!NOTE]  
-    >  Dado que los temas solo se aplican en el nivel de colección de sitios, se recomienda no establecer el ámbito de un tema en un valor distinto de **sitio**.  Se pueden producir errores si se usa un tema en un subsitio.  
+    >  Dado que los temas se aplican sólo en el nivel de colección de sitios, se recomienda no establecer el ámbito de un tema en ningún otro valor distinto de **sitio**. Pueden producirse errores si se usa un tema en un sitio secundario.  
   
-12. En la barra de menú, elija **Compilación**, **Implementar solución**.  
+12. En la barra de menús, elija **generar**, **implementar solución**.  
   
-13. Para comprobar si los archivos se implementaron correctamente, abra el sitio de SharePoint, elegir el menú de **Acciones del sitio** , elegir el comando de **Configuración del sitio** , y a continuación elija el vínculo de **Páginas maestras** o vínculo de **temas;aspecto;apariencia** .  
+13. Para comprobar si los archivos se implementaron correctamente, abra el sitio de SharePoint, elija el **acciones del sitio** menú, elija la **configuración del sitio** comando y, a continuación, elija la **páginas maestras**  vínculo o **temas** vínculo.  
   
-     La lista de páginas maestras ni de temas aparece y contiene la página maestra o el tema importado.  
+     La lista de páginas maestras o temas aparece y contiene la página maestra o el tema que ha importado.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Páginas maestras](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [Importar elementos de un sitio de SharePoint existente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Crear páginas para SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
- [Utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
+ [Usar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
   
   

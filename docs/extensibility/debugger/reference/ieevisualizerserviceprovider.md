@@ -1,65 +1,65 @@
 ---
-title: "IEEVisualizerServiceProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerServiceProvider"
-helpviewer_keywords: 
-  - "Interfaz IEEVisualizerServiceProvider"
+title: IEEVisualizerServiceProvider | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerServiceProvider
+helpviewer_keywords: IEEVisualizerServiceProvider interface
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4bd55bb42f902bcda7cdef1ea28a8d1c39d96f26
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerServiceProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está obsoleta. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresiones administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Esta interfaz proporciona acceso a un método que puede crear un servicio del visualizador, que se utiliza para controlar las tareas del visualizador de tipo para el IDE.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IEEVisualizerServiceProvider : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Visual Studio implementa esta interfaz para crear un objeto de servicio del visualizador, que a su vez se utiliza para proporcionar el Id. de clase \(`CLSID`s\) de visualizadores de tipo para el IDE de Visual Studio.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Visual Studio implementa esta interfaz para crear un objeto de servicio del visualizador, que a su vez se usa para proporcionar el Id. de clase (`CLSID`s) de los visualizadores de tipo para el IDE de Visual Studio.  
   
-## Notas para los llamadores  
- El evaluador de expresiones \(EE\) llama [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) para obtener esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El evaluador de expresiones (EE) llama [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) para obtener esta interfaz.  
   
-## Métodos en orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Crea el servicio del visualizador|  
   
-## Comentarios  
- El `IEEVisualizerServiceProvider` interfaz se obtiene durante la implementación de [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). El servicio del visualizador que crea esta interfaz se utiliza para proporcionar funcionalidad a un [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) de interfaz, que es responsable de implementar lo EE. EE también es responsable de implementar un [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interfaz que permite a los visualizadores de tipo ver y modificar el valor de la propiedad.  
+## <a name="remarks"></a>Comentarios  
+ El `IEEVisualizerServiceProvider` interfaz se obtiene durante la implementación de [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). El servicio del visualizador que crea esta interfaz se utiliza para proporcionar la funcionalidad para un [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz, que es responsable de implementar lo EE. También es responsable de implementar la EE un [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interfaz que permite a los visualizadores de tipo ver y modificar el valor de la propiedad.  
   
- Consulte [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo interactúan estas interfaces.  
+ Vea [Visualizing y ver datos](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obtener más información sobre cómo interactúan estas interfaces.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Encabezado: ee.h  
   
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de evaluación de expresión](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [Visualizar y visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [Visualización de datos](../../../extensibility/debugger/visualizing-and-viewing-data.md)

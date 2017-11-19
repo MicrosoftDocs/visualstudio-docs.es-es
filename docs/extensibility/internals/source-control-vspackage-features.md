@@ -1,39 +1,40 @@
 ---
-title: "Caracter&#237;sticas de VSPackage del Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "paquetes de control de código fuente, características"
+title: "Características de Control de VSPackage del origen | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, features
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Caracter&#237;sticas de VSPackage del Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Esta sección describe las distintas características de un control de origen VSPackage.  Describe los detalles de registro y de selección para tal VSPackage, y describe tres características CONTROL\-relacionadas de origen principal: el control de los eventos de la Consulta\-Save \(QEQS\) de la Consulta\-Edición, de reemplazo del glifo, y de la interfaz de usuario personalizada \(UI\) para las funciones de control de código fuente.  
+# <a name="source-control-vspackage-features"></a>Características de VSPackage del Control de código fuente
+Esta sección describen las distintas características de un control de código fuente VSPackage. Describe el registro y selección de detalles de un paquete de VS y describe tres de las características relacionadas con el control de código fuente principal: controlar eventos Editar consulta Guardar consulta (QEQS), reemplazo de glifo y la interfaz de usuario personalizada (UI) para el control de código fuente funciones.  
   
-## En esta sección  
- [Selección y registro](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
- Describe los mecanismos del registro y la selección del paquete.  
+## <a name="in-this-section"></a>En esta sección  
+ [Registro y la selección](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
+ Describe los mecanismos de registro y la selección del paquete.  
   
  [Guardar la consulta Editar consulta](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)  
- Explica el rol del Consulta\-Save de la Consulta\-Edición y cómo se controlan mediante el control de código fuente VSPackage.  
+ Explica el rol de los eventos de consulta Editar consulta guardado y cómo se controlan mediante el control de código fuente VSPackage.  
   
  [Control de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)  
  Describe los niveles de control de glifo y cómo implementarlos.  
   
  [Interfaz de usuario personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)  
- Describe los elementos de la interfaz de usuario que un control de código fuente VSPackage puede especificar.  
+ Se describen los elementos de interfaz de usuario que puede especificar un control de código fuente VSPackage.  
   
-## Secciones relacionadas  
- [Crear un VSPackage del Control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Describe cómo crear un control de código fuente VSPackage que no solo la funcionalidad de control de código fuente de fuentes pero se puede utilizar para personalizar la interfaz de usuario del control de código fuente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Creación de un VSPackage de control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ Describe cómo crear un control de código fuente VSPackage que no solo proporciona funcionalidad de control de código fuente, pero se puede usar para personalizar el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario de control de código fuente.

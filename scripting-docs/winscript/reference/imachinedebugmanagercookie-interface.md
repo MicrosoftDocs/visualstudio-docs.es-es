@@ -1,38 +1,41 @@
 ---
-title: "IMachineDebugManagerCookie (Interfaz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IMachineDebugManagerCookie (interfaz)"
+title: IMachineDebugManagerCookie (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IMachineDebugManagerCookie interface
 ms.assetid: 04770935-3ccf-41e9-b0c1-c78376ab1e3c
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a03b959a7eb09f3b85530bbba07d1d2dc7f8948a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManagerCookie (Interfaz)
-Similar a la interfaz de `IMachineDebugManager` , la de la interfaz de `IMachineDebugManagerCookie` muestran las cookies.  
+# <a name="imachinedebugmanagercookie-interface"></a>IMachineDebugManagerCookie (Interfaz)
+Similar a la `IMachineDebugManager` interfaz, la `IMachineDebugManagerCookie` interfaz es compatible con las cookies de depuración.  
   
- Esta interfaz \(junto con la interfaz de `IDebugCookie` \) permite que los scripts se ejecutan en un proceso del depurador del archivo de comandos sin requerir que el depurador realiza el seguimiento de esos scripts.  
+ Esta interfaz (junto con la `IDebugCookie` interfaz) permite que los scripts para que se ejecute en un proceso de depuración de secuencia de comandos sin necesidad de que el depurador realizar un seguimiento de los scripts.  
   
- Un depurador del archivo de comandos llama al método de `IDebugCookie::SetDebugCookie` en el administrador de proceso \(PDM\) de depuración.  A continuación, el PDM envía esta cookie junto con cualquier solicitud de agregar o quitar una aplicación de script en o desde el Administrador de depuración de equipos \(MDM\), utilizando los métodos de la interfaz de `IMachineDebugManagerCookie` .  El MDM continuación notifica a cada depurador de cambio, a excepción de que tiene ésta.  
+ Llama a un depurador de script el `IDebugCookie::SetDebugCookie` método en el Administrador de depurar de proceso (PDM). A continuación, el PDM envía esta cookie junto con cualquier solicitud para agregar o quitar una aplicación de script a o desde la máquina Debug Manager (MDM), utilizando los métodos de la `IMachineDebugManagerCookie` interfaz. MDM, a continuación, notifica a cada depurador del cambio, excepto aquel que tiene dicha cookie.  
   
- Además de los métodos heredados de `IUnknown`, la interfaz `IMachineDebugManagerCookie` expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, el `IMachineDebugManagerCookie` interfaz expone los métodos siguientes.  
   
-## métodos en el orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Agrega una aplicación a la lista actual de la aplicación.|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Devuelve un enumerador de lista actual de aplicaciones en ejecución.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Quita una aplicación de la lista actual de la aplicación.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Agrega una aplicación en el que se ejecuta lista de aplicaciones.|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Devuelve un enumerador de la lista actual de las aplicaciones en ejecución.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Quita una aplicación desde el que se ejecuta lista de aplicaciones.|  
   
-## Vea también  
- [IMachineDebugManager \(Interfaz\)](../../winscript/reference/imachinedebugmanager-interface.md)   
- [IDebugCookie \(Interfaz\)](../../winscript/reference/idebugcookie-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IMachineDebugManager (interfaz)](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IDebugCookie (Interfaz)](../../winscript/reference/idebugcookie-interface.md)

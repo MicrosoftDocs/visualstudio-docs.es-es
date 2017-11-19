@@ -1,57 +1,57 @@
 ---
-title: "Implementar aplicaciones, servicios y componentes | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "aplicaciones .NET, implementar"
-  - "componentes [.NET Framework], implementar"
-  - "componentes [Visual Studio], implementar"
-  - "implementar aplicaciones [Visual Studio]"
-  - "implementar aplicaciones [Visual Studio], acerca de la implementación de aplicaciones"
-  - "instaladores"
-  - "publicar"
+title: Implementar aplicaciones, servicios y componentes | Documentos de Microsoft
+ms.custom: 
+ms.date: 07/14/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- .NET applications, deploying
+- components [Visual Studio], deploying
+- installers
+- publishing
+- deploying applications [Visual Studio]
+- deploying applications [Visual Studio], about deploying applications
+- components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
-caps.handback.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "33"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 9d9aeaa80aa054b8178adbfc707b1537449776d7
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
-# Implementar aplicaciones, servicios y componentes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="deploying-applications-services-and-components"></a>Implementar aplicaciones, servicios y componentes
 
-Al implementar una aplicación, servicio o componente, se distribuye para su instalación en otros equipos, dispositivos, servidores o en la nube.  Elija el método apropiado en Visual Studio para el tipo de implementación que necesita.  
+Al implementar una aplicación, servicio o componente, se distribuye para su instalación en otros equipos, dispositivos, servidores o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita.  
   
- En la tabla siguiente, encontrará descripciones de varios escenarios de implementación y vínculos para obtener más información acerca de cómo puede completar correctamente dichos escenarios.  
+En la tabla siguiente describe los distintos escenarios de implementación y proporciona vínculos para obtener más información para cada escenario.  
+
+Para obtener una explicación de las opciones para crear una experiencia de instalación para una aplicación de Windows, vea [escritorio al puente de plataforma Universal de Windows (UWP)](/windows/uwp/porting/desktop-to-uwp-root#convert).
+
+ 
+## <a name="in-this-section"></a>En esta sección  
   
-## En esta sección  
-  
-|Escenario de implementación|Contenido adicional|  
-|---------------------------------|-------------------------|  
-|**Publicar en la nube:** puede usar Visual Studio para implementar aplicaciones, servicios y datos en Microsoft Azure, de modo que estén disponibles desde cualquier sitio.|[Publicar aplicaciones en Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx)|  
-|**Publicación de una aplicación de la Tienda Windows:** puede compilar fácilmente, enviar y vender las aplicaciones desde la Tienda Windows a clientes de todo el mundo.|[Empaquetado, implementación y consulta de aplicaciones de la Tienda Windows](http://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Publicación de una aplicación Windows Phone:** puede enviar una nueva aplicación o actualización de una aplicación existente para su certificación en el Centro de desarrollo de Windows Phone.|[Publicar una aplicación Windows Phone](http://dev.windowsphone.com/publish)|  
-|**Implementar una aplicación o servicio ASP.NET:** puede implementar aplicaciones y servicios ASP.NET de varias maneras diferentes.|[Implementación de aplicaciones web y servicios ASP.NET](http://www.asp.net/aspnet/overview/deployment)|  
-|**Implementar una aplicación o servicio LightSwitch:** después de crear aplicaciones y servicios OData mediante LightSwitch, puede implementarlos en un servidor web o en Microsoft Azure.|[Implementar aplicaciones LightSwitch](../Topic/Deploying%20LightSwitch%20Applications.md)|  
-|**Publicación de una aplicación para SharePoint:** puede publicar una aplicación para SharePoint en la Tienda Office o en un catálogo de aplicaciones para una organización interna.|[Publicar una aplicación para SharePoint mediante Visual Studio](http://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Publicación de una aplicación para Office:** puede publicar una aplicación para Office en la Tienda Office o en un catálogo de aplicaciones para una organización interna.|[Publicar la aplicación de Office](http://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Implementación de un servicio WCF:** otras aplicaciones pueden utilizar los servicios RIA de WCF que se implementen en un servidor web.|[Implementar soluciones de servicios RIA de WCF](http://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Implementación de un servicio OData:** otras aplicaciones pueden utilizar los servicios OData que se implementen en un servidor web.|[Implementación de un servicio OData](http://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Implementación de una aplicación de escritorio:** mediante la implementación de ClickOnce, puede publicar una aplicación de escritorio en un servidor web o en un recurso compartido de archivos de red.  A continuación, los usuarios podrán instalar la aplicación con un solo clic.|[Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Creación de un programa de instalación:** puede crear un programa de instalación mediante InstallShield Limited Edition, que es gratuito.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Mantener un programa de instalación existente:** puede seguir usando un programa de instalación creado con una versión anterior de Visual Studio instalando la extensión de proyectos del instalador de Visual Studio.|[Extensión de proyectos del instalador de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Aquí encontrará documentación sobre los proyectos de instalador: [Implementación del instalador de Visual Studio](http://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Implementación de una aplicación de Visual C\+\+:** puede implementar el runtime de Visual C\+\+ con una aplicación mediante la implementación central, la implementación local o la vinculación estática.|[Implementación de aplicaciones de escritorio nativas \(Visual C\+\+\)](http://msdn.microsoft.com/library/zebw5zk9.aspx)|  
-|**Implementación de una aplicación para pruebas:** puede habilitar un desarrollo y pruebas más sofisticados si implementa las aplicaciones en entornos virtuales.|[Probar en un entorno de laboratorio](/devops-test-docs/test/test-on-a-lab-environment)|  
-|**Instalación de requisitos previos:** puede instalar los componentes de requisitos previos para las aplicaciones de escritorio si configura un instalador genérico, que se denomina arranque.|[Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)|
+| Escenario de implementación | Contenido adicional |
+| --- | --- |  
+| **Publicar en la nube:** hacer que las aplicaciones, servicios y datos disponibles desde cualquier lugar mediante Visual Studio para implementarlas en Microsoft Azure.|[Publicación de aplicaciones en Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx) |
+| **Publicar una aplicación de Windows:** fácilmente puede crear, enviar y vender las aplicaciones de Microsoft Store para los clientes de todo el mundo. |[Publicar aplicaciones de Windows](https://developer.microsoft.com/store/publish-apps) |
+| **Implementar una aplicación ASP.NET o servicio:** puede implementar aplicaciones ASP.NET y servicios en una de varias maneras diferentes.|[Implementación de aplicaciones web ASP.NET y servicios](http://www.asp.net/aspnet/overview/deployment) |
+| **Publicar un complemento de Office:** puede publicar un complemento de Office desde Visual Studio. | [Implementar y publicar el complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Implementar un servicio WCF o OData:** otras aplicaciones pueden utilizar los servicios RIA de WCF que se implementen en un servidor web. | [Desarrollar e implementar WCF Data Services](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Implementar una aplicación de escritorio:** mediante la implementación de ClickOnce, puede publicar una aplicación de escritorio en un servidor web o un recurso compartido de red. A continuación, los usuarios podrán instalar la aplicación con un solo clic. | [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md) |
+| **Implementar una aplicación de Visual C++:** se puede implementar el tiempo de ejecución de Visual C++ con una aplicación mediante la implementación central, implementación local o vinculación estática. | [Implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
+| **Crear un instalador:** un instalador de WiX basadas en MSI puede crearse con el [WiX conjunto de herramientas de Visual Studio de 2017 extensión](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Tenga en cuenta que ya no se incluye con Visual Studio; InstallShield Limited Edition Póngase en contacto con [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) acerca de la disponibilidad de 2017 de Visual Studio. |
+| **Implementar una aplicación para pruebas:** puede habilitar más sofisticadas desarrollo y pruebas mediante la implementación de las aplicaciones en entornos virtuales.|[Ejecutar pruebas en un entorno de laboratorio](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
+| **Instalar los requisitos previos:** puede instalar los componentes necesarios para las aplicaciones de escritorio mediante la configuración de un instalador genérico, que se conoce como un programa previo.|[Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md) |
+| **Implementar una aplicación o servicio LightSwitch:** ya no se admite en 2017 de Visual Studio LightSwitch, pero todavía se pueden implementar desde Visual Studio 2015 y versiones anteriores. | [Implementar aplicaciones de LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |  

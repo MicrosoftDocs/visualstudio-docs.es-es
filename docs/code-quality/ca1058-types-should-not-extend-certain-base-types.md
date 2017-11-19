@@ -1,29 +1,30 @@
 ---
-title: "CA1058: Los tipos no deben ampliar ciertos tipos base | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TypesShouldNotExtendCertainBaseTypes"
-  - "CA1058"
-helpviewer_keywords: 
-  - "CA1058"
-  - "TypesShouldNotExtendCertainBaseTypes"
+title: 'CA1058: Los tipos no deben ampliar ciertos tipos base | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TypesShouldNotExtendCertainBaseTypes
+- CA1058
+helpviewer_keywords:
+- CA1058
+- TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
-caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 45cddd908c53d129a230b998c6dad03196a31c49
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1058: Los tipos no deben ampliar ciertos tipos base
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Los tipos no deben ampliar ciertos tipos base
 |||  
 |-|-|  
 |TypeName|TypesShouldNotExtendCertainBaseTypes|  
@@ -31,8 +32,8 @@ caps.handback.revision: 24
 |Categoría|Microsoft.Design|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- Un tipo visible externamente extiende algunos tipos base.  En la actualidad, esta regla muestra los tipos que se derivan de los tipos siguientes:  
+## <a name="cause"></a>Motivo  
+ Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica tipos que derivan de los tipos siguientes:  
   
 -   <xref:System.ApplicationException?displayProperty=fullName>  
   
@@ -50,17 +51,17 @@ caps.handback.revision: 24
   
 -   <xref:System.Collections.Stack?displayProperty=fullName>  
   
-## Descripción de la regla  
- En [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versión 1, se recomendaba derivar las nuevas excepciones de <xref:System.ApplicationException>.  La recomendación ha cambiado y las nuevas excepciones deberían derivar de <xref:System.Exception?displayProperty=fullName> o de una de sus subclases en el espacio de nombres <xref:System>.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Para [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versión 1, se recomendaba derivar las nuevas excepciones de <xref:System.ApplicationException>. Ha cambiado la recomendación y nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o una de sus subclases en el <xref:System> espacio de nombres.  
   
- No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista de XML de un modelo de objetos u origen de datos subyacente.  
+ No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un origen de datos o el modelo de objeto subyacente.  
   
-### Colecciones no genéricas  
- Utilice y\/o extienda las colecciones genéricas siempre que sea posible.  No extienda las colecciones no genéricas en su código, a menos que previamente lo hubiera distribuido.  
+### <a name="non-generic-collections"></a>Colecciones no genéricas  
+ Utilice o extienda las colecciones genéricas siempre que sea posible. No se extienden colecciones no genéricas en el código, a menos que envió previamente.  
   
  **Ejemplos de uso incorrecto**  
   
-```c#  
+```csharp  
 public class MyCollection : CollectionBase  
 {  
 }  
@@ -72,7 +73,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
   
  **Ejemplos de uso correcto**  
   
-```c#  
+```csharp  
 public class MyCollection : Collection<T>  
 {  
 }  
@@ -82,8 +83,8 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 }  
 ```  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, derive el tipo desde un tipo base diferente o desde una colección genérica.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, derive el tipo de un tipo base diferente o una colección genérica.  
   
-## Cuándo suprimir advertencias  
- No suprima una advertencia de esta regla para las infracciones relativas a <xref:System.ApplicationException>.  Es seguro suprimir una advertencia de esta regla para las infracciones relativas a <xref:System.Xml.XmlDocument>.  Es seguro suprimir una advertencia sobre una colección no genérica si previamente se liberó código.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla para las infracciones sobre <xref:System.ApplicationException>. Es seguro suprimir una advertencia de esta regla si hay infracciones de sobre <xref:System.Xml.XmlDocument>. Es seguro suprimir una advertencia sobre una colección no genérica si previamente se liberó el código.

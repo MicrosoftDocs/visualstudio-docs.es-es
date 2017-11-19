@@ -1,63 +1,64 @@
 ---
-title: "M&#233;todos abreviados de teclado (HTML y JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Abreviados (HTML y JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ea32fcb78986d527959b8ef602161e5336395bfc
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
-# M&#233;todos abreviados de teclado (HTML y JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![Se aplica a Windows y a Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="keyboard-shortcuts-html-and-javascript"></a>Métodos abreviados de teclado (HTML y JavaScript)
+![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Métodos abreviados de teclado de Visual Studio para depurar aplicaciones de la Tienda con HTML y JavaScript.  
+ Métodos abreviados de teclado en Visual Studio para depurar aplicaciones UWP con HTML y JavaScript.  
   
-## Métodos abreviados generales  
- Estos métodos abreviados funcionan en todas las herramientas de las aplicaciones de la Tienda con HTML y JavaScript.  
+## <a name="general-shortcuts"></a>Métodos abreviados generales  
+ Estos métodos abreviados funcionan en todas las herramientas para aplicaciones UWP con HTML y JavaScript.  
   
-|Acción|Método abreviado|  
-|------------|----------------------|  
-|Actualizar aplicación de Windows|Ctrl\+Mayús\+R|  
-|Reiniciar aplicación de Windows|Ctrl\+Mayús\+F5|  
-|Detener depuración|Mayús\+F5|  
-|Abrir hub Rendimiento y diagnósticos|Alt\+F2|  
+|Acción|Acceso directo|  
+|------------|--------------|  
+|Actualizar aplicación de Windows|Ctrl+Mayús+R|  
+|Reiniciar aplicación de Windows|Ctrl+Mayús+F5|  
+|Detener depuración|Mayús+F5|  
+|Abrir hub Rendimiento y diagnósticos|Alt+F2|  
   
-## Métodos abreviados de Consola JavaScript  
+## <a name="javascript-console-shortcuts"></a>Métodos abreviados de Consola JavaScript  
  Use estos métodos abreviados en la ventana Consola JavaScript.  
   
-|Acción|Método abreviado|  
-|------------|----------------------|  
+|Acción|Acceso directo|  
+|------------|--------------|  
 |Ejecutar un comando de la consola|Entrar|  
 |Cerrar la consola|Esc|  
-|Alternar entre el modo de una línea y varias líneas|Ctrl\+Alt\+M|  
+|Alternar entre el modo de una línea y varias líneas|Ctrl+Alt+M|  
   
-## Métodos abreviados del Explorador DOM  
+## <a name="dom-explorer-shortcuts"></a>Métodos abreviados del Explorador DOM  
  Use estos métodos abreviados en el Explorador DOM.  
   
-|Acción|Método abreviado|  
-|------------|----------------------|  
-|Seleccionar elemento|Ctrl\+B|  
-|Alternar entre mostrar y ocultar cuadros de resaltado de página web al usar **Seleccionar elemento**|Ctrl\+Mayús\+I|  
-|Confirmar cambios mediante **Editar como HTML**|Ctrl\+Entrar|  
-|Descartar cambios mediante **Editar como HTML**|Esc|  
+|Acción|Acceso directo|  
+|------------|--------------|  
+|Seleccionar elemento|Ctrl+B|  
+|Alternar entre mostrar y ocultar cuadros de resaltado de página Web al usar **Seleccionar elemento**|Ctrl+Mayús+I|  
+|Confirmar cambios mediante **editar como HTML**|Ctrl+Intro|  
+|Descartar los cambios con **editar como HTML**|Esc|  
 |Aumentar en 1 el valor CSS seleccionado|Flecha arriba|  
 |Reducir en 1 el valor CSS seleccionado|Flecha abajo|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

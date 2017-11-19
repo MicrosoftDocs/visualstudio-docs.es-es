@@ -1,39 +1,42 @@
 ---
-title: "C&#243;mo: Establecer un nombre de subproceso en c&#243;digo nativo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurar [C++], subprocesos"
-  - "depurar [Visual Studio], subprocesos"
-  - "SetThreadName (función)"
-  - "nombres de subprocesos"
-  - "subprocesamiento [Visual Studio], nombres"
+title: "Cómo: establecer un nombre de subproceso en código nativo | Documentos de Microsoft"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [C++], threads
+- SetThreadName function
+- threading [Visual Studio], names
+- thread names
+- debugging [Visual Studio], threads
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ded01065c3971daf630fd743d0ad017e2b3d91c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Establecer un nombre de subproceso en c&#243;digo nativo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Cómo: Establecer un nombre de subproceso en código nativo
+La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para realizar el seguimiento de subprocesos en la **subprocesos** ventana.
 
-Para establecer el nombre de un subproceso en el programa, utilice la función `SetThreadName`, como se muestra en el siguiente ejemplo de código. Observe que el nombre de subproceso se copia en el subproceso para poder liberar la memoria del parámetro `threadName`.  
+Para establecer el nombre de un subproceso en el programa, utilice la función `SetThreadName` , como se muestra en el siguiente ejemplo de código. Observe que el nombre de subproceso se copia en el subproceso para poder liberar la memoria del parámetro `threadName` .  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
-```cpp  
+```C++  
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -66,7 +69,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
   
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Cómo: Establecer un nombre de subproceso en código administrado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

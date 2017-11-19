@@ -1,36 +1,37 @@
 ---
-title: "Contexto de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración] y contextos"
+title: "Contexto de código | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 92d6ed317bcf6ceead42db850ee61969409eb136
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Contexto de c&#243;digo
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de depuración, **un contexto de código**:  
+# <a name="code-context"></a>Contexto del código
+En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuración, un **contexto del código**:  
   
--   Proporciona una abstracción de una posición en código como se conoce al motor de depuración \(DE\).  Para la mayoría de las arquitecturas en tiempo de ejecución actual, un contexto del código se puede considerar como dirección en una secuencia de instrucciones de programa.  Para los lenguajes no tradicionales, donde el código no se puede representar mediante instrucciones, un contexto de código puede representarse por otros medios.  
+-   Proporciona una abstracción de una posición en el código como se sabe que el motor de depuración (Alemania). Para la mayoría de tiempo de ejecución de arquitecturas en la actualidad, un contexto de código puede considerarse como una dirección de la secuencia de instrucciones de un programa. Para los idiomas no tradicionales, donde el código no puede representarse por instrucciones, se puede representar un contexto de código de alguna otra manera.  
   
--   Describe la posición actual en la secuencia de ejecución del programa que se depura.  
+-   Describe la posición actual en el flujo de ejecución del programa que se está depurando.  
   
--   Sólo existe cuando un programa ha detenido en un punto de interrupción.  
+-   Existe solo cuando un programa se detiene en un punto de interrupción.  
   
--   Tiene un contexto asociado del documento.  
+-   Tiene un contexto de documento asociado.  
   
--   Se implementa mediante una interfaz de [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .  
+-   Se implementa mediante un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfaz.  
   
-## Vea también  
- [Contexto de documento](../../extensibility/debugger/document-context.md)   
+## <a name="see-also"></a>Vea también  
+ [Contexto del documento](../../extensibility/debugger/document-context.md)   
  [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)

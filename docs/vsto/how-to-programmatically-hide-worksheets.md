@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Hide Worksheets | Microsoft Docs'
+title: "Cómo: ocultar hojas de cálculo de mediante programación | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,49 +14,50 @@ helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
 ms.assetid: 3208f633-137f-47f9-9c9c-2cf8e3c72096
-caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+caps.latest.revision: "44"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b3218c230bd8728684b49425f97f6bbbbcc04718
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ef9d6e72f7d69e3b71b8ea6f6acea9021be6b2cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>How to: Programmatically Hide Worksheets
-  You can show or hide any worksheet in a workbook. To hide a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
+# <a name="how-to-programmatically-hide-worksheets"></a>Cómo: Ocultar hojas de cálculo mediante programación
+  Puede mostrar u ocultar las hojas de cálculo de un libro. Para ocultar una hoja de cálculo, use el elemento host de la hoja de cálculo o acceda a ella mediante la colección “Sheets” del libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
- If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> property to hide the specified worksheet.  
+## <a name="using-the-worksheet-host-item"></a>Usar el elemento host Worksheet  
+ Si la hoja de cálculo se agregó durante el diseño de una personalización de nivel de documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> para ocultar la hoja de cálculo especificada.  
   
-#### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>To hide a worksheet using a worksheet host item  
+#### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>Ocultar una hoja de cálculo mediante un elemento host de hoja de cálculo  
   
-1.  Set the <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> property of the `Sheet1` host item to the <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> enumeration value.  
+1.  Establezca la propiedad <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> del elemento host `Sheet1` en el valor de la enumeración <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> .  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]  [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
+     [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
- Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Usar la colección Sheets del libro de Excel  
+ Acceda a las hojas de cálculo a través de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> de Microsoft Office Excel en los siguientes casos:  
   
--   You want to hide a worksheet in an VSTO Add-in.  
+-   Si desea ocultar la hoja de cálculo de un complemento VSTO.  
   
--   The worksheet that you want to hide was created at run time in a document-level customization.  
+-   Si la hoja de cálculo que desea ocultar se creó en tiempo de ejecución en una personalización de nivel de documento.  
   
-#### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>To hide a worksheet using the Sheets collection of the Excel workbook  
+#### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>Ocultar una hoja de cálculo mediante la colección “Sheets” del libro de Excel  
   
-1.  Set the <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> property of the worksheet to the <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> enumeration value.  
+1.  Establezca la propiedad <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> de la hoja de cálculo en el valor de enumeración <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> .  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]  [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]
+     [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Delete Worksheets from Workbooks](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
+## <a name="see-also"></a>Vea también  
+ [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
+ [Cómo: eliminar hojas de cálculo mediante programación de los libros](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Cómo: mover hojas de cálculo dentro de los libros de programación](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Cómo: proteger hojas de cálculo de mediante programación](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)  
+ [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)  
   

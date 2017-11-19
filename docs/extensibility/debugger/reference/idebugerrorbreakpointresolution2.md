@@ -1,56 +1,56 @@
 ---
-title: "IDebugErrorBreakpointResolution2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpointResolution2"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpointResolution2"
+title: IDebugErrorBreakpointResolution2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugErrorBreakpointResolution2
+helpviewer_keywords: IDebugErrorBreakpointResolution2
 ms.assetid: b1234216-0ac8-461d-b2a7-54f60f8f3262
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ff3f9c1049b3ce81044dd33e8d4768ecefa7cb1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugErrorBreakpointResolution2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
 Esta interfaz representa la resolución de un error de punto de interrupción.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugErrorBreakpointResolution2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Un motor de depuración implementa esta interfaz como parte de su compatibilidad para los puntos de interrupción.  Esta interfaz se utiliza para indicar dónde un punto de interrupción no puede enlazar.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un motor de depuración implementa esta interfaz como parte de su compatibilidad con los puntos de interrupción. Esta interfaz se usa para informar de que un punto de interrupción no se pudo enlazar.  
   
-## Notas para los llamadores  
- Una llamada a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) devuelve esta interfaz para proporcionar información sobre donde el punto de interrupción no puede enlazar.  el método de [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) obtiene la interfaz de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Una llamada a [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) devuelve esta interfaz para proporcionar información sobre donde el punto de interrupción no se pudo enlazar. El [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) método obtiene la [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugErrorBreakpointResolution2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugErrorBreakpointResolution2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|Obtiene el tipo de punto de interrupción.|  
 |[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|Obtiene la información de resolución de punto de interrupción.|  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)   
  [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)

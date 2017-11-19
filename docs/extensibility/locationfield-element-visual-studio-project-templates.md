@@ -1,72 +1,72 @@
 ---
-title: "LocationField (Elemento, Plantillas de proyecto de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#LocationField"
-helpviewer_keywords: 
-  - "LocationField (elemento) [plantillas de proyecto de Visual Studio]"
+title: LocationField (elemento) (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
+helpviewer_keywords: LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 33be0fde28dded57aafa04e8d6862bcd6e0cf101
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# LocationField (Elemento, Plantillas de proyecto de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (Elemento, Plantillas de proyecto de Visual Studio)
 Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo está habilitado, deshabilitado u oculto para la plantilla de proyecto.  
   
- \<VSTemplate\>  
- \<TemplateData\>  
- \<LocationField\>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<LocationField >  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <LocationField> Enabled/Disabled/Hidden </LocationField>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el **nuevo proyecto**.|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Los valores válidos son:  
+ Los valores de texto válidos son:  
   
--   `Enabled`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está habilitado.  
+-   `Enabled`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** se habilita el cuadro de diálogo.  
   
--   `Disabled`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está deshabilitado.  
+-   `Disabled`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está deshabilitado.  
   
--   `Hidden`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** se oculta el cuadro de diálogo.  
+-   `Hidden`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** se oculta el cuadro de diálogo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  El valor predeterminado es `Enabled`.  
   
- El **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo permite a los usuarios cambiar el directorio predeterminado donde se guardan los nuevos proyectos.  
+ El **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo permite a los usuarios cambiar el directorio predeterminado en el que se guardan los nuevos proyectos.  
   
  El valor especificado en el `Location` elemento solo se admite en el cuadro de diálogo si el sistema de proyectos subyacente lo admite.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
   
 ```  
@@ -94,6 +94,6 @@ Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro 
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

@@ -1,36 +1,37 @@
 ---
-title: "C&#243;mo: desencadenar eventos cuando el Editor pierde el foco | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK] heredados: desencadenan eventos al perder el foco"
+title: "Cómo: desencadenar eventos cuando el Editor pierde el foco | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9a566d52dc1aabb9895e2f1f9751fdb37ae016d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: desencadenar eventos cuando el Editor pierde el foco
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-A veces es necesario saber cuándo un editor pierde el foco del marco de la ventana.  Por ejemplo, puede que deba extraer código de una ventana de código después de que el editor se foco no más en él.  El procedimiento siguiente proporciona los pasos para seguir para recibir notificación de ejecuta el foco del editor.  
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Cómo: desencadenar eventos cuando el Editor pierde el foco
+A veces es necesario saber cuándo un editor pierde el foco en el marco de ventana. Por ejemplo, deberá extraer el código desde una ventana de código después de que el editor ya no se centra en ella. El procedimiento siguiente proporciona los pasos que deben seguirse para recibir una notificación del editor pierde el foco.  
   
-### Para desencadenar un evento en respuesta a un enfoque de ejecuta editor  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Para desencadenar un evento en respuesta a un editor pierde el foco  
   
-1.  Controlar los eventos de selección obtener un objeto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> de <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
+1.  Supervisar los eventos de selección mediante la obtención de un <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> objeto <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
   
-2.  Llame al <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> y proporcionelo el objeto de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> .  
+2.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> y proporcionarla el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> objeto.  
   
 3.  En la llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>, busque `elementid==SEID_WindowFrame`.  
   
-4.  pruebe el parámetro de `varValueNew` para dos cosas:  
+4.  Prueba la `varValueNew` parámetro para dos cosas:  
   
-    1.  El marco de la ventana que está buscando.  
+    1.  El marco de ventana que está buscando.  
   
-    2.  El punto en el que el programa pierde la selección a ese marco de la ventana.
+    2.  El punto en el que el programa pierde la selección a ese marco de ventana.

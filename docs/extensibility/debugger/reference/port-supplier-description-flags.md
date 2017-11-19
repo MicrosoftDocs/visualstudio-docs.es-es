@@ -1,57 +1,58 @@
 ---
-title: "PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Enumeración PORT_SUPPLIER_DESCRIPTION_FLAGS"
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f0fe828d4f1aaa537cdccbb8dd353383cebb9df0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# PORT_SUPPLIER_DESCRIPTION_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Define los metadatos que se pueden recuperar sobre un proveedor de puerto.  
+# <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
+Define los metadatos que se pueden recuperar sobre un proveedor del puerto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
 {  
-   PSDFLAG_SHOW_WARNING_ICON = 0x1  
+   PSDFLAG_SHOW_WARNING_ICON = 0x1  
 };  
 typedef DWORD PORT_SUPPLIER_DESCRIPTION_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS  
 {  
-   PSDFLAG_SHOW_WARNING_ICON = 0x1  
+   PSDFLAG_SHOW_WARNING_ICON = 0x1  
 };  
 ```  
   
-## términos  
- PSDFLAG\_SHOW\_WARNING\_ICON  
- Si está seleccionado, el icono de advertencia se mostrarán en la interfaz de usuario.  
+## <a name="terms"></a>Términos  
+ PSDFLAG_SHOW_WARNING_ICON  
+ Si se selecciona, se mostrará el icono de advertencia en la interfaz de usuario.  
   
-## Comentarios  
- esta enumeración es devuelta por el método de [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .  
+## <a name="remarks"></a>Comentarios  
+ Esta enumeración es devuelto por la [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) método.  
   
-## Requisitos  
- encabezado: Msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

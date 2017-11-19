@@ -1,52 +1,51 @@
 ---
-title: "IDiaAddressMap::put_relativeVirtualAddressEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::put_relativeVirtualAddressEnabled (método)"
+title: 'Idiaaddressmap:: Put_relativevirtualaddressenabled | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::put_relativeVirtualAddressEnabled method
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d248c573ee9952fd3783f6994f5e0022c94ba436
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::put_relativeVirtualAddressEnabled
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-permite que el cliente habilite o deshabilite el cálculo y el uso de direcciones virtuales relativas \(RVA\).  
+# <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
+Permite al cliente habilitar o deshabilitar el cálculo y el uso de direcciones virtuales relativas (RVA).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT put_relativeVirtualAddressEnabled (   
-   BOOL NewVal  
+```C++  
+HRESULT put_relativeVirtualAddressEnabled (   
+   BOOL NewVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  NewVal  
- \[in\]  Establezca en `TRUE` a habilitar, o `FALSE` a deshabilitar.  
+ [in] Establecido en `TRUE` para habilitar, o `FALSE` a deshabilitar.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Instrucciones para los objetos de depuración descritos por las interfaces del diámetro, y en relación con la base de imagen del ejecutable, se pueden recuperar como direcciones virtuales relativas.  
+## <a name="remarks"></a>Comentarios  
+ Direcciones de los objetos de depuración descritos por interfaces DIA y en relación con la imagen del archivo ejecutable base, se pueden recuperar como direcciones virtuales relativas.  
   
- El uso de las RVA está habilitada cuando los segmentos se cargan inicialmente de un archivo PDB.  Para obtener el estado actual del uso de las RVA, llame al método de [IDiaAddressMap::get\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) .  
+ El uso de RVA se habilita cuando segmentos inicialmente se cargan desde un archivo PDB. Para obtener el estado actual del uso de RVA, llame a la [idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) método.  
   
- El método de `put_relativeVirtualAddress` se debe llamar a para habilitar las RVA después de una llamada correcta al método de [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) haya establecido nuevos encabezados de imagen.  
+ El `put_relativeVirtualAddress` método debe llamarse para habilitar RVA después de una llamada correcta a la [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) método estableció nuevos encabezados de imagen.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::get\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
- [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
+ [Idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

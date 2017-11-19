@@ -1,72 +1,71 @@
 ---
-title: "IDiaSession::findChildren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findChildren (método)"
+title: 'Idiasession:: Findchildren | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findChildren method
 ms.assetid: 5d19046f-f668-4aa9-8788-95cda9a98997
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 74162d2985ea617569d4bcb250660a261528b395
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findChildren
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera todos los elementos secundarios de un identificador primario especificado que coincidan con el nombre y el tipo de token.  
+# <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
+Recupera a todos los elementos secundarios de un identificador de elemento primario especificado que coinciden con el tipo de nombre y el símbolo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findChildren (   
-   IDiaSymbol*       parent,  
-   SymTagEnum        symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   IDiaEnumSymbols** ppResult  
+```C++  
+HRESULT findChildren (   
+   IDiaSymbol*       parent,  
+   SymTagEnum        symtag,  
+   LPCOLESTR         name,  
+   DWORD             compareFlags,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `parent`  
- \[in\]  Un objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa el elemento primario.  Si este token primario es una función, módulo, o bloque, después devuelven sus elementos secundarios léxicos en `ppResult`.  Si el token primario es un tipo, después devuelven sus derivados de la clase.  Si este parámetro es `NULL`, después `symtag` establecido en `SymTagExe` o a `SymTagNull`, que devuelve el ámbito global \(archivo .exe\).  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el elemento primario. Si este símbolo primario es una función, un módulo o un bloque, se devuelven sus elementos secundarios léxicos en `ppResult`. Si el símbolo de elemento primario es un tipo, se devuelven sus elementos secundarios de la clase. Si este parámetro es `NULL`, a continuación, `symtag` debe establecerse en `SymTagExe` o `SymTagNull`, que devuelve el ámbito global (archivo .exe).  
   
  `symtag`  
- \[in\]  Especifica la etiqueta del token de los elementos secundarios que se recuperarán.  los valores se toman de la enumeración de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) .  Establezca en `SymTagNull` para recuperar todos los elementos secundarios.  
+ [in] Especifica la etiqueta de símbolo de los elementos secundarios van a recuperar. Valores se toman de la [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. Establecido en `SymTagNull` para recuperar todos los elementos secundarios.  
   
  `name`  
- \[in\]  especifica el nombre de los elementos secundarios que se recuperarán.  Establezca en `NULL` para que todos los elementos secundarios se recuperen.  
+ [in] Especifica el nombre de los elementos secundarios van a recuperar. Establecido en `NULL` para todos los elementos secundarios van a recuperar.  
   
  `compareFlags`  
- \[in\]  Especifica las opciones de comparación aplicado para llamar a coincidir.  Los valores de enumeración de [NameSearchOptions \(Enumeración\)](../../debugger/debug-interface-access/namesearchoptions.md) sólo se pueden utilizar o en combinación.  
+ [in] Especifica las opciones de comparación que se aplica a la coincidencia de nombres. Los valores de la [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md) enumeración puede utilizarse por sí solas o en combinación.  
   
  `ppResult`  
- \[out\]  Devuelve un objeto de [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contiene la lista de símbolos secundarios recuperados.  
+ [out] Devuelve un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recupera el objeto que contiene la lista de símbolos de secundarios.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo buscar variables locales de la función `pFunc` que nombre `szVarName`match.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo buscar las variables locales de función `pFunc` esa coincidencia nombre `szVarName`.  
   
-```cpp#  
+```C++  
 IDiaEnumSymbols* pEnum;  
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Información general](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions \(Enumeración\)](../../debugger/debug-interface-access/namesearchoptions.md)   
- [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md)
+ [NameSearchOptions (enumeración)](../../debugger/debug-interface-access/namesearchoptions.md)   
+ [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md)

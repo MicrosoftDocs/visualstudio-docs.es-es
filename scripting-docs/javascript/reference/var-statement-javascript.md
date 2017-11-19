@@ -1,70 +1,72 @@
 ---
-title: "var (Instrucci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "var_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "declarar variables, instrucción var"
-  - "var (instrucción)"
+title: "var (instrucción) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/22/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: var_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- declaring variables, var statement
+- var statement
 ms.assetid: 56f900af-a5c4-4667-9664-5956d30f0aae
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 839b6904fa59b6f4ea9a5c4d8e00213cd351517a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# var (Instrucci&#243;n de JavaScript)
+# <a name="var-statement-javascript"></a>var (Instrucción de JavaScript)
 Declara una variable.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 var variable1 = value1  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `variable1`  
- Nombre de la variable que se está declarando.  
+ El nombre de la variable que se declara.  
   
  `value1`  
- Valor inicial asignado a la variable.  
+ El valor inicial asignado a la variable.  
   
-## Comentarios  
- Utilice la instrucción `var` para declarar variables.  Puede asignar valores a variables al declararlas o más adelante en el script.  
+## <a name="remarks"></a>Comentarios  
+ Use la `var` instrucción para declarar las variables. Puede asignar valores a las variables al declararlas o más adelante en la secuencia de comandos.  
   
- Una variable se declara la primera vez que aparece en el script.  
+ Una variable se declara la primera vez aparece en la secuencia de comandos.  
   
- Puede declarar una variable sin usar la palabra clave `var` y asignarle un valor.  Esto es lo que se denomina una *declaración implícita* y no es recomendable.  Una declaración implícita aplica a la variable un ámbito global.  Sin embargo, al declarar una variable en un procedimiento, normalmente no es conveniente que tenga ámbito global.  Para evitar asignar a la variable el ámbito global, debe usar la palabra clave `var` en la declaración de variable.  
+ Puede declarar una variable sin utilizar la `var` (palabra clave) y asignar un valor a él. Esto se conoce como un *declaración implícita*, y no se recomienda. Una declaración implícita proporciona el ámbito de la variable global. Cuando se declara una variable en el nivel de procedimiento, sin embargo, normalmente no desea que tienen ámbito global. Para evitar que proporciona el ámbito de la variable global, se debe utilizar el `var` palabra clave en la declaración de variables.  
   
- Si no inicializa la variable en la instrucción `var`, se le asigna automáticamente el valor `undefined` de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Si no se inicializa la variable en el `var` instrucción, se asigna automáticamente el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valor `undefined`.  
   
-## Ejemplo  
- En los ejemplos siguientes se muestra el uso de la instrucción `var`.  
+## <a name="example"></a>Ejemplo  
+ Los siguientes ejemplos ilustran el uso de la `var` instrucción.  
   
-```javascript  
+```JavaScript  
 var index;  
 var name = "Thomas Jefferson";  
 var answer = 42, counter, numpages = 10;  
 var myarray = new Array();  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [function \(Instrucción\)](../../javascript/reference/function-statement-javascript.md)   
- [new \(Operador\)](../../javascript/reference/new-operator-decrementjavascript.md)   
- [Array \(Objeto\)](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Function (instrucción)](../../javascript/reference/function-statement-javascript.md)   
+ [new (Operador, Referencia de C#)](../../javascript/reference/new-operator-decrementjavascript.md)   
+ [Array (objeto)](../../javascript/reference/array-object-javascript.md)   
  [Variables](../../javascript/variables-javascript.md)

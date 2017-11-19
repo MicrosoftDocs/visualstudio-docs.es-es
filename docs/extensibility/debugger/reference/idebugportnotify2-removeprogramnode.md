@@ -1,53 +1,53 @@
 ---
-title: "IDebugPortNotify2::RemoveProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortNotify2::RemoveProgramNode"
-helpviewer_keywords: 
-  - "IDebugPortNotify2::RemoveProgramNode"
+title: IDebugPortNotify2::RemoveProgramNode | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortNotify2::RemoveProgramNode
+helpviewer_keywords: IDebugPortNotify2::RemoveProgramNode
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: efb3ca5e659782d50c7111d51cac970676dbaffd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortNotify2::RemoveProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Anula que un programa que se puede depurar el puerto se está ejecutando.  
+# <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
+Anula el registro de un programa que se puede depurar en el puerto que se ejecuta.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT RemoveProgramNode(   
-   IDebugProgramNode2* pProgramNode  
+```cpp  
+HRESULT RemoveProgramNode(   
+   IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
-```c#  
-int RemoveProgramNode(   
-   IDebugProgramNode2 pProgramNode  
+```csharp  
+int RemoveProgramNode(   
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pProgramNode`  
- \[in\]  Un objecy de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el programa no esté registrado.  
+ [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy que representa el programa se va a anular.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Este método quita un nodo del programa que se agregó con una llamada al método de [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) .  
+## <a name="remarks"></a>Comentarios  
+ Este método quita un nodo de programa que se ha agregado con una llamada a la [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

@@ -1,25 +1,27 @@
 ---
-title: "C&#243;mo: instalar un complemento de Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "instalación [Visual Studio SDK], complementos de control de código fuente"
-  - "origen control complementos, instalar"
+title: "Cómo: instalar un complemento de Control de código fuente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- installation [Visual Studio SDK], source control plug-ins
+- source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: 32
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ab02b65e4a40f15da857038a45d9bcc2b88b1b83
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: instalar un complemento de Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de Control de código fuente
 Crear un control de código fuente complemento implica tres pasos:  
   
 1.  Crear un archivo DLL con las funciones definidas en la sección de referencia de API de complemento de Control de origen de esta documentación.  
@@ -29,7 +31,7 @@ Crear un control de código fuente complemento implica tres pasos:
 3.  Registrar el archivo DLL mediante la realización de entradas de registro correspondientes.  
   
 ## <a name="integration-with-visual-studio"></a>Integración con Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es compatible con complementos de control de código fuente que se ajustan a la API de complemento de Control de origen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]es compatible con complementos de control de código fuente que se ajustan a la API de complemento de Control de origen.  
   
 ### <a name="registering-the-source-control-plug-in"></a>Registrar el complemento de Control de código fuente  
  Antes de poder llamar un entorno de desarrollo integrado (IDE) está ejecutando en el sistema de control de código fuente, debe buscar primero el origen de la DLL del complemento que exporta la API de control.  
@@ -54,9 +56,9 @@ Crear un control de código fuente complemento implica tres pasos:
   
          HideInVisualStudio es un valor DWORD y se establece en 1 para ocultar el complemento o 0 para mostrar el complemento. Si no aparece la entrada del registro, el comportamiento predeterminado es mostrar el complemento.  
   
-    -   La entrada de registro DisableSccManager puede usarse para deshabilitar u ocultar el **Iniciar \< servidor de Control de código fuente>** opción de menú que aparece normalmente en el **archivo** -> **Control de código fuente** submenú. Al seleccionar este menú opción llamadas el [SccRunScc](../../extensibility/sccrunscc-function.md) (función). El complemento de control de código fuente puede no admitir un programa externo y, por tanto, puede que desee deshabilitar u ocultar incluso el **iniciar** opción de menú.  
+    -   La entrada de registro DisableSccManager puede usarse para deshabilitar u ocultar el **iniciar \<servidor de Control de origen >** opción de menú que aparece normalmente en el **archivo**  ->   **Control de código fuente** submenú. Al seleccionar este menú opción llamadas el [SccRunScc](../../extensibility/sccrunscc-function.md) (función). El complemento de control de código fuente puede no admitir un programa externo y, por tanto, puede que desee deshabilitar u ocultar incluso la **iniciar** opción de menú.  
   
-         DisableSccManager es un valor DWORD se establece en 0 para habilitar el **Iniciar \< servidor de Control de código fuente>** opción de menú, establézcalo en 1 para deshabilitar la opción de menú y se establece en 2 para ocultar la opción de menú. Si no aparece esta entrada del registro, el comportamiento predeterminado es mostrar la opción de menú.  
+         DisableSccManager es un valor DWORD se establece en 0 para habilitar la **iniciar \<servidor de Control de origen >** opción de menú, establézcalo en 1 para deshabilitar la opción de menú y se establece en 2 para ocultar la opción de menú. Si no aparece esta entrada del registro, el comportamiento predeterminado es mostrar la opción de menú.  
   
     |Entrada de registro de ejemplo|Valor de ejemplo|  
     |---------------------------|------------------|  
@@ -78,7 +80,7 @@ Crear un control de código fuente complemento implica tres pasos:
   
 4.  Cree una subclave denominada InstalledSCCProviders bajo la subclave SourceCodeControlProvider y, a continuación, colocar una entrada en esa subclave.  
   
-     El nombre de esta entrada es el nombre legible para el usuario del proveedor (igual que el valor especificado para la entrada de SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[nombre para mostrar]* = SOFTWARE\\*[nombre de compañía]*\\*[nombre de producto]*.  
+     El nombre de esta entrada es el nombre legible para el usuario del proveedor (igual que el valor especificado para la entrada de SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[nombre para mostrar]* = SOFTWARE\\*[nombre de compañía]* \\ *[nombre de producto]*.  
   
      Por ejemplo:  
   
@@ -106,7 +108,7 @@ Crear un control de código fuente complemento implica tres pasos:
  Un complemento de control de código fuente debe admitir las dos formas de encontrar el archivo DLL y, por lo tanto, establezca ProviderRegKey, sobrescribiendo cualquier configuración anterior. Lo que es más importante, debe agregar propio a la lista de InstalledSccProviders para que el usuario puede optar por qué complemento de control de código fuente para usar.  
   
 > [!NOTE]
->  Dado que se usa la clave HKEY_LOCAL_MACHINE, complemento de control de solo origen puede registrarse como el control de código fuente predeterminada complemento en un equipo determinado (sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a los usuarios determinar qué complemento de control de código fuente que deseen utilizar realmente para una solución concreta). Durante el proceso de instalación, compruebe para ver si un complemento de control de código fuente ya está configurado; Si es así, pida al usuario si desea establecer el control de código fuente nuevo complemento se instala como el valor predeterminado o no. Durante la desinstalación, no quite otras subclaves del registro que son comunes a todos los complementos código fuente control en HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; quitar sólo la subclave de SCC determinada.  
+>  Dado que se usa la clave HKEY_LOCAL_MACHINE, complemento de control de solo origen puede registrarse como el control de código fuente predeterminada complemento en un equipo determinado (sin embargo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a los usuarios determinar qué complemento de control de código fuente que deseen utilizar realmente para un solución concreta). Durante el proceso de instalación, compruebe para ver si un complemento de control de código fuente ya está configurado; Si es así, pida al usuario si desea establecer el control de código fuente nuevo complemento se instala como el valor predeterminado o no. Durante la desinstalación, no quite otras subclaves del registro que son comunes a todos los complementos código fuente control en HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; quitar sólo la subclave de SCC determinada.  
   
 ## <a name="how-the-ide-detects-version-1213-support"></a>El modo en que el IDE detecta compatibilidad con la versión 1.2 y 1.3  
  ¿Cómo does [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] detectar si una funcionalidad de versión 1.2 y 1.3 de la API de complementos de Control de código fuente de complemento admite? Para declarar funciones avanzadas, el complemento de control de origen debe implementar la función correspondiente.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- LPTEXTOUTPROC
+f1_keywords: LPTEXTOUTPROC
 helpviewer_keywords:
 - SccMsgDataOnMessage structure
 - SccMsgDataOnBeforeGetFile structure
@@ -17,29 +15,15 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 658193f526123d237ef9b90a05861492b9f007c9
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Cuando el usuario ejecuta una operación de control de código fuente desde dentro del entorno de desarrollo integrado (IDE), el complemento de control de origen conviene transmitir mensajes de error o estado relativos a la operación. El complemento puede mostrar sus propios cuadros de mensaje para este propósito. Sin embargo, para la integración sin problemas más, el complemento puede pasar cadenas para el IDE, lo que, a continuación, se muestra de manera nativa de mostrar información de estado. El mecanismo para esto es el `LPTEXTOUTPROC` puntero de función. El IDE implementa esta función (que se describe con más detalle a continuación) para mostrar el error y estado.  

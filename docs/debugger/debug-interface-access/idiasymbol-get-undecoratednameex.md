@@ -1,79 +1,78 @@
 ---
-title: "IDiaSymbol::get_undecoratedNameEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_undecoratedNameEx (método)"
+title: 'Idiasymbol:: Get_undecoratednameex | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1dac35a0e01890488e6290759b563d25f7067067
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_undecoratedNameEx
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera parte o la totalidad del nombre representativo para C\+\+. adornaron nombre \(de vinculación\).  
+# <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
+Recupera parte o la totalidad de un nombre no representativo de C++ representativo nombre (vinculación).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_undecoratedNameEx(   
-   DWORD undecorateOptions,  
-   BSTR* pRetval  
+```C++  
+HRESULT get_undecoratedNameEx(   
+   DWORD undecorateOptions,  
+   BSTR* pRetval  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `undecoratedOptions`  
- \[in\]  Especifica una combinación de marcadores que controlan se devuelve qué.  Vea la sección comentarios por valores concretos y su hace.  
+ [in] Especifica una combinación de marcas que controlan lo que se devuelve. Vea la sección Comentarios para los valores específicos y qué hacer.  
   
  `pRetVal`  
- \[out\]  Devuelve el nombre representativo del nombre representativo \+\+ de C\/C\+\+.  
+ [out] Devuelve que el nombre no representativo de C++ nombre representativo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- `undecorateOptions` puede ser una combinación de los siguientes indicadores.  
+## <a name="remarks"></a>Comentarios  
+ La `undecorateOptions` puede ser una combinación de los siguientes indicadores.  
   
 > [!NOTE]
->  Los nombres de marcador no se definen en el diámetro SDK, de modo que necesita agregar las declaraciones en el código o utilizar los valores sin formato.  
+>  Los nombres de marca no se definen en el SDK de DIA, por ello, debe agregar las declaraciones en el código o utilizar los valores sin formato.  
   
-|Marcador|Valor|Descripción|  
-|--------------|-----------|-----------------|  
-|UNDNAME\_COMPLETE|0x0000|habilita el undecoration completo.|  
-|UNDNAME\_NO\_LEADING\_UNDERSCORES|0x0001|Quita subrayado principales de Microsoft extendidas las palabras clave.|  
-|UNDNAME\_NO\_MS\_KEYWORDS|0x0002|Deshabilita la extensión de Microsoft extendidas las palabras clave.|  
-|UNDNAME\_NO\_FUNCTION\_RETURNS|0x0004|Deshabilita la extensión del tipo de valor devuelto para la declaración primaria.|  
-|UNDNAME\_NO\_ALLOCATION\_MODEL|0x0008|Deshabilita la extensión del modelo de la declaración.|  
-|UNDNAME\_NO\_ALLOCATION\_LANGUAGE|0x0010|Deshabilita la extensión del especificador de lenguaje de la declaración.|  
-|UNDNAME\_RESERVED1|0x0020|RESERVADO.|  
-|UNDNAME\_RESERVED2|0x0040|RESERVADO.|  
-|UNDNAME\_NO\_THISTYPE|0x0060|Deshabilita todos los modificadores en el tipo de `this` .|  
-|UNDNAME\_NO\_ACCESS\_SPECIFIERS|0x0080|Deshabilita la extensión de los especificadores de acceso para los miembros.|  
-|UNDNAME\_NO\_THROW\_SIGNATURES|0x0100|Deshabilita la extensión de “tiro\-firmas” para las funciones y los punteros a funciones.|  
-|UNDNAME\_NO\_MEMBER\_TYPE|0x0200|Deshabilita la extensión de `static` o los miembros de `virtual` .|  
-|UNDNAME\_NO\_RETURN\_UDT\_MODEL|0x0400|Deshabilita la extensión del modelo de Microsoft para el UDT devuelve.|  
-|UNDNAME\_32\_BIT\_DECODE|0x0800|Nombres representativos de 32 bits de Undecorates.|  
-|UNDNAME\_NAME\_ONLY|0x1000|Obtiene únicamente el nombre de la declaración primaria; devuelve solo \[ámbito::\] nombre.  Expanda params de la plantilla.|  
-|UNDNAME\_TYPE\_ONLY|0x2000|La entrada es una codificación de tipo; cree un declarador abstracto.|  
-|UNDNAME\_HAVE\_PARAMETERS|0x4000|Los parámetros reales de la plantilla están disponibles.|  
-|UNDNAME\_NO\_ECSU|0x8000|Suprime la enumeración o la clase\/struct\/union.|  
-|UNDNAME\_NO\_IDENT\_CHAR\_CHECK|0x10000|Suprime la comprobación de caracteres de identificador válidos.|  
-|UNDNAME\_NO\_PTR64|0x20000|No incluye ptr64 en la salida.|  
+|Marcar|Valor|Descripción|  
+|----------|-----------|-----------------|  
+|UNDNAME_COMPLETE|0x0000|Habilita undecoration completa.|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0 x 0001|Quita los caracteres de subrayado de extendidas palabras clave de Microsoft.|  
+|UNDNAME_NO_MS_KEYWORDS|0 x 0002|Deshabilita la expansión de palabras clave de extendidas de Microsoft.|  
+|UNDNAME_NO_FUNCTION_RETURNS|0 x 0004|Deshabilita la expansión de tipo de valor devuelto para la declaración principal.|  
+|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Deshabilita la expansión del modelo de declaración.|  
+|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Deshabilita la expansión del especificador de idioma de declaración.|  
+|UNDNAME_RESERVED1|0x0020|RESERVADO.|  
+|UNDNAME_RESERVED2|0x0040|RESERVADO.|  
+|UNDNAME_NO_THISTYPE|0x0060|Deshabilita todos los modificadores en el `this` tipo.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Deshabilita la expansión de los especificadores de acceso para los miembros.|  
+|UNDNAME_NO_THROW_SIGNATURES|0 x 0100|Deshabilita la expansión de "throw-firmas" para las funciones y los punteros a funciones.|  
+|UNDNAME_NO_MEMBER_TYPE|0 x 0200|Deshabilita la expansión de `static` o `virtual` miembros.|  
+|UNDNAME_NO_RETURN_UDT_MODEL|0 x 0400|Deshabilita la expansión del modelo de Microsoft para UDT se devuelve.|  
+|UNDNAME_32_BIT_DECODE|0 x 0800|Undecorates nombres representativos de 32 bits.|  
+|UNDNAME_NAME_ONLY|0 x 1000|Obtiene solo el nombre de declaración principal; Devuelve solo [ámbito::] nombre.  Expande los parámetros de plantilla.|  
+|UNDNAME_TYPE_ONLY|0 x 2000|La entrada es un tipo de codificación; crea un declarador abstracto.|  
+|UNDNAME_HAVE_PARAMETERS|0 x 4000|Los parámetros de plantilla reales están disponibles.|  
+|UNDNAME_NO_ECSU|0 x 8000|Suprime la enumeración, clase, struct o unión.|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0 x 10000|Suprime la comprobación de caracteres de identificador válido.|  
+|UNDNAME_NO_PTR64|0 x 20000|No incluye ptr64 en la salida.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

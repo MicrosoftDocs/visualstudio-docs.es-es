@@ -1,54 +1,54 @@
 ---
-title: "IDebugPortSupplier2::GetPort | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2::GetPort"
-helpviewer_keywords: 
-  - "IDebugPortSupplier2::GetPort"
+title: IDebugPortSupplier2::GetPort | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortSupplier2::GetPort
+helpviewer_keywords: IDebugPortSupplier2::GetPort
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0d322cfe7486d0353c1eabad9f9c7bb40ee73477
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplier2::GetPort
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene un puerto de un proveedor de puerto.  
+# <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
+Obtiene un puerto de un proveedor del puerto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
+```cpp  
+HRESULT GetPort(   
+   REFGUID       guidPort,  
+   IDebugPort2** ppPort  
 );  
 ```  
   
-```c#  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
+```csharp  
+int GetPort(   
+   ref Guid        guidPort,  
+   out IDebugPort2 ppPort  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guidPort`  
- \[in\]  Identificador \(GUID\) único global del puerto.  
+ [in] Identificador único global (GUID) del puerto.  
   
  `ppPort`  
- \[out\]  Devuelve un objeto de [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) que representa el puerto.  
+ [out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_PORTSUPPLIER_NO_PORT` si ningún puerto existe con el identificador especificado.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_PORTSUPPLIER_NO_PORT` si no existe ningún puerto con el identificador dado.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -1,60 +1,59 @@
 ---
-title: "IDiaSegment | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSegment (interfaz)"
+title: IDiaSegment | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSegment interface
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12bc8e73457c1afc4b1799549ad43974d5771252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSegment
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Datos de asignaciones de número de sección a los segmentos del espacio de direcciones.  
+# <a name="idiasegment"></a>IDiaSegment
+Asigna datos desde el número de sección a segmentos del espacio de direcciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDiaSegment`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDiaSegment`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaSegment::get\_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|recupera el número de segmento.|  
-|[IDiaSegment::get\_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera el desplazamiento en segmentos donde comienza la sección.|  
-|[IDiaSegment::get\_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Recupera el número de bytes del segmento.|  
-|[IDiaSegment::get\_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Recupera una marca que indica si el segmento puede leer.|  
-|[IDiaSegment::get\_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Recupera una marca que indica si el segmento puede modificarse.|  
-|[IDiaSegment::get\_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Recupera una marca que indica si el segmento es ejecutable.|  
-|[IDiaSegment::get\_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|recupera el número de sección que asigna a este segmento.|  
-|[IDiaSegment::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera la dirección virtual relativa \(RVA\) del principio de la sección.|  
-|[IDiaSegment::get\_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera la dirección virtual \(VA\) del principio de la sección.|  
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera el número de segmento.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera el desplazamiento en segmentos donde comienza la sección.|  
+|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Recupera el número de bytes en el segmento.|  
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Recupera una marca que indica si se puede leer el segmento.|  
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Recupera una marca que indica si se puede modificar el segmento.|  
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Recupera una marca que indica si el segmento es ejecutable.|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Recupera el número de sección que se asigna a este segmento.|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera la dirección virtual relativa (RVA) del principio de la sección.|  
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera la dirección virtual (VA) del principio de la sección.|  
   
-## Comentarios  
- Dado que el diámetro SDK realiza ya las traducciones de la sección compensan direcciones virtuales relativas, la mayoría de las aplicaciones no harán uso de la información del mapa del segmento.  
+## <a name="remarks"></a>Comentarios  
+ Dado que el SDK de DIA ya realiza traducciones desde el desplazamiento de la sección para direcciones virtuales relativas, la mayoría de las aplicaciones no hará que el uso de la información de la asignación de segmentos.  
   
-## Notas para los llamadores  
- Obtiene esta interfaz llamando a los métodos de [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) o de [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) .  Vea el ejemplo para obtener detalles.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Obtener esta interfaz mediante una llamada a la [idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md) o [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) métodos. Vea el ejemplo para obtener más información.  
   
-## Ejemplo  
- Esta función establece la dirección de todos los segmentos en una tabla y el símbolo más próximo.  
+## <a name="example"></a>Ejemplo  
+ Esta función muestra la dirección de todos los segmentos en una tabla y el símbolo más cercano.  
   
-```cpp#  
+```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
 {  
     CComPtr<IDiaEnumSegments> pSegments;  
@@ -95,14 +94,14 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }  
 ```  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Vea también  
- [Interfaces \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
+## <a name="see-also"></a>Vea también  
+ [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

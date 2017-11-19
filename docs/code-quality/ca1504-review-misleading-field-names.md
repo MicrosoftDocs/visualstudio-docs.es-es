@@ -1,29 +1,30 @@
 ---
-title: "CA1504: Revise los nombres de campos err&#243;neos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ReviewMisleadingFieldNames"
-  - "CA1504"
-helpviewer_keywords: 
-  - "CA1504"
-  - "ReviewMisleadingFieldNames"
+title: "CA1504: Revise los nombres de campos erróneos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ReviewMisleadingFieldNames
+- CA1504
+helpviewer_keywords:
+- CA1504
+- ReviewMisleadingFieldNames
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d03c07b48b2cfbfc19fcb9aa2ac4353ddf87a8a6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1504: Revise los nombres de campos err&#243;neos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1504-review-misleading-field-names"></a>CA1504: Revise los nombres de campos erróneos
 |||  
 |-|-|  
 |TypeName|ReviewMisleadingFieldNames|  
@@ -31,14 +32,14 @@ caps.handback.revision: 15
 |Categoría|Microsoft.Maintainability|  
 |Cambio problemático|Poco problemático|  
   
-## Motivo  
- El nombre de un campo de instancia empieza por "s\_" o el nombre de un campo `static` \(`Shared` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) empieza por "m\_".  
+## <a name="cause"></a>Motivo  
+ El nombre de un campo de instancia empieza por "s_" o el nombre de un `static` (`Shared` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo empieza por "m_".  
   
-## Descripción de la regla  
- Muchos usuarios asocian los nombres de campo que empiezan por "s\_" a datos estáticos.  De manera similar, los nombres de campo que empiezan por "m\_" se asocian a datos de instancia \(miembro\).  Para mantener el código más fácilmente, los nombres deben seguir las convenciones utilizadas generalmente.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Los nombres de campo que empiezan por "s_" están asociados con datos estáticos entre varios usuarios. De forma similar, los nombres de campo que empiezan por "m_" se asocian con los datos de instancia (miembro). Para el código más fácil de mantener, los nombres deben seguir las convenciones utilizadas normalmente.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el nombre del campo y utilice para ello el prefijo adecuado.  O bien, agregue o quite el modificador `static` para que el campo concuerde con el sufijo actual.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie el nombre del campo mediante el prefijo adecuado. O bien, hacer que el campo de acuerdo con el sufijo actual agregando o quitando la `static` modificador.  
   
-## Cuándo suprimir advertencias  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima las advertencias de esta regla.

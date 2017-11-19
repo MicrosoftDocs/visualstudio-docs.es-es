@@ -1,24 +1,25 @@
 ---
-title: "C&#243;mo: crear marcadores de texto personalizado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK], heredados - marcadores de texto personalizado"
+title: "Cómo: crear marcadores de texto personalizado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ab395fdb8c06e643c76ee0918b8a626abb756cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: crear marcadores de texto personalizado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-create-custom-text-markers"></a>Cómo: crear marcadores de texto personalizado
 Si desea crear un marcador de texto personalizado para enfatizar u organizar el código, debe realizar los pasos siguientes:  
   
 -   Registre el nuevo marcador de texto, para que otras herramientas pueden tener acceso a él  
@@ -33,18 +34,18 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 1.  Cree una entrada del registro de la manera siguiente:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\< versión>*\Text Editor\External marcadores\\*\< MarkerGUID>*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
   
-     *\< MarkerGUID>*es un `GUID` usado para identificar el marcador que se va a agregar  
+     *\<MarkerGUID >*es un `GUID` usado para identificar el marcador que se va a agregar  
   
-     *\< versión>* es la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0  
+     *\<Versión >* es la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0  
   
-     *\< PackageGUID>* es el GUID del VSPackage implementa el objeto de automatización.  
+     *\<PackageGUID >* es el GUID del VSPackage implementa el objeto de automatización.  
   
     > [!NOTE]
-    >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\< versión>* puede ser invalidado con una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
+    >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede ser invalidado con una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Crear cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\< versión>*\Text Editor\External marcadores\\*\< MarkerGUID>*  
+2.  Crear cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
   
     -   (Predeterminado)  
   
@@ -52,19 +53,19 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
     -   DisplayName  
   
-    -   Paquete  
+    -   Package  
   
-    -   `Default` es una entrada opcional del tipo REG_SZ. Cuando se establece, el valor de la entrada es una cadena que contiene cierta información de identificación útil, por ejemplo "marcador de texto personalizado".  
+    -   `Default`es una entrada opcional del tipo REG_SZ. Cuando se establece, el valor de la entrada es una cadena que contiene cierta información de identificación útil, por ejemplo "marcador de texto personalizado".  
   
-    -   `Service` es una entrada del tipo REG_SZ que contiene la cadena GUID del servicio que proporciona el marcador de texto personalizado mediante proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. El formato es {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Service`es una entrada del tipo REG_SZ que contiene la cadena GUID del servicio que proporciona el marcador de texto personalizado mediante proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. El formato es {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` es una entrada del tipo REG_SZ que contiene el identificador de recurso del nombre del marcador de texto personalizado. El formato es #YYYY.  
+    -   `DisplayName`es una entrada del tipo REG_SZ que contiene el identificador de recurso del nombre del marcador de texto personalizado. El formato es #YYYY.  
   
-    -   `Package` es una entrada de tipo REG_SZ que contenga el `GUID` de VSPackage que proporciona el servicio aparecen en el servicio. El formato es {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+    -   `Package`es una entrada de tipo REG_SZ que contenga el `GUID` de VSPackage que proporciona el servicio aparecen en el servicio. El formato es {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Para crear un marcador de texto personalizado  
   
-1.  Implemente el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfaz.  
+1.  Implementar la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
      La implementación de esta interfaz define el comportamiento y la apariencia de los tipos de marcadores personalizados.  
   
@@ -72,7 +73,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
     1.  Un usuario inicia el IDE por primera vez.  
   
-    2.  Un usuario selecciona el **Restablecer valores predeterminados** situado bajo el **fuentes y colores** página de propiedades en el **entorno** carpeta, que se encuentra en el panel izquierdo de la **opciones** obtenido del cuadro de diálogo de la **herramientas** menú del IDE.  
+    2.  Un usuario selecciona el **Restablecer valores predeterminados** situado bajo el **fuentes y colores** página de propiedades de la **entorno** carpeta, que se encuentra en el panel izquierdo de la  **Opciones de** cuadro de diálogo obtenido de la **herramientas** menú del IDE.  
   
 2.  Implemente el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> método, especificando que `IVsPackageDefinedTextMarkerType` implementación debe devolverse, basándose en el tipo de marcador GUID especificado en la llamada al método.  
   

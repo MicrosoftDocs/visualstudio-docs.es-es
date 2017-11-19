@@ -1,71 +1,71 @@
 ---
-title: "IDebugProperty2::SetValueAsReference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::SetValueAsReference"
-helpviewer_keywords: 
-  - "IDebugProperty2::SetValueAsReference (método)"
+title: IDebugProperty2::SetValueAsReference | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty2::SetValueAsReference
+helpviewer_keywords: IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d27a087c67401e90e8a3f4629c27d1255d0ade75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty2::SetValueAsReference
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Establece el valor de esta propiedad en el valor de referencia especificada.  
+# <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
+Establece el valor de esta propiedad en el valor de la referencia proporcionada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsReference(  
-   IDebugReference2** rgpArgs,  
-   DWORD              dwArgCount,  
-   IDebugReference2*  pValue,  
-   DWORD              dwTimeout  
+   IDebugReference2** rgpArgs,  
+   DWORD              dwArgCount,  
+   IDebugReference2*  pValue,  
+   DWORD              dwTimeout  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetValueAsReference(  
-   IDebugReference2[] rgpArgs,  
-   uint               dwArgCount,  
-   IDebugReference2   pValue,  
-   uint               dwTimeout  
+   IDebugReference2[] rgpArgs,  
+   uint               dwArgCount,  
+   IDebugReference2   pValue,  
+   uint               dwTimeout  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `rgpArgs`  
- \[in\]  Una matriz de argumentos al establecedor de la propiedad de código administrado.  Si el establecedor de la propiedad no acepta argumentos o si este objeto de [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) no hace referencia a dicha establecedor de la propiedad, `rgpArgs` debe ser un valor NULL.  Este parámetro es normalmente un valor nulo.  
+ [in] Una matriz de argumentos que se pasarán al establecedor de propiedad de código administrado. Si el establecedor de propiedad no acepta argumentos, o si este [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto no hace referencia a este tipo de establecedor de propiedades, `rgpArgs` debe ser un valor null. Normalmente, este parámetro es un valor null.  
   
  `dwArgCount`  
- \[in\]  El número de argumentos en la matriz de `rgpArgs` .  
+ [in] El número de argumentos en la `rgpArgs` matriz.  
   
  `pValue`  
- \[in\]  Una referencia, en forma de objeto de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , el valor al uso de establecer esta propiedad.  
+ [in] Una referencia, en forma de un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto, el valor se utiliza para establecer esta propiedad.  
   
  `dwTimeout`  
- \[in\]  cuánto tiempo tomar para establecer el valor, en milisegundos.  un valor típico es `INFINITE`.  Esto afecta al tiempo que cualquier evaluación posible puede tomar.  
+ [in] ¿Cuánto hay que llevar a cabo para establecer el valor, en milisegundos. Un valor típico es `INFINITE`. Esto afecta a la cantidad de tiempo que puede llevar a cabo cualquier evaluación posibles.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error, normalmente uno de los siguientes:  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario devuelve un error de código, normalmente uno de los siguientes:  
   
 |Error|Descripción|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|establecer el valor de una referencia no se admite.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|El valor no puede establecerse, como esta propiedad hace referencia a un método.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|No se permite establecer el valor de una referencia.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|No se puede establecer el valor como esta propiedad hace referencia a un método.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|El valor es de solo lectura y no se puede establecer.|  
-|`E_NOTIMPL`|Este método no está implementado.|  
+|`E_NOTIMPL`|No se implementa el método.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

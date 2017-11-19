@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - QuickInfo
+helpviewer_keywords: editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-caps.latest.revision: 27
+caps.latest.revision: "27"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7acb244077949ffb0a59018b24706fd3ccfefc14
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Tutorial: Mostrar informaciones sobre herramientas de QuickInfo
 Información rápida es una característica de IntelliSense que muestra las firmas de método y descripciones cuando un usuario mueve el puntero sobre un nombre de método. Puede implementar características basadas en lenguaje como QuickInfo definiendo los identificadores para los que desea proporcionar descripciones de QuickInfo y, a continuación, crear una información sobre herramientas en el que se va a mostrar el contenido. Puede definir QuickInfo en el contexto de un servicio de lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y mostrar la información rápida para ese tipo, o puede mostrar información rápida para un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo mostrar información rápida para el tipo de contenido "text".  
@@ -76,27 +60,33 @@ Información rápida es una característica de IntelliSense que muestra las firm
   
 3.  Agregue las siguientes importaciones.  
   
-     [!code-vb[VSSDKQuickInfoTest #1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_1.vb)][!code-csharp[VSSDKQuickInfoTest n.º 1  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_1.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_1.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_1.cs)]  
   
 4.  Declare una clase que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>y asígnele el nombre `TestQuickInfoSource`.  
   
-     [!code-vb[VSSDKQuickInfoTest 2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_2.vb)][!code-csharp[VSSDKQuickInfoTest 2  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_2.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_2.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_2.cs)]  
   
 5.  Agregar campos para el proveedor de código fuente de información rápida, el búfer de texto y un conjunto de nombres de método y las firmas de método. En este ejemplo, los nombres de método y las firmas se inicializan en el `TestQuickInfoSource` constructor.  
   
-     [!code-vb[VSSDKQuickInfoTest 3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_3.vb)][!code-csharp[VSSDKQuickInfoTest 3  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_3.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_3.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_3.cs)]  
   
 6.  Agregue un constructor que establece el proveedor de código fuente de información rápida y el búfer de texto y rellena el conjunto de nombres de método y las firmas de método y descripciones.  
   
-     [!code-vb[VSSDKQuickInfoTest #4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_4.vb)][!code-csharp[VSSDKQuickInfoTest #4  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_4.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_4.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_4.cs)]  
   
 7.  Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource.AugmentQuickInfoSession%2A>. En este ejemplo, el método busca la palabra actual o la palabra anterior si el cursor está al final de una línea o un búfer de texto. Si la palabra es uno de los nombres de método, la descripción de ese nombre de método se agrega el contenido de QuickInfo.  
   
-     [!code-vb[VSSDKQuickInfoTest 5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_5.vb)][!code-csharp[VSSDKQuickInfoTest Nº 5  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_5.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_5.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_5.cs)]  
   
 8.  También debe implementar un método Dispose(), ya que <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> implementa <xref:System.IDisposable>:  
   
-     [!code-vb[VSSDKQuickInfoTest #6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_6.vb)][!code-csharp[VSSDKQuickInfoTest #6  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_6.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_6.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_6.cs)]  
   
 ## <a name="implementing-a-quickinfo-source-provider"></a>Implementar un proveedor de código fuente de información rápida  
  El proveedor del origen de QuickInfo sirve principalmente para exportar como parte del componente MEF y crea una instancia del origen de información rápida. Dado que es un componente MEF, puede importar de otros componentes de MEF.  
@@ -105,15 +95,18 @@ Información rápida es una característica de IntelliSense que muestra las firm
   
 1.  Declarar un proveedor de código fuente de QuickInfo denominado `TestQuickInfoSourceProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de información sobre herramientas QuickInfo "origen", un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de Before = "default" y una <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text".  
   
-     [!code-vb[VSSDKQuickInfoTest #7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_7.vb)][!code-csharp[VSSDKQuickInfoTest #7  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_7.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_7.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_7.cs)]  
   
 2.  Importar dos servicios de editor, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> y <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, como propiedades de `TestQuickInfoSourceProvider`.  
   
-     [!code-vb[VSSDKQuickInfoTest Nº 8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_8.vb)][!code-csharp[VSSDKQuickInfoTest #8  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_8.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_8.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_8.cs)]  
   
 3.  Implemente <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider.TryCreateQuickInfoSource%2A> para devolver un nuevo `TestQuickInfoSource`.  
   
-     [!code-vb[VSSDKQuickInfoTest &#9;](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_9.vb)][!code-csharp[VSSDKQuickInfoTest n.º 9  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_9.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_9.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_9.cs)]  
   
 ## <a name="implementing-a-quickinfo-controller"></a>Implementar un controlador de QuickInfo  
  Controladores de QuickInfo determinan cuándo se debe mostrar información rápida. En este ejemplo, información rápida se muestra cuando el puntero está sobre una palabra que corresponde a uno de los nombres de método. El controlador de QuickInfo implementa un controlador de eventos de mouse (ratón) al mantener el mouse que activa una sesión de información rápida.  
@@ -122,27 +115,33 @@ Información rápida es una característica de IntelliSense que muestra las firm
   
 1.  Declare una clase que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>y asígnele el nombre `TestQuickInfoController`.  
   
-     [!code-vb[VSSDKQuickInfoTest #10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_10.vb)][!code-csharp[VSSDKQuickInfoTest #10  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_10.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_10.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_10.cs)]  
   
 2.  Agregue campos privados para la vista de texto, los búferes de texto que se representan en la vista de texto, la sesión de información rápida y el proveedor del controlador de QuickInfo.  
   
-     [!code-vb[VSSDKQuickInfoTest #11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_11.vb)][!code-csharp[VSSDKQuickInfoTest Nº 11  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_11.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_11.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_11.cs)]  
   
 3.  Agregue un constructor que establece los campos y agrega el controlador de eventos del mouse al mantener el mouse.  
   
-     [!code-vb[VSSDKQuickInfoTest #12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_12.vb)][!code-csharp[VSSDKQuickInfoTest #12  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_12.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_12.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_12.cs)]  
   
 4.  Agregue el controlador de eventos de mouse (ratón) al mantener el mouse que desencadena la sesión de QuickInfo.  
   
-     [!code-vb[VSSDKQuickInfoTest #13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_13.vb)][!code-csharp[VSSDKQuickInfoTest #13  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_13.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_13.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_13.cs)]  
   
 5.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.Detach%2A> método por lo que TI quita el controlador de eventos del mouse al mantener el mouse cuando se desasocia el controlador de la vista de texto.  
   
-     [!code-vb[VSSDKQuickInfoTest #14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_14.vb)][!code-csharp[VSSDKQuickInfoTest #14  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_14.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_14.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_14.cs)]  
   
 6.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.ConnectSubjectBuffer%2A> método y <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController.DisconnectSubjectBuffer%2A> método como métodos vacíos para este ejemplo.  
   
-     [!code-vb[VSSDKQuickInfoTest #15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_15.vb)][!code-csharp[VSSDKQuickInfoTest #15  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_15.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_15.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_15.cs)]  
   
 ## <a name="implementing-the-quickinfo-controller-provider"></a>Implementar el proveedor del controlador de QuickInfo  
  El proveedor del controlador QuickInfo sirve principalmente para exportar como parte del componente MEF y crea una instancia del controlador de QuickInfo. Dado que es un componente MEF, puede importar de otros componentes de MEF.  
@@ -151,15 +150,18 @@ Información rápida es una característica de IntelliSense que muestra las firm
   
 1.  Declarar una clase denominada `TestQuickInfoControllerProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "Controlador de QuickInfo de información sobre herramientas" y un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text":  
   
-     [!code-vb[VSSDKQuickInfoTest Nº 16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)][!code-csharp[VSSDKQuickInfoTest Nº 16  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
 2.  Importar el <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> como una propiedad.  
   
-     [!code-vb[VSSDKQuickInfoTest #17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)][!code-csharp[VSSDKQuickInfoTest #17  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  
   
 3.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseControllerProvider.TryCreateIntellisenseController%2A> método creando el controlador QuickInfo.  
   
-     [!code-vb[VSSDKQuickInfoTest #18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_18.vb)][!code-csharp[VSSDKQuickInfoTest #18  ](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_18.cs)]  
+     [!code-vb[VSSDKQuickInfoTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_18.vb)]
+     [!code-csharp[VSSDKQuickInfoTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_18.cs)]  
   
 ## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
  Para probar este código, compile la solución QuickInfoTest y ejecútelo en la instancia experimental.  

@@ -1,53 +1,54 @@
 ---
-title: "Arquitectura de VSPackage del Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "paquetes de control de código fuente, arquitectura"
+title: Arquitectura de VSPackage del Control de origen | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 80153e271fed6a7fab49e00c8124f1ede7613bfa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Arquitectura de VSPackage del Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un paquete de control de código fuente es un Paquete que usa los servicios que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE proporciona.  En cambio, un paquete de control de código fuente proporciona su funcionalidad como servicio de control de código fuente.  además, un paquete de control de código fuente es una alternativa más versátil que un complemento de control de código fuente para el control de código fuente de integración en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="source-control-vspackage-architecture"></a>Arquitectura de VSPackage del Control de código fuente
+Un paquete de control de código fuente es un VSPackage que usa los servicios que el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE proporciona. En cambio, un paquete de control de código fuente proporciona su funcionalidad como un servicio de control de código fuente. Además, un paquete de control de código fuente es una alternativa más versátil que un complemento para integrar el control de código fuente en control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- un complemento de control de código fuente que implementa el complemento de control de código fuente API sigue un contrato estricto.  Por ejemplo, un complemento no se puede reemplazar la interfaz de usuario predeterminada de \(UI\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  por otra parte, el complemento de control de código fuente API no permite a un complemento para implementar su propio modelo de control de código fuente.  un paquete de control de código fuente, sin embargo, supera ambas limitaciones.  Un paquete de control de código fuente tiene control total sobre la experiencia de control de código fuente de un usuario de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Además, un paquete de control de código fuente puede utilizar su propio modelo y lógica de control de código fuente, y puede definir todas las interfaces de usuario CONTROL\-relacionadas de origen.  
+ Un complemento que implementa la API de complemento de Control de origen de control de código fuente se rige por un contrato estricto. Por ejemplo, un complemento no puede reemplazar el valor predeterminado [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario (UI). Además, la API de complementos de Control de código fuente no habilitar un complemento implementar su propio modelo de control de código fuente. Sin embargo, un paquete de control de código fuente, supera ambas de estas limitaciones. Un paquete de control de código fuente tiene un control completo sobre la experiencia de control de código fuente de un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usuario. Además, un paquete de control de código fuente puede utilizar su propio modelo de control de origen y la lógica, y puede definir todas las interfaces de usuario relacionada con el control de código fuente.  
   
-## Empaquetar componentes de control de código fuente  
- Como se muestra en el diagrama de la arquitectura, un componente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] denominado el código auxiliar de control de código fuente es un Paquete que integra un paquete de control de código fuente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+## <a name="source-control-package-components"></a>Componentes del paquete de Control de código fuente  
+ Como se muestra en el diagrama de arquitectura, una [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componente denominado el código auxiliar de Control de código fuente es un VSPackage que integra un paquete de control de código fuente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- El código auxiliar de control de código fuente controla las tareas siguientes.  
+ Código auxiliar de Control de código fuente controla las siguientes tareas.  
   
--   Proporciona la interfaz de usuario común necesaria para el registro del paquete de control de código fuente.  
+-   Proporciona la interfaz de usuario comunes que es necesario para registrar paquetes de control de código fuente.  
   
--   carga un paquete de control de código fuente.  
+-   Carga un paquete de control de código fuente.  
   
--   Establece un paquete de control de código fuente como activo o inactivo.  
+-   Un paquete de control de código fuente se establece como activo o inactivo.  
   
- El código auxiliar de control de código fuente busca el servicio activo para el paquete de control de código fuente y enruta todas las llamadas al servicio de entrada del IDE a ese paquete.  
+ Código auxiliar de Control de origen busca el servicio activo para el paquete de control de código fuente y los enruta todas las llamadas de servicio desde el IDE para que el paquete.  
   
- El paquete de adaptador de control de código fuente es un paquete de control de código fuente especial que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona.  Este paquete es el componente central para admitir los complementos de control de código fuente basados en el complemento de control de código fuente API.  Cuando un complemento de control de código fuente es el complemento activo, el código auxiliar de control de código fuente envía sus eventos al paquete de adaptador de control de código fuente.  A su vez, el paquete de adaptador de control de código fuente se comunica con el complemento de control de código fuente utilizando el complemento de control de código fuente API y también proporciona una interfaz de usuario predeterminada que es común para todos los complementos de control de código fuente.  
+ El paquete de adaptador de Control de origen es un control especial de origen del paquete que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona. Este paquete es el componente central para admitir origen control complementos en función de la API de complementos de Control de código fuente. Cuando un complemento de control de origen es el complemento activo, el código auxiliar de Control de origen envía sus eventos para el paquete de adaptador de Control de origen. A su vez, el paquete de adaptador de Control de origen se comunica con el complemento de control de código fuente mediante la API de complemento de Control de origen y también proporciona una interfaz de usuario que es común para todos los complementos código fuente control predeterminada.  
   
- Cuando un paquete de control de código fuente es el paquete activo, por otra parte, el código auxiliar de control de código fuente se comunica directamente con el paquete mediante interfaces de paquete de control de código fuente de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .  El paquete de control de código fuente es responsable de hospedar su propia interfaz de usuario del control de código fuente.  
+ Cuando un paquete de control de código fuente es el activo, por otro lado, el código auxiliar de Control de origen se comunica directamente con el paquete mediante el uso de la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfaces de paquete de Control de código fuente. El paquete de control de código fuente es responsable de hospedaje de su propia interfaz de usuario de control de código fuente.  
   
- ![Gráfico de la arquitectura de control de código fuente](~/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+ ![Gráfico de arquitectura de Control de código fuente](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- Para un paquete de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no proporciona código de control de código fuente o API para la integración.  Compárelo con el enfoque antes en [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md) donde el complemento de control de código fuente tiene que implementar un conjunto estrictamente de funciones y de devoluciones de llamada.  
+ Para un paquete de control de código fuente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no proporciona código de control de código fuente o una API para la integración. Compare esto con el enfoque descrito en [crear un complemento de Control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md) donde tiene el complemento de control de código fuente implementar un conjunto rígido de las funciones y las devoluciones de llamada.  
   
- Como cualquier VSPackage, un paquete de control de código fuente es un objeto COM que se puede crear con `CoCreateInstance`.  El Paquete se pone a disposición [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  Cuando se ha creado una instancia, un VSPackage recibe un puntero de sitio y una interfaz de<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> que proporciona acceso de VSPackage a los servicios y las interfaces disponibles en el IDE.  
+ Al igual que cualquier VSPackage, un paquete de control de código fuente es un objeto COM que se pueden crear mediante el uso de `CoCreateInstance`. El VSPackage pone a disposición la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Cuando se ha creado una instancia, un VSPackage recibe un puntero de sitio y un <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaz que proporciona acceso a los servicios disponibles y interfaces en el IDE de VSPackage.  
   
- La escritura de un paquete de control de código fuente VSPackage\-basado requiere una experiencia más de programación avanzada que escribiendo un complemento API\-basado complemento de control de código fuente.  
+ Escribir un paquete de control de código fuente en función de VSPackage requiere experiencia de programación más avanzado de escribir basado en la API de complementos de Control de origen de complemento.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   
  [Introducción](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

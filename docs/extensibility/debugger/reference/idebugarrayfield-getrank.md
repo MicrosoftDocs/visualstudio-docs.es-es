@@ -1,51 +1,51 @@
 ---
-title: "IDebugArrayField::GetRank | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetRank"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetRank (método)"
+title: IDebugArrayField::GetRank | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayField::GetRank
+helpviewer_keywords: IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2467c8d4ed85a685de80511d68a20e24c047306e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayField::GetRank
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene la fila o el número de dimensiones de la matriz.  
+# <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
+Obtiene el rango o el número de dimensiones de la matriz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetRank(   
-   DWORD* pdwRank  
+```cpp  
+HRESULT GetRank(   
+   DWORD* pdwRank  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetRank(  
-   out uint pdwRank  
+   out uint pdwRank  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdwRank`  
- \[out\]  devuelve a la fila.  
+ [out] Devuelve el rango.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- La fila de una matriz corresponde al número de dimensiones.  En C\+\+ y C\#, las matrices multidimensionales son realmente matrices de matrices y pueden por consiguiente ver solamente una matriz unidimensional \(y el método de `GetRank` siempre devuelve 1\).  En [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por otra parte, las matrices multidimensionales se controlan de manera diferente y fila de este tipo de matriz refleja el número de dimensiones \(y método de `GetRank` siempre devuelve el número de dimensiones\).  
+## <a name="remarks"></a>Comentarios  
+ El rango de una matriz se corresponde con el número de dimensiones. En C++ y C#, las matrices multidimensionales son en realidad las matrices de matrices y, por tanto, se puede considerar simplemente una matriz unidimensional (y el `GetRank` método siempre devuelve 1). En [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], por otro lado, las matrices multidimensionales se tratan de forma diferente y el rango de dicha matriz refleja el número de dimensiones (y el `GetRank` método siempre devuelve el número de dimensiones).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

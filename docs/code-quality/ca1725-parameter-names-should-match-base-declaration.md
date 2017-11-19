@@ -1,29 +1,30 @@
 ---
-title: "CA1725: Los nombres de par&#225;metro deber&#237;an coincidir con la declaraci&#243;n base | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ParameterNamesShouldMatchBaseDeclaration"
-  - "CA1725"
-helpviewer_keywords: 
-  - "CA1725"
-  - "ParameterNamesShouldMatchBaseDeclaration"
+title: "CA1725: Los nombres de parámetro deben coincidir con la declaración base | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ParameterNamesShouldMatchBaseDeclaration
+- CA1725
+helpviewer_keywords:
+- CA1725
+- ParameterNamesShouldMatchBaseDeclaration
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3e8fc1a5f3623f989341f147ce8043449ee49165
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1725: Los nombres de par&#225;metro deber&#237;an coincidir con la declaraci&#243;n base
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Los nombres de parámetro deberían coincidir con la declaración base
 |||  
 |-|-|  
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|  
@@ -31,14 +32,14 @@ caps.handback.revision: 11
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- El nombre de un parámetro en un reemplazo de método visible externamente no coincide con el nombre del parámetro de la declaración base del método o con el nombre del parámetro en la declaración de interfaz del método.  
+## <a name="cause"></a>Motivo  
+ El nombre de un parámetro en un reemplazo de método visible externamente no coincide con el nombre del parámetro en la declaración del método base o el nombre del parámetro en la declaración del método de interfaz.  
   
-## Descripción de la regla  
- El uso del mismo nombre para un parámetro en una jerarquía de reemplazo aumenta la utilidad de los reemplazos de método.  Cuando el nombre de un parámetro en un método derivado es distinto del nombre de la declaración base, puede resultar difícil determinar si el método es un reemplazo del método base o una nueva sobrecarga del método.  
+## <a name="rule-description"></a>Descripción de la regla  
+ El uso del mismo nombre para un parámetro en una jerarquía de reemplazo aumenta la utilidad de los reemplazos de método. Cuando el nombre de un parámetro en un método derivado es distinto del nombre de la declaración base, puede resultar difícil determinar si el método es un reemplazo del método base o una nueva sobrecarga del método.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el nombre del parámetro de modo que sea el mismo que en la declaración base.  La corrección es un cambio problemático para los métodos visibles para COM.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie el nombre del parámetro para que coincida con la declaración base. La solución es un cambio importante para los métodos COM que sean visibles.  
   
-## Cuándo suprimir advertencias  
- No suprima ninguna advertencia de esta regla excepto para los métodos que se vean de COM en bibliotecas que se hayan distribuido previamente.
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla excepto para los métodos visibles COM en las bibliotecas que se hayan distribuido previamente.

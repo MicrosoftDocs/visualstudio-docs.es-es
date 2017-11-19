@@ -1,61 +1,43 @@
 ---
-title: "Ejecutar aplicaciones de Windows Phone en el simulador  | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Ejecutar aplicaciones de Windows Phone 8.1 en el emulador | Documentos de Microsoft
+ms.custom: 
+ms.date: 07/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Ejecutar aplicaciones de Windows Phone en el simulador 
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="run-windows-phone-81-apps-in-the-emulator"></a>Ejecutar aplicaciones de Windows Phone 8.1 en el emulador
+El emulador de Windows Phone proporciona un entorno virtual en el que puede depurar y probar aplicaciones de Windows Phone en el equipo sin un dispositivo físico. Puede simular eventos táctiles y rotaciones, y elegir el tamaño y la resolución de la pantalla física que desee emular. También puede probar muchas características usadas habitualmente como, por ejemplo, la ubicación, las redes, las notificaciones, los sensores, el acelerómetro y la tarjeta SD opcional.  
 
-![Se aplica solo a Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+Para obtener información sobre cómo ejecutar Windows 10 Mobile en el emulador, consulte [pruebas con Microsoft Emulator](/windows/uwp/debug-test-perf/test-with-the-emulator).
   
- El emulador de Windows Phone es una aplicación de escritorio que simula un Windows Phone. El emulador proporciona un entorno virtualizado en el que puede depurar y probar aplicaciones de Windows Phone en el equipo sin un dispositivo físico. Puede simular eventos táctiles y rotaciones, y elegir el tamaño y la resolución de la pantalla física que desee emular. También puede probar muchas características usadas habitualmente como, por ejemplo, la ubicación, las redes, las notificaciones, los sensores, el acelerómetro y la tarjeta SD opcional.  
+Para obtener más información acerca de las características que se pueden probar en el emulador de Windows Phone 8.1, consulte [probar características de la aplicación en el emulador de Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
- Para obtener más información sobre las características que puede probar en el emulador, consulte [Probar las características de la aplicación en el emulador de Windows Phone](http://msdn.microsoft.com/es-es/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+Junto con Visual Studio, el emulador proporciona un entorno completo donde puede diseñar, desarrollar, depurar y probar aplicaciones de Windows Phone.  
   
- Junto con Visual Studio, el emulador proporciona un entorno completo donde puede diseñar, desarrollar, depurar y probar aplicaciones de Windows Phone.  
-  
-## En este tema  
-  
--   [Ejecutar una aplicación de Windows Phone en el emulador](#BKMK_run)  
-  
-    -   [Ejecutar una aplicación desde Visual Studio](#BKMK_vs)  
-  
-    -   [Ejecutar una aplicación con la herramienta Implementación de aplicación](#BKMK_depltool)  
-  
--   [Configurar el emulador de Windows Phone con la barra de herramientas del emulador](#BKMK_toolbar)  
-  
--   [Usar los botones de hardware simulados en el emulador](#BKMK_buttons)  
-  
--   [Usar el teclado del equipo con el emulador](#BKMK_tasks_kbd)  
-  
--   [Guardar y cargar puntos de control personalizados](#BKMK_checkpoints)  
-  
--   [Realizar capturas de pantalla en el emulador](#BKMK_tasks_shot)  
-  
-##  <a name="BKMK_run"></a> Ejecutar una aplicación de Windows Phone en el emulador  
+##  <a name="BKMK_run"></a>Ejecutar una aplicación de Windows Phone en el emulador  
  Al desarrollar una aplicación de Windows Phone, puede usar Windows Phone Emulator para implementar y probar la aplicación rápidamente. Sin embargo, le recomendamos que pruebe la aplicación en un dispositivo Windows Phone antes de publicarla en la Tienda de Windows Phone. De este modo, podrá experimentar la aplicación tal como la experimentarán los usuarios.  
   
- Al ejecutar una aplicación de Windows Phone por primera vez en el emulador de Windows Phone, ocurre lo siguiente:  
+ Al ejecutar una aplicación de Windows Phone por primera vez en Windows Phone Emulator, tienen lugar los siguientes eventos:  
   
-1.  El emulador se inicia.  
+1.  Se inicia el emulador.  
   
 2.  El emulador carga el sistema operativo de Windows Phone.  
   
@@ -68,180 +50,166 @@ manager: "ghogen"
  Si el emulador seleccionado ya se está ejecutando, la aplicación se implementa y se inicia en el emulador en ejecución. Solo se puede ejecutar una instancia de cada emulador a la vez.  
   
 > [!TIP]
->  Al probar una aplicación en el emulador, deje el emulador abierto entre cada sesión de depuración para poder ejecutar la aplicación de nuevo rápidamente.  
+>  Cuando se está probando una aplicación en el emulador, deja el emulador abierto entre las sesiones de depuración para poder ejecutar la aplicación rápidamente.  
   
-###  <a name="BKMK_vs"></a> Ejecutar una aplicación desde Visual Studio  
+###  <a name="BKMK_vs"></a>Ejecutar una aplicación desde Visual Studio  
   
-##### Para implementar y ejecutar una aplicación desde Visual Studio  
+##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Para implementar y ejecutar una aplicación desde Visual Studio  
   
 1.  En Visual Studio, abra un proyecto de Windows Phone.  
   
-2.  En la barra de herramientas **Estándar**, seleccione una de las opciones del emulador.  
+2.  En el **estándar** barra de herramientas, seleccione una de las opciones del emulador.  
   
-     ![Lista de imágenes del Emulador de Windows Phone](~/debugger/media/wp_emulator_list.png "WP\_Emulator\_list")  
+     ![Lista de imágenes del emulador de Windows Phone](../debugger/media/wp_emulator_list.png "WP_Emulator_list")  
   
-3.  Para implementar y ejecutar la aplicación con la depuración, en el menú **Depurar**, haga clic en **Iniciar depuración** o presione F5.  
+3.  Para implementar y ejecutar la aplicación con depuración, en el **depurar** menú, haga clic en **Iniciar depuración**, o bien presione F5.  
   
-     Para implementar y ejecutar la aplicación sin depurar, en el menú **Depurar**, haga clic en **Iniciar sin depurar** o presione Ctrl\+F5.  
+     Para implementar y ejecutar la aplicación sin depuración, en el **depurar** menú, haga clic en **iniciar sin depurar**, o presione Ctrl + F5.  
   
-     La aplicación se implementa e inicia.  
+     La aplicación se ha implementado y se ha iniciado.  
   
-     Para implementar la aplicación sin ejecutarla, en el menú **Compilar**, haga clic en **Implementar solución**.  
+     Para implementar la aplicación sin ejecutarla, en la **generar** menú, haga clic en **implementar solución**.  
   
-##### Para detener una aplicación en ejecución  
+##### <a name="to-stop-a-running-app"></a>Para detener una aplicación en ejecución  
   
 -   Para detener una aplicación en ejecución, realice una de las siguientes operaciones:  
   
-    -   En Visual Studio, en el menú **Depurar**, haga clic en **Detener depuración** o presione Mayús\+F5.  
+    -   En Visual Studio, en el **depurar** menú, haga clic en **Detener depuración**, o bien presione MAYÚS+F5.  
   
-    -   En el emulador, presione el botón **Atrás** para salir de la aplicación. Si la página activa de la aplicación no era una página de inicio de la aplicación, es posible que deba presionar el botón **Atrás** más de una vez.  
+    -   En el emulador, presione el **volver** botón para salir de la aplicación. Si la página activa de la aplicación no era una página de inicio de la aplicación, es podrán que deba presionar el **volver** botón de más de una vez.  
   
      La aplicación se cierra y se abre la pantalla Inicio. Esta operación finaliza la sesión de depuración actual.  
   
-##### Para reiniciar una aplicación sin depuración  
+##### <a name="to-restart-an-app-without-debugging"></a>Para reiniciar una aplicación sin depuración  
   
 1.  En el emulador, en la pantalla Inicio, deslice el dedo rápidamente hacia la izquierda para ver la lista de aplicaciones.  
   
 2.  En la lista de aplicaciones, pulse el icono de la aplicación. La aplicación se reinicia sin depuración.  
   
-##### Para desactivar una aplicación en ejecución  
+##### <a name="to-deactivate-a-running-app"></a>Para desactivar una aplicación en ejecución  
   
-1.  Antes de ejecutar la aplicación, en Visual Studio, haga clic con el botón secundario en el proyecto en el Explorador de soluciones y seleccione **Propiedades** para abrir **Diseñador de proyectos**.  
+1.  Antes de ejecutar la aplicación, en Visual Studio, haga clic en el proyecto en el Explorador de soluciones y, a continuación, seleccione **propiedades** para abrir **Diseñador de proyectos**.  
   
-2.  En **Diseñador de proyectos**, en la página **Depurar**, deje la casilla **Marcador de exclusión tras desactivación durante la depuración** desactivada si quiere que la aplicación entre en estado inactivo al desactivarla. Active la casilla si quiere que se asigne a la aplicación un marcador de exclusión al desactivarla.  
+2.  En **Diseñador de proyectos**, en la **depurar** página, deje el **marcador de exclusión tras desactivación durante la depuración** casilla desactivada si desea que la aplicación entre en un inactivo estado cuando desactivado. Active la casilla si quiere que se asigne a la aplicación un marcador de exclusión al desactivarla.  
   
-3.  En el menú **Depurar**, haga clic en **Iniciar depuración** o presione F5 para ejecutar la aplicación.  
+3.  En el **depurar** menú, haga clic en **Iniciar depuración**, o bien presione F5 para ejecutar la aplicación.  
   
-4.  En el emulador, presione el botón **Iniciar**. Aparece la pantalla Inicio y se desactiva la aplicación. La aplicación entra en estado inactivo o se le asigna un marcador de exclusión, dependiendo de la configuración de la casilla **Marcador de exclusión tras la desactivación durante la depuración**.  
+4.  En el emulador, presione el **iniciar** botón. Aparece la pantalla Inicio y se desactiva la aplicación. La aplicación entra en estado inactivo o se con marcador de exclusión, dependiendo del valor de la **marcador de exclusión tras desactivación durante la depuración** casilla de verificación.  
   
-##### Para reactivar una aplicación inactiva o con marcador de exclusión  
+##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>Para reactivar una aplicación inactiva o con marcador de exclusión  
   
--   En el emulador, presione el botón **Atrás** para volver a la aplicación. Si navega a otras páginas o ha abierto otra aplicación, es posible que deba presionar el botón **Atrás** más de una vez para reactivar la aplicación.  
+-   En el emulador, presione el **volver** botón para volver a la aplicación. Si ha navegado a otras páginas o has abierto otra aplicación, es podrán que deba presionar el **volver** botón más de una vez para reactivar la aplicación.  
   
-     La sesión de depuración se reanuda. Si el depurador se ha desasociado de la aplicación, es posible que deba presionar F5 para reanudar la sesión de depuración.  
+     Se reanudará la sesión de depuración. Si el depurador se ha desasociado de la aplicación, es posible que deba presionar F5 para reanudar la sesión de depuración.  
   
-###  <a name="BKMK_depltool"></a> Ejecutar una aplicación con la herramienta Implementación de aplicación  
- También puede usar la herramienta Implementación de aplicación de Windows Phone \(**AppDeploy.exe**\) para ejecutar la aplicación en el emulador. Esta herramienta es una aplicación independiente que se instala al instalar las herramientas de desarrollo de Windows Phone.  
+###  <a name="BKMK_depltool"></a>Ejecutar una aplicación con la herramienta de implementación de aplicaciones  
+ También puede usar la herramienta de implementación de aplicaciones de Windows Phone (**AppDeploy.exe**) para ejecutar la aplicación en el emulador. Esta herramienta es una aplicación independiente que se instala al instalar las herramientas de desarrollo de Windows Phone.  
   
- Para obtener más información, consulte [Implementar aplicaciones de Windows Phone 8.1 con la herramienta Implementación de aplicaciones](../Topic/Deploy%20Windows%20Phone%208.1%20apps%20with%20the%20Application%20Deployment%20tool.md).  
+ Para obtener más información, consulte [aplicaciones de implementar Windows Phone 8.1 con la herramienta de implementación de aplicaciones](http://msdn.microsoft.com/Library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
-##  <a name="BKMK_toolbar"></a> Configurar el emulador de Windows Phone con la barra de herramientas del emulador  
- En la siguiente captura de pantalla se muestran los botones de configuración disponibles en la barra de herramientas del emulador.  
+##  <a name="BKMK_toolbar"></a>Configurar el emulador de Windows Phone con la barra de herramientas del emulador  
+ En esta table se muestran los botones de configuración disponibles en la barra de herramientas del emulador.  
   
- f21574ab-5970-4b7a-9281-c13073bf6767  
+|Botones de la barra de herramientas|Opciones de configuración|  
+|---------------------|---------------------------|  
+|![Opciones en la barra de herramientas del emulador de Windows Phone de entrada](../debugger/media/wp_emulator_.png "WP_Emulator_")|**Configurar entrada único punto o multipunto**<br /><br /> Al habilitar una entrada de multipunto, puede hacer clic con el botón derecho para mover los puntos táctiles sin tocar la pantalla. A continuación, puedeshacer clic con el botón izquierdo para mover ambos puntos táctiles simultáneamente.|  
+|![Orientación en la barra de herramientas del emulador de Windows Phone](../debugger/media/wp_emulator_rotation.png "WP_Emulator_rotation")|**Configurar la orientación del emulador**<br /><br /> Puede cambiar la orientación en Windows Phone Emulator por una de las tres orientaciones posibles: vertical, horizontal a la izquierda u horizontal a la derecha. El tamaño del emulador no cambia al cambiar la orientación.<br /><br /> Para cambiar la orientación, haga clic en el **Girar a la izquierda** botón o **Girar a la derecha** botón.|  
+|![Cambiar el tamaño de opciones en la barra de herramientas del emulador de Windows Phone](../debugger/media/wp_emulator_size.png "WP_Emulator_size")|**Configurar el tamaño del emulador**<br /><br /> Puede cambiar el tamaño del emulador en la pantalla del equipo host. Los puntos por pulgada (PPP) del emulador se basan en los PPP del monitor host, independientemente del valor del zoom.<br /><br /> -Para ajustar el emulador a la pantalla, haga clic en el **ajustar a la pantalla** botón.<br />-Para cambiar la configuración del zoom, haga clic en el **Zoom** botón. El **Zoom** abre el cuadro de diálogo. En el **Zoom** diálogo cuadro, escriba un valor de zoom entre 33 y 100.|  
   
-|Botones de barra de herramientas|Opciones de configuración|  
-|--------------------------------------|-------------------------------|  
-|![Opciones de entrada en la barra de herramientas del Emulador de Windows Phone](~/debugger/media/wp_emulator_.png "WP\_Emulator\_")|**Configurar entrada único punto o multipunto**<br /><br /> Al habilitar la entrada de multipunto, puede hacer clic con el botón secundario para mover los puntos táctiles sin tocar la pantalla. A continuación, puede hacer clic con el botón izquierdo para mover ambos puntos táctiles simultáneamente.|  
-|![Orientación en la barra de herramientas del Emulador de Windows Phone](~/debugger/media/wp_emulator_rotation.png "WP\_Emulator\_rotation")|**Configurar la orientación del emulador**<br /><br /> Puede cambiar la orientación en Windows Phone Emulator por una de las tres orientaciones posibles: vertical, horizontal a la izquierda u horizontal a la derecha. El tamaño del emulador no cambia al cambiar la orientación.<br /><br /> Para cambiar la orientación, haga clic en los botones **Girar a la izquierda** o **Girar a la derecha**.|  
-|![Opciones de tamaño en la barra de herramientas del Emulador de Windows Phone](~/debugger/media/wp_emulator_size.png "WP\_Emulator\_size")|**Configurar el tamaño del emulador**<br /><br /> Puede cambiar el tamaño del emulador en la pantalla del equipo host. Los puntos por pulgada \(PPP\) del emulador se basan en los PPP del monitor host, independientemente del valor del zoom.<br /><br /> -   Para ajustar el emulador a la pantalla, haga clic en el botón **Ajustar a la pantalla**.<br />-   Para cambiar la configuración del zoom, haga clic en el botón **Zoom**. Se abrirá el cuadro de diálogo **Zoom**. En el cuadro de diálogo **Zoom**, escriba un valor de zoom entre 33 y 100.|  
+##  <a name="BKMK_buttons"></a>Use los botones de hardware simulados en el emulador  
+ Simula el uso de los botones de hardware de un teléfono mediante los botones de hardware simulados situados a la derecha de la pantalla del emulador.  
   
-##  <a name="BKMK_buttons"></a> Usar los botones de hardware simulados en el emulador  
- Simule el uso de los botones de hardware de un teléfono con los botones de hardware simulados situados a la derecha de la pantalla del emulador.  
+-   Haga clic en el **Power** botón para simular activa y desactiva la presentación. Haga clic y mantenga presionado para simular la activación y desactivación del teléfono.  
   
--   Haga clic en el botón **inicio\/apagado** para simular la activación y desactivación del dispositivo. Haga clic y mantenga presionado para simular la activación y desactivación del teléfono.  
+-   Haga clic en el **Subir volumen** o **Bajar volumen** botón para simular el cambio de volumen del altavoz del teléfono para llamadas telefónicas y notificaciones.  
   
--   Haga clic en los botones **Subir volumen** o **Bajar volumen** para simular el cambio de volumen del altavoz del teléfono para llamadas telefónicas y notificaciones.  
-  
--   El botón **Cámara** inicia la aplicación de cámara. Puede simular cómo hacer una foto o grabar un vídeo con los controles de la aplicación de la cámara.  
+-   El **cámara** botón inicia la aplicación de la cámara. Puede simular cómo hacer una foto o grabar un vídeo mediante los controles de la aplicación de la cámara.  
   
  La siguiente captura de pantalla muestra los botones de hardware simulados.  
   
 1.  La imagen de la izquierda muestra la pantalla Inicio del emulador.  
   
-2.  La imagen del centro muestra el emulador tras pulsar el botón **inicio\/apagado** para apagar la pantalla.  
+2.  La imagen del centro muestra el emulador tras pulsar el **Power** botón para desactivar la presentación.  
   
-3.  La imagen de la derecha muestra la pantalla del emulador tras pulsar el botón **Subir volumen** para aumentar el volumen.  
+3.  Imagen de la derecha muestra la pantalla del emulador tras pulsar el **Subir volumen** botón para aumentar el volumen.  
   
- ![Botones del Emulador de Windows Phone](~/debugger/media/wp_emulator_buttons.png "WP\_Emulator\_buttons")  
+ ![Botones en el emulador de Windows Phone](../debugger/media/wp_emulator_buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> Usar el teclado del equipo con el emulador  
+##  <a name="BKMK_tasks_kbd"></a>Usar el teclado del equipo con el emulador  
  El emulador admite la asignación del teclado de hardware del equipo de desarrollo al teclado de un Windows Phone. El comportamiento de las teclas es el mismo que en un dispositivo Windows Phone.  
   
  De forma predeterminada, el teclado de hardware no está habilitado. Esta implementación es equivalente a un teclado deslizante que debe implementarse antes de su uso. Antes de habilitar el teclado de hardware, el emulador acepta la entrada de teclas solo desde las teclas de control.  
   
- El emulador no admite caracteres especiales del teclado de una versión localizada de un equipo de desarrollo de Windows. Para escribir caracteres especiales que están presentes en un teclado localizado, use el Panel de entrada de software \(SIP\).  
+ El emulador no admite caracteres especiales del teclado de una versión localizada de un equipo de desarrollo de Windows. Para escribir caracteres especiales que están presentes en un teclado localizado, use el Panel de entrada de software (SIP).  
   
-#### Para usar el teclado del equipo en el emulador  
+ Para usar el teclado de su equipo en el emulador, presione la página seguridad de clave o la tecla Pausa/Interrumpir (emulador de Windows 8/8.1) o F4 (emulador Windows 10).  
   
--   Presione la tecla RE PÁG.  
-  
-     \- or \-  
-  
--   Presione la tecla PAUSA\/INTERRUMPIR.  
-  
-#### Para dejar de usar el teclado de su equipo y usar el teclado de hardware del emulador  
-  
--   Presione la tecla AV PÁG.  
-  
-     \- or \-  
-  
--   Presione la tecla PAUSA\/INTERRUMPIR.  
+ Para dejar de usar el teclado de su equipo en el emulador, presione la página hacia abajo de la clave o la tecla Pausa/Interrumpir (emulador de Windows 8/8.1) o F4 (emulador Windows 10).  
   
  La tabla siguiente indica las teclas de un teclado de hardware que puede usar para emular los botones y otros controles en Windows Phone.  
   
 |Tecla de hardware del equipo|Botón de hardware de Windows Phone|Notas|  
-|----------------------------------|----------------------------------------|-----------|  
-|F1|ATRÁS|Las pulsaciones prolongadas funcionan según lo esperado.|  
-|F2|INICIO|Las pulsaciones prolongadas funcionan según lo esperado.|  
-|F3|BÚSQUEDA||  
-|F4|No disponible.||  
-|F5|No disponible.||  
+|---------------------------|-----------------------------------|-----------|  
+|F1|ATRÁS|Las pulsaciones prolongadas funcionan según lo previsto.|  
+|F2|INICIO|Las pulsaciones prolongadas funcionan según lo previsto.|  
+|F3|BUSCAR||  
+|F4|En el emulador de Windows 10, alterna entre utilizar el teclado del equipo local y no utilizar teclado del equipo local.|No es aplicable en el emulador de Windows 8/8.1.|  
+|F5|No es aplicable.||  
 |F6|CÁMARA A LA MITAD|Un botón de cámara dedicado que se presiona hasta la mitad.|  
 |F7|CÁMARA COMPLETO|Un botón de cámara dedicado.|  
-|F8|No disponible.||  
+|F8|No es aplicable.||  
 |F9|SUBIR VOLUMEN||  
 |F10|BAJAR VOLUMEN||  
-|F11|No disponible.||  
-|F12|INICIO\/APAGADO|Presione la tecla F12 dos veces para habilitar la pantalla de bloqueo.<br /><br /> Las pulsaciones prolongadas funcionan según lo previsto.|  
-|ESC|ATRÁS|Las pulsaciones prolongadas funcionan según lo esperado.|  
-|PAUSA\/INTERRUMPIR|Alternar teclado|Activa o desactiva el teclado de hardware.|  
-|RE PÁG|Teclado arriba|Activa el teclado de hardware.|  
-|AV PÁG|Teclado abajo|Desactiva el teclado de hardware.|  
+|F11|No es aplicable.||  
+|F12|INICIO/APAGADO|Presione la tecla F12 dos veces para habilitar la pantalla de bloqueo.<br /><br /> Las pulsaciones prolongadas funcionan según lo previsto.|  
+|ESC|ATRÁS|Las pulsaciones prolongadas funcionan según lo previsto.|  
+|PAUSA/INTERRUMPIR|Alternar teclado (solo en el emulador Windows 8/8.1).|No es aplicable en el emulador de Windows 10.|  
+|RE PÁG|Activa el teclado de hardware (solo en Windows 8/8.1 emulador).|No es aplicable en el emulador de Windows 10.|  
+|AV PÁG|Desactiva el teclado de hardware (solo en Windows 8/8.1 emulador).|No es aplicable en el emulador de Windows 10.|  
   
-##  <a name="BKMK_checkpoints"></a> Guardar y cargar puntos de control personalizados  
- Guarde una instantánea del estado del emulador mediante la pestaña **Puntos de control** de las **Herramientas adicionales** del emulador. Esta característica es útil si prueba a menudo su aplicación con los mismos datos y la misma configuración.  
+##  <a name="BKMK_checkpoints"></a>Guardar y cargar puntos de control personalizados  
+ Guardar una instantánea del estado del emulador mediante la **puntos de comprobación** pestaña el emulador de **herramientas adicionales**. Esta característica es útil si prueba a menudo su aplicación con los mismos datos y la misma configuración.  
   
  Por ejemplo, si la aplicación necesita varios contactos, puede crear los registros de contactos una vez y guardar una instantánea del emulador. De lo contrario, deberá recrear los registros de contactos cada vez que inicie el emulador.  
   
--   Haga clic en **Nuevo punto de control** para capturar una nueva instantánea del estado del emulador con los datos y la configuración necesarios para volver a probar la aplicación más adelante. El nuevo punto de control se agrega a la lista **Puntos de control**.  
+-   Haga clic en **nuevo punto de control** para capturar una nueva instantánea del estado del emulador con los datos y la configuración necesaria para probar la aplicación de nuevo más tarde. El nuevo punto de control se agrega a la **puntos de comprobación** lista.  
   
-     No puede capturar un punto de control mientras el depurador esté adjunto al emulador.  
+     Puede capturar un punto de control mientras el depurador esté asociado al emulador.  
   
--   Seleccione un punto de control en el lista **Puntos de control** para ver la información sobre el punto de control.  
+-   Seleccione un punto de control en el **puntos de comprobación** lista para ver la información sobre el punto de control.  
   
--   Seleccione el botón de radio en la columna **Predeterminado** para convertir un punto de control en el punto de control predeterminado para el emulador activo.  
+-   Seleccione el botón de radio en el **predeterminado** columna para que el punto de control predeterminado de un punto de control para el emulador activo.  
   
--   Haga clic en **Restaurar** para reiniciar el sistema operativo de Windows Phone en el emulador y cargar la instantánea seleccionada.  
+-   Haga clic en **restaurar** para reiniciar el sistema operativo de Windows Phone en el emulador y cargar la instantánea seleccionada.  
   
--   Haga clic en **Eliminar** para eliminar una instantánea que ya no necesite.  
+-   Haga clic en **eliminar** para eliminar una instantánea que ya no necesite.  
   
- La imagen del emulador original aparece siempre como el primer elemento de la lista **Puntos de control** y no se puede cambiar ni eliminar. Sin embargo, puede seleccionar una instantánea diferente como imagen del emulador predeterminada.  
+ La imagen del emulador original aparece siempre como el primer elemento de la **puntos de comprobación** lista y que no se puede cambiar ni eliminar. Sin embargo, puede seleccionar una instantánea diferente como imagen del emulador predeterminada.  
   
- ![Pestaña de puntos de comprobación del Emulador de Windows Phone](~/debugger/media/wp_emulator_checkpoints.png "WP\_Emulator\_checkpoints")  
+ ![Pestaña de puntos de comprobación del emulador de Windows Phone](../debugger/media/wp_emulator_checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> Realizar capturas de pantalla en el emulador  
+##  <a name="BKMK_tasks_shot"></a>Realizar capturas de pantalla en el emulador  
  Puede crear capturas de pantalla de sus aplicaciones de Windows Phone mediante la herramienta de captura de pantallas desde la ventana Herramientas adicionales. La herramienta crea archivos PNG que coinciden con la resolución del emulador en ejecución.  
   
- ![Capturas de pantalla desde el Emulador de Windows Phone](~/debugger/media/wp_emulator_screenshots.png "WP\_Emulator\_screenshots")  
+ ![Capturas de pantalla de la Windows Phone Emulator](../debugger/media/wp_emulator_screenshots.png "WP_Emulator_screenshots")  
   
-#### Para crear una captura de pantalla de una aplicación mediante la herramienta integrada de captura de pantallas del emulador  
+#### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Para crear una captura de pantalla de una aplicación mediante la herramienta integrada de captura de pantallas del emulador  
   
-1.  Para optimizar la calidad de las capturas de pantalla, establezca el nivel de zoom del emulador al 100 por ciento. Cuanto más elevado sea el nivel de zoom, mejor será la calidad de la captura de pantalla.  
+1.  Para optimizar la calidad de las capturas de pantalla, establezca el nivel de zoom del emulador al 100 por ciento. Cuando más elevado sea el nivel de zoom, mejor será la calidad de la captura de pantalla.  
   
 2.  Iniciar la aplicación en el emulador.  
   
-3.  En la barra de herramientas del emulador, haga clic en el botón de expandir para abrir la ventana **Herramientas adicionales**.  
+3.  En la barra de herramientas del emulador, haga clic en el botón de expansión para abrir la **herramientas adicionales** ventana.  
   
-4.  Haga clic en la pestaña **Captura de pantalla de**.  
+4.  Haga clic en el **captura de pantalla de** ficha.  
   
-5.  Cuando la aplicación esté lista, haga clic en el botón **Capturar**.  
+5.  Cuando la aplicación esté lista, haga clic en el **capturar** botón.  
   
      La captura de pantalla aparecerá en el área de trabajo.  
   
-6.  Haga clic en el botón **Guardar** para abrir el cuadro de diálogo **Guardar como**.  
+6.  Haga clic en el **guardar** para abrir el **Guardar como** cuadro de diálogo.  
   
-7.  Elija la ubicación y el **Nombre de archivo** que quiera y haga clic en **Guardar**.  
+7.  Elija la ubicación y **nombre de archivo** que desee y, a continuación, haga clic en **guardar**.  
   
 8.  También tiene la opción de navegar a otras páginas de la aplicación y realizar capturas de pantalla adicionales.  
   
@@ -249,8 +217,8 @@ manager: "ghogen"
   
  Deshabilite los contadores de velocidad de fotogramas en la pantalla del emulador antes de realizar capturas de pantalla que se enviarán a la Tienda de Windows Phone.  
   
-#### Para deshabilitar los contadores de velocidad de fotogramas en el emulador antes de realizar capturas de pantalla  
+#### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Para deshabilitar los contadores de velocidad de fotogramas en el emulador antes de realizar capturas de pantalla  
   
--   Especifique una compilación de versión en Visual Studio. Después de especificar una compilación de versión, inicie la aplicación seleccionando el vínculo **Implementar *\[nombre de la aplicación\]*** del menú **Compilar**.  
+-   Especifique una compilación de versión en Visual Studio. Después de especificar una versión de lanzamiento, inicie la aplicación seleccionando el **implementar *[nombre de la aplicación]***  crear vínculos en la **generar** menú.  
   
--   Como alternativa, puede convertir en comentario la línea de código en el archivo app.xaml.cs o app.xaml.vb que establece el valor de `EnableFrameRateCounter` en `true`.
+-   Como alternativa, puede convertir en comentario la línea de código en el archivo app.xaml.cs o app.xaml.vb que establece el valor de `EnableFrameRateCounter` como `true`.

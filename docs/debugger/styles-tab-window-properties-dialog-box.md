@@ -1,30 +1,30 @@
 ---
-title: "Pesta&#241;a Estilos (Cuadro de di&#225;logo Propiedades de la ventana) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Cuadro de diálogo Propiedades de la ventana, pestaña Estilos"
+title: "Ficha, cuadro de diálogo de propiedades de ventana estilos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, Styles Tab
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1fadd6043b86a6b73cc5c58be8b5d74558c3affc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a Estilos (Cuadro de di&#225;logo Propiedades de la ventana)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use la pestaña **Estilos** para mostrar los estilos aplicados a la ventana seleccionada.  Para mostrar el [cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md), cambie el foco a la ventana [Vista Ventanas](../debugger/windows-view.md).  Seleccione el nodo de una ventana en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="styles-tab-window-properties-dialog-box"></a>Pestaña Estilos (Cuadro de diálogo Propiedades de la ventana)
+Use la **estilos** ficha para mostrar los estilos aplicados a la ventana seleccionada. Para mostrar la [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione cualquier nodo de la ventana en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- En la pestaña **Estilos** está disponible la configuración siguiente:  
+ Las siguientes opciones están disponibles en la **estilos** ficha:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Estilos de ventana**|Combinación de códigos de estilos de ventana y estilos de control, según corresponda.|  
-|**Estilos extendidos**|Combinación de códigos de estilos de ventana extendidos.|
+|**Estilos de ventana**|Una combinación de la ventana de códigos de estilos y estilos de control, si es aplicable.|  
+|**Estilos extendidos**|Una combinación de códigos de estilo de ventana extendidos.|

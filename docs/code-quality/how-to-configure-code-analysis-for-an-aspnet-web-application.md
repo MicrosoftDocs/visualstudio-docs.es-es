@@ -1,48 +1,47 @@
 ---
-title: "C&#243;mo: Configurar el an&#225;lisis de c&#243;digo para una aplicaci&#243;n web ASP.NET | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.propertypages.asp"
+title: "Cómo: configurar el análisis de código para una aplicación Web ASP.NET | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dbc2ba8f78cc8f38bce62adbd3d91604875bffa3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Configurar el an&#225;lisis de c&#243;digo para una aplicaci&#243;n web ASP.NET
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] y [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], puede seleccionar en una lista de *conjuntos de reglas* de análisis de código para aplicarlos a una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  El conjunto de reglas predeterminado es Reglas mínimas recomendadas de Microsoft.  Puede seleccionar otro conjunto de reglas para aplicarlo al sitio web.  
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Cómo: Configurar el análisis de código para una aplicación web ASP.NET
+En [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] y [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] puede seleccionar de una lista de análisis de código *conjuntos de reglas* para aplicar a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación Web. El conjunto de reglas predeterminado es reglas de recomendadas Mininimum de Microsoft. Puede seleccionar otro conjunto de reglas para aplicar al sitio Web.  
   
-### Para configurar un conjunto de reglas para un proyecto de marco de páginas de ASP.NET  
+### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Para configurar un conjunto de reglas para un proyecto de marco de páginas de ASP.NET  
   
-1.  Seleccione el sitio web en el **Explorador de soluciones**.  
+1.  Seleccione el sitio Web en **el Explorador de soluciones**.  
   
-2.  En el menú **Analizar**, haga clic en **Configurar análisis de código para sitio web**.  
+2.  En el **analizar** menú, haga clic en **configurar análisis de código para el sitio Web**.  
   
-3.  Si seleccionó la solución y esta tiene más de un proyecto, seleccione la configuración de compilación y el sistema operativo de destino en las listas **Configuración** y **Plataforma**.  
+3.  Si seleccionó la solución y la solución tiene más de un proyecto, seleccione el sistema de operativo de destino y la configuración de compilación de la **configuración** y **plataforma** enumera.  
   
-4.  Para cada proyecto de la solución, haga clic en la columna **Conjunto de reglas** y, a continuación, haga clic en el nombre del conjunto de reglas que se va a ejecutar.  
+4.  Para cada proyecto de la solución, haga clic en el **conjunto de reglas** columna y, a continuación, haga clic en el nombre de la regla configurado para ejecutarse.  
   
-5.  De forma predeterminada, el análisis de código se ejecuta en todos los proyectos de la solución.  Para deshabilitar o habilitar el análisis de código para un proyecto determinado, siga estos pasos:  
+5.  De forma predeterminada, el análisis de código se ejecuta en todos los proyectos de la solución. Para deshabilitar o habilitar el análisis de código para un proyecto determinado, siga estos pasos:  
   
-    1.  Haga clic con el botón secundario en el nombre del proyecto y, a continuación, haga clic en Propiedades.  
+    1.  Haga clic en el nombre del proyecto y, a continuación, haga clic en Propiedades.  
   
-    2.  Active o desactive la casilla **Habilitar análisis de código**.  También puede ejecutar el análisis de código manualmente seleccionando **Ejecutar análisis de código en el sitio web** desde el menú **Analizar**.  
+    2.  Active o desactive el **Habilitar análisis de código** casilla de verificación. También puede ejecutar análisis de código seleccionando **ejecutar análisis de código en el sitio Web** desde el **analizar** menú.  
   
-6.  En la lista desplegable **Ejecutar este conjunto de reglas**, siga estos pasos:  
+6.  En el **ejecutar este conjunto de reglas** lista desplegable lista, siga estos pasos:  
   
-    -   Seleccione el conjunto de reglas que desee utilizar.  
+    -   Seleccione el conjunto de reglas que desea utilizar.  
   
-    -   **\<Browse\>** Seleccione para especificar un conjunto de reglas personalizado existente que no está en la lista.  
+    -   Seleccione  **\<examinar >** especificar una regla personalizada existente conjunto que no está en la lista.  
   
-    -   Defina un conjunto de reglas personalizado.  Para obtener más información, vea [Crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    -   Defina un conjunto de reglas personalizado. Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).

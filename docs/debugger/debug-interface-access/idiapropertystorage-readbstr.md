@@ -1,50 +1,49 @@
 ---
-title: "IDiaPropertyStorage::ReadBSTR | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadBSTR"
+title: IDiaPropertyStorage::ReadBSTR | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadBSTR
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93ab7271ccef1819e16e4cdb4c690f82bfaeec35
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadBSTR
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Lee los valores de `BSTR` en un conjunto de propiedades.  
+# <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
+Lee `BSTR` valores en un conjunto de propiedades.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT ReadBSTR (   
-   PROPID id,  
-   BSTR*  pValue  
+```C++  
+HRESULT ReadBSTR (   
+   PROPID id,  
+   BSTR*  pValue  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `id`  
- \[in\]  Identificador de la propiedad que se leerá \(`PROPID` se define en WTypes.h como `ULONG`\).  
+ [in] Identificador de la propiedad que debe leerse (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
   
  `pValue`  
- \[out\]  devuelve el valor de propiedad.  
+ [out] Devuelve el valor de propiedad.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Devuelve `E_INVALIDARG` si la propiedad no es de `BSTR`escrito.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_INVALIDARG` si la propiedad no es de tipo `BSTR`.  
   
-## Comentarios  
- `BSTR` está definido por Windows como una cadena de caracteres anchos terminada en cero.  
+## <a name="remarks"></a>Comentarios  
+ Un `BSTR` se define por Windows como una cadena de caracteres anchos terminadas en cero.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

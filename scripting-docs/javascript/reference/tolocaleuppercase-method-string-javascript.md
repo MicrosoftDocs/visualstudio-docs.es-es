@@ -1,49 +1,50 @@
 ---
-title: "toLocaleUpperCase (M&#233;todo, String de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toLocaleUpperCase"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toLocaleUpperCase (método)"
+title: "toLocaleUpperCase (método, String) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toLocaleUpperCase
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toLocaleUpperCase method
 ms.assetid: e927adb6-475e-44b2-91f7-cedda10a39b0
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 07a89560dde0319598da30fc3451524112b99eac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toLocaleUpperCase (M&#233;todo, String de JavaScript)
-Devuelve una cadena donde todos los caracteres alfabéticos se han convertido a mayúsculas, según la configuración regional actual del entorno host.  
+# <a name="tolocaleuppercase-method-string-javascript"></a>toLocaleUpperCase (Método, String de JavaScript)
+Devuelve una cadena donde todos los caracteres alfabéticos han sido configuración regional actual del entorno convertido a mayúsculas, teniendo en cuenta el host.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 stringVar.toLocaleUpperCase( )  
 ```  
   
-## Comentarios  
- La referencia obligatoria `stringVar` es un objeto `String` o un literal de cadena.  
+## <a name="remarks"></a>Comentarios  
+ Requerido `stringVar` referencia es un `String` objeto o literal de cadena.  
   
- El método `toLocaleUpperCase` convierte los caracteres de una cadena teniendo en cuenta la configuración regional actual del entorno host.  En la mayoría de los casos, el resultado es el mismo que el resultado del método `toUpperCase`.  Los resultados difieren si las reglas de un lenguaje entran en conflicto con las asignaciones normales de minúsculas y mayúsculas de Unicode.  
+ El `toLocaleUpperCase` método convierte los caracteres de una cadena, teniendo en cuenta la configuración regional actual del entorno de host. En la mayoría de los casos, el resultado es el mismo como resultado la `toUpperCase` método. Los resultados difieren si las reglas de un lenguaje entran en conflicto con las asignaciones de mayúsculas normales de Unicode.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)  
+ **Se aplica a**: [objeto de cadena](../../javascript/reference/string-object-javascript.md)  
   
-## Vea también  
- [toLocaleLowerCase \(Método, String\)](../../javascript/reference/tolocalelowercase-method-string-javascript.md)   
- [toUpperCase \(Método, String\)](../../javascript/reference/touppercase-method-string-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toLocaleLowerCase (método, String)](../../javascript/reference/tolocalelowercase-method-string-javascript.md)   
+ [toUpperCase (Método, String)](../../javascript/reference/touppercase-method-string-javascript.md)

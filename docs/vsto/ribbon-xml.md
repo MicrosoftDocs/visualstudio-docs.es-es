@@ -1,16 +1,13 @@
 ---
-title: Ribbon XML | Microsoft Docs
+title: XML de la cinta de opciones | Documentos de Microsoft
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VSTO.Ribbon.RibbonXMLItem
+f1_keywords: VSTO.Ribbon.RibbonXMLItem
 dev_langs:
 - VB
 - CSharp
@@ -26,80 +23,81 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
 ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6b0eb5783aa5a58a1292f52bb50cb765673deddb
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-xml"></a>Ribbon XML
-  The Ribbon (XML) item enables you to customize a Ribbon by using XML. Use the Ribbon (XML) item if you want to customize the Ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+# <a name="ribbon-xml"></a>XML de la cinta de opciones
+  El elemento Cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento Cinta (XML) si desea personalizar la cinta de opciones de un modo que el elemento Ribbon (diseñador visual) no admite. Para obtener una comparación de lo que puede hacer con cada elemento, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adding a Ribbon (XML) Item to a Project  
- You can add a **Ribbon (XML)** item to any Office project from the **Add New Item** dialog box. Visual Studio automatically adds the following files to your project:  
+## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Agregar un elemento Cinta (XML) a un proyecto  
+ Puede agregar un elemento **Cinta (XML)** a cualquier proyecto de Office desde el cuadro de diálogo **Agregar nuevo elemento** . Visual Studio agrega automáticamente los siguientes archivos al proyecto:  
   
--   A Ribbon XML file. This file defines the Ribbon user interface (UI). Use this file to add UI elements such as tabs, groups, and controls. For details, see [Ribbon XML File Reference](#RibbonDescriptorFile) later in this topic.  
+-   Un archivo XML de la cinta de opciones. Este archivo define la interfaz de usuario de la cinta de opciones. Use este archivo para agregar elementos de la interfaz de usuario, como pestañas, grupos y controles. Para obtener información detallada, consulte [Referencia de archivo XML de la cinta de opciones](#RibbonDescriptorFile) más adelante en este tema.  
   
--   A Ribbon code file. This file contains the *Ribbon class*. This class has the name that you specified for the **Ribbon (XML)** item in the **Add New Item** dialog box. Microsoft Office applications use an instance of this class to load the custom Ribbon. For details, see [Ribbon Class Reference](#RibbonExtensionClass) later in this topic.  
+-   Un archivo de código de la cinta de opciones. Este archivo contiene la *clase Ribbon*. Esta clase tiene el nombre que especificó para el elemento **Cinta (XML)** en el cuadro de diálogo **Agregar nuevo elemento** . Las aplicaciones de Microsoft Office usan una instancia de esta clase para cargar la cinta de opciones personalizada. Para obtener información detallada, consulte [Referencia de la clase Ribbon](#RibbonExtensionClass) más adelante en este tema.  
   
- By default, these files add a custom group to the **Add-Ins** tab in the Ribbon.  
+ De forma predeterminada, estos archivos agregan un grupo personalizado a la pestaña **Complementos** en la cinta de opciones.  
   
-## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Displaying the Custom Ribbon in a Microsoft Office Application  
- After you add a **Ribbon (XML)** item to your project, you must add code to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Mostrar la cinta de opciones personalizada en una aplicación de Microsoft Office  
+ Después de agregar un **cinta (XML)** elemento al proyecto, debe agregar código a la **ThisAddin**, **ThisWorkbook**, o **ThisDocument** (clase) que invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML Ribbon a la aplicación de Office.  
   
- The following code example overrides the CreateRibbonExtensibilityObject method and returns a Ribbon XML class named MyRibbon.  
+ En el ejemplo de código siguiente se invalida el método CreateRibbonExtensibilityObject y devuelve una clase XML Ribbon denominada MyRibbon.  
   
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)] [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+ [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Defining the Behavior of the Custom Ribbon  
- You can respond to user actions, such as clicking a button on the Ribbon, by creating *callback methods*. Callback methods resemble events in Windows Forms controls, but they are identified by an attribute in the XML of the UI element. You write methods in the Ribbon class, and a control calls the method that has the same name as the attribute value. For example, you can create a callback method that is called when a user clicks a button on the Ribbon. Two steps are required to create a callback method:  
+## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Definir el comportamiento de la cinta de opciones personalizada  
+ Puede responder a las acciones del usuario, como hacer clic en un botón de la cinta de opciones, creando *métodos de devolución de llamada*. Los métodos de devolución de llamada son similares a los eventos de los controles de Windows Forms, pero se identifican con un atributo en el código XML del elemento de la interfaz de usuario. Cuando escribe métodos en la clase Ribbon, un control llama al método que tiene el mismo nombre que el valor del atributo. Por ejemplo, puede crear un método de devolución de llamada al que se llama cuando un usuario hace clic en un botón de la cinta de opciones. Es necesario llevar a cabo dos pasos para crear un método de devolución de llamada:  
   
--   Assign an attribute to a control in the Ribbon XML file that identifies a callback method in your code.  
+-   Asigne a un control del archivo XML de la cinta de opciones un atributo que identifique un método de devolución de llamada en el código.  
   
--   Define the callback method in the Ribbon class.  
+-   Defina el método de devolución de llamada en la clase Ribbon.  
   
 > [!NOTE]  
->  Outlook requires an additional step. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  Outlook requiere un paso adicional. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- For a walkthrough that demonstrates how to automate an application from the Ribbon, see [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Para ver un tutorial en el que se muestra cómo se automatiza una aplicación desde la cinta de opciones, consulte [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
-### <a name="assigning-callback-methods-to-controls"></a>Assigning Callback Methods to Controls  
- To assign a callback method to a control in the Ribbon XML file, add an attribute that specifies the type of the callback method and the name of the method. For example, the following element defines a toggle button that has an **onAction** callback method named `OnToggleButton1`.  
+### <a name="assigning-callback-methods-to-controls"></a>Asignar métodos de devolución de llamada a controles  
+ Para asignar un método de devolución de llamada a un control en el archivo XML de la cinta de opciones, agregue un atributo que especifique el tipo del método de devolución de llamada y el nombre del método. Por ejemplo, el siguiente elemento define un botón de alternancia que tiene un método de devolución de llamada **onAction** llamado `OnToggleButton1`.  
   
 ```  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
- **onAction** is called when the user performs the main task associated with a particular control. For example, the **onAction** callback method of a toggle button is called when the user clicks the button.  
+ Se llama a**onAction** cuando el usuario efectúa la tarea principal asociada a un control determinado. Por ejemplo, se llama al método de devolución de llamada **onAction** de un botón de alternancia cuando el usuario hace clic en el botón.  
   
- The method that you specify in the attribute can have any name. However, it must match the name of the method that you define in the Ribbon code file.  
+ El método que especifique en el atributo puede tener cualquier nombre. Sin embargo, debe coincidir con el nombre del método que defina en el archivo de código de la cinta de opciones.  
   
- There are many different types of callback methods that you can assign to Ribbon controls. For a complete list of the callback methods available for each control, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ Hay muchos tipos diferentes de métodos de devolución de llamada que se pueden asignar a los controles de la cinta de opciones. Para obtener una lista completa de los métodos de devolución de llamada disponibles para cada control, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 3 de 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a> Defining Callback Methods  
- Define your callback methods in the Ribbon class in the Ribbon code file. A callback method has several requirements:  
+###  <a name="CallBackMethods"></a> Definir métodos de devolución de llamada  
+ Defina los métodos de devolución de llamada en la clase Ribbon en el archivo de código de la cinta de opciones. Un método de devolución de llamada tiene varios requisitos:  
   
--   It must be declared as public.  
+-   Debe declararse como público.  
   
--   Its name must match the name of a callback method that you assigned to a control in the Ribbon XML file.  
+-   Su nombre debe coincidir con el nombre de un método de devolución de llamada asignado a un control en el archivo XML de la cinta de opciones.  
   
--   Its signature must match the signature of a type of callback method that is available for the associated Ribbon control.  
+-   Su firma debe coincidir con la de un tipo de método de devolución de llamada que esté disponible para el control de cinta de opciones asociado.  
   
- For a complete list of the callback method signatures for Ribbon controls, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio does not provide IntelliSense support for callback methods that you create in the Ribbon code file. If you create a callback method that does not match a valid signature, the code will compile, but nothing will occur when the user clicks the control.  
+ Para obtener una lista completa de las firmas de métodos de devolución de llamada para los controles de la cinta de opciones, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 3 de 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio no proporciona compatibilidad con IntelliSense para los métodos de devolución de llamada que se crean en el archivo de código de la cinta de opciones. Si crea un método de devolución de llamada que no coincide con una firma válida, se compilará el código, pero no ocurrirá nada cuando el usuario haga clic en el control.  
   
- All callback methods have a <xref:Microsoft.Office.Core.IRibbonControl> parameter that represents the control that called the method. You can use this parameter to reuse the same callback method for multiple controls. The following code example demonstrates an **onAction** callback method that performs different tasks depending on which control the user clicks.  
+ Todos los métodos de devolución de llamada tienen un parámetro <xref:Microsoft.Office.Core.IRibbonControl> que representa el control que llamó al método. Puede usar este parámetro para reutilizar el mismo método de devolución de llamada en varios controles. En el siguiente ejemplo de código se muestra un método de devolución de llamada **onAction** que efectúa diferentes tareas según el control en el que el usuario hace clic.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)] [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
+ [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Ribbon XML File Reference  
- You can define your custom Ribbon by adding elements and attributes to the Ribbon XML file. By default, the Ribbon XML file contains the following XML.  
+##  <a name="RibbonDescriptorFile"></a> Referencia de archivo XML de la cinta de opciones  
+ Puede definir su cinta de opciones personalizada agregando elementos y atributos al archivo XML de la cinta de opciones. De forma predeterminada, el archivo XML de la cinta de opciones contiene el siguiente código XML.  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -116,41 +114,41 @@ ms.lasthandoff: 08/30/2017
 </customUI>  
 ```  
   
- The following table describes the default elements in the Ribbon XML file.  
+ En la siguiente tabla se describen los elementos predeterminados del archivo XML de la cinta de opciones.  
   
-|Element|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
-|**customUI**|Represents the custom Ribbon in the VSTO Add-in project.|  
-|**ribbon**|Represents the Ribbon.|  
-|**tabs**|Represents a set of Ribbon tabs.|  
-|**tab**|Represents a single Ribbon tab.|  
-|**group**|Represents a group of controls on the Ribbon tab.|  
+|**customUI**|Representa la cinta de opciones personalizada en el proyecto de complemento de VSTO.|  
+|**ribbon**|Representa la cinta de opciones.|  
+|**pestañas**|Representa un conjunto de pestañas de la cinta de opciones.|  
+|**pestaña**|Representa una sola pestaña de la cinta de opciones.|  
+|**group**|Representa un grupo de controles en la pestaña de la cinta de opciones.|  
   
- These elements have attributes that specify the appearance and behavior of the custom Ribbon. The following table describes the default attributes in the Ribbon XML file.  
+ Estos elementos tienen atributos que especifican la apariencia y el comportamiento de la cinta de opciones personalizada. En la siguiente tabla se describen los atributos predeterminados del archivo XML de la cinta de opciones.  
   
-|Attribute|Parent element|Description|  
+|Atributo|Elemento primario|Descripción|  
 |---------------|--------------------|-----------------|  
-|**onLoad**|**customUI**|Identifies a method that is called when the application loads the Ribbon.|  
-|**idMso**|**tab**|Identifies a built-in tab to display in the Ribbon.|  
-|**id**|**group**|Identifies the group.|  
-|**label**|**group**|Specifies the text that appears on the group.|  
+|**onLoad**|**customUI**|Identifica un método al que se llama cuando la aplicación carga la cinta de opciones.|  
+|**idMso**|**pestaña**|Identifica una pestaña integrada que se muestra en la cinta de opciones.|  
+|**id**|**group**|Identifica el grupo.|  
+|**etiqueta**|**group**|Especifica el texto que aparece en el grupo.|  
   
- The default elements and attributes in the Ribbon XML file are a small subset of the elements and attributes that are available. For a complete list of the available elements and attributes, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 2 of 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
+ Los elementos y atributos predeterminados del archivo XML de la cinta de opciones son un subconjunto pequeño de los elementos y atributos disponibles. Para obtener una lista completa de los elementos y atributos disponibles, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 2 de 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a> Ribbon Class Reference  
- Visual Studio generates the Ribbon class in the Ribbon code file. Add the callback methods for controls on the Ribbon to this class. This class implements the <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
+##  <a name="RibbonExtensionClass"></a> Referencia de la clase Ribbon  
+ Visual Studio genera la clase Ribbon en el archivo de código de la cinta de opciones. Agregue a esta clase los métodos de devolución de llamada para los controles de la cinta de opciones. Esta clase implementa la interfaz <xref:Microsoft.Office.Core.IRibbonExtensibility> .  
   
- The following table describes the default methods in this class.  
+ En la siguiente tabla se describen los métodos predeterminados de esta clase.  
   
-|Method|Description|  
+|Método|Descripción|  
 |------------|-----------------|  
-|`GetCustomUI`|Returns the contents of the Ribbon XML file. Microsoft Office applications call this method to obtain an XML string that defines the user interface of your custom Ribbon. This method implements the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method. **Note:**  `GetCustomUI` should be implemented only to return the contents of the Ribbon XML file; it should not be used to initialize your VSTO Add-in. In particular, you should not try to display dialog boxes or other windows in your `GetCustomUI` implementation. Otherwise, the custom Ribbon might not behave correctly. If you have to run code that initializes your VSTO Add-in, add the code to the `ThisAddIn_Startup` event handler.|  
-|`OnLoad`|Assigns the <xref:Microsoft.Office.Core.IRibbonControl> parameter to the `ribbon` field. Microsoft Office applications call this method when they load the custom Ribbon. You can use this field to dynamically update the custom Ribbon. For more information, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 1 of 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
-|`GetResourceText`|Called by the `GetCustomUI` method to obtain the contents of the Ribbon XML file.|  
+|`GetCustomUI`|Devuelve el contenido del archivo XML de la cinta de opciones. Las aplicaciones de Microsoft Office llaman a este método para obtener una cadena XML que define la interfaz de usuario de la cinta personalizada. Este método implementa el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` debe implementarse solo para devolver el contenido del archivo XML de cinta de opciones; no debe usarse para inicializar el complemento de VSTO.   En particular, no debe intentar mostrar cuadros de diálogo u otras ventanas en la implementación `GetCustomUI` . De lo contrario, puede que el comportamiento de la cinta de opciones personalizada no sea correcto. Si tiene que ejecutar código que inicialice el complemento de VSTO, agréguelo al controlador de eventos `ThisAddIn_Startup` .|  
+|`OnLoad`|Asigne el parámetro <xref:Microsoft.Office.Core.IRibbonControl> al campo `ribbon` . Las aplicaciones de Microsoft Office llaman a este método cuando cargan la cinta de opciones personalizada. Puede usar este campo para actualizar dinámicamente la cinta personalizada. Para obtener más información, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 1 de 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetResourceText`|Lo llama el método `GetCustomUI` para obtener el contenido del archivo XML de la cinta de opciones.|  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)  
+## <a name="see-also"></a>Vea también  
+ [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
+ [Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)  
   
   

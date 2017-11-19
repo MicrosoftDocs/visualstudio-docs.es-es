@@ -1,48 +1,48 @@
 ---
-title: "IDebugProgramEngines2::SetEngine | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEngines2::SetEngine"
-helpviewer_keywords: 
-  - "IDebugProgramEngines2::SetEngine"
+title: IDebugProgramEngines2::SetEngine | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEngines2::SetEngine
+helpviewer_keywords: IDebugProgramEngines2::SetEngine
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: af62aec85afd39ee617b9b700e14168395269532
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEngines2::SetEngine
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Indica al programa o el nodo de programa qué motor \(DE\) de depuración a utilizar para depurar este programa.  
+# <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
+Indica el nodo de programa o un programa qué motor de depuración (Alemania) a utilizar para depurar este programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT SetEngine(   
-   REFGUID guidEngine  
+```cpp  
+HRESULT SetEngine(   
+   REFGUID guidEngine  
 );  
 ```  
   
-```c#  
-int SetEngine(   
-   ref Guid guidEngine  
+```csharp  
+int SetEngine(   
+   ref Guid guidEngine  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guidEngine`  
- \[in\]  GUID de.  
+ [in] El GUID de la DE.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

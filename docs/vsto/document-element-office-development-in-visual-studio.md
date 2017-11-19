@@ -1,61 +1,63 @@
 ---
-title: "Elemento &lt;document&gt; (desarrollo de Office en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documento (elemento)"
-  - "manifiestos de aplicación [desarrollo de Office en Visual Studio], elemento <document>"
-  - "elemento <documento>"
+title: '&lt;documento&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- document element
+- application manifests [Office development in Visual Studio], <document> element
+- <document> element
 ms.assetid: b4525a0e-8a03-4881-a3e2-8cc019029071
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 48995b4a40d4e67b0c0e2e44d66545c4c90dd26b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento &lt;document&gt; (desarrollo de Office en Visual Studio)
-  El elemento `document` del espacio de nombres `vstov4`  almacena información específica de personalización para personalizaciones de nivel de documento.  
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;documento&gt; elemento (desarrollo de Office en Visual Studio)
+  El `document` elemento de la `vstov4` espacio de nombres almacena información específica de la personalización para las personalizaciones de nivel de documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <document solutionId />  
 ```  
   
-## Elementos y atributos  
- Sólo se requiere para las personalizaciones de nivel de documento.  El elemento `document` se encuentra en el espacio de nombres `vstov4` .  El elemento `document` presenta los atributos siguientes.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ Solo se requiere para las personalizaciones de nivel de documento. El `document` elemento está en la `vstov4` espacio de nombres. El `document` elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`solutionId`|Obligatorio.  GUID utilizado por el runtime de Visual Studio Tools para Office para identificar una solución de nivel de documento.  Este valor se almacena como la propiedad de documento personalizada \_AssemblyLocation.  Para obtener más información, vea [Información general sobre propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md).|  
+|---------------|-----------------|  
+|`solutionId`|Obligatorio. El GUID utilizado por Visual Studio Tools para Office runtime para identificar de forma única una solución de nivel de documento. Este valor se almacena como la propiedad de documento personalizada _AssemblyLocation. Para obtener más información, consulta [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md).|  
   
- `document` no tiene ningún elemento secundario.  
+ `document`no tiene elementos secundarios.  
   
-## Ejemplo de personalización de nivel de documento  
+## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
   
-### Descripción  
- En el ejemplo de código siguiente se muestra el elemento `document` en una solución de Office de nivel de documento implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)].  Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Descripción  
+ En el ejemplo de código siguiente se muestra la `document` elemento en una solución de Office de nivel de documento implementada mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Código  
+### <a name="code"></a>Código  
   
 ```  
 <vstov4:document   
   solutionId="73e" />  
 ```  
   
-## Vea también  
- [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>Vea también  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

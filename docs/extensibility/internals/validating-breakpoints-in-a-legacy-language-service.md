@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f8d2f56c29121a4be06f00198edd235007fc1cd0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2a87c22948e710a3b95ee7f79b31626794dc7708
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de los puntos de interrupción en un servicio de lenguaje heredado
 Un punto de interrupción indica que debe detenerse la ejecución del programa en un momento determinado, mientras se está ejecutando en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea en el archivo de origen, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcadas (denominados interrupción pendientes) están enlazados a la ubicación adecuada en el programa en ejecución. Al mismo tiempo que los puntos de interrupción se validan para asegurarse de que marcan ubicaciones de código válido. Por ejemplo, un punto de interrupción en un comentario no es válido, porque no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.  

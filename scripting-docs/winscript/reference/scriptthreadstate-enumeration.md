@@ -1,27 +1,30 @@
 ---
-title: "SCRIPTTHREADSTATE (Enumeraci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "SCRIPTTHREADSTATE (enumeración) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: SCRIPTTHREADSTATE
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "SCRIPTTHREADSTATE (enum)"
+helpviewer_keywords: SCRIPTTHREADSTATE enum
 ms.assetid: 975ec66b-c095-40ac-8ba9-631adb97b589
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9e18cc6f5f2afb1dcea6835983f69f6a6f7b9280
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# SCRIPTTHREADSTATE (Enumeraci&#243;n)
-Especifica el estado de un subproceso en un motor de script.  El método [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) utiliza esta enumeración.  
+# <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE (Enumeración)
+Especifica el estado de un subproceso de un motor de scripting. Esta enumeración se usa en la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) método.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 typedef enum tagSCRIPTTHREADSTATE {  
@@ -30,12 +33,12 @@ typedef enum tagSCRIPTTHREADSTATE {
 } SCRIPTTHREADSTATE;  
 ```  
   
-## Valores de enumeración  
+## <a name="enumeration-values"></a>Valores de enumeración  
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE\_NOTINSCRIPT|El subproceso especificado no mantiene un evento con scripts, está procesando texto inmediatamente ejecutan del script, o no se está ejecutando actualmente una macro de script.|  
-|SCRIPTTHREADSTATE\_RUNNING|El subproceso especificado mantiene un evento con scripts, está procesando texto inmediatamente ejecutan del script, o ejecutando activamente una macro de script.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Subproceso especificado actualmente no es atender un evento con scripts, texto de script de procesamiento que se ejecuta inmediatamente, o ejecutar una macro de secuencia de comandos.|  
+|SCRIPTTHREADSTATE_RUNNING|Subproceso especificado activamente es atender un evento con scripts, texto de script de procesamiento que se ejecuta inmediatamente, o ejecutar una macro de secuencia de comandos.|  
   
-## Vea también  
- [Active Script \(constantes, enumeraciones y códigos de error\)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+## <a name="see-also"></a>Vea también  
+ [Active Script (Constantes, Enumeraciones y Códigos de error)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

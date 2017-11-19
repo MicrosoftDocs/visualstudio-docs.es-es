@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::GetScriptDispatch | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::GetScriptDispatch | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.GetScriptDispatch
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_GetScriptDispatch"
+helpviewer_keywords: IActiveScript_GetScriptDispatch
 ms.assetid: 2092ccd4-1f4c-493a-b5b7-077a70ce95ca
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5b2f09934cf6d2bb28f7dae93d0bf49c8dc7437d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::GetScriptDispatch
-Recupera la interfaz de `IDispatch` para los métodos y propiedades asociados al script que se está ejecutando actualmente.  
+# <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
+Recupera el `IDispatch` interfaz para los métodos y propiedades asociados a la secuencia de comandos que se está ejecutando.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetScriptDispatch(  
@@ -30,26 +33,26 @@ HRESULT GetScriptDispatch(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pstrItemName`  
- \[in\] dirección de un búfer que contiene el nombre del elemento para el que el llamador necesita el objeto asociado de envío.  Si este parámetro es `NULL`, el objeto de envío contiene como miembros todos los métodos globales y las propiedades definidas por el script.  A través de la interfaz de `IDispatch` y la interfaz asociada de `ITypeInfo` , el host puede invocar métodos o la vista de script y modificar las variables de script.  
+ [in] Dirección de un búfer que contiene el nombre del elemento para el que el llamador necesita el objeto de envío asociados. Si este parámetro es `NULL`, contiene el objeto de envío como miembros todos los métodos globales y las propiedades definidas por la secuencia de comandos. A través de la `IDispatch` asociado e interfaz `ITypeInfo` interfaz, el host puede llamar a métodos de secuencia de comandos o la vista y modificar variables de secuencia de comandos.  
   
  `ppdisp`  
- \[out\] la dirección de una variable que recibe un puntero al objeto asociado a los métodos globales y propiedades del script.  Si el motor de script no admite este tipo de objeto, se devuelve `NULL` .  
+ [out] Dirección de una variable que recibe un puntero al objeto asociado con los métodos globales y propiedades de la secuencia de comandos. Si el motor de scripting no admite este tipo de objeto, `NULL` se devuelve.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
   
 |Valor devuelto|Significado|  
-|--------------------|-----------------|  
+|------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_POINTER`|Un puntero no válido se especificado.|  
-|`E_UNEXPECTED`|La llamada no se esperaba \(por ejemplo, el motor de script aún no se han cargado no se ha inicializado\).|  
-|`S_FALSE`|El motor de script no admite un objeto de envío; el parámetro de `ppdisp` se establece en NULL.|  
+|`E_POINTER`|Se especificó un puntero no válido.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting se aún no ha cargado o inicializar).|  
+|`S_FALSE`|El motor de scripting no es compatible con un objeto de envío; el `ppdisp` parámetro se establece en NULL.|  
   
-## Comentarios  
- Dado que los métodos y propiedades que se pueden agregar llamando a la interfaz de [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) , la interfaz de `IDispatch` devuelta por este método puede admitir dinámicamente nuevos métodos y propiedades.  De igual forma, el método de `IDispatch::GetTypeInfo` debe devolver una nueva, única interfaz de `ITypeInfo` cuando se agregan los métodos y propiedades.  Observe, sin embargo, que los motores de lenguaje no deben cambiar la interfaz de `IDispatch` de manera que sea incompatible con cualquier interfaz anterior de `ITypeInfo` devuelta.  Esto implica, por ejemplo, que los identificadores dispid nunca se reutilizarla.  
+## <a name="remarks"></a>Comentarios  
+ Porque se pueden agregar métodos y propiedades mediante una llamada a la [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) interfaz, el `IDispatch` interfaz devuelta por este método puede admitir dinámicamente nuevos métodos y propiedades. De forma similar, el `IDispatch::GetTypeInfo` método debe devolver un nuevo y único `ITypeInfo` cuando se agregan métodos y propiedades de la interfaz. Sin embargo, tenga en cuenta que los motores de idioma no deben cambiar la `IDispatch` interfaz en un modo que sean incompatibles con cualquier anterior `ITypeInfo` interfaz devuelta. Por ejemplo, que implica que los identificadores DispId nunca se reutilizará.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

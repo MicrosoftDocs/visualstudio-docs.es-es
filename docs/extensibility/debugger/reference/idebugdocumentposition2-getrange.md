@@ -1,64 +1,64 @@
 ---
-title: "IDebugDocumentPosition2::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::GetRange"
+title: IDebugDocumentPosition2::GetRange | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentPosition2::GetRange
+helpviewer_keywords: IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9c1ea17c8125aea6c962c0562095ea8fba680f8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentPosition2::GetRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 Obtiene el intervalo para esta posición del documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pBegPosition`  
- \[in, out\]  Una estructura de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) se completa con la posición inicial.  Establezca este argumento en un valor nulo si esta información no es necesaria.  
+ [entrada, salida] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición inicial. Establezca este argumento en un valor null si no se necesita esta información.  
   
  `pEndPosition`  
- \[in, out\]  Una estructura de [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) se completa con la posición final.  Establezca este argumento en un valor nulo si esta información no es necesaria.  
+ [entrada, salida] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición final. Establezca este argumento en un valor null si no se necesita esta información.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El intervalo especificado en una posición del documento para un punto de interrupción de ubicación es utilizado por el motor de depuración \(DE\) para buscar a continuación para una instrucción que aporta realmente código.  Por ejemplo, considere el siguiente código:  
+## <a name="remarks"></a>Comentarios  
+ El intervalo especificado en una posición del documento para un punto de interrupción se utiliza por el motor de depuración (Alemania) para buscar una instrucción que realmente contribuye código con antelación. Por ejemplo, considere el siguiente código:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- La línea 5 no contribuye ningún código al programa que se depura.  Si el depurador que establece el punto de interrupción en la línea 5 desea el OF para buscar hacia delante una cantidad determinada para la primera línea participante código, el depurador especificaría un intervalo que incluye líneas adicionales de candidato donde un punto de interrupción podría estar correctamente.  El A continuación buscaría hacia delante a través de las líneas hasta que encontrar una línea que puede aceptar un punto de interrupción.  
+ Línea 5 no contribuye ningún código para el programa que se está depurando. Si el depurador, que establece el punto de interrupción en la línea 5 desea que la DE buscar hacia delante una cierta cantidad de la primera línea que aporta código, el depurador debería especificar un intervalo que incluya las líneas de candidato adicional donde se puede colocar correctamente un punto de interrupción. La DE, a continuación, podría buscar hacia delante a través de las líneas hasta que encuentre una línea que podría aceptar un punto de interrupción.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -1,27 +1,30 @@
 ---
-title: "IMachineDebugManagerEvents::onAddApplication | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IMachineDebugManagerEvents::onAddApplication | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IMachineDebugManagerEvents.onAddApplication
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IMachineDebugManagerEvents::onAddApplication"
+helpviewer_keywords: IMachineDebugManagerEvents::onAddApplication
 ms.assetid: 00a54b91-36d5-430d-b654-5e2abe5300cd
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManagerEvents::onAddApplication
-Controla el evento cuando una aplicación se agrega a la lista actual de la aplicación.  
+# <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
+Controla el evento cuando se agrega una aplicación para el que se ejecuta lista de aplicaciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT onAddApplication(  
@@ -30,23 +33,23 @@ HRESULT onAddApplication(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pda`  
- \[in\] aplicación que se agregó a la lista actual de la aplicación.  
+ [in] Aplicación que se ha agregado la ejecución lista de aplicaciones.  
   
  `dwAppCookie`  
- \[in\] cookie de proporcionada cuando la aplicación se agregó a la lista de la aplicación.  
+ [in] La cookie que se proporcionó cuando la aplicación se agrega a la lista de aplicaciones.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método indica que una aplicación se agregó a la lista actual de la aplicación.  
+## <a name="remarks"></a>Comentarios  
+ Este método indica que una aplicación se agregó la ejecución lista de aplicaciones.  
   
-## Vea también  
- [IMachineDebugManagerEvents \(Interfaz\)](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IMachineDebugManagerEvents (interfaz)](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

@@ -1,34 +1,36 @@
 ---
-title: "Servidores (SDK de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "servidores, depurar"
-  - "depurar [SDK de depuración], servidores"
+title: Servidores (SDK de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- servers, debugging
+- debugging [Debugging SDK], servers
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 496e9b361dbb7f5c3eb5cf5197a1351a1182af3e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Servidores (SDK de Visual Studio)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En términos de arquitectura del depurador, **un servidor**:  
+# <a name="servers-visual-studio-sdk"></a>Servidores (SDK de Visual Studio)
+En cuanto a la arquitectura del depurador, una **server**:  
   
--   Es un contenedor de puertos y proveedores de puerto y se utiliza para comunicarse puertos y los proveedores de puerto a la sesión del administrador \(SDM\) y depurar los motores.  
+-   Es un contenedor de puertos y proveedores de puertos y se usa para comunicar los puertos y proveedores de puertos para el Administrador de sesión de depuración (SDM) y los motores de depuración.  
   
--   Puede identificarse por nombre, y muestra los puertos y proveedores de puerto.  
+-   Puede identificarse por su nombre y enumerar sus puertos y los proveedores de puertos.  
   
--   Se representa mediante una interfaz de [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , que implementan únicamente por Visual Studio \(una instancia de un servidor para cada instancia de Visual Studio\).  
+-   Se representa mediante un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaz, que solo se implementa mediante Visual Studio (una instancia de un servidor para cada instancia de ejecución de Visual Studio).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Puertos](../../extensibility/debugger/ports.md)   
  [Proveedores de puertos](../../extensibility/debugger/port-suppliers.md)   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)   

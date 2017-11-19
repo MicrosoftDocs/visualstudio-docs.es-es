@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramEngines2
-helpviewer_keywords:
-- IDebugProgramEngines2 interface
+f1_keywords: IDebugProgramEngines2
+helpviewer_keywords: IDebugProgramEngines2 interface
 ms.assetid: 53d648f0-6c11-4337-badd-c43f3872b62c
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b1feaad2478a39799dfc9239cef288553120bd6d
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 99ff94445caf60edde57f4365abbb5241d61127d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Nodos de programa usa esta interfaz para especificar todos los posibles motores de depuración (Alemania) que pueden depurar este programa.  

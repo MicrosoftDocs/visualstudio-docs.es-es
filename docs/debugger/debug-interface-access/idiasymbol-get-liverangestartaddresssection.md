@@ -1,58 +1,57 @@
 ---
-title: "IDiaSymbol::get_liveRangeStartAddressSection | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_liveRangeStartAddressSection"
+title: IDiaSymbol::get_liveRangeStartAddressSection | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_liveRangeStartAddressSection
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01bd3d099bc714aa20a9066c414b4222d3894f5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_liveRangeStartAddressSection
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Devuelve la parte de la sección de la dirección inicial del intervalo en el que el símbolo local es válido.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_liveRangeStartAddressSection (   
-   DWORD* section  
+```C++  
+HRESULT get_liveRangeStartAddressSection (   
+   DWORD* section  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `section`  
- \[out\]  Devuelve la parte de la sección de intervalos de dirección inicial.  
+ [out] Devuelve la parte de la sección del intervalo de direcciones inicial.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  Un código de error devuelto indica que el token no tiene información activa del intervalo.  
+>  Un código de error devuelto significa que el símbolo no tiene información de intervalo en vivo.  
   
-## Comentarios  
- La dirección formada por la sección y el desplazamiento es el inicio del intervalo en el que el token es válido.  
+## <a name="remarks"></a>Comentarios  
+ La dirección formada por la sección y el desplazamiento es el comienzo del intervalo en el que el símbolo es válido.  
   
- Para obtener el desplazamiento de dirección, utilice [IDiaSymbol::get\_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
+ Para obtener la parte de la dirección de desplazamiento, use [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
-## Requisitos  
- encabezado: Dia2.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Dia2.h  
   
- biblioteca: diaguids.lib  
+ Biblioteca: diaguids.lib  
   
  DLL: msdia100.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

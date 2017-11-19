@@ -1,62 +1,62 @@
 ---
-title: "CANSTOP_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CANSTOP_REASON"
-helpviewer_keywords: 
-  - "Enumeración CANSTOP_REASON"
+title: CANSTOP_REASON | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: CANSTOP_REASON
+helpviewer_keywords: CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4446921759c1b72dd75c31b52bab35d02b219942
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CANSTOP_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Se utiliza para determinar si un programa puede detener la ejecución después de llegar a un punto determinado de la ejecución.  
+# <a name="canstopreason"></a>CANSTOP_REASON
+Se utiliza para determinar si un programa puede detener la ejecución tras alcanzar un punto concreto en la ejecución.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_CANSTOP_REASON {   
-   CANSTOP_ENTRYPOINT = 0x0000,  
-   CANSTOP_STEPIN     = 0x0001  
+```cpp  
+enum enum_CANSTOP_REASON {   
+   CANSTOP_ENTRYPOINT = 0x0000,  
+   CANSTOP_STEPIN     = 0x0001  
 };  
 typedef DWORD CANSTOP_REASON;  
 ```  
   
-```c#  
-public enum enum_CANSTOP_REASON {   
-   CANSTOP_ENTRYPOINT = 0x0000,  
-   CANSTOP_STEPIN     = 0x0001  
+```csharp  
+public enum enum_CANSTOP_REASON {   
+   CANSTOP_ENTRYPOINT = 0x0000,  
+   CANSTOP_STEPIN     = 0x0001  
 };  
 ```  
   
-## Members  
- CANSTOP\_ENTRYPOINT  
- Especifica el punto de entrada del programa dado.  
+## <a name="members"></a>Miembros  
+ CANSTOP_ENTRYPOINT  
+ Especifica el punto de entrada del programa determinado.  
   
- CANSTOP\_STEPIN  
- Especifica que entra en una función.  
+ CANSTOP_STEPIN  
+ Especifica la ejecución paso a paso en una función.  
   
-## Comentarios  
- Pasado como argumento al método de [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para confirmar con el administrador de depuración de la sesión \(SDM\) si es aceptable detener después de alcanzar el punto de entrada del programa o después de entrar en una función o un método.  
+## <a name="remarks"></a>Comentarios  
+ Pasa como un argumento a la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método que confirme con el Administrador de sesión de depurar (SDM) si es correcto para detenerse después de alcanzar el punto de entrada del programa o después de la ejecución paso a paso en una función o método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

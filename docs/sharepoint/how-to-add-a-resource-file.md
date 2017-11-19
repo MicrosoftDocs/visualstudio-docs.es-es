@@ -1,60 +1,62 @@
 ---
-title: "C&#243;mo: Agregar un archivo de recursos"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "archivos de recursos [desarrollo de SharePoint en Visual Studio]"
-  - "desarrollo de SharePoint en Visual Studio, archivos de recursos"
+title: "Cómo: agregar un archivo de recursos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- resource files [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, resource files
 ms.assetid: 2b4ac232-992e-4070-8e98-6f11eb88e1a8
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7233bc1a739bd3bf6544aad879f898bf3848ee7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar un archivo de recursos
-  Los comandos para agregar archivos de recursos se encuentran en el menú contextual del nodo de solución y de los nodos Característica en el Explorador de soluciones.  Para obtener más información, vea [Localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+# <a name="how-to-add-a-resource-file"></a>Cómo: Agregar un archivo de recursos
+  Los comandos para agregar archivos de recursos está en el menú contextual de los nodos de la característica en el Explorador de soluciones y el nodo de la solución. Para obtener más información, consulte [localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
   
-### Para agregar un archivo de recursos global a una solución de SharePoint  
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Para agregar un archivo de recursos global a una solución de SharePoint  
   
 1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], abra una solución de SharePoint.  
   
-2.  En **Explorador de soluciones**, elija un nodo de proyecto de SharePoint y, a continuación, en la barra de menús, elija **Project**, **Agregar nuevo elemento**.  
+2.  En **el Explorador de soluciones**, elija un nodo de proyecto de SharePoint y, a continuación, en la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-3.  En el cuadro de diálogo de **Agregar nuevo elemento** , elija la plantilla de **Archivo de recursos globales** , y elija el botón de **Add** .  
+3.  En el **Agregar nuevo elemento** diálogo cuadro, elija la **archivo de recursos globales** plantilla y, a continuación, elija la **agregar** botón.  
   
     > [!NOTE]  
-    >  La plantilla de elemento de proyecto Archivo de recursos globales solo aparece cuando está seleccionado un elemento de proyecto de SharePoint.  
+    >  La plantilla de elemento de proyecto de archivo de recursos globales solo aparece cuando se selecciona un elemento de proyecto de SharePoint.  
   
-4.  En el cuadro de diálogo de **Agregar recurso** , elija una referencia cultural para el archivo de recursos, como inglés \(Estados Unidos\).  
+4.  En el **Agregar recurso** diálogo cuadro, elija una referencia cultural para el archivo de recursos, como el inglés (Estados Unidos).  
   
-     Este paso agrega un archivo de recursos global a la solución en el formato, resx de*x***.***culture***.**de recursos, por ejemplo, recurso1.en\-us.resx.  
+     Este paso agrega un archivo de recursos global a la solución en el formato, recursos*x***.** *referencia cultural***.** resx, por ejemplo, recurso1.en-US.resx.  
   
-5.  Cuando **Recursos \- Editor** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregue los recursos al archivo de recursos.  
+5.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
-### Para agregar un archivo de recursos de características a una característica de SharePoint  
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>Para agregar un archivo de recursos de características a una característica de SharePoint  
   
-1.  Si la solución de SharePoint no está abierto en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], abra la solución.  
+1.  Si no está abierta en la solución de SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], abra la solución.  
   
-2.  En **Explorador de soluciones**, abra el menú contextual para el nodo de **Características** y, a continuación **Agregue el recurso de características**.  
+2.  En **el Explorador de soluciones**, abra el menú contextual para el nombre de una característica en el **características** nodo y, a continuación, elija **Agregar recurso de características**.  
   
-     Este paso agrega un archivo de recursos a la característica en el formato, resx de *ResourceFileName***.***culture***.**, por ejemplo, Feature1.en\-US.resx.  
+     Este paso agrega un archivo de recursos a la característica en el formato, *NombreArchivoRecursos***.** *referencia cultural***.** resx, por ejemplo, Característica1.en-US.resx.  
   
-3.  Cuando **Recursos \- Editor** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregue los recursos al archivo de recursos.  
+3.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
-## Vea también  
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

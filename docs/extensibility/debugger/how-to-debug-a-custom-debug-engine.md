@@ -1,78 +1,80 @@
 ---
-title: "C&#243;mo: Depurar un motor de depuraci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "motores de depuración, depuración"
-  - "depurar [SDK de depuración], motores de depuración personalizados"
+title: "Cómo: Depurar un motor de depuración personalizado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debug engines, debugging
+- debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6a91dbb7797d69ec71b776eeef5e34e0ced21ad9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Depurar un motor de depuraci&#243;n
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un tipo de proyecto inicia el motor de depuración \(DE\) del método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> .  Esto significa que el OF se inicia bajo el control de la instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que controla el tipo de proyecto.  Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no puede depurar el OF.  Los siguientes son los pasos que permiten depurar custom OF.  
+# <a name="how-to-debug-a-custom-debug-engine"></a>Cómo: Depurar un motor de depuración personalizadas
+Un tipo de proyecto inicia el motor de depuración (Alemania) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que se ha iniciado el Alemania bajo el control de la instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no puede depurar el Alemania. A continuación es los pasos para que pueda depurar su Alemania personalizado.  
   
 > [!NOTE]
->  :     En el procedimiento “debug del motor de depuración”, debe esperar el OF para iniciar antes de poder asociar el.  Si coloca un cuadro de mensaje cerca del principio de que se produce cuando el OF inicia, puede adjuntar en ese punto y luego borre el cuadro de mensaje continuar.  De ese modo, puede detectar a todo el OF events.  
+>  : En el procedimiento "Depuración de un motor de depuración de personalizado", debe esperar a que la DE iniciarse antes de que pueden asociarse a ella. Si coloca un cuadro de mensaje al principio de su Alemania que aparece cuando se inicia el Alemania, puede adjuntar en ese momento y, a continuación, desactive el cuadro de mensaje para continuar. De este modo, puede detectar todos los eventos de Alemania.  
   
 > [!WARNING]
->  Debe realizar la depuración remota instalar antes de intentar los procedimientos siguientes.  Para obtener información más detallada, vea [Depuración remota](../../debugger/remote-debugging.md).  
+>  Debe tener instalado antes de intentar los siguientes procedimientos de depuración remota. Vea [depuración remota](../../debugger/remote-debugging.md) para obtener más información.  
   
-### Depurar un motor de depuración  
+### <a name="debugging-a-custom-debug-engine"></a>Depuración de un motor de depuración personalizadas  
   
-1.  Inicio msvsmon.exe, el Monitor de depuración remota.  
+1.  Iniciar msvsmon.exe, el Monitor de depuración remota.  
   
-2.  En el menú de **Herramientas** en msvsmon.exe, **Opciones** seleccione para abrir el cuadro de diálogo de **Opciones** .  
+2.  Desde el **herramientas** menú msvsmon.exe, seleccione **opciones** para abrir el **opciones** cuadro de diálogo.  
   
-3.  Seleccione la opción y haga clic en **Aceptar**de “ninguna autenticación”.  
+3.  Seleccione la opción "sin autenticación" y haga clic en **Aceptar**.  
   
-4.  Iniciar una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el OF personalizado project.  
+4.  Iniciar una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el proyecto DE personalizado.  
   
-5.  Inicie una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el proyecto personalizado que inicia el OF \(para desarrollo, éste es normalmente en el subárbol experimental del registro que está configurado cuando VSIP está instalado\).  
+5.  Inicie una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y abra el proyecto personalizado que se inicia el Alemania (para el desarrollo, esto es generalmente en el subárbol del registro experimental que se configura cuando se instala VSIP).  
   
-6.  En esta segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue un archivo de código fuente del proyecto personalizado y inicie el programa que se va a depurar.  Espere unos momentos para permitir que el OF cargue, o espere hasta un punto de interrupción se alcanza.  
+6.  En esta segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargar un archivo de origen desde el proyecto personalizado e inicie el programa que desea depurar. Espere unos minutos para permitir que la DE cargar o espere hasta que se alcanza un punto de interrupción.  
   
-7.  En primer lugar de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(con el OF project\), seleccione **Adjuntar a procesar** de menú de **Depurar** .  
+7.  En la primera instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con el proyecto DE), seleccione **adjuntar al proceso** desde el **depurar** menú.  
   
-8.  en el cuadro de diálogo de **Adjuntar a procesar** , cambie **transporte** a **Remoto \(sólo para código nativo sin autenticación\)**.  
+8.  En el **adjuntar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)**.  
   
-9. Cambie **calificador** al nombre del equipo \(nota: hay un historial de entradas, por lo que debe escribir en este nombre sólo una vez\).  
+9. Cambiar el **calificador** al nombre de la máquina (Nota: hay un historial de entradas, por lo que debe escribir en este nombre de una sola vez).  
   
-10. En la lista de **Procesos disponibles** , seleccione la instancia de que está ejecutando y haga clic en el botón de **Asociar** .  
+10. En el **procesos disponibles** , seleccione la instancia de la DE que se está ejecutando y haga clic en el **adjuntar** botón.  
   
-11. Después de que los símbolos han cargado en el OF, los puntos de interrupción del lugar en el OF code.  
+11. Una vez que haya cargado los símbolos en su Alemania, colocar puntos de interrupción en el código DE.  
   
-12. Cada vez que se detiene y reiniciar el proceso de depuración, repita los pasos 6 a 10.  
+12. Cada vez que detenga y reinicie el proceso de depuración, repita los pasos del 6 al 10.  
   
-### depurar un tipo de proyecto personalizado  
+### <a name="debugging-a-custom-project-type"></a>Depuración de un tipo de proyecto personalizadas  
   
-1.  Inicie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en el subárbol normal del registro y cargue el proyecto del tipo de proyecto \(esto es, el origen al tipo de proyecto, no una instancia del tipo de proyecto\).  
+1.  Iniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en el subárbol del registro normal y la carga el proyecto de tipo de proyecto (Esto es, el origen para el tipo de proyecto, no una instancia de su tipo de proyecto).  
   
-2.  Abra las propiedades del proyecto y vaya a la página de **Depurar** .  Para el comando, escriba la ruta de acceso a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE \(de forma predeterminada, éste es *\[\] unidad*\\Program Files\\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8 \\Common7\\IDE \\ devenv.exe\).  
+2.  Abra las propiedades del proyecto y vaya a la **depurar** página. Para el **comando**, escriba la ruta de acceso a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (de forma predeterminada, es *[unidad]*\Program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  Para **Argumentos del comando**, `/rootsuffix exp` escrito para el subárbol experimental de registro \(creada cuando VSIP se instaló\).  
+3.  Para el **argumentos del comando**, tipo `/rootsuffix exp` para el subárbol del registro experimental (creado cuando se instaló VSIP).  
   
 4.  Haga clic en **Aceptar** para aceptar los cambios.  
   
-5.  Inicie el tipo de proyecto presionando F5.  Esto iniciará una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+5.  Inicie el tipo de proyecto al presionar F5. Se iniciará una segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-6.  En este punto, puede colocar puntos de interrupción en el código fuente del tipo de proyecto.  
+6.  En este momento, puede colocar puntos de interrupción en el código de origen del tipo de proyecto.  
   
-7.  En la segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue o cree una nueva instancia del tipo de proyecto.  Durante la carga o creación, los puntos de interrupción pueden ser alcanzan.  
+7.  En la segunda instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargar o crear una nueva instancia de su tipo de proyecto. Durante la creación o carga, se pueden alcanzar los puntos de interrupción.  
   
 8.  Depurar el tipo de proyecto.  
   
-9. Si elige para depurar el proceso de iniciar un OF, puede realizar los pasos de procedimiento “debug del motor de depuración” para asociar el OF después de que se inicie.  esto le dará tres instancias de ejecutarse de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] : uno para el origen del tipo de proyecto, un segundo para el tipo de proyecto creado instancias, y una tercera adjuntado a OF.  
+9. Si elige depurar el proceso de iniciar un Alemania, puede realizar los pasos del procedimiento "Depuración de un motor de depuración de personalizado" para adjuntar a la DE una vez que se inicia. Esto le proporcionará tres instancias de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ejecutando: uno para el origen de tipo de proyecto, otro para el tipo de proyecto crea una instancia y un tercero que se adjunta a la DE.  
   
-## Vea también  
- [Creación de un motor de depuración](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+## <a name="see-also"></a>Vea también  
+ [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)

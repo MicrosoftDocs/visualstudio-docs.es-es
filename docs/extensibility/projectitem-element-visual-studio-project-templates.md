@@ -1,33 +1,39 @@
 ---
-title: "ProjectItem (Elemento, Plantillas de proyecto de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem"
-helpviewer_keywords: 
-  - "<ProjectItem> (elemento) [plantillas de proyecto de Visual Studio]"
-  - "ProjectItem (elemento) [plantillas de proyecto de Visual Studio]"
+title: ProjectItem (elemento) (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
+helpviewer_keywords:
+- ProjectItem element [Visual Studio project templates]
+- <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3a9685d00f2df0f6819058106771a278b8494520
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItem (Elemento, Plantillas de proyecto de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (Elemento, Plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.  
   
 > [!NOTE]
->  El elemento `ProjectItem` acepta atributos diferentes que dependen de si la plantilla es para un proyecto o un elemento.  En este tema se explica el elemento `ProjectItem` para las plantillas de proyecto.  Para obtener una explicación del elemento `ProjectItem` para las plantillas de elementos, vea [ProjectItem \(Elemento, Plantillas de elementos de Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
+>  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica la `ProjectItem` elemento plantillas de proyecto. Para obtener una explicación de la `ProjectItem` el elemento para plantillas de elementos, vea [ProjectItem (elemento) (Visual Studio Item Templates)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
+ \<ProjectItem >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ProjectItem  
@@ -41,73 +47,73 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
 </ProjectItem>  
 ```  
   
-## Atributos y elementos  
- Las siguientes secciones describen atributos, elementos secundarios y elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto al crear un proyecto a partir de la plantilla.  Este atributo resulta de gran utilidad si se desea crear una estructura de directorios distinta de la contenida en el archivo .zip de la plantilla o si se desea utilizar el reemplazo de parámetros para crear un nombre de elemento.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto a partir de la plantilla.  El valor predeterminado es `false`.|  
-|`OpenInEditor`|Atributo opcional.<br /><br /> Valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] al crear un proyecto a partir de la plantilla.<br /><br /> Los atributos `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten en un elemento cuyo valor de `OpenInEditor` es `true`.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Valor booleano que especifica si el elemento se debe abrir en el explorador web al crear un proyecto a partir de la plantilla.<br /><br /> En el Explorador Web solo se abrirán los archivos HTML y de texto locales con respecto al proyecto.  Las direcciones URL externas no se pueden abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Valor booleano que especifica si el elemento se debe abrir en el visor de Ayuda al crear un proyecto a partir de la plantilla.<br /><br /> Sólo se abrirán en el explorador web los archivos HTML y de texto locales con respecto al proyecto.  Las direcciones URL externas no se pueden abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenOrder`|Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que se abrirán los elementos en sus editores respectivos.  Todos los valores deben ser múltiplos de 10.  Los elementos con los valores más altos `OpenOrder` se abra primero.|  
+|---------------|-----------------|  
+|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto cuando se crea un proyecto de la plantilla. Este atributo es útil para crear una estructura de directorios diferente de la estructura de directorios en el archivo .zip de plantilla, o para usar el reemplazo de parámetros para crear un nombre de elemento.|  
+|`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`.|  
+|`OpenInEditor`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cuando se crea un proyecto de la plantilla.<br /><br /> El `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten los atributos en un elemento con un `OpenInEditor` valo `true`.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir el explorador Web cuando se crea un proyecto de la plantilla.<br /><br /> En el explorador Web, se pueden abrir sólo archivos HTML y archivos de texto que son locales para el proyecto. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en el Visor de ayuda cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales para el proyecto se pueden abrir en el Explorador de ayuda. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenOrder`|Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que los elementos se abrirá en sus editores respectivos. Todos los valores deben ser múltiplos de 10. Elementos con mayor `OpenOrder` valores se abran en primer lugar.|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
 |[Proyecto](../extensibility/project-element-visual-studio-templates.md)|Especifica los archivos o directorios que se agregarán al proyecto.|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- `string` que representa el nombre o la ruta de acceso a un archivo en el archivo .zip de la plantilla.  
+ Un `string` que representa el nombre o la ruta de acceso a un archivo en el archivo .zip de plantilla.  
   
-## Comentarios  
- `ProjectItem` es un elemento secundario opcional de `Project`.  
+## <a name="remarks"></a>Comentarios  
+ `ProjectItem`es un elemento secundario opcional de `Project`.  
   
- El atributo `TargetFileName` se puede utilizar para crear una estructura de directorios diferente a partir de la estructura de directorios del archivo .zip de la plantilla.  Por ejemplo, si el archivo `MyFile.vb` se encuentra en el directorio raíz del archivo .zip de la plantilla pero desea colocarlo en un directorio denominado `CustomFiles` en todos los proyectos creados a partir de la plantilla, deberá utilizar el siguiente código XML:  
+ El `TargetFileName` atributo se puede usar para crear una estructura de directorios diferente de la estructura de directorios en el archivo .zip de plantilla. Por ejemplo, si el archivo `MyFile.vb` existe en la raíz del archivo .zip de plantilla, pero desea que el archivo se coloquen en un directorio denominado `CustomFiles` en todos los proyectos creados a partir de la plantilla, usaría el siguiente código XML:  
   
 ```  
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>  
 ```  
   
- El atributo `TargetFileName` también se puede utilizar para cambiar el nombre de archivos que contienen caracteres internacionales en sus nombres de archivo.  Por ejemplo, un archivo .zip de la plantilla no puede contener nombres de archivo con caracteres Unicode, por tanto hay que cambiar el nombre del archivo antes de ser comprimido en un archivo .zip.  El atributo `TargetFileName` se puede utilizar para volver a establecer el nombre de archivo en el nombre de archivo Unicode original.  
+ El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos que contienen caracteres internacionales en sus nombres de archivo. Por ejemplo, un archivo .zip de plantilla no puede contener nombres de archivo con caracteres Unicode, por lo que el archivo se debe cambiar el nombre antes de se puede comprimir en un archivo zip. El `TargetFileName` atributo se puede usar para establecer el nombre de archivo por el nombre de archivo Unicode original.  
   
- El atributo `TargetFileName` también se puede utilizar para cambiar el nombre de los archivos con parámetros.  El procedimiento siguiente explica cómo cambiar el nombre del archivo `MyFile.vb`, que se encuentra en el directorio raíz del archivo .zip de plantilla, a un nombre de archivo basado en el nombre del proyecto.  
+ El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos con parámetros. El siguiente procedimiento explica cómo cambiar el nombre del archivo `MyFile.vb`, que existe en el directorio raíz del archivo .zip de plantilla, para un nombre de archivo basado en el nombre del proyecto.  
   
-### Para cambiar nombres de archivo con parámetros  
+### <a name="to-rename-files-with-parameters"></a>Para cambiar el nombre de los archivos con parámetros  
   
-1.  Utilice el XML siguiente en el archivo .vstemplate:  
+1.  Utilice el siguiente código XML en el archivo .vstemplate:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Abra el archivo de proyecto \(.vbproj para un proyecto de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Abra el archivo de proyecto (.vbproj para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Busque la línea del archivo de proyecto que parece similar al XML siguiente:  
+3.  Busque la línea en el archivo de proyecto que tiene un aspecto similar al código XML siguiente:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Reemplace la línea de código con el XML siguiente:  
+4.  Reemplace la línea de código por el siguiente código XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
     ```  
   
-     Cuando se cree un proyecto a partir de esta plantilla, el nombre del archivo se basará en el nombre especificado por el usuario en el cuadro de diálogo **Nuevo proyecto**, tras quitar todos los caracteres no seguros y los espacios.  Para obtener más información, vea [Parámetros de plantilla](../ide/template-parameters.md).  
+     Cuando se crea un proyecto de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **nuevo proyecto** cuadro de diálogo, todos los caracteres no seguros y quitados los espacios. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto de una aplicación de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -133,8 +139,8 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
- [ProjectItem \(Elemento, Plantillas de elementos de Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

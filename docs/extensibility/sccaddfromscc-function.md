@@ -1,73 +1,73 @@
 ---
-title: "SccAddFromScc (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAddFromScc"
-helpviewer_keywords: 
-  - "SccAddFromScc (función)"
+title: "Función SccAddFromScc | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccAddFromScc
+helpviewer_keywords: SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccAddFromScc (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta función permite al usuario examinar archivos que ya están en el sistema de control de código fuente y posteriormente integrar esos archivos del proyecto actual. Por ejemplo, esta función puede obtener un archivo de encabezado común en el proyecto actual sin copiar el archivo. La matriz de devolución de archivos, `lplpFileNames`, contiene la lista de archivos que el usuario desea agregar al proyecto IDE.  
+# <a name="sccaddfromscc-function"></a>SccAddFromScc (función)
+Esta función permite al usuario examinar archivos que ya están en el sistema de control de código fuente y posteriormente realizar esos parte de los archivos del proyecto actual. Por ejemplo, esta función puede obtener un archivo de encabezado común en el proyecto actual sin necesidad de copiar el archivo. La matriz de devolución de archivos, `lplpFileNames`, contiene la lista de archivos que el usuario desea agregar al proyecto IDE.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 SCCRTN SccAddFromScc (  
-   LPVOID   pvContext,  
-   HWND     hWnd,  
-   LPLONG   lpnFiles,  
-   LPCSTR** lplpFileNames  
+   LPVOID   pvContext,  
+   HWND     hWnd,  
+   LPLONG   lpnFiles,  
+   LPCSTR** lplpFileNames  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pvContext  
- \[in\] La estructura de contexto complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de código fuente.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpnFiles  
- \[entrada, salida\] Búfer para el número de archivos que se agregan. \(Esto es `NULL` Si la memoria indicada por `lplpFileNames` es que se libere. Vea la sección Comentarios para obtener más información\).  
+ [entrada, salida] Un búfer para el número de archivos que se van a agregar en. (Se trata de `NULL` si la memoria indicada por `lplpFileNames` se liberará. Vea la sección Comentarios para obtener más información).  
   
  lplpFileNames  
- \[entrada, salida\] Una matriz de punteros a todos los nombres de archivo sin rutas de directorio. Esta matriz se asigna y libera el complemento de control de código fuente. Si `lpnFiles` \= 1 y `lplpFileNames` no `NULL`, señala el primer nombre de la matriz `lplpFileNames` contiene la carpeta de destino.  
+ [entrada, salida] Una matriz de punteros a todos los nombres de archivo sin las rutas de acceso de directorio. Esta matriz se asigna y libera el complemento de control de código fuente. Si `lpnFiles` = 1 y `lplpFileNames` no `NULL`, el nombre de la matriz que señala `lplpFileNames` contiene la carpeta de destino.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|Los archivos se encuentra y se agrega al proyecto correctamente.|  
-|SCC\_I\_OPERATIONCANCELED|Se canceló la operación sin efecto.|  
-|SCC\_I\_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
+|SCC_OK|Los archivos se encuentran y se agrega al proyecto correctamente.|  
+|SCC_I_OPERATIONCANCELED|Se canceló la operación con ningún efecto.|  
+|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
   
-## Comentarios  
- El IDE llama a esta función. Si el complemento de control de código fuente permite especificar una carpeta de destino local, el IDE pasa `lpnFiles` \= 1 y pasa el nombre de la carpeta local en `lplpFileNames`.  
+## <a name="remarks"></a>Comentarios  
+ El IDE llama a esta función. Si el complemento de control de origen admite la especificación de una carpeta de destino local, el IDE pasa `lpnFiles` = 1 y pasa el nombre de la carpeta local en `lplpFileNames`.  
   
- Cuando la llamada a la `SccAddFromScc` devuelve la función, el complemento se les asignan valores a `lpnFiles` y `lplpFileNames`, asignar la memoria para la matriz de nombre de archivo según sea necesario \(tenga en cuenta que esta asignación reemplaza el puntero en `lplpFileNames`\). El complemento de control de código fuente es responsable de colocar todos los archivos en el directorio del usuario o en la carpeta de designación especificado. El IDE, a continuación, agrega los archivos al proyecto del IDE.  
+ Cuando la llamada a la `SccAddFromScc` devuelve la función, el complemento se les asignan valores a `lpnFiles` y `lplpFileNames`, asignar la memoria para la matriz de nombre de archivo según sea necesario (tenga en cuenta que esta asignación reemplaza el puntero en `lplpFileNames`). El complemento de control de código fuente es responsable de colocar todos los archivos en el directorio del usuario o en la carpeta designación especificado. A continuación, el IDE agrega los archivos al proyecto de IDE.  
   
- Por último, el IDE llama a esta función una segunda vez, pasando `NULL` para `lpnFiles`. Esto se interpreta como una señal especial mediante el complemento para liberar la memoria asignada para la matriz de nombres de archivo en el control de código fuente `lplpFileNames``.`  
+ Por último, el IDE llama a esta función una segunda vez, pasando `NULL` para `lpnFiles`. Esto se interpreta como una señal especial mediante el complemento para liberar la memoria asignada para la matriz de nombres de archivo de control de código fuente`lplpFileNames``.`  
   
- `lplpFileNames` es un `char ***` puntero. El complemento de control de código fuente coloca un puntero a una matriz de punteros a los nombres de archivo, pasando así la lista de la forma estándar para esta API.  
+ `lplpFileNames`es un `char ***` puntero. El complemento de control de código fuente coloca un puntero a una matriz de punteros a nombres de archivo y, por tanto, pasar la lista de la manera estándar para esta API.  
   
 > [!NOTE]
->  Las versiones iniciales de la API VSSCI no proporcionó una manera de indicar el proyecto de destino para los archivos agregados. Para permitir esto, la semántica de la `lplpFIleNames` parámetro que se han mejorado para que sea un parámetro de entrada y salida, en lugar de un parámetro de salida. Si sólo se especifica un solo archivo, es decir, el valor indicado por `lpnFiles` \= 1, entonces el primer elemento de `lplpFileNames` contiene la carpeta de destino. Para utilizar esta nueva semántica, las llamadas IDE la `SccSetOption` funciona con el `nOption`establecido en `SCC_OPT_SHARESUBPROJ`. Si un complemento de control de código fuente no admite la semántica, devuelve `SCC_E_OPTNOTSUPPORTED`. Hacer así deshabilita el uso de la **Agregar Control de código fuente** característica. Si un complemento admite el **Agregar Control de código fuente** característica \(`SCC_CAP_ADDFROMSCC`\), a continuación, debe admitir la nueva semántica y devolver `SCC_I_SHARESUBPROJOK`.  
+>  Las versiones iniciales de la API VSSCI no proporcionó una manera de indicar el proyecto de destino para los archivos agregados. Para dar cabida a esto, la semántica de la `lplpFIleNames` parámetro se han mejorado para que sea un parámetro de entrada/salida, en lugar de un parámetro de salida. Si sólo se especifica un único archivo, es decir, el valor que señala `lpnFiles` = 1, entonces el primer elemento de `lplpFileNames` contiene la carpeta de destino. Para usar esta nueva semántica, las llamadas IDE la `SccSetOption` funcionando con la `nOption`parámetro establecido en `SCC_OPT_SHARESUBPROJ`. Si un complemento de control de origen no es compatible con la semántica, devuelve `SCC_E_OPTNOTSUPPORTED`. Esto es así deshabilita el uso de la **complemento de Control de código fuente** característica. Si un complemento admite el **complemento de Control de código fuente** característica (`SCC_CAP_ADDFROMSCC`), a continuación, debe admitir la nueva semántica y devolver `SCC_I_SHARESUBPROJOK`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

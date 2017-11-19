@@ -1,106 +1,107 @@
 ---
-title: "Tutorial: Depurar una hoja de estilos XSLT | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Tutorial: Depurar una hoja de estilos XSLT | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b907bfae5fadcc2b10d848a7608ff9d5f1a81640
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# Tutorial: Depurar una hoja de estilos XSLT
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este tutorial se indican los pasos para utilizar el depurador de XSLT.Éstos incluyen ver variables, definir puntos de interrupción y examinar el código.La hoja de estilos busca todos los libros cuyo costo sea menor que el costo promedio.  
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
+En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos incluyen ver variables, definir puntos de interrupción y examinar el código. La hoja de estilos busca todos los libros cuyo costo sea menor que el costo promedio.  
   
-### Para prepararse para este tutorial  
+### <a name="to-prepare-for-this-walkthrough"></a>Pasos preliminares de este tutorial  
   
 1.  Cierre las soluciones que estén abiertas.  
   
 2.  Copie los dos archivos de ejemplo en el equipo local.  
   
-## Inicie la depuración  
+## <a name="start-debugging"></a>Inicie la depuración  
   
-#### Para iniciar la depuración  
+#### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
-1.  En el menú **Archivo**, seleccione **Abrir** y haga clic en **Archivo**.  
+1.  Desde el **archivo** menú, elija **abiertos**y haga clic en **archivo**.  
   
-2.  Busque el archivo belowAvg.xsl y haga clic en **Abrir**.  
+2.  Busque el archivo belowAvg.xsl y haga clic en **abiertos**.  
   
      La hoja de estilos se abre en el Editor XML.  
   
-3.  Haga clic en el botón Examinar \(**...**\) en el campo **Entrada** de la ventana Propiedades del documento.  
+3.  Haga clic en el botón Examinar (**...** ) en el **entrada** campo de la ventana de propiedades de documento.  
   
-4.  Busque el archivo books.xsl y haga clic en **Abrir**.  
+4.  Busque el archivo Books.xsl y haga clic en **abiertos**.  
   
      De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.  
   
-5.  Haga clic con el botón secundario en la etiqueta de apertura `xsl:if`, seleccione **Punto de interrupción** y haga clic en **Insertar punto de interrupción**.  
+5.  Haga clic en el `xsl:if` etiqueta de inicio, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
   
-6.  Haga clic en el botón **Depurar XSL** en la barra de herramientas del Editor XML.  
+6.  Haga clic en el **Depurar XSL** botón en la barra de herramientas del Editor XML.  
   
- Comienza el proceso de depuración y se abren varias ventanas nuevas que utiliza el depurador.  
+Comienza el proceso de depuración y se abren varias ventanas nuevas que utiliza el depurador.  
   
- Existen dos ventanas que muestran el documento de entrada y la hoja de estilos.El depurador usa estas ventanas para mostrar el estado de ejecución actual.El depurador se posiciona en el elemento `xsl:if` de la hoja de estilos y en el primer nodo de libro del archivo books.xml.  
+Existen dos ventanas que muestran el documento de entrada y la hoja de estilos. El depurador usa estas ventanas para mostrar el estado de ejecución actual. El depurador se posiciona en el elemento `xsl:if` de la hoja de estilos y en el primer nodo de libro del archivo books.xml.  
   
- La ventana Locales muestra todas las variables locales y sus valores actuales.Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.  
+La ventana Locales muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.  
   
- La **Ventana de salida de XSL** muestra el resultado de la transformación XSL.Esta ventana es distinta de la **Ventana de salida de Visual Studio**.  
+El **resultado XSL** ventana muestra la salida de la transformación XSL. Esta ventana es distinta de la **resultados de Visual Studio** ventana.  
   
-## Ventana Inspección  
+## <a name="watch-window"></a>Ventana Inspección  
   
-#### Para utilizar la ventana Inspección  
+#### <a name="to-use-the-watch-window"></a>Para utilizar la ventana Inspección  
   
-1.  En el menú **Depurar**, seleccione **Ventanas**, **Inspección** y haga clic en **Inspección 1**.  
+1.  Desde el **depurar** menú, elija **Windows**, seleccione **inspección**y haga clic en **Inspección 1**.  
   
      Se muestra la ventana Inspección 1.  
   
-2.  Escriba `$bookAverage` en el campo **Nombre** y presione INTRO.  
+2.  Tipo de `$bookAverage` en el **nombre** campo y presione ENTRAR.  
   
      El valor de la variable `$bookAverage` se muestra en la ventana.  
   
-3.  Escriba `self::node()` en el campo **Nombre** y presione INTRO.  
+3.  Tipo de `self::node()` en el **nombre** campo y presione ENTRAR.  
   
-     `self::node()` es una expresión XPath que se evalúa para el nodo de contexto actual.El valor de la expresión XPath `self::node()` es el primer nodo de libro.Esto cambia a medida que progresamos en la transformación.  
+     `self::node()` es una expresión XPath que se evalúa para el nodo de contexto actual. El valor de la expresión XPath `self::node()` es el primer nodo de libro. Esto cambia a medida que progresamos en la transformación.  
   
 4.  Expanda el nodo `self::node()` y, a continuación expanda el nodo `price`.  
   
-     De esta manera verá el valor del precio del libro y podrá compararlo fácilmente con el valor `$bookAverage`.Como el precio del libro está por debajo de la media, se debe cumplir la condición `xsl:if`.  
+     De esta manera verá el valor del precio del libro y podrá compararlo fácilmente con el valor `$bookAverage`. Como el precio del libro está por debajo de la media, se debe cumplir la condición `xsl:if`.  
   
-## Examinar el código  
+## <a name="step-through-the-code"></a>Examinar el código  
  El depurador permite ejecutar código de línea en línea.  
   
-#### Para examinar el código  
+#### <a name="to-step-through-the-code"></a>Para examinar el código  
   
 1.  Presione **F5** para continuar.  
   
-     Como el primer nodo de libro satisface la condición `xsl:if`, se agrega a la ventana de salida de XSL.El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos.El depurador se coloca en el segundo nodo de libro del archivo books.xml.  
+     Como el primer nodo de libro satisface la condición `xsl:if`, se agrega a la ventana de salida de XSL. El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos. El depurador se coloca en el segundo nodo de libro del archivo books.xml.  
   
-     En la ventana Watch1, el valor `self::node()` cambia al segundo nodo de libro.Mediante el examen del valor del elemento de precio, se puede determinar que el precio está por encima de la media, así que la condición `xsl:if` no debería cumplirse.  
+     En la ventana Watch1, el valor `self::node()` cambia al segundo nodo de libro. Mediante el examen del valor del elemento de precio, se puede determinar que el precio está por encima de la media, así que la condición `xsl:if` no debería cumplirse.  
   
 2.  Presione **F5** para continuar.  
   
-     Como el segundo nodo de libro no satisface la condición `xsl:if`, no se agrega a la ventana de salida de XSL.El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos.El depurador está colocado en el tercer nodo de `book` del archivo books.xml.  
+     Como el segundo nodo de libro no satisface la condición `xsl:if`, no se agrega a la ventana de salida de XSL. El depurador continúa ejecutándose hasta que se coloca de nuevo en el elemento `xsl:if` de la hoja de estilos. El depurador está colocado en el tercer nodo de `book` del archivo books.xml.  
   
-     En la ventana Watch1, el valor `self::node()` cambia al tercer nodo de libro.Mediante el examen del valor del elemento `price`, se puede determinar que el precio está por debajo de la media, así que debería cumplirse la condición `xsl:if`.  
+     En la ventana Watch1, el valor `self::node()` cambia al tercer nodo de libro. Mediante el examen del valor del elemento `price`, se puede determinar que el precio está por debajo de la media, así que debería cumplirse la condición `xsl:if`.  
   
 3.  Presione **F5** para continuar.  
   
-     Como la condición `xsl:if` se ha cumplido, el tercer libro se agrega a la ventana de salida de XSL.Todos los libros del documento XML se han procesado y el depurador se detiene.  
+     Como la condición `xsl:if` se ha cumplido, el tercer libro se agrega a la ventana de salida de XSL. Todos los libros del documento XML se han procesado y el depurador se detiene.  
   
-## Archivos de ejemplo  
+## <a name="sample-files"></a>Archivos de ejemplo  
  El tutorial utiliza los dos siguientes archivos de ejemplo.  
   
-### belowAvg.xsl  
+### <a name="belowavgxsl"></a>belowAvg.xsl  
   
-```  
+```xml
 <?xml version='1.0'?>  
 <xsl:stylesheet version="1.0"  
       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
@@ -121,9 +122,9 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT.Éstos 
 </xsl:stylesheet>  
 ```  
   
-### books.xml  
+### <a name="booksxml"></a>books.xml  
   
-```  
+```xml
 <?xml version='1.0'?>  
 <!-- This file represents a fragment of a book store inventory database -->  
 <bookstore>  
@@ -153,5 +154,5 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT.Éstos 
 </bookstore>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)

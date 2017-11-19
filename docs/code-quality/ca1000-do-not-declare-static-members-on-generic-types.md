@@ -1,29 +1,30 @@
 ---
-title: "CA1000: No declarar miembros est&#225;ticos en tipos gen&#233;ricos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1000"
-  - "DoNotDeclareStaticMembersOnGenericTypes"
-helpviewer_keywords: 
-  - "CA1000"
-  - "DoNotDeclareStaticMembersOnGenericTypes"
+title: "CA1000: No declarar miembros estáticos en tipos genéricos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1000
+- DoNotDeclareStaticMembersOnGenericTypes
+helpviewer_keywords:
+- DoNotDeclareStaticMembersOnGenericTypes
+- CA1000
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 24d46fc6817f4d13ea5502ada707e2abbcdbfda9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1000: No declarar miembros est&#225;ticos en tipos gen&#233;ricos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: No declarar miembros estáticos en tipos genéricos
 |||  
 |-|-|  
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|  
@@ -31,11 +32,11 @@ caps.handback.revision: 17
 |Categoría|Microsoft.Design|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- Un tipo genérico visible externamente contiene un miembro `static` \(`Shared` en Visual Basic\).  
+## <a name="cause"></a>Motivo  
+ Un tipo genérico visible externamente contiene un `static` (`Shared` en Visual Basic) miembro.  
   
-## Descripción de la regla  
- Cuando se llama a un miembro `static` de un tipo genérico, se debe especificar el argumento de tipo correspondiente a ese tipo.  Cuando se llama a un miembro de instancia genérico que no admite la interferencia, se debe especificar el argumento de tipo para el miembro.  La sintaxis para especificar el argumento de tipo en estos dos casos es diferente y resulta fácil confundirse, como se muestra en las llamadas siguientes:  
+## <a name="rule-description"></a>Descripción de la regla  
+ Cuando un `static` se denomina miembro de un tipo genérico, se debe especificar el argumento de tipo para el tipo. Cuando se llama a un miembro de instancia genérico que no admite la interferencia, se debe especificar el argumento de tipo para el miembro. La sintaxis para especificar el argumento de tipo en estos dos casos es diferente y resulta fácil confundirse, como se muestran en las llamadas siguientes:  
   
 ```vb  
 ' Shared method in a generic type.  
@@ -45,7 +46,7 @@ GenericType(Of Integer).SharedMethod()
 someObject.GenericMethod(Of Integer)()  
 ```  
   
-```c#  
+```csharp  
 // Static method in a generic type.  
 GenericType<int>.StaticMethod();  
   
@@ -53,15 +54,15 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();  
 ```  
   
- En general, las dos declaraciones anteriores deben evitarse, para que no sea necesario llamar al argumento de tipo cuando se llame al miembro.  Esto produce una sintaxis para llamar a los miembros de los tipos genéricos que no se diferencia de la sintaxis de los tipos no genéricos.  Para obtener más información, vea [CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).  
+ Por lo general, tanto de las declaraciones anteriores deben evitarse para que el argumento de tipo no tienen que especificarse cuando se llama al miembro. Esto da como resultado una sintaxis para llamar a los miembros en genéricos que no es distinta de la sintaxis para tipos no genéricos. Para obtener más información, consulte [CA1004: los métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, quite el miembro estático o cámbielo por un miembro de instancia.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, quite al miembro estático o cámbielo por un miembro de instancia.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  Al proporcionar genéricos con una sintaxis fácil de entender y utilizar se reduce el tiempo necesario de aprendizaje y se aumenta la velocidad de adopción de nuevas bibliotecas.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla. Al proporcionar genéricos con una sintaxis que sea fácil de entender y usar reduce el tiempo que se necesita para obtener información y aumenta la velocidad de adopción de nuevas bibliotecas.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
  [CA1010: Las colecciones deben implementar la interfaz genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
@@ -76,5 +77,5 @@ someObject.GenericMethod<int>();
   
  [CA1007: Utilizar valores genéricos cuando sea posible](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Genéricos](/dotnet/csharp/programming-guide/generics/index)

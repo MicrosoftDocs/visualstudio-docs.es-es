@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::SetScriptSite | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::SetScriptSite | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.SetScriptSite
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_SetScriptSite"
+helpviewer_keywords: IActiveScript_SetScriptSite
 ms.assetid: 47d94c32-09f8-4539-ac56-0236026f627b
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::SetScriptSite
-Informa al motor de script el sitio de la interfaz de [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) proporcionado por el host.  Llame a este método antes de que se utilice cualquier otro método de interfaz de [IActiveScript](../../winscript/reference/iactivescript.md) .  
+# <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
+Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio de la interfaz proporcionada por el host. Llamar a este método antes que cualquier otro [IActiveScript](../../winscript/reference/iactivescript.md) se utiliza métodos de interfaz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SetScriptSite(  
@@ -29,20 +32,20 @@ HRESULT SetScriptSite(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pScriptSite`  
- \[in\] dirección del sitio host\- proporcionado de script esté asociada a esta instancia del motor de script.  El sitio se debe asignar de forma exclusiva a esta instancia del motor de script; no se puede compartir con otros los motores de scripting.  
+ [in] Dirección del sitio de script proporcionado por el host que desee asociar a esta instancia del motor de scripting. El sitio debe asignarse de forma exclusiva a esta instancia del motor de scripting; estos no se comparten con otros motores de secuencias de comandos.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
   
 |Valor devuelto|Significado|  
-|--------------------|-----------------|  
+|------------------|-------------|  
 |`S_OK`|Correcto.|  
-|`E_FAIL`|Un error sin especificar producido; el motor de script no pudo terminar de inicializar el sitio.|  
+|`E_FAIL`|Se produjo un error no especificado; el motor de scripting no pudo finalizar la inicialización del sitio.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_POINTER`|Un puntero no válido se especificado.|  
-|`E_UNEXPECTED`|La llamada no se esperaba \(por ejemplo, un sitio se estableció ya\).|  
+|`E_POINTER`|Se especificó un puntero no válido.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, ya se estableció un sitio).|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

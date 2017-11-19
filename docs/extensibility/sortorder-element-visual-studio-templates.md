@@ -1,64 +1,69 @@
 ---
-title: "SortOrder (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder"
-helpviewer_keywords: 
-  - "<SortOrder> (elemento) [plantillas de Visual Studio]"
-  - "SortOrder (elemento) [plantillas de Visual Studio]"
+title: SortOrder (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
+helpviewer_keywords:
+- SortOrder element [Visual Studio Templates]
+- <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eb16ed870697a84152761f2cabdb7d42b1b1fd32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SortOrder (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica un valor que se utiliza para organizar la plantilla, entre otras plantillas de la misma categoría, tal como aparece en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.  
+# <a name="sortorder-element-visual-studio-templates"></a>SortOrder (Elemento, Plantillas de Visual Studio)
+Especifica un valor que se utiliza para organizar la plantilla, entre otras plantillas de la misma categoría, tal y como aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SortOrder >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <SortOrder> ... </SortOrder>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- `integer` que representa el valor del criterio de ordenación.  
+ Un `integer` que representa el valor de criterio de ordenación.  
   
-## Comentarios  
- `SortOrder` es un elemento opcional.  El valor predeterminado es 100 y todos los valores deben ser múltiplos de 10.  
+## <a name="remarks"></a>Comentarios  
+ `SortOrder` es un elemento opcional. El valor predeterminado es 100 y todos los valores deben ser múltiplos de 10.  
   
- El elemento `SortOrder` se omite para las plantillas creadas por el usuario.  Todas las plantillas creadas por el usuario se ordenan alfabéticamente.  
+ El `SortOrder` elemento se omite para plantillas creadas por el usuario. Todas las plantillas creadas por el usuario se ordenan alfabéticamente.  
   
- Las plantillas con criterios de ordenación con valores bajos aparecen en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** antes que las que tienen criterios de ordenación con valores altos.  
+ Plantillas que tienen valores de ordenación bajos aparecen en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo antes de plantillas que tienen valores de ordenación altos.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos de una plantilla de clase estándar de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -77,8 +82,8 @@ Especifica un valor que se utiliza para organizar la plantilla, entre otras plan
 </VSTemplate>  
 ```  
   
- En este ejemplo, el elemento `SortOrder` es relativamente alto.  Es probable que las demás plantillas de elementos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] tengan un valor de `SortOrder` menor que `290` y que aparezcan antes de esta en el cuadro de diálogo **Nuevo elemento**.  
+ En este ejemplo, el `SortOrder` elemento es relativamente alto. Es probable que otros [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantillas de elementos tendrá un `SortOrder` valor inferior al `290` y que aparezcan antes de esta plantilla en el **nuevo elemento** cuadro de diálogo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

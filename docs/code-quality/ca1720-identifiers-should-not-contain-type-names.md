@@ -1,29 +1,30 @@
 ---
-title: "CA1720: Los identificadores no deben contener nombres de tipo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1720"
-  - "IdentifiersShouldNotContainTypeNames"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotContainTypeNames"
-  - "CA1720"
+title: 'CA1720: Los identificadores no deben contener nombres de tipo | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1720: Los identificadores no deben contener nombres de tipo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Los identificadores no deben contener nombres de tipo
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
@@ -31,19 +32,19 @@ caps.handback.revision: 15
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- El nombre de un parámetro de un miembro visible externamente contiene un nombre de tipo de dato.  
+## <a name="cause"></a>Motivo  
+ El nombre de un parámetro de un miembro visible externamente contiene un nombre de tipo de datos.  
   
  O bien  
   
- El nombre de un miembro visible externamente contiene un nombre de tipo de dato específico del lenguaje.  
+ El nombre de un miembro visible externamente contiene un nombre de tipo de datos específico del lenguaje.  
   
-## Descripción de la regla  
- Es mejor utilizar los nombres de parámetros y miembros para comunicar su significado que para describir el tipo al que pertenecen, ya que esta información suelen proporcionarla las herramientas de desarrollo.  En los nombres de miembros, si es necesario utilizar un nombre de tipo de datos, utilice un nombre independiente del lenguaje en lugar de uno específico del lenguaje.  Por ejemplo, en lugar de utilizar el nombre de tipo de C\# 'int', utilice el nombre de tipo de datos independiente del lenguaje Int32.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Nombres de parámetros y miembros mejor sirven para comunicar su significado que to describir su tipo, que se espera que se proporcionan con las herramientas de desarrollo. Para los nombres de miembros, si se debe utilizar un nombre de tipo de datos, utilice un nombre independiente del lenguaje en lugar de una específica del lenguaje. Por ejemplo, en lugar del nombre de tipo de C# 'int', utilice el nombre de tipo de datos independiente del lenguaje Int32.  
   
- Cada token que conforma el nombre del miembro o parámetro se compara con los siguientes nombres de tipos de datos específicos del lenguaje sin hacer distinción entre mayúsculas y minúsculas:  
+ Cada token que conforma el nombre del parámetro o miembro se compara con los siguientes nombres de tipo de datos específico del lenguaje, en mayúsculas y minúsculas:  
   
--   Valor bool.  
+-   Bool  
   
 -   WChar  
   
@@ -59,7 +60,7 @@ caps.handback.revision: 15
   
 -   UInt  
   
--   Integer  
+-   Entero  
   
 -   UInteger  
   
@@ -67,23 +68,23 @@ caps.handback.revision: 15
   
 -   ULong  
   
--   Unsigned  
+-   Sin signo  
   
--   Signed  
+-   Firmado  
   
--   Float  
+-   Flotante  
   
 -   Float32  
   
 -   Float64  
   
- Además, los nombres de un parámetro también se comparan con los siguientes nombres de tipos de datos independientes del lenguaje sin hacer distinción entre mayúsculas y minúsculas:  
+ Además, los nombres de parámetro también se comparan con los siguientes nombres de tipo de datos independiente del lenguaje, en mayúsculas y minúsculas:  
   
 -   Objeto  
   
--   Obj  
+-   obj  
   
--   Boolean  
+-   Booleano  
   
 -   Char  
   
@@ -109,7 +110,7 @@ caps.handback.revision: 15
   
 -   IntPtr  
   
--   Ptr  
+-   PTR  
   
 -   Puntero  
   
@@ -121,25 +122,25 @@ caps.handback.revision: 15
   
 -   Single  
   
--   Double  
+-   Doble  
   
 -   Decimal  
   
 -   Guid  
   
-## Cómo corregir infracciones  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  **Si se produce en un parámetro:**  
   
- Sustituya el identificador del tipo de dato del nombre del parámetro por un término que describa mejor su significado o por un término más genérico, como 'valor.'  
+ Reemplace el identificador de tipo de datos en el nombre de parámetro con un término que describa mejor su significado o un término más genérico, como 'value'.  
   
  **Si se produce en un miembro:**  
   
- Sustituya el identificador de tipo de dato específico del lenguaje del nombre del miembro por un término que describa mejor su significado, un término equivalente independiente del lenguaje o un término más genérico, como 'valor.'  
+ Reemplace el identificador de tipo de datos específico del lenguaje en el nombre del miembro por un término que describa mejor su significado, un equivalente independiente del lenguaje o un término más genérico, como 'value'.  
   
-## Cuándo suprimir advertencias  
- Es posible que en ocasiones sea conveniente utilizar nombres de parámetros y miembros basados en tipos.  Sin embargo, para el nuevo desarrollo, no se da ningún escenario conocido donde se deba suprimir ninguna advertencia de esta regla.  Es posible que deba suprimir una advertencia de esta regla en las bibliotecas distribuidas anteriormente.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ El uso ocasional de nombres de parámetros y miembros basados en tipos podría ser adecuado. Sin embargo, para el nuevo desarrollo, no conoce se producen escenarios donde se debe suprimir una advertencia de esta regla. Para las bibliotecas que tienen anterior enviado, es posible que deba suprimir una advertencia de esta regla.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  

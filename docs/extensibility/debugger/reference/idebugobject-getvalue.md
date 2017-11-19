@@ -1,56 +1,56 @@
 ---
-title: "IDebugObject::GetValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::GetValue"
-helpviewer_keywords: 
-  - "IDebugObject::GetValue (método)"
+title: IDebugObject::GetValue | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject::GetValue
+helpviewer_keywords: IDebugObject::GetValue method
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a9e79c808c02d5c2d04631e6a2981269c5e3a32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject::GetValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el valor del objeto como serie consecutiva de bytes.  
+# <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
+Obtiene el valor del objeto como una serie de bytes consecutiva.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetValue(   
-   BYTE* pValue,  
-   UINT  nSize  
+```cpp  
+HRESULT GetValue(   
+   BYTE* pValue,  
+   UINT  nSize  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetValue(  
-   ref byte[] pValue,   
-   uint nSize  
+   ref byte[] pValue,   
+   uint nSize  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pValue`  
- \[in, out\]  Una matriz que se rellena con una ejecución consecutiva de byte que representa el valor del objeto.  
+ [entrada, salida] Una matriz que se rellena con una serie de bytes que representa el valor del objeto consecutiva.  
   
  `nSize`  
- \[in\]  el número de bytes máximo a capturar.  
+ [in] El número máximo de bytes que se va a capturar.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Obtiene el número total de bytes de valores que pueden ser capturados llamando al método de [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) .  
+## <a name="remarks"></a>Comentarios  
+ Obtener el número total de bytes del valor que se pueden recuperar mediante una llamada a la [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

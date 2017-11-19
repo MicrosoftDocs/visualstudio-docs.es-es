@@ -1,57 +1,58 @@
 ---
-title: "IDebugProgram3::ExecuteOnThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProgram3::ExecuteOnThread"
+title: IDebugProgram3::ExecuteOnThread | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b75ee8c7b53e751f322ba41bc3f93e2542e192ef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram3::ExecuteOnThread
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ejecuta el programa del depurador.  El subproceso se devuelve del depurador la información en la que el subproceso el usuario está viendo al ejecutar el programa.  
+# <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
+Ejecuta el programa de depurador. El subproceso se devuelve para proporcionar a la información del depurador de subproceso en el que está viendo el usuario al ejecutar el programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT ExecuteOnThread(  
-   [in] IDebugThread2* pThread)  
+   [in] IDebugThread2* pThread)  
 ```  
   
-```c#  
+```csharp  
 int ExecuteOnThread(  
-   IDebugThread2 pThread  
+   IDebugThread2 pThread  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pThread`  
- \[in\]  un objeto de [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .  
+ [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- hay tres maneras diferentes que un depurador puede reanudar la ejecución después de detener:  
+## <a name="remarks"></a>Comentarios  
+ Hay tres maneras diferentes que puede reanudar la ejecución después de detener un depurador:  
   
--   Execute: Cancelar cualquier paso anterior, y ejecute hasta el punto de interrupción siguiente y así sucesivamente.  
+-   Ejecutar: Cancelar un paso anterior y ejecutar hasta el punto de interrupción siguiente y así sucesivamente.  
   
--   paso: Cancelar cualquier anterior paso, y ejecute hasta el nuevo paso completa.  
+-   Paso: Cancelar un paso anterior y ejecutar hasta que se completa el paso nuevo.  
   
--   continúe: Ejecute de nuevo, y permite cualquier activo anterior del paso.  
+-   Continuar: Vuelva a ejecutar y dejar activa la cualquier paso anterior.  
   
- El último subproceso a `ExecuteOnThread` es útil al decidir qué paso a la cancelación.  Si no conoce el subproceso, ejecución ejecuta las cancela todos los pasos.  Con el conocimiento del subproceso, sólo necesita cancelar el paso en el subproceso activo.  
+ El subproceso pasa a `ExecuteOnThread` es útil al decidir qué paso para cancelar. Si no conoce el subproceso en el que se ejecuta ejecutar cancela todos los pasos. Con el conocimiento del subproceso, sólo necesita cancelar el paso en el subproceso activo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Ejecutar](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortEx2
-helpviewer_keywords:
-- IDebugPortEx2 interface
+f1_keywords: IDebugPortEx2
+helpviewer_keywords: IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: fa36bf7ae96058c4eb7c0462114af50fa08af656
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 06eab3133669381d13416c0990370ad01378222c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 Esta interfaz permite que la sesión de depuración control manager (SDM), los programas y procesos que se ejecutan en un puerto.  

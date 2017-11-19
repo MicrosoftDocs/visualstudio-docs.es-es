@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentText2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentText2"
-helpviewer_keywords: 
-  - "Interfaz IDebugDocumentText2"
+title: IDebugDocumentText2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentText2
+helpviewer_keywords: IDebugDocumentText2 interface
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ebcb90f570ad29f38eabe8712928b484fd6961c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentText2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-esta interfaz representa un documento de texto.  
+# <a name="idebugdocumenttext2"></a>IDebugDocumentText2
+Esta interfaz representa un documento de texto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
-## Notas para los implementadores  
- Un motor de depuración \(DE\) implementa esta interfaz cuando el código fuente que necesita proporcionar está en formato de texto.  Puesto que éste es el caso más típico, si un OF implementa la interfaz de [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) , también debe implementar la interfaz de `IDebugDocumentText2` .  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un motor de depuración (Alemania) implementa esta interfaz cuando el código fuente que debe proporcionar está en formato de texto. Puesto que este es el caso más habitual, si implementa un Alemania la [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaz, esta debería implementar también el `IDebugDocumentText2` interfaz.  
   
-## Notas para los llamadores  
- utilice el método de `QueryInterface` para obtener esta interfaz de una interfaz de `IDebugDocument2` .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Use la `QueryInterface` método para obtener esta interfaz desde un `IDebugDocument2` interfaz.  
   
-## métodos en el orden de Vtable  
- Además de los métodos de la interfaz de `IDebugDocument2` , esta interfaz implementa los siguientes métodos:  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Además de los métodos en el `IDebugDocument2` interfaz, esta interfaz implementa los métodos siguientes:  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Recupera el tamaño del texto en esta posición en el documento.|  
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|recupera el texto de la posición especificada en el documento.|  
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Recupera el texto de la posición especificada en el documento.|  
   
-## Comentarios  
- Un objeto que implementa esta interfaz también debe implementar la interfaz de <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> , que proporciona la interfaz de <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> para un objeto de [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) .  
+## <a name="remarks"></a>Comentarios  
+ Un objeto que implementa esta interfaz también debe implementar la <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> de la interfaz, que proporciona el <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interfaz para un [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objeto.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

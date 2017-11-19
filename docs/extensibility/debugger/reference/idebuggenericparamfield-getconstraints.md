@@ -1,62 +1,64 @@
 ---
-title: "IDebugGenericParamField::GetConstraints | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetConstraints"
-  - "GetConstraints"
+title: IDebugGenericParamField::GetConstraints | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugGenericParamField::GetConstraints
+- GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 877e22759041414a92f813440e82e8f7dd2cf182
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetConstraints
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera las restricciones que están asociados con este parámetro genérico.  
+# <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
+Recupera las restricciones que están asociadas a este parámetro genérico.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetConstraints(  
-   ULONG32       cConstraints,  
-   IDebugField** ppConstraints,  
-   ULONG32*      pcConstraints  
+   ULONG32       cConstraints,  
+   IDebugField** ppConstraints,  
+   ULONG32*      pcConstraints  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetConstraints(  
-   uint              cConstraints,  
-   out IDebugField[] ppConstraints,  
-   ref uint          pcConstraints  
+   uint              cConstraints,  
+   out IDebugField[] ppConstraints,  
+   ref uint          pcConstraints  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cConstraints`  
- \[in\]  Número de restricciones.  
+ [in] Número de restricciones.  
   
  `ppConstraints`  
- \[out\]  Devuelve una matriz que contiene las restricciones asociado a este campo.  
+ [out] Devuelve una matriz que contiene las restricciones asociadas a este campo.  
   
  `pcConstraints`  
- \[in, out\]  Número de restricciones en la matriz de `ppConstraints` .  
+ [entrada, salida] Número de restricciones en la `ppConstraints` matriz.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugGenericParamFieldType** que expone la interfaz de [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
     ULONG32 cConstraints,  
     IDebugField** ppConstraints,  
@@ -149,5 +151,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

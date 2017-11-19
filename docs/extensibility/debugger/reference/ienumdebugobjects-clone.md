@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugObjects::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::Clone"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::Clone (método)"
+title: IEnumDebugObjects::Clone | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugObjects::Clone
+helpviewer_keywords: IEnumDebugObjects::Clone method
 ms.assetid: cb7df109-d29a-4218-b900-6809091459dd
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 19d36d2e08d6cb284e08083ec1d1fe14cd48caec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugObjects::Clone
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 Este método devuelve una copia de la enumeración actual como un objeto independiente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
-   IEnumDebugObjects** ppEnum  
+   IEnumDebugObjects** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
-   out IEnumDebugObjects ppEnum  
+   out IEnumDebugObjects ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppEnum`  
- \[out\]  Devuelve una copia de esta enumeración como un objeto independiente.  
+ [out] Devuelve una copia de esta enumeración como un objeto independiente.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- La copia de la enumeración tiene el mismo estado que el original cuando se llama a este método.  Sin embargo, la copia y estados original son independientes y se pueden cambiar individualmente.  
+## <a name="remarks"></a>Comentarios  
+ La copia de la enumeración tiene el mismo estado que el original en el momento en que se llama a este método. Sin embargo, los Estados de la copia y el original son independientes y se pueden cambiar de forma individual.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptError::GetExceptionInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptError::GetExceptionInfo | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptError.GetExceptionInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptError_GetExceptionInfo"
+helpviewer_keywords: IActiveScriptError_GetExceptionInfo
 ms.assetid: 528416cc-8468-4ad7-a6c2-fa1daf6ecf33
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptError::GetExceptionInfo
-Recupera información sobre un error que se produjo mientras el motor de script ejecuta un script.  
+# <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
+Recupera información sobre un error que se produjeron mientras el motor de scripting estaba ejecutando una secuencia de comandos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetExceptionInfo(  
@@ -29,12 +32,12 @@ HRESULT GetExceptionInfo(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pexcepinfo`  
- \[out\] dirección de una estructura de `EXCEPINFO` que recibe información de error.  
+ [out] Dirección de un `EXCEPINFO` estructura que recibe información de error.  
   
-## Valor devuelto  
- Devuelve `S_OK` si es correcto, o `E_FAIL` si se ha producido un error.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve `S_OK` si se realiza correctamente, o `E_FAIL` si se produjo un error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

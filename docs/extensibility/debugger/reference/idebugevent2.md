@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEvent2
-helpviewer_keywords:
-- IDebugEvent2 interface
+f1_keywords: IDebugEvent2
+helpviewer_keywords: IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: cf76a596a42b166a7e19686ecbae5fe4ddd41ea4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: c1ddf80bca13c390c2d889674120b168cb79e89e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se utiliza para comunicar información de depuración críticos, como detener en un punto de interrupción e información no críticos, como un mensaje de depuración.  
@@ -71,4 +55,4 @@ IDebugEvent2 : IUnknown
 ## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

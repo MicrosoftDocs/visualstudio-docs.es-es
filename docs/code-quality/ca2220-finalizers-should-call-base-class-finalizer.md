@@ -1,53 +1,53 @@
 ---
-title: "CA2220: Los finalizadores deben llamar al finalizador de la clase base | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
-helpviewer_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
+title: 'CA2220: Los finalizadores deben llamar al finalizador de la clase base | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
+helpviewer_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: aa5ed3329d4168a0781243a4faf021de3488e77c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA2220: Los finalizadores deben llamar al finalizador de la clase base
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Los finalizadores deben llamar al finalizador de la clase base
 |||  
 |-|-|  
 |TypeName|FinalizersShouldCallBaseClassFinalizer|  
 |Identificador de comprobación|CA2220|  
 |Categoría|Microsoft.Usage|  
-|Cambio problemático|No|  
+|Cambio problemático|No trascendental|  
   
-## Motivo  
- Un tipo que reemplaza <xref:System.Object.Finalize%2A?displayProperty=fullName> no llama al método <xref:System.Object.Finalize%2A> en su clase base.  
+## <a name="cause"></a>Motivo  
+ Un tipo que invalida <xref:System.Object.Finalize%2A?displayProperty=fullName> no llama a la <xref:System.Object.Finalize%2A> método en su clase base.  
   
-## Descripción de la regla  
- La finalización se debe difundir a través de la jerarquía de herencia.  Para garantizar esto, los tipos deben llamar al método <xref:System.Object.Finalize%2A> de su clase base desde su propio método <xref:System.Object.Finalize%2A>.  El compilador de C\# agrega automáticamente la llamada al finalizador de clase base.  
+## <a name="rule-description"></a>Descripción de la regla  
+ La finalización se debe difundir a través de la jerarquía de herencia. Para asegurarse de esto, los tipos deben llamar a su clase base <xref:System.Object.Finalize%2A> método desde sus propias <xref:System.Object.Finalize%2A> método. El compilador de C# agrega automáticamente la llamada al finalizador de clase base.  
   
-## Cómo corregir infracciones  
- Para corregir una infracción de esta regla, llame al método <xref:System.Object.Finalize%2A> del tipo base desde su método <xref:System.Object.Finalize%2A>.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, llame al tipo base <xref:System.Object.Finalize%2A> método desde su <xref:System.Object.Finalize%2A> método.  
   
-## Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  Algunos compiladores que tienen como destino que el Common Language Runtime inserte una llamada al finalizador del tipo base dentro del lenguaje intermedio de Microsoft \(MSIL\).  Si se crea informe relacionado con una advertencia de esta regla, el compilador no inserta la llamada y debe agregarlo al código.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ No suprima las advertencias de esta regla. Algunos compiladores que tienen como destino common language runtime inserción una llamada al finalizador del tipo base en el lenguaje intermedio de Microsoft (MSIL). Si aparece una advertencia de esta regla, el compilador no inserta la llamada y debe agregarlo a su código.  
   
-## Ejemplo  
- El siguiente ejemplo de Visual Basic muestra un tipo `TypeB` que llama correctamente al método <xref:System.Object.Finalize%2A> en su clase base.  
+## <a name="example"></a>Ejemplo  
+ El siguiente ejemplo de Visual Basic muestra un tipo `TypeB` que llama correctamente a la <xref:System.Object.Finalize%2A> método en su clase base.  
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
   
-## Vea también  
- [Patrón de Dispose](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>Vea también  
+ [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

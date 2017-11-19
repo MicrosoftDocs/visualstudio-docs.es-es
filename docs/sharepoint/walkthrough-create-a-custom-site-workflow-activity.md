@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Create a Custom Site Workflow Activity | Microsoft Docs'
+title: 'Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado | Documentos de Microsoft'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,117 +19,117 @@ helpviewer_keywords:
 - workflow activities [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, site workflows
 ms.assetid: 8219a779-c27b-4186-92c9-5bda03328aa9
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 794ffdffb96c7b0914c283f13ec8ca7014f425b0
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Walkthrough: Create a Custom Site Workflow Activity
-  This walkthrough demonstrates how to create a custom activity for a site-level workflow using [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Site-level workflows apply to the whole site, not just a list on the site.) The custom activity creates a backup Announcements list and then copies the contents of the Announcements list into it.  
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo personalizada
+  En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo en una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia el contenido de la lista de anuncios en él.  
   
- This walkthrough demonstrates the following tasks:  
+ En este tutorial se muestran las siguientes tareas:  
   
--   Creating a site-level workflow.  
+-   Crear un flujo de trabajo de nivel de sitio.  
   
--   Creating a custom workflow activity.  
+-   Creación de una actividad de flujo de trabajo personalizado.  
   
--   Creating and deleting a SharePoint list.  
+-   Crear y eliminar una lista de SharePoint.  
   
--   Copying items from one list to another.  
+-   Copiar elementos de una lista a otra.  
   
--   Displaying a list on the QuickLaunch bar.  
+-   Mostrar una lista en la barra Inicio rápido.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
--   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Ediciones compatibles de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] y SharePoint. Para obtener más información, consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
-## <a name="creating-a-site-workflow-custom-activity-project"></a>Creating a Site Workflow Custom Activity Project  
- First, create a project to hold and test the custom workflow activity.  
+## <a name="creating-a-site-workflow-custom-activity-project"></a>Crear un proyecto de actividad personalizada de flujo de trabajo de sitio  
+ En primer lugar, cree un proyecto para hospedar y probar la actividad de flujo de trabajo personalizado.  
   
-#### <a name="to-create-a-site-workflow-custom-activity-project"></a>To create a site workflow custom activity project  
+#### <a name="to-create-a-site-workflow-custom-activity-project"></a>Para crear un proyecto de actividad personalizada de flujo de trabajo de sitio  
   
-1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
+1.  En la barra de menús, elija **archivo**, **New**, **proyecto** para mostrar la **nuevo proyecto** cuadro de diálogo.  
   
-2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
+2.  Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija la **2010** nodo.  
   
-3.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
+3.  En el **plantillas** panel, elija la **proyecto de SharePoint 2010** plantilla.  
   
-4.  In the **Name** box, enter **AnnouncementBackup**, and then choose the **OK** button.  
+4.  En el **nombre** cuadro, escriba **AnnouncementBackup**y, a continuación, elija la **Aceptar** botón.  
   
-     The **SharePoint Customization Wizard** appears.  
+     El **Asistente para personalización de SharePoint** aparece.  
   
-5.  On the **Specify the site and security level for debugging** page, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the trust level and default site.  
+5.  En el **especificar el nivel de sitio y la seguridad para la depuración** página, elija la **implementar como solución de granja de servidores** botón de opción y, a continuación, elija la **finalizar** botón para aceptar el sitio de nivel y el valor predeterminado de confianza.  
   
-     This step sets the trust level for the solution as farm solution, the only available option for workflow projects.  
+     Este paso establece el nivel de confianza para la solución como solución de granja, la única opción disponible para los proyectos de flujo de trabajo.  
   
-6.  In **Solution Explorer**, choose the project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
+6.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-7.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
+7.  Bajo **Visual C#** o **Visual Basic**, expanda la **SharePoint** nodo y, a continuación, elija la **2010** nodo.  
   
-8.  In the **Templates** pane, choose the **Sequential Workflow (Farm Solution only)** template, and then choose the **Add** button.  
+8.  En el **plantillas** panel, elija la **flujo de trabajo secuencial (solución de granja de servidores únicamente)** plantilla y, a continuación, elija la **agregar** botón.  
   
-     The **SharePoint Customization Wizard** appears.  
+     El **Asistente para personalización de SharePoint** aparece.  
   
-9. On the **Specify the workflow name for debugging** page, accept the default name (AnnouncementBackup - Workflow1). Change the workflow template type to **Site Workflow**, and then choose the **Next** button.  
+9. En el **especificar el nombre de flujo de trabajo para la depuración** , acepte el nombre predeterminado (AnnouncementBackup - Workflow1). Cambie el tipo de plantilla de flujo de trabajo a **flujo de trabajo de sitio**y, a continuación, elija la **siguiente** botón.  
   
-10. Choose the **Finish** button to accept the remaining default settings.  
+10. Elija la **finalizar** botón para aceptar los valores predeterminados restantes.  
   
-## <a name="adding-a-custom-workflow-activity-class"></a>Adding a Custom Workflow Activity Class  
- Next, add a class to the project to contain the code for the custom workflow activity.  
+## <a name="adding-a-custom-workflow-activity-class"></a>Agregar una clase de actividad de flujo de trabajo personalizado  
+ A continuación, agregue una clase al proyecto para que contenga el código de la actividad de flujo de trabajo personalizado.  
   
-#### <a name="to-add-a-custom-workflow-activity-class"></a>To add a custom workflow activity class  
+#### <a name="to-add-a-custom-workflow-activity-class"></a>Para agregar una clase de actividad de flujo de trabajo personalizado  
   
-1.  On the menu bar, choose **Project**, **Add New Item** to display the **Add New Item** dialog box.  
+1.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento** para mostrar la **Agregar nuevo elemento** cuadro de diálogo.  
   
-2.  In the **Installed Templates** tree view, choose the **Code** node, and then choose the **Class** template in the list of project item templates. Use the default name Class1. Choose the **Add** button.  
+2.  En el **plantillas instaladas** vista de árbol, elija la **código** nodo y, a continuación, elija la **clase** plantilla en la lista de plantillas de elementos de proyecto. Utilice el nombre predeterminado Class1. Elija el botón de **Agregar** .  
   
-3.  Replace all of the code in Class1 with the following:  
+3.  Reemplace todo el código de Class1 con lo siguiente:  
   
-     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]  [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
+     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
+     [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
   
-4.  Save the project, and then, on the menu bar, choose **Build**, **Build Solution**.  
+4.  Guarde el proyecto y, a continuación, en la barra de menús, elija **generar**, **generar solución**.  
   
-     Class1 appears as a custom action in the **Toolbox** on the **AnnouncementBackup Components** tab.  
+     Class1 aparece como una acción personalizada en el **cuadro de herramientas** en el **componentes AnnouncementBackup** ficha.  
   
-## <a name="adding-the-custom-activity-to-the-site-workflow"></a>Adding the Custom Activity to the Site Workflow  
- Next, add an activity to the Workflow to contain the custom code.  
+## <a name="adding-the-custom-activity-to-the-site-workflow"></a>Agregar la actividad personalizada al flujo de trabajo de sitio  
+ A continuación, agregar una actividad al flujo de trabajo para que contenga el código personalizado.  
   
-#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>To add a custom activity to the site Workflow  
+#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>Para agregar una actividad personalizada en el sitio de flujo de trabajo  
   
-1.  Open Workflow1 in the workflow designer in design view.  
+1.  Abra el Workflow1 en el Diseñador de flujo de trabajo en la vista Diseño.  
   
-2.  Drag Class1 from the **Toolbox** so that it appears under the `onWorkflowActivated1` activity, or open the shortcut menu for Class1, choose **Copy**, open the shortcut menu for the line under the `onWorkflowActivated1` activity, and then choose **Paste**.  
+2.  Arrastre Class1 desde el **cuadro de herramientas** para que aparezca bajo el `onWorkflowActivated1` actividad o abra el menú contextual para Class1, elija **copia**, abra el menú contextual de la línea en el `onWorkflowActivated1` actividad y, a continuación, elija **pegar**.  
   
-3.  Save the project.  
+3.  Guarde el proyecto.  
   
-## <a name="testing-the-site-workflow-custom-activity"></a>Testing the Site Workflow Custom Activity  
- Next, run the project and start the site workflow. The custom activity creates a backup Announcements list and copies the contents from the current Announcements list into it. The code also checks whether a backup list already exists before creating one. If a backup list already exists, it is deleted. The code also adds a link to the new list on the SharePoint site's QuickLaunch bar.  
+## <a name="testing-the-site-workflow-custom-activity"></a>Probar la actividad personalizada de flujo de trabajo de sitio  
+ A continuación, ejecute el proyecto e inicie el flujo de trabajo de sitio. La actividad personalizada crea una lista de anuncios de copia de seguridad y copia el contenido de la lista actual de anuncios en él. El código también comprueba si ya existe una lista de copia de seguridad antes de crear uno. Si ya existe una lista de copia de seguridad, se elimina. El código también agrega un vínculo a la nueva lista en la barra de inicio rápido del sitio de SharePoint.  
   
-#### <a name="to-test-the-site-workflow-custom-activity"></a>To test the site workflow custom activity  
+#### <a name="to-test-the-site-workflow-custom-activity"></a>Para probar la actividad personalizada de flujo de trabajo de sitio  
   
-1.  Choose the F5 key to run the project and deploy it to SharePoint.  
+1.  Presione la tecla F5 para ejecutar el proyecto e impleméntelo en SharePoint.  
   
-2.  On the QuickLaunch bar, choose the **Lists** link to display all of the lists that are available in the SharePoint site. Notice there is only one list for announcements named **Announcements**.  
+2.  En la barra Inicio rápido, elija la **enumera** vínculo para mostrar todas las listas que están disponibles en el sitio de SharePoint. Observe que hay solo una lista de anuncios denominado **anuncios**.  
   
-3.  At the top of the SharePoint webpage, choose the **Site Workflows** link.  
+3.  En la parte superior de la página Web de SharePoint, elija el **flujos de trabajo de sitio** vínculo.  
   
-4.  Under the Start a New Workflow section, choose the **AnnouncementBackup - Workflow1** link. This starts the site workflow and runs the code in the custom action.  
+4.  En el inicio de una sección de flujo de trabajo nuevo, elija la **AnnouncementBackup - Workflow1** vínculo. Esto inicia el flujo de trabajo de sitio y ejecuta el código de la acción personalizada.  
   
-5.  On the QuickLaunch bar, choose the **Announcements Backup** link. Notice that all of the announcements that are contained in the **Announcements** list have been copied to this new list.  
+5.  En la barra Inicio rápido, elija la **copia de seguridad de anuncios** vínculo. Tenga en cuenta que todos los anuncios que se encuentran en el **anuncios** lista se han copiado en esta lista nueva.  
   
-## <a name="see-also"></a>See Also  
- [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

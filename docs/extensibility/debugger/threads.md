@@ -1,34 +1,36 @@
 ---
-title: "Subprocesos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], subprocesos"
-  - "subprocesamiento [SDK de depuración]"
+title: Subprocesos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], threads
+- threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 150e27c4b8df06784848829bfe713773cf9d48a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Subprocesos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En términos de arquitectura del depurador, **Subproceso**:  
+# <a name="threads"></a>Subprocesos
+En cuanto a la arquitectura del depurador, una **subproceso**:  
   
--   es la unidad fundamental de cálculo.  Un subproceso ejecuta secuencialmente las instrucciones en el contexto de una sola pila de llamadas, desplácese a partir de un contexto de código a la siguiente.  
+-   Es la unidad fundamental de cálculo. Un subproceso ejecuta secuencialmente las instrucciones dentro del contexto de una pila de llamadas solo, mover desde el contexto de un código a la siguiente.  
   
--   Puede identificarse y el programa que se ejecuta en, y puede ser llamado, suspender, y reanudar.  Un subproceso también pueden mostrar los marcos de pila asociado y, en algunas situaciones, se puede mover a otro marco de pila.  Dado el contexto de un marco de pila, un subproceso puede devolver el subproceso lógico asociado, si existe.  Un subproceso tiene propiedades, como un valor de suspensión, que se puede mostrar en la ventana subprocesos del IDE.  
+-   Puede identificar propio y el programa se está ejecutando y puede denominado, suspender y reanudar. Un subproceso también puede enumerar sus marcos de pila asociado y, en determinadas condiciones, se puede mover a otro marco de pila. Dado el contexto de un marco de pila, un subproceso puede devolver un subproceso lógico asociado, si lo hay. Un subproceso tiene propiedades, como un recuento de suspensión, que se pueden mostrar en la ventana de subprocesos del IDE.  
   
--   Se representa mediante una interfaz de [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , creada normalmente por un motor de depuración \(DE\) o una máquina virtual como resultado de ejecutar un programa.  
+-   Se representa mediante un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interfaz, suelen ser creado por un motor de depuración (Alemania) o la máquina virtual como consecuencia de ejecutar un programa.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Programas](../../extensibility/debugger/programs.md)   
  [Marcos de pila](../../extensibility/debugger/stack-frames.md)   
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)   

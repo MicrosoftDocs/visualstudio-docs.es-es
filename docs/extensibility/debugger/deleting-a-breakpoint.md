@@ -1,32 +1,34 @@
 ---
-title: "Eliminar un punto de interrupci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "puntos de interrupción, eliminar"
-  - "depurar [SDK de depuración], eliminar los puntos de interrupción"
+title: "Eliminar un punto de interrupción | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- breakpoints, deleting
+- debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2789fd46942a9b54ca3d6efb082a6b21511969ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Eliminar un punto de interrupci&#243;n
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-A continuación se describe el proceso al eliminar un punto de interrupción pendiente:  
+# <a name="deleting-a-breakpoint"></a>Eliminar un punto de interrupción
+A continuación describe el proceso cuando se elimina un punto de interrupción pendiente:  
   
-## Proceso de eliminación  
- El administrador de depuración de sesión \(SDM\) llama al método de [IDebugPendingBreakpoint2:: Eliminar](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) para quitar el punto de interrupción pendiente y todos los puntos de interrupción enlazados enlazados de.  
+## <a name="deletion-process"></a>Proceso de eliminación  
+ El Administrador de sesión de depuración (SDM) llama el [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) método para quitar el punto de interrupción pendiente y enlazados todos los puntos de interrupción enlazado de él.  
   
 > [!NOTE]
->  Un único punto de interrupción enlazado se puede eliminar también por una llamada a [IDebugBoundBreakpoint2:: Eliminar](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
+>  También es posible eliminar un punto de interrupción enlazado mediante una llamada a [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
-## Vea también  
- [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Vea también  
+ [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

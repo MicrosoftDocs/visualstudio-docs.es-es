@@ -1,83 +1,82 @@
 ---
-title: "DataKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DataKind (enumeración)"
+title: DataKind | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e9ffa36facb3c7f64f7eb2c0b96ef5209f70c78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# DataKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="datakind"></a>DataKind
 Indica el ámbito determinado de un valor de datos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum DataKind {   
-   DataIsUnknown,  
-   DataIsLocal,  
-   DataIsStaticLocal,  
-   DataIsParam,  
-   DataIsObjectPtr,  
-   DataIsFileStatic,  
-   DataIsGlobal,  
-   DataIsMember,  
-   DataIsStaticMember,  
-   DataIsConstant  
+```C++  
+enum DataKind {   
+   DataIsUnknown,  
+   DataIsLocal,  
+   DataIsStaticLocal,  
+   DataIsParam,  
+   DataIsObjectPtr,  
+   DataIsFileStatic,  
+   DataIsGlobal,  
+   DataIsMember,  
+   DataIsStaticMember,  
+   DataIsConstant  
 };  
 ```  
   
-## Elementos \(Elements\)  
+## <a name="elements"></a>Elementos  
  DataIsUnknown  
- El símbolo de datos no puede determinarse.  
+ No se puede determinar el símbolo de datos.  
   
  DataIsLocal  
- el elemento de datos es una variable local.  
+ Elemento de datos es una variable local.  
   
  DataIsStaticLocal  
- el elemento de datos es una variable local estática.  
+ Elemento de datos es una variable local estática.  
   
  DataIsParam  
- el elemento de datos es un parámetro formal.  
+ Elemento de datos es un parámetro formal.  
   
  DataIsObjectPtr  
- El elemento de datos es un puntero de objeto \(`this`\).  
+ Elemento de datos es un puntero de objeto (`this`).  
   
  DataIsFileStatic  
- El elemento de datos es una variable de archivo\-scoped.  
+ Elemento de datos es una variable de ámbito de archivo.  
   
  DataIsGlobal  
- el elemento de datos es una variable global.  
+ Elemento de datos es una variable global.  
   
  DataIsMember  
- El elemento de datos es una variable miembro del objeto.  
+ Elemento de datos es una variable de miembro de objeto.  
   
  DataIsStaticMember  
- el elemento de datos es una variable estática de la clase.  
+ Elemento de datos es una variable estática de la clase.  
   
  DataIsConstant  
- el elemento de datos es un valor constante.  
+ Elemento de datos es un valor constante.  
   
-## Comentarios  
- Los valores de esta enumeración son devueltos por el método de [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración son devueltos por la [idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+ [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

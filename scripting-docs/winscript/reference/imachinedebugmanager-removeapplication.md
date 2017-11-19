@@ -1,27 +1,30 @@
 ---
-title: "IMachineDebugManager::RemoveApplication | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IMachineDebugManager::RemoveApplication | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IMachineDebugManager.RemoveApplication
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IMachineDebugManager::RemoveApplication"
+helpviewer_keywords: IMachineDebugManager::RemoveApplication
 ms.assetid: 873509ce-e638-484a-b2a2-489a8ce7dbfe
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6ee371ded11f38b5e049e236c92292d6f662f525
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManager::RemoveApplication
-Quita una aplicación de la lista actual de la aplicación.  
+# <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
+Quita una aplicación desde el que se ejecuta lista de aplicaciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT RemoveApplication(  
@@ -29,21 +32,21 @@ HRESULT RemoveApplication(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwAppCookie`  
- \[in\] cookie de proporcionada cuando la aplicación se agregó a la lista de la aplicación.  
+ [in] La cookie que se proporcionó cuando la aplicación se agrega a la lista de aplicaciones.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método llama el administrador de la depuración siempre que se llame a `IProcessDebugManager::RemoveApplication` .  
+## <a name="remarks"></a>Comentarios  
+ El Administrador de depuración del proceso llama a este método cada vez que `IProcessDebugManager::RemoveApplication` se llama.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
- [IMachineDebugManager \(Interfaz\)](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IMachineDebugManager (interfaz)](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

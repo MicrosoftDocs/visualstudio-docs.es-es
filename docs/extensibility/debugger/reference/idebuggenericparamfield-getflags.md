@@ -1,55 +1,57 @@
 ---
-title: "IDebugGenericParamField::GetFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetFlags"
-  - "IDebugGenericParamField::GetFlags"
+title: IDebugGenericParamField::GetFlags | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetFlags
+- IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5241889fc3a64a251295504a3d491168f725beac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetFlags
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera los mensajes para este parámetro genérico.  
+# <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
+Recupera las marcas para este parámetro genérico.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetFlags(  
-   DWORD* pdwFlags  
+   DWORD* pdwFlags  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetFlags(  
-   ref uint pdwFlags  
+   ref uint pdwFlags  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdwFlags`  
- \[out\]  Devuelve marcas para este parámetro genérico.  
+ [out] Devuelve las marcas para este parámetro genérico.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Estos marcadores contienen información sobre diversos restricciones especiales.  
+## <a name="remarks"></a>Comentarios  
+ Estas marcas contienen información sobre las restricciones especiales distintos.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugGenericParamFieldType** que expone la interfaz de [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)  
 {  
     HRESULT hr = S_OK;  
@@ -67,5 +69,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

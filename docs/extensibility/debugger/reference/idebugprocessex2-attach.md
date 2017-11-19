@@ -1,51 +1,51 @@
 ---
-title: "IDebugProcessEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::Attach (método)"
+title: IDebugProcessEx2::Attach | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::Attach
+helpviewer_keywords: IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 111895b73ee9685b9608be9812452d04d84cd48c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método informa al proceso que una sesión ahora está depurando el proceso.  
+# <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
+Este método le informa que el proceso que una sesión es ahora el proceso de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugSession2* pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugSession2* pSession  
 );  
 ```  
   
-```c#  
+```csharp  
 int Attach(  
-   IDebugSession2 pSession  
+   IDebugSession2 pSession  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pSession`  
- \[in\]  Un valor que identifica la sesión asociado a este proceso.  
+ [in] Un valor que identifica de forma única la sesión adjuntar a este proceso.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- La interfaz última en `pSession` debe tratarlo solo como cookie, un valor que identifica de forma única el administrador de depuración de sesión asociado a este proceso; ninguno de los métodos en la interfaz proporcionada funcionan.  
+## <a name="remarks"></a>Comentarios  
+ La interfaz se pasa en `pSession` debe tratarse como una cookie, un valor que identifica de forma única el Administrador de sesión de depuración adjuntar a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

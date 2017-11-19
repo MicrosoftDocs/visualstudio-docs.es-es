@@ -1,46 +1,46 @@
 ---
-title: "Debug Interface Access SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "depurar [Kit de desarrollo DIA (SDK)]"
-  - "depurador [Kit de desarrollo DIA (SDK)]"
-  - "Kit de desarrollo DIA (SDK)"
+title: Debug Interface Access SDK | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- debugging [DIA SDK]
+- debugger [DIA SDK]
+- DIA SDK
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e404f0b893453fa319d5c4df97319f8e77720805
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Debug Interface Access SDK
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El kit de desarrollo de software de Access de la interfaz de depuración de Microsoft \(diámetro SDK\) proporciona acceso a información de depuración almacenada en los archivos de base de datos de programa \(.pdb\) generados por herramientas de postcompiler de Microsoft.  Porque el formato del archivo .pdb generado por las herramientas de postcompiler experimenta la revisión constante, exponer el formato es poco práctico.  Mediante el diámetro API, puede desarrollar aplicaciones que buscan y examine la información de depuración almacenada en un archivo .pdb.  Dichas aplicaciones podrían, por ejemplo, enviar información de la informes de seguimiento de la pila y analizar los datos de rendimiento.  
+# <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
+El Microsoft depurar interfaz acceso Software Development Kit (SDK de DIA) proporciona acceso a información de depuración almacenada en archivos de programa (.pdb) de la base de datos generados por herramientas de postcompilador de Microsoft. Dado que el formato del archivo .pdb generado por las herramientas de postcompilador sufre constante revisión, resulta poco práctico exponer el formato. Con la API de DIA, puede desarrollar aplicaciones que buscan y examen información de depuración almacenada en un archivo .pdb. Dichas aplicaciones podrían, por ejemplo, proporcionan información de devolución de seguimiento de pila y analizar datos de rendimiento.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Introducción](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- Proporciona información general sobre las características del diámetro SDK y especifica dónde el diámetro SDK está instalado junto con el encabezado y los archivos de biblioteca necesarios.  
+ Proporciona información general sobre el SDK de DIA características y especifica donde está instalado el SDK de DIA, así como los archivos de biblioteca y el encabezado necesario.  
   
  [Consultar el archivo .pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Proporciona instrucciones sobre cómo utilizar el diámetro API para ver el archivo .pdb.  
+ Proporciona instrucciones sobre cómo usar la API de DIA para consultar el archivo PDB.  
   
  [Símbolos y etiquetas de símbolo](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- Explica cómo los símbolos y etiquetas de símbolos se utilizan en el diámetro API.  
+ Describe cómo se utilizan los símbolos y etiquetas de símbolo de la API de DIA.  
   
  [Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- Contiene interfaces, métodos, enumeraciones, y estructuras de diámetro API.  
+ Contiene las interfaces, métodos, enumeraciones y estructuras de la API de DIA.  
   
  [Ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
- Muestra cómo utilizar el diámetro API para buscar y examinar información de depuración.  
+ Muestra cómo utilizar la API de DIA para buscar y examinar la información de depuración.  
   
  [Archivo de origen Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- Código fuente utilizado por [Ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md) para mostrar el diámetro API.
+ Utilizado por el código fuente [ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md) para demostrar la API de DIA.

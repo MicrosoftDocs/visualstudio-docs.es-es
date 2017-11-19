@@ -1,27 +1,30 @@
 ---
-title: "IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IApplicationDebuggerUI::BringDocumentToTop | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebuggerUI.BringDocumentToTop
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebuggerUI::BringDocumentToTop"
+helpviewer_keywords: IApplicationDebuggerUI::BringDocumentToTop
 ms.assetid: ef5fe1e7-4381-4409-a0d7-58f993abe84e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 57b76f44eeeaad1946d40435c770b0687b82fd17
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebuggerUI::BringDocumentToTop
-Trae la ventana que contiene el documento especificado de depuración a la parte superior de la interfaz de usuario del depurador.  
+# <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
+Abre la ventana que contiene el documento de depuración especificado a la parte superior en el depurador de interfaz de usuario.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT BringDocumentToTop(  
@@ -29,20 +32,20 @@ HRESULT BringDocumentToTop(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pddt`  
- \[in\] depurar el documento para llevar a la parte superior de la interfaz de usuario del depurador.  
+ [in] Depurar el documento que se va a poner en la parte superior de la interfaz de usuario del depurador.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_INVALIDARG`|El documento no se conoce.|  
+|`E_INVALIDARG`|No se conoce el documento.|  
   
-## Comentarios  
- Este método devuelve la ventana que contiene el documento especificado de depuración a la parte superior de la interfaz de usuario del depurador.  
+## <a name="remarks"></a>Comentarios  
+ Este método pone la ventana que contiene el documento de depuración especificado a la parte superior en el depurador de interfaz de usuario.  
   
-## Vea también  
- [IApplicationDebuggerUI \(Interfaz\)](../../winscript/reference/iapplicationdebuggerui-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IApplicationDebuggerUI (Interfaz)](../../winscript/reference/iapplicationdebuggerui-interface.md)

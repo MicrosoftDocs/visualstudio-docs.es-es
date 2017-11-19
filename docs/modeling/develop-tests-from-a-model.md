@@ -6,41 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- tests and requirements
+helpviewer_keywords: tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: b7cb109d11669f411b5ca3bdf3c4c32a63ac53a1
-ms.contentlocale: es-es
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ea0753130b6fa1da60cf83cf15c0ee5c7f4010c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.  
   
- Para ver qué versiones de Visual Studio admiten estas características, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admite estas características, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="system-and-subsystem-testing"></a>Pruebas del sistema y de los subsistemas  
- *Pruebas del sistema,* también conocido como *las pruebas de aceptación*, son pruebas si se satisfacen las necesidades de los usuarios. En lugar de comprobar el diseño interno, estas pruebas se centran en el comportamiento del sistema que se aprecia desde el exterior.  
+ *Pruebas del sistema,* también conocido como *las pruebas de aceptación*, significa que prueba si se satisfacen las necesidades de los usuarios. En lugar de comprobar el diseño interno, estas pruebas se centran en el comportamiento del sistema que se aprecia desde el exterior.  
   
  Las pruebas del sistema son muy útiles cuando se amplía o rediseña un sistema, y ayudan a evitar que introduzca errores al cambiar el código.  
   
@@ -71,7 +55,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 -   Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, la prueba de una función aritmética sencilla podría ser: escribir 4; comprobar que el resultado es 2. En lugar de ello, diseñe el script del siguiente modo: elegir una entrada; multiplicar la salida por sí misma y comprobar que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.  
   
 #### <a name="linking-tests-to-use-cases"></a>Vincular pruebas a casos de uso  
- Si usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o los elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.  
+ Si utilizas [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o los elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular las pruebas a un caso de uso  
   
@@ -81,7 +65,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
 2.  Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.  
   
-     En un diagrama de casos de uso, haga clic en un caso de uso y, a continuación, haga clic en **vínculo al elemento de trabajo**. Para obtener más información, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).  
+     En un diagrama de casos de uso, haga clic en un caso de uso y, a continuación, haga clic en **vínculo al elemento de trabajo**. 
   
 3.  Agregue casos de prueba que comprueben los casos de uso al conjunto de pruebas.  
   
@@ -169,13 +153,12 @@ Assert (countAfter == countBefore = 1);
   
 2.  Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.  
   
-     En un diagrama de modelado, haga clic en un elemento, comentario o relación y, a continuación, haga clic en **vínculo al elemento de trabajo**. Para obtener más información, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).  
+     En un diagrama de modelado, haga clic en un elemento, comentario o relación y, a continuación, haga clic en **vínculo al elemento de trabajo**.
   
 3.  Agregue al conjunto de pruebas casos de prueba que verifiquen el requisito expresado en el elemento de modelo.  
   
 ## <a name="see-also"></a>Vea también  
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)   
- [Requisitos de usuario de modelo](../modeling/model-user-requirements.md)   
+ [Requisitos de usuario del modelo](../modeling/model-user-requirements.md)   
  [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)   
  [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)
-

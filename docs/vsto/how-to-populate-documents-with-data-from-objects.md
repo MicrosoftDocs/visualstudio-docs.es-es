@@ -1,29 +1,31 @@
 ---
-title: "C&#243;mo: Rellenar documentos con datos de objetos"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "documentos [desarrollo de Office en Visual Studio], rellenar con datos"
-  - "datos [desarrollo de Office en Visual Studio], agregar a documentos"
+title: "Cómo: rellenar documentos con datos de objetos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], populating with data
+- data [Office development in Visual Studio], adding to documents
 ms.assetid: 83e6ebac-e468-4bef-a91c-78c7bf597a75
-caps.latest.revision: 41
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
+caps.latest.revision: "41"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 418e56c83a463c10d9dfc990236315751e07c000
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Rellenar documentos con datos de objetos
-  El acceso a los datos de un objeto de datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word que en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para colocar datos de un objeto en la solución y se pueden usar controles de Windows Forms para mostrar los datos. Además, puede mostrar datos mediante controles host. Los controles host son objetos nativos de Microsoft Office Word que se han mejorado mediante funcionalidad de enlace de eventos y datos. Para obtener más información, consulta [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md).  
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Cómo: Rellenar documentos con datos de objetos
+  El acceso a los datos de un objeto de datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word que en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para colocar datos de un objeto en la solución y se pueden usar controles de Windows Forms para mostrar los datos. Además, puede mostrar datos mediante controles host. Los controles host son objetos nativos de Microsoft Office Word que se han mejorado mediante funcionalidad de enlace de eventos y datos. Para obtener más información, consulta [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -33,22 +35,22 @@ caps.handback.revision: 39
   
 -   Agregar un objeto de datos al documento.  
   
--   Conectar el objeto de datos a BindingSource.  
+-   Conectar el objeto de datos a BindingSource.   
   
-## Agregar un objeto de datos  
+## <a name="adding-a-data-object"></a>Agregar un objeto de datos  
   
-#### Para agregar un objeto de datos  
+#### <a name="to-add-a-data-object"></a>Para agregar un objeto de datos  
   
--   Abra la ventana **Orígenes de datos** y cree un origen de datos a partir de un objeto. Para obtener más información, consulta [Cómo: Conectarse a los datos en objetos](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+-   Abra la ventana **Orígenes de datos** y cree un origen de datos a partir de un objeto. Para obtener más información, vea [Agregar nuevos orígenes de datos](/visualstudio/data-tools/add-new-data-sources).  
   
-## Conectar el objeto de datos a BindingSource  
+## <a name="connecting-the-data-object-to-the-bindingsource"></a>Conectar el objeto de datos a BindingSource  
  En los proyectos de nivel de documento, se agregan controles al documento y se enlazan a datos en tiempo de diseño.  
   
  En proyectos de complemento de VSTO, se crean controles y se enlazan en tiempo de ejecución.  
   
-### Proyectos de nivel del documento  
+### <a name="document-level-projects"></a>Proyectos de nivel del documento  
   
-##### Para conectar el objeto de datos a BindingSource  
+##### <a name="to-connect-the-data-object-to-the-bindingsource"></a>Para conectar el objeto de datos a BindingSource  
   
 1.  Arrastre el campo de datos que quiera desde la ventana **Orígenes de datos** al documento. Así se crea un control automáticamente.  
   
@@ -56,9 +58,9 @@ caps.handback.revision: 39
   
 3.  Asigne la instancia a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la clase <xref:System.Windows.Forms.BindingSource>.  
   
-### Proyectos de nivel de la aplicación  
+### <a name="application-level-projects"></a>Proyectos de nivel de la aplicación  
   
-##### Para conectar el objeto de datos a BindingSource  
+##### <a name="to-connect-the-data-object-to-the-bindingsource"></a>Para conectar el objeto de datos a BindingSource  
   
 1.  En el código, cree una instancia del tipo del objeto que está asociado con el origen de datos.  
   
@@ -68,13 +70,14 @@ caps.handback.revision: 39
   
 4.  Agregue el origen de datos como un enlace de datos al control.  
   
-## Vea también  
- [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Información general sobre orígenes de datos](../data-tools/add-new-data-sources.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Conectar a los datos en aplicaciones de Windows Forms](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Información general sobre el componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
+## <a name="see-also"></a>Vea también  
+ 
+ [Agregar nuevos orígenes de datos](/visualstudio/data-tools/add-new-data-sources)   
+ [Enlazar controles de formularios Windows Forms a datos en Visual Stduio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)
+ 
+ [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Cómo: actualizar un origen de datos con datos de un Control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Conectarse a datos en aplicaciones de Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [Información general sobre el componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

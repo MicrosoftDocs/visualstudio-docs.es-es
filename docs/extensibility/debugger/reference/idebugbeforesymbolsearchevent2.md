@@ -1,48 +1,49 @@
 ---
-title: "IDebugBeforeSymbolSearchEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interfaz IDebugBeforeSymbolSearchEvent2"
+title: IDebugBeforeSymbolSearchEvent2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9541c7008129f47df93e2e4cf2c3e8248742b0c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBeforeSymbolSearchEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-El motor de depuración \(DE\) envía esta interfaz al administrador \(SDM\) de depuración de la sesión para establecer el mensaje de la barra de estado durante carga de símbolos.  
+# <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
+El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) para establecer el estado de mensaje en la barra durante la carga de símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugBeforeSymbolSearchEvent2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El OF implementa esta interfaz cuando debe establecer el mensaje de la barra de estado durante carga de símbolos.  Esta interfaz se implementa únicamente los motores de depuración que ejecutan o es una parte de intérpretes de script.  la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) se debe implementar en el mismo objeto que esta interfaz \(el SDM utiliza **QueryInterface** para tener acceso a la interfaz **IDebugEvent2** \).  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ La DE implementa esta interfaz cuando se debe establecer el mensaje de la barra de estado durante la carga de símbolos. Esta interfaz se implementa únicamente por los motores de depuración que funcionan con o que forman parte de los intérpretes de secuencias de comandos. El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) debe implementar la interfaz en el mismo objeto que esta interfaz (usa el SDM **QueryInterface** para tener acceso a la **IDebugEvent2** interfaz).  
   
-## Notas para los llamadores  
- El OF crea y envía este objeto event cuando debe establecer el mensaje de la barra de estado durante carga de símbolos.  El evento se envía mediante la función de devolución de llamada de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) proporcionada por el SDM cuando adjuntó el programa que se depura.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ El DIS crean y envía este objeto de evento cuando se debe establecer el mensaje de la barra de estado durante la carga de símbolos. El evento se envía mediante la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) función de devolución de llamada proporcionada por el SDM cuando adjunta al programa que se está depurando.  
   
-## Métodos  
- La tabla siguiente se muestran los métodos de `IDebugBeforeSymbolSearchEvent2`.  
+## <a name="methods"></a>Métodos  
+ La tabla siguiente muestran los métodos de `IDebugBeforeSymbolSearchEvent2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Recupera el nombre del módulo que se está depurando actualmente.|  
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Recupera el nombre del módulo que se está depurando.|  
   
-## Requisitos  
- encabezado: Msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

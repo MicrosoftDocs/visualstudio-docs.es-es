@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add Commands to Shortcut Menus | Microsoft Docs'
+title: "Cómo: agregar comandos a menús contextuales | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,45 +14,45 @@ helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
 ms.assetid: 9a848817-db11-4294-8f6f-9181ab87aadd
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0dd95e7cb207542a2f0131192b2ef0f43eee73d8
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 40b2bbb7c7b86665790a06feed288b0dd37272df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>How to: Add Commands to Shortcut Menus
-  This topic demonstrates how to add commands to a shortcut menu in an Office application by using an VSTO Add-in.  
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Cómo: Agregar comandos a menús contextuales
+  En este tema se muestra cómo agregar comandos a un menú contextual en una aplicación de Office mediante un complemento de VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-### <a name="to-add-commands-to-shortcut-menus-in-office"></a>To add commands to shortcut menus in Office  
+### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para agregar comandos a los menús contextuales de Office  
   
-1.  Add a **Ribbon XML** item to a document-level or VSTO Add-in project. For more information, see [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md). In  
+1.  Agregue un elemento **XML de cinta** a un proyecto de nivel de documento o de complemento de VSTO. Para obtener más información, consulte [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md). En  
   
-2.  **Solution Explorer**, select **ThisAddin.cs** or **ThisAddin.vb**.  
+2.  el**Exploado de soluciones**, seleccione **ThisAddIn.cs** o **ThisAddIn.vb**.  
   
-3.  On the menu bar, choose **View**, **Code**.  
+3.  En la barra de menús, elija **Ver**, **Código**.  
   
-     The **ThisAddin** class file opens in the Code Editor.  
+     El archivo de clase **ThisAddin** se abrirá en el Editor de código.  
   
-4.  Add the following code to the **ThisAddin** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+4.  Agregue el siguiente código a la clase **ThisAddin** . Este código invalida el método CreateRibbonExtensibilityObject y devuelve la clase XML Ribbon a la aplicación de Office.  
   
-     [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]  [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
+     [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
+     [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  In **Solution Explorer**, select the Ribbon XML file. By default, the Ribbon XML file is named Ribbon1.xml.  
+5.  En el **Explorador de soluciones**, seleccione el archivo XML de cinta. De forma predeterminada, el archivo XML de cinta se denomina Ribbon1.xml.  
   
-6.  On the menu bar, choose **View**, **Code**.  
+6.  En la barra de menús, elija **Ver**, **Código**.  
   
-     The Ribbon xml file opens in the Code Editor.  
+     Se abrirá el archivo de código XML de cinta de opciones en el Editor de código.  
   
-7.  In the Code Editor, add XML that describes the shortcut menu and the control that you want to add to the shortcut menu.  
+7.  En el Editor de código, agregue el código XML que describe el menú contextual y el control que quiere agregar al menú contextual.  
   
-     The following example adds a button, a menu, and a gallery control to the shortcut menu for a word document. The control ID of this shortcut menu is ContextMenuText. For a complete list of Office 2010 shortcut control ID's, see [Office 2010 Help Files: Office Fluent User Interface Control Identifiers](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     En el ejemplo siguiente se agrega un botón, un menú y un control de galería al menú contextual de un documento de Word. El id. del control de este menú contextual es ContextMenuText. Para obtener una lista completa de control de acceso directo de Office 2010 identificadores, vea [archivos de Ayuda de Office 2010: identificadores de Control en la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```  
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -76,18 +74,19 @@ ms.lasthandoff: 08/30/2017
     </customUI>  
     ```  
   
-8.  In **Solution Explorer**, choose **MyRibbon.cs** or **MyRibbon.vb**.  
+8.  En el **Explorador de soluciones**, elija **MyRibbon.cs** o **MyRibbon.vb**.  
   
-9. Add the a callback method to the `Ribbon1` class for each control that you want to handle.  
+9. Agregue un método de devolución de llamada a la clase `Ribbon1` para cada control que quiere administrar.  
   
-     The following callback method handles the **My Button** button. This code adds a string to the active document at the current location of the curser.  
+     El siguiente método de devolución de llamada controla el botón **Mi botón** . Este código agrega una cadena al documento activo en la posición actual del cursor.  
   
-     [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]   [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]  
+     [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
+     [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]  
   
-## <a name="see-also"></a>See Also  
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Walkthrough: Creating Shortcut Menus for Bookmarks](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Customizing Context Menus in Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
+## <a name="see-also"></a>Vea también  
+ [Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)   
+ [Tutorial: Crear menús contextuales para marcadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
+ [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
+ [Personalizar menús contextuales de Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
   
   

@@ -1,25 +1,27 @@
 ---
-title: "Configuraci&#243;n de pantalla de ventana de herramienta | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ventanas de herramientas, configurar"
-  - "ventanas de herramientas, apariencia"
+title: "Configuración de pantalla de ventana de herramientas | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tool windows, configuring
+- tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7ab5cef6fb45d60be8be8d1db6b160079633ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Configuraci&#243;n de pantalla de ventana de herramienta
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
 Cuando un paquete VSPackage registra una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [las ventanas de herramientas en el registro](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>Información de visualización de ventana  
@@ -36,12 +38,12 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
-|Nombre|REG_SZ|"Nombre corto va aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
-|Flotante|REG_SZ|"X1, Y1, X2, Y2"|Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla.|  
+|Name|REG_SZ|"Nombre corto va aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Flotar"<br /><br /> "Vinculados"<br /><br /> "Por pestañas"<br /><br /> "AlwaysFloat"|Una palabra clave especifica la inicial Mostrar estado de la ventana de herramientas.<br /><br /> "MDI" = acoplado con ventana MDI.<br /><br /> "Flotar" = flotante.<br /><br /> "Vincular" = vinculada con otra ventana (especificado en la entrada de la ventana).<br /><br /> "Por pestañas" = combina con otra ventana de herramientas.<br /><br /> "AlwaysFloat" = no se puede acoplar.<br /><br /> Para obtener más información, vea la sección Comentarios.|  
-|Ventana|REG_SZ|*\< GUID>*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Ventana|REG_SZ|*\<GUID >*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |Orientación|REG_SZ|"Izquierda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|Vea la sección Comentarios.|  
 |DontForceCreate|REG_DWORD|0 o 1|Si esta entrada está presente y su valor no es cero, la ventana se carga, pero no inmediatamente muestra.|  
   
@@ -85,10 +87,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Nombre|Tipo|Datos|Descripción|  
+|Name|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|  
-|*\< GUID>*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. El nombre del elemento debe ser el GUID de un comando que requieren visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
+|*\<GUID >*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. El nombre del elemento debe ser el GUID de un comando que requieren visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -108,4 +110,4 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elementos fundamentales de VSPackage](../misc/vspackage-essentials.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

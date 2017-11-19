@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 027e57a8d6ba4b4d317289cbdb74aa064de2ef4e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que usa elementos comunes de shell de Visual Studio, o si quiere que el elemento de la interfaz para que sea coherente con características similares, use los nombres de símbolo (token) existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.  
@@ -116,7 +101,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 | Borde de botón | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>Controles de casilla  
-![Casilla de verificación (límite)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "0303-161_CheckboxRedline")<br />Casilla de verificación (límite)  
+![Casilla de verificación (límite)](../../extensibility/ux-guidelines/media/0303-161_checkboxredline.png "161_CheckboxRedline 0303")<br />Casilla de verificación (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -124,7 +109,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Casilla de verificación: estado predeterminado**  
 
-![Casilla de verificación](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />Casilla de verificación de forma predeterminada
+![Casilla de verificación](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "162_Checkbox 0303")<br />Casilla de verificación de forma predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -135,7 +120,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Casilla de verificación: estado deshabilitado**  
 
-![Casilla de verificación deshabilitada](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303-163_CheckboxDisabled")<br />Casilla de verificación deshabilitada  
+![Casilla de verificación deshabilitada](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "163_CheckboxDisabled 0303")<br />Casilla de verificación deshabilitada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -146,7 +131,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Casilla de verificación: mantenga el mouse estado**  
 
- ![Casilla de verificación al mantener el mouse](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303-164_CheckboxHover")<br />Casilla de verificación al mantener el mouse
+ ![Casilla de verificación al mantener el mouse](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "164_CheckboxHover 0303")<br />Casilla de verificación al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -157,7 +142,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Casilla de verificación: estado presionado**  
 
-![Casilla de verificación presionada](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303-165_CheckboxPressed")<br />Casilla de verificación presionada  
+![Casilla de verificación presionada](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "165_CheckboxPressed 0303")<br />Casilla de verificación presionada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -168,7 +153,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Casilla de verificación: centra estado**  
 
-![Casilla de verificación tiene el foco](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />Casilla de verificación tiene el foco  
+![Casilla de verificación tiene el foco](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "166_CheckboxFocused 0303")<br />Casilla de verificación tiene el foco  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -178,7 +163,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 | Glifo | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>Listas desplegables y combinado cuadros
-![Lista desplegable o cuadro combinado (límite)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />Lista desplegable o cuadro combinado (límite)  
+![Lista desplegable o cuadro combinado (límite)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "167_DropDownComboBoxRedline 0303")<br />Lista desplegable o cuadro combinado (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -187,7 +172,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: estado predeterminado**  
 
-![De forma predeterminada colocar desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />De forma predeterminada colocar desplegable o cuadro combinado
+![Predeterminado colocar desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "168_DropDownComboBox 0303")<br />De forma predeterminada colocar desplegable o cuadro combinado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -200,7 +185,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: estado deshabilitado**  
 
-![Deshabilitado colocar desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />Deshabilitado colocar desplegable o cuadro combinado
+![Deshabilitado colocar desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "169_DropDownComboBoxDisabled 0303")<br />Deshabilitado colocar desplegable o cuadro combinado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -213,7 +198,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: mantenga el mouse estado**  
 
-![Lista desplegable o cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />Desplegable o cuadro combinado al mantener el mouse
+![Lista desplegable o cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "170_DropDownComboBoxHover 0303")<br />Desplegable o cuadro combinado al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -226,7 +211,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: estado presionado**  
 
-![Presiona la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />Presiona la lista desplegable o cuadro combinado  
+![Presiona la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "171_DropDownComboBoxPressed 0303")<br />Presiona la lista desplegable o cuadro combinado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -239,7 +224,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Vista de elemento de lista de cuadros de listas desplegables y combinado: estado presionado**  
 
- ![Colocar-desplegable o cuadro combinado presionado vista de elemento de lista](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")<br />Colocar-desplegable o cuadro combinado presionado vista de elemento de lista  
+ ![Colocar-desplegable o cuadro combinado presionado vista de elemento de lista](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "174_DropDownComboBoxListView 0303")<br />Colocar-desplegable o cuadro combinado presionado vista de elemento de lista  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -250,7 +235,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: centra estado**  
 
-![Colocar-desplegable o cuadro combinado tiene el foco](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />Colocar-desplegable o cuadro combinado tiene el foco
+![Colocar-desplegable o cuadro combinado con el foco](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "172_DropDownComboBoxFocused 0303")<br />Colocar-desplegable o cuadro combinado tiene el foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -263,7 +248,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 
 **Listas desplegables y combinado cuadros: selección de entrada de texto**  
 
-![Selección de entrada de texto de la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />Selección de entrada de texto de la lista desplegable o cuadro combinado  
+![Selección de entrada de texto de la lista desplegable o cuadro combinado](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "173_DropDownComboBoxTextInput 0303")<br />Selección de entrada de texto de la lista desplegable o cuadro combinado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -272,7 +257,7 @@ Cuando se usa una barra de comandos estándar de Visual Studio en su caracterís
 ### <a name="tabular-data-grid-controls"></a>Controles de datos tabulares (cuadrícula)  
 Los controles de datos tabulares, también conocidos como controles de cuadrícula, son controles comunes de Visual Studio que se pueden usar para presentar grandes cantidades de datos en varias columnas. Los controles estándar de datos tabulares están en varias ubicaciones de Visual Studio: la ventana de herramientas Lista de errores, los informes de IntelliTrace y la vista de montón de memoria, entre otros. Use siempre los controles de datos tabulares estándar que se proporcionan. En raras ocasiones, podría no tener acceso a los controles estándar de datos tabulares. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros controles de datos tabulares de Visual Studio.  
 
-![Control de cuadrícula o datos tabulares (límite)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />Control de cuadrícula o datos tabulares (límite)
+![Control de cuadrícula o datos tabulares (límite)](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "197_TabularDataGridControlRedline 0303")<br />Control de cuadrícula o datos tabulares (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -340,7 +325,7 @@ Los encabezados de columna constan de un fondo, un borde, el texto del título y
 #### <a name="instructional-text"></a>Texto informativo
 Texto informativo ofrece una explicación principal destacada de qué hacer en una página del cuadro de diálogo o documento.
 
-![Texto predeterminado](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Texto predeterminado
+![Texto informativo predeterminado](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Texto predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -360,7 +345,7 @@ Texto de sugerencia aparece en un control vacío, debajo de un control o en una 
 
 **Texto de la sugerencia de forma predeterminada**
 
-![Texto de la sugerencia de forma predeterminada](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Texto de la sugerencia de forma predeterminada
+![Texto de sugerencia predeterminado](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Texto de la sugerencia de forma predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -368,7 +353,7 @@ Texto de sugerencia aparece en un control vacío, debajo de un control o en una 
 
 **Texto de sugerencia requerido**
 
-![Texto de sugerencia requerido](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Texto de sugerencia requerido
+![Requiere el texto de la sugerencia](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Texto de sugerencia requerido
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -388,7 +373,7 @@ Texto de sugerencia aparece en un control vacío, debajo de un control o en una 
 ### <a name="hyperlink"></a>Hipervínculo  
 El hipervínculo es un control que no tiene un par de primer plano y fondo. En todos los casos, use el color de hipervínculo de primer plano, que se muestre adecuadamente en fondos oscuros, grises y blancos. Si no se usa el token de color para el control de hipervínculo, verá el color predeterminado del sistema para "presionar", que parpadeará en rojo. Que es la señal de que el control no está usando el token de color correcto del entorno.  
 
-![Hipervínculo (límite)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />Hipervínculo (límite)
+![Hipervínculo (límite)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "133_HyperlinkRedline 0303")<br />Hipervínculo (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -396,7 +381,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 
 **Hipervínculo: estado predeterminado**  
 
-![Hipervínculo predeterminado](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303-134_Hyperlink")<br />Hipervínculo predeterminado
+![Hipervínculo predeterminado](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "134_Hyperlink 0303")<br />Hipervínculo predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -404,7 +389,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 
 **Hipervínculo: estado de activación**
 
-![Hipervínculo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303-135_HyperlinkHover")<br />Hipervínculo al mantener el mouse  
+![Hipervínculo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "135_HyperlinkHover 0303")<br />Hipervínculo al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -412,7 +397,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 
 **Hipervínculo: estado presionado**
 
-![Hipervínculo presionado](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303-136_HyperlinkPressed")<br />Hipervínculo presionado  
+![Hipervínculo presionado](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "136_HyperlinkPressed 0303")<br />Hipervínculo presionado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -420,7 +405,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 
 **Hipervínculo: estado deshabilitado**
 
-![Hipervínculo deshabilitado](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303-137_HyperlinkDisabled")<br />Hipervínculo deshabilitado  
+![Hipervínculo deshabilitado](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "137_HyperlinkDisabled 0303")<br />Hipervínculo deshabilitado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -429,7 +414,7 @@ El hipervínculo es un control que no tiene un par de primer plano y fondo. En t
 ### <a name="infobars"></a>Barras de información  
 Las barras de información se usan para proporcionar más información sobre un determinado contexto y siempre se muestran en la parte superior de una ventana de documento o una ventana de herramientas.  
 
-![Barra de información (límite)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Barra de información (límite)
+![Barra de información (límite)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "138_InfobarRedline 0303")<br />Barra de información (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -437,7 +422,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 
 **La barra de información: estado predeterminado**
 
-![Barra de información de forma predeterminada](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303-139_Infobar")<br />Barra de información de forma predeterminada
+![Predeterminado de la barra de información](../../extensibility/ux-guidelines/media/0303-139_infobar.png "139_Infobar 0303")<br />Barra de información de forma predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -493,7 +478,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 
 **Botón de hipervínculo de la barra de información: estado presionado**
 
-![Botón de hipervínculo presionado de la barra de información](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Botón de hipervínculo presionado de la barra de información
+![Botón de barra de información presionado hipervínculo](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Botón de hipervínculo presionado de la barra de información
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -517,7 +502,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 
 **Barra de información en línea hipervínculo (dentro de una frase): estado presionado**
 
-![Botón de barra de información en línea hipervínculo presionado](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Botón de barra de información en línea hipervínculo presionado
+![Botón de barra de información presionado insertado hipervínculo](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Botón de barra de información en línea hipervínculo presionado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -525,7 +510,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 
 **Botón de barra de información: estado predeterminado**
 
-![Botón de barra de información de forma predeterminada](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Botón de barra de información de forma predeterminada
+![Botón de barra de información predeterminado](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Botón de barra de información de forma predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -545,7 +530,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 
 **Botón de barra de información: estado presionado**
 
-![Botón presionado de la barra de información](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Botón presionado de la barra de información
+![Botón de barra de información presionado](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Botón presionado de la barra de información
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -576,7 +561,7 @@ Las barras de información se usan para proporcionar más información sobre un 
 ### <a name="scroll-bars"></a>Barras de desplazamiento  
 Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no tienen que puede aplicar un tema. Sin embargo, podría decidir que desea aprovechar los colores utilizados en las barras de desplazamiento para que la interfaz de usuario muestre siempre coherente con esta parte del entorno de Visual Studio.  
 
-![Barra de desplazamiento (límite)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "0303-140_ScrollbarRedline")<br />Barra de desplazamiento (límite)
+![Barra de desplazamiento (límite)](../../extensibility/ux-guidelines/media/0303-140_scrollbarredline.png "140_ScrollbarRedline 0303")<br />Barra de desplazamiento (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -584,7 +569,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 **Barra de desplazamiento: estado predeterminado**  
 
-![Barra de desplazamiento predeterminado](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303-141_Scrollbar")<br />Barra de desplazamiento predeterminado
+![Barra de desplazamiento predeterminado](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "141_Scrollbar 0303")<br />Barra de desplazamiento predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -593,7 +578,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 **Barra de desplazamiento: mantenga el mouse estado**
 
-![Barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303-143_ScrollbarHover")<br />Barra de desplazamiento al mantener el mouse
+![Barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "143_ScrollbarHover 0303")<br />Barra de desplazamiento al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -602,7 +587,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 *Barra de desplazamiento: estado presionado**
 
-![Presiona la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303-145_ScrollbarPressed")<br />Presiona la barra de desplazamiento  
+![Barra de desplazamiento presionada](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "145_ScrollbarPressed 0303")<br />Presiona la barra de desplazamiento  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -611,7 +596,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 **Flecha de barra de desplazamiento: estado predeterminado**  
 
-![Flecha de barra de desplazamiento predeterminado](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303-142_ScrollbarArrow")<br />Flecha de barra de desplazamiento predeterminado
+![Flecha de barra de desplazamiento predeterminado](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "142_ScrollbarArrow 0303")<br />Flecha de barra de desplazamiento predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -620,7 +605,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 **Flecha de barra de desplazamiento: mantenga el mouse estado**
 
-![Flecha de la barra de desplazamiento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br />Flecha de barra de desplazamiento al mantener el mouse  
+![Flecha de desplazamiento de la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "144_ScrollbarArrowHover 0303")<br />Flecha de barra de desplazamiento al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -629,7 +614,7 @@ Barras de desplazamiento tienen un estilo por el entorno de Visual Studio y no t
 
 **Flecha de barra de desplazamiento: estado presionado**  
 
-![Presiona la flecha de la barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br />Presiona la flecha de la barra de desplazamiento
+![Flecha de la barra de desplazamiento presionada](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "146_ScrollbarArrowPressed 0303")<br />Presiona la flecha de la barra de desplazamiento
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -649,7 +634,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 -   "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.  
 
-![Cuadro de búsqueda (límite)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Cuadro de búsqueda (límite)  
+![Cuadro de búsqueda (límite)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "110_SearchBoxRedline 0303")<br />Cuadro de búsqueda (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -658,7 +643,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Centra el campo de entrada de búsqueda**
 
-![Centra el campo de entrada de búsqueda](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />Centra el campo de entrada de búsqueda  
+![Campo de entrada de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "111_SearchInputFieldFocused 0303")<br />Centra el campo de entrada de búsqueda  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -669,7 +654,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Campo de entrada de búsqueda no enfocado, activo**
 
-![Campo de entrada de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />Campo de entrada de búsqueda no enfocado, activo
+![Campo de entrada de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "114_SearchInputFieldUnfocused 0303")<br />Campo de entrada de búsqueda no enfocado, activo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -691,7 +676,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Campo de entrada de búsqueda resaltado (solo texto)**
 
-![Campo de entrada de búsqueda resaltado](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />Campo de entrada de búsqueda resaltado
+![Campo de entrada de búsqueda resaltado](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "120_SearchInputFieldHighlight 0303")<br />Campo de entrada de búsqueda resaltado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -702,7 +687,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Campo de entrada de búsqueda deshabilitado**
 
-![Campo de entrada de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />Campo de entrada de búsqueda deshabilitado
+![Campo de entrada de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "121_SearchInputFieldDisabled 0303")<br />Campo de entrada de búsqueda deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -713,7 +698,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de acción de búsqueda enfocado**
 
-![Botón de acción de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />Botón de acción de búsqueda enfocado
+![Botón de acción de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "112_SearchActionButtonFocused 0303")<br />Botón de acción de búsqueda enfocado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -725,7 +710,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de acción de búsqueda no enfocado**  
 
-![Botón de acción de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />Botón de acción de búsqueda no enfocado
+![Botón de acción de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "115_SearchActionButtonUnfocused 0303")<br />Botón de acción de búsqueda no enfocado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -747,7 +732,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de acción de búsqueda deshabilitado**
 
-![Botón de acción de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br />Botón de acción de búsqueda deshabilitado
+![Botón de acción de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "122_SearchActionButtonDisabled 0303")<br />Botón de acción de búsqueda deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -757,7 +742,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de lista desplegable de búsqueda enfocado**
 
-![Botón de lista desplegable de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />Botón de lista desplegable de búsqueda enfocado
+![Botón de lista desplegable de búsqueda enfocado](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "113_SearchDropdownButtonFocused 0303")<br />Botón de lista desplegable de búsqueda enfocado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -767,7 +752,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de lista desplegable de búsqueda no enfocado**
 
-![Botón de lista desplegable de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />Botón de lista desplegable de búsqueda no enfocado
+![Botón de lista desplegable de búsqueda no enfocado](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "116_SearchDropdownButtonUnfocused 0303")<br />Botón de lista desplegable de búsqueda no enfocado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -787,7 +772,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 
 **Botón de lista desplegable de búsqueda deshabilitado**
 
-![Botón de lista desplegable de búsqueda deshabilitado](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br />Botón de lista desplegable de búsqueda deshabilitado
+![Botón de lista desplegable Buscar en deshabilitado](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "123_SearchDropdownButtonDisabled 0303")<br />Botón de lista desplegable de búsqueda deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |  
@@ -798,7 +783,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 #### <a name="search-drop-down-lists"></a>Listas desplegables de búsqueda  
 El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeramente más complejo que otros menús desplegables en Visual Studio. Las secciones "opciones de búsqueda" y los "búsquedas sugeridas" pueden aparecer por sí sola o conjuntamente en el menú, y cada una de ellas se colorea por separado. Además, estas secciones están separadas por una línea cuando aparecen juntas y un borde rodea todo el menú desplegable.  
 
-![Lista desplegable de búsqueda (límite)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />Lista desplegable de búsqueda (límite)
+![Lista desplegable de búsqueda (límite)](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "124_SearchDropdownRedline 0303")<br />Lista desplegable de búsqueda (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -815,7 +800,7 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 
 **Sugiere búsquedas: estado predeterminado**
 
-![Predeterminado búsquedas sugeridas](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />Predeterminado búsquedas sugeridas  
+![Predeterminado búsquedas sugeridas](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "125_SearchSuggested 0303")<br />Predeterminado búsquedas sugeridas  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -824,7 +809,7 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 
 **Sugiere búsquedas: mantenga el mouse estado**
 
-![Búsquedas sugeridas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />Búsquedas sugeridas al mantener el mouse
+![Sugiere búsquedas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "128_SearchSuggestedHover 0303")<br />Búsquedas sugeridas al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -834,9 +819,9 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 
 **Opciones de búsqueda: estado predeterminado**
 
-![Casilla de verificación de búsqueda](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />Opciones predeterminadas de búsqueda (casilla)  
+![Casilla de verificación de búsqueda](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "126_SearchCheckbox 0303")<br />Opciones predeterminadas de búsqueda (casilla)  
 
-![Opciones de búsqueda](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303-127_SearchOptions")<br />Opciones predeterminadas de búsqueda (vínculo)  
+![Opciones de búsqueda](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "127_SearchOptions 0303")<br />Opciones predeterminadas de búsqueda (vínculo)  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -848,9 +833,9 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 
 **Opciones de búsqueda: mantenga el mouse estado**
 
-![Opciones de búsqueda (casilla) al mantener el mouse](../../extensibility/ux-guidelines/media/0303-129_searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br />Opciones de búsqueda (casilla) al mantener el mouse  
+![Opciones (casilla) de búsqueda al mantener el mouse](../../extensibility/ux-guidelines/media/0303-129_searchcheckboxhover.png "129_SearchCheckboxHover 0303")<br />Opciones de búsqueda (casilla) al mantener el mouse  
 
-![Opciones de búsqueda (vínculo) al mantener el mouse](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303-130_SearchOptionsHover")<br />Opciones de búsqueda (vínculo) al mantener el mouse  
+![Opciones (vínculo) de búsqueda al mantener el mouse](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "130_SearchOptionsHover 0303")<br />Opciones de búsqueda (vínculo) al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -861,9 +846,9 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 
 **Opciones de búsqueda: estado presionado**  
 
-![Presiona opciones de búsqueda (casilla)](../../extensibility/ux-guidelines/media/0303-131_searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br />Presiona opciones de búsqueda (casilla)   
+![Presiona opciones de búsqueda (casilla)](../../extensibility/ux-guidelines/media/0303-131_searchsuggestedpressed.png "131_SearchSuggestedPressed 0303")<br />Presiona opciones de búsqueda (casilla)   
 
-![Presiona opciones de búsqueda (vínculo)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303-132_SearchOptionsPressed")<br />Presiona opciones de búsqueda (vínculo)  
+![Presiona opciones de búsqueda (vínculo)](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "132_SearchOptionsPressed 0303")<br />Presiona opciones de búsqueda (vínculo)  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -875,7 +860,7 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 ###  <a name="BKMK_TreeView"></a>Vistas de árbol  
 Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explorador de servidores y la vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante nombres de colores de la `TreeView` categoría. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.  
 
-![Vista de árbol (límite)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Vista de árbol (límite)
+![Vista de árbol (límite)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "147_TreeViewRedline 0303")<br />Vista de árbol (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -884,7 +869,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: estado predeterminado**
 
-![Elemento de vista de árbol predeterminado](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303-148_TreeView")<br />Elemento de vista de árbol predeterminado
+![Elemento de vista de árbol predeterminado](../../extensibility/ux-guidelines/media/0303-148_treeview.png "148_TreeView 0303")<br />Elemento de vista de árbol predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -895,7 +880,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: mantenga el mouse estado**
 
-![Elemento de vista de árbol al mantener el mouse](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303-149_TreeViewHover")<br />Elemento de vista de árbol al mantener el mouse
+![Elemento de vista de árbol al mantener el mouse](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "149_TreeViewHover 0303")<br />Elemento de vista de árbol al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -906,7 +891,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: arrastre sobre el estado**
 
-![Arrastre el elemento de vista de árbol en](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303-150_TreeViewDragOver")<br />Arrastre el elemento de vista de árbol en  
+![Elemento de vista de arrastre del árbol sobre](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "150_TreeViewDragOver 0303")<br />Arrastre el elemento de vista de árbol en  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -917,7 +902,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: seleccionada, con el foco de estado**
 
-![Elemento de vista de árbol seleccionado y tiene el foco](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303-151_TreeViewFocused")<br />Elemento de vista de árbol seleccionado y tiene el foco
+![Selecciona y centra el elemento de vista de árbol](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "151_TreeViewFocused 0303")<br />Elemento de vista de árbol seleccionado y tiene el foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -928,7 +913,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: estado seleccionada, sin foco**  
 
-![Elemento de vista de árbol seleccionado y sin foco](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303-152_TreeViewUnfocused")<br />Elemento de vista de árbol seleccionado y sin foco
+![Elemento de vista de árbol seleccionado y sin foco](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "152_TreeViewUnfocused 0303")<br />Elemento de vista de árbol seleccionado y sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -939,7 +924,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: mantiene el mouse, seleccionado y centra estado**
 
-![Elemento de vista de árbol seleccionado y tiene el foco al mantener el mouse](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br />Elemento de vista de árbol seleccionado y tiene el foco al mantener el mouse  
+![Selecciona y centra el elemento de vista de árbol al mantener el mouse](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "153_TreeViewFocusedHover 0303")<br />Elemento de vista de árbol seleccionado y tiene el foco al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -950,7 +935,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 
 **Elemento de vista de árbol: estado de mantener el mouse sobre seleccionado y, sin foco**
 
-![Elemento de vista de árbol seleccionado y no enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br />Elemento de vista de árbol seleccionado y no enfocada al mantener el mouse  
+![Elemento de vista de árbol seleccionado y no enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "154_TreeViewUnfocusedHover 0303")<br />Elemento de vista de árbol seleccionado y no enfocada al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -964,7 +949,7 @@ Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explo
 ### <a name="background"></a>Fondo  
 El fondo del entorno consta de dos niveles. El nivel inferior es un color sólido que cubre todo el IDE. El nivel superior se encuentra debajo del área de comandos y entre los canales de ocultación automática de la ventana de herramientas en los extremos izquierdo y derecho del IDE. Las capas de fondo superior e inferior se establecen en el mismo color en los temas claro y oscuro.  
 
-![Fondo del shell de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Fondo del shell de Visual Studio (límite)
+![Fondo del shell de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "187_ShellBackgroundRedline 0303")<br />Fondo del shell de Visual Studio (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -988,7 +973,7 @@ El fondo del entorno consta de dos niveles. El nivel inferior es un color sólid
 ### <a name="command-shelf"></a>Área de comandos  
 Para los fondos del área de comandos se usan dos conjuntos de nombres de token: un conjunto para la ubicación donde se coloca la barra de menús y uno para la ubicación donde se colocan las barras de comandos. Un grupo individual de la barra de comandos tiene sus propios valores de color de fondo, que se describen con más detalle en la sección "Barra de comandos". El texto de la barra de menús y la barra de comandos se describe en las secciones de barra de menús y barra de comandos, respectivamente.  
 
-![Área de comandos de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Área de comandos de Visual Studio (límite)  
+![Área de comandos de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "188_CommandShelfRedline 0303")<br />Área de comandos de Visual Studio (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1014,7 +999,7 @@ Para los fondos del área de comandos se usan dos conjuntos de nombres de token:
 ## <a name="manifest-designer"></a>Diseñador de manifiestos  
 El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
 
-![Diseñador de manifiestos (límite)](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "0303-175_ManifestDesignerRedline")<br />Diseñador de manifiestos (límite)
+![Diseñador de manifiestos (límite)](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "175_ManifestDesignerRedline 0303")<br />Diseñador de manifiestos (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1058,7 +1043,7 @@ El Diseñador de manifiestos se creó para que resulte más fácil editar el arc
 ###  <a name="BKMK_CommandMenus"></a>Menús  
 Los menús pueden aparecer en varios lugares de Visual Studio: la barra de menús principal, insertada en ventanas de documento o herramienta o en el botón secundario en varias ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.  
 
-![Menús de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Menús de Visual Studio (límite)
+![Menús de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "000_MenuRedline 0303")<br />Menús de Visual Studio (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1068,7 +1053,7 @@ Los menús pueden aparecer en varios lugares de Visual Studio: la barra de menú
 #### <a name="menu-titles"></a>Títulos de menú  
 Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.  
 
-![Título de menú (límite)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "0303-001_MenuTitleRedline")<br />Título de menú (límite)  
+![Título de menú (límite)](../../extensibility/ux-guidelines/media/0303-001_menutitleredline.png "001_MenuTitleRedline 0303")<br />Título de menú (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1077,9 +1062,9 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 
 **Título de menú: estado predeterminado**
 
-![Título de menú predeterminado](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "0303-002_MenuTitleDefault")<br />Título de menú predeterminado
+![Título de menú de predeterminado](../../extensibility/ux-guidelines/media/0303-002_menutitledefault.png "002_MenuTitleDefault 0303")<br />Título de menú predeterminado
 
-![De forma predeterminada el título de menú con glifo](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br />De forma predeterminada el título de menú con glifo
+![Valor predeterminado el título de menú con glifo](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "003_MenuTitleWithGlyphDefault 0303")<br />De forma predeterminada el título de menú con glifo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1090,9 +1075,9 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 
 **Título de menú: mantenga el mouse estado**  
 
-![Título de menú al mantener el mouse](../../extensibility/ux-guidelines/media/0303-004_menutitlehover.png "0303-004_MenuTitleHover")<br />Título de menú al mantener el mouse  
+![Título de menú al mantener el mouse](../../extensibility/ux-guidelines/media/0303-004_menutitlehover.png "004_MenuTitleHover 0303")<br />Título de menú al mantener el mouse  
 
-![Título de menú con glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")<br />Título de menú con glifo al mantener el mouse
+![Título de menú con glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "005_MenuTitleWithGlyphHover 0303")<br />Título de menú con glifo al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1103,9 +1088,9 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 
 **Título de menú: estado presionado**  
 
-![Título de menú presionado](../../extensibility/ux-guidelines/media/0303-006_menutitlepressed.png "0303-006_MenuTitlePressed")<br />Título de menú presionado
+![Presiona el título de menú](../../extensibility/ux-guidelines/media/0303-006_menutitlepressed.png "006_MenuTitlePressed 0303")<br />Título de menú presionado
 
-![Presiona el título de menú con glifo](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br />Presiona el título de menú con glifo
+![Presiona el título de menú con glifo](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "007_MenuTitleWithGlyphPressed 0303")<br />Presiona el título de menú con glifo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1116,7 +1101,7 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 
 **Título de menú: estado deshabilitado**  
 
-![Título de menú deshabilitado con glifo](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br />Título de menú deshabilitado con glifo
+![Deshabilita el título de menú con glifo](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "008_MenuTitleWithGlyphDisabled 0303")<br />Título de menú deshabilitado con glifo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1137,7 +1122,7 @@ Un elemento de menú individual se compone del texto del menú y un icono opcion
 
 **Elementos de menú: estado predeterminado**
 
-![Elementos de menú predeterminado](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303-010_MenuDefault")<br />Elementos de menú predeterminado  
+![Valor predeterminado de elementos de menú](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "010_MenuDefault 0303")<br />Elementos de menú predeterminado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1151,9 +1136,9 @@ Un elemento de menú individual se compone del texto del menú y un icono opcion
 
 **Elementos de menú: protegió y seleccionó Estados**  
 
-![Menú activado](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "0303-011_MenuChecked")<br />Elemento de menú seleccionado
+![Menú activado](../../extensibility/ux-guidelines/media/0303-011_menuchecked.png "011_MenuChecked 0303")<br />Elemento de menú seleccionado
 
-![Menú seleccionado](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303-012_MenuSelected")<br />Elemento de menú seleccionado    
+![Menú seleccionado](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "012_MenuSelected 0303")<br />Elemento de menú seleccionado    
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1164,11 +1149,11 @@ Un elemento de menú individual se compone del texto del menú y un icono opcion
 
 **Elementos de menú: mantenga el mouse estado**  
 
-![Al mantener el mouse de menú](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />Elemento de menú al mantener el mouse
+![Al mantener el mouse de menú](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "013_MenuHover 0303")<br />Elemento de menú al mantener el mouse
 
-![Al mantener el mouse de menú activado](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303-014_MenuHoverChecked")<br />Comprueba el elemento de menú al mantener el mouse
+![Al mantener el mouse de menú comprueban](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "014_MenuHoverChecked 0303")<br />Comprueba el elemento de menú al mantener el mouse
 
-![Al mantener el mouse de menú seleccionado](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303-015_MenuHoverSelected")<br />Elemento de menú seleccionado al mantener el mouse
+![Al mantener el mouse de menú seleccionado](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "015_MenuHoverSelected 0303")<br />Elemento de menú seleccionado al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1182,9 +1167,9 @@ Un elemento de menú individual se compone del texto del menú y un icono opcion
 
 **Elementos de menú: estado deshabilitado**  
 
-![Menú deshabilitado](../../extensibility/ux-guidelines/media/0303-016_menudisabled.png "0303-016_MenuDisabled")<br />Elemento de menú deshabilitado
+![Menú deshabilitado](../../extensibility/ux-guidelines/media/0303-016_menudisabled.png "016_MenuDisabled 0303")<br />Elemento de menú deshabilitado
 
-![Menú deshabilitado activado](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303-017_MenuDisabledChecked")<br />Elemento de menú deshabilitado con la marca de verificación
+![Menú deshabilitado activado](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "017_MenuDisabledChecked 0303")<br />Elemento de menú deshabilitado con la marca de verificación
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1198,9 +1183,9 @@ Una barra de comandos puede aparecer en varios lugares en el IDE de Visual Studi
 
 En general, use siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. El uso del mecanismo estándar, garantiza que todos los detalles visuales se mostrarán correctamente y que los elementos interactivos se comportarán de forma coherente con otros controles de barra de comandos de Visual Studio. Sin embargo, si necesita crear su propia barra de comandos, asegúrese de diseñarla correctamente mediante los siguientes nombres de token.  
 
-![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "0303-018_CommandBarRedline")<br />Barra de comandos (límite)  
+![Límite de barra de comandos](../../extensibility/ux-guidelines/media/0303-018_commandbarredline.png "018_CommandBarRedline 0303")<br />Barra de comandos (límite)  
 
-![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "0303-019_OverflowButtonRedline")<br />Botón de desbordamiento (límite)  
+![Límite de botón de desbordamiento](../../extensibility/ux-guidelines/media/0303-019_overflowbuttonredline.png "019_OverflowButtonRedline 0303")<br />Botón de desbordamiento (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1210,7 +1195,7 @@ En general, use siempre la implementación de menús estándar proporcionada por
 #### <a name="command-bar-groups"></a>Grupos de la barra de comandos  
 Un grupo de la barra de comandos se compone de un conjunto relacionado de controles de barra de comandos y puede incluir cualquier número de botones, botones de expansión, menús desplegables, cuadros combinados o menús. Los colores de dichos controles se regulan mediante nombres de token independientes y se describen individualmente en esta guía. Se usa una línea divisoria para dividir un grupo de la barra de comandos en subgrupos relacionados.  
 
-![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "0303-020_CommandBarGroupRedline")<br />Grupo de la barra de comandos (límite)
+![Límite de grupo de la barra de comandos](../../extensibility/ux-guidelines/media/0303-020_commandbargroupredline.png "020_CommandBarGroupRedline 0303")<br />Grupo de la barra de comandos (límite)
 
 | Use … | No use … |
 | --- | --- |  
@@ -1227,9 +1212,9 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 | Separador | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
 
 #### <a name="command-icons"></a>Iconos de comando  
-![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "0303-021_CommandIconRedline1")<br />Icono de comando (límite)  
+![Límite de icono de comando](../../extensibility/ux-guidelines/media/0303-021_commandiconredline1.png "021_CommandIconRedline1 0303")<br />Icono de comando (límite)  
 
-![Límite de icono de comando con texto](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "0303-022_CommandIconRedline2")<br />Icono de comando con el texto (límite)  
+![Límite de icono de comando con texto](../../extensibility/ux-guidelines/media/0303-022_commandiconredline2.png "022_CommandIconRedline2 0303")<br />Icono de comando con el texto (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1238,7 +1223,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Icono de comando: estado predeterminado**  
 
-![Icono de comando predeterminado](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303-023_CommandIconDefault")<br />Icono de comando predeterminado
+![Icono predeterminado de comandos](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "023_CommandIconDefault 0303")<br />Icono de comando predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1248,7 +1233,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Icono de comando: estado predeterminado, seleccionada**
 
-![De forma predeterminada, el icono de comando seleccionado](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br />De forma predeterminada, el icono de comando seleccionado  
+![De forma predeterminada, el icono de comando seleccionado](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "024_CommandIconDefaultSelected 0303")<br />De forma predeterminada, el icono de comando seleccionado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1258,7 +1243,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Icono de comando: estados al mantener el mouse o el foco**  
 
-![Icono de comando al mantener el mouse o el foco](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303-025_CommandIconHover")<br />Icono de comando al mantener el mouse o el foco
+![Icono de comando al mantener el mouse o el foco](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "025_CommandIconHover 0303")<br />Icono de comando al mantener el mouse o el foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1268,7 +1253,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Icono de comando: estados al mantener el mouse o el foco, seleccionados**
 
-![Icono de comando seleccionado al mantener el mouse o el foco](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br />Icono de comando seleccionado al mantener el mouse o el foco
+![Selecciona el icono de comando al mantener el mouse o el foco](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "026_CommandIconHoverSelected 0303")<br />Icono de comando seleccionado al mantener el mouse o el foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1278,7 +1263,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Icono de comando: estado presionado**  
 
-![Icono de comando presionado](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303-027_CommandIconPressed")<br />Icono de comando presionado
+![Presiona el icono de comando](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "027_CommandIconPressed 0303")<br />Icono de comando presionado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1288,7 +1273,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Icono de comando: estado deshabilitado**  
 
-![Icono de comando deshabilitado](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303-028_CommandIconDisabled")<br />Icono de comando deshabilitado
+![Icono de comando deshabilitado](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "028_CommandIconDisabled 0303")<br />Icono de comando deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1301,7 +1286,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 > [!IMPORTANT]
 > Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color para [listas desplegables de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
 
-![Límite de cuadro combinado de barra de comandos](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />Cuadro combinado de barra de comandos (límite)  
+![Límite de cuadro combinado de la barra de comandos](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "029_ComboBoxRedline 0303")<br />Cuadro combinado de barra de comandos (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1310,7 +1295,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de entrada de cuadro de combinado de barra de comandos: estado predeterminado**
 
-![Campo de entrada de cuadro de combinado de barra de comandos](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />Campo de entrada de cuadro de combinado de barra de comandos  
+![Campo de entrada de cuadro de combinado de barra de comandos](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "030_ComboBoxInputField 0303")<br />Campo de entrada de cuadro de combinado de barra de comandos  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1321,7 +1306,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado predeterminado**  
 
-![Combinado cuadro colocar &#45; abajo botón](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />Botón de lista desplegable de barra de comandos
+![Combinado cuadro colocar &#45; abajo botón](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "031_ComboBoxDropdownButton 0303")<br />Botón de lista desplegable de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1330,7 +1315,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Lista desplegable de barra de comandos: estado predeterminado**
 
-![Lista desplegable de barra de comandos](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br />Lista desplegable de barra de comandos
+![Lista desplegable de barra de comandos](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "032_ComboBoxDropdownList 0303")<br />Lista desplegable de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1340,7 +1325,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de entrada de cuadro de combinado de barra de comandos: mantenga el mouse estado**  
 
-![Comando barra entrada campo de cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />Comando barra entrada campo de cuadro combinado al mantener el mouse  
+![Comando barra entrada campo de cuadro combinado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "033_ComboBoxInputFieldHover 0303")<br />Comando barra entrada campo de cuadro combinado al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1351,7 +1336,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Botón de lista desplegable de barra de comandos: mantenga el mouse estado**  
 
-![Botón de lista desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />Botón de lista desplegable de la barra de comandos al mantener el mouse
+![Botón de lista desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "034_ComboBoxDropdownButtonHover 0303")<br />Botón de lista desplegable de la barra de comandos al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1360,7 +1345,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Lista desplegable de barra de comandos: mantenga el mouse estado**
 
- ![Lista de desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />Lista de desplegable de barra de comandos al mantener el mouse  
+ ![Lista de desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "035_ComboBoxDropdownListHover 0303")<br />Lista de desplegable de barra de comandos al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1370,7 +1355,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Campo de entrada de cuadro de combinado de barra de comandos: centra estado**  
 
-![Centra el campo de entrada de cuadro de combinado de barra de comandos](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />Centra el campo de entrada de cuadro de combinado de barra de comandos
+![Centra el campo de entrada de cuadro combinado de la barra de comandos](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "036_ComboBoxInputFieldFocused 0303")<br />Centra el campo de entrada de cuadro de combinado de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1381,7 +1366,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: centra estado**  
 
-![Tiene el foco de la barra de botón de lista desplegable de comandos](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />Tiene el foco de la barra de botón de lista desplegable de comandos
+![Centra el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "037_ComboBoxDropdownButtonFocused 0303")<br />Tiene el foco de la barra de botón de lista desplegable de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1390,7 +1375,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Campo de entrada de cuadro de combinado de barra de comandos: estado presionado**  
 
-![Presiona el campo de entrada de cuadro de combinado de barra de comandos](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />Presiona el campo de entrada de cuadro de combinado de barra de comandos
+![Presiona comando barra campo de entrada de cuadro combinado](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "038_ComboBoxInputFieldPressed 0303")<br />Presiona el campo de entrada de cuadro de combinado de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1401,7 +1386,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado presionado**
 
-![Presiona el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />Presiona el botón de lista desplegable de la barra de comandos  
+![Presiona el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "039_ComboBoxDropdownButtonPressed 0303")<br />Presiona el botón de lista desplegable de la barra de comandos  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1410,7 +1395,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de entrada de cuadro de combinado de barra de comandos: estado deshabilitado**  
 
-![Barra campo de entrada de cuadro combinado de comandos deshabilitado](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br />Barra campo de entrada de cuadro combinado de comandos deshabilitado  
+![Deshabilita el campo de entrada de cuadro combinado de la barra de comandos](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "041_ComboBoxInputFieldDisabled 0303")<br />Barra campo de entrada de cuadro combinado de comandos deshabilitado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1421,7 +1406,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado deshabilitado**  
 
-![Barra botón desplegable de comandos deshabilitado](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />Barra botón desplegable de comandos deshabilitado
+![Deshabilita el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "040_ComboBoxDropdownButtonDisabled 0303")<br />Barra botón desplegable de comandos deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1433,7 +1418,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 > [!IMPORTANT]
 >  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color para [cuadros combinados de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
 
-![Lista desplegable de la barra de comandos (límite)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303-042_DropdownRedline")<br />Lista desplegable de la barra de comandos (límite)
+![Lista desplegable de la barra de comandos (límite)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "042_DropdownRedline 0303")<br />Lista desplegable de la barra de comandos (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1442,7 +1427,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de selección desplegable de barra de comandos: estado predeterminado**  
 
-![Campo de selección desplegable de barra de comandos predeterminado](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303-043_DropdownSelectionField")<br />Campo de selección desplegable de barra de comandos predeterminado  
+![Valor predeterminado de campo de selección de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "043_DropdownSelectionField 0303")<br />Campo de selección desplegable de barra de comandos predeterminado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1453,7 +1438,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado predeterminado**
 
-![Botón de lista desplegable de barra de comandos de manera predeterminada](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303-044_DropdownButton")<br />Botón de lista desplegable de barra de comandos de manera predeterminada  
+![Valor predeterminado de botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "044_DropdownButton 0303")<br />Botón de lista desplegable de barra de comandos de manera predeterminada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1462,7 +1447,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Lista desplegable de barra de comandos: estado predeterminado**
 
-![Lista de desplegable de barra de comandos predeterminada](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303-045_DropdownList")<br />Lista de desplegable de barra de comandos predeterminada  
+![Predeterminado de la lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "045_DropdownList 0303")<br />Lista de desplegable de barra de comandos predeterminada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1473,7 +1458,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de selección desplegable de barra de comandos: mantenga el mouse estado**  
 
-![Campo de selección desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br />Campo de selección desplegable de barra de comandos al mantener el mouse  
+![Campo de selección desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "046_DropdownSelectionFieldHover 0303")<br />Campo de selección desplegable de barra de comandos al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1484,7 +1469,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: mantenga el mouse estado**  
 
-![Botón de lista desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br />Botón de lista desplegable de la barra de comandos al mantener el mouse  
+![Botón de lista desplegable de la barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "047_DropdownButtonHover 0303")<br />Botón de lista desplegable de la barra de comandos al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1493,7 +1478,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Lista desplegable de barra de comandos: mantenga el mouse estado**  
 
-![Lista de desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303-048_DropdownListHover")<br />Lista de desplegable de barra de comandos al mantener el mouse  
+![Lista de desplegable de barra de comandos al mantener el mouse](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "048_DropdownListHover 0303")<br />Lista de desplegable de barra de comandos al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1503,7 +1488,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Campo de selección desplegable de barra de comandos: estado presionado**  
 
-![Colocar &#45; hacia abajo del campo de selección presionado](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br />Presiona comando barra campo de selección desplegable
+![Colocar &#45; hacia abajo del campo de selección presionada](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "049_DropdownSelectionFieldPressed 0303")<br />Presiona comando barra campo de selección desplegable
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1514,7 +1499,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado presionado**
 
-![Presiona el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br />Presiona el botón de lista desplegable de la barra de comandos  
+![Presiona el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "050_DropdownButtonPressed 0303")<br />Presiona el botón de lista desplegable de la barra de comandos  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1523,7 +1508,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Campo de selección desplegable de barra de comandos: estado deshabilitado**  
 
-![Comando deshabilitado barra campo de selección desplegable](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />Comando deshabilitado barra campo de selección desplegable
+![Deshabilita el campo de selección de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "051_DropdownSelectionFieldDisabled 0303")<br />Comando deshabilitado barra campo de selección desplegable
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1534,7 +1519,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado deshabilitado**
 
-![Barra botón desplegable de comandos deshabilitado](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")<br />Barra botón desplegable de comandos deshabilitado
+![Deshabilita el botón de lista desplegable de la barra de comandos](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "052_DropdownButtonDisabled 0303")<br />Barra botón desplegable de comandos deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1544,7 +1529,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 #### <a name="command-bar-split-buttons"></a>Botones de expansión de la barra de comandos
 Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Listas de lista desplegable del botón de expansión son implementaciones de [barra de menús de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
 
-![Límite de botón de división](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />Botón de expansión de la barra de comandos (límite)  
+![Límite de botón de expansión](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "053_SplitButtonRedline 0303")<br />Botón de expansión de la barra de comandos (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1553,7 +1538,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 
 **Botón de expansión de la barra de comandos: estado predeterminado**  
 
-![Botón de expansión de la barra de comandos de manera predeterminada](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303-054_SplitButton")<br />Botón de expansión de la barra de comandos de manera predeterminada  
+![Predeterminado de botón de expansión de la barra de comandos](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "054_SplitButton 0303")<br />Botón de expansión de la barra de comandos de manera predeterminada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1565,7 +1550,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 
 **Botón de expansión de la barra de comandos: mantenga el mouse estado**  
 
-![Botón al mantener el mouse de expansión de la barra de comandos](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303-055_SplitButtonHover")<br />Botón al mantener el mouse de expansión de la barra de comandos
+![Botón al mantener el mouse de expansión de la barra de comandos](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "055_SplitButtonHover 0303")<br />Botón al mantener el mouse de expansión de la barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1577,7 +1562,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 
 **Botón de expansión de la barra de comandos: estado presionado**  
 
-![Botón de expansión de la barra de comandos presionado](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />Botón de expansión de la barra de comandos presionado  
+![Presiona el botón de expansión de la barra de comandos](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "056_SplitButtonPressed 0303")<br />Botón de expansión de la barra de comandos presionado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1589,7 +1574,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 
 **Botón de expansión de la barra de comandos: estado deshabilitado**
 
-![Botón de expansión de la barra de comandos deshabilitado](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />Botón de expansión de la barra de comandos deshabilitado
+![Deshabilita el botón de expansión de la barra de comandos](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "057_SplitButtonDisabled 0303")<br />Botón de expansión de la barra de comandos deshabilitado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1602,7 +1587,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 #### <a name="command-bar-more-options-and-overflow-buttons"></a>Botones de comando de la barra "Más opciones" y "Desbordamiento"  
 El botón "Más opciones" se usa cuando un grupo de la barra de comandos se puede personalizar al agregar o quitar botones relacionados de barra de comandos. El botón "Desbordamiento" aparece cuando una barra de comandos se trunca debido a la falta de espacio horizontal y, al hacer clic en él, muestra un menú que contiene los botones de la barra de comandos que no pueden mostrarse. Los colores para estos dos botones están controlados por el mismo conjunto de nombres de token.  
 
-![Botón "Más opciones" de la barra de comandos (límite)](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />Botón "Más opciones" de la barra de comandos (límite)  
+![Botón "Más opciones" de la barra de comandos (límite)](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "058_MoreOptionsRedline 0303")<br />Botón "Más opciones" de la barra de comandos (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1610,9 +1595,9 @@ El botón "Más opciones" se usa cuando un grupo de la barra de comandos se pued
 
 **Barra de comandos "Más opciones" y 'un Overflow' botones: estado predeterminado**  
 
-![Barra de comandos "Más opciones" botón predeterminados](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />Barra de comandos "Más opciones" botón predeterminados
+![Predeterminados botón "Más opciones" de la barra de comandos](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "059_MoreOptions 0303")<br />Barra de comandos "Más opciones" botón predeterminados
 
-![Valor predeterminado de "Desbordamiento" botón de barra de comandos](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />Valor predeterminado de "Desbordamiento" botón de barra de comandos
+![Valor predeterminado 'Overflow' botón de barra de comandos](../../extensibility/ux-guidelines/media/0303-060_overflow.png "060_Overflow 0303")<br />Valor predeterminado de "Desbordamiento" botón de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1621,9 +1606,9 @@ El botón "Más opciones" se usa cuando un grupo de la barra de comandos se pued
 
 **Barra de comandos "Más opciones" y 'un Overflow' botones: mantenga el mouse estado**
 
-![Botón de "Más opciones" de desplazamiento de la barra de comandos](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />Botón de "Más opciones" de desplazamiento de la barra de comandos  
+![Botón de "Más opciones" de desplazamiento de la barra de comandos](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "061_MoreOptionsHover 0303")<br />Botón de "Más opciones" de desplazamiento de la barra de comandos  
 
-![Botón de la barra de comandos 'Overflow' al mantener el mouse](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />Botón de la barra de comandos 'Overflow' al mantener el mouse   
+![Botón de la barra de comandos 'Overflow' al mantener el mouse](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "062_OverflowOptions 0303")<br />Botón de la barra de comandos 'Overflow' al mantener el mouse   
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1632,9 +1617,9 @@ El botón "Más opciones" se usa cuando un grupo de la barra de comandos se pued
 
 **Barra de comandos "Más opciones" y 'un Overflow' botones: estado presionado**  
 
-![Presiona el botón "Más opciones" de la barra de comandos](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />Presiona el botón "Más opciones" de la barra de comandos  
+![Presiona el botón "Más opciones" de la barra de comandos](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "063_MoreOptionsPressed 0303")<br />Presiona el botón "Más opciones" de la barra de comandos  
 
-![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />Presiona el botón de 'un Overflow' de barra de comandos  
+![Desbordamiento presionado](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "064_OverflowPressed 0303")<br />Presiona el botón de 'un Overflow' de barra de comandos  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1649,9 +1634,9 @@ Al utilizar tokens de color de ventana de documento, tenga cuidado al usarlos ú
 ### <a name="document-window-frames"></a>Marcos de ventana de documento  
 Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una ventana independiente. Cuando una ventana de documento está flotante fuera del IDE, todavía se encuentra en un depósito de documento y tiene fondo, borde, texto y colores de pestaña son los mismos que cuando son parte del IDE. Sin embargo, el documento se encuentra dentro de un marco que tiene su propio fondo, borde y colores de texto. Cuando las ventanas de herramientas se acoplan en el cuadro del documento, heredan el comportamiento y el color de los nombres de token de ventana de documento para sus pestañas.  
 
-![Ventana de documento acoplado (límite)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />Ventana de documento acoplado (límite)  
+![Ventana de documento acoplado (límite)](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "065_DockedDocumentWindowRedline 0303")<br />Ventana de documento acoplado (límite)  
 
-![Ventana de documento flotante (límite)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />Ventana de documento flotante (límite)  
+![Ventana de documento flotante (límite)](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "066_FloatingDocumentWindowRedline 0303")<br />Ventana de documento flotante (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1667,7 +1652,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 
 **Tiene el foco, marco de ventana de documento flotante: estado predeterminado**
 
-![Valor predeterminado con el foco, marco de ventana de documento flotante](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />Valor predeterminado con el foco, marco de ventana de documento flotante
+![Predeterminado centrada, marco de ventana de documento flotante](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "067_FrameFocused 0303")<br />Valor predeterminado con el foco, marco de ventana de documento flotante
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1679,7 +1664,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 
 **Marco de ventana de documento flotante, sin foco: estado predeterminado**  
 
-![Valor predeterminado de marco de ventana de documento flotante, sin foco](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />Valor predeterminado de marco de ventana de documento flotante, sin foco
+![Marco de ventana de documento flotante, sin foco predeterminado](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "068_FrameUnfocused 0303")<br />Valor predeterminado de marco de ventana de documento flotante, sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1691,7 +1676,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 
 **Tiene el foco, marco de ventana de documento flotante: mantenga el mouse estado**
 
-![Tiene el foco, marco de ventana de documento flotante al mantener el mouse](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />Tiene el foco, marco de ventana de documento flotante al mantener el mouse  
+![Tiene el foco, marco de ventana de documento flotante al mantener el mouse](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "069_FrameFocusedHover 0303")<br />Tiene el foco, marco de ventana de documento flotante al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1701,7 +1686,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 
 **Marco de ventana de documento flotante, sin foco: mantenga el mouse estado**  
 
-![Marco de ventana de documento flotante no enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />Marco de ventana de documento flotante no enfocada al mantener el mouse
+![Marco de ventana de documento flotante no enfocada al mantener el mouse](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "070_FrameUnfocusedHover 0303")<br />Marco de ventana de documento flotante no enfocada al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1711,7 +1696,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 
 **Tiene el foco, marco de ventana de documento flotante: estado presionado**  
 
-![Tiene el foco, flotante marco de ventana de documento en presione](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />Tiene el foco, flotante marco de ventana de documento en presione
+![Tiene el foco, flotante marco de ventana de documento en presione](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "071_FrameFocusedPressed 0303")<br />Tiene el foco, flotante marco de ventana de documento en presione
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1722,7 +1707,7 @@ Las ventanas de documento pueden estar acopladas en el IDE o flotantes como una 
 ### <a name="document-tabs"></a>Pestañas de documentos  
 Las pestañas de documentos se colocan en el canal de pestañas para indicar los documentos que están abiertos actualmente, así como el documento actual activo o seleccionado. Las ventanas de herramientas también se pueden acoplar en el canal de pestañas de documentos si el usuario las coloca allí. En este caso, usan los mismos colores de pestaña que las ventanas de documento. Si va a crear interfaz de usuario que desea que siempre coincida con los colores de las ventanas de documento (lo que incluye las actualizaciones de temas o si se instalan nuevos temas), entonces haga referencia a estos tokens de color.  
 
-![Fichas de documentos (límite)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "0303-072_DocumentTabRedline")<br />Fichas de documentos (límite)
+![Fichas de documentos (límite)](../../extensibility/ux-guidelines/media/0303-072_documenttabredline.png "072_DocumentTabRedline 0303")<br />Fichas de documentos (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1735,7 +1720,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 
 -   Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.  
 
-![Pestaña de documento abierto (límite)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Pestaña de documento abierto (límite)
+![Pestaña de documento abierto (límite)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "073_OpenDocumentTabRedline 0303")<br />Pestaña de documento abierto (límite)
 
 | Use …  | No use … |
 | --- | --- |
@@ -1744,7 +1729,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 
 **Pestaña de documento seleccionada, con foco**  
 
-![Pestaña de documento seleccionada, con foco](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303-074_SelectedTabFocused")<br />Pestaña de documento seleccionada, con foco
+![Selecciona, centra la pestaña de documento](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "074_SelectedTabFocused 0303")<br />Pestaña de documento seleccionada, con foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1755,7 +1740,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 
 **Pestaña de documento seleccionada, sin foco**
 
-![Pestaña de documento seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br />Pestaña de documento seleccionada, sin foco
+![Pestaña de documento seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "075_SelectedTabUnfocused 0303")<br />Pestaña de documento seleccionada, sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1766,7 +1751,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 
 **Pestaña de documento en segundo plano: estado predeterminado**  
 
-![Pestaña de documento en segundo plano de forma predeterminada](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303-076_BackgroundTab")<br />Pestaña de documento en segundo plano de forma predeterminada  
+![Pestaña de documento en segundo plano predeterminado](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "076_BackgroundTab 0303")<br />Pestaña de documento en segundo plano de forma predeterminada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1776,7 +1761,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 
 **Pestaña de documento en segundo plano: mantenga el mouse estado**  
 
-![Pestaña de documento de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303-077_BackgroundTabHover")<br />Pestaña de documento de segundo plano al mantener el mouse  
+![Pestaña de documento de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "077_BackgroundTabHover 0303")<br />Pestaña de documento de segundo plano al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1787,7 +1772,7 @@ Cada documento abierto tiene una pestaña en el canal de pestañas de documentos
 #### <a name="preview-tab"></a>Pestaña de vista previa  
 También se denomina una pestaña "provisional". La pestaña de vista previa aparece en la parte derecha del canal de pestañas de documentos cuando el usuario hace clic en un elemento de la ventana de herramientas del Explorador de soluciones. Funciona como una vista previa del documento y también proporciona al usuario la posibilidad de mantener el documento abierto en la parte izquierda del canal de pestañas de documentos. Solo se puede abrir una pestaña de vista previa a la vez. Las pestañas de vista previa tienen tanto el estado seleccionado como en segundo plano al igual que las pestañas abiertas y, además, pueden estar con y sin foco en su estado activo.  
 
-![Ficha Vista previa (límite)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "0303-078_PreviewTabRedline")<br />Ficha Vista previa (límite)
+![Ficha Vista previa (límite)](../../extensibility/ux-guidelines/media/0303-078_previewtabredline.png "078_PreviewTabRedline 0303")<br />Ficha Vista previa (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1796,7 +1781,7 @@ También se denomina una pestaña "provisional". La pestaña de vista previa apa
 
 **Ficha Vista previa tiene el foco, seleccionada**  
 
-![Ficha Vista previa tiene el foco, seleccionada](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303-079_PreviewTabFocused")<br />Ficha Vista previa tiene el foco, seleccionada
+![Ficha Vista previa tiene el foco, seleccionado](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "079_PreviewTabFocused 0303")<br />Ficha Vista previa tiene el foco, seleccionada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1807,7 +1792,7 @@ También se denomina una pestaña "provisional". La pestaña de vista previa apa
 
 **Ficha Vista previa seleccionada, sin foco**  
 
-![Ficha Vista previa seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br />Ficha Vista previa seleccionada, sin foco
+![Ficha Vista previa seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "080_PreviewTabUnfocused 0303")<br />Ficha Vista previa seleccionada, sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1818,7 +1803,7 @@ También se denomina una pestaña "provisional". La pestaña de vista previa apa
 
 **Pestaña de vista previa en segundo plano: estado predeterminado**  
 
-![Pestaña de vista previa en segundo plano de forma predeterminada](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br />Pestaña de vista previa en segundo plano de forma predeterminada  
+![Pestaña de vista previa en segundo plano predeterminado](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "081_PreviewBackgroundTab 0303")<br />Pestaña de vista previa en segundo plano de forma predeterminada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1828,7 +1813,7 @@ También se denomina una pestaña "provisional". La pestaña de vista previa apa
 
 **Pestaña de vista previa en segundo plano: mantenga el mouse estado**  
 
-![Pestaña de vista previa de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br />Pestaña de vista previa de segundo plano al mantener el mouse  
+![Pestaña de vista previa de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "082_PreviewBackgroundTabHover 0303")<br />Pestaña de vista previa de segundo plano al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1837,9 +1822,9 @@ También se denomina una pestaña "provisional". La pestaña de vista previa apa
 | Borde | `Environment.FileTabProvisionalHoverBorder`<br />(Establecido en el mismo color que el fondo). |
 
 #### <a name="document-overflow-button"></a>Botón de desbordamiento de documento  
-El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. El menú desplegable de desbordamiento de documento, que está controlado por el [barra de menú de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) colores, muestra una lista de todos los documentos abiertos, visibles y ocultos y los cambios de glifo de desbordamiento según si se muestran todos los documentos abiertos en el canal de pestañas.  
+El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. El menú desplegable de desbordamiento de documento, que está controlado por el [barra de menú de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus) colores, muestra una lista de todos los documentos abiertos, visibles y ocultos y los cambios de glifo de desbordamiento según si son todos los documentos abiertos se muestran en el canal de pestañas.  
 
-![Botón de desbordamiento de documento (límite)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "0303-083_OverflowRedline")<br />Botón de desbordamiento de documento (límite)
+![Botón de desbordamiento de documento (límite)](../../extensibility/ux-guidelines/media/0303-083_overflowredline.png "083_OverflowRedline 0303")<br />Botón de desbordamiento de documento (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1848,7 +1833,7 @@ El botón de desbordamiento de documento se muestra si hay uno o varios document
 
 **Botón de desbordamiento de documento: estado predeterminado**  
 
-![Botón de desbordamiento de documento predeterminado](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303-084_Overflow")<br />Botón de desbordamiento de documento predeterminado
+![Botón de desbordamiento de documento predeterminado](../../extensibility/ux-guidelines/media/0303-084_overflow.png "084_Overflow 0303")<br />Botón de desbordamiento de documento predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1858,7 +1843,7 @@ El botón de desbordamiento de documento se muestra si hay uno o varios document
 
 **Botón de desbordamiento de documento: mantenga el mouse estado**
 
-![Botón de desbordamiento de documento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303-085_OverflowHover")<br />Botón de desbordamiento de documento al mantener el puntero
+![Botón de desbordamiento de documento al mantener el mouse](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "085_OverflowHover 0303")<br />Botón de desbordamiento de documento al mantener el puntero
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1868,7 +1853,7 @@ El botón de desbordamiento de documento se muestra si hay uno o varios document
 
 **Botón de desbordamiento de documento: estado presionado**  
 
-![Botón de desbordamiento de documento en presione](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303-086_OverflowPressed")<br />Botón de desbordamiento de documento en presione
+![Botón de desbordamiento de documento en presione](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "086_OverflowPressed 0303")<br />Botón de desbordamiento de documento en presione
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1879,7 +1864,7 @@ El botón de desbordamiento de documento se muestra si hay uno o varios document
 ### <a name="tagging"></a>Etiquetado  
 Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras clave de búsqueda con fines de seguimiento. Por ejemplo, los desarrolladores y los administradores de proyectos pueden usar Team Foundation Server (TFS) para etiquetar elementos de trabajo. Las tablas siguientes proporcionan nombres de colores para la etiqueta en sí y el glifo del "icono de cerrar" que aparecen en los estados Al desplazar el puntero y Seleccionado.  
 
-![Etiquetado en Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-176_taggingredline.png "0303-176_TaggingRedline")<br />Etiquetado en Visual Studio (límite)  
+![Etiquetado en Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-176_taggingredline.png "176_TaggingRedline 0303")<br />Etiquetado en Visual Studio (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -1889,7 +1874,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Etiqueta: estado predeterminado**
 
-![Etiqueta predeterminada](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303-177_Tag")<br />Etiqueta predeterminada
+![Valor predeterminado de etiqueta](../../extensibility/ux-guidelines/media/0303-177_tag.png "177_Tag 0303")<br />Etiqueta predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |  
@@ -1898,7 +1883,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Etiquetas: estado de desplazamiento**  
 
-![Etiqueta al mantener el mouse](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303-178_TagHover")<br />Etiqueta al mantener el mouse  
+![Etiqueta al mantener el mouse](../../extensibility/ux-guidelines/media/0303-178_taghover.png "178_TagHover 0303")<br />Etiqueta al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |  
@@ -1907,7 +1892,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Etiqueta: estado presionado**
 
-![Etiqueta presionada](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303-179_TagPressed")<br />Etiqueta presionada  
+![Presiona etiqueta](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "179_TagPressed 0303")<br />Etiqueta presionada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1916,7 +1901,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Etiqueta: estado seleccionado**
 
-![Etiqueta seleccionada](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303-180_TagSelected")<br />Etiqueta seleccionada  
+![Selecciona la etiqueta](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "180_TagSelected 0303")<br />Etiqueta seleccionada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1927,7 +1912,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Cerrar (&times;) glifo de etiqueta: estado predeterminado**
 
-![Predeterminado cerrar (&times;) glifo de etiqueta](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />Predeterminado cerrar (&times;) glifo de etiqueta
+![Predeterminado cerrar (&times;) glifo de etiqueta](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "181_TagGlyph 0303")<br />Predeterminado cerrar (&times;) glifo de etiqueta
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |  
@@ -1936,7 +1921,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Cerrar (&times;) glifo de etiqueta: mantenga el mouse estado**
 
-![Cerrar (&times;) glifo de etiqueta al mantener el mouse](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />Cerrar (&times;) glifo de etiqueta al mantener el mouse
+![Cerrar (&times;) glifo de etiqueta al mantener el mouse](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "182_TagGlyphHover 0303")<br />Cerrar (&times;) glifo de etiqueta al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1946,7 +1931,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Cerrar (&times;) glifo de etiqueta: estado presionado**
 
-![Presiona cerrar (&times;) glifo de etiqueta](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />Presiona cerrar (&times;) glifo de etiqueta
+![Presiona cerrar (&times;) glifo de etiqueta](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "183_TagGlyphPressed 0303")<br />Presiona cerrar (&times;) glifo de etiqueta
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1956,7 +1941,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Selecciona la etiqueta de cierre (&times;) glifo: estado predeterminado**
 
-![Predeterminado de la etiqueta seleccionada con cerrar (&times;) glifo](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />Predeterminado de la etiqueta seleccionada con cerrar (&times;) glifo
+![Predeterminado de la etiqueta seleccionada con cerrar (&times;) glifo](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "184_TagSelected 0303")<br />Predeterminado de la etiqueta seleccionada con cerrar (&times;) glifo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1965,7 +1950,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Selecciona la etiqueta de cierre (&times;) glifo: mantenga el mouse estado**  
 
-![Selecciona la etiqueta de cierre (&times;) glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Selecciona la etiqueta de cierre (&times;) glifo al mantener el mouse  
+![Selecciona la etiqueta de cierre (&times;) glifo al mantener el mouse](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "185_TagSelectedHover 0303")<br />Selecciona la etiqueta de cierre (&times;) glifo al mantener el mouse  
 
 
 | Elemento | Nombre del token: Category.color |
@@ -1976,7 +1961,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 
 **Selecciona la etiqueta de cierre (&times;) glifo: estado presionado**  
 
-![Selecciona, presiona la etiqueta de cierre (&times;) glifo](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />Selecciona, presiona la etiqueta de cierre (&times;) glifo
+![Selecciona, presiona la etiqueta de cierre (&times;) glifo](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "186_TagSelectedPressed 0303")<br />Selecciona, presiona la etiqueta de cierre (&times;) glifo
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1987,7 +1972,7 @@ Visual Studio admite el etiquetado, lo que permite al usuario declarar palabras 
 ## <a name="tool-windows"></a>Ventanas de herramientas  
 No hay ninguna necesidad de replicar las ventanas de herramientas, porque le proporciona el entorno de Visual Studio. Sin embargo, quizá prefiera aprovechar los colores que se usan en las ventanas de herramientas para que la interfaz de usuario se muestre siempre coherente con esta parte del entorno de Visual Studio.  
 
-![Ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />Ventana de herramientas (límite)
+![Ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "087_ToolWindowRedline 0303")<br />Ventana de herramientas (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -1996,7 +1981,7 @@ No hay ninguna necesidad de replicar las ventanas de herramientas, porque le pro
 ### <a name="tool-window-frame"></a>Marco de ventana de herramientas  
 Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pueden estar en uno de varios estados diferentes. Si una ventana de herramientas está abierta, se puede asignar a cualquiera de los cuatro lados del área del documento. Estas ventanas también pueden flotar fuera del IDE, lo que permite reubicarlas en cualquier lugar dentro de la pantalla del usuario. Las ventanas flotantes siempre se colocan arriba del IDE. Por último, las ventanas de herramientas se pueden acoplar como ventanas de documento y aparecen como una pestaña en el cuadro de documento. Las ventanas de herramientas que se han acoplado como ventanas de documento se colorean en parte mediante los nombres de token de ventana de documento.  
 
-![Marco de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />Marco de ventana de herramientas (límite)
+![Marco de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "088_ToolWindowFrameRedline 0303")<br />Marco de ventana de herramientas (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -2004,7 +1989,7 @@ Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pue
 
 **Ventana de herramientas acoplada**  
 
-![Ventana de herramientas acoplada](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />Ventana de herramientas acoplada  
+![Ventana de herramientas acoplada](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "089_ToolWindowDocked 0303")<br />Ventana de herramientas acoplada  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2013,7 +1998,7 @@ Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pue
 
 **Flotante, con foco la ventana de herramientas**
 
-![Flotante, con foco la ventana de herramientas](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />Flotante, con foco la ventana de herramientas
+![Flotante, con foco la ventana de herramientas](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "090_ToolWindowFocused 0303")<br />Flotante, con foco la ventana de herramientas
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2022,7 +2007,7 @@ Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pue
 
 **Flotante, ventana de herramientas no enfocado**  
 
-![Flotante, ventana de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />Flotante, ventana de herramientas no enfocado  
+![Ventana de herramientas flotante, sin foco](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "091_ToolWindowUnfocused 0303")<br />Flotante, ventana de herramientas no enfocado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2032,7 +2017,7 @@ Las ventanas de herramientas de Visual Studio se usan para diversas tareas y pue
 ### <a name="toolbox-like-windows"></a>Ventanas de cuadro de herramientas
 El cuadro de herramientas es una de las ventanas de herramientas comunes usados con más frecuencia en Visual Studio. Es esencialmente un control de árbol con un tema especial y un estilo aplicado.  
 
-![Ventana de tipo de cuadro de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />Ventana de tipo de cuadro de herramientas (límite)
+![Ventana de tipo de cuadro de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "189_ToolboxRedline 0303")<br />Ventana de tipo de cuadro de herramientas (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -2040,9 +2025,9 @@ El cuadro de herramientas es una de las ventanas de herramientas comunes usados 
 
 **Nodos de cuadro de herramientas: estado predeterminado**
 
-![Nodo de elemento primario de cuadro de herramientas predeterminado](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "0303-190_ToolboxParentNode")<br />Nodo de elemento primario de cuadro de herramientas predeterminado
+![Nodo de elemento primario de cuadro de herramientas predeterminado](../../extensibility/ux-guidelines/media/0303-190_toolboxparentnode.png "190_ToolboxParentNode 0303")<br />Nodo de elemento primario de cuadro de herramientas predeterminado
 
-![Nodo de elemento secundario de cuadro de herramientas predeterminado](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303-191_ToolboxChildNode")<br />Nodo de elemento secundario de cuadro de herramientas predeterminado
+![Nodo de elemento secundario de cuadro de herramientas predeterminado](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "191_ToolboxChildNode 0303")<br />Nodo de elemento secundario de cuadro de herramientas predeterminado
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2054,7 +2039,7 @@ El cuadro de herramientas es una de las ventanas de herramientas comunes usados 
 
 **Nodos secundarios de cuadro de herramientas: mantenga el mouse estado**
 
-![Nodo secundario de cuadro de herramientas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br />Nodo secundario de cuadro de herramientas al mantener el mouse  
+![Nodo secundario de cuadro de herramientas al mantener el mouse](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "192_ToolboxChildNodeHover 0303")<br />Nodo secundario de cuadro de herramientas al mantener el mouse  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2064,9 +2049,9 @@ El cuadro de herramientas es una de las ventanas de herramientas comunes usados 
 
 **Cuadro de herramientas nodos seleccionados: centra estado**
 
-![Nodo primario de cuadro de herramientas tiene el foco, seleccionada](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />Nodo primario de cuadro de herramientas tiene el foco, seleccionada  
+![Nodo primario de cuadro de herramientas tiene el foco, seleccionado](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "193_ToolboxParentNodeFocused 0303")<br />Nodo primario de cuadro de herramientas tiene el foco, seleccionada  
 
-![Nodo secundario de cuadro de herramientas tiene el foco, seleccionada](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />Nodo secundario de cuadro de herramientas tiene el foco, seleccionada
+![Nodo secundario de cuadro de herramientas tiene el foco, seleccionado](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "194_ToolboxChildNodeFocused 0303")<br />Nodo secundario de cuadro de herramientas tiene el foco, seleccionada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2077,9 +2062,9 @@ El cuadro de herramientas es una de las ventanas de herramientas comunes usados 
 
 **Cuadro de herramientas nodos seleccionados: estado sin foco**
 
-![Nodo primario de cuadro de herramientas seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />Nodo primario de cuadro de herramientas seleccionada, sin foco  
+![Nodo primario de cuadro de herramientas seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "195_ToolboxParentNodeUnfocused 0303")<br />Nodo primario de cuadro de herramientas seleccionada, sin foco  
 
-![Nodo secundario de cuadro de herramientas seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />Nodo secundario de cuadro de herramientas seleccionada, sin foco  
+![Nodo secundario de cuadro de herramientas seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "196_ToolboxChildNodeUnfocused 0303")<br />Nodo secundario de cuadro de herramientas seleccionada, sin foco  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2091,7 +2076,7 @@ El cuadro de herramientas es una de las ventanas de herramientas comunes usados 
 ### <a name="tool-window-title-bar"></a>Barra de título de la ventana de herramientas  
 El borde de la barra de título no es realmente un borde, es una línea gruesa en la parte superior de la barra de título. No tiene un nombre de símbolo (token) de su estado sin foco.  
 
-![Barra de título de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />Barra de título de ventana de herramientas (límite)
+![Barra de título de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "092_ToolWindowTitleBarRedline 0303")<br />Barra de título de ventana de herramientas (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -2099,7 +2084,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Barra de título con foco**
 
-![Barra de título con foco](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303-093_TitleBarFocused")<br />Barra de título con foco
+![Barra de título con foco](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "093_TitleBarFocused 0303")<br />Barra de título con foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2110,7 +2095,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Barra de título no enfocado**  
 
-![Barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303-094_TitleBarUnfocused")<br />Barra de título sin foco
+![Barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "094_TitleBarUnfocused 0303")<br />Barra de título sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2120,7 +2105,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 | Controlador de arrastre | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>Botones de barra de título de ventana de herramienta  
-![Botón de la barra de título (límite)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />Botón de la barra de título (límite)  
+![Botón de la barra de título (límite)](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "095_TitleBarButtonRedline 0303")<br />Botón de la barra de título (límite)  
 
 | Use … | No use … |
 | --- | --- |
@@ -2129,7 +2114,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Centra botones de la barra de título: estado predeterminado**
 
-![De forma predeterminada, los botones de barra de título con foco](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />De forma predeterminada, los botones de barra de título con foco  
+![El valor predeterminado, centrado botones de la barra de título](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "096_TitleBarButtonFocused 0303")<br />De forma predeterminada, los botones de barra de título con foco  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2139,7 +2124,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Botones de la barra de título no enfocado: estado predeterminado**
 
-![De forma predeterminada, los botones de barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />De forma predeterminada, los botones de barra de título no enfocado    
+![De forma predeterminada, los botones de la barra de título no enfocado](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "097_TitleBarButtonUnfocused 0303")<br />De forma predeterminada, los botones de barra de título no enfocado    
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2149,7 +2134,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Centra botones de la barra de título: mantenga el mouse estado**  
 
-![Botones de la barra de título enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br />Botones de la barra de título enfocado al mantener el mouse
+![Botones de la barra de título se centra en mantener el mouse](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "098_TitleBarButtonFocusedHover 0303")<br />Botones de la barra de título enfocado al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2159,7 +2144,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Botones de la barra de título no enfocado: mantenga el mouse estado**  
 
-![Botones de la barra de título no enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br />Botones de la barra de título no enfocado al mantener el mouse
+![Botones de la barra de título no enfocado al mantener el mouse](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "099_TitleBarButtonUnfocusedHover 0303")<br />Botones de la barra de título no enfocado al mantener el mouse
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2169,7 +2154,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Centra botones de la barra de título: estado presionado**
 
-![Botones de la barra de título con foco en presione](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br />Botones de la barra de título con foco en presione
+![Botones de la barra de título se centra en presione](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "100_TitleBarButtonFocusedPressed 0303")<br />Botones de la barra de título con foco en presione
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2179,7 +2164,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Botones de la barra de título no enfocado: estado presionado**
 
-![Botones de la barra de título no enfocado en presione](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br />Botones de la barra de título no enfocado en presione  
+![Botones de la barra de título no enfocado en presione](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "101_TitleBarButtonUnfocusedPressed 0303")<br />Botones de la barra de título no enfocado en presione  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2188,7 +2173,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 | Borde | `Environment.ToolWindowButtonDownBorder` |
 
 ### <a name="tool-window-tabs"></a>Pestañas de ventana de herramientas  
-![Pestaña de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "0303-102_ToolWindowTabRedline")<br />Pestaña de ventana de herramientas (límite)
+![Pestaña de ventana de herramientas (límite)](../../extensibility/ux-guidelines/media/0303-102_toolwindowtabredline.png "102_ToolWindowTabRedline 0303")<br />Pestaña de ventana de herramientas (límite)
 
 | Use … | No use … |
 | --- | --- |
@@ -2196,7 +2181,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ventana de herramienta seleccionada, con foco**
 
-![Pestaña de ventana de herramienta seleccionada, con foco](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Pestaña de ventana de herramienta seleccionada, con foco
+![Selecciona, centra la pestaña de ventana de herramientas](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "103_ToolWindowTabFocused 0303")<br />Pestaña de ventana de herramienta seleccionada, con foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2206,7 +2191,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ventana de herramienta seleccionada, sin foco**  
 
-![Pestaña de ventana de herramienta seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Pestaña de ventana de herramienta seleccionada, sin foco
+![Pestaña de ventana de herramienta seleccionada, sin foco](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "104_ToolWindowTabUnfocused 0303")<br />Pestaña de ventana de herramienta seleccionada, sin foco
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2216,7 +2201,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ventana de herramientas en segundo plano: estado predeterminado**
 
-![Pestaña de ventana de herramienta de fondo predeterminado](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br />Pestaña de ventana de herramienta de fondo predeterminado  
+![Pestaña de ventana de herramienta de fondo predeterminado](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "105_ToolWindowBackgroundTab 0303")<br />Pestaña de ventana de herramienta de fondo predeterminado  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2226,7 +2211,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ventana de herramientas en segundo plano: mantenga el mouse estado**
 
-![Pestaña de ventana de herramienta de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br />Pestaña de ventana de herramientas en segundo plano al mantener el puntero
+![Pestaña de ventana de herramienta de segundo plano al mantener el mouse](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "106_ToolWindowBackgroundTabHover 0303")<br />Pestaña de ventana de herramientas en segundo plano al mantener el puntero
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2244,7 +2229,7 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ocultación automática: estado predeterminado**  
 
-![Pestaña de ocultación automática predeterminada](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303-108_AutoHideTab")<br />Pestaña de ocultación automática predeterminada
+![Pestaña de ocultación automática predeterminada](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "108_AutoHideTab 0303")<br />Pestaña de ocultación automática predeterminada
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -2254,11 +2239,10 @@ El borde de la barra de título no es realmente un borde, es una línea gruesa e
 
 **Pestaña de ocultación automática: mantenga el mouse estado**
 
-![Pestaña de ocultación automática al mantener el mouse](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303-109_AutoHideTabHover")<br />Pestaña de ocultación automática al mantener el puntero  
+![Pestaña de ocultación automática al mantener el mouse](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "109_AutoHideTabHover 0303")<br />Pestaña de ocultación automática al mantener el puntero  
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
 | Fondo | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(Degradado para este token que no se utiliza en la interfaz de usuario con temas). |
 | Primer plano (texto) | `Environment.AutoHideTabMouseOverText` |
 | Borde | `Environment.AutoHideTabMouseOverBorder` |
-

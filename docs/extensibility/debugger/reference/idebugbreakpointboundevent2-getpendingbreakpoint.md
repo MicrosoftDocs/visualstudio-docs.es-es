@@ -1,53 +1,53 @@
 ---
-title: "IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
+title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+helpviewer_keywords: IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b37765534e1cf1791786fb8c31d04f2fa77d0650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el punto de interrupción pendiente se enlaza que.  
+# <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+Obtiene el punto de interrupción pendiente que se va a enlazar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBP  
+```cpp  
+HRESULT GetPendingBreakpoint(   
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```cpp#  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBP  
+```cpp  
+int GetPendingBreakpoint(   
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppPendingBP`  
- \[out\]  Devuelve el objeto de [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente que está enlazado.  
+ [out] Devuelve el [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el punto de interrupción pendiente que se va a enlazar.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CBreakpointSetDebugEventBase** que expone la interfaz de [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CBreakpointSetDebugEventBase** objeto que expone la [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaz.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  
     IDebugPendingBreakpoint2 **ppPendingBP)  
 {  
@@ -73,6 +73,6 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

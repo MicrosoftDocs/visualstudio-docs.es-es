@@ -1,61 +1,61 @@
 ---
-title: "IDebugClassField::EnumConstructors | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumConstructors"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumConstructors (método)"
+title: IDebugClassField::EnumConstructors | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::EnumConstructors
+helpviewer_keywords: IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 24ae27acb2dd78b086a8b94e28c3de705cd710ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::EnumConstructors
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Crea un enumerador para los constructores para esta clase.  
+# <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
+Crea un enumerador para los constructores de esta clase.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumConstructors(   
-   CONSTRUCTOR_ENUM   cMatch,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumConstructors(   
+   CONSTRUCTOR_ENUM   cMatch,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumConstructors(  
-   CONSTRUCTOR_ENUM     cMatch,   
-   out IEnumDebugFields ppEnum  
+   CONSTRUCTOR_ENUM     cMatch,   
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cMatch`  
- \[in\]  Un valor de enumeración de [CONSTRUCTOR\_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) que especifica el tipo de constructores a la enumeración.  
+ [in] Un valor de la [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) enumeración que especifica el tipo de constructores para la enumeración.  
   
  `ppEnum`  
- \[out\]  devuelve un objeto de [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa la lista de constructores.  Devuelve un valor NULL si no hay constructores.  
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de los constructores. Devuelve un valor null si no hay ningún constructor.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK o devuelve S\_FALSE si no hay constructores.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún constructor. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Cada elemento de la enumeración es un objeto de [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que describe un método de constructor.  
+## <a name="remarks"></a>Comentarios  
+ Cada elemento de la enumeración es un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objeto que describe un método de constructor.  
   
- La lista de constructores no incluye normalmente los constructores predeterminados proporcionados por un compilador.  
+ Normalmente, la lista de los constructores no incluye los constructores predeterminados proporcionados por un compilador.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [CONSTRUCTOR\_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)
+ [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)

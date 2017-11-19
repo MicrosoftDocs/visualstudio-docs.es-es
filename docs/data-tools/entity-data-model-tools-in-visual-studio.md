@@ -1,49 +1,57 @@
 ---
-title: "Herramientas de Entity Data Model de ADO.NET | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
+title: Herramientas de Entity Framework en Visual Studio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
-caps.latest.revision: 21
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Herramientas de Entity Data Model de ADO.NET
-Las herramientas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] están diseñadas para ayudarle a compilar aplicaciones [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].  Toda la documentación de las herramientas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] se encuentra aquí: [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/es-es/91076853-0881-421b-837a-f582f36be527).  
+# <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
+Entity Framework es una tecnología de asignación objeto-relacional que permite a los desarrolladores de .NET trabajar con datos relacionales mediante el uso de objetos específicos del dominio. Se elimina la necesidad de la mayoría del código de acceso a datos que normalmente los desarrolladores deben escribir. Entity Framework es la asignación relacional de objetos (ORM) recomendada, modelado tecnología para nuevas aplicaciones de .NET.  
   
- Con las herramientas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], puede crear un *modelo conceptual* a partir de una base de datos existente y, a continuación, visualizarlo y editarlo de forma gráfica.  O bien, puede crear primero un gráfico del modelo conceptual y, a continuación, generar una base de datos que sea compatible con ese modelo.  En cualquier caso, puede actualizar automáticamente el modelo a medida que la base de datos subyacente cambia y generar automáticamente código de capa de objeto para la aplicación.  La generación de bases de datos y la generación de código de capa de objeto se pueden personalizar.  
+Herramientas de Entity Framework están diseñadas para ayudarle a crear aplicaciones de Entity Framework (EF). Toda la documentación de Entity Framework está aquí: [EF núcleos y 6 de EF](https://docs.microsoft.com/ef/).  
   
- En la lista siguiente se describen las herramientas concretas que conforman las herramientas de Entity Data Model:  
+Con herramientas de Entity Framework, puede crear un *modelo conceptual* partir de una base de datos y, a continuación, gráficamente visualizar y editar el modelo conceptual. – O bien –, primero puede crear gráficamente un modelo conceptual y, a continuación, generar una base de datos que admita su modelo. En cualquier caso, puede actualizar el modelo automáticamente cuando la base de datos subyacente cambie y generar automáticamente el código de capa de objeto para la aplicación. La generación de bases de datos y la generación del código de capa de objeto son personalizables.  
   
--   El diseñador de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] \(Entity Designer\) permite crear y modificar de forma visual entidades, asociaciones, asignaciones y relaciones de herencia.  Entity Designer también genera código de capa de objeto de [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+Las herramientas de Entity Framework se instalan como parte de la **almacenamiento de datos y el procesamiento** carga de trabajo en el instalador de Visual Studio. También puede instalar como un componente de límites en el **SDK, bibliotecas y marcos de trabajo** categoría.  
+ 
+Estas son las herramientas específicas que constituyen las herramientas de Entity Framework en Visual Studio:  
   
--   El Asistente de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] permite generar un modelo conceptual a partir de una base de datos existente y agrega información de la conexión a base de datos a la aplicación.  
+-   Puede usar el [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] diseñador** (**Entity Designer**) para crear y modificar las entidades, asociaciones, asignaciones y las relaciones de herencia visualmente. El **Entity Designer** también genera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código de capa de objeto.  
   
--   El Asistente para crear bases de datos permite crear primero un modelo conceptual y, a continuación, crear una base de datos que admita el modelo.  
+-   Puede usar el  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] asistente** para generar un modelo conceptual desde una base de datos existente y agregar información de conexión de base de datos a la aplicación.  
   
--   El Asistente para actualizar modelos permite actualizar el modelo conceptual, el modelo de almacenamiento y las asignaciones cuando se realizan cambios en la base de datos subyacente.  
+-   Puede usar el **Asistente para crear la base de datos** para crear un modelo conceptual primero y, a continuación, crear una base de datos que admita el modelo.  
+  
+-   Puede usar el **Asistente para actualizar modelo** para actualizar el modelo conceptual, modelo de almacenamiento y las asignaciones cuando se han efectuado cambios en la base de datos subyacente.  
   
     > [!NOTE]
-    >  Desde Visual Studio 2010, las herramientas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] no admiten [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].  
+    >  A partir de Visual Studio 2010, herramientas de Entity Framework no admiten [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].  
   
- Las herramientas generan o modifican un archivo .edmx que contiene información en la que se describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos.  Para obtener más información, vea [.edmx File Overview](http://msdn.microsoft.com/es-es/f4c8e7ce-1db6-417e-9759-15f8b55155d4).  
+Las herramientas generan o modifican un archivo .edmx. Este archivo .edmx contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, consulte [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Hay también una herramienta de línea de comandos diseñada para ayudarle a compilar las aplicaciones que utilizan el EDM: la herramienta de EdmGen.exe.  Esta herramienta puede generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contengan clases de objetos basadas en el modelo conceptual y generar archivos de código fuente que contengan vistas generadas por el modelo.  Para obtener información detallada sobre esta herramienta de línea de comandos, vea [Generador de EDM \(EdmGen.exe\)](../Topic/EDM%20Generator%20\(EdmGen.exe\).md).  
+[Herramientas de Entity Framework Power](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) le ayudará a generar las aplicaciones que utilizan el Entity Data Model. Las herramientas avanzadas pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contienen las clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, vea [vistas de asignación de Pre-Generated](https://msdn.microsoft.com/data/dn469601.aspx).  
   
-## Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados  
   
 |Título|Descripción|  
-|------------|-----------------|  
-|[ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md)|Se describe cómo se usan las herramientas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] proporciona para crear aplicaciones.|  
-|[Entity Data Model](../Topic/Entity%20Data%20Model.md)|Se incluyen vínculos e información para trabajar con datos que usan las aplicaciones integradas en [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
+|-----------|-----------------|  
+|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Describe cómo usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] herramientas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] proporciona para crear aplicaciones.|  
+|[Entity Data Model](/dotnet/framework/data/adonet/entity-data-model)|Proporciona vínculos e información para trabajar con datos que se utilizan por las aplicaciones basadas en [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[Documentación de Entity Framework (EF))](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Proporciona un índice de vídeos, tutoriales y documentación de características avanzadas que le ayudarán a sacar el máximo partido de Entity Framework.|  
+|[ASP.NET 5 aplicación a la nueva base de datos](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Describe cómo crear una nueva aplicación ASP.NET 5 mediante Entity Framework 7.|  
+  
+## <a name="see-also"></a>Vea también  
+ [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,49 +1,50 @@
 ---
-title: "IDebugPortPicker::SetSite | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPortPicker::SetSite"
+title: IDebugPortPicker::SetSite | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4853d9ea3517cc5b589c6a9435b89a69738006d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortPicker::SetSite
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-establece el proveedor de servicios.  
+# <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
+Establece el proveedor de servicios.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT SetSite(  
-   IServiceProvider * pSP  
+   IServiceProvider * pSP  
 );  
 ```  
   
-```c#  
+```csharp  
 public int SetSite(  
-   IServiceProvider pSP  
+   IServiceProvider pSP  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pSP`  
- \[in\]  Referencia a la interfaz del proveedor de servicios.  
+ [in] Referencia a la interfaz del proveedor de servicios.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Llamará a este método antes de llamar a cualquier otro método.  
+## <a name="remarks"></a>Comentarios  
+ Se llama a este método antes de llama a ningún otro método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

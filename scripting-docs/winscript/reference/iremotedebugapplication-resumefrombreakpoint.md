@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplication::ResumeFromBreakPoint | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplication.ResumeFromBreakPoint
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplication::ResumeFromBreakPoint"
+helpviewer_keywords: IRemoteDebugApplication::ResumeFromBreakPoint
 ms.assetid: a613cc2b-1d69-4713-a235-64372c253b4a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplication::ResumeFromBreakPoint
+# <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
 Continúa una aplicación que está actualmente en un punto de interrupción.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT ResumeFromBreakPoint(  
@@ -31,27 +34,27 @@ HRESULT ResumeFromBreakPoint(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `prptFocus`  
- \[in\] modos de recorrido For, el subproceso que debe ser afectado por el modo de entrada.  
+ [in] Para seguir los pasos modos, el subproceso que se verán afectados por el modo de ejecución paso a paso.  
   
  `bra`  
- \[in\] acción para obtener tomar sobre reanudar la aplicación.  
+ [in] La acción que se realizará al reanudar la aplicación.  
   
  `era`  
- \[in\] acción de The para admitir el caso que la aplicación se detuvo debido a un error.  
+ [in] La acción que se realizará en el caso de que la aplicación se detiene debido a un error.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Este método continúa una aplicación que está actualmente en un punto de interrupción.  
   
-## Vea también  
- [IRemoteDebugApplication \(Interfaz\)](../../winscript/reference/iremotedebugapplication-interface.md)   
- [BREAKRESUMEACTION \(Enumeración\)](../../winscript/reference/breakresumeaction-enumeration.md)   
- [ERRORRESUMEACTION \(Enumeración\)](../../winscript/reference/errorresumeaction-enumeration.md)
+## <a name="see-also"></a>Vea también  
+ [IRemoteDebugApplication (interfaz)](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [Enumeración BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [ERRORRESUMEACTION (Enumeración)](../../winscript/reference/errorresumeaction-enumeration.md)

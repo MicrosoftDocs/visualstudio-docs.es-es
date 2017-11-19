@@ -1,39 +1,40 @@
 ---
-title: "Aplicaci&#243;n de configuraci&#243;n a trav&#233;s de varias conexiones de proyecto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "origen control complementos, aplicación de configuración"
+title: "Aplicación de la configuración en varias conexiones de proyecto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Aplicaci&#243;n de configuraci&#243;n a trav&#233;s de varias conexiones de proyecto
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un complemento de control de código fuente compilado mediante el Control de origen API de complemento 1,2, puede utilizar una operación de lote para ejecutar la misma operación de control de código fuente en varios proyectos o varios contextos de la conexión.  Los lotes se pueden utilizar para eliminar redundante, cuadros de diálogo por\-proyecto de la experiencia del usuario.  
+# <a name="application-of-settings-across-multiple-project-connections"></a>Aplicación de la configuración en varias conexiones de proyecto
+Un complemento de control de origen creados con 1.2 de API de complemento de Control de origen, puede usar una operación por lotes para ejecutar la misma operación de control de código fuente en varios proyectos o varios contextos de conexión. Lotes pueden usarse para eliminar redundantes, cuadros de diálogo de la experiencia del usuario por proyecto.  
   
- Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente compilado mediante el Control de origen API de complemento 1,1, \(por ejemplo, dos proyectos web en equipos diferentes de la archivo\-acción\) y los desprotegidos, el usuario ve el mismo cuadro de diálogo repetidamente.  Esto ocurre incluso si el usuario hace clic en la casilla de **Aplicar a todo** en el cuadro de diálogo, porque el IDE restaura su estado para cada contexto de conexión.  
+ Si un usuario selecciona varios elementos que pertenecen a más de una conexión en un complemento de control de código fuente creada con la API complemento origen Control 1.1, (por ejemplo, dos proyectos Web de recurso compartido de archivos diferentes máquinas) y comprueba su salida, el usuario ve el mismo cuadro de diálogo varias veces. Esto ocurre incluso si el usuario hace clic en el **aplicar a todos los** casilla de verificación en el cuadro de diálogo, porque el IDE restablece su estado para cada contexto de conexión.  
   
-## Nueva marca de capacidad  
- la función de`SccBeginBatch` establece la marca de `SCC_CAP_BATCH` para indicar que una operación de lote está en curso  
+## <a name="new-capability-flag"></a>Nueva marca de capacidad  
+ `SccBeginBatch`Función establece el `SCC_CAP_BATCH` marca para indicar que una operación por lotes está en curso  
   
-## nuevas funciones  
+## <a name="new-functions"></a>Nuevas funciones  
  Las nuevas funciones siguientes admiten la operación por lotes:  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
   
- La función de `SCCBeginBatch` inicia un grupo de operaciones de control de código fuente.  `SccEndBatch` cierra el grupo.  Los grupos pueden no estar anidados.  
+ El `SCCBeginBatch` función inicia un grupo de operaciones de control de código fuente. `SccEndBatch`cierra el grupo. No se pueden anidar los grupos.  
   
-## Vea también  
- [Novedades de la API de complemento de origen Control versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Vea también  
+ [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,72 +1,73 @@
 ---
-title: "ProjectItemFolder Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectItemFolder element"
+title: ProjectItemFolder (elemento) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectItemFolder element
 ms.assetid: 15b386dd-f523-4425-9fcc-517325681358
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c108540f24529866a03c4e4eb22dc027037d1185
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectItemFolder Element
+# <a name="projectitemfolder-element"></a>ProjectItemFolder (Elemento)
   Representa una carpeta asignada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
   
-## Tipo  
+## <a name="type"></a>Tipo  
  **ProjectItemFolderType**  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|**Target**|El atributo **xs:string** es obligatorio.<br /><br /> La ruta de acceso de la carpeta de la instalación de SharePoint a la que corresponde la carpeta asignada, relativa a la carpeta raíz de implementación.  El tipo de implementación especificado por el atributo **Type** determina la carpeta raíz de implementación.<br /><br /> Para obtener más información, vea las descripciones de las propiedades **Deployment PathDeployment Root** de los elementos de proyecto de SharePoint en [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|El atributo **xs:string** es obligatorio.<br /><br /> El tipo de implementación para la carpeta asignada.  Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **Deployment Type** de los elementos de proyecto de SharePoint en [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**Target**|Requiere **xs: String** atributo.<br /><br /> La ruta de acceso de la carpeta en la instalación de SharePoint que corresponde la carpeta asignada, relativa a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el **tipo** atributo.<br /><br /> Para obtener más información, vea las descripciones de los **ruta de acceso de implementación** y **raíz de la implementación** propiedades de SharePoint elementos de proyecto en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**ype**|Requiere **xs: String** atributo.<br /><br /> El tipo de implementación para la carpeta asignada. Para obtener más información acerca de los valores posibles, vea la descripción de la **tipo de implementación** propiedad de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint.  Este es el elemento raíz necesario del archivo .spdata.|  
+|-------------|-----------------|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este es el elemento raíz necesario del archivo .spdata.|  
   
-## Comentarios  
- Para obtener más información acerca de las carpetas asignadas, vea [Cómo: Agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+## <a name="remarks"></a>Comentarios  
+ Para obtener más información acerca de las carpetas asignadas, vea [Cómo: agregar y quitar carpetas asignado](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Cómo: Agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
   
   

@@ -1,74 +1,74 @@
 ---
-title: "IDebugSymbolProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider"
-helpviewer_keywords: 
-  - "Interfaz IDebugSymbolProvider"
+title: IDebugSymbolProvider | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider
+helpviewer_keywords: IDebugSymbolProvider interface
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 33958c7159c6348aca696e295deb245031e904d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Esta interfaz representa un proveedor de símbolos que proporciona símbolos y tipos, devolviéndolos como campos.  
+# <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
+Esta interfaz representa un proveedor de símbolos que proporciona tipos, devolverlos como campos y símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugSymbolProvider : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Un proveedor de token debe implementar esta interfaz para proporcionar símbolo y la información de tipos a un evaluador de expresiones.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un proveedor de símbolos debe implementar esta interfaz para proporcionar los símbolos y escriba la información a un evaluador de expresiones.  
   
-## Notas para los llamadores  
- Esta interfaz es obtenida mediante la función de `CoCreateInstance` COM \(para los proveedores no administrada de símbolos\) o cargar el ensamblado adecuado de código administrado y creando instancias del proveedor del token basado en la encontrada en ese ensamblado.  El motor de depuración crea instancias del proveedor del token para trabajar en coordinación con el evaluador de expresiones.  Vea el ejemplo para un enfoque para crear instancias de esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz se obtiene mediante el uso de COM `CoCreateInstance` función (para los proveedores de símbolos no administrado) o mediante la carga de la correspondiente administrados de ensamblado de código y creación de instancias del proveedor de símbolos en función de la información que se encuentra en ese ensamblado. El motor de depuración crea el proveedor de símbolos para trabajar conjuntamente con el evaluador de expresiones. Vea el ejemplo de un enfoque para crear instancias de esta interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugSymbolProvider`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugSymbolProvider`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|`Initialize`|Obsoleto.  No utilizar.|  
-|`Uninitialize`|Obsoleto.  No utilizar.|  
+|`Initialize`|Desusado. No utilizar.|  
+|`Uninitialize`|Desusado. No utilizar.|  
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|Obtiene el campo que contiene la dirección de depuración.|  
-|`GetField`|Obsoleto.  No utilizar.|  
+|`GetField`|Desusado. No utilizar.|  
 |[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Asigna una posición del documento en una matriz de direcciones de depuración.|  
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Asigna un contexto del documento en una matriz de direcciones de depuración.|  
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Asigna una dirección de depuración en un contexto del documento.|  
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtiene el idioma utilizado para compilar el código en la dirección de depuración.|  
-|`GetGlobalContainer`|Obsoleto.  No utilizar.|  
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa un nombre completo del método.|  
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Asigna un contexto de documento en una matriz de direcciones de depuración.|  
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Asigna una dirección de depuración en un contexto de documento.|  
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtiene el idioma usado para compilar el código en la dirección de depuración.|  
+|`GetGlobalContainer`|Desusado. No utilizar.|  
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtiene el campo que representa un nombre de método completo.|  
 |[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtiene el tipo de campo de clase que representa un nombre de clase completo.|  
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumerador para los espacios de nombres asociado con la dirección de la depuración.|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de token.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección determinada de depuración en un método.|  
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Crea un enumerador para los espacios de nombres asociado a la dirección de depuración.|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Asigna un nombre de símbolo a un tipo de símbolo.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtiene la dirección de depuración que sigue a una dirección de depuración especificado en un método.|  
   
-## Comentarios  
- Esta interfaz asigna las posiciones del documento en direcciones de depuración y viceversa.  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz asigna posiciones del documento en direcciones de depuración y viceversa.  
   
-## Requisitos  
- encabezado: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Ejemplo  
- Este ejemplo muestra cómo crear instancias del proveedor de símbolos, dado su GUID \(un motor de depuración debe conocer este valor\).  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se muestra cómo crear una instancia del proveedor de símbolos, dada su GUID (un motor de depuración debe conocer este valor).  
   
-```cpp#  
+```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  
 // of that provider.  
 IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)  
@@ -104,5 +104,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugCustomAttributes::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes::Next"
-helpviewer_keywords: 
-  - "IEnumDebugCustomAttributes::Next"
+title: IEnumDebugCustomAttributes::Next | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCustomAttributes::Next
+helpviewer_keywords: IEnumDebugCustomAttributes::Next
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a7c5a68a9a199a8734d33669a68ee2e770bd449e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCustomAttributes::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Recupera un número especificado de atributos personalizados en una secuencia de enumeración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Next (   
-   ULONG      celt,  
-   CODE_PATH* rgelt,  
-   ULONG*     pceltFetched  
+```cpp  
+HRESULT Next (   
+   ULONG      celt,  
+   CODE_PATH* rgelt,  
+   ULONG*     pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint                        celt,   
-   out IDebugCustomAttribute[] rgelt,   
-   ref uint                    pceltFetched  
+   uint                        celt,   
+   out IDebugCustomAttribute[] rgelt,   
+   ref uint                    pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
+ [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- \[out\]  Matriz de los objetos de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) que se completan.  
+ [out] Una matriz de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objetos que deben rellenarse.  
   
  `pceltFetched`  
- \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
+ [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si pudieron devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

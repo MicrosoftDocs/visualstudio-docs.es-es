@@ -1,38 +1,41 @@
 ---
-title: "No se puede crear una asociaci&#243;n &lt;nombre de asociaci&#243;n&gt;; la propiedad aparece dos veces. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "No se puede crear una asociación &lt;nombre de la asociación&gt; -propiedad aparece dos veces | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 562ec97bbcd6031b9538713c65d6ec6229338f78
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# No se puede crear una asociaci&#243;n &lt;nombre de asociaci&#243;n&gt;; la propiedad aparece dos veces.
-No se puede crear una asociación \<nombre de asociación\>.La misma propiedad aparece más de una vez: \<nombre de propiedad\>.  
+# <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de la asociación&gt; -propiedad aparece dos veces
+No se puede crear una asociación \<nombre de asociación >. La misma propiedad aparece más de una vez: \<nombre de propiedad >.  
   
- Las asociaciones las define el comando **Propiedades de la asociación** seleccionado en el cuadro de diálogo **Editor de asociaciones**.Las propiedades pueden aparecer solamente una vez para cada clase en la asociación.  
+ Las asociaciones se definen por seleccionado **propiedades de la asociación** en el **Editor de asociaciones** cuadro de diálogo. Las propiedades pueden aparecer solamente una vez para cada clase en la asociación.  
   
- La propiedad mencionada en el mensaje aparece más de una vez en las **Propiedades de la asociación** de la clase primaria o secundaria.  
+ La propiedad en el mensaje aparece más de una vez en primaria o secundaria de la clase **propiedades de la asociación**.  
   
-### Para resolver esta condición  
+### <a name="to-resolve-this-condition"></a>Para resolver esta condición  
   
 -   Lea el mensaje y fíjese en la propiedad especificada en el mensaje.  
   
 -   Haga clic en **Aceptar** para descartar el cuadro de mensaje.  
   
--   Examine las **Propiedades de la asociación** y quite las entradas duplicadas.  
+-   Inspeccionar el **propiedades de la asociación** y quite las entradas duplicadas.  
   
 -   Haga clic en **Aceptar**.  
   
-## Vea también  
- [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Cómo: Crear una asociación \(relación\) entre las clases de LINQ to SQL \(Object Relational Designer\)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   
- [Tutorial: Crear clases de LINQ to SQL \(Object Relational Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Vea también
+[Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

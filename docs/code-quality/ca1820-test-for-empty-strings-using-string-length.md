@@ -1,11 +1,10 @@
 ---
-title: 'CA1820: Test for empty strings using string length | Microsoft Docs'
+title: "CA1820: Comprobar si las cadenas están vacías mediante la longitud de cadena | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,55 +14,39 @@ helpviewer_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
-caps.latest.revision: 21
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: bf4c484e1161b7c6dd3dfbe3917be327003d7414
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7bfacf70dd1d23d0596815ad2f9fa3f51986aaad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Test for empty strings using string length
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Comprobar si las cadenas están vacías mediante la longitud de cadena
 |||  
 |-|-|  
 |TypeName|TestForEmptyStringsUsingStringLength|  
-|CheckId|CA1820|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Non-breaking|  
+|Identificador de comprobación|CA1820|  
+|Categoría|Microsoft.Performance|  
+|Cambio problemático|Poco problemático|  
   
-## <a name="cause"></a>Cause  
- A string is compared to the empty string by using <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Motivo  
+ Una cadena se compara con la cadena vacía utilizando <xref:System.Object.Equals%2A?displayProperty=fullName>.  
   
-## <a name="rule-description"></a>Rule Description  
- Comparing strings using the <xref:System.String.Length%2A?displayProperty=fullName> property or the <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> method is significantly faster than using <xref:System.Object.Equals%2A>. This is because <xref:System.Object.Equals%2A> executes significantly more MSIL instructions than either <xref:System.String.IsNullOrEmpty%2A> or the number of instructions executed to retrieve the <xref:System.String.Length%2A> property value and compare it to zero.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Comparación de cadenas que usan la <xref:System.String.Length%2A?displayProperty=fullName> propiedad o el <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> método es significativamente más rápido que utilizar <xref:System.Object.Equals%2A>. Esto es porque <xref:System.Object.Equals%2A> ejecuta significativamente más instrucciones de MSIL que <xref:System.String.IsNullOrEmpty%2A> o el número de instrucciones ejecutado para recuperar el <xref:System.String.Length%2A> propiedad valor y compararlo con cero.  
   
- You should be aware that <xref:System.Object.Equals%2A> and <xref:System.String.Length%2A> == 0 behave differently for null strings. If you try to get the value of the <xref:System.String.Length%2A> property on a null string, the common language runtime throws a <xref:System.NullReferenceException?displayProperty=fullName>. If you perform a comparison between a null string and the empty string, the common language runtime does not throw an exception; the comparison returns `false`. Testing for null does not significantly affect the relative performance of these two approaches. When targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method. Otherwise, use the <xref:System.String.Length%2A> == comparison whenever possible.  
+ Debe tener en cuenta que <xref:System.Object.Equals%2A> y <xref:System.String.Length%2A> == 0 se comportan de forma diferente para las cadenas nulas. Si se intenta obtener el valor de la <xref:System.String.Length%2A> propiedad en una cadena nula, common language runtime produce una <xref:System.NullReferenceException?displayProperty=fullName>. Si se efectúa una comparación entre una cadena nula y una cadena vacía, common language runtime no inicia una excepción; la comparación devuelve `false`. Comprobación de cadenas nulas no afecta significativamente el rendimiento relativo de estos dos enfoques. Cuando el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use el <xref:System.String.IsNullOrEmpty%2A> método. De lo contrario, utilice la <xref:System.String.Length%2A> == comparación siempre que sea posible.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the comparison to use the <xref:System.String.Length%2A> property and test for the null string. If targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, cambie la comparación se debe utilizar el <xref:System.String.Length%2A> propiedad y pruebas para la cadena nula. Si el destino es [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use el <xref:System.String.IsNullOrEmpty%2A> método.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if performance is not an issue.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla si el rendimiento no es un problema.  
   
-## <a name="example"></a>Example  
- The following example illustrates the different techniques that are used to look for an empty string.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra las distintas técnicas que se utilizan para buscar una cadena vacía.  
   
  [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

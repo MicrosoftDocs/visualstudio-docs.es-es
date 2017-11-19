@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Changing Worksheet Formatting Using CheckBox Controls | Microsoft Docs'
+title: "Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,157 +15,159 @@ helpviewer_keywords:
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: 4be79613-50a0-428e-9816-aadbc098272a
-caps.latest.revision: 70
-author: kempb
-ms.author: kempb
+caps.latest.revision: "70"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6afc0a002671d0a5ae91908e5b0ed3b100c36c54
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Walkthrough: Changing Worksheet Formatting Using CheckBox Controls
-  This walkthrough shows the basics of using check boxes on a Microsoft Office Excel worksheet to change formatting. You will use Office development tools in Visual Studio to create and add code to your project. To see the result as a completed sample, see the Excel Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de una hoja de cálculo utilizando controles CheckBox
+  En este tutorial se muestra los aspectos básicos del uso de casillas de verificación en una hoja de cálculo de Microsoft Office Excel para cambiar el formato. Utilizará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [ejemplos de desarrollo de Office y tutoriales](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ Durante este tutorial aprenderá a:  
   
--   Add text and controls to a worksheet.  
+-   Agregar texto y controles a una hoja de cálculo.  
   
--   Format the text when an option is selected.  
+-   Dar formato al texto cuando se selecciona una opción.  
   
--   Test your project.  
+-   El proyecto de prueba.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- In this step, you will create an Excel Workbook project by using Visual Studio.  
+## <a name="creating-the-project"></a>Crear el proyecto  
+ En este paso, creará un proyecto de libro de Excel con Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Create an Excel Workbook project with the name **My Excel Formatting**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de libro de Excel con el nombre **Mi formato de Excel**. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Formatting** project to **Solution Explorer**.  
+     Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **Mi formato de Excel** proyecto al **el Explorador de soluciones**.  
   
-## <a name="adding-text-and-controls-to-the-worksheet"></a>Adding Text and Controls to the Worksheet  
- For this walkthrough, you will need three <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> controls and some text in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control.  
+## <a name="adding-text-and-controls-to-the-worksheet"></a>Agregar texto y controles a la hoja de cálculo  
+ En este tutorial, necesitará tres <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> controles y texto en un <xref:Microsoft.Office.Tools.Excel.NamedRange> control.  
   
-#### <a name="to-add-three-check-boxes"></a>To add three check boxes  
+#### <a name="to-add-three-check-boxes"></a>Para agregar tres casillas de verificación  
   
-1.  Verify that the workbook is open in the Visual Studio designer and that `Sheet1` is open.  
+1.  Compruebe que el libro está abierto en el Diseñador de Visual Studio y `Sheet1` está abierto.  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> control to or near cell **B2** in **Sheet1**.  
+2.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> control a la celda o cerca **B2** en **Sheet1**.  
   
-3.  From the **View** menu, select **Properties** window.  
+3.  Desde el **vista** menú, seleccione **propiedades** ventana.  
   
-4.  Be sure that **Checkbox1** is visible in the object name list box of the **Properties** window, and change the following properties:  
+4.  Asegúrese de que **Checkbox1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
   
-    |Property|Value|  
+    |Propiedad|Valor|  
     |--------------|-----------|  
-    |**Name**|**applyBoldFont**|  
-    |**Text**|**Bold**|  
+    |**Nombre**|**applyBoldFont**|  
+    |**Texto**|**Negrita**|  
   
-5.  Drag a second check box on or near cell **B4** and change the following properties:  
+5.  Arrastre una segunda casilla de verificación en la celda o cerca **B4** y cambie las siguientes propiedades:  
   
-    |Property|Value|  
+    |Propiedad|Valor|  
     |--------------|-----------|  
-    |**Name**|**applyItalicFont**|  
-    |**Text**|**Italic**|  
+    |**Nombre**|**applyItalicFont**|  
+    |**Texto**|**Cursiva**|  
   
-6.  Drag a third check box on or near cell **B6** and change the following properties:  
+6.  Arrastre una tercera casilla de verificación en la celda o cerca **B6** y cambie las siguientes propiedades:  
   
-    |Property|Value|  
+    |Propiedad|Valor|  
     |--------------|-----------|  
-    |**Name**|**applyUnderlineFont**|  
-    |**Text**|**Underline**|  
+    |**Nombre**|**applyUnderlineFont**|  
+    |**Texto**|**Subrayado**|  
   
-7.  Select all three check box controls while holding the CTRL key.  
+7.  Seleccione todos los controles de casilla de verificación tres mientras mantiene presionada la tecla CTRL.  
   
-8.  In the Arrange Group of the Format tab in Excel, click **Align**, and then click **Align Left**.  
+8.  En el grupo de organización de la pestaña de formato de Excel, haga clic en **alinear**y, a continuación, haga clic en **Alinear a la izquierda**.  
   
-     The three check box controls are aligned on the left side, at the position of the first control you selected.  
+     Los controles de casilla de verificación tres se alinean a la izquierda, en la posición del primer control seleccionado.  
   
-     Next, you will drag a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to the worksheet.  
+     A continuación, arrastre un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la hoja de cálculo.  
   
     > [!NOTE]  
-    >  You can also add the <xref:Microsoft.Office.Tools.Excel.NamedRange> control by typing **textFont** into the **Name** box.  
+    >  También puede agregar el <xref:Microsoft.Office.Tools.Excel.NamedRange> control escribiendo **textFont** en el **nombre** cuadro.  
   
-#### <a name="to-add-text-to-a-namedrange-control"></a>To add text to a NamedRange control  
+#### <a name="to-add-text-to-a-namedrange-control"></a>Para agregar texto a un control NamedRange  
   
-1.  From the **Excel Controls** tab of the toolbox, drag a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **B9**.  
+1.  Desde el **controles de Excel** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la celda **B9**.  
   
-2.  Verify that **$B$9** appears in the editable text box, and that cell **B9** is selected. If it is not, click cell **B9** to select it.  
+2.  Compruebe que **$B$ 9** aparece en el cuadro de texto editable y esa celda **B9** está seleccionada. Si no es así, haga clic en la celda **B9** para seleccionarlo.  
   
-3.  Click **OK**.  
+3.  Haga clic en **Aceptar**.  
   
-4.  Cell **B9** becomes a range named `NamedRange1`.  
+4.  Celda **B9** se convierte en un rango con nombre `NamedRange1`.  
   
-     There is no visible indication on the worksheet, but `NamedRange1` appears in the **Name box** (just above the worksheet on the left side) when cell **B9** is selected.  
+     No hay ninguna indicación visible en la hoja de cálculo, pero `NamedRange1` aparece en la **cuadro nombre** (justo encima de la hoja de cálculo en el lado izquierdo) cuando la celda **B9** está seleccionada.  
   
-5.  Be sure that **NamedRange1** is visible in the object name list box of the **Properties** window, and change the following properties:  
+5.  Asegúrese de que **NamedRange1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
   
-    |Property|Value|  
+    |Propiedad|Valor|  
     |--------------|-----------|  
-    |**Name**|**textFont**|  
-    |**Value2**|**Click a check box to change the formatting of this text.**|  
+    |**Nombre**|**textFont**|  
+    |**Valor2**|**Haga clic en una casilla de verificación para cambiar el formato de este texto.**|  
   
- Next, write the code to format the text when an option is selected.  
+ A continuación, escribir el código para dar formato al texto cuando se selecciona una opción.  
   
-## <a name="formatting-the-text-when-an-option-is-selected"></a>Formatting the Text When an Option is Selected  
- In this section, you will write code so that when the user selects a formatting option, the format of the text in the worksheet is changed.  
+## <a name="formatting-the-text-when-an-option-is-selected"></a>Aplicar formato a la opción un texto cuando se selecciona  
+ En esta sección, escribirá código para que cuando el usuario selecciona una opción de formato, se cambia el formato del texto en la hoja de cálculo.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>To change formatting when a check box is selected  
+#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Para cambiar el formato cuando una casilla de verificación está seleccionada  
   
-1.  Right-click **Sheet1**, and then click **View Code** on the shortcut menu.  
+1.  Haga clic en **Sheet1**y, a continuación, haga clic en **ver código** en el menú contextual.  
   
-2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyBoldFont` check box:  
+2.  Agregue el código siguiente a la <xref:System.Windows.Forms.Control.Click> controlador de eventos de la `applyBoldFont` casilla de verificación:  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]  
   
-3.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyItalicFont` check box:  
+3.  Agregue el código siguiente a la <xref:System.Windows.Forms.Control.Click> controlador de eventos de la `applyItalicFont` casilla de verificación:  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]  
   
-4.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyUnderlineFont` check box:  
+4.  Agregue el código siguiente a la <xref:System.Windows.Forms.Control.Click> controlador de eventos de la `applyUnderlineFont` casilla de verificación:  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  In C#, you must add event handlers for the check boxes to the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event as shown below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  En C#, debe agregar controladores de eventos para las casillas de verificación para el <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> eventos tal y como se muestra a continuación. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your workbook to make sure that the text is formatted correctly when you select or clear a check box.  
+## <a name="testing-the-application"></a>Probar la aplicación  
+ Ahora puede probar el libro para asegurarse de que el texto se formateó correctamente cuando se activa o desactiva una casilla de verificación.  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>Para probar el libro  
   
-1.  Press F5 to run your project.  
+1.  Presione F5 para ejecutar el proyecto.  
   
-2.  Select or clear a check box.  
+2.  Active o desactive una casilla de verificación.  
   
-3.  Confirm that the text is formatted correctly.  
+3.  Confirme que el texto tiene el formato correcto.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using check boxes and formatting text on Excel worksheets. Here are some tasks that might come next:  
+## <a name="next-steps"></a>Pasos siguientes  
+ En este tutorial se muestra los aspectos básicos del uso de casillas de verificación y dar formato al texto en hojas de cálculo de Excel. A continuación, podría realizar las siguientes tareas:  
   
--   Deploying the project. For more information, see [Deploying an Office Solution by Using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+-   Implementar el proyecto. Para obtener más información, consulte [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
--   Using a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Usar un botón para rellenar un cuadro de texto. Para obtener más información, consulte [Tutorial: mostrar texto en un cuadro de texto en una hoja de cálculo utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
-## <a name="see-also"></a>See Also  
- [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>Vea también  
+ [Tutoriales para Excel](../vsto/walkthroughs-using-excel.md)   
+ [NamedRange (Control)](../vsto/namedrange-control.md)   
+ [Limitaciones de los controles de Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

@@ -1,62 +1,62 @@
 ---
-title: "IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::AddImplicitProgramNodes (método)"
+title: IDebugProcessEx2::AddImplicitProgramNodes | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::AddImplicitProgramNodes
+helpviewer_keywords: IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 799ac5ee39322579ab60901ffe2abb2f2a683138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::AddImplicitProgramNodes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método agrega un nodo de programa para cada motor \(DE\) de depuración especificado.  
+# <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
+Este método agrega un nodo de programa para cada motor de depuración (Alemania) especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
+   REFGUID guidLaunchingEngine,  
+   GUID*   rgguidSpecificEngines,  
+   DWORD   celtSpecificEngines  
 );  
 ```  
   
-```c#  
+```csharp  
 int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
+   ref Guid guidLaunchingEngine,  
+   Guid[]   rgguidSpecificEngines,  
+   uint     celtSpecificEngines  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guidLaunchingEngine`  
- \[in\]  `GUID` de un OF que debe utilizar para iniciar programas \(y se supone agregar sus propios nodos de programa\).  
+ [in] El `GUID` de un Alemania que va a usar para iniciar programas (y se supone que para agregar su propio programa de nodos).  
   
  `rgguidSpecificEngines`  
- \[in\]  Matriz de s para `GUID`de DES para los nodos del programa se agregarán.  
+ [in] Matriz de `GUID`s de DEs para el programa que se agregarán los nodos.  
   
  `celtSpecificEngines`  
- \[in\]  El número de s de `GUID`en la matriz de `rgguidSpecificEngines` .  
+ [in] El número de `GUID`s en el `rgguidSpecificEngines` matriz.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- [Nodos de programa](../../../extensibility/debugger/program-nodes.md) se agregará para cada OF enumerado en `rgguidSpecificEngines`\(excepto el motor que inicia \(según lo especificado en `guidLaunchingEngine`\), que se supone para agregar su propio nodo de programa cuando inicia un programa.  
+## <a name="remarks"></a>Comentarios  
+ [Nodos de programa](../../../extensibility/debugger/program-nodes.md) se agregarán para cada Alemania se enumeran en `rgguidSpecificEngines`, sin incluir el motor de lanzamiento (como se indica en `guidLaunchingEngine`), que se supone que agregue su propio nodo de programa cuando se inicia un programa.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [Nodos de programa](../../../extensibility/debugger/program-nodes.md)

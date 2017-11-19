@@ -1,42 +1,42 @@
 ---
-title: "IDebugProcess2::CauseBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::CauseBreak"
-helpviewer_keywords: 
-  - "IDebugProcess2::CauseBreak"
+title: IDebugProcess2::CauseBreak | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::CauseBreak
+helpviewer_keywords: IDebugProcess2::CauseBreak
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d00e9c65798388bce6eb426a1c4326db49f0ec80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::CauseBreak
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Las solicitudes que el siguiente programa que es ejecutar código en este alto de proceso y envía un objeto de evento de [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) .  
+# <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
+Las solicitudes que el siguiente código de programa que es ejecución en este proceso se detendrá y enviar un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) objeto de evento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT CauseBreak(   
-   void  
+```cpp  
+HRESULT CauseBreak(   
+   void  
 );  
 ```  
   
-```c#  
-int CauseBreak();  
+```csharp  
+int CauseBreak();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

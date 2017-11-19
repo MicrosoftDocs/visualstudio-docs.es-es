@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Change Formatting in Worksheet Rows Containing Selected Cells | Microsoft Docs'
+title: "Cómo: cambiar mediante programación el formato en filas de hoja de cálculo que contienen celdas seleccionadas | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,61 +15,68 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - worksheets, changing formatting
 ms.assetid: c55cd488-98d1-46c6-9715-0e9212d178de
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d7bb893f21e6d38d117719328f135bcd8e4c05d4
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 2763571f7854653707116d233628e6bff539827f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>How to: Programmatically Change Formatting in Worksheet Rows Containing Selected Cells
-  You can change the font of an entire row that contains a selected cell so that the text is bold.  
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Cómo: Cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación
+  Puede cambiar la fuente de una fila completa que contiene una celda seleccionada para que el texto está en negrita.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>To make the current row bold and the previously bolded row normal  
+### <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Para poner la fila actual en negrita y en negrita fila  
   
-1.  Declare a static variable to keep track of the previously selected row.  
+1.  Declarar una variable estática para realizar un seguimiento de la fila seleccionada anteriormente.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]  [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
+     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
   
-2.  Retrieve a reference to the current cell using the <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> property.  
+2.  Recuperar una referencia a la celda actual mediante el <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> propiedad.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]  [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
+     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
   
-3.  Style the current row bold using the <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> property of the active cell.  
+3.  Estilo de la actual fila negrita mediante el <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> propiedad de la celda activa.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]  [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
+     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
   
-4.  Ensure that the current value of `previousRow` is not 0. A 0 (zero) indicates that this is the first time through this code.  
+4.  Asegúrese de que el valor actual de `previousRow` es no en 0. Un 0 (cero) indica que se trata de la primera vez a través de este código.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]  [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
+     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
   
-5.  Ensure that the current row is different from the previous row.  
+5.  Asegúrese de que la fila actual es distinta de la fila anterior.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]  [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
+     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
   
-6.  Retrieve a reference to a range that represents the row that was previously selected, and set that row to not be bold.  
+6.  Recupere una referencia a un intervalo que representa la fila que se ha seleccionado anteriormente y establezca que esa fila no esté en negrita.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]  [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
+     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
   
-7.  Store the current row so that it can become the previous row on the next pass.  
+7.  Almacenar la fila actual para que se puede convertir en la fila anterior en el siguiente paso.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]  [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
+     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
   
- The following example shows the complete method.  
+ En el siguiente ejemplo se muestra el método completo.  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)] [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]  
+## <a name="example"></a>Ejemplo  
+ [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
+ [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [How to: Programmatically Copy Data and Formatting across Worksheets](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
+ [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Cómo: copiar mediante programación los datos y un formato en hojas de cálculo](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

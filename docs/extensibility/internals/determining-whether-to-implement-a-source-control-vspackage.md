@@ -1,41 +1,42 @@
 ---
-title: "Determinar si se debe implementar en un VSPackage del Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "paquetes de control de origen, acerca de los paquetes de control de código fuente"
+title: "Determinar si se debe implementar un VSPackage de Control de código fuente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Determinar si se debe implementar en un VSPackage del Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Esta sección prepara las opciones de los complementos y control de código fuente VSPackages de control de código fuente de las soluciones de control de código fuente que extienden y proporciona instrucciones generales sobre cómo elegir una ruta de acceso adecuada de integración.  
+# <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Determinar si se debe implementar un VSPackage de Control de código fuente
+Esta sección explican las opciones de los complementos de control de código fuente y el control de código fuente VSPackages para extender el control de código fuente soluciones y proporciona instrucciones generales acerca de cómo elegir una ruta de acceso de integración adecuado.  
   
-## Pequeña solución de control de código fuente con recursos limitados  
- Si ha limitado recursos y no se puede cargar con la sobrecarga de escribir un paquete de control de código fuente, puede crear complementos API\-basados complemento de control de código fuente.  Esto le permitirá trabajar en paralelo con los paquetes de control de código fuente, y cambiar entre los complementos de control de código fuente y paquetes a petición.  Para obtener más información, vea [Selección y registro](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+## <a name="small-source-control-solution-with-limited-resources"></a>Solución de Control de origen pequeñas con recursos limitados  
+ Si dispone de recursos limitados y no puede estar sobrecargado con la sobrecarga de la escritura de un paquete de control de código fuente, puede crear complementos en función de la API de complementos de Control de código fuente. Esto le permite trabajar junto a los paquetes de control de código fuente, y puede cambiar entre los complementos de control de código fuente y los paquetes a petición. Para obtener más información, consulte [registro y la selección](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-## Solución de Control grande de origen con un conjunto de características enriquecidas  
- Si desea implementar una solución de control de código fuente que proporciona un modelo de control de código fuente enriquecido que adecuadamente no se captura mediante el complemento de control de código fuente API, puede considerar un paquete de control de código fuente como la ruta de integración.  Esto se aplica especialmente si reemplazaría suficiente el paquete de adaptador de control de código fuente \(que se comunica con los complementos de control de código fuente y proporciona una interfaz de usuario básica de control de código fuente\) con dispone de modo que puede controlar los eventos de control de código fuente de una manera personalizada.  Si tiene una interfaz de usuario satisfactoria de control de código fuente y la desea ya para conservar esa experiencia en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la opción de paquete de control de código fuente le permite hacer exactamente eso.  El paquete de control de código fuente no es genérico y está diseñado para usarlos con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Solución de Control de código fuente grande con un conjunto enriquecido de características  
+ Si desea implementar una solución de control de origen que proporciona un modelo de control de código fuente completo que no se captura adecuadamente mediante la API de complemento de Control de origen, puede considerar un paquete de control de código fuente como la ruta de acceso de integración. Esto se aplica especialmente si en su lugar debe reemplazar el paquete de adaptador de Control de origen (que se comunica con los complementos de control de código fuente y proporciona un control de código fuente básico UI) con su propia manera que pueda controlar los eventos de control de código fuente de una manera personalizada. Si ya tiene un origen satisfactorio controlar la interfaz de usuario y desea conservar esa experiencia en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la opción de paquete de control de código fuente le permite hacer exactamente eso. El paquete de control de código fuente no es genérico y está diseñado únicamente para su uso con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Si desea implementar una solución de control de código fuente que proporciona flexibilidad y un control más completo sobre la lógica y la interfaz de usuario de control de código fuente, puede optar por la ruta de la integración del paquete de control de código fuente.  Puede realizar lo siguiente:  
+ Si desea implementar una solución de control de origen que proporciona flexibilidad y un mayor control sobre la interfaz de usuario y la lógica de control de código fuente, puede ser preferible la ruta de integración de paquete de control de código fuente. Puede realizar lo siguiente:  
   
-1.  Registre poseen el control de código fuente VSPackage \(vea [Selección y registro](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)\).  
+1.  Registrar su propio control de código fuente VSPackage (vea [registro y la selección de](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Reemplace la interfaz de usuario predeterminada del control de código fuente con la interfaz de usuario personalizada \(vea [Interfaz de usuario personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)\).  
+2.  Reemplazar el control de código fuente predeterminada interfaz de usuario con la interfaz de usuario personalizado (vea [la interfaz de usuario personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Especifique los glifos que se van a utilizar y administrar los eventos de glifo del explorador de soluciones \(vea [Control de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)\).  
+3.  Especifique los glifos que se utilizará y controlar los eventos de glifo del explorador de soluciones (vea [glifo Control](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Edición de consulta ID y eventos Save de la consulta \(vea [Guardar la consulta Editar consulta](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)\).  
+4.  Controlar eventos de consulta editar y guardar consultas (consulte [consulta Editar consulta guardar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
-## Vea también  
- [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="see-also"></a>Vea también  
+ [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 313f89f0fe9a4bf9e9171ebafc866366067ab98c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40196a61c1fdc1dd7f2cf7d75e5fa65fb0580160
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
 La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. Este tema muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.  

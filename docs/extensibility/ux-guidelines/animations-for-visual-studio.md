@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: 2
+caps.latest.revision: "2"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: b36b5e35758ad10109328d6f001e043ad7dcbe15
-ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de animación  
@@ -160,7 +145,7 @@ Muestran información complejas y de variable:
   
 -   Voltear a través de imágenes  
   
-##### <a name="time"></a>Hora  
+##### <a name="time"></a>Tiempo  
   
 -   Cambio de mostrar con el tiempo, el lapso de tiempo y la presentación en pantalla  
   
@@ -228,12 +213,12 @@ Las animaciones en Visual Studio están diseñadas para atender una función esp
   
 Esta ilustración muestra los estilos de animación que se recomienda para Visual Studio. Ninguna animación o sutiles animaciones como fundido de entrada / fundido de salida se utilizan con más frecuencia. Hay limitada para las aplicaciones de animaciones de movimiento como expandir y contraer, X e Y colocar el cambio y la rotación. 
   
-![Estilos de animación recomendados para Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Estilos de animación recomendados para Visual Studio
+![Los estilos de animación recomendados para Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "a_VSAnimStyles 1202")<br />Estilos de animación recomendados para Visual Studio
   
 #### <a name="appear-and-disappear"></a>Aparecen y desaparecen  
 Con este modelo, un elemento cambia del visible fuera de la vista y volver sin una animación de transición.  
   
-![Aparecen y desaparecen animación](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Aparecen y desaparecen animación  
+![Aparecen y desaparecen animación](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "b_AppearAndDisappear 1202")<br />Aparecen y desaparecen animación  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Elementos de interfaz de usuario nuevos que tienen que aparezcan o desaparezcan para que el usuario no se le distraiga ni se puede ver obstruido con forma instantánea. Además, animaciones de movimiento lento podrían considerarse un arrastre de rendimiento, lo que no ocurre con el estilo aparecen y desaparecen.  
@@ -254,7 +239,7 @@ El tiempo de retardo suele ser cero segundos.
 #### <a name="fade-in-and-fade-out"></a>Fundido de entrada y fundido de salida  
 Con este modelo, un elemento de interfaz de usuario realiza la transición de no es visible (0% de opacidad) a visible (100% de opacidad) o viceversa.  
   
-![Animación de fundido de entrada y fundido de salida](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />Animación de fundido de entrada y fundido de salida  
+![Animación de fundido de entrada y fundido de salida](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "c_FadeInFadeOut 1202")<br />Animación de fundido de entrada y fundido de salida  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Esto se recomienda más comúnmente animación de la interfaz de usuario. Es un efecto sutil que agrega interés sin interrumpir el flujo. En algunos casos, el usuario sea consciente de que hay una animación, percibir un suave y hacer fluir de sistema de interfaz de usuario.  
@@ -280,7 +265,7 @@ Esto se recomienda más comúnmente animación de la interfaz de usuario. Es un 
 #### <a name="color-blend-from-a-to-b"></a>Mezcla de colores de la A B  
 Con este modelo, un elemento de interfaz de usuario cambia de color A color B.  
   
-![Animación de mezcla de color](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />Animación de mezcla de color  
+![Animación de mezcla de colores](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "d_ColorBlend 1202")<br />Animación de mezcla de color  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Como una transición animada cuando un elemento de interfaz de usuario cambia el color de un contexto o estado a otro.  
@@ -304,7 +289,7 @@ Como una transición animada cuando un elemento de interfaz de usuario cambia el
 #### <a name="expand-and-contract"></a>Expandir y contraer  
 Con este modelo, un elemento de interfaz de usuario se expande en la X, Y o ambas direcciones.  
   
-![Expandir y contraer de animación](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Expandir y contraer de animación  
+![Expandir y contraer de animación](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "e_ExpandContract 1202")<br />Expandir y contraer de animación  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Como una transición animada cuando un elemento de interfaz de usuario cambia el tamaño de un contexto a otro.  
@@ -328,7 +313,7 @@ Como una transición animada cuando un elemento de interfaz de usuario cambia el
 #### <a name="x-y-position-change"></a>Cambio de posición de X-Y  
 Con este modelo, un elemento de interfaz de usuario cambia su posición X o Y o ambos.  
   
-![Animación de cambio de posición de X-Y](~/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animación de cambio de posición de X-Y  
+![Animación de cambio de posición de X-Y](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "f_XYPositionChange 1202")<br />Animación de cambio de posición de X-Y  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Como una transición animada cuando un elemento de interfaz de usuario cambia de posición de un contexto a otro.  
@@ -351,7 +336,7 @@ Reordenación de pestaña
 #### <a name="rotate"></a>Girar  
 Con este modelo, se gira el elemento de interfaz de usuario.  
   
-![Animación de giro del elemento de interfaz de usuario](~/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animación de giro del elemento de interfaz de usuario  
+![Animación de giro del elemento de interfaz de usuario](../../extensibility/ux-guidelines/media/1202-g_rotate.png "g_Rotate 1202")<br />Animación de giro del elemento de interfaz de usuario  
   
 ##### <a name="correct-usage"></a>Uso correcto  
 Solo para el indicador de progreso de giro indeterminado.  
@@ -370,58 +355,57 @@ Indicador de progreso indeterminada (giro)
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>Acciones de interfaz de usuario comunes de shell y las animaciones recomendadas  
   
 #### <a name="tab-open"></a>Pestaña abierta  
-![Animación de apertura de pestaña](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animación de apertura de pestaña  
+![Ficha animación de apertura](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "h_TabOpen 1202")<br />Animación de apertura de pestaña  
     
 -   Estilo: aparecen  
   
 -   Duración: cero segundos  
 
 #### <a name="tab-close"></a>Cerrar pestaña  
-![Animación de cierre de pestaña](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />Animación de cierre de pestaña  
+![Ficha animación de cierre](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "i_TabClose 1202")<br />Animación de cierre de pestaña  
   
 -   Estilo: Cambiar de posición X  
   
 -   Duración: 200 milisegundos  
   
 #### <a name="tab-reorder"></a>Pestaña volver a ordenar  
-![Animación de reorganización de pestaña en Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Animación de reorganización de pestaña
+![Ficha animación de reorganización en Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "j_TabReorder 1202")<br />Animación de reorganización de pestaña
 
 -   Estilo: Cambiar de posición X  
   
 -   Duración: 200 milisegundos  
     
 #### <a name="close-floating-document"></a>Cerrar documento flotante  
-![Animación de cierre de documento flotante](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Animación de cierre de documento flotante  
+![Cierre flotante animación de documento](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "k_CloseFloatingDocument 1202")<br />Animación de cierre de documento flotante  
    
 -   Estilo: aparecen  
   
 -   Duración: 200 milisegundos   
  
 #### <a name="window-state-transition"></a>Transición de estado de ventana  
-![Animación de transición de estado de ventana](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />Animación de transición de estado de ventana  
+![Animación de transición de estado de ventana](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "l_WindowStateTransition 1202")<br />Animación de transición de estado de ventana  
     
 -   Estilo: para mantener la coherencia con otras ventanas, dejar que el sistema operativo actual definen la animación de cierre de documento.  
   
 -   Duración: 200 milisegundos  
   
 #### <a name="menu-open"></a>Menú Abrir  
-![Animación de apertura de menú](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202-m_MenuOpen")<br />Animación de apertura de menú  
+![Animación de apertura de menú](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "m_MenuOpen 1202")<br />Animación de apertura de menú  
     
 -   Estilo: fundido de entrada  
   
 -   Duración: 200 milisegundos  
   
 #### <a name="menu-close"></a>Cierre de menú  
-![Animación de cierre de menú](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animación de cierre de menú  
+![Animación de cierre de menú](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "n_MenuClose 1202")<br />Animación de cierre de menú  
     
 -   Estilo: fundido de salida  
   
 -   Duración: 200 milisegundos  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Mostrar ventana de herramienta de ocultación automática  
-![Animación de mostrar ventana de herramienta de ocultación automática](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Animación de mostrar ventana de herramienta de ocultación automática  
+![Animación de mostrar ventana de herramienta de ocultación automática](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "o_AutoHideToolWindowReveal 1202")<br />Animación de mostrar ventana de herramienta de ocultación automática  
 
 -   Estilo: aparecen  
   
 -   Duración: cero segundos
-<!-- aaa -->

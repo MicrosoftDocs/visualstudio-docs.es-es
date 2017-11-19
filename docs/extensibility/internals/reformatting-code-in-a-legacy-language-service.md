@@ -4,58 +4,44 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 08d537f003279283509913d5f3d6aaa1bb1c4600
-ms.openlocfilehash: d78fb976b3500a657d080634c6a041c218c3f1a1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b981430e9ce8f6bebf35d49fe1193f1d2097a715
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Cambiar el formato de código en un servicio de lenguaje heredado
 
-En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] código fuente se puede volver a formatear por normalizar el uso de sangrías y espacio en blanco. Esto puede incluir insertar o quitar espacios o tabulaciones al principio de cada línea, agregar nuevas líneas entre las líneas o sustituir los espacios con tabulaciones o tabulaciones con espacios.  
+En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede puede cambiar el código fuente para normalizar el uso de sangrías y espacio en blanco. Esto puede incluir insertar o quitar espacios o tabulaciones al principio de cada línea, agregar nuevas líneas entre las líneas o reemplazar espacios con tabulaciones o tabulaciones con espacios.  
   
->**Nota:** insertar o eliminar caracteres de nueva línea puede afectar a marcadores como puntos de interrupción y marcadores, pero agregar o quitar espacios o tabulaciones no afecta a los marcadores.  
+>**Nota:** insertar o eliminar caracteres de nueva línea puede afectar a los marcadores, como los puntos de interrupción y marcadores, pero agregar o quitar espacios ni tabulaciones no afecta a los marcadores.  
   
-Los usuarios pueden iniciar una operación de volver a seleccionando **la selección de formato** o **dar formato al documento** desde el **avanzadas** menú en el **editar** menú. Una operación de volver a también se desencadena cuando se inserta un fragmento de código o un carácter concreto. Por ejemplo, cuando se escribe una llave de cierre en C#, todo entre la llave de apertura correspondiente y la llave de cierre se aplica sangría automáticamente al nivel adecuado.
+Los usuarios pueden iniciar una operación cambiando el formato seleccionando **la selección de formato** o **dar formato al documento** desde el **avanzadas** menú en el **editar**menú. También puede desencadenarse una operación cambiando el formato cuando se inserta un fragmento de código o un carácter determinado. Por ejemplo, cuando se escribe una llave de cierre en C#, lo que aparece entre la llave de apertura correspondiente y la llave de cierre se aplica sangría automáticamente al nivel adecuado.
   
-Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] envía el **la selección de formato** o **dar formato al documento** comando al servicio de lenguaje, la <xref:Microsoft.VisualStudio.Package.ViewFilter>clase llama al <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>método en la <xref:Microsoft.VisualStudio.Package.Source>clase.</xref:Microsoft.VisualStudio.Package.Source> </xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> </xref:Microsoft.VisualStudio.Package.ViewFilter> Para admitir el formato debe invalidar el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>método y proporcione su propio formato de código.</xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>  
+Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] envía el **la selección de formato** o **dar formato al documento** comando para el servicio de lenguaje, la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase llamadas el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método en la <xref:Microsoft.VisualStudio.Package.Source> clase. Para admitir el formato debe invalidar el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método y proporcionar su propio formato de código.  
   
 ## <a name="enabling-support-for-reformatting"></a>Habilitar la compatibilidad para volver a formatear  
 
-Para admitir el formato, el `EnableFormatSelection` parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>debe establecerse en `true` al registrar el VSPackage.</xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Esto establece el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>propiedad `true`.</xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> El <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>método devuelve el valor de esta propiedad.</xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> Si devuelve true, la <xref:Microsoft.VisualStudio.Package.ViewFilter>clase llama el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.</xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> </xref:Microsoft.VisualStudio.Package.ViewFilter>  
+Para admitir el formato, el `EnableFormatSelection` parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> debe establecerse en `true` al registrar el VSPackage. Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> propiedad `true`. El <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> método devuelve el valor de esta propiedad. Si devuelve true, el <xref:Microsoft.VisualStudio.Package.ViewFilter> clase llamadas el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.  
   
-## <a name="implementing-reformatting"></a>Implementación de volver a formatear
+## <a name="implementing-reformatting"></a>Implementar el cambio de formato
 
-Para implementar el cambio de formato, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.Source>clase e invalidar el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>método.</xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> </xref:Microsoft.VisualStudio.Package.Source> El <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>objeto que describe el intervalo de formato y el <xref:Microsoft.VisualStudio.Package.EditArray>objeto contiene las modificaciones realizadas en el intervalo</xref:Microsoft.VisualStudio.Package.EditArray> </xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> Tenga en cuenta que este intervalo puede ser todo el documento. Sin embargo, puesto que es probable que se realizan varios cambios en el intervalo, todos los cambios deben ser reversibles en una única acción. Para ello, ajustar todos los cambios en un <xref:Microsoft.VisualStudio.Package.CompoundAction>objeto (consulte la sección "Uso de la clase CompoundAction" en este tema).</xref:Microsoft.VisualStudio.Package.CompoundAction>
+Para implementar el nuevo formato, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.Source> clase e invalidar el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método. El <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> objeto describe el intervalo que se va a dar formato y la <xref:Microsoft.VisualStudio.Package.EditArray> objeto contiene las modificaciones realizadas en el intervalo. Tenga en cuenta que este intervalo puede ser todo el documento. Sin embargo, puesto que es probable que se realizan varios cambios en el intervalo, todos los cambios deben ser reversibles en una sola acción. Para ello, incluir todos los cambios en un <xref:Microsoft.VisualStudio.Package.CompoundAction> objeto (consulte la sección "Uso de la clase CompoundAction" en este tema).
 
 ### <a name="example"></a>Ejemplo  
 
-En el ejemplo siguiente se garantiza que hay un espacio después de cada coma en la selección, a menos que el punto y coma seguida por un carácter de tabulación o al final de la línea. Espacios finales después de la última coma en una línea se eliminan. Consulte la sección "Utilizar la clase CompoundAction" en este tema para ver cómo se llama a este método desde el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>método.</xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>  
+En el ejemplo siguiente se garantiza que hay un único espacio después de cada coma en la selección, a menos que el punto y coma seguida por un carácter de tabulación o al final de la línea. Espacios finales después de eliminar la última coma en una línea. Vea la sección "Utilizar la clase CompoundAction" en este tema para ver cómo se llama a este método desde el <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> método.  
 
 ```csharp 
 using Microsoft.VisualStudio.Package;  
@@ -171,11 +157,11 @@ namespace MyLanguagePackage
   
 ## <a name="using-the-compoundaction-class"></a>Uso de la clase CompoundAction  
  
-Todo el nuevo formato realizado en una sección de código debe ser reversible en una única acción. Esto puede realizarse mediante una <xref:Microsoft.VisualStudio.Package.CompoundAction>clase.</xref:Microsoft.VisualStudio.Package.CompoundAction> Esta clase contiene un conjunto de operaciones de edición en el búfer de texto en una operación de edición única.  
+Todas la operación realiza en una sección de código debería ser reversible en una sola acción. Esto puede realizarse mediante un <xref:Microsoft.VisualStudio.Package.CompoundAction> clase. Esta clase ajusta a un conjunto de operaciones de edición en el búfer de texto en una operación de edición único.  
   
 ### <a name="example"></a>Ejemplo
 
-Este es un ejemplo de cómo utilizar la <xref:Microsoft.VisualStudio.Package.CompoundAction>clase.</xref:Microsoft.VisualStudio.Package.CompoundAction> Vea el ejemplo en la sección "Implementación de compatibilidad de formato" en este tema para obtener un ejemplo de la `DoFormatting` (método).  
+Este es un ejemplo de cómo usar la <xref:Microsoft.VisualStudio.Package.CompoundAction> clase. Vea el ejemplo en la sección "Implementación de compatibilidad de formato" en este tema para obtener un ejemplo de la `DoFormatting` método.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

@@ -1,54 +1,53 @@
 ---
-title: "IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadPropertyNames"
+title: IDiaPropertyStorage::ReadPropertyNames | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadPropertyNames
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 338d2c4f59eb9023d8a7d8c8618585bb902785f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadPropertyNames
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera que se corresponden con los nombres de cadena para los identificadores especificados de la propiedad.  
+# <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
+Recupera correspondiente para los nombres de cadena tiene identificadores de propiedad.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp  
+```C++  
 HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
+   ULONG         cpropid,  
+   PROPID const* rgpropid,  
+   BSTR*         rglpwstrName  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `cpropid`  
- \[in\]  número de id. de la propiedad en `rgpropid`.  
+ [in] Número de identificadores de propiedad en `rgpropid`.  
   
  `rgpropid`  
- \[in\]  Matriz de los id. de la propiedad para que obtienen los nombres \(`PROPID` se define en WTypes.h como `ULONG`\).  
+ [in] Matriz de identificadores de propiedad para la que se va a obtener los nombres (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
   
  `rglpwstrName`  
- \[in, out\]  Matriz de los nombres de propiedad para los identificadores. especificados de la propiedad.  La matriz se debe reservar para contener el número solicitado de nombres y debe poder contener por lo menos las cadenas de `cpropid``BSTR` .  
+ [entrada, salida] Matriz de nombres de propiedad para los identificadores de propiedad especificado. La matriz debe estar previamente asignada para contener el número solicitado de nombres de propiedad y debe ser capaz de contener por lo menos `cpropid``BSTR` cadenas.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los nombres de propiedad devueltos deben ser liberados \(llamando a la función de `SysFreeString` \) cuando ya no se necesiten.  
+## <a name="remarks"></a>Comentarios  
+ Los nombres de propiedad devuelto deben ser liberados (mediante una llamada a la `SysFreeString` función) cuando ya no se necesitan.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

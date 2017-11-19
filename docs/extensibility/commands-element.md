@@ -1,32 +1,33 @@
 ---
-title: "Elemento Commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Commands"
-helpviewer_keywords: 
-  - "Elemento Commands (esquema VSCT XML)"
-  - "Elementos de esquema XML VSCT, comandos"
+title: Comandos de elemento | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: Commands
+helpviewer_keywords:
+- Commands element (VSCT XML schema)
+- VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento Commands
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Representa la colección de comandos en la barra de herramientas de VSPackage. La colección puede tener hasta cinco subsecciones, como sigue: menús, grupos, botones, combinaciones y mapas de bits.  
+# <a name="commands-element"></a>Elemento Commands
+Representa la colección de comandos en la barra de herramientas de VSPackage. La colección puede tener hasta cinco subsecciones, como se indica a continuación: menús, grupos, botones, combinaciones y mapas de bits.  
   
- Cada subsección elemento secundario, por ejemplo, \< menú \>, se identifica mediante un identificador de comando único que es un GUID y un par de identificador numérico. El GUID identifica el conjunto de comandos"" y se utiliza para agrupar los comandos relacionados lógicamente. El VSPackage debe definir su propio comando para evitar conflictos con los identificadores de comando que se definen mediante otras VSPackages.  
+ Cada elemento de secundario subsección, por ejemplo, \<menú >, se identifica mediante un identificador de comando único que es un GUID y un par de identificador numérico. El GUID identifica el "conjunto de comandos" y se utiliza para agrupar los comandos relacionados lógicamente. El VSPackage debe definir su propio conjunto de comandos establecido para evitar conflictos con los identificadores de comando que se definen mediante otros VSPackages.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Commands package="GuidMyPackage" >  
@@ -38,38 +39,57 @@ Representa la colección de comandos en la barra de herramientas de VSPackage. L
 </Commands>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|paquete|Un GUID que identifica el paquete VSPackage que proporciona los comandos.<br /><br /> Por ejemplo, empaquetar \= "guidVsPackage1Pkg".|  
+|---------------|-----------------|  
+|paquete|Un GUID que identifica el VSPackage que se muestran los comandos.<br /><br /> Por ejemplo, empaquetar = "guidVsPackage1Pkg".|  
   
-### Elementos secundarios  
-  
-|Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento de menús](../extensibility/menus-element.md)|Define todos los menús que implementa un VSPackage.|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comando en un VSPackage.|  
-|[Elemento de botones](../extensibility/buttons-element.md)|Agrupa los elementos de botón.|  
-|[Elemento de mapas de bits](../extensibility/bitmaps-element.md)|Agrupa elementos de mapa de bits.|  
-|[Elemento de cuadro combinado](../extensibility/combos-element.md)|Agrupa los elementos del cuadro combinado.|  
-  
-### Elementos primarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que proporciona un paquete VSPackage al IDE. Posibles elementos son elementos de menú, menús, barras de herramientas y cuadros combinados.|  
+|-------------|-----------------|  
+|[Menus (Elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un paquete VSPackage.|  
+|[Groups (Elemento)](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos en un paquete VSPackage.|  
+|[Buttons (Elemento)](../extensibility/buttons-element.md)|Agrupa elementos de botón.|  
+|[Bitmaps (Elemento)](../extensibility/bitmaps-element.md)|Agrupa elementos de mapa de bits.|  
+|[Combos (Elemento)](../extensibility/combos-element.md)|Agrupa elementos combinados.|  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo utilizar un [Commands Element](../extensibility/commands-element.md).  
+### <a name="parent-elements"></a>Elementos primarios  
+  
+|Elemento|Descripción|  
+|-------------|-----------------|  
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un VSPackage proporciona al IDE. Posibles elementos son elementos de menú, menús, barras de herramientas y cuadros combinados.|  
+  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo utilizar un [Commands, elemento](../extensibility/commands-element.md).  
   
 ```  
-<Commands package="guidMyPackage"> <Menus> <Menu Condition="'%(DEBUG)' != 'true'" guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu" priority="0x0000" type="Menu"> <Annotation> <Documentation>this is an annotation</Documentation> <AppInfo> <CustomData> <CustomSubElement>Some data</CustomSubElement> </CustomData> </AppInfo> </Annotation> <CommandFlag>AlwaysCreate</CommandFlag> <Strings> <ButtonText>MainMenu</ButtonText> </Strings> </Menu> </Menus> <Commands>  
+<Commands package="guidMyPackage">  
+    <Menus>  
+      <Menu Condition="'%(DEBUG)' != 'true'"   
+        guid="cmdSetGuidMyProductCommands" id="menuIDMainMenu"   
+        priority="0x0000" type="Menu">  
+        <Annotation>  
+          <Documentation>this is an annotation</Documentation>  
+          <AppInfo>  
+            <CustomData>  
+              <CustomSubElement>Some data</CustomSubElement>  
+            </CustomData>  
+          </AppInfo>  
+        </Annotation>  
+        <CommandFlag>AlwaysCreate</CommandFlag>  
+        <Strings>  
+          <ButtonText>MainMenu</ButtonText>  
+        </Strings>  
+      </Menu>  
+  </Menus>  
+<Commands>  
 ```  
   
-## Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Barras de herramientas, menús y comandos](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Vea también  
+ [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

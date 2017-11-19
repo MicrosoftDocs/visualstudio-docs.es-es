@@ -1,72 +1,73 @@
 ---
-title: "Uso de marcadores de texto con la API heredada | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK] heredados - marcadores de texto"
+title: Uso de marcadores de texto con la API heredado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Uso de marcadores de texto con la API heredada
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un marcador de texto es un intervalo flotante de texto en un búfer que pueda afectar a la presentación y el comportamiento de un área de texto.  Puntos de interrupción de inclusión de los marcadores, marcadores, subrayado ondulado, y áreas de solo lectura.  Marcadores de texto son básicamente diferentes en función de la sintaxis.  El color de la sintaxis es una forma rápida de comunicar la sintaxis del lenguaje que está asociado a un área de texto.  El color de la sintaxis se solicita normalmente cuando Windows redibuja en la pantalla, cuando la velocidad es importante.  El color de la sintaxis sólo cambia el color del texto.  Marcadores de texto pueden cambiar muchas otras propiedades de texto.  Marcadores de texto pueden “float” y aplican comportamiento y color especiales.  
+# <a name="using-text-markers-with-the-legacy-api"></a>Uso de marcadores de texto con la API heredado
+Un marcador de texto es un intervalo de punto flotante de texto en un búfer que puede afectar a la presentación y el comportamiento de un área de texto. Los marcadores incluyen los puntos de interrupción, marcadores, subrayado ondulado de color y las áreas de solo lectura. Marcadores de texto son básicamente diferentes de colores de sintaxis. Colorear la sintaxis es un método rápido para comunicar la sintaxis del lenguaje que está asociada a un área de texto. Colorear la sintaxis generalmente se solicita cuando Windows se vuelve a dibujar la pantalla, cuando la velocidad es importante. Colorear la sintaxis cambia sólo el color del texto. Marcadores de texto pueden cambiar muchas otras propiedades de texto. Marcadores de texto pueden "flotar" y aplicar un comportamiento especial y color.  
   
- Debido al asociado de rendimiento con marcadores de texto, no cree muchos marcadores para los búferes de texto.  Actualizan a cada marcador cada vez que un usuario edita el contenido del búfer.  
+ Debido a la sobrecarga de rendimiento asociada a los marcadores de texto, no cree muchos marcadores para los búferes de texto. Cada marcador se actualiza cada vez que un usuario edita el contenido del búfer.  
   
 > [!NOTE]
->  Los usuarios pueden cambiar el color de un marcador visible tipo pero sin su forma y estilo.  Para obtener más información, vea [Fuentes y colores, Entorno, Opciones \(Cuadro de diálogo\)](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+>  Los usuarios pueden cambiar el color de un tipo de marcador visible, pero no su forma y el estilo. Para obtener más información, consulte [fuentes y colores, entorno, cuadro de diálogo Opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
-## Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados  
   
 |Título|Descripción|  
-|------------|-----------------|  
-|[Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)|Describe cómo agregar un tipo de marcador de texto estándar proporcionado por el editor básico de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a una vista de texto.|  
-|[Cómo: implementar marcadores de Error](../extensibility/how-to-implement-error-markers.md)|Describe cómo implementar una instancia del marcador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se utiliza para indicar errores mediante subrayado ondulados rojos.|  
-|[Cómo: crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)|Describe cómo crear y agregar un marcador de texto personalizado escrito en una vista de texto.|  
+|-----------|-----------------|  
+|[Cómo: agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)|Describe cómo agregar un tipo de marcador de texto estándar proporcionado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal a una vista de texto.|  
+|[Cómo: implementar marcadores de Error](../extensibility/how-to-implement-error-markers.md)|Describe cómo implementar una instancia de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marcador que se usa para indicar los errores mediante el uso de un subrayado ondulado rojo.|  
+|[Cómo: crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)|Describe cómo crear y agregar un tipo de marcador de texto personalizado a una vista de texto.|  
 |[Cómo: utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica cómo agregar marcadores de texto.|  
-|[Dentro del Editor de núcleo](../extensibility/inside-the-core-editor.md)|Describe las características del editor básico y proporciona detalles sobre cómo personalizar el editor básico.|  
-|[Editor Features](http://msdn.microsoft.com/es-es/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Describe las características disponibles en el editor de la base de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .|  
+|[Dentro del Editor de núcleo](../extensibility/inside-the-core-editor.md)|Describe las características del editor principal y proporciona detalles sobre cómo personalizar el editor principal.|  
+|[Características del Editor](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Describe las características disponibles en la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal.|  
   
-## Referencia  
+## <a name="reference"></a>Referencia  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Proporciona un mecanismo uniforme para obtener más información sobre un tipo específico de marcador de texto, es predefinido por el editor o registrado por un VSPackage.  
+ Proporciona un mecanismo uniforme para obtener información sobre un tipo de marcador de un texto específico, ya sea predefinidos por el editor o registrado por un paquete VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- Proporciona acceso a y contiene la posición de un marcador de texto en un búfer de texto mediante coordenadas bidimensionales.  
+ Proporciona acceso a y ajusta la posición de un marcador de texto en un búfer de texto utilizando las coordenadas bidimensionales.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- Proporciona los métodos para administrar marcadores de texto.  
+ Proporciona métodos para administrar los marcadores de texto.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Proporciona las devoluciones de llamada a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE y otros procesos que se utilizan para ajustar un marcador de texto.  
+ Proporciona las devoluciones de llamada para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE y otros procesos que se utilizan para ajustar un marcador de texto.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Extiende la funcionalidad disponible a través de la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> proporcionando devoluciones adicionales.  
+ Extiende la funcionalidad que está disponible a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz proporcionando las devoluciones de llamada adicionales.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Extiende la funcionalidad disponible a través de la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> proporcionando devoluciones adicionales.  
+ Extiende la funcionalidad que está disponible a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz proporcionando las devoluciones de llamada adicionales.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- Permite a un tipo de marcador para determinar si otros tipos de marcador comparten el mismo conjunto de colores.  
+ Permite que un tipo de marcador determinar si otros tipos de marcador comparten el mismo conjunto de colores.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Proporciona el contexto para marcadores de texto en el editor básico.  Para cada marcador de texto escriba que esté en el editor básico, el IDE crea un objeto independiente de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> .  
+ Proporciona contexto para los marcadores de texto en el editor principal. Para cada tipo de marcador de texto que se encuentra en el editor básico, el IDE crea otro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> objeto.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- Un controlador que se proporciona para los marcadores cuyos glifos admiten la edición de arrastrar y colocar.  un glifo es un icono que indica la posición de un marcador.  
+ Un controlador que se proporciona para los marcadores cuyos glifos admiten la edición de arrastrar y colocar. Un glifo es un icono que indica la posición de un marcador.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Devuelve una interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> de un servicio que proporciona los marcadores de texto al otro VSPackages.  
+ Devuelve un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interfaz desde un servicio que proporciona un texto de marcadores para otros VSPackages.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Proporciona acceso a y contiene la posición de un marcador de texto en un búfer de texto mediante coordenadas unidimensionales.  si es posible, no utilice esta interfaz.
+ Proporciona acceso a y ajusta la posición de un marcador de texto en un búfer de texto utilizando las coordenadas unidimensionales. Si es posible, no utilice esta interfaz.

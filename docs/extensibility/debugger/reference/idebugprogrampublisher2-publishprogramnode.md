@@ -1,55 +1,55 @@
 ---
-title: "IDebugProgramPublisher2::PublishProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramPublisher2::PublishProgramNode"
-helpviewer_keywords: 
-  - "IDebugProgramPublisher2::PublishProgramNode"
+title: IDebugProgramPublisher2::PublishProgramNode | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramPublisher2::PublishProgramNode
+helpviewer_keywords: IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 49b510ec131a58778941ae925120fb58097b1db7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramPublisher2::PublishProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Crea un nodo de programa disponibles para uso de los motores de \(DEs\) depuración y administradores de depuración de la sesión \(SDM\).  
+# <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
+Realiza un nodo programa disponible para su uso por motores de depuración (DEs) y la sesión de depuración administrador (SDM).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT PublishProgramNode(  
-   IDebugProgramNode2 *pProgramNode  
+HRESULT PublishProgramNode(  
+   IDebugProgramNode2 *pProgramNode  
 );  
 ```  
   
-```c#  
-int PublishProgramNode(  
-   IDebugProgramNode2 pProgramNode  
+```csharp  
+int PublishProgramNode(  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pProgramNode`  
- \[in\]  Un objeto de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa el nodo del programa que estén disponibles.  
+ [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa para que estén disponibles.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Este método permite que los programas se ven para información antes de seleccionarlos e iniciar para depurar.  
+## <a name="remarks"></a>Comentarios  
+ Este método permite a los programas consultar la información antes de seleccionar e iniciar ellos para la depuración.  
   
- Para quitar un nodo de programa de disponibilidad, llame al método de [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) .  
+ Para quitar un nodo de programa de disponibilidad, llame a la [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

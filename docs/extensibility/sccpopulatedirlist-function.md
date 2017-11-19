@@ -1,73 +1,73 @@
 ---
-title: "SccPopulateDirList (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccPopulateDirList"
-helpviewer_keywords: 
-  - "SccPopulateDirList (función)"
+title: "Función SccPopulateDirList | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccPopulateDirList
+helpviewer_keywords: SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ec22eaeaf24af1c65823c64c65dd2c39f1003ec8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccPopulateDirList (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta función determina qué directorios y archivos \(opcionalmente\) se almacenan en el control de código fuente, dada una lista de directorios para examinar.  
+# <a name="sccpopulatedirlist-function"></a>SccPopulateDirList (función)
+Esta función determina qué directorios y archivos (opcionalmente) se almacenan en el control de código fuente, dada una lista de directorios que se va a examinar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-SCCRTN SccPopulateDirList(  
-   LPVOID        pContext,  
-   LONG          nDirs,  
-   LPCSTR*       lpDirPaths,  
-   POPDIRLISTFUNCpfnPopulate,  
-   LPVOID        pvCallerData,  
-   LONG          fOptions  
+SCCRTN SccPopulateDirList(  
+   LPVOID        pContext,  
+   LONG          nDirs,  
+   LPCSTR*       lpDirPaths,  
+   POPDIRLISTFUNCpfnPopulate,  
+   LPVOID        pvCallerData,  
+   LONG          fOptions  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- \[in\] El puntero de contexto de complemento de control de código fuente.  
+ [in] El puntero de contexto de complemento de control de código fuente.  
   
  nDirs  
- \[in\] Número de rutas de acceso del directorio en el `lpDirPaths` matriz.  
+ [in] Número de rutas de acceso de directorios en el `lpDirPaths` matriz.  
   
  lpDirPaths  
- \[in\] Matriz de rutas de directorio para examinar.  
+ [in] Matriz de rutas de acceso de directorios para examinar.  
   
  pfnPopulate  
- \[in\] Función de devolución de llamada para llamar para cada nombre de archivo en la ruta de acceso de directorio y \(opcionalmente\) `lpDirPaths` \(consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información\).  
+ [in] Función de devolución de llamada que se llama para cada ruta de acceso de directorio y (opcionalmente) en nombre de archivo en `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obtener más información).  
   
  pvCallerData  
- \[in\] Valor que se pasa sin cambios a la función de devolución de llamada.  
+ [in] Valor que se pasa sin cambios a la función de devolución de llamada.  
   
- Opciones  
- \[in\] Una combinación de valores que controlan cómo se procesan los directorios \(consulte la sección "PopulateDirList marcas" de [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) posibles valores\).  
+ fOptions  
+ [in] Una combinación de valores que controlan cómo se procesan los directorios (vea la sección "PopulateDirList marcas" de [marcadores de bits utilizado por determinados comandos](../extensibility/bitflags-used-by-specific-commands.md) para los valores posibles).  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|La operación se completó correctamente.|  
-|SCC\_E\_UNKNOWNERROR|Error.|  
+|SCC_OK|La operación se completó correctamente.|  
+|SCC_E_UNKNOWNERROR|Error.|  
   
-## Comentarios  
- Sólo esos directorios y \(opcionalmente\) los nombres de archivo que están realmente en el repositorio de control de código fuente se pasan a la función de devolución de llamada.  
+## <a name="remarks"></a>Comentarios  
+ Solo los directorios y (opcionalmente los nombres de archivo que están realmente en el repositorio de control de código fuente) se pasan a la función de devolución de llamada.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [Marcadores de bits que se utilizan los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Marcadores de bits utilizada por los comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Códigos de error](../extensibility/error-codes.md)

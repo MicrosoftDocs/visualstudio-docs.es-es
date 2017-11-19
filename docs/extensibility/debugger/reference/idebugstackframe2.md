@@ -1,65 +1,65 @@
 ---
-title: "IDebugStackFrame2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2"
-helpviewer_keywords: 
-  - "Interfaz IDebugStackFrame2"
+title: IDebugStackFrame2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2
+helpviewer_keywords: IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4d7c08cd7fc89e33ef9d505c9e32c23737ef7e84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Esta interfaz representa un solo marco de pila en una pila de llamadas en un subproceso concreto.  
+# <a name="idebugstackframe2"></a>IDebugStackFrame2
+Esta interfaz representa un marco de pila solo en una pila de llamadas en un subproceso determinado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugStackFrame2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- El motor de depuración \(DE\) implementa esta interfaz para representar un marco de pila.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ El motor de depuración (Alemania) implementa esta interfaz para representar un marco de pila.  
   
-## Notas para los llamadores  
- llamada [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para recuperar una interfaz de [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) .  Llame a [Siguiente](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) para recuperar una estructura de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que contiene la interfaz de `IDebugStackFrame2` .  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Llame a [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) para recuperar un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz. Llame a [siguiente](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) para recuperar un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura que contiene el `IDebugStackFrame2` interfaz.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugStackFrame2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugStackFrame2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Obtiene el contexto de código para este marco de pila.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Obtiene el contexto del documento para este marco de pila.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Obtiene el contexto del código para este marco de pila.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Obtiene el contexto del documento de este marco de pila.|  
 |[GetName](../../../extensibility/debugger/reference/idebugstackframe2-getname.md)|Obtiene el nombre del marco de pila.|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)|Obtiene una descripción del marco de pila.|  
-|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtiene una representación equipo\-dependiente de intervalo de direcciones físicas asociado a un marco de pila.|  
-|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtiene un contexto de evaluación para realizar la evaluación de expresiones en el contexto actual de un marco de pila y un subproceso.|  
+|[GetPhysicalStackRange](../../../extensibility/debugger/reference/idebugstackframe2-getphysicalstackrange.md)|Obtiene una representación dependientes del equipo del intervalo de direcciones físicas asociado a un marco de pila.|  
+|[GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)|Obtiene un contexto de evaluación para realizar la evaluación de expresiones en el contexto actual de un marco de pila y subproceso.|  
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugstackframe2-getlanguageinfo.md)|Obtiene el idioma asociado a un marco de pila.|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtiene una descripción de las propiedades asociadas con un marco de pila.|  
-|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para las propiedades de marco de pila.|  
-|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|obtiene el subproceso asociado con un marco de pila.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)|Obtiene una descripción de las propiedades asociadas a un marco de pila.|  
+|[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|Crea un enumerador para la pila de propiedades del marco.|  
+|[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|Obtiene el subproceso asociado a un marco de pila.|  
   
-## Comentarios  
- Se obtiene esta interfaz cuando el programa que se depura se ha detenido en un punto de interrupción \(provocado por un punto de interrupción del conjunto de usuarios o una excepción\).  De esta interfaz, un contexto de expresiones se pueden recopilar para evaluar expresiones, una lista de registros puede ser devuelta, o la pila de llamadas puede obtenerse y ser examinada.  
+## <a name="remarks"></a>Comentarios  
+ Esta interfaz se obtiene cuando se ha detenido el programa que se está depurando en un punto de interrupción (ya sea causada por un punto de interrupción definidos por el usuario o una excepción). De esta interfaz, se puede obtener el contexto de una expresión para evaluar expresiones, se puede devolver una lista de registros o pueden obtener y examinar la pila de llamadas.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)
+## <a name="see-also"></a>Vea también  
+ [Interfaces básicas](../../../extensibility/debugger/reference/core-interfaces.md)

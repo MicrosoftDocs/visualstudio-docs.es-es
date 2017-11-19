@@ -1,55 +1,55 @@
 ---
-title: "FuncDebugEnd | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FuncDebugEnd (símbolo)"
-  - "depuración [Kit de desarrollo DIA], punto de conexión de servicio"
+title: FuncDebugEnd | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- FuncDebugEnd symbol
+- debugging [DIA SDK], end point
 ms.assetid: 68f84fff-7cd3-4636-b929-7063a45009f8
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b81665c4709eb76b28f2e56dd83915fab66bbd4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# FuncDebugEnd
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Si una función tiene un punto definido en el que la depuración esté final, el punto inicial de depuración se identifica por un símbolo con una etiqueta de `SymTagFuncDebugEnd` .  
+# <a name="funcdebugend"></a>FuncDebugEnd
+Si una función tiene un punto definido en el que la depuración consiste en Finalizar, el punto de inicio de depuración se indican mediante un símbolo con un `SymTagFuncDebugEnd` etiqueta.  
   
-## Propiedades  
- La tabla siguiente se muestran las propiedades que son válidas para este tipo de token.  
+## <a name="properties"></a>Propiedades  
+ En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Propiedad.|Tipo de datos|Descripción|  
-|----------------|-------------------|-----------------|  
-|[IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|desplazamiento de ubicación; para obtener información detallada, vea [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte de la sección de ubicación; para obtener información detallada, vea [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` si la función utiliza una convención de llamada personalizada \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` si la función realiza un aún return \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` si la función contiene un retorno de la interrupción \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` si la función es estática \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Token para la función envolvente.|  
-|[IDiaSymbol::get\_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Identificador del token primario léxico.|  
-|[IDiaSymbol::get\_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Los extremos tienen ubicación estática; para obtener información detallada, vea [Symbol Locations](../../debugger/debug-interface-access/symbol-locations.md).|  
-|[IDiaSymbol::get\_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE` si la función se ha especificado con el atributo de [noinline](/visual-cpp/cpp/noinline) \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE` si la función se ha especificado con el atributo de [noreturn](/visual-cpp/cpp/noreturn) \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE` si la función nunca se denomina \(sólo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|`LONG`|Desplazamiento de símbolos en memoria; para obtener información detallada, vea [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md), `LocIsRegRel`.|  
-|[IDiaSymbol::get\_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE` si la función tiene información de depuración para el código optimizado \(solo en el diámetro SDK V8.0 o posterior\).|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolos.|  
-|[IDiaSymbol::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Posición relativa del final de esta función dentro del módulo.|  
-|[IDiaSymbol::get\_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|devuelve `SymTagFuncDebugEnd` \(uno de los valores de [SymTagEnum \(Enumeración\)](../../debugger/debug-interface-access/symtagenum.md) \).|  
-|[IDiaSymbol::get\_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|posición de esta función dentro de la imagen ejecutable.|  
+|Propiedad|Tipo de datos|Descripción|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Desplazamiento de la parte de la ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte de la sección de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE`Si la función utiliza una convención de llamada personalizada (sólo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE`Si la función realiza un retorno lejano (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`Si la función contiene un retorno de la interrupción (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`Si la función es estática (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la función envolvente.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Id. del símbolo léxico primario.|  
+|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Dos puntos finales tienen una ubicación estática; Para obtener más información, consulte [ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md).|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE`Si la función se ha especificado con el [noinline](/cpp/cpp/noinline) atributo (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE`Si la función se ha especificado con el [noreturn](/cpp/cpp/noreturn) atributo (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE`Si nunca se llama a la función (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|`LONG`|Desplazamiento de símbolos en memoria; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md), `LocIsRegRel`.|  
+|[IDiaSymbol::get_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE`Si la función tiene información de depuración para el código optimizado (solo en V8.0 de SDK de DIA o posterior).|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolos.|  
+|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Posición relativa del final de esta función dentro de su módulo.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagFuncDebugEnd` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|  
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posición de esta función en la imagen ejecutable.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md)   
- [Symbol Locations](../../debugger/debug-interface-access/symbol-locations.md)
+ [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md)   
+ [Ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md)

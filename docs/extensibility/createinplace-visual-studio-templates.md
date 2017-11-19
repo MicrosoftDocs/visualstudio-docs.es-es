@@ -1,60 +1,65 @@
 ---
-title: "CreateInPlace (Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace"
-helpviewer_keywords: 
-  - "<CreateInPlace> (elemento) [plantillas de Visual Studio]"
-  - "CreateInPlace (elemento) [plantillas de Visual Studio]"
+title: CreateInPlace (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
+helpviewer_keywords:
+- CreateInPlace element [Visual Studio Templates]
+- <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CreateInPlace (Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica si se creará el proyecto y se efectuarán los reemplazos de parámetros en la ubicación indicada, o bien si el reemplazo se realizará en una ubicación temporal y luego se guardará el proyecto en la ubicación especificada.  
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Plantillas de Visual Studio)
+Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<CreateInPlace >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <CreateInPlace> true/false </CreateInPlace>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`.  Si es `true`, se crea el proyecto y el reemplazo de parámetros se realiza en la ubicación especificada en el cuadro de diálogo **Nuevo proyecto**.  Si es `false`, el reemplazo de parámetros se realiza en una ubicación temporal y el proyecto se copia a continuación a la ubicación especificada.  
+ El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y reemplazo de parámetros se realiza en la ubicación especificada en el **nuevo proyecto** cuadro de diálogo. Si `false`, reemplazo de parámetros se realiza en una ubicación temporal y, a continuación, se copia el proyecto en la ubicación especificada.  
   
-## Comentarios  
- `CreateInPlace` es un elemento opcional.  El valor predeterminado es `true`.  
+## <a name="remarks"></a>Comentarios  
+ `CreateInPlace` es un elemento opcional. El valor predeterminado es `true`.  
   
-## Ejemplo  
- En el ejemplo siguiente se ilustran los metadatos para una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +86,6 @@ Especifica si se creará el proyecto y se efectuarán los reemplazos de parámet
 </VSTemplate>  
 ```  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

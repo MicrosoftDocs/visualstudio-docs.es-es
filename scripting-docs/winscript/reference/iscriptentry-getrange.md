@@ -1,27 +1,30 @@
 ---
-title: "IScriptEntry::GetRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptEntry::GetRange | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptEntry.GetRange
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptEntry::GetRange"
+helpviewer_keywords: IScriptEntry::GetRange
 ms.assetid: 3ac18f0a-b470-4f4d-b8f5-2da3fdef74f1
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptEntry::GetRange
-Devuelve la posición inicial y la longitud de una entrada.  
+# <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
+Devuelve la posición de inicio y la longitud de una entrada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetRange(  
@@ -30,29 +33,29 @@ HRESULT GetRange(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pichMin`  
- \[out\] objetos que especifican un bloque script, la cual 0 For `IScriptEntry` .  
+ [out] Para `IScriptEntry` objetos que especifican un bloque de script, devuelve 0.  
   
- Para los objetos de `IScriptEntry` que especifican un objeto de función, la cual la posición inicial de la función en el bloque actual del script.  
+ Para `IScriptEntry` objetos que especifican un objeto de función, se devuelve la posición inicial de la función en el bloque de script actual.  
   
- Para los objetos de `IScriptScriptlet` , retornos 0.  
+ Para `IScriptScriptlet` los objetos, devuelve 0.  
   
  `pcch`  
- \[out\] objetos que especifican un bloque script, la cual For `IScriptEntry` la longitud del texto.  
+ [out] Para `IScriptEntry` objetos que especifican un bloque de script, se devuelve la longitud del texto.  
   
- Para los objetos de `IScriptEntry` que especifican un objeto de función, la cual la longitud de la definición de función.  
+ Para `IScriptEntry` objetos que especifican un objeto de función, devuelve la longitud de la definición de función.  
   
- Para los objetos de `IScriptScriptlet` , la cual la longitud de la entrada.  
+ Para `IScriptScriptlet` los objetos, devuelve la longitud de la entrada.  
   
-## Valor devuelto  
- Interfaz `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
   
-## Vea también  
- [IScriptEntry \(Interfaz\)](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

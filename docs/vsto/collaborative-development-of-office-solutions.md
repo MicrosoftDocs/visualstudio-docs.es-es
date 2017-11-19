@@ -1,52 +1,54 @@
 ---
-title: "Desarrollo en colaboraci&#243;n de las soluciones de Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo en colaboración [desarrollo de Office en Visual Studio]"
-  - "aplicaciones de Office [desarrollo de Office en Visual Studio], desarrollo en colaboración"
-  - "desarrollo de Office en Visual Studio, colaboración"
-  - "control de código fuente [desarrollo de Office en Visual Studio]"
+title: "Desarrollo en colaboración de las soluciones de Office | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], collaborative development
+- Office development in Visual Studio, collaboration
+- source control [Office development in Visual Studio]
+- collaborative development [Office development in Visual Studio]
 ms.assetid: c493354b-17d3-4e50-85f0-968b104bc978
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 94313e1e7cb8d6f36c5c8bfb505d280f4e235a3b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Desarrollo en colaboraci&#243;n de las soluciones de Office
-  En un proyecto de Office pueden trabajar varios desarrolladores del mismo modo que colaboran en otros proyectos de Visual Studio.  Visual Studio localiza correctamente la instalación de Microsoft Office en cada uno de los equipos, incluso en caso de que Office esté instalado en distintas ubicaciones.  Sin embargo, hay algunas consideraciones importantes que deben tenerse en cuenta.  
+# <a name="collaborative-development-of-office-solutions"></a>Desarrollo en colaboración de las soluciones de Office
+  Varios desarrolladores pueden trabajar en un proyecto de Office de la misma manera que colaboran en otros proyectos de Visual Studio. Visual Studio localiza correctamente la instalación de Microsoft Office en cada equipo, incluso si Office se instala en distintas ubicaciones. Sin embargo, hay algunas consideraciones importantes a tener en cuenta.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Las propiedades de depuración no se comparten  
- Las propiedades de depuración no se comparten entre los distintos usuarios mediante el control de código fuente.  Los proyectos de Visual Basic y Visual C\# almacenan las propiedades de depuración en un archivo específico para cada usuario \(*nombreDeProyecto*.vbproj.user o *nombreDeProyecto*.csproj.user\) y este archivo no está sometido al control de código fuente.  Si hay varias personas depurando, cada una de ellas debe introducir las propiedades de depuración manualmente.  
+## <a name="debug-properties-are-not-shared"></a>Depuración no se comparten propiedades  
+ Las propiedades de depuración no se comparten entre varios usuarios cuando se trabaja con control de código fuente. Proyectos de Visual Basic y Visual C# almacenan las propiedades de depuración en un archivo específico del usuario (*ProjectName*. vbproj.user o *ProjectName*. csproj.user), y este archivo no está bajo control de código fuente. Si hay más de una persona depurando, cada una debe introducir manualmente las propiedades de depuración.  
   
- Si el proyecto está alojado en un recurso compartido de red en lugar de estarlo en el sistema de control de código fuente, deben realizarse algunos pasos adicionales para permitir que los desarrolladores que trabajan en equipo puedan abrir la solución y probar el ensamblado.  
+ Si el proyecto se aloja en un recurso compartido de red en lugar de en el control de código fuente, deben realizarse algunos pasos adicionales para habilitar los desarrolladores colaborar para abrir la solución y probar el ensamblado.  
   
-## Los controles de código fuente requieren la desprotección de todos los archivos  
- Si utiliza un control de código fuente para los proyectos, deberá desproteger todos los archivos bajo un archivo de código en el **Explorador de soluciones** \(como los archivos ThisDocument, ThisWorkbook o ThisAddIn\) cada vez que cambie el archivo de código, incluso los archivos que están ocultos de manera predeterminada.  Si desprotege sólo el archivo de código de nivel superior, pueden que se pierdan los cambios.  
+## <a name="source-control-requires-checking-out-all-files"></a>Control de código fuente requiere la desprotección de todos los archivos  
+ Si usa control de código fuente para los proyectos, debe comprobar todos los archivos en un archivo de código en **el Explorador de soluciones** (por ejemplo, los archivos de código ThisAddIn, ThisWorkbook o ThisDocument) cada vez que cambie el archivo de código, incluso el archivos que están ocultos de forma predeterminada. Si desprotege el archivo de código de nivel superior, podrían perderse los cambios.  
   
- Después de realizar los cambios, proteja de nuevo todos los archivos.  Para obtener más información sobre los archivos de código ocultos en los proyectos, vea [Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
+ Después de realizar los cambios, compruebe que todos los archivos de nuevo. Para obtener más información acerca de los archivos de código oculto en los proyectos, vea [proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-## Seguridad para la colaboración informal en una red  
- En todas las soluciones de nivel de documento incluidas en una ubicación de red \(como \\\\*nombreDeServidor*\\*nombreDeRecursoCompartido*\), se debe agregar la ubicación completa a la lista de carpetas de confianza en la aplicación de Microsoft Office con la que está trabajando.  Seleccione la opción para incluir los subdirectorios bajo la carpeta principal o bien agregue específicamente las carpetas de depuración y compilación a la lista de carpetas de confianza.  Para obtener más información sobre cómo hacerlo, vea [Otorgar confianza a los documentos](../vsto/granting-trust-to-documents.md).  
+## <a name="security-for-informal-collaboration-on-a-network"></a>Seguridad para la colaboración Informal en una red  
+ Para todas las soluciones de nivel de documento que se encuentran en una ubicación de red (como \\ \\ *Servername*\\*Sharename*), la ubicación completa debe agregarse a la lista de carpetas de confianza en la aplicación de Microsoft Office que está trabajando. Seleccione la opción para incluir los subdirectorios en la carpeta principal, o específicamente agregue debug y crear carpetas a la lista de carpetas de confianza. Para obtener más información acerca de cómo hacerlo, consulte [otorgar confianza a los documentos](../vsto/granting-trust-to-documents.md).  
   
- Las contraseñas no protegen los certificados temporales que se generan automáticamente en tiempo de compilación.  Los certificados contienen el nombre de inicio de sesión del programador y otros datos personales.  Si implementa personalizaciones firmadas por certificados temporales, otros podrían poder tener acceso a esta información.  
+ Los certificados temporales que se generan automáticamente en tiempo de compilación no están protegidos por las contraseñas. Los certificados contienen el nombre de inicio de sesión del desarrollador y otra información personal. Si implementa personalizaciones firmadas por certificados temporales, otros usuarios puede tener acceso a esta información.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Asegurar las soluciones de Office](../vsto/securing-office-solutions.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
- [Compilar soluciones de Office](../vsto/building-office-solutions.md)  
+ [Compilación de soluciones de Office](../vsto/building-office-solutions.md)  
   
   

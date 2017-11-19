@@ -1,58 +1,58 @@
 ---
-title: "IDebugPortRequest2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortRequest2"
-helpviewer_keywords: 
-  - "Interfaz IDebugPortRequest2"
+title: IDebugPortRequest2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortRequest2
+helpviewer_keywords: IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f494eb3a48818323eedcb958a4126857b8d7ef5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortRequest2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-esta interfaz describe un puerto.  Esta descripción se utiliza para agregar el puerto a un proveedor de puerto.  
+# <a name="idebugportrequest2"></a>IDebugPortRequest2
+Esta interfaz describe un puerto. Esta descripción se utiliza para agregar el puerto a un proveedor de puerto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugPortRequest2 : IUnknown  
 ```  
   
-## Notas para los implementadores  
- Visual Studio implementará normalmente esta interfaz actual de obtener un puerto de depuración de un proveedor de puerto.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Normalmente, Visual Studio implementa esta interfaz en el proceso de obtención de un puerto de depuración de un proveedor del puerto.  
   
-## Notas para los llamadores  
- Esta interfaz se pasa en [Agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) para crear un puerto de depuración.  Una llamada a [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) devuelve esta interfaz, que representa la solicitud utilizada para crear el puerto en primer lugar.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz se pasa a [agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) para crear un puerto de depuración. Una llamada a [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) devuelve esta interfaz, que representa la solicitud usada para crear el puerto en primer lugar.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugPortRequest2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugPortRequest2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtiene el nombre del puerto para crear.|  
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtiene el nombre del puerto que se va a crear.|  
   
-## Comentarios  
- Un motor de depuración no interactúa normalmente con un proveedor de puerto y no tendrá ningún uso en esta interfaz.  
+## <a name="remarks"></a>Comentarios  
+ Normalmente, un motor de depuración no interactúa con un proveedor de puerto y no tendrá ningún uso para esta interfaz.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   
  [Agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

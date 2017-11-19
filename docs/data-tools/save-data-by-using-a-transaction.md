@@ -1,5 +1,5 @@
 ---
-title: Save data by using a transaction | Microsoft Docs
+title: "Cómo: guardar datos utilizando una transacción | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,69 +9,49 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - saving data, using transactions
 - System.Transactions namespace
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-caps.latest.revision: 13
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: f647aeb0772bde7933216aa360c9dfccd3c872da
-ms.contentlocale: es-es
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="save-data-by-using-a-transaction"></a>Save data by using a transaction
-You save data in a transaction by using the <xref:System.Transactions> namespace. Use the <xref:System.Transactions.TransactionScope> object to participate in a transaction that is automatically managed for you.  
+# <a name="how-to-save-data-by-using-a-transaction"></a>Cómo: guardar datos utilizando una transacción
+Guardar datos en una transacción mediante el <xref:System.Transactions> espacio de nombres. Use la <xref:System.Transactions.TransactionScope> objeto participe en una transacción que se administra automáticamente.  
   
- Projects are not created with a reference to the System.Transactions assembly, so you need to manually add a reference to projects that use transactions.  
+Los proyectos no se crean con una referencia al ensamblado System.Transactions, por ello, debe agregar manualmente una referencia a proyectos que utilizan transacciones.  
   
-> [!NOTE]
->  The <xref:System.Transactions> namespace is supported in Windows 2000 or later.  
+La manera más fácil de implementar una transacción consiste en crear una instancia de un <xref:System.Transactions.TransactionScope> objeto en un `using` instrucción. (Para obtener más información, consulte [instrucción Using](/dotnet/visual-basic/language-reference/statements/using-statement), y [instrucción using](/dotnet/csharp/language-reference/keywords/using-statement).) El código que se ejecuta dentro de la `using` instrucción participa en la transacción.  
   
- The easiest way to implement a transaction is to instantiate a <xref:System.Transactions.TransactionScope> object in a `using` statement. (For more information, see [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement), and [using Statement](/dotnet/csharp/language-reference/keywords/using-statement).) The code that runs within the `using` statement participates in the transaction.  
+Para confirmar la transacción, llame a la <xref:System.Transactions.TransactionScope.Complete%2A> bloquear el método como el uso de la última instrucción.  
   
- To commit the transaction, call the <xref:System.Transactions.TransactionScope.Complete%2A> method as the last statement in the using block.  
+Para revertir la transacción, produce una excepción antes de llamar a la <xref:System.Transactions.TransactionScope.Complete%2A> método.  
   
- To roll back the transaction, throw an exception prior to calling the <xref:System.Transactions.TransactionScope.Complete%2A> method.  
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para agregar una referencia a la System.Transactions.dll  
   
- For more information, see [Save data in a transaction](../data-tools/save-data-in-a-transaction.md).  
+1.  En el **proyecto** menú, seleccione **Agregar referencia**.  
   
-### <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>To add a reference to the System.Transactions.dll  
+2.  En el **.NET** pestaña (**SQL Server** pestaña para los proyectos de SQL Server), seleccione **System.Transactions**y, a continuación, seleccione **Aceptar**.  
   
-1.  On the **Project** menu, select **Add Reference**.  
+     En el proyecto se agrega una referencia a System.Transactions.dll.  
   
-2.  On the **.NET** tab (**SQL Server** tab for SQL Server projects), select **System.Transactions**, and then select **OK**.  
+## <a name="to-save-data-in-a-transaction"></a>Para guardar los datos en una transacción  
   
-     A reference to System.Transactions.dll is added to the project.  
+-   Agregue código para guardar datos en el uso de la instrucción que contiene la transacción. El código siguiente muestra cómo crear y crear instancias de un <xref:System.Transactions.TransactionScope> objeto en un formulario mediante declaración:  
   
-### <a name="to-save-data-in-a-transaction"></a>To save data in a transaction  
+     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
+     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
   
--   Add code to save data within the using statement that contains the transaction. The following code shows how to create and instantiate a <xref:System.Transactions.TransactionScope> object in a using statement:  
-  
-     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]  [!code-cs[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
-  
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Vea también
+[Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)  
+[Tutorial: Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)  

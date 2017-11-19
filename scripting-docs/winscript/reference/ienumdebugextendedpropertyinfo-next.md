@@ -1,49 +1,52 @@
 ---
-title: "IEnumDebugExtendedPropertyInfo::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugExtendedPropertyInfo::Next | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugExtendedPropertyInfo.Next
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IEnumDebugExtendedPropertyInfo::Next"
+helpviewer_keywords: IEnumDebugExtendedPropertyInfo::Next
 ms.assetid: ac41c9a3-19d1-4596-8a87-01c10b131be3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 343620e4539e9d095f2708ab46077ee0dafd1932
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugExtendedPropertyInfo::Next
-Recupera un númeroespecificado de estructuras de`ExtendedDebugPropertyInfo` en una secuencia de enumeración.  
+# <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
+Recupera un número especificado de`ExtendedDebugPropertyInfo` estructuras en una secuencia de enumeración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT Next (  
-   ULONG celt,  
-   ExtendedDebugPropertyInfo *rgelt,  
-   ULONG* pceltFetched  
+   ULONGcelt,  
+   ExtendedDebugPropertyInfo *rgelt,  
+   ULONG* pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- \[in\] número de estructurasde `ExtendedDebugPropertyInfo`que se recuperarán.  
+ [in] El número de `ExtendedDebugPropertyInfo`estructuras va a recuperar.  
   
  `rgelt`  
- \[out\] matriz de estructuras de `ExtendedDebugPropertyInfo` recuperadas.  
+ [out] Una matriz de `ExtendedDebugPropertyInfo` estructuras recuperadas.  
   
  `pceltFetched`  
- \[out\] número de estructuras de `ExtendedDebugPropertyInfo` recuperadas realmente.  
+ [out] El número de `ExtendedDebugPropertyInfo` estructuras se recuperan en realidad.  
   
-## Valor devuelto  
- Devuelve `HRESULT`válido, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
   
-## Vea también  
- [IEnumDebugExtendedPropertyInfo \(Interfaz\)](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
- [ExtendedDebugPropertyInfo \(Estructura\)](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+## <a name="see-also"></a>Vea también  
+ [IEnumDebugExtendedPropertyInfo (interfaz)](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ [ExtendedDebugPropertyInfo (Estructura)](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

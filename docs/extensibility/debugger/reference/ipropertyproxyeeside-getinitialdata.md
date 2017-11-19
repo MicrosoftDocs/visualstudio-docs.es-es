@@ -1,49 +1,49 @@
 ---
-title: "IPropertyProxyEESide::GetInitialData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::GetInitialData"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::GetInitialData"
+title: IPropertyProxyEESide::GetInitialData | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IPropertyProxyEESide::GetInitialData
+helpviewer_keywords: IPropertyProxyEESide::GetInitialData
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 978acc645444cb675d2d2fd912780dbb0ceac32a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IPropertyProxyEESide::GetInitialData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-devuelve los datos iniciales para este objeto.  
+# <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
+Devuelve los datos iniciales para este objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetInitialData(  
-   IEEDataStorage** dataOut  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetInitialData(  
-   out IEEDataStorage dataOut  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dataOut`  
- \[out\]  devuelve un objeto de [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) que contiene los datos iniciales de este objeto.  
+ [out] Devuelve un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contiene los datos iniciales de este objeto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

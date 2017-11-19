@@ -1,59 +1,58 @@
 ---
-title: "IDiaSymbol::get_addressSection | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_addressSection (método)"
+title: 'Idiasymbol:: Get_addresssection | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_addressSection method
 ms.assetid: fe80d479-3bb5-4f55-9b62-1bd58d0a60ce
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2410dd7a059d28f9140ea9162df64f098118364e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_addressSection
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera la parte de la sección de una ubicación de dirección.  Utilice cuando [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md) se establece en `LocIsStatic`.  
+# <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
+Recupera el elemento de sección de una ubicación de dirección. Debe usar cuando el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) está establecido en `LocIsStatic`.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT get_addressSection (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_addressSection (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- \[out\]  Devuelve la parte de la sección de una ubicación de dirección.  
+ [out] Devuelve la parte de la sección de una ubicación de dirección.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve `S_FALSE` o un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
-## Comentarios  
- Para los miembros estáticos situados en DLL externo, la sección devuelta por este método puede ser 0 mientras que este método se basa en la obtención de la dirección virtual de miembro.  Las direcciones virtuales son válidas únicamente si el método de [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) en la interfaz de [IDiaSession](../../debugger/debug-interface-access/idiasession.md) se ha denominado con un parámetro distinto que se especifiquen la dirección de la carga de la DLL.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener información sobre los miembros estáticos en un archivo DLL externo, la sección devuelta por este método puede ser 0 como este método se basa en obtener la dirección virtual del miembro. Direcciones virtuales son válidas únicamente si el [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método en el [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaz se ha llamado con un parámetro es distinto de cero que especifica la dirección de carga del archivo DLL.  
   
- Para obtener el desplazamiento de una dirección, llame al método de [IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) .  
+ Para obtener la parte de una dirección de desplazamiento, llame a la [idiasymbol:: Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) método.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
-|---------------|-----------------|  
-|encabezado:|dia2.h|  
-|versión:|diámetro SDK v7.0|  
+|-----------------|-----------------|  
+|Encabezado:|dia2.h|  
+|Versión:|SDK de DIA v7.0|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType \(Enumeración\)](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md)

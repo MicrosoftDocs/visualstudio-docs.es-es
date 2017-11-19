@@ -1,47 +1,48 @@
 ---
-title: "COMPUTER_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Estructura COMPUTER_INFO"
+title: COMPUTER_INFO | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 81466c9066ea1052642a16c9d23d7798dbdcefbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# COMPUTER_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Describe el equipo en el que el depurador se está ejecutando.  
+# <a name="computerinfo"></a>COMPUTER_INFO
+Describe el equipo en el que se ejecuta el depurador.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 typedef struct tagCOMPUTER_INFO  
 {  
-    WORD wProcessorArchitecture;  
-    WORD wSuiteMask;  
-    DWORD dwOperatingSystemVersion;  
+    WORD wProcessorArchitecture;  
+    WORD wSuiteMask;  
+    DWORD dwOperatingSystemVersion;  
 } COMPUTER_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct COMPUTER_INFO  
 {  
-    public ushort wProcessorArchitecture;  
-    public ushort wSuiteMask;  
-    public uint dwOperatingSystemVersion;  
+    public ushort wProcessorArchitecture;  
+    public ushort wSuiteMask;  
+    public uint dwOperatingSystemVersion;  
 }  
 ```  
   
-## términos  
+## <a name="terms"></a>Términos  
  wProcessorArchitecture  
  Identifica la arquitectura del microprocesador.  
   
@@ -51,16 +52,16 @@ public struct COMPUTER_INFO
  dwOperatingSystemVersion  
  Número de versión del sistema operativo.  
   
-## Comentarios  
- esta estructura es devuelta por el método de [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) .  
+## <a name="remarks"></a>Comentarios  
+ Esta estructura es devuelto por la [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) método.  
   
-## Requisitos  
- encabezado: Msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

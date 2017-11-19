@@ -1,33 +1,35 @@
 ---
-title: "Interfaces de servicio de lenguaje heredado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interfaz IVsLanguageInfo"
-  - "Servicios de lenguaje, objetos"
+title: Interfaces de servicio de lenguaje heredado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IVsLanguageInfo interface
+- language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Interfaces de servicio de lenguaje heredado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Para cualquier lenguaje de programación determinado, solo puede haber una instancia de un servicio de al mismo tiempo.  Sin embargo, un servicio solo lenguaje puede servir más de un editor.  
+# <a name="legacy-language-service-interfaces"></a>Interfaces de servicio de lenguaje heredado
+Para cualquier lenguaje de programación determinado, puede haber solo una instancia de un servicio de lenguaje a la vez. Sin embargo, un servicio de lenguaje único puede servir a más de un editor.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no asocia un servicio de con ningún editor determinado.  Por consiguiente, cuando se solicita una operación del servicio de lenguaje, debe identificar el editor correspondiente como parámetro.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]no asocia un servicio de lenguaje con cualquier editor determinado. Por lo tanto, cuando se solicita una operación de servicio de lenguaje, debe identificar el editor adecuado como parámetro.  
   
-## interfaces comunes asociado con el lenguaje Services  
- El editor obtiene el servicio de lenguaje llamando a <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> en el paquete VSPackage adecuado.  El identificador de servicio \(SID\) pasado a esta llamada identifica el servicio de lenguaje que se está solicitando.  
+## <a name="common-interfaces-associated-with-language-services"></a>Interfaces más habituales asociadas con los servicios de lenguaje  
+ El editor Obtiene el servicio de lenguaje mediante una llamada a <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> en el VSPackage adecuado. El servicio Id. (SID) que se pasan en esta llamada identifica el servicio de lenguaje que se solicita.  
   
- Puede implementar las interfaces básicas del servicio de lenguaje en cualquier número de clases independientes.  Sin embargo, un enfoque común es implementar las siguientes interfaces en una sola clase:  
+ Puede implementar las interfaces de servicio de lenguaje principal en cualquier número de clases independientes. Sin embargo, un enfoque común consiste en implementar las interfaces siguientes en una sola clase:  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
@@ -35,22 +37,22 @@ Para cualquier lenguaje de programación determinado, solo puede haber una insta
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> \(opcional\)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcional)  
   
- La interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> se debe implementar en todos los servicios.  Proporciona información sobre el servicio de lenguaje, como el nombre adaptado del lenguaje, las extensiones de nombre de archivo asociado al servicio de lenguaje, y cómo recuperar un colorizer.  
+ El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> debe implementar la interfaz en todos los servicios de lenguaje. Proporciona información acerca del servicio de lenguaje, como el nombre localizado del lenguaje, las extensiones de nombre de archivo asociadas con el servicio de lenguaje y cómo recuperar un aplicador de color.  
   
-## Interfaces adicionales del servicio de lenguaje  
- Otras interfaces se pueden proporcionar el servicio de lenguaje.  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicita una instancia independiente de estas interfaces para cada instancia del búfer de texto.  Por consiguiente, debe implementar cada una de estas interfaces en el propio objeto.  La tabla siguiente se muestran las interfaces que requieran una instancia por la instancia del búfer de texto.  
+## <a name="additional-language-service-interfaces"></a>Interfaces de servicio de idioma adicionales  
+ Otras interfaces pueden proporcionarse con el servicio de lenguaje. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]solicita una instancia independiente de estas interfaces para cada instancia del búfer de texto. Por lo tanto, debe implementar cada una de estas interfaces en su propio objeto. La siguiente tabla muestra las interfaces que requieren una instancia por instancia de búfer de texto.  
   
 |Interfaz|Descripción|  
-|--------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Administra los elementos gráficos de la ventana de código, como la barra desplegable.  Puede obtener esta interfaz utilizando el método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> .  Hay un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> por la ventana de código.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Colorea palabras clave y los delimitadores de lenguaje.  Puede obtener esta interfaz utilizando el método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> .  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> se llama en el tiempo de dibujo.  evite el trabajo cálculo\-intensivo dentro de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> o el rendimiento podría sufrir.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Proporciona información sobre herramientas del parámetro de IntelliSense.  Cuando el servicio de lenguaje reconoce un carácter que indica que los datos de método se deben mostrar, por ejemplo un paréntesis de apertura, llama al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> para notificar a la vista de texto que el servicio de lenguaje está listo para mostrar una información sobre herramientas de la información de parámetros.  Las llamadas de la vista de texto después de nuevo con el servicio de lenguaje mediante los métodos de la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> para obtener la información necesaria para mostrar la información sobre herramientas.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Proporciona la finalización de instrucciones de IntelliSense.  Cuando el servicio de lenguaje está listo para mostrar una lista de finalización, llama al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> en la vista de texto.  Las llamadas de la vista de texto después de nuevo con el servicio de lenguaje mediante los métodos del objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> .|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Permite modificar la vista de texto utilizando el controlador de comandos.  La clase a la que se implementa la interfaz de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> también debe implementar la interfaz de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .  La vista de texto recupera el objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> consultando el objeto de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> que se pasa al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .  Debe haber un objeto de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> para cada vista.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercepta los comandos esos tipos de usuario en la ventana de código.  Controla la salida de la implementación de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> para proporcionar información personalizada de finalización y modificar la vista<br /><br /> Para pasar el objeto de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> a la vista de texto, asigne al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|  
+|---------------|-----------------|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Administra las opciones gráficas de ventana de código, como la barra de la lista desplegable. Esta interfaz se puede obtener mediante la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. Hay un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> por la ventana de código.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|Colorea delimitadores y palabras clave del lenguaje. Esta interfaz se puede obtener mediante la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>se llama en tiempo de paint. Evitar el trabajo de cálculo intensivo dentro de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> o podría verse afectado el rendimiento.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>|Proporciona información sobre herramientas de parámetro de IntelliSense. Cuando el servicio de lenguaje reconoce debe ser un carácter que indica que los datos método muestra, por ejemplo, un paréntesis de apertura, se llama a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> vista de método para notificar el texto que el servicio de lenguaje está listo para mostrar un mensaje de información de parámetro. La vista de texto, a continuación, llama de nuevo en el servicio de lenguaje por con los métodos de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfaz para obtener la información necesaria para mostrar la información sobre herramientas.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>|Proporciona la finalización de instrucciones de IntelliSense. Cuando el servicio de lenguaje está listo para mostrar una lista de finalización, se llama a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> método en la vista de texto. La vista de texto, a continuación, llama de nuevo en el servicio de lenguaje por utilizando los métodos en la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> objeto.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Permite la modificación de la vista de texto utilizando el controlador de comandos. La clase en la que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> también debe implementar la interfaz de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz. Recupera la vista de texto el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objeto consultando la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objeto que se pasa en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método. Debe haber uno <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> objeto por cada vista.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercepta los comandos que el usuario escribe en la ventana de código. Supervisar los resultados de su <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementación para proporcionar información de finalización personalizada y ver modificación<br /><br /> Para pasar el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objeto a la vista de texto, llamada <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>.|  
   
-## Vea también  
- [Desarrollar un servicio de lenguaje](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Lista de comprobación: Crear un servicio de lenguaje heredado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+## <a name="see-also"></a>Vea también  
+ [Desarrollar un servicio de lenguaje heredado](../../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Lista de comprobación: creación de un servicio de lenguaje heredado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

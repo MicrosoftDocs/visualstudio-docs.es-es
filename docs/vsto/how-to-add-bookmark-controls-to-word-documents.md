@@ -1,16 +1,13 @@
 ---
-title: 'How to: Add Bookmark Controls to Word Documents | Microsoft Docs'
+title: "Cómo: agregar controles Bookmark a documentos de Word | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VST.Bookmark.Dialog
+f1_keywords: VST.Bookmark.Dialog
 dev_langs:
 - VB
 - CSharp
@@ -19,123 +16,125 @@ helpviewer_keywords:
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
 ms.assetid: 2940704e-31f5-4486-854e-76298a9e2ee4
-caps.latest.revision: 52
-author: kempb
-ms.author: kempb
+caps.latest.revision: "52"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 01a10cbc43c02d8bd0fc18fed221b33a9efd34e7
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7da98e9d013f131e889c287cd1d158b3fb25e814
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>How to: Add Bookmark Controls to Word Documents
-  In document-level projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in your project at design time or at run time. In VSTO Add-in projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to any open document at run time.  
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Cómo: Agregar controles Bookmark a documentos de Word
+  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> a cualquier documento abierto en tiempo de ejecución.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- This topic describes the following tasks:  
+ En este tema se describen las tareas siguientes:  
   
--   [Adding Bookmark controls at design time](#designtime)  
+-   [Agregar controles Bookmark en tiempo de diseño](#designtime)  
   
--   [Adding Bookmark controls at run time in a document-level project](#runtimedoclevel)  
+-   [Agregar controles Bookmark en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
   
--   [Adding Bookmark controls at run time in an VSTO Add-in project](#runtimeaddin)  
+-   [Agregar controles Bookmark en tiempo de ejecución en un proyecto de complemento de VSTO](#runtimeaddin)  
   
- For more information about <xref:Microsoft.Office.Tools.Word.Bookmark> controls, see [Bookmark Control](../vsto/bookmark-control.md).  
+ Para más información sobre los controles <xref:Microsoft.Office.Tools.Word.Bookmark> , consulte [Bookmark Control](../vsto/bookmark-control.md).  
   
 ##  <a name="designtime"></a> Adding Bookmark Controls at Design Time  
- There are several ways to add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in a document-level project at design time:  
+ Hay varias maneras de agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en un proyecto de nivel de documento en tiempo de diseño:  
   
--   From the Visual Studio **Toolbox**.  
+-   Desde el **Cuadro de herramientas**de Visual Studio.  
   
-     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control from the **Toolbox** to your document. You might want to choose this way if you are already using the **Toolbox** to add Windows Forms controls to your document.  
+     Puede arrastrar el control <xref:Microsoft.Office.Tools.Word.Bookmark> desde el **Cuadro de herramientas** hasta su documento. Este método es recomendable si ya está usando el **Cuadro de herramientas** para agregar controles de Windows Forms al documento.  
   
--   From within Word.  
+-   Desde dentro de Word.  
   
-     You can add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document in the same manner you would add the native bookmark. The advantage of adding it this way is that you can name your control at the time you create it.  
+     Puede agregar el control <xref:Microsoft.Office.Tools.Word.Bookmark> al documento de la misma manera que agregaría el marcador nativo. La ventaja de agregarlo de esta manera es que puede asignarle el nombre al control al crearlo.  
   
--   From the **Data Sources** window.  
+-   Desde la ventana **Orígenes de datos** .  
   
-     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document from the **Data Sources** window. This is useful when you want to bind the control to data at the same time. You can add the host control in the same way you would add a Windows Form control from the **Data Sources** window. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     Puede arrastrar el control <xref:Microsoft.Office.Tools.Word.Bookmark> a su documento desde la ventana **Orígenes de datos** . Esto es útil cuando se desea enlazar el control a los datos al mismo tiempo. Puede agregar el control host de la misma manera que agregaría un control de Windows Forms desde la ventana **Orígenes de datos** . Para obtener más información, consulta [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>To add a Bookmark control to a document from the Toolbox  
+#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Para agregar un control Bookmark a un documento desde el Cuadro de herramientas  
   
-1.  Open the **Toolbox** and click the **Word Controls** tab.  
+1.  Abra el **Cuadro de herramientas** y haga clic en la pestaña **Controles de Word** .  
   
-2.  Drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
+2.  Arrastre un control <xref:Microsoft.Office.Tools.Word.Bookmark> al documento.  
   
-     The **Add Bookmark** dialog box appears.  
+     Aparecerá el cuadro de diálogo **Agregar marcador** .  
   
-3.  Select the text or other items you want to include in the bookmark.  
+3.  Seleccione el texto u otros elementos que desee incluir en el marcador.  
   
-4.  Click **OK**.  
+4.  Haga clic en **Aceptar**.  
   
-     If you do not want to keep the default bookmark name, you can change the name in the **Properties** window.  
+     Si no desea conservar el nombre de marcador predeterminado, puede cambiar el nombre en la ventana **Propiedades** .  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>To add a Bookmark control to a document in Word  
+#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Para agregar un control Bookmark a un documento en Word  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, put the cursor where you want to add the bookmark, or select the text that you want the bookmark to enclose.  
+1.  En el documento que se hospeda en el diseñador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , coloque el cursor donde desea agregar el marcador o seleccione el texto que desea que contenga el marcador.  
   
-2.  On the **Insert** tab of the Ribbon, in the **Links** group, click the **Bookmark** button.  
+2.  En la pestaña **Insertar** de la cinta, en el grupo **Vínculos** , haga clic en el botón **Marcador** .  
   
-3.  In the **Bookmark** dialog box, type the name of the new bookmark, and click **Add**.  
+3.  En el cuadro de diálogo **Marcador** , escriba el nombre del nuevo marcador y haga clic en **Agregar**.  
   
 ##  <a name="runtimedoclevel"></a> Adding Bookmark Controls at Run Time in a Document-Level Project  
- You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to your document at run time by using methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of the `ThisDocument` class in your project. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
+ Puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> mediante programación al documento en tiempo de ejecución con métodos de la propiedad <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de la clase `ThisDocument` en el proyecto. Hay dos sobrecargas de método que puede usar para agregar un control <xref:Microsoft.Office.Tools.Word.Bookmark> de las maneras siguientes:  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
+-   Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> en un intervalo especificado.  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+-   Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> que se base en un marcador nativo del documento (es decir, un <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Los controles <xref:Microsoft.Office.Tools.Word.Bookmark> creados de forma dinámica no se conservan en el documento cuando se cierra. Sin embargo, un <xref:Microsoft.Office.Interop.Word.Bookmark> nativo permanece en el documento. Puede volver a crear un control <xref:Microsoft.Office.Tools.Word.Bookmark> que se base en un marcador nativo la próxima vez que se abra el documento. Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>To add a Bookmark control to a document programmatically  
+#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Para agregar un control Bookmark mediante programación a un documento  
   
-1.  In the `ThisDocument_Startup` event handler in your project, insert the following code to add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to the first paragraph in the document.  
+1.  En el controlador de eventos `ThisDocument_Startup` de su proyecto, inserte el siguiente código para agregar el control <xref:Microsoft.Office.Tools.Word.Bookmark> al primer párrafo del documento.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]  [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
+     [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]  
   
     > [!NOTE]  
-    >  If you want create a <xref:Microsoft.Office.Tools.Word.Bookmark> control from an existing <xref:Microsoft.Office.Interop.Word.Bookmark>, use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark>.  
+    >  Si desea crear un control <xref:Microsoft.Office.Tools.Word.Bookmark> desde un <xref:Microsoft.Office.Interop.Word.Bookmark>existente, use el método <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> y pase el <xref:Microsoft.Office.Interop.Word.Bookmark>existente.  
   
 ##  <a name="runtimeaddin"></a> Adding Bookmark Controls at Run Time in an VSTO Add-in project  
- You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to any open document at run time by using a VSTO Add-in. To do this, generate a <xref:Microsoft.Office.Tools.Word.Document> host item that is based on an open document, and then use methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of this host item. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
+ Puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> mediante programación a cualquier documento abierto en tiempo de ejecución a través de un complemento de VSTO. Para ello, genere un elemento host <xref:Microsoft.Office.Tools.Word.Document> basado en un documento abierto y, a continuación, use métodos de la propiedad <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de este elemento host. Hay dos sobrecargas de método que puede usar para agregar un control <xref:Microsoft.Office.Tools.Word.Bookmark> de las maneras siguientes:  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
+-   Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> en un intervalo especificado.  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+-   Agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> que se base en un marcador nativo del documento (es decir, un <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Los controles <xref:Microsoft.Office.Tools.Word.Bookmark> creados de forma dinámica no se conservan en el documento cuando se cierra. Sin embargo, un <xref:Microsoft.Office.Interop.Word.Bookmark> nativo permanece en el documento. Puede volver a crear un control <xref:Microsoft.Office.Tools.Word.Bookmark> que se base en un marcador nativo la próxima vez que se abra el documento. Para obtener más información, consulta [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- For more information about generating host items in VSTO Add-in projects, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Para obtener más información sobre cómo generar elementos host en proyectos de complemento de VSTO, consulte [ampliar documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>To add a Bookmark control at a specified range  
+#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Para agregar un control Bookmark en un intervalo especificado  
   
-1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the <xref:Microsoft.Office.Interop.Word.Range> where you want to add the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+1.  Use el método <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> y pase el <xref:Microsoft.Office.Interop.Word.Range> donde desea agregar el <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     The following code example adds a new <xref:Microsoft.Office.Tools.Word.Bookmark> to the beginning of the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
+     El siguiente ejemplo de código agrega un nuevo <xref:Microsoft.Office.Tools.Word.Bookmark> al principio del documento activo. Para usar este ejemplo, ejecute el código del controlador de eventos `ThisAddIn_Startup` en un proyecto de complemento de VSTO de Word.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]  [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]  
+     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]
+     [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]  
   
-#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>To add a Bookmark control that is based on a native Bookmark control  
+#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Para agregar un control Bookmark que se base en un control Bookmark nativo  
   
-1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark> that you want to use as the basis for the new <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+1.  Use el método <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> y pase el <xref:Microsoft.Office.Interop.Word.Bookmark> existente que desee usar como base para el nuevo <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     The following code example creates a new <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on the first <xref:Microsoft.Office.Interop.Word.Bookmark> in the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
+     En el siguiente ejemplo de código se crea un nuevo <xref:Microsoft.Office.Tools.Word.Bookmark> que se basa en el primer <xref:Microsoft.Office.Interop.Word.Bookmark> del documento activo. Para usar este ejemplo, ejecute el código del controlador de eventos `ThisAddIn_Startup` en un proyecto de complemento de VSTO de Word.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]  [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
+     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
+     [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+## <a name="see-also"></a>Vea también  
+ [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [How to: Resize Bookmark Controls](../vsto/how-to-resize-bookmark-controls.md)  
+ [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
+ [Cómo: Cambiar el tamaño de los controles Bookmark](../vsto/how-to-resize-bookmark-controls.md)  
   
   

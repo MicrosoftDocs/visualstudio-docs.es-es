@@ -1,73 +1,72 @@
 ---
-title: "THUNK_ORDINAL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Thunk_Ordinal (enumeración)"
+title: THUNK_ORDINAL | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3a2711ab101299b47e954e56fcbbae98d9f5fdb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# THUNK_ORDINAL
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Seleccione tipos del procesador.  
+# <a name="thunkordinal"></a>THUNK_ORDINAL
+Designa los tipos de código thunk.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-typedef enum THUNK_ORDINAL {   
-   THUNK_ORDINAL_NOTYPE,  
-   THUNK_ORDINAL_ADJUSTOR,  
-   THUNK_ORDINAL_VCALL,  
-   THUNK_ORDINAL_PCODE,  
-   THUNK_ORDINAL_LOAD   
+```C++  
+typedef enum THUNK_ORDINAL {   
+   THUNK_ORDINAL_NOTYPE,  
+   THUNK_ORDINAL_ADJUSTOR,  
+   THUNK_ORDINAL_VCALL,  
+   THUNK_ORDINAL_PCODE,  
+   THUNK_ORDINAL_LOAD   
   
-   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
-   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
-   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
+   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
+   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
+   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
 } THUNK_ORDINAL;  
 ```  
   
-## Elementos \(Elements\)  
- THUNK\_ORDINAL\_NOTYPE  
- procesador estándar.  
+## <a name="elements"></a>Elementos  
+ THUNK_ORDINAL_NOTYPE  
+ Código thunk estándar.  
   
- THUNK\_ORDINAL\_ADJUSTOR  
- Un procesador de ajustador de `this` .  
+ THUNK_ORDINAL_ADJUSTOR  
+ Un `this` código thunk de ajustador.  
   
- THUNK\_ORDINAL\_VCALL  
- Procesador de llamada virtual.  
+ THUNK_ORDINAL_VCALL  
+ Código thunk de llamada virtual.  
   
- THUNK\_ORDINAL\_PCODE  
- procesador de P\-código.  
+ THUNK_ORDINAL_PCODE  
+ Código thunk de código empaquetado.  
   
- THUNK\_ORDINAL\_LOAD  
- Procesador de carga retrasada.  
+ THUNK_ORDINAL_LOAD  
+ Código thunk de carga de retraso.  
   
- THUNK\_ORDINAL\_TRAMP\_INCREMENTAL  
- Procesador incremental de trampolín \(un procesador de trampolín se utiliza para devolver llamadas de un espacio de memoria a otro\).  
+ THUNK_ORDINAL_TRAMP_INCREMENTAL  
+ Código thunk de cama elástica incremental (se usa un código thunk cama elástica rebote llamadas de espacio de memoria de uno a otro).  
   
- THUNK\_ORDINAL\_TRAMP\_BRANCHISLAND  
- Procesador de trampolín de punto de bifurcación.  
+ THUNK_ORDINAL_TRAMP_BRANCHISLAND  
+ Código thunk cama elástica de punto de bifurcación.  
   
-## Comentarios  
- Los valores de esta enumeración se devuelven de una llamada al método de [IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración se devuelven desde una llamada a la [idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+ [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

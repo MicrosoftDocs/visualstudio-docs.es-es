@@ -1,116 +1,115 @@
 ---
-title: "BasicType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BasicType (enumeración)"
+title: BasicType | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: BasicType enumeration
 ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f93fa1380dbb2d7623cddec3780593cd50513f2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# BasicType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Especifica el tipo básico de símbolos.  
+# <a name="basictype"></a>BasicType
+Especifica el tipo básico del símbolo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum BasicType {   
-   btNoType   = 0,  
-   btVoid     = 1,  
-   btChar     = 2,  
-   btWChar    = 3,  
-   btInt      = 6,  
-   btUInt     = 7,  
-   btFloat    = 8,  
-   btBCD      = 9,  
-   btBool     = 10,  
-   btLong     = 13,  
-   btULong    = 14,  
-   btCurrency = 25,  
-   btDate     = 26,  
-   btVariant  = 27,  
-   btComplex  = 28,  
-   btBit      = 29,  
-   btBSTR     = 30,  
-   btHresult  = 31  
+```C++  
+enum BasicType {   
+   btNoType   = 0,  
+   btVoid     = 1,  
+   btChar     = 2,  
+   btWChar    = 3,  
+   btInt      = 6,  
+   btUInt     = 7,  
+   btFloat    = 8,  
+   btBCD      = 9,  
+   btBool     = 10,  
+   btLong     = 13,  
+   btULong    = 14,  
+   btCurrency = 25,  
+   btDate     = 26,  
+   btVariant  = 27,  
+   btComplex  = 28,  
+   btBit      = 29,  
+   btBSTR     = 30,  
+   btHresult  = 31  
 };  
 ```  
   
-## Elementos \(Elements\)  
+## <a name="elements"></a>Elementos  
  btNoType  
- No se especifica ningún tipo básico.  
+ Se especifica ningún tipo básico.  
   
  btVoid  
- el tipo básico es `void`.  
+ Tipo básico es una `void`.  
   
  btChar  
- El tipo básico es `char` \(C\/C\+\+ tipo\).  
+ Tipo básico es un `char` (tipo de C o C++).  
   
  btWChar  
- El tipo básico es un carácter ancho \(Unicode\) \(`WCHAR`\).  
+ Tipo básico es un carácter (Unicode) ancho (`WCHAR`).  
   
  btInt  
- El tipo básico es `signed int` \(C\/C\+\+ tipo\).  
+ Es de tipo básico `signed int` (tipo de C o C++).  
   
  btUInt  
- El tipo básico es `unsigned int` \(C\/C\+\+ tipo\).  
+ Es de tipo básico `unsigned int` (tipo de C o C++).  
   
  btFloat  
- El tipo básico es un número de punto flotante \(`FLOAT`\).  
+ Tipo básico es un número de punto flotante (`FLOAT`).  
   
  btBCD  
- el tipo básico es decimal codificado en binario \(`BCD`\).  
+ Tipo básico es un decimal codificado en binario (`BCD`).  
   
  btBool  
- El tipo básico es un valor booleano \(`BOOL`\).  
+ Tipo básico es un valor booleano (`BOOL`).  
   
  btLong  
- El tipo básico es `long int` \(C\/C\+\+ tipo\).  
+ Tipo básico es un `long int` (tipo de C o C++).  
   
  btULong  
- El tipo básico es `unsigned long int` \(C\/C\+\+ tipo\).  
+ Tipo básico es un `unsigned long int` (tipo de C o C++).  
   
  btCurrency  
- El tipo básico es divisa.  
+ Tipo básico es la moneda.  
   
  btDate  
- El tipo básico es fecha y hora \(`DATE`\).  
+ Tipo básico es la fecha y hora (`DATE`).  
   
  btVariant  
- El tipo básico es una estructura del tipo de la variable \(`VARIANT`\).  
+ Tipo básico es una estructura de tipo de variable (`VARIANT`).  
   
  btComplex  
- el tipo básico es un número complejo.  
+ Tipo básico es un número complejo.  
   
  btBit  
- el tipo básico es un bit.  
+ Tipo básico es un bit.  
   
  btBSTR  
- el tipo básico es una cadena básica o binaria \(`BSTR`\).  
+ Tipo básico es una cadena básica o binaria (`BSTR`).  
   
  btHresult  
- el tipo básico es `HRESULT`.  
+ Tipo básico es una `HRESULT`.  
   
-## Comentarios  
- Los valores de esta enumeración son devueltos por el método de [IDiaSymbol::get\_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .  
+## <a name="remarks"></a>Comentarios  
+ Los valores de esta enumeración son devueltos por la [idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) método.  
   
-## Requisitos  
- encabezado: cvconst.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: cvconst.h  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
- [IDiaSymbol::get\_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+ [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

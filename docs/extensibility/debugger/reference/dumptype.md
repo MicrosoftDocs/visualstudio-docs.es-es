@@ -1,62 +1,62 @@
 ---
-title: "DUMPTYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DUMPTYPE"
-helpviewer_keywords: 
-  - "Enumeración DUMPTYPE"
+title: DUMPTYPE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DUMPTYPE
+helpviewer_keywords: DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 26e2836215ac5563a6ebaefb9d31d682348c7e89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# DUMPTYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica cuánto de un estado de programa \(como subprocesos en ejecución, marcos de pila, y dirección de instrucción actual\) al volcado.  
+# <a name="dumptype"></a>DUMPTYPE
+Especifica la cantidad de estado de un programa (por ejemplo, los subprocesos en ejecución, los marcos de pila y dirección de la instrucción actual) para volcar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_DUMPTYPE {   
-   DUMP_MINIDUMP = 0,  
-   DUMP_FULLDUMP = 1  
+```cpp  
+enum enum_DUMPTYPE {   
+   DUMP_MINIDUMP = 0,  
+   DUMP_FULLDUMP = 1  
 };  
 typedef DWORD DUMPTYPE;  
 ```  
   
-```c#  
-public enum enum_DUMPTYPE {   
-   DUMP_MINIDUMP = 0,  
-   DUMP_FULLDUMP = 1  
+```csharp  
+public enum enum_DUMPTYPE {   
+   DUMP_MINIDUMP = 0,  
+   DUMP_FULLDUMP = 1  
 };  
 ```  
   
-## Members  
- DUMP\_MINIDUMP  
- especifica un volcado pequeño, compacto.  
+## <a name="members"></a>Miembros  
+ DUMP_MINIDUMP  
+ Especifica un volcado de memoria pequeño y compacto.  
   
- DUMP\_FULLDUMP  
- Especifica un grande, completar el volcado.  
+ DUMP_FULLDUMP  
+ Especifica un volcado de memoria grande y completa.  
   
-## Comentarios  
- Pasado como argumento al método de [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .  
+## <a name="remarks"></a>Comentarios  
+ Pasa como un argumento a la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

@@ -1,27 +1,30 @@
 ---
-title: "ISimpleConnectionPoint::Advise | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: ISimpleConnectionPoint::Advise | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ISimpleConnectionPoint.Advise
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "ISimpleConnectionPoint::Advise"
+helpviewer_keywords: ISimpleConnectionPoint::Advise
 ms.assetid: 59ded60d-b938-4110-aca3-e69ba234ca9a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# ISimpleConnectionPoint::Advise
-Establece una conexión entre el objeto simple de punto de conexión y el receptor de cliente.  
+# <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
+Establece una conexión entre el objeto de punto de conexión simple y el receptor del cliente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT Advise(  
@@ -30,23 +33,23 @@ HRESULT Advise(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdisp`  
- \[in\] el puntero a la interfaz de `IDispatch` en el cliente informa al receptor.  El receptor de cliente recibe llamadas salientes de punto de conexión simple.  
+ [in] Puntero a la `IDispatch` interfaz en el cliente del aconseje receptor. Receptor del cliente recibe las llamadas salientes desde el punto de conexión simple.  
   
  `pdwCookie`  
- \[out\] puntero a un token devuelto que identifica esta conexión.  El llamador utiliza este token más adelante para eliminar la conexión y el método de `ISimpleConnectionPoint::Unadvise` .  Si la conexión no se estableció correctamente, este valor es cero.  
+ [out] Puntero a un token devuelto que identifica de forma única esta conexión. El llamador usa este token más adelante para eliminar la conexión y la transfiere a la `ISimpleConnectionPoint::Unadvise` método. Si la conexión no se ha establecido correctamente, este valor es cero.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método establece una conexión entre el objeto simple de punto de conexión y el receptor de cliente.  
+## <a name="remarks"></a>Comentarios  
+ Este método establece una conexión entre el objeto de punto de conexión simple y el receptor del cliente.  
   
-## Vea también  
- [ISimpleConnectionPoint \(Interfaz\)](../../winscript/reference/isimpleconnectionpoint-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [ISimpleConnectionPoint (interfaz)](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

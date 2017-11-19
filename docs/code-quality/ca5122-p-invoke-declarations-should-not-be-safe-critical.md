@@ -1,23 +1,24 @@
 ---
-title: "CA5122: Las declaraciones P/Invoke no deben ser cr&#237;ticas para la seguridad | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Declaraciones ca5122: P-Invoke no deben ser seguras crítico | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
-caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4d012b1fc37090f382d73dab73f1c302207edd30
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA5122: Las declaraciones P/Invoke no deben ser cr&#237;ticas para la seguridad
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: Las declaraciones P/Invoke no deben ser críticas para la seguridad
 |||  
 |-|-|  
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|  
@@ -25,10 +26,10 @@ caps.handback.revision: 4
 |Categoría|Microsoft.Security|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
- Una declaración P\/Invoke se ha marcado con <xref:System.Security.SecuritySafeCriticalAttribute>:  
+## <a name="cause"></a>Motivo  
+ Una declaración P/Invoke se ha marcado con <xref:System.Security.SecuritySafeCriticalAttribute>:  
   
-```c#  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
   
 // ...  
@@ -36,26 +37,26 @@ public class C
 {  
     [SecuritySafeCritical]  
     [DllImport("kernel32.dll")]  
-    public static extern bool Beep(int frequency, int duration); // CA5122 – safe critical p/invoke  
+    public static extern bool Beep(int frequency, int duration); // CA5122 - safe critical p/invoke  
    }  
   
 ```  
   
  En este ejemplo, `C.Beep(...)` se ha marcado como crítico para la seguridad y disponible desde código transparente.  
   
-## Descripción de la regla  
- Los métodos se marcan como SecuritySafeCritical cuando realizan una operación que afecta a la seguridad pero también son seguros para su uso en código transparente.  Una de las reglas fundamentales del modelo de transparencia de seguridad es que el código transparente nunca puede llamar directamente a código nativo con P\/Invoke.  Por consiguiente, aunque se marque P\/Invoke como crítico para la seguridad y disponible desde código transparente no permitirá que se llame desde código transparente llamarlo, y es erróneo para los análisis de seguridad.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Los métodos se marcan como SecuritySafeCritical cuando realizan una operación que afecta a la seguridad pero también son seguros para su uso en código transparente. Una de las reglas fundamentales del modelo de transparencia de seguridad es que el código transparente nunca puede llamar directamente a código nativo con P/Invoke. Por consiguiente, aunque se marque P/Invoke como crítico para la seguridad y disponible desde código transparente no permitirá que se llame desde código transparente llamarlo, y es erróneo para los análisis de seguridad.  
   
-## Cómo corregir infracciones  
- Para hacer que P\/Invoke esté a disposición del código transparente, exponga para el mismo un método contenedor crítico para la seguridad y disponible desde código transparente:  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para hacer que P/Invoke esté a disposición del código transparente, exponga para el mismo un método contenedor crítico para la seguridad y disponible desde código transparente:  
   
-```c#  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers  
   
 class C  
 {  
    [SecurityCritical]  
-   [DllImport(“kernel32.dll”, EntryPoint=”Beep”)]  
+   [DllImport("kernel32.dll", EntryPoint="Beep")]  
    private static extern bool BeepPinvoke(int frequency, int duration); // Security Critical P/Invoke  
   
    [SecuritySafeCritical]  
@@ -67,5 +68,5 @@ class C
   
 ```  
   
-## Cuándo suprimir advertencias  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima las advertencias de esta regla.

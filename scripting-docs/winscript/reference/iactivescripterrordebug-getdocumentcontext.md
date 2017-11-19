@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptErrorDebug::GetDocumentContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptErrorDebug::GetDocumentContext | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptErrorDebug.GetDocumentContext
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IActiveScriptErrorDebug::GetDocumentContext"
+helpviewer_keywords: IActiveScriptErrorDebug::GetDocumentContext
 ms.assetid: 567601a1-551a-4905-bda1-1f54610174f4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1342465ed306f43d07248f8e3c776e9e9af2c774
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptErrorDebug::GetDocumentContext
-Proporciona el contexto del documento para este error.  
+# <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
+Proporciona el contexto del documento de este error.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetDocumentContext(  
@@ -29,19 +32,19 @@ HRESULT GetDocumentContext(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppssc`  
- \[out\] contexto del documento para obtener este error.  
+ [out] El contexto del documento de este error.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- El intervalo de la posición de caracteres del contexto del documento debe incluir todos los caracteres que corresponde al error.  
+## <a name="remarks"></a>Comentarios  
+ El intervalo de posición de carácter del contexto de documento debe incluir todos los caracteres correspondiente al error.  
   
-## Vea también  
- [IActiveScriptErrorDebug \(Interfaz\)](../../winscript/reference/iactivescripterrordebug-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IActiveScriptErrorDebug (Interfaz)](../../winscript/reference/iactivescripterrordebug-interface.md)

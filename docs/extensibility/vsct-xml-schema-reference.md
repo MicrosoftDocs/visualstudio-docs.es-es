@@ -1,78 +1,80 @@
 ---
-title: "Referencia del esquema XML de VSCT | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Comando tabla Configuración los archivos Visual Studio (VSCT), el esquema XML"
-  - "Elementos de esquema XML VSCT"
+title: Referencia de esquemas XML VSCT | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio command table configuration files (VSCT), XML schema
+- VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1fc82041f8ab2790c63c271f85d573a3105ab8b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Referencia del esquema XML de VSCT
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Proporciona una tabla de elementos de esquema del compilador de la tabla de comandos, con secundario permitido elementos y atributos para cada uno.  
+# <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
+Proporciona una tabla de elementos de esquema de compilador de tabla de comandos, con secundario permitido elementos y atributos para cada uno.  
   
- Un archivo de configuración \(.vsct\) de la tabla de comandos basado en XML define los elementos de comandos que proporciona un VSPackage en el entorno de desarrollo integrado \(IDE\). Estos elementos incluyen elementos de menú, menús, barras de herramientas y cuadros combinados.  
+ Un archivo de configuración (.vsct) de la tabla de comandos basado en XML define los elementos de comando que un VSPackage proporciona al entorno de desarrollo integrado (IDE). Estos elementos incluyen elementos de menú, menús, barras de herramientas y cuadros combinados.  
   
 > [!NOTE]
->  El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Porque se trata normalmente incluye C\+\+ preprocesador, que puede definir y macros que tienen la misma sintaxis que se utiliza en los archivos de C\+\+. Se proporcionan ejemplos de esto en el .vsct de archivo que el **nuevo proyecto** asistente crea un proyecto de VSPackage.  
+>  El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Porque se trata normalmente incluye C++ preprocesador, que puede definir y macros que tienen la misma sintaxis que se utiliza en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.  
   
-## Elementos opcionales  
- Algunos elementos VSCT son opcionales. Si un `Parent` argumento no se especifica, se le implícito Group\_Undefined:0. Si un `Icon` argumento no se especifica, se le implícito guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza por lo general, es opcional.  
+## <a name="optional-elements"></a>Elementos opcionales  
+ Algunos de los elementos VSCT son opcionales. Si un `Parent` argumento no se especifica, se pueden implícito Group_Undefined:0. Si un `Icon` argumento no se especifica, se pueden implícito guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza por lo general, es opcional.  
   
- Se puede incrustar elementos de mapa de bits en tiempo de compilación mediante la especificación de la ubicación de la banda de mapa de bits en el `href` argumento. La banda de mapa de bits se copian durante la combinación en lugar de extraídos de los recursos de la DLL. Cuando un `href` se proporciona un argumento, el `usedList` argumento se convierte en opcional y se consideran todas las ranuras de la franja de mapa de bits utilizado.  
+ Se pueden incrustar elementos de mapa de bits en tiempo de compilación mediante la especificación de la ubicación de la banda de mapa de bits en el `href` argumento. La franja de mapa de bits se copian durante la combinación en lugar de extraídos de los recursos de la DLL. Cuando un `href` se proporciona un argumento, el `usedList` argumento se convierte en opcional y se consideran todas las ranuras de la franja de mapa de bits utilizado.  
   
- Todos los valores GUID y el ID deben definirse mediante nombres simbólicos. Estos nombres pueden definirse en archivos de encabezado o en secciones VSCT \< símbolos \>. Los nombres simbólicos deben ser locales, incluido a través de los elementos \< Include \>, o que hacen referencia los elementos \< Extern \>. Un nombre simbólico se importa desde un archivo de encabezado especificado en un elemento \< Extern \> Si sigue el modelo simple de \#define el valor de símbolo. El valor puede ser otro símbolo siempre que ese símbolo se ha definido previamente. Definiciones de GUID deben seguir el formato de OLE o C\+\+. Valores de identificador pueden ser dígitos decimales o hexadecimales dígitos que van precedidos de 0 x, como se muestra en las siguientes líneas:  
+ Todos los valores GUID y el ID deben definirse mediante el uso de nombres simbólicos. Estos nombres pueden definirse en archivos de encabezado o en VSCT \<símbolos > secciones. Los nombres simbólicos deben ser locales, incluido a través de \<Include > elementos, o que se hace referencia por \<Extern > elementos. Un nombre simbólico se importa desde un archivo de encabezado especificado en un \<Extern > elemento si sigue el patrón simple de #define el valor de símbolo. El valor puede ser otro símbolo siempre que ese símbolo se definió anteriormente. Definiciones de GUID deben tener el formato del OLE o C++. Valores de identificador pueden ser dígitos decimales o dígitos hexadecimales que estén precedidos de 0 x, como se muestra en las siguientes líneas:  
   
--   {6D484634\-E53D\-4a2c\-ADCB\-55145C9362C8}  
+-   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
 -   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0 x 14, 0x5c, 0 x 93, 0x62, 0xc8}}  
   
- Se pueden utilizar comentarios XML, pero podrían descartarlos herramientas de interfaz gráfica de usuario de ida y vuelta. Se garantiza que el contenido de los elementos \< Annotation \> se mantiene independientemente del formato.  
+ Comentarios XML pueden utilizarse, pero podrían descartarlos herramientas de ida y vuelta gráfica de usuario (GUI) de la interfaz. El contenido de \<anotación > se garantiza que los elementos se mantiene independientemente del formato.  
   
-## Jerarquía del esquema  
- Un archivo de vsct tiene los siguientes elementos principales.  
+## <a name="schema-hierarchy"></a>Jerarquía del esquema  
+ Un archivo .vsct tiene los siguientes elementos principales.  
   
- [Elemento CommandTable](../extensibility/commandtable-element.md)  
+ [CommandTable (Elemento)](../extensibility/commandtable-element.md)  
   
- [Elemento extern](../extensibility/extern-element.md)  
+ [Extern (Elemento)](../extensibility/extern-element.md)  
   
- [Elemento include](../extensibility/include-element.md)  
+ [Include (Elemento)](../extensibility/include-element.md)  
   
- [Definir el elemento](../extensibility/define-element.md)  
+ [Define (Elemento)](../extensibility/define-element.md)  
   
- [Elemento Commands](../extensibility/commands-element.md)  
+ [Commands (Elemento)](../extensibility/commands-element.md)  
   
- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)  
+ [CommandPlacements (Elemento)](../extensibility/commandplacements-element.md)  
   
- [Elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md)  
+ [VisibilityConstraints (Elemento)](../extensibility/visibilityconstraints-element.md)  
   
- [Elemento de enlaces de teclado](../extensibility/keybindings-element.md)  
+ [KeyBindings (Elemento)](../extensibility/keybindings-element.md)  
   
- [Elemento UsedCommands](../extensibility/usedcommands-element.md)  
+ [UsedCommands (Elemento)](../extensibility/usedcommands-element.md)  
   
- [Elemento Parent](../extensibility/parent-element.md)  
+ [Parent (Elemento)](../extensibility/parent-element.md)  
   
- [Icon \(elemento\)](../extensibility/icon-element.md)  
+ [Icon (Elemento)](../extensibility/icon-element.md)  
   
- [Elemento de cadenas](../extensibility/strings-element.md)  
+ [Strings (Elemento)](../extensibility/strings-element.md)  
   
- [Elemento de indicador de comando](../extensibility/command-flag-element.md)  
+ [Command Flag (Elemento)](../extensibility/command-flag-element.md)  
   
- [Elemento de símbolos](../extensibility/symbols-element.md)  
+ [Symbols (Elemento)](../extensibility/symbols-element.md)  
   
  [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
-## Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Vea también  
+ [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Enrutamiento de comandos en VSPackages](../extensibility/internals/command-routing-in-vspackages.md)

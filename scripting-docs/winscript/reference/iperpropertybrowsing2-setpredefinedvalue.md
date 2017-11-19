@@ -1,44 +1,47 @@
 ---
-title: "IPerPropertyBrowsing2::SetPredefinedValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IPerPropertyBrowsing2::SetPredefinedValue | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IPerPropertyBrowsing2.SetPredefinedValue
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IPerPropertyBrowsing2::SetPredefinedValue"
+helpviewer_keywords: IPerPropertyBrowsing2::SetPredefinedValue
 ms.assetid: 3aff5300-c5a4-4d9b-9d47-a75b64014ac4
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aed28237fe8e2be5789e062aed01e428ce805790
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IPerPropertyBrowsing2::SetPredefinedValue
-Establece el valor de la propiedad especificada por `dispID`.  El valor predefinido se identifica mediante el token `dwCookie.`  
+# <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
+Establece el valor de la propiedad especificada por `dispID`. El valor predefinido se identifica mediante el símbolo (token)`dwCookie.`  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SetPredefinedValue(  
-   DISPID  dispid,  
-   DWORD  dwCookie  
+   DISPID  dispid,  
+   DWORD  dwCookie  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dispid`  
- \[in\] identificador de envío de la propiedad que se está estableciendo un valor predefinido.  
+ [in] Identificador de envío de la propiedad para el que se establece un valor predefinido.  
   
  `dwCookie`  
- \[in\] token que identifica el valor al conjunto.  
+ [in] Símbolo que identifica el valor que se va a establecer.  
   
-## Valor devuelto  
- Devuelve `HRESULT`válido, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un válidas `HRESULT`, normalmente `S_OK`.  
   
-## Vea también  
- [IPerPropertyBrowsing2 \(Interfaz\)](../../winscript/reference/iperpropertybrowsing2-interface-1.md)
+## <a name="see-also"></a>Vea también  
+ [IPerPropertyBrowsing2 (Interfaz) 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

@@ -1,62 +1,62 @@
 ---
-title: "GETHOSTNAME_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "GETHOSTNAME_TYPE"
-helpviewer_keywords: 
-  - "Enumeración GETHOSTNAME_TYPE"
+title: GETHOSTNAME_TYPE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: GETHOSTNAME_TYPE
+helpviewer_keywords: GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ba4c0eb77d1eb2a902c9db1288785cf2b6d0ac7a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# GETHOSTNAME_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-especifica el tipo de nombre de host.  
+# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+Especifica el tipo de nombre de host.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
+```cpp  
+enum enum_GETHOSTNAME_TYPE {   
+   GHN_FRIENDLY_NAME = 0,  
+   GHN_FILE_NAME     = 1  
 };  
 typedef DWORD GETHOSTNAME_TYPE;  
 ```  
   
-```c#  
-public enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
+```csharp  
+public enum enum_GETHOSTNAME_TYPE {   
+   GHN_FRIENDLY_NAME = 0,  
+   GHN_FILE_NAME     = 1  
 };  
 ```  
   
-## Members  
- GHN\_FRIENDLY\_NAME  
+## <a name="members"></a>Miembros  
+ GHN_FRIENDLY_NAME  
  Especifica un nombre descriptivo del host.  
   
- GHN\_FILE\_NAME  
- Especifica un nombre de archivo de host.  
+ GHN_FILE_NAME  
+ Especifica un nombre de archivo del host.  
   
-## Comentarios  
- Estos valores se pasan como argumentos al método de [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) para recuperar un nombre de host en diferentes formatos.  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se pasan como argumento a la [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) método para recuperar un nombre de host en formatos diferentes.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 859eeac9c2fd322dcf231e9c70fe83b92b099111
-ms.contentlocale: es-es
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyecto: Under the Hood, segunda parte
 En [nueva generación de proyecto: Under the Hood, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) hemos visto cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
@@ -137,7 +122,7 @@ namespace Simple
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- El primer y único \<proyecto > etiqueta en las lecturas de plantilla:  
+ El primer y único \<proyecto > etiquetas en las lecturas de plantilla:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  

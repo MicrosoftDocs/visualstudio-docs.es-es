@@ -1,33 +1,35 @@
 ---
-title: "Ejecuci&#243;n paso a paso en modo de interrupci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modo de interrupción, paso a paso"
-  - "ejecución paso a paso en modo de interrupción"
-  - "depurar [SDK de depuración], la ejecución paso a paso en modo de interrupción"
+title: "Ejecución paso a paso en modo de interrupción | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- break mode, stepping
+- stepping, in break mode
+- debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 011de9ce3e4e1445354f907dcf56a0f4ecbef6bc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Ejecuci&#243;n paso a paso en modo de interrupci&#243;n
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-A continuación se describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
+# <a name="stepping-in-break-mode"></a>Ejecución paso a paso en modo de interrupción
+A continuación describe el proceso que se produce cuando el depurador está en modo de interrupción y debe recorrer el código:  
   
-## Proceso de recorrido  
+## <a name="stepping-process"></a>Proceso de ejecución paso a paso  
   
-1.  Llamada [IDebugProgram2:: paso](../../extensibility/debugger/reference/idebugprogram2-step.md) con argumentos de [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y de [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) para ejecutar un paso.  
+1.  Llame a [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) con [STEPKIND](../../extensibility/debugger/reference/stepkind.md) y [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) argumentos para ejecutar un paso.  
   
-2.  Cuando finaliza el paso, envíe [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como evento que detiene.  
+2.  Cuando haya finalizado el paso, envíe un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) como un evento de detención.  
   
-## Vea también  
- [Llamar a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Vea también  
+ [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

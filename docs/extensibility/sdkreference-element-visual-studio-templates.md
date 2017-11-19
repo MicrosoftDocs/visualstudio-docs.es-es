@@ -1,25 +1,27 @@
 ---
-title: "SDKReference (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: SDKReference (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a6ca0159d522d7890452a54986093f4062803faf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SDKReference (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="sdkreference-element-visual-studio-templates"></a>SDKReference (Elemento, Plantillas de Visual Studio)
 Especifica que la plantilla del elemento usa una referencia de SDK.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```xml  
 <VSTemplate>      
@@ -29,25 +31,25 @@ Especifica que la plantilla del elemento usa una referencia de SDK.
                 <SDKReference>SDKname</SDKReference>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
 |[Referencia](../extensibility/reference-element-visual-studio-templates.md)|Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Este texto especifica la referencia SDK que se debe agregar a un proyecto cuando se crea una instancia de la plantilla de elemento.  
   
 ```xml  
@@ -60,8 +62,8 @@ Especifica que la plantilla del elemento usa una referencia de SDK.
 ...  
 ```  
   
-## Vea también  
- [References \(Elemento, Plantillas de Visual Studio\)](../extensibility/references-element-visual-studio-templates.md)   
- [Reference \(Elemento, Plantillas de Visual Studio\)](../extensibility/reference-element-visual-studio-templates.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Elemento References (plantillas de Visual Studio)](../extensibility/references-element-visual-studio-templates.md)   
+ [Elemento Reference (plantillas de Visual Studio)](../extensibility/reference-element-visual-studio-templates.md)   
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

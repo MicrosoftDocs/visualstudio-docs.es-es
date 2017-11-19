@@ -1,5 +1,5 @@
 ---
-title: Create parameterized TableAdapter queries | Microsoft Docs
+title: Crear consultas de TableAdapter parametrizadas | Documentos de Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - TableAdapters, parameterized queries
@@ -19,105 +17,90 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 18e715fd31ee0777349bd771360b4d0dc23e2e11
-ms.contentlocale: es-es
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="create-parameterized-tableadapter-queries"></a>Create parameterized TableAdapter queries
-A parameterized query returns data that meets the conditions of a WHERE clause within the query. For example, you can parameterize a customer list to display only customers in a certain city by adding `WHERE City = @City` to the end of the SQL statement that returns a list of customers.  
+# <a name="create-parameterized-tableadapter-queries"></a>Crear consultas de TableAdapter parametrizadas
+Una consulta parametrizada devuelve datos que cumplen las condiciones de una cláusula WHERE dentro de la consulta. Por ejemplo, puede parametrizar una lista de clientes para mostrar solo los clientes de una determinada ciudad; para ello, agrega `WHERE City = @City` al final de la instrucción SQL que devuelve una lista de clientes.  
   
- You create parameterized TableAdapter queries in the **Dataset Designer**.You can also create them in a Windows application with the **Parameterize Data Source** command on the **Data** menu. The **Parameterize Data Source** command  creates controls on your form where you can input the parameter values and run the query.  
-  
-> [!NOTE]
->  When constructing a parameterized query, use the parameter notation that's specific to the database you're coding against. For example, Access and OleDb data sources use the question mark '?' to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  
+ Crear consultas de TableAdapter parametrizadas en el **Diseñador de Dataset**. También puede crear una aplicación de Windows con el **parametrizar origen de datos** comando el **datos** menú. El **parametrizar origen de datos** comando crea controles en el formulario, donde los valores de parámetro de entrada y ejecutar la consulta.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or the edition you're using. To change your settings, go to the **Tools** menu and select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Al construir una consulta parametrizada, utilice la notación de parámetro que es específica de la base de datos que está codificando. Por ejemplo, orígenes de datos de Access y OleDb utilizan el signo de interrogación '?' para denotar los parámetros, por lo que la cláusula WHERE tendría este aspecto: `WHERE City = ?`.  
   
-## <a name="create-a-parameterized-tableadapter-query"></a>Create a parameterized TableAdapter query  
+> [!NOTE]
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de la configuración activa o la edición que está usando. Para cambiar la configuración, vaya a la **herramientas** menú y seleccione **importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-#### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>To create a parameterized query in the Dataset Designer  
+## <a name="create-a-parameterized-tableadapter-query"></a>Crear una consulta de TableAdapter parametrizada  
   
--   Create a new TableAdapter, adding a WHERE clause with the desired parameters to the SQL statement. For more information, see [Create and configure TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
+#### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>Para crear una consulta parametrizada en el Diseñador de Dataset  
   
-     -or-  
+-   Cree un nuevo TableAdapter y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL. Para obtener más información, consulte [crear y configurar los TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
--   Add a query to an existing TableAdapter, adding a WHERE clause with the desired parameters to the SQL statement.
+     O bien  
   
-#### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>To create a parameterized query while designing a data-bound form  
+-   Agregue una consulta a un TableAdapter existente, y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
   
-1.  Select a control on your form that is already bound to a dataset. For more information, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+#### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>Para crear una consulta parametrizada durante el diseño de un formulario enlazado a datos  
   
-2.  On the **Data** menu, select **Add Query**.  
+1.  Seleccione en el formulario un control que ya esté enlazado a un conjunto de datos. Para obtener más información, consulte [enlazar controles formularios Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-3.  Complete the **Search Criteria Builder** dialog box, adding a WHERE clause with the desired parameters to the SQL statement.  
+2.  En el **datos** menú, seleccione **Agregar consulta**.  
   
-### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>To add a query to an existing data-bound form  
+3.  Completar la **generador de criterios de búsqueda** cuadro de diálogo, agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.  
   
-1.  Open the form in the **Windows Forms Designer**.  
+### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Para agregar una consulta a un formulario enlazado a datos existente  
   
-2.  On the **Data** menu, select **Add Query** or **Data Smart Tags**.  
+1.  Abra el formulario en el **Diseñador de Windows Forms**.  
+  
+2.  En el **datos** menú, seleccione **Agregar consulta** o **etiquetas inteligentes de datos**.  
   
     > [!NOTE]
-    >  If **Add Query** is not available on the **Data** menu, select a control on the form that displays the data source you want to add the parameterization to. For example, if the form displays data in a <xref:System.Windows.Forms.DataGridView> control, select it. If the form displays data in individual controls, select any data-bound control.  
+    >  Si **Agregar consulta** no está disponible en la **datos** menú, seleccione un control en el formulario que muestra el origen de datos desea agregar la parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.  
   
-3.  In the **Select data source table** area, select the table that you want to add parameterization to.  
+3.  En el **tabla de origen de datos seleccione** área, seleccione la tabla que desea agregar parametrización.  
   
-4.  Type a name in the **New query name** box if you are creating a new query.  
+4.  Escriba un nombre en el **nuevo nombre de consulta** cuadro Si va a crear una nueva consulta.  
   
-     -or-  
+     O bien  
   
-     Select a query in the **Existing query name** box.  
+     Seleccione una consulta en el **nombre de consulta existente** cuadro.  
   
-5.  In the **Query Text** box, type a query that takes parameters.  
+5.  En el **texto de la consulta** , escriba una consulta que toma parámetros.  
   
-6.  Select **OK**.  
+6.  Seleccione **Aceptar**.  
   
-     A control to input the parameter and a **Load** button are added to the form in a <xref:System.Windows.Forms.ToolStrip> control.  
+     Un control para el parámetro de entrada y un **carga** botón se agregan al formulario en un <xref:System.Windows.Forms.ToolStrip> control.  
   
- TableAdapter parameters can be assigned null values when you want to query for records that have no current value. For example, consider the following query that has a `ShippedDate` parameter in its `WHERE` clause:  
+#### <a name="querying-for-null-values"></a>Consultar los valores null  
+Parámetros de TableAdapter pueden asignar valores null cuando desea consultar los registros que no tienen ningún valor actual. Por ejemplo, considere la consulta siguiente que tiene un `ShippedDate` parámetro en su `WHERE` cláusula:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+ ```sql
+SELECT CustomerID, OrderDate, ShippedDate  
+FROM Orders  
+WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
+```  
   
- `FROM Orders`  
+ Si se tratara de una consulta en un TableAdapter, podría consultar todos los pedidos que no se han enviado por el código siguiente:  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+ [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
+ [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
+
+ Para habilitar una consulta que acepte valores null:
+
+1.  En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que necesita para aceptar los valores de parámetro con valor nulo.  
   
- `(ShippedDate IS NULL)`  
+2.  En el **propiedades** ventana, seleccione **parámetros**, a continuación, haga clic en el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.  
   
- If this were a query on a TableAdapter, you could query for all orders that have not been shipped with the following code:  
+3.  Seleccione el parámetro que acepta valores null y establezca el **AllowDbNull** propiedad `true`.  
   
- [!code-cs[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)] [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
-  
-#### <a name="to-enable-a-query-to-accept-null-values"></a>To enable a query to accept null values  
-  
-1.  In the **Dataset Designer**, select the TableAdapter query that needs to accept null parameter values.  
-  
-2.  In the **Properties** window, select **Parameters**.Then press the ellipsis (**...**) button to open the **Parameters Collection Editor**.  
-  
-3.  Select the parameter that allows null values and set the **AllowDbNull** property to `true`.  
-  
-## <a name="see-also"></a>See Also  
- [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+## <a name="see-also"></a>Vea también  
+ [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

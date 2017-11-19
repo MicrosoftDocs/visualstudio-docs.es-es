@@ -1,103 +1,79 @@
 ---
-title: "Carga de la solución ligera (LSL) | Documentos de Microsoft"
-ms.custom: 
-ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- VSPackages, lightweight solution load
-- VSPackages, fast solution load
-ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1
-caps.latest.revision: 1
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 28957abccc03001546038da10cf4ff7bbe21f63e
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk/
+ms.openlocfilehash: 5706797ed88dce5b2f481b17d99e9501b960ddca
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="lightweight-solution-load-lsl"></a>Carga de la solución ligera (LSL)
+título: "carga ligera de solución (LSL) | Documentos de Microsoft"ms.custom:" "ms.date:" 01/17/2017"ms.reviewer:" "ms.suite:" "ms.technology: 
+  - "sdk de ide de vs" ms.tgt_pltfrm: "" ms.topic: "artículo" helpviewer_keywords: 
+  - "Cargar VSPackages, solución ligera"
+  - "Carga de la solución el rápido de VSPackages," ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1 caps.latest.revision: 1 autor: ms.author "gregvanl": "gregvanl" administrador: ghogen
+---
+# <a name="lightweight-solution-load-lsl"></a>Carga de solución ligera (LSL)
 
-## <a name="background-information-on-lsl"></a>Información general sobre LSL
+## <a name="background-information-on-lsl"></a>Obtener información general sobre LSL
 
-Carga ligera de solución es una nueva característica de 2017 frente a lo que reducirá significativamente el tiempo de carga de la solución, lo que le permite ser más productivos rápidamente. Cuando se habilita LSL, Visual Studio no totalmente cargar proyectos hasta que comience a trabajar con ellos.
+Carga ligera de solución es una nueva característica de 2017 de VS que reducirá significativamente el tiempo de carga de la solución, lo que le permite ser más productivos rápidamente. Cuando se habilita LSL, Visual Studio no totalmente cargar proyectos hasta que empezar a trabajar con ellos.
 
-LSL puede afectar a las extensiones de Visual Studio. Extensiones cuyas características dependen de un proyecto que se va a cargar no funcionan o no funcionen correctamente sin seguir las instrucciones que se detallan en este documento.
+LSL puede afectar a las extensiones de Visual Studio. Cuyas características dependen de un proyecto que se va a cargar las extensiones no pueden trabajar o esté funcionando correctamente sin seguir las instrucciones que se detallan en este documento.
 
-Para obtener más información sobre LSL, use los siguientes vínculos:
+Para obtener más información sobre LSL, use los vínculos siguientes:
 
 * [Blog de carga de solución ligera](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15)
 * ¿Tiene preguntas? Póngase en contacto con nosotros en[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
 
-## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Habilitar la configuración de proyectos en modo "aplazado" de carga
+## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Habilitar la configuración de carga los proyectos en el modo "aplazado"
 
 1. Cierre cualquier solución abierta actualmente.
-2. Vaya a **herramientas** > **opción** > **proyectos y soluciones** > **General** página de configuración.
-3. Compruebe el **carga solución ligera** cuadro para habilitar la configuración.
+2. Vaya a **herramientas** > **opción** > **proyectos y soluciones** > **General** configuración página.
+3. Compruebe el **carga solución ligera** casilla para habilitar la configuración.
 
 Cuando se abre una solución con la configuración anterior activada, el IDE muestra una vista normal de los proyectos, pero no se cargan los proyectos.
 
 ## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Diferencias entre la carga aplazada y la carga normal de proyectos
 
-Con una carga ligera soluciones, proyectos no se cargan cuando se abre una solución. Para estos "proyectos aplazados", se crea una jerarquía de código auxiliar. El Explorador de soluciones muestra la vista esperada con iconos y nombres de proyectos, no hay ninguna indicación de la interfaz de usuario que algunos o todos los proyectos que se encuentran en "modo diferido".
+Con una carga ligera soluciones, proyectos no se cargan cuando se abre una solución. Para estos "proyectos aplazados", se crea una jerarquía de código auxiliar. El Explorador de soluciones muestra la vista esperada con iconos y nombres de los proyectos, no hay ninguna indicación de la interfaz de usuario que algunos o todos los proyectos que se encuentran en "modo diferido".
 
-Con LSL habilitado, extensiones ya no pueden esperar que los proyectos necesarios ya están completamente se cargan cuando se desencadena una operación. Los llamadores necesitan comprobar si tienen una dependencia en los proyectos cargados. Si una extensión requiere información de un proyecto aplazado, la extensión, haga lo siguiente:
+LSL habilitada, las extensiones pueden ya no se espera que uno o varios proyectos necesarios ya están completamente se cargan cuando se desencadena una operación. Los autores de llamadas que deba comprobar si tienen una dependencia en proyectos cargados. Si una extensión requiere información de un proyecto diferido, la extensión de hacer lo siguiente:
 
 1. Cargar los proyectos según sea necesario.
-2. Use la nueva **API de área de trabajo** para obtener información de un proyecto aplazado sin cargarlo.
+2. Use la nueva **API de área de trabajo** para obtener información de un proyecto aplazado sin cargarlos.
 
-El nuevo **API de área de trabajo** Permitir extensiones obtener información, como el proyecto propietario de un archivo de origen y todos los archivos de origen de un proyecto especificado, desde un proyecto aplazado. En algunos casos, sólo un conjunto limitado de proyectos necesitan cargarse. La opción adecuada es un equilibrio entre la frecuencia de las operaciones, la facilidad de enfoques alternativos y la experiencia general del usuario.
+El nuevo **API de área de trabajo** Permitir extensiones obtener información, como el proyecto propietario de un archivo de origen y todos los archivos de origen para un proyecto especificado, desde un proyecto diferido. En algunos casos, solo un conjunto limitado de proyectos necesario que se carguen. La opción derecho es un equilibrio entre la frecuencia de las operaciones, la facilidad de enfoques alternativos y experiencia global del usuario.
 
-Todos los proyectos y carga de soluciones relacionadas con eventos todavía se activan en el modo LSL. Esto permite que componentes para obtener el comportamiento esperado de VS y se comportan de la misma manera que cuando se cargan los proyectos. La carga del proyecto relacionados con el trabajo realizado durante la solución abierta se redujo drásticamente aunque.
+Todos los proyectos y carga soluciones relacionadas con eventos todavía se activan en el modo LSL. Esto permite a los componentes obtener el comportamiento esperado de VS y se comportan de la misma manera que cuando se cargan los proyectos. La carga del proyecto relacionado con el trabajo realizado durante la solución abierta se reduce considerablemente aunque.
 
 ## <a name="ui-requirements-and-changes"></a>Cambios y los requisitos de la interfaz de usuario
 
-Todos los de la interfaz de usuario debe tratar cargados y diferidos proyectos como iguales. Esto significa que cualquier acción que se puede realizar en un proyecto cargado debe ser aplicable a los proyectos diferidos, con algunas excepciones. Para ayudar a características de lograr esto, hay cambios en algunas API de plataforma existente, así como la introducción de nuevas API.
+Todos los de la interfaz de usuario debe tratar proyectos cargados y diferidos como iguales. Esto significa que cualquier acción que se pueden realizar en un proyecto cargado debe ser aplicable a proyectos diferidos, con algunas excepciones. Para ayudar a características de lograr esto, hay cambios en algunas API de la plataforma existente, así como la introducción de nuevas API.
 
 ### <a name="expectations-for-ui"></a>Expectativas para la interfaz de usuario
 
-1. Características deben mostrar que las diferencias no visual en función de si se cargan o se aplaza proyectos.
-2. Cualquier lista o enumeración sobre proyectos de la solución cargada debe incluir proyectos aplazados.
-3. Cualquier acción disponible en un proyecto cargado debe estar disponible en un proyecto aplazado.
-4. Características debe proyectos de solicitud para cargar solo cuando:
-  * No hay interacción directa del usuario con una característica. No cargue proyectos de forma preferente.
-  * El usuario realiza un movimiento "Ver más resultados". Consulte a continuación esta directriz de la interfaz de usuario.
-  * Solo el proyecto completamente cargado puede utilizarse para satisfacer la acción. Utilice LSL y API abiertas de proyecto siempre que sea posible y enviar la solicitud de característica pide cuando existe funcionalidad.
+1. Características deben mostrar que ningún objeto visual varían en función de si los proyectos se cargan o diferidos.
+2. Cualquier lista o enumeración sobre proyectos cargados de la solución debe incluir proyectos diferidos.
+3. Cualquier acción disponible en un proyecto cargado debe estar disponible en un proyecto diferido.
+4. Características debe solicitud para cargar proyectos sólo cuando:
+  * No hay interacción directa del usuario con una característica. No cargar proyectos de forma preferente.
+  * El usuario realiza un gesto de "Ver más resultados". Consulte a continuación esta directriz de interfaz de usuario.
+  * Solo el proyecto completamente cargado puede utilizarse para satisfacer la acción. Usar LSL y las API de proyecto abierto siempre que sea posible y enviar la solicitud de característica solicita cuando la funcionalidad es que faltan.
 
-### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Cambios en la API para ayudar a impulsar la interfaz de usuario de la plataforma
+### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Cambios en la API para ayudarle a dirigir interfaz de usuario de la plataforma
 
-1. Nuevas API se proporcionan para solicitar la solución si se abrió en modo de carga de la solución de ligero y cuántos proyectos están en un estado diferido.
-2. Nuevo evento se proporciona para cuando se cargan todos los proyectos aplazados en la solución.
-3. Nuevas API se proporcionan para pedir un proyecto si está aplazada.
-4. Las API existentes se actualizan para incluir proyectos aplazados cuando se le soliciten para los proyectos cargados.
-5. Las API existentes se actualizan para que expresa la solución se ha cargado completamente después de abre la solución.
+1. Se proporcionan nuevas API para solicitar la solución si se abrió en modo de carga de la solución de ligero y cuántos proyectos están en un estado diferido.
+2. Nuevo evento se proporciona para cuando se cargan todos los proyectos diferidos en la solución.
+3. Se proporcionan nuevas API para pedir un proyecto si se aplaza.
+4. Las API existentes se actualizan para incluir proyectos aplazados cuando se le soliciten para proyectos cargados.
+5. Las API existentes se actualizan a expresa la solución se ha cargado completamente cuando se abre la solución.
 
 ### <a name="how-to-add-see-more-results-for-a-feature"></a>Cómo agregar "Ver más resultados" para una característica.
 
-Características que realizan una consulta en el contenido de proyectos deben considerar el impacto de proyectos aplazados. En algunas situaciones, características pueden obtener los resultados de la consulta de LSL y API de área de trabajo para un proyecto aplazado. En otros casos, las limitaciones de la característica requieren proyectos que se va a cargar. Ambas situaciones deben proporcionar un nuevo movimiento de "Ver más resultados" que permite a los usuarios cargar totalmente los proyectos y volver a consultar. Este movimiento habilita características ofrecer una mejor aproximación cuando hay proyectos aplazados al proporcionar al usuario una manera de obtener el resultado perfecto cuando se cargan realmente los proyectos.
+Características que realizan una consulta en el contenido de proyectos deben considerar el impacto de proyectos diferidos. En algunos casos, características pueden obtener los resultados de sus consultas de LSL y las API de área de trabajo para un proyecto diferido. En otros casos, las limitaciones de una característica requieren proyectos que se va a cargar. Ambas situaciones deben proporcionar un gesto de "Ver más resultados" nueva que permite a los usuarios terminen de cargarse proyectos y vuelva a consultar. Este movimiento habilita las características conseguir una mejor aproximación cuando hay proyectos aplazados al proporcionar al usuario una manera de obtener el resultado perfecto cuando se cargan realmente los proyectos.
 
 Debe ser el algoritmo general de características:
 
-### <a name="when-the-query-is-performed-over-a-single-project"></a>Cuando la consulta se realiza a través de un solo proyecto
+### <a name="when-the-query-is-performed-over-a-single-project"></a>Cuando se realiza la consulta a través de un solo proyecto
 
 ```csharp
 // IsInDeferredState() and EnsureProjectIsLoadedHelper() in this sample can be found in the "Helpful code snippets" section of this document
@@ -134,7 +110,7 @@ public void OnClick_SeeMoreResults()
 }
 ```
 
-### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Cuando se realiza la consulta sobre la solución completa
+### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Cuando se realiza la consulta a través de la solución completa
 
 ```csharp
 // Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll
@@ -150,7 +126,7 @@ public void Query()
     var solution = // the solution
     object deferredCount = 0;
     int hr = ((IVsSolution)solution).GetProperty((int)__VSPROPID7.VSPROPID_DeferredProjectCount, out deferredCount);
-    if (ErrorHandler.Succeeded(hr) && ((uint)deferredCount > 0))
+    if (ErrorHandler.Succeeded(hr) && ((int)deferredCount > 0))
     {
         ShowSeeMoreResults();
     }
@@ -179,7 +155,7 @@ public void OnClick_SeeMoreResults()
 
 IVsSolution7.IsSolutionLoadDeferred (out bool diferida)
 
-Devuelve true si la solución actual se ha cargado en modo diferido. Tenga en cuenta que si la solución se cargó inicialmente en modo diferido, incluso si todos los proyectos aplazados finalmente había cargado en la sesión actual (deba a los gestos del usuario explícita o forzada por operaciones), esta propiedad seguiría devolviendo true.
+Devuelve true si la solución actual se ha cargado en modo diferido. Tenga en cuenta que si la solución se cargó inicialmente en modo diferido, incluso si todos los proyectos aplazados finalmente había cargado en la sesión actual (deba a los gestos del usuario explícita o forzada por operaciones), esta propiedad devuelve true.
 
 __VSPROPID7. VSPROPID_DeferredProjectCount
 
@@ -187,28 +163,28 @@ Devuelve el número de proyectos actualmente en modo diferido. Esta propiedad te
 
 __VSHPROPID9. VSHPROPID_IsDeferred
 
-Devuelve true si una jerarquía de proyectos se encuentra en estado de carga aplazada.
+Devuelve true si una jerarquía de proyecto está en estado de carga aplazada.
 
-__VSENUMPROJFLAGS3 con los valores EPF_DEFERRED y EPF_NOTDEFERRED
+__VSENUMPROJFLAGS3 con valores EPF_DEFERRED y EPF_NOTDEFERRED
 
-Estos indicadores se pueden pasar a [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) para iterar sobre proyectos aplazados y diferida no.
+Estas marcas se pueden pasar a [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) para recorrer en iteración los proyectos no aplazada y en diferido.
 
 ### <a name="new-events"></a>Nuevos eventos
 
 IVsSolutionEvents7.OnAfterLoadAllDeferredProjects()
 
-Este evento se desencadena después de que se hayan cargado todos los proyectos aplazados. En este punto, VSPROPID_DeferredProjectCount es igual a 0. Observe que este evento no se genera como parte de la carga de la solución y no se producen en absoluto en una sesión. Sólo se activa cuando se cargan todos los proyectos aplazados.
+Este evento se desencadena después de que se han cargado todos los proyectos diferidos. En este momento, VSPROPID_DeferredProjectCount es igual a 0. Tenga en cuenta que este evento no es produce como parte de la carga de la solución y no se producen en absoluto en una sesión. Solo se desencadena cuando se cargan todos los proyectos diferidos.
 
-### <a name="changes-to-existing-api"></a>Cambios en las API existente
+### <a name="changes-to-existing-api"></a>Cambios en la API existente
 
 * Pasar [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION a [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) devuelve aplazado proyectos.
-* Pasar [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION no devuelve proyectos aplazados.
-* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) se establece en true en la solución abierta. Proyectos diferidos se tratan como cargado de forma que este contexto se establece en gran parte anterior en modo de no LSL.
+* Pasar [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION no devuelve proyectos diferidos.
+* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) se establece en true en la solución abierta. Proyectos diferidos se tratan como cargado de forma que este contexto se establece en gran parte anterior a en modo de no LSL.
 * [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount devuelve la suma de los proyectos cargados y diferidas.
 
-## <a name="helpful-code-snippets"></a>Fragmentos de código útil
+## <a name="helpful-code-snippets"></a>Fragmentos de código útiles
 
-### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Compruebe si se ha abierto una solución en modo de carga diferida
+### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Comprobar si una solución se abre en modo de carga diferida
 
 ```csharp
 /// <summary>
@@ -223,7 +199,7 @@ Este evento se desencadena después de que se hayan cargado todos los proyectos 
 }
 ```
 
-### <a name="check-if-a-project-is-deferred"></a>Compruebe si se aplaza un proyecto
+### <a name="check-if-a-project-is-deferred"></a>Compruebe si se difiere un proyecto
 
 ```csharp
 /// <summary>
@@ -231,11 +207,11 @@ Este evento se desencadena después de que se hayan cargado todos los proyectos 
 /// </summary>
 /// <param name="projectsToLoad">A set of deferred and/or loaded projects to ensure are loaded.</param>
 /// <returns>True if the project is deferred. False if it is any other state, such as loaded, unloaded, or virtual.</returns>
-/// <remarks>Requires Microsoft.VisualStudio.Shell.15.0.dll</remarks>
+/// <remarks>Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll</remarks>
 public static bool IsInDeferredState(IVsHierarchy vsHierarchy)
 {
     object deferred;
-    int hr = vsHierarchy.GetProperty((int)VSConstants.VSITEMID.Root, (uint)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
+    int hr = vsHierarchy.GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
 
     if (ErrorHandler.Succeeded(hr))
     {
@@ -246,7 +222,7 @@ public static bool IsInDeferredState(IVsHierarchy vsHierarchy)
 }
 ```
 
-### <a name="load-a-project"></a>Cargar proyecto
+### <a name="load-a-project"></a>Cargar un proyecto
 
 ```csharp
 /// <summary>
@@ -341,19 +317,19 @@ public static bool SolutionHasDeferredProjects()
 }
 ```
 
-## <a name="getting-detailed-information-with-workspace-apis"></a>Obtener información detallada con las API de área de trabajo
+## <a name="getting-detailed-information-with-workspace-apis"></a>Obtener información detallada, con las API de área de trabajo
 
 ### <a name="how-to-get-detailed-info-on-a-lsl-solution"></a>Cómo obtener información detallada sobre una solución LSL
 
-Nuevas API de área de trabajo se exponen a través de IVsSolutionWorkspaceService para ayudar a recuperar información detallada sobre una solución.
+Nuevas API de área de trabajo se exponen a través de IVsSolutionWorkspaceService para ayudar a recuperar información detallada acerca de una solución.
 
-Estas API se pueden utilizar para obtener el área de trabajo actual, la solución activa, la información de línea de comandos administrados, así como el servicio de índice para el área de trabajo. Estas API pueden aprovechar aún más el servicio de índice para obtener datos detallados, por ejemplo, todos los archivos de código fuente en un proyecto, el proyecto propietario de un archivo de origen, todos los proyectos incluidos en la solución actual, todas las referencias de P2P en un proyecto, etcetera.
+Estas API se pueden utilizar para obtener el área de trabajo actual, la solución activa, la información de línea de comandos administrados, así como el servicio de índice para el área de trabajo. Estas API adicional pueden aprovechar el servicio de índice para obtener datos detallados, por ejemplo, todos los archivos de origen en un proyecto, el proyecto propietario de un archivo de origen, todos los proyectos incluidos en la solución actual, todas las referencias de P2P en un proyecto, etcetera.
 
-Fragmentos de código siguientes muestran el uso de las API de área de trabajo.
+Los siguientes fragmentos de código muestran el uso de las API de área de trabajo.
 
 ### <a name="get-ivssolutionworkspaceservice-initially"></a>Obtener IVsSolutionWorkspaceService inicialmente
 
->**Nota:** sólo obtenga IVsSolutionWorkspaceService en escenarios LSL para evitar que se cargue el paquete de la API de área de trabajo.
+>**Nota:** sólo obtenga IVsSolutionWorkspaceService en los escenarios LSL para evitar que se cargue el paquete de la API de área de trabajo.
 
 ```csharp
 private readonly Lazy<IVsSolutionWorkspaceService> _solutionWorkspaceService;
@@ -366,9 +342,9 @@ public DeferredProjectWorkspaceService(SVsServiceProvider serviceProvider)
 }
 ```
 
->**Nota:** los fragmentos de código siguientes se suponen _solutionWorkspaceService diferida ya está inicializado.
+>**Nota:** los fragmentos de código siguientes se supone _solutionWorkspaceService diferida ya está inicializado.
 
-### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obtener la información de línea de comandos administrada para aplazada proyectos para la configuración de soluciones activas
+### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obtener la información de línea de comandos administrado para proyectos diferidos para la configuración de soluciones activas
 
 ```csharp
 /// <summary>
@@ -387,7 +363,7 @@ public async Task<IReadOnlyDictionary<string, ManagedCommandLineInfo>> GetManage
 }
 ```
 
-### <a name="get-the-active-solution-file-in-lsl"></a>Obtenga el archivo de solución activa LSL
+### <a name="get-the-active-solution-file-in-lsl"></a>Obtenga el archivo de soluciones activas en LSL
 
 ```csharp
 /// <summary>
@@ -417,7 +393,7 @@ public async Task<IEnumerable<string>> GetOwningProjectAsync(string filePath)
 }
 ```
 
-### <a name="get-all-source-files-from-a-project"></a>Obtener todos los archivos de origen de un proyecto
+### <a name="get-all-source-files-from-a-project"></a>Obtener todos los archivos de código fuente de un proyecto
 
 ```csharp
 /// <summary>
@@ -472,9 +448,9 @@ public async Task<IEnumerable<string>> GetProjectsInSolutionAsync(string solutio
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Debido a la naturaleza de LSL, es intencional que los usuarios no pueden ver una diferencia entre los proyectos cargados y diferidas. Esto puede dificultar pruebas y desarrollo de características.
+Debido a la naturaleza de LSL, es intencional que los usuarios no pueden ver una diferencia entre los proyectos cargados y diferidas. Esto puede dificultar el desarrollo de característica y las pruebas.
 
-Puede habilitar las sugerencias visuales en la interfaz de usuario para proyectos aplazados haciendo lo siguiente:
+Puede habilitar visuales sugerencias en la interfaz de usuario para los proyectos aplazados haciendo lo siguiente:
 
 1. Cierre Visual Studio.
 2. Regedit.exe
@@ -482,13 +458,12 @@ Puede habilitar las sugerencias visuales en la interfaz de usuario para proyecto
 4. Archivo > Cargar subárbol
 5. `%localappdata%\microsoft\visualstudio\15.0_<instance ID>\privateregistry.bin`
 6. Escriba "VisualStudio" como un nombre de clave
-7. Establezca `HKLM\VisualStudio\Software\Microsoft\VisualStudio\15.0_<instanceID>\FeatureFlags\Solution\Loading\Deferred\Hint\Value=1` (DWORD)
+7. Establecer `HKLM\VisualStudio\Software\Microsoft\VisualStudio\15.0_<instanceID>\FeatureFlags\Solution\Loading\Deferred\Hint\Value=1` (DWORD)
 8. Seleccione HKLM\VisualStudio
 9. Archivo > Descargar subárbol
 10. Inicie Visual Studio
 
 Si tiene alguna pregunta adicional, póngase en contacto con [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
-
 
 
 

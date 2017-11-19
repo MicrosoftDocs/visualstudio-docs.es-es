@@ -1,53 +1,52 @@
 ---
-title: "Using Spy++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Using Spy++"
+title: Usar Spy ++ | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6dcc0a50c2bf0706e217651e72cd023902d83120
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Using Spy++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy\+\+ \(SPYXX.EXE\) es una utilidad basada en Win32 que proporciona una vista gráfica de los procesos del sistema, así como los correspondientes subprocesos, ventanas y mensajes de ventana.  En esta sección de la Ayuda de Spy\+\+ se incluyen los temas siguientes:  
+# <a name="using-spy"></a>Usar Spy++
+Spy ++ (SPYXX. (EXE) es una utilidad basada en Win32 que proporciona una vista gráfica de los procesos, subprocesos, windows y mensajes de ventana del sistema. Esta sección de la Ayuda de Spy ++ incluye los siguientes temas de ayuda:  
   
-## En esta sección  
- [Introducción a Spy\+\+](../debugger/introducing-spy-increment.md)  
- Explica los tipos de información que se puede mostrar con la herramienta Spy\+\+.  
+## <a name="in-this-section"></a>En esta sección  
+ [Introducción a Spy++](../debugger/introducing-spy-increment.md)  
+ Explica los tipos de información que se pueden mostrar con la herramienta Spy ++.  
   
- [How to: Start Spy\+\+](../debugger/how-to-start-spy-increment.md)  
- Explica cómo iniciar Spy\+\+ desde el menú Herramientas.  
+ [Cómo: Iniciar Spy++](../debugger/how-to-start-spy-increment.md)  
+ Explica cómo iniciar Spy ++ desde el menú Herramientas.  
   
- [Spy\+\+ Toolbar](../debugger/spy-increment-toolbar.md)  
- Describe los comandos disponibles en la barra de herramientas de Spy\+\+.  
+ [Barra de herramientas de Spy++](../debugger/spy-increment-toolbar.md)  
+ Describe los comandos disponibles en la barra de herramientas de Spy ++.  
   
- [How to: Display Spy\+\+ Views](../debugger/how-to-display-spy-increment-views.md)  
- Describe cómo mostrar las vistas de ventanas, mensajes, procesos y subprocesos.  
+ [Cómo: Mostrar las vistas de Spy++](../debugger/how-to-display-spy-increment-views.md)  
+ Cómo mostrar la vista de Windows, vista de mensajes, vista de procesos y vista de subprocesos.  
   
- [How to: Refresh the View](../debugger/how-to-refresh-the-view.md)  
- Explica el comando Actualizar.  
+ [Cómo: Actualizar la vista](../debugger/how-to-refresh-the-view.md)  
+ Explica el comando de actualización.  
   
- [How to: Change Fonts](../debugger/how-to-change-fonts.md)  
+ [Cómo: Cambiar las fuentes](../debugger/how-to-change-fonts.md)  
  Explica cómo cambiar la manera en que se muestra una vista.  
   
- [How to: Expand and Collapse Spy\+\+ Trees](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
+ [Cómo: Expandir y contraer árboles de Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Explica cómo manipular una vista.  
   
-## Secciones relacionadas  
- [Vistas de Spy\+\+](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy\+\+ de ventanas, mensajes, procesos y subprocesos.  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Vistas de Spy++](../debugger/spy-increment-views.md)  
+ Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
   
- [Referencia de Spy\+\+](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen los menús y cuadros de diálogo de Spy\+\+.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)  
+ Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.

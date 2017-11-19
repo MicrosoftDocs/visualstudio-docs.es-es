@@ -1,64 +1,64 @@
 ---
-title: "SccGetUserOption (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccGetUserOption"
-helpviewer_keywords: 
-  - "SccGetUserOption (función)"
+title: "Función SccGetUserOption | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccGetUserOption
+helpviewer_keywords: SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccGetUserOption (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="sccgetuseroption-function"></a>SccGetUserOption (función)
 Esta función recupera una variedad de opciones específicas del usuario.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
+SCCRTN SccGetUserOption(  
+   LPVOID pContext,  
+   LONG nOption,  
+   LPLONG lpVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- \[in\] El puntero de contexto de complemento de control de código fuente.  
+ [in] El puntero de contexto de complemento de control de código fuente.  
   
  nOption  
- \[in\] Opción para recuperar \(vea la sección Comentarios para las opciones posibles\).  
+ [in] Opción para recuperar (vea la sección Comentarios para las opciones posibles).  
   
  lpVal  
- \[out\] Valor asociado a la opción.  
+ [out] Valor asociado con la opción.  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_OK|Opción se recuperó correctamente.|  
-|SCC\_E\_OPNOTSUPPORTED|No se admite la opción.|  
-|SCC\_E\_NONSPECIFICERROR|Se produjo un error no especificado.|  
+|SCC_OK|Opción se recuperó correctamente.|  
+|SCC_E_OPNOTSUPPORTED|No se admite la opción.|  
+|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Este comando admite las siguientes opciones:  
   
 |Opción de usuario|Descripción|  
-|-----------------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de archivos.`lpVal` se asigna `SCC_USEROPT_COLV_YES` \(usuario desea desproteger archivos locales\) o `SCC_USEROPT_COLV_NO`.|  
+|-----------------|-----------------|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina si el usuario desea desproteger la versión local de archivos. `lpVal`se asigna `SCC_USEROPT_COLV_YES` (el usuario desea desproteger los archivos locales) o `SCC_USEROPT_COLV_NO`.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Códigos de error](../extensibility/error-codes.md)

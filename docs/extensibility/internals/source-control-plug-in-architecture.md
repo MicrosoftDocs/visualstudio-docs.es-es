@@ -1,44 +1,45 @@
 ---
-title: "Arquitectura de complemento de Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "control de código fuente plug-ins, arquitectura"
+title: Arquitectura de complemento de Control de origen | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Arquitectura de complemento de Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Puede agregar compatibilidad de control de código fuente al entorno de desarrollo integrado de \(IDE\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implementando y asociar un complemento de control de código fuente.  El IDE conecta con el complemento de control de código fuente mediante el complemento de control de código fuente bien definido API.  El IDE expone las características de control de versiones del sistema de control de código fuente que proporciona una \(UI\) interfaz de usuario formado por las barras de herramientas y los comandos de menú.  El complemento de control de código fuente implementa la funcionalidad de control de código fuente.  
+# <a name="source-control-plug-in-architecture"></a>Arquitectura de complementos de Control de código fuente
+Puede agregar compatibilidad de control de origen a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) mediante la implementación y adjuntar un complemento de control de código fuente. El IDE se conecta con el complemento a través de la API de complemento de Control de origen bien definido de control de código fuente. El IDE muestra las características de control de versión del sistema del control de código fuente proporcionando una interfaz de usuario (UI) que consta de las barras de herramientas y comandos de menú. El complemento de control de código fuente implementa la funcionalidad de control de código fuente.  
   
-## Recursos del complemento de control de código fuente  
- El complemento de control de código fuente proporciona recursos para ayudar a crear y a conectar la aplicación de la versión a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  El complemento de control de código fuente contiene la especificación de API que deben implementar por un complemento de control de código fuente de modo que pueda integrar en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  También contiene un ejemplo de código \(escrito en C\+\+\) que implementa una implementación de demostración de complemento básica del control de origen de las funciones esenciales compatible con la API del complemento Control de código fuente.  
+## <a name="source-control-plug-in-resources"></a>Recursos de complemento de Control de código fuente  
+ El complemento de Control de código fuente, se proporcionan recursos para ayudar a crear y conectar la aplicación de control de versiones con el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. El complemento de Control de código fuente contiene la especificación de API que debe implementarse mediante un complemento de control de código fuente para que se puede integrar en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. También contiene un ejemplo de código (escrito en C++) que implementa una origen esqueleto complemento que demuestra implementación del control de las funciones esenciales compatibles con la API de complementos de Control de código fuente.  
   
- La especificación de la API del complemento de control de código fuente le permite aprovechar cualquier sistema de control de código fuente de la opción si crea un control de código fuente DLL con el conjunto necesario de funciones implementadas de acuerdo con el complemento de control de código fuente API.  
+ La especificación de API de complemento de Control de origen le permite aprovechar cualquier sistema de control de código fuente de su elección, si crea un archivo DLL del control de código fuente con el conjunto necesario de funciones implementados de acuerdo con la API de complementos de Control de código fuente.  
   
-## Componentes  
- El paquete de adaptador de Control de código fuente en el diagrama es el componente del IDE que traduce el orden de usuario una operación de control de código fuente a una llamada de función admitida por el complemento de control de código fuente.  Para que esto suceda, el IDE y el complemento de control de código fuente deben tener un diálogo eficaz que pase información de uno a otro entre el IDE y el complemento.  Para que este diálogo tenga lugar, ambos deben comunicarse el mismo lenguaje.  El complemento de control de código fuente API antes de esta documentación es el vocabulario común para este intercambio.  
+## <a name="components"></a>Componentes  
+ El paquete de adaptador de Control de origen en el diagrama es el componente del IDE que traduce la solicitud del usuario para una operación de control de código fuente en una llamada de función compatible con el complemento de control de código fuente. Para que esto ocurra, el IDE y el complemento de control de código fuente deben tener un cuadro de diálogo efectivo que pasa información y hacia atrás entre el IDE y el complemento. Para que este cuadro de diálogo que se realicen, ambos deben hablan el mismo idioma. La API de complementos de Control de código fuente que se describen en esta documentación es el vocabulario común para este intercambio.  
   
- ![Diagrama de arquitectura de control de código fuente](~/extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs\_sccsdk\_plug\_in\_arch")  
-Diagrama de arquitectura que muestra la interacción entre VS y el complemento de control de código fuente  
+ ![Diagrama de arquitectura de Control de código de origen](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")  
+Diagrama de arquitectura que muestra la interacción entre VS y control de código fuente complemento  
   
- Como se muestra en el diagrama de la arquitectura, del shell de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , etiquetados como VS el shell en el diagrama, hospeda proyectos de ejecución del usuario y los componentes asociados, como los editores y el explorador de soluciones.  El paquete de adaptador de control de código fuente controla la comunicación entre el IDE y el complemento de control de código fuente.  El paquete de adaptador de control de código fuente proporciona su propia interfaz de usuario del control de código fuente.  Es la interfaz de usuario de nivel superior que el usuario interactúa con para iniciar y definir el ámbito de una operación de control de código fuente.  
+ Como se muestra en el diagrama de arquitectura, el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell, etiquetado como shell de VS en el diagrama, hospeda proyectos de trabajo y los componentes asociados, como los editores y el Explorador de soluciones del usuario. El paquete de adaptador de Control de código fuente controla la interacción entre el IDE y el complemento de control de código fuente. El paquete de adaptador de Control de origen proporciona su propia interfaz de usuario de control de código fuente. Es la interfaz de usuario de nivel superior que el usuario interactúa con el fin de iniciar y definir el ámbito de una operación de control de código fuente.  
   
- El complemento de control de código fuente puede tener su propia interfaz de usuario, que pueden estar compuestos de dos partes como se muestra en la ilustración.  El cuadro con la etiqueta “interfaz de usuario del proveedor” representa los elementos personalizados de interfaz de usuario que, como generador de complemento de control de código fuente, proporciona.  Éstos son mostrar directamente por el complemento de control de código fuente cuando el usuario invoca una operación de control de código fuente avanzado.  El cuadro con la etiqueta “interfaz de usuario de la aplicación auxiliar” es un conjunto de características del complemento de la interfaz de usuario del control de código fuente que se invocan al IDE.  El complemento de control de código fuente pasa mensajes con la Interfaz de usuario al IDE con funciones de devolución de llamada especiales proporcionadas por el IDE.  La interfaz de usuario de la aplicación auxiliar facilita una más integración sin problemas con el IDE \(con el uso de un botón de **AVANZADAS** \) y proporciona así una experiencia unificada del usuario final.  
+ El complemento de control de código fuente puede tener su propia interfaz de usuario, que puede constar de dos partes, como se muestra en la ilustración. La casilla de verificación "Interfaz de usuario de proveedor" representa los elementos de la interfaz de usuario personalizada proporcionada por usted, como un creador de complemento de control de código fuente. Cuando el usuario invoca una operación de control de origen avanzado, estos se muestran directamente mediante el complemento de control de código fuente. La casilla de verificación "Interfaz de usuario de aplicación auxiliar" es un conjunto de origen control IU características del complemento que se invoca indirectamente a través del IDE. El complemento de control de código fuente pasa mensajes relacionados con la interfaz de usuario para el IDE a través de funciones de devolución de llamada especial proporcionado por el IDE. La interfaz de usuario de aplicación auxiliar facilita una integración perfecta con el IDE (a menudo mediante el uso de un **avanzadas** botón) y, por tanto, proporciona una experiencia del usuario final más unificada.  
   
- Un complemento de control de origen no puede realizar cambios en el shell de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y, por consiguiente, el paquete de adaptador de Control de código fuente o a la interfaz de usuario del control de código fuente proporcionada por el IDE.  Debe crear el uso máximo de la flexibilidad proporcionada con la implementación de las diversas funciones API del complemento de control de código fuente que contribuyen a una experiencia integrada para el usuario final.  La sección de referencia de la documentación de la API del complemento de control de código fuente incluye información por algunas características avanzadas del complemento de control de código fuente.  Para aprovechar estas características, el complemento de control de origen debe declarar las características avanzadas al IDE durante la inicialización, y debe implementar funciones avanzadas específicas de cada función.  
+ Un complemento de control de código fuente no puede realizar cambios en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell y, por lo tanto, para el paquete de adaptador de Control de origen o el origen de control de interfaz de usuario proporcionada por el IDE. Deben hacer un uso máximo de la flexibilidad que ofrecen a través de la implementación de las distintas funciones de API de complemento de Control de origen que contribuyen a una experiencia integrada para el usuario final. La sección de referencia de la documentación de API de complemento de Control de código fuente incluye información para algunas capacidades de complemento de control de origen avanzado. Para aprovechar estas características, el complemento de control de código fuente debe declarar sus capacidades avanzadas para el IDE durante la inicialización y deben implementar funciones avanzadas específicas de cada función.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md)   
  [Glosario](../../extensibility/source-control-plug-in-glossary.md)   
- [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)

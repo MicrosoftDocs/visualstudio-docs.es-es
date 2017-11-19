@@ -1,51 +1,52 @@
 ---
-title: "IDebugGenericParamField::GetOwner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetOwner"
+title: IDebugGenericParamField::GetOwner | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e78407f3398997e1369d71e9d3ab0dc0c7efd018
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetOwner
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera el propietario del tipo o método de este parámetro genérico.  
+# <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
+Recupera el método o tipo propietario de este parámetro genérico.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetOwner(  
-   IDebugField** ppOwner  
+   IDebugField** ppOwner  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetOwner(  
-   out IDebugField ppOwner  
+   out IDebugField ppOwner  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppOwner`  
- \[out\]  devuelve el objeto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que posee este parámetro genérico.  
+ [out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que posee este parámetro genérico.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugGenericParamFieldType** que expone la interfaz de [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)  
 {  
     HRESULT hr = S_OK;  
@@ -93,5 +94,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

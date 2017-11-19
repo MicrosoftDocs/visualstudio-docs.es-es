@@ -1,28 +1,30 @@
 ---
-title: "Elemento de cuadro combinado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Elemento de cuadro combinado (esquema VSCT XML)"
-  - "Elementos de esquema XML VSCT, combinaciones"
+title: Elemento de cuadro combinado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Combos element (VSCT XML schema)
+- VSCT XML schema elements, Combos
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2c729f92992ddea109a7024452457bd56d281b89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento de cuadro combinado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Agrupa los elementos [Elemento de cuadro combinado](../extensibility/combo-element.md).  
+# <a name="combos-element"></a>Elemento de cuadro combinado
+Grupos de [elemento combinado](../extensibility/combo-element.md) elementos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Combos>  
@@ -31,34 +33,52 @@ Agrupa los elementos [Elemento de cuadro combinado](../extensibility/combo-eleme
 </Combos>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|Condición|Opcional. Vea [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Elementos secundarios  
-  
-|Elemento|Descripción|  
-|--------------|-----------------|  
-|[Combos Element](../extensibility/combos-element.md)|Agrupa los elementos del cuadro combinado.|  
-|[Elemento de cuadro combinado](../extensibility/combo-element.md)|Define los comandos que aparecen en un cuadro combinado.|  
-  
-### Elementos primarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|  
+|-------------|-----------------|  
+|[Combos (Elemento)](../extensibility/combos-element.md)|Agrupa elementos combinados.|  
+|[Combo (Elemento)](../extensibility/combo-element.md)|Define los comandos que aparecen en un cuadro combinado.|  
   
-## Ejemplo  
+### <a name="parent-elements"></a>Elementos primarios  
+  
+|Elemento|Descripción|  
+|-------------|-----------------|  
+|[Commands (Elemento)](../extensibility/commands-element.md)|Representa la colección de comandos en la barra de herramientas de VSPackage.|  
+  
+## <a name="example"></a>Ejemplo  
   
 ```  
-<Combos> <Combo guid="guidWidgetPackage" id="cmdidInsertOptions" defaultWidth="100" idCommandList="cmdidGetInsertOptionsList"> <CommandFlag>DynamicVisibility</CommandFlag> <Strings> <ButtonText>Select Insert Options</ButtonText> </Strings> </Combo> <Combo guid="guidWidgetPackage" id="cmdidInsertOptions" priority="0x0500" type="DropDownCombo" defaultWidth="100" idCommandList="cmdidGetInsertOptionsList"> <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit"> <CommandFlag>DynamicVisibility</CommandFlag> <Strings> <ButtonText>Select Insert Options</ButtonText> </Strings> </Combo> </Combos>  
+<Combos>  
+  <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
+    defaultWidth="100" idCommandList="cmdidGetInsertOptionsList">  
+    <CommandFlag>DynamicVisibility</CommandFlag>  
+    <Strings>  
+      <ButtonText>Select Insert Options</ButtonText>  
+    </Strings>  
+  </Combo>  
+  
+  <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
+    priority="0x0500" type="DropDownCombo" defaultWidth="100"  
+    idCommandList="cmdidGetInsertOptionsList">  
+    <Parent guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
+    <CommandFlag>DynamicVisibility</CommandFlag>  
+    <Strings>  
+      <ButtonText>Select Insert Options</ButtonText>  
+    </Strings>  
+  </Combo>  
+</Combos>  
 ```  
   
-## Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Barras de herramientas, menús y comandos](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>Vea también  
+ [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)

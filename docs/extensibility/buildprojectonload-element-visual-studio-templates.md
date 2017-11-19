@@ -1,55 +1,61 @@
 ---
-title: "BuildProjectOnload (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnload (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Nuevos proyectos de compilaciones solo como se crea y agrega a una solución.  La solución completa no se compila.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
+Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No se compila la solución completa.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```vb  
 <BuildProjectOnLoad> true/false </BuildOnLoad>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|TemplateData|Clasifica la plantilla y define cómo aparece en **Nuevo proyecto** y cuadros de diálogo **Agregar nuevo elemento** .|  
+|-------------|-----------------|  
+|TemplateData|Clasifica la plantilla y define cómo aparece tanto en el **nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe estar `true` o `false` para indicar si compilar sólo el nuevo proyecto cuando ha creado de la plantilla.  
+ El texto debe ser `true` o `false` para indicar si se debe generar sólo el proyecto nuevo cuando se crea a partir de la plantilla.  
   
-## Comentarios  
- `BuildProjectOnLoad` es un elemento opcional.  El valor predeterminado es `false`.  
+## <a name="remarks"></a>Comentarios  
+ `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.  
   
-## Ejemplo  
- El ejemplo siguiente muestra los metadatos para una plantilla de Visual c\#.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de una plantilla de Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -74,9 +80,8 @@ Nuevos proyectos de compilaciones solo como se crea y agrega a una solución.  L
         </Project>  
     </TemplateContent>  
 </VSTemplate>  
-  
 ```  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

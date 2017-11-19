@@ -1,32 +1,32 @@
 ---
-title: "Comandos del men&#250; Ayuda | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Comandos del menú Ayuda"
+title: "Comandos del menú Ayuda | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Help menu commands
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 16cab8d85955c59799f69666c3fb5895c6f3c163
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comandos del men&#250; Ayuda
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El menú **Ayuda** proporciona comandos para abrir los archivos de Ayuda.  
+# <a name="help-menu-commands"></a>Comandos del menú Ayuda
+El **ayuda** menú proporciona comandos para abrir archivos de ayuda.  
   
- **Index**  
- Abre la pantalla de contenido de la Ayuda de Spy\+\+.  
+ **Índice**  
+ Se abre la pantalla de contenido de Ayuda de Spy ++.  
   
  **Uso de la Ayuda**  
- Abre un archivo de Ayuda que describe cómo usarla.  
+ Abre un archivo de ayuda que describe cómo usar la Ayuda.  
   
- **Acerca de Spy\+\+**  
- Muestra la versión del software y la información de copyright de Spy\+\+.
+ **Acerca de Spy ++**  
+ Muestra la información de versión y copyright de software de Spy ++.

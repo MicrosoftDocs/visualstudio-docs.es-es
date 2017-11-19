@@ -1,30 +1,31 @@
 ---
-title: "ProjectOutputFile Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ProjectOutputFile element"
+title: ProjectOutputFile (elemento) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ProjectOutputFile element
 ms.assetid: 52a017bf-e19c-49e4-bb8f-cbe6958195c2
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ProjectOutputFile Element
-  Representa la salida de un proyecto independiente que se desea incluir con el elemento de proyecto cuando se implementa en SharePoint.  
+# <a name="projectoutputfile-element"></a>ProjectOutputFile (Elemento)
+  Representa la salida de un proyecto independiente para incluir con el elemento de proyecto cuando se implementa en SharePoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ProjectOutputFile ProjectId = "GUID of the project"  
@@ -33,45 +34,45 @@ caps.handback.revision: 12
     Type = "Type of deployment for the project output" />  
 ```  
   
-## Tipo  
+## <a name="type"></a>Tipo  
  **ProjectOutputFileType**  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|**ProjectId**|El atributo **xs:string** es obligatorio.<br /><br /> El GUID del proyecto dependiente que tiene la salida que desea incluir.  Esto corresponde al elemento **ProjectGuid** en el archivo de proyecto dependiente.|  
-|**ProjectPath**|El atributo **xs:string** es obligatorio.<br /><br /> La ruta de acceso relativa, incluido el nombre del archivo de proyecto, del proyecto dependiente que tiene la salida que desea incluir.  Esta ruta de acceso es relativa a la carpeta raíz del proyecto de SharePoint que contiene el elemento de proyecto de SharePoint.|  
-|**Target**|Atributo **xs:string** opcional.<br /><br /> La ruta de acceso donde se implementará la salida del proyecto dependiente en el servidor de SharePoint, relativa a la carpeta raíz de implementación.  El tipo de implementación especificado por el atributo **Type** determina la carpeta raíz de implementación.<br /><br /> Para obtener más información, vea las descripciones de las propiedades **Deployment PathDeployment Root** de los elementos de proyecto de SharePoint en [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|El atributo **xs:string** es obligatorio.<br /><br /> El tipo de implementación que se desea utilizar para la salida del proyecto dependiente.  Para obtener más información sobre los valores posibles, vea la descripción de la propiedad **Deployment Type** de los elementos de proyecto de SharePoint en [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md).|  
+|---------------|-----------------|  
+|**ProjectId**|Requiere **xs: String** atributo.<br /><br /> El GUID del proyecto dependiente que tiene la salida que van a incluir. Esto corresponde a la **ProjectGuid** elemento en el archivo de proyecto dependiente.|  
+|**ProjectPath**|Requiere **xs: String** atributo.<br /><br /> La ruta de acceso relativa, incluido el nombre de archivo de proyecto, del proyecto dependiente que tiene la salida que van a incluir. Esta ruta de acceso es relativa a la carpeta raíz del proyecto de SharePoint que contiene el elemento de proyecto de SharePoint.|  
+|**Target**|Opcional **xs: String** atributo.<br /><br /> La ruta de acceso donde es el resultado del proyecto dependiente que se implementará en el servidor de SharePoint, relativa a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el **tipo** atributo.<br /><br /> Para obtener más información, vea las descripciones de los **ruta de acceso de implementación** y **raíz de la implementación** propiedades de SharePoint elementos de proyecto en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**ype**|Requiere **xs: String** atributo.<br /><br /> El tipo de implementación que se usará para la salida del proyecto dependiente. Para obtener más información acerca de los valores posibles, vea la descripción de la **tipo de implementación** propiedad de los elementos de proyecto de SharePoint en [desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Files \(Archivos\)](../sharepoint/files-element.md)|Especifica los archivos que se desea incluir con el elemento de proyecto de SharePoint cuando se implementa en SharePoint.|  
+|-------------|-----------------|  
+|[Archivos](../sharepoint/files-element.md)|Especifica los archivos que desea incluir con el elemento de proyecto de SharePoint cuando se implementa en SharePoint.|  
   
-## Comentarios  
- Utilice el elemento **ProjectOutputFile** para incluir la salida de un proyecto en la implementación del elemento de proyecto de SharePoint.  Puede especificar un proyecto diferente o el mismo proyecto que contiene el elemento de proyecto.  Para obtener más información, vea [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Comentarios  
+ Use la **ProjectOutputFile** elemento para incluir el resultado de un proyecto en la implementación del elemento de proyecto de SharePoint. Puede especificar un proyecto diferente o el mismo proyecto que contiene el elemento de proyecto. Para obtener más información, consulte [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Proporcionar información empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

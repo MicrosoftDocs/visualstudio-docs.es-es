@@ -1,48 +1,47 @@
 ---
-title: "IDiaStackWalkFrame::put_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkFrame::put_registerValue (método)"
+title: 'Idiastackwalkframe:: Put_registervalue | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkFrame::put_registerValue method
 ms.assetid: 2d8b79b6-7240-43fe-b24e-e4ff3e2c15b0
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f04710993efc9c1b0d0508a428c55013208f13a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkFrame::put_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-establece el valor de un registro.  
+# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+Establece el valor de un registro.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_registerValue (   
+   DWORD     index,  
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `index`  
- \[in\]  Un valor de enumeración de [CV\_HREG\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-hreg-e.md) que especifica el registro para escribir.  
+ [in] Un valor de la [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md) enumeración que especifica el registro que se va a escribir.  
   
  `NewVal`  
- \[in\]  El nuevo valor del registro.  
+ [in] El nuevo valor del registro.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [CV\_HREG\_e \(Enumeración\)](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e (enumeración)](../../debugger/debug-interface-access/cv-hreg-e.md)

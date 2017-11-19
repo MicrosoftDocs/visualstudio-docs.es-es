@@ -1,12 +1,10 @@
 ---
-title: Customizing a Ribbon for InfoPath | Microsoft Docs
+title: Personalizar una cinta para InfoPath | Documentos de Microsoft
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,61 +14,61 @@ helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
 ms.assetid: 498c6457-679a-46f2-939f-c0597a17b7ec
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: befccdbf740c8ff166cb9d57e1998b07a1c24619
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c3f4612b3e8dc272b0f51bae80d66d8afe97938e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="customizing-a-ribbon-for-infopath"></a>Customizing a Ribbon for InfoPath
-  When you customize the Ribbon in Microsoft Office InfoPath, you must consider where your custom Ribbon will appear in the application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] can display the Ribbon in the following three types of InfoPath application windows:  
+# <a name="customizing-a-ribbon-for-infopath"></a>Personalizar una Cinta para InfoPath
+  Al personalizar la Cinta en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la Cinta personalizada en la aplicación. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] puede mostrar la Cinta en los tres tipos de ventanas de la aplicación InfoPath indicados a continuación:  
   
--   Windows that display a form template that is opened in design mode.  
+-   Ventanas que muestran una plantilla de formulario que se abre en modo de diseño.  
   
--   Windows that display a form that is based on a form template.  
+-   Ventanas que muestran un formulario basado en una plantilla de formulario.  
   
--   The Print Preview window.  
+-   La ventana Vista previa de impresión.  
   
- **Applies to:** The information in this topic applies to VSTO Add-in projects for InfoPath 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplicación:** la información de este tema se aplica a los proyectos de complemento VSTO para InfoPath 2010. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Users and designers open a form template in design mode to modify the appearance and layout of the template. Users open forms that are based in a form template to add content.  
+ Los usuarios y diseñadores abren una plantilla de formulario en modo de diseño para modificar la apariencia y el diseño de la plantilla. Los usuarios abren formularios basados en una plantilla de formulario para agregar contenido.  
   
- The Print Preview window enables designers and users to preview the pages of a form or form template before they print them.  
+ La ventana Vista previa de impresión permite a los diseñadores y usuarios obtener una vista previa de las páginas de un formulario o de una plantilla de formulario antes de imprimirlas.  
   
 > [!NOTE]  
->  The **AddIns** tab does not appear in the Print Preview window. If you want a custom tab to appear in the Print Preview window, make sure that the **OfficeId** property of the tab is not set to **TabAddIns**.  
+>  La pestaña **Complementos** no aparece en la ventana Vista previa de impresión. Si desea que una pestaña personalizada aparezca en la ventana Vista previa de impresión, asegúrese de que la propiedad **OfficeId** no se establezca en **TabAddIns**.  
   
- You must specify the Ribbon type of each window in which you want your Ribbon to appear.  
+ Debe especificar el tipo de Cinta de cada ventana en la que desea que aparezca su Cinta.  
   
-## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifying the Ribbon Type in the Ribbon Designer  
- If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the Ribbon in the **Properties** window, and then select any of the Ribbon ID's described in the following table.  
+## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Especificar el Tipo de Cinta en el Diseñador de cinta  
+ Si está utilizando el elemento **Cinta (diseñador visual)** , haga clic en la propiedad **RibbonType** de la cinta en la ventana **Propiedades** y, a continuación, seleccione cualquiera de los identificadores de cinta descritos en la siguiente tabla.  
   
-|Ribbon ID|Window in which the Ribbon will appear when you run the project|  
+|Id. de Cinta|Ventana en la que aparecerá la Cinta al ejecutar el proyecto|  
 |---------------|---------------------------------------------------------------------|  
-|**Microsoft.InfoPath.Designer**|Windows that display a form template that is opened in design mode.|  
-|**Microsoft.InfoPath.Editor**|Windows that display a form that is based on a form template.|  
-|**Microsoft.InfoPath.PrintPreview**|The Print Preview window.|  
+|**Microsoft.InfoPath.Designer**|Ventanas que muestran una plantilla de formulario que se abre en modo de diseño.|  
+|**Microsoft.InfoPath.Editor**|Ventanas que muestran un formulario basado en una plantilla de formulario.|  
+|**Microsoft.InfoPath.PrintPreview**|La ventana Vista previa de impresión.|  
   
- You can add more than one Ribbon to a project. If more than one Ribbon share a Ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which Ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+ Puede agregar más de una Cinta a un proyecto. Si más de una cinta comparte el mismo identificador de cinta, invalide el método CreateRibbonExtensibilityObject en la `ThisAddin` clase de su proyecto para especificar qué cinta se mostrará en tiempo de ejecución. Para obtener más información, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
- If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate Ribbon.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Especificar el Tipo de Cinta mediante código XML de Cinta  
+ Si está utilizando el elemento **Cinta (XML)** , compruebe el valor del parámetro *ribbonID* en el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> y devuelva la Cinta adecuada.  
   
- The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the Ribbon code file. The *ribbonID* parameter is a string that identifies the type of InfoPath window that is opening.  
+ Visual Studio genera automáticamente el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> en el archivo de código de la Cinta. El parámetro *ribbonID* es una cadena que identifica el tipo de ventana de InfoPath que se está abriendo.  
   
- The following code example demonstrates how to display a custom Ribbon only in a window that displays a form template in design mode. The Ribbon to display is specified in the `GetResourceText()` method, which is generated in the Ribbon class. For more information about the Ribbon class, see [Ribbon XML](../vsto/ribbon-xml.md).  
+ En el siguiente ejemplo de código se indica cómo mostrar una Cinta personalizada sólo en una ventana que muestra una plantilla de formulario en modo de diseño. La Cinta que se debe mostrar se especifica en el método `GetResourceText()` , que se genera en la clase Cinta. Para obtener más información sobre la clase Cinta de opciones, consulte [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)] [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
+ [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
+ [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Vea también  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)  
+ [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
+ [Diseñador de la cinta](../vsto/ribbon-designer.md)   
+ [XML de la cinta](../vsto/ribbon-xml.md)  
   
   

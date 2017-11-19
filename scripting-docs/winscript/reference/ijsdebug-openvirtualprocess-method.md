@@ -1,25 +1,29 @@
 ---
-title: "IJsDebug::OpenVirtualProcess (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebug:: OpenVirtualProcess (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJSDebug.OpenVirtualProcess
 apilocation: jscript9diag.dll
 ms.assetid: 5612bf1b-a4e3-4eaf-ac5e-c2e1f147c395
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebug::OpenVirtualProcess (M&#233;todo)
-Método de generador utilizado para crear un nuevo objeto de proceso virtual.  
+# <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess (Método)
+Método de generador que se usa para crear un nuevo objeto de proceso virtual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
  HRESULT OpenVirtualProcess(  
@@ -30,26 +34,26 @@ Método de generador utilizado para crear un nuevo objeto de proceso virtual.
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `processId`  
- \[in\] Identificador de proceso al que asociar el depurador.  
+ [in] Id. de proceso para adjuntar al depurador.  
   
  `runtimeJsBaseAddress`  
- \[in\] Dirección base donde se ha cargado el runtime JavaScript en el proceso de destino.  
+ [in] La dirección base en el que se cargó el runtime de JavaScript en el proceso de destino.  
   
  `pDataTarget`  
- \[in\] Interfaz proporcionada por el depurador para consultar el estado del proceso.  
+ [in] Interfaz proporcionado para consultar el estado del proceso del depurador.  
   
  `ppProcess`  
- \[out\] Nuevo objeto de proceso de depuración  
+ [out] Nuevo objeto de proceso de depuración  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Comentarios  
- Devuelve E\_JsDEBUG\_MISMATCHED\_RUNTIME si no coinciden Jscript9diag y Jscript9.  
+## <a name="remarks"></a>Comentarios  
+ Devuelve E_JsDEBUG_MISMATCHED_RUNTIME si Jscript9diag y Jscript9 no coinciden.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebug \(Interfaz\)](../../winscript/reference/ijsdebug-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebug (Interfaz)](../../winscript/reference/ijsdebug-interface.md)

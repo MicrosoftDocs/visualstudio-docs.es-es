@@ -1,29 +1,32 @@
 ---
-title: "No se puede modificar el dise&#241;ador durante la depuraci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "El diseñador no se puede modificar durante la depuración | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5309ce8676723b712790f061771e6d965a73ae21
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# No se puede modificar el dise&#241;ador durante la depuraci&#243;n
-Este mensaje aparece cuando se intentan modificar elementos en Object Relational Designer y la aplicación se está ejecutando en modo de depuración.Cuando la aplicación se está ejecutando en modo de depuración, Object Relational Designer es de solo lectura.  
+# <a name="the-designer-cannot-be-modified-while-debugging"></a>No se puede modificar el diseñador durante la depuración
+Este mensaje aparece cuando se intentan modificar elementos en Object Relational Designer y la aplicación se está ejecutando en modo de depuración. Cuando la aplicación se está ejecutando en modo de depuración, Object Relational Designer es de solo lectura.  
   
-### Para corregir este error  
+### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Haga clic en **Detener depuración** en el menú **Depurar**.  
+-   Haga clic en **Detener depuración** en el **depurar** menú.  
   
      La aplicación detiene la depuración y se pueden modificar los elementos en Object Relational Designer.  
   
-## Vea también  
- [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Tutorial: Crear clases de LINQ to SQL \(Object Relational Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Vea también
+[Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

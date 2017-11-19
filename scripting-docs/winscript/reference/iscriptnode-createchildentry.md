@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode:: CreateChildEntry | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: 'IScriptNode:: CreateChildEntry | Documentos de Microsoft'
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode. CreateChildEntry
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::CreateChildEntry"
+helpviewer_keywords: IScriptNode::CreateChildEntry
 ms.assetid: b9682505-4457-40e9-8691-235843637506
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8fcc010efe8fcf30a8f467dd94befff54bc5fac5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode:: CreateChildEntry
-Agrega una instancia secundaria de `IScriptEntry`.  
+# <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
+Agrega una instancia del elemento secundario de `IScriptEntry`.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CreateChildEntry(  
@@ -32,41 +35,41 @@ HRESULT CreateChildEntry(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `isn`  
- \[in\] índice del elemento secundario del elemento primario.  
+ [in] El índice del elemento secundario en el elemento primario.  
   
  `dwCookie`  
- \[in\] valor definido por la aplicación se utiliza para asociar la entrada secundaria con el objeto host.  
+ [in] Un valor definido por la aplicación usa para asociar la entrada secundaria con el objeto host.  
   
  `pszDelimiter`  
- \[in\] dirección del delimitador de FIN\-de\-script\- bloque.  Para analizar, el host normalmente utiliza un delimitador \(como dos comillas simples\), para detectar el final del bloque de script.  
+ [in] La dirección del delimitador final del bloque de script. Para el análisis, el host normalmente usa un delimitador (por ejemplo, dos comillas simples), para detectar el final del bloque de script.  
   
- El delimitador permite al motor de creación de script para proporcionar el preprocesamiento.  Por ejemplo, el motor puede reemplazar una comilla simple con dos comillas sencillas para el uso como delimitador.  El motor determina cómo se utiliza el delimitador.  
+ El delimitador permite que el script de creación motor para proporcionar el preprocesamiento. Por ejemplo, el motor podría reemplazar una comilla simple con dos comillas simples para su uso como un delimitador. El motor determina cómo se usa el delimitador.  
   
- Establezca en NULL si un delimitador no marca el final del bloque de script.  
+ Se establece en NULL si un delimitador no marcar el final del bloque de script.  
   
  `ppse`  
- \[out\] dirección de una variable que recibe un puntero a la interfaz de `IScriptEntry` de instancia secundaria.  
+ [out] La dirección de una variable que recibe un puntero a la `IScriptEntry` interfaz de la instancia secundaria.  
   
- Para los objetos de `IScriptNode` que representan una página Web, retornos de este parámetro una instancia de `IScriptEntry` que especifica un bloque de script.  
+ Para `IScriptNode` objetos que representan una página Web, este parámetro devuelve un `IScriptEntry` instancia que especifica un bloque de script.  
   
- Para los objetos de `IScriptEntry` que representan un bloque script, retornos de este parámetro una instancia de `IScriptEntry` que especifica un objeto de función.  
+ Para `IScriptEntry` objetos que representan un bloque de script, este parámetro devuelve un `IScriptEntry` instancia que especifica un objeto de función.  
   
- Para los objetos de `IScriptEntry` que representan un objeto de función, error en este método.  
+ Para `IScriptEntry` objetos que representan una función de objeto, este método produce un error.  
   
- Para los objetos de `IScriptScriptlet` , este método devuelve un error.  
+ Para `IScriptScriptlet` objetos, este método produce un error.  
   
-## Valor devuelto  
- Interfaz `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ Interfaz `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- La interfaz de `IScriptNode` representa una página Web o sus elementos.  La interfaz de `IScriptEntry` \(que se deriva de `IScriptNode`\) representa un bloque de script o un objeto de función.  La interfaz de `IScriptScriptlet` \(que se deriva de `IScriptEntry`\) representa un controlador de eventos.  
+## <a name="remarks"></a>Comentarios  
+ El `IScriptNode` interfaz representa una página Web o sus elementos. El `IScriptEntry` interfaz (que se deriva de `IScriptNode`) representa un bloque de script o un objeto de función. El `IScriptScriptlet` interfaz (que se deriva de `IScriptEntry`) representa un controlador de eventos.  
   
-## Vea también  
- [IScriptNode \(Interfaz\)](../../winscript/reference/iscriptnode-interface.md)   
- [IScriptEntry \(Interfaz\)](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IScriptNode (interfaz)](../../winscript/reference/iscriptnode-interface.md)   
+ [IScriptEntry (Interfaz)](../../winscript/reference/iscriptentry-interface.md)

@@ -1,60 +1,59 @@
 ---
-title: "IDiaStackWalkHelper::pdataForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::pdataByVA (método)"
+title: IDiaStackWalkHelper::pdataForVA | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::pdataByVA method
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4925a4a37395dd53fabb1d8d7ba7f80bc5cc6c93
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::pdataForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-devuelve el bloque de datos de PDATA asociado con la dirección virtual.  
+# <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
+Devuelve el bloque de datos PDATA asociado con la dirección virtual.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT pdataForVA(   
-   ULONGLONG  va,  
-   DWORD      cbData,  
-   DWORD*     pcbData,  
-   BYTE*      pbData  
+```C++  
+HRESULT pdataForVA(   
+   ULONGLONG  va,  
+   DWORD      cbData,  
+   DWORD*     pcbData,  
+   BYTE*      pbData  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `va`  
- \[in\]  Especifica la dirección virtual de los datos para recopilar.  
+ [in] Especifica la dirección virtual de los datos que se va a obtener.  
   
  `cbData`  
- \[in\]  El tamaño de datos en bytes a recopilar.  
+ [in] El tamaño de los datos de bytes que se va a obtener.  
   
  `pcbData`  
- \[out\]  Devuelve el tamaño real de los datos en bytes recopilados.  
+ [out] Devuelve el tamaño real de los datos en bytes que se obtuvo.  
   
  `pbData`  
- \[in, out\]  Un búfer que se rellena con los datos solicitados.  No puede ser `NULL`.  
+ [entrada, salida] Un búfer que se rellena con los datos solicitados. No puede ser `NULL`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  devuelve `S_FALSE` si no hay PDATA para la dirección especificada.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún PDATA para la dirección especificada. De lo contrario, devuelve un código de error.  
   
-## Comentarios  
- El PDATA \(la sección denominada “.pdata”\) de una compilación contiene información sobre el control de excepciones para funciones.  
+## <a name="remarks"></a>Comentarios  
+ PDATA (es decir, la sección denominada ".pdata") de una operación de compilación contiene información sobre el control de excepciones de funciones.  
   
- El llamador sabe cuántos datos debe volver de modo que el llamador no tiene ninguna necesidad de ordenar cuántos datos está disponible.  Por consiguiente, es aceptable que una implementación de este método devuelve un error si el parámetro de `pbData` es `NULL`.  
+ El llamador sabe cuántos datos se va a devolver para que el llamador no tiene necesidad de solicitar la cantidad de datos está disponible. Por lo tanto, es aceptable para una implementación de este método para devolver un error si la `pbData` parámetro es `NULL`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

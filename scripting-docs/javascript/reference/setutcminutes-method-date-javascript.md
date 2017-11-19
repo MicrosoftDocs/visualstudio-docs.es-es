@@ -1,68 +1,70 @@
 ---
-title: "setUTCMinutes (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCMinutes"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "fechas, UTC"
-  - "minutos"
-  - "setUTCMinutes (método)"
-  - "horas UTC, establecer"
+title: "setUTCMinutes (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCMinutes
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- minutes
+- dates, UTC
+- UTC times, setting
+- setUTCMinutes method
 ms.assetid: 2415e788-6d28-46dd-a103-0931a1fd1446
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37df1bcefa358f2c9076a3da877bd642d19178b0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# setUTCMinutes (M&#233;todo, Date de JavaScript)
-Establece, utilizando la hora universal coordinada \(UTC\), el valor de minutos del objeto `Date`.  
+# <a name="setutcminutes-method-date-javascript"></a>setUTCMinutes (Método, Date de JavaScript)
+Establece el valor de minutos de la `Date` objeto mediante la hora Universal coordinada (UTC).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.setUTCMinutes(numMinutes[, numSeconds[, numMilli]])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `dateObj`  
- Obligatorio.  Cualquier objeto `Date`.  
+ Obligatorio. Cualquier objeto `Date`.  
   
  `numMinutes`  
- Obligatorio.  Valor numérico igual al valor de los minutos.  Se debe proporcionar si se usa cualquiera de los argumentos siguientes.  
+ Obligatorio. Un valor numérico igual que el valor de minutos. Se debe proporcionar si se utiliza cualquiera de los siguientes argumentos.  
   
  *numSeconds*  
- Opcional.  Valor numérico igual al valor de los segundos.  Se debe proporcionar si se utiliza `numMilli`.  
+ Opcional. Un valor numérico igual al valor de los segundos. Se debe proporcionar si `numMilli` se utiliza.  
   
  `numMilli`  
- Opcional.  Valor numérico igual al valor de milisegundos.  
+ Opcional. Un valor numérico igual que el valor de milisegundos.  
   
-## Comentarios  
- Si no especificas un argumento opcional, todos los métodos **set** que toman argumentos opcionales usan el valor devuelto por los métodos **get** correspondientes.  Por ejemplo, si no se especifica el argumento *numSeconds*, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] usa el valor devuelto por el método `getUTCSeconds`.  
+## <a name="remarks"></a>Comentarios  
+ Todos los **establecer** métodos que toman argumentos opcionales utilizan el valor devuelto de correspondiente **obtener** métodos, si no especifica un argumento opcional. Por ejemplo, si la *numSeconds* no se especifica el argumento, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utiliza el valor devuelto desde el `getUTCSeconds` método.  
   
- Para modificar el valor de los minutos utilizando la hora local, usa el método `setMinutes`.  
+ Para modificar el valor de minutos mediante la hora local, utilice el `setMinutes` método.  
   
- Si el valor de un argumento es mayor que su intervalo, o es un número negativo, los demás valores almacenados se modifican en consecuencia.  Por ejemplo, si la fecha almacenada es el 5 de enero de 1996 a las 00:00:00.00 y se llama a **setUTCMinutes\(70\)**, la fecha cambia al 5 de enero de 1996 a la 01:10:00.00.  
+ Si el valor de un argumento es mayor que su intervalo o es un número negativo, los demás valores almacenados se modifican en consecuencia. Por ejemplo, si la fecha almacenada es "5 de Jan de 1996 00:00:00.00", y **setUTCMinutes (70)** es llama, la fecha se cambia a "5 de Jan de 1996 01:10:00.00."  
   
- Se puede usar el método **setUTCHours** para establecer las horas, los minutos, los segundos y los milisegundos.  
+ El **setUTCHours** método se puede utilizar para establecer las horas, minutos, segundos y milisegundos.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso del método `setUTCMinutes`:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la `setUTCMinutes` método:  
   
-```javascript  
+```JavaScript  
 function SetUTCMinutesDemo(nmin, nsec){  
    var d, s;                    // Declare variables.  
    d = new Date();              // Create Date object.  
@@ -72,12 +74,12 @@ function SetUTCMinutesDemo(nmin, nsec){
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getMinutes \(Método, Date\)](../../javascript/reference/getminutes-method-date-javascript.md)   
- [getUTCMinutes \(Método, Date\)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
- [setMinutes \(Método, Date\)](../../javascript/reference/setminutes-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getMinutes (método, Date)](../../javascript/reference/getminutes-method-date-javascript.md)   
+ [getUTCMinutes (método, Date)](../../javascript/reference/getutcminutes-method-date-javascript.md)   
+ [setMinutes (Método, Date)](../../javascript/reference/setminutes-method-date-javascript.md)

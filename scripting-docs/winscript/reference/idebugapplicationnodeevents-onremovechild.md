@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplicationNodeEvents::onRemoveChild | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplicationNodeEvents.onRemoveChild
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugApplicationNodeEvents::onRemoveChild"
+helpviewer_keywords: IDebugApplicationNodeEvents::onRemoveChild
 ms.assetid: 2e025d29-b8c0-4793-a2d3-c20d548d6386
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNodeEvents::onRemoveChild
-Controla el evento cuando un nodo secundario se quita de un objeto de nodo de aplicación de depuración.  
+# <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
+Controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT onRemoveChild(  
@@ -29,23 +32,23 @@ HRESULT onRemoveChild(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `prddpChild`  
- \[in\] nodo secundario de la aplicación a El que se quitó.  
+ [in] El nodo de aplicación secundario que se quitó.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método controla el evento cuando un nodo secundario se quita de un objeto de nodo de aplicación de depuración.  
+## <a name="remarks"></a>Comentarios  
+ Este método controla el evento cuando se quita un nodo secundario de un objeto de nodo de la aplicación de depuración.  
   
- Los implementadores de la interfaz de `IDebugApplicationNode` provocan este evento.  
+ Los implementadores de la `IDebugApplicationNode` interfaz se genera este evento.  
   
-## Vea también  
- [IDebugApplicationNodeEvents \(Interfaz\)](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IDebugApplicationNodeEvents (interfaz)](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
- [IDebugApplicationNode \(Interfaz\)](../../winscript/reference/idebugapplicationnode-interface.md)
+ [IDebugApplicationNode (Interfaz)](../../winscript/reference/idebugapplicationnode-interface.md)

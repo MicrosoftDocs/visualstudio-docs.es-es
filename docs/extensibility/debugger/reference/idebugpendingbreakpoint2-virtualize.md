@@ -1,57 +1,58 @@
 ---
-title: "IDebugPendingBreakpoint2::Virtualize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Virtualize"
-helpviewer_keywords: 
-  - "Virtualizar (método)"
-  - "IDebugPendingBreakpoint2::Virtualize (método)"
+title: IDebugPendingBreakpoint2::Virtualize | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Virtualize
+helpviewer_keywords:
+- Virtualize method
+- IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 93c9b09b7a9356687707837d818b9a603f8961b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Virtualize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Alterna el estado virtualizados de este punto de interrupción pendiente.  Cuando un punto de interrupción pendiente es virtualizados, el motor de depuración intentará enlazarlo cada vez que las nuevas carga el código del programa.  
+# <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
+Alterna el estado de este virtualizado pendiente de punto de interrupción. Cuando un punto de interrupción pendiente está virtualizado, el motor de depuración intentará enlazarla cada vez que carga el nuevo código en el programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Virtualize(   
-   BOOL fVirtualize  
+```cpp  
+HRESULT Virtualize(   
+   BOOL fVirtualize  
 );  
 ```  
   
-```cpp#  
-int Virtualize(   
-   int fVirtualize  
+```cpp  
+int Virtualize(   
+   int fVirtualize  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `fVirtualize`  
- \[in\]  Establece en cero \(`TRUE`\) para virtualizar el punto de interrupción pendiente, o cero \(`FALSE`\) para desactivar la virtualización.  
+ [in] Establecer a distinto de cero (`TRUE`) para virtualizar el punto de interrupción pendiente, o en cero (`FALSE`) para desactivar la virtualización.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
   
-## Comentarios  
- Se enlaza un punto de interrupción virtualizados cada vez que se carga el código.  
+## <a name="remarks"></a>Comentarios  
+ Un punto de interrupción virtualizado se enlaza cada vez que se carga el código.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CPendingBreakpoint` que expone la interfaz de [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CPendingBreakpoint` objeto que expone la [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
 {    
    HRESULT hr;    
@@ -83,5 +84,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Property to a Custom SharePoint Project Item Type | Microsoft Docs'
+title: "Cómo: agregar una propiedad a un tipo de elemento de proyecto de SharePoint personalizado | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,68 +15,68 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
 ms.assetid: 47e940f6-1779-4530-aea6-c43a370c544f
-caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e1d8a7747c2ff32777e4716f23e5dbe8636379ac
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 4c8971d6da08afa6140c049aa81937b0804cd363
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>How to: Add a Property to a Custom SharePoint Project Item Type
-  When you define a custom SharePoint project item type, you can add a property to the project item. The property appears in the **Properties** window when the project item is selected in **Solution Explorer**.  
+# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Cómo: Agregar una propiedad a un tipo de elemento de proyecto personalizado de SharePoint
+  Cuando se define un tipo de elemento de proyecto de SharePoint personalizado, puede agregar una propiedad al elemento de proyecto. La propiedad aparece en la **propiedades** ventana cuando se selecciona el elemento de proyecto en **el Explorador de soluciones**.  
   
- The following steps assume that you have already defined your own SharePoint project item type. For more information, see [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+ Los pasos siguientes se supone que ya se ha definido su propio tipo de elemento de proyecto de SharePoint. Para obtener más información, consulte [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
-### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>To add a property to a definition of a project item type  
+### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>Para agregar una propiedad a una definición de un tipo de elemento de proyecto  
   
-1.  Define a class with a public property that represents the property you are adding to the custom project item type. If you want to add multiple properties to a custom project item type, you can define all the properties in the same class or in different classes.  
+1.  Defina una clase con una propiedad pública que representa la propiedad que se va a agregar al tipo de elemento de proyecto personalizado. Si desea agregar varias propiedades a un tipo de elemento de proyecto personalizado, puede definir todas las propiedades de la misma clase o en clases diferentes.  
   
-2.  In the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> method of your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementation, handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> event of the *projectItemTypeDefinition* parameter.  
+2.  En el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método de su <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implementación, el identificador de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> eventos de la *projectItemTypeDefinition* parámetro.  
   
-3.  In the event handler for the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> event, add an instance of your custom properties class to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> collection of the event arguments parameter.  
+3.  En el controlador de eventos para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> eventos, debe agregar una instancia de la clase de propiedades personalizadas para el <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> colección del parámetro de argumentos del evento.  
   
-## <a name="example"></a>Example  
- The following code example demonstrates how to add a property named **Example Property** to a custom project item type.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo de código siguiente se muestra cómo agregar una propiedad denominada **Example Property** a un personalizado de elementos de proyecto tipo.  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)] [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]  
+ [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
+ [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]  
   
-### <a name="understanding-the-code"></a>Understanding the Code  
- To ensure that the same instance of the `CustomProperties` class is used each time the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> event occurs, the code example saves the properties object to the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the project item the first time this event occurs. The code retrieves this object whenever this event occurs again. For more information about using the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property to save data with project items, see [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+### <a name="understanding-the-code"></a>Descripción del código  
+ Para asegurarse de que la misma instancia de la `CustomProperties` clase se utiliza cada vez que la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> se produce el evento, el ejemplo de código guarda el objeto de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad de la hora del primer elemento de proyecto se produce este evento. El código recupera un objeto cada vez que este evento se produce de nuevo. Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propiedad que se va a guardar los datos con los elementos de proyecto, vea [asociar datos personalizados con extensiones de herramientas de SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
- To persist changes to the property value, the **set** accessor for `ExampleProperty` saves the new value to the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> property of the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> object that the property is associated with. For more information about using the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> property to persist data with project items, see [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Para conservar los cambios en el valor de propiedad, el **establecer** descriptor de acceso para `ExampleProperty` guarda el nuevo valor para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objeto asociado a la propiedad. Para obtener más información sobre el uso de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad para conservar los datos con los elementos de proyecto, vea [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-### <a name="specifying-the-behavior-of-custom-properties"></a>Specifying the Behavior of Custom Properties  
- You can define how a custom property appears and behaves in the **Properties** window by applying attributes from the <xref:System.ComponentModel> namespace to the property definition. The following attributes are useful in many scenarios:  
+### <a name="specifying-the-behavior-of-custom-properties"></a>Especifica el comportamiento de propiedades personalizadas  
+ Puede definir cómo aparece una propiedad personalizada y cómo se comporta en la **propiedades** ventana aplicando los atributos de la <xref:System.ComponentModel> espacio de nombres para la definición de propiedad. Los siguientes atributos son útiles en muchos escenarios:  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Specifies the name of the property that appears in the **Properties** window.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Especifica el nombre de la propiedad que aparece en el **propiedades** ventana.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Specifies the description string that appears in the bottom of the **Properties** window when the property is selected.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Especifica la cadena de descripción que aparece en la parte inferior de la **propiedades** ventana cuando se selecciona la propiedad.  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Specifies the default value of the property.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Especifica el valor predeterminado de la propiedad.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Specifies a custom conversion between the string that is displayed in the **Properties** window and a non-string property value.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Especifica una conversión personalizada entre la cadena que se muestra en el **propiedades** ventana y un valor de propiedad no es una cadena.  
   
--   <xref:System.ComponentModel.EditorAttribute>: Specifies a custom editor to use to modify the property.  
+-   <xref:System.ComponentModel.EditorAttribute>: Especifica un editor personalizado para utilizar para modificar la propiedad.  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- These code examples require a class library project with references to the following assemblies:  
+## <a name="compiling-the-code"></a>Compilar el código  
+ Estos ejemplos de código necesita un proyecto de biblioteca de clases con referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-project-item"></a>Deploying the Project Item  
- To enable other developers to use your project item, create a project template or a project item template. For more information, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="deploying-the-project-item"></a>Implementar el elemento de proyecto  
+ Para permitir que otros desarrolladores usen el elemento de proyecto, cree una plantilla de proyecto o una plantilla de elemento de proyecto. Para obtener más información, consulte [crear plantillas de elementos y las plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
- To deploy the project item, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly, the template, and any other files that you want to distribute with the project item. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Para implementar el elemento de proyecto, crear un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado, la plantilla y cualquier otro archivo que desee distribuir con el elemento de proyecto. Para obtener más información, consulte [extensiones de implementación para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>See Also  
- [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [How to: Add a Shortcut Menu Item to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
- [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
+## <a name="see-also"></a>Vea también  
+ [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [Cómo: agregar un elemento de menú contextual a un tipo de elemento de proyecto personalizado de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [Definición de tipos de elementos de proyecto personalizados de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
   
   

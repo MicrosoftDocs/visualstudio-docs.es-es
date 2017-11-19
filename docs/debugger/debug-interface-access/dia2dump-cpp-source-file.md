@@ -1,29 +1,27 @@
 ---
-title: "Archivo de origen Dia2dump.cpp | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Muestra de Dia2dump [Kit de desarrollo DIA (SDK)], código fuente de muestra"
+title: Origen Dia2dump.cpp | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: Dia2dump sample [DIA SDK], sample source
 ms.assetid: 32fd92f6-3de5-4353-b7cb-66781e03b38f
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 47c5ad392d031eabcfe51c74de48084144f9e8a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Archivo de origen Dia2dump.cpp
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El siguiente código fuente de Dia2dump.cpp muestra el contenido de un archivo .pdb.  este código fuente es utilizado por [Ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md).  
+# <a name="dia2dumpcpp-source-file"></a>Archivo de origen Dia2dump.cpp
+El código de origen Dia2dump.cpp siguiente muestra el contenido de un archivo PDB. Este código fuente se usa por [ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md).  
   
 ```  
 // dia2dump.cpp : Dump contents of a pdb file using DIA.  

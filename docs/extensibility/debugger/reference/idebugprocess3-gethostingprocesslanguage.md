@@ -1,49 +1,49 @@
 ---
-title: "IDebugProcess3::GetHostingProcessLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::GetHostingProcessLanguage"
-helpviewer_keywords: 
-  - "IDebugProcess3::GetHostingProcessLanguage"
+title: IDebugProcess3::GetHostingProcessLanguage | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess3::GetHostingProcessLanguage
+helpviewer_keywords: IDebugProcess3::GetHostingProcessLanguage
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c2dec7a4712ed6f99279f543f8c109ed71bcfe56
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess3::GetHostingProcessLanguage
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método devuelve `GUID` que representa el lenguaje de este proceso como definido por una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).  
+# <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
+Este método devuelve un `GUID` que representa el idioma de este proceso como conjunto mediante una llamada a [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetHostingProcessLanguage(  
-   GUID* pguidLang  
+HRESULT GetHostingProcessLanguage(  
+   GUID* pguidLang  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetHostingProcessLanguage(  
-   out Guid pguidLang  
+   out Guid pguidLang  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pguidLang`  
- \[out\]  `GUID` de lenguaje de este proceso.  `GUID_NULL` \(C\+\+\) o `Guid.Empty` \(C\#\) significa que el lenguaje no está establecido.  
+ [out] El `GUID` del lenguaje de este proceso. `GUID_NULL`(C++) o `Guid.Empty` (C#) significa que no se ha establecido el idioma.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve el código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)

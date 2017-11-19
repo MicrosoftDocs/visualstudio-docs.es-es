@@ -1,33 +1,32 @@
 ---
-title: "Registrar VSPackages | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSPackages administrado, registrar"
-  - "registro, VSPackages administrado"
+title: Registro de VSPackages | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managed VSPackages, registering
+- registration, managed VSPackages
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2d580d3d74d8648b7181ac1ca384d3232fa8225b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Registrar VSPackages
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliza los archivos .pkgdef para describir buscar un VSPackage.  Un archivo .pkgdef contiene toda la información que se agregue de otra manera de registro del sistema.  VSPackages administrado es registrado agregar atributos al código fuente y después ejecuta [Utilidad de CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) en el ensamblado resultante para generar un archivo .pkgdef.  
+# <a name="registering-vspackages"></a>Registro de VSPackages
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]se basa en los archivos de .pkgdef para describir y buscar un VSPackage. Un archivo .pkgdef contiene toda la información de registro en caso contrario, se debe agregar al registro del sistema. VSPackages administrado se registran agregando atributos al código fuente y, a continuación, ejecuta el [CreatePkgDef utilidad](../../extensibility/internals/createpkgdef-utility.md) en el ensamblado resultante para generar un archivo .pkgdef.  
   
-## En esta sección  
- [Especificar la ubicación del archivo de VSPackage del Shell de VS](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Describe la ruta de acceso de carga para VSPackages.  
+## <a name="in-this-section"></a>En esta sección  
+ [Especificación de la ubicación del archivo de VSPackage en el Shell de VS](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
+ Describe la ruta de acceso de carga de VSPackages.  
   
- [Registrar y anular el registro VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)  
- explica cómo registrar un VSPackage.  
-  
- [Usar un atributo de registro personalizado para registrar una extensión](../../misc/using-a-custom-registration-attribute-to-register-an-extension.md)  
- Describe cómo crear un registro de manifiesto que se puede usar para implementar un VSPackage administrado.
+ [Registrar y anulación deel registro de VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)  
+ Explica cómo registrar un VSPackage.  

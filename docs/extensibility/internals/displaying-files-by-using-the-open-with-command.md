@@ -1,38 +1,40 @@
 ---
-title: "Visualizaci&#243;n de archivos mediante el abrir con el comando | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "tipos de proyecto, compatibilidad con el comando Abrir con"
-  - "Comando Abrir con"
-  - "persistencia, compatibilidad con el comando Abrir con"
+title: "Visualización de archivos mediante el abierto con el comando | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project types, supporting Open With command
+- Open With command
+- persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Visualizaci&#243;n de archivos mediante el abrir con el comando
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un proyecto puede formular el IDE para mostrar el cuadro de diálogo de **Abrir con** .  Esta solicitud pide al usuario abrir un archivo con una selección de editores estándar.  los pasos siguientes describen este proceso.  
+# <a name="displaying-files-by-using-the-open-with-command"></a>Visualización de archivos mediante el abierto con el comando
+Un proyecto puede pedir el IDE para mostrar el **abrir con** cuadro de diálogo. Esta solicitud pide al usuario que abra un archivo que tenga una selección de editores estándares. Los pasos siguientes describen este proceso.  
   
-1.  El proyecto llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, especificando un valor de OSE\_UseOpenWithDialog para el parámetro de `OSEOpenDocEditor` .  
+1.  Las llamadas de proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>, especificando un valor de OSE_UseOpenWithDialog para el `OSEOpenDocEditor` parámetro.  
   
-2.  Basándose en la extensión de nombre de archivo del documento, el IDE determina que los editores enumerados en el registro pueden abrir el documento especificado y muestra esta información en el cuadro de diálogo de **Abrir con** .  
+2.  En función de la extensión de nombre de archivo del documento, el IDE determina qué editores aparecen en el puede registro abran el documento especificado y muestra esta información en el **abrir con** cuadro de diálogo.  
   
     > [!NOTE]
-    >  Los proyectos que tienen un editor intrínseco que se debe incluir en el cuadro de diálogo de **Abrir con** deben registrar un generador del editor para cada uno editor.  Los editores intrínsecos solo funcionan junto con un tipo determinado de proyecto, que se aplica en la implementación del método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> .  El IDE incluye un generador integrada del editor para el editor de texto básico y el editor binario.  El IDE también crea una instancia de un generador del editor en nombre de cada asociación de archivo registrada de Windows.  Un ejemplo de este tipo de archivo es Microsoft Word.  
+    >  Los proyectos que tienen un editor intrínseco que debe incluirse en la **abrir con** cuadro de diálogo debe registrar un generador de editores de cada editor de este tipo. Intrínsecos editores solo funcionan junto con un determinado tipo de proyecto, que se aplica en la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método. El IDE incluye una fábrica de editor integrada para el editor de texto básico y el editor binario. El IDE también crea una instancia de un generador de editores en nombre de cada asociación de archivo registrado de Windows. Un ejemplo de este archivo es Microsoft Word.  
   
-3.  En cuanto el usuario selecciona un elemento del cuadro de diálogo de **Abrir con** , el IDE abra el documento llamando al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> .  Para obtener más información, vea [Cómo: abrir editores estándares](../../extensibility/how-to-open-standard-editors.md).  
+3.  Tan pronto como el usuario selecciona un elemento de la **abrir con** cuadro de diálogo, el IDE, a continuación, abre el documento mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método. Para obtener más información, consulte [Cómo: abrir editores estándar](../../extensibility/how-to-open-standard-editors.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Abrir y guardar elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Mostrar archivos mediante el comando Abrir archivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Cómo: abrir editores estándares](../../extensibility/how-to-open-standard-editors.md)
+ [Apertura de editores estándar](../../extensibility/how-to-open-standard-editors.md)

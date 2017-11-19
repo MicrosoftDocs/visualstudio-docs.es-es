@@ -1,40 +1,37 @@
 ---
-title: "Seleccionar tipo de c&#243;digo (Cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.selectengines"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurar [Visual Studio], selección de motor"
-  - "depurador, selección de motor"
-  - "Selección de motor de depuración (cuadro de diálogo)"
+title: "Seleccione el cuadro de diálogo de tipo de código | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.selectengines
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+helpviewer_keywords:
+- debugging [Visual Studio], engine selection
+- debugger, engine selection
+- debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 421c8a206091bf69e20a814a693f1b88bbb0d843
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Seleccionar tipo de c&#243;digo (Cuadro de di&#225;logo)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proceso** y haga clic en el botón **Seleccionar**.  
+# <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
+Para abrir este cuadro de diálogo, abra el **adjuntar al proceso** cuadro de diálogo y, a continuación, haga clic en el **seleccione** botón.  
   
  **Determinar automáticamente el tipo de código para depurar**  
  Se seleccionará el depurador adecuado en función del tipo de código que se está ejecutando.  
@@ -42,6 +39,6 @@ Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proc
  **Depurar estos tipos de código:**  
  En la lista proporcionada, elija el tipo de código que desee depurar.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Crear asociaciones con procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [Adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

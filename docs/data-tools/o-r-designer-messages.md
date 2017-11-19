@@ -1,30 +1,34 @@
 ---
-title: "Mensajes de Object Relational Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "R O diseñadores mensajes | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Mensajes de Object Relational Designer
+# <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con Object Relational Designer.  
   
-## En esta sección  
- [No se puede crear una asociación \<nombre de asociación\>; la propiedad aparece dos veces.](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+## <a name="in-this-section"></a>En esta sección  
+ [No se puede crear una asociación \<nombre de asociación >-propiedad aparece dos veces](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [No se puede crear una asociación \<nombre de asociación\>; los tipos de propiedad no coinciden](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [No se puede crear una asociación \<nombre de asociación >-no coinciden con los tipos de propiedad](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [El cambio del tipo devuelto de un método DataContext no se puede deshacer](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [No se pudo recuperar información de esquema del objeto de base de datos \<nombre de objeto\>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [No se pudo recuperar la información de esquema para el objeto de base de datos \<nombre de objeto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -36,13 +40,13 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
   
  [Los objetos que va a agregar al diseñador usan una conexión de datos diferente a la que está usando el diseñador](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [No se puede eliminar la propiedad \<nombre de propiedad\>](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [La propiedad \<nombre de propiedad > no se puede eliminar](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [No se puede eliminar la propiedad \<nombre de propiedad\> porque participa en la asociación \<nombre de asociación\>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [La propiedad \<nombre de propiedad > no se puede eliminar porque participa en la asociación \<nombre de asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
- [La conexión seleccionada usa un proveedor de bases de datos no admitido](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
+ [La conexión seleccionada usa un proveedor de base de datos que no se admite](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
   
  [Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
   
@@ -50,10 +54,10 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
   
  [Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
   
-## Referencia  
+## <a name="reference"></a>Referencia  
  <xref:System.Data.Linq>  
   
-## Secciones relacionadas  
- [Object Relational Designer](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
- [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

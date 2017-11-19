@@ -1,36 +1,37 @@
 ---
-title: "Informaci&#243;n general del servicio de lenguaje heredado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Servicios de lenguaje [managed package framework], acerca de los servicios de lenguaje"
+title: "Introducción al servicio de lenguaje heredado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Informaci&#243;n general del servicio de lenguaje heredado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Un servicio de proporciona compatibilidad de editor que permite implementar determinadas características de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Las clases administradas del \(MPF\) servicio de lenguaje de paquete proporcionan compatibilidad completa para las características con frecuencia\-utilizadas y compatibilidad parcial para otras características.  
+# <a name="legacy-language-service-overview"></a>Introducción al servicio de lenguaje heredado
+Un servicio de lenguaje proporciona compatibilidad con el editor que le permite implementar determinados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa de características usados con frecuencia y compatibilidad parcial para otras características.  
   
-## Características totalmente compatibles en el MPF  
- Las clases del servicio de lenguaje de MPF admiten las características siguientes:  
+## <a name="fully-supported-features-in-the-mpf"></a>Características totalmente compatibles en MPF  
+ Las clases de servicio de lenguaje MPF admiten las siguientes características:  
   
--   El resaltado de la sintaxis  
+-   Resalte de sintaxis  
   
--   Esquematización  
+-   esquematizar  
   
--   bloques de comentario de código  
+-   Bloques de comentarios de código  
   
--   El la concordancia de  
+-   Coincidencia de llaves  
   
 -   Fragmentos de código  
   
@@ -38,29 +39,29 @@ Un servicio de proporciona compatibilidad de editor que permite implementar dete
   
 -   Información de parámetros de IntelliSense  
   
--   información rápida de IntelliSense  
+-   Información rápida de IntelliSense  
   
--   Finalización de miembros de IntelliSense  
+-   Finalización de miembro de IntelliSense  
   
--   Finalización de palabras de IntelliSense  
+-   Finalización automática de palabras de IntelliSense  
   
-## Características parcialmente compatibles en el MPF  
- El MPF sólo proporciona compatibilidad parcial con las características siguientes.  Esto significa que debe implementar los métodos invocados por el MPF.  
+## <a name="partially-supported-features-in-the-mpf"></a>Características admitidas parcialmente en MPF  
+ MPF proporciona compatibilidad parcial solo para las siguientes características. Esto significa que debe implementar los métodos llamados por MPF.  
   
--   Cambiar el formato del código.  Se proporciona el código que implementa cambiar el formato.  
+-   Cambiar el formato de código. Proporcionar el código que implementa el nuevo formato.  
   
--   Validar los puntos de interrupción identificando los intervalos válidas en el código.  Se proporciona el código que identifica los intervalos de código.  
+-   Abarca la validación de los puntos de interrupción mediante la identificación de código válido. Proporcionar el código que identifica los intervalos de código.  
   
--   Si la ventana de **Automtico** del depurador para mostrar variables.  Se proporciona el código que determina qué mostrar en la ventana.  
+-   Compatibilidad con el depurador **automático** ventana para mostrar las variables. Proporcionar el código que determina qué se debe mostrar en la ventana.  
   
--   Admitir **Barra de navegación** para la navegación rápida entre los tipos y miembros.  Implementar y devuelve una clase auxiliar que rellene las listas en los cuadros combinados de **Barra de navegación** .  
+-   Compatibilidad con la **barra de navegación** para desplazarse rápidamente entre los tipos y miembros. Implementar y devolver una clase auxiliar que rellena las listas de la **barra de navegación** cuadros combinados.  
   
-## Implementación  
- Debe finalizar varios pasos para implementar el servicio de lenguaje propio y las características del servicio de lenguaje que desee admitir para el idioma.  Estos pasos se describen en los temas siguientes:  
+## <a name="implementation"></a>Implementación  
+ Debe completar varios pasos para implementar el propio servicio de lenguaje y las características del servicio de lenguaje que desee admitir en su idioma. En los temas siguientes se describen estos pasos:  
   
--   [Implementación de un servicio de lenguaje](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Registrar un servicio de lenguaje](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
@@ -68,11 +69,11 @@ Un servicio de proporciona compatibilidad de editor que permite implementar dete
   
 -   [Esquematización en un servicio de lenguaje heredado](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [Comentarios de código en un servicio de lenguaje heredado](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+-   [Comentario de código en un servicio de lenguaje heredado](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [Cambiar el formato de código en un servicio de lenguaje heredado](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+-   [Cambio de formato de código en un servicio de lenguaje heredado](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [Propiedades de documento personalizadas en un servicio de lenguaje heredado](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+-   [Propiedades de documento personalizado en un servicio de lenguaje heredado](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
 -   [Compatibilidad con fragmentos de código en un servicio de lenguaje heredado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
@@ -86,10 +87,10 @@ Un servicio de proporciona compatibilidad de editor que permite implementar dete
   
 -   [Información rápida en un servicio de lenguaje heredado](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [Compatibilidad con la ventana automático en un servicio de lenguaje heredado](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+-   [Compatibilidad con la ventana Automático en un servicio de lenguaje heredado](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
 -   [Validación de puntos de interrupción en un servicio de lenguaje heredado](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
-## Vea también  
- [Implementación de un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+## <a name="see-also"></a>Vea también  
+ [Implementar un servicio de lenguaje heredado](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md)

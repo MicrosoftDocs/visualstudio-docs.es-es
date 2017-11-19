@@ -1,64 +1,69 @@
 ---
-title: "SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown"
-helpviewer_keywords: 
-  - "<SupportsLanguageDropDown> (elemento) [plantillas de Visual Studio]"
-  - "SupportsLanguageDropDown (elemento) [plantillas de Visual Studio]"
+title: SupportsLanguageDropDown (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
+helpviewer_keywords:
+- SupportsLanguageDropDown element [Visual Studio Templates]
+- <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ff2e2167daa0cb22abac7d8c1a545d17b2faa36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica si la plantilla de elemento Web es idéntica para varios lenguajes y si la opción **Lenguaje** está habilitada en el cuadro de diálogo **Agregar nuevo elemento**.  
+# <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
+Especifica si la plantilla de elemento Web es idéntica para varios idiomas y si la **lenguaje** opción está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<SupportsLanguageDropDown >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <SupportsLanguageDropDown> true/false </SupportsLanguageDropDown>  
 ```  
   
-## Atributos y elementos  
- Las siguientes secciones describen atributos, elementos secundarios y elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, que indica si la opción **Lenguaje** está disponible o no en el cuadro de diálogo **Agregar nuevo elemento**.  
+ El texto debe ser `true` o `false`, lo que indica si la **lenguaje** opción está disponible desde el **Agregar nuevo elemento** cuadro de diálogo.  
   
-## Comentarios  
- `SupportsLanguageDropDown` es un elemento opcional.  El valor predeterminado es `false`.  
+## <a name="remarks"></a>Comentarios  
+ `SupportsLanguageDropDown` es un elemento opcional. El valor predeterminado es `false`.  
   
- El elemento `SupportsLanguageDropDown` sólo está disponible para las plantillas de elementos de Web.  
+ El `SupportsLanguageDropDown` elemento sólo está disponible para plantillas de elementos Web.  
   
- Si el valor de este elemento se establece en `true`, la plantilla de elemento será idéntica para todos los lenguajes de programación y la opción **Lenguaje** estará habilitada en el cuadro de diálogo **Agregar nuevo elemento**.  Esta opción permite elegir el lenguaje de programación del nuevo elemento que desea crear a partir de la plantilla.  
+ Si el valor de este elemento se establece en `true`, a continuación, la plantilla de elemento es idéntica para todos los lenguajes de programación y la **lenguaje** opción está habilitada en el **Agregar nuevo elemento** cuadro de diálogo. Esta opción permite elegir el lenguaje de programación del nuevo elemento que desea crear a partir de la plantilla.  
   
-## Ejemplo  
- El ejemplo siguiente especifica que la opción de lista desplegable **Lenguaje** debe aparecer en el cuadro de diálogo.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se especifica para mostrar el **lenguaje** desplegable opción.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -82,6 +87,6 @@ Especifica si la plantilla de elemento Web es idéntica para varios lenguajes y 
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

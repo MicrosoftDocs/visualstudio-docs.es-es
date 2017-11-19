@@ -1,59 +1,58 @@
 ---
-title: "IDiaAddressMap::set_imageHeaders | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::set_imageHeaders (método)"
+title: 'Idiaaddressmap:: Set_imageheaders | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::set_imageHeaders method
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4ee1fc286b162ff7a0649c5cc651884b927b5857
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::set_imageHeaders
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-establece encabezados de imagen para habilitar la traducción relativa de la dirección virtual.  
+# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
+Conjuntos de encabezados para habilitar la traducción de dirección virtual relativa de la imagen.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT set_imageHeaders (   
-   DWORD cbData,  
-   BYTE  data[],  
-   BOOL  originalHeaders  
+```C++  
+HRESULT set_imageHeaders (   
+   DWORD cbData,  
+   BYTE  data[],  
+   BOOL  originalHeaders  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  cbData  
- \[in\]  Número de bytes de datos del encabezado.  Debe ser `n*sizeof(IMAGE_SECTION_HEADER)` donde es el número `n` de encabezados de sección en el ejecutable.  
+ [in] Número de bytes de datos de encabezado. Debe ser `n*sizeof(IMAGE_SECTION_HEADER)` donde `n` es el número de encabezados de la sección del archivo ejecutable.  
   
- datos \[\]  
- \[in\]  Una matriz de estructuras de `IMAGE_SECTION_HEADER` que se utilizarán como los encabezados de imagen.  
+ datos]  
+ [in] Una matriz de `IMAGE_SECTION_HEADER` estructuras que se usará como los encabezados de la imagen.  
   
  originalHeaders  
- \[in\]  Establezca en `FALSE` si los encabezados de imagen son de la nueva imagen, `TRUE` si reflejan la imagen original antes de una actualización.  Normalmente, esto se establecería a `TRUE` solo junto con llamadas al método de [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
+ [in] Establecido en `FALSE` si los encabezados de la imagen se corresponden con la nueva imagen, `TRUE` si reflejan la imagen original antes de realizar una actualización. Normalmente, esto se establecería en `TRUE` sólo en combinación con llamadas a la [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- La estructura de `IMAGE_SECTION_HEADER` se declara en Winnt.h y representa el formato del encabezado de la sección de la imagen del ejecutable.  
+## <a name="remarks"></a>Comentarios  
+ El `IMAGE_SECTION_HEADER` estructura se declara en Winnt.h y representa el formato de encabezado de sección de imagen del archivo ejecutable.  
   
- los cálculos de dirección virtual relativos dependen de los valores de `IMAGE_SECTION_HEADER` .  Normalmente, el diámetro recupera estos del archivo de base de datos de programa \(.pdb\).  Si faltan estos valores, el diámetro no puede calcular direcciones virtuales relativas y el método de [IDiaAddressMap::get\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) devuelve `FALSE`.  El cliente debe llamar al método de [IDiaAddressMap::put\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) para habilitar los cálculos de dirección virtual relativos después de proporcionar los encabezados de imagen que falta de la imagen propio.  
+ Cálculos de dirección virtual relativa dependen el `IMAGE_SECTION_HEADER` valores. Normalmente, el DIA recupera desde el archivo de programa (.pdb) de la base de datos. Si faltan estos valores, el DIA es no se puede calcular direcciones virtuales relativas y el [idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) método `FALSE`. El cliente, a continuación, debe llamar a la [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) método para permitir a los cálculos de dirección virtual relativa después de proporcionar los encabezados que faltan de la imagen de la propia imagen.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set\_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
- [IDiaAddressMap::get\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
- [IDiaAddressMap::put\_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)
+ [Idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)   
+ [Idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

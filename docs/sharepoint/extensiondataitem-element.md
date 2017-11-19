@@ -1,68 +1,69 @@
 ---
-title: "ExtensionDataItem Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ExtensionDataItem element"
+title: ExtensionDataItem (elemento) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: ExtensionDataItem element
 ms.assetid: 6a5fe7eb-b433-42dc-bd50-4882b780e2fb
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 57e6d01e918256217e94077f6414651e50dd4c74
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ExtensionDataItem Element
-  Representa un elemento de datos personalizado que está asociado al elemento de proyecto de SharePoint y que tiene el formato clave\-valor.  La clave y el valor deben ser cadenas.  
+# <a name="extensiondataitem-element"></a>ExtensionDataItem (Elemento)
+  Representa un elemento de datos personalizado que está asociado con el elemento de proyecto de SharePoint, en formato de clave/valor. La clave y el valor deben ser cadenas.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ExtensionDataItem Key = "Key of the data item"  
     Value = "Value of the data item" />  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|**Key**|El atributo **xs:string** es obligatorio.<br /><br /> La clave que se utiliza para almacenar y recuperar el elemento de datos.|  
-|**Value**|El atributo **xs:string** es obligatorio.<br /><br /> El valor del elemento de datos.|  
+|---------------|-----------------|  
+|**Key**|Requiere **xs: String** atributo.<br /><br /> La clave que se utiliza para almacenar y recuperar el elemento de datos.|  
+|**Valor**|Requiere **xs: String** atributo.<br /><br /> El valor del elemento de datos.|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[ExtensionData](../sharepoint/extensiondata-element.md)|Representa una colección de elementos de datos personalizados que están asociados al elemento de proyecto de SharePoint.|  
+|-------------|-----------------|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|Representa una colección de elementos de datos personalizados que están asociados con el elemento de proyecto de SharePoint.|  
   
-## Comentarios  
- Al asociar datos personalizados a un elemento de proyecto de SharePoint utilizando la propiedad <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> de un objeto <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>, Visual Studio guarda los datos en un nuevo elemento **ExtensionDataItem** en el archivo .spdata del elemento de proyecto.  Para obtener más información, vea [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+## <a name="remarks"></a>Comentarios  
+ Al asociar datos personalizados con un elemento de proyecto de SharePoint utilizando la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> propiedad de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objeto, Visual Studio guarda los datos en una nueva **ExtensionDataItem** elemento en el archivo .spdata del elemento de proyecto. Para obtener más información, consulte [guardar datos en las extensiones del sistema del proyecto de SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de los elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

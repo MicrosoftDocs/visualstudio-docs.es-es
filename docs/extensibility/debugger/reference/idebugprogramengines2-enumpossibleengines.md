@@ -1,61 +1,61 @@
 ---
-title: "IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
-helpviewer_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
+title: IDebugProgramEngines2::EnumPossibleEngines | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords: IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d1cf3eead4b268dbbca5ad4333adcc647522b051
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEngines2::EnumPossibleEngines
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Devuelve el GUID para todos los motores \(DE\) posibles de depuración que pueden depurar este programa.  
+# <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
+Devuelve el GUID de todos los posibles motores de depuración (Alemania) que pueden depurar este programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumPossibleEngines(   
-   DWORD  celtBuffer,  
-   GUID*  rgguidEngines,  
-   DWORD* pceltEngines  
+```cpp  
+HRESULT EnumPossibleEngines(   
+   DWORD  celtBuffer,  
+   GUID*  rgguidEngines,  
+   DWORD* pceltEngines  
 );  
 ```  
   
-```c#  
-int EnumPossibleEngines(   
-   uint      celtBuffer,  
-   GUID[]    rgguidEngines,  
-   ref DWORD pceltEngines  
+```csharp  
+int EnumPossibleEngines(   
+   uint      celtBuffer,  
+   GUID[]    rgguidEngines,  
+   ref DWORD pceltEngines  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celtBuffer`  
- \[in\]  El número de GUID a devolver.  Esto también especifica el tamaño máximo de la matriz de `rgguidEngines` .  
+ [in] El número de GUID de Alemania que se va a devolver. También especifica el tamaño máximo de la `rgguidEngines` matriz.  
   
  `rgguidEngines`  
- \[in, out\]  Una matriz de GUID que se va a realizar.  
+ [entrada, salida] Una matriz de GUID de Alemania que deben rellenarse.  
   
  `pceltEngines`  
- \[out\]  Devuelve el número real de GUID que se devuelve.  
+ [out] Devuelve el número real de GUID DE que se devuelven.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve \[C\+\+\] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o \[C\#\] 0x8007007A si el búfer no es suficientemente grande.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A si el búfer no es suficientemente grande.  
   
-## Comentarios  
- Para determinar cuántos motores hay, llaman a este método una vez con el parámetro de `celtBuffer` establecido en 0 y el parámetro de `rgguidEngines` establecido en un valor nulo.  Esto devuelve `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` \(0x8007007A para C\#\), y el parámetro de `pceltEngines` devuelve el tamaño necesario del búfer.  
+## <a name="remarks"></a>Comentarios  
+ Con el fin de determinar el número de motores no existe, llame a este método una vez con la `celtBuffer` parámetro establecido en 0 y el `rgguidEngines` parámetro establecido en un valor null. Esto devuelve `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A para C#) y el `pceltEngines` parámetro devuelve el tamaño necesario del búfer.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

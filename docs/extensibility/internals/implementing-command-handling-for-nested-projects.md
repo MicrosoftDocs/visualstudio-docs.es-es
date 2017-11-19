@@ -1,44 +1,45 @@
 ---
-title: "Implementaci&#243;n de control de comandos para proyectos anidados | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "proyectos anidados, implementar el control de comandos"
+title: Implementar el control de comandos para anidar proyectos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a71da10ee4473f3fb542e0ce0e03891d60b75d34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Implementaci&#243;n de control de comandos para proyectos anidados
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El IDE puede pasar los comandos que se pasan a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e interfaces de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> a proyectos anidados, o proyectos primarios pueden filtrar o reemplazar los comandos.  
+# <a name="implementing-command-handling-for-nested-projects"></a>Implementar el control de comandos para proyectos anidados
+El IDE puede pasar comandos que se pasan a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces proyectos anidados o primario proyectos puedan filtrar o reemplazar los comandos.  
   
 > [!NOTE]
->  Únicamente los comandos controla normalmente por el proyecto principal se pueden filtrar.  Los comandos como **Build** y **Deploy** controlados por el IDE no se pueden filtrar.  
+>  Se pueden filtrar solo los comandos normalmente controlados el proyecto principal. Comandos como **generar** y **implementar** que se administran mediante el IDE no se pueden filtrar.  
   
- Los pasos siguientes describen el proceso para implementar la administración de comando.  
+ Los siguientes pasos describen el proceso para implementar la gestión de comandos.  
   
-## Procedimientos  
+## <a name="procedures"></a>Procedimientos  
   
-#### Para implementar la administración de comando  
+#### <a name="to-implement-command-handling"></a>Para implementar el control de comando  
   
-1.  Cuando el usuario selecciona un proyecto anidados o un nodo de un proyecto anidada:  
+1.  Cuando el usuario selecciona un nodo o un proyecto anidado en un proyecto anidado:  
   
-    1.  El IDE llama al método de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> .  
+    1.  Las llamadas IDE el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método.  
   
-     \-O bien\-  
+     o  
   
-    1.  Si el comando se originó en una ventana jerarquía, como un comando de menú contextual en el explorador de soluciones, el IDE llama al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> en el elemento primario del proyecto.  
+    1.  Si el comando se ha originado en una ventana de jerarquía, por ejemplo, un comando de menú contextual en el Explorador de soluciones, el IDE llama el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método en el elemento primario del proyecto.  
   
-2.  El proyecto principal puede examinar los parámetros que se pasarán a `QueryStatus`, como `pguidCmdGroup` y `prgCmds`, para determinar si el proyecto principal debe filtrar los comandos.  Si el proyecto principal se implementa los comandos de filtro, debe establecer:  
+2.  El proyecto principal puede examinar los parámetros que se pasan a `QueryStatus`, como `pguidCmdGroup` y `prgCmds`, para determinar si el proyecto principal debe filtrar los comandos. Si se implementa el proyecto principal para filtrar los comandos, debe establecer:  
   
     ```  
     prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
@@ -46,13 +47,13 @@ El IDE puede pasar los comandos que se pasan a través de <xref:Microsoft.Visual
     prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
     ```  
   
-     El proyecto principal debe devolver `S_OK`.  
+     A continuación, el proyecto principal debe devolver `S_OK`.  
   
-     Si el proyecto principal no filtra el comando, debe simplemente devolver `S_OK`.  En este caso, el IDE automáticamente distribuye el comando al proyecto secundario.  
+     Si el proyecto principal no filtra el comando, debe devolver simplemente `S_OK`. En este caso, el IDE distribuye automáticamente el comando al proyecto secundario.  
   
-     El proyecto principal no tiene que distribuir el comando al proyecto secundario.  El IDE realiza esta tarea.  
+     El proyecto principal no tiene que enrutar el comando al proyecto secundario. El IDE realiza esta tarea...  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
- [Barras de herramientas, menús y comandos](../../extensibility/internals/commands-menus-and-toolbars.md)   
- [Proyectos de anidamiento](../../extensibility/internals/nesting-projects.md)
+ [Comandos, menús y barras de herramientas](../../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Anidamiento de proyectos](../../extensibility/internals/nesting-projects.md)

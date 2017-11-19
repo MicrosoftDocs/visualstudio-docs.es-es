@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::SetShortName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::SetShortName | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.SetShortName
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::SetShortName"
+helpviewer_keywords: IDebugDocumentHelper::SetShortName
 ms.assetid: 811a444b-0ea4-4374-9d4c-4f7713bdd1ff
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 69674b5639c7d59a4551192177d9ebdafd27ac99
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::SetShortName
-Establece el nombre corto del documento.  
+# <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
+Establece el nombre corto para el documento.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT SetShortName(  
@@ -29,19 +32,19 @@ HRESULT SetShortName(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pszShortName`  
- \[in\] cadena terminada en null que contiene el nombre corto del documento.  
+ [in] Una cadena terminada en null que contiene el nombre corto del documento.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método establece un nuevo nombre corto del documento.  
+## <a name="remarks"></a>Comentarios  
+ Este método establece un nuevo nombre corto para el documento.  
   
-## Vea también  
- [IDebugDocumentHelper \(Interfaz\)](../../winscript/reference/idebugdocumenthelper-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugDocumentHelper (Interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: 7c2612cb537a6f3197cf9f99a0dc11981dfc73e1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interacciones de ventana  
@@ -88,16 +73,16 @@ Ventanas de herramientas de Visual Studio tienen distintos Estados, algunos de l
   
 -   **Fichas** las ventanas de herramientas se pueden acoplar dentro del documento también. Esto es útil para las ventanas de herramientas de gran tamaño, como el Explorador de objetos, que necesitan más inmobiliaria de acoplamiento con los bordes del marco que permite.  
   
-![Estados de la ventana de herramientas en Visual Studio](~/extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Estados de la ventana de herramientas en Visual Studio
+![Herramienta de Estados de la ventana de Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "01_ToolWindowStates 0702")<br />Estados de la ventana de herramientas en Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>Instancia única y varias instancias  
 Las ventanas de herramientas son la única instancia o varias instancias. Algunas ventanas de herramientas de instancia única podrían estar asociados con la ventana de documento activo, mientras que las ventanas de herramientas de varias instancias pueden no tenerlos. Ventanas de herramientas de varias instancias responden a la **ventana &gt; nueva ventana** comando mediante la creación de una nueva instancia de la ventana. La siguiente imagen ilustra una ventana de herramienta que permite el comando nueva ventana cuando se active una instancia de la ventana:  
   
-![Habilitar comando 'Nueva ventana' cuando está activa una instancia de la ventana de ventana de herramientas](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Habilitar comando 'Nueva ventana' cuando está activa una instancia de la ventana de ventana de herramientas  
+![Habilitar comando de 'Nueva ventana' cuando una instancia de la ventana de ventana de herramientas está activa](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "02_ToolWindowEnablingCommand 0702")<br />Habilitar comando 'Nueva ventana' cuando está activa una instancia de la ventana de ventana de herramientas  
   
 Las ventanas de herramientas de instancia única se pueden ocultas o muestran, mientras que las ventanas de herramientas de varias instancias pueden cerradas, así como ocultos. Todas las ventanas de herramientas se pueden acoplar, vinculada a la ficha, flotante o establecer como una ventana secundaria de interfaz de múltiples documentos (MDI) (similar a una ventana de documento). Todas las ventanas de herramienta deben responder a los comandos de administración de la ventana correspondiente en el menú de ventana:  
   
-![Comandos de administración de la ventana en el menú de la ventana de Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Comandos de administración de la ventana en el menú de la ventana de Visual Studio
+![Comandos de administración de la ventana en el menú de la ventana de Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "03_WindowManagementControls 0702")<br />Comandos de administración de la ventana en el menú de la ventana de Visual Studio
   
 #### <a name="document-specific-tool-windows"></a>Ventanas de herramientas específicas del documento  
 Algunas ventanas de herramientas están diseñadas para cambian en función de un determinado tipo de documento. Estas ventanas se actualizan continuamente para reflejar funciones aplicables a la ventana de documento activo en el IDE.  
@@ -144,14 +129,14 @@ Ejemplos de ventanas de herramientas de lista navegable son el Explorador de sol
 | Ventana de herramientas | Función | 
 | --- | --- | 
 | Cuadro de herramientas | La ventana de herramientas que se utiliza para almacenar los elementos que se van a quitar en superficies de diseño, proporcionando un origen de arrastre coherente para todos los diseñadores. |
-| Página de inicio | Portal del usuario a Visual Studio, con acceso a las fuentes de noticias de los desarrolladores, la Ayuda de Visual Studio y proyectos recientes. Los usuarios también pueden crear páginas de inicio personalizada copiando el archivo StartPage.xaml desde el "Common7\IDE\StartPages\" directorio de archivos de programa de Visual Studio a la carpeta StartPages en el directorio de documentos de Visual Studio y, a continuación, modificando el código XAML a mano o ábralo en Visual Studio u otro editor de código. | 
+| Página de inicio | Portal del usuario a Visual Studio, con acceso a las fuentes de noticias de los desarrolladores, la Ayuda de Visual Studio y proyectos recientes. Los usuarios también pueden crear páginas de inicio personalizada copiando el archivo StartPage.xaml desde el "Common7\IDE\StartPages\" directorio de archivos de programa de Visual Studio a la carpeta StartPages en Visual Studio documenta directorio y, a continuación, edite el código XAML con la mano o ábralo en Visual Studio u otro editor de código. | 
 
 **Las ventanas de herramientas del depurador**
 | Ventana de herramientas | Función | 
 | --- | --- |
 | Automático ||  
 | Inmediato ||  
-| Salida | La ventana de salida se pueden usar cuando tiene eventos textuales o estado a declarar. |  
+| Resultado | La ventana de salida se pueden usar cuando tiene eventos textuales o estado a declarar. |  
 | Memoria ||  
 | Puntos de interrupción ||  
 | En ejecución ||  
@@ -184,7 +169,7 @@ Edición de documentos, requiere una experiencia de usuario coherente. Para perm
   
 -   Haga doble clic en un documento en el Explorador de soluciones debe realizar la misma acción que **abiertos**.  
   
--   Si más de un editor puede utilizarse en un tipo de documento, el usuario debería poder invalidar o restablecer la acción predeterminada en un tipo de documento determinado mediante la **abrir con** cuadro de diálogo, haga doble clic en el archivo y seleccione **abrir con** en el menú contextual.  
+-   Si más de un editor puede utilizarse en un tipo de documento, el usuario debería poder invalidar o restablecer la acción predeterminada en un tipo de documento determinado mediante la **abrir con** cuadro de diálogo, haga doble clic en el archivo y seleccione **abierto Con** en el menú contextual.  
   
 -   No, un asistente en un documento se compilan correctamente.  
   
@@ -330,7 +315,7 @@ Tenga en cuenta las diferencias entre estos tipos básicos de los cuadros de di�
 ####  <a name="BKMK_SimpleDialogs"></a>Cuadros de diálogo simples  
 Un cuadro de diálogo simple es una presentación de controles en una sola ventana modal. Esta presentación podría incluir variaciones de patrones de control complejo, como un selector de campo. Para los cuadros de diálogo simples, siga el diseño general estándar, así como cualquier diseño específico necesarios para las agrupaciones de control complejo.
   
-![> Crear clave de nombre seguro es un ejemplo de un cuadro de diálogo simple en Visual Studio.](../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Crear clave de nombre seguro es un ejemplo de un cuadro de diálogo simple en Visual Studio.
+![> Crear clave de nombre seguro es un ejemplo de un cuadro de diálogo simple en Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "01_CreateStrongNameKey 0704")<br />Crear clave de nombre seguro es un ejemplo de un cuadro de diálogo simple en Visual Studio.
   
 ####  <a name="BKMK_LayeredDialogs"></a>Cuadros de diálogo en capas  
 Los cuadros de diálogo superpuestas incluyen pestañas, paneles y los árboles incrustados. Se utilizan para maximizar el estado real cuando hay varios grupos de controles que se ofrecen en un único fragmento de la interfaz de usuario. Las agrupaciones se disponen en capa para que el usuario puede elegir que la agrupación para ver en cualquier momento.  
@@ -339,7 +324,7 @@ En el caso más sencillo, el mecanismo para cambiar entre las agrupaciones es un
   
 El **herramientas &gt; opciones** cuadro de diálogo es un ejemplo de un cuadro de diálogo en capas con un árbol incrustado:  
   
-![Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.](~/extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.
+![Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "02_ToolsOptions 0704")<br />Herramientas > opciones es un ejemplo de un cuadro de diálogo por capas en Visual Studio.
   
 ####  <a name="BKMK_Wizards"></a>Asistentes  
 Asistentes son útiles para dirigir al usuario a través de una secuencia lógica de pasos en la realización de una tarea. Se ofrecen una serie de opciones en paneles secuenciales y el usuario debe seguir a través de cada paso antes de continuar con la siguiente. Una vez que existen suficientes valores predeterminados, el **finalizar** botón está habilitado.  
@@ -395,12 +380,12 @@ Sea coherente con las configuraciones existentes de control que llevan a cabo lo
   
 -   Botones de ayuda en la barra de título han quedado en desuso. No se agregan a los cuadros de diálogo nuevo. Cuando existen, debe iniciar un tema de ayuda es conceptualmente relevante para la tarea.  
   
- ![Especificaciones de guía para las barras de título en los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Especificaciones de guía para las barras de título en los cuadros de diálogo de Visual Studio
+ ![Especificaciones de guía para las barras de título en los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "03_TitleBarSpecs 0704")<br />Especificaciones de guía para las barras de título en los cuadros de diálogo de Visual Studio
   
 #### <a name="control-buttons"></a>Botones de control  
 En general, **Aceptar**, **cancelar**, y **ayuda** botones deberían estar organizados horizontalmente en la esquina inferior derecha del cuadro de diálogo. Si un cuadro de diálogo tiene varios otros botones en la parte inferior del cuadro de diálogo que se presenta visual confusión con los botones de control, se permite la pila vertical alternativa.  
   
-![Configuraciones aceptables para los botones de control en los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Configuraciones aceptables para los botones de control en los cuadros de diálogo de Visual Studio
+![Configuraciones aceptables para los botones de control en los cuadros de diálogo de Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "04_ControlButtonConfig 0704")<br />Configuraciones aceptables para los botones de control en los cuadros de diálogo de Visual Studio
   
 El cuadro de diálogo debe incluir un botón del control de forma predeterminada. Para determinar el comando recomendado para usar como predeterminado, elija una de las siguientes opciones (que se muestran en orden de prioridad):  
   
@@ -437,7 +422,7 @@ Hay ventajas y desventajas a diferentes métodos de capas de interfaz de usuario
 | Mecanismo de cambio | Ventajas y el uso apropiado | Uso inadecuado y desventajas |  
 | --- | --- | --- |  
 | Control Tab | Agrupar lógicamente páginas de diálogo en conjuntos relacionados<br /><br />Útil para menos de cinco (o el número de etiquetas que caben en una fila en el cuadro de diálogo) páginas de controles relacionados en el cuadro de diálogo<br /><br />Pestaña etiquetas deben ser cortas: una o dos palabras que pueden identificar con facilidad el contenido<br /><br />Un estilo de cuadro de diálogo común de sistema<br /><br />Ejemplo: **Explorador de archivos &gt; propiedades de los elementos** | Hacer etiquetas descriptivas de cortas puede ser difícil<br /><br />Por lo general no se escala más allá de las cinco pestañas en un cuadro de diálogo<br /><br />Inadecuado si tiene demasiados pestañas para una fila (utilice una técnica de distribución en capas alternativo)<br /><br />No extensible |  
-| Exploración en barra lateral | Dispositivo de conmutación simple que puede dar cabida a más categorías de pestañas<br /><br />Lista plana de categorías (sin jerarquía)<br /><br />Extensible<br /><br />Ejemplo: **personalizar... &gt; Agregar (comando)** | No es un buen uso del espacio horizontal si hay menos de tres grupos<br /><br />Podría ser tarea más adecuada para una lista desplegable |  
+| Exploración en barra lateral | Dispositivo de conmutación simple que puede dar cabida a más categorías de pestañas<br /><br />Lista plana de categorías (sin jerarquía)<br /><br />Extensible<br /><br />Ejemplo: **personalizar... &gt;Agregar (comando)** | No es un buen uso del espacio horizontal si hay menos de tres grupos<br /><br />Podría ser tarea más adecuada para una lista desplegable |  
 | Tree (control) | Permite categorías ilimitados<br /><br />Permite la agrupación o la jerarquía de categorías<br /><br />Extensible<br /><br />Ejemplo: **herramientas &gt; opciones** | Jerarquías muy anidadas pueden provocar excesivo de desplazamiento horizontal<br /><br />Visual Studio tiene una sobreabundancia de vistas de árbol |  
 | Asistente | Ayuda con la finalización de la tarea por guiar al usuario por pasos basado en tareas y secuenciales: el Asistente representa una tarea de alto nivel y los paneles individuales representan subtareas necesarias para realizar la tarea general<br /><br />Resulta útil cuando la tarea cruza los límites de la interfaz de usuario, como cuando el usuario en caso contrario tendría que usar varios editores y herramientas de windows para completar la tarea<br /><br />Resulta útil cuando la tarea requiere la bifurcación<br /><br />Resulta útil cuando la tarea contiene dependencias entre los pasos<br /><br />Resulta útil cuando varias tareas similares con la bifurcación de una decisión se pueden presentar en un cuadro de diálogo para reducir el número de cuadros de diálogo similar diferentes | Apropiado para cualquier tarea que no requiere un flujo de trabajo secuencial<br /><br />Los usuarios pueden ser abrumado y confunde con un asistente con demasiados pasos<br /><br />Asistentes inherentemente tenga limitado el espacio real en pantalla |  
   
@@ -446,7 +431,7 @@ Vestíbulos y los paneles son cuadros de diálogo o paneles que actúan como ini
   
 O bien, una interfaz de usuario que ofrece toda la funcionalidad disponible en una sola colección en lugar de la funcionalidad de menos común en ubicaciones independientes la refactorización es simplemente un panel.  
   
-![Concepto de vestíbulo para exponer la interfaz de usuario adicional en Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Concepto de vestíbulo para exponer la interfaz de usuario adicional en Outlook
+![Concepto de vestíbulo para exponer la interfaz de usuario adicional en Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "08_Hallway 0704")<br />Concepto de vestíbulo para exponer la interfaz de usuario adicional en Outlook
   
 ##### <a name="adaptive-ui"></a>Interfaz de usuario adaptable  
 Mostrar u ocultar la interfaz de usuario basada en uso o una experiencia de usuario incluido en sí mismo es otra manera de presentar la interfaz de usuario es necesario al tiempo que oculta otros componentes. No se recomienda en Visual Studio, como los algoritmos para decidir cuándo se debe mostrar u ocultar la interfaz de usuario pueden ser complicados y las reglas siempre será incorrecta para algún conjunto de casos.  
@@ -475,7 +460,7 @@ Los proyectos también deben mantener los modelos de interacción coherente para
 -   Operaciones de arrastrar y colocar  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modelo de interacción de arrastrar y colocar  
-Proyectos normalmente clasificación por sí mismos como basada en referencias (puede conservar sólo hace referencia a los elementos de proyecto de almacenamiento), (puede conservar los elementos de proyecto solo físicamente almacenado en la jerarquía del proyecto), basada en directorios o mixto (puede conservar las referencias o elementos físicos). El IDE admite los tres tipos de proyectos al mismo tiempo en el **el Explorador de soluciones**.  
+Proyectos normalmente clasificación por sí mismos como basada en referencias (puede conservar sólo hace referencia a los elementos de proyecto de almacenamiento), (puede conservar los elementos de proyecto solo físicamente almacenado en la jerarquía del proyecto), basada en directorios o mixto (puede conservar las referencias (o bien elementos físicos). El IDE admite los tres tipos de proyectos al mismo tiempo en el **el Explorador de soluciones**.  
   
 Desde una perspectiva de arrastrar y colocar, deben aplicar las siguientes características para cada tipo de proyecto dentro de la **el Explorador de soluciones**:  
   
@@ -499,7 +484,7 @@ No todas las operaciones de arrastrar y colocar son razonables en combinaciones 
   
 También es dar lugar a confusión Finjan permitir que una operación de copia entre estos tipos de proyecto porque el proyecto de referencia en función de destino no debe realizar una copia independiente del elemento de origen. De forma similar, Ctrl + Mayús al arrastrar a un proyecto basado en el directorio de destino no deberían estar permitido porque no puede conservar las referencias de un proyecto basado en el directorio. En casos donde no se admite la operación de arrastrar y colocar, el IDE debe impedir la eliminación y mostrar al usuario el cursor no colocar (se muestra en la tabla de puntero siguiente).  
   
-Para implementar correctamente el comportamiento de arrastrar y colocar, el proyecto de origen de la operación de arrastrar debe comunicar su naturaleza en el proyecto de destino. (Por ejemplo, es en función de referencia o de directorio?) Esta información se indica mediante el formato del Portapapeles que ofrece el origen. Como el origen de un arrastre (o la operación de copia del Portapapeles) un proyecto debe ofrecer una `CF_VSREFPROJECTITEMS` o `CF_VSSTGPROJECTITEMS` respectivamente, dependiendo de si el proyecto está basado en el directorio o referencia. Ambos formatos de tienen el mismo contenido de datos, que es similar a las ventanas `CF_HDROP` formato salvo que haya listas de cadenas, en lugar de nombres de archivo, un doble -`NULL` terminada en lista de `Projref` cadenas (tal como lo devuelve `IVsSolution::GetProjrefOfItem` o `::GetProjrefOfProject` según corresponda).  
+Para implementar correctamente el comportamiento de arrastrar y colocar, el proyecto de origen de la operación de arrastrar debe comunicar su naturaleza en el proyecto de destino. (Por ejemplo, es en función de referencia o de directorio?) Esta información se indica mediante el formato del Portapapeles que ofrece el origen. Como el origen de un arrastre (o la operación de copia del Portapapeles) un proyecto debe ofrecer una `CF_VSREFPROJECTITEMS` o `CF_VSSTGPROJECTITEMS` respectivamente, dependiendo de si el proyecto está basado en el directorio o referencia. Ambos formatos de tienen el mismo contenido de datos, que es similar a las ventanas `CF_HDROP` formato salvo que haya listas de cadenas, en lugar de nombres de archivo, un doble -`NULL` terminada en lista de `Projref` cadenas (tal como lo devuelve `IVsSolution::GetProjrefOfItem`o `::GetProjrefOfProject` según corresponda).  
   
 Como el destino de una lista (o la operación Pegar del Portapapeles.), un proyecto debe aceptar ambos `CF_VSREFPROJECTITEMS` y `CF_VSSTGPROJECTITEMS`, aunque el tratamiento de la operación de arrastrar y colocar exacto varía según la naturaleza del proyecto de destino y el proyecto de origen. El proyecto de origen declara su naturaleza por si ofrece `CF_VSREFPROJECTITEMS` o `CF_VSSTGPROJECTITEMS`. El destino de la operación de colocar comprende su propia naturaleza y, por tanto, tiene información suficiente para tomar decisiones a si un movimiento, copie o vínculo que debe realizarse. El usuario modifica también qué operación de arrastrar y colocar debe realizarse presionando la tecla Ctrl, MAYÚS, o tanto teclas Ctrl y MAYÚS. Es importante para el destino de colocación indicar correctamente la operación que se realizará de antemano en su `DragEnter` y `DragOver` métodos. El **el Explorador de soluciones** automáticamente sabe si el proyecto de origen y el proyecto de destino son el mismo proyecto.  
   
@@ -514,7 +499,7 @@ El usuario siempre debe ser capaz de determinar el efecto de una operación de a
 | ![Icono de mouse "mover"](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Mover | Elemento se moverán a la ubicación de destino. |  
 | ![Icono de mouse "Agregar referencia"](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 04_MouseAddRef") | Agregar referencia | Una referencia al elemento seleccionado se agregará a la ubicación de destino. |
 
-#### <a name="reference-based-projects"></a>Proyectos basados en la referencia  
+#### <a name="reference-based-projects"></a>proyectos basados en la referencia  
  En la tabla siguiente se resume las operaciones de arrastrar y colocar (así como cortar, copiar y pegar) que deben realizarse en función de la naturaleza de las claves de producto y el modificador de origen le presionada con los proyectos de destino basado en la referencia:  
   
 | Modificador | Categoría | Elemento de origen: / vínculo de referencia | Elemento de origen: sistema de elemento o el archivo físico (`CF_HDROP`) |  
@@ -617,7 +602,7 @@ Otro problema a tener en cuenta es cómo controlar las operaciones de movimiento
   
 1.  Si el diseñador o editor abierto no tiene los cambios no guardados, a continuación, la ventana del editor o diseñador debe estar en modo silencioso cerrada.  
   
-2.  Si el diseñador o editor abierto tiene cambios no guardados, el origen de la operación de arrastrar debe esperar para que la eliminación se producen y, a continuación, pida al usuario guardar los cambios sin confirmar en los documentos abiertos antes de cerrar la ventana con un mensaje similar al siguiente:  
+2.  Si el diseñador o editor abierto tiene cambios no guardados, el origen de la operación de arrastrar debe esperar para que la eliminación se producen y, a continuación, pida al usuario guardar los cambios sin confirmar en los documentos abiertos antes de cerrar la ventana con un mensaje similar al siguiente :  
   
     ```  
     ==========================================================   

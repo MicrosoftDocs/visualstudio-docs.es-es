@@ -1,57 +1,58 @@
 ---
-title: "IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::SetPassCount"
-helpviewer_keywords: 
-  - "SetPassCount (método)"
-  - "IDebugBoundBreakpoint2::SetPassCount (método)"
+title: IDebugBoundBreakpoint2::SetPassCount | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::SetPassCount
+helpviewer_keywords:
+- SetPassCount method
+- IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4bc3ca953a6a0eacb20862627d2cbc39f11d404b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::SetPassCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Establece o cambia el recuento de paso asociado a este punto de interrupción enlazado.  
+# <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
+Establece o cambia el número de paso asociado a este punto de interrupción enlazado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+```cpp  
+HRESULT SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-```c#  
-int SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+```csharp  
+int SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `bpPassCount`  
- \[in\]  La estructura de [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que especifica el recuento del paso.  
+ [in] El [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que especifica el número de paso.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve `E_BP_DELETED` si establece el estado del objeto enlazado de punto de interrupción a `BPS_DELETED` \(parte de la enumeración de [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md) \).  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
   
-## Comentarios  
- El recuento del paso determina cuándo se desencadena el punto de interrupción.  El paso o el número de llamadas actual se puede obtener llamando al método de [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .  
+## <a name="remarks"></a>Comentarios  
+ El número de paso determina cuándo se desencadena el punto de interrupción. El paso actual o el número de llamadas se puede obtener mediante una llamada a la [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) método.  
   
- Se pierde cualquier número de paso que estuviera previamente asociado a este punto de interrupción.  
+ Cualquier número de paso que estaba asociado previamente a este punto de interrupción se pierde.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

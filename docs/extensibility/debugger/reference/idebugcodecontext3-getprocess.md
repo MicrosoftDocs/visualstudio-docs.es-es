@@ -1,51 +1,52 @@
 ---
-title: "IDebugCodeContext3::GetProcess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugCodeContext3::GetProcess"
+title: IDebugCodeContext3::GetProcess | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugCodeContext3::GetProcess
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a5058501c4cf24df50d92c65ab76094f56b48dfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCodeContext3::GetProcess
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Recupera una referencia a la interfaz del proceso de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetProcess(   
-   IDebugProcess2 **ppProcess  
+   IDebugProcess2 **ppProcess  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetProcess(   
-   out IDebugProcess2 ppProcess  
+   out IDebugProcess2 ppProcess  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppProcess`  
- \[out\]  Referencia a la interfaz del proceso de depuración.  
+ [out] Referencia a la interfaz del proceso de depuración.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugCodeContext** que expone la interfaz de [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugCodeContext** objeto que expone la [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)  
 {  
     HRESULT hr = S_OK;  
@@ -65,5 +66,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

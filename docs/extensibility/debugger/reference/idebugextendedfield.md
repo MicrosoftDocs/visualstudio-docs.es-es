@@ -1,43 +1,44 @@
 ---
-title: "IDebugExtendedField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Interfaz IDebugExtendedField"
+title: IDebugExtendedField | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugExtendedField interface
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2162b001e314cc331c64ebcd54c5a04410408a73
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExtendedField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Extender los tipos de campos disponibles para admitir genéricos de código administrado.  
+# <a name="idebugextendedfield"></a>IDebugExtendedField
+Amplía los tipos de campos que están disponibles para admitir tipos genéricos de código administrado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugExtendedField : IDebugField  
 ```  
   
-## Métodos  
- Además de los métodos de la interfaz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , esta interfaz implementa los siguientes métodos:  
+## <a name="methods"></a>Métodos  
+ Además de los métodos en el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz, esta interfaz implementa los métodos siguientes:  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Recupera la clase extendida de campo especificada.|  
-|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|determina si el campo representa un tipo cerrado.|  
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Recupera el tipo de campo extendidas especificado.|  
+|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Determina si el campo representa un tipo cerrado.|  
   
-## Requisitos  
- encabezado: Sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll

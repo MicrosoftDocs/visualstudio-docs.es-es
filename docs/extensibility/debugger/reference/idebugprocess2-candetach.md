@@ -1,43 +1,43 @@
 ---
-title: "IDebugProcess2::CanDetach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::CanDetach"
-helpviewer_keywords: 
-  - "IDebugProcess2::CanDetach"
+title: IDebugProcess2::CanDetach | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::CanDetach
+helpviewer_keywords: IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 66fbf5e73639766ad27f7853e8170cd49518202f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::CanDetach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Determina si el administrador de depuración de la sesión \(SDM\) puede desasociar el proceso.  
+# <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
+Determina si el Administrador de sesión de depuración (SDM) puede separar el proceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT CanDetach(  
-   void  
+```cpp  
+HRESULT CanDetach(  
+   void  
 );  
 ```  
   
-```c#  
-int CanDetach();  
+```csharp  
+int CanDetach();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK.` devuelve `S_FALSE` si el depurador no puede desasociarse del proceso.  De lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK.` devuelve `S_FALSE` si el depurador no se puede desasociar del proceso. De lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

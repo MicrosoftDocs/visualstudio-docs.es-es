@@ -1,36 +1,31 @@
 ---
-title: "Error: No se puede depurar porque un depurador de kernel est&#225; habilitado en el sistema | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.kernel_dbg_enabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador de kernel"
+title: "Error: Depurar ejecutando &#39; t posible porque un depurador del Kernel está habilitado en el sistema | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.kernel_dbg_enabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: kernel debugger
 ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
-caps.latest.revision: 23
-caps.handback.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 448dbc486d58bc46e531b92de9f78272e4304d27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Error: No se puede depurar porque un depurador de kernel est&#225; habilitado en el sistema
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: Depurar ejecutando &#39; t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:  
   
 ```  
@@ -43,25 +38,25 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   la aplicación usa la versión de CLR 2.0, 3.0 o 3.5.  
   
-## Soluciones  
+## <a name="solution"></a>Soluciones  
   
-#### Para corregir este problema  
+#### <a name="to-fix-this-problem"></a>Para corregir este problema  
   
 -   Actualice la aplicación para utilizar la versión 4.0 o 4.5 de CLR  
   
-     \-O bien\-  
+     -O bien-  
   
 -   Deshabilite la depuración del kernel y depure en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     \-O bien\-  
+     -O bien-  
   
 -   Depure utilizando el depurador de kernel en lugar de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     \-O bien\-  
+     -O bien-  
   
 -   En el depurador de kernel, deshabilite las excepciones en modo de usuario.  
   
-#### Para deshabilitar la depuración del kernel en la sesión actual  
+#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para deshabilitar la depuración del kernel en la sesión actual  
   
 -   En el símbolo del sistema, escriba:  
   
@@ -69,7 +64,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     Kdbgctrl.exe -d  
     ```  
   
-#### Para deshabilitar la depuración del kernel para todas las sesiones \(Windows Vista y Windows 7\)  
+#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Para deshabilitar la depuración del kernel para todas las sesiones (Windows Vista y Windows 7)  
   
 1.  En el símbolo del sistema, escriba:  
   
@@ -79,9 +74,9 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 2.  Reinicie el equipo.  
   
-#### Para deshabilitar la depuración del kernel para todas las sesiones \(otros sistemas operativos Windows\)  
+#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Para deshabilitar la depuración del kernel para todas las sesiones (otros sistemas operativos Windows)  
   
-1.  Busque el archivo boot.ini en la unidad del sistema \(normalmente, C:\\\).  El archivo boot.ini podría estar oculto y ser de solo lectura.  Por tanto, tendrá que utilizar el siguiente comando para verlo:  
+1.  Busque el archivo boot.ini en la unidad del sistema (normalmente C:\\). El archivo boot.ini podría estar oculto y ser de solo lectura. Por tanto, tendrá que utilizar el siguiente comando para verlo:  
   
     ```  
     dir /ASH  
@@ -97,14 +92,14 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 3.  Reinicie el equipo.  
   
-#### Para depurar con el depurador del kernel  
+#### <a name="to-debug-with-the-kernel-debugger"></a>Para depurar con el depurador del kernel  
   
-1.  Si el depurador del kernel está enlazado, aparecerá un mensaje que le preguntará si desea continuar la depuración.  Haga clic en el botón para continuar.  
+1.  Si el depurador del kernel está enlazado, aparecerá un mensaje que le preguntará si desea continuar la depuración. Haga clic en el botón para continuar.  
   
 2.  Podría aparecer un mensaje `User break exception(Int 3).` En tal caso, escriba el siguiente comando de depurador del kernel para seguir depurando:  
   
      `gn`  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)

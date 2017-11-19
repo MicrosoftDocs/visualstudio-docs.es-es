@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugDataTarget::AllocateVirtualMemory (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugdatatarget:: Allocatevirtualmemory (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.AllocateVirtualMemory
 apilocation: jscript9diag.dll
 ms.assetid: 1d3a77b0-c1de-4a0c-a759-3e0c68fd96dd
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 65b29bbf9a3405bcfab779bd877f798a863538d5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugDataTarget::AllocateVirtualMemory (M&#233;todo)
-Reserva y\/o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
+# <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory (Método)
+Reserva o confirma una región de memoria en el espacio de direcciones virtuales del proceso de destino.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT AllocateVirtualMemory(  
@@ -31,29 +35,29 @@ HRESULT AllocateVirtualMemory(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `address`  
- \[in\] Dirección dentro del proceso de destino donde se debe confirmar o reservar la memoria.  Este valor suele ser cero, en cuyo caso el sistema elige una dirección.  
+ [in] La dirección dentro del proceso de destino donde la memoria debe ser confirmada o reservada. Normalmente, este valor es cero, en la que el sistema elige una dirección.  
   
  `size`  
- \[in\] El tamaño de la región de la memoria que se va a asignar en bytes.  El sistema redondea automáticamente hasta el límite de página siguiente.  
+ [in] El tamaño de la región de memoria para asignar, en bytes. El sistema automáticamente redondeará al límite de página siguiente.  
   
  `allocationType`  
- \[in\] Indica el tipo de asignación a realizar.  Normalmente es MEM\_COMMIT &#124; MEM\_RESERVE \(0x3000\), que reserva y confirma una asignación en un paso.  
+ [in] Indica el tipo de asignación para realizar. Esto suele ser MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) que se reserva y confirma una asignación en un solo paso.  
   
  `pageProtection`  
- \[in\] La protección de memoria para la región de páginas que se va a asignar.  Si las páginas están confirmadas, puede especificar una de las constantes de la protección de memoria \(por ejemplo, PAGE\_READWRITE, PAGE\_EXECUTE\).  
+ [in] La protección de memoria para la región de páginas que se va a asignar. Si las páginas se confirmarse, puede especificar cualquiera de las constantes de protección de memoria (por ejemplo, PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- \[out\] Dirección base de la región de páginas asignada.  
+ [out] Dirección base de la región asignada de páginas.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Comentarios  
- La función inicializa la memoria que asigna en cero, a menos que se utilice MEM\_RESET.  Para obtener más información, consulte la API VirtualAlloc de Win32.  
+## <a name="remarks"></a>Comentarios  
+ La función inicializa la memoria que asigna a cero, a menos que se utiliza MEM_RESET. Para obtener más información, vea la API de Win32 VirtualAlloc.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebugDataTarget \(Interfaz\)](../../winscript/reference/ijsdebugdatatarget-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebugDataTarget (Interfaz)](../../winscript/reference/ijsdebugdatatarget-interface.md)

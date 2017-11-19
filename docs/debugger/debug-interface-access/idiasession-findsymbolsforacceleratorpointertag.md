@@ -1,50 +1,50 @@
 ---
-title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Devuelve una enumeración de los símbolos de la variable que el valor de etiqueta especificado corresponde a la función principal del código auxiliar de aceleradores.  
+# <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
+Devuelve una enumeración de símbolos para la variable que el valor de etiqueta especificado corresponde de la principal función de código auxiliar de acelerador.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `parent`  
- \[in\] un IDiaSymbol que corresponde a la función de código auxiliar de aceleradores que se buscará.  
+ [in] Un IDiaSymbol que corresponda a la función de código auxiliar de aceleración que desea buscar.  
   
  `tagValue`  
- \[in\] valor de etiqueta del puntero de El.  
+ [in] El valor de etiqueta de puntero.  
   
  `ppResult`  
- \[out\] puntero A un puntero de interfaz de `IDiaEnumSymbols` inicializar con el resultado.  
+ [out] Un puntero a un `IDiaEnumSymbols` puntero de interfaz que se inicializa con el resultado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

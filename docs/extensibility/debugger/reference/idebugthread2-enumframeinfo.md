@@ -1,64 +1,64 @@
 ---
-title: "IDebugThread2::EnumFrameInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::EnumFrameInfo"
-helpviewer_keywords: 
-  - "IDebugThread2::EnumFrameInfo"
+title: IDebugThread2::EnumFrameInfo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::EnumFrameInfo
+helpviewer_keywords: IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 15e775af8f04e52b5cb1329312c1e0226a14c733
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::EnumFrameInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-recupera una lista de los marcos de pila para este subproceso.  
+# <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
+Recupera una lista de los marcos de pila para este subproceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumFrameInfo (   
-   FRAMEINFO_FLAGS        dwFieldSpec,  
-   UINT                   nRadix,  
-   IEnumDebugFrameInfo2** ppEnum  
+```cpp  
+HRESULT EnumFrameInfo (   
+   FRAMEINFO_FLAGS        dwFieldSpec,  
+   UINT                   nRadix,  
+   IEnumDebugFrameInfo2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumFrameInfo (   
-   enum_FRAMEINFO_FLAGS     dwFieldSpec,  
-   uint                     nRadix,  
-   out IEnumDebugFrameInfo2 ppEnum  
+```csharp  
+int EnumFrameInfo (   
+   enum_FRAMEINFO_FLAGS     dwFieldSpec,  
+   uint                     nRadix,  
+   out IEnumDebugFrameInfo2 ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwFieldSpec`  
- \[in\]  Una combinación de marcadores de enumeración de [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica qué campos de estructuras de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) se deben completar.  Especifique el marcador de `FIF_FUNCNAME_FORMAT` para dar formato al nombre de función en una sola.  
+ [in] Una combinación de indicadores de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructuras son debe rellenarse. Especifique el `FIF_FUNCNAME_FORMAT` marca para dar formato al nombre de función en una sola cadena.  
   
  `nRadix`  
- \[in\]  Base utilizada para dar formato a la información numérica en el enumerador.  
+ [in] Base usada para dar formato a la información numérica en el enumerador.  
   
  `ppEnum`  
- \[out\]  Devuelve un objeto de [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que contiene una lista de estructuras de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) que describen el marco de pila.  
+ [out] Devuelve un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) objeto que contiene una lista de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructuras que describen el marco de pila.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los cuadros de subproceso en orden, con el marco actual enumerado primero y más antiguo cuadro enumerado por última vez.  
+## <a name="remarks"></a>Comentarios  
+ Marcos de subproceso se enumeran en orden, con el marco actual que se enumeran en primer lugar y el marco más antiguo enumerado en último lugar.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
+ [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

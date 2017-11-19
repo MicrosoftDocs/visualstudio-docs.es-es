@@ -1,47 +1,50 @@
 ---
-title: "IDebugApplication::Close | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::Close | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.Close
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::Close"
+helpviewer_keywords: IDebugApplication::Close
 ms.assetid: d19baa07-3f3b-47de-8185-5eb3e7ac8b46
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8a17301842cefac7c7f257a4bc0e437670e28064
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::Close
-Provoca esta aplicación para liberar todas las referencias y para entrar en un estado inactivo.  
+# <a name="idebugapplicationclose"></a>IDebugApplication::Close
+Hace que esta aplicación para liberar todas las referencias y entrar en un estado inactivo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT Close();  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  Este método no toma ningún parámetro.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Normalmente, el propietario de una aplicación llama a este método cuando finaliza.  
+## <a name="remarks"></a>Comentarios  
+ Normalmente, el propietario de una aplicación llama a este método cuando se cierre la aplicación.  
   
- Este método hace que `IApplicationDebugger::onClose` que se va a llamar.  
+ Este método provoca `IApplicationDebugger::onClose` para llamarlo.  
   
-## Vea también  
- [IDebugApplication \(Interfaz\)](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

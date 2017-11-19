@@ -1,37 +1,37 @@
 ---
-title: "Pesta&#241;a Espacio (Cuadro de di&#225;logo Propiedades del proceso) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Propiedades de procesos para Windows NT"
+title: "Pestaña espacio, cuadro de diálogo de propiedades de proceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a70f9805f0868c7afec70fdda26ff97766281d9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a Espacio (Cuadro de di&#225;logo Propiedades del proceso)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use la pestaña **Espacio** para examinar el espacio de direcciones de un proceso.  Para mostrar el [cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), cambie el foco a la ventana [Vista Procesos](../debugger/processes-view.md).  Seleccione el nodo de un proceso en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="space-tab-process-properties-dialog-box"></a>Pestaña Espacio (Cuadro de diálogo Propiedades del proceso)
+Use la **espacio** pestaña para examinar el espacio de direcciones de un proceso. Para mostrar la [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- En la pestaña **Espacio** está disponible la configuración siguiente:  
+ Las siguientes opciones están disponibles en la **espacio** ficha:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Mostrar para espacio marcado como**|Use este cuadro de lista para seleccionar la categoría del espacio \(imagen, asignado, reservado o sin asignar\).|  
-|**Bytes ejecutables**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que usa este proceso.  La memoria ejecutable es memoria que pueden ejecutar los programas, pero no se puede leer ni escribir.|  
-|**Bytes de solo lectura y ejecución**|Para la categoría seleccionada, la suma de todo el espacio de direcciones en uso con propiedades de solo lectura que usa este proceso.  La memoria de solo lectura y ejecución es memoria que se puede ejecutar y leer.|  
-|**Bytes de ejecución, lectura y copia**|Para la categoría seleccionada, la suma de todo el espacio de direcciones en uso con propiedades de lectura y escritura que usa este proceso.  La memoria de ejecución, lectura y escritura es memoria que pueden ejecutar los programas, y que se puede leer y modificar.|  
-|**Bytes de ejecución, escritura y copia**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que pueden ejecutar los programas, y que se puede leer y escribir.  Este tipo de protección se usa cuando es necesario compartir la memoria entre los procesos.  Si los procesos que comparten la memoria solo la leen, todos usarán la misma memoria.  Si un proceso que comparte la memoria desea acceso de escritura, se realizará una copia de esta memoria para el proceso.|  
-|**Bytes no accesibles**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que no está disponible para un proceso.  Se generará una infracción de acceso si se intenta la lectura o escritura.|  
-|**Bytes de solo lectura**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que se puede ejecutar y leer.|  
-|**Bytes de lectura y escritura**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que permite la lectura y escritura.|  
-|**Bytes de escritura y copia**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que permite el uso compartido de memoria para la lectura, pero no para la escritura.  Cuando los procesos leen esta memoria, pueden compartirla.  Sin embargo, cuando un proceso que comparte la memoria desea tener acceso de lectura y escritura en esta memoria compartida, se realiza una copia de la memoria para escritura.|
+|**Mostrar para espacio marcado como**|Utilice este cuadro de lista para seleccionar la categoría de espacio (imagen, asignado, reservado o sin asignar).|  
+|**Bytes ejecutables**|Para la categoría seleccionada, la suma de todo el espacio de dirección que está usando este proceso. La memoria de ejecución es la memoria que puede ser ejecutada por programas, pero no pueden leer o escribir.|  
+|**Bytes de solo lectura de exec**|Para la categoría seleccionada, la suma de todo el espacio de direcciones en uso con propiedades de solo lectura que está usando este proceso. Memoria de solo lectura de exec es que puede ejecutarse además de leer.|  
+|**Bytes de Exec, lectura y escritura**|Para la categoría seleccionada, la suma de todo el espacio de direcciones en uso con propiedades de lectura y escritura que utiliza este proceso. Memoria de Exec, lectura y escritura es memoria que puede ejecutar los programas, así como leer y modificar.|  
+|**Copia Bytes de escritura de exec**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que puede ser ejecutada por programas, así como leer y escribir. Este tipo de protección se usa cuando se necesita la memoria se comparte entre los procesos. Si los procesos comparten la memoria únicamente para leerla, todos usarán la misma memoria. Si un proceso compartido desea acceso de escritura, se realizará una copia de esta memoria para el proceso.|  
+|**Bytes sin acceso**|Para la categoría seleccionada, la suma de todo el espacio de dirección que impide que un proceso de usarlo. Se intenta leer o si escribe, se genera una infracción de acceso.|  
+|**Bytes de solo lectura**|Para la categoría seleccionada, la suma de todo el espacio de direcciones que puede ejecutarse además de leer.|  
+|**Bytes de lectura y escritura**|Para la categoría seleccionada, la suma de todo el espacio de dirección que permite leer y escribir.|  
+|**Bytes de escritura y copia**|Para la categoría seleccionada, la suma de todo el espacio de dirección que permite compartir memoria para lectura pero no para escribir en él. Cuando los procesos estén leyendo esta memoria, pueden compartir la misma memoria. Sin embargo, cuando un proceso que comparte desea tener acceso de lectura/escritura a esta memoria compartida, se crea una copia de esa memoria para escribir en él.|

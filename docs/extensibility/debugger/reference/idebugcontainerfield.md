@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugContainerField
-helpviewer_keywords:
-- IDebugContainerField interface
+f1_keywords: IDebugContainerField
+helpviewer_keywords: IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a91b491aeb234a20dc601950c5ff8a436b1be90a
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 8260266f43be7a6887aea45f5012a1924fd35c77
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Esta interfaz representa un símbolo o el tipo que es un contenedor para otros símbolos o tipos.  

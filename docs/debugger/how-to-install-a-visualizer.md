@@ -1,41 +1,39 @@
 ---
-title: "C&#243;mo: Instalar un visualizador | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador, visualizadores"
-  - "visualizadores, instalar"
+title: "Cómo: instalar un visualizador | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- debugger, visualizers
+- visualizers, installing
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
-caps.latest.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b1e3bffd2a38692a9767cabbd132d4297ab1347e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Instalar un visualizador
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Instalar un visualizador es un proceso sencillo.  
+# <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
+Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.  
   
 > [!NOTE]
->  En las aplicaciones de la **Tienda**, solo se admiten los visualizadores de texto estándar, HTML, XML y JSON.  No se admiten los visualizadores personalizados \(creados por el usuario\).  
+>  En **almacén** aplicaciones, sólo el texto estándar, se admiten los visualizadores HTML, XML y JSON. No se admiten los visualizadores personalizados (creados por el usuario).  
   
-### Para instalar un visualizador  
+### <a name="to-install-a-visualizer"></a>Para instalar un visualizador  
   
 1.  Busque el archivo DLL que contiene el visualizador que ha compilado.  
   
@@ -49,6 +47,6 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
   
 4.  Reinicie la sesión de depuración.  
   
-## Vea también  
- [Visualizadores](../debugger/create-custom-visualizers-of-data.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear los visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Cómo: Escribir un visualizador](../debugger/how-to-write-a-visualizer.md)

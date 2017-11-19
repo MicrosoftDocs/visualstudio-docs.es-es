@@ -1,66 +1,63 @@
 ---
-title: 'How to: Run Code When a SharePoint Project is Deployed or Retracted | Microsoft Docs'
+title: "Cómo: ejecutar código cuando un proyecto de SharePoint es implementa o retira | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- SharePoint development in Visual Studio, extending deployment
+helpviewer_keywords: SharePoint development in Visual Studio, extending deployment
 ms.assetid: 353bbe6d-9b76-48ad-9fba-7e3c3712452f
-caps.latest.revision: 5
-author: kempb
-ms.author: kempb
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3e0902a9cd09d997c3b1cac18624a3b05bcf646d
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0650bfdb7961728fed34147c05f6333d8255e373
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>How to: Run Code When a SharePoint Project is Deployed or Retracted
-  If you want to perform additional tasks when a SharePoint project is deployed or retracted, you can handle events that are raised by Visual Studio. For more information, see [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Cómo: Ejecutar código cuando se implementa o retracta un proyecto de SharePoint
+  Si desea realizar tareas adicionales al implementar o retirar un proyecto de SharePoint, puede controlar eventos generados por Visual Studio. Para obtener más información, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
-### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>To run code when a SharePoint project is deployed or retracted  
+### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Para ejecutar código cuando un proyecto de SharePoint se implementa o retira  
   
-1.  Create a project item extension, a project extension, or a definition of a new project item type. For more information, see the following topics:  
+1.  Crear una extensión de elemento de proyecto, una extensión de proyecto o una definición de un nuevo tipo de elemento de proyecto. Para obtener más información, vea los temas siguientes:  
   
-    -   [How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [Cómo: Crear una extensión de elemento de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [Cómo: Crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [Cómo: Definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2.  In the extension, access the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> object. For more information, see [How to: Retrieve the SharePoint Project Service](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+2.  En la extensión, tener acceso a la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Para obtener más información, consulte [Cómo: Retrieve the SharePoint Project Service](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
-3.  Handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> and <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> events of the project service.  
+3.  Controlar la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> y <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> eventos del servicio del proyecto.  
   
-4.  In the event handlers, use the <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> parameter to get information about the current deployment session. For example, you can determine which project is in the current deployment session and whether it is being deployed or retracted.  
+4.  En el evento controladores, usar el <xref:Microsoft.VisualStudio.SharePoint.DeploymentEventArgs> para obtener información sobre la sesión de implementación actual. Por ejemplo, puede determinar qué proyecto se encuentra en la sesión de implementación actual y si se va a implementar o retirar.  
   
- The following code example demonstrates how to handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> and <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> events in a project extension. This extension writes an additional message to the **Output** window when deployment starts and completes for a SharePoint project.  
+ En el ejemplo de código siguiente se muestra cómo controlar la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> y <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> eventos en una extensión de proyecto. Esta extensión escribe un mensaje adicional a la **salida** ventana cuando la implementación se inicia y se completa para un proyecto de SharePoint.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)] [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]  
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
+ [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires references to the following assemblies:  
+## <a name="compiling-the-code"></a>Compilar el código  
+ Este ejemplo requiere referencias a los siguientes ensamblados:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>Deploying the Extension  
- To deploy the extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>Implementar la extensión  
+ Para implementar la extensión, cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, consulte [extensiones de implementación para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>See Also  
- [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [How to: Run Code When Deployment Steps are Executed](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
+## <a name="see-also"></a>Vea también  
+ [Extensión de SharePoint de empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
+ [Cómo: Ejecutar código cuando se ejecutan los pasos de implementación](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
   
   

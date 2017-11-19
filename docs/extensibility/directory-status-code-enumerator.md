@@ -1,51 +1,53 @@
 ---
-title: "Enumerador de c&#243;digo de estado de directorio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "enumerador de código de estado de directorio"
-  - "origen control complementos, enumeración del estado de directorio"
+title: "Enumerador de código de estado de directorio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- directory status code enumerator
+- source control plug-ins, directory status enumeration
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 998ce86fdf714c65763748971e89fa45ec289a51
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Enumerador de c&#243;digo de estado de directorio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El `SccDirStatus` enumerador contiene valores constantes con nombre que especifican el estado de un directorio en el sistema de control de código fuente. Esta enumeración la usa la clase [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Esto se introdujo en la versión 1.2 de la API de complementos de Control de código fuente.  
+# <a name="directory-status-code-enumerator"></a>Enumerador de código de estado de directorio
+El `SccDirStatus` enumerador contiene valores constantes con nombre que especifican el estado de un directorio en el sistema de control de código fuente. Esta enumeración se usa en la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Esto se introdujo en la versión 1.2 de la API de complemento de Control de origen.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 enum SccDirStatus {  
-   SCC_DIRSTATUS_INVALID       = -1L,  
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
+   SCC_DIRSTATUS_INVALID       = -1L,  
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
 };  
 ```  
   
-## Miembros  
- SCC\_DIRSTATUS\_INVALID  
+## <a name="members"></a>Miembros  
+ SCC_DIRSTATUS_INVALID  
  No se pudo obtener el estado; No confíe en él.  
   
- SCC\_DIRSTATUS\_NOTCONTROLLED  
+ SCC_DIRSTATUS_NOTCONTROLLED  
  Directorio no está bajo control de código fuente.  
   
- SCC\_DIRSTATUS\_CONTROLLED  
+ SCC_DIRSTATUS_CONTROLLED  
  Directorio está bajo control de código fuente.  
   
- SCC\_DIRSTATUS\_EMPTYPROJ  
+ SCC_DIRSTATUS_EMPTYPROJ  
  Proyecto correspondiente a este directorio está vacío.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

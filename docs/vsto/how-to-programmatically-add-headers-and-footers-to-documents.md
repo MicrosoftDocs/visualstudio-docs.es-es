@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Add Headers and Footers to Documents | Microsoft Docs'
+title: "Cómo: agregar mediante programación los encabezados y pies de página a documentos | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,19 +16,18 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding footers
 - footers, adding to documents
 ms.assetid: c7a5cc8a-d8c0-48e9-81d3-108aa6bfbb74
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 552fbd6257589fe7a10012b80cb4f88696187b84
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: e6b8b95953257cefd7cf229cd094791793dfff1b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>How to: Programmatically Add Headers and Footers to Documents
-  You can add text to headers and footers in your document by using the <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> property and <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> property of the <xref:Microsoft.Office.Interop.Word.Section>. Each section of a document contains three headers and footers:  
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Cómo: Agregar encabezados y pies de página a documentos mediante programación
+  Puede agregar texto a los encabezados y pies de página del documento mediante las propiedades <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> y <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de la <xref:Microsoft.Office.Interop.Word.Section>. Cada sección de un documento contiene tres encabezados y pies de página:  
   
 -   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
   
@@ -38,42 +35,46 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
   
- The procedures are different for document-level customizations and VSTO Add-ins.  
+ Los procedimientos son diferentes para las personalizaciones de nivel de documento y los complementos de VSTO.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="document-level-customizations"></a>Document-Level Customizations  
- To use the following code examples, run them from the `ThisDocument` class in your project.  
+## <a name="document-level-customizations"></a>Personalizaciones de nivel de documento  
+ Para usar los siguientes ejemplos de código, ejecútelos desde la clase `ThisDocument` del proyecto.  
   
-#### <a name="to-add-text-to-footers-in-the-document"></a>To add text to footers in the document  
+#### <a name="to-add-text-to-footers-in-the-document"></a>Para agregar texto a los pies de página en el documento  
   
-1.  The following code example sets the font of the text to be inserted into the primary footer of each section of the document, and then inserts text into the footer.  
+1.  En el siguiente ejemplo de código se establece la fuente del texto que se va a insertar en el pie de página principal de cada sección del documento y, después, se inserta un texto en el pie de página.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#114)]  [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]  
+     [!code-vb[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#114)]
+     [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]  
   
-#### <a name="to-add-text-to-headers-in-the-document"></a>To add text to headers in the document  
+#### <a name="to-add-text-to-headers-in-the-document"></a>Para agregar texto a los encabezados del documento  
   
-1.  The following code example adds a field to show the page number in each header in the document, and then sets the paragraph alignment so that the text aligns to the right of the header.  
+1.  En el siguiente ejemplo de código se agrega un campo para mostrar el número de página en cada encabezado del documento y, después, se establece la alineación del párrafo para que el texto se alinee a la derecha del encabezado.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#116)]  [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]  
+     [!code-vb[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#116)]
+     [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]  
   
-## <a name="vsto-add-ins"></a>VSTO Add-Ins  
- To use the following code examples, run them from the `ThisAddIn` class in your project.  
+## <a name="vsto-add-ins"></a>VSTO Add-ins  
+ Para usar los siguientes ejemplos de código, ejecútelos desde la clase `ThisAddIn` del proyecto.  
   
-#### <a name="to-add-text-to-footers-in-a-document"></a>To add text to footers in a document  
+#### <a name="to-add-text-to-footers-in-a-document"></a>Para agregar texto a los pies de página de un documento  
   
-1.  The following code example sets the font of the text to be inserted into the primary footer of each section of the document, and then inserts text into the footer. This code example uses the active document.  
+1.  En el siguiente ejemplo de código se establece la fuente del texto que se va a insertar en el pie de página principal de cada sección del documento y, después, se inserta un texto en el pie de página. Este ejemplo de código usa el documento activo.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#114)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#114)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]  
   
-#### <a name="to-add-text-to-headers-in-the-document"></a>To add text to headers in the document  
+#### <a name="to-add-text-to-headers-in-the-document"></a>Para agregar texto a los encabezados del documento  
   
-1.  The following code example adds a field to show the page number in each header in the document, and then sets the paragraph alignment so that the text aligns to the right of the header. This code example uses the active document.  
+1.  En el siguiente ejemplo de código se agrega un campo para mostrar el número de página en cada encabezado del documento y, después, se establece la alineación del párrafo para que el texto se alinee a la derecha del encabezado. Este ejemplo de código usa el documento activo.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Create New Documents](../vsto/how-to-programmatically-create-new-documents.md)   
- [How to: Programmatically Extend Ranges in Documents](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [How to: Programmatically Loop Through Found Items in Documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
+## <a name="see-also"></a>Vea también  
+ [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)   
+ [Cómo: ampliar intervalos en documentos de mediante programación](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Cómo: Recorrer los elementos encontrados en documentos mediante programación](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
    

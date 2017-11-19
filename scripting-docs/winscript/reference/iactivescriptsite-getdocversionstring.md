@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSite::GetDocVersionString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSite::GetDocVersionString | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSite.GetDocVersionString
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSite_GetDocVersionString"
+helpviewer_keywords: IActiveScriptSite_GetDocVersionString
 ms.assetid: ab3f892d-06d3-4cb5-9ea5-20c4a1e518cd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSite::GetDocVersionString
-Recupera una cadena host\- definido que identifica de forma única la versión del documento actual.  Si el documento relacionado ha cambiado fuera del ámbito de script de Windows \(como en el caso de una página HTML que se está editando con el Bloc de notas\), el motor de script puede guardar esto junto con su estado almacenado, forzar una recompilación la próxima vez que el script se carga.  
+# <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
+Recupera una cadena definida por el host que identifica de forma única la versión del documento actual. Si ha cambiado el documento relacionado fuera del ámbito de la secuencia de comandos de Windows (como en el caso de una página HTML que se está editando con el Bloc de notas), el motor de scripting puede guardar junto con su estado persistente, forzar una nueva compilación la próxima vez que se carga el script.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetDocVersionString(  
@@ -29,15 +32,15 @@ HRESULT GetDocVersionString(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pstrVersionString`  
- \[out\] dirección de la cadena host\- definido de la versión del documento.  
+ [out] Dirección de la cadena de versión de documento definida por el host.  
   
-## Valor devuelto  
- Devuelve `S_OK` si es correcto, o `E_NOTIMPL` si este método no se admite.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve `S_OK` si se realiza correctamente, o `E_NOTIMPL` si no se admite este método.  
   
-## Comentarios  
- Si se devuelve `E_NOTIMPL` , el motor de script debe suponer que el script está en sincronización con el documento.  
+## <a name="remarks"></a>Comentarios  
+ Si `E_NOTIMPL` se devuelve, el motor de scripting debe asumir que la secuencia de comandos está sincronizada con el documento.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

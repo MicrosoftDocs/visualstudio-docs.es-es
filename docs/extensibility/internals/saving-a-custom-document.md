@@ -1,48 +1,50 @@
 ---
-title: "Guardar un documento personalizado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "persistencia, guardar documentos personalizados"
-  - "proyectos [Visual Studio SDK], guardar documentos personalizados"
-  - "editores [Visual Studio SDK], guardar documentos personalizados"
+title: Guardar un documento personalizado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- persistence, saving custom documents
+- projects [Visual Studio SDK], saving custom documents
+- editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Guardar un documento personalizado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El entorno controla **Save**, **Save As**, y los comandos de **Save All** .  Cuando un usuario hace clic en **Guardar**, **Guardar como**, **o Guardar Todo** en el menú de **Archivo** o cierre la solución, lo que da como resultado un Guardar Todo, el proceso siguiente aparece.  
+# <a name="saving-a-custom-document"></a>Guardar un documento personalizado
+Los identificadores de entorno la **guardar**, **Guardar como**, y **guardar todo** comandos. Cuando un usuario hace clic en **guardar**, **Guardar como**, **o guardar todo** en el **archivo** menú o se cierra la solución, lo que genera un comando Guardar todo, lo siguiente se produce el proceso.  
   
- ![Guardar Editor de clientes](~/extensibility/internals/media/private.gif "Private")  
-Guarde, Guardar como, y un comando de Guardar Todo que administra para un editor personalizado  
+ ![Guardar Editor de clientes](../../extensibility/internals/media/private.gif "privada")  
+Guardar, guardar como y guardar todos los comandos de control para un editor personalizado  
   
- este proceso se detalla en los pasos siguientes:  
+ Este proceso se detalla en los pasos siguientes:  
   
-1.  Para los comandos de **Guardar** y de **Guardar como** , el entorno utiliza el servicio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para determinar la ventana de documento activo y así qué elementos deben guardarse.  Una vez que se conoce la ventana de documento activo, el entorno encuentra el identificador del puntero y el elemento de la jerarquía \(itemID\) para el documento en la tabla en el documento.  Para obtener más información, vea [Tabla de documentos de ejecución](../../extensibility/internals/running-document-table.md).  
+1.  Para el **guardar** y **Guardar como** comandos, el entorno utiliza el <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> del servicio para determinar la ventana de documento activo y, por tanto, deben guardarse el qué elementos. Una vez que se conozca la ventana de documento activo, el entorno busca el puntero de la jerarquía y el identificador (ID) del elemento del documento en la tabla document ejecución. Para obtener más información, consulte [ejecutando tabla Document](../../extensibility/internals/running-document-table.md).  
   
-     Para el comando de Guardar Todo, el entorno utiliza la información de la tabla actual del documento para compilar la lista de todos los elementos para guardar.  
+     Para el comando Guardar todo, el entorno utiliza la información en la tabla de documento de ejecución para compilar la lista de todos los elementos que desee guardar.  
   
-2.  Cuando la solución recibe una llamada de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> , recorre en iteración el conjunto de elementos seleccionados \(es decir, las selecciones múltiples expuestas por el servicio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> \).  
+2.  Cuando la solución recibe un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> llamada, se recorre en iteración el conjunto de elementos seleccionados (es decir, las selecciones múltiples expuestas por el <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servicio).  
   
-3.  En cada elemento en la selección, la solución utiliza el puntero de la jerarquía para llamar al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> para determinar si el comando de menú Save debe estar habilitado.  Si uno o más elementos son modificados, después habilitan el comando Save.  Si la jerarquía usa un editor estándar, la jerarquía delega consultar el estado modificado el editor llamando al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> .  
+3.  En cada elemento de la selección, la solución utiliza el puntero de la jerarquía para llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> método para determinar si se debe habilitar el comando de menú de guardar. Si uno o más elementos son desfasados, se habilita el comando Guardar. Si la jerarquía usa un editor estándar, los delegados de jerarquía consultar desfasadas estado al editor mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> método.  
   
-4.  En cada elemento seleccionado que sea modificado, la solución utiliza el puntero de la jerarquía para llamar al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> en las jerarquías adecuadas.  
+4.  En cada elemento seleccionado que está dañada, la solución utiliza el puntero de la jerarquía para llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> método en las jerarquías adecuadas.  
   
-     En el caso de un editor personalizado, la comunicación entre el objeto del documento y el proyecto es privada.  Por tanto, cualquier problema especial de persistencia se controla entre estos dos objetos.  
+     En el caso de un editor personalizado, la comunicación entre el objeto de datos de documento y el proyecto es privada. Por lo tanto, cualquier problema de persistencia especiales se administra entre estos dos objetos.  
   
     > [!NOTE]
-    >  Si implementa posee la persistencia, asegúrese de llamar al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> para ahorrar tiempo.  Las comprobaciones de este método para asegurarse de que es seguro guardar el archivo \(por ejemplo, el archivo no son de sólo lectura\).  
+    >  Si implementa su propia persistencia, asegúrese de llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método ahorrar tiempo. Este método comprueba para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Abrir y guardar elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)

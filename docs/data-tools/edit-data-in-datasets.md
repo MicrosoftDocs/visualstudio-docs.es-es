@@ -1,54 +1,114 @@
 ---
-title: "Editar datos en conjuntos de datos | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "datos [Visual Studio], editar en conjuntos de datos"
-  - "conjuntos de datos [Visual Basic], editar datos"
+title: Editar datos en conjuntos de datos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- datasets [Visual Basic], editing data
+- data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: 15
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# Editar datos en conjuntos de datos
-La edición de los datos en <xref:System.Data.DataSet> es el proceso de manipular los datos reales en los objetos <xref:System.Data.DataTable> individuales que constituyen un conjunto de datos.  Los datos de las tablas de datos se editan de forma muy similar a como edita los datos de una tabla de una base de datos; el proceso puede incluir insertar, actualizar y eliminar registros de la tabla.  
+# <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
+Editar tablas de datos igual que edita los datos de una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, se puede especificar qué campos se puede modificar el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios pueden enviarse a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.  
   
- Además de cambiar los datos reales, puede consultar un objeto <xref:System.Data.DataTable> para devolver filas específicas de datos, por ejemplo, filas individuales, versiones específicas de filas \(original y propuesta\), sólo filas que han cambiado o filas con errores.  
+Además de cambiar los datos reales, también puede consultar un <xref:System.Data.DataTable> para devolver filas específicas de datos. Por ejemplo, puede consultar las filas individuales, versiones específicas de filas (originales y propuestas), filas que han cambiado o filas con errores.  
   
-## Tareas comunes de tablas de datos  
- La tabla siguiente proporciona vínculos a las tareas comunes asociadas con la edición y la consulta de datos de un conjunto de datos:  
+## <a name="to-edit-rows-in-a-dataset"></a>Para editar filas en un conjunto de datos  
+Para editar una fila existente en un <xref:System.Data.DataTable>, debe buscar el <xref:System.Data.DataRow> que desea editar y, a continuación, asignar los valores actualizados a las columnas deseadas.  
   
-|Tarea|Descripción|  
-|-----------|-----------------|  
-|Insertar nuevos registros en una tabla de datos.|Crea un nuevo <xref:System.Data.DataRow> y lo agrega a la colección de filas de la tabla.  Para obtener más información, vea [Cómo: Agregar filas a un DataTable](../Topic/How%20to:%20Add%20Rows%20to%20a%20DataTable.md).|  
-|Actualizar registros existentes en una tabla de datos.|Asigna un valor directamente a la columna específica de una fila de datos.  Para obtener más información, vea [Cómo: Editar filas en un objeto DataTable](../Topic/How%20to:%20Edit%20Rows%20in%20a%20DataTable.md).|  
-|Eliminar registros existentes de una tabla de datos.|Llama al método <xref:System.Data.DataRow.Delete%2A> de la fila de datos que se desea quitar de la tabla.  Para obtener más información, vea [Cómo: Eliminar filas en un DataTable](../Topic/How%20to:%20Delete%20Rows%20in%20a%20DataTable.md).|  
-|Localizar registros cambiados en una tabla de datos.|Llama al método <xref:System.Data.DataTable.GetChanges%2A> de una tabla de datos.  Para obtener más información, vea [Cómo: Recuperar filas modificadas](../Topic/How%20to:%20Retrieve%20Changed%20Rows.md).|  
-|Obtener acceso a versiones diferentes de una fila en una tabla de datos.|Obtiene acceso a las columnas individuales de una fila de datos pasando el elemento <xref:System.Data.DataRowVersion> que se desea ver.  Para obtener más información, vea [Cómo: Obtener versiones específicas de una fila de datos](../data-tools/how-to-get-specific-versions-of-a-datarow.md).|  
-|Localizar filas con errores en una tabla de datos.|Inspecciona la propiedad <xref:System.Data.DataTable.HasErrors%2A> de una tabla de datos.  Para obtener más información, vea [Cómo: Localizar filas con errores](../Topic/How%20to:%20Locate%20Rows%20that%20Have%20Errors.md).|  
+Si no conoce el índice de la fila que desea editar, utilice el `FindBy` método para buscar la clave principal:  
   
-## Vea también  
- [DataTables](../Topic/DataTables.md)   
- [Preparar la aplicación para recibir datos](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Buscar datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
- [Modificar datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [DataTables](../Topic/DataTables.md)   
- [Tutoriales sobre datos](../Topic/Data%20Walkthroughs.md)   
- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Información general de las aplicaciones de datos en Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validar datos](../Topic/Validating%20Data.md)   
- [Guardar datos](../data-tools/saving-data.md)
+[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
+[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
+  
+Si conoce el índice de fila, se puede tener acceso a y edita filas como sigue:  
+  
+[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
+[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
+  
+## <a name="to-insert-new-rows-into-a-dataset"></a>Para insertar filas nuevas en un conjunto de datos  
+Las aplicaciones que utilizan controles enlazados a datos normalmente agregan nuevos registros a través de la **Agregar nuevo** situado en un [BindingNavigator (Control)](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+  
+Para agregar manualmente los nuevos registros a un conjunto de datos, cree una nueva fila de datos llamando al método en la tabla de datos. A continuación, agregar la fila a la <xref:System.Data.DataRow> colección (<xref:System.Data.DataTable.Rows%2A>) de la <xref:System.Data.DataTable>:  
+  
+[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
+[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
+  
+Fin de conservar la información que necesita el conjunto de datos para enviar actualizaciones al origen de datos, utilice la <xref:System.Data.DataRow.Delete%2A> método para quitar filas en una tabla de datos. Por ejemplo, si la aplicación utiliza un TableAdapter (o <xref:System.Data.Common.DataAdapter>), lo TableAdapter `Update` método elimina filas de la base de datos que tienen un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.  
+  
+Si la aplicación no necesita enviar actualizaciones a un origen de datos, es posible eliminar registros mediante tengan acceso directo a la colección de filas de datos (<xref:System.Data.DataRowCollection.Remove%2A>).  
+  
+#### <a name="to-delete-records-from-a-data-table"></a>Para eliminar registros de una tabla de datos  
+  
+-   Llame a la <xref:System.Data.DataRow.Delete%2A> método de un <xref:System.Data.DataRow>.  
+  
+     Este método no quita físicamente el registro. En su lugar, marca el registro para su eliminación.  
+  
+    > [!NOTE]
+    >  Si obtiene la propiedad count de un <xref:System.Data.DataRowCollection>, el recuento resultante incluye los registros que se han marcado para su eliminación. Para obtener un recuento preciso de los registros que no están marcados para su eliminación, puede recorrer la colección observando el <xref:System.Data.DataRow.RowState%2A> propiedad de cada registro. (Los registros marcados para su eliminación tienen un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.) Como alternativa, puede crear una vista de datos de un conjunto de datos que filtra basándose en el estado de fila y obtener la propiedad count desde allí.  
+  
+En el ejemplo siguiente se muestra cómo llamar a la <xref:System.Data.DataRow.Delete%2A> método para marcar la primera fila de la `Customers` como eliminadas de la tabla:  
+  
+[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
+[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
+  
+## <a name="determine-if-there-are-changed-rows"></a>Determinar si hay filas modificadas  
+Cuando se realizan cambios en los registros de un conjunto de datos, se almacena información sobre dichos cambios hasta que los confirme Confirmar los cambios cuando se llama a la `AcceptChanges` método de una conjunto de datos o tabla de datos, o cuando se llama a la `Update` método de un TableAdapter o adaptador de datos.  
+  
+Cambios son sometidos a seguimiento de las dos formas en cada fila de datos:  
+  
+-   Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, o <xref:System.Data.DataRowState.Unchanged>).  
+  
+-   Cada fila de datos modificada contiene varias versiones de esa fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de cambios). Durante el período de un cambio está pendiente (la hora cuando responda a la <xref:System.Data.DataTable.RowChanging> evento), una tercera versión: la versión propuesta, también está disponible. 
+  
+El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas.   
+  
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar si se han realizado cambios en las filas  
+  
+-   Llame al método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos para comprobar si hay filas modificadas.  
+  
+En el ejemplo siguiente se muestra cómo comprobar el valor devuelto de la <xref:System.Data.DataSet.HasChanges%2A> método para detectar si hay filas modificadas en un conjunto de datos denominado `NorthwindDataset1`:  
+  
+[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
+[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
+  
+## <a name="determine-the-type-of-changes"></a>Determinar el tipo de cambios  
+También puede comprobar ver qué tipo de cambios se realizaron en un conjunto de datos, pasando el valor de la <xref:System.Data.DataRowState> enumeración para la <xref:System.Data.DataSet.HasChanges%2A> método.  
+  
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Para determinar el tipo de cambios realizados en una fila  
+  
+-   Pase un valor <xref:System.Data.DataRowState> al método <xref:System.Data.DataSet.HasChanges%2A>.  
+  
+En el ejemplo siguiente se muestra cómo comprobar un conjunto de datos denominado `NorthwindDataset1` para determinar si se han agregado nuevas filas a él:  
+  
+[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
+[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
+  
+## <a name="to-locate-rows-that-have-errors"></a>Para buscar filas con errores  
+Al trabajar con columnas individuales y filas de datos, pueden producirse errores. Puede comprobar la `HasErrors` propiedad para determinar si hay errores en un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, o <xref:System.Data.DataRow>.  
+  
+1.  Compruebe el `HasErrors` propiedad para ver si hay algún error en el conjunto de datos.  
+  
+2.  Si el `HasErrors` propiedad es `true`, recorrer en iteración las colecciones de tablas y, a continuación, la iteración las filas, para buscar la fila con el error.  
+
+[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
+[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+
+## <a name="see-also"></a>Vea también
+[Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
