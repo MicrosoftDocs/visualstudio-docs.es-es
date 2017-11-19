@@ -1,75 +1,75 @@
 ---
-title: "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread"
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
+helpviewer_keywords: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dbb3437edc8d357e6a4e96eed9bf9881970a01c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Permite o deniega\) la evaluación de la expresión aparece en el subproceso especificado, aunque el programa ha detenido.  
+# <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
+Permite la evaluación de expresiones que se produzca en el subproceso determinado, incluso si el programa se ha detenido (o no permite).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT WatchForExpressionEvaluationOnThread(   
-   IDebugProgram2*       pOriginatingProgram,  
-   DWORD                 dwTid,  
-   DWORD                 dwEvalFlags,  
-   IDebugEventCallback2* pExprCallback,  
-   BOOL                  fWatch  
+```cpp  
+HRESULT WatchForExpressionEvaluationOnThread(   
+   IDebugProgram2*       pOriginatingProgram,  
+   DWORD                 dwTid,  
+   DWORD                 dwEvalFlags,  
+   IDebugEventCallback2* pExprCallback,  
+   BOOL                  fWatch  
 );  
 ```  
   
-```c#  
-int WatchForExpressionEvaluationOnThread(   
-   IDebugProgram2       pOriginatingProgram,  
-   uint                  dwTid,  
-   uint                  dwEvalFlags,  
-   IDebugEventCallback2 pExprCallback,  
-   int                   fWatch  
+```csharp  
+int WatchForExpressionEvaluationOnThread(   
+   IDebugProgram2       pOriginatingProgram,  
+   uint                  dwTid,  
+   uint                  dwEvalFlags,  
+   IDebugEventCallback2 pExprCallback,  
+   int                   fWatch  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pOriginatingProgram`  
- \[in\]  Un objeto de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa el programa que se está evaluando una expresión.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que está evaluando una expresión.  
   
  `dwTid`  
- \[in\]  Especifica el identificador del subproceso.  
+ [in] Especifica el identificador del subproceso.  
   
  `dwEvalFlags`  
- \[in\]  Una combinación de marcadores de enumeración de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifican cómo la evaluación debe realizar.  
+ [in] Una combinación de indicadores de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeración que especifican cómo se realiza la evaluación.  
   
  `pExprCallback`  
- \[in\]  Un objeto de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que se utilizará para enviar los eventos de depuración que se producen durante la evaluación de la expresión.  
+ [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para enviar eventos de depuración que se producen durante la evaluación de expresiones.  
   
  `fWatch`  
- \[in\]  Si es distinto de cero \(`TRUE`\), permite la evaluación de expresiones en el subproceso identificado por `dwTid`; si no, cero \(`FALSE`\) deniega la evaluación de expresiones en ese subproceso.  
+ [in] Si es distinto de cero (`TRUE`), permite la evaluación de expresiones en el subproceso identificado por `dwTid`; en caso contrario, cero (`FALSE`) no permite la evaluación de expresiones en ese subproceso.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Cuando el administrador de depuración de sesión \(SDM\) solicita un programa, identificado por el parámetro de `pOriginatingProgram` , evaluar una expresión, notifica al resto de los programas asociados llamando a este método.  
+## <a name="remarks"></a>Comentarios  
+ Cuando el Administrador de sesión de depuración (SDM) pide un programa, identificado por la `pOriginatingProgram` parámetro, para evaluar una expresión, notifica a todos los demás programas asociados mediante una llamada a este método.  
   
- La evaluación de expresiones en un programa puede hacer que el código se ejecute en otro, debido a la evaluación de la función o a la evaluación de cualquier propiedad de `IDispatch` .  debido a esto, este método permite que la evaluación de la expresión ejecute y complete aunque el subproceso se puede detener en este programa.  
+ Evaluación de expresiones en un programa puede causar un código para que se ejecute en otro, debido a la evaluación de función o evaluación de cualquier `IDispatch` propiedades. Por este motivo, este método permite la evaluación de expresiones ejecutar y completar, aunque se puede detener el subproceso en este programa.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

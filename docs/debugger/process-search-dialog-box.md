@@ -1,53 +1,53 @@
 ---
-title: "Cuadro de di&#225;logo Buscar proceso | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Buscar proceso"
+title: "Cuadro de diálogo de búsqueda procesar | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process Search
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9bd048bc80ce9747ca6bced7611827e23fa521ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Cuadro de di&#225;logo Buscar proceso
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use este cuadro de diálogo para buscar y seleccionar el nodo correspondiente a un proceso concreto en la [vista Procesos](../debugger/processes-view.md).  Para abrir este cuadro de diálogo, mueva el foco a una ventana de vista **Procesos**.  A continuación, elija **Buscar proceso** en el menú **Buscar**.  
+# <a name="process-search-dialog-box"></a>Cuadro de diálogo Buscar proceso
+Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un proceso específico en [vista procesos](../debugger/processes-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **procesos** ventana de vista. A continuación, elija **Buscar proceso** desde el **búsqueda** menú.  
   
- Están disponibles los siguientes parámetros de configuración:  
+ Las siguientes opciones están disponibles:  
   
- **Proceso**  
- Identificador de proceso que se busca.  
+ **Process**  
+ El identificador de proceso que se busca.  
   
  **Módulo**  
- Cadena de módulo que se va a buscar.  
+ La cadena de módulo que se buscará.  
   
- **Dirección de búsqueda Arriba o Abajo**  
+ **Dirección de la búsqueda hacia arriba o hacia abajo**  
  La dirección inicial de la búsqueda.  
   
-## Secciones relacionadas  
- [Buscar un proceso en la vista Procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Explica cómo encontrar un proceso concreto en la vista Procesos.  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Buscar un proceso en la vista procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Explica cómo buscar un proceso específico en la vista procesos.  
   
  [Vista Procesos](../debugger/processes-view.md)  
- Muestra una vista de árbol de los procesos activos.  
+ Muestra una vista de árbol de procesos activos.  
   
- [Vistas de Spy\+\+](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy\+\+ de ventanas, mensajes, procesos y subprocesos.  
+ [Vistas de Spy++](../debugger/spy-increment-views.md)  
+ Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
   
- [Usar Spy\+\+](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy\+\+ y explica cómo se puede usar.  
+ [Usar Spy++](../debugger/using-spy-increment.md)  
+ Presenta la herramienta Spy ++ y explica cómo se puede usar.  
   
  [Cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md)  
- Se usa para mostrar las propiedades de un proceso seleccionado en la vista Procesos.  
+ Se utiliza para mostrar las propiedades de un proceso seleccionado en la vista procesos.  
   
- [Referencia de Spy\+\+](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen los menús y cuadros de diálogo de Spy\+\+.
+ [Referencia de Spy++](../debugger/spy-increment-reference.md)  
+ Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.

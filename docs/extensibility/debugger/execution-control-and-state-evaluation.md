@@ -1,25 +1,27 @@
 ---
-title: "Control de la ejecuci&#243;n y evaluaci&#243;n de estado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], control de ejecución"
-  - "evaluación de expresiones, control de ejecución"
+title: "Control de la ejecución y el estado de evaluación | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], execution control
+- expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4f2f76f97111f24a7b6b4ea1a7a22004d6867fcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Control de la ejecuci&#243;n y evaluaci&#243;n de estado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="execution-control-and-state-evaluation"></a>Control de la ejecución y evaluación de estado
 Depurar una aplicación requiere la implementación de estas características de control de ejecución como la ejecución paso a paso en funciones, deténgase en los puntos de interrupción y continuar la ejecución. La depuración de bases de datos de Visual Studio su control de ejecución en los eventos enviados entre los componentes del depurador.  
   
 ## <a name="in-this-section"></a>En esta sección  

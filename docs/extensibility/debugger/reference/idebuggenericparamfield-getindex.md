@@ -1,54 +1,55 @@
 ---
-title: "IDebugGenericParamField::GetIndex | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetIndex"
+title: IDebugGenericParamField::GetIndex | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugGenericParamField::GetIndex
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 550716f7f080d3cf6b9bfa09a4450be090355791
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetIndex
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-recupera el índice de este parámetro genérico.  
+# <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
+Recupera el índice de este parámetro genérico.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetIndex(  
-   DWORD* pIndex  
+   DWORD* pIndex  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetIndex(  
-   out uint pIndex  
+   out uint pIndex  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pIndex`  
- \[out\]  valor de índice de este parámetro genérico.  
+ [out] Valor de índice de este parámetro genérico.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Por ejemplo, para el diccionario \(k, V\), k es el índice 0, V es el índice 1.  
+## <a name="remarks"></a>Comentarios  
+ Por ejemplo, para Dictionary(K,V), es el índice 0 K, V es el índice 1.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugGenericParamFieldType** que expone la interfaz de [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  
 {  
     HRESULT hr = S_OK;  
@@ -66,5 +67,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

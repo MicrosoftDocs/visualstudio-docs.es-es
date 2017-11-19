@@ -1,75 +1,75 @@
 ---
-title: "DISASSEMBLY_STREAM_SCOPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DISASSEMBLY_STREAM_SCOPE"
-helpviewer_keywords: 
-  - "Enumeración DISASSEMBLY_STREAM_SCOPE"
+title: DISASSEMBLY_STREAM_SCOPE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DISASSEMBLY_STREAM_SCOPE
+helpviewer_keywords: DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9cbd0ea73c7efea5cee570548dec5570ffc53b42
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# DISASSEMBLY_STREAM_SCOPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Especifica el ámbito de la secuencia de desensamblado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+```cpp  
+enum enum_DISASSEMBLY_STREAM_SCOPE {   
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 typedef DWORD DISASSEMBLY_STREAM_SCOPE;  
 ```  
   
-```c#  
-public enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+```csharp  
+public enum enum_DISASSEMBLY_STREAM_SCOPE {   
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 ```  
   
-## Members  
- DSS\_HUGE  
- Especifica que se desensambla el contexto del código generaría más la salida que un cliente quiera normalmente para recuperar en una única llamada.  
+## <a name="members"></a>Miembros  
+ DSS_HUGE  
+ Especifica que el contexto del código de desensamblado generaría resultados más de un cliente normalmente desea recuperar en una sola llamada.  
   
- DSS\_FUNCTION  
- Especifica que la función contenida por el contexto del código debe ser desensamblada.  Especifica que la secuencia de desensamblado representa una función, cuando se cambia por el método de [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .  
+ DSS_FUNCTION  
+ Especifica que se debe desensamblar la función incluida en el contexto del código. Especifica que la secuencia de desensamblado representa una función, cuando devuelve el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.  
   
- DSS\_MODULE  
- Cuando se cambia por el método de `IDebugDisassemblyStream2::GetScope` , especifica que la secuencia de desensamblado representa un módulo.  
+ DSS_MODULE  
+ Cuando devuelve el `IDebugDisassemblyStream2::GetScope` método, especifica que la secuencia de desensamblado representa un módulo.  
   
- DSS\_ALL  
- Especifica el desensamblado del espacio de direcciones completo.  
+ DSS_ALL  
+ Especifica el desensamblado disponibles para el espacio de direcciones completa.  
   
-## Comentarios  
- Pasado como argumento al método de [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) y devuelto por el método de [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .  
+## <a name="remarks"></a>Comentarios  
+ Pasa como un argumento a la [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) método y devuelto por el [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.  
   
- estos valores se pueden combinar con `OR`bit a bit.  
+ Estos valores se pueden combinar con un bit a bit `OR`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

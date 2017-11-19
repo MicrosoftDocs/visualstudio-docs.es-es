@@ -1,34 +1,35 @@
 ---
-title: "How to: Control Messages View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, Messages View"
-  - "Messages view, controlling"
+title: "Cómo: controlar la vista mensajes | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, Messages View
+- Messages view, controlling
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2b3d3e56a99c7ab688910c956538a9c38c67becc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Control Messages View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Con Spy\+\+ se dispone de un control considerable del contenido de una ventana [Vista Mensajes](../debugger/messages-view.md).  Se puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) la presentación de mensajes en cualquier momento y se puede especificar:  
+# <a name="how-to-control-messages-view"></a>Cómo: Controlar la vista Mensajes
+Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrar los mensajes en cualquier momento y se puede especificar:  
   
--   Qué tipos de mensaje se desea ver.  
+-   Los tipos de mensajes que desea ver.  
   
--   Qué ventanas se desea supervisar.  
+-   Qué ventanas desea supervisar.  
   
--   El formato de presentación de las líneas de mensaje.  
+-   El formato de presentación para las líneas de mensaje.  
   
- Esta configuración está disponible en el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md) y solo se aplica a la ventana [Vista Mensajes](../debugger/messages-view.md) activa.  Para abrir este cuadro de diálogo, elija **Mensajes de registro** en el menú **Spy**.  
+ Estas opciones están disponibles en la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), y se aplican sólo a activos [vista mensajes](../debugger/messages-view.md) ventana. Para abrir este cuadro de diálogo, elija **mensajes de registro** desde el **Spy** menú.  
   
- Hay tres paneles con pestañas de opciones de mensajes.  Para obtener más información, vea [Pestaña Ventanas \(Cuadro de diálogo Opciones de mensaje\)](../debugger/windows-tab-message-options-dialog-box.md), [Pestaña Mensajes \(Cuadro de diálogo Opciones de mensaje\)](../debugger/messages-tab-message-options-dialog-box.md) y [Pestaña Salida \(cuadro de diálogo Opciones de mensaje\)](../debugger/output-tab-message-options-dialog-box.md).
+ Existen tres paneles con pestañas de opciones de mensaje. Para obtener más información, consulte [pestaña ventanas, cuadro de diálogo Opciones de mensaje](../debugger/windows-tab-message-options-dialog-box.md), [ficha mensajes, cuadro de diálogo Opciones de mensaje](../debugger/messages-tab-message-options-dialog-box.md), y [ficha salida, cuadro de diálogo Opciones de mensaje](../debugger/output-tab-message-options-dialog-box.md).

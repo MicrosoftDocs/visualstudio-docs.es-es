@@ -1,51 +1,52 @@
 ---
-title: "Notificar el puerto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "puertos de notificación"
+title: Notificar el puerto | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Notificar el puerto
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Después de iniciar un programa, el puerto debe ser una notificación, como sigue:  
+# <a name="notifying-the-port"></a>Notificar el puerto
+Después de iniciar un programa, el puerto debe recibir una notificación, como se indica a continuación:  
   
-1.  Cuando un puerto recibe un nuevo nodo de programa, envía un evento de creación de programa a la sesión de depuración.  El evento contiene con él una interfaz que representa el programa.  
+1.  Cuando un puerto recibe un nuevo nodo de programa, envía un evento de creación de programa a la sesión de depuración. El evento conlleva una interfaz que representa el programa.  
   
-2.  Las consultas de la sesión de depuración el programa para el identificador de un motor de depuración al \(DE\) que puede adjuntar.  
+2.  La sesión de depuración consulta el programa para el identificador de un motor de depuración (Alemania) que puede adjuntar a.  
   
-3.  Las comprobaciones de la sesión de depuración para ver si el OF está en la lista de DES permitido para ese programa.  La sesión de depuración obtiene esta lista de los valores de programa de soluciones activa, pasados originalmente a ella por el paquete de depuración.  
+3.  La sesión de depuración comprueba si la DE se encuentra en la lista de permitidos DEs para ese programa. La sesión de depuración obtiene esta lista de configuración del programa activo de la solución, originalmente ha pasado el paquete de depuración.  
   
-     El OF debe estar en la lista permitido, o bien el OF no se adjuntará al programa.  
+     Debe ser la DE la lista de permitidos o, de lo contrario, no se adjuntará el Alemania al programa.  
   
- Mediante programación, cuando un puerto primero recibe un nuevo nodo de programa, crea una interfaz de [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) para representar el programa.  
+ Mediante programación, cuando un puerto recibe un nuevo nodo de programa por primera vez, crea un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaz para representar el programa.  
   
 > [!NOTE]
->  Esto no se debe confundir con la interfaz de `IDebugProgram2` creada más adelante con el motor de depuración \(DE\).  
+>  No debe confundirse con el `IDebugProgram2` interfaz posterior creada por el motor de depuración (Alemania).  
   
- El puerto envía un evento de creación de programa de [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) para el administrador \(SDM\) de depuración de sesión mediante una interfaz COM de `IConnectionPoint` .  
+ El puerto envía una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) eventos de creación de programa hacia el Administrador de sesión de depuración (SDM) por medio de un COM `IConnectionPoint` interfaz.  
   
 > [!NOTE]
->  Esto no se debe confundir con la interfaz de `IDebugProgramCreateEvent2` , que es enviada más adelante con el OF.  
+>  No debe confundirse con el `IDebugProgramCreateEvent2` interfaz, que la DE enviar más tarde.  
   
- Junto con la propia interfaz de eventos, el puerto envía las interfaces de [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), de [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), y de [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , que representan el puerto, el proceso, y el programa, respectivamente.  El SDM llama [IDebugProgram2:: GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) para obtener el GUID de que puede depurar el programa.  GUID se obtuvo originalmente de la interfaz de [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .  
+ Junto con la propia interfaz de eventos, el puerto envía el [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), y [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , las interfaces que representan el puerto, procesan, y programa, respectivamente. Las llamadas SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) para obtener el GUID de la DE que puede depurar el programa. El GUID originalmente se obtuvo de la [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
   
- Las comprobaciones de SDM para ver si el OF está en la lista de DES permitido.  El SDM obtiene esta lista de los valores de programa de soluciones activa, pasados originalmente el paquete de depuración.  El OF debe estar en la lista permitido, o bien no se adjuntará al programa.  
+ El SDM comprueba si es la DE la lista de permitidos DEs. El SDM obtiene esta lista de configuración del programa activo de la solución, originalmente ha pasado el paquete de depuración. Debe ser la DE la lista de permitidos o, de lo contrario, no se adjuntará al programa.  
   
- La identidad de se conoce una vez, el SDM está lista para adjuntarlo al programa.  
+ Una vez que se conoce la identidad de la DE, el SDM está listo para adjuntar al programa.  
   
-## Vea también  
- [Iniciar un programa](../../extensibility/debugger/launching-a-program.md)   
- [Asociar después de un lanzamiento](../../extensibility/debugger/attaching-after-a-launch.md)   
+## <a name="see-also"></a>Vea también  
+ [Ejecutar un programa](../../extensibility/debugger/launching-a-program.md)   
+ [Adjuntar después de un lanzamiento](../../extensibility/debugger/attaching-after-a-launch.md)   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)

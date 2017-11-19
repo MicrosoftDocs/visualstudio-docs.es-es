@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::AddGlobalExpressionContextProvider | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.AddGlobalExpressionContextProvider
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::AddGlobalExpressionContextProvider"
+helpviewer_keywords: IDebugApplication::AddGlobalExpressionContextProvider
 ms.assetid: 35db7124-6970-4e45-8f00-ecdf21e9f5cb
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1cf88dfac1d102ace3f132e7ab61265c704c0b18
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::AddGlobalExpressionContextProvider
-Agrega un proveedor global del contexto de la expresión de esta aplicación.  
+# <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
+Agrega un proveedor de contexto de expresión global a esta aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT AddGlobalExpressionContextProvider(  
@@ -30,23 +33,23 @@ HRESULT AddGlobalExpressionContextProvider(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdsfs`  
- \[in\] proveedor global de contexto de Va a agregar a esta aplicación.  
+ [in] El proveedor de contexto global para agregar a esta aplicación.  
   
  `pdwCookie`  
- \[out\] cookie de que se utiliza para quitar este proveedor global del contexto de la expresión de la aplicación.  
+ [out] Cookie que se usa para quitar este proveedor de contexto de expresión global de la aplicación.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método agrega un proveedor global del contexto de la expresión de esta aplicación.  
+## <a name="remarks"></a>Comentarios  
+ Este método agrega un proveedor de contexto de expresión global a esta aplicación.  
   
-## Vea también  
- [IDebugApplication \(Interfaz\)](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

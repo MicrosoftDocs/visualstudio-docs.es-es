@@ -1,51 +1,51 @@
 ---
-title: "IDebugAlias::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAlias::GetICorDebugValue"
-helpviewer_keywords: 
-  - "IDebugAlias::GetICorDebugValue (método)"
+title: IDebugAlias::GetICorDebugValue | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugAlias::GetICorDebugValue
+helpviewer_keywords: IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 603f24f89463b9eb9f7c67ed3d05662870e41bf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAlias::GetICorDebugValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera una interfaz de código administrado que representa el valor asociado a este alias.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetICorDebugValue(  
-   out object ppUnk  
+   out object ppUnk  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppUnk`  
- \[out\] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede consultar para el `ICorDebugValue` interfaz.  
+ [out] `IUnknown` interfaz que representa el valor asociado a este alias. Esta interfaz se puede consultar para el `ICorDebugValue` interfaz.  
   
-## Valor devuelto  
- Si se realiza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Este método sólo se aplica a valores administrados \(el `ICorDebugValue` está disponible en una interfaz la [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] y se define en el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK en el archivo cordebug.idl\).  
+## <a name="remarks"></a>Comentarios  
+ Este método solo se aplica a valores administrados (el `ICorDebugValue` está disponible en una interfaz el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] y se define en el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK en el archivo cordebug.idl).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

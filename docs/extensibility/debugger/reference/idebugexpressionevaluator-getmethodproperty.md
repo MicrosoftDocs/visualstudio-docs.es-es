@@ -1,73 +1,73 @@
 ---
-title: "IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::GetMethodProperty"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator::GetMethodProperty (método)"
+title: IDebugExpressionEvaluator::GetMethodProperty | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::GetMethodProperty
+helpviewer_keywords: IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b80507a0ac3406474f26c6e206ac4d69c43ce27c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::GetMethodProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Este método obtiene un objeto de la propiedad que contiene los valores locales, los argumentos, y otras propiedades de un método.  
+# <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
+Este método obtiene un objeto de propiedad que contiene las variables locales, argumentos y otras propiedades de un método.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetMethodProperty(   
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BOOL                  fIncludeHiddenLocals,  
-   IDebugProperty2**     ppProperty  
+```cpp  
+HRESULT GetMethodProperty(   
+   IDebugSymbolProvider* pSymbolProvider,  
+   IDebugAddress*        pAddress,  
+   IDebugBinder*         pBinder,  
+   BOOL                  fIncludeHiddenLocals,  
+   IDebugProperty2**     ppProperty  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMethodProperty(  
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   int                  fIncludeHiddenLocals,   
-   out IDebugProperty2  ppProperty  
+   IDebugSymbolProvider pSymbolProvider,   
+   IDebugAddress        pAddress,   
+   IDebugBinder         pBinder,   
+   int                  fIncludeHiddenLocals,   
+   out IDebugProperty2  ppProperty  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pSymbolProvider`  
- \[in\]  El proveedor del token que se utilizará, expresado como un objeto de [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
+ [in] El proveedor de símbolos que se usará, expresada como un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.  
   
  `pAddress`  
- \[in\]  La dirección del código, expresado como un objeto de [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) , que se debe resolver como la función que contiene más próxima.  
+ [in] La dirección en el código, expresada como un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) función de objeto, que se debe resolver el más cercano que contiene.  
   
  `pBinder`  
- \[in\]  El enlazador que se utilizará, expresado como un objeto de [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
+ [in] El enlazador que se usará, expresada como un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.  
   
  `fIncludeHiddenLocals`  
- \[in\]  Cero \(`TRUE`\) significa incluir valores locales ocultos; cero \(`FALSE`\) significa permitir valores locales out ocultos  
+ [in] Es distinto de cero (`TRUE`) significa que debe incluir variables locales ocultos; cero (`FALSE`) significa omitir ocultos variables locales  
   
  `ppProperty`  
- \[out\]  Devuelve un objeto de [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa el método.  
+ [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa el método.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Los valores locales ocultos son normalmente las variables generadas por el compilador.  
+## <a name="remarks"></a>Comentarios  
+ Variables locales ocultos suelen ser variables generadas por el compilador.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

@@ -1,68 +1,68 @@
 ---
-title: "ATTACH_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATTACH_REASON"
-helpviewer_keywords: 
-  - "Enumeración ATTACH_REASON"
+title: ATTACH_REASON | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: ATTACH_REASON
+helpviewer_keywords: ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ba7149d13c85ec99128488e7207a5320f93d680f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ATTACH_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica la razón del motor \(DE\) de depuración para asociar un nodo del programa.  
+# <a name="attachreason"></a>ATTACH_REASON
+Especifica la razón para el motor de depuración (Alemania) para asociar a un nodo de programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```cpp  
+enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 typedef DWORD ATTACH_REASON;  
 ```  
   
-```c#  
-public enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```csharp  
+public enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 ```  
   
-## Members  
- ATTACH\_REASON\_AUTO  
- Asociar porque el proceso ya se encuentra en modo de depuración.  
+## <a name="members"></a>Miembros  
+ ATTACH_REASON_AUTO  
+ Adjuntar porque el proceso está actualmente en modo de depuración.  
   
- ATTACH\_REASON\_LAUNCH  
- Asociar porque se ha iniciará el proceso.  
+ ATTACH_REASON_LAUNCH  
+ Adjuntar porque se ha iniciado el proceso.  
   
- ATTACH\_REASON\_USER  
- Asociar debido a una solicitud de usuario.  
+ ATTACH_REASON_USER  
+ Adjuntar debido a una solicitud de usuario.  
   
-## Comentarios  
- estos valores se utilizan como parámetro a los métodos de [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) y de [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se usan como un parámetro a la [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) y [adjuntar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) métodos.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+ [Adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Asociar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

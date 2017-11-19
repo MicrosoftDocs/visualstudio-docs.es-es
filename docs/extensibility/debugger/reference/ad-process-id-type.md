@@ -1,62 +1,62 @@
 ---
-title: "AD_PROCESS_ID_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AD_PROCESS_ID_TYPE"
-helpviewer_keywords: 
-  - "Enumeración AD_PROCESS_ID_TYPE"
+title: AD_PROCESS_ID_TYPE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: AD_PROCESS_ID_TYPE
+helpviewer_keywords: AD_PROCESS_ID_TYPE enumeration
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 75904ef6e06ef7ccd6d126091f8ec0fbe523ac9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# AD_PROCESS_ID_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica cómo interpretar un identificador de proceso en la estructura de [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) .  
+# <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
+Especifica cómo interpretar un identificador de proceso en el [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
+   AD_PROCESS_ID_SYSTEM = 0,  
+   AD_PROCESS_ID_GUID   = 1  
 };  
 typedef DWORD AD_PROCESS_ID_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
+   AD_PROCESS_ID_SYSTEM = 0,  
+   AD_PROCESS_ID_GUID   = 1  
 };  
 ```  
   
-## Members  
- AD\_PROCESS\_ID\_SYSTEM  
- El identificador de proceso es un identificador del sistema.  utilice el campo de `ProcessId.dwProcessId` de la estructura de [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) .  
+## <a name="members"></a>Miembros  
+ AD_PROCESS_ID_SYSTEM  
+ Id. de proceso es un identificador de sistema. Use la `ProcessId.dwProcessId` campo de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
   
- AD\_PROCESS\_ID\_GUID  
- El identificador de proceso es un GUID.  utilice el campo de `ProcessId.guidProcessId` de la estructura de `AD_PROCESS_ID` .  
+ AD_PROCESS_ID_GUID  
+ Id. de proceso es un GUID. Use la `ProcessId.guidProcessId` campo de la `AD_PROCESS_ID` estructura.  
   
-## Comentarios  
- Utilizado para el miembro de `ProcessIdType` de la estructura de [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) para identificar el tipo de identificador de proceso que está contenido en la estructura.  determina cómo interpretar la unión de `ProcessId` en la estructura.  
+## <a name="remarks"></a>Comentarios  
+ Utilizado para la `ProcessIdType` miembro de la [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura para identificar el tipo de Id. de proceso que se encuentra en la estructura. Determina cómo interpretar la `ProcessId` union en la estructura.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

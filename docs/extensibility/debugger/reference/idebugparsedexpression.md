@@ -1,61 +1,61 @@
 ---
-title: "IDebugParsedExpression | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugParsedExpression"
-helpviewer_keywords: 
-  - "Interfaz IDebugParsedExpression"
+title: IDebugParsedExpression | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugParsedExpression
+helpviewer_keywords: IDebugParsedExpression interface
 ms.assetid: be6486ed-b070-4898-95b1-58581bcb4447
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 11fc3ddcfd7e5b2a3a46ff6a2db64dfe431fbc69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugParsedExpression
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está obsoleta. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresiones administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Esta interfaz representa una expresión analizada lista para evaluarse.  
+ Esta interfaz representa una expresión analizada lista para ser evaluada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugParsedExpression : IUnknown  
 ```  
   
-## Notas para los implementadores  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
  Un evaluador de expresiones implementa esta interfaz para representar una expresión analizada que está lista para su evaluación.  
   
-## Notas para los llamadores  
- Una llamada a [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) devuelve esta interfaz.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Una llamada a [analizar](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) devuelve esta interfaz.  
   
-## Métodos en orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  En la tabla siguiente muestra el método de `IDebugParsedExpression`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|Evalúa la expresión analizada.|  
   
-## Comentarios  
- Cuando el llamador está listo para evaluar la expresión, llama a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) para devolver un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que contiene el resultado de la evaluación. Este enfoque de dos partes para evaluación, analizar y evaluar, permite a la expresión analizada evaluar varias veces, omitiendo el laborioso proceso de analizar la expresión.  
+## <a name="remarks"></a>Comentarios  
+ Cuando el llamador está listo para evaluar la expresión, se llama a [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) para devolver un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que contiene el resultado de la evaluación. Este enfoque de dos partes para evaluación, análisis, a continuación, evaluar, permite a la expresión analizada evaluar varias veces, omitiendo el laborioso proceso de analizar la expresión.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Encabezado: ee.h  
   
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
+## <a name="see-also"></a>Vea también  
+ [Análisis](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

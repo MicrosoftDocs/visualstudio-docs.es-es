@@ -1,98 +1,98 @@
 ---
-title: "IDebugEngine2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::Attach"
-helpviewer_keywords: 
-  - "IDebugEngine2::Attach"
+title: IDebugEngine2::Attach | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::Attach
+helpviewer_keywords: IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Asocia un motor de depuración \(DE\) a un programa o a programas.  Llamado por el administrador de depuración de la sesión \(SDM\) cuando el OF se ejecuta en proceso en el SDM.  
+# <a name="idebugengine2attach"></a>IDebugEngine2::Attach
+Asocia un motor de depuración (Alemania) a un programa o programas. Llamado por el Administrador de sesión de depuración (SDM) cuando el Alemania se está ejecutando en proceso para el SDM.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugProgram2**      pProgram,  
-   IDebugProgramNode2**  rgpProgramNodes,  
-   DWORD                 celtPrograms,  
-   IDebugEventCallback2* pCallback,  
-   ATTACH_REASON         dwReason  
+```cpp  
+HRESULT Attach(   
+   IDebugProgram2**      pProgram,  
+   IDebugProgramNode2**  rgpProgramNodes,  
+   DWORD                 celtPrograms,  
+   IDebugEventCallback2* pCallback,  
+   ATTACH_REASON         dwReason  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugProgram2[]     pProgram,  
-   IDebugProgramNode2[] rgpProgramNodes,  
-   uint                 celtPrograms,  
-   IDebugEventCallback2 pCallback,  
-   Enum_ATTACH_REASON   dwReason  
+```csharp  
+int Attach(   
+   IDebugProgram2[]     pProgram,  
+   IDebugProgramNode2[] rgpProgramNodes,  
+   uint                 celtPrograms,  
+   IDebugEventCallback2 pCallback,  
+   Enum_ATTACH_REASON   dwReason  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pProgram`  
- \[in\]  Matriz de los objetos de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) a los que representa los programas que se va a asociar.  Éstos son programas de puerto.  
+ [in] Una matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objetos que representan los programas que se adjuntará a. Se trata de programas de puerto.  
   
  `rgpProgramNodes`  
- \[in\]  Matriz de los objetos de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representan nodos de programa, una para cada programa.  Los nodos del programa en esta matriz representan los mismos programas que en `pProgram`.  Se proporcionan a los nodos del programa de modo que el OF pueda identificar programas para asociar.  
+ [in] Una matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representan los nodos de programa, uno por cada programa. Los nodos de programa en esta matriz representan los mismos programas como en `pProgram`. Los nodos de programa se proporcionan para que la DE puede identificar los programas para adjuntar a.  
   
  `celtPrograms`  
- \[in\]  Número de software o de nodos de programa en matrices de `pProgram` y de `rgpProgramNodes` .  
+ [in] Número de programas o nodos de programa en el `pProgram` y `rgpProgramNodes` matrices.  
   
  `pCallback`  
- \[in\]  El objeto de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que se utilizará para enviar eventos de depuración al SDM.  
+ [in] El [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para enviar eventos de depuración para el SDM.  
   
  `dwReason`  
- \[in\]  Un valor de enumeración de [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md) que especifica la razón de adjuntar estos programas.  Para obtener más información, vea la sección Comentarios.  
+ [in] Un valor de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeración que especifica la razón para asociar estos programas. Para obtener más información, vea la sección Comentarios.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Hay tres razones de asociar un programa, como sigue:  
+## <a name="remarks"></a>Comentarios  
+ Hay tres razones para asociarse a un programa, como se indica a continuación:  
   
--   `ATTACH_REASON_LAUNCH` indica que el OF se está asociando el programa porque el usuario arrancó el proceso que lo contiene.  
+-   `ATTACH_REASON_LAUNCH`indica que se está asociando el Alemania al programa porque el usuario inicia el proceso que lo contiene.  
   
--   `ATTACH_REASON_USER` indica que el usuario explícitamente ha solicitado el OF asociar un programa \(o el proceso que contiene un programa\).  
+-   `ATTACH_REASON_USER`indica que el usuario ha solicitado explícitamente la DE para adjuntar a un programa (o el proceso que contiene un programa).  
   
--   `ATTACH_REASON_AUTO` indica que el OF está adjuntando un programa concreto porque está depurando ya otros programas en un proceso determinado.  También se denomina asociación automática.  
+-   `ATTACH_REASON_AUTO`indica que se está asociando el Alemania a un programa en particular porque está realizando la depuración de otros programas en un proceso determinado. También se denomina asociación automática.  
   
- Cuando se llama a este método, el OF necesita enviar estos eventos en orden:  
+ Cuando se llama a este método, la DE necesita enviar estos eventos en secuencia:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) \(si no se ha enviado aún para una instancia determinada del motor de depuración\)  
+1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (si todavía no se ha enviado a una instancia determinada del motor de depuración)  
   
 2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
 3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Además, si la razón de adjuntar es `ATTACH_REASON_LAUNCH`, el OF necesita devolver el evento de [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) .  
+ Además, si es el motivo para adjuntar `ATTACH_REASON_LAUNCH`, debe enviar la DE la [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) eventos.  
   
- Una vez que el OF obtiene el objeto de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) correspondiente al programa que se está depurando, se puede consultar para cualquier interfaz privada.  
+ Una vez los obtiene DE la [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto correspondiente al programa que se está depurando, se puede consultar para cualquier interfaz privada.  
   
- Antes de llamar a los métodos de un nodo de programa en la matriz especificada por `pProgram` o `rgpProgramNodes`, la suplantación, si existe, se debe habilitar en la interfaz de `IDebugProgram2` que representa el nodo del programa.  normalmente, sin embargo, este paso no es necesario.  Para obtener más información, vea [Problemas de seguridad](../../../extensibility/debugger/security-issues.md).  
+ Antes de llamar a los métodos de un nodo de programa en la matriz proporcionada por `pProgram` o `rgpProgramNodes`, suplantación, si es necesario, debe estar habilitada en el `IDebugProgram2` interfaz que representa el nodo de programa. Normalmente, sin embargo, este paso no es necesario. Para obtener más información, consulte [problemas de seguridad](../../../extensibility/debugger/security-issues.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
- [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)   
+ [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)   
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   
  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)   

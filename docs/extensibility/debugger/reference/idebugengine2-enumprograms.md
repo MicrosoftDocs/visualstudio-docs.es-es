@@ -1,49 +1,49 @@
 ---
-title: "IDebugEngine2::EnumPrograms | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::EnumPrograms"
-helpviewer_keywords: 
-  - "IDebugEngine2::EnumPrograms"
+title: IDebugEngine2::EnumPrograms | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::EnumPrograms
+helpviewer_keywords: IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 38f5bb98442cf68f703e488a6d0a8ce3698190df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::EnumPrograms
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Recupera una lista de todos los programas que se están depurando por un motor de depuración \(DE\).  
+# <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
+Recupera una lista de todos los programas que se está depurando un motor de depuración (Alemania).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT EnumPrograms(   
-   IEnumDebugPrograms2** ppEnum  
+```cpp  
+HRESULT EnumPrograms(   
+   IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPrograms(   
-   out IEnumDebugPrograms2 ppEnum  
+```csharp  
+int EnumPrograms(   
+   out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppEnum`  
- \[out\]  Devuelve un objeto de [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) que contiene una lista de todos los programas que se están depurando por un OF.  
+ [out] Devuelve un [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) objeto que contiene una lista de todos los programas que está siendo depurado por un Alemania.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

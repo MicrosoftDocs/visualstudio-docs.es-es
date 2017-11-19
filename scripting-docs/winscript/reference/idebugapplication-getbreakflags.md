@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::GetBreakFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::GetBreakFlags | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.GetBreakFlags
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::GetBreakFlags"
+helpviewer_keywords: IDebugApplication::GetBreakFlags
 ms.assetid: 0532ba94-f791-46ad-88ae-5f6ba220b667
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::GetBreakFlags
-Devuelve marcas actuales de la interrupción de la aplicación.  
+# <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
+Devuelve las marcas de salto actual de la aplicación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetBreakFlags(  
@@ -30,23 +33,23 @@ HRESULT GetBreakFlags(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pabf`  
- \[out\] la interrupción actual se marca para la aplicación.  
+ [out] Las marcas de salto actual de la aplicación.  
   
  `pprdatSteppingThread`  
- \[out\] El que está ejecutando el subproceso.  
+ [out] El subproceso actualmente en ejecución.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
   
-## Comentarios  
- Este método devuelve los marcadores actuales de la interrupción de la aplicación.  
+## <a name="remarks"></a>Comentarios  
+ Este método devuelve las marcas de salto actual de la aplicación.  
   
-## Vea también  
- [IDebugApplication \(Interfaz\)](../../winscript/reference/idebugapplication-interface.md)   
- [APPBREAKFLAGS \(Enumeración\)](../../winscript/reference/appbreakflags-enumeration.md)
+## <a name="see-also"></a>Vea también  
+ [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
+ [APPBREAKFLAGS (Enumeración)](../../winscript/reference/appbreakflags-enumeration.md)

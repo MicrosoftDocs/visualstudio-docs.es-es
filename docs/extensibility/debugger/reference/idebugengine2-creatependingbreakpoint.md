@@ -1,63 +1,63 @@
 ---
-title: "IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugEngine2::CreatePendingBreakpoint"
+title: IDebugEngine2::CreatePendingBreakpoint | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::CreatePendingBreakpoint
+helpviewer_keywords: IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fdc73a2245390ec04cc3adc2b3a4ac4f5ced3f51
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::CreatePendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Crea un punto de interrupción pendiente en el motor de depuración \(DE\).  
+# <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
+Crea un punto de interrupción pendiente en el motor de depuración (Alemania).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2*  pBPRequest,  
-   IDebugPendingBreakpoint2** ppPendingBP  
+```cpp  
+HRESULT CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2*  pBPRequest,  
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```c#  
-int CreatePendingBreakpoint(   
-   IDebugBreakpointRequest2     pBPRequest,  
-   out IDebugPendingBreakpoint2 ppPendingBP  
+```csharp  
+int CreatePendingBreakpoint(   
+   IDebugBreakpointRequest2     pBPRequest,  
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pBPRequest`  
- \[in\]  un objeto de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) que describe el punto de interrupción pendiente para crear.  
+ [in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que describe el punto de interrupción pendiente para crear.  
   
  `ppPendingBP`  
- \[out\]  Devuelve un objeto de [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) que representa el punto de interrupción pendiente.  
+ [out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el punto de interrupción pendiente.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  Devuelve normalmente `E_FAIL` si no coincide con el parámetro de `pBPRequest` ningún lenguaje admitido por el De si el parámetro de `pBPRequest` no es válido o incompleto.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Normalmente devuelve `E_FAIL` si la `pBPRequest` parámetro no coincide con cualquier lenguaje compatible con la DE caso el `pBPRequest` parámetro no válido o está incompleta.  
   
-## Comentarios  
- Un punto de interrupción pendiente es básicamente una colección de toda la información necesaria para enlazar un punto de interrupción en el código.  El punto de interrupción pendiente devuelto por este método no se enlaza al código hasta que se llame al método de [Enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) .  
+## <a name="remarks"></a>Comentarios  
+ Un punto de interrupción pendiente es básicamente una colección de toda la información necesaria para enlazar un punto de interrupción al código. El punto de interrupción pendiente devuelto por este método no está enlazado al código hasta que el [enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) se llama al método.  
   
- Para cada punto de interrupción pendiente conjuntos de usuarios, el administrador de depuración de sesión \(SDM\) llaman a este método en cada OF asociado.  Es el OF para comprobar que el punto de interrupción es válido para los programas que se ejecutan en ese OF.  
+ Para cada punto de interrupción pendiente de los conjuntos de usuarios, el Administrador de sesión de depuración (SDM) llama a este método en cada Alemania adjunto. Es la DE comprobar que el punto de interrupción es válida para los programas que se ejecutan en ese Alemania.  
   
- Cuando el usuario establece un punto de interrupción en una línea de código, el OF quedan libres para enlazar el punto de interrupción a la línea más cercana del documento que corresponde a este código.  Esto permite que el usuario establezca un punto de interrupción en la primera línea de una instrucción de varias líneas, pero lo enlaza en la última línea \(donde todo el código se admite en la información de depuración\).  
+ Cuando el usuario establece un punto de interrupción en una línea de código, la DE es gratuita enlazar el punto de interrupción a la línea más próxima en el documento que corresponde a este código. Esto permite al usuario establecer un punto de interrupción en la primera línea de una instrucción de varias líneas, pero el enlace en la última línea (donde todo el código tiene el atributo en la información de depuración).  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto simple de `CProgram` .  La implementación De de `IDebugEngine2::CreatePendingBreakpoint` podría a reenviar todas las llamadas a esta implementación del método en cada programa.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CProgram` objeto. Implementación de la DE la `IDebugEngine2::CreatePendingBreakpoint` , a continuación, puede reenviar todas las llamadas a esta implementación del método en cada programa.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -71,7 +71,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }    
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [Enlazar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   

@@ -1,39 +1,39 @@
 ---
-title: "Pesta&#241;a Memoria (Cuadro de di&#225;logo Propiedades del proceso) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Propiedades de procesos para Windows NT"
+title: "Pestaña memoria, cuadro de diálogo de propiedades de proceso | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties for Windows NT
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7629fd477d0eb5a2a142e48aa90bb97e4c10a152
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Pesta&#241;a Memoria (Cuadro de di&#225;logo Propiedades del proceso)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use la pestaña **Memoria** para mostrar cómo usa un proceso la memoria.  Para mostrar el [cuadro de diálogo Propiedades del proceso](../debugger/process-properties-dialog-box.md), cambie el foco a la ventana [Vista Procesos](../debugger/processes-view.md).  Seleccione el nodo de un proceso en el árbol y, a continuación, elija **Propiedades** en el menú **Ver**.  
+# <a name="memory-tab-process-properties-dialog-box"></a>Pestaña Memoria (Cuadro de diálogo Propiedades del proceso)
+Use la **memoria** ficha para mostrar cómo un proceso utiliza la memoria. Para mostrar la [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y después elija **propiedades** desde el **vista** menú.  
   
- En la pestaña **Memoria** está disponible la configuración siguiente:  
+ Las siguientes opciones están disponibles en la **memoria** ficha:  
   
-|Entry|Descripción|  
+|Entrada|Descripción|  
 |-----------|-----------------|  
-|**Bytes virtuales**|Tamaño actual \(en bytes\) del espacio de direcciones virtuales que usa el proceso.  El uso del espacio de direcciones virtuales no implica necesariamente una correspondencia con el uso del disco o de páginas de memoria principal.  Sin embargo, el espacio virtual es finito y, si se usa en exceso, se puede limitar la capacidad del proceso para cargar las bibliotecas.|  
-|**Bytes virtuales máximos**|Número máximo de bytes de espacio de direcciones virtuales que el proceso ha usado en un momento dado.|  
-|**Espacio de trabajo**|Conjunto de páginas de memoria que han usado recientemente los subprocesos del proceso.  Si la memoria libre del equipo está por encima de un determinado umbral, las páginas permanecen en el espacio de trabajo de un proceso aunque no se usen.  Cuando la memoria libre desciende por debajo de un determinado umbral, las páginas se quitan del espacio de trabajo.  Si son necesarias, se producirá un error de página en memoria y regresarán al espacio de trabajo antes de dejar la memoria principal.|  
-|**Espacio de trabajo máximo**|Número máximo de páginas en el espacio de trabajo de este proceso en un momento dado.|  
-|**Bytes de bloque paginado**|Cantidad actual de bloque paginado que el proceso ha asignado.  El bloque paginado es un área de memoria de sistema donde los componentes del sistema operativo adquieren el espacio cuando logran las tareas que les han sido designadas.  Las páginas de bloque paginado se pueden transferir al archivo de paginación cuando el sistema no tenga acceso a las mismas durante períodos de tiempo ininterrumpidos.|  
-|**Bytes de bloque no paginado**|Número actual de bytes del bloque no paginado asignado por el proceso.  El bloque no paginado es un área de memoria de sistema donde los componentes del sistema operativo adquieren el espacio cuando logran las tareas que les han sido designadas.  Las páginas de bloque no paginado no se pueden transferir al archivo de paginación; permanecen en memoria principal mientras estén asignadas.|  
-|**Bytes privados**|Número actual de bytes asignados a este proceso que no se pueden compartir con otros procesos.|  
-|**Bytes libres**|Espacio de direcciones virtuales total de este proceso que no está en uso.|  
-|**Bytes reservados**|Cantidad total de memoria virtual reservada para que este proceso la use en un futuro.|  
-|**Bytes de imagen libres**|Cantidad de espacio de direcciones virtuales que no está en uso o reservado por imágenes dentro de este proceso.|  
-|**Bytes de imagen reservados**|Suma de la memoria virtual total reservada por las imágenes que se ejecutan dentro de este proceso.|
+|**Bytes virtuales**|El tamaño actual (en bytes) de espacio de direcciones virtuales que el proceso está usando. El uso de espacio de direcciones virtuales no implica necesariamente correspondencia con el uso de disco o las páginas de memoria principal. Sin embargo, el espacio virtual es finito y utilizar demasiado pueden limitar la capacidad del proceso para cargar bibliotecas.|  
+|**Bytes virtuales máximos**|El número máximo de bytes de espacio de direcciones virtuales del proceso ha usado en un momento determinado.|  
+|**Espacio de trabajo**|El conjunto de páginas de memoria usadas recientemente por los subprocesos del proceso. Si la memoria libre del equipo está por encima de un umbral, las páginas se mantienen en el espacio de trabajo de un proceso incluso si no están en uso. Cuando la memoria disponible cae por debajo del umbral, se reducen las páginas del espacio de trabajo. Si son necesarias, estarán un error flexible y vuelven al espacio de trabajo antes de abandonar la memoria principal.|  
+|**Conjunto de trabajo máximo**|El número máximo de páginas en el espacio de trabajo de este proceso en cualquier momento dado.|  
+|**Bytes de bloque paginado**|La cantidad actual de bloque paginado que el proceso ha asignado. Bloque paginado es un área de memoria de sistema donde los componentes del sistema operativo adquieren espacio al llevar a cabo sus tareas asignadas. Páginas de bloque paginado se pueden paginar en el archivo de paginación cuando no tiene acceso al sistema durante largos periodos de tiempo.|  
+|**Bytes del bloque no paginado**|El número actual de bytes en el bloque de memoria no paginado asignada por el proceso. El bloque no paginado es un área de memoria del sistema donde se adquiere espacio por componentes del sistema operativo como llevar a cabo sus tareas asignadas. Las páginas de bloque no paginado no se pueden paginar en el archivo de paginación; permanecen en la memoria principal mientras estén asignados.|  
+|**Bytes privados**|El número actual de bytes que este proceso ha asignado no puede compartirse con otros procesos.|  
+|**Bytes libres**|El espacio de direcciones virtuales sin usar total de este proceso.|  
+|**Bytes reservados**|La cantidad total de memoria virtual reservada para uso futuro por este proceso.|  
+|**Bytes de imagen libres**|La cantidad de espacio de direcciones virtuales que no está en uso o reservado por imágenes dentro de este proceso.|  
+|**Bytes de imagen reservados**|La suma de toda la memoria virtual reservada por las imágenes que se ejecutan dentro de este proceso.|

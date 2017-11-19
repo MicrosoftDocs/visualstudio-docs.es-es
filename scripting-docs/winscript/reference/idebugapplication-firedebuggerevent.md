@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::FireDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::FireDebuggerEvent | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.FireDebuggerEvent
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::FireDebuggerEvent"
+helpviewer_keywords: IDebugApplication::FireDebuggerEvent
 ms.assetid: fd1f602e-fc15-4158-a6e7-497ff5b4a509
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::FireDebuggerEvent
-Desencadena un evento genérico a la interfaz de `IApplicationDebugger` del depurador.  
+# <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
+Se desencadena un evento genérico para el depurador `IApplicationDebugger` interfaz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT FireDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT FireDebuggerEvent(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `riid`  
- \[in\] GUID para el objeto.  
+ [in] Un GUID para el objeto.  
   
  `punk`  
- \[in\] un objeto de evento al paso en el depurador.  
+ [in] Un objeto de evento para pasar al depurador.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El método se realizó correctamente.|  
-|`E_NOTIMPL`|No se implementa el método actualmente.|  
+|`E_NOTIMPL`|El método no está implementado actualmente.|  
   
-## Comentarios  
- La semántica de GUID y `IUnknown` son totalmente application\/depurador definido.  
+## <a name="remarks"></a>Comentarios  
+ La semántica del GUID y `IUnknown` completamente son aplicación/depurador definido.  
   
- Este método permite las expansiones de modelo de depurador; no se implementa actualmente.  
+ Este método permite que las extensiones personalizadas del modelo de depurador; no está implementada actualmente.  
   
- Este método hace que `IApplicationDebugger::onDebuggerEvent` que se va a llamar.  
+ Este método provoca `IApplicationDebugger::onDebuggerEvent` para llamarlo.  
   
-## Vea también  
- [IDebugApplication \(Interfaz\)](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

@@ -1,53 +1,53 @@
 ---
-title: "IDebugProgram2::GetProgramId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetProgramId"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetProgramId"
+title: IDebugProgram2::GetProgramId | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetProgramId
+helpviewer_keywords: IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 094dde4330775b77a50ce98451fc9dafcd3bd23b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetProgramId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el GUID para este programa.  
+# <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
+Obtiene un GUID para este programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetProgramId(   
-   GUID* pguidProgramId  
+```cpp  
+HRESULT GetProgramId(   
+   GUID* pguidProgramId  
 );  
 ```  
   
-```c#  
-int GetProgramId(   
-   out Guid pguidProgramId  
+```csharp  
+int GetProgramId(   
+   out Guid pguidProgramId  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pguidProgramId`  
- \[out\]  devuelve `GUID` para este programa.  
+ [out] Devuelve el `GUID` para este programa.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Un motor de depuración \(DE\) debe devolver el identificador de programa pasado originalmente a los métodos de [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o de [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) .  Esto permite la identificación del programa mediante los componentes del depurador.  
+## <a name="remarks"></a>Comentarios  
+ Un motor de depuración (Alemania) debe devolver el identificador de programa que se pasó originalmente para la [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) métodos. Esto permite identificación del programa en el depurador de componentes.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Asociar](../../../extensibility/debugger/reference/idebugengine2-attach.md)

@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugFrame::GetDocumentPositionWithName (M&#233;todo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugframe:: Getdocumentpositionwithname (método) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugFrame.GetDocumentPositionWithName
 apilocation: jscript9diag.dll
 ms.assetid: 1d994714-2c87-4a9e-ae14-a15eec9520c7
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 49afb5903e190280d226a24b22dc389041861c52
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugFrame::GetDocumentPositionWithName (M&#233;todo)
-Devuelve la posición actual de este marco de pila en el documento de usuario.  
+# <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName (Método)
+Devuelve la posición actual de este marco de pila dentro del documento de nivel de usuario.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetDocumentPositionWithName(  
@@ -29,20 +33,20 @@ HRESULT GetDocumentPositionWithName(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pDocumentName`  
- \[out\] Para scripts estáticos, una dirección URL para documentar.  En los scripts dinámicos, se devuelve un nombre que contiene el tipo de script \(por ejemplo, código eval, código de función etc.\).  
+ [out] Para obtener scripts estáticas, una dirección URL al documento. Para obtener scripts dinámicos, se devuelve un nombre que contiene el tipo de secuencia de comandos (por ejemplo, eval code, código de la función etc.).  
   
  `pLine`  
- \[out\] Posición de línea basada en uno dentro del documento.  
+ [out] posición de línea basado en 1 en el documento.  
   
  `pColumn`  
- \[out\] Posición de línea basada en uno dentro del documento.  
+ [out] posición de línea basado en 1 en el documento.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jscript9diag.h  
   
-## Vea también  
- [IJsDebugFrame \(Interfaz\)](../../winscript/reference/ijsdebugframe-interface.md)
+## <a name="see-also"></a>Vea también  
+ [IJsDebugFrame (Interfaz)](../../winscript/reference/ijsdebugframe-interface.md)

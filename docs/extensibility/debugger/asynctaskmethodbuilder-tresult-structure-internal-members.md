@@ -1,34 +1,36 @@
 ---
-title: "Estructura de AsyncTaskMethodBuilder &lt; TResult &gt; - miembros internos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Estructura de AsyncTaskMethodBuilder < TResult > [motores de depuración de .NET Framework]"
-  - "motores de depuración, AsyncTaskMethodBuilder < TResult > (estructura) [.NET Framework]"
+title: AsyncTaskMethodBuilder&lt;TResult&gt; estructura - miembros internos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
+- debug engines, AsyncTaskMethodBuilder<TResult> structure [.NET Framework]
 ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d6956cf1150a1a30d062201080a97dae7d231a75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Estructura de AsyncTaskMethodBuilder &lt; TResult &gt; - miembros internos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Este tema describen los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> tema de referencia.  
+# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; estructura - miembros internos
+En este tema se describe los miembros internos de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> clase. Para obtener información general acerca de esta clase, vea el <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> tema de referencia.  
   
- **Espacio de nombres:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib \(en mscorlib.dll\)  
+ **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- No se puede tener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común \(CIL\).  
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 .class public sequential ansi sealed beforefieldinit System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult>  
@@ -36,13 +38,13 @@ Este tema describen los miembros internos de la <xref:System.Runtime.CompilerSer
        implements System.Runtime.CompilerServices.IAsyncMethodBuilder  
 ```  
   
-## Miembros internos  
+## <a name="internal-members"></a>Miembros internos  
   
-|Nombre|Descripción|  
-|------------|-----------------|  
-|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma exclusiva este generador al depurador.|  
-|[campo m\_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Representa el inicializado de forma diferida crea la tarea.|  
+|Name|Descripción|  
+|----------|-----------------|  
+|[Propiedad ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Obtiene un objeto que puede utilizarse para identificar de forma exclusiva este generador para el depurador.|  
+|[campo de m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Representa el inicializado de forma diferida genera la tarea.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Información interna de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Datos internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

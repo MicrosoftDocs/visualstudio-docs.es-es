@@ -1,50 +1,50 @@
 ---
-title: "IDebugDynamicField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDynamicField"
-helpviewer_keywords: 
-  - "Interfaz IDebugDynamicField"
+title: IDebugDynamicField | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDynamicField
+helpviewer_keywords: IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5bb632d2ca51090f88b33ea6a8365fa9ac13ba9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDynamicField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-esta interfaz representa un tipo de una variable.  
+# <a name="idebugdynamicfield"></a>IDebugDynamicField
+Esta interfaz representa un tipo de una variable.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 IDebugDynamicField : IDebugField  
 ```  
   
-## Notas para los implementadores  
- Esta interfaz se implementa mediante proveedores de símbolos como clase base para cualquier tipo que se puedan determinar en tiempo de ejecución.  Esto es para el código administrado sólo.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Esta interfaz se implementa por los proveedores de símbolos como una clase base para cualquier tipo que se puede determinar en tiempo de ejecución. Esto es solo para código administrado.  
   
-## Notas para los llamadores  
- Esta interfaz representa una clase base que especializado más interfaces pueda derivarse.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz representa una clase base desde la que pueden derivarse interfaces más especializadas.  
   
-## métodos en el orden de Vtable  
- Esta interfaz no proporciona ningún método distintos de los heredados de `IDebugField`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ Esta interfaz no proporciona ningún método que no hereda de `IDebugField`.  
   
-## Requisitos  
- encabezado: sh.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: sh.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de proveedor de símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

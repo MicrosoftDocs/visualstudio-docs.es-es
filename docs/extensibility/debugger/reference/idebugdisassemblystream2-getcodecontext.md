@@ -1,60 +1,60 @@
 ---
-title: "IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
+title: IDebugDisassemblyStream2::GetCodeContext | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::GetCodeContext
+helpviewer_keywords: IDebugDisassemblyStream2::GetCodeContext
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1c40a76ffeae198a9d4a5a41b438262a342d877e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::GetCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Devuelve un objeto de contexto del código correspondiente a un identificador especificado de la ubicación del código.  
+# <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
+Devuelve un objeto de contexto de código correspondiente a un identificador de ubicación de códigos especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetCodeContext(   
-   UINT64               uCodeLocationId,  
-   IDebugCodeContext2** ppCodeContext  
+```cpp  
+HRESULT GetCodeContext(   
+   UINT64               uCodeLocationId,  
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```c#  
-int GetCodeContext(   
-   ulong                  uCodeLocationId,  
-   out IDebugCodeContext2 ppCodeContext  
+```csharp  
+int GetCodeContext(   
+   ulong                  uCodeLocationId,  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `uCodeLocationId`  
- \[in\]  Especifica el identificador de la ubicación del código.  Vea la sección comentarios para el método de [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) para obtener una descripción de un identificador de la ubicación del código.  
+ [in] Especifica el identificador de ubicación del código. Vea la sección Comentarios para el [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método para obtener una descripción de un identificador de ubicación del código.  
   
  `ppCodeContext`  
- \[out\]  Devuelve un objeto de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que representa el contexto de código asociado.  
+ [out] Devuelve un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa el contexto de código asociado.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El identificador de la ubicación del código se puede devolver de una llamada al método de [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) y puede aparecer en la estructura de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .  
+## <a name="remarks"></a>Comentarios  
+ El identificador de ubicación de código se puede devolver desde una llamada a la [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) método y puede aparecer en el [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructura.  
   
- Para convertir un contexto del código en un identificador de la ubicación del código, llame al método de [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) .  
+ Para convertir un contexto de código en un identificador de ubicación del código, llame a la [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   

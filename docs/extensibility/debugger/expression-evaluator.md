@@ -1,45 +1,47 @@
 ---
-title: "Evaluador de expresiones | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "expresiones [SDK de depuración]"
-  - "depurar [SDK de depuración], la evaluación de expresiones"
-  - "evaluación de expresiones"
+title: Evaluador de expresiones | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expressions [Debugging SDK]
+- debugging [Debugging SDK], expression evaluation
+- expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Evaluador de expresiones
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Los evaluadores de expresión \(EE\) examina la sintaxis de un lenguaje para analizar y evaluar variables y expresiones en tiempo de ejecución, lo que son vistas por el usuario si el IDE está en modo de interrupción.  
+# <a name="expression-evaluator"></a>Evaluador de expresiones
+Evaluadores de expresión (EE) examina la sintaxis de un idioma para analizar y evaluar variables y expresiones en tiempo de ejecución, lo que les permite ver el usuario cuando el IDE está en modo de interrupción.  
   
-## Mediante evaluadores de expresión  
- Las expresiones se crean utilizando el método de [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) , como sigue:  
+## <a name="using-expression-evaluators"></a>Uso de evaluadores de expresión  
+ Las expresiones se crean utilizando el [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método, tal como se indica a continuación:  
   
-1.  El motor de depuración \(DE\) implementa la interfaz de [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .  
+1.  El motor de depuración (Alemania) implementa la [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaz.  
   
-2.  El paquete de depuración obtiene un objeto de `IDebugExpressionContext2` de una interfaz de [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) y después llamar al método de `IDebugStackFrame2::ParseText` en él para obtener un objeto de [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) .  
+2.  Obtiene el paquete de depuración un `IDebugExpressionContext2` objeto desde un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaz y, a continuación, llama el `IDebugStackFrame2::ParseText` método para obtener un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto.  
   
-3.  El paquete de depuración llama al método de [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o el método de [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obtener el valor de la expresión.  `IDebugExpression2::EvaluateAsync` se denomina de comando y de la ventana Inmediato.  Todos los demás componentes de la interfaz de usuario llama `IDebugExpression2::EvaluateSync`.  
+3.  Las llamadas de paquete de depuración del [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) método o la [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) método para obtener el valor de la expresión. `IDebugExpression2::EvaluateAsync`se llama desde la ventana de comandos/inmediato. Llamar todos los demás componentes de interfaz de usuario `IDebugExpression2::EvaluateSync`.  
   
-4.  El resultado de la evaluación de la expresión es un objeto de [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , que contiene el nombre, el tipo, y el valor de resultado de la evaluación de la expresión.  
+4.  El resultado de evaluación de la expresión es un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto, que contiene el nombre, el tipo y el valor del resultado de la evaluación de expresiones.  
   
- Durante la evaluación de la expresión, aa requiere información de componente proveedor de símbolo.  Las fuentes de proveedor de símbolos que información simbólica utilizado para identificar y comprender la expresión analizada.  
+ Al evaluar una expresión, el EE requiere información desde el componente de proveedor de símbolos. El proveedor de símbolos proporciona la información simbólica que se usa para identificar y describir la expresión analizada.  
   
- Cuando se completa la evaluación asincrónica de expresión, un evento asincrónico es enviado por el OF mediante el administrador \(SDM\) de depuración de la sesión para notificar al IDE que la evaluación de la expresión está completa.  Cuando se completa la evaluación sincrónica de la expresión, el resultado de la evaluación se devuelve de la llamada al método de `IDebugExpression2::EvaluateSync` .  
+ Una vez completada la evaluación de expresiones asincrónico, un evento asincrónico se envía por la DE mediante el Administrador de sesión de depuración (SDM) para notificar el IDE que la evaluación de expresiones ha finalizado. Una vez completada la evaluación de expresiones sincrónica, se devuelve el resultado de la evaluación de la llamada a la `IDebugExpression2::EvaluateSync` método.  
   
-## Notas de implementación  
- Los motores de depuración de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] esperan comunicarse con el evaluador de expresiones mediante interfaces \(CLR\) de Common Language Runtime.  Como resultado, un evaluador de expresiones que ejecuta los motores de depuración de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe admitir CLR \(una lista completa de todo el CLR que las interfaces de depuración se puede encontrar en debugref.doc, que forma parte de [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]\).  
+## <a name="implementation-notes"></a>Notas de implementación  
+ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración que se esperan para comunicarse con el evaluador de expresiones mediante interfaces de Common Language Runtime (CLR). Como resultado, un evaluador de expresiones que funciona con la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración deben ser compatible con el CLR (encontrará una lista completa de todas las interfaces de depuración de CLR en debugref.doc, que forma parte de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

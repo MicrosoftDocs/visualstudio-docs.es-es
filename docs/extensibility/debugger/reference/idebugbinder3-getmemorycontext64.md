@@ -1,62 +1,64 @@
 ---
-title: "IDebugBinder3::GetMemoryContext64 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetMemoryContext64"
-  - "IDebugBinder3::GetMemoryContext64"
+title: IDebugBinder3::GetMemoryContext64 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetMemoryContext64
+- IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e482be9105670297e10dd392c4d32e9ee19d7ee9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetMemoryContext64
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Convierte una ubicación del objeto o una dirección de memoria de 64 bits a un contexto de memoria.  
+# <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
+Convierte una ubicación del objeto o una dirección de memoria de 64 bits en un contexto de la memoria.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext64 (  
-   IDebugField*           pField,  
-   UINT64                 uConstant,  
-   IDebugMemoryContext2** ppMemCxt  
+   IDebugField*           pField,  
+   UINT64                 uConstant,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext64 (  
-   IDebugField              pField,  
-   ulong                    uConstant,  
-   out IDebugMemoryContext2 ppMemCxt  
+   IDebugField              pField,  
+   ulong                    uConstant,  
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pField`  
- \[in\]  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el objeto para buscar.  Si `NULL`, utilice `dwConstant` en su lugar.  
+ [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el objeto que se va a buscar. Si `NULL`, a continuación, utilice `dwConstant` en su lugar.  
   
  `uConstant`  
- \[in\]  Una dirección de memoria de 64 bits, como 0x50000000.  
+ [in] Una dirección de memoria de 64 bits, como 0x50000000.  
   
  `ppMemCxt`  
- \[out\]  Devuelve la interfaz de [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que representa la dirección del objeto, o la dirección de memoria.  
+ [out] Devuelve el [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaz que representa la dirección del objeto o la dirección en la memoria.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- Los ejemplos siguientes se crea un objeto que implementa la interfaz de [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) y utilice este método para recuperar el contexto de memoria.  
+## <a name="example"></a>Ejemplo  
+ Los ejemplos siguientes se crea un objeto que implementa el [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) de interfaz y utiliza este método para recuperar el contexto de la memoria.  
   
-```cpp#  
+```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  
 {  
     // precondition  
@@ -127,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

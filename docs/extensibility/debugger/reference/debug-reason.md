@@ -1,77 +1,77 @@
 ---
-title: "DEBUG_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_REASON"
-helpviewer_keywords: 
-  - "Enumeración DEBUG_REASON"
+title: DEBUG_REASON | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_REASON
+helpviewer_keywords: DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9607afd765e1ddbc9fb2be97a0b7694aed7d493d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica qué el proceso se inicia para depurar.  
+# <a name="debugreason"></a>DEBUG_REASON
+Especifica por qué se ha iniciado el proceso de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```cpp  
+enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
-```c#  
-public enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```csharp  
+public enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
 ```  
   
-#### Parámetros  
- DEBUG\_REASON\_ERROR  
- Un error no específico producido \(se utiliza como condición predeterminada cuando ninguna de las otras razones caben\).  
+#### <a name="parameters"></a>Parámetros  
+ DEBUG_REASON_ERROR  
+ Se produjo un error no especificado (Esto se utiliza como una condición predeterminada cuando ninguno de los otros motivos por los que el ajuste).  
   
- DEBUG\_REASON\_USER\_LAUNCHED  
- El proceso se inicia en la solicitud de usuario.  
+ DEBUG_REASON_USER_LAUNCHED  
+ El proceso se inició en la solicitud del usuario.  
   
- DEBUG\_REASON\_USER\_ATTACHED  
- El proceso de ya\-funcionamiento se adjuntó por el usuario.  
+ DEBUG_REASON_USER_ATTACHED  
+ El proceso de ejecución ya se conectó a por el usuario.  
   
- DEBUG\_REASON\_AUTO\_ATTACHED  
- El proceso automáticamente estaba adjunto a cuando se inicia.  
+ DEBUG_REASON_AUTO_ATTACHED  
+ El proceso se adjunta automáticamente a cuando se inicia.  
   
- DEBUG\_REASON\_CAUSALITY  
- El proceso se inicia debido a un evento \(JIT\) de depuración Just\-In\-Time.  
+ DEBUG_REASON_CAUSALITY  
+ El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).  
   
-## Comentarios  
- Volver del método de [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .  
+## <a name="remarks"></a>Comentarios  
+ Devuelto desde el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -1,52 +1,52 @@
 ---
-title: "IDebugEvent2::GetAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEvent2::GetAttributes"
-helpviewer_keywords: 
-  - "IDebugEvent2::GetAttributes"
+title: IDebugEvent2::GetAttributes | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEvent2::GetAttributes
+helpviewer_keywords: IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ff7b568feb2eddff3d712c494e610fc6b9a6b262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEvent2::GetAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 Obtiene los atributos para este evento de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetAttribute(   
-   DWORD* pdwAttrib  
+```cpp  
+HRESULT GetAttribute(   
+   DWORD* pdwAttrib  
 );  
 ```  
   
-```c#  
-int GetAttribute(   
-   out uint pdwAttrib  
+```csharp  
+int GetAttribute(   
+   out uint pdwAttrib  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdwAttrib`  
- \[out\]  Una combinación de marcadores de enumeración de [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
+ [out] Una combinación de indicadores de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeración.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- la interfaz de [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) es común a todos los eventos.  este método describe el tipo de evento; por ejemplo, es el evento sincrónico o asincrónico y es un evento que detiene.  
+## <a name="remarks"></a>Comentarios  
+ El [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaz es común a todos los eventos. Este método describe el tipo de evento; Por ejemplo, es el evento sincrónicas o asincrónicas y es un evento de detención.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

@@ -1,39 +1,41 @@
 ---
-title: "Jerarqu&#237;as en Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "jerarquías, IDE de Visual Studio"
-  - "IDE, jerarquías"
+title: "Las jerarquías de Visual Studio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- hierarchies, Visual Studio IDE
+- IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a651267ed279fa5efaf14efb4f1f866794c5cc3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Jerarqu&#237;as en Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El entorno de desarrollo integrado de \(IDE\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muestra un proyecto como una *jerarquía*.  En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas.  *Una jerarquía del proyecto* es un contenedor que contiene los elementos de proyecto, las relaciones de los elementos, y las propiedades asociadas y comandos de elementos.  
+# <a name="hierarchies-in-visual-studio"></a>Jerarquías en Visual Studio
+El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) muestra un proyecto como un *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. A *proyecto jerarquía* es un contenedor que contiene los elementos del proyecto, las relaciones de los elementos y propiedades asociadas de los elementos y los comandos.  
   
- En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se administran las jerarquías mediante la interfaz de la jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>del proyecto.  La interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> redirige comandos que invoque de elementos a la ventana adecuada de la jerarquía en lugar de controlador estándar del comando.  
+ En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], administrar las jerarquías de proyecto mediante la interfaz de la jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz redirige comandos invocar desde elementos de proyecto a la ventana de la jerarquía correcta en lugar del controlador de comandos estándar.  
   
-## Jerarquías de proyecto  
- Cada jerarquía del proyecto contiene elementos que puede ver y editar.  Estos elementos varían en función del tipo de proyecto.  Por ejemplo, un proyecto de base de datos podría contener procedimientos almacenados, las vistas de base de datos, y las tablas de base de datos.  Un proyecto del lenguaje de programación, por otro lado, incluirá probablemente los archivos de código fuente y archivos de recursos para los mapas de bits y cuadros de diálogo.  Las jerarquías pueden anidarse, que proporciona cierta flexibilidad adicional cuando se crea una jerarquía del proyecto.  
+## <a name="project-hierarchies"></a>Jerarquías de proyecto  
+ Cada jerarquía del proyecto contiene elementos que puede ver y editar. Estos elementos varían según el tipo de proyecto. Por ejemplo, un proyecto de base de datos podría contener procedimientos almacenados, vistas de base de datos y tablas de base de datos. Por otro lado, un proyecto de lenguaje de programación, es probable que incluye archivos de código fuente y archivos de recursos de mapas de bits y cuadros de diálogo. Las jerarquías se pueden anidar, que proporciona cierta flexibilidad adicional cuando se crea una jerarquía de proyectos.  
   
- Cuando se crea un nuevo tipo de proyecto, el tipo de proyecto controla todo el conjunto de elementos que se pueden editar en él.  Sin embargo, los proyectos pueden contener elementos para los que no admiten la edición.  Por ejemplo, los proyectos de Visual C\+\+ pueden contener archivos HTML, aunque Visual C\+\+ no proporciona ningún editor personalizado para el tipo de archivo HTML.  
+ Cuando se crea un nuevo tipo de proyecto, el tipo de proyecto controla el conjunto completo de elementos que se puede editar en ella. Sin embargo, los proyectos pueden contener elementos que no tienen compatibilidad de edición. Por ejemplo, los proyectos de Visual C++ pueden contener archivos HTML, aunque Visual C++ no proporciona ningún editor personalizado para el tipo de archivo HTML.  
   
- Las jerarquías administran la persistencia de elementos contenedores.  La implementación de la jerarquía debe controlar cualquier propiedad especial que afecte a la persistencia de los elementos de la jerarquía.  Por ejemplo, si los elementos representan objetos en un repositorio en lugar de archivos, la implementación de la jerarquía debe controlar la persistencia de esos objetos.  El IDE propio dirige la jerarquía para guardar elementos de acuerdo con los datos proporcionados por el usuario, pero este no controla ninguna acción necesaria para guardar esos elementos.  En su lugar, el proyecto esté en el control.  
+ Las jerarquías de administran la persistencia de los elementos que contienen. La implementación de la jerarquía debe controlar las propiedades especiales que afectan a la persistencia de los elementos dentro de la jerarquía. Por ejemplo, si los elementos representan objetos en un repositorio en lugar de archivos, la implementación de la jerarquía debe controlar la persistencia de esos objetos. El IDE propio dirige la jerarquía para guardar los elementos cumplen proporcionados por el usuario, pero el IDE no controla las acciones necesarias para guardar los elementos. En su lugar, el proyecto está en el control.  
   
- Cuando un usuario abre un elemento de un editor, la jerarquía que controla ese elemento está seleccionado y se convierte en la jerarquía activo.  La jerarquía seleccionado determina el conjunto de comandos disponibles para representar en el elemento.  El foco de usuario de seguimiento de esta manera permite a la jerarquía para reflejar el contexto del usuario actual.  
+ Cuando un usuario abre un elemento en un editor, la jerarquía que controla el elemento está seleccionada y se convierte en la jerarquía activa. La jerarquía seleccionada determina el conjunto de comandos disponibles para que actúe en el elemento. Controlar el foco del usuario de esta manera permite la jerarquía reflejar el contexto del usuario actual.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)   
  [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Muestras de VSSDK](../../misc/vssdk-samples.md)
+ [Muestras de VSSDK](http://aka.ms/vs2015sdksamples)

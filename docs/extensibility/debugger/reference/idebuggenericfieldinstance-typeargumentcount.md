@@ -1,36 +1,38 @@
 ---
-title: "IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "TypeArgumentCount"
-  - "IDebugGenericFieldInstance::TypeArgumentCount"
+title: IDebugGenericFieldInstance::TypeArgumentCount | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- TypeArgumentCount
+- IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ddaf2ff3323bb7e4e1da55eb1b8ad8cd8931f9c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericFieldInstance::TypeArgumentCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Devuelve al número de tipo en argumentos de parámetro para esta instancia.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT TypeArgumentCount(  
    ULONG32* pcArgs  
 );  
 ```  
   
-```c#  
+```csharp  
 int TypeArgumentCount(  
    ref uint pcArgs  
 );  
@@ -44,7 +46,7 @@ int TypeArgumentCount(
  Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Por ejemplo, si lista \< int>, este método devuelve 1 y, si lista \< int, float2 > este método devuelve 2. Este método devuelve 0 si no hay ningún argumento de tipo.  
+ Por ejemplo, si lista\<int >, este método devuelve 1 y, si lista\<int, float2 > este método devuelve 2. Este método devuelve 0 si no hay ningún argumento de tipo.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

@@ -1,25 +1,29 @@
 ---
-title: "PROFILER_EVENT_MASK (Enumeraci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "PROFILER_EVENT_MASK (enumeración) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: PROFILER_EVENT_MASK
 apilocation: scrobj.dll
 ms.assetid: c2168408-f4f6-4600-971d-f15b4edf4ca2
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 68547fcb1fd2cd34b18a3d204baefd24d9da936b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# PROFILER_EVENT_MASK (Enumeraci&#243;n)
-Indica los tipos de eventos que se generan perfiles.  
+# <a name="profilereventmask-enumeration"></a>PROFILER_EVENT_MASK (Enumeración)
+Indica los tipos de eventos de los que se deben generar perfiles.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 typedef enum {  
@@ -34,17 +38,17 @@ typedef enum {
 } PROFILER_EVENT_MASK;  
 ```  
   
-## Members  
+## <a name="members"></a>Miembros  
   
 |Miembro|Descripción|  
-|-------------|-----------------|  
-|PROFILER\_EVENT\_MASK\_TRACE\_SCRIPT\_FUNCTION\_CALL|Genera perfiles de las funciones que se definen en script usuario\- escrito y código dinámico.|  
-|PROFILER\_EVENT\_MASK\_TRACE\_NATIVE\_FUNCTION\_CALL|Genera perfiles de las funciones nativas definidas por el motor de script.|  
-|PROFILER\_EVENT\_MASK\_TRACE\_ALL|Generación de perfiles todas las funciones definidas por el usuario y el script del motor, excepto llamadas en Document Object Model \(DOM\).|  
-|PROFILER\_EVENT\_MASK\_TRACE\_DOM\_FUNCTION\_CALL|Genera perfiles de las funciones que llaman en DOM.|  
-|PROFILER\_EVENT\_MASK\_TRACE\_ALL\_WITH\_DOM|Generación de perfiles todas las funciones, como llamadas en DOM.|  
+|------------|-----------------|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Funciones de perfiles que se definen en la secuencia de comandos escritos por el usuario y código dinámico.|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Funciones nativas perfiles definidos por el motor de scripting.|  
+|PROFILER_EVENT_MASK_TRACE_ALL|Los perfiles de todas las funciones del motor de scripting y definido por el usuario, las llamadas en el modelo de objetos de documento (DOM).|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Funciones de perfiles que llaman a en el DOM.|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Perfiles de todas las funciones, incluidas las llamadas en el DOM.|  
   
-## Vea también  
- [Active Script Profiler \(Constantes, enumeraciones y estructuras\)](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+## <a name="see-also"></a>Vea también  
+ [Active Script Profiler constantes, enumeraciones y estructuras](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
  [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

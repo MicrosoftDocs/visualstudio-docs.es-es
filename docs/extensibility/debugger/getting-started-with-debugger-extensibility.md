@@ -1,52 +1,54 @@
 ---
-title: "Introducci&#243;n a la extensibilidad del depurador | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Introducción, SDK de depuración"
-  - "depuración [depuración SDK], introducción"
-  - "SDK de depuración, introducción"
+title: "Introducción a la extensibilidad del depurador | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- getting started, Debugging SDK
+- debugging [Debugging SDK], getting started
+- Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Introducci&#243;n a la extensibilidad del depurador
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] proporciona información que debe tener que crear y personalizar los componentes del depurador utilizados a los programas de depuración en el entorno de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="getting-started-with-debugger-extensibility"></a>Introducción a la extensibilidad del depurador
+El [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] proporciona la información que necesita para crear y personalizar los componentes del depurador permite depurar programas desde la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno.  
   
- la depuración de[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ha agregado mejoras derivadas de prueba de utilidad completa realizada en los depuradores anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Puede utilizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de depuración para recorrer una aplicación múltiples, o puede implementar la edición simultánea de variables mientras depura aplicaciones y soluciones multilenguaje.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuración ha agregado mejoras que se deriva de la facilidad de uso extenso pruebas realizadas en anteriores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Puede usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la depuración en el paso a través de una aplicación de varios idioma, o puede implementar en marcha de edición de variables durante la depuración de aplicaciones y soluciones de varios idiomas.  
   
- la depuración de[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está fuera del proceso ejecutado con el programa que se depura y por consiguiente menos intruso en el espacio del proceso de la aplicación.  Por tanto, es más fácil escribir componentes que interactúan con el depurador sin afectar al programa de depuración.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuración es ejecutado fuera de proceso con el programa que se está depurando y, por tanto, es menos intrusiva en el espacio de proceso de la aplicación. Por lo tanto, es más fácil escribir componentes que interactúan con el depurador sin que afecte a su programa de depuración.  
   
- El mejor uso [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], debe estar familiarizado con el siguiente:  
+ Utilizar mejor el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], debe estar familiarizado con lo siguiente:  
   
--   el entorno de desarrollo integrado de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(IDE\)  
+-   El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE)  
   
--   el lenguaje de programación de C\+\+  
+-   El lenguaje de programación de C++  
   
--   ATL COM  
+-   COM DE ATL  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Guía básica para ampliar el depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
- Describe el proceso de implementar la depuración en el producto, dependiendo del compilador y de su resultado.  
+ Se describe el proceso de implementación de depuración en su producto, según el compilador y sus resultados.  
   
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)  
- Proporciona información general sobre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de depuración componentes, que incluyen el motor de depuración \(DE\), el evaluador de \(EE\) expresiones, y el controlador de símbolos \(SH\).  
+ Proporciona información general sobre la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurar componentes, que incluyen el motor de depuración (Alemania), el evaluador de expresiones (EE) y el controlador de símbolos (SH).  
   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)  
- Describe los conceptos arquitectónicos de depuración principal.  
+ Describe los principales conceptos de arquitectura de depuración.  
   
  [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)  
- Explica cómo el motor de depuración \(DE\) funciona simultáneamente en el código, de la documentación, y de contextos de la evaluación de la expresión.  Describe, para cada uno de los tres contextos, location, de posición o de evaluación pertinentes al.  
+ Explica cómo el motor de depuración (Alemania) funciona simultáneamente dentro de código, documentación y los contextos de evaluación de expresión. Describe, para cada uno de los tres contextos, la ubicación, posición o evaluación pertinente a él.  
   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)  
- Contiene vínculos a las diferentes tareas de depuración, como iniciar un programa y evaluación de expresiones.
+ Contiene vínculos a varias tareas de depuración, como iniciar un programa y la evaluación de expresiones.

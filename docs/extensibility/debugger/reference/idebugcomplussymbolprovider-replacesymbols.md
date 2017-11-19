@@ -1,62 +1,64 @@
 ---
-title: "IDebugComPlusSymbolProvider::ReplaceSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ReplaceSymbols"
-  - "IDebugComPlusSymbolProvider::ReplaceSymbols"
+title: IDebugComPlusSymbolProvider::ReplaceSymbols | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ReplaceSymbols
+- IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f4afd217521e19468db984d085fc55b568e891ce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::ReplaceSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Reemplaza los símbolos actuales de depuración con los de la secuencia de datos especificada.  
+# <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
+Reemplaza los símbolos de depuración actual con los de la secuencia de datos especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT ReplaceSymbols(  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pStream  
+   ULONG32  ulAppDomainID,  
+   GUID     guidModule,  
+   IStream* pStream  
 );  
 ```  
   
-```c#  
+```csharp  
 int ReplaceSymbols(  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pStream  
+   uint    ulAppDomainID,  
+   Guid    guidModule,  
+   IStream pStream  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ulAppDomainID`  
- \[in\]  Identificador del dominio de aplicación.  
+ [in] Identificador del dominio de aplicación.  
   
  `guidModule`  
- \[in\]  Identificador único del módulo.  
+ [in] Identificador único del módulo.  
   
  `pStream`  
- \[in\]  Flujo de datos que contiene los nuevos símbolos.  
+ [in] Flujo de datos que contiene los símbolos nuevo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Ejemplo  
- El ejemplo siguiente se muestra cómo implementar este método para un objeto **de CDebugSymbolProvider** que expone la interfaz de [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::ReplaceSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -79,5 +81,5 @@ Error:
 }  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

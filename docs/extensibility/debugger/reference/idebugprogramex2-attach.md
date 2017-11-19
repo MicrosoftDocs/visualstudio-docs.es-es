@@ -1,65 +1,65 @@
 ---
-title: "IDebugProgramEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgramEx2::Attach"
+title: IDebugProgramEx2::Attach | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEx2::Attach
+helpviewer_keywords: IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b8d025d4e788ac63ab0c75429e08c48215b9c902
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Adjuntar una sesión a un programa.  
+# <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
+Asociar una sesión de un programa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback,  
-   DWORD                 dwReason,  
-   IDebugSession2*       pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason,  
+   IDebugSession2*       pSession  
 );  
 ```  
   
 ```  
 [C#]  
-int Attach(   
-   IDebugEventCallback2 pCallback,  
-   uint                 dwReason,  
-   IDebugSession2       pSession  
+int Attach(   
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason,  
+   IDebugSession2       pSession  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pCallback`  
- \[in\]  Un objeto de [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que representa la función de devolución de llamada que el motor asociado de depuración envía eventos en.  
+ [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que representa la función de devolución de llamada que el motor de depuración adjunto envía eventos a.  
   
  `dwReason`  
- \[in\]  Un valor de enumeración de [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md) que describe el motivo de la operación de asociar.  
+ [in] Un valor de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeración que describe el motivo de la operación de adjuntar.  
   
  `pSession`  
- \[in\]  Un valor que identifica la sesión que se está asociando el programa.  
+ [in] Un valor que identifica de forma única la sesión que se está asociando al programa.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; si no devuelve un código de error.  Este método debe devolver `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si el programa ya está asociado.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Este método debe devolver `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si el programa ya está conectado.  
   
-## Comentarios  
- El puerto que contiene el programa puede utilizar el valor en `pSession` para determinar la sesión sólo intenta asociar el programa.  Por ejemplo, si un puerto solo permite a una sesión de depuración adjuntar a un proceso al mismo tiempo, el puerto puede determinar si se asocia a la misma sesión ya a otros programas en el proceso.  
+## <a name="remarks"></a>Comentarios  
+ El puerto que contiene el programa puede usar el valor de `pSession` para determinar qué sesión está intentando conectarse al programa. Por ejemplo, si un puerto permite la sesión de solo depuración para asociar a un proceso a la vez, el puerto puede determinar si la misma sesión ya está conectada a otros programas en el proceso.  
   
 > [!NOTE]
->  La interfaz última en `pSession` debe tratarlo solo como cookie, un valor que identifica de forma única el administrador de depuración de sesión asociado a este programa; ninguno de los métodos en la interfaz proporcionada funcionan.  
+>  La interfaz se pasa en `pSession` debe tratarse como una cookie, un valor que identifica de forma única el Administrador de sesión de depuración asociar a este programa; ninguno de los métodos de la interfaz proporcionada es funcional.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

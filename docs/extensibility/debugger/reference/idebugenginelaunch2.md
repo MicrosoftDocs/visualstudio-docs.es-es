@@ -1,56 +1,56 @@
 ---
-title: "IDebugEngineLaunch2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineLaunch2"
-helpviewer_keywords: 
-  - "Interfaz IDebugEngineLaunch2"
+title: IDebugEngineLaunch2 | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineLaunch2
+helpviewer_keywords: IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 989bea1fc3398be376c7c2d5c41ce390e59c228f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineLaunch2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Utiliza un motor de depuración \(DE\) para iniciar y finalizar programas.  
+# <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
+Usado por un motor de depuración (Alemania) para iniciar y finalizar programas.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugEngineLaunch2 : IDebugEngine2  
+IDebugEngineLaunch2 : IDebugEngine2  
 ```  
   
-## Notas para los implementadores  
- Esta interfaz se implementa mediante una personalizada OF si tiene requisitos especiales para iniciar un proceso que no se pueda controlar completamente mediante un puerto personalizado.  Suele ser el caso cuando el OF es parte de un intérprete y el proceso que se está depurando es un script: el intérprete necesita ser iniciará primero, y el script se carga y iniciado.  Un puerto puede iniciar el intérprete, pero el script puede requerir tratamiento especial \(que es donde el OF tiene un rol\).  Se implementa esta interfaz únicamente si hay requisitos únicos para iniciar un programa que un puerto personalizado no pueda controlar.  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Esta interfaz se implementa mediante un Alemania personalizado si tiene requisitos especiales para iniciar un proceso que no se pueden administrar completamente con un puerto personalizado. Esto suele ser el caso cuando la DE forma parte de un intérprete y el proceso que se está depurando un script: el intérprete debe iniciarse en primer lugar y, a continuación, se carga y se inicia la secuencia de comandos. Un puerto puede iniciar el intérprete, pero la secuencia de comandos puede requerir un tratamiento especial (que es donde el Alemania tiene un rol). Esta interfaz se implementa solo si hay requisitos únicos para iniciar un programa que no puede controlar un puerto personalizado.  
   
-## Notas para los llamadores  
- Esta interfaz es denominada por el administrador de depuración de la sesión \(SDM\) si el SDM puede obtener esta interfaz de la interfaz de [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) \(mediante QueryInterface\).  Si esta interfaz puede obtenerse, el SDM sabe que el OF tiene requisitos especiales y llama a esta interfaz para iniciar el programa en lugar de iniciar el puerto él.  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz se invoca mediante el Administrador de sesión de depuración (SDM) si el SDM puede obtener esta interfaz desde el [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (mediante QueryInterface) de la interfaz. Si esta interfaz puede obtenerse el SDM sabe que la DE tiene requisitos especiales y llama a esta interfaz para iniciar el programa en lugar de tener el puerto de iniciarla.  
   
-## métodos en el orden de Vtable  
- La tabla siguiente se muestran los métodos de `IDebugEngineLaunch2`.  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugEngineLaunch2`.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia un proceso mediante el OF.|  
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia un proceso por medio de la DE.|  
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Reanuda la ejecución de procesos.|  
-|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Determina si el proceso puede ser finalizado.|  
+|[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Determina si se puede finalizar un proceso.|  
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Termina un proceso.|  
   
-## Requisitos  
- encabezado: Msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: Msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

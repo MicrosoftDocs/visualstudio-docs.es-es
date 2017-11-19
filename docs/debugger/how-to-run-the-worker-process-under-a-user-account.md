@@ -1,36 +1,39 @@
 ---
-title: "C&#243;mo: Ejecutar el proceso de trabajo en una cuenta de usuario | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "cuentas de usuario, aspnet_wp.exe"
-  - "Depurar aplicaciones Web ASP.NET"
-  - "herramientas, aspnet_wp.exe"
-  - "ASP.NET, herramientas"
-  - "aspnet_wp.exe"
+title: "Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- user accounts, aspnet_wp.exe
+- ASP.NET, debugging Web applications
+- tools, aspnet_wp.exe
+- ASP.NET, tools
+- aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Ejecutar el proceso de trabajo en una cuenta de usuario
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.  
+
+ > [!IMPORTANT]
+ > A partir de Windows Server 2008 R2, se recomienda el uso de la [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) como la identidad para cada grupo de aplicaciones.
   
 ## <a name="procedure"></a>Procedimiento  
   
@@ -38,7 +41,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 1.  Abra el archivo machine.config, ubicado en el equipo en la carpeta CONFIG, en la ruta de acceso en la que instaló el motor en tiempo de ejecución.  
   
-2.  Buscar el &lt;processModel&gt; sección y cambie los atributos user y password por el nombre y la contraseña de la cuenta de usuario que desea que se ejecute aspnet_wp.exe.  
+2.  Buscar el &lt;processModel&gt; sección y cambie los atributos user y password por el nombre y la contraseña de la cuenta de usuario que desee que se ejecute aspnet_wp.exe.  
   
 3.  Guarde el archivo machine.config.  
   
@@ -66,7 +69,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
     net start w3svc  
     ```  
   
-6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic con el botón secundario en la carpeta de archivos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] temporales y elija **Propiedades** en el menú contextual.  
+6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic en la contraseña [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] carpeta de archivos y elija **propiedades** en el menú contextual.  
   
 7.  En el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** , haga clic en la ficha **Seguridad** .  
   
@@ -85,5 +88,6 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 13. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** .  
   
 ## <a name="see-also"></a>Vea también  
-[Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  
+[Depurar aplicaciones ASP.](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  
   

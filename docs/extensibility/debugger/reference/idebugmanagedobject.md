@@ -1,44 +1,44 @@
 ---
-title: "IDebugManagedObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugManagedObject"
-helpviewer_keywords: 
-  - "Interfaz IDebugManagedObject"
+title: IDebugManagedObject | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugManagedObject
+helpviewer_keywords: IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d876fd9b536a0d16ae0aef4daed7f4c92c62f250
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugManagedObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está obsoleta. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresiones administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Esta interfaz permite que el evaluador de expresiones \(EE\) para llamar a métodos o propiedades en instancias de clase de valor \(por ejemplo, `System.Decimal`\) y establecer su valor sin llamar a [Evaluar](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) en el programa que se está depurando.  
+ Esta interfaz permite que el evaluador de expresiones (EE) para llamar a métodos o propiedades en las instancias de clase de valor (por ejemplo, `System.Decimal`) y establecer su valor sin llamar a [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) en el programa que se está depurando.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-IDebugManagedObject : IDebugObject  
+IDebugManagedObject : IDebugObject  
 ```  
   
-## Notas para los implementadores  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
  Un evaluador de expresiones implementa esta interfaz para representar un objeto de código administrado, como una variable.  
   
-## Notas para los llamadores  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
  Para obtener esta interfaz, llame a [GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md) en un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa una instancia de una clase de valor.  
   
-## Métodos en orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  Además de los métodos heredados de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), el `IDebugManagedObject` interfaz expone los métodos siguientes.  
   
 |Método|Descripción|  
@@ -46,16 +46,16 @@ IDebugManagedObject : IDebugObject
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Devuelve una interfaz que representa el objeto de código administrado y de que cualquier código administrado correspondiente se puede obtener la interfaz.|  
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Establece el valor de este objeto en el valor de un objeto de código administrado especificado.|  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Un evaluador de expresiones utiliza esta interfaz para almacenar un objeto de código administrado en un árbol de análisis.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Encabezado: ee.h  
   
- Espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Interfaces de evaluación de expresión](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [Evaluar](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

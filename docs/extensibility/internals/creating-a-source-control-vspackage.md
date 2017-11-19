@@ -1,45 +1,47 @@
 ---
-title: "Crear un VSPackage del Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "control de código fuente [Visual Studio SDK], crear paquetes de control de código fuente"
-  - "paquetes de control de código fuente"
+title: "Crear un VSPackage de Control de código fuente | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source control [Visual Studio SDK], creating source control packages
+- source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-caps.latest.revision: 23
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4c3d414f1fcf6a7f4cd4155eb04e3696fb39740a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Crear un VSPackage del Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Esta documentación incluye vínculos a información general de la arquitectura de un paquete de control de código fuente integrado con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], API definido por las interfaces que se van a implementar y los servicios que se consumirán, y un ejemplo que muestra una implementación sencilla de paquete de control de código fuente.  
+# <a name="creating-a-source-control-vspackage"></a>Crear un VSPackage de Control de código fuente
+Esta documentación incluyen vínculos a información general de arquitectura de un paquete de control de código fuente integrado con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la API que se define mediante las interfaces que implementará y los servicios que se va a consumir y un ejemplo que muestra un origen simple controlar la implementación del paquete.  
   
- Con un control de código fuente VSPackage, puede crear una ruta conocen la integración del control de código fuente integrado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  Permite al paquete para omitir la interfaz de usuario predeterminada del control de origen hospedada por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], para responder a las solicitudes de control de código fuente del sistema del proyecto, e interactuar con los componentes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como **Explorador de soluciones**.  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] autoriza a socios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con un mecanismo para crear un Paquete que pueda integrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante un modelo de servicio.  
+ Con un control de código fuente VSPackage, puede crear una ruta de acceso de la integración profunda para el control de código fuente para integrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Hace que el paquete se omitirá el control de código fuente predeterminada IU hospedado por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], responder a las solicitudes de control de código fuente desde el sistema del proyecto e interactuar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componentes como **el Explorador de soluciones**. El [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] atribuye [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se asocia con un mecanismo para crear un VSPackage que se puede integrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante un modelo de servicio.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Introducción](../../extensibility/internals/getting-started-with-source-control-vspackages.md)  
- Describe el paquete de control de código fuente, que es una alternativa más avanzado al complemento de control de código fuente para implementar características de control de código fuente en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Describe el paquete de control de código fuente, que es una alternativa más avanzada para el control de código fuente complemento para implementar características de control de código fuente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Arquitectura](../../extensibility/internals/source-control-vspackage-architecture.md)  
- Muestra un diagrama y explica los componentes de un paquete de control de código fuente.  
+ Presenta un diagrama y se explican los componentes de un paquete de control de código fuente.  
   
  [Características](../../extensibility/internals/source-control-vspackage-features.md)  
  Describe las distintas características de un paquete de control de código fuente.  
   
  [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)  
- Describe la estructura del Paquete que un paquete de control de código fuente debe implementar para la integración profunda.  
+ Describe la estructura de VSPackage debe implementar un paquete de control de código fuente para la integración profunda.  
   
-## Secciones relacionadas  
- [Creación de un Control de origen de complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Describe cómo crear un complemento de control de código fuente esa funcionalidad de control de código fuente de las fuentes en la interfaz de usuario del control de código fuente de \(UI\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Describe cómo crear un complemento de control de código fuente que proporciona funcionalidad de control de código fuente de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario de control de código fuente (UI).  
   
  [Control de código fuente](../../extensibility/internals/source-control.md)  
- Describe las opciones para implementar el control de código fuente como característica integrada de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Describe las opciones para implementar el control de código fuente como una característica integrada de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

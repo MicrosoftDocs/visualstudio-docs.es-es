@@ -1,41 +1,42 @@
 ---
-title: "Procesos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depurar [SDK de depuración], procesa"
+title: Procesos | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f295dd93580caee4b6288febf7e83c09736b6080
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Procesos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En términos de arquitectura del depurador, **un proceso**:  
+# <a name="processes"></a>Procesos
+En cuanto a la arquitectura del depurador, una **proceso**:  
   
--   Es un contenedor para un conjunto de software.  Está estrechamente análogo a un proceso de Windows, que es un contenedor para un grupo de subprocesos.  
+-   Es un contenedor para un conjunto de programas. Es prácticamente análoga a un proceso de Windows, que es un contenedor para un conjunto de subprocesos.  
   
--   puede identificarse por nombre, el identificador, o el identificador físico.  
+-   Puede identificarse por nombre, identificador o identificador físico.  
   
--   Puede mostrar todos los programas en ejecución \(y sus subprocesos\).  
+-   Puede enumerar todos los programas en ejecución (y sus subprocesos).  
   
--   Puede describirse, el puerto que se ejecuta en, y el equipo que lo contiene.  
+-   Puede describir sí solo, el puerto en que se está ejecutando y el equipo que lo contiene.  
   
--   Puede crear uno o más programas, finalizar los programas cualquiera de los que crea, o hacer un programa deje.  
+-   Puede crear uno o más programas, terminar cualquiera de los programas crea o que un programa se detenga.  
   
--   Se representa mediante una interfaz de [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) , que se crea cuando se inicia el proceso.  Un proceso es iniciadas por el administrador o [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)\(SDM\) de depuración de la sesión.  
+-   Se representa mediante un [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) interfaz, que se crea cuando se inicia el proceso. Se inicia un proceso por cualquier sesión el Administrador de depuración (SDM) o [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- El paquete de depuración se puede adjuntar un motor de depuración \(DE\) a un proceso llamando a [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md).  Esto significa que el OF adjunta a todos los programas posibles que se ejecutan en el proceso que puede controlar.  Por ejemplo, si Common Language Runtime OF se asocia a un proceso, asocia sólo a los programas que se están ejecutando código administrado.  
+ El paquete de depuración puede asociar un motor de depuración (Alemania) a un proceso mediante una llamada a [adjuntar](../../extensibility/debugger/reference/idebugprocess2-attach.md). Esto significa que la DE se asocia a todos los programas posibles que se ejecuta en el proceso que puede controlar. Por ejemplo, si common language runtime Alemania se asocia a un proceso, se adjunta solo a los programas que utilizan código administrado.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Programas](../../extensibility/debugger/programs.md)   
  [Subprocesos](../../extensibility/debugger/threads.md)   
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)   
@@ -43,4 +44,4 @@ En términos de arquitectura del depurador, **un proceso**:
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+ [Asociar](../../extensibility/debugger/reference/idebugprocess2-attach.md)

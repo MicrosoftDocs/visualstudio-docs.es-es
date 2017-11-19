@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetICorDebugValue"
-helpviewer_keywords: 
-  - "IDebugObject2::GetICorDebugValue (método)"
+title: IDebugObject2::GetICorDebugValue | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::GetICorDebugValue
+helpviewer_keywords: IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6b1d1c05b6156cb38222eeedb287de4b3fc52b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::GetICorDebugValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 Obtiene un objeto de código administrado que representa el valor asociado a este objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
-int GetICorDebugValue(  
-   out object ppUnk  
+```csharp  
+int GetICorDebugValue(  
+   out object ppUnk  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppUnk`  
- \[out\]  interfaz de `IUnknown` que representa este alias.  Esta interfaz se puede consultar la interfaz de `ICorDebugValue` .  
+ [out] `IUnknown` interfaz que representa este alias. Esta interfaz se puede consultar para el `ICorDebugValue` interfaz.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El objeto de `ICorDebugValue` es una interfaz de Common Language Runtime que representa un valor.  
+## <a name="remarks"></a>Comentarios  
+ La `ICorDebugValue` objeto es una interfaz de Common Language Runtime que representa un valor.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

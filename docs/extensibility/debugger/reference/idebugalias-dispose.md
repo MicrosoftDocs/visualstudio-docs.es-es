@@ -1,46 +1,46 @@
 ---
-title: "IDebugAlias::Dispose | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAlias::Dispose"
-helpviewer_keywords: 
-  - "IDebugAlias::Dispose (método)"
+title: IDebugAlias::Dispose | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugAlias::Dispose
+helpviewer_keywords: IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d10b1e45f9970b2bf331b590f709ef0d8cd15bcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAlias::Dispose
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Marca este alias para la eliminación.  
+# <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
+Marca este alias para su eliminación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT Dispose();  
+HRESULT Dispose();  
 ```  
   
-```c#  
-int Dispose();  
+```csharp  
+int Dispose();  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  Ninguno.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Una vez que se llama a este método, alias deja de estar disponible.  
+## <a name="remarks"></a>Comentarios  
+ Una vez que se llama a este método, el alias ya no está disponible.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -1,78 +1,80 @@
 ---
-title: "Componentes del depurador | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "depuración [Visual Studio], componentes"
-  - "componentes [Visual Studio SDK], depuración"
-  - "[SDK de depuración], componentes de depuración"
+title: Componentes del depurador | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Visual Studio], components
+- components [Visual Studio SDK], debugging
+- debugging [Debugging SDK], components
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
-caps.latest.revision: 30
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Componentes del depurador
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Implementan como VSPackage y administra el depurador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a la sesión completa de depuración.  La sesión de depuración está formado por los siguientes elementos:  
+# <a name="debugger-components"></a>Componentes del depurador
+El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador se implementa como un paquete VSPackage y administra la sesión de depuración completa. La sesión de depuración consta de los siguientes elementos:  
   
--   **Paquete de depuración:** el depurador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona la misma interfaz de usuario no importa qué se está depurando.  
+-   **Paquete de depuración:** el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador proporciona la misma interfaz de usuario con independencia de lo que se está depurando.  
   
--   **Administrador \(SDM\) de depuración de sesión:** Proporciona una interfaz de programación coherente al depurador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para la administración de varios motores de depuración.  Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+-   **Administrador de sesión de depuración (SDM):** proporciona una interfaz de programación coherente para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador para la administración de una variedad de motores de depuración. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   **Administrador \(PDM\) de depuración:** Administra, para todas las instancias de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], una lista de todos los programas que pueden ser o que se están depurando.  Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+-   **Administrador de depuración de procesos (PDM):** administra, para todas las instancias en ejecución de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], una lista de todos los programas que pueden o que se están depurando. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   **Motor \(DE\) de depuración:** Es responsable de supervisar un programa que se está depurando, comunicándose al estado del programa en ejecución al SDM y el PDM, y interactuando con el evaluador de expresiones y el proveedor del token para proporcionar el análisis en tiempo real del estado de la memoria y variables de un programa.  Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(para los lenguajes que admite\) y los proveedores de terceros que deseen admitir su propio runtime.  
+-   **Depurar motor (Alemania):** es responsable de supervisar un programa que se está depurando, comunicando el estado del programa en ejecución para el SDM y PDM e interactuar con el evaluador de expresiones y el proveedor de símbolos para proporcionar análisis en tiempo real de la estado de memoria y las variables de un programa. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que quieran para admitir su propio tiempo de ejecución.  
   
--   **Evaluador \(EE\) de expresiones:** Proporciona compatibilidad para las variables y expresiones dinámicamente de evaluación proporcionadas por el usuario cuando un programa se ha detenido en un punto determinado.  Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(para los lenguajes que admite\) y los proveedores de terceros que desean para admitir sus propios lenguajes.  
+-   **Evaluador de expresiones (EE):** proporciona compatibilidad para dinámicamente evaluar variables y expresiones suministradas por el usuario cuando un programa se ha detenido en un momento determinado. Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para los idiomas que admite) y los proveedores de terceros que quieran para admitir sus propios lenguajes.  
   
--   **Proveedor \(SP\) de token:** También denominado un controlador de símbolos, asigna los símbolos de depuración de un programa a una instancia en ejecución del programa para poder proporcionar información significativa \(como la depuración de origen\-código\-nivel y la evaluación de la expresión\).  Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \(para los símbolos de Common Language Runtime \[CLR\] y el formato de archivo de símbolos de la base de datos de programa \(PDB \[\]\) y por los proveedores de terceros que tienen su propio método propietario de almacenar la información de depuración.  
+-   **Proveedor de símbolos (SP):** también se denomina un controlador de símbolos, asigna los símbolos de depuración de un programa a una instancia en ejecución del programa para que se puede proporcionar información significativa (por ejemplo, la evaluación de expresión y depuración de nivel de código fuente). Se implementa mediante [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (para Common Language Runtime [CLR] símbolos y la base de datos de programa [PDB] de símbolos de formato de archivo) y por los proveedores de terceros que tienen su propio método propietario de almacenar información de depuración.  
   
  El siguiente diagrama muestra la relación entre estos elementos del depurador de Visual Studio.  
   
- ![Información general sobre componentes de depuración](~/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+ ![Información general sobre componentes de depuración](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
-## En esta sección  
- [Depurar paquete](../../extensibility/debugger/debug-package.md)  
- Describe el paquete de depuración, que se ejecuta en el shell de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y administra toda la interfaz de usuario.  
+## <a name="in-this-section"></a>En esta sección  
+ [Depuración de paquete](../../extensibility/debugger/debug-package.md)  
+ Describe el paquete de depuración, que se ejecuta en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell y se encarga de toda la interfaz de usuario.  
   
  [Administrador de depuración del proceso](../../extensibility/debugger/process-debug-manager.md)  
- Proporciona información general sobre las características de PDM, que es el administrador de los procesos que pueden ser depurados.  
+ Proporciona información general de las características de la PDM, que es el Administrador de los procesos que se pueden depurar.  
   
  [Administrador de depuración de sesión](../../extensibility/debugger/session-debug-manager.md)  
- Define el SDM, que proporciona una vista unificada la sesión de depuración al IDE.  El SDM administra el OF.  
+ Define el SDM, que proporciona una vista unificada de la sesión de depuración para el IDE. El SDM administra la Alemania.  
   
  [Motor de depuración](../../extensibility/debugger/debug-engine.md)  
- Documenta los servicios de depuración que el OF proporciona.  
+ Documenta los servicios de depuración que proporciona el Alemania.  
   
  [Modos de funcionamiento](../../extensibility/debugger/operational-modes.md)  
- Proporciona información general sobre los tres modos en los que el IDE puede trabajar: modo de diseño, modo de ejecución, y el modo de interrupción.  Los mecanismos de transición también se analizan.  
+ Proporciona información general de los tres modos en los que puede operar el IDE: modo de diseño, modo de ejecución y el modo de interrupción. También se describen los mecanismos de transición.  
   
  [Evaluador de expresiones](../../extensibility/debugger/expression-evaluator.md)  
- Explica el propósito de aa en tiempo de ejecución.  
+ Explica el propósito de lo EE en tiempo de ejecución.  
   
  [Proveedor de símbolos](../../extensibility/debugger/symbol-provider.md)  
- Explica cómo, en la implementación, el proveedor del token evalúa variables y expresiones.  
+ Describe cómo hacerlo, en la implementación, el proveedor de símbolos se evalúa como variables y expresiones.  
   
- [Visualizador de tipo y el visor personalizado](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
- Explica qué son un visualizador de tipos y un visor personalizado de y el rol que desempeña el evaluador de expresiones en admitir ambos.  
+ [Visualizador de tipo y visor personalizado](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
+ Explica qué son un visualizador de tipo y un visor personalizado y qué función que desempeña el evaluador de expresiones de soporte.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Conceptos del depurador](../../extensibility/debugger/debugger-concepts.md)  
- Describe los conceptos arquitectónicos de depuración principal.  
+ Describe los principales conceptos de arquitectura de depuración.  
   
  [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)  
- Explica cómo el OF funciona simultáneamente en el código, de la documentación, y de contextos de la evaluación de la expresión.  Describe, para cada uno de los tres contextos, location, de la posición, o de evaluación relevante para el.  
+ Explica el funcionamiento de la DE forma simultánea dentro de código, documentación y los contextos de evaluación de expresión. Describe, para cada uno de los tres contextos, la ubicación, posición o evaluación pertinente a él.  
   
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)  
- Contiene vínculos a las diferentes tareas de depuración, como iniciar un programa y evaluación de expresiones.  
+ Contiene vínculos a varias tareas de depuración, como iniciar un programa y la evaluación de expresiones.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

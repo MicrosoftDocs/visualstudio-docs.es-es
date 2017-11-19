@@ -1,74 +1,74 @@
 ---
-title: "IDebugDisassemblyStream2::Read | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::Read"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::Read"
+title: IDebugDisassemblyStream2::Read | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::Read
+helpviewer_keywords: IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0c75a832c2b9a59a681d6a80d087b69212a5361d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::Read
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Lee instrucciones a partir de la posición actual en la secuencia de desensamblado.  
+# <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
+Lee las instrucciones desde la posición actual en la secuencia de desensamblado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Read(   
-   DWORD                     dwInstructions,  
-   DISASSEMBLY_STREAM_FIELDS dwFields,  
-   DWORD*                    pdwInstructionsRead,  
-   DisassemblyData*          prgDisassembly  
+```cpp  
+HRESULT Read(   
+   DWORD                     dwInstructions,  
+   DISASSEMBLY_STREAM_FIELDS dwFields,  
+   DWORD*                    pdwInstructionsRead,  
+   DisassemblyData*          prgDisassembly  
 );  
 ```  
   
-```c#  
-int Read(   
-   uint                           dwInstructions,  
-   enum_DISASSEMBLY_STREAM_FIELDS dwFields,  
-   out uint                       pdwInstructionsRead,  
-   DisassemblyData[]              prgDisassembly  
+```csharp  
+int Read(   
+   uint                           dwInstructions,  
+   enum_DISASSEMBLY_STREAM_FIELDS dwFields,  
+   out uint                       pdwInstructionsRead,  
+   DisassemblyData[]              prgDisassembly  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwInstructions`  
- \[in\]  el número de instrucciones de desensamblar.  Este valor también es la longitud máxima de la matriz de `prgDisassembly` .  
+ [in] El número de instrucciones para desensamblar. Este valor también es la longitud máxima de la `prgDisassembly` matriz.  
   
  `dwFields`  
- \[in\]  Una combinación de marcadores de enumeración de [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) que indican qué campos de `prgDisassembly` se deben completar.  
+ [in] Una combinación de indicadores de la [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) enumeración que indican qué campos de `prgDisassembly` son debe rellenarse.  
   
  `pdwInstructionsRead`  
- \[out\]  devuelve el número de instrucciones desensambladas realmente.  
+ [out] Devuelve el número de instrucciones realmente el desensamblado.  
   
  `prgDisassembly`  
- \[out\]  Una matriz de estructuras de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) se completa con el código desensamblado, una estructura por la instrucción desensamblada.  La longitud de esta matriz es dictada por el parámetro de `dwInstructions` .  
+ [out] Una matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructuras que se rellena con el código desensamblado, una estructura según las instrucciones de desensamblado. La longitud de esta matriz viene determinada por la `dwInstructions` parámetro.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El número máximo de instrucciones que están disponibles en el ámbito actual se puede obtener llamando al método de [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .  
+## <a name="remarks"></a>Comentarios  
+ El número máximo de instrucciones que están disponibles en el ámbito actual se puede obtener mediante una llamada a la [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) método.  
   
- La posición actual en la instrucción siguiente se lee de puede cambiar llamando al método de [Buscar](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .  
+ La posición actual en la siguiente instrucción se lee desde el que se puede cambiar mediante una llamada a la [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.  
   
- El indicador de `DSF_OPERANDS_SYMBOLS` se puede agregar al marcador de `DSF_OPERANDS` en el parámetro de `dwFields` para indicar que los nombres de símbolo deben utilizar el desensamblar instrucciones.  
+ El `DSF_OPERANDS_SYMBOLS` marca puede agregarse a la `DSF_OPERANDS` se marcan en el `dwFields` parámetro para indicar que se deben usar nombres de símbolos al desensamblar instrucciones.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
+ [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
  [Buscar](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

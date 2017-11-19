@@ -1,27 +1,30 @@
 ---
-title: "ICanHandleException::CanHandleException | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: ICanHandleException::CanHandleException | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ICanHandleException.CanHandleException
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "ICanHandleException::CanHandleException"
+helpviewer_keywords: ICanHandleException::CanHandleException
 ms.assetid: 0fc703bf-9518-487e-af20-00e073b640f1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# ICanHandleException::CanHandleException
-Determina si el llamador del motor de script puede controlar una excepción especificada.  
+# <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
+Determina si el autor de la llamada del motor de secuencia de comandos puede controlar una excepción especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT CanHandleException(  
@@ -30,24 +33,24 @@ HRESULT CanHandleException(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pExcepInfo`  
- \[in\] puntero a una estructura de `EXCEPINFO` que contiene la información que se muestra si no se encuentra ningún controlador de excepciones.  
+ [in] Puntero a un `EXCEPINFO` estructura que contiene la información que se notificará si no se encuentra ningún controlador de excepción.  
   
  `pvar`  
- \[in\] el valor de A asociado a la excepción, como el valor producido por un fragmento de `throw` .  Este parámetro puede ser `NULL`.  
+ [in] Un valor asociado a la excepción, como el valor producida por un `throw` instrucción. Este parámetro puede ser `NULL`.  
   
-## Valor devuelto  
- El método devuelve un objeto `HRESULT`.  Los valores posibles son, pero no se limitan a, los de la tabla siguiente.  
+## <a name="return-value"></a>Valor devuelto  
+ El método devuelve un objeto `HRESULT`. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |`S_OK`|El llamador puede controlar la excepción|  
 |`E_FAIL`|El llamador no puede controlar la excepción.|  
   
-## Comentarios  
- Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, produce una excepción, el motor de scripts un llamador en la cadena del llamador de script que admite la interfaz de `ICanHandleException` e indica que puede controlar la excepción.  Si ningún llamador puede controlar la excepción, el alto del motor de script.  
+## <a name="remarks"></a>Comentarios  
+ Si una llamada a `IDispatchEx::InvokeEx`, o un método similar, produce una excepción, el motor de script se comprueba para un llamador de la cadena de llamada de la secuencia de comandos que admite el `ICanHandleException` interfaz e indica que puede controlar la excepción. Si ningún llamador pueda controlar la excepción, detiene el motor de scripts.  
   
-## Vea también  
- [ICanHandleException \(Interfaz\)](../../winscript/reference/icanhandleexception-interface.md)   
+## <a name="see-also"></a>Vea también  
+ [ICanHandleException (interfaz)](../../winscript/reference/icanhandleexception-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

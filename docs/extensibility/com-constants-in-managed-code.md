@@ -1,32 +1,33 @@
 ---
-title: "Constantes de COM en c&#243;digo administrado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSPackages administrado, COM constantes y macros"
+title: "Constantes de COM en código administrado | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1cd6e70cc58f27dd0beb08d615abcdb52884f3f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Constantes de COM en c&#243;digo administrado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El marco de paquete administrados \(MPF\) hace algunas constantes COM estándares disponibles para código administrado. Estas constantes se enumeran a continuación para su referencia.  
+# <a name="com-constants-in-managed-code"></a>Constantes de COM en código administrado
+Managed Package Framework (MPF) hace que algunas constantes COM estándares disponible para código administrado. Estas constantes se enumeran a continuación para su referencia.  
   
-## Valores HRESULT booleano  
+## <a name="boolean-hresult-values"></a>Valores HRESULT booleano  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  
   
-## Valores HRESULT  
+## <a name="hresult-values"></a>Valores HRESULT  
  <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>  
   
  <xref:Microsoft.VisualStudio.VSConstants.E_ACCESSDENIED>  
@@ -51,7 +52,7 @@ El marco de paquete administrados \(MPF\) hace algunas constantes COM estándare
   
  <xref:Microsoft.VisualStudio.VSConstants.UNDO_E_CLIENTABORT>  
   
-## Errores OLE  
+## <a name="ole-errors"></a>Errores OLE  
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVF>  
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_ADVISENOTSUPPORTED>  
@@ -90,7 +91,7 @@ El marco de paquete administrados \(MPF\) hace algunas constantes COM estándare
   
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>  
   
-## Errores de envío OLE  
+## <a name="ole-dispatch-errors"></a>Errores de envío OLE  
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>  
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>  
@@ -127,5 +128,5 @@ El marco de paquete administrados \(MPF\) hace algunas constantes COM estándare
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)

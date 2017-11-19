@@ -1,60 +1,53 @@
 ---
-title: "SOURCE_TEXT_ATTR (Enumeraci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "SOURCE_TEXT_ATTR (constantes)"
+title: "SOURCE_TEXT_ATTR (enumeración) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: SOURCE_TEXT_ATTR constants
 ms.assetid: 459384b0-1463-4841-a2b3-a993207163bf
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f21bbfacc4918ff0e67731d5efd5521f371cbdf9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# SOURCE_TEXT_ATTR (Enumeraci&#243;n)
-Describe los atributos de un carácter individual del texto original.  
+# <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR (Enumeración)
+Describen los atributos de un carácter individual del texto de origen.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-enum enum_SOURCE_TEXT_ATTR  
-{  
-    SOURCETEXT_ATTR_KEYWORD    = 0x0001,  
-    SOURCETEXT_ATTR_COMMENT    = 0x0002,  
-    SOURCETEXT_ATTR_NONSOURCE    = 0x0004,  
-    SOURCETEXT_ATTR_OPERATOR   = 0x0008,  
-    SOURCETEXT_ATTR_NUMBER    = 0x0010,  
-    SOURCETEXT_ATTR_STRING    = 0x0020,  
-    SOURCETEXT_ATTR_FUNCTION_START  = 0x0040  
-};  
-  
+enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEXT_ATTR_COMMENT    = 0x0002,    SOURCETEXT_ATTR_NONSOURCE    = 0x0004,    SOURCETEXT_ATTR_OPERATOR   = 0x0008,    SOURCETEXT_ATTR_NUMBER    = 0x0010,    SOURCETEXT_ATTR_STRING    = 0x0020,    SOURCETEXT_ATTR_FUNCTION_START  = 0x0040};  
 ```  
   
-## Members  
+## <a name="members"></a>Miembros  
   
 |Miembro|Valor|Descripción|  
-|-------------|-----------|-----------------|  
-|SOURCETEXT\_ATTR\_KEYWORD|0x0001|El carácter forma parte de una palabra clave de lenguaje, por ejemplo, la palabra clave `While`de VBScript.|  
-|SOURCETEXT\_ATTR\_COMMENT|0x0002|El carácter es parte de un bloque de comentario.|  
-|SOURCETEXT\_ATTR\_NONSOURCE|0x0004|El carácter no es parte de texto original compilado del lenguaje.  Por ejemplo, HTML que rodea a un bloque de script.|  
-|SOURCETEXT\_ATTR\_OPERATOR|0x0008|El carácter es parte de un operador del lenguaje.  Por ejemplo: , el operador aritmético **\+**.|  
-|SOURCETEXT\_ATTR\_NUMBER|0x0010|El carácter forma parte de una constante numérica del lenguaje.  Por ejemplo, 3,14159 constantes.|  
-|SOURCETEXT\_ATTR\_STRING|0x0020|El carácter forma parte de una constante de cadena de idioma.  Por ejemplo, la cadena “Hello World”.|  
-|SOURCETEXT\_ATTR\_FUNCTION\_START|0x0040|El carácter indica el inicio de un bloque de función|  
+|------------|-----------|-----------------|  
+|SOURCETEXT_ATTR_KEYWORD|0 x 0001|El carácter forma parte de una palabra clave de lenguaje, por ejemplo, la palabra clave de VBScript `While`.|  
+|SOURCETEXT_ATTR_COMMENT|0 x 0002|El carácter forma parte de un bloque de comentario.|  
+|SOURCETEXT_ATTR_NONSOURCE|0 x 0004|El carácter no es parte del texto de origen de lenguaje compilado. Por ejemplo, el código HTML que rodea a un bloque de script.|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|El carácter forma parte de un operador de lenguaje. Por ejemplo:, el operador aritmético  **+** .|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|El carácter forma parte de una constante numérica de lenguaje.  Por ejemplo, la constante 3,14159.|  
+|SOURCETEXT_ATTR_STRING|0x0020|El carácter forma parte de una constante de cadena de idioma. Por ejemplo, la cadena "Hello World".|  
+|SOURCETEXT_ATTR_FUNCTION_START|0x0040|El carácter que indica el inicio de un bloque de la función|  
   
-## Comentarios  
- Normalmente, `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, y los métodos de `IActiveScriptDebug::GetScriptTextAttributes` devuelven un atributo de texto por el carácter, a menos que:  
+## <a name="remarks"></a>Comentarios  
+ Normalmente, el `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, y `IActiveScriptDebug::GetScriptTextAttributes` métodos devuelven un atributo de texto por carácter, a menos que:  
   
--   Se establece la marca de GETATTRTYPE\_DEPSCAN, en cuyo caso el método puede devolver los marcadores de SOURCETEXT\_ATTR\_IDENTIFIER y de SOURCETEXT\_ATTR\_MEMBERLOOKUP,  
+-   Se establece la marca GETATTRTYPE_DEPSCAN, en cuyo caso el método puede devolver los indicadores SOURCETEXT_ATTR_IDENTIFIER y SOURCETEXT_ATTR_MEMBERLOOKUP,  
   
--   Se establece la marca de GETATTRFLAG\_THIS, en cuyo caso el método puede devolver el indicador de SOURCETEXT\_ATTR\_THIS,  
+-   Se establece la marca GETATTRFLAG_THIS, en cuyo caso el método puede devolver la marca SOURCETEXT_ATTR_THIS,  
   
--   Se establece la marca de GETATTRFLAG\_HUMANTEXT, en cuyo caso el método puede devolver el indicador de SOURCETEXT\_ATTR\_HUMANTEXT.  
+-   Se establece la marca GETATTRFLAG_HUMANTEXT, en cuyo caso el método puede devolver la marca SOURCETEXT_ATTR_HUMANTEXT.  
   
-## Vea también  
- [Active Script Debugger \(Constantes, enumeraciones y estructuras\)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)
+## <a name="see-also"></a>Vea también  
+ [Active Script Debugger (Constantes, Enumeraciones y Estructuras)](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

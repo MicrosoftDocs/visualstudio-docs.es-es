@@ -1,27 +1,30 @@
 ---
-title: "SCRIPTSTATE (Enumeraci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "SCRIPTSTATE (enumeración) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: SCRIPTSTATE
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "SCRIPTSTATE (enum)"
+helpviewer_keywords: SCRIPTSTATE enum
 ms.assetid: 5f5deb05-c4bb-4964-8077-e624c6b2a14e
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 35e062a9c2f3076144063ffb77895c8a03ecc4ac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# SCRIPTSTATE (Enumeraci&#243;n)
-Especifica el estado de un motor de script.  Esta enumeración es utilizada por los métodos de [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , de [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , y de [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .  
+# <a name="scriptstate-enumeration"></a>SCRIPTSTATE (Enumeración)
+Especifica el estado de un motor de scripting. Esta enumeración se usa en la [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) , y [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) métodos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 typedef enum tagSCRIPTSTATE {  
@@ -34,16 +37,16 @@ typedef enum tagSCRIPTSTATE {
 } SCRIPTSTATE;  
 ```  
   
-## Valores de enumeración  
+## <a name="enumeration-values"></a>Valores de enumeración  
   
 |||  
 |-|-|  
-|SCRIPTSTATE\_UNINITIALIZED|El script termina de crearse, pero todavía no se ha inicializado con una interfaz y [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) de `IPersist*` .|  
-|SCRIPTSTATE\_INITIALIZED|El script se ha inicializado, pero no se está ejecutando \(conectando con otros objetos o eventos de contraer\) ni está ejecutando ningún codificados.  El código se puede consultar la ejecución llamando al método de [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) .|  
-|SCRIPTSTATE\_STARTED|El script se puede ejecutar código, pero todavía no se hundiendo los eventos de objetos agregados por el método de [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
-|SCRIPTSTATE\_CONNECTED|El script se carga y conectado para los eventos de contraer.|  
-|SCRIPTSTATE\_DISCONNECTED|El script se carga y tiene un estado de la ejecución en tiempo de ejecución, pero es temporalmente desconectada de eventos de contraer.|  
-|SCRIPTSTATE\_CLOSED|El script se ha cerrado.  El motor de script funciona y ya no devuelve errores para la mayoría de los métodos.|  
+|SCRIPTSTATE_UNINITIALIZED|Secuencia de comandos se ha creado recientemente, pero aún no se ha inicializado con un `IPersist*` interfaz y [IActiveScript::SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_INITIALIZED|Secuencia de comandos se ha inicializado, pero no se ejecutan (conectarse a otros objetos o recibir eventos) o ejecutar cualquier código. Código que puede consultarse para la ejecución mediante una llamada a la [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md) método.|  
+|SCRIPTSTATE_STARTED|Secuencia de comandos puede ejecutar código, pero no aún es recibir los eventos de los objetos agregados por el [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) método.|  
+|SCRIPTSTATE_CONNECTED|Secuencia de comandos está cargado y conectado para recibir eventos.|  
+|SCRIPTSTATE_DISCONNECTED|Secuencia de comandos se carga y tiene un estado de tiempo de ejecución, pero está desconectado temporalmente de recibir eventos.|  
+|SCRIPTSTATE_CLOSED|Se ha cerrado la secuencia de comandos. El motor de scripting ya no funciona y devuelve errores con la mayoría de los métodos.|  
   
-## Vea también  
- [Active Script \(constantes, enumeraciones y códigos de error\)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
+## <a name="see-also"></a>Vea también  
+ [Active Script (Constantes, Enumeraciones y Códigos de error)](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)
