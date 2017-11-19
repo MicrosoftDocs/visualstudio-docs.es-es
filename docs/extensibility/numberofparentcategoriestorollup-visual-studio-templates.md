@@ -1,30 +1,35 @@
 ---
-title: "NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp"
-helpviewer_keywords: 
-  - "<NumberOfParentCategoriesToRollUp> (elemento) [plantillas de Visual Studio]"
-  - "NumberOfParentCategoriesToRollUp (elemento) [plantillas de Visual Studio]"
+title: NumberOfParentCategoriesToRollUp (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
+helpviewer_keywords:
+- NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
+- <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c35a29ada0b2fe2aa23d61426868ee00bd5cfaeb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica el número de categorías primarias que mostrará la plantilla en el cuadro de diálogo **Nuevo proyecto**.  
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)
+Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<NumberOfParentCategoriesToRollUp >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <NumberOfParentCategoriesToRollUp>  
@@ -32,31 +37,31 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
 </NumberOfParentCategoriesToRollUp>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
- Se requiere un valor `integer`.  
+## <a name="text-value"></a>Valor de texto  
+ Un `integer` se requiere un valor.  
   
- Este valor especifica el número de categorías primarias que la plantilla mostrará en el cuadro de diálogo **Nuevo proyecto**.  
+ Este valor especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  `NumberOfParentCategoriesToRollUp` es un elemento opcional.  
   
-## Ejemplo  
- En este ejemplo se muestran los metadatos de una aplicación Windows de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  Si una plantilla con sus metadatos se coloca dos niveles de carpeta por debajo del nodo de nivel superior de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], la plantilla aparecerá en el nodo de nivel superior en el cuadro de diálogo **Nuevo proyecto**.  Si no se establece `NumberOfParentCategoriesToRollUp`, la plantilla sólo aparece en el nodo en el que se encuentra físicamente.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows. Si una plantilla con sus metadatos se coloca dos niveles de carpeta por debajo del nivel superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nodo, la plantilla aparecerá en el nodo de nivel superior en el **nuevo proyecto** cuadro de diálogo. Si el `NumberOfParentCategoriesToRollUp` no está establecido, la plantilla solo aparece en el nodo donde está ubicado físicamente.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -83,6 +88,6 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

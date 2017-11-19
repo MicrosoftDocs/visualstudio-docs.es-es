@@ -1,28 +1,30 @@
 ---
-title: "IWefDebuggingSupport (Interfaz)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: IWefDebuggingSupport (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 0bd1c6a6-67a5-4478-b942-8b937b28f723
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IWefDebuggingSupport (Interfaz)
-  Implementado por un entorno de depuración, como Visual Studio, para facilitar la depuración de las aplicaciones de Office.  La aplicación de Office, como word o Excel, obtiene esta interfaz de Visual Studio y después llamar a métodos en la interfaz en determinados puntos durante la sesión de depuración.  
+# <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport (Interfaz)
+  Implementa un entorno de depuración, como Visual Studio, para facilitar la depuración de aplicaciones para Office. La aplicación de Office, como Word o Excel, obtiene de esta interfaz desde Visual Studio y, a continuación, llama a métodos en la interfaz en ciertos puntos durante la sesión de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 [  
@@ -38,12 +40,12 @@ interface IWefDebuggingSupport : IUnknown
 }  
 ```  
   
-## Métodos  
- La tabla siguiente se enumeran los métodos que la interfaz de IWefDebuggingSupport define.  
+## <a name="methods"></a>Métodos  
+ En la tabla siguiente se enumera los métodos que define la interfaz IWefDebuggingSupport.  
   
 |Name|Descripción|  
 |----------|-----------------|  
-|[GetAutoInsertExtensions &#40;Método&#41;](../vsto/getautoinsertextensions-method.md)|Obtiene información sobre las aplicaciones de Office que deben automáticamente incrustar durante la depuración.|  
-|[SetWefProcessId &#40;Método&#41;](../vsto/setwefprocessid-method.md)|Proporciona el identificador de proceso que se ejecute el contenido web de \(WEF\) de extensiones.|  
+|[GetAutoInsertExtensions (método)](../vsto/getautoinsertextensions-method.md)|Obtiene información sobre las aplicaciones de Office que se van a insertar automáticamente durante la depuración.|  
+|[SetWefProcessId (método)](../vsto/setwefprocessid-method.md)|Proporciona el identificador de proceso que se ejecutará el contenido del marco de trabajo de las extensiones de Web (WEF).|  
   
   

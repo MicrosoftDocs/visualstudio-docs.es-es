@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugProcesses2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugProcesses2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugProcesses2::Next"
+title: IEnumDebugProcesses2::Next | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugProcesses2::Next
+helpviewer_keywords: IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e1987dbc7e14824ccbfda5fd6bb7d644389a65f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugProcesses2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Devuelve el conjunto de elementos de la enumeración.  
+# <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
+Devuelve el siguiente conjunto de elementos de la enumeración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG            celt,  
-   IDebugProcess2** rgelt,  
-   ULONG*           pceltFetched  
+   ULONG            celt,  
+   IDebugProcess2** rgelt,  
+   ULONG*           pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint             celt,  
-   IDebugProcess2[] rgelt,  
-   ref uint         pceltFetched  
+   uint             celt,  
+   IDebugProcess2[] rgelt,  
+   ref uint         pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
+ [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- \[in, out\]  Matriz de elementos de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que se completan.  
+ [entrada, salida] Matriz de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) elementos que deben rellenarse.  
   
  `pceltFetched`  
- \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
+ [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si pudieron devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

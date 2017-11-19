@@ -1,32 +1,34 @@
 ---
-title: "Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de destino | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 40842e1067a0b764a4b35ac679ee774f04347359
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/09/2017
 ---
-# Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
-Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de destino.No se ha agregado nada al diseñador.  
+# <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
+Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino. No se ha agregado nada al diseñador.  
   
- Al arrastrar objetos de base de datos hasta las clases de entidad existentes, los datos devueltos por el objeto de base de datos deben coincidir con el esquema de la clase de entidad de destino.Compruebe que está seleccionado el objeto de base de datos correcto y que se ha elegido como destino la clase de entidad correcta.  
+ Al arrastrar objetos de base de datos hasta las clases de entidad existentes, los datos devueltos por el objeto de base de datos deben coincidir con el esquema de la clase de entidad de destino. Compruebe que está seleccionado el objeto de base de datos correcto y que se ha elegido como destino la clase de entidad correcta.  
   
-### Para corregir este error  
+### <a name="to-correct-this-error"></a>Para corregir este error  
   
 1.  Haga clic en **Aceptar** para descartar el cuadro de diálogo.  
   
-2.  Seleccione un objeto de base de datos que devuelva datos que coincidan con el esquema de la clase de destino \(clase en la que se coloca el objeto de base de datos en Object Relational Designer\).  
+2.  Seleccione un objeto de base de datos que devuelva datos que coincidan con el esquema de la clase de destino (clase en la que se coloca el objeto de base de datos en Object Relational Designer).  
   
-## Vea también  
- [Información general sobre Object Relational Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Métodos DataContext \(Object Relational Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Cómo: Crear métodos DataContext asignados funciones y procedimientos almacenados \(Object Relational Designer\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [LINQ a SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Vea también
+[Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

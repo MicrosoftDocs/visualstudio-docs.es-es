@@ -1,62 +1,62 @@
 ---
-title: "C&#243;mo: Agregar y quitar elementos de las caracter&#237;sticas de SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.FeatureDesigner"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, características"
+title: "Cómo: agregar y quitar elementos de las características de SharePoint | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.FeatureDesigner
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: 5957d04f-f832-40de-af08-3f23fb8e2e14
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar y quitar elementos de las caracter&#237;sticas de SharePoint
-  Al crear una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint predeterminados a la característica.  Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la característica de SharePoint.  
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Cómo: Agregar y quitar elementos de las características de SharePoint
+  Cuando se crea una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint de forma predeterminada a la característica. Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la característica de SharePoint.  
   
-## Agregar elementos de proyecto de SharePoint a una característica  
+## <a name="adding-sharepoint-project-items-to-a-feature"></a>Agregar elementos de proyecto de SharePoint a una característica  
   
-#### Para agregar elementos de proyecto de SharePoint con el Diseñador de características  
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Para agregar elementos de proyecto de SharePoint con el Diseñador de características  
   
 1.  Abra el Diseñador de características.  
   
-     Para obtener más información, vea [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+     Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Agregue uno o más elementos de la lista de **Elementos de la solución** a **Elementos de la característica** realizando alguno uno o más de los pasos siguientes:  
+2.  Agregar uno o más elementos de la **elementos de la solución** lista para la **elementos de la característica** lista realizando uno o varios de los siguientes pasos:  
   
-    -   Haga doble clic en cada elemento que desee agregar.  
+    -   Haga doble clic en cada elemento que se va a agregar.  
   
-    -   Elija un elemento que desea agregar y, a continuación elija el botón de **Add** \(\>\).  
+    -   Elija un elemento que desea agregar y, a continuación, elija la **agregar** botón (>).  
   
-    -   Elija el botón de **Agregar todas** \(\>\>\).  
+    -   Elija la **agregar todo** botón (>>).  
   
-     Los elementos de proyecto de SharePoint aparecen en la lista **Elementos de la característica**.  
+     Los elementos de proyecto de SharePoint aparecen en la **elementos de la característica** lista.  
   
-## Quitar los elementos de proyecto de SharePoint de una característica  
+## <a name="removing-sharepoint-project-items-from-a-feature"></a>Quitar elementos de proyecto de SharePoint de una característica  
   
-#### Para quitar elementos de SharePoint con el Diseñador de características  
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Para quitar elementos de SharePoint con el Diseñador de características  
   
-1.  Elija uno o más elementos en la lista de **Elementos de la característica** .  
+1.  Elija uno o más elementos en el **elementos de la característica** lista.  
   
-2.  Elija el botón de **Quitar** \(\<\) para quitar un elemento cada vez, o elija el botón de **Quitar todo** \(\<\<\) para quitar todos los elementos.  
+2.  Elija la **quitar** botón (<) para quitar un elemento a la vez, o elija la **quitar todo** botón (<<) para quitar todos los elementos.  
   
-     Los elementos de proyecto de SharePoint aparecen en la lista **Elementos de la solución**.  
+     Los elementos de proyecto de SharePoint aparecen en la **elementos de la solución** lista.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

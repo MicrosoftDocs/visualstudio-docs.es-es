@@ -1,41 +1,43 @@
 ---
-title: "C&#243;mo: usar elementos coloreables integrados | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "elementos coloreables"
-  - "Servicios de lenguaje, elementos coloreables integrados"
+title: "Cómo: usar elementos coloreables integrados | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- colorable items
+- language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 519b842f99ff3e4460626b82aafd24a02f9e720d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: usar elementos coloreables integrados
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Antes de utilizar los elementos colorear integrados, deberá designar primero al IDE \(IDE\) que no es el proporcionar poseer los elementos colorear personalizados, que en este caso se objetos de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> .  Esto se hace estableciendo una entrada de Registro del servicio de lenguaje.  
+# <a name="how-to-use-built-in-colorable-items"></a>Cómo: usar elementos coloreables integrados
+Antes de usar los elementos coloreables integrados, debe en primer lugar indican al entorno de desarrollo integrado (IDE) que no proporcionan sus propios elementos coloreables personalizados, que en este caso sería <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Para ello, establezca una entrada del registro para el servicio de lenguaje.  
   
-### Para usar elementos colorear integrados  
+### <a name="to-use-built-in-colorable-items"></a>Utilizar elementos coloreables integrados  
   
-1.  En HKEY\_LOCAL\_MACHINE \\VisualStudio \\*X.Y*\\Languages\\Language Services \\*Nombre del lenguaje*, donde es una versión *X.Y* de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y *Nombre del lenguaje* es el nombre del lenguaje, cree un valor de entrada del Registro DWORD `RequestStockColors`denominado.  
+1.  En HKEY_LOCAL_MACHINE\VisualStudio\\*X.Y*\Languages\Language servicios\\*Nombreidioma*, donde *X.Y* es una versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y *Nombreidioma* es el nombre de su idioma, cree un valor de entrada de Registro DWORD llamado `RequestStockColors`.  
   
-2.  Establezca el valor de entrada del Registro de `RequestStockColors` en 1.  
+2.  Establecer el `RequestStockColors` valor de la entrada del registro en 1.  
   
-     Después de crear la entrada del Registro, el método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> de los colorizer pueden utilizar los miembros de la enumeración de <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> para completar la matriz de atributos de color para uso del editor.  
+     Después de crear la entrada del registro, el aplicador de color <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método puede utilizar los miembros de la <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> enumeración para rellenar la matriz de atributos de color para su uso por el editor.  
   
     > [!NOTE]
-    >  No establezca esta entrada del Registro si está proporcionando elementos colorear personalizados.  Para obtener más información, vea [Elementos coloreables personalizados](../../extensibility/internals/custom-colorable-items.md).  
+    >  No establezca esta entrada del registro si va a proporcionar elementos coloreables personalizados. Para obtener más información, consulte [elementos coloreable personalizado](../../extensibility/internals/custom-colorable-items.md).  
   
-## Vea también  
- [Colores en los editores personalizados de sintaxis](../../extensibility/syntax-coloring-in-custom-editors.md)   
- [Colores en un servicio de lenguaje heredado de sintaxis](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
- [Implementación de colores de sintaxis](../../extensibility/internals/implementing-syntax-coloring.md)   
+## <a name="see-also"></a>Vea también  
+ [Sintaxis de color en los editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Color de un servicio de lenguaje heredado sintaxis](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
+ [Color de la sintaxis de implementación](../../extensibility/internals/implementing-syntax-coloring.md)   
  [Elementos coloreables personalizados](../../extensibility/internals/custom-colorable-items.md)   
  [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service2.md)

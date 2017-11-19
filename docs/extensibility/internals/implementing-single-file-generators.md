@@ -1,34 +1,35 @@
 ---
-title: "Implementar generadores de un solo archivo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "herramientas personalizadas, implementar"
-  - "proyectos [Visual Studio SDK], extensibilidad"
-  - "proyectos [Visual Studio SDK], administrar herramientas personalizadas"
+title: Implementar generadores de un solo archivo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- custom tools, implementing
+- projects [Visual Studio SDK], extensibility
+- projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9894666dd435dcaa110ba8af8307d7e942119bee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Implementar generadores de un solo archivo
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Una herramienta personalizada \(denominada en ocasiones un generador de un solo archivo \)puede utilizar para extender los sistemas de proyectos de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y de[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  una herramienta personalizada es un componente COM que implementa la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  Con esta interfaz, una herramienta personalizada transforma un único archivo de entrada en un archivo de salida única.  El resultado de la transformación puede ser código fuente, o cualquier otra salida que es útil.  Dos ejemplos de archivos herramienta\-generados personalizada de código son código generado en respuesta a cambios en un diseñador visual y archivos generados utilizando el Lenguaje de descripción de servicios web \(WSDL\).  
+# <a name="implementing-single-file-generators"></a>Implementar generadores de un solo archivo
+Una herramienta personalizada: conoce a veces como un generador de archivos únicos, puede utilizarse para extender el [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proyecto sistemas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Una herramienta personalizada es un componente COM que implementa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz. Uso de esta interfaz, una herramienta personalizada transforma un único archivo de entrada en un único archivo de salida. El resultado de la transformación puede ser código fuente o cualquier otro de salida que resulta útil. Dos ejemplos de archivos de código generados por la herramienta personalizada son código generado en respuesta a los cambios en un diseñador visual y archivos que se generan mediante el lenguaje de descripción de servicios Web (WSDL).  
   
- Cuando una herramienta personalizada se carga, o se guarda el archivo de entrada, el sistema de proyectos el método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> , y pasar una referencia a una interfaz de devolución de llamada de <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> , por el que la herramienta puede señalar su progreso al usuario.  
+ Cuando se carga una herramienta personalizada, o se guarda el archivo de entrada, el sistema de proyectos llama el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (método) y pasa una referencia a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> interfaz de devolución de llamada, mediante el cual la herramienta puede notificar su progreso al usuario.  
   
- El archivo de salida que la herramienta personalizada genera se agrega al proyecto con una dependencia en el archivo de entrada.  El sistema del proyecto determina automáticamente el nombre del archivo de salida, en función de la cadena devuelta por la implementación personalizada de la herramienta de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
+ El archivo de salida que genera la herramienta personalizada se agrega al proyecto con una dependencia en el archivo de entrada. El sistema del proyecto determina automáticamente el nombre del archivo de salida, en función de la cadena devuelta por la implementación de la herramienta personalizada de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>.  
   
- una herramienta personalizada debe implementar la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> .  Opcionalmente, las herramientas personalizadas admiten a la interfaz de <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> que recuperar información de orígenes que no sean del archivo de entrada.  En cualquier caso, para poder utilizar una herramienta personalizada, debe registrarla con el sistema o en el registro local de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Para obtener más información sobre el registro las herramientas personalizadas, vea [Registrar generadores de un solo archivo](../../extensibility/internals/registering-single-file-generators.md).  
+ Una herramienta personalizada debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz. Opcionalmente, herramientas personalizadas para admiten la <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> interfaz para recuperar información de orígenes que no sea el archivo de entrada. En cualquier caso, para poder usar una herramienta personalizada, debe registrarlo con el sistema o en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registro local. Para obtener más información sobre cómo registrar herramientas personalizadas, vea [registrar generadores de único archivo](../../extensibility/internals/registering-single-file-generators.md).  
   
-## Vea también  
- [Determinación del espacio de nombres predeterminado de un proyecto](../../misc/determining-the-default-namespace-of-a-project.md)   
- [Exponer tipos de diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)
+## <a name="see-also"></a>Vea también  
+ [Exposición de tipos a diseñadores visuales](../../extensibility/internals/exposing-types-to-visual-designers.md)

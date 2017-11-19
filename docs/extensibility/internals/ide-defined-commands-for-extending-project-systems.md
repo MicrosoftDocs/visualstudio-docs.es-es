@@ -1,76 +1,78 @@
 ---
-title: "Comandos definidos por el IDE para ampliar sistemas del proyecto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "comandos de sistemas del proyecto"
-  - "sistemas de proyectos, los comandos definidos por el entorno"
+title: Comandos definidos por el IDE para ampliar sistemas del proyecto | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands, project systems
+- project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a5e6f4caf8466100763b6a4ae11f6760a3d4c655
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comandos definidos por el IDE para ampliar sistemas del proyecto
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cuando desee extender los sistemas de proyectos, puede utilizar los comandos y grupos de comando proporcionados por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el IDE.  
+# <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos por el IDE para ampliar sistemas del proyecto
+Si desea ampliar sistemas del proyecto, puede usar comandos y comando grupos proporcionados por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Las secciones siguientes se enumeran los elementos command que son especialmente útiles para los sistemas de proyectos que extienden.  
+ Las siguientes secciones enumeran los elementos de comando que son especialmente útiles para ampliar sistemas del proyecto.  
   
-## menús de comandos  
- La tabla siguiente se muestran los menús de comandos que son útiles para poner los comandos de alto nivel que invocan un extensor de proyecto.  
+## <a name="command-menus"></a>Menús de comando  
+ La siguiente tabla muestra los menús de comando que se indican las ubicaciones útiles para colocar los comandos de alto nivel que invocan un extensor de proyecto.  
   
-|menú de comandos|Descripción|  
-|----------------------|-----------------|  
-|IDM\_VS\_MENU\_PROJECT|El menú de nivel superior de **proyecto** .|  
-|IDM\_VS\_TOOL\_PROJWIN|la barra de herramientas de **Explorador de soluciones** .|  
+|Menú de comandos|Descripción|  
+|------------------|-----------------|  
+|IDM_VS_MENU_PROJECT|El **proyecto** menú de nivel superior.|  
+|IDM_VS_TOOL_PROJWIN|El **el Explorador de soluciones** barra de herramientas.|  
   
-## Menús contextuales  
- La tabla siguiente se muestran los menús contextuales que se aplican a un único nodo está seleccionado en **Explorador de soluciones**, o cuando hay selecciones homogéneas en varias **Explorador de soluciones**, que es cuando todos los nodos seleccionados son del mismo tipo.  
+## <a name="shortcut-menus"></a>Menús contextuales  
+ La siguiente tabla muestra los menús contextuales que se aplican cuando se selecciona un nodo único en el **el Explorador de soluciones**, o cuando hay varias selecciones homogéneas en el **el Explorador de soluciones**, que es cuando todos los nodos seleccionados son del mismo tipo.  
   
 |Menú contextual|Descripción|  
-|---------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Se aplica cuando el nodo del proyecto está seleccionado.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Se aplica cuando un archivo está seleccionado.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Se aplica cuando una carpeta está seleccionado.|  
-|IDM\_VS\_CTXT\_WEBREFFOLDER|Se aplica a la carpeta de referencia web está seleccionado.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Se aplica cuando el nodo raíz de las referencias denominado “referencias” está seleccionado.|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Se aplica a los nodos de referencia son seleccionado; éstos incluyen el ensamblado, COM, y referencias de proyecto solo.  no incluye referencias web.|  
+|-------------------|-----------------|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Se aplica cuando se selecciona el nodo del proyecto.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Se aplica cuando se selecciona un archivo.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|Se aplica cuando se selecciona una carpeta.|  
+|IDM_VS_CTXT_WEBREFFOLDER|Se aplica cuando se selecciona la carpeta de referencia Web.|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|Se aplica cuando se selecciona el nodo raíz de referencias denominado "Referencias".|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|Se aplica cuando se seleccionan los nodos de referencia; se trata de ensamblado, COM y las referencias de proyecto. No incluye referencias Web.|  
   
- La tabla siguiente se muestran los menús contextuales que se aplican cuando la selección en **Explorador de soluciones** abarca varias jerarquías,  
+ La siguiente tabla muestra los menús contextuales que se aplican cuando la selección de la **el Explorador de soluciones** abarca varias jerarquías  
   
 |Menú contextual|Descripción|  
-|---------------------|-----------------|  
-|IDM\_VS\_CTXT\_XPROJ\_SLNPROJ|Se aplica a la selección actual contiene nodos de nodo y raíz del proyecto de la solución.|  
-|IDM\_VS\_CTXT\_XPROJ\_SLNITEM|Se aplica a la selección actual contiene el nodo y elementos de proyecto de la solución.|  
-|IDM\_VS\_CTXT\_XPROJ\_MULTIPROJ|Se aplica a la selección actual consta de varios nodos raíz del proyecto.|  
-|IDM\_VS\_CTXT\_XPROJ\_PROJITEM|Se aplica a la selección actual contiene una mezcla de nodos y elementos de proyecto raíz.  además, la selección puede contener el nodo de la solución.|  
-|IDM\_VS\_CTXT\_XPROJ\_MULTIITEM|Se aplica a la selección actual contiene elementos de proyecto de varios proyectos de la solución, o cuando los elementos de distintos tipos son seleccionado en el mismo proyecto.|  
+|-------------------|-----------------|  
+|IDM_VS_CTXT_XPROJ_SLNPROJ|Se aplica cuando la selección actual contiene el nodo de la solución y los nodos raíz del proyecto.|  
+|IDM_VS_CTXT_XPROJ_SLNITEM|Se aplica cuando la selección actual contiene los elementos de proyecto y el nodo de la solución.|  
+|IDM_VS_CTXT_XPROJ_MULTIPROJ|Se aplica cuando la selección actual está formada por varios nodos de proyecto de raíz sólo.|  
+|IDM_VS_CTXT_XPROJ_PROJITEM|Se aplica cuando la selección actual contiene una combinación de nodos raíz del proyecto y elementos de proyecto. Además, la selección puede contener el nodo de la solución.|  
+|IDM_VS_CTXT_XPROJ_MULTIITEM|Se aplica cuando la selección actual contiene elementos de proyecto de varios proyectos en la solución, o cuando se seleccionan elementos de diferentes tipos en el mismo proyecto.|  
   
-## grupos de comando  
- La tabla siguiente se muestran los grupos de comandos que puede utilizar al extender proyectos de, y que puede tener acceso a través del menú contextual de <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> .  
+## <a name="command-groups"></a>Grupos de comandos  
+ La siguiente tabla muestra los grupos de comandos que puede utilizar cuando extender proyectos, y que puede tener acceso a través de la <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menú contextual.  
   
 |Grupo de comandos|Descripción|  
-|-----------------------|-----------------|  
-|IDG\_VS\_CTXT\_PROJECT\_BUILD|Comandos para compilar, recompilar, e implementar el proyecto.|  
-|IDG\_VS\_CTXT\_COMPILELINK|comandos para compilar y vincular el proyecto.|  
-|IDG\_VS\_CTXT\_PROJECT\_CONFIG|Comandos que establecen orden de instalación y configuración de compilación del proyecto.|  
-|IDG\_VS\_CTXT\_PROJECT\_ADD|Comandos que agregan elementos al proyecto.|  
-|IDG\_VS\_CTXT\_PROJECT\_START|Comandos que establecen el proyecto de inicio asociado con la tecla F5.|  
-|IDG\_VS\_CTXT\_PROJECT\_SAVE|comandos para guardar elementos de proyecto.|  
-|IDG\_VS\_CTXT\_PROJECT\_DEBUG|comandos para depurar.|  
-|IDG\_VS\_CTXT\_PROJECT\_SCC|Comandos del control de código fuente.|  
-|IDG\_VS\_CTXT\_PROJECT\_TRANSFER|Comandos para operaciones de cortar, copy y pegar.|  
-|IDG\_VS\_CTXT\_PROJECT\_PROPERTIES|Comandos que proporcionan acceso al cuadro de diálogo de **Propiedades del proyecto** .|  
+|-------------------|-----------------|  
+|IDG_VS_CTXT_PROJECT_BUILD|Comandos para crear, volver a generar e implementar el proyecto.|  
+|IDG_VS_CTXT_COMPILELINK|Comandos para compilar y vincular el proyecto.|  
+|IDG_VS_CTXT_PROJECT_CONFIG|Comandos que establecen la configuración de proyecto y orden de compilación.|  
+|IDG_VS_CTXT_PROJECT_ADD|Comandos que agregue elementos al proyecto.|  
+|IDG_VS_CTXT_PROJECT_START|Comandos que se establezca el proyecto de inicio asociado a la tecla F5.|  
+|IDG_VS_CTXT_PROJECT_SAVE|Comandos para guardar elementos de proyecto.|  
+|IDG_VS_CTXT_PROJECT_DEBUG|Comandos para la depuración.|  
+|IDG_VS_CTXT_PROJECT_SCC|Comandos de control de código fuente.|  
+|IDG_VS_CTXT_PROJECT_TRANSFER|Comandos de cortar, copiar y pegar las operaciones.|  
+|IDG_VS_CTXT_PROJECT_PROPERTIES|Comandos que proporcionan acceso a la **propiedades del proyecto** cuadro de diálogo.|  
   
-## Vea también  
- [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [MenuCommands frente a OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
+## <a name="see-also"></a>Vea también  
+ [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [MenuCommands frente a OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Creación de grupos reutilizables de botones](../../extensibility/creating-reusable-groups-of-buttons.md)

@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::GetBackingFieldForProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty"
-helpviewer_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty (método)"
+title: IDebugObject2::GetBackingFieldForProperty | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::GetBackingFieldForProperty
+helpviewer_keywords: IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2637ddf5d50953367de66cd2ca63d7774dbc3213
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::GetBackingFieldForProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el campo o la variable \(si existe\) que pueden admitir la propiedad representada por este objeto.  
+# <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
+Obtiene el campo o la variable (si existe) que puede realizar una copia la propiedad representada por este objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
-```c#  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+```csharp  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppObject`  
- \[out\]  Un objeto de [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) que describe el campo de respaldo.  
+ [out] Un [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objeto que describe el campo de respaldo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- El objeto de [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) representa una propiedad de clase desde código administrado, es decir, un método con un descriptor de acceso get y set.  Tales propiedades necesarias normalmente una variable contiene el valor manipulan mediante la propiedad.  Esta variable se conoce como el campo de respaldo.  Si no hay ningún campo de respaldo para el objeto, después asegúrese de devolver un valor NULL: algunos llamadores pueden no prestar atención al valor devuelto pero en su lugar tienen para ver si un valor NULL se devuelve en `ppObject`.  
+## <a name="remarks"></a>Comentarios  
+ El [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) objeto representa una propiedad de clase de código administrado, es decir, un método con una operación get o descriptor de acceso set. Estas propiedades requieren generalmente una variable que contenga el valor manipulado por la propiedad. Esta variable se conoce como el campo de respaldo. Si no hay ningún campo de respaldo para el objeto, asegúrese de que se devuelve un valor null: algunos los llamadores no pueden prestar atención al valor devuelto, pero tendrá un aspecto en su lugar para ver si se devolvió un valor null en `ppObject`.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

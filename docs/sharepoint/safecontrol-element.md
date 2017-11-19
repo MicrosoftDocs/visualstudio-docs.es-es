@@ -1,30 +1,31 @@
 ---
-title: "SafeControl Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SafeControl element"
+title: SafeControl (elemento) | Documentos de Microsoft
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: SafeControl element
 ms.assetid: e7c61749-fc73-412c-be30-4af5ff2a9fd2
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8d9651c320e574c8db9fcafcb6e98f13e45eac1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SafeControl Element
-  Representa un elemento web o control ASPX que se designa como seguro para que cualquier usuario pueda tener acceso a él en cualquier página ASPX del sitio de SharePoint.  
+# <a name="safecontrol-element"></a>SafeControl (Elemento)
+  Representa un control ASPX o elemento Web que se designa como seguro para que cualquier usuario tenga acceso en cualquier página ASPX del sitio de SharePoint.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <SafeControl Assembly = "Name of assembly that contains the safe control"  
@@ -35,43 +36,43 @@ caps.handback.revision: 10
     TypeName = "Type of the safe control" />  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|**Assembly**|Atributo **xs:string** opcional.<br /><br /> El nombre del ensamblado en el que se define el control ASPX o elemento web.  De forma predeterminada, este atributo utiliza el parámetro reemplazable **$SharePoint.Project.AssemblyFullName$** para el nombre de ensamblado.  Para obtener más información, vea [Parámetros reemplazables](../sharepoint/replaceable-parameters.md).|  
-|**IsSafe**|Atributo **xs:boolean** opcional.<br /><br /> Especifica si el control ASPX o elemento web es seguro para que los usuarios que no son de confianza obtengan acceso.|  
-|**IsSafeAgainstScript**|Atributo **xs:boolean** opcional.<br /><br /> Especifica si los usuarios que no son de confianza pueden ver o modificar las propiedades del control ASPX o elemento web.|  
-|**Name**|Atributo **xs:string** opcional.<br /><br /> El nombre de esta entrada de control segura en la colección.|  
-|**Namespace**|Atributo **xs:string** opcional.<br /><br /> El espacio de nombres del control ASPX o elemento web.|  
-|**TypeName**|Atributo **xs:string** opcional.<br /><br /> El nombre de tipo del control ASPX o elemento web.|  
+|---------------|-----------------|  
+|**Ensamblado**|Opcional **xs: String** atributo.<br /><br /> El nombre del ensamblado donde se define el control ASPX o elemento Web. De forma predeterminada, este atributo se usa el **$SharePoint.Project.AssemblyFullName$** parámetro reemplazable para el nombre del ensamblado. Para obtener más información, consulte [parámetros reemplazables](../sharepoint/replaceable-parameters.md).|  
+|**IsSafe**|Opcional **xs: Boolean** atributo.<br /><br /> Especifica si el control ASPX o elemento Web es seguro para los usuarios de confianza tener acceso.|  
+|**IsSafeAgainstScript**|Opcional **xs: Boolean** atributo.<br /><br /> Especifica si los usuarios de confianza pueden ver o editar las propiedades del control ASPX o elemento Web.|  
+|**Nombre**|Opcional **xs: String** atributo.<br /><br /> El nombre de esta entrada de control seguro en la colección.|  
+|**Namespace**|Opcional **xs: String** atributo.<br /><br /> El espacio de nombres del control ASPX o elemento Web.|  
+|**TypeName**|Opcional **xs: String** atributo.<br /><br /> El nombre de tipo del control ASPX o elemento Web.|  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[SafeControls](../sharepoint/safecontrols-element.md)|Representa una colección de elementos web y controles ASPX que se designan como seguros para que cualquier usuario pueda obtener acceso a ella en cualquier página ASPX del sitio de SharePoint.|  
+|-------------|-----------------|  
+|[SafeControls](../sharepoint/safecontrols-element.md)|Representa una colección de controles ASPX y elementos Web que se designan como seguros para cualquier usuario tenga acceso en cualquier página ASPX del sitio de SharePoint.|  
   
-## Comentarios  
- Para obtener más información acerca de los controles seguros, vea [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+## <a name="remarks"></a>Comentarios  
+ Para obtener más información acerca de controles seguros, vea [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## Información de elemento  
+## <a name="element-information"></a>Información de elemento  
   
 |||  
 |-|-|  
-|**Espacio de nombres**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## Vea también  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)   
+## <a name="see-also"></a>Vea también  
+ [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

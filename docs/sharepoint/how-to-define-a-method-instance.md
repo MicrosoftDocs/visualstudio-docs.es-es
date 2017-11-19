@@ -1,53 +1,55 @@
 ---
-title: "C&#243;mo: Definir la instancia de un m&#233;todo"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [desarrollo de SharePoint en Visual Studio], método"
-  - "BDC [desarrollo de SharePoint en Visual Studio], instancia de método"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], método"
-  - "servicio de conectividad a datos profesionales [desarrollo de SharePoint en Visual Studio], instancia de método"
+title: "Cómo: definir una instancia de método | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], method instance
+- BDC [SharePoint development in Visual Studio], method instance
+- BDC [SharePoint development in Visual Studio], method
+- Business Data Connectivity service [SharePoint development in Visual Studio], method
 ms.assetid: f0c8a686-c0de-414e-8de9-f228f59d1eb3
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9316eaa48b11342891584e448f8bb67bdce6f682
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Definir la instancia de un m&#233;todo
-  Debe definir por lo menos una instancia para cada método de su modelo.  
+# <a name="how-to-define-a-method-instance"></a>Cómo: Definir la instancia de un método
+  Debe definir al menos una instancia de método para cada método en el modelo.  
   
- Agregue una instancia de método utilizando la ventana **Detalles del método de BDC**.  Al agregar la instancia del método, Visual Studio agrega un elemento `<MethodInstance>` al XML del archivo del modelo de su proyecto.  Para obtener más información sobre los atributos de un elemento de `<MethodInstance>` , vea [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
+ Agregar una instancia de método mediante el **detalles del método de BDC** ventana. Cuando se agrega la instancia de método, Visual Studio agrega un `<MethodInstance>` elemento en el XML del archivo del modelo en el proyecto. Para obtener más información sobre los atributos de un `<MethodInstance>` elemento, vea [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
   
-### Para definir una instancia de método  
+### <a name="to-define-a-method-instance"></a>Para definir una instancia de método  
   
-1.  En la ventana **Detalles del método de BDC**, expanda el nodo de un método y, a continuación, expanda **Instancias**.  
+1.  En el **detalles del método de BDC** ventana, expanda el nodo de un método y, a continuación, expanda el **instancias** nodo.  
   
-2.  En la lista de **Agregar una instancia de método** , elija **Crear instancia de Finder**.  
+2.  En el **agregar una instancia del método** elija **crear instancia de buscador**.  
   
-     Una nueva instancia del método aparece bajo el nodo **Instancias**.  
+     Aparecerá una nueva instancia de método bajo la **instancias** nodo.  
   
-3.  En la barra de menú, elija **Visualización**, elija **Ventana Propiedades**.  
+3.  En la barra de menús, elija **vista**, elija **ventana propiedades**.  
   
-4.  En la ventana **Propiedades**, establezca las propiedades de la instancia del método.  Para obtener más información sobre cada propiedad, vea [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
+4.  En el **propiedades** ventana, establezca las propiedades de la instancia de método. Para obtener más información sobre cada propiedad, vea [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
   
-## Vea también  
- [Introducción general a las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
- [Cómo: Agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Cómo: Agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+## <a name="see-also"></a>Vea también  
+ [Información general de herramientas del diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [Cómo: definir el Descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

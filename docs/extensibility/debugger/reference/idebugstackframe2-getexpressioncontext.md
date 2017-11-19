@@ -1,53 +1,53 @@
 ---
-title: "IDebugStackFrame2::GetExpressionContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetExpressionContext"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetExpressionContext"
+title: IDebugStackFrame2::GetExpressionContext | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2::GetExpressionContext
+helpviewer_keywords: IDebugStackFrame2::GetExpressionContext
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 733fedd41741ff0027ba4e9507782d7d9e8b4d8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2::GetExpressionContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene un contexto de evaluación para la evaluación de expresiones en el contexto actual de un marco de pila y un subproceso.  
+# <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
+Obtiene un contexto de evaluación para la evaluación de expresión en el contexto actual de un marco de pila y subproceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetExpressionContext (   
-   IDebugExpressionContext2** ppExprCxt  
+```cpp  
+HRESULT GetExpressionContext (   
+   IDebugExpressionContext2** ppExprCxt  
 );  
 ```  
   
-```c#  
-int GetExpressionContext (   
-   out IDebugExpressionContext2 ppExprCxt  
+```csharp  
+int GetExpressionContext (   
+   out IDebugExpressionContext2 ppExprCxt  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppExprCxt`  
- \[out\]  Devuelve un objeto de [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) que representa un contexto para la evaluación de la expresión.  
+ [out] Devuelve un [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) objeto que representa un contexto para la evaluación de expresión.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- Normalmente, un contexto de evaluación de la expresión se puede considerar como el ámbito para realizar la evaluación de la expresión.  Llame al método de [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para analizar una expresión y después llamar a los métodos resultantes de [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o de [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para evaluar la expresión analizada.  
+## <a name="remarks"></a>Comentarios  
+ Por lo general, el contexto de evaluación de una expresión puede considerarse como un ámbito para llevar a cabo la evaluación de expresiones. Llame a la [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método para analizar una expresión y, a continuación, llamar a resultante [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) métodos para evaluar la expresión analizada.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   

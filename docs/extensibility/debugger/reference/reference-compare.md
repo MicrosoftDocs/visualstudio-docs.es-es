@@ -1,67 +1,67 @@
 ---
-title: "REFERENCE_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "REFERENCE_COMPARE"
-helpviewer_keywords: 
-  - "Enumeración REFERENCE_COMPARE"
+title: REFERENCE_COMPARE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: REFERENCE_COMPARE
+helpviewer_keywords: REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 07d8b5ade6e80c0629d4f0c3eedee2941f9b95a5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# REFERENCE_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-especifica el tipo de comparación para las referencias.  
+# <a name="referencecompare"></a>REFERENCE_COMPARE
+Especifica el tipo de comparación de referencias.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_REFERENCE_COMPARE {   
-   REF_COMPARE_EQUAL        = 0x0001,  
-   REF_COMPARE_LESS_THAN    = 0x0002,  
-   REF_COMPARE_GREATER_THAN = 0x0003  
+```cpp  
+enum enum_REFERENCE_COMPARE {   
+   REF_COMPARE_EQUAL        = 0x0001,  
+   REF_COMPARE_LESS_THAN    = 0x0002,  
+   REF_COMPARE_GREATER_THAN = 0x0003  
 };  
 typedef DWORD REFERENCE_COMPARE;  
 ```  
   
-```c#  
-public enum enum_REFERENCE_COMPARE {   
-   REF_COMPARE_EQUAL        = 0x0001,  
-   REF_COMPARE_LESS_THAN    = 0x0002,  
-   REF_COMPARE_GREATER_THAN = 0x0003  
+```csharp  
+public enum enum_REFERENCE_COMPARE {   
+   REF_COMPARE_EQUAL        = 0x0001,  
+   REF_COMPARE_LESS_THAN    = 0x0002,  
+   REF_COMPARE_GREATER_THAN = 0x0003  
 };  
 ```  
   
-## Members  
- REF\_COMPARE\_EQUAL  
- especifica igual\-a comparación.  
+## <a name="members"></a>Miembros  
+ REF_COMPARE_EQUAL  
+ Especifica una comparación igual que.  
   
- REF\_COMPARE\_LESS\_THAN  
- Especifica a que comparación.  
+ REF_COMPARE_LESS_THAN  
+ Especifica una menor-que la comparación.  
   
- REF\_COMPARE\_GREATER\_THAN  
- Especifica una mayor comparación.  
+ REF_COMPARE_GREATER_THAN  
+ Especifica una mayor-a la comparación.  
   
-## Comentarios  
- Pasado como argumento al método de [Comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md) .  
+## <a name="remarks"></a>Comentarios  
+ Pasa como un argumento a la [comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md) método.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)

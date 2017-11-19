@@ -1,121 +1,120 @@
 ---
-title: "C&#243;mo: Agregar y quitar ensamblados adicionales"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.CustomAssembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Desarrollo de SharePoint en Visual Studio, paquetes"
+title: "Cómo: agregar y quitar ensamblados adicionales | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.CustomAssembly
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: d9d1e8db-9df2-4e07-ac8d-59ef05d24090
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7b7859738ac1fe70bdca4cdca5d2dff1220a22b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar y quitar ensamblados adicionales
-  Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución \(.wsp\).  De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: Agregar y quitar ensamblados adicionales
+  Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
   
  También puede agregar y cambiar los controles seguros y los archivos de recursos de clase asociados a los ensamblados.  
   
-## Agregar ensamblados, controles seguros y recursos de clase adicionales  
- Puede agregar ensamblados adicionales al paquete de solución de SharePoint.  Los ensamblados adicionales de una solución en espacio aislado se implementan en la memoria caché global de ensamblados, pero los elementos de proyecto de SharePoint incluidos en una solución en espacio aislado se agregan a la base de datos de contenido.  También puede agregar controles seguros y recursos de clase a estos ensamblados adicionales.  Para obtener más información sobre los controles seguros, vea [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) o “Creación de una entrada SafeControl” en [Implementación de elementos web en SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
+## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Agregar ensamblados, controles seguros y recursos de clase adicionales  
+ Puede agregar ensamblados adicionales al paquete de solución de SharePoint. Los ensamblados adicionales de una solución en espacio aislado se implementan en la memoria caché global de ensamblados, pero los elementos de proyecto de SharePoint incluidos en una solución en espacio aislado se agregan a la base de datos de contenido. También puede agregar controles seguros y recursos de clase a estos ensamblados adicionales. Para obtener más información acerca de controles seguros, vea [proporcionando información empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) o "Crear una entrada SafeControl" en [implementar elementos Web en SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
-#### Para agregar un ensamblado existente  
+#### <a name="to-add-an-existing-assembly"></a>Para agregar un ensamblado existente  
   
-1.  Abra el **Diseñador de paquetes**.  Para obtener más información, vea [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra la **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Elija la pestaña **Opciones avanzadas**.  
+2.  Elija la **avanzadas** ficha.  
   
-3.  Elija el botón **Agregar** y después elija **Agregar ensamblado existente** de la lista.  
+3.  Elija la **agregar** botón y, a continuación, elija **Agregar ensamblado existente** en la lista.  
   
-     Aparecerá el cuadro de diálogo **Agregar ensamblado existente**.  
+     El **Agregar ensamblado existente** aparece el cuadro de diálogo.  
   
-4.  Elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) y después elija el ensamblado que desee agregar.  Por motivos de portabilidad, se recomienda utilizar una ruta de acceso relativa al ensamblado seleccionado.  
+4.  Elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) y, a continuación, elija el ensamblado que se va a agregar. Por motivos de portabilidad, se recomienda utilizar una ruta de acceso relativa al ensamblado seleccionado.  
   
-5.  Para el **Destino de la implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.  
+5.  Para el **destino de implementación**, elija la **GlobalAssemblyCache** botón de opción para implementar el ensamblado en la caché global de ensamblados o elija la **WebApplication** opción botón para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.  
   
-#### Para agregar un ensamblado desde la salida del proyecto  
+#### <a name="to-add-an-assembly-from-project-output"></a>Para agregar un ensamblado desde la salida del proyecto  
   
-1.  Abra el **Diseñador de paquetes**.  
+1.  Abra la **diseñador del paquete**.  
   
-     Para obtener más información, vea [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Para obtener más información, consulte [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Elija la pestaña **Opciones avanzadas**.  
+2.  Elija la **avanzadas** ficha.  
   
-3.  Elija el botón **Agregar** y después elija **Agregar ensamblado desde la salida del proyecto** de la lista.  
+3.  Elija la **agregar** botón y, a continuación, elija **Agregar ensamblado desde la salida del proyecto** en la lista.  
   
-     Aparecerá el cuadro de diálogo **Agregar ensamblado desde la salida del proyecto**.  
+     El **Agregar ensamblado desde la salida del proyecto** aparece el cuadro de diálogo.  
   
-4.  En la lista **Proyecto de origen**, elija el proyecto de origen que desea agregar.  
+4.  En el **proyecto de código fuente** lista y elija el proyecto de origen que desea agregar.  
   
-5.  Para el **Destino de la implementación**, elija el botón de opción **GlobalAssemblyCache** para implementar el ensamblado en la caché global de ensamblados o elija el botón de opción **WebApplication** para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.  
+5.  Para el **destino de implementación**, elija la **GlobalAssemblyCache** botón de opción para implementar el ensamblado en la caché global de ensamblados o elija la **WebApplication** opción botón para implementar el ensamblado en la carpeta WebApplication del servidor que ejecuta SharePoint.  
   
-#### Para agregar un control seguro  
+#### <a name="to-add-a-safe-control"></a>Para agregar un control seguro  
   
-1.  Abra el cuadro de diálogo **Editar ensamblado existente**.  Para ello, abra el Diseñador de paquetes, elija la pestaña **Opciones avanzadas**, elija un ensamblado y, a continuación, elija el botón **Editar**.  
+1.  Abra la **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija la **avanzadas** ficha, elija un ensamblado y, a continuación, elija la **editar**botón.  
   
-2.  En el panel **Controles seguros**, elija el botón **Haga clic aquí para agregar un nuevo elemento**.  
+2.  En el **controles seguros** panel, elija la **haga clic aquí para agregar un nuevo elemento** botón.  
   
-3.  En la columna **Nombre del ensamblado**, escriba el nombre del ensamblado.  
+3.  En el **nombre de ensamblado** columna, escriba el nombre del ensamblado.  
   
-4.  En la columna **Espacio de nombres**, escriba el nombre del espacio de nombres para el control seguro.  
+4.  En el **Namespace** columna, escriba el nombre del espacio de nombres para el control seguro.  
   
-5.  En la columna **Nombre de tipo**, escriba el nombre del tipo.  
+5.  En el **nombre de tipo** columna, escriba el nombre del tipo.  
   
-#### Para agregar un recurso de clase  
+#### <a name="to-add-a-class-resource"></a>Para agregar un recurso de clase  
   
-1.  Abra el cuadro de diálogo **Editar ensamblado existente**.  Para ello, abra el Diseñador de paquetes, elija la pestaña **Opciones avanzadas**, elija un ensamblado y, a continuación, elija el botón **Editar**.  
+1.  Abra la **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija la **avanzadas** ficha, elija un ensamblado y, a continuación, elija la **editar** botón.  
   
-2.  En el panel **Recursos de clase**, elija el botón **Haga clic aquí para agregar un nuevo elemento**.  
+2.  En el **recursos de clase** panel, elija la **haga clic aquí para agregar un nuevo elemento** botón.  
   
-3.  En la columna **Nombre de archivo**, elija los puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) y elija el recurso de clase que desee agregar.  
+3.  En el **nombre de archivo** columna, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) y elija el recurso de clase que se va a agregar.  
   
-## Eliminar ensamblados personalizados  
+## <a name="deleting-custom-assemblies"></a>Eliminar ensamblados personalizados  
  Puede eliminar los ensamblados de un paquete de SharePoint o eliminar los controles seguros y los recursos de clase de los ensamblados existentes.  
   
-#### Para eliminar un ensamblado existente  
+#### <a name="to-delete-an-existing-assembly"></a>Para eliminar un ensamblado existente  
   
-1.  Abra el **Diseñador de paquetes**.  Para obtener más información, vea [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Abra la **diseñador del paquete**. Para obtener más información, consulte [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Elija la pestaña **Opciones avanzadas**.  
+2.  Elija la **avanzadas** ficha.  
   
-3.  En el panel **Ensamblados adicionales**, elija el ensamblado que desee eliminar.  
+3.  En el **ensamblados adicionales** panel, elija el ensamblado personalizado que desea eliminar.  
   
-4.  Elija el botón **Eliminar**.  
+4.  Elija la **eliminar** botón.  
   
-#### Para eliminar un control seguro de un ensamblado  
+#### <a name="to-delete-a-safe-control-for-an-assembly"></a>Para eliminar un control seguro de un ensamblado  
   
-1.  Abra el cuadro de diálogo **Editar ensamblado existente**.  Para ello, abra el Diseñador de paquetes, elija la pestaña **Opciones avanzadas**, elija un ensamblado y, a continuación, elija el botón **Editar**.  
+1.  Abra la **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija la **avanzadas** ficha, elija un ensamblado y, a continuación, elija la **editar** botón.  
   
 2.  Elija el control seguro que desee eliminar.  
   
 3.  Elija la tecla Supr.  
   
-#### Para eliminar un recurso de clase de un ensamblado  
+#### <a name="to-delete-a-class-resource-for-an-assembly"></a>Para eliminar un recurso de clase de un ensamblado  
   
-1.  Abra el cuadro de diálogo **Editar ensamblado existente**.  Para ello, abra el Diseñador de paquetes, elija la pestaña **Opciones avanzadas**, elija un ensamblado y, a continuación, elija el botón **Editar**.  
+1.  Abra la **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija la **avanzadas** ficha, elija un ensamblado y, a continuación, elija la **editar** botón.  
   
 2.  Elija el recurso de clase que desee eliminar.  
   
 3.  Elija la tecla Supr.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
- [NIB: Building SharePoint Solutions with Team Foundation Server](http://msdn.microsoft.com/es-es/700a570a-e98e-4425-aadd-34c014868d43)  
   
   

@@ -1,40 +1,41 @@
 ---
-title: "Campo TASK_STATE_WAITING_ON_CHILDREN | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Campo TASK_STATE_WAITING_ON_CHILDREN, clase de tarea [motores de depuración de .NET Framework]"
+title: Campo TASK_STATE_WAITING_ON_CHILDREN | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e4ac804160bcbdebfd951c4b281def7eb25265b2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Campo TASK_STATE_WAITING_ON_CHILDREN
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-La tarea ha terminado de ejecutar a su delegado y está esperando implícitamente completar las tareas secundarias asociadas.  
+# <a name="taskstatewaitingonchildren-field"></a>Campo TASK_STATE_WAITING_ON_CHILDREN
+La tarea ha terminado de ejecutar a su delegado y está implícitamente a la espera completar las tareas secundarias asociadas.  
   
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib \(en mscorlib.dll\)  
+ **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Porque no se puede tener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común \(CIL\).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 .field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
 ```  
   
-## Comentarios  
- Si el [m\_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+## <a name="remarks"></a>Comentarios  
+ Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Clase de tarea](../../extensibility/debugger/task-class-internal-members.md)

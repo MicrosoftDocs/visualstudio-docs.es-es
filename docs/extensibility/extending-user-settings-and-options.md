@@ -1,28 +1,30 @@
 ---
-title: "Opciones y configuraci&#243;n de usuario de extensi&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "preferencia del usuario"
-  - "configuración de usuario [Visual Studio SDK]"
-  - "Cuadro de diálogo Opciones, controlar con el SDK de Visual Studio"
-  - "VSPackages, las preferencias del usuario"
+title: "Extensión de opciones y configuración de usuario | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user preferences
+- user settings [Visual Studio SDK]
+- Options dialog box, controlling with the Visual Studio SDK
+- VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8378114348e2cb384ab88c83e36bafc7294d871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Opciones y configuraci&#243;n de usuario de extensi&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En Visual Studio, hay dos maneras principales de conservar las preferencias del usuario. El **Herramientas \/ opciones** páginas permiten a los usuarios definir sus propios valores para muchos tipos diferentes de configuración general y específicos del lenguaje. Configuración de usuario permite a los usuarios especificar las propiedades generales de configuración de Visual Studio. Para obtener más información acerca de las páginas de opciones, consulte [Opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md). Para obtener más información acerca de la configuración de usuario, consulte [Compatibilidad con la configuración de usuario](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extending-user-settings-and-options"></a>Opciones y configuración de usuario de extensión
+En Visual Studio hay dos formas principales de conservar las preferencias del usuario. El **herramientas / opciones** páginas permiten a los usuarios establecer sus propios valores para muchos tipos diferentes de configuración general y específicos del idioma. Configuración de usuario permite a los usuarios especificar las propiedades generales de configuración de Visual Studio. Para obtener más información acerca de las páginas de opciones, vea [opciones y páginas de opciones](../extensibility/internals/options-and-options-pages.md). Para obtener más información acerca de la configuración de usuario, consulte [soporte técnico para la configuración de usuario de](../extensibility/internals/support-for-user-settings.md).  
   
  [Creación de una página de opciones](../extensibility/creating-an-options-page.md)  
  Explica cómo crear una página de opciones.  
@@ -30,11 +32,11 @@ En Visual Studio, hay dos maneras principales de conservar las preferencias del 
  [Creación de una categoría de configuración](../extensibility/creating-a-settings-category.md)  
  Explica cómo crear una categoría de configuración.  
   
- [Utilizar el almacén de configuración](../extensibility/using-the-settings-store.md)  
- Explica cómo utilizar el almacén de configuración.  
+ [Uso del almacén de configuración](../extensibility/using-the-settings-store.md)  
+ Explica cómo usar el almacén de configuración.  
   
- [Obtener información del servicio desde el almacén de configuración](../extensibility/getting-service-information-from-the-settings-store.md)  
+ [Obtención de información de servicio desde el almacén de configuración](../extensibility/getting-service-information-from-the-settings-store.md)  
  Explica cómo obtener los servicios disponibles desde el almacén de configuración.  
   
- [Escribir en el almacén de configuración de usuario](../extensibility/writing-to-the-user-settings-store.md)  
+ [Escritura en el almacén de configuración de usuario](../extensibility/writing-to-the-user-settings-store.md)  
  Explica cómo escribir en el almacén de configuración de usuario.

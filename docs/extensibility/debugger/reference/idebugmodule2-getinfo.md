@@ -1,59 +1,60 @@
 ---
-title: "IDebugModule2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule2::GetInfo"
-helpviewer_keywords: 
-  - "Método GetInfo"
-  - "IDebugModule2::GetInfo (método)"
+title: IDebugModule2::GetInfo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugModule2::GetInfo
+helpviewer_keywords:
+- GetInfo method
+- IDebugModule2::GetInfo method
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e9d88f78d9f3942eb4744168c874a37db26dd144
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugModule2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-obtiene la información sobre este módulo.  
+# <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
+Obtiene información acerca de este módulo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetInfo(   
-   MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO*       pInfo  
+```cpp  
+HRESULT GetInfo(   
+   MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO*       pInfo  
 );  
 ```  
   
-```cpp#  
-int GetInfo(   
-   enum_MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO[]           pInfo  
+```cpp  
+int GetInfo(   
+   enum_MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO[]           pInfo  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `dwFields`  
- \[in\]  Una combinación de marcadores de enumeración de [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifican qué campos de `pInfo` se deben completar.  
+ [in] Una combinación de indicadores de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeración que especifican qué campos de `pInfo` son debe rellenarse.  
   
  `pInfo`  
- \[in, out\]  Una estructura de [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) se completa con una descripción del módulo.  
+ [entrada, salida] A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura que se rellena con una descripción del módulo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- La estructura de [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) contiene el nombre del módulo que se muestra en la ventana de **Módulos** .  
+## <a name="remarks"></a>Comentarios  
+ El [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura contiene el nombre del módulo que se muestra en el **módulos** ventana.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

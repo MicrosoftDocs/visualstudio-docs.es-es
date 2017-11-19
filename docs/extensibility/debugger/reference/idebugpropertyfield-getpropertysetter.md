@@ -1,53 +1,53 @@
 ---
-title: "IDebugPropertyField::GetPropertySetter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField::GetPropertySetter"
-helpviewer_keywords: 
-  - "IDebugPropertyField::GetPropertySetter (método)"
+title: IDebugPropertyField::GetPropertySetter | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPropertyField::GetPropertySetter
+helpviewer_keywords: IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d8499ec6caede611d0665c9d49f8f17fd2873c7f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPropertyField::GetPropertySetter
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-obtiene el método que establece la propiedad.  
+# <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
+Obtiene el método que establece la propiedad.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetPropertySetter(   
-   IDebugMethodField** ppField  
+```cpp  
+HRESULT GetPropertySetter(   
+   IDebugMethodField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPropertySetter(  
-   out IDebugMethodField ppField  
+   out IDebugMethodField ppField  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ppField`  
- \[out\]  devuelve un objeto de [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa el método que establece la propiedad.  
+ [out] Devuelve un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objeto que representa el método que establece la propiedad.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve S\_OK; si no devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve S_OK; de lo contrario, devuelve un código de error.  
   
-## Comentarios  
- Para obtener el método que obtiene la propiedad, llame al método de [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) .  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el método que obtiene la propiedad, llame a la [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) método.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

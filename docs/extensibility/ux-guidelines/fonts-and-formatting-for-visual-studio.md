@@ -4,44 +4,29 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: c55c135034f5b3b2dd09ccf94e22e56e8f04797e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 5a252e22cda234f6a45bee084522b2add2bafada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Las fuentes y el formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a>La fuente del entorno  
  Todas las fuentes dentro de Visual Studio se deben exponer al usuario para la personalización. Esto se realiza principalmente mediante la **fuentes y colores** página en el **Herramientas > opciones** cuadro de diálogo. Las tres categorías principales de configuración de fuente son:  
   
--   **Fuente del entorno** : la fuente principal para el IDE (entorno de desarrollo integrado), utilizada para todos los elementos de interfaz, incluidos los cuadros de diálogo, menús, ventanas de herramientas y ventanas de documento. De forma predeterminada, la fuente del entorno está asociada a una fuente del sistema que se muestra como 9 pt Segoe UI en las versiones actuales de Windows. Uso de fuentes para todos los elementos de la interfaz ayuda a garantizar una apariencia coherente de fuente en todo el IDE.  
+-   **Fuente del entorno** -la fuente principal para el IDE (entorno de desarrollo integrado), utilizada para todos los elementos de interfaz, incluidos los cuadros de diálogo, menús, ventanas de herramientas y ventanas de documento. De forma predeterminada, la fuente del entorno está asociada a una fuente del sistema que se muestra como 9 pt Segoe UI en las versiones actuales de Windows. Uso de fuentes para todos los elementos de la interfaz ayuda a garantizar una apariencia coherente de fuente en todo el IDE.  
   
--   **Editor de texto** : página de elementos que expuesta en código y otros editores basados en texto se pueden personalizar en el Editor de texto en **Herramientas > opciones**.  
+-   **Editor de texto** -página de elementos que expuesta en código y otros editores basados en texto se pueden personalizar en el Editor de texto en **Herramientas > opciones**.  
   
--   **Recopilaciones específicas** : ventanas del diseñador que ofrecen la personalización de sus elementos de interfaz de usuario puede exponer fuentes específicas de su diseño expuesta en su propia página de configuración de **Herramientas > opciones**.  
+-   **Recopilaciones específicas** -ventanas del diseñador que ofrecen la personalización de sus elementos de interfaz de usuario puede exponer fuentes específicas de su diseño expuesta en su propia página de configuración de **Herramientas > opciones**.  
   
 ### <a name="editor-font-customization-and-resizing"></a>Personalización de fuente del Editor y el cambio de tamaño  
  Los usuarios a menudo se ampliar o alejar el tamaño o el color del texto en el editor según sus preferencias, independientemente de la interfaz de usuario general. Dado que la fuente del entorno se usa en los elementos que pueden aparecer dentro de o como parte de un editor o diseñador, es importante tener en cuenta el comportamiento esperado cuando se cambia una de estas clasificaciones de fuente.  
@@ -96,7 +81,7 @@ window.ShowModal()
   
  `ShowModal`¿Devuelve un tipo bool? (un valor booleano que acepta valores NULL) con el `DialogResult`, que puede utilizarse si es necesario. El valor devuelto es true si se ha cerrado el cuadro de diálogo con **Aceptar**.  
   
- Si se necesitan para mostrar algunos UI de WPF que no es un cuadro de diálogo y se hospeda en su propio `HwndSource`, como una ventana emergente o una ventana secundaria WPF de una ventana de ventana primaria de Win32/formularios Windows Forms, debe establecer el `FontFamily` y `FontSize` en el elemento raíz del elemento WPF. (El shell establece las propiedades en la ventana principal, pero no se puede heredar más allá de un `HWND`). El shell proporciona recursos a los que se pueden enlazar las propiedades, como el siguiente:  
+ Si se necesitan para mostrar algunos UI de WPF que no es un cuadro de diálogo y se hospeda en su propio `HwndSource`, como una ventana emergente o una ventana secundaria WPF de una ventana de ventana primaria de Win32/formularios Windows Forms, debe establecer el `FontFamily` y `FontSize` en el elemento raíz de la e WPF lemento. (El shell establece las propiedades en la ventana principal, pero no se puede heredar más allá de un `HWND`). El shell proporciona recursos a los que se pueden enlazar las propiedades, como el siguiente:  
   
 ```  
 <Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -300,11 +285,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="testing-the-environment-font"></a>Probar la fuente del entorno  
  Para asegurarse de que la interfaz de usuario está usando la fuente del entorno y respeta la configuración de tamaño, abra **Herramientas > Opciones > entorno > fuentes y colores** y seleccione "Fuente del entorno" en la "Mostrar valores para:" menú desplegable.  
   
- ![Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones](~/extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones
+ ![Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "a_OptionsFonts 0201")<br />Configuración de fuentes y colores en las herramientas de &gt; cuadro de diálogo Opciones
   
  Establezca la fuente en algo muy diferente al predeterminado. Para que sea obvio que no actualiza la interfaz de usuario, elija una fuente con gracias (por ejemplo, "Times New Roman") y establezca un tamaño muy grande. A continuación, pruebe la interfaz de usuario para asegurarse de que respeta el entorno. Este es un ejemplo de cómo utilizar el cuadro de diálogo de licencia:  
   
- ![Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno](~/extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno
+ ![Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "b_WrongFontDialog 0201")<br />Ejemplo de texto de la interfaz de usuario que no respeta la fuente del entorno
   
  En este caso, "Información de usuario" e "Información de producto" no respetan la fuente. En algunos casos esto podría ser una opción de diseño explícito, pero puede ser un error si la fuente explícita no se especifica como parte de las especificaciones de límite.  
   
@@ -431,43 +416,43 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Encabezado mayor en los cuadros de diálogo de firma<br />-Encabezado de informe principal<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -Uso de la interfaz de usuario que no sea de interfaz de usuario como página de inicio de firma<br />-Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en las ventanas de herramientas|**Aparece como:** Segoe UI Light de pt 28<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; Encabezado claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
+|**Uso:**<br /><br /> -Encabezado mayor en los cuadros de diálogo de firma<br />-Encabezado de informe principal<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use siempre ligero<br /><br /> **No:**<br /><br /> -Uso de la interfaz de usuario que no sea de interfaz de usuario como página de inicio de firma<br />-Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en las ventanas de herramientas|**Aparece como:** Segoe UI Light de pt 28<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 310% &#43; Encabezado claro](../../extensibility/ux-guidelines/media/0202-a_ef310.png "a_EF310 0202")|  
   
 #### <a name="200-environment-font--semilight"></a>Fuente del entorno 200% + Semiclaro  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Subtítulos<br />-Títulos de los cuadros de diálogo pequeñas y medianas<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use siempre Semilight peso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en las ventanas de herramientas|**Aparece como:** 18 pto Segoe UI Semillight<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
+|**Uso:**<br /><br /> -Subtítulos<br />-Títulos de los cuadros de diálogo pequeñas y medianas<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use siempre Semilight peso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en las ventanas de herramientas|**Aparece como:** 18 pto Segoe UI Semillight<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "b_EF200 0202")|  
   
 #### <a name="155-environment-font"></a>Fuente del entorno 155%  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Section títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](~/extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
+|**Uso:**<br /><br /> -Section títulos de documento bien la interfaz de usuario<br />: Informes<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 14 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "c_EF155 0202")|  
   
 #### <a name="133-environment-font"></a>Fuente del entorno 133%  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Menores subtítulos en los cuadros de diálogo de firma<br />-Menores subtítulos en documento bien la interfaz de usuario<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 12 pto Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
+|**Uso:**<br /><br /> -Menores subtítulos en los cuadros de diálogo de firma<br />-Menores subtítulos en documento bien la interfaz de usuario<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 12 pto Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "d_EF133 0202")|  
   
 #### <a name="122-environment-font"></a>Fuente del entorno 122%  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Exploración por fichas vertical<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 11 ptos Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
+|**Uso:**<br /><br /> -Encabezados de sección en los cuadros de diálogo de firma<br />-Nodos superior en la vista de árbol<br />-Exploración por fichas vertical<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:**<br /><br /> -Negrita, cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** 11 ptos Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de encabezado con fuente del entorno 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "e_EF122 0202")|  
   
 #### <a name="environment-font--bold"></a>Fuente del entorno + negrita  
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Las etiquetas y subtítulos en los cuadros de diálogo de firma<br />-Las etiquetas y subtítulos en informes<br />-Las etiquetas y subtítulos en documento bien la interfaz de usuario<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use peso negrita<br /><br /> **No:**<br /><br /> -Cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** en negrita 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno &#43; Encabezado en negrita](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|  
+|**Uso:**<br /><br /> -Las etiquetas y subtítulos en los cuadros de diálogo de firma<br />-Las etiquetas y subtítulos en informes<br />-Las etiquetas y subtítulos en documento bien la interfaz de usuario<br /><br /> **Hacer:**<br /><br /> -Use el tipo oración<br />-Use peso negrita<br /><br /> **No:**<br /><br /> -Cursiva o negrita cursiva<br />-Uso para el texto principal<br />-Usar en los controles estándar de Visual Studio<br />-Usar en las ventanas de herramientas|**Aparece como:** en negrita 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno &#43; Encabezado en negrita](../../extensibility/ux-guidelines/media/0202-f_efb.png "f_EFB 0202")|  
   
 #### <a name="environment-font"></a>Fuente del entorno  
   
 |||  
 |-|-|  
-|**Uso:** todo el texto<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:** cursiva o negrita cursiva|**Aparece como:** 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|  
+|**Uso:** todo el texto<br /><br /> **Realice:** frase caso de uso<br /><br /> **No:** cursiva o negrita cursiva|**Aparece como:** 9 pt Segoe UI<br /><br /> **Ejemplo Visual:**<br /><br /> ![Ejemplo de fuente del entorno](../../extensibility/ux-guidelines/media/0202-g_ef.png "g_EF 0202")|  
   
 ### <a name="padding-and-spacing"></a>Relleno y espaciado  
  Encabezados requieren espacio alrededor de ellas para darles el énfasis adecuado. Este espacio varía según el tamaño de punto y lo está cerca del encabezado, por ejemplo, una regla horizontal o una línea de texto en la fuente del entorno.  

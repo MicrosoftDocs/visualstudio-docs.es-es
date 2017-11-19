@@ -1,29 +1,34 @@
 ---
-title: "Folder (Elemento, Plantillas de proyecto de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Folder"
-helpviewer_keywords: 
-  - "Folder (elemento) [plantillas de proyecto de Visual Studio]"
+title: Elemento Folder (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Folder
+helpviewer_keywords: Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Folder (Elemento, Plantillas de proyecto de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="folder-element-visual-studio-project-templates"></a>Folder (Elemento, Plantillas de proyecto de Visual Studio)
 Especifica una carpeta que se agregará al proyecto.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
+ \<Carpeta >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Folder Name="Project Folder">  
@@ -32,35 +37,35 @@ Especifica una carpeta que se agregará al proyecto.
 </Folder>  
 ```  
   
-## Atributos y elementos  
- Las siguientes secciones describen atributos, elementos secundarios y elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`Name`|Atributo necesario.<br /><br /> Nombre de la carpeta de proyecto.|  
-|`TargetFolderName`|Atributo opcional.<br /><br /> Especifica el nombre de la carpeta al crear un proyecto a partir de la plantilla.  El atributo es útil para usar el reemplazo de parámetros para crear un nombre de carpeta o denominar una carpeta con una cadena internacional que no se pueda utilizar directamente en el archivo .zip.|  
+|---------------|-----------------|  
+|`Name`|Atributo necesario.<br /><br /> El nombre de la carpeta del proyecto.|  
+|`TargetFolderName`|Atributo opcional.<br /><br /> Especifica el nombre que asigne a la carpeta cuando se crea un proyecto de la plantilla. Este atributo es útil para usar el reemplazo de parámetros para crear un nombre de carpeta o denominar una carpeta con una cadena internacional no se puede usar directamente en el archivo zip.|  
   
-### Elementos secundarios  
-  
-|Elemento|Descripción|  
-|--------------|-----------------|  
-|`Folder`|Especifica una carpeta que se agregará al proyecto.  Los elementos `Folder` pueden contener elementos secundarios `Folder`.|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica un archivo que se agregará al proyecto.|  
-  
-### Elementos primarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
+|-------------|-----------------|  
+|`Folder`|Especifica una carpeta para agregar al proyecto. `Folder`los elementos pueden contener secundarios `Folder` elementos.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica un archivo que desea agregar al proyecto.|  
+  
+### <a name="parent-elements"></a>Elementos primarios  
+  
+|Elemento|Descripción|  
+|-------------|-----------------|  
 |[Proyecto](../extensibility/project-element-visual-studio-templates.md)|Elemento secundario opcional de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
-## Comentarios  
- `Folder` es un elemento secundario opcional de `Project`.  
+## <a name="remarks"></a>Comentarios  
+ `Folder`es un elemento secundario opcional de `Project`.  
   
- Puede utilizar cualquiera de los métodos siguientes para organizar los elementos de proyecto en carpetas dentro de una plantilla:  
+ Puede utilizar cualquiera de los métodos siguientes para organizar los elementos de proyecto en carpetas en una plantilla:  
   
--   Incluya las carpetas en el archivo .zip de la plantilla y agréguelas al proyecto en el archivo .vstemplate especificando la ruta de acceso al archivo en los elementos `ProjectItem`, sin ningún elemento `Folder`.  Éste es el método recomendado.  Por ejemplo:  
+-   Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate especificando la ruta de acceso al archivo en el `ProjectItem` elementos, y no `Folder` elementos. Este es el método recomendado. Por ejemplo:  
   
      `...`  
   
@@ -70,7 +75,7 @@ Especifica una carpeta que se agregará al proyecto.
   
      `...`  
   
--   Incluya las carpetas en el archivo .zip de la plantilla y agréguelos al proyecto en el archivo .vstemplate con elementos `Folder`.  Por ejemplo:  
+-   Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate con `Folder` elementos. Por ejemplo:  
   
      `...`  
   
@@ -84,7 +89,7 @@ Especifica una carpeta que se agregará al proyecto.
   
      `...`  
   
--   No incluya las carpetas en el archivo .zip de la plantilla, pero agregue las carpetas mediante el atributo `TargetFileName` del elemento `ProjectItem`.  Por ejemplo:  
+-   No incluya carpetas en el archivo .zip de plantilla, pero agregue las carpetas mediante la `TargetFileName` atributo de la `ProjectItem` elemento. Por ejemplo:  
   
      `...`  
   
@@ -94,8 +99,8 @@ Especifica una carpeta que se agregará al proyecto.
   
      `...`  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos para una plantilla de proyecto de una aplicación Windows de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -123,7 +128,7 @@ Especifica una carpeta que se agregará al proyecto.
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
- [ProjectItem \(Elemento, Plantillas de elementos de Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

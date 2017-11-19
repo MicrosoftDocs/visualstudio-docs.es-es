@@ -1,12 +1,10 @@
 ---
-title: Events in Office Projects | Microsoft Docs
+title: Eventos en proyectos de Office | Documentos de Microsoft
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -35,33 +33,32 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
 ms.assetid: 666d7f23-ef85-4f2e-9cd3-258df5bdc6fd
-caps.latest.revision: 51
-author: kempb
-ms.author: kempb
+caps.latest.revision: "51"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6a54e56cbb529482b8980d041044ff8c07b0cd1b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 48670b03444a8701dc3c23fe591a962e01f51f31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="events-in-office-projects"></a>Events in Office Projects
-  Each Office project template automatically generates several event handlers. The event handlers for document-level customizations are slightly different from event handlers for VSTO Add-ins.  
+# <a name="events-in-office-projects"></a>Eventos de los proyectos de Office
+  Cada plantilla de proyecto de Office genera automáticamente varios controladores de eventos. Los controladores de eventos de las personalizaciones de nivel de documento son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="document-level-projects"></a>Document-Level Projects  
- Visual Studio provides generated code behind new or existing documents or worksheets in document-level customizations. This code raises two different events: **Startup** and **Shutdown**.  
+## <a name="document-level-projects"></a>Proyectos de nivel del documento  
+ Visual Studio proporciona código generado subyacente en documentos nuevos o existentes o en hojas de cálculo para las personalizaciones de nivel de documento. Este código genera dos eventos diferentes: **Startup** y **Shutdown**.  
   
-### <a name="startup-event"></a>Startup Event  
- The **Startup** event is raised for each of the host items (document, workbook or worksheet) after the document is running and all the initialization code in the assembly has been run. It is the last thing to run in the constructor of the class that your code is running in. For more information about host items, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+### <a name="startup-event"></a>Startup (evento)  
+ El evento **Startup** se desencadena para cada uno de los elementos host (documento, libro u hoja de cálculo) cuando el documento está en ejecución y ya se ha ejecutado todo el código de inicialización del ensamblado. Es lo último que se ejecuta en el constructor de la clase en la que se ejecuta el código. Para más información sobre los elementos host, vea [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
- When you create a document-level project, Visual Studio creates event handlers for the **Startup** event in the generated code files:  
+ Cuando se crea un proyecto de nivel de documento, Visual Studio crea controladores de eventos para el evento **Startup** en los archivos de código generado:  
   
--   For Microsoft Office Word projects, the event handler is named `ThisDocument_Startup`.  
+-   En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Startup`.  
   
--   For Microsoft Office Excel projects, the event handlers have the following names:  
+-   En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:  
   
     -   `Sheet1_Startup`  
   
@@ -71,14 +68,14 @@ ms.lasthandoff: 08/30/2017
   
     -   `ThisWorkbook_Startup`  
   
-### <a name="shutdown-event"></a>Shutdown Event  
- The **Shutdown** event is raised for each of the host items (document or worksheet) when the application domain that your code is loaded in is about to unload. It is the last thing to be called in the class as it unloads.  
+### <a name="shutdown-event"></a>Shutdown (evento)  
+ El evento **Shutdown** se desencadena para cada uno de los elementos host (documento u hoja de cálculo) cuando el dominio de aplicación en el que se ha cargado el código está a punto de descargarse. Es lo último a lo que se llama en la clase cuando se descarga.  
   
- When you create a document-level project, Visual Studio creates event handlers for the **Shutdown** event in the generated code files:  
+ Cuando se crea un proyecto de nivel de documento, Visual Studio crea controladores de eventos para el evento **Shutdown** en los archivos de código generado:  
   
--   For Microsoft Office Word projects, the event handler is named `ThisDocument_Shutdown`.  
+-   En los proyectos de Microsoft Office Word, el controlador de eventos se denomina `ThisDocument_Shutdown`.  
   
--   For Microsoft Office Excel projects, the event handlers have the following names:  
+-   En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:  
   
     -   `Sheet1_Shutdown`  
   
@@ -89,24 +86,26 @@ ms.lasthandoff: 08/30/2017
     -   `ThisWorkbook_Shutdown`  
   
 > [!NOTE]  
->  Do not programmatically remove controls during the **Shutdown** event handler of the document. The UI elements of the document are no longer available when the **Shutdown** event occurs. If you want to remove controls before the application closes, add your code to another event handler, such as **BeforeClose** or **BeforeSave**.  
+>  No quite controles mediante programación durante el controlador de eventos **Shutdown** del documento. Los elementos de la interfaz de usuario del documento ya no están disponibles cuando se produce el evento **Shutdown** . Si desea quitar controles antes de que se cierre la aplicación, agregue el código a otro controlador de eventos, como **BeforeClose** o **BeforeSave**.  
   
-### <a name="event-handler-method-declarations"></a>Event Handler Method Declarations  
- Every event handler method declaration has the same arguments passed to it: *sender* and *e*. In Excel, the *sender* argument refers to the sheet, such as `Sheet1` or `Sheet2`; in Word, the *sender* argument refers to the document. The *e* argument refers to the standard arguments for an event, which are not used in this case.  
+### <a name="event-handler-method-declarations"></a>Declaraciones de método de controlador de eventos  
+ Todas las declaraciones del método de controlador de eventos reciben los mismos argumentos que se les pasan: *sender* y *e*. En Excel, el argumento *sender* hace referencia a la hoja, como `Sheet1` o `Sheet2`; en Word, el argumento *sender* hace referencia al documento. El argumento *e* hace referencia a los argumentos estándar de un evento, que no se usan en este caso.  
   
- The following code example shows the default event handlers in document-level projects for Word.  
+ El ejemplo de código siguiente muestra los controladores de eventos predeterminados en los proyectos de nivel de documento para Word.  
   
- [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)] [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]  
+ [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
+ [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]  
   
- The following code example shows the default event handlers in document-level projects for Excel.  
+ El ejemplo de código siguiente muestra los controladores de eventos predeterminados en los proyectos de nivel de documento para Excel.  
   
 > [!NOTE]  
->  The following code example shows the event handlers in the `Sheet1` class. The names of the event handlers in other host item classes correspond to the class name. For example, in the `Sheet2` class, the **Startup** event handler is named `Sheet2_Startup`. In the `ThisWorkbook` class, the **Startup** event handler is named `ThisWorkbook_Startup`.  
+>  En el ejemplo de código siguiente se muestran los controladores de eventos de la clase `Sheet1` . Los nombres de los controladores de eventos de otras clases del elemento host corresponden al nombre de la clase. Por ejemplo, en la clase `Sheet2` , el controlador de eventos **Startup** se denomina `Sheet2_Startup`. En la clase `ThisWorkbook` , el controlador de eventos **Startup** se denomina `ThisWorkbook_Startup`.  
   
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)] [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
+ [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
+ [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
   
-### <a name="order-of-events-in-document-level-excel-projects"></a>Order of Events in Document-Level Excel Projects  
- The **Startup** event handlers in Excel projects are called in this order:  
+### <a name="order-of-events-in-document-level-excel-projects"></a>Orden de eventos en proyectos de Excel de nivel de documento  
+ Los controladores de eventos **Startup** en proyectos de Excel se llaman en este orden:  
   
 1.  `ThisWorkbook_Startup`.  
   
@@ -116,9 +115,9 @@ ms.lasthandoff: 08/30/2017
   
 4.  `Sheet3_Startup`.  
   
-5.  Other sheets in order.  
+5.  Otras hojas en orden.  
   
- The **Shutdown** event handlers in a workbook solution are called in this order:  
+ Los controladores de eventos **Shutdown** en una solución de libro se llaman en este orden:  
   
 1.  `ThisWorkbook_Shutdown`.  
   
@@ -128,40 +127,40 @@ ms.lasthandoff: 08/30/2017
   
 4.  `Sheet3_Shutdown`.  
   
-5.  Other sheets in order.  
+5.  Otras hojas en orden.  
   
- The order is determined when the project is compiled. If the user rearranges the sheets at run time, it does not change the order that the events are raised the next time the workbook is opened or closed.  
+ El orden se determina cuando se compila el proyecto. Si el usuario reorganiza las hojas en tiempo de ejecución, no cambia el orden en que los eventos se desencadenan la siguiente vez que se abre o cierra el libro.  
   
-## <a name="vsto-add-in-projects"></a>VSTO Add-in Projects  
- Visual Studio provides generated code in VSTO Add-ins. This code raises two different events: <xref:Microsoft.Office.Tools.AddInBase.Startup> and <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
+## <a name="vsto-add-in-projects"></a>Proyectos de complementos de VSTO  
+ Visual Studio ofrece código generado en los complementos de VSTO. Este código genera dos eventos diferentes: <xref:Microsoft.Office.Tools.AddInBase.Startup> y <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
   
-### <a name="startup-event"></a>Startup Event  
- The <xref:Microsoft.Office.Tools.AddIn.Startup> event is raised after the VSTO Add-in is loaded and all the initialization code in the assembly has been run. This event is handled by the `ThisAddIn_Startup` method in the generated code file.  
+### <a name="startup-event"></a>Startup (evento)  
+ El evento <xref:Microsoft.Office.Tools.AddIn.Startup> se desencadena cuando se ha cargado el complemento de VSTO y se ha ejecutado todo el código de inicialización del ensamblado. Este evento está controlado por el método `ThisAddIn_Startup` en el archivo de código generado.  
   
- Code in the `ThisAddIn_Startup` event handler is the first user code to run, unless your VSTO Add-in overrides the <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> method. In this case, the `ThisAddIn_Startup` event handler is called after <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
+ El código del controlador de eventos `ThisAddIn_Startup` es el primer código de usuario que se ejecuta, a menos que el complemento de VSTO invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . En ese caso, se llama al controlador de eventos `ThisAddIn_Startup` después de <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Don't add code in the `ThisAdd-In_Startup` event handler if the code requires a document to be open. Instead, add that code to an event that the Office application raises when a user creates or opens a document. For more information, see [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ No agregue código en el `ThisAdd-In_Startup` controlador de eventos si el código requiere que un documento esté abierto. En su lugar, agregue ese código a un evento que sea generado por la aplicación de Office cuando un usuario cree o abra un documento. Para obtener más información, consulta [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
- For more information about the startup sequence of VSTO Add-ins, see [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
+ Para obtener más información acerca de la secuencia de inicio de los complementos VSTO, consulte [arquitectura de complementos](../vsto/architecture-of-vsto-add-ins.md).  
   
-### <a name="shutdown-event"></a>Shutdown Event  
- The <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event is raised when the application domain that your code is loaded in is about to be unloaded. This event is handled by the `ThisAddIn_Shutdown` method in the generated code file. This event handler is the last user code to run when the VSTO Add-in is unloaded.  
+### <a name="shutdown-event"></a>Shutdown (evento)  
+ El evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> se desencadena cuando el dominio de aplicación en el que se ha cargado el código está a punto de descargarse. Este evento está controlado por el método `ThisAddIn_Shutdown` en el archivo de código generado. Este controlador de eventos es el último código de usuario que se ejecuta cuando se descarga el complemento de VSTO.  
   
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown Event in Outlook VSTO Add-ins  
- The <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event is raised only when the user disables the VSTO Add-in by using the COM Add-ins dialog box in Outlook. It is not raised when Outlook exits. If you have code that must run when Outlook exits, handle either of the following events:  
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>El evento Shutdown en los complementos de VSTO de Outlook  
+ El evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> solo se desencadena cuando el usuario deshabilita el complemento de VSTO mediante el cuadro de diálogo Complementos COM de Outlook. No se desencadena cuando se cierra Outlook. Si tiene código que se debe ejecutar cuando Outlook se cierra, controle uno de los siguientes eventos:  
   
--   The <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> event of the <xref:Microsoft.Office.Interop.Outlook.Application> object.  
+-   El evento <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> del objeto <xref:Microsoft.Office.Interop.Outlook.Application> .  
   
--   The <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> event of the <xref:Microsoft.Office.Interop.Outlook.Explorer> object.  
+-   El evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> del objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> .  
   
 > [!NOTE]  
->  You can force Outlook to raise the <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event when it exits by modifying the registry. However, if an administrator reverts this setting, any code that you add to the `ThisAddIn_Shutdown` method no longer runs when Outlook exits. For more information, see [Shutdown Changes for Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
+>  Puede modificar el Registro para forzar a Outlook a desencadenar el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> cuando salga. Sin embargo, si un administrador cambia esta configuración, cualquier código que agregue al método `ThisAddIn_Shutdown` dejará de ejecutarse al salir de Outlook. Para más información, vea [Cambios en Shutdown para Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
-## <a name="see-also"></a>See Also  
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+## <a name="see-also"></a>Vea también  
+ [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   
+ [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
+ [Información general sobre las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)  
   
   

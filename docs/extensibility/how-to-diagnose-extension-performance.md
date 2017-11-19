@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b78a02b9d780b9556cbbf42fce04b1da06e22833
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión de inicio
 
@@ -195,4 +179,3 @@ Es importante minimizar el número de ensamblados cargados dentro de una rutina 
 ## <a name="summary"></a>Resumen
 
 Inicio de Visual Studio ha sido una de las áreas que obtenemos continuamente comentarios en. Nuestro objetivo como se mencionó anteriormente es para que todos los usuarios que tienen un inicio coherente experiencia independientemente de los componentes y extensiones que se han instalado y nos gustaría trabajar con los propietarios de extensión para ayudarles a nos ayudan a lograr este objetivo. Las instrucciones anteriores deben ser útil para comprender un impacto de las extensiones en el inicio y o evitar la necesidad de automáticamente la carga o cargar de forma asincrónica para minimizar el impacto en la productividad del usuario.
-

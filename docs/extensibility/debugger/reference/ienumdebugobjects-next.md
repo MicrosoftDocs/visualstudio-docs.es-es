@@ -1,59 +1,59 @@
 ---
-title: "IEnumDebugObjects::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::Next"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::Next (método)"
+title: IEnumDebugObjects::Next | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugObjects::Next
+helpviewer_keywords: IEnumDebugObjects::Next method
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8b57634ffd0634c7dada2f91827605b03d5cd3f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugObjects::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Este método devuelve el siguiente conjunto de elementos de la enumeración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG          celt,  
-   IDebugObject** rgelt,  
-   ULONG*         pceltFetched  
+   ULONG          celt,  
+   IDebugObject** rgelt,  
+   ULONG*         pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint           celt,  
-   IDebugObject[] rgelt,  
-   ref uint       pceltFetched  
+   uint           celt,  
+   IDebugObject[] rgelt,  
+   ref uint       pceltFetched  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `celt`  
- \[in\]  Número de elementos que se van a recuperar.  También especifica el tamaño máximo de la matriz de `rgelt` .  
+ [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- \[in, out\]  Matriz de elementos de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que se completan.  
+ [entrada, salida] Matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) elementos que deben rellenarse.  
   
  `pceltFetched`  
- \[out\]  devuelve el número de elementos devueltos realmente en `rgelt`.  
+ [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`.  Devuelve `S_FALSE` si menor que el número solicitado de elementos podrían devolverse; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si pudieron devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,99 +1,100 @@
 ---
-title: "C&#243;mo: Personalizar una caracter&#237;stica de SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.FeatureDesigner.SwitchView"
-  - "VS.SharePointTools.RAD.featureDesigner.Manifest"
-  - "VS.SharePointTools.RAD.FeatureDesignerProperties"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, características"
+title: "Cómo: personalizar una característica de SharePoint | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.RAD.FeatureDesigner.SwitchView
+- VS.SharePointTools.RAD.featureDesigner.Manifest
+- VS.SharePointTools.RAD.FeatureDesignerProperties
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: e624c546-564b-4c73-9f1b-dc3675e76a55
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d81a65a8030fd77ead1362602b0e16f474ef410c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Personalizar una caracter&#237;stica de SharePoint
-  Puede crear y personalizar las características de SharePoint utilizando el diseñador de características en Visual Studio.  Por ejemplo, puede establecer el ámbito Característica y agregar otras características como dependencias.  De forma predeterminada, se abre el diseñador de características cuando se agrega una nueva característica en el Explorador de soluciones o el Explorador de paquetes de SharePoint.  
+# <a name="how-to-customize-a-sharepoint-feature"></a>Cómo: Personalizar una característica de SharePoint
+  Puede crear y personalizar las características de SharePoint mediante el Diseñador de características de Visual Studio. Por ejemplo, puede establecer el ámbito de característica y agregar otras características como dependencias. De forma predeterminada, se abre el Diseñador de características cuando se agrega una nueva característica en el Explorador de soluciones o el Explorador de paquetes de SharePoint.  
   
-## Abrir el Diseñador de características  
- Puede agregar o quitar los elementos de proyecto de SharePoint de una característica utilizando el diseñador de características.  
+## <a name="opening-the-feature-designer"></a>Abrir el Diseñador de características  
+ Puede agregar o quitar elementos de proyecto de SharePoint a una característica utilizando el Diseñador de características.  
   
-#### Para abrir el Diseñador de características  
+#### <a name="to-open-the-feature-designer"></a>Para abrir el Diseñador de características  
   
-1.  En el **Explorador de soluciones**, expanda **Características**.  
+1.  En **el Explorador de soluciones**, expanda **características**.  
   
-2.  Haga doble clic en el elemento de *Feature1* , o abra el menú contextual para el elemento de *Feature1* y elija **Diseñador de vistas**.  
+2.  Haga doble clic en el *Feature1* de elemento o abra el menú contextual para el *Feature1* de elemento y, a continuación, elija **Diseñador de vistas**.  
   
-## Ver el archivo de manifiesto empaquetado  
- Puede utilizar el diseñador de características para modificar y generar el archivo de manifiesto empaquetado para la característica \(feature.xml\).  Después, puede ver el código XML de este archivo en Visual Studio.  
+## <a name="viewing-the-packaged-manifest-file"></a>Ver el archivo de manifiesto empaquetado  
+ Puede utilizar el Diseñador de características para modificar y generar el archivo de manifiesto empaquetado para la característica (feature.xml). A continuación, puede ver el código XML de este archivo en Visual Studio.  
   
-#### Para ver el archivo de manifiesto empaquetado  
+#### <a name="to-view-the-packaged-manifest-file"></a>Para ver el archivo de manifiesto empaquetado  
   
-1.  En **Diseñador de características**, elija la ficha de **Manifiesto** .  
+1.  En el **Diseñador de características**, elija la **manifiesto** ficha.  
   
-#### Para ver el archivo de manifiesto empaquetado utilizando el Explorador de soluciones  
+#### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Para ver el archivo de manifiesto empaquetado mediante el Explorador de soluciones  
   
-1.  En **Explorador de soluciones**, elija el icono de **Mostrar todos los archivos** .  
+1.  En **el Explorador de soluciones**, elija la **mostrar todos los archivos** icono.  
   
-2.  Expanda características, expanda FeatureName, expanda FeatureName.feature, abra *FeatureName*. Archivo de Template.xml.  
+2.  Expanda características, expanda NombreCaracterística, expanda FeatureName.feature y, a continuación, abra el *NombreCaracterística*. Archivo Template.Xml.  
   
     > [!NOTE]  
-    >  Al abrir el archivo XML de manifiesto de la plantilla de la característica, automáticamente se validan los archivos y se pueden omitir las advertencias que aparecen en la ventana Lista de errores.  
+    >  Cuando se abre el archivo de XML de manifiesto de plantilla de función, los archivos se validan automáticamente y pueden hacer caso omiso de las advertencias que aparecen en la ventana Lista de errores.  
   
-## Cambiar la plantilla de manifiesto  
- Puede cambiar el código XML del archivo de característica empaquetado en el Editor XML de Visual Studio o en el panel Plantilla de manifiesto.  Los cambios que se hagan en el código XML se combinan en el archivo de manifiesto empaquetado de la característica.  Por ejemplo, puede desear cambiar la plantilla de manifiesto para personalizar una propiedad de la característica.  
+## <a name="changing-the-manifest-template"></a>Cambiar la plantilla de manifiesto  
+ Puede cambiar el código XML para el archivo de manifiesto de características en el Editor XML de Visual Studio o en el panel de la plantilla de manifiesto. Los cambios en el código XML se combina en el archivo de manifiesto empaquetado para la característica. Por ejemplo, puede que desee cambiar la plantilla de manifiesto para personalizar una propiedad de la característica.  
   
-#### Para cambiar la plantilla de manifiesto utilizando el editor XML  
+#### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>Para cambiar la plantilla de manifiesto utilizando el Editor XML  
   
-1.  En **Diseñador de características**, elija la ficha de **Manifiesto** , expanda el nodo de **Opciones de edición** , y elija el vínculo de **Abrir en editor XML** .  
+1.  En el **Diseñador de características**, elija la **manifiesto** , expanda la **Editar opciones** nodo y, a continuación, elija la **abierto en el Editor de XML** vínculo.  
   
-     Los cambios efectuados en el XML se combinan en el archivo de manifiesto empaquetado.  
+     Cambios en el código XML se combinan en el archivo de manifiesto empaquetado.  
   
-#### Para cambiar la plantilla de manifiesto utilizando el panel Plantilla de manifiesto  
+#### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Para cambiar la plantilla de manifiesto utilizando el recuadro plantilla de manifiesto  
   
-1.  En **Diseñador de características**, elija la ficha de **Manifiesto** , expanda el nodo de **Opciones de edición** , y después cambie el XML que aparece en el panel plantilla de manifiesto.  
+1.  En el **Diseñador de características**, elija la **manifiesto** , expanda la **Editar opciones** nodo y, a continuación, cambie el código XML que aparece en el panel de la plantilla de manifiesto.  
   
-     Los cambios efectuados en el XML aparecen en el panel **Vista previa del manifiesto empaquetado**.  
+     Los cambios en el XML aparecen en la **vista previa del manifiesto empaquetado** panel.  
   
-## Sobrescribir el archivo de manifiesto empaquetado  
- Puede deshabilitar el diseñador de características y crear el archivo feature.xml manualmente.  La primera vez que lleve a cabo este procedimiento, la configuración actual del diseñador de características se guarda en el archivo XML de la plantilla de la característica.  Entonces puede modificar o sobrescribir el código XML.  
+## <a name="overwriting-the-packaged-manifest-file"></a>Sobrescribiendo el archivo de manifiesto empaquetado  
+ Puede deshabilitar al diseñador de características y crear el archivo feature.xml manualmente. La primera vez que lleva a cabo este procedimiento, la configuración actual en el Diseñador de características se guarda en el archivo XML de plantilla de función. A continuación, puede modificar o sobrescribir el código XML.  
   
 > [!NOTE]  
->  Si agrega o quita elementos de proyecto de SharePoint del archivo XML mientras está deshabilitado el diseñador de características, estos elementos no se empaquetarán.  
+>  Si agrega o quita elementos de proyecto de SharePoint en el archivo XML mientras está deshabilitado el Diseñador de características, estos elementos de proyecto no se empaquetarán.  
   
-#### Para sobrescribir el archivo de manifiesto empaquetado deshabilitando el diseñador  
+#### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para sobrescribir el archivo de manifiesto empaquetado deshabilitando el diseñador  
   
-1.  En **Diseñador de características**, elija la ficha de **Manifiesto** .  
+1.  En el **Diseñador de características**, elija la **manifiesto** ficha.  
   
-2.  Expanda el nodo de **Opciones de edición** , elija el vínculo de **Overwrite generó XML y edición de manifiestos en el Editor XML** , y después elija el botón de **Sí** .  
+2.  Expanda el **Editar opciones** nodo, elija la **sobrescribir generado XML y editar el manifiesto en el editor XML** vincular y, a continuación, elija la **Sí** botón.  
   
-     La plantilla se actualiza con el archivo de manifiesto empaquetado.  
+     La plantilla se actualiza con el archivo de manifiesto empaquetado actual.  
   
-## Habilitar el diseñador de características  
- Puede volver a habilitar el diseñador de características para personalizar el archivo feature.xml.  
+## <a name="enabling-the-feature-designer"></a>Habilitar al diseñador de características  
+ Puede volver a habilitar el Diseñador de características para personalizar el archivo feature.xml.  
   
-#### Para habilitar de nuevo el diseñador  
+#### <a name="to-re-enable-the-designer"></a>Para volver a habilitar el diseñador  
   
-1.  En **Diseñador de características**, elija el vínculo de **Descartar las ediciones del manifiesto y vuelva a habilitar el diseñador** , y elija el botón de **Sí** .  
+1.  En el **Diseñador de características**, elija la **descarte manifiestos modificaciones y volver a habilitar el diseñador** vincular y, a continuación, elija la **Sí** botón.  
   
-2.  La plantilla se actualiza con el texto original y se pierden los cambios efectuados en el XML.  
+2.  La plantilla se actualiza con el texto original y se perderán los cambios realizados en el código XML.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

@@ -1,51 +1,51 @@
 ---
-title: "IDebugPortEx2::GetPortProcessId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEx2::GetPortProcessId"
-helpviewer_keywords: 
-  - "IDebugPortEx2::GetPortProcessId"
+title: IDebugPortEx2::GetPortProcessId | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortEx2::GetPortProcessId
+helpviewer_keywords: IDebugPortEx2::GetPortProcessId
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 300f0553ee081dee8adc34ab48ce1989fc86e6c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortEx2::GetPortProcessId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Obtiene el identificador de proceso de puerto propio.  
+# <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
+Obtiene el identificador de proceso del puerto de sí mismo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT GetPortProcessId (   
-   DWORD* pdwProcessId  
+```cpp  
+HRESULT GetPortProcessId (   
+   DWORD* pdwProcessId  
 );  
 ```  
   
-```c#  
-int GetPortProcessId (   
-   out uint pdwProcessId  
+```csharp  
+int GetPortProcessId (   
+   out uint pdwProcessId  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pdwProcessId`  
- \[out\]  Devuelve el identificador de proceso físico de puerto propio.  
+ [out] Devuelve el identificador de proceso físico del puerto de sí mismo.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Comentarios  
- En tiempo de ejecución de Win32 como, este método llama normalmente la función `GetCurrentProcessId` Win32 para obtener el identificador de proceso físico  
+## <a name="remarks"></a>Comentarios  
+ En el tiempo de ejecución de Win32, por ejemplo, este método normalmente llama a la función de Win32 `GetCurrentProcessId` para obtener el identificador de proceso físicos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

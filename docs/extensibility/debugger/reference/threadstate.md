@@ -1,77 +1,77 @@
 ---
-title: "THREADSTATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "THREADSTATE"
-helpviewer_keywords: 
-  - "Enumeración THREADSTATE"
+title: THREADSTATE | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: THREADSTATE
+helpviewer_keywords: THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 495425e8a91d42d1da4c3a36f7e3be1e02031329
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# THREADSTATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="threadstate"></a>THREADSTATE
 Especifica el estado del subproceso.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
+```cpp  
+enum enum_THREADSTATE {   
+   THREADSTATE_RUNNING = 0x0001,  
+   THREADSTATE_STOPPED = 0x0002,  
+   THREADSTATE_FRESH   = 0x0003,  
+   THREADSTATE_DEAD    = 0x0004,  
+   THREADSTATE_FROZEN  = 0x0005  
 };  
 typedef DWORD THREADSTATE;  
 ```  
   
-```c#  
-public enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
+```csharp  
+public enum enum_THREADSTATE {   
+   THREADSTATE_RUNNING = 0x0001,  
+   THREADSTATE_STOPPED = 0x0002,  
+   THREADSTATE_FRESH   = 0x0003,  
+   THREADSTATE_DEAD    = 0x0004,  
+   THREADSTATE_FROZEN  = 0x0005  
 };  
 ```  
   
-## Members  
- THREADSTATE\_RUNNING  
+## <a name="members"></a>Miembros  
+ THREADSTATE_RUNNING  
  Indica que se está ejecutando el subproceso.  
   
- THREADSTATE\_STOPPED  
+ THREADSTATE_STOPPED  
  Indica que el subproceso se ha detenido debido a un punto de interrupción.  
   
- THREADSTATE\_FRESH  
- Indica que se ha creado el subproceso, pero aún no se está ejecutando código.  
+ THREADSTATE_FRESH  
+ Indica que el subproceso se ha creado, pero aún no se está ejecutando código.  
   
- THREADSTATE\_DEAD  
- indica que el subproceso está muerto.  
+ THREADSTATE_DEAD  
+ Indica que el subproceso está inactivo.  
   
- THREADSTATE\_FROZEN  
- Indica que el subproceso está inmovilizado \(ninguna ejecución se puede realizar\).  
+ THREADSTATE_FROZEN  
+ Indica que el subproceso está inmovilizado (no se puede realizar ninguna ejecución).  
   
-## Comentarios  
- utilizado para el campo de `dwThreadState` de la estructura de [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .  
+## <a name="remarks"></a>Comentarios  
+ Utilizado para la `dwThreadState` campo de la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estructura.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

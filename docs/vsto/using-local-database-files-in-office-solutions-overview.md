@@ -1,49 +1,51 @@
 ---
-title: "Informaci&#243;n general sobre el uso de archivos de bases de datos locales en soluciones de Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "datos [desarrollo de Office en Visual Studio], locales"
-  - "datos locales [desarrollo de Office en Visual Studio]"
-  - "aplicaciones de Office [desarrollo de Office en Visual Studio], datos"
+title: "Uso de archivos de base de datos Local en información general sobre soluciones de Office | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], data
+- data [Office development in Visual Studio], local
+- local data [Office development in Visual Studio]
 ms.assetid: 7a920e6b-f0c3-4a62-b5dd-02668a6177b6
-caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Informaci&#243;n general sobre el uso de archivos de bases de datos locales en soluciones de Office
-  Puede incluir un archivo de base de datos, como un archivo de SQL Server Express \(.mdf\) o de Microsoft Office Access \(.mdb\), en la solución de Office.  Esto permite a los usuarios finales mantener una base de datos local en situaciones donde no se requiere una base centralizada, por ejemplo, en una solución de inventario local utilizada en un único equipo.  
+# <a name="using-local-database-files-in-office-solutions-overview"></a>Información general sobre el uso de archivos de bases de datos locales en soluciones de Office
+  Puede incluir un archivo de base de datos, como un archivo SQL Server Express (.mdf) o un archivo de Microsoft Office Access (.mdb), en la solución de Office. Esto permite a los usuarios finales mantener una base de datos local en situaciones donde no es necesario, por ejemplo, en una solución de inventario local que se usa en un único equipo mantener una base de datos centralizada.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## Importar el archivo de base de datos a un proyecto  
- Para importar, utilice el **Asistente para la configuración de orígenes de datos** para crear un origen de datos basado en el archivo de base de datos.  El asistente agregará al proyecto el archivo de base de datos y un conjunto de datos con tipo.  
+## <a name="importing-the-database-file-into-a-project"></a>Importar el archivo de base de datos en un proyecto  
+ Para importar el archivo de base de datos en el proyecto, utilice la **Asistente para configuración de orígenes de datos** para crear un origen de datos basado en el archivo de base de datos. El asistente agrega el archivo de base de datos y un conjunto de datos con tipo al proyecto.  
   
-## Implementar el archivo de base de datos  
- El **Asistente para la configuración de orígenes de datos** utiliza una ruta de acceso relativa para crear conexiones con el archivo de base de datos local.  Esto le permite copiar la solución de un equipo en otro si mantiene las posiciones relativas de los archivos.  
+## <a name="deploying-the-database-file"></a>Implementar el archivo de base de datos  
+ El **Data Source Configuration Wizard** utiliza una ruta de acceso relativa para crear conexiones en el archivo de base de datos local. Esto le permite copiar la solución de un equipo a otro si mantiene las posiciones relativas de los archivos.  
   
- Si se implementa la solución en un servidor y, a continuación, se distribuye el documento a cada usuario final, también se deberá distribuir manualmente el archivo de base de datos e instalarlo en la misma posición relativa del documento.  Esto implica que el usuario final no podrá mover el documento a una nueva ubicación del equipo a menos que también mueva el archivo de base de datos.  
+ Si implementa la solución en un servidor y, a continuación, distribuye el documento a cada usuario final, debe distribuir el archivo de base de datos manualmente e instalarlo en la misma posición relativa al documento. Esto significa que el usuario final no se puede mover el documento a una nueva ubicación en su equipo, a menos que también pasa el archivo de base de datos.  
   
-## Archivos de base de datos locales y almacenamiento en caché del conjunto de datos  
- En soluciones de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede almacenar en memoria caché conjuntos de datos del documento marcando la instancia del conjunto de datos con el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>.  Cuando se agrega un archivo de base de datos a un proyecto mediante el **Asistente para la configuración de orígenes de datos**, se agrega automáticamente al proyecto un conjunto de datos con tipo.  Es raro que deba aplicarse el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> en este conjunto de datos, puesto que los datos ya son locales al estar el equipo del usuario.  Para obtener más información, vea [Almacenar datos en caché](../vsto/caching-data.md).  
+## <a name="local-database-files-and-caching-the-dataset"></a>Archivos de base de datos local y el almacenamiento en caché el conjunto de datos  
+ En las soluciones de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede almacenar en caché conjuntos de datos en el documento marcando la instancia del conjunto de datos con el atributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>. Al agregar el archivo de base de datos al proyecto mediante el uso de la **Asistente para configuración de orígenes de datos**, un conjunto de datos con tipo se agrega automáticamente al proyecto. Es raro que deba aplicar <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a este conjunto de datos, porque los datos ya son locales en el equipo del usuario. Para obtener más información, consulta [Caching Data](../vsto/caching-data.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Cómo: actualizar un origen de datos con datos de un Control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
- [Almacenar datos en caché](../vsto/caching-data.md)  
+ [Almacenamiento de datos en caché](../vsto/caching-data.md)  
   
   

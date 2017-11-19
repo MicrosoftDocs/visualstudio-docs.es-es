@@ -1,82 +1,82 @@
 ---
-title: "SccAddFilesFromSCC (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAddFilesFromSCC"
-helpviewer_keywords: 
-  - "SccAddFilesFromSCC (función)"
+title: "Función SccAddFilesFromSCC | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccAddFilesFromSCC
+helpviewer_keywords: SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1764bfc503e25860326b1910c432edcf95c8f21c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# SccAddFilesFromSCC (funci&#243;n)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Esta función agrega una lista de archivos de control de código fuente al proyecto abierto actualmente.  
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (función)
+Esta función agrega una lista de archivos de control de código fuente para el proyecto abierto actualmente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 SCCRTN SccAddFilesFromSCC(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LPSTR   lpUser,  
-   LPSTR   lpAuxProjPath,  
-   LONG    cFiles,  
-   LPCSTR* lpFilePaths,  
-   LPCSTR  lpDestination,  
-   LPCSTR  lpComment,  
-   LPBOOL  pbResults  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LPSTR   lpUser,  
+   LPSTR   lpAuxProjPath,  
+   LONG    cFiles,  
+   LPCSTR* lpFilePaths,  
+   LPCSTR  lpDestination,  
+   LPCSTR  lpComment,  
+   LPBOOL  pbResults  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  pContext  
- \[in\] El puntero de contexto de complemento de control de código fuente.  
+ [in] El puntero de contexto de complemento de control de código fuente.  
   
  hWnd  
- \[in\] Identificador de la ventana del IDE que se puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
   
  lpUser  
- \[entrada, salida\] El nombre de usuario \(hasta SCC\_USER\_SIZE, incluido el terminador null\).  
+ [entrada, salida] El nombre de usuario (hasta SCC_USER_SIZE, incluido el terminador null).  
   
  lpAuxProjPath  
- \[entrada, salida\] Cadena auxiliar que se identifica el proyecto \(hasta `SCC_PRJPATH_`tamaño, incluido el terminador null\).  
+ [entrada, salida] Auxiliar cadena que identifica el proyecto (hasta `SCC_PRJPATH_`tamaño, incluido el terminador null).  
   
  cFiles  
- \[in\] Número de archivos proporcionado por `lpFilePaths`.  
+ [in] Número de archivos proporcionado por `lpFilePaths`.  
   
  lpFilePaths  
- \[entrada, salida\] Matriz de nombres de archivo para agregar al proyecto actual.  
+ [entrada, salida] Matriz de nombres de archivo para agregar al proyecto actual.  
   
  lpDestination  
- \[in\] La ruta de destino donde están los archivos que se va a escribir.  
+ [in] La ruta de acceso de destino donde están los archivos que se va a escribir.  
   
  lpComment  
- \[in\] El comentario que se aplicará a cada uno de los archivos que se va a agregar.  
+ [in] El comentario que se aplicará a cada uno de los archivos que se va a agregar.  
   
  pbResults  
- \[entrada, salida\] Matriz de indicadores de conjunto para indicar éxito \(distinto de cero o TRUE\) o no \(cero o FALSE\) para cada archivo \(tamaño de la matriz debe tener al menos `cFiles` largo\).  
+ [entrada, salida] Matriz de marcas de conjunto para indicar una operación correcta (distinto de cero o TRUE) o no (cero o FALSE) para cada archivo (tamaño de la matriz debe tener al menos `cFiles` largo).  
   
-## Valor devuelto  
- La implementación de complemento del control de origen de esta función debe devolver uno de los siguientes valores:  
+## <a name="return-value"></a>Valor devuelto  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC\_E\_PROJNOTOPEN|Proyecto no está abierto.|  
-|SCC\_E\_OPNOTPERFORMED|No es el mismo proyecto según lo especificado por conexión `lpAuxProjPath.`|  
-|SCC\_E\_NOTAUTHORIZED|Usuario no está autorizado para actualizar la base de datos.|  
-|SCC\_E\_NONSPECIFICERROR|Error desconocido.|  
-|SCC\_I\_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
+|SCC_E_PROJNOTOPEN|Proyecto no está abierto.|  
+|SCC_E_OPNOTPERFORMED|Conexión no está en el mismo proyecto según lo especificado por`lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|Usuario no está autorizado para actualizar la base de datos.|  
+|SCC_E_NONSPECIFICERROR|Error desconocido.|  
+|SCC_I_RELOADFILE|Debe volver a cargar un archivo o proyecto.|  
   
-## Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Vea también  
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

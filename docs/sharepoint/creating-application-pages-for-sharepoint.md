@@ -1,84 +1,85 @@
 ---
-title: "Crear p&#225;ginas de aplicaci&#243;n para SharePoint"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "páginas de aplicación [desarrollo de SharePoint en Visual Studio], crear"
-  - "páginas de aplicación [desarrollo de SharePoint en Visual Studio], desarrollar"
-  - "desarrollo de SharePoint en Visual Studio, páginas de aplicación"
-  - "desarrollo de SharePoint en Visual Studio, páginas de contenido"
-  - "desarrollo de SharePoint en Visual Studio, páginas web"
+title: "Crear páginas de aplicación para SharePoint | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, Web pages
+- SharePoint development in Visual Studio, content pages
+- SharePoint development in Visual Studio, application pages
+- application pages [SharePoint development in Visual Studio], developing
+- application pages [SharePoint development in Visual Studio], creating
 ms.assetid: a6e97149-15dd-4bdb-8d75-3b53f886f76c
-caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 858df05759f1c3b4205d4cbcd0bbad2cdfb6e034
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Crear p&#225;ginas de aplicaci&#243;n para SharePoint
-  Una *página de aplicación* es una página web ASP.NET que está diseñada para el uso en un sitio web de SharePoint.  Las páginas de aplicación son un tipo especializado de página ASP.NET.  La diferencia básica entre una página de aplicación y una página ASP.NET estándar es que una página de aplicación incluye contenido combinado con una página maestra de SharePoint.  Una página maestra permite a las páginas de aplicación compartir el aspecto y comportamiento de otras páginas de un sitio.  
+# <a name="creating-application-pages-for-sharepoint"></a>Crear páginas de aplicación para SharePoint
+  Un *página de la aplicación* es una página Web ASP.NET que está diseñada para su uso en un sitio SharePoint Web. Páginas de aplicación son un tipo especializado de página ASP.NET. La principal diferencia entre una página de aplicación y una página ASP.NET estándar es que una página de aplicación incluye contenido que se combina con una página maestra de SharePoint. Páginas de aplicación para compartir el mismo aspecto y comportamiento de otras páginas de un sitio permite que una página maestra.  
   
- Visual Studio permite diseñar páginas de aplicación con un diseñador.  El diseñador muestra un área de contenido para cada marcador de posición de contenido que se define en una página maestra.  Puede diseñar la página de aplicación arrastrando los controles a estas áreas de contenido.  
+ Visual Studio le permite diseñar páginas de aplicación utilizando un diseñador. El diseñador muestra un área de contenido para cada marcador de posición de contenido que se define en una página maestra. Puede diseñar la página de aplicación arrastrando controles a estas áreas de contenido.  
   
-## Páginas de aplicación  
- Las páginas de aplicación se comparten entre todos los sitios del servidor, mientras que una página de sitio es específica de un sitio.  Para obtener más información, [Tipos de páginas de SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584)vea.  
+## <a name="application-pages"></a>Páginas de aplicación  
+ Páginas de aplicación se comparten entre todos los sitios en el servidor, mientras que una página del sitio es específica a un sitio. Para obtener más información, [tipos de páginas de SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).  
   
- De forma predeterminada, la mayoría de las páginas que aparecen al crear un sitio de SharePoint son páginas de sitio.  Una página de sitio se puede agregar a una biblioteca de páginas de SharePoint.  Los usuarios pueden personalizar una página de sitio mediante herramientas como SharePoint Designer.  Una página de sitio también puede hospedar características como los elementos web dinámicos y las zonas de elementos web.  
+ De forma predeterminada, la mayoría de las páginas que aparecen cuando se crea un sitio de SharePoint es páginas de sitio. Una página del sitio puede agregarse a una biblioteca de la página de SharePoint. Los usuarios pueden personalizar una página del sitio mediante herramientas como SharePoint Designer. Una página de sitio también puede hospedar características como los elementos Web dinámicos y zonas de elementos Web.  
   
- Las páginas de aplicación no pueden hacer estas cosas.  Sin embardo, una página de aplicación es el mejor tipo de página si desea que la página contenga código personalizado.  Aunque puede agregar código personalizado a una página de sitio, el código deja de ejecutarse cuando el usuario personaliza la página con herramientas como SharePoint Designer.  
+ Páginas de aplicación no pueden hacer lo siguiente. Sin embargo, una página de aplicación es el mejor tipo de página para crear, si desea que la página para que contenga código personalizado. Aunque puede agregar código personalizado a una página del sitio, el código deja de ejecutarse cuando el usuario personaliza la página utilizando herramientas como SharePoint Designer.  
   
 > [!NOTE]  
->  Visual Studio no proporciona plantillas que ayuden a crear páginas de sitio para un sitio de SharePoint.  Para obtener más información, vea [Tipos de páginas de SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).  
+>  Visual Studio no proporciona plantillas que le ayudarán a crean páginas de sitio para un sitio de SharePoint. Para obtener más información, consulte [tipos de páginas de SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).  
   
-## Crear una página de aplicación  
- Para crear una página de aplicación, agregue un elemento **Página de aplicación** a un proyecto de SharePoint.  Al crear una página de aplicación, Visual Studio agrega las siguientes carpetas a su proyecto:  
+## <a name="creating-an-application-page"></a>Crear una página de aplicación  
+ Para crear una página de aplicación, agregue un **página de la aplicación** elemento a un proyecto de SharePoint. Cuando se crea una página de aplicación, Visual Studio agrega las siguientes carpetas a su proyecto:  
   
 |Carpeta|Descripción|  
-|-------------|-----------------|  
-|Layouts|Asigna el directorio virtual \_layouts del sistema de archivos de SharePoint.|  
-|Subcarpeta Layouts|Contiene los archivos que constituyen la página de aplicación.  De forma predeterminada, esta carpeta tiene el mismo nombre que el proyecto.  Se puede cambiar el nombre de esta carpeta en cualquier momento.  Al ejecutar el proyecto, Visual Studio implementa esta carpeta en el directorio virtual \_layouts del sistema de archivos de SharePoint.|  
+|------------|-----------------|  
+|Diseños de|Se asigna al directorio virtual _layouts del sistema de archivos de SharePoint.|  
+|Subcarpeta diseños|Contiene los archivos que componen la página de aplicación. De forma predeterminada, esta carpeta tiene el mismo nombre que el proyecto. Puede cambiar el nombre de esta carpeta en cualquier momento. Al ejecutar el proyecto, Visual Studio implementa esta carpeta en el directorio virtual _layouts del sistema de archivos de SharePoint.|  
   
  Visual Studio agrega los siguientes archivos al proyecto:  
   
 |Archivo|Descripción|  
-|-------------|-----------------|  
-|Archivo de paginación ASP.NET \(.aspx\)|Contiene formato XML que define la página.|  
-|Archivo de código de la página de aplicación|Contiene código subyacente de la página de aplicación.  Agregue código a este archivo para controlar los eventos.|  
-|Archivo de código del diseñador de páginas de aplicación|Contiene código generado por el diseñador.  No modifique este archivo directamente.|  
+|----------|-----------------|  
+|Archivo de paginación ASP.NET (.aspx)|Contiene el marcado XML que define la página.|  
+|Archivo de código de página de aplicación|Contiene el código subyacente de la página de aplicación. Agregue código que controla los eventos para este archivo.|  
+|Archivo de código del Diseñador de página de aplicación|Contiene el código generado por el diseñador. No modifique este archivo directamente.|  
   
-## Diseñar y depurar una página de aplicación  
- Diseñe el contenido de una página de aplicación utilizando el diseñador de Visual Web Developer en Visual Studio.  Este diseñador aparece al abrir la página de aplicación del proyecto \(haciendo doble clic o abriendo el menú contextual y elige **Abierta**\).  Para obtener más información sobre cómo utilizar este diseñador, vea [Mapa de contenido del entorno de desarrollo web de Visual Studio](http://msdn.microsoft.com/es-es/9c31f93b-c8fb-4599-9b14-6194ec8c7539).  
+## <a name="designing-and-debugging-an-application-page"></a>Diseñar y depurar una página de aplicación  
+ Diseñar el contenido de una página de aplicación mediante la vista del diseñador en Visual Studio. Este diseñador aparece al abrir la página de aplicación en el proyecto (haga doble clic o abra el menú contextual y, a continuación, elija **abrir**) y, a continuación, elija la **diseño** situado en la parte inferior de el editor.  
   
 > [!NOTE]  
->  Puede diseñar la página solo en la vista de **Código** el diseñador.  La **Vista de diseño** del diseñador está deshabilitada en las páginas de aplicación.  
+>  Puede diseñar la página solo en el **origen** la vista del diseñador. El **diseño** la vista del diseñador está deshabilitada para las páginas de aplicación.  
   
- Puede depurar una página de aplicación igual que otros elementos de proyecto de SharePoint en Visual Studio.  Al iniciar el depurador de Visual Studio, Visual Studio abre el sitio de SharePoint.  
+ Puede depurar una página de aplicación solo como se haría con otros elementos de proyecto de SharePoint en Visual Studio. Al iniciar el depurador de Visual Studio, Visual Studio abre el sitio de SharePoint.  
   
- Para ver la página de aplicación, debe navegar manualmente hasta la ubicación de la página \(por ejemplo: http:\/\/*Server\_Name*\/\_layouts\/*Project\_Name*\/ApplicationPage1.aspx\).  
+ Para ver la página de aplicación, debe navegar manualmente a la ubicación de la página de aplicación (por ejemplo: http://*nombre_servidor*/_layouts /*Nombre_proyecto*  /ApplicationPage1.aspx).  
   
- Para obtener más información sobre la depuración de proyectos de SharePoint, vea [Solucionar problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+ Para obtener más información sobre cómo se depuran proyectos de SharePoint, vea [solución de problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## Elegir una página maestra  
- De forma predeterminada, un elemento **Página de aplicación** hace referencia a la página maestra del sitio que está utilizando para depurar el proyecto.  Esa página se denomina V4.master y puede encontrarla en la **Galería de páginas maestras** del sitio de SharePoint.  
+## <a name="choosing-a-master-page"></a>Elegir una página maestra  
+ De forma predeterminada, un **página de la aplicación** elemento hace referencia a la página principal del sitio que está utilizando para depurar el proyecto. Que la página se denomina v4.master y puede encontrar aparecerán en el **Galería de páginas maestras** del sitio de SharePoint.  
   
- Puede cambiar explícitamente la página maestra que usa la página de aplicación; para ello, establezca el atributo `MasterPageFile` del elemento `Page` de la aplicación. Por ejemplo: `MasterPageFile="~/_layouts/applicationv4.master"`.  De hecho, debe establecer este atributo si las páginas maestra dinámicas no están habilitadas en el servidor de SharePoint.  Para obtener más información sobre las páginas maestras en SharePoint, vea [Páginas maestras](http://go.microsoft.com/fwlink/?LinkID=169281).  
+ Puede cambiar explícitamente la página maestra que se utiliza la página de aplicación estableciendo el `MasterPageFile` atributo de la aplicación `Page` elemento. (Por ejemplo: `MasterPageFile="~/_layouts/applicationv4.master"`). De hecho, debe establecer este atributo si páginas maestra dinámicas no están habilitadas en el servidor de SharePoint. Para obtener más información sobre las páginas maestras en SharePoint, vea [páginas maestras](http://go.microsoft.com/fwlink/?LinkID=169281).  
   
-## Vea también  
- [Desarrollo de windows presentation foundation SharePoint detallado](http://go.microsoft.com/fwlink/?LinkID=182103)   
- [Información general sobre ASP.NET Web Pages](http://msdn.microsoft.com/library/52fa0455-41ea-4315-8208-2861d1527da2)   
- [Información general sobre sintaxis de páginas web ASP.NET](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02)   
- [Programar ASP.NET Web Pages](http://msdn.microsoft.com/es-es/5626c661-8057-4de8-b658-c2e35ed4b4c9)  
+## <a name="see-also"></a>Vea también  
+ [Desarrollo de SharePoint Foundation en profundidad](http://go.microsoft.com/fwlink/?LinkID=182103)   
+ [Introducción a ASP.NET](/aspnet/overview)   
+ [ASP.NET Web Pages](/aspnet/web-pages/index) (Más información sobre páginas web de ASP.NET)   
   
   

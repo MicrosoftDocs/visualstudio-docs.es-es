@@ -1,42 +1,43 @@
 ---
-title: "Decisiones de dise&#241;o del Control de c&#243;digo fuente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "control de código fuente [Visual Studio SDK], las decisiones de diseño"
+title: "Las decisiones de diseño del Control de origen | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 320a8013177d44491470f8f55c8ee3e1fb19501c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Decisiones de dise&#241;o del Control de c&#243;digo fuente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Las decisiones de diseño siguientes se deben considerar para proyectos al implementar el control de código fuente.  
+# <a name="source-control-design-decisions"></a>Decisiones de diseño del Control de código fuente
+Las siguientes decisiones de diseño deberían considerarse para proyectos al implementar el control de código fuente.  
   
-## ¿La información se compartido o privado?  
- La decisión de diseño más importante que puede tomar es qué es compartible información y qué es privado.  Por ejemplo, la lista de archivos del proyecto se comparte, pero dentro de esta lista de archivos, algunos usuarios deseen tener archivos privados.  Se comparten los valores del compilador, pero el proyecto de inicio suele ser privado.  Los valores o se comparten puramente, compartido con un reemplazo, o puramente privado.  Por diseño, los elementos privados, como archivos de opciones de usuario de la solución \(.suo\), no se comprueban en [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)].  Asegúrese de almacenar cualquier archivo privado de información en privado como el archivo .suo, o un archivo privado concreto que crea, por ejemplo, un archivo de .csproj.user para Visual c\# o un archivo .vbproj.user para Visual Basic.  
+## <a name="will-information-be-shared-or-private"></a>¿Será información compartido o privado?  
+ La decisión de diseño más importante que puede realizar es qué información se puede compartir y lo que es privado. Por ejemplo, la lista de archivos para el proyecto se comparte, pero dentro de esta lista de archivos, algunos usuarios podrían desear tener archivos privados. Configuración del compilador se comparte, pero el proyecto de inicio es generalmente privado. Configuración es puramente compartidos, compartidos con una invalidación o puramente privada. De forma predeterminada, los elementos privados, como opciones de usuario de solución (.suo) (archivos), no se comprueban en [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. No olvide almacenar cualquier información privada en archivos privados como el archivo .suo, o un archivo privado específico que crea, por ejemplo, un. csproj.user archivo para Visual C# o. vbproj.user archivo en Visual Basic.  
   
- Esta decisión no es inclusivo y se puede crear individualmente para cada elemento.  
+ Esta decisión no es exhaustiva y se puede realizar en el elemento por elemento.  
   
-## ¿El proyecto incluirá archivos especiales?  
- Otra opción de diseño importante es si la estructura del proyecto utiliza archivos especiales.  Los archivos especiales son archivos ocultos que son la base de los archivos que están visibles en el explorador de soluciones y en los cuadros de diálogo de protección y desprotección.  Si utiliza archivos especiales, siga estas instrucciones:  
+## <a name="will-the-project-include-special-files"></a>¿El proyecto incluye archivos especiales?  
+ Otra importante decisión de diseño es si la estructura del proyecto utiliza archivos especiales. Archivos especiales están ocultos que subyacen a los archivos que son cuadros de diálogo visible en el Explorador de soluciones y en la protección y desprotección. Si utiliza archivos especiales, siga estas instrucciones:  
   
-1.  No asocia los archivos especiales con la raíz del proyecto nodo\-que es, con el propio archivo de proyecto.  el archivo de proyecto debe ser un solo archivo.  
+1.  No asocie archivos especiales con el nodo raíz del proyecto, es decir, con el proyecto de archivo. El archivo de proyecto debe ser un único archivo.  
   
-2.  Cuando los archivos especiales se agregan, se quitan, o se cambia en un proyecto, los eventos adecuados de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> deben desencadenarse con el marcador establecido que indica que los archivos son archivos especiales.  Estos eventos llama el entorno en respuesta al proyecto que llama a los métodos adecuados de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> .  
+2.  Cuando se agregan, se quitan o se cambió de nombre en un proyecto, la correspondiente archivos especiales <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> eventos deben activarse con el conjunto de marca que indica los archivos son archivos especiales. Estos eventos se denominan por el entorno en respuesta al proyecto de una llamada a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.  
   
-3.  Cuando el proyecto o el editor llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, archivos especiales asociado a ese archivo no se desprotegen automáticamente.  Pase los archivos especiales de junto con el archivo principal.  El entorno detectará la relación entre todos los archivos que se pasen y ocultar correctamente los archivos especiales en la interfaz de usuario de desprotección.  
+3.  Cuando llama a un proyecto o el editor de <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, los archivos especiales asociados a ese archivo no se desprotege automáticamente. Pase los archivos especiales de junto con el archivo principal. El entorno se detecte la relación entre todos los archivos que se pasan y ocultar adecuadamente los archivos especiales de la interfaz de usuario de extracción del repositorio.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
- [Compatibilidad con Control de código fuente](../../extensibility/internals/supporting-source-control.md)
+ [Compatibilidad con control de código fuente](../../extensibility/internals/supporting-source-control.md)

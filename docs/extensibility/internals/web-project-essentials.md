@@ -1,24 +1,25 @@
 ---
-title: "Fundamentos de proyecto Web | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "proyectos Web, essentials"
+title: Web Essentials proyecto | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Fundamentos de proyecto Web
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="web-project-essentials"></a>Fundamentos de proyecto Web
 Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear una aplicación Web que tiene páginas Web inteligentes. Una página Web inteligente tiene código de servidor que representa la página Web a petición.  
   
  Con los lenguajes de programación tradicionales, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], puede crear páginas Web que inteligente para recopilar y procesar la información de un usuario, almacenarlos en una base de datos y así sucesivamente.  
@@ -33,7 +34,7 @@ Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear 
   
     -   Un proyecto de aplicación Web (WAP) produce un solo archivo ejecutable que combina el código para todas las páginas Web inteligentes, así como todos los archivos de origen en la carpeta.  
   
--   El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\*\< Visual Studio ### >*\Projects\\*YourWebSite*.  
+-   El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Si desea mantener el archivo de solución con el sitio Web, simplemente mueva allí y vuelva a abrirlo.  
@@ -44,7 +45,7 @@ Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear 
   
 -   Agregar automáticamente las propiedades globales a un proyecto Web, crea un archivo de almacenamiento en la carpeta de solución de proyecto Web.  
   
--   Una página Web inteligente puede asociarse con un lenguaje de programación de servidor mediante la directiva de página o el \< script runat = "server"> etiqueta.  
+-   Una página Web inteligente puede asociarse con un lenguaje de programación de servidor mediante la directiva de página o el \<script runat = "server" > etiqueta.  
   
 -   Además, las páginas Web puede tener cualquier número de bloques de secuencias de comandos de cliente escrito en cualquier lenguaje de scripting.  
   
@@ -52,11 +53,11 @@ Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear 
   
 -   Un sistema WAP se implementa como un subtipo de proyecto, que también se denomina un tipo de proyecto. El [!INCLUDE[vwprvw](../../extensibility/internals/includes/vwprvw_md.md)] es característico de proyecto por el subtipo WAP para crear el sistema WAP. Para obtener más información sobre subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
   
--   Una página Web inteligente combina HTML con un lenguaje de programación de servidor. El idioma de servidor se denomina el lenguaje independiente. Para admitir un lenguaje independiente, debe implementar el sistema del proyecto Web la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> familia de interfaces.  
+-   Una página Web inteligente combina HTML con un lenguaje de programación de servidor. El idioma de servidor se denomina el lenguaje independiente. Para admitir un lenguaje independiente, debe implementar el sistema del proyecto Web el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> familia de interfaces.  
   
     -   Para admitir el idioma contenido en un editor, el servicio de lenguaje HTML debe aplazar muestran código de idioma independiente para un servicio de lenguaje independiente.  
   
     -   Marcadores de error (detectores rojos) siempre deben crearse en el búfer principal del editor de código.  
   
 ## <a name="see-also"></a>Vea también  
- [Proyectos Web](../../extensibility/internals/web-projects.md)
+ [Proyectos web](../../extensibility/internals/web-projects.md)

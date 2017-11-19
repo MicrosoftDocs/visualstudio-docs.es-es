@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Binding to Data from a Service in a VSTO add-in Project | Microsoft Docs'
+title: 'Tutorial: Establecer enlaces a datos de un servicio en un VSTO agregar en el proyecto | Documentos de Microsoft'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,106 +15,110 @@ helpviewer_keywords:
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
 ms.assetid: 9b008be4-06a3-4ffc-9f02-79dd6cfe00ab
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7b5c4f8ec6023dbe58d319be5343010e8c1d6140
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 6874dd125c692b6d853dc89cc533bf3d623aad51
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: Binding to Data from a Service in a VSTO add-in Project
-  You can bind data to host controls in VSTO Add-in projects. This walkthrough demonstrates how to add controls to a Microsoft Office Word document, bind the controls to data retrieved from the MSDN Content Service, and respond to events at run time.  
+# <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Tutorial: Establecer enlaces a datos de un servicio en un proyecto de complemento VSTO
+  Puede enlazar datos a controles host en proyectos de complemento de VSTO. Este tutorial muestra cómo agregar controles a un documento de Microsoft Office Word, enlazar los controles a los datos recuperados de MSDN Content Service y responder a eventos en tiempo de ejecución.  
   
- **Applies to:** The information in this topic applies to application-level projects for Word 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplicación:** la información de este tema se aplica a los proyectos de nivel de aplicación de Word 2010. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- This walkthrough illustrates the following tasks:  
+ En este tutorial se muestran las tareas siguientes:  
   
--   Adding a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control to a document at run time.  
+-   Agregar un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento en tiempo de ejecución.  
   
--   Binding the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control to data from a Web service.  
+-   Enlazar el control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a los datos de un servicio web.  
   
--   Responding to the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> event of a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control.  
+-   Responder al evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de un control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create a Word VSTO Add-in project.  
+## <a name="creating-a-new-project"></a>Crear un proyecto nuevo  
+ El primer paso es crear un proyecto de complemento de VSTO de Word.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Create a Word VSTO Add-in project with the name **MTPS Content Service**, using either Visual Basic or C#.  
+1.  Cree un proyecto de complemento VSTO de Word con el nombre **MTPS Content Service**mediante Visual Basic o C#.  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the `ThisAddIn.vb` or `ThisAddIn.cs` file and adds the project to **Solution Explorer**.  
+     Visual Studio abre el archivo `ThisAddIn.vb` o `ThisAddIn.cs` y agrega el proyecto al **Explorador de soluciones**.  
   
-## <a name="adding-a-web-service"></a>Adding a Web Service  
- For this walkthrough, use a Web service called the MTPS Content Service. This Web service returns information from a specified MSDN article in the form of an XML string or plain text. A later step shows how to display the returned information in a content control.  
+## <a name="adding-a-web-service"></a>Agregar un servicio web  
+ Para este tutorial, use un servicio web denominado MTPS Content Service. Este servicio web devuelve información de un artículo MSDN especificado en forma de una cadena XML o texto sin formato. Un paso posterior muestra cómo mostrar la información devuelta en un control de contenido.  
   
-#### <a name="to-add-the-mtps-content-service-to-the-project"></a>To add the MTPS Content Service to the project  
+#### <a name="to-add-the-mtps-content-service-to-the-project"></a>Para agregar el servicio de contenido de MTPS al proyecto  
   
-1.  On the **Data** menu, click **Add New Data Source**.  
+1.  En el menú **Datos** , haga clic en **Agregar nuevo elemento**.  
   
-2.  In the **Data Source Configuration Wizard**, click **Service**, and then click **Next**.  
+2.  En el **Asistente para la configuración de orígenes de datos**, haga clic en **Servicio**y haga clic en **Siguiente**.  
   
-3.  In the **Address** field, type the following URL:  
+3.  En el campo **Dirección** , escriba la dirección URL siguiente:  
   
      **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
   
-4.  Click **Go**.  
+4.  Haga clic en **Ir**.  
   
-5.  In the **Namespace** field, type **ContentService**, and click **OK**.  
+5.  En el campo **Espacio de nombres** , escriba **ContentService**y haga clic en **Aceptar**.  
   
-6.  In the **Add Reference Wizard** dialog box, click **Finish**.  
+6.  En el cuadro de diálogo **Asistente para agregar referencias** , haga clic en **Finalizar**.  
   
-## <a name="adding-a-content-control-and-binding-to-data-at-run-time"></a>Adding a Content Control and Binding to Data at Run Time  
- In VSTO Add-in projects, you add and bind controls at run time. For this walkthrough, configure the content control to retrieve data from the Web service when a user clicks inside the control.  
+## <a name="adding-a-content-control-and-binding-to-data-at-run-time"></a>Agregar un control de contenido y enlazarlo a datos en tiempo de ejecución  
+ En proyectos de complemento VSTO, se agregan y se enlazan controles en tiempo de ejecución. En este tutorial, configure el control content para recuperar datos desde el servicio web cuando un usuario hace clic dentro del control.  
   
-#### <a name="to-add-a-content-control-and-bind-to-data"></a>To add a content control and bind to data  
+#### <a name="to-add-a-content-control-and-bind-to-data"></a>Para agregar un control de contenido y enlazar a datos  
   
-1.  In the `ThisAddIn` class, declare the variables for the MTPS Content Service, the content control, and the data binding.  
+1.  En la clase `ThisAddIn` , declare las variables para el servicio de contenido de MTPS, el control de contenido y el enlace de datos.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
+     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]  
   
-2.  Add the following method to the `ThisAddIn` class. This method creates a content control at the beginning of the active document.  
+2.  Agregue el método siguiente a la clase `ThisAddIn` . Este método crea un control content al principio del documento activo.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
+     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  
   
-3.  Add the following method to the `ThisAddIn` class. This method initializes the objects needed to create and send a request to the Web service.  
+3.  Agregue el método siguiente a la clase `ThisAddIn` . Este método inicializa los objetos necesarios para crear y enviar una solicitud al servicio web.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
+     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]  
   
-4.  Create an event handler to retrieve the MSDN Library document about content controls when a user clicks inside of the content control and bind the data to the content control.  
+4.  Cree un controlador de eventos para recuperar el documento de MSDN Library sobre controles content cuando un usuario hace clic dentro del control content y enlazar los datos al control de contenido.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
+     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]  
   
-5.  Call the `AddRichTextControlAtRange` and `InitializeServiceObjects` methods from the `ThisAddIn_Startup` method. For C# programmers, add an event handler.  
+5.  Llame a los métodos `AddRichTextControlAtRange` y `InitializeServiceObjects` desde el método `ThisAddIn_Startup` . Para programadores de C#, agregue un controlador de eventos.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
+     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you open Word, the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control appears. The text in the control changes when you click inside it.  
+## <a name="testing-the-add-in"></a>Probar el complemento  
+ Al abrir Word, aparecerá el control <xref:Microsoft.Office.Tools.Word.RichTextContentControl> . El texto del control cambia al hacer clic en él.  
   
-#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
+#### <a name="to-test-the-vsto-add-in"></a>Para probar el complemento VSTO  
   
-1.  Press **F5**.  
+1.  Presione **F5**.  
   
-2.  Click inside of the content control.  
+2.  Haga clic dentro del control content.  
   
-     Information is downloaded from the MTPS Content Service and displayed inside the content control.  
+     La información se descarga desde MTPS Content Service y se muestra dentro del control content.  
   
-## <a name="see-also"></a>See Also  
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Enlace de datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

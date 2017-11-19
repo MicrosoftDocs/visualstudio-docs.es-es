@@ -1,61 +1,65 @@
 ---
-title: "Hidden (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Hidden"
-helpviewer_keywords: 
-  - "Hidden (elemento) [plantillas de proyecto de Visual Studio]"
+title: Oculta el elemento (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
+helpviewer_keywords: Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b40343b3269a83854259cae80418a2c5154a78fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Hidden (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Especifica si la plantilla aparece en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.  
+# <a name="hidden-element-visual-studio-templates"></a>Hidden (Elemento, Plantillas de Visual Studio)
+Especifica si la plantilla aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Oculta >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <Hidden> true/false </Hidden>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, indicando si la plantilla aparecerá o no en los cuadros de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.  
+ El texto debe ser `true` o `false`, lo que indica si la plantilla aparecerá en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  `Hidden` es un elemento opcional.  
   
- Si se especifica, no se requiere ningún otro elemento secundario del elemento `TemplateData`.  
+ Si se especifica, ningún otro elemento secundario de la `TemplateData` elemento son necesarios.  
   
-## Ejemplo  
- En el ejemplo siguiente se ilustran los metadatos para una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,6 +86,6 @@ Especifica si la plantilla aparece en el cuadro de diálogo **Nuevo proyecto** o
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

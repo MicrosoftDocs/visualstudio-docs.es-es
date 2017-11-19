@@ -1,32 +1,34 @@
 ---
-title: "Elemento &lt;update&gt; (desarrollo de Office en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "update (elemento)"
-  - "elemento <update>"
-  - "manifiestos de aplicación [desarrollo de Office en Visual Studio], elemento <update>"
+title: '&lt;actualizar&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- update element
+- <update> element
+- application manifests [Office development in Visual Studio], <update> element
 ms.assetid: bdd5dbf7-ddda-4ef6-9db5-1fb4405261a0
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento &lt;update&gt; (desarrollo de Office en Visual Studio)
-  El elemento `update` especifica el intervalo en el que la solución comprobará las actualizaciones.  
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;actualizar&gt; elemento (desarrollo de Office en Visual Studio)
+  El `update` elemento especifica el intervalo en el que se comprobará la solución de actualizaciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <update  
@@ -38,44 +40,44 @@ caps.handback.revision: 24
 </update>  
 ```  
   
-## Elementos y atributos  
- Se requiere el elemento `update`, que se encuentra en el espacio de nombres `vstav3`.  
+## <a name="elements-and-attributes"></a>Elementos y atributos  
+ El elemento `update` es obligatorio y se encuentra en el espacio de nombres `vstav3`.  
   
- El elemento `update` presenta los atributos siguientes.  
-  
-|Atributo|Descripción|  
-|--------------|-----------------|  
-|`enabled`|Obligatorio.  Establezca enabled en uno de los valores siguientes:<br /><br /> -   **true** para comprobar las actualizaciones.<br />-   **false** para evitar la comprobación de las actualizaciones.|  
-  
- El elemento `update` tiene los siguientes elementos secundarios.  
-  
-### expiration  
- Se requiere el elemento `expiration`, que se encuentra en el espacio de nombres `vstav3`.  Este elemento especifica el intervalo en el que la solución comprueba las actualizaciones.  
-  
- El elemento `expiration` presenta los atributos siguientes.  
+ El `update` elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|`maximumAge`|-   Obligatorio.  Establézcalo como igual a un entero.|  
-|`unit`|Obligatorio.  Establezca `unit` en uno de los valores siguientes:<br /><br /> -   **hours**<br />-   **days**<br />-   **weeks**|  
+|---------------|-----------------|  
+|`enabled`|Obligatorio. Establezca enabled en uno de los siguientes valores:<br /><br /> -   **True** para buscar actualizaciones.<br />-   **false** para evitar la comprobación de actualizaciones.|  
   
-## Ejemplo de comprobar siempre las actualizaciones  
+ El `update` elemento tiene los siguientes elementos secundarios.  
   
-### Descripción  
- En el ejemplo de código siguiente se muestra un elemento `update` establecido de modo que siempre busque actualizaciones en soluciones de Office.  
+### <a name="expiration"></a>expiración  
+ El elemento `expiration` es obligatorio y se encuentra en el espacio de nombres `vstav3`. Este elemento especifica el intervalo en el que se comprueba la solución de actualizaciones.  
   
-### Código  
+ El `expiration` elemento tiene los atributos siguientes.  
+  
+|Atributo|Descripción|  
+|---------------|-----------------|  
+|`maximumAge`|-Required. Establezca esto en un entero.|  
+|`unit`|Obligatorio. Establecer `unit` a uno de los siguientes valores:<br /><br /> -   **horas**<br />-   **días**<br />-   **semanas**|  
+  
+## <a name="example-of-always-checking-for-updates"></a>Ejemplo de comprobar siempre las actualizaciones  
+  
+### <a name="description"></a>Descripción  
+ En el ejemplo de código siguiente se muestra un `update` elemento que se establece para que siempre busque actualizaciones en soluciones de Office.  
+  
+### <a name="code"></a>Código  
   
 ```  
 <vstav3:update enabled="true" />  
 ```  
   
-## Ejemplo de establecer un intervalo de actualización predeterminado  
+## <a name="example-of-setting-a-default-update-interval"></a>Ejemplo de configuración de un intervalo de actualización predeterminado  
   
-### Descripción  
- En el ejemplo de código siguiente se muestra un elemento `update` de un manifiesto de aplicación para soluciones de Office.  Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Descripción  
+ En el ejemplo de código siguiente se muestra un `update` elemento en un manifiesto de aplicación para soluciones de Office. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
   
-### Código  
+### <a name="code"></a>Código  
   
 ```  
 <vstav3:update enabled="true">  
@@ -83,10 +85,10 @@ caps.handback.revision: 24
 </vstav3:update>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)  
+ [Manifiesto de aplicación ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

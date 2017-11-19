@@ -1,33 +1,35 @@
 ---
-title: "Especificar la ubicaci&#243;n del archivo de VSPackage del Shell de VS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSPackages administrado, la ubicación del archivo"
-  - "VSPackages, administra la ubicación del archivo de paquete"
+title: "Especificar la ubicación del archivo de paquete de VS en el Shell de VS | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managed VSPackages, file location
+- VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Especificar la ubicaci&#243;n del archivo de VSPackage del Shell de VS
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe ser capaz de encontrar el archivo DLL para cargar el VSPackage del ensamblado. Puede encontrarlo en varias formas, como se describe en la tabla siguiente.  
+# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificar la ubicación del archivo de paquete de VS en el Shell de VS
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debe ser capaz de encontrar la DLL para cargar el VSPackage del ensamblado. Puede encontrarlo de varias maneras, como se describe en la tabla siguiente.  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|Utilice la clave del registro de base de código.|La clave del código base puede utilizarse para dirigir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para cargar el ensamblado de VSPackage desde cualquier ruta de acceso completa del archivo. El valor de la clave debe ser la ruta de acceso al archivo DLL. Se trata de la mejor manera de tener [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el ensamblado del paquete. Esta técnica se conoce a veces como "CodeBase y privada instalación directory técnica." Durante el registro se pasa el valor del código base para las clases de atributos de registro a través de una instancia de la <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> tipo.|  
-|Coloque el DLL en el **PrivateAssemblies** directory.|Coloque el ensamblado en el **PrivateAssemblies** subdirectorio de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] directory. Los ensamblados se encuentran en **PrivateAssemblies** se detectan automáticamente, pero no son visibles en el **Agregar referencias** cuadro de diálogo. La diferencia entre **PrivateAssemblies** y **PublicAssemblies** es que los ensamblados en **PublicAssemblies** enumerados en el **Agregar referencias** cuadro de diálogo. Si decide no usar la técnica de "directorio de instalación de base de código y privada", debe instalar en el **PrivateAssemblies** directory.|  
-|Utilizar un ensamblado con nombre seguro y la clave de registro del ensamblado.|La clave de ensamblado puede utilizarse para dirigir explícitamente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cargar una fuerte con el nombre de ensamblado de VSPackage. El valor de la clave debe ser el nombre seguro del ensamblado.|  
-|Coloque el DLL en el **PublicAssemblies** directory.|Por último, el ensamblado también se puede colocar en el **PublicAssemblies** subdirectorio. Los ensamblados se encuentran en **PublicAssemblies** se detectan automáticamente y también aparecerán en el **Agregar referencias** cuadro de diálogo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Ensamblados de VSPackage sólo deben ubicarse en el **PublicAssemblies** administra de directorio si contienen los componentes que están pensados para ser reutilizada por otros desarrolladores de VSPackage. La mayoría de los ensamblados no cumplen este criterio.|  
+|Utilice la clave del registro de código base.|La clave de código base puede utilizarse para dirigir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para cargar el ensamblado de VSPackage desde cualquier ruta de acceso completa del archivo. El valor de la clave debe ser la ruta de acceso al archivo DLL. Se trata de la mejor manera de tener [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el ensamblado de paquete. Esta técnica se conoce a veces como la "técnica de directorio de código base y privada instalación". Durante el registro se pasa el valor del código base para las clases de atributos de registro a través de una instancia de la <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> tipo.|  
+|Coloque el archivo DLL en el **PrivateAssemblies** directory.|Coloque el ensamblado en el **PrivateAssemblies** subdirectorio de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] directory. Ensamblados que se encuentran en **PrivateAssemblies** se detectan automáticamente, pero no son visibles en el **agregar referencias** cuadro de diálogo. La diferencia entre **PrivateAssemblies** y **PublicAssemblies** es que los ensamblados en **PublicAssemblies** se enumeran en la **agregar referencias**  cuadro de diálogo. Si decide no usar la técnica de "directorio de instalación de código base y privada", debe instalar en el **PrivateAssemblies** directory.|  
+|Usar un ensamblado con nombre seguro y la clave de registro del ensamblado.|La clave de ensamblado puede utilizarse para dirigir explícitamente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cargar un seguro con el nombre de ensamblado de VSPackage. El valor de la clave debe ser el nombre seguro del ensamblado.|  
+|Coloque el archivo DLL en el **PublicAssemblies** directory.|Por último, el ensamblado también se puede colocar en el **PublicAssemblies** subdirectorio. Ensamblados que se encuentran en **PublicAssemblies** se detectan automáticamente y también aparecerá en la **agregar referencias** cuadro de diálogo de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Ensamblados de VSPackage solo deben colocarse en el **PublicAssemblies** directorio si contienen los componentes que están diseñados para ser reutilizada por otros desarrolladores de VSPackage administrados. La mayoría de los ensamblados no cumple este criterio.|  
   
 > [!NOTE]
->  Utilizar ensamblados firmados con nombre seguro para todos los ensamblados dependientes. Estos ensamblados también deben instalarse en su propio directorio o en la caché de ensamblados global \(GAC\). Esto protege contra los conflictos con los ensamblados que tengan el mismo nombre de archivo base, conocido como enlace de nombres débil.
+>  Utilizar ensamblados con nombre seguro, firmados para todos los ensamblados dependientes. Estos ensamblados también deben instalarse en su propio directorio o la caché de ensamblados global (GAC). Esto protege contra entra en conflicto con los ensamblados que tienen el mismo nombre de archivo base, conocido como el enlace de nombre débil.

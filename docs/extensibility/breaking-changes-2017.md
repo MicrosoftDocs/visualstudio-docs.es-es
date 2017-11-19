@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1d474374a0c7603bc9b6995783bbed96c81c8907
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: MT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: ac7a99673eb4dc23dd53a46c3c93fd735325c255
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio de 2017
 
@@ -123,8 +107,3 @@ Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la G
 * Componentes externos pueden encontrar la ubicación de Visual Studio [siguiendo las instrucciones aquí](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
 * Le recomendamos que usan componentes externos la [el Administrador de configuración externo](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) en lugar de lectura/escritura directamente a las claves del registro de Visual Studio.
 * Compruebe si los componentes que se está usando la extensión pueden haber implementado otra técnica para el registro. Por ejemplo, extensiones del depurador pueden aprovechar las ventajas del nuevo [msvsmon registro archivo JSON COM](migrate-debugger-COM-registration.md).
-
-## <a name="change-lightweight-solution-load"></a>Cambio: Carga de la solución ligera
-
-Cargar solución ligera (LSL) reduce el tiempo de carga de solución al cargar completamente proyectos hasta que el usuario empiece a trabajar con ellos. Esto puede afectar a las extensiones que asuman que un proyecto está completamente cargado. Vea [ligero solución carga](lightweight-solution-load-extension-impact.md) para obtener información sobre si la extensión se puede ver afectada y obtener instrucciones acerca de cómo actualizar la extensión.
-

@@ -1,67 +1,69 @@
 ---
-title: "IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSymbolProviderDirect::GetCurrentModulesInfo"
-  - "GetCurrentModulesInfo"
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSymbolProviderDirect::GetCurrentModulesInfo
+- GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 86bdbf5d998f40bcd844939e07c898ae41bfd1a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect::GetCurrentModulesInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Información de recupera sobre los módulos del grupo de símbolos.  
+# <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
+Recupera información acerca de los módulos en el grupo de símbolos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
+```cpp  
 HRESULT GetCurrentModulesInfo(  
-   unsigned long * pCount,  
-   GUID *          ppGuids,  
-   DWORD *         pADIds,  
-   DWORD *         pCurrentState,  
-   IUnknown **     ppCDModItfs  
+   unsigned long * pCount,  
+   GUID *          ppGuids,  
+   DWORD *         pADIds,  
+   DWORD *         pCurrentState,  
+   IUnknown **     ppCDModItfs  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCurrentModulesInfo(  
-   uint       pCount,  
-   Guid       ppGuids,  
-   uint       pADIds,  
-   uint       pCurrentState,  
-   out object ppCDModItfs  
+   uint       pCount,  
+   Guid       ppGuids,  
+   uint       pADIds,  
+   uint       pCurrentState,  
+   out object ppCDModItfs  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pCount`  
- \[in\]  Número de módulos en la matriz de `ppGuids` .  
+ [in] Número de módulos en el `ppGuids` matriz.  
   
  `ppGuids`  
- \[in\]  Matriz que contiene identificadores únicos para los módulos.  
+ [in] Matriz que contiene los identificadores únicos de los módulos.  
   
  `pADIds`  
- \[in\]  identificadores para los dominios de aplicación.  
+ [in] Identificadores de los dominios de aplicación.  
   
  `pCurrentState`  
- \[in\]  Estado actual del grupo de símbolos.  
+ [in] Estado actual del grupo de símbolos.  
   
  `ppCDModItfs`  
- \[out\]  Devuelve un objeto que contiene los módulos del grupo de símbolos.  
+ [out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -1,59 +1,64 @@
 ---
-title: "ShowByDefault (Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault"
-helpviewer_keywords: 
-  - "<ShowByDefault> (elemento) [plantillas de Visual Studio]"
-  - "ShowByDefault (elemento) [plantillas de Visual Studio]"
+title: ShowByDefault (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
+helpviewer_keywords:
+- <ShowByDefault> element [Visual Studio Templates]
+- ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0b6679cdd8f6239d5548f95d8d07146c6cda1ac9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ShowByDefault (Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Si `false`, especifica que la plantilla solo se muestra en el [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) especificado.  
+# <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Plantillas de Visual Studio)
+Si `false`, especifica que la plantilla solo se mostrarán en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<ShowByDefault >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <ShowByDefault> true/false </ShowByDefault>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`.  Si es true, especifica que la plantilla se muestra para todos los tipos de proyecto.  Si es false, la plantilla solo se muestra en el `TemplateGroupID` especificado.  
+ El texto debe ser `true` o `false`. Si es true, especifica que la plantilla se muestra para todos los tipos de proyecto. Si es false, la plantilla solo se muestra en el `TemplateGroupID` especificado.  
   
-## Comentarios  
- `ShowByDefault` es un elemento opcional.  El valor predeterminado es `true`.  
+## <a name="remarks"></a>Comentarios  
+ `ShowByDefault` es un elemento opcional. El valor predeterminado es `true`.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
   
 ```  
@@ -81,7 +86,7 @@ Si `false`, especifica que la plantilla solo se muestra en el [TemplateGroupID](
 </VSTemplate>  
 ```  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [TemplateGroupID \(Elemento, Plantillas de Visual Studio\)](../extensibility/templategroupid-element-visual-studio-templates.md)
+ [TemplateGroupID (Elemento, Plantillas de Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

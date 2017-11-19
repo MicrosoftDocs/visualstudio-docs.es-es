@@ -1,82 +1,84 @@
 ---
-title: "C&#243;mo: Personalizar una pesta&#241;a integrada"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "pestañas integradas [desarrollo de Office en Visual Studio]"
-  - "Cinta [desarrollo de Office en Visual Studio], pestañas"
+title: "Cómo: personalizar una pestaña integrada | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Ribbon [Office development in Visual Studio], tabs
+- built-in tabs [Office development in Visual Studio]
 ms.assetid: 197a7aaa-a51d-496c-b904-b9421849fad9
-caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1161af5501ebd0df8137293b137600697af91516
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Personalizar una pesta&#241;a integrada
-  Puede agregar grupos y controles a una pestaña integrada.  Una pestaña integrada es una pestaña que ya existe en la cinta de una aplicación de Microsoft Office.  Por ejemplo, la pestaña **Datos** es una pestaña integrada en Excel.  Al crear un grupo personalizado, este aparece al final de la pestaña, pero puede colocarlo en la parte que quiera de la pestaña.  
+# <a name="how-to-customize-a-built-in-tab"></a>Cómo: Personalizar una pestaña integrada
+  Puede agregar grupos y controles a una pestaña integrada. Una pestaña integrada es una pestaña que ya existe en la cinta de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel. Al crear un grupo personalizado, este aparece al final de la pestaña, pero puede colocarlo en la parte que quiera de la pestaña.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 > [!NOTE]  
 >  Puede agregar grupos a una pestaña integrada, pero no puede quitar grupos integrados de una pestaña integrada.  
   
-### Para agregar grupos a una pestaña integrada  
+### <a name="to-add-groups-to-a-built-in-tab"></a>Para agregar grupos a una pestaña integrada  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo de código de la cinta y, a continuación, haga clic en **Ver diseñador**.  
+1.  Haga clic en el archivo de código de la cinta de opciones en **el Explorador de soluciones**y, a continuación, haga clic en **Diseñador de vistas**.  
   
     > [!NOTE]  
-    >  Si no aparece el archivo de código de la cinta en el **Explorador de soluciones**, debe agregar un **elemento de Cinta** al proyecto.  Consulte [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+    >  Si no aparece el archivo de código de la cinta de opciones en **el Explorador de soluciones**, debe agregar una **elemento cinta** al proyecto. Vea [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-2.  Haga clic con el botón derecho en cualquier pestaña del diseñador de la cinta y, a continuación, haga clic en **Propiedades**.  
+2.  Haga clic en una pestaña en el Diseñador de la cinta de opciones y, a continuación, haga clic en **propiedades**.  
   
-3.  En la ventana **Propiedades**, expanda la propiedad **ControlId** y, a continuación, establezca la propiedad **ControlIdType** en **Office**.  
+3.  En el **propiedades** ventana, expanda la **ControlId** propiedad y, a continuación, establezca el **ControlIdType** propiedad **Office**.  
   
-4.  Establezca la propiedad **OfficeId** en el *identificador de control* de la pestaña integrada que desee personalizar.  
+4.  Establecer el **OfficeId** propiedad a la *Id. de control* de la ficha integrada que desea personalizar.  
   
      El identificador de control es el nombre que identifica de forma única a las fichas, grupos y controles que se integran en las aplicaciones de Microsoft Office.  
   
-     Para ver una lista de identificadores de control, consulte [Archivos de ayuda de Office 2010: Identificadores de control de la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obtener una lista de identificadores de control, vea [archivos de Ayuda de Office 2010: identificadores de Control en la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-5.  En la pestaña **Controles de la cinta de Office** del **Cuadro de herramientas**, arrastre los grupos hasta colocarlos sobre la pestaña.  
+5.  Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre los grupos a la ficha.  
   
     > [!NOTE]  
-    >  Los grupos integrados no aparecen en el diseñador.  Por lo tanto, la única manera de determinar si se está trabajando con una pestaña integrada consiste en examinar la propiedad **ControlId** de la pestaña.  
+    >  Los grupos integrados no aparecen en el diseñador. Por lo tanto, la única manera de determinar si se está trabajando con una pestaña integrada es examinar el **ControlId** propiedad de la pestaña.  
   
-### Para colocar grupos en una pestaña integrada  
+### <a name="to-position-groups-on-a-built-in-tab"></a>Para colocar grupos en una pestaña integrada  
   
 1.  En el diseñador de la cinta, seleccione un grupo personalizado.  
   
-2.  En la ventana **Propiedades**, expanda la propiedad **Position**.  
+2.  En el **propiedades** ventana, expanda la **posición** propiedad.  
   
-3.  Establezca un valor adecuado para la propiedad **PositionType**.  
+3.  Establecer el **PositionType** propiedad en el valor adecuado:  
   
     -   **BeforeOfficeId** coloca el grupo antes de un grupo integrado especificado.  
   
     -   **AfterOfficeId** coloca el grupo después de un grupo integrado especificado.  
   
-4.  Establezca la propiedad **OfficeId** en el identificador de control de un grupo integrado.  
+4.  Establecer el **OfficeId** propiedad para el Id. de control de un grupo integrado.  
   
-     Para ver una lista de identificadores de control, consulte [Archivos de ayuda de Office 2010: Identificadores de control de la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Para obtener una lista de identificadores de control, vea [archivos de Ayuda de Office 2010: identificadores de Control en la interfaz de usuario de Office Fluent](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
-## Vea también  
- [Información general sobre la cinta de opciones](../vsto/ribbon-overview.md)   
- [Diseñador de la cinta de opciones](../vsto/ribbon-designer.md)   
+## <a name="see-also"></a>Vea también  
+ [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
+ [Diseñador de la cinta](../vsto/ribbon-designer.md)   
  [XML de la cinta de opciones](../vsto/ribbon-xml.md)   
- [Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Tutorial: Crear una pestaña personalizada usando el Diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Tutorial: Crear una pestaña personalizada usando XML de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Cómo: Iniciarse en la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Cómo: Agregar controles en la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Cómo: Mostrar errores de la interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Cómo: cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Cómo: Mostrar errores de complementos de la interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

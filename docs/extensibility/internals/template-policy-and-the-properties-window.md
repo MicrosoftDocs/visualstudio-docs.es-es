@@ -1,34 +1,35 @@
 ---
-title: "Directiva de plantilla y la ventana Propiedades | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ventana de propiedades, directivas de plantilla"
+title: Directiva de plantilla y la ventana Propiedades | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Directiva de plantilla y la ventana Propiedades
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cuando un proyecto se contiene dentro de un proyecto de plantilla de empresa, ese proyecto de plantilla de empresa puede aplicar la directiva.  La directiva de plantilla se convierte en un sistema que restringe que se puede utilizar para establecer los valores predeterminados de las propiedades, ocultar propiedades, agregue propiedades, etc.  
+# <a name="template-policy-and-the-properties-window"></a>Directiva de plantilla y la ventana Propiedades
+Cuando un proyecto se encuentra dentro de un proyecto de enterprise Templates, ese proyecto de enterprise Templates puede aplicar directivas. Directiva de plantilla se convierte en un sistema de restricción que puede utilizarse para establecer los valores predeterminados para las propiedades, ocultar propiedades, agregar propiedades y así sucesivamente.  
   
- Usar la directiva de plantilla controlar la presentación de información en la ventana de **Propiedades** es diferente de implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> controla las propiedades de objeto en el nivel de componente, mientras que la directiva de plantilla se puede utilizar para restringir las propiedades de objeto de la solución o el proyecto.  en otras palabras  
+ Usa una directiva de plantilla para controlar la visualización de información de la **propiedades** ventana es diferente de la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>administra las propiedades de objeto en el nivel de componente, aunque se puede utilizar la directiva de plantilla para restringir las propiedades del objeto en el nivel de solución o proyecto. En otras palabras  
   
--   Implemente los métodos en <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> para determinar lo que se muestra en la ventana de **Propiedades** para objetos específicos  
+-   Implementar los métodos en <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> para determinar lo que se muestra en el **propiedades** ventana para objetos específicos  
   
--   Utilice la directiva de plantilla en la solución y proyecto para determinar lo que se muestra en la ventana de **Propiedades** para objetos previamente especificados  
+-   Usar la directiva de plantilla en el nivel de solución y proyecto para determinar lo que se muestra en el **propiedades** ventana para los objetos especificados anteriormente  
   
- Usar la directiva de plantilla restringir selectivamente propiedades específicas en la ventana de **Propiedades** cuando un elemento de un tipo especificado está seleccionado en **Explorador de soluciones** puede ser beneficioso a todos los miembros del equipo de desarrollo que funciona en un proyecto.  Por ejemplo, mediante la directiva de plantilla, puede configurar toda la información de la cadena de conexión de una base de datos para los desarrolladores y crear readonly de la cadena de conexión.  De esta manera, puede proporcionar una manera simple de garantizar que cada desarrollador usa la ruta de acceso correcta para el acceso a datos.  
+ Uso de directivas de plantilla para restringir de forma selectiva determinadas propiedades de la **propiedades** ventana cuando un elemento de proyecto de un tipo especificado se selecciona en **el Explorador de soluciones** puede ser beneficioso para todos los miembros de el equipo de desarrollo trabaja en un proyecto. Por ejemplo, mediante la directiva de plantilla, puede configurar toda la información de cadena de conexión en una base de datos para los desarrolladores de software y que la cadena de conexión de solo lectura. De esa manera, puede proporcionar una manera sencilla de asegurarse de que cada desarrollador usa la ruta de acceso correcta para el acceso de datos.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
- [Extender propiedades](../../extensibility/internals/extending-properties.md)
+ [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

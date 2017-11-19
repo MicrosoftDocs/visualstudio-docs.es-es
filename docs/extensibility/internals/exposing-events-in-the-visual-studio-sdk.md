@@ -1,28 +1,30 @@
 ---
-title: "Exponer eventos en el SDK de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "eventos [Visual Studio], exponer"
-  - "automatización [Visual Studio SDK], exponiendo los eventos"
+title: Exponer eventos en el SDK de Visual Studio | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- events [Visual Studio], exposing
+- automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Exponer eventos en el SDK de Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite del origen de eventos mediante la automatización. Se recomienda que origen de eventos para los proyectos y elementos de proyecto.  
+# <a name="exposing-events-in-the-visual-studio-sdk"></a>Exponer eventos en el SDK de Visual Studio
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]permite del origen de eventos mediante la automatización. Se recomienda que origen de eventos para los proyectos y elementos de proyecto.  
   
- Eventos se recuperan mediante los consumidores de automatización de la <xref:EnvDTE.DTEClass.Events%2A> objeto o <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). El entorno llama `IDispatch::Invoke` utilizando el `DISPATCH_METHOD` o `DISPATCH_PROPERTYGET` marcas para devolver un evento.  
+ Eventos se recuperan mediante los consumidores de automatización de la <xref:EnvDTE.DTEClass.Events%2A> objeto o <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). El entorno llama `IDispatch::Invoke` mediante el uso de la `DISPATCH_METHOD` o `DISPATCH_PROPERTYGET` marcas para devolver un evento.  
   
  Este procedimiento explica cómo se devuelven los eventos específicos de VSPackage.  
   
@@ -53,15 +55,15 @@ caps.handback.revision: 16
   
  "AutomationProjectItemEvents"="devuelve el objeto AutomationProjectItemsEvents"  
   
-|Nombre|Tipo|Intervalo|Descripción|  
+|Name|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  
-|Valor predeterminado (@)|REG_SZ|No usado|No usado. Puede usar el campo de datos para la documentación.|  
+|Predeterminado (@)|REG_SZ|No utilizado|Sin usar. Puede usar el campo de datos para la documentación.|  
 |AutomationProjectsEvents|REG_SZ|Nombre de su objeto de evento.|Solo el nombre de clave es relevante. Puede usar el campo de datos para la documentación.<br /><br /> En este ejemplo proviene el proyecto básico de ejemplo.|  
 |AutomationProjectItemEvents|REG_SZ|Nombre de su objeto de evento|Solo el nombre de clave es relevante. Puede usar el campo de datos para la documentación.<br /><br /> En este ejemplo proviene el proyecto básico de ejemplo.|  
   
  Cuando cualquiera de los objetos de evento se solicitan por un consumidor de automatización, cree un objeto de raíz que tiene métodos para cualquier evento que admita el VSPackage. El entorno llama a la correspondiente `get_` método en este objeto. Por ejemplo, si `DTE.Events.AutomationProjectsEvents` se llama, el `get_AutomationProjectsEvents` se invoca el método en el objeto raíz.  
   
- ![Eventos de proyectos de Visual Studio](~/extensibility/internals/media/projectevents.gif "ProjectEvents")  
+ ![Eventos de proyecto de Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Modelo de automatización de eventos  
   
  La clase `CProjectEventsContainer` representa el objeto de origen para BscProjectsEvents, mientras que `CProjectItemsEventsContainer` representa el objeto de origen para BscProjectItemsEvents.  
@@ -77,7 +79,7 @@ Modelo de automatización de eventos
   
  En el ejemplo de código siguiente se muestra cómo responder a una solicitud de un objeto de evento.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CVsPackage::GetAutomationObject(  
     /* [in]  */ LPCOLESTR       pszPropName,   
     /* [out] */ IDispatch **    ppIDispatch)  
@@ -106,10 +108,10 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }  
 ```  
   
- En el código anterior, `g_wszAutomationProjects` es el nombre de la colección de proyectos ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") y `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") son los nombres de eventos de proyecto y elementos de proyecto de eventos que se obtienen de la implementación de VSPackage.  
+ En el código anterior, `g_wszAutomationProjects` es el nombre de la colección de proyectos ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") y `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") son los nombres de eventos de proyecto y eventos que se obtienen de los elementos de proyecto de su Implementación de VSPackage.  
   
  Objetos de eventos se recuperan desde la misma ubicación central, el `DTE.Events` objeto. De esta manera, todos los objetos de evento se agrupan juntos para que un usuario final no tiene que examinar el modelo de objetos completo para buscar un evento específico. Esto también le permite proporcionar los objetos de VSPackage específicos, en lugar de requerir que implemente su propio código para los eventos de todo el sistema. Sin embargo, para el usuario final, que debe buscar un evento para su `ProjectItem` interfaz, no está claro inmediatamente desde donde se recupera ese objeto de evento.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
- [Muestras de VSSDK](../../misc/vssdk-samples.md)
+ [Muestras de VSSDK](http://aka.ms/vs2015sdksamples)

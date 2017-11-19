@@ -1,115 +1,115 @@
 ---
-title: "MODULE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO"
-helpviewer_keywords: 
-  - "Estructura MODULE_INFO"
+title: MODULE_INFO | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO
+helpviewer_keywords: MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e5d86bf829c904acd56ca9ab37aa94a0f4038214
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Describe un módulo set \(DLL, EXE, o ensamblado\).  
+# <a name="moduleinfo"></a>MODULE_INFO
+Describe un determinado módulo (archivo DLL, EXE o ensamblado).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-typedef struct tagMODULE_INFO {   
-   MODULE_INFO_FIELDS dwValidFields;  
-   BSTR               m_bstrName;  
-   BSTR               m_bstrUrl;  
-   BSTR               m_bstrVersion;  
-   BSTR               m_bstrDebugMessage;  
-   UINT64             m_addrLoadAddress;  
-   UINT64             m_addrPreferredLoadAddress;  
-   DWORD              m_dwSize;  
-   DWORD              m_dwLoadOrder;  
-   FILETIME           m_TimeStamp;  
-   BSTR               m_bstrUrlSymbolLocation;  
-   MODULE_FLAGS       m_dwModuleFlags;  
+```cpp  
+typedef struct tagMODULE_INFO {   
+   MODULE_INFO_FIELDS dwValidFields;  
+   BSTR               m_bstrName;  
+   BSTR               m_bstrUrl;  
+   BSTR               m_bstrVersion;  
+   BSTR               m_bstrDebugMessage;  
+   UINT64             m_addrLoadAddress;  
+   UINT64             m_addrPreferredLoadAddress;  
+   DWORD              m_dwSize;  
+   DWORD              m_dwLoadOrder;  
+   FILETIME           m_TimeStamp;  
+   BSTR               m_bstrUrlSymbolLocation;  
+   MODULE_FLAGS       m_dwModuleFlags;  
 } MODULE_INFO;  
 ```  
   
-```c#  
-public struct MODULE_INFO {   
-   public uint     dwValidFields;  
-   public string   m_bstrName;  
-   public string   m_bstrUrl;  
-   public string   m_bstrVersion;  
-   public string   m_bstrDebugMessage;  
-   public ulong    m_addrLoadAddress;  
-   public ulong    m_addrPreferredLoadAddress;  
-   public uint     m_dwSize;  
-   public uint     m_dwLoadOrder;  
-   public FILETIME m_TimeStamp;  
-   public string   m_bstrUrlSymbolLocation;  
-   public uint     m_dwModuleFlags;  
+```csharp  
+public struct MODULE_INFO {   
+   public uint     dwValidFields;  
+   public string   m_bstrName;  
+   public string   m_bstrUrl;  
+   public string   m_bstrVersion;  
+   public string   m_bstrDebugMessage;  
+   public ulong    m_addrLoadAddress;  
+   public ulong    m_addrPreferredLoadAddress;  
+   public uint     m_dwSize;  
+   public uint     m_dwLoadOrder;  
+   public FILETIME m_TimeStamp;  
+   public string   m_bstrUrlSymbolLocation;  
+   public uint     m_dwModuleFlags;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Miembros  
  dwValidFields  
- Una combinación de marcadores de enumeración de [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifica se completan los campos.  
+ Una combinación de indicadores de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeración que especifica qué campos se rellenan.  
   
- m\_bstrName  
+ m_bstrName  
  Nombre del módulo.  
   
- m\_bstrUrl  
+ m_bstrUrl  
  La dirección URL del módulo.  
   
- m\_bstrVersion  
+ m_bstrVersion  
  La versión del módulo.  
   
- m\_bstrDebugMessage  
- Un mensaje opcional sobre el módulo, por ejemplo, “Símbolos no puede cargarse”.  
+ m_bstrDebugMessage  
+ Un mensaje opcional sobre el módulo, por ejemplo, "símbolos no se puede cargar."  
   
- m\_addrLoadAddress  
- la dirección de la carga de módulos.  
+ m_addrLoadAddress  
+ La dirección de carga del módulo.  
   
- m\_addrPreferredLoadAddress  
- La dirección preferida de carga del módulo.  
+ m_addrPreferredLoadAddress  
+ La dirección de carga preferido del módulo.  
   
- m\_dwSize  
+ m_dwSize  
  El tamaño del módulo.  
   
- m\_dwLoadOrder  
- El orden de carga de módulos.  
+ m_dwLoadOrder  
+ El orden de carga del módulo.  
   
- m\_TimeStamp  
- Tiempo el archivo de símbolos se modificó.  
+ m_TimeStamp  
+ La hora en que se modificó por última vez el archivo de símbolos.  
   
- m\_bstrUrlSymbolLocation  
- La ubicación del archivo de símbolos \(por ejemplo, “.  \\ "\) especificado en el módulo.  Utilizado como ubicación inicial para encontrar los símbolos para un módulo.  
+ m_bstrUrlSymbolLocation  
+ La ubicación del archivo de símbolos (por ejemplo, ".\\") especificados en el módulo. Se utiliza como una ubicación inicial para buscar símbolos para un módulo.  
   
- m\_dwModuleFlags  
- Una combinación de marcadores de enumeración de [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md) que describe el módulo.  
+ m_dwModuleFlags  
+ Una combinación de indicadores de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeración que describe el módulo.  
   
-## Comentarios  
- Esta estructura se pasa al método de [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) donde se completa.  
+## <a name="remarks"></a>Comentarios  
+ Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método donde se rellena.  
   
- Esta estructura corresponde a cada módulo de la ventana de **Módulos** .  
+ Esta estructura corresponde a cada módulo mostrado en el **módulos** ventana.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Estructuras y uniones](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

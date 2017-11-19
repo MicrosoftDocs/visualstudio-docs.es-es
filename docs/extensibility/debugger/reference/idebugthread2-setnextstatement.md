@@ -1,64 +1,64 @@
 ---
-title: "IDebugThread2::SetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::SetNextStatement"
-helpviewer_keywords: 
-  - "IDebugThread2::SetNextStatement"
+title: IDebugThread2::SetNextStatement | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::SetNextStatement
+helpviewer_keywords: IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6dd345fe298af42a69ac076bf92de7df9db82ec2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::SetNextStatement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Establece el puntero de instrucción actual al contexto determinado de código.  
+# <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
+Establece el puntero de instrucción actual en el contexto de código especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT SetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
+```cpp  
+HRESULT SetNextStatement (   
+   IDebugStackFrame2*  pStackFrame,  
+   IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```c#  
-int SetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
+```csharp  
+int SetNextStatement (   
+   IDebugStackFrame2  pStackFrame,  
+   IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `pStackFrame`  
- reservado para uso futuro; establezca en un valor nulo.  
+ Reservado para uso futuro; establecer en un valor null.  
   
  `pCodeContext`  
- \[in\]  Un objeto de [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) que describe la ubicación del código alrededor que se ejecutará y su contexto.  
+ [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación del código va a ejecutar y su contexto.  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  la tabla siguiente muestra otros valores posibles.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. La tabla siguiente muestran otros valores posibles.  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|\_SET\_NEXT\_STATEMENT\_ON\_NONLEAF\_FRAME OF E\_CAN NO|La siguiente instrucción no puede estar en un marco de pila se encuentra más abajo en la pila del cuadro.|  
-|\_SETIP\_TO\_DIFFERENT\_FUNCTION OF E\_CAN NO|La instrucción siguiente no está asociado a ningún marco en la pila.|  
-|\_SET\_NEXT\_STATEMENT\_ON\_EXCEPTION OF E\_CAN NO|Algunos motores de depuración no pueden establecer la siguiente instrucción después de una excepción.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|La siguiente instrucción no puede estar en un marco de pila más profundo en la pila de marco.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|La siguiente instrucción que no está asociada con cualquier marco de la pila.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Algunos motores de depuración no pueden establecer la siguiente instrucción después de una excepción.|  
   
-## Comentarios  
- el puntero de instrucción indica la instrucción o la instrucción siguiente de ejecutarse.  este método se utiliza para reintentar una línea de código fuente o para forzar la ejecución para continuar en otra función, por ejemplo.  
+## <a name="remarks"></a>Comentarios  
+ El puntero de instrucción indica la siguiente instrucción o instrucción para ejecutar. Este método se utiliza para volver a intentar una línea de código fuente o para forzar la ejecución continúe en otra función, por ejemplo.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

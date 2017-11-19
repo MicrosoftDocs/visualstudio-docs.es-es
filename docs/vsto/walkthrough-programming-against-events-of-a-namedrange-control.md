@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Programming Against Events of a NamedRange Control | Microsoft Docs'
+title: "Tutorial: Programar basándose en eventos de un Control NamedRange | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,153 +17,155 @@ helpviewer_keywords:
 - worksheets, events
 - worksheets, automating
 ms.assetid: b69676f9-23b2-4ed6-83ab-8868c3f10948
-caps.latest.revision: 57
-author: kempb
-ms.author: kempb
+caps.latest.revision: "57"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a5f6633c7dba31b88bf1daab0ab02dede3bd1e79
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 40076f607e66ec76aaa42ae297d22b38a6234ab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Walkthrough: Programming Against Events of a NamedRange Control
-  This walkthrough demonstrates how to add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a Microsoft Office Excel worksheet and program against its events using by using Office development tools in Visual Studio.  
+# <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Tutorial: Programar basándose en los eventos de un control NamedRange
+  Este tutorial muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo de Microsoft Office Excel y programar teniendo en cuenta sus eventos mediante herramientas de desarrollo de Office en Visual Studio.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ Durante este tutorial aprenderá a:  
   
--   Add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a worksheet.  
+-   Agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo.  
   
--   Program against <xref:Microsoft.Office.Tools.Excel.NamedRange> control events.  
+-   Programar con <xref:Microsoft.Office.Tools.Excel.NamedRange> controlar eventos.  
   
--   Test your project.  
+-   El proyecto de prueba.  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Requisitos previos  
+ Necesita los componentes siguientes para completar este tutorial:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
- In this step, you will create an Excel workbook project using Visual Studio.  
+## <a name="creating-the-project"></a>Crear el proyecto  
+ En este paso, creará un proyecto de libro de Excel con Visual Studio.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Create an Excel Workbook project with the name **My Named Range Events**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de libro de Excel con el nombre **Mis eventos de rango con nombre**. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **My Named Range Events** project to **Solution Explorer**.  
+     Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **Mis eventos de rango con nombre** proyecto al **el Explorador de soluciones**.  
   
-## <a name="adding-text-and-named-ranges-to-the-worksheet"></a>Adding Text and Named Ranges to the Worksheet  
- Because host controls are extended Office objects, you can add them to your document in the same manner you would add the native object. For example, you can add an Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a worksheet by opening the **Insert** menu, pointing to **Name**, and choosing **Define**. You can also add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control by dragging it from the **Toolbox** onto the worksheet.  
+## <a name="adding-text-and-named-ranges-to-the-worksheet"></a>Agregar texto y rangos con nombre a la hoja de cálculo  
+ Dado que los controles host son objetos de Office extendidos, puede agregarlos al documento de la misma manera que agregaría el objeto nativo. Por ejemplo, puede agregar un Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo abriendo el **insertar** menú, que señala a **nombre**y elegir **definir**. También puede agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control arrastrándolo desde la **cuadro de herramientas** en la hoja de cálculo.  
   
- In this step, you will add two named range controls to the worksheet using the **Toolbox**, and then add text to the worksheet.  
+ En este paso, agregará dos controles de rango con nombre a la hoja de cálculo mediante la **cuadro de herramientas**y, a continuación, agregue texto a la hoja de cálculo.  
   
-#### <a name="to-add-a-range-to-your-worksheet"></a>To add a range to your worksheet  
+#### <a name="to-add-a-range-to-your-worksheet"></a>Para agregar un intervalo a la hoja de cálculo  
   
-1.  Verify that the **My Named Range Events.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
+1.  Compruebe que la **Events.xlsx de intervalo con el nombre Mi** libro está abierto en el Diseñador de Visual Studio, con `Sheet1` muestra.  
   
-2.  From the **Excel Controls** tab of the Toolbox, drag a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **A1** in `Sheet1`.  
+2.  Desde el **controles de Excel** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la celda **A1** en `Sheet1`.  
   
-     The **Add NamedRange Control** dialog box appears.  
+     El **agregar NamedRange Control** aparece el cuadro de diálogo.  
   
-3.  Verify that **$A$1** appears in the editable text box, and that cell **A1** is selected. If it is not, click cell **A1** to select it.  
+3.  Compruebe que **$A$ 1** aparece en el cuadro de texto editable y esa celda **A1** está seleccionada. Si no es así, haga clic en la celda **A1** para seleccionarlo.  
   
-4.  Click **OK**.  
+4.  Haga clic en **Aceptar**.  
   
-     Cell **A1** becomes a range named `namedRange1`. There is no visible indication on the worksheet, but `namedRange1` appears in the **Name** box (located just above the worksheet on the left side) when cell **A1** is selected.  
+     Celda **A1** se convierte en un rango con nombre `namedRange1`. No hay ninguna indicación visible en la hoja de cálculo, pero `namedRange1` aparece en la **nombre** (situada justo encima de la hoja de cálculo en el lado izquierdo) cuando la celda **A1** está seleccionada.  
   
-5.  Add another <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **B3**.  
+5.  Agregue otro <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la celda **B3**.  
   
-6.  Verify that **$B$3** appears in the editable text box, and that cell **B3** is selected. If it is not, click cell **B3** to select it.  
+6.  Compruebe que **$B$ 3** aparece en el cuadro de texto editable y esa celda **B3** está seleccionada. Si no es así, haga clic en la celda **B3** para seleccionarlo.  
   
-7.  Click **OK**.  
+7.  Haga clic en **Aceptar**.  
   
-     Cell **B3** becomes a range named `namedRange2`.  
+     Celda **B3** se convierte en un rango con nombre `namedRange2`.  
   
-#### <a name="to-add-text-to-your-worksheet"></a>To add text to your worksheet  
+#### <a name="to-add-text-to-your-worksheet"></a>Para agregar texto a la hoja de cálculo  
   
-1.  In Cell **A1**, type the following text:  
+1.  En la celda **A1**, escriba el texto siguiente:  
   
-     **This is an example of a NamedRange control.**  
+     **Este es un ejemplo de un control NamedRange.**  
   
-2.  In Cell **A3** (to the left of `namedRange2`), type the following text:  
+2.  En la celda **A3** (a la izquierda del `namedRange2`), escriba el texto siguiente:  
   
-     **Events:**  
+     **Eventos:**  
   
- In the following sections, you will write code that inserts text into `namedRange2` and modifies properties of the `namedRange2` control in response to the <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, and <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> events of `namedRange1`.  
+ En las secciones siguientes, escribirá código que inserta texto en `namedRange2` y modifica las propiedades de la `namedRange2` control en respuesta a la <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>, y <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> eventos de `namedRange1`.  
   
-## <a name="adding-code-to-respond-to-the-beforedoubleclick-event"></a>Adding Code to Respond to the BeforeDoubleClick Event  
+## <a name="adding-code-to-respond-to-the-beforedoubleclick-event"></a>Agregar código para responder al evento BeforeDoubleClick  
   
-#### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>To insert text into NamedRange2 based on the BeforeDoubleClick event  
+#### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Para insertar texto en NamedRange2 basado en el evento BeforeDoubleClick  
   
-1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs** and select **View Code**.  
+1.  En **el Explorador de soluciones**, haga clic en **Sheet1.vb** o **Sheet1.cs** y seleccione **ver código**.  
   
-2.  Add code so the `namedRange1_BeforeDoubleClick` event handler looks like the following:  
+2.  Agregar código de modo que los `namedRange1_BeforeDoubleClick` controlador de eventos es similar al siguiente:  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]  [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  In C#, you must add event handlers for the named range as shown in the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  En C#, debe agregar controladores de eventos para el rango con nombre, como se muestra en el <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento siguiente. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
-## <a name="adding-code-to-respond-to-the-change-event"></a>Adding Code to Respond to the Change Event  
+## <a name="adding-code-to-respond-to-the-change-event"></a>Agregar código para responder al evento de cambio  
   
-#### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>To insert text into namedRange2 based on the Change event  
+#### <a name="to-insert-text-into-namedrange2-based-on-the-change-event"></a>Para insertar texto en namedRange2 basado en el evento de cambio  
   
-1.  Add code so the `NamedRange1_Change` event handler looks like the following:  
+1.  Agregar código de modo que los `NamedRange1_Change` controlador de eventos es similar al siguiente:  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]  [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]  
-  
-    > [!NOTE]  
-    >  Because double-clicking a cell in an Excel range enters edit mode, a <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> event occurs when the selection is moved outside of the range even if no changes to text occurred.  
-  
-## <a name="adding-code-to-respond-to-the-selectionchange-event"></a>Adding Code to Respond to the SelectionChange Event  
-  
-#### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>To insert text into namedRange2 based on the SelectionChange event  
-  
-1.  Add code so the **NamedRange1_SelectionChange** event handler looks like the following:  
-  
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]  [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]  
   
     > [!NOTE]  
-    >  Because double-clicking a cell in an Excel range causes the selection to move into the range, a <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> event occurs before the <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> event occurs.  
+    >  Dado que haga doble clic en una celda de un rango de Excel entra en modo de edición, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> evento tiene lugar cuando la selección se mueve fuera del intervalo, incluso si se ha producido ningún cambio en el texto.  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Now you can test your workbook to verify that text describing the events of a <xref:Microsoft.Office.Tools.Excel.NamedRange> control is inserted into another named range when the events are raised.  
+## <a name="adding-code-to-respond-to-the-selectionchange-event"></a>Agregar código para responder al evento SelectionChange  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Para insertar texto en namedRange2 basado en el evento SelectionChange  
   
-1.  Press F5 to run your project.  
+1.  Agregar código de modo que los **NamedRange1_SelectionChange** controlador de eventos es similar al siguiente:  
   
-2.  Place your cursor in `namedRange1`, and verify that the text regarding the <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> event is inserted and that a comment is inserted into the worksheet.  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]  
   
-3.  Double click inside `namedRange1`, and verify that the text regarding <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> events is inserted with red italicized text in `namedRange2`.  
+    > [!NOTE]  
+    >  Dado que haga doble clic en una celda de un rango de Excel hace que la selección mover en el intervalo, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> evento tiene lugar antes de la <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> se produce el evento.  
   
-4.  Click outside of `namedRange1` and note that the change event occurs when exiting edit mode even though no change to the text was made.  
+## <a name="testing-the-application"></a>Probar la aplicación  
+ Ahora puede probar el libro para comprobar el texto que describe los eventos de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control se inserta en otro rango con nombre cuando se producen los eventos.  
   
-5.  Change the text within `namedRange1`.  
+#### <a name="to-test-your-document"></a>Para probar el documento  
   
-6.  Click outside of `namedRange1`, and verify that the text regarding <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> event is inserted with blue text into `namedRange2`.  
+1.  Presione F5 para ejecutar el proyecto.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of programming against events of a <xref:Microsoft.Office.Tools.Excel.NamedRange> control. Here is a task that might come next:  
+2.  Coloque el cursor en `namedRange1`y compruebe que el texto con respecto a la <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> se insertan eventos y que se inserta un comentario en la hoja de cálculo.  
   
--   Deploying the project. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+3.  Haga doble clic en `namedRange1`y compruebe que el texto con respecto a <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> eventos se inserta con texto rojo en cursiva en `namedRange2`.  
   
-## <a name="see-also"></a>See Also  
+4.  Haga clic en fuera de `namedRange1` y tenga en cuenta que el evento de cambio se produce al salir del modo de edición, aunque se haya realizado ningún cambio en el texto.  
+  
+5.  Cambiar el texto dentro de `namedRange1`.  
+  
+6.  Haga clic en fuera de `namedRange1`y compruebe que el texto con respecto a <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> eventos se insertan con texto azul en `namedRange2`.  
+  
+## <a name="next-steps"></a>Pasos siguientes  
+ Este tutorial muestran los aspectos básicos de programación con eventos de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control. Esta es una tarea que podría realizar las siguiente:  
+  
+-   Implementar el proyecto. Para obtener más información, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
+  
+## <a name="see-also"></a>Vea también  
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [How to: Resize NamedRange Controls](../vsto/how-to-resize-namedrange-controls.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
+ [NamedRange (Control)](../vsto/namedrange-control.md)   
+ [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md)  
+ [Cómo: Crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  
   
   

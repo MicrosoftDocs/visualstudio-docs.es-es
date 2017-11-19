@@ -1,59 +1,64 @@
 ---
-title: "FullClassName (Elemento, extensi&#243;n del Asistente para plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName"
-helpviewer_keywords: 
-  - "FullClassName (elemento) [plantillas de proyecto de Visual Studio]"
+title: "FullClassName (elemento) (extensión de Asistente de plantilla de Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
+helpviewer_keywords: FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# FullClassName (Elemento, extensi&#243;n del Asistente para plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El nombre completo de la clase que implementa la interfaz `IWizard`.  
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName (Elemento, extensión del Asistente para plantillas de Visual Studio)
+El nombre completo de la clase que implementa el `IWizard` interfaz.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<WizardExtension >  
+ ...  
+ \<FullClassName >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
-## Atributos y elementos  
- Las siguientes secciones describen atributos, elementos secundarios y elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar el asistente de plantillas.|  
+|-------------|-----------------|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar al Asistente para plantillas.|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Este texto especifica la clase que implementa la interfaz `IWizard`.  La clase especificada debe existir en el ensamblado especificado por el elemento [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md).  
+ Este texto especifica la clase que implementa el `IWizard` interfaz. La clase especificada debe existir en el ensamblado especificado por el [ensamblado](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elemento.  
   
-## Comentarios  
- `FullClassName` es un elemento secundario necesario de `WizardExtension`.  
+## <a name="remarks"></a>Comentarios  
+ `FullClassName` es un elemento secundario obligatorio de `WizardExtension`.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos de una plantilla de proyecto estándar de una aplicación Windows de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -83,7 +88,7 @@ El nombre completo de la clase que implementa la interfaz `IWizard`.
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
- [Cómo: Utilizar los asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [Uso de asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

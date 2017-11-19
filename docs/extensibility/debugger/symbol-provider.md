@@ -1,33 +1,35 @@
 ---
-title: "Proveedor de s&#237;mbolos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "controlador de símbolos"
-  - "depurar [SDK de depuración], el controlador de símbolos"
+title: "Proveedor de símbolos | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- symbol handler
+- debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Proveedor de s&#237;mbolos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Una implementación del evaluador de la expresión debe tener acceso a información de depuración simbólica generada por el compilador de lenguaje para evaluar variables y expresiones.  Hacerlo utilizando las interfaces de proveedor de símbolos \(SP\), también denominadas un controlador de símbolos.  
+# <a name="symbol-provider"></a>Proveedor de símbolos
+Una implementación del evaluador de expresiones debe tener acceso a la información de depuración simbólica generada por el compilador de lenguaje para evaluar variables y expresiones. Para ello, consume las interfaces de un proveedor de símbolos (SP), denominado también un controlador de símbolos.  
   
- SPS de fuentes de[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]para el código administrado como código nativo utilizando el formato de archivo de símbolos de \(PDB\) la base de datos de programa.  A menos que haya una necesidad seguros de programa de utilizar los símbolos almacenados en un formato personalizado, se recomienda utilizar el SPS proporcionado por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Proporciona SPs para código administrado, así como código nativo utilizando el formato de archivo de símbolos de base de datos de programa (PDB). A menos que haya una fuerte necesita para que el programa para utilizar símbolos almacenados en un formato personalizado, se recomienda que utilice la SPs proporcionados por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Notas de implementación  
- Los motores de depuración de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]esperan comunicarse con el SPS mediante interfaces \(CLR\) de Common Language Runtime.  Como resultado, SP que funcionará con los motores de depuración de Visual Studio debe admitir CLR.  Una lista completa de todo el CLR que las interfaces de depuración se puede encontrar en debugref.doc, que forma parte de [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
+## <a name="implementation-notes"></a>Notas de implementación  
+ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración que se esperan para comunicarse con el SP mediante interfaces de Common Language Runtime (CLR). Como resultado, un Service Pack que va a trabajar con los motores de depuración de Visual Studio debe admitir el CLR. Encontrará una lista completa de todas las interfaces de depuración de CLR en debugref.doc, que forma parte de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
   
- Si SP solo funciona con el motor de depuración, puede implementar SP según su conveniencia dependiendo de las necesidades del motor de depuración.  
+ Si va a trabajar el SP solo con el motor de depuración, puede implementar el SP como considere oportuno según las necesidades de su motor de depuración.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

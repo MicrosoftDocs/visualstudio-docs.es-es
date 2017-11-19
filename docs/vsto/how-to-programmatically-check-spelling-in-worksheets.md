@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Check Spelling in Worksheets | Microsoft Docs'
+title: "Cómo: revisar la ortografía en hojas de cálculo mediante programación | Documentos de Microsoft"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,38 +16,39 @@ helpviewer_keywords:
 - worksheets, checking spelling
 - spelling, checking in worksheets
 ms.assetid: 16367c5d-2075-4174-bb87-dfc59f02c84c
-caps.latest.revision: 53
-author: kempb
-ms.author: kempb
+caps.latest.revision: "53"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3d6a298677621901f9c798f7f297e47f859e5020
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f5fbd9bf79addf758b18fc21aebd43ceaf2dc3d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>How to: Programmatically Check Spelling in Worksheets
-  You can programmatically check the spelling of words in a worksheet. The **Spelling** dialog box automatically appears if there are any incorrectly spelled words in the worksheet.  
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Cómo: Revisar la ortografía en hojas de cálculo mediante programación
+  Puede comprobar la ortografía en una hoja de cálculo mediante programación. El cuadro de diálogo **Ortografía** aparece automáticamente si hay palabras mal escritas en la hoja de cálculo.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>To check spelling in a worksheet in a document-level customization  
+### <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Para revisar la ortografía en una hoja de cálculo en una personalización de nivel de documento  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> method of the worksheet.  
+1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> de la hoja de cálculo.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]  [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
+     [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]  
   
-### <a name="to-check-spelling-in-a-worksheet-in-an-vsto-add-in"></a>To check spelling in a worksheet in an VSTO Add-in  
+### <a name="to-check-spelling-in-a-worksheet-in-an-vsto-add-in"></a>Para revisar la ortografía en una hoja de cálculo en un complemento VSTO  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> method of the active worksheet.  
+1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> de la hoja de cálculo activa.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Run Excel Calculations](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Vea también  
+ [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
+ [Cómo: ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [NamedRange (Control)](../vsto/namedrange-control.md)   
+ [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

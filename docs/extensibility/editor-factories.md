@@ -1,57 +1,58 @@
 ---
-title: "Generadores de editores | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "editores [Visual Studio SDK] heredados - generadores de editores"
+title: Generadores de editores | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0bfef7e641bc8f7e041242ce28110845855c2a65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Generadores de editores
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un generador del editor crea objetos editor y los coloca en un marco de ventana, conocido como vista física.  Crea los objetos de datos y de vista de documentos de documento que son necesarios para crear editores y diseñadores.  Un generador del editor se requiere crear el editor básico de Visual Studio y cualquier editor estándar.  Un editor personalizado se pueden crear opcionalmente con un generador del editor.  
+# <a name="editor-factories"></a>Generadores de editores
+Un generador de editores crea objetos de editor y los coloca en un marco de ventana, que se conoce como una vista física. Crea los datos del documento y los objetos de vista de documentos que son necesarios para crear editores y diseñadores. Se requiere un generador del editor para crear el editor de Visual Studio core y cualquier editor estándar. Opcionalmente, también puede crearse un editor personalizado con un generador de editores.  
   
- Crea un generador del editor implementando la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> .  El ejemplo siguiente se muestra cómo implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> para crear un generador del editor:  
+ Crear un generador de editores implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz. En el ejemplo siguiente se muestra cómo implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> para crear un generador del editor:  
   
  [!code-vb[VSSDKEditorFactories#1](../extensibility/codesnippet/VisualBasic/editor-factories_1.vb)]
- [!code-cs[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
+ [!code-csharp[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
   
- Un editor se carga la primera vez que abra un tipo de archivo controlado por el editor.  Puede elegir para abrir un editor específico o el editor predeterminado.  Si selecciona el editor predeterminado, el entorno de desarrollo \(IDE\) integrado \(IDE\) determina el editor correcto para abrir y lo abre.  Para obtener más información, vea [Determinar qué Editor se abre un archivo en un proyecto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
+ Un editor se carga la primera vez que abre un tipo de archivo controlado por ese editor. Puede abrir un editor determinado o el editor predeterminado. Si selecciona el editor predeterminado, el entorno de desarrollo integrado (IDE) determina el editor correcto para abrir y, a continuación, lo abre. Para obtener más información, consulte [determinar qué Editor abre un archivo en un proyecto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## Registrar generadores de editor  
- Antes de poder utilizar un editor que ha creado, primero debe registrar información sobre él, incluidas las extensiones de archivo que puede controlar.  
+## <a name="registering-editor-factories"></a>Registrar generadores de editores  
+ Para poder usar un editor que ha creado, primero debe registrar información sobre él, incluidas las extensiones de archivo que puede controlar.  
   
- Si el Paquete está escrita en código administrado, puede utilizar el método administrado <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> \(MPF\) de paquete para registrar el generador de editor después de que el Paquete se carga.  Si el Paquete está escrita en código no administrado, debe registrar el generador del editor mediante el servicio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> .  
+ Si el paquete de VS está escrita en código administrado, puede utilizar el método de Managed Package Framework (MPF) <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> para registrar el generador de editores después de carga el paquete de VS. Si se escribe el VSPackage en código no administrado, debe registrar el generador del editor mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors> service.  
   
-### Registrar un generador del editor utilizando código administrado  
- Debe registrar el generador del editor en el método de `Initialize` de VSPackage.  La primera llamada `base.Initialize`, y después llama a <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> para cada generador del editor  
+### <a name="registering-an-editor-factory-by-using-managed-code"></a>El registro de un generador del Editor mediante código administrado  
+ Debe registrar el generador del editor en el VSPackage la `Initialize` método. Llamar primero a `base.Initialize`y, a continuación, llame a <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> para cada generador de editores  
   
- En código administrado, no hay ningún registro de necesidad al generador del editor, porque el paquete VSPackage administrará esto.  Además, si el generador del editor implementa <xref:System.IDisposable>, automáticamente se elimina cuando no está registrado.  
+ En código administrado, no hay ninguna necesidad de anular el registro de un generador de editores, porque el VSPackage controlan esto por usted. Además, si implementa el generador de editores <xref:System.IDisposable>, se elimina automáticamente cuando se anula el registro.  
   
-### Registrar un generador del editor utilizando código no administrado  
- En la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> para el paquete de editor, utilice el método de `QueryService` para llamar a `SVsRegisterEditors`.  Esto devuelve un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>.  Llame al método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> pasando la implementación de la interfaz de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> .  Debe mplement <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> en una clase independiente.  
+### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>El registro de un generador del editor mediante código no administrado  
+ En el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementación para el paquete de editor, use la `QueryService` método para llamar a `SVsRegisterEditors`. Esto devuelve un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> método pasando la implementación de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz. Debe mplementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> en una clase independiente.  
   
-## El proceso de registro del generador del editor  
- El proceso siguiente aparece cuando Visual Studio carga el editor mediante el generador del editor:  
+## <a name="the-editor-factory-registration-process"></a>El proceso de registro de fábrica de Editor  
+ El siguiente proceso se produce cuando el editor con el generador de editores de carga de Visual Studio:  
   
-1.  El <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>del sistema de proyectos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+1.  El [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] llamadas al sistema del proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Este método devuelve el generador del editor.  Visual Studio retrasa la carga del paquete de editor, sin embargo, hasta un sistema de proyecto necesita realmente el editor.  
+2.  Este método devuelve el generador de editores. Retrasos visuales Studio cargar el paquete del editor, sin embargo, hasta que un sistema de proyecto necesita realmente el editor.  
   
-3.  Cuando un sistema de proyecto necesita el editor, Visual Studio llama al <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un método especializado que devuelve la vista del documento y los objetos del documento.  
+3.  Cuando un sistema de proyecto necesita el editor, Visual Studio llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un método especializado que devuelve los objetos de datos de la vista de documento y el documento.  
   
-4.  Si las llamadas por Visual Studio al generador del editor mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> devuelven un objeto del documento y un objeto de vista del documento, Visual Studio creará la ventana de documento, coloca el objeto de vista del documento en él, y crea una entrada en la tabla en el \(RDT\) documento para el objeto del documento.  
+4.  Si llama a Visual Studio al editor generador mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> devolver un objeto de datos de documento y un objeto de vista de documento, Visual Studio, a continuación, crea la ventana de documento, coloca el objeto de vista de documento en él y crea una entrada en el documento de ejecución tabla (RDT) para el objeto de datos del documento.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
- [Tabla de documentos de ejecución](../extensibility/internals/running-document-table.md)
+ [Tabla de documentos en ejecución](../extensibility/internals/running-document-table.md)

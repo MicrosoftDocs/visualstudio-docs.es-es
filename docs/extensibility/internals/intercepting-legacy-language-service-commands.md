@@ -1,40 +1,42 @@
 ---
-title: "Intercepci&#243;n de comandos del servicio de lenguaje heredado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "comandos, interceptar el servicio de lenguaje"
-  - "Servicios de lenguaje, la intercepción de comandos"
+title: Interceptar comandos del servicio de lenguaje heredado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands, intercepting language service
+- language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73524ce47dfea2d30e44e51e97bf584a95a86482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Intercepci&#243;n de comandos del servicio de lenguaje heredado
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], puede tener los comandos de la intersección del servicio de lenguaje que la vista de texto deben de otra manera.  Esto es útil para el comportamiento específico del lenguaje que la vista de texto no administra.  Puede interceptar estos comandos agregando uno o más filtros de comando a la vista de texto del servicio de lenguaje.  
+# <a name="intercepting-legacy-language-service-commands"></a>Interceptar comandos del servicio de lenguaje heredado
+Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], puede hacer que los comandos de intercept de servicio de lenguaje que en caso contrario, controlaría la vista de texto. Esto es útil para el comportamiento específico del idioma que no administra la vista de texto. Puede interceptar estos comandos mediante la adición de uno o más filtros de comandos a la vista de texto de su servicio de lenguaje.  
   
-## Obtener y distribuyendo el comando  
- Un filtro de comando es un objeto de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> que controla algunas secuencias de caracteres o comandos clave.  Puede asociar más de un filtro de comando con una única vista de texto.  Cada vista de texto mantiene los filtros de una cadena de comandos.  Después de crear un nuevo filtro de comando, agregue el filtro a la cadena para la vista de texto adecuada.  
+## <a name="getting-and-routing-the-command"></a>Obtener y enrutamiento el comando  
+ Un filtro de comandos es un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> objetos que supervisa de ciertas secuencias de caracteres o los comandos de teclas. Puede asociar más de un filtro de comandos a una vista de solo texto. Cada vista de texto mantiene los filtros de una cadena de comando. Después de crear un nuevo filtro de comandos, agregue el filtro a la cadena para la vista de texto adecuado.  
   
- Llame al método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para agregar el filtro de comando a la cadena.  Cuando se llama a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] devuelve otro filtro de comando al que puede pasar los comandos que el filtro de comando no controla.  
+ Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para agregar el filtro de comando a la cadena. Cuando se llama a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] devuelve otro filtro de comandos a la que se pueden pasar los comandos que no controla el filtro de comando.  
   
- Tiene las opciones siguientes para administrar de comando:  
+ Tiene las siguientes opciones para la gestión de comandos:  
   
--   Controle el comando y debe pasar el comando al filtro de comando siguiente en la cadena.  
+-   Controlar el comando y, a continuación, pasar el comando en el siguiente filtro de comandos en la cadena.  
   
--   Controle el comando y no pase el comando al filtro de comando siguiente.  
+-   Controlar el comando y no pasan el comando en el siguiente filtro de comandos.  
   
--   No controle el comando, pero pase el comando al filtro de comando siguiente.  
+-   No se debe administrar el comando, pero pasar el comando en el siguiente filtro de comandos.  
   
--   omita el comando.  No lo administrar en el filtro actual, y no lo pase al filtro siguiente.  
+-   Pasar por alto el comando. No se controlan en el filtro actual y no la pasa al siguiente filtro.  
   
- Para obtener información sobre qué comandos debe administrar el servicio de lenguaje, vea [Comandos importantes para los filtros de servicio de lenguaje](../../extensibility/internals/important-commands-for-language-service-filters.md).
+ Para obtener información acerca de los comandos que se debe administrar el servicio de lenguaje, vea [comandos importantes para los filtros de servicio de lenguaje](../../extensibility/internals/important-commands-for-language-service-filters.md).

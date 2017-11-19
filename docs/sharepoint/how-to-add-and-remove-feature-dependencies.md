@@ -1,76 +1,77 @@
 ---
-title: "C&#243;mo: Agregar y quitar dependencias de caracter&#237;sticas"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW"
-  - "VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, características"
+title: "Cómo: agregar y quitar dependencias de características | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
+- VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, features
 ms.assetid: 2b34c8d9-c975-4fe9-b8e0-52db4a6014ea
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d758c5d4f410881989492f64dd7a7e5b8dc73804
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Agregar y quitar dependencias de caracter&#237;sticas
-  Su característica de SharePoint puede depender de otra característica para la funcionalidad o los datos.  En estos casos, puede marcar estas otras características como dependencias de su característica.  De esta manera, el servidor de SharePoint se asegura de que todas las características dependientes están activadas antes de que se active su característica.  
+# <a name="how-to-add-and-remove-feature-dependencies"></a>Cómo: Agregar y quitar dependencias de características
+  La característica de SharePoint puede depender de otras características para la funcionalidad o datos. En estos casos, puede marcar estas otras características como dependencias para la característica. De esta manera, el servidor de SharePoint se asegura de que se activan las características dependientes antes de que la característica está activada.  
   
-## Agregar dependencias  
- Puede agregar otras características a la solución como dependencias.  De este modo se asegura de que las características necesarias se instalan y activan antes de que se instale su característica.  
+## <a name="adding-dependencies"></a>Adición de dependencias  
+ Puede agregar otras características de la solución como dependencias. De esta manera, puede asegurarse de que requiere características instaladas y activar antes de que se instala la característica.  
   
-#### Para agregar una dependencia a una característica de la solución  
+#### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Para agregar una dependencia en una característica de la solución  
   
-1.  Abra el diseñador de características, expanda el nodo de **Dependencias de activación de característica** , y después elija el botón de **Add** .  
+1.  Abra el Diseñador de características, expanda el **dependencias de activación de características** nodo y, a continuación, elija la **agregar** botón.  
   
-2.  En el cuadro de diálogo de **Agregar dependencias de activación de característica** , elija el botón de opción de **Agregar una dependencia a las características de la solución** , elija el título de la característica que desea agregar como dependencia, y después elija el botón de **Add** .  
+2.  En el **agregar dependencias de activación de características** diálogo cuadro, elija la **agregar una dependencia en las características de la solución** botón de opción, elija el título de la característica que desea agregar como una dependencia y, a continuación, Elija la **agregar** botón.  
   
-     Puede agregar más de una característica eligiendo varios títulos mientras elige la tecla CTRL.  
+     Puede agregar más de una característica seleccionando varios títulos mientras presiona la tecla Ctrl.  
   
-## Agregar dependencias personalizadas  
- Puede agregar características que ya están implementadas en un servidor de SharePoint como una dependencia.  De esta manera, el proceso de activación de SharePoint comprueba para asegurarse de que se activan todas las características dependientes antes de que se instale su característica.  
+## <a name="adding-custom-dependencies"></a>Agregar dependencias personalizadas  
+ Puede agregar características que ya están implementadas en un servidor de SharePoint como una dependencia. De esta manera, el proceso de activación de SharePoint comprueba para asegurarse de que se activan todas las características dependientes antes de instala la característica.  
   
-#### Para agregar una dependencia por el identificador de la característica  
+#### <a name="to-add-a-dependency-by-the-feature-id"></a>Para agregar una dependencia por el identificador de característica  
   
-1.  Abra el diseñador de características, expanda el nodo de **Dependencias de activación de característica** , y después elija el botón de **Add** .  
+1.  Abra el Diseñador de características, expanda el **dependencias de activación de características** nodo y, a continuación, elija la **agregar** botón.  
   
-2.  En el cuadro de diálogo de **Agregar dependencias de activación de característica** , elija el botón de opción de **Agregar una dependencia personalizada** .  
+2.  En el **agregar dependencias de activación de características** diálogo cuadro, elija la **agregar una dependencia personalizada** botón de opción.  
   
-3.  En el cuadro de texto de **Id. de característica** , entre el GUID de la característica que desea marcar como una dependencia de activación, y elija el botón de **Add** .  
+3.  En el **Id. de característica** texto cuadro, escriba el GUID de la característica que desea marcar como una dependencia de activación y, a continuación, elija la **agregar** botón.  
   
-## Modificar dependencias personalizadas  
- Puede modificar las dependencias personalizadas que agregó previamente.  Sin embargo, las características dependientes que estén en la solución solo se pueden quitar, no modificar.  
+## <a name="editing-custom-dependencies"></a>Modificar dependencias personalizadas  
+ Puede modificar las dependencias personalizadas que agregó anteriormente. Sin embargo, las características dependientes que están en la solución solo va a quitar, no modificar.  
   
-#### Para cambiar una dependencia de una característica de la solución  
+#### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Para cambiar una dependencia de una característica de la solución  
   
-1.  Abra el diseñador de características, expanda el nodo de **Dependencias de activación de característica** .  
+1.  Abra el Diseñador de características y, a continuación, expanda el **dependencias de activación de características** nodo.  
   
-2.  Elija el nombre de la característica que desea modificar y, a continuación elija el botón de **edición** .  
+2.  Elija el nombre de la característica que desea modificar y, a continuación, elija la **editar** botón.  
   
-3.  En el cuadro de diálogo de **Editar dependencia de activación de característica personalizada** , cambie el título, el identificador de la característica, o descripción, y elija el botón de **Enviar** .  
+3.  En el **Editar dependencia de activación de características personalizada** cuadro de diálogo, cambie el título, el Id. de característica o la descripción y, a continuación, elija la **enviar** botón.  
   
-## Quitar dependencias  
+## <a name="removing-dependencies"></a>Quitar las dependencias  
   
-#### Para quitar una dependencia de una característica de la solución  
+#### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Para quitar una dependencia de una característica en la solución  
   
-1.  En el diseñador de características, expanda el nodo de **Dependencias de activación de característica** , elija el nombre de la característica que desea quitar y, a continuación el botón de **Quitar** .  
+1.  En el Diseñador de características, expanda el **dependencias de activación de características** nodo, elija el nombre de la característica que desea quitar y, a continuación, elija la **quitar** botón.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Cómo: Personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
   
   

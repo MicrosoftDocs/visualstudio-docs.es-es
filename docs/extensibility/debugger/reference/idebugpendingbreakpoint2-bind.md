@@ -1,50 +1,51 @@
 ---
-title: "IDebugPendingBreakpoint2::Bind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Bind"
-helpviewer_keywords: 
-  - "Bind (método)"
-  - "IDebugPendingBreakpoint2::Bind (método)"
+title: IDebugPendingBreakpoint2::Bind | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Bind
+helpviewer_keywords:
+- Bind method
+- IDebugPendingBreakpoint2::Bind method
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: de0efa5d070943f9cdface4f9864f2d95660c0ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Bind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Enlaza este punto de interrupción pendiente a una o varias ubicaciones del código.  
+# <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
+Este punto de interrupción pendiente se enlaza a una o varias ubicaciones de código.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-HRESULT Bind(   
-   void   
+```cpp  
+HRESULT Bind(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Bind();  
 ```  
   
-## Valor devuelto  
- Si finaliza correctamente, devuelve `S_OK`; de lo contrario, devuelve un código de error.  devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
+## <a name="return-value"></a>Valor devuelto  
+ Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
   
-## Comentarios  
- Cuando se llama a este método, un motor de depuración \(DE\) debe intentar enlazar este punto de interrupción pendiente en todas las ubicaciones del código que coinciden.  
+## <a name="remarks"></a>Comentarios  
+ Cuando se llama a este método, un motor de depuración (Alemania) debería intentar enlazar todas las ubicaciones de código que coinciden con este punto de interrupción pendiente.  
   
- Cuando este método vuelve, el llamador debe esperar los eventos que indican que el punto de interrupción pendiente ha enlazado o es por error antes de asumir ese llamadas a [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods mostrará todos los puntos de interrupción del límite o errores, respectivamente.  
+ Después de que este método finaliza, el llamador debe esperar para los eventos que indican que el punto de interrupción pendiente ha enlazado o es un error antes de asumir que las llamadas a la [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods enumerará todos los enlazados o error puntos de interrupción, respectivamente.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   

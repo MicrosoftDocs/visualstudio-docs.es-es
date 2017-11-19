@@ -1,59 +1,64 @@
 ---
-title: "EnableEditOfLocationField (Elemento, Plantillas de Visual Studio) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "EnableEditOfLocationField (Plantillas de proyecto de Visual Studio)"
+title: EnableEditOfLocationField (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# EnableEditOfLocationField (Elemento, Plantillas de Visual Studio)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (Elemento, Plantillas de Visual Studio)
 Especifica si el usuario puede editar el campo de ubicación.  
   
-## Sintaxis  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<EnableEditOfLocationField >  
+  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <EnableEditOfLocationField> true/false </EnableEditOfLocationField>  
 ```  
   
-## Atributos y elementos  
- En las próximas secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
- None  
+### <a name="attributes"></a>Atributos  
+ Ninguna  
   
-### Elementos secundarios  
- None  
+### <a name="child-elements"></a>Elementos secundarios  
+ Ninguna  
   
-### Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Categoriza la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .|  
   
-## Valor de texto  
+## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`, lo que indica si el usuario puede editar o no el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo proyecto**.  
+ El texto debe ser `true` o `false`, lo que indica si el usuario puede editar la **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.  
   
-## Comentarios  
- `EnableEditOfLocationField` es un elemento opcional.  El valor predeterminado es `true`, que permite al usuario editar el valor en el cuadro de texto **Ubicación** del cuadro de diálogo **Nuevo proyecto**.  
+## <a name="remarks"></a>Comentarios  
+ `EnableEditOfLocationField` es un elemento opcional. El valor predeterminado es `true`, lo que permite al usuario editar el valor de la **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo.  
   
- En el cuadro de diálogo **Nuevo proyecto**, el cuadro de texto **Ubicación** especifica el directorio donde se guarda un nuevo proyecto.  
+ En el **nuevo proyecto** cuadro de diálogo, el **ubicación** cuadro de texto especifica el directorio donde se guarda un nuevo proyecto.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los metadatos de una aplicación Windows de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +86,6 @@ Especifica si el usuario puede editar el campo de ubicación.
 </VSTemplate>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)

@@ -1,64 +1,66 @@
 ---
-title: "Comentarios para el usuario | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "comentarios del modelo de usuario"
-  - "contexto, entorno"
-  - "IDE, contexto"
-  - "IDE, comentarios del usuario"
+title: Comentarios al usuario | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user model feedback
+- environment, context
+- IDE, context
+- IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ffc6ecc620f57f0cc1e4dd8baf02f1bd1b17d53b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comentarios para el usuario
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-En el entorno de desarrollo integrado de \(IDE\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , comentarios visuales con respecto a la funcionalidad disponible se basa en la selección actual del usuario y el contexto global de la selección.  La tabla siguiente muestra la funcionalidad disponible en diferentes contextos de selección.  
+# <a name="feedback-to-the-user"></a>Comentarios para el usuario
+En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), los comentarios visuales sobre la funcionalidad disponible se basa en la selección actual y el contexto de selección global del usuario. La tabla siguiente muestra la funcionalidad que está disponible en selección diferentes contextos.  
   
-|Contexto de selección|funcionalidad disponible|  
-|---------------------------|------------------------------|  
+|Contexto de selección|Funcionalidad disponible|  
+|-----------------------|-----------------------------|  
 |IDE|Global|  
-|Conjunto actual del producto|Específico del producto|  
-|jerarquía activo|Concreto escrito jerarquía|  
-|elemento activo de la jerarquía|Específico del tipo de elemento de la jerarquía|  
-|documento activo|Específico del tipo de documento|  
-|Ventana superior \(MDI\) de interfaz de múltiples documentos|Concreto escrito ventana|  
-|Contexto de selección actual|Específico del contexto de selección|  
+|Conjunto de productos actual|Cada producto.|  
+|Jerarquía activa|Específico del tipo de jerarquía|  
+|Elemento de la jerarquía activa|Específicas de tipo de elemento de jerarquía|  
+|Documento activo|Específico del tipo de documento|  
+|Ventana de nivel superior interfaz de múltiples documentos (MDI)|Específico del tipo de ventana|  
+|Contexto de la selección actual|Contexto de selección específico|  
   
- Si solo superficie la necesidad de usuarios de funcionalidad y proporciona continuamente la selección coherente y comentarios de contexto del entorno, reduce la complejidad del IDE.  Las reglas siguientes se aplican siempre que una ventana se abre en el IDE:  
+ Si solo expuesta la funcionalidad de los usuarios necesitan y proporcionar continuamente selección coherente y comentarios de contexto del entorno, reducir la complejidad en el IDE. Cada vez que se abre una ventana en el IDE, se aplican las siguientes reglas:  
   
--   Si la ventana cambia el contexto de la selección, la información de la selección se indica claramente en la ventana, y la ventana ayuda dinámica, si se muestra, se actualiza para reflejar el contexto actual.  
+-   Si la ventana cambia su contexto de selección, comentarios de la selección se indicarán claramente en la ventana y la ventana Ayuda dinámica, si se muestra, se actualiza para reflejar el contexto actual.  
   
--   Si la ventana cambia el contexto global de selección, todos los menús contexto\-específicos, la ventana activa de la jerarquía, y la barra de título de la aplicación se actualizan para reflejar el contexto actual.  
+-   Si la ventana cambia el contexto de la selección global, todos los menús específicos del contexto, la ventana de la jerarquía activa y la barra de título de la aplicación se actualizan para reflejar el contexto actual.  
   
--   La ventana debe exponer las propiedades de la selección actual de la ventana de **Propiedades** y opcionalmente, si aparece, el cuadro de diálogo **Páginas de propiedades** .  
+-   La ventana debe expuesta propiedades para la selección actual en el **propiedades** ventana y, opcionalmente, si se muestra, la **páginas de propiedades** cuadro de diálogo.  
   
--   Si la ventana no emerge las propiedades ni cambia de contexto global de selección, comentarios de selección no debe permanecer en la ventana cuando ya no es la ventana activa en el IDE.  
+-   Si la ventana no expuesta propiedades o cambiar el contexto de selección global, comentarios de la selección no deberían permanecer en la ventana cuando ya no es la ventana activa en el IDE.  
   
--   todas las ventanas de herramientas documento\-específicas deben reflejar continuamente el documento activo.  
+-   Todas las ventanas de herramienta específica del documento continuamente deben reflejar el documento activo.  
   
--   Los menús, las barras de herramientas y la barra de título de la aplicación deben reflejar la ventana superior \(MDI\) del cliente de la interfaz de múltiples documentos.  
+-   Los menús, barras de herramientas y la barra de título de la aplicación deben reflejar la ventana de cliente de nivel superior interfaz de múltiples documentos (MDI).  
   
- Por ejemplo, cuando se abre la vista HTML de un formulario web en un proyecto de aplicación web de Visual Basic y el usuario selecciona una etiqueta de `<td>` , la información se proporciona de la manera siguiente:  
+ Por ejemplo, cuando se abre la vista HTML de un formulario Web Forms dentro de un proyecto de aplicación Web de Visual Basic y el usuario selecciona un `<td>` etiqueta, los comentarios se proporcionan en la siguiente manera:  
   
--   la selección se indica en la ventana activa y se refleja en la ventana de **Propiedades** .  
+-   Selección se indica en la ventana activa y se refleja en el **propiedades** ventana.  
   
--   **Cuadro de herramientas** documento\-específico se actualiza para reflejar el documento activo.  
+-   Específico del documento **cuadro de herramientas** se actualiza para reflejar el documento activo.  
   
--   La barra de herramientas de **Editor** y el menú de **Tabla** se muestran y las actualizaciones de la barra de título para reflejar la ventana del formulario web.  
+-   El **Editor** barra de herramientas y **tabla** se muestra el menú y la barra de título se actualiza para reflejar la ventana del formulario Web Forms.  
   
--   La ventana activa de la jerarquía, que es normalmente **Explorador de soluciones**, y la actualización de la barra de título para reflejar el contexto actual y comandos de menú contextuales de **proyecto** ahora se aplican al proyecto de aplicación web activa.  
+-   La ventana de la jerarquía activa, que suele ser **el Explorador de soluciones**y su actualización de la barra de título para reflejar el contexto actual y la contextual **proyecto** comandos de menú se aplicarán ahora a la Web activo Proyecto de aplicación.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)   
- [Selección y jerarquías](../../extensibility/internals/hierarchies-and-selection.md)
+ [Jerarquías y selección](../../extensibility/internals/hierarchies-and-selection.md)

@@ -1,66 +1,66 @@
 ---
-title: "Selector de URL (cuadro de di&#225;logo) (desarrollo de SharePoint en Visual Studio)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.VWD.URLPicker"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "desarrollo de SharePoint en Visual Studio, diseñador"
-  - "desarrollo de SharePoint en Visual Studio, selector de direcciones URL"
+title: "Cuadro de diálogo de selector de URL (desarrollo de SharePoint en Visual Studio) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.VWD.URLPicker
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, URL picker
+- SharePoint development in Visual Studio, designer
 ms.assetid: 33f8f521-e1f8-4242-a580-8a4bd9cb5ddc
-caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c97bd5e6fb9ad320a9f353eaa67114931a0d1b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Selector de URL (cuadro de di&#225;logo) (desarrollo de SharePoint en Visual Studio)
-  En el cuadro de diálogo del selector de direcciones URL, puede elegir los archivos como archivos o archivos de imagen de página maestra que se establecen en el proyecto o en el servidor local que ejecuta SharePoint.  
+# <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Selector de URL (cuadro de diálogo) (desarrollo de SharePoint en Visual Studio)
+  En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.  
   
- Este cuadro de diálogo aparece cuando tiene la opción de elegir un archivo para establecer una propiedad.  Puede abrir este cuadro de diálogo elija el botón de puntos suspensivos \(![Elipse del Diseñador de ASP.NET Mobile](~/sharepoint/media/mwellipsis.gif "Elipse del Diseñador de ASP.NET Mobile")\) situado junto a diversas propiedades en la ventana de **Propiedades** .  El botón de puntos suspensivos también aparece como un mensaje de IntelliSense cuando se asignan valores a ciertos atributos en la vista **Código fuente** del diseñador.  
+ Este cuadro de diálogo aparece cuando se tiene la opción de elegir un archivo para establecer una propiedad. Puede abrir este cuadro de diálogo seleccionando el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) junto a varias propiedades en la **propiedades** ventana. El botón de puntos suspensivos también aparece como un IntelliSense preguntar al asignar valores a determinados atributos en el **origen** la vista del diseñador.  
   
-## Lista de UIElement  
+## <a name="uielement-list"></a>Lista de UIElement  
  **Carpetas de proyecto**  
- Muestra una lista de las carpetas definidas en el proyecto o en el servidor local que ejecuta SharePoint.  Elija el botón de expansión para mostrar las subcarpetas.  
+ Muestra una lista de las carpetas definidas en el proyecto o en el servidor local que ejecuta SharePoint. Elija el botón de expansión para mostrar las subcarpetas.  
   
- Expanda el nodo de **Project** para elegir los archivos del proyecto.  Para que aparezcan como elementos seleccionables en el cuadro de diálogo del proyecto, los archivos deben satisfacer los siguientes criterios:  
+ Expanda el **proyecto** nodo para elegir los archivos del proyecto. Para que aparezca como seleccionable en el cuadro de diálogo, los archivos del proyecto deben cumplir los siguientes criterios:  
   
--   El archivo debe estar incluido en una carpeta asignada.  
+-   El archivo debe estar contenido en una carpeta asignada.  
   
--   El archivo debe agregarse al paquete de la solución.  
+-   El archivo debe agregarse al paquete de solución.  
   
 -   El archivo no puede encontrarse en otro proyecto.  
   
- Si desea hacer referencia a archivos que no cumplen estos criterios, tiene que escribir la ruta de acceso del archivo manualmente.  
+ Si desea hacer referencia a archivos que no cumplen estos criterios, tendrá que escribir la ruta de acceso del archivo manualmente.  
   
- Expanda el nodo de **Servidor** para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint.  Para que aparezcan en el cuadro de diálogo como elementos seleccionables, estos archivos deben satisfacer los siguientes criterios:  
+ Expanda el **Server** nodo para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:  
   
--   El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **Images**, **Layouts** o **ControlTemplates**.  
+-   El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **imágenes**, **diseños**, o **ControlTemplates**.  
   
 -   El archivo no puede encontrarse en la base de datos de contenido de SharePoint.  
   
- Si desea hacer referencia a archivos que no cumplen estos criterios, tiene que escribir la ruta de acceso del archivo manualmente.  
+ Si desea hacer referencia a archivos que no cumplen estos criterios, tendrá que escribir la ruta de acceso del archivo manualmente.  
   
- **Contenido de la carpeta**  
- Muestra una lista de los archivos de la carpeta seleccionada.  Elija un archivo, y elija el botón de **Aceptar** para cerrar el cuadro de diálogo y enviar la selección al proceso que lo llamó.  
+ **Contenido de carpeta**  
+ Muestra una lista de los archivos de la carpeta seleccionada. Elija un archivo y, a continuación, elija la **Aceptar** botón para cerrar el cuadro de diálogo y enviar su selección al proceso que lo llamó.  
   
- **Tipo de archivos**  
- Permite elegir entre una lista de archivos adecuado para la tarea que se está realizando.  
+ **Archivos de tipo**  
+ Permite elegir entre una lista de archivos que son adecuados para la tarea que se va a realizar.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Crear elementos Web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
- [Mapa de contenido del entorno de desarrollo web de Visual Studio](http://msdn.microsoft.com/es-es/9c31f93b-c8fb-4599-9b14-6194ec8c7539)  
   
   

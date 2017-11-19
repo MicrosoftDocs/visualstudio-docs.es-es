@@ -1,51 +1,53 @@
 ---
-title: "Elementos de un modelo de proyecto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "proyectos [Visual Studio SDK], consideraciones de implementación"
-  - "modelos de proyecto"
-  - "proyectos [Visual Studio SDK], elementos"
+title: Elementos de un modelo de proyecto | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], implementation considerations
+- project models
+- projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elementos de un modelo de proyecto
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Las interfaces e implementaciones de todos los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto.  En el modelo de proyecto, que es el paquete VSPackage está desarrollando, se crean objetos que cumplen las decisiones de diseño y el trabajo así como la funcionalidad global proporcionada por el IDE.  Aunque se controla cómo se conserva un elemento de proyecto, por ejemplo, no controla la notificación que un archivo debe mantenerse.  Cuando un usuario coloca el foco en un elemento de proyecto abierto y elija **Guardar** en el menú de **Archivo** en la barra de menús de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , el código del tipo de proyecto debe interceptar el comando del IDE, guarda el archivo, y envía la notificación al IDE que el archivo se cambiado no más.  
+# <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
+Las interfaces y las implementaciones de todos los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que está desarrollando, crear objetos que cumplen con sus decisiones de diseño y de trabajo junto con la funcionalidad global proporcionada por el IDE. Aunque puede controlar cómo se guarda un elemento de proyecto, por ejemplo, no se controla notificación que se debe conservar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto abierto y elige **guardar** en el **archivo** menú en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menú barras, el código del tipo de proyecto debe interceptar el comando desde el IDE, el archivo, se conservan y Enviar notificación volver al IDE que ya no se modifique el archivo.  
   
- El paquete VSPackage interactúa con el IDE con los servicios que proporcionan acceso a las interfaces del IDE.  Por ejemplo, con servicios concretos, controla y enruta comandos y proporciona información de contexto para las opciones seleccionadas en el proyecto.  Toda la funcionalidad global del IDE necesaria para el paquete VSPackage es proporcionada por servicios.  Para obtener más información sobre los servicios, vea [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md).  
+ El paquete de VS interactúa con el IDE a través de servicios que proporcionan acceso a las interfaces IDE. Por ejemplo, a través de determinados servicios, monitor y la ruta de comandos y proporciona información de contexto para las selecciones realizadas en el proyecto. Servicios proporciona toda la funcionalidad IDE global necesaria para el VSPackage. Para obtener más información acerca de los servicios, vea [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md).  
   
  Otras consideraciones de implementación:  
   
--   un solo modelo de proyecto puede contener más de un tipo de proyecto.  
+-   Un modelo de proyecto solo puede contener más de un tipo de proyecto.  
   
--   Registra los tipos de proyecto y los generadores involucradas de proyecto independientemente con Diferentes.  
+-   Tipos de proyecto y los generadores de operador de proyecto se registran por separado con GUID.  
   
--   Cada proyecto debe tener un archivo de plantilla o un asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto con la interfaz de usuario de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .  Por ejemplo, las plantillas de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] se inicializan qué se convierten en finalmente archivos .vcproj.  
+-   Cada proyecto debe tener un archivo de plantilla o el Asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaz de usuario. Por ejemplo, el [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plantillas inicializar lo que finalmente se convierten en .vcproj (archivos).  
   
- La ilustración siguiente se muestran las interfaces primarias, servicios, los objetos que componen una ejecución de proyecto típica.  Puede utilizar la aplicación auxiliar de la aplicación, HierUtil7, crear los objetos subyacentes y otra plancha de caldera de programación.  Para obtener más información sobre la aplicación auxiliar de la aplicación HierUtil7, vea [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/es-es/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ En la siguiente ilustración muestra las interfaces principales, servicios y objetos que componen una implementación normal del proyecto. Puede utilizar la aplicación auxiliar de aplicación, HierUtil7, para crear los objetos subyacentes y otro reutilizable de programación. Para obtener más información acerca de la aplicación auxiliar de aplicación de HierUtil7, consulte [no en la compilación: utilizar clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Gráfico del modelo de proyectos de Visual Studio](~/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Gráfico del modelo de proyecto de Studio Visual](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 modelo de proyecto  
   
- Para obtener más información sobre las interfaces y los servicios mostrados en el diagrama anterior, y otras interfaces opcionales no incluidos en el diagrama, vea [Componentes principales de modelo de proyecto](../../extensibility/internals/project-model-core-components.md).  
+ Para obtener más información acerca de las interfaces y servicios que se muestran en el diagrama anterior y otras interfaces opcionales no se incluye en el diagrama, vea [componentes principales del proyecto de modelo](../../extensibility/internals/project-model-core-components.md).  
   
- Los proyectos pueden admitir comandos y por consiguiente deben implementar la interfaz de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> para participar en el enrutamiento de comandos con el contexto GUID de comando.  
+ Proyectos puede admitir comandos y, por tanto, debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través del contexto de comando GUID.  
   
-## Vea también  
- [Lista de comprobación: Crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/es-es/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
- [Componentes principales de modelo de proyecto](../../extensibility/internals/project-model-core-components.md)   
- [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+## <a name="see-also"></a>Vea también  
+ [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [No en la compilación: usar clases de proyectos de HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Componentes principales del proyecto de modelo](../../extensibility/internals/project-model-core-components.md)   
+ [Crear instancias de Project mediante generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Cómo: obtener un servicio](../../extensibility/how-to-get-a-service.md)   
  [Creación de tipos de proyecto](../../extensibility/internals/creating-project-types.md)
